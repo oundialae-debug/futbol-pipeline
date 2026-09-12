@@ -23,18 +23,12 @@ EQUIPOS_LA_LIGA = [
 ]
 
 
-def obtener_partidos_recientes(team_id: int) -> list[dict]:
-    r = requests.get(f"{BASE_URL}/last-five-games", headers=HEADERS, params={"teamId": team_id})
-    if r.status_code != 200:
-        print(f"  [aviso] fallo al pedir equipo {team_id}: {r.status_code}")
-        return []
-    return [p for p in r.json() if p["league"]["id"] == LIGA_ID and p["state"]["description"] == "Finished"]
-
-
-def obtener_detalle_partido(match_id: int) -> dict | None:
-    """Usa /statistics/{id} para las tarjetas (endpoint validado contra
-    fuentes externas -- Yahoo/FOX coincidieron exactamente en pruebas
-    anteriores) y /matches/{id} solo para el árbitro y el resultado, que
+def obtener_partidos_recientes(team_id: int, intentos: int = 3) -> list[dict]:
+    for intento in range(intentos):
+        r = requests.get(f"{BASE_URL}/last-five-games", headers=HEADERS, params={"teamId": team_id})
+        if r.status_code == 200:
+            return [p for p in r.json() if p["league"]["id"] == LIGA_ID and p["state"]["description"] == "Finished"]
+        if r.status_code == 429:    anteriores) y /matches/{id} solo para el árbitro y el resultado, que
     esas estadísticas no incluyen."""
     r_stats = requests.get(f"{BASE_URL}/statistics/{match_id}", headers=HEADERS)
     r_match = requests.get(f"{BASE_URL}/matches/{match_id}", headers=HEADERS)
