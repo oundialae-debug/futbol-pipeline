@@ -1,32 +1,42 @@
-"""
-Se ejecuta automáticamente cada día vía GitHub Actions. Descarga los
-partidos recientes de La Liga (resultados, tarjetas, árbitro) y los añade
-al histórico acumulado en data/historico_tarjetas.csv, sin duplicar
-partidos que ya estuvieran guardados.
-"""
-import os
-import time
-import requests
-import pandas as pd
+name: Actualizar datos de La Liga
 
-API_KEY = os.environ["HIGHLIGHTLY_API_KEY"]
-BASE_URL = "https://soccer.highlightly.net"
-HEADERS = {"x-rapidapi-key": API_KEY}
-LIGA_ID = 119924  # La Liga
-RUTA_CSV = "data/historico_tarjetas.csv"
+on:
+  schedule:
+    - cron: '0 6 * * *'   # todos los días a las 6:00 UTC (8:00 en España en invierno, 7:00 en verano)
+  workflow_dispatch:        # también se puede lanzar a mano desde GitHub
 
-# IDs de los 20 equipos de La Liga 2026-27 (recopilados durante esta sesión)
-EQUIPOS_LA_LIGA = [
-    463728, 451814, 452665, 461175, 450963, 456920, 460324, 467132, 462877,
-    454367, 620312, 3970699, 462026, 453516, 456069, 459473, 679031, 458622,
-    619461, 465430,
-]
+jobs:
+  actualizar:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write        # necesario para poder guardar (commit) el CSV actualizado
+    steps:
+      - name: Descargar el repositorio
+        uses: actions/checkout@v4
 
+      - name: Preparar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
 
-def obtener_partidos_recientes(team_id: int) -> list[dict]:
-    r = requests.get(f"{BASE_URL}/last-five-games", headers=HEADERS, params={"teamId": team_id})
-    if r.status_code != 200:
-        print(f"  [aviso] fallo al pedir equipo {team_id}: {r.status_code}")
-        return []
-    return [p for p in r.json() if p["league"]["id"] == LIGA_ID and p["state"]["description"] == "Finished"]
+      - name: Instalar dependencias
+        run: pip install requests pandas
 
+      - name: Ejecutar la actualización
+        run: python scripts/actualizar_datos.py
+        env:
+          HIGHLIGHTLY_API_KEY: ${{ secrets.HIGHLIGHTLY_API_KEY }}
+
+      - name: Guardar los datos nuevos en el repositorio
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if [ ! -f data/historico_tarjetas.csv ]; then
+            echo "No se generó ningún archivo esta vez (posible límite de la API alcanzado) -- nada que guardar."
+            exit 0
+          fi
+          git add data/historico_tarjetas.csv
+          git diff --staged --quiet && echo "Sin cambios que guardar" && exit 0
+          git commit -m "Actualización automática de datos ($(date +%Y-%m-%d))"
+          git pull --rebase origin main
+          git push
