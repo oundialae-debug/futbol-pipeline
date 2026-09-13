@@ -1,0 +1,38 @@
+name: Pipeline diario completo
+
+on:
+  schedule:
+    - cron: '0 7 * * *'   # todos los días a las 7:00 UTC
+  workflow_dispatch:
+
+jobs:
+  pipeline:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Descargar el repositorio
+        uses: actions/checkout@v4
+
+      - name: Preparar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Instalar dependencias
+        run: pip install requests pandas scipy numpy
+
+      - name: Ejecutar el pipeline completo
+        run: python scripts/pipeline_diario.py
+        env:
+          HIGHLIGHTLY_API_KEY: ${{ secrets.HIGHLIGHTLY_API_KEY }}
+
+      - name: Guardar los datos y el informe en el repositorio
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/historico_completo_2025_26.csv data/eventos_tarjetas_jugadores_2025_26.csv pronosticos_jornada.md 2>/dev/null || true
+          git diff --staged --quiet && echo "Sin cambios" && exit 0
+          git commit -m "Actualización diaria del pipeline ($(date +%Y-%m-%d))"
+          git pull --rebase origin main
+          git push
