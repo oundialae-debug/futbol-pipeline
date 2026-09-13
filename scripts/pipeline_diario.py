@@ -172,14 +172,24 @@ def obtener_cuotas(match_id):
     return r.json().get("data", [])
 
 
-def obtener_alineacion(match_id):
+def obtener_alineacion(match_id, fecha_partido_str):
+    """Devuelve (alineacion, es_confirmada). Highlightly puede dar una
+    alineación PREVISTA con días de antelación -- solo se puede considerar
+    confirmada de verdad si faltan menos de 2h para el partido."""
     r = peticion_con_reintentos(f"{BASE_URL}/lineups/{match_id}")
     if not r or r.status_code != 200:
-        return None
+        return None, False
     try:
-        return r.json()
+        alineacion = r.json()
     except Exception:
-        return None
+        return None, False
+    if not alineacion:
+        return None, False
+
+    fecha_partido = datetime.fromisoformat(fecha_partido_str.replace("Z", "+00:00"))
+    horas_restantes = (fecha_partido - datetime.now(fecha_partido.tzinfo)).total_seconds() / 3600
+    es_confirmada = horas_restantes <= 2
+    return alineacion, es_confirmada
 
 
 # ============ 5. PREDICCIONES ============
@@ -207,6 +217,7 @@ def predecir_tarjetas(local, visitante, arbitro, params, linea=4.5):
 # ============ 6. INFORME ============
 def generar_informe(proximos_partidos, params):
     lineas = [f"# Pronósticos -- generado automáticamente el {datetime.utcnow().strftime('%Y-%m-%d %H:%M')} UTC\n"]
+    registro_predicciones = []
 
     for p in sorted(proximos_partidos, key=lambda x: x["date"]):
         local, visitante = p["homeTeam"]["name"], p["awayTeam"]["name"]
@@ -216,7 +227,7 @@ def generar_informe(proximos_partidos, params):
         pred_tarjetas = predecir_tarjetas(local, visitante, arbitro, params)
 
         cuotas = obtener_cuotas(p["id"])
-        alineacion = obtener_alineacion(p["id"])
+        alineacion, es_confirmada = obtener_alineacion(p["id"], p["date"])
 
         lineas.append(f"## {local} vs {visitante}")
         lineas.append(f"*{p['date'][:16].replace('T', ' ')} UTC*\n")
@@ -230,10 +241,19 @@ def generar_informe(proximos_partidos, params):
         else:
             lineas.append(f"**Cuotas de mercado disponibles**: no (todavía no publicadas)")
 
-        if alineacion:
-            lineas.append(f"**Alineación confirmada**: sí -- variable 7 aplicable")
+        if alineacion and es_confirmada:
+            lineas.append(f"**Alineación**: confirmada -- variable 7 aplicable")
+        elif alineacion and not es_confirmada:
+            lineas.append(f"**Alineación**: solo prevista/probable (faltan más de 2h) -- no usada todavía para ajustar la predicción")
         else:
-            lineas.append(f"**Alineación confirmada**: no todavía (normal si faltan más de 1h para el partido)")
+            lineas.append(f"**Alineación**: no disponible")
+
+        registro_predicciones.append({
+            "match_id": p["id"], "fecha": p["date"], "equipo_local": local, "equipo_visitante": visitante,
+            "prob_local": pred_goles["prob_local"], "prob_empate": pred_goles["prob_empate"],
+            "prob_visitante": pred_goles["prob_visitante"], "prob_over_tarjetas": pred_tarjetas["prob_over"],
+            "generado_el": datetime.utcnow().isoformat(),
+        })
 
         lineas.append("\n---\n")
 
@@ -241,22 +261,81 @@ def generar_informe(proximos_partidos, params):
         f.write("\n".join(lineas))
     print(f"Informe generado: {RUTA_INFORME}")
 
+    # Registro para calibración futura: guarda cada predicción, sin duplicar
+    # las que ya se habían registrado en una ejecución anterior de la misma semana
+    ruta_registro = "data/registro_predicciones.csv"
+    registro_previo = pd.read_csv(ruta_registro) if os.path.exists(ruta_registro) else pd.DataFrame()
+    nuevos = pd.DataFrame(registro_predicciones)
+    if not registro_previo.empty:
+        nuevos = nuevos[~nuevos["match_id"].isin(registro_previo["match_id"])]
+    registro_final = pd.concat([registro_previo, nuevos], ignore_index=True)
+    registro_final.to_csv(ruta_registro, index=False)
+    print(f"Registro de predicciones actualizado: {len(nuevos)} nuevas, {len(registro_final)} en total")
+
+
+# ============ 7. CALIBRACIÓN AUTOMÁTICA ============
+def calcular_calibracion():
+    ruta_registro = "data/registro_predicciones.csv"
+    if not os.path.exists(ruta_registro):
+        print("[calibracion] todavía no hay registro de predicciones -- se omite esta semana")
+        return
+    registro = pd.read_csv(ruta_registro)
+    historico = pd.read_csv(RUTA_HISTORICO)
+
+    cruzado = registro.merge(
+        historico[["match_id", "goles_local", "goles_visitante",
+                   "amarillas_local", "rojas_local", "amarillas_visitante", "rojas_visitante"]],
+        on="match_id", how="inner")
+
+    if cruzado.empty:
+        print("[calibracion] ningún partido predicho se ha jugado todavía -- se omite esta semana")
+        return
+
+    cruzado["tarjetas_totales"] = (cruzado["amarillas_local"] + cruzado["rojas_local"] +
+                                     cruzado["amarillas_visitante"] + cruzado["rojas_visitante"])
+    cruzado["gano_local"] = (cruzado["goles_local"] > cruzado["goles_visitante"]).astype(float)
+    cruzado["over_tarjetas"] = (cruzado["tarjetas_totales"] > 4.5).astype(float)
+
+    brier_goles = ((cruzado["prob_local"] - cruzado["gano_local"]) ** 2).mean()
+    brier_tarjetas = ((cruzado["prob_over_tarjetas"] - cruzado["over_tarjetas"]) ** 2).mean()
+    acierto_goles = ((cruzado["prob_local"] > 0.5) == cruzado["gano_local"].astype(bool)).mean()
+    acierto_tarjetas = ((cruzado["prob_over_tarjetas"] > 0.5) == cruzado["over_tarjetas"].astype(bool)).mean()
+
+    informe = f"""# Informe de calibración -- actualizado el {datetime.utcnow().strftime('%Y-%m-%d')}
+Partidos evaluados hasta ahora: {len(cruzado)}
+
+## Goles (victoria local)
+- Brier score: {brier_goles:.4f} (0.25 = azar, más bajo = mejor)
+- Acierto: {acierto_goles*100:.1f}%
+
+## Tarjetas (over/under 4.5)
+- Brier score: {brier_tarjetas:.4f} (0.25 = azar, más bajo = mejor)
+- Acierto: {acierto_tarjetas*100:.1f}%
+"""
+    with open("data/informe_calibracion.md", "w", encoding="utf-8") as f:
+        f.write(informe)
+    print(f"[calibracion] informe actualizado con {len(cruzado)} partidos evaluados")
+
 
 # ============ MAIN ============
 def main():
-    print("Paso 1/4: actualizando histórico...")
+    print("Paso 1/5: actualizando histórico...")
     historico = actualizar_historico()
 
-    print("Paso 2/4: recalculando parámetros...")
+    print("Paso 2/5: recalculando parámetros...")
     params = recalcular_parametros(historico)
 
-    print("Paso 3/4: buscando próximos partidos...")
+    print("Paso 3/5: buscando próximos partidos...")
     proximos = obtener_proximos_partidos()
     print(f"  {len(proximos)} partidos encontrados en los próximos 7 días")
 
-    print("Paso 4/4: generando informe...")
+    print("Paso 4/5: generando informe de pronósticos...")
     generar_informe(proximos, params)
+
+    print("Paso 5/5: actualizando calibración...")
+    calcular_calibracion()
 
 
 if __name__ == "__main__":
     main()
+  
