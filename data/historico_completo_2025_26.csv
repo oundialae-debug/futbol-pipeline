@@ -1,0 +1,381 @@
+match_id,fecha,ronda,equipo_local,equipo_visitante,goles_local,goles_visitante,arbitro,amarillas_local,rojas_local,faltas_local,corners_local,amarillas_visitante,rojas_visitante,faltas_visitante,corners_visitante,es_derbi,tiene_cuota_total_cards
+1183910282,2026-05-24T19:00:00.000Z,Regular Season - 38,Villarreal,Atlético Madrid,5,1,"Sesma Espinosa, Miguel",0,0,3,5,1,0,12,9,False,False
+1183902623,2026-05-23T19:00:00.000Z,Regular Season - 38,Alavés,Rayo Vallecano,1,2,"Gil Manzano, Jesus",3,0,13,10,3,0,14,5,False,False
+1183909431,2026-05-23T19:00:00.000Z,Regular Season - 38,Valencia,Barcelona,3,1,"Cordero Vega, Adrian",2,0,11,7,2,0,8,8,False,False
+1183903474,2026-05-23T19:00:00.000Z,Regular Season - 38,Real Betis,Levante,2,1,"Busquets Ferrer, Mateo",1,0,11,4,2,0,7,8,False,False
+1183904325,2026-05-23T19:00:00.000Z,Regular Season - 38,Celta de Vigo,Sevilla FC,1,0,"Hernandez Maeso, Francisco Jose",1,0,11,4,1,0,20,3,False,False
+1183906878,2026-05-23T19:00:00.000Z,Regular Season - 38,Girona,Elche,1,1,"Hernandez Hernandez, Alejandro Jose",4,0,20,2,4,0,20,1,False,False
+1183906027,2026-05-23T19:00:00.000Z,Regular Season - 38,Getafe,Osasuna,1,0,"Quintero Gonzalez, Alejandro",1,0,17,2,2,0,20,4,False,False
+1183905176,2026-05-23T19:00:00.000Z,Regular Season - 38,Espanyol,Real Sociedad,1,1,"Munuera Montero, Jose Luis",1,0,11,3,3,0,17,5,False,False
+1183908580,2026-05-23T19:00:00.000Z,Regular Season - 38,Real Madrid,Athletic Club,4,2,"Martinez Munuera, Juan",2,0,6,2,0,0,20,1,False,False
+1183907729,2026-05-23T19:00:00.000Z,Regular Season - 38,Mallorca,Oviedo,3,0,"Sanchez Martinez, Jose Maria",2,0,10,5,1,0,8,5,False,False
+1183895815,2026-05-17T19:15:00.000Z,Regular Season - 37,Barcelona,Real Betis,3,1,"Cuadra Fernandez, Guillermo",1,0,7,6,0,0,8,4,False,False
+1183900070,2026-05-17T17:00:00.000Z,Regular Season - 37,Real Sociedad,Valencia,3,4,"Galech Apezteguia, Iosu",4,0,13,3,0,1,11,2,False,False
+1183894113,2026-05-17T17:00:00.000Z,Regular Season - 37,Athletic Club,Celta de Vigo,1,1,"Diaz de Mera Escuderos, Isidro",2,0,14,5,2,0,11,0,False,False
+1183900921,2026-05-17T17:00:00.000Z,Regular Season - 37,Oviedo,Alavés,0,1,"Munuera Montero, Jose Luis",3,0,13,5,1,0,18,2,False,False
+1183898368,2026-05-17T17:00:00.000Z,Regular Season - 37,Osasuna,Espanyol,1,2,"Ortiz Arias, Miguel Angel",1,0,10,9,2,0,13,2,False,False
+1183901772,2026-05-17T17:00:00.000Z,Regular Season - 37,Sevilla FC,Real Madrid,0,1,"Sanchez Martinez, Jose Maria",4,0,18,4,0,0,12,4,False,False
+1183897517,2026-05-17T17:00:00.000Z,Regular Season - 37,Levante,Mallorca,2,0,"Alberola Rojas, Javier",2,1,11,4,0,1,15,6,False,False
+1183896666,2026-05-17T17:00:00.000Z,Regular Season - 37,Elche,Getafe,1,0,"Garcia Verdura, Victor",3,0,18,4,1,1,13,0,False,False
+1183899219,2026-05-17T17:00:00.000Z,Regular Season - 37,Rayo Vallecano,Villarreal,2,0,"De Burgos Bengoechea, Ricardo",2,0,12,1,1,0,10,9,False,False
+1183894964,2026-05-17T17:00:00.000Z,Regular Season - 37,Atlético Madrid,Girona,1,0,"Muniz Ruiz, Alejandro",2,0,7,9,0,0,9,8,False,False
+1183891560,2026-05-14T19:30:00.000Z,Regular Season - 36,Real Madrid,Oviedo,2,0,"De Burgos Bengoechea, Ricardo",0,0,7,4,0,0,14,5,False,False
+1183889858,2026-05-14T18:00:00.000Z,Regular Season - 36,Girona,Real Sociedad,1,1,"Sesma Espinosa, Miguel",2,0,13,6,7,0,19,3,False,False
+1183892411,2026-05-14T17:00:00.000Z,Regular Season - 36,Valencia,Rayo Vallecano,1,1,"Quintero Gonzalez, Alejandro",1,0,9,5,1,0,20,1,False,False
+1183885603,2026-05-13T19:30:00.000Z,Regular Season - 36,Alavés,Barcelona,1,0,"Sanchez Martinez, Jose Maria",1,0,14,6,2,0,8,4,False,False
+1183889007,2026-05-13T19:30:00.000Z,Regular Season - 36,Getafe,Mallorca,3,1,"Martinez Munuera, Juan",3,0,17,3,4,0,18,3,False,False
+1183893262,2026-05-13T17:00:00.000Z,Regular Season - 36,Villarreal,Sevilla FC,2,3,"Busquets Ferrer, Mateo",2,0,11,6,1,0,9,4,False,False
+1183888156,2026-05-13T17:00:00.000Z,Regular Season - 36,Espanyol,Athletic Club,2,0,"Hernandez Maeso, Francisco Jose",0,0,9,8,0,0,14,9,False,False
+1183890709,2026-05-12T19:30:00.000Z,Regular Season - 36,Osasuna,Atlético Madrid,1,2,"Guzman Mansilla, Jose Luis",6,0,15,8,4,1,12,4,False,False
+1183886454,2026-05-12T18:00:00.000Z,Regular Season - 36,Real Betis,Elche,2,1,"Diaz de Mera Escuderos, Isidro",3,0,16,8,3,1,13,1,False,False
+1183887305,2026-05-12T17:00:00.000Z,Regular Season - 36,Celta de Vigo,Levante,2,3,"Cordero Vega, Adrian",0,0,7,4,2,0,10,4,False,False
+1183882199,2026-05-11T19:00:00.000Z,Regular Season - 35,Rayo Vallecano,Girona,1,1,"Cuadra Fernandez, Guillermo",1,0,10,9,1,0,9,5,False,False
+1183878795,2026-05-10T19:00:00.000Z,Regular Season - 35,Barcelona,Real Madrid,2,0,"Hernandez Hernandez, Alejandro Jose",2,0,18,4,4,0,9,8,True,False
+1183883901,2026-05-10T16:30:00.000Z,Regular Season - 35,Oviedo,Getafe,0,0,"Soto Grado, Cesar",2,2,9,1,3,0,16,9,False,False
+1183877093,2026-05-10T14:15:00.000Z,Regular Season - 35,Athletic Club,Valencia,0,1,"Ortiz Arias, Miguel Angel",2,0,9,13,3,0,7,5,False,False
+1183881348,2026-05-10T12:00:00.000Z,Regular Season - 35,Mallorca,Villarreal,1,1,"Garcia Verdura, Victor",2,0,17,5,0,0,13,4,False,False
+1183883050,2026-05-09T19:00:00.000Z,Regular Season - 35,Real Sociedad,Real Betis,2,2,"Muniz Ruiz, Alejandro",2,0,12,4,2,1,9,3,False,False
+1183877944,2026-05-09T16:30:00.000Z,Regular Season - 35,Atlético Madrid,Celta de Vigo,0,1,"Galech Apezteguia, Iosu",1,0,11,10,2,0,13,0,False,False
+1183884752,2026-05-09T14:15:00.000Z,Regular Season - 35,Sevilla FC,Espanyol,2,1,"Alberola Rojas, Javier",5,0,14,4,5,0,17,6,False,False
+1183879646,2026-05-09T12:00:00.000Z,Regular Season - 35,Elche,Alavés,1,1,"Busquets Ferrer, Mateo",3,0,15,7,6,0,13,3,False,False
+1183880497,2026-05-08T19:00:00.000Z,Regular Season - 35,Levante,Osasuna,3,2,"Munuera Montero, Jose Luis",2,0,11,15,0,1,13,1,False,False
+1183874540,2026-05-04T19:00:00.000Z,Regular Season - 34,Sevilla FC,Real Sociedad,1,0,"Martinez Munuera, Juan",2,0,19,3,1,0,11,3,False,False
+1183871136,2026-05-03T19:00:00.000Z,Regular Season - 34,Espanyol,Real Madrid,0,2,"Gil Manzano, Jesus",3,0,19,5,4,0,16,6,False,False
+1183869434,2026-05-03T16:30:00.000Z,Regular Season - 34,Real Betis,Oviedo,3,0,"Cordero Vega, Adrian",0,0,9,5,0,0,4,4,False,False
+1183871987,2026-05-03T14:15:00.000Z,Regular Season - 34,Getafe,Rayo Vallecano,0,2,"Sesma Espinosa, Miguel",3,0,7,4,5,0,22,1,False,False
+1183870285,2026-05-03T12:00:00.000Z,Regular Season - 34,Celta de Vigo,Elche,3,1,"De Burgos Bengoechea, Ricardo",2,0,14,4,1,0,15,2,False,False
+1183873689,2026-05-02T19:00:00.000Z,Regular Season - 34,Osasuna,Barcelona,1,2,"Diaz de Mera Escuderos, Isidro",2,0,9,3,2,0,10,7,False,False
+1183868583,2026-05-02T16:30:00.000Z,Regular Season - 34,Alavés,Athletic Club,2,4,"Quintero Gonzalez, Alejandro",4,0,8,4,3,0,13,7,False,False
+1183875391,2026-05-02T14:15:00.000Z,Regular Season - 34,Valencia,Atlético Madrid,0,2,"Munuera Montero, Jose Luis",1,0,9,1,3,0,12,7,False,False
+1183876242,2026-05-02T12:00:00.000Z,Regular Season - 34,Villarreal,Levante,5,1,"Hernandez Hernandez, Alejandro Jose",3,0,14,7,1,0,7,3,False,False
+1183872838,2026-05-01T19:00:00.000Z,Regular Season - 34,Girona,Mallorca,0,1,"Hernandez Maeso, Francisco Jose",4,0,8,5,2,0,25,2,False,False
+1183854116,2026-04-27T19:00:00.000Z,Regular Season - 32,Espanyol,Levante,0,0,"Busquets Ferrer, Mateo",2,1,12,4,3,0,15,4,False,False
+1183859222,2026-04-26T19:00:00.000Z,Regular Season - 32,Villarreal,Celta de Vigo,2,1,"Quintero Gonzalez, Alejandro",3,0,13,7,6,0,16,5,False,False
+1183855818,2026-04-26T16:30:00.000Z,Regular Season - 32,Osasuna,Sevilla FC,2,1,"Ortiz Arias, Miguel Angel",2,0,11,4,2,0,13,4,False,False
+1183857520,2026-04-26T14:15:00.000Z,Regular Season - 32,Oviedo,Elche,1,2,"Sanchez Martinez, Jose Maria",2,0,21,6,0,1,14,1,False,False
+1183856669,2026-04-26T12:00:00.000Z,Regular Season - 32,Rayo Vallecano,Real Sociedad,3,3,"Guzman Mansilla, Jose Luis",6,1,14,6,4,0,12,4,False,False
+1183852414,2026-04-25T19:00:00.000Z,Regular Season - 32,Atlético Madrid,Athletic Club,3,2,"Gil Manzano, Jesus",0,0,8,3,0,0,12,4,False,False
+1183858371,2026-04-25T16:30:00.000Z,Regular Season - 32,Valencia,Girona,2,1,"Muniz Ruiz, Alejandro",2,0,22,4,2,0,8,4,False,False
+1183854967,2026-04-25T14:15:00.000Z,Regular Season - 32,Getafe,Barcelona,0,2,"Hernandez Maeso, Francisco Jose",2,0,15,6,2,0,8,3,False,False
+1183851563,2026-04-25T12:00:00.000Z,Regular Season - 32,Alavés,Mallorca,2,1,"Alberola Rojas, Javier",2,0,15,9,1,0,14,4,False,False
+1183853265,2026-04-24T19:00:00.000Z,Regular Season - 32,Real Betis,Real Madrid,1,1,,1,0,10,7,2,0,8,6,False,False
+1183867732,2026-04-23T19:30:00.000Z,Regular Season - 33,Oviedo,Villarreal,1,1,,1,0,9,7,1,0,11,0,False,False
+1183865179,2026-04-23T18:00:00.000Z,Regular Season - 33,Rayo Vallecano,Espanyol,1,0,,2,0,12,6,4,0,15,5,False,False
+1183863477,2026-04-23T17:00:00.000Z,Regular Season - 33,Levante,Sevilla FC,2,0,,3,0,17,3,4,0,16,6,False,False
+1183860924,2026-04-22T19:30:00.000Z,Regular Season - 33,Barcelona,Celta de Vigo,1,0,,1,0,13,5,1,0,10,3,False,False
+1183866881,2026-04-22T18:00:00.000Z,Regular Season - 33,Real Sociedad,Getafe,0,1,,4,0,13,6,5,0,22,3,False,False
+1183861775,2026-04-22T17:00:00.000Z,Regular Season - 33,Elche,Atlético Madrid,3,2,,2,0,11,13,3,1,12,3,False,False
+1183866030,2026-04-21T19:30:00.000Z,Regular Season - 33,Real Madrid,Alavés,2,1,"Martinez Munuera, Juan",1,0,14,9,1,0,12,6,False,False
+1183862626,2026-04-21T19:30:00.000Z,Regular Season - 33,Girona,Real Betis,2,3,"Galech Apezteguia, Iosu",1,0,11,3,3,0,18,1,False,False
+1183860073,2026-04-21T17:00:00.000Z,Regular Season - 33,Athletic Club,Osasuna,1,0,"Garcia Verdura, Victor",2,1,12,5,2,0,11,4,False,False
+1183864328,2026-04-21T17:00:00.000Z,Regular Season - 33,Mallorca,Valencia,1,1,"Soto Grado, Cesar",0,0,9,7,2,0,12,4,False,False
+1183846457,2026-04-13T19:00:00.000Z,Regular Season - 31,Levante,Getafe,1,0,"Quintero Gonzalez, Alejandro",2,0,12,8,5,1,24,2,False,False
+1183843053,2026-04-12T19:00:00.000Z,Regular Season - 31,Athletic Club,Villarreal,1,2,"Guzman Mansilla, Jose Luis",2,0,15,15,3,0,8,3,False,False
+1183844755,2026-04-12T16:30:00.000Z,Regular Season - 31,Celta de Vigo,Oviedo,0,3,"Ortiz Arias, Miguel Angel",1,0,9,4,2,0,13,1,False,False
+1183847308,2026-04-12T14:15:00.000Z,Regular Season - 31,Mallorca,Rayo Vallecano,3,0,"Gil Manzano, Jesus",1,0,13,6,4,0,11,7,False,False
+1183848159,2026-04-12T12:00:00.000Z,Regular Season - 31,Osasuna,Real Betis,1,1,"Sesma Espinosa, Miguel",3,0,14,6,4,0,12,3,False,False
+1183850712,2026-04-11T19:00:00.000Z,Regular Season - 31,Sevilla FC,Atlético Madrid,2,1,"Diaz de Mera Escuderos, Isidro",4,0,7,6,4,0,12,6,False,False
+1183843904,2026-04-11T16:30:00.000Z,Regular Season - 31,Barcelona,Espanyol,4,1,"Hernandez Hernandez, Alejandro Jose",3,0,10,7,6,0,18,5,True,False
+1183845606,2026-04-11T14:15:00.000Z,Regular Season - 31,Elche,Valencia,1,0,"Hernandez Maeso, Francisco Jose",1,0,15,5,1,0,18,9,False,False
+1183849861,2026-04-11T12:00:00.000Z,Regular Season - 31,Real Sociedad,Alavés,3,3,"Garcia Verdura, Victor",2,1,11,9,4,0,18,5,False,False
+1183849010,2026-04-10T19:00:00.000Z,Regular Season - 31,Real Madrid,Girona,1,1,"Hernandez Maeso, Francisco Jose",2,0,9,10,1,0,13,1,False,False
+1183837947,2026-04-06T19:00:00.000Z,Regular Season - 30,Girona,Villarreal,1,0,"Cordero Vega, Adrian",2,0,8,7,2,0,9,4,False,False
+1183834543,2026-04-05T19:00:00.000Z,Regular Season - 30,Alavés,Osasuna,2,2,"Soto Grado, Cesar",2,0,7,7,6,1,17,1,False,False
+1183841351,2026-04-05T16:30:00.000Z,Regular Season - 30,Oviedo,Sevilla FC,1,0,"Hernandez Hernandez, Alejandro Jose",5,0,11,5,3,1,12,9,False,False
+1183842202,2026-04-05T14:15:00.000Z,Regular Season - 30,Valencia,Celta de Vigo,2,3,"Galech Apezteguia, Iosu",1,0,14,6,3,0,21,0,False,False
+1183837096,2026-04-05T12:00:00.000Z,Regular Season - 30,Getafe,Athletic Club,2,0,"Martinez Munuera, Juan",3,0,11,4,1,0,11,3,False,False
+1183835394,2026-04-04T19:00:00.000Z,Regular Season - 30,Atlético Madrid,Barcelona,1,2,"Busquets Ferrer, Mateo",6,1,15,1,2,0,11,9,True,False
+1183836245,2026-04-04T16:30:00.000Z,Regular Season - 30,Real Betis,Espanyol,0,0,"Cuadra Fernandez, Guillermo",1,0,12,4,3,0,18,3,False,False
+1183838798,2026-04-04T14:15:00.000Z,Regular Season - 30,Mallorca,Real Madrid,2,1,"Sanchez Martinez, Jose Maria",4,0,16,6,2,0,13,4,False,False
+1183840500,2026-04-04T12:00:00.000Z,Regular Season - 30,Real Sociedad,Levante,2,0,"Muniz Ruiz, Alejandro",2,0,11,11,3,0,15,5,False,False
+1183839649,2026-04-03T19:00:00.000Z,Regular Season - 30,Rayo Vallecano,Elche,1,0,"Munuera Montero, Jose Luis",0,0,17,9,3,1,9,4,False,False
+1183831990,2026-03-22T20:00:00.000Z,Regular Season - 29,Real Madrid,Atlético Madrid,3,2,"Munuera Montero, Jose Luis",1,1,2,4,4,0,15,1,True,False
+1183826033,2026-03-22T17:30:00.000Z,Regular Season - 29,Athletic Club,Real Betis,2,1,"Muniz Ruiz, Alejandro",1,0,10,6,1,0,6,5,False,False
+1183827735,2026-03-22T15:15:00.000Z,Regular Season - 29,Celta de Vigo,Alavés,3,4,"Sesma Espinosa, Miguel",2,0,13,4,2,0,16,1,False,False
+1183826884,2026-03-22T13:00:00.000Z,Regular Season - 29,Barcelona,Rayo Vallecano,1,0,"Cordero Vega, Adrian",3,0,12,6,4,0,11,9,False,False
+1183832841,2026-03-21T20:00:00.000Z,Regular Season - 29,Sevilla FC,Valencia,0,2,"Garcia Verdura, Victor",2,0,13,1,1,0,6,3,False,False
+1183831139,2026-03-21T17:30:00.000Z,Regular Season - 29,Osasuna,Girona,1,0,"Guzman Mansilla, Jose Luis",2,0,18,6,1,0,7,2,False,False
+1183830288,2026-03-21T17:30:00.000Z,Regular Season - 29,Levante,Oviedo,4,2,"Gil Manzano, Jesus",2,0,17,3,3,0,18,1,False,False
+1183829437,2026-03-21T15:15:00.000Z,Regular Season - 29,Espanyol,Getafe,1,2,"Diaz de Mera Escuderos, Isidro",2,0,14,12,7,0,20,9,False,False
+1183828586,2026-03-21T13:00:00.000Z,Regular Season - 29,Elche,Mallorca,2,1,"Alberola Rojas, Javier",2,0,12,2,3,0,11,2,False,False
+1183833692,2026-03-20T20:00:00.000Z,Regular Season - 29,Villarreal,Real Sociedad,3,1,"Ortiz Arias, Miguel Angel",0,0,10,4,2,0,11,5,False,False
+1183822629,2026-03-16T20:00:00.000Z,Regular Season - 28,Rayo Vallecano,Levante,1,1,"Soto Grado, Cesar",2,1,10,5,5,0,13,6,False,False
+1183824331,2026-03-15T20:00:00.000Z,Regular Season - 28,Real Sociedad,Osasuna,3,1,"Cuadra Fernandez, Guillermo",3,0,16,3,0,0,11,5,False,False
+1183820076,2026-03-15T17:30:00.000Z,Regular Season - 28,Real Betis,Celta de Vigo,1,1,"Sanchez Martinez, Jose Maria",3,0,11,3,3,0,16,4,False,False
+1183819225,2026-03-15T15:15:00.000Z,Regular Season - 28,Barcelona,Sevilla FC,5,2,"Martinez Munuera, Juan",0,0,5,3,1,0,14,4,False,False
+1183821778,2026-03-15T13:00:00.000Z,Regular Season - 28,Mallorca,Espanyol,2,1,"De Burgos Bengoechea, Ricardo",3,0,11,5,3,1,14,6,False,False
+1183823480,2026-03-14T20:00:00.000Z,Regular Season - 28,Real Madrid,Elche,4,1,"Gil Manzano, Jesus",1,0,11,5,3,0,21,4,False,False
+1183825182,2026-03-14T17:30:00.000Z,Regular Season - 28,Oviedo,Valencia,1,0,"Sesma Espinosa, Miguel",3,0,12,4,2,0,11,7,False,False
+1183818374,2026-03-14T15:15:00.000Z,Regular Season - 28,Atlético Madrid,Getafe,1,0,"Ortiz Arias, Miguel Angel",3,0,11,10,3,1,11,3,False,False
+1183820927,2026-03-14T13:00:00.000Z,Regular Season - 28,Girona,Athletic Club,3,0,"Galech Apezteguia, Iosu",0,0,8,2,2,0,16,9,False,False
+1183817523,2026-03-13T20:00:00.000Z,Regular Season - 28,Alavés,Villarreal,1,1,"Quintero Gonzalez, Alejandro",4,0,19,5,1,0,11,2,False,False
+1183811566,2026-03-09T20:00:00.000Z,Regular Season - 27,Espanyol,Oviedo,1,1,"Alberola Rojas, Javier",3,0,19,8,2,0,13,0,False,False
+1183815821,2026-03-08T20:00:00.000Z,Regular Season - 27,Valencia,Alavés,3,2,"Guzman Mansilla, Jose Luis",1,0,9,10,4,2,17,2,False,False
+1183814970,2026-03-08T17:30:00.000Z,Regular Season - 27,Sevilla FC,Rayo Vallecano,1,1,"Muniz Ruiz, Alejandro",1,0,13,6,3,0,15,2,False,False
+1183812417,2026-03-08T15:15:00.000Z,Regular Season - 27,Getafe,Real Betis,2,0,"Hernandez Maeso, Francisco Jose",3,0,19,3,2,0,8,8,False,False
+1183816672,2026-03-08T13:00:00.000Z,Regular Season - 27,Villarreal,Elche,2,1,"Garcia Verdura, Victor",1,0,11,4,2,0,16,6,False,False
+1183809013,2026-03-07T20:00:00.000Z,Regular Season - 27,Athletic Club,Barcelona,0,1,"Munuera Montero, Jose Luis",2,0,11,2,1,0,9,4,False,False
+1183809864,2026-03-07T17:30:00.000Z,Regular Season - 27,Atlético Madrid,Real Sociedad,3,2,"Cordero Vega, Adrian",1,0,6,8,1,0,10,1,False,False
+1183813268,2026-03-07T15:15:00.000Z,Regular Season - 27,Levante,Girona,1,1,"Cuadra Fernandez, Guillermo",2,1,15,2,2,0,9,3,False,False
+1183814119,2026-03-07T13:00:00.000Z,Regular Season - 27,Osasuna,Mallorca,2,2,"Hernandez Hernandez, Alejandro Jose",2,1,11,8,5,1,12,0,False,False
+1183810715,2026-03-06T20:00:00.000Z,Regular Season - 27,Celta de Vigo,Real Madrid,1,2,"Diaz de Mera Escuderos, Isidro",1,0,4,1,2,0,12,6,False,False
+1183779228,2026-03-04T18:00:00.000Z,Regular Season - 23,Rayo Vallecano,Oviedo,3,0,"Hernandez Hernandez, Alejandro Jose",1,0,10,12,2,0,10,2,False,False
+1183806460,2026-03-02T20:00:00.000Z,Regular Season - 26,Real Madrid,Getafe,0,1,"Muniz Ruiz, Alejandro",4,1,11,10,5,1,17,2,False,False
+1183803056,2026-03-01T20:00:00.000Z,Regular Season - 26,Girona,Celta de Vigo,1,2,"Ortiz Arias, Miguel Angel",2,0,9,10,2,0,8,6,False,False
+1183801354,2026-03-01T17:30:00.000Z,Regular Season - 26,Real Betis,Sevilla FC,2,2,"De Burgos Bengoechea, Ricardo",3,0,12,4,3,0,15,3,True,False
+1183808162,2026-03-01T15:15:00.000Z,Regular Season - 26,Valencia,Osasuna,1,0,"Cordero Vega, Adrian",2,0,14,5,4,0,13,4,False,False
+1183802205,2026-03-01T13:00:00.000Z,Regular Season - 26,Elche,Espanyol,2,2,"Galech Apezteguia, Iosu",1,0,14,3,5,1,23,1,False,False
+1183807311,2026-02-28T20:00:00.000Z,Regular Season - 26,Oviedo,Atlético Madrid,0,1,"Soto Grado, Cesar",2,0,12,8,2,0,6,3,False,False
+1183804758,2026-02-28T17:30:00.000Z,Regular Season - 26,Mallorca,Real Sociedad,0,1,"Sesma Espinosa, Miguel",0,0,6,3,2,0,22,7,False,False
+1183800503,2026-02-28T15:15:00.000Z,Regular Season - 26,Barcelona,Villarreal,4,1,"Diaz de Mera Escuderos, Isidro",2,0,11,3,1,0,9,2,False,False
+1183805609,2026-02-28T13:00:00.000Z,Regular Season - 26,Rayo Vallecano,Athletic Club,1,1,"Garcia Verdura, Victor",2,0,8,5,3,0,17,4,False,False
+1183803907,2026-02-27T20:00:00.000Z,Regular Season - 26,Levante,Alavés,2,0,"Hernandez Maeso, Francisco Jose",1,0,14,10,5,1,16,6,False,False
+1183791993,2026-02-23T20:00:00.000Z,Regular Season - 25,Alavés,Girona,2,2,"Cordero Vega, Adrian",2,0,18,7,2,0,6,6,False,False
+1183799652,2026-02-22T20:00:00.000Z,Regular Season - 25,Villarreal,Valencia,2,1,"Gil Manzano, Jesus",2,0,7,5,4,0,16,4,True,False
+1183796248,2026-02-22T17:30:00.000Z,Regular Season - 25,Celta de Vigo,Mallorca,2,0,"Guzman Mansilla, Jose Luis",1,0,11,7,5,0,10,2,False,False
+1183794546,2026-02-22T15:15:00.000Z,Regular Season - 25,Barcelona,Levante,3,0,"Alberola Rojas, Javier",2,0,12,13,1,0,10,6,False,False
+1183797099,2026-02-22T13:00:00.000Z,Regular Season - 25,Getafe,Sevilla FC,0,1,"Busquets Ferrer, Mateo",1,1,5,2,1,0,18,2,False,False
+1183793695,2026-02-21T20:00:00.000Z,Regular Season - 25,Atlético Madrid,Espanyol,4,2,"Muniz Ruiz, Alejandro",0,0,8,5,1,0,10,3,False,False
+1183797950,2026-02-21T17:30:00.000Z,Regular Season - 25,Osasuna,Real Madrid,2,1,"Quintero Gonzalez, Alejandro",2,0,19,3,4,0,10,7,False,False
+1183795397,2026-02-21T15:15:00.000Z,Regular Season - 25,Real Betis,Rayo Vallecano,1,1,"Martinez Munuera, Juan",4,0,14,3,3,0,13,5,False,False
+1183798801,2026-02-21T13:00:00.000Z,Regular Season - 25,Real Sociedad,Oviedo,3,3,"Munuera Montero, Jose Luis",2,0,13,7,1,0,16,6,False,False
+1183792844,2026-02-20T20:00:00.000Z,Regular Season - 25,Athletic Club,Elche,2,1,"Hernandez Hernandez, Alejandro Jose",3,0,18,4,3,1,9,1,False,False
+1183719658,2026-02-18T19:00:00.000Z,Regular Season - 16,Levante,Villarreal,0,1,,3,0,13,3,4,0,20,2,False,False
+1183786036,2026-02-16T20:00:00.000Z,Regular Season - 24,Girona,Barcelona,2,1,"Soto Grado, Cesar",1,1,10,3,3,0,6,7,False,False
+1183787738,2026-02-15T20:00:00.000Z,Regular Season - 24,Mallorca,Real Betis,1,2,"Diaz de Mera Escuderos, Isidro",4,0,16,7,3,0,10,3,False,False
+1183786887,2026-02-15T17:30:00.000Z,Regular Season - 24,Levante,Valencia,0,2,"Ortiz Arias, Miguel Angel",2,1,11,3,2,0,10,2,False,False
+1183788589,2026-02-15T15:15:00.000Z,Regular Season - 24,Rayo Vallecano,Atlético Madrid,3,0,"De Burgos Bengoechea, Ricardo",1,0,10,4,3,0,13,8,False,False
+1183790291,2026-02-15T13:00:00.000Z,Regular Season - 24,Oviedo,Athletic Club,1,2,"Busquets Ferrer, Mateo",2,0,8,2,3,0,20,3,False,False
+1183789440,2026-02-14T20:00:00.000Z,Regular Season - 24,Real Madrid,Real Sociedad,4,1,,1,0,10,4,1,0,9,6,False,False
+1183791142,2026-02-14T17:30:00.000Z,Regular Season - 24,Sevilla FC,Alavés,1,1,"Galech Apezteguia, Iosu",4,2,16,0,0,0,13,3,False,False
+1183785185,2026-02-14T15:15:00.000Z,Regular Season - 24,Getafe,Villarreal,2,1,"Sesma Espinosa, Miguel",2,0,21,3,3,0,17,4,False,False
+1183784334,2026-02-14T13:00:00.000Z,Regular Season - 24,Espanyol,Celta de Vigo,2,2,"Cuadra Fernandez, Guillermo",1,0,9,2,0,0,11,2,False,False
+1183783483,2026-02-13T20:00:00.000Z,Regular Season - 24,Elche,Osasuna,0,0,"Sanchez Martinez, Jose Maria",2,0,13,10,4,0,18,3,False,False
+1183782632,2026-02-09T20:00:00.000Z,Regular Season - 23,Villarreal,Espanyol,4,1,"Cordero Vega, Adrian",3,0,18,5,3,0,11,8,False,False
+1183781781,2026-02-08T20:00:00.000Z,Regular Season - 23,Valencia,Real Madrid,0,2,"Alberola Rojas, Javier",1,0,10,5,1,0,13,8,False,False
+1183776675,2026-02-08T17:30:00.000Z,Regular Season - 23,Atlético Madrid,Real Betis,0,1,"Busquets Ferrer, Mateo",3,0,12,7,1,0,3,3,False,False
+1183780930,2026-02-08T15:15:00.000Z,Regular Season - 23,Sevilla FC,Girona,1,1,"Gil Manzano, Jesus",3,0,16,5,3,0,13,7,False,False
+1183775824,2026-02-08T15:15:00.000Z,Regular Season - 23,Athletic Club,Levante,4,2,"Muniz Ruiz, Alejandro",2,0,17,4,1,1,10,3,False,False
+1183774973,2026-02-08T13:00:00.000Z,Regular Season - 23,Alavés,Getafe,0,2,"Martinez Munuera, Juan",2,0,20,6,4,0,20,3,False,False
+1183780079,2026-02-07T20:00:00.000Z,Regular Season - 23,Real Sociedad,Elche,3,1,"Guzman Mansilla, Jose Luis",0,0,14,2,4,0,8,4,False,False
+1183777526,2026-02-07T15:15:00.000Z,Regular Season - 23,Barcelona,Mallorca,3,0,"Quintero Gonzalez, Alejandro",0,0,7,12,0,0,9,3,False,False
+1183778377,2026-02-06T20:00:00.000Z,Regular Season - 23,Celta de Vigo,Osasuna,1,2,"Munuera Montero, Jose Luis",2,0,9,7,2,0,14,3,False,False
+1183771569,2026-02-02T20:00:00.000Z,Regular Season - 22,Mallorca,Sevilla FC,4,1,"Soto Grado, Cesar",1,0,16,4,1,0,8,8,False,False
+1183766463,2026-02-01T20:00:00.000Z,Regular Season - 22,Athletic Club,Real Sociedad,1,1,"Cuadra Fernandez, Guillermo",4,0,14,6,2,1,14,3,True,False
+1183769867,2026-02-01T17:30:00.000Z,Regular Season - 22,Getafe,Celta de Vigo,0,0,"Galech Apezteguia, Iosu",1,0,16,5,2,0,14,3,False,False
+1183767314,2026-02-01T15:15:00.000Z,Regular Season - 22,Real Betis,Valencia,2,1,"Sanchez Martinez, Jose Maria",0,0,15,3,4,0,13,5,False,False
+1183773271,2026-02-01T13:00:00.000Z,Regular Season - 22,Real Madrid,Rayo Vallecano,2,1,"Diaz de Mera Escuderos, Isidro",2,0,6,9,7,2,18,4,False,False
+1183768165,2026-01-31T20:00:00.000Z,Regular Season - 22,Elche,Barcelona,1,3,"Muniz Ruiz, Alejandro",2,0,15,2,1,0,9,8,False,False
+1183770718,2026-01-31T17:30:00.000Z,Regular Season - 22,Levante,Atlético Madrid,0,0,"Garcia Verdura, Victor",2,0,11,4,1,0,12,7,False,False
+1183772420,2026-01-31T15:15:00.000Z,Regular Season - 22,Osasuna,Villarreal,2,2,"De Burgos Bengoechea, Ricardo",2,0,15,6,2,0,7,2,False,False
+1183774122,2026-01-31T13:00:00.000Z,Regular Season - 22,Oviedo,Girona,1,0,"Alberola Rojas, Javier",1,0,12,4,1,0,16,4,False,False
+1183769016,2026-01-30T20:00:00.000Z,Regular Season - 22,Espanyol,Alavés,1,2,"Sesma Espinosa, Miguel",0,0,15,4,1,0,15,2,False,False
+1183760506,2026-01-26T20:00:00.000Z,Regular Season - 21,Girona,Getafe,1,1,"Quintero Gonzalez, Alejandro",5,0,13,3,3,0,15,4,False,False
+1183757953,2026-01-25T20:00:00.000Z,Regular Season - 21,Alavés,Real Betis,2,1,"Ortiz Arias, Miguel Angel",1,0,17,6,1,0,11,4,False,False
+1183763059,2026-01-25T17:30:00.000Z,Regular Season - 21,Real Sociedad,Celta de Vigo,3,1,"Alberola Rojas, Javier",1,1,7,2,1,0,13,9,False,False
+1183759655,2026-01-25T15:15:00.000Z,Regular Season - 21,Barcelona,Oviedo,3,0,"Martinez Munuera, Juan",1,0,8,10,2,0,21,1,False,False
+1183758804,2026-01-25T13:00:00.000Z,Regular Season - 21,Atlético Madrid,Mallorca,3,0,"Sanchez Martinez, Jose Maria",2,0,10,10,1,0,7,3,False,False
+1183765612,2026-01-24T20:00:00.000Z,Regular Season - 21,Villarreal,Real Madrid,0,2,"Soto Grado, Cesar",3,0,19,6,1,0,10,6,False,False
+1183763910,2026-01-24T17:30:00.000Z,Regular Season - 21,Sevilla FC,Athletic Club,2,1,"Hernandez Maeso, Francisco Jose",2,0,16,5,1,0,12,5,False,False
+1183764761,2026-01-24T15:15:00.000Z,Regular Season - 21,Valencia,Espanyol,3,2,"Hernandez Hernandez, Alejandro Jose",1,0,13,2,5,0,10,7,False,False
+1183762208,2026-01-24T13:00:00.000Z,Regular Season - 21,Rayo Vallecano,Osasuna,1,3,"Sesma Espinosa, Miguel",2,0,12,4,2,0,15,3,False,False
+1183761357,2026-01-23T20:00:00.000Z,Regular Season - 21,Levante,Elche,3,2,"Munuera Montero, Jose Luis",2,0,13,9,3,0,13,1,False,False
+1183751996,2026-01-19T20:00:00.000Z,Regular Season - 20,Elche,Sevilla FC,2,2,"De Burgos Bengoechea, Ricardo",3,0,11,9,1,0,12,7,False,False
+1183757102,2026-01-18T20:00:00.000Z,Regular Season - 20,Real Sociedad,Barcelona,2,1,"Gil Manzano, Jesus",3,1,13,6,4,0,8,8,False,False
+1183751145,2026-01-18T17:30:00.000Z,Regular Season - 20,Celta de Vigo,Rayo Vallecano,3,0,"Busquets Ferrer, Mateo",4,0,7,5,3,1,14,7,False,False
+1183749443,2026-01-18T15:15:00.000Z,Regular Season - 20,Atlético Madrid,Alavés,1,0,"Cuadra Fernandez, Guillermo",1,0,13,6,1,0,5,6,False,False
+1183753698,2026-01-18T13:00:00.000Z,Regular Season - 20,Getafe,Valencia,0,1,"Diaz de Mera Escuderos, Isidro",2,0,8,9,3,1,18,3,False,False
+1183750294,2026-01-17T20:00:00.000Z,Regular Season - 20,Real Betis,Villarreal,2,0,"Garcia Verdura, Victor",3,0,14,2,2,1,13,3,False,False
+1183755400,2026-01-17T17:30:00.000Z,Regular Season - 20,Osasuna,Oviedo,3,2,"Quintero Gonzalez, Alejandro",1,1,14,3,4,0,15,6,False,False
+1183754549,2026-01-17T15:15:00.000Z,Regular Season - 20,Mallorca,Athletic Club,3,2,"Guzman Mansilla, Jose Luis",1,0,10,3,3,2,10,7,False,False
+1183756251,2026-01-17T13:00:00.000Z,Regular Season - 20,Real Madrid,Levante,2,0,"Sesma Espinosa, Miguel",2,0,12,8,1,0,14,0,False,False
+1183752847,2026-01-16T20:00:00.000Z,Regular Season - 20,Espanyol,Girona,0,2,"Galech Apezteguia, Iosu",5,0,17,5,5,0,17,4,False,False
+1183746890,2026-01-12T20:00:00.000Z,Regular Season - 19,Sevilla FC,Celta de Vigo,0,1,"Sanchez Martinez, Jose Maria",3,0,16,6,3,0,16,1,False,False
+1183744337,2026-01-11T15:15:00.000Z,Regular Season - 19,Levante,Espanyol,1,1,"Soto Grado, Cesar",0,0,10,4,1,0,9,3,False,False
+1183745188,2026-01-11T13:00:00.000Z,Regular Season - 19,Rayo Vallecano,Mallorca,2,1,"Martinez Munuera, Juan",1,1,14,6,5,0,14,5,False,False
+1183747741,2026-01-10T20:00:00.000Z,Regular Season - 19,Valencia,Elche,1,1,"Ortiz Arias, Miguel Angel",2,0,14,8,3,0,14,6,False,False
+1183743486,2026-01-10T17:30:00.000Z,Regular Season - 19,Girona,Osasuna,1,0,"Hernandez Hernandez, Alejandro Jose",2,1,14,2,6,0,13,1,False,False
+1183748592,2026-01-10T15:15:00.000Z,Regular Season - 19,Villarreal,Alavés,3,1,"Muniz Ruiz, Alejandro",0,0,10,1,2,0,14,6,False,False
+1183746039,2026-01-10T13:00:00.000Z,Regular Season - 19,Oviedo,Real Betis,1,1,"Cuadra Fernandez, Guillermo",3,0,15,5,1,0,8,2,False,False
+1183742635,2026-01-09T20:00:00.000Z,Regular Season - 19,Getafe,Real Sociedad,1,2,"Hernandez Maeso, Francisco Jose",2,0,17,2,1,0,17,4,False,False
+1183739231,2026-01-04T20:00:00.000Z,Regular Season - 18,Real Sociedad,Atlético Madrid,1,1,"Martinez Munuera, Juan",3,0,11,6,2,0,13,6,False,False
+1183732423,2026-01-04T17:30:00.000Z,Regular Season - 18,Alavés,Oviedo,1,1,"Gil, Maria Eugenia",1,1,11,6,1,1,20,7,False,False
+1183735827,2026-01-04T17:30:00.000Z,Regular Season - 18,Mallorca,Girona,1,2,"Alberola Rojas, Javier",2,0,10,3,1,0,14,6,False,False
+1183738380,2026-01-04T15:15:00.000Z,Regular Season - 18,Real Madrid,Real Betis,5,1,"Hernandez Hernandez, Alejandro Jose",1,0,10,5,1,0,12,8,False,False
+1183740082,2026-01-04T13:00:00.000Z,Regular Season - 18,Sevilla FC,Levante,0,3,"Galech Apezteguia, Iosu",3,0,16,5,4,0,10,1,False,False
+1183734976,2026-01-03T20:00:00.000Z,Regular Season - 18,Espanyol,Barcelona,0,2,"Garcia Verdura, Victor",1,0,10,5,0,0,14,7,True,False
+1183734125,2026-01-03T17:30:00.000Z,Regular Season - 18,Elche,Villarreal,1,3,"Diaz de Mera Escuderos, Isidro",3,0,8,6,3,0,11,2,False,False
+1183736678,2026-01-03T15:15:00.000Z,Regular Season - 18,Osasuna,Athletic Club,1,1,"Munuera Montero, Jose Luis",3,0,12,1,3,0,19,9,False,False
+1183733274,2026-01-03T13:00:00.000Z,Regular Season - 18,Celta de Vigo,Valencia,4,1,"De Burgos Bengoechea, Ricardo",1,0,10,2,3,0,9,4,False,False
+1183737529,2026-01-02T20:00:00.000Z,Regular Season - 18,Rayo Vallecano,Getafe,1,1,"Ortiz Arias, Miguel Angel",3,0,13,3,4,0,10,2,False,False
+1183723913,2025-12-22T20:00:00.000Z,Regular Season - 17,Athletic Club,Espanyol,1,2,"Busquets Ferrer, Mateo",5,0,10,8,2,0,9,4,False,False
+1183724764,2025-12-21T20:00:00.000Z,Regular Season - 17,Real Betis,Getafe,4,0,,0,0,13,7,1,0,12,5,False,False
+1183725615,2025-12-21T17:30:00.000Z,Regular Season - 17,Elche,Rayo Vallecano,4,0,,2,0,15,4,3,0,11,5,False,False
+1183731572,2025-12-21T15:15:00.000Z,Regular Season - 17,Villarreal,Barcelona,0,2,,1,1,10,5,1,0,8,10,False,False
+1183726466,2025-12-21T13:00:00.000Z,Regular Season - 17,Girona,Atlético Madrid,0,3,,2,0,7,3,0,0,14,4,False,False
+1183729019,2025-12-20T20:00:00.000Z,Regular Season - 17,Real Madrid,Sevilla FC,2,0,"Muniz Ruiz, Alejandro",2,0,13,6,3,1,19,5,False,False
+1183728168,2025-12-20T17:30:00.000Z,Regular Season - 17,Osasuna,Alavés,3,0,"Soto Grado, Cesar",2,0,16,9,2,0,11,0,False,False
+1183727317,2025-12-20T15:15:00.000Z,Regular Season - 17,Levante,Real Sociedad,1,1,"Cuadra Fernandez, Guillermo",6,0,17,7,2,0,13,10,False,False
+1183729870,2025-12-20T13:00:00.000Z,Regular Season - 17,Oviedo,Celta de Vigo,0,0,"Hernandez Maeso, Francisco Jose",2,0,14,4,1,0,7,3,False,False
+1183730721,2025-12-19T20:00:00.000Z,Regular Season - 17,Valencia,Mallorca,1,1,"Quintero Gonzalez, Alejandro",2,0,10,12,3,0,12,3,False,False
+1183721360,2025-12-15T20:00:00.000Z,Regular Season - 16,Rayo Vallecano,Real Betis,0,0,"De Burgos Bengoechea, Ricardo",4,0,10,8,1,0,7,3,False,False
+1183715403,2025-12-14T20:00:00.000Z,Regular Season - 16,Alavés,Real Madrid,1,2,"Garcia Verdura, Victor",3,0,12,5,1,0,13,7,False,False
+1183717956,2025-12-14T15:15:00.000Z,Regular Season - 16,Celta de Vigo,Athletic Club,2,0,"Hernandez Hernandez, Alejandro Jose",3,0,11,1,2,0,13,4,False,False
+1183723062,2025-12-14T13:00:00.000Z,Regular Season - 16,Sevilla FC,Oviedo,4,0,"Diaz de Mera Escuderos, Isidro",1,0,11,5,0,1,12,3,False,False
+1183718807,2025-12-13T20:00:00.000Z,Regular Season - 16,Getafe,Espanyol,0,1,"Gil Manzano, Jesus",5,0,18,6,1,0,17,4,False,False
+1183717105,2025-12-13T17:30:00.000Z,Regular Season - 16,Barcelona,Osasuna,2,0,"Cordero Vega, Adrian",0,0,5,14,3,0,8,1,False,False
+1183720509,2025-12-13T15:15:00.000Z,Regular Season - 16,Mallorca,Elche,3,1,"Munuera Montero, Jose Luis",3,0,13,1,0,0,13,1,False,False
+1183716254,2025-12-13T13:00:00.000Z,Regular Season - 16,Atlético Madrid,Valencia,2,1,"Soto Grado, Cesar",3,0,13,5,1,0,11,7,False,False
+1183722211,2025-12-12T20:00:00.000Z,Regular Season - 16,Real Sociedad,Girona,1,2,"Ortiz Arias, Miguel Angel",1,0,20,4,2,0,5,3,False,False
+1183711148,2025-12-08T20:00:00.000Z,Regular Season - 15,Osasuna,Levante,2,0,"Guzman Mansilla, Jose Luis",2,0,15,3,2,0,7,3,False,False
+1183711999,2025-12-07T20:00:00.000Z,Regular Season - 15,Real Madrid,Celta de Vigo,0,2,"Quintero Gonzalez, Alejandro",4,2,6,8,1,0,12,1,False,False
+1183710297,2025-12-07T17:30:00.000Z,Regular Season - 15,Espanyol,Rayo Vallecano,1,0,"Sanchez Martinez, Jose Maria",2,1,19,6,6,1,22,2,False,False
+1183713701,2025-12-07T15:15:00.000Z,Regular Season - 15,Valencia,Sevilla FC,1,1,"Cuadra Fernandez, Guillermo",3,0,12,2,6,0,18,2,False,False
+1183709446,2025-12-07T13:00:00.000Z,Regular Season - 15,Elche,Girona,3,0,"Sesma Espinosa, Miguel",0,0,18,2,3,0,13,2,False,False
+1183707744,2025-12-06T20:00:00.000Z,Regular Season - 15,Athletic Club,Atlético Madrid,1,0,"Muniz Ruiz, Alejandro",3,0,9,5,2,0,12,6,False,False
+1183708595,2025-12-06T17:30:00.000Z,Regular Season - 15,Real Betis,Barcelona,3,5,"Hernandez Maeso, Francisco Jose",4,0,13,7,2,0,9,7,False,False
+1183706893,2025-12-06T15:15:00.000Z,Regular Season - 15,Alavés,Real Sociedad,1,0,"Alberola Rojas, Javier",2,0,20,5,2,0,16,8,False,False
+1183714552,2025-12-06T13:00:00.000Z,Regular Season - 15,Villarreal,Getafe,2,0,"Busquets Ferrer, Mateo",2,0,19,5,4,1,15,3,False,False
+1183712850,2025-12-05T20:00:00.000Z,Regular Season - 15,Oviedo,Mallorca,0,0,"Galech Apezteguia, Iosu",2,2,14,8,1,0,12,5,False,False
+1183740933,2025-12-03T18:00:00.000Z,Regular Season - 19,Athletic Club,Real Madrid,0,3,"Gil Manzano, Jesus",2,0,15,5,0,0,4,7,False,False
+1183741784,2025-12-02T20:00:00.000Z,Regular Season - 19,Barcelona,Atlético Madrid,3,1,"De Burgos Bengoechea, Ricardo",1,0,12,5,1,0,9,4,True,False
+1183704340,2025-12-01T20:00:00.000Z,Regular Season - 14,Rayo Vallecano,Valencia,1,1,"Alberola Rojas, Javier",1,0,11,10,1,0,9,5,False,False
+1183701787,2025-11-30T20:00:00.000Z,Regular Season - 14,Girona,Real Madrid,1,1,"De Burgos Bengoechea, Ricardo",3,0,9,2,0,0,13,5,False,False
+1183700085,2025-11-30T17:30:00.000Z,Regular Season - 14,Celta de Vigo,Espanyol,0,1,"Diaz de Mera Escuderos, Isidro",1,0,12,4,2,0,15,3,False,False
+1183706042,2025-11-30T15:15:00.000Z,Regular Season - 14,Sevilla FC,Real Betis,0,2,"Munuera Montero, Jose Luis",2,1,14,6,2,0,22,4,True,False
+1183705191,2025-11-30T13:00:00.000Z,Regular Season - 14,Real Sociedad,Villarreal,2,3,"Soto Grado, Cesar",3,0,15,8,7,0,18,2,False,False
+1183698383,2025-11-29T20:00:00.000Z,Regular Season - 14,Atlético Madrid,Oviedo,2,0,"Garcia Verdura, Victor",0,0,5,7,1,0,8,2,False,False
+1183702638,2025-11-29T17:30:00.000Z,Regular Season - 14,Levante,Athletic Club,0,2,"Cordero Vega, Adrian",3,0,11,4,2,0,19,2,False,False
+1183699234,2025-11-29T15:15:00.000Z,Regular Season - 14,Barcelona,Alavés,3,1,"Ortiz Arias, Miguel Angel",2,0,10,5,3,0,17,4,False,False
+1183703489,2025-11-29T13:00:00.000Z,Regular Season - 14,Mallorca,Osasuna,2,2,"Gil Manzano, Jesus",3,0,10,2,4,0,15,8,False,False
+1183700936,2025-11-28T20:00:00.000Z,Regular Season - 14,Getafe,Elche,1,0,"Hernandez Hernandez, Alejandro Jose",2,0,18,3,2,0,11,5,False,False
+1183693277,2025-11-24T20:00:00.000Z,Regular Season - 13,Espanyol,Sevilla FC,2,1,"Sesma Espinosa, Miguel",4,0,18,4,1,0,7,13,False,False
+1183692426,2025-11-23T20:00:00.000Z,Regular Season - 13,Elche,Real Madrid,2,2,"Hernandez Maeso, Francisco Jose",2,1,10,2,1,0,8,8,False,False
+1183694128,2025-11-23T17:30:00.000Z,Regular Season - 13,Getafe,Atlético Madrid,0,1,"Cuadra Fernandez, Guillermo",2,0,9,6,3,0,17,7,False,False
+1183691575,2025-11-23T15:15:00.000Z,Regular Season - 13,Real Betis,Girona,1,1,"Galech Apezteguia, Iosu",3,1,10,8,4,0,16,0,False,False
+1183695830,2025-11-23T13:00:00.000Z,Regular Season - 13,Oviedo,Rayo Vallecano,0,0,"Quintero Gonzalez, Alejandro",1,1,11,5,2,1,13,6,False,False
+1183697532,2025-11-22T20:00:00.000Z,Regular Season - 13,Villarreal,Mallorca,2,1,"Guzman Mansilla, Jose Luis",2,0,17,3,2,0,8,1,False,False
+1183694979,2025-11-22T17:30:00.000Z,Regular Season - 13,Osasuna,Real Sociedad,1,3,"Busquets Ferrer, Mateo",3,1,13,3,2,0,7,3,False,False
+1183690724,2025-11-22T15:15:00.000Z,Regular Season - 13,Barcelona,Athletic Club,4,0,"Sanchez Martinez, Jose Maria",0,0,9,5,2,1,9,7,False,False
+1183689873,2025-11-22T13:00:00.000Z,Regular Season - 13,Alavés,Celta de Vigo,0,1,"Martinez Munuera, Juan",2,0,21,4,2,0,15,2,False,False
+1183696681,2025-11-21T20:00:00.000Z,Regular Season - 13,Valencia,Levante,1,0,"Muniz Ruiz, Alejandro",4,0,16,7,3,0,15,0,False,False
+1183683065,2025-11-09T20:00:00.000Z,Regular Season - 12,Celta de Vigo,Barcelona,2,4,"Alberola Rojas, Javier",1,0,13,2,3,1,10,5,False,False
+1183689022,2025-11-09T17:30:00.000Z,Regular Season - 12,Valencia,Real Betis,1,1,"Garcia Verdura, Victor",3,0,13,7,3,0,10,2,False,False
+1183686469,2025-11-09T17:30:00.000Z,Regular Season - 12,Mallorca,Getafe,1,0,"De Burgos Bengoechea, Ricardo",0,0,15,1,2,0,8,14,False,False
+1183687320,2025-11-09T15:15:00.000Z,Regular Season - 12,Rayo Vallecano,Real Madrid,0,0,"Martinez Munuera, Juan",3,0,17,5,2,0,7,8,False,False
+1183681363,2025-11-09T13:00:00.000Z,Regular Season - 12,Athletic Club,Oviedo,1,0,"Soto Grado, Cesar",1,0,12,7,1,0,8,4,False,False
+1183684767,2025-11-08T20:00:00.000Z,Regular Season - 12,Espanyol,Villarreal,0,2,,0,0,9,4,2,0,9,2,False,False
+1183682214,2025-11-08T17:30:00.000Z,Regular Season - 12,Atlético Madrid,Levante,3,1,,3,0,5,21,1,0,6,4,False,False
+1183688171,2025-11-08T15:15:00.000Z,Regular Season - 12,Sevilla FC,Osasuna,1,0,,5,0,21,5,3,0,12,6,False,False
+1183685618,2025-11-08T13:00:00.000Z,Regular Season - 12,Girona,Alavés,1,0,,0,0,9,6,3,0,15,1,False,False
+1183683916,2025-11-07T20:00:00.000Z,Regular Season - 12,Elche,Real Sociedad,1,1,"Diaz de Mera Escuderos, Isidro",1,0,14,1,3,0,15,3,False,False
+1183679661,2025-11-03T20:00:00.000Z,Regular Season - 11,Oviedo,Osasuna,0,0,"Guzman Mansilla, Jose Luis",3,0,17,4,1,0,17,2,False,False
+1183675406,2025-11-02T20:00:00.000Z,Regular Season - 11,Real Betis,Mallorca,3,0,,0,0,9,4,3,0,8,5,False,False
+1183674555,2025-11-02T17:30:00.000Z,Regular Season - 11,Barcelona,Elche,3,1,,0,0,12,6,1,0,16,3,False,False
+1183672853,2025-11-02T15:15:00.000Z,Regular Season - 11,Alavés,Espanyol,2,1,,2,1,15,1,2,0,12,6,False,False
+1183677108,2025-11-02T13:00:00.000Z,Regular Season - 11,Levante,Celta de Vigo,1,2,,2,1,10,4,3,0,12,4,False,False
+1183677959,2025-11-01T20:00:00.000Z,Regular Season - 11,Real Madrid,Valencia,4,0,"Busquets Ferrer, Mateo",1,0,14,7,1,0,7,1,False,False
+1183678810,2025-11-01T17:30:00.000Z,Regular Season - 11,Real Sociedad,Athletic Club,3,2,"Munuera Montero, Jose Luis",1,0,20,6,2,0,8,2,True,False
+1183673704,2025-11-01T15:15:00.000Z,Regular Season - 11,Atlético Madrid,Sevilla FC,3,0,"Hernandez Hernandez, Alejandro Jose",0,0,9,9,3,0,12,4,False,False
+1183680512,2025-11-01T13:00:00.000Z,Regular Season - 11,Villarreal,Rayo Vallecano,4,0,"Galech Apezteguia, Iosu",1,0,7,3,1,0,11,5,False,False
+1183676257,2025-10-31T20:00:00.000Z,Regular Season - 11,Getafe,Girona,2,1,,1,0,17,8,1,0,15,3,False,False
+1183665194,2025-10-27T20:00:00.000Z,Regular Season - 10,Real Betis,Atlético Madrid,0,2,,2,0,9,2,1,0,18,5,False,False
+1183669449,2025-10-26T20:00:00.000Z,Regular Season - 10,Rayo Vallecano,Alavés,1,0,,1,0,13,7,3,0,11,5,False,False
+1183668598,2025-10-26T17:30:00.000Z,Regular Season - 10,Osasuna,Celta de Vigo,2,3,,3,0,10,6,4,0,13,2,False,False
+1183670300,2025-10-26T15:15:00.000Z,Regular Season - 10,Real Madrid,Barcelona,2,1,,4,0,12,12,1,1,9,4,True,False
+1183667747,2025-10-26T13:00:00.000Z,Regular Season - 10,Mallorca,Levante,1,1,,3,0,8,5,2,0,13,4,False,False
+1183672002,2025-10-25T19:00:00.000Z,Regular Season - 10,Valencia,Villarreal,0,2,"Alberola Rojas, Javier",2,0,13,7,4,0,14,5,True,False
+1183664343,2025-10-25T16:30:00.000Z,Regular Season - 10,Athletic Club,Getafe,0,1,"Diaz de Mera Escuderos, Isidro",1,1,15,1,3,0,14,5,False,False
+1183666045,2025-10-25T14:15:00.000Z,Regular Season - 10,Espanyol,Elche,1,0,"De Burgos Bengoetxea, Ricardo",4,0,14,4,2,0,15,2,False,False
+1183666896,2025-10-25T12:00:00.000Z,Regular Season - 10,Girona,Oviedo,3,3,"Muniz Ruiz, Alejandro",4,0,13,11,3,0,16,4,False,False
+1183671151,2025-10-24T19:00:00.000Z,Regular Season - 10,Real Sociedad,Sevilla FC,2,1,,1,0,19,1,3,0,14,9,False,False
+1183655833,2025-10-20T19:00:00.000Z,Regular Season - 9,Alavés,Valencia,0,0,,1,0,13,7,2,0,20,0,False,False
+1183660088,2025-10-19T19:00:00.000Z,Regular Season - 9,Getafe,Real Madrid,0,1,,2,2,27,1,1,0,11,4,False,False
+1183660939,2025-10-19T16:30:00.000Z,Regular Season - 9,Levante,Rayo Vallecano,0,3,,0,0,6,11,1,0,18,4,False,False
+1183658386,2025-10-19T14:15:00.000Z,Regular Season - 9,Celta de Vigo,Real Sociedad,1,1,,2,1,10,1,3,0,20,10,False,False
+1183659237,2025-10-19T12:00:00.000Z,Regular Season - 9,Elche,Athletic Club,0,0,,2,0,14,6,3,0,20,2,False,False
+1183656684,2025-10-18T19:00:00.000Z,Regular Season - 9,Atlético Madrid,Osasuna,1,0,"De Burgos Bengoetxea, Ricardo",1,0,10,4,3,0,11,2,False,False
+1183663492,2025-10-18T16:30:00.000Z,Regular Season - 9,Villarreal,Real Betis,2,2,,1,0,13,5,1,0,10,6,False,False
+1183657535,2025-10-18T14:15:00.000Z,Regular Season - 9,Barcelona,Girona,2,1,"Gil Manzano, Jesus",1,1,10,11,2,0,7,5,False,False
+1183662641,2025-10-18T12:00:00.000Z,Regular Season - 9,Sevilla FC,Mallorca,1,3,"Garcia Verdura, Victor",2,0,16,9,1,0,13,2,False,False
+1183661790,2025-10-17T19:00:00.000Z,Regular Season - 9,Oviedo,Espanyol,0,2,,2,0,9,3,1,0,8,5,False,False
+1183649025,2025-10-05T19:00:00.000Z,Regular Season - 8,Celta de Vigo,Atlético Madrid,1,1,,1,0,7,6,1,1,10,3,False,False
+1183653280,2025-10-05T16:30:00.000Z,Regular Season - 8,Real Sociedad,Rayo Vallecano,0,1,,1,0,13,7,2,0,21,5,False,False
+1183649876,2025-10-05T16:30:00.000Z,Regular Season - 8,Espanyol,Real Betis,1,2,,2,0,16,10,6,0,4,5,False,False
+1183654982,2025-10-05T14:15:00.000Z,Regular Season - 8,Sevilla FC,Barcelona,4,1,,7,0,18,7,4,0,9,6,False,False
+1183647323,2025-10-05T12:00:00.000Z,Regular Season - 8,Alavés,Elche,3,1,,3,0,13,14,1,1,9,4,False,False
+1183652429,2025-10-04T19:00:00.000Z,Regular Season - 8,Real Madrid,Villarreal,3,1,,2,0,9,4,2,1,14,0,False,False
+1183648174,2025-10-04T16:30:00.000Z,Regular Season - 8,Athletic Club,Mallorca,2,1,,5,0,16,7,4,1,13,2,False,False
+1183650727,2025-10-04T14:15:00.000Z,Regular Season - 8,Girona,Valencia,2,1,,3,2,13,0,1,0,12,7,False,False
+1183654131,2025-10-04T12:00:00.000Z,Regular Season - 8,Oviedo,Levante,0,2,,2,0,10,9,2,0,10,3,False,False
+1183651578,2025-10-03T19:00:00.000Z,Regular Season - 8,Osasuna,Getafe,2,1,,1,0,11,1,4,0,14,6,False,False
+1183645621,2025-09-30T18:00:00.000Z,Regular Season - 7,Valencia,Oviedo,1,2,"De Burgos Bengoetxea, Ricardo",1,0,14,5,2,1,12,4,False,False
+1183640515,2025-09-28T19:00:00.000Z,Regular Season - 7,Real Betis,Osasuna,2,0,"Garcia Verdura, Victor",0,0,6,5,1,0,7,5,False,False
+1183639664,2025-09-28T16:30:00.000Z,Regular Season - 7,Barcelona,Real Sociedad,2,1,"Hernandez Hernandez, Alejandro Jose",1,0,6,12,2,0,12,1,False,False
+1183641366,2025-09-28T14:15:00.000Z,Regular Season - 7,Elche,Celta de Vigo,2,1,"Cuadra Fernandez, Guillermo",3,0,12,7,3,0,20,2,False,False
+1183644770,2025-09-28T12:00:00.000Z,Regular Season - 7,Rayo Vallecano,Sevilla FC,0,1,"Gil Manzano, Jesus",3,1,12,12,2,0,15,4,False,False
+1183646472,2025-09-27T19:00:00.000Z,Regular Season - 7,Villarreal,Athletic Club,1,0,"Sesma Espinosa, Miguel",2,0,13,6,0,0,11,5,False,False
+1183643919,2025-09-27T16:30:00.000Z,Regular Season - 7,Mallorca,Alavés,1,0,"Cordero Vega, Adrian",2,0,14,4,3,0,18,8,False,False
+1183638813,2025-09-27T14:15:00.000Z,Regular Season - 7,Atlético Madrid,Real Madrid,5,2,"Alberola Rojas, Javier",5,0,17,7,4,0,14,2,True,False
+1183642217,2025-09-27T12:00:00.000Z,Regular Season - 7,Getafe,Levante,1,1,"Busquets Ferrer, Mateo",4,0,15,6,3,0,16,2,False,False
+1183643068,2025-09-26T19:00:00.000Z,Regular Season - 7,Girona,Espanyol,0,0,"Hernandez Maeso, Francisco Jose",0,0,9,8,1,0,11,4,False,False
+1183637111,2025-09-25T19:30:00.000Z,Regular Season - 6,Oviedo,Barcelona,1,3,,1,0,10,6,0,0,6,9,False,False
+1183635409,2025-09-25T17:30:00.000Z,Regular Season - 6,Osasuna,Elche,1,1,,2,0,19,2,2,0,13,3,False,False
+1183636260,2025-09-24T19:30:00.000Z,Regular Season - 6,Real Sociedad,Mallorca,1,0,"Galech Apezteguia, Iosu",2,0,13,11,2,0,15,2,False,False
+1183631154,2025-09-24T19:30:00.000Z,Regular Season - 6,Atlético Madrid,Rayo Vallecano,3,2,"Hernandez Hernandez, Alejandro Jose",3,0,6,8,4,0,12,6,False,False
+1183633707,2025-09-24T17:00:00.000Z,Regular Season - 6,Getafe,Alavés,1,1,"Quintero Gonzalez, Alejandro",2,0,14,2,3,0,20,7,False,False
+1183634558,2025-09-23T19:30:00.000Z,Regular Season - 6,Levante,Real Madrid,1,4,"Diaz de Mera Escuderos, Isidro",1,0,17,1,1,0,9,7,False,False
+1183637962,2025-09-23T19:30:00.000Z,Regular Season - 6,Sevilla FC,Villarreal,1,2,"Soto Grado, Cesar",2,0,17,3,3,0,14,3,False,False
+1183630303,2025-09-23T17:00:00.000Z,Regular Season - 6,Athletic Club,Girona,1,1,"Munuera Montero, Jose Luis",0,0,19,8,2,0,15,1,False,False
+1183632856,2025-09-23T17:00:00.000Z,Regular Season - 6,Espanyol,Valencia,2,2,"Guzman Mansilla, Jose Luis",1,0,9,8,4,0,9,3,False,False
+1183622644,2025-09-21T19:00:00.000Z,Regular Season - 5,Barcelona,Getafe,3,0,"De Burgos Bengoetxea, Ricardo",2,0,9,3,4,0,15,2,False,False
+1183624346,2025-09-21T16:30:00.000Z,Regular Season - 5,Elche,Oviedo,1,0,"Sesma Espinosa, Miguel",2,0,9,3,2,0,18,3,False,False
+1183626048,2025-09-21T14:15:00.000Z,Regular Season - 5,Mallorca,Atlético Madrid,1,1,,0,0,14,3,0,1,6,6,False,False
+1183626899,2025-09-21T12:00:00.000Z,Regular Season - 5,Rayo Vallecano,Celta de Vigo,1,1,"Garcia Verdura, Victor",1,0,8,5,1,0,10,7,False,False
+1183628601,2025-09-20T19:00:00.000Z,Regular Season - 5,Valencia,Athletic Club,2,0,"Ortiz Arias, Miguel Angel",1,0,13,5,1,1,6,6,False,False
+1183621793,2025-09-20T16:30:00.000Z,Regular Season - 5,Alavés,Sevilla FC,1,2,"Galech Apezteguia, Iosu",1,0,20,4,7,0,19,4,False,False
+1183629452,2025-09-20T16:30:00.000Z,Regular Season - 5,Villarreal,Osasuna,2,1,"Diaz de Mera Escuderos, Isidro",2,0,10,7,1,1,11,0,False,False
+1183627750,2025-09-20T14:15:00.000Z,Regular Season - 5,Real Madrid,Espanyol,2,0,,2,0,10,5,0,0,20,3,False,False
+1183625197,2025-09-20T12:00:00.000Z,Regular Season - 5,Girona,Levante,0,4,"Quintero Gonzalez, Alejandro",2,2,11,5,3,0,17,4,False,False
+1183623495,2025-09-19T19:00:00.000Z,Regular Season - 5,Real Betis,Real Sociedad,3,1,"Busquets Ferrer, Mateo",3,0,7,3,7,0,20,5,False,False
+1183616687,2025-09-15T19:00:00.000Z,Regular Season - 4,Espanyol,Mallorca,3,2,"Hernandez Hernandez, Alejandro Jose",2,1,9,3,1,0,16,9,False,False
+1183614985,2025-09-14T19:00:00.000Z,Regular Season - 4,Barcelona,Valencia,6,0,"Cuadra Fernandez, Guillermo",0,0,9,5,1,0,8,4,False,False
+1183619240,2025-09-14T16:30:00.000Z,Regular Season - 4,Osasuna,Rayo Vallecano,2,0,"Soto Grado, Cesar",3,0,13,3,2,0,7,6,False,False
+1183618389,2025-09-14T14:15:00.000Z,Regular Season - 4,Levante,Real Betis,2,2,"Muniz Ruiz, Alejandro",4,0,16,4,2,0,11,12,False,False
+1183615836,2025-09-14T12:00:00.000Z,Regular Season - 4,Celta de Vigo,Girona,1,1,,0,0,7,10,3,0,9,3,False,False
+1183614134,2025-09-13T19:00:00.000Z,Regular Season - 4,Atlético Madrid,Villarreal,2,0,"Munuera Montero, Jose Luis",2,0,12,8,4,0,15,3,False,False
+1183613283,2025-09-13T16:30:00.000Z,Regular Season - 4,Athletic Club,Alavés,0,1,"Sanchez Martinez, Jose Maria",4,0,17,6,3,0,21,6,False,False
+1183620091,2025-09-13T14:15:00.000Z,Regular Season - 4,Real Sociedad,Real Madrid,1,2,"Gil Manzano, Jesus",2,0,17,12,1,1,7,4,False,False
+1183617538,2025-09-13T12:00:00.000Z,Regular Season - 4,Getafe,Oviedo,2,0,"Guzman Mansilla, Jose Luis",2,0,12,4,5,1,18,3,False,False
+1183620942,2025-09-12T19:00:00.000Z,Regular Season - 4,Sevilla FC,Elche,2,2,"Alberola Rojas, Javier",4,0,23,2,3,0,19,2,False,False
+1183609879,2025-08-31T19:30:00.000Z,Regular Season - 3,Rayo Vallecano,Barcelona,1,1,"Busquets Ferrer, Mateo",4,0,16,9,1,0,8,4,False,False
+1183608177,2025-08-31T17:30:00.000Z,Regular Season - 3,Espanyol,Osasuna,1,0,"Sesma Espinosa, Miguel",2,0,13,2,3,0,14,3,False,False
+1183605624,2025-08-31T17:00:00.000Z,Regular Season - 3,Real Betis,Athletic Club,1,2,"Diaz de Mera Escuderos, Isidro",1,0,9,4,4,1,16,10,False,False
+1183606475,2025-08-31T15:00:00.000Z,Regular Season - 3,Celta de Vigo,Villarreal,1,1,"Quintero Gonzalez, Alejandro",1,0,11,1,1,0,8,5,False,False
+1183610730,2025-08-30T19:30:00.000Z,Regular Season - 3,Real Madrid,Mallorca,2,1,"Sanchez Martinez, Jose Maria",2,0,12,4,0,0,7,5,False,False
+1183609028,2025-08-30T17:30:00.000Z,Regular Season - 3,Girona,Sevilla FC,0,2,"Ortiz Arias, Miguel Angel",0,0,5,11,1,0,14,3,False,False
+1183611581,2025-08-30T17:00:00.000Z,Regular Season - 3,Oviedo,Real Sociedad,1,0,"Cordero Vega, Adrian",2,0,7,1,1,0,18,10,False,False
+1183604773,2025-08-30T15:00:00.000Z,Regular Season - 3,Alavés,Atlético Madrid,1,1,"Garcia Verdura, Victor",1,0,6,1,2,0,14,5,False,False
+1183612432,2025-08-29T19:30:00.000Z,Regular Season - 3,Valencia,Getafe,3,0,,2,0,18,8,0,0,7,6,False,False
+1183607326,2025-08-29T17:30:00.000Z,Regular Season - 3,Elche,Levante,2,0,"Galech Apezteguia, Iosu",1,0,14,4,2,0,17,2,False,False
+1183632005,2025-08-27T19:00:00.000Z,Regular Season - 6,Celta de Vigo,Real Betis,1,1,"Gil Manzano, Jesus",1,0,13,10,2,0,11,4,False,False
+1183603071,2025-08-25T19:30:00.000Z,Regular Season - 2,Sevilla FC,Getafe,1,2,"Diaz de Mera Escuderos, Isidro",2,0,10,5,2,0,24,3,False,False
+1183596263,2025-08-25T17:30:00.000Z,Regular Season - 2,Athletic Club,Rayo Vallecano,1,0,"Martinez Munuera, Juan",0,0,13,3,4,0,13,6,False,False
+1183602220,2025-08-24T19:30:00.000Z,Regular Season - 2,Oviedo,Real Madrid,0,3,"De Burgos Bengoetxea, Ricardo",2,0,8,1,1,0,7,9,False,False
+1183603922,2025-08-24T17:30:00.000Z,Regular Season - 2,Villarreal,Girona,5,0,"Quintero Gonzalez, Alejandro",1,0,8,8,2,0,9,1,False,False
+1183601369,2025-08-24T17:30:00.000Z,Regular Season - 2,Real Sociedad,Espanyol,2,2,"Quintero Gonzalez, Alejandro",2,0,16,5,2,0,18,2,False,False
+1183600518,2025-08-24T15:00:00.000Z,Regular Season - 2,Osasuna,Valencia,1,0,"Gil Manzano, Jesus",2,0,14,3,1,1,13,4,False,False
+1183598816,2025-08-23T19:30:00.000Z,Regular Season - 2,Levante,Barcelona,2,3,"Hernandez Hernandez, Alejandro Jose",3,0,10,0,1,0,8,11,False,False
+1183597114,2025-08-23T17:30:00.000Z,Regular Season - 2,Atlético Madrid,Elche,1,1,"Soto Grado, Cesar",0,0,14,10,3,0,7,2,False,False
+1183599667,2025-08-23T15:00:00.000Z,Regular Season - 2,Mallorca,Celta de Vigo,1,1,"Guzman Mansilla, Jose Luis",3,0,12,3,3,0,12,4,False,False
+1183597965,2025-08-22T19:30:00.000Z,Regular Season - 2,Real Betis,Alavés,1,0,"Ortiz Arias, Miguel Angel",2,0,10,5,3,0,17,2,False,False
+1183593710,2025-08-19T19:00:00.000Z,Regular Season - 1,Real Madrid,Osasuna,1,0,"Cordero Vega, Adrian",1,0,10,7,0,1,12,0,False,False
+1183590306,2025-08-18T19:00:00.000Z,Regular Season - 1,Elche,Real Betis,1,1,"Garcia Verdura, Victor",0,0,14,1,1,0,13,3,False,False
+1183591157,2025-08-17T19:30:00.000Z,Regular Season - 1,Espanyol,Atlético Madrid,2,1,"Busquets Ferrer, Mateo",3,0,14,1,3,0,11,3,False,False
+1183588604,2025-08-17T17:30:00.000Z,Regular Season - 1,Athletic Club,Sevilla FC,3,2,"Hernandez Maeso, Francisco Jose",0,0,8,10,2,0,12,1,False,False
+1183589455,2025-08-17T15:00:00.000Z,Regular Season - 1,Celta de Vigo,Getafe,0,2,"Galech Apezteguia, Iosu",3,0,15,9,2,0,17,3,False,False
+1183594561,2025-08-16T19:30:00.000Z,Regular Season - 1,Valencia,Real Sociedad,1,1,"Sanchez Martinez, Jose Maria",1,0,5,8,2,0,11,7,False,False
+1183587753,2025-08-16T19:30:00.000Z,Regular Season - 1,Alavés,Levante,2,1,"Sesma Espinosa, Miguel",0,0,15,10,1,0,13,1,False,False
+1183592859,2025-08-16T17:30:00.000Z,Regular Season - 1,Mallorca,Barcelona,0,3,"Munuera Montero, Jose Luis",2,2,8,3,1,0,17,6,False,False
+1183595412,2025-08-15T19:30:00.000Z,Regular Season - 1,Villarreal,Oviedo,2,0,"Muniz Ruiz, Alejandro",1,0,10,10,0,1,8,1,False,False
+1183592008,2025-08-15T17:00:00.000Z,Regular Season - 1,Girona,Rayo Vallecano,1,3,"Alberola Rojas, Javier",0,1,8,2,1,0,17,4,False,False
