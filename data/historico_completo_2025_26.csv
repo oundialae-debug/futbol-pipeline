@@ -379,3 +379,49 @@ match_id,fecha,ronda,equipo_local,equipo_visitante,goles_local,goles_visitante,a
 1183592859,2025-08-16T17:30:00.000Z,Regular Season - 1,Mallorca,Barcelona,0,3,"Munuera Montero, Jose Luis",2,2,8,3,1,0,17,6,False,False
 1183595412,2025-08-15T19:30:00.000Z,Regular Season - 1,Villarreal,Oviedo,2,0,"Muniz Ruiz, Alejandro",1,0,10,10,0,1,8,1,False,False
 1183592008,2025-08-15T17:00:00.000Z,Regular Season - 1,Girona,Rayo Vallecano,1,3,"Alberola Rojas, Javier",0,1,8,2,1,0,17,4,False,False
+1336387356,2026-09-05T19:00:00.000Z,Regular Season - 4,Villarreal,Deportivo La Coruña,2,3,"Gil Manzano, Jesus",2,0,14,7,2,0,14,1,False,False
+1336373740,2026-08-30T17:30:00.000Z,Regular Season - 3,Deportivo La Coruña,Valencia,3,1,"Ortiz Arias, Miguel Angel",1,1,14,5,1,0,5,5,False,False
+1336367783,2026-08-24T19:30:00.000Z,Regular Season - 2,Malaga,Deportivo La Coruña,1,1,"Alberola Rojas, Javier",1,0,12,7,4,0,12,4,False,False
+1336357571,2026-08-17T19:00:00.000Z,Regular Season - 1,Deportivo La Coruña,Elche,1,1,"Hernandez Maeso, Francisco Jose",2,0,17,2,2,0,12,6,False,False
+1336380548,2026-09-05T14:15:00.000Z,Regular Season - 4,Athletic Club,Atlético Madrid,3,0,"Munuera Montero, Jose Luis",0,0,8,3,1,0,6,8,False,False
+1336378846,2026-08-29T19:30:00.000Z,Regular Season - 3,Sevilla FC,Atlético Madrid,1,3,"Alberola Rojas, Javier",2,0,20,4,2,0,16,2,False,False
+1336363528,2026-08-23T15:00:00.000Z,Regular Season - 2,Atlético Madrid,Villarreal,2,2,"Hernandez, Alejandro",3,1,12,5,2,0,13,3,False,False
+1336355018,2026-08-19T19:00:00.000Z,Regular Season - 1,Atlético Madrid,Malaga,2,0,"Cordero Vega, Adrian",2,0,17,6,3,0,11,1,False,False
+1336388207,2026-09-12T16:30:00.000Z,Regular Season - 5,Athletic Club,Elche,1,1,"Orellana Cid, Manuel Jesus",3,0,11,7,3,0,12,1,False,False
+1336372889,2026-08-30T19:30:00.000Z,Regular Season - 3,Celta de Vigo,Athletic Club,0,2,"Busquets Ferrer, Mateo",0,0,8,4,3,0,17,7,False,False
+1336355869,2026-08-27T19:00:00.000Z,Regular Season - 1,Barcelona,Athletic Club,2,0,"Ortiz Arias, Miguel Angel",1,0,13,12,2,0,6,5,False,False
+1336362677,2026-08-22T15:00:00.000Z,Regular Season - 2,Athletic Club,Sevilla FC,1,3,"Soto Grado, Cesar",2,1,11,10,4,0,16,3,False,False
+1336393313,2026-09-12T19:00:00.000Z,Regular Season - 5,Real Madrid,Rayo Vallecano,4,1,"Garcia Verdura, Victor",0,0,9,11,1,0,13,5,False,False
+1336381399,2026-09-04T19:00:00.000Z,Regular Season - 4,Real Betis,Real Madrid,1,0,"Hernandez, Alejandro",3,0,11,6,4,0,13,10,False,False
+1336377144,2026-08-30T15:00:00.000Z,Regular Season - 3,Real Madrid,Malaga,4,0,"Martinez Munuera, Juan",0,0,6,9,2,0,9,6,False,False
+1336360124,2026-08-26T19:00:00.000Z,Regular Season - 1,Real Madrid,Real Sociedad,4,1,,3,0,10,4,3,0,8,7,False,False
+1336386505,2026-09-06T14:15:00.000Z,Regular Season - 4,Valencia,Barcelona,0,5,"Diaz de Mera Escuderos, Isidro",1,0,7,1,3,0,6,4,False,False
+1336372038,2026-08-31T19:30:00.000Z,Regular Season - 3,Barcelona,Rayo Vallecano,5,2,"Hernandez Maeso, Francisco Jose",0,0,4,9,1,0,11,5,False,False
+1336365230,2026-08-23T19:30:00.000Z,Regular Season - 2,Elche,Barcelona,0,5,"Quintero Gonzalez, Alejandro",1,0,13,3,0,0,12,1,False,False
+1336395015,2026-09-11T19:00:00.000Z,Regular Season - 5,Sevilla FC,Valencia,1,0,"Busquets Ferrer, Mateo",1,0,8,6,2,0,12,4,False,False
+1336383101,2026-09-06T19:00:00.000Z,Regular Season - 4,Espanyol,Sevilla FC,1,1,,2,0,17,0,3,1,13,4,False,False
+1336360975,2026-08-15T19:30:00.000Z,Regular Season - 1,Sevilla FC,Rayo Vallecano,2,1,"De Burgos Bengoechea, Ricardo",4,1,18,1,4,0,18,2,False,False
+1336391611,2026-09-12T14:15:00.000Z,Regular Season - 5,Osasuna,Espanyol,0,2,"Bestard Servera, Luis",2,0,10,3,3,0,24,4,False,False
+1336377995,2026-08-29T17:00:00.000Z,Regular Season - 3,Real Sociedad,Espanyol,2,1,"Orellana Cid, Manuel Jesus",2,0,19,7,4,0,14,3,False,False
+1336366081,2026-08-22T19:30:00.000Z,Regular Season - 2,Espanyol,Real Madrid,1,2,"Sanchez Martinez, Jose Maria",5,0,19,0,1,0,7,8,False,False
+1336358422,2026-08-16T17:00:00.000Z,Regular Season - 1,Espanyol,Levante,3,0,"Muniz Munoz, Carlos",3,0,17,0,0,0,7,1,False,False
+1336382250,2026-09-07T19:30:00.000Z,Regular Season - 4,Elche,Real Sociedad,2,3,"Ortiz Arias, Miguel Angel",4,0,9,6,1,1,8,7,False,False
+1336404376,2026-09-03T19:00:00.000Z,Regular Season - 6,Real Sociedad,Celta de Vigo,0,0,"Garcia Verdura, Victor",2,0,15,11,3,0,11,3,False,False
+1336364379,2026-08-21T19:00:00.000Z,Regular Season - 2,Real Betis,Real Sociedad,1,0,"Diaz de Mera Escuderos, Isidro",3,0,9,4,3,0,12,5,False,False
+1336374591,2026-08-29T15:00:00.000Z,Regular Season - 3,Levante,Real Betis,5,2,"De Burgos Bengoechea, Ricardo",1,0,9,5,1,0,7,8,False,False
+1336361826,2026-08-25T19:00:00.000Z,Regular Season - 1,Valencia,Real Betis,0,1,"Gonzalez Esteban, Jon Ander",2,0,10,8,1,0,11,2,False,False
+1336371187,2026-08-28T19:30:00.000Z,Regular Season - 3,Alavés,Villarreal,1,0,"Diaz de Mera Escuderos, Isidro",3,0,15,5,1,0,8,9,False,False
+1336359273,2026-08-16T15:00:00.000Z,Regular Season - 1,Racing Santander,Villarreal,2,2,"Sesma Espinosa, Miguel",2,0,14,6,4,0,14,10,False,False
+1336385654,2026-09-05T16:30:00.000Z,Regular Season - 4,Rayo Vallecano,Racing Santander,3,2,"Quintero Gonzalez, Alejandro",3,2,15,9,2,0,12,6,False,False
+1336369485,2026-08-20T19:00:00.000Z,Regular Season - 2,Rayo Vallecano,Alavés,1,1,"Munuera Montero, Jose Luis",1,0,14,9,2,0,13,7,False,False
+1336392462,2026-09-12T12:00:00.000Z,Regular Season - 5,Racing Santander,Alavés,2,1,"Alberola Rojas, Javier",2,1,16,4,3,0,17,6,False,False
+1336376293,2026-08-28T17:00:00.000Z,Regular Season - 3,Racing Santander,Elche,3,2,"Muniz Munoz, Carlos",2,0,17,5,1,0,19,10,False,False
+1336366932,2026-08-23T17:30:00.000Z,Regular Season - 2,Getafe,Racing Santander,1,0,"Martinez Munuera, Juan",1,0,14,8,3,0,17,6,False,False
+1336379697,2026-09-06T16:30:00.000Z,Regular Season - 4,Alavés,Osasuna,5,2,"Sanchez Martinez, Jose Maria",1,0,14,4,2,0,13,1,False,False
+1336354167,2026-08-15T17:30:00.000Z,Regular Season - 1,Alavés,Getafe,3,0,"Orellana Cid, Manuel Jesus",4,0,16,5,3,1,13,3,False,False
+1336370336,2026-08-22T17:30:00.000Z,Regular Season - 2,Valencia,Celta de Vigo,0,0,"Gil Manzano, Jesus",2,0,17,1,3,0,17,2,False,False
+1336384803,2026-09-06T16:30:00.000Z,Regular Season - 4,Malaga,Levante,0,0,"Bestard Servera, Luis",4,0,15,6,2,0,11,4,False,False
+1336368634,2026-08-24T17:30:00.000Z,Regular Season - 2,Osasuna,Levante,0,0,"Garcia Verdura, Victor",2,0,9,9,1,0,12,4,False,False
+1336383952,2026-09-07T17:00:00.000Z,Regular Season - 4,Getafe,Celta de Vigo,1,1,"Soto Grado, Cesar",3,1,8,3,2,0,9,5,False,False
+1336356720,2026-08-27T18:30:00.000Z,Regular Season - 1,Celta de Vigo,Osasuna,1,2,"Sesma Espinosa, Miguel",0,1,7,5,1,0,16,3,False,False
+1336375442,2026-08-31T17:30:00.000Z,Regular Season - 3,Osasuna,Getafe,1,0,"Gonzalez Esteban, Jon Ander",5,0,17,1,4,0,14,3,False,False
