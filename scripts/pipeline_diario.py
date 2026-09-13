@@ -144,9 +144,31 @@ def recalcular_parametros(historico):
     defensa = ((goles_contra_local + goles_contra_visitante) / 2)
     media_liga_goles = (historico["goles_local"].mean() + historico["goles_visitante"].mean()) / 2
 
+    # --- Variable 3: asimetría local/visitante, MEDIDA con datos reales (no supuesta) ---
+    media_tarjetas_local = (historico["amarillas_local"] + historico["rojas_local"]).mean()
+    media_tarjetas_visitante = (historico["amarillas_visitante"] + historico["rojas_visitante"]).mean()
+
+    # --- Variable 7/8: tasa de tarjetas por jugador y acumulado actual (riesgo de sanción) ---
+    tasa_jugador, acumulado_jugador = {}, {}
+    if os.path.exists(RUTA_EVENTOS):
+        eventos = pd.read_csv(RUTA_EVENTOS)
+        eventos["fecha"] = pd.to_datetime(eventos["fecha"])
+        solo_amarillas = eventos[eventos["tipo"] == "Yellow Card"].sort_values("fecha")
+        # tasa: total de tarjetas del jugador esta temporada (aproximación -- no
+        # tenemos minutos jugados por jugador sin una llamada extra por jugador)
+        tasa_jugador = eventos.groupby("jugador_id").size().to_dict()
+        # acumulado actual: cuántas amarillas lleva SIN cumplir sanción (regla RFEF: 5 = 1 partido, se resetea)
+        for _, ev in solo_amarillas.iterrows():
+            jid = ev["jugador_id"]
+            acumulado_jugador[jid] = acumulado_jugador.get(jid, 0) + 1
+            if acumulado_jugador[jid] == 5:
+                acumulado_jugador[jid] = 0
+
     return {"media_arbitro": media_arbitro, "tendencia_equipo": tendencia_equipo,
             "media_liga_tarjetas": media_liga_tarjetas, "ataque": ataque.to_dict(),
-            "defensa": defensa.to_dict(), "media_liga_goles": media_liga_goles}
+            "defensa": defensa.to_dict(), "media_liga_goles": media_liga_goles,
+            "media_tarjetas_local": media_tarjetas_local, "media_tarjetas_visitante": media_tarjetas_visitante,
+            "tasa_jugador": tasa_jugador, "acumulado_jugador": acumulado_jugador}
 
 
 # ============ 3. PRÓXIMOS PARTIDOS ============
@@ -204,14 +226,68 @@ def predecir_goles(local, visitante, params, max_goles=8):
             "prob_visitante": round(np.triu(m, 1).sum(), 3)}
 
 
-def predecir_tarjetas(local, visitante, arbitro, params, linea=4.5):
-    base = params["media_arbitro"].get(arbitro, params["media_liga_tarjetas"])
+def predecir_tarjetas(local, visitante, arbitro, params, linea=4.5, alineacion=None, es_alineacion_confirmada=False):
+    """Integra las 8 variables discutidas y validadas durante el proyecto:
+    1. Árbitro  2. Diferencia de nivel  3. Local/visitante  4. Derbi
+    6. Tendencia por equipo  7. Alineación real (jugadores concretos)
+    8. Riesgo de sanción (cautela por acumulación)
+    (La variable 5, cuota de mercado, se compara aparte en el informe -- no
+    se mezcla dentro de esta probabilidad para no contaminar la predicción
+    propia con la del mercado; se muestran ambas por separado.)"""
+
+    # 1. Árbitro
+    base_arbitro = params["media_arbitro"].get(arbitro, params["media_liga_tarjetas"])
+
+    # 6. Tendencia por equipo (ya incluye el efecto agregado de "equipos que sacan más tarjetas")
     t_l = params["tendencia_equipo"].get(local, params["media_liga_tarjetas"] / 2)
     t_v = params["tendencia_equipo"].get(visitante, params["media_liga_tarjetas"] / 2)
+    media_base = base_arbitro * 0.5 + (t_l + t_v) * 0.5
+
+    # 2. Diferencia de nivel entre equipos (a partir del modelo de goles ya entrenado)
+    a = params["ataque"]
+    if local in a and visitante in a and params["media_liga_goles"] > 0:
+        diferencia_nivel = abs(a[local] - a[visitante]) / params["media_liga_goles"]
+        factor_nivel = 1 + np.clip(0.15 * diferencia_nivel, -0.15, 0.3)  # el desnivel siempre AUMENTA, nunca baja
+    else:
+        factor_nivel = 1.0
+
+    # 3. Local/visitante -- asimetría medida con datos reales, no supuesta
+    if params["media_tarjetas_local"] + params["media_tarjetas_visitante"] > 0:
+        factor_local_visitante = (params["media_tarjetas_local"] + params["media_tarjetas_visitante"]) / \
+                                   (2 * params["media_tarjetas_local"])
+    else:
+        factor_local_visitante = 1.0
+
+    # 4. Derbi
     factor_derbi = 1.15 if frozenset([local, visitante]) in DERBIS else 1.0
-    media = (base * 0.5 + (t_l + t_v) * 0.5) * factor_derbi
+
+    media = media_base * factor_nivel * factor_local_visitante * factor_derbi
+
+    # 7 y 8: solo se aplican si hay alineación de verdad (no una prevista)
+    factor_alineacion, factor_riesgo_sancion = 1.0, 1.0
+    if alineacion and es_alineacion_confirmada:
+        tasa_media_jugador = np.mean(list(params["tasa_jugador"].values())) if params["tasa_jugador"] else 1.0
+        jugadores_titulares = []
+        for equipo_key in ("homeTeam", "awayTeam"):
+            for linea_pos in alineacion.get(equipo_key, {}).get("initialLineup", []):
+                jugadores_titulares.extend([j["id"] for j in linea_pos])
+
+        if jugadores_titulares:
+            # 7. Alineación real: ¿los titulares son, de media, más o menos "tarjeteros" de lo normal?
+            tasas_titulares = [params["tasa_jugador"].get(j, tasa_media_jugador) for j in jugadores_titulares]
+            factor_alineacion = np.clip(np.mean(tasas_titulares) / tasa_media_jugador, 0.7, 1.3) if tasa_media_jugador else 1.0
+
+            # 8. Riesgo de sanción: si hay titulares a 1 amarilla de la sanción, ligera bajada
+            en_riesgo = sum(1 for j in jugadores_titulares if params["acumulado_jugador"].get(j) == 4)
+            if en_riesgo > 0:
+                factor_riesgo_sancion = max(0.85, 1 - 0.05 * en_riesgo)
+
+    media *= factor_alineacion * factor_riesgo_sancion
     prob_over = 1 - poisson.cdf(int(linea), media)
-    return {"media_estimada": round(media, 2), "prob_over": round(prob_over, 3), "prob_under": round(1 - prob_over, 3)}
+    return {"media_estimada": round(media, 2), "prob_over": round(prob_over, 3), "prob_under": round(1 - prob_over, 3),
+            "variables_aplicadas": {"nivel": round(factor_nivel, 3), "local_visitante": round(factor_local_visitante, 3),
+                                      "derbi": factor_derbi, "alineacion": round(factor_alineacion, 3),
+                                      "riesgo_sancion": round(factor_riesgo_sancion, 3)}}
 
 
 # ============ 6. INFORME ============
@@ -223,28 +299,42 @@ def generar_informe(proximos_partidos, params):
         local, visitante = p["homeTeam"]["name"], p["awayTeam"]["name"]
         arbitro = None  # el árbitro no siempre está confirmado con antelación
 
-        pred_goles = predecir_goles(local, visitante, params)
-        pred_tarjetas = predecir_tarjetas(local, visitante, arbitro, params)
-
         cuotas = obtener_cuotas(p["id"])
         alineacion, es_confirmada = obtener_alineacion(p["id"], p["date"])
+
+        pred_goles = predecir_goles(local, visitante, params)
+        pred_tarjetas = predecir_tarjetas(local, visitante, arbitro, params,
+                                            alineacion=alineacion, es_alineacion_confirmada=es_confirmada)
 
         lineas.append(f"## {local} vs {visitante}")
         lineas.append(f"*{p['date'][:16].replace('T', ' ')} UTC*\n")
         lineas.append(f"**Goles (1X2)**: Local {pred_goles['prob_local']*100:.0f}% | "
                        f"Empate {pred_goles['prob_empate']*100:.0f}% | Visitante {pred_goles['prob_visitante']*100:.0f}%\n")
         lineas.append(f"**Tarjetas (línea 4.5)**: media estimada {pred_tarjetas['media_estimada']} | "
-                       f"Over {pred_tarjetas['prob_over']*100:.0f}% | Under {pred_tarjetas['prob_under']*100:.0f}%\n")
+                       f"Over {pred_tarjetas['prob_over']*100:.0f}% | Under {pred_tarjetas['prob_under']*100:.0f}%")
+        v = pred_tarjetas["variables_aplicadas"]
+        lineas.append(f"*(factores aplicados -- nivel: {v['nivel']}, local/visitante: {v['local_visitante']}, "
+                       f"derbi: {v['derbi']}, alineación: {v['alineacion']}, riesgo sanción: {v['riesgo_sancion']})*\n")
 
+        # 5. Cuota de mercado -- comparación real, no solo "disponible sí/no"
         if cuotas:
-            lineas.append(f"**Cuotas de mercado disponibles**: sí ({len(cuotas)} mercados)")
+            mercado_1x2 = next((m for m in cuotas if "Match Winner" in m.get("name", "") or "1X2" in m.get("name", "")), None)
+            mercado_cards = next((m for m in cuotas if "Total Cards" in m.get("name", "")), None)
+            if mercado_1x2:
+                lineas.append(f"**Cuota de mercado 1X2**: disponible -- comparar manualmente contra el {pred_goles['prob_local']*100:.0f}%/"
+                               f"{pred_goles['prob_empate']*100:.0f}%/{pred_goles['prob_visitante']*100:.0f}% de arriba")
+            if mercado_cards:
+                lineas.append(f"**Cuota de mercado Total Cards**: disponible -- comparar contra el "
+                               f"{pred_tarjetas['prob_over']*100:.0f}% de over estimado")
+            if not mercado_1x2 and not mercado_cards:
+                lineas.append(f"**Cuotas**: disponibles pero sin mercados 1X2/Total Cards reconocidos ({len(cuotas)} mercados encontrados)")
         else:
-            lineas.append(f"**Cuotas de mercado disponibles**: no (todavía no publicadas)")
+            lineas.append(f"**Cuotas de mercado**: no disponibles todavía")
 
         if alineacion and es_confirmada:
-            lineas.append(f"**Alineación**: confirmada -- variable 7 aplicable")
+            lineas.append(f"**Alineación**: confirmada -- variables 7 y 8 aplicadas al cálculo")
         elif alineacion and not es_confirmada:
-            lineas.append(f"**Alineación**: solo prevista/probable (faltan más de 2h) -- no usada todavía para ajustar la predicción")
+            lineas.append(f"**Alineación**: solo prevista (faltan más de 2h) -- variables 7 y 8 no aplicadas todavía")
         else:
             lineas.append(f"**Alineación**: no disponible")
 
@@ -283,59 +373,4 @@ def calcular_calibracion():
     historico = pd.read_csv(RUTA_HISTORICO)
 
     cruzado = registro.merge(
-        historico[["match_id", "goles_local", "goles_visitante",
-                   "amarillas_local", "rojas_local", "amarillas_visitante", "rojas_visitante"]],
-        on="match_id", how="inner")
-
-    if cruzado.empty:
-        print("[calibracion] ningún partido predicho se ha jugado todavía -- se omite esta semana")
-        return
-
-    cruzado["tarjetas_totales"] = (cruzado["amarillas_local"] + cruzado["rojas_local"] +
-                                     cruzado["amarillas_visitante"] + cruzado["rojas_visitante"])
-    cruzado["gano_local"] = (cruzado["goles_local"] > cruzado["goles_visitante"]).astype(float)
-    cruzado["over_tarjetas"] = (cruzado["tarjetas_totales"] > 4.5).astype(float)
-
-    brier_goles = ((cruzado["prob_local"] - cruzado["gano_local"]) ** 2).mean()
-    brier_tarjetas = ((cruzado["prob_over_tarjetas"] - cruzado["over_tarjetas"]) ** 2).mean()
-    acierto_goles = ((cruzado["prob_local"] > 0.5) == cruzado["gano_local"].astype(bool)).mean()
-    acierto_tarjetas = ((cruzado["prob_over_tarjetas"] > 0.5) == cruzado["over_tarjetas"].astype(bool)).mean()
-
-    informe = f"""# Informe de calibración -- actualizado el {datetime.utcnow().strftime('%Y-%m-%d')}
-Partidos evaluados hasta ahora: {len(cruzado)}
-
-## Goles (victoria local)
-- Brier score: {brier_goles:.4f} (0.25 = azar, más bajo = mejor)
-- Acierto: {acierto_goles*100:.1f}%
-
-## Tarjetas (over/under 4.5)
-- Brier score: {brier_tarjetas:.4f} (0.25 = azar, más bajo = mejor)
-- Acierto: {acierto_tarjetas*100:.1f}%
-"""
-    with open("data/informe_calibracion.md", "w", encoding="utf-8") as f:
-        f.write(informe)
-    print(f"[calibracion] informe actualizado con {len(cruzado)} partidos evaluados")
-
-
-# ============ MAIN ============
-def main():
-    print("Paso 1/5: actualizando histórico...")
-    historico = actualizar_historico()
-
-    print("Paso 2/5: recalculando parámetros...")
-    params = recalcular_parametros(historico)
-
-    print("Paso 3/5: buscando próximos partidos...")
-    proximos = obtener_proximos_partidos()
-    print(f"  {len(proximos)} partidos encontrados en los próximos 7 días")
-
-    print("Paso 4/5: generando informe de pronósticos...")
-    generar_informe(proximos, params)
-
-    print("Paso 5/5: actualizando calibración...")
-    calcular_calibracion()
-
-
-if __name__ == "__main__":
-    main()
-  
+      
