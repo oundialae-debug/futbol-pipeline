@@ -1,62 +1,15 @@
-# Pronósticos -- generado automáticamente el 2026-09-13 13:44 UTC
-
-## Levante vs Barcelona
-*2026-09-13 14:15 UTC*
-
-**Goles (1X2)**: Local 7% | Empate 12% | Visitante 80%
-
-**Tarjetas (línea 4.5)**: media estimada 4.11 | Over 39% | Under 61%
-
-**Cuotas de mercado disponibles**: sí (1 mercados)
-**Alineación confirmada**: sí -- variable 7 aplicable
-
----
-
-## Getafe vs Deportivo La Coruña
-*2026-09-13 16:30 UTC*
-
-**Goles (1X2)**: Local 18% | Empate 26% | Visitante 55%
-
-**Tarjetas (línea 4.5)**: media estimada 5.01 | Over 56% | Under 44%
-
-**Cuotas de mercado disponibles**: sí (1 mercados)
-**Alineación confirmada**: sí -- variable 7 aplicable
-
----
-
-## Real Sociedad vs Atlético Madrid
-*2026-09-13 19:00 UTC*
-
-**Goles (1X2)**: Local 26% | Empate 22% | Visitante 52%
-
-**Tarjetas (línea 4.5)**: media estimada 4.52 | Over 47% | Under 53%
-
-**Cuotas de mercado disponibles**: sí (1 mercados)
-**Alineación confirmada**: sí -- variable 7 aplicable
-
----
-
-## Villarreal vs Real Betis
-*2026-09-14 19:00 UTC*
-
-**Goles (1X2)**: Local 45% | Empate 23% | Visitante 32%
-
-**Tarjetas (línea 4.5)**: media estimada 4.26 | Over 42% | Under 58%
-
-**Cuotas de mercado disponibles**: sí (1 mercados)
-**Alineación confirmada**: sí -- variable 7 aplicable
-
----
+# Pronósticos -- generado automáticamente el 2026-09-14 22:12 UTC
 
 ## Rayo Vallecano vs Espanyol
 *2026-09-15 17:00 UTC*
 
 **Goles (1X2)**: Local 36% | Empate 28% | Visitante 36%
 
-**Tarjetas (línea 4.5)**: media estimada 4.92 | Over 55% | Under 46%
+**Tarjetas (línea 4.5)**: media estimada 5.24 | Over 60% | Under 40%
+*(factores aplicados -- nivel: 1.005, local/visitante: 1.064, derbi: 1.0, alineación: 1.0, riesgo sanción: 1.0)*
 
-**Cuotas de mercado disponibles**: sí (1 mercados)
-**Alineación confirmada**: sí -- variable 7 aplicable
+**Cuotas**: disponibles pero sin mercados 1X2/Total Cards reconocidos (1 mercados encontrados)
+**Alineación**: solo prevista (faltan más de 2h) -- variables 7 y 8 no aplicadas todavía
 
 ---
 
@@ -65,10 +18,11 @@
 
 **Goles (1X2)**: Local 43% | Empate 26% | Visitante 30%
 
-**Tarjetas (línea 4.5)**: media estimada 4.43 | Over 45% | Under 55%
+**Tarjetas (línea 4.5)**: media estimada 4.79 | Over 52% | Under 48%
+*(factores aplicados -- nivel: 1.02, local/visitante: 1.064, derbi: 1.0, alineación: 1.0, riesgo sanción: 1.0)*
 
-**Cuotas de mercado disponibles**: sí (1 mercados)
-**Alineación confirmada**: sí -- variable 7 aplicable
+**Cuotas**: disponibles pero sin mercados 1X2/Total Cards reconocidos (1 mercados encontrados)
+**Alineación**: solo prevista (faltan más de 2h) -- variables 7 y 8 no aplicadas todavía
 
 ---
 
@@ -77,34 +31,37 @@
 
 **Goles (1X2)**: Local 11% | Empate 16% | Visitante 73%
 
-**Tarjetas (línea 4.5)**: media estimada 4.29 | Over 43% | Under 57%
-
-**Cuotas de mercado disponibles**: sí (1 mercados)
-**Alineación confirmada**: sí -- variable 7 aplicable
-
----
-
-## Deportivo La Coruña vs Sevilla FC
-*2026-09-16 17:00 UTC*
-
-**Goles (1X2)**: Local 62% | Empate 19% | Visitante 18%
-
 **Tarjetas (línea 4.5)**: media estimada 4.96 | Over 55% | Under 45%
+*(factores aplicados -- nivel: 1.09, local/visitante: 1.064, derbi: 1.0, alineación: 1.0, riesgo sanción: 1.0)*
 
-**Cuotas de mercado disponibles**: sí (1 mercados)
-**Alineación confirmada**: sí -- variable 7 aplicable
+**Cuotas**: disponibles pero sin mercados 1X2/Total Cards reconocidos (1 mercados encontrados)
+**Alineación**: solo prevista (faltan más de 2h) -- variables 7 y 8 no aplicadas todavía
 
 ---
 
 ## Atlético Madrid vs Osasuna
 *2026-09-16 17:00 UTC*
 
-**Goles (1X2)**: Local 52% | Empate 25% | Visitante 23%
+**Goles (1X2)**: Local 54% | Empate 24% | Visitante 22%
 
-**Tarjetas (línea 4.5)**: media estimada 4.61 | Over 49% | Under 51%
+**Tarjetas (línea 4.5)**: media estimada 5.17 | Over 59% | Under 41%
+*(factores aplicados -- nivel: 1.061, local/visitante: 1.064, derbi: 1.0, alineación: 1.0, riesgo sanción: 1.0)*
 
-**Cuotas de mercado disponibles**: sí (1 mercados)
-**Alineación confirmada**: sí -- variable 7 aplicable
+**Cuotas**: disponibles pero sin mercados 1X2/Total Cards reconocidos (1 mercados encontrados)
+**Alineación**: solo prevista (faltan más de 2h) -- variables 7 y 8 no aplicadas todavía
+
+---
+
+## Deportivo La Coruña vs Sevilla FC
+*2026-09-16 17:00 UTC*
+
+**Goles (1X2)**: Local 60% | Empate 21% | Visitante 19%
+
+**Tarjetas (línea 4.5)**: media estimada 5.41 | Over 63% | Under 37%
+*(factores aplicados -- nivel: 1.064, local/visitante: 1.064, derbi: 1.0, alineación: 1.0, riesgo sanción: 1.0)*
+
+**Cuotas**: disponibles pero sin mercados 1X2/Total Cards reconocidos (1 mercados encontrados)
+**Alineación**: solo prevista (faltan más de 2h) -- variables 7 y 8 no aplicadas todavía
 
 ---
 
@@ -113,46 +70,50 @@
 
 **Goles (1X2)**: Local 79% | Empate 10% | Visitante 7%
 
-**Tarjetas (línea 4.5)**: media estimada 4.2 | Over 41% | Under 59%
+**Tarjetas (línea 4.5)**: media estimada 4.96 | Over 55% | Under 45%
+*(factores aplicados -- nivel: 1.114, local/visitante: 1.064, derbi: 1.0, alineación: 1.0, riesgo sanción: 1.0)*
 
-**Cuotas de mercado disponibles**: sí (1 mercados)
-**Alineación confirmada**: sí -- variable 7 aplicable
+**Cuotas**: disponibles pero sin mercados 1X2/Total Cards reconocidos (1 mercados encontrados)
+**Alineación**: solo prevista (faltan más de 2h) -- variables 7 y 8 no aplicadas todavía
 
 ---
 
 ## Levante vs Athletic Club
 *2026-09-16 19:30 UTC*
 
-**Goles (1X2)**: Local 38% | Empate 26% | Visitante 36%
+**Goles (1X2)**: Local 37% | Empate 25% | Visitante 37%
 
-**Tarjetas (línea 4.5)**: media estimada 4.46 | Over 46% | Under 54%
+**Tarjetas (línea 4.5)**: media estimada 4.77 | Over 52% | Under 48%
+*(factores aplicados -- nivel: 1.011, local/visitante: 1.064, derbi: 1.0, alineación: 1.0, riesgo sanción: 1.0)*
 
-**Cuotas de mercado disponibles**: sí (1 mercados)
-**Alineación confirmada**: sí -- variable 7 aplicable
+**Cuotas**: disponibles pero sin mercados 1X2/Total Cards reconocidos (1 mercados encontrados)
+**Alineación**: solo prevista (faltan más de 2h) -- variables 7 y 8 no aplicadas todavía
 
 ---
 
 ## Real Betis vs Getafe
 *2026-09-17 17:00 UTC*
 
-**Goles (1X2)**: Local 45% | Empate 31% | Visitante 24%
+**Goles (1X2)**: Local 46% | Empate 31% | Visitante 24%
 
-**Tarjetas (línea 4.5)**: media estimada 4.72 | Over 51% | Under 49%
+**Tarjetas (línea 4.5)**: media estimada 5.39 | Over 63% | Under 37%
+*(factores aplicados -- nivel: 1.08, local/visitante: 1.064, derbi: 1.0, alineación: 1.0, riesgo sanción: 1.0)*
 
-**Cuotas de mercado disponibles**: sí (1 mercados)
-**Alineación confirmada**: sí -- variable 7 aplicable
+**Cuotas**: disponibles pero sin mercados 1X2/Total Cards reconocidos (1 mercados encontrados)
+**Alineación**: solo prevista (faltan más de 2h) -- variables 7 y 8 no aplicadas todavía
 
 ---
 
 ## Malaga vs Villarreal
 *2026-09-17 19:30 UTC*
 
-**Goles (1X2)**: Local 2% | Empate 12% | Visitante 86%
+**Goles (1X2)**: Local 7% | Empate 19% | Visitante 74%
 
-**Tarjetas (línea 4.5)**: media estimada 4.55 | Over 48% | Under 52%
+**Tarjetas (línea 4.5)**: media estimada 5.42 | Over 63% | Under 37%
+*(factores aplicados -- nivel: 1.158, local/visitante: 1.064, derbi: 1.0, alineación: 1.0, riesgo sanción: 1.0)*
 
-**Cuotas de mercado disponibles**: sí (1 mercados)
-**Alineación confirmada**: sí -- variable 7 aplicable
+**Cuotas**: disponibles pero sin mercados 1X2/Total Cards reconocidos (1 mercados encontrados)
+**Alineación**: solo prevista (faltan más de 2h) -- variables 7 y 8 no aplicadas todavía
 
 ---
 
@@ -161,10 +122,11 @@
 
 **Goles (1X2)**: Local 39% | Empate 26% | Visitante 35%
 
-**Tarjetas (línea 4.5)**: media estimada 4.63 | Over 49% | Under 51%
+**Tarjetas (línea 4.5)**: media estimada 4.97 | Over 55% | Under 45%
+*(factores aplicados -- nivel: 1.011, local/visitante: 1.064, derbi: 1.0, alineación: 1.0, riesgo sanción: 1.0)*
 
-**Cuotas de mercado disponibles**: sí (1 mercados)
-**Alineación confirmada**: sí -- variable 7 aplicable
+**Cuotas**: disponibles pero sin mercados 1X2/Total Cards reconocidos (1 mercados encontrados)
+**Alineación**: solo prevista (faltan más de 2h) -- variables 7 y 8 no aplicadas todavía
 
 ---
 
@@ -173,10 +135,11 @@
 
 **Goles (1X2)**: Local 35% | Empate 29% | Visitante 36%
 
-**Tarjetas (línea 4.5)**: media estimada 4.93 | Over 55% | Under 45%
+**Tarjetas (línea 4.5)**: media estimada 5.24 | Over 60% | Under 40%
+*(factores aplicados -- nivel: 1.001, local/visitante: 1.064, derbi: 1.0, alineación: 1.0, riesgo sanción: 1.0)*
 
-**Cuotas de mercado disponibles**: no (todavía no publicadas)
-**Alineación confirmada**: sí -- variable 7 aplicable
+**Cuotas de mercado**: no disponibles todavía
+**Alineación**: solo prevista (faltan más de 2h) -- variables 7 y 8 no aplicadas todavía
 
 ---
 
@@ -185,10 +148,11 @@
 
 **Goles (1X2)**: Local 33% | Empate 26% | Visitante 41%
 
-**Tarjetas (línea 4.5)**: media estimada 4.58 | Over 48% | Under 52%
+**Tarjetas (línea 4.5)**: media estimada 4.91 | Over 54% | Under 46%
+*(factores aplicados -- nivel: 1.012, local/visitante: 1.064, derbi: 1.0, alineación: 1.0, riesgo sanción: 1.0)*
 
-**Cuotas de mercado disponibles**: no (todavía no publicadas)
-**Alineación confirmada**: sí -- variable 7 aplicable
+**Cuotas de mercado**: no disponibles todavía
+**Alineación**: solo prevista (faltan más de 2h) -- variables 7 y 8 no aplicadas todavía
 
 ---
 
@@ -197,10 +161,11 @@
 
 **Goles (1X2)**: Local 43% | Empate 23% | Visitante 34%
 
-**Tarjetas (línea 4.5)**: media estimada 4.4 | Over 45% | Under 55%
+**Tarjetas (línea 4.5)**: media estimada 4.87 | Over 54% | Under 46%
+*(factores aplicados -- nivel: 1.043, local/visitante: 1.064, derbi: 1.0, alineación: 1.0, riesgo sanción: 1.0)*
 
-**Cuotas de mercado disponibles**: no (todavía no publicadas)
-**Alineación confirmada**: sí -- variable 7 aplicable
+**Cuotas de mercado**: no disponibles todavía
+**Alineación**: solo prevista (faltan más de 2h) -- variables 7 y 8 no aplicadas todavía
 
 ---
 
@@ -209,9 +174,75 @@
 
 **Goles (1X2)**: Local 7% | Empate 12% | Visitante 80%
 
-**Tarjetas (línea 4.5)**: media estimada 4.45 | Over 46% | Under 54%
+**Tarjetas (línea 4.5)**: media estimada 5.46 | Over 64% | Under 36%
+*(factores aplicados -- nivel: 1.159, local/visitante: 1.064, derbi: 1.0, alineación: 1.0, riesgo sanción: 1.0)*
 
-**Cuotas de mercado disponibles**: no (todavía no publicadas)
-**Alineación confirmada**: sí -- variable 7 aplicable
+**Cuotas de mercado**: no disponibles todavía
+**Alineación**: solo prevista (faltan más de 2h) -- variables 7 y 8 no aplicadas todavía
+
+---
+
+## Getafe vs Malaga
+*2026-09-20 12:00 UTC*
+
+**Goles (1X2)**: Local 46% | Empate 40% | Visitante 13%
+
+**Tarjetas (línea 4.5)**: media estimada 5.41 | Over 63% | Under 37%
+*(factores aplicados -- nivel: 1.043, local/visitante: 1.064, derbi: 1.0, alineación: 1.0, riesgo sanción: 1.0)*
+
+**Cuotas de mercado**: no disponibles todavía
+**Alineación**: solo prevista (faltan más de 2h) -- variables 7 y 8 no aplicadas todavía
+
+---
+
+## Atlético Madrid vs Real Madrid
+*2026-09-20 14:15 UTC*
+
+**Goles (1X2)**: Local 24% | Empate 23% | Visitante 53%
+
+**Tarjetas (línea 4.5)**: media estimada 5.42 | Over 63% | Under 37%
+*(factores aplicados -- nivel: 1.046, local/visitante: 1.064, derbi: 1.15, alineación: 1.0, riesgo sanción: 1.0)*
+
+**Cuotas de mercado**: no disponibles todavía
+**Alineación**: solo prevista (faltan más de 2h) -- variables 7 y 8 no aplicadas todavía
+
+---
+
+## Villarreal vs Levante
+*2026-09-20 16:30 UTC*
+
+**Goles (1X2)**: Local 60% | Empate 20% | Visitante 20%
+
+**Tarjetas (línea 4.5)**: media estimada 4.95 | Over 55% | Under 45%
+*(factores aplicados -- nivel: 1.065, local/visitante: 1.064, derbi: 1.0, alineación: 1.0, riesgo sanción: 1.0)*
+
+**Cuotas de mercado**: no disponibles todavía
+**Alineación**: solo prevista (faltan más de 2h) -- variables 7 y 8 no aplicadas todavía
+
+---
+
+## Deportivo La Coruña vs Real Betis
+*2026-09-20 16:30 UTC*
+
+**Goles (1X2)**: Local 46% | Empate 24% | Visitante 30%
+
+**Tarjetas (línea 4.5)**: media estimada 4.69 | Over 50% | Under 50%
+*(factores aplicados -- nivel: 1.032, local/visitante: 1.064, derbi: 1.0, alineación: 1.0, riesgo sanción: 1.0)*
+
+**Cuotas de mercado**: no disponibles todavía
+**Alineación**: solo prevista (faltan más de 2h) -- variables 7 y 8 no aplicadas todavía
+
+---
+
+## Valencia vs Real Sociedad
+*2026-09-20 19:00 UTC*
+
+**Goles (1X2)**: Local 30% | Empate 24% | Visitante 45%
+
+**Tarjetas (línea 4.5)**: media estimada 4.86 | Over 54% | Under 46%
+*(factores aplicados -- nivel: 1.043, local/visitante: 1.064, derbi: 1.0, alineación: 1.0, riesgo sanción: 1.0)*
+
+**Cuotas de mercado**: no disponibles todavía
+**Alineación**: solo prevista (faltan más de 2h) -- variables 7 y 8 no aplicadas todavía
 
 ---
