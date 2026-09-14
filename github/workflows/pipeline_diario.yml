@@ -1,1 +1,47 @@
+name: Pipeline diario completo
 
+on:
+  schedule:
+    - cron: '0 12 * * 2'   # todos los martes a las 12:00 UTC -- una vez terminada la jornada
+  workflow_dispatch:
+
+jobs:
+  pipeline:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Descargar el repositorio
+        uses: actions/checkout@v4
+
+      - name: Preparar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Instalar dependencias
+        run: pip install requests pandas scipy numpy
+
+      - name: Ejecutar el pipeline completo
+        run: python scripts/pipeline_diario.py
+        env:
+          HIGHLIGHTLY_API_KEY: ${{ secrets.HIGHLIGHTLY_API_KEY }}
+
+      - name: Guardar los datos y el informe en el repositorio
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          echo "=== Estado de los archivos tras ejecutar el script ==="
+          ls -la data/ pronosticos_jornada.md 2>&1 || true
+          echo "=== git status ANTES de git add ==="
+          git status
+          git add data/historico_completo_2025_26.csv data/eventos_tarjetas_jugadores_2025_26.csv data/registro_predicciones.csv data/informe_calibracion.md pronosticos_jornada.md
+          echo "=== git status DESPUÉS de git add ==="
+          git status
+          if git diff --staged --quiet; then
+            echo "Sin cambios que guardar -- ver el 'git status' de arriba para entender por qué"
+            exit 0
+          fi
+          git commit -m "Actualización diaria del pipeline ($(date +%Y-%m-%d))"
+          git pull --rebase origin main
+          git push
