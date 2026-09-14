@@ -35,7 +35,13 @@ jobs:
           ls -la data/ pronosticos_jornada.md 2>&1 || true
           echo "=== git status ANTES de git add ==="
           git status
-          git add data/historico_completo_2025_26.csv data/eventos_tarjetas_jugadores_2025_26.csv data/registro_predicciones.csv data/informe_calibracion.md pronosticos_jornada.md
+          for f in data/historico_completo_2025_26.csv data/eventos_tarjetas_jugadores_2025_26.csv data/registro_predicciones.csv data/informe_calibracion.md pronosticos_jornada.md; do
+            if [ -f "$f" ]; then
+              git add "$f"
+            else
+              echo "  [omitido, no existe todavía] $f"
+            fi
+          done
           echo "=== git status DESPUÉS de git add ==="
           git status
           if git diff --staged --quiet; then
