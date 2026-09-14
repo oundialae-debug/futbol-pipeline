@@ -375,4 +375,108 @@ def generar_informe(proximos_partidos, params):
         registro_predicciones.append({
             "match_id": p["id"], "fecha": p["date"], "equipo_local": local, "equipo_visitante": visitante,
             "prob_local": pred_goles["prob_local"], "prob_empate": pred_goles["prob_empate"],
-     
+            "prob_visitante": pred_goles["prob_visitante"], "prob_over_tarjetas": pred_tarjetas["prob_over"],
+            "generado_el": datetime.utcnow().isoformat(),
+        })
+
+        lineas.append("\n---\n")
+
+    with open(RUTA_INFORME, "w", encoding="utf-8") as f:
+        f.write("\n".join(lineas))
+    print(f"Informe generado: {RUTA_INFORME}")
+
+    # Registro para calibración futura: guarda cada predicción, sin duplicar
+    # las que ya se habían registrado en una ejecución anterior de la misma semana
+    ruta_registro = "data/registro_predicciones.csv"
+    registro_previo = pd.read_csv(ruta_registro) if os.path.exists(ruta_registro) else pd.DataFrame()
+    nuevos = pd.DataFrame(registro_predicciones)
+    if not registro_previo.empty:
+        nuevos = nuevos[~nuevos["match_id"].isin(registro_previo["match_id"])]
+    registro_final = pd.concat([registro_previo, nuevos], ignore_index=True)
+    registro_final.to_csv(ruta_registro, index=False)
+    print(f"Registro de predicciones actualizado: {len(nuevos)} nuevas, {len(registro_final)} en total")
+
+
+# ============ 7. CALIBRACIÓN AUTOMÁTICA ============
+def calcular_calibracion():
+    ruta_registro = "data/registro_predicciones.csv"
+    if not os.path.exists(ruta_registro):
+        print("[calibracion] todavía no hay registro de predicciones -- se omite esta semana")
+        return
+    registro = pd.read_csv(ruta_registro)
+    historico = pd.read_csv(RUTA_HISTORICO)
+
+    cruzado = registro.merge(
+        historico[["match_id", "goles_local", "goles_visitante",
+                   "amarillas_local", "rojas_local", "amarillas_visitante", "rojas_visitante"]],
+        on="match_id", how="inner")
+
+    if cruzado.empty:
+        print("[calibracion] ningún partido predicho se ha jugado todavía -- se omite esta semana")
+        return
+
+    cruzado["tarjetas_totales"] = (cruzado["amarillas_local"] + cruzado["rojas_local"] +
+                                     cruzado["amarillas_visitante"] + cruzado["rojas_visitante"])
+    cruzado["gano_local"] = (cruzado["goles_local"] > cruzado["goles_visitante"]).astype(float)
+    cruzado["over_tarjetas"] = (cruzado["tarjetas_totales"] > 4.5).astype(float)
+
+    brier_goles = ((cruzado["prob_local"] - cruzado["gano_local"]) ** 2).mean()
+    brier_tarjetas = ((cruzado["prob_over_tarjetas"] - cruzado["over_tarjetas"]) ** 2).mean()
+    acierto_goles = ((cruzado["prob_local"] > 0.5) == cruzado["gano_local"].astype(bool)).mean()
+    acierto_tarjetas = ((cruzado["prob_over_tarjetas"] > 0.5) == cruzado["over_tarjetas"].astype(bool)).mean()
+
+    # --- Desglose por variable: ¿en qué situaciones falla más el modelo? ---
+    cruzado["es_derbi"] = cruzado.apply(
+        lambda r: frozenset([r["equipo_local"], r["equipo_visitante"]]) in DERBIS, axis=1)
+    cruzado["acierto_tarjetas_fila"] = (cruzado["prob_over_tarjetas"] > 0.5) == cruzado["over_tarjetas"].astype(bool)
+
+    desglose = ["\n## Desglose por variable (para diagnosticar qué falla)\n"]
+    for nombre, subset in [("Partidos de derbi", cruzado[cruzado["es_derbi"]]),
+                             ("Partidos normales (no derbi)", cruzado[~cruzado["es_derbi"]])]:
+        if len(subset) > 0:
+            desglose.append(f"- **{nombre}** (n={len(subset)}): acierto tarjetas {subset['acierto_tarjetas_fila'].mean()*100:.1f}%")
+        else:
+            desglose.append(f"- **{nombre}**: sin casos todavía")
+
+    informe = f"""# Informe de calibración -- actualizado el {datetime.utcnow().strftime('%Y-%m-%d')}
+Partidos evaluados hasta ahora: {len(cruzado)}
+
+## Goles (victoria local)
+- Brier score: {brier_goles:.4f} (0.25 = azar, más bajo = mejor)
+- Acierto: {acierto_goles*100:.1f}%
+
+## Tarjetas (over/under 4.5)
+- Brier score: {brier_tarjetas:.4f} (0.25 = azar, más bajo = mejor)
+- Acierto: {acierto_tarjetas*100:.1f}%
+{''.join(desglose)}
+
+*Nota: este desglose es para diagnóstico manual -- los pesos del modelo
+(50/50 árbitro-equipo, factor derbi 1.15) todavía NO se ajustan solos
+según estos resultados. Eso es un paso pendiente, no implementado todavía.*
+"""
+    with open("data/informe_calibracion.md", "w", encoding="utf-8") as f:
+        f.write(informe)
+    print(f"[calibracion] informe actualizado con {len(cruzado)} partidos evaluados")
+
+
+# ============ MAIN ============
+def main():
+    print("Paso 1/5: actualizando histórico...")
+    historico = actualizar_historico()
+
+    print("Paso 2/5: recalculando parámetros...")
+    params = recalcular_parametros(historico)
+
+    print("Paso 3/5: buscando próximos partidos...")
+    proximos = obtener_proximos_partidos()
+    print(f"  {len(proximos)} partidos encontrados en los próximos 7 días")
+
+    print("Paso 4/5: generando informe de pronósticos...")
+    generar_informe(proximos, params)
+
+    print("Paso 5/5: actualizando calibración...")
+    calcular_calibracion()
+
+
+if __name__ == "__main__":
+    main()
