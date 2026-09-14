@@ -214,6 +214,33 @@ def obtener_alineacion(match_id, fecha_partido_str):
     return alineacion, es_confirmada
 
 
+def obtener_tasa_tarjetas_por_90(player_id, temporada_str="26/27"):
+    """Llamada real a /players/{id}/statistics -- estructura confirmada con
+    datos reales: el campo es 'perCompetition' (no 'statistics'), 'league'
+    es un texto ('LaLiga'), y hay que filtrar por temporada y por
+    type=='national league' para no contar copas."""
+    r = peticion_con_reintentos(f"{BASE_URL}/players/{player_id}/statistics")
+    if not r:
+        return None
+    try:
+        datos = r.json()
+        jugador = datos[0] if isinstance(datos, list) else datos
+        bloques = jugador.get("perCompetition", [])
+        bloque_liga = next((b for b in bloques if b.get("league") == "LaLiga"
+                             and b.get("type") == "national league"
+                             and b.get("season") == temporada_str), None)
+        if not bloque_liga:
+            return None
+        minutos = bloque_liga.get("minutesPlayed") or 0
+        amarillas = bloque_liga.get("yellowCards") or 0
+        rojas = bloque_liga.get("redCards") or 0
+        if minutos < 90:
+            return None
+        return (amarillas + rojas) / (minutos / 90)
+    except Exception:
+        return None
+
+
 # ============ 5. PREDICCIONES ============
 def predecir_goles(local, visitante, params, max_goles=8):
     a, d = params["ataque"], params["defensa"]
@@ -266,15 +293,22 @@ def predecir_tarjetas(local, visitante, arbitro, params, linea=4.5, alineacion=N
     # 7 y 8: solo se aplican si hay alineación de verdad (no una prevista)
     factor_alineacion, factor_riesgo_sancion = 1.0, 1.0
     if alineacion and es_alineacion_confirmada:
-        tasa_media_jugador = np.mean(list(params["tasa_jugador"].values())) if params["tasa_jugador"] else 1.0
         jugadores_titulares = []
         for equipo_key in ("homeTeam", "awayTeam"):
             for linea_pos in alineacion.get(equipo_key, {}).get("initialLineup", []):
                 jugadores_titulares.extend([j["id"] for j in linea_pos])
 
         if jugadores_titulares:
-            # 7. Alineación real: ¿los titulares son, de media, más o menos "tarjeteros" de lo normal?
-            tasas_titulares = [params["tasa_jugador"].get(j, tasa_media_jugador) for j in jugadores_titulares]
+            # 7. Alineación real: tasa por 90 min de verdad (llamada a la API),
+            # con respaldo a la tasa acumulada de eventos si la llamada falla
+            tasa_media_jugador = np.mean(list(params["tasa_jugador"].values())) if params["tasa_jugador"] else 1.0
+            tasas_titulares = []
+            for j in jugadores_titulares:
+                tasa_real = obtener_tasa_tarjetas_por_90(j)
+                if tasa_real is not None:
+                    tasas_titulares.append(tasa_real)
+                else:
+                    tasas_titulares.append(params["tasa_jugador"].get(j, tasa_media_jugador))
             factor_alineacion = np.clip(np.mean(tasas_titulares) / tasa_media_jugador, 0.7, 1.3) if tasa_media_jugador else 1.0
 
             # 8. Riesgo de sanción: si hay titulares a 1 amarilla de la sanción, ligera bajada
@@ -341,36 +375,4 @@ def generar_informe(proximos_partidos, params):
         registro_predicciones.append({
             "match_id": p["id"], "fecha": p["date"], "equipo_local": local, "equipo_visitante": visitante,
             "prob_local": pred_goles["prob_local"], "prob_empate": pred_goles["prob_empate"],
-            "prob_visitante": pred_goles["prob_visitante"], "prob_over_tarjetas": pred_tarjetas["prob_over"],
-            "generado_el": datetime.utcnow().isoformat(),
-        })
-
-        lineas.append("\n---\n")
-
-    with open(RUTA_INFORME, "w", encoding="utf-8") as f:
-        f.write("\n".join(lineas))
-    print(f"Informe generado: {RUTA_INFORME}")
-
-    # Registro para calibración futura: guarda cada predicción, sin duplicar
-    # las que ya se habían registrado en una ejecución anterior de la misma semana
-    ruta_registro = "data/registro_predicciones.csv"
-    registro_previo = pd.read_csv(ruta_registro) if os.path.exists(ruta_registro) else pd.DataFrame()
-    nuevos = pd.DataFrame(registro_predicciones)
-    if not registro_previo.empty:
-        nuevos = nuevos[~nuevos["match_id"].isin(registro_previo["match_id"])]
-    registro_final = pd.concat([registro_previo, nuevos], ignore_index=True)
-    registro_final.to_csv(ruta_registro, index=False)
-    print(f"Registro de predicciones actualizado: {len(nuevos)} nuevas, {len(registro_final)} en total")
-
-
-# ============ 7. CALIBRACIÓN AUTOMÁTICA ============
-def calcular_calibracion():
-    ruta_registro = "data/registro_predicciones.csv"
-    if not os.path.exists(ruta_registro):
-        print("[calibracion] todavía no hay registro de predicciones -- se omite esta semana")
-        return
-    registro = pd.read_csv(ruta_registro)
-    historico = pd.read_csv(RUTA_HISTORICO)
-
-    cruzado = registro.merge(
-      
+     
