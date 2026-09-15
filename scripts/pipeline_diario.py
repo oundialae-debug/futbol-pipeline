@@ -39,6 +39,20 @@ DERBIS = {
     frozenset(["Sevilla FC", "Real Betis"]), frozenset(["Celta de Vigo", "Deportivo La Coruña"]),
     frozenset(["Espanyol", "Barcelona"]), frozenset(["Valencia", "Villarreal"]),
 }
+RUTA_PESOS = "data/pesos_modelo.json"
+
+
+def cargar_pesos():
+    """Los pesos del modelo viven en un archivo aparte (no en el código)
+    para poder ajustarse solos semana a semana según la calibración real."""
+    import json
+    if os.path.exists(RUTA_PESOS):
+        with open(RUTA_PESOS) as f:
+            return json.load(f)
+    return {"peso_nivel": 0.15, "peso_derbi": 0.15, "peso_alineacion_max": 0.3, "peso_riesgo_sancion": 0.05}
+
+
+PESOS = cargar_pesos()
 
 
 def peticion_con_reintentos(url, params=None, intentos=3):
@@ -274,7 +288,7 @@ def predecir_tarjetas(local, visitante, arbitro, params, linea=4.5, alineacion=N
     a = params["ataque"]
     if local in a and visitante in a and params["media_liga_goles"] > 0:
         diferencia_nivel = abs(a[local] - a[visitante]) / params["media_liga_goles"]
-        factor_nivel = 1 + np.clip(0.15 * diferencia_nivel, -0.15, 0.3)  # el desnivel siempre AUMENTA, nunca baja
+        factor_nivel = 1 + np.clip(PESOS["peso_nivel"] * diferencia_nivel, -PESOS["peso_nivel"], PESOS["peso_nivel"]*2)
     else:
         factor_nivel = 1.0
 
@@ -286,7 +300,7 @@ def predecir_tarjetas(local, visitante, arbitro, params, linea=4.5, alineacion=N
         factor_local_visitante = 1.0
 
     # 4. Derbi
-    factor_derbi = 1.15 if frozenset([local, visitante]) in DERBIS else 1.0
+    factor_derbi = (1 + PESOS["peso_derbi"]) if frozenset([local, visitante]) in DERBIS else 1.0
 
     media = media_base * factor_nivel * factor_local_visitante * factor_derbi
 
@@ -457,6 +471,38 @@ según estos resultados. Eso es un paso pendiente, no implementado todavía.*
     with open("data/informe_calibracion.md", "w", encoding="utf-8") as f:
         f.write(informe)
     print(f"[calibracion] informe actualizado con {len(cruzado)} partidos evaluados")
+
+    # --- Ajuste automático de pesos (aprendizaje real, con pasos pequeños) ---
+    ajustar_pesos(cruzado)
+
+
+def ajustar_pesos(cruzado, minimo_casos=10, paso=0.05):
+    """Ajusta el peso del derbi según si acertar en derbis va mejor o peor
+    que en partidos normales. Pasos pequeños (5%) y solo si hay casos
+    suficientes -- para no sobrerreaccionar a 1-2 partidos sueltos."""
+    import json
+    pesos = cargar_pesos()
+
+    derbis = cruzado[cruzado["es_derbi"]]
+    no_derbis = cruzado[~cruzado["es_derbi"]]
+
+    if len(derbis) >= minimo_casos and len(no_derbis) >= minimo_casos:
+        acierto_derbi = derbis["acierto_tarjetas_fila"].mean()
+        acierto_normal = no_derbis["acierto_tarjetas_fila"].mean()
+        if acierto_derbi < acierto_normal - 0.05:  # el factor derbi está perjudicando de forma clara
+            pesos["peso_derbi"] = max(0.0, pesos["peso_derbi"] - paso)
+            print(f"[aprendizaje] factor derbi bajado a {pesos['peso_derbi']:.2f} (derbis acertaban peor: "
+                  f"{acierto_derbi*100:.1f}% vs {acierto_normal*100:.1f}%)")
+        elif acierto_derbi > acierto_normal + 0.05:
+            pesos["peso_derbi"] = min(0.4, pesos["peso_derbi"] + paso)
+            print(f"[aprendizaje] factor derbi subido a {pesos['peso_derbi']:.2f} (derbis acertaban mejor)")
+        else:
+            print(f"[aprendizaje] factor derbi sin cambios ({pesos['peso_derbi']:.2f}) -- diferencia no concluyente")
+    else:
+        print(f"[aprendizaje] todavía no hay casos suficientes de derbi (n={len(derbis)}) para ajustar -- se necesitan {minimo_casos}+")
+
+    with open(RUTA_PESOS, "w") as f:
+        json.dump(pesos, f, indent=2)
 
 
 # ============ MAIN ============
