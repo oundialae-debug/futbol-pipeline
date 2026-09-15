@@ -1,4 +1,4 @@
-# Pronósticos -- generado automáticamente el 2026-09-15 12:16 UTC
+# Pronósticos -- generado automáticamente el 2026-09-15 15:51 UTC
 
 ## Rayo Vallecano vs Espanyol
 *2026-09-15 17:00 UTC*
@@ -9,7 +9,7 @@
 *(factores aplicados -- nivel: 1.005, local/visitante: 1.064, derbi: 1.0, alineación: 1.0, riesgo sanción: 1.0)*
 
 **Cuotas**: disponibles pero sin mercados 1X2/Total Cards reconocidos (1 mercados encontrados)
-**Alineación**: solo prevista (faltan más de 2h) -- variables 7 y 8 no aplicadas todavía
+**Alineación**: confirmada -- variables 7 y 8 aplicadas al cálculo
 
 ---
 
@@ -39,19 +39,6 @@
 
 ---
 
-## Atlético Madrid vs Osasuna
-*2026-09-16 17:00 UTC*
-
-**Goles (1X2)**: Local 54% | Empate 24% | Visitante 22%
-
-**Tarjetas (línea 4.5)**: media estimada 5.17 | Over 59% | Under 41%
-*(factores aplicados -- nivel: 1.061, local/visitante: 1.064, derbi: 1.0, alineación: 1.0, riesgo sanción: 1.0)*
-
-**Cuotas**: disponibles pero sin mercados 1X2/Total Cards reconocidos (1 mercados encontrados)
-**Alineación**: solo prevista (faltan más de 2h) -- variables 7 y 8 no aplicadas todavía
-
----
-
 ## Deportivo La Coruña vs Sevilla FC
 *2026-09-16 17:00 UTC*
 
@@ -65,13 +52,13 @@
 
 ---
 
-## Barcelona vs Racing Santander
-*2026-09-16 19:30 UTC*
+## Atlético Madrid vs Osasuna
+*2026-09-16 17:00 UTC*
 
-**Goles (1X2)**: Local 79% | Empate 10% | Visitante 7%
+**Goles (1X2)**: Local 54% | Empate 24% | Visitante 22%
 
-**Tarjetas (línea 4.5)**: media estimada 4.96 | Over 55% | Under 45%
-*(factores aplicados -- nivel: 1.114, local/visitante: 1.064, derbi: 1.0, alineación: 1.0, riesgo sanción: 1.0)*
+**Tarjetas (línea 4.5)**: media estimada 5.17 | Over 59% | Under 41%
+*(factores aplicados -- nivel: 1.061, local/visitante: 1.064, derbi: 1.0, alineación: 1.0, riesgo sanción: 1.0)*
 
 **Cuotas**: disponibles pero sin mercados 1X2/Total Cards reconocidos (1 mercados encontrados)
 **Alineación**: solo prevista (faltan más de 2h) -- variables 7 y 8 no aplicadas todavía
@@ -85,6 +72,19 @@
 
 **Tarjetas (línea 4.5)**: media estimada 4.77 | Over 52% | Under 48%
 *(factores aplicados -- nivel: 1.011, local/visitante: 1.064, derbi: 1.0, alineación: 1.0, riesgo sanción: 1.0)*
+
+**Cuotas**: disponibles pero sin mercados 1X2/Total Cards reconocidos (1 mercados encontrados)
+**Alineación**: solo prevista (faltan más de 2h) -- variables 7 y 8 no aplicadas todavía
+
+---
+
+## Barcelona vs Racing Santander
+*2026-09-16 19:30 UTC*
+
+**Goles (1X2)**: Local 79% | Empate 10% | Visitante 7%
+
+**Tarjetas (línea 4.5)**: media estimada 4.96 | Over 55% | Under 45%
+*(factores aplicados -- nivel: 1.114, local/visitante: 1.064, derbi: 1.0, alineación: 1.0, riesgo sanción: 1.0)*
 
 **Cuotas**: disponibles pero sin mercados 1X2/Total Cards reconocidos (1 mercados encontrados)
 **Alineación**: solo prevista (faltan más de 2h) -- variables 7 y 8 no aplicadas todavía
