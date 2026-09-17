@@ -18,3 +18,6 @@
 
 ## Refinado el 2026-09-17 15:34 UTC
 - **Real Betis vs Getafe**: 1X2 46/31/24% | Tarjetas over 62% | Cuotas: sí
+
+## Refinado el 2026-09-17 18:01 UTC
+- **Malaga vs Villarreal**: 1X2 7/19/74% | Tarjetas over 63% | Cuotas: sí
