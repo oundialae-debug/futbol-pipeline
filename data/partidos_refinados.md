@@ -15,3 +15,6 @@
 ## Refinado el 2026-09-16 18:01 UTC
 - **Levante vs Athletic Club**: 1X2 37/25/37% | Tarjetas over 52% | Cuotas: sí
 - **Barcelona vs Racing Santander**: 1X2 79/10/7% | Tarjetas over 55% | Cuotas: sí
+
+## Refinado el 2026-09-17 15:34 UTC
+- **Real Betis vs Getafe**: 1X2 46/31/24% | Tarjetas over 62% | Cuotas: sí
