@@ -2,7 +2,7 @@ name: Refinar partidos proximos
 
 on:
   schedule:
-    - cron: '*/15 * * * *'   # cada 15 minutos
+    - cron: '*/1500 * * * *'   # cada 15 minutos
   workflow_dispatch:
 
 jobs:
