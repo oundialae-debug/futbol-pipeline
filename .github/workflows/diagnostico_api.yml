@@ -1,0 +1,28 @@
+name: Diagnóstico de la API
+
+# Solo a mano. Para responder a las preguntas sobre el directo hay que
+# lanzarlo con algún partido de la liga en juego.
+on:
+  workflow_dispatch:
+
+jobs:
+  diagnostico:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read   # el script es de solo lectura: no commitea nada
+    steps:
+      - name: Descargar el repositorio
+        uses: actions/checkout@v4
+
+      - name: Preparar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Instalar dependencias
+        run: pip install requests
+
+      - name: Ejecutar el diagnóstico
+        run: python scripts/diagnostico_api.py
+        env:
+          HIGHLIGHTLY_API_KEY: ${{ secrets.HIGHLIGHTLY_API_KEY }}
