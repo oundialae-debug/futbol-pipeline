@@ -1,1 +1,54 @@
 match_id,partido,liga,minuto,estado,tarjetas_ht,linea,prob_modelo,prob_push,prob_mercado,casas,mejor_cuota,mejor_casa,ev,resuelto,momento
+1321406352,Lyon vs Rennes FC,Ligue 1,45,Half time,2,1.5,1.0,0.0,0.8528,1,1.07,Marathonbet,,True,2026-09-19T19:43:39+00:00
+1321406352,Lyon vs Rennes FC,Ligue 1,45,Half time,2,2.5,0.9354,0.0,0.7528,2,1.38,Vbet Sport,0.2908,False,2026-09-19T19:43:39+00:00
+1321406352,Lyon vs Rennes FC,Ligue 1,45,Half time,2,3.0,0.7764,0.159,0.5927,1,1.56,Vbet Sport,0.3702,False,2026-09-19T19:43:39+00:00
+1321406352,Lyon vs Rennes FC,Ligue 1,45,Half time,2,3.5,0.7764,0.0,0.6964,2,1.34,Vbet Sport,0.0403,False,2026-09-19T19:43:39+00:00
+1321406352,Lyon vs Rennes FC,Ligue 1,45,Half time,2,4.0,0.5651,0.2112,0.5927,1,1.56,Vbet Sport,0.0929,False,2026-09-19T19:43:39+00:00
+1321406352,Lyon vs Rennes FC,Ligue 1,45,Half time,2,4.5,0.5651,0.0,0.4576,2,2.05,Vbet Sport,0.1585,False,2026-09-19T19:43:39+00:00
+1321406352,Lyon vs Rennes FC,Ligue 1,45,Half time,2,5.0,0.3642,0.2009,0.314,1,2.95,Vbet Sport,0.2754,False,2026-09-19T19:43:39+00:00
+1321406352,Lyon vs Rennes FC,Ligue 1,45,Half time,2,5.5,0.3642,0.0,0.2712,2,3.4,Vbet Sport,0.2384,False,2026-09-19T19:43:39+00:00
+1321406352,Lyon vs Rennes FC,Ligue 1,45,Half time,2,6.0,0.2111,0.1532,0.2986,1,3.1,Vbet Sport,-0.1925,False,2026-09-19T19:43:39+00:00
+1321406352,Lyon vs Rennes FC,Ligue 1,45,Half time,2,6.5,0.2111,0.0,0.1402,1,6.5,Marathonbet,0.372,False,2026-09-19T19:43:39+00:00
+1321406352,Lyon vs Rennes FC,Ligue 1,45,Half time,2,7.5,0.1117,0.0,0.1472,1,6.2,Marathonbet,-0.3077,False,2026-09-19T19:43:39+00:00
+1319166520,Venezia vs Lazio,Serie A,45,Half time,1,1.5,0.9501,0.0,0.8558,1,1.07,Marathonbet,0.0166,False,2026-09-19T19:43:40+00:00
+1319166520,Venezia vs Lazio,Serie A,45,Half time,1,2.5,0.8157,0.0,0.7326,2,1.3,Vbet Sport,0.0605,False,2026-09-19T19:43:40+00:00
+1319166520,Venezia vs Lazio,Serie A,45,Half time,1,3.0,0.6216,0.1941,0.6963,1,1.33,Vbet Sport,0.0209,False,2026-09-19T19:43:40+00:00
+1319166520,Venezia vs Lazio,Serie A,45,Half time,1,3.5,0.6216,0.0,0.5411,2,1.71,Vbet Sport,0.063,False,2026-09-19T19:43:40+00:00
+1319166520,Venezia vs Lazio,Serie A,45,Half time,1,4.0,0.422,0.1996,0.4184,1,2.21,Vbet Sport,0.1323,False,2026-09-19T19:43:40+00:00
+1319166520,Venezia vs Lazio,Serie A,45,Half time,1,4.5,0.422,0.0,0.3345,2,2.76,Marathonbet,0.1647,False,2026-09-19T19:43:40+00:00
+1319166520,Venezia vs Lazio,Serie A,45,Half time,1,5.0,0.2582,0.1638,0.2719,1,3.4,Vbet Sport,0.0417,False,2026-09-19T19:43:40+00:00
+1319166520,Venezia vs Lazio,Serie A,45,Half time,1,5.5,0.2582,0.0,0.2343,2,4.95,Marathonbet,0.2781,False,2026-09-19T19:43:40+00:00
+1319166520,Venezia vs Lazio,Serie A,45,Half time,1,6.5,0.1443,0.0,0.1304,1,7.0,Marathonbet,0.0099,False,2026-09-19T19:43:40+00:00
+1321409756,Toulouse vs LE Havre AC,Ligue 1,45,Half time,1,1.5,0.9501,0.0,0.8078,1,1.13,Marathonbet,0.0736,False,2026-09-19T19:43:41+00:00
+1321409756,Toulouse vs LE Havre AC,Ligue 1,45,Half time,1,2.5,0.8157,0.0,0.6942,2,1.34,Vbet Sport,0.0931,False,2026-09-19T19:43:41+00:00
+1321409756,Toulouse vs LE Havre AC,Ligue 1,45,Half time,1,3.0,0.6216,0.1941,0.5974,1,1.55,Vbet Sport,0.1576,False,2026-09-19T19:43:41+00:00
+1321409756,Toulouse vs LE Havre AC,Ligue 1,45,Half time,1,3.5,0.6216,0.0,0.459,2,2.04,Vbet Sport,0.2681,False,2026-09-19T19:43:41+00:00
+1321409756,Toulouse vs LE Havre AC,Ligue 1,45,Half time,1,4.0,0.422,0.1996,0.3215,1,2.87,Vbet Sport,0.4108,False,2026-09-19T19:43:41+00:00
+1321409756,Toulouse vs LE Havre AC,Ligue 1,45,Half time,1,4.5,0.422,0.0,0.2719,2,3.48,Marathonbet,0.4686,False,2026-09-19T19:43:41+00:00
+1321409756,Toulouse vs LE Havre AC,Ligue 1,45,Half time,1,5.5,0.2582,0.0,0.1375,1,6.65,Marathonbet,0.7171,False,2026-09-19T19:43:41+00:00
+1321409756,Toulouse vs LE Havre AC,Ligue 1,45,Half time,1,6.5,0.1443,0.0,0.1349,1,6.8,Marathonbet,-0.0189,False,2026-09-19T19:43:41+00:00
+1321405501,Le Mans vs Lorient,Ligue 1,45,Half time,2,1.5,1.0,0.0,0.8295,1,1.1,Marathonbet,,True,2026-09-19T19:43:42+00:00
+1321405501,Le Mans vs Lorient,Ligue 1,45,Half time,2,2.5,0.9354,0.0,0.7196,2,1.47,Vbet Sport,0.375,False,2026-09-19T19:43:42+00:00
+1321405501,Le Mans vs Lorient,Ligue 1,45,Half time,2,3.0,0.7764,0.159,0.7714,1,1.2,Vbet Sport,0.0907,False,2026-09-19T19:43:42+00:00
+1321405501,Le Mans vs Lorient,Ligue 1,45,Half time,2,3.5,0.7764,0.0,0.751,2,1.29,Vbet Sport,0.0015,False,2026-09-19T19:43:42+00:00
+1321405501,Le Mans vs Lorient,Ligue 1,45,Half time,2,4.0,0.5651,0.2112,0.7014,1,1.32,Vbet Sport,-0.0428,False,2026-09-19T19:43:42+00:00
+1321405501,Le Mans vs Lorient,Ligue 1,45,Half time,2,4.5,0.5651,0.0,0.5568,2,1.7,Vbet Sport,-0.0393,False,2026-09-19T19:43:42+00:00
+1321405501,Le Mans vs Lorient,Ligue 1,45,Half time,2,5.0,0.3642,0.2009,0.4259,1,2.17,Vbet Sport,-0.0087,False,2026-09-19T19:43:42+00:00
+1321405501,Le Mans vs Lorient,Ligue 1,45,Half time,2,5.5,0.3642,0.0,0.3521,2,2.7,Vbet Sport,-0.0166,False,2026-09-19T19:43:42+00:00
+1321405501,Le Mans vs Lorient,Ligue 1,45,Half time,2,6.0,0.2111,0.1532,0.2795,1,3.3,Vbet Sport,-0.1503,False,2026-09-19T19:43:42+00:00
+1321405501,Le Mans vs Lorient,Ligue 1,45,Half time,2,6.5,0.2111,0.0,0.2035,1,4.5,Marathonbet,-0.0501,False,2026-09-19T19:43:42+00:00
+1321405501,Le Mans vs Lorient,Ligue 1,45,Half time,2,7.5,0.1117,0.0,0.1313,1,6.95,Marathonbet,-0.2239,False,2026-09-19T19:43:42+00:00
+1326401722,Anderlecht vs Zulte Waregem,Jupiler Pro League,45,Half time,2,3.0,0.7764,0.159,0.5417,1,1.65,Vbet Sport,0.44,False,2026-09-19T19:43:44+00:00
+1326401722,Anderlecht vs Zulte Waregem,Jupiler Pro League,45,Half time,2,3.5,0.7764,0.0,0.4396,1,2.04,Vbet Sport,0.5838,False,2026-09-19T19:43:44+00:00
+1326402573,Lommel United vs KV Mechelen,Jupiler Pro League,45,Half time,2,2.5,0.9354,0.0,0.5892,1,1.52,Vbet Sport,0.4218,False,2026-09-19T19:43:45+00:00
+1326402573,Lommel United vs KV Mechelen,Jupiler Pro League,45,Half time,2,3.0,0.7764,0.159,0.4861,1,1.85,Vbet Sport,0.5953,False,2026-09-19T19:43:45+00:00
+1326402573,Lommel United vs KV Mechelen,Jupiler Pro League,45,Half time,2,3.5,0.7764,0.0,0.3899,1,2.3,Vbet Sport,0.7857,False,2026-09-19T19:43:45+00:00
+1321403799,Angers vs Estac Troyes,Ligue 1,45,Half time,1,1.5,0.9501,0.0,0.7302,2,1.31,Vbet Sport,0.2446,False,2026-09-19T19:43:46+00:00
+1321403799,Angers vs Estac Troyes,Ligue 1,45,Half time,1,2.0,0.8157,0.1344,0.6785,1,1.36,Vbet Sport,0.2438,False,2026-09-19T19:43:46+00:00
+1321403799,Angers vs Estac Troyes,Ligue 1,45,Half time,1,2.5,0.8157,0.0,0.7039,2,1.31,Vbet Sport,0.0686,False,2026-09-19T19:43:46+00:00
+1321403799,Angers vs Estac Troyes,Ligue 1,45,Half time,1,3.0,0.6216,0.1941,0.6154,1,1.5,Vbet Sport,0.1266,False,2026-09-19T19:43:46+00:00
+1321403799,Angers vs Estac Troyes,Ligue 1,45,Half time,1,3.5,0.6216,0.0,0.4736,2,1.95,Vbet Sport,0.2122,False,2026-09-19T19:43:46+00:00
+1321403799,Angers vs Estac Troyes,Ligue 1,45,Half time,1,4.0,0.422,0.1996,0.3357,1,2.75,Vbet Sport,0.3601,False,2026-09-19T19:43:46+00:00
+1321403799,Angers vs Estac Troyes,Ligue 1,45,Half time,1,4.5,0.422,0.0,0.2712,2,3.4,Vbet Sport,0.4348,False,2026-09-19T19:43:46+00:00
+1321403799,Angers vs Estac Troyes,Ligue 1,45,Half time,1,5.0,0.2582,0.1638,0.314,1,2.95,Vbet Sport,-0.0745,False,2026-09-19T19:43:46+00:00
+1321403799,Angers vs Estac Troyes,Ligue 1,45,Half time,1,5.5,0.2582,0.0,0.1423,1,6.45,Marathonbet,0.6654,False,2026-09-19T19:43:46+00:00
