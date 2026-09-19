@@ -57,6 +57,14 @@ def main():
                        "prob_visitante": pred_goles["prob_visitante"], "prob_over_tarjetas": pred_tarjetas["prob_over"],
                        "generado_el": datetime.utcnow().isoformat(), "refinado": True}
 
+        # La fila se sustituye entera, así que hay que arrastrar la probabilidad
+        # de mercado que ya hubiera: es la que permite comparar después modelo
+        # contra casa, y aquí no se recalcula. Sin esto, refinar un partido
+        # borraba justamente el dato que sirve para medir si ganamos al mercado.
+        anterior = registro[registro["match_id"] == p["id"]]
+        if not anterior.empty and "prob_mercado_over_tarjetas" in anterior.columns:
+            nueva_fila["prob_mercado_over_tarjetas"] = anterior.iloc[0]["prob_mercado_over_tarjetas"]
+
         registro = registro[registro["match_id"] != p["id"]]  # se sustituye la predicción anterior por la refinada
         registro = pd.concat([registro, pd.DataFrame([nueva_fila])], ignore_index=True)
         refinados_esta_vez.append({**nueva_fila, "tiene_cuotas": bool(cuotas)})
