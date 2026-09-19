@@ -1,0 +1,27 @@
+name: Cuotas en vivo
+
+# Solo lectura y a mano. Mira qué mercados trae oddsType=live en los
+# partidos en juego y si los valores se mueven.
+on:
+  workflow_dispatch:
+    inputs:
+      espera:
+        description: 'Segundos entre las dos muestras'
+        required: false
+        default: '70'
+
+jobs:
+  live_odds:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install requests
+      - run: python scripts/sondeo_live_odds.py
+        env:
+          HIGHLIGHTLY_API_KEY: ${{ secrets.HIGHLIGHTLY_API_KEY }}
+          ESPERA: ${{ inputs.espera || '70' }}
