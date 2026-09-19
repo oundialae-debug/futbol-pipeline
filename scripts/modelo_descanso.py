@@ -4,6 +4,13 @@ MODELO DE TARJETAS AL DESCANSO.
 Dado el número de tarjetas mostradas al llegar el descanso, estima la
 probabilidad de que el total del partido supere cada línea.
 
+OJO: EL MODELO SOLO VALE EN EL DESCANSO
+---------------------------------------
+lambda(k) está ajustado sobre "cuántas tarjetas caen DESDE EL MINUTO 45
+hasta el final". Aplicarlo en el minuto 22, con 68 minutos por delante en
+vez de 45, subestima lo que queda y da números sin sentido. Quien llame a
+esto debe asegurarse de que el partido está de verdad en el descanso.
+
 EL HALLAZGO QUE DEFINE EL MODELO
 --------------------------------
 La correlación entre tarjetas al descanso y tarjetas en la segunda parte es
@@ -75,6 +82,15 @@ def lambda_de(k, a, b):
     return max(LAMBDA_MINIMA, a + b * k)
 
 
+def _parametros_nb(media, phi):
+    """(r, p) de la binomial negativa, o None si no hay sobredispersión."""
+    varianza = phi * media
+    if varianza <= media:
+        return None
+    r = media * media / (varianza - media)
+    return r, r / (r + media)
+
+
 def prob_over(k, linea, a, b, phi):
     """P(total del partido > linea | k tarjetas al descanso).
 
@@ -85,13 +101,41 @@ def prob_over(k, linea, a, b, phi):
     if faltan < 0:
         return 1.0
     media = lambda_de(k, a, b)
-    varianza = phi * media
     umbral = int(np.floor(faltan))
-    if varianza <= media:   # sin sobredispersión, Poisson
+    nb = _parametros_nb(media, phi)
+    if nb is None:
         return float(1 - poisson.cdf(umbral, media))
-    r = media * media / (varianza - media)
-    p = r / (r + media)
-    return float(1 - nbinom.cdf(umbral, r, p))
+    return float(1 - nbinom.cdf(umbral, nb[0], nb[1]))
+
+
+def prob_push(k, linea, a, b, phi):
+    """P(total == linea), que es cuando la casa devuelve la apuesta.
+
+    Solo puede pasar en líneas enteras (3.0, 4.0...). En las de .5 es cero.
+    Ignorarlo infravalora el Over en las enteras, porque cuenta el empate
+    como derrota."""
+    if float(linea) != int(linea):
+        return 0.0
+    faltan = int(linea) - k
+    if faltan < 0:
+        return 0.0
+    media = lambda_de(k, a, b)
+    nb = _parametros_nb(media, phi)
+    if nb is None:
+        return float(poisson.pmf(faltan, media))
+    return float(nbinom.pmf(faltan, nb[0], nb[1]))
+
+
+def valor_esperado(k, linea, cuota, a, b, phi):
+    """Valor esperado de apostar 1 unidad al Over, contando el push.
+
+    En una línea entera: gana cuota-1 si supera, recupera la unidad si
+    empata, pierde 1 si no llega."""
+    if not cuota or cuota <= 1:
+        return None
+    p_over = prob_over(k, linea, a, b, phi)
+    p_push = prob_push(k, linea, a, b, phi)
+    return p_over * cuota + p_push * 1.0 - 1.0
 
 
 def ya_resuelto(k, linea):
@@ -118,14 +162,6 @@ def validar(base, linea=4.5, bloques=5, semilla=7):
     return bm, bb, (bb - bm) / bb * 100 if bb else 0.0
 
 
-def tabla(a, b, phi, lineas=(2.5, 3.5, 4.5, 5.5, 6.5, 7.5), maximo_ht=6):
-    """Tabla legible P(Over | tarjetas al descanso), para el informe."""
-    filas = []
-    for k in range(maximo_ht + 1):
-        filas.append((k, {l: prob_over(k, l, a, b, phi) for l in lineas}))
-    return filas
-
-
 if __name__ == "__main__":
     base = preparar_datos()
     a, b, phi = ajustar(base)
@@ -138,7 +174,12 @@ if __name__ == "__main__":
     print("\nTABLA P(Over | tarjetas al descanso)")
     lineas = (2.5, 3.5, 4.5, 5.5, 6.5, 7.5)
     print("  HT  " + "  ".join(f"{l:>6.1f}" for l in lineas))
-    for k, probs in tabla(a, b, phi):
-        marca = lambda l: "  YA " if ya_resuelto(k, l) else ""
+    for k in range(0, 7):
         print(f"  {k:>2d}  " + "  ".join(
-            (f"{probs[l]*100:5.1f}%" if not ya_resuelto(k, l) else "  YA  ") for l in lineas))
+            (f"{prob_over(k, l, a, b, phi)*100:5.1f}%" if not ya_resuelto(k, l) else "  YA  ")
+            for l in lineas))
+    print("\nEfecto del push en lineas enteras (k=2, cuota 1.80):")
+    for l in (3.0, 3.5, 4.0, 4.5):
+        sin_push = prob_over(2, l, a, b, phi) * 1.80 - 1
+        con_push = valor_esperado(2, l, 1.80, a, b, phi)
+        print(f"  linea {l}: sin push {sin_push*100:+.1f}%  con push {con_push*100:+.1f}%")
