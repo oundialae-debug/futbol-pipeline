@@ -412,7 +412,7 @@ def generar_informe(proximos_partidos, params):
 
 
 # ============ 7. CALIBRACIÓN AUTOMÁTICA ============
-def calcular_calibracion():
+def calcular_calibracion(params):
     ruta_registro = "data/registro_predicciones.csv"
     if not os.path.exists(ruta_registro):
         print("[calibracion] todavía no hay registro de predicciones -- se omite esta semana")
@@ -442,15 +442,36 @@ def calcular_calibracion():
     # --- Desglose por variable: ¿en qué situaciones falla más el modelo? ---
     cruzado["es_derbi"] = cruzado.apply(
         lambda r: frozenset([r["equipo_local"], r["equipo_visitante"]]) in DERBIS, axis=1)
+
+    # diferencia de nivel de cada partido evaluado, con la fuerza de ataque
+    # vigente ahora mismo (aproximación -- no se guardó la de la semana en
+    # que se hizo cada predicción, pero es estable de una semana a otra)
+    media_liga_goles = params["media_liga_goles"]
+    ataque = params["ataque"]
+    cruzado["diferencia_nivel"] = cruzado.apply(
+        lambda r: abs(ataque.get(r["equipo_local"], media_liga_goles) - ataque.get(r["equipo_visitante"], media_liga_goles))
+                  / media_liga_goles if media_liga_goles else 0.0, axis=1)
+
     cruzado["acierto_tarjetas_fila"] = (cruzado["prob_over_tarjetas"] > 0.5) == cruzado["over_tarjetas"].astype(bool)
 
+    mediana_nivel = cruzado["diferencia_nivel"].median()
+    grupos_desglose = [
+        ("Partidos de derbi", cruzado[cruzado["es_derbi"]]),
+        ("Partidos normales (no derbi)", cruzado[~cruzado["es_derbi"]]),
+        ("Diferencia de nivel alta", cruzado[cruzado["diferencia_nivel"] >= mediana_nivel]),
+        ("Diferencia de nivel baja", cruzado[cruzado["diferencia_nivel"] < mediana_nivel]),
+    ]
     desglose = ["\n## Desglose por variable (para diagnosticar qué falla)\n"]
-    for nombre, subset in [("Partidos de derbi", cruzado[cruzado["es_derbi"]]),
-                             ("Partidos normales (no derbi)", cruzado[~cruzado["es_derbi"]])]:
+    for nombre, subset in grupos_desglose:
         if len(subset) > 0:
             desglose.append(f"- **{nombre}** (n={len(subset)}): acierto tarjetas {subset['acierto_tarjetas_fila'].mean()*100:.1f}%")
         else:
             desglose.append(f"- **{nombre}**: sin casos todavía")
+
+    # --- Ajuste automático de pesos -- se hace ANTES de escribir el informe
+    # para poder reportar los pesos realmente vigentes y qué cambió ---
+    pesos_vigentes, cambios_aprendizaje = ajustar_pesos(cruzado)
+    lineas_cambios = "\n".join(f"- {c}" for c in cambios_aprendizaje)
 
     informe = f"""# Informe de calibración -- actualizado el {datetime.utcnow().strftime('%Y-%m-%d')}
 Partidos evaluados hasta ahora: {len(cruzado)}
@@ -464,45 +485,65 @@ Partidos evaluados hasta ahora: {len(cruzado)}
 - Acierto: {acierto_tarjetas*100:.1f}%
 {''.join(desglose)}
 
-*Nota: este desglose es para diagnóstico manual -- los pesos del modelo
-(50/50 árbitro-equipo, factor derbi 1.15) todavía NO se ajustan solos
-según estos resultados. Eso es un paso pendiente, no implementado todavía.*
+## Aprendizaje automático de pesos
+Pesos vigentes ahora mismo: peso_nivel={pesos_vigentes['peso_nivel']:.2f} (factor máximo {1 + pesos_vigentes['peso_nivel']*2:.2f}),
+peso_derbi={pesos_vigentes['peso_derbi']:.2f} (factor derbi {1 + pesos_vigentes['peso_derbi']:.2f})
+
+{lineas_cambios}
+
+*Nota: el ajuste se guarda en `{RUTA_PESOS}` y persiste entre ejecuciones
+semanales. Cada peso se mueve como máximo un 5% por semana, y solo si hay
+10+ partidos evaluados en cada grupo comparado, para no sobrerreaccionar a
+pocos casos. El split 50/50 árbitro-equipo dentro de la media base, y los
+pesos de alineación/riesgo de sanción, todavía son fijos -- no se ajustan
+solos.*
 """
     with open("data/informe_calibracion.md", "w", encoding="utf-8") as f:
         f.write(informe)
     print(f"[calibracion] informe actualizado con {len(cruzado)} partidos evaluados")
 
-    # --- Ajuste automático de pesos (aprendizaje real, con pasos pequeños) ---
-    ajustar_pesos(cruzado)
 
-
-def ajustar_pesos(cruzado, minimo_casos=10, paso=0.05):
-    """Ajusta el peso del derbi según si acertar en derbis va mejor o peor
-    que en partidos normales. Pasos pequeños (5%) y solo si hay casos
-    suficientes -- para no sobrerreaccionar a 1-2 partidos sueltos."""
+def ajustar_pesos(cruzado, minimo_casos=10, paso=0.05, tope=0.4):
+    """Ajusta un peso comparando el acierto de tarjetas entre dos grupos de
+    partidos (p.ej. derbi vs. no derbi, diferencia de nivel alta vs. baja).
+    Pasos pequeños (5%) y solo si hay casos suficientes en AMBOS grupos --
+    para no sobrerreaccionar a 1-2 partidos sueltos. Devuelve los pesos
+    vigentes tras el ajuste y una lista de mensajes para el informe."""
     import json
     pesos = cargar_pesos()
+    cambios = []
 
-    derbis = cruzado[cruzado["es_derbi"]]
-    no_derbis = cruzado[~cruzado["es_derbi"]]
-
-    if len(derbis) >= minimo_casos and len(no_derbis) >= minimo_casos:
-        acierto_derbi = derbis["acierto_tarjetas_fila"].mean()
-        acierto_normal = no_derbis["acierto_tarjetas_fila"].mean()
-        if acierto_derbi < acierto_normal - 0.05:  # el factor derbi está perjudicando de forma clara
-            pesos["peso_derbi"] = max(0.0, pesos["peso_derbi"] - paso)
-            print(f"[aprendizaje] factor derbi bajado a {pesos['peso_derbi']:.2f} (derbis acertaban peor: "
-                  f"{acierto_derbi*100:.1f}% vs {acierto_normal*100:.1f}%)")
-        elif acierto_derbi > acierto_normal + 0.05:
-            pesos["peso_derbi"] = min(0.4, pesos["peso_derbi"] + paso)
-            print(f"[aprendizaje] factor derbi subido a {pesos['peso_derbi']:.2f} (derbis acertaban mejor)")
+    def _ajustar(clave, grupo_a, nombre_a, grupo_b, nombre_b):
+        if len(grupo_a) < minimo_casos or len(grupo_b) < minimo_casos:
+            cambios.append(f"{clave}: todavía no hay casos suficientes ({nombre_a} n={len(grupo_a)}, "
+                            f"{nombre_b} n={len(grupo_b)}, se necesitan {minimo_casos}+ de cada uno)")
+            return
+        acierto_a = grupo_a["acierto_tarjetas_fila"].mean()
+        acierto_b = grupo_b["acierto_tarjetas_fila"].mean()
+        if acierto_a < acierto_b - 0.05:  # el factor está perjudicando de forma clara
+            pesos[clave] = max(0.0, pesos[clave] - paso)
+            cambios.append(f"{clave} bajado a {pesos[clave]:.2f} ({nombre_a} acertaba peor: "
+                            f"{acierto_a*100:.1f}% vs {acierto_b*100:.1f}% en {nombre_b})")
+        elif acierto_a > acierto_b + 0.05:
+            pesos[clave] = min(tope, pesos[clave] + paso)
+            cambios.append(f"{clave} subido a {pesos[clave]:.2f} ({nombre_a} acertaba mejor: "
+                            f"{acierto_a*100:.1f}% vs {acierto_b*100:.1f}% en {nombre_b})")
         else:
-            print(f"[aprendizaje] factor derbi sin cambios ({pesos['peso_derbi']:.2f}) -- diferencia no concluyente")
-    else:
-        print(f"[aprendizaje] todavía no hay casos suficientes de derbi (n={len(derbis)}) para ajustar -- se necesitan {minimo_casos}+")
+            cambios.append(f"{clave} sin cambios ({pesos[clave]:.2f}) -- diferencia no concluyente "
+                            f"({acierto_a*100:.1f}% vs {acierto_b*100:.1f}%)")
+
+    derbis, no_derbis = cruzado[cruzado["es_derbi"]], cruzado[~cruzado["es_derbi"]]
+    _ajustar("peso_derbi", derbis, "derbis", no_derbis, "partidos normales")
+
+    mediana_nivel = cruzado["diferencia_nivel"].median()
+    alta = cruzado[cruzado["diferencia_nivel"] >= mediana_nivel]
+    baja = cruzado[cruzado["diferencia_nivel"] < mediana_nivel]
+    _ajustar("peso_nivel", alta, "diferencia de nivel alta", baja, "diferencia de nivel baja")
 
     with open(RUTA_PESOS, "w") as f:
         json.dump(pesos, f, indent=2)
+    print("[aprendizaje] " + " | ".join(cambios))
+    return pesos, cambios
 
 
 # ============ MAIN ============
@@ -521,7 +562,7 @@ def main():
     generar_informe(proximos, params)
 
     print("Paso 5/5: actualizando calibración...")
-    calcular_calibracion()
+    calcular_calibracion(params)
 
 
 if __name__ == "__main__":
