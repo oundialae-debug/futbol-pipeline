@@ -1,0 +1,41 @@
+name: Diagnóstico en directo
+
+# Solo lectura. Busca cualquier partido EN JUEGO del mundo para contestar
+# si la API sirve eventos parciales en directo y si las cuotas se mueven.
+#
+# Las ventanas del cron cubren horarios donde casi siempre hay fútbol en
+# algún sitio: tarde europea, noche europea y madrugada (Sudamérica).
+on:
+  workflow_dispatch:
+    inputs:
+      ligas:
+        description: 'IDs de liga separados por coma donde buscar primero (opcional)'
+        required: false
+        default: ''
+  schedule:
+    - cron: '30 16 * * *'   # tarde europea
+    - cron: '30 20 * * *'   # noche europea
+    - cron: '30 0 * * *'    # madrugada UTC = prime time sudamericano
+
+jobs:
+  directo:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read   # el script no commitea nada
+    steps:
+      - name: Descargar el repositorio
+        uses: actions/checkout@v4
+
+      - name: Preparar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Instalar dependencias
+        run: pip install requests
+
+      - name: Ejecutar el diagnóstico en directo
+        run: python scripts/diagnostico_directo.py
+        env:
+          HIGHLIGHTLY_API_KEY: ${{ secrets.HIGHLIGHTLY_API_KEY }}
+          LIGAS_EXTRA: ${{ inputs.ligas }}
