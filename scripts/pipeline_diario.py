@@ -461,12 +461,13 @@ def calcular_calibracion(params):
         ("Diferencia de nivel alta", cruzado[cruzado["diferencia_nivel"] >= mediana_nivel]),
         ("Diferencia de nivel baja", cruzado[cruzado["diferencia_nivel"] < mediana_nivel]),
     ]
-    desglose = ["\n## Desglose por variable (para diagnosticar qué falla)\n"]
+    desglose = []
     for nombre, subset in grupos_desglose:
         if len(subset) > 0:
             desglose.append(f"- **{nombre}** (n={len(subset)}): acierto tarjetas {subset['acierto_tarjetas_fila'].mean()*100:.1f}%")
         else:
             desglose.append(f"- **{nombre}**: sin casos todavía")
+    lineas_desglose = "\n".join(desglose)
 
     # --- Ajuste automático de pesos -- se hace ANTES de escribir el informe
     # para poder reportar los pesos realmente vigentes y qué cambió ---
@@ -483,7 +484,10 @@ Partidos evaluados hasta ahora: {len(cruzado)}
 ## Tarjetas (over/under 4.5)
 - Brier score: {brier_tarjetas:.4f} (0.25 = azar, más bajo = mejor)
 - Acierto: {acierto_tarjetas*100:.1f}%
-{''.join(desglose)}
+
+## Desglose por variable (para diagnosticar qué falla)
+
+{lineas_desglose}
 
 ## Aprendizaje automático de pesos
 Pesos vigentes ahora mismo: peso_nivel={pesos_vigentes['peso_nivel']:.2f} (factor máximo {1 + pesos_vigentes['peso_nivel']*2:.2f}),
