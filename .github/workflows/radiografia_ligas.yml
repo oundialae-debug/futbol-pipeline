@@ -1,0 +1,21 @@
+name: Radiografía de ligas
+
+# Solo lectura y solo a mano. Sirve para saber si la API cubre de verdad
+# las ligas en juego y si el estado va al día o con retraso.
+on:
+  workflow_dispatch:
+
+jobs:
+  radiografia:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install requests
+      - run: python scripts/radiografia_ligas.py
+        env:
+          HIGHLIGHTLY_API_KEY: ${{ secrets.HIGHLIGHTLY_API_KEY }}
