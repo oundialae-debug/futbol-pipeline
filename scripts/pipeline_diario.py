@@ -202,10 +202,73 @@ def obtener_proximos_partidos(dias=7):
 
 # ============ 4. CUOTAS Y ALINEACIONES ============
 def obtener_cuotas(match_id):
+    """La API devuelve [{matchId, odds: [{type, market, values: [{odd, value}],
+    bookmakerName, ...}]}]: los mercados van anidados bajo 'odds' y la clave es
+    'market', no 'name'. Devuelve la lista plana de entradas de cuota.
+    Las cuotas son DECIMALES (verificado: la suma de 1/cuota da 1.05-1.08)."""
     r = peticion_con_reintentos(f"{BASE_URL}/odds", {"matchId": match_id})
     if not r:
-        return None
-    return r.json().get("data", [])
+        return []
+    try:
+        datos = r.json()
+    except Exception:
+        return []
+    bloques = datos.get("data", []) if isinstance(datos, dict) else (datos or [])
+    planas = []
+    for bloque in bloques:
+        if isinstance(bloque, dict):
+            planas.extend(bloque.get("odds", []) or [])
+    return planas
+
+
+def _entradas_de(cuotas, nombre_mercado):
+    objetivo = nombre_mercado.strip().lower()
+    return [c for c in cuotas
+            if (c.get("market") or "").strip().lower() == objetivo
+            and c.get("type") == "prematch"]
+
+
+def probabilidades_de_mercado(cuotas, nombre_mercado):
+    """Probabilidad de consenso del mercado: se quita el margen de cada casa
+    (normalizando 1/cuota) y se promedia entre casas. Devuelve ({valor: prob},
+    número de casas). Esa probabilidad es la referencia contra la que hay que
+    medir el modelo -- si no le gana, no hay apuesta."""
+    por_casa = []
+    for entrada in _entradas_de(cuotas, nombre_mercado):
+        pares = []
+        for v in (entrada.get("values") or []):
+            try:
+                cuota = float(v.get("odd"))
+            except (TypeError, ValueError):
+                continue
+            if cuota > 1:
+                pares.append((v.get("value"), cuota))
+        if len(pares) < 2:
+            continue
+        suma = sum(1 / c for _, c in pares)
+        por_casa.append({val: (1 / c) / suma for val, c in pares})
+    if not por_casa:
+        return {}, 0
+    claves = set().union(*(set(p) for p in por_casa))
+    return ({k: float(np.mean([p[k] for p in por_casa if k in p])) for k in claves},
+            len(por_casa))
+
+
+def mejor_cuota(cuotas, nombre_mercado, valor):
+    """Mejor cuota disponible para un resultado concreto, y en qué casa."""
+    mejor, casa = 0.0, None
+    objetivo = str(valor).strip().lower()
+    for entrada in _entradas_de(cuotas, nombre_mercado):
+        for v in (entrada.get("values") or []):
+            if str(v.get("value")).strip().lower() != objetivo:
+                continue
+            try:
+                cuota = float(v.get("odd"))
+            except (TypeError, ValueError):
+                continue
+            if cuota > mejor:
+                mejor, casa = cuota, entrada.get("bookmakerName")
+    return mejor, casa
 
 
 def obtener_alineacion(match_id, fecha_partido_str):
@@ -364,20 +427,54 @@ def generar_informe(proximos_partidos, params):
         lineas.append(f"*(factores aplicados -- nivel: {v['nivel']}, local/visitante: {v['local_visitante']}, "
                        f"derbi: {v['derbi']}, alineación: {v['alineacion']}, riesgo sanción: {v['riesgo_sancion']})*\n")
 
-        # 5. Cuota de mercado -- comparación real, no solo "disponible sí/no"
+        # 5. Mercado: consenso sin margen y valor esperado contra la mejor cuota
+        prob_mercado_over = None
         if cuotas:
-            mercado_1x2 = next((m for m in cuotas if "Match Winner" in m.get("name", "") or "1X2" in m.get("name", "")), None)
-            mercado_cards = next((m for m in cuotas if "Total Cards" in m.get("name", "")), None)
-            if mercado_1x2:
-                lineas.append(f"**Cuota de mercado 1X2**: disponible -- comparar manualmente contra el {pred_goles['prob_local']*100:.0f}%/"
-                               f"{pred_goles['prob_empate']*100:.0f}%/{pred_goles['prob_visitante']*100:.0f}% de arriba")
-            if mercado_cards:
-                lineas.append(f"**Cuota de mercado Total Cards**: disponible -- comparar contra el "
-                               f"{pred_tarjetas['prob_over']*100:.0f}% de over estimado")
-            if not mercado_1x2 and not mercado_cards:
-                lineas.append(f"**Cuotas**: disponibles pero sin mercados 1X2/Total Cards reconocidos ({len(cuotas)} mercados encontrados)")
+            casas = {c.get("bookmakerName") for c in cuotas if c.get("bookmakerName")}
+            lineas.append(f"**Mercado** ({len(cuotas)} cuotas de {len(casas)} casas):")
+
+            prob_1x2, n_1x2 = probabilidades_de_mercado(cuotas, "Full Time Result")
+            if prob_1x2:
+                lineas.append(f"- *1X2 consenso de {n_1x2} casas*: "
+                               f"Local {prob_1x2.get('Home', 0)*100:.0f}% | "
+                               f"Empate {prob_1x2.get('Draw', 0)*100:.0f}% | "
+                               f"Visitante {prob_1x2.get('Away', 0)*100:.0f}%  "
+                               f"(modelo: {pred_goles['prob_local']*100:.0f}/"
+                               f"{pred_goles['prob_empate']*100:.0f}/"
+                               f"{pred_goles['prob_visitante']*100:.0f})")
+
+            prob_cards, n_cards = probabilidades_de_mercado(cuotas, "Total Cards 4.5")
+            if prob_cards:
+                prob_mercado_over = prob_cards.get("Over")
+                cuota, casa = mejor_cuota(cuotas, "Total Cards 4.5", "Over")
+                # valor esperado de apostar 1 unidad al Over segun NUESTRA probabilidad
+                ev = pred_tarjetas["prob_over"] * cuota - 1 if cuota else None
+                aviso = "" if n_cards > 1 else "  [!] una sola casa: sin contraste"
+                lineas.append(f"- *Tarjetas 4.5*: modelo {pred_tarjetas['prob_over']*100:.0f}% "
+                               f"vs mercado {prob_mercado_over*100:.0f}% ({n_cards} casa/s)"
+                               f"{aviso}")
+                if ev is not None:
+                    # Una divergencia enorme contra el mercado casi nunca es una
+                    # oportunidad: es un modelo mal calibrado. El mercado agrega
+                    # mucha más información que nosotros, así que por encima de
+                    # +20% se avisa en vez de invitar a apostar.
+                    if ev > 0.20:
+                        juicio = "  <-- SOSPECHOSO: revisar el modelo, no apostar"
+                    elif ev > 0.02:
+                        juicio = "  <-- valor potencial"
+                    else:
+                        juicio = ""
+                    lineas.append(f"  mejor cuota Over {cuota} en {casa} -> "
+                                   f"valor esperado {ev*100:+.1f}%{juicio}")
+            else:
+                lineas.append("- *Tarjetas 4.5*: sin cuotas en el feed para este partido")
+
+            prob_corners, n_corners = probabilidades_de_mercado(cuotas, "Total Corners 9.5")
+            if prob_corners:
+                lineas.append(f"- *Córners 9.5*: mercado {prob_corners.get('Over', 0)*100:.0f}% "
+                               f"Over ({n_corners} casas) -- todavía sin modelo propio")
         else:
-            lineas.append(f"**Cuotas de mercado**: no disponibles todavía")
+            lineas.append("**Mercado**: sin cuotas disponibles todavía")
 
         if alineacion and es_confirmada:
             lineas.append(f"**Alineación**: confirmada -- variables 7 y 8 aplicadas al cálculo")
@@ -390,6 +487,9 @@ def generar_informe(proximos_partidos, params):
             "match_id": p["id"], "fecha": p["date"], "equipo_local": local, "equipo_visitante": visitante,
             "prob_local": pred_goles["prob_local"], "prob_empate": pred_goles["prob_empate"],
             "prob_visitante": pred_goles["prob_visitante"], "prob_over_tarjetas": pred_tarjetas["prob_over"],
+            # se guarda la probabilidad del mercado para poder comparar después
+            # quién acierta más, si el modelo o la casa
+            "prob_mercado_over_tarjetas": prob_mercado_over,
             "generado_el": datetime.utcnow().isoformat(),
         })
 
@@ -439,6 +539,22 @@ def calcular_calibracion(params):
     acierto_goles = ((cruzado["prob_local"] > 0.5) == cruzado["gano_local"].astype(bool)).mean()
     acierto_tarjetas = ((cruzado["prob_over_tarjetas"] > 0.5) == cruzado["over_tarjetas"].astype(bool)).mean()
 
+    # ¿Le ganamos al mercado? Es la única comparación que decide si hay negocio.
+    linea_mercado = ""
+    if "prob_mercado_over_tarjetas" in cruzado.columns:
+        con_mercado = cruzado.dropna(subset=["prob_mercado_over_tarjetas"])
+        if len(con_mercado) >= 5:
+            brier_nuestro = ((con_mercado["prob_over_tarjetas"] - con_mercado["over_tarjetas"]) ** 2).mean()
+            brier_mercado = ((con_mercado["prob_mercado_over_tarjetas"] - con_mercado["over_tarjetas"]) ** 2).mean()
+            veredicto = "el MODELO gana" if brier_nuestro < brier_mercado else "gana el MERCADO"
+            linea_mercado = (f"\n## Modelo contra mercado (n={len(con_mercado)})\n"
+                             f"- Brier del modelo:  {brier_nuestro:.4f}\n"
+                             f"- Brier del mercado: {brier_mercado:.4f}\n"
+                             f"- Veredicto: {veredicto}. Si gana el mercado, no hay apuesta rentable todavía.\n")
+        else:
+            linea_mercado = (f"\n## Modelo contra mercado\nTodavía pocos partidos con cuota "
+                             f"registrada ({len(con_mercado)}); hacen falta 5+.\n")
+
     # --- Desglose por variable: ¿en qué situaciones falla más el modelo? ---
     cruzado["es_derbi"] = cruzado.apply(
         lambda r: frozenset([r["equipo_local"], r["equipo_visitante"]]) in DERBIS, axis=1)
@@ -484,7 +600,7 @@ Partidos evaluados hasta ahora: {len(cruzado)}
 ## Tarjetas (over/under 4.5)
 - Brier score: {brier_tarjetas:.4f} (0.25 = azar, más bajo = mejor)
 - Acierto: {acierto_tarjetas*100:.1f}%
-
+{linea_mercado}
 ## Desglose por variable (para diagnosticar qué falla)
 
 {lineas_desglose}
