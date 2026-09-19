@@ -499,16 +499,60 @@ def generar_informe(proximos_partidos, params):
         f.write("\n".join(lineas))
     print(f"Informe generado: {RUTA_INFORME}")
 
-    # Registro para calibración futura: guarda cada predicción, sin duplicar
-    # las que ya se habían registrado en una ejecución anterior de la misma semana
     ruta_registro = "data/registro_predicciones.csv"
     registro_previo = pd.read_csv(ruta_registro) if os.path.exists(ruta_registro) else pd.DataFrame()
-    nuevos = pd.DataFrame(registro_predicciones)
-    if not registro_previo.empty:
-        nuevos = nuevos[~nuevos["match_id"].isin(registro_previo["match_id"])]
-    registro_final = pd.concat([registro_previo, nuevos], ignore_index=True)
+    guardar_registro(pd.DataFrame(registro_predicciones), registro_previo, ruta_registro)
+
+
+def _es_refinado(valor):
+    """Un NaN es 'verdadero' para bool(), así que hay que mirarlo antes."""
+    return bool(valor) if pd.notna(valor) else False
+
+
+def guardar_registro(nuevos, registro_previo, ruta_registro):
+    """Alta de los partidos nuevos y ACTUALIZACIÓN de los que ya estaban.
+
+    Antes solo se daban de alta los nuevos, así que un partido ya registrado
+    no volvía a tocarse nunca: por eso la probabilidad del mercado (columna
+    añadida después) se quedaba vacía para toda la jornada en curso.
+
+    Actualizar además es lo correcto de por sí: la cuota que sirve para medir
+    es la más cercana al inicio del partido, no la que hubiera cinco días
+    antes. Cada pasada refresca el mercado y deja la última observación antes
+    del pitido, que es contra la que hay que juzgar al modelo."""
+    if registro_previo.empty:
+        registro_previo = pd.DataFrame(columns=nuevos.columns)
+
+    # un match_id duplicado rompería el índice; nos quedamos con el más reciente
+    previo = registro_previo.drop_duplicates(subset="match_id", keep="last").set_index("match_id")
+    ids_previos = set(previo.index)
+
+    altas = nuevos[~nuevos["match_id"].isin(ids_previos)]
+    actualizables = nuevos[nuevos["match_id"].isin(ids_previos)]
+
+    columnas_modelo = ("prob_local", "prob_empate", "prob_visitante", "prob_over_tarjetas")
+    pisados = 0
+    for _, fila in actualizables.iterrows():
+        mid = fila["match_id"]
+        # el mercado siempre se refresca: buscamos la cuota de cierre
+        previo.loc[mid, "prob_mercado_over_tarjetas"] = fila.get("prob_mercado_over_tarjetas")
+        previo.loc[mid, "generado_el"] = fila["generado_el"]
+        # la predicción propia solo se pisa si la guardada NO venía del refinado
+        # con alineación confirmada, que es mejor que la que calculamos aquí
+        refinado = previo.loc[mid, "refinado"] if "refinado" in previo.columns else False
+        if not _es_refinado(refinado):
+            for col in columnas_modelo:
+                previo.loc[mid, col] = fila[col]
+            pisados += 1
+
+    registro_final = pd.concat([previo.reset_index(), altas], ignore_index=True)
     registro_final.to_csv(ruta_registro, index=False)
-    print(f"Registro de predicciones actualizado: {len(nuevos)} nuevas, {len(registro_final)} en total")
+
+    con_mercado = registro_final["prob_mercado_over_tarjetas"].notna().sum() \
+        if "prob_mercado_over_tarjetas" in registro_final.columns else 0
+    print(f"Registro: {len(altas)} altas, {len(actualizables)} actualizados "
+          f"({pisados} con predicción refrescada), {len(registro_final)} en total")
+    print(f"  filas con probabilidad de mercado: {con_mercado}/{len(registro_final)}")
 
 
 # ============ 7. CALIBRACIÓN AUTOMÁTICA ============
