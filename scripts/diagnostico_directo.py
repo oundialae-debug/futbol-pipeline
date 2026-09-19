@@ -113,6 +113,13 @@ def nombre_de(partido):
         return f"partido {partido.get('id')}"
 
 
+def minuto_de(partido):
+    try:
+        return int((partido.get("state") or {}).get("clock") or 0)
+    except (TypeError, ValueError):
+        return 0
+
+
 # ============ BÚSQUEDA DE PARTIDOS EN JUEGO ============
 def descubrir_ligas():
     """Prueba varias formas de listar ligas. Devuelve {id: nombre}."""
@@ -120,9 +127,9 @@ def descubrir_ligas():
     ligas = {}
     intentos = [
         ("/leagues", {"limit": 100}),
-        ("/leagues", {"leagueName": "Liga Profesional"}),
-        ("/leagues", {"name": "Liga Profesional"}),
-        ("/leagues", {"countryName": "Argentina"}),
+        ("/leagues", {"leagueName": "Liga MX"}),
+        ("/leagues", {"name": "Liga MX"}),
+        ("/leagues", {"countryName": "Mexico"}),
         ("/leagues", None),
     ]
     for path, params in intentos:
@@ -136,7 +143,7 @@ def descubrir_ligas():
 
 
 def buscar_en_vivo():
-    titulo("1. BUSCANDO UN PARTIDO EN JUEGO (en cualquier liga)")
+    titulo("1. BUSCANDO PARTIDOS EN JUEGO (en cualquier liga)")
     ahora = datetime.now(timezone.utc)
     hoy = ahora.date().isoformat()
     ayer = (ahora.date() - timedelta(days=1)).isoformat()
@@ -147,7 +154,7 @@ def buscar_en_vivo():
     # del día (y con ellos casi todos los que están en juego).
     print("  Vía A: /matches solo con fecha (sin leagueId), paginando")
     for fecha in (hoy, ayer):
-        for offset in range(0, 600, 100):
+        for offset in range(0, 800, 100):
             params = {"date": fecha, "limit": 100, "offset": offset}
             r, datos, estado = pedir("/matches", params, espera=0.35)
             partidos = desempaquetar(datos)
@@ -167,14 +174,8 @@ def buscar_en_vivo():
         print("\n  Vía B: descubrir ligas y recorrerlas")
         ligas = descubrir_ligas()
         print(f"    ligas descubiertas: {len(ligas)}")
-        argentinas = {i: n for i, n in ligas.items()
-                      if any(c in str(n).lower() for c in ("argentin", "profesional"))}
-        if argentinas:
-            print(f"    candidatas argentinas: {argentinas}")
-        # se miran primero las argentinas, luego el resto (con tope, por cuota)
-        orden = list(argentinas) + [i for i in ligas if i not in argentinas]
         extra = [int(x) for x in os.environ.get("LIGAS_EXTRA", "").replace(" ", "").split(",") if x.isdigit()]
-        orden = extra + orden + LIGAS_SEMILLA
+        orden = extra + list(ligas) + LIGAS_SEMILLA
         for liga_id in orden[:40]:
             for fecha in (hoy, ayer):
                 _, datos, _ = pedir("/matches", {"leagueId": liga_id, "date": fecha}, espera=0.3)
@@ -188,15 +189,15 @@ def buscar_en_vivo():
 
     print(f"\n  Estados vistos en total: {dict(estados_vistos)}")
     print(f"  Partidos en juego encontrados: {len(en_vivo)}")
-    for p in en_vivo[:12]:
+    for p in sorted(en_vivo, key=minuto_de, reverse=True)[:12]:
         estado = p.get("state") or {}
-        print(f"    - {nombre_de(p)}  [{estado.get('description')}, min {estado.get('clock')}]")
+        print(f"    - min {minuto_de(p):>3}  {nombre_de(p)[:44]:44s} [{estado.get('description')}]")
     return en_vivo
 
 
 # ============ TEST 1: EVENTOS PARCIALES ============
 def test_eventos_parciales(partido):
-    titulo("2. ¿SIRVE LA API EVENTOS PARCIALES EN DIRECTO?")
+    titulo("3. DETALLE DEL PARTIDO ELEGIDO")
     mid = partido["id"]
     print(f"  Partido: {nombre_de(partido)} (id {mid})")
     estado = partido.get("state") or {}
@@ -210,24 +211,9 @@ def test_eventos_parciales(partido):
     m = datos[0] if isinstance(datos, list) else datos
 
     eventos = m.get("events") or []
-    tarjetas = [e for e in eventos if e.get("type") in ("Yellow Card", "Red Card")]
-    print(f"\n  Eventos devueltos: {len(eventos)}  |  tarjetas: {len(tarjetas)}")
-
-    if tarjetas:
-        print("  >>> VEREDICTO: SÍ hay eventos parciales en directo.")
-        print("  >>> El modelo de descanso es VIABLE.")
-        print("  Tarjetas vistas hasta ahora:")
-        for e in tarjetas:
-            print(f"    min {str(e.get('time')):>4}  {e.get('type'):11s} "
-                  f"{str(e.get('player'))[:28]:28s} ({str((e.get('team') or {}).get('name'))[:20]})")
-    elif eventos:
-        print("  Hay eventos pero ninguna tarjeta todavía. Tipos presentes:",
-              dict(Counter(e.get("type") for e in eventos)))
-        print("  >>> Los eventos llegan en directo, así que el modelo de descanso es viable;")
-        print("  >>> este partido simplemente aún no tiene tarjetas.")
-    else:
-        print("  >>> Sin eventos. Puede ser un partido limpio recién empezado, o que")
-        print("  >>> la API no informe eventos hasta el final. Repetir en otro partido.")
+    print(f"\n  Eventos devueltos: {len(eventos)}")
+    if eventos:
+        print("  Tipos presentes:", dict(Counter(e.get("type") for e in eventos)))
 
     print("\n  Estructura del estado en vivo (para leer minuto y marcador):")
     describir(estado if estado else m.get("state"))
@@ -243,7 +229,7 @@ def aplanar_cuotas(datos):
 
 
 def test_cuotas_en_vivo(partido):
-    titulo("3. ¿HAY CUOTAS EN VIVO O SOLO PREVIAS?")
+    titulo("4. ¿HAY CUOTAS EN VIVO O SOLO PREVIAS?")
     mid = partido["id"]
     _, primera, res = pedir("/odds", {"matchId": mid})
     if primera is None:
@@ -299,17 +285,42 @@ def main():
         print("  pasar ligas concretas con la variable LIGAS_EXTRA.")
         return
 
-    # se prueba sobre el que más minuto lleva: cuanto más avanzado, más
-    # probable que ya tenga tarjetas que ver
-    def minuto(p):
-        try:
-            return int((p.get("state") or {}).get("clock") or 0)
-        except (TypeError, ValueError):
-            return 0
+    # Se recorren varios partidos en juego, del más avanzado al menos, hasta
+    # dar con uno que YA tenga tarjetas. Es la única forma de confirmar que
+    # las tarjetas concretas (y no solo los goles) llegan en directo, que es
+    # el dato del que depende el modelo de descanso.
+    candidatos = sorted(en_vivo, key=minuto_de, reverse=True)[:6]
+    titulo("2. BUSCANDO TARJETAS EN DIRECTO ENTRE LOS PARTIDOS EN JUEGO")
+    con_tarjetas = None
+    for p in candidatos:
+        _, datos, _ = pedir(f"/matches/{p['id']}", espera=0.4)
+        if datos is None:
+            continue
+        m = datos[0] if isinstance(datos, list) else datos
+        eventos = m.get("events") or []
+        tarj = [e for e in eventos if e.get("type") in ("Yellow Card", "Red Card")]
+        print(f"    min {minuto_de(p):>3}  {nombre_de(p)[:42]:42s} "
+              f"eventos={len(eventos):2d}  tarjetas={len(tarj):2d}")
+        if tarj and con_tarjetas is None:
+            con_tarjetas = (p, tarj)
 
-    partido = max(en_vivo, key=minuto)
-    test_eventos_parciales(partido)
-    test_cuotas_en_vivo(partido)
+    if con_tarjetas:
+        p, tarj = con_tarjetas
+        print(f"\n  >>> CONFIRMADO: hay TARJETAS en directo en {nombre_de(p)}")
+        print("  >>> El modelo de descanso es VIABLE con datos observados, no inferidos.")
+        for e in tarj:
+            print(f"    min {str(e.get('time')):>4}  {str(e.get('type')):11s} "
+                  f"{str(e.get('player'))[:28]:28s} "
+                  f"({str((e.get('team') or {}).get('name'))[:20]})")
+        elegido = p
+    else:
+        print("\n  >>> Ningún partido en juego tiene tarjetas ahora mismo.")
+        print("  >>> Los eventos sí llegan en directo, pero lo de las tarjetas")
+        print("  >>> sigue sin confirmarse. Repetir en otra pasada.")
+        elegido = candidatos[0]
+
+    test_eventos_parciales(elegido)
+    test_cuotas_en_vivo(elegido)
     titulo("FIN -- no se ha escrito nada en el repositorio")
 
 
