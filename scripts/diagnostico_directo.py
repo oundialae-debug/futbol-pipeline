@@ -129,16 +129,25 @@ def buscar_en_vivo():
     ayer = (ahora.date() - timedelta(days=1)).isoformat()
     en_vivo, estados_vistos = [], Counter()
 
-    # Vía A: /matches solo con fecha, sin filtrar liga
-    print("  Vía A: /matches solo con fecha (sin leagueId)")
+    # Vía A: /matches solo con fecha, PAGINANDO. La API devuelve como mucho
+    # 100 por página, así que sin paginar se pierden la mayoría de partidos
+    # del día (y con ellos casi todos los que están en juego).
+    print("  Vía A: /matches solo con fecha (sin leagueId), paginando")
     for fecha in (hoy, ayer):
-        r, datos, estado = pedir("/matches", {"date": fecha})
-        partidos = desempaquetar(datos)
-        print(f"    {estado:16s} date={fecha}  -> {len(partidos)} partidos")
-        for p in partidos:
-            estados_vistos[((p.get("state") or {}).get("description") or "?")] += 1
-            if esta_en_juego(p):
-                en_vivo.append(p)
+        for offset in range(0, 600, 100):
+            params = {"date": fecha, "limit": 100, "offset": offset}
+            r, datos, estado = pedir("/matches", params, espera=0.35)
+            partidos = desempaquetar(datos)
+            if offset == 0 or partidos:
+                print(f"    {estado:16s} date={fecha} offset={offset:3d}  -> {len(partidos)} partidos")
+            if not partidos:
+                break
+            for p in partidos:
+                estados_vistos[((p.get("state") or {}).get("description") or "?")] += 1
+                if esta_en_juego(p):
+                    en_vivo.append(p)
+            if len(partidos) < 100:
+                break
 
     # Vía B: descubrir ligas y mirar liga por liga
     if not en_vivo:
@@ -166,8 +175,9 @@ def buscar_en_vivo():
 
     print(f"\n  Estados vistos en total: {dict(estados_vistos)}")
     print(f"  Partidos en juego encontrados: {len(en_vivo)}")
-    for p in en_vivo[:8]:
-        print(f"    - {nombre_de(p)}  [{(p.get('state') or {}).get('description')}]")
+    for p in en_vivo[:12]:
+        estado = p.get("state") or {}
+        print(f"    - {nombre_de(p)}  [{estado.get('description')}, min {estado.get('clock')}]")
     return en_vivo
 
 
@@ -275,7 +285,16 @@ def main():
         print("  endpoints respondieron: si /matches con solo fecha da 400, hay que")
         print("  pasar ligas concretas con la variable LIGAS_EXTRA.")
         return
-    partido = en_vivo[0]
+
+    # se prueba sobre el que más minuto lleva: cuanto más avanzado, más
+    # probable que ya tenga tarjetas que ver
+    def minuto(p):
+        try:
+            return int((p.get("state") or {}).get("clock") or 0)
+        except (TypeError, ValueError):
+            return 0
+
+    partido = max(en_vivo, key=minuto)
     test_eventos_parciales(partido)
     test_cuotas_en_vivo(partido)
     titulo("FIN -- no se ha escrito nada en el repositorio")
