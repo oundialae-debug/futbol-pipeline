@@ -245,6 +245,11 @@ def escribir_informe(bloques, esperando, a, b, phi, base):
         "> ven. La hipótesis a medir es que sus modelos supongan persistencia cuando",
         "> la correlación real es negativa. Una observación no demuestra nada.\n",
     ]
+    if FORZAR:
+        lineas.insert(1, "> ⚠ **EJECUCIÓN FORZADA fuera del descanso.** lambda(k) está "
+                          "ajustada para los 45 minutos que quedan desde el descanso, "
+                          "así que estos números NO son válidos: solo sirven para probar "
+                          "que el mercado se lee bien. No se ha registrado nada.\n")
     if esperando:
         lineas.append("**En juego, esperando al descanso:** " +
                       ", ".join(f"{n} (min {mn})" for n, mn in esperando) + "\n")
@@ -311,9 +316,15 @@ def main():
                      if FILTRO_EQUIPO in nombre_de(p).lower() and minuto_de(p) <= MINUTO_MAXIMO]
         print(f"Filtrando por equipo '{FILTRO_EQUIPO}': {len(vigilados)}")
     else:
+        # El descanso entra SIEMPRE, esté donde esté el reloj. Al parar el
+        # partido la API puede dejar clock a cero o en blanco, y filtrando
+        # solo por minuto se caería de la lista justo el momento que
+        # queremos medir.
         vigilados = [p for p in vivos
-                     if MINUTO_MIN <= minuto_de(p) <= min(MINUTO_MAX, MINUTO_MAXIMO)]
-        print(f"En la ventana de vigilancia (min {MINUTO_MIN}-{MINUTO_MAX}): {len(vigilados)}")
+                     if (MINUTO_MIN <= minuto_de(p) <= min(MINUTO_MAX, MINUTO_MAXIMO)
+                         or es_descanso(p))]
+        print(f"En la ventana de vigilancia (min {MINUTO_MIN}-{MINUTO_MAX}, "
+              f"más cualquiera en el descanso): {len(vigilados)}")
 
     en_descanso = [p for p in vigilados if es_descanso(p) or FORZAR]
     esperando = [(nombre_de(p), minuto_de(p)) for p in vigilados if p not in en_descanso]
