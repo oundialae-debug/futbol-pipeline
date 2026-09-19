@@ -20,6 +20,10 @@ on:
         description: 'Minuto máximo de la ventana'
         required: false
         default: '55'
+      forzar:
+        description: 'Calcular aunque NO sea el descanso (solo prueba; no registra)'
+        required: false
+        default: 'no'
   schedule:
     # descanso del partido de las 19:00 UTC (21:00 en España)
     - cron: '42 19 * * *'
@@ -46,6 +50,7 @@ jobs:
           EQUIPO: ${{ inputs.equipo }}
           MINUTO_MIN: ${{ inputs.minuto_min || '40' }}
           MINUTO_MAX: ${{ inputs.minuto_max || '55' }}
+          FORZAR: ${{ inputs.forzar }}
           PYTHONPATH: scripts
 
       - name: Guardar informe y registro
