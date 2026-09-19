@@ -1,13 +1,21 @@
 """
 COMPARADOR DEL DESCANSO: modelo contra mercado en vivo.
 
-Junta las tres piezas comprobadas hoy:
+Junta las tres piezas comprobadas:
   1. Las tarjetas mostradas llegan EN DIRECTO con su minuto.
   2. El modelo condicional del descanso (modelo_descanso.py), validado
      fuera de muestra: Brier 0.2169 vs 0.2523 de la tasa base.
   3. Las cuotas en vivo (oddsType=live) traen hasta 11 líneas de Total
      Cards cotizadas por 24 casas -- muchas más que el previo, donde solo
      cotiza una.
+
+SOLO SE CALCULA EN EL DESCANSO
+------------------------------
+lambda(k) está ajustado sobre lo que cae DESDE EL MINUTO 45. Aplicarlo en
+el minuto 22, con 68 minutos por delante, subestima lo que queda y produce
+números sin sentido. Una prueba en vivo lo dejó claro, así que el script
+solo evalúa partidos cuyo estado es de descanso; el resto se listan como
+"esperando" para saber que están vigilados.
 
 LO QUE HAY QUE TENER PRESENTE
 -----------------------------
@@ -27,11 +35,10 @@ import os
 import time
 import requests
 import pandas as pd
-from collections import Counter
 from datetime import datetime, timedelta, timezone
 
-from modelo_descanso import (preparar_datos, ajustar, prob_over, ya_resuelto,
-                              lambda_de, validar)
+from modelo_descanso import (preparar_datos, ajustar, prob_over, prob_push,
+                              valor_esperado, ya_resuelto, lambda_de, validar)
 
 API_KEY = os.environ["HIGHLIGHTLY_API_KEY"]
 BASE_URL = "https://soccer.highlightly.net"
@@ -42,14 +49,17 @@ RUTA_INFORME = "descanso_en_vivo.md"
 
 QUIETOS = ("finished", "cancel", "postpon", "abandon", "await", "not ",
            "scheduled", "tbd", "to be")
-MINUTO_MAXIMO = 87      # por encima, probable registro ya terminado
-EV_SOSPECHOSO = 0.20    # divergencia que delata modelo mal calibrado
+MINUTO_MAXIMO = 87
+EV_SOSPECHOSO = 0.20
 
-# ventana en la que tiene sentido mirar: desde poco antes del descanso hasta
-# poco después de reanudar. Fuera de ahí el recuento todavía cambia mucho.
+# Ventana de VIGILANCIA: partidos a mirar. Dentro de ella, solo se evalúan
+# los que estén de verdad en el descanso.
 MINUTO_MIN = int(os.environ.get("MINUTO_MIN", "40"))
 MINUTO_MAX = int(os.environ.get("MINUTO_MAX", "55"))
 FILTRO_EQUIPO = os.environ.get("EQUIPO", "").strip().lower()
+# para probar el circuito fuera del descanso, a sabiendas de que los números
+# no son válidos
+FORZAR = os.environ.get("FORZAR", "").lower() in ("1", "true", "si", "sí")
 
 
 def pedir(path, params=None, espera=0.3):
@@ -87,9 +97,19 @@ def minuto_de(p):
         return 0
 
 
+def estado_de(p):
+    return ((p.get("state") or {}).get("description") or "").strip()
+
+
 def en_juego(p):
-    desc = ((p.get("state") or {}).get("description") or "").strip().lower()
+    desc = estado_de(p).lower()
     return bool(desc) and not any(desc.startswith(q) for q in QUIETOS)
+
+
+def es_descanso(p):
+    """El modelo solo es válido aquí: partido detenido en el intermedio."""
+    desc = estado_de(p).lower().replace("-", " ")
+    return "half time" in desc or "halftime" in desc or "descanso" in desc
 
 
 def nombre_de(p):
@@ -129,8 +149,6 @@ def linea_de_mercado(nombre):
 
 
 def mercado_de_tarjetas(planas):
-    """{linea: {'prob_over': consenso sin margen, 'casas': n,
-                'mejor_cuota': x, 'mejor_casa': nombre}}"""
     por_linea = {}
     for c in planas:
         linea = linea_de_mercado(c.get("market"))
@@ -170,7 +188,6 @@ def mercado_de_tarjetas(planas):
 
 
 def analizar(p, a, b, phi):
-    """Devuelve (datos_partido, filas) o (None, []) si no hay nada útil."""
     mid = p["id"]
     datos = pedir(f"/matches/{mid}")
     if datos is None:
@@ -191,21 +208,23 @@ def analizar(p, a, b, phi):
         "marcador": (estado.get("score") or {}).get("current"),
         "tarjetas_ht": k,
         "minutos_tarjetas": [e.get("time") for e in tarjetas],
-        "lambda_2a_parte": round(lambda_de(k, a, b), 2),
+        "lambda_restante": round(lambda_de(k, a, b), 2),
     }
 
     filas = []
     for linea in sorted(mercado):
         d = mercado[linea]
         resuelto = ya_resuelto(k, linea)
-        p_modelo = prob_over(k, linea, a, b, phi)
-        cuota = d["mejor_cuota"]
-        ev = (p_modelo * cuota - 1) if (cuota and not resuelto) else None
+        ev = None if resuelto else valor_esperado(k, linea, d["mejor_cuota"], a, b, phi)
         filas.append({
-            **{x: info[x] for x in ("match_id", "partido", "liga", "minuto", "tarjetas_ht")},
-            "linea": linea, "prob_modelo": round(p_modelo, 4),
+            **{x: info[x] for x in ("match_id", "partido", "liga", "minuto",
+                                     "estado", "tarjetas_ht")},
+            "linea": linea,
+            "prob_modelo": round(prob_over(k, linea, a, b, phi), 4),
+            "prob_push": round(prob_push(k, linea, a, b, phi), 4),
             "prob_mercado": round(d["prob_over"], 4),
-            "casas": d["casas"], "mejor_cuota": cuota, "mejor_casa": d["mejor_casa"],
+            "casas": d["casas"], "mejor_cuota": d["mejor_cuota"],
+            "mejor_casa": d["mejor_casa"],
             "ev": round(ev, 4) if ev is not None else None,
             "resuelto": resuelto,
             "momento": datetime.now(timezone.utc).isoformat(timespec="seconds"),
@@ -213,7 +232,7 @@ def analizar(p, a, b, phi):
     return info, filas
 
 
-def escribir_informe(bloques, a, b, phi, base):
+def escribir_informe(bloques, esperando, a, b, phi, base):
     ahora = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
     bm, bb, mejora = validar(base)
     lineas = [
@@ -222,18 +241,21 @@ def escribir_informe(bloques, a, b, phi, base):
         f"ajustado sobre {len(base)} partidos.",
         f"Validación fuera de muestra (línea 4.5): Brier {bm:.4f} frente a "
         f"{bb:.4f} de la tasa base ({mejora:+.1f}%).\n",
-        "> El recuento de tarjetas al descanso es **información pública**: las casas",
-        "> también lo ven. Esto no es una ventaja por sí solo. La hipótesis a medir es",
-        "> que sus modelos supongan persistencia cuando la correlación real es negativa.\n",
+        "> El recuento del descanso es **información pública**: las casas también lo",
+        "> ven. La hipótesis a medir es que sus modelos supongan persistencia cuando",
+        "> la correlación real es negativa. Una observación no demuestra nada.\n",
     ]
+    if esperando:
+        lineas.append("**En juego, esperando al descanso:** " +
+                      ", ".join(f"{n} (min {mn})" for n, mn in esperando) + "\n")
     if not bloques:
-        lineas.append("*Ningún partido en la ventana del descanso ahora mismo.*")
+        lineas.append("*Ningún partido en el descanso ahora mismo.*")
     for info, filas in bloques:
         lineas.append(f"\n## {info['partido']}  ({info['liga']})")
-        lineas.append(f"*minuto {info['minuto']} · {info['estado']} · {info['marcador']}*\n")
-        lineas.append(f"**{info['tarjetas_ht']} tarjetas** hasta ahora"
+        lineas.append(f"*{info['estado']} · minuto {info['minuto']} · {info['marcador']}*\n")
+        lineas.append(f"**{info['tarjetas_ht']} tarjetas** al descanso"
                       + (f" (minutos {info['minutos_tarjetas']})" if info["minutos_tarjetas"] else "")
-                      + f". Esperadas de aquí al final: **{info['lambda_2a_parte']}**.\n")
+                      + f". Esperadas en la 2ª parte: **{info['lambda_restante']}**.\n")
         if not filas:
             lineas.append("*Sin mercado de tarjetas en vivo para este partido.*")
             continue
@@ -248,13 +270,13 @@ def escribir_informe(bloques, a, b, phi, base):
                 juicio = "—"
             elif ev > EV_SOSPECHOSO:
                 juicio = f"{ev*100:+.1f}% ⚠ revisar modelo"
-            elif ev > 0.02:
-                juicio = f"{ev*100:+.1f}%"
             else:
                 juicio = f"{ev*100:+.1f}%"
+            empate = f" (push {f['prob_push']*100:.0f}%)" if f["prob_push"] > 0.01 else ""
             lineas.append(
-                f"| {f['linea']} | {f['prob_modelo']*100:.0f}% | {f['prob_mercado']*100:.0f}% | "
-                f"{f['casas']} | {f['mejor_cuota']} ({f['mejor_casa']}) | {juicio} |")
+                f"| {f['linea']}{empate} | {f['prob_modelo']*100:.0f}% | "
+                f"{f['prob_mercado']*100:.0f}% | {f['casas']} | "
+                f"{f['mejor_cuota']} ({f['mejor_casa']}) | {juicio} |")
     with open(RUTA_INFORME, "w", encoding="utf-8") as fh:
         fh.write("\n".join(lineas) + "\n")
     print("\n".join(lineas))
@@ -262,11 +284,11 @@ def escribir_informe(bloques, a, b, phi, base):
 
 def guardar_log(todas):
     if not todas:
+        print("\n[log] sin observaciones que guardar")
         return
     nuevo = pd.DataFrame(todas)
     previo = pd.read_csv(RUTA_LOG) if os.path.exists(RUTA_LOG) else pd.DataFrame()
     final = pd.concat([previo, nuevo], ignore_index=True)
-    # una observación por partido, línea y minuto: evita duplicar si se relanza
     if {"match_id", "linea", "minuto"}.issubset(final.columns):
         final = final.drop_duplicates(subset=["match_id", "linea", "minuto"], keep="last")
     final.to_csv(RUTA_LOG, index=False)
@@ -284,25 +306,35 @@ def main():
     vivos = buscar_en_juego()
     print(f"Partidos en juego: {len(vivos)}")
 
-    candidatos = [p for p in vivos
-                  if MINUTO_MIN <= minuto_de(p) <= min(MINUTO_MAX, MINUTO_MAXIMO)]
     if FILTRO_EQUIPO:
-        candidatos = [p for p in vivos
-                      if FILTRO_EQUIPO in nombre_de(p).lower() and minuto_de(p) <= MINUTO_MAXIMO]
-        print(f"Filtrando por equipo '{FILTRO_EQUIPO}': {len(candidatos)} partido(s)")
+        vigilados = [p for p in vivos
+                     if FILTRO_EQUIPO in nombre_de(p).lower() and minuto_de(p) <= MINUTO_MAXIMO]
+        print(f"Filtrando por equipo '{FILTRO_EQUIPO}': {len(vigilados)}")
     else:
-        print(f"En la ventana del descanso (min {MINUTO_MIN}-{MINUTO_MAX}): {len(candidatos)}")
+        vigilados = [p for p in vivos
+                     if MINUTO_MIN <= minuto_de(p) <= min(MINUTO_MAX, MINUTO_MAXIMO)]
+        print(f"En la ventana de vigilancia (min {MINUTO_MIN}-{MINUTO_MAX}): {len(vigilados)}")
+
+    en_descanso = [p for p in vigilados if es_descanso(p) or FORZAR]
+    esperando = [(nombre_de(p), minuto_de(p)) for p in vigilados if p not in en_descanso]
+    print(f"De esos, EN EL DESCANSO: {len(en_descanso)}"
+          + ("   [FORZADO: números no válidos]" if FORZAR else ""))
+    for n, mn in esperando:
+        print(f"   esperando: {n} (min {mn})")
 
     bloques, todas = [], []
-    for p in candidatos[:8]:
+    for p in en_descanso[:8]:
         info, filas = analizar(p, a, b, phi)
         if info is None:
             continue
         bloques.append((info, filas))
         todas.extend(filas)
 
-    escribir_informe(bloques, a, b, phi, base)
-    guardar_log(todas)
+    escribir_informe(bloques, esperando, a, b, phi, base)
+    if not FORZAR:
+        guardar_log(todas)
+    else:
+        print("\n[log] omitido: ejecución forzada fuera del descanso")
 
 
 if __name__ == "__main__":
