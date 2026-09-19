@@ -33,6 +33,10 @@ HEADERS = {"x-rapidapi-key": API_KEY}   # nunca se imprime
 ESTADOS_QUIETOS = {"Not started", "Scheduled", "Finished", "Postponed",
                    "Cancelled", "Canceled", "Abandoned", "Awarded", "TBD"}
 
+# Prefijos de estado que también significan "ya no se juega" (la API usa
+# variantes como "Finished after penalties", "Finished after extra time").
+PREFIJOS_QUIETOS = ("finished", "cancel", "postpon", "abandon", "await", "not ")
+
 # Ligas donde mirar si la búsqueda automática no da nada. Se pueden añadir por
 # variable de entorno (LIGAS_EXTRA="119924,123456").
 LIGAS_SEMILLA = [119924]  # LaLiga
@@ -89,8 +93,17 @@ def titulo(texto):
 
 
 def esta_en_juego(partido):
+    """Un partido está en juego si su estado no es ninguno de los quietos.
+    Ojo: la API usa variantes como "Finished after penalties", así que no
+    basta con comparar contra una lista cerrada -- hay que mirar el prefijo,
+    o se cuelan partidos ya terminados como si estuvieran en curso."""
     desc = ((partido.get("state") or {}).get("description") or "").strip()
-    return bool(desc) and desc not in ESTADOS_QUIETOS
+    if not desc:
+        return False
+    if desc in ESTADOS_QUIETOS:
+        return False
+    bajo = desc.lower()
+    return not any(bajo.startswith(p) for p in PREFIJOS_QUIETOS)
 
 
 def nombre_de(partido):
