@@ -1,0 +1,33 @@
+name: Monitor en directo
+
+# Solo lectura y a mano. Muestrea el reloj de los partidos en juego varias
+# veces seguidas para distinguir si la API va en vivo de verdad o va con
+# retraso.
+on:
+  workflow_dispatch:
+    inputs:
+      muestras:
+        description: 'Número de muestras del reloj'
+        required: false
+        default: '5'
+      espera:
+        description: 'Segundos entre muestras'
+        required: false
+        default: '75'
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install requests
+      - run: python scripts/monitor_directo.py
+        env:
+          HIGHLIGHTLY_API_KEY: ${{ secrets.HIGHLIGHTLY_API_KEY }}
+          MUESTRAS: ${{ inputs.muestras }}
+          ESPERA: ${{ inputs.espera }}
