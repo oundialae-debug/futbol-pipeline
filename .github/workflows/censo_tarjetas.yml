@@ -1,0 +1,27 @@
+name: Censo de mercados de tarjetas
+
+# Solo lectura y a mano. Cuenta cuántas casas cotizan cada línea de
+# tarjetas, sin suponer cómo se llama el mercado.
+on:
+  workflow_dispatch:
+    inputs:
+      liga_id:
+        description: 'ID de liga a inspeccionar (por defecto LaLiga 119924)'
+        required: false
+        default: '119924'
+
+jobs:
+  censo:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install requests
+      - run: python scripts/censo_tarjetas.py
+        env:
+          HIGHLIGHTLY_API_KEY: ${{ secrets.HIGHLIGHTLY_API_KEY }}
+          LIGA_ID: ${{ inputs.liga_id || '119924' }}
