@@ -1,0 +1,64 @@
+name: Tarjetas al descanso
+
+# Compara el modelo del descanso contra las cuotas en vivo y registra cada
+# observación para poder medir después si le ganamos al mercado.
+#
+# A diferencia de los diagnósticos, este SÍ escribe en el repositorio: deja
+# el informe y va acumulando data/registro_descanso.csv.
+on:
+  workflow_dispatch:
+    inputs:
+      equipo:
+        description: 'Filtrar por equipo (ej: sevilla). Vacío = ventana de minutos'
+        required: false
+        default: ''
+      minuto_min:
+        description: 'Minuto mínimo de la ventana'
+        required: false
+        default: '40'
+      minuto_max:
+        description: 'Minuto máximo de la ventana'
+        required: false
+        default: '55'
+  schedule:
+    # descanso del partido de las 19:00 UTC (21:00 en España)
+    - cron: '42 19 * * *'
+    - cron: '48 19 * * *'
+    - cron: '54 19 * * *'
+
+jobs:
+  descanso:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install requests pandas scipy numpy
+
+      - name: Comparar modelo contra mercado en vivo
+        run: python scripts/descanso_en_vivo.py
+        working-directory: .
+        env:
+          HIGHLIGHTLY_API_KEY: ${{ secrets.HIGHLIGHTLY_API_KEY }}
+          EQUIPO: ${{ inputs.equipo }}
+          MINUTO_MIN: ${{ inputs.minuto_min || '40' }}
+          MINUTO_MAX: ${{ inputs.minuto_max || '55' }}
+          PYTHONPATH: scripts
+
+      - name: Guardar informe y registro
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          for f in descanso_en_vivo.md data/registro_descanso.csv; do
+            [ -f "$f" ] && git add "$f" || echo "  [no existe] $f"
+          done
+          if git diff --staged --quiet; then
+            echo "Sin cambios que guardar"
+            exit 0
+          fi
+          git commit -m "Descanso en vivo ($(date -u +%Y-%m-%dT%H:%M))"
+          git pull --rebase origin main
+          git push
