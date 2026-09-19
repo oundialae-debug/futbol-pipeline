@@ -9,17 +9,18 @@ paso del proyecto. Responde a cinco preguntas:
   2. ¿Cómo se llama el estado de un partido EN JUEGO, y hay endpoint en vivo?
   3. ¿/matches/{id} devuelve los eventos PARCIALES durante el partido?
      (es lo que necesita el modelo de descanso: tarjetas vistas hasta el min. 45)
-  4. ¿Las cuotas son en vivo o solo previas, y qué estructura real tienen?
-     (el parser actual solo encuentra "1 mercado" -- hay que ver el JSON de verdad)
+  4. Estructura de /odds, qué mercados sirve, en qué FORMATO viene la cuota
+     y si hay cuotas en vivo además de las previas.
   5. ¿Viene informado el árbitro ANTES del partido, y con cuánta antelación?
 
-Las preguntas 2, 3 y 4 solo se responden del todo si hay algún partido en
-juego mientras corre. Si no lo hay, el script lo dice y deja constancia de
-qué quedó sin comprobar.
+Las preguntas 2 y 3, y la parte en vivo de la 4, solo se responden si hay
+algún partido en juego mientras corre. Si no lo hay, el script lo dice y
+deja constancia de qué quedó sin comprobar.
 """
 import os
 import time
 import requests
+from collections import Counter
 from datetime import datetime, timedelta, timezone
 
 API_KEY = os.environ["HIGHLIGHTLY_API_KEY"]
@@ -29,6 +30,10 @@ LIGA_ID = 119924
 
 # La clave nunca debe acabar en el log: se filtra cualquier cabecera sospechosa
 CLAVES_PROHIBIDAS = ("key", "token", "auth", "secret")
+
+# Mercados que interesan a la estrategia, para volcar sus valores reales
+MERCADOS_CLAVE = ("Full Time Result", "Total Cards 4.5", "Total Cards 3.5",
+                  "Total Corners 9.5", "Total Goals 2.5")
 
 
 def pedir(path, params=None, espera=1.0):
@@ -75,22 +80,15 @@ def describir(dato, prof=0, max_prof=4, max_claves=30):
         print(f"{sangria}{recortar(dato)}")
 
 
-def recolectar_nombres(dato, encontrados=None):
-    """Recoge TODOS los valores de claves tipo 'name'/'market' a cualquier
-    profundidad. Sirve para saber qué mercados sirve la API de verdad, sin
-    depender de dónde estén anidados."""
-    if encontrados is None:
-        encontrados = []
-    if isinstance(dato, dict):
-        for clave, valor in dato.items():
-            if clave.lower() in ("name", "market", "markettype", "label") and isinstance(valor, str):
-                encontrados.append(valor)
-            else:
-                recolectar_nombres(valor, encontrados)
-    elif isinstance(dato, list):
-        for elemento in dato:
-            recolectar_nombres(elemento, encontrados)
-    return encontrados
+def aplanar_cuotas(datos):
+    """La respuesta real es [{matchId, odds:[{type, market, values, bookmakerName}]}].
+    Devuelve la lista plana de entradas de cuota."""
+    bloques = datos.get("data", []) if isinstance(datos, dict) else (datos or [])
+    planas = []
+    for bloque in bloques:
+        if isinstance(bloque, dict):
+            planas.extend(bloque.get("odds", []) or [])
+    return planas
 
 
 def titulo(texto):
@@ -117,7 +115,6 @@ def limites_del_plan():
             print(f"    {k}: {v}")
     else:
         print("  La API no devuelve cabeceras de límite reconocibles.")
-        print("  (el plan habrá que confirmarlo en el panel de Highlightly)")
 
 
 # ============ 2. ESTADOS Y PARTIDOS EN VIVO ============
@@ -189,7 +186,7 @@ def eventos_parciales(en_vivo):
     tarjetas = [e for e in eventos if e.get("type") in ("Yellow Card", "Red Card")]
     print(f"  Eventos devueltos: {len(eventos)}  |  de ellos tarjetas: {len(tarjetas)}")
     if tarjetas:
-        print("  VEREDICTO: SÍ hay eventos parciales en directo -> el modelo de descanso es viable.")
+        print("  VEREDICTO: SÍ hay eventos parciales en directo -> modelo de descanso viable.")
         print("  Minutos de las tarjetas vistas hasta ahora:",
               [e.get("time") for e in tarjetas])
     else:
@@ -200,63 +197,78 @@ def eventos_parciales(en_vivo):
     describir(m.get("state"))
 
 
-# ============ 4. CUOTAS: ¿EN VIVO O SOLO PREVIAS? ============
+# ============ 4. CUOTAS ============
 def cuotas(en_vivo, proximos):
-    titulo("4. CUOTAS: ESTRUCTURA REAL Y SI SE MUEVEN EN DIRECTO")
+    titulo("4. CUOTAS: MERCADOS, FORMATO DE LA CUOTA Y TIPOS DISPONIBLES")
     objetivo = proximos[0] if proximos else None
-    if objetivo:
+    if not objetivo:
+        print("  No hay partidos próximos para inspeccionar cuotas.")
+    else:
         print(f"  Partido próximo: {objetivo['homeTeam']['name']} vs {objetivo['awayTeam']['name']}")
         _, datos = pedir("/odds", {"matchId": objetivo["id"]})
         if datos is None:
             print("  /odds no devolvió JSON.")
         else:
-            bloque = datos.get("data", datos) if isinstance(datos, dict) else datos
-            print(f"  Tipo devuelto: {type(bloque).__name__}, longitud {len(bloque) if hasattr(bloque,'__len__') else '?'}")
-            print("  ESTRUCTURA REAL (esto es lo que hay que parsear):")
-            # profundidad extra: las cuotas suelen ir casa -> mercados -> valores
-            describir(bloque, max_prof=7)
-            print()
-            nombres = sorted(set(recolectar_nombres(bloque)))
-            print(f"  MERCADOS / ETIQUETAS ENCONTRADOS ({len(nombres)}):")
-            for n in nombres[:60]:
-                print(f"    - {n}")
-            print()
-            interesantes = [n for n in nombres
-                            if any(c in n.lower() for c in ("card", "tarjet", "corner", "winner", "1x2", "total"))]
-            if interesantes:
-                print("  Relevantes para nuestra estrategia:", ", ".join(interesantes))
+            planas = aplanar_cuotas(datos)
+            print(f"  Entradas de cuota tras aplanar: {len(planas)}")
+
+            tipos = Counter(c.get("type") for c in planas)
+            print(f"  TIPOS presentes: {dict(tipos)}")
+            if len(tipos) > 1 or "prematch" not in tipos:
+                print("  -> hay más de un tipo: comprobar si uno corresponde a cuotas en vivo.")
             else:
-                print("  AVISO: no aparece ningún mercado de tarjetas ni córners.")
-                print("  Si se confirma en varios partidos, esos mercados NO se pueden")
-                print("  valorar automáticamente con esta API: habría que mirar la cuota")
-                print("  a mano o buscar otra fuente de cuotas.")
-            print()
-            print("  El código actual busca m.get('name') con 'Match Winner'/'1X2'/'Total Cards'.")
-            print("  Compara ese supuesto con la estructura y los nombres reales de arriba.")
-    else:
-        print("  No hay partidos próximos para inspeccionar cuotas previas.")
+                print("  -> solo 'prematch' en un partido que aún no ha empezado (esperable).")
+
+            casas = Counter(c.get("bookmakerName") for c in planas)
+            print(f"\n  CASAS DE APUESTAS ({len(casas)}): {', '.join(list(casas)[:12])}")
+            print("  (conviene filtrar a las casas en las que realmente puedas apostar)")
+
+            print("\n  VALORES REALES DE LOS MERCADOS CLAVE")
+            print("  (sirve para saber si la cuota es DECIMAL (1.85, 2.10) o AMERICANA (-110, +150))")
+            for patron in MERCADOS_CLAVE:
+                ejemplos = [c for c in planas
+                            if (c.get("market") or "").strip().lower() == patron.lower()]
+                print(f"\n    {patron}: {len(ejemplos)} entradas")
+                for c in ejemplos[:5]:
+                    vals = ", ".join(f"{v.get('value')}={v.get('odd')}"
+                                     for v in (c.get("values") or []))
+                    print(f"      [{c.get('type')}] {str(c.get('bookmakerName'))[:22]:22s} {vals}")
+
+            # Suma de probabilidades implícitas: confirma el formato de forma objetiva.
+            # En decimal, sum(1/cuota) de un mercado completo debe dar ~1.02-1.10 (el margen).
+            print("\n  PRUEBA OBJETIVA DEL FORMATO (suma de 1/cuota en Full Time Result):")
+            print("  Si sale ~1.0-1.1 son DECIMALES. Si sale muy lejos, es otro formato.")
+            for c in [x for x in planas
+                      if (x.get("market") or "").strip().lower() == "full time result"][:5]:
+                try:
+                    cuotas_num = [float(v.get("odd")) for v in (c.get("values") or [])]
+                    if all(v > 0 for v in cuotas_num):
+                        suma = sum(1 / v for v in cuotas_num)
+                        print(f"    {str(c.get('bookmakerName'))[:22]:22s} "
+                              f"cuotas={cuotas_num}  suma 1/c = {suma:.4f}")
+                except (TypeError, ValueError):
+                    continue
 
     print("\n  --- ¿Las cuotas cambian en directo? ---")
     if not en_vivo:
         print("  SIN RESPUESTA: hace falta un partido en juego.")
-        print("  Relanza el workflow durante un partido para contestar esto.")
         return
     mid = en_vivo[0]["id"]
     _, primera = pedir("/odds", {"matchId": mid})
     if primera is None:
-        print("  El endpoint /odds no devuelve nada para un partido en juego")
+        print("  /odds no devuelve nada para un partido en juego")
         print("  -> indicio fuerte de que las cuotas son SOLO PREVIAS.")
         return
-    print("  Hay cuotas para el partido en juego. Repitiendo la llamada en 60s")
-    print("  para ver si los valores se mueven...")
+    tipos_vivo = Counter(c.get("type") for c in aplanar_cuotas(primera))
+    print(f"  Tipos durante el partido: {dict(tipos_vivo)}")
+    print("  Repitiendo la llamada en 60s para ver si los valores se mueven...")
     time.sleep(60)
     _, segunda = pedir("/odds", {"matchId": mid})
     if str(primera) == str(segunda):
-        print("  IDÉNTICAS tras 60s -> probablemente son cuotas previas congeladas,")
-        print("  no un feed en vivo. El valor en directo habría que mirarlo a mano.")
+        print("  IDÉNTICAS tras 60s -> cuotas previas congeladas, no feed en vivo.")
     else:
         print("  CAMBIARON tras 60s -> hay feed de cuotas EN VIVO.")
-        print("  Eso permite calcular valor esperado en directo de forma automática.")
+        print("  Eso permite calcular valor esperado en directo automáticamente.")
 
 
 # ============ 5. ÁRBITRO ANTES DEL PARTIDO ============
@@ -269,7 +281,9 @@ def arbitro_previo(proximos):
     print("  (el árbitro explica el 10.8% de la varianza de tarjetas; hoy no se usa)")
     print()
     encontrados = 0
-    for p in proximos[:6]:
+    # ordenados por cercanía: si aparece, será en los más próximos al inicio
+    ordenados = sorted(proximos, key=lambda p: p["date"])
+    for p in ordenados[:6]:
         _, datos = pedir(f"/matches/{p['id']}")
         if datos is None:
             continue
@@ -285,11 +299,12 @@ def arbitro_previo(proximos):
               f"{p['awayTeam']['name'][:18]:18s}  {estado}")
     print()
     if encontrados:
-        print(f"  VEREDICTO: el árbitro SÍ viene antes del partido ({encontrados} de {min(len(proximos),6)}).")
-        print("  Se puede pasar a predecir_tarjetas() en vez del None actual.")
+        print(f"  VEREDICTO: el árbitro SÍ llega antes del partido ({encontrados} de "
+              f"{min(len(ordenados), 6)}). Se puede pasar a predecir_tarjetas().")
     else:
         print("  VEREDICTO: no llega con antelación en esta muestra.")
-        print("  Habría que aplicarlo solo en el refinado tardío, o buscar otra fuente.")
+        print("  Relanza cerca del inicio (T-2h) para ver si aparece entonces;")
+        print("  si tampoco, hay que sacarlo de otra fuente (designaciones RFEF).")
 
 
 def main():
