@@ -1,0 +1,27 @@
+name: Contraste realidad vs API
+
+# Solo lectura y a mano. Se le pasa una lista de partidos que SABEMOS que
+# se están jugando y comprueba qué dice la API de cada uno.
+on:
+  workflow_dispatch:
+    inputs:
+      partidos:
+        description: 'local|visitante|minuto|competicion ; separados por ";" (vacío = lista por defecto)'
+        required: false
+        default: ''
+
+jobs:
+  contraste:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install requests
+      - run: python scripts/contraste_directo.py
+        env:
+          HIGHLIGHTLY_API_KEY: ${{ secrets.HIGHLIGHTLY_API_KEY }}
+          PARTIDOS_REALES: ${{ inputs.partidos }}
