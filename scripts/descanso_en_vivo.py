@@ -106,10 +106,24 @@ def en_juego(p):
     return bool(desc) and not any(desc.startswith(q) for q in QUIETOS)
 
 
+# Cómo puede llamar la API al intermedio. La lista es ancha a propósito: si
+# el nombre no encaja, el partido se cae del único momento en que el modelo
+# vale, y no hay segunda oportunidad hasta la semana siguiente.
+DESCANSO_EXACTO = {"ht", "break", "interval", "half", "halftime", "half time"}
+DESCANSO_CONTIENE = ("half time", "halftime", "half-time", "descanso",
+                     "entretiempo", "intervalo", "mi-temps")
+
+
 def es_descanso(p):
     """El modelo solo es válido aquí: partido detenido en el intermedio."""
-    desc = estado_de(p).lower().replace("-", " ")
-    return "half time" in desc or "halftime" in desc or "descanso" in desc
+    desc = estado_de(p).lower().replace("-", " ").strip()
+    # El descanso de la prórroga NO sirve: quedan 15 minutos, no 45, y
+    # lambda(k) está ajustada sobre segundas partes completas.
+    if "extra" in desc or "prórroga" in desc or "prorroga" in desc:
+        return False
+    if desc in DESCANSO_EXACTO:
+        return True
+    return any(x in desc for x in DESCANSO_CONTIENE)
 
 
 def nombre_de(p):
@@ -310,6 +324,15 @@ def main():
 
     vivos = buscar_en_juego()
     print(f"Partidos en juego: {len(vivos)}")
+
+    # Qué nombres usa de verdad la API para los estados. Si algún día el
+    # descanso se llama de una forma que es_descanso() no reconoce, aquí se
+    # ve en vez de desaparecer en silencio.
+    estados = {}
+    for p in vivos:
+        estados[estado_de(p)] = estados.get(estado_de(p), 0) + 1
+    print("Estados vistos:", ", ".join(f"{e!r} x{n}" for e, n in
+                                        sorted(estados.items(), key=lambda x: -x[1])))
 
     if FILTRO_EQUIPO:
         vigilados = [p for p in vivos
