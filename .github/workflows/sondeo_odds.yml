@@ -1,0 +1,27 @@
+name: Sondeo de /odds
+
+# Solo lectura y a mano. Comprueba qué parámetros admite de verdad el
+# endpoint de cuotas: oddsType, filtro por casa, paginación y por liga.
+on:
+  workflow_dispatch:
+    inputs:
+      liga_id:
+        description: 'ID de liga (por defecto LaLiga 119924)'
+        required: false
+        default: '119924'
+
+jobs:
+  sondeo:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install requests
+      - run: python scripts/sondeo_odds.py
+        env:
+          HIGHLIGHTLY_API_KEY: ${{ secrets.HIGHLIGHTLY_API_KEY }}
+          LIGA_ID: ${{ inputs.liga_id || '119924' }}
