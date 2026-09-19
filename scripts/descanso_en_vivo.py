@@ -126,6 +126,23 @@ def es_descanso(p):
     return any(x in desc for x in DESCANSO_CONTIENE)
 
 
+MINUTO_TOLERADO = 47
+
+
+def momento_valido(estado):
+    """Entre el escaneo de partidos y la llamada de detalle pasan segundos, y
+    a veces la segunda parte ya ha arrancado. Eso sigue valiendo mientras el
+    reloj no se haya ido: lambda(k) supone 45 minutos por delante, así que el
+    minuto 45-47 es el mismo momento. El minuto 60 ya no."""
+    if es_descanso({"state": estado}):
+        return True
+    try:
+        reloj = int(estado.get("clock") or 0)
+    except (TypeError, ValueError):
+        return False
+    return 45 <= reloj <= MINUTO_TOLERADO
+
+
 def nombre_de(p):
     try:
         return f"{p['homeTeam']['name']} vs {p['awayTeam']['name']}"
@@ -208,6 +225,10 @@ def analizar(p, a, b, phi):
         return None, []
     m = datos[0] if isinstance(datos, list) else datos
     estado = m.get("state") or {}
+    if not FORZAR and not momento_valido(estado):
+        print(f"   descartado (ya no es el descanso): {nombre_de(p)} "
+              f"-- {estado.get('description')!r} min {estado.get('clock')}")
+        return None, []
     eventos = m.get("events") or []
     tarjetas = [e for e in eventos if e.get("type") in ("Yellow Card", "Red Card")]
     k = len(tarjetas)
