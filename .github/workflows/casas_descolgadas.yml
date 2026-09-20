@@ -1,0 +1,48 @@
+name: Casas descolgadas
+
+# Mide qué casas se salen del consenso, para saber qué cuentas merece la pena
+# abrir. No hacen falta 42 cuentas para usar 42 casas.
+on:
+  workflow_dispatch:
+    inputs:
+      max_partidos:
+        description: 'Partidos a muestrear'
+        required: false
+        default: '40'
+  schedule:
+    - cron: '45 6 * * 1'
+
+jobs:
+  descolgadas:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+      - run: pip install requests pandas numpy
+
+      - name: Medir
+        run: python scripts/casas_descolgadas.py
+        env:
+          HIGHLIGHTLY_API_KEY: ${{ secrets.HIGHLIGHTLY_API_KEY }}
+          MAX_PARTIDOS: ${{ inputs.max_partidos || '40' }}
+          PYTHONPATH: scripts
+
+      - name: Guardar
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          for f in casas_descolgadas.md data/casas_descolgadas.csv; do
+            [ -f "$f" ] && git add "$f" || echo "  [no existe] $f"
+          done
+          if git diff --staged --quiet; then
+            echo "Sin cambios que guardar"
+            exit 0
+          fi
+          git commit -m "Casas descolgadas ($(date -u +%Y-%m-%dT%H:%M))"
+          git pull --rebase origin main
+          git push
