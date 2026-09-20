@@ -51,6 +51,14 @@ las comprobaciones concretas que los habrían pillado.
 
 ## Conclusiones
 
+- **Si al crecer la muestra el número se mueve hacia cero, era falso.** Un
+  efecto real se queda donde está y solo estrecha su intervalo. Con 89
+  partidos, mezclar mercado y modelo daba peso óptimo 0,43 y una mejora del
+  1,5% de Brier, con curva suave y mínimo marcado. Con 168 partidos: peso
+  0,10, mejora 0,01%, y el cero aparece en el 35% de los remuestreos en vez
+  del 9%. Lo que salvó de apostar sobre eso fue haber dado el intervalo del
+  bootstrap junto al punto central, y haberlo llamado pista y no hallazgo.
+
 - **Antes de montar un modelo para batir un precio, mide si ese precio está
   mal.** Propuse los córners porque "en un mercado no vigilado el precio es
   crudo y puede estar equivocado más de un 6%". Comprobable en cinco minutos

@@ -50,6 +50,57 @@ import modelo_xgboost as M
 import evaluar_contra_mercado as E
 
 
+def cargar_cuotas_1x2():
+    """
+    Las cuotas de 1X2 de las DOS fuentes, en un solo sitio.
+
+    `backtest_valor.csv` las guarda ya clasificadas (familia/lado en
+    minusculas) y SE SOBRESCRIBE en cada pasada. `cuotas_cosechadas.csv` las
+    guarda crudas como vienen de la API ("Home"/"Draw"/"Away") y ACUMULA.
+
+    Hay que leer las dos y normalizar el lado, porque si no, la fuente que
+    crece se quedaria fuera sin dar ningun error. Los duplicados se quitan por
+    (partido, casa, lado): el mismo precio en las dos fuentes es un precio, no
+    dos opiniones.
+    """
+    trozos = []
+    if os.path.exists(E.RUTA_CUOTAS):
+        d = pd.read_csv(E.RUTA_CUOTAS)
+        d = d[d.familia == "Full Time Result"][["match_id", "casa", "lado",
+                                                "cuota"]]
+        trozos.append(d)
+    ruta_cosecha = "data/cuotas_cosechadas.csv"
+    if os.path.exists(ruta_cosecha):
+        c = pd.read_csv(ruta_cosecha)
+        c = c[c.mercado == "Full Time Result"][["match_id", "casa", "lado",
+                                                "cuota"]]
+        trozos.append(c)
+    if not trozos:
+        return None
+    d = pd.concat(trozos, ignore_index=True)
+    d["lado"] = d["lado"].astype(str).str.strip().str.lower()
+    d = d[d.lado.isin(E.LADOS)]
+    return d.drop_duplicates(["match_id", "casa", "lado"])
+
+
+def probabilidades_de_mercado():
+    """Probabilidad desmarginada por partido: mediana entre casas."""
+    d = cargar_cuotas_1x2()
+    if d is None or d.empty:
+        return None
+    filas = []
+    for (mid, casa), g in d.groupby(["match_id", "casa"]):
+        p = E.probabilidad_mercado(dict(zip(g.lado, g.cuota)))
+        if p is not None:
+            filas.append({"match_id": mid,
+                          **{f"p_{l}": p[i] for i, l in enumerate(E.LADOS)}})
+    if not filas:
+        return None
+    m = (pd.DataFrame(filas)
+         .groupby("match_id")[[f"p_{l}" for l in E.LADOS]].median())
+    return m.div(m.sum(axis=1), axis=0)
+
+
 def brier(p, y):
     uno = np.zeros_like(p); uno[np.arange(len(y)), y] = 1
     return ((p - uno) ** 2).sum(axis=1)
@@ -74,18 +125,10 @@ def main():
     fecha_corte = pd.to_datetime(ent.fecha.max())
     m = M.entrenar(ent[cols].values, ent["resultado"].values.astype(int), 3)
 
-    d = pd.read_csv(E.RUTA_CUOTAS)
-    ftr = d[d.familia == "Full Time Result"]
-    filas = []
-    for (mid, casa), g in ftr.groupby(["match_id", "casa"]):
-        p = E.probabilidad_mercado(dict(zip(g.lado, g.cuota)))
-        if p is not None:
-            filas.append({"match_id": mid,
-                          **{f"p_{l}": p[i] for i, l in enumerate(E.LADOS)}})
-    mercado = (pd.DataFrame(filas)
-               .groupby("match_id")[[f"p_{l}" for l in E.LADOS]].median())
-    mercado = mercado.div(mercado.sum(axis=1), axis=0)
-
+    mercado = probabilidades_de_mercado()
+    if mercado is None or mercado.empty:
+        print("Sin cuotas de 1X2 utilizables.")
+        return
     val = val[val.match_id.isin(mercado.index)]
     val = val[pd.to_datetime(val.fecha) > fecha_corte]
     if len(val) < 20:
