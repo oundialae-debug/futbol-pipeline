@@ -32,6 +32,7 @@ Esto no lo damos por cierto: lo registramos partido a partido para poder
 medirlo luego. Por eso el script compara y anota, pero no recomienda apostar.
 """
 import os
+import json
 import time
 import requests
 import pandas as pd
@@ -71,9 +72,45 @@ FORZAR = os.environ.get("FORZAR", "").lower() in ("1", "true", "si", "sí")
 # tarde entera limitada se habría visto como una tarde sin partidos. Ahora se
 # cuenta y se dice.
 FALLOS = {}
+LLAMADAS = [0]
+
+RUTA_CONSUMO = "data/consumo_api.json"
+# El plan da 7.500 llamadas al día. Se reserva un margen para el resto de
+# workflows (el calendario semanal, el cierre, el pipeline de los martes) y
+# para que un día cargado no se coma el tope antes de la franja europea.
+TOPE_DIARIO = int(os.environ.get("TOPE_DIARIO", "6000"))
+
+
+def consumo_de_hoy():
+    """Lo que llevamos gastado hoy, medido, no estimado.
+
+    Mis cuentas a ojo ya fallaron una vez: el horario ampliado habría gastado
+    un 95% del tope un sábado. Un contador real es la diferencia entre saberlo
+    y creerlo."""
+    hoy = datetime.now(timezone.utc).date().isoformat()
+    if not os.path.exists(RUTA_CONSUMO):
+        return {"fecha": hoy, "llamadas": 0, "pasadas": 0}
+    try:
+        d = json.load(open(RUTA_CONSUMO, encoding="utf-8"))
+    except Exception:
+        return {"fecha": hoy, "llamadas": 0, "pasadas": 0}
+    if d.get("fecha") != hoy:          # día nuevo, cuenta a cero
+        return {"fecha": hoy, "llamadas": 0, "pasadas": 0}
+    return d
+
+
+def apuntar_consumo(previo):
+    previo["llamadas"] = previo.get("llamadas", 0) + LLAMADAS[0]
+    previo["pasadas"] = previo.get("pasadas", 0) + 1
+    os.makedirs("data", exist_ok=True)
+    json.dump(previo, open(RUTA_CONSUMO, "w", encoding="utf-8"), indent=2)
+    print(f"[api] {LLAMADAS[0]} llamadas en esta pasada; "
+          f"{previo['llamadas']} hoy en {previo['pasadas']} pasadas "
+          f"({previo['llamadas']/TOPE_DIARIO*100:.0f}% del tope de {TOPE_DIARIO})")
 
 
 def pedir(path, params=None, espera=0.3):
+    LLAMADAS[0] += 1
     try:
         r = requests.get(f"{BASE_URL}{path}", headers=HEADERS, params=params, timeout=25)
     except Exception as e:
@@ -177,38 +214,65 @@ def nombre_de(p):
 
 RUTA_AGENDA = "data/agenda_hoy.csv"
 
+# Margen alrededor de la ventana estimada del descanso. La estimación es
+# saque+45 a saque+62; con media hora por cada lado se absorben el descuento
+# largo, un retraso en el saque y el desfase del cron.
+MARGEN_MINUTOS = 30
+
 
 def partidos_de_la_agenda():
-    """Los partidos de hoy de las seis ligas, pedidos por su id.
+    """Los partidos de hoy que PODRÍAN estar en el descanso ahora mismo.
 
-    Barrer /matches por fecha cuesta hasta dieciocho llamadas por pasada para
-    encontrar los cuatro partidos que importan. Con la agenda del día se va
-    directo: una llamada por partido. A razón de una pasada cada quince
-    minutos, la diferencia deja de ser cosmética.
+    La primera versión preguntaba por los 25-40 partidos del día en cada
+    pasada, también a las tres de la mañana con el saque a las dos de la
+    tarde. A 76 pasadas diarias eso eran unas 2.500 llamadas al día tiradas,
+    de un tope de 7.500.
 
-    Devuelve None si no hay agenda utilizable, y entonces se barre como antes.
-    No se da por hecho que exista: si el calendario no se ha generado, o hoy
-    no juega ninguna de las seis, hay que seguir mirando -- los descansos de
-    otras ligas también suman muestra."""
+    La agenda ya trae la hora de cada partido, así que el filtro se hace en
+    local, que no cuesta nada, y solo se pregunta por los que caen dentro de
+    la ventana. Lo normal es que no sea ninguno.
+
+    Devuelve None si no hay agenda utilizable -- entonces se barre como antes.
+    """
     if not os.path.exists(RUTA_AGENDA):
         return None
     try:
         agenda = pd.read_csv(RUTA_AGENDA)
     except Exception:
         return None
-    ids = [int(x) for x in agenda.get("match_id", pd.Series(dtype=float)).dropna()]
-    if not ids:
+    if agenda.empty or "match_id" not in agenda.columns:
         return None
 
+    ahora = datetime.now(timezone.utc)
+    minutos_ahora = ahora.hour * 60 + ahora.minute
+
+    candidatos = []
+    for _, f in agenda.iterrows():
+        try:
+            h, m = str(f["descanso_desde"]).split(":")
+            desde = int(h) * 60 + int(m) - MARGEN_MINUTOS
+            h, m = str(f["descanso_hasta"]).split(":")
+            hasta = int(h) * 60 + int(m) + MARGEN_MINUTOS
+        except (ValueError, KeyError):
+            continue
+        if desde <= minutos_ahora <= hasta:
+            candidatos.append(int(f["match_id"]))
+
+    if not candidatos:
+        print(f"Agenda: {len(agenda)} partidos hoy, ninguno en ventana de "
+              f"descanso ahora ({ahora.strftime('%H:%M')} UTC)")
+        return []
+
     encontrados = []
-    for mid in ids[:40]:
+    for mid in candidatos[:15]:
         datos = pedir(f"/matches/{mid}", espera=0.2)
         if not datos:
             continue
         m = datos[0] if isinstance(datos, list) else datos
         if en_juego(m):
             encontrados.append(m)
-    print(f"Agenda del día: {len(ids)} partidos previstos, {len(encontrados)} en juego")
+    print(f"Agenda: {len(candidatos)} partidos en ventana, "
+          f"{len(encontrados)} en juego")
     return encontrados
 
 
@@ -390,6 +454,11 @@ def escribir_informe(bloques, esperando, a, b, phi, base):
     # de la API es el riesgo real. Un 429 no rompe nada: simplemente no hay
     # observaciones, que es indistinguible de "no había partidos". En el log
     # se ve, pero los logs no los lee nadie -- así que sale en el informe.
+    gasto = consumo_de_hoy()
+    if gasto.get("llamadas"):
+        lineas.append(f"*Consumo de API hoy: {gasto['llamadas']} llamadas en "
+                      f"{gasto['pasadas']} pasadas, sobre un tope de "
+                      f"{TOPE_DIARIO} (plan: 7.500/día).*\n")
     if FALLOS:
         lineas.append("> ⚠ **Llamadas fallidas:** "
                       + ", ".join(f"{k} x{v}" for k, v in FALLOS.items())
@@ -454,17 +523,25 @@ def main():
     print("TARJETAS AL DESCANSO -- modelo contra mercado en vivo")
     print("Momento:", datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC"))
 
+    consumo = consumo_de_hoy()
+    if consumo["llamadas"] >= TOPE_DIARIO:
+        print(f"PARADA -- ya van {consumo['llamadas']} llamadas hoy, por encima "
+              f"del tope de {TOPE_DIARIO}. No se pide nada más hasta mañana.")
+        print("Si esto salta a menudo, hay que espaciar el cron: el plan da "
+              "7.500 al día y quedarse sin ellas a media tarde es perderse la "
+              "franja europea entera, que es la que más rinde.")
+        return
+
     base = preparar_datos()
     a, b, phi = ajustar(base)
     print(f"Modelo sobre {len(base)} partidos: lambda(k)=max(0.8, {a:.3f}{b:+.3f}*k), phi={phi:.2f}")
 
-    # Primero la agenda (barata). Si no da nada -- no hay calendario, hoy no
-    # juega ninguna de las seis, o ninguno está en juego todavía -- se barre
-    # como siempre: los descansos de otras ligas también acumulan muestra.
+    # La agenda primero: filtra en local y solo pregunta por los partidos que
+    # podrían estar en el descanso. Si no da nada se barre, porque la mitad de
+    # las observaciones que tenemos vienen de ligas que no están en el
+    # calendario -- MLS y Serie A de Brasil, sobre todo.
     vivos = partidos_de_la_agenda()
     if not vivos:
-        if vivos is not None:
-            print("La agenda no da partidos en juego ahora mismo; barriendo igual")
         vivos = buscar_en_juego()
     print(f"Partidos en juego: {len(vivos)}")
 
@@ -509,6 +586,7 @@ def main():
 
     escribir_informe(bloques, esperando, a, b, phi, base)
     informar_de_fallos()
+    apuntar_consumo(consumo)
     if not FORZAR:
         guardar_log(todas)
     else:

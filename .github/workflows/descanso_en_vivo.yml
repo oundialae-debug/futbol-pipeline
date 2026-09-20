@@ -69,7 +69,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          for f in descanso_en_vivo.md data/registro_descanso.csv; do
+          for f in descanso_en_vivo.md data/registro_descanso.csv data/consumo_api.json; do
             [ -f "$f" ] && git add "$f" || echo "  [no existe] $f"
           done
           if git diff --staged --quiet; then
