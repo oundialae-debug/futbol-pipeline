@@ -1,0 +1,24 @@
+match_id,liga,liga_id,fecha,saque_utc,local,visitante,descanso_desde,descanso_hasta
+1270022121,Serie A,61205,2026-09-20,00:00,São Paulo FC,Internacional,00:45,01:02
+1321404650,Ligue 1,52695,2026-09-20,13:00,Auxerre,Stade Brestois 29,13:45,14:02
+1340469603,Bundesliga,67162,2026-09-20,13:30,Bayer Leverkusen,RB Leipzig,14:15,14:32
+1395049339,Segunda División,229703,2026-09-20,14:00,Tacuarembó,Sportivo Huracán,14:45,15:02
+1270019568,Serie A,61205,2026-09-20,14:00,Gremio,Palmeiras,14:45,15:02
+1321408054,Ligue 1,52695,2026-09-20,15:15,Nice,Lille,16:00,16:17
+1340473007,Bundesliga,67162,2026-09-20,15:30,FC Schalke 04,SV Elversberg,16:15,16:32
+1395050190,Segunda División,229703,2026-09-20,17:00,Cerrito,River Plate,17:45,18:02
+1340474709,Bundesliga,67162,2026-09-20,17:30,SC Paderborn 07,1899 Hoffenheim,18:15,18:32
+1321410607,Ligue 1,52695,2026-09-20,18:45,Marseille,Paris Saint Germain,19:30,19:47
+1270023823,Serie A,61205,2026-09-20,19:00,Vitoria,Cruzeiro,19:45,20:02
+1270017866,Serie A,61205,2026-09-20,19:00,Corinthians,Fluminense,19:45,20:02
+1395051041,Segunda División,229703,2026-09-20,20:00,Rentistas Montevideo,Oriental,20:45,21:02
+1395544621,Premier League,274806,2026-09-20,20:30,Chapelton,Molynes United,21:15,21:32
+1395543770,Premier League,274806,2026-09-20,20:30,Cavalier SC,Portmore United,21:15,21:32
+1395545472,Premier League,274806,2026-09-20,20:30,Montego Bay United,Tru-juice,21:15,21:32
+1395547174,Premier League,274806,2026-09-20,20:30,Treasure Beach,Tivoli Gardens,21:15,21:32
+1395546323,Premier League,274806,2026-09-20,20:30,Mount Pleasant Academy,Racing United,21:15,21:32
+1362113937,La Liga,315654,2026-09-20,21:00,Alianza,Municipal Limeño,21:45,22:02
+1362114788,La Liga,315654,2026-09-20,21:00,Platense,Águila,21:45,22:02
+1270018717,Serie A,61205,2026-09-20,21:30,Flamengo,RB Bragantino,22:15,22:32
+1270016164,Serie A,61205,2026-09-20,22:30,Athletico Paranaense,Bahia,23:15,23:32
+1362115639,La Liga,315654,2026-09-20,23:30,Firpo,Atletico Balboa,00:15,00:32
