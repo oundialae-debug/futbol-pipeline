@@ -167,12 +167,54 @@ def main():
             lineas.append(f"| {nombre} | {cuantas} | {total:+.2f} u |")
         lineas.append("")
 
+    # Las faltas del primer tiempo todavía no entran en el modelo, pero se
+    # apuntan desde que el sondeo confirmó que se pueden leer en el descanso.
+    # Aquí se vigila si la relación aparece, y sobre todo CUÁNTA muestra hay:
+    # una correlación sobre diez partidos no significa nada, y sin decir el
+    # número de partidos una correlación parece siempre más sólida de lo que es.
+    por_partido = cerrados.groupby("match_id").first().reset_index()
+    if "faltas_ht" in por_partido.columns:
+        con_faltas = por_partido[por_partido["faltas_ht"].notna()].copy()
+    else:
+        con_faltas = por_partido.iloc[0:0]
+
+    lineas.append("## Las faltas del primer tiempo\n")
+    if len(con_faltas) < 3:
+        lineas.append(
+            f"Solo {len(con_faltas)} partido(s) con faltas apuntadas. Se "
+            "empezaron a registrar cuando el sondeo confirmó que /statistics "
+            "da los acumulados al minuto en partidos en juego; hay que "
+            "acumular descansos antes de poder ajustar nada.\n")
+    else:
+        con_faltas["segunda"] = con_faltas["total_final"] - con_faltas["tarjetas_ht"]
+        r_faltas = con_faltas["faltas_ht"].corr(con_faltas["segunda"])
+        r_tarjetas = con_faltas["tarjetas_ht"].corr(con_faltas["segunda"])
+        lineas += [
+            f"Sobre **{len(con_faltas)} partidos** con faltas apuntadas:\n",
+            f"- Faltas al descanso contra tarjetas de la 2ª parte: **{r_faltas:+.3f}**",
+            f"- Tarjetas al descanso contra tarjetas de la 2ª parte: **{r_tarjetas:+.3f}** "
+            "(lo que usa el modelo hoy)\n",
+        ]
+        if len(con_faltas) < 60:
+            lineas.append(
+                f"> Con {len(con_faltas)} partidos una correlación se mueve "
+                "sola de un fin de semana a otro. Hacen falta del orden de 60 "
+                "para que el coeficiente valga algo, y más para fiarse del "
+                "signo si sale pequeño.\n")
+
     lineas.append("## Partido a partido\n")
-    lineas.append("| Partido | Tarjetas al descanso | Total final | 2ª parte |")
-    lineas.append("|---|---|---|---|")
+    hay_faltas = "faltas_ht" in cerrados.columns
+    lineas.append("| Partido | Tarjetas al descanso |"
+                  + (" Faltas al descanso |" if hay_faltas else "")
+                  + " Total final | 2ª parte |")
+    lineas.append("|---|---|---|---|" + ("---|" if hay_faltas else ""))
     for mid, grupo in cerrados.groupby("match_id"):
         f = grupo.iloc[0]
-        lineas.append(f"| {f['partido']} | {int(f['tarjetas_ht'])} | "
+        faltas = ""
+        if hay_faltas:
+            v = f.get("faltas_ht")
+            faltas = f" {int(v)} |" if pd.notna(v) else " — |"
+        lineas.append(f"| {f['partido']} | {int(f['tarjetas_ht'])} |{faltas} "
                       f"{int(f['total_final'])} | "
                       f"{int(f['total_final']) - int(f['tarjetas_ht'])} |")
 

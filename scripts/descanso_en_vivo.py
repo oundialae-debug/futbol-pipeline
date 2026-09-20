@@ -50,6 +50,10 @@ RUTA_INFORME = "descanso_en_vivo.md"
 QUIETOS = ("finished", "cancel", "postpon", "abandon", "await", "not ",
            "scheduled", "tbd", "to be")
 MINUTO_MAXIMO = 87
+# Cuántos partidos se analizan por pasada. Cada uno cuesta tres llamadas
+# (detalle, estadísticas y cuotas), así que subirlo acumula descansos más
+# deprisa pero acerca el límite de la API.
+MAXIMO_POR_PASADA = int(os.environ.get("MAXIMO_POR_PASADA", "12"))
 EV_SOSPECHOSO = 0.20
 
 # Ventana de VIGILANCIA: partidos a mirar. Dentro de ella, solo se evalúan
@@ -62,18 +66,39 @@ FILTRO_EQUIPO = os.environ.get("EQUIPO", "").strip().lower()
 FORZAR = os.environ.get("FORZAR", "").lower() in ("1", "true", "si", "sí")
 
 
+# Pasando a mirar cada cuarto de hora, el límite de la API deja de ser
+# teórico. Antes un 429 devolvía None igual que "no hay datos", así que una
+# tarde entera limitada se habría visto como una tarde sin partidos. Ahora se
+# cuenta y se dice.
+FALLOS = {}
+
+
 def pedir(path, params=None, espera=0.3):
     try:
         r = requests.get(f"{BASE_URL}{path}", headers=HEADERS, params=params, timeout=25)
-    except Exception:
+    except Exception as e:
+        FALLOS[type(e).__name__] = FALLOS.get(type(e).__name__, 0) + 1
         return None
     time.sleep(espera)
     if r.status_code != 200:
+        clave = f"HTTP {r.status_code}"
+        FALLOS[clave] = FALLOS.get(clave, 0) + 1
         return None
     try:
         return r.json()
     except Exception:
+        FALLOS["json ilegible"] = FALLOS.get("json ilegible", 0) + 1
         return None
+
+
+def informar_de_fallos():
+    if not FALLOS:
+        print("Llamadas a la API: todas correctas")
+        return
+    print("AVISO -- llamadas fallidas:", ", ".join(f"{k} x{v}" for k, v in FALLOS.items()))
+    if any(k.startswith("HTTP 429") for k in FALLOS):
+        print("  429 es límite de peticiones: hay que espaciar los crons o el "
+              "registro se llenará de huecos sin que se note.")
 
 
 def desempaquetar(datos):
@@ -420,7 +445,7 @@ def main():
         print(f"   esperando: {n} (min {mn})")
 
     bloques, todas = [], []
-    for p in en_descanso[:8]:
+    for p in en_descanso[:MAXIMO_POR_PASADA]:
         info, filas = analizar(p, a, b, phi)
         if info is None:
             continue
@@ -428,6 +453,7 @@ def main():
         todas.extend(filas)
 
     escribir_informe(bloques, esperando, a, b, phi, base)
+    informar_de_fallos()
     if not FORZAR:
         guardar_log(todas)
     else:

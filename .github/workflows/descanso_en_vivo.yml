@@ -25,10 +25,16 @@ on:
         required: false
         default: 'no'
   schedule:
-    # descanso del partido de las 19:00 UTC (21:00 en España)
-    - cron: '42 19 * * *'
-    - cron: '48 19 * * *'
-    - cron: '54 19 * * *'
+    # Para ajustar el coeficiente de las faltas hacen falta MUCHOS descansos,
+    # y un descanso dura quince minutos: si no se mira cada cuarto de hora, se
+    # pierden. Antes esto cubría 19:42-19:54, que era la ventana de un partido
+    # concreto -- servía para probar, no para acumular.
+    #
+    # Fin de semana: de 11:00 a 22:59 UTC, que cubre desde la hora de comer en
+    # Europa hasta el último partido de la noche.
+    - cron: '*/15 11-22 * * 6,0'
+    # Entre semana: solo la franja de noche europea.
+    - cron: '*/15 17-21 * * 1-5'
 
 jobs:
   descanso:
