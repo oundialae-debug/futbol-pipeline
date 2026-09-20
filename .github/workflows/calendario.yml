@@ -1,0 +1,64 @@
+name: Calendario y agenda
+
+# El calendario del mes se rehace una vez por semana (los partidos se aplazan
+# y se reprograman, así que no vale generarlo una vez y olvidarse). La agenda
+# del día se rehace cada madrugada a partir de él, y es la que usa el
+# comparador para ir directo a los partidos de hoy.
+on:
+  workflow_dispatch:
+    inputs:
+      rehacer_calendario:
+        description: 'Rehacer el calendario del mes entero, no solo la agenda'
+        required: false
+        default: 'si'
+      dias:
+        description: 'Días de calendario a traer'
+        required: false
+        default: '30'
+  schedule:
+    # lunes de madrugada: calendario del mes
+    - cron: '20 4 * * 1'
+    # todos los días: agenda del día, antes del primer partido
+    - cron: '40 5 * * *'
+
+jobs:
+  calendario:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install requests pandas
+
+      # El calendario se rehace los lunes, o a mano. El resto de días solo se
+      # regenera la agenda, que no cuesta ninguna llamada a la API.
+      - name: Calendario del mes
+        if: github.event_name == 'workflow_dispatch' && inputs.rehacer_calendario == 'si' || github.event.schedule == '20 4 * * 1'
+        run: python scripts/calendario_mes.py
+        env:
+          HIGHLIGHTLY_API_KEY: ${{ secrets.HIGHLIGHTLY_API_KEY }}
+          DIAS: ${{ inputs.dias || '30' }}
+          PYTHONPATH: scripts
+
+      - name: Agenda de hoy
+        run: python scripts/agenda_de_hoy.py
+        env:
+          PYTHONPATH: scripts
+
+      - name: Guardar
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          for f in calendario.md agenda_hoy.md data/calendario.csv data/agenda_hoy.csv data/ligas.json; do
+            [ -f "$f" ] && git add "$f" || echo "  [no existe] $f"
+          done
+          if git diff --staged --quiet; then
+            echo "Sin cambios que guardar"
+            exit 0
+          fi
+          git commit -m "Calendario y agenda ($(date -u +%Y-%m-%dT%H:%M))"
+          git pull --rebase origin main
+          git push

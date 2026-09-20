@@ -175,6 +175,43 @@ def nombre_de(p):
         return f"partido {p.get('id')}"
 
 
+RUTA_AGENDA = "data/agenda_hoy.csv"
+
+
+def partidos_de_la_agenda():
+    """Los partidos de hoy de las seis ligas, pedidos por su id.
+
+    Barrer /matches por fecha cuesta hasta dieciocho llamadas por pasada para
+    encontrar los cuatro partidos que importan. Con la agenda del día se va
+    directo: una llamada por partido. A razón de una pasada cada quince
+    minutos, la diferencia deja de ser cosmética.
+
+    Devuelve None si no hay agenda utilizable, y entonces se barre como antes.
+    No se da por hecho que exista: si el calendario no se ha generado, o hoy
+    no juega ninguna de las seis, hay que seguir mirando -- los descansos de
+    otras ligas también suman muestra."""
+    if not os.path.exists(RUTA_AGENDA):
+        return None
+    try:
+        agenda = pd.read_csv(RUTA_AGENDA)
+    except Exception:
+        return None
+    ids = [int(x) for x in agenda.get("match_id", pd.Series(dtype=float)).dropna()]
+    if not ids:
+        return None
+
+    encontrados = []
+    for mid in ids[:40]:
+        datos = pedir(f"/matches/{mid}", espera=0.2)
+        if not datos:
+            continue
+        m = datos[0] if isinstance(datos, list) else datos
+        if en_juego(m):
+            encontrados.append(m)
+    print(f"Agenda del día: {len(ids)} partidos previstos, {len(encontrados)} en juego")
+    return encontrados
+
+
 def buscar_en_juego():
     ahora = datetime.now(timezone.utc)
     vivos = []
@@ -410,7 +447,14 @@ def main():
     a, b, phi = ajustar(base)
     print(f"Modelo sobre {len(base)} partidos: lambda(k)=max(0.8, {a:.3f}{b:+.3f}*k), phi={phi:.2f}")
 
-    vivos = buscar_en_juego()
+    # Primero la agenda (barata). Si no da nada -- no hay calendario, hoy no
+    # juega ninguna de las seis, o ninguno está en juego todavía -- se barre
+    # como siempre: los descansos de otras ligas también acumulan muestra.
+    vivos = partidos_de_la_agenda()
+    if not vivos:
+        if vivos is not None:
+            print("La agenda no da partidos en juego ahora mismo; barriendo igual")
+        vivos = buscar_en_juego()
     print(f"Partidos en juego: {len(vivos)}")
 
     # Qué nombres usa de verdad la API para los estados. Si algún día el
