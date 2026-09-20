@@ -101,3 +101,37 @@ margen de la casa).
   llamándolo en el descanso se obtienen las faltas del primer tiempo.
 - **No hay marca de tiempo** en las cuotas.
 - El endpoint `/odds` no está disponible en el plan gratuito.
+
+## Las cuotas de distintas casas NO son simultáneas
+
+Esto sale de intentar comparar casas entre sí, y cierra esa vía entera.
+
+El censo de márgenes encontró 124 casos de margen combinado negativo: coger
+la mejor cuota de cada lado daría beneficio garantizado. Entre ellos, **9 de
+31 partidos de 1X2 -- un 29% -- con cuarenta y nueve casas cotizando**, con
+beneficios de hasta el 9.7%.
+
+Eso no puede ser cierto. El 1X2 es el mercado más líquido y vigilado que
+existe; si un 29% de los partidos ofreciera beneficio seguro, se arbitraría
+en segundos. No hace falta más prueba: el dato no es simultáneo.
+
+La causa está en la propia documentación. Las cuotas previas se refrescan
+"varias veces al día", y la respuesta **no trae marca de tiempo**. Así que en
+una misma llamada conviven precios capturados en momentos distintos. Si el
+mercado se movió entre medias -- una lesión, una alineación -- coger la mejor
+de cada lado compara un precio de ayer con uno de hoy e inventa un arbitraje
+que no existió nunca.
+
+CONSECUENCIA PARA CUALQUIER COMPARACIÓN ENTRE CASAS
+---------------------------------------------------
+La "desviación del consenso" mide, en parte, CUÁNDO se capturó el precio y no
+lo que piensa la casa. Y engaña en la peor dirección posible: una cuota vieja
+parece generosa justo cuando el mercado se ha movido en su contra, que es
+exactamente cuando perdería.
+
+Eso explica el resultado del backtest. Las apuestas marcadas con más de un 5%
+de valor rindieron un -7.54%, peor que las que no tenían ninguno. No era que
+la ventaja fuera pequeña: es que el indicador apuntaba al revés.
+
+Con esta fuente, comparar casas entre sí no es viable. No es un problema de
+modelo, es de datos.
