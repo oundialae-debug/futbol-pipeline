@@ -303,3 +303,12 @@ match_id,partido,liga,minuto,estado,tarjetas_ht,linea,prob_modelo,prob_push,prob
 1336013767,Las Palmas vs Burgos,Segunda División,45,Half time,2,6.0,0.212,0.1543,0.2779,1,3.3,Vbet Sport,-0.146,False,2026-09-20T17:37:05+00:00,,17.0,3.0,3.3,0.2779,2026-09-20T18:09:34+00:00,Segunda División
 1336013767,Las Palmas vs Burgos,Segunda División,45,Half time,2,6.5,0.212,0.0,0.2293,2,4.65,Marathonbet,-0.0141,False,2026-09-20T17:37:05+00:00,,17.0,3.0,5.75,0.218,2026-09-20T18:09:34+00:00,Segunda División
 1336013767,Las Palmas vs Burgos,Segunda División,45,Half time,2,7.5,0.1118,0.0,0.1321,1,6.9,Marathonbet,-0.2284,False,2026-09-20T17:37:05+00:00,,17.0,3.0,7.0,0.1304,2026-09-20T18:09:34+00:00,Segunda División
+1340474709,SC Paderborn 07 vs 1899 Hoffenheim,Bundesliga,45,Half time,1,1.5,0.9037,0.0,0.6772,2,1.45,Vbet Sport,0.3103,False,2026-09-20T18:26:54+00:00,,9.0,5.0,,,,Bundesliga
+1340474709,SC Paderborn 07 vs 1899 Hoffenheim,Bundesliga,45,Half time,1,2.0,0.7002,0.2034,0.5216,1,1.77,Vbet Sport,0.4428,False,2026-09-20T18:26:54+00:00,,9.0,5.0,,,,Bundesliga
+1340474709,SC Paderborn 07 vs 1899 Hoffenheim,Bundesliga,45,Half time,1,2.5,0.7002,0.0,0.6763,2,1.41,Vbet Sport,-0.0127,False,2026-09-20T18:26:54+00:00,,9.0,5.0,,,,Bundesliga
+1340474709,SC Paderborn 07 vs 1899 Hoffenheim,Bundesliga,45,Half time,1,3.0,0.4663,0.2339,0.543,1,1.7,Vbet Sport,0.0266,False,2026-09-20T18:26:54+00:00,,9.0,5.0,,,,Bundesliga
+1340474709,SC Paderborn 07 vs 1899 Hoffenheim,Bundesliga,45,Half time,1,3.5,0.4663,0.0,0.4379,2,2.25,Vbet Sport,0.0492,False,2026-09-20T18:26:54+00:00,,9.0,5.0,,,,Bundesliga
+1340474709,SC Paderborn 07 vs 1899 Hoffenheim,Bundesliga,45,Half time,1,4.0,0.2722,0.1941,0.2719,1,3.4,Vbet Sport,0.1196,False,2026-09-20T18:26:54+00:00,,9.0,5.0,,,,Bundesliga
+1340474709,SC Paderborn 07 vs 1899 Hoffenheim,Bundesliga,45,Half time,1,4.5,0.2722,0.0,0.2681,2,3.48,Marathonbet,-0.0527,False,2026-09-20T18:26:54+00:00,,9.0,5.0,,,,Bundesliga
+1340474709,SC Paderborn 07 vs 1899 Hoffenheim,Bundesliga,45,Half time,1,5.5,0.1423,0.0,0.1366,1,6.7,Marathonbet,-0.0465,False,2026-09-20T18:26:54+00:00,,9.0,5.0,,,,Bundesliga
+1340474709,SC Paderborn 07 vs 1899 Hoffenheim,Bundesliga,45,Half time,1,6.5,0.0678,0.0,0.1313,1,6.95,Marathonbet,-0.5285,False,2026-09-20T18:26:54+00:00,,9.0,5.0,,,,Bundesliga
