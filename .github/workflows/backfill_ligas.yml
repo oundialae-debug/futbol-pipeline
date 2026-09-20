@@ -1,0 +1,51 @@
+name: Histórico por liga
+
+# Reconstruye el reparto primera/segunda parte de cada una de las seis ligas,
+# para poder contestar con datos si mezclarlas en el modelo es un error.
+on:
+  workflow_dispatch:
+    inputs:
+      dias_atras:
+        description: 'Días de histórico a recorrer'
+        required: false
+        default: '120'
+      max_por_liga:
+        description: 'Máximo de partidos nuevos por liga y pasada'
+        required: false
+        default: '120'
+
+jobs:
+  backfill:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+      - run: pip install requests pandas
+
+      - name: Reconstruir
+        run: python scripts/backfill_ligas.py
+        env:
+          HIGHLIGHTLY_API_KEY: ${{ secrets.HIGHLIGHTLY_API_KEY }}
+          DIAS_ATRAS: ${{ inputs.dias_atras || '120' }}
+          MAX_POR_LIGA: ${{ inputs.max_por_liga || '120' }}
+          PYTHONPATH: scripts
+
+      - name: Guardar
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          for f in historico_por_liga.md data/historico_por_liga.csv; do
+            [ -f "$f" ] && git add "$f" || echo "  [no existe] $f"
+          done
+          if git diff --staged --quiet; then
+            echo "Sin cambios que guardar"
+            exit 0
+          fi
+          git commit -m "Histórico por liga ($(date -u +%Y-%m-%dT%H:%M))"
+          git pull --rebase origin main
+          git push
