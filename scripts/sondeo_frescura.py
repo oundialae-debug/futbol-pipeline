@@ -106,14 +106,25 @@ def main():
         if vivos:
             break
 
-    # Se prefiere un partido EN JUEGO de verdad (no parado en el descanso):
-    # si el reloj corre y las cuotas no se mueven, no hay excusa posible.
-    corriendo = [p for p in vivos if 5 <= minuto_de(p) <= 85
-                 and "half time" not in estado_de(p).lower()]
-    candidatos = corriendo or vivos
-    if not candidatos:
-        print("No hay ningún partido en juego -- hay que repetirlo cuando lo haya.")
+    # El partido tiene que estar EN JUEGO de verdad. La primera versión tenía
+    # un "or vivos" de reserva y con él eligió un partido ya TERMINADO
+    # (Sarasota Paradise, estado Finished, minuto 90): los 261 cambios que
+    # midió podían ser el mercado liquidándose, no cotizando. Es el mismo
+    # error de los partidos muertos clavados en el minuto 90.
+    #
+    # Sin reserva. Si no hay partido válido se dice y no se concluye nada: un
+    # sondeo sobre el partido equivocado es peor que no tener sondeo.
+    corriendo = [p for p in vivos
+                 if 5 <= minuto_de(p) <= 85
+                 and any(x in estado_de(p).lower()
+                         for x in ("first half", "second half"))]
+    if not corriendo:
+        print("No hay ningún partido con el reloj corriendo ahora mismo.")
+        print("Estados vistos:", sorted({estado_de(p) for p in vivos})[:12])
+        print("Hay que repetirlo cuando haya fútbol en juego. De aquí no se")
+        print("concluye nada: un partido terminado no cotiza, liquida.")
         return
+    candidatos = corriendo
 
     elegidos = []
     for p in candidatos[:12]:
@@ -129,9 +140,9 @@ def main():
     for vuelta in range(VUELTAS):
         marca = datetime.now(timezone.utc).strftime("%H:%M:%S")
         for p in elegidos:
-            historial[p["id"]].append((marca, foto(p["id"])))
-        estados = ", ".join(f"{p['homeTeam']['name'][:14]} min {minuto_de(p)}"
-                            for p in elegidos)
+            historial[p["id"]].append((marca, foto(p["id"]), minuto_de(p), estado_de(p)))
+        estados = ", ".join(f"{p['homeTeam']['name'][:14]} min {minuto_de(p)} "
+                            f"[{estado_de(p)}]" for p in elegidos)
         print(f"  vuelta {vuelta+1}/{VUELTAS} a las {marca}  ({estados})")
         if vuelta < VUELTAS - 1:
             time.sleep(ESPERA_ENTRE_VUELTAS)
@@ -145,19 +156,24 @@ def main():
     for p in elegidos:
         nombre = f"{p['homeTeam']['name']} vs {p['awayTeam']['name']}"
         serie = historial[p["id"]]
+        relojes = [mn for _, _, mn, _ in serie]
         print(f"\n{nombre}  ({estado_de(p)}, minuto {minuto_de(p)})")
+        print(f"  reloj en cada vuelta: {relojes}")
+        if len(set(relojes)) == 1:
+            print("  AVISO: el reloj NO avanzó. Con el partido parado, que el")
+            print("  precio no se mueva no prueba absolutamente nada.")
         print(f"  {len(serie[0][1])} cuotas cotizadas")
 
         cambiadas = set()
         for clave in serie[0][1]:
-            valores = [v.get(clave) for _, v in serie]
+            valores = [v.get(clave) for _, v, _mn, _es in serie]
             if len(set(map(str, valores))) > 1:
                 cambiadas.add(clave)
 
         print(f"  Cuotas que se movieron: {len(cambiadas)} de {len(serie[0][1])}")
         if cambiadas:
             for clave in sorted(cambiadas)[:10]:
-                valores = " -> ".join(str(v.get(clave)) for _, v in serie)
+                valores = " -> ".join(str(v.get(clave)) for _, v, _mn, _es in serie)
                 print(f"    {clave}: {valores}")
         else:
             print("    NINGUNA. Mismos valores en todas las vueltas.")
@@ -167,9 +183,28 @@ def main():
 
     print("\n" + "=" * 70)
     print("LECTURA")
-    total_cambios = sum(
-        1 for p in elegidos for clave in historial[p["id"]][0][1]
-        if len({str(v.get(clave)) for _, v in historial[p["id"]]}) > 1)
+    total_cambios, saltos = 0, []
+    for p in elegidos:
+        serie = historial[p["id"]]
+        for clave in serie[0][1]:
+            valores = [str(v.get(clave)) for _, v, _mn, _es in serie]
+            if len(set(valores)) > 1:
+                total_cambios += 1
+                # En cuántas vueltas cambió. Un solo salto en toda la serie
+                # apunta a un caché que se refresca por intervalos; cambios en
+                # casi cada vuelta, a un precio que fluye de verdad.
+                saltos.append(sum(1 for i in range(1, len(valores))
+                                   if valores[i] != valores[i - 1]))
+    if saltos:
+        media = sum(saltos) / len(saltos)
+        oportunidades = len(historial[elegidos[0]["id"]]) - 1
+        print(f"  Saltos por cuota movida: {media:.2f} de {oportunidades} posibles")
+        if media <= 1.3:
+            print("  UN SOLO SALTO por cuota: el precio no fluye, se refresca a")
+            print("  intervalos. Es un caché. Hay que medir cada cuánto antes de")
+            print("  fiarse de dos fotos separadas por pocos minutos.")
+        else:
+            print("  Varios saltos por cuota: el precio se mueve de verdad.")
     if total_cambios == 0:
         print("  Ninguna cuota se movió en toda la prueba, con el reloj corriendo.")
         print("  El feed de cuotas en vivo está CONGELADO: no es el precio real.")
