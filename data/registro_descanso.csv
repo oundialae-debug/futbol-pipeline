@@ -132,5 +132,8 @@ match_id,partido,liga,minuto,estado,tarjetas_ht,linea,prob_modelo,prob_push,prob
 1268410327,Nashville SC vs Chicago Fire,Major League Soccer,45,Half time,1,6.5,0.1443,0.0,0.1294,1,7.0,Marathonbet,0.0099,False,2026-09-20T02:43:01+00:00,,12.0,2.0,7.0,0.1294,2026-09-20T03:18:39+00:00
 1268409476,Real Salt Lake vs Vancouver Whitecaps,Major League Soccer,45,Half time,0,4.0,0.3075,0.1709,0.5665,1,1.63,Vbet Sport,-0.3279,False,2026-09-20T02:43:03+00:00,,11.0,5.0,1.63,0.5665,2026-09-20T03:18:39+00:00
 1268409476,Real Salt Lake vs Vancouver Whitecaps,Major League Soccer,45,Half time,0,4.5,0.3075,0.0,0.4703,1,1.96,Vbet Sport,-0.3974,False,2026-09-20T02:43:03+00:00,,11.0,5.0,1.96,0.4703,2026-09-20T03:18:39+00:00
-1268408625,Colorado Rapids vs Seattle Sounders,Major League Soccer,45,Half time,0,3.5,0.4784,0.0,0.5417,1,1.65,Vbet Sport,-0.2107,False,2026-09-20T03:18:39+00:00,,13.0,2.0,,,
-1268408625,Colorado Rapids vs Seattle Sounders,Major League Soccer,45,Half time,0,4.0,0.3075,0.1709,0.4475,1,2.0,Vbet Sport,-0.2142,False,2026-09-20T03:18:39+00:00,,13.0,2.0,,,
+1268408625,Colorado Rapids vs Seattle Sounders,Major League Soccer,45,Half time,0,3.5,0.4784,0.0,0.5417,1,1.65,Vbet Sport,-0.2107,False,2026-09-20T03:18:39+00:00,,13.0,2.0,1.65,0.5417,2026-09-20T03:44:24+00:00
+1268408625,Colorado Rapids vs Seattle Sounders,Major League Soccer,45,Half time,0,4.0,0.3075,0.1709,0.4475,1,2.0,Vbet Sport,-0.2142,False,2026-09-20T03:18:39+00:00,,13.0,2.0,2.0,0.4475,2026-09-20T03:44:24+00:00
+1268411178,Portland Timbers vs Atlanta United FC,Major League Soccer,45,Half time,3,3.5,0.9163,0.0,0.589,1,1.57,Vbet Sport,0.4386,False,2026-09-20T03:44:24+00:00,,11.0,3.0,,,
+1268411178,Portland Timbers vs Atlanta United FC,Major League Soccer,45,Half time,3,4.0,0.7298,0.1865,0.4973,1,1.86,Vbet Sport,0.544,False,2026-09-20T03:44:24+00:00,,11.0,3.0,,,
+1268411178,Portland Timbers vs Atlanta United FC,Major League Soccer,45,Half time,3,4.5,0.7298,0.0,0.4073,1,2.27,Vbet Sport,0.6567,False,2026-09-20T03:44:24+00:00,,11.0,3.0,,,
