@@ -1,92 +1,111 @@
-match_id,partido,liga,minuto,estado,tarjetas_ht,linea,prob_modelo,prob_push,prob_mercado,casas,mejor_cuota,mejor_casa,ev,resuelto,momento,total_final
-1319166520,Venezia vs Lazio,Serie A,45,Half time,1,1.5,0.9501,0.0,0.8558,1,1.07,Marathonbet,0.0166,False,2026-09-19T19:43:40+00:00,6
-1319166520,Venezia vs Lazio,Serie A,45,Half time,1,2.5,0.8157,0.0,0.7326,2,1.3,Vbet Sport,0.0605,False,2026-09-19T19:43:40+00:00,6
-1319166520,Venezia vs Lazio,Serie A,45,Half time,1,3.0,0.6216,0.1941,0.6963,1,1.33,Vbet Sport,0.0209,False,2026-09-19T19:43:40+00:00,6
-1319166520,Venezia vs Lazio,Serie A,45,Half time,1,3.5,0.6216,0.0,0.5411,2,1.71,Vbet Sport,0.063,False,2026-09-19T19:43:40+00:00,6
-1319166520,Venezia vs Lazio,Serie A,45,Half time,1,4.0,0.422,0.1996,0.4184,1,2.21,Vbet Sport,0.1323,False,2026-09-19T19:43:40+00:00,6
-1319166520,Venezia vs Lazio,Serie A,45,Half time,1,4.5,0.422,0.0,0.3345,2,2.76,Marathonbet,0.1647,False,2026-09-19T19:43:40+00:00,6
-1319166520,Venezia vs Lazio,Serie A,45,Half time,1,5.0,0.2582,0.1638,0.2719,1,3.4,Vbet Sport,0.0417,False,2026-09-19T19:43:40+00:00,6
-1319166520,Venezia vs Lazio,Serie A,45,Half time,1,5.5,0.2582,0.0,0.2343,2,4.95,Marathonbet,0.2781,False,2026-09-19T19:43:40+00:00,6
-1319166520,Venezia vs Lazio,Serie A,45,Half time,1,6.5,0.1443,0.0,0.1304,1,7.0,Marathonbet,0.0099,False,2026-09-19T19:43:40+00:00,6
-1321409756,Toulouse vs LE Havre AC,Ligue 1,45,Half time,1,1.5,0.9501,0.0,0.8078,1,1.13,Marathonbet,0.0736,False,2026-09-19T19:43:41+00:00,4
-1321409756,Toulouse vs LE Havre AC,Ligue 1,45,Half time,1,2.5,0.8157,0.0,0.6942,2,1.34,Vbet Sport,0.0931,False,2026-09-19T19:43:41+00:00,4
-1321409756,Toulouse vs LE Havre AC,Ligue 1,45,Half time,1,3.0,0.6216,0.1941,0.5974,1,1.55,Vbet Sport,0.1576,False,2026-09-19T19:43:41+00:00,4
-1321409756,Toulouse vs LE Havre AC,Ligue 1,45,Half time,1,3.5,0.6216,0.0,0.459,2,2.04,Vbet Sport,0.2681,False,2026-09-19T19:43:41+00:00,4
-1321409756,Toulouse vs LE Havre AC,Ligue 1,45,Half time,1,4.0,0.422,0.1996,0.3215,1,2.87,Vbet Sport,0.4108,False,2026-09-19T19:43:41+00:00,4
-1321409756,Toulouse vs LE Havre AC,Ligue 1,45,Half time,1,4.5,0.422,0.0,0.2719,2,3.48,Marathonbet,0.4686,False,2026-09-19T19:43:41+00:00,4
-1321409756,Toulouse vs LE Havre AC,Ligue 1,45,Half time,1,5.5,0.2582,0.0,0.1375,1,6.65,Marathonbet,0.7171,False,2026-09-19T19:43:41+00:00,4
-1321409756,Toulouse vs LE Havre AC,Ligue 1,45,Half time,1,6.5,0.1443,0.0,0.1349,1,6.8,Marathonbet,-0.0189,False,2026-09-19T19:43:41+00:00,4
-1326401722,Anderlecht vs Zulte Waregem,Jupiler Pro League,45,Half time,2,3.0,0.7764,0.159,0.5417,1,1.65,Vbet Sport,0.44,False,2026-09-19T19:43:44+00:00,3
-1326401722,Anderlecht vs Zulte Waregem,Jupiler Pro League,45,Half time,2,3.5,0.7764,0.0,0.4396,1,2.04,Vbet Sport,0.5838,False,2026-09-19T19:43:44+00:00,3
-1326402573,Lommel United vs KV Mechelen,Jupiler Pro League,45,Half time,2,2.5,0.9354,0.0,0.5892,1,1.52,Vbet Sport,0.4218,False,2026-09-19T19:43:45+00:00,6
-1326402573,Lommel United vs KV Mechelen,Jupiler Pro League,45,Half time,2,3.0,0.7764,0.159,0.4861,1,1.85,Vbet Sport,0.5953,False,2026-09-19T19:43:45+00:00,6
-1326402573,Lommel United vs KV Mechelen,Jupiler Pro League,45,Half time,2,3.5,0.7764,0.0,0.3899,1,2.3,Vbet Sport,0.7857,False,2026-09-19T19:43:45+00:00,6
-1321403799,Angers vs Estac Troyes,Ligue 1,45,Half time,1,1.5,0.9501,0.0,0.7302,2,1.31,Vbet Sport,0.2446,False,2026-09-19T19:43:46+00:00,5
-1321403799,Angers vs Estac Troyes,Ligue 1,45,Half time,1,2.0,0.8157,0.1344,0.6785,1,1.36,Vbet Sport,0.2438,False,2026-09-19T19:43:46+00:00,5
-1321403799,Angers vs Estac Troyes,Ligue 1,45,Half time,1,2.5,0.8157,0.0,0.7039,2,1.31,Vbet Sport,0.0686,False,2026-09-19T19:43:46+00:00,5
-1321403799,Angers vs Estac Troyes,Ligue 1,45,Half time,1,3.0,0.6216,0.1941,0.6154,1,1.5,Vbet Sport,0.1266,False,2026-09-19T19:43:46+00:00,5
-1321403799,Angers vs Estac Troyes,Ligue 1,45,Half time,1,3.5,0.6216,0.0,0.4736,2,1.95,Vbet Sport,0.2122,False,2026-09-19T19:43:46+00:00,5
-1321403799,Angers vs Estac Troyes,Ligue 1,45,Half time,1,4.0,0.422,0.1996,0.3357,1,2.75,Vbet Sport,0.3601,False,2026-09-19T19:43:46+00:00,5
-1321403799,Angers vs Estac Troyes,Ligue 1,45,Half time,1,4.5,0.422,0.0,0.2712,2,3.4,Vbet Sport,0.4348,False,2026-09-19T19:43:46+00:00,5
-1321403799,Angers vs Estac Troyes,Ligue 1,45,Half time,1,5.0,0.2582,0.1638,0.314,1,2.95,Vbet Sport,-0.0745,False,2026-09-19T19:43:46+00:00,5
-1321403799,Angers vs Estac Troyes,Ligue 1,45,Half time,1,5.5,0.2582,0.0,0.1423,1,6.45,Marathonbet,0.6654,False,2026-09-19T19:43:46+00:00,5
-1321406352,Lyon vs Rennes FC,Ligue 1,45,Half time,2,1.5,1.0,0.0,0.8528,1,1.07,Marathonbet,,True,2026-09-19T19:50:32+00:00,6
-1321406352,Lyon vs Rennes FC,Ligue 1,45,Half time,2,2.5,0.9354,0.0,0.7528,2,1.38,Vbet Sport,0.2908,False,2026-09-19T19:50:32+00:00,6
-1321406352,Lyon vs Rennes FC,Ligue 1,45,Half time,2,3.0,0.7764,0.159,0.5927,1,1.56,Vbet Sport,0.3702,False,2026-09-19T19:50:32+00:00,6
-1321406352,Lyon vs Rennes FC,Ligue 1,45,Half time,2,3.5,0.7764,0.0,0.6964,2,1.34,Vbet Sport,0.0403,False,2026-09-19T19:50:32+00:00,6
-1321406352,Lyon vs Rennes FC,Ligue 1,45,Half time,2,4.0,0.5651,0.2112,0.5927,1,1.56,Vbet Sport,0.0929,False,2026-09-19T19:50:32+00:00,6
-1321406352,Lyon vs Rennes FC,Ligue 1,45,Half time,2,4.5,0.5651,0.0,0.4576,2,2.05,Vbet Sport,0.1585,False,2026-09-19T19:50:32+00:00,6
-1321406352,Lyon vs Rennes FC,Ligue 1,45,Half time,2,5.0,0.3642,0.2009,0.314,1,2.95,Vbet Sport,0.2754,False,2026-09-19T19:50:32+00:00,6
-1321406352,Lyon vs Rennes FC,Ligue 1,45,Half time,2,5.5,0.3642,0.0,0.2712,2,3.4,Vbet Sport,0.2384,False,2026-09-19T19:50:32+00:00,6
-1321406352,Lyon vs Rennes FC,Ligue 1,45,Half time,2,6.0,0.2111,0.1532,0.2986,1,3.1,Vbet Sport,-0.1925,False,2026-09-19T19:50:32+00:00,6
-1321406352,Lyon vs Rennes FC,Ligue 1,45,Half time,2,6.5,0.2111,0.0,0.1402,1,6.5,Marathonbet,0.372,False,2026-09-19T19:50:32+00:00,6
-1321406352,Lyon vs Rennes FC,Ligue 1,45,Half time,2,7.5,0.1117,0.0,0.1472,1,6.2,Marathonbet,-0.3077,False,2026-09-19T19:50:32+00:00,6
-1321405501,Le Mans vs Lorient,Ligue 1,45,Half time,2,1.5,1.0,0.0,0.8295,1,1.1,Marathonbet,,True,2026-09-19T19:50:33+00:00,6
-1321405501,Le Mans vs Lorient,Ligue 1,45,Half time,2,2.5,0.9354,0.0,0.7196,2,1.47,Vbet Sport,0.375,False,2026-09-19T19:50:33+00:00,6
-1321405501,Le Mans vs Lorient,Ligue 1,45,Half time,2,3.0,0.7764,0.159,0.7714,1,1.2,Vbet Sport,0.0907,False,2026-09-19T19:50:33+00:00,6
-1321405501,Le Mans vs Lorient,Ligue 1,45,Half time,2,3.5,0.7764,0.0,0.751,2,1.29,Vbet Sport,0.0015,False,2026-09-19T19:50:33+00:00,6
-1321405501,Le Mans vs Lorient,Ligue 1,45,Half time,2,4.0,0.5651,0.2112,0.7014,1,1.32,Vbet Sport,-0.0428,False,2026-09-19T19:50:33+00:00,6
-1321405501,Le Mans vs Lorient,Ligue 1,45,Half time,2,4.5,0.5651,0.0,0.5568,2,1.7,Vbet Sport,-0.0393,False,2026-09-19T19:50:33+00:00,6
-1321405501,Le Mans vs Lorient,Ligue 1,45,Half time,2,5.0,0.3642,0.2009,0.4259,1,2.17,Vbet Sport,-0.0087,False,2026-09-19T19:50:33+00:00,6
-1321405501,Le Mans vs Lorient,Ligue 1,45,Half time,2,5.5,0.3642,0.0,0.3521,2,2.7,Vbet Sport,-0.0166,False,2026-09-19T19:50:33+00:00,6
-1321405501,Le Mans vs Lorient,Ligue 1,45,Half time,2,6.0,0.2111,0.1532,0.2795,1,3.3,Vbet Sport,-0.1503,False,2026-09-19T19:50:33+00:00,6
-1321405501,Le Mans vs Lorient,Ligue 1,45,Half time,2,6.5,0.2111,0.0,0.2035,1,4.5,Marathonbet,-0.0501,False,2026-09-19T19:50:33+00:00,6
-1321405501,Le Mans vs Lorient,Ligue 1,45,Half time,2,7.5,0.1117,0.0,0.1313,1,6.95,Marathonbet,-0.2239,False,2026-09-19T19:50:33+00:00,6
-1336411184,Sevilla FC vs Barcelona,La Liga,45,Half time,0,1.5,0.8488,0.0,0.7932,1,1.16,Marathonbet,-0.0154,False,2026-09-19T19:56:49+00:00,1
-1336411184,Sevilla FC vs Barcelona,La Liga,45,Half time,0,2.0,0.6729,0.1759,0.6912,1,1.34,Vbet Sport,0.0776,False,2026-09-19T19:56:49+00:00,1
-1336411184,Sevilla FC vs Barcelona,La Liga,45,Half time,0,2.5,0.6729,0.0,0.5617,2,1.72,Vbet Sport,0.1574,False,2026-09-19T19:56:49+00:00,1
-1336411184,Sevilla FC vs Barcelona,La Liga,45,Half time,0,3.0,0.4784,0.1945,0.4147,1,2.23,Vbet Sport,0.2613,False,2026-09-19T19:56:49+00:00,1
-1336411184,Sevilla FC vs Barcelona,La Liga,45,Half time,0,3.5,0.4784,0.0,0.3612,2,2.75,Vbet Sport,0.3155,False,2026-09-19T19:56:49+00:00,1
-1336411184,Sevilla FC vs Barcelona,La Liga,45,Half time,0,4.0,0.3075,0.1709,0.247,1,3.75,Vbet Sport,0.3239,False,2026-09-19T19:56:49+00:00,1
-1336411184,Sevilla FC vs Barcelona,La Liga,45,Half time,0,4.5,0.3075,0.0,0.2515,2,4.1,Marathonbet,0.2606,False,2026-09-19T19:56:49+00:00,1
-1336411184,Sevilla FC vs Barcelona,La Liga,45,Half time,0,5.0,0.1807,0.1268,0.2719,1,3.4,Vbet Sport,-0.259,False,2026-09-19T19:56:49+00:00,1
-1336411184,Sevilla FC vs Barcelona,La Liga,45,Half time,0,5.5,0.1807,0.0,0.1304,1,7.0,Marathonbet,0.2646,False,2026-09-19T19:56:49+00:00,1
-1336411184,Sevilla FC vs Barcelona,La Liga,45,Half time,0,6.5,0.0981,0.0,0.1304,1,7.0,Marathonbet,-0.3134,False,2026-09-19T19:56:49+00:00,1
-1270017015,Atletico-MG vs Chapecoense,Serie A,45,Half time,0,1.5,0.8488,0.0,0.7333,2,1.31,Vbet Sport,0.1119,False,2026-09-19T20:04:26+00:00,3
-1270017015,Atletico-MG vs Chapecoense,Serie A,45,Half time,0,2.0,0.6729,0.1759,0.7159,1,1.29,Vbet Sport,0.0439,False,2026-09-19T20:04:26+00:00,3
-1270017015,Atletico-MG vs Chapecoense,Serie A,45,Half time,0,2.5,0.6729,0.0,0.5522,2,1.69,Marathonbet,0.1372,False,2026-09-19T20:04:26+00:00,3
-1270017015,Atletico-MG vs Chapecoense,Serie A,45,Half time,0,3.0,0.4784,0.1945,0.4465,1,2.07,Vbet Sport,0.1847,False,2026-09-19T20:04:26+00:00,3
-1270017015,Atletico-MG vs Chapecoense,Serie A,45,Half time,0,3.5,0.4784,0.0,0.3481,2,2.68,Marathonbet,0.282,False,2026-09-19T20:04:26+00:00,3
-1270017015,Atletico-MG vs Chapecoense,Serie A,45,Half time,0,4.0,0.3075,0.1709,0.2368,1,3.9,Vbet Sport,0.37,False,2026-09-19T20:04:26+00:00,3
-1270017015,Atletico-MG vs Chapecoense,Serie A,45,Half time,0,4.5,0.3075,0.0,0.2313,2,4.8,Marathonbet,0.4758,False,2026-09-19T20:04:26+00:00,3
-1270017015,Atletico-MG vs Chapecoense,Serie A,45,Half time,0,5.5,0.1807,0.0,0.1313,1,6.95,Marathonbet,0.2555,False,2026-09-19T20:04:26+00:00,3
-1336010363,Cadiz vs Girona,Segunda División,45,Half time,2,2.5,0.9354,0.0,0.7981,2,1.22,Vbet Sport,0.1412,False,2026-09-19T20:04:28+00:00,6
-1336010363,Cadiz vs Girona,Segunda División,45,Half time,2,3.0,0.7764,0.159,0.6893,1,1.33,Vbet Sport,0.1916,False,2026-09-19T20:04:28+00:00,6
-1336010363,Cadiz vs Girona,Segunda División,45,Half time,2,3.5,0.7764,0.0,0.7641,2,1.35,Vbet Sport,0.0481,False,2026-09-19T20:04:28+00:00,6
-1336010363,Cadiz vs Girona,Segunda División,45,Half time,2,4.0,0.5651,0.2112,0.5921,1,1.55,Vbet Sport,0.0872,False,2026-09-19T20:04:28+00:00,6
-1336010363,Cadiz vs Girona,Segunda División,45,Half time,2,4.5,0.5651,0.0,0.6805,2,1.35,Vbet Sport,-0.2371,False,2026-09-19T20:04:28+00:00,6
-1336010363,Cadiz vs Girona,Segunda División,45,Half time,2,5.0,0.3642,0.2009,0.5921,1,1.55,Vbet Sport,-0.2345,False,2026-09-19T20:04:28+00:00,6
-1336010363,Cadiz vs Girona,Segunda División,45,Half time,2,5.5,0.3642,0.0,0.481,2,1.95,Vbet Sport,-0.2897,False,2026-09-19T20:04:28+00:00,6
-1336010363,Cadiz vs Girona,Segunda División,45,Half time,2,6.0,0.2111,0.1532,0.3671,1,2.5,Vbet Sport,-0.3191,False,2026-09-19T20:04:28+00:00,6
-1336010363,Cadiz vs Girona,Segunda División,45,Half time,2,6.5,0.2111,0.0,0.3115,2,2.95,Vbet Sport,-0.3773,False,2026-09-19T20:04:28+00:00,6
-1336010363,Cadiz vs Girona,Segunda División,45,Half time,2,7.5,0.1117,0.0,0.1817,1,5.0,Marathonbet,-0.4417,False,2026-09-19T20:04:28+00:00,6
-1336010363,Cadiz vs Girona,Segunda División,45,Half time,2,8.5,0.0546,0.0,0.1294,1,7.0,Marathonbet,-0.6176,False,2026-09-19T20:04:28+00:00,6
-1320901709,Willem II vs Fortuna Sittard,Eredivisie,45,Half time,1,1.5,0.9501,0.0,0.8123,2,1.22,Vbet Sport,0.1591,False,2026-09-19T20:04:32+00:00,4
-1320901709,Willem II vs Fortuna Sittard,Eredivisie,45,Half time,1,2.0,0.8157,0.1344,0.6963,1,1.33,Vbet Sport,0.2193,False,2026-09-19T20:04:32+00:00,4
-1320901709,Willem II vs Fortuna Sittard,Eredivisie,45,Half time,1,2.5,0.8157,0.0,0.6834,2,1.35,Vbet Sport,0.1013,False,2026-09-19T20:04:32+00:00,4
-1320901709,Willem II vs Fortuna Sittard,Eredivisie,45,Half time,1,3.0,0.6216,0.1941,0.5927,1,1.56,Vbet Sport,0.1639,False,2026-09-19T20:04:32+00:00,4
-1320901709,Willem II vs Fortuna Sittard,Eredivisie,45,Half time,1,3.5,0.6216,0.0,0.4464,2,2.08,Marathonbet,0.293,False,2026-09-19T20:04:32+00:00,4
-1320901709,Willem II vs Fortuna Sittard,Eredivisie,45,Half time,1,4.0,0.422,0.1996,0.3088,1,3.0,Vbet Sport,0.4656,False,2026-09-19T20:04:32+00:00,4
-1320901709,Willem II vs Fortuna Sittard,Eredivisie,45,Half time,1,4.5,0.422,0.0,0.2498,2,3.74,Marathonbet,0.5783,False,2026-09-19T20:04:32+00:00,4
-1320901709,Willem II vs Fortuna Sittard,Eredivisie,45,Half time,1,5.0,0.2582,0.1638,0.2368,1,3.9,Vbet Sport,0.1708,False,2026-09-19T20:04:32+00:00,4
-1320901709,Willem II vs Fortuna Sittard,Eredivisie,45,Half time,1,5.5,0.2582,0.0,0.1349,1,6.8,Marathonbet,0.7558,False,2026-09-19T20:04:32+00:00,4
+match_id,partido,liga,minuto,estado,tarjetas_ht,linea,prob_modelo,prob_push,prob_mercado,casas,mejor_cuota,mejor_casa,ev,resuelto,momento,total_final,faltas_ht,corners_ht
+1319166520,Venezia vs Lazio,Serie A,45,Half time,1,1.5,0.9501,0.0,0.8558,1,1.07,Marathonbet,0.0166,False,2026-09-19T19:43:40+00:00,6.0,,
+1319166520,Venezia vs Lazio,Serie A,45,Half time,1,2.5,0.8157,0.0,0.7326,2,1.3,Vbet Sport,0.0605,False,2026-09-19T19:43:40+00:00,6.0,,
+1319166520,Venezia vs Lazio,Serie A,45,Half time,1,3.0,0.6216,0.1941,0.6963,1,1.33,Vbet Sport,0.0209,False,2026-09-19T19:43:40+00:00,6.0,,
+1319166520,Venezia vs Lazio,Serie A,45,Half time,1,3.5,0.6216,0.0,0.5411,2,1.71,Vbet Sport,0.063,False,2026-09-19T19:43:40+00:00,6.0,,
+1319166520,Venezia vs Lazio,Serie A,45,Half time,1,4.0,0.422,0.1996,0.4184,1,2.21,Vbet Sport,0.1323,False,2026-09-19T19:43:40+00:00,6.0,,
+1319166520,Venezia vs Lazio,Serie A,45,Half time,1,4.5,0.422,0.0,0.3345,2,2.76,Marathonbet,0.1647,False,2026-09-19T19:43:40+00:00,6.0,,
+1319166520,Venezia vs Lazio,Serie A,45,Half time,1,5.0,0.2582,0.1638,0.2719,1,3.4,Vbet Sport,0.0417,False,2026-09-19T19:43:40+00:00,6.0,,
+1319166520,Venezia vs Lazio,Serie A,45,Half time,1,5.5,0.2582,0.0,0.2343,2,4.95,Marathonbet,0.2781,False,2026-09-19T19:43:40+00:00,6.0,,
+1319166520,Venezia vs Lazio,Serie A,45,Half time,1,6.5,0.1443,0.0,0.1304,1,7.0,Marathonbet,0.0099,False,2026-09-19T19:43:40+00:00,6.0,,
+1321409756,Toulouse vs LE Havre AC,Ligue 1,45,Half time,1,1.5,0.9501,0.0,0.8078,1,1.13,Marathonbet,0.0736,False,2026-09-19T19:43:41+00:00,4.0,,
+1321409756,Toulouse vs LE Havre AC,Ligue 1,45,Half time,1,2.5,0.8157,0.0,0.6942,2,1.34,Vbet Sport,0.0931,False,2026-09-19T19:43:41+00:00,4.0,,
+1321409756,Toulouse vs LE Havre AC,Ligue 1,45,Half time,1,3.0,0.6216,0.1941,0.5974,1,1.55,Vbet Sport,0.1576,False,2026-09-19T19:43:41+00:00,4.0,,
+1321409756,Toulouse vs LE Havre AC,Ligue 1,45,Half time,1,3.5,0.6216,0.0,0.459,2,2.04,Vbet Sport,0.2681,False,2026-09-19T19:43:41+00:00,4.0,,
+1321409756,Toulouse vs LE Havre AC,Ligue 1,45,Half time,1,4.0,0.422,0.1996,0.3215,1,2.87,Vbet Sport,0.4108,False,2026-09-19T19:43:41+00:00,4.0,,
+1321409756,Toulouse vs LE Havre AC,Ligue 1,45,Half time,1,4.5,0.422,0.0,0.2719,2,3.48,Marathonbet,0.4686,False,2026-09-19T19:43:41+00:00,4.0,,
+1321409756,Toulouse vs LE Havre AC,Ligue 1,45,Half time,1,5.5,0.2582,0.0,0.1375,1,6.65,Marathonbet,0.7171,False,2026-09-19T19:43:41+00:00,4.0,,
+1321409756,Toulouse vs LE Havre AC,Ligue 1,45,Half time,1,6.5,0.1443,0.0,0.1349,1,6.8,Marathonbet,-0.0189,False,2026-09-19T19:43:41+00:00,4.0,,
+1326401722,Anderlecht vs Zulte Waregem,Jupiler Pro League,45,Half time,2,3.0,0.7764,0.159,0.5417,1,1.65,Vbet Sport,0.44,False,2026-09-19T19:43:44+00:00,3.0,,
+1326401722,Anderlecht vs Zulte Waregem,Jupiler Pro League,45,Half time,2,3.5,0.7764,0.0,0.4396,1,2.04,Vbet Sport,0.5838,False,2026-09-19T19:43:44+00:00,3.0,,
+1326402573,Lommel United vs KV Mechelen,Jupiler Pro League,45,Half time,2,2.5,0.9354,0.0,0.5892,1,1.52,Vbet Sport,0.4218,False,2026-09-19T19:43:45+00:00,6.0,,
+1326402573,Lommel United vs KV Mechelen,Jupiler Pro League,45,Half time,2,3.0,0.7764,0.159,0.4861,1,1.85,Vbet Sport,0.5953,False,2026-09-19T19:43:45+00:00,6.0,,
+1326402573,Lommel United vs KV Mechelen,Jupiler Pro League,45,Half time,2,3.5,0.7764,0.0,0.3899,1,2.3,Vbet Sport,0.7857,False,2026-09-19T19:43:45+00:00,6.0,,
+1321403799,Angers vs Estac Troyes,Ligue 1,45,Half time,1,1.5,0.9501,0.0,0.7302,2,1.31,Vbet Sport,0.2446,False,2026-09-19T19:43:46+00:00,5.0,,
+1321403799,Angers vs Estac Troyes,Ligue 1,45,Half time,1,2.0,0.8157,0.1344,0.6785,1,1.36,Vbet Sport,0.2438,False,2026-09-19T19:43:46+00:00,5.0,,
+1321403799,Angers vs Estac Troyes,Ligue 1,45,Half time,1,2.5,0.8157,0.0,0.7039,2,1.31,Vbet Sport,0.0686,False,2026-09-19T19:43:46+00:00,5.0,,
+1321403799,Angers vs Estac Troyes,Ligue 1,45,Half time,1,3.0,0.6216,0.1941,0.6154,1,1.5,Vbet Sport,0.1266,False,2026-09-19T19:43:46+00:00,5.0,,
+1321403799,Angers vs Estac Troyes,Ligue 1,45,Half time,1,3.5,0.6216,0.0,0.4736,2,1.95,Vbet Sport,0.2122,False,2026-09-19T19:43:46+00:00,5.0,,
+1321403799,Angers vs Estac Troyes,Ligue 1,45,Half time,1,4.0,0.422,0.1996,0.3357,1,2.75,Vbet Sport,0.3601,False,2026-09-19T19:43:46+00:00,5.0,,
+1321403799,Angers vs Estac Troyes,Ligue 1,45,Half time,1,4.5,0.422,0.0,0.2712,2,3.4,Vbet Sport,0.4348,False,2026-09-19T19:43:46+00:00,5.0,,
+1321403799,Angers vs Estac Troyes,Ligue 1,45,Half time,1,5.0,0.2582,0.1638,0.314,1,2.95,Vbet Sport,-0.0745,False,2026-09-19T19:43:46+00:00,5.0,,
+1321403799,Angers vs Estac Troyes,Ligue 1,45,Half time,1,5.5,0.2582,0.0,0.1423,1,6.45,Marathonbet,0.6654,False,2026-09-19T19:43:46+00:00,5.0,,
+1321406352,Lyon vs Rennes FC,Ligue 1,45,Half time,2,1.5,1.0,0.0,0.8528,1,1.07,Marathonbet,,True,2026-09-19T19:50:32+00:00,6.0,,
+1321406352,Lyon vs Rennes FC,Ligue 1,45,Half time,2,2.5,0.9354,0.0,0.7528,2,1.38,Vbet Sport,0.2908,False,2026-09-19T19:50:32+00:00,6.0,,
+1321406352,Lyon vs Rennes FC,Ligue 1,45,Half time,2,3.0,0.7764,0.159,0.5927,1,1.56,Vbet Sport,0.3702,False,2026-09-19T19:50:32+00:00,6.0,,
+1321406352,Lyon vs Rennes FC,Ligue 1,45,Half time,2,3.5,0.7764,0.0,0.6964,2,1.34,Vbet Sport,0.0403,False,2026-09-19T19:50:32+00:00,6.0,,
+1321406352,Lyon vs Rennes FC,Ligue 1,45,Half time,2,4.0,0.5651,0.2112,0.5927,1,1.56,Vbet Sport,0.0929,False,2026-09-19T19:50:32+00:00,6.0,,
+1321406352,Lyon vs Rennes FC,Ligue 1,45,Half time,2,4.5,0.5651,0.0,0.4576,2,2.05,Vbet Sport,0.1585,False,2026-09-19T19:50:32+00:00,6.0,,
+1321406352,Lyon vs Rennes FC,Ligue 1,45,Half time,2,5.0,0.3642,0.2009,0.314,1,2.95,Vbet Sport,0.2754,False,2026-09-19T19:50:32+00:00,6.0,,
+1321406352,Lyon vs Rennes FC,Ligue 1,45,Half time,2,5.5,0.3642,0.0,0.2712,2,3.4,Vbet Sport,0.2384,False,2026-09-19T19:50:32+00:00,6.0,,
+1321406352,Lyon vs Rennes FC,Ligue 1,45,Half time,2,6.0,0.2111,0.1532,0.2986,1,3.1,Vbet Sport,-0.1925,False,2026-09-19T19:50:32+00:00,6.0,,
+1321406352,Lyon vs Rennes FC,Ligue 1,45,Half time,2,6.5,0.2111,0.0,0.1402,1,6.5,Marathonbet,0.372,False,2026-09-19T19:50:32+00:00,6.0,,
+1321406352,Lyon vs Rennes FC,Ligue 1,45,Half time,2,7.5,0.1117,0.0,0.1472,1,6.2,Marathonbet,-0.3077,False,2026-09-19T19:50:32+00:00,6.0,,
+1321405501,Le Mans vs Lorient,Ligue 1,45,Half time,2,1.5,1.0,0.0,0.8295,1,1.1,Marathonbet,,True,2026-09-19T19:50:33+00:00,6.0,,
+1321405501,Le Mans vs Lorient,Ligue 1,45,Half time,2,2.5,0.9354,0.0,0.7196,2,1.47,Vbet Sport,0.375,False,2026-09-19T19:50:33+00:00,6.0,,
+1321405501,Le Mans vs Lorient,Ligue 1,45,Half time,2,3.0,0.7764,0.159,0.7714,1,1.2,Vbet Sport,0.0907,False,2026-09-19T19:50:33+00:00,6.0,,
+1321405501,Le Mans vs Lorient,Ligue 1,45,Half time,2,3.5,0.7764,0.0,0.751,2,1.29,Vbet Sport,0.0015,False,2026-09-19T19:50:33+00:00,6.0,,
+1321405501,Le Mans vs Lorient,Ligue 1,45,Half time,2,4.0,0.5651,0.2112,0.7014,1,1.32,Vbet Sport,-0.0428,False,2026-09-19T19:50:33+00:00,6.0,,
+1321405501,Le Mans vs Lorient,Ligue 1,45,Half time,2,4.5,0.5651,0.0,0.5568,2,1.7,Vbet Sport,-0.0393,False,2026-09-19T19:50:33+00:00,6.0,,
+1321405501,Le Mans vs Lorient,Ligue 1,45,Half time,2,5.0,0.3642,0.2009,0.4259,1,2.17,Vbet Sport,-0.0087,False,2026-09-19T19:50:33+00:00,6.0,,
+1321405501,Le Mans vs Lorient,Ligue 1,45,Half time,2,5.5,0.3642,0.0,0.3521,2,2.7,Vbet Sport,-0.0166,False,2026-09-19T19:50:33+00:00,6.0,,
+1321405501,Le Mans vs Lorient,Ligue 1,45,Half time,2,6.0,0.2111,0.1532,0.2795,1,3.3,Vbet Sport,-0.1503,False,2026-09-19T19:50:33+00:00,6.0,,
+1321405501,Le Mans vs Lorient,Ligue 1,45,Half time,2,6.5,0.2111,0.0,0.2035,1,4.5,Marathonbet,-0.0501,False,2026-09-19T19:50:33+00:00,6.0,,
+1321405501,Le Mans vs Lorient,Ligue 1,45,Half time,2,7.5,0.1117,0.0,0.1313,1,6.95,Marathonbet,-0.2239,False,2026-09-19T19:50:33+00:00,6.0,,
+1336411184,Sevilla FC vs Barcelona,La Liga,45,Half time,0,1.5,0.8488,0.0,0.7932,1,1.16,Marathonbet,-0.0154,False,2026-09-19T19:56:49+00:00,1.0,,
+1336411184,Sevilla FC vs Barcelona,La Liga,45,Half time,0,2.0,0.6729,0.1759,0.6912,1,1.34,Vbet Sport,0.0776,False,2026-09-19T19:56:49+00:00,1.0,,
+1336411184,Sevilla FC vs Barcelona,La Liga,45,Half time,0,2.5,0.6729,0.0,0.5617,2,1.72,Vbet Sport,0.1574,False,2026-09-19T19:56:49+00:00,1.0,,
+1336411184,Sevilla FC vs Barcelona,La Liga,45,Half time,0,3.0,0.4784,0.1945,0.4147,1,2.23,Vbet Sport,0.2613,False,2026-09-19T19:56:49+00:00,1.0,,
+1336411184,Sevilla FC vs Barcelona,La Liga,45,Half time,0,3.5,0.4784,0.0,0.3612,2,2.75,Vbet Sport,0.3155,False,2026-09-19T19:56:49+00:00,1.0,,
+1336411184,Sevilla FC vs Barcelona,La Liga,45,Half time,0,4.0,0.3075,0.1709,0.247,1,3.75,Vbet Sport,0.3239,False,2026-09-19T19:56:49+00:00,1.0,,
+1336411184,Sevilla FC vs Barcelona,La Liga,45,Half time,0,4.5,0.3075,0.0,0.2515,2,4.1,Marathonbet,0.2606,False,2026-09-19T19:56:49+00:00,1.0,,
+1336411184,Sevilla FC vs Barcelona,La Liga,45,Half time,0,5.0,0.1807,0.1268,0.2719,1,3.4,Vbet Sport,-0.259,False,2026-09-19T19:56:49+00:00,1.0,,
+1336411184,Sevilla FC vs Barcelona,La Liga,45,Half time,0,5.5,0.1807,0.0,0.1304,1,7.0,Marathonbet,0.2646,False,2026-09-19T19:56:49+00:00,1.0,,
+1336411184,Sevilla FC vs Barcelona,La Liga,45,Half time,0,6.5,0.0981,0.0,0.1304,1,7.0,Marathonbet,-0.3134,False,2026-09-19T19:56:49+00:00,1.0,,
+1270017015,Atletico-MG vs Chapecoense,Serie A,45,Half time,0,1.5,0.8488,0.0,0.7333,2,1.31,Vbet Sport,0.1119,False,2026-09-19T20:04:26+00:00,3.0,,
+1270017015,Atletico-MG vs Chapecoense,Serie A,45,Half time,0,2.0,0.6729,0.1759,0.7159,1,1.29,Vbet Sport,0.0439,False,2026-09-19T20:04:26+00:00,3.0,,
+1270017015,Atletico-MG vs Chapecoense,Serie A,45,Half time,0,2.5,0.6729,0.0,0.5522,2,1.69,Marathonbet,0.1372,False,2026-09-19T20:04:26+00:00,3.0,,
+1270017015,Atletico-MG vs Chapecoense,Serie A,45,Half time,0,3.0,0.4784,0.1945,0.4465,1,2.07,Vbet Sport,0.1847,False,2026-09-19T20:04:26+00:00,3.0,,
+1270017015,Atletico-MG vs Chapecoense,Serie A,45,Half time,0,3.5,0.4784,0.0,0.3481,2,2.68,Marathonbet,0.282,False,2026-09-19T20:04:26+00:00,3.0,,
+1270017015,Atletico-MG vs Chapecoense,Serie A,45,Half time,0,4.0,0.3075,0.1709,0.2368,1,3.9,Vbet Sport,0.37,False,2026-09-19T20:04:26+00:00,3.0,,
+1270017015,Atletico-MG vs Chapecoense,Serie A,45,Half time,0,4.5,0.3075,0.0,0.2313,2,4.8,Marathonbet,0.4758,False,2026-09-19T20:04:26+00:00,3.0,,
+1270017015,Atletico-MG vs Chapecoense,Serie A,45,Half time,0,5.5,0.1807,0.0,0.1313,1,6.95,Marathonbet,0.2555,False,2026-09-19T20:04:26+00:00,3.0,,
+1336010363,Cadiz vs Girona,Segunda División,45,Half time,2,2.5,0.9354,0.0,0.7981,2,1.22,Vbet Sport,0.1412,False,2026-09-19T20:04:28+00:00,6.0,,
+1336010363,Cadiz vs Girona,Segunda División,45,Half time,2,3.0,0.7764,0.159,0.6893,1,1.33,Vbet Sport,0.1916,False,2026-09-19T20:04:28+00:00,6.0,,
+1336010363,Cadiz vs Girona,Segunda División,45,Half time,2,3.5,0.7764,0.0,0.7641,2,1.35,Vbet Sport,0.0481,False,2026-09-19T20:04:28+00:00,6.0,,
+1336010363,Cadiz vs Girona,Segunda División,45,Half time,2,4.0,0.5651,0.2112,0.5921,1,1.55,Vbet Sport,0.0872,False,2026-09-19T20:04:28+00:00,6.0,,
+1336010363,Cadiz vs Girona,Segunda División,45,Half time,2,4.5,0.5651,0.0,0.6805,2,1.35,Vbet Sport,-0.2371,False,2026-09-19T20:04:28+00:00,6.0,,
+1336010363,Cadiz vs Girona,Segunda División,45,Half time,2,5.0,0.3642,0.2009,0.5921,1,1.55,Vbet Sport,-0.2345,False,2026-09-19T20:04:28+00:00,6.0,,
+1336010363,Cadiz vs Girona,Segunda División,45,Half time,2,5.5,0.3642,0.0,0.481,2,1.95,Vbet Sport,-0.2897,False,2026-09-19T20:04:28+00:00,6.0,,
+1336010363,Cadiz vs Girona,Segunda División,45,Half time,2,6.0,0.2111,0.1532,0.3671,1,2.5,Vbet Sport,-0.3191,False,2026-09-19T20:04:28+00:00,6.0,,
+1336010363,Cadiz vs Girona,Segunda División,45,Half time,2,6.5,0.2111,0.0,0.3115,2,2.95,Vbet Sport,-0.3773,False,2026-09-19T20:04:28+00:00,6.0,,
+1336010363,Cadiz vs Girona,Segunda División,45,Half time,2,7.5,0.1117,0.0,0.1817,1,5.0,Marathonbet,-0.4417,False,2026-09-19T20:04:28+00:00,6.0,,
+1336010363,Cadiz vs Girona,Segunda División,45,Half time,2,8.5,0.0546,0.0,0.1294,1,7.0,Marathonbet,-0.6176,False,2026-09-19T20:04:28+00:00,6.0,,
+1320901709,Willem II vs Fortuna Sittard,Eredivisie,45,Half time,1,1.5,0.9501,0.0,0.8123,2,1.22,Vbet Sport,0.1591,False,2026-09-19T20:04:32+00:00,4.0,,
+1320901709,Willem II vs Fortuna Sittard,Eredivisie,45,Half time,1,2.0,0.8157,0.1344,0.6963,1,1.33,Vbet Sport,0.2193,False,2026-09-19T20:04:32+00:00,4.0,,
+1320901709,Willem II vs Fortuna Sittard,Eredivisie,45,Half time,1,2.5,0.8157,0.0,0.6834,2,1.35,Vbet Sport,0.1013,False,2026-09-19T20:04:32+00:00,4.0,,
+1320901709,Willem II vs Fortuna Sittard,Eredivisie,45,Half time,1,3.0,0.6216,0.1941,0.5927,1,1.56,Vbet Sport,0.1639,False,2026-09-19T20:04:32+00:00,4.0,,
+1320901709,Willem II vs Fortuna Sittard,Eredivisie,45,Half time,1,3.5,0.6216,0.0,0.4464,2,2.08,Marathonbet,0.293,False,2026-09-19T20:04:32+00:00,4.0,,
+1320901709,Willem II vs Fortuna Sittard,Eredivisie,45,Half time,1,4.0,0.422,0.1996,0.3088,1,3.0,Vbet Sport,0.4656,False,2026-09-19T20:04:32+00:00,4.0,,
+1320901709,Willem II vs Fortuna Sittard,Eredivisie,45,Half time,1,4.5,0.422,0.0,0.2498,2,3.74,Marathonbet,0.5783,False,2026-09-19T20:04:32+00:00,4.0,,
+1320901709,Willem II vs Fortuna Sittard,Eredivisie,45,Half time,1,5.0,0.2582,0.1638,0.2368,1,3.9,Vbet Sport,0.1708,False,2026-09-19T20:04:32+00:00,4.0,,
+1320901709,Willem II vs Fortuna Sittard,Eredivisie,45,Half time,1,5.5,0.2582,0.0,0.1349,1,6.8,Marathonbet,0.7558,False,2026-09-19T20:04:32+00:00,4.0,,
+1268403519,DC United vs Charlotte,Major League Soccer,45,Half time,1,3.5,0.6216,0.0,0.6101,1,1.47,Vbet Sport,-0.0862,False,2026-09-20T00:36:46+00:00,,12.0,3.0
+1268403519,DC United vs Charlotte,Major League Soccer,45,Half time,1,4.0,0.422,0.1996,0.5361,1,1.67,Vbet Sport,-0.0956,False,2026-09-20T00:36:46+00:00,,12.0,3.0
+1268403519,DC United vs Charlotte,Major League Soccer,45,Half time,1,4.5,0.422,0.0,0.4475,1,2.0,Vbet Sport,-0.156,False,2026-09-20T00:36:46+00:00,,12.0,3.0
+1268400966,San Jose Earthquakes vs Los Angeles FC,Major League Soccer,45,Half time,1,3.5,0.6216,0.0,0.589,1,1.57,Vbet Sport,-0.024,False,2026-09-20T00:36:48+00:00,,9.0,7.0
+1268400966,San Jose Earthquakes vs Los Angeles FC,Major League Soccer,45,Half time,1,4.0,0.422,0.1996,0.4973,1,1.86,Vbet Sport,-0.0154,False,2026-09-20T00:36:48+00:00,,9.0,7.0
+1268400966,San Jose Earthquakes vs Los Angeles FC,Major League Soccer,45,Half time,1,4.5,0.422,0.0,0.4073,1,2.27,Vbet Sport,-0.0421,False,2026-09-20T00:36:48+00:00,,9.0,7.0
+1268402668,New England Revolution vs Orlando City,Major League Soccer,45,Half time,1,3.5,0.6216,0.0,0.543,1,1.7,Vbet Sport,0.0568,False,2026-09-20T00:36:49+00:00,,5.0,5.0
+1268402668,New England Revolution vs Orlando City,Major League Soccer,45,Half time,1,4.0,0.422,0.1996,0.4439,1,2.08,Vbet Sport,0.0774,False,2026-09-20T00:36:49+00:00,,5.0,5.0
+1270022972,Vasco DA Gama vs Coritiba,Serie A,45,Half time,0,1.5,0.8488,0.0,0.685,2,1.36,Vbet Sport,0.1543,False,2026-09-20T00:36:52+00:00,,4.0,6.0
+1270022972,Vasco DA Gama vs Coritiba,Serie A,45,Half time,0,2.0,0.6729,0.1759,0.5816,1,1.59,Vbet Sport,0.2458,False,2026-09-20T00:36:52+00:00,,4.0,6.0
+1270022972,Vasco DA Gama vs Coritiba,Serie A,45,Half time,0,2.5,0.6729,0.0,0.4478,2,2.1,Vbet Sport,0.4131,False,2026-09-20T00:36:52+00:00,,4.0,6.0
+1270022972,Vasco DA Gama vs Coritiba,Serie A,45,Half time,0,3.0,0.4784,0.1945,0.3037,1,3.05,Vbet Sport,0.6535,False,2026-09-20T00:36:52+00:00,,4.0,6.0
+1270022972,Vasco DA Gama vs Coritiba,Serie A,45,Half time,0,3.5,0.4784,0.0,0.2719,2,3.48,Marathonbet,0.6647,False,2026-09-20T00:36:52+00:00,,4.0,6.0
+1270022972,Vasco DA Gama vs Coritiba,Serie A,45,Half time,0,4.0,0.3075,0.1709,0.2719,1,3.4,Vbet Sport,0.2163,False,2026-09-20T00:36:52+00:00,,4.0,6.0
+1270022972,Vasco DA Gama vs Coritiba,Serie A,45,Half time,0,4.5,0.3075,0.0,0.2038,2,6.75,Marathonbet,1.0754,False,2026-09-20T00:36:52+00:00,,4.0,6.0
+1270022972,Vasco DA Gama vs Coritiba,Serie A,45,Half time,0,5.0,0.1807,0.1268,0.2416,1,3.83,Vbet Sport,-0.1813,False,2026-09-20T00:36:52+00:00,,4.0,6.0
+1270022972,Vasco DA Gama vs Coritiba,Serie A,45,Half time,0,5.5,0.1807,0.0,0.1304,1,7.0,Marathonbet,0.2646,False,2026-09-20T00:36:52+00:00,,4.0,6.0
+1268401817,Montréal Impact vs Columbus Crew,Major League Soccer,45,Half time,2,3.5,0.7764,0.0,0.5278,1,1.7,Vbet Sport,0.3198,False,2026-09-20T00:36:57+00:00,,16.0,2.0
+1268401817,Montréal Impact vs Columbus Crew,Major League Soccer,45,Half time,2,4.0,0.5651,0.2112,0.4396,1,2.04,Vbet Sport,0.3641,False,2026-09-20T00:36:57+00:00,,16.0,2.0

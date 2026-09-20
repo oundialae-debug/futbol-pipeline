@@ -1,4 +1,4 @@
-# Tarjetas al descanso -- 2026-09-19 20:04 UTC
+# Tarjetas al descanso -- 2026-09-20 00:36 UTC
 
 Modelo: lambda(k) = max(0.8, 3.640 -0.289*k), phi=1.24, ajustado sobre 427 partidos.
 Validación fuera de muestra (línea 4.5): Brier 0.2169 frente a 0.2523 de la tasa base (+14.0%).
@@ -7,92 +7,85 @@ Validación fuera de muestra (línea 4.5): Brier 0.2169 frente a 0.2523 de la ta
 > ven. La hipótesis a medir es que sus modelos supongan persistencia cuando
 > la correlación real es negativa. Una observación no demuestra nada.
 
-**En juego, esperando al descanso:** Millonarios vs Chico (min 46), Always Ready vs ABB (min 47), Lyon vs Rennes FC (min 47)
+**En juego, esperando al descanso:** Instituto Cordoba vs Talleres Córdoba (min 20), Pacific FC vs Vancouver FC (min 25), Emelec vs Libertad Asunción (min 36), São Paulo FC vs Internacional (min 36), Real Potosí vs Nacional Potosí (min 34), Union Omaha vs One Knoxville (min 30), Dragones de Oaxaca vs Cañoneros Marina (min 32), La Tribu De Cd. Juarez vs Vaqueros Reynosa (min 28), Real Esppor Club vs Deportivo Táchira (min 36), Sarasota Paradise vs Greenville Triumph (min 17), Alianza FC vs Deportivo Universitario (min 59), Deportivo Cali vs Cúcuta Deportivo (min 67), Tijuana Women vs Guadalajara Women (min 65), Inter vs Isidro Metapán (min 76), Forward Madison vs Alta (min 72), Chattanooga Red Wolves vs Portland Hearts of Pine (min 69), Atletico San Luis vs Necaxa (min 78), Louisville City FC vs Loudoun United FC (min 71), Carolina Ascent Women vs Brooklyn Women (min 71), Detroit City vs Pittsburgh Riverhounds (min 72), Charleston Battery vs Monterey Bay (min 72), Puntarenas FC vs Escorpiones Belén (min 74), Brooklyn vs FC Tulsa (min 69), Lexington vs Orange County SC (min 72), NY Cosmos vs Westchester SC (min 68), Atlas vs U.N.A.M. - Pumas (min 69), Deportivo Garcilaso vs Universitario (min 79)
 
 
-## Beira-Mar vs CF Os Belenenses  (Taça de Portugal)
-*Half time · minuto 45 · 0 - 0*
-
-**0 tarjetas** al descanso. Esperadas en la 2ª parte: **3.64**.
-
-*Sin mercado de tarjetas en vivo para este partido.*
-
-## Libertad Asunción vs Sportivo Ameliano  (Division Profesional - Clausura)
-*Half time · minuto 45 · 0 - 0*
-
-**4 tarjetas** al descanso (minutos ['27', '42', '42', '45+1']). Esperadas en la 2ª parte: **2.48**.
-
-*Sin mercado de tarjetas en vivo para este partido.*
-
-## Atletico-MG vs Chapecoense  (Serie A)
+## DC United vs Charlotte  (Major League Soccer)
 *Half time · minuto 45 · 0 - 1*
 
-**0 tarjetas** al descanso. Esperadas en la 2ª parte: **3.64**.
+**1 tarjetas** al descanso (minutos ['3']) · **12 faltas**. Esperadas en la 2ª parte: **3.35**.
 
 | Línea | Modelo | Mercado | Casas | Mejor cuota | Valor |
 |---|---|---|---|---|---|
-| 1.5 | 85% | 73% | 2 | 1.31 (Vbet Sport) | +11.2% |
-| 2.0 (push 18%) | 67% | 72% | 1 | 1.29 (Vbet Sport) | +4.4% |
-| 2.5 | 67% | 55% | 2 | 1.69 (Marathonbet) | +13.7% |
-| 3.0 (push 19%) | 48% | 45% | 1 | 2.07 (Vbet Sport) | +18.5% |
-| 3.5 | 48% | 35% | 2 | 2.68 (Marathonbet) | +28.2% ⚠ revisar modelo |
-| 4.0 (push 17%) | 31% | 24% | 1 | 3.9 (Vbet Sport) | +37.0% ⚠ revisar modelo |
-| 4.5 | 31% | 23% | 2 | 4.8 (Marathonbet) | +47.6% ⚠ revisar modelo |
-| 5.5 | 18% | 13% | 1 | 6.95 (Marathonbet) | +25.6% ⚠ revisar modelo |
+| 3.5 | 62% | 61% | 1 | 1.47 (Vbet Sport) | -8.6% |
+| 4.0 (push 20%) | 42% | 54% | 1 | 1.67 (Vbet Sport) | -9.6% |
+| 4.5 | 42% | 45% | 1 | 2.0 (Vbet Sport) | -15.6% |
 
-## Plaza Colonia vs Paysandu SC  (Segunda División)
+## San Jose Earthquakes vs Los Angeles FC  (Major League Soccer)
+*Half time · minuto 45 · 0 - 1*
+
+**1 tarjetas** al descanso (minutos ['37']) · **9 faltas**. Esperadas en la 2ª parte: **3.35**.
+
+| Línea | Modelo | Mercado | Casas | Mejor cuota | Valor |
+|---|---|---|---|---|---|
+| 3.5 | 62% | 59% | 1 | 1.57 (Vbet Sport) | -2.4% |
+| 4.0 (push 20%) | 42% | 50% | 1 | 1.86 (Vbet Sport) | -1.5% |
+| 4.5 | 42% | 41% | 1 | 2.27 (Vbet Sport) | -4.2% |
+
+## New England Revolution vs Orlando City  (Major League Soccer)
 *Half time · minuto 45 · 1 - 0*
 
+**1 tarjetas** al descanso (minutos ['14']) · **5 faltas**. Esperadas en la 2ª parte: **3.35**.
+
+| Línea | Modelo | Mercado | Casas | Mejor cuota | Valor |
+|---|---|---|---|---|---|
+| 3.5 | 62% | 54% | 1 | 1.7 (Vbet Sport) | +5.7% |
+| 4.0 (push 20%) | 42% | 44% | 1 | 2.08 (Vbet Sport) | +7.7% |
+
+## Rhode Island vs Miami FC  (USL Championship)
+*Half time · minuto 45 · 1 - 1*
+
+**2 tarjetas** al descanso (minutos ['29', '39']) · **22 faltas**. Esperadas en la 2ª parte: **3.06**.
+
+*Sin mercado de tarjetas en vivo para este partido.*
+
+## Vasco DA Gama vs Coritiba  (Serie A)
+*Half time · minuto 45 · 2 - 0*
+
+**0 tarjetas** al descanso · **4 faltas**. Esperadas en la 2ª parte: **3.64**.
+
+| Línea | Modelo | Mercado | Casas | Mejor cuota | Valor |
+|---|---|---|---|---|---|
+| 1.5 | 85% | 68% | 2 | 1.36 (Vbet Sport) | +15.4% |
+| 2.0 (push 18%) | 67% | 58% | 1 | 1.59 (Vbet Sport) | +24.6% ⚠ revisar modelo |
+| 2.5 | 67% | 45% | 2 | 2.1 (Vbet Sport) | +41.3% ⚠ revisar modelo |
+| 3.0 (push 19%) | 48% | 30% | 1 | 3.05 (Vbet Sport) | +65.3% ⚠ revisar modelo |
+| 3.5 | 48% | 27% | 2 | 3.48 (Marathonbet) | +66.5% ⚠ revisar modelo |
+| 4.0 (push 17%) | 31% | 27% | 1 | 3.4 (Vbet Sport) | +21.6% ⚠ revisar modelo |
+| 4.5 | 31% | 20% | 2 | 6.75 (Marathonbet) | +107.5% ⚠ revisar modelo |
+| 5.0 (push 13%) | 18% | 24% | 1 | 3.83 (Vbet Sport) | -18.1% |
+| 5.5 | 18% | 13% | 1 | 7.0 (Marathonbet) | +26.5% ⚠ revisar modelo |
+
+## Tampa Bay Rowdies vs Birmingham Legion  (USL Championship)
+*Half time · minuto 45 · 2 - 0*
+
 **0 tarjetas** al descanso. Esperadas en la 2ª parte: **3.64**.
 
 *Sin mercado de tarjetas en vivo para este partido.*
 
-## Cadiz vs Girona  (Segunda División)
+## Fort Wayne vs Naples  (USL League One)
 *Half time · minuto 45 · 0 - 2*
 
-**2 tarjetas** al descanso (minutos ['39', '45+2']). Esperadas en la 2ª parte: **3.06**.
-
-| Línea | Modelo | Mercado | Casas | Mejor cuota | Valor |
-|---|---|---|---|---|---|
-| 2.5 | 94% | 80% | 2 | 1.22 (Vbet Sport) | +14.1% |
-| 3.0 (push 16%) | 78% | 69% | 1 | 1.33 (Vbet Sport) | +19.2% |
-| 3.5 | 78% | 76% | 2 | 1.35 (Vbet Sport) | +4.8% |
-| 4.0 (push 21%) | 57% | 59% | 1 | 1.55 (Vbet Sport) | +8.7% |
-| 4.5 | 57% | 68% | 2 | 1.35 (Vbet Sport) | -23.7% |
-| 5.0 (push 20%) | 36% | 59% | 1 | 1.55 (Vbet Sport) | -23.4% |
-| 5.5 | 36% | 48% | 2 | 1.95 (Vbet Sport) | -29.0% |
-| 6.0 (push 15%) | 21% | 37% | 1 | 2.5 (Vbet Sport) | -31.9% |
-| 6.5 | 21% | 31% | 2 | 2.95 (Vbet Sport) | -37.7% |
-| 7.5 | 11% | 18% | 1 | 5.0 (Marathonbet) | -44.2% |
-| 8.5 | 5% | 13% | 1 | 7.0 (Marathonbet) | -61.8% |
-
-## Atletico de Rafaela vs San Martín de Tucumán  (Primera Nacional)
-*Half time · minuto 45 · 2 - 2*
-
-**2 tarjetas** al descanso (minutos ['31', '45+1']). Esperadas en la 2ª parte: **3.06**.
+**2 tarjetas** al descanso (minutos ['25', '45+3']) · **17 faltas**. Esperadas en la 2ª parte: **3.06**.
 
 *Sin mercado de tarjetas en vivo para este partido.*
 
-## Temperley vs Almagro  (Primera Nacional)
-*Half time · minuto 45 · 1 - 1*
-
-**5 tarjetas** al descanso (minutos ['19', '39', '42', '43', '45+1']). Esperadas en la 2ª parte: **2.19**.
-
-*Sin mercado de tarjetas en vivo para este partido.*
-
-## Willem II vs Fortuna Sittard  (Eredivisie)
+## Montréal Impact vs Columbus Crew  (Major League Soccer)
 *Half time · minuto 45 · 0 - 0*
 
-**1 tarjetas** al descanso (minutos ['19']). Esperadas en la 2ª parte: **3.35**.
+**2 tarjetas** al descanso (minutos ['2', '32']) · **16 faltas**. Esperadas en la 2ª parte: **3.06**.
 
 | Línea | Modelo | Mercado | Casas | Mejor cuota | Valor |
 |---|---|---|---|---|---|
-| 1.5 | 95% | 81% | 2 | 1.22 (Vbet Sport) | +15.9% |
-| 2.0 (push 13%) | 82% | 70% | 1 | 1.33 (Vbet Sport) | +21.9% ⚠ revisar modelo |
-| 2.5 | 82% | 68% | 2 | 1.35 (Vbet Sport) | +10.1% |
-| 3.0 (push 19%) | 62% | 59% | 1 | 1.56 (Vbet Sport) | +16.4% |
-| 3.5 | 62% | 45% | 2 | 2.08 (Marathonbet) | +29.3% ⚠ revisar modelo |
-| 4.0 (push 20%) | 42% | 31% | 1 | 3.0 (Vbet Sport) | +46.6% ⚠ revisar modelo |
-| 4.5 | 42% | 25% | 2 | 3.74 (Marathonbet) | +57.8% ⚠ revisar modelo |
-| 5.0 (push 16%) | 26% | 24% | 1 | 3.9 (Vbet Sport) | +17.1% |
-| 5.5 | 26% | 13% | 1 | 6.8 (Marathonbet) | +75.6% ⚠ revisar modelo |
+| 3.5 | 78% | 53% | 1 | 1.7 (Vbet Sport) | +32.0% ⚠ revisar modelo |
+| 4.0 (push 21%) | 57% | 44% | 1 | 2.04 (Vbet Sport) | +36.4% ⚠ revisar modelo |
