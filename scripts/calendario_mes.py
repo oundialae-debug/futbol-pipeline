@@ -40,7 +40,18 @@ RUTA_CALENDARIO = "data/calendario.csv"
 RUTA_INFORME = "calendario.md"
 
 DIAS = int(os.environ.get("DIAS", "30"))
-TEMPORADA = int(os.environ.get("TEMPORADA", "2025"))
+
+
+def temporada_actual(hoy=None):
+    """La temporada europea se nombra por el año en que empieza, y empieza en
+    verano: en septiembre de 2026 la temporada en curso es la 2026-27, o sea
+    2026. Poner el número a mano es pedir el calendario del año pasado y no
+    enterarse -- que es exactamente lo que pasó la primera vez."""
+    hoy = hoy or datetime.now(timezone.utc).date()
+    return hoy.year if hoy.month >= 7 else hoy.year - 1
+
+
+TEMPORADA = int(os.environ.get("TEMPORADA", "0")) or temporada_actual()
 
 # Las seis que cotizan tarjetas en vivo. Cada entrada lleva las formas en que
 # la API puede nombrarlas y el país, porque "Serie A" y "Segunda División"
@@ -143,10 +154,10 @@ def descubrir_ligas():
     return encontradas
 
 
-def partidos_de_liga(liga_id):
+def partidos_de_una_temporada(liga_id, temporada):
     todos = []
     for offset in range(0, 1200, 100):
-        lote = desempaquetar(pedir("/matches", {"leagueId": liga_id, "season": TEMPORADA,
+        lote = desempaquetar(pedir("/matches", {"leagueId": liga_id, "season": temporada,
                                                  "limit": 100, "offset": offset}))
         if not lote:
             break
@@ -156,9 +167,23 @@ def partidos_de_liga(liga_id):
     return todos
 
 
+def partidos_de_liga(liga_id):
+    """Prueba la temporada deducida y, si vuelve vacía, las de al lado.
+
+    No todas las ligas numeran igual ni arrancan el mismo mes, y una liga que
+    devuelve cero partidos es indistinguible de una temporada mal pedida. En
+    vez de dar por buena la deducción, se prueba y se dice cuál funcionó."""
+    for temporada in (TEMPORADA, TEMPORADA - 1, TEMPORADA + 1):
+        partidos = partidos_de_una_temporada(liga_id, temporada)
+        if partidos:
+            return partidos, temporada
+    return [], None
+
+
 def main():
     print("CALENDARIO DEL MES")
     print("Momento:", datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC"))
+    print(f"Temporada deducida: {TEMPORADA}")
 
     ligas = descubrir_ligas()
     if not ligas:
@@ -170,7 +195,11 @@ def main():
     filas = []
 
     for nombre, lid in ligas.items():
-        partidos = partidos_de_liga(lid)
+        partidos, temporada = partidos_de_liga(lid)
+        if not partidos:
+            print(f"  {nombre}: la API no devuelve partidos en ninguna temporada "
+                  f"probada ({TEMPORADA-1}, {TEMPORADA}, {TEMPORADA+1}) -- queda fuera")
+            continue
         dentro = 0
         for p in partidos:
             crudo = p.get("date")
@@ -198,7 +227,9 @@ def main():
                 "descanso_desde": (cuando + timedelta(minutes=45)).strftime("%H:%M"),
                 "descanso_hasta": (cuando + timedelta(minutes=62)).strftime("%H:%M"),
             })
-        print(f"  {nombre}: {len(partidos)} en la temporada, {dentro} en los próximos {DIAS} días")
+        aviso = "" if temporada == TEMPORADA else f"  [temporada {temporada}, no la deducida]"
+        print(f"  {nombre}: {len(partidos)} en la temporada {temporada}, "
+              f"{dentro} en los próximos {DIAS} días{aviso}")
 
     if not filas:
         print("Ningún partido en la ventana -- nada que escribir")
