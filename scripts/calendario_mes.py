@@ -53,16 +53,55 @@ def temporada_actual(hoy=None):
 
 TEMPORADA = int(os.environ.get("TEMPORADA", "0")) or temporada_actual()
 
-# Las seis que cotizan tarjetas en vivo. Cada entrada lleva las formas en que
-# la API puede nombrarlas y el país, porque "Serie A" y "Segunda División"
-# existen en media docena de países y sin filtrar por país se cuela Brasil.
+# Las seis que cotizan tarjetas en vivo.
+#
+# Identificarlas por NOMBRE no funciona, y no es una precaución teórica: la
+# primera versión filtraba por nombre y país, y trajo la Premier de Jamaica,
+# la Serie A de Brasil, la Segunda de Uruguay y una "La Liga" de El Salvador.
+# El filtro de país no sirvió porque la API no siempre trae el país dentro del
+# partido, y la rama de "si no lo dice, le doy el beneficio de la duda" se lo
+# tragaba todo.
+#
+# Así que cada liga se identifica por sus EQUIPOS, que no admiten confusión:
+# solo hay un Bayern Munich. Se exige encontrar al menos dos de la lista, para
+# que un nombre parecido suelto no baste -- "Inter" está en El Salvador y
+# "River Plate" en media Sudamérica.
 OBJETIVO = {
-    "La Liga":          {"patrones": [r"^la ?liga$", r"^primera divisi[oó]n$"],   "pais": ["spain", "españa"]},
-    "Segunda División": {"patrones": [r"^segunda divisi[oó]n$", r"^laliga 2$"],   "pais": ["spain", "españa"]},
-    "Premier League":   {"patrones": [r"^premier league$"],                       "pais": ["england", "inglaterra"]},
-    "Serie A":          {"patrones": [r"^serie a$"],                              "pais": ["italy", "italia"]},
-    "Bundesliga":       {"patrones": [r"^bundesliga$"],                           "pais": ["germany", "alemania"]},
-    "Ligue 1":          {"patrones": [r"^ligue 1$", r"^ligue 1 mcdonald'?s$"],    "pais": ["france", "francia"]},
+    "La Liga": {
+        "patrones": [r"^la ?liga$", r"^primera divisi[oó]n$", r"^laliga"],
+        "anclas": ["real madrid", "barcelona", "atletico madrid", "sevilla",
+                    "villarreal", "athletic", "real sociedad", "valencia",
+                    "betis", "celta"],
+    },
+    "Segunda División": {
+        "patrones": [r"^segunda divisi[oó]n$", r"^laliga ?2", r"^la ?liga ?2"],
+        "anclas": ["sporting gijon", "racing santander", "zaragoza", "eibar",
+                    "huesca", "albacete", "mirandes", "burgos", "almeria",
+                    "granada", "malaga", "cadiz", "leganes", "castellon",
+                    "cordoba", "las palmas"],
+    },
+    "Premier League": {
+        "patrones": [r"^premier league$", r"^english premier league$"],
+        "anclas": ["arsenal", "liverpool", "manchester", "chelsea",
+                    "tottenham", "everton", "newcastle", "aston villa",
+                    "west ham", "brighton"],
+    },
+    "Serie A": {
+        "patrones": [r"^serie a$", r"^serie a tim$"],
+        "anclas": ["juventus", "napoli", "atalanta", "fiorentina", "lazio",
+                    "udinese", "bologna", "torino", "verona", "milan",
+                    "roma", "cagliari"],
+    },
+    "Bundesliga": {
+        "patrones": [r"^bundesliga$", r"^1\.? bundesliga$"],
+        "anclas": ["bayern", "dortmund", "leipzig", "leverkusen", "wolfsburg",
+                    "frankfurt", "stuttgart", "werder", "freiburg", "mainz"],
+    },
+    "Ligue 1": {
+        "patrones": [r"^ligue 1", r"^ligue1$"],
+        "anclas": ["paris saint", "marseille", "lyon", "monaco", "lille",
+                    "rennes", "nice", "lens", "nantes", "strasbourg"],
+    },
 }
 
 FALLOS = {}
@@ -91,66 +130,87 @@ def desempaquetar(datos):
     return datos or []
 
 
-def encaja(liga, objetivo):
-    """Nombre Y país. Sin el país, 'Serie A' trae Brasil y Ecuador, y
-    'Segunda División' trae media Sudamérica."""
+def nombre_encaja(liga, objetivo):
     nombre = str(liga.get("name", "")).strip().lower()
-    if not any(re.match(p, nombre) for p in objetivo["patrones"]):
-        return False
-    pais = str((liga.get("country") or {}).get("name", "")).strip().lower()
-    if not pais:                      # si la API no dice país, no se descarta
-        return True
-    return any(c in pais for c in objetivo["pais"])
+    return any(re.match(p, nombre) for p in objetivo["patrones"])
+
+
+def equipos_de(partidos):
+    equipos = set()
+    for p in partidos:
+        for lado in ("homeTeam", "awayTeam"):
+            nombre = str((p.get(lado) or {}).get("name", "")).strip().lower()
+            if nombre:
+                equipos.add(nombre)
+    return equipos
+
+
+def anclas_encontradas(equipos, objetivo):
+    return {a for a in objetivo["anclas"] if any(a in e for e in equipos)}
 
 
 def descubrir_ligas():
     """Los ids no están documentados aquí, pero vienen dentro de cada partido.
-    Se barren unos días y se recogen. Se guarda el resultado para no repetirlo
-    cada semana."""
+
+    El nombre NO basta para elegir: hay una Premier League en Jamaica y una
+    Serie A en Brasil, y la API devuelve las dos. Así que se recogen TODAS las
+    candidatas cuyo nombre encaje, se mira qué equipos tiene cada una, y se
+    queda la que contenga al menos dos equipos que solo pueden ser de esa liga.
+    Si ninguna los tiene, se dice y se deja fuera: mejor una liga menos que
+    treinta días de calendario de otro país."""
     if os.path.exists(RUTA_LIGAS):
         guardadas = json.load(open(RUTA_LIGAS, encoding="utf-8"))
-        if len(guardadas) == len(OBJETIVO):
-            print(f"Ligas ya conocidas: {', '.join(guardadas)}")
-            return guardadas
+        if guardadas.get("_verificado") and len(guardadas) == len(OBJETIVO) + 1:
+            print(f"Ligas ya verificadas: "
+                  f"{', '.join(k for k in guardadas if not k.startswith('_'))}")
+            return {k: v for k, v in guardadas.items() if not k.startswith("_")}
+        print("El fichero de ligas no está verificado por equipos -- se rehace")
 
-    print("Descubriendo ids de liga...")
-    vistas, encontradas = {}, {}
+    print("Descubriendo ids de liga (y comprobándolos por sus equipos)...")
+    candidatas = {}
     hoy = datetime.now(timezone.utc).date()
-    # Se mira un rango de días para no depender de que hoy haya fútbol de las
-    # seis: un lunes de septiembre puede no haber Bundesliga.
     for salto in range(0, 12):
         fecha = (hoy + timedelta(days=salto)).isoformat()
         for offset in range(0, 900, 100):
-            lote = desempaquetar(pedir("/matches", {"date": fecha, "limit": 100, "offset": offset}, espera=0.2))
+            lote = desempaquetar(pedir("/matches", {"date": fecha, "limit": 100,
+                                                     "offset": offset}, espera=0.2))
             if not lote:
                 break
             for p in lote:
                 liga = p.get("league") or {}
                 if liga.get("id"):
-                    vistas[liga["id"]] = liga
+                    candidatas[liga["id"]] = liga
             if len(lote) < 100:
                 break
-        if len(encontradas) == len(OBJETIVO):
-            break
-        for nombre, obj in OBJETIVO.items():
-            if nombre in encontradas:
-                continue
-            for lid, liga in vistas.items():
-                if encaja(liga, obj):
-                    encontradas[nombre] = lid
-                    pais = (liga.get("country") or {}).get("name", "?")
-                    print(f"  {nombre}: id {lid}  (API: {liga.get('name')!r}, {pais})")
-                    break
 
-    faltan = [n for n in OBJETIVO if n not in encontradas]
-    if faltan:
-        # No se inventa un id ni se cuela una liga parecida: se dice cuál falta.
-        print(f"  AVISO -- sin id para: {', '.join(faltan)}. "
-              f"Esas ligas quedan fuera del calendario.")
+    encontradas = {}
+    for nombre, obj in OBJETIVO.items():
+        posibles = [lid for lid, liga in candidatas.items() if nombre_encaja(liga, obj)]
+        if not posibles:
+            print(f"  {nombre}: ninguna candidata por nombre")
+            continue
+        mejor, mejor_anclas = None, set()
+        for lid in posibles:
+            partidos, _ = partidos_de_liga(lid)
+            if not partidos:
+                continue
+            aciertos = anclas_encontradas(equipos_de(partidos), obj)
+            etiqueta = candidatas[lid].get("name")
+            print(f"    id {lid} ({etiqueta!r}): {len(aciertos)} equipos reconocidos"
+                  + (f" -> {', '.join(sorted(aciertos)[:4])}" if aciertos else ""))
+            if len(aciertos) > len(mejor_anclas):
+                mejor, mejor_anclas = lid, aciertos
+        if mejor is not None and len(mejor_anclas) >= 2:
+            encontradas[nombre] = mejor
+            print(f"  {nombre}: id {mejor}  ({len(mejor_anclas)} equipos reconocidos)")
+        else:
+            print(f"  {nombre}: NINGUNA candidata contiene sus equipos "
+                  f"-- queda fuera. Candidatas miradas: {posibles}")
+
     if encontradas:
         os.makedirs("data", exist_ok=True)
-        json.dump(encontradas, open(RUTA_LIGAS, "w", encoding="utf-8"),
-                  ensure_ascii=False, indent=2)
+        json.dump({**encontradas, "_verificado": True},
+                  open(RUTA_LIGAS, "w", encoding="utf-8"), ensure_ascii=False, indent=2)
     return encontradas
 
 
