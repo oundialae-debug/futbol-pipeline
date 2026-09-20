@@ -51,6 +51,15 @@ las comprobaciones concretas que los habrían pillado.
 
 ## Conclusiones
 
+- **Antes de montar un modelo para batir un precio, mide si ese precio está
+  mal.** Propuse los córners porque "en un mercado no vigilado el precio es
+  crudo y puede estar equivocado más de un 6%". Comprobable en cinco minutos
+  con datos que ya estaban en disco: se compara lo que perderías contra un
+  precio PERFECTO (`-margen/(1+margen)`) con lo que se perdió de verdad. En
+  córners el hueco es **+0.72%, a 0.70 sigmas**: el precio es exacto, solo
+  caro. Dos semanas de recolección ahorradas por una resta. Si el precio no
+  está torcido, un modelo mejor no tiene nada que corregir.
+
 - **No excluyas una familia entera por una parte complicada.** Dejé fuera el
   hándicap asiático completo porque las líneas de cuarto (±0.25, ±0.75) parten
   la apuesta en dos mitades. Las líneas 0 y ±0.5 son simples, y son
