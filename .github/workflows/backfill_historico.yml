@@ -1,0 +1,48 @@
+name: Backfill historico
+
+# Traer temporadas enteras de partidos jugados con sus estadisticas. Es
+# reanudable: si se queda a medio, se vuelve a lanzar y sigue donde lo dejo.
+on:
+  workflow_dispatch:
+    inputs:
+      temporadas:
+        description: 'Temporadas, separadas por coma'
+        required: false
+        default: '2026,2025'
+      tope_llamadas:
+        description: 'Maximo de llamadas a la API en esta pasada'
+        required: false
+        default: '5500'
+
+jobs:
+  backfill:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+      - run: pip install requests
+
+      - name: Traer historia
+        run: python scripts/backfill_historico.py
+        env:
+          HIGHLIGHTLY_API_KEY: ${{ secrets.HIGHLIGHTLY_API_KEY }}
+          TEMPORADAS: ${{ inputs.temporadas || '2026,2025' }}
+          TOPE_LLAMADAS: ${{ inputs.tope_llamadas || '5500' }}
+
+      - name: Guardar
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/historico_partidos.csv || true
+          if git diff --staged --quiet; then
+            echo "Sin cambios que guardar"
+            exit 0
+          fi
+          git commit -m "Historico: $(wc -l < data/historico_partidos.csv) filas ($(date -u +%Y-%m-%dT%H:%M))"
+          git pull --rebase origin main
+          git push
