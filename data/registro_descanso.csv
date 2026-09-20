@@ -90,48 +90,48 @@ match_id,partido,liga,minuto,estado,tarjetas_ht,linea,prob_modelo,prob_push,prob
 1320901709,Willem II vs Fortuna Sittard,Eredivisie,45,Half time,1,4.5,0.422,0.0,0.2498,2,3.74,Marathonbet,0.5783,False,2026-09-19T20:04:32+00:00,4.0,,,,,
 1320901709,Willem II vs Fortuna Sittard,Eredivisie,45,Half time,1,5.0,0.2582,0.1638,0.2368,1,3.9,Vbet Sport,0.1708,False,2026-09-19T20:04:32+00:00,4.0,,,,,
 1320901709,Willem II vs Fortuna Sittard,Eredivisie,45,Half time,1,5.5,0.2582,0.0,0.1349,1,6.8,Marathonbet,0.7558,False,2026-09-19T20:04:32+00:00,4.0,,,,,
-1268403519,DC United vs Charlotte,Major League Soccer,45,Half time,1,3.5,0.6216,0.0,0.6101,1,1.47,Vbet Sport,-0.0862,False,2026-09-20T00:36:46+00:00,,12.0,3.0,,,
-1268403519,DC United vs Charlotte,Major League Soccer,45,Half time,1,4.0,0.422,0.1996,0.5361,1,1.67,Vbet Sport,-0.0956,False,2026-09-20T00:36:46+00:00,,12.0,3.0,,,
-1268403519,DC United vs Charlotte,Major League Soccer,45,Half time,1,4.5,0.422,0.0,0.4475,1,2.0,Vbet Sport,-0.156,False,2026-09-20T00:36:46+00:00,,12.0,3.0,,,
-1268400966,San Jose Earthquakes vs Los Angeles FC,Major League Soccer,45,Half time,1,3.5,0.6216,0.0,0.589,1,1.57,Vbet Sport,-0.024,False,2026-09-20T00:36:48+00:00,,9.0,7.0,,,
-1268400966,San Jose Earthquakes vs Los Angeles FC,Major League Soccer,45,Half time,1,4.0,0.422,0.1996,0.4973,1,1.86,Vbet Sport,-0.0154,False,2026-09-20T00:36:48+00:00,,9.0,7.0,,,
-1268400966,San Jose Earthquakes vs Los Angeles FC,Major League Soccer,45,Half time,1,4.5,0.422,0.0,0.4073,1,2.27,Vbet Sport,-0.0421,False,2026-09-20T00:36:48+00:00,,9.0,7.0,,,
-1268402668,New England Revolution vs Orlando City,Major League Soccer,45,Half time,1,3.5,0.6216,0.0,0.543,1,1.7,Vbet Sport,0.0568,False,2026-09-20T00:36:49+00:00,,5.0,5.0,,,
-1268402668,New England Revolution vs Orlando City,Major League Soccer,45,Half time,1,4.0,0.422,0.1996,0.4439,1,2.08,Vbet Sport,0.0774,False,2026-09-20T00:36:49+00:00,,5.0,5.0,,,
-1270022972,Vasco DA Gama vs Coritiba,Serie A,45,Half time,0,1.5,0.8488,0.0,0.685,2,1.36,Vbet Sport,0.1543,False,2026-09-20T00:36:52+00:00,,4.0,6.0,,,
-1270022972,Vasco DA Gama vs Coritiba,Serie A,45,Half time,0,2.0,0.6729,0.1759,0.5816,1,1.59,Vbet Sport,0.2458,False,2026-09-20T00:36:52+00:00,,4.0,6.0,,,
-1270022972,Vasco DA Gama vs Coritiba,Serie A,45,Half time,0,2.5,0.6729,0.0,0.4478,2,2.1,Vbet Sport,0.4131,False,2026-09-20T00:36:52+00:00,,4.0,6.0,,,
-1270022972,Vasco DA Gama vs Coritiba,Serie A,45,Half time,0,3.0,0.4784,0.1945,0.3037,1,3.05,Vbet Sport,0.6535,False,2026-09-20T00:36:52+00:00,,4.0,6.0,,,
-1270022972,Vasco DA Gama vs Coritiba,Serie A,45,Half time,0,3.5,0.4784,0.0,0.2719,2,3.48,Marathonbet,0.6647,False,2026-09-20T00:36:52+00:00,,4.0,6.0,,,
-1270022972,Vasco DA Gama vs Coritiba,Serie A,45,Half time,0,4.0,0.3075,0.1709,0.2719,1,3.4,Vbet Sport,0.2163,False,2026-09-20T00:36:52+00:00,,4.0,6.0,,,
-1270022972,Vasco DA Gama vs Coritiba,Serie A,45,Half time,0,4.5,0.3075,0.0,0.2038,2,6.75,Marathonbet,1.0754,False,2026-09-20T00:36:52+00:00,,4.0,6.0,,,
-1270022972,Vasco DA Gama vs Coritiba,Serie A,45,Half time,0,5.0,0.1807,0.1268,0.2416,1,3.83,Vbet Sport,-0.1813,False,2026-09-20T00:36:52+00:00,,4.0,6.0,,,
-1270022972,Vasco DA Gama vs Coritiba,Serie A,45,Half time,0,5.5,0.1807,0.0,0.1304,1,7.0,Marathonbet,0.2646,False,2026-09-20T00:36:52+00:00,,4.0,6.0,,,
-1268401817,Montréal Impact vs Columbus Crew,Major League Soccer,45,Half time,2,3.5,0.7764,0.0,0.5278,1,1.7,Vbet Sport,0.3198,False,2026-09-20T00:36:57+00:00,,16.0,2.0,,,
-1268401817,Montréal Impact vs Columbus Crew,Major League Soccer,45,Half time,2,4.0,0.5651,0.2112,0.4396,1,2.04,Vbet Sport,0.3641,False,2026-09-20T00:36:57+00:00,,16.0,2.0,,,
-1268406923,FC Dallas vs Austin,Major League Soccer,45,Half time,2,3.5,0.7764,0.0,0.5741,1,1.61,Vbet Sport,0.25,False,2026-09-20T01:34:06+00:00,,4.0,6.0,1.61,0.5741,2026-09-20T02:07:26+00:00
-1268406923,FC Dallas vs Austin,Major League Soccer,45,Half time,2,4.0,0.5651,0.2112,0.4811,1,1.92,Vbet Sport,0.2963,False,2026-09-20T01:34:06+00:00,,4.0,6.0,1.92,0.4811,2026-09-20T02:07:26+00:00
-1268406923,FC Dallas vs Austin,Major League Soccer,45,Half time,2,4.5,0.5651,0.0,0.3943,1,2.35,Vbet Sport,0.3281,False,2026-09-20T01:34:06+00:00,,4.0,6.0,2.35,0.3943,2026-09-20T02:07:26+00:00
-1268407774,St. Louis City SC vs Toronto FC,Major League Soccer,45,Half time,2,3.5,0.7764,0.0,0.56,1,1.65,Vbet Sport,0.281,False,2026-09-20T01:34:08+00:00,,9.0,4.0,1.65,0.56,2026-09-20T02:07:26+00:00
-1268407774,St. Louis City SC vs Toronto FC,Major League Soccer,45,Half time,2,4.0,0.5651,0.2112,0.4624,1,2.0,Vbet Sport,0.3415,False,2026-09-20T01:34:08+00:00,,9.0,4.0,2.0,0.4624,2026-09-20T02:07:26+00:00
-1268407774,St. Louis City SC vs Toronto FC,Major League Soccer,45,Half time,2,4.5,0.5651,0.0,0.3791,1,2.44,Vbet Sport,0.3789,False,2026-09-20T01:34:08+00:00,,9.0,4.0,2.44,0.3791,2026-09-20T02:07:26+00:00
-1268405221,Houston Dynamo vs FC Cincinnati,Major League Soccer,45,Half time,0,3.0,0.4784,0.1945,0.6209,1,1.49,Vbet Sport,-0.0927,False,2026-09-20T01:34:09+00:00,,12.0,4.0,1.49,0.6209,2026-09-20T02:07:26+00:00
-1268405221,Houston Dynamo vs FC Cincinnati,Major League Soccer,45,Half time,0,3.5,0.4784,0.0,0.5,1,1.85,Vbet Sport,-0.115,False,2026-09-20T01:34:09+00:00,,12.0,4.0,1.85,0.5,2026-09-20T02:07:26+00:00
-1268405221,Houston Dynamo vs FC Cincinnati,Major League Soccer,45,Half time,0,4.0,0.3075,0.1709,0.3907,1,2.37,Vbet Sport,-0.1004,False,2026-09-20T01:34:09+00:00,,12.0,4.0,2.37,0.3907,2026-09-20T02:07:26+00:00
-1268404370,Minnesota United vs Los Angeles Galaxy,Major League Soccer,45,Second half,1,3.5,0.6216,0.0,0.5209,1,1.72,Vbet Sport,0.0692,False,2026-09-20T01:49:36+00:00,,11.0,3.0,1.72,0.5209,2026-09-20T02:07:26+00:00
-1268404370,Minnesota United vs Los Angeles Galaxy,Major League Soccer,45,Second half,1,4.0,0.422,0.1996,0.4223,1,2.12,Vbet Sport,0.0943,False,2026-09-20T01:49:36+00:00,,11.0,3.0,2.12,0.4223,2026-09-20T02:07:26+00:00
-1268406072,Sporting Kansas City vs Philadelphia Union,Major League Soccer,45,Half time,1,4.0,0.422,0.1996,0.6021,1,1.54,Vbet Sport,-0.1505,False,2026-09-20T01:49:38+00:00,,8.0,4.0,1.54,0.6021,2026-09-20T02:07:26+00:00
-1268406072,Sporting Kansas City vs Philadelphia Union,Major League Soccer,45,Half time,1,4.5,0.422,0.0,0.5,1,1.85,Vbet Sport,-0.2193,False,2026-09-20T01:49:38+00:00,,8.0,4.0,1.85,0.5,2026-09-20T02:07:26+00:00
-1268406072,Sporting Kansas City vs Philadelphia Union,Major League Soccer,45,Half time,1,5.0,0.2582,0.1638,0.3979,1,2.33,Vbet Sport,-0.2346,False,2026-09-20T01:49:38+00:00,,8.0,4.0,2.33,0.3979,2026-09-20T02:07:26+00:00
-1268410327,Nashville SC vs Chicago Fire,Major League Soccer,45,Half time,1,1.5,0.9501,0.0,0.7786,1,1.18,Marathonbet,0.1211,False,2026-09-20T02:43:01+00:00,,12.0,2.0,1.06,0.8651,2026-09-20T03:18:39+00:00
-1268410327,Nashville SC vs Chicago Fire,Major League Soccer,45,Half time,1,2.5,0.8157,0.0,0.6972,1,1.32,Marathonbet,0.0768,False,2026-09-20T02:43:01+00:00,,12.0,2.0,1.38,0.6667,2026-09-20T03:18:39+00:00
-1268410327,Nashville SC vs Chicago Fire,Major League Soccer,45,Half time,1,3.5,0.6216,0.0,0.4959,2,1.98,Marathonbet,0.2308,False,2026-09-20T02:43:01+00:00,,12.0,2.0,2.64,0.4376,2026-09-20T03:18:39+00:00
-1268410327,Nashville SC vs Chicago Fire,Major League Soccer,45,Half time,1,4.0,0.422,0.1996,0.4211,1,2.2,Vbet Sport,0.128,False,2026-09-20T02:43:01+00:00,,12.0,2.0,2.2,0.4211,2026-09-20T03:18:39+00:00
-1268410327,Nashville SC vs Chicago Fire,Major League Soccer,45,Half time,1,4.5,0.422,0.0,0.2643,1,3.48,Marathonbet,0.4686,False,2026-09-20T02:43:01+00:00,,12.0,2.0,6.45,0.1423,2026-09-20T03:18:39+00:00
-1268410327,Nashville SC vs Chicago Fire,Major League Soccer,45,Half time,1,5.5,0.2582,0.0,0.1375,1,6.65,Marathonbet,0.7171,False,2026-09-20T02:43:01+00:00,,12.0,2.0,6.9,0.1321,2026-09-20T03:18:39+00:00
-1268410327,Nashville SC vs Chicago Fire,Major League Soccer,45,Half time,1,6.5,0.1443,0.0,0.1294,1,7.0,Marathonbet,0.0099,False,2026-09-20T02:43:01+00:00,,12.0,2.0,7.0,0.1294,2026-09-20T03:18:39+00:00
-1268409476,Real Salt Lake vs Vancouver Whitecaps,Major League Soccer,45,Half time,0,4.0,0.3075,0.1709,0.5665,1,1.63,Vbet Sport,-0.3279,False,2026-09-20T02:43:03+00:00,,11.0,5.0,1.63,0.5665,2026-09-20T03:18:39+00:00
-1268409476,Real Salt Lake vs Vancouver Whitecaps,Major League Soccer,45,Half time,0,4.5,0.3075,0.0,0.4703,1,1.96,Vbet Sport,-0.3974,False,2026-09-20T02:43:03+00:00,,11.0,5.0,1.96,0.4703,2026-09-20T03:18:39+00:00
+1268403519,DC United vs Charlotte,Major League Soccer,45,Half time,1,3.5,0.6216,0.0,0.6101,1,1.47,Vbet Sport,-0.0862,False,2026-09-20T00:36:46+00:00,4.0,12.0,3.0,,,
+1268403519,DC United vs Charlotte,Major League Soccer,45,Half time,1,4.0,0.422,0.1996,0.5361,1,1.67,Vbet Sport,-0.0956,False,2026-09-20T00:36:46+00:00,4.0,12.0,3.0,,,
+1268403519,DC United vs Charlotte,Major League Soccer,45,Half time,1,4.5,0.422,0.0,0.4475,1,2.0,Vbet Sport,-0.156,False,2026-09-20T00:36:46+00:00,4.0,12.0,3.0,,,
+1268400966,San Jose Earthquakes vs Los Angeles FC,Major League Soccer,45,Half time,1,3.5,0.6216,0.0,0.589,1,1.57,Vbet Sport,-0.024,False,2026-09-20T00:36:48+00:00,4.0,9.0,7.0,,,
+1268400966,San Jose Earthquakes vs Los Angeles FC,Major League Soccer,45,Half time,1,4.0,0.422,0.1996,0.4973,1,1.86,Vbet Sport,-0.0154,False,2026-09-20T00:36:48+00:00,4.0,9.0,7.0,,,
+1268400966,San Jose Earthquakes vs Los Angeles FC,Major League Soccer,45,Half time,1,4.5,0.422,0.0,0.4073,1,2.27,Vbet Sport,-0.0421,False,2026-09-20T00:36:48+00:00,4.0,9.0,7.0,,,
+1268402668,New England Revolution vs Orlando City,Major League Soccer,45,Half time,1,3.5,0.6216,0.0,0.543,1,1.7,Vbet Sport,0.0568,False,2026-09-20T00:36:49+00:00,4.0,5.0,5.0,,,
+1268402668,New England Revolution vs Orlando City,Major League Soccer,45,Half time,1,4.0,0.422,0.1996,0.4439,1,2.08,Vbet Sport,0.0774,False,2026-09-20T00:36:49+00:00,4.0,5.0,5.0,,,
+1270022972,Vasco DA Gama vs Coritiba,Serie A,45,Half time,0,1.5,0.8488,0.0,0.685,2,1.36,Vbet Sport,0.1543,False,2026-09-20T00:36:52+00:00,3.0,4.0,6.0,,,
+1270022972,Vasco DA Gama vs Coritiba,Serie A,45,Half time,0,2.0,0.6729,0.1759,0.5816,1,1.59,Vbet Sport,0.2458,False,2026-09-20T00:36:52+00:00,3.0,4.0,6.0,,,
+1270022972,Vasco DA Gama vs Coritiba,Serie A,45,Half time,0,2.5,0.6729,0.0,0.4478,2,2.1,Vbet Sport,0.4131,False,2026-09-20T00:36:52+00:00,3.0,4.0,6.0,,,
+1270022972,Vasco DA Gama vs Coritiba,Serie A,45,Half time,0,3.0,0.4784,0.1945,0.3037,1,3.05,Vbet Sport,0.6535,False,2026-09-20T00:36:52+00:00,3.0,4.0,6.0,,,
+1270022972,Vasco DA Gama vs Coritiba,Serie A,45,Half time,0,3.5,0.4784,0.0,0.2719,2,3.48,Marathonbet,0.6647,False,2026-09-20T00:36:52+00:00,3.0,4.0,6.0,,,
+1270022972,Vasco DA Gama vs Coritiba,Serie A,45,Half time,0,4.0,0.3075,0.1709,0.2719,1,3.4,Vbet Sport,0.2163,False,2026-09-20T00:36:52+00:00,3.0,4.0,6.0,,,
+1270022972,Vasco DA Gama vs Coritiba,Serie A,45,Half time,0,4.5,0.3075,0.0,0.2038,2,6.75,Marathonbet,1.0754,False,2026-09-20T00:36:52+00:00,3.0,4.0,6.0,,,
+1270022972,Vasco DA Gama vs Coritiba,Serie A,45,Half time,0,5.0,0.1807,0.1268,0.2416,1,3.83,Vbet Sport,-0.1813,False,2026-09-20T00:36:52+00:00,3.0,4.0,6.0,,,
+1270022972,Vasco DA Gama vs Coritiba,Serie A,45,Half time,0,5.5,0.1807,0.0,0.1304,1,7.0,Marathonbet,0.2646,False,2026-09-20T00:36:52+00:00,3.0,4.0,6.0,,,
+1268401817,Montréal Impact vs Columbus Crew,Major League Soccer,45,Half time,2,3.5,0.7764,0.0,0.5278,1,1.7,Vbet Sport,0.3198,False,2026-09-20T00:36:57+00:00,3.0,16.0,2.0,,,
+1268401817,Montréal Impact vs Columbus Crew,Major League Soccer,45,Half time,2,4.0,0.5651,0.2112,0.4396,1,2.04,Vbet Sport,0.3641,False,2026-09-20T00:36:57+00:00,3.0,16.0,2.0,,,
+1268406923,FC Dallas vs Austin,Major League Soccer,45,Half time,2,3.5,0.7764,0.0,0.5741,1,1.61,Vbet Sport,0.25,False,2026-09-20T01:34:06+00:00,4.0,4.0,6.0,1.61,0.5741,2026-09-20T02:07:26+00:00
+1268406923,FC Dallas vs Austin,Major League Soccer,45,Half time,2,4.0,0.5651,0.2112,0.4811,1,1.92,Vbet Sport,0.2963,False,2026-09-20T01:34:06+00:00,4.0,4.0,6.0,1.92,0.4811,2026-09-20T02:07:26+00:00
+1268406923,FC Dallas vs Austin,Major League Soccer,45,Half time,2,4.5,0.5651,0.0,0.3943,1,2.35,Vbet Sport,0.3281,False,2026-09-20T01:34:06+00:00,4.0,4.0,6.0,2.35,0.3943,2026-09-20T02:07:26+00:00
+1268407774,St. Louis City SC vs Toronto FC,Major League Soccer,45,Half time,2,3.5,0.7764,0.0,0.56,1,1.65,Vbet Sport,0.281,False,2026-09-20T01:34:08+00:00,4.0,9.0,4.0,1.65,0.56,2026-09-20T02:07:26+00:00
+1268407774,St. Louis City SC vs Toronto FC,Major League Soccer,45,Half time,2,4.0,0.5651,0.2112,0.4624,1,2.0,Vbet Sport,0.3415,False,2026-09-20T01:34:08+00:00,4.0,9.0,4.0,2.0,0.4624,2026-09-20T02:07:26+00:00
+1268407774,St. Louis City SC vs Toronto FC,Major League Soccer,45,Half time,2,4.5,0.5651,0.0,0.3791,1,2.44,Vbet Sport,0.3789,False,2026-09-20T01:34:08+00:00,4.0,9.0,4.0,2.44,0.3791,2026-09-20T02:07:26+00:00
+1268405221,Houston Dynamo vs FC Cincinnati,Major League Soccer,45,Half time,0,3.0,0.4784,0.1945,0.6209,1,1.49,Vbet Sport,-0.0927,False,2026-09-20T01:34:09+00:00,0.0,12.0,4.0,1.49,0.6209,2026-09-20T02:07:26+00:00
+1268405221,Houston Dynamo vs FC Cincinnati,Major League Soccer,45,Half time,0,3.5,0.4784,0.0,0.5,1,1.85,Vbet Sport,-0.115,False,2026-09-20T01:34:09+00:00,0.0,12.0,4.0,1.85,0.5,2026-09-20T02:07:26+00:00
+1268405221,Houston Dynamo vs FC Cincinnati,Major League Soccer,45,Half time,0,4.0,0.3075,0.1709,0.3907,1,2.37,Vbet Sport,-0.1004,False,2026-09-20T01:34:09+00:00,0.0,12.0,4.0,2.37,0.3907,2026-09-20T02:07:26+00:00
+1268404370,Minnesota United vs Los Angeles Galaxy,Major League Soccer,45,Second half,1,3.5,0.6216,0.0,0.5209,1,1.72,Vbet Sport,0.0692,False,2026-09-20T01:49:36+00:00,0.0,11.0,3.0,1.72,0.5209,2026-09-20T02:07:26+00:00
+1268404370,Minnesota United vs Los Angeles Galaxy,Major League Soccer,45,Second half,1,4.0,0.422,0.1996,0.4223,1,2.12,Vbet Sport,0.0943,False,2026-09-20T01:49:36+00:00,0.0,11.0,3.0,2.12,0.4223,2026-09-20T02:07:26+00:00
+1268406072,Sporting Kansas City vs Philadelphia Union,Major League Soccer,45,Half time,1,4.0,0.422,0.1996,0.6021,1,1.54,Vbet Sport,-0.1505,False,2026-09-20T01:49:38+00:00,6.0,8.0,4.0,1.54,0.6021,2026-09-20T02:07:26+00:00
+1268406072,Sporting Kansas City vs Philadelphia Union,Major League Soccer,45,Half time,1,4.5,0.422,0.0,0.5,1,1.85,Vbet Sport,-0.2193,False,2026-09-20T01:49:38+00:00,6.0,8.0,4.0,1.85,0.5,2026-09-20T02:07:26+00:00
+1268406072,Sporting Kansas City vs Philadelphia Union,Major League Soccer,45,Half time,1,5.0,0.2582,0.1638,0.3979,1,2.33,Vbet Sport,-0.2346,False,2026-09-20T01:49:38+00:00,6.0,8.0,4.0,2.33,0.3979,2026-09-20T02:07:26+00:00
+1268410327,Nashville SC vs Chicago Fire,Major League Soccer,45,Half time,1,1.5,0.9501,0.0,0.7786,1,1.18,Marathonbet,0.1211,False,2026-09-20T02:43:01+00:00,2.0,12.0,2.0,1.06,0.8651,2026-09-20T03:18:39+00:00
+1268410327,Nashville SC vs Chicago Fire,Major League Soccer,45,Half time,1,2.5,0.8157,0.0,0.6972,1,1.32,Marathonbet,0.0768,False,2026-09-20T02:43:01+00:00,2.0,12.0,2.0,1.38,0.6667,2026-09-20T03:18:39+00:00
+1268410327,Nashville SC vs Chicago Fire,Major League Soccer,45,Half time,1,3.5,0.6216,0.0,0.4959,2,1.98,Marathonbet,0.2308,False,2026-09-20T02:43:01+00:00,2.0,12.0,2.0,2.64,0.4376,2026-09-20T03:18:39+00:00
+1268410327,Nashville SC vs Chicago Fire,Major League Soccer,45,Half time,1,4.0,0.422,0.1996,0.4211,1,2.2,Vbet Sport,0.128,False,2026-09-20T02:43:01+00:00,2.0,12.0,2.0,2.2,0.4211,2026-09-20T03:18:39+00:00
+1268410327,Nashville SC vs Chicago Fire,Major League Soccer,45,Half time,1,4.5,0.422,0.0,0.2643,1,3.48,Marathonbet,0.4686,False,2026-09-20T02:43:01+00:00,2.0,12.0,2.0,6.45,0.1423,2026-09-20T03:18:39+00:00
+1268410327,Nashville SC vs Chicago Fire,Major League Soccer,45,Half time,1,5.5,0.2582,0.0,0.1375,1,6.65,Marathonbet,0.7171,False,2026-09-20T02:43:01+00:00,2.0,12.0,2.0,6.9,0.1321,2026-09-20T03:18:39+00:00
+1268410327,Nashville SC vs Chicago Fire,Major League Soccer,45,Half time,1,6.5,0.1443,0.0,0.1294,1,7.0,Marathonbet,0.0099,False,2026-09-20T02:43:01+00:00,2.0,12.0,2.0,7.0,0.1294,2026-09-20T03:18:39+00:00
+1268409476,Real Salt Lake vs Vancouver Whitecaps,Major League Soccer,45,Half time,0,4.0,0.3075,0.1709,0.5665,1,1.63,Vbet Sport,-0.3279,False,2026-09-20T02:43:03+00:00,7.0,11.0,5.0,1.63,0.5665,2026-09-20T03:18:39+00:00
+1268409476,Real Salt Lake vs Vancouver Whitecaps,Major League Soccer,45,Half time,0,4.5,0.3075,0.0,0.4703,1,1.96,Vbet Sport,-0.3974,False,2026-09-20T02:43:03+00:00,7.0,11.0,5.0,1.96,0.4703,2026-09-20T03:18:39+00:00
 1268408625,Colorado Rapids vs Seattle Sounders,Major League Soccer,45,Half time,0,3.5,0.4784,0.0,0.5417,1,1.65,Vbet Sport,-0.2107,False,2026-09-20T03:18:39+00:00,,13.0,2.0,1.65,0.5417,2026-09-20T03:44:24+00:00
 1268408625,Colorado Rapids vs Seattle Sounders,Major League Soccer,45,Half time,0,4.0,0.3075,0.1709,0.4475,1,2.0,Vbet Sport,-0.2142,False,2026-09-20T03:18:39+00:00,,13.0,2.0,2.0,0.4475,2026-09-20T03:44:24+00:00
 1268411178,Portland Timbers vs Atlanta United FC,Major League Soccer,45,Half time,3,3.5,0.9163,0.0,0.589,1,1.57,Vbet Sport,0.4386,False,2026-09-20T03:44:24+00:00,,11.0,3.0,,,
