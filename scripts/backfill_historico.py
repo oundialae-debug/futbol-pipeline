@@ -72,6 +72,7 @@ ESTADISTICAS = [
 
 llamadas = [0]
 sin_estadistica = []
+ligas_vacias = []      # una liga que no devuelve NADA es un ID malo, no un hueco
 
 
 def pedir(path, params=None):
@@ -219,8 +220,12 @@ def main():
                         break
                     offset += 100
                     f.flush()
+                aviso = ""
+                if encontrados == 0:
+                    ligas_vacias.append((temporada, liga, liga_id))
+                    aviso = "   <== VACIA, el ID no devuelve nada"
                 print(f"  {temporada} {liga:16s} vistos {encontrados:4d}  "
-                      f"nuevos {guardados:4d}  (llamadas {llamadas[0]})")
+                      f"nuevos {guardados:4d}  (llamadas {llamadas[0]}){aviso}")
     finally:
         f.close()
 
@@ -234,6 +239,20 @@ def main():
     if llamadas[0] >= TOPE_LLAMADAS:
         print("\n[!] Tope alcanzado: queda historia por traer. "
               "Vuelve a lanzarlo, continúa donde lo dejó.")
+
+    # Una liga que devuelve cero partidos no es un hueco: es un ID equivocado.
+    # La primera version solo contaba los partidos sin estadisticas, y la
+    # Segunda se quedo fuera entera sin que nadie se enterara.
+    if ligas_vacias:
+        print("\n" + "!" * 68)
+        print("LIGAS QUE NO DEVOLVIERON NI UN PARTIDO:")
+        for temporada, liga, lid in ligas_vacias:
+            print(f"    {temporada}  {liga} (id {lid})")
+        print("\nUn ID que no devuelve nada no da error HTTP: devuelve una")
+        print("lista vacia. Corre scripts/buscar_ligas.py para ver los IDs")
+        print("buenos por pais.")
+        print("!" * 68)
+        raise SystemExit(2)
 
 
 if __name__ == "__main__":
