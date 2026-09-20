@@ -1,6 +1,6 @@
-# Backtest de valor -- 2026-09-20 18:55 UTC
+# Backtest de valor -- 2026-09-20 19:16 UTC
 
-137679 cotizaciones de 147 partidos ya jugados, de los últimos 25 días.
+174226 cotizaciones de 147 partidos ya jugados, de los últimos 25 días.
 
 Pregunta: las cuotas que baten al consenso, ¿ganan de verdad?
 
@@ -10,19 +10,19 @@ Pregunta: las cuotas que baten al consenso, ¿ganan de verdad?
 
 | Valor contra el consenso | Apuestas | Aciertos | Retorno | Por apuesta |
 |---|---|---|---|---|
-| por debajo de -2% | 124898 | 47.8% | -7596.7 u | **-6.08%** |
-| -2% a 0% | 7706 | 34.6% | -157.0 u | **-2.04%** |
-| 0% a +2% | 2944 | 28.3% | -161.6 u | **-5.49%** |
-| +2% a +5% | 1475 | 24.7% | -72.3 u | **-4.90%** |
-| más de +5% | 656 | 21.2% | -57.3 u | **-8.73%** |
+| por debajo de -2% | 154560 | 49.4% | -13180.2 u | **-8.53%** |
+| -2% a 0% | 9300 | 30.2% | -527.5 u | **-5.67%** |
+| 0% a +2% | 4103 | 22.8% | -365.2 u | **-8.90%** |
+| +2% a +5% | 2761 | 16.5% | -525.4 u | **-19.03%** |
+| más de +5% | 3502 | 8.3% | -962.5 u | **-27.48%** |
 
 ## Lo que decide
 
-Apostando solo las cuotas con más de un 2% de valor: **2131 apuestas** en 141 partidos.
+Apostando solo las cuotas con más de un 2% de valor: **6263 apuestas** en 147 partidos.
 
-- Retorno: **-129.55 unidades** (-6.08% por apuesta)
-- Margen de error (1 sigma, agrupando por partido): ±10.10 puntos
-- El resto de cuotas rinde -5.84% por apuesta
+- Retorno: **-1487.92 unidades** (-23.76% por apuesta)
+- Margen de error (1 sigma, agrupando por partido): ±12.17 puntos
+- El resto de cuotas rinde -8.38% por apuesta
 
 > Negativo. El valor contra el consenso no se convierte en dinero.
 
@@ -32,5 +32,5 @@ Apostando solo las cuotas con más de un 2% de valor: **2131 apuestas** en 141 p
 | Mercado | Apuestas | Por apuesta |
 |---|---|---|
 | Both Teams To Score | 32 | -16.72% |
-| Full Time Result | 144 | -5.69% |
-| Total Goals | 1940 | -6.03% |
+| Full Time Result | 368 | -54.99% |
+| Total Goals | 5848 | -21.91% |
