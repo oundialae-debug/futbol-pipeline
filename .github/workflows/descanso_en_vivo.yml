@@ -40,6 +40,11 @@ on:
     - cron: '*/15 9-23 * * *'
     # América en prime time.
     - cron: '*/15 0-3 * * *'
+    # Asia y Oceanía. Quedaba sin cubrir por prudencia con el límite de la
+    # API, pero el consumo real es del 8% del tope, así que la prudencia
+    # sobraba. De esta franja no ha salido todavía ninguna observación con
+    # mercado -- que es justamente el motivo para mirar: no lo sabemos.
+    - cron: '*/15 4-8 * * *'
 
 jobs:
   descanso:

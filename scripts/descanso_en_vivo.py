@@ -71,7 +71,7 @@ MINUTO_MAXIMO = 87
 # Cuántos partidos se analizan por pasada. Cada uno cuesta tres llamadas
 # (detalle, estadísticas y cuotas), así que subirlo acumula descansos más
 # deprisa pero acerca el límite de la API.
-MAXIMO_POR_PASADA = int(os.environ.get("MAXIMO_POR_PASADA", "12"))
+MAXIMO_POR_PASADA = int(os.environ.get("MAXIMO_POR_PASADA", "20"))
 EV_SOSPECHOSO = 0.20
 
 # Ventana de VIGILANCIA: partidos a mirar. Dentro de ella, solo se evalúan

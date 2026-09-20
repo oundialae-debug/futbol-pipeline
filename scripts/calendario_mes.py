@@ -249,7 +249,7 @@ def partidos_de_liga(liga_id):
 # ninguna observación con mercado, pero si el calendario mete partidos ahí,
 # el aviso de abajo lo dirá en vez de dejarlos caer.
 COBERTURA = {d: (0, 23) for d in range(7)}
-HORAS_MUERTAS = range(4, 9)
+HORAS_MUERTAS = range(0, 0)   # ya no queda ninguna: se cubre el día entero
 
 
 def avisar_de_cobertura(cal, lineas):
