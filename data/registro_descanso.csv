@@ -164,30 +164,30 @@ match_id,partido,liga,minuto,estado,tarjetas_ht,linea,prob_modelo,prob_push,prob
 1336016320,Sabadell vs Oviedo,Segunda División,45,Half time,0,5.0,0.1807,0.1268,0.2779,1,3.3,Vbet Sport,-0.277,False,2026-09-20T13:07:47+00:00,,14.0,2.0,3.3,0.2779,2026-09-20T13:37:27+00:00
 1336016320,Sabadell vs Oviedo,Segunda División,45,Half time,0,5.5,0.1807,0.0,0.1971,2,6.9,Marathonbet,0.2465,False,2026-09-20T13:07:47+00:00,,14.0,2.0,6.9,0.1971,2026-09-20T13:37:27+00:00
 1336016320,Sabadell vs Oviedo,Segunda División,45,Half time,0,6.5,0.0981,0.0,0.1294,1,7.0,Marathonbet,-0.3134,False,2026-09-20T13:07:47+00:00,,14.0,2.0,7.0,0.1294,2026-09-20T13:37:27+00:00
-1321404650,Auxerre vs Stade Brestois 29,Ligue 1,45,Half time,0,1.5,0.8488,0.0,0.7807,1,1.18,Marathonbet,0.0016,False,2026-09-20T13:50:52+00:00,,13.0,4.0,,,
-1321404650,Auxerre vs Stade Brestois 29,Ligue 1,45,Half time,0,2.0,0.6729,0.1759,0.7159,1,1.29,Vbet Sport,0.0439,False,2026-09-20T13:50:52+00:00,,13.0,4.0,,,
-1321404650,Auxerre vs Stade Brestois 29,Ligue 1,45,Half time,0,2.5,0.6729,0.0,0.5672,2,1.64,Vbet Sport,0.1035,False,2026-09-20T13:50:52+00:00,,13.0,4.0,,,
-1321404650,Auxerre vs Stade Brestois 29,Ligue 1,45,Half time,0,3.0,0.4784,0.1945,0.4465,1,2.07,Vbet Sport,0.1847,False,2026-09-20T13:50:52+00:00,,13.0,4.0,,,
-1321404650,Auxerre vs Stade Brestois 29,Ligue 1,45,Half time,0,3.5,0.4784,0.0,0.3635,2,2.59,Vbet Sport,0.239,False,2026-09-20T13:50:52+00:00,,13.0,4.0,,,
-1321404650,Auxerre vs Stade Brestois 29,Ligue 1,45,Half time,0,4.0,0.3075,0.1709,0.2719,1,3.4,Vbet Sport,0.2163,False,2026-09-20T13:50:52+00:00,,13.0,4.0,,,
-1321404650,Auxerre vs Stade Brestois 29,Ligue 1,45,Half time,0,4.5,0.3075,0.0,0.2186,2,4.4,Marathonbet,0.3528,False,2026-09-20T13:50:52+00:00,,13.0,4.0,,,
-1321404650,Auxerre vs Stade Brestois 29,Ligue 1,45,Half time,0,5.5,0.1807,0.0,0.1313,1,6.95,Marathonbet,0.2555,False,2026-09-20T13:50:52+00:00,,13.0,4.0,,,
-1325354141,Bournemouth vs Liverpool,Premier League,45,Half time,0,1.5,0.8488,0.0,0.6914,1,1.33,Marathonbet,0.1289,False,2026-09-20T13:50:53+00:00,,12.0,3.0,,,
-1325354141,Bournemouth vs Liverpool,Premier League,45,Half time,0,2.0,0.6729,0.1759,0.6585,1,1.4,Vbet Sport,0.1179,False,2026-09-20T13:50:53+00:00,,12.0,3.0,,,
-1325354141,Bournemouth vs Liverpool,Premier League,45,Half time,0,2.5,0.6729,0.0,0.4791,2,2.03,Marathonbet,0.366,False,2026-09-20T13:50:53+00:00,,12.0,3.0,,,
-1325354141,Bournemouth vs Liverpool,Premier League,45,Half time,0,3.0,0.4784,0.1945,0.3791,1,2.44,Vbet Sport,0.3617,False,2026-09-20T13:50:53+00:00,,12.0,3.0,,,
-1325354141,Bournemouth vs Liverpool,Premier League,45,Half time,0,3.5,0.4784,0.0,0.281,2,3.56,Marathonbet,0.703,False,2026-09-20T13:50:53+00:00,,12.0,3.0,,,
-1325354141,Bournemouth vs Liverpool,Premier League,45,Half time,0,4.0,0.3075,0.1709,0.2536,1,3.65,Vbet Sport,0.2931,False,2026-09-20T13:50:53+00:00,,12.0,3.0,,,
-1325354141,Bournemouth vs Liverpool,Premier League,45,Half time,0,4.5,0.3075,0.0,0.2034,2,6.8,Marathonbet,1.0908,False,2026-09-20T13:50:53+00:00,,12.0,3.0,,,
-1325354141,Bournemouth vs Liverpool,Premier League,45,Half time,0,5.5,0.1807,0.0,0.1304,1,7.0,Marathonbet,0.2646,False,2026-09-20T13:50:53+00:00,,12.0,3.0,,,
-1325358396,Leeds vs Crystal Palace,Premier League,45,Half time,1,1.5,0.9501,0.0,0.734,2,1.28,Vbet Sport,0.2161,False,2026-09-20T13:50:55+00:00,,11.0,4.0,,,
-1325358396,Leeds vs Crystal Palace,Premier League,45,Half time,1,2.0,0.8157,0.1344,0.6469,1,1.43,Vbet Sport,0.3009,False,2026-09-20T13:50:55+00:00,,11.0,4.0,,,
-1325358396,Leeds vs Crystal Palace,Premier League,45,Half time,1,2.5,0.8157,0.0,0.7021,2,1.36,Marathonbet,0.1094,False,2026-09-20T13:50:55+00:00,,11.0,4.0,,,
-1325358396,Leeds vs Crystal Palace,Premier League,45,Half time,1,3.0,0.6216,0.1941,0.6553,1,1.41,Vbet Sport,0.0706,False,2026-09-20T13:50:55+00:00,,11.0,4.0,,,
-1325358396,Leeds vs Crystal Palace,Premier League,45,Half time,1,3.5,0.6216,0.0,0.4725,2,2.08,Marathonbet,0.293,False,2026-09-20T13:50:55+00:00,,11.0,4.0,,,
-1325358396,Leeds vs Crystal Palace,Premier League,45,Half time,1,4.0,0.422,0.1996,0.3766,1,2.45,Vbet Sport,0.2335,False,2026-09-20T13:50:55+00:00,,11.0,4.0,,,
-1325358396,Leeds vs Crystal Palace,Premier League,45,Half time,1,4.5,0.422,0.0,0.2691,2,3.84,Marathonbet,0.6205,False,2026-09-20T13:50:55+00:00,,11.0,4.0,,,
-1325358396,Leeds vs Crystal Palace,Premier League,45,Half time,1,5.5,0.2582,0.0,0.1384,1,6.6,Marathonbet,0.7042,False,2026-09-20T13:50:55+00:00,,11.0,4.0,,,
+1321404650,Auxerre vs Stade Brestois 29,Ligue 1,45,Half time,0,1.5,0.8488,0.0,0.7807,1,1.18,Marathonbet,0.0016,False,2026-09-20T13:50:52+00:00,,13.0,4.0,1.74,0.5324,2026-09-20T14:24:06+00:00
+1321404650,Auxerre vs Stade Brestois 29,Ligue 1,45,Half time,0,2.0,0.6729,0.1759,0.7159,1,1.29,Vbet Sport,0.0439,False,2026-09-20T13:50:52+00:00,,13.0,4.0,2.45,0.3766,2026-09-20T14:24:06+00:00
+1321404650,Auxerre vs Stade Brestois 29,Ligue 1,45,Half time,0,2.5,0.6729,0.0,0.5672,2,1.64,Vbet Sport,0.1035,False,2026-09-20T13:50:52+00:00,,13.0,4.0,3.2,0.2881,2026-09-20T14:24:06+00:00
+1321404650,Auxerre vs Stade Brestois 29,Ligue 1,45,Half time,0,3.0,0.4784,0.1945,0.4465,1,2.07,Vbet Sport,0.1847,False,2026-09-20T13:50:52+00:00,,13.0,4.0,3.05,0.3037,2026-09-20T14:24:06+00:00
+1321404650,Auxerre vs Stade Brestois 29,Ligue 1,45,Half time,0,3.5,0.4784,0.0,0.3635,2,2.59,Vbet Sport,0.239,False,2026-09-20T13:50:52+00:00,,13.0,4.0,6.6,0.2024,2026-09-20T14:24:06+00:00
+1321404650,Auxerre vs Stade Brestois 29,Ligue 1,45,Half time,0,4.0,0.3075,0.1709,0.2719,1,3.4,Vbet Sport,0.2163,False,2026-09-20T13:50:52+00:00,,13.0,4.0,3.4,0.2719,2026-09-20T14:24:06+00:00
+1321404650,Auxerre vs Stade Brestois 29,Ligue 1,45,Half time,0,4.5,0.3075,0.0,0.2186,2,4.4,Marathonbet,0.3528,False,2026-09-20T13:50:52+00:00,,13.0,4.0,6.8,0.1817,2026-09-20T14:24:06+00:00
+1321404650,Auxerre vs Stade Brestois 29,Ligue 1,45,Half time,0,5.5,0.1807,0.0,0.1313,1,6.95,Marathonbet,0.2555,False,2026-09-20T13:50:52+00:00,,13.0,4.0,6.95,0.1313,2026-09-20T14:24:06+00:00
+1325354141,Bournemouth vs Liverpool,Premier League,45,Half time,0,1.5,0.8488,0.0,0.6914,1,1.33,Marathonbet,0.1289,False,2026-09-20T13:50:53+00:00,,12.0,3.0,1.37,0.7556,2026-09-20T14:24:06+00:00
+1325354141,Bournemouth vs Liverpool,Premier League,45,Half time,0,2.0,0.6729,0.1759,0.6585,1,1.4,Vbet Sport,0.1179,False,2026-09-20T13:50:53+00:00,,12.0,3.0,1.61,0.5741,2026-09-20T14:24:06+00:00
+1325354141,Bournemouth vs Liverpool,Premier League,45,Half time,0,2.5,0.6729,0.0,0.4791,2,2.03,Marathonbet,0.366,False,2026-09-20T13:50:53+00:00,,12.0,3.0,1.64,0.5659,2026-09-20T14:24:06+00:00
+1325354141,Bournemouth vs Liverpool,Premier League,45,Half time,0,3.0,0.4784,0.1945,0.3791,1,2.44,Vbet Sport,0.3617,False,2026-09-20T13:50:53+00:00,,12.0,3.0,1.28,0.7205,2026-09-20T14:24:06+00:00
+1325354141,Bournemouth vs Liverpool,Premier League,45,Half time,0,3.5,0.4784,0.0,0.281,2,3.56,Marathonbet,0.703,False,2026-09-20T13:50:53+00:00,,12.0,3.0,2.88,0.4163,2026-09-20T14:24:06+00:00
+1325354141,Bournemouth vs Liverpool,Premier League,45,Half time,0,4.0,0.3075,0.1709,0.2536,1,3.65,Vbet Sport,0.2931,False,2026-09-20T13:50:53+00:00,,12.0,3.0,2.62,0.3531,2026-09-20T14:24:06+00:00
+1325354141,Bournemouth vs Liverpool,Premier League,45,Half time,0,4.5,0.3075,0.0,0.2034,2,6.8,Marathonbet,1.0908,False,2026-09-20T13:50:53+00:00,,12.0,3.0,5.9,0.2133,2026-09-20T14:24:06+00:00
+1325354141,Bournemouth vs Liverpool,Premier League,45,Half time,0,5.5,0.1807,0.0,0.1304,1,7.0,Marathonbet,0.2646,False,2026-09-20T13:50:53+00:00,,12.0,3.0,6.9,0.1321,2026-09-20T14:24:06+00:00
+1325358396,Leeds vs Crystal Palace,Premier League,45,Half time,1,1.5,0.9501,0.0,0.734,2,1.28,Vbet Sport,0.2161,False,2026-09-20T13:50:55+00:00,,11.0,4.0,1.28,0.7891,2026-09-20T14:24:06+00:00
+1325358396,Leeds vs Crystal Palace,Premier League,45,Half time,1,2.0,0.8157,0.1344,0.6469,1,1.43,Vbet Sport,0.3009,False,2026-09-20T13:50:55+00:00,,11.0,4.0,1.28,0.7205,2026-09-20T14:24:06+00:00
+1325358396,Leeds vs Crystal Palace,Premier League,45,Half time,1,2.5,0.8157,0.0,0.7021,2,1.36,Marathonbet,0.1094,False,2026-09-20T13:50:55+00:00,,11.0,4.0,1.79,0.5607,2026-09-20T14:24:06+00:00
+1325358396,Leeds vs Crystal Palace,Premier League,45,Half time,1,3.0,0.6216,0.1941,0.6553,1,1.41,Vbet Sport,0.0706,False,2026-09-20T13:50:55+00:00,,11.0,4.0,2.59,0.3573,2026-09-20T14:24:06+00:00
+1325358396,Leeds vs Crystal Palace,Premier League,45,Half time,1,3.5,0.6216,0.0,0.4725,2,2.08,Marathonbet,0.293,False,2026-09-20T13:50:55+00:00,,11.0,4.0,3.4,0.3143,2026-09-20T14:24:06+00:00
+1325358396,Leeds vs Crystal Palace,Premier League,45,Half time,1,4.0,0.422,0.1996,0.3766,1,2.45,Vbet Sport,0.2335,False,2026-09-20T13:50:55+00:00,,11.0,4.0,3.3,0.2795,2026-09-20T14:24:06+00:00
+1325358396,Leeds vs Crystal Palace,Premier League,45,Half time,1,4.5,0.422,0.0,0.2691,2,3.84,Marathonbet,0.6205,False,2026-09-20T13:50:55+00:00,,11.0,4.0,5.1,0.2078,2026-09-20T14:24:06+00:00
+1325358396,Leeds vs Crystal Palace,Premier League,45,Half time,1,5.5,0.2582,0.0,0.1384,1,6.6,Marathonbet,0.7042,False,2026-09-20T13:50:55+00:00,,11.0,4.0,6.6,0.1384,2026-09-20T14:24:06+00:00
 1325359247,Manchester City vs Sunderland,Premier League,45,Half time,1,1.5,0.9501,0.0,0.8587,1,1.07,Marathonbet,0.0166,False,2026-09-20T14:08:38+00:00,,14.0,5.0,,,
 1325359247,Manchester City vs Sunderland,Premier League,45,Half time,1,2.5,0.8157,0.0,0.6251,2,1.49,Marathonbet,0.2155,False,2026-09-20T14:08:38+00:00,,14.0,5.0,,,
 1325359247,Manchester City vs Sunderland,Premier League,45,Half time,1,3.0,0.6216,0.1941,0.5162,1,1.79,Vbet Sport,0.3068,False,2026-09-20T14:08:38+00:00,,14.0,5.0,,,
@@ -207,3 +207,13 @@ match_id,partido,liga,minuto,estado,tarjetas_ht,linea,prob_modelo,prob_push,prob
 1319162265,Frosinone vs Como,Serie A,45,Half time,2,5.5,0.3642,0.0,0.3088,2,3.15,Vbet Sport,0.1474,False,2026-09-20T14:08:40+00:00,,12.0,6.0,,,
 1319162265,Frosinone vs Como,Serie A,45,Half time,2,6.5,0.2111,0.0,0.1773,1,5.15,Marathonbet,0.0871,False,2026-09-20T14:08:40+00:00,,12.0,6.0,,,
 1319162265,Frosinone vs Como,Serie A,45,Half time,2,7.5,0.1117,0.0,0.143,1,6.35,Marathonbet,-0.2909,False,2026-09-20T14:08:40+00:00,,12.0,6.0,,,
+1340469603,Bayer Leverkusen vs RB Leipzig,Bundesliga,45,Half time,1,1.5,0.9501,0.0,0.8383,1,1.08,Marathonbet,0.0261,False,2026-09-20T14:24:06+00:00,,12.0,4.0,,,
+1340469603,Bayer Leverkusen vs RB Leipzig,Bundesliga,45,Half time,1,2.0,0.8157,0.1344,0.7205,1,1.28,Vbet Sport,0.1785,False,2026-09-20T14:24:06+00:00,,12.0,4.0,,,
+1340469603,Bayer Leverkusen vs RB Leipzig,Bundesliga,45,Half time,1,2.5,0.8157,0.0,0.6609,2,1.41,Marathonbet,0.1502,False,2026-09-20T14:24:06+00:00,,12.0,4.0,,,
+1340469603,Bayer Leverkusen vs RB Leipzig,Bundesliga,45,Half time,1,3.0,0.6216,0.1941,0.5703,1,1.62,Vbet Sport,0.2012,False,2026-09-20T14:24:06+00:00,,12.0,4.0,,,
+1340469603,Bayer Leverkusen vs RB Leipzig,Bundesliga,45,Half time,1,3.5,0.6216,0.0,0.4201,2,2.24,Marathonbet,0.3925,False,2026-09-20T14:24:06+00:00,,12.0,4.0,,,
+1340469603,Bayer Leverkusen vs RB Leipzig,Bundesliga,45,Half time,1,4.0,0.422,0.1996,0.2889,1,3.2,Vbet Sport,0.55,False,2026-09-20T14:24:06+00:00,,12.0,4.0,,,
+1340469603,Bayer Leverkusen vs RB Leipzig,Bundesliga,45,Half time,1,4.5,0.422,0.0,0.2456,2,4.2,Marathonbet,0.7724,False,2026-09-20T14:24:06+00:00,,12.0,4.0,,,
+1340469603,Bayer Leverkusen vs RB Leipzig,Bundesliga,45,Half time,1,5.0,0.2582,0.1638,0.2719,1,3.4,Vbet Sport,0.0417,False,2026-09-20T14:24:06+00:00,,12.0,4.0,,,
+1340469603,Bayer Leverkusen vs RB Leipzig,Bundesliga,45,Half time,1,5.5,0.2582,0.0,0.1349,1,6.8,Marathonbet,0.7558,False,2026-09-20T14:24:06+00:00,,12.0,4.0,,,
+1340469603,Bayer Leverkusen vs RB Leipzig,Bundesliga,45,Half time,1,6.5,0.1443,0.0,0.1304,1,7.0,Marathonbet,0.0099,False,2026-09-20T14:24:06+00:00,,12.0,4.0,,,
