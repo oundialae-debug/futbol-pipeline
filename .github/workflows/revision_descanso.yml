@@ -9,6 +9,15 @@ on:
         description: 'Solo el sondeo de faltas, sin cerrar el registro'
         required: false
         default: 'no'
+  schedule:
+    # El registro se llenaba solo pero nadie lo cerraba: las observaciones se
+    # quedaban sin resultado hasta que alguien lanzaba esto a mano. Un dato
+    # que nadie resuelve no mide nada.
+    #
+    # 23:10 UTC: ya han terminado los partidos europeos de la noche. Los
+    # americanos de madrugada quedan para la pasada del día siguiente, que es
+    # lo correcto -- el cierre solo puntúa partidos terminados.
+    - cron: '10 23 * * *'
 
 jobs:
   revision:
@@ -30,7 +39,10 @@ jobs:
           HIGHLIGHTLY_API_KEY: ${{ secrets.HIGHLIGHTLY_API_KEY }}
           PYTHONPATH: scripts
 
+      # Ya contestó lo suyo (no hay desglose por tiempos, pero los acumulados
+      # de un partido en juego van al minuto). Solo a mano.
       - name: Sondear las faltas
+        if: github.event_name == 'workflow_dispatch'
         run: python scripts/sondeo_faltas.py
         env:
           HIGHLIGHTLY_API_KEY: ${{ secrets.HIGHLIGHTLY_API_KEY }}

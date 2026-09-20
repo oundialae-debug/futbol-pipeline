@@ -691,16 +691,19 @@ def main():
         bloques.append((info, filas))
         todas.extend(filas)
 
-    escribir_informe(bloques, esperando, a, b, phi, base)
-    informar_de_fallos()
-    apuntar_consumo(consumo)
+    # ORDEN IMPORTANTE. La segunda foto gasta hasta ocho llamadas, y antes
+    # corría DESPUÉS de apuntar el consumo: no se contaban nunca. El tope
+    # diario iba corto sin enterarse, que es justo el agujero que el contador
+    # existe para tapar. Ahora todo lo que pide la API pasa antes de contar.
     if not FORZAR:
         guardar_log(todas)
-        # Después de guardar, para que las líneas de esta pasada entren ya en
-        # la cola de la segunda foto.
         segunda_foto()
     else:
         print("\n[log] omitido: ejecución forzada fuera del descanso")
+
+    escribir_informe(bloques, esperando, a, b, phi, base)
+    informar_de_fallos()
+    apuntar_consumo(consumo)
 
 
 if __name__ == "__main__":
