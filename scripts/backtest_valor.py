@@ -65,6 +65,7 @@ MIN_CASAS = 8
 PROB_MINIMA = float(os.environ.get("PROB_MINIMA", "0.15"))
 PROB_MAXIMA = float(os.environ.get("PROB_MAXIMA", "0.85"))
 LLAMADAS = [0]
+VERIFICADO = [False]
 
 FAMILIAS = {
     "Full Time Result": {"home", "draw", "away"},
@@ -84,6 +85,17 @@ FAMILIAS_CON_LINEA = {
     "total goals": {"over", "under"},
     "total cards": {"over", "under"},
     "total corners": {"over", "under"},
+    # Hándicap Asiático SOLO en líneas simples (enteras y medias). Ahí viven
+    # dos mercados que el usuario pidió y que no existen con nombre propio:
+    #
+    #   Sin Empate (Draw No Bet)  = Asian Handicap 0
+    #   Doble Oportunidad 1X      = Asian Handicap +0.5 para el local
+    #
+    # Las líneas de CUARTO (±0.25, ±0.75) se siguen excluyendo: parten la
+    # apuesta en dos mitades y devuelven media, y equivocarse en esa regla
+    # inventaría beneficios en silencio. Lo que se excluye ahora es solo esa
+    # parte, no el hándicap entero como antes.
+    "asian handicap": {"home", "away"},
 }
 
 
@@ -109,12 +121,41 @@ def desempaquetar(d):
     return (d.get("data", []) or []) if isinstance(d, dict) else (d or [])
 
 
+def handicap_local(mercado):
+    """El hándicap que lleva el LOCAL, o None si la línea no es simple.
+
+    La API nombra estas líneas como "Asian Handicap -1/+1", donde el PRIMER
+    número es el del local y el segundo el del visitante. Se verifica contra
+    las cuotas antes de usarlo (ver verificar_orientacion): si se invirtiera,
+    todos los resultados saldrían al revés sin que nada fallara.
+
+    "Asian Handicap 0" es el caso de un solo número: cero para los dos.
+    """
+    bajo = (mercado or "").lower().replace("asian handicap", "").strip()
+    if not bajo:
+        return None
+    primero = bajo.split("/")[0].strip()
+    try:
+        h = float(primero)
+    except ValueError:
+        return None
+    # Solo enteras y medias. Los cuartos (.25, .75) parten la apuesta.
+    if abs(h * 2 - round(h * 2)) > 1e-9:
+        return None
+    return h
+
+
 def familia_de(mercado):
     nombre = (mercado or "").strip()
     if nombre in FAMILIAS:
         return nombre, FAMILIAS[nombre], None
     bajo = nombre.lower()
+    if bajo.startswith("asian handicap"):
+        h = handicap_local(nombre)
+        return ("Asian Handicap", FAMILIAS_CON_LINEA["asian handicap"], h) if h is not None else (None, None, None)
     for prefijo, lados in FAMILIAS_CON_LINEA.items():
+        if prefijo == "asian handicap":
+            continue
         if bajo.startswith(prefijo):
             for trozo in bajo.replace("/", " ").split():
                 try:
@@ -209,6 +250,16 @@ def resolver(familia, lado, linea, h):
     if familia == "First Team To Score":
         return 1.0 if lado == h["primer_gol"] else 0.0
 
+    if familia == "Asian Handicap":
+        if linea is None:
+            return None
+        # linea es el hándicap del LOCAL. Se suma al marcador local y se mira
+        # el signo del margen resultante.
+        margen = (gl + linea) - gv if lado == "home" else (gv - linea) - gl
+        if abs(margen) < 1e-9:
+            return 0.5                   # empate con hándicap: devuelven
+        return 1.0 if margen > 0 else 0.0
+
     observado = {"Total Goals": tot, "Total Cards": h["tarjetas"],
                  "Total Corners": h["corners"]}.get(familia)
     if observado is None or linea is None:
@@ -217,6 +268,35 @@ def resolver(familia, lado, linea, h):
         return 0.5                       # push: se devuelve la apuesta
     supera = float(observado) > float(linea)
     return 1.0 if (lado == "over") == supera else 0.0
+
+
+def verificar_orientacion(por_mercado):
+    """Comprueba que el PRIMER número del nombre es el hándicap del local.
+
+    Si estuviera al revés, el resolver daría todos los hándicaps invertidos y
+    nada fallaría: saldrían números plausibles y equivocados. La comprobación
+    no necesita documentación, solo lógica de mercado -- un hándicap más
+    negativo es más exigente, así que tiene que pagar MÁS.
+
+    Devuelve (ok, detalle). Si sale que no, hay que parar, no seguir.
+    """
+    pares = []
+    por_h = {}
+    for (familia, mercado, linea), por_casa in por_mercado.items():
+        if familia != "Asian Handicap" or linea is None:
+            continue
+        for casa, cuotas in por_casa.items():
+            if "home" in cuotas:
+                por_h[(casa, linea)] = cuotas["home"]
+    for (casa, h), cuota in por_h.items():
+        opuesta = por_h.get((casa, -h))
+        if opuesta is not None and h < 0:
+            # h negativo es más exigente que -h positivo: debe pagar más
+            pares.append(cuota > opuesta)
+    if not pares:
+        return None, "sin pares simétricos para comprobar"
+    acierto = sum(pares) / len(pares)
+    return acierto > 0.9, f"{sum(pares)}/{len(pares)} pares coherentes ({acierto*100:.0f}%)"
 
 
 def main():
@@ -283,6 +363,18 @@ def main():
                     continue
                 if cuota > 1:
                     por_mercado[(familia, c.get("market"), linea)][c.get("bookmakerName")][lado] = cuota
+
+        if not VERIFICADO[0] and por_mercado:
+            ok, detalle = verificar_orientacion(por_mercado)
+            if ok is not None:
+                VERIFICADO[0] = True
+                print(f"[orientación del hándicap] {detalle}")
+                if not ok:
+                    print("PARADA: el primer número del nombre NO parece ser el "
+                          "del local. Con la orientación invertida todos los "
+                          "hándicaps saldrían al revés y los números parecerían "
+                          "normales. Hay que revisarlo antes de seguir.")
+                    raise SystemExit(1)
 
         for (familia, mercado, linea), por_casa in por_mercado.items():
             lados = FAMILIAS.get(familia) or FAMILIAS_CON_LINEA.get(familia.lower())
