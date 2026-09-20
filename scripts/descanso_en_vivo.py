@@ -56,7 +56,8 @@ import pandas as pd
 from datetime import datetime, timedelta, timezone
 
 from modelo_descanso import (preparar_datos, ajustar, prob_over, prob_push,
-                              valor_esperado, ya_resuelto, lambda_de, validar)
+                              valor_esperado, ya_resuelto, lambda_de, validar,
+                              LIGA_DESCONOCIDA)
 
 API_KEY = os.environ["HIGHLIGHTLY_API_KEY"]
 BASE_URL = "https://soccer.highlightly.net"
@@ -230,6 +231,38 @@ def nombre_de(p):
 
 
 RUTA_AGENDA = "data/agenda_hoy.csv"
+RUTA_LIGAS = "data/ligas.json"
+
+
+def _ligas_conocidas():
+    """id de liga -> nombre canónico, para saber a qué nivel ajustar.
+
+    Se usa el ID y NO el nombre a propósito: hay una "Serie A" en Italia y
+    otra en Brasil, una "Premier League" en Inglaterra y otra en Jamaica. Ya
+    nos coló cuatro ligas equivocadas de seis en el calendario cuando
+    filtrábamos por nombre. Un partido brasileño cotizado con el nivel
+    italiano sería el mismo error por la puerta de atrás."""
+    if not os.path.exists(RUTA_LIGAS):
+        return {}
+    try:
+        d = json.load(open(RUTA_LIGAS, encoding="utf-8"))
+    except Exception:
+        return {}
+    return {int(v): k for k, v in d.items() if not str(k).startswith("_")}
+
+
+LIGAS_POR_ID = _ligas_conocidas()
+
+
+def liga_del_modelo(p):
+    """El nivel que le toca a este partido. Las ligas que no están en el
+    ajuste -- MLS, Brasil, lo que aparezca -- van al nivel medio, y eso queda
+    dicho en el informe en vez de disimularse."""
+    lid = (p.get("league") or {}).get("id")
+    try:
+        return LIGAS_POR_ID.get(int(lid), LIGA_DESCONOCIDA)
+    except (TypeError, ValueError):
+        return LIGA_DESCONOCIDA
 
 # Margen alrededor de la ventana estimada del descanso. La estimación es
 # saque+45 a saque+62; con media hora por cada lado se absorben el descuento
@@ -420,25 +453,28 @@ def analizar(p, a, b, phi):
         "match_id": mid, "partido": nombre_de(p),
         "liga": str((p.get("league") or {}).get("name", "?")),
         "minuto": minuto_de(p), "estado": estado.get("description"),
+        "liga_modelo": liga_del_modelo(p),
         "marcador": (estado.get("score") or {}).get("current"),
         "tarjetas_ht": k,
         "faltas_ht": faltas_ht, "corners_ht": corners_ht,
         "minutos_tarjetas": [e.get("time") for e in tarjetas],
-        "lambda_restante": round(lambda_de(k, a, b), 2),
+        "lambda_restante": round(lambda_de(k, a, b, liga_del_modelo(p)), 2),
     }
 
     filas = []
     for linea in sorted(mercado):
         d = mercado[linea]
         resuelto = ya_resuelto(k, linea)
-        ev = None if resuelto else valor_esperado(k, linea, d["mejor_cuota"], a, b, phi)
+        liga_mod = info["liga_modelo"]
+        ev = None if resuelto else valor_esperado(k, linea, d["mejor_cuota"],
+                                                   a, b, phi, liga_mod)
         filas.append({
             **{x: info[x] for x in ("match_id", "partido", "liga", "minuto",
                                      "estado", "tarjetas_ht", "faltas_ht",
-                                     "corners_ht")},
+                                     "corners_ht", "liga_modelo")},
             "linea": linea,
-            "prob_modelo": round(prob_over(k, linea, a, b, phi), 4),
-            "prob_push": round(prob_push(k, linea, a, b, phi), 4),
+            "prob_modelo": round(prob_over(k, linea, a, b, phi, liga_mod), 4),
+            "prob_push": round(prob_push(k, linea, a, b, phi, liga_mod), 4),
             "prob_mercado": round(d["prob_over"], 4),
             "casas": d["casas"], "mejor_cuota": d["mejor_cuota"],
             "mejor_casa": d["mejor_casa"],
@@ -454,8 +490,11 @@ def escribir_informe(bloques, esperando, a, b, phi, base):
     bm, bb, mejora = validar(base)
     lineas = [
         f"# Tarjetas al descanso -- {ahora}\n",
-        f"Modelo: lambda(k) = max(0.8, {a:.3f} {b:+.3f}*k), phi={phi:.2f}, "
-        f"ajustado sobre {len(base)} partidos.",
+        f"Modelo: nivel propio de cada liga {b:+.3f}*k por tarjeta al "
+        f"descanso, phi={phi:.2f}, ajustado sobre {len(base)} partidos de "
+        f"{base['liga'].nunique()} ligas.",
+        "Niveles: " + ", ".join(f"{l} {v:.2f}" for l, v in
+                                 sorted(a.items(), key=lambda x: -x[1])) + ".",
         f"Validación fuera de muestra (línea 4.5): Brier {bm:.4f} frente a "
         f"{bb:.4f} de la tasa base ({mejora:+.1f}%).\n",
         "> El recuento del descanso es **información pública**: las casas también lo",
@@ -500,7 +539,11 @@ def escribir_informe(bloques, esperando, a, b, phi, base):
         lineas.append("*Ningún partido en el descanso ahora mismo.*")
     for info, filas in bloques:
         lineas.append(f"\n## {info['partido']}  ({info['liga']})")
-        lineas.append(f"*{info['estado']} · minuto {info['minuto']} · {info['marcador']}*\n")
+        nivel = info.get("liga_modelo", LIGA_DESCONOCIDA)
+        aviso = ("  ⚠ liga fuera del ajuste: se usa el nivel medio"
+                 if nivel == LIGA_DESCONOCIDA else "")
+        lineas.append(f"*{info['estado']} · minuto {info['minuto']} · "
+                      f"{info['marcador']} · nivel **{nivel}**{aviso}*\n")
         faltas = (f" · **{info['faltas_ht']:.0f} faltas**"
                   if info.get("faltas_ht") is not None else "")
         lineas.append(f"**{info['tarjetas_ht']} tarjetas** al descanso"
