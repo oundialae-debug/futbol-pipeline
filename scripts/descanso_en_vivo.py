@@ -454,11 +454,16 @@ def escribir_informe(bloques, esperando, a, b, phi, base):
     # de la API es el riesgo real. Un 429 no rompe nada: simplemente no hay
     # observaciones, que es indistinguible de "no había partidos". En el log
     # se ve, pero los logs no los lee nadie -- así que sale en el informe.
+    # El informe se escribe ANTES de apuntar el consumo, así que hay que
+    # sumarle lo que lleva gastado esta pasada. Si no, el número del informe
+    # va siempre una pasada por detrás -- y un contador que va por detrás
+    # engaña justo el día que importa.
     gasto = consumo_de_hoy()
-    if gasto.get("llamadas"):
-        lineas.append(f"*Consumo de API hoy: {gasto['llamadas']} llamadas en "
-                      f"{gasto['pasadas']} pasadas, sobre un tope de "
-                      f"{TOPE_DIARIO} (plan: 7.500/día).*\n")
+    llevamos = gasto.get("llamadas", 0) + LLAMADAS[0]
+    lineas.append(f"*Consumo de API hoy: {llevamos} llamadas en "
+                  f"{gasto.get('pasadas', 0) + 1} pasadas, sobre un tope de "
+                  f"{TOPE_DIARIO} ({llevamos/TOPE_DIARIO*100:.0f}%). "
+                  f"El plan da 7.500 al día.*\n")
     if FALLOS:
         lineas.append("> ⚠ **Llamadas fallidas:** "
                       + ", ".join(f"{k} x{v}" for k, v in FALLOS.items())
