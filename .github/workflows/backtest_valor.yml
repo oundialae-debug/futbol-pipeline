@@ -1,0 +1,51 @@
+name: Backtest de valor
+
+# ¿Las cuotas que baten al consenso ganan de verdad? Se contesta con partidos
+# ya jugados: la API sirve cuotas hasta 28 días después del partido.
+on:
+  workflow_dispatch:
+    inputs:
+      dias:
+        description: 'Días hacia atrás (máximo 28, que es lo que duran las cuotas)'
+        required: false
+        default: '25'
+      max_partidos:
+        description: 'Máximo de partidos'
+        required: false
+        default: '150'
+
+jobs:
+  backtest:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+      - run: pip install requests pandas numpy
+
+      - name: Simular
+        run: python scripts/backtest_valor.py
+        env:
+          HIGHLIGHTLY_API_KEY: ${{ secrets.HIGHLIGHTLY_API_KEY }}
+          DIAS: ${{ inputs.dias || '25' }}
+          MAX_PARTIDOS: ${{ inputs.max_partidos || '150' }}
+          PYTHONPATH: scripts
+
+      - name: Guardar
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          for f in backtest_valor.md data/backtest_valor.csv; do
+            [ -f "$f" ] && git add "$f" || echo "  [no existe] $f"
+          done
+          if git diff --staged --quiet; then
+            echo "Sin cambios que guardar"
+            exit 0
+          fi
+          git commit -m "Backtest de valor ($(date -u +%Y-%m-%dT%H:%M))"
+          git pull --rebase origin main
+          git push
