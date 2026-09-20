@@ -1,0 +1,21 @@
+name: Buscar IDs de ligas
+
+# La Segunda trajo cero filas: el ID 121085 no devuelve nada. Esto lista las
+# ligas de cada pais con su ID exacto para elegir mirando, no adivinando.
+on:
+  workflow_dispatch:
+
+jobs:
+  buscar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+      - run: pip install requests
+      - name: Buscar
+        run: python scripts/buscar_ligas.py
+        env:
+          HIGHLIGHTLY_API_KEY: ${{ secrets.HIGHLIGHTLY_API_KEY }}
