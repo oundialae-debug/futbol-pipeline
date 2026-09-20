@@ -1,0 +1,29 @@
+name: Censo crudo de mercados
+
+# Ve qué mercados ofrece la API sin filtrar por familia conocida, para
+# comprobar que no nos dejamos ninguno sin mirar.
+on:
+  workflow_dispatch:
+    inputs:
+      max_partidos:
+        description: 'Partidos a muestrear'
+        required: false
+        default: '30'
+
+jobs:
+  censo:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+      - run: pip install requests pandas
+
+      - name: Censar
+        run: python scripts/censo_mercados_crudo.py
+        env:
+          HIGHLIGHTLY_API_KEY: ${{ secrets.HIGHLIGHTLY_API_KEY }}
+          MAX_PARTIDOS: ${{ inputs.max_partidos || '30' }}
+          PYTHONPATH: scripts
