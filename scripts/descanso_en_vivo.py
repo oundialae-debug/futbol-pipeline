@@ -498,8 +498,11 @@ def escribir_informe(bloques, esperando, a, b, phi, base):
         f"Validación fuera de muestra (línea 4.5): Brier {bm:.4f} frente a "
         f"{bb:.4f} de la tasa base ({mejora:+.1f}%).\n",
         "> El recuento del descanso es **información pública**: las casas también lo",
-        "> ven. La hipótesis a medir es que sus modelos supongan persistencia cuando",
-        "> la correlación real es negativa. Una observación no demuestra nada.\n",
+        "> ven. La hipótesis original -- que sus modelos supongan persistencia cuando",
+        "> la correlación real es negativa -- está RETIRADA: ese -0.171 salía de un",
+        "> fichero de solo La Liga, y sobre 363 partidos de seis ligas la correlación",
+        "> es -0.016, o sea nada. Lo que queda es tener bien el nivel de cada liga,",
+        "> que es calibración, no ventaja.\n",
     ]
     if FORZAR:
         lineas.insert(1, "> ⚠ **EJECUCIÓN FORZADA fuera del descanso.** lambda(k) está "
@@ -684,7 +687,10 @@ def main():
 
     base = preparar_datos()
     a, b, phi = ajustar(base)
-    print(f"Modelo sobre {len(base)} partidos: lambda(k)=max(0.8, {a:.3f}{b:+.3f}*k), phi={phi:.2f}")
+    print(f"Modelo sobre {len(base)} partidos de {base['liga'].nunique()} ligas: "
+          f"pendiente {b:+.3f}, phi={phi:.2f}")
+    print("  niveles: " + ", ".join(f"{l} {v:.2f}"
+                                     for l, v in sorted(a.items(), key=lambda x: -x[1])))
 
     # La agenda primero: filtra en local y solo pregunta por los partidos que
     # podrían estar en el descanso. Si no da nada se barre, porque la mitad de
