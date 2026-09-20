@@ -178,6 +178,59 @@ def main():
     else:
         con_faltas = por_partido.iloc[0:0]
 
+    # ---- Movimiento del precio (closing line value) ----
+    # Es la medida que dice si hay ventaja SIN esperar a que la suerte se
+    # promedie. Si marcamos una línea como valor y el mercado se mueve luego
+    # hacia nosotros, eso es ventaja aunque ese partido salga mal. Converge
+    # con muchas menos observaciones que el resultado, porque el precio tiene
+    # mucha menos varianza.
+    lineas.append("## Movimiento del precio\n")
+    if "prob_mercado_despues" not in cerrados.columns:
+        lineas.append("*Todavía no hay segundas fotos del precio.*\n")
+    else:
+        movidas = cerrados[cerrados["prob_mercado_despues"].notna()].copy()
+        # Solo donde el modelo veía valor: son las que decimos que están mal
+        # cotizadas, y por tanto donde el mercado debería darnos la razón.
+        movidas = movidas[(movidas["ev"] > 0) & (movidas["ev"] <= EV_SOSPECHOSO)]
+        if len(movidas) < 5:
+            lineas.append(f"*Solo {len(movidas)} líneas con segunda foto y valor "
+                          "positivo. Hacen falta más para que el número diga algo.*\n")
+        else:
+            # Apostamos al Over: el mercado nos da la razón si DESPUÉS le
+            # asigna más probabilidad de la que le daba al marcar la línea.
+            movidas["deriva"] = movidas["prob_mercado_despues"] - movidas["prob_mercado"]
+            a_favor = (movidas["deriva"] > 0).mean()
+            media = movidas["deriva"].mean()
+            por_partido = movidas.groupby("match_id")["deriva"].mean()
+            n_part = len(por_partido)
+            error = (por_partido.std(ddof=1) / np.sqrt(n_part)
+                      if n_part > 1 else float("nan"))
+            lineas += [
+                f"Sobre **{len(movidas)} líneas** marcadas como valor, en "
+                f"**{n_part} partidos**, comparando el precio del descanso con "
+                f"el de unos minutos después:\n",
+                f"- El mercado se movió hacia nosotros en el "
+                f"**{a_favor*100:.0f}%** de las líneas",
+                f"- Deriva media: **{media*100:+.2f} puntos** de probabilidad"
+                + (f" (±{error*100:.2f}, agrupando por partido)"
+                   if n_part > 1 else ""),
+                "",
+            ]
+            if n_part < 40:
+                lineas.append(
+                    f"> Con {n_part} partidos esto todavía no decide nada, pero "
+                    "converge mucho antes que el resultado: para el resultado "
+                    "hacen falta unos 420 partidos, y para esto del orden de "
+                    "40-60.\n")
+            elif media > 0:
+                lineas.append("> El mercado se mueve hacia nosotros. Es la señal "
+                              "de ventaja más fiable que tenemos, más que el "
+                              "dinero ganado.\n")
+            else:
+                lineas.append("> El mercado NO se mueve hacia nosotros. Si esto "
+                              "aguanta, el modelo no le está ganando al precio "
+                              "por mucho que algún fin de semana salga a favor.\n")
+
     lineas.append("## Las faltas del primer tiempo\n")
     if len(con_faltas) < 3:
         lineas.append(

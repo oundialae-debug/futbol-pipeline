@@ -511,6 +511,78 @@ def escribir_informe(bloques, esperando, a, b, phi, base):
     print("\n".join(lineas))
 
 
+# Cuánto después del descanso se toma la segunda foto del precio.
+MINUTOS_SEGUNDA_FOTO = (10, 35)
+
+
+def segunda_foto():
+    """Vuelve a mirar el precio de las líneas que marcamos en el descanso.
+
+    POR QUÉ: para saber si le ganamos al mercado hacen falta unos 420 partidos
+    -- la desviación del resultado por partido es de 2.05 unidades, así que
+    con menos, un +35% y un -35% son igual de compatibles con "no hay nada".
+    Tres semanas de recogida antes de saber si esto sirve.
+
+    El movimiento del precio dice lo mismo con muchas menos observaciones,
+    porque tiene mucha menos varianza que el resultado. Si marcamos una línea
+    como valor y diez minutos después el mercado se ha movido hacia nosotros,
+    eso es ventaja aunque ese partido concreto acabe perdiendo.
+
+    Es lo que en apuestas se llama closing line value, y es la medida que usan
+    los que viven de esto para saber si tienen ventaja sin esperar a que la
+    suerte se promedie.
+
+    Hay que montarlo ANTES de acumular: esta foto no se puede sacar hacia
+    atrás. Dentro de tres semanas tendríamos 400 partidos y ninguna forma de
+    calcularla.
+    """
+    if not os.path.exists(RUTA_LOG):
+        return
+    try:
+        log = pd.read_csv(RUTA_LOG)
+    except Exception:
+        return
+    if log.empty or "momento" not in log.columns:
+        return
+
+    for col in ("cuota_despues", "prob_mercado_despues", "momento_despues"):
+        if col not in log.columns:
+            log[col] = pd.NA
+
+    ahora = datetime.now(timezone.utc)
+    momentos = pd.to_datetime(log["momento"], errors="coerce", utc=True)
+    edad = (ahora - momentos).dt.total_seconds() / 60
+
+    pendientes = log[(log["cuota_despues"].isna())
+                     & (edad >= MINUTOS_SEGUNDA_FOTO[0])
+                     & (edad <= MINUTOS_SEGUNDA_FOTO[1])]
+    if pendientes.empty:
+        return
+
+    partidos = list(pendientes["match_id"].unique())[:8]
+    print(f"Segunda foto: {len(partidos)} partidos con líneas por revisar")
+
+    for mid in partidos:
+        mercado = mercado_de_tarjetas(
+            aplanar_cuotas(pedir("/odds", {"matchId": int(mid), "oddsType": "live"})))
+        if not mercado:
+            continue
+        filas = log[(log["match_id"] == mid) & (log["cuota_despues"].isna())]
+        tocadas = 0
+        for idx, fila in filas.iterrows():
+            d = mercado.get(float(fila["linea"]))
+            if not d:
+                continue
+            log.at[idx, "cuota_despues"] = d["mejor_cuota"]
+            log.at[idx, "prob_mercado_despues"] = round(d["prob_over"], 4)
+            log.at[idx, "momento_despues"] = ahora.isoformat(timespec="seconds")
+            tocadas += 1
+        nombre = filas.iloc[0]["partido"] if not filas.empty else mid
+        print(f"   {nombre}: {tocadas} líneas actualizadas")
+
+    log.to_csv(RUTA_LOG, index=False)
+
+
 def guardar_log(todas):
     if not todas:
         print("\n[log] sin observaciones que guardar")
@@ -594,6 +666,9 @@ def main():
     apuntar_consumo(consumo)
     if not FORZAR:
         guardar_log(todas)
+        # Después de guardar, para que las líneas de esta pasada entren ya en
+        # la cola de la segunda foto.
+        segunda_foto()
     else:
         print("\n[log] omitido: ejecución forzada fuera del descanso")
 
