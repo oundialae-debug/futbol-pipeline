@@ -17,6 +17,23 @@ números sin sentido. Una prueba en vivo lo dejó claro, así que el script
 solo evalúa partidos cuyo estado es de descanso; el resto se listan como
 "esperando" para saber que están vigilados.
 
+LAS CUOTAS LLEGAN CON HASTA 10 MINUTOS DE RETRASO
+-------------------------------------------------
+La documentación declara "Live odds refresh interval: Once every 10 minutes",
+y la respuesta no trae marca de tiempo, así que de una cuota solo sabemos que
+tiene diez minutos o menos. Esto hay que tenerlo delante al leer el "valor":
+
+  - El precio que vemos en el descanso pudo fijarse en el minuto 40, antes de
+    las últimas tarjetas del primer tiempo. Parte de la discrepancia que
+    medimos puede ser eso, y no un error del mercado.
+  - La casa sí tiene el precio actualizado en su web. O sea que una cuota que
+    aquí parece regalada puede no existir ya cuando se va a apostar.
+
+Por eso la comparación modelo-contra-mercado vale como pregunta de
+MODELADO -- ¿es nuestra probabilidad mejor que la que publicó la casa? -- pero
+las unidades ganadas que calcula el cierre NO son dinero que se habría podido
+coger. Para saber si lo son hace falta comprobar el precio en la casa real.
+
 LO QUE HAY QUE TENER PRESENTE
 -----------------------------
 El recuento de tarjetas al descanso es información PÚBLICA: las 24 casas
@@ -464,6 +481,11 @@ def escribir_informe(bloques, esperando, a, b, phi, base):
                   f"{gasto.get('pasadas', 0) + 1} pasadas, sobre un tope de "
                   f"{TOPE_DIARIO} ({llevamos/TOPE_DIARIO*100:.0f}%). "
                   f"El plan da 7.500 al día.*\n")
+    lineas.append("> ⚠ Las cuotas en vivo se refrescan **cada 10 minutos** "
+                  "(documentación de la API) y no traen marca de tiempo. El "
+                  "precio de abajo puede ser de antes de las últimas tarjetas "
+                  "del primer tiempo, y puede no existir ya en la casa. El "
+                  "valor sirve para comparar modelos, no como dinero cogible.\n")
     if FALLOS:
         lineas.append("> ⚠ **Llamadas fallidas:** "
                       + ", ".join(f"{k} x{v}" for k, v in FALLOS.items())
@@ -511,8 +533,16 @@ def escribir_informe(bloques, esperando, a, b, phi, base):
     print("\n".join(lineas))
 
 
-# Cuánto después del descanso se toma la segunda foto del precio.
-MINUTOS_SEGUNDA_FOTO = (10, 35)
+# Cuánto después se toma la segunda foto del precio.
+#
+# La documentación de la API lo dice con todas las letras: "Live odds refresh
+# interval: Once every 10 minutes". Con la ventana anterior (10-35 min) una
+# segunda foto tomada a los 10 minutos podía caer en el MISMO ciclo de caché
+# que la primera y salir idéntica sin que el mercado estuviera quieto -- que
+# es exactamente lo que pasó: 14 líneas iguales hasta el último decimal.
+#
+# 20 minutos de mínimo garantizan un ciclo distinto.
+MINUTOS_SEGUNDA_FOTO = (20, 45)
 
 
 def segunda_foto():
