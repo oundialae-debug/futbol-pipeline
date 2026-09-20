@@ -1,0 +1,21 @@
+name: Censo de endpoints
+
+# ¿Qué nos da esta API que nunca hemos pedido? En veredicto.md di por cerrado
+# el inventario sin comprobarlo, y /lineups llevaba ahí desde el principio.
+on:
+  workflow_dispatch:
+
+jobs:
+  censo:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+      - run: pip install requests
+      - name: Censar
+        run: python scripts/censo_endpoints.py
+        env:
+          HIGHLIGHTLY_API_KEY: ${{ secrets.HIGHLIGHTLY_API_KEY }}
