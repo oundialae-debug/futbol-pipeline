@@ -130,19 +130,42 @@ def main():
         apuestas["retorno"] = np.where(apuestas["over"] == 1, apuestas["mejor_cuota"] - 1, -1.0)
         n = len(apuestas)
         media = apuestas["retorno"].mean()
-        error = apuestas["retorno"].std(ddof=1) / np.sqrt(n) if n > 1 else float("nan")
+
+        # El error hay que calcularlo AGRUPANDO POR PARTIDO. Las líneas de un
+        # mismo partido no son apuestas independientes: si el partido se va de
+        # tarjetas, el Over entra en todas a la vez. Tratarlas como 31 apuestas
+        # sueltas cuando son 9 partidos infla la muestra y encoge el margen de
+        # error, que es justo el número que dice si el resultado significa algo.
+        por_partido = apuestas.groupby("match_id")["retorno"].sum()
+        m = len(por_partido)
+        error = (por_partido.std(ddof=1) * np.sqrt(m) / n) if m > 1 else float("nan")
+
+        mayor = por_partido.abs().max()
+        parte_mayor = mayor / abs(apuestas["retorno"].sum()) if apuestas["retorno"].sum() else 0
+
         lineas += [
             "## Si se hubiera apostado\n",
             f"{n} apuestas de 1 unidad al Over, solo donde el modelo veía valor "
-            f"positivo y no disparatado (hasta {EV_SOSPECHOSO*100:.0f}%).\n",
+            f"positivo y no disparatado (hasta {EV_SOSPECHOSO*100:.0f}%). "
+            f"Repartidas en **{m} partidos**, que es la muestra de verdad.\n",
             f"- Resultado: **{apuestas['retorno'].sum():+.2f} unidades** "
             f"({media*100:+.1f}% por apuesta)",
-            f"- Margen de error (1 sigma): ±{error*100:.1f} puntos por apuesta"
-            if n > 1 else "- Margen de error: incalculable con una sola apuesta",
-            f"- Aciertos: {int(apuestas['over'].sum())} de {n}\n",
-            "> Con esta muestra el margen de error se come el resultado entero, "
-            "salga como salga. Es un punto de una serie, no una conclusión.\n",
+            f"- Margen de error (1 sigma, agrupando por partido): "
+            f"±{error*100:.1f} puntos por apuesta"
+            if m > 1 else "- Margen de error: incalculable con un solo partido",
+            f"- Aciertos: {int(apuestas['over'].sum())} de {n}",
+            f"- El partido que más pesa se lleva el {parte_mayor*100:.0f}% "
+            f"del resultado\n",
+            "> El margen de error se come el resultado entero, salga como salga. "
+            "Es un punto de una serie, no una conclusión.\n",
+            "| Partido | Apuestas | Resultado |",
+            "|---|---|---|",
         ]
+        for mid, total in por_partido.sort_values().items():
+            nombre = apuestas[apuestas["match_id"] == mid]["partido"].iloc[0]
+            cuantas = int((apuestas["match_id"] == mid).sum())
+            lineas.append(f"| {nombre} | {cuantas} | {total:+.2f} u |")
+        lineas.append("")
 
     lineas.append("## Partido a partido\n")
     lineas.append("| Partido | Tarjetas al descanso | Total final | 2ª parte |")

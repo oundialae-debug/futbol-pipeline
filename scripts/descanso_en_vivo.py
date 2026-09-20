@@ -218,6 +218,41 @@ def mercado_de_tarjetas(planas):
     return salida
 
 
+def estadisticas_del_primer_tiempo(match_id):
+    """Faltas y corners acumulados hasta el descanso.
+
+    /statistics no da desglose por tiempos, pero en un partido EN JUEGO
+    devuelve los acumulados hasta ese minuto -- comprobado en el descanso del
+    DC United-Charlotte (11 faltas) y del San Jose-LAFC (9), contra las 25 de
+    media de un partido entero. Llamándolo en el intermedio, eso ES el primer
+    tiempo.
+
+    Se apunta aunque el modelo todavía no lo use. En el histórico las faltas
+    del partido completo correlacionan +0.406 con las tarjetas, frente al
+    -0.171 de las tarjetas al descanso contra la segunda parte: es la señal
+    más fuerte que tenemos y no la estamos usando. No se puede ajustar hoy
+    porque el histórico solo guarda faltas del partido entero, así que hay que
+    ir acumulando descansos hasta tener con qué ajustar el coeficiente."""
+    datos = pedir(f"/statistics/{match_id}")
+    if not datos:
+        return None, None
+    faltas = corners = 0
+    visto = False
+    for bloque in datos:
+        for s in (bloque.get("statistics") or []):
+            nombre = str(s.get("displayName", "")).lower()
+            try:
+                valor = float(s.get("value") or 0)
+            except (TypeError, ValueError):
+                continue
+            if nombre == "fouls":
+                faltas += valor
+                visto = True
+            elif nombre == "corners":
+                corners += valor
+    return (faltas if visto else None), corners
+
+
 def analizar(p, a, b, phi):
     mid = p["id"]
     datos = pedir(f"/matches/{mid}")
@@ -233,6 +268,8 @@ def analizar(p, a, b, phi):
     tarjetas = [e for e in eventos if e.get("type") in ("Yellow Card", "Red Card")]
     k = len(tarjetas)
 
+    faltas_ht, corners_ht = estadisticas_del_primer_tiempo(mid)
+
     mercado = mercado_de_tarjetas(
         aplanar_cuotas(pedir("/odds", {"matchId": mid, "oddsType": "live"})))
 
@@ -242,6 +279,7 @@ def analizar(p, a, b, phi):
         "minuto": minuto_de(p), "estado": estado.get("description"),
         "marcador": (estado.get("score") or {}).get("current"),
         "tarjetas_ht": k,
+        "faltas_ht": faltas_ht, "corners_ht": corners_ht,
         "minutos_tarjetas": [e.get("time") for e in tarjetas],
         "lambda_restante": round(lambda_de(k, a, b), 2),
     }
@@ -253,7 +291,8 @@ def analizar(p, a, b, phi):
         ev = None if resuelto else valor_esperado(k, linea, d["mejor_cuota"], a, b, phi)
         filas.append({
             **{x: info[x] for x in ("match_id", "partido", "liga", "minuto",
-                                     "estado", "tarjetas_ht")},
+                                     "estado", "tarjetas_ht", "faltas_ht",
+                                     "corners_ht")},
             "linea": linea,
             "prob_modelo": round(prob_over(k, linea, a, b, phi), 4),
             "prob_push": round(prob_push(k, linea, a, b, phi), 4),
@@ -293,8 +332,11 @@ def escribir_informe(bloques, esperando, a, b, phi, base):
     for info, filas in bloques:
         lineas.append(f"\n## {info['partido']}  ({info['liga']})")
         lineas.append(f"*{info['estado']} · minuto {info['minuto']} · {info['marcador']}*\n")
+        faltas = (f" · **{info['faltas_ht']:.0f} faltas**"
+                  if info.get("faltas_ht") is not None else "")
         lineas.append(f"**{info['tarjetas_ht']} tarjetas** al descanso"
                       + (f" (minutos {info['minutos_tarjetas']})" if info["minutos_tarjetas"] else "")
+                      + faltas
                       + f". Esperadas en la 2ª parte: **{info['lambda_restante']}**.\n")
         if not filas:
             lineas.append("*Sin mercado de tarjetas en vivo para este partido.*")
