@@ -1,0 +1,32 @@
+name: Frescura de las cuotas
+
+# Comprueba si oddsType=live devuelve precios que se mueven o una foto fija.
+# De esto depende que el modelo del descanso signifique algo.
+on:
+  workflow_dispatch:
+    inputs:
+      vueltas:
+        description: 'Número de lecturas'
+        required: false
+        default: '5'
+      espera:
+        description: 'Segundos entre lecturas'
+        required: false
+        default: '120'
+
+jobs:
+  frescura:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+      - run: pip install requests
+      - name: Sondear
+        run: python scripts/sondeo_frescura.py
+        env:
+          HIGHLIGHTLY_API_KEY: ${{ secrets.HIGHLIGHTLY_API_KEY }}
+          VUELTAS: ${{ inputs.vueltas || '5' }}
+          ESPERA: ${{ inputs.espera || '120' }}
