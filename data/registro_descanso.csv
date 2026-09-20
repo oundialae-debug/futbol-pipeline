@@ -265,15 +265,15 @@ match_id,partido,liga,minuto,estado,tarjetas_ht,linea,prob_modelo,prob_push,prob
 1325357545,Fulham vs Manchester United,Premier League,45,Half time,1,4.0,0.422,0.1996,0.2795,1,3.3,Vbet Sport,0.5922,False,2026-09-20T16:25:27+00:00,,5.0,5.0,2.44,0.3791,2026-09-20T16:50:38+00:00,
 1325357545,Fulham vs Manchester United,Premier League,45,Half time,1,4.5,0.422,0.0,0.2681,2,3.48,Marathonbet,0.4686,False,2026-09-20T16:25:27+00:00,,5.0,5.0,3.2,0.3087,2026-09-20T16:50:38+00:00,
 1325357545,Fulham vs Manchester United,Premier League,45,Half time,1,5.5,0.2582,0.0,0.1384,1,6.6,Marathonbet,0.7042,False,2026-09-20T16:25:27+00:00,,5.0,5.0,5.6,0.1629,2026-09-20T16:50:38+00:00,
-1336412886,Villarreal vs Levante,La Liga,45,Half time,2,2.5,0.927,0.0,0.7231,2,1.28,Marathonbet,0.1866,False,2026-09-20T17:23:25+00:00,,12.0,4.0,,,,La Liga
-1336412886,Villarreal vs Levante,La Liga,45,Half time,2,3.0,0.7547,0.1724,0.6511,1,1.42,Vbet Sport,0.244,False,2026-09-20T17:23:25+00:00,,12.0,4.0,,,,La Liga
-1336412886,Villarreal vs Levante,La Liga,45,Half time,2,3.5,0.7547,0.0,0.4973,2,1.86,Marathonbet,0.4037,False,2026-09-20T17:23:25+00:00,,12.0,4.0,,,,La Liga
-1336412886,Villarreal vs Levante,La Liga,45,Half time,2,4.0,0.5349,0.2198,0.3703,1,2.5,Vbet Sport,0.557,False,2026-09-20T17:23:25+00:00,,12.0,4.0,,,,La Liga
-1336412886,Villarreal vs Levante,La Liga,45,Half time,2,4.5,0.5349,0.0,0.293,2,3.2,Marathonbet,0.7115,False,2026-09-20T17:23:25+00:00,,12.0,4.0,,,,La Liga
-1336412886,Villarreal vs Levante,La Liga,45,Half time,2,5.0,0.3341,0.2007,0.2719,1,3.4,Vbet Sport,0.3367,False,2026-09-20T17:23:25+00:00,,12.0,4.0,,,,La Liga
-1336412886,Villarreal vs Levante,La Liga,45,Half time,2,5.5,0.3341,0.0,0.1976,2,5.95,Marathonbet,0.9879,False,2026-09-20T17:23:25+00:00,,12.0,4.0,,,,La Liga
-1336412886,Villarreal vs Levante,La Liga,45,Half time,2,6.5,0.1871,0.0,0.1304,1,7.0,Marathonbet,0.31,False,2026-09-20T17:23:25+00:00,,12.0,4.0,,,,La Liga
-1336412886,Villarreal vs Levante,La Liga,45,Half time,2,7.5,0.0955,0.0,0.1329,1,6.85,Marathonbet,-0.3457,False,2026-09-20T17:23:25+00:00,,12.0,4.0,,,,La Liga
+1336412886,Villarreal vs Levante,La Liga,45,Half time,2,2.5,0.927,0.0,0.7231,2,1.28,Marathonbet,0.1866,False,2026-09-20T17:23:25+00:00,,12.0,4.0,1.34,0.7047,2026-09-20T17:49:47+00:00,La Liga
+1336412886,Villarreal vs Levante,La Liga,45,Half time,2,3.0,0.7547,0.1724,0.6511,1,1.42,Vbet Sport,0.244,False,2026-09-20T17:23:25+00:00,,12.0,4.0,1.56,0.5927,2026-09-20T17:49:47+00:00,La Liga
+1336412886,Villarreal vs Levante,La Liga,45,Half time,2,3.5,0.7547,0.0,0.4973,2,1.86,Marathonbet,0.4037,False,2026-09-20T17:23:25+00:00,,12.0,4.0,2.05,0.4725,2026-09-20T17:49:47+00:00,La Liga
+1336412886,Villarreal vs Levante,La Liga,45,Half time,2,4.0,0.5349,0.2198,0.3703,1,2.5,Vbet Sport,0.557,False,2026-09-20T17:23:25+00:00,,12.0,4.0,2.95,0.314,2026-09-20T17:49:47+00:00,La Liga
+1336412886,Villarreal vs Levante,La Liga,45,Half time,2,4.5,0.5349,0.0,0.293,2,3.2,Marathonbet,0.7115,False,2026-09-20T17:23:25+00:00,,12.0,4.0,3.4,0.2796,2026-09-20T17:49:47+00:00,La Liga
+1336412886,Villarreal vs Levante,La Liga,45,Half time,2,5.0,0.3341,0.2007,0.2719,1,3.4,Vbet Sport,0.3367,False,2026-09-20T17:23:25+00:00,,12.0,4.0,3.4,0.2719,2026-09-20T17:49:47+00:00,La Liga
+1336412886,Villarreal vs Levante,La Liga,45,Half time,2,5.5,0.3341,0.0,0.1976,2,5.95,Marathonbet,0.9879,False,2026-09-20T17:23:25+00:00,,12.0,4.0,5.95,0.1976,2026-09-20T17:49:47+00:00,La Liga
+1336412886,Villarreal vs Levante,La Liga,45,Half time,2,6.5,0.1871,0.0,0.1304,1,7.0,Marathonbet,0.31,False,2026-09-20T17:23:25+00:00,,12.0,4.0,7.0,0.1304,2026-09-20T17:49:47+00:00,La Liga
+1336412886,Villarreal vs Levante,La Liga,45,Half time,2,7.5,0.0955,0.0,0.1329,1,6.85,Marathonbet,-0.3457,False,2026-09-20T17:23:25+00:00,,12.0,4.0,6.85,0.1329,2026-09-20T17:49:47+00:00,La Liga
 1336407780,Deportivo La Coruña vs Real Betis,La Liga,45,Half time,1,2.5,0.7654,0.0,0.8241,1,1.11,Marathonbet,-0.1504,False,2026-09-20T17:37:02+00:00,,11.0,3.0,,,,La Liga
 1336407780,Deportivo La Coruña vs Real Betis,La Liga,45,Half time,1,3.0,0.5492,0.2162,0.686,1,1.35,Vbet Sport,-0.0423,False,2026-09-20T17:37:02+00:00,,11.0,3.0,,,,La Liga
 1336407780,Deportivo La Coruña vs Real Betis,La Liga,45,Half time,1,3.5,0.5492,0.0,0.643,2,1.44,Vbet Sport,-0.2091,False,2026-09-20T17:37:02+00:00,,11.0,3.0,,,,La Liga
