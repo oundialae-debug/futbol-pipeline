@@ -19,6 +19,24 @@ las comprobaciones concretas que los habrían pillado.
   `"First Team To Score"` con T mayúscula; el código buscaba `"to"` y ese
   mercado no apareció ni una vez en 137.301 filas. Cero error, cero filas.
 
+## Antes de afirmar que algo NO existe
+
+- **Lee la especificación entera antes de decir "la API no da eso".** Escribí
+  en `veredicto.md` que no había alineaciones. Están en `/lineups`, desde
+  siempre, y encima ya salían en mi propia tabla de refrescos de `API.md`. La
+  especificación tiene **25 rutas**; el proyecto usaba seis. Está guardada en
+  `docs/openapi_highlightly.json`: mírala.
+- **Un 404 en la ruta que te inventaste no prueba que el dato no exista.**
+  Pedí `/referees`, dio 404, y lo di por inexistente. El árbitro viene dentro
+  de `/matches/{id}`, junto con el tiempo que hará, el estadio y las
+  predicciones de la propia API.
+- **Mira la respuesta ENTERA de lo que ya pides.** Llevábamos el proyecto
+  entero llamando a `/statistics` para sacar las faltas, sin ver que la misma
+  respuesta traía 39 estadísticas por equipo, xG incluido. Ya la estábamos
+  pagando.
+- Una ausencia afirmada sin comprobar es el peor caso de la regla de arriba:
+  no da error, cierra líneas de trabajo enteras, y nadie se entera.
+
 ## Filtros y valores por defecto
 
 - **Un filtro que acepta cuando no puede comprobar no es un filtro.** Había un

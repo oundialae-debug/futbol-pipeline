@@ -94,6 +94,80 @@ no `name`. Esto costó una semana de "1 mercado encontrado": el parser leía
 Las cuotas son **decimales** (la suma de 1/cuota da 1.05-1.08, que es el
 margen de la casa).
 
+## Inventario real (leído de la especificación, 20/09/2026)
+
+La especificación está guardada en `docs/openapi_highlightly.json`. **Son 25
+rutas.** El proyecto entero había usado seis. Esta sección existe porque di
+por cerrado el inventario sin abrirlo, y la conclusión "no tenemos
+información que el mercado no tenga" se apoyaba en eso.
+
+### Las dos ventanas temporales que mandan
+
+- **`/lineups/{matchId}`: desde 40 MINUTOS antes del saque hasta 120 después.**
+  No una hora: cuarenta minutos. Refresco cada 15 minutos, así que la
+  alineación se ve entre 40 y 25 minutos antes, según caiga el ciclo.
+- **`/odds`: desde 7 días antes hasta 28 días después.** Los 28 de después ya
+  los usábamos para el backtest; los 7 de antes no los habíamos mirado.
+
+Esas dos ventanas juntas definen la única jugada posible: el precio existe
+desde siete días antes, y la alineación llega cuarenta minutos antes de
+empezar. Lo que se pueda ganar está en ese hueco o no está en ningún sitio.
+
+### `/matches/{id}` trae mucho más de lo que pide su nombre
+
+Pedí `/referees` y dio 404, y lo apunté como "no hay árbitro". **Sí hay.** Va
+dentro del detalle del partido, no en una ruta propia:
+
+    referee      -> name, nationality
+    venue        -> city, name, country, capacity
+    forecast     -> status, temperature          (el tiempo que hará)
+    predictions  -> prematch[{type, modelType, generatedAt, probabilities}]
+    events       -> tipo, minuto, jugador, asistente
+    statistics   -> las mismas que /statistics
+    homeTeam/awayTeam.shots -> por jugador: minuto, outcome, goalTarget
+    homeTeam/awayTeam.topPlayers
+
+El árbitro importa: es el factor que más manda en las tarjetas, y las
+tarjetas son el mercado con menos casas (1,2).
+
+Ojo con `predictions`: es el modelo de la propia API. Sirve como rival contra
+el que medirse, no como fuente de ventaja. Si su modelo fuera bueno, el
+precio ya lo llevaría dentro.
+
+### `/box-score/{matchId}`: 37 estadísticas POR JUGADOR
+
+Nunca la habíamos pedido. Refresco cada 5 minutos, o sea que en un partido en
+juego va al minuto.
+
+    goalsScored goalsSaved goalsConceded assists
+    dribblesTotal dribblesSuccessful dribblesFailed dribbleSuccessRate
+    fouledByOthers fouledOthers tacklesTotal interceptionsTotal
+    duelsTotal duelsWon duelsLost duelSuccessRate
+    cardsRed cardsYellow cardsSecondYellow
+    passesAccuracy passesSuccessful passesFailed passesTotal passesKey
+    penaltiesScored penaltiesMissed penaltiesTotal penaltiesAccuracy
+    shotsOnTarget shotsOffTarget shotsTotal shotsAccuracy
+    expectedGoals expectedAssists expectedGoalsOnTarget
+    expectedGoalsOnTargetConceded expectedGoalsPrevented
+
+`fouledOthers` y `cardsYellow` por jugador son justo lo que pedía la
+intuición de las faltas: no "este partido lleva 11 faltas", sino "este
+jugador concreto lleva 3 faltas y una amarilla".
+
+### Lo demás que existe y no usábamos
+
+    /teams/statistics/{id}      total / home / away por liga y temporada
+    /players/{id}/statistics    por club y por competición: amarillas, rojas,
+                                segundas amarillas, minutos, partidos
+    /standings                  clasificación
+    /last-five-games            forma reciente (pide teamId)
+    /head-2-head                los diez últimos entre dos equipos
+
+### Lo que NO existe
+
+No hay rutas de lesiones, entrenadores ni traspasos. La baja por lesión solo
+se deduce de la alineación cuando sale, a 40 minutos.
+
 ## Cosas que no hay
 
 - **No hay desglose por tiempos** en `/statistics`: devuelve el acumulado del

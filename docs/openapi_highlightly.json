@@ -1,0 +1,4730 @@
+{
+  "openapi": "3.0.0",
+  "paths": {
+    "/countries": {
+      "get": {
+        "description": "> Refresh interval: Once a day\n\nRetrieve a list of countries that are supported by the API.\n\nBy utilising the `name` query parameter you can check whether a specific country exists or simply retrieve the associated data.\n\nCountry name and code can be used to query other resources such as `matches`, `leagues`, `highlights`, etc.\n\nBelow is an example of supported countries and their associated logos:\n![Countries example](https://highlightly.net/assets/img/documentation/countries.png)",
+        "operationId": "CountriesController_getAllCountries",
+        "parameters": [
+          {
+            "name": "x-rapidapi-host",
+            "in": "header",
+            "description": "football-highlights-api.p.rapidapi.com",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "x-rapidapi-key",
+            "in": "header",
+            "description": "Rapid API Token",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "required": false,
+            "name": "name",
+            "in": "query",
+            "schema": {
+              "example": "France",
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/FootballCountryResponseDto"
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad request descriptive error.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/BadRequestDto"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Internal server error.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/InternalServerErrorDto"
+                }
+              }
+            }
+          }
+        },
+        "summary": "Get all countries",
+        "tags": [
+          "Football.Countries"
+        ]
+      }
+    },
+    "/countries/{countryCode}": {
+      "get": {
+        "description": "> Refresh interval: Once a day\n\nRetrieve associated country details by specifying the country code path parameter. The path parameter should follow the `ISO 3166` standard.\n    \nCountry name and code can be used to query other resources such as `matches`, `leagues`, `highlights`, etc.",
+        "operationId": "CountriesController_getCountryByCountryCode",
+        "parameters": [
+          {
+            "name": "x-rapidapi-host",
+            "in": "header",
+            "description": "football-highlights-api.p.rapidapi.com",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "x-rapidapi-key",
+            "in": "header",
+            "description": "Rapid API Token",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "countryCode",
+            "required": true,
+            "in": "path",
+            "description": "A string value code of the country, following the ISO 3166 standard.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/FootballCountryResponseDto"
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad request descriptive error.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/BadRequestDto"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Internal server error.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/InternalServerErrorDto"
+                }
+              }
+            }
+          }
+        },
+        "summary": "Get country by country code",
+        "tags": [
+          "Football.Countries"
+        ]
+      }
+    },
+    "/leagues": {
+      "get": {
+        "description": "\n> Refresh interval: Multiple times a day\n \nRetrieve a list of leagues.\n\nBy utilising the `leagueName` query parameter you can check whether a specific league exists or simply retrieve the associated data. You can also narrow down your search by specifying the `countryCode` or `countryName` query parameters. \n\nThere are two other important query parameters. The `limit` parameter defines what the number of returned leagues will be. If the number of actual leagues is above the `limit` value you can make subsequent requests by increasing the `offset` value.\n\nThe league information and their associated seasons can be used to request data from other endpoints such as `standings`.\n",
+        "operationId": "LeaguesController_getLeagues",
+        "parameters": [
+          {
+            "name": "x-rapidapi-host",
+            "in": "header",
+            "description": "football-highlights-api.p.rapidapi.com",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "x-rapidapi-key",
+            "in": "header",
+            "description": "Rapid API Token",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "required": false,
+            "name": "limit",
+            "in": "query",
+            "schema": {
+              "minimum": 0,
+              "maximum": 100,
+              "default": 100,
+              "example": 100,
+              "type": "number"
+            }
+          },
+          {
+            "required": false,
+            "name": "offset",
+            "in": "query",
+            "schema": {
+              "minimum": 0,
+              "default": 0,
+              "example": 0,
+              "type": "number"
+            }
+          },
+          {
+            "required": false,
+            "name": "season",
+            "in": "query",
+            "schema": {
+              "minimum": 0,
+              "example": 2023,
+              "type": "number"
+            }
+          },
+          {
+            "required": false,
+            "name": "leagueName",
+            "in": "query",
+            "schema": {
+              "example": "Superettan",
+              "type": "string"
+            }
+          },
+          {
+            "description": "Country code specified by the ISO 3166 standard.",
+            "required": false,
+            "name": "countryCode",
+            "in": "query",
+            "schema": {
+              "example": "SE",
+              "type": "string"
+            }
+          },
+          {
+            "required": false,
+            "name": "countryName",
+            "in": "query",
+            "schema": {
+              "example": "Sweden",
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/FootballLeaguePaginatedResponseDto"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad request descriptive error.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/BadRequestDto"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Internal server error.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/InternalServerErrorDto"
+                }
+              }
+            }
+          }
+        },
+        "summary": "Get all leagues",
+        "tags": [
+          "Football.Leagues"
+        ]
+      }
+    },
+    "/leagues/{id}": {
+      "get": {
+        "description": "Retrieve league information by specifying the league id path parameter.\n\n> Note: Used to check whether a league still exists or had its information updated.",
+        "operationId": "LeaguesController_getLeagueById",
+        "parameters": [
+          {
+            "name": "x-rapidapi-host",
+            "in": "header",
+            "description": "football-highlights-api.p.rapidapi.com",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "x-rapidapi-key",
+            "in": "header",
+            "description": "Rapid API Token",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "description": "Requested league id.",
+            "schema": {
+              "type": "number"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/FootballLeagueResponseDto"
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad request descriptive error.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/BadRequestDto"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Internal server error.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/InternalServerErrorDto"
+                }
+              }
+            }
+          }
+        },
+        "summary": "Get league by id",
+        "tags": [
+          "Football.Leagues"
+        ]
+      }
+    },
+    "/teams": {
+      "get": {
+        "description": "Retrieve a list of teams that are supported by the API.\n\nBy utilising the `name` query parameter you can check whether a specific team exists or simply retrieve the associated data.\n\nThere are two other important query parameters. The `limit` parameter defines what the number of returned teams will be. If the number of actual teams is above the `limit` value you can make subsequent requests by increasing the `offset` value.\n",
+        "operationId": "TeamsController_getTeams",
+        "parameters": [
+          {
+            "name": "x-rapidapi-host",
+            "in": "header",
+            "description": "football-highlights-api.p.rapidapi.com",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "x-rapidapi-key",
+            "in": "header",
+            "description": "Rapid API Token",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "required": false,
+            "name": "limit",
+            "in": "query",
+            "schema": {
+              "minimum": 0,
+              "maximum": 500,
+              "default": 500,
+              "example": 50,
+              "type": "number"
+            }
+          },
+          {
+            "required": false,
+            "name": "offset",
+            "in": "query",
+            "schema": {
+              "minimum": 0,
+              "default": 0,
+              "example": 0,
+              "type": "number"
+            }
+          },
+          {
+            "required": false,
+            "name": "name",
+            "in": "query",
+            "schema": {
+              "example": "Skövde AIK",
+              "type": "string"
+            }
+          },
+          {
+            "required": false,
+            "name": "type",
+            "in": "query",
+            "schema": {
+              "example": "club",
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/FootballTeamPaginatedResponseDto"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad request descriptive error.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/BadRequestDto"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Internal server error.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/InternalServerErrorDto"
+                }
+              }
+            }
+          }
+        },
+        "summary": "Get all teams",
+        "tags": [
+          "Football.Teams"
+        ]
+      }
+    },
+    "/teams/statistics/{id}": {
+      "get": {
+        "description": "\n> Refresh interval: Immediately once a match is finished.\n \nRetrieve team stats for each league and season by specifying the team's `id` path parameter. Requires `fromDate` query parameter to be specified in the YYYY-MM-DD format. Additionally, the `timezone` query parameter can be specified to futher narrow down the search results based on your location.\n",
+        "operationId": "TeamsController_teamStatistics",
+        "parameters": [
+          {
+            "name": "x-rapidapi-host",
+            "in": "header",
+            "description": "football-highlights-api.p.rapidapi.com",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "x-rapidapi-key",
+            "in": "header",
+            "description": "Rapid API Token",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "description": "Requested team id.",
+            "schema": {
+              "type": "number"
+            }
+          },
+          {
+            "description": "Date that follows the YYYY-MM-DD format.",
+            "name": "fromDate",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "example": "2023-08-06",
+              "type": "string"
+            }
+          },
+          {
+            "description": "Valid timezone identifier.",
+            "required": false,
+            "name": "timezone",
+            "in": "query",
+            "schema": {
+              "default": "Etc/UTC",
+              "example": "Europe/London",
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/FootballTeamStatisticsResponseDto"
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad request descriptive error.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/BadRequestDto"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Internal server error.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/InternalServerErrorDto"
+                }
+              }
+            }
+          }
+        },
+        "summary": "Get team statistics",
+        "tags": [
+          "Football.Teams"
+        ]
+      }
+    },
+    "/teams/{id}": {
+      "get": {
+        "description": "Retrieve team information by specifying the team id path parameter.\n\n> Note: Used to check whether a team still exists or had its information updated.",
+        "operationId": "TeamsController_getTeamById",
+        "parameters": [
+          {
+            "name": "x-rapidapi-host",
+            "in": "header",
+            "description": "football-highlights-api.p.rapidapi.com",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "x-rapidapi-key",
+            "in": "header",
+            "description": "Rapid API Token",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "description": "Requested team id.",
+            "schema": {
+              "type": "number"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/FootballTeamResponseDto"
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad request descriptive error.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/BadRequestDto"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Internal server error.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/InternalServerErrorDto"
+                }
+              }
+            }
+          }
+        },
+        "summary": "Get team by team id",
+        "tags": [
+          "Football.Teams"
+        ]
+      }
+    },
+    "/matches": {
+      "get": {
+        "description": "> Refresh interval: Once a minute\n\n> Route returns only general match information. For additional match details check the `matches/{matchId}` route. \n\nRetrieve a list of matches based on the requested query parameters. \n\nAt least one primary query parameter needs to be specified before you can retrieve the data (`timezone`, `limit`, `offset` are considered secondary).\n\nYou can specify the `timezone` field in combination with the `date` query parameter to get matches relevant to your location.\n\nThere are two other important parameters. The `limit` parameter defines what the number of returned matches will be. If the number of actual matches is above the `limit` value you can make subsequent requests by increasing the `offset` value. \n\nMatches have different possible states they can be in:\n\n| State        | Description |\n| -----------  | ----------- |\n| Not started    |  Match has not been started yet.         |\n| First half  |  Match is considered in play and is in the first half.         |\n| Second half  | Match is considered in play and is in the second half.          |\n| Half time  | Half time pause between first and second half.          |\n| Extra time  | Game was considered a draw in normal time. Additional extra time is needed to decide the winner.          |\n| Break time  | Short pause between in play periods and extra time.       |\n| Penalties  | Penalty shootout to decide the winner of the match.         |\n| Finished  | Match has been concluded.          |\n| Finished after penalties  | Match has been concluded with the penalty shootout.         |\n| Finished after extra time  | Match has been concluded in extra time.         |\n| Postponed  | Match has been postponed due to certain circumstances that are preventing the game from being played. Event start time will be changed to a moment in the future.           |\n| Suspended  |  Match has already been in play but was suspended. In the future the game will resume from the exact point where it was halted.         |\n| Cancelled  |  Game will not be played.         |\n| Awarded  |  Game awarded to one of the teams when the other forfeits or specific circumstances have been met such as insufficient players, late arrival, team withdrawl, etc.          |\n| Interrupted  | An issue arose that is preventing the game from continuing. Based on the interruption the game will either resume normal play or be abandoned.          |\n| Abandoned  | Considered \"abandoned\" when it is prematurely ended by the officials and can not be resumed or completed. In the future the game **might be** resumed from the exact point where it was halted.            |\n| In progress  | Match is considered in play but the coverage information is minimal.          |\n| Unknown  | Unknown match coverage or state.          |\n| To be announced  | Match's start time will be updated or competing teams are not yet known.          |\n\nBelow is an example of what you can aim to achieve with the matches endpoint:\n\n![Football matches example](https://highlightly.net/assets/img/documentation/football/matches.png)",
+        "operationId": "MatchesController_getMatches",
+        "parameters": [
+          {
+            "name": "x-rapidapi-host",
+            "in": "header",
+            "description": "football-highlights-api.p.rapidapi.com",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "x-rapidapi-key",
+            "in": "header",
+            "description": "Rapid API Token",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "required": false,
+            "name": "leagueName",
+            "in": "query",
+            "schema": {
+              "example": "Superettan",
+              "type": "string"
+            }
+          },
+          {
+            "required": false,
+            "name": "leagueId",
+            "in": "query",
+            "schema": {
+              "example": 97798,
+              "type": "number"
+            }
+          },
+          {
+            "description": "Date that follows the YYYY-MM-DD format.",
+            "required": false,
+            "name": "date",
+            "in": "query",
+            "schema": {
+              "example": "2023-08-06",
+              "type": "string"
+            }
+          },
+          {
+            "description": "Valid timezone identifier.",
+            "required": false,
+            "name": "timezone",
+            "in": "query",
+            "schema": {
+              "default": "Etc/UTC",
+              "example": "Europe/London",
+              "type": "string"
+            }
+          },
+          {
+            "required": false,
+            "name": "season",
+            "in": "query",
+            "schema": {
+              "example": 2023,
+              "type": "number"
+            }
+          },
+          {
+            "required": false,
+            "name": "homeTeamId",
+            "in": "query",
+            "schema": {
+              "example": 5700782,
+              "type": "number"
+            }
+          },
+          {
+            "required": false,
+            "name": "awayTeamId",
+            "in": "query",
+            "schema": {
+              "example": 1907875,
+              "type": "number"
+            }
+          },
+          {
+            "required": false,
+            "name": "homeTeamName",
+            "in": "query",
+            "schema": {
+              "example": "Skövde AIK",
+              "type": "string"
+            }
+          },
+          {
+            "required": false,
+            "name": "awayTeamName",
+            "in": "query",
+            "schema": {
+              "example": "Vasteras SK FK",
+              "type": "string"
+            }
+          },
+          {
+            "description": "Country code specified by the ISO 3166 standard.",
+            "required": false,
+            "name": "countryCode",
+            "in": "query",
+            "schema": {
+              "example": "SE",
+              "type": "string"
+            }
+          },
+          {
+            "required": false,
+            "name": "countryName",
+            "in": "query",
+            "schema": {
+              "example": "Sweden",
+              "type": "string"
+            }
+          },
+          {
+            "required": false,
+            "name": "limit",
+            "in": "query",
+            "schema": {
+              "minimum": 0,
+              "maximum": 100,
+              "default": 100,
+              "example": 100,
+              "type": "number"
+            }
+          },
+          {
+            "required": false,
+            "name": "offset",
+            "in": "query",
+            "schema": {
+              "minimum": 0,
+              "default": 0,
+              "example": 0,
+              "type": "number"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/FootballMatchPaginatedResponseDto"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad request descriptive error.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/BadRequestDto"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Internal server error.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/InternalServerErrorDto"
+                }
+              }
+            }
+          }
+        },
+        "summary": "Get all matches",
+        "tags": [
+          "Football.Matches"
+        ]
+      }
+    },
+    "/matches/{id}": {
+      "get": {
+        "description": "\nRetrieve detailed match information by specifying the match id path parameter.\n\nCertain popular leagues and their associated matches will have additional data about the `venue`, weather `forecast`, match `statistics`,  match `news` and who the game's `referee` is. The retrieved data will also contain a list of important events that happened:\n\n| Type        | Description |\n| -----------  | ----------- |\n| Goal         | A player strikes the ball into the opposing team's goal.        |\n| Own Goal         | A player strikes or deflects the ball into their own team's goal.             |\n| Penalty         | A player scores the goal from the penalty spot after a foul or hand play by the defending team inside the penalty area.    |\n| Missed Penalty         | The player taking the penalty kick failed to score, either by missing the target or the shot being saved by the goalkeeper.             |\n| Yellow Card         | A player is cautioned by the referee for unsporting behavior or foul play.            |\n| Red Card         | A player is sent off the field for serious foul play, violent conduct, or receiving a second yellow card.            |\n| Substitution         | A player is replaced by another player from the bench during a stoppage in play.   |\n| VAR Goal Confirmed         | The Video Assistant Referee (VAR) review confirms that a goal is valid and should stand.            |\n| VAR Goal Cancelled         | The VAR review determines that a goal should be disallowed due to an infringement or violation.            |\n| VAR Penalty         | The VAR review results in a penalty being awarded to a team.      |\n| VAR Penalty Cancelled         | The VAR review results in a previously awarded penalty being overturned.   |\n| VAR Goal Cancelled - Offside         | The VAR review determines that a goal should be disallowed due to an offside infringement.   |\n\nThe above list may be updated with additional entries in the future.\n\n> Note: Used to retrieve additional match information.\n",
+        "operationId": "MatchesController_getMatchById",
+        "parameters": [
+          {
+            "name": "x-rapidapi-host",
+            "in": "header",
+            "description": "football-highlights-api.p.rapidapi.com",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "x-rapidapi-key",
+            "in": "header",
+            "description": "Rapid API Token",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "description": "Requested match id.",
+            "schema": {
+              "type": "number"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/FootballDetailedMatchResponseDto"
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad request descriptive error.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/BadRequestDto"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Internal server error.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/InternalServerErrorDto"
+                }
+              }
+            }
+          }
+        },
+        "summary": "Get match by id",
+        "tags": [
+          "Football.Matches"
+        ]
+      }
+    },
+    "/highlights": {
+      "get": {
+        "description": "> Refresh interval: Once a minute\n\n> Note: Certain highlights might be uploaded whilst the game is playing. Full game recaps tend to be uploaded anywhere from 1 to 48 hours after a match is finished.\n\n  Highlights represent the core of our API. They include various different kinds of clips ranging from real time live events such as insane plays, last minute scores to full game recaps, pre/post match interviews. \n\nCurrently we aggregate videos from many different sources. Depending on the source and verification process we divide the clips into two categories:\n\n| Type        | Description |\n| ----------- | ----------- |\n| VERIFIED    | Videos come from reputable sources that have been thoroughly inspected. In most cases the clips are from official authors who own the copyrights to the video itself. The hosting platform can impose geo restrictions or prevent direct embedding (`highlights/geo-restrictions/{highlightId}` route can be used to check for potential restrictions). Verified highlights are uploaded anywhere from 1 to 48 hours of the match being finished. |\n| UNVERIFIED  | Highlights vary and might not have gone through the verification process or are considered user uploaded. Videos include a wide spectrum of topics such as last minute scores, memorable plays, game recaps, etc. Unverified highlights are considered more real time and might be uploaded even when the match is still being played. The lifetime of these clips vary and is dependant on the hosting platform.       |\n\nEach highlight has a `title` which describes what the video is about. Certain entries will have a `description` as well which is used to further describe the associated clip. The `source` field defines where the clip was aggregated from (e.g. would be *youtube*, *twitter*, *reddit*, *espn*, etc.). For certain sources you will see additional information being present in the `channel` field. By utilising this information you can further narrow down which videos you want to showcase. Highlights might also have an `embedUrl` property which is used to directly embed the videos into your website or mobile application.\n\nEach highlight also has a `category` field which describes the type of content the clip contains. Categorization happens automatically when a highlight is aggregated. Clips that cannot be confidently placed are labeled `other` rather than being forced into a category they do not belong to, so filtering by a specific category will not return unrelated content.\n\n### Categories\n\nEach highlight has a `category` field describing the clip's content type. Possible values for this sport:\n\n| Category | Description |\n| -------- | ----------- |\n| `match-highlights` | Edited recap of a match (full-game highlights, summaries in any language). |\n| `goal-clip` | A single goal clip. |\n| `pre-match-content` | Previews, predictions and build-up content ahead of a match. |\n| `post-match-content` | Reactions, interviews and analysis after a match. |\n| `press-conference` | Official press conferences and media availability. |\n| `behind-the-scenes` | Training sessions, tunnel cams, inside-access content. |\n| `live-coverage` | Raw live streams (warm-ups, watch-alongs), as opposed to edited recaps. |\n| `discussion-analysis` | Studio shows, punditry and tactical analysis. |\n| `other` | Clips that do not fit any other category. |\n\nBelow is an example of what you can aim to achieve with our highlights data:\n\n![Highlights example](https://highlightly.net/assets/img/documentation/football/highlights.png)\n\n\n## Retrieve highlights\n\nRetrieve a list of highlights based on the requested query parameters.\n\nAt least one primary query parameter needs to be specified before you can retrieve the data (`timezone`, `limit`, `offset` are considered secondary).\n\nYou can specify the `timezone` field in combination with the `date` query parameter to get highlights relevant to your location.\n\nThere are two other important parameters. The `limit` parameter defines what the number of returned highlights will be. If the number of actual highlights is above the `limit` value you can make subsequent requests by increasing the `offset` value. \n\n> Note: The Basic/Free plan might have certain restrictions in place. More information can be found [here](https://rapidapi.com/highlightly-api-highlightly-api-default/api/football-highlights-api).\n",
+        "operationId": "HighlightsController_getHighlights",
+        "parameters": [
+          {
+            "name": "x-rapidapi-host",
+            "in": "header",
+            "description": "football-highlights-api.p.rapidapi.com",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "x-rapidapi-key",
+            "in": "header",
+            "description": "Rapid API Token",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "description": "Country code specified by the ISO 3166 standard.",
+            "required": false,
+            "name": "countryCode",
+            "in": "query",
+            "schema": {
+              "example": "TR",
+              "type": "string"
+            }
+          },
+          {
+            "required": false,
+            "name": "countryName",
+            "in": "query",
+            "schema": {
+              "example": "Turkey",
+              "type": "string"
+            }
+          },
+          {
+            "required": false,
+            "name": "leagueName",
+            "in": "query",
+            "schema": {
+              "example": "Süper Lig",
+              "type": "string"
+            }
+          },
+          {
+            "required": false,
+            "name": "leagueId",
+            "in": "query",
+            "schema": {
+              "example": 173537,
+              "type": "number"
+            }
+          },
+          {
+            "description": "Date that follows the YYYY-MM-DD format.",
+            "required": false,
+            "name": "date",
+            "in": "query",
+            "schema": {
+              "example": "2023-08-11",
+              "type": "string"
+            }
+          },
+          {
+            "description": "Valid timezone identifier.",
+            "required": false,
+            "name": "timezone",
+            "in": "query",
+            "schema": {
+              "default": "Etc/UTC",
+              "example": "Europe/London",
+              "type": "string"
+            }
+          },
+          {
+            "required": false,
+            "name": "season",
+            "in": "query",
+            "schema": {
+              "example": 2023,
+              "type": "number"
+            }
+          },
+          {
+            "required": false,
+            "name": "matchId",
+            "in": "query",
+            "schema": {
+              "example": 914490490,
+              "type": "number"
+            }
+          },
+          {
+            "required": false,
+            "name": "homeTeamId",
+            "in": "query",
+            "schema": {
+              "example": 850082,
+              "type": "number"
+            }
+          },
+          {
+            "required": false,
+            "name": "awayTeamId",
+            "in": "query",
+            "schema": {
+              "example": 856039,
+              "type": "number"
+            }
+          },
+          {
+            "required": false,
+            "name": "homeTeamName",
+            "in": "query",
+            "schema": {
+              "example": "Trabzonspor",
+              "type": "string"
+            }
+          },
+          {
+            "required": false,
+            "name": "awayTeamName",
+            "in": "query",
+            "schema": {
+              "example": "Antalyaspor",
+              "type": "string"
+            }
+          },
+          {
+            "required": false,
+            "name": "limit",
+            "in": "query",
+            "schema": {
+              "minimum": 0,
+              "maximum": 40,
+              "default": 40,
+              "example": 40,
+              "type": "number"
+            }
+          },
+          {
+            "required": false,
+            "name": "offset",
+            "in": "query",
+            "schema": {
+              "minimum": 0,
+              "default": 0,
+              "example": 0,
+              "type": "number"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/FootballHighlightPaginatedResponseDto"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad request descriptive error.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/BadRequestDto"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Internal server error.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/InternalServerErrorDto"
+                }
+              }
+            }
+          }
+        },
+        "summary": "Get all highlights",
+        "tags": [
+          "Football.Highlights"
+        ]
+      }
+    },
+    "/highlights/geo-restrictions/{id}": {
+      "get": {
+        "description": "> Refresh interval: Once an hour\n\n> Note: Endpoint is not available in the Basic/Free plan.\n\nGeo restrictions are a plague that have been around for quite a while. They restrict access to online content based on the viewers geographical location. Trying to show restricted highlights to your users can greatly hinder the viewing experience.\n\nEach highlight has a `state` property which defines how the geo restrictions are applied.\n\n| State       | Description   |\n| ----------- | -----------   |\n| No restricitons applied                 | Highlight has no restrictions applied and is available globally.            |   \n| Allowed countries restriction           | Highlight is only available to users whose country code is found in the `allowedCountries` list.             |\n| Blocked countries restriction           | Highlight is blocked to all users whose country code is found in the `blockedCountries` list.               |\n| Unknown restrictions                    | There is no guaranteed way to define all allowed or blocked countries.            |\n\nAs presented before, certain highlights have an `embedUrl` field which can be used to directly embed the video into your website or application. The `embeddable` field specifies whether this is allowed or not. \n",
+        "operationId": "HighlightsController_getGeoRestrictions",
+        "parameters": [
+          {
+            "name": "x-rapidapi-host",
+            "in": "header",
+            "description": "football-highlights-api.p.rapidapi.com",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "x-rapidapi-key",
+            "in": "header",
+            "description": "Rapid API Token",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "description": "Requested highlight id.",
+            "schema": {
+              "type": "number"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/RestrictionResponseDto"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad request descriptive error.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/BadRequestDto"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Internal server error.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/InternalServerErrorDto"
+                }
+              }
+            }
+          }
+        },
+        "summary": "Get geo restrictions for highlight",
+        "tags": [
+          "Football.Highlights"
+        ]
+      }
+    },
+    "/highlights/{id}": {
+      "get": {
+        "description": "\nRetrieve highlight information by specifying the highlight id path parameter.\n\n> Note: Used to check whether a highlight still exists or had its information updated.\n",
+        "operationId": "HighlightsController_getHighlightById",
+        "parameters": [
+          {
+            "name": "x-rapidapi-host",
+            "in": "header",
+            "description": "football-highlights-api.p.rapidapi.com",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "x-rapidapi-key",
+            "in": "header",
+            "description": "Rapid API Token",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "description": "Requested highlight id.",
+            "schema": {
+              "type": "number"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/FootballHighlightResponseDto"
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad request descriptive error.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/BadRequestDto"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Internal server error.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/InternalServerErrorDto"
+                }
+              }
+            }
+          }
+        },
+        "summary": "Get highlight by id",
+        "tags": [
+          "Football.Highlights"
+        ]
+      }
+    },
+    "/bookmakers": {
+      "get": {
+        "description": "> Refresh interval: Once a day\n\nRetrieve a list of supported bookmakers. \n\nThere are two important parameters that are used to navigate through the pagination. The `limit` parameter defines what the number of returned bookmakers will be. If the number of actual bookmakers is above the `limit` value you can make subsequent requests by increasing the `offset` value. \n\nThe bookmakers `name` or `id` can be used to filter data from the `odds` endpoint. ",
+        "operationId": "FootballBookmakersController_getBookmakers",
+        "parameters": [
+          {
+            "name": "x-rapidapi-host",
+            "in": "header",
+            "description": "football-highlights-api.p.rapidapi.com",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "x-rapidapi-key",
+            "in": "header",
+            "description": "Rapid API Token",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "required": false,
+            "name": "name",
+            "in": "query",
+            "schema": {
+              "example": "Stake.com",
+              "type": "string"
+            }
+          },
+          {
+            "required": false,
+            "name": "limit",
+            "in": "query",
+            "schema": {
+              "minimum": 0,
+              "maximum": 100,
+              "default": 20,
+              "example": 20,
+              "type": "number"
+            }
+          },
+          {
+            "required": false,
+            "name": "offset",
+            "in": "query",
+            "schema": {
+              "minimum": 0,
+              "default": 0,
+              "example": 0,
+              "type": "number"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/FootballBookmakersPaginatedResponseDto"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad request descriptive error.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/BadRequestDto"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Internal server error.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/InternalServerErrorDto"
+                }
+              }
+            }
+          }
+        },
+        "summary": "Get all bookmakers",
+        "tags": [
+          "Football.Bookmakers"
+        ]
+      }
+    },
+    "/bookmakers/{id}": {
+      "get": {
+        "description": "\nRetrieve bookmaker information by specifying the bookmaker id path parameter.\n\n> Note: Used to check whether a bookmaker still exists or had its information updated.\n",
+        "operationId": "FootballBookmakersController_getBookmakerById",
+        "parameters": [
+          {
+            "name": "x-rapidapi-host",
+            "in": "header",
+            "description": "football-highlights-api.p.rapidapi.com",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "x-rapidapi-key",
+            "in": "header",
+            "description": "Rapid API Token",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "description": "Requested bookmaker id.",
+            "schema": {
+              "type": "number"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/FootballBookmakerResponseDto"
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad request descriptive error.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/BadRequestDto"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Internal server error.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/InternalServerErrorDto"
+                }
+              }
+            }
+          }
+        },
+        "summary": "Get bookmaker by id",
+        "tags": [
+          "Football.Bookmakers"
+        ]
+      }
+    },
+    "/odds": {
+      "get": {
+        "description": "\n> Prematch odds refresh interval: Multiple times a day\n \n> Live odds refresh interval: Once every 10 minutes\n \n> Note: Endpoint is not available in the Basic/Free plan.\n\nRetrieve a list of match odds based on the requested query parameters. With `oddsType` query parameter you can specify whether you want **prematch** or **live** odds. If you do not set a specific value **prematch** odds will be returned.\n\nAt least one primary query parameter needs to be specified before you can retrieve the data (`timezone`, `limit`, `offset`, `oddsType` are considered secondary).\n\nThe most popular way of getting match odds is by specifying the `matchId` query parameter. You can also utilise the `date` parameter alongside the `timezone` to fetch all match odds for a given day. By specifying league or bookmaker related fields you can further narrow down your search.\n\nAs it stands, we currently offer the support for the following markets:\n\n| Market | Description |\n| ----------- | ----------- |\n| Full Time Result | The possible outcomes for the mentioned market are `Home`, `Draw` or `Away`. |\n| Asian Handicap | This is considered a complex market. It is split into multiple possible variants such as *\"Asian Handicap -1.25/+1.25\"*, *\"Asian Handicap -1.5/+1.5\"* and so on. The possible outcome of a variant is either `Home` or `Away`.|\n| Odd or Even | The Odd or Even market defines whether the score of both teams will be either `Odd` or `Even`. |\n| Total Goals | This is considered a complex market. It is split into multiple possible variants such as *\"Total Goals 2\"*, *\"Total Goals 3.5\"* and so on. The possible outcome of a variant is either `Over` or `Under`. |\n| Both Teams to Score | The market defines whether both teams will score or not. Outcomes can be either `Yes` or `No`. |\n| Correct Score | This is considered a complex market. It is split into multiple possible variants such as *\"Correct Score 2 : 0\"*, *\"Correct Score 1 : 1\"* and so on. There is only a single possible outcome of the variant. |\n| First Team to Score | The market defines which team will be the first one to score a goal. Outcomes can be either `Home`, `Away` or `None` when no team scores a goal. |\n| Total Cards | This is considered a complex market. It is split into multiple possible variants such as *\"Total Cards 4\"*, *\"Total Cards 5.25\"* and so on. The possible outcome of a variant is either `Over` or `Under`. |\n| Clean Sheet | The Clean Sheet market defines whether the home or away team will not concede any goals. Outcomes can be either `Home` or `Away`. If the game results in a *0 : 0* score, both outcomes are considered winning. |\n| Total Corners | This is considered a complex market. It is split into multiple possible variants such as *\"Total Corners 11.5\"*, *\"Total Corners 12.5\"* and so on. The possible outcome of a variant is either `Over` or `Under`. |\n\nThere are two other important query parameters. The `limit` parameter defines what the number of returned match odds will be. If the number of actual match odds is above the `limit` value you can make subsequent requests by increasing the `offset` value.\n\n> Match odds are available up to 28 days after the game finishes and up to 7 days before the game starts.\n\nBelow is an example of what can be achieved with bookmaker odds on a match basis:\n\n![Odds example](https://highlightly.net/assets/img/documentation/odds-hda.png)",
+        "operationId": "FootballOddsController_getOddsV2",
+        "parameters": [
+          {
+            "name": "x-rapidapi-host",
+            "in": "header",
+            "description": "football-highlights-api.p.rapidapi.com",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "x-rapidapi-key",
+            "in": "header",
+            "description": "Rapid API Token",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "description": "Defines whether live or prematch odds will be returned.",
+            "required": false,
+            "name": "oddsType",
+            "in": "query",
+            "schema": {
+              "example": "prematch",
+              "type": "string"
+            }
+          },
+          {
+            "required": false,
+            "name": "leagueId",
+            "in": "query",
+            "schema": {
+              "type": "number"
+            }
+          },
+          {
+            "required": false,
+            "name": "leagueName",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "description": "Valid timezone identifier.",
+            "required": false,
+            "name": "timezone",
+            "in": "query",
+            "schema": {
+              "default": "Etc/UTC",
+              "example": "Europe/London",
+              "type": "string"
+            }
+          },
+          {
+            "required": false,
+            "name": "bookmakerId",
+            "in": "query",
+            "schema": {
+              "example": 1,
+              "type": "number"
+            }
+          },
+          {
+            "required": false,
+            "name": "limit",
+            "in": "query",
+            "schema": {
+              "minimum": 0,
+              "maximum": 5,
+              "default": 5,
+              "example": 5,
+              "type": "number"
+            }
+          },
+          {
+            "required": false,
+            "name": "offset",
+            "in": "query",
+            "schema": {
+              "minimum": 0,
+              "default": 0,
+              "example": 0,
+              "type": "number"
+            }
+          },
+          {
+            "required": false,
+            "name": "matchId",
+            "in": "query",
+            "schema": {
+              "type": "number"
+            }
+          },
+          {
+            "required": false,
+            "name": "bookmakerName",
+            "in": "query",
+            "schema": {
+              "example": "Stake.com",
+              "type": "string"
+            }
+          },
+          {
+            "description": "Date that follows the YYYY-MM-DD format.",
+            "required": false,
+            "name": "date",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/FootballOddsPaginatedResponseDto"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad request descriptive error.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/BadRequestDto"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Internal server error.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/InternalServerErrorDto"
+                }
+              }
+            }
+          }
+        },
+        "summary": "Get all odds",
+        "tags": [
+          "Football.Odds"
+        ]
+      }
+    },
+    "/standings": {
+      "get": {
+        "description": "> Refresh interval: Up to an hour after a match for the associated league and season is finished\n\nRetrieve standings data for a specific league, conference or division.\n\nEndpoint requires both `leagueId` and `season` query parameters to be specified before you can fetch the data. \n\nBelow is an example on how you could render league associated standings\n\n![Standings example](https://highlightly.net/assets/img/documentation/football/standings.png)",
+        "operationId": "FootballStandingsController_getStandings",
+        "parameters": [
+          {
+            "name": "x-rapidapi-host",
+            "in": "header",
+            "description": "football-highlights-api.p.rapidapi.com",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "x-rapidapi-key",
+            "in": "header",
+            "description": "Rapid API Token",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "leagueId",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "example": 33973,
+              "type": "number"
+            }
+          },
+          {
+            "name": "season",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "example": 2023,
+              "type": "number"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/FootballStandingsResponseDto"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad request descriptive error.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/BadRequestDto"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Internal server error.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/InternalServerErrorDto"
+                }
+              }
+            }
+          }
+        },
+        "summary": "Get standings",
+        "tags": [
+          "Football.Standings"
+        ]
+      }
+    },
+    "/last-five-games": {
+      "get": {
+        "description": "> Refresh interval: Immediately once a game is considered finished\n\nRetrieve a list of the **last five finished** games for a specific team. If a game was not finished (e.g. was cancelled or postponed) it will *not* be returned.\n\nSpecify `teamId` query parameter to retrieve the data. Endpoint is used to create a form section between two teams that are playing a match. Below is an example of what can be achieved:\n\n![Last five games example](https://highlightly.net/assets/img/documentation/l5g.png)",
+        "operationId": "FootballLastFiveGamesController_getLastFiveGames",
+        "parameters": [
+          {
+            "name": "x-rapidapi-host",
+            "in": "header",
+            "description": "football-highlights-api.p.rapidapi.com",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "x-rapidapi-key",
+            "in": "header",
+            "description": "Rapid API Token",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "teamId",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "example": 5700782,
+              "type": "number"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/FootballMatchResponseDto"
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad request descriptive error.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/BadRequestDto"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Internal server error.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/InternalServerErrorDto"
+                }
+              }
+            }
+          }
+        },
+        "summary": "Get last five finished games for a specific team id",
+        "tags": [
+          "Football.Last Five Games"
+        ]
+      }
+    },
+    "/head-2-head": {
+      "get": {
+        "description": "Retrieve a list of the **last ten** head 2 head games between two teams. Compare the two teams to find out who is stronger based on their past match results. \n\nSpecify `teamIdOne` and `teamIdTwo` query parameters to retrieve the data. The order of team ids does not matter.\n\nBelow is an example of what you can achieve with the data:\n\n![H2H example](https://highlightly.net/assets/img/documentation/football/h2h.png)",
+        "operationId": "FootballHead2HeadController_getHead2HeadData",
+        "parameters": [
+          {
+            "name": "x-rapidapi-host",
+            "in": "header",
+            "description": "football-highlights-api.p.rapidapi.com",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "x-rapidapi-key",
+            "in": "header",
+            "description": "Rapid API Token",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "teamIdOne",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "example": 314803,
+              "type": "number"
+            }
+          },
+          {
+            "name": "teamIdTwo",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "example": 5700782,
+              "type": "number"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/FootballMatchResponseDto"
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad request descriptive error.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/BadRequestDto"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Internal server error.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/InternalServerErrorDto"
+                }
+              }
+            }
+          }
+        },
+        "summary": "Get head 2 head games",
+        "tags": [
+          "Football.Head 2 Head"
+        ]
+      }
+    },
+    "/lineups/{matchId}": {
+      "get": {
+        "description": "> Lineups are requested from 40 minutes before kickoff until 120 minutes after.\n\n> Refresh interval: Once every 15 minutes\n\nRetrieve home and away team lineups for a specific match.\n\nUnderstanding the returned data structure is crucial for accurate rendering. The `formation` and `initialLineup` fields are closely related. The first row will always include the team's goalkeeper, while subsequent rows will have the number of entries specified by the formation field.\n\nBelow is an example of what you can aim to achieve with the lineup endpoint:\n\n![Football lineups example](https://highlightly.net/assets/img/documentation/football/lineups.png)\n",
+        "operationId": "FootballLineupsController_getLineups",
+        "parameters": [
+          {
+            "name": "x-rapidapi-host",
+            "in": "header",
+            "description": "football-highlights-api.p.rapidapi.com",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "x-rapidapi-key",
+            "in": "header",
+            "description": "Rapid API Token",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "matchId",
+            "required": true,
+            "in": "path",
+            "description": "Requested match id.",
+            "schema": {
+              "type": "number"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/FootballLineupsResponseDto"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad request descriptive error.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/BadRequestDto"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Internal server error.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/InternalServerErrorDto"
+                }
+              }
+            }
+          }
+        },
+        "summary": "Get linups by match id",
+        "tags": [
+          "Football.Lineups"
+        ]
+      }
+    },
+    "/statistics/{matchId}": {
+      "get": {
+        "description": "> Refresh interval: Once every 5 minutes\n\nRetrieve match statistics data by specifying the `matchId` as the path parameter.\n\nBelow is an example of what you can aim to achieve with the statistics endpoint:\n\n![Football statistics example](https://highlightly.net/assets/img/documentation/football/statistics.png)",
+        "operationId": "FootballStatisticsController_getStatistics",
+        "parameters": [
+          {
+            "name": "x-rapidapi-host",
+            "in": "header",
+            "description": "football-highlights-api.p.rapidapi.com",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "x-rapidapi-key",
+            "in": "header",
+            "description": "Rapid API Token",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "matchId",
+            "required": true,
+            "in": "path",
+            "description": "Requested statistics for given match id",
+            "schema": {
+              "type": "number"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/FootballMatchStatisticsResponseDto"
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad request descriptive error.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/BadRequestDto"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Match statistics not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/NotFoundDto"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Internal server error.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/InternalServerErrorDto"
+                }
+              }
+            }
+          }
+        },
+        "summary": "Get match statistics by match id",
+        "tags": [
+          "Football.Statistics"
+        ]
+      }
+    },
+    "/events/{id}": {
+      "get": {
+        "description": "> Refresh interval: Once a minute\n\nRetrieve a list of live events for a match by specifying `matchId` as the path parameter.\n\nCurrently supported live events:\n\n| Type        | Description |\n| -----------  | ----------- |\n| Goal         | A player strikes the ball into the opposing team's goal.        |\n| Own Goal         | A player strikes or deflects the ball into their own team's goal.             |\n| Penalty         | A player scores the goal from the penalty spot after a foul or hand play by the defending team inside the penalty area.    |\n| Missed Penalty         | The player taking the penalty kick failed to score, either by missing the target or the shot being saved by the goalkeeper.             |\n| Yellow Card         | A player is cautioned by the referee for unsporting behavior or foul play.            |\n| Red Card         | A player is sent off the field for serious foul play, violent conduct, or receiving a second yellow card.            |\n| Substitution         | A player is replaced by another player from the bench during a stoppage in play.   |\n| VAR Goal Confirmed         | The Video Assistant Referee (VAR) review confirms that a goal is valid and should stand.            |\n| VAR Goal Cancelled         | The VAR review determines that a goal should be disallowed due to an infringement or violation.            |\n| VAR Penalty         | The VAR review results in a penalty being awarded to a team.      |\n| VAR Penalty Cancelled         | The VAR review results in a previously awarded penalty being overturned.   |\n| VAR Goal Cancelled - Offside         | The VAR review determines that a goal should be disallowed due to an offside infringement.   |\n\nThe above list may be updated with additional entries in the future.\n\nBelow is an example of what you can aim to achieve with the live events endpoint:\n\n![Football live events example](https://highlightly.net/assets/img/documentation/football/live-events.png)",
+        "operationId": "FootballLiveEventsController_getLiveEvents",
+        "parameters": [
+          {
+            "name": "x-rapidapi-host",
+            "in": "header",
+            "description": "football-highlights-api.p.rapidapi.com",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "x-rapidapi-key",
+            "in": "header",
+            "description": "Rapid API Token",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "description": "Requested match id.",
+            "schema": {
+              "type": "number"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/FootballLiveEventDto"
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad request descriptive error.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/BadRequestDto"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Internal server error.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/InternalServerErrorDto"
+                }
+              }
+            }
+          }
+        },
+        "summary": "Get live events by match id",
+        "tags": [
+          "Football.Live Events"
+        ]
+      }
+    },
+    "/players": {
+      "get": {
+        "description": "> Refresh interval: 15 minutes\n\n> Route returns only general player information. For additional player details check the `players/{playerId}` and `players/{playerId}/statistics` routes. \n\nRetrieve a list of players based on the requested query parameters. \n\nReturned results will be paginated. The `limit` parameter defines what the number of returned players will be. If the number of actual players is above the `limit` value you can make subsequent requests by increasing the `offset` value.",
+        "operationId": "PlayersController_getPlayers",
+        "parameters": [
+          {
+            "name": "x-rapidapi-host",
+            "in": "header",
+            "description": "football-highlights-api.p.rapidapi.com",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "x-rapidapi-key",
+            "in": "header",
+            "description": "Rapid API Token",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "required": false,
+            "name": "name",
+            "in": "query",
+            "schema": {
+              "example": "Ivan Perišić",
+              "type": "string"
+            }
+          },
+          {
+            "required": false,
+            "name": "limit",
+            "in": "query",
+            "schema": {
+              "minimum": 0,
+              "maximum": 1000,
+              "default": 1000,
+              "example": 1000,
+              "type": "number"
+            }
+          },
+          {
+            "required": false,
+            "name": "offset",
+            "in": "query",
+            "schema": {
+              "minimum": 0,
+              "default": 0,
+              "example": 0,
+              "type": "number"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/FootballPlayerPaginatedResponseDto"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad request descriptive error.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/BadRequestDto"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Internal server error.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/InternalServerErrorDto"
+                }
+              }
+            }
+          }
+        },
+        "summary": "Get all players",
+        "tags": [
+          "Football.Players"
+        ]
+      }
+    },
+    "/players/{id}": {
+      "get": {
+        "description": "> Refresh interval: Once a day\n\nRetrieve detailed player summary for specified `playerId`.\n\nDetailed player summary consists of the following information:\n\n| Type         | Description |\n| ------------ | ----------- |\n| Profile      | Provides a structured summary of a football player's personal and professional profile. It includes key details such as current club affiliation, contract timelines, physical attributes (height, preferred foot), biographical data (name, birth date, birthplace, citizenship), and playing positions. The data reflects both the player's current career status and positional versatility, offering a higher level overview which is useful for scouting, analysis, or profile display. |\n| Rumours      | Rumours field provides an overview of a football player's transfer rumours. It distinguishes between current and historical speculation. Each entry includes the date the rumour emerged and, when available, a transfer probability indicating the estimated likelihood of the move. This data helps track the player's visibility and perceived value in the transfer market over time. |\n| Related news | Contains a list of news articles related to a football player, offering a historical record of media coverage. Each entry includes the article's title, publication date, and a link to the full content. The topics span various aspects of the player's career and broader football developments, including transfer moves, international appearances, squad analysis, and club strategies. This data helps illustrate the player's visibility in the media and contextualizes their role within the football landscape over time. |\n| Transfers    | Outlines the complete transfer history of a football player, detailing their movement between clubs over the course of their career. Each entry includes the destination and origin clubs, the type of transfer (such as transfer, loan, or end of loan), the season in which the move occurred, the player's market value at the time, and the transfer fee when applicable. Transfer history provides us with a comprehensive view of the players mobility, market trajectory, and contractual developments across multiple leagues and stages of their career. |\n| Market value | Presents a chronological record of a football players market value over time. Each entry includes the recorded date, market value, players club at the time, age, and currency. This data allows for analysis of value trends throughout the players career, reflecting factors such as performance, injuries, transfers, and broader market conditions. It is useful for scouting, valuation modelling, and historical comparisons. |\n\nBelow is an example of what you can aim to achieve with the player summary endpoint:\n\n![Player summary example](https://highlightly.net/assets/img/documentation/football/player-details.png)",
+        "operationId": "PlayersController_getPlayerSummaryById",
+        "parameters": [
+          {
+            "name": "x-rapidapi-host",
+            "in": "header",
+            "description": "football-highlights-api.p.rapidapi.com",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "x-rapidapi-key",
+            "in": "header",
+            "description": "Rapid API Token",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "description": "Requested player id.",
+            "schema": {
+              "type": "number"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/FootballDetailedPlayerSummaryResponseDto"
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad request descriptive error.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/BadRequestDto"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Internal server error.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/InternalServerErrorDto"
+                }
+              }
+            }
+          }
+        },
+        "summary": "Get player summary by player id",
+        "tags": [
+          "Football.Players"
+        ]
+      }
+    },
+    "/players/{id}/statistics": {
+      "get": {
+        "description": "> Refresh interval: Once a day\n\nRetrieve detailed player statistics for specified `playerId`.\n\nDetailed player statistics is split into `perClub` and `perCompetition` aggregation. The following statistics are available:\n\n| Type               | Description                                                                 |\n|--------------------|-----------------------------------------------------------------------------|\n| Goals              | Number of goals scored by the player.                                        |\n| Assists            | Number of assists provided by the player.                                    |\n| Own goals           | Number of goals accidentally scored against the player's own team.           |\n| Red cards           | Number of direct red cards received.                                         |\n| Clean sheets        | Number of matches where no goals were conceded (mostly relevant for goalkeepers). |\n| Games played        | Total number of matches the player appeared in.                              |\n| Yellow cards        | Number of yellow cards received.                                              |\n| Goals conceded      | Number of goals the team conceded while the player was on the pitch (mainly for goalkeepers). |\n| Minutes played      | Total number of minutes the player was on the field.                         |\n| Substituted in      | Number of times the player came on as a substitute.                          |\n| Substituted out     | Number of times the player was substituted off.                              |\n| Penalties scored    | Number of penalty goals scored.                                               |\n| Second yellow cards  | Number of second yellow cards leading to a red card.                        |\n\nAdditionally, the competitions are split into multiple categories:\n\n| Type             | Description                                                                 |\n|------------------|-----------------------------------------------------------------------------|\n| National league  | A country's main domestic competition where clubs play each other over a season (e.g., Premier League, La Liga). |\n| National cup     | A domestic knockout tournament open to clubs from different divisions (e.g., FA Cup, Copa del Rey). |\n| International cup| A tournament involving clubs from multiple countries (e.g., UEFA Champions League, Copa Libertadores). |\n\n![Player stats example](https://highlightly.net/assets/img/documentation/football/player-stats.png)",
+        "operationId": "PlayersController_getPlayerStatisticsById",
+        "parameters": [
+          {
+            "name": "x-rapidapi-host",
+            "in": "header",
+            "description": "football-highlights-api.p.rapidapi.com",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "x-rapidapi-key",
+            "in": "header",
+            "description": "Rapid API Token",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "description": "Requested player id.",
+            "schema": {
+              "type": "number"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/FootballDetailedPlayerStatisticsResponseDto"
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad request descriptive error.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/BadRequestDto"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Internal server error.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/InternalServerErrorDto"
+                }
+              }
+            }
+          }
+        },
+        "summary": "Get player statistics by player id",
+        "tags": [
+          "Football.Players"
+        ]
+      }
+    },
+    "/box-score/{matchId}": {
+      "get": {
+        "description": "> Refresh interval: Once every 5 minutes\n\nRetrieve detailed per-player box score match statistics data by specifying the `matchId` as the path parameter.\n\nThe player box score statistics contain the general team information as well as a list of players and their respective stats. Each player has high level metadata information:\n\n| Data         |  Description                                                     |\n| --------------| --------------------------------------------------------------- |\n| id            | Unique identifier for the player.                               |\n| Match rating   | Match performance rating (e.g., \"8.00\").                      |\n| Shirt number   | Player's shirt/jersey number.                                   |\n| Position       | Playing position (e.g., \"Goalkeeper\", \"Defender\").          |\n| Is a captain   | Indicates if the player was the team captain.                   |\n| Minutes played | Total minutes played in the match.                              |\n| Is a substitute | Indicates if the player started as a substitute.                |\n| Offside        | Number of offsides committed.                                   |\n| Statistics     | Detailed performance metrics. |\n| Name           | Commonly known name of the player.                              |\n| Full name      | Player's full registered name.                                  |\n| Logo           | URL to the player's image/logo, if available.                   |\n\nBesides the general metadata, each player has the following granular match performance statistics:\n\n| Statistic                | Description                                                        |\n| -------------------- | ------------------------------------------------------------------ |\n| Goals scored        | Number of goals the player scored in the match.                    |\n| Goals saved        | Number of opponent shots saved (goalkeeper stat).                  |\n| Goals conceded      | Goals allowed by the player's team while they were the goalkeeper. |\n| Assists            | Passes that directly led to a goal.                                |\n| Total dribbles      | Total dribble attempts made.                                       |\n| Successful dribbles | Dribble attempts that successfully beat an opponent.               |\n| Failed dribbles     | Dribble attempts that were unsuccessful.                           |\n| Dribble success rate | Percentage of dribbles that were successful.                       |\n| Fouls received     | Times the player was fouled by opponents.                          |\n| Fouls commited       | Fouls committed by the player.                                     |\n| Total tackles       | Total tackles attempted.                                           |\n| Total interceptions | Number of times the player intercepted an opponent's pass.         |\n| Shots on target      | Shots directed at goal that required a save or resulted in a goal. |\n| Shots off target     | Shots that missed the goal completely.                             |\n| Shots total         | Total shots attempted (on and off target).                         |\n| Shots accuracy      | Percentage of shots that were on target.                           |\n| Penalties scored    | Penalty kicks successfully converted into goals.                   |\n| Penalties missed    | Penalty kicks that failed to score.                                |\n| Total penalties     | Total penalty kicks taken.                                         |\n| Penalty accuracy  | Percentage of penalties scored.                                    |\n| Passing accuracy     | Percentage of completed passes.                                    |\n| Successful passes  | Passes that successfully reached a teammate.                       |\n| Failed passes       | Passes that failed to reach a teammate.                            |\n| Total passes        | Total passes attempted.                                            |\n| Key passes          | Passes that directly created a goal-scoring opportunity.           |\n| Red cards           | Number of red cards received.                                      |\n| Yellow cards        | Number of yellow cards received.                                   |\n| Second yellow cards  | Number of second yellow cards leading to a red card.               |\n| Total duels         | Number of 1v1 challenges contested.                                |\n| Won duels           | Number of duels won.                                               |\n| Lost duels          | Number of duels lost.                                              |\n| Duel success rate    | Percentage of duels won.                                           |\n| Expected assists (xA)            | The estimated number of assists the player should have, based on chance quality. |\n| Expected goals (xG)              | The estimated number of goals the player should have scored, based on chance quality. |\n| Expected goals on target (xGOT)  | The expected number of goals based on the placement and quality of shots on target. |\n| Expected goals on target conceded (xGOT Conceded) | The expected number of goals a goalkeeper should have conceded based on shots faced. |\n| Expected goals prevented (xGP)   | Difference between expected goals on target conceded and actual goals conceded (goalkeeper stat). |\n\nBelow is an example of what you can aim to achieve with the player box score endpoint:\n\n![Football player box score example](https://highlightly.net/assets/img/documentation/football/player-box-score.png)",
+        "operationId": "FootballPlayerBoxScoreController_getPlayerBoxScores",
+        "parameters": [
+          {
+            "name": "x-rapidapi-host",
+            "in": "header",
+            "description": "football-highlights-api.p.rapidapi.com",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "x-rapidapi-key",
+            "in": "header",
+            "description": "Rapid API Token",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "matchId",
+            "required": true,
+            "in": "path",
+            "description": "Requested match id.",
+            "schema": {
+              "type": "number"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/FootballPlayerMatchStatisticsResponse"
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad request descriptive error.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/BadRequestDto"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Internal server error.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/InternalServerErrorDto"
+                }
+              }
+            }
+          }
+        },
+        "summary": "Retrieve box scores for specified match id.",
+        "tags": [
+          "Football.Match Box Score"
+        ]
+      }
+    }
+  },
+  "info": {
+    "title": "Football API Documentation",
+    "description": "The Highlightly Football API provides real-time football data including live scores, video highlights, match statistics, player profiles and stats, lineups, predictions, and live events across 950+ leagues in 170+ countries including Premier League, La Liga, Serie A, Bundesliga, Ligue 1, and Champions League. Access momentum indicators, head-to-head data, and standings through a single REST API.\n\n## Contact\n\nFor feature requests, questions, private plans or business inquiries you can contact us at [support@highlightly.net](mailto:support@highlightly.net).\n\nYou can also contact us via [RapidAPI](https://rapidapi.com/highlightly-api-highlightly-api-default/api/football-highlights-api) by starting a discussion or by sending us a private message.\n\n# Integration\n\nTo start using our API services you will first need to create an account via [Highlightly](https://highlightly.net/login) or [RapidAPI](https://rapidapi.com/auth/sign-up?referral=/highlightly-api-highlightly-api-default/api/football-highlights-api/pricing). \nBoth platforms offer you the ability to view the API analytics, manage billing settings, control API keys and much more. However, there are a few differences. RapidAPI does not include custom plans nor does it provide long term plan discounts. \n\n> Accounts are **not** synced across platforms.\n\n> Please ensure that your API key is **not** made public to prevent potential abuse. Your API key can be managed either through Highlightly or RapidAPI.\n\n## API usage\n\n> Highlightly API base url: `https://soccer.highlightly.net`\n\n> RapidAPI API base url: `https://football-highlights-api.p.rapidapi.com`\n\nEach API request will be considered valid only if the following headers are present:\n\n| Request Header | Value |\n| ----------- | ----------- |\n| `x-rapidapi-key` | *Your Highlightly or RapidAPI API Key*       |\n| `x-rapidapi-host` | `football-highlights-api.p.rapidapi.com` - only needed for usage through RapidAPI |\n\nThese headers are mandatory when requesting API data. They are not needed when requesting other resources such as logos or images.\n\nEach API response will contain additional headers. The following three are considered the most important for developers:\n\n| Response Header   | Value |\n| ----------------  | ----------- |\n| `x-ratelimit-requests-limit`  | This is a static value indicating the number of requests **the plan** you are currently subscribed to allows you to make.       |\n| `x-ratelimit-requests-remaining` | The number of requests remaining (from your plan) before you reach the limit of requests your application is allowed to make. When this reaches zero, you will not be able to make any requests until your daily quota is reset. You can view these limits and quotas on the pricing page of the API in the API Hub. |\n| `content-type` | Value will always be `application/json`. XML format is not supported. |\n\nIn the following sections we will guide you through all endpoints and functionalities the API has to offer.",
+    "version": "8.2.7",
+    "contact": {}
+  },
+  "tags": [
+    {
+      "name": "Football API",
+      "description": ""
+    }
+  ],
+  "servers": [
+    {
+      "url": "https://soccer.highlightly.net"
+    },
+    {
+      "url": "https://football-highlights-api.p.rapidapi.com"
+    }
+  ],
+  "components": {
+    "schemas": {
+      "FootballCountryResponseDto": {
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "string",
+            "description": "Country code specified by the ISO 3166 standard.",
+            "example": "FR"
+          },
+          "name": {
+            "type": "string",
+            "example": "France"
+          },
+          "logo": {
+            "type": "string",
+            "example": "https://example.com/logos/country/FR.png"
+          }
+        },
+        "required": [
+          "code",
+          "name",
+          "logo"
+        ]
+      },
+      "BadRequestDto": {
+        "type": "object",
+        "properties": {
+          "message": {
+            "type": "string",
+            "example": "Descriptive bad request error message."
+          },
+          "statusCode": {
+            "type": "number",
+            "example": 400
+          }
+        },
+        "required": [
+          "message",
+          "statusCode"
+        ]
+      },
+      "InternalServerErrorDto": {
+        "type": "object",
+        "properties": {
+          "message": {
+            "type": "string",
+            "example": "Internal server error."
+          },
+          "statusCode": {
+            "type": "number",
+            "example": 500
+          }
+        },
+        "required": [
+          "message",
+          "statusCode"
+        ]
+      },
+      "FootballSeasonResponseDto": {
+        "type": "object",
+        "properties": {
+          "season": {
+            "type": "number",
+            "example": 2022
+          }
+        },
+        "required": [
+          "season"
+        ]
+      },
+      "FootballLeagueResponseDto": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "number",
+            "example": 104
+          },
+          "logo": {
+            "type": "string",
+            "example": "https://example.com/logos/league/104.png"
+          },
+          "name": {
+            "type": "string",
+            "example": "UEFA Champions League"
+          },
+          "country": {
+            "$ref": "#/components/schemas/FootballCountryResponseDto"
+          },
+          "seasons": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/FootballSeasonResponseDto"
+            }
+          }
+        },
+        "required": [
+          "id",
+          "name",
+          "country",
+          "seasons"
+        ]
+      },
+      "PaginationResponseDto": {
+        "type": "object",
+        "properties": {
+          "totalCount": {
+            "type": "number",
+            "description": "Available number of items, relevant to the provided query.",
+            "example": 490
+          },
+          "offset": {
+            "type": "number",
+            "example": 20
+          },
+          "limit": {
+            "type": "number",
+            "example": 100
+          }
+        },
+        "required": [
+          "totalCount",
+          "offset",
+          "limit"
+        ]
+      },
+      "PlanResponseDto": {
+        "type": "object",
+        "properties": {
+          "tier": {
+            "type": "string",
+            "description": "Your current API subscription tier.",
+            "example": "BASIC"
+          },
+          "message": {
+            "type": "string",
+            "description": "Explanation message regarding your current tier.",
+            "example": "Some results might be hidden with FREE tier. Check your API coverage for more information: https://rapidapi.com/highlightly-api-highlightly-api-default/api/sport-highlights-api/details"
+          }
+        },
+        "required": [
+          "tier",
+          "message"
+        ]
+      },
+      "FootballLeaguePaginatedResponseDto": {
+        "type": "object",
+        "properties": {
+          "data": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/FootballLeagueResponseDto"
+            }
+          },
+          "pagination": {
+            "$ref": "#/components/schemas/PaginationResponseDto"
+          },
+          "plan": {
+            "$ref": "#/components/schemas/PlanResponseDto"
+          }
+        },
+        "required": [
+          "data",
+          "pagination",
+          "plan"
+        ]
+      },
+      "FootballTeamResponseDto": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "number",
+            "example": 553
+          },
+          "logo": {
+            "type": "string",
+            "example": "https://example.com/logos/team/553.png"
+          },
+          "name": {
+            "type": "string",
+            "example": "Montpellier"
+          },
+          "type": {
+            "type": "string",
+            "enum": [
+              "club",
+              "national"
+            ],
+            "example": "club"
+          }
+        },
+        "required": [
+          "id",
+          "name"
+        ]
+      },
+      "FootballTeamPaginatedResponseDto": {
+        "type": "object",
+        "properties": {
+          "data": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/FootballTeamResponseDto"
+            }
+          },
+          "pagination": {
+            "$ref": "#/components/schemas/PaginationResponseDto"
+          },
+          "plan": {
+            "$ref": "#/components/schemas/PlanResponseDto"
+          }
+        },
+        "required": [
+          "data",
+          "pagination",
+          "plan"
+        ]
+      },
+      "FootballTeamGameStatsResponseDto": {
+        "type": "object",
+        "properties": {
+          "played": {
+            "type": "number",
+            "description": "Number of games team has played during a given league/season.",
+            "example": 34
+          },
+          "wins": {
+            "type": "number",
+            "description": "Number of games team has won during a given league/season.",
+            "example": 20
+          },
+          "loses": {
+            "type": "number",
+            "description": "Number of games team has lost during a given league/season.",
+            "example": 5
+          },
+          "draws": {
+            "type": "number",
+            "description": "Number of games team has drawn during a given league/season.",
+            "example": 5
+          }
+        },
+        "required": [
+          "played",
+          "wins",
+          "loses",
+          "draws"
+        ]
+      },
+      "FootballTeamGoalStatsResponseDto": {
+        "type": "object",
+        "properties": {
+          "scored": {
+            "type": "number",
+            "description": "Number of goals team has scored.",
+            "example": 57
+          },
+          "received": {
+            "type": "number",
+            "description": "Number of goals team has received.",
+            "example": 39
+          }
+        },
+        "required": [
+          "scored",
+          "received"
+        ]
+      },
+      "FootballDetailedTeamStatsResponseDto": {
+        "type": "object",
+        "properties": {
+          "games": {
+            "description": "Game statistics associated with given league.",
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/FootballTeamGameStatsResponseDto"
+              }
+            ]
+          },
+          "goals": {
+            "description": "Number of goals team has scored and received.",
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/FootballTeamGoalStatsResponseDto"
+              }
+            ]
+          }
+        },
+        "required": [
+          "games",
+          "goals"
+        ]
+      },
+      "FootballTeamStatisticsResponseDto": {
+        "type": "object",
+        "properties": {
+          "leagueId": {
+            "type": "number",
+            "description": "Id of league to which team statistics are associated.",
+            "example": 216087
+          },
+          "season": {
+            "type": "number",
+            "description": "Season year to which team statistics are associated.",
+            "example": 2023
+          },
+          "leagueName": {
+            "type": "string",
+            "description": "Name of league to which team statistics are associated.",
+            "example": "Major League Soccer"
+          },
+          "total": {
+            "description": "Goal and game statistics for given season/year.",
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/FootballDetailedTeamStatsResponseDto"
+              }
+            ]
+          },
+          "home": {
+            "description": "Goal and game statistics team has played at home for given season/year.",
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/FootballDetailedTeamStatsResponseDto"
+              }
+            ]
+          },
+          "away": {
+            "description": "Goal and game statistics team has played away for given season/year.",
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/FootballDetailedTeamStatsResponseDto"
+              }
+            ]
+          }
+        },
+        "required": [
+          "leagueId",
+          "season",
+          "leagueName",
+          "total",
+          "home",
+          "away"
+        ]
+      },
+      "FootballMatchLeagueResponseDto": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "number",
+            "example": 133
+          },
+          "season": {
+            "type": "number",
+            "example": 2023
+          },
+          "name": {
+            "type": "string",
+            "example": "Ligue 1"
+          },
+          "logo": {
+            "type": "string",
+            "example": "https://example.com/logos/league/133.png"
+          }
+        },
+        "required": [
+          "id",
+          "season",
+          "name"
+        ]
+      },
+      "FootballMatchScoreResponseDto": {
+        "type": "object",
+        "properties": {
+          "current": {
+            "type": "string",
+            "example": "3 - 1",
+            "description": "Home - Away score up to penalties."
+          },
+          "penalties": {
+            "type": "string",
+            "example": "6 - 4",
+            "description": "Home - Away team score after the penalties phase."
+          }
+        }
+      },
+      "FootballMatchStateResponseDto": {
+        "type": "object",
+        "properties": {
+          "description": {
+            "type": "string",
+            "enum": [
+              "To be announced",
+              "Not started",
+              "First half",
+              "Half time",
+              "Second half",
+              "Extra time",
+              "Break time",
+              "Penalties",
+              "Suspended",
+              "Interrupted",
+              "Finished",
+              "Finished after penalties",
+              "Finished after extra time",
+              "Postponed",
+              "Cancelled",
+              "Abandoned",
+              "Awarded",
+              "In progress",
+              "Unknown"
+            ],
+            "example": "Second half",
+            "description": "State of the match."
+          },
+          "clock": {
+            "type": "number",
+            "example": 67,
+            "description": "Current minute of the match."
+          },
+          "score": {
+            "$ref": "#/components/schemas/FootballMatchScoreResponseDto"
+          }
+        },
+        "required": [
+          "description",
+          "score"
+        ]
+      },
+      "FootballMatchResponseDto": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "number",
+            "example": 489389
+          },
+          "round": {
+            "type": "string",
+            "example": "Regular Season - 32"
+          },
+          "date": {
+            "type": "string",
+            "example": "2023-05-20T15:30:00.000Z"
+          },
+          "country": {
+            "$ref": "#/components/schemas/FootballCountryResponseDto"
+          },
+          "awayTeam": {
+            "$ref": "#/components/schemas/FootballTeamResponseDto"
+          },
+          "homeTeam": {
+            "$ref": "#/components/schemas/FootballTeamResponseDto"
+          },
+          "league": {
+            "$ref": "#/components/schemas/FootballMatchLeagueResponseDto"
+          },
+          "state": {
+            "$ref": "#/components/schemas/FootballMatchStateResponseDto"
+          }
+        },
+        "required": [
+          "id",
+          "round",
+          "date",
+          "country",
+          "awayTeam",
+          "homeTeam",
+          "league",
+          "state"
+        ]
+      },
+      "FootballMatchPaginatedResponseDto": {
+        "type": "object",
+        "properties": {
+          "data": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/FootballMatchResponseDto"
+            }
+          },
+          "pagination": {
+            "$ref": "#/components/schemas/PaginationResponseDto"
+          },
+          "plan": {
+            "$ref": "#/components/schemas/PlanResponseDto"
+          }
+        },
+        "required": [
+          "data",
+          "pagination",
+          "plan"
+        ]
+      },
+      "FootballShotsDto": {
+        "type": "object",
+        "properties": {
+          "playerName": {
+            "type": "string",
+            "example": "Cody Gakpo"
+          },
+          "time": {
+            "type": "string",
+            "example": "3'"
+          },
+          "outcome": {
+            "type": "string",
+            "example": "Missed"
+          },
+          "goalTarget": {
+            "type": "string",
+            "example": "High Right"
+          }
+        },
+        "required": [
+          "playerName",
+          "time",
+          "outcome",
+          "goalTarget"
+        ]
+      },
+      "FootballTopPlayerStatisticsResponse": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "example": "Shots On Target"
+          },
+          "value": {
+            "type": "object",
+            "example": 2
+          }
+        },
+        "required": [
+          "name",
+          "value"
+        ]
+      },
+      "FootballTopPlayersResponse": {
+        "type": "object",
+        "properties": {
+          "position": {
+            "type": "string",
+            "example": "Midfielder"
+          },
+          "name": {
+            "type": "string",
+            "example": "Carlos Augusto"
+          },
+          "statistics": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/FootballTopPlayerStatisticsResponse"
+            }
+          }
+        },
+        "required": [
+          "position",
+          "name",
+          "statistics"
+        ]
+      },
+      "FootballDetailedTeamResponseDto": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "number",
+            "example": 553
+          },
+          "logo": {
+            "type": "string",
+            "example": "https://example.com/logos/team/553.png"
+          },
+          "name": {
+            "type": "string",
+            "example": "Montpellier"
+          },
+          "shots": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/FootballShotsDto"
+            }
+          },
+          "topPlayers": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/FootballTopPlayersResponse"
+            }
+          }
+        },
+        "required": [
+          "id",
+          "name"
+        ]
+      },
+      "FootballLiveEventTeamDto": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "number",
+            "example": 13394673
+          },
+          "logo": {
+            "type": "string",
+            "example": "https://example.com/logo/preview/66311.13394673"
+          },
+          "name": {
+            "type": "string",
+            "example": "Tersana"
+          }
+        },
+        "required": [
+          "id",
+          "name"
+        ]
+      },
+      "FootballLiveEventDto": {
+        "type": "object",
+        "properties": {
+          "team": {
+            "$ref": "#/components/schemas/FootballLiveEventTeamDto"
+          },
+          "time": {
+            "type": "string",
+            "example": "45+1"
+          },
+          "type": {
+            "type": "string",
+            "enum": [
+              "Goal",
+              "Own Goal",
+              "Penalty",
+              "Missed Penalty",
+              "Yellow Card",
+              "Red Card",
+              "Substitution",
+              "VAR Goal Confirmed",
+              "VAR Goal Cancelled",
+              "VAR Penalty",
+              "VAR Penalty Cancelled",
+              "VAR Goal Cancelled - Offside"
+            ],
+            "example": "Goal"
+          },
+          "playerId": {
+            "type": "number",
+            "example": 63606907
+          },
+          "player": {
+            "type": "string",
+            "example": "M. Mamdouh"
+          },
+          "assistingPlayerId": {
+            "type": "number"
+          },
+          "assist": {
+            "type": "string",
+            "example": "J. Johanson"
+          },
+          "substituted": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "team",
+          "time",
+          "type"
+        ]
+      },
+      "FootballMatchStatisticsResponseItemDto": {
+        "type": "object",
+        "properties": {
+          "value": {
+            "type": "number",
+            "example": 0.62
+          },
+          "displayName": {
+            "type": "string",
+            "example": "Shots accuracy"
+          }
+        },
+        "required": [
+          "value",
+          "displayName"
+        ]
+      },
+      "FootballMatchStatisticsResponseDto": {
+        "type": "object",
+        "properties": {
+          "team": {
+            "$ref": "#/components/schemas/FootballTeamResponseDto"
+          },
+          "statistics": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/FootballMatchStatisticsResponseItemDto"
+            }
+          }
+        },
+        "required": [
+          "team",
+          "statistics"
+        ]
+      },
+      "DetailedMatchRefereeResponseDto": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "example": "Brace, Andrew"
+          },
+          "nationality": {
+            "type": "string",
+            "example": "Ireland"
+          }
+        }
+      },
+      "DetailedMatchVenueResponseDto": {
+        "type": "object",
+        "properties": {
+          "city": {
+            "type": "string",
+            "example": "Swansea"
+          },
+          "name": {
+            "type": "string",
+            "example": "Liberty Stadium"
+          },
+          "country": {
+            "type": "string",
+            "example": "Wales"
+          },
+          "capacity": {
+            "type": "string",
+            "example": "20827"
+          }
+        }
+      },
+      "DetailedMatchForecastResponseDto": {
+        "type": "object",
+        "properties": {
+          "status": {
+            "type": "string",
+            "example": "cloudy"
+          },
+          "temperature": {
+            "type": "string",
+            "example": "11.97°C"
+          }
+        }
+      },
+      "PredictionProbabilitiesDto": {
+        "type": "object",
+        "properties": {
+          "home": {
+            "type": "string",
+            "example": "30.22%"
+          },
+          "draw": {
+            "type": "string",
+            "example": "0.00%"
+          },
+          "away": {
+            "type": "string",
+            "example": "69.78%"
+          }
+        },
+        "required": [
+          "home",
+          "away"
+        ]
+      },
+      "PredictionDto": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "example": "prematch"
+          },
+          "modelType": {
+            "type": "string",
+            "example": "three-way"
+          },
+          "generatedAt": {
+            "type": "string",
+            "example": "2025-03-12T19:00:20.000Z"
+          },
+          "description": {
+            "type": "string",
+            "example": "Team A is most likely to win the game against Team B.`"
+          },
+          "probabilities": {
+            "$ref": "#/components/schemas/PredictionProbabilitiesDto"
+          }
+        },
+        "required": [
+          "type",
+          "modelType",
+          "generatedAt",
+          "description",
+          "probabilities"
+        ]
+      },
+      "PredictionResponseDto": {
+        "type": "object",
+        "properties": {
+          "prematch": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/PredictionDto"
+            }
+          },
+          "live": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/PredictionDto"
+            }
+          }
+        },
+        "required": [
+          "prematch",
+          "live"
+        ]
+      },
+      "NewsDto": {
+        "type": "object",
+        "properties": {
+          "url": {
+            "type": "string",
+            "example": "https://football-italia.net/watch-milan-reijnders-scores-16th-goal-2024-25/?utm_source=365Scores&utm_medium=link&utm_campaign=Contact%2bus%2bat%2b365scores%2bfor%2bmore%2btraffic"
+          },
+          "image": {
+            "type": "string",
+            "example": "https://icdn.football-italia.net/wp-content/uploads/2025/03/netherlands-v-spain-uefa-nations.jpg"
+          },
+          "title": {
+            "type": "string",
+            "example": "Celebrating Fernando Torres: A Spanish Football Icon"
+          },
+          "datePublished": {
+            "type": "string",
+            "example": "2025-03-20T19:29:02Z"
+          }
+        },
+        "required": [
+          "url",
+          "image",
+          "title",
+          "datePublished"
+        ]
+      },
+      "FootballDetailedMatchResponseDto": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "number",
+            "example": 1002433681
+          },
+          "round": {
+            "type": "string",
+            "example": "Apertura - 9"
+          },
+          "date": {
+            "type": "string",
+            "example": "\"2024-03-31T20:30:00.000Z"
+          },
+          "country": {
+            "$ref": "#/components/schemas/FootballCountryResponseDto"
+          },
+          "awayTeam": {
+            "$ref": "#/components/schemas/FootballDetailedTeamResponseDto"
+          },
+          "homeTeam": {
+            "$ref": "#/components/schemas/FootballDetailedTeamResponseDto"
+          },
+          "league": {
+            "$ref": "#/components/schemas/FootballMatchLeagueResponseDto"
+          },
+          "state": {
+            "$ref": "#/components/schemas/FootballMatchStateResponseDto"
+          },
+          "events": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/FootballLiveEventDto"
+            }
+          },
+          "statistics": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/FootballMatchStatisticsResponseDto"
+            }
+          },
+          "referee": {
+            "$ref": "#/components/schemas/DetailedMatchRefereeResponseDto"
+          },
+          "venue": {
+            "$ref": "#/components/schemas/DetailedMatchVenueResponseDto"
+          },
+          "forecast": {
+            "$ref": "#/components/schemas/DetailedMatchForecastResponseDto"
+          },
+          "predictions": {
+            "$ref": "#/components/schemas/PredictionResponseDto"
+          },
+          "news": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/NewsDto"
+            }
+          }
+        },
+        "required": [
+          "id",
+          "round",
+          "date",
+          "country",
+          "awayTeam",
+          "homeTeam",
+          "league",
+          "state",
+          "events",
+          "statistics"
+        ]
+      },
+      "FootballHighlightResponseDto": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "number",
+            "example": 1
+          },
+          "type": {
+            "type": "string",
+            "example": "VERIFIED"
+          },
+          "imgUrl": {
+            "type": "string",
+            "description": "Preview picture of the highlight.",
+            "example": "https://example.com/images/preview/1.png"
+          },
+          "title": {
+            "type": "string",
+            "example": "Ligue 1: Lyon vs Reims"
+          },
+          "description": {
+            "type": "string",
+            "example": "Game recap of the match."
+          },
+          "url": {
+            "type": "string",
+            "description": "Url location of the video highlight.",
+            "example": "https://example.com/highlight/29g9urg92387"
+          },
+          "embedUrl": {
+            "type": "string",
+            "description": "Url of embeddable video highlight.",
+            "example": "https://example.com/embed/213123safas132e"
+          },
+          "match": {
+            "$ref": "#/components/schemas/FootballMatchResponseDto"
+          },
+          "channel": {
+            "type": "string",
+            "example": "Ligue 1 Uber Eats",
+            "description": "Channel title of a given highlight."
+          },
+          "source": {
+            "type": "string",
+            "example": "youtube",
+            "description": "Aggregation source from social media and other equivalent platforms."
+          },
+          "category": {
+            "type": "string",
+            "example": "match-highlights",
+            "description": "Assumed highlight category"
+          }
+        },
+        "required": [
+          "id",
+          "type",
+          "title",
+          "url",
+          "match"
+        ]
+      },
+      "FootballHighlightPaginatedResponseDto": {
+        "type": "object",
+        "properties": {
+          "data": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/FootballHighlightResponseDto"
+            }
+          },
+          "pagination": {
+            "$ref": "#/components/schemas/PaginationResponseDto"
+          },
+          "plan": {
+            "$ref": "#/components/schemas/PlanResponseDto"
+          }
+        },
+        "required": [
+          "data",
+          "pagination",
+          "plan"
+        ]
+      },
+      "RestrictionResponseDto": {
+        "type": "object",
+        "properties": {
+          "state": {
+            "type": "string",
+            "enum": [
+              "No restricitons applied",
+              "Allowed countries restriction",
+              "Blocked countries restriction",
+              "Unknown restrictions"
+            ],
+            "example": "Allowed countries restriction",
+            "description": "Specifies which restriction rule is applied to the requested highlight. If allowed restriction is applied, read from allowedCountries field. When blocked restriction is applied, countries from blockedCountries field are applied."
+          },
+          "allowedCountries": {
+            "example": [
+              "IT"
+            ],
+            "description": "ISO 3166 two letter country list of allowed countries when restriction rules is in allowed state.",
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "blockedCountries": {
+            "example": [],
+            "description": "ISO 3166 two letter country list of blocked countries. Rule list is valid when restriction rules is in blocked state.",
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "embeddable": {
+            "type": "boolean",
+            "example": true,
+            "description": "Boolean flag which indicates whether highlight provider allows embedding inside web applications."
+          }
+        },
+        "required": [
+          "state",
+          "allowedCountries",
+          "blockedCountries",
+          "embeddable"
+        ]
+      },
+      "FootballBookmakerResponseDto": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "number",
+            "example": 1
+          },
+          "name": {
+            "type": "string",
+            "example": "Stake.com"
+          }
+        },
+        "required": [
+          "id",
+          "name"
+        ]
+      },
+      "FootballBookmakersPaginatedResponseDto": {
+        "type": "object",
+        "properties": {
+          "data": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/FootballBookmakerResponseDto"
+            }
+          },
+          "pagination": {
+            "$ref": "#/components/schemas/PaginationResponseDto"
+          },
+          "plan": {
+            "$ref": "#/components/schemas/PlanResponseDto"
+          }
+        },
+        "required": [
+          "data",
+          "pagination",
+          "plan"
+        ]
+      },
+      "FootballMarketSelectionResponseDto": {
+        "type": "object",
+        "properties": {
+          "odd": {
+            "type": "number",
+            "example": 6.6
+          },
+          "value": {
+            "type": "string",
+            "example": "Home"
+          }
+        },
+        "required": [
+          "odd",
+          "value"
+        ]
+      },
+      "FootballMarketResponseDto": {
+        "type": "object",
+        "properties": {
+          "bookmakerId": {
+            "type": "number",
+            "example": 1
+          },
+          "bookmakerName": {
+            "type": "string",
+            "example": "Stake.com"
+          },
+          "type": {
+            "type": "string",
+            "example": "prematch"
+          },
+          "market": {
+            "type": "string",
+            "example": "Full Time Result"
+          },
+          "values": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/FootballMarketSelectionResponseDto"
+            }
+          }
+        },
+        "required": [
+          "bookmakerId",
+          "type",
+          "market",
+          "values"
+        ]
+      },
+      "FootballOddsResponseDto": {
+        "type": "object",
+        "properties": {
+          "matchId": {
+            "type": "number",
+            "example": 884822928
+          },
+          "odds": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/FootballMarketResponseDto"
+            }
+          }
+        },
+        "required": [
+          "matchId",
+          "odds"
+        ]
+      },
+      "FootballOddsPaginatedResponseDto": {
+        "type": "object",
+        "properties": {
+          "data": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/FootballOddsResponseDto"
+            }
+          },
+          "pagination": {
+            "$ref": "#/components/schemas/PaginationResponseDto"
+          },
+          "plan": {
+            "$ref": "#/components/schemas/PlanResponseDto"
+          }
+        },
+        "required": [
+          "data",
+          "pagination",
+          "plan"
+        ]
+      },
+      "FootballStandingsStatsDto": {
+        "type": "object",
+        "properties": {
+          "wins": {
+            "type": "number",
+            "example": 11
+          },
+          "draws": {
+            "type": "number",
+            "example": 4
+          },
+          "games": {
+            "type": "number",
+            "example": 17
+          },
+          "loses": {
+            "type": "number",
+            "example": 5
+          },
+          "scoredGoals": {
+            "type": "number",
+            "example": 28
+          },
+          "receivedGoals": {
+            "type": "number",
+            "example": 27
+          }
+        },
+        "required": [
+          "wins",
+          "draws",
+          "games",
+          "loses",
+          "scoredGoals",
+          "receivedGoals"
+        ]
+      },
+      "FootballStandingsTeamDto": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "number",
+            "example": 56950
+          },
+          "logo": {
+            "type": "string",
+            "example": "https://example.com/logos/team/56950.png"
+          },
+          "name": {
+            "type": "string",
+            "example": "Aston Villa"
+          }
+        },
+        "required": [
+          "id",
+          "name"
+        ]
+      },
+      "FootballStandingsDto": {
+        "type": "object",
+        "properties": {
+          "away": {
+            "$ref": "#/components/schemas/FootballStandingsStatsDto"
+          },
+          "home": {
+            "$ref": "#/components/schemas/FootballStandingsStatsDto"
+          },
+          "team": {
+            "$ref": "#/components/schemas/FootballStandingsTeamDto"
+          },
+          "total": {
+            "$ref": "#/components/schemas/FootballStandingsStatsDto"
+          },
+          "points": {
+            "type": "number",
+            "example": 63
+          },
+          "position": {
+            "type": "number",
+            "example": 4
+          }
+        },
+        "required": [
+          "team",
+          "total",
+          "points",
+          "position"
+        ]
+      },
+      "FootballStandingsGroupsResponseDto": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "example": "Premier League - Regular Season"
+          },
+          "standings": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/FootballStandingsDto"
+            }
+          }
+        },
+        "required": [
+          "name",
+          "standings"
+        ]
+      },
+      "FootballStandingsLeagueResponseDto": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "number",
+            "example": 33973
+          },
+          "logo": {
+            "type": "string",
+            "example": "https://example.com/logos/league/33973.png"
+          },
+          "name": {
+            "type": "string",
+            "example": "Premier League"
+          },
+          "season": {
+            "type": "number",
+            "example": 2023
+          }
+        },
+        "required": [
+          "id",
+          "name",
+          "season"
+        ]
+      },
+      "FootballStandingsResponseDto": {
+        "type": "object",
+        "properties": {
+          "groups": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/FootballStandingsGroupsResponseDto"
+            }
+          },
+          "league": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/FootballStandingsLeagueResponseDto"
+              }
+            ]
+          }
+        },
+        "required": [
+          "groups",
+          "league"
+        ]
+      },
+      "FootballLineupsPlayerDto": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "number",
+            "example": 24948
+          },
+          "name": {
+            "type": "string",
+            "example": "Lilian Raolisoa"
+          },
+          "number": {
+            "type": "number",
+            "example": 27
+          },
+          "position": {
+            "type": "string",
+            "enum": [
+              "Goalkeeper",
+              "Defender",
+              "Midfielder",
+              "Forward"
+            ],
+            "example": "Defender"
+          }
+        },
+        "required": [
+          "name",
+          "number",
+          "position"
+        ]
+      },
+      "FootballLineupsTeamDto": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "number",
+            "example": 66311
+          },
+          "logo": {
+            "type": "string",
+            "example": "https://example.com/logo/preview/66311.png"
+          },
+          "formation": {
+            "type": "string",
+            "example": "4-2-3-1"
+          },
+          "name": {
+            "type": "string",
+            "example": "Angers"
+          },
+          "substitutes": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/FootballLineupsPlayerDto"
+            }
+          },
+          "initialLineup": {
+            "description": "2D grid of players representing their position on the board. The first entry will always be the goal keeper. Other entries will follow the team formation, e.g. formation 4-2-3-1 means that there will be 4 more arrays each containing the associated number of players in the correct order.",
+            "example": [
+              [
+                {
+                  "name": "Yahia Fofana",
+                  "number": 30,
+                  "position": "Goalkeeper"
+                }
+              ],
+              [
+                {
+                  "name": "Florent Hanin",
+                  "number": 26,
+                  "position": "Defender"
+                },
+                {
+                  "name": "Jordan Lefort",
+                  "number": 21,
+                  "position": "Defender"
+                },
+                {
+                  "name": "Cédric Hountondji",
+                  "number": 22,
+                  "position": "Defender"
+                },
+                {
+                  "name": "Yan Valery",
+                  "number": 2,
+                  "position": "Defender"
+                }
+              ],
+              [
+                {
+                  "name": "Himad Abdelli",
+                  "number": 10,
+                  "position": "Midfielder"
+                },
+                {
+                  "name": "Zinédine Ould Khaled",
+                  "number": 12,
+                  "position": "Midfielder"
+                }
+              ],
+              [
+                {
+                  "name": "Justin-Noel Kalumba",
+                  "number": 17,
+                  "position": "Midfielder"
+                },
+                {
+                  "name": "Pierrick Capelle",
+                  "number": 15,
+                  "position": "Midfielder"
+                },
+                {
+                  "name": "Farid El Melali",
+                  "number": 28,
+                  "position": "Midfielder"
+                }
+              ],
+              [
+                {
+                  "name": "Loïs Diony",
+                  "number": 9,
+                  "position": "Forward"
+                }
+              ]
+            ],
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/FootballLineupsPlayerDto"
+            }
+          }
+        },
+        "required": [
+          "id",
+          "logo",
+          "formation",
+          "name",
+          "substitutes",
+          "initialLineup"
+        ]
+      },
+      "FootballLineupsResponseDto": {
+        "type": "object",
+        "properties": {
+          "homeTeam": {
+            "$ref": "#/components/schemas/FootballLineupsTeamDto"
+          },
+          "awayTeam": {
+            "$ref": "#/components/schemas/FootballLineupsTeamDto"
+          }
+        },
+        "required": [
+          "homeTeam",
+          "awayTeam"
+        ]
+      },
+      "NotFoundDto": {
+        "type": "object",
+        "properties": {
+          "message": {
+            "type": "string",
+            "example": "Not Found"
+          },
+          "statusCode": {
+            "type": "number",
+            "example": 404
+          }
+        },
+        "required": [
+          "message",
+          "statusCode"
+        ]
+      },
+      "FootballPlayerResponseDto": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "number",
+            "example": 33481
+          },
+          "name": {
+            "type": "string",
+            "example": "Ivan Perišić"
+          },
+          "fullName": {
+            "type": "string",
+            "example": "Ivan Perišić"
+          },
+          "logo": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "name"
+        ]
+      },
+      "FootballPlayerPaginatedResponseDto": {
+        "type": "object",
+        "properties": {
+          "data": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/FootballPlayerResponseDto"
+            }
+          },
+          "pagination": {
+            "$ref": "#/components/schemas/PaginationResponseDto"
+          },
+          "plan": {
+            "$ref": "#/components/schemas/PlanResponseDto"
+          }
+        },
+        "required": [
+          "data",
+          "pagination",
+          "plan"
+        ]
+      },
+      "FootballDetailedPlayerSummaryPositionDto": {
+        "type": "object",
+        "properties": {
+          "main": {
+            "type": "string",
+            "example": "Right Winger"
+          },
+          "secondary": {
+            "type": "string",
+            "example": "Left Midfield, Left Winger"
+          }
+        }
+      },
+      "FootballDetailedPlayerSummaryClubDto": {
+        "type": "object",
+        "properties": {
+          "current": {
+            "type": "string",
+            "example": "PSV Eindhoven"
+          },
+          "joinedAt": {
+            "type": "string",
+            "example": "Sep 18, 2024"
+          },
+          "contractExpiry": {
+            "type": "string",
+            "example": "Jun 30, 2027"
+          },
+          "latestContractExtension": {
+            "type": "string",
+            "example": "Jun 27, 2025"
+          }
+        }
+      },
+      "FootballDetailedPlayerSummaryProfileDto": {
+        "type": "object",
+        "properties": {
+          "fullName": {
+            "type": "string",
+            "example": "Ivan Perišić"
+          },
+          "birthDate": {
+            "type": "string",
+            "example": "Feb 2, 1989"
+          },
+          "deathDate": {
+            "type": "string"
+          },
+          "birthPlace": {
+            "type": "string",
+            "example": "Split"
+          },
+          "citizenship": {
+            "type": "string",
+            "example": "Croatia"
+          },
+          "foot": {
+            "type": "string",
+            "example": "both"
+          },
+          "height": {
+            "type": "string",
+            "example": "1,86 m"
+          },
+          "position": {
+            "$ref": "#/components/schemas/FootballDetailedPlayerSummaryPositionDto"
+          },
+          "club": {
+            "$ref": "#/components/schemas/FootballDetailedPlayerSummaryClubDto"
+          }
+        },
+        "required": [
+          "position",
+          "club"
+        ]
+      },
+      "FootballDetailedPlayerSummaryRumourDto": {
+        "type": "object",
+        "properties": {
+          "club": {
+            "type": "string",
+            "example": "FC Barcelona"
+          },
+          "rumourDate": {
+            "type": "string",
+            "example": "Jun 11, 2025"
+          },
+          "transferProbability": {
+            "type": "string",
+            "example": "84.96%"
+          }
+        },
+        "required": [
+          "club",
+          "rumourDate",
+          "transferProbability"
+        ]
+      },
+      "FootballDetailedPlayerSummaryRumoursDto": {
+        "type": "object",
+        "properties": {
+          "current": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/FootballDetailedPlayerSummaryRumourDto"
+            }
+          },
+          "historical": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/FootballDetailedPlayerSummaryRumourDto"
+            }
+          }
+        },
+        "required": [
+          "current",
+          "historical"
+        ]
+      },
+      "FootballDetailedPlayerSummaryRelatedNewsDto": {
+        "type": "object",
+        "properties": {
+          "url": {
+            "type": "string",
+            "example": "https://www.transfermarkt.com/third-youngest-squad-in-the-pl-postecoglou-aiming-for-top-four-with-new-look-spurs-side/view/news/441066"
+          },
+          "date": {
+            "type": "string",
+            "example": "Jul 23, 2024"
+          },
+          "title": {
+            "type": "string",
+            "example": "Third youngest squad in the PL - Postecoglou aiming for top four with new-look Spurs side"
+          }
+        },
+        "required": [
+          "url",
+          "date",
+          "title"
+        ]
+      },
+      "FootballDetailedPlayerSummaryTransfersDto": {
+        "type": "object",
+        "properties": {
+          "to": {
+            "type": "string",
+            "example": "Bayern Munich"
+          },
+          "fee": {
+            "type": "string",
+            "example": "€5.0M"
+          },
+          "from": {
+            "type": "string",
+            "example": "Inter"
+          },
+          "type": {
+            "type": "string",
+            "enum": [
+              "transfer",
+              "loan",
+              "end of loan",
+              "retired"
+            ],
+            "example": "loan"
+          },
+          "season": {
+            "type": "string",
+            "example": "19/20"
+          },
+          "marketValue": {
+            "type": "string",
+            "example": "€30.0M"
+          },
+          "transferDate": {
+            "type": "string",
+            "example": "Aug 13, 2019"
+          }
+        },
+        "required": [
+          "to",
+          "from",
+          "type",
+          "season",
+          "transferDate"
+        ]
+      },
+      "FootballDetailedPlayerMarketValuesDto": {
+        "type": "object",
+        "properties": {
+          "recordedDate": {
+            "type": "string",
+            "example": "Dec 22, 2023"
+          },
+          "club": {
+            "type": "string",
+            "example": "FC Barcelona"
+          },
+          "value": {
+            "type": "number",
+            "example": 60000000
+          },
+          "age": {
+            "type": "number",
+            "example": 16
+          },
+          "currency": {
+            "type": "string",
+            "example": "€"
+          }
+        },
+        "required": [
+          "recordedDate",
+          "club",
+          "value",
+          "age",
+          "currency"
+        ]
+      },
+      "FootballDetailedPlayerInjuriesDto": {
+        "type": "object",
+        "properties": {
+          "reason": {
+            "type": "string",
+            "example": "Muscle injury"
+          },
+          "season": {
+            "type": "string",
+            "example": "2022"
+          },
+          "fromDate": {
+            "type": "string",
+            "example": "27.04.2022"
+          },
+          "toDate": {
+            "type": "string",
+            "example": "20.05.2022"
+          },
+          "missedGames": {
+            "type": "number",
+            "example": 3
+          },
+          "absentDurationInDays": {
+            "type": "number",
+            "example": 24
+          }
+        },
+        "required": [
+          "reason",
+          "season",
+          "fromDate",
+          "missedGames"
+        ]
+      },
+      "FootballDetailedPlayerSummaryResponseDto": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "number",
+            "example": 33481
+          },
+          "name": {
+            "type": "string",
+            "example": "Ivan Perišić"
+          },
+          "fullName": {
+            "type": "string",
+            "example": "Ivan Perišić"
+          },
+          "logo": {
+            "type": "string"
+          },
+          "profile": {
+            "$ref": "#/components/schemas/FootballDetailedPlayerSummaryProfileDto"
+          },
+          "rumours": {
+            "$ref": "#/components/schemas/FootballDetailedPlayerSummaryRumoursDto"
+          },
+          "relatedNews": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/FootballDetailedPlayerSummaryRelatedNewsDto"
+            }
+          },
+          "transfers": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/FootballDetailedPlayerSummaryTransfersDto"
+            }
+          },
+          "marketValue": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/FootballDetailedPlayerMarketValuesDto"
+            }
+          },
+          "injuries": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/FootballDetailedPlayerInjuriesDto"
+            }
+          }
+        },
+        "required": [
+          "id",
+          "name",
+          "rumours",
+          "relatedNews",
+          "transfers",
+          "marketValue",
+          "injuries"
+        ]
+      },
+      "FootballDetailedPlayerStatisticsPerCompetitionDto": {
+        "type": "object",
+        "properties": {
+          "club": {
+            "type": "string",
+            "example": "PSV Eindhoven"
+          },
+          "type": {
+            "type": "string",
+            "example": "national league",
+            "enum": [
+              "national league",
+              "national cup",
+              "international cup"
+            ]
+          },
+          "league": {
+            "type": "string",
+            "example": "Eredivisie"
+          },
+          "season": {
+            "type": "string",
+            "example": "2025"
+          },
+          "goals": {
+            "type": "number",
+            "example": 9
+          },
+          "assists": {
+            "type": "number",
+            "example": 9
+          },
+          "ownGoals": {
+            "type": "number",
+            "example": 0
+          },
+          "redCards": {
+            "type": "number",
+            "example": 0
+          },
+          "cleanSheets": {
+            "type": "number",
+            "example": 0
+          },
+          "gamesPlayed": {
+            "type": "number",
+            "example": 4
+          },
+          "yellowCards": {
+            "type": "number",
+            "example": 27
+          },
+          "goalsConceded": {
+            "type": "number",
+            "example": 0
+          },
+          "minutesPlayed": {
+            "type": "number",
+            "example": 1804
+          },
+          "substitutedIn": {
+            "type": "number",
+            "example": 6
+          },
+          "substitutedOut": {
+            "type": "number",
+            "example": 13
+          },
+          "penaltiesScored": {
+            "type": "number",
+            "example": 0
+          },
+          "secondYellowCards": {
+            "type": "number",
+            "example": 0
+          }
+        },
+        "required": [
+          "club",
+          "type",
+          "league",
+          "season",
+          "goals",
+          "assists",
+          "ownGoals",
+          "redCards",
+          "cleanSheets",
+          "gamesPlayed",
+          "yellowCards",
+          "goalsConceded",
+          "minutesPlayed",
+          "substitutedIn",
+          "substitutedOut",
+          "penaltiesScored",
+          "secondYellowCards"
+        ]
+      },
+      "FootballDetailedPlayerStatisticsPerClubDto": {
+        "type": "object",
+        "properties": {
+          "club": {
+            "type": "string",
+            "example": "Inter Milan"
+          },
+          "goals": {
+            "type": "number",
+            "example": 55
+          },
+          "assists": {
+            "type": "number",
+            "example": 50
+          },
+          "ownGoals": {
+            "type": "number",
+            "example": 2
+          },
+          "redCards": {
+            "type": "number",
+            "example": 1
+          },
+          "cleanSheets": {
+            "type": "number",
+            "example": 0
+          },
+          "gamesPlayed": {
+            "type": "number",
+            "example": 254
+          },
+          "yellowCards": {
+            "type": "number",
+            "example": 27
+          },
+          "goalsConceded": {
+            "type": "number",
+            "example": 0
+          },
+          "minutesPlayed": {
+            "type": "number",
+            "example": 18940
+          },
+          "substitutedIn": {
+            "type": "number",
+            "example": 44
+          },
+          "substitutedOut": {
+            "type": "number",
+            "example": 79
+          },
+          "penaltiesScored": {
+            "type": "number",
+            "example": 4
+          },
+          "secondYellowCards": {
+            "type": "number",
+            "example": 0
+          }
+        },
+        "required": [
+          "club",
+          "goals",
+          "assists",
+          "ownGoals",
+          "redCards",
+          "cleanSheets",
+          "gamesPlayed",
+          "yellowCards",
+          "goalsConceded",
+          "minutesPlayed",
+          "substitutedIn",
+          "substitutedOut",
+          "penaltiesScored",
+          "secondYellowCards"
+        ]
+      },
+      "FootballDetailedPlayerStatisticsResponseDto": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "number",
+            "example": 33481
+          },
+          "name": {
+            "type": "string",
+            "example": "Ivan Perišić"
+          },
+          "fullName": {
+            "type": "string",
+            "example": "Ivan Perišić"
+          },
+          "logo": {
+            "type": "string"
+          },
+          "perCompetition": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/FootballDetailedPlayerStatisticsPerCompetitionDto"
+            }
+          },
+          "perClub": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/FootballDetailedPlayerStatisticsPerClubDto"
+            }
+          }
+        },
+        "required": [
+          "id",
+          "name",
+          "perCompetition",
+          "perClub"
+        ]
+      },
+      "FootballTeamBoxScoreResponseDto": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "number",
+            "example": 34824
+          },
+          "logo": {
+            "type": "string",
+            "example": "https://highlightly.net/soccer/images/teams/34824.png"
+          },
+          "name": {
+            "type": "string",
+            "example": "Liverpool"
+          }
+        },
+        "required": [
+          "id",
+          "logo",
+          "name"
+        ]
+      },
+      "PlayerBoxScoreStatisticsDto": {
+        "type": "object",
+        "properties": {
+          "goalsScored": {
+            "type": "number",
+            "example": 0
+          },
+          "goalsSaved": {
+            "type": "number",
+            "example": 0
+          },
+          "goalsConceded": {
+            "type": "number",
+            "example": 0
+          },
+          "assists": {
+            "type": "number",
+            "example": 0
+          },
+          "dribblesTotal": {
+            "type": "number",
+            "example": 3
+          },
+          "dribblesSuccessful": {
+            "type": "number",
+            "example": 2
+          },
+          "dribblesFailed": {
+            "type": "number",
+            "example": 1
+          },
+          "dribbleSuccessRate": {
+            "type": "string",
+            "example": "66.67 %"
+          },
+          "fouledByOthers": {
+            "type": "number",
+            "example": 0
+          },
+          "fouledOthers": {
+            "type": "number",
+            "example": 1
+          },
+          "tacklesTotal": {
+            "type": "number",
+            "example": 7
+          },
+          "interceptionsTotal": {
+            "type": "number",
+            "example": 1
+          },
+          "duelsTotal": {
+            "type": "number",
+            "example": 19
+          },
+          "duelsWon": {
+            "type": "number",
+            "example": 10
+          },
+          "duelsLost": {
+            "type": "number",
+            "example": 9
+          },
+          "duelSuccessRate": {
+            "type": "string",
+            "example": "52.63 %"
+          },
+          "cardsRed": {
+            "type": "number",
+            "example": 0
+          },
+          "cardsYellow": {
+            "type": "number",
+            "example": 0
+          },
+          "cardsSecondYellow": {
+            "type": "number",
+            "example": 0
+          },
+          "passesAccuracy": {
+            "type": "string",
+            "example": "78.57 %"
+          },
+          "passesSuccessful": {
+            "type": "number",
+            "example": 22
+          },
+          "passesFailed": {
+            "type": "number",
+            "example": 0
+          },
+          "passesTotal": {
+            "type": "number",
+            "example": 28
+          },
+          "passesKey": {
+            "type": "number",
+            "example": 3
+          },
+          "penaltiesScored": {
+            "type": "number",
+            "example": 0
+          },
+          "penaltiesMissed": {
+            "type": "number",
+            "example": 0
+          },
+          "penaltiesTotal": {
+            "type": "number",
+            "example": 0
+          },
+          "penaltiesAccuracy": {
+            "type": "string",
+            "example": "0.00 %"
+          },
+          "shotsOnTarget": {
+            "type": "number",
+            "example": 1
+          },
+          "shotsOffTarget": {
+            "type": "number",
+            "example": 0
+          },
+          "shotsTotal": {
+            "type": "number",
+            "example": 1
+          },
+          "shotsAccuracy": {
+            "type": "string",
+            "example": "100.00 %"
+          },
+          "expectedGoals": {
+            "type": "number",
+            "example": 0.12
+          },
+          "expectedAssists": {
+            "type": "number",
+            "example": 0.25
+          },
+          "expectedGoalsOnTarget": {
+            "type": "number",
+            "example": 0.16
+          },
+          "expectedGoalsOnTargetConceded": {
+            "type": "number",
+            "example": 0
+          },
+          "expectedGoalsPrevented": {
+            "type": "number",
+            "example": 0
+          }
+        },
+        "required": [
+          "goalsScored",
+          "goalsSaved",
+          "goalsConceded",
+          "assists",
+          "dribblesTotal",
+          "dribblesSuccessful",
+          "dribblesFailed",
+          "dribbleSuccessRate",
+          "fouledByOthers",
+          "fouledOthers",
+          "tacklesTotal",
+          "interceptionsTotal",
+          "duelsTotal",
+          "duelsWon",
+          "duelsLost",
+          "duelSuccessRate",
+          "cardsRed",
+          "cardsYellow",
+          "cardsSecondYellow",
+          "passesAccuracy",
+          "passesSuccessful",
+          "passesFailed",
+          "passesTotal",
+          "passesKey",
+          "penaltiesScored",
+          "penaltiesMissed",
+          "penaltiesTotal",
+          "penaltiesAccuracy",
+          "shotsOnTarget",
+          "shotsOffTarget",
+          "shotsTotal",
+          "shotsAccuracy"
+        ]
+      },
+      "FootballPlayerBoxScore": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "number"
+          },
+          "name": {
+            "type": "string"
+          },
+          "fullName": {
+            "type": "string"
+          },
+          "logo": {
+            "type": "string"
+          },
+          "matchRating": {
+            "type": "string",
+            "example": "6.90"
+          },
+          "shirtNumber": {
+            "type": "number",
+            "example": 2
+          },
+          "isCaptain": {
+            "type": "boolean",
+            "example": false
+          },
+          "position": {
+            "type": "string",
+            "enum": [
+              "Goalkeeper",
+              "Defender",
+              "Midfielder",
+              "Forward"
+            ],
+            "example": "Defender"
+          },
+          "minutesPlayed": {
+            "type": "number",
+            "example": 90
+          },
+          "isSubstitute": {
+            "type": "boolean",
+            "example": false
+          },
+          "offsides": {
+            "type": "number",
+            "example": 0
+          },
+          "statistics": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/PlayerBoxScoreStatisticsDto"
+            }
+          }
+        },
+        "required": [
+          "id",
+          "name",
+          "isCaptain",
+          "minutesPlayed",
+          "isSubstitute",
+          "offsides",
+          "statistics"
+        ]
+      },
+      "FootballPlayerMatchStatisticsResponse": {
+        "type": "object",
+        "properties": {
+          "team": {
+            "$ref": "#/components/schemas/FootballTeamBoxScoreResponseDto"
+          },
+          "players": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/FootballPlayerBoxScore"
+            }
+          }
+        },
+        "required": [
+          "team",
+          "players"
+        ]
+      }
+    }
+  }
+}
