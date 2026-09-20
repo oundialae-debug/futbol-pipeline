@@ -64,6 +64,19 @@ RUTA_INFORME = "casas_descolgadas.md"
 
 MAX_PARTIDOS = int(os.environ.get("MAX_PARTIDOS", "40"))
 MIN_CASAS = 8      # por debajo de esto el "consenso" no es consenso
+
+# Rango de probabilidad donde el valor RELATIVO significa algo.
+#
+# Fuera de él, el consenso de un resultado al 6% tiene tanta imprecisión
+# relativa que cualquier diferencia pequeña se convierte en un "+97% de
+# valor". La primera pasada dio justo eso: las diez mayores oportunidades
+# eran Under 0.5 goles a cuota 32 y Over 7.5, todas con el consenso por
+# debajo del 7%. Además los resultados improbables están sistemáticamente
+# sobrevalorados por el propio mercado, así que ahí el consenso ni siquiera
+# es un buen árbitro.
+PROB_MINIMA = 0.10
+PROB_MAXIMA = 0.90
+
 LLAMADAS = [0]
 
 FAMILIAS = {
@@ -167,15 +180,32 @@ def main():
             if len(limpias) < MIN_CASAS:
                 continue
 
+            # CLONES. Goldenbet, Mystake, Freshbet y Jackbit devuelven la
+            # misma cuota hasta el último decimal: son marcas del mismo
+            # operador. Contarlas como cuatro casas les da cuatro votos en el
+            # consenso siendo una sola opinión, y arrastra el consenso hacia
+            # ellas. Para el consenso se cuenta una vez cada cuota distinta;
+            # cada marca sigue evaluándose por separado, porque la cuenta se
+            # abre en una marca concreta.
+            def consenso_de(lado, excluir):
+                vistas = {}
+                for c, q in limpias.items():
+                    if c == excluir:
+                        continue
+                    vistas.setdefault(round(q[lado], 6), c)
+                return list(vistas.keys())
+
             for casa, probs in limpias.items():
                 for lado in lados:
                     # consenso SIN la casa evaluada: si se incluye, cada casa
                     # tira del consenso hacia sí misma y todas parecen menos
                     # descolgadas de lo que están
-                    otras = [q[lado] for c, q in limpias.items() if c != casa]
+                    otras = consenso_de(lado, casa)
                     if len(otras) < MIN_CASAS - 1:
                         continue
                     consenso = float(np.median(otras))
+                    if not (PROB_MINIMA <= consenso <= PROB_MAXIMA):
+                        continue
                     cuota = por_casa[casa][lado]
                     # LO QUE DECIDE. No basta con que la casa opine distinto:
                     # su CUOTA REAL tiene que pagar más de lo que vale la
@@ -218,7 +248,13 @@ def main():
         f"# Casas descolgadas del consenso -- "
         f"{datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M UTC')}\n",
         f"{len(d)} comparaciones sobre {d['match_id'].nunique()} partidos y "
-        f"{d['casa'].nunique()} casas.\n",
+        f"{d['casa'].nunique()} casas, con el consenso entre el "
+        f"{PROB_MINIMA*100:.0f}% y el {PROB_MAXIMA*100:.0f}%.\n",
+        "Fuera de ese rango el valor relativo no significa nada: sobre un "
+        "resultado al 6%, una diferencia mínima se convierte en un '+97% de "
+        "valor' que es solo imprecisión del consenso. Y las cuotas idénticas "
+        "cuentan una sola vez, porque varias marcas del mismo operador no son "
+        "varias opiniones.\n",
         "No hacen falta cuarenta y dos cuentas para usar cuarenta y dos casas: "
         "el consenso es el instrumento de medida, y la cuenta solo hace falta "
         "donde se apuesta. Esta tabla dice **qué cuentas merece la pena "
