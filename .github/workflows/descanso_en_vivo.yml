@@ -25,16 +25,21 @@ on:
         required: false
         default: 'no'
   schedule:
-    # Un descanso dura quince minutos, así que mirar más despacio es perderlos.
-    # Las horas salen del calendario real, no de suponer: de los 165 partidos
-    # de los próximos 30 días, 148 son de fin de semana y los 17 restantes
-    # caen en lunes y viernes. Martes, miércoles y jueves no tienen ninguno.
+    # Prioridad: acumular descansos cuanto antes. El coeficiente de las faltas
+    # necesita del orden de 60 partidos y los minutos de Actions no se
+    # facturan en un repositorio público, así que se mira ancho.
     #
-    # Fin de semana: saques de 10:00 a 19:00 UTC -> descansos de 10:45 a 20:02.
-    # (Antes empezaba a las 11:00 y se perdía el primer descanso del día.)
-    - cron: '*/15 10-20 * * 6,0'
-    # Lunes y viernes: saques de 16:00 a 19:00 -> descansos de 17:00 a 20:02.
-    - cron: '*/15 17-20 * * 1,5'
+    # Las horas no son un barrido a ciegas: el registro dice de dónde salen
+    # las observaciones. La franja americana de madrugada (MLS y Serie A de
+    # Brasil, que también cotizan tarjetas en vivo) dio 10 partidos, casi
+    # tantos como la europea de tarde. Recortarla era tirar media cosecha.
+    #
+    # Europa y principio de América, todos los días. No solo fin de semana:
+    # las seis ligas juegan poco entre semana, pero el comparador registra
+    # cualquier liga con mercado, y esas sí juegan.
+    - cron: '*/15 9-23 * * *'
+    # América en prime time.
+    - cron: '*/15 0-3 * * *'
 
 jobs:
   descanso:

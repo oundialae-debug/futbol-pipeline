@@ -386,6 +386,17 @@ def escribir_informe(bloques, esperando, a, b, phi, base):
                           "ajustada para los 45 minutos que quedan desde el descanso, "
                           "así que estos números NO son válidos: solo sirven para probar "
                           "que el mercado se lee bien. No se ha registrado nada.\n")
+    # Con una pasada cada quince minutos durante diecinueve horas, el límite
+    # de la API es el riesgo real. Un 429 no rompe nada: simplemente no hay
+    # observaciones, que es indistinguible de "no había partidos". En el log
+    # se ve, pero los logs no los lee nadie -- así que sale en el informe.
+    if FALLOS:
+        lineas.append("> ⚠ **Llamadas fallidas:** "
+                      + ", ".join(f"{k} x{v}" for k, v in FALLOS.items())
+                      + (". Un 429 es límite de peticiones: hay huecos en el "
+                         "registro de esta pasada."
+                         if any(str(k).startswith("HTTP 429") for k in FALLOS)
+                         else ".") + "\n")
     if esperando:
         lineas.append("**En juego, esperando al descanso:** " +
                       ", ".join(f"{n} (min {mn})" for n, mn in esperando) + "\n")

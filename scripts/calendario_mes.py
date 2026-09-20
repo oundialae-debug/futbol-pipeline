@@ -244,8 +244,12 @@ def partidos_de_liga(liga_id):
 # Está escrito aquí a mano a propósito: si alguien cambia el cron y no toca
 # esto, el aviso deja de cuadrar y se nota. Lo que NO puede pasar es que
 # aparezca una jornada entre semana y no la cubra nadie sin decirlo.
-COBERTURA = {5: (10, 20), 6: (10, 20),      # sábado y domingo
-             0: (17, 20), 4: (17, 20)}       # lunes y viernes
+# Todos los días, de 09:00 a 23:59 y de 00:00 a 03:59 UTC. Queda descubierto
+# 04:00-08:59, que es la franja de Asia y Oceanía: de ahí no ha salido todavía
+# ninguna observación con mercado, pero si el calendario mete partidos ahí,
+# el aviso de abajo lo dirá en vez de dejarlos caer.
+COBERTURA = {d: (0, 23) for d in range(7)}
+HORAS_MUERTAS = range(4, 9)
 
 
 def avisar_de_cobertura(cal, lineas):
@@ -258,7 +262,7 @@ def avisar_de_cobertura(cal, lineas):
         dia = datetime.fromisoformat(f["fecha"]).weekday()
         hora = int(str(f["descanso_desde"])[:2])
         ventana = COBERTURA.get(dia)
-        if ventana is None or not (ventana[0] <= hora <= ventana[1]):
+        if ventana is None or not (ventana[0] <= hora <= ventana[1]) or hora in HORAS_MUERTAS:
             fuera.append(f)
 
     if not fuera:
