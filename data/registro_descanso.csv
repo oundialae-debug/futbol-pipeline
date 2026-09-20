@@ -109,3 +109,9 @@ match_id,partido,liga,minuto,estado,tarjetas_ht,linea,prob_modelo,prob_push,prob
 1270022972,Vasco DA Gama vs Coritiba,Serie A,45,Half time,0,5.5,0.1807,0.0,0.1304,1,7.0,Marathonbet,0.2646,False,2026-09-20T00:36:52+00:00,,4.0,6.0
 1268401817,Montréal Impact vs Columbus Crew,Major League Soccer,45,Half time,2,3.5,0.7764,0.0,0.5278,1,1.7,Vbet Sport,0.3198,False,2026-09-20T00:36:57+00:00,,16.0,2.0
 1268401817,Montréal Impact vs Columbus Crew,Major League Soccer,45,Half time,2,4.0,0.5651,0.2112,0.4396,1,2.04,Vbet Sport,0.3641,False,2026-09-20T00:36:57+00:00,,16.0,2.0
+1268407774,St. Louis City SC vs Toronto FC,Major League Soccer,45,Half time,2,3.5,0.7764,0.0,0.56,1,1.65,Vbet Sport,0.281,False,2026-09-20T01:32:05+00:00,,8.0,4.0
+1268407774,St. Louis City SC vs Toronto FC,Major League Soccer,45,Half time,2,4.0,0.5651,0.2112,0.4624,1,2.0,Vbet Sport,0.3415,False,2026-09-20T01:32:05+00:00,,8.0,4.0
+1268407774,St. Louis City SC vs Toronto FC,Major League Soccer,45,Half time,2,4.5,0.5651,0.0,0.3791,1,2.44,Vbet Sport,0.3789,False,2026-09-20T01:32:05+00:00,,8.0,4.0
+1268405221,Houston Dynamo vs FC Cincinnati,Major League Soccer,45,Half time,0,3.0,0.4784,0.1945,0.6209,1,1.49,Vbet Sport,-0.0927,False,2026-09-20T01:32:07+00:00,,11.0,4.0
+1268405221,Houston Dynamo vs FC Cincinnati,Major League Soccer,45,Half time,0,3.5,0.4784,0.0,0.5,1,1.85,Vbet Sport,-0.115,False,2026-09-20T01:32:07+00:00,,11.0,4.0
+1268405221,Houston Dynamo vs FC Cincinnati,Major League Soccer,45,Half time,0,4.0,0.3075,0.1709,0.3907,1,2.37,Vbet Sport,-0.1004,False,2026-09-20T01:32:07+00:00,,11.0,4.0
