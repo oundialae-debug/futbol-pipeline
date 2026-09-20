@@ -1,0 +1,8 @@
+# Fijadas para que la caché de pip acierte entre pasadas. Sin fichero de
+# dependencias, setup-python no puede cachear nada y cada pasada se baja
+# pandas y scipy otra vez: son doce segundos que, a 67 por pasada, hacen que
+# GitHub facture dos minutos en vez de uno.
+requests==2.32.3
+pandas==2.2.3
+numpy==2.1.3
+scipy==1.14.1

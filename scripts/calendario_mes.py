@@ -240,6 +240,46 @@ def partidos_de_liga(liga_id):
     return [], None
 
 
+# Lo que cubre el cron de descanso_en_vivo.yml, en horas UTC del descanso.
+# Está escrito aquí a mano a propósito: si alguien cambia el cron y no toca
+# esto, el aviso deja de cuadrar y se nota. Lo que NO puede pasar es que
+# aparezca una jornada entre semana y no la cubra nadie sin decirlo.
+COBERTURA = {5: (10, 20), 6: (10, 20),      # sábado y domingo
+             0: (17, 20), 4: (17, 20)}       # lunes y viernes
+
+
+def avisar_de_cobertura(cal, lineas):
+    """El cron es fijo y el calendario cambia. Si sale una jornada entre
+    semana -- una ronda de mitad de semana, un aplazamiento -- el comparador
+    no la mirará, y sin este aviso no se sabría: no hay error, simplemente no
+    aparecerían observaciones de ese día."""
+    fuera = []
+    for _, f in cal.iterrows():
+        dia = datetime.fromisoformat(f["fecha"]).weekday()
+        hora = int(str(f["descanso_desde"])[:2])
+        ventana = COBERTURA.get(dia)
+        if ventana is None or not (ventana[0] <= hora <= ventana[1]):
+            fuera.append(f)
+
+    if not fuera:
+        print("Cobertura: el cron cubre todos los descansos del calendario")
+        return
+
+    dias = ["lunes", "martes", "miércoles", "jueves", "viernes", "sábado", "domingo"]
+    print(f"\nAVISO -- {len(fuera)} partidos con el descanso FUERA de lo que mira el cron:")
+    lineas += ["\n## Partidos que el cron no cubre\n",
+               f"**{len(fuera)} partidos** tienen el descanso fuera de las horas "
+               "que vigila el comparador. No darán observaciones salvo que se "
+               "amplíe el cron de `descanso_en_vivo.yml`.\n",
+               "| Día | Liga | Partido | Descanso |", "|---|---|---|---|"]
+    for f in fuera:
+        dia = dias[datetime.fromisoformat(f["fecha"]).weekday()]
+        print(f"   {f['fecha']} ({dia}) {f['descanso_desde']} "
+              f"{f['local']} vs {f['visitante']} ({f['liga']})")
+        lineas.append(f"| {f['fecha']} ({dia}) | {f['liga']} | "
+                      f"{f['local']} vs {f['visitante']} | {f['descanso_desde']} |")
+
+
 def main():
     print("CALENDARIO DEL MES")
     print("Momento:", datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC"))
@@ -324,6 +364,8 @@ def main():
 
     with open(RUTA_INFORME, "w", encoding="utf-8") as fh:
         fh.write("\n".join(lineas) + "\n")
+
+    avisar_de_cobertura(cal, lineas)
 
     print(f"\n{len(cal)} partidos escritos en {RUTA_CALENDARIO}")
     print(cal.groupby("liga").size().to_string())
