@@ -1,0 +1,364 @@
+match_id,fecha,local,visitante,tarjetas_ht,tarjetas_2a,total,liga
+1336406078,2026-09-20,Atlético Madrid,Real Madrid,3,3,6,La Liga
+1336409482,2026-09-20,Getafe,Malaga,3,3,6,La Liga
+1336411184,2026-09-19,Sevilla FC,Barcelona,0,1,1,La Liga
+1336406929,2026-09-19,Celta de Vigo,Racing Santander,1,6,7,La Liga
+1336405227,2026-09-19,Athletic Club,Alavés,0,2,2,La Liga
+1336410333,2026-09-19,Osasuna,Rayo Vallecano,2,3,5,La Liga
+1336408631,2026-09-18,Espanyol,Elche,3,2,5,La Liga
+1336402674,2026-09-17,Malaga,Villarreal,2,4,6,La Liga
+1336399270,2026-09-17,Real Betis,Getafe,3,4,7,La Liga
+1336398419,2026-09-16,Barcelona,Racing Santander,2,3,5,La Liga
+1336400121,2026-09-16,Deportivo La Coruña,Sevilla FC,0,6,6,La Liga
+1336397568,2026-09-16,Atlético Madrid,Osasuna,0,3,3,La Liga
+1336400972,2026-09-15,Elche,Real Madrid,2,4,6,La Liga
+1336396717,2026-09-15,Alavés,Valencia,3,2,5,La Liga
+1336403525,2026-09-15,Rayo Vallecano,Espanyol,1,6,7,La Liga
+1336395866,2026-09-14,Villarreal,Real Betis,0,1,1,La Liga
+1336394164,2026-09-13,Real Sociedad,Atlético Madrid,1,3,4,La Liga
+1336389909,2026-09-13,Getafe,Deportivo La Coruña,3,1,4,La Liga
+1336390760,2026-09-13,Levante,Barcelona,2,0,2,La Liga
+1336389058,2026-09-13,Celta de Vigo,Malaga,2,0,2,La Liga
+1336393313,2026-09-12,Real Madrid,Rayo Vallecano,0,1,1,La Liga
+1336388207,2026-09-12,Athletic Club,Elche,0,6,6,La Liga
+1336391611,2026-09-12,Osasuna,Espanyol,4,1,5,La Liga
+1336392462,2026-09-12,Racing Santander,Alavés,3,3,6,La Liga
+1336395015,2026-09-11,Sevilla FC,Valencia,1,2,3,La Liga
+1336382250,2026-09-07,Elche,Real Sociedad,2,4,6,La Liga
+1336383952,2026-09-07,Getafe,Celta de Vigo,1,5,6,La Liga
+1336383101,2026-09-06,Espanyol,Sevilla FC,4,3,7,La Liga
+1336384803,2026-09-06,Malaga,Levante,3,4,7,La Liga
+1336379697,2026-09-06,Alavés,Osasuna,0,3,3,La Liga
+1336386505,2026-09-06,Valencia,Barcelona,1,3,4,La Liga
+1336387356,2026-09-05,Villarreal,Deportivo La Coruña,0,4,4,La Liga
+1336385654,2026-09-05,Rayo Vallecano,Racing Santander,4,3,7,La Liga
+1336380548,2026-09-05,Athletic Club,Atlético Madrid,1,0,1,La Liga
+1336381399,2026-09-04,Real Betis,Real Madrid,1,7,8,La Liga
+1336404376,2026-09-03,Real Sociedad,Celta de Vigo,1,4,5,La Liga
+1336372038,2026-08-31,Barcelona,Rayo Vallecano,0,1,1,La Liga
+1336375442,2026-08-31,Osasuna,Getafe,2,7,9,La Liga
+1336372889,2026-08-30,Celta de Vigo,Athletic Club,0,3,3,La Liga
+1336373740,2026-08-30,Deportivo La Coruña,Valencia,0,4,4,La Liga
+1336377144,2026-08-30,Real Madrid,Malaga,0,2,2,La Liga
+1336378846,2026-08-29,Sevilla FC,Atlético Madrid,1,3,4,La Liga
+1336377995,2026-08-29,Real Sociedad,Espanyol,2,4,6,La Liga
+1336374591,2026-08-29,Levante,Real Betis,0,2,2,La Liga
+1336371187,2026-08-28,Alavés,Villarreal,0,5,5,La Liga
+1336376293,2026-08-28,Racing Santander,Elche,2,1,3,La Liga
+1336355869,2026-08-27,Barcelona,Athletic Club,1,2,3,La Liga
+1336356720,2026-08-27,Celta de Vigo,Osasuna,1,1,2,La Liga
+1336360124,2026-08-26,Real Madrid,Real Sociedad,3,3,6,La Liga
+1336361826,2026-08-25,Valencia,Real Betis,2,1,3,La Liga
+1336367783,2026-08-24,Malaga,Deportivo La Coruña,1,4,5,La Liga
+1336368634,2026-08-24,Osasuna,Levante,1,2,3,La Liga
+1336365230,2026-08-23,Elche,Barcelona,1,0,1,La Liga
+1336366932,2026-08-23,Getafe,Racing Santander,3,1,4,La Liga
+1336363528,2026-08-23,Atlético Madrid,Villarreal,0,6,6,La Liga
+1336366081,2026-08-22,Espanyol,Real Madrid,2,0,2,La Liga
+1336370336,2026-08-22,Valencia,Celta de Vigo,2,3,5,La Liga
+1336362677,2026-08-22,Athletic Club,Sevilla FC,5,3,8,La Liga
+1336364379,2026-08-21,Real Betis,Real Sociedad,0,6,6,La Liga
+1336369485,2026-08-20,Rayo Vallecano,Alavés,1,2,3,La Liga
+1336355018,2026-08-19,Atlético Madrid,Malaga,3,2,5,La Liga
+1336357571,2026-08-17,Deportivo La Coruña,Elche,2,2,4,La Liga
+1336358422,2026-08-16,Espanyol,Levante,1,2,3,La Liga
+1336359273,2026-08-16,Racing Santander,Villarreal,1,6,7,La Liga
+1336360975,2026-08-15,Sevilla FC,Rayo Vallecano,1,8,9,La Liga
+1336354167,2026-08-15,Alavés,Getafe,4,4,8,La Liga
+1183910282,2026-05-24,Villarreal,Atlético Madrid,1,0,1,La Liga
+1183902623,2026-05-23,Alavés,Rayo Vallecano,0,6,6,La Liga
+1183907729,2026-05-23,Mallorca,Oviedo,1,2,3,La Liga
+1183906027,2026-05-23,Getafe,Osasuna,0,3,3,La Liga
+1183906878,2026-05-23,Girona,Elche,2,6,8,La Liga
+1183908580,2026-05-23,Real Madrid,Athletic Club,2,0,2,La Liga
+1183904325,2026-05-23,Celta de Vigo,Sevilla FC,1,0,1,La Liga
+1183903474,2026-05-23,Real Betis,Levante,2,1,3,La Liga
+1183909431,2026-05-23,Valencia,Barcelona,0,4,4,La Liga
+1183905176,2026-05-23,Espanyol,Real Sociedad,2,2,4,La Liga
+1336012065,2026-09-20,AD Ceuta FC,Valladolid,0,0,0,Segunda División
+1336016320,2026-09-20,Sabadell,Oviedo,0,4,4,Segunda División
+1336010363,2026-09-19,Cadiz,Girona,2,7,9,Segunda División
+1336012916,2026-09-19,Eldense,Eibar,1,5,6,Segunda División
+1336011214,2026-09-19,Castellón,Tenerife,0,2,2,Segunda División
+1336009512,2026-09-19,FC Andorra,Sporting Gijón,2,2,4,Segunda División
+1336015469,2026-09-19,Real Sociedad B,Mallorca,1,4,5,Segunda División
+1336007810,2026-09-18,Albacete,Cordoba,3,4,7,Segunda División
+1336001002,2026-09-14,Celta de Vigo II,Eibar,3,6,9,Segunda División
+1336006108,2026-09-13,Tenerife,Leganes,2,2,4,Segunda División
+1336005257,2026-09-13,Mallorca,Sabadell,2,1,3,Segunda División
+1336006959,2026-09-13,Valladolid,Oviedo,4,0,4,Segunda División
+1336002704,2026-09-13,Sporting Gijón,Eldense,3,2,5,Segunda División
+1336001853,2026-09-12,Cordoba,Almería,2,8,10,Segunda División
+1336004406,2026-09-12,Granada CF,Albacete,0,2,2,Segunda División
+1336003555,2026-09-12,Girona,Castellón,1,6,7,Segunda División
+1336000151,2026-09-12,Cadiz,Las Palmas,1,3,4,Segunda División
+1335998449,2026-09-12,FC Andorra,Real Sociedad B,1,5,6,Segunda División
+1335999300,2026-09-11,Burgos,AD Ceuta FC,1,4,5,Segunda División
+1335996747,2026-09-07,Sabadell,Cordoba,0,5,5,Segunda División
+1335989088,2026-09-06,Almería,Cadiz,4,1,5,Segunda División
+1335989939,2026-09-06,Castellón,Albacete,1,1,2,Segunda División
+1335995045,2026-09-06,Oviedo,Burgos,3,5,8,Segunda División
+1335991641,2026-09-06,Eibar,Granada CF,3,4,7,Segunda División
+1335992492,2026-09-05,Eldense,Mallorca,1,4,5,Segunda División
+1335990790,2026-09-05,AD Ceuta FC,Celta de Vigo II,3,6,9,Segunda División
+1335997598,2026-09-05,Valladolid,FC Andorra,3,4,7,Segunda División
+1335993343,2026-09-05,Sporting Gijón,Girona,2,2,4,Segunda División
+1335995896,2026-09-05,Real Sociedad B,Tenerife,1,5,6,Segunda División
+1335994194,2026-09-04,Las Palmas,Leganes,3,2,5,Segunda División
+1335983131,2026-08-31,Celta de Vigo II,Castellón,0,4,4,Segunda División
+1335981429,2026-08-31,Burgos,Real Sociedad B,1,2,3,Segunda División
+1335983982,2026-08-30,Cordoba,Granada CF,0,2,2,Segunda División
+1335986535,2026-08-30,Mallorca,AD Ceuta FC,1,4,5,Segunda División
+1335982280,2026-08-30,Cadiz,Valladolid,3,5,8,Segunda División
+1335980578,2026-08-30,FC Andorra,Eibar,1,1,2,Segunda División
+1335984833,2026-08-29,Girona,Las Palmas,2,3,5,Segunda División
+1335985684,2026-08-29,Leganes,Eldense,0,1,1,Segunda División
+1335979727,2026-08-29,Albacete,Oviedo,2,4,6,Segunda División
+1335987386,2026-08-29,Sabadell,Almería,5,2,7,Segunda División
+1335988237,2026-08-28,Tenerife,Sporting Gijón,1,5,6,Segunda División
+1335977174,2026-08-24,Granada CF,Mallorca,2,2,4,Segunda División
+1335972068,2026-08-24,Celta de Vigo II,FC Andorra,3,4,7,Segunda División
+1335978876,2026-08-23,Tenerife,Almería,1,1,2,Segunda División
+1335971217,2026-08-23,Castellón,Sabadell,2,5,7,Segunda División
+1335976323,2026-08-23,Sporting Gijón,Burgos,1,1,2,Segunda División
+1335974621,2026-08-23,Eibar,Valladolid,1,6,7,Segunda División
+1335975472,2026-08-22,Eldense,Cadiz,1,0,1,Segunda División
+1335970366,2026-08-22,Albacete,Real Sociedad B,2,1,3,Segunda División
+1335972919,2026-08-22,AD Ceuta FC,Las Palmas,0,2,2,Segunda División
+1335978025,2026-08-22,Oviedo,Leganes,2,2,4,Segunda División
+1335973770,2026-08-21,Cordoba,Girona,0,9,9,Segunda División
+1335961005,2026-08-17,Almería,Eldense,4,0,4,Segunda División
+1335965260,2026-08-17,Sporting Gijón,Sabadell,2,2,4,Segunda División
+1335966962,2026-08-16,Las Palmas,Albacete,3,0,3,Segunda División
+1335962707,2026-08-16,Burgos,Cordoba,3,1,4,Segunda División
+1335966111,2026-08-16,Girona,Leganes,2,3,5,Segunda División
+1335964409,2026-08-16,Eibar,Tenerife,0,1,1,Segunda División
+1335967813,2026-08-15,Mallorca,Valladolid,2,2,4,Segunda División
+1335968664,2026-08-15,Oviedo,Granada CF,3,2,5,Segunda División
+1335963558,2026-08-15,Cadiz,Celta de Vigo II,4,3,7,Segunda División
+1335961856,2026-08-15,FC Andorra,AD Ceuta FC,0,4,4,Segunda División
+1335969515,2026-08-14,Real Sociedad B,Castellón,0,6,6,Segunda División
+1320133256,2026-06-20,Almería,Malaga,0,7,7,Segunda División
+1320132405,2026-06-14,Malaga,Almería,1,1,2,Segunda División
+1317395589,2026-06-10,Malaga,Las Palmas,0,2,2,Segunda División
+1317394738,2026-06-09,Almería,Castellón,1,4,5,Segunda División
+1317393887,2026-06-07,Las Palmas,Malaga,1,1,2,Segunda División
+1317393036,2026-06-06,Castellón,Almería,5,1,6,Segunda División
+1184785110,2026-05-31,Leganes,Mirandes,3,5,8,Segunda División
+1184777451,2026-05-31,Cordoba,Huesca,3,2,5,Segunda División
+1188839274,2026-05-31,Burgos,FC Andorra,2,3,5,Segunda División
+1184776600,2026-05-31,Zaragoza,Malaga,0,2,2,Segunda División
+1184780855,2026-05-31,Castellón,Eibar,0,1,1,Segunda División
+1184780004,2026-05-31,Almería,Valladolid,3,3,6,Segunda División
+1184783408,2026-05-31,Deportivo La Coruña,Las Palmas,1,0,1,Segunda División
+1184779153,2026-05-31,Racing Santander,Cadiz,0,0,0,Segunda División
+1184781706,2026-05-30,Granada CF,Sporting Gijón,2,1,3,Segunda División
+1184782557,2026-05-30,AD Ceuta FC,Albacete,0,2,2,Segunda División
+1184784259,2026-05-30,Real Sociedad B,Cultural Leonesa,0,1,1,Segunda División
+1184773196,2026-05-24,Cultural Leonesa,Burgos,1,5,6,Segunda División
+1184774898,2026-05-24,Eibar,Cordoba,1,4,5,Segunda División
+1184768941,2026-05-24,Sporting Gijón,Almería,2,7,9,Segunda División
+1184771494,2026-05-24,Mirandes,Granada CF,1,4,5,Segunda División
+1184768090,2026-05-24,Las Palmas,Zaragoza,2,3,5,Segunda División
+1184769792,2026-05-24,Cadiz,Leganes,2,7,9,Segunda División
+1184770643,2026-05-24,Malaga,Racing Santander,2,4,6,Segunda División
+1184767239,2026-05-24,Huesca,Castellón,0,3,3,Segunda División
+1184772345,2026-05-24,Valladolid,Deportivo La Coruña,2,5,7,Segunda División
+1188838423,2026-05-24,FC Andorra,AD Ceuta FC,3,7,10,Segunda División
+1184775749,2026-05-24,Albacete,Real Sociedad B,0,1,1,Segunda División
+1325359247,2026-09-20,Manchester City,Sunderland,1,0,1,Premier League
+1325354141,2026-09-20,Bournemouth,Liverpool,0,3,3,Premier League
+1325358396,2026-09-20,Leeds,Crystal Palace,1,4,5,Premier League
+1325360949,2026-09-19,Nottingham Forest,Coventry,0,2,2,Premier League
+1325360098,2026-09-19,Newcastle United,Hull City,4,2,6,Premier League
+1325355843,2026-09-19,Brighton,Arsenal,2,3,5,Premier League
+1325356694,2026-09-19,Everton,Ipswich,2,3,5,Premier League
+1325361800,2026-09-19,Tottenham,Aston Villa,1,3,4,Premier League
+1325354992,2026-09-18,Brentford,Chelsea,0,2,2,Premier League
+1325349886,2026-09-14,Leeds,Newcastle United,1,2,3,Premier League
+1325351588,2026-09-13,Manchester United,Manchester City,2,3,5,Premier League
+1325348184,2026-09-13,Coventry,Brighton,0,1,1,Premier League
+1325352439,2026-09-12,Sunderland,Arsenal,2,7,9,Premier League
+1325353290,2026-09-12,Tottenham,Everton,0,3,3,Premier League
+1325350737,2026-09-12,Liverpool,Fulham,0,1,1,Premier League
+1325345631,2026-09-12,Aston Villa,Nottingham Forest,3,4,7,Premier League
+1325346482,2026-09-12,Bournemouth,Brentford,2,4,6,Premier League
+1325347333,2026-09-12,Chelsea,Hull City,1,5,6,Premier League
+1325349035,2026-09-12,Crystal Palace,Ipswich,2,3,5,Premier League
+1325337121,2026-09-06,Arsenal,Chelsea,2,4,6,Premier League
+1325339674,2026-09-06,Everton,Manchester United,2,4,6,Premier League
+1325341376,2026-09-05,Hull City,Aston Villa,1,1,2,Premier League
+1325337972,2026-09-05,Brentford,Sunderland,2,3,5,Premier League
+1325344780,2026-09-05,Nottingham Forest,Tottenham,1,3,4,Premier League
+1325340525,2026-09-05,Fulham,Crystal Palace,0,0,0,Premier League
+1325338823,2026-09-05,Brighton,Leeds,2,4,6,Premier League
+1325343078,2026-09-05,Manchester City,Coventry,1,2,3,Premier League
+1325343929,2026-09-05,Newcastle United,Bournemouth,1,5,6,Premier League
+1325342227,2026-09-04,Ipswich,Liverpool,2,2,4,Premier League
+1325328611,2026-08-31,Aston Villa,Arsenal,1,3,4,Premier League
+1325334568,2026-08-30,Manchester United,Ipswich,2,2,4,Premier League
+1325330313,2026-08-30,Chelsea,Brighton,0,4,4,Premier League
+1325335419,2026-08-30,Sunderland,Fulham,1,1,2,Premier League
+1325332866,2026-08-30,Leeds,Brentford,1,3,4,Premier League
+1325336270,2026-08-29,Tottenham,Newcastle United,2,1,3,Premier League
+1325329462,2026-08-29,Bournemouth,Everton,2,3,5,Premier League
+1325331164,2026-08-29,Coventry,Hull City,1,4,5,Premier League
+1325333717,2026-08-29,Liverpool,Nottingham Forest,1,5,6,Premier League
+1325332015,2026-08-28,Crystal Palace,Manchester City,1,2,3,Premier League
+1325327760,2026-08-24,Fulham,Chelsea,2,3,5,Premier League
+1325326909,2026-08-23,Newcastle United,Liverpool,4,4,8,Premier League
+1325326058,2026-08-23,Manchester City,Bournemouth,1,2,3,Premier League
+1325325207,2026-08-23,Brighton,Aston Villa,5,1,6,Premier League
+1325324356,2026-08-22,Brentford,Tottenham,1,1,2,Premier League
+1325323505,2026-08-22,Nottingham Forest,Leeds,2,1,3,Premier League
+1325321803,2026-08-22,Everton,Crystal Palace,1,0,1,Premier League
+1325322654,2026-08-22,Ipswich,Sunderland,1,2,3,Premier League
+1325320952,2026-08-22,Hull City,Manchester United,2,1,3,Premier League
+1325320101,2026-08-21,Arsenal,Coventry,2,0,2,Premier League
+1173819124,2026-05-24,Burnley,Wolves,2,2,4,Premier League
+1173822528,2026-05-24,Manchester City,Aston Villa,0,1,1,Premier League
+1173825932,2026-05-24,West Ham,Leeds,2,1,3,Premier League
+1173823379,2026-05-24,Nottingham Forest,Bournemouth,1,1,2,Premier League
+1173824230,2026-05-24,Sunderland,Chelsea,1,10,11,Premier League
+1173819975,2026-05-24,Crystal Palace,Arsenal,0,1,1,Premier League
+1173818273,2026-05-24,Brighton,Manchester United,1,0,1,Premier League
+1173825081,2026-05-24,Tottenham,Everton,1,3,4,Premier League
+1173820826,2026-05-24,Fulham,Newcastle United,0,4,4,Premier League
+1173821677,2026-05-24,Liverpool,Brentford,0,4,4,Premier League
+1319162265,2026-09-20,Frosinone,Como,2,3,5,Serie A
+1319164818,2026-09-20,Parma,Genoa,3,3,6,Serie A
+1319161414,2026-09-20,Fiorentina,Napoli,1,2,3,Serie A
+1319166520,2026-09-19,Venezia,Lazio,1,5,6,Serie A
+1319159712,2026-09-19,AS Roma,Inter,2,4,6,Serie A
+1319160563,2026-09-19,Bologna,Torino,1,2,3,Serie A
+1319165669,2026-09-19,Udinese,Cagliari,2,0,2,Serie A
+1319163967,2026-09-18,Monza,Sassuolo,1,4,5,Serie A
+1319152904,2026-09-14,Inter,Udinese,1,1,2,Serie A
+1319151202,2026-09-14,Como,Parma,0,1,1,Serie A
+1319157159,2026-09-14,Torino,AS Roma,0,2,2,Serie A
+1319156308,2026-09-13,Sassuolo,Juventus,1,3,4,Serie A
+1319155457,2026-09-13,Napoli,Bologna,1,0,1,Serie A
+1319154606,2026-09-13,Lecce,Monza,1,1,2,Serie A
+1319150351,2026-09-12,Atalanta,Cagliari,0,0,0,Serie A
+1319153755,2026-09-12,Lazio,AC Milan,0,5,5,Serie A
+1319152053,2026-09-12,Genoa,Frosinone,1,5,6,Serie A
+1319158010,2026-09-11,Venezia,Fiorentina,1,2,3,Serie A
+1319149500,2026-09-07,Udinese,Lazio,4,2,6,Serie A
+1319143543,2026-09-07,Cagliari,Lecce,1,3,4,Serie A
+1319147798,2026-09-06,Juventus,AC Milan,0,4,4,Serie A
+1319142692,2026-09-06,Bologna,Sassuolo,0,5,5,Serie A
+1319145245,2026-09-06,Frosinone,Venezia,5,2,7,Serie A
+1319148649,2026-09-06,Parma,Monza,1,3,4,Serie A
+1319141841,2026-09-05,AS Roma,Atalanta,1,3,4,Serie A
+1319146947,2026-09-05,Inter,Napoli,1,2,3,Serie A
+1319144394,2026-09-05,Fiorentina,Torino,0,0,0,Serie A
+1319146096,2026-09-04,Genoa,Como,1,2,3,Serie A
+1319134182,2026-08-31,Atalanta,Bologna,0,2,2,Serie A
+1319138437,2026-08-31,Lecce,AS Roma,1,1,2,Serie A
+1319137586,2026-08-30,Lazio,Genoa,1,2,3,Serie A
+1319135033,2026-08-30,Cagliari,Inter,1,2,3,Serie A
+1319140139,2026-08-30,Napoli,Como,1,0,1,Serie A
+1319136735,2026-08-29,Juventus,Parma,1,4,5,Serie A
+1319140990,2026-08-29,Sassuolo,Torino,2,2,4,Serie A
+1319135884,2026-08-29,Fiorentina,Frosinone,4,2,6,Serie A
+1319139288,2026-08-29,Monza,Udinese,0,1,1,Serie A
+1319133331,2026-08-28,AC Milan,Venezia,1,3,4,Serie A
+1319124821,2026-08-24,AS Roma,Fiorentina,2,2,4,Serie A
+1319126523,2026-08-24,Bologna,Lazio,5,3,8,Serie A
+1319125672,2026-08-23,Atalanta,Sassuolo,0,0,0,Serie A
+1319130778,2026-08-23,Torino,AC Milan,0,1,1,Serie A
+1319127374,2026-08-23,Frosinone,Juventus,1,3,4,Serie A
+1319132480,2026-08-23,Venezia,Lecce,1,3,4,Serie A
+1319128225,2026-08-22,Genoa,Napoli,0,1,1,Serie A
+1319129927,2026-08-22,Parma,Cagliari,1,1,2,Serie A
+1319131629,2026-08-22,Udinese,Como,2,1,3,Serie A
+1319129076,2026-08-22,Inter,Monza,2,2,4,Serie A
+1172882173,2026-05-24,AC Milan,Cagliari,1,3,4,Serie A
+1172881322,2026-05-24,Lecce,Genoa,1,1,2,Serie A
+1172884726,2026-05-24,Torino,Juventus,0,3,3,Serie A
+1172885577,2026-05-24,Verona,AS Roma,2,3,5,Serie A
+1172878769,2026-05-24,Cremonese,Como,2,7,9,Serie A
+1172883024,2026-05-24,Napoli,Udinese,0,4,4,Serie A
+1172883875,2026-05-24,Parma,Sassuolo,4,0,4,Serie A
+1172880471,2026-05-23,Lazio,Pisa,2,1,3,Serie A
+1172877918,2026-05-23,Bologna,Inter,1,1,2,Serie A
+1340469603,2026-09-20,Bayer Leverkusen,RB Leipzig,1,4,5,Bundesliga
+1340468752,2026-09-19,VfB Stuttgart,Borussia Dortmund,3,4,7,Bundesliga
+1340472156,2026-09-19,Werder Bremen,FC Augsburg,2,3,5,Bundesliga
+1340473858,2026-09-19,Borussia Mönchengladbach,FSV Mainz 05,1,10,11,Bundesliga
+1340471305,2026-09-19,Hamburger SV,FC Koln,1,4,5,Bundesliga
+1340470454,2026-09-19,Eintracht Frankfurt,SC Freiburg,2,2,4,Bundesliga
+1340467901,2026-09-18,Bayern Munich,Union Berlin,3,1,4,Bundesliga
+1340467050,2026-09-13,SV Elversberg,Bayern Munich,1,1,2,Bundesliga
+1340461093,2026-09-13,RB Leipzig,Hamburger SV,1,2,3,Bundesliga
+1340466199,2026-09-12,FC Koln,Werder Bremen,0,3,3,Bundesliga
+1340460242,2026-09-12,Borussia Dortmund,SC Paderborn 07,1,1,2,Bundesliga
+1340464497,2026-09-12,FSV Mainz 05,Eintracht Frankfurt,1,1,2,Bundesliga
+1340463646,2026-09-12,FC Augsburg,Bayer Leverkusen,1,2,3,Bundesliga
+1340462795,2026-09-12,SC Freiburg,Borussia Mönchengladbach,2,3,5,Bundesliga
+1340461944,2026-09-12,1899 Hoffenheim,VfB Stuttgart,0,1,1,Bundesliga
+1340465348,2026-09-11,Union Berlin,FC Schalke 04,1,3,4,Bundesliga
+1340455136,2026-09-06,Eintracht Frankfurt,FC Augsburg,2,0,2,Bundesliga
+1340456838,2026-09-06,Hamburger SV,FSV Mainz 05,2,2,4,Bundesliga
+1340458540,2026-09-05,FC Schalke 04,Bayern Munich,2,2,4,Bundesliga
+1340453434,2026-09-05,1899 Hoffenheim,Borussia Dortmund,2,4,6,Bundesliga
+1340455987,2026-09-05,Borussia Mönchengladbach,SV Elversberg,2,3,5,Bundesliga
+1340454285,2026-09-05,Bayer Leverkusen,Union Berlin,1,3,4,Bundesliga
+1340459391,2026-09-05,SC Paderborn 07,SC Freiburg,2,4,6,Bundesliga
+1340457689,2026-09-05,Werder Bremen,RB Leipzig,1,0,1,Bundesliga
+1340452583,2026-09-04,VfB Stuttgart,FC Koln,1,3,4,Bundesliga
+1340445775,2026-08-30,FC Augsburg,FC Schalke 04,1,1,2,Bundesliga
+1340449179,2026-08-30,SC Freiburg,Werder Bremen,0,2,2,Bundesliga
+1340446626,2026-08-29,Borussia Dortmund,Hamburger SV,1,3,4,Bundesliga
+1340451732,2026-08-29,Union Berlin,Eintracht Frankfurt,3,3,6,Bundesliga
+1340450881,2026-08-29,RB Leipzig,Borussia Mönchengladbach,0,1,1,Bundesliga
+1340448328,2026-08-29,FC Koln,1899 Hoffenheim,0,2,2,Bundesliga
+1340447477,2026-08-29,SV Elversberg,Bayer Leverkusen,2,3,5,Bundesliga
+1340450030,2026-08-29,FSV Mainz 05,SC Paderborn 07,1,2,3,Bundesliga
+1340444924,2026-08-28,Bayern Munich,VfB Stuttgart,0,4,4,Bundesliga
+1315151502,2026-05-25,SC Paderborn 07,VfL Wolfsburg,7,3,10,Bundesliga
+1321404650,2026-09-20,Auxerre,Stade Brestois 29,0,2,2,Ligue 1
+1321405501,2026-09-19,Le Mans,Lorient,2,4,6,Ligue 1
+1321409756,2026-09-19,Toulouse,LE Havre AC,1,3,4,Ligue 1
+1321406352,2026-09-19,Lyon,Rennes FC,2,4,6,Ligue 1
+1321403799,2026-09-19,Angers,Estac Troyes,1,4,5,Ligue 1
+1321408905,2026-09-19,Paris FC,Strasbourg,1,4,5,Ligue 1
+1321407203,2026-09-18,Monaco,Lens,0,2,2,Ligue 1
+1321396991,2026-09-13,Stade Brestois 29,Paris Saint Germain,1,2,3,Ligue 1
+1321398693,2026-09-13,Le Mans,Lens,4,1,5,Ligue 1
+1321399544,2026-09-13,Lille,Estac Troyes,0,1,1,Ligue 1
+1321400395,2026-09-12,Lorient,Toulouse,1,0,1,Ligue 1
+1321396140,2026-09-12,Auxerre,Nice,1,1,2,Ligue 1
+1321401246,2026-09-12,Paris FC,Lyon,0,3,3,Ligue 1
+1321397842,2026-09-12,LE Havre AC,Angers,1,1,2,Ligue 1
+1321402948,2026-09-12,Strasbourg,Monaco,0,2,2,Ligue 1
+1321402097,2026-09-11,Rennes FC,Marseille,3,2,5,Ligue 1
+1321391885,2026-09-06,Marseille,Paris FC,0,2,2,Ligue 1
+1321388481,2026-09-06,Angers,Rennes FC,0,2,2,Ligue 1
+1321395289,2026-09-06,Estac Troyes,Strasbourg,2,0,2,Ligue 1
+1321389332,2026-09-05,LE Havre AC,Stade Brestois 29,4,0,4,Ligue 1
+1321392736,2026-09-05,Nice,Le Mans,0,4,4,Ligue 1
+1321390183,2026-09-05,Lens,Lorient,2,2,4,Ligue 1
+1321393587,2026-09-04,Paris Saint Germain,Monaco,0,2,2,Ligue 1
+1321391034,2026-09-04,Lyon,Auxerre,1,3,4,Ligue 1
+1321394438,2026-09-03,Toulouse,Lille,1,0,1,Ligue 1
+1321384226,2026-08-30,Monaco,Marseille,2,2,4,Ligue 1
+1321385928,2026-08-30,Rennes FC,Le Mans,0,6,6,Ligue 1
+1321385077,2026-08-30,Paris FC,Nice,1,0,1,Ligue 1
+1321380822,2026-08-29,Auxerre,Angers,1,4,5,Ligue 1
+1321382524,2026-08-29,Lorient,Estac Troyes,0,0,0,Ligue 1
+1321383375,2026-08-29,Lyon,LE Havre AC,1,1,2,Ligue 1
+1321381673,2026-08-29,Stade Brestois 29,Toulouse,3,2,5,Ligue 1
+1321386779,2026-08-29,Strasbourg,Lens,1,3,4,Ligue 1
+1321387630,2026-08-28,Lille,Paris Saint Germain,1,2,3,Ligue 1
+1321378269,2026-08-23,Rennes FC,Paris Saint Germain,1,3,4,Ligue 1
+1321374014,2026-08-23,LE Havre AC,Monaco,3,2,5,Ligue 1
+1321373163,2026-08-23,Angers,Lille,1,3,4,Ligue 1
+1321377418,2026-08-22,Nice,Lorient,1,0,1,Ligue 1
+1321379971,2026-08-22,Estac Troyes,Paris FC,0,2,2,Ligue 1
+1321374865,2026-08-22,Le Mans,Stade Brestois 29,1,1,2,Ligue 1
+1321379120,2026-08-22,Toulouse,Lyon,2,0,2,Ligue 1
+1321375716,2026-08-22,Lens,Auxerre,1,2,3,Ligue 1
+1321376567,2026-08-21,Marseille,Strasbourg,0,4,4,Ligue 1
+1315143843,2026-05-29,Nice,Saint-Étienne,0,2,2,Ligue 1
+1315142992,2026-05-26,Saint-Étienne,Nice,0,1,1,Ligue 1
