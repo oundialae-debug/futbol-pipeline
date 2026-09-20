@@ -33,6 +33,19 @@ las comprobaciones concretas que los habrían pillado.
 
 ## Conclusiones
 
+- **No excluyas una familia entera por una parte complicada.** Dejé fuera el
+  hándicap asiático completo porque las líneas de cuarto (±0.25, ±0.75) parten
+  la apuesta en dos mitades. Las líneas 0 y ±0.5 son simples, y son
+  exactamente el Sin Empate y la Doble Oportunidad: dos mercados que se habían
+  pedido y dos de los más baratos de la API. Excluye lo complicado, no su
+  familia.
+- **Un resolutor nuevo se comprueba contra uno viejo, partido a partido.**
+  Un hándicap orientado al revés no da error: da números plausibles e
+  invertidos. Antes de dar cifras, el AH 0 y el ±0.5 se contrastaron con el
+  1X2 del mismo partido (100% de coincidencia en 110-126 partidos) y se exigió
+  monotonía dentro de cada partido: cubrir tiene que ser más fácil cuanto mayor
+  el hándicap (147/147). Eso es lo que permite creerse el resto.
+
 - **Pregunta siempre qué parámetro elegido por ti sostiene la conclusión, y
   muévelo.** Durante horas la conclusión fue "el mercado está perfectamente
   calibrado". Lo cierto era "perfectamente calibrado **en el rango 15%-85% que
@@ -97,7 +110,8 @@ Esta es la parte que menos reviso y donde más basura se acumula.
 
 Cerrado: no hay apuesta ganadora accesible con esta API. Las vías probadas,
 con sus números, están en `API.md`, `calibracion_mercado.md`,
-`backtest_valor.md` y `hallazgo_favorito_marginado.md`.
+`backtest_valor.md`, `hallazgo_favorito_marginado.md` y
+`doble_oportunidad_sin_empate.md`.
 
 Los crons siguen corriendo (11% de la cuota diaria) porque el registro crece
 por si algún día aparece otra fuente de datos. No porque esperemos nada de él.
