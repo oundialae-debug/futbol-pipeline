@@ -1,4 +1,4 @@
-# Tarjetas al descanso -- 2026-09-20 02:07 UTC
+# Tarjetas al descanso -- 2026-09-20 02:17 UTC
 
 Modelo: lambda(k) = max(0.8, 3.640 -0.289*k), phi=1.24, ajustado sobre 427 partidos.
 Validación fuera de muestra (línea 4.5): Brier 0.2169 frente a 0.2523 de la tasa base (+14.0%).
@@ -7,10 +7,17 @@ Validación fuera de muestra (línea 4.5): Brier 0.2169 frente a 0.2523 de la ta
 > ven. La hipótesis a medir es que sus modelos supongan persistencia cuando
 > la correlación real es negativa. Una observación no demuestra nada.
 
-*Consumo de API hoy: 107 llamadas en 4 pasadas, sobre un tope de 6000 (2%). El plan da 7.500 al día.*
+*Consumo de API hoy: 133 llamadas en 5 pasadas, sobre un tope de 6000 (2%). El plan da 7.500 al día.*
 
-**En juego, esperando al descanso:** Deportivo Saprissa vs CS Herediano (min 4), Denver Summit Women vs OL Reign (min 16), Real Espana vs CD Motagua (min 34), Nashville SC vs Chicago Fire (min 25), Real Salt Lake vs Vancouver Whitecaps (min 21), Plaza Amador FC vs Veraguas (min 35), FBC Melgar vs Sport Boys (min 45), FC Dallas vs Austin (min 63), Houston Dynamo vs FC Cincinnati (min 64), Minnesota United vs Los Angeles Galaxy (min 63), St. Louis City SC vs Toronto FC (min 65), Sporting Kansas City vs Philadelphia Union (min 62), Instituto Cordoba vs Talleres Córdoba (min 86), Sarasota Paradise vs Greenville Triumph (min 87)
+**En juego, esperando al descanso:** Real Espana vs CD Motagua (min 44), Plaza Amador FC vs Veraguas (min 45), Colorado Springs vs New Mexico United (min 51), CDS Tampico Madero vs Dorados (min 53), Monarcas vs Leones Negros UDG (min 55), Cancún vs Alebrijes de Oaxaca (min 53)
 
+
+## FBC Melgar vs Sport Boys  (Primera División)
+*Half time · minuto 45 · 1 - 1*
+
+**1 tarjetas** al descanso (minutos ['45']) · **6 faltas**. Esperadas en la 2ª parte: **3.35**.
+
+*Sin mercado de tarjetas en vivo para este partido.*
 
 ## Deportivo Pasto vs Once Caldas  (Primera A)
 *Half time · minuto 45 · 0 - 0*
@@ -23,33 +30,5 @@ Validación fuera de muestra (línea 4.5): Brier 0.2169 frente a 0.2523 de la ta
 *Half time · minuto 45 · 1 - 0*
 
 **0 tarjetas** al descanso · **10 faltas**. Esperadas en la 2ª parte: **3.64**.
-
-*Sin mercado de tarjetas en vivo para este partido.*
-
-## Colorado Springs vs New Mexico United  (USL Championship)
-*Half time · minuto 45 · 0 - 0*
-
-**0 tarjetas** al descanso · **10 faltas**. Esperadas en la 2ª parte: **3.64**.
-
-*Sin mercado de tarjetas en vivo para este partido.*
-
-## Monarcas vs Leones Negros UDG  (Liga de Expansión MX)
-*Second half · minuto 45 · 1 - 0*
-
-**4 tarjetas** al descanso (minutos ['40', '41', '44', '45+2']). Esperadas en la 2ª parte: **2.48**.
-
-*Sin mercado de tarjetas en vivo para este partido.*
-
-## CDS Tampico Madero vs Dorados  (Liga de Expansión MX)
-*Half time · minuto 45 · 0 - 0*
-
-**3 tarjetas** al descanso (minutos ['10', '22', '45+4']) · **9 faltas**. Esperadas en la 2ª parte: **2.77**.
-
-*Sin mercado de tarjetas en vivo para este partido.*
-
-## Cancún vs Alebrijes de Oaxaca  (Liga de Expansión MX)
-*Half time · minuto 45 · 0 - 0*
-
-**6 tarjetas** al descanso (minutos ['29', '29', '31', '37', '38', '45+5']) · **15 faltas**. Esperadas en la 2ª parte: **1.91**.
 
 *Sin mercado de tarjetas en vivo para este partido.*
