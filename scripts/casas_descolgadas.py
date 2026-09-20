@@ -84,6 +84,10 @@ FAMILIAS = {
     "Both Teams To Score": {"yes", "no"},
     "Odd or Even": {"odd", "even"},
     "Clean Sheet": {"home", "away"},
+    # "First Team To Score" con T mayúscula: así lo devuelve la API de
+    # verdad (censo_mercados_crudo.py lo confirmó). Estaba fuera de este
+    # script sin más razón que no haberlo mirado.
+    "First Team To Score": {"home", "away", "none"},
 }
 FAMILIAS_CON_LINEA = {
     "total goals": {"over", "under"},

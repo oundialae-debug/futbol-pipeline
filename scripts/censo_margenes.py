@@ -26,10 +26,12 @@ completo:
     Asian Handicap X        Home + Away
     Odd or Even             Odd + Even
     Clean Sheet             Home + Away
+    First Team To Score     Home + Away + None
 
-Correct Score y First Team to Score se quedan fuera: no hay forma de
-verificar desde aquí que estén todos los resultados, y un margen calculado
-sobre un conjunto incompleto sale absurdamente bajo y parece una ganga.
+Correct Score se queda fuera: no hay forma de verificar desde aquí que estén
+todos los resultados posibles (son decenas de marcadores y algunas casas no
+cotizan los más raros), y un margen calculado sobre un conjunto incompleto
+sale absurdamente bajo y parece una ganga.
 
 DOS MÁRGENES, Y EL SEGUNDO ES EL QUE IMPORTA
 --------------------------------------------
@@ -67,6 +69,10 @@ FAMILIAS = {
     "Both Teams To Score": {"yes", "no"},
     "Odd or Even": {"odd", "even"},
     "Clean Sheet": {"home", "away"},
+    # "First Team To Score" con T mayúscula: así lo devuelve la API de
+    # verdad (censo_mercados_crudo.py lo confirmó). Estaba fuera de este
+    # script sin más razón que no haberlo mirado.
+    "First Team To Score": {"home", "away", "none"},
 }
 # Familias con línea dentro del nombre ("Total Goals 2.5"): prefijo -> lados
 FAMILIAS_CON_LINEA = {

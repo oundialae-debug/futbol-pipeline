@@ -28,7 +28,7 @@ Del marcador, de los eventos y de las estadísticas del propio partido:
     Both Teams To Score  marcador
     Odd or Even          marcador
     Clean Sheet          marcador
-    First Team to Score  primer evento de gol; None si no hubo goles
+    First Team To Score  primer evento de gol; None si no hubo goles
     Total Cards X        eventos de tarjeta
     Total Corners X      estadísticas del partido
 
@@ -65,7 +65,14 @@ FAMILIAS = {
     "Both Teams To Score": {"yes", "no"},
     "Odd or Even": {"odd", "even"},
     "Clean Sheet": {"home", "away"},
-    "First Team to Score": {"home", "away", "none"},
+    # OJO CON LAS MAYÚSCULAS: la API devuelve "First Team To Score" (T
+    # mayúscula en "To"), no "First Team to Score". La comparación es exacta
+    # y sensible a mayúsculas, así que con el nombre mal escrito este mercado
+    # entraba en el diccionario de clasificación y no aparecía NUNCA en
+    # ningún resultado -- ni un error, solo ausencia total y silenciosa.
+    # Verificado contra el censo crudo (censo_mercados_crudo.py) antes de
+    # corregirlo, no supuesto.
+    "First Team To Score": {"home", "away", "none"},
 }
 FAMILIAS_CON_LINEA = {
     "total goals": {"over", "under"},
@@ -193,7 +200,7 @@ def resolver(familia, lado, linea, h):
         # el equipo no encaja ningún gol
         limpio = (gv == 0) if lado == "home" else (gl == 0)
         return 1.0 if limpio else 0.0
-    if familia == "First Team to Score":
+    if familia == "First Team To Score":
         return 1.0 if lado == h["primer_gol"] else 0.0
 
     observado = {"Total Goals": tot, "Total Cards": h["tarjetas"],
