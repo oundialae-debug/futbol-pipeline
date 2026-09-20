@@ -56,8 +56,14 @@ RUTA_INFORME = "backtest_valor.md"
 DIAS = int(os.environ.get("DIAS", "25"))       # las cuotas duran 28 días
 MAX_PARTIDOS = int(os.environ.get("MAX_PARTIDOS", "150"))
 MIN_CASAS = 8
-PROB_MINIMA = 0.15    # por debajo, el valor relativo es ruido del consenso
-PROB_MAXIMA = 0.85
+# Por debajo/encima de esto, el VALOR RELATIVO es ruido del consenso (dividir
+# entre una probabilidad pequeña amplifica cualquier diferencia mínima). Pero
+# esta misma frontera dejaba sin mirar la zona donde clásicamente aparece el
+# sesgo favorito-marginado, que se mide en puntos absolutos y no tiene ese
+# problema. Configurable para poder ensanchar solo en una pasada de
+# calibración sin tocar el comportamiento por defecto de los crons.
+PROB_MINIMA = float(os.environ.get("PROB_MINIMA", "0.15"))
+PROB_MAXIMA = float(os.environ.get("PROB_MAXIMA", "0.85"))
 LLAMADAS = [0]
 
 FAMILIAS = {

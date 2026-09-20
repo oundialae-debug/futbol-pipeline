@@ -13,6 +13,14 @@ on:
         description: 'Máximo de partidos'
         required: false
         default: '150'
+      prob_minima:
+        description: 'Consenso mínimo a capturar (ensanchar para mirar los extremos)'
+        required: false
+        default: '0.15'
+      prob_maxima:
+        description: 'Consenso máximo a capturar'
+        required: false
+        default: '0.85'
 
 jobs:
   backtest:
@@ -33,6 +41,8 @@ jobs:
           HIGHLIGHTLY_API_KEY: ${{ secrets.HIGHLIGHTLY_API_KEY }}
           DIAS: ${{ inputs.dias || '25' }}
           MAX_PARTIDOS: ${{ inputs.max_partidos || '150' }}
+          PROB_MINIMA: ${{ inputs.prob_minima || '0.15' }}
+          PROB_MAXIMA: ${{ inputs.prob_maxima || '0.85' }}
           PYTHONPATH: scripts
 
       - name: Guardar
