@@ -1,0 +1,49 @@
+name: Margen por mercado
+
+# Mide cuánto cobra la casa en cada mercado previo. Es lo que decide dónde
+# merece la pena buscar ventaja, mucho más que lo bueno que sea el modelo.
+on:
+  workflow_dispatch:
+    inputs:
+      max_partidos:
+        description: 'Partidos a muestrear'
+        required: false
+        default: '40'
+  schedule:
+    # Lunes por la mañana, con el calendario de la semana ya hecho.
+    - cron: '30 6 * * 1'
+
+jobs:
+  censo:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+      - run: pip install requests pandas
+
+      - name: Medir márgenes
+        run: python scripts/censo_margenes.py
+        env:
+          HIGHLIGHTLY_API_KEY: ${{ secrets.HIGHLIGHTLY_API_KEY }}
+          MAX_PARTIDOS: ${{ inputs.max_partidos || '40' }}
+          PYTHONPATH: scripts
+
+      - name: Guardar
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          for f in censo_margenes.md data/censo_margenes.csv; do
+            [ -f "$f" ] && git add "$f" || echo "  [no existe] $f"
+          done
+          if git diff --staged --quiet; then
+            echo "Sin cambios que guardar"
+            exit 0
+          fi
+          git commit -m "Censo de márgenes ($(date -u +%Y-%m-%dT%H:%M))"
+          git pull --rebase origin main
+          git push
