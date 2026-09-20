@@ -1,0 +1,51 @@
+name: Revisión del descanso
+
+# Dos cosas que van juntas: cerrar el registro (quién acertó, modelo o
+# mercado) y sondear si podemos conseguir las faltas del primer tiempo.
+on:
+  workflow_dispatch:
+    inputs:
+      solo_sondeo:
+        description: 'Solo el sondeo de faltas, sin cerrar el registro'
+        required: false
+        default: 'no'
+
+jobs:
+  revision:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install requests pandas scipy numpy
+
+      - name: Cerrar el registro del descanso
+        if: inputs.solo_sondeo != 'si'
+        run: python scripts/cerrar_descanso.py
+        env:
+          HIGHLIGHTLY_API_KEY: ${{ secrets.HIGHLIGHTLY_API_KEY }}
+          PYTHONPATH: scripts
+
+      - name: Sondear las faltas
+        run: python scripts/sondeo_faltas.py
+        env:
+          HIGHLIGHTLY_API_KEY: ${{ secrets.HIGHLIGHTLY_API_KEY }}
+          PYTHONPATH: scripts
+
+      - name: Guardar el cierre
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          for f in cierre_descanso.md data/registro_descanso.csv; do
+            [ -f "$f" ] && git add "$f" || echo "  [no existe] $f"
+          done
+          if git diff --staged --quiet; then
+            echo "Sin cambios que guardar"
+            exit 0
+          fi
+          git commit -m "Cierre del descanso ($(date -u +%Y-%m-%dT%H:%M))"
+          git pull --rebase origin main
+          git push
