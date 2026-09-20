@@ -3,8 +3,8 @@ name: Diagnóstico en directo
 # Solo lectura. Busca cualquier partido EN JUEGO del mundo para contestar
 # si la API sirve eventos parciales en directo y si las cuotas se mueven.
 #
-# Las ventanas del cron cubren horarios donde casi siempre hay fútbol en
-# algún sitio: tarde europea, noche europea y madrugada (Sudamérica).
+# Sin cron: lo que venía a comprobar ya está comprobado. Se lanza a mano
+# cuando haga falta volver a mirar el directo.
 on:
   workflow_dispatch:
     inputs:
@@ -12,10 +12,9 @@ on:
         description: 'IDs de liga separados por coma donde buscar primero (opcional)'
         required: false
         default: ''
-  schedule:
-    - cron: '30 16 * * *'   # tarde europea
-    - cron: '30 20 * * *'   # noche europea
-    - cron: '30 0 * * *'    # madrugada UTC = prime time sudamericano
+  # Sin cron: era un diagnóstico temporal y ya contestó lo suyo. Se
+  # queda lanzable a mano, pero deja de gastar llamadas, que ahora
+  # hacen falta para acumular descansos cada quince minutos.
 
 jobs:
   directo:

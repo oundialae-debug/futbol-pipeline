@@ -3,12 +3,9 @@ name: Monitor en directo
 # Solo lectura. Muestrea el reloj de los partidos en juego varias veces
 # seguidas para distinguir si la API va en vivo de verdad o va con retraso.
 #
-# Los cron caen a mitad de cada franja de LaLiga (los partidos empiezan a
-# 12:00, 14:15, 16:30 y 19:00 UTC), que es donde la cobertura de la API
-# está garantizada. Es la prueba limpia: si ahí el reloj tampoco avanza,
-# el dato en directo no sirve y no es cuestión de qué ligas cubre.
-#
-# TEMPORAL: quitar el bloque 'schedule' en cuanto haya respuesta.
+# Sin cron: la respuesta ya está, y fue que el reloj SÍ avanza. Lo que
+# fallaba era este script, que ordenaba por minuto descendente y seguía
+# partidos muertos clavados en el 90. Se queda a mano.
 on:
   workflow_dispatch:
     inputs:
@@ -20,11 +17,9 @@ on:
         description: 'Segundos entre muestras'
         required: false
         default: '75'
-  schedule:
-    - cron: '35 12 * * 6,0'   # mitad de la 1ª parte, franja 12:00 UTC
-    - cron: '50 14 * * 6,0'   # mitad de la 1ª parte, franja 14:15 UTC
-    - cron: '5 17 * * 6,0'    # mitad de la 1ª parte, franja 16:30 UTC
-    - cron: '35 19 * * 6,0'   # mitad de la 1ª parte, franja 19:00 UTC
+  # Sin cron: era un diagnóstico temporal y ya contestó lo suyo. Se
+  # queda lanzable a mano, pero deja de gastar llamadas, que ahora
+  # hacen falta para acumular descansos cada quince minutos.
 
 jobs:
   monitor:

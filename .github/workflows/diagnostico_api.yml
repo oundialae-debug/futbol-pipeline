@@ -1,23 +1,15 @@
 name: Diagnóstico de la API
 
-# A mano, y además en unas ventanas fijas de fin de semana para poder
-# pillar un partido EN JUEGO: es la única forma de contestar si la API
-# sirve eventos parciales en directo y si hay cuotas en vivo.
+# Ya contestó lo suyo: la API SÍ sirve eventos parciales en directo y SÍ
+# hay cuotas en vivo (oddsType=live). Por eso se queda solo a mano.
 #
-# Las horas apuntan al descanso aproximado de cada franja de LaLiga
-# (los partidos empiezan a 12:00, 14:15, 16:30 y 19:00 UTC), que es
-# justo el momento que interesa: al descanso ya se ha visto el 35% de
-# las tarjetas y queda por repartirse el 65%.
-#
-# TEMPORAL: cuando una pasada conteste las preguntas del directo, borrar
-# el bloque 'schedule' entero y dejar solo workflow_dispatch.
+# Se conserva porque sigue siendo la forma rápida de mirar qué devuelve un
+# endpoint cuando algo deja de cuadrar.
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '50 12 * * 6,0'   # descanso de la franja de las 12:00 UTC
-    - cron: '5 15 * * 6,0'    # descanso de la franja de las 14:15 UTC
-    - cron: '20 17 * * 6,0'   # descanso de la franja de las 16:30 UTC
-    - cron: '50 19 * * 6,0'   # descanso de la franja de las 19:00 UTC
+  # Sin cron: era un diagnóstico temporal y ya contestó lo suyo. Se
+  # queda lanzable a mano, pero deja de gastar llamadas, que ahora
+  # hacen falta para acumular descansos cada quince minutos.
 
 jobs:
   diagnostico:
