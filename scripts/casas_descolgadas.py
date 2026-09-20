@@ -176,11 +176,23 @@ def main():
                     if len(otras) < MIN_CASAS - 1:
                         continue
                     consenso = float(np.median(otras))
+                    cuota = por_casa[casa][lado]
+                    # LO QUE DECIDE. No basta con que la casa opine distinto:
+                    # su CUOTA REAL tiene que pagar más de lo que vale la
+                    # apuesta según el consenso. 1/cuota lleva el margen
+                    # dentro, así que compararla con el consenso ya descuenta
+                    # lo que la casa se queda. Si 1/cuota < consenso, esa
+                    # cuota está por encima de su valor: eso es una apuesta
+                    # con valor de verdad, no una diferencia de opinión.
+                    prob_cuota = 1 / cuota
                     filas.append({
                         "casa": casa, "familia": familia, "mercado": mercado,
                         "lado": lado, "match_id": int(p["match_id"]),
+                        "cuota": cuota,
+                        "prob_cuota": prob_cuota,
                         "prob_casa": probs[lado], "consenso": consenso,
                         "desviacion": probs[lado] - consenso,
+                        "valor": consenso / prob_cuota - 1,
                     })
 
     if not filas:
@@ -195,10 +207,12 @@ def main():
         cotizaciones=("desviacion", "size"),
         partidos=("match_id", "nunique"),
         desv_media=("desviacion", lambda x: x.abs().mean()),
-        sesgo=("desviacion", "mean"),
-        generosas=("desviacion", lambda x: (x > 0.02).mean()),
+        valor_medio=("valor", "mean"),
+        con_valor=("valor", lambda x: (x > 0).mean()),
+        valor_2pc=("valor", lambda x: (x > 0.02).mean()),
+        mejor=("valor", "max"),
     )
-    r = r[r["cotizaciones"] >= 30].sort_values("desv_media", ascending=False)
+    r = r[r["cotizaciones"] >= 30].sort_values("valor_2pc", ascending=False)
 
     lineas = [
         f"# Casas descolgadas del consenso -- "
@@ -209,22 +223,32 @@ def main():
         "el consenso es el instrumento de medida, y la cuenta solo hace falta "
         "donde se apuesta. Esta tabla dice **qué cuentas merece la pena "
         "abrir**: las que más se salen de la fila.\n",
-        "| Casa | Cotizaciones | Desviación media | Sesgo | % generosa (>2 pts) |",
-        "|---|---|---|---|---|",
+        "| Casa | Cotizaciones | Desviación | Valor medio | % con valor | "
+        "**% valor >2%** | Mejor |",
+        "|---|---|---|---|---|---|---|",
     ]
     for casa, f in r.head(25).iterrows():
         lineas.append(f"| {casa} | {int(f['cotizaciones'])} | "
-                      f"{f['desv_media']*100:.2f} pts | {f['sesgo']*100:+.2f} pts | "
-                      f"{f['generosas']*100:.1f}% |")
+                      f"{f['desv_media']*100:.2f} pts | "
+                      f"{f['valor_medio']*100:+.2f}% | "
+                      f"{f['con_valor']*100:.1f}% | "
+                      f"**{f['valor_2pc']*100:.1f}%** | "
+                      f"{f['mejor']*100:+.1f}% |")
 
     lineas += [
         "\n## Cómo leerla\n",
-        "- **Desviación media**: cuánto se aparta del resto. Alta = tiene "
-        "modelo propio; baja = copia al mercado.",
-        "- **Sesgo**: si se aparta siempre en la misma dirección. Un sesgo "
-        "grande no es oportunidad, es otro modelo.",
-        "- **% generosa**: con qué frecuencia ofrece más de lo que dice el "
-        "consenso. Es la columna que cuenta.\n",
+        "- **Desviación**: cuánto se aparta su OPINIÓN del resto, ya sin "
+        "margen. Mide si tiene modelo propio, no si paga bien.",
+        "- **Valor**: lo que de verdad importa. Compara la CUOTA REAL contra "
+        "el consenso, así que el margen que cobra la casa ya está "
+        "descontado. Un +3% significa que esa cuota paga un 3% más de lo que "
+        "vale la apuesta.",
+        "- **% valor >2%**: con qué frecuencia esa casa ofrece una apuesta "
+        "que bate al consenso por un margen que aguanta el ruido. Es la "
+        "columna por la que está ordenada la tabla.\n",
+        "> Ojo con la diferencia entre desviación y valor: una casa puede "
+        "opinar muy distinto y no pagar nada, si se descuelga hacia el lado "
+        "que le conviene o si cobra un margen que se come la diferencia.\n",
         "> Las casas que más se descuelgan suelen ser las que antes limitan o "
         "cierran las cuentas que les ganan. Una casa blanda y a la vez "
         "tolerante con los ganadores no existe: es blanda porque no vigila, y "
