@@ -1,44 +1,53 @@
-# Cierre del registro del descanso -- 2026-09-20 16:45 UTC
+# Cierre del registro del descanso -- 2026-09-20 23:20 UTC
 
-239 observaciones cerradas sobre 36 partidos terminados (21 empates apartados).
+344 observaciones cerradas sobre 47 partidos terminados (29 empates apartados).
 
 ## Quién acierta más
 
 | | Brier | Frente a la tasa base |
 |---|---|---|
-| Modelo | 0.1752 | +29.3% |
-| Mercado | 0.1697 | +31.5% |
-| Tasa base (55% Over) | 0.2479 | — |
+| Modelo | 0.1686 | +32.4% |
+| Mercado | 0.1607 | +35.6% |
+| Tasa base (48% Over) | 0.2496 | — |
 
-**El mercado puntúa mejor que el modelo** por 0.0055. Mientras esto siga así no hay nada que apostar: el modelo no sabe más que la casa.
+**El mercado puntúa mejor que el modelo** por 0.0079. Mientras esto siga así no hay nada que apostar: el modelo no sabe más que la casa.
 
 ## Si se hubiera apostado
 
-69 apuestas de 1 unidad al Over, solo donde el modelo veía valor positivo y no disparatado (hasta 20%). Repartidas en **23 partidos**, que es la muestra de verdad.
+86 apuestas de 1 unidad al Over, solo donde el modelo veía valor positivo y no disparatado (hasta 20%). Repartidas en **32 partidos**, que es la muestra de verdad.
 
-- Resultado: **-1.35 unidades** (-2.0% por apuesta)
-- Margen de error (1 sigma, agrupando por partido): ±16.7 puntos por apuesta
-- Aciertos: 45 de 69
-- El partido que más pesa se lleva el 519% del resultado
+- Resultado: **-10.25 unidades** (-11.9% por apuesta)
+- Margen de error (1 sigma, agrupando por partido): ±14.8 puntos por apuesta
+- Aciertos: 51 de 86
+- El partido que más pesa concentra el 14% de todo el movimiento
 
 > El margen de error se come el resultado entero, salga como salga. Es un punto de una serie, no una conclusión.
 
 | Partido | Apuestas | Resultado |
 |---|---|---|
 | AD Ceuta FC vs Valladolid | 7 | -7.00 u |
+| FC Schalke 04 vs SV Elversberg | 4 | -4.00 u |
 | Manchester City vs Sunderland | 3 | -3.00 u |
+| SC Paderborn 07 vs 1899 Hoffenheim | 3 | -3.00 u |
 | Nashville SC vs Chicago Fire | 4 | -2.82 u |
 | Minnesota United vs Los Angeles Galaxy | 2 | -2.00 u |
+| AC Milan vs Lecce | 2 | -2.00 u |
+| Almería vs Celta de Vigo II | 2 | -2.00 u |
 | Sevilla FC vs Barcelona | 2 | -2.00 u |
 | Auxerre vs Stade Brestois 29 | 3 | -1.82 u |
 | Frosinone vs Como | 4 | -0.69 u |
 | Bayer Leverkusen vs RB Leipzig | 4 | -0.23 u |
 | Willem II vs Fortuna Sittard | 4 | +0.13 u |
 | Fiorentina vs Napoli | 1 | +0.22 u |
+| Villarreal vs Levante | 1 | +0.28 u |
+| FC Porto vs Benfica | 1 | +0.32 u |
+| Las Palmas vs Burgos | 1 | +0.35 u |
 | Vasco DA Gama vs Coritiba | 1 | +0.36 u |
+| Fulham vs Manchester United | 1 | +0.44 u |
 | Le Mans vs Lorient | 2 | +0.49 u |
 | Getafe vs Malaga | 2 | +0.51 u |
 | New England Revolution vs Orlando City | 1 | +0.70 u |
+| Marseille vs Paris Saint Germain | 2 | +0.71 u |
 | Bournemouth vs Liverpool | 2 | +0.73 u |
 | Leeds vs Crystal Palace | 2 | +0.77 u |
 | Angers vs Estac Troyes | 2 | +0.81 u |
@@ -51,21 +60,23 @@
 
 ## Movimiento del precio
 
-Sobre **39 líneas** marcadas como valor, en **12 partidos**, comparando el precio del descanso con el de unos minutos después:
+Sobre **57 líneas** marcadas como valor, en **21 partidos**, comparando el precio del descanso con el de unos minutos después:
 
-- El mercado se movió hacia nosotros en el **18%** de las líneas
-- Deriva media: **-6.72 puntos** de probabilidad (±2.83, agrupando por partido)
+- El mercado se movió hacia nosotros en el **23%** de las líneas
+- Deriva media: **-5.47 puntos** de probabilidad (±2.17, agrupando por partido)
+- Grupo de control (174 líneas sin valor marcado): **-1.43 puntos**
+- **Diferencia: -4.04 puntos.** Es la cifra que cuenta: descuenta el decaimiento del Over por el paso del tiempo, que afecta a los dos grupos igual.
 
-> Con 12 partidos esto todavía no decide nada, pero converge mucho antes que el resultado: para el resultado hacen falta unos 420 partidos, y para esto del orden de 40-60.
+> Con 21 partidos esto todavía no decide nada, pero converge mucho antes que el resultado: para el resultado hacen falta unos 420 partidos, y para esto del orden de 40-60.
 
 ## Las faltas del primer tiempo
 
-Sobre **25 partidos** con faltas apuntadas:
+Sobre **36 partidos** con faltas apuntadas:
 
-- Faltas al descanso contra tarjetas de la 2ª parte: **-0.270**
-- Tarjetas al descanso contra tarjetas de la 2ª parte: **-0.243** (lo que usa el modelo hoy)
+- Faltas al descanso contra tarjetas de la 2ª parte: **-0.106**
+- Tarjetas al descanso contra tarjetas de la 2ª parte: **-0.056** (lo que usa el modelo hoy)
 
-> Con 25 partidos una correlación se mueve sola de un fin de semana a otro. Hacen falta del orden de 60 para que el coeficiente valga algo, y más para fiarse del signo si sale pequeño.
+> Con 36 partidos una correlación se mueve sola de un fin de semana a otro. Hacen falta del orden de 60 para que el coeficiente valga algo, y más para fiarse del signo si sale pequeño.
 
 ## Partido a partido
 
@@ -86,6 +97,7 @@ Sobre **25 partidos** con faltas apuntadas:
 | Portland Timbers vs Atlanta United FC | 3 | 11 | 4 | 1 |
 | Atletico-MG vs Chapecoense | 0 | — | 3 | 3 |
 | Vasco DA Gama vs Coritiba | 0 | 4 | 3 | 3 |
+| AC Milan vs Lecce | 0 | 13 | 1 | 1 |
 | Fiorentina vs Napoli | 1 | 8 | 3 | 2 |
 | Frosinone vs Como | 2 | 12 | 5 | 3 |
 | Venezia vs Lazio | 1 | — | 6 | 5 |
@@ -94,18 +106,28 @@ Sobre **25 partidos** con faltas apuntadas:
 | Auxerre vs Stade Brestois 29 | 0 | 13 | 2 | 2 |
 | Le Mans vs Lorient | 2 | — | 6 | 4 |
 | Lyon vs Rennes FC | 2 | — | 6 | 4 |
+| Nice vs Lille | 2 | 12 | 4 | 2 |
 | Toulouse vs LE Havre AC | 1 | — | 4 | 3 |
+| Marseille vs Paris Saint Germain | 2 | 6 | 5 | 3 |
 | Bournemouth vs Liverpool | 0 | 12 | 3 | 3 |
+| Fulham vs Manchester United | 1 | 5 | 3 | 2 |
 | Leeds vs Crystal Palace | 1 | 11 | 5 | 4 |
 | Manchester City vs Sunderland | 1 | 14 | 1 | 0 |
 | Anderlecht vs Zulte Waregem | 2 | — | 3 | 1 |
 | Lommel United vs KV Mechelen | 2 | — | 6 | 4 |
+| Almería vs Celta de Vigo II | 0 | 7 | 1 | 1 |
 | Cadiz vs Girona | 2 | — | 9 | 7 |
 | AD Ceuta FC vs Valladolid | 2 | 15 | 0 | -2 |
+| Las Palmas vs Burgos | 2 | 17 | 5 | 3 |
 | Sabadell vs Oviedo | 0 | 14 | 4 | 4 |
 | Atlético Madrid vs Real Madrid | 3 | 13 | 6 | 3 |
+| Deportivo La Coruña vs Real Betis | 1 | 11 | 2 | 1 |
 | Getafe vs Malaga | 3 | 17 | 6 | 3 |
 | Sevilla FC vs Barcelona | 0 | — | 1 | 1 |
+| Villarreal vs Levante | 2 | 12 | 3 | 1 |
 | Bayer Leverkusen vs RB Leipzig | 1 | 12 | 5 | 4 |
+| FC Schalke 04 vs SV Elversberg | 2 | 8 | 3 | 1 |
+| SC Paderborn 07 vs 1899 Hoffenheim | 1 | 9 | 1 | 0 |
+| FC Porto vs Benfica | 4 | 15 | 8 | 4 |
 
-*Sin terminar todavía: Nice vs Lille, FC Schalke 04 vs SV Elversberg, Fulham vs Manchester United*
+*Sin terminar todavía: Flamengo vs RB Bragantino*
