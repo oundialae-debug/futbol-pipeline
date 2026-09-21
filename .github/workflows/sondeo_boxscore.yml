@@ -1,0 +1,21 @@
+name: Sondeo box-score
+
+# Comprobar el esquema EXACTO de /box-score contra un partido real antes de
+# construir nada encima. Regla de CLAUDE.md.
+on:
+  workflow_dispatch:
+
+jobs:
+  sondeo:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+      - run: pip install requests
+      - name: Sondear
+        run: python scripts/sondeo_boxscore.py
+        env:
+          HIGHLIGHTLY_API_KEY: ${{ secrets.HIGHLIGHTLY_API_KEY }}
