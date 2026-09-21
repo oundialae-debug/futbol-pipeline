@@ -65,8 +65,18 @@ def a_largo(hist):
             if m == "goles":
                 continue
             propia, ajena = f"{lado}_{m}", f"{rival}_{m}"
-            d[m] = pd.to_numeric(hist.get(propia), errors="coerce")
-            d[f"contra_{m}"] = pd.to_numeric(hist.get(ajena), errors="coerce")
+            # Si la fuente de esta variable AUN no se ha fusionado en hist
+            # (p.ej. el box-score todavia no ha llegado), la columna ni
+            # siquiera existe. Rellenarla de NaN aqui contaminaria TODAS las
+            # filas cuando algo mas adelante exige notna() en todos los
+            # rasgos -- 2.539 partidos utilizables se convirtieron en CERO la
+            # primera vez que paso esto. Se omite la variable entera en vez
+            # de fingir que existe; en cuanto la columna aparezca, entra sola
+            # sin tocar el resto del pipeline.
+            if propia not in hist.columns or ajena not in hist.columns:
+                continue
+            d[m] = pd.to_numeric(hist[propia], errors="coerce")
+            d[f"contra_{m}"] = pd.to_numeric(hist[ajena], errors="coerce")
         filas.append(d)
     return pd.concat(filas, ignore_index=True).sort_values(["equipo", "fecha"])
 

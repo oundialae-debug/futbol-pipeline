@@ -1,0 +1,22 @@
+{
+  "resultado": {
+    "evaluable": false,
+    "motivo": "sin ambas clases en entrenamiento"
+  },
+  "mas_2_5": {
+    "evaluable": false,
+    "motivo": "sin ambas clases en entrenamiento"
+  },
+  "ambos_marcan": {
+    "evaluable": false,
+    "motivo": "sin ambas clases en entrenamiento"
+  },
+  "mas_9_5_corners": {
+    "evaluable": false,
+    "motivo": "sin ambas clases en entrenamiento"
+  },
+  "mas_4_5_tarjetas": {
+    "evaluable": false,
+    "motivo": "sin ambas clases en entrenamiento"
+  }
+}
