@@ -76,24 +76,15 @@ def main():
     m = M.entrenar(ent[cols].values, ent["resultado"].values.astype(int), 3)
 
     # --- probabilidad del mercado, por partido ---
-    d = pd.read_csv(RUTA_CUOTAS)
-    ftr = d[d.familia == "Full Time Result"]
-    filas = []
-    for (mid, casa), g in ftr.groupby(["match_id", "casa"]):
-        cuotas = dict(zip(g.lado, g.cuota))
-        p = probabilidad_mercado(cuotas)
-        if p is not None:
-            filas.append({"match_id": mid, "casa": casa,
-                          **{f"p_{l}": p[i] for i, l in enumerate(LADOS)}})
-    if not filas:
+    # Las DOS fuentes: backtest_valor.csv (se sobrescribe) y
+    # cuotas_cosechadas.csv (acumula). Si solo se leyera la primera, la fuente
+    # que crece se quedaria fuera sin dar ningun error.
+    import aporta_algo as A
+    mercado = A.probabilidades_de_mercado()
+    if mercado is None or mercado.empty:
         print("Sin cuotas de 1X2 utilizables.")
         return
-    mercado = (pd.DataFrame(filas)
-               .groupby("match_id")[[f"p_{l}" for l in LADOS]].median())
-    # renormalizar: la mediana de tres probabilidades no suma 1 exactamente
-    mercado = mercado.div(mercado.sum(axis=1), axis=0)
-    print(f"Mercado: {len(mercado)} partidos con 1X2 de "
-          f"{ftr.casa.nunique()} casas.")
+    print(f"Mercado: {len(mercado)} partidos con 1X2.")
 
     # --- cruce: partidos con cuotas Y posteriores al corte ---
     val = val[val.match_id.isin(mercado.index)]
