@@ -45,7 +45,7 @@ HEADERS = {"x-rapidapi-key": API_KEY}   # nunca se imprime
 # y en Brasil, Premier League en Inglaterra y en Jamaica)
 LIGAS = {
     "Premier League": 33973, "La Liga": 119924, "Serie A": 115669,
-    "Bundesliga": 67162, "Ligue 1": 52695, "Segunda": 121085,
+    "Bundesliga": 67162, "Ligue 1": 52695, "Segunda": 120775,
 }
 
 MAX = 900   # recorte al imprimir una muestra

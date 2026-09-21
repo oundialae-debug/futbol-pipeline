@@ -49,7 +49,7 @@ HEADERS = {"x-rapidapi-key": API_KEY}   # nunca se imprime
 # Por ID, nunca por nombre: hay Serie A en Italia y en Brasil
 LIGAS = {
     33973: "Premier League", 119924: "La Liga", 115669: "Serie A",
-    67162: "Bundesliga", 52695: "Ligue 1", 121085: "Segunda",
+    67162: "Bundesliga", 52695: "Ligue 1", 120775: "Segunda",
 }
 
 RUTA = "data/historico_partidos.csv"

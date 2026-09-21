@@ -45,7 +45,7 @@ HEADERS = {"x-rapidapi-key": API_KEY}   # nunca se imprime
 
 LIGAS = {
     "Premier League": 33973, "La Liga": 119924, "Serie A": 115669,
-    "Bundesliga": 67162, "Ligue 1": 52695, "Segunda": 121085,
+    "Bundesliga": 67162, "Ligue 1": 52695, "Segunda": 120775,
 }
 NO_EMPEZADOS = ("not started", "scheduled", "to be", "tbd")
 

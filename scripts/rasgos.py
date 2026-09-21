@@ -95,6 +95,50 @@ def medias_previas(largo, ventana=VENTANA):
     return largo.drop(columns=["_pts"])
 
 
+def calcular_elo(hist, k=20.0, ventaja_local=60.0):
+    """
+    Fuerza de equipo estilo Elo, cronológica, usando solo los goles que ya
+    tenemos -- sin dato nuevo, sin API adicional.
+
+    Es de las variables más predictivas que existen en fútbol (lo demuestra
+    el propio sistema mundial de Elo de selecciones) y aquí sale gratis: solo
+    hace falta el marcador con fecha, que ya está en el histórico.
+
+    LA MISMA REGLA ANTI-FUGA QUE TODO LO DEMÁS: el Elo que se le asigna al
+    partido X es el que tenían los equipos justo ANTES de jugarlo. Se lee
+    `ratings[...]` y se guarda ANTES de actualizarlo con el marcador de X, así
+    que cambiar el resultado de X no puede mover el Elo que ve el propio X
+    -- solo el de partidos posteriores. `comprobar_sin_fuga` lo verifica igual
+    que al resto.
+
+    K y la ventaja de local son los valores estándar de los sistemas Elo de
+    fútbol de club (K=20; la ventaja de jugar en casa ronda 60-100 puntos).
+    El multiplicador por diferencia de goles (`g`) es el de World Football
+    Elo: una goleada mueve más el rating que un 1-0 ajustado.
+    """
+    orden = hist.sort_values("fecha")
+    ratings = {}
+    antes_l, antes_v = [], []
+    for _, fila in orden.iterrows():
+        l, v = fila["local_id"], fila["visitante_id"]
+        rl, rv = ratings.get(l, 1500.0), ratings.get(v, 1500.0)
+        antes_l.append(rl)
+        antes_v.append(rv)
+        gl, gv = fila["goles_l"], fila["goles_v"]
+        if pd.isna(gl) or pd.isna(gv):
+            continue
+        dif = abs(gl - gv)
+        g = 1.0 if dif <= 1 else (1.5 if dif == 2 else (11 + dif) / 8.0)
+        esperado_local = 1.0 / (1.0 + 10 ** (-(rl + ventaja_local - rv) / 400.0))
+        real_local = 1.0 if gl > gv else (0.5 if gl == gv else 0.0)
+        cambio = k * g * (real_local - esperado_local)
+        ratings[l] = rl + cambio
+        ratings[v] = rv - cambio
+    return pd.DataFrame({"match_id": orden["match_id"].values,
+                         "elo_local_previo": antes_l,
+                         "elo_visitante_previo": antes_v})
+
+
 def construir(hist):
     """Una fila por partido, con los rasgos de los dos equipos enfrentados."""
     largo = medias_previas(a_largo(hist))
@@ -107,6 +151,10 @@ def construir(hist):
         base[f"loc_{c}"] = loc[c]
         base[f"vis_{c}"] = vis[c]
         base[f"dif_{c}"] = loc[c] - vis[c]      # la diferencia suele mandar
+    elo = calcular_elo(hist).set_index("match_id")
+    base["loc_elo"] = elo["elo_local_previo"]
+    base["vis_elo"] = elo["elo_visitante_previo"]
+    base["dif_elo"] = base["loc_elo"] - base["vis_elo"]
     base["liga_id"] = loc["liga_id"]
     base["fecha"] = loc["fecha"]
     base["goles_l"] = loc["goles"]
