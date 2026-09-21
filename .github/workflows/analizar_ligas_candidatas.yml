@@ -1,0 +1,21 @@
+name: Analizar ligas candidatas
+
+# Rumania Liga II y Mexico Liga MX: ¿el precio esta mal o solo tiene menos
+# ojos? Misma pregunta que mato la hipotesis de corners.
+on:
+  workflow_dispatch:
+
+jobs:
+  analizar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+      - run: pip install requests pandas numpy
+      - name: Analizar
+        run: python scripts/analizar_ligas_candidatas.py
+        env:
+          HIGHLIGHTLY_API_KEY: ${{ secrets.HIGHLIGHTLY_API_KEY }}
