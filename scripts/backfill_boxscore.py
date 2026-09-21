@@ -62,10 +62,19 @@ VARIABLES = ["faltas_recibidas", "segundas_amarillas", "duelos_totales",
 COLUMNAS = ["match_id"] + [f"{lado}_{v}" for v in VARIABLES for lado in ("l", "v")]
 
 llamadas = [0]
+fallos_seguidos = [0]
+CUOTA_AGOTADA = [False]
+# Si esto son N llamadas seguidas que agotan sus 3 reintentos, no es un bache
+# de red: es la cuota diaria agotada. Sin esto, la pasada del 21/09 se quedo
+# reintentando 3 veces con 5s de espera CADA UNO de ~2.500 partidos -- mas de
+# diez horas para no traer nada, y encima sin guardar lo poco que si
+# consiguio porque el workflow tampoco tenia if: always() en el paso de
+# guardar. Los dos fallos juntos perdieron la pasada entera.
+TOPE_FALLOS_SEGUIDOS = 8
 
 
 def pedir(path):
-    if llamadas[0] >= TOPE_LLAMADAS:
+    if llamadas[0] >= TOPE_LLAMADAS or CUOTA_AGOTADA[0]:
         return None
     llamadas[0] += 1
     for intento in range(3):
@@ -76,11 +85,20 @@ def pedir(path):
         if r.status_code == 429:
             time.sleep(5); continue
         if r.status_code != 200:
+            fallos_seguidos[0] += 1
+            if fallos_seguidos[0] >= TOPE_FALLOS_SEGUIDOS:
+                CUOTA_AGOTADA[0] = True
             return None
         try:
-            return r.json()
+            j = r.json()
+            fallos_seguidos[0] = 0
+            return j
         except Exception:
             return None
+    # agoto los 3 reintentos: probablemente cuota agotada, no red intermitente
+    fallos_seguidos[0] += 1
+    if fallos_seguidos[0] >= TOPE_FALLOS_SEGUIDOS:
+        CUOTA_AGOTADA[0] = True
     return None
 
 
@@ -147,6 +165,12 @@ def main():
             if mid in vistos:
                 continue
             j = pedir(f"/box-score/{fila['match_id']}")
+            if CUOTA_AGOTADA[0]:
+                print(f"\n[!] {fallos_seguidos[0]} llamadas seguidas han "
+                      f"fallado del todo -- probablemente la cuota diaria "
+                      f"esta agotada, no un bache de red. Paro aqui en vez "
+                      f"de reintentar el resto uno a uno.")
+                break
             equipos = desempaquetar(j) if j else []
             if len(equipos) != 2:
                 sin_datos += 1

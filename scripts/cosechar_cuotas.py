@@ -63,10 +63,18 @@ DIAS_ADELANTE = int(os.environ.get("DIAS_ADELANTE", "7"))
 TOPE_LLAMADAS = int(os.environ.get("TOPE_LLAMADAS", "1200"))
 
 llamadas = [0]
+fallos_seguidos = [0]
+CUOTA_AGOTADA = [False]
+# Si N llamadas seguidas agotan sus reintentos, no es un bache de
+# red: es la cuota diaria agotada. Sin esto, una pasada entera se
+# queda reintentando 3 veces con 5s cada partido que queda por
+# pedir -- horas para no traer nada. Visto de verdad el 21/09 en
+# backfill_boxscore.py.
+TOPE_FALLOS_SEGUIDOS = 8
 
 
 def pedir(path, params=None):
-    if llamadas[0] >= TOPE_LLAMADAS:
+    if llamadas[0] >= TOPE_LLAMADAS or CUOTA_AGOTADA[0]:
         return None
     llamadas[0] += 1
     for intento in range(3):
@@ -78,11 +86,19 @@ def pedir(path, params=None):
         if r.status_code == 429:
             time.sleep(5); continue
         if r.status_code != 200:
+            fallos_seguidos[0] += 1
+            if fallos_seguidos[0] >= TOPE_FALLOS_SEGUIDOS:
+                CUOTA_AGOTADA[0] = True
             return None
         try:
-            return r.json()
+            j = r.json()
+            fallos_seguidos[0] = 0
+            return j
         except Exception:
             return None
+    fallos_seguidos[0] += 1
+    if fallos_seguidos[0] >= TOPE_FALLOS_SEGUIDOS:
+        CUOTA_AGOTADA[0] = True
     return None
 
 

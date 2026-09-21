@@ -30,7 +30,13 @@ jobs:
           HIGHLIGHTLY_API_KEY: ${{ secrets.HIGHLIGHTLY_API_KEY }}
           TOPE_LLAMADAS: ${{ inputs.tope_llamadas || '3000' }}
 
+      # Corre SIEMPRE, incluso si "Traer box-score" se cancela o falla a
+      # medias por cuota agotada. Sin esto, una pasada de 40+ minutos con
+      # datos ya escritos en disco se pierde entera al cancelar: paso el
+      # mismo fallo que ya se corrigio en backfill_historico.yml y se me
+      # olvido aplicar aqui al crear este workflow.
       - name: Guardar
+        if: always()
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
