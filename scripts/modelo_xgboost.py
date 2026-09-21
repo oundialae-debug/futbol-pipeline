@@ -81,12 +81,19 @@ def brier(probs, reales, n_clases):
 
 
 def entrenar(X, y, n_clases, semilla=0):
+    # min_child_weight=20, reg_lambda=5, max_depth=2: comprobado contra los
+    # valores anteriores (8, 2.0, 3) sobre 5 semillas y datos reales (no
+    # sinteticos), el 21/09. Con ~1300 filas de entrenamiento y 70+ rasgos,
+    # el modelo anterior sobreajustaba -- pasar a mas regularizacion mejoro
+    # el 1X2 de -1.81/-2.14 sigmas de media a -1.66/-1.80, segun semilla.
+    # Sigue perdiendo contra el mercado; regularizar no crea ventaja donde no
+    # la hay, solo deja de inventarsela con ruido de entrenamiento.
     try:
         from xgboost import XGBClassifier
         m = XGBClassifier(
-            n_estimators=400, max_depth=3, learning_rate=0.03,
+            n_estimators=400, max_depth=2, learning_rate=0.03,
             subsample=0.8, colsample_bytree=0.8,
-            min_child_weight=8, reg_lambda=2.0,
+            min_child_weight=20, reg_lambda=5.0,
             objective="multi:softprob" if n_clases > 2 else "binary:logistic",
             num_class=n_clases if n_clases > 2 else None,
             random_state=semilla, n_jobs=2, eval_metric="mlogloss",
@@ -96,8 +103,8 @@ def entrenar(X, y, n_clases, semilla=0):
         from sklearn.ensemble import HistGradientBoostingClassifier
         print("    [xgboost no instalado, uso HistGradientBoosting]")
         m = HistGradientBoostingClassifier(
-            max_depth=3, learning_rate=0.03, max_iter=400,
-            min_samples_leaf=20, l2_regularization=2.0, random_state=semilla)
+            max_depth=2, learning_rate=0.03, max_iter=400,
+            min_samples_leaf=20, l2_regularization=5.0, random_state=semilla)
     m.fit(X, y)
     return m
 

@@ -148,7 +148,20 @@ def mejor_peso(pm, pn, y, n_clases, rejilla=np.linspace(0, 1, 21)):
     return float(rejilla[i]), float(costes[i])
 
 
-def evaluar_uno(nombre, cfg, base, cols, m, fecha_corte, cuotas):
+SEMILLAS = (0, 1, 2, 3, 4)
+
+
+def evaluar_uno(nombre, cfg, base, cols, ent, fecha_corte, cuotas):
+    """
+    `ent` en vez de un modelo ya entrenado: un solo entrenamiento tiene ruido
+    de semilla suficiente para cambiar la conclusion. Se comprobo el 21/09
+    sobre 1X2 real: con la MISMA regularizacion, cinco semillas dieron entre
+    -1.30 y -1.93 sigmas. Reportar la de una sola semilla habria sido
+    ensenar una tirada de dado como si fuera el resultado -- el mismo error
+    que ya se corrigio en gestion_banca.py y en simular_plan.py esta misma
+    noche. Aqui se entrena varias veces y se promedia el Brier del modelo
+    ANTES de comparar contra el mercado, no se promedian sigmas sueltas.
+    """
     pmer_todos = mercado_por_partido(cuotas, cfg)
     if pmer_todos is None:
         return {"evaluable": False, "motivo": "sin cuotas para este mercado"}
@@ -160,8 +173,13 @@ def evaluar_uno(nombre, cfg, base, cols, m, fecha_corte, cuotas):
         return {"evaluable": False, "motivo": f"solo {len(val)} partidos evaluables"}
 
     y = val[nombre].values.astype(int)
-    pn_bruto = M.probabilidades(m, val[cols].values, cfg["n_clases"])
-    pn = pn_bruto if cfg["n_clases"] == 3 else pn_bruto[:, 1]
+    y_ent = ent[nombre].values.astype(int)
+    preds = []
+    for s in SEMILLAS:
+        modelo = M.entrenar(ent[cols].values, y_ent, cfg["n_clases"], semilla=s)
+        p = M.probabilidades(modelo, val[cols].values, cfg["n_clases"])
+        preds.append(p if cfg["n_clases"] == 3 else p[:, 1])
+    pn = np.mean(preds, axis=0)
 
     if cfg["n_clases"] == 3:
         pm = pmer_todos.loc[val.match_id][[f"p_{l}" for l in cfg["lados"]]].values
@@ -217,8 +235,7 @@ def main():
         if len(np.unique(y_ent)) < cfg["n_clases"]:
             resultados[nombre] = {"evaluable": False, "motivo": "sin ambas clases en entrenamiento"}
             continue
-        m = M.entrenar(ent[cols].values, y_ent, cfg["n_clases"])
-        r = evaluar_uno(nombre, cfg, base, cols, m, fecha_corte, cuotas)
+        r = evaluar_uno(nombre, cfg, base, cols, ent, fecha_corte, cuotas)
         resultados[nombre] = r
 
         if not r["evaluable"]:
