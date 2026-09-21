@@ -41,6 +41,19 @@ CANDIDATOS = [
     ("NO", "Noruega"), ("DK", "Dinamarca"), ("CZ", "Chequia"),
     ("RO", "Rumania"), ("MX", "Mexico"), ("AR", "Argentina"),
     ("JP", "Japon"), ("KR", "Corea del Sur"),
+    # segunda tanda: paises que nunca se habian mirado
+    ("HU", "Hungria"), ("BG", "Bulgaria"), ("HR", "Croacia"),
+    ("SI", "Eslovenia"), ("SK", "Eslovaquia"), ("CH", "Suiza"),
+    ("AT", "Austria"), ("SE", "Suecia"), ("FI", "Finlandia"),
+    ("IE", "Irlanda"), ("SCO", "Escocia"), ("WAL", "Gales"),
+    ("CL", "Chile"), ("CO", "Colombia"), ("PE", "Peru"),
+    ("UY", "Uruguay"), ("EC", "Ecuador"), ("PY", "Paraguay"),
+    ("BO", "Bolivia"), ("VE", "Venezuela"),
+    ("US", "Estados Unidos"), ("CA", "Canada"),
+    ("CN", "China"), ("AU", "Australia"), ("SA", "Arabia Saudi"),
+    ("EG", "Egipto"), ("MA", "Marruecos"), ("ZA", "Sudafrica"),
+    ("IN", "India"), ("ID", "Indonesia"), ("TH", "Tailandia"),
+    ("VN", "Vietnam"),
 ]
 
 llamadas = [0]
@@ -82,13 +95,13 @@ def main():
             print(f"  {pais:16s}  sin ligas devueltas")
             continue
         # coger 1-2 ligas por pais, evitando la de mayor nombre "obvio"
-        for liga in ligas[:2]:
+        for liga in ligas[:3]:
             lid, lname = liga.get("id"), liga.get("name")
             if not lid:
                 continue
             # buscar un partido proximo en esa liga (hasta 10 dias)
             partido = None
-            for dd in range(0, 10):
+            for dd in range(0, 5):
                 fecha = (hoy + timedelta(days=dd)).isoformat()
                 j2, _ = pedir("/matches", {"leagueId": lid, "date": fecha,
                                           "limit": 5})
