@@ -51,6 +51,25 @@ las comprobaciones concretas que los habrían pillado.
 
 ## Conclusiones
 
+- **La vigilancia de una liga no se mide en un partido futuro.** El censo de
+  ligas blandas marco Rumania Liga II (3 casas) y Mexico Liga MX (6 casas)
+  como candidatas mirando UN partido a varios dias vista. Las cuotas previas
+  se rellenan progresivamente durante dias (documentado en la API); un
+  partido lejano puede tener 3 casas puestas y llegar a 40 el dia del
+  pitido. Analizando partidos YA JUGADOS de esas mismas ligas: 41,6 y 30,4
+  casas de media. Casi diez veces mas. La vigilancia se mide sobre partidos
+  cerrados, nunca sobre una foto de un partido que aun no ha terminado de
+  cotizar.
+- **Cuando un numero sale demasiado bueno, hay que perseguir QUE partido lo
+  empuja, no solo cuantos sigmas da.** Mexico Liga MX salio +20,41% a ciegas,
+  +1,33 sigmas sobre 31 partidos. Un solo partido (una sorpresa a cuota
+  12.50) aportaba 6,76 de los 24,0 puntos de la media. Quitandolo, la
+  significacion cae a 0,82 sigmas. No es un dato falso -- el marcador y la
+  cuota eran correctos -- es una muestra de 31 partidos que un solo resultado
+  puede mover casi siete puntos enteros. Ni se declaro hallazgo ni se
+  descarto: se dejo escrito que hace falta mas muestra antes de que el
+  numero signifique algo.
+
 - **Si al crecer la muestra el número se mueve hacia cero, era falso.** Un
   efecto real se queda donde está y solo estrecha su intervalo. Con 89
   partidos, mezclar mercado y modelo daba peso óptimo 0,43 y una mejora del
