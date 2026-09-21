@@ -53,11 +53,24 @@ OBJETIVOS = {
 }
 
 
+RUTA_BOXSCORE = "data/historico_boxscore.csv"
+
+
 def cargar():
     if not os.path.exists(RUTA_HIST):
         print(f"No existe {RUTA_HIST}. Lanza antes el backfill del histórico.")
         return None
-    return pd.read_csv(RUTA_HIST)
+    hist = pd.read_csv(RUTA_HIST)
+    if os.path.exists(RUTA_BOXSCORE):
+        box = pd.read_csv(RUTA_BOXSCORE)
+        antes = len(hist.columns)
+        hist = hist.merge(box, on="match_id", how="left")
+        print(f"  + box-score: {len(box)} partidos, "
+              f"{len(hist.columns) - antes} columnas nuevas")
+    else:
+        print("  (sin data/historico_boxscore.csv -- corre "
+              "backfill_boxscore.py para las 7 variables nuevas)")
+    return hist
 
 
 def brier(probs, reales, n_clases):

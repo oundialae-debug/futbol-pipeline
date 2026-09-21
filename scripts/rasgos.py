@@ -32,7 +32,12 @@ MINIMO_PARTIDOS = 4    # por debajo de esto, el equipo no tiene historia fiable
 # Lo que se mide de cada equipo. Nombres de columna del histórico.
 MEDIDAS = ["goles", "corners", "fouls", "yellow_cards", "expected_goals",
            "possession", "shots_on_target", "shots_off_target", "crosses",
-           "total_passes"]
+           "total_passes",
+           # De /box-score (21/09), ninguna duplica /statistics: ver
+           # backfill_boxscore.py para el porqué de cada una.
+           "faltas_recibidas", "segundas_amarillas", "duelos_totales",
+           "duelos_ganados_pct", "falta_max_jugador",
+           "jugadores_2mas_faltas", "xg_evitado_portero"]
 
 
 def a_largo(hist):
