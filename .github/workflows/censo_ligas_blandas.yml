@@ -1,0 +1,21 @@
+name: Censo de ligas blandas
+
+# Nunca probamos el eje LIGA, solo el eje mercado dentro de las 6 mas
+# vigiladas. Esto mira si hay ligas de verdad descuidadas.
+on:
+  workflow_dispatch:
+
+jobs:
+  censo:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+      - run: pip install requests
+      - name: Censar
+        run: python scripts/censo_ligas_blandas.py
+        env:
+          HIGHLIGHTLY_API_KEY: ${{ secrets.HIGHLIGHTLY_API_KEY }}
