@@ -46,7 +46,13 @@ BASE_URL = "https://soccer.highlightly.net"
 HEADERS = {"x-rapidapi-key": API_KEY}   # nunca se imprime
 
 LIGAS = {33973: "Premier League", 119924: "La Liga", 115669: "Serie A",
-         67162: "Bundesliga", 52695: "Ligue 1", 121085: "Segunda"}
+         67162: "Bundesliga", 52695: "Ligue 1", 121085: "Segunda",
+         # Añadida el 21/09: unica senal del dia que no murio al auditarla.
+         # +20,41% a ciegas en 31 partidos, pero un solo partido aporta 6,76
+         # de esos puntos y sin el la significacion cae a 0,82 sigmas. No es
+         # hallazgo todavia -- se acumula hasta tener muestra que decida.
+         # Ver ligas_candidatas.md.
+         223746: "Liga MX"}
 
 RUTA = "data/cuotas_cosechadas.csv"
 COLUMNAS = ["match_id", "fecha", "liga_id", "casa", "mercado", "lado",
