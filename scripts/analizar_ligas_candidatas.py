@@ -188,6 +188,14 @@ def analizar(liga_id, nombre, pais):
         print(f"\n  [!] Con {npartidos} partidos este numero puede moverse "
               f"mucho al anadir mas. NO es una conclusion todavia.")
 
+    # Volcado crudo para poder auditar el numero antes de creerselo -- un
+    # resultado demasiado bueno es un sintoma, no un hallazgo.
+    import os as _os
+    _os.makedirs("data", exist_ok=True)
+    ruta = f"data/detalle_{pais.lower().replace(' ','_')}_{nombre.lower().replace(' ','_')}.csv"
+    d.to_csv(ruta, index=False)
+    print(f"  Detalle crudo volcado en {ruta} para auditar.")
+
 
 def main():
     for codigo, pais, nombre in CANDIDATAS:
