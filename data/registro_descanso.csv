@@ -353,3 +353,6 @@ match_id,partido,liga,minuto,estado,tarjetas_ht,linea,prob_modelo,prob_push,prob
 1270018717,Flamengo vs RB Bragantino,Serie A,45,Half time,2,6.0,0.1334,0.1259,0.2841,1,3.25,Vbet Sport,-0.4404,False,2026-09-20T22:37:57+00:00,,12.0,2.0,3.25,0.2841,2026-09-20T23:08:31+00:00,(otras)
 1270018717,Flamengo vs RB Bragantino,Serie A,45,Half time,2,6.5,0.1334,0.0,0.2414,2,4.0,Marathonbet,-0.4662,False,2026-09-20T22:37:57+00:00,,12.0,2.0,4.0,0.2414,2026-09-20T23:08:31+00:00,(otras)
 1270018717,Flamengo vs RB Bragantino,Serie A,45,Half time,2,7.5,0.0626,0.0,0.1346,1,6.75,Marathonbet,-0.5771,False,2026-09-20T22:37:57+00:00,,12.0,2.0,6.75,0.1346,2026-09-20T23:08:31+00:00,(otras)
+1268412029,Inter Miami vs San Diego,Major League Soccer,45,Half time,1,3.5,0.4668,0.0,0.5741,1,1.61,Vbet Sport,-0.2485,False,2026-09-21T00:24:31+00:00,,13.0,2.0,,,,(otras)
+1268412029,Inter Miami vs San Diego,Major League Soccer,45,Half time,1,4.0,0.2726,0.1941,0.4811,1,1.92,Vbet Sport,-0.2824,False,2026-09-21T00:24:31+00:00,,13.0,2.0,,,,(otras)
+1268412029,Inter Miami vs San Diego,Major League Soccer,45,Half time,1,4.5,0.2726,0.0,0.3943,1,2.35,Vbet Sport,-0.3593,False,2026-09-21T00:24:31+00:00,,13.0,2.0,,,,(otras)
