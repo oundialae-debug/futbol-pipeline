@@ -6,9 +6,11 @@
 
 | Objetivo | Brier modelo | Brier base liga | Brier barajado | mejora sobre base |
 |---|---|---|---|---|
-| 1X2 (local / empate / visitante) | 0.6301 | 0.6485 | 0.6863 | +2.84% |
-| Más de 2.5 goles | 0.4935 | 0.4931 | 0.5151 | -0.07% |
-| Ambos marcan | 0.4925 | 0.4916 | 0.5068 | -0.17% |
+| 1X2 (local / empate / visitante) | 0.6271 | 0.6485 | 0.6835 | +3.30% |
+| Más de 2.5 goles | 0.4993 | 0.4931 | 0.5152 | -1.25% |
+| Ambos marcan | 0.4938 | 0.4916 | 0.5130 | -0.43% |
+| Más de 9.5 córners | 0.5207 | 0.5015 | 0.5310 | -3.83% |
+| Más de 4.5 tarjetas | 0.4319 | 0.4306 | 0.4558 | -0.30% |
 
 ## Cómo leer esto
 

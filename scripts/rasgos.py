@@ -167,6 +167,11 @@ def construir(hist):
         [0, 1], default=2)          # 0 local, 1 empate, 2 visitante
     base["mas_2_5"] = ((base.goles_l + base.goles_v) > 2.5).astype(int)
     base["ambos_marcan"] = ((base.goles_l > 0) & (base.goles_v > 0)).astype(int)
+    # Líneas reales del mercado (censo_margenes.md): 9.5 córners, 4.5
+    # tarjetas son las que más casas cotizan. Partidos sin ese dato (córners
+    # o tarjetas nulos) se descartan solos vía notna() en columnas_rasgo.
+    base["mas_9_5_corners"] = (base.corners_total > 9.5).astype(int)
+    base["mas_4_5_tarjetas"] = (base.tarjetas_total > 4.5).astype(int)
     return base.reset_index()
 
 

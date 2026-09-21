@@ -48,6 +48,8 @@ OBJETIVOS = {
     "resultado": ("1X2 (local / empate / visitante)", 3),
     "mas_2_5": ("Más de 2.5 goles", 2),
     "ambos_marcan": ("Ambos marcan", 2),
+    "mas_9_5_corners": ("Más de 9.5 córners", 2),
+    "mas_4_5_tarjetas": ("Más de 4.5 tarjetas", 2),
 }
 
 
