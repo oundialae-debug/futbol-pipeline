@@ -77,6 +77,10 @@ las comprobaciones concretas que los habrían pillado.
   0,10, mejora 0,01%, y el cero aparece en el 35% de los remuestreos en vez
   del 9%. Lo que salvó de apostar sobre eso fue haber dado el intervalo del
   bootstrap junto al punto central, y haberlo llamado pista y no hallazgo.
+  **Confirmado el 21/09 con 212 partidos: peso óptimo 0,00, Brier de la
+  mezcla igual al del mercado solo, cero en el 76% de los remuestreos. La
+  pista murió del todo. Cerrado: no reabrir "la mezcla" salvo con una
+  fuente de datos nueva, no con más partidos de la misma.**
 
 - **Antes de montar un modelo para batir un precio, mide si ese precio está
   mal.** Propuse los córners porque "en un mercado no vigilado el precio es

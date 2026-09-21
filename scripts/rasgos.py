@@ -28,6 +28,14 @@ import pandas as pd
 
 VENTANA = 8            # partidos hacia atrás por equipo
 MINIMO_PARTIDOS = 4    # por debajo de esto, el equipo no tiene historia fiable
+# Backfill resumible: la columna puede EXISTIR (el merge ya la trajo) con
+# casi todo NaN mientras el backfill avanza. El notna() de mas adelante
+# exige TODAS las columnas sin excepcion, asi que una columna casi vacia
+# tira TODAS las filas a cero -- igual que si no existiera, solo que sin
+# el "if not in hist.columns" que ya la atajaba. 21/09: 1 fila de
+# historico_boxscore.csv fusionada sobre 2540 partidos convirtio "0
+# partidos evaluables" un pipeline que un dia antes daba 296.
+COBERTURA_MINIMA = 0.3
 
 # Lo que se mide de cada equipo. Nombres de columna del histórico.
 MEDIDAS = ["goles", "corners", "fouls", "yellow_cards", "expected_goals",
@@ -75,8 +83,13 @@ def a_largo(hist):
             # sin tocar el resto del pipeline.
             if propia not in hist.columns or ajena not in hist.columns:
                 continue
-            d[m] = pd.to_numeric(hist[propia], errors="coerce")
-            d[f"contra_{m}"] = pd.to_numeric(hist[ajena], errors="coerce")
+            propia_n = pd.to_numeric(hist[propia], errors="coerce")
+            ajena_n = pd.to_numeric(hist[ajena], errors="coerce")
+            cobertura = min(propia_n.notna().mean(), ajena_n.notna().mean())
+            if cobertura < COBERTURA_MINIMA:
+                continue
+            d[m] = propia_n
+            d[f"contra_{m}"] = ajena_n
         filas.append(d)
     return pd.concat(filas, ignore_index=True).sort_values(["equipo", "fecha"])
 
