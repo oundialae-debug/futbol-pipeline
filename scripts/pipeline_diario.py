@@ -499,6 +499,16 @@ def generar_informe(proximos_partidos, params):
         f.write("\n".join(lineas))
     print(f"Informe generado: {RUTA_INFORME}")
 
+    if not registro_predicciones:
+        # pd.DataFrame([]) no tiene columnas (RangeIndex vacío): guardar_registro
+        # hace nuevos["match_id"] sin comprobar y eso revienta con KeyError
+        # justo cuando no hay ningun partido en los proximos 7 dias -- 22/09,
+        # 0 partidos encontrados. No hay nada que registrar, así que se omite
+        # igual que actualizar_historico() omite el to_csv si no hay filas
+        # nuevas.
+        print("Registro: sin partidos nuevos que evaluar esta pasada")
+        return
+
     ruta_registro = "data/registro_predicciones.csv"
     registro_previo = pd.read_csv(ruta_registro) if os.path.exists(ruta_registro) else pd.DataFrame()
     guardar_registro(pd.DataFrame(registro_predicciones), registro_previo, ruta_registro)
