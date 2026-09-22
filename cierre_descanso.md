@@ -1,49 +1,54 @@
-# Cierre del registro del descanso -- 2026-09-20 23:20 UTC
+# Cierre del registro del descanso -- 2026-09-22 23:20 UTC
 
-344 observaciones cerradas sobre 47 partidos terminados (29 empates apartados).
+436 observaciones cerradas sobre 59 partidos terminados (37 empates apartados).
 
 ## Quién acierta más
 
 | | Brier | Frente a la tasa base |
 |---|---|---|
-| Modelo | 0.1686 | +32.4% |
-| Mercado | 0.1607 | +35.6% |
-| Tasa base (48% Over) | 0.2496 | — |
+| Modelo | 0.1638 | +34.5% |
+| Mercado | 0.1593 | +36.3% |
+| Tasa base (49% Over) | 0.2500 | — |
 
-**El mercado puntúa mejor que el modelo** por 0.0079. Mientras esto siga así no hay nada que apostar: el modelo no sabe más que la casa.
+**El mercado puntúa mejor que el modelo** por 0.0046. Mientras esto siga así no hay nada que apostar: el modelo no sabe más que la casa.
 
 ## Si se hubiera apostado
 
-86 apuestas de 1 unidad al Over, solo donde el modelo veía valor positivo y no disparatado (hasta 20%). Repartidas en **32 partidos**, que es la muestra de verdad.
+109 apuestas de 1 unidad al Over, solo donde el modelo veía valor positivo y no disparatado (hasta 20%). Repartidas en **40 partidos**, que es la muestra de verdad.
 
-- Resultado: **-10.25 unidades** (-11.9% por apuesta)
-- Margen de error (1 sigma, agrupando por partido): ±14.8 puntos por apuesta
-- Aciertos: 51 de 86
-- El partido que más pesa concentra el 14% de todo el movimiento
+- Resultado: **+9.30 unidades** (+8.5% por apuesta)
+- Margen de error (1 sigma, agrupando por partido): ±15.4 puntos por apuesta
+- Aciertos: 71 de 109
+- El partido que más pesa concentra el 10% de todo el movimiento
 
 > El margen de error se come el resultado entero, salga como salga. Es un punto de una serie, no una conclusión.
 
 | Partido | Apuestas | Resultado |
 |---|---|---|
-| AD Ceuta FC vs Valladolid | 7 | -7.00 u |
 | FC Schalke 04 vs SV Elversberg | 4 | -4.00 u |
-| Manchester City vs Sunderland | 3 | -3.00 u |
+| Real Madrid Women vs Paris Saint-Germain Women | 4 | -4.00 u |
 | SC Paderborn 07 vs 1899 Hoffenheim | 3 | -3.00 u |
+| Manchester City vs Sunderland | 3 | -3.00 u |
 | Nashville SC vs Chicago Fire | 4 | -2.82 u |
-| Minnesota United vs Los Angeles Galaxy | 2 | -2.00 u |
-| AC Milan vs Lecce | 2 | -2.00 u |
 | Almería vs Celta de Vigo II | 2 | -2.00 u |
+| AC Milan vs Lecce | 2 | -2.00 u |
+| Minnesota United vs Los Angeles Galaxy | 2 | -2.00 u |
+| Korea Republic U23 vs Saudi Arabia U23 | 2 | -2.00 u |
 | Sevilla FC vs Barcelona | 2 | -2.00 u |
 | Auxerre vs Stade Brestois 29 | 3 | -1.82 u |
+| Juventus Women vs SL Benfica | 3 | -1.68 u |
+| Bayern Munich Women vs Manchester City Women | 5 | -0.90 u |
 | Frosinone vs Como | 4 | -0.69 u |
 | Bayer Leverkusen vs RB Leipzig | 4 | -0.23 u |
 | Willem II vs Fortuna Sittard | 4 | +0.13 u |
 | Fiorentina vs Napoli | 1 | +0.22 u |
 | Villarreal vs Levante | 1 | +0.28 u |
+| Arsenal Women vs Køge BK | 1 | +0.30 u |
 | FC Porto vs Benfica | 1 | +0.32 u |
 | Las Palmas vs Burgos | 1 | +0.35 u |
 | Vasco DA Gama vs Coritiba | 1 | +0.36 u |
 | Fulham vs Manchester United | 1 | +0.44 u |
+| Flamengo vs RB Bragantino | 2 | +0.47 u |
 | Le Mans vs Lorient | 2 | +0.49 u |
 | Getafe vs Malaga | 2 | +0.51 u |
 | New England Revolution vs Orlando City | 1 | +0.70 u |
@@ -57,26 +62,29 @@
 | Lyon vs Rennes FC | 3 | +1.95 u |
 | Sabadell vs Oviedo | 2 | +2.00 u |
 | Venezia vs Lazio | 8 | +5.78 u |
+| AD Ceuta FC vs Valladolid | 7 | +5.89 u |
+| Al Hamriyah vs Al Thaid | 4 | +6.82 u |
+| Inter Milan Women vs Häcken | 2 | +7.65 u |
 
 ## Movimiento del precio
 
-Sobre **57 líneas** marcadas como valor, en **21 partidos**, comparando el precio del descanso con el de unos minutos después:
+Sobre **81 líneas** marcadas como valor, en **29 partidos**, comparando el precio del descanso con el de unos minutos después:
 
-- El mercado se movió hacia nosotros en el **23%** de las líneas
-- Deriva media: **-5.47 puntos** de probabilidad (±2.17, agrupando por partido)
-- Grupo de control (174 líneas sin valor marcado): **-1.43 puntos**
-- **Diferencia: -4.04 puntos.** Es la cifra que cuenta: descuenta el decaimiento del Over por el paso del tiempo, que afecta a los dos grupos igual.
+- El mercado se movió hacia nosotros en el **26%** de las líneas
+- Deriva media: **-4.26 puntos** de probabilidad (±1.69, agrupando por partido)
+- Grupo de control (242 líneas sin valor marcado): **-1.21 puntos**
+- **Diferencia: -3.05 puntos.** Es la cifra que cuenta: descuenta el decaimiento del Over por el paso del tiempo, que afecta a los dos grupos igual.
 
-> Con 21 partidos esto todavía no decide nada, pero converge mucho antes que el resultado: para el resultado hacen falta unos 420 partidos, y para esto del orden de 40-60.
+> Con 29 partidos esto todavía no decide nada, pero converge mucho antes que el resultado: para el resultado hacen falta unos 420 partidos, y para esto del orden de 40-60.
 
 ## Las faltas del primer tiempo
 
-Sobre **36 partidos** con faltas apuntadas:
+Sobre **44 partidos** con faltas apuntadas:
 
-- Faltas al descanso contra tarjetas de la 2ª parte: **-0.106**
-- Tarjetas al descanso contra tarjetas de la 2ª parte: **-0.056** (lo que usa el modelo hoy)
+- Faltas al descanso contra tarjetas de la 2ª parte: **+0.090**
+- Tarjetas al descanso contra tarjetas de la 2ª parte: **+0.024** (lo que usa el modelo hoy)
 
-> Con 36 partidos una correlación se mueve sola de un fin de semana a otro. Hacen falta del orden de 60 para que el coeficiente valga algo, y más para fiarse del signo si sale pequeño.
+> Con 44 partidos una correlación se mueve sola de un fin de semana a otro. Hacen falta del orden de 60 para que el coeficiente valga algo, y más para fiarse del signo si sale pequeño.
 
 ## Partido a partido
 
@@ -95,8 +103,11 @@ Sobre **36 partidos** con faltas apuntadas:
 | Real Salt Lake vs Vancouver Whitecaps | 0 | 11 | 7 | 7 |
 | Nashville SC vs Chicago Fire | 1 | 12 | 2 | 1 |
 | Portland Timbers vs Atlanta United FC | 3 | 11 | 4 | 1 |
+| Inter Miami vs San Diego | 1 | 13 | 3 | 2 |
 | Atletico-MG vs Chapecoense | 0 | — | 3 | 3 |
+| Flamengo vs RB Bragantino | 2 | 12 | 6 | 4 |
 | Vasco DA Gama vs Coritiba | 0 | 4 | 3 | 3 |
+| Lanús vs Estudiantes de La Plata | 1 | 6 | 4 | 3 |
 | AC Milan vs Lecce | 0 | 13 | 1 | 1 |
 | Fiorentina vs Napoli | 1 | 8 | 3 | 2 |
 | Frosinone vs Como | 2 | 12 | 5 | 3 |
@@ -117,7 +128,7 @@ Sobre **36 partidos** con faltas apuntadas:
 | Lommel United vs KV Mechelen | 2 | — | 6 | 4 |
 | Almería vs Celta de Vigo II | 0 | 7 | 1 | 1 |
 | Cadiz vs Girona | 2 | — | 9 | 7 |
-| AD Ceuta FC vs Valladolid | 2 | 15 | 0 | -2 |
+| AD Ceuta FC vs Valladolid | 2 | 15 | 8 | 6 |
 | Las Palmas vs Burgos | 2 | 17 | 5 | 3 |
 | Sabadell vs Oviedo | 0 | 14 | 4 | 4 |
 | Atlético Madrid vs Real Madrid | 3 | 13 | 6 | 3 |
@@ -129,5 +140,12 @@ Sobre **36 partidos** con faltas apuntadas:
 | FC Schalke 04 vs SV Elversberg | 2 | 8 | 3 | 1 |
 | SC Paderborn 07 vs 1899 Hoffenheim | 1 | 9 | 1 | 0 |
 | FC Porto vs Benfica | 4 | 15 | 8 | 4 |
-
-*Sin terminar todavía: Flamengo vs RB Bragantino*
+| Dumbrăviţa vs CSM Reşiţa | 4 | — | 5 | 1 |
+| Arsenal Women vs Køge BK | 0 | 6 | 1 | 1 |
+| Bayern Munich Women vs Manchester City Women | 0 | 13 | 2 | 2 |
+| Inter Milan Women vs Häcken | 0 | 13 | 5 | 5 |
+| Juventus Women vs SL Benfica | 1 | 8 | 3 | 2 |
+| Real Madrid Women vs Paris Saint-Germain Women | 2 | 11 | 3 | 1 |
+| Al-Bidda vs Al Shamal SC | 0 | — | 0 | 0 |
+| Korea Republic U23 vs Saudi Arabia U23 | 0 | — | 2 | 2 |
+| Al Hamriyah vs Al Thaid | 0 | — | 4 | 4 |
