@@ -173,3 +173,25 @@ con sus números, están en `API.md`, `calibracion_mercado.md`,
 
 Los crons siguen corriendo (11% de la cuota diaria) porque el registro crece
 por si algún día aparece otra fuente de datos. No porque esperemos nada de él.
+
+## Box-score (22/09/2026): las 7 variables nuevas no ayudaron
+
+Backfill completo (2537 de 2539 partidos) de las 7 variables por-jugador de
+`/box-score` (faltas recibidas, duelos, xG evitado por el portero...).
+`evaluar_mercados.py` con los datos completos, mismos 212 partidos fuera de
+muestra que el baseline sin box-score:
+
+| mercado | sin box-score | con box-score |
+|---|---|---|
+| resultado | -3.01s | -3.30s |
+| mas_2_5 | -1.44s | -1.41s |
+| ambos_marcan | -1.91s | -2.48s |
+| mas_9_5_corners | -1.62s | -1.53s |
+| mas_4_5_tarjetas | -1.40s | -1.95s |
+
+Tres mercados empeoraron, dos quedaron igual. Ninguno mejoró. El peso óptimo
+de mezcla mercado+modelo sale 0,00 en 4 de 5 (el quinto, mas_2_5, sale 0,05
+con intervalo [0,00, 0,60] -- incluye cero). Más variables con la misma
+cantidad de partidos de entrenamiento no compró señal, compró sobreajuste.
+No reabrir "más variables por-jugador" como vía salvo con más partidos, no
+solo más columnas.
