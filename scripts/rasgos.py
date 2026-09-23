@@ -479,16 +479,27 @@ def grupos_rasgo(base):
 
 def columnas_rasgo_default(base):
     """
-    Las columnas que usa el modelo en producción -- columnas_rasgo() menos
-    box-score. experimentos_rasgos.py (23/09) confirmó box-score empeora
-    las 5 líneas, aislado o combinado con h2h/tabla; seguir entrenando con
-    él por defecto sería ignorar el propio experimento. Sigue fusionado en
-    `hist` (modelo_xgboost.cargar()) para poder volver a probarlo vía
-    grupos_rasgo() si aparece más muestra -- esto solo lo saca del set que
-    entrena de verdad.
+    Las columnas que usa el modelo en producción.
+
+    experimentos_rasgos.py (23/09) probó cada variable nueva sola y
+    combinada contra las 5 líneas. Resultado: "base + elo + arbitro" es la
+    suma neta más alta de las probadas (suma de sigmas de los 5 mercados:
+    -8.35, frente a -8.75 de base+elo solo). Box-score empeora las 5 líneas
+    siempre. H2H y tabla, sumadas a árbitro, lo EMPEORAN en 4 de 5 mercados
+    (solo mejoran córners) -- así que tampoco entran por defecto, aunque
+    sigan en el código por si una muestra mayor cambia la cuenta. Clima,
+    solo y con menos partidos utilizables por su propia cobertura, salió
+    mayormente negativo. Rotación aún no tiene datos (falta el backfill de
+    lineups).
+
+    Todas siguen fusionadas en `hist` (modelo_xgboost.cargar()) y
+    disponibles vía grupos_rasgo() para volver a probarlas si crece la
+    muestra -- esto solo decide qué entra al entrenamiento de producción
+    HOY, con la evidencia de HOY.
     """
-    boxscore = set(grupos_rasgo(base)["boxscore"])
-    return [c for c in columnas_rasgo(base) if c not in boxscore]
+    grupos = grupos_rasgo(base)
+    permitidas = set(grupos["base"]) | set(grupos["elo"]) | set(grupos["arbitro"])
+    return [c for c in columnas_rasgo(base) if c in permitidas]
 
 
 def comprobar_sin_fuga(hist):

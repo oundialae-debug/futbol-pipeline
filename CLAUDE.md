@@ -212,6 +212,44 @@ base + Elo (85 rasgos, 2239 partidos utilizables).
 | mas_9_5_corners | -1.29s | -1.21s | -0.94s | -1.37s | tabla sola (-0.94s) |
 | mas_4_5_tarjetas | -1.21s | -1.22s | -1.53s | -1.78s | **base+elo sola** |
 
+## Árbitro, clima y rotación (23/09/2026): árbitro es la mejor variable probada
+
+Comprobado antes de gastar cuota (sondeo_matches.py, sondeo_lineups.py):
+`/matches/{id}` da árbitro y previsión meteorológica en partidos viejos, no
+solo próximos (confirmado hasta 13 meses atrás), y `/lineups/{id}` también.
+Backfill de árbitro+clima completo en una pasada: 2539/2539 partidos, 91%
+cobertura de árbitro, 95% de clima. Lineups pendiente.
+
+`arbitro_tarjetas_media`: tarjetas medias de CADA árbitro usando solo sus
+apariciones anteriores (misma regla anti-fuga que Elo/H2H/tabla). Probado
+solo contra base+elo (212 partidos, mismo corte):
+
+| mercado | base+elo | +arbitro | +clima | +arbitro+tabla | +arbitro+h2h |
+|---|---|---|---|---|---|
+| resultado | -2.97s | -3.09s | -2.84s* | -3.17s | -3.19s |
+| mas_2_5 | -1.09s | **-0.85s** | -1.01s* | -1.03s | -0.93s |
+| ambos_marcan | -2.19s | **-1.73s** | -2.25s* | -1.85s | -1.78s |
+| mas_9_5_corners | -1.29s | -1.19s | -1.38s* | -0.91s | -1.32s |
+| mas_4_5_tarjetas | -1.21s | -1.49s | -1.43s* | -1.77s | -1.63s |
+
+(*clima usa 199 partidos y corte de fecha distinto por su propia
+cobertura -- no comparar en punto exacto, solo dirección.)
+
+**Árbitro solo mejora 3 de 5 mercados de forma clara** (mas_2_5 y
+ambos_marcan sobre todo) y es la única variable de toda esta ronda con
+suma neta de sigmas positiva sobre base+elo (-8.35 contra -8.75). Lo
+contraintuitivo: mezclarlo con tabla o H2H lo EMPEORA en 4 de 5 mercados
+(solo mejora córners un poco) -- más columnas con las mismas 2239 filas
+de entrenamiento sigue comprando sobreajuste, incluso cuando una de las
+columnas nuevas es buena. `columnas_rasgo_default()` pasa a ser
+**base + elo + árbitro únicamente**; h2h y tabla se quedan fuera del set
+de producción por primera vez desde que se añadieron, aunque siguen en el
+código. Ninguna combinación bate al mercado (todas siguen entre -0.85s y
+-3.19s, hace falta +2s), pero es la mejor base encontrada hasta ahora.
+
+Rotación (titulares que cambian respecto al partido anterior del mismo
+equipo) aún sin datos -- pendiente backfill_lineups.yml.
+
 **Box-score empeora los 5 mercados en TODAS las combinaciones donde
 aparece**, aislado o mezclado. Confirma el hallazgo del 22/09 con una
 prueba limpia -- se quita del set de columnas por defecto
