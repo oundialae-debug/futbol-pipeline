@@ -1,4 +1,4 @@
-# Tarjetas al descanso -- 2026-09-23 06:23 UTC
+# Tarjetas al descanso -- 2026-09-23 06:48 UTC
 
 Modelo: nivel propio de cada liga -0.068*k por tarjeta al descanso, phi=1.23, ajustado sobre 363 partidos de 6 ligas.
 Niveles: Segunda División 3.21, La Liga 3.05, Premier League 2.68, (otras) 2.67, Bundesliga 2.67, Serie A 2.33, Ligue 1 2.09.
@@ -11,24 +11,8 @@ Validación fuera de muestra (línea 4.5): Brier 0.1839 frente a 0.2404 de la ta
 > es -0.016, o sea nada. Lo que queda es tener bien el nivel de cada liga,
 > que es calibración, no ventaja.
 
-*Consumo de API hoy: 88 llamadas en 18 pasadas, sobre un tope de 6000 (1%). El plan da 7.500 al día.*
+*Consumo de API hoy: 93 llamadas en 19 pasadas, sobre un tope de 6000 (2%). El plan da 7.500 al día.*
 
 > ⚠ Las cuotas en vivo se refrescan **cada 10 minutos** (documentación de la API) y no traen marca de tiempo. El precio de abajo puede ser de antes de las últimas tarjetas del primer tiempo, y puede no existir ya en la casa. El valor sirve para comparar modelos, no como dinero cogible.
 
-
-## China PR U23 vs UAE U23  (Asian Games)
-*Half time · minuto 45 · 0 - 0 · nivel **(otras)**  ⚠ liga fuera del ajuste: se usa el nivel medio*
-
-**0 tarjetas** al descanso. Esperadas en la 2ª parte: **2.67**.
-
-| Línea | Modelo | Mercado | Casas | Mejor cuota | Valor |
-|---|---|---|---|---|---|
-| 3.5 | 29% | 51% | 1 | 1.75 (Vbet Sport) | -49.9% |
-| 4.0 (push 13%) | 15% | 41% | 1 | 2.18 (Vbet Sport) | -53.4% |
-
-## Iran U23 vs Korea DPR U23  (Asian Games)
-*Half time · minuto 45 · 1 - 2 · nivel **(otras)**  ⚠ liga fuera del ajuste: se usa el nivel medio*
-
-**2 tarjetas** al descanso (minutos ['45+2', '45+3']). Esperadas en la 2ª parte: **2.54**.
-
-*Sin mercado de tarjetas en vivo para este partido.*
+*Ningún partido en el descanso ahora mismo.*
