@@ -1,4 +1,4 @@
-# Tarjetas al descanso -- 2026-09-23 17:26 UTC
+# Tarjetas al descanso -- 2026-09-23 17:39 UTC
 
 Modelo: nivel propio de cada liga -0.068*k por tarjeta al descanso, phi=1.23, ajustado sobre 363 partidos de 6 ligas.
 Niveles: Segunda División 3.21, La Liga 3.05, Premier League 2.68, (otras) 2.67, Bundesliga 2.67, Serie A 2.33, Ligue 1 2.09.
@@ -11,16 +11,41 @@ Validación fuera de muestra (línea 4.5): Brier 0.1839 frente a 0.2404 de la ta
 > es -0.016, o sea nada. Lo que queda es tener bien el nivel de cada liga,
 > que es calibración, no ventaja.
 
-*Consumo de API hoy: 447 llamadas en 58 pasadas, sobre un tope de 6000 (7%). El plan da 7.500 al día.*
+*Consumo de API hoy: 460 llamadas en 59 pasadas, sobre un tope de 6000 (8%). El plan da 7.500 al día.*
 
 > ⚠ Las cuotas en vivo se refrescan **cada 10 minutos** (documentación de la API) y no traen marca de tiempo. El precio de abajo puede ser de antes de las últimas tarjetas del primer tiempo, y puede no existir ya en la casa. El valor sirve para comparar modelos, no como dinero cogible.
 
-**En juego, esperando al descanso:** St. Pölten Women vs Malmö FF Women (min 40)
+**En juego, esperando al descanso:** Korea DPR U20 vs Colombia U20 Women (min 49)
 
 
-## Korea DPR U20 vs Colombia U20 Women  (World Cup - U20 - Women)
-*Half time · minuto 45 · 2 - 0 · nivel **(otras)**  ⚠ liga fuera del ajuste: se usa el nivel medio*
+## OH Leuven Women vs Roma Women  (UEFA Champions League Women)
+*Half time · minuto 45 · 0 - 0 · nivel **(otras)**  ⚠ liga fuera del ajuste: se usa el nivel medio*
+
+**0 tarjetas** al descanso · **6 faltas**. Esperadas en la 2ª parte: **2.67**.
+
+| Línea | Modelo | Mercado | Casas | Mejor cuota | Valor |
+|---|---|---|---|---|---|
+| 1.5 | 71% | 61% | 1 | 1.48 (Vbet Sport) | +5.6% |
+| 2.0 (push 23%) | 48% | 49% | 1 | 1.87 (Vbet Sport) | +13.3% |
+| 2.5 | 48% | 38% | 1 | 2.4 (Vbet Sport) | +15.7% |
+| 3.0 (push 20%) | 29% | 24% | 1 | 3.85 (Vbet Sport) | +29.8% ⚠ revisar modelo |
+
+## St. Pölten Women vs Malmö FF Women  (UEFA Women’s Champions League)
+*Half time · minuto 45 · 0 - 1 · nivel **(otras)**  ⚠ liga fuera del ajuste: se usa el nivel medio*
 
 **0 tarjetas** al descanso. Esperadas en la 2ª parte: **2.67**.
 
 *Sin mercado de tarjetas en vivo para este partido.*
+
+## Servette Chênois Women vs Lyon Women  (UEFA Champions League Women)
+*Half time · minuto 45 · 0 - 4 · nivel **(otras)**  ⚠ liga fuera del ajuste: se usa el nivel medio*
+
+**1 tarjetas** al descanso (minutos ['30']) · **14 faltas**. Esperadas en la 2ª parte: **2.6**.
+
+| Línea | Modelo | Mercado | Casas | Mejor cuota | Valor |
+|---|---|---|---|---|---|
+| 1.5 | 90% | 66% | 1 | 1.39 (Vbet Sport) | +25.6% ⚠ revisar modelo |
+| 2.0 (push 20%) | 70% | 56% | 1 | 1.64 (Vbet Sport) | +35.2% ⚠ revisar modelo |
+| 2.5 | 70% | 43% | 1 | 2.17 (Vbet Sport) | +52.0% ⚠ revisar modelo |
+| 3.0 (push 23%) | 47% | 29% | 1 | 3.2 (Vbet Sport) | +72.8% ⚠ revisar modelo |
+| 3.5 | 47% | 24% | 1 | 3.9 (Vbet Sport) | +82.0% ⚠ revisar modelo |
