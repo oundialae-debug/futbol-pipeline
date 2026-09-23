@@ -195,3 +195,32 @@ con intervalo [0,00, 0,60] -- incluye cero). Más variables con la misma
 cantidad de partidos de entrenamiento no compró señal, compró sobreajuste.
 No reabrir "más variables por-jugador" como vía salvo con más partidos, no
 solo más columnas.
+
+## Experimentos de rasgos, uno a uno (23/09/2026)
+
+El error del primer intento: probar box-score, H2H y tabla siempre TODOS
+JUNTOS no dice cuál empuja y cuál estorba. `scripts/experimentos_rasgos.py`
+prueba cada grupo solo y combinado, con la misma maquinaria de
+`evaluar_mercados.py` (5 semillas, mismo corte temporal). Núcleo fijo:
+base + Elo (85 rasgos, 2239 partidos utilizables).
+
+| mercado | base+elo | +h2h | +tabla | +boxscore | mejor combo |
+|---|---|---|---|---|---|
+| resultado | -2.97s | -2.99s | -2.95s | -3.34s | tabla sola (-2.95s) |
+| mas_2_5 | -1.09s | -1.21s | -1.22s | -1.37s | **base+elo sola** |
+| ambos_marcan | -2.19s | -2.24s | -2.26s | -2.40s | h2h+tabla (-2.08s) |
+| mas_9_5_corners | -1.29s | -1.21s | -0.94s | -1.37s | tabla sola (-0.94s) |
+| mas_4_5_tarjetas | -1.21s | -1.22s | -1.53s | -1.78s | **base+elo sola** |
+
+**Box-score empeora los 5 mercados en TODAS las combinaciones donde
+aparece**, aislado o mezclado. Confirma el hallazgo del 22/09 con una
+prueba limpia -- se quita del set de columnas por defecto
+(`modelo_xgboost.cargar()` deja de fusionar `historico_boxscore.csv`; el
+backfill queda parado, sin sentido seguir gastando cuota en él).
+
+H2H y tabla, solos, son mixtos: cada uno ayuda en una línea (tabla en
+córners, marginal) y empeora en las demás. Ninguna combinación bate al
+mercado ni se acerca (todas entre -0.9s y -3.3s, hace falta +2s). Esto no
+es "encontramos algo", es "sabemos mejor cuál duele menos". Se mantiene
+h2h y tabla en el código por ser gratis y no dañar de forma consistente,
+pero ninguno se declara hallazgo.

@@ -2,9 +2,9 @@
   "resultado": {
     "evaluable": true,
     "partidos": 212,
-    "brier_modelo": 0.6261353492736816,
+    "brier_modelo": 0.6255664229393005,
     "brier_mercado": 0.5793183973041265,
-    "sigmas": -3.2488048422665736,
+    "sigmas": -3.281222711149949,
     "bate_al_mercado": false,
     "peso_mezcla_optimo": 0.0,
     "brier_mezcla": 0.5793183973041265,
@@ -16,12 +16,12 @@
   "mas_2_5": {
     "evaluable": true,
     "partidos": 212,
-    "brier_modelo": 0.46877360343933105,
+    "brier_modelo": 0.46939653158187866,
     "brier_mercado": 0.4502029997061689,
-    "sigmas": -1.3456538337312185,
+    "sigmas": -1.4361968695234222,
     "bate_al_mercado": false,
-    "peso_mezcla_optimo": 0.1,
-    "brier_mezcla": 0.45007203898382936,
+    "peso_mezcla_optimo": 0.05,
+    "brier_mezcla": 0.4501836704967395,
     "intervalo_peso_95": [
       0.0,
       0.65
@@ -30,9 +30,9 @@
   "ambos_marcan": {
     "evaluable": true,
     "partidos": 212,
-    "brier_modelo": 0.5034714937210083,
+    "brier_modelo": 0.5034485459327698,
     "brier_mercado": 0.47331217894336686,
-    "sigmas": -2.475967377939466,
+    "sigmas": -2.4971561325002933,
     "bate_al_mercado": false,
     "peso_mezcla_optimo": 0.0,
     "brier_mezcla": 0.47331217894336686,
@@ -44,29 +44,29 @@
   "mas_9_5_corners": {
     "evaluable": true,
     "partidos": 212,
-    "brier_modelo": 0.4930800199508667,
+    "brier_modelo": 0.49311453104019165,
     "brier_mercado": 0.47743683380020613,
-    "sigmas": -1.289223212271256,
+    "sigmas": -1.2897649239315052,
     "bate_al_mercado": false,
     "peso_mezcla_optimo": 0.05,
-    "brier_mezcla": 0.47742548586173816,
+    "brier_mezcla": 0.47742992330771494,
     "intervalo_peso_95": [
       0.0,
-      0.7762499999999989
+      0.75
     ]
   },
   "mas_4_5_tarjetas": {
     "evaluable": true,
     "partidos": 201,
-    "brier_modelo": 0.44066014885902405,
+    "brier_modelo": 0.4469884932041168,
     "brier_mercado": 0.4172797551656198,
-    "sigmas": -1.8330258595037028,
+    "sigmas": -2.300965298025986,
     "bate_al_mercado": false,
     "peso_mezcla_optimo": 0.0,
     "brier_mezcla": 0.4172797551656198,
     "intervalo_peso_95": [
       0.0,
-      0.5
+      0.4
     ]
   }
 }

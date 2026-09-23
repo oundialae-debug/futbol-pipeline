@@ -65,7 +65,7 @@ def main():
         return
 
     base = rasgos.construir(hist).sort_values("fecha")
-    cols = rasgos.columnas_rasgo(base)
+    cols = rasgos.columnas_rasgo_default(base)
     base = base[base[cols].notna().all(axis=1)].reset_index(drop=True)
     corte = int(len(base) * (1 - M.PROPORCION_VALIDACION))
     ent, val = base.iloc[:corte], base.iloc[corte:]

@@ -217,6 +217,63 @@ def calcular_h2h(hist):
                          "h2h_gd_local": gd_local})
 
 
+def calcular_tabla(hist):
+    """
+    Posición y puntos-por-partido en la tabla de SU liga y SU temporada en
+    curso -- distinto de m_puntos, que es una media móvil de los últimos 8
+    partidos y puede mezclar partidos de la temporada anterior justo al
+    empezar una nueva (plantilla distinta, objetivos distintos). Un equipo
+    en descenso a diez jornadas del final no juega igual que uno de mitad
+    de tabla sin nada en juego -- esto es lo más parecido a "presión" que
+    se puede calcular sin inventar dónde está el corte de descenso de cada
+    liga (varía entre competiciones y no está en los datos que tenemos).
+
+    MISMA REGLA ANTI-FUGA: la posición y los puntos que ve el partido X son
+    los de ANTES de jugarse X -- se lee la tabla, se calculan las columnas
+    de esa fila, y solo DESPUÉS se actualiza la tabla con el resultado de X.
+
+    Un equipo que aún no ha jugado esta temporada (jornada 1) no tiene
+    posición real todavía: se le da el último puesto de los ya vistos + 1,
+    neutro y conservador, nunca un puesto intermedio inventado. `tabla_pj`
+    (partidos jugados esta temporada) viaja siempre al lado para que el
+    modelo pueda descontar una posición basada en muy pocos partidos.
+    """
+    orden = hist.sort_values("fecha").reset_index(drop=True)
+    tablas = {}
+    pos_l, pos_v, ppg_l, ppg_v, pj_l, pj_v = [], [], [], [], [], []
+    for _, fila in orden.iterrows():
+        clave = (fila["liga_id"], fila["temporada"])
+        tabla = tablas.setdefault(clave, {})
+        l, v = fila["local_id"], fila["visitante_id"]
+
+        equipos_vistos = list(tabla.keys())
+        ranking = sorted(equipos_vistos,
+                         key=lambda e: (-tabla[e][0], -(tabla[e][1] - tabla[e][2])))
+        posiciones = {e: i + 1 for i, e in enumerate(ranking)}
+        n_vistos = len(ranking)
+
+        pts_l0, gf_l0, gc_l0, pj_l0 = tabla.get(l, (0, 0, 0, 0))
+        pts_v0, gf_v0, gc_v0, pj_v0 = tabla.get(v, (0, 0, 0, 0))
+
+        pos_l.append(posiciones.get(l, n_vistos + 1))
+        pos_v.append(posiciones.get(v, n_vistos + 1))
+        ppg_l.append(pts_l0 / pj_l0 if pj_l0 else 0.0)
+        ppg_v.append(pts_v0 / pj_v0 if pj_v0 else 0.0)
+        pj_l.append(pj_l0)
+        pj_v.append(pj_v0)
+
+        gl, gv = fila["goles_l"], fila["goles_v"]
+        if pd.notna(gl) and pd.notna(gv):
+            pl3 = 3 if gl > gv else (1 if gl == gv else 0)
+            pv3 = 3 if gv > gl else (1 if gl == gv else 0)
+            tabla[l] = (pts_l0 + pl3, gf_l0 + gl, gc_l0 + gv, pj_l0 + 1)
+            tabla[v] = (pts_v0 + pv3, gf_v0 + gv, gc_v0 + gl, pj_v0 + 1)
+    return pd.DataFrame({"match_id": orden["match_id"].values,
+                         "loc_tabla_pos": pos_l, "vis_tabla_pos": pos_v,
+                         "loc_tabla_ppg": ppg_l, "vis_tabla_ppg": ppg_v,
+                         "loc_tabla_pj": pj_l, "vis_tabla_pj": pj_v})
+
+
 def construir(hist):
     """Una fila por partido, con los rasgos de los dos equipos enfrentados."""
     largo = medias_previas(a_largo(hist))
@@ -233,6 +290,11 @@ def construir(hist):
     base["loc_elo"] = elo["elo_local_previo"]
     base["vis_elo"] = elo["elo_visitante_previo"]
     base["dif_elo"] = base["loc_elo"] - base["vis_elo"]
+    tabla = calcular_tabla(hist).set_index("match_id")
+    for c in ("tabla_pos", "tabla_ppg", "tabla_pj"):
+        base[f"loc_{c}"] = tabla[f"loc_{c}"]
+        base[f"vis_{c}"] = tabla[f"vis_{c}"]
+        base[f"dif_{c}"] = tabla[f"loc_{c}"] - tabla[f"vis_{c}"]
     h2h = calcular_h2h(hist).set_index("match_id")
     base["h2h_partidos_previos"] = h2h["h2h_partidos_previos"]
     base["h2h_pts_local_norm"] = h2h["h2h_pts_local_norm"]
@@ -260,6 +322,49 @@ def construir(hist):
 def columnas_rasgo(base):
     return [c for c in base.columns
             if c.startswith(("loc_", "vis_", "dif_", "h2h_")) or c == "liga_id"]
+
+
+MEDIDAS_BOXSCORE = ("faltas_recibidas", "segundas_amarillas", "duelos_totales",
+                    "duelos_ganados_pct", "falta_max_jugador",
+                    "jugadores_2mas_faltas", "xg_evitado_portero")
+
+
+def grupos_rasgo(base):
+    """
+    Los rasgos agrupados por de dónde vienen, para poder probar cada
+    variable nueva SOLA contra el mercado antes de sumarlas todas juntas.
+    `columnas_rasgo()` las mezcla todas de golpe; esto es lo que permite el
+    "una a una, y luego combinaciones" en vez de solo acumular.
+    """
+    grupos = {"base": [], "elo": [], "h2h": [], "tabla": [], "boxscore": []}
+    for c in columnas_rasgo(base):
+        if c == "liga_id":
+            grupos["base"].append(c)
+        elif "elo" in c:
+            grupos["elo"].append(c)
+        elif c.startswith("h2h_"):
+            grupos["h2h"].append(c)
+        elif "tabla_" in c:
+            grupos["tabla"].append(c)
+        elif any(m in c for m in MEDIDAS_BOXSCORE):
+            grupos["boxscore"].append(c)
+        else:
+            grupos["base"].append(c)
+    return grupos
+
+
+def columnas_rasgo_default(base):
+    """
+    Las columnas que usa el modelo en producción -- columnas_rasgo() menos
+    box-score. experimentos_rasgos.py (23/09) confirmó box-score empeora
+    las 5 líneas, aislado o combinado con h2h/tabla; seguir entrenando con
+    él por defecto sería ignorar el propio experimento. Sigue fusionado en
+    `hist` (modelo_xgboost.cargar()) para poder volver a probarlo vía
+    grupos_rasgo() si aparece más muestra -- esto solo lo saca del set que
+    entrena de verdad.
+    """
+    boxscore = set(grupos_rasgo(base)["boxscore"])
+    return [c for c in columnas_rasgo(base) if c not in boxscore]
 
 
 def comprobar_sin_fuga(hist):
