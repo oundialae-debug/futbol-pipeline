@@ -274,6 +274,101 @@ def calcular_tabla(hist):
                          "loc_tabla_pj": pj_l, "vis_tabla_pj": pj_v})
 
 
+def calcular_arbitro(hist):
+    """
+    Tarjetas medias por partido de CADA árbitro, usando solo sus
+    apariciones ANTERIORES -- misma regla anti-fuga que Elo, H2H y tabla.
+    Distintos árbitros pitan un número de tarjetas muy distinto de media;
+    ninguna otra variable del proyecto lo mira, y es justo el mercado
+    donde peor va el modelo (mas_4_5_tarjetas).
+
+    Sin árbitro conocido (~20% de los partidos, comprobado en
+    sondeo_matches.py) o sin apariciones previas de ESE árbitro en el
+    histórico, se rellena con la media de LIGA acumulada hasta ese momento
+    (no un cero, que el modelo leería como "cero tarjetas esperadas").
+    `arbitro_partidos_previos` viaja al lado para poder descontar un
+    árbitro con muy poca muestra.
+    """
+    orden = hist.sort_values("fecha").reset_index(drop=True)
+    stats_arb = {}
+    media_num, media_den = 0.0, 0
+    valores, n_prev = [], []
+    for _, fila in orden.iterrows():
+        arb = fila.get("arbitro")
+        media_actual = (media_num / media_den) if media_den else 3.5
+        if pd.notna(arb) and arb in stats_arb and stats_arb[arb][1] > 0:
+            suma, n = stats_arb[arb]
+            valores.append(suma / n)
+            n_prev.append(n)
+        else:
+            valores.append(media_actual)
+            n_prev.append(0)
+        tarjetas = None
+        if all(pd.notna(fila.get(c)) for c in
+              ("l_yellow_cards", "l_red_cards", "v_yellow_cards", "v_red_cards")):
+            tarjetas = (fila["l_yellow_cards"] + fila["l_red_cards"] +
+                       fila["v_yellow_cards"] + fila["v_red_cards"])
+        if tarjetas is not None:
+            media_num += tarjetas
+            media_den += 1
+            if pd.notna(arb):
+                s, n = stats_arb.get(arb, (0.0, 0))
+                stats_arb[arb] = (s + tarjetas, n + 1)
+    return pd.DataFrame({"match_id": orden["match_id"].values,
+                         "arbitro_tarjetas_media": valores,
+                         "arbitro_partidos_previos": n_prev})
+
+
+def calcular_rotacion(hist):
+    """
+    Cuántos titulares cambian respecto al partido ANTERIOR del mismo
+    equipo -- misma regla anti-fuga: se lee la última alineación conocida
+    de cada equipo ANTES de actualizarla con la de hoy. La alineación de
+    HOY no es un resultado (se conoce antes del pitido), así que no hay
+    fuga en usarla; lo que sí filtraría es comparar contra un partido
+    posterior por error, que es justo lo que este orden evita.
+
+    Requiere columnas `local_ids`/`visitante_ids` (pipe-joined) fusionadas
+    desde historico_lineups.csv -- si no existen, se devuelve un DataFrame
+    vacío y construir() se salta la variable entera (mismo patrón que
+    box-score cuando aún no hay backfill).
+    """
+    if "local_ids" not in hist.columns or "visitante_ids" not in hist.columns:
+        return pd.DataFrame({"match_id": hist["match_id"].values})
+    orden = hist.sort_values("fecha").reset_index(drop=True)
+    ultima_alineacion = {}
+    rot_l, rot_v, n_prev_l, n_prev_v = [], [], [], []
+    for _, fila in orden.iterrows():
+        l, v = fila["local_id"], fila["visitante_id"]
+        ids_l_str, ids_v_str = fila.get("local_ids"), fila.get("visitante_ids")
+        ids_l = set(ids_l_str.split("|")) if pd.notna(ids_l_str) else None
+        ids_v = set(ids_v_str.split("|")) if pd.notna(ids_v_str) else None
+
+        previa_l = ultima_alineacion.get(l)
+        previa_v = ultima_alineacion.get(v)
+        if ids_l is not None and previa_l:
+            rot_l.append(len(ids_l - previa_l))
+            n_prev_l.append(1)
+        else:
+            rot_l.append(2.5)  # neutro: rotación media típica observada
+            n_prev_l.append(0)
+        if ids_v is not None and previa_v:
+            rot_v.append(len(ids_v - previa_v))
+            n_prev_v.append(1)
+        else:
+            rot_v.append(2.5)
+            n_prev_v.append(0)
+
+        if ids_l is not None:
+            ultima_alineacion[l] = ids_l
+        if ids_v is not None:
+            ultima_alineacion[v] = ids_v
+    return pd.DataFrame({"match_id": orden["match_id"].values,
+                         "loc_rotacion": rot_l, "vis_rotacion": rot_v,
+                         "loc_rotacion_conocida": n_prev_l,
+                         "vis_rotacion_conocida": n_prev_v})
+
+
 def construir(hist):
     """Una fila por partido, con los rasgos de los dos equipos enfrentados."""
     largo = medias_previas(a_largo(hist))
@@ -299,6 +394,27 @@ def construir(hist):
     base["h2h_partidos_previos"] = h2h["h2h_partidos_previos"]
     base["h2h_pts_local_norm"] = h2h["h2h_pts_local_norm"]
     base["h2h_gd_local"] = h2h["h2h_gd_local"]
+    # árbitro y clima: igual que box-score, solo entran si el backfill ya
+    # tiene cobertura real -- una columna casi vacía tira todas las filas
+    # via notna() aguas abajo (bug ya visto y arreglado el 21/09).
+    if "arbitro" in hist.columns and hist["arbitro"].notna().mean() >= COBERTURA_MINIMA:
+        arb = calcular_arbitro(hist).set_index("match_id")
+        base["arbitro_tarjetas_media"] = arb["arbitro_tarjetas_media"]
+        base["arbitro_partidos_previos"] = arb["arbitro_partidos_previos"]
+    if "clima_temp" in hist.columns and hist["clima_temp"].notna().mean() >= COBERTURA_MINIMA:
+        clima = hist.set_index("match_id")[["clima_temp", "clima_status"]]
+        base["clima_temp"] = clima["clima_temp"]
+        status = clima["clima_status"].fillna("").str.lower()
+        base["clima_lluvia"] = status.str.contains("rain").astype(int)
+        base["clima_viento"] = status.str.contains("wind").astype(int)
+    rot = calcular_rotacion(hist)
+    if "loc_rotacion" in rot.columns:
+        rot = rot.set_index("match_id")
+        base["loc_rotacion"] = rot["loc_rotacion"]
+        base["vis_rotacion"] = rot["vis_rotacion"]
+        base["dif_rotacion"] = rot["loc_rotacion"] - rot["vis_rotacion"]
+        base["loc_rotacion_conocida"] = rot["loc_rotacion_conocida"]
+        base["vis_rotacion_conocida"] = rot["vis_rotacion_conocida"]
     base["liga_id"] = loc["liga_id"]
     base["fecha"] = loc["fecha"]
     base["goles_l"] = loc["goles"]
@@ -321,7 +437,8 @@ def construir(hist):
 
 def columnas_rasgo(base):
     return [c for c in base.columns
-            if c.startswith(("loc_", "vis_", "dif_", "h2h_")) or c == "liga_id"]
+            if c.startswith(("loc_", "vis_", "dif_", "h2h_", "arbitro_", "clima_"))
+            or c == "liga_id"]
 
 
 MEDIDAS_BOXSCORE = ("faltas_recibidas", "segundas_amarillas", "duelos_totales",
@@ -336,7 +453,8 @@ def grupos_rasgo(base):
     `columnas_rasgo()` las mezcla todas de golpe; esto es lo que permite el
     "una a una, y luego combinaciones" en vez de solo acumular.
     """
-    grupos = {"base": [], "elo": [], "h2h": [], "tabla": [], "boxscore": []}
+    grupos = {"base": [], "elo": [], "h2h": [], "tabla": [], "boxscore": [],
+             "arbitro": [], "clima": [], "rotacion": []}
     for c in columnas_rasgo(base):
         if c == "liga_id":
             grupos["base"].append(c)
@@ -346,6 +464,12 @@ def grupos_rasgo(base):
             grupos["h2h"].append(c)
         elif "tabla_" in c:
             grupos["tabla"].append(c)
+        elif c.startswith("arbitro_"):
+            grupos["arbitro"].append(c)
+        elif c.startswith("clima_"):
+            grupos["clima"].append(c)
+        elif "rotacion" in c:
+            grupos["rotacion"].append(c)
         elif any(m in c for m in MEDIDAS_BOXSCORE):
             grupos["boxscore"].append(c)
         else:

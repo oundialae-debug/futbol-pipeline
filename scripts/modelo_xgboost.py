@@ -54,6 +54,8 @@ OBJETIVOS = {
 
 
 RUTA_BOXSCORE = "data/historico_boxscore.csv"
+RUTA_ARBITRO_CLIMA = "data/historico_arbitro_clima.csv"
+RUTA_LINEUPS = "data/historico_lineups.csv"
 
 
 def cargar():
@@ -70,6 +72,21 @@ def cargar():
     else:
         print("  (sin data/historico_boxscore.csv -- corre "
               "backfill_boxscore.py para las 7 variables nuevas)")
+    if os.path.exists(RUTA_ARBITRO_CLIMA):
+        ac = pd.read_csv(RUTA_ARBITRO_CLIMA)
+        hist = hist.merge(ac, on="match_id", how="left")
+        print(f"  + arbitro/clima: {len(ac)} partidos, "
+              f"cobertura arbitro {ac['arbitro'].notna().mean()*100:.0f}%, "
+              f"clima {ac['clima_temp'].notna().mean()*100:.0f}%")
+    else:
+        print("  (sin data/historico_arbitro_clima.csv -- corre "
+              "backfill_arbitro_clima.py)")
+    if os.path.exists(RUTA_LINEUPS):
+        lu = pd.read_csv(RUTA_LINEUPS)
+        hist = hist.merge(lu, on="match_id", how="left")
+        print(f"  + lineups: {len(lu)} partidos")
+    else:
+        print("  (sin data/historico_lineups.csv -- corre backfill_lineups.py)")
     return hist
 
 

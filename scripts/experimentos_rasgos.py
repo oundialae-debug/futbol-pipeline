@@ -27,14 +27,22 @@ import evaluar_mercados as EM
 # experimentos (probado, documentado, se queda siempre). Lo demás se prueba
 # solo y combinado.
 NUCLEO = ["base", "elo"]
-CANDIDATAS = ["h2h", "tabla", "boxscore"]
+CANDIDATAS = ["h2h", "tabla", "boxscore", "arbitro", "clima", "rotacion"]
 
 
 def configuraciones():
-    from itertools import combinations
+    """
+    Con 3 candidatas el conjunto potencia completo (8 configs) era
+    manejable. Con 6 serían 64 -- demasiadas pasadas de 5 semillas x 5
+    mercados para lo que aporta. Se prueba cada candidata SOLA contra el
+    núcleo (para saber cuál empuja y cuál estorba, que es el objetivo real)
+    y la combinación de TODAS juntas (para ver si se refuerzan o se
+    estorban entre ellas). Si el resultado pide explorar un subconjunto
+    intermedio, se añade a mano, no por fuerza bruta.
+    """
     vistas = [[]]
-    for r in range(1, len(CANDIDATAS) + 1):
-        vistas.extend(list(c) for c in combinations(CANDIDATAS, r))
+    vistas.extend([c] for c in CANDIDATAS)
+    vistas.append(list(CANDIDATAS))
     return vistas
 
 
