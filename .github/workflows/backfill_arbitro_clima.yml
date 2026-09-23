@@ -1,0 +1,47 @@
+name: Backfill árbitro y clima
+
+# Dos variables de /matches/{id} en una sola llamada: árbitro y previsión
+# meteorológica. Comprobadas contra 5 partidos reales repartidos por fecha
+# (sondeo_matches.py, 23/09) antes de gastar cuota en esto. Reanudable.
+on:
+  workflow_dispatch:
+    inputs:
+      tope_llamadas:
+        description: 'Maximo de llamadas a la API en esta pasada'
+        required: false
+        default: '3000'
+
+jobs:
+  backfill:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+      - run: pip install requests pandas
+
+      - name: Traer árbitro y clima
+        run: python scripts/backfill_arbitro_clima.py
+        env:
+          HIGHLIGHTLY_API_KEY: ${{ secrets.HIGHLIGHTLY_API_KEY }}
+          TOPE_LLAMADAS: ${{ inputs.tope_llamadas || '3000' }}
+
+      # if: always() desde el primer commit de este workflow -- el fallo de
+      # olvidarlo ya costo una pasada entera de box-score el 21/09.
+      - name: Guardar
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/historico_arbitro_clima.csv || true
+          if git diff --staged --quiet; then
+            echo "Sin cambios que guardar"
+            exit 0
+          fi
+          git commit -m "Árbitro/clima: $(wc -l < data/historico_arbitro_clima.csv) filas ($(date -u +%Y-%m-%dT%H:%M))"
+          git pull --rebase origin main
+          git push
