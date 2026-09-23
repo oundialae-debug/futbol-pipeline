@@ -167,6 +167,56 @@ def calcular_elo(hist, k=20.0, ventaja_local=60.0):
                          "elo_visitante_previo": antes_v})
 
 
+def calcular_h2h(hist):
+    """
+    Historial cruzado entre los DOS equipos concretos que se enfrentan --
+    no la forma general de cada uno, que ya cubren m_puntos y el Elo. Un
+    equipo puede ser fuerte en general y flojo especificamente contra otro
+    rival por motivos tacticos o historicos; ninguna otra variable del
+    proyecto mira eso.
+
+    MISMA REGLA ANTI-FUGA que el resto: solo cuentan enfrentamientos con
+    fecha ANTERIOR al partido evaluado -- se lee el historial del par ANTES
+    de anadir el resultado del partido actual.
+
+    La mayoria de pares de equipos no se han enfrentado nunca dentro de la
+    ventana del historico (ligas grandes, pocas temporadas). Eso no es el
+    mismo problema que el backfill incompleto de box-score: alli la
+    cobertura crecia con el tiempo y rellenar de NaN escondia un fallo; aqui
+    la escasez es estructural y no va a cambiar sola. Se rellena con un
+    valor NEUTRO (0.5 puntos normalizados, 0 de diferencia de goles) y se
+    guarda ademas cuantos enfrentamientos previos hay, para que el propio
+    modelo pueda aprender a ignorar el valor neutro cuando ese numero es 0.
+    """
+    orden = hist.sort_values("fecha").reset_index(drop=True)
+    historial = {}
+    n_prev, pts_local, gd_local = [], [], []
+    for _, fila in orden.iterrows():
+        l, v = fila["local_id"], fila["visitante_id"]
+        clave = frozenset((l, v))
+        previos = historial.get(clave, [])
+        if previos:
+            pts, gd = [], []
+            for (loc_prev, gl_prev, gv_prev) in previos:
+                mi_g, su_g = (gl_prev, gv_prev) if loc_prev == l else (gv_prev, gl_prev)
+                pts.append(3.0 if mi_g > su_g else (1.0 if mi_g == su_g else 0.0))
+                gd.append(mi_g - su_g)
+            n_prev.append(len(previos))
+            pts_local.append(float(np.mean(pts)) / 3.0)
+            gd_local.append(float(np.mean(gd)))
+        else:
+            n_prev.append(0)
+            pts_local.append(0.5)
+            gd_local.append(0.0)
+        gl, gv = fila["goles_l"], fila["goles_v"]
+        if pd.notna(gl) and pd.notna(gv):
+            historial.setdefault(clave, []).append((l, gl, gv))
+    return pd.DataFrame({"match_id": orden["match_id"].values,
+                         "h2h_partidos_previos": n_prev,
+                         "h2h_pts_local_norm": pts_local,
+                         "h2h_gd_local": gd_local})
+
+
 def construir(hist):
     """Una fila por partido, con los rasgos de los dos equipos enfrentados."""
     largo = medias_previas(a_largo(hist))
@@ -183,6 +233,10 @@ def construir(hist):
     base["loc_elo"] = elo["elo_local_previo"]
     base["vis_elo"] = elo["elo_visitante_previo"]
     base["dif_elo"] = base["loc_elo"] - base["vis_elo"]
+    h2h = calcular_h2h(hist).set_index("match_id")
+    base["h2h_partidos_previos"] = h2h["h2h_partidos_previos"]
+    base["h2h_pts_local_norm"] = h2h["h2h_pts_local_norm"]
+    base["h2h_gd_local"] = h2h["h2h_gd_local"]
     base["liga_id"] = loc["liga_id"]
     base["fecha"] = loc["fecha"]
     base["goles_l"] = loc["goles"]
@@ -205,7 +259,7 @@ def construir(hist):
 
 def columnas_rasgo(base):
     return [c for c in base.columns
-            if c.startswith(("loc_", "vis_", "dif_")) or c == "liga_id"]
+            if c.startswith(("loc_", "vis_", "dif_", "h2h_")) or c == "liga_id"]
 
 
 def comprobar_sin_fuga(hist):
