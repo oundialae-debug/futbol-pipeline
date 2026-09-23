@@ -1,0 +1,24 @@
+name: Sondeo matches (árbitro, clima, alineaciones)
+
+# Comprobar si /matches/{id} y /lineups/{id} dan árbitro, previsión
+# meteorológica y alineación en partidos VIEJOS (no solo próximos a
+# jugarse) antes de gastar cuota en un backfill completo. Regla de
+# CLAUDE.md: comprobar contra datos reales antes de dar por hecho que algo
+# existe o no.
+on:
+  workflow_dispatch:
+
+jobs:
+  sondeo:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+      - run: pip install requests
+      - name: Sondear
+        run: python scripts/sondeo_matches.py
+        env:
+          HIGHLIGHTLY_API_KEY: ${{ secrets.HIGHLIGHTLY_API_KEY }}
