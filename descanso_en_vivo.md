@@ -1,4 +1,4 @@
-# Tarjetas al descanso -- 2026-09-23 20:09 UTC
+# Tarjetas al descanso -- 2026-09-23 20:27 UTC
 
 Modelo: nivel propio de cada liga -0.068*k por tarjeta al descanso, phi=1.23, ajustado sobre 363 partidos de 6 ligas.
 Niveles: Segunda División 3.21, La Liga 3.05, Premier League 2.68, (otras) 2.67, Bundesliga 2.67, Serie A 2.33, Ligue 1 2.09.
@@ -11,10 +11,8 @@ Validación fuera de muestra (línea 4.5): Brier 0.1839 frente a 0.2404 de la ta
 > es -0.016, o sea nada. Lo que queda es tener bien el nivel de cada liga,
 > que es calibración, no ventaja.
 
-*Consumo de API hoy: 566 llamadas en 68 pasadas, sobre un tope de 6000 (9%). El plan da 7.500 al día.*
+*Consumo de API hoy: 572 llamadas en 69 pasadas, sobre un tope de 6000 (10%). El plan da 7.500 al día.*
 
 > ⚠ Las cuotas en vivo se refrescan **cada 10 minutos** (documentación de la API) y no traen marca de tiempo. El precio de abajo puede ser de antes de las últimas tarjetas del primer tiempo, y puede no existir ya en la casa. El valor sirve para comparar modelos, no como dinero cogible.
-
-**En juego, esperando al descanso:** Barcelona Women vs Paris FC Women (min 51), Chelsea Women vs Austria Wien Women (min 52), Club Sp. San Lorenzo vs 4 De Mayo (min 52), Turks and Caicos Islands vs Montserrat (min 50)
 
 *Ningún partido en el descanso ahora mismo.*
