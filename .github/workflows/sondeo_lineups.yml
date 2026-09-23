@@ -1,0 +1,19 @@
+name: Sondeo lineups (esquema completo)
+
+on:
+  workflow_dispatch:
+
+jobs:
+  sondeo:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+      - run: pip install requests
+      - name: Sondear
+        run: python scripts/sondeo_lineups.py
+        env:
+          HIGHLIGHTLY_API_KEY: ${{ secrets.HIGHLIGHTLY_API_KEY }}
