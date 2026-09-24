@@ -77,12 +77,21 @@ def pedir(jugador_id):
 
 
 def jugadores_unicos():
+    """
+    Ordenados por CUÁNTOS PARTIDOS aparecen, no por ID. Con 3478 jugadores
+    y solo cupo para una fracción por pasada (validación con tope 500),
+    priorizar a los titulares habituales cubre muchos más partidos
+    COMPLETOS por llamada que un orden arbitrario -- un suplente que jugó
+    2 partidos no ayuda a calcular la calidad de una alineación si faltan
+    los otros 10 titulares de ese partido.
+    """
     df = pd.read_csv(RUTA_LINEUPS)
-    ids = set()
+    conteo = {}
     for col in ("local_ids", "visitante_ids"):
         for s in df[col].dropna():
-            ids.update(int(x) for x in s.split("|"))
-    return sorted(ids)
+            for x in s.split("|"):
+                conteo[int(x)] = conteo.get(int(x), 0) + 1
+    return [jid for jid, _ in sorted(conteo.items(), key=lambda kv: -kv[1])]
 
 
 def ya_tengo():
