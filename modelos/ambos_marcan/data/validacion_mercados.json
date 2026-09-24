@@ -1,0 +1,32 @@
+{
+  "resultado": {
+    "evaluable": false,
+    "motivo": "sin cuotas para este mercado"
+  },
+  "mas_2_5": {
+    "evaluable": false,
+    "motivo": "sin cuotas para este mercado"
+  },
+  "ambos_marcan": {
+    "evaluable": true,
+    "partidos": 212,
+    "brier_modelo": 0.4825538694858551,
+    "brier_mercado": 0.47331217894336686,
+    "sigmas": -0.7652447476381696,
+    "bate_al_mercado": false,
+    "peso_mezcla_optimo": 0.2,
+    "brier_mezcla": 0.47254449455777936,
+    "intervalo_peso_95": [
+      0.0,
+      0.9500000000000001
+    ]
+  },
+  "mas_9_5_corners": {
+    "evaluable": false,
+    "motivo": "sin cuotas para este mercado"
+  },
+  "mas_4_5_tarjetas": {
+    "evaluable": false,
+    "motivo": "sin cuotas para este mercado"
+  }
+}
