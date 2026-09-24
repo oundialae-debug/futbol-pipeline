@@ -1,0 +1,27 @@
+Inicio: 73 rasgos, Brier selección 0.4804
+  - corners           -> 67 rasgos, Brier 0.4782
+  - goles             -> 61 rasgos, Brier 0.4762
+  - centros           -> 55 rasgos, Brier 0.4750
+  - previos_descanso  -> 49 rasgos, Brier 0.4737
+  - posesion          -> 43 rasgos, Brier 0.4731
+  - xg                -> 37 rasgos, Brier 0.4726
+  - elo               -> 34 rasgos, Brier 0.4720
+  - faltas            -> 28 rasgos, Brier 0.4714
+  quitar cualquiera empeora (lo menos malo: tiros_fuera). Fin.
+DEPURADO: ['tiros_puerta', 'tiros_fuera', 'pases', 'puntos', 'cp_ataque'] (28 rasgos)  (169s)
+
+PRUEBA: final 2025/26 n=300 | inicio 2026/27 n=228 (186 con cuota)
+modelo                     rasgos | final: vs media    vs A | inicio: vs media    vs A  vs mercado  acierto
+A: base_clasica+elo+g/a        73 |          +1.25%  +0.00s |           +7.64%  +0.00s      -0.71s    60.8%
+A + jornada                    76 |          +1.80%  +2.24s |           +7.45%  -0.73s      -0.91s    61.8%
+DEPURADO                       28 |          +2.26%  +1.01s |           +8.59%  +0.84s      +0.10s    68.8%
+DEPURADO + jornada             31 |          +2.40%  +1.13s |           +8.04%  +0.35s      -0.33s    66.7%
+mercado                           |                         |           +9.48%                        68.3%
+
+RÉPLICA arranque 2025/26 (ago-oct 2025, n=564), entrenando solo con 2024/25 (1743 filas), sin g/a:
+  A                    vs media +0.97%  vs A +0.00s
+  A + jornada          vs media +1.23%  vs A +1.62s
+  DEPURADO             vs media +2.57%  vs A +1.40s
+  DEPURADO + jornada   vs media +2.17%  vs A +1.00s
+
+(181s)

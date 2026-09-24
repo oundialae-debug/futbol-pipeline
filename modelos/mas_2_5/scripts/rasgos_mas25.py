@@ -283,6 +283,11 @@ def grupos(base):
     return {
         "base_cf": cf + ["liga_id"],
         "base_clasica": base_clasica + ["liga_id"],
+        # depurar_y_temporada.py (24/09): eliminación hacia atrás por medida
+        "base_depurada": [f"{p}_{c}" for c in ("m_shots_on_target", "m_contra_shots_on_target",
+                          "m_shots_off_target", "m_contra_shots_off_target",
+                          "m_total_passes", "m_contra_total_passes", "m_puntos")
+                          for p in ("loc", "vis", "dif")] + ["liga_id"],
         "elo": g["elo"],
         "tabla": g["tabla"],
         "cp_ataque": cp("del_ga90", "med_ga90"),
@@ -334,13 +339,13 @@ def comprobar_sin_fuga(hist, jugador_stats, h2h_crudo, n=3):
                   f"usa el propio partido; hasta {movido} columnas sí cambian en partidos posteriores")
 
 
-# Elegido por seleccion_combinaciones.py (24/09/2026): el mejor de 128 en el
-# tramo de selección (rehecho tras corregir el bug de base_clasica). En la
-# prueba final empata con la base clásica (-0.25s) -- ver CLAUDE.md. Se congela como candidato por
-# protocolo, junto con base_clasica+elo, para juzgar los dos con partidos
-# jugados desde el 25/09/2026, que ninguna prueba ha visto.
-PRODUCCION = ["base_cf", "elo", "cp_ataque", "h2h_reciente"]
-ALTERNATIVA = ["base_clasica", "elo"]
+# Depurado (depurar_y_temporada.py, 24/09/2026): de base_clasica+elo+g/a (73
+# rasgos) a tiros a puerta, tiros fuera, pases, puntos y g/a (28 rasgos),
+# elegido en el tramo de selección. Mejora a los 73 en los tres tramos de
+# prueba y empata con el mercado en el inicio de 2026/27 (+0.10s). Juzgarlo
+# con partidos jugados desde el 25/09/2026 sin volver a elegir.
+PRODUCCION = ["base_depurada", "cp_ataque"]
+ALTERNATIVA = ["base_clasica", "elo", "cp_ataque"]
 
 
 def columnas_produccion(base, grupos_elegidos=PRODUCCION):

@@ -162,3 +162,49 @@ que la parte útil de "quién es nuevo" ya estaba dentro. No entra en el modelo.
 Entrenador nuevo sigue sin medir: `docs/openapi_highlightly.json` no tiene
 ningún campo coach/manager/trainer en ninguna de sus 25 rutas (buscado el
 24/09 en la especificación entera). Haría falta otra fuente de datos.
+
+## Depuración + salto de temporada (depurar_y_temporada.py, 24/09/2026) -- MODELO ACTUAL
+
+Petición del usuario: demasiadas variables, depurar; y que el modelo sepa
+saltar de temporada y se mida también a final de temporada.
+
+**Cuotas de final de temporada: no existen.** `/odds` solo sirve hasta 28
+días después del partido (API.md); las de abr-jun 2026 se perdieron. Contra
+el mercado solo se puede medir el inicio de 2026/27. El final de 2025/26 se
+mide contra la media y entre modelos.
+
+**Depuración:** eliminación hacia atrás por MEDIDA desde base_clasica+elo+g/a
+(73 rasgos), eligiendo SOLO en el tramo de selección. Por orden, fuera:
+córners, goles, centros, previos/descanso, posesión, xG, Elo, faltas. Quedan
+**tiros a puerta, tiros fuera, pases, puntos (propios y del rival,
+loc/vis/dif) y g/a de atacantes: 28 rasgos.** Que se vayan goles y xG no es
+raro: los tiros ya llevan esa información con menos ruido.
+
+**Salto de temporada:** grupo `jornada` (partidos jugados en ESTA temporada,
+loc/vis/dif_tabla_pj). Entrenar con 2024/25 ya estaba hecho.
+
+| modelo | rasgos | final 25/26 vs media | vs A | inicio 26/27 vs media | vs A | vs mercado | acierto |
+|---|---|---|---|---|---|---|---|
+| A: base_clasica+elo+g/a | 73 | +1.25% | -- | +7.64% | -- | -0.71s | 60.8% |
+| A + jornada | 76 | +1.80% | +2.24s | +7.45% | -0.73s | -0.91s | 61.8% |
+| **DEPURADO** | **28** | **+2.26%** | **+1.01s** | **+8.59%** | **+0.84s** | **+0.10s** | **68.8%** |
+| DEPURADO + jornada | 31 | +2.40% | +1.13s | +8.04% | +0.35s | -0.33s | 66.7% |
+| mercado | | | | +9.48% | | | 68.3% |
+
+Réplica independiente (entrenar SOLO con 2024/25, probar el arranque de
+2025/26, ago-oct 2025, n=564, sin g/a): DEPURADO +1.40s sobre A,
+A+jornada +1.62s, DEPURADO+jornada +1.00s.
+
+- **El depurado mejora a los 73 rasgos en los TRES tramos** (final de
+  temporada, arranque 2026/27 y arranque 2025/26). Menos columnas, mejor
+  modelo: el patrón de todo el proyecto.
+- **Contra el mercado: EMPATE, no ventaja.** +0.10s; sin su mejor partido
+  -0.13s; bootstrap peor que el mercado en el 47%; con otras semillas -0.07s
+  y +0.03s. Primera vez que mas_2_5 no pierde contra el mercado.
+- **`jornada` no es consistente:** ayuda a A a final de temporada y en la
+  réplica, pero empeora en el inicio de 2026/27 y casi no añade al depurado.
+  Fuera.
+
+`PRODUCCION` = base_depurada + cp_ataque. Siguiente paso: juzgarlo con
+partidos desde el 25/09/2026 sin volver a elegir, y ver si con más cuotas se
+separa de cero hacia +2s o no.
