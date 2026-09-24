@@ -685,3 +685,42 @@ por ranking de importancia rompe tríos loc_/vis_/dif_ que solo aportan
 juntos (si dif_elo rankea alto pero loc_elo no entra en el top-K, se
 pierde la mitad de la pareja). No se cambia `columnas_rasgo_default()`
 -- ni evidencia de que ayude ni de que dañe con claridad.
+
+## Sondeo: "gol de equipo en la 1ª parte" no existe en esta API (24/09/2026)
+
+Pregunta del usuario sobre un mercado concreto. Comprobado con datos
+crudos de `/odds` (mismo patrón que `censo_mercados_crudo.py`), en tres
+tandas:
+
+1. Calendario futuro sin filtrar por liga: 151 mercados distintos, cero
+  relacionados con medio tiempo -- pero el primer intento tenía un fallo
+  de filtro (falsos positivos con "Both/First Team To Score", que
+  contienen "to score" pero no tienen nada que ver con la 1ª parte) y
+  campos de la API mal leídos (bookmakerName/values[].value/values[].odd,
+  no bookmaker/name/handicap -- de ahí que saliera "casas=1" en todo).
+2. Corregido, y filtrado a partidos de calendario.csv en las 5 grandes
+  ligas (Premier League, La Liga, Serie A, Bundesliga, Ligue 1): dio
+  "0 mercados" -- esos partidos estaban a 15-25 días vista y las cuotas
+  previas se rellenan progresivamente durante días (ya documentado en
+  este mismo fichero). Nada que ver con que el mercado no exista.
+3. Repetido con partidos YA JUGADOS de esas mismas 5 ligas
+  (`historico_partidos.csv`, los más recientes): esta vez con cobertura
+  real (hasta 50 casas en Full Time Result), **207 mercados distintos,
+  ninguno de medio tiempo/1ª parte**.
+4. A petición del usuario, repetido en la UEFA Nations League (id 5039
+  -- esta API la reconoce con `leagueName=UEFA Nations League` exacto,
+  "Nations League" sin más no encuentra nada). 26 partidos próximos, 20
+  sondeados, **195 mercados distintos, tampoco ninguno de medio tiempo**.
+
+**Conclusión:** ni en las 5 grandes ligas europeas ni en la UEFA Nations
+League ofrece esta API (con las casas que cubre) un mercado de "equipo
+X marca en la 1ª parte". Lo más cercano que sí existe es **First Team To
+Score** (quién marca primero en TODO el partido, sin restricción de
+tiempo) -- un mercado distinto. Con cientos de nombres de mercado
+vistos entre las dos tandas y ninguno de medio tiempo, no parece que
+esta API/estas casas lo vendan, más que un problema de muestra.
+
+Nota técnica para el futuro: `/leagues` acepta `leagueName` (coincidencia
+exacta del nombre en la API, no libre) y `/matches` acepta `leagueId`+
+`date` (un día por llamada) -- útil si hace falta sondear otra
+competición internacional que este proyecto no tenga configurada.
