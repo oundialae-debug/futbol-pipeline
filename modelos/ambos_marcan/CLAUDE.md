@@ -162,11 +162,40 @@ resto salvo tabla/h2h/h2h_profundo sumadas TODAS juntas** (nunca solas):
 
 - Más cobertura de `calidad_plantilla` en jugadores nuevos que aparezcan
   en alineaciones futuras (el backfill del repo padre es reanudable).
-- Una variable pensada para ambos_marcan que combine ataque Y defensa de
-  forma explícita (p.ej. `P(marca el local) * P(marca el visitante)`
-  estimado con Poisson por separado de cada equipo) -- no probada
-  todavía, es distinta de `btts_tasa` (que es una tasa histórica cruda,
-  no un modelo).
 - El scouting en vivo (aparcado en el repo padre hasta que vuelva la
   competición) -- sigue siendo la única fuente de datos genuinamente
   nueva no explorada, aplicable aquí igual que a los otros mercados.
+
+## Poisson ataque/defensa: probado, sin efecto (24/09/2026)
+
+La idea de la lista de arriba, ya probada: `lambda_local = (loc_m_goles +
+vis_m_goles_contra) / 2`, `lambda_visit` igual al revés, `P(marca) =
+1-exp(-lambda)`, `poisson_p_btts = P(marca local) * P(marca visitante)`
+(independencia). Correlación con el resultado real de ambos_marcan:
+**0.043** -- casi nula antes de meterla en ningún modelo.
+
+Protocolo de 5 semillas, foco en ambos_marcan:
+
+| config | sigmas | acierto |
+|---|---|---|
+| base+elo | -1.96s | 54.2% |
+| base+elo+poisson_btts | -1.87s | 54.7% |
+| producción | -0.68s | 59.0% |
+| producción+poisson_btts | -0.74s | 59.0% (empate) |
+
+Cambios del tamaño del ruido de proceso en las dos direcciones -- ni
+ayuda ni perjudica con claridad. **Razón distinta a por qué fallaron
+h2h/tabla/rotación solas:** esta variable está construida ÚNICAMENTE a
+partir de columnas que XGBoost ya tenía en bruto (`m_goles`,
+`m_goles_contra`, ya en el grupo "base"). No es información nueva, es
+una transformación matemática (producto de dos exponenciales) de la
+misma información -- y un modelo de árboles ya puede aproximar esa
+interacción combinando splits sin que se la demos pre-cocinada. Lo que
+sí funcionó en esta sesión (árbitro, calidad_plantilla) siempre traía
+una fuente de datos GENUINAMENTE distinta, no una fórmula sobre datos
+ya presentes. Lección para la próxima idea: preguntar primero "¿esto
+usa un dato que el modelo no tenía ya en alguna forma?" antes de
+construirlo -- btts_tasa (más arriba) sí pasaba esa prueba (era una
+tasa histórica del evento conjunto, no derivable de m_goles solo) y por
+eso al menos mejoraba un poco aislada, aunque tampoco sobrevivió a
+combinarse. No entra en el modelo.
