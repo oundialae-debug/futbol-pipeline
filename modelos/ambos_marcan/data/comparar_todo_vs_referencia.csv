@@ -1,0 +1,62 @@
+comparacion,referencia,n_validacion,sigmas
+btts_tasa (sola),base+elo,560,-0.14396821265318982
+poisson_btts (sola),base+elo,560,-0.21851968534083968
+arbitro_v10 (sola),base+elo,560,1.9643577778549923
+arbitro_v20 (sola),base+elo,560,1.9278444817466611
+h2h_reciente (sola),base+elo,560,1.2823426715759154
+tabla_goles (sola),base+elo,560,0.7835312951145489
+impacto_jugador (sola),base+elo,560,-1.059034118042973
+localia (sola),base+elo,523,-0.719243521184232
+momentum5 (sola),base+elo,560,-1.6758089175045714
+btts_tasa (anadida),produccion,560,-0.19897446767432708
+poisson_btts (anadida),produccion,560,-0.18861977035843255
+arbitro_v10 (sustituye arbitro),produccion,560,0.36234539230323765
+arbitro_v20 (sustituye arbitro),produccion,560,0.30402572150758106
+h2h_reciente (sustituye h2h_profundo),produccion,560,0.29088995972550563
+tabla_goles (anadida),produccion,560,-0.9479631825406856
+impacto_jugador (anadida),produccion,560,-1.3643879427722545
+localia (anadida),produccion,523,-1.272381344045128
+momentum5 (anadida),produccion,560,-1.926910530879636
+las 6 juntas (sola),base+elo,523,0.3972262033175002
+combo arbitro_v20+h2h_reciente+tabla_goles,produccion,560,0.20047552569824628
+combo arbitro_v20+h2h_reciente+impacto_jugador,produccion,560,-1.749911273977818
+combo arbitro_v20+h2h_reciente+localia,produccion,523,-0.491087904239781
+combo arbitro_v20+h2h_reciente+momentum5,produccion,560,-1.0568091827793573
+combo arbitro_v20+tabla_goles+impacto_jugador,produccion,560,-1.0213030743089397
+combo arbitro_v20+tabla_goles+localia,produccion,523,0.053750211765962744
+combo arbitro_v20+tabla_goles+momentum5,produccion,560,-1.4890492529769181
+combo arbitro_v20+impacto_jugador+localia,produccion,523,-1.9634455876815908
+combo arbitro_v20+impacto_jugador+momentum5,produccion,560,-2.4233304612580255
+combo arbitro_v20+localia+momentum5,produccion,523,-2.212611430606896
+combo h2h_reciente+tabla_goles+impacto_jugador,produccion,560,-1.3573751197986337
+combo h2h_reciente+tabla_goles+localia,produccion,523,-0.9291979045886816
+combo h2h_reciente+tabla_goles+momentum5,produccion,560,-1.522500510883774
+combo h2h_reciente+impacto_jugador+localia,produccion,523,-2.911506553956952
+combo h2h_reciente+impacto_jugador+momentum5,produccion,560,-2.944550391409192
+combo h2h_reciente+localia+momentum5,produccion,523,-2.7300754180000957
+combo tabla_goles+impacto_jugador+localia,produccion,523,-2.233001319547807
+combo tabla_goles+impacto_jugador+momentum5,produccion,560,-2.6322310323837907
+combo tabla_goles+localia+momentum5,produccion,523,-1.874952798254027
+combo impacto_jugador+localia+momentum5,produccion,523,-3.395774264977445
+combo arbitro_v20+h2h_reciente+tabla_goles+impacto_jugador,produccion,560,-0.6552375471968687
+combo arbitro_v20+h2h_reciente+tabla_goles+localia,produccion,523,0.7654299919165308
+combo arbitro_v20+h2h_reciente+tabla_goles+momentum5,produccion,560,-1.3591089262257536
+combo arbitro_v20+h2h_reciente+impacto_jugador+localia,produccion,523,-1.718755347413573
+combo arbitro_v20+h2h_reciente+impacto_jugador+momentum5,produccion,560,-2.351045743905073
+combo arbitro_v20+h2h_reciente+localia+momentum5,produccion,523,-1.6364407125372606
+combo arbitro_v20+tabla_goles+impacto_jugador+localia,produccion,523,-1.2104765493506604
+combo arbitro_v20+tabla_goles+impacto_jugador+momentum5,produccion,560,-1.9741914708194799
+combo arbitro_v20+tabla_goles+localia+momentum5,produccion,523,-0.9035519295498888
+combo arbitro_v20+impacto_jugador+localia+momentum5,produccion,523,-2.524693350532863
+combo h2h_reciente+tabla_goles+impacto_jugador+localia,produccion,523,-2.0171991690044564
+combo h2h_reciente+tabla_goles+impacto_jugador+momentum5,produccion,560,-1.8062320836135366
+combo h2h_reciente+tabla_goles+localia+momentum5,produccion,523,-1.7387591640023294
+combo h2h_reciente+impacto_jugador+localia+momentum5,produccion,523,-3.4271640965816474
+combo tabla_goles+impacto_jugador+localia+momentum5,produccion,523,-2.758558143461766
+combo arbitro_v20+h2h_reciente+tabla_goles+impacto_jugador+localia,produccion,523,-1.2296797769178174
+combo arbitro_v20+h2h_reciente+tabla_goles+impacto_jugador+momentum5,produccion,560,-1.2288649793808306
+combo arbitro_v20+h2h_reciente+tabla_goles+localia+momentum5,produccion,523,-0.6703651800951038
+combo arbitro_v20+h2h_reciente+impacto_jugador+localia+momentum5,produccion,523,-2.7120948125411943
+combo arbitro_v20+tabla_goles+impacto_jugador+localia+momentum5,produccion,523,-2.0570651330999286
+combo h2h_reciente+tabla_goles+impacto_jugador+localia+momentum5,produccion,523,-2.5291373545458726
+combo arbitro_v20+h2h_reciente+tabla_goles+impacto_jugador+localia+momentum5,produccion,523,-1.5804944043547204

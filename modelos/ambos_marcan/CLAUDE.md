@@ -368,3 +368,35 @@ modelos, comparar los dos modelos entre sí partido a partido (Brier
 emparejado), no cada uno por separado contra el mercado; (3) el mejor
 de N combinaciones está inflado por selección -- mirar si el patrón se
 repite en los siguientes, no solo el primero.
+
+## Todas las comparaciones de ambos_marcan, rehechas sobre la validación completa (24/09/2026)
+
+Petición del usuario: usar la validación completa (no solo los partidos
+con cuota) para TODO lo anterior. Brier emparejado modelo contra modelo,
+mismos partidos para variante y referencia (`scripts/comparar_todo_vs_referencia.py`,
+61 comparaciones, resultados en `data/comparar_todo_vs_referencia.csv`).
+n=560 partidos de validación (523 cuando entra localía).
+
+Solas contra base+Elo: árbitro v10 +1.96s, árbitro v20 +1.93s, h2h reciente
++1.28s, tabla goles +0.78s, btts -0.14s, Poisson -0.22s, localía -0.72s,
+impacto jugador -1.06s, momentum5 -1.68s.
+
+Contra producción: árbitro v10 sustituyendo al original +0.36s, v20 +0.30s,
+h2h reciente sustituyendo a h2h profundo +0.29s; tabla goles, impacto,
+localía y momentum5 añadidas, todas negativas (-0.95s a -1.93s). De las 42
+combinaciones, solo 3 mejoran a producción (mejor +0.77s), ninguna llega a +2s.
+
+Lectura: el árbitro es la señal más sólida (casi +2s solo contra base+Elo),
+pero frente al árbitro original la ventana aporta poco (+0.3). Ninguna
+combinación bate a producción con claridad.
+
+**Aviso de contaminación (conversación con el usuario):** todas las pruebas
+de la sesión -- 256 combinaciones del repo padre, 42 de aquí, rejilla de
+hiperparámetros, 6 ideas -- se midieron contra la MISMA validación (partidos
+posteriores al 24/04/2026). Elegir repetidamente "el mejor" según esos
+partidos infla su resultado. Además, el conjunto de producción se eligió
+por la suma de los 5 mercados: para ambos_marcan mejora mucho sobre
+base+Elo (-1.96s -> -0.77s), pero para tarjetas EMPEORA (-1.40s -> -2.77s).
+Pendiente: (1) conjunto de variables por mercado, no uno común; (2) juzgar
+los candidatos congelados solo con partidos jugados a partir del 24/09/2026,
+que ninguna prueba ha tocado.
