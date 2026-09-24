@@ -225,3 +225,44 @@ Las dos formas honestas coinciden (56%). Cuando el modelo da más del 60% a un
 lado (774 partidos) acierta el 59.2%; más del 70% (160), el 63.7%. El 68.8%
 del inicio de 2026/27 no es comparable: son otros partidos, y ahí el mercado
 también acertó el 68.3%.
+
+## 18 variables añadidas una a una sobre las 28 (anadir_una_a_una.py, 24/09/2026)
+
+Petición del usuario: probar cada variable disponible en disco, en su orden;
+si mejora se queda, si no se quita. Criterio: Brier del tramo de selección
+(388 partidos, mar-abr 2026). Nuevas construidas aquí: formación (defensas/
+medios/delanteros), árbitro goles ventana 20, impacto de jugador, goles de
+temporada, forma de 3 partidos + momentum (sin goles en contra: rasgos.py no
+calcula r_goles_contra). Box-score leído del repo padre, no copiado.
+
+| variable | vs actual (selección) | decisión |
+|---|---|---|
+| formación | +0.19s | se queda |
+| árbitro goles v20 | -0.41s | fuera |
+| impacto jugador | -0.11s | fuera |
+| goles | -1.99s | fuera |
+| xG | -0.53s | fuera |
+| posesión | -0.19s | fuera |
+| centros | -0.67s | fuera |
+| previos/descanso | -1.03s | fuera |
+| forma 3 + momentum | -0.74s | fuera |
+| Elo | -0.49s | fuera |
+| goles de temporada | -0.79s | fuera |
+| calidad vieja (minutos, g/a del once) | +1.26s | se queda |
+| porterías a cero | -0.85s | fuera |
+| minutos/conocidos | -0.27s | fuera |
+| rotación | -1.95s | fuera |
+| H2H 2 años | +0.18s | se queda |
+| clima | -1.50s | fuera |
+| box-score (54 columnas) | +1.08s | se queda |
+
+Resultado en selección: 28 + formación + calidad vieja + H2H + box-score =
+105 rasgos. **En la prueba final limpia es PEOR que las 28:** -1.30s contra
+el de 28; contra el mercado -1.07s (el de 28: +0.03s); acierto 61.8% frente
+a 67.7% (mercado 68.3%). Final 2025/26: +0.74% sobre la media frente a
++2.13%; inicio 2026/27: +7.24% frente a +8.61%.
+
+Lo que se "ganó" en selección era ajustarse a esos 388 partidos: 18 pruebas
+seguidas sobre el mismo tramo, quedándose con lo que sale positivo por azar
+(tres de las cuatro, por debajo de +1.3s). **El modelo de 28 rasgos se queda
+como está.** No reabrir estas 18 con la misma muestra.

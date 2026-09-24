@@ -1,0 +1,30 @@
+Selección 388 partidos (2026-03-01 a 2026-04-23), prueba 528. Punto de partida: 28 rasgos, Brier 0.4726
+
+variable             +cols  Brier con ella  vs actual  decisión
+formacion                9          0.4723     +0.19s  SE QUEDA
+arbitro_goles_v20        2          0.4728     -0.41s  fuera
+impacto_jugador          8          0.4726     -0.11s  fuera
+goles                    6          0.4767     -1.99s  fuera
+xg                       6          0.4735     -0.53s  fuera
+posesion                 6          0.4727     -0.19s  fuera
+centros                  6          0.4743     -0.67s  fuera
+previos_descanso         6          0.4747     -1.03s  fuera
+forma3_momentum         12          0.4748     -0.74s  fuera
+elo                      3          0.4731     -0.49s  fuera
+goles_temporada          6          0.4749     -0.79s  fuera
+calidad_vieja            9          0.4699     +1.26s  SE QUEDA
+porterias_cero           9          0.4733     -0.85s  fuera
+minutos_conocidos        6          0.4702     -0.27s  fuera
+rotacion                 5          0.4753     -1.95s  fuera
+h2h_2anios               5          0.4695     +0.18s  SE QUEDA
+clima                    3          0.4709     -1.50s  fuera
+boxscore                54          0.4635     +1.08s  SE QUEDA
+
+Resultado: 28 + ['formacion', 'calidad_vieja', 'h2h_2anios', 'boxscore'] = 105 rasgos  (52s)
+
+PRUEBA FINAL: final 25/26 n=300, inicio 26/27 n=228 (186 con cuota)
+  28 rasgos          final25/26 vs media +2.13% | inicio26/27 vs media +8.61% | vs 28 +0.00s | vs mercado +0.03s | acierto 67.7%
+  final (105 rasgos) final25/26 vs media +0.74% | inicio26/27 vs media +7.24% | vs 28 -1.30s | vs mercado -1.07s | acierto 61.8%
+  mercado acierto 68.3%
+
+(57s)
