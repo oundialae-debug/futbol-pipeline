@@ -468,3 +468,23 @@ cero en el 68% de los remuestreos con la nueva config -- no es
 comparable directamente con el 64% de la config anterior (es una
 combinación de rasgos distinta, no el mismo modelo con más cuotas). Se
 reinicia el seguimiento de esa cifra desde este punto.
+
+## Hiperparámetros de XGBoost: revisados, sin mejora (24/09/2026)
+
+Toda la sesión giró en torno a QUÉ variables entran (111 rasgos ahora,
+frente a los ~70 con los que se afinó `min_child_weight=20,
+reg_lambda=5, max_depth=2` el 21/09). Regularización y variables son
+ejes distintos -- más columnas con la misma regularización podría
+sobreajustar, así que se revisó con una rejilla (max_depth 2/3,
+min_child_weight 20/30/50, reg_lambda 5/10/20 -- 18 combinaciones,
+protocolo completo de 5 semillas, mismo conjunto de rasgos de
+producción de hoy) antes de tocar nada.
+
+**Los valores actuales ya eran los mejores de la rejilla.** Cualquier
+aumento de min_child_weight o reg_lambda empeoró la suma de sigmas
+(de -7.9 hasta -9.4 en el peor caso) y el acierto. max_depth=3 no
+mejoró sobre max_depth=2 con la misma regularización. No hay cambio
+que aplicar -- se deja escrito para no repetir esta rejilla sin una
+razón nueva (más partidos de entrenamiento sí podría justificar menos
+regularización más adelante; con los mismos ~1700 partidos de
+entrenamiento de hoy, no).
