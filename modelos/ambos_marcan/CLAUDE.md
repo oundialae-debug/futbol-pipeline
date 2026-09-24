@@ -199,3 +199,82 @@ construirlo -- btts_tasa (más arriba) sí pasaba esa prueba (era una
 tasa histórica del evento conjunto, no derivable de m_goles solo) y por
 eso al menos mejoraba un poco aislada, aunque tampoco sobrevivió a
 combinarse. No entra en el modelo.
+
+## Seis ideas del usuario, probadas una a una (24/09/2026)
+
+Petición explícita: árbitro con ventana, H2H con decaimiento temporal,
+goles a favor/en contra de tabla, impacto de jugadores concretos,
+local/visitante separado, y momentum de ventana 5. Protocolo de 5
+semillas, foco en ambos_marcan (script:
+`scripts/experimentos_seis_ideas.py`).
+
+| Variable | Sola vs base+elo (-1.96s) | Sumada/sustituida en producción (-0.68s) |
+|---|---|---|
+| 1. Árbitro ventana 10 (tarjetas+goles) | -1.47s | -0.74s (empeora) |
+| 2. H2H reciente (máx 5, 2 años, doble peso último año) | -1.90s (ruido) | -0.72s (ruido) |
+| 3. Tabla: goles a favor/en contra de temporada | -1.96s (sin cambio) | -0.95s (empeora) |
+| 4. Impacto de jugador concreto (goles del equipo cuando juega) | -2.34s (empeora) | -1.21s (empeora bastante) |
+| 5. Local/visitante separado (goles casa/fuera no mezclados) | -2.20s (empeora, y -149 partidos utilizables) | -1.10s (empeora) |
+| 6. Momentum ventana 5 (antes probado con ventana 3) | -2.10s (empeora) | -0.95s (empeora) |
+| **7. Árbitro ventana 20** (repetición de la 1 con más ventana) | **-1.33s (la mejor variable individual del día)** | **-0.63s (mejora, pero 0.05 sigmas -- del tamaño del ruido de proceso)** |
+| 8. Las 6 juntas (árbitro=ventana20) | -1.58s | -1.37s (empeora bastante) |
+
+**Ninguna sobrevive a combinarse con el resto**, mismo patrón de toda la
+sesión. La única con una dirección consistente y creciente es el
+**árbitro por ventana**: ventana 20 > ventana 10 > sin ventana (expandiendo
+todo el historial), tanto sola como sustituyendo al árbitro actual en
+producción. La mejora sustituyendo en producción (-0.68s -> -0.63s) es
+del tamaño del ruido ya visto entre corridas idénticas en el repo padre
+(0.1-1.2 sigmas) -- dirección correcta, no un hallazgo. **Juntar las 6
+a la vez empeora**, igual que "las 8 candidatas juntas" del barrido del
+repo padre: demasiadas columnas nuevas saturan ~1700 partidos de
+entrenamiento.
+
+Ninguna entra en el modelo. Si se quisiera perseguir esto más, el
+candidato es el árbitro por ventana -- probar ventana 15/25/30 para ver
+si el patrón sigue mejorando o ya tocó techo en 20.
+
+## Cuota de mercado como variable: imposible con el método estándar, y por qué (24/09/2026)
+
+Petición del usuario: añadir la cuota media de las casas como una
+variable más del modelo (no como comparación posterior, como columna de
+entrada). Comprobado ANTES de construir nada (mismo principio de
+"mide antes de montar el modelo" del repo padre): **las 251 cuotas de
+ambos_marcan cosechadas van del 24 de agosto al 20 de septiembre de
+2026 -- CERO caen antes del 24 de abril**, que es donde corta el
+entrenamiento estándar (75/25 sobre los ~2239 partidos utilizables). El
+modelo vería esa columna vacía/constante en el 100% de sus 1679 filas
+de entrenamiento -- no hay forma de que aprenda nada de una variable
+sin variación en toda la muestra de entrenamiento.
+
+**Experimento aparte, a petición del usuario, con el aviso de muestra
+pequeña por delante:** restringido a los 212 partidos que SÍ tienen
+cuota de ambos_marcan Y todos los rasgos de producción, con su propio
+corte temporal 70/30 dentro de esa ventana (entreno=148, valido=64 --
+10-20 veces menos que el resto del proyecto, script:
+`scripts/experimentos_cuota_feature.py`):
+
+  produccion (sin cuota)        Brier 0.4842  -0.86s  acierto 59.4%
+  produccion + cuota_mercado    Brier 0.4842  -0.86s  acierto 59.4%  (IDÉNTICO)
+
+**Con la regularización estándar (`min_child_weight=20`, calibrada para
+~1700 filas), el modelo no pudo usar la columna nueva en absoluto** --
+con solo 148 filas de entrenamiento no hay margen para que un split
+adicional gane algo, así que ni siquiera se diferenció el árbol.
+Repetido con regularización ligera (`min_child_weight=5`, ajustada a
+148 filas):
+
+  produccion (sin cuota)        Brier 0.5630  -2.43s  acierto 50.0%
+  produccion + cuota_mercado    Brier 0.5593  -2.32s  acierto 53.1%
+
+Aquí SÍ se ve diferencia -- la cuota aporta algo cuando se le deja
+sitio. Pero el conjunto entero se hunde frente a la versión con
+regularización normal (Brier 0.56 vs 0.48): con solo 148 filas, aflojar
+la regularización lo suficiente para aprovechar una columna nueva
+también deja que sobreajuste las otras 99. **No hay término medio bueno
+con esta cantidad de datos.** Conclusión: la idea en sí tiene mérito
+(la cuota SÍ lleva información que el resto de rasgos no capturaba del
+todo), pero no hay manera honesta de probarla bien hasta que la cosecha
+diaria de cuotas acumule meses que solapen con el periodo de
+entrenamiento, no solo con el de validación. Revisar cuando
+`data/cuotas_cosechadas.csv` tenga cuotas de antes de abril de 2026.
