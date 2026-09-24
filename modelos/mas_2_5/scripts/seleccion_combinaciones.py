@@ -117,7 +117,7 @@ finales = {
     "todo lo pedido (base_cf+las 6)": cols_de("base_cf", EXTRAS),
     "base_cf+elo": cols_de("base_cf", ["elo"]),
     "base_clasica+elo": cols_de("base_clasica", ["elo"]),
-    "produccion repo padre (99 rasgos)": rasgos.columnas_rasgo_default(bc),
+    "produccion repo padre (99 rasgos)": G["produccion_padre"],
 }
 y = prueba[OBJ].values.astype(int)
 pf = {n: predecir(c, ent_fin, prueba) for n, c in finales.items()}

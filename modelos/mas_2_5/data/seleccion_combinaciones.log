@@ -1,54 +1,54 @@
 Rasgos construidos (21s)
-Partidos fijos: 1916
-  entrenamiento (selección) 3258 filas, 2024-08-15 a 2026-02-28 (incluye 2024/25)
-  selección     356 (2026-02-28 a 2026-04-23)
-  prueba final  490 (2026-04-24 a 2026-09-20), entrenando con 3657 filas
+Partidos fijos: 2082
+  entrenamiento (selección) 3264 filas, 2024-08-15 a 2026-03-01 (incluye 2024/25)
+  selección     388 (2026-03-01 a 2026-04-23)
+  prueba final  528 (2026-04-24 a 2026-09-20), entrenando con 3657 filas
 
-  base_cf: 64 combinaciones hechas (195s)
-  base_clasica: 64 combinaciones hechas (429s)
+  base_cf: 64 combinaciones hechas (197s)
+  base_clasica: 64 combinaciones hechas (364s)
 
 Top 10 en el tramo de selección (positivo = mejor que base_clasica+elo):
                                              config  nucleo  n_extras  n_rasgos  brier_sel  vs_clasica_elo_sel
-           base_cf+elo+tabla+cp_ataque+h2h_reciente base_cf         4        84     0.4755              0.7612
-    base_cf+tabla+cp_ataque+cp_minutos+h2h_reciente base_cf         4        87     0.4759              0.7158
-          base_cf+elo+tabla+cp_minutos+h2h_reciente base_cf         4        84     0.4760              0.6473
-base_cf+elo+tabla+cp_ataque+cp_minutos+h2h_reciente base_cf         5        90     0.4761              0.7096
-               base_cf+tabla+cp_ataque+h2h_reciente base_cf         3        81     0.4761              0.6901
-                     base_cf+elo+tabla+h2h_reciente base_cf         3        78     0.4762              0.6154
-                 base_cf+elo+cp_ataque+h2h_reciente base_cf         3        75     0.4765              0.6385
-      base_cf+elo+cp_ataque+cp_minutos+h2h_reciente base_cf         4        81     0.4767              0.6045
-                        base_cf+elo+tabla+cp_ataque base_cf         3        79     0.4768              0.6077
-          base_cf+cp_ataque+cp_minutos+h2h_reciente base_cf         3        78     0.4769              0.5860
-  mejor con base_cf: base_cf+elo+tabla+cp_ataque+h2h_reciente  Brier 0.4755
-  mejor con base_clasica: base_clasica+elo+tabla+cp_ataque+cp_defensa+h2h_reciente  Brier 0.4784
+                 base_cf+elo+cp_ataque+h2h_reciente base_cf         3        75     0.4721              1.4420
+           base_cf+elo+tabla+cp_ataque+h2h_reciente base_cf         4        84     0.4721              1.4257
+    base_cf+tabla+cp_ataque+cp_minutos+h2h_reciente base_cf         4        87     0.4723              1.4068
+base_cf+elo+tabla+cp_ataque+cp_minutos+h2h_reciente base_cf         5        90     0.4723              1.3991
+               base_cf+tabla+cp_ataque+h2h_reciente base_cf         3        81     0.4730              1.2984
+                     base_cf+elo+tabla+h2h_reciente base_cf         3        78     0.4735              1.2757
+          base_cf+elo+tabla+cp_minutos+h2h_reciente base_cf         4        84     0.4737              1.2560
+      base_cf+elo+cp_ataque+cp_minutos+h2h_reciente base_cf         4        81     0.4738              1.2167
+                         base_cf+tabla+h2h_reciente base_cf         2        75     0.4738              1.2355
+                base_cf+elo+cp_minutos+h2h_reciente base_cf         3        75     0.4740              1.2322
+  mejor con base_cf: base_cf+elo+cp_ataque+h2h_reciente  Brier 0.4721
+  mejor con base_clasica: base_clasica+tabla+cp_ataque+cp_minutos+h2h_reciente  Brier 0.4763
 
 Presencia de cada grupo en las 16 mejores (de 128):
   elo            10/16
-  tabla          13/16
+  tabla          10/16
   cp_ataque      11/16
-  cp_defensa      2/16
-  cp_minutos      9/16
-  h2h_reciente   13/16
+  cp_defensa      1/16
+  cp_minutos      7/16
+  h2h_reciente   14/16
   núcleo base_cf 16/16
 
-ELEGIDO: base_cf+elo+tabla+cp_ataque+h2h_reciente  (84 rasgos)
+ELEGIDO: base_cf+elo+cp_ataque+h2h_reciente  (75 rasgos)
 
-PRUEBA FINAL: 490 partidos (169 con cuota; 283 final 2025/26, 207 inicio 2026/27)
+PRUEBA FINAL: 528 partidos (186 con cuota; 300 final 2025/26, 228 inicio 2026/27)
 
 modelo                                         Brier  elegido vs  vs media  vs mercado  acierto
-ELEGIDO (base_cf+elo+tabla+cp_ataque+h2h_reciente)  0.4787      +0.00s    +3.22%      -1.55s    63.3%
-todo lo pedido (base_cf+las 6)                0.4816      +1.35s    +2.65%      -1.89s    63.9%
-base_cf+elo                                   0.4797      +0.27s    +3.02%      -1.14s    62.7%
-base_clasica+elo                              0.4741      -0.74s    +4.17%      -1.45s    59.2%
-produccion repo padre (99 rasgos)             0.4737      -0.78s    +4.23%      -1.62s    62.7%
-mercado                                       0.4397                                      69.8%
+ELEGIDO (base_cf+elo+cp_ataque+h2h_reciente)  0.4783      +0.00s    +3.24%      -0.92s    66.1%
+todo lo pedido (base_cf+las 6)                0.4836      +2.09s    +2.16%      -1.91s    64.5%
+base_cf+elo                                   0.4801      +0.55s    +2.88%      -1.00s    62.4%
+base_clasica+elo                              0.4765      -0.25s    +3.60%      -0.97s    63.4%
+produccion repo padre (99 rasgos)             0.4753      -0.42s    +3.86%      -1.07s    64.5%
+mercado                                       0.4430                                      68.3%
 (positivo en 'elegido vs' = el elegido es mejor; 'acierto' sobre los partidos con cuota)
 
 Por tramo, elegido:
-  final 2025/26    n= 283  vs media +1.36%  vs base_clasica+elo -0.61s
-  inicio 2026/27   n= 207  vs media +5.78%  vs base_clasica+elo -0.43s
+  final 2025/26    n= 300  vs media +1.00%  vs base_clasica+elo +0.04s
+  inicio 2026/27   n= 228  vs media +6.21%  vs base_clasica+elo -0.41s
 
-Elegido contra el mercado: -1.55s. Sin sus k mejores partidos: k=1: -1.80s  k=3: -2.20s  k=5: -2.56s  k=10: -3.38s
-Bootstrap: peor que el mercado en el 95% de remuestreos
+Elegido contra el mercado: -0.92s. Sin sus k mejores partidos: k=1: -1.12s  k=3: -1.51s  k=5: -1.90s  k=10: -2.74s
+Bootstrap: peor que el mercado en el 82% de remuestreos
 
-(447s)
+(378s)

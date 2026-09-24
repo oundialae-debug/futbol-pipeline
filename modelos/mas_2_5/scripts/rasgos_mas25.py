@@ -228,7 +228,12 @@ def grupos(base):
     cf = [c for c in base.columns if c.startswith(("casa_", "fuera_", "dif_cf_"))]
     cp = lambda *ks: [f"{p}_cp_{k}" for k in ks for p in ("loc", "vis", "dif")]
     g = rasgos.grupos_rasgo(base)
-    base_clasica = [c for c in g["base"] if "yellow_cards" not in c and c != "liga_id"]
+    # rasgos.grupos_rasgo() mete en "base" todo lo que empiece por loc_/vis_/dif_,
+    # y eso incluye dif_cf_* y *_cp_* de este módulo. Sin este filtro la base
+    # clásica llevaba dentro la calidad por posición y medio casa/fuera (bug
+    # encontrado el 24/09: añadir cp_ataque no cambiaba NI UNA predicción).
+    base_clasica = [c for c in g["base"] if "yellow_cards" not in c and c != "liga_id"
+                    and not c.startswith("dif_cf_") and "_cp_" not in c]
     return {
         "base_cf": cf + ["liga_id"],
         "base_clasica": base_clasica + ["liga_id"],
@@ -241,6 +246,8 @@ def grupos(base):
                          "h2hr_goles_media", "h2hr_mas25_tasa"],
         # referencias
         "calidad_plantilla_vieja": g["calidad_plantilla"],
+        "produccion_padre": [c for c in rasgos.columnas_rasgo_default(base)
+                             if not c.startswith("dif_cf_") and "_cp_" not in c],
         "arbitro": g["arbitro"], "h2h": g["h2h"], "h2h_profundo": g["h2h_profundo"],
     }
 
@@ -280,11 +287,11 @@ def comprobar_sin_fuga(hist, jugador_stats, h2h_crudo, n=3):
 
 
 # Elegido por seleccion_combinaciones.py (24/09/2026): el mejor de 128 en el
-# tramo de selección. OJO: en la prueba final limpia NO bate a la base clásica
-# (-0.74s, dentro del ruido) -- ver CLAUDE.md. Se congela como candidato por
+# tramo de selección (rehecho tras corregir el bug de base_clasica). En la
+# prueba final empata con la base clásica (-0.25s) -- ver CLAUDE.md. Se congela como candidato por
 # protocolo, junto con base_clasica+elo, para juzgar los dos con partidos
 # jugados desde el 25/09/2026, que ninguna prueba ha visto.
-PRODUCCION = ["base_cf", "elo", "tabla", "cp_ataque", "h2h_reciente"]
+PRODUCCION = ["base_cf", "elo", "cp_ataque", "h2h_reciente"]
 ALTERNATIVA = ["base_clasica", "elo"]
 
 
