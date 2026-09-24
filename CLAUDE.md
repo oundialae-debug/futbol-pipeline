@@ -276,3 +276,36 @@ mercado ni se acerca (todas entre -0.9s y -3.3s, hace falta +2s). Esto no
 es "encontramos algo", es "sabemos mejor cuál duele menos". Se mantiene
 h2h y tabla en el código por ser gratis y no dañar de forma consistente,
 pero ninguno se declara hallazgo.
+
+## H2H profundo vía /head-2-head (24/09/2026): mejor cobertura, mismo techo
+
+`calcular_h2h()` solo veía enfrentamientos dentro de los 13 meses del
+propio histórico -- mediana 0-1 partidos previos por par, 52% de pares sin
+historia. La API tiene una ruta dedicada, `/head-2-head`, con las últimas
+10 confrontaciones REALES entre dos equipos. Comprobado con Real
+Madrid-Barcelona (`sondeo_h2h.py`): 7 de esas 10 son de ANTES de nuestra
+ventana, hasta abril de 2024. Backfill por PAR de equipo (1218 pares, no
+2539 partidos -- la mitad de llamadas), completo en una pasada: 9206
+confrontaciones reales, mediana 7 partidos previos por par (antes 0-1).
+
+Filtrado con más cuidado que el resto: la API da "las últimas 10 A DÍA DE
+HOY", no "las últimas 10 antes de cada partido del histórico" -- así que
+`calcular_h2h_profundo()` descarta explícitamente cualquier confrontación
+con fecha posterior al partido que se está evaluando, no se fía del orden
+que da la API.
+
+| mercado | base+elo | +h2h_profundo | +arbitro | +arbitro+h2h_profundo |
+|---|---|---|---|---|
+| resultado | -2.97s | **-2.83s** | -3.09s | -3.12s |
+| mas_2_5 | -1.09s | -1.19s | -0.85s | -0.96s |
+| ambos_marcan | -2.19s | -2.33s | -1.73s | -1.72s |
+| mas_9_5_corners | -1.29s | -1.22s | -1.19s | -1.17s |
+| mas_4_5_tarjetas | -1.21s | -1.35s | -1.49s | -1.75s |
+
+H2H profundo solo mejora `resultado` (la mejor mejora individual vista en
+esa línea de toda la ronda), pero empeora las otras 3 de 5. Combinado con
+árbitro, la suma neta sigue siendo peor que árbitro solo (-8.72 contra
+-8.35) -- daña menos que tabla/h2h/rotación al combinarse (ambos_marcan y
+córners casi no se mueven), pero no lo suficiente para ganarle a "árbitro
+solo". Mismo veredicto que todo lo demás: mejor cobertura no fue mejor
+señal. No entra en `columnas_rasgo_default()`.

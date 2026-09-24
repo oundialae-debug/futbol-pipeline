@@ -23,8 +23,11 @@ Medias móviles de sus últimos N partidos, separando casa y fuera, porque un
 equipo puede ser muy distinto en cada sitio. Y la media de la liga como
 referencia, para que el modelo pueda situar a un equipo respecto a su entorno.
 """
+import os
 import numpy as np
 import pandas as pd
+
+RUTA_H2H_PROFUNDO = "data/historico_h2h_profundo.csv"
 
 VENTANA = 8            # partidos hacia atrás por equipo
 MINIMO_PARTIDOS = 4    # por debajo de esto, el equipo no tiene historia fiable
@@ -217,6 +220,65 @@ def calcular_h2h(hist):
                          "h2h_gd_local": gd_local})
 
 
+def _clave_par(id1, id2):
+    a, b = sorted((int(id1), int(id2)))
+    return f"{a}_{b}"
+
+
+def calcular_h2h_profundo(hist, h2h_crudo):
+    """
+    Igual que calcular_h2h() pero con /head-2-head (data/historico_h2h_profundo.csv)
+    en vez de solo lo que hay dentro de nuestro propio histórico -- ve hasta
+    año y medio más atrás (comprobado con Real Madrid-Barcelona,
+    sondeo_h2h.py, 24/09: 7 de sus últimas 10 confrontaciones son de antes
+    de nuestra ventana de 13 meses).
+
+    REGLA ANTI-FUGA MÁS ESTRICTA QUE EL RESTO: `h2h_crudo` trae las
+    últimas 10 confrontaciones A DÍA DE HOY, no las últimas 10 ANTES de
+    cada partido del histórico. Para un partido de hace 13 meses, alguna
+    de esas 10 puede ser POSTERIOR a ese partido -- eso SÍ sería fuga. Se
+    filtra explícitamente `fecha_confrontacion < fecha_partido` antes de
+    usar nada, no se confía en el orden que devuelve la API.
+    """
+    crudo = h2h_crudo.dropna(subset=["fecha"]).copy()
+    crudo["fecha"] = pd.to_datetime(crudo["fecha"], utc=True)
+    crudo["local_id"] = pd.to_numeric(crudo["local_id"], errors="coerce")
+    crudo["goles_l"] = pd.to_numeric(crudo["goles_l"], errors="coerce")
+    crudo["goles_v"] = pd.to_numeric(crudo["goles_v"], errors="coerce")
+    por_par = {par: grupo for par, grupo in crudo.groupby("par")}
+
+    orden = hist.copy()
+    orden["_fecha_dt"] = pd.to_datetime(orden["fecha"], format="mixed", utc=True)
+    orden = orden.sort_values("_fecha_dt").reset_index(drop=True)
+
+    n_prev, pts_local, gd_local = [], [], []
+    for _, fila in orden.iterrows():
+        l, v = fila["local_id"], fila["visitante_id"]
+        grupo = por_par.get(_clave_par(l, v))
+        if grupo is None:
+            n_prev.append(0); pts_local.append(0.5); gd_local.append(0.0)
+            continue
+        previos = grupo[grupo["fecha"] < fila["_fecha_dt"]]
+        pts, gd = [], []
+        for _, m in previos.iterrows():
+            if pd.isna(m["goles_l"]) or pd.isna(m["goles_v"]):
+                continue
+            mi_g, su_g = ((m["goles_l"], m["goles_v"]) if m["local_id"] == l
+                         else (m["goles_v"], m["goles_l"]))
+            pts.append(3.0 if mi_g > su_g else (1.0 if mi_g == su_g else 0.0))
+            gd.append(mi_g - su_g)
+        if not pts:
+            n_prev.append(0); pts_local.append(0.5); gd_local.append(0.0)
+        else:
+            n_prev.append(len(pts))
+            pts_local.append(float(np.mean(pts)) / 3.0)
+            gd_local.append(float(np.mean(gd)))
+    return pd.DataFrame({"match_id": orden["match_id"].values,
+                         "h2hp_partidos_previos": n_prev,
+                         "h2hp_pts_local_norm": pts_local,
+                         "h2hp_gd_local": gd_local})
+
+
 def calcular_tabla(hist):
     """
     Posición y puntos-por-partido en la tabla de SU liga y SU temporada en
@@ -394,6 +456,12 @@ def construir(hist):
     base["h2h_partidos_previos"] = h2h["h2h_partidos_previos"]
     base["h2h_pts_local_norm"] = h2h["h2h_pts_local_norm"]
     base["h2h_gd_local"] = h2h["h2h_gd_local"]
+    if os.path.exists(RUTA_H2H_PROFUNDO):
+        h2h_crudo = pd.read_csv(RUTA_H2H_PROFUNDO)
+        h2hp = calcular_h2h_profundo(hist, h2h_crudo).set_index("match_id")
+        base["h2hp_partidos_previos"] = h2hp["h2hp_partidos_previos"]
+        base["h2hp_pts_local_norm"] = h2hp["h2hp_pts_local_norm"]
+        base["h2hp_gd_local"] = h2hp["h2hp_gd_local"]
     # árbitro y clima: igual que box-score, solo entran si el backfill ya
     # tiene cobertura real -- una columna casi vacía tira todas las filas
     # via notna() aguas abajo (bug ya visto y arreglado el 21/09).
@@ -437,7 +505,7 @@ def construir(hist):
 
 def columnas_rasgo(base):
     return [c for c in base.columns
-            if c.startswith(("loc_", "vis_", "dif_", "h2h_", "arbitro_", "clima_"))
+            if c.startswith(("loc_", "vis_", "dif_", "h2h_", "h2hp_", "arbitro_", "clima_"))
             or c == "liga_id"]
 
 
@@ -453,13 +521,15 @@ def grupos_rasgo(base):
     `columnas_rasgo()` las mezcla todas de golpe; esto es lo que permite el
     "una a una, y luego combinaciones" en vez de solo acumular.
     """
-    grupos = {"base": [], "elo": [], "h2h": [], "tabla": [], "boxscore": [],
-             "arbitro": [], "clima": [], "rotacion": []}
+    grupos = {"base": [], "elo": [], "h2h": [], "h2h_profundo": [], "tabla": [],
+             "boxscore": [], "arbitro": [], "clima": [], "rotacion": []}
     for c in columnas_rasgo(base):
         if c == "liga_id":
             grupos["base"].append(c)
         elif "elo" in c:
             grupos["elo"].append(c)
+        elif c.startswith("h2hp_"):
+            grupos["h2h_profundo"].append(c)
         elif c.startswith("h2h_"):
             grupos["h2h"].append(c)
         elif "tabla_" in c:
