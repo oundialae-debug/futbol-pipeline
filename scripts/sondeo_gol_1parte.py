@@ -26,6 +26,7 @@ BASE_URL = "https://soccer.highlightly.net"
 HEADERS = {"x-rapidapi-key": API_KEY}
 
 RUTA_CALENDARIO = "data/calendario.csv"
+RUTA_HISTORICO = "data/historico_partidos.csv"
 RUTA_INFORME = "sondeo_gol_1parte.md"
 MAX_PARTIDOS = int(os.environ.get("MAX_PARTIDOS", "20"))
 LIGAS_GRANDES = ("Premier League", "La Liga", "Serie A", "Bundesliga", "Ligue 1")
@@ -49,13 +50,19 @@ def pedir(path, params=None, espera=0.25):
 
 
 def main():
-    if not os.path.exists(RUTA_CALENDARIO):
-        print(f"Falta {RUTA_CALENDARIO}")
+    # El primer intento con calendario.csv salio con 0 mercados: esos
+    # partidos estaban a 15-25 dias vista, y las cuotas previas se rellenan
+    # progresivamente durante dias (ya documentado en este proyecto -- un
+    # partido lejano puede no tener NINGUNA casa puesta todavia). Se usan
+    # partidos YA JUGADOS de historico_partidos.csv, los mas recientes de
+    # las 5 grandes ligas: tuvieron tiempo de sobra para acumular cuotas.
+    if not os.path.exists(RUTA_HISTORICO):
+        print(f"Falta {RUTA_HISTORICO}")
         return
-    cal = pd.read_csv(RUTA_CALENDARIO)
-    cal = cal[cal["liga"].isin(LIGAS_GRANDES)].head(MAX_PARTIDOS)
-    print(f"Sondeando /odds crudo en {len(cal)} partidos de las 5 grandes ligas "
-          f"({', '.join(sorted(cal['liga'].unique()))})\n")
+    cal = pd.read_csv(RUTA_HISTORICO)
+    cal = cal[cal["liga"].isin(LIGAS_GRANDES)].sort_values("fecha", ascending=False).head(MAX_PARTIDOS)
+    print(f"Sondeando /odds crudo (prematch) en {len(cal)} partidos YA JUGADOS "
+          f"de las 5 grandes ligas ({', '.join(sorted(cal['liga'].unique()))})\n")
 
     censo = defaultdict(lambda: {"partidos": 0, "casas": set(), "ejemplos": set()})
     coincidencias = []
