@@ -494,3 +494,56 @@ cuota. Backfill de 2024/25 lanzado el 24/09 con tope 2.000 (reanudable).
 Ojo: 2023/24 trae 30 estadísticas en vez de 39 -- comprobar cuáles faltan
 antes de fiarse de esa temporada (si falta xG, las medias de xG saldrían
 vacías).
+
+## Entrenar con 2024/25: arregla el inicio de temporada (24/09/2026)
+
+Backfill de 2024/25 (run del 24/09, tope 2.000 llamadas): **1.743 partidos**
+de las 5 grandes (Premier 380, La Liga 380, Serie A 380, Bundesliga 308,
+Ligue 1 295). Segunda salió vacía con UNA sola llamada, y 5 partidos de
+Ligue 1 + la última página de Ligue 1 fallaron justo antes: todo al final
+de la pasada, a las ~20:50 UTC. Casi seguro la cuota diaria agotada, no un
+ID malo (el sondeo vio 468 partidos de Segunda 2024 con ese ID). Relanzar.
+
+**Ojo, 2024/25 NO trae las 39 estadísticas.** El sondeo miró un partido de
+la última jornada (mayo 2025) y eso engañó: xG solo está en el 5% de los
+partidos (empieza a aparecer en marzo de 2025), centros en el 18%. Goles,
+córners, faltas, amarillas, posesión, tiros y pases, al 92-100%. Tampoco
+tiene aún árbitro, alineaciones ni h2h profundo. XGBoost acepta huecos, así
+que las filas entran igual con lo que tienen.
+
+`scripts/experimento_temporada_extra.py`: mismos rasgos, mismos 567
+partidos de prueba (posteriores al 24/04/2026); solo cambia el
+entrenamiento. A = como hasta ahora (1.703 filas de 2025/26). B = A + 1.743
+filas de 2024/25. 5 semillas, Brier emparejado.
+
+| tramo de prueba | n | base+Elo: B vs A | conjunto propio: B vs A |
+|---|---|---|---|
+| final 2025/26 | 303 | -0.04s | -0.65s |
+| **inicio 2026/27** | 264 | **+2.67s** | **+2.79s** |
+| todo | 567 | +1.86s | +1.35s |
+
+Contra predecir la media en el inicio de 2026/27, el conjunto propio pasa
+de +1.33% a +4.73%. **Era lo que decía el usuario:** el modelo nunca había
+visto un cambio de temporada, y con una temporada más aprende a arrancar.
+Es una hipótesis escrita ANTES de mirar (sección anterior), y la mejora
+cae justo donde se predijo, no en otro sitio.
+
+**Contra el mercado (215 partidos con cuota, todos de ago-sep 2026):**
+
+| modelo | A | B |
+|---|---|---|
+| base+Elo | -1.07s | +0.56s |
+| conjunto propio | -0.41s | **+1.11s** |
+
+Primera vez que ambos_marcan sale POSITIVO contra el mercado. **No es un
+hallazgo todavía:**
+- +1.11s está lejos de +2s; el bootstrap da peor que el mercado en el 14%
+  de remuestreos.
+- Quitando los 10 partidos que más aportan cae a -0.30s (sin 5: +0.38s).
+- Son 215 partidos de un mes. Misma regla de siempre: si crece hacia +2s
+  con más cuotas, es real; si baja hacia 0, no.
+
+Pendiente, por orden: (1) relanzar backfill (Segunda 2024 + resto de
+2023/24); (2) árbitro, alineaciones y jugadores de 2024/25 para que esas
+filas tengan también calidad_plantilla y árbitro; (3) repetir esta prueba
+con todo eso y vigilar el +1.11s contra el mercado según entren cuotas.
