@@ -652,3 +652,36 @@ solo argumentado:
    Elo -- una de las variables más predictivas que existen en fútbol,
    documentada como tal en este mismo fichero -- tampoco basta para
    batir al mercado solo.
+
+## Auditoría de bugs de subcadena, y poda por importancia: sin cambios (24/09/2026)
+
+**Auditoría:** el bug de "elo"/"duelos" es del tipo que suele repetirse
+-- se revisaron los demás `"x" in c` de `grupos_rasgo()` (`tabla_`,
+`rotacion`, `calidad_`, `duelos`) y del resto de `scripts/*.py` a mano.
+Ninguno tiene colisión real: los otros usos son sobre descripciones de
+estado de partido ("finish", "weather", "card"...), no clasificación de
+columnas con nombres parecidos entre sí. Limpio.
+
+**Poda por importancia:** si "más columnas sin más filas compra
+sobreajuste" es el patrón de toda la sesión, ¿ayuda quedarse solo con
+las variables más importantes de las 99 actuales? Importancia media
+(gain de XGBoost, 5 mercados x 5 semillas) rankeada, probado top-K
+recortando por ese ranking, protocolo completo de 5 semillas:
+
+  top-20   sigmas -10.89  acierto -20.0pp
+  top-30   sigmas -11.06  acierto -15.7pp
+  top-40   sigmas -10.10  acierto -19.4pp
+  top-60   sigmas -10.58  acierto -18.6pp
+  top-80   sigmas  -8.57  acierto -15.4pp
+  top-99 (todas)  sigmas -8.90  acierto -15.8pp
+
+**Sin patrón limpio.** No es monótono (top-40 mejor que top-30 y top-60,
+top-80 mejor que top-99 y que todo lo demás) -- son saltos del tamaño
+del ruido de proceso ya visto en otras pruebas de esta sesión (0.1-1.2
+sigmas entre corridas nominalmente idénticas), no una tendencia real.
+top-80 parece ligeramente mejor que el set completo pero la diferencia
+(-8.57 vs -8.90) no se distingue del ruido. Explicación probable: cortar
+por ranking de importancia rompe tríos loc_/vis_/dif_ que solo aportan
+juntos (si dif_elo rankea alto pero loc_elo no entra en el top-K, se
+pierde la mitad de la pareja). No se cambia `columnas_rasgo_default()`
+-- ni evidencia de que ayude ni de que dañe con claridad.
