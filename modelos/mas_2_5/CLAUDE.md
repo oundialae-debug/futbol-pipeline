@@ -208,3 +208,20 @@ A+jornada +1.62s, DEPURADO+jornada +1.00s.
 `PRODUCCION` = base_depurada + cp_ataque. Siguiente paso: juzgarlo con
 partidos desde el 25/09/2026 sin volver a elegir, y ver si con más cuotas se
 separa de cero hacia +2s o no.
+
+## Acierto honesto en 2025/26 (temporada_fuera.py, 24/09/2026)
+
+Modelo de producción (28 rasgos), 2.223 partidos de 2025/26, sin cuotas (la
+API las borra a los 28 días), así que solo acierto:
+
+| forma de medirlo | acierto |
+|---|---|
+| mes a mes (cada mes, entrenado solo con lo anterior) | 56.0% |
+| temporada fuera (entrenado con 2024/25 + inicio 2026/27, nada de 2025/26) | 56.3% |
+| siempre lo más frecuente | 52.5% |
+| con trampa (entrenado incluyendo 2025/26) | 66.3% -- NO VALE |
+
+Las dos formas honestas coinciden (56%). Cuando el modelo da más del 60% a un
+lado (774 partidos) acierta el 59.2%; más del 70% (160), el 63.7%. El 68.8%
+del inicio de 2026/27 no es comparable: son otros partidos, y ahí el mercado
+también acertó el 68.3%.
