@@ -400,3 +400,45 @@ base+Elo (-1.96s -> -0.77s), pero para tarjetas EMPEORA (-1.40s -> -2.77s).
 Pendiente: (1) conjunto de variables por mercado, no uno común; (2) juzgar
 los candidatos congelados solo con partidos jugados a partir del 24/09/2026,
 que ninguna prueba ha tocado.
+
+## Selección propia de ambos_marcan + prueba limpia (24/09/2026)
+
+Los dos arreglos del aviso de contaminación, centrados en ambos_marcan
+(`scripts/seleccion_y_prueba_limpia.py`):
+
+**Tres tramos por fecha**, 2085 partidos fijos (todos con todas las
+candidatas; clima fuera -- ya cerrada y quitaba 112 partidos):
+- entrenamiento: 1155 (sep 2025 - mar 2026)
+- selección: 384 (mar - 23 abr 2026) -- en toda la sesión solo se usó
+  para entrenar, nunca para evaluar
+- prueba final: 546 (24 abr - 20 sep 2026) -- la selección no lo ve; se
+  mira una vez al final, reentrenando con entrenamiento+selección
+
+**Selección hacia delante SOLO por el Brier de ambos_marcan** (no por la
+suma de 5 mercados), 15 grupos candidatos:
+base+Elo -> +calidad_plantilla (+1.57s) -> +árbitro (+1.27s) -> +h2h
+(+1.44s) -> nada más baja el Brier. Ninguna de las 6 ideas nuevas
+(árbitro ventana, h2h reciente, tabla goles, impacto, localía, momentum5)
+ni btts/Poisson/forma reciente/rotación pasa una selección limpia.
+
+**Prueba final** (546 partidos; 194 con cuota para la columna de mercado):
+
+| modelo | elegido vs este | vs mercado |
+|---|---|---|
+| elegido (base+Elo+calidad+árbitro+h2h) | -- | -0.88s |
+| producción del repo padre (5 grupos) | +0.25s (empate) | -0.83s |
+| base+Elo | **+3.02s** | -2.03s |
+
+- **+3.02s sobre base+Elo: primer resultado >+2s en prueba limpia de toda
+  la sesión.** Las variables añadidas (calidad, árbitro, h2h) mejoran el
+  modelo de verdad; no era efecto de reutilizar la misma validación.
+- El conjunto propio empata con producción con 3 grupos en vez de 5 -- se
+  adopta por simple. `columnas_rasgo_default()` de ESTA carpeta pasa a
+  ser base+Elo+calidad_plantilla+árbitro+h2h (87 rasgos). El repo padre no
+  cambia (sigue sirviendo a los otros 4 mercados).
+- Contra el mercado sigue perdiendo (-0.88s). Mejor modelo, no ventaja.
+
+Contaminación residual: la LISTA de candidatas se construyó el 24/09
+mirando resultados posteriores al 24/04; la elección entre ellas sí es
+limpia. Para una prueba 100% limpia: juzgar este conjunto congelado solo
+con partidos jugados desde el 25/09/2026.

@@ -711,47 +711,26 @@ def grupos_rasgo(base):
 
 def columnas_rasgo_default(base):
     """
-    Las columnas que usa el modelo en producción.
+    Las columnas del modelo de ambos_marcan en ESTA carpeta: base + Elo +
+    calidad_plantilla + árbitro + h2h.
 
-    CAMBIO 24/09 (barrido_combinatorio.py): la ronda anterior (CLAUDE.md
-    "Ronda de variables cerrada") solo probó sumar cada candidata SOLA
-    encima de árbitro+calidad_plantilla -- eso descarta interacciones
-    entre candidatas que ninguna aporta por sí sola. Un barrido de las
-    256 combinaciones posibles de las 8 candidatas (cribado a 2 semillas,
-    luego las mejores reverificadas con el protocolo completo de 5) encontró
-    que h2h+h2h_profundo+tabla+arbitro+calidad_plantilla JUNTAS baten a
-    árbitro+calidad_plantilla en las dos métricas que importan, no solo
-    Brier:
+    Distinto del repo padre a propósito. Allí el conjunto se eligió por la
+    suma de los 5 mercados (un compromiso que, por ejemplo, empeora
+    tarjetas). Aquí se eligió SOLO por el Brier de ambos_marcan, con
+    selección hacia delante sobre un tramo que nunca se usó para evaluar
+    (marzo-abril 2026), y se probó una sola vez sobre 546 partidos
+    posteriores que la selección no vio (seleccion_y_prueba_limpia.py,
+    24/09/2026):
 
-                                          suma sigmas   suma acierto-mercado
-      base+elo solo                        -8.76           -17.3pp
-      +arbitro+calidad_plantilla (viejo)   -8.12           -18.5pp
-      +h2h+h2h_profundo+tabla+calidad      -7.94           -14.1pp
-      +arbitro+h2h+h2h_profundo+tabla+calidad -7.93        -13.8pp  <- ahora
+      elegido vs base+Elo       +3.02s  (primer resultado >+2s en prueba limpia)
+      elegido vs producción     +0.25s  (empate, con 3 grupos en vez de 5)
+      elegido vs mercado        -0.88s  (sigue sin batirlo)
 
-    Ningún mercado bate al mercado (haría falta +2s), y el acierto sigue
-    perdiendo en casi todos los mercados -- esto NO es un hallazgo, es
-    la mejor base encontrada hasta ahora, igual que antes. Pero por
-    primera vez el ACIERTO (no solo el Brier) mejora de forma clara al
-    cambiar de configuración: 45.3%/63.7%/58.0%/54.7%/63.2% vs mercado
-    51.4%/65.6%/58.5%/58.5%/64.7% en resultado/mas_2_5/ambos_marcan/
-    corners/tarjetas respectivamente -- sigue perdiendo en las 5, pero
-    menos que la config anterior en 4 de 5 (empate en ambos_marcan).
-
-    calidad_plantilla sigue siendo la variable individual más fuerte del
-    proyecto. Box-score sigue fuera (empeora las 5 líneas en TODAS las
-    combinaciones del barrido). Clima y rotación no entran: su cobertura
-    parcial reduce la muestra utilizable y no compensan en el barrido.
-
-    Todas siguen fusionadas en `hist` (modelo_xgboost.cargar()) y
-    disponibles vía grupos_rasgo() para volver a probarlas si crece la
-    muestra -- esto solo decide qué entra al entrenamiento de producción
-    HOY, con la evidencia de HOY.
+    A igual rendimiento que producción, se prefiere el conjunto más simple.
     """
     grupos = grupos_rasgo(base)
-    permitidas = (set(grupos["base"]) | set(grupos["elo"]) | set(grupos["arbitro"])
-                 | set(grupos["h2h"]) | set(grupos["h2h_profundo"])
-                 | set(grupos["tabla"]) | set(grupos["calidad_plantilla"]))
+    permitidas = (set(grupos["base"]) | set(grupos["elo"]) | set(grupos["calidad_plantilla"])
+                 | set(grupos["arbitro"]) | set(grupos["h2h"]))
     return [c for c in columnas_rasgo(base) if c in permitidas]
 
 
