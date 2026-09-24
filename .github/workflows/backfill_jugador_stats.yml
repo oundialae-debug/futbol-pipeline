@@ -1,0 +1,47 @@
+name: Backfill jugador stats
+
+# 3478 jugadores únicos en las alineaciones -- la mayor pasada de API del
+# proyecto. Tope pequeño por defecto (500) para validar antes de
+# comprometer el resto. Solo se usa la temporada ANTERIOR ya cerrada de
+# cada jugador (hecho histórico fijo, sin fuga); la actual sigue
+# acumulando partidos. Reanudable.
+on:
+  workflow_dispatch:
+    inputs:
+      tope_llamadas:
+        description: 'Maximo de llamadas a la API en esta pasada'
+        required: false
+        default: '500'
+
+jobs:
+  backfill:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+      - run: pip install requests pandas
+
+      - name: Traer stats de jugador
+        run: python scripts/backfill_jugador_stats.py
+        env:
+          HIGHLIGHTLY_API_KEY: ${{ secrets.HIGHLIGHTLY_API_KEY }}
+          TOPE_LLAMADAS: ${{ inputs.tope_llamadas || '500' }}
+
+      - name: Guardar
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/historico_jugador_stats.csv || true
+          if git diff --staged --quiet; then
+            echo "Sin cambios que guardar"
+            exit 0
+          fi
+          git commit -m "Jugador stats: $(wc -l < data/historico_jugador_stats.csv) filas ($(date -u +%Y-%m-%dT%H:%M))"
+          git pull --rebase origin main
+          git push
