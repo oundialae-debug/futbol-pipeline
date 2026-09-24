@@ -135,3 +135,30 @@ Prueba final (528, 186 con cuota), frente a base_clasica+elo+g/a:
 
 Quitar la base empeora en todos los casos: las medias de goles, tiros y xG
 son lo que más sabe de este mercado. No repetir.
+
+## Titulares nuevos respecto a la temporada anterior (experimento_plantilla_nueva.py, 24/09/2026)
+
+Idea del usuario: al empezar temporada cambian jugadores, entrenador y
+momento, y el modelo no lo ve. Variable `plantilla_nueva` (rasgos_mas25.py):
+fracción y número de titulares cuyo club de la temporada anterior no es el
+equipo de hoy (equipo = club mayoritario del once en la temporada en curso,
+según historico_jugador_stats.csv; el club es identidad, no rendimiento).
+Cobertura 100% de los partidos fijos. Hipótesis declarada antes de mirar:
+si ayuda, debe ayudar sobre todo en ago-sep 2026.
+
+Sorpresa en los datos: la fracción de nuevos es MENOR al empezar temporada
+(22-26% en agosto) que en primavera (~40%). Los fichajes no entran de golpe
+en el once: los entrenadores arrancan con el bloque del año anterior.
+
+| positivo = la variable ayuda | selección | final 25/26 | inicio 26/27 | todo | vs mercado |
+|---|---|---|---|---|---|
+| base_clasica+elo+g/a (+pn) | -0.54s | +0.07s | -0.95s | -0.60s | -0.66s -> -0.75s |
+| base_clasica+elo (+pn) | -0.68s | -0.62s | +0.76s | +0.14s | -0.97s -> -0.71s |
+
+Sin dirección consistente: con g/a empeora justo donde debía ayudar (inicio
+de temporada); sin g/a ayuda un poco ahí y empeora en el resto. Lectura
+probable: el g/a de atacantes YA sigue a los fichajes (va con el jugador), así
+que la parte útil de "quién es nuevo" ya estaba dentro. No entra en el modelo.
+Entrenador nuevo sigue sin medir: `docs/openapi_highlightly.json` no tiene
+ningún campo coach/manager/trainer en ninguna de sus 25 rutas (buscado el
+24/09 en la especificación entera). Haría falta otra fuente de datos.

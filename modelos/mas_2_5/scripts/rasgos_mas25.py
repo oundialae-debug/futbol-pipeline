@@ -214,11 +214,57 @@ def h2h_reciente_goles(hist, h2h_crudo, anios=2, anios_peso=1, peso_extra=2.0):
     return pd.DataFrame(filas)
 
 
+def plantilla_nueva(hist, jugador_stats):
+    """
+    Cuántos titulares son NUEVOS en el equipo respecto a la temporada anterior
+    (petición del usuario, 24/09: al empezar temporada cambian jugadores).
+
+    El equipo se identifica por el club mayoritario del once en la temporada
+    EN CURSO según /players/{id}/statistics (el club es identidad, no
+    rendimiento: no hay fuga). Un titular es nuevo si ninguno de sus clubes de
+    la temporada anterior es ese club (se acepta el filial: "Chelsea FC U21"
+    contiene "Chelsea FC"). Sin datos de la temporada anterior -> desconocido.
+    """
+    from collections import Counter
+    clubes = defaultdict(set)
+    for r in jugador_stats.dropna(subset=["temporada", "club"]).itertuples(index=False):
+        clubes[(int(r.jugador_id), r.temporada)].add(str(r.club))
+
+    def lado(ids_str, t_act, t_prev):
+        if pd.isna(ids_str):
+            return np.nan, np.nan
+        ids = [int(x) for x in str(ids_str).split("|")]
+        cuenta = Counter(c for i in ids for c in clubes.get((i, t_act), ()))
+        if not cuenta:
+            return np.nan, np.nan
+        club = cuenta.most_common(1)[0][0]
+        nuevos = conocidos = 0
+        for i in ids:
+            previos = clubes.get((i, t_prev))
+            if not previos:
+                continue
+            conocidos += 1
+            if not any(club in c or c in club for c in previos):
+                nuevos += 1
+        return (nuevos / conocidos if conocidos else np.nan), float(nuevos)
+
+    filas = []
+    for f in hist.itertuples(index=False):
+        t = int(f.temporada)
+        t_act, t_prev = f"{t % 100:02d}/{(t + 1) % 100:02d}", rasgos._temporada_anterior_str(t)
+        fl, nl = lado(getattr(f, "local_ids", np.nan), t_act, t_prev)
+        fv, nv = lado(getattr(f, "visitante_ids", np.nan), t_act, t_prev)
+        filas.append({"match_id": f.match_id,
+                      "loc_pn_frac": fl, "vis_pn_frac": fv, "dif_pn_frac": fl - fv,
+                      "loc_pn_n": nl, "vis_pn_n": nv, "dif_pn_n": nl - nv})
+    return pd.DataFrame(filas)
+
+
 def construir(hist, jugador_stats, h2h_crudo):
     """rasgos.construir() + los tres bloques nuevos, una fila por partido."""
     base = rasgos.construir(hist)
     for extra in (base_casa_fuera(hist), calidad_posicion(hist, jugador_stats),
-                  h2h_reciente_goles(hist, h2h_crudo)):
+                  h2h_reciente_goles(hist, h2h_crudo), plantilla_nueva(hist, jugador_stats)):
         base = base.merge(extra, on="match_id", how="left")
     return base.sort_values("fecha").reset_index(drop=True)
 
@@ -233,7 +279,7 @@ def grupos(base):
     # clásica llevaba dentro la calidad por posición y medio casa/fuera (bug
     # encontrado el 24/09: añadir cp_ataque no cambiaba NI UNA predicción).
     base_clasica = [c for c in g["base"] if "yellow_cards" not in c and c != "liga_id"
-                    and not c.startswith("dif_cf_") and "_cp_" not in c]
+                    and not c.startswith("dif_cf_") and "_cp_" not in c and "_pn_" not in c]
     return {
         "base_cf": cf + ["liga_id"],
         "base_clasica": base_clasica + ["liga_id"],
@@ -242,12 +288,14 @@ def grupos(base):
         "cp_ataque": cp("del_ga90", "med_ga90"),
         "cp_defensa": cp("med_cs", "def_cs", "por_cs"),
         "cp_minutos": cp("minutos", "conocidos"),
+        "plantilla_nueva": [f"{p}_pn_{k}" for k in ("frac", "n") for p in ("loc", "vis", "dif")],
         "h2h_reciente": ["h2hr_partidos", "h2hr_pts_local_norm", "h2hr_gd_local",
                          "h2hr_goles_media", "h2hr_mas25_tasa"],
         # referencias
         "calidad_plantilla_vieja": g["calidad_plantilla"],
         "produccion_padre": [c for c in rasgos.columnas_rasgo_default(base)
-                             if not c.startswith("dif_cf_") and "_cp_" not in c],
+                             if not c.startswith("dif_cf_") and "_cp_" not in c
+                             and "_pn_" not in c],
         "arbitro": g["arbitro"], "h2h": g["h2h"], "h2h_profundo": g["h2h_profundo"],
     }
 
@@ -257,7 +305,7 @@ def comprobar_sin_fuga(hist, jugador_stats, h2h_crudo, n=3):
     base = construir(hist, jugador_stats, h2h_crudo)
     gr = grupos(base)
     cols = sorted(set(sum((gr[k] for k in ("base_cf", "cp_ataque", "cp_defensa",
-                                            "cp_minutos", "h2h_reciente")), [])))
+                                            "cp_minutos", "h2h_reciente", "plantilla_nueva")), [])))
     con_lu = base[base[[c for c in cols if c.startswith("loc_cp_")]].notna().any(axis=1)]
     objetivos = con_lu.match_id.iloc[np.linspace(len(con_lu) // 4, len(con_lu) - 1, n).astype(int)]
     bi = base.set_index("match_id")
