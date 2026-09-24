@@ -163,6 +163,37 @@ def forma_reciente(largo, ventana=3):
     return largo.drop(columns=["_pts_r"])
 
 
+def calcular_btts(largo):
+    """
+    Tasa de "ambos marcan" reciente de CADA equipo -- proporción de sus
+    últimos VENTANA partidos donde él Y el rival marcaron. Petición del
+    usuario: ambos_marcan es el mercado más cerca de competir con el
+    mercado (-0.77s, el menos negativo de los 5), y no tiene ninguna
+    variable pensada específicamente para él -- las 99 de producción son
+    genéricas para los 5 mercados a la vez.
+
+    NO es lo mismo que la media de goles que ya existe (m_goles,
+    m_contra_goles): un equipo puede atacar mucho y encajar poco (BTTS
+    bajo pese a gran ataque) o meter y encajar pocos siempre 1-0 (BTTS
+    bajo con ataque mediocre). Esta variable captura directamente el
+    patrón conjunto, no la suma de dos medias separadas.
+
+    Prefijo btts_ -- deliberadamente distinto de "ambos_marcan" (el
+    nombre de la columna objetivo) para no repetir el tipo de colisión
+    de subcadena del bug de "elo"/"duelos" de hoy mismo.
+
+    MISMA REGLA ANTI-FUGA: shift(1) antes de rolling.
+    """
+    largo = largo.copy()
+    largo["_btts"] = ((largo["goles"] > 0) & (largo["goles_contra"] > 0)).astype(float)
+    g = largo.groupby("equipo", sort=False)
+    largo["btts_tasa"] = (g["_btts"].shift(1)
+                          .groupby(largo["equipo"], sort=False)
+                          .rolling(VENTANA, min_periods=MINIMO_PARTIDOS)
+                          .mean().reset_index(level=0, drop=True))
+    return largo.drop(columns=["_btts"])
+
+
 def calcular_elo(hist, k=20.0, ventaja_local=60.0):
     """
     Fuerza de equipo estilo Elo, cronológica, usando solo los goles que ya
@@ -538,9 +569,9 @@ def calcular_calidad_plantilla(hist, jugador_stats_crudo):
 
 def construir(hist):
     """Una fila por partido, con los rasgos de los dos equipos enfrentados."""
-    largo = forma_reciente(medias_previas(a_largo(hist)))
+    largo = calcular_btts(forma_reciente(medias_previas(a_largo(hist))))
     rasgos = [c for c in largo.columns
-              if c.startswith(("m_", "r_")) or c in ("partidos_previos", "descanso")]
+              if c.startswith(("m_", "r_", "btts_")) or c in ("partidos_previos", "descanso")]
     loc = largo[largo.en_casa == 1].set_index("match_id")
     vis = largo[largo.en_casa == 0].set_index("match_id")
     base = pd.DataFrame(index=loc.index)
@@ -637,12 +668,15 @@ def grupos_rasgo(base):
     """
     grupos = {"base": [], "elo": [], "h2h": [], "h2h_profundo": [], "tabla": [],
              "boxscore": [], "duelos": [], "arbitro": [], "clima": [],
-             "rotacion": [], "calidad_plantilla": [], "forma_reciente": []}
+             "rotacion": [], "calidad_plantilla": [], "forma_reciente": [],
+             "btts": []}
     for c in columnas_rasgo(base):
         if c == "liga_id":
             grupos["base"].append(c)
         elif c.endswith("_elo"):
             grupos["elo"].append(c)
+        elif c.startswith(("loc_btts_", "vis_btts_", "dif_btts_")):
+            grupos["btts"].append(c)
         elif c.startswith(("loc_r_", "vis_r_", "dif_r_")) and "duelos" not in c:
             grupos["forma_reciente"].append(c)
         elif c.startswith("h2hp_"):

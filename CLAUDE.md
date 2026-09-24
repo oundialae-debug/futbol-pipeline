@@ -798,3 +798,34 @@ El tramo más bajo baja de -14.90 a -6.16 sigmas (menos filas ahí, de
 tramos prácticamente no se mueven (ya estaban dominados por marcadores
 de ≤5 goles). A diferencia de México Liga MX, aquí el sesgo NO dependía
 de un puñado de marcadores exóticos -- aguanta quitándolos.
+
+## btts_tasa: variable específica para ambos_marcan, sin mejora clara (24/09/2026)
+
+`ambos_marcan` es el mercado más cerca de competir (-0.77s, el menos
+negativo de los 5) y no tenía ninguna variable pensada para él -- las 99
+de producción son genéricas para los 5 mercados. Probado `btts_tasa`:
+proporción de los últimos 8 partidos de cada equipo donde ÉL Y EL RIVAL
+marcaron (no es lo mismo que la media de goles que ya existe: un equipo
+puede atacar mucho y encajar poco, BTTS bajo pese a buen ataque).
+`calcular_btts()` en rasgos.py, misma regla anti-fuga (shift antes de
+rolling), sin fuga confirmada con `comprobar_sin_fuga`.
+
+Protocolo completo de 5 semillas, foco en ambos_marcan:
+
+| config | ambos_marcan sigmas | ambos_marcan acierto | suma sigmas (5 mercados) | suma acierto_dif |
+|---|---|---|---|---|
+| base+elo | -1.96s | 54.2% (-4.2pp) | -9.49 | -19.8pp |
+| base+elo+btts | -1.75s | 54.2% (-4.2pp) | -9.01 | -18.2pp |
+| producción | -0.68s | 59.0% (+0.5pp) | -8.72 | -15.3pp |
+| producción+btts | -0.65s | 57.5% (-0.9pp) | -8.73 | -19.6pp |
+
+Sola contra base+elo mejora un poco (sigma y suma), pero en el mercado
+para el que se diseñó el cambio es ruido (-0.68 a -0.65, dentro del
+margen de proceso ya visto en otras pruebas) y el ACIERTO empeora --
+pasa de ganarle al mercado por +0.5pp a perder por -0.9pp. Sumada a
+producción completa, el acierto global también empeora con claridad
+(-15.3pp -> -19.6pp, sobre todo por corners). Mismo patrón que h2h,
+tabla y rotación: ayuda un poco sola, no sobrevive a combinarse con el
+resto. No entra en `columnas_rasgo_default()`. Se documenta aunque no
+ayudó porque la pregunta ("hay algo pensado para ambos_marcan
+específicamente") merecía respuesta, no solo los casos que salen bien.
