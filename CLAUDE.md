@@ -488,3 +488,26 @@ que aplicar -- se deja escrito para no repetir esta rejilla sin una
 razón nueva (más partidos de entrenamiento sí podría justificar menos
 regularización más adelante; con los mismos ~1700 partidos de
 entrenamiento de hoy, no).
+
+## Peso por recencia: probado, sin mejora (24/09/2026)
+
+Idea: dar más peso a los partidos recientes al entrenar (`sample_weight`
+con decaimiento exponencial), por si el fútbol de hace 13 meses aporta
+menos que el de la semana pasada. Probado con vida media 730/365/180
+días contra peso uniforme (protocolo completo de 5 semillas, rasgos de
+producción):
+
+  sin decaimiento (actual)        sigmas -7.91   acierto -15.6pp
+  vida media 730d (peso min 0.81) sigmas -8.18   acierto -11.3pp
+  vida media 365d (peso min 0.65) sigmas -8.80   acierto -18.9pp
+  vida media 180d (peso min 0.42) sigmas -9.07   acierto -24.1pp
+
+Cualquier decaimiento real (365d o menos) empeora las dos métricas con
+claridad. El de 730d es casi plano (peso mínimo 0.81) y da una señal
+mixta -- ruido, no una pista real: con solo ~13 meses de historial y
+~1700 partidos de entrenamiento, restarle peso a una parte ya escasa de
+los datos no compensa. Peso uniforme se queda. Junto con la rejilla de
+hiperparámetros de arriba, el patrón es el mismo: el cuello de botella
+de este proyecto es la CANTIDAD de partidos, no el ajuste del modelo --
+cualquier técnica que reduzca el training set efectivo (más
+regularización, menos peso a partidos viejos) empeora, no mejora.
