@@ -774,3 +774,27 @@ no llega a 1 sigma con n=56 -- ruido, no señal.
 cobrar que se ha medido en este proyecto**, más incluso que Total Cards
 o First Team To Score. No se declara hallazgo -- se declara lo
 contrario de uno.
+
+**Comprobación de robustez, a petición del usuario:** ¿el -14.90 sigmas
+del tramo más bajo lo está empujando algún marcador extremo y raro (8:3,
+6:0...) con pocos casos reales, como pasó con México Liga MX en otra
+vía de este proyecto? Repetido con un tope de 5 goles por equipo
+(excluye 34.030 de las 192.932 filas -- fuera 6:0, 8:3 y similares,
+dentro el 95%+ del fútbol real):
+
+| Dice (cruda) | Pasa de verdad | Casos | Sigmas |
+|---|---|---|---|
+| 0.9% | 0.4% | 4693 | -6.16 |
+| 3.0% | 2.8% | 1328 | -0.40 |
+| 5.0% | 4.1% | 778 | -1.28 |
+| 7.1% | 4.5% | 618 | -3.02 |
+| 9.1% | 6.1% | 609 | -3.10 |
+| 11.6% | 7.4% | 608 | -3.92 |
+| 14.8% | 11.6% | 346 | -1.86 |
+| 17.8% | 23.2% | 56 | +0.97 |
+
+El tramo más bajo baja de -14.90 a -6.16 sigmas (menos filas ahí, de
+15243 a 4693) pero sigue siendo claramente significativo, y el resto de
+tramos prácticamente no se mueven (ya estaban dominados por marcadores
+de ≤5 goles). A diferencia de México Liga MX, aquí el sesgo NO dependía
+de un puñado de marcadores exóticos -- aguanta quitándolos.

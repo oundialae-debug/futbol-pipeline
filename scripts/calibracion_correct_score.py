@@ -46,6 +46,17 @@ def main():
     cs = cs.dropna(subset=["gl_linea", "gv_linea", "cuota"])
     cs = cs[cs["cuota"] > 1]
 
+    # Petición del usuario: los marcadores muy exóticos (8:3, 6:0...) casi
+    # no ocurren y pueden estar inflando el sesgo del tramo de probabilidad
+    # más baja con muy pocos casos reales. Se limita a marcadores con como
+    # mucho 5 goles por equipo -- la inmensa mayoría del fútbol real -- y
+    # se repite exactamente el mismo cálculo para ver si el sesgo aguanta.
+    TOPE_GOLES = 5
+    antes = cs.match_id.nunique()
+    cs = cs[(cs["gl_linea"] <= TOPE_GOLES) & (cs["gv_linea"] <= TOPE_GOLES)]
+    print(f"Filtrado a marcadores con máximo {TOPE_GOLES} goles por equipo: "
+          f"{len(cs)} filas, {cs.match_id.nunique()} partidos (de {antes})")
+
     hist = pd.read_csv(RUTA_HISTORICO)[["match_id", "liga", "goles_l", "goles_v"]].dropna()
     cs = cs.merge(hist, on="match_id", how="inner")
     print(f"{len(cs)} filas tras cruzar con resultado conocido, "
