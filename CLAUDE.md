@@ -345,3 +345,32 @@ Con solo 14% de cobertura ya compite con las mejores variables de la
 sesión: se lanza el backfill COMPLETO (los ~2978 jugadores restantes) en
 vez de cerrar la vía aquí -- es la única variable de toda la ronda donde
 más cobertura parece razonable esperar que ayude más, no que sume ruido.
+
+**Backfill completo (3478/3478 jugadores, terminado en una pasada): la
+apuesta salió bien.** Cobertura de titulares pasó de 1,85 a 10,2 de 11
+por equipo. Con cobertura completa:
+
+| mercado | base+elo | +calidad (100%) | +arbitro | +arbitro+calidad |
+|---|---|---|---|---|
+| resultado | -2.97s | **-2.38s** | -3.09s | -2.55s |
+| mas_2_5 | -1.09s | -0.98s | -0.85s | -0.87s |
+| ambos_marcan | -2.19s | **-1.59s** | -1.73s | -1.01s |
+| mas_9_5_corners | -1.29s | -1.40s | -1.19s | -1.55s |
+| mas_4_5_tarjetas | -1.21s | -1.82s | -1.49s | -2.14s |
+
+Suma de sigmas: base+elo -8.75, árbitro solo -8.35, **calidad_plantilla
+sola -8.17**, **árbitro+calidad_plantilla -8.12 (la mejor combinación de
+todo el proyecto)**. calidad_plantilla ya es mejor variable individual
+que árbitro. `columnas_rasgo_default()` pasa a ser
+**base + elo + árbitro + calidad_plantilla**.
+
+Sigue sin batir a ningún mercado (hace falta +2s, estamos en -0.87s a
+-2.55s) y la mezcla con el mercado en 1X2 (`aporta_algo.py`) sigue en
+peso óptimo 0,00 -- pero el cero ahora sale en el 64% de los remuestreos
+(antes 75% con solo árbitro, 83% en la primera versión del modelo). Es la
+primera vez en toda la sesión que ese número baja en vez de subir al
+mejorar el modelo. Vigilar: si sigue bajando al crecer la muestra de
+cuotas cosechadas, podría ser la primera pista real del proyecto -- pero
+con un solo punto de datos no se declara nada, exactamente la misma
+disciplina que ya enterró la mezcla vieja cuando el número subió en vez
+de bajar.

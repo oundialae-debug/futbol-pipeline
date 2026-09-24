@@ -631,16 +631,27 @@ def columnas_rasgo_default(base):
     """
     Las columnas que usa el modelo en producción.
 
-    experimentos_rasgos.py (23/09) probó cada variable nueva sola y
-    combinada contra las 5 líneas. Resultado: "base + elo + arbitro" es la
-    suma neta más alta de las probadas (suma de sigmas de los 5 mercados:
-    -8.35, frente a -8.75 de base+elo solo). Box-score empeora las 5 líneas
-    siempre. H2H y tabla, sumadas a árbitro, lo EMPEORAN en 4 de 5 mercados
-    (solo mejoran córners) -- así que tampoco entran por defecto, aunque
-    sigan en el código por si una muestra mayor cambia la cuenta. Clima,
-    solo y con menos partidos utilizables por su propia cobertura, salió
-    mayormente negativo. Rotación aún no tiene datos (falta el backfill de
-    lineups).
+    experimentos_rasgos.py probó cada variable nueva sola y combinada
+    contra las 5 líneas, en dos rondas (23/09 y 24/09). Suma de sigmas de
+    los 5 mercados, más alta (menos negativa) es mejor:
+
+      base+elo solo                        -8.75
+      +arbitro                             -8.35
+      +calidad_plantilla (cobertura 100%)  -8.17
+      +arbitro+calidad_plantilla           -8.12  <- mejor encontrada
+
+    calidad_plantilla (media de minutos y goles+asistencias de los
+    titulares en su temporada ANTERIOR ya cerrada, cruzando lineups con
+    stats de jugador -- ver CLAUDE.md "Calidad de plantilla", 24/09) es la
+    mejor variable individual de todo el proyecto, y sumada a árbitro da
+    la mejor combinación encontrada hasta ahora. Ningún mercado bate al
+    mercado todavía (hace falta +2s), pero es el mayor acercamiento visto.
+
+    Box-score empeora las 5 líneas siempre. H2H, tabla y H2H profundo,
+    sumadas a árbitro, lo empeoran en la mayoría de mercados -- no entran
+    por defecto, aunque sigan en el código por si una muestra mayor
+    cambia la cuenta. Clima salió mayormente negativo. Rotación solo
+    ayudó en tarjetas y empeoró el resto.
 
     Todas siguen fusionadas en `hist` (modelo_xgboost.cargar()) y
     disponibles vía grupos_rasgo() para volver a probarlas si crece la
@@ -648,7 +659,8 @@ def columnas_rasgo_default(base):
     HOY, con la evidencia de HOY.
     """
     grupos = grupos_rasgo(base)
-    permitidas = set(grupos["base"]) | set(grupos["elo"]) | set(grupos["arbitro"])
+    permitidas = (set(grupos["base"]) | set(grupos["elo"]) | set(grupos["arbitro"])
+                 | set(grupos["calidad_plantilla"]))
     return [c for c in columnas_rasgo(base) if c in permitidas]
 
 
