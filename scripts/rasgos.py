@@ -631,27 +631,35 @@ def columnas_rasgo_default(base):
     """
     Las columnas que usa el modelo en producción.
 
-    experimentos_rasgos.py probó cada variable nueva sola y combinada
-    contra las 5 líneas, en dos rondas (23/09 y 24/09). Suma de sigmas de
-    los 5 mercados, más alta (menos negativa) es mejor:
+    CAMBIO 24/09 (barrido_combinatorio.py): la ronda anterior (CLAUDE.md
+    "Ronda de variables cerrada") solo probó sumar cada candidata SOLA
+    encima de árbitro+calidad_plantilla -- eso descarta interacciones
+    entre candidatas que ninguna aporta por sí sola. Un barrido de las
+    256 combinaciones posibles de las 8 candidatas (cribado a 2 semillas,
+    luego las mejores reverificadas con el protocolo completo de 5) encontró
+    que h2h+h2h_profundo+tabla+arbitro+calidad_plantilla JUNTAS baten a
+    árbitro+calidad_plantilla en las dos métricas que importan, no solo
+    Brier:
 
-      base+elo solo                        -8.75
-      +arbitro                             -8.35
-      +calidad_plantilla (cobertura 100%)  -8.17
-      +arbitro+calidad_plantilla           -8.12  <- mejor encontrada
+                                          suma sigmas   suma acierto-mercado
+      base+elo solo                        -8.76           -17.3pp
+      +arbitro+calidad_plantilla (viejo)   -8.12           -18.5pp
+      +h2h+h2h_profundo+tabla+calidad      -7.94           -14.1pp
+      +arbitro+h2h+h2h_profundo+tabla+calidad -7.93        -13.8pp  <- ahora
 
-    calidad_plantilla (media de minutos y goles+asistencias de los
-    titulares en su temporada ANTERIOR ya cerrada, cruzando lineups con
-    stats de jugador -- ver CLAUDE.md "Calidad de plantilla", 24/09) es la
-    mejor variable individual de todo el proyecto, y sumada a árbitro da
-    la mejor combinación encontrada hasta ahora. Ningún mercado bate al
-    mercado todavía (hace falta +2s), pero es el mayor acercamiento visto.
+    Ningún mercado bate al mercado (haría falta +2s), y el acierto sigue
+    perdiendo en casi todos los mercados -- esto NO es un hallazgo, es
+    la mejor base encontrada hasta ahora, igual que antes. Pero por
+    primera vez el ACIERTO (no solo el Brier) mejora de forma clara al
+    cambiar de configuración: 45.3%/63.7%/58.0%/54.7%/63.2% vs mercado
+    51.4%/65.6%/58.5%/58.5%/64.7% en resultado/mas_2_5/ambos_marcan/
+    corners/tarjetas respectivamente -- sigue perdiendo en las 5, pero
+    menos que la config anterior en 4 de 5 (empate en ambos_marcan).
 
-    Box-score empeora las 5 líneas siempre. H2H, tabla y H2H profundo,
-    sumadas a árbitro, lo empeoran en la mayoría de mercados -- no entran
-    por defecto, aunque sigan en el código por si una muestra mayor
-    cambia la cuenta. Clima salió mayormente negativo. Rotación solo
-    ayudó en tarjetas y empeoró el resto.
+    calidad_plantilla sigue siendo la variable individual más fuerte del
+    proyecto. Box-score sigue fuera (empeora las 5 líneas en TODAS las
+    combinaciones del barrido). Clima y rotación no entran: su cobertura
+    parcial reduce la muestra utilizable y no compensan en el barrido.
 
     Todas siguen fusionadas en `hist` (modelo_xgboost.cargar()) y
     disponibles vía grupos_rasgo() para volver a probarlas si crece la
@@ -660,7 +668,8 @@ def columnas_rasgo_default(base):
     """
     grupos = grupos_rasgo(base)
     permitidas = (set(grupos["base"]) | set(grupos["elo"]) | set(grupos["arbitro"])
-                 | set(grupos["calidad_plantilla"]))
+                 | set(grupos["h2h"]) | set(grupos["h2h_profundo"])
+                 | set(grupos["tabla"]) | set(grupos["calidad_plantilla"]))
     return [c for c in columnas_rasgo(base) if c in permitidas]
 
 

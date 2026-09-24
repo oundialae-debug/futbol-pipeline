@@ -407,3 +407,64 @@ para batir al mercado). No es un hallazgo -- es el mejor punto de partida
 que ha tenido el proyecto para si aparece más muestra o una fuente de
 datos genuinamente distinta (el scouting en vivo, aparcado hasta que
 vuelva la competición, sigue siendo la única vía no explorada).
+
+## Acierto (hit-rate) además de Brier, y barrido de las 256 combinaciones (24/09/2026)
+
+Pregunta que faltaba responder: todos los "mejora" de arriba se miden en
+Brier (calibración). ¿El modelo acierta el resultado más veces que el
+mercado, aunque pierda en Brier? Comprobado directamente (mismos 212
+partidos, base+elo vs árbitro+calidad_plantilla vs el mercado):
+
+| mercado | acierto base+elo | acierto árbitro+calidad (viejo) | acierto mercado |
+|---|---|---|---|
+| resultado | 46.7% | 45.3% | 51.4% |
+| mas_2_5 | 59.4% | 60.8% | 65.6% |
+| ambos_marcan | 53.3% | 59.0% | 58.5% |
+| mas_9_5_corners | 53.8% | 52.8% | 58.5% |
+| mas_4_5_tarjetas | 68.2% | 62.2% | 64.7% |
+
+**El Brier y el acierto pueden moverse en direcciones distintas.** En
+`resultado` y `tarjetas`, árbitro+calidad_plantilla mejoraba el Brier
+frente a base+elo pero EMPEORABA el acierto (mejor calibrado, más veces
+equivocado en el ganador). Solo `ambos_marcan` mejoraba las dos cosas a
+la vez. Ninguna config bate al mercado en acierto tampoco: no es "el
+modelo elige mejor pero se explica peor", pierde en las dos métricas.
+
+**Barrido de las 256 combinaciones posibles de las 8 candidatas**
+(`barrido_combinatorio.py`, cribado a 2 semillas por coste -- 256 x 5
+mercados x 5 semillas completas habría tardado >1h; los mejores
+candidatos del cribado se reevaluaron después con el protocolo completo
+de 5 semillas antes de creerse nada, igual que exige este documento).
+
+El barrido encontró algo que la ronda anterior no pudo ver: esa ronda
+solo probó sumar cada candidata SOLA encima de árbitro+calidad_plantilla
+("+h2h -7.84 peor", "+tabla -8.12 empate", etc., ver sección anterior).
+Nunca probó combinarlas ENTRE ELLAS. Con el protocolo completo de 5
+semillas, confirmado:
+
+| config | suma sigmas | suma (acierto modelo - acierto mercado) |
+|---|---|---|
+| base+elo solo | -8.76 | -17.3pp |
+| árbitro+calidad_plantilla (config anterior) | -8.12 | -18.5pp |
+| h2h+h2h_profundo+tabla+calidad_plantilla (sin árbitro) | -7.94 | -14.1pp |
+| **árbitro+h2h+h2h_profundo+tabla+calidad_plantilla (nueva default)** | **-7.93** | **-13.8pp** |
+| las 8 candidatas juntas (kitchen sink) | -10.17 | -17.6pp (peor, y menos partidos por la cobertura de clima) |
+
+La nueva combinación gana en 4 de 5 mercados en acierto frente a la
+config anterior (empate en ambos_marcan), y en 3 de 5 en sigmas. Sigue
+sin batir al mercado en ningún mercado (haría falta +2s; estamos en
+-0.95s a -2.46s) y el acierto sigue perdiendo en las 5 líneas -- esto
+NO es un hallazgo, es la mejor base encontrada hasta ahora, con las DOS
+métricas moviéndose a la vez por primera vez en vez de solo el Brier.
+
+`columnas_rasgo_default()` pasa a ser **base + elo + árbitro + h2h +
+h2h_profundo + tabla + calidad_plantilla**. Box-score, clima y rotación
+siguen fuera (el barrido de las 256 confirma que empeoran en
+prácticamente todas las combinaciones donde aparecen, incluida la de
+las 8 juntas).
+
+El bootstrap de `aporta_algo.py` (peso óptimo de mezcla en 1X2) sale
+cero en el 68% de los remuestreos con la nueva config -- no es
+comparable directamente con el 64% de la config anterior (es una
+combinación de rasgos distinta, no el mismo modelo con más cuotas). Se
+reinicia el seguimiento de esa cifra desde este punto.
