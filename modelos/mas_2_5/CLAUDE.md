@@ -118,3 +118,20 @@ contra el mercado** (elegida tras ver la prueba: algo inflada).
   confirma que viene para no-porteros.
 - Cualquier variable nueva: más columnas con ~3.600 filas de entrenamiento
   ya se sabe que resta.
+
+## Sin ningún bloque de base (sin_base.py, 24/09/2026)
+
+Petición del usuario: quitar la base. 63 combinaciones de los 6 grupos
+(+liga), elegida en selección: tabla+cp_ataque+cp_minutos+h2h_reciente.
+Prueba final (528, 186 con cuota), frente a base_clasica+elo+g/a:
+
+| modelo | vs mejor con base | vs mercado | acierto |
+|---|---|---|---|
+| base_clasica+elo+g/a | -- | -0.66s | 63.4% |
+| sin base, elegido | -1.80s | -2.37s | 59.7% |
+| sin base, elo+tabla+g/a | -1.81s | -2.74s | 57.5% |
+| sin base, las 6 | -2.43s | -3.25s | 54.8% |
+| mercado | | | 68.3% |
+
+Quitar la base empeora en todos los casos: las medias de goles, tiros y xG
+son lo que más sabe de este mercado. No repetir.
