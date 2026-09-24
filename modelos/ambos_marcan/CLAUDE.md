@@ -278,3 +278,49 @@ todo), pero no hay manera honesta de probarla bien hasta que la cosecha
 diaria de cuotas acumule meses que solapen con el periodo de
 entrenamiento, no solo con el de validación. Revisar cuando
 `data/cuotas_cosechadas.csv` tenga cuotas de antes de abril de 2026.
+
+## Las 42 combinaciones (≥3 variables) de las 6 ideas: ninguna gana, y por qué el barrido crudo mentía (24/09/2026)
+
+Petición del usuario: probar TODAS las combinaciones de tamaño 3 en
+adelante de las 6 variables (árbitro ventana 20, h2h reciente, tabla
+goles, impacto jugador, localía, momentum5) sumadas a producción --
+C(6,3)+C(6,4)+C(6,5)+C(6,6) = 42 combinaciones
+(`scripts/experimentos_combinaciones.py`, protocolo de 5 semillas, foco
+en ambos_marcan, resultados completos en
+`data/combinaciones_seis_variables.csv`).
+
+**El barrido crudo, leído tal cual, parecía dar un ganador:**
+`árbitro_v20+h2h_reciente+tabla_goles+localía` salía con -0.667s, mejor
+que el -0.68s de la producción estándar. Pero esa lectura estaba mal
+planteada, y el propio proceso de comprobarlo es la parte que vale la
+pena dejar escrita.
+
+**El error: `localía` reduce la muestra de 2239 a 2090 partidos** (su
+`min_periods=3` exige más historial específico de casa/fuera del que
+algunos equipos tienen pronto en la temporada). Eso cambia también
+DÓNDE cae el corte de validación 75/25, así que el "-0.68s de
+producción" contra el que se comparaba no es el número correcto de
+referencia -- es el de OTRA muestra. Comparando producción SOLA (sin
+ninguna variable nueva) en esa MISMA submuestra de 2090 partidos:
+
+    produccion sola (submuestra de localia, n=2090):  -0.93s   acierto 61.3% vs 59.3% (+2.0pp)
+    mejor combo del barrido (mismo n=2090):            -0.667s  acierto 57.7% vs 59.3% (-1.6pp)
+
+**Producción sola gana en acierto con claridad** (61.3% contra 57.7%,
+en los mismos partidos exactos) aunque pierda en sigmas -- exactamente
+el tipo de contradicción Brier/acierto que este documento y el del repo
+padre llevan avisando desde el principio: mirar solo una métrica, o
+comparar contra la referencia equivocada, hace parecer ganador a algo
+que no lo es. Restringiendo la comparación a las combinaciones que SÍ
+usan los mismos 2239 partidos que la producción estándar (las que no
+llevan `localía`), la mejor es `árbitro_v20+h2h_reciente+tabla_goles`
+con -0.86s -- peor que el -0.68s de producción sola, no mejor.
+
+**Conclusión, con las 42 comparadas correctamente: ninguna combinación
+de las 6 variables nuevas mejora la producción actual**, ni sola ni
+combinada de ninguna forma. Se cierra esta ronda completa. Lección para
+la próxima variable que reduzca la muestra utilizable (cualquier cosa
+con `min_periods` alto o cobertura parcial): comparar siempre contra la
+producción calculada en la MISMA submuestra, nunca contra el número de
+referencia calculado en una muestra distinta, por parecida que sea el
+tamaño.
