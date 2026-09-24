@@ -374,3 +374,8 @@ cuotas cosechadas, podría ser la primera pista real del proyecto -- pero
 con un solo punto de datos no se declara nada, exactamente la misma
 disciplina que ya enterró la mezcla vieja cuando el número subió en vez
 de bajar.
+
+Barrido de qué más sumar encima de árbitro+calidad_plantilla (suma -8.12):
++tabla -8.12 (empate), +rotación -8.12 (empate), +h2h_profundo -8.00
+(peor), +h2h -7.84 (peor), +clima -8.73 (peor, y menos partidos
+utilizables). Nada mejora la combinación actual. Se queda como está.
