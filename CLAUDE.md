@@ -724,3 +724,53 @@ Nota técnica para el futuro: `/leagues` acepta `leagueName` (coincidencia
 exacta del nombre en la API, no libre) y `/matches` acepta `leagueId`+
 `date` (un día por llamada) -- útil si hace falta sondear otra
 competición internacional que este proyecto no tenga configurada.
+
+## Correct Score: calibración medida, y va en la dirección contraria (24/09/2026)
+
+Hipótesis del usuario: con decenas de marcadores posibles, casi todos de
+probabilidad baja, Correct Score sería donde más se equivocaría el
+mercado. `censo_margenes.py` ya excluía este mercado del cálculo de
+MARGEN a propósito -- el conjunto de marcadores cotizados es incompleto
+(no todas las casas ponen precio a 7:2), y sumar 1/cuota sobre un
+conjunto incompleto da un margen falsamente bajo. Pero CALIBRACIÓN no
+tiene ese problema: no hace falta el conjunto completo, solo comparar
+cada línea contra lo que pasó de verdad.
+
+Dato que nadie había mirado: `data/cuotas_cosechadas.csv` ya tenía
+192.932 filas de Correct Score (301 partidos) sin usar -- el clasificador
+de familias de `backtest_valor.py` no reconoce "Correct Score" y las
+descarta en silencio, el mismo patrón de "First Team To Score" con
+mayúscula del principio de este documento. 251 de esos partidos ya
+tienen resultado conocido.
+
+`scripts/calibracion_correct_score.py`: probabilidad CRUDA (1/cuota
+mediana entre casas, SIN desmarginar -- no se puede sin conjunto
+completo) contra la frecuencia real, 19.645 pares partido+marcador:
+
+| Dice (cruda) | Pasa de verdad | Casos | Sigmas |
+|---|---|---|---|
+| 0.5% | 0.1% | 15243 | **-14.90** |
+| 3.0% | 2.7% | 1376 | -0.63 |
+| 5.0% | 4.1% | 784 | -1.33 |
+| 7.1% | 4.7% | 621 | -2.82 |
+| 9.1% | 6.1% | 611 | -3.13 |
+| 11.6% | 7.4% | 608 | -3.92 |
+| 14.8% | 11.6% | 346 | -1.86 |
+| 17.8% | 23.2% | 56 | +0.97 |
+
+**Va justo al revés de la hipótesis.** La cruda ya lleva margen dentro
+-- lo normal es que la frecuencia real quede por debajo de lo que dice
+la cuota, y eso es exactamente lo que pasa, con fuerza: los marcadores
+más raros (probabilidad cruda bajo 2%, la mayoría de las filas) pasan
+5 veces MENOS de lo que ya sugiere un precio inflado por margen
+(-14.90 sigmas, no es ruido). Cuanto más exótico el marcador, más se
+pasa la casa cobrando -- coherente con el patrón ya visto en
+`censo_margenes.md` (Total Cards y First Team To Score, los mercados
+menos líquidos, tienen el margen más alto). El único tramo con signo a
+favor (17.8% dice, 23.2% pasa, marcadores más comunes tipo 1:1/1:0/2:1)
+no llega a 1 sigma con n=56 -- ruido, no señal.
+
+**Cerrado: Correct Score no es una grieta, es el mercado más caro de
+cobrar que se ha medido en este proyecto**, más incluso que Total Cards
+o First Team To Score. No se declara hallazgo -- se declara lo
+contrario de uno.
