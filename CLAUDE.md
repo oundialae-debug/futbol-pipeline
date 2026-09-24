@@ -309,3 +309,39 @@ esa línea de toda la ronda), pero empeora las otras 3 de 5. Combinado con
 córners casi no se mueven), pero no lo suficiente para ganarle a "árbitro
 solo". Mismo veredicto que todo lo demás: mejor cobertura no fue mejor
 señal. No entra en `columnas_rasgo_default()`.
+
+## Calidad de plantilla (24/09/2026): el mejor resultado de toda la sesión
+
+Cruza quién JUEGA de verdad (alineaciones, ya backfilleadas) con lo que
+rindió cada jugador en su temporada ANTERIOR ya cerrada -- minutos y
+goles+asistencias medios de los titulares con dato conocido, con un
+contador de cuántos de los 11 son conocidos (media, no suma, para no
+confundir "equipo bueno" con "equipo con más jugadores en la muestra").
+`sondeo_jugador_stats.py` (24/09) confirmó que la API rompe limpio por
+temporada y que la anterior es un hecho fijo, sin fuga posible.
+
+Backfill de validación con SOLO 500 de los 3478 jugadores únicos
+(priorizados por frecuencia de aparición): 74% de los partidos ya tienen
+al menos 1 titular conocido, media 1,85 de 11 por equipo.
+
+| mercado | base+elo | +calidad_plantilla | +arbitro | +arbitro+calidad |
+|---|---|---|---|---|
+| resultado | -2.97s | **-2.76s** | -3.09s | **-2.89s** |
+| mas_2_5 | -1.09s | -1.27s | -0.85s | -1.23s |
+| ambos_marcan | -2.19s | -2.17s | -1.73s | -1.78s |
+| mas_9_5_corners | -1.29s | **-1.06s** | -1.19s | -1.19s |
+| mas_4_5_tarjetas | -1.21s | **-1.17s** | -1.49s | **-1.40s** |
+
+**Sola, mejora 3 de 5 mercados de forma clara** (suma de sigmas -8.43
+contra -8.75 de base+elo, +0.32 neto) -- con solo el 14% de los
+jugadores cubiertos. Es el mejor resultado individual de toda la sesión
+después de árbitro, y el único que mejora `resultado` Y `mas_9_5_corners`
+Y `mas_4_5_tarjetas` a la vez. Combinada con árbitro, la suma es -8.49 --
+peor que árbitro solo (-8.35) pero mejor que cualquier otra combinación
+probada con árbitro, y `resultado` mejora notablemente en la combinación
+(-3.09s -> -2.89s).
+
+Con solo 14% de cobertura ya compite con las mejores variables de la
+sesión: se lanza el backfill COMPLETO (los ~2978 jugadores restantes) en
+vez de cerrar la vía aquí -- es la única variable de toda la ronda donde
+más cobertura parece razonable esperar que ayude más, no que sume ruido.

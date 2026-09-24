@@ -27,7 +27,8 @@ import evaluar_mercados as EM
 # experimentos (probado, documentado, se queda siempre). Lo demás se prueba
 # solo y combinado.
 NUCLEO = ["base", "elo"]
-CANDIDATAS = ["h2h", "h2h_profundo", "tabla", "boxscore", "arbitro", "clima", "rotacion"]
+CANDIDATAS = ["h2h", "h2h_profundo", "tabla", "boxscore", "arbitro", "clima",
+             "rotacion", "calidad_plantilla"]
 
 
 def configuraciones():

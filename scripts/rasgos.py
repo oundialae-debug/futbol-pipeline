@@ -431,6 +431,74 @@ def calcular_rotacion(hist):
                          "vis_rotacion_conocida": n_prev_v})
 
 
+RUTA_LINEUPS = "data/historico_lineups.csv"
+RUTA_JUGADOR_STATS = "data/historico_jugador_stats.csv"
+
+
+def _temporada_anterior_str(year):
+    """temporada=2025 (liga "25/26") -> temporada anterior "24/25"."""
+    y = int(year)
+    return f"{(y - 1) % 100:02d}/{y % 100:02d}"
+
+
+def calcular_calidad_plantilla(hist, jugador_stats_crudo):
+    """
+    Calidad de la ALINEACIÓN TITULAR, no del equipo en abstracto -- cruza
+    quién juega de verdad (`local_ids`/`visitante_ids`, ya fusionados en
+    `hist` desde historico_lineups.csv por modelo_xgboost.cargar()) con lo
+    que rindió cada jugador en la temporada ANTERIOR ya cerrada (hecho
+    histórico fijo, sin fuga posible: la temporada en curso sigue
+    acumulando, comprobado en sondeo_jugador_stats.py, 24/09).
+
+    Con solo una fracción de los 3478 jugadores backfilleados, la mayoría
+    de partidos tienen cobertura PARCIAL de su once titular. Sumar
+    minutos/goles de los conocidos confundiría "equipo bueno" con "equipo
+    con más jugadores en nuestra muestra" -- se usa la MEDIA por jugador
+    conocido, no la suma, y se guarda cuántos de los 11 son conocidos para
+    que el modelo pueda descontar una media con poca base.
+    """
+    stats_prev = {}  # (jugador_id, temporada) -> (minutos, goles+asist, partidos)
+    for _, fila in jugador_stats_crudo.dropna(subset=["temporada"]).iterrows():
+        clave = (int(fila["jugador_id"]), fila["temporada"])
+        m = pd.to_numeric(fila.get("minutos"), errors="coerce") or 0
+        g = pd.to_numeric(fila.get("goles"), errors="coerce") or 0
+        a = pd.to_numeric(fila.get("asistencias"), errors="coerce") or 0
+        p = pd.to_numeric(fila.get("partidos"), errors="coerce") or 0
+        m0, ga0, p0 = stats_prev.get(clave, (0.0, 0.0, 0.0))
+        stats_prev[clave] = (m0 + m, ga0 + g + a, p0 + p)
+
+    def calidad_equipo(ids_str, temporada_str):
+        if pd.isna(ids_str):
+            return 0.0, 0.0, 0
+        minutos, ga = [], []
+        for jid_s in ids_str.split("|"):
+            clave = (int(jid_s), temporada_str)
+            if clave in stats_prev:
+                m, g_a, _ = stats_prev[clave]
+                minutos.append(m)
+                ga.append(g_a)
+        n = len(minutos)
+        if n == 0:
+            return 0.0, 0.0, 0
+        return float(np.mean(minutos)), float(np.mean(ga)), n
+
+    if "local_ids" not in hist.columns or "visitante_ids" not in hist.columns:
+        return pd.DataFrame({"match_id": hist["match_id"].values})
+
+    filas = []
+    for _, fila in hist.iterrows():
+        temporada_str = _temporada_anterior_str(fila["temporada"])
+        m_l, ga_l, n_l = calidad_equipo(fila.get("local_ids"), temporada_str)
+        m_v, ga_v, n_v = calidad_equipo(fila.get("visitante_ids"), temporada_str)
+        filas.append({
+            "match_id": fila["match_id"],
+            "loc_calidad_minutos": m_l, "vis_calidad_minutos": m_v,
+            "loc_calidad_ga": ga_l, "vis_calidad_ga": ga_v,
+            "loc_calidad_conocidos": n_l, "vis_calidad_conocidos": n_v,
+        })
+    return pd.DataFrame(filas)
+
+
 def construir(hist):
     """Una fila por partido, con los rasgos de los dos equipos enfrentados."""
     largo = medias_previas(a_largo(hist))
@@ -462,6 +530,15 @@ def construir(hist):
         base["h2hp_partidos_previos"] = h2hp["h2hp_partidos_previos"]
         base["h2hp_pts_local_norm"] = h2hp["h2hp_pts_local_norm"]
         base["h2hp_gd_local"] = h2hp["h2hp_gd_local"]
+    if os.path.exists(RUTA_JUGADOR_STATS):
+        jug_crudo = pd.read_csv(RUTA_JUGADOR_STATS)
+        calidad = calcular_calidad_plantilla(hist, jug_crudo)
+        if "loc_calidad_minutos" in calidad.columns:
+            calidad = calidad.set_index("match_id")
+            for c in ("calidad_minutos", "calidad_ga", "calidad_conocidos"):
+                base[f"loc_{c}"] = calidad[f"loc_{c}"]
+                base[f"vis_{c}"] = calidad[f"vis_{c}"]
+                base[f"dif_{c}"] = calidad[f"loc_{c}"] - calidad[f"vis_{c}"]
     # árbitro y clima: igual que box-score, solo entran si el backfill ya
     # tiene cobertura real -- una columna casi vacía tira todas las filas
     # via notna() aguas abajo (bug ya visto y arreglado el 21/09).
@@ -522,7 +599,8 @@ def grupos_rasgo(base):
     "una a una, y luego combinaciones" en vez de solo acumular.
     """
     grupos = {"base": [], "elo": [], "h2h": [], "h2h_profundo": [], "tabla": [],
-             "boxscore": [], "arbitro": [], "clima": [], "rotacion": []}
+             "boxscore": [], "arbitro": [], "clima": [], "rotacion": [],
+             "calidad_plantilla": []}
     for c in columnas_rasgo(base):
         if c == "liga_id":
             grupos["base"].append(c)
@@ -540,6 +618,8 @@ def grupos_rasgo(base):
             grupos["clima"].append(c)
         elif "rotacion" in c:
             grupos["rotacion"].append(c)
+        elif "calidad_" in c:
+            grupos["calidad_plantilla"].append(c)
         elif any(m in c for m in MEDIDAS_BOXSCORE):
             grupos["boxscore"].append(c)
         else:
