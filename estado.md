@@ -134,11 +134,17 @@ muestra**, que es la firma de un hallazgo falso.
   llamadas de 7.500.
 - **El backfill grita** cuando una liga vuelve vacía, y guarda igual.
 
-## Lo que falta
+## Lo que falta (actualizado 24/09/2026)
 
-- **La Segunda: cero filas.** El ID 121085 no devuelve nada. Faltan ~400
-  partidos de entrenamiento. `buscar_ligas.py` está escrito para encontrar el
-  ID bueno por país.
-- **Alineación, árbitro y tiempo.** Existen (`/lineups` a 40 minutos,
-  `/matches/{id}` para árbitro y forecast) pero no se pueden traer hacia
-  atrás. El modelo de arriba es el modelo SIN ellos.
+- ~~La Segunda: cero filas.~~ **Resuelto.** El ID bueno es 120775 (ya en
+  `LIGAS` de `backfill_historico.py`) y trae 532 partidos -- la liga con
+  más datos de las seis. Esta sección se quedó sin actualizar cuando se
+  arregló; `buscar_ligas.py` ya no hace falta pero se deja por si aparece
+  otro ID roto.
+- ~~Alineación, árbitro y tiempo: no se pueden traer hacia atrás.~~ **Era
+  falso, nunca se comprobó con datos reales.** Comprobado el 23/09
+  (`sondeo_matches.py`, `sondeo_lineups.py`) contra partidos de hace 13
+  meses: los tres SÍ están disponibles retroactivamente. Backfill completo
+  de los tres. Árbitro es la mejor variable nueva probada en todo el
+  proyecto (ver CLAUDE.md, "Árbitro, clima y rotación"); ya es parte del
+  modelo de producción.
