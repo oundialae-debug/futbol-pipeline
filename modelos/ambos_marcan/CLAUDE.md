@@ -316,11 +316,34 @@ usan los mismos 2239 partidos que la producción estándar (las que no
 llevan `localía`), la mejor es `árbitro_v20+h2h_reciente+tabla_goles`
 con -0.86s -- peor que el -0.68s de producción sola, no mejor.
 
-**Conclusión, con las 42 comparadas correctamente: ninguna combinación
-de las 6 variables nuevas mejora la producción actual**, ni sola ni
-combinada de ninguna forma. Se cierra esta ronda completa. Lección para
-la próxima variable que reduzca la muestra utilizable (cualquier cosa
-con `min_periods` alto o cobertura parcial): comparar siempre contra la
-producción calculada en la MISMA submuestra, nunca contra el número de
-referencia calculado en una muestra distinta, por parecida que sea el
-tamaño.
+**Corrección posterior (el usuario, con razón): el acierto era la
+métrica equivocada para decidir.** En apuestas manda el Brier/sigma --
+se apuesta comparando la probabilidad con la cuota, no eligiendo
+ganador. Rehecho con la prueba correcta: Brier emparejado partido a
+partido, combo contra producción, mismos 194 partidos de validación
+(`scripts/comparar_combo_vs_produccion.py`):
+
+| config | vs producción | vs mercado |
+|---|---|---|
+| árbitro_v20+h2h_rec+tabla_goles+localía | +0.83s | -0.68s |
+| árbitro_v20+h2h_rec+tabla_goles+localía+mom5 | +0.32s | -0.79s |
+| árbitro_v20+h2h_rec+localía | +0.18s | -0.84s |
+| árbitro_v20+tabla_goles+localía | -0.07s | -0.92s |
+| árbitro_v20+tabla_goles+localía+mom5 | -0.24s | -0.99s |
+| producción (árbitro original) | -- | -0.88s |
+
+El mejor combo SÍ mejora a producción en sigma (+0.83), pero: (1) lejos
+de +2s, no se distingue del azar con 194 partidos; (2) es el mejor de
+42, y entre los 5 mejores sale mezclado (3 mejoran, 2 empeoran) --
+exactamente lo que se espera si el efecto real es cero y se está viendo
+al que tuvo suerte en la selección. **Pista, no hallazgo.** No entra en
+producción. Candidato a revisar con más partidos: si el +0.83 sube hacia
++2 al crecer la muestra, es real; si baja hacia 0, era selección (misma
+regla que ya enterró la mezcla en el repo padre).
+
+Lecciones de esta ronda: (1) con variables que reducen la muestra,
+comparar siempre en la MISMA submuestra; (2) para decidir entre dos
+modelos, comparar los dos modelos entre sí partido a partido (Brier
+emparejado), no cada uno por separado contra el mercado; (3) el mejor
+de N combinaciones está inflado por selección -- mirar si el patrón se
+repite en los siguientes, no solo el primero.
