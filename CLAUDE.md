@@ -610,3 +610,45 @@ de solo 3 partidos es demasiado ruidosa (varianza alta con tan pocos
 partidos por muestra) para añadir información que esas dos no den ya.
 No entra en `columnas_rasgo_default()`. La lógica de fútbol era
 razonable -- la comprobación con datos reales es la que manda.
+
+**Repregunta del usuario, con razón:** ¿cómo va a ser ruido la forma
+reciente si un equipo arrasando la liga (su ejemplo: el Barça este
+inicio) obviamente va a golear al siguiente rival? Comprobado en vez de
+solo argumentado:
+
+1. **Correlación real entre ventana corta y larga: 0,70-0,72**
+   (`loc_m_puntos` vs `loc_r_puntos`, `vis_` igual; Elo vs r_puntos:
+   0,59). Confirma la explicación: la ventana de 3 no es ruido en el
+   sentido de "no informa", es en gran parte la MISMA información que
+   ya llevan Elo y la ventana de 8 -- un equipo arrasando ya tiene Elo
+   alto y m_puntos alto, porque ambos usan partidos recientes también.
+   Añadirla en bruto duplica señal correlacionada y solo suma varianza
+   con ~1700 partidos de entrenamiento.
+
+2. **Se probó la parte que NO es redundante: `momentum = r_puntos -
+   m_puntos`** (puntos y goles de los últimos 3 MENOS la base de 8 --
+   "¿el equipo rinde por encima o por debajo de su propio nivel ya
+   establecido AHORA MISMO?", que es literalmente lo que describe el
+   ejemplo del Barça). Resultado, protocolo completo de 5 semillas:
+
+     produccion            resultado -2.42s/45.3%  mas_2_5 -1.24s/63.2%  ambos_marcan -0.68s/59.0%  corners -1.63s/55.7%  tarjetas -2.75s/60.2%
+     produccion+momentum   resultado -2.57s/46.2%  mas_2_5 -1.13s/61.8%  ambos_marcan -0.84s/59.9%  corners -1.71s/54.7%  tarjetas -2.90s/60.2%
+
+   Mezclado: mejora acierto en resultado y ambos_marcan, empeora en
+   mas_2_5 y corners, tarjetas sin cambio. Nada consistente en ninguna
+   dirección -- a diferencia de la versión en bruto (que empeoraba las
+   5 líneas con claridad), esto es RUIDO estadístico alrededor de cero,
+   no un empeoramiento sistemático. No entra en producción (no hay
+   nada que declarar con esto), pero es una respuesta distinta a "no
+   sirve": es "puede que haya algo, 2239 partidos no bastan para verlo".
+
+3. **La razón de fondo, la más importante:** que la forma reciente
+   prediga bien el PARTIDO no significa que nos dé ventaja sobre la
+   CASA. El Barça arrasando no es un secreto -- las casas también lo
+   ven, y por eso su cuota para golear ya está corta. Este proyecto no
+   mide "¿la forma reciente predice fútbol?" (sí, obviamente) sino
+   "¿nos da información que el precio no lleve ya dentro?", que es una
+   pregunta distinta y más difícil. Es la misma razón por la que el
+   Elo -- una de las variables más predictivas que existen en fútbol,
+   documentada como tal en este mismo fichero -- tampoco basta para
+   batir al mercado solo.
