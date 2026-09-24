@@ -248,7 +248,21 @@ código. Ninguna combinación bate al mercado (todas siguen entre -0.85s y
 -3.19s, hace falta +2s), pero es la mejor base encontrada hasta ahora.
 
 Rotación (titulares que cambian respecto al partido anterior del mismo
-equipo) aún sin datos -- pendiente backfill_lineups.yml.
+equipo, por ID de jugador): backfill completo (2510/2539 partidos, 2442
+con rotación calculable). Probada sola y con árbitro:
+
+| mercado | base+elo | +rotacion | +arbitro | +arbitro+rotacion |
+|---|---|---|---|---|
+| resultado | -2.97s | -3.07s | -3.09s | -3.13s |
+| mas_2_5 | -1.09s | -1.13s | -0.85s | -0.95s |
+| ambos_marcan | -2.19s | -2.31s | -1.73s | -1.98s |
+| mas_9_5_corners | -1.29s | -1.29s | -1.19s | -1.20s |
+| mas_4_5_tarjetas | -1.21s | **-1.03s** | -1.49s | -1.54s |
+
+Rotación sola solo ayuda en tarjetas, empeora las demás. Sumada a árbitro,
+lo empeora en 4 de 5 -- mismo patrón que tabla y h2h: la única variable
+que sobrevive a combinarse sin perder es ninguna, árbitro gana siempre
+solo. No entra en `columnas_rasgo_default()`.
 
 **Box-score empeora los 5 mercados en TODAS las combinaciones donde
 aparece**, aislado o mezclado. Confirma el hallazgo del 22/09 con una
