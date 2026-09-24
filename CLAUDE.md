@@ -379,3 +379,31 @@ Barrido de qué más sumar encima de árbitro+calidad_plantilla (suma -8.12):
 +tabla -8.12 (empate), +rotación -8.12 (empate), +h2h_profundo -8.00
 (peor), +h2h -7.84 (peor), +clima -8.73 (peor, y menos partidos
 utilizables). Nada mejora la combinación actual. Se queda como está.
+
+## Ronda de variables cerrada (24/09/2026): superficie de la API agotada
+
+`/standings` y `/teams/statistics/{id}` son las dos rutas que quedaban de
+las 25 de `docs/openapi_highlightly.json` sin probar. Descartadas sin
+gastar llamada, directo de la spec: ninguna tiene un parámetro de fecha
+FINAL (`/standings` no tiene fecha en absoluto -- solo `leagueId`+
+`season`, un snapshot de HOY; `/teams/statistics/{id}` solo tiene
+`fromDate`, sin `toDate`). Las dos son "estadísticas hasta hoy", no
+"estadísticas hasta la fecha X" -- estructuralmente imposibles de usar
+para un partido histórico sin meter información posterior a ese partido.
+`/standings` además es redundante con `calcular_tabla()`, que ya calcula
+posición y puntos sin fuga desde el propio histórico.
+
+Con esto, las rutas de la API con alguna promesa de variable histórica
+sin fuga están agotadas: box-score, árbitro, clima, alineaciones/rotación,
+H2H (propio y profundo vía API), y calidad de plantilla vía jugadores.
+De siete vías probadas esta ronda (23-24/09), una funcionó de verdad
+(calidad de plantilla) y otra parcialmente (árbitro). Las cinco restantes
+(box-score, H2H, H2H profundo, tabla, rotación, clima) se probaron con
+rigor y no ayudan, solas o combinadas con lo que sí funciona.
+
+Modelo de producción actual: base + Elo + árbitro + calidad de plantilla.
+Mejor resultado conseguido: -0.87s a -2.55s según mercado (necesita +2s
+para batir al mercado). No es un hallazgo -- es el mejor punto de partida
+que ha tenido el proyecto para si aparece más muestra o una fuente de
+datos genuinamente distinta (el scouting en vivo, aparcado hasta que
+vuelva la competición, sigue siendo la única vía no explorada).
