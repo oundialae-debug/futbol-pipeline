@@ -341,6 +341,27 @@ producción. Candidato a revisar con más partidos: si el +0.83 sube hacia
 +2 al crecer la muestra, es real; si baja hacia 0, era selección (misma
 regla que ya enterró la mezcla en el repo padre).
 
+**Y con más muestra se desinfla.** Los 194 partidos eran solo los que
+tienen cuota (cosecha desde el 24/08/2026). Pero comparar combo contra
+producción NO necesita cuota: los dos modelos predicen todos los
+partidos de validación, que son 521. El script ahora hace las dos
+comparaciones, cada una con su muestra correcta:
+
+| config | vs producción (194) | vs producción (521) |
+|---|---|---|
+| árbitro_v20+h2h_rec+tabla_goles+localía | +0.83s | +0.66s |
+| árbitro_v20+tabla_goles+localía | -0.07s | +0.20s |
+| árbitro_v20+h2h_rec+localía | +0.18s | -0.39s |
+| árbitro_v20+h2h_rec+tabla_goles+localía+mom5 | +0.32s | -0.74s |
+| árbitro_v20+tabla_goles+localía+mom5 | -0.24s | -1.37s |
+
+El mejor baja de +0.83 a +0.66 al casi triplicar la muestra, y de los 5
+solo quedan 2 en positivo. Regla del repo padre: si el número se mueve
+hacia cero al crecer la muestra, era falso. Va en esa dirección -- la
+pista se debilita. Lección extra: para comparar dos modelos entre sí no
+hace falta cuota, así que no hay que limitarse a los partidos con cuota;
+eso solo hace falta para comparar contra el mercado.
+
 Lecciones de esta ronda: (1) con variables que reducen la muestra,
 comparar siempre en la MISMA submuestra; (2) para decidir entre dos
 modelos, comparar los dos modelos entre sí partido a partido (Brier

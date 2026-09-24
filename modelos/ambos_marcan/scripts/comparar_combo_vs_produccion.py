@@ -35,32 +35,31 @@ base = bc[bc[todas].notna().all(axis=1)].sort_values('fecha').reset_index(drop=T
 corte = int(len(base) * (1 - M.PROPORCION_VALIDACION))
 ent = base.iloc[:corte]
 fecha_corte = pd.to_datetime(ent.fecha.max())
+# Dos validaciones distintas, cada una con su muestra correcta:
+# - combo vs PRODUCCION no necesita cuota -> todos los partidos de validacion
+# - modelo vs MERCADO solo donde hay cuota (cosecha desde el 24/08/2026)
 val = base[pd.to_datetime(base.fecha) > fecha_corte]
-val = val[val.match_id.isin(pmer_todos.index)]
+con_cuota = val.match_id.isin(pmer_todos.index).values
 y = val['ambos_marcan'].values.astype(int)
 y_ent = ent['ambos_marcan'].values.astype(int)
-pm = pmer_todos.loc[val.match_id].values
-print(f"{len(base)} partidos, mismos para todas las configs. Validacion con cuota: {len(val)}\n")
+print(f"{len(base)} partidos, mismos para todas las configs. Validacion: {len(val)} "
+      f"(de ellos {con_cuota.sum()} con cuota)\n")
 
-def brier_partido(p):
-    return (p - y) ** 2 * 2    # Brier binario de 2 clases = 2*(p-y)^2
-
-b_mercado = brier_partido(pm)
+b_mercado = 2 * (pmer_todos.loc[val.match_id[con_cuota]].values - y[con_cuota]) ** 2
 b = {}
 for nombre, cols in CONFIGS.items():
     preds = []
     for s in EM.SEMILLAS:
         m = M.entrenar(ent[cols].values, y_ent, 2, semilla=s)
         preds.append(M.probabilidades(m, val[cols].values, 2)[:, 1])
-    b[nombre] = brier_partido(np.mean(preds, axis=0))
+    b[nombre] = 2 * (np.mean(preds, axis=0) - y) ** 2
 
 def sig(d):
-    ee = d.std(ddof=1) / np.sqrt(len(d))
-    return d.mean() / ee
+    return d.mean() / (d.std(ddof=1) / np.sqrt(len(d)))
 
 ref = b['produccion (arbitro original)']
-print(f"{'config':45s} {'vs mercado':>11s} {'vs produccion':>14s}")
+print(f"{'config':45s} {'vs produccion':>14s} {'vs mercado':>11s}")
 for nombre, bb in b.items():
-    vs_merc = sig(b_mercado - bb)
     vs_prod = sig(ref - bb) if nombre != 'produccion (arbitro original)' else 0.0
-    print(f"{nombre:45s} {vs_merc:+10.2f}s {vs_prod:+13.2f}s")
+    vs_merc = sig(b_mercado - bb[con_cuota])
+    print(f"{nombre:45s} {vs_prod:+13.2f}s {vs_merc:+10.2f}s")
