@@ -266,3 +266,26 @@ Lo que se "ganó" en selección era ajustarse a esos 388 partidos: 18 pruebas
 seguidas sobre el mismo tramo, quedándose con lo que sale positivo por azar
 (tres de las cuatro, por debajo de +1.3s). **El modelo de 28 rasgos se queda
 como está.** No reabrir estas 18 con la misma muestra.
+
+## Quitar puntos y pases + "quién gana" (ganar_y_goles.py, 24/09/2026)
+
+Dato de partida: gana el local -> 63% Más 2.5, gana el visitante -> 60%,
+empate -> 27%. Variables del usuario: V1 = % de Más 2.5 en las últimas 10
+victorias del local en casa / visitante fuera; V2 = minimodelo 1X2 (logística
+con Elo y % de victorias en casa/fuera, ajustada solo con entrenamiento;
+acierta el ganador el 50.4%); combinada = P(gana)·V1 + P(empate)·tasa en
+empates. Sin fuga (comprobado).
+
+| modelo | selección vs 28 | prueba vs 28 | vs mercado | acierto |
+|---|---|---|---|---|
+| 28 (actual) | -- | -- | +0.03s | 67.7% |
+| 19 (sin puntos ni pases) | -1.07s | -1.28s | -1.13s | 64.0% |
+| 19 + V1 / V2 / combinada / todo | -0.87 a -1.35s | -1.23 a -1.50s | -1.06 a -1.36s | 60-65% |
+| 28 + V1 | +0.05s | +0.03s | +0.22s | 69.4% |
+| 28 + V2 | +0.01s | -1.29s | -0.18s | 68.8% |
+| 28 + combinada | +0.36s | +0.00s | -0.11s | 68.8% |
+
+Puntos y pases hacen falta: quitarlos cuesta ~1.3s y nada lo recupera. Sobre
+las 28, las tres variables nuevas se mueven dentro del ruido (±0.4s). El
+minimodelo no añade: quién gana ya lo saben los tiros, los puntos y el g/a.
+El modelo de 28 no cambia.
