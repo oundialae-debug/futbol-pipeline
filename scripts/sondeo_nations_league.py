@@ -60,17 +60,39 @@ def desempaquetar(d):
 def main():
     lineas_md = ["# Sondeo: Nations League -- gol de equipo en la 1ª parte\n"]
 
-    print("Buscando ligas con nombre 'Nations League'...")
-    j = pedir("/leagues", {"leagueName": "Nations League", "limit": 50})
-    ligas = desempaquetar(j) if j else []
-    print(f"{len(ligas)} ligas encontradas:")
+    NOMBRES_A_PROBAR = ("Nations League", "UEFA Nations League", "Nations",
+                        "UEFA Nations")
+    ligas = []
+    vistos = set()
     lineas_md.append("## Ligas encontradas por nombre\n")
-    lineas_md.append("| id | nombre | pais |")
-    lineas_md.append("|---|---|---|")
-    for l in ligas:
-        pais = (l.get("country") or {}).get("name")
-        print(f"  {l.get('id')}  {l.get('name')}  ({pais})")
-        lineas_md.append(f"| {l.get('id')} | {l.get('name')} | {pais} |")
+    lineas_md.append("| buscado | id | nombre | pais |")
+    lineas_md.append("|---|---|---|---|")
+    for nombre_buscado in NOMBRES_A_PROBAR:
+        print(f"Buscando ligas con nombre '{nombre_buscado}'...")
+        j = pedir("/leagues", {"leagueName": nombre_buscado, "limit": 50})
+        encontradas = desempaquetar(j) if j else []
+        print(f"  {len(encontradas)} resultados")
+        for l in encontradas:
+            lid = l.get("id")
+            pais = (l.get("country") or {}).get("name")
+            print(f"    {lid}  {l.get('name')}  ({pais})")
+            lineas_md.append(f"| {nombre_buscado} | {lid} | {l.get('name')} | {pais} |")
+            if lid not in vistos:
+                vistos.add(lid)
+                ligas.append(l)
+    if not ligas:
+        print("\nNinguna variante de nombre devolvio resultados. Probando sin "
+              "filtro de nombre, buscando 'nations' en la lista completa...")
+        j = pedir("/leagues", {"limit": 100})
+        todas = desempaquetar(j) if j else []
+        print(f"  {len(todas)} ligas totales sin filtrar (primera pagina)")
+        for l in todas:
+            if "nations" in (l.get("name") or "").lower():
+                ligas.append(l)
+                pais = (l.get("country") or {}).get("name")
+                print(f"    (coincide) {l.get('id')}  {l.get('name')}  ({pais})")
+                lineas_md.append(f"| (sin filtro, {len(todas)} ligas totales) | "
+                                 f"{l.get('id')} | {l.get('name')} | {pais} |")
 
     if not ligas:
         lineas_md.append("\nNinguna liga con ese nombre encontrada. Fin del sondeo.\n")
