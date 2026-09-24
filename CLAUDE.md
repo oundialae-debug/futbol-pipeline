@@ -464,10 +464,11 @@ prácticamente todas las combinaciones donde aparecen, incluida la de
 las 8 juntas).
 
 El bootstrap de `aporta_algo.py` (peso óptimo de mezcla en 1X2) sale
-cero en el 68% de los remuestreos con la nueva config -- no es
-comparable directamente con el 64% de la config anterior (es una
-combinación de rasgos distinta, no el mismo modelo con más cuotas). Se
-reinicia el seguimiento de esa cifra desde este punto.
+cero en el 66% de los remuestreos con la nueva config (recalculado tras
+corregir el bug de `grupos_rasgo()` de más abajo) -- no es comparable
+directamente con el 64% de la config anterior (es una combinación de
+rasgos distinta, no el mismo modelo con más cuotas). Se reinicia el
+seguimiento de esa cifra desde este punto, con el 66% como referencia.
 
 ## Hiperparámetros de XGBoost: revisados, sin mejora (24/09/2026)
 
@@ -511,3 +512,101 @@ hiperparámetros de arriba, el patrón es el mismo: el cuello de botella
 de este proyecto es la CANTIDAD de partidos, no el ajuste del modelo --
 cualquier técnica que reduzca el training set efectivo (más
 regularización, menos peso a partidos viejos) empeora, no mejora.
+
+## Bug en grupos_rasgo(): "elo" colaba box-score desde el 23/09 (24/09/2026)
+
+Investigando la idea de forma reciente (ver siguiente sección) salieron
+números que no cuadraban con los ya documentados para la config de
+producción de hoy. La causa: `grupos_rasgo()` clasificaba con
+`elif "elo" in c`, una comprobación de SUBCADENA. "duelos_totales" y
+"duelos_ganados_pct" (dos medidas de `/box-score`, `du**elo**s`)
+contienen "elo" -- sus 12 columnas (`loc_/vis_/dif_m_duelos_totales`,
+`..._duelos_ganados_pct`, propias y `contra_`) caían en el grupo "elo"
+en vez de en "boxscore".
+
+**Alcance real:** el grupo "elo" está en `NUCLEO` (`experimentos_rasgos.py`
+y `barrido_combinatorio.py`) y en TODAS las configs de producción desde
+que `grupos_rasgo()` existe (23/09). Eso significa que cada vez que este
+documento dijo "base+elo" o "sin box-score", en realidad llevaba colados
+esos 12 columnas de box-score. La conclusión "box-score empeora las 5
+líneas en TODAS las combinaciones" (sección "Árbitro, clima y rotación")
+seguía siendo cierta -- las otras 30 columnas de box-score, sumadas
+ENCIMA de esa base ya contaminada, seguían empeorando -- pero nunca se
+probó "cero box-score" de verdad hasta hoy.
+
+**Corregido:** `elif "elo" in c` -> `elif c.endswith("_elo")`. Se separa
+además un grupo `duelos` propio (las 12+12 columnas de ventana larga y
+corta) para poder probarlo aislado del resto de box-score, siguiendo la
+misma disciplina que ya está escrita en este documento ("no excluyas una
+familia entera por una parte complicada"). Probado con el protocolo
+completo de 5 semillas: **duelos, añadido a la config de producción
+completa, la empeora** (sigmas -8.72 -> -8.90, acierto -15.3pp ->
+-22.8pp, mismo proceso, comparación directa). Se queda fuera. La
+decisión de excluir box-score entero sigue siendo correcta, ahora
+probada de verdad y no por accidente.
+
+**Números CORREGIDOS de la config de producción de hoy** (base + elo +
+árbitro + h2h + h2h_profundo + tabla + calidad_plantilla, 99 rasgos,
+2239 partidos -- antes decía 111/123 rasgos por la contaminación):
+
+  resultado         -2.44s   acierto 45.8% vs mercado 51.4% (-5.7pp)
+  mas_2_5           -1.17s   acierto 61.8% vs mercado 65.6% (-3.8pp)
+  ambos_marcan      -0.77s   acierto 58.5% vs mercado 58.5% (+0.0pp)
+  mas_9_5_corners   -1.66s   acierto 54.2% vs mercado 58.5% (-4.2pp)
+  mas_4_5_tarjetas  -2.77s   acierto 61.2% vs mercado 64.7% (-3.5pp)
+  SUMA sigmas -8.81, SUMA acierto_dif -17.2pp
+
+Estos números son PEORES que los -7.93s/-13.8pp documentados ayer (la
+contaminación estaba ayudando un poco). Verificado que la conclusión
+que importa NO cambia: la config de hoy (con h2h+h2h_profundo+tabla)
+sigue batiendo a la de ayer (solo árbitro+calidad) bajo la agrupación
+corregida -- sigmas -8.72 vs -8.99, acierto -15.3pp vs -19.5pp (cifras
+ligeramente distintas a las de arriba por ruido de proceso, mismo
+orden de magnitud). El barrido de las 256 combinaciones NO se relanza:
+la contaminación era una constante añadida a las 256 por igual (todas
+incluían "elo"), así que el ORDEN relativo entre combinaciones debería
+seguir siendo válido aunque los valores absolutos de aquella tabla ya
+no lo sean. Si se necesita un número absoluto exacto de algo del
+barrido, no fiarse de `data/barrido_combinatorio.csv` -- está calculado
+con el bug.
+
+**Lección:** revisar un `in` sobre texto libre por colisiones de
+subcadena antes de usarlo para agrupar/filtrar columnas -- exactamente
+el mismo tipo de fallo silencioso que "First Team To Score" con
+mayúscula al principio de este documento. No dio error, dio números
+buenos y equivocados durante dos días.
+
+## Forma reciente (ventana corta): probada, sin mejora (24/09/2026)
+
+Petición del usuario, lógica de fútbol legítima: el rendimiento de hace
+8 meses no debería pesar igual que el de los últimos 3 partidos. Ya se
+había probado (y descartado) dar menos peso a FILAS DE ENTRENAMIENTO
+viejas ("Peso por recencia", arriba) -- esto es distinto: una variable
+NUEVA, media móvil de ventana corta (3 partidos, `forma_reciente()` en
+rasgos.py, prefijo `r_`) además de la que ya existe (`m_`, ventana 8),
+dejando que el modelo decida cuánto pesa cada una en vez de imponerlo.
+Misma regla anti-fuga (`shift(1)` antes de `rolling`), comprobado con
+`comprobar_sin_fuga`.
+
+Probada de dos formas, protocolo completo de 5 semillas, agrupación ya
+corregida (ver bug de arriba):
+
+  base+elo                                    sigmas -9.49  acierto -19.8pp
+  +forma_reciente completa (90 columnas)      sigmas -11.90 acierto -31.7pp
+  +forma_reciente mínima (solo puntos+goles, 6 columnas)  sigmas -10.07  acierto -21.1pp
+
+  produccion                                  sigmas -8.72  acierto -15.3pp
+  produccion+forma_reciente completa          sigmas -11.32 acierto -30.3pp
+  produccion+forma_reciente mínima            sigmas -9.23  acierto -17.2pp
+
+**Empeora en las dos versiones, no solo por exceso de columnas.** La
+versión mínima (6 columnas: puntos y goles en los últimos 3 partidos)
+descarta la hipótesis de que el daño era sobreajuste por las otras 84
+columnas -- la señal de "forma de las últimas 3 jornadas" en sí misma
+no aporta. Explicación más probable: el Elo ya es sensible a la forma
+reciente (se actualiza partido a partido, una racha ya mueve el
+rating) y `m_puntos` (ventana 8) ya cubre el medio plazo; una ventana
+de solo 3 partidos es demasiado ruidosa (varianza alta con tan pocos
+partidos por muestra) para añadir información que esas dos no den ya.
+No entra en `columnas_rasgo_default()`. La lógica de fútbol era
+razonable -- la comprobación con datos reales es la que manda.

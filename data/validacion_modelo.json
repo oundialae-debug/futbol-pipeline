@@ -1,8 +1,8 @@
 {
   "bate_al_mercado": false,
-  "sigmas": -2.592065740682155,
+  "sigmas": -2.532488936182526,
   "partidos": 212,
-  "brier_modelo": 0.6132189020169924,
+  "brier_modelo": 0.6123556352295829,
   "brier_mercado": 0.5793183973041265,
-  "motivo": "Brier 0.6132 contra 0.5793 del mercado"
+  "motivo": "Brier 0.6124 contra 0.5793 del mercado"
 }

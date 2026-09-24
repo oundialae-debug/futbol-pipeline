@@ -126,6 +126,43 @@ def medias_previas(largo, ventana=VENTANA):
     return largo.drop(columns=["_pts"])
 
 
+def forma_reciente(largo, ventana=3):
+    """
+    La MISMA media móvil que medias_previas, pero con ventana corta (3
+    partidos = las últimas jornadas, no la temporada). Prefijo r_ para
+    no chocar con m_ (ventana larga, VENTANA=8).
+
+    Lógica de fútbol: el rendimiento de hace 8 meses no debería pesar
+    igual que el de los últimos 3 partidos. Forzar ese peso a mano sobre
+    TODA la muestra de entrenamiento (sample_weight por antigüedad de la
+    fila) se probó y empeoró sigmas y acierto -- ver CLAUDE.md "Peso por
+    recencia". Pero eso mezclaba dos cosas distintas: cuánto confiar en
+    un PARTIDO DE ENTRENAMIENTO viejo (empeora, con esta muestra tan
+    pequeña no sobra dato que tirar) y si la FORMA RECIENTE de un equipo
+    es informativa (otra pregunta, no probada todavía). Esto prueba la
+    segunda: forma reciente como variable más, junto a la de ventana
+    larga que ya existe, dejando que el modelo aprenda cuánto pesa cada
+    una en vez de imponerlo.
+
+    MISMA REGLA ANTI-FUGA: shift(1) antes de rolling.
+    """
+    cols = [c for c in largo.columns if c in MEDIDAS or c.startswith("contra_")]
+    g = largo.groupby("equipo", sort=False)
+    for c in cols:
+        largo[f"r_{c}"] = (g[c].shift(1)
+                           .groupby(largo["equipo"], sort=False)
+                           .rolling(ventana, min_periods=2)
+                           .mean().reset_index(level=0, drop=True))
+    pts = np.where(largo.goles > largo.goles_contra, 3,
+                   np.where(largo.goles == largo.goles_contra, 1, 0))
+    largo["_pts_r"] = pts
+    largo["r_puntos"] = (g["_pts_r"].shift(1)
+                         .groupby(largo["equipo"], sort=False)
+                         .rolling(ventana, min_periods=2)
+                         .mean().reset_index(level=0, drop=True))
+    return largo.drop(columns=["_pts_r"])
+
+
 def calcular_elo(hist, k=20.0, ventaja_local=60.0):
     """
     Fuerza de equipo estilo Elo, cronológica, usando solo los goles que ya
@@ -501,9 +538,9 @@ def calcular_calidad_plantilla(hist, jugador_stats_crudo):
 
 def construir(hist):
     """Una fila por partido, con los rasgos de los dos equipos enfrentados."""
-    largo = medias_previas(a_largo(hist))
+    largo = forma_reciente(medias_previas(a_largo(hist)))
     rasgos = [c for c in largo.columns
-              if c.startswith("m_") or c in ("partidos_previos", "descanso")]
+              if c.startswith(("m_", "r_")) or c in ("partidos_previos", "descanso")]
     loc = largo[largo.en_casa == 1].set_index("match_id")
     vis = largo[largo.en_casa == 0].set_index("match_id")
     base = pd.DataFrame(index=loc.index)
@@ -599,13 +636,15 @@ def grupos_rasgo(base):
     "una a una, y luego combinaciones" en vez de solo acumular.
     """
     grupos = {"base": [], "elo": [], "h2h": [], "h2h_profundo": [], "tabla": [],
-             "boxscore": [], "arbitro": [], "clima": [], "rotacion": [],
-             "calidad_plantilla": []}
+             "boxscore": [], "duelos": [], "arbitro": [], "clima": [],
+             "rotacion": [], "calidad_plantilla": [], "forma_reciente": []}
     for c in columnas_rasgo(base):
         if c == "liga_id":
             grupos["base"].append(c)
-        elif "elo" in c:
+        elif c.endswith("_elo"):
             grupos["elo"].append(c)
+        elif c.startswith(("loc_r_", "vis_r_", "dif_r_")) and "duelos" not in c:
+            grupos["forma_reciente"].append(c)
         elif c.startswith("h2hp_"):
             grupos["h2h_profundo"].append(c)
         elif c.startswith("h2h_"):
@@ -620,6 +659,15 @@ def grupos_rasgo(base):
             grupos["rotacion"].append(c)
         elif "calidad_" in c:
             grupos["calidad_plantilla"].append(c)
+        elif "duelos" in c:
+            # duelos_totales/duelos_ganados_pct: hasta hoy se colaban en
+            # "elo" por un bug de substring ("elo" dentro de "duelos") --
+            # ver CLAUDE.md "Bug en grupos_rasgo". Grupo propio, separado
+            # del resto de box-score, para poder probarlo aislado: el
+            # bug los tuvo SIEMPRE presentes en cualquier config con
+            # "elo" (es decir, en todas), así que nunca se probó "cero
+            # box-score" de verdad hasta corregir esto.
+            grupos["duelos"].append(c)
         elif any(m in c for m in MEDIDAS_BOXSCORE):
             grupos["boxscore"].append(c)
         else:
