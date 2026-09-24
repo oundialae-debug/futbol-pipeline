@@ -829,3 +829,27 @@ tabla y rotación: ayuda un poco sola, no sobrevive a combinarse con el
 resto. No entra en `columnas_rasgo_default()`. Se documenta aunque no
 ayudó porque la pregunta ("hay algo pensado para ambos_marcan
 específicamente") merecía respuesta, no solo los casos que salen bien.
+
+## Temporadas anteriores disponibles, y el cambio de temporada (24/09/2026)
+
+**El histórico solo tenía una temporada completa (2025/26) porque nadie
+pidió las anteriores, no porque no existan.** `sondeo_temporadas_antiguas.py`:
+la API devuelve 2024/25, 2023/24 y 2022/23 completas (~2.224 partidos por
+temporada en las 6 ligas). 2024/25 y 2023/24 traen estadísticas, árbitro y
+alineaciones; 2022/23 no trae árbitro ni alineaciones.
+`backfill_historico.py` ya acepta `TEMPORADAS=2024` -- lanzado el 24/09
+con tope 2.000, reanudable.
+
+**Por qué importa:** con el histórico empezando en agosto de 2025, el
+entrenamiento no contenía ningún cambio de temporada, y el modelo se hunde
+al arrancar la nueva (ambos_marcan: +2.43% sobre la media al final de
+2025/26, -0.60% en ago-sep 2026; ver `modelos/ambos_marcan/CLAUDE.md`).
+Todas las cuotas cosechadas (desde el 24/08/2026) caen en ese arranque,
+así que TODAS las comparaciones contra el mercado del proyecto se han
+hecho en el peor tramo del modelo.
+
+**Efecto secundario al añadir 2024/25 a `data/historico_partidos.csv`:** el
+corte 75/25 de validación se mueve (es por número de partidos), así que
+cambian las cifras de referencia de `evaluar_mercados.py` y
+`aporta_algo.py` que usa la rutina diaria. Recalcular las referencias
+cuando termine el backfill.

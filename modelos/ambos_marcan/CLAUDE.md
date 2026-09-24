@@ -442,3 +442,55 @@ Contaminación residual: la LISTA de candidatas se construyó el 24/09
 mirando resultados posteriores al 24/04; la elección entre ellas sí es
 limpia. Para una prueba 100% limpia: juzgar este conjunto congelado solo
 con partidos jugados desde el 25/09/2026.
+
+## El cambio de temporada hunde el modelo (24/09/2026)
+
+Observación del usuario: entre temporadas cambian jugadores, entrenadores
+y estilo, y hay casi 2 meses de parón (su ejemplo: el Elche de este
+inicio no es el del año pasado; Osasuna, con lo mismo, ha vuelto
+irregular). Medido con el conjunto propio de ambos_marcan, entrenado con
+todo lo anterior al 24/04/2026:
+
+| tramo de prueba | partidos | mejora sobre predecir siempre la media |
+|---|---|---|
+| final 2025/26 (abr-jun) | 303 | +2.43% |
+| inicio 2026/27 (ago-sep) | 261 | **-0.60%** (peor que la media) |
+
+Al arrancar la temporada nueva el modelo pierde toda su ventaja. Dos
+consecuencias:
+
+1. **El entrenamiento no tiene NINGÚN cambio de temporada.** El histórico
+   empezaba en agosto de 2025 y las medias móviles necesitan 4 partidos
+   previos, así que todo lo que el modelo vio es de dentro de una misma
+   temporada. Nunca aprendió a desconfiar de la forma del año pasado.
+2. **La comparación contra el mercado está sesgada contra el modelo.** Las
+   212 cuotas de ambos_marcan son TODAS de ago-sep 2026, el peor tramo del
+   modelo, justo cuando el mercado incorpora fichajes y cambios de
+   banquillo. El -0.88s contra el mercado es la foto del peor momento, no
+   de la temporada. Cuotas de octubre en adelante medirían OTRO momento,
+   no solo con más precisión.
+
+Arreglo en marcha: temporadas anteriores (ver siguiente sección) para que
+el entrenamiento incluya cambios de temporada reales.
+
+## Temporadas anteriores SÍ existen en la API (24/09/2026)
+
+`sondeo_temporadas_antiguas.md` (repo padre): /matches con season=2024,
+2023 y 2022 devuelve temporadas completas (~2.224 partidos por temporada en
+las 6 ligas). Profundidad, comprobada con un partido de La Liga por
+temporada:
+
+| temporada | /statistics | árbitro | alineaciones |
+|---|---|---|---|
+| 2024/25 | 39 estadísticas | sí | sí (22) |
+| 2023/24 | 30 estadísticas | sí | sí (22) |
+| 2022/23 | 29 estadísticas | no | no |
+
+2024/25 y 2023/24 sirven para el modelo actual; triplicarían el
+entrenamiento (~2.200 -> ~6.700) y darían dos cambios de temporada reales.
+2022/23 no trae árbitro ni alineaciones. Coste estimado: ~15.000 llamadas
+(estadísticas + árbitro + alineaciones + jugadores nuevos), 2-3 días de
+cuota. Backfill de 2024/25 lanzado el 24/09 con tope 2.000 (reanudable).
+Ojo: 2023/24 trae 30 estadísticas en vez de 39 -- comprobar cuáles faltan
+antes de fiarse de esa temporada (si falta xG, las medias de xG saldrían
+vacías).
