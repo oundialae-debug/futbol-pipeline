@@ -1,0 +1,47 @@
+name: Backfill H2H profundo
+
+# /head-2-head da las últimas 10 confrontaciones REALES entre dos equipos,
+# más allá de nuestra propia ventana de 13 meses (comprobado con
+# Real Madrid-Barcelona: 7 de 10 son de antes de nuestro histórico).
+# Por PAR de equipos (1218 pares únicos, la mitad de llamadas que por
+# partido). Reanudable.
+on:
+  workflow_dispatch:
+    inputs:
+      tope_llamadas:
+        description: 'Maximo de llamadas a la API en esta pasada'
+        required: false
+        default: '3000'
+
+jobs:
+  backfill:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+      - run: pip install requests pandas
+
+      - name: Traer H2H profundo
+        run: python scripts/backfill_h2h_profundo.py
+        env:
+          HIGHLIGHTLY_API_KEY: ${{ secrets.HIGHLIGHTLY_API_KEY }}
+          TOPE_LLAMADAS: ${{ inputs.tope_llamadas || '3000' }}
+
+      - name: Guardar
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/historico_h2h_profundo.csv || true
+          if git diff --staged --quiet; then
+            echo "Sin cambios que guardar"
+            exit 0
+          fi
+          git commit -m "H2H profundo: $(wc -l < data/historico_h2h_profundo.csv) filas ($(date -u +%Y-%m-%dT%H:%M))"
+          git pull --rebase origin main
+          git push
