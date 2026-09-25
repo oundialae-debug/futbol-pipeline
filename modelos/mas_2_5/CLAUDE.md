@@ -445,3 +445,31 @@ contra la casa; el mejor allí habría sido 20% (-1.09s). **El peso óptimo no
 se mantiene de una mitad a otra**: no hay un peso fiable. Apostando, cuanto
 más Poisson peor (0%: -1.4%, 70%: -9.0%, 100%: -14.5%). Para apostar, el
 XGBoost de 28 solo sigue siendo lo menos malo.
+
+## Con los datos nuevos de main (25/09/2026)
+
+Copiados de main: histórico 5.694 partidos (2023/24 parcial 932, 2024/25
+completa 2.223 con Segunda), alineaciones 4.760, árbitro 4.789, jugadores
+4.332, h2h 1.558 pares. Cuotas 2023/24 de football-data; cruce 5.671
+(99.6%). Prueba de humo OK. MISMOS 2.527 partidos de evaluación que antes
+(ago 2025 - sep 2026, mes a mes); solo cambia el entrenamiento.
+
+| modelo | vs media casas antes -> ahora | vs Pinnacle antes -> ahora | apostando (cuota media) ahora |
+|---|---|---|---|
+| XGBoost 28 | -2.65s -> **-1.09s** | -3.20s -> -1.76s | -1.0% / -0.2% |
+| A: 28 + cuota | -2.06s -> -1.01s | -2.62s -> -1.78s | -1.4% a -4.1% |
+| B: parte de la cuota | -2.13s -> -0.77s | -2.61s -> -1.77s | -1.7% a -3.4% |
+| mezcla xG + XGB | -2.08s -> -1.02s | -2.35s -> **-1.15s** | -2.4% |
+| media de casas | | -0.95s | |
+
+- **Más temporadas de entrenamiento mejoran todo con claridad**: el XGBoost de
+  28 pasa de -2.65s a -1.09s contra la media de casas (en 2025/26 sola,
+  -0.67s). Es el entrenamiento el que cambia, no la muestra de prueba.
+- Mezcla xG + XGB contra Pinnacle (-1.15s) ya casi igual que la media de
+  casas contra Pinnacle (-0.95s).
+- Apostando con cuota media, XGBoost 28 ~0% (-1.0% sin umbral, -0.4% con
+  5%). Con la cuota máxima +4.2% (±2.4, +1.77s), pero la máxima es optimista
+  (no simultánea): no se toma como ventaja.
+- Poisson solo empeora con más datos frente a XGB (-1.16 a -1.45s); la mezcla
+  ya solo aporta +0.55/+0.78s. La mejora grande viene del XGBoost.
+- Pendiente: 2023/24 está a medias (932 de ~2.200). Repetir cuando termine.

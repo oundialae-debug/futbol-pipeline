@@ -1,0 +1,18 @@
+2527 partidos evaluados mes a mes (2025-08 a 2026-09)
+
+modelo                              vs media casas  vs Pinnacle cierre  acierto
+28 (sin cuota)                              -1.09s              -1.76s    57.2%
+A: 28 + cuota como variable                 -1.01s              -1.78s    58.4%
+B: parte de la cuota y corrige              -0.77s              -1.77s    58.1%
+media de casas                                                  -0.95s    58.6%
+(Pinnacle cierre: 1087 partidos)
+
+Cuánto se separa B del mercado: diferencia media 4.4 puntos, máxima 23.9
+
+Apostando 1 unidad con la cuota MEDIA al lado con valor:
+  A umbral  0%:  1352 apuestas  rentabilidad  -4.11% (±2.59, -1.59s)
+  A umbral  3%:   906 apuestas  rentabilidad  -1.99% (±3.21, -0.62s)
+  A umbral  5%:   698 apuestas  rentabilidad  -1.35% (±3.71, -0.37s)
+  B umbral  0%:  1302 apuestas  rentabilidad  -3.36% (±2.62, -1.28s)
+  B umbral  3%:   863 apuestas  rentabilidad  -1.81% (±3.27, -0.55s)
+  B umbral  5%:   613 apuestas  rentabilidad  -1.69% (±3.97, -0.43s)
