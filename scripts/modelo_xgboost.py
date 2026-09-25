@@ -58,6 +58,33 @@ RUTA_ARBITRO_CLIMA = "data/historico_arbitro_clima.csv"
 RUTA_LINEUPS = "data/historico_lineups.csv"
 
 
+# Columna de la que sale cada objetivo. Un objetivo binario hecho con
+# (x > linea).astype(int) convierte un x vacio en 0 sin avisar: un partido
+# sin córners contaría como "menos de 9.5". Se exige el dato de origen.
+ORIGEN_OBJETIVO = {"resultado": "goles_l", "mas_2_5": "goles_l",
+                   "ambos_marcan": "goles_l", "mas_9_5_corners": "corners_total",
+                   "mas_4_5_tarjetas": "tarjetas_total"}
+
+
+def partir(base_todo, cols, con_huecos=True):
+    """
+    Validación: SOLO partidos con todos los rasgos (igual que siempre), el
+    25% más reciente. Entrenamiento: todo lo anterior a ese corte.
+
+    con_huecos=True (25/09/2026): el entrenamiento acepta partidos con
+    rasgos vacíos -- XGBoost los trata de serie. Hasta ahora se exigían
+    TODOS los rasgos también al entrenar, y al añadir 2024/25 (sin xG en el
+    95% de sus partidos) se tiraban 2.221 de 2.223: la temporada nueva
+    estaba en el CSV y el modelo no la veía. Cero error, cero filas.
+    """
+    completa = base_todo[base_todo[cols].notna().all(axis=1)].reset_index(drop=True)
+    corte = int(len(completa) * (1 - PROPORCION_VALIDACION))
+    fecha_corte = pd.to_datetime(completa.fecha.iloc[corte - 1])
+    fuente = base_todo if con_huecos else completa
+    ent = fuente[pd.to_datetime(fuente.fecha) <= fecha_corte].reset_index(drop=True)
+    return completa, ent, fecha_corte
+
+
 def cargar():
     if not os.path.exists(RUTA_HIST):
         print(f"No existe {RUTA_HIST}. Lanza antes el backfill del histórico.")
@@ -152,9 +179,8 @@ def main():
 
     base = rasgos.construir(hist).sort_values("fecha")
     cols = rasgos.columnas_rasgo_default(base)
-    base = base[base[cols].notna().all(axis=1)].reset_index(drop=True)
-    corte = int(len(base) * (1 - PROPORCION_VALIDACION))
-    ent, val = base.iloc[:corte], base.iloc[corte:]
+    base, ent, fecha_corte = partir(base.reset_index(drop=True), cols)
+    val = base[pd.to_datetime(base.fecha) > fecha_corte]
     print(f"\nCorte TEMPORAL: entreno {len(ent)} (hasta "
           f"{pd.to_datetime(ent.fecha.max()).date()}), "
           f"valido {len(val)} (desde "
@@ -172,7 +198,8 @@ def main():
 
     rng = np.random.default_rng(0)
     for objetivo, (nombre, n_clases) in OBJETIVOS.items():
-        Xe, ye = ent[cols].values, ent[objetivo].values.astype(int)
+        e = ent[ent[ORIGEN_OBJETIVO[objetivo]].notna()]
+        Xe, ye = e[cols].values, e[objetivo].values.astype(int)
         Xv, yv = val[cols].values, val[objetivo].values.astype(int)
         if len(np.unique(ye)) < n_clases:
             continue

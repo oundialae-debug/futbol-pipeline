@@ -853,3 +853,45 @@ corte 75/25 de validación se mueve (es por número de partidos), así que
 cambian las cifras de referencia de `evaluar_mercados.py` y
 `aporta_algo.py` que usa la rutina diaria. Recalcular las referencias
 cuando termine el backfill.
+
+## 2024/25 en el histórico, y entrenar CON huecos (25/09/2026)
+
+Backfill del 24-25/09: 2024/25 completa (2.223 partidos, 6 ligas) con
+árbitro, alineaciones, jugadores nuevos y h2h profundo. 2023/24 a medias
+(932 partidos, casi sin árbitro ni alineaciones; h2h profundo le faltan 109
+pares). **2024/25 casi no trae xG (5%) ni centros (18%)**: el sondeo miró
+un partido de mayo de 2025, cuando el xG ya empezaba a salir, y engañó.
+
+**Fallo silencioso encontrado:** `evaluar_mercados.py`, `aporta_algo.py`,
+`evaluar_contra_mercado.py` y `modelo_xgboost.py` exigían TODOS los rasgos
+también para ENTRENAR. Con 2024/25 sin xG, se tiraban 2.221 de sus 2.223
+partidos: la temporada estaba en el CSV y el modelo no la veía, y además
+salía PEOR que antes (suma -11.43s) porque las medias de 2025/26 cambian al
+tener historia detrás. Cero error.
+
+**Arreglo:** `M.partir()` (modelo_xgboost.py, lo usan los cuatro). La
+validación sigue siendo solo de partidos completos, el mismo 25% más
+reciente de siempre. El entrenamiento acepta huecos (XGBoost los trata de
+serie) y exige solo el dato del que sale cada objetivo
+(`ORIGEN_OBJETIVO`): `(x > 9.5).astype(int)` convierte un x vacío en 0 sin
+avisar. `scripts/comparar_entreno_con_huecos.py`, mismos 574 partidos:
+
+| mercado | con huecos vs estricto | estricto vs mercado | con huecos vs mercado |
+|---|---|---|---|
+| resultado | **+2.40s** | -3.16s | -1.56s |
+| mas_2_5 | -0.42s | -1.97s | -2.05s |
+| ambos_marcan | **+2.45s** | -1.36s | **+0.15s** |
+| mas_9_5_corners | +1.99s | -2.49s | -1.77s |
+| mas_4_5_tarjetas | +1.39s | -2.45s | -2.56s |
+| **suma contra el mercado** | | -11.43 | **-7.80** |
+
+Entrenamiento: 1.722 -> 5.067 partidos. -7.80 es la mejor suma de todo el
+proyecto (antes -8.81). ambos_marcan EMPATA con el mercado por primera vez
+en el modelo general. Ninguno lo bate (+2s).
+
+**Referencias nuevas para la rutina diaria** (sustituyen a las del 24/09;
+no comparables con ellas, es otro entrenamiento): evaluar_mercados.py
+resultado -1.56s, mas_2_5 -2.05s, ambos_marcan +0.15s, corners -1.77s,
+tarjetas -2.56s (suma -7.80). aporta_algo.py (mezcla 1X2): peso óptimo
+cero en el **38%** de los remuestreos (intervalo [0.00, 0.62]) -- el
+intervalo sigue incluyendo el cero. Referencia nueva: 38%.

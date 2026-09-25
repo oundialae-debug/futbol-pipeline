@@ -1,11 +1,11 @@
 {
   "aporta": false,
-  "peso": 0.0,
+  "peso": 0.1,
   "intervalo": [
     0.0,
-    0.35000000000000003
+    0.625
   ],
-  "partidos": 212,
-  "brier_mercado": 0.5793183973041265,
-  "brier_mezcla": 0.5793183973041265
+  "partidos": 219,
+  "brier_mercado": 0.5821625980300014,
+  "brier_mezcla": 0.5819121127480309
 }

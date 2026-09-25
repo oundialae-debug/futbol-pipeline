@@ -119,10 +119,9 @@ def main():
         return
     base = rasgos.construir(hist).sort_values("fecha")
     cols = rasgos.columnas_rasgo_default(base)
-    base = base[base[cols].notna().all(axis=1)].reset_index(drop=True)
-    corte = int(len(base) * (1 - M.PROPORCION_VALIDACION))
-    ent, val = base.iloc[:corte], base.iloc[corte:]
-    fecha_corte = pd.to_datetime(ent.fecha.max())
+    base, ent, fecha_corte = M.partir(base.reset_index(drop=True), cols)
+    ent = ent[ent[M.ORIGEN_OBJETIVO["resultado"]].notna()]
+    val = base[pd.to_datetime(base.fecha) > fecha_corte]
     m = M.entrenar(ent[cols].values, ent["resultado"].values.astype(int), 3)
 
     mercado = probabilidades_de_mercado()

@@ -210,16 +210,17 @@ def evaluar_uno(nombre, cfg, base, cols, ent, fecha_corte, cuotas):
     }
 
 
+ORIGEN_OBJETIVO = M.ORIGEN_OBJETIVO
+partir = M.partir
+
+
 def main():
     hist = M.cargar()
     if hist is None:
         return
-    base = rasgos.construir(hist).sort_values("fecha")
-    cols = rasgos.columnas_rasgo_default(base)
-    base = base[base[cols].notna().all(axis=1)].reset_index(drop=True)
-    corte = int(len(base) * (1 - M.PROPORCION_VALIDACION))
-    ent = base.iloc[:corte]
-    fecha_corte = pd.to_datetime(ent.fecha.max())
+    base_todo = rasgos.construir(hist).sort_values("fecha").reset_index(drop=True)
+    cols = rasgos.columnas_rasgo_default(base_todo)
+    base, ent_todo, fecha_corte = partir(base_todo, cols)
 
     cuotas = cargar_cuotas_crudas()
     if cuotas is None:
@@ -227,10 +228,11 @@ def main():
         return
 
     print(f"Entrenamiento hasta {fecha_corte.date()}. "
-          f"{len(base) - corte} partidos posteriores disponibles.\n")
+          f"{(pd.to_datetime(base.fecha) > fecha_corte).sum()} partidos posteriores disponibles.\n")
 
     resultados = {}
     for nombre, cfg in MERCADOS.items():
+        ent = ent_todo[ent_todo[ORIGEN_OBJETIVO[nombre]].notna()]
         y_ent = ent[nombre].values.astype(int)
         if len(np.unique(y_ent)) < cfg["n_clases"]:
             resultados[nombre] = {"evaluable": False, "motivo": "sin ambas clases en entrenamiento"}
