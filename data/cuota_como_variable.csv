@@ -1,0 +1,22 @@
+mercado,referencia,n,modelo,sigmas
+resultado,cierre football-data,568,produccion,-2.321813313580786
+resultado,cierre football-data,568,produccion+mercado,-0.6656423415046625
+resultado,cierre football-data,568,solo mercado,-1.271521562257304
+resultado,cosechado Highlightly,219,produccion,-1.5588194011639944
+resultado,cosechado Highlightly,219,produccion+mercado,-0.72117436561201
+resultado,cosechado Highlightly,219,solo mercado,-0.21097150625088404
+mas_2_5,cierre football-data,568,produccion,-2.349310095420385
+mas_2_5,cierre football-data,568,produccion+mercado,-1.353328977104391
+mas_2_5,cierre football-data,568,solo mercado,-0.36135318050778176
+mas_2_5,cosechado Highlightly,219,produccion,-2.0522289778723457
+mas_2_5,cosechado Highlightly,219,produccion+mercado,-0.21174935407403017
+mas_2_5,cosechado Highlightly,219,solo mercado,0.8496429517255837
+ambos_marcan,cosechado Highlightly,219,produccion,0.14539395227117322
+ambos_marcan,cosechado Highlightly,219,produccion+mercado,0.86763750450575
+ambos_marcan,cosechado Highlightly,219,solo mercado,-0.7385458306913381
+mas_9_5_corners,cosechado Highlightly,219,produccion,-1.7686770519590511
+mas_9_5_corners,cosechado Highlightly,219,produccion+mercado,-1.2217454346441943
+mas_9_5_corners,cosechado Highlightly,219,solo mercado,-0.7005382229663722
+mas_4_5_tarjetas,cosechado Highlightly,207,produccion,-2.563991448904327
+mas_4_5_tarjetas,cosechado Highlightly,207,produccion+mercado,-2.1118173891242553
+mas_4_5_tarjetas,cosechado Highlightly,207,solo mercado,-2.7156818768573925

@@ -895,3 +895,58 @@ resultado -1.56s, mas_2_5 -2.05s, ambos_marcan +0.15s, corners -1.77s,
 tarjetas -2.56s (suma -7.80). aporta_algo.py (mezcla 1X2): peso óptimo
 cero en el **38%** de los remuestreos (intervalo [0.00, 0.62]) -- el
 intervalo sigue incluyendo el cero. Referencia nueva: 38%.
+
+## Cuotas históricas de football-data.co.uk: cuota como variable (25/09/2026)
+
+Idea del usuario: cuotas de Pinnacle gratis. Pinnacle no tiene API pública;
+sus cierres históricos están en football-data.co.uk. Desde el contenedor
+esa web está bloqueada: se descarga con `descargar_football_data.yml`
+(GitHub Actions, cero cuota de Highlightly). `cuotas_football_data.py`
+empareja por liga+día+marcador y desempata por nombre (alias revisados a
+mano: Ath Bilbao, M'gladbach, Paris SG...): **5.671 de 5.694 partidos**.
+Pinnacle de cierre en 2023/24, 2024/25 y media 2025/26; después Betfair
+Exchange de cierre, y si no, la media del mercado. Comprobado contra lo
+cosechado de Highlightly: 0.9 puntos de diferencia, correlación 0.997.
+
+**Trae 1X2, más/menos 2.5 y hándicap asiático. NO trae ambos marcan**
+(ninguna casa, comprobado en las cabeceras: `data/football_data/columnas.md`).
+`btts_implicito.py` lo aproxima con un Poisson ajustado al 1X2 + más/menos
+2.5: correlación 0.73 con el ambos marcan real y Brier peor que él (-1.97s
+en 251 partidos). Sirve como variable, NO como mercado de referencia (haría
+parecer bueno al modelo contra un precio peor que el real).
+
+**Modelo contra el cierre en toda la validación (568 partidos, no 219):**
+resultado -2.32s, más de 2.5 -2.35s. Con más del doble de partidos, el
+modelo de siempre pierde contra el cierre sin duda razonable.
+
+**Cuota como variable** (`cuota_como_variable.py`, 7 rasgos mkt_, mismos
+568 partidos, 5 semillas):
+
+| mercado | prod+mercado vs prod | vs cierre fd: prod / prod+mkt / solo mkt | vs cosechado: prod / prod+mkt / solo mkt |
+|---|---|---|---|
+| resultado | **+2.21s** | -2.32 / -0.67 / -1.27 | -1.56 / -0.72 / -0.21 |
+| mas_2_5 | +1.36s | -2.35 / -1.35 / -0.36 | -2.05 / -0.21 / +0.85 |
+| ambos_marcan | **+2.14s** | (sin precio fd) | +0.15 / **+0.87** / -0.74 |
+| corners | +1.80s | (sin precio fd) | -1.77 / -1.22 / -0.70 |
+| tarjetas | -0.73s | (sin precio fd) | -2.56 / -2.11 / -2.72 |
+
+Lectura:
+- Meter el precio como variable mejora mucho el modelo en 4 de 5 (tarjetas
+  no: el 1X2 y los goles no dicen nada de tarjetas).
+- **Contra el cierre sigue perdiendo** (resultado -0.67s, más de 2.5
+  -1.35s). "Solo mercado" (XGBoost con solo el precio) también pierde contra
+  el propio precio: reaprender el precio con 5.000 partidos mete ruido.
+- ambos_marcan con precio: +0.87s contra lo cosechado (219 partidos, lejos
+  de +2s). No hay cierre de Pinnacle de ambos marcan para contrastarlo.
+- **Ojo con la referencia "cosechado de Highlightly": es más blanda que el
+  cierre.** En más de 2.5, un modelo que solo ve el cierre de fd le gana
+  (+0.85s). Ganar a lo cosechado no es ganar al cierre. Pista sin
+  comprobar: si el precio de las casas que cosechamos se separa del cierre
+  de Pinnacle de forma sistemática, eso (no el modelo) sería lo explotable
+  -- la estrategia clásica "apostar donde una casa blanda se aparta de
+  Pinnacle". Falta saber A QUÉ HORA se cosecha cada cuota antes de decir
+  nada.
+- NO entra en producción todavía: se entrena con el cierre de Pinnacle/
+  Betfair y para predecir un partido futuro habría que usar el precio de
+  ese momento (otra fuente, otra hora). Mezclar fuentes sin medirlo es
+  justo el tipo de fallo silencioso de este documento.
