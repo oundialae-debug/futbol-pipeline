@@ -547,3 +547,42 @@ Pendiente, por orden: (1) relanzar backfill (Segunda 2024 + resto de
 2023/24); (2) árbitro, alineaciones y jugadores de 2024/25 para que esas
 filas tengan también calidad_plantilla y árbitro; (3) repetir esta prueba
 con todo eso y vigilar el +1.11s contra el mercado según entren cuotas.
+
+### Repetido con 2024/25 COMPLETA (25/09/2026, madrugada)
+
+Backfills del 25/09: 2024/25 entera (2.223 partidos, Segunda incluida) con
+árbitro, alineaciones y jugadores nuevos (854). De 2023/24 hay 932 partidos
+(La Liga, Premier, Serie A a medias) y casi sin árbitro ni alineaciones;
+el resto de 2023/24 y el h2h profundo de pares nuevos quedan para otro día.
+Tres entrenamientos, mismos 572 partidos de prueba:
+A = 2025/26 (1.722), B = +2024/25 (3.945), C = B + 2023/24 parcial (4.877).
+
+Conjunto propio (base+Elo+calidad+árbitro+h2h):
+
+| tramo | B vs A | C vs A | A/media | B/media | C/media |
+|---|---|---|---|---|---|
+| final 2025/26 (303) | -0.66s | +0.00s | +3.51% | +2.70% | +3.51% |
+| **inicio 2026/27 (269)** | **+3.53s** | +2.66s | -0.66% | **+4.06%** | +3.15% |
+| todo (572) | **+1.97s** | +1.87s | +1.54% | +3.34% | +3.34% |
+
+**Confirmado y más fuerte:** con 2024/25 completa el arranque de temporada
+pasa de -0.66% (peor que la media) a +4.06%, a +3.53 sigmas. base+Elo da lo
+mismo (+3.46s). Lo que decía el usuario del cambio de temporada era cierto,
+y más temporadas lo arreglan.
+
+**Contra el mercado (219 partidos con cuota): la pista se desinfla.**
+
+| modelo | A | B | C |
+|---|---|---|---|
+| base+Elo | -1.53s | -0.07s | +0.01s |
+| conjunto propio | -1.08s | **+0.42s** | +0.15s |
+
+El +1.11s de la versión con 2024/25 a medias baja a +0.42s con 2024/25
+completa (bootstrap: peor que el mercado en el 34%; sin sus 3 mejores
+partidos, -0.04s). Regla de este proyecto: si al mejorar los datos el
+número va hacia cero, no era real. El modelo ya EMPATA con el mercado
+(antes perdía por -1 a -2 sigmas) pero no le gana. Mejor modelo, no
+ventaja.
+
+C (añadir 2023/24 a medias) no mejora a B en conjunto (-0.00s). Juzgar
+2023/24 solo cuando esté completa y con árbitro/alineaciones.

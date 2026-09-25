@@ -44,37 +44,42 @@ def predecir(cols, ent, val):
     return np.mean([M.probabilidades(M.entrenar(ent[cols].values, y, 2, semilla=s),
                                      val[cols].values, 2)[:, 1] for s in EM.SEMILLAS], axis=0)
 
+INICIO_2425 = pd.Timestamp('2024-07-01', tz='UTC')
+cuotas = EM.cargar_cuotas_crudas()
 for nombre, cols in CONFIGS.items():
     completo = bc[cols].notna().all(axis=1)
     ent_a = bc[completo & (fechas >= INICIO_2526) & (fechas <= CORTE)]
-    extra = bc[(fechas < INICIO_2526) & bc['ambos_marcan'].notna()]
-    ent_b = pd.concat([extra, ent_a])
+    hay_y = bc['ambos_marcan'].notna()
+    ent = {'A': ent_a,
+           'B': pd.concat([bc[hay_y & (fechas >= INICIO_2425) & (fechas < INICIO_2526)], ent_a]),
+           'C': pd.concat([bc[hay_y & (fechas < INICIO_2526)], ent_a])}
     prueba = bc[completo & (fechas > CORTE)]
     y = prueba['ambos_marcan'].values.astype(int)
-    pa, pb = predecir(cols, ent_a, prueba), predecir(cols, ent_b, prueba)
-    ba, bb = 2 * (pa - y) ** 2, 2 * (pb - y) ** 2
+    b = {k: 2 * (predecir(cols, e, prueba) - y) ** 2 for k, e in ent.items()}
     bmedia = 2 * (ent_a['ambos_marcan'].mean() - y) ** 2   # predecir siempre la tasa base
     print(f"\n== {nombre} ({len(cols)} rasgos) ==")
-    print(f"entrenamiento A {len(ent_a)} filas | B {len(ent_b)} filas (+{len(extra)} de 2024/25)")
-    print(f"{'tramo de prueba':24s} {'n':>4s} {'Brier A':>8s} {'Brier B':>8s} {'B vs A':>8s} "
-          f"{'A vs media':>11s} {'B vs media':>11s}")
+    print(f"entrenamiento A {len(ent['A'])} (2025/26) | B {len(ent['B'])} (+2024/25) | "
+          f"C {len(ent['C'])} (+2024/25 +2023/24 parcial)")
+    print(f"{'tramo de prueba':16s} {'n':>4s} {'B vs A':>8s} {'C vs A':>8s} {'C vs B':>8s} "
+          f"{'A/media':>8s} {'B/media':>8s} {'C/media':>8s}")
     fp = pd.to_datetime(prueba.fecha, utc=True).values
     for tramo, m in (('final 2025/26', fp < INICIO_2627.to_datetime64()),
                      ('inicio 2026/27', fp >= INICIO_2627.to_datetime64()),
                      ('todo', np.ones(len(y), bool))):
-        print(f"{tramo:24s} {m.sum():4d} {ba[m].mean():8.4f} {bb[m].mean():8.4f} "
-              f"{sig(ba[m]-bb[m]):+7.2f}s {(1-ba[m].mean()/bmedia[m].mean())*100:+10.2f}% "
-              f"{(1-bb[m].mean()/bmedia[m].mean())*100:+10.2f}%")
+        mej = {k: (1 - b[k][m].mean() / bmedia[m].mean()) * 100 for k in b}
+        print(f"{tramo:16s} {m.sum():4d} {sig(b['A'][m]-b['B'][m]):+7.2f}s {sig(b['A'][m]-b['C'][m]):+7.2f}s "
+              f"{sig(b['B'][m]-b['C'][m]):+7.2f}s {mej['A']:+7.2f}% {mej['B']:+7.2f}% {mej['C']:+7.2f}%")
     # contra el mercado, y robustez: ¿lo empujan unos pocos partidos?
-    cfgm = EM.MERCADOS['ambos_marcan']
-    pmer = EM.mercado_por_partido(EM.cargar_cuotas_crudas(), cfgm)
+    pmer = EM.mercado_por_partido(cuotas, EM.MERCADOS['ambos_marcan'])
     cc = prueba.match_id.isin(pmer.index).values
     bm = 2 * (pmer.loc[prueba.match_id[cc]].values - y[cc]) ** 2
-    print(f"contra el mercado ({cc.sum()} con cuota): A {sig(bm-ba[cc]):+.2f}s   B {sig(bm-bb[cc]):+.2f}s")
-    d = np.sort(bm - bb[cc])[::-1]
-    print("  B sin sus k mejores partidos: " +
-          "  ".join(f"k={k}: {sig(d[k:]):+.2f}s" for k in (1, 3, 5, 10)))
-    rng = np.random.default_rng(0)
-    medias = [rng.choice(d, len(d)).mean() for _ in range(5000)]
-    print(f"  bootstrap: B peor que el mercado en el {np.mean(np.array(medias) <= 0)*100:.0f}% de remuestreos")
-print(f"\n({time.time()-t0:.0f}s)  positivo en 'B vs A' = añadir 2024/25 mejora")
+    print(f"contra el mercado ({cc.sum()} con cuota): " +
+          "   ".join(f"{k} {sig(bm-b[k][cc]):+.2f}s" for k in b))
+    for k in ('B', 'C'):
+        d = np.sort(bm - b[k][cc])[::-1]
+        rng = np.random.default_rng(0)
+        medias = np.array([rng.choice(d, len(d)).mean() for _ in range(5000)])
+        print(f"  {k}: sin sus k mejores partidos " +
+              "  ".join(f"k={q}: {sig(d[q:]):+.2f}s" for q in (1, 3, 5, 10)) +
+              f" | bootstrap peor que el mercado en el {np.mean(medias <= 0)*100:.0f}%")
+print(f"\n({time.time()-t0:.0f}s)  positivo en 'X vs Y' = X mejora a Y")
