@@ -1,0 +1,10 @@
+22873 partidos, 2016-08-12 a 2026-09-20; con cuota 22850
+FUGA: pasa (propio partido igual: True; partidos posteriores que cambian: 770)
+
+2530 partidos evaluados mes a mes (2025-08 a 2026-09). Positivo = el modelo es mejor.
+modelo                              vs media casas  vs Pinnacle  acierto  apuesta (cuota media)
+historia 1 temporada                        -2.59s       -1.80s    56.1%     -3.61% (1719 ap.)
+historia 3 temporadas                       -4.13s       -3.68s    56.0%     -9.36% (1447 ap.)
+historia 10 temporadas                      -3.68s       -2.81s    55.5%     -8.66% (1439 ap.)
+parte de la cuota, 10 temporadas            -1.05s       -1.78s    58.6%     -5.27% (458 ap.)
+media de casas                                           -0.92s    58.6%

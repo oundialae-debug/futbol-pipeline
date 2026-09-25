@@ -473,3 +473,27 @@ completa 2.223 con Segunda), alineaciones 4.760, árbitro 4.789, jugadores
 - Poisson solo empeora con más datos frente a XGB (-1.16 a -1.45s); la mezcla
   ya solo aporta +0.55/+0.78s. La mejora grande viene del XGBoost.
 - Pendiente: 2023/24 está a medias (932 de ~2.200). Repetir cuando termine.
+
+## Historia larga solo con football-data (historia_larga.py, 25/09/2026)
+
+22.873 partidos 2016/17-2026/27 (6 ligas) de football-data: goles, tiros, a
+puerta, córners, cuotas (BbAv antes de 2019/20, Avg después). Variables solo
+de esa fuente (medias de 8, Elo, liga; sin pases ni g/a). Fuga comprobada
+(trucar un partido no mueve sus rasgos; sí 770 posteriores). Mismos meses de
+evaluación (2.530 partidos, ago 2025 - sep 2026), fijado antes de mirar:
+
+| entrenamiento | vs media casas | vs Pinnacle | acierto | apostando |
+|---|---|---|---|---|
+| 1 temporada | -2.59s | -1.80s | 56.1% | -3.6% |
+| 3 temporadas | -4.13s | -3.68s | 56.0% | -9.4% |
+| 10 temporadas | -3.68s | -2.81s | 55.5% | -8.7% |
+| parte de la cuota, 10 temporadas | -1.05s | -1.78s | 58.6% | -5.3% (458 ap.) |
+| media de casas | | -0.92s | 58.6% | |
+
+**Más temporadas de estadística simple NO ayudan; empeoran.** El fútbol de
+2016-2022 enseña relaciones que ya no valen (deriva de época), y sin pases ni
+g/a el modelo es más pobre. Lectura de la mejora de la sección anterior
+(-2.65s -> -1.09s): probablemente no fue "más partidos" sino más partidos CON
+alineaciones y g/a de jugadores (2024/25 ganó alineaciones al copiar de main).
+Hipótesis a comprobar; si se confirma, lo que hay que ampliar es la cobertura
+de jugadores, no los años.
