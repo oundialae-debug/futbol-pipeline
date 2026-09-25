@@ -1,0 +1,19 @@
+2527 partidos, 2025-08 a 2026-09; goles esperados medios 2.74 (reales 0.530 de Más 2.5)
+
+modelo                          vs media casas  vs Pinnacle cierre  acierto  vs XGB 28
+XGBoost 28 (actual)                     -2.65s              -3.20s    56.2%     +0.00s
+Poisson de goles                        -4.53s              -3.15s    56.1%     -0.10s
+mezcla 50/50                            -2.26s              -2.65s    57.7%     +2.27s
+media de casas                                              -0.95s    58.6%
+
+Por temporada (vs media de casas):
+  2025/26 n=2211: p_28 -2.34s  p_goles -3.89s  p_mezcla -1.78s
+  2026/27 n=316: p_28 -1.39s  p_goles -2.49s  p_mezcla -1.79s
+
+Apostando 1 unidad con la cuota MEDIA al lado con valor:
+  p_goles   umbral  0%:  1332 apuestas  rentabilidad -11.89% (±3.00, -3.97s)
+  p_goles   umbral  3%:   937 apuestas  rentabilidad  -9.99% (±3.69, -2.71s)
+  p_goles   umbral  5%:   749 apuestas  rentabilidad -12.89% (±4.19, -3.07s)
+  p_mezcla  umbral  0%:  1353 apuestas  rentabilidad  -7.08% (±2.94, -2.40s)
+  p_mezcla  umbral  3%:   989 apuestas  rentabilidad -10.20% (±3.50, -2.91s)
+  p_mezcla  umbral  5%:   775 apuestas  rentabilidad -10.78% (±4.04, -2.67s)

@@ -389,3 +389,28 @@ El cierre ya incorpora el movimiento: no queda nada que cobrar. Con fotos de
 dos momentos no se puede probar "apostar pronto antes de que se mueva" (haría
 falta saber hacia dónde se moverá, que es otra vez predecir mejor que el
 mercado).
+
+## Otra arquitectura: modelo de goles Poisson (modelo_goles_poisson.py, 25/09/2026)
+
+Goles de cada equipo = liga + ventaja local + ataque + defensa rival
+(regresión de Poisson, vida media 365 días, alpha 0.01); P(Más 2.5) del
+total. Todo fijado antes de mirar, incluida la mezcla 50/50 con el XGBoost
+de 28. Mes a mes, mismos 2.527 partidos con cuota:
+
+| modelo | vs media casas | vs Pinnacle cierre | acierto | vs XGBoost 28 |
+|---|---|---|---|---|
+| XGBoost 28 | -2.65s | -3.20s | 56.2% | -- |
+| Poisson de goles | -4.53s | -3.15s | 56.1% | -0.10s |
+| **mezcla 50/50** | **-2.26s** | **-2.65s** | **57.7%** | **+2.27s** |
+| media de casas | -- | -0.95s | 58.6% | |
+
+- **La mezcla mejora al XGBoost de 28 por +2.27s**, con el peso fijado de
+  antemano: primera mejora clara del modelo en esta carpeta desde la
+  depuración. Los dos modelos se equivocan en sitios distintos.
+- Poisson solo empata con el XGBoost (-0.10s); contra la media de casas
+  queda peor (-4.53s): la independencia de Poisson falla en marcadores bajos.
+- **Contra el mercado todos siguen perdiendo.** Apostando con la cuota
+  media: Poisson -10% a -13%, mezcla -7% a -11%.
+
+Siguientes pasos razonables: corrección Dixon-Coles de marcadores bajos
+(rho) y Poisson con xG en vez de goles. Fijar parámetros antes de mirar.
