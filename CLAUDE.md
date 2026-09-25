@@ -950,3 +950,34 @@ Lectura:
   Betfair y para predecir un partido futuro habría que usar el precio de
   ese momento (otra fuente, otra hora). Mezclar fuentes sin medirlo es
   justo el tipo de fallo silencioso de este documento.
+
+## Casas contra el precio afinado: el "valor" era mirar al futuro (25/09/2026)
+
+Pista de la sección anterior: las casas que cosechamos se separan del
+cierre de Pinnacle/Betfair. Estrategia clásica sin modelo: tomar el precio
+afinado sin margen como verdad y apostar donde una casa pague más
+(VE = cuota × p_afinada − 1 > 0). `scripts/casas_contra_cierre.py`, 251
+partidos (24/08-20/09/2026), 53 casas (Pinnacle no está entre ellas),
+referencia Betfair Exchange (Pinnacle no tiene precio en 2026/27 en
+football-data). Errores agrupados por partido.
+
+**Contra el CIERRE sale "ganador"**: 1X2, mejor cuota con VE>0 -> +16.2%
+real a +2.16s (342 apuestas, 224 partidos). Pero el real (+16%) es 4 veces
+el esperado (+4.3%), y sin los 5 mejores partidos baja a +1.27s. Síntoma.
+
+**Contra la PREVIA (el precio afinado de días antes, que SÍ se conoce al
+apostar) pierde**: mejor cuota con VE>0 -> -1.2% (1X2), -2.8% (2.5); y
+cuanto más "valor" aparente, más pierde (VE>10%: -38.9% y -32.8%).
+
+**Por qué**: lo cosechado es la última foto previa de cada casa ("varias
+veces al día" según la spec), tomada ENTRE la previa y el cierre (Brier:
+previa 0.5939 > cosechado 0.5919 > cierre 0.5904; distancia al cierre 0.89
+puntos, a la previa 1.51). El cierre lleva información posterior a la foto
+de la casa (alineaciones, noticias), así que "la casa paga más que el
+cierre" es muchas veces "la casa todavía no se había enterado". Esa cuota
+ya no estaba disponible cuando el cierre se conoció. El mismo fallo que el
+"29% de arbitraje": precios de distintas casas NO simultáneos.
+
+Cerrado con estos datos. Solo se podría reabrir con precios SIMULTÁNEOS
+(foto de la casa y de Pinnacle/Betfair a la misma hora, justo antes del
+pitido), que ni Highlightly ni football-data dan.

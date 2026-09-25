@@ -70,6 +70,17 @@ def elegir(fila, grupos):
     return None, None
 
 
+def previa(f):
+    r_f, r_p = elegir(f, [("pinnacle", ["PSH", "PSD", "PSA"]), ("betfair", ["BFEH", "BFED", "BFEA"])])
+    o_f, o_p = elegir(f, [("pinnacle", ["P>2.5", "P<2.5"]), ("betfair", ["BFE>2.5", "BFE<2.5"])])
+    return {"fuente_previa_1x2": r_f,
+            "p_local_previa": None if r_p is None else r_p[0],
+            "p_empate_previa": None if r_p is None else r_p[1],
+            "p_visitante_previa": None if r_p is None else r_p[2],
+            "fuente_previa_mas_2_5": o_f,
+            "p_mas_2_5_previa": None if o_p is None else o_p[0]}
+
+
 def main():
     fd = cargar_fd()
     h = pd.read_csv("data/historico_partidos.csv")
@@ -95,7 +106,11 @@ def main():
                       "fuente_1x2": r_f, "p_local": None if r_p is None else r_p[0],
                       "p_empate": None if r_p is None else r_p[1],
                       "p_visitante": None if r_p is None else r_p[2],
-                      "fuente_mas_2_5": o_f, "p_mas_2_5": None if o_p is None else o_p[0]})
+                      "fuente_mas_2_5": o_f, "p_mas_2_5": None if o_p is None else o_p[0],
+                      # PREVIA (no cierre): football-data la toma días antes
+                      # del partido (viernes/martes). Sirve de referencia sin
+                      # mirar al futuro: se conocía antes de apostar.
+                      **previa(f)})
     out = pd.DataFrame(filas)
     out.to_csv(RUTA, index=False)
 
