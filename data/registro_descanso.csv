@@ -702,5 +702,5 @@ match_id,partido,liga,minuto,estado,tarjetas_ht,linea,prob_modelo,prob_push,prob
 1301062346,Netherlands vs Germany,UEFA Nations League,45,Half time,2,6.5,0.1334,0.0,0.1349,1,6.8,Marathonbet,-0.0926,False,2026-09-24T19:51:49+00:00,,10.0,5.0,6.35,0.1454,2026-09-24T20:27:53+00:00,(otras)
 1315490200,Cameroon vs Comoros,Africa Cup of Nations - Qualification,45,Half time,0,3.5,0.2861,0.0,0.5278,1,1.7,Vbet Sport,-0.5136,False,2026-09-24T20:10:02+00:00,,10.0,6.0,1.7,0.5278,2026-09-24T20:43:10+00:00,(otras)
 1315490200,Cameroon vs Comoros,Africa Cup of Nations - Qualification,45,Half time,0,4.0,0.152,0.1341,0.4396,1,2.04,Vbet Sport,-0.5558,False,2026-09-24T20:10:02+00:00,,10.0,6.0,2.04,0.4396,2026-09-24T20:43:10+00:00,(otras)
-1395586320,Haiti vs Trinidad and Tobago,CONCACAF Nations League,45,Half time,0,3.5,0.2861,0.0,0.5278,1,1.7,Vbet Sport,-0.5136,False,2026-09-25T01:16:27+00:00,,11.0,3.0,,,,(otras)
-1395586320,Haiti vs Trinidad and Tobago,CONCACAF Nations League,45,Half time,0,4.0,0.152,0.1341,0.4301,1,2.08,Vbet Sport,-0.5497,False,2026-09-25T01:16:27+00:00,,11.0,3.0,,,,(otras)
+1395586320,Haiti vs Trinidad and Tobago,CONCACAF Nations League,45,Half time,0,3.5,0.2861,0.0,0.5278,1,1.7,Vbet Sport,-0.5136,False,2026-09-25T01:16:27+00:00,,11.0,3.0,1.7,0.5278,2026-09-25T01:42:35+00:00,(otras)
+1395586320,Haiti vs Trinidad and Tobago,CONCACAF Nations League,45,Half time,0,4.0,0.152,0.1341,0.4301,1,2.08,Vbet Sport,-0.5497,False,2026-09-25T01:16:27+00:00,,11.0,3.0,2.08,0.4301,2026-09-25T01:42:35+00:00,(otras)
