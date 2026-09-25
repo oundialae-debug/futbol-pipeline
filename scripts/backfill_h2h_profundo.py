@@ -95,7 +95,9 @@ def main():
     if not os.path.exists(RUTA_HIST):
         print(f"Falta {RUTA_HIST}. Lanza antes el backfill del histórico.")
         return
-    hist = pd.read_csv(RUTA_HIST)
+    # Temporada más reciente primero: si la cuota se acaba a mitad, que
+    # quede COMPLETA la temporada nueva en vez de dos a medias.
+    hist = pd.read_csv(RUTA_HIST).sort_values("temporada", ascending=False, kind="stable")
     pares = {}
     for _, fila in hist.iterrows():
         clave = clave_par(fila["local_id"], fila["visitante_id"])
