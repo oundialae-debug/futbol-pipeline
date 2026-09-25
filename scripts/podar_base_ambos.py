@@ -22,6 +22,10 @@ import numpy as np
 import pandas as pd
 import rasgos, modelo_xgboost as M, evaluar_mercados as EM
 from cuota_como_variable import MKT, sig, predecir
+import os
+
+# "base" (25/09, primera pasada) o "todo" (todos los grupos, segunda pasada)
+ALCANCE = os.environ.get("ALCANCE", "base")
 
 
 def main():
@@ -39,7 +43,22 @@ def main():
     for c in base_cols:
         clave = c.split("_", 1)[1] if c.startswith(("loc_", "vis_", "dif_")) else c
         unidades.setdefault(clave, []).append(c)
-    print(f"{len(cols)} rasgos; base {len(base_cols)} en {len(unidades)} medidas.")
+    if ALCANCE == "todo":
+        # El resto de grupos: Elo, h2h, h2h profundo y árbitro como bloque;
+        # tabla y calidad por medida (loc/vis/dif juntas); el precio en 4
+        # piezas con sentido propio.
+        for g in ("elo", "h2h", "h2h_profundo", "arbitro"):
+            unidades[g] = [c for c in grupos[g] if c in cols]
+        for g in ("tabla", "calidad_plantilla"):
+            for c in grupos[g]:
+                if c in cols:
+                    unidades.setdefault(c.split("_", 1)[1], []).append(c)
+        unidades["precio_1x2"] = ["mkt_p_local", "mkt_p_empate", "mkt_p_visitante"]
+        unidades["precio_mas_2_5"] = ["mkt_p_mas_2_5"]
+        unidades["precio_lambdas"] = ["mkt_lambda_l", "mkt_lambda_v"]
+        unidades["precio_btts_implicito"] = ["mkt_p_btts_implicito"]
+        assert sorted(sum(unidades.values(), [])) == sorted(cols), "unidades no cubren los 106"
+    print(f"{len(cols)} rasgos; alcance '{ALCANCE}': {len(sum(unidades.values(), []))} columnas en {len(unidades)} unidades.")
 
     base, ent_todo, fecha_corte = M.partir(base_todo, prod)
     ent = ent_todo[ent_todo[M.ORIGEN_OBJETIVO["ambos_marcan"]].notna()].reset_index(drop=True)
