@@ -1,0 +1,18 @@
+FUGA: pasa (propio igual: True; filas que cambian: 1534)
+Cobertura en la evaluación: impacto xG 99%, lesiones (España) 100%
+
+TODAS LAS LIGAS (n=2527). Positivo = mejor.
+modelo                         vs 28  vs media casas  acierto
+28                            +0.00s          -1.09s    57.2%
+28 + impacto xG               -1.42s          -1.45s    57.7%
+28 + impacto goles            -1.39s          -1.53s    56.9%
+28 + impacto xG y goles       -2.07s          -1.86s    57.6%
+28 + lesiones                 -1.21s          -1.38s    57.8%
+
+SOLO LA LIGA Y SEGUNDA (n=975). Positivo = mejor.
+modelo                         vs 28  vs media casas  acierto
+28                            +0.00s          -0.44s    57.4%
+28 + impacto xG               +0.05s          -0.42s    58.4%
+28 + impacto goles            -0.76s          -0.67s    57.2%
+28 + impacto xG y goles       -0.85s          -0.76s    57.8%
+28 + lesiones                 -0.74s          -0.70s    58.3%

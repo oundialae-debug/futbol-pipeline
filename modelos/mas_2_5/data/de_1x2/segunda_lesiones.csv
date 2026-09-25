@@ -1,0 +1,756 @@
+team_id,team_name,player_id,player_name,minutos_temporada,reason,fromDate,toDate,missedGames
+457771,Leganes,327950,Juan Soriano,3780,Knee bruise,18.01.2017,29.01.2017,2.0
+616057,Almería,271278,Andrés Fernández,3690,Adductor injury,04.11.2023,23.11.2023,3.0
+616057,Almería,271278,Andrés Fernández,3690,Corona virus,08.01.2021,22.01.2021,2.0
+616057,Almería,271278,Andrés Fernández,3690,Cruciate ligament tear,26.08.2017,26.03.2018,39.0
+616057,Almería,271278,Andrés Fernández,3690,Back injury,07.10.2015,13.10.2015,
+455218,Las Palmas,210098,D. Horkaš,3638,Broken finger,08.05.2023,27.05.2023,2.0
+455218,Las Palmas,210098,D. Horkaš,3638,Unknown,12.03.2021,23.03.2021,2.0
+8153364,Burgos,16886317,Grego,3585,Muscle injury,08.03.2022,01.04.2022,3.0
+622865,Sporting Gijón,7607082,Rubén Yáñez,3524,Partial damage to the cruciate ligament,05.02.2024,05.03.2024,4.0
+680733,Mirandes,29556856,Juan Gutiérrez,3510,Muscle injury,11.08.2023,04.09.2023,4.0
+3970699,Racing Santander,7600803,Andrés Martín,3461,Fever,12.02.2020,04.03.2020,3.0
+457771,Leganes,52318,Amadou Diawara,3458,Muscle injury,13.09.2022,16.09.2022,1.0
+457771,Leganes,52318,Amadou Diawara,3458,Pubalgia,30.04.2021,23.05.2021,5.0
+457771,Leganes,52318,Amadou Diawara,3458,Tendon irritation,19.01.2021,22.01.2021,2.0
+457771,Leganes,52318,Amadou Diawara,3458,Corona virus,12.10.2020,10.11.2020,7.0
+457771,Leganes,52318,Amadou Diawara,3458,Meniscus injury,22.01.2020,05.03.2020,8.0
+457771,Leganes,52318,Amadou Diawara,3458,Meniscus tear,06.10.2019,04.11.2019,7.0
+457771,Leganes,52318,Amadou Diawara,3458,Muscle injury,15.03.2019,26.05.2019,14.0
+8629073,AD Ceuta FC,7542682,Carlos Hernández,3438,Muscle injury,13.11.2018,13.12.2018,4.0
+8629073,AD Ceuta FC,7542682,Carlos Hernández,3438,Muscle injury,12.09.2018,01.11.2018,7.0
+4471938,Castellón,19704783,R. Matthys,3420,Hip injury,01.09.2025,10.09.2025,1.0
+618610,Huesca,7556528,Dani Jiménez,3420,Corona virus,19.12.2021,30.12.2021,1.0
+8153364,Burgos,29412600,Iván Morante,3380,Meniscus injury,02.10.2021,16.11.2021,7.0
+622865,Sporting Gijón,19279099,Álex Corredera,3367,Broken foot,25.09.2022,25.10.2022,5.0
+622865,Sporting Gijón,19279099,Álex Corredera,3367,Corona virus,01.03.2022,08.03.2022,
+622865,Sporting Gijón,26255390,César Gelabert,3365,Ankle injury,27.03.2023,20.04.2023,3.0
+622865,Sporting Gijón,26255390,César Gelabert,3365,Cruciate ligament tear,08.01.2022,08.08.2022,20.0
+622865,Sporting Gijón,26255390,César Gelabert,3365,Cruciate ligament tear,23.06.2018,23.12.2018,
+622865,Sporting Gijón,29386196,Guille Rosas,3345,Hamstring injury,31.01.2022,20.04.2022,13.0
+622865,Sporting Gijón,29386196,Guille Rosas,3345,Calf injury,19.09.2021,08.10.2021,2.0
+455218,Las Palmas,21176323,Enrique Clemente,3340,Cruciate ligament tear,24.09.2018,01.04.2019,
+463728,Deportivo La Coruña,7597744,Miguel Loureiro,3298,Knee injury,18.08.2024,26.09.2024,5.0
+3970699,Racing Santander,7614327,Iñigo Vicente,3284,Pubic bone irritation,01.01.2022,20.01.2022,3.0
+3970699,Racing Santander,7614327,Iñigo Vicente,3284,Corona virus,30.01.2021,16.02.2021,5.0
+456069,Malaga,30630887,David Larrubia,3260,Ankle injury,07.04.2026,30.04.2026,
+455218,Las Palmas,19679184,Manu Fuster,3197,Unknown,20.09.2021,20.10.2021,4.0
+618610,Huesca,7658763,Jorge Pulido,3195,Torn muscle fiber,14.03.2022,09.04.2022,3.0
+618610,Huesca,7658763,Jorge Pulido,3195,Torn muscle fiber,10.02.2022,04.03.2022,3.0
+618610,Huesca,7658763,Jorge Pulido,3195,Muscle injury,21.04.2019,28.04.2019,1.0
+618610,Huesca,7658763,Jorge Pulido,3195,Flu,20.12.2018,25.12.2018,1.0
+618610,Huesca,7658763,Jorge Pulido,3195,Knee surgery,14.04.2015,01.06.2015,8.0
+4471938,Castellón,3868340,J. Mellot,3181,Torn muscle fiber,24.11.2023,06.01.2024,6.0
+455218,Las Palmas,26158629,Mika Màrmol,3166,Broken nose bone,29.05.2022,30.06.2022,
+455218,Las Palmas,26158629,Mika Màrmol,3166,Corona virus,12.07.2021,26.07.2021,
+607547,Cordoba,29381044,Jacobo González,3125,Metatarsal fracture,03.12.2020,30.04.2021,23.0
+607547,Cordoba,27250370,Iker Álvarez,3105,Pelvic injury,24.08.2019,08.03.2020,
+616057,Almería,7575526,Álex Muñoz,3068,Muscle injury,06.05.2024,20.05.2024,2.0
+616057,Almería,7575526,Álex Muñoz,3068,Muscular problems,10.11.2023,01.12.2023,2.0
+616057,Almería,7575526,Álex Muñoz,3068,Hamstring injury,16.10.2023,01.11.2023,3.0
+616057,Almería,7575526,Álex Muñoz,3068,Adductor tear,18.02.2023,01.03.2023,1.0
+616057,Almería,7575526,Álex Muñoz,3068,Knee problems,01.03.2022,19.03.2022,2.0
+616057,Almería,7575526,Álex Muñoz,3068,Muscle injury,24.04.2021,22.05.2022,16.0
+455218,Las Palmas,29440131,Sergio Barcia,3019,Shoulder injury,04.03.2023,04.04.2023,4.0
+613504,Valladolid,2309055,S. Jurić,3016,Ankle injury,25.07.2019,31.08.2019,5.0
+616057,Almería,4924017,F. Bonini,3013,Ankle sprain,07.11.2022,12.11.2022,
+616057,Almería,4924017,F. Bonini,3013,Corona virus,04.01.2022,01.02.2022,2.0
+457771,Leganes,29817676,Juan Cruz,3009,Muscle injury,05.02.2023,02.04.2023,16.0
+457771,Leganes,29817676,Juan Cruz,3009,Muscle injury,30.11.2022,16.01.2023,9.0
+457771,Leganes,29817676,Juan Cruz,3009,Hamstring injury,19.08.2021,30.09.2021,5.0
+463728,Deportivo La Coruña,47636834,Peke,3002,Broken fibula,03.09.2023,20.11.2023,12.0
+8629073,AD Ceuta FC,56009639,Marcos Fernández,2989,Broken ankle,10.07.2023,10.11.2023,10.0
+3970699,Racing Santander,20279,Jokin Ezkieta,2978,Shoulder injury,12.12.2025,04.01.2026,4.0
+3970699,Racing Santander,20279,Jokin Ezkieta,2978,Corona virus,20.12.2021,29.12.2021,1.0
+3970699,Racing Santander,20279,Jokin Ezkieta,2978,Corona virus,13.11.2020,27.11.2020,1.0
+3970699,Racing Santander,20279,Jokin Ezkieta,2978,Hand injury,19.03.2019,30.05.2019,24.0
+3970699,Racing Santander,20279,Jokin Ezkieta,2978,Muscle injury,27.04.2016,01.06.2016,3.0
+3970699,Racing Santander,20279,Jokin Ezkieta,2978,Hand injury,21.08.2015,25.09.2015,5.0
+8153364,Burgos,49660926,David González,2955,Cruciate ligament tear,26.11.2022,26.06.2023,26.0
+622865,Sporting Gijón,29613045,Jonathan Dubasin,2941,Ligament injury,24.07.2023,30.08.2023,6.0
+464579,Eibar,7627851,Anaitz Arbilla,2885,Muscle injury,27.04.2022,20.05.2022,2.0
+464579,Eibar,7627851,Anaitz Arbilla,2885,Achilles tendon problems,21.09.2021,17.11.2021,10.0
+464579,Eibar,7627851,Anaitz Arbilla,2885,Muscle injury,05.09.2021,20.09.2021,2.0
+464579,Eibar,7627851,Anaitz Arbilla,2885,Muscle injury,24.12.2020,04.01.2021,1.0
+464579,Eibar,7627851,Anaitz Arbilla,2885,Muscle injury,13.07.2020,23.09.2020,4.0
+464579,Eibar,7627851,Anaitz Arbilla,2885,Knock,24.06.2020,11.07.2020,5.0
+464579,Eibar,7627851,Anaitz Arbilla,2885,Muscle injury,09.12.2019,01.02.2020,8.0
+464579,Eibar,7627851,Anaitz Arbilla,2885,Patellar tendon tear,18.03.2019,01.06.2019,10.0
+464579,Eibar,7627851,Anaitz Arbilla,2885,Hamstring injury,16.04.2018,10.05.2018,4.0
+464579,Eibar,7627851,Anaitz Arbilla,2885,Achilles tendon problems,16.08.2017,13.09.2017,3.0
+464579,Eibar,7627851,Anaitz Arbilla,2885,Achilles tendon problems,02.04.2017,26.04.2017,4.0
+464579,Eibar,7627851,Anaitz Arbilla,2885,Muscle injury,05.01.2017,27.01.2017,6.0
+464579,Eibar,7627851,Anaitz Arbilla,2885,Achilles tendon problems,26.10.2015,22.07.2016,30.0
+464579,Eibar,7627851,Anaitz Arbilla,2885,Thigh problems,03.05.2015,07.05.2015,
+464579,Eibar,7627851,Anaitz Arbilla,2885,Torn muscle fiber,30.03.2011,20.04.2011,3.0
+463728,Deportivo La Coruña,20451179,G. Quagliata,2876,Hamstring injury,25.01.2023,15.02.2023,4.0
+463728,Deportivo La Coruña,20451179,G. Quagliata,2876,Groin injury,21.04.2022,27.04.2022,1.0
+463728,Deportivo La Coruña,20451179,G. Quagliata,2876,Muscular problems,26.08.2021,15.09.2021,1.0
+463728,Deportivo La Coruña,20451179,G. Quagliata,2876,Rest,05.11.2019,07.11.2019,1.0
+623716,Zaragoza,26122243,Francho Serrano,2874,Back injury,24.03.2024,24.07.2024,11.0
+623716,Zaragoza,26122243,Francho Serrano,2874,Torn muscle fiber,10.03.2022,13.04.2022,5.0
+623716,Zaragoza,26122243,Francho Serrano,2874,Muscle injury,07.10.2021,20.10.2021,4.0
+617759,Cultural Leonesa,29237432,Rodri Suárez,2873,Cruciate ligament tear,23.08.2026,23.04.2027,
+3970699,Racing Santander,70460677,Peio Canales,2864,Sore muscles,07.02.2026,10.02.2026,1.0
+3970699,Racing Santander,70460677,Peio Canales,2864,Unknown,01.12.2023,15.12.2023,2.0
+8153364,Burgos,29668751,Fer Niño,2861,Back injury,01.08.2018,02.01.2020,
+622865,Sporting Gijón,3444749,J. Otero,2826,Muscle fiber tear,26.10.2025,23.11.2025,4.0
+613504,Valladolid,7538818,Iván Alejo,2820,Muscle injury,20.02.2025,21.04.2025,8.0
+613504,Valladolid,7538818,Iván Alejo,2820,Inflammation of the biceps tendon in the thigh,08.01.2025,07.02.2025,6.0
+613504,Valladolid,7538818,Iván Alejo,2820,Muscular problems,17.12.2017,27.12.2017,1.0
+613504,Valladolid,7538818,Iván Alejo,2820,Knee injury,10.09.2017,02.11.2017,8.0
+609249,Granada CF,70871388,Oscar Naasei,2817,Muscular problems,30.07.2026,04.08.2026,
+618610,Huesca,7609336,Francisco Portillo,2808,Ankle injury,26.08.2014,10.09.2014,1.0
+616057,Almería,7656348,Adri Embarba,2806,Torn muscle fiber,03.10.2016,21.10.2016,3.0
+616057,Almería,7656348,Adri Embarba,2806,Knock,18.01.2016,08.02.2016,2.0
+616057,Almería,7656348,Adri Embarba,2806,Foot injury,10.08.2015,10.09.2015,2.0
+616057,Almería,7656348,Adri Embarba,2806,Hand injury,12.01.2015,29.01.2015,2.0
+464579,Eibar,7629139,Sergio Álvarez,2796,Hamstring injury,05.01.2024,31.01.2024,4.0
+464579,Eibar,7629139,Sergio Álvarez,2796,Muscle injury,27.01.2020,20.02.2020,2.0
+464579,Eibar,7629139,Sergio Álvarez,2796,Muscle injury,28.10.2019,02.01.2020,9.0
+464579,Eibar,7629139,Sergio Álvarez,2796,Hamstring injury,13.11.2017,01.01.2018,6.0
+464579,Eibar,7629139,Sergio Álvarez,2796,Shoulder injury,08.11.2015,12.01.2016,9.0
+8629073,AD Ceuta FC,7528997,José Matos,2790,Cruciate ligament tear,12.08.2019,30.06.2020,26.0
+8629073,AD Ceuta FC,7528997,José Matos,2790,Muscle tear,26.03.2018,26.05.2018,
+8629073,AD Ceuta FC,7528997,José Matos,2790,Adductor injury,25.03.2018,20.05.2018,
+609249,Granada CF,26061707,Pedro Alemañ,2724,Unknown,24.09.2023,27.11.2023,6.0
+3970699,Racing Santander,52169628,G. Puerta,2678,Knock,22.09.2025,02.10.2025,1.0
+3970699,Racing Santander,52169628,G. Puerta,2678,Stomach problems,07.04.2025,11.04.2025,1.0
+615206,Albacete,7515956,Carlos Neva,2670,Cruciate ligament tear,20.03.2022,10.10.2022,18.0
+615206,Albacete,7515956,Carlos Neva,2670,Muscle injury,26.04.2021,26.06.2021,6.0
+615206,Albacete,7515956,Carlos Neva,2670,Corona virus,06.11.2020,20.11.2020,1.0
+8153364,Burgos,7612073,Iñigo Córdoba,2669,Hamstring injury,28.10.2024,28.11.2024,5.0
+8153364,Burgos,7612073,Iñigo Córdoba,2669,Groin injury,29.10.2023,08.11.2023,2.0
+8153364,Burgos,7612073,Iñigo Córdoba,2669,Unknown,22.02.2023,14.03.2023,2.0
+8153364,Burgos,7612073,Iñigo Córdoba,2669,Knee injury,20.04.2021,12.07.2021,7.0
+8153364,Burgos,7612073,Iñigo Córdoba,2669,Hamstring injury,10.08.2019,28.08.2019,2.0
+8157619,Real Sociedad B,47778031,Jon Balda,2666,Surgery,12.05.2026,01.06.2026,3.0
+680733,Mirandes,7536242,Carlos Fernández,2661,Meniscus damage,12.01.2024,31.05.2024,25.0
+680733,Mirandes,7536242,Carlos Fernández,2661,Knee injury,23.11.2023,08.12.2023,4.0
+680733,Mirandes,7536242,Carlos Fernández,2661,Hamstring injury,01.04.2023,07.04.2023,1.0
+680733,Mirandes,7536242,Carlos Fernández,2661,Hamstring injury,12.12.2022,13.01.2023,4.0
+680733,Mirandes,7536242,Carlos Fernández,2661,Hamstring injury,13.08.2022,30.09.2022,8.0
+680733,Mirandes,7536242,Carlos Fernández,2661,Cruciate ligament tear,31.07.2021,30.06.2022,51.0
+680733,Mirandes,7536242,Carlos Fernández,2661,Muscle injury,26.04.2021,26.06.2021,5.0
+680733,Mirandes,7536242,Carlos Fernández,2661,Corona virus,20.11.2020,03.12.2020,4.0
+680733,Mirandes,7536242,Carlos Fernández,2661,Meniscus injury,09.07.2018,11.09.2018,10.0
+680733,Mirandes,7536242,Carlos Fernández,2661,Muscle injury,28.04.2018,28.05.2018,9.0
+680733,Mirandes,7536242,Carlos Fernández,2661,Ankle injury,22.12.2017,18.01.2018,2.0
+680733,Mirandes,7536242,Carlos Fernández,2661,Torn muscle fiber,22.10.2017,22.11.2017,4.0
+680733,Mirandes,7536242,Carlos Fernández,2661,Muscular problems,05.09.2017,15.09.2017,1.0
+680733,Mirandes,7536242,Carlos Fernández,2661,Cruciate ligament tear,06.10.2016,06.07.2017,75.0
+680733,Mirandes,26161849,Fernando Medrano,2651,Muscle injury,29.11.2024,18.12.2024,3.0
+680733,Mirandes,26161849,Fernando Medrano,2651,Shoulder injury,25.08.2024,15.09.2024,3.0
+680733,Mirandes,26161849,Fernando Medrano,2651,Shoulder injury,11.03.2024,05.06.2024,12.0
+680733,Mirandes,26161849,Fernando Medrano,2651,Lower leg fracture,17.10.2023,10.11.2023,4.0
+618610,Huesca,21178738,Oscar Sielva,2641,Muscle injury,23.05.2022,30.06.2022,3.0
+618610,Huesca,21178738,Oscar Sielva,2641,Broken collarbone,20.01.2009,20.03.2009,11.0
+618610,Huesca,21178738,Oscar Sielva,2641,Broken collarbone,07.10.2008,07.11.2008,4.0
+3970699,Racing Santander,77677663,Jorge Salinas,2617,Broken jaw,14.10.2025,18.11.2025,6.0
+4471938,Castellón,53501581,Beñat Gerenabarrena,2616,Unknown,05.08.2024,27.09.2024,6.0
+4471938,Castellón,53501581,Beñat Gerenabarrena,2616,Unknown,11.02.2024,08.03.2024,3.0
+4471938,Castellón,53501581,Beñat Gerenabarrena,2616,Ankle injury,12.11.2023,24.11.2023,2.0
+4471938,Castellón,53501581,Beñat Gerenabarrena,2616,Lumbago,11.04.2022,18.04.2022,
+609249,Granada CF,7616420,Álex Sola,2604,Meniscus tear,12.05.2025,31.07.2025,3.0
+609249,Granada CF,7616420,Álex Sola,2604,Hamstring injury,18.12.2022,12.02.2023,10.0
+609249,Granada CF,7616420,Álex Sola,2604,Knee problems,12.10.2022,02.11.2022,6.0
+609249,Granada CF,7616420,Álex Sola,2604,Hamstring injury,18.07.2022,26.08.2022,2.0
+609249,Granada CF,7616420,Álex Sola,2604,Meniscus tear,15.08.2021,20.11.2021,15.0
+609249,Granada CF,7616420,Álex Sola,2604,Cruciate ligament tear,05.07.2020,05.01.2021,9.0
+4471938,Castellón,43626807,Lucas Alcázar,2580,Muscle injury,26.03.2023,09.04.2023,2.0
+609249,Granada CF,44429553,Baïla Diallo,2557,Muscle injury,15.02.2025,22.02.2025,1.0
+609249,Granada CF,44429553,Baïla Diallo,2557,Torn muscle fiber,06.10.2023,31.10.2023,3.0
+456069,Malaga,54341357,Dani Lorenzo,2526,Muscle injury,04.04.2026,15.05.2026,
+607547,Cordoba,19743101,Carlos Albarrán,2510,Torn lateral ankle ligament,27.08.2021,01.10.2021,5.0
+623716,Zaragoza,14594160,Pablo Insua,2506,Thigh problems,11.05.2023,29.05.2023,3.0
+623716,Zaragoza,14594160,Pablo Insua,2506,Corona virus,19.01.2021,02.02.2021,3.0
+623716,Zaragoza,14594160,Pablo Insua,2506,Cruciate ligament tear,10.02.2019,30.06.2019,15.0
+623716,Zaragoza,14594160,Pablo Insua,2506,Fitness,05.03.2018,12.03.2018,1.0
+623716,Zaragoza,14594160,Pablo Insua,2506,Fitness,25.01.2018,01.03.2018,6.0
+623716,Zaragoza,14594160,Pablo Insua,2506,Heart problems,28.09.2017,25.01.2018,15.0
+623716,Zaragoza,14594160,Pablo Insua,2506,Minor knock,14.09.2017,21.09.2017,2.0
+623716,Zaragoza,14594160,Pablo Insua,2506,Fitness,03.07.2017,21.08.2017,1.0
+623716,Zaragoza,14594160,Pablo Insua,2506,Ankle injury,01.09.2014,02.10.2014,4.0
+464579,Eibar,26104372,Marco Moreno,2501,Fitness,16.07.2026,08.08.2026,4.0
+464579,Eibar,26104372,Marco Moreno,2501,Unknown,01.04.2025,30.04.2025,5.0
+457771,Leganes,48630365,S. Cissé,2498,Metacarpal fracture,17.01.2023,15.02.2023,4.0
+463728,Deportivo La Coruña,30339799,Luismi Cruz,2479,Torn muscle fiber in the adductor area,13.12.2024,02.01.2025,2.0
+463728,Deportivo La Coruña,30339799,Luismi Cruz,2479,Adductor injury,08.10.2023,23.10.2023,3.0
+463728,Deportivo La Coruña,30339799,Luismi Cruz,2479,Hamstring injury,16.09.2022,23.09.2022,1.0
+463728,Deportivo La Coruña,30339799,Luismi Cruz,2479,Torn lateral knee ligament,25.07.2019,05.02.2020,
+456069,Malaga,9814,Joaquín Muñoz,2478,Muscle injury,05.10.2020,04.11.2020,6.0
+456069,Malaga,9814,Joaquín Muñoz,2478,Muscle injury,24.02.2020,09.03.2020,3.0
+616908,Cadiz,47937099,Mario Climent,2468,Lower leg fracture,01.10.2024,22.10.2024,3.0
+463728,Deportivo La Coruña,29461222,Diego Villares,2467,Adductor pain,05.01.2024,16.01.2024,1.0
+8629073,AD Ceuta FC,19733441,Kuki,2464,Hamstring muscle injury,06.11.2023,06.12.2023,4.0
+613504,Valladolid,3323355,J. Ponceau,2461,Calf injury,23.02.2025,30.03.2025,
+613504,Valladolid,3323355,J. Ponceau,2461,Ankle surgery,20.08.2020,30.12.2020,17.0
+623716,Zaragoza,396536,E. Andrada,2430,Bursitis,14.07.2025,14.08.2025,6.0
+623716,Zaragoza,396536,E. Andrada,2430,Knee surgery,19.11.2024,31.12.2024,6.0
+623716,Zaragoza,396536,E. Andrada,2430,Knee surgery,12.07.2022,04.08.2022,4.0
+623716,Zaragoza,396536,E. Andrada,2430,Corona virus,02.05.2021,17.05.2021,5.0
+623716,Zaragoza,396536,E. Andrada,2430,Quarantine,18.04.2021,30.04.2021,3.0
+623716,Zaragoza,396536,E. Andrada,2430,Hamstring strain,29.10.2020,05.11.2020,1.0
+623716,Zaragoza,396536,E. Andrada,2430,Knee injury,15.01.2020,12.02.2020,3.0
+623716,Zaragoza,396536,E. Andrada,2430,Knee injury,13.06.2019,07.07.2019,6.0
+623716,Zaragoza,396536,E. Andrada,2430,Broken jaw,21.09.2018,12.11.2018,11.0
+457771,Leganes,52747296,Naim García,2422,Hamstring injury,17.05.2024,17.08.2024,6.0
+455218,Las Palmas,3495303,E. Loiodice,2421,Shoulder injury,10.03.2022,10.06.2022,14.0
+455218,Las Palmas,3495303,E. Loiodice,2421,Inflammation of pubic bone,09.04.2021,09.05.2021,5.0
+455218,Las Palmas,3495303,E. Loiodice,2421,Thigh problems,01.12.2018,31.12.2018,5.0
+617759,Cultural Leonesa,6688416,Víctor García,2410,Muscle injury,02.09.2019,21.10.2019,8.0
+617759,Cultural Leonesa,6688416,Víctor García,2410,Unknown,20.02.2018,03.09.2018,16.0
+609249,Granada CF,7634613,José Arnáiz,2401,Hamstring injury,09.02.2024,01.03.2024,3.0
+609249,Granada CF,7634613,José Arnáiz,2401,Hamstring injury,12.10.2023,27.10.2023,1.0
+609249,Granada CF,7634613,José Arnáiz,2401,Corona virus,03.09.2021,14.09.2021,2.0
+609249,Granada CF,7634613,José Arnáiz,2401,Flu,12.02.2020,19.02.2020,1.0
+609249,Granada CF,7634613,José Arnáiz,2401,Groin injury,11.02.2018,28.11.2018,51.0
+609249,Granada CF,7634613,José Arnáiz,2401,Muscle injury,20.01.2018,10.02.2018,9.0
+609249,Granada CF,7634613,José Arnáiz,2401,Hamstring injury,24.10.2016,21.11.2016,4.0
+680733,Mirandes,66724189,Thiago Helguera,2396,Muscle injury,25.04.2024,06.06.2024,9.0
+615206,Albacete,119455,Vallejo,2381,Muscular problems,14.09.2017,28.09.2017,4.0
+615206,Albacete,119455,Vallejo,2381,Muscle injury,11.08.2017,01.09.2017,4.0
+615206,Albacete,119455,Vallejo,2381,Hamstring injury,20.04.2017,19.05.2017,5.0
+615206,Albacete,119455,Vallejo,2381,Calf problems,06.04.2017,13.04.2017,1.0
+615206,Albacete,119455,Vallejo,2381,Torn muscle fiber,20.02.2017,20.03.2017,5.0
+615206,Albacete,119455,Vallejo,2381,Hamstring injury,21.07.2016,08.08.2016,
+615206,Albacete,119455,Vallejo,2381,Achilles tendon problems,25.04.2016,06.06.2016,7.0
+615206,Albacete,119455,Vallejo,2381,Torn muscle fiber,25.04.2016,06.06.2016,7.0
+615206,Albacete,119455,Vallejo,2381,Torn muscle fiber,01.02.2016,04.04.2016,11.0
+615206,Albacete,119455,Vallejo,2381,Muscle injury,26.02.2025,26.03.2025,6.0
+615206,Albacete,119455,Vallejo,2381,Muscle injury,23.08.2024,13.09.2024,3.0
+615206,Albacete,119455,Vallejo,2381,Depression,15.01.2024,30.06.2024,18.0
+615206,Albacete,119455,Vallejo,2381,Lower leg fracture,08.10.2023,25.12.2023,10.0
+615206,Albacete,119455,Vallejo,2381,Lower leg fracture,14.08.2023,02.10.2023,7.0
+615206,Albacete,119455,Vallejo,2381,Unknown,27.08.2022,10.09.2022,3.0
+615206,Albacete,119455,Vallejo,2381,Corona virus,11.04.2022,22.04.2022,3.0
+615206,Albacete,119455,Vallejo,2381,Knock,15.01.2022,02.02.2022,3.0
+615206,Albacete,119455,Vallejo,2381,Muscle injury,26.04.2021,18.05.2021,5.0
+615206,Albacete,119455,Vallejo,2381,Corona virus,03.11.2020,18.11.2020,2.0
+615206,Albacete,119455,Vallejo,2381,Hamstring injury,14.01.2019,10.02.2019,8.0
+615206,Albacete,119455,Vallejo,2381,Hamstring injury,26.10.2018,03.12.2018,10.0
+615206,Albacete,119455,Vallejo,2381,Muscle injury,07.08.2018,10.09.2018,5.0
+615206,Albacete,119455,Vallejo,2381,Knock,07.04.2018,10.04.2018,1.0
+615206,Albacete,119455,Vallejo,2381,Hamstring injury,19.01.2018,28.02.2018,10.0
+456069,Malaga,26087628,Carlos Dotor,2377,Shoulder injury,21.03.2026,10.04.2026,3.0
+456069,Malaga,26087628,Carlos Dotor,2377,Inflammation of pubic bone,10.02.2024,11.04.2024,7.0
+456069,Malaga,26087628,Carlos Dotor,2377,Muscle injury,22.01.2023,08.03.2023,19.0
+616057,Almería,6629651,Nélson Monte,2374,Unknown,25.11.2020,01.01.2021,5.0
+616057,Almería,6629651,Nélson Monte,2374,Ankle surgery,03.03.2019,30.06.2019,11.0
+616057,Almería,6629651,Nélson Monte,2374,Ankle injury,28.10.2018,11.12.2018,5.0
+616057,Almería,6629651,Nélson Monte,2374,Ankle injury,04.08.2018,17.09.2018,6.0
+616908,Cadiz,7583254,Iza Carcelén,2363,Torn muscle fiber,12.10.2016,24.11.2016,6.0
+616908,Cadiz,7583254,Iza Carcelén,2363,Knee problems,24.01.2016,07.03.2016,6.0
+609249,Granada CF,7645239,Rubén Alcaraz,2352,Muscle fiber tear,20.02.2026,20.03.2026,3.0
+609249,Granada CF,7645239,Rubén Alcaraz,2352,Knee injury,01.06.2022,05.09.2022,4.0
+609249,Granada CF,7645239,Rubén Alcaraz,2352,Corona virus,27.12.2021,04.01.2022,1.0
+609249,Granada CF,7645239,Rubén Alcaraz,2352,Corona virus,08.07.2021,22.07.2021,
+609249,Granada CF,7645239,Rubén Alcaraz,2352,Groin injury,02.10.2019,28.10.2019,3.0
+609249,Granada CF,7645239,Rubén Alcaraz,2352,Groin injury,19.08.2019,12.09.2019,2.0
+609249,Granada CF,7645239,Rubén Alcaraz,2352,Flu,14.02.2019,21.02.2019,1.0
+609249,Granada CF,118006,L. Zidane,2339,Broken jaw,27.04.2026,29.05.2026,4.0
+609249,Granada CF,118006,L. Zidane,2339,Muscular problems,10.11.2025,17.11.2025,2.0
+609249,Granada CF,118006,L. Zidane,2339,Knee injury,09.09.2024,09.10.2024,4.0
+609249,Granada CF,118006,L. Zidane,2339,Finger injury,29.06.2020,21.07.2020,5.0
+609249,Granada CF,118006,L. Zidane,2339,Muscle injury,18.08.2019,04.09.2019,2.0
+609249,Granada CF,118006,L. Zidane,2339,Hamstring injury,02.02.2019,15.02.2019,4.0
+609249,Granada CF,118006,L. Zidane,2339,Shoulder injury,02.10.2017,05.02.2018,43.0
+609249,Granada CF,118006,L. Zidane,2339,Shoulder injury,01.03.2017,01.06.2017,11.0
+680733,Mirandes,29883525,Juanpa,2295,Unknown,20.07.2023,20.09.2023,4.0
+617759,Cultural Leonesa,15132222,Ivan Calero,2288,Ankle injury,19.08.2023,13.09.2023,3.0
+617759,Cultural Leonesa,15132222,Ivan Calero,2288,Torn knee ligaments,13.12.2020,26.08.2021,29.0
+615206,Albacete,32751740,J. Gómez,2287,Unknown,10.01.2025,03.03.2025,12.0
+457771,Leganes,7607887,Ignasi Miquel,2280,Knee injury,24.08.2019,18.12.2019,18.0
+457771,Leganes,7607887,Ignasi Miquel,2280,Knee injury,21.08.2018,21.10.2018,7.0
+464579,Eibar,7613200,Peru Nolaskoain,2279,Outer ligament problems,18.08.2023,08.10.2023,8.0
+464579,Eibar,7613200,Peru Nolaskoain,2279,Ankle injury,09.10.2022,22.10.2022,3.0
+464579,Eibar,7613200,Peru Nolaskoain,2279,Fitness,04.12.2021,01.01.2022,4.0
+464579,Eibar,7613200,Peru Nolaskoain,2279,Ankle injury,08.03.2021,03.12.2021,30.0
+464579,Eibar,7613200,Peru Nolaskoain,2279,Ankle injury,01.12.2020,19.02.2021,18.0
+464579,Eibar,7613200,Peru Nolaskoain,2279,Muscle injury,21.06.2020,09.11.2020,11.0
+464579,Eibar,7613200,Peru Nolaskoain,2279,Appendicitis,24.08.2019,24.09.2019,6.0
+4471938,Castellón,30775465,Ousmane Camara,2274,Dead leg,09.08.2023,20.10.2023,9.0
+3970699,Racing Santander,29251439,Álvaro Mantilla,2244,Muscle injury,02.03.2026,24.04.2026,8.0
+3970699,Racing Santander,29251439,Álvaro Mantilla,2244,Muscle injury,08.02.2023,22.02.2023,2.0
+3970699,Racing Santander,29251439,Álvaro Mantilla,2244,Muscular problems,02.10.2022,21.11.2022,8.0
+3970699,Racing Santander,29251439,Álvaro Mantilla,2244,Shoulder injury,23.05.2022,17.08.2022,3.0
+3970699,Racing Santander,29251439,Álvaro Mantilla,2244,Shoulder injury,10.05.2021,14.07.2021,2.0
+8629073,AD Ceuta FC,19804603,Rubén Díez,2195,Lower leg fracture,28.01.2022,11.02.2022,2.0
+8629073,AD Ceuta FC,19804603,Rubén Díez,2195,Corona virus,28.12.2021,06.01.2022,1.0
+8629073,AD Ceuta FC,19804603,Rubén Díez,2195,Knee injury,08.12.2019,30.12.2019,3.0
+8157619,Real Sociedad B,62632696,Mikel Rodriguez,2183,Cruciate ligament tear,04.09.2026,04.04.2027,1.0
+8157619,Real Sociedad B,62632696,Mikel Rodriguez,2183,Broken arm,01.09.2024,16.09.2024,2.0
+8157619,Real Sociedad B,62632696,Mikel Rodriguez,2183,Ankle sprain,09.10.2023,16.12.2023,9.0
+8157619,Real Sociedad B,62632696,Mikel Rodriguez,2183,Hip injury,12.12.2022,17.02.2023,7.0
+623716,Zaragoza,19196506,Dani Gómez,2174,Fever,29.03.2024,01.04.2024,1.0
+623716,Zaragoza,19196506,Dani Gómez,2174,Injury to the ankle,08.07.2023,15.08.2023,1.0
+623716,Zaragoza,19196506,Dani Gómez,2174,Hamstring injury,15.08.2021,10.09.2021,2.0
+617759,Cultural Leonesa,30324504,Bicho,2169,Shoulder injury,05.10.2017,05.11.2017,5.0
+616057,Almería,55098862,S. Džodić,2146,Knee injury,26.01.2025,13.04.2025,21.0
+464579,Eibar,54185831,Aleix Garrido,2125,Lumbago,16.05.2025,23.05.2025,1.0
+464579,Eibar,54185831,Aleix Garrido,2125,Metatarsal fracture,11.07.2024,16.11.2024,12.0
+464579,Eibar,54185831,Aleix Garrido,2125,Metatarsal fracture,26.02.2024,31.05.2024,28.0
+464579,Eibar,54185831,Aleix Garrido,2125,Muscle injury,17.02.2024,24.02.2024,3.0
+464579,Eibar,54185831,Aleix Garrido,2125,Pubic bone bruise,17.09.2023,14.10.2023,3.0
+464579,Eibar,54185831,Aleix Garrido,2125,Ankle sprain,10.12.2022,17.03.2023,3.0
+464579,Eibar,29581489,Jon Guruzeta,2108,Appendectomy,10.09.2021,24.10.2021,7.0
+455218,Las Palmas,7543648,Viti Rozada,2107,Knee injury,09.12.2024,02.02.2025,6.0
+464579,Eibar,7618352,Jon Bautista,2105,Hamstring injury,12.05.2024,30.06.2024,5.0
+464579,Eibar,7618352,Jon Bautista,2105,Appendectomy,18.01.2019,15.02.2019,4.0
+464579,Eibar,7618352,Jon Bautista,2105,Muscle injury,29.11.2018,03.12.2018,1.0
+464579,Eibar,7618352,Jon Bautista,2105,Muscle injury,15.03.2018,18.04.2018,4.0
+464579,Eibar,7618352,Jon Bautista,2105,Knee bruise,22.03.2017,27.03.2017,
+609249,Granada CF,19763870,Sergio Ruiz,2100,Depression,11.11.2021,31.12.2021,8.0
+609249,Granada CF,19763870,Sergio Ruiz,2100,Muscular problems,03.06.2019,11.06.2019,1.0
+609249,Granada CF,19763870,Sergio Ruiz,2100,Muscle fiber tear,03.05.2018,16.05.2018,2.0
+607547,Cordoba,26167645,Xavi Sintes,2076,Cruciate ligament tear,26.01.2022,26.07.2022,19.0
+463728,Deportivo La Coruña,51441586,L. Noubi,2067,Minor knock,14.02.2024,28.02.2024,2.0
+463728,Deportivo La Coruña,51441586,L. Noubi,2067,Adductor pain,04.10.2023,11.10.2023,2.0
+8153364,Burgos,7528514,Sergio González,2047,Muscle injury,09.09.2022,05.10.2022,4.0
+8153364,Burgos,7528514,Sergio González,2047,Corona virus,01.03.2022,08.03.2022,
+464579,Eibar,28843787,Javi Martón,2032,Broken fibula,13.01.2024,13.04.2024,12.0
+4471938,Castellón,4944303,Fabrizio Brignani,2021,Cruciate ligament injury,22.07.2026,22.02.2027,4.0
+4471938,Castellón,4944303,Fabrizio Brignani,2021,Unknown,13.10.2022,28.10.2022,3.0
+4471938,Castellón,4944303,Fabrizio Brignani,2021,Unknown,28.01.2022,04.02.2022,2.0
+3970699,Racing Santander,46141949,Facundo González,2017,Ankle injury,04.05.2026,04.07.2026,4.0
+3970699,Racing Santander,46141949,Facundo González,2017,Ankle injury,13.04.2026,24.04.2026,1.0
+3970699,Racing Santander,46141949,Facundo González,2017,Unknown,24.04.2025,01.06.2025,5.0
+3970699,Racing Santander,46141949,Facundo González,2017,Back injury,10.02.2025,10.03.2025,6.0
+3970699,Racing Santander,7524328,Pablo Ramón,1992,Muscle injury,10.02.2026,31.03.2026,7.0
+456069,Malaga,5789,Javi Montero,1991,Corona virus,25.09.2021,11.10.2021,2.0
+456069,Malaga,5789,Javi Montero,1991,Pneumonia,23.09.2021,25.09.2021,1.0
+456069,Malaga,5789,Javi Montero,1991,Knee collateral ligament strain,11.02.2021,04.03.2021,3.0
+616057,Almería,32758502,D. Lopy,1970,Unknown,19.11.2023,01.12.2023,2.0
+3970699,Racing Santander,26679947,Manu Hernando,1969,Corona virus,26.11.2021,04.12.2021,1.0
+3970699,Racing Santander,26679947,Manu Hernando,1969,Unknown,01.07.2021,25.08.2021,4.0
+3970699,Racing Santander,26679947,Manu Hernando,1969,Muscular problems,13.01.2021,31.05.2021,21.0
+3970699,Racing Santander,26679947,Manu Hernando,1969,Muscular problems,12.07.2020,21.07.2020,2.0
+4471938,Castellón,2524795,A. Jakobsen,1966,Meniscus injury,15.10.2024,01.04.2025,8.0
+4471938,Castellón,2524795,A. Jakobsen,1966,Muscle strain,13.05.2024,20.05.2024,2.0
+4471938,Castellón,2524795,A. Jakobsen,1966,Muscle strain,07.04.2024,06.05.2024,5.0
+4471938,Castellón,2524795,A. Jakobsen,1966,Unknown,06.04.2021,22.04.2021,2.0
+4471938,Castellón,2524795,A. Jakobsen,1966,Quarantine,18.03.2021,22.03.2021,1.0
+616908,Cadiz,265804,Suso,1962,Torn muscle fiber in the adductor area,21.10.2024,20.11.2024,4.0
+616908,Cadiz,265804,Suso,1962,Outer ligament problems,12.08.2024,19.09.2024,5.0
+616908,Cadiz,265804,Suso,1962,Muscle injury,23.11.2023,13.12.2023,6.0
+616908,Cadiz,265804,Suso,1962,Achilles tendon contusion,05.05.2023,17.05.2023,2.0
+616908,Cadiz,265804,Suso,1962,Ankle injury,09.12.2021,18.04.2022,24.0
+616908,Cadiz,265804,Suso,1962,Muscle injury,22.11.2021,06.12.2021,4.0
+616908,Cadiz,265804,Suso,1962,Muscular problems,22.10.2020,03.12.2020,8.0
+616908,Cadiz,265804,Suso,1962,Muscular problems,04.11.2019,07.11.2019,
+616908,Cadiz,265804,Suso,1962,Minor knock,10.01.2019,17.01.2019,2.0
+616908,Cadiz,265804,Suso,1962,Minor knock,24.12.2018,27.12.2018,1.0
+616908,Cadiz,265804,Suso,1962,Muscular problems,18.05.2018,27.05.2018,1.0
+616908,Cadiz,265804,Suso,1962,Muscle injury,04.03.2017,04.04.2017,2.0
+616908,Cadiz,265804,Suso,1962,Minor knock,27.04.2015,04.05.2015,2.0
+616908,Cadiz,265804,Suso,1962,Groin injury,01.10.2014,01.12.2014,12.0
+623716,Zaragoza,7576331,Raúl Guti,1948,Partial patellar tendon tear,05.02.2024,05.07.2024,17.0
+623716,Zaragoza,7576331,Raúl Guti,1948,Muscle injury,24.05.2018,24.11.2018,20.0
+623716,Zaragoza,7576331,Raúl Guti,1948,Torn muscle fiber,20.01.2018,10.02.2018,2.0
+615206,Albacete,1210552,Jefté Betancor,1947,Unknown,18.02.2024,01.03.2024,3.0
+8629073,AD Ceuta FC,437591,Anuar,1939,Inguinal hernia,01.08.2024,01.10.2024,8.0
+8629073,AD Ceuta FC,437591,Anuar,1939,Cruciate ligament injury,22.09.2022,22.05.2023,32.0
+8629073,AD Ceuta FC,437591,Anuar,1939,Corona virus,14.04.2022,21.04.2022,1.0
+8629073,AD Ceuta FC,437591,Anuar,1939,Torn muscle bundle,15.04.2019,15.06.2019,6.0
+680733,Mirandes,26109524,Hugo Novoa,1923,Groin injury,10.10.2024,01.12.2024,7.0
+680733,Mirandes,26109524,Hugo Novoa,1923,Heel problems,10.09.2024,18.09.2024,1.0
+680733,Mirandes,26109524,Hugo Novoa,1923,Shoulder injury,28.07.2024,15.08.2024,
+680733,Mirandes,26109524,Hugo Novoa,1923,Unknown,06.12.2023,30.01.2024,6.0
+680733,Mirandes,26109524,Hugo Novoa,1923,Unknown,29.03.2023,06.04.2023,2.0
+680733,Mirandes,26109524,Hugo Novoa,1923,Corona virus,26.11.2021,14.12.2021,4.0
+616057,Almería,2103136,Léo Baptistão,1923,Ankle surgery,24.05.2023,24.08.2023,4.0
+616057,Almería,2103136,Léo Baptistão,1923,Quarantine,25.04.2021,09.05.2021,2.0
+616057,Almería,2103136,Léo Baptistão,1923,Muscle injury,20.11.2017,01.12.2017,2.0
+616057,Almería,2103136,Léo Baptistão,1923,Heel injury,12.12.2016,07.04.2017,16.0
+616057,Almería,2103136,Léo Baptistão,1923,Muscular problems,17.11.2016,25.11.2016,1.0
+616057,Almería,2103136,Léo Baptistão,1923,Muscular problems,28.09.2016,12.10.2016,1.0
+616057,Almería,2103136,Léo Baptistão,1923,Adductor pain,21.04.2016,08.05.2016,4.0
+616057,Almería,2103136,Léo Baptistão,1923,Hamstring injury,22.10.2015,24.12.2015,14.0
+616057,Almería,2103136,Léo Baptistão,1923,Groin problems,23.03.2015,14.05.2015,8.0
+616057,Almería,2103136,Léo Baptistão,1923,Hamstring injury,15.01.2015,29.01.2015,2.0
+616057,Almería,2103136,Léo Baptistão,1923,Broken collarbone,18.04.2013,27.06.2013,6.0
+616057,Almería,2103136,Léo Baptistão,1923,Muscle injury,14.01.2013,31.01.2013,2.0
+6942391,FC Andorra,7606116,Martí Vilà,1918,Cruciate ligament tear,18.12.2022,18.06.2023,22.0
+463728,Deportivo La Coruña,48261997,Dani Barcia,1893,Tendon rupture,05.04.2025,05.08.2025,9.0
+463728,Deportivo La Coruña,48261997,Dani Barcia,1893,Muscle injury,21.11.2024,07.01.2025,6.0
+6942391,FC Andorra,63001225,Á. Yaakobishvili,1890,Concussion,11.02.2025,20.02.2025,3.0
+615206,Albacete,7556689,Raúl Lizoain,1890,Meniscus injury,22.08.2012,01.01.2013,23.0
+3970699,Racing Santander,53776408,M. Gueye,1883,Muscle injury,20.08.2025,25.09.2025,5.0
+3970699,Racing Santander,53776408,M. Gueye,1883,Shoulder injury,04.02.2024,14.02.2024,1.0
+3970699,Racing Santander,53776408,M. Gueye,1883,Muscular problems,31.10.2021,02.12.2021,5.0
+623716,Zaragoza,7624148,Martín Aguirregabiria,1861,Unknown,10.08.2022,02.11.2022,11.0
+623716,Zaragoza,7624148,Martín Aguirregabiria,1861,Hamstring injury,01.02.2019,12.03.2019,6.0
+680733,Mirandes,62547849,Javier Hernandez,1859,Metatarsal fracture,29.07.2025,15.09.2025,3.0
+615206,Albacete,7517083,Antonio Puertas,1846,Corona virus,05.11.2020,19.11.2020,2.0
+456069,Malaga,2329824,Einar Galilea,1821,Muscle injury,26.02.2026,22.03.2026,4.0
+456069,Malaga,2329824,Einar Galilea,1821,Cruciate ligament tear,14.01.2017,14.08.2017,26.0
+615206,Albacete,7546224,Diego Mariño,1800,Lumbago,15.02.2026,01.04.2026,7.0
+615206,Albacete,7546224,Diego Mariño,1800,Muscular problems,17.03.2022,01.04.2022,2.0
+615206,Albacete,7546224,Diego Mariño,1800,Broken collarbone,06.05.2019,20.06.2019,5.0
+615206,Albacete,7546224,Diego Mariño,1800,Hamstring injury,10.09.2017,22.09.2017,2.0
+463728,Deportivo La Coruña,16907569,Germán Parreño,1800,Tibia and fibula fracture,17.12.2017,17.06.2018,21.0
+623716,Zaragoza,7614166,K. Kodro,1782,Metatarsal fracture,19.05.2021,19.06.2021,3.0
+623716,Zaragoza,7614166,K. Kodro,1782,Metacarpal fracture,09.10.2020,30.11.2020,11.0
+623716,Zaragoza,7614166,K. Kodro,1782,Muscle stiffness,06.12.2017,31.12.2017,4.0
+623716,Zaragoza,7614166,K. Kodro,1782,Ankle problems,08.09.2017,18.09.2017,2.0
+623716,Zaragoza,7614166,K. Kodro,1782,Shoulder injury,23.03.2017,04.04.2017,1.0
+623716,Zaragoza,7538979,K. Bare,1763,Appendectomy,14.10.2025,07.11.2025,4.0
+623716,Zaragoza,7538979,K. Bare,1763,Unknown,11.11.2024,20.11.2024,1.0
+623716,Zaragoza,7538979,K. Bare,1763,Ankle ligament tear,21.12.2022,19.03.2023,14.0
+623716,Zaragoza,7538979,K. Bare,1763,Muscle injury,12.09.2022,30.09.2022,3.0
+623716,Zaragoza,7538979,K. Bare,1763,Knee collateral ligament strain,22.04.2022,30.06.2022,8.0
+623716,Zaragoza,7538979,K. Bare,1763,Muscle injury,12.11.2021,19.11.2021,1.0
+623716,Zaragoza,7538979,K. Bare,1763,Sprain,02.11.2020,21.11.2020,7.0
+623716,Zaragoza,7538979,K. Bare,1763,Sprain,09.10.2020,22.10.2020,3.0
+623716,Zaragoza,7538979,K. Bare,1763,Sprain,11.09.2020,28.09.2020,3.0
+6942391,FC Andorra,19717985,Jesús Owono,1755,Knee injury,05.02.2025,10.03.2025,5.0
+4471938,Castellón,443709,Awer Mabil,1721,Unknown,13.12.2023,05.04.2024,21.0
+4471938,Castellón,443709,Awer Mabil,1721,Unknown,14.11.2023,22.11.2023,2.0
+6942391,FC Andorra,16877462,Diego Alende,1712,Knee problems,28.01.2018,15.03.2018,14.0
+457771,Leganes,7630105,Rubén Peña,1698,Muscle injury,19.08.2024,30.08.2024,2.0
+457771,Leganes,7630105,Rubén Peña,1698,Hamstring injury,20.02.2024,29.03.2024,4.0
+457771,Leganes,7630105,Rubén Peña,1698,Hamstring injury,01.12.2023,14.12.2023,2.0
+457771,Leganes,7630105,Rubén Peña,1698,Torn muscle fiber,06.01.2023,01.04.2023,15.0
+457771,Leganes,7630105,Rubén Peña,1698,Ankle injury,27.08.2022,16.09.2022,2.0
+457771,Leganes,7630105,Rubén Peña,1698,Shoulder injury,16.12.2021,14.03.2022,14.0
+457771,Leganes,7630105,Rubén Peña,1698,Hamstring injury,04.02.2021,17.02.2021,1.0
+457771,Leganes,7630105,Rubén Peña,1698,Muscle injury,14.09.2020,14.10.2020,4.0
+457771,Leganes,7630105,Rubén Peña,1698,Meniscus tear,29.04.2019,29.07.2019,3.0
+457771,Leganes,7630105,Rubén Peña,1698,Muscle injury,10.04.2019,27.04.2019,3.0
+457771,Leganes,7630105,Rubén Peña,1698,Ankle sprain,10.04.2017,24.04.2017,1.0
+4471938,Castellón,32494784,A. Sienra,1695,Knee injury,06.10.2024,12.11.2024,5.0
+3970699,Racing Santander,7560714,Marco Sangalli,1685,Muscle injury,03.04.2023,21.04.2023,2.0
+616908,Cadiz,47866098,D. Camara,1678,Cruciate ligament tear,02.04.2023,02.10.2023,11.0
+618610,Huesca,7630749,Sergi Enrich,1670,Hamstring injury,18.09.2019,18.10.2019,4.0
+618610,Huesca,7630749,Sergi Enrich,1670,Meniscus tear,14.01.2018,18.05.2018,18.0
+618610,Huesca,7630749,Sergi Enrich,1670,Muscle injury,19.06.2017,19.08.2017,
+607547,Cordoba,28809655,Rubén Alves,1668,Muscle injury,01.05.2023,17.05.2023,2.0
+607547,Cordoba,28809655,Rubén Alves,1668,Muscle injury,16.04.2023,27.04.2023,1.0
+680733,Mirandes,42579663,Pablo Pérez,1666,Achilles tendon problems,25.10.2020,15.01.2021,27.0
+680733,Mirandes,42579663,Pablo Pérez,1666,Torn thigh muscle,15.09.2020,06.10.2020,
+457771,Leganes,20874931,Enric Franquesa,1666,Cruciate ligament tear,10.11.2024,01.08.2025,29.0
+457771,Leganes,20874931,Enric Franquesa,1666,Muscle injury,01.09.2019,26.09.2019,4.0
+457771,Leganes,20874931,Enric Franquesa,1666,Muscular problems,01.05.2017,10.05.2017,1.0
+616057,Almería,61222175,Marcos Luna,1663,Tear of the lateral meniscus,17.03.2023,17.07.2023,22.0
+680733,Mirandes,54190661,Salim El Jebari,1621,Unknown,13.08.2024,20.09.2024,4.0
+457771,Leganes,29409702,Álex Millán,1594,Cruciate ligament tear,23.07.2023,12.02.2024,28.0
+457771,Leganes,29409702,Álex Millán,1594,Back injury,16.02.2020,24.10.2020,5.0
+457771,Leganes,29409702,Álex Millán,1594,Influenza,11.01.2020,18.01.2020,1.0
+457771,Leganes,29409702,Álex Millán,1594,Ill,30.11.2019,02.12.2019,1.0
+463728,Deportivo La Coruña,54051074,David Mella,1578,Tear of the lateral meniscus,09.03.2026,09.08.2026,13.0
+463728,Deportivo La Coruña,54051074,David Mella,1578,Muscle injury,24.04.2025,30.06.2025,6.0
+463728,Deportivo La Coruña,54051074,David Mella,1578,Muscle injury,01.11.2023,27.11.2023,8.0
+8157619,Real Sociedad B,62329533,J. Ochieng,1577,Muscle injury,27.03.2026,25.04.2026,10.0
+463728,Deportivo La Coruña,26194049,Arnau Comas,1577,Shoulder injury,13.05.2025,13.08.2025,3.0
+463728,Deportivo La Coruña,26194049,Arnau Comas,1577,Unknown,15.01.2025,22.01.2025,1.0
+463728,Deportivo La Coruña,26194049,Arnau Comas,1577,Shoulder injury,23.09.2024,06.11.2024,6.0
+463728,Deportivo La Coruña,26194049,Arnau Comas,1577,Tear of the lateral meniscus,23.10.2023,10.04.2024,23.0
+463728,Deportivo La Coruña,26194049,Arnau Comas,1577,Thigh problems,07.08.2023,30.08.2023,2.0
+463728,Deportivo La Coruña,26194049,Arnau Comas,1577,Thigh problems,17.02.2023,27.05.2023,24.0
+463728,Deportivo La Coruña,26194049,Arnau Comas,1577,Muscle injury,11.01.2023,13.02.2023,5.0
+463728,Deportivo La Coruña,26194049,Arnau Comas,1577,Shoulder injury,03.04.2022,30.06.2022,19.0
+463728,Deportivo La Coruña,26194049,Arnau Comas,1577,Corona virus,03.02.2022,10.02.2022,2.0
+463728,Deportivo La Coruña,26194049,Arnau Comas,1577,Muscle injury,06.01.2020,16.01.2020,1.0
+463728,Deportivo La Coruña,26194049,Arnau Comas,1577,Muscle injury,21.10.2019,08.11.2019,2.0
+623716,Zaragoza,3326414,Aleksandar Radovanović,1571,Adductor pain,26.10.2023,28.11.2023,5.0
+623716,Zaragoza,3326414,Aleksandar Radovanović,1571,Knock,12.09.2023,20.09.2023,1.0
+623716,Zaragoza,3326414,Aleksandar Radovanović,1571,Muscle injury,13.10.2022,25.10.2022,3.0
+623716,Zaragoza,3326414,Aleksandar Radovanović,1571,Cruciate ligament tear,30.11.2018,01.07.2019,28.0
+607547,Cordoba,17250982,Ignasi Vilarrasa,1570,Muscle injury,13.08.2019,02.09.2019,2.0
+463728,Deportivo La Coruña,7625114,Ximo Navarro,1557,Hamstring muscle injury,06.11.2023,31.12.2023,7.0
+463728,Deportivo La Coruña,7625114,Ximo Navarro,1557,Hamstring muscle injury,09.10.2023,22.10.2023,2.0
+463728,Deportivo La Coruña,7625114,Ximo Navarro,1557,Hamstring muscle injury,17.09.2023,04.10.2023,2.0
+463728,Deportivo La Coruña,7625114,Ximo Navarro,1557,Knee injury,08.05.2023,30.06.2023,3.0
+463728,Deportivo La Coruña,7625114,Ximo Navarro,1557,Muscle injury,01.03.2023,08.03.2023,1.0
+463728,Deportivo La Coruña,7625114,Ximo Navarro,1557,Muscle injury,26.01.2023,17.02.2023,3.0
+463728,Deportivo La Coruña,7625114,Ximo Navarro,1557,Cruciate ligament tear,30.10.2021,18.02.2022,15.0
+463728,Deportivo La Coruña,7625114,Ximo Navarro,1557,Muscle injury,12.08.2021,20.08.2021,1.0
+463728,Deportivo La Coruña,7625114,Ximo Navarro,1557,Foot injury,11.07.2020,31.07.2020,3.0
+463728,Deportivo La Coruña,7625114,Ximo Navarro,1557,Hamstring injury,08.08.2019,22.09.2019,4.0
+463728,Deportivo La Coruña,7625114,Ximo Navarro,1557,Cruciate ligament tear,17.05.2015,21.12.2015,21.0
+463728,Deportivo La Coruña,7625114,Ximo Navarro,1557,Thigh problems,21.01.2015,24.01.2015,
+463728,Deportivo La Coruña,6056330,Z. Eddahchouri,1531,Corona virus,01.04.2021,22.04.2021,4.0
+463728,Deportivo La Coruña,6056330,Z. Eddahchouri,1531,Toe injury,12.08.2019,22.08.2019,1.0
+6942391,FC Andorra,54185670,Josep Cerdà,1521,Inflammation of pubic bone,15.07.2025,01.11.2025,11.0
+6942391,FC Andorra,29405355,Imanol García de Albéniz,1482,Knee injury,11.08.2024,25.04.2025,41.0
+6942391,FC Andorra,29405355,Imanol García de Albéniz,1482,Stomach flu,06.02.2024,09.02.2024,1.0
+6942391,FC Andorra,29405355,Imanol García de Albéniz,1482,Fever,23.01.2024,31.01.2024,2.0
+6942391,FC Andorra,29405355,Imanol García de Albéniz,1482,Achilles tendon rupture,19.02.2023,25.06.2023,16.0
+6942391,FC Andorra,29405355,Imanol García de Albéniz,1482,Adductor injury,27.09.2021,05.11.2021,7.0
+464579,Eibar,16891630,Jair Amador,1480,Shoulder injury,26.08.2018,18.09.2018,3.0
+616057,Almería,7646688,Miguel de la Fuente,1478,Muscle injury,05.07.2020,10.07.2020,1.0
+615206,Albacete,29506624,Javi Moreno,1467,Muscle injury,02.04.2025,06.05.2025,5.0
+613504,Valladolid,47270237,Guille Bueno,1459,Cruciate ligament tear,03.01.2026,31.10.2026,27.0
+613504,Valladolid,47270237,Guille Bueno,1459,Muscle injury,04.05.2025,30.06.2025,2.0
+613504,Valladolid,47270237,Guille Bueno,1459,Muscular problems,11.08.2024,25.08.2024,
+613504,Valladolid,47270237,Guille Bueno,1459,Knee injury,07.01.2024,10.03.2024,20.0
+613504,Valladolid,47270237,Guille Bueno,1459,Knee injury,09.02.2023,20.03.2023,7.0
+613504,Valladolid,47270237,Guille Bueno,1459,Back problems,09.08.2022,22.08.2022,3.0
+617759,Cultural Leonesa,29412439,Diego Collado,1455,Knee problems,21.11.2020,13.12.2020,4.0
+617759,Cultural Leonesa,29412439,Diego Collado,1455,Knee injury,24.02.2020,18.10.2020,2.0
+617759,Cultural Leonesa,29412439,Diego Collado,1455,Knee injury,01.08.2018,01.07.2019,
+623716,Zaragoza,29682436,Dani Tasende,1446,Arm injury,26.08.2023,24.09.2023,
+623716,Zaragoza,29682436,Dani Tasende,1446,Groin injury,06.10.2019,19.01.2020,
+617759,Cultural Leonesa,151011,Rubén Sobrino,1441,Muscular problems,01.12.2019,13.12.2019,2.0
+617759,Cultural Leonesa,151011,Rubén Sobrino,1441,Leg injury,06.11.2019,29.11.2019,3.0
+617759,Cultural Leonesa,151011,Rubén Sobrino,1441,Hamstring injury,28.03.2019,13.04.2019,4.0
+617759,Cultural Leonesa,151011,Rubén Sobrino,1441,Muscle injury,26.11.2017,26.12.2017,5.0
+617759,Cultural Leonesa,151011,Rubén Sobrino,1441,Hamstring injury,26.02.2017,20.04.2017,8.0
+455218,Las Palmas,11320869,Kirian Rodríguez,1440,Lymphatic cancer,06.02.2025,15.09.2025,21.0
+455218,Las Palmas,11320869,Kirian Rodríguez,1440,Lymphatic cancer,01.08.2022,01.02.2023,27.0
+8629073,AD Ceuta FC,26070723,K. de La Fuente,1430,Unknown,02.02.2026,24.02.2026,2.0
+8629073,AD Ceuta FC,26070723,K. de La Fuente,1430,Unknown,31.07.2025,06.08.2025,2.0
+8629073,AD Ceuta FC,26070723,K. de La Fuente,1430,Knee injury,28.02.2025,09.04.2025,6.0
+8629073,AD Ceuta FC,26070723,K. de La Fuente,1430,Unknown,29.01.2025,06.02.2025,2.0
+8629073,AD Ceuta FC,26070723,K. de La Fuente,1430,Unknown,05.04.2024,21.04.2024,2.0
+8629073,AD Ceuta FC,26070723,K. de La Fuente,1430,Unknown,04.02.2024,20.02.2024,2.0
+8629073,AD Ceuta FC,26070723,K. de La Fuente,1430,Hamstring muscle injury,17.08.2023,20.10.2023,10.0
+8629073,AD Ceuta FC,26070723,K. de La Fuente,1430,Cruciate ligament injury,16.09.2022,01.06.2023,42.0
+8629073,AD Ceuta FC,26070723,K. de La Fuente,1430,Arthroscopy,07.04.2022,02.06.2022,12.0
+8629073,AD Ceuta FC,26070723,K. de La Fuente,1430,Muscle fiber tear,17.01.2022,17.02.2022,5.0
+8629073,AD Ceuta FC,26070723,K. de La Fuente,1430,Corona virus,03.01.2022,06.01.2022,
+8629073,AD Ceuta FC,26070723,K. de La Fuente,1430,Muscle injury,13.02.2020,13.04.2020,
+616057,Almería,7525133,I. Baba,1430,Cruciate ligament surgery,27.11.2024,14.08.2025,31.0
+616057,Almería,7525133,I. Baba,1430,Thigh problems,21.10.2024,01.11.2024,3.0
+616057,Almería,7525133,I. Baba,1430,Appendectomy,14.05.2024,01.06.2024,3.0
+616908,Cadiz,8305822,Brian Ocampo,1417,Ankle injury,19.03.2026,30.03.2026,2.0
+616908,Cadiz,8305822,Brian Ocampo,1417,Cruciate ligament injury,22.02.2023,22.09.2023,27.0
+616908,Cadiz,8305822,Brian Ocampo,1417,Muscle injury,05.05.2022,04.07.2022,14.0
+616908,Cadiz,8305822,Brian Ocampo,1417,Muscle injury,14.03.2022,05.04.2022,4.0
+616908,Cadiz,8305822,Brian Ocampo,1417,Muscle injury,23.02.2022,11.03.2022,1.0
+616908,Cadiz,8305822,Brian Ocampo,1417,Ankle injury,17.08.2020,31.08.2020,4.0
+607547,Cordoba,5950,Carlos Isaac,1409,Corona virus,28.12.2021,06.01.2022,1.0
+622865,Sporting Gijón,7566027,Eric Curbelo,1399,Muscle injury,05.10.2023,26.10.2023,2.0
+615206,Albacete,29392797,Jon Morcillo,1373,Broken collarbone,27.02.2023,30.06.2023,17.0
+615206,Albacete,29392797,Jon Morcillo,1373,Influenza,19.12.2022,26.12.2022,1.0
+615206,Albacete,29392797,Jon Morcillo,1373,Tonsillitis,17.02.2022,23.02.2022,1.0
+6942391,FC Andorra,62725754,Antonino,1371,Shoulder injury,23.07.2024,23.10.2024,
+6942391,FC Andorra,62725754,Antonino,1371,Ankle surgery,08.10.2023,20.02.2024,21.0
+609249,Granada CF,54201287,Ander Astralaga,1359,Muscle injury,01.03.2026,23.03.2026,3.0
+609249,Granada CF,54201287,Ander Astralaga,1359,Tendonitis,31.01.2025,15.03.2025,15.0
+616057,Almería,22348403,Arnau Puigmal,1358,Knock,28.02.2018,09.03.2018,
+623716,Zaragoza,45766658,Juan Larios,1357,Fitness,17.02.2025,28.04.2025,11.0
+623716,Zaragoza,45766658,Juan Larios,1357,Fitness,12.03.2024,30.06.2024,13.0
+623716,Zaragoza,45766658,Juan Larios,1357,Hamstring injury,07.11.2022,11.03.2024,87.0
+3970699,Racing Santander,16881487,Asier Villalibre,1340,Hamstring injury,04.01.2026,12.03.2026,10.0
+3970699,Racing Santander,16881487,Asier Villalibre,1340,Adductor injury,18.04.2022,05.05.2022,2.0
+3970699,Racing Santander,16881487,Asier Villalibre,1340,Corona virus,30.12.2021,05.01.2022,1.0
+3970699,Racing Santander,16881487,Asier Villalibre,1340,Hamstring injury,20.11.2021,31.01.2022,13.0
+3970699,Racing Santander,16881487,Asier Villalibre,1340,Hamstring injury,24.10.2021,09.11.2021,3.0
+3970699,Racing Santander,16881487,Asier Villalibre,1340,Hamstring injury,22.09.2021,14.10.2021,2.0
+3970699,Racing Santander,16881487,Asier Villalibre,1340,Lumbar vertebra problems,17.02.2020,15.06.2020,5.0
+456069,Malaga,19734568,Victor Garcia,1339,Muscle injury,02.01.2026,12.02.2026,6.0
+456069,Malaga,19734568,Victor Garcia,1339,Adductor injury,02.10.2023,10.11.2023,6.0
+457771,Leganes,7647010,Óscar Plano,1335,Hamstring injury,03.04.2022,30.06.2022,8.0
+457771,Leganes,7647010,Óscar Plano,1335,Shoulder injury,28.09.2018,24.10.2018,3.0
+457771,Leganes,7647010,Óscar Plano,1335,Torn muscle fiber,03.08.2017,24.08.2017,1.0
+615206,Albacete,17260964,Riki Rodríguez,1329,Muscle contusion,03.05.2021,26.05.2021,3.0
+623716,Zaragoza,16888088,Sebas Moyano,1329,Broken kneecap,30.07.2021,20.10.2021,10.0
+8153364,Burgos,1396185,K. Appin,1323,Knock,14.12.2025,09.01.2026,3.0
+8153364,Burgos,1396185,K. Appin,1323,Cruciate ligament tear,05.10.2024,05.06.2025,40.0
+615206,Albacete,7594524,José Carlos Lazo,1306,Muscle injury,20.03.2025,20.04.2025,4.0
+615206,Albacete,7594524,José Carlos Lazo,1306,Muscle injury,03.01.2022,18.02.2022,7.0
+623716,Zaragoza,26252814,A. Giménez,1305,Torn lateral knee ligament,05.02.2024,01.04.2024,15.0
+617759,Cultural Leonesa,29332422,Rafa Tresaco,1272,Muscle injury,02.07.2020,21.07.2020,
+617759,Cultural Leonesa,29332422,Rafa Tresaco,1272,Muscle injury,06.01.2020,17.01.2020,1.0
+617759,Cultural Leonesa,29332422,Rafa Tresaco,1272,Muscle injury,28.04.2019,11.06.2019,6.0
+607547,Cordoba,30631209,Kevin Villodres,1264,Muscle injury,25.08.2024,01.10.2024,5.0
+613504,Valladolid,31748710,Ramón Martínez,1257,Hamstring injury,06.08.2025,22.09.2025,5.0
+6942391,FC Andorra,70906647,Aingeru Olabarrieta,1224,Knee injury,01.09.2024,07.10.2024,7.0
+617759,Cultural Leonesa,19278455,Manu Justo,1210,Muscle injury,10.03.2022,06.04.2022,4.0
+617759,Cultural Leonesa,19278455,Manu Justo,1210,Muscle injury,15.09.2021,29.09.2021,2.0
+4471938,Castellón,7524489,Salva Ruiz,1204,Unknown,03.07.2016,04.10.2016,8.0
+4471938,Castellón,7524489,Salva Ruiz,1204,Ankle sprain,02.02.2016,03.04.2016,8.0
+4471938,Castellón,7524489,Salva Ruiz,1204,Calf injury,14.10.2015,21.10.2015,1.0
+455218,Las Palmas,2039541,Jonathan Viera,1203,Virus,11.12.2021,16.12.2021,2.0
+455218,Las Palmas,2039541,Jonathan Viera,1203,Foot injury,21.10.2021,12.11.2021,4.0
+455218,Las Palmas,2039541,Jonathan Viera,1203,Meniscus damage,04.05.2021,10.09.2021,19.0
+455218,Las Palmas,2039541,Jonathan Viera,1203,Adductor injury,06.11.2019,15.11.2019,1.0
+455218,Las Palmas,2039541,Jonathan Viera,1203,Rib fracture,18.07.2019,18.09.2019,8.0
+455218,Las Palmas,2039541,Jonathan Viera,1203,Hamstring injury,31.10.2017,14.11.2017,1.0
+455218,Las Palmas,2039541,Jonathan Viera,1203,Muscle injury,15.04.2017,06.05.2017,3.0
+455218,Las Palmas,2039541,Jonathan Viera,1203,Muscle injury,06.09.2016,21.09.2016,2.0
+455218,Las Palmas,2039541,Jonathan Viera,1203,Hamstring strain,09.04.2014,20.05.2014,6.0
+455218,Las Palmas,2039541,Jonathan Viera,1203,Muscle injury,07.02.2014,12.02.2014,1.0
+8157619,Real Sociedad B,66450972,Dani Díaz,1199,Cruciate ligament tear,17.04.2023,17.12.2023,
+607547,Cordoba,33596024,Diego Bri,1193,Broken collarbone,24.08.2024,09.10.2024,6.0
+455218,Las Palmas,55818854,Miloš Luković,1173,Knee injury,10.07.2024,28.10.2024,12.0
+616057,Almería,50008203,Gui,1155,Corona virus,27.12.2021,05.01.2022,1.0
+616057,Almería,50008203,Gui,1155,Unknown,16.10.2021,06.11.2021,6.0
+457771,Leganes,7659890,Gonzalo Melero,1155,Torn muscle fiber,12.02.2021,12.03.2021,6.0
+457771,Leganes,7659890,Gonzalo Melero,1155,Muscle injury,03.02.2020,20.02.2020,2.0
+457771,Leganes,7659890,Gonzalo Melero,1155,Muscle injury,23.11.2019,06.01.2020,6.0
+457771,Leganes,7659890,Gonzalo Melero,1155,Groin injury,13.01.2019,02.04.2019,10.0
+457771,Leganes,7659890,Gonzalo Melero,1155,Groin injury,22.10.2018,03.12.2018,6.0
+622865,Sporting Gijón,7529158,Brian Oliván,1139,Knee injury,22.10.2017,20.12.2017,9.0
+622865,Sporting Gijón,7529158,Brian Oliván,1139,Achilles tendon problems,24.10.2016,21.11.2016,3.0
+613504,Valladolid,7510965,Clerc,1138,Muscular problems,08.04.2018,08.06.2018,8.0
+613504,Valladolid,7510965,Clerc,1138,Hamstring injury,06.03.2018,16.03.2018,1.0
+3970699,Racing Santander,3955441,G. Guliashvili,1131,Fracture of fibula shaft,16.05.2026,16.07.2026,4.0
+3970699,Racing Santander,3955441,G. Guliashvili,1131,Hamstring injury,03.04.2025,06.05.2025,7.0
+6942391,FC Andorra,28128786,Théo Le Normand,1129,Cruciate ligament tear,10.05.2026,10.12.2026,3.0
+617759,Cultural Leonesa,19771920,Sergio Maestre,1121,Cruciate ligament tear,13.12.2021,13.07.2022,25.0
+463728,Deportivo La Coruña,14730044,S. Mulattieri,1113,Flu,31.03.2024,04.04.2024,1.0
+463728,Deportivo La Coruña,14730044,S. Mulattieri,1113,Muscular problems,10.04.2023,30.06.2023,6.0
+463728,Deportivo La Coruña,14730044,S. Mulattieri,1113,Unknown,15.01.2023,27.01.2023,1.0
+463728,Deportivo La Coruña,14730044,S. Mulattieri,1113,Shoulder injury,15.03.2022,30.06.2022,13.0
+463728,Deportivo La Coruña,14730044,S. Mulattieri,1113,Rest,11.05.2021,13.05.2021,1.0
+4471938,Castellón,4140591,Israel Suero,1104,Muscle injury,06.04.2024,13.05.2024,6.0
+4471938,Castellón,4140591,Israel Suero,1104,Torn muscle fiber,07.07.2022,07.08.2022,3.0
+4471938,Castellón,4140591,Israel Suero,1104,Muscular problems,20.09.2021,26.09.2021,1.0
+4471938,Castellón,4140591,Israel Suero,1104,Knee problems,17.05.2021,26.05.2021,1.0
+4471938,Castellón,4140591,Israel Suero,1104,Bruise,02.09.2020,06.09.2020,1.0
+609249,Granada CF,274659,Manu Trigueros,1103,Knee injury,22.02.2019,12.04.2019,10.0
+609249,Granada CF,274659,Manu Trigueros,1103,Muscular problems,15.02.2019,19.02.2019,1.0
+609249,Granada CF,274659,Manu Trigueros,1103,Groin injury,27.01.2019,11.02.2019,2.0
+609249,Granada CF,274659,Manu Trigueros,1103,Groin injury,20.05.2018,20.07.2018,
+609249,Granada CF,274659,Manu Trigueros,1103,Pubic bone irritation,19.03.2018,07.04.2018,1.0
+609249,Granada CF,274659,Manu Trigueros,1103,Fever,08.02.2014,14.02.2014,
+618610,Huesca,16907408,Liberto Beltrán,1087,Cruciate ligament tear,01.08.2026,01.04.2027,2.0
+613504,Valladolid,16871827,A. Ndiaye,1062,Broken fibula,10.12.2025,01.04.2026,16.0
+613504,Valladolid,16871827,A. Ndiaye,1062,Hamstring injury,28.04.2024,03.06.2024,5.0
+613504,Valladolid,16871827,A. Ndiaye,1062,Hamstring injury,18.03.2024,18.04.2024,4.0
+613504,Valladolid,16871827,A. Ndiaye,1062,Finger injury,10.08.2022,20.09.2022,6.0
+613504,Valladolid,16871827,A. Ndiaye,1062,Cruciate ligament tear,09.12.2018,18.12.2019,50.0
+613504,Valladolid,16871827,A. Ndiaye,1062,Foot injury,25.04.2017,25.05.2017,4.0
+456069,Malaga,29428700,Juanpe,1042,Muscle injury,14.04.2026,31.07.2026,11.0
+456069,Malaga,29428700,Juanpe,1042,Broken nose bone,27.08.2023,09.09.2023,1.0
+613504,Valladolid,19679667,Marcos André,1036,Muscle injury,29.11.2025,19.01.2026,6.0
+613504,Valladolid,19679667,Marcos André,1036,Achilles tendon problems,20.10.2023,01.02.2024,15.0
+613504,Valladolid,19679667,Marcos André,1036,Pubalgia,23.12.2020,01.04.2021,16.0
+613504,Valladolid,19679667,Marcos André,1036,Torn thigh muscle,28.01.2018,21.02.2018,
+457771,Leganes,7580034,Jorge Sáenz,1031,Shoulder injury,19.12.2019,16.01.2020,3.0
+457771,Leganes,7580034,Jorge Sáenz,1031,Muscular problems,12.10.2017,19.10.2017,1.0
+464579,Eibar,19769183,Álvaro Rodríguez,1027,Corona virus,28.12.2021,06.01.2022,1.0
+609249,Granada CF,53941111,Diego Hormigo,1002,Hip injury,05.10.2023,22.11.2023,7.0
+613504,Valladolid,3115826,Sergi Canós,996,Cruciate ligament tear,04.04.2026,01.11.2026,13.0
+613504,Valladolid,3115826,Sergi Canós,996,Herniated disc,21.05.2025,01.07.2025,1.0
+613504,Valladolid,3115826,Sergi Canós,996,Muscle injury,21.01.2024,04.02.2024,2.0
+613504,Valladolid,3115826,Sergi Canós,996,Knee injury,17.09.2023,27.10.2023,5.0
+613504,Valladolid,3115826,Sergi Canós,996,Inner ligament injury,02.04.2023,01.05.2023,6.0
+613504,Valladolid,3115826,Sergi Canós,996,Hamstring injury,01.08.2022,05.09.2022,7.0
+616057,Almería,20701695,Nico Melamed,986,Shoulder injury,28.10.2023,17.03.2024,20.0
+680733,Mirandes,46380068,Alberto Mari,983,Leg injury,02.03.2026,02.06.2026,14.0
+680733,Mirandes,46380068,Alberto Mari,983,Groin surgery,07.08.2023,04.12.2023,16.0
+455218,Las Palmas,25308388,Pejiño,949,Inflammation of pubic bone,12.01.2022,26.03.2022,9.0
+455218,Las Palmas,25308388,Pejiño,949,Sore muscles,27.10.2021,16.12.2021,10.0
+464579,Eibar,44935898,Leonardo Buta,946,Adductor injury,01.05.2024,31.05.2024,3.0
+464579,Eibar,44935898,Leonardo Buta,946,Broken tibia,12.07.2022,22.10.2022,12.0
+464579,Eibar,44935898,Leonardo Buta,946,Leg injury,19.07.2021,19.10.2021,5.0
+456069,Malaga,29399076,Julen Lobete,941,Cruciate ligament tear,04.09.2026,30.06.2027,2.0
+456069,Malaga,29399076,Julen Lobete,941,Foot injury,25.08.2024,16.09.2024,3.0
+456069,Malaga,29399076,Julen Lobete,941,Unknown,01.01.2023,20.01.2023,2.0
+457771,Leganes,7618835,Roberto López,923,Muscle injury,17.11.2023,25.11.2023,1.0
+618610,Huesca,7544453,Javi Mier,917,Knee injury,03.01.2025,29.12.2025,44.0
+618610,Huesca,7544453,Javi Mier,917,Sore muscles,25.10.2021,19.01.2022,12.0
+607547,Cordoba,19196989,Pedro Ortiz,886,Hip injury,01.08.2024,25.08.2024,2.0
+607547,Cordoba,19196989,Pedro Ortiz,886,Unknown,01.01.2024,28.02.2024,10.0
+607547,Cordoba,19196989,Pedro Ortiz,886,Unknown,25.08.2023,01.10.2023,5.0
+607547,Cordoba,19196989,Pedro Ortiz,886,Cruciate ligament tear,01.10.2021,01.04.2022,57.0
+616057,Almería,7624470,Rodrigo Ely,878,Muscle injury,31.01.2017,28.02.2017,6.0
+616057,Almería,7624470,Rodrigo Ely,878,Ankle sprain,27.04.2016,28.05.2016,4.0
+616057,Almería,7624470,Rodrigo Ely,878,Metatarsal fracture,11.01.2016,16.03.2016,13.0
+616057,Almería,7624470,Rodrigo Ely,878,Shoulder injury,30.11.2015,04.12.2015,1.0
+616057,Almería,7624470,Rodrigo Ely,878,Cruciate ligament tear,14.04.2025,14.12.2025,44.0
+616057,Almería,7624470,Rodrigo Ely,878,Hamstring injury,23.02.2025,15.03.2025,3.0
+616057,Almería,7624470,Rodrigo Ely,878,Foot injury,23.01.2025,31.01.2025,2.0
+616057,Almería,7624470,Rodrigo Ely,878,Foot injury,27.11.2024,21.01.2025,4.0
+616057,Almería,7624470,Rodrigo Ely,878,Thigh problems,26.08.2024,08.10.2024,6.0
+616057,Almería,7624470,Rodrigo Ely,878,Muscle injury,07.07.2024,13.07.2024,2.0
+616057,Almería,7624470,Rodrigo Ely,878,Hamstring injury,25.09.2023,23.11.2023,10.0
+616057,Almería,7624470,Rodrigo Ely,878,Muscular problems,01.11.2021,02.12.2021,5.0
+616057,Almería,7624470,Rodrigo Ely,878,Cruciate ligament tear,21.12.2020,30.06.2021,26.0
+616057,Almería,7624470,Rodrigo Ely,878,Hamstring injury,06.10.2019,21.11.2019,5.0
+616057,Almería,7624470,Rodrigo Ely,878,Muscle injury,24.04.2019,11.05.2019,2.0
+616057,Almería,7624470,Rodrigo Ely,878,Knee injury,30.10.2018,01.03.2019,17.0
+616057,Almería,7624470,Rodrigo Ely,878,Cruciate ligament tear,10.08.2018,05.10.2018,7.0
+616057,Almería,7624470,Rodrigo Ely,878,Muscular problems,05.12.2017,02.01.2018,3.0
+616057,Almería,7624470,Rodrigo Ely,878,Muscular problems,08.05.2017,25.05.2017,2.0
+4471938,Castellón,20665148,M. Doué,867,Injury to the ankle,22.08.2023,16.10.2023,9.0
+613504,Valladolid,30819096,M. Lachuer,866,Meniscus injury,10.11.2022,28.02.2023,12.0
+8153364,Burgos,9492,Víctor Mollejo,866,Cruciate ligament tear,01.12.2024,01.07.2025,24.0
+8153364,Burgos,9492,Víctor Mollejo,866,Muscle injury,23.03.2024,13.05.2024,8.0
+8153364,Burgos,9492,Víctor Mollejo,866,Broken ankle,07.02.2023,11.05.2023,13.0
+607547,Cordoba,29217468,Alberto del Moral,861,Hamstring injury,10.04.2025,10.08.2025,8.0
+618610,Huesca,26086984,Jordi Martín,860,Cruciate ligament tear,20.04.2025,29.12.2025,27.0
+8629073,AD Ceuta FC,16877784,Redru,853,Muscular problems,14.02.2019,06.03.2019,3.0
+616908,Cadiz,7642985,Roger Martí,851,Corona virus,06.11.2020,20.11.2020,
+616908,Cadiz,7642985,Roger Martí,851,Ankle sprain,29.08.2020,15.09.2020,
+616908,Cadiz,7642985,Roger Martí,851,Cruciate ligament tear,22.07.2017,15.01.2018,23.0
+616908,Cadiz,7642985,Roger Martí,851,Cruciate ligament tear,28.09.2014,01.04.2015,28.0
+463728,Deportivo La Coruña,17260964,Riki Rodríguez,813,Muscle contusion,03.05.2021,26.05.2021,3.0
+617759,Cultural Leonesa,23513882,Tomás Ribeiro,812,Broken nose bone,30.06.2023,18.07.2023,
+617759,Cultural Leonesa,23513882,Tomás Ribeiro,812,Unknown,04.05.2023,18.05.2023,2.0
+617759,Cultural Leonesa,23513882,Tomás Ribeiro,812,Arthroscopy,17.03.2022,05.08.2022,12.0
+617759,Cultural Leonesa,23513882,Tomás Ribeiro,812,Meniscus injury,24.02.2022,05.08.2022,14.0
+617759,Cultural Leonesa,23513882,Tomás Ribeiro,812,Corona virus,26.11.2021,03.12.2021,1.0
+617759,Cultural Leonesa,23513882,Tomás Ribeiro,812,Unknown,24.01.2020,03.08.2020,17.0
+609249,Granada CF,66725316,G. Petit,809,Muscle injury,11.08.2026,11.09.2026,4.0
+616908,Cadiz,53660166,Pelayo Fernández,808,Muscle injury,23.02.2024,06.04.2024,6.0
+616908,Cadiz,53660166,Pelayo Fernández,808,Meniscus tear,16.09.2023,26.01.2024,16.0
+616908,Cadiz,53660166,Pelayo Fernández,808,Hamstring injury,03.04.2023,07.06.2023,9.0
+616908,Cadiz,53660166,Pelayo Fernández,808,Fitness,09.05.2022,15.08.2022,
+616908,Cadiz,53660166,Pelayo Fernández,808,Knee injury,08.09.2021,08.05.2022,
+618610,Huesca,26099703,Jordi Escobar,794,Ankle injury,01.10.2022,01.05.2023,28.0
+622865,Sporting Gijón,29380078,Pablo García,787,Pubalgia,19.11.2025,15.12.2025,5.0
+457771,Leganes,56821562,S. Figueredo,786,Unknown,10.12.2025,01.02.2026,7.0
+457771,Leganes,56821562,S. Figueredo,786,Hamstring injury,08.08.2025,01.10.2025,4.0
+457771,Leganes,7646688,Miguel de la Fuente,785,Muscle injury,05.07.2020,10.07.2020,1.0
+616057,Almería,5844776,P. Soko,737,Corona virus,27.01.2022,02.02.2022,
+616057,Almería,5844776,P. Soko,737,Muscle injury,28.10.2021,10.11.2021,2.0
+616057,Almería,5844776,P. Soko,737,Ligament injury,10.05.2021,16.06.2021,2.0
+455218,Las Palmas,54185509,Estanis,731,Hamstring muscle injury,29.10.2025,22.11.2025,2.0
+455218,Las Palmas,54185509,Estanis,731,Hamstring muscle injury,16.09.2025,26.10.2025,6.0
+455218,Las Palmas,54185509,Estanis,731,Stress reaction of the bone,21.08.2025,23.08.2025,
+455218,Las Palmas,54185509,Estanis,731,Appendicitis,20.07.2025,05.08.2025,
+455218,Las Palmas,54185509,Estanis,731,Hamstring muscle injury,25.04.2025,20.05.2025,5.0
+455218,Las Palmas,54185509,Estanis,731,Hamstring injury,13.02.2025,07.03.2025,4.0
+455218,Las Palmas,54185509,Estanis,731,Hamstring muscle injury,06.05.2024,20.10.2024,12.0
+455218,Las Palmas,54185509,Estanis,731,Hamstring muscle injury,25.10.2023,25.03.2024,21.0
+455218,Las Palmas,54185509,Estanis,731,Hamstring muscle injury,02.10.2023,21.10.2023,1.0
+455218,Las Palmas,54185509,Estanis,731,Back injury,08.09.2022,16.12.2022,14.0
+617759,Cultural Leonesa,20631016,Quique Fornos,707,Fitness,08.01.2023,04.02.2023,
+617759,Cultural Leonesa,20631016,Quique Fornos,707,Achilles tendon problems,01.07.2022,29.10.2022,
+617759,Cultural Leonesa,28245833,Homam Ahmed,697,Ankle sprain,13.01.2024,04.02.2024,4.0
+456069,Malaga,17258227,Daniel Sánchez,688,Calf injury,17.12.2025,28.02.2026,9.0
+622865,Sporting Gijón,7637028,Kevin Vázquez,663,Muscle injury,30.09.2020,30.10.2020,4.0
+622865,Sporting Gijón,7637028,Kevin Vázquez,663,Knee injury,17.02.2020,01.03.2020,2.0
+622865,Sporting Gijón,7637028,Kevin Vázquez,663,Hamstring injury,16.10.2019,20.11.2019,5.0
+622865,Sporting Gijón,7637028,Kevin Vázquez,663,Ankle injury,23.10.2018,30.10.2018,1.0
+622865,Sporting Gijón,7637028,Kevin Vázquez,663,Foot injury,26.11.2017,05.02.2018,8.0
+8629073,AD Ceuta FC,29595335,Yago Cantero,639,Cruciate ligament tear,13.04.2024,13.08.2024,6.0
+8153364,Burgos,16877301,Mario González,639,Calf injury,03.04.2023,30.04.2023,3.0
+8153364,Burgos,16877301,Mario González,639,Foot bruise,25.02.2023,08.03.2023,2.0
+8153364,Burgos,16877301,Mario González,639,Hamstring injury,16.01.2023,26.01.2023,2.0
+8153364,Burgos,16877301,Mario González,639,Corona virus,01.03.2022,08.03.2022,
+8153364,Burgos,16877301,Mario González,639,Corona virus,19.11.2020,02.12.2020,2.0
+622865,Sporting Gijón,71040438,Andrés Cuenca,633,Muscle injury,09.02.2026,08.04.2026,17.0
+622865,Sporting Gijón,71040438,Andrés Cuenca,633,Muscle injury,11.12.2023,15.03.2024,5.0
+4471938,Castellón,88770402,Ronaldo,504,Contracture,26.04.2025,18.05.2025,
+4471938,Castellón,88770402,Ronaldo,504,Cruciate ligament tear,05.06.2024,22.12.2024,23.0
+4471938,Castellón,88770402,Ronaldo,504,Unknown,17.04.2023,11.05.2023,1.0
+4471938,Castellón,88770402,Ronaldo,504,Muscle fatigue,22.12.2022,25.12.2022,1.0
+4471938,Castellón,88770402,Ronaldo,504,Contracture,28.11.2022,16.12.2022,4.0
+4471938,Castellón,88770402,Ronaldo,504,Muscular problems,05.09.2021,18.09.2021,1.0
+4471938,Castellón,88770402,Ronaldo,504,Contracture,03.04.2021,03.05.2021,
+4471938,Castellón,88770402,Ronaldo,504,Muscular problems,11.01.2020,15.01.2020,1.0
+4471938,Castellón,88770402,Ronaldo,504,Unknown,04.11.2019,08.11.2019,1.0
+4471938,Castellón,88770402,Ronaldo,504,Unknown,28.01.2019,02.02.2019,1.0
+4471938,Castellón,88770402,Ronaldo,504,Cruciate ligament tear,09.11.2014,03.03.2015,15.0
+8153364,Burgos,45762955,José Mateo Mejía Piedrahita,501,Ankle sprain,17.12.2025,09.01.2026,3.0
+4471938,Castellón,59984568,Kenneth Mamah,465,Groin injury,15.08.2026,01.01.2027,3.0
+4471938,Castellón,59984568,Kenneth Mamah,465,Groin injury,10.04.2026,10.05.2026,4.0
+4471938,Castellón,59984568,Kenneth Mamah,465,Hamstring injury,23.02.2026,14.03.2026,3.0
+4471938,Castellón,59984568,Kenneth Mamah,465,Adductor injury,23.02.2025,18.07.2025,14.0
+4471938,Castellón,59984568,Kenneth Mamah,465,Calf injury,11.01.2024,20.01.2024,2.0
+4471938,Castellón,59984568,Kenneth Mamah,465,Calf injury,25.08.2023,11.09.2023,2.0
+4471938,Castellón,59984568,Kenneth Mamah,465,Ankle sprain,14.11.2022,17.12.2022,4.0
+4471938,Castellón,59984568,Kenneth Mamah,465,Muscular problems,19.12.2021,17.01.2022,1.0
+4471938,Castellón,59984568,Kenneth Mamah,465,Inner ligament injury,17.04.2021,16.05.2021,6.0
+4471938,Castellón,59984568,Kenneth Mamah,465,Collateral ligament injury,17.12.2020,01.02.2021,9.0
+8153364,Burgos,16879877,Aitor Buñuel,425,Knee injury,13.09.2021,10.11.2021,10.0
+8153364,Burgos,16879877,Aitor Buñuel,425,Muscular problems,05.07.2020,21.07.2020,4.0
+8153364,Burgos,17249694,Oier Luengo,316,Hamstring injury,06.11.2023,23.11.2023,2.0
+8153364,Burgos,975331,P. Galdames,298,Torn muscle bundle,28.04.2025,09.05.2025,3.0
+8153364,Burgos,975331,P. Galdames,298,Foot injury,23.06.2024,16.07.2024,5.0
+8153364,Burgos,975331,P. Galdames,298,Knee injury,14.09.2022,28.10.2022,6.0

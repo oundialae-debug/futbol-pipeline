@@ -507,3 +507,28 @@ copiar de main: 0%, no tenía alineaciones), 2025/26 96%. Lo que acerca el
 modelo al mercado son los DATOS DE JUGADORES, no los años de historia.
 Siguiente palanca: alineaciones y estadísticas de jugadores de 2023/24 (hoy
 2%), y más estadísticas por jugador de la temporada anterior.
+
+## Impacto de jugador (xG y goles) y lesiones (variables_jugador.py, 25/09/2026)
+
+Copiado del repo 1x2 a data/de_1x2/: lesiones por jugador con fechas (La Liga
+y Segunda, 727 jugadores) y su índice. **El índice de 1x2 NO se usa: pondera
+por minutos de la temporada ENTERA (información futura).** Se recalcula:
+peso = titularidades ANTERIORES con el equipo. Impacto xG / goles: xG o goles
+a favor y en contra del equipo en las titularidades anteriores de cada
+titular (K=5), media del once. Fuga comprobada (trucar un partido: el suyo
+igual, 1.534 posteriores cambian). Mes a mes, 2.527 partidos:
+
+| modelo | vs 28 (todas) | vs casas (todas) | vs 28 (España, 975) | vs casas (España) |
+|---|---|---|---|---|
+| 28 | -- | -1.09s | -- | -0.44s |
+| + impacto xG | -1.42s | -1.45s | +0.05s | -0.42s |
+| + impacto goles | -1.39s | -1.53s | -0.76s | -0.67s |
+| + impacto xG y goles | -2.07s | -1.86s | -0.85s | -0.76s |
+| + lesiones | -- | -- | -0.74s | -0.70s |
+
+Ninguna mejora al 28; todas empeoran salvo impacto xG en España (empate).
+El g/a individual de la temporada anterior sí sirve (+1.51s); el "impacto
+de equipo cuando juega" no: mezcla al jugador con sus compañeros, y lo que
+dice del equipo ya lo dicen las medias de tiros y puntos. Las lesiones: la
+lista de 1x2 solo cubre ~20 jugadores por equipo y el mercado ya descuenta
+las bajas.
