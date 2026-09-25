@@ -408,9 +408,31 @@ de 28. Mes a mes, mismos 2.527 partidos con cuota:
   antemano: primera mejora clara del modelo en esta carpeta desde la
   depuración. Los dos modelos se equivocan en sitios distintos.
 - Poisson solo empata con el XGBoost (-0.10s); contra la media de casas
-  queda peor (-4.53s): la independencia de Poisson falla en marcadores bajos.
+  queda peor (-4.53s). (Se atribuyó a los marcadores bajos; la sección
+  siguiente lo desmiente: ρ de Dixon-Coles sale ~0.)
 - **Contra el mercado todos siguen perdiendo.** Apostando con la cuota
   media: Poisson -10% a -13%, mezcla -7% a -11%.
 
 Siguientes pasos razonables: corrección Dixon-Coles de marcadores bajos
 (rho) y Poisson con xG en vez de goles. Fijar parámetros antes de mirar.
+
+## Dixon-Coles y Poisson con xG (poisson_dc_xg.py, 25/09/2026)
+
+Fijado antes de mirar: ρ de Dixon-Coles estimado cada mes por máxima
+verosimilitud solo con entrenamiento; Poisson con xG (61% de partidos tienen
+xG; el resto, goles). Mismos 2.527 partidos, mes a mes.
+
+| modelo | vs XGB 28 | vs media casas | vs Pinnacle | acierto | apostando (cuota media) |
+|---|---|---|---|---|---|
+| XGBoost 28 | -- | -2.65s | -3.20s | 56.2% | -2.6% |
+| Poisson goles (con o sin DC) | -0.10s | -4.53s | -3.15s | 56.1% | -11.9% |
+| Poisson xG (con o sin DC) | +0.37s | -4.00s | -2.40s | 56.1% | -10.0% |
+| mezcla goles + XGB | +2.27s | -2.26s | -2.65s | 57.7% | -7.1% |
+| **mezcla xG + XGB** | **+2.61s** | **-2.08s** | **-2.35s** | 57.1% | -7.6% |
+
+- **Dixon-Coles no cambia nada:** ρ sale entre -0.03 y 0.00 todos los meses;
+  en estas ligas los marcadores bajos ya salen bien con Poisson normal.
+- **xG ayuda un poco:** mezcla xG + XGBoost es el mejor modelo de la carpeta
+  (+2.61s sobre el XGBoost de 28), aún lejos del mercado.
+- Apostar con los modelos de Poisson pierde MÁS que con el XGBoost pese a
+  Brier parecido: donde Poisson discrepa de la casa, se equivoca más.
