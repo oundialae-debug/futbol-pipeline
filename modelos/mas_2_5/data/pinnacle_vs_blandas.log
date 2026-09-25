@@ -1,0 +1,50 @@
+/home/user/futbol-pipeline/modelos/mas_2_5/scripts/pinnacle_vs_blandas.py:26: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  d["y"] = (d.FTHG + d.FTAG > 2.5).astype(int)
+/home/user/futbol-pipeline/modelos/mas_2_5/scripts/pinnacle_vs_blandas.py:28: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  d["p_justa"] = inv_o / (inv_o + inv_u)
+/home/user/futbol-pipeline/modelos/mas_2_5/scripts/pinnacle_vs_blandas.py:29: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  d["margen_pin"] = inv_o + inv_u - 1
+/home/user/futbol-pipeline/modelos/mas_2_5/scripts/pinnacle_vs_blandas.py:33: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  d["p_cierre"] = ic_o / (ic_o + ic_u)
+3283 partidos con Pinnacle; margen medio de Pinnacle 3.76%
+temporada
+2024/25    2195
+2025/26    1088 
+
+casa    umbral temporada apuestas  rentab.      ±  sigmas bate cierre
+B365        0%   2024/25       18  (pocas)
+B365        0%   2025/26       21  -21.52% 32.36  -0.67s        76%
+B365        0%     todas       39   -7.62% 24.59  -0.31s        82%
+
+B365        2%   2024/25        8  (pocas)
+B365        2%   2025/26       10  (pocas)
+B365        2%     todas       18  (pocas)
+
+B365        4%   2024/25        8  (pocas)
+B365        4%   2025/26        7  (pocas)
+B365        4%     todas       15  (pocas)
+
+Avg         0%   2024/25       10  (pocas)
+Avg         0%   2025/26        7  (pocas)
+Avg         0%     todas       17  (pocas)
+
+Avg         2%   2024/25        5  (pocas)
+Avg         2%   2025/26        6  (pocas)
+Avg         2%     todas       11  (pocas)
+
+Avg         4%   2024/25        4  (pocas)
+Avg         4%   2025/26        3  (pocas)
+Avg         4%     todas        7  (pocas)
+
+Max         0%   2024/25      377   +5.36%  6.11  +0.88s        61%
+Max         0%   2025/26       79   -4.99% 13.53  -0.37s        71%
+Max         0%     todas      456   +3.57%  5.57  +0.64s        63%
+
+Max         2%   2024/25       69  +23.55% 18.38  +1.28s        77%
+Max         2%   2025/26       27  -15.37% 26.82  -0.57s        85%
+Max         2%     todas       96  +12.60% 15.24  +0.83s        79%
+
+Max         4%   2024/25       27  +32.30% 30.84  +1.05s        81%
+Max         4%   2025/26       12  (pocas)
+Max         4%     todas       39  +16.28% 25.35  +0.64s        87%
+

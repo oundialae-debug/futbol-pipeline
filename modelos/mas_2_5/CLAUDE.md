@@ -345,3 +345,26 @@ regularización solo acercaría B al mercado (0s), nunca por encima. Para batir
 al mercado hace falta información que el mercado no use bien, no más
 estadística de equipo. Siguientes vías: movimiento de cuota (apertura ->
 cierre) y diferencias entre casas (blanda frente a Pinnacle).
+
+## Casas blandas contra Pinnacle (pinnacle_vs_blandas.py, 25/09/2026)
+
+Sin modelo: Pinnacle sin margen = probabilidad justa; apostar donde otra
+cuota pague más. football-data trae Pinnacle antes del partido en 3.283
+partidos (2024/25: 2.195, 2025/26: 1.088; 2026/27 todavía no). Margen de
+Pinnacle: 3.76%. Resultados completos en data/pinnacle_vs_blandas.log.
+
+- **Bet365 y la media de casas casi nunca pagan más que Pinnacle:** 39 y 17
+  apuestas en dos temporadas. En Más/Menos 2.5 de estas ligas, las casas
+  blandas copian a Pinnacle y le suman margen.
+- **La cuota máxima de ~40 casas sí:** 456 apuestas, +3.57% (±5.57, +0.64s),
+  pero +5.36% en 2024/25 y -4.99% en 2025/26: no se repite. Con umbral 2%,
+  +23.6% y -15.4%. Ruido, y la máxima mezcla momentos distintos.
+- El 61-87% de esas apuestas bate el cierre de Pinnacle: señal de precio
+  bueno, pero con esta muestra no se convierte en beneficio medible.
+- Las cuotas de la API (38 casas) NO incluyen Pinnacle: no se puede repetir
+  con cuotas simultáneas.
+
+Conclusión: con cuotas de una foto al día no hay valor medible contra
+Pinnacle. Esta estrategia en la vida real depende de ver las cuotas de muchas
+casas EN TIEMPO REAL y cazar la que se queda atrás minutos u horas; eso no
+se puede medir con estos datos.
