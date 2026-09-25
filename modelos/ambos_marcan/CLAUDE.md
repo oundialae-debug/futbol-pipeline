@@ -596,3 +596,21 @@ de correlación con el real) más el 1X2 y el más/menos 2.5 como variables.
 Con el modelo general: +2.14s sobre el modelo sin precio (568 partidos) y
 **+0.87s contra el mercado cosechado** (219 partidos). Pista, no hallazgo:
 lejos de +2s, y el precio cosechado es más blando que un cierre de Pinnacle.
+
+## Salida del modelo de más de 2.5 como variable (25/09/2026)
+
+Idea del usuario: apilar. `scripts/apilar_mas25_en_ambos.py` (repo padre):
+la probabilidad del mejor modelo de más de 2.5 (producción + precio) entra
+como variable en el mejor de ambos marcan (producción + precio). En
+entrenamiento, predicción fuera de muestra por 5 bloques de fecha (si no,
+la variable "sabe" el resultado y el apilado sale inflado). Comprobado sin
+fuga: Brier de la variable 0.4824 en entrenamiento y 0.4717 en validación
+(no es menor en entrenamiento).
+
+- Con la variable vs sin ella: **+0.52s** (568 partidos). Del tamaño del ruido.
+- Contra el mercado cosechado (219): +0.87s -> **+0.98s** (bootstrap: peor
+  que el mercado en el 16%, antes 19%).
+
+Mejora poco y dentro del ruido: la salida del modelo de 2.5 sale de los
+mismos datos que ya ve el de ambos marcan (mismo patrón que Poisson). No se
+declara nada; si con más cuotas el +0.98 sube hacia +2, se revisa.
