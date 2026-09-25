@@ -497,3 +497,13 @@ g/a el modelo es más pobre. Lectura de la mejora de la sección anterior
 alineaciones y g/a de jugadores (2024/25 ganó alineaciones al copiar de main).
 Hipótesis a comprobar; si se confirma, lo que hay que ampliar es la cobertura
 de jugadores, no los años.
+
+## Confirmado: la mejora vino del g/a de jugadores (efecto_ga.py, 25/09/2026)
+
+Mismo modelo de 28, mismos datos nuevos, mismos 2.527 partidos mes a mes:
+con g/a -1.09s contra la media de casas, sin g/a -1.99s; con frente a sin,
+**+1.51s**. Cobertura de g/a de delanteros: 2023/24 2%, 2024/25 95% (antes de
+copiar de main: 0%, no tenía alineaciones), 2025/26 96%. Lo que acerca el
+modelo al mercado son los DATOS DE JUGADORES, no los años de historia.
+Siguiente palanca: alineaciones y estadísticas de jugadores de 2023/24 (hoy
+2%), y más estadísticas por jugador de la temporada anterior.
