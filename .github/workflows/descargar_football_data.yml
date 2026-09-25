@@ -1,0 +1,40 @@
+name: Descargar football-data (cuotas Pinnacle historicas)
+
+# Sin API de Highlightly: descarga CSV publicos de football-data.co.uk.
+# Se lanza aqui porque el contenedor de Claude no tiene salida a esa web.
+on:
+  workflow_dispatch:
+    inputs:
+      temporadas:
+        description: 'Temporadas en formato football-data (2425 = 2024/25), separadas por comas'
+        default: '2324,2425,2526,2627'
+
+jobs:
+  descargar:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+      - run: pip install requests
+      - name: Descargar
+        run: python scripts/descargar_football_data.py
+        env:
+          TEMPORADAS: ${{ inputs.temporadas || '2324,2425,2526,2627' }}
+      - name: Guardar
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/football_data || true
+          if git diff --staged --quiet; then
+            echo "Sin cambios que guardar"
+            exit 0
+          fi
+          git commit -m "football-data: cuotas historicas ($(date -u +%Y-%m-%dT%H:%M))"
+          git pull --rebase origin main
+          git push
