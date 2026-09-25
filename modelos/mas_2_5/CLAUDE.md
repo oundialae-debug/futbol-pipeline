@@ -289,3 +289,33 @@ Puntos y pases hacen falta: quitarlos cuesta ~1.3s y nada lo recupera. Sobre
 las 28, las tres variables nuevas se mueven dentro del ruido (±0.4s). El
 minimodelo no añade: quién gana ya lo saben los tiros, los puntos y el g/a.
 El modelo de 28 no cambia.
+
+## Contra el mercado en TODA la temporada, con cuotas de football-data.co.uk (25/09/2026)
+
+La API borra las cuotas a los 28 días. football-data.co.uk (gratis, sin
+clave, NO gasta llamadas de Highlightly) guarda las de temporadas enteras:
+media de casas (Avg), máxima (Max), Bet365, Pinnacle y cierre.
+`data/football_data/*.csv` (6 ligas x 2024/25-2026/27), cruzadas con nuestros
+partidos en `scripts/cruzar_football_data.py` (liga + fecha ±1 día + marcador
++ nombre; alias para Athletic, Gladbach, PSG, Celta B): 4.265 de 4.282
+(99.6%). Comprobación contra las cuotas de la API en 251 partidos comunes:
+correlación 0.964, diferencia media 2.2 puntos. La fuente es fiable.
+
+`scripts/contra_mercado_temporada.py`, modelo de 28 prediciendo mes a mes
+(cada mes entrenado solo con lo anterior):
+
+| tramo | partidos | vs media de casas | vs Pinnacle cierre | acierto modelo | acierto casas |
+|---|---|---|---|---|---|
+| 2025/26 | 2.211 | **-2.27s** | **-3.11s** (1.087) | 56.0% | 57.6% |
+| 2026/27 | 316 | -1.31s | -- | 61.1% | 65.5% |
+
+Apostando 1 unidad al lado con valor: con la cuota media, -2.4% a -2.9%
+según umbral (1.744 a 814 apuestas). Con la cuota MÁXIMA de ~40 casas,
++1.41% sin umbral (±2.27, +0.62s) y negativo con umbral: ruido, y además
+optimista (cuotas máximas no simultáneas, ver que_casas_abrir.md).
+
+**Con la temporada entera, el modelo PIERDE contra el mercado con claridad**
+(-2.27s, -3.11s contra Pinnacle). El "empate" de ago-sep 2026 (+0.03s en 186
+partidos) era muestra pequeña. Regla del proyecto: al crecer la muestra el
+número se fue lejos de cero, pero en contra. Cerrado para mas_2_5 con estas
+variables.
