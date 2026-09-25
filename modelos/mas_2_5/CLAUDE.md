@@ -436,3 +436,12 @@ xG; el resto, goles). Mismos 2.527 partidos, mes a mes.
   (+2.61s sobre el XGBoost de 28), aún lejos del mercado.
 - Apostar con los modelos de Poisson pierde MÁS que con el XGBoost pese a
   Brier parecido: donde Poisson discrepa de la casa, se equivoca más.
+
+## Peso de la mezcla Poisson-xG / XGBoost (peso_mezcla.py, 25/09/2026)
+
+Peso elegido en ago 2025-ene 2026 (1.282 partidos), comprobado en feb-sep
+2026 (1.245). Elegido: 70% Poisson-xG. En la comprobación ese peso da -2.07s
+contra la casa; el mejor allí habría sido 20% (-1.09s). **El peso óptimo no
+se mantiene de una mitad a otra**: no hay un peso fiable. Apostando, cuanto
+más Poisson peor (0%: -1.4%, 70%: -9.0%, 100%: -14.5%). Para apostar, el
+XGBoost de 28 solo sigue siendo lo menos malo.
