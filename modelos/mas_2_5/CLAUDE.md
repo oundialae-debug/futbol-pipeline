@@ -317,5 +317,31 @@ optimista (cuotas máximas no simultáneas, ver que_casas_abrir.md).
 **Con la temporada entera, el modelo PIERDE contra el mercado con claridad**
 (-2.27s, -3.11s contra Pinnacle). El "empate" de ago-sep 2026 (+0.03s en 186
 partidos) era muestra pequeña. Regla del proyecto: al crecer la muestra el
-número se fue lejos de cero, pero en contra. Cerrado para mas_2_5 con estas
-variables.
+número se fue lejos de cero, pero en contra. Cerrada la vía "más variables
+de equipo"; el mercado NO se da por cerrado: ver siguiente sección (cuota de
+la casa como variable, posible ahora que hay cuotas de temporadas enteras).
+
+## Cuota de la casa como variable (cuota_como_variable.py, 25/09/2026)
+
+Con cuotas de football-data para 2024/25-2026/27 el entrenamiento ya las
+tiene. Dos versiones fijadas antes de mirar: A = 28 + p_mercado (media de
+casas) como columna; B = XGBoost que ARRANCA en el mercado (base_margin =
+logit p_mercado) y solo aprende correcciones con los 28. Mes a mes, 2.527
+partidos (ago 2025 - sep 2026):
+
+| modelo | vs media casas | vs Pinnacle cierre (1.087) | acierto |
+|---|---|---|---|
+| 28 sin cuota | -2.65s | -3.20s | 56.2% |
+| A | -2.06s | -2.62s | 57.6% |
+| B | -2.13s | -2.61s | 57.5% |
+| media de casas | -- | -0.95s | 58.6% |
+
+Apostando con la cuota media: -2.8% a -4.0% en las dos versiones.
+
+Lectura: B se separa del mercado 5.7 puntos de media (hasta 27) y cada
+separación empeora. Es decir, **lo que los 28 rasgos "corrigen" al mercado
+es ruido**: no llevan información que la cuota no tenga ya. Más
+regularización solo acercaría B al mercado (0s), nunca por encima. Para batir
+al mercado hace falta información que el mercado no use bien, no más
+estadística de equipo. Siguientes vías: movimiento de cuota (apertura ->
+cierre) y diferencias entre casas (blanda frente a Pinnacle).
