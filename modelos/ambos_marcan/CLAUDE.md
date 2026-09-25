@@ -645,3 +645,23 @@ mercado (219): +0.87s -> +1.11s. En la muestra grande no mejora; la subida
 contra el mercado sale de 219 partidos y es del tamaño del ruido. Resultado:
 la base ya estaba casi limpia; podar no compra nada claro. Se mantiene el de
 106 (no se cambia el modelo por una diferencia que no se distingue de cero).
+
+## Poda de TODOS los grupos (25/09/2026)
+
+Mismo script con `ALCANCE=todo`: 38 unidades (24 medidas de la base; Elo,
+h2h, h2h profundo y árbitro como bloque; tabla y calidad por medida; el
+precio en 4 piezas). En selección salen 6: tiros fuera, descanso, posición
+en la tabla, ambos marcan implícito, árbitro y h2h profundo (cada paso
++0.8 a +1.9s en selección).
+
+**Prueba final: podado (91) vs completo (106) -1.20s -- PEOR.** Contra el
+mercado (219) +0.87s -> +1.05s, pero en los 568 partidos pierde. Lo que la
+selección daba por sobrante (árbitro, ambos marcan implícito...) sí aportaba
+fuera de ese tramo: podar a partir de un solo tramo de 1.266 partidos
+sobreajusta a ese tramo. Con la base sola (arriba) al menos empataba. Se
+mantiene el modelo de 106. No repetir poda por eliminación hacia atrás
+salvo con bastante más muestra.
+
+Nota de procesos: esperar con `until ! pgrep -f script.py` no termina nunca,
+porque el propio bucle lleva "script.py" en su línea de comando y pgrep lo
+encuentra. Esperar por PID (`kill -0 PID`), no por nombre.
