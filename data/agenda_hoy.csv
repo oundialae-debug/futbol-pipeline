@@ -1,1 +1,2 @@
-match_id,liga,saque_utc,local,visitante,descanso_desde,descanso_hasta
+match_id,liga,liga_id,fecha,saque_utc,local,visitante,descanso_desde,descanso_hasta
+1336020575,Segunda División,120775,2026-09-25,18:30,Girona,Albacete,19:15,19:32

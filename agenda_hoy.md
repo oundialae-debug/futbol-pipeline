@@ -1,6 +1,18 @@
-# Agenda del 2026-09-24
+# Agenda del 2026-09-25
 
-*Hoy no hay partidos de las seis ligas que cotizan tarjetas en vivo.*
+**1 partidos** en 1 ligas, repartidos en **1 franjas** de descanso.
 
-El comparador seguirá mirando igual: puede haber descansos de otras ligas que también sirven para acumular muestra.
+> Las horas son estimadas (saque + 45 a + 62 minutos). El comparador comprueba el estado real antes de calcular: si el partido no está parado en el intermedio, no se evalúa.
+
+
+## 19:15-19:32 UTC  (1 partidos)
+- **Girona vs Albacete** (Segunda División, saque 18:30)
+
+## Para el comparador
+
+Ids de hoy, para ir directo a ellos sin barrer todos los partidos del mundo:
+
+```
+1336020575
+```
 
