@@ -368,3 +368,24 @@ Conclusión: con cuotas de una foto al día no hay valor medible contra
 Pinnacle. Esta estrategia en la vida real depende de ver las cuotas de muchas
 casas EN TIEMPO REAL y cazar la que se queda atrás minutos u horas; eso no
 se puede medir con estos datos.
+
+## Movimiento de la cuota previa -> cierre (movimiento_cuota.py, 25/09/2026)
+
+football-data da una foto "previa" (días antes) y el cierre. 4.744 partidos
+con media de casas, 3.280 con Pinnacle (2 filas con cuotas imposibles
+descartadas). Movimiento medio: 2 puntos de probabilidad.
+
+- Control: el cierre predice mejor que la previa en las tres temporadas
+  (+2.93s, +1.58s, +0.60s). Los datos son coherentes.
+- ¿El movimiento predice MÁS ALLÁ del cierre? Coeficiente positivo (la
+  cuota sigue un poco en la dirección en que se movía) pero no significativo:
+  z=+1.68, +0.42, -0.91 por temporada con la media; +1.45, +0.42 con
+  Pinnacle. No se repite con fuerza.
+- Apostar al cierre en la dirección del movimiento: con la cuota media de
+  cierre, -3.95% (3.204 apuestas, -2.46s); con la máxima, -0.17% (ruido;
+  +3.8% en 2024/25, -4.0% en 2025/26).
+
+El cierre ya incorpora el movimiento: no queda nada que cobrar. Con fotos de
+dos momentos no se puede probar "apostar pronto antes de que se mueva" (haría
+falta saber hacia dónde se moverá, que es otra vez predecir mejor que el
+mercado).

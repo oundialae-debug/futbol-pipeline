@@ -1,0 +1,45 @@
+=== MEDIA DE CASAS: 0 filas con cuotas imposibles descartadas ===
+=== MEDIA DE CASAS: 4744 partidos ===
+  2024/25  n=2214  mov. medio 2.1 pts | cierre mejor que previa +2.93s | efecto del movimiento +0.277 (z=+1.68)
+  2025/26  n=2214  mov. medio 2.0 pts | cierre mejor que previa +1.58s | efecto del movimiento +0.073 (z=+0.42)
+  2026/27  n= 316  mov. medio 2.6 pts | cierre mejor que previa +0.60s | efecto del movimiento -0.363 (z=-0.91)
+  todas    n=4744  mov. medio 2.1 pts | cierre mejor que previa +3.25s | efecto del movimiento +0.143 (z=+1.25)
+
+=== PINNACLE: 2 filas con cuotas imposibles descartadas ===
+=== PINNACLE: 3280 partidos ===
+  2024/25  n=2195  mov. medio 2.3 pts | cierre mejor que previa +2.70s | efecto del movimiento +0.219 (z=+1.45)
+  2025/26  n=1085  mov. medio 2.0 pts | cierre mejor que previa +1.15s | efecto del movimiento +0.103 (z=+0.42)
+  todas    n=3280  mov. medio 2.2 pts | cierre mejor que previa +2.91s | efecto del movimiento +0.187 (z=+1.45)
+
+=== Apuesta al CIERRE en la dirección del movimiento (señal: media de casas) ===
+cuota  mov. mín temporada apuestas  rentab.      ±  sigmas
+AvgC         1p   2024/25     1528   -0.57%  2.37  -0.24s
+AvgC         1p   2025/26     1445   -7.27%  2.36  -3.09s
+AvgC         1p   2026/27      231   -5.57%  5.75  -0.97s
+AvgC         1p     todas     3204   -3.95%  1.61  -2.46s
+
+AvgC         3p   2024/25      578   +0.27%  3.64  +0.07s
+AvgC         3p   2025/26      499   -8.85%  3.92  -2.26s
+AvgC         3p   2026/27      103   -8.71%  7.98  -1.09s
+AvgC         3p     todas     1180   -4.37%  2.53  -1.73s
+
+AvgC         5p   2024/25      148   -3.20%  7.11  -0.45s
+AvgC         5p   2025/26      155   -1.62%  6.87  -0.24s
+AvgC         5p   2026/27       47  -10.06% 11.64  -0.86s
+AvgC         5p     todas      350   -3.42%  4.54  -0.75s
+
+MaxC         1p   2024/25     1528   +3.83%  2.49  +1.54s
+MaxC         1p   2025/26     1445   -4.04%  2.45  -1.65s
+MaxC         1p   2026/27      231   -2.41%  5.98  -0.40s
+MaxC         1p     todas     3204   -0.17%  1.68  -0.10s
+
+MaxC         3p   2024/25      578   +4.93%  3.82  +1.29s
+MaxC         3p   2025/26      499   -5.40%  4.09  -1.32s
+MaxC         3p   2026/27      103   -5.73%  8.25  -0.69s
+MaxC         3p     todas     1180   -0.37%  2.65  -0.14s
+
+MaxC         5p   2024/25      148   +1.89%  7.52  +0.25s
+MaxC         5p   2025/26      155   +2.46%  7.20  +0.34s
+MaxC         5p   2026/27       47   -7.06% 12.04  -0.59s
+MaxC         5p     todas      350   +0.94%  4.77  +0.20s
+
