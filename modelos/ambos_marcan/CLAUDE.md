@@ -614,3 +614,19 @@ fuga: Brier de la variable 0.4824 en entrenamiento y 0.4717 en validación
 Mejora poco y dentro del ruido: la salida del modelo de 2.5 sale de los
 mismos datos que ya ve el de ambos marcan (mismo patrón que Poisson). No se
 declara nada; si con más cuotas el +0.98 sube hacia +2, se revisa.
+
+## Córners en el modelo de ambos marcan (25/09/2026)
+
+`scripts/corners_en_ambos.py` (repo padre), sobre el mejor modelo (producción
++ precio, 106 rasgos). Los 6 de córners (media de los últimos 8 partidos, a
+favor y en contra, loc/vis/dif):
+- Importancia: 5.3% de la ganancia entre los 6 (su peso "justo" por número
+  sería 5.7%). Puestos 28 a 91 de 106. Ni destacan ni sobran.
+- Quitarlos: -0.43s (algo peor, dentro del ruido). Se quedan.
+- Apilar la salida del modelo de más de 9.5 córners (fuera de muestra, sin
+  fuga: Brier 0.4971 entreno / 0.4866 validación): -0.95s en los 568
+  partidos, +0.99s contra el mercado (antes +0.87s) en los 219. Señales
+  opuestas y pequeñas: ruido. No entra.
+Lo que más pesa en ambos marcan es el precio (ambos marcan implícito, más
+de 2.5, lambda local), los puntos del visitante y los puntos por partido
+en la tabla.
