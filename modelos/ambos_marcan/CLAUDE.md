@@ -630,3 +630,18 @@ favor y en contra, loc/vis/dif):
 Lo que más pesa en ambos marcan es el precio (ambos marcan implícito, más
 de 2.5, lambda local), los puntos del visitante y los puntos por partido
 en la tabla.
+
+## Poda de la base (25/09/2026)
+
+`scripts/podar_base_ambos.py` (repo padre): eliminación hacia atrás por
+medida entera (sus 3 columnas loc/vis/dif), decidida en el último 25% del
+entrenamiento (1.266 partidos, nov 2025-abr 2026) y probada UNA vez en los
+568 de validación. Salen 3 de 24 medidas: tiros fuera propios (+1.85s en
+selección), días de descanso (+1.14s) y centros del rival (+0.57s). A partir
+de ahí, quitar cualquier otra empeora: las otras 21 aportan.
+
+Prueba final: podado (97) vs completo (106) **-0.14s** (empate). Contra el
+mercado (219): +0.87s -> +1.11s. En la muestra grande no mejora; la subida
+contra el mercado sale de 219 partidos y es del tamaño del ruido. Resultado:
+la base ya estaba casi limpia; podar no compra nada claro. Se mantiene el de
+106 (no se cambia el modelo por una diferencia que no se distingue de cero).
