@@ -1,0 +1,50 @@
+name: Backfill xG por jugador
+
+# Estadísticas completas POR JUGADOR de /box-score (xG, xA y 35 más),
+# solo desde abril de 2025 (antes no hay xG), fecha más reciente primero.
+# Reanudable.
+on:
+  workflow_dispatch:
+    inputs:
+      tope_llamadas:
+        description: 'Maximo de llamadas a la API en esta pasada'
+        required: false
+        default: '3100'
+
+jobs:
+  backfill:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+      - run: pip install requests pandas
+
+      - name: Traer xG por jugador
+        run: python scripts/backfill_xg_jugador.py
+        env:
+          HIGHLIGHTLY_API_KEY: ${{ secrets.HIGHLIGHTLY_API_KEY }}
+          TOPE_LLAMADAS: ${{ inputs.tope_llamadas || '3100' }}
+
+      # Corre SIEMPRE, incluso si "Traer xG por jugador" se cancela o falla a
+      # medias por cuota agotada. Sin esto, una pasada de 40+ minutos con
+      # datos ya escritos en disco se pierde entera al cancelar: paso el
+      # mismo fallo que ya se corrigio en backfill_historico.yml y se me
+      # olvido aplicar aqui al crear este workflow.
+      - name: Guardar
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/historico_xg_jugador.csv || true
+          if git diff --staged --quiet; then
+            echo "Sin cambios que guardar"
+            exit 0
+          fi
+          git commit -m "xG por jugador: $(wc -l < data/historico_xg_jugador.csv) filas ($(date -u +%Y-%m-%dT%H:%M))"
+          git pull --rebase origin main
+          git push
