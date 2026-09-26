@@ -702,3 +702,46 @@ propio CLAUDE.md. No se mezcla con ambos marcan: no comparte modelo ni
 variables. El usuario puede pedir más pronósticos de selecciones en las
 próximas 3 semanas; eso se atiende desde esa carpeta y se vuelve aquí al
 terminar. El tema activo vuelve a ser ambos marcan, en el estado de arriba.
+
+## DÓNDE ESTAMOS (26/09/2026, 20:05 UTC) -- leer al retomar ambos marcan
+
+El paréntesis de selecciones está cerrado y vive aparte (`modelos/selecciones/`,
+con su propio chat). No mezclar nada de allí aquí.
+
+**Modelo oficial:** `scripts/modelo_ambos_marcan.py`.
+- Producción (99 variables) + 7 de precio de la PREVIA de football-data
+  (Pinnacle/Betfair días antes; nunca el cierre).
+- Entrenamiento con huecos y reentreno mensual.
+- Sin selección de variables ni recalibración: el adaptativo perdió
+  apostando (-12%).
+
+**Números vigentes:**
+
+| prueba | resultado |
+|---|---|
+| Brier contra lo cosechado (cuota_como_variable.py) | +1.32s |
+| Mes a mes, reentreno vs congelado (walk_forward_ambos.py) | +2.79s |
+| Apuestas ago-sep 2026, regla VE>0, mediana de casas | +6.2% |
+| Apuestas ago-sep 2026, regla VE>0, bet365 | +9.9% |
+
+Las apuestas no aguantan sin los 5 mejores partidos: es una pista débil,
+no un hallazgo.
+
+**La API se quedó sin cuota el 26/09 a las 20:00 UTC.** Nada que llame a
+la API antes del 27/09 a las 12:00 UTC (lo pidió el usuario: 16 horas).
+
+**Programado:**
+1. **27/09 12:30 UTC**, rutina `trig_012f6QzxhvKG21hszTPMVPr7`: lanza
+   `backfill_xg_jugador.yml` (tope 3100; ya hay 330 partidos del
+   31/05-20/09/2026).
+   - Revisión a los ~45 min.
+   - Después, prueba mes a mes de xG/xA por jugador (solo partidos
+     anteriores, anti-fuga) CONTRA el modelo oficial, y avisar al usuario.
+2. **Diaria 23:40 UTC**, `trig_01EMBFJxcUiL1bgg1rAJxwKi`: cosecha y
+   vigilancia. Ya sabe que no debe llamar a la API antes del 27/09
+   12:00 UTC.
+
+**Pendiente de decidir con el usuario:** apuestas en papel (sin dinero)
+sobre partidos jugados desde el 27/09, con la regla fijada de antemano.
+Es el único juez limpio que queda: todo lo anterior está contaminado por
+haber elegido variables mirando esos partidos.
