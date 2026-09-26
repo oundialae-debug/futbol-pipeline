@@ -994,3 +994,37 @@ temporada. `backfill_lineups.py` salta ahora lo anterior a
 `INICIO_COBERTURA = 2024-04-01`. Consecuencia: calidad de plantilla y
 rotación quedan vacías en casi toda 2023/24 (el entrenamiento con huecos
 lo tolera).
+
+## 2023/24 completa: mezclada, y xG por jugador solo desde abril de 2025 (26/09/2026)
+
+2023/24 terminada (partidos, árbitro, h2h profundo, jugadores; alineaciones
+solo abr-jun 2024). Entrenamiento con huecos: 5.067 -> 6.359 partidos.
+Mismos 574 de validación (`comparar_entreno_con_huecos.py`), contra el
+mercado cosechado:
+
+| mercado | con 2024/25 (25/09) | + 2023/24 (26/09) |
+|---|---|---|
+| resultado | -1.56s | -2.04s |
+| mas_2_5 | -2.05s | -2.57s |
+| ambos_marcan | +0.15s | **+0.44s** |
+| corners | -1.77s | -1.60s |
+| tarjetas | -2.56s | -2.41s |
+| suma | -7.80 | -8.19 |
+
+Mezclado: 3 de 5 mejoran (ambos marcan, córners, tarjetas), 2 empeoran;
+la suma, dentro del ruido. Con precio como variable (`cuota_como_variable.py`)
+ambos marcan llega a **+1.32s** contra lo cosechado (antes +0.87s), pero
+resultado y más de 2.5 contra el cierre empeoran (-1.67s y -1.62s, antes
+-0.67s y -1.35s). En el modelo propio de ambos marcan
+(`experimento_temporada_extra.py`), 2023/24 vs solo 2024/25: +0.16s en
+total (empate), +1.85s al final de 2025/26, -1.60s al arranque de 2026/27.
+Se queda en el histórico (más datos, sin daño claro). Mezcla 1X2
+(`aporta_algo.py`): cero en el 59% de los remuestreos, intervalo
+[0.00, 0.45]. **Referencias nuevas de la rutina diaria: estas.**
+
+**xG y xA por jugador** (`sondeo_xg_jugador.md`): `/box-score/{id}` los trae
+jugador a jugador, pero solo desde abril de 2025 (antes: 40 jugadores, cero
+con xG). El backfill de box-score del 21/09 los recibió en 2.537 partidos y
+los tiró (guardó 7 agregados de equipo): otra vez "mira la respuesta entera".
+Recuperarlos: ~2.850 llamadas (abr-2025 a hoy). Solo servirían para
+2025/26 en adelante.
