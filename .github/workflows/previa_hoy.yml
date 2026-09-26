@@ -1,0 +1,4 @@
+name: Previa de hoy (cuotas y árbitro, selecciones)
+
+on:
+  workflow_dispatch:
