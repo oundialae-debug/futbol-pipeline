@@ -800,3 +800,23 @@ match_id,partido,liga,minuto,estado,tarjetas_ht,linea,prob_modelo,prob_push,prob
 1148990348,Croatia U21 vs Hungary U21,UEFA U21 Championship - Qualification,45,Half time,0,4.5,0.152,0.0,0.2719,1,3.4,Vbet Sport,-0.4831,False,2026-09-26T15:52:23+00:00,,,0.0,3.4,0.2719,2026-09-26T16:27:37+00:00,(otras)
 1148990348,Croatia U21 vs Hungary U21,UEFA U21 Championship - Qualification,45,Half time,0,5.0,0.0737,0.0784,0.2719,1,3.4,Vbet Sport,-0.6712,False,2026-09-26T15:52:23+00:00,,,0.0,3.4,0.2719,2026-09-26T16:27:37+00:00,(otras)
 1148990348,Croatia U21 vs Hungary U21,UEFA U21 Championship - Qualification,45,Half time,0,5.5,0.0737,0.0,0.2368,1,3.9,Vbet Sport,-0.7128,False,2026-09-26T15:52:23+00:00,,,0.0,3.9,0.2368,2026-09-26T16:27:37+00:00,(otras)
+1336024830,Tenerife vs Cadiz,Segunda División,45,Half time,1,2.5,0.7891,0.0,0.7495,1,1.22,Marathonbet,-0.0373,False,2026-09-26T17:25:20+00:00,,10.0,1.0,,,,Segunda División
+1336024830,Tenerife vs Cadiz,Segunda División,45,Half time,1,3.0,0.582,0.2071,0.6786,1,1.35,Vbet Sport,-0.0072,False,2026-09-26T17:25:20+00:00,,10.0,1.0,,,,Segunda División
+1336024830,Tenerife vs Cadiz,Segunda División,45,Half time,1,3.5,0.582,0.0,0.5312,2,1.75,Vbet Sport,0.0184,False,2026-09-26T17:25:20+00:00,,10.0,1.0,,,,Segunda División
+1336024830,Tenerife vs Cadiz,Segunda División,45,Half time,1,4.0,0.38,0.2019,0.4079,1,2.25,Vbet Sport,0.057,False,2026-09-26T17:25:20+00:00,,10.0,1.0,,,,Segunda División
+1336024830,Tenerife vs Cadiz,Segunda División,45,Half time,1,4.5,0.38,0.0,0.3246,2,2.85,Vbet Sport,0.0831,False,2026-09-26T17:25:20+00:00,,10.0,1.0,,,,Segunda División
+1336024830,Tenerife vs Cadiz,Segunda División,45,Half time,1,5.0,0.2229,0.1571,0.2779,1,3.3,Vbet Sport,-0.1072,False,2026-09-26T17:25:20+00:00,,10.0,1.0,,,,Segunda División
+1336024830,Tenerife vs Cadiz,Segunda División,45,Half time,1,5.5,0.2229,0.0,0.2298,2,5.0,Marathonbet,0.1146,False,2026-09-26T17:25:20+00:00,,10.0,1.0,,,,Segunda División
+1336024830,Tenerife vs Cadiz,Segunda División,45,Half time,1,6.0,0.1192,0.1038,0.2779,1,3.3,Vbet Sport,-0.503,False,2026-09-26T17:25:20+00:00,,10.0,1.0,,,,Segunda División
+1336024830,Tenerife vs Cadiz,Segunda División,45,Half time,1,6.5,0.1192,0.0,0.2036,2,7.0,Marathonbet,-0.1659,False,2026-09-26T17:25:20+00:00,,10.0,1.0,,,,Segunda División
+1336024830,Tenerife vs Cadiz,Segunda División,45,Half time,1,7.5,0.0588,0.0,0.1294,1,7.0,Marathonbet,-0.5884,False,2026-09-26T17:25:20+00:00,,10.0,1.0,,,,Segunda División
+1336018022,Celta de Vigo II vs Sabadell,Segunda División,45,Half time,2,2.5,0.9368,0.0,0.8656,1,1.04,Marathonbet,-0.0257,False,2026-09-26T17:25:21+00:00,,14.0,6.0,,,,Segunda División
+1336018022,Celta de Vigo II vs Sabadell,Segunda División,45,Half time,2,3.0,0.7793,0.1575,0.7692,1,1.2,Vbet Sport,0.0927,False,2026-09-26T17:25:21+00:00,,14.0,6.0,,,,Segunda División
+1336018022,Celta de Vigo II vs Sabadell,Segunda División,45,Half time,2,3.5,0.7793,0.0,0.7466,2,1.3,Vbet Sport,0.0131,False,2026-09-26T17:25:21+00:00,,14.0,6.0,,,,Segunda División
+1336018022,Celta de Vigo II vs Sabadell,Segunda División,45,Half time,2,4.0,0.5682,0.2111,0.6543,1,1.4,Vbet Sport,0.0066,False,2026-09-26T17:25:21+00:00,,14.0,6.0,,,,Segunda División
+1336018022,Celta de Vigo II vs Sabadell,Segunda División,45,Half time,2,4.5,0.5682,0.0,0.5854,2,1.58,Marathonbet,-0.1022,False,2026-09-26T17:25:21+00:00,,14.0,6.0,,,,Segunda División
+1336018022,Celta de Vigo II vs Sabadell,Segunda División,45,Half time,2,5.0,0.3664,0.2019,0.5,1,1.85,Vbet Sport,-0.1204,False,2026-09-26T17:25:21+00:00,,14.0,6.0,,,,Segunda División
+1336018022,Celta de Vigo II vs Sabadell,Segunda División,45,Half time,2,5.5,0.3664,0.0,0.3815,2,2.45,Marathonbet,-0.1024,False,2026-09-26T17:25:21+00:00,,14.0,6.0,,,,Segunda División
+1336018022,Celta de Vigo II vs Sabadell,Segunda División,45,Half time,2,6.0,0.212,0.1543,0.2779,1,3.3,Vbet Sport,-0.146,False,2026-09-26T17:25:21+00:00,,14.0,6.0,,,,Segunda División
+1336018022,Celta de Vigo II vs Sabadell,Segunda División,45,Half time,2,6.5,0.212,0.0,0.2378,2,4.3,Marathonbet,-0.0883,False,2026-09-26T17:25:21+00:00,,14.0,6.0,,,,Segunda División
+1336018022,Celta de Vigo II vs Sabadell,Segunda División,45,Half time,2,7.5,0.1118,0.0,0.1302,1,6.95,Marathonbet,-0.2228,False,2026-09-26T17:25:21+00:00,,14.0,6.0,,,,Segunda División
