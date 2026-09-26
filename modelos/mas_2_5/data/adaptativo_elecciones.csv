@@ -1,0 +1,24 @@
+mes,n,variables,poda,peso_poisson,peso_casa
+2024-08,152,28,fuerte,0.0,1.0
+2024-09,223,73 (clasica+elo+g/a),fuerte,0.0,1.0
+2024-10,208,73 (clasica+elo+g/a),fuerte,0.0,0.75
+2024-11,216,73 (clasica+elo+g/a),fuerte,0.0,1.0
+2024-12,246,28+elo,fuerte,0.0,1.0
+2025-01,220,28+calidad,suave,0.0,0.75
+2025-02,240,73 (clasica+elo+g/a),fuerte,0.0,0.75
+2025-03,220,28+tabla,suave,0.0,0.75
+2025-04,247,28+tabla,suave,0.0,1.0
+2025-05,232,28,suave,0.0,1.0
+2025-06,8,28+h2h,suave,0.0,1.0
+2025-08,157,28+h2h,fuerte,0.0,0.5
+2025-09,198,73 (clasica+elo+g/a),fuerte,0.5,0.5
+2025-10,209,28-pases,fuerte,0.0,0.5
+2025-11,243,28+calidad,fuerte,0.0,0.5
+2025-12,203,28-pases,suave,0.0,0.5
+2026-01,272,28-pases,fuerte,0.5,0.75
+2026-02,236,28-pases,fuerte,0.25,0.25
+2026-03,219,28-pases,suave,0.0,0.5
+2026-04,233,28,suave,0.0,0.5
+2026-05,241,28+tabla,fuerte,0.0,0.75
+2026-08,130,28-pases,suave,0.25,0.0
+2026-09,186,73 (clasica+elo+g/a),fuerte,0.0,1.0

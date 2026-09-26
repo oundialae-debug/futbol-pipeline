@@ -556,3 +556,35 @@ Mismos 2.527 partidos de evaluación, mes a mes (logs *_v3.log):
   en el entrenamiento, más aporta. Cuando 2023/24 tenga alineaciones, repetir.
 - Apostando con cuota media: XGBoost 28 en cero (+0.2%/+0.7%, ±2.6). Ningún
   modelo gana dinero de forma medible.
+
+## Modelo que se ajusta solo mes a mes (adaptativo.py, 26/09/2026)
+
+Idea del usuario. Cada mes desde ago 2024: con los 3 meses anteriores elige
+variables (7 conjuntos) y poda (fuerte/suave), peso del Poisson-xG (0-75%) y
+peso de la casa (0-100%); reentrena con todo lo anterior y predice el mes.
+Nunca mira el mes que predice. 4.739 partidos (ago 2024 - sep 2026). Log y
+elecciones por mes en data/adaptativo*.
+
+| modelo | vs casa (todo) | 2024/25 | 2025/26 | 2026/27 | acierto | apostando |
+|---|---|---|---|---|---|---|
+| XGBoost 28 fijo | -4.57s | -4.89s | -0.82s | -1.62s | 56.2% | -4.2% |
+| adaptativo sin mezclar con la casa | -5.17s | -5.19s | -1.29s | -1.49s | 56.7% | -3.9% |
+| **adaptativo completo** | **-2.20s** | -3.41s | **-0.48s** | -1.42s | 58.7% | -12.3% (915) |
+| casa | | | | | 58.6% | |
+
+- **Mejora mucho al 28 fijo (+4.61s)**, pero sobre todo porque aprende a
+  fiarse de la casa: peso medio de la casa 71% (100% en 9 de 23 meses).
+  Poisson casi nunca (7%). Variables elegidas cambian cada mes (73 y
+  "28-pases" 6 veces cada una, el resto repartido): no hay un conjunto que
+  gane de forma estable.
+- **Aun mezclándose con la casa, pierde contra la casa (-2.20s)**: los pesos
+  elegidos con 3 meses de datos son ruidosos, y cada vez que se separa de la
+  casa, empeora. Apostando, solo apuesta cuando se separa (915 veces) y
+  pierde -12.3%.
+- 2024/25 va muy mal para todos (-3.4 a -5.2s): su entrenamiento es 2023/24
+  casi sin alineaciones ni g/a. En 2025/26, con g/a, el adaptativo queda a
+  -0.48s, lo más cerca de la casa en una temporada completa.
+
+Lectura: el modelo que se ajusta solo "descubre" lo mismo que las demás
+pruebas: su mejor movimiento es parecerse a la casa. Lo que lo acercaría es
+información nueva (alineaciones de 2023/24, xG por jugador), no más ajuste.

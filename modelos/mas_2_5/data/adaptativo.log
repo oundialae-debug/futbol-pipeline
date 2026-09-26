@@ -1,0 +1,35 @@
+6986 partidos; construido en 25s
+2024-08: 28                     poda fuerte poisson 0% casa 100%  (n=152, 30s)
+2024-09: 73 (clasica+elo+g/a)   poda fuerte poisson 0% casa 100%  (n=223, 37s)
+2024-10: 73 (clasica+elo+g/a)   poda fuerte poisson 0% casa 75%  (n=208, 43s)
+2024-11: 73 (clasica+elo+g/a)   poda fuerte poisson 0% casa 100%  (n=216, 49s)
+2024-12: 28+elo                 poda fuerte poisson 0% casa 100%  (n=246, 55s)
+2025-01: 28+calidad             poda suave  poisson 0% casa 75%  (n=220, 61s)
+2025-02: 73 (clasica+elo+g/a)   poda fuerte poisson 0% casa 75%  (n=240, 68s)
+2025-03: 28+tabla               poda suave  poisson 0% casa 75%  (n=220, 74s)
+2025-04: 28+tabla               poda suave  poisson 0% casa 100%  (n=247, 80s)
+2025-05: 28                     poda suave  poisson 0% casa 100%  (n=232, 87s)
+2025-06: 28+h2h                 poda suave  poisson 0% casa 100%  (n=8, 94s)
+2025-08: 28+h2h                 poda fuerte poisson 0% casa 50%  (n=157, 100s)
+2025-09: 73 (clasica+elo+g/a)   poda fuerte poisson 50% casa 50%  (n=198, 108s)
+2025-10: 28-pases               poda fuerte poisson 0% casa 50%  (n=209, 114s)
+2025-11: 28+calidad             poda fuerte poisson 0% casa 50%  (n=243, 122s)
+2025-12: 28-pases               poda suave  poisson 0% casa 50%  (n=203, 128s)
+2026-01: 28-pases               poda fuerte poisson 50% casa 75%  (n=272, 135s)
+2026-02: 28-pases               poda fuerte poisson 25% casa 25%  (n=236, 143s)
+2026-03: 28-pases               poda suave  poisson 0% casa 50%  (n=219, 149s)
+2026-04: 28                     poda suave  poisson 0% casa 50%  (n=233, 157s)
+2026-05: 28+tabla               poda fuerte poisson 0% casa 75%  (n=241, 165s)
+2026-08: 28-pases               poda suave  poisson 25% casa 0%  (n=130, 173s)
+2026-09: 73 (clasica+elo+g/a)   poda fuerte poisson 0% casa 100%  (n=186, 181s)
+
+4739 partidos evaluados (2024-08 a 2026-09). Positivo = mejor que la casa.
+  p_28_fijo          vs casa -4.57s | 2024/25 -4.89s  2025/26 -0.82s  2026/27 -1.62s | acierto 56.2% | apostando -4.22% (±1.82, 3279 ap.)
+  p_modelo_sin_casa  vs casa -5.17s | 2024/25 -5.19s  2025/26 -1.29s  2026/27 -1.49s | acierto 56.7% | apostando -3.91% (±1.86, 3172 ap.)
+  p_adaptativo       vs casa -2.20s | 2024/25 -3.41s  2025/26 -0.48s  2026/27 -1.42s | acierto 58.7% | apostando -12.27% (±3.50, 915 ap.)
+  casa: acierto 58.6%
+
+Adaptativo frente al 28 fijo: +4.61s
+
+Qué eligió (meses): {'73 (clasica+elo+g/a)': 6, '28-pases': 6, '28': 3, '28+tabla': 3, '28+calidad': 2, '28+h2h': 2, '28+elo': 1} | poda: {'fuerte': 14, 'suave': 9}
+peso casa medio 0.71 | peso Poisson medio 0.07
