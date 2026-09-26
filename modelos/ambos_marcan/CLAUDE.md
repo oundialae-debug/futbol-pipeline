@@ -745,3 +745,15 @@ la API antes del 27/09 a las 12:00 UTC (lo pidió el usuario: 16 horas).
 sobre partidos jugados desde el 27/09, con la regla fijada de antemano.
 Es el único juez limpio que queda: todo lo anterior está contaminado por
 haber elegido variables mirando esos partidos.
+
+**ACTUALIZACIÓN 26/09 20:10 UTC: AMBOS MARCAN EN PAUSA** (lo pide el usuario).
+No se descarga nada para ambos marcan mientras dura la Nations League
+(~3 semanas sin partidos de liga).
+- Desactivadas (no borradas) las rutinas `trig_012f6QzxhvKG21hszTPMVPr7`
+  (backfill de xG por jugador) y `trig_01EMBFJxcUiL1bgg1rAJxwKi` (vigilancia
+  diaria).
+- Quitado el cron de `cosechar_cuotas.yml`.
+
+Para retomar: reactivar las dos rutinas, descomentar el schedule y seguir
+el plan de arriba. Las cuotas de los partidos del 19-20/09 se pueden
+cosechar hasta ~18/10.

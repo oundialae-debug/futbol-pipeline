@@ -4,8 +4,12 @@ name: Cosechar cuotas
 # Lo que no se coseche en esa ventana se pierde para siempre. Por eso esto
 # corre a diario, aunque hoy no sirva para nada.
 on:
-  schedule:
-    - cron: '25 5 * * *'
+  # EN PAUSA desde el 26/09/2026 (petición del usuario): ambos marcan parado
+  # mientras dura la Nations League (~3 semanas sin liga). Para reactivar,
+  # descomentar las dos líneas de schedule. Las cuotas de los últimos partidos
+  # de liga (19-20/09) siguen disponibles hasta ~18/10 (28 días).
+  # schedule:
+  #   - cron: '25 5 * * *'
   workflow_dispatch:
     inputs:
       tope_llamadas:
