@@ -1,1 +1,45 @@
-
+match_id,equipo,equipo_id,formacion,jugador_id,jugador,posicion
+1301087025,England,9294,,26160883,J. Trafford,Goalkeeper
+1301087025,England,9294,,25550532,J. Quansah,Defender
+1301087025,England,9294,,3116148,E. Konsa,Defender
+1301087025,England,9294,,10943485,M. Guéhi,Defender
+1301087025,England,9294,,-1,O'Reilly,Defender
+1301087025,England,9294,,22364342,E. Anderson,Midfielder
+1301087025,England,9294,,50432599,M. Lewis-Skelly,Defender
+1301087025,England,9294,,235214,B. Saka,Midfielder
+1301087025,England,9294,,20884752,J. Bellingham,Midfielder
+1301087025,England,9294,,22344861,A. Gordon,Forward
+1301087025,England,9294,,29778,H. Kane,Forward
+1301087025,Spain,8443,,7610624,Unai Simón,Goalkeeper
+1301087025,Spain,8443,,99813,Eric García,Defender
+1301087025,Spain,8443,,63856457,Pau Cubarsí Paredes,Defender
+1301087025,Spain,8443,,100296,Aymeric Laporte,Defender
+1301087025,Spain,8443,,7628334,Marc Cucurella,Defender
+1301087025,Spain,8443,,7238,Rodri,Midfielder
+1301087025,Spain,8443,,52962,Fabián Ruiz,Midfielder
+1301087025,Spain,8443,,62279462,Lamine Yamal,Forward
+1301087025,Spain,8443,,213157,Dani Olmo,Midfielder
+1301087025,Spain,8443,,29591793,Nico Williams,Forward
+1301087025,Spain,8443,,150045,Ferran Torres,Forward
+1301087876,Czech Republic,656054,,43365343,L. Horníček,Goalkeeper
+1301087876,Czech Republic,656054,,54376294,Štěpán Chaloupek,Defender
+1301087876,Czech Republic,656054,,-2,Kricfalusi,Defender
+1301087876,Czech Republic,656054,,26237358,R. Hranáč,Defender
+1301087876,Czech Republic,656054,,198345,V. Coufal,Defender
+1301087876,Czech Republic,656054,,-3,Ambros,Midfielder
+1301087876,Czech Republic,656054,,38955,Michal Sadílek,Midfielder
+1301087876,Czech Republic,656054,,10688461,P. Šulc,Midfielder
+1301087876,Czech Republic,656054,,32179385,Adam Karabec,Midfielder
+1301087876,Czech Republic,656054,,-4,Macek,Midfielder
+1301087876,Czech Republic,656054,,10629213,A. Hložek,Midfielder
+1301087876,Croatia,3337,,210259,D. Livaković,Goalkeeper
+1301087876,Croatia,3337,,33481,I. Perišić,Midfielder
+1301087876,Croatia,3337,,20152685,J. Stanišić,Defender
+1301087876,Croatia,3337,,20774467,J. Gvardiol,Defender
+1301087876,Croatia,3337,,62391035,L. Vušković,Defender
+1301087876,Croatia,3337,,369005,M. Kovačić,Midfielder
+1301087876,Croatia,3337,,47499340,Martin Baturina,Midfielder
+1301087876,Croatia,3337,,135716,Nikola Vlašić,Midfielder
+1301087876,Croatia,3337,,121548,Luka Modrić,Midfielder
+1301087876,Croatia,3337,,56061159,Petar Sučić,Midfielder
+1301087876,Croatia,3337,,7526260,A. Budimir,Forward

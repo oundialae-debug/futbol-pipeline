@@ -6,41 +6,41 @@ Datos: 71 partidos de las 4 selecciones desde 2025 (descartados 5 contra rivales
 
 ## England - Spain
 
-Modelo: goles esperados 1.11 - 1.67, marcador más probable 1-1. Córners esperados 8.7. Tarjetas amarillas esperadas 2.1; árbitro Massa, Davide (37 partidos en nuestras ligas, x1.17) -> 2.4. Forma del once: England -0.02, Spain -0.10.
+Modelo: goles esperados 1.09 - 1.68, marcador más probable 1-1. Córners esperados 8.7. Tarjetas amarillas esperadas 2.1; árbitro Massa, Davide (37 partidos en nuestras ligas, x1.17) -> 2.4. Forma del once: England -0.05, Spain -0.10.
 
 | mercado | pronóstico | prob. mercado | prob. modelo | cuota mínima | cuota mediana | mejor cuota (sin atípicos) | casas |
 |---|---|---|---|---|---|---|---|
 | 1X2 | **gana Spain** | 48% | 51% | 2.08 | 1.96 | 2.05 | 50 |
-| Más/menos 2.5 | **más de 2.5 goles** | 55% | 53% | 1.82 | 1.73 | 1.87 | 35 |
+| Más/menos 2.5 | **más de 2.5 goles** | 55% | 52% | 1.82 | 1.73 | 1.87 | 35 |
 | Ambos marcan | **ambos marcan: sí** | 58% | 54% | 1.73 | 1.61 | 1.67 | 29 |
 | Tarjetas | **más de 3.5 tarjetas** | 50% | 25% | 2.00 | 1.85 | 1.85 | 1 |
 | Tarjetas | **menos de 4.5 tarjetas** | 68% | 85% | 1.47 | 1.34 | 1.34 | 1 |
 | Córners | **más de 8.5 córners** | 55% | 50% | 1.81 | 1.67 | 1.70 | 10 |
 | Córners | **menos de 9.5 córners** | 56% | 62% | 1.78 | 1.63 | 1.70 | 11 |
-| Goles | **más de 1.5 goles** | 77% | 77% | 1.30 | 1.22 | 1.26 | 35 |
-| Goles | **Spain marca primero** | 58% | 60% | 1.71 | 1.67 | 1.87 | 4 |
+| Goles | **más de 1.5 goles** | 77% | 76% | 1.30 | 1.22 | 1.26 | 35 |
+| Goles | **Spain marca primero** | 58% | 61% | 1.71 | 1.67 | 1.87 | 4 |
 
-Once probable England: J. Bellingham, H. Kane, E. Anderson, D. Rice, M. Rogers, M. Guéhi, J. Pickford, A. Gordon, E. Konsa, Djed Spence, John Stones
-Once probable Spain: Lamine Yamal, Rodri, Pau Cubarsí Paredes, Álex Baena, Dani Olmo, Aymeric Laporte, Unai Simón, Fabián Ruiz, Pedro Porro, Mikel Oyarzabal, Marc Cucurella
+Once real England: J. Bellingham, B. Saka, H. Kane, E. Anderson, M. Guéhi, J. Trafford, A. Gordon, E. Konsa, M. Lewis-Skelly, O'Reilly, J. Quansah
+Once real Spain: Lamine Yamal, Rodri, Pau Cubarsí Paredes, Dani Olmo, Nico Williams, Aymeric Laporte, Ferran Torres, Unai Simón, Fabián Ruiz, Eric García, Marc Cucurella
 
 ## Czech Republic - Croatia
 
-Modelo: goles esperados 1.20 - 2.11, marcador más probable 1-2. Córners esperados 9.5. Tarjetas amarillas esperadas 2.2; árbitro Sozza, Simone (37 partidos en nuestras ligas, x0.94) -> 2.0. Forma del once: Czech Republic -0.05, Croatia -0.06.
+Modelo: goles esperados 1.19 - 2.18, marcador más probable 1-2. Córners esperados 9.5. Tarjetas amarillas esperadas 2.2; árbitro Sozza, Simone (37 partidos en nuestras ligas, x0.94) -> 2.0. Forma del once: Czech Republic -0.04, Croatia +0.01.
 
 | mercado | pronóstico | prob. mercado | prob. modelo | cuota mínima | cuota mediana | mejor cuota (sin atípicos) | casas |
 |---|---|---|---|---|---|---|---|
-| 1X2 | **gana Croatia** | 47% | 58% | 2.14 | 2.02 | 2.12 | 50 |
-| Más/menos 2.5 | **más de 2.5 goles** | 52% | 64% | 1.92 | 1.81 | 1.88 | 36 |
+| 1X2 | **gana Croatia** | 47% | 60% | 2.14 | 2.02 | 2.12 | 50 |
+| Más/menos 2.5 | **más de 2.5 goles** | 52% | 65% | 1.92 | 1.81 | 1.88 | 36 |
 | Ambos marcan | **ambos marcan: sí** | 56% | 62% | 1.79 | 1.66 | 1.70 | 28 |
 | Tarjetas | **menos de 3.5 tarjetas** | 54% | 82% | 1.84 | 1.70 | 1.70 | 1 |
 | Tarjetas | **menos de 4.5 tarjetas** | 72% | 90% | 1.40 | 1.27 | 1.27 | 1 |
 | Córners | **más de 8.5 córners** | 59% | 59% | 1.70 | 1.56 | 1.63 | 10 |
 | Córners | **menos de 9.5 córners** | 52% | 53% | 1.92 | 1.77 | 1.81 | 11 |
-| Goles | **más de 1.5 goles** | 75% | 84% | 1.33 | 1.25 | 1.28 | 35 |
-| Goles | **Croatia marca primero** | 57% | 64% | 1.74 | 1.71 | 1.74 | 4 |
+| Goles | **más de 1.5 goles** | 75% | 85% | 1.33 | 1.25 | 1.28 | 35 |
+| Goles | **Croatia marca primero** | 57% | 65% | 1.74 | 1.71 | 1.74 | 4 |
 
-Once probable Czech Republic: M. Kovář, L. Krejčí, P. Schick, Tomáš Souček, P. Šulc, Lukáš Červ, Michal Sadílek, Jaroslav Zelený, Štěpán Chaloupek, V. Coufal, R. Hranáč
-Once probable Croatia: J. Gvardiol, Luka Modrić, Martin Baturina, Petar Sučić, I. Perišić, D. Livaković, Josip Šutalo, M. Kovačić, J. Stanišić, Marin Pongračić, Nikola Vlašić
+Once real Czech Republic: L. Horníček, Adam Karabec, A. Hložek, P. Šulc, Michal Sadílek, Ambros, Macek, Kricfalusi, Štěpán Chaloupek, V. Coufal, R. Hranáč
+Once real Croatia: A. Budimir, J. Gvardiol, Luka Modrić, L. Vušković, Martin Baturina, Petar Sučić, I. Perišić, D. Livaković, M. Kovačić, J. Stanišić, Nikola Vlašić
 
 ## Cuánto fiarse
 
