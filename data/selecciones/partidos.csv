@@ -1,13 +1,49 @@
 match_id,fecha,competicion,local_id,local,visitante_id,visitante,goles_l,goles_v,terminado
+1120380579,2025-03-20,UEFA Nations League,952202,Netherlands,8443,Spain,2.0,2.0,True
+1120382281,2025-03-20,UEFA Nations League,3337,Croatia,2486,France,2.0,0.0,True
+1126079726,2025-03-21,World Cup - Qualification Europe,9294,England,662862,Albania,2.0,0.0,True
+1126084832,2025-03-22,World Cup - Qualification Europe,656054,Czech Republic,935182,Faroe Islands,2.0,1.0,True
+1120381430,2025-03-23,UEFA Nations League,8443,Spain,952202,Netherlands,3.0,3.0,True
+1120383132,2025-03-23,UEFA Nations League,2486,France,3337,Croatia,2.0,0.0,True
+1126089938,2025-03-24,World Cup - Qualification Europe,9294,England,930076,Latvia,3.0,0.0,True
+1126094193,2025-03-25,World Cup - Qualification Europe,930927,Gibraltar,656054,Czech Republic,0.0,4.0,True
+1162583371,2025-06-05,UEFA Nations League,8443,Spain,2486,France,5.0,4.0,True
+1126098448,2025-06-06,World Cup - Qualification Europe,656054,Czech Republic,944543,Montenegro,2.0,0.0,True
+1162699958,2025-06-06,World Cup - Qualification Europe,930927,Gibraltar,3337,Croatia,0.0,7.0,True
+1126101001,2025-06-07,World Cup - Qualification Europe,945394,Andorra,9294,England,0.0,1.0,True
+1172384338,2025-06-08,UEFA Nations League,23761,Portugal,8443,Spain,2.0,2.0,True
+1162702511,2025-06-09,World Cup - Qualification Europe,3337,Croatia,656054,Czech Republic,5.0,1.0,True
 1151321237,2025-06-10,Friendlies,9294,England,11847,Senegal,1.0,3.0,True
+1162705064,2025-09-04,World Cup - Qualification Europe,939437,Bulgaria,8443,Spain,0.0,3.0,True
+1126119723,2025-09-05,World Cup - Qualification Europe,944543,Montenegro,656054,Czech Republic,0.0,2.0,True
+1162709319,2025-09-05,World Cup - Qualification Europe,935182,Faroe Islands,3337,Croatia,0.0,1.0,True
+1126121425,2025-09-06,World Cup - Qualification Europe,9294,England,945394,Andorra,2.0,0.0,True
+1162712723,2025-09-07,World Cup - Qualification Europe,662011,Turkey,8443,Spain,0.0,6.0,True
 1188712475,2025-09-08,Friendlies,656054,Czech Republic,20357,Saudi Arabia,1.0,1.0,True
+1162715276,2025-09-08,World Cup - Qualification Europe,3337,Croatia,944543,Montenegro,4.0,0.0,True
+1126137594,2025-09-09,World Cup - Qualification Europe,12698,Serbia,9294,England,0.0,5.0,True
 1151322939,2025-10-09,Friendlies,9294,England,653501,Wales,3.0,0.0,True
+1162719531,2025-10-09,World Cup - Qualification Europe,656054,Czech Republic,3337,Croatia,0.0,0.0,True
+1162722084,2025-10-11,World Cup - Qualification Europe,8443,Spain,940288,Georgia,2.0,0.0,True
+1126153763,2025-10-12,World Cup - Qualification Europe,935182,Faroe Islands,656054,Czech Republic,2.0,1.0,True
+1162726339,2025-10-12,World Cup - Qualification Europe,3337,Croatia,930927,Gibraltar,3.0,0.0,True
+1126164826,2025-10-14,World Cup - Qualification Europe,930076,Latvia,9294,England,0.0,5.0,True
+1162728892,2025-10-14,World Cup - Qualification Europe,8443,Spain,939437,Bulgaria,4.0,0.0,True
 1234688601,2025-11-13,Friendlies,656054,Czech Republic,949649,San Marino,1.0,0.0,True
+1126169081,2025-11-13,World Cup - Qualification Europe,9294,England,12698,Serbia,2.0,0.0,True
+1162735700,2025-11-14,World Cup - Qualification Europe,3337,Croatia,935182,Faroe Islands,3.0,1.0,True
+1162736551,2025-11-15,World Cup - Qualification Europe,940288,Georgia,8443,Spain,0.0,4.0,True
+1126180995,2025-11-16,World Cup - Qualification Europe,662862,Albania,9294,England,0.0,2.0,True
+1126185250,2025-11-17,World Cup - Qualification Europe,656054,Czech Republic,930927,Gibraltar,6.0,0.0,True
+1162742508,2025-11-17,World Cup - Qualification Europe,944543,Montenegro,3337,Croatia,2.0,3.0,True
+1162744210,2025-11-18,World Cup - Qualification Europe,8443,Spain,662011,Turkey,2.0,2.0,True
+1266223257,2026-03-26,World Cup - Qualification Europe,656054,Czech Republic,661160,Republic of Ireland,2.0,2.0,True
 1287356991,2026-03-26,Friendlies,7592,Colombia,3337,Croatia,1.0,2.0,True
 1289410454,2026-03-27,UEFA–CONMEBOL Finalissima,8443,Spain,22910,Argentina,,,False
 1278602754,2026-03-27,Friendlies,9294,England,6741,Uruguay,1.0,1.0,True
 1307911194,2026-03-27,Friendlies,8443,Spain,12698,Serbia,3.0,0.0,True
 1278605307,2026-03-31,Friendlies,9294,England,10996,Japan,0.0,1.0,True
+1308480513,2026-03-31,World Cup - Qualification Europe,656054,Czech Republic,18655,Denmark,1.0,1.0,True
 1286523862,2026-03-31,Friendlies,8443,Spain,28016,Egypt,0.0,0.0,True
 1278047051,2026-04-01,Friendlies,5890,Brazil,3337,Croatia,3.0,1.0,True
 1314825569,2026-05-31,Friendlies,656054,Czech Republic,946245,Kosovo National Team,2.0,1.0,True
