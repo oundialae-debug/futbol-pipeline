@@ -122,12 +122,22 @@ def forma(notas, equipo):
     return float(o.nota.mean() - h.sel_nota_bruta.fillna(h.nota).mean()), o
 
 
-def mercado():
+def mercado(partido):
+    """Mediana de casas sin margen: {"1","X","2","btts"} en tanto por uno."""
     try:
         c = pd.read_csv("data/nations_league_hoy.csv")
     except FileNotFoundError:
-        return None
-    return c
+        return {}
+    c = c[c.partido == partido]
+    out = {}
+    for m, claves in (("Full Time Result", {"Home": "1", "Draw": "X", "Away": "2"}),
+                      ("Both Teams To Score", {"Yes": "btts"})):
+        g = c[c.mercado == m]
+        tot = (1 / g.mediana).sum()
+        for lado, o in zip(g.lado, g.mediana):
+            if lado in claves:
+                out[claves[lado]] = 1 / o / tot
+    return out
 
 
 def main():
@@ -165,13 +175,25 @@ def main():
         lineas += [f"## {loc} - {vis}", "",
                    f"Goles esperados: {lam_f[0]:.2f} - {lam_f[1]:.2f} (sin ajuste de forma "
                    f"{lam[0]:.2f} - {lam[1]:.2f}). Forma del once: {loc} {fl:+.2f}, {vis} {fv:+.2f}.", "",
-                   "| | modelo | sin forma | cuota justa del modelo |", "|---|---|---|---|"]
+                   "| | modelo | sin forma | mercado (sin margen) | cuota justa del modelo |",
+                   "|---|---|---|---|---|"]
+        mk = mercado(f"{loc} - {vis}")
         for k, nombre in (("1", f"gana {loc}"), ("X", "empate"), ("2", f"gana {vis}"),
                           ("btts", "ambos marcan: sí")):
-            lineas.append(f"| {nombre} | {con[k]*100:.1f}% | {sin[k]*100:.1f}% | {1/con[k]:.2f} |")
+            m_ = f"{mk[k]*100:.1f}%" if k in mk else "-"
+            lineas.append(f"| {nombre} | {con[k]*100:.1f}% | {sin[k]*100:.1f}% | {m_} | {1/con[k]:.2f} |")
         lineas += ["", f"Once {ol.fuente_once.iloc[0]} {loc}: " + ", ".join(ol.jugador),
                    f"Once {ov.fuente_once.iloc[0]} {vis}: " + ", ".join(ov.jugador), ""]
         print()
+    lineas += ["## Cuánto fiarse", "",
+               "Prueba hacia delante (26/09): cada partido de las 4 selecciones desde oct-2025 (53) "
+               "pronosticado solo con los anteriores.", "",
+               "- 1X2: Brier 0.540 contra 0.627 de las frecuencias (+1.37s), acierta el 64%. Algo "
+               "sabe, pero la mayoría eran partidos fáciles contra selecciones pequeñas.",
+               "- Ambos marcan: Brier 0.514 contra 0.498 de la tasa base (-0.40s). **No bate a la "
+               "tasa base**: en ambos marcan este modelo no aporta.",
+               "- No hay cuotas históricas de selecciones para medirlo contra el mercado. El ajuste "
+               "de forma (B_FORMA) está puesto a mano, no calibrado.", ""]
     open("pronosticos_selecciones.md", "w").write("\n".join(lineas) + "\n")
 
 
