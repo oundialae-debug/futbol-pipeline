@@ -59,6 +59,11 @@ python3 modelos/selecciones/nota_jugadores_selecciones.py
 python3 modelos/selecciones/pronostico_selecciones.py
 ```
 
+**Pausa del 26/09:** la cuota de la API se agotó a las 20:00 UTC. Las
+pasadas programadas antes del 27/09 a las 11:55 UTC no hacen nada (paso
+"Esperar a que vuelva la cuota"). La primera pasada real es el 27/09 a las
+12:00 UTC, con forma de clubes incluida. Después sigue el horario normal.
+
 ## Receta manual para una jornada (antes del ciclo, o para partidos fuera de la Nations League)
 
 Todo con GitHub Actions (la clave de Highlightly solo vive en los secrets).

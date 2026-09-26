@@ -11,6 +11,7 @@ on:
     - cron: '20 7 * * *'     # mañana: todo + forma de clubes
     - cron: '35 13 * * *'    # antes de los partidos de la tarde
     - cron: '50 17 * * *'    # antes de los de la noche (onces si la API ya los tiene)
+    - cron: '0 12 27 9 *'    # arranque tras agotar la cuota el 26/09: 27/09 12:00 UTC
   workflow_dispatch:
     inputs:
       tope_llamadas:
@@ -32,20 +33,33 @@ jobs:
     permissions:
       contents: write
     steps:
+      # El 26/09 a las 20:00 UTC la cuota de la API estaba agotada: ninguna pasada
+      # programada antes del 27/09 12:00 UTC (16 h después) hace nada.
+      - name: Esperar a que vuelva la cuota
+        id: espera
+        run: |
+          if [ "${{ github.event_name }}" = "schedule" ] && [ "$(date -u +%s)" -lt "$(date -u -d '2026-09-27 11:55' +%s)" ]; then
+            echo "Antes del 27/09 12:00 UTC: la cuota de la API estaba agotada, no se hace nada."
+            echo "saltar=1" >> "$GITHUB_OUTPUT"
+          fi
       - uses: actions/checkout@v4
+        if: steps.espera.outputs.saltar != '1'
       - uses: actions/setup-python@v5
+        if: steps.espera.outputs.saltar != '1'
         with:
           python-version: '3.11'
           cache: 'pip'
       - run: pip install requests pandas numpy scipy scikit-learn
+        if: steps.espera.outputs.saltar != '1'
       - name: Forma de clubes (mañanas o a mano)
-        if: github.event.schedule == '20 7 * * *' || inputs.forma_clubes == '1'
+        if: steps.espera.outputs.saltar != '1' && (github.event.schedule == '20 7 * * *' || github.event.schedule == '0 12 27 9 *' || inputs.forma_clubes == '1')
         run: python modelos/selecciones/forma_clubes.py
         env:
           HIGHLIGHTLY_API_KEY: ${{ secrets.HIGHLIGHTLY_API_KEY }}
           TOPE_LLAMADAS: 200
           DIAS: 3
       - name: Datos de la Nations League
+        if: steps.espera.outputs.saltar != '1'
         run: |
           # los lunes por la mañana se vuelven a pedir los partidos de 2026 de cada
           # selección (amistosos y otras competiciones que no están en el calendario)
@@ -57,12 +71,13 @@ jobs:
           HIGHLIGHTLY_API_KEY: ${{ secrets.HIGHLIGHTLY_API_KEY }}
           TOPE_LLAMADAS: ${{ inputs.tope_llamadas || '400' }}
       - name: Notas, pronósticos y evaluación (sin API)
+        if: steps.espera.outputs.saltar != '1'
         run: |
           python modelos/selecciones/nota_jugadores_selecciones.py
           python modelos/selecciones/pronostico_selecciones.py
           python modelos/selecciones/evaluar_selecciones.py
       - name: Guardar
-        if: always()
+        if: always() && steps.espera.outputs.saltar != '1'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
