@@ -981,3 +981,16 @@ ya no estaba disponible cuando el cierre se conoció. El mismo fallo que el
 Cerrado con estos datos. Solo se podría reabrir con precios SIMULTÁNEOS
 (foto de la casa y de Pinnacle/Betfair a la misma hora, justo antes del
 pitido), que ni Highlightly ni football-data dan.
+
+## 2023/24: partidos y árbitro completos, alineaciones solo desde abril de 2024 (26/09/2026)
+
+Backfill del 26/09: 2023/24 completa en partidos (2.224, 6 ligas) y en
+árbitro/clima. **Alineaciones: la API solo las tiene desde abril de 2024.**
+De ago-2023 a mar-2024, cero en las 6 ligas (y la Segunda 2023/24 entera,
+cero). Se gastaron 1.500 llamadas para 274 alineaciones. El sondeo de
+temporadas (`sondeo_temporadas_antiguas.md`) dijo "22 titulares" en 2023/24
+mirando UN partido: otra vez, un solo partido no mide la cobertura de una
+temporada. `backfill_lineups.py` salta ahora lo anterior a
+`INICIO_COBERTURA = 2024-04-01`. Consecuencia: calidad de plantilla y
+rotación quedan vacías en casi toda 2023/24 (el entrenamiento con huecos
+lo tolera).

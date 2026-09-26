@@ -34,6 +34,10 @@ HEADERS = {"x-rapidapi-key": API_KEY}
 RUTA_HIST = "data/historico_partidos.csv"
 RUTA_SALIDA = "data/historico_lineups.csv"
 TOPE_LLAMADAS = int(os.environ.get("TOPE_LLAMADAS", "3000"))
+# La API NO tiene alineaciones antes de abril de 2024 (26/09/2026: de 2.224
+# partidos de 2023/24, cero entre ago-2023 y mar-2024 en las 6 ligas, y 1.226
+# llamadas gastadas en vano). Pedirlas es tirar cuota: se saltan.
+INICIO_COBERTURA = "2024-04-01"
 COLUMNAS = ["match_id", "local_formacion", "local_ids", "visitante_formacion", "visitante_ids"]
 
 llamadas = [0]
@@ -105,13 +109,16 @@ def main():
     if nuevo_fichero:
         w.writeheader()
 
-    guardados = sin_datos = 0
+    guardados = sin_datos = antes_de_cobertura = 0
     try:
         for _, fila in hist.iterrows():
             if llamadas[0] >= TOPE_LLAMADAS:
                 break
             mid = str(fila["match_id"])
             if mid in vistos:
+                continue
+            if str(fila["fecha"])[:10] < INICIO_COBERTURA:
+                antes_de_cobertura += 1
                 continue
             j = pedir(f"/lineups/{fila['match_id']}")
             if CUOTA_AGOTADA[0]:
@@ -146,7 +153,8 @@ def main():
         f.close()
 
     print(f"\n{guardados} partidos nuevos con lineups. "
-          f"{sin_datos} sin datos utilizables.")
+          f"{sin_datos} sin datos utilizables. {antes_de_cobertura} saltados por ser "
+          f"anteriores a {INICIO_COBERTURA} (la API no tiene alineaciones de entonces).")
     print(f"Llamadas: {llamadas[0]} de {TOPE_LLAMADAS}.")
     if llamadas[0] >= TOPE_LLAMADAS:
         print("[!] Tope alcanzado: vuelve a lanzarlo, continúa donde lo dejó.")
