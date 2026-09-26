@@ -1,0 +1,39 @@
+name: Nations League hoy (partidos y cuotas)
+
+on:
+  workflow_dispatch:
+    inputs:
+      fecha:
+        description: 'Fecha YYYY-MM-DD (vacío = hoy en España)'
+        required: false
+        default: ''
+
+jobs:
+  cuotas:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+      - run: pip install requests pandas
+      - name: Partidos y cuotas
+        run: python scripts/nations_league_hoy.py
+        env:
+          HIGHLIGHTLY_API_KEY: ${{ secrets.HIGHLIGHTLY_API_KEY }}
+          FECHA: ${{ inputs.fecha }}
+      - name: Guardar
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add nations_league_hoy.md data/nations_league_hoy.csv || true
+          if git diff --staged --quiet; then
+            echo "Sin cambios que guardar"
+            exit 0
+          fi
+          git commit -m "Nations League hoy: $(date -u +%Y-%m-%dT%H:%M)"
+          for i in 1 2 3; do git pull --rebase origin main && git push && break; sleep 5; done
