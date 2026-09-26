@@ -31,7 +31,10 @@ BASE_URL = "https://soccer.highlightly.net"
 LIGA_NL = 5039
 HOY = datetime.now(ZoneInfo("Europe/Madrid")).date().isoformat()
 CRUCES = [("England", "Spain"), ("Czech Republic", "Croatia")]
-TEMPORADAS = (2025, 2026)
+# OJO: la API mete la clasificación del Mundial 2026 (liga 28016) en la
+# temporada 2024, no en 2025/2026 (visto en el h2h, 26/09/2026). Por eso se
+# pide también 2024 y se filtra por fecha >= DESDE.
+TEMPORADAS = tuple(int(t) for t in os.environ.get("TEMPORADAS", "2024,2025,2026").split(","))
 DESDE = "2025-01-01"
 TOPE = int(os.environ.get("TOPE_LLAMADAS", "700"))
 CARPETA = "data/selecciones"
@@ -88,6 +91,10 @@ def marcador(p):
         return None, None
 
 
+def ya_en_raw(nombre):
+    return os.path.exists(f"{RAW}/{nombre}.json")
+
+
 def main():
     os.makedirs(RAW, exist_ok=True)
     hoy = lista(pedir("/matches", {"leagueId": LIGA_NL, "date": HOY, "timezone": "Europe/Madrid"},
@@ -105,15 +112,20 @@ def main():
     partidos = {}
     for nombre, tid in equipos.items():
         clave = nombre.replace(" ", "_").lower()
-        pedir(f"/teams/{tid}", nombre=f"equipo_{clave}")
-        pedir(f"/teams/statistics/{tid}", {"fromDate": "2026-01-01"}, f"estadisticas_2026_{clave}")
-        pedir("/last-five-games", {"teamId": tid}, f"ultimos5_{clave}")
+        if not ya_en_raw(f"equipo_{clave}"):
+            pedir(f"/teams/{tid}", nombre=f"equipo_{clave}")
+            pedir(f"/teams/statistics/{tid}", {"fromDate": "2026-01-01"}, f"estadisticas_2026_{clave}")
+            pedir("/last-five-games", {"teamId": tid}, f"ultimos5_{clave}")
         for temp in TEMPORADAS:
             for lado in ("homeTeamId", "awayTeamId"):
                 offset = 0
                 while True:
-                    j = pedir("/matches", {lado: tid, "season": temp, "limit": 100, "offset": offset},
-                              f"partidos_{clave}_{temp}_{lado}_{offset}")
+                    nombre_raw = f"partidos_{clave}_{temp}_{lado}_{offset}"
+                    if ya_en_raw(nombre_raw):
+                        j = json.load(open(f"{RAW}/{nombre_raw}.json", encoding="utf-8"))
+                    else:
+                        j = pedir("/matches", {lado: tid, "season": temp, "limit": 100, "offset": offset},
+                                  nombre_raw)
                     lote = lista(j) if j else []
                     for p in lote:
                         if isinstance(p, dict) and p.get("id") and str(p.get("date", ""))[:10] >= DESDE:
@@ -122,6 +134,8 @@ def main():
                         break
                     offset += 100
     for loc, vis, _ in cruces_ids:
+        if ya_en_raw(f"h2h_{loc}_{vis}".replace(" ", "_").lower()):
+            continue
         pedir("/head-2-head", {"teamIdOne": equipos[loc], "teamIdTwo": equipos[vis]},
               f"h2h_{loc}_{vis}".replace(" ", "_").lower())
 
@@ -135,12 +149,16 @@ def main():
                         "goles_l": gl, "goles_v": gv, "terminado": terminado(p)})
         if not terminado(p):
             continue
-        for eq in lista(pedir(f"/statistics/{mid}", nombre=f"statistics_{mid}")):
+        def leer_o_pedir(ruta, nombre):
+            if ya_en_raw(nombre):
+                return json.load(open(f"{RAW}/{nombre}.json", encoding="utf-8"))
+            return pedir(ruta, nombre=nombre)
+        for eq in lista(leer_o_pedir(f"/statistics/{mid}", f"statistics_{mid}")):
             if isinstance(eq, dict):
                 for s in eq.get("statistics") or []:
                     filas_est.append({"match_id": mid, "equipo_id": (eq.get("team") or {}).get("id"),
                                       "estadistica": s.get("displayName"), "valor": s.get("value")})
-        lu = pedir(f"/lineups/{mid}", nombre=f"lineups_{mid}")
+        lu = leer_o_pedir(f"/lineups/{mid}", f"lineups_{mid}")
         lu = lu[0] if isinstance(lu, list) and lu else lu
         if isinstance(lu, dict):
             for lado in ("homeTeam", "awayTeam"):
@@ -151,7 +169,7 @@ def main():
                             filas_lu.append({"match_id": mid, "equipo_id": t.get("id"), "formacion": t.get("formation"),
                                              "jugador_id": j.get("id"), "jugador": j.get("name"),
                                              "posicion": j.get("position")})
-        for eq in lista(pedir(f"/box-score/{mid}", nombre=f"boxscore_{mid}")):
+        for eq in lista(leer_o_pedir(f"/box-score/{mid}", f"boxscore_{mid}")):
             if not isinstance(eq, dict):
                 continue
             tid = (eq.get("team") or {}).get("id")
