@@ -1063,3 +1063,37 @@ Comprobaciones hechas:
 
 Siguiente paso: apuestas en papel (sin dinero) sobre partidos futuros, con
 la regla fijada de antemano, antes de cambiar nada del modelo.
+
+## Ambos marcan mes a mes: reentrenar ayuda, adaptarse poco, y la apuesta se desinfla (26/09/2026)
+
+Petición del usuario: entrenar con un mes, probar el siguiente, ajustarse y
+seguir hasta hoy. `scripts/walk_forward_ambos.py`: 21 meses de prueba
+(sep-2024 a sep-2026, 4.590 partidos), todo con lo anterior a cada mes.
+Tres brazos: estático (congelado en ago-2024), reentreno mensual (mismo
+conjunto: producción + precio previo) y adaptativo (cada mes elige entre 6
+conjuntos con los 2 meses previos, reentrena y recalibra con sus propios
+errores pasados).
+
+Brier emparejado, todos los meses:
+- reentreno vs estático: **+2.79s** -- reentrenar cada mes ayuda de verdad.
+- adaptativo vs reentreno: +1.07s -- elegir variables y recalibrar, poco
+  más (dentro del ruido); sobre todo evita meses muy malos.
+- Mejora sobre la tasa base: pequeña siempre (entre -1% y +3% al mes).
+- El conjunto que más veces gana la selección es **"solo precio"** (10 de 21
+  meses): casi siempre el precio previo solo es tan bueno como con
+  nuestras variables encima.
+
+Apuestas (ago-sep 2026, regla VE>0, un lado por partido):
+
+| brazo | mediana de casas | bet365 |
+|---|---|---|
+| estático | +0.1% (169) | +4.0% (166) |
+| reentreno | +6.2% (115), +0.69s; sin 5 mejores -1.9% | +9.9% (116), +1.12s; sin 5 mejores +2.0% |
+| adaptativo | **-12.0%** (147) | -10.4% (142) |
+
+El +13.5% de `apuesta_ambos_marcan.py` (un solo corte, 24/04) baja a +6.2%
+con reentreno mensual y deja de aguantar sin los 5 mejores partidos; el
+adaptativo pierde (la recalibración cambia qué lado apuesta). Regla de este
+documento: al hacer la prueba más limpia, el número va hacia cero. La
+pista de apuesta se debilita mucho. Lo que queda firme: **reentrenar cada
+mes** es mejor que un modelo congelado.
