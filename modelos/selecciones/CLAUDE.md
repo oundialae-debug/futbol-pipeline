@@ -6,8 +6,8 @@ siguientes jornadas de la Nations League (octubre-noviembre 2026).
 
 ## Automático: el ciclo de la Nations League (desde el 26/09/2026)
 
-`nations_league_ciclo.yml` corre solo 3 veces al día (07:20, 13:35 y 17:50
-UTC). También se puede lanzar a mano, con los inputs `tope_llamadas` y
+`nations_league_ciclo.yml` corre 4 veces al día (07:20, 13:35, 15:10 y
+17:50 UTC; la de las 15:10 es para los partidos de las 16:00 UTC). También se puede lanzar a mano, con los inputs `tope_llamadas` y
 `forma_clubes`. En cada pasada:
 
 1. **Forma de clubes** (solo la pasada de las 07:20): `forma_clubes.py`.
@@ -25,12 +25,18 @@ UTC). También se puede lanzar a mano, con los inputs `tope_llamadas` y
      vuelve a pedir la temporada en curso para recoger amistosos.
    - Las selecciones ya descargadas quedan en `selecciones_seguidas.json`,
      y solo se piden detalles de SUS partidos.
-   - Detalles de cada partido terminado.
+   - Detalles de cada partido terminado. **Por orden de pitido** (desde el
+     26/09): historial Y detalles de una selección antes de pasar a la
+     siguiente. Antes se bajaba el historial de todas y luego los detalles,
+     y con el tope las del día siguiente se quedaban sin estadísticas.
    - Previa de los partidos de las próximas 36 h: cuotas, árbitro y once
      si la API lo tiene. Escribe `equipos.json`, `cuotas_hoy.csv` y
      `alineaciones_hoy.csv`.
 3. **Notas** de los jugadores de esos partidos.
-4. **Pronósticos:** `pronostico_selecciones.py` escribe
+4. **Pronósticos:** una selección con menos de 8 partidos en el modelo
+   (`MIN_PARTIDOS`) se queda sin pronóstico y lo dice: con datos a medias
+   el ajuste la deja en la media y saldría un número con buena pinta y sin
+   base. `pronostico_selecciones.py` escribe
    `modelos/selecciones/pronosticos.md` y añade una fila por partido a
    `data/selecciones/registro_pronosticos.csv`.
 5. **Aprendizaje:** `evaluar_selecciones.py`.
@@ -58,6 +64,23 @@ manual. Después relanzar solo los scripts locales:
 python3 modelos/selecciones/nota_jugadores_selecciones.py
 python3 modelos/selecciones/pronostico_selecciones.py
 ```
+
+**Arranque del 27/09 a las 12:00:** tope de 3.000 llamadas en esa pasada
+(no 400). Faltan ~50 selecciones (~60 llamadas cada una) y hay 10 partidos
+ese mismo día. Calendario de la ventana, sacado de Wikipedia el 26/09 (hora
+UTC = CET de Wikipedia menos 2 h, horario de verano):
+
+| día | Liga A | Liga B |
+|---|---|---|
+| dom 27/09 | Serbia-Países Bajos 16:00, Dinamarca-Gales 16:00, Alemania-Grecia 18:45, Noruega-Portugal 18:45 | Austria-Kosovo 16:00, Israel-Irlanda 18:45 |
+| lun 28/09 | Bélgica-Francia 18:45, Turquía-Italia 18:45 | Georgia-Ucrania 16:00, Irlanda del Norte-Hungría, Rumanía-Bosnia, Suecia-Polonia 18:45 |
+| mar 29/09 | Chequia-Inglaterra 18:45, España-Croacia 18:45 | Escocia-Suiza, Eslovenia-Macedonia del Norte 18:45 |
+| jue 01/10 | Alemania-Serbia, Grecia-Países Bajos, Dinamarca-Portugal, Gales-Noruega 18:45 | Israel-Kosovo, Irlanda-Austria 18:45 |
+| vie 02/10 | Bélgica-Turquía, Francia-Italia 18:45 | Hungría-Georgia, Ucrania-Irlanda del Norte, Bosnia-Suecia, Polonia-Rumanía 18:45 |
+| sáb 03/10 | Croacia-Inglaterra 16:00, España-Chequia 18:45 | Macedonia del Norte-Escocia, Suiza-Eslovenia 18:45 |
+
+Ligas C y D también juegan (la API las mete en la misma liga 5039). Kosovo
+no tiene jugadores en la API: sus partidos saldrán "sin pronóstico".
 
 **Pausa del 26/09:** la cuota de la API se agotó a las 20:00 UTC. Las
 pasadas programadas antes del 27/09 a las 11:55 UTC no hacen nada (paso

@@ -275,7 +275,7 @@ def main():
     cal = calendario()
     equipos = {}
     hoy = datetime.now(timezone.utc).date().isoformat()
-    for _, p in cal[cal.fecha.astype(str).str[:10] >= hoy].iterrows():
+    for _, p in cal[cal.fecha.astype(str).str[:10] >= hoy].sort_values("fecha").iterrows():
         equipos[p.local], equipos[p.visitante] = int(p.local_id), int(p.visitante_id)
     print(f"Nations League (liga {LIGA}), de {DIAS_ATRAS} días atrás a {VENTANA_DIAS} por delante: "
           f"{len(cal)} partidos ({int(cal.terminado.sum()) if len(cal) else 0} terminados). "
@@ -297,9 +297,21 @@ def main():
     for mid, p in sorted(todos_los_partidos().items(), key=lambda kv: str(kv[1].get("date")), reverse=True):
         if terminado(p) and de_seguidas(p):
             detalles(mid)
-    pendientes = [n for n in equipos if not os.path.exists(f"{RAW}/partidos_{clave(n)}_2026_awayTeamId_0.json")]
-    for nombre in sorted(equipos, key=lambda n: n not in pendientes):
+    # por orden de pitido: historial Y detalles de cada selección antes de pasar a
+    # la siguiente. Antes se bajaba el historial de todas y después los detalles:
+    # con ~50 selecciones y el tope por pasada, las que juegan mañana se habrían
+    # pronosticado sin estadísticas (y sin avisar: el modelo da números igual).
+    for nombre in equipos:
         historial(nombre, equipos[nombre])
+        tid = equipos[nombre]
+        propios = {}
+        for ruta in glob.glob(f"{RAW}/partidos_{clave(nombre)}_*.json"):
+            for p in lista(json.load(open(ruta, encoding="utf-8"))):
+                if isinstance(p, dict) and p.get("id") and str(p.get("date", ""))[:10] >= DESDE:
+                    propios[p["id"]] = p
+        for mid, p in sorted(propios.items(), key=lambda kv: str(kv[1].get("date")), reverse=True):
+            if terminado(p):
+                detalles(mid)
     # los partidos de los historiales recién bajados también necesitan detalles
     ps = todos_los_partidos()
     for mid, p in sorted(ps.items(), key=lambda kv: str(kv[1].get("date")), reverse=True):

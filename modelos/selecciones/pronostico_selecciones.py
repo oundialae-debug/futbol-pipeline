@@ -42,6 +42,11 @@ PESOS_INICIALES = {"1": 0.5, "X": 0.5, "2": 0.5, "btts": 0.5}   # el resto 0: el
 RUTA_PESOS = f"{S.CARPETA}/pesos_mezcla.json"
 RUTA_REGISTRO = f"{S.CARPETA}/registro_pronosticos.csv"
 SALIDA = "modelos/selecciones/pronosticos.md"
+# Mínimo de partidos (con datos de jugadores) de cada selección en el ajuste. Con
+# el ciclo a medias (historial bajado, detalles no) una selección puede entrar con
+# 1-3 partidos: el ridge la deja en la media y el pronóstico sale con buena pinta
+# y sin base. Las 4 primeras tenían 14-22 partidos el 26/09.
+MIN_PARTIDOS = 8
 
 # clave -> (mercado de la API, lado "sí")
 MERCADOS = {"1": ("Full Time Result", "Home"), "X": ("Full Time Result", "Draw"),
@@ -127,6 +132,7 @@ def main():
     f_gol = [S.ajustar(p[p[f"{o}_l"].notna()], q, o) for o in ("goles", "xg")]
     f_cor = S.ajustar(p[p.corners_l.notna()], q, "corners")
     f_tar = S.ajustar(p[p.amarillas_l.notna()], q, "amarillas")
+    n_part = pd.concat([p.local_id, p.visitante_id]).value_counts()
     registro = []
     for cruce in cruces:
         loc, vis, mid = cruce[:3]
@@ -136,6 +142,12 @@ def main():
         if tl not in q.index or tv not in q.index:
             L += [f"## {partido}", "", "Sin datos de jugadores de alguna de las dos selecciones: sin pronóstico.", ""]
             print(f"{partido}: sin datos, se salta")
+            continue
+        n_l, n_v = int(n_part.get(tl, 0)), int(n_part.get(tv, 0))
+        if min(n_l, n_v) < MIN_PARTIDOS:
+            L += [f"## {partido}", "", f"Pocos partidos en el modelo ({loc} {n_l}, {vis} {n_v}; mínimo "
+                  f"{MIN_PARTIDOS}): sin pronóstico. Faltan datos por bajar; el ciclo sigue en la próxima pasada.", ""]
+            print(f"{partido}: pocos partidos ({n_l}, {n_v}), se salta")
             continue
         lam = (np.mean([f(tl, tv, 1.0) for f in f_gol]), np.mean([f(tv, tl, 0.0) for f in f_gol]))
         fl, ol = forma(notas, loc)
@@ -199,7 +211,8 @@ def main():
               f"Goles esperados {lam[0]:.2f} - {lam[1]:.2f}, marcador más probable "
               f"{gm['marcador'][0]}-{gm['marcador'][1]}. Córners esperados {cor:.1f}. Amarillas esperadas "
               f"{tar:.1f} (árbitro {arb or '?'}, {n_arb} partidos en nuestras ligas, x{r_arb:.2f}). "
-              f"Forma del once: {loc} {fl:+.2f}, {vis} {fv:+.2f}.", "",
+              f"Forma del once: {loc} {fl:+.2f}, {vis} {fv:+.2f}. Partidos en el modelo: {loc} {n_l}, "
+              f"{vis} {n_v}.", "",
               "| mercado | pronóstico | final | modelo | mercado | cuota mínima | cuota mediana | mejor cuota | casas |",
               "|---|---|---|---|---|---|---|---|---|"]
         for cat, txt, pf, pm, pk, m in filas:

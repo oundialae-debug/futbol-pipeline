@@ -10,6 +10,7 @@ on:
   schedule:
     - cron: '20 7 * * *'     # mañana: todo + forma de clubes
     - cron: '35 13 * * *'    # antes de los partidos de la tarde
+    - cron: '10 15 * * *'    # antes de los de las 16:00 UTC (onces si la API ya los tiene)
     - cron: '50 17 * * *'    # antes de los de la noche (onces si la API ya los tiene)
     - cron: '0 12 27 9 *'    # arranque tras agotar la cuota el 26/09: 27/09 12:00 UTC
   workflow_dispatch:
@@ -69,7 +70,11 @@ jobs:
           python modelos/selecciones/nations_league.py
         env:
           HIGHLIGHTLY_API_KEY: ${{ secrets.HIGHLIGHTLY_API_KEY }}
-          TOPE_LLAMADAS: ${{ inputs.tope_llamadas || '400' }}
+          # arranque del 27/09: ~50 selecciones sin historial (~60 llamadas cada una)
+          # y 10 partidos ese mismo día desde las 16:00 UTC; con 400 solo entraban
+          # 5-6. 3.000 + 200 de forma de clubes caben en la cuota (7.500/día) con
+          # el resto de crons en pausa.
+          TOPE_LLAMADAS: ${{ inputs.tope_llamadas || (github.event.schedule == '0 12 27 9 *' && '3000') || '400' }}
       - name: Notas, pronósticos y evaluación (sin API)
         if: steps.espera.outputs.saltar != '1'
         run: |
