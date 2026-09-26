@@ -1,0 +1,54 @@
+match_id,fecha,competicion,local_id,local,visitante_id,visitante,goles_l,goles_v,terminado
+1151321237,2025-06-10,Friendlies,9294,England,11847,Senegal,1.0,3.0,True
+1188712475,2025-09-08,Friendlies,656054,Czech Republic,20357,Saudi Arabia,1.0,1.0,True
+1151322939,2025-10-09,Friendlies,9294,England,653501,Wales,3.0,0.0,True
+1234688601,2025-11-13,Friendlies,656054,Czech Republic,949649,San Marino,1.0,0.0,True
+1287356991,2026-03-26,Friendlies,7592,Colombia,3337,Croatia,1.0,2.0,True
+1289410454,2026-03-27,UEFA–CONMEBOL Finalissima,8443,Spain,22910,Argentina,,,False
+1278602754,2026-03-27,Friendlies,9294,England,6741,Uruguay,1.0,1.0,True
+1307911194,2026-03-27,Friendlies,8443,Spain,12698,Serbia,3.0,0.0,True
+1278605307,2026-03-31,Friendlies,9294,England,10996,Japan,0.0,1.0,True
+1286523862,2026-03-31,Friendlies,8443,Spain,28016,Egypt,0.0,0.0,True
+1278047051,2026-04-01,Friendlies,5890,Brazil,3337,Croatia,3.0,1.0,True
+1314825569,2026-05-31,Friendlies,656054,Czech Republic,946245,Kosovo National Team,2.0,1.0,True
+1287364650,2026-06-02,Friendlies,3337,Croatia,1635,Belgium,0.0,2.0,True
+1314250293,2026-06-04,Friendlies,8443,Spain,1334301,Iraq,1.0,1.0,True
+1313002727,2026-06-05,Friendlies,4392795,Guatemala,656054,Czech Republic,3.0,1.0,True
+1298194476,2026-06-06,Friendlies,9294,England,3977507,New Zealand,1.0,0.0,True
+1287366352,2026-06-07,Friendlies,3337,Croatia,929225,Slovenia,2.0,1.0,True
+1310843740,2026-06-09,Friendlies,26314,Peru,8443,Spain,1.0,3.0,True
+1298196178,2026-06-10,Friendlies,9294,England,25463,Costa Rica,3.0,0.0,True
+1309688933,2026-06-12,World Cup,15251,South Korea,656054,Czech Republic,2.0,1.0,True
+1267463164,2026-06-15,World Cup,8443,Spain,1305367,Cape Verde,0.0,0.0,True
+1267466568,2026-06-17,World Cup,9294,England,3337,Croatia,4.0,2.0,True
+1309693188,2026-06-18,World Cup,656054,Czech Republic,1303665,South Africa,1.0,1.0,True
+1267477631,2026-06-21,World Cup,8443,Spain,20357,Saudi Arabia,4.0,0.0,True
+1267481886,2026-06-23,World Cup,9294,England,1280688,Ghana,0.0,0.0,True
+1267482737,2026-06-23,World Cup,10145,Panama,3337,Croatia,0.0,1.0,True
+1309698294,2026-06-25,World Cup,656054,Czech Republic,14400,Mexico,0.0,3.0,True
+1267494651,2026-06-27,World Cup,6741,Uruguay,8443,Spain,0.0,1.0,True
+1267498906,2026-06-27,World Cup,10145,Panama,9294,England,0.0,2.0,True
+1267497204,2026-06-27,World Cup,3337,Croatia,1280688,Ghana,2.0,1.0,True
+1333779041,2026-07-01,World Cup,9294,England,1284092,Congo DR,2.0,1.0,True
+1333782445,2026-07-02,World Cup,8443,Spain,660309,Austria,3.0,0.0,True
+1333780743,2026-07-02,World Cup,23761,Portugal,3337,Croatia,2.0,1.0,True
+1336678398,2026-07-06,World Cup,14400,Mexico,9294,England,2.0,3.0,True
+1341820140,2026-07-06,World Cup,23761,Portugal,8443,Spain,0.0,1.0,True
+1346130455,2026-07-10,World Cup,8443,Spain,1635,Belgium,2.0,1.0,True
+1345463271,2026-07-11,World Cup,928374,Norway,9294,England,1.0,2.0,True
+1348947265,2026-07-14,World Cup,2486,France,8443,Spain,0.0,2.0,True
+1349752311,2026-07-15,World Cup,9294,England,22910,Argentina,1.0,2.0,True
+1354677899,2026-07-18,World Cup,2486,France,9294,England,4.0,6.0,True
+1354678750,2026-07-19,World Cup,8443,Spain,22910,Argentina,1.0,0.0,True
+1301087025,2026-09-26,UEFA Nations League,9294,England,8443,Spain,,,False
+1301087876,2026-09-26,UEFA Nations League,656054,Czech Republic,3337,Croatia,,,False
+1301103194,2026-09-29,UEFA Nations League,656054,Czech Republic,9294,England,,,False
+1301102343,2026-09-29,UEFA Nations League,8443,Spain,3337,Croatia,,,False
+1301122767,2026-10-03,UEFA Nations League,3337,Croatia,9294,England,,,False
+1301125320,2026-10-03,UEFA Nations League,8443,Spain,656054,Czech Republic,,,False
+1301139787,2026-10-06,UEFA Nations League,9294,England,656054,Czech Republic,,,False
+1301138936,2026-10-06,UEFA Nations League,3337,Croatia,8443,Spain,,,False
+1301147446,2026-11-12,UEFA Nations League,9294,England,3337,Croatia,,,False
+1301146595,2026-11-12,UEFA Nations League,656054,Czech Republic,8443,Spain,,,False
+1301166168,2026-11-15,UEFA Nations League,8443,Spain,9294,England,,,False
+1301167019,2026-11-15,UEFA Nations League,3337,Croatia,656054,Czech Republic,,,False
