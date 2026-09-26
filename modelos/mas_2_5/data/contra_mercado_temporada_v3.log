@@ -1,0 +1,14 @@
+1. 251 partidos con las dos fuentes: correlación 0.964, diferencia media 2.2 puntos
+
+3. Modelo contra el mercado (positivo = el modelo es mejor)
+  2025/26  n=2211  vs media casas -0.81s | vs Pinnacle cierre -1.58s (n=1087) | acierto modelo 57.3% casas 57.6%
+  2026/27  n= 316  vs media casas -1.68s | acierto modelo 60.4% casas 65.5%
+  todo     n=2527  vs media casas -1.31s | vs Pinnacle cierre -1.58s (n=1087) | acierto modelo 57.7% casas 58.6%
+
+4. Apostando 1 unidad al lado con valor (valor = prob. modelo x cuota - 1)
+  cuota media   umbral   0%:  1561 apuestas  rentabilidad  +0.65%  (±2.63, +0.25s)
+  cuota media   umbral   5%:  1051 apuestas  rentabilidad  -0.52%  (±3.30, -0.16s)
+  cuota media   umbral  10%:   649 apuestas  rentabilidad  -3.89%  (±4.30, -0.91s)
+  cuota máxima  umbral   0%:  1996 apuestas  rentabilidad  +2.50%  (±2.38, +1.05s)
+  cuota máxima  umbral   5%:  1373 apuestas  rentabilidad  +2.19%  (±2.96, +0.74s)
+  cuota máxima  umbral  10%:   916 apuestas  rentabilidad  +2.52%  (±3.73, +0.67s)

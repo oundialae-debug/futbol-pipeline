@@ -532,3 +532,27 @@ de equipo cuando juega" no: mezcla al jugador con sus compañeros, y lo que
 dice del equipo ya lo dicen las medias de tiros y puntos. Las lesiones: la
 lista de 1x2 solo cubre ~20 jugadores por equipo y el mercado ya descuenta
 las bajas.
+
+## Con los datos de ambos_marcan: 2023/24 completa (26/09/2026)
+
+Copiado de main:modelos/ambos_marcan/data/ (6.986 partidos, 2023/24 con 2.224
+pero solo 14% con alineaciones). Cruce football-data 6.953 (99.5%). Humo OK.
+Mismos 2.527 partidos de evaluación, mes a mes (logs *_v3.log):
+
+| modelo | vs media casas | vs Pinnacle cierre | apostando (cuota media) |
+|---|---|---|---|
+| XGBoost 28 | -1.11s / -1.31s (dos corridas) | -1.53s | +0.2% / +0.7% (~0) |
+| A: 28 + cuota | -0.85s | -1.25s | -3.0% a -4.3% |
+| B: parte de la cuota | **-0.63s** | -1.50s | -1.5% a -2.4% |
+| mezcla Poisson-xG + XGB | -0.98s | **-0.85s** | -2.3% |
+| media de casas | -- | -0.95s | |
+
+- 2023/24 casi sin alineaciones apenas mueve el XGBoost (-1.09s -> -1.11s).
+- **La mezcla Poisson-xG + XGB juzgada contra Pinnacle (-0.85s) ya empata con
+  la media de casas contra Pinnacle (-0.95s)**: predice tan bien como la casa
+  media. No mejor que ella directamente (-0.98s).
+- B es el más cercano a la media de casas (-0.63s).
+- g/a: +2.61s (con frente a sin), más que antes (+1.51s): cuanto más g/a hay
+  en el entrenamiento, más aporta. Cuando 2023/24 tenga alineaciones, repetir.
+- Apostando con cuota media: XGBoost 28 en cero (+0.2%/+0.7%, ±2.6). Ningún
+  modelo gana dinero de forma medible.

@@ -1,0 +1,15 @@
+xG disponible en 38% de los partidos (resto: goles)
+ρ estimado por mes: goles -0.03..-0.01, xG -0.03..-0.01
+
+2527 partidos mes a mes. Positivo = el modelo es mejor.
+modelo                      vs XGB 28  vs media casas  vs Pinnacle  acierto   apuesta cuota media
+p_28                           +0.00s          -1.11s       -1.53s    57.9%    +0.22% (1572 ap.)
+p_goles                        -1.22s          -3.42s       -1.71s    56.7%   -10.97% (1254 ap.)
+p_goles_dc                     -1.22s          -3.42s       -1.71s    56.7%   -10.97% (1254 ap.)
+p_xg                           -0.98s          -3.13s       -1.24s    56.5%    -9.73% (1266 ap.)
+p_xg_dc                        -0.98s          -3.13s       -1.24s    56.5%    -9.73% (1266 ap.)
+p_goles_mezcla                 +0.68s          -1.11s       -1.07s    57.9%    -4.16% (1256 ap.)
+p_goles_dc_mezcla              +0.68s          -1.11s       -1.07s    57.9%    -4.16% (1256 ap.)
+p_xg_mezcla                    +0.88s          -0.98s       -0.85s    58.3%    -2.25% (1267 ap.)
+p_xg_dc_mezcla                 +0.88s          -0.98s       -0.85s    58.3%    -2.25% (1267 ap.)
+media de casas                                              -0.95s    58.6%
