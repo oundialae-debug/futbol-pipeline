@@ -665,3 +665,14 @@ salvo con bastante más muestra.
 Nota de procesos: esperar con `until ! pgrep -f script.py` no termina nunca,
 porque el propio bucle lleva "script.py" en su línea de comando y pgrep lo
 encuentra. Esperar por PID (`kill -0 PID`), no por nombre.
+
+## Configuración oficial de ambos marcan (26/09/2026)
+
+Tras la prueba mes a mes (`scripts/walk_forward_ambos.py`, repo padre), la
+que mejor funcionó es el brazo "reentreno" y queda fijada en
+`scripts/modelo_ambos_marcan.py` (repo padre):
+- producción (99) + 7 rasgos del precio PREVIO de Pinnacle/Betfair = 106
+- reentrenado cada mes con todo lo anterior, entrenamiento con huecos
+- sin selección automática de variables ni recalibración (el adaptativo
+  perdió dinero: -12% contra +6.2% del reentreno)
+Todo lo nuevo (xG/xA por jugador incluido) se compara contra esto.
