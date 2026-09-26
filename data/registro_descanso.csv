@@ -768,12 +768,12 @@ match_id,partido,liga,minuto,estado,tarjetas_ht,linea,prob_modelo,prob_push,prob
 1336018873,AD Ceuta FC vs Real Sociedad B,Segunda División,45,Half time,2,6.5,0.212,0.0,0.2423,2,4.8,Marathonbet,0.0178,False,2026-09-26T13:08:13+00:00,,13.0,5.0,5.25,0.2343,2026-09-26T13:38:00+00:00,Segunda División
 1336018873,AD Ceuta FC vs Real Sociedad B,Segunda División,45,Half time,2,7.5,0.1118,0.0,0.131,1,6.9,Marathonbet,-0.2284,False,2026-09-26T13:08:13+00:00,,13.0,5.0,6.9,0.131,2026-09-26T13:38:00+00:00,Segunda División
 1336018873,AD Ceuta FC vs Real Sociedad B,Segunda División,45,Half time,2,8.5,0.0545,0.0,0.1294,1,7.0,Marathonbet,-0.6188,False,2026-09-26T13:08:13+00:00,,13.0,5.0,7.0,0.1294,2026-09-26T13:38:00+00:00,Segunda División
-1342447327,Volga Ulyanovsk vs Leningradets,First League,45,Half time,1,1.5,0.9038,0.0,0.8371,1,1.09,Marathonbet,-0.0148,False,2026-09-26T13:51:10+00:00,,,3.0,,,,(otras)
-1342447327,Volga Ulyanovsk vs Leningradets,First League,45,Half time,1,2.5,0.7006,0.0,0.7474,1,1.23,Marathonbet,-0.1382,False,2026-09-26T13:51:10+00:00,,,3.0,,,,(otras)
-1342447327,Volga Ulyanovsk vs Leningradets,First League,45,Half time,1,3.5,0.4668,0.0,0.5257,1,1.75,Marathonbet,-0.1831,False,2026-09-26T13:51:10+00:00,,,3.0,,,,(otras)
-1342447327,Volga Ulyanovsk vs Leningradets,First League,45,Half time,1,4.5,0.2726,0.0,0.3191,1,2.88,Marathonbet,-0.2148,False,2026-09-26T13:51:10+00:00,,,3.0,,,,(otras)
-1342447327,Volga Ulyanovsk vs Leningradets,First League,45,Half time,1,5.5,0.1426,0.0,0.1745,1,5.25,Marathonbet,-0.2513,False,2026-09-26T13:51:10+00:00,,,3.0,,,,(otras)
-1342447327,Volga Ulyanovsk vs Leningradets,First League,45,Half time,1,6.5,0.068,0.0,0.1304,1,7.0,Marathonbet,-0.5239,False,2026-09-26T13:51:10+00:00,,,3.0,,,,(otras)
+1342447327,Volga Ulyanovsk vs Leningradets,First League,45,Half time,1,1.5,0.9038,0.0,0.8371,1,1.09,Marathonbet,-0.0148,False,2026-09-26T13:51:10+00:00,,,3.0,1.06,0.8607,2026-09-26T14:26:13+00:00,(otras)
+1342447327,Volga Ulyanovsk vs Leningradets,First League,45,Half time,1,2.5,0.7006,0.0,0.7474,1,1.23,Marathonbet,-0.1382,False,2026-09-26T13:51:10+00:00,,,3.0,1.51,0.6088,2026-09-26T14:26:13+00:00,(otras)
+1342447327,Volga Ulyanovsk vs Leningradets,First League,45,Half time,1,3.5,0.4668,0.0,0.5257,1,1.75,Marathonbet,-0.1831,False,2026-09-26T13:51:10+00:00,,,3.0,2.53,0.3627,2026-09-26T14:26:13+00:00,(otras)
+1342447327,Volga Ulyanovsk vs Leningradets,First League,45,Half time,1,4.5,0.2726,0.0,0.3191,1,2.88,Marathonbet,-0.2148,False,2026-09-26T13:51:10+00:00,,,3.0,5.0,0.183,2026-09-26T14:26:13+00:00,(otras)
+1342447327,Volga Ulyanovsk vs Leningradets,First League,45,Half time,1,5.5,0.1426,0.0,0.1745,1,5.25,Marathonbet,-0.2513,False,2026-09-26T13:51:10+00:00,,,3.0,6.95,0.1313,2026-09-26T14:26:13+00:00,(otras)
+1342447327,Volga Ulyanovsk vs Leningradets,First League,45,Half time,1,6.5,0.068,0.0,0.1304,1,7.0,Marathonbet,-0.5239,False,2026-09-26T13:51:10+00:00,,,3.0,7.0,0.1304,2026-09-26T14:26:13+00:00,(otras)
 1315504667,South Africa vs Guinea,Africa Cup of Nations - Qualification,45,Half time,2,1.5,1.0,0.0,0.6997,2,1.36,Vbet Sport,,True,2026-09-26T14:09:10+00:00,,22.0,5.0,,,,(otras)
 1315504667,South Africa vs Guinea,Africa Cup of Nations - Qualification,45,Half time,2,2.0,0.8978,0.1022,0.5816,1,1.59,Vbet Sport,0.5297,False,2026-09-26T14:09:10+00:00,,22.0,5.0,,,,(otras)
 1315504667,South Africa vs Guinea,Africa Cup of Nations - Qualification,45,Half time,2,2.5,0.8978,0.0,0.7601,2,1.42,Vbet Sport,0.2749,False,2026-09-26T14:09:10+00:00,,22.0,5.0,,,,(otras)
