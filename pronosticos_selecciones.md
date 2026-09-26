@@ -1,49 +1,53 @@
 # Pronósticos Nations League, 26/09/2026
 
-Tema aparte del proyecto de ambos marcan. Modelo: Poisson ataque/defensa con los 76 partidos de las 4 selecciones desde 2025 (goles y xG promediados), anclado con la calidad de plantilla, más ajuste de forma del once con la nota justa de cada jugador (`notas_jugadores.csv`). Mercado = mediana de casas sin margen.
+Tema aparte del proyecto de ambos marcan. **Pronóstico = lo más probable según el mercado** (mediana de casas sin margen), que es lo único que nada ha batido en este proyecto. Al lado, nuestro modelo de selecciones con la nota justa de los jugadores y el árbitro. **Cuota mínima** = 1/probabilidad: por debajo no compensa.
+
+Datos: 71 partidos de las 4 selecciones desde 2025 (descartados 5 contra rivales sin jugadores en la API y 1 xG roto).
 
 ## England - Spain
 
-Goles esperados: 1.18 - 1.62 (sin ajuste de forma 1.17 - 1.69). Forma del once: England -0.02, Spain -0.10.
+Modelo: goles esperados 1.11 - 1.67, marcador más probable 1-1. Córners esperados 8.7. Tarjetas amarillas esperadas 2.1; árbitro Massa, Davide (37 partidos en nuestras ligas, x1.17) -> 2.4. Forma del once: England -0.02, Spain -0.10.
 
-| | modelo | sin forma | mercado (sin margen) | cuota justa del modelo |
-|---|---|---|---|---|
-| gana England | 27.9% | 26.5% | 27.8% | 3.58 |
-| empate | 24.6% | 24.1% | 27.5% | 4.06 |
-| gana Spain | 47.4% | 49.5% | 44.7% | 2.11 |
-| ambos marcan: sí | 55.6% | 56.1% | 59.0% | 1.80 |
+| mercado | pronóstico | prob. mercado | prob. modelo | cuota mínima | cuota mediana | mejor cuota (sin atípicos) | casas |
+|---|---|---|---|---|---|---|---|
+| 1X2 | **gana Spain** | 48% | 51% | 2.08 | 1.96 | 2.05 | 50 |
+| Más/menos 2.5 | **más de 2.5 goles** | 55% | 53% | 1.82 | 1.73 | 1.87 | 35 |
+| Ambos marcan | **ambos marcan: sí** | 58% | 54% | 1.73 | 1.61 | 1.67 | 29 |
+| Tarjetas | **más de 3.5 tarjetas** | 50% | 25% | 2.00 | 1.85 | 1.85 | 1 |
+| Tarjetas | **menos de 4.5 tarjetas** | 68% | 85% | 1.47 | 1.34 | 1.34 | 1 |
+| Córners | **más de 8.5 córners** | 55% | 50% | 1.81 | 1.67 | 1.70 | 10 |
+| Córners | **menos de 9.5 córners** | 56% | 62% | 1.78 | 1.63 | 1.70 | 11 |
+| Goles | **más de 1.5 goles** | 77% | 77% | 1.30 | 1.22 | 1.26 | 35 |
+| Goles | **Spain marca primero** | 58% | 60% | 1.71 | 1.67 | 1.87 | 4 |
 
 Once probable England: J. Bellingham, H. Kane, E. Anderson, D. Rice, M. Rogers, M. Guéhi, J. Pickford, A. Gordon, E. Konsa, Djed Spence, John Stones
 Once probable Spain: Lamine Yamal, Rodri, Pau Cubarsí Paredes, Álex Baena, Dani Olmo, Aymeric Laporte, Unai Simón, Fabián Ruiz, Pedro Porro, Mikel Oyarzabal, Marc Cucurella
 
 ## Czech Republic - Croatia
 
-Goles esperados: 1.26 - 2.03 (sin ajuste de forma 1.27 - 2.07). Forma del once: Czech Republic -0.05, Croatia -0.06.
+Modelo: goles esperados 1.20 - 2.11, marcador más probable 1-2. Córners esperados 9.5. Tarjetas amarillas esperadas 2.2; árbitro Sozza, Simone (37 partidos en nuestras ligas, x0.94) -> 2.0. Forma del once: Czech Republic -0.05, Croatia -0.06.
 
-| | modelo | sin forma | mercado (sin margen) | cuota justa del modelo |
-|---|---|---|---|---|
-| gana Czech Republic | 23.4% | 23.2% | 26.7% | 4.27 |
-| empate | 21.4% | 21.1% | 27.1% | 4.68 |
-| gana Croatia | 55.2% | 55.6% | 46.2% | 1.81 |
-| ambos marcan: sí | 62.2% | 62.9% | 56.3% | 1.61 |
+| mercado | pronóstico | prob. mercado | prob. modelo | cuota mínima | cuota mediana | mejor cuota (sin atípicos) | casas |
+|---|---|---|---|---|---|---|---|
+| 1X2 | **gana Croatia** | 47% | 58% | 2.14 | 2.02 | 2.12 | 50 |
+| Más/menos 2.5 | **más de 2.5 goles** | 52% | 64% | 1.92 | 1.81 | 1.88 | 36 |
+| Ambos marcan | **ambos marcan: sí** | 56% | 62% | 1.79 | 1.66 | 1.70 | 28 |
+| Tarjetas | **menos de 3.5 tarjetas** | 54% | 82% | 1.84 | 1.70 | 1.70 | 1 |
+| Tarjetas | **menos de 4.5 tarjetas** | 72% | 90% | 1.40 | 1.27 | 1.27 | 1 |
+| Córners | **más de 8.5 córners** | 59% | 59% | 1.70 | 1.56 | 1.63 | 10 |
+| Córners | **menos de 9.5 córners** | 52% | 53% | 1.92 | 1.77 | 1.81 | 11 |
+| Goles | **más de 1.5 goles** | 75% | 84% | 1.33 | 1.25 | 1.28 | 35 |
+| Goles | **Croatia marca primero** | 57% | 64% | 1.74 | 1.71 | 1.74 | 4 |
 
 Once probable Czech Republic: M. Kovář, L. Krejčí, P. Schick, Tomáš Souček, P. Šulc, Lukáš Červ, Michal Sadílek, Jaroslav Zelený, Štěpán Chaloupek, V. Coufal, R. Hranáč
 Once probable Croatia: J. Gvardiol, Luka Modrić, Martin Baturina, Petar Sučić, I. Perišić, D. Livaković, Josip Šutalo, M. Kovačić, J. Stanišić, Marin Pongračić, Nikola Vlašić
 
 ## Cuánto fiarse
 
-Prueba hacia delante (26/09): cada partido de las 4 selecciones desde oct-2025 (53) pronosticado solo con los anteriores.
+Prueba hacia delante del modelo de selecciones: 48 partidos desde oct-2025, cada uno pronosticado solo con los anteriores, contra la tasa de los partidos previos:
 
-- 1X2: Brier 0.540 contra 0.627 de las frecuencias (+1.37s), acierta el 64%. Algo sabe, pero la mayoría eran partidos fáciles contra selecciones pequeñas.
-- Ambos marcan: Brier 0.514 contra 0.498 de la tasa base (-0.40s). **No bate a la tasa base**: en ambos marcan este modelo no aporta.
-- No hay cuotas históricas de selecciones para medirlo contra el mercado. El ajuste de forma (B_FORMA) está puesto a mano, no calibrado.
+- 1X2: +1.91s (acierta el 65%). Ambos marcan: +1.28s. Algo saben, pero no se pueden medir contra el mercado (no hay cuotas históricas de selecciones).
+- Más/menos goles (-0.7 a -1.2s), córners (-0.3 a -1.5s; se queda corto, 8.9 predichos contra 9.9 reales) y tarjetas (+0.1 a -2.6s): **peor que la tasa previa**. En totales, el modelo no aporta.
+- Tarjetas: solo 1 casa cotiza cada línea (precio poco fiable). El árbitro, en el proyecto de clubes, no mejoró el mercado de tarjetas.
+- Ajuste de forma (nota justa) puesto a mano. Las cuotas se cogieron a las 16:54 UTC; pueden moverse con las alineaciones.
 
-
-## Segunda opinión: IA de ambos marcan (variante solo precio)
-
-Entrenada con 5495 partidos de club; rasgos de esta noche sacados de las cuotas de hoy. Solo ha visto clubes: es el mercado reinterpretado, no información nueva. Control en clubes (último 25%): -0.62s frente al ambos marcan implícito del propio precio.
-
-| partido | IA (solo precio) | implícito del 1X2+2.5 | mercado ambos marcan | modelo de selecciones |
-|---|---|---|---|---|
-| England - Spain | 57.3% | 56.9% | 59.0% | ver arriba |
-| Czech Republic - Croatia | 57.6% | 54.8% | 56.3% | ver arriba |
