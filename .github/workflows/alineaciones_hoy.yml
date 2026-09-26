@@ -1,0 +1,4 @@
+name: Alineaciones de hoy (selecciones)
+
+on:
+  workflow_dispatch:
