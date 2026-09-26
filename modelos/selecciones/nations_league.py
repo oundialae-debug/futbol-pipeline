@@ -60,9 +60,11 @@ def pedir(path, params=None, nombre=None, forzar=False):
     for intento in range(3):
         try:
             r = requests.get(f"{BASE_URL}{path}", headers=HEADERS, params=params, timeout=30)
-        except Exception:
+        except Exception as e:
+            print(f"  [sin respuesta: {type(e).__name__}] {path}")
             time.sleep(2 * (intento + 1)); continue
         if r.status_code == 429:
+            print(f"  [429: límite de la API] {path}")   # antes callaba: 6 minutos sin decir nada
             time.sleep(5); continue
         if r.status_code != 200:
             print(f"  [HTTP {r.status_code}] {path} {params or ''}")
