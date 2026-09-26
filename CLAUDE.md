@@ -1028,3 +1028,38 @@ con xG). El backfill de box-score del 21/09 los recibió en 2.537 partidos y
 los tiró (guardó 7 agregados de equipo): otra vez "mira la respuesta entera".
 Recuperarlos: ~2.850 llamadas (abr-2025 a hoy). Solo servirían para
 2025/26 en adelante.
+
+## Apostar a ambos marcan: primer resultado positivo en versión honesta (26/09/2026)
+
+`scripts/apuesta_ambos_marcan.py`. Modelo = producción + 7 rasgos de precio
+de la PREVIA de football-data (Pinnacle/Betfair días antes; nada del cierre,
+ver "Casas contra el precio afinado"). Apuesta 1 unidad al lado (sí/no) con
+p_modelo × cuota − 1 > umbral, como mucho una por partido, contra las cuotas
+REALES de ambos marcan cosechadas (31 casas, margen medio 7.1%). 219
+partidos de validación (24/08-20/09/2026).
+
+| cuota usada | VE > 0 | VE > 2% |
+|---|---|---|
+| mediana de casas | 110 apuestas, **+13.5%** (+1.48s) | 87, +17.4% (+1.67s) |
+| bet365 | 113, **+17.7%** (+2.01s) | 83, +22.1% (+2.12s) |
+| mejor cuota | 177, +8.0% (+1.05s) | 149, +14.3% (+1.72s) |
+
+Comprobaciones hechas:
+- Aguanta sin los 5 partidos que más aportan (mediana VE>0: +5.7%; bet365
+  +10.4%).
+- No es "apostar siempre al sí en un periodo goleador": el modelo apuesta a
+  los dos lados (69 al sí, +14.2%; 41 al no, +12.4%), y a ciegas siempre sí
+  da -2.6%, siempre no -13.2%. Positivo en agosto (+16%) y septiembre (+13%).
+- Con el CIERRE como variable (control) sale parecido: aquí el precio del
+  cierre no era lo que empujaba.
+
+**Por qué NO es un hallazgo todavía:**
+- 110 apuestas; el real (+13.5%) es el doble del esperado (+6.9%): suerte
+  encima de lo que el modelo cree tener.
+- Solo bet365 llega a +2s, y bet365 se eligió entre tres formas de cuota.
+- Contaminación: el conjunto de variables y la cuota como variable se
+  eligieron mirando estos mismos partidos. El único juez limpio son
+  partidos que ninguna prueba ha tocado: los jugados desde el 27/09/2026.
+
+Siguiente paso: apuestas en papel (sin dinero) sobre partidos futuros, con
+la regla fijada de antemano, antes de cambiar nada del modelo.
