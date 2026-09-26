@@ -76,8 +76,10 @@ def main():
     sel["dias"] = (HOY - sel.fecha).dt.days
     sel["w"] = sel.minutos * 0.5 ** (sel.dias / VIDA_MEDIA_SEL)
 
-    real = pd.read_csv("data/selecciones/alineaciones_hoy.csv") if os.path.exists(
-        "data/selecciones/alineaciones_hoy.csv") else pd.DataFrame(columns=["equipo_id", "jugador_id"])
+    ruta = "data/selecciones/alineaciones_hoy.csv"
+    # la API devuelve el once vacío hasta ~1h antes: el csv queda vacío (sin cabecera)
+    real = (pd.read_csv(ruta) if os.path.exists(ruta) and os.path.getsize(ruta) > 5
+            else pd.DataFrame(columns=["equipo_id", "jugador_id"]))
     POS = {"Goalkeeper": "Goalkeeper", "Defender": "Defender", "Midfielder": "Midfielder",
            "Forward": "Forward", "Attacker": "Forward"}
     filas = []
