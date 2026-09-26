@@ -1105,3 +1105,15 @@ tarjetas) con un modelo propio de selecciones y una "nota justa" por
 jugador. Todo en `modelos/selecciones/` (scripts, guía y resultados) y
 `data/selecciones/`. NO comparte nada con los modelos de clubes. Receta
 para una jornada nueva en `modelos/selecciones/CLAUDE.md`.
+
+## Crons en pausa (26/09/2026)
+
+Petición del usuario: mientras dura la Nations League (~3 semanas sin
+liga), solo `nations_league_ciclo.yml` gasta API. Tienen el `schedule`
+comentado (marcado "EN PAUSA"):
+- `cosechar_cuotas`, `calendario`, `descanso_en_vivo`, `revision_descanso`,
+  `casas_descolgadas`, `censo_margenes` y `pipeline_diario`.
+- También están desactivadas las rutinas de ambos marcan (ver
+  `modelos/ambos_marcan/CLAUDE.md`).
+
+Para reactivar: descomentar el `schedule` de cada uno.

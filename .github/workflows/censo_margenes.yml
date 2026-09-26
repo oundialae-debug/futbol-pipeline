@@ -9,9 +9,11 @@ on:
         description: 'Partidos a muestrear'
         required: false
         default: '40'
-  schedule:
-    # Lunes por la mañana, con el calendario de la semana ya hecho.
-    - cron: '30 6 * * 1'
+  # EN PAUSA desde el 26/09/2026 (petición del usuario): solo la Nations League
+  # gasta API mientras dura (~3 semanas sin liga). Para reactivar, descomentar.
+  # schedule:
+  # # Lunes por la mañana, con el calendario de la semana ya hecho.
+  # - cron: '30 6 * * 1'
 
 jobs:
   censo:

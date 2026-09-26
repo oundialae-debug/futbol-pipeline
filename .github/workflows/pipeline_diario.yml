@@ -1,8 +1,10 @@
 name: Pipeline diario completo
 
 on:
-  schedule:
-    - cron: '0 12 * * 2'   # todos los martes a las 12:00 UTC -- una vez terminada la jornada
+  # EN PAUSA desde el 26/09/2026 (petición del usuario): solo la Nations League
+  # gasta API mientras dura (~3 semanas sin liga). Para reactivar, descomentar.
+  # schedule:
+  # - cron: '0 12 * * 2'   # todos los martes a las 12:00 UTC -- una vez terminada la jornada
   workflow_dispatch:
 
 jobs:

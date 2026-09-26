@@ -24,27 +24,29 @@ on:
         description: 'Calcular aunque NO sea el descanso (solo prueba; no registra)'
         required: false
         default: 'no'
-  schedule:
-    # Prioridad: acumular descansos cuanto antes. El coeficiente de las faltas
-    # necesita del orden de 60 partidos y los minutos de Actions no se
-    # facturan en un repositorio público, así que se mira ancho.
-    #
-    # Las horas no son un barrido a ciegas: el registro dice de dónde salen
-    # las observaciones. La franja americana de madrugada (MLS y Serie A de
-    # Brasil, que también cotizan tarjetas en vivo) dio 10 partidos, casi
-    # tantos como la europea de tarde. Recortarla era tirar media cosecha.
-    #
-    # Europa y principio de América, todos los días. No solo fin de semana:
-    # las seis ligas juegan poco entre semana, pero el comparador registra
-    # cualquier liga con mercado, y esas sí juegan.
-    - cron: '*/15 9-23 * * *'
-    # América en prime time.
-    - cron: '*/15 0-3 * * *'
-    # Asia y Oceanía. Quedaba sin cubrir por prudencia con el límite de la
-    # API, pero el consumo real es del 8% del tope, así que la prudencia
-    # sobraba. De esta franja no ha salido todavía ninguna observación con
-    # mercado -- que es justamente el motivo para mirar: no lo sabemos.
-    - cron: '*/15 4-8 * * *'
+  # EN PAUSA desde el 26/09/2026 (petición del usuario): solo la Nations League
+  # gasta API mientras dura (~3 semanas sin liga). Para reactivar, descomentar.
+  # schedule:
+  # # Prioridad: acumular descansos cuanto antes. El coeficiente de las faltas
+  # # necesita del orden de 60 partidos y los minutos de Actions no se
+  # # facturan en un repositorio público, así que se mira ancho.
+  # #
+  # # Las horas no son un barrido a ciegas: el registro dice de dónde salen
+  # # las observaciones. La franja americana de madrugada (MLS y Serie A de
+  # # Brasil, que también cotizan tarjetas en vivo) dio 10 partidos, casi
+  # # tantos como la europea de tarde. Recortarla era tirar media cosecha.
+  # #
+  # # Europa y principio de América, todos los días. No solo fin de semana:
+  # # las seis ligas juegan poco entre semana, pero el comparador registra
+  # # cualquier liga con mercado, y esas sí juegan.
+  # - cron: '*/15 9-23 * * *'
+  # # América en prime time.
+  # - cron: '*/15 0-3 * * *'
+  # # Asia y Oceanía. Quedaba sin cubrir por prudencia con el límite de la
+  # # API, pero el consumo real es del 8% del tope, así que la prudencia
+  # # sobraba. De esta franja no ha salido todavía ninguna observación con
+  # # mercado -- que es justamente el motivo para mirar: no lo sabemos.
+  # - cron: '*/15 4-8 * * *'
 
 jobs:
   descanso:

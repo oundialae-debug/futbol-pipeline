@@ -9,15 +9,17 @@ on:
         description: 'Solo el sondeo de faltas, sin cerrar el registro'
         required: false
         default: 'no'
-  schedule:
-    # El registro se llenaba solo pero nadie lo cerraba: las observaciones se
-    # quedaban sin resultado hasta que alguien lanzaba esto a mano. Un dato
-    # que nadie resuelve no mide nada.
-    #
-    # 23:10 UTC: ya han terminado los partidos europeos de la noche. Los
-    # americanos de madrugada quedan para la pasada del día siguiente, que es
-    # lo correcto -- el cierre solo puntúa partidos terminados.
-    - cron: '10 23 * * *'
+  # EN PAUSA desde el 26/09/2026 (petición del usuario): solo la Nations League
+  # gasta API mientras dura (~3 semanas sin liga). Para reactivar, descomentar.
+  # schedule:
+  # # El registro se llenaba solo pero nadie lo cerraba: las observaciones se
+  # # quedaban sin resultado hasta que alguien lanzaba esto a mano. Un dato
+  # # que nadie resuelve no mide nada.
+  # #
+  # # 23:10 UTC: ya han terminado los partidos europeos de la noche. Los
+  # # americanos de madrugada quedan para la pasada del día siguiente, que es
+  # # lo correcto -- el cierre solo puntúa partidos terminados.
+  # - cron: '10 23 * * *'
 
 jobs:
   revision:
