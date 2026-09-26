@@ -38,3 +38,12 @@ Prueba hacia delante (26/09): cada partido de las 4 selecciones desde oct-2025 (
 - Ambos marcan: Brier 0.514 contra 0.498 de la tasa base (-0.40s). **No bate a la tasa base**: en ambos marcan este modelo no aporta.
 - No hay cuotas históricas de selecciones para medirlo contra el mercado. El ajuste de forma (B_FORMA) está puesto a mano, no calibrado.
 
+
+## Segunda opinión: IA de ambos marcan (variante solo precio)
+
+Entrenada con 5495 partidos de club; rasgos de esta noche sacados de las cuotas de hoy. Solo ha visto clubes: es el mercado reinterpretado, no información nueva. Control en clubes (último 25%): -0.62s frente al ambos marcan implícito del propio precio.
+
+| partido | IA (solo precio) | implícito del 1X2+2.5 | mercado ambos marcan | modelo de selecciones |
+|---|---|---|---|---|
+| England - Spain | 57.3% | 56.9% | 59.0% | ver arriba |
+| Czech Republic - Croatia | 57.6% | 54.8% | 56.3% | ver arriba |
