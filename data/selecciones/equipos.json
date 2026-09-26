@@ -1,1 +1,22 @@
-{"equipos": {"England": 9294, "Spain": 8443, "Czech Republic": 656054, "Croatia": 3337}, "cruces": [["England", "Spain", 1301087025], ["Czech Republic", "Croatia", 1301087876]]}
+{
+ "equipos": {
+  "England": 9294,
+  "Spain": 8443,
+  "Czech Republic": 656054,
+  "Croatia": 3337
+ },
+ "cruces": [
+  [
+   "England",
+   "Spain",
+   1301087025,
+   "2026-09-26T18:45:00.000Z"
+  ],
+  [
+   "Czech Republic",
+   "Croatia",
+   1301087876,
+   "2026-09-26T18:45:00.000Z"
+  ]
+ ]
+}

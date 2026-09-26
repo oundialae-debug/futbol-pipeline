@@ -50,6 +50,11 @@ def main():
     club = pd.read_csv("data/historico_xg_jugador.csv")
     club = club[club.jugador_id.notna()].copy()
     club["fecha"] = club.match_id.map(h.fecha.astype(str).str[:10])
+    # forma de club reciente que mantiene forma_clubes.py (partidos que el
+    # histórico principal aún no tiene); si un partido está en los dos, vale uno
+    if os.path.exists("data/selecciones/club_reciente.csv"):
+        rec = pd.read_csv("data/selecciones/club_reciente.csv")
+        club = pd.concat([club, rec[rec.jugador_id.notna()]]).drop_duplicates(["match_id", "jugador_id"])
     club["nota"], club["minutos"] = num(club.nota), num(club.minutos)
     club = club[(club.fecha >= INICIO_TEMPORADA) & (club.minutos > 0) & club.nota.notna()]
     club["jugador_id"] = club.jugador_id.astype(int)
@@ -137,6 +142,9 @@ def main():
     print(f"Media de nota en club 2026/27 (todas las posiciones): {media_global:.2f}\n")
     for nombre in EQUIPOS:
         o = t[(t.seleccion == nombre) & t.once_probable]
+        if o.empty:
+            print(f"== {nombre}: SIN jugadores con datos (ni de selección ni once real) ==\n")
+            continue
         print(f"== {nombre}: once {o.fuente_once.iloc[0]}, nota media {o.nota.mean():.2f} "
               f"({o.sin_datos_club.sum()} sin datos de club) ==")
         print(o[["jugador", "posicion", "club_partidos", "club_nota_bruta", "club_goles", "club_asist",

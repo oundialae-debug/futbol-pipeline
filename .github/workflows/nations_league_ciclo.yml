@@ -1,0 +1,75 @@
+name: Nations League - ciclo (datos, pronósticos, aprendizaje)
+
+# Tema aparte del proyecto de ambos marcan (modelos/selecciones/CLAUDE.md).
+# Cada pasada: calendario y resultados de la Nations League, historial de las
+# selecciones que falten (reanudable), previa de los partidos de las próximas
+# 36 h (cuotas, árbitro, once), pronósticos con registro, y evaluación que
+# reaprende el peso modelo/mercado. La de la mañana además refresca la forma
+# de club de los jugadores y los amistosos de las selecciones (semanal, lunes).
+on:
+  schedule:
+    - cron: '20 7 * * *'     # mañana: todo + forma de clubes
+    - cron: '35 13 * * *'    # antes de los partidos de la tarde
+    - cron: '50 17 * * *'    # antes de los de la noche (onces si la API ya los tiene)
+  workflow_dispatch:
+    inputs:
+      tope_llamadas:
+        description: 'Máximo de llamadas a la API en esta pasada'
+        required: false
+        default: '600'
+      forma_clubes:
+        description: 'Refrescar la forma de club (1 = sí)'
+        required: false
+        default: '0'
+
+concurrency:
+  group: nations-league-ciclo
+  cancel-in-progress: false
+
+jobs:
+  ciclo:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+      - run: pip install requests pandas numpy scipy scikit-learn
+      - name: Forma de clubes (mañanas o a mano)
+        if: github.event.schedule == '20 7 * * *' || inputs.forma_clubes == '1'
+        run: python modelos/selecciones/forma_clubes.py
+        env:
+          HIGHLIGHTLY_API_KEY: ${{ secrets.HIGHLIGHTLY_API_KEY }}
+          TOPE_LLAMADAS: 200
+          DIAS: 3
+      - name: Datos de la Nations League
+        run: |
+          # los lunes por la mañana se vuelven a pedir los partidos de 2026 de cada
+          # selección (amistosos y otras competiciones que no están en el calendario)
+          if [ "$(date -u +%u)" = "1" ] && [ "${{ github.event.schedule }}" = "20 7 * * *" ]; then
+            export REFRESCAR_EQUIPOS=1
+          fi
+          python modelos/selecciones/nations_league.py
+        env:
+          HIGHLIGHTLY_API_KEY: ${{ secrets.HIGHLIGHTLY_API_KEY }}
+          TOPE_LLAMADAS: ${{ inputs.tope_llamadas || '600' }}
+      - name: Notas, pronósticos y evaluación (sin API)
+        run: |
+          python modelos/selecciones/nota_jugadores_selecciones.py
+          python modelos/selecciones/pronostico_selecciones.py
+          python modelos/selecciones/evaluar_selecciones.py
+      - name: Guardar
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/selecciones modelos/selecciones/*.md || true
+          if git diff --staged --quiet; then
+            echo "Sin cambios que guardar"
+            exit 0
+          fi
+          git commit -m "Nations League ciclo: $(date -u +%Y-%m-%dT%H:%M)"
+          for i in 1 2 3; do git pull --rebase origin main && git push && break; sleep 5; done
