@@ -179,5 +179,19 @@ Pronóstico del modelo con los onces reales:
 | Inglaterra - España | España 51% | sí 54% | 1.09 - 1.68 | 1-1 |
 | Chequia - Croacia | Croacia 60% (mercado 47%) | sí 62% | 1.19 - 2.18 | 1-2 |
 
-Apuntar el resultado real aquí cuando se sepa. Con los resultados de
-varias jornadas se podrá empezar a medir el modelo contra el mercado.
+**Resultado real** (sacado de prensa el 26/09 a las 21:50 UTC, con la
+API sin cuota; la pasada del ciclo del 27/09 lo trae con estadísticas):
+
+| partido | final | goles | 1X2 | más 2.5 | ambos marcan | primer gol |
+|---|---|---|---|---|---|---|
+| Inglaterra - España | **2-3** | Lamine Yamal 3', Gordon 37', Kane 41', Baena 61', Oyarzabal 75' (Kane falla un penalti en la 2ª parte) | acierta (España) | acierta | acierta | acierta (España) |
+| Chequia - Croacia | **1-2** | Modrić 48', Karabec 55', Pašalić 78' | acierta (Croacia; mercado 47%, modelo 60%) | acierta | acierta | acierta (Croacia) |
+
+El 1-2 de Chequia-Croacia era el marcador más probable del modelo.
+Córners y tarjetas: pendientes de la API (en prensa, una amarilla a
+Bellingham y otra a Červ). **Son 2 partidos: no dicen nada del modelo.**
+Cada lado pronosticado tenía un 50-60%: acertarlos con dos partidos
+se parece mucho a acertar lanzamientos de moneda. La medida de verdad es el Brier
+contra el mercado en `evaluacion.md`, a partir de 30 partidos.
+
+Fuentes: TNT Sports (Inglaterra-España) y VAVEL (Chequia-Croacia).
