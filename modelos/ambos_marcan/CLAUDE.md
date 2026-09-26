@@ -676,3 +676,22 @@ que mejor funcionó es el brazo "reentreno" y queda fijada en
 - sin selección automática de variables ni recalibración (el adaptativo
   perdió dinero: -12% contra +6.2% del reentreno)
 Todo lo nuevo (xG/xA por jugador incluido) se compara contra esto.
+
+## PUNTO DE RETORNO (26/09/2026, ~15:00 UTC) -- leer al volver de un paréntesis
+
+El usuario abrió un tema aparte, SIN relación con ambos marcan. Cuando diga
+"ya está", "es lo que quería" o similar, ese tema se cierra y se vuelve AQUÍ,
+al único tema abierto antes: ambos marcan. No mezclar nada del paréntesis.
+
+Estado exacto al abrir el paréntesis:
+- Modelo oficial: `scripts/modelo_ambos_marcan.py` (producción 99 + precio
+  previo 7 = 106 variables, reentreno mensual, sin selección ni recalibración).
+- Resultado vigente: mes a mes (walk_forward_ambos.py) reentreno +2.79s sobre
+  el congelado; apostando ago-sep 2026: +6.2% (mediana de casas) / +9.9%
+  (bet365), no aguanta sin los 5 mejores partidos. Pista débil, no hallazgo.
+- En marcha: 27/09 02:31 UTC se lanza backfill_xg_jugador.yml (xG/xA y 35
+  estadísticas por jugador desde abr-2025, ~3.036 partidos). Después: prueba
+  mes a mes CONTRA el modelo oficial añadiendo xG/xA por jugador (solo
+  partidos anteriores, anti-fuga), y avisar al usuario del resultado.
+- Pendiente de decidir con el usuario: apuestas en papel (sin dinero) sobre
+  partidos futuros, con la regla fijada de antemano.
