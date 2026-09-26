@@ -33,7 +33,12 @@ import pandas as pd
 HEADERS = {"x-rapidapi-key": os.environ.get("HIGHLIGHTLY_API_KEY", "")}   # nunca se imprime
 BASE_URL = "https://soccer.highlightly.net"
 LIGA = int(os.environ.get("LIGA", "5039"))
-TEMPORADA = int(os.environ.get("TEMPORADA_NL", "2026"))
+TEMPORADA = 2026   # temporada en curso de la API (se vuelve a pedir con REFRESCAR_EQUIPOS)
+# SOLO se descarga el historial de las selecciones que juegan en los próximos
+# VENTANA_DIAS (petición del usuario, 26/09: no las ~55 de golpe). Cada ventana
+# internacional nueva entra sola cuando se acerca.
+VENTANA_DIAS = int(os.environ.get("VENTANA_DIAS", "7"))
+DIAS_ATRAS = int(os.environ.get("DIAS_ATRAS", "3"))
 TEMPORADAS_HIST = (2024, 2025, 2026)
 DESDE = "2025-01-01"
 TOPE = int(os.environ.get("TOPE_LLAMADAS", "600"))
@@ -112,9 +117,18 @@ def paginas(path, params, prefijo, forzar):
 
 
 def calendario():
-    ps = paginas("/matches", {"leagueId": LIGA, "season": TEMPORADA}, f"nl_{LIGA}_{TEMPORADA}", forzar=True)
-    if not ps:   # sin API (tope, cuota agotada, sin clave): lo último que se bajó
-        ps = paginas("/matches", {"leagueId": LIGA, "season": TEMPORADA}, f"nl_{LIGA}_{TEMPORADA}", forzar=False)
+    """Partidos de la Nations League día a día, de DIAS_ATRAS días atrás a VENTANA_DIAS
+    por delante (una llamada por día, siempre refrescada: así entran los resultados).
+    La consulta por temporada (leagueId+season) devolvió 0 partidos el 26/09/2026;
+    por día sí funciona (es como se encontraron los partidos de esa noche)."""
+    hoy = datetime.now(timezone.utc).date()
+    ps = []
+    for d in range(-DIAS_ATRAS, VENTANA_DIAS + 1):
+        dia = (hoy + timedelta(days=d)).isoformat()
+        j = pedir("/matches", {"leagueId": LIGA, "date": dia, "timezone": "UTC"}, f"nl_dia_{dia}", forzar=True)
+        if j is None:   # sin API: lo último que se bajó de ese día
+            j = pedir("/matches", None, f"nl_dia_{dia}")
+        ps += [p for p in lista(j) if isinstance(p, dict) and p.get("id")] if j else []
     filas = [{"match_id": p["id"], "fecha": p.get("date"), "ronda": p.get("round"),
               "local_id": (p.get("homeTeam") or {}).get("id"), "local": (p.get("homeTeam") or {}).get("name"),
               "visitante_id": (p.get("awayTeam") or {}).get("id"),
@@ -123,7 +137,9 @@ def calendario():
     d = pd.DataFrame(filas, columns=["match_id", "fecha", "ronda", "local_id", "local", "visitante_id",
                                      "visitante", "goles_l", "goles_v", "terminado"]).drop_duplicates("match_id")
     if len(d):
-        d.sort_values("fecha").to_csv(f"{CARPETA}/nl_calendario.csv", index=False)
+        ruta = f"{CARPETA}/nl_calendario.csv"
+        viejo = pd.read_csv(ruta) if os.path.exists(ruta) else d.iloc[:0]
+        pd.concat([viejo[~viejo.match_id.isin(d.match_id)], d]).sort_values("fecha").to_csv(ruta, index=False)
     return d
 
 
@@ -256,17 +272,28 @@ def main():
     os.makedirs(RAW, exist_ok=True)
     cal = calendario()
     equipos = {}
-    for _, p in cal.iterrows():
+    hoy = datetime.now(timezone.utc).date().isoformat()
+    for _, p in cal[cal.fecha.astype(str).str[:10] >= hoy].iterrows():
         equipos[p.local], equipos[p.visitante] = int(p.local_id), int(p.visitante_id)
-    print(f"Nations League {TEMPORADA} (liga {LIGA}): {len(cal)} partidos, {len(equipos)} selecciones, "
-          f"{int(cal.terminado.sum()) if len(cal) else 0} terminados")
+    print(f"Nations League (liga {LIGA}), de {DIAS_ATRAS} días atrás a {VENTANA_DIAS} por delante: "
+          f"{len(cal)} partidos ({int(cal.terminado.sum()) if len(cal) else 0} terminados). "
+          f"Selecciones que juegan desde hoy: {len(equipos)}: {', '.join(sorted(equipos))}")
     if len(cal):
         previa(cal)
     else:
         print("[!] Sin calendario (ni de la API ni guardado): no se toca la previa ni equipos.json")
+    # selecciones seguidas: las de la ventana de ahora y todas las de antes (su
+    # historial ya está bajado). Solo sus partidos piden detalles.
+    ruta_seg = f"{CARPETA}/selecciones_seguidas.json"
+    seguidas = json.load(open(ruta_seg)) if os.path.exists(ruta_seg) else {}
+    seguidas.update({"England": 9294, "Spain": 8443, "Czech Republic": 656054, "Croatia": 3337})
+    seguidas.update(equipos)
+    json.dump(seguidas, open(ruta_seg, "w"), ensure_ascii=False, indent=1)
+    ids = set(seguidas.values())
+    de_seguidas = lambda p: ((p.get("homeTeam") or {}).get("id") in ids or (p.get("awayTeam") or {}).get("id") in ids)
     # detalles: primero los partidos más recientes (los de la Nations League de ayer)
     for mid, p in sorted(todos_los_partidos().items(), key=lambda kv: str(kv[1].get("date")), reverse=True):
-        if terminado(p):
+        if terminado(p) and de_seguidas(p):
             detalles(mid)
     pendientes = [n for n in equipos if not os.path.exists(f"{RAW}/partidos_{clave(n)}_2026_awayTeamId_0.json")]
     for nombre in sorted(equipos, key=lambda n: n not in pendientes):
@@ -274,7 +301,7 @@ def main():
     # los partidos de los historiales recién bajados también necesitan detalles
     ps = todos_los_partidos()
     for mid, p in sorted(ps.items(), key=lambda kv: str(kv[1].get("date")), reverse=True):
-        if terminado(p):
+        if terminado(p) and de_seguidas(p):
             detalles(mid)
     d, n_box = aplanar(ps)
     faltan_hist = [n for n in equipos if not os.path.exists(f"{RAW}/partidos_{clave(n)}_2026_awayTeamId_0.json")]

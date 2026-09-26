@@ -61,8 +61,8 @@ def main():
         print("Sin registro de pronósticos todavía.")
         return
     r = pd.read_csv(RUTA_REGISTRO)
-    r["generado"] = pd.to_datetime(r.generado, utc=True)
-    r["inicio"] = pd.to_datetime(r.fecha_partido, utc=True, errors="coerce")
+    r["generado"] = pd.to_datetime(r.generado, utc=True, format="ISO8601")
+    r["inicio"] = pd.to_datetime(r.fecha_partido, utc=True, errors="coerce", format="ISO8601")
     r = r[r.inicio.isna() | (r.generado < r.inicio)]
     ultimo = r.sort_values("generado").groupby("match_id").tail(1).set_index("match_id")
     y = resultados()

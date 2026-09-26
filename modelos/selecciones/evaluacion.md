@@ -1,6 +1,6 @@
 # Evaluación de los pronósticos de selecciones
 
-0 partidos jugados con pronóstico previo (de 0 pronosticados). Se toma el último pronóstico hecho ANTES del inicio. Brier: más bajo es mejor. Sigmas: modelo contra mercado, emparejado por partido (+ = el modelo mejor; hace falta +2 para creérselo). El peso se aprende con 30 partidos o más.
+0 partidos jugados con pronóstico previo (de 2 pronosticados). Se toma el último pronóstico hecho ANTES del inicio. Brier: más bajo es mejor. Sigmas: modelo contra mercado, emparejado por partido (+ = el modelo mejor; hace falta +2 para creérselo). El peso se aprende con 30 partidos o más.
 
 | mercado | n | Brier modelo | Brier mercado | modelo vs mercado | peso óptimo | en uso |
 |---|---|---|---|---|---|---|

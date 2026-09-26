@@ -4,7 +4,62 @@ Tema APARTE del proyecto principal (ambos marcan de clubes). Montado el
 26/09/2026 para Inglaterra-España y Chequia-Croacia. Se reutiliza para las
 siguientes jornadas de la Nations League (octubre-noviembre 2026).
 
-## Receta para una jornada nueva
+## Automático: el ciclo de la Nations League (desde el 26/09/2026)
+
+`nations_league_ciclo.yml` corre solo 3 veces al día (07:20, 13:35 y 17:50
+UTC). También se puede lanzar a mano, con los inputs `tope_llamadas` y
+`forma_clubes`. En cada pasada:
+
+1. **Forma de clubes** (solo la pasada de las 07:20): `forma_clubes.py`.
+   Guarda el box-score de los partidos de las 6 ligas de los últimos 3 días
+   en `data/selecciones/club_reciente.csv`. No toca los CSV del proyecto
+   principal.
+2. **Datos** (`nations_league.py`):
+   - Calendario y resultados de la liga 5039, **día a día**: de 3 días
+     atrás a 7 por delante. La consulta por temporada
+     (leagueId+season=2026) devolvió 0 partidos el 26/09.
+   - Historial desde 2025 **solo de las selecciones que juegan en los
+     próximos 7 días**. Petición del usuario: no descargar las ~55 de
+     golpe; cada ventana internacional entra sola cuando se acerca.
+   - Es reanudable y tiene un tope de 400 llamadas por pasada. Los lunes
+     vuelve a pedir la temporada en curso para recoger amistosos.
+   - Las selecciones ya descargadas quedan en `selecciones_seguidas.json`,
+     y solo se piden detalles de SUS partidos.
+   - Detalles de cada partido terminado.
+   - Previa de los partidos de las próximas 36 h: cuotas, árbitro y once
+     si la API lo tiene. Escribe `equipos.json`, `cuotas_hoy.csv` y
+     `alineaciones_hoy.csv`.
+3. **Notas** de los jugadores de esos partidos.
+4. **Pronósticos:** `pronostico_selecciones.py` escribe
+   `modelos/selecciones/pronosticos.md` y añade una fila por partido a
+   `data/selecciones/registro_pronosticos.csv`.
+5. **Aprendizaje:** `evaluar_selecciones.py`.
+   - Cruza el último pronóstico ANTES del pitido con el resultado.
+   - Mide modelo contra mercado por mercado.
+   - Aprende el peso de la mezcla modelo/mercado en
+     `data/selecciones/pesos_mezcla.json` en cuanto hay 30 partidos
+     evaluados; antes usa los pesos iniciales.
+   - Informe en `modelos/selecciones/evaluacion.md`.
+
+Además el modelo se reajusta en cada pasada con todos los partidos
+jugados: los resultados nuevos entran solos.
+
+**Qué NO aprende todavía:** el peso de la forma del once (B_FORMA = 0.5),
+el 60/40 club/selección de la nota y la dispersión de córners y tarjetas.
+Están puestos a mano. Cuando haya 50 o más partidos evaluados, lo
+siguiente es probarlos contra el registro.
+
+**Para pedir pronósticos desde otro chat:** leer `pronosticos.md` (el
+último del ciclo). Si hace falta el once real y la API no lo tiene (no lo
+tuvo el 26/09), buscarlo en la web y seguir el paso 5 de la receta
+manual. Después relanzar solo los scripts locales:
+
+```
+python3 modelos/selecciones/nota_jugadores_selecciones.py
+python3 modelos/selecciones/pronostico_selecciones.py
+```
+
+## Receta manual para una jornada (antes del ciclo, o para partidos fuera de la Nations League)
 
 Todo con GitHub Actions (la clave de Highlightly solo vive en los secrets).
 Rama main.

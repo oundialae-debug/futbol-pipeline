@@ -16,7 +16,7 @@ on:
       tope_llamadas:
         description: 'Máximo de llamadas a la API en esta pasada'
         required: false
-        default: '600'
+        default: '400'
       forma_clubes:
         description: 'Refrescar la forma de club (1 = sí)'
         required: false
@@ -55,7 +55,7 @@ jobs:
           python modelos/selecciones/nations_league.py
         env:
           HIGHLIGHTLY_API_KEY: ${{ secrets.HIGHLIGHTLY_API_KEY }}
-          TOPE_LLAMADAS: ${{ inputs.tope_llamadas || '600' }}
+          TOPE_LLAMADAS: ${{ inputs.tope_llamadas || '400' }}
       - name: Notas, pronósticos y evaluación (sin API)
         run: |
           python modelos/selecciones/nota_jugadores_selecciones.py
