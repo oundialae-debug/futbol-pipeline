@@ -22,7 +22,7 @@ Sin datos de club (p. ej. liga checa): club_ahora = media de su posición,
 y se marca.
 
 Once de cada selección: el REAL si ya está en data/selecciones/alineaciones_hoy.csv
-(scripts/alineaciones_hoy.py); si no, el probable = los 11 con más minutos en
+(modelos/selecciones/alineaciones_hoy.py); si no, el probable = los 11 con más minutos en
 sus últimos 4 partidos. Un titular sin partidos con la selección entra con su
 nota de club.
 Salida: data/selecciones/notas_jugadores.csv y el once de cada equipo.
@@ -31,12 +31,13 @@ import os
 import numpy as np
 import pandas as pd
 
-HOY = pd.Timestamp("2026-09-26")
+HOY = pd.Timestamp.today().normalize()
 INICIO_TEMPORADA = "2026-07-01"
 K_CLUB, K_SEL = 270.0, 180.0
 VIDA_MEDIA_SEL = 180.0
 PESO_CLUB, PESO_SEL = 0.6, 0.4
-EQUIPOS = {"England": 9294, "Spain": 8443, "Czech Republic": 656054, "Croatia": 3337}
+import json
+EQUIPOS = json.load(open("data/selecciones/equipos.json"))["equipos"]   # lo escribe descargar_selecciones.py
 
 
 def num(s):
@@ -79,7 +80,10 @@ def main():
     ruta = "data/selecciones/alineaciones_hoy.csv"
     # la API devuelve el once vacío hasta ~1h antes: el csv queda vacío (sin cabecera)
     real = (pd.read_csv(ruta) if os.path.exists(ruta) and os.path.getsize(ruta) > 5
-            else pd.DataFrame(columns=["equipo_id", "jugador_id"]))
+            else pd.DataFrame(columns=["match_id", "equipo_id", "jugador_id"]))
+    # solo el once de los partidos de ESTA jornada: si la misma selección vuelve a
+    # jugar, un alineaciones_hoy.csv viejo colaría el once del partido anterior
+    real = real[real.match_id.isin([c[2] for c in json.load(open("data/selecciones/equipos.json"))["cruces"]])]
     POS = {"Goalkeeper": "Goalkeeper", "Defender": "Defender", "Midfielder": "Midfielder",
            "Forward": "Forward", "Attacker": "Forward"}
     filas = []

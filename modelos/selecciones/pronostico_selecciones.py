@@ -5,7 +5,7 @@ Tema APARTE del proyecto de ambos marcan.
 
 Fuentes de probabilidad, por mercado:
   mercado   mediana de casas sin margen (data/selecciones/cuotas_hoy.csv,
-            scripts/previa_hoy.py). En todo este proyecto nada ha batido al
+            modelos/selecciones/previa_hoy.py). En todo este proyecto nada ha batido al
             precio: es la referencia principal.
   modelo    modelo_selecciones.py (Poisson de selecciones, 71 partidos desde
             2025) + ajuste de forma del once con la nota justa
@@ -155,7 +155,7 @@ def main():
           "clubes, no mejoró el mercado de tarjetas.",
           "- Ajuste de forma (nota justa) puesto a mano. Las cuotas se cogieron a las 16:54 UTC; "
           "pueden moverse con las alineaciones.", ""]
-    open("pronosticos_selecciones.md", "w").write("\n".join(L) + "\n")
+    open("modelos/selecciones/pronosticos.md", "w").write("\n".join(L) + "\n")
 
 
 if __name__ == "__main__":

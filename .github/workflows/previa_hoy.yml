@@ -16,7 +16,7 @@ jobs:
           cache: 'pip'
       - run: pip install requests pandas
       - name: Descargar
-        run: python scripts/previa_hoy.py
+        run: python modelos/selecciones/previa_hoy.py
         env:
           HIGHLIGHTLY_API_KEY: ${{ secrets.HIGHLIGHTLY_API_KEY }}
       - name: Guardar

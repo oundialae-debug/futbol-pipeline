@@ -695,3 +695,10 @@ Estado exacto al abrir el paréntesis:
   partidos anteriores, anti-fuga), y avisar al usuario del resultado.
 - Pendiente de decidir con el usuario: apuestas en papel (sin dinero) sobre
   partidos futuros, con la regla fijada de antemano.
+
+**Paréntesis CERRADO (26/09/2026, ~19:00 UTC).** El tema aparte (pronósticos
+de selecciones, Nations League) vive entero en `modelos/selecciones/` con su
+propio CLAUDE.md. No se mezcla con ambos marcan: no comparte modelo ni
+variables. El usuario puede pedir más pronósticos de selecciones en las
+próximas 3 semanas; eso se atiende desde esa carpeta y se vuelve aquí al
+terminar. El tema activo vuelve a ser ambos marcan, en el estado de arriba.

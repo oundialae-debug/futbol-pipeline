@@ -2,6 +2,14 @@ name: Descargar selecciones (Nations League)
 
 on:
   workflow_dispatch:
+    inputs:
+      cruces:
+        description: 'Partidos, local|visitante separados por ; (nombres exactos de la API). Ej: England|Spain;Czech Republic|Croatia'
+        required: true
+      fecha:
+        description: 'Fecha YYYY-MM-DD de esos partidos (vacío = hoy en España)'
+        required: false
+        default: ''
 
 jobs:
   cuotas:
@@ -16,10 +24,12 @@ jobs:
           cache: 'pip'
       - run: pip install requests pandas
       - name: Descargar
-        run: python scripts/descargar_selecciones.py
+        run: python modelos/selecciones/descargar_selecciones.py
         env:
           HIGHLIGHTLY_API_KEY: ${{ secrets.HIGHLIGHTLY_API_KEY }}
           TOPE_LLAMADAS: 700
+          CRUCES: ${{ inputs.cruces }}
+          FECHA: ${{ inputs.fecha }}
       - name: Guardar
         if: always()
         run: |

@@ -111,9 +111,9 @@ def main():
             lineas.append("")
             print(f"  {mercado}: " + "  ".join(f"{l} {med[l]:.2f} (mejor {piv[l].max():.2f})" for l in lados)
                   + f"  [{len(piv)} casas]")
-    open("nations_league_hoy.md", "w", encoding="utf-8").write("\n".join(lineas) + "\n")
-    pd.DataFrame(filas_resumen).to_csv("data/nations_league_hoy.csv", index=False)
-    print("\nEscrito nations_league_hoy.md y data/nations_league_hoy.csv")
+    open("modelos/selecciones/nations_league_hoy.md", "w", encoding="utf-8").write("\n".join(lineas) + "\n")
+    pd.DataFrame(filas_resumen).to_csv("data/selecciones/nations_league_hoy.csv", index=False)
+    print("\nEscrito nations_league_hoy.md y data/selecciones/nations_league_hoy.csv")
 
 
 if __name__ == "__main__":

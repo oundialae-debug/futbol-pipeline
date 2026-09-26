@@ -21,7 +21,7 @@ jobs:
           cache: 'pip'
       - run: pip install requests pandas
       - name: Partidos y cuotas
-        run: python scripts/nations_league_hoy.py
+        run: python modelos/selecciones/nations_league_hoy.py
         env:
           HIGHLIGHTLY_API_KEY: ${{ secrets.HIGHLIGHTLY_API_KEY }}
           FECHA: ${{ inputs.fecha }}
@@ -30,7 +30,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add nations_league_hoy.md data/nations_league_hoy.csv || true
+          git add modelos/selecciones/nations_league_hoy.md data/selecciones/nations_league_hoy.csv || true
           if git diff --staged --quiet; then
             echo "Sin cambios que guardar"
             exit 0

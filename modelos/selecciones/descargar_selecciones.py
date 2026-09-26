@@ -28,9 +28,12 @@ import pandas as pd
 API_KEY = os.environ["HIGHLIGHTLY_API_KEY"]
 HEADERS = {"x-rapidapi-key": API_KEY}   # nunca se imprime
 BASE_URL = "https://soccer.highlightly.net"
-LIGA_NL = 5039
-HOY = datetime.now(ZoneInfo("Europe/Madrid")).date().isoformat()
-CRUCES = [("England", "Spain"), ("Czech Republic", "Croatia")]
+HOY = os.environ.get("FECHA") or datetime.now(ZoneInfo("Europe/Madrid")).date().isoformat()
+# CRUCES="England|Spain;Czech Republic|Croatia" (nombres EXACTOS de la API, local|visitante;
+# "|" y no "-" porque hay selecciones con guion en el nombre)
+CRUCES = [tuple(x.strip().split("|", 1)) for x in
+          (os.environ.get("CRUCES") or "England|Spain;Czech Republic|Croatia").split(";") if x.strip()]
+LIGA_NL = int(os.environ.get("LIGA", "5039"))
 # OJO: la API mete la clasificación del Mundial 2026 (liga 28016) en la
 # temporada 2024, no en 2025/2026 (visto en el h2h, 26/09/2026). Por eso se
 # pide también 2024 y se filtra por fecha >= DESDE.

@@ -26,7 +26,7 @@ import pandas as pd
 from scipy.stats import nbinom, poisson
 from sklearn.linear_model import PoissonRegressor
 
-HOY = pd.Timestamp("2026-09-26")
+HOY = pd.Timestamp.today().normalize()
 VIDA_MEDIA = 365.0
 ALPHA = 0.02
 ANFITRIONES_MUNDIAL = {"Mexico", "USA", "United States", "Canada"}

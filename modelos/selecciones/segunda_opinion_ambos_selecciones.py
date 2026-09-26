@@ -5,7 +5,7 @@ Segunda opinión de ambos marcan para Inglaterra-España y Chequia-Croacia
 
 Entrenada con TODOS los partidos de club con precio previo de football-data
 (los 7 rasgos mkt_, 5 semillas). Para esta noche los rasgos salen de las cuotas
-cosechadas hoy (mediana de casas sin margen, data/nations_league_hoy.csv):
+cosechadas hoy (mediana de casas sin margen, data/selecciones/nations_league_hoy.csv):
 1X2, más de 2.5 y el ambos marcan implícito del Poisson ajustado a ambos.
 
 Límites: solo ha visto partidos de club; en esencia es el mercado
@@ -28,7 +28,7 @@ PARTIDOS = ["England - Spain", "Czech Republic - Croatia"]
 
 
 def rasgos_hoy(partido):
-    c = pd.read_csv("data/nations_league_hoy.csv")
+    c = pd.read_csv("data/selecciones/nations_league_hoy.csv")
     c = c[c.partido == partido]
     def sin_margen(mercado):
         g = c[c.mercado == mercado]
@@ -78,7 +78,7 @@ def main():
               f"mercado {btts_mkt*100:.1f}%  (lambdas {f['mkt_lambda_l']:.2f}-{f['mkt_lambda_v']:.2f})")
         lineas.append(f"| {partido} | {p*100:.1f}% | {f['mkt_p_btts_implicito']*100:.1f}% | "
                       f"{btts_mkt*100:.1f}% | ver arriba |")
-    with open("pronosticos_selecciones.md", "a") as fh:
+    with open("modelos/selecciones/pronosticos.md", "a") as fh:
         fh.write("\n".join(lineas) + "\n")
 
 

@@ -1097,3 +1097,11 @@ adaptativo pierde (la recalibración cambia qué lado apuesta). Regla de este
 documento: al hacer la prueba más limpia, el número va hacia cero. La
 pista de apuesta se debilita mucho. Lo que queda firme: **reentrenar cada
 mes** es mejor que un modelo congelado.
+
+## Selecciones: tema aparte (26/09/2026)
+
+Pronósticos de la Nations League (1X2, goles, ambos marcan, córners,
+tarjetas) con un modelo propio de selecciones y una "nota justa" por
+jugador. Todo en `modelos/selecciones/` (scripts, guía y resultados) y
+`data/selecciones/`. NO comparte nada con los modelos de clubes. Receta
+para una jornada nueva en `modelos/selecciones/CLAUDE.md`.
