@@ -52,7 +52,9 @@ def resultados():
                       "tarjetas_mas_3.5": np.where(p.tarjetas.notna(), p.tarjetas > 3.5, np.nan),
                       "tarjetas_mas_4.5": np.where(p.tarjetas.notna(), p.tarjetas > 4.5, np.nan),
                       # quién marca primero no está en /statistics: sin evaluar por ahora
-                      "primero_local": np.nan})
+                      "primero_local": np.nan,
+                      # sin empate: con empate se devuelve la apuesta, no cuenta
+                      "sin_empate_local": np.where(gl != gv, (gl > gv).astype(float), np.nan)})
     return y.set_index("match_id")
 
 

@@ -38,7 +38,7 @@ import modelo_selecciones as S
 B_FORMA = 0.5           # 0.1 puntos de nota del once -> ~5% de goles (a mano, sin calibrar)
 K_ARBITRO = 10
 DISPERSION = {"corners": 1.18, "amarillas": 1.67}   # de la prueba hacia delante del 26/09
-PESOS_INICIALES = {"1": 0.5, "X": 0.5, "2": 0.5, "btts": 0.5}   # el resto 0: el modelo no aportó
+PESOS_INICIALES = {"1": 0.5, "X": 0.5, "2": 0.5, "btts": 0.5, "sin_empate_local": 0.5}   # el resto 0: el modelo no aportó
 RUTA_PESOS = f"{S.CARPETA}/pesos_mezcla.json"
 RUTA_REGISTRO = f"{S.CARPETA}/registro_pronosticos.csv"
 SALIDA = "modelos/selecciones/pronosticos.md"
@@ -55,7 +55,11 @@ MERCADOS = {"1": ("Full Time Result", "Home"), "X": ("Full Time Result", "Draw")
             "mas_3.5": ("Total Goals 3.5", "Over"),
             "corners_mas_8.5": ("Total Corners 8.5", "Over"), "corners_mas_9.5": ("Total Corners 9.5", "Over"),
             "tarjetas_mas_3.5": ("Total Cards 3.5", "Over"), "tarjetas_mas_4.5": ("Total Cards 4.5", "Over"),
-            "primero_local": ("First Team To Score", "Home")}
+            "primero_local": ("First Team To Score", "Home"),
+            # sin empate = Asian Handicap 0 (empate: se devuelve). El modelo es P1/(P1+P2) del
+            # de goles: un modelo propio entrenado solo con partidos sin empate salió peor en la
+            # prueba hacia delante (-1.52s, sin_empate.md) y recalibrarlo también (-1.5s)
+            "sin_empate_local": ("Asian Handicap 0", "Home")}
 
 
 def mercado(c, partido, nombre):
@@ -167,7 +171,8 @@ def main():
                "corners_mas_9.5": S.prob_mas(cor, 9.5, DISPERSION["corners"]),
                "tarjetas_mas_3.5": S.prob_mas(tar, 3.5, DISPERSION["amarillas"]),
                "tarjetas_mas_4.5": S.prob_mas(tar, 4.5, DISPERSION["amarillas"]),
-               "primero_local": gm["primero_local"] / con_gol}
+               "primero_local": gm["primero_local"] / con_gol,
+               "sin_empate_local": gm["1"] / max(gm["1"] + gm["2"], 1e-9)}
         mk, info = {}, {}
         for k, (nombre, lado) in MERCADOS.items():
             m = mercado(c, partido, nombre)
@@ -199,6 +204,8 @@ def main():
         m1 = info.get(k1, {}).get({"1": "Home", "X": "Draw", "2": "Away"}[k1], {})
         filas.append(("1X2", {"1": f"gana {loc}", "X": "empate", "2": f"gana {vis}"}[k1], fin[k1], mod[k1],
                       mk.get(k1), m1))
+        filas.append(linea("Sin empate", "sin_empate_local", f"gana {loc} (sin empate)",
+                           f"gana {vis} (sin empate)", "Home", "Away"))
         filas.append(linea("Más/menos 2.5", "mas_2.5", "más de 2.5 goles", "menos de 2.5 goles", "Over", "Under"))
         filas.append(linea("Ambos marcan", "btts", "ambos marcan: sí", "ambos marcan: no", "Yes", "No"))
         for l in ("3.5", "4.5"):

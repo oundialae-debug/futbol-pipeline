@@ -172,6 +172,29 @@ Tarjetas: cada línea la cotiza 1 sola casa. El modelo espera unas 2
 amarillas y el mercado unas 4: seguramente cuentan distinto (la roja como
 dos, puntos de tarjeta...). No fiarse del precio.
 
+## Sin empate (27/09/2026): el modelo propio no mejora, se deriva del de goles
+
+Petición del usuario: reentrenar solo para "gana o pierde sin empate" (Asian
+Handicap 0 en la API) sin tocar los demás mercados. `sin_empate.py` hace la
+prueba hacia delante (252 partidos sin empate desde oct-2025, cada uno solo
+con los anteriores; resultados en `sin_empate.md`):
+
+| modelo | Brier | acierto | contra el derivado |
+|---|---|---|---|
+| derivado del de goles, P1/(P1+P2) | 0.1418 | 79% | - |
+| propio (Bradley-Terry solo con partidos sin empate, ridge C=1 fijado antes) | 0.1490 | 79% | -1.52s |
+| propio, C=0.3 / C=3 (control) | 0.1505 / 0.1531 | 78% / 81% | -1.95s / -1.59s |
+| derivado recalibrado con los resultados anteriores | | | -1.5s |
+| tasa base | 0.2459 | 55% | -9.59s |
+
+El propio tira el 21% de partidos (los empates) y la diferencia de goles;
+el derivado ya está bien calibrado (dice 70% -> pasa 71%, dice 91% -> pasa
+97%). **Se usa el derivado**, como mercado aparte `sin_empate_local` en
+`pronostico_selecciones.py` (peso inicial 0.5 como el 1X2, se aprende en
+`evaluacion.md`; los empates no cuentan al evaluar). Comprobado que el resto
+de mercados sale idéntico con y sin el cambio. No reabrir "modelo propio sin
+empate" con estos mismos datos: solo con más partidos o datos nuevos.
+
 ## Fallos silenciosos ya encontrados (no repetir)
 
 - **xG roto:** Francia-Inglaterra del 18/07/2026 trae el mismo xG (2.88)
