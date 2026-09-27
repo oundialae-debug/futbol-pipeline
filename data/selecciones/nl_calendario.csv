@@ -17,19 +17,19 @@ match_id,fecha,ronda,local_id,local,visitante_id,visitante,goles_l,goles_v,termi
 1301079366,2026-09-25T18:45:00.000Z,League A - 1,662011,Turkey,2486,France,0.0,1.0,True
 1315355742,2026-09-26T13:00:00.000Z,League B - 1,929225,Slovenia,943692,Scotland,0.0,0.0,True
 1315308937,2026-09-26T16:00:00.000Z,League C - 1,939437,Bulgaria,938586,Luxembourg,1.0,2.0,True
-1301086174,2026-09-26T16:00:00.000Z,League C - 1,16102,Iceland,937735,Estonia,1.0,1.0,True
 1301084472,2026-09-26T16:00:00.000Z,League C - 1,949649,San Marino,936033,Finland,0.0,7.0,True
+1301086174,2026-09-26T16:00:00.000Z,League C - 1,16102,Iceland,937735,Estonia,1.0,1.0,True
 1301085323,2026-09-26T16:00:00.000Z,League C - 1,935182,Faroe Islands,932629,Kazakhstan,1.0,1.0,True
+1301089578,2026-09-26T18:45:00.000Z,League C - 1,658607,Slovakia,948798,Moldova,2.0,0.0,True
 1301088727,2026-09-26T18:45:00.000Z,League C - 1,662862,Albania,936884,Belarus,2.0,0.0,True
-1301087876,2026-09-26T18:45:00.000Z,League A - 1,656054,Czech Republic,3337,Croatia,1.0,2.0,True
 1315354040,2026-09-26T18:45:00.000Z,League B - 1,941139,North Macedonia,13549,Switzerland,0.0,3.0,True
 1301087025,2026-09-26T18:45:00.000Z,League A - 1,9294,England,8443,Spain,2.0,3.0,True
-1301089578,2026-09-26T18:45:00.000Z,League C - 1,658607,Slovakia,948798,Moldova,2.0,0.0,True
+1301087876,2026-09-26T18:45:00.000Z,League A - 1,656054,Czech Republic,3337,Croatia,1.0,2.0,True
 1301090429,2026-09-27T13:00:00.000Z,League D - 2,934331,Lithuania,933480,Azerbaijan,,,False
-1315309788,2026-09-27T16:00:00.000Z,League D - 2,930927,Gibraltar,945394,Andorra,,,False
 1301091280,2026-09-27T16:00:00.000Z,League A - 2,12698,Serbia,952202,Netherlands,,,False
 1301092982,2026-09-27T16:00:00.000Z,League B - 2,660309,Austria,946245,Kosovo National Team,,,False
 1301092131,2026-09-27T16:00:00.000Z,League A - 2,18655,Denmark,653501,Wales,,,False
+1315309788,2026-09-27T16:00:00.000Z,League D - 2,930927,Gibraltar,945394,Andorra,,,False
 1301093833,2026-09-27T18:45:00.000Z,League A - 2,22059,Germany,951351,Greece,,,False
 1301094684,2026-09-27T18:45:00.000Z,League A - 2,928374,Norway,23761,Portugal,,,False
 1301095535,2026-09-27T18:45:00.000Z,League B - 2,950500,Israel,661160,Republic of Ireland,,,False
@@ -38,8 +38,8 @@ match_id,fecha,ronda,local_id,local,visitante_id,visitante,goles_l,goles_v,termi
 1301097237,2026-09-28T16:00:00.000Z,League C - 2,931778,Armenia,944543,Montenegro,,,False
 1301100641,2026-09-28T18:45:00.000Z,League B - 2,5039,Sweden,21208,Poland,,,False
 1301101492,2026-09-28T18:45:00.000Z,League B - 2,659458,Romania,947947,Bosnia & Herzegovina,,,False
-1301098939,2026-09-28T18:45:00.000Z,League A - 2,662011,Turkey,654352,Italy,,,False
 1301099790,2026-09-28T18:45:00.000Z,League B - 2,656905,Northern Ireland,655203,Hungary,,,False
+1301098939,2026-09-28T18:45:00.000Z,League A - 2,662011,Turkey,654352,Italy,,,False
 1301098088,2026-09-28T18:45:00.000Z,League A - 2,1635,Belgium,2486,France,,,False
 1301106598,2026-09-29T16:00:00.000Z,League C - 2,948798,Moldova,935182,Faroe Islands,,,False
 1301104896,2026-09-29T16:00:00.000Z,League C - 2,936033,Finland,936884,Belarus,,,False
