@@ -1,90 +1,668 @@
 match_id,fecha,competicion,local_id,local,visitante_id,visitante,goles_l,goles_v,terminado
+1151188481,2025-02-17,Friendlies,932629,Kazakhstan,1329195,North Korea,0.0,2.0,True
+1159663590,2025-03-19,Friendlies,932629,Kazakhstan,4706814,Curaçao,2.0,0.0,True
+1133878290,2025-03-20,Friendlies,1307920,Tajikistan,936884,Belarus,0.0,5.0,True
+1120397599,2025-03-20,UEFA Nations League,931778,Armenia,940288,Georgia,0.0,3.0,True
+1120387387,2025-03-20,UEFA Nations League,662011,Turkey,655203,Hungary,3.0,1.0,True
+1120390791,2025-03-20,UEFA Nations League,660309,Austria,12698,Serbia,1.0,1.0,True
+1120389089,2025-03-20,UEFA Nations League,657756,Ukraine,1635,Belgium,3.0,1.0,True
+1120395897,2025-03-20,UEFA Nations League,939437,Bulgaria,661160,Republic of Ireland,1.0,2.0,True
 1120382281,2025-03-20,UEFA Nations League,3337,Croatia,2486,France,2.0,0.0,True
+1120383983,2025-03-20,UEFA Nations League,18655,Denmark,23761,Portugal,1.0,0.0,True
+1120385685,2025-03-20,UEFA Nations League,654352,Italy,22059,Germany,1.0,2.0,True
+1120392493,2025-03-20,UEFA Nations League,951351,Greece,943692,Scotland,0.0,1.0,True
+1120394195,2025-03-20,UEFA Nations League,946245,Kosovo National Team,16102,Iceland,2.0,1.0,True
 1120380579,2025-03-20,UEFA Nations League,952202,Netherlands,8443,Spain,2.0,2.0,True
+1120399301,2025-03-20,UEFA Nations League,658607,Slovakia,929225,Slovenia,0.0,0.0,True
+1126077173,2025-03-21,World Cup - Qualification Europe,941990,Cyprus,949649,San Marino,2.0,0.0,True
 1126079726,2025-03-21,World Cup - Qualification Europe,9294,England,662862,Albania,2.0,0.0,True
+1126078875,2025-03-21,World Cup - Qualification Europe,945394,Andorra,930076,Latvia,0.0,1.0,True
+1126078024,2025-03-21,World Cup - Qualification Europe,659458,Romania,947947,Bosnia & Herzegovina,0.0,1.0,True
+1126075471,2025-03-21,World Cup - Qualification Europe,947096,Malta,936033,Finland,0.0,1.0,True
+1126076322,2025-03-21,World Cup - Qualification Europe,21208,Poland,934331,Lithuania,1.0,0.0,True
+1147232182,2025-03-21,Friendlies,656905,Northern Ireland,13549,Switzerland,1.0,1.0,True
+1126080577,2025-03-22,World Cup - Qualification Europe,942841,Liechtenstein,941139,North Macedonia,0.0,3.0,True
+1126082279,2025-03-22,World Cup - Qualification Europe,944543,Montenegro,930927,Gibraltar,3.0,1.0,True
+1135787083,2025-03-22,Friendlies,938586,Luxembourg,5039,Sweden,1.0,0.0,True
+1126081428,2025-03-22,World Cup - Qualification Europe,948798,Moldova,928374,Norway,0.0,5.0,True
+1155527730,2025-03-22,Friendlies,933480,Azerbaijan,2031270,Haiti,0.0,3.0,True
 1126084832,2025-03-22,World Cup - Qualification Europe,656054,Czech Republic,935182,Faroe Islands,2.0,1.0,True
+1126083130,2025-03-22,World Cup - Qualification Europe,950500,Israel,937735,Estonia,2.0,1.0,True
+1126083981,2025-03-22,World Cup - Qualification Europe,653501,Wales,932629,Kazakhstan,3.0,1.0,True
+1120398450,2025-03-23,UEFA Nations League,940288,Georgia,931778,Armenia,6.0,1.0,True
+1120391642,2025-03-23,UEFA Nations League,12698,Serbia,660309,Austria,2.0,0.0,True
+1120393344,2025-03-23,UEFA Nations League,943692,Scotland,951351,Greece,0.0,3.0,True
+1120388238,2025-03-23,UEFA Nations League,655203,Hungary,662011,Turkey,0.0,3.0,True
+1120395046,2025-03-23,UEFA Nations League,16102,Iceland,946245,Kosovo National Team,1.0,3.0,True
+1120400152,2025-03-23,UEFA Nations League,929225,Slovenia,658607,Slovakia,1.0,0.0,True
+1120389940,2025-03-23,UEFA Nations League,1635,Belgium,657756,Ukraine,3.0,0.0,True
+1120396748,2025-03-23,UEFA Nations League,661160,Republic of Ireland,939437,Bulgaria,2.0,1.0,True
 1120383132,2025-03-23,UEFA Nations League,2486,France,3337,Croatia,2.0,0.0,True
+1120384834,2025-03-23,UEFA Nations League,23761,Portugal,18655,Denmark,5.0,2.0,True
+1120386536,2025-03-23,UEFA Nations League,22059,Germany,654352,Italy,3.0,3.0,True
 1120381430,2025-03-23,UEFA Nations League,8443,Spain,952202,Netherlands,3.0,3.0,True
+1126085683,2025-03-24,World Cup - Qualification Europe,934331,Lithuania,936033,Finland,2.0,2.0,True
+1126089087,2025-03-24,World Cup - Qualification Europe,662862,Albania,945394,Andorra,3.0,0.0,True
+1126087385,2025-03-24,World Cup - Qualification Europe,947947,Bosnia & Herzegovina,941990,Cyprus,2.0,1.0,True
 1126089938,2025-03-24,World Cup - Qualification Europe,9294,England,930076,Latvia,3.0,0.0,True
+1126086534,2025-03-24,World Cup - Qualification Europe,21208,Poland,947096,Malta,2.0,0.0,True
+1126088236,2025-03-24,World Cup - Qualification Europe,949649,San Marino,659458,Romania,1.0,5.0,True
+1126091640,2025-03-25,World Cup - Qualification Europe,948798,Moldova,937735,Estonia,2.0,3.0,True
+1136067062,2025-03-25,Friendlies,933480,Azerbaijan,936884,Belarus,0.0,2.0,True
+1136526602,2025-03-25,Friendlies,5039,Sweden,656905,Northern Ireland,5.0,1.0,True
 1126094193,2025-03-25,World Cup - Qualification Europe,930927,Gibraltar,656054,Czech Republic,0.0,4.0,True
+1126095044,2025-03-25,World Cup - Qualification Europe,944543,Montenegro,935182,Faroe Islands,1.0,0.0,True
+1126090789,2025-03-25,World Cup - Qualification Europe,950500,Israel,928374,Norway,2.0,4.0,True
+1126092491,2025-03-25,World Cup - Qualification Europe,942841,Liechtenstein,932629,Kazakhstan,0.0,2.0,True
+1139153639,2025-03-25,Friendlies,13549,Switzerland,938586,Luxembourg,3.0,1.0,True
+1126093342,2025-03-25,World Cup - Qualification Europe,941139,North Macedonia,653501,Wales,1.0,1.0,True
+1162582520,2025-06-04,UEFA Nations League,22059,Germany,23761,Portugal,1.0,2.0,True
+1163239492,2025-06-05,Friendlies,940288,Georgia,935182,Faroe Islands,1.0,0.0,True
+1168741207,2025-06-05,Friendlies,936884,Belarus,932629,Kazakhstan,4.0,1.0,True
 1162583371,2025-06-05,UEFA Nations League,8443,Spain,2486,France,5.0,4.0,True
+1140363761,2025-06-06,Friendlies,939437,Bulgaria,941990,Cyprus,2.0,2.0,True
+1155528581,2025-06-06,Friendlies,946245,Kosovo National Team,931778,Armenia,5.0,2.0,True
+1144834064,2025-06-06,Friendlies,938586,Luxembourg,929225,Slovenia,0.0,1.0,True
+1140253982,2025-06-06,Friendlies,655203,Hungary,5039,Sweden,0.0,2.0,True
+1126096746,2025-06-06,World Cup - Qualification Europe,941139,North Macedonia,1635,Belgium,1.0,1.0,True
 1162699958,2025-06-06,World Cup - Qualification Europe,930927,Gibraltar,3337,Croatia,0.0,7.0,True
 1126098448,2025-06-06,World Cup - Qualification Europe,656054,Czech Republic,944543,Montenegro,2.0,0.0,True
+1126095895,2025-06-06,World Cup - Qualification Europe,937735,Estonia,950500,Israel,1.0,3.0,True
+1139491486,2025-06-06,Friendlies,943692,Scotland,16102,Iceland,1.0,3.0,True
+1162699107,2025-06-06,World Cup - Qualification Europe,928374,Norway,654352,Italy,3.0,0.0,True
+1126097597,2025-06-06,World Cup - Qualification Europe,653501,Wales,942841,Liechtenstein,3.0,0.0,True
+1159661888,2025-06-06,Friendlies,21208,Poland,948798,Moldova,2.0,0.0,True
+1161403885,2025-06-06,Friendlies,661160,Republic of Ireland,11847,Senegal,1.0,1.0,True
+1152585823,2025-06-07,Friendlies,930076,Latvia,933480,Azerbaijan,0.0,0.0,True
+1126099299,2025-06-07,World Cup - Qualification Europe,947947,Bosnia & Herzegovina,949649,San Marino,1.0,0.0,True
 1126101001,2025-06-07,World Cup - Qualification Europe,945394,Andorra,9294,England,0.0,1.0,True
+1126100150,2025-06-07,World Cup - Qualification Europe,947096,Malta,934331,Lithuania,0.0,0.0,True
+1163237790,2025-06-07,Friendlies,18655,Denmark,656905,Northern Ireland,2.0,1.0,True
+1126102703,2025-06-07,World Cup - Qualification Europe,662862,Albania,12698,Serbia,0.0,0.0,True
+1126101852,2025-06-07,World Cup - Qualification Europe,660309,Austria,659458,Romania,2.0,1.0,True
+1162700809,2025-06-07,World Cup - Qualification Europe,936033,Finland,952202,Netherlands,0.0,2.0,True
+1147233033,2025-06-07,Friendlies,951351,Greece,658607,Slovakia,4.0,1.0,True
+1157630551,2025-06-07,Friendlies,2029568,USA,662011,Turkey,1.0,2.0,True
+1161549406,2025-06-07,Friendlies,4705963,Canada,657756,Ukraine,4.0,2.0,True
+1156331925,2025-06-07,Friendlies,14400,Mexico,13549,Switzerland,2.0,4.0,True
+1172383487,2025-06-08,UEFA Nations League,22059,Germany,2486,France,0.0,2.0,True
+1168742058,2025-06-08,Friendlies,940288,Georgia,1305367,Cape Verde,1.0,1.0,True
 1172384338,2025-06-08,UEFA Nations League,23761,Portugal,8443,Spain,2.0,2.0,True
+1126103554,2025-06-09,World Cup - Qualification Europe,932629,Kazakhstan,941139,North Macedonia,0.0,1.0,True
+1139492337,2025-06-09,Friendlies,942841,Liechtenstein,943692,Scotland,0.0,4.0,True
+1172157121,2025-06-09,Friendlies,946245,Kosovo National Team,1297708,Comoros,4.0,2.0,True
+1139493188,2025-06-09,Friendlies,944543,Montenegro,931778,Armenia,2.0,2.0,True
+1126105256,2025-06-09,World Cup - Qualification Europe,1635,Belgium,653501,Wales,4.0,3.0,True
 1162702511,2025-06-09,World Cup - Qualification Europe,3337,Croatia,656054,Czech Republic,5.0,1.0,True
+1126104405,2025-06-09,World Cup - Qualification Europe,937735,Estonia,928374,Norway,0.0,1.0,True
+1126106107,2025-06-09,World Cup - Qualification Europe,935182,Faroe Islands,930927,Gibraltar,2.0,1.0,True
+1162701660,2025-06-09,World Cup - Qualification Europe,654352,Italy,948798,Moldova,2.0,0.0,True
+1140254833,2025-06-10,Friendlies,933480,Azerbaijan,655203,Hungary,1.0,2.0,True
+1146702009,2025-06-10,Friendlies,929225,Slovenia,947947,Bosnia & Herzegovina,2.0,1.0,True
+1149737526,2025-06-10,Friendlies,936884,Belarus,4188,Russia,1.0,4.0,True
+1163238641,2025-06-10,Friendlies,18655,Denmark,934331,Lithuania,5.0,0.0,True
+1164100704,2025-06-10,Friendlies,5039,Sweden,1304516,Algeria,4.0,3.0,True
+1126109511,2025-06-10,World Cup - Qualification Europe,930076,Latvia,662862,Albania,1.0,1.0,True
+1126110362,2025-06-10,World Cup - Qualification Europe,12698,Serbia,945394,Andorra,3.0,0.0,True
+1126108660,2025-06-10,World Cup - Qualification Europe,949649,San Marino,660309,Austria,0.0,4.0,True
+1147233884,2025-06-10,Friendlies,951351,Greece,939437,Bulgaria,4.0,0.0,True
+1126107809,2025-06-10,World Cup - Qualification Europe,659458,Romania,941990,Cyprus,2.0,0.0,True
 1151321237,2025-06-10,Friendlies,9294,England,11847,Senegal,1.0,3.0,True
+1126106958,2025-06-10,World Cup - Qualification Europe,936033,Finland,21208,Poland,2.0,1.0,True
+1147234735,2025-06-10,Friendlies,656905,Northern Ireland,16102,Iceland,1.0,0.0,True
+1168483354,2025-06-10,Friendlies,658607,Slovakia,950500,Israel,1.0,0.0,True
+1159662739,2025-06-10,Friendlies,938586,Luxembourg,661160,Republic of Ireland,0.0,0.0,True
+1162703362,2025-06-10,World Cup - Qualification Europe,952202,Netherlands,947096,Malta,8.0,0.0,True
+1161551108,2025-06-10,Friendlies,3977507,New Zealand,657756,Ukraine,1.0,2.0,True
+1157631402,2025-06-11,Friendlies,2029568,USA,13549,Switzerland,0.0,4.0,True
+1156332776,2025-06-11,Friendlies,14400,Mexico,662011,Turkey,1.0,0.0,True
+1209488789,2025-08-01,Friendlies Clubs,608398,Gimnastic,945394,Andorra,0.0,2.0,True
+1209623247,2025-08-02,Friendlies Clubs,945394,Andorra,505427,Europa Fc,3.0,1.0,True
+1209705794,2025-08-06,Friendlies Clubs,8010396,SS Reyes San Sebastián de los Reyes,945394,Andorra,0.0,0.0,True
+1216737607,2025-08-08,Friendlies Clubs,8149109,Real Madrid II,945394,Andorra,1.0,3.0,True
+1126111213,2025-09-04,World Cup - Qualification Europe,932629,Kazakhstan,653501,Wales,0.0,1.0,True
+1222250385,2025-09-04,Friendlies,20357,Saudi Arabia,941139,North Macedonia,2.0,1.0,True
+1203452646,2025-09-04,Friendlies,930927,Gibraltar,662862,Albania,0.0,1.0,True
+1151185928,2025-09-04,Friendlies,928374,Norway,936033,Finland,1.0,0.0,True
+1126112064,2025-09-04,World Cup - Qualification Europe,940288,Georgia,662011,Turkey,2.0,3.0,True
+1126113766,2025-09-04,World Cup - Qualification Europe,934331,Lithuania,947096,Malta,1.0,1.0,True
+1126114617,2025-09-04,World Cup - Qualification Europe,942841,Liechtenstein,1635,Belgium,0.0,6.0,True
 1162705064,2025-09-04,World Cup - Qualification Europe,939437,Bulgaria,8443,Spain,0.0,3.0,True
+1162704213,2025-09-04,World Cup - Qualification Europe,658607,Slovakia,22059,Germany,2.0,0.0,True
+1126112915,2025-09-04,World Cup - Qualification Europe,938586,Luxembourg,656905,Northern Ireland,1.0,3.0,True
+1162705915,2025-09-04,World Cup - Qualification Europe,952202,Netherlands,21208,Poland,1.0,1.0,True
+1151186779,2025-09-05,Friendlies,659458,Romania,4705963,Canada,0.0,3.0,True
+1126118021,2025-09-05,World Cup - Qualification Europe,16102,Iceland,933480,Azerbaijan,5.0,0.0,True
+1126117170,2025-09-05,World Cup - Qualification Europe,951351,Greece,936884,Belarus,5.0,1.0,True
 1162709319,2025-09-05,World Cup - Qualification Europe,935182,Faroe Islands,3337,Croatia,0.0,1.0,True
 1126119723,2025-09-05,World Cup - Qualification Europe,944543,Montenegro,656054,Czech Republic,0.0,2.0,True
+1162706766,2025-09-05,World Cup - Qualification Europe,18655,Denmark,943692,Scotland,0.0,0.0,True
+1162708468,2025-09-05,World Cup - Qualification Europe,654352,Italy,937735,Estonia,5.0,0.0,True
+1162707617,2025-09-05,World Cup - Qualification Europe,657756,Ukraine,2486,France,0.0,2.0,True
+1126118872,2025-09-05,World Cup - Qualification Europe,948798,Moldova,950500,Israel,0.0,4.0,True
+1126116319,2025-09-05,World Cup - Qualification Europe,13549,Switzerland,946245,Kosovo National Team,4.0,0.0,True
+1126115468,2025-09-05,World Cup - Qualification Europe,929225,Slovenia,5039,Sweden,2.0,2.0,True
+1126120574,2025-09-06,World Cup - Qualification Europe,930076,Latvia,12698,Serbia,0.0,1.0,True
 1126121425,2025-09-06,World Cup - Qualification Europe,9294,England,945394,Andorra,2.0,0.0,True
+1162710170,2025-09-06,World Cup - Qualification Europe,931778,Armenia,23761,Portugal,0.0,5.0,True
+1126123127,2025-09-06,World Cup - Qualification Europe,660309,Austria,941990,Cyprus,1.0,0.0,True
+1126123978,2025-09-06,World Cup - Qualification Europe,949649,San Marino,947947,Bosnia & Herzegovina,0.0,6.0,True
+1126122276,2025-09-06,World Cup - Qualification Europe,661160,Republic of Ireland,655203,Hungary,2.0,2.0,True
+1126124829,2025-09-07,World Cup - Qualification Europe,940288,Georgia,939437,Bulgaria,3.0,0.0,True
+1126125680,2025-09-07,World Cup - Qualification Europe,941139,North Macedonia,942841,Liechtenstein,5.0,0.0,True
+1162711021,2025-09-07,World Cup - Qualification Europe,934331,Lithuania,952202,Netherlands,2.0,3.0,True
+1126128233,2025-09-07,World Cup - Qualification Europe,1635,Belgium,932629,Kazakhstan,6.0,0.0,True
+1126127382,2025-09-07,World Cup - Qualification Europe,21208,Poland,936033,Finland,3.0,1.0,True
+1162711872,2025-09-07,World Cup - Qualification Europe,22059,Germany,656905,Northern Ireland,3.0,1.0,True
+1126126531,2025-09-07,World Cup - Qualification Europe,938586,Luxembourg,658607,Slovakia,0.0,1.0,True
 1162712723,2025-09-07,World Cup - Qualification Europe,662011,Turkey,8443,Spain,0.0,6.0,True
 1188712475,2025-09-08,Friendlies,656054,Czech Republic,20357,Saudi Arabia,1.0,1.0,True
+1126130786,2025-09-08,World Cup - Qualification Europe,936884,Belarus,943692,Scotland,0.0,2.0,True
 1162715276,2025-09-08,World Cup - Qualification Europe,3337,Croatia,944543,Montenegro,4.0,0.0,True
+1162713574,2025-09-08,World Cup - Qualification Europe,951351,Greece,18655,Denmark,0.0,3.0,True
+1126132488,2025-09-08,World Cup - Qualification Europe,930927,Gibraltar,935182,Faroe Islands,0.0,1.0,True
+1162714425,2025-09-08,World Cup - Qualification Europe,950500,Israel,654352,Italy,4.0,5.0,True
+1126129084,2025-09-08,World Cup - Qualification Europe,946245,Kosovo National Team,5039,Sweden,2.0,0.0,True
+1126129935,2025-09-08,World Cup - Qualification Europe,13549,Switzerland,929225,Slovenia,3.0,0.0,True
+1164101555,2025-09-09,Friendlies,937735,Estonia,945394,Andorra,0.0,0.0,True
+1126134190,2025-09-09,World Cup - Qualification Europe,931778,Armenia,661160,Republic of Ireland,2.0,1.0,True
+1126133339,2025-09-09,World Cup - Qualification Europe,933480,Azerbaijan,657756,Ukraine,1.0,1.0,True
+1126136743,2025-09-09,World Cup - Qualification Europe,662862,Albania,930076,Latvia,1.0,0.0,True
+1126135041,2025-09-09,World Cup - Qualification Europe,947947,Bosnia & Herzegovina,660309,Austria,1.0,2.0,True
+1126135892,2025-09-09,World Cup - Qualification Europe,941990,Cyprus,659458,Romania,2.0,2.0,True
 1126137594,2025-09-09,World Cup - Qualification Europe,12698,Serbia,9294,England,0.0,5.0,True
+1162716127,2025-09-09,World Cup - Qualification Europe,2486,France,16102,Iceland,2.0,1.0,True
+1162716978,2025-09-09,World Cup - Qualification Europe,655203,Hungary,23761,Portugal,2.0,3.0,True
+1126131637,2025-09-09,World Cup - Qualification Europe,928374,Norway,948798,Moldova,11.0,1.0,True
+1151322088,2025-09-09,Friendlies,653501,Wales,4705963,Canada,0.0,1.0,True
+1231419910,2025-09-09,Friendlies,947096,Malta,949649,San Marino,3.0,1.0,True
+1248727548,2025-10-08,Friendlies,930927,Gibraltar,4394497,New Caledonia,0.0,2.0,True
+1126139296,2025-10-09,World Cup - Qualification Europe,936033,Finland,934331,Lithuania,2.0,1.0,True
+1138221794,2025-10-09,Friendlies,659458,Romania,948798,Moldova,2.0,1.0,True
+1126140147,2025-10-09,World Cup - Qualification Europe,660309,Austria,949649,San Marino,10.0,0.0,True
+1162717829,2025-10-09,World Cup - Qualification Europe,936884,Belarus,18655,Denmark,0.0,6.0,True
+1126140998,2025-10-09,World Cup - Qualification Europe,941990,Cyprus,947947,Bosnia & Herzegovina,2.0,2.0,True
 1162719531,2025-10-09,World Cup - Qualification Europe,656054,Czech Republic,3337,Croatia,0.0,0.0,True
 1151322939,2025-10-09,Friendlies,9294,England,653501,Wales,3.0,0.0,True
+1126141849,2025-10-09,World Cup - Qualification Europe,935182,Faroe Islands,944543,Montenegro,4.0,0.0,True
+1126138445,2025-10-09,World Cup - Qualification Europe,943692,Scotland,951351,Greece,3.0,1.0,True
+1162718680,2025-10-09,World Cup - Qualification Europe,947096,Malta,952202,Netherlands,0.0,4.0,True
+1222725243,2025-10-09,Friendlies,21208,Poland,3977507,New Zealand,1.0,0.0,True
+1126142700,2025-10-10,World Cup - Qualification Europe,932629,Kazakhstan,942841,Liechtenstein,4.0,0.0,True
+1162721233,2025-10-10,World Cup - Qualification Europe,2486,France,933480,Azerbaijan,3.0,0.0,True
+1126146955,2025-10-10,World Cup - Qualification Europe,1635,Belgium,941139,North Macedonia,0.0,0.0,True
+1162720382,2025-10-10,World Cup - Qualification Europe,22059,Germany,938586,Luxembourg,4.0,0.0,True
+1126146104,2025-10-10,World Cup - Qualification Europe,16102,Iceland,657756,Ukraine,3.0,5.0,True
+1126144402,2025-10-10,World Cup - Qualification Europe,946245,Kosovo National Team,929225,Slovenia,0.0,0.0,True
+1126143551,2025-10-10,World Cup - Qualification Europe,656905,Northern Ireland,658607,Slovakia,2.0,0.0,True
+1126145253,2025-10-10,World Cup - Qualification Europe,5039,Sweden,13549,Switzerland,0.0,2.0,True
+1126147806,2025-10-11,World Cup - Qualification Europe,930076,Latvia,945394,Andorra,2.0,2.0,True
+1126148657,2025-10-11,World Cup - Qualification Europe,655203,Hungary,931778,Armenia,2.0,0.0,True
+1126149508,2025-10-11,World Cup - Qualification Europe,928374,Norway,950500,Israel,5.0,0.0,True
+1126151210,2025-10-11,World Cup - Qualification Europe,12698,Serbia,662862,Albania,0.0,1.0,True
+1126150359,2025-10-11,World Cup - Qualification Europe,939437,Bulgaria,662011,Turkey,1.0,6.0,True
+1162723786,2025-10-11,World Cup - Qualification Europe,937735,Estonia,654352,Italy,1.0,3.0,True
 1162722084,2025-10-11,World Cup - Qualification Europe,8443,Spain,940288,Georgia,2.0,0.0,True
+1162722935,2025-10-11,World Cup - Qualification Europe,23761,Portugal,661160,Republic of Ireland,1.0,0.0,True
+1126152061,2025-10-12,World Cup - Qualification Europe,949649,San Marino,941990,Cyprus,0.0,4.0,True
+1126152912,2025-10-12,World Cup - Qualification Europe,943692,Scotland,936884,Belarus,2.0,1.0,True
 1126153763,2025-10-12,World Cup - Qualification Europe,935182,Faroe Islands,656054,Czech Republic,2.0,1.0,True
+1162724637,2025-10-12,World Cup - Qualification Europe,952202,Netherlands,936033,Finland,4.0,0.0,True
+1150174940,2025-10-12,Friendlies,947096,Malta,947947,Bosnia & Herzegovina,1.0,4.0,True
+1126155465,2025-10-12,World Cup - Qualification Europe,659458,Romania,660309,Austria,1.0,0.0,True
 1162726339,2025-10-12,World Cup - Qualification Europe,3337,Croatia,930927,Gibraltar,3.0,0.0,True
-1126164826,2025-10-14,World Cup - Qualification Europe,930076,Latvia,9294,England,0.0,5.0,True
+1162725488,2025-10-12,World Cup - Qualification Europe,18655,Denmark,951351,Greece,3.0,1.0,True
+1126154614,2025-10-12,World Cup - Qualification Europe,934331,Lithuania,21208,Poland,0.0,2.0,True
+1139494039,2025-10-13,Friendlies,944543,Montenegro,942841,Liechtenstein,2.0,1.0,True
+1126158869,2025-10-13,World Cup - Qualification Europe,657756,Ukraine,933480,Azerbaijan,2.0,1.0,True
+1126160571,2025-10-13,World Cup - Qualification Europe,653501,Wales,1635,Belgium,2.0,4.0,True
+1162728041,2025-10-13,World Cup - Qualification Europe,16102,Iceland,2486,France,2.0,2.0,True
+1162727190,2025-10-13,World Cup - Qualification Europe,656905,Northern Ireland,22059,Germany,0.0,1.0,True
+1126159720,2025-10-13,World Cup - Qualification Europe,941139,North Macedonia,932629,Kazakhstan,1.0,1.0,True
+1126158018,2025-10-13,World Cup - Qualification Europe,5039,Sweden,946245,Kosovo National Team,0.0,1.0,True
+1126156316,2025-10-13,World Cup - Qualification Europe,658607,Slovakia,938586,Luxembourg,2.0,0.0,True
+1126157167,2025-10-13,World Cup - Qualification Europe,929225,Slovenia,13549,Switzerland,0.0,0.0,True
+1126163124,2025-10-14,World Cup - Qualification Europe,937735,Estonia,948798,Moldova,1.0,1.0,True
+1151187630,2025-10-14,Friendlies,928374,Norway,3977507,New Zealand,1.0,1.0,True
+1250371680,2025-10-14,Friendlies,662862,Albania,1318132,Jordan,4.0,2.0,True
+1126163975,2025-10-14,World Cup - Qualification Europe,945394,Andorra,12698,Serbia,1.0,3.0,True
+1126162273,2025-10-14,World Cup - Qualification Europe,661160,Republic of Ireland,931778,Armenia,1.0,0.0,True
 1162728892,2025-10-14,World Cup - Qualification Europe,8443,Spain,939437,Bulgaria,4.0,0.0,True
+1126164826,2025-10-14,World Cup - Qualification Europe,930076,Latvia,9294,England,0.0,5.0,True
+1126161422,2025-10-14,World Cup - Qualification Europe,662011,Turkey,940288,Georgia,4.0,1.0,True
+1162729743,2025-10-14,World Cup - Qualification Europe,23761,Portugal,655203,Hungary,2.0,2.0,True
+1162730594,2025-10-14,World Cup - Qualification Europe,654352,Italy,950500,Israel,3.0,0.0,True
+1126166528,2025-11-13,World Cup - Qualification Europe,931778,Armenia,655203,Hungary,0.0,1.0,True
+1126165677,2025-11-13,World Cup - Qualification Europe,933480,Azerbaijan,16102,Iceland,0.0,2.0,True
 1234688601,2025-11-13,Friendlies,656054,Czech Republic,949649,San Marino,1.0,0.0,True
+1126167379,2025-11-13,World Cup - Qualification Europe,928374,Norway,937735,Estonia,4.0,1.0,True
+1217791145,2025-11-13,Friendlies,934331,Lithuania,950500,Israel,0.0,0.0,True
+1233819730,2025-11-13,Friendlies,941139,North Macedonia,930076,Latvia,0.0,0.0,True
+1126168230,2025-11-13,World Cup - Qualification Europe,945394,Andorra,662862,Albania,0.0,1.0,True
 1126169081,2025-11-13,World Cup - Qualification Europe,9294,England,12698,Serbia,2.0,0.0,True
+1162731445,2025-11-13,World Cup - Qualification Europe,2486,France,657756,Ukraine,4.0,0.0,True
+1162733147,2025-11-13,World Cup - Qualification Europe,948798,Moldova,654352,Italy,0.0,2.0,True
+1162732296,2025-11-13,World Cup - Qualification Europe,661160,Republic of Ireland,23761,Portugal,2.0,0.0,True
+1126169932,2025-11-14,World Cup - Qualification Europe,936033,Finland,947096,Malta,0.0,1.0,True
 1162735700,2025-11-14,World Cup - Qualification Europe,3337,Croatia,935182,Faroe Islands,3.0,1.0,True
+1162733998,2025-11-14,World Cup - Qualification Europe,938586,Luxembourg,22059,Germany,0.0,2.0,True
+1126171634,2025-11-14,World Cup - Qualification Europe,930927,Gibraltar,944543,Montenegro,1.0,2.0,True
+1162734849,2025-11-14,World Cup - Qualification Europe,21208,Poland,952202,Netherlands,1.0,1.0,True
+1126170783,2025-11-14,World Cup - Qualification Europe,658607,Slovakia,656905,Northern Ireland,1.0,0.0,True
+1126172485,2025-11-15,World Cup - Qualification Europe,932629,Kazakhstan,1635,Belgium,1.0,1.0,True
+1126174187,2025-11-15,World Cup - Qualification Europe,941990,Cyprus,660309,Austria,0.0,2.0,True
+1126173336,2025-11-15,World Cup - Qualification Europe,662011,Turkey,939437,Bulgaria,2.0,0.0,True
 1162736551,2025-11-15,World Cup - Qualification Europe,940288,Georgia,8443,Spain,0.0,4.0,True
+1126175038,2025-11-15,World Cup - Qualification Europe,942841,Liechtenstein,653501,Wales,0.0,1.0,True
+1162737402,2025-11-15,World Cup - Qualification Europe,18655,Denmark,936884,Belarus,2.0,2.0,True
+1126178442,2025-11-15,World Cup - Qualification Europe,947947,Bosnia & Herzegovina,659458,Romania,3.0,1.0,True
+1126177591,2025-11-15,World Cup - Qualification Europe,951351,Greece,943692,Scotland,3.0,2.0,True
+1126175889,2025-11-15,World Cup - Qualification Europe,929225,Slovenia,946245,Kosovo National Team,0.0,2.0,True
+1126176740,2025-11-15,World Cup - Qualification Europe,13549,Switzerland,5039,Sweden,4.0,1.0,True
+1162738253,2025-11-16,World Cup - Qualification Europe,23761,Portugal,931778,Armenia,9.0,1.0,True
+1126179293,2025-11-16,World Cup - Qualification Europe,655203,Hungary,661160,Republic of Ireland,2.0,3.0,True
 1126180995,2025-11-16,World Cup - Qualification Europe,662862,Albania,9294,England,0.0,2.0,True
+1162739104,2025-11-16,World Cup - Qualification Europe,933480,Azerbaijan,2486,France,1.0,3.0,True
+1126180144,2025-11-16,World Cup - Qualification Europe,657756,Ukraine,16102,Iceland,2.0,0.0,True
+1126181846,2025-11-16,World Cup - Qualification Europe,12698,Serbia,930076,Latvia,2.0,1.0,True
+1126182697,2025-11-16,World Cup - Qualification Europe,950500,Israel,948798,Moldova,4.0,1.0,True
+1162739955,2025-11-16,World Cup - Qualification Europe,654352,Italy,928374,Norway,1.0,4.0,True
+1151323790,2025-11-17,Friendlies,936033,Finland,945394,Andorra,4.0,0.0,True
 1162742508,2025-11-17,World Cup - Qualification Europe,944543,Montenegro,3337,Croatia,2.0,3.0,True
 1126185250,2025-11-17,World Cup - Qualification Europe,656054,Czech Republic,930927,Gibraltar,6.0,0.0,True
+1162740806,2025-11-17,World Cup - Qualification Europe,22059,Germany,658607,Slovakia,6.0,0.0,True
+1162741657,2025-11-17,World Cup - Qualification Europe,952202,Netherlands,934331,Lithuania,4.0,0.0,True
+1126183548,2025-11-17,World Cup - Qualification Europe,656905,Northern Ireland,938586,Luxembourg,1.0,0.0,True
+1126184399,2025-11-17,World Cup - Qualification Europe,947096,Malta,21208,Poland,2.0,3.0,True
+1140364612,2025-11-18,Friendlies,941990,Cyprus,937735,Estonia,2.0,4.0,True
+1263754506,2025-11-18,Friendlies,935182,Faroe Islands,932629,Kazakhstan,1.0,0.0,True
+1126189505,2025-11-18,World Cup - Qualification Europe,660309,Austria,947947,Bosnia & Herzegovina,1.0,1.0,True
+1126187803,2025-11-18,World Cup - Qualification Europe,936884,Belarus,951351,Greece,0.0,0.0,True
+1126191207,2025-11-18,World Cup - Qualification Europe,1635,Belgium,942841,Liechtenstein,7.0,0.0,True
+1126188654,2025-11-18,World Cup - Qualification Europe,939437,Bulgaria,940288,Georgia,2.0,1.0,True
+1162743359,2025-11-18,World Cup - Qualification Europe,943692,Scotland,18655,Denmark,4.0,2.0,True
+1126186101,2025-11-18,World Cup - Qualification Europe,946245,Kosovo National Team,13549,Switzerland,1.0,1.0,True
+1126192058,2025-11-18,World Cup - Qualification Europe,653501,Wales,941139,North Macedonia,7.0,1.0,True
+1126190356,2025-11-18,World Cup - Qualification Europe,659458,Romania,949649,San Marino,7.0,1.0,True
+1126186952,2025-11-18,World Cup - Qualification Europe,5039,Sweden,929225,Slovenia,1.0,1.0,True
 1162744210,2025-11-18,World Cup - Qualification Europe,8443,Spain,662011,Turkey,2.0,2.0,True
+1278601052,2026-02-26,Friendlies,14400,Mexico,16102,Iceland,4.0,0.0,True
+1298842938,2026-03-25,Friendlies,932629,Kazakhstan,1297708,Comoros,,,False
+1308194577,2026-03-25,FIFA Series,932629,Kazakhstan,1271327,Namibia,2.0,0.0,True
+1298911018,2026-03-26,Friendlies,1316430,Singapore,935182,Faroe Islands,,,False
+1288806244,2026-03-26,Friendlies,1336003,Qatar,12698,Serbia,,,False
+1308207342,2026-03-26,FIFA Series,1267923,Tanzania,942841,Liechtenstein,0.0,1.0,True
+1288805393,2026-03-26,Friendlies,948798,Moldova,934331,Lithuania,0.0,2.0,True
+1298911869,2026-03-26,Friendlies,1330897,United Arab Emirates,931778,Armenia,,,False
+1282950513,2026-03-26,Friendlies,941990,Cyprus,936884,Belarus,0.0,1.0,True
+1278601903,2026-03-26,Friendlies,940288,Georgia,950500,Israel,2.0,2.0,True
+1120401003,2026-03-26,UEFA Nations League,930927,Gibraltar,930076,Latvia,0.0,1.0,True
+1120402705,2026-03-26,UEFA Nations League,947096,Malta,938586,Luxembourg,0.0,2.0,True
+1266222406,2026-03-26,World Cup - Qualification Europe,662011,Turkey,659458,Romania,1.0,0.0,True
+1266225810,2026-03-26,World Cup - Qualification Europe,21208,Poland,662862,Albania,2.0,1.0,True
+1266228363,2026-03-26,World Cup - Qualification Europe,653501,Wales,947947,Bosnia & Herzegovina,1.0,1.0,True
 1266223257,2026-03-26,World Cup - Qualification Europe,656054,Czech Republic,661160,Republic of Ireland,2.0,2.0,True
+1266224108,2026-03-26,World Cup - Qualification Europe,18655,Denmark,941139,North Macedonia,4.0,0.0,True
+1266224959,2026-03-26,World Cup - Qualification Europe,654352,Italy,656905,Northern Ireland,2.0,0.0,True
+1266226661,2026-03-26,World Cup - Qualification Europe,658607,Slovakia,946245,Kosovo National Team,3.0,4.0,True
+1266227512,2026-03-26,World Cup - Qualification Europe,657756,Ukraine,5039,Sweden,1.0,3.0,True
+1278045349,2026-03-26,Friendlies,5890,Brazil,2486,France,1.0,2.0,True
 1287356991,2026-03-26,Friendlies,7592,Colombia,3337,Croatia,1.0,2.0,True
+1308195428,2026-03-27,FIFA Series,3977507,New Zealand,936033,Finland,0.0,2.0,True
+1308210746,2026-03-27,FIFA Series,4396199,Solomon Islands,939437,Bulgaria,2.0,10.0,True
+1308214150,2026-03-27,FIFA Series,933480,Azerbaijan,4715324,St. Lucia,6.0,1.0,True
+1308213299,2026-03-27,FIFA Series,1286645,Kenya,937735,Estonia,1.0,1.0,True
+1300206240,2026-03-27,Friendlies,944543,Montenegro,945394,Andorra,2.0,0.0,True
+1286483865,2026-03-27,Friendlies,660309,Austria,1280688,Ghana,5.0,1.0,True
 1289410454,2026-03-27,UEFA–CONMEBOL Finalissima,8443,Spain,22910,Argentina,,,False
+1300207942,2026-03-27,Friendlies,951351,Greece,2026164,Paraguay,0.0,1.0,True
 1278602754,2026-03-27,Friendlies,9294,England,6741,Uruguay,1.0,1.0,True
+1278603605,2026-03-27,Friendlies,13549,Switzerland,22059,Germany,3.0,4.0,True
+1279058039,2026-03-27,Friendlies,952202,Netherlands,928374,Norway,2.0,1.0,True
 1307911194,2026-03-27,Friendlies,8443,Spain,12698,Serbia,3.0,0.0,True
+1307916300,2026-03-28,Friendlies,949649,San Marino,935182,Faroe Islands,1.0,2.0,True
+1288475205,2026-03-28,Friendlies,655203,Hungary,929225,Slovenia,1.0,0.0,True
+1287359544,2026-03-28,Friendlies,4705963,Canada,16102,Iceland,2.0,2.0,True
+1286523011,2026-03-28,Friendlies,943692,Scotland,10996,Japan,0.0,1.0,True
+1279056337,2026-03-28,Friendlies,2029568,USA,1635,Belgium,2.0,5.0,True
+1288809648,2026-03-29,Friendlies,14400,Mexico,23761,Portugal,0.0,0.0,True
+1278604456,2026-03-29,Friendlies,934331,Lithuania,940288,Georgia,0.0,2.0,True
+1289122816,2026-03-29,Friendlies,931778,Armenia,936884,Belarus,1.0,2.0,True
+1308478811,2026-03-29,FIFA Series,6950901,Aruba,942841,Liechtenstein,4.0,1.0,True
+1288810499,2026-03-29,Friendlies,7592,Colombia,2486,France,1.0,3.0,True
+1308203087,2026-03-30,FIFA Series,1305367,Cape Verde,936033,Finland,1.0,1.0,True
+1300561107,2026-03-30,Friendlies,1330897,United Arab Emirates,935182,Faroe Islands,,,False
+1308919629,2026-03-30,FIFA Series,1337705,Indonesia,939437,Bulgaria,0.0,1.0,True
+1308215001,2026-03-30,FIFA Series,933480,Azerbaijan,1276433,Sierra Leone,1.0,1.0,True
+1282951364,2026-03-30,Friendlies,941990,Cyprus,948798,Moldova,3.0,2.0,True
+1308921331,2026-03-30,FIFA Series,1289198,Rwanda,937735,Estonia,2.0,0.0,True
+1278046200,2026-03-30,Friendlies,22059,Germany,1280688,Ghana,2.0,1.0,True
+1308204789,2026-03-31,FIFA Series,932629,Kazakhstan,1297708,Comoros,1.0,0.0,True
+1300213048,2026-03-31,Friendlies,949649,San Marino,945394,Andorra,0.0,0.0,True
+1120401854,2026-03-31,UEFA Nations League,930076,Latvia,930927,Gibraltar,1.0,0.0,True
+1120403556,2026-03-31,UEFA Nations League,938586,Luxembourg,947096,Malta,3.0,0.0,True
+1288813903,2026-03-31,Friendlies,944543,Montenegro,929225,Slovenia,2.0,3.0,True
+1279058890,2026-03-31,Friendlies,928374,Norway,13549,Switzerland,0.0,0.0,True
+1288813052,2026-03-31,Friendlies,20357,Saudi Arabia,12698,Serbia,2.0,1.0,True
+1288476056,2026-03-31,Friendlies,655203,Hungary,951351,Greece,0.0,0.0,True
+1287362948,2026-03-31,Friendlies,2031270,Haiti,16102,Iceland,1.0,1.0,True
+1300565362,2026-03-31,Friendlies,943692,Scotland,1278135,Ivory Coast,0.0,1.0,True
+1308537530,2026-03-31,Friendlies,657756,Ukraine,662862,Albania,1.0,0.0,True
+1286484716,2026-03-31,Friendlies,660309,Austria,15251,South Korea,1.0,0.0,True
+1308479662,2026-03-31,World Cup - Qualification Europe,947947,Bosnia & Herzegovina,654352,Italy,1.0,1.0,True
 1308480513,2026-03-31,World Cup - Qualification Europe,656054,Czech Republic,18655,Denmark,1.0,1.0,True
 1278605307,2026-03-31,Friendlies,9294,England,10996,Japan,0.0,1.0,True
+1308481364,2026-03-31,World Cup - Qualification Europe,946245,Kosovo National Team,662011,Turkey,0.0,1.0,True
+1279059741,2026-03-31,Friendlies,952202,Netherlands,2027866,Ecuador,1.0,1.0,True
+1309100041,2026-03-31,Friendlies,661160,Republic of Ireland,941139,North Macedonia,0.0,0.0,True
+1309101743,2026-03-31,Friendlies,653501,Wales,656905,Northern Ireland,1.0,1.0,True
+1308482215,2026-03-31,World Cup - Qualification Europe,5039,Sweden,21208,Poland,3.0,2.0,True
+1309100892,2026-03-31,Friendlies,658607,Slovakia,659458,Romania,2.0,0.0,True
 1286523862,2026-03-31,Friendlies,8443,Spain,28016,Egypt,0.0,0.0,True
+1279057188,2026-03-31,Friendlies,2029568,USA,23761,Portugal,0.0,2.0,True
 1278047051,2026-04-01,Friendlies,5890,Brazil,3337,Croatia,3.0,1.0,True
+1288815605,2026-04-01,Friendlies,14400,Mexico,1635,Belgium,1.0,1.0,True
+1308538381,2026-05-16,Friendlies,661160,Republic of Ireland,4709367,Grenada,5.0,0.0,True
+1300568766,2026-05-28,Friendlies,661160,Republic of Ireland,1336003,Qatar,1.0,0.0,True
+1314247740,2026-05-29,Friendlies,945394,Andorra,1334301,Iraq,1.0,0.0,True
+1311346681,2026-05-29,Friendlies,947947,Bosnia & Herzegovina,941139,North Macedonia,0.0,0.0,True
+1286524713,2026-05-30,Friendlies,943692,Scotland,4706814,Curaçao,4.0,1.0,True
+1310839485,2026-05-31,Friendlies,10996,Japan,16102,Iceland,1.0,0.0,True
+1300569617,2026-05-31,Friendlies,13549,Switzerland,1318132,Jordan,4.0,1.0,True
 1314825569,2026-05-31,Friendlies,656054,Czech Republic,946245,Kosovo National Team,2.0,1.0,True
+1313790753,2026-05-31,Friendlies,1305367,Cape Verde,12698,Serbia,3.0,0.0,True
+1314629839,2026-05-31,Friendlies,21208,Poland,657756,Ukraine,0.0,2.0,True
+1278047902,2026-05-31,Friendlies,22059,Germany,936033,Finland,4.0,0.0,True
+1312392560,2026-06-01,Friendlies,939437,Bulgaria,944543,Montenegro,0.0,1.0,True
+1312393411,2026-06-01,Friendlies,658607,Slovakia,947096,Malta,2.0,1.0,True
+1307925661,2026-06-01,Friendlies,928374,Norway,5039,Sweden,3.0,1.0,True
+1313792455,2026-06-01,Friendlies,662011,Turkey,941139,North Macedonia,4.0,0.0,True
+1286485567,2026-06-01,Friendlies,660309,Austria,24612,Tunisia,1.0,0.0,True
 1287364650,2026-06-02,Friendlies,3337,Croatia,1635,Belgium,0.0,2.0,True
+1307926512,2026-06-02,Friendlies,940288,Georgia,659458,Romania,1.0,1.0,True
+1307927363,2026-06-02,Friendlies,653501,Wales,1280688,Ghana,1.0,1.0,True
+1315022150,2026-06-03,Friendlies,930927,Gibraltar,6951752,British Virgin Islands,4.0,0.0,True
+1314248591,2026-06-03,Friendlies,662862,Albania,950500,Israel,0.0,1.0,True
+1313793306,2026-06-03,Friendlies,18655,Denmark,1284092,Congo DR,0.0,0.0,True
+1311042023,2026-06-03,Friendlies,938586,Luxembourg,654352,Italy,0.0,1.0,True
+1307928214,2026-06-03,Friendlies,952202,Netherlands,1304516,Algeria,0.0,1.0,True
+1310056565,2026-06-03,Friendlies,21208,Poland,16953,Nigeria,2.0,2.0,True
+1310840336,2026-06-04,Friendlies,929225,Slovenia,941990,Cyprus,1.0,1.0,True
+1313794157,2026-06-04,Friendlies,656905,Northern Ireland,1284943,Guinea,1.0,0.0,True
+1313001876,2026-06-04,Friendlies,945394,Andorra,942841,Liechtenstein,2.0,0.0,True
+1312712536,2026-06-04,Friendlies,5039,Sweden,951351,Greece,2.0,2.0,True
 1314250293,2026-06-04,Friendlies,8443,Spain,1334301,Iraq,1.0,1.0,True
+1307929065,2026-06-04,Friendlies,2486,France,1278135,Ivory Coast,1.0,2.0,True
 1313002727,2026-06-05,Friendlies,4392795,Guatemala,656054,Czech Republic,3.0,1.0,True
+1300570468,2026-06-05,Friendlies,14400,Mexico,12698,Serbia,5.0,1.0,True
+1313795859,2026-06-05,Friendlies,936884,Belarus,1332599,Syria,4.0,1.0,True
+1312395113,2026-06-05,Friendlies,940288,Georgia,1317281,Bahrain,2.0,0.0,True
+1312394262,2026-06-05,Friendlies,658607,Slovakia,944543,Montenegro,2.0,2.0,True
+1310842038,2026-06-05,Friendlies,948798,Moldova,939437,Bulgaria,2.0,2.0,True
+1310841187,2026-06-05,Friendlies,949649,San Marino,1328344,Bangladesh,1.0,2.0,True
+1296079741,2026-06-05,Friendlies,655203,Hungary,936033,Finland,2.0,1.0,True
+1314634094,2026-06-05,Friendlies,933480,Azerbaijan,947096,Malta,0.0,2.0,True
+1300571319,2026-06-05,Friendlies,4705963,Canada,661160,Republic of Ireland,1.0,1.0,True
+1287365501,2026-06-06,Friendlies,1635,Belgium,24612,Tunisia,5.0,0.0,True
+1317611743,2026-06-06,Baltic Cup,934331,Lithuania,930076,Latvia,1.0,1.0,True
+1308540083,2026-06-06,Friendlies,931778,Armenia,932629,Kazakhstan,1.0,1.0,True
+1317612594,2026-06-06,Baltic Cup,937735,Estonia,935182,Faroe Islands,1.0,0.0,True
+1315027256,2026-06-06,Friendlies,930927,Gibraltar,6952603,Cayman Islands,4.0,1.0,True
+1300572170,2026-06-06,Friendlies,23761,Portugal,2028717,Chile,2.0,1.0,True
+1312395964,2026-06-06,Friendlies,659458,Romania,653501,Wales,2.0,1.0,True
+1313003578,2026-06-06,Friendlies,662862,Albania,938586,Luxembourg,0.0,1.0,True
+1278606158,2026-06-06,Friendlies,2029568,USA,22059,Germany,1.0,2.0,True
+1314251144,2026-06-06,Friendlies,10145,Panama,947947,Bosnia & Herzegovina,1.0,1.0,True
+1312396815,2026-06-06,Friendlies,17804,Australia,13549,Switzerland,1.0,1.0,True
 1298194476,2026-06-06,Friendlies,9294,England,3977507,New Zealand,1.0,0.0,True
+1311348383,2026-06-06,Friendlies,2027015,Bolivia,943692,Scotland,0.0,4.0,True
+1313799263,2026-06-06,Friendlies,662011,Turkey,2025313,Venezuela,1.0,2.0,True
+1314252846,2026-06-07,Friendlies,942841,Liechtenstein,941990,Cyprus,0.0,2.0,True
+1313800114,2026-06-07,Friendlies,18655,Denmark,657756,Ukraine,2.0,1.0,True
+1314826420,2026-06-07,Friendlies,946245,Kosovo National Team,945394,Andorra,3.0,0.0,True
 1287366352,2026-06-07,Friendlies,3337,Croatia,929225,Slovenia,2.0,1.0,True
+1311042874,2026-06-07,Friendlies,951351,Greece,654352,Italy,0.0,1.0,True
+1311349234,2026-06-07,Friendlies,27165,Morocco,928374,Norway,1.0,1.0,True
+1314635796,2026-06-08,Friendlies,952202,Netherlands,1335152,Uzbekistan,2.0,1.0,True
+1312398517,2026-06-08,Friendlies,2486,France,656905,Northern Ireland,3.0,1.0,True
 1310843740,2026-06-09,Friendlies,26314,Peru,8443,Spain,1.0,3.0,True
+1308541785,2026-06-09,Friendlies,931778,Armenia,948798,Moldova,1.0,1.0,True
+1319611593,2026-06-09,Baltic Cup,930076,Latvia,935182,Faroe Islands,0.0,1.0,True
+1319612444,2026-06-09,Baltic Cup,934331,Lithuania,937735,Estonia,1.0,0.0,True
+1314254548,2026-06-09,Friendlies,936884,Belarus,1278986,Burkina Faso,2.0,2.0,True
+1298195327,2026-06-09,Friendlies,932629,Kazakhstan,655203,Hungary,3.0,1.0,True
+1314636647,2026-06-09,Friendlies,949649,San Marino,933480,Azerbaijan,2.0,1.0,True
+1310844591,2026-06-10,Friendlies,16102,Iceland,22910,Argentina,3.0,0.0,True
+1310845442,2026-06-10,Friendlies,23761,Portugal,16953,Nigeria,2.0,1.0,True
 1298196178,2026-06-10,Friendlies,9294,England,25463,Costa Rica,3.0,0.0,True
+1312399368,2026-06-11,Friendlies,660309,Austria,4392795,Guatemala,,,False
 1309688933,2026-06-12,World Cup,15251,South Korea,656054,Czech Republic,2.0,1.0,True
+1309689784,2026-06-12,World Cup,4705963,Canada,947947,Bosnia & Herzegovina,1.0,1.0,True
+1267457207,2026-06-13,World Cup,1336003,Qatar,13549,Switzerland,1.0,1.0,True
+1267456356,2026-06-14,World Cup,2031270,Haiti,943692,Scotland,0.0,1.0,True
+1309690635,2026-06-14,World Cup,17804,Australia,662011,Turkey,2.0,0.0,True
+1267458058,2026-06-14,World Cup,22059,Germany,4706814,Curaçao,7.0,1.0,True
+1267459760,2026-06-14,World Cup,952202,Netherlands,10996,Japan,2.0,2.0,True
+1309691486,2026-06-15,World Cup,5039,Sweden,24612,Tunisia,5.0,1.0,True
 1267463164,2026-06-15,World Cup,8443,Spain,1305367,Cape Verde,0.0,0.0,True
+1267460611,2026-06-15,World Cup,1635,Belgium,28016,Egypt,1.0,1.0,True
+1267465717,2026-06-16,World Cup,2486,France,11847,Senegal,3.0,1.0,True
+1309703400,2026-06-16,World Cup,1334301,Iraq,928374,Norway,1.0,4.0,True
+1267464866,2026-06-17,World Cup,660309,Austria,1318132,Jordan,3.0,1.0,True
+1309692337,2026-06-17,World Cup,23761,Portugal,1284092,Congo DR,1.0,1.0,True
 1267466568,2026-06-17,World Cup,9294,England,3337,Croatia,4.0,2.0,True
 1309693188,2026-06-18,World Cup,656054,Czech Republic,1303665,South Africa,1.0,1.0,True
+1309694039,2026-06-18,World Cup,13549,Switzerland,947947,Bosnia & Herzegovina,4.0,1.0,True
+1267471674,2026-06-19,World Cup,943692,Scotland,27165,Morocco,0.0,1.0,True
+1309694890,2026-06-20,World Cup,662011,Turkey,2026164,Paraguay,0.0,1.0,True
+1309695741,2026-06-20,World Cup,952202,Netherlands,5039,Sweden,5.0,1.0,True
+1267474227,2026-06-20,World Cup,22059,Germany,1278135,Ivory Coast,2.0,1.0,True
 1267477631,2026-06-21,World Cup,8443,Spain,20357,Saudi Arabia,4.0,0.0,True
+1267475929,2026-06-21,World Cup,1635,Belgium,19506,Iran,0.0,0.0,True
+1267479333,2026-06-22,World Cup,22910,Argentina,660309,Austria,2.0,0.0,True
+1309704251,2026-06-22,World Cup,2486,France,1334301,Iraq,3.0,0.0,True
+1267481035,2026-06-23,World Cup,928374,Norway,11847,Senegal,3.0,2.0,True
+1267483588,2026-06-23,World Cup,23761,Portugal,1335152,Uzbekistan,5.0,0.0,True
 1267481886,2026-06-23,World Cup,9294,England,1280688,Ghana,0.0,0.0,True
 1267482737,2026-06-23,World Cup,10145,Panama,3337,Croatia,0.0,1.0,True
+1309697443,2026-06-24,World Cup,947947,Bosnia & Herzegovina,1336003,Qatar,3.0,1.0,True
+1267486992,2026-06-24,World Cup,13549,Switzerland,4705963,Canada,2.0,1.0,True
+1267485290,2026-06-24,World Cup,943692,Scotland,5890,Brazil,0.0,3.0,True
 1309698294,2026-06-25,World Cup,656054,Czech Republic,14400,Mexico,0.0,3.0,True
+1267488694,2026-06-25,World Cup,2027866,Ecuador,22059,Germany,2.0,1.0,True
+1267490396,2026-06-25,World Cup,24612,Tunisia,952202,Netherlands,1.0,3.0,True
+1309699145,2026-06-25,World Cup,10996,Japan,5039,Sweden,1.0,1.0,True
+1309699996,2026-06-26,World Cup,662011,Turkey,2029568,USA,3.0,2.0,True
+1267493800,2026-06-26,World Cup,928374,Norway,2486,France,1.0,4.0,True
 1267494651,2026-06-27,World Cup,6741,Uruguay,8443,Spain,0.0,1.0,True
+1267492949,2026-06-27,World Cup,3977507,New Zealand,1635,Belgium,1.0,5.0,True
 1267497204,2026-06-27,World Cup,3337,Croatia,1280688,Ghana,2.0,1.0,True
 1267498906,2026-06-27,World Cup,10145,Panama,9294,England,0.0,2.0,True
+1267496353,2026-06-27,World Cup,7592,Colombia,23761,Portugal,0.0,0.0,True
+1267495502,2026-06-28,World Cup,1304516,Algeria,660309,Austria,3.0,3.0,True
+1331965560,2026-06-29,World Cup,22059,Germany,2026164,Paraguay,1.0,1.0,True
+1329556379,2026-06-30,World Cup,952202,Netherlands,27165,Morocco,1.0,1.0,True
+1331636223,2026-06-30,World Cup,1278135,Ivory Coast,928374,Norway,1.0,2.0,True
+1331966411,2026-06-30,World Cup,2486,France,5039,Sweden,3.0,0.0,True
 1333779041,2026-07-01,World Cup,9294,England,1284092,Congo DR,2.0,1.0,True
+1333779892,2026-07-01,World Cup,1635,Belgium,11847,Senegal,3.0,2.0,True
+1329761470,2026-07-02,World Cup,2029568,USA,947947,Bosnia & Herzegovina,2.0,0.0,True
 1333782445,2026-07-02,World Cup,8443,Spain,660309,Austria,3.0,0.0,True
 1333780743,2026-07-02,World Cup,23761,Portugal,3337,Croatia,2.0,1.0,True
+1333783296,2026-07-03,World Cup,13549,Switzerland,1304516,Algeria,2.0,0.0,True
+1335960154,2026-07-04,World Cup,2026164,Paraguay,2486,France,0.0,1.0,True
+1334453884,2026-07-05,World Cup,5890,Brazil,928374,Norway,1.0,2.0,True
 1336678398,2026-07-06,World Cup,14400,Mexico,9294,England,2.0,3.0,True
 1341820140,2026-07-06,World Cup,23761,Portugal,8443,Spain,0.0,1.0,True
+1336679249,2026-07-07,World Cup,2029568,USA,1635,Belgium,1.0,4.0,True
+1341861839,2026-07-07,World Cup,13549,Switzerland,7592,Colombia,0.0,0.0,True
+1343337473,2026-07-09,World Cup,2486,France,27165,Morocco,2.0,0.0,True
 1346130455,2026-07-10,World Cup,8443,Spain,1635,Belgium,2.0,1.0,True
 1345463271,2026-07-11,World Cup,928374,Norway,9294,England,1.0,2.0,True
+1346862315,2026-07-12,World Cup,22910,Argentina,13549,Switzerland,3.0,1.0,True
 1348947265,2026-07-14,World Cup,2486,France,8443,Spain,0.0,2.0,True
 1349752311,2026-07-15,World Cup,9294,England,22910,Argentina,1.0,2.0,True
 1354677899,2026-07-18,World Cup,2486,France,9294,England,4.0,6.0,True
 1354678750,2026-07-19,World Cup,8443,Spain,22910,Argentina,1.0,0.0,True
-1301087876,2026-09-26,UEFA Nations League,656054,Czech Republic,3337,Croatia,,,False
-1301087025,2026-09-26,UEFA Nations League,9294,England,8443,Spain,,,False
+1370856260,2026-09-23,Friendlies,933480,Azerbaijan,1307920,Tajikistan,1.0,0.0,True
+1395687589,2026-09-23,Friendlies,930927,Gibraltar,1272178,Sao Tome and Principe,0.0,0.0,True
+1315307235,2026-09-24,UEFA Nations League,945394,Andorra,947096,Malta,1.0,2.0,True
+1301075962,2026-09-24,UEFA Nations League,660309,Austria,950500,Israel,3.0,1.0,True
+1301064899,2026-09-24,UEFA Nations League,928374,Norway,18655,Denmark,3.0,2.0,True
+1301062346,2026-09-24,UEFA Nations League,952202,Netherlands,22059,Germany,1.0,1.0,True
+1301063197,2026-09-24,UEFA Nations League,12698,Serbia,951351,Greece,1.0,2.0,True
+1301076813,2026-09-24,UEFA Nations League,946245,Kosovo National Team,661160,Republic of Ireland,1.0,0.0,True
+1301077664,2026-09-24,UEFA Nations League,942841,Liechtenstein,934331,Lithuania,0.0,2.0,True
+1301064048,2026-09-24,UEFA Nations League,23761,Portugal,653501,Wales,1.0,0.0,True
+1315308086,2026-09-25,UEFA Nations League,931778,Armenia,930076,Latvia,2.0,0.0,True
+1301078515,2026-09-25,UEFA Nations League,940288,Georgia,656905,Northern Ireland,0.0,1.0,True
+1301080217,2026-09-25,UEFA Nations League,654352,Italy,1635,Belgium,0.0,2.0,True
+1301081919,2026-09-25,UEFA Nations League,21208,Poland,947947,Bosnia & Herzegovina,0.0,0.0,True
+1301083621,2026-09-25,UEFA Nations League,944543,Montenegro,941990,Cyprus,2.0,1.0,True
+1301079366,2026-09-25,UEFA Nations League,662011,Turkey,2486,France,0.0,1.0,True
+1301081068,2026-09-25,UEFA Nations League,655203,Hungary,657756,Ukraine,0.0,1.0,True
+1301082770,2026-09-25,UEFA Nations League,5039,Sweden,659458,Romania,2.0,1.0,True
+1315355742,2026-09-26,UEFA Nations League,929225,Slovenia,943692,Scotland,0.0,0.0,True
+1315308937,2026-09-26,UEFA Nations League,939437,Bulgaria,938586,Luxembourg,1.0,2.0,True
+1301086174,2026-09-26,UEFA Nations League,16102,Iceland,937735,Estonia,1.0,1.0,True
+1301085323,2026-09-26,UEFA Nations League,935182,Faroe Islands,932629,Kazakhstan,1.0,1.0,True
+1301084472,2026-09-26,UEFA Nations League,949649,San Marino,936033,Finland,0.0,7.0,True
+1301088727,2026-09-26,UEFA Nations League,662862,Albania,936884,Belarus,2.0,0.0,True
+1301087876,2026-09-26,UEFA Nations League,656054,Czech Republic,3337,Croatia,1.0,2.0,True
+1301087025,2026-09-26,UEFA Nations League,9294,England,8443,Spain,2.0,3.0,True
+1301089578,2026-09-26,UEFA Nations League,658607,Slovakia,948798,Moldova,2.0,0.0,True
+1315354040,2026-09-26,UEFA Nations League,941139,North Macedonia,13549,Switzerland,0.0,3.0,True
+1301090429,2026-09-27,UEFA Nations League,934331,Lithuania,933480,Azerbaijan,,,False
+1315309788,2026-09-27,UEFA Nations League,930927,Gibraltar,945394,Andorra,,,False
+1301092982,2026-09-27,UEFA Nations League,660309,Austria,946245,Kosovo National Team,,,False
+1301092131,2026-09-27,UEFA Nations League,18655,Denmark,653501,Wales,,,False
+1301091280,2026-09-27,UEFA Nations League,12698,Serbia,952202,Netherlands,,,False
+1386278082,2026-09-27,Friendlies,947096,Malta,942841,Liechtenstein,,,False
+1301093833,2026-09-27,UEFA Nations League,22059,Germany,951351,Greece,,,False
+1301095535,2026-09-27,UEFA Nations League,950500,Israel,661160,Republic of Ireland,,,False
+1301094684,2026-09-27,UEFA Nations League,928374,Norway,23761,Portugal,,,False
+1301097237,2026-09-28,UEFA Nations League,931778,Armenia,944543,Montenegro,,,False
+1315310639,2026-09-28,UEFA Nations League,930076,Latvia,941990,Cyprus,,,False
+1301096386,2026-09-28,UEFA Nations League,940288,Georgia,657756,Ukraine,,,False
+1301098088,2026-09-28,UEFA Nations League,1635,Belgium,2486,France,,,False
+1301101492,2026-09-28,UEFA Nations League,659458,Romania,947947,Bosnia & Herzegovina,,,False
+1301099790,2026-09-28,UEFA Nations League,656905,Northern Ireland,655203,Hungary,,,False
+1301098939,2026-09-28,UEFA Nations League,662011,Turkey,654352,Italy,,,False
+1301100641,2026-09-28,UEFA Nations League,5039,Sweden,21208,Poland,,,False
+1301104896,2026-09-29,UEFA Nations League,936033,Finland,936884,Belarus,,,False
+1301106598,2026-09-29,UEFA Nations League,948798,Moldova,935182,Faroe Islands,,,False
+1301104045,2026-09-29,UEFA Nations League,949649,San Marino,662862,Albania,,,False
+1301107449,2026-09-29,UEFA Nations League,939437,Bulgaria,937735,Estonia,,,False
 1301102343,2026-09-29,UEFA Nations League,8443,Spain,3337,Croatia,,,False
 1301103194,2026-09-29,UEFA Nations League,656054,Czech Republic,9294,England,,,False
+1315311490,2026-09-29,UEFA Nations League,938586,Luxembourg,16102,Iceland,,,False
+1301105747,2026-09-29,UEFA Nations League,658607,Slovakia,932629,Kazakhstan,,,False
+1315358295,2026-09-29,UEFA Nations League,929225,Slovenia,941139,North Macedonia,,,False
+1315349785,2026-09-29,UEFA Nations League,943692,Scotland,13549,Switzerland,,,False
+1370857962,2026-09-30,Friendlies,934331,Lithuania,945394,Andorra,,,False
+1301108300,2026-10-01,UEFA Nations League,933480,Azerbaijan,942841,Liechtenstein,,,False
+1301112555,2026-10-01,UEFA Nations League,661160,Republic of Ireland,660309,Austria,,,False
+1301110853,2026-10-01,UEFA Nations League,18655,Denmark,23761,Portugal,,,False
+1301109151,2026-10-01,UEFA Nations League,22059,Germany,12698,Serbia,,,False
+1315312341,2026-10-01,UEFA Nations League,947096,Malta,930927,Gibraltar,,,False
+1301110002,2026-10-01,UEFA Nations League,951351,Greece,952202,Netherlands,,,False
+1301113406,2026-10-01,UEFA Nations League,950500,Israel,946245,Kosovo National Team,,,False
+1301111704,2026-10-01,UEFA Nations League,653501,Wales,928374,Norway,,,False
+1301114257,2026-10-02,UEFA Nations League,932629,Kazakhstan,948798,Moldova,,,False
+1301120214,2026-10-02,UEFA Nations League,941990,Cyprus,931778,Armenia,,,False
+1315313192,2026-10-02,UEFA Nations League,930076,Latvia,944543,Montenegro,,,False
+1301115959,2026-10-02,UEFA Nations League,1635,Belgium,662011,Turkey,,,False
+1301119363,2026-10-02,UEFA Nations League,947947,Bosnia & Herzegovina,5039,Sweden,,,False
+1301121065,2026-10-02,UEFA Nations League,935182,Faroe Islands,658607,Slovakia,,,False
+1301115108,2026-10-02,UEFA Nations League,2486,France,654352,Italy,,,False
+1301116810,2026-10-02,UEFA Nations League,655203,Hungary,940288,Georgia,,,False
+1301117661,2026-10-02,UEFA Nations League,657756,Ukraine,656905,Northern Ireland,,,False
+1301118512,2026-10-02,UEFA Nations League,21208,Poland,659458,Romania,,,False
+1301121916,2026-10-03,UEFA Nations League,936033,Finland,662862,Albania,,,False
+1301123618,2026-10-03,UEFA Nations League,936884,Belarus,949649,San Marino,,,False
+1301124469,2026-10-03,UEFA Nations League,16102,Iceland,939437,Bulgaria,,,False
 1301122767,2026-10-03,UEFA Nations League,3337,Croatia,9294,England,,,False
+1315314043,2026-10-03,UEFA Nations League,937735,Estonia,938586,Luxembourg,,,False
 1301125320,2026-10-03,UEFA Nations League,8443,Spain,656054,Czech Republic,,,False
+1315357444,2026-10-03,UEFA Nations League,941139,North Macedonia,943692,Scotland,,,False
+1315351487,2026-10-03,UEFA Nations League,13549,Switzerland,929225,Slovenia,,,False
+1301126171,2026-10-04,UEFA Nations League,933480,Azerbaijan,934331,Lithuania,,,False
+1315314894,2026-10-04,UEFA Nations League,947096,Malta,945394,Andorra,,,False
+1301127022,2026-10-04,UEFA Nations League,946245,Kosovo National Team,660309,Austria,,,False
+1301130426,2026-10-04,UEFA Nations League,653501,Wales,18655,Denmark,,,False
+1301127873,2026-10-04,UEFA Nations League,951351,Greece,22059,Germany,,,False
+1301131277,2026-10-04,UEFA Nations League,661160,Republic of Ireland,950500,Israel,,,False
+1301128724,2026-10-04,UEFA Nations League,952202,Netherlands,12698,Serbia,,,False
+1301129575,2026-10-04,UEFA Nations League,23761,Portugal,928374,Norway,,,False
+1315315745,2026-10-05,UEFA Nations League,941990,Cyprus,930076,Latvia,,,False
+1301137234,2026-10-05,UEFA Nations League,944543,Montenegro,931778,Armenia,,,False
+1301132128,2026-10-05,UEFA Nations League,2486,France,1635,Belgium,,,False
+1301135532,2026-10-05,UEFA Nations League,947947,Bosnia & Herzegovina,21208,Poland,,,False
+1301134681,2026-10-05,UEFA Nations League,656905,Northern Ireland,940288,Georgia,,,False
+1370859664,2026-10-05,Friendlies,942841,Liechtenstein,930927,Gibraltar,,,False
+1301133830,2026-10-05,UEFA Nations League,657756,Ukraine,655203,Hungary,,,False
+1301132979,2026-10-05,UEFA Nations League,654352,Italy,662011,Turkey,,,False
+1301136383,2026-10-05,UEFA Nations League,659458,Romania,5039,Sweden,,,False
+1301138085,2026-10-06,UEFA Nations League,932629,Kazakhstan,935182,Faroe Islands,,,False
+1301140638,2026-10-06,UEFA Nations League,662862,Albania,949649,San Marino,,,False
+1301141489,2026-10-06,UEFA Nations League,936884,Belarus,936033,Finland,,,False
+1315316596,2026-10-06,UEFA Nations League,938586,Luxembourg,939437,Bulgaria,,,False
 1301138936,2026-10-06,UEFA Nations League,3337,Croatia,8443,Spain,,,False
 1301139787,2026-10-06,UEFA Nations League,9294,England,656054,Czech Republic,,,False
+1301143191,2026-10-06,UEFA Nations League,937735,Estonia,16102,Iceland,,,False
+1301142340,2026-10-06,UEFA Nations League,948798,Moldova,658607,Slovakia,,,False
+1315353189,2026-10-06,UEFA Nations League,13549,Switzerland,941139,North Macedonia,,,False
+1315354891,2026-10-06,UEFA Nations League,943692,Scotland,929225,Slovenia,,,False
+1301144893,2026-11-12,UEFA Nations League,931778,Armenia,941990,Cyprus,,,False
+1301144042,2026-11-12,UEFA Nations League,662011,Turkey,1635,Belgium,,,False
+1301148297,2026-11-12,UEFA Nations League,662862,Albania,936033,Finland,,,False
+1301149148,2026-11-12,UEFA Nations League,949649,San Marino,936884,Belarus,,,False
 1301147446,2026-11-12,UEFA Nations League,9294,England,3337,Croatia,,,False
 1301146595,2026-11-12,UEFA Nations League,656054,Czech Republic,8443,Spain,,,False
+1301145744,2026-11-12,UEFA Nations League,654352,Italy,2486,France,,,False
+1315317447,2026-11-12,UEFA Nations League,944543,Montenegro,930076,Latvia,,,False
+1301152552,2026-11-13,UEFA Nations League,948798,Moldova,932629,Kazakhstan,,,False
+1315319149,2026-11-13,UEFA Nations League,945394,Andorra,930927,Gibraltar,,,False
+1301154254,2026-11-13,UEFA Nations League,942841,Liechtenstein,933480,Azerbaijan,,,False
+1301153403,2026-11-13,UEFA Nations League,939437,Bulgaria,16102,Iceland,,,False
+1315318298,2026-11-13,UEFA Nations League,938586,Luxembourg,937735,Estonia,,,False
+1301151701,2026-11-13,UEFA Nations League,658607,Slovakia,935182,Faroe Islands,,,False
+1301149999,2026-11-13,UEFA Nations League,12698,Serbia,22059,Germany,,,False
+1301150850,2026-11-13,UEFA Nations League,952202,Netherlands,951351,Greece,,,False
+1315356593,2026-11-13,UEFA Nations League,943692,Scotland,941139,North Macedonia,,,False
+1315352338,2026-11-13,UEFA Nations League,929225,Slovenia,13549,Switzerland,,,False
+1301155105,2026-11-14,UEFA Nations League,946245,Kosovo National Team,950500,Israel,,,False
+1301156807,2026-11-14,UEFA Nations League,940288,Georgia,655203,Hungary,,,False
+1301155956,2026-11-14,UEFA Nations League,928374,Norway,653501,Wales,,,False
+1301159360,2026-11-14,UEFA Nations League,660309,Austria,661160,Republic of Ireland,,,False
+1301161062,2026-11-14,UEFA Nations League,5039,Sweden,947947,Bosnia & Herzegovina,,,False
+1301157658,2026-11-14,UEFA Nations League,23761,Portugal,18655,Denmark,,,False
+1301158509,2026-11-14,UEFA Nations League,656905,Northern Ireland,657756,Ukraine,,,False
+1301160211,2026-11-14,UEFA Nations League,659458,Romania,21208,Poland,,,False
+1315320000,2026-11-15,UEFA Nations League,930076,Latvia,931778,Armenia,,,False
+1301161913,2026-11-15,UEFA Nations League,941990,Cyprus,944543,Montenegro,,,False
+1301162764,2026-11-15,UEFA Nations League,936884,Belarus,662862,Albania,,,False
+1301163615,2026-11-15,UEFA Nations League,936033,Finland,949649,San Marino,,,False
+1301165317,2026-11-15,UEFA Nations League,1635,Belgium,654352,Italy,,,False
 1301167019,2026-11-15,UEFA Nations League,3337,Croatia,656054,Czech Republic,,,False
 1301166168,2026-11-15,UEFA Nations League,8443,Spain,9294,England,,,False
+1301164466,2026-11-15,UEFA Nations League,2486,France,662011,Turkey,,,False
+1394453639,2026-11-16,Friendlies,945394,Andorra,933480,Azerbaijan,,,False
+1301168721,2026-11-16,UEFA Nations League,935182,Faroe Islands,948798,Moldova,,,False
+1301167870,2026-11-16,UEFA Nations League,932629,Kazakhstan,658607,Slovakia,,,False
+1301169572,2026-11-16,UEFA Nations League,937735,Estonia,939437,Bulgaria,,,False
+1315320851,2026-11-16,UEFA Nations League,16102,Iceland,938586,Luxembourg,,,False
+1301170423,2026-11-16,UEFA Nations League,934331,Lithuania,942841,Liechtenstein,,,False
+1301171274,2026-11-16,UEFA Nations League,22059,Germany,952202,Netherlands,,,False
+1315321702,2026-11-16,UEFA Nations League,930927,Gibraltar,947096,Malta,,,False
+1301172125,2026-11-16,UEFA Nations League,951351,Greece,12698,Serbia,,,False
+1315359146,2026-11-16,UEFA Nations League,941139,North Macedonia,929225,Slovenia,,,False
+1315350636,2026-11-16,UEFA Nations League,13549,Switzerland,943692,Scotland,,,False
+1301176380,2026-11-17,UEFA Nations League,950500,Israel,660309,Austria,,,False
+1301178933,2026-11-17,UEFA Nations League,947947,Bosnia & Herzegovina,659458,Romania,,,False
+1301173827,2026-11-17,UEFA Nations League,18655,Denmark,928374,Norway,,,False
+1301174678,2026-11-17,UEFA Nations League,657756,Ukraine,940288,Georgia,,,False
+1301175529,2026-11-17,UEFA Nations League,655203,Hungary,656905,Northern Ireland,,,False
+1301177231,2026-11-17,UEFA Nations League,661160,Republic of Ireland,946245,Kosovo National Team,,,False
+1301178082,2026-11-17,UEFA Nations League,21208,Poland,5039,Sweden,,,False
+1301172976,2026-11-17,UEFA Nations League,653501,Wales,23761,Portugal,,,False
