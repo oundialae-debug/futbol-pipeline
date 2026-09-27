@@ -92,4 +92,13 @@ jobs:
             exit 0
           fi
           git commit -m "Nations League ciclo: $(date -u +%Y-%m-%dT%H:%M)"
-          for i in 1 2 3; do git pull --rebase origin main && git push && break; sleep 5; done
+          # si otro commit (p. ej. onces escritos a mano) tocó los mismos ficheros, el
+          # rebase choca: se aborta y se reintenta. Si al final no sube, el paso FALLA
+          # (27/09: chocó con un commit manual y el paso salió "success" sin subir nada)
+          for i in 1 2 3; do
+            if git pull --rebase origin main && git push; then exit 0; fi
+            git rebase --abort 2>/dev/null || true
+            sleep 5
+          done
+          echo "::error::No se pudo subir la pasada (conflicto con otro commit en main)"
+          exit 1
