@@ -532,7 +532,7 @@ match_id,fecha,competicion,local_id,local,visitante_id,visitante,goles_l,goles_v
 1301087025,2026-09-26,UEFA Nations League,9294,England,8443,Spain,2.0,3.0,True
 1301089578,2026-09-26,UEFA Nations League,658607,Slovakia,948798,Moldova,2.0,0.0,True
 1315354040,2026-09-26,UEFA Nations League,941139,North Macedonia,13549,Switzerland,0.0,3.0,True
-1301090429,2026-09-27,UEFA Nations League,934331,Lithuania,933480,Azerbaijan,,,False
+1301090429,2026-09-27,UEFA Nations League,934331,Lithuania,933480,Azerbaijan,1.0,1.0,False
 1315309788,2026-09-27,UEFA Nations League,930927,Gibraltar,945394,Andorra,,,False
 1301092982,2026-09-27,UEFA Nations League,660309,Austria,946245,Kosovo National Team,,,False
 1301092131,2026-09-27,UEFA Nations League,18655,Denmark,653501,Wales,,,False
