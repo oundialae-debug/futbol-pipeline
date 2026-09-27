@@ -1,0 +1,646 @@
+match_id,fecha,ronda,local_id,local,visitante_id,visitante,goles_l,goles_v,estado
+1275057488,2026-02-13T20:00:00.000Z,Regular Season - 1,7131313,San Miguel FC,1661085,Central Norte,1.0,0.0,Finished
+1275048127,2026-02-14T00:00:00.000Z,Regular Season - 1,396499,Atletico de Rafaela,410966,Almagro,0.0,0.0,Finished
+1275054084,2026-02-14T00:30:00.000Z,Regular Season - 1,374373,Godoy Cruz,14137596,Ciudad de Bolívar,1.0,1.0,Finished
+1275053233,2026-02-14T01:00:00.000Z,Regular Season - 1,1641512,Gimnasia Y Tiro,7129611,Colegiales,2.0,1.0,Finished
+1275046425,2026-02-14T20:00:00.000Z,Regular Season - 1,395648,All Boys,397350,Atletico Mitre,2.0,1.0,Finished
+1275058339,2026-02-14T20:00:00.000Z,Regular Season - 1,1644916,San Telmo,400754,Ferro Carril Oeste,0.0,2.0,Finished
+1275051531,2026-02-14T20:00:00.000Z,Regular Season - 1,399903,Deportivo Morón,908801,Defensores De Belgrano,1.0,1.0,Finished
+1275044723,2026-02-14T20:00:00.000Z,Regular Season - 1,2064459,Acassuso,1656830,Chaco For Ever,2.0,0.0,Finished
+1275045574,2026-02-14T21:00:00.000Z,Regular Season - 1,393946,Agropecuario,1663638,Deportivo Maipú,2.0,1.0,Finished
+1275059190,2026-02-14T22:00:00.000Z,Regular Season - 1,1672999,Tristan Suárez,387138,Temperley,0.0,0.0,Finished
+1275050680,2026-02-14T23:00:00.000Z,Regular Season - 1,382032,Colon Santa Fe,1642363,Deportivo Madryn,2.0,1.0,Finished
+1275049829,2026-02-15T20:00:00.000Z,Regular Season - 1,3378403,Club Atlético Güemes,412668,Nueva Chicago,0.0,1.0,Finished
+1275048978,2026-02-15T20:00:00.000Z,Regular Season - 1,381181,Chacarita Juniors,393095,San Martín San Juan,1.0,1.0,Finished
+1275054935,2026-02-15T20:30:00.000Z,Regular Season - 1,411817,Los Andes,7127909,Almirante Brown,0.0,0.0,Finished
+1275055786,2026-02-15T22:00:00.000Z,Regular Season - 1,1666191,Racing de Córdoba,1648320,CA Estudiantes,1.0,0.0,Finished
+1275056637,2026-02-15T22:00:00.000Z,Regular Season - 1,413519,San Martín de Tucumán,378628,Patronato,0.0,0.0,Finished
+1275052382,2026-02-16T20:00:00.000Z,Regular Season - 1,408413,Gimnasia Jujuy,1671297,Midland,2.0,1.0,Finished
+1275047276,2026-02-16T20:00:00.000Z,Regular Season - 1,1658532,Atlanta,409264,Quilmes,1.0,0.0,Finished
+1275060041,2026-02-21T20:00:00.000Z,Regular Season - 2,2064459,Acassuso,1666191,Racing de Córdoba,3.0,0.0,Finished
+1275071104,2026-02-21T20:00:00.000Z,Regular Season - 2,412668,Nueva Chicago,1672999,Tristan Suárez,0.0,0.0,Finished
+1275060892,2026-02-21T20:00:00.000Z,Regular Season - 2,410966,Almagro,413519,San Martín de Tucumán,0.0,1.0,Finished
+1275070253,2026-02-21T22:00:00.000Z,Regular Season - 2,400754,Ferro Carril Oeste,7131313,San Miguel FC,1.0,1.0,Finished
+1275068551,2026-02-21T22:00:00.000Z,Regular Season - 2,1642363,Deportivo Madryn,399903,Deportivo Morón,1.0,1.0,Finished
+1275073657,2026-02-21T23:00:00.000Z,Regular Season - 2,393095,San Martín San Juan,3378403,Club Atlético Güemes,2.0,1.0,Finished
+1275071955,2026-02-21T23:00:00.000Z,Regular Season - 2,378628,Patronato,1641512,Gimnasia Y Tiro,1.0,2.0,Finished
+1275072806,2026-02-21T23:00:00.000Z,Regular Season - 2,409264,Quilmes,1671297,Midland,0.0,0.0,Finished
+1275069402,2026-02-21T23:00:00.000Z,Regular Season - 2,1663638,Deportivo Maipú,396499,Atletico de Rafaela,2.0,1.0,Finished
+1275065147,2026-02-22T00:00:00.000Z,Regular Season - 2,1656830,Chaco For Ever,1644916,San Telmo,2.0,2.0,Finished
+1275061743,2026-02-22T20:00:00.000Z,Regular Season - 2,7127909,Almirante Brown,395648,All Boys,2.0,1.0,Finished
+1275064296,2026-02-22T20:00:00.000Z,Regular Season - 2,381181,Chacarita Juniors,408413,Gimnasia Jujuy,3.0,1.0,Finished
+1275067700,2026-02-22T20:00:00.000Z,Regular Season - 2,908801,Defensores De Belgrano,374373,Godoy Cruz,1.0,1.0,Finished
+1275065998,2026-02-22T20:00:00.000Z,Regular Season - 2,14137596,Ciudad de Bolívar,411817,Los Andes,1.0,1.0,Finished
+1275063445,2026-02-22T21:00:00.000Z,Regular Season - 2,1661085,Central Norte,382032,Colon Santa Fe,0.0,0.0,Finished
+1275066849,2026-02-22T23:00:00.000Z,Regular Season - 2,7129611,Colegiales,1658532,Atlanta,1.0,0.0,Finished
+1275074508,2026-02-22T23:00:00.000Z,Regular Season - 2,387138,Temperley,393946,Agropecuario,1.0,0.0,Finished
+1275062594,2026-02-23T13:45:00.000Z,Regular Season - 2,397350,Atletico Mitre,1648320,CA Estudiantes,1.0,0.0,Finished
+1275083018,2026-02-28T01:00:00.000Z,Regular Season - 3,1641512,Gimnasia Y Tiro,410966,Almagro,2.0,0.0,Finished
+1275084720,2026-02-28T20:00:00.000Z,Regular Season - 3,411817,Los Andes,908801,Defensores De Belgrano,0.0,1.0,Finished
+1275088124,2026-02-28T20:00:00.000Z,Regular Season - 3,7131313,San Miguel FC,1656830,Chaco For Ever,2.0,0.0,Finished
+1275075359,2026-02-28T23:30:00.000Z,Regular Season - 3,393946,Agropecuario,412668,Nueva Chicago,0.0,2.0,Finished
+1275080465,2026-02-28T23:30:00.000Z,Regular Season - 3,382032,Colon Santa Fe,400754,Ferro Carril Oeste,1.0,1.0,Finished
+1275081316,2026-03-01T20:00:00.000Z,Regular Season - 3,399903,Deportivo Morón,1661085,Central Norte,2.0,0.0,Finished
+1275079614,2026-03-01T20:00:00.000Z,Regular Season - 3,3378403,Club Atlético Güemes,381181,Chacarita Juniors,2.0,1.0,Finished
+1275088975,2026-03-01T20:00:00.000Z,Regular Season - 3,1644916,San Telmo,2064459,Acassuso,2.0,3.0,Finished
+1275085571,2026-03-01T20:00:00.000Z,Regular Season - 3,1671297,Midland,7129611,Colegiales,2.0,0.0,Finished
+1275076210,2026-03-01T20:00:00.000Z,Regular Season - 3,395648,All Boys,14137596,Ciudad de Bolívar,0.0,0.0,Finished
+1275083869,2026-03-01T20:00:00.000Z,Regular Season - 3,374373,Godoy Cruz,1642363,Deportivo Madryn,0.0,0.0,Finished
+1275082167,2026-03-01T20:00:00.000Z,Regular Season - 3,408413,Gimnasia Jujuy,409264,Quilmes,1.0,0.0,Finished
+1275087273,2026-03-01T20:30:00.000Z,Regular Season - 3,413519,San Martín de Tucumán,1663638,Deportivo Maipú,2.0,2.0,Finished
+1275086422,2026-03-01T21:00:00.000Z,Regular Season - 3,1666191,Racing de Córdoba,397350,Atletico Mitre,0.0,0.0,Finished
+1275078763,2026-03-01T23:30:00.000Z,Regular Season - 3,1648320,CA Estudiantes,7127909,Almirante Brown,0.0,1.0,Finished
+1275077912,2026-03-01T23:30:00.000Z,Regular Season - 3,396499,Atletico de Rafaela,387138,Temperley,1.0,0.0,Finished
+1275089826,2026-03-01T23:30:00.000Z,Regular Season - 3,1672999,Tristan Suárez,393095,San Martín San Juan,2.0,1.0,Finished
+1275077061,2026-03-03T00:00:00.000Z,Regular Season - 3,1658532,Atlanta,378628,Patronato,0.0,0.0,Finished
+1275117909,2026-03-14T00:00:00.000Z,Regular Season - 5,1666191,Racing de Córdoba,7127909,Almirante Brown,2.0,1.0,Finished
+1275108548,2026-03-14T00:00:00.000Z,Regular Season - 5,396499,Atletico de Rafaela,393095,San Martín San Juan,1.0,0.0,Finished
+1275115356,2026-03-14T17:00:00.000Z,Regular Season - 5,411817,Los Andes,1661085,Central Norte,0.0,0.0,Finished
+1275119611,2026-03-14T19:00:00.000Z,Regular Season - 5,7131313,San Miguel FC,1644916,San Telmo,1.0,1.0,Finished
+1275111952,2026-03-14T19:00:00.000Z,Regular Season - 5,399903,Deportivo Morón,1656830,Chaco For Ever,3.0,2.0,Finished
+1275106846,2026-03-14T19:00:00.000Z,Regular Season - 5,395648,All Boys,1642363,Deportivo Madryn,1.0,0.0,Finished
+1275109399,2026-03-14T19:00:00.000Z,Regular Season - 5,1648320,CA Estudiantes,908801,Defensores De Belgrano,0.0,2.0,Finished
+1275114505,2026-03-14T21:00:00.000Z,Regular Season - 5,374373,Godoy Cruz,400754,Ferro Carril Oeste,2.0,1.0,Finished
+1275120462,2026-03-14T22:00:00.000Z,Regular Season - 5,1672999,Tristan Suárez,3378403,Club Atlético Güemes,1.0,1.0,Finished
+1275111101,2026-03-14T23:00:00.000Z,Regular Season - 5,382032,Colon Santa Fe,2064459,Acassuso,1.0,0.0,Finished
+1275117058,2026-03-14T23:00:00.000Z,Regular Season - 5,409264,Quilmes,378628,Patronato,3.0,0.0,Finished
+1275116207,2026-03-15T19:00:00.000Z,Regular Season - 5,1671297,Midland,410966,Almagro,1.0,1.0,Finished
+1275113654,2026-03-15T19:00:00.000Z,Regular Season - 5,1641512,Gimnasia Y Tiro,387138,Temperley,0.0,0.0,Finished
+1275105995,2026-03-15T19:00:00.000Z,Regular Season - 5,393946,Agropecuario,381181,Chacarita Juniors,2.0,0.0,Finished
+1275110250,2026-03-15T20:00:00.000Z,Regular Season - 5,397350,Atletico Mitre,14137596,Ciudad de Bolívar,1.0,1.0,Finished
+1275112803,2026-03-15T20:00:00.000Z,Regular Season - 5,408413,Gimnasia Jujuy,7129611,Colegiales,2.0,1.0,Finished
+1275118760,2026-03-15T21:00:00.000Z,Regular Season - 5,413519,San Martín de Tucumán,412668,Nueva Chicago,2.0,0.0,Finished
+1275107697,2026-03-17T00:00:00.000Z,Regular Season - 5,1658532,Atlanta,1663638,Deportivo Maipú,3.0,1.0,Finished
+1275132376,2026-03-21T00:30:00.000Z,Regular Season - 6,393095,San Martín San Juan,413519,San Martín de Tucumán,1.0,1.0,Finished
+1275122164,2026-03-21T17:00:00.000Z,Regular Season - 6,410966,Almagro,409264,Quilmes,1.0,0.0,Finished
+1275127270,2026-03-21T19:00:00.000Z,Regular Season - 6,908801,Defensores De Belgrano,397350,Atletico Mitre,0.0,0.0,Finished
+1275121313,2026-03-21T19:00:00.000Z,Regular Season - 6,2064459,Acassuso,399903,Deportivo Morón,0.0,3.0,Finished
+1275133227,2026-03-21T19:00:00.000Z,Regular Season - 6,7131313,San Miguel FC,1666191,Racing de Córdoba,1.0,2.0,Finished
+1275125568,2026-03-21T20:00:00.000Z,Regular Season - 6,14137596,Ciudad de Bolívar,7127909,Almirante Brown,0.0,0.0,Finished
+1275129823,2026-03-21T22:00:00.000Z,Regular Season - 6,400754,Ferro Carril Oeste,411817,Los Andes,0.0,2.0,Finished
+1275135780,2026-03-21T22:00:00.000Z,Regular Season - 6,1672999,Tristan Suárez,408413,Gimnasia Jujuy,3.0,0.0,Finished
+1275128121,2026-03-21T22:00:00.000Z,Regular Season - 6,1642363,Deportivo Madryn,1648320,CA Estudiantes,3.0,0.0,Finished
+1275124717,2026-03-22T00:00:00.000Z,Regular Season - 6,1656830,Chaco For Ever,374373,Godoy Cruz,1.0,1.0,Finished
+1275131525,2026-03-22T19:00:00.000Z,Regular Season - 6,378628,Patronato,7129611,Colegiales,2.0,0.0,Finished
+1275123866,2026-03-22T19:00:00.000Z,Regular Season - 6,381181,Chacarita Juniors,396499,Atletico de Rafaela,0.0,1.0,Finished
+1275134929,2026-03-22T19:00:00.000Z,Regular Season - 6,387138,Temperley,1658532,Atlanta,2.0,1.0,Finished
+1275134078,2026-03-22T19:00:00.000Z,Regular Season - 6,1644916,San Telmo,382032,Colon Santa Fe,3.0,1.0,Finished
+1275126419,2026-03-22T20:00:00.000Z,Regular Season - 6,3378403,Club Atlético Güemes,393946,Agropecuario,1.0,1.0,Finished
+1275123015,2026-03-22T20:00:00.000Z,Regular Season - 6,1661085,Central Norte,395648,All Boys,1.0,0.0,Finished
+1275128972,2026-03-22T22:00:00.000Z,Regular Season - 6,1663638,Deportivo Maipú,1671297,Midland,0.0,1.0,Finished
+1275130674,2026-03-23T19:00:00.000Z,Regular Season - 6,412668,Nueva Chicago,1641512,Gimnasia Y Tiro,3.0,1.0,Finished
+1275140886,2026-03-27T21:15:00.000Z,Regular Season - 7,14137596,Ciudad de Bolívar,393946,Agropecuario,0.0,0.0,Finished
+1275150247,2026-03-28T01:10:00.000Z,Regular Season - 7,393095,San Martín San Juan,1666191,Racing de Córdoba,0.0,0.0,Finished
+1275140035,2026-03-28T01:10:00.000Z,Regular Season - 7,1656830,Chaco For Ever,408413,Gimnasia Jujuy,1.0,2.0,Finished
+1275138333,2026-03-28T16:00:00.000Z,Regular Season - 7,1658532,Atlanta,400754,Ferro Carril Oeste,0.0,1.0,Finished
+1275136631,2026-03-28T18:30:00.000Z,Regular Season - 7,410966,Almagro,399903,Deportivo Morón,2.0,0.0,Finished
+1275137482,2026-03-28T19:00:00.000Z,Regular Season - 7,7127909,Almirante Brown,1672999,Tristan Suárez,0.0,1.0,Finished
+1275142588,2026-03-28T23:00:00.000Z,Regular Season - 7,7129611,Colegiales,7131313,San Miguel FC,0.0,0.0,Finished
+1275146843,2026-03-29T18:00:00.000Z,Regular Season - 7,411817,Los Andes,387138,Temperley,0.0,1.0,Finished
+1275148545,2026-03-29T18:30:00.000Z,Regular Season - 7,412668,Nueva Chicago,395648,All Boys,0.0,0.0,Finished
+1275151098,2026-03-29T19:00:00.000Z,Regular Season - 7,1644916,San Telmo,409264,Quilmes,0.0,3.0,Finished
+1275144290,2026-03-29T19:00:00.000Z,Regular Season - 7,1642363,Deportivo Madryn,413519,San Martín de Tucumán,1.0,1.0,Finished
+1275139184,2026-03-29T19:00:00.000Z,Regular Season - 7,381181,Chacarita Juniors,1648320,CA Estudiantes,0.0,3.0,Finished
+1275149396,2026-03-29T19:00:00.000Z,Regular Season - 7,378628,Patronato,382032,Colon Santa Fe,0.0,2.0,Finished
+1275145141,2026-03-29T20:00:00.000Z,Regular Season - 7,1663638,Deportivo Maipú,374373,Godoy Cruz,0.0,1.0,Finished
+1275141737,2026-03-29T20:00:00.000Z,Regular Season - 7,3378403,Club Atlético Güemes,397350,Atletico Mitre,2.0,2.0,Finished
+1275145992,2026-03-29T20:30:00.000Z,Regular Season - 7,1641512,Gimnasia Y Tiro,1661085,Central Norte,0.0,1.0,Finished
+1275143439,2026-03-30T19:00:00.000Z,Regular Season - 7,908801,Defensores De Belgrano,396499,Atletico de Rafaela,1.0,1.0,Finished
+1275161310,2026-04-04T01:00:00.000Z,Regular Season - 8,1641512,Gimnasia Y Tiro,393095,San Martín San Juan,1.0,1.0,Finished
+1275152800,2026-04-04T18:30:00.000Z,Regular Season - 8,395648,All Boys,400754,Ferro Carril Oeste,0.0,0.0,Finished
+1275151949,2026-04-04T19:00:00.000Z,Regular Season - 8,393946,Agropecuario,1672999,Tristan Suárez,0.0,2.0,Finished
+1275163863,2026-04-04T19:00:00.000Z,Regular Season - 8,1671297,Midland,387138,Temperley,0.0,0.0,Finished
+1275157906,2026-04-04T19:00:00.000Z,Regular Season - 8,7129611,Colegiales,410966,Almagro,1.0,0.0,Finished
+1275156204,2026-04-04T19:00:00.000Z,Regular Season - 8,1648320,CA Estudiantes,1661085,Central Norte,1.0,0.0,Finished
+1275162161,2026-04-04T19:30:00.000Z,Regular Season - 8,374373,Godoy Cruz,2064459,Acassuso,2.0,0.0,Finished
+1275166416,2026-04-04T20:30:00.000Z,Regular Season - 8,413519,San Martín de Tucumán,381181,Chacarita Juniors,1.0,1.0,Finished
+1275158757,2026-04-04T22:00:00.000Z,Regular Season - 8,382032,Colon Santa Fe,7131313,San Miguel FC,3.0,0.0,Finished
+1275163012,2026-04-05T18:00:00.000Z,Regular Season - 8,411817,Los Andes,1656830,Chaco For Ever,2.0,0.0,Finished
+1275153651,2026-04-05T18:30:00.000Z,Regular Season - 8,7127909,Almirante Brown,908801,Defensores De Belgrano,0.0,2.0,Finished
+1275159608,2026-04-05T18:30:00.000Z,Regular Season - 8,399903,Deportivo Morón,1644916,San Telmo,1.0,0.0,Finished
+1275164714,2026-04-05T20:00:00.000Z,Regular Season - 8,409264,Quilmes,1663638,Deportivo Maipú,2.0,1.0,Finished
+1275165565,2026-04-05T20:00:00.000Z,Regular Season - 8,1666191,Racing de Córdoba,14137596,Ciudad de Bolívar,0.0,2.0,Finished
+1275160459,2026-04-05T20:00:00.000Z,Regular Season - 8,408413,Gimnasia Jujuy,378628,Patronato,2.0,0.0,Finished
+1275157055,2026-04-05T22:00:00.000Z,Regular Season - 8,397350,Atletico Mitre,1642363,Deportivo Madryn,1.0,3.0,Finished
+1275155353,2026-04-05T23:00:00.000Z,Regular Season - 8,396499,Atletico de Rafaela,3378403,Club Atlético Güemes,1.0,2.0,Finished
+1275154502,2026-04-08T00:00:00.000Z,Regular Season - 8,1658532,Atlanta,412668,Nueva Chicago,1.0,2.0,Finished
+1275147694,2026-04-08T23:00:00.000Z,Regular Season - 7,1671297,Midland,2064459,Acassuso,1.0,0.0,Finished
+1275180032,2026-04-11T18:30:00.000Z,Regular Season - 9,1644916,San Telmo,374373,Godoy Cruz,2.0,0.0,Finished
+1275179181,2026-04-11T18:30:00.000Z,Regular Season - 9,7131313,San Miguel FC,399903,Deportivo Morón,2.0,1.0,Finished
+1275168969,2026-04-11T18:30:00.000Z,Regular Season - 9,410966,Almagro,378628,Patronato,0.0,1.0,Finished
+1275176628,2026-04-12T18:00:00.000Z,Regular Season - 9,400754,Ferro Carril Oeste,1648320,CA Estudiantes,0.0,1.0,Finished
+1275174075,2026-04-12T18:00:00.000Z,Regular Season - 9,908801,Defensores De Belgrano,14137596,Ciudad de Bolívar,0.0,0.0,Finished
+1275167267,2026-04-12T18:00:00.000Z,Regular Season - 9,2064459,Acassuso,411817,Los Andes,0.0,1.0,Finished
+1275180883,2026-04-12T18:00:00.000Z,Regular Season - 9,387138,Temperley,409264,Quilmes,3.0,3.0,Finished
+1275170671,2026-04-12T18:00:00.000Z,Regular Season - 9,381181,Chacarita Juniors,1641512,Gimnasia Y Tiro,2.0,0.0,Finished
+1275168118,2026-04-12T19:00:00.000Z,Regular Season - 9,393946,Agropecuario,408413,Gimnasia Jujuy,1.0,2.0,Finished
+1275174926,2026-04-12T19:00:00.000Z,Regular Season - 9,1642363,Deportivo Madryn,7127909,Almirante Brown,2.0,1.0,Finished
+1275171522,2026-04-12T20:00:00.000Z,Regular Season - 9,1656830,Chaco For Ever,395648,All Boys,2.0,0.0,Finished
+1275172373,2026-04-12T20:00:00.000Z,Regular Season - 9,3378403,Club Atlético Güemes,413519,San Martín de Tucumán,0.0,2.0,Finished
+1275169820,2026-04-12T20:00:00.000Z,Regular Season - 9,1661085,Central Norte,397350,Atletico Mitre,1.0,1.0,Finished
+1275175777,2026-04-12T21:30:00.000Z,Regular Season - 9,1663638,Deportivo Maipú,7129611,Colegiales,3.0,1.0,Finished
+1275173224,2026-04-12T22:00:00.000Z,Regular Season - 9,382032,Colon Santa Fe,1666191,Racing de Córdoba,1.0,0.0,Finished
+1275177479,2026-04-13T22:00:00.000Z,Regular Season - 9,412668,Nueva Chicago,1671297,Midland,2.0,2.0,Finished
+1275181734,2026-04-13T23:00:00.000Z,Regular Season - 9,1672999,Tristan Suárez,396499,Atletico de Rafaela,0.0,0.0,Finished
+1275178330,2026-04-14T00:30:00.000Z,Regular Season - 9,393095,San Martín San Juan,1658532,Atlanta,1.0,2.0,Finished
+1275192797,2026-04-18T18:00:00.000Z,Regular Season - 10,411817,Los Andes,1644916,San Telmo,0.0,0.0,Finished
+1275193648,2026-04-18T18:00:00.000Z,Regular Season - 10,1671297,Midland,393095,San Martín San Juan,0.0,1.0,Finished
+1275182585,2026-04-18T18:30:00.000Z,Regular Season - 10,395648,All Boys,2064459,Acassuso,0.0,0.0,Finished
+1275189393,2026-04-18T18:30:00.000Z,Regular Season - 10,399903,Deportivo Morón,382032,Colon Santa Fe,2.0,0.0,Finished
+1275191946,2026-04-18T19:30:00.000Z,Regular Season - 10,374373,Godoy Cruz,7131313,San Miguel FC,0.0,0.0,Finished
+1275195350,2026-04-18T19:30:00.000Z,Regular Season - 10,409264,Quilmes,412668,Nueva Chicago,0.0,0.0,Finished
+1275194499,2026-04-18T23:00:00.000Z,Regular Season - 10,378628,Patronato,1663638,Deportivo Maipú,0.0,0.0,Finished
+1275187691,2026-04-18T23:00:00.000Z,Regular Season - 10,14137596,Ciudad de Bolívar,1642363,Deportivo Madryn,1.0,0.0,Finished
+1275188542,2026-04-19T17:00:00.000Z,Regular Season - 10,7129611,Colegiales,387138,Temperley,1.0,1.0,Finished
+1275185989,2026-04-19T18:00:00.000Z,Regular Season - 10,1648320,CA Estudiantes,1656830,Chaco For Ever,0.0,0.0,Finished
+1275186840,2026-04-19T18:00:00.000Z,Regular Season - 10,397350,Atletico Mitre,400754,Ferro Carril Oeste,0.0,1.0,Finished
+1275183436,2026-04-19T18:30:00.000Z,Regular Season - 10,7127909,Almirante Brown,1661085,Central Norte,1.0,0.0,Finished
+1275190244,2026-04-19T18:30:00.000Z,Regular Season - 10,408413,Gimnasia Jujuy,410966,Almagro,6.0,1.0,Finished
+1275197052,2026-04-19T22:00:00.000Z,Regular Season - 10,413519,San Martín de Tucumán,1672999,Tristan Suárez,0.0,0.0,Finished
+1275191095,2026-04-19T23:00:00.000Z,Regular Season - 10,1641512,Gimnasia Y Tiro,3378403,Club Atlético Güemes,1.0,1.0,Finished
+1275196201,2026-04-19T23:00:00.000Z,Regular Season - 10,1666191,Racing de Córdoba,908801,Defensores De Belgrano,3.0,0.0,Finished
+1275185138,2026-04-20T23:00:00.000Z,Regular Season - 10,396499,Atletico de Rafaela,393946,Agropecuario,4.0,1.0,Finished
+1275184287,2026-04-21T00:00:00.000Z,Regular Season - 10,1658532,Atlanta,381181,Chacarita Juniors,1.0,0.0,Finished
+1275209817,2026-04-25T18:30:00.000Z,Regular Season - 11,7131313,San Miguel FC,411817,Los Andes,0.0,2.0,Finished
+1275210668,2026-04-25T18:30:00.000Z,Regular Season - 11,1644916,San Telmo,395648,All Boys,1.0,0.0,Finished
+1275211519,2026-04-25T18:30:00.000Z,Regular Season - 11,387138,Temperley,378628,Patronato,0.0,0.0,Finished
+1275208966,2026-04-25T20:30:00.000Z,Regular Season - 11,393095,San Martín San Juan,409264,Quilmes,1.0,0.0,Finished
+1275199605,2026-04-25T21:00:00.000Z,Regular Season - 11,396499,Atletico de Rafaela,408413,Gimnasia Jujuy,0.0,0.0,Finished
+1275208115,2026-04-26T18:00:00.000Z,Regular Season - 11,412668,Nueva Chicago,7129611,Colegiales,0.0,0.0,Finished
+1275206413,2026-04-26T18:00:00.000Z,Regular Season - 11,399903,Deportivo Morón,1666191,Racing de Córdoba,2.0,1.0,Finished
+1275212370,2026-04-26T18:00:00.000Z,Regular Season - 11,1672999,Tristan Suárez,1641512,Gimnasia Y Tiro,2.0,1.0,Finished
+1275197903,2026-04-26T18:30:00.000Z,Regular Season - 11,2064459,Acassuso,1648320,CA Estudiantes,0.0,1.0,Finished
+1275201307,2026-04-26T18:30:00.000Z,Regular Season - 11,381181,Chacarita Juniors,1671297,Midland,1.0,0.0,Finished
+1275198754,2026-04-26T19:00:00.000Z,Regular Season - 11,393946,Agropecuario,413519,San Martín de Tucumán,2.0,0.0,Finished
+1275204711,2026-04-26T19:00:00.000Z,Regular Season - 11,1642363,Deportivo Madryn,908801,Defensores De Belgrano,2.0,1.0,Finished
+1275200456,2026-04-26T20:00:00.000Z,Regular Season - 11,1661085,Central Norte,14137596,Ciudad de Bolívar,0.0,1.0,Finished
+1275202158,2026-04-26T20:00:00.000Z,Regular Season - 11,1656830,Chaco For Ever,397350,Atletico Mitre,1.0,1.0,Finished
+1275203009,2026-04-26T20:00:00.000Z,Regular Season - 11,3378403,Club Atlético Güemes,1658532,Atlanta,0.0,2.0,Finished
+1275205562,2026-04-26T21:00:00.000Z,Regular Season - 11,1663638,Deportivo Maipú,410966,Almagro,1.0,0.0,Finished
+1275203860,2026-04-26T22:00:00.000Z,Regular Season - 11,382032,Colon Santa Fe,374373,Godoy Cruz,0.0,0.0,Finished
+1275207264,2026-04-28T22:30:00.000Z,Regular Season - 11,400754,Ferro Carril Oeste,7127909,Almirante Brown,0.0,1.0,Finished
+1275213221,2026-04-30T23:30:00.000Z,Regular Season - 12,395648,All Boys,7131313,San Miguel FC,1.0,1.0,Finished
+1275220029,2026-05-02T18:30:00.000Z,Regular Season - 12,908801,Defensores De Belgrano,1661085,Central Norte,1.0,1.0,Finished
+1275216625,2026-05-02T18:30:00.000Z,Regular Season - 12,1648320,CA Estudiantes,1644916,San Telmo,1.0,1.0,Finished
+1275223433,2026-05-02T18:30:00.000Z,Regular Season - 12,411817,Los Andes,382032,Colon Santa Fe,1.0,1.0,Finished
+1275227688,2026-05-02T23:00:00.000Z,Regular Season - 12,413519,San Martín de Tucumán,396499,Atletico de Rafaela,2.0,1.0,Finished
+1275215774,2026-05-03T16:00:00.000Z,Regular Season - 12,1658532,Atlanta,1672999,Tristan Suárez,3.0,1.0,Finished
+1275214072,2026-05-03T18:00:00.000Z,Regular Season - 12,410966,Almagro,387138,Temperley,1.0,1.0,Finished
+1275217476,2026-05-03T18:00:00.000Z,Regular Season - 12,397350,Atletico Mitre,2064459,Acassuso,2.0,0.0,Finished
+1275219178,2026-05-03T18:00:00.000Z,Regular Season - 12,7129611,Colegiales,393095,San Martín San Juan,2.0,0.0,Finished
+1275214923,2026-05-03T18:30:00.000Z,Regular Season - 12,7127909,Almirante Brown,1656830,Chaco For Ever,1.0,0.0,Finished
+1275220880,2026-05-03T18:30:00.000Z,Regular Season - 12,408413,Gimnasia Jujuy,1663638,Deportivo Maipú,1.0,1.0,Finished
+1275225135,2026-05-03T19:00:00.000Z,Regular Season - 12,378628,Patronato,412668,Nueva Chicago,2.0,1.0,Finished
+1275218327,2026-05-03T19:00:00.000Z,Regular Season - 12,14137596,Ciudad de Bolívar,400754,Ferro Carril Oeste,2.0,4.0,Finished
+1275224284,2026-05-03T19:30:00.000Z,Regular Season - 12,1671297,Midland,3378403,Club Atlético Güemes,2.0,1.0,Finished
+1275222582,2026-05-03T19:30:00.000Z,Regular Season - 12,374373,Godoy Cruz,399903,Deportivo Morón,2.0,2.0,Finished
+1275226837,2026-05-03T20:00:00.000Z,Regular Season - 12,1666191,Racing de Córdoba,1642363,Deportivo Madryn,2.0,2.0,Finished
+1275225986,2026-05-04T23:00:00.000Z,Regular Season - 12,409264,Quilmes,381181,Chacarita Juniors,0.0,0.0,Finished
+1275221731,2026-05-05T00:30:00.000Z,Regular Season - 12,1641512,Gimnasia Y Tiro,393946,Agropecuario,2.0,3.0,Finished
+1275235347,2026-05-09T18:00:00.000Z,Regular Season - 13,399903,Deportivo Morón,411817,Los Andes,0.0,0.0,Finished
+1275243006,2026-05-09T18:00:00.000Z,Regular Season - 13,1672999,Tristan Suárez,1671297,Midland,1.0,3.0,Finished
+1275241304,2026-05-09T18:00:00.000Z,Regular Season - 13,1644916,San Telmo,397350,Atletico Mitre,0.0,0.0,Finished
+1275240453,2026-05-09T18:30:00.000Z,Regular Season - 13,7131313,San Miguel FC,1648320,CA Estudiantes,1.0,1.0,Finished
+1275242155,2026-05-09T18:30:00.000Z,Regular Season - 13,387138,Temperley,1663638,Deportivo Maipú,0.0,5.0,Finished
+1275238751,2026-05-09T19:30:00.000Z,Regular Season - 13,393095,San Martín San Juan,378628,Patronato,1.0,1.0,Finished
+1275230241,2026-05-09T21:00:00.000Z,Regular Season - 13,396499,Atletico de Rafaela,1641512,Gimnasia Y Tiro,1.0,0.0,Finished
+1275231943,2026-05-10T18:30:00.000Z,Regular Season - 13,381181,Chacarita Juniors,7129611,Colegiales,2.0,0.0,Finished
+1275228539,2026-05-10T18:30:00.000Z,Regular Season - 13,2064459,Acassuso,7127909,Almirante Brown,0.0,0.0,Finished
+1275229390,2026-05-10T19:00:00.000Z,Regular Season - 13,393946,Agropecuario,1658532,Atlanta,0.0,0.0,Finished
+1275233645,2026-05-10T19:00:00.000Z,Regular Season - 13,3378403,Club Atlético Güemes,409264,Quilmes,2.0,1.0,Finished
+1275237049,2026-05-10T19:30:00.000Z,Regular Season - 13,374373,Godoy Cruz,1666191,Racing de Córdoba,2.0,1.0,Finished
+1275232794,2026-05-10T19:30:00.000Z,Regular Season - 13,1656830,Chaco For Ever,14137596,Ciudad de Bolívar,0.0,1.0,Finished
+1275231092,2026-05-10T20:00:00.000Z,Regular Season - 13,1661085,Central Norte,1642363,Deportivo Madryn,2.0,3.0,Finished
+1275234496,2026-05-10T21:00:00.000Z,Regular Season - 13,382032,Colon Santa Fe,395648,All Boys,3.0,2.0,Finished
+1275236198,2026-05-11T22:00:00.000Z,Regular Season - 13,400754,Ferro Carril Oeste,908801,Defensores De Belgrano,2.0,1.0,Finished
+1275237900,2026-05-11T22:30:00.000Z,Regular Season - 13,412668,Nueva Chicago,410966,Almagro,1.0,2.0,Finished
+1275239602,2026-05-13T00:10:00.000Z,Regular Season - 13,413519,San Martín de Tucumán,408413,Gimnasia Jujuy,2.0,0.0,Finished
+1275258324,2026-05-16T00:00:00.000Z,Regular Season - 14,1666191,Racing de Córdoba,1661085,Central Norte,1.0,2.0,Finished
+1275246410,2026-05-16T16:00:00.000Z,Regular Season - 14,1658532,Atlanta,396499,Atletico de Rafaela,2.0,0.0,Finished
+1275254920,2026-05-16T18:00:00.000Z,Regular Season - 14,411817,Los Andes,374373,Godoy Cruz,1.0,0.0,Finished
+1275247261,2026-05-16T18:30:00.000Z,Regular Season - 14,1648320,CA Estudiantes,382032,Colon Santa Fe,1.0,1.0,Finished
+1275245559,2026-05-16T18:30:00.000Z,Regular Season - 14,7127909,Almirante Brown,1644916,San Telmo,0.0,0.0,Finished
+1275249814,2026-05-16T19:00:00.000Z,Regular Season - 14,7129611,Colegiales,3378403,Club Atlético Güemes,4.0,1.0,Finished
+1275248963,2026-05-16T19:00:00.000Z,Regular Season - 14,14137596,Ciudad de Bolívar,2064459,Acassuso,1.0,0.0,Finished
+1275251516,2026-05-17T18:00:00.000Z,Regular Season - 14,1642363,Deportivo Madryn,400754,Ferro Carril Oeste,0.0,1.0,Finished
+1275244708,2026-05-17T18:30:00.000Z,Regular Season - 14,410966,Almagro,393095,San Martín San Juan,1.0,2.0,Finished
+1275253218,2026-05-17T18:30:00.000Z,Regular Season - 14,408413,Gimnasia Jujuy,387138,Temperley,1.0,0.0,Finished
+1275256622,2026-05-17T19:00:00.000Z,Regular Season - 14,378628,Patronato,381181,Chacarita Juniors,2.0,0.0,Finished
+1275248112,2026-05-17T19:00:00.000Z,Regular Season - 14,397350,Atletico Mitre,7131313,San Miguel FC,4.0,0.0,Finished
+1275255771,2026-05-17T19:30:00.000Z,Regular Season - 14,1671297,Midland,393946,Agropecuario,2.0,0.0,Finished
+1275252367,2026-05-17T20:00:00.000Z,Regular Season - 14,1663638,Deportivo Maipú,412668,Nueva Chicago,1.0,0.0,Finished
+1275257473,2026-05-17T20:00:00.000Z,Regular Season - 14,409264,Quilmes,1672999,Tristan Suárez,0.0,1.0,Finished
+1275254069,2026-05-17T20:00:00.000Z,Regular Season - 14,1641512,Gimnasia Y Tiro,413519,San Martín de Tucumán,1.0,0.0,Finished
+1275250665,2026-05-18T18:30:00.000Z,Regular Season - 14,908801,Defensores De Belgrano,1656830,Chaco For Ever,0.0,0.0,Finished
+1275243857,2026-05-18T23:00:00.000Z,Regular Season - 14,395648,All Boys,399903,Deportivo Morón,1.0,0.0,Finished
+1275272791,2026-05-23T18:00:00.000Z,Regular Season - 15,1644916,San Telmo,14137596,Ciudad de Bolívar,0.0,1.0,Finished
+1275268536,2026-05-23T18:00:00.000Z,Regular Season - 15,411817,Los Andes,1666191,Racing de Córdoba,2.0,0.0,Finished
+1275273642,2026-05-23T18:00:00.000Z,Regular Season - 15,1672999,Tristan Suárez,7129611,Colegiales,0.0,0.0,Finished
+1275271940,2026-05-23T18:30:00.000Z,Regular Season - 15,7131313,San Miguel FC,7127909,Almirante Brown,1.0,0.0,Finished
+1275269387,2026-05-23T19:00:00.000Z,Regular Season - 15,412668,Nueva Chicago,387138,Temperley,1.0,1.0,Finished
+1275260877,2026-05-23T19:30:00.000Z,Regular Season - 15,396499,Atletico de Rafaela,1671297,Midland,1.0,0.0,Finished
+1275270238,2026-05-23T19:30:00.000Z,Regular Season - 15,393095,San Martín San Juan,1663638,Deportivo Maipú,2.0,1.0,Finished
+1275259175,2026-05-24T17:00:00.000Z,Regular Season - 15,2064459,Acassuso,908801,Defensores De Belgrano,1.0,0.0,Finished
+1275265132,2026-05-24T18:00:00.000Z,Regular Season - 15,399903,Deportivo Morón,1648320,CA Estudiantes,2.0,0.0,Finished
+1275261728,2026-05-24T18:30:00.000Z,Regular Season - 15,381181,Chacarita Juniors,410966,Almagro,1.0,0.0,Finished
+1275260026,2026-05-24T19:00:00.000Z,Regular Season - 15,393946,Agropecuario,409264,Quilmes,0.0,0.0,Finished
+1275265983,2026-05-24T19:00:00.000Z,Regular Season - 15,400754,Ferro Carril Oeste,1661085,Central Norte,1.0,0.0,Finished
+1275262579,2026-05-24T19:00:00.000Z,Regular Season - 15,1656830,Chaco For Ever,1642363,Deportivo Madryn,1.0,2.0,Finished
+1275267685,2026-05-24T19:30:00.000Z,Regular Season - 15,374373,Godoy Cruz,395648,All Boys,4.0,0.0,Finished
+1275264281,2026-05-24T21:00:00.000Z,Regular Season - 15,382032,Colon Santa Fe,397350,Atletico Mitre,1.0,1.0,Finished
+1275263430,2026-05-24T21:30:00.000Z,Regular Season - 15,3378403,Club Atlético Güemes,378628,Patronato,1.0,0.0,Finished
+1275266834,2026-05-24T21:30:00.000Z,Regular Season - 15,1641512,Gimnasia Y Tiro,408413,Gimnasia Jujuy,1.0,1.0,Finished
+1275271089,2026-05-24T22:00:00.000Z,Regular Season - 15,413519,San Martín de Tucumán,1658532,Atlanta,0.0,1.0,Finished
+1275288109,2026-05-30T00:00:00.000Z,Regular Season - 16,1666191,Racing de Córdoba,400754,Ferro Carril Oeste,0.0,0.0,Finished
+1275281301,2026-05-30T18:00:00.000Z,Regular Season - 16,7129611,Colegiales,393946,Agropecuario,0.0,0.0,Finished
+1275277897,2026-05-30T18:00:00.000Z,Regular Season - 16,1648320,CA Estudiantes,374373,Godoy Cruz,1.0,0.0,Finished
+1275282152,2026-05-30T18:30:00.000Z,Regular Season - 16,908801,Defensores De Belgrano,1644916,San Telmo,1.0,0.0,Finished
+1275276195,2026-05-30T18:30:00.000Z,Regular Season - 16,7127909,Almirante Brown,382032,Colon Santa Fe,1.0,1.0,Finished
+1275274493,2026-05-30T18:30:00.000Z,Regular Season - 16,395648,All Boys,411817,Los Andes,0.0,0.0,Finished
+1275277046,2026-05-31T16:30:00.000Z,Regular Season - 16,1658532,Atlanta,1641512,Gimnasia Y Tiro,1.0,1.0,Finished
+1275283003,2026-05-31T18:00:00.000Z,Regular Season - 16,1642363,Deportivo Madryn,2064459,Acassuso,0.0,0.0,Finished
+1275275344,2026-05-31T18:30:00.000Z,Regular Season - 16,410966,Almagro,3378403,Club Atlético Güemes,2.0,0.0,Finished
+1275278748,2026-05-31T19:00:00.000Z,Regular Season - 16,397350,Atletico Mitre,399903,Deportivo Morón,1.0,3.0,Finished
+1275286407,2026-05-31T19:00:00.000Z,Regular Season - 16,378628,Patronato,1672999,Tristan Suárez,1.0,1.0,Finished
+1275285556,2026-05-31T19:00:00.000Z,Regular Season - 16,1671297,Midland,413519,San Martín de Tucumán,2.0,0.0,Finished
+1275280450,2026-05-31T19:00:00.000Z,Regular Season - 16,14137596,Ciudad de Bolívar,7131313,San Miguel FC,1.0,1.0,Finished
+1275288960,2026-05-31T19:00:00.000Z,Regular Season - 16,387138,Temperley,393095,San Martín San Juan,2.0,1.0,Finished
+1275279599,2026-05-31T19:30:00.000Z,Regular Season - 16,1661085,Central Norte,1656830,Chaco For Ever,1.0,1.0,Finished
+1275287258,2026-05-31T20:00:00.000Z,Regular Season - 16,409264,Quilmes,396499,Atletico de Rafaela,2.0,0.0,Finished
+1275283854,2026-05-31T20:00:00.000Z,Regular Season - 16,1663638,Deportivo Maipú,381181,Chacarita Juniors,3.0,2.0,Finished
+1275298321,2026-06-06T00:30:00.000Z,Regular Season - 17,1641512,Gimnasia Y Tiro,1671297,Midland,1.0,0.0,Finished
+1275292364,2026-06-06T17:00:00.000Z,Regular Season - 17,1658532,Atlanta,408413,Gimnasia Jujuy,3.0,0.0,Finished
+1275300023,2026-06-06T18:00:00.000Z,Regular Season - 17,411817,Los Andes,1648320,CA Estudiantes,0.0,0.0,Finished
+1275302576,2026-06-06T18:30:00.000Z,Regular Season - 17,7131313,San Miguel FC,908801,Defensores De Belgrano,0.0,0.0,Finished
+1275289811,2026-06-06T18:30:00.000Z,Regular Season - 17,2064459,Acassuso,1661085,Central Norte,2.0,1.0,Finished
+1275293215,2026-06-06T19:30:00.000Z,Regular Season - 17,396499,Atletico de Rafaela,7129611,Colegiales,1.0,0.0,Finished
+1275304278,2026-06-06T22:00:00.000Z,Regular Season - 17,1672999,Tristan Suárez,410966,Almagro,0.0,0.0,Finished
+1275303427,2026-06-07T18:00:00.000Z,Regular Season - 17,1644916,San Telmo,1642363,Deportivo Madryn,0.0,0.0,Finished
+1275297470,2026-06-07T18:00:00.000Z,Regular Season - 17,399903,Deportivo Morón,7127909,Almirante Brown,1.0,0.0,Finished
+1275291513,2026-06-07T18:30:00.000Z,Regular Season - 17,395648,All Boys,1666191,Racing de Córdoba,1.0,1.0,Finished
+1275294066,2026-06-07T18:30:00.000Z,Regular Season - 17,381181,Chacarita Juniors,387138,Temperley,0.0,1.0,Finished
+1275290662,2026-06-07T19:00:00.000Z,Regular Season - 17,393946,Agropecuario,378628,Patronato,1.0,1.0,Finished
+1275295768,2026-06-07T19:00:00.000Z,Regular Season - 17,3378403,Club Atlético Güemes,1663638,Deportivo Maipú,1.0,0.0,Finished
+1275294917,2026-06-07T19:00:00.000Z,Regular Season - 17,1656830,Chaco For Ever,400754,Ferro Carril Oeste,1.0,2.0,Finished
+1275299172,2026-06-07T19:30:00.000Z,Regular Season - 17,374373,Godoy Cruz,397350,Atletico Mitre,2.0,1.0,Finished
+1275296619,2026-06-07T20:00:00.000Z,Regular Season - 17,382032,Colon Santa Fe,14137596,Ciudad de Bolívar,0.0,0.0,Finished
+1275301725,2026-06-07T20:30:00.000Z,Regular Season - 17,413519,San Martín de Tucumán,409264,Quilmes,0.0,0.0,Finished
+1275315341,2026-06-13T17:30:00.000Z,Regular Season - 18,1671297,Midland,1658532,Atlanta,1.0,2.0,Finished
+1275310235,2026-06-13T18:00:00.000Z,Regular Season - 18,7129611,Colegiales,413519,San Martín de Tucumán,2.0,0.0,Finished
+1275311086,2026-06-13T18:30:00.000Z,Regular Season - 18,908801,Defensores De Belgrano,382032,Colon Santa Fe,0.0,3.0,Finished
+1275316192,2026-06-13T18:30:00.000Z,Regular Season - 18,412668,Nueva Chicago,381181,Chacarita Juniors,2.0,0.0,Finished
+1275305129,2026-06-13T18:30:00.000Z,Regular Season - 18,410966,Almagro,393946,Agropecuario,2.0,1.0,Finished
+1275309384,2026-06-13T19:00:00.000Z,Regular Season - 18,14137596,Ciudad de Bolívar,399903,Deportivo Morón,1.0,2.0,Finished
+1275317894,2026-06-13T20:00:00.000Z,Regular Season - 18,409264,Quilmes,1641512,Gimnasia Y Tiro,1.0,0.0,Finished
+1275314490,2026-06-13T23:00:00.000Z,Regular Season - 18,408413,Gimnasia Jujuy,393095,San Martín San Juan,2.0,1.0,Finished
+1275305980,2026-06-14T17:30:00.000Z,Regular Season - 18,7127909,Almirante Brown,374373,Godoy Cruz,1.0,0.0,Finished
+1275306831,2026-06-14T18:00:00.000Z,Regular Season - 18,1648320,CA Estudiantes,395648,All Boys,2.0,1.0,Finished
+1275311937,2026-06-14T18:00:00.000Z,Regular Season - 18,1642363,Deportivo Madryn,7131313,San Miguel FC,2.0,2.0,Finished
+1275317043,2026-06-14T18:30:00.000Z,Regular Season - 18,378628,Patronato,396499,Atletico de Rafaela,0.0,0.0,Finished
+1275313639,2026-06-14T18:30:00.000Z,Regular Season - 18,400754,Ferro Carril Oeste,2064459,Acassuso,2.0,1.0,Finished
+1275318745,2026-06-14T19:00:00.000Z,Regular Season - 18,1666191,Racing de Córdoba,1656830,Chaco For Ever,2.0,0.0,Finished
+1275319596,2026-06-14T19:00:00.000Z,Regular Season - 18,387138,Temperley,3378403,Club Atlético Güemes,4.0,1.0,Finished
+1275307682,2026-06-14T19:00:00.000Z,Regular Season - 18,397350,Atletico Mitre,411817,Los Andes,0.0,3.0,Finished
+1275312788,2026-06-14T19:30:00.000Z,Regular Season - 18,1663638,Deportivo Maipú,1672999,Tristan Suárez,0.0,1.0,Finished
+1275308533,2026-06-14T19:30:00.000Z,Regular Season - 18,1661085,Central Norte,1644916,San Telmo,0.0,0.0,Finished
+1275284705,2026-06-17T18:00:00.000Z,Regular Season - 16,408413,Gimnasia Jujuy,412668,Nueva Chicago,4.0,0.0,Finished
+1275091528,2026-06-20T18:00:00.000Z,Regular Season - 4,410966,Almagro,1658532,Atlanta,2.0,0.0,Finished
+1275104293,2026-06-20T18:00:00.000Z,Regular Season - 4,1644916,San Telmo,1666191,Racing de Córdoba,2.0,0.0,Finished
+1275097485,2026-06-20T18:00:00.000Z,Regular Season - 4,7129611,Colegiales,409264,Quilmes,3.0,1.0,Finished
+1275095783,2026-06-20T18:00:00.000Z,Regular Season - 4,14137596,Ciudad de Bolívar,1648320,CA Estudiantes,1.0,2.0,Finished
+1275090677,2026-06-20T18:30:00.000Z,Regular Season - 4,2064459,Acassuso,7131313,San Miguel FC,0.0,2.0,Finished
+1275103442,2026-06-20T19:00:00.000Z,Regular Season - 4,393095,San Martín San Juan,393946,Agropecuario,2.0,0.0,Finished
+1275094932,2026-06-20T19:00:00.000Z,Regular Season - 4,1656830,Chaco For Ever,382032,Colon Santa Fe,1.0,0.0,Finished
+1275105144,2026-06-20T19:00:00.000Z,Regular Season - 4,387138,Temperley,413519,San Martín de Tucumán,1.0,1.0,Finished
+1275099187,2026-06-21T18:00:00.000Z,Regular Season - 4,1642363,Deportivo Madryn,411817,Los Andes,2.0,1.0,Finished
+1275098336,2026-06-21T18:30:00.000Z,Regular Season - 4,908801,Defensores De Belgrano,395648,All Boys,0.0,1.0,Finished
+1275092379,2026-06-21T18:30:00.000Z,Regular Season - 4,7127909,Almirante Brown,397350,Atletico Mitre,3.0,1.0,Finished
+1275102591,2026-06-21T18:30:00.000Z,Regular Season - 4,378628,Patronato,1671297,Midland,1.0,1.0,Finished
+1275094081,2026-06-21T18:30:00.000Z,Regular Season - 4,381181,Chacarita Juniors,1672999,Tristan Suárez,0.0,0.0,Finished
+1275100889,2026-06-21T18:30:00.000Z,Regular Season - 4,400754,Ferro Carril Oeste,399903,Deportivo Morón,1.0,0.0,Finished
+1275100038,2026-06-21T19:30:00.000Z,Regular Season - 4,1663638,Deportivo Maipú,1641512,Gimnasia Y Tiro,0.0,0.0,Finished
+1275093230,2026-06-21T19:30:00.000Z,Regular Season - 4,1661085,Central Norte,374373,Godoy Cruz,1.0,0.0,Finished
+1275096634,2026-06-21T20:00:00.000Z,Regular Season - 4,3378403,Club Atlético Güemes,408413,Gimnasia Jujuy,1.0,3.0,Finished
+1275101740,2026-06-23T21:30:00.000Z,Regular Season - 4,412668,Nueva Chicago,396499,Atletico de Rafaela,0.0,0.0,Finished
+1275326404,2026-07-04T18:00:00.000Z,Regular Season - 19,7129611,Colegiales,1641512,Gimnasia Y Tiro,1.0,2.0,Finished
+1275321298,2026-07-04T18:30:00.000Z,Regular Season - 19,7127909,Almirante Brown,411817,Los Andes,1.0,0.0,Finished
+1275331510,2026-07-04T18:30:00.000Z,Regular Season - 19,412668,Nueva Chicago,3378403,Club Atlético Güemes,2.0,0.0,Finished
+1275334914,2026-07-04T18:30:00.000Z,Regular Season - 19,387138,Temperley,1672999,Tristan Suárez,1.0,0.0,Finished
+1275327255,2026-07-04T18:30:00.000Z,Regular Season - 19,908801,Defensores De Belgrano,399903,Deportivo Morón,2.0,1.0,Finished
+1275320447,2026-07-04T18:30:00.000Z,Regular Season - 19,410966,Almagro,396499,Atletico de Rafaela,1.0,0.0,Finished
+1275325553,2026-07-04T19:00:00.000Z,Regular Season - 19,14137596,Ciudad de Bolívar,374373,Godoy Cruz,3.0,1.0,Finished
+1275333212,2026-07-04T21:00:00.000Z,Regular Season - 19,409264,Quilmes,1658532,Atlanta,2.0,1.0,Finished
+1275328106,2026-07-05T18:00:00.000Z,Regular Season - 19,1642363,Deportivo Madryn,382032,Colon Santa Fe,1.0,2.0,Finished
+1275322149,2026-07-05T18:00:00.000Z,Regular Season - 19,1648320,CA Estudiantes,1666191,Racing de Córdoba,1.0,1.0,Finished
+1275324702,2026-07-05T18:30:00.000Z,Regular Season - 19,1656830,Chaco For Ever,2064459,Acassuso,1.0,1.0,Finished
+1275332361,2026-07-05T18:30:00.000Z,Regular Season - 19,378628,Patronato,413519,San Martín de Tucumán,0.0,1.0,Finished
+1275329808,2026-07-05T18:30:00.000Z,Regular Season - 19,400754,Ferro Carril Oeste,1644916,San Telmo,2.0,1.0,Finished
+1275330659,2026-07-05T19:00:00.000Z,Regular Season - 19,1671297,Midland,408413,Gimnasia Jujuy,1.0,1.0,Finished
+1275334063,2026-07-05T19:00:00.000Z,Regular Season - 19,393095,San Martín San Juan,381181,Chacarita Juniors,0.0,1.0,Finished
+1275323000,2026-07-05T19:00:00.000Z,Regular Season - 19,397350,Atletico Mitre,395648,All Boys,1.0,1.0,Finished
+1275328957,2026-07-05T19:30:00.000Z,Regular Season - 19,1663638,Deportivo Maipú,393946,Agropecuario,2.0,0.0,Finished
+1275323851,2026-07-05T19:30:00.000Z,Regular Season - 19,1661085,Central Norte,7131313,San Miguel FC,1.0,1.0,Finished
+1275349381,2026-07-11T18:00:00.000Z,Regular Season - 20,1644916,San Telmo,1656830,Chaco For Ever,1.0,3.0,Finished
+1275339169,2026-07-11T18:00:00.000Z,Regular Season - 20,1648320,CA Estudiantes,397350,Atletico Mitre,3.0,0.0,Finished
+1275338318,2026-07-11T18:00:00.000Z,Regular Season - 20,396499,Atletico de Rafaela,1663638,Deportivo Maipú,1.0,3.0,Finished
+1275341722,2026-07-11T18:00:00.000Z,Regular Season - 20,399903,Deportivo Morón,1642363,Deportivo Madryn,2.0,2.0,Finished
+1275350232,2026-07-11T18:00:00.000Z,Regular Season - 20,1672999,Tristan Suárez,412668,Nueva Chicago,1.0,0.0,Finished
+1275345126,2026-07-11T18:00:00.000Z,Regular Season - 20,411817,Los Andes,14137596,Ciudad de Bolívar,3.0,1.0,Finished
+1275336616,2026-07-11T18:00:00.000Z,Regular Season - 20,395648,All Boys,7127909,Almirante Brown,1.0,1.0,Finished
+1275342573,2026-07-12T18:00:00.000Z,Regular Season - 20,408413,Gimnasia Jujuy,381181,Chacarita Juniors,1.0,1.0,Finished
+1275340871,2026-07-12T18:30:00.000Z,Regular Season - 20,382032,Colon Santa Fe,1661085,Central Norte,4.0,0.0,Finished
+1275335765,2026-07-12T19:00:00.000Z,Regular Season - 20,393946,Agropecuario,387138,Temperley,0.0,0.0,Finished
+1275340020,2026-07-12T19:00:00.000Z,Regular Season - 20,3378403,Club Atlético Güemes,393095,San Martín San Juan,0.0,2.0,Finished
+1275345977,2026-07-12T19:00:00.000Z,Regular Season - 20,1671297,Midland,409264,Quilmes,1.0,0.0,Finished
+1275346828,2026-07-12T19:00:00.000Z,Regular Season - 20,1666191,Racing de Córdoba,2064459,Acassuso,3.0,2.0,Finished
+1275344275,2026-07-12T19:30:00.000Z,Regular Season - 20,374373,Godoy Cruz,908801,Defensores De Belgrano,1.0,0.0,Finished
+1275343424,2026-07-12T20:00:00.000Z,Regular Season - 20,1641512,Gimnasia Y Tiro,378628,Patronato,1.0,1.0,Finished
+1275347679,2026-07-12T21:00:00.000Z,Regular Season - 20,413519,San Martín de Tucumán,410966,Almagro,3.0,0.0,Finished
+1275337467,2026-07-14T00:00:00.000Z,Regular Season - 20,1658532,Atlanta,7129611,Colegiales,1.0,0.0,Finished
+1275352785,2026-07-17T18:00:00.000Z,Regular Season - 21,7127909,Almirante Brown,1648320,CA Estudiantes,0.0,0.0,Finished
+1275360444,2026-07-17T18:00:00.000Z,Regular Season - 21,1663638,Deportivo Maipú,413519,San Martín de Tucumán,0.0,0.0,Finished
+1275353636,2026-07-17T19:00:00.000Z,Regular Season - 21,397350,Atletico Mitre,1666191,Racing de Córdoba,1.0,0.0,Finished
+1275362146,2026-07-17T21:00:00.000Z,Regular Season - 21,412668,Nueva Chicago,393946,Agropecuario,1.0,1.0,Finished
+1275361295,2026-07-17T22:30:00.000Z,Regular Season - 21,400754,Ferro Carril Oeste,382032,Colon Santa Fe,2.0,0.0,Finished
+1275357040,2026-07-17T23:00:00.000Z,Regular Season - 21,14137596,Ciudad de Bolívar,395648,All Boys,0.0,0.0,Finished
+1275365550,2026-07-17T23:30:00.000Z,Regular Season - 21,387138,Temperley,396499,Atletico de Rafaela,2.0,0.0,Finished
+1275380868,2026-07-25T18:00:00.000Z,Regular Season - 22,1672999,Tristan Suárez,381181,Chacarita Juniors,1.0,0.0,Finished
+1275369805,2026-07-25T18:00:00.000Z,Regular Season - 22,1648320,CA Estudiantes,14137596,Ciudad de Bolívar,1.0,2.0,Finished
+1275368954,2026-07-25T19:00:00.000Z,Regular Season - 22,396499,Atletico de Rafaela,412668,Nueva Chicago,1.0,0.0,Finished
+1275379166,2026-07-25T22:00:00.000Z,Regular Season - 22,413519,San Martín de Tucumán,387138,Temperley,1.0,2.0,Finished
+1275375762,2026-07-26T18:00:00.000Z,Regular Season - 22,411817,Los Andes,1642363,Deportivo Madryn,0.0,0.0,Finished
+1275367252,2026-07-26T18:00:00.000Z,Regular Season - 22,395648,All Boys,908801,Defensores De Belgrano,0.0,0.0,Finished
+1275366401,2026-07-26T18:00:00.000Z,Regular Season - 22,393946,Agropecuario,393095,San Martín San Juan,2.0,1.0,Finished
+1275372358,2026-07-26T18:30:00.000Z,Regular Season - 22,399903,Deportivo Morón,400754,Ferro Carril Oeste,4.0,0.0,Finished
+1275371507,2026-07-26T18:30:00.000Z,Regular Season - 22,382032,Colon Santa Fe,1656830,Chaco For Ever,0.0,1.0,Finished
+1275380017,2026-07-26T18:30:00.000Z,Regular Season - 22,7131313,San Miguel FC,2064459,Acassuso,0.0,0.0,Finished
+1275370656,2026-07-26T19:00:00.000Z,Regular Season - 22,397350,Atletico Mitre,7127909,Almirante Brown,0.0,0.0,Finished
+1275373209,2026-07-26T19:00:00.000Z,Regular Season - 22,408413,Gimnasia Jujuy,3378403,Club Atlético Güemes,2.0,1.0,Finished
+1275376613,2026-07-26T19:00:00.000Z,Regular Season - 22,1671297,Midland,378628,Patronato,1.0,0.0,Finished
+1275378315,2026-07-26T19:00:00.000Z,Regular Season - 22,1666191,Racing de Córdoba,1644916,San Telmo,2.0,1.0,Finished
+1275374911,2026-07-26T19:30:00.000Z,Regular Season - 22,374373,Godoy Cruz,1661085,Central Norte,2.0,1.0,Finished
+1275374060,2026-07-26T21:00:00.000Z,Regular Season - 22,1641512,Gimnasia Y Tiro,1663638,Deportivo Maipú,1.0,0.0,Finished
+1275377464,2026-07-26T22:00:00.000Z,Regular Season - 22,409264,Quilmes,7129611,Colegiales,0.0,1.0,Finished
+1275368103,2026-07-27T23:00:00.000Z,Regular Season - 22,1658532,Atlanta,410966,Almagro,1.0,3.0,Finished
+1275392782,2026-08-01T17:30:00.000Z,Regular Season - 23,412668,Nueva Chicago,413519,San Martín de Tucumán,2.0,1.0,Finished
+1275391931,2026-08-01T18:00:00.000Z,Regular Season - 23,400754,Ferro Carril Oeste,374373,Godoy Cruz,1.0,3.0,Finished
+1275388527,2026-08-01T18:00:00.000Z,Regular Season - 23,7129611,Colegiales,408413,Gimnasia Jujuy,2.0,1.0,Finished
+1275381719,2026-08-01T18:00:00.000Z,Regular Season - 23,2064459,Acassuso,382032,Colon Santa Fe,1.0,1.0,Finished
+1275382570,2026-08-01T18:00:00.000Z,Regular Season - 23,410966,Almagro,1671297,Midland,1.0,1.0,Finished
+1275389378,2026-08-01T18:00:00.000Z,Regular Season - 23,908801,Defensores De Belgrano,1648320,CA Estudiantes,1.0,1.0,Finished
+1275394484,2026-08-01T18:30:00.000Z,Regular Season - 23,393095,San Martín San Juan,396499,Atletico de Rafaela,1.0,1.0,Finished
+1275393633,2026-08-01T18:30:00.000Z,Regular Season - 23,378628,Patronato,409264,Quilmes,3.0,3.0,Finished
+1275395335,2026-08-02T18:00:00.000Z,Regular Season - 23,1644916,San Telmo,7131313,San Miguel FC,1.0,0.0,Finished
+1275386825,2026-08-02T18:00:00.000Z,Regular Season - 23,14137596,Ciudad de Bolívar,397350,Atletico Mitre,0.0,2.0,Finished
+1275383421,2026-08-02T18:00:00.000Z,Regular Season - 23,7127909,Almirante Brown,1666191,Racing de Córdoba,2.0,0.0,Finished
+1275385123,2026-08-02T18:00:00.000Z,Regular Season - 23,381181,Chacarita Juniors,393946,Agropecuario,2.0,1.0,Finished
+1275396186,2026-08-02T18:30:00.000Z,Regular Season - 23,387138,Temperley,1641512,Gimnasia Y Tiro,1.0,2.0,Finished
+1275391080,2026-08-02T18:30:00.000Z,Regular Season - 23,1663638,Deportivo Maipú,1658532,Atlanta,4.0,2.0,Finished
+1275385974,2026-08-02T19:00:00.000Z,Regular Season - 23,1656830,Chaco For Ever,399903,Deportivo Morón,2.0,0.0,Finished
+1275390229,2026-08-02T19:00:00.000Z,Regular Season - 23,1642363,Deportivo Madryn,395648,All Boys,2.0,0.0,Finished
+1275384272,2026-08-02T19:30:00.000Z,Regular Season - 23,1661085,Central Norte,411817,Los Andes,1.0,0.0,Finished
+1275387676,2026-08-03T19:00:00.000Z,Regular Season - 23,3378403,Club Atlético Güemes,1672999,Tristan Suárez,1.0,3.0,Finished
+1275351934,2026-08-05T18:00:00.000Z,Regular Season - 21,410966,Almagro,1641512,Gimnasia Y Tiro,0.0,2.0,Finished
+1275363848,2026-08-05T22:00:00.000Z,Regular Season - 21,409264,Quilmes,408413,Gimnasia Jujuy,2.0,0.0,Finished
+1275408951,2026-08-07T23:00:00.000Z,Regular Season - 24,1671297,Midland,1663638,Deportivo Maipú,2.0,0.0,Finished
+1275401292,2026-08-08T18:00:00.000Z,Regular Season - 24,1648320,CA Estudiantes,1642363,Deportivo Madryn,0.0,1.0,Finished
+1275397037,2026-08-08T18:00:00.000Z,Regular Season - 24,393946,Agropecuario,3378403,Club Atlético Güemes,3.0,0.0,Finished
+1275398739,2026-08-08T18:00:00.000Z,Regular Season - 24,7127909,Almirante Brown,14137596,Ciudad de Bolívar,2.0,0.0,Finished
+1275400441,2026-08-08T19:00:00.000Z,Regular Season - 24,396499,Atletico de Rafaela,381181,Chacarita Juniors,1.0,0.0,Finished
+1275399590,2026-08-09T17:00:00.000Z,Regular Season - 24,1658532,Atlanta,387138,Temperley,1.0,0.0,Finished
+1275408100,2026-08-09T17:30:00.000Z,Regular Season - 24,411817,Los Andes,400754,Ferro Carril Oeste,1.0,2.0,Finished
+1275402994,2026-08-09T18:00:00.000Z,Regular Season - 24,7129611,Colegiales,378628,Patronato,2.0,2.0,Finished
+1275404696,2026-08-09T18:00:00.000Z,Regular Season - 24,399903,Deportivo Morón,2064459,Acassuso,4.0,1.0,Finished
+1275403845,2026-08-09T18:30:00.000Z,Regular Season - 24,382032,Colon Santa Fe,1644916,San Telmo,1.0,0.0,Finished
+1275410653,2026-08-09T19:00:00.000Z,Regular Season - 24,1666191,Racing de Córdoba,7131313,San Miguel FC,1.0,0.0,Finished
+1275402143,2026-08-09T19:00:00.000Z,Regular Season - 24,397350,Atletico Mitre,908801,Defensores De Belgrano,2.0,1.0,Finished
+1275407249,2026-08-09T19:30:00.000Z,Regular Season - 24,374373,Godoy Cruz,1656830,Chaco For Ever,2.0,1.0,Finished
+1275409802,2026-08-09T20:00:00.000Z,Regular Season - 24,409264,Quilmes,410966,Almagro,1.0,1.0,Finished
+1275406398,2026-08-09T20:30:00.000Z,Regular Season - 24,1641512,Gimnasia Y Tiro,412668,Nueva Chicago,2.0,0.0,Finished
+1275411504,2026-08-09T21:00:00.000Z,Regular Season - 24,413519,San Martín de Tucumán,393095,San Martín San Juan,1.0,1.0,Finished
+1275397888,2026-08-10T18:00:00.000Z,Regular Season - 24,395648,All Boys,1661085,Central Norte,1.0,1.0,Finished
+1275405547,2026-08-10T18:00:00.000Z,Regular Season - 24,408413,Gimnasia Jujuy,1672999,Tristan Suárez,0.0,2.0,Finished
+1275412355,2026-08-14T18:00:00.000Z,Regular Season - 25,2064459,Acassuso,1671297,Midland,1.0,1.0,Finished
+1275414908,2026-08-14T23:30:00.000Z,Regular Season - 25,396499,Atletico de Rafaela,908801,Defensores De Belgrano,0.0,0.0,Finished
+1275419163,2026-08-15T18:00:00.000Z,Regular Season - 25,399903,Deportivo Morón,410966,Almagro,2.0,0.0,Finished
+1275420014,2026-08-15T18:00:00.000Z,Regular Season - 25,400754,Ferro Carril Oeste,1658532,Atlanta,3.0,1.0,Finished
+1275425120,2026-08-15T18:00:00.000Z,Regular Season - 25,7131313,San Miguel FC,7129611,Colegiales,2.0,0.0,Finished
+1275413206,2026-08-15T18:00:00.000Z,Regular Season - 25,393946,Agropecuario,14137596,Ciudad de Bolívar,1.0,0.0,Finished
+1275416610,2026-08-15T19:00:00.000Z,Regular Season - 25,397350,Atletico Mitre,3378403,Club Atlético Güemes,1.0,1.0,Finished
+1275418312,2026-08-15T19:30:00.000Z,Regular Season - 25,382032,Colon Santa Fe,378628,Patronato,3.0,0.0,Finished
+1275421716,2026-08-15T21:00:00.000Z,Regular Season - 25,374373,Godoy Cruz,1663638,Deportivo Maipú,1.0,2.0,Finished
+1275422567,2026-08-15T22:00:00.000Z,Regular Season - 25,409264,Quilmes,1644916,San Telmo,3.0,0.0,Finished
+1275415759,2026-08-15T22:00:00.000Z,Regular Season - 25,1648320,CA Estudiantes,381181,Chacarita Juniors,2.0,0.0,Finished
+1275426822,2026-08-16T18:00:00.000Z,Regular Season - 25,1672999,Tristan Suárez,7127909,Almirante Brown,3.0,1.0,Finished
+1275420865,2026-08-16T19:00:00.000Z,Regular Season - 25,408413,Gimnasia Jujuy,1656830,Chaco For Ever,1.0,0.0,Finished
+1275417461,2026-08-16T20:00:00.000Z,Regular Season - 25,1661085,Central Norte,1641512,Gimnasia Y Tiro,0.0,0.0,Finished
+1275424269,2026-08-16T20:00:00.000Z,Regular Season - 25,413519,San Martín de Tucumán,1642363,Deportivo Madryn,2.0,2.0,Finished
+1275423418,2026-08-16T20:00:00.000Z,Regular Season - 25,1666191,Racing de Córdoba,393095,San Martín San Juan,0.0,0.0,Finished
+1275425971,2026-08-16T21:00:00.000Z,Regular Season - 25,387138,Temperley,411817,Los Andes,3.0,0.0,Finished
+1275414057,2026-08-17T18:00:00.000Z,Regular Season - 25,395648,All Boys,412668,Nueva Chicago,1.0,0.0,Finished
+1275355338,2026-08-19T18:00:00.000Z,Regular Season - 21,381181,Chacarita Juniors,3378403,Club Atlético Güemes,0.0,0.0,Finished
+1275427673,2026-08-21T18:00:00.000Z,Regular Season - 26,2064459,Acassuso,374373,Godoy Cruz,0.0,1.0,Finished
+1275440438,2026-08-21T18:30:00.000Z,Regular Season - 26,1644916,San Telmo,399903,Deportivo Morón,2.0,2.0,Finished
+1275434481,2026-08-21T22:00:00.000Z,Regular Season - 26,1642363,Deportivo Madryn,397350,Atletico Mitre,4.0,0.0,Finished
+1275442140,2026-08-22T18:00:00.000Z,Regular Season - 26,1672999,Tristan Suárez,393946,Agropecuario,2.0,0.0,Finished
+1275437885,2026-08-22T18:30:00.000Z,Regular Season - 26,378628,Patronato,408413,Gimnasia Jujuy,3.0,3.0,Finished
+1275433630,2026-08-22T18:30:00.000Z,Regular Season - 26,908801,Defensores De Belgrano,7127909,Almirante Brown,0.0,2.0,Finished
+1275428524,2026-08-22T18:30:00.000Z,Regular Season - 26,410966,Almagro,7129611,Colegiales,0.0,0.0,Finished
+1275437034,2026-08-22T18:30:00.000Z,Regular Season - 26,412668,Nueva Chicago,1658532,Atlanta,0.0,1.0,Finished
+1275439587,2026-08-22T18:30:00.000Z,Regular Season - 26,7131313,San Miguel FC,382032,Colon Santa Fe,1.0,2.0,Finished
+1275431077,2026-08-22T19:00:00.000Z,Regular Season - 26,1656830,Chaco For Ever,411817,Los Andes,1.0,0.0,Finished
+1275429375,2026-08-23T01:00:00.000Z,Regular Season - 26,1661085,Central Norte,1648320,CA Estudiantes,2.0,1.0,Finished
+1275430226,2026-08-23T18:00:00.000Z,Regular Season - 26,381181,Chacarita Juniors,413519,San Martín de Tucumán,1.0,2.0,Finished
+1275435332,2026-08-23T18:30:00.000Z,Regular Season - 26,1663638,Deportivo Maipú,409264,Quilmes,1.0,0.0,Finished
+1275431928,2026-08-23T18:30:00.000Z,Regular Season - 26,14137596,Ciudad de Bolívar,1666191,Racing de Córdoba,1.0,1.0,Finished
+1275441289,2026-08-23T19:00:00.000Z,Regular Season - 26,387138,Temperley,1671297,Midland,2.0,1.0,Finished
+1275432779,2026-08-24T19:00:00.000Z,Regular Season - 26,3378403,Club Atlético Güemes,396499,Atletico de Rafaela,0.0,0.0,Finished
+1275436183,2026-08-24T23:00:00.000Z,Regular Season - 26,400754,Ferro Carril Oeste,395648,All Boys,1.0,0.0,Finished
+1275359593,2026-08-25T22:00:00.000Z,Regular Season - 21,1642363,Deportivo Madryn,374373,Godoy Cruz,2.0,0.0,Finished
+1275300874,2026-08-26T18:00:00.000Z,Regular Season - 17,393095,San Martín San Juan,412668,Nueva Chicago,1.0,0.0,Finished
+1275356189,2026-08-26T18:00:00.000Z,Regular Season - 21,1656830,Chaco For Ever,7131313,San Miguel FC,3.0,0.0,Finished
+1275351083,2026-08-26T18:00:00.000Z,Regular Season - 21,2064459,Acassuso,1644916,San Telmo,1.0,2.0,Finished
+1275362997,2026-08-26T18:30:00.000Z,Regular Season - 21,378628,Patronato,1658532,Atlanta,2.0,0.0,Finished
+1275354487,2026-08-27T00:30:00.000Z,Regular Season - 21,1661085,Central Norte,399903,Deportivo Morón,0.0,0.0,Finished
+1275451501,2026-08-29T01:00:00.000Z,Regular Season - 27,1641512,Gimnasia Y Tiro,381181,Chacarita Juniors,1.0,0.0,Finished
+1275448948,2026-08-29T18:00:00.000Z,Regular Season - 27,7129611,Colegiales,1663638,Deportivo Maipú,1.0,0.0,Finished
+1275445544,2026-08-29T19:00:00.000Z,Regular Season - 27,396499,Atletico de Rafaela,1672999,Tristan Suárez,2.0,1.0,Finished
+1275448097,2026-08-29T19:00:00.000Z,Regular Season - 27,14137596,Ciudad de Bolívar,908801,Defensores De Belgrano,1.0,0.0,Finished
+1275454054,2026-08-29T19:30:00.000Z,Regular Season - 27,1671297,Midland,412668,Nueva Chicago,2.0,0.0,Finished
+1275443842,2026-08-30T18:00:00.000Z,Regular Season - 27,7127909,Almirante Brown,1642363,Deportivo Madryn,1.0,0.0,Finished
+1275447246,2026-08-30T18:00:00.000Z,Regular Season - 27,397350,Atletico Mitre,1661085,Central Norte,2.0,2.0,Finished
+1275449799,2026-08-30T18:30:00.000Z,Regular Season - 27,399903,Deportivo Morón,7131313,San Miguel FC,2.0,1.0,Finished
+1275454905,2026-08-30T18:30:00.000Z,Regular Season - 27,378628,Patronato,410966,Almagro,0.0,1.0,Finished
+1275444693,2026-08-30T18:30:00.000Z,Regular Season - 27,1658532,Atlanta,393095,San Martín San Juan,0.0,1.0,Finished
+1275442991,2026-08-30T18:30:00.000Z,Regular Season - 27,395648,All Boys,1656830,Chaco For Ever,0.0,0.0,Finished
+1275446395,2026-08-30T18:30:00.000Z,Regular Season - 27,1648320,CA Estudiantes,400754,Ferro Carril Oeste,2.0,2.0,Finished
+1275456607,2026-08-30T20:00:00.000Z,Regular Season - 27,1666191,Racing de Córdoba,382032,Colon Santa Fe,1.0,0.0,Finished
+1275452352,2026-08-30T21:00:00.000Z,Regular Season - 27,374373,Godoy Cruz,1644916,San Telmo,3.0,0.0,Finished
+1275457458,2026-08-30T21:30:00.000Z,Regular Season - 27,413519,San Martín de Tucumán,3378403,Club Atlético Güemes,1.0,1.0,Finished
+1275455756,2026-08-30T22:00:00.000Z,Regular Season - 27,409264,Quilmes,387138,Temperley,0.0,1.0,Finished
+1275453203,2026-08-31T22:00:00.000Z,Regular Season - 27,411817,Los Andes,2064459,Acassuso,0.0,0.0,Finished
+1275450650,2026-09-01T00:00:00.000Z,Regular Season - 27,408413,Gimnasia Jujuy,393946,Agropecuario,1.0,1.0,Finished
+1275357891,2026-09-02T23:00:00.000Z,Regular Season - 21,7129611,Colegiales,1671297,Midland,3.0,0.0,Finished
+1275465117,2026-09-04T18:30:00.000Z,Regular Season - 28,908801,Defensores De Belgrano,1666191,Racing de Córdoba,3.0,0.0,Finished
+1275467670,2026-09-04T23:00:00.000Z,Regular Season - 28,400754,Ferro Carril Oeste,397350,Atletico Mitre,0.0,0.0,Finished
+1275471074,2026-09-05T18:00:00.000Z,Regular Season - 28,1644916,San Telmo,411817,Los Andes,0.0,0.0,Finished
+1275472776,2026-09-05T18:00:00.000Z,Regular Season - 28,1672999,Tristan Suárez,413519,San Martín de Tucumán,2.0,0.0,Finished
+1275461713,2026-09-05T18:30:00.000Z,Regular Season - 28,381181,Chacarita Juniors,1658532,Atlanta,0.0,1.0,Finished
+1275458309,2026-09-05T18:30:00.000Z,Regular Season - 28,2064459,Acassuso,395648,All Boys,0.0,1.0,Finished
+1275464266,2026-09-05T20:00:00.000Z,Regular Season - 28,382032,Colon Santa Fe,399903,Deportivo Morón,1.0,2.0,Finished
+1275459160,2026-09-06T18:00:00.000Z,Regular Season - 28,393946,Agropecuario,396499,Atletico de Rafaela,2.0,0.0,Finished
+1275470223,2026-09-06T18:00:00.000Z,Regular Season - 28,7131313,San Miguel FC,374373,Godoy Cruz,1.0,2.0,Finished
+1275460011,2026-09-06T18:30:00.000Z,Regular Season - 28,410966,Almagro,408413,Gimnasia Jujuy,1.0,2.0,Finished
+1275469372,2026-09-06T18:30:00.000Z,Regular Season - 28,393095,San Martín San Juan,1671297,Midland,3.0,2.0,Finished
+1275466819,2026-09-06T19:00:00.000Z,Regular Season - 28,1663638,Deportivo Maipú,378628,Patronato,0.0,0.0,Finished
+1275465968,2026-09-06T19:00:00.000Z,Regular Season - 28,1642363,Deportivo Madryn,14137596,Ciudad de Bolívar,3.0,1.0,Finished
+1275471925,2026-09-06T19:00:00.000Z,Regular Season - 28,387138,Temperley,7129611,Colegiales,3.0,1.0,Finished
+1275462564,2026-09-06T19:00:00.000Z,Regular Season - 28,1656830,Chaco For Ever,1648320,CA Estudiantes,1.0,0.0,Finished
+1275460862,2026-09-06T20:00:00.000Z,Regular Season - 28,1661085,Central Norte,7127909,Almirante Brown,0.0,0.0,Finished
+1275463415,2026-09-06T20:00:00.000Z,Regular Season - 28,3378403,Club Atlético Güemes,1641512,Gimnasia Y Tiro,1.0,3.0,Finished
+1275468521,2026-09-07T20:00:00.000Z,Regular Season - 28,412668,Nueva Chicago,409264,Quilmes,1.0,0.0,Finished
+1275358742,2026-09-09T18:30:00.000Z,Regular Season - 21,908801,Defensores De Belgrano,411817,Los Andes,1.0,1.0,Finished
+1275482137,2026-09-12T01:00:00.000Z,Regular Season - 29,1641512,Gimnasia Y Tiro,1672999,Tristan Suárez,0.0,0.0,Finished
+1275476180,2026-09-12T18:00:00.000Z,Regular Season - 29,1658532,Atlanta,3378403,Club Atlético Güemes,2.0,0.0,Finished
+1275479584,2026-09-12T18:00:00.000Z,Regular Season - 29,7129611,Colegiales,412668,Nueva Chicago,1.0,0.0,Finished
+1275473627,2026-09-12T18:30:00.000Z,Regular Season - 29,395648,All Boys,1644916,San Telmo,0.0,1.0,Finished
+1275474478,2026-09-12T18:30:00.000Z,Regular Season - 29,410966,Almagro,1663638,Deportivo Maipú,2.0,2.0,Finished
+1275478733,2026-09-12T19:00:00.000Z,Regular Season - 29,14137596,Ciudad de Bolívar,1661085,Central Norte,0.0,0.0,Finished
+1275486392,2026-09-12T20:00:00.000Z,Regular Season - 29,409264,Quilmes,393095,San Martín San Juan,1.0,0.0,Finished
+1275483839,2026-09-13T18:00:00.000Z,Regular Season - 29,411817,Los Andes,7131313,San Miguel FC,1.0,1.0,Finished
+1275477031,2026-09-13T18:30:00.000Z,Regular Season - 29,1648320,CA Estudiantes,2064459,Acassuso,1.0,0.0,Finished
+1275475329,2026-09-13T18:30:00.000Z,Regular Season - 29,7127909,Almirante Brown,400754,Ferro Carril Oeste,0.0,0.0,Finished
+1275485541,2026-09-13T18:30:00.000Z,Regular Season - 29,378628,Patronato,387138,Temperley,0.0,0.0,Finished
+1275477882,2026-09-13T19:00:00.000Z,Regular Season - 29,397350,Atletico Mitre,1656830,Chaco For Ever,0.0,0.0,Finished
+1275481286,2026-09-13T19:00:00.000Z,Regular Season - 29,408413,Gimnasia Jujuy,396499,Atletico de Rafaela,2.0,1.0,Finished
+1275487243,2026-09-13T19:00:00.000Z,Regular Season - 29,1666191,Racing de Córdoba,399903,Deportivo Morón,1.0,2.0,Finished
+1275484690,2026-09-13T19:30:00.000Z,Regular Season - 29,1671297,Midland,381181,Chacarita Juniors,1.0,0.0,Finished
+1275482988,2026-09-13T21:00:00.000Z,Regular Season - 29,374373,Godoy Cruz,382032,Colon Santa Fe,2.0,0.0,Finished
+1275488094,2026-09-13T21:30:00.000Z,Regular Season - 29,413519,San Martín de Tucumán,393946,Agropecuario,3.0,0.0,Finished
+1275480435,2026-09-14T18:30:00.000Z,Regular Season - 29,908801,Defensores De Belgrano,1642363,Deportivo Madryn,2.0,1.0,Finished
+1275364699,2026-09-16T18:00:00.000Z,Regular Season - 21,393095,San Martín San Juan,1672999,Tristan Suárez,0.0,0.0,Finished
+1275488945,2026-09-19T18:00:00.000Z,Regular Season - 30,2064459,Acassuso,397350,Atletico Mitre,2.0,0.0,Finished
+1275501710,2026-09-19T18:30:00.000Z,Regular Season - 30,1644916,San Telmo,1648320,CA Estudiantes,0.0,1.0,Finished
+1275498306,2026-09-19T18:30:00.000Z,Regular Season - 30,400754,Ferro Carril Oeste,14137596,Ciudad de Bolívar,1.0,0.0,Finished
+1275500859,2026-09-19T18:30:00.000Z,Regular Season - 30,7131313,San Miguel FC,395648,All Boys,1.0,1.0,Finished
+1275502561,2026-09-19T19:00:00.000Z,Regular Season - 30,387138,Temperley,410966,Almagro,3.0,1.0,Finished
+1275490647,2026-09-19T19:00:00.000Z,Regular Season - 30,396499,Atletico de Rafaela,413519,San Martín de Tucumán,4.0,2.0,Finished
+1275497455,2026-09-20T18:00:00.000Z,Regular Season - 30,399903,Deportivo Morón,374373,Godoy Cruz,1.0,2.0,Finished
+1275492349,2026-09-20T18:00:00.000Z,Regular Season - 30,381181,Chacarita Juniors,409264,Quilmes,3.0,0.0,Finished
+1275489796,2026-09-20T18:00:00.000Z,Regular Season - 30,393946,Agropecuario,1641512,Gimnasia Y Tiro,1.0,0.0,Finished
+1275495753,2026-09-20T19:00:00.000Z,Regular Season - 30,1642363,Deportivo Madryn,1666191,Racing de Córdoba,2.0,0.0,Finished
+1275496604,2026-09-20T19:30:00.000Z,Regular Season - 30,1663638,Deportivo Maipú,408413,Gimnasia Jujuy,1.0,1.0,Finished
+1275494902,2026-09-20T19:30:00.000Z,Regular Season - 30,382032,Colon Santa Fe,411817,Los Andes,3.0,0.0,Finished
+1275494051,2026-09-20T20:00:00.000Z,Regular Season - 30,3378403,Club Atlético Güemes,1671297,Midland,0.0,2.0,Finished
+1275500008,2026-09-20T20:00:00.000Z,Regular Season - 30,393095,San Martín San Juan,7129611,Colegiales,2.0,0.0,Finished
+1275491498,2026-09-20T20:00:00.000Z,Regular Season - 30,1661085,Central Norte,908801,Defensores De Belgrano,0.0,1.0,Finished
+1275493200,2026-09-20T20:00:00.000Z,Regular Season - 30,1656830,Chaco For Ever,7127909,Almirante Brown,1.0,0.0,Finished
+1275503412,2026-09-21T18:00:00.000Z,Regular Season - 30,1672999,Tristan Suárez,1658532,Atlanta,0.0,0.0,Finished
+1275499157,2026-09-21T22:00:00.000Z,Regular Season - 30,412668,Nueva Chicago,378628,Patronato,1.0,1.0,Finished
+1275507667,2026-09-26T18:30:00.000Z,Regular Season - 31,1648320,CA Estudiantes,7131313,San Miguel FC,2.0,1.0,Finished
+1275505965,2026-09-26T18:30:00.000Z,Regular Season - 31,7127909,Almirante Brown,2064459,Acassuso,0.0,1.0,Finished
+1275504263,2026-09-26T19:00:00.000Z,Regular Season - 31,395648,All Boys,382032,Colon Santa Fe,0.0,0.0,Finished
+1275517879,2026-09-26T19:00:00.000Z,Regular Season - 31,409264,Quilmes,3378403,Club Atlético Güemes,2.0,0.0,Finished
+1275509369,2026-09-26T19:00:00.000Z,Regular Season - 31,14137596,Ciudad de Bolívar,1656830,Chaco For Ever,2.0,1.0,Finished
+1275511922,2026-09-26T22:00:00.000Z,Regular Season - 31,1642363,Deportivo Madryn,1661085,Central Norte,0.0,0.0,Finished
+1275510220,2026-09-26T23:00:00.000Z,Regular Season - 31,7129611,Colegiales,381181,Chacarita Juniors,2.0,1.0,Finished
+1275506816,2026-09-27T18:30:00.000Z,Regular Season - 31,1658532,Atlanta,393946,Agropecuario,1.0,0.0,Finished
+1275505114,2026-09-27T18:30:00.000Z,Regular Season - 31,410966,Almagro,412668,Nueva Chicago,0.0,1.0,Finished
+1275515326,2026-09-27T18:30:00.000Z,Regular Season - 31,411817,Los Andes,399903,Deportivo Morón,2.0,1.0,Finished
+1275517028,2026-09-27T19:00:00.000Z,Regular Season - 31,378628,Patronato,393095,San Martín San Juan,2.0,0.0,Second half
+1275508518,2026-09-27T19:00:00.000Z,Regular Season - 31,397350,Atletico Mitre,1644916,San Telmo,0.0,1.0,Second half
+1275512773,2026-09-27T19:30:00.000Z,Regular Season - 31,1663638,Deportivo Maipú,387138,Temperley,0.0,0.0,Half time
+1275516177,2026-09-27T19:30:00.000Z,Regular Season - 31,1671297,Midland,1672999,Tristan Suárez,0.0,1.0,Half time
+1275518730,2026-09-27T20:00:00.000Z,Regular Season - 31,1666191,Racing de Córdoba,374373,Godoy Cruz,0.0,1.0,First half
+1275514475,2026-09-27T21:00:00.000Z,Regular Season - 31,1641512,Gimnasia Y Tiro,396499,Atletico de Rafaela,,,Not started
+1275513624,2026-09-28T00:00:00.000Z,Regular Season - 31,408413,Gimnasia Jujuy,413519,San Martín de Tucumán,,,Not started
+1275531495,2026-10-03T18:00:00.000Z,Regular Season - 32,7131313,San Miguel FC,397350,Atletico Mitre,,,Not started
+1275526389,2026-10-03T18:00:00.000Z,Regular Season - 32,399903,Deportivo Morón,395648,All Boys,,,Not started
+1275519581,2026-10-03T18:00:00.000Z,Regular Season - 32,2064459,Acassuso,14137596,Ciudad de Bolívar,,,Not started
+1275525538,2026-10-03T18:00:00.000Z,Regular Season - 32,382032,Colon Santa Fe,1648320,CA Estudiantes,,,Not started
+1275533197,2026-10-03T18:00:00.000Z,Regular Season - 32,387138,Temperley,408413,Gimnasia Jujuy,,,Not started
+1275534048,2026-10-03T18:00:00.000Z,Regular Season - 32,1672999,Tristan Suárez,409264,Quilmes,,,Not started
+1275527240,2026-10-03T20:00:00.000Z,Regular Season - 32,400754,Ferro Carril Oeste,1642363,Deportivo Madryn,,,Not started
+1275528942,2026-10-03T20:00:00.000Z,Regular Season - 32,412668,Nueva Chicago,1663638,Deportivo Maipú,,,Not started
+1275520432,2026-10-04T18:00:00.000Z,Regular Season - 32,393946,Agropecuario,1671297,Midland,,,Not started
+1275522985,2026-10-04T18:30:00.000Z,Regular Season - 32,381181,Chacarita Juniors,378628,Patronato,,,Not started
+1275532346,2026-10-04T18:30:00.000Z,Regular Season - 32,1644916,San Telmo,7127909,Almirante Brown,,,Not started
+1275524687,2026-10-04T20:00:00.000Z,Regular Season - 32,3378403,Club Atlético Güemes,7129611,Colegiales,,,Not started
+1275522134,2026-10-04T20:00:00.000Z,Regular Season - 32,1661085,Central Norte,1666191,Racing de Córdoba,,,Not started
+1275523836,2026-10-04T20:00:00.000Z,Regular Season - 32,1656830,Chaco For Ever,908801,Defensores De Belgrano,,,Not started
+1275529793,2026-10-04T20:00:00.000Z,Regular Season - 32,393095,San Martín San Juan,410966,Almagro,,,Not started
+1275521283,2026-10-04T20:30:00.000Z,Regular Season - 32,396499,Atletico de Rafaela,1658532,Atlanta,,,Not started
+1275528091,2026-10-04T21:00:00.000Z,Regular Season - 32,374373,Godoy Cruz,411817,Los Andes,,,Not started
+1275530644,2026-10-04T21:30:00.000Z,Regular Season - 32,413519,San Martín de Tucumán,1641512,Gimnasia Y Tiro,,,Not started
+1275542558,2026-10-10T20:00:00.000Z,Regular Season - 33,908801,Defensores De Belgrano,2064459,Acassuso,,,Not started
+1275540856,2026-10-10T20:00:00.000Z,Regular Season - 33,14137596,Ciudad de Bolívar,1644916,San Telmo,,,Not started
+1275545962,2026-10-10T20:00:00.000Z,Regular Season - 33,1671297,Midland,396499,Atletico de Rafaela,,,Not started
+1275548515,2026-10-10T20:00:00.000Z,Regular Season - 33,1666191,Racing de Córdoba,411817,Los Andes,,,Not started
+1275546813,2026-10-10T20:00:00.000Z,Regular Season - 33,378628,Patronato,3378403,Club Atlético Güemes,,,Not started
+1275539154,2026-10-10T20:00:00.000Z,Regular Season - 33,397350,Atletico Mitre,382032,Colon Santa Fe,,,Not started
+1275536601,2026-10-10T20:00:00.000Z,Regular Season - 33,7127909,Almirante Brown,7131313,San Miguel FC,,,Not started
+1275537452,2026-10-10T20:00:00.000Z,Regular Season - 33,1658532,Atlanta,413519,San Martín de Tucumán,,,Not started
+1275543409,2026-10-10T20:00:00.000Z,Regular Season - 33,1642363,Deportivo Madryn,1656830,Chaco For Ever,,,Not started
+1275535750,2026-10-10T20:00:00.000Z,Regular Season - 33,410966,Almagro,381181,Chacarita Juniors,,,Not started
+1275538303,2026-10-10T20:00:00.000Z,Regular Season - 33,1648320,CA Estudiantes,399903,Deportivo Morón,,,Not started
+1275544260,2026-10-10T20:00:00.000Z,Regular Season - 33,1663638,Deportivo Maipú,393095,San Martín San Juan,,,Not started
+1275540005,2026-10-10T20:00:00.000Z,Regular Season - 33,1661085,Central Norte,400754,Ferro Carril Oeste,,,Not started
+1275547664,2026-10-10T20:00:00.000Z,Regular Season - 33,409264,Quilmes,393946,Agropecuario,,,Not started
+1275545111,2026-10-10T20:00:00.000Z,Regular Season - 33,408413,Gimnasia Jujuy,1641512,Gimnasia Y Tiro,,,Not started
+1275534899,2026-10-10T20:00:00.000Z,Regular Season - 33,395648,All Boys,374373,Godoy Cruz,,,Not started
+1275541707,2026-10-10T20:00:00.000Z,Regular Season - 33,7129611,Colegiales,1672999,Tristan Suárez,,,Not started
+1275549366,2026-10-10T20:00:00.000Z,Regular Season - 33,387138,Temperley,412668,Nueva Chicago,,,Not started
+1275558727,2026-10-17T20:00:00.000Z,Regular Season - 34,374373,Godoy Cruz,1648320,CA Estudiantes,,,Not started
+1275550217,2026-10-17T20:00:00.000Z,Regular Season - 34,2064459,Acassuso,1642363,Deportivo Madryn,,,Not started
+1275555323,2026-10-17T20:00:00.000Z,Regular Season - 34,382032,Colon Santa Fe,7127909,Almirante Brown,,,Not started
+1275551919,2026-10-17T20:00:00.000Z,Regular Season - 34,396499,Atletico de Rafaela,409264,Quilmes,,,Not started
+1275562982,2026-10-17T20:00:00.000Z,Regular Season - 34,7131313,San Miguel FC,14137596,Ciudad de Bolívar,,,Not started
+1275559578,2026-10-17T20:00:00.000Z,Regular Season - 34,411817,Los Andes,395648,All Boys,,,Not started
+1275564684,2026-10-17T20:00:00.000Z,Regular Season - 34,1672999,Tristan Suárez,378628,Patronato,,,Not started
+1275556174,2026-10-17T20:00:00.000Z,Regular Season - 34,399903,Deportivo Morón,397350,Atletico Mitre,,,Not started
+1275554472,2026-10-17T20:00:00.000Z,Regular Season - 34,3378403,Club Atlético Güemes,410966,Almagro,,,Not started
+1275560429,2026-10-17T20:00:00.000Z,Regular Season - 34,412668,Nueva Chicago,408413,Gimnasia Jujuy,,,Not started
+1275562131,2026-10-17T20:00:00.000Z,Regular Season - 34,413519,San Martín de Tucumán,1671297,Midland,,,Not started
+1275553621,2026-10-17T20:00:00.000Z,Regular Season - 34,1656830,Chaco For Ever,1661085,Central Norte,,,Not started
+1275557876,2026-10-17T20:00:00.000Z,Regular Season - 34,1641512,Gimnasia Y Tiro,1658532,Atlanta,,,Not started
+1275552770,2026-10-17T20:00:00.000Z,Regular Season - 34,381181,Chacarita Juniors,1663638,Deportivo Maipú,,,Not started
+1275563833,2026-10-17T20:00:00.000Z,Regular Season - 34,1644916,San Telmo,908801,Defensores De Belgrano,,,Not started
+1275561280,2026-10-17T20:00:00.000Z,Regular Season - 34,393095,San Martín San Juan,387138,Temperley,,,Not started
+1275557025,2026-10-17T20:00:00.000Z,Regular Season - 34,400754,Ferro Carril Oeste,1666191,Racing de Córdoba,,,Not started
+1275551068,2026-10-17T20:00:00.000Z,Regular Season - 34,393946,Agropecuario,7129611,Colegiales,,,Not started
+1275576598,2026-10-24T20:00:00.000Z,Regular Season - 35,412668,Nueva Chicago,393095,San Martín San Juan,,,Not started
+1275578300,2026-10-24T20:00:00.000Z,Regular Season - 35,409264,Quilmes,413519,San Martín de Tucumán,,,Not started
+1275568088,2026-10-24T20:00:00.000Z,Regular Season - 35,397350,Atletico Mitre,374373,Godoy Cruz,,,Not started
+1275575747,2026-10-24T20:00:00.000Z,Regular Season - 35,1671297,Midland,1641512,Gimnasia Y Tiro,,,Not started
+1275577449,2026-10-24T20:00:00.000Z,Regular Season - 35,378628,Patronato,393946,Agropecuario,,,Not started
+1275574896,2026-10-24T20:00:00.000Z,Regular Season - 35,408413,Gimnasia Jujuy,1658532,Atlanta,,,Not started
+1275568939,2026-10-24T20:00:00.000Z,Regular Season - 35,1661085,Central Norte,2064459,Acassuso,,,Not started
+1275574045,2026-10-24T20:00:00.000Z,Regular Season - 35,400754,Ferro Carril Oeste,1656830,Chaco For Ever,,,Not started
+1275566386,2026-10-24T20:00:00.000Z,Regular Season - 35,7127909,Almirante Brown,399903,Deportivo Morón,,,Not started
+1275580002,2026-10-24T20:00:00.000Z,Regular Season - 35,387138,Temperley,381181,Chacarita Juniors,,,Not started
+1275570641,2026-10-24T20:00:00.000Z,Regular Season - 35,7129611,Colegiales,396499,Atletico de Rafaela,,,Not started
+1275567237,2026-10-24T20:00:00.000Z,Regular Season - 35,1648320,CA Estudiantes,411817,Los Andes,,,Not started
+1275569790,2026-10-24T20:00:00.000Z,Regular Season - 35,14137596,Ciudad de Bolívar,382032,Colon Santa Fe,,,Not started
+1275579151,2026-10-24T20:00:00.000Z,Regular Season - 35,1666191,Racing de Córdoba,395648,All Boys,,,Not started
+1275572343,2026-10-24T20:00:00.000Z,Regular Season - 35,1642363,Deportivo Madryn,1644916,San Telmo,,,Not started
+1275573194,2026-10-24T20:00:00.000Z,Regular Season - 35,1663638,Deportivo Maipú,3378403,Club Atlético Güemes,,,Not started
+1275565535,2026-10-24T20:00:00.000Z,Regular Season - 35,410966,Almagro,1672999,Tristan Suárez,,,Not started
+1275571492,2026-10-24T20:00:00.000Z,Regular Season - 35,908801,Defensores De Belgrano,7131313,San Miguel FC,,,Not started
+1275585959,2026-10-31T20:00:00.000Z,Regular Season - 36,1656830,Chaco For Ever,1666191,Racing de Córdoba,,,Not started
+1275583406,2026-10-31T20:00:00.000Z,Regular Season - 36,1658532,Atlanta,1671297,Midland,,,Not started
+1275584257,2026-10-31T20:00:00.000Z,Regular Season - 36,396499,Atletico de Rafaela,378628,Patronato,,,Not started
+1275582555,2026-10-31T20:00:00.000Z,Regular Season - 36,395648,All Boys,1648320,CA Estudiantes,,,Not started
+1275593618,2026-10-31T20:00:00.000Z,Regular Season - 36,7131313,San Miguel FC,1642363,Deportivo Madryn,,,Not started
+1275586810,2026-10-31T20:00:00.000Z,Regular Season - 36,3378403,Club Atlético Güemes,387138,Temperley,,,Not started
+1275590214,2026-10-31T20:00:00.000Z,Regular Season - 36,374373,Godoy Cruz,7127909,Almirante Brown,,,Not started
+1275594469,2026-10-31T20:00:00.000Z,Regular Season - 36,1644916,San Telmo,1661085,Central Norte,,,Not started
+1275587661,2026-10-31T20:00:00.000Z,Regular Season - 36,382032,Colon Santa Fe,908801,Defensores De Belgrano,,,Not started
+1275588512,2026-10-31T20:00:00.000Z,Regular Season - 36,399903,Deportivo Morón,14137596,Ciudad de Bolívar,,,Not started
+1275592767,2026-10-31T20:00:00.000Z,Regular Season - 36,413519,San Martín de Tucumán,7129611,Colegiales,,,Not started
+1275591916,2026-10-31T20:00:00.000Z,Regular Season - 36,393095,San Martín San Juan,408413,Gimnasia Jujuy,,,Not started
+1275580853,2026-10-31T20:00:00.000Z,Regular Season - 36,2064459,Acassuso,400754,Ferro Carril Oeste,,,Not started
+1275589363,2026-10-31T20:00:00.000Z,Regular Season - 36,1641512,Gimnasia Y Tiro,409264,Quilmes,,,Not started
+1275595320,2026-10-31T20:00:00.000Z,Regular Season - 36,1672999,Tristan Suárez,1663638,Deportivo Maipú,,,Not started
+1275591065,2026-10-31T20:00:00.000Z,Regular Season - 36,411817,Los Andes,397350,Atletico Mitre,,,Not started
+1275581704,2026-10-31T20:00:00.000Z,Regular Season - 36,393946,Agropecuario,410966,Almagro,,,Not started
+1275585108,2026-10-31T20:00:00.000Z,Regular Season - 36,381181,Chacarita Juniors,412668,Nueva Chicago,,,Not started
