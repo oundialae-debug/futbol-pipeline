@@ -1,65 +1,33 @@
 {
  "equipos": {
-  "Denmark": 18655,
-  "Wales": 653501,
-  "Austria": 660309,
-  "Kosovo National Team": 946245,
-  "Serbia": 12698,
-  "Netherlands": 952202,
-  "Gibraltar": 930927,
-  "Andorra": 945394,
-  "Israel": 950500,
-  "Republic of Ireland": 661160,
-  "Germany": 22059,
-  "Greece": 951351,
   "Norway": 928374,
   "Portugal": 23761,
+  "Germany": 22059,
+  "Greece": 951351,
+  "Israel": 950500,
+  "Republic of Ireland": 661160,
   "Armenia": 931778,
   "Montenegro": 944543,
   "Georgia": 940288,
   "Ukraine": 657756,
   "Latvia": 930076,
   "Cyprus": 941990,
-  "Northern Ireland": 656905,
-  "Hungary": 655203,
+  "Sweden": 5039,
+  "Poland": 21208,
   "Turkey": 662011,
   "Italy": 654352,
-  "Romania": 659458,
-  "Bosnia & Herzegovina": 947947,
   "Belgium": 1635,
   "France": 2486,
-  "Sweden": 5039,
-  "Poland": 21208
+  "Northern Ireland": 656905,
+  "Hungary": 655203,
+  "Romania": 659458,
+  "Bosnia & Herzegovina": 947947
  },
  "cruces": [
   [
-   "Denmark",
-   "Wales",
-   1301092131,
-   "2026-09-27T16:00:00.000Z"
-  ],
-  [
-   "Austria",
-   "Kosovo National Team",
-   1301092982,
-   "2026-09-27T16:00:00.000Z"
-  ],
-  [
-   "Serbia",
-   "Netherlands",
-   1301091280,
-   "2026-09-27T16:00:00.000Z"
-  ],
-  [
-   "Gibraltar",
-   "Andorra",
-   1315309788,
-   "2026-09-27T16:00:00.000Z"
-  ],
-  [
-   "Israel",
-   "Republic of Ireland",
-   1301095535,
+   "Norway",
+   "Portugal",
+   1301094684,
    "2026-09-27T18:45:00.000Z"
   ],
   [
@@ -69,9 +37,9 @@
    "2026-09-27T18:45:00.000Z"
   ],
   [
-   "Norway",
-   "Portugal",
-   1301094684,
+   "Israel",
+   "Republic of Ireland",
+   1301095535,
    "2026-09-27T18:45:00.000Z"
   ],
   [
@@ -93,9 +61,9 @@
    "2026-09-28T16:00:00.000Z"
   ],
   [
-   "Northern Ireland",
-   "Hungary",
-   1301099790,
+   "Sweden",
+   "Poland",
+   1301100641,
    "2026-09-28T18:45:00.000Z"
   ],
   [
@@ -105,23 +73,23 @@
    "2026-09-28T18:45:00.000Z"
   ],
   [
-   "Romania",
-   "Bosnia & Herzegovina",
-   1301101492,
-   "2026-09-28T18:45:00.000Z"
-  ],
-  [
    "Belgium",
    "France",
    1301098088,
    "2026-09-28T18:45:00.000Z"
   ],
   [
-   "Sweden",
-   "Poland",
-   1301100641,
+   "Northern Ireland",
+   "Hungary",
+   1301099790,
+   "2026-09-28T18:45:00.000Z"
+  ],
+  [
+   "Romania",
+   "Bosnia & Herzegovina",
+   1301101492,
    "2026-09-28T18:45:00.000Z"
   ]
  ],
- "generado": "2026-09-27T15:21:01.187603+00:00"
+ "generado": "2026-09-27T18:06:10.644477+00:00"
 }
