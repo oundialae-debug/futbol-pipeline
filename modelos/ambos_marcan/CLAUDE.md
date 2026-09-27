@@ -757,3 +757,40 @@ No se descarga nada para ambos marcan mientras dura la Nations League
 Para retomar: reactivar las dos rutinas, descomentar el schedule y seguir
 el plan de arriba. Las cuotas de los partidos del 19-20/09 se pueden
 cosechar hasta ~18/10.
+
+## Registro en papel (desde el 27/09/2026): todo lo nuevo aprende
+
+Petición del usuario: "todo lo que se haga a partir de ahora tiene que ir
+aprendiendo". Pronósticos bajo demanda de una liga concreta (con el resto
+de ambos marcan en pausa) con `scripts/ambos_marcan_hoy.py`:
+
+1. **`ambos_marcan_hoy.yml`** (GitHub Actions, input `liga_id`; 120775 es
+   la Segunda): baja los partidos de hoy de `data/calendario.csv` con
+   árbitro, once y cuotas. Son 3 llamadas por partido. Antes conviene
+   poner al día los resultados de esa liga con `backfill_historico`
+   (temporadas 2026, tope bajo), `backfill_arbitro_clima` y
+   `backfill_lineups`.
+2. **`python3 scripts/ambos_marcan_hoy.py pronosticar`** (local):
+   - Primero evalúa lo ya jugado.
+   - Entrena con TODO lo jugado hasta hoy (el modelo aprende con cada
+     resultado nuevo).
+   - Pronostica ambos marcan, más de 2.5 y 1X2.
+   - Apunta cada partido ANTES del pitido en
+     `data/ambos_marcan/registro_papel.csv`, con la apuesta de ambos marcan
+     si el valor esperado es positivo contra la cuota mediana.
+3. **`python3 scripts/ambos_marcan_hoy.py evaluar`**: cruza el registro con
+   `historico_partidos.csv` y escribe
+   `modelos/ambos_marcan/registro_papel.md` (acierto, Brier y beneficio,
+   modelo contra mercado).
+
+**Regla:** no se cambia NADA del modelo por lo que salga en el registro
+hasta tener 100 o más apuestas. Es el único juez limpio; tocarlo por dos
+resultados lo contamina.
+
+**27/09, primeros 3 partidos (Segunda):** Eibar 3-2 Las Palmas (sí,
+acertado, sin apuesta) y Burgos 1-0 Eldense (sí a 1.93, apostado,
+perdido). Oviedo-Sporting quedó pendiente.
+
+Los valores de 1X2 y más de 2.5 de esos 3 están redondeados a %: el
+registro se creó después del pronóstico, con los números que se dieron al
+usuario a las 15:39 UTC, antes de los saques.

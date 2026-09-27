@@ -14,7 +14,17 @@ Dos pasos:
               de casas sin margen: 1X2 y más/menos 2.5), no de la previa de
               football-data con la que se entrenó (fuente y hora distintas:
               comprobado el 25/09 que difieren ~0.9 puntos, correlación 0.997).
-Uso: python scripts/ambos_marcan_hoy.py descargar|pronosticar
+  evaluar     (local, sin API) cruza el registro de apuestas en papel con los
+              resultados ya en data/historico_partidos.csv y escribe
+              modelos/ambos_marcan/registro_papel.md.
+
+REGISTRO EN PAPEL (desde el 27/09/2026, petición del usuario: "todo lo que se
+haga a partir de ahora tiene que ir aprendiendo"): cada pronóstico se apunta
+ANTES del partido en data/ambos_marcan/registro_papel.csv (1X2, más de 2.5 y
+ambos marcan, modelo y mercado, y la apuesta de ambos marcan si VE > 0 contra
+la cuota mediana). Es el único juez limpio: partidos que ninguna prueba ha
+tocado. El modelo además se reentrena con todo lo jugado cada vez que se usa.
+Uso: python scripts/ambos_marcan_hoy.py descargar|pronosticar|evaluar
      (LIGA_ID por defecto 120775 = Segunda, FECHA por defecto hoy UTC)
 """
 import os
@@ -28,6 +38,7 @@ import pandas as pd
 LIGA_ID = int(os.environ.get("LIGA_ID", "120775"))
 FECHA = os.environ.get("FECHA") or datetime.now(timezone.utc).date().isoformat()
 CARPETA = "data/ambos_hoy"
+REGISTRO = "data/ambos_marcan/registro_papel.csv"
 BASE_URL = "https://soccer.highlightly.net"
 
 
@@ -114,6 +125,7 @@ def precio(cuotas, mid):
 
 
 def pronosticar():
+    evaluar()   # primero se apunta lo que ya se jugó: cada uso deja el registro al día
     sys.path.insert(0, "scripts")
     import rasgos, modelo_xgboost as M
     from btts_implicito import ajustar
@@ -152,10 +164,13 @@ def pronosticar():
             bt.loc[bt.match_id == mid, k] = v
     ent = bt[bt.goles_l.notna() & ~bt.match_id.isin(hoy.match_id)]
     test = bt[bt.match_id.isin(hoy.match_id)]
-    y = ent.ambos_marcan.values.astype(int)
-    p = np.mean([M.probabilidades(M.entrenar(ent[cols].values, y, 2, semilla=s), test[cols].values, 2)[:, 1]
-                 for s in (0, 1, 2, 3, 4)], axis=0)
-    test = test.assign(p=p)
+    prob = {}
+    for obj, nc in (("ambos_marcan", 2), ("mas_2_5", 2), ("resultado", 3)):
+        y = ent[obj].values.astype(int)
+        prob[obj] = np.mean([M.probabilidades(M.entrenar(ent[cols].values, y, nc, semilla=s), test[cols].values, nc)
+                             for s in (0, 1, 2, 3, 4)], axis=0)
+    test = test.assign(p=prob["ambos_marcan"][:, 1], p_mas25=prob["mas_2_5"][:, 1], p_1=prob["resultado"][:, 0],
+                       p_x=prob["resultado"][:, 1], p_2=prob["resultado"][:, 2])
     print(f"Entrenado con {len(ent)} partidos, {len(cols)} variables. Último partido de la liga en el "
           f"histórico: {str(ult.fecha)[:10]}\n")
     L = [f"# Ambos marcan, {FECHA} (liga {LIGA_ID})", "",
@@ -183,7 +198,91 @@ def pronosticar():
         print(f"{h.local:>14s} - {h.visitante:<15s} {hora}  modelo sí {pm*100:4.1f}%  mercado sí {pk*100:4.1f}% "
               f"({n} casas)  -> {lado} a {cuota:.2f} (mín {1/pl:.2f}, VE {ve*100:+.1f}%)  {once}  estado {h.estado}")
     open(f"{CARPETA}/pronostico.md", "w").write("\n".join(L) + "\n")
+    registrar(hoy, test, cuotas)
+
+
+def registrar(hoy, test, cuotas):
+    """Una fila por partido en el registro en papel, hecha ANTES del pitido."""
+    ahora = datetime.now(timezone.utc)
+    filas = []
+    for _, h in hoy.iterrows():
+        t = test[test.match_id == h.match_id]
+        if t.empty or pd.to_datetime(h.fecha, utc=True) <= ahora:
+            continue
+        t = t.iloc[0]
+        r, o, b, mb, n = precio(cuotas, h.match_id)
+        si = t.p >= 0.5
+        pl = t.p if si else 1 - t.p
+        cuota = mb.get("Yes" if si else "No", np.nan)
+        filas.append({"generado": ahora.isoformat(timespec="seconds"), "match_id": h.match_id, "liga_id": LIGA_ID,
+                      "saque": h.fecha, "local": h.local, "visitante": h.visitante,
+                      "mod_1": round(t.p_1, 4), "mod_x": round(t.p_x, 4), "mod_2": round(t.p_2, 4),
+                      "mkt_1": round(r.get("Home", np.nan), 4), "mkt_x": round(r.get("Draw", np.nan), 4),
+                      "mkt_2": round(r.get("Away", np.nan), 4),
+                      "mod_mas25": round(t.p_mas25, 4), "mkt_mas25": round(o.get("Over", np.nan), 4),
+                      "mod_ambos": round(t.p, 4), "mkt_ambos": round(b.get("Yes", np.nan), 4),
+                      "lado_ambos": "si" if si else "no", "cuota_ambos": cuota,
+                      "ve_ambos": round(pl * cuota - 1, 4), "apuesta": bool(pl * cuota - 1 > 0)})
+    if filas:
+        os.makedirs(os.path.dirname(REGISTRO), exist_ok=True)
+        r = pd.DataFrame(filas)
+        if os.path.exists(REGISTRO):
+            r = pd.concat([pd.read_csv(REGISTRO), r])
+        r.to_csv(REGISTRO, index=False)
+        print(f"\nApuntados {len(filas)} partidos en {REGISTRO}")
+
+
+def evaluar():
+    """Cruza el registro con los resultados: lo último dicho antes del pitido de cada partido."""
+    if not os.path.exists(REGISTRO):
+        print("Sin registro todavía."); return
+    r = pd.read_csv(REGISTRO)
+    r["generado"] = pd.to_datetime(r.generado, utc=True, format="ISO8601")
+    r = r[r.generado < pd.to_datetime(r.saque, utc=True, format="ISO8601")]
+    r = r.sort_values("generado").groupby("match_id").tail(1)
+    h = pd.read_csv("data/historico_partidos.csv")[["match_id", "goles_l", "goles_v"]]
+    d = r.merge(h, on="match_id", how="left")
+    jugados = d[d.goles_l.notna()].copy()
+    gl, gv = jugados.goles_l, jugados.goles_v
+    jugados["ambos"] = ((gl > 0) & (gv > 0)).astype(int)
+    jugados["mas25"] = ((gl + gv) > 2.5).astype(int)
+    jugados["res"] = np.select([gl > gv, gl == gv], ["1", "x"], "2")
+    ap = jugados[jugados.apuesta]
+    gano = np.where(ap.lado_ambos == "si", ap.ambos == 1, ap.ambos == 0)
+    benef = np.where(gano, ap.cuota_ambos - 1, -1.0)
+    def brier(p, y): return float(np.mean((p - y) ** 2))
+    L = ["# Registro en papel: modelo de ambos marcan (desde el 27/09/2026)", "",
+         "Cada pronóstico se apunta ANTES del partido; aquí se cruza con lo que pasó. Apuesta = ambos marcan, "
+         "1 unidad, solo si el valor esperado es positivo contra la cuota mediana. Es la prueba limpia del "
+         "modelo: no se toca nada del modelo por lo que salga aquí hasta tener muestra (100+ apuestas).", "",
+         f"**Partidos jugados: {len(jugados)}** (pendientes {d.goles_l.isna().sum()}).", ""]
+    if len(jugados):
+        acierto = lambda col_mod, col_real, umbral=0.5: float(((jugados[col_mod] >= umbral).astype(int) == jugados[col_real]).mean())
+        pick_mod = jugados[["mod_1", "mod_x", "mod_2"]].values.argmax(1)
+        pick_mkt = jugados[["mkt_1", "mkt_x", "mkt_2"]].values.argmax(1)
+        real = jugados.res.map({"1": 0, "x": 1, "2": 2}).values
+        L += ["| mercado | acierto modelo | acierto mercado | Brier modelo | Brier mercado |", "|---|---|---|---|---|",
+              f"| ambos marcan | {acierto('mod_ambos', 'ambos')*100:.0f}% | {acierto('mkt_ambos', 'ambos')*100:.0f}% | "
+              f"{brier(jugados.mod_ambos, jugados.ambos):.3f} | {brier(jugados.mkt_ambos, jugados.ambos):.3f} |",
+              f"| más de 2.5 | {acierto('mod_mas25', 'mas25')*100:.0f}% | {acierto('mkt_mas25', 'mas25')*100:.0f}% | "
+              f"{brier(jugados.mod_mas25, jugados.mas25):.3f} | {brier(jugados.mkt_mas25, jugados.mas25):.3f} |",
+              f"| 1X2 | {(pick_mod == real).mean()*100:.0f}% | {(pick_mkt == real).mean()*100:.0f}% | - | - |", "",
+              f"**Apuestas de ambos marcan:** {len(ap)}, ganadas {int(gano.sum())}, beneficio "
+              f"{benef.sum():+.2f} unidades ({(benef.mean()*100 if len(ap) else 0):+.1f}% por apuesta).", "",
+              "| saque | partido | resultado | ambos (modelo/mercado) | apuesta | cuota | beneficio |",
+              "|---|---|---|---|---|---|---|"]
+        for _, j in jugados.sort_values("saque").iterrows():
+            ben = ""
+            if j.apuesta:
+                g = (j.ambos == 1) if j.lado_ambos == "si" else (j.ambos == 0)
+                ben = f"{(j.cuota_ambos - 1) if g else -1:+.2f}"
+            L.append(f"| {str(j.saque)[:16].replace('T', ' ')} | {j.local} - {j.visitante} | {int(j.goles_l)}-{int(j.goles_v)} | "
+                     f"{j.mod_ambos*100:.0f}% / {j.mkt_ambos*100:.0f}% | {j.lado_ambos if j.apuesta else '-'} | "
+                     f"{j.cuota_ambos:.2f} | {ben} |")
+    os.makedirs("modelos/ambos_marcan", exist_ok=True)
+    open("modelos/ambos_marcan/registro_papel.md", "w").write("\n".join(L) + "\n")
+    print("\n".join(L[4:6] + L[6:12]))
 
 
 if __name__ == "__main__":
-    {"descargar": descargar, "pronosticar": pronosticar}[sys.argv[1]]()
+    {"descargar": descargar, "pronosticar": pronosticar, "evaluar": evaluar}[sys.argv[1]]()
