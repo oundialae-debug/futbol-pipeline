@@ -55,6 +55,23 @@ el 60/40 club/selección de la nota y la dispersión de córners y tarjetas.
 Están puestos a mano. Cuando haya 50 o más partidos evaluados, lo
 siguiente es probarlos contra el registro.
 
+**Onces de prensa (la API no los tuvo ni el 26 ni el 27/09):** hacia 1 h antes
+del pitido, buscar el once CONFIRMADO en la web. Los "predicted/projected" no
+valen, y si dos fuentes no coinciden, no se usa ninguno; las páginas de
+alineación del partido (p. ej. ysscores.com/en/lineup/...) fueron las fiables.
+Después:
+```
+python3 modelos/selecciones/onces_prensa.py "Germany: Nübel, Brown, ..." "Greece: ..."
+python3 modelos/selecciones/nota_jugadores_selecciones.py
+python3 modelos/selecciones/pronostico_selecciones.py      # SIN "| head": se corta y no escribe
+```
+- En `onces_prensa.py` el primero de cada lista es el portero. Resuelve los
+  homónimos ya vistos (A. Schlager portero / X. Schlager; "Peretz" / "Eliel
+  Peretz") y el `&apos;` de O'Brien.
+- Sin id en la API: `Nombre@Posicion`. Para forzar un id: `Nombre=12345`.
+- **No subir onces a la vez que corre el ciclo** (17:50, 13:35...): el 27/09
+  chocaron al guardar y la pasada no subió nada (el paso ahora falla en rojo).
+
 **Para pedir pronósticos desde otro chat:** leer `pronosticos.md` (el
 último del ciclo). Si hace falta el once real y la API no lo tiene (no lo
 tuvo el 26/09), buscarlo en la web y seguir el paso 5 de la receta
