@@ -18,8 +18,10 @@ club y selección), ponderada por minutos.
                     club_ahora con 180 minutos de peso (sin partidos con la
                     selección, se queda en su nivel de club).
   3. nota         = 0.6 * club_ahora + 0.4 * seleccion
-Sin datos de club (p. ej. liga checa): club_ahora = media de su posición,
-y se marca.
+Sin datos de club (p. ej. liga checa): club_ahora = su propia nota con la
+selección (no aporta forma), y se marca. Sin club ni selección: el nivel medio
+de su selección. (Hasta el 27/09 era la media de su posición en las grandes
+ligas, y eso inflaba la "forma" de las selecciones pequeñas.)
 
 Once de cada selección: el REAL si ya está en data/selecciones/alineaciones_hoy.csv
 (modelos/selecciones/alineaciones_hoy.py); si no, el probable = los 11 con más minutos en
@@ -95,6 +97,8 @@ def main():
     for nombre, tid in EQUIPOS.items():
         s = sel[sel.equipo_id == tid]
         r = real[real.equipo_id == tid]
+        sn = s[s.nota.notna()]
+        nivel_sel = np.average(sn.nota, weights=sn.w) if len(sn) and sn.w.sum() > 0 else media_global
         ultimos = s.drop_duplicates("match_id").sort_values("fecha").match_id.tail(4)
         habitual = (s[s.match_id.isin(ultimos)].groupby(["jugador_id", "jugador"]).minutos.sum()
                     .sort_values(ascending=False).head(11).reset_index())
@@ -118,8 +122,14 @@ def main():
             if tiene_club:
                 c = agg_club.loc[jid]
                 club_ahora = (c.club_nota_bruta * c.club_min + mu * K_CLUB) / (c.club_min + K_CLUB)
+            elif len(g) and g.w.sum() > 0:
+                # sin club en nuestras 6 ligas: su propio nivel con la selección (sin
+                # información de forma, no mueve nada). Antes era la media de su
+                # posición en las grandes ligas: en selecciones pequeñas daba "forma"
+                # positiva a todo el once (Gibraltar +0.32, ~+17% de goles, 27/09).
+                club_ahora = np.average(g.nota, weights=g.w)
             else:
-                club_ahora = mu
+                club_ahora = nivel_sel   # ni club ni selección: el nivel de su selección
             seleccion = ((g.nota * g.w).sum() + club_ahora * K_SEL) / (g.w.sum() + K_SEL) if len(g) else club_ahora
             nota = PESO_CLUB * club_ahora + PESO_SEL * seleccion
             filas.append({

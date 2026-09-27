@@ -93,7 +93,8 @@ def main():
         aprendido = n >= MIN_PARTIDOS
         pesos[k] = {"peso": w_opt, "n": n, "aprendido": aprendido, "sigmas_modelo_vs_mercado": round(sig, 2)}
         en_uso = f"{w_opt:.2f} (aprendido)" if aprendido else f"{PESOS_INICIALES.get(k, 0.0):.2f} (inicial)"
-        L.append(f"| {k} | {n} | {bm.mean():.4f} | {bk.mean():.4f} | {sig:+.2f}s | {w_opt:.2f} | {en_uso} |")
+        txt_sig = f"{sig:+.2f}s" if sig == sig else "-"   # con n <= 2 no hay desviación
+        L.append(f"| {k} | {n} | {bm.mean():.4f} | {bk.mean():.4f} | {txt_sig} | {w_opt:.2f} | {en_uso} |")
     json.dump(pesos, open(RUTA_PESOS, "w"), indent=1)
     L += ["", "Mientras n sea pequeño, el peso óptimo salta con cada resultado: no leer nada en él hasta "
           f"{MIN_PARTIDOS}. Un modelo que de verdad sepa más que las casas lo mostrará con sigmas "

@@ -189,6 +189,14 @@ dos, puntos de tarjeta...). No fiarse del precio.
 - **Once de una jornada anterior:** un `alineaciones_hoy.csv` viejo
   colaría el once del partido anterior de la misma selección. Ahora se
   filtra por los match_id de `equipos.json`.
+- **Forma inventada en selecciones pequeñas (27/09):** un jugador sin
+  datos de club recibía como "nota de club" la media de su posición en las
+  grandes ligas. La forma resta su nota con la selección, así que en los
+  equipos débiles salía positiva para todo el once: Gibraltar +0.32 (~+17%
+  de goles), Armenia +0.24, Andorra +0.23. Ahora, sin club, cuenta su propia
+  nota con la selección, que no mueve la forma. Comprobado: entre club y
+  selección no hay desfase de escala (club - selección = +0.04 ± 0.04 en
+  163 jugadores con los dos datos).
 - **Cuota atípica:** una casa descolgada (Casumo, España a 2.55 con
   mediana 2.12) inflaba la "mejor cuota". Ahora se ignora lo que esté un
   12% por encima de la mediana.
@@ -211,8 +219,10 @@ API sin cuota; la pasada del ciclo del 27/09 lo trae con estadísticas):
 | Chequia - Croacia | **1-2** | Modrić 48', Karabec 55', Pašalić 78' | acierta (Croacia; mercado 47%, modelo 60%) | acierta | acierta | acierta (Croacia) |
 
 El 1-2 de Chequia-Croacia era el marcador más probable del modelo.
-Córners y tarjetas: pendientes de la API (en prensa, una amarilla a
-Bellingham y otra a Červ). **Son 2 partidos: no dicen nada del modelo.**
+Córners y amarillas (API, pasada del 27/09): Inglaterra-España 9 córners
+(6-3) y 3 amarillas (3-0); Chequia-Croacia 7 córners (1-6) y 3 amarillas
+(2-1). Aciertos: córners 3 de 4 líneas (falla "más de 8.5" en
+Chequia-Croacia) y tarjetas 3 de 4 (falla "más de 3.5" en Inglaterra-España). **Son 2 partidos: no dicen nada del modelo.**
 Cada lado pronosticado tenía un 50-60%: acertarlos con dos partidos
 se parece mucho a acertar lanzamientos de moneda. La medida de verdad es el Brier
 contra el mercado en `evaluacion.md`, a partir de 30 partidos.
