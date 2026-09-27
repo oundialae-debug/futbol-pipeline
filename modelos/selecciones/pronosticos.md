@@ -1,4 +1,4 @@
-# Pronósticos de selecciones (27/09/2026 18:06 UTC)
+# Pronósticos de selecciones (27/09/2026 18:07 UTC)
 
 Tema aparte del proyecto de ambos marcan. Por mercado: **modelo** (selecciones + nota justa de los jugadores + árbitro), **mercado** (mediana de casas sin margen) y **final** (mezcla con el peso que se aprende de los partidos ya jugados, ver `evaluacion.md`). Pronóstico = el lado más probable según final. **Cuota mínima** = 1/probabilidad final: por debajo no compensa.
 
@@ -26,14 +26,14 @@ Once real Portugal: Nuno Mendes, João Félix, Diogo Costa, Renato Veiga, Franci
 
 ## Germany - Greece (2026-09-27 18:45 UTC)
 
-Goles esperados 2.86 - 0.81, marcador más probable 2-0. Córners esperados 9.7. Amarillas esperadas 3.1 (árbitro Kavanagh, Christopher, 25 partidos en nuestras ligas, x1.09). Forma del once: Germany -0.06, Greece -0.01. Partidos en el modelo: Germany 19, Greece 15.
+Goles esperados 2.88 - 0.82, marcador más probable 2-0. Córners esperados 9.7. Amarillas esperadas 3.1 (árbitro Kavanagh, Christopher, 25 partidos en nuestras ligas, x1.09). Forma del once: Germany -0.03, Greece +0.03. Partidos en el modelo: Germany 19, Greece 15.
 
 | mercado | pronóstico | final | modelo | mercado | cuota mínima | cuota mediana | mejor cuota | casas |
 |---|---|---|---|---|---|---|---|---|
 | 1X2 | **gana Germany** | 72% | 79% | 65% | 1.38 | 1.45 | 1.50 | 50 |
 | Sin empate | **gana Germany (sin empate)** | 86% | 91% | 80% | 1.17 | 1.17 | 1.18 | 10 |
 | Más/menos 2.5 | **más de 2.5 goles** | 62% | 71% | 62% | 1.62 | 1.52 | 1.56 | 35 |
-| Ambos marcan | **ambos marcan: sí** | 54% | 52% | 56% | 1.84 | 1.66 | 1.75 | 29 |
+| Ambos marcan | **ambos marcan: sí** | 54% | 53% | 56% | 1.84 | 1.66 | 1.75 | 29 |
 | Tarjetas | **más de 3.5 tarjetas** | 53% | 37% | 53% | 1.90 | 1.74 | 1.81 | 2 |
 | Tarjetas | **menos de 4.5 tarjetas** | 65% | 76% | 65% | 1.54 | 1.40 | 1.43 | 2 |
 | Córners | **más de 8.5 córners** | 55% | 62% | 55% | 1.82 | 1.67 | 1.74 | 11 |
@@ -41,17 +41,17 @@ Goles esperados 2.86 - 0.81, marcador más probable 2-0. Córners esperados 9.7.
 | Goles | **más de 1.5 goles** | 81% | 88% | 81% | 1.23 | 1.15 | 1.17 | 34 |
 | Goles | **Germany marca primero** | 69% | 78% | 69% | 1.46 | 1.40 | 1.40 | 4 |
 
-Once probable Germany: J. Kimmich, A. Pavlović, J. Tah, M. Neuer, J. Musiala, F. Nmecha, F. Wirtz, Leroy Sané, K. Havertz, A. Rüdiger, N. Brown
-Once probable Greece: K. Tzolakis, K. Mavropanos, C. Tzolis, P. Retsos, V. Pavlidis, K. Tsimikas, G. Vagiannidis, D. Kourbelis, C. Zafeiris, Konstantinos Koulierakis, Nectarios Triantis
+Once real Germany: J. Kimmich, Y. Ebnoutalib, J. Tah, K. Adeyemi, Yann Bisseck, Conte, F. Nmecha, K. Schade, J. Vagnoman, Alexander Nübel, N. Brown
+Once real Greece: K. Tzolakis, K. Mavropanos, C. Tzolis, K. Karetsas, P. Retsos, T. Androutsos, A. Tetteh, V. Pavlidis, K. Tsimikas, G. Vagiannidis, C. Zafeiris
 
 ## Israel - Republic of Ireland (2026-09-27 18:45 UTC)
 
-Goles esperados 1.28 - 1.42, marcador más probable 1-1. Córners esperados 8.4. Amarillas esperadas 3.3 (árbitro Osmers, Harm, 29 partidos en nuestras ligas, x1.01). Forma del once: Israel +0.08, Republic of Ireland -0.12. Partidos en el modelo: Israel 13, Republic of Ireland 16.
+Goles esperados 1.23 - 1.48, marcador más probable 1-1. Córners esperados 8.4. Amarillas esperadas 3.3 (árbitro Osmers, Harm, 29 partidos en nuestras ligas, x1.01). Forma del once: Israel +0.02, Republic of Ireland -0.07. Partidos en el modelo: Israel 13, Republic of Ireland 16.
 
 | mercado | pronóstico | final | modelo | mercado | cuota mínima | cuota mediana | mejor cuota | casas |
 |---|---|---|---|---|---|---|---|---|
-| 1X2 | **gana Republic of Ireland** | 38% | 40% | 36% | 2.64 | 2.64 | 2.80 | 50 |
-| Sin empate | **gana Republic of Ireland (sin empate)** | 52% | 54% | 51% | 1.91 | 1.85 | 1.93 | 13 |
+| 1X2 | **gana Republic of Ireland** | 39% | 43% | 36% | 2.55 | 2.64 | 2.80 | 50 |
+| Sin empate | **gana Republic of Ireland (sin empate)** | 54% | 58% | 51% | 1.85 | 1.85 | 1.93 | 13 |
 | Más/menos 2.5 | **menos de 2.5 goles** | 55% | 49% | 55% | 1.83 | 1.72 | 1.78 | 35 |
 | Ambos marcan | **ambos marcan: sí** | 53% | 55% | 52% | 1.87 | 1.79 | 1.84 | 29 |
 | Tarjetas | **más de 3.5 tarjetas** | 56% | 40% | 56% | 1.79 | 1.73 | 1.36 | 2 |
@@ -59,10 +59,10 @@ Goles esperados 1.28 - 1.42, marcador más probable 1-1. Córners esperados 8.4.
 | Córners | **más de 8.5 córners** | 51% | 46% | 51% | 1.95 | 1.79 | 1.83 | 11 |
 | Córners | **menos de 9.5 córners** | 60% | 66% | 60% | 1.67 | 1.54 | 1.61 | 10 |
 | Goles | **más de 1.5 goles** | 70% | 75% | 70% | 1.44 | 1.35 | 1.38 | 35 |
-| Goles | **Republic of Ireland marca primero** | 50% | 53% | 50% | 1.99 | 2.00 | 2.00 | 4 |
+| Goles | **Republic of Ireland marca primero** | 50% | 55% | 50% | 1.99 | 2.00 | 2.00 | 4 |
 
-Once probable Israel: Dan Biton, O. Gloukh, Stav Lemkin, A. Khalaili, M. Solomon, E. Peretz, Dor Turgeman, Eli Dasa, R. Revivo, O. Glazer, O. Blorian
-Once probable Republic of Ireland: J. Moylan, C. Kelleher, N. Collins, J. Molumby, J. Knight, T. Parrott, J. O&apos;Brien, D. O&apos;Shea, J. Abankwah, C. Ogbene, L. Scales
+Once real Israel: O. Gloukh, A. Khalaili, M. Solomon, E. Peretz, G. Kanichowsky, Dor Turgeman, Stoyanov, R. Revivo, Daniel Peretz, R. Shlomo, G. Mizrahi
+Once real Republic of Ireland: J. Moylan, C. Kelleher, R. Manning, L. Kitching, J. Molumby, C. Coventry, T. Parrott, J. O&apos;Brien, D. O&apos;Shea, A. Idah, J. Abankwah
 
 ## Armenia - Montenegro (2026-09-28 16:00 UTC)
 
