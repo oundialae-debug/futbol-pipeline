@@ -1,0 +1,395 @@
+match_id,fecha,ronda,local_id,local,visitante_id,visitante,goles_l,goles_v,estado
+1275027703,2026-01-16T23:20:00.000Z,Regular Season - 1,1244946,Deportivo Pereira,1246648,Llaneros,0.0,2.0,Finished
+1275025150,2026-01-17T01:30:00.000Z,Regular Season - 1,976881,Fortaleza FC,971775,Alianza Petrolera,1.0,0.0,Finished
+1275020895,2026-01-17T21:10:00.000Z,Regular Season - 1,969222,America de Cali,965818,La Equidad FC,3.0,0.0,Finished
+1275021746,2026-01-17T23:20:00.000Z,Regular Season - 1,968371,Atlético Nacional,964116,Chico,4.0,0.0,Finished
+1275022597,2026-01-18T01:30:00.000Z,Regular Season - 1,963265,Bucaramanga,958159,Millonarios,2.0,1.0,Finished
+1275024299,2026-01-18T19:00:00.000Z,Regular Season - 1,959010,Deportivo Pasto,960712,Independiente Medellin,1.0,0.0,Finished
+1275026001,2026-01-18T21:10:00.000Z,Regular Season - 1,964967,Jaguares,959861,Deportivo Cali,1.0,0.0,Finished
+1275026852,2026-01-18T23:20:00.000Z,Regular Season - 1,966669,Junior,972626,Deportes Tolima,0.0,2.0,Finished
+1275028554,2026-01-19T01:30:00.000Z,Regular Season - 1,970073,Santa Fe,974328,Rionegro Aguilas,1.0,1.0,Finished
+1275023448,2026-01-19T21:00:00.000Z,Regular Season - 1,1251754,Cúcuta Deportivo,967520,Once Caldas,1.0,2.0,Finished
+1281553171,2026-01-23T23:20:00.000Z,Regular Season - 2,965818,La Equidad FC,1251754,Cúcuta Deportivo,2.0,1.0,Finished
+1281554022,2026-01-24T01:30:00.000Z,Regular Season - 2,972626,Deportes Tolima,971775,Alianza Petrolera,2.0,0.0,Finished
+1281554873,2026-01-24T19:00:00.000Z,Regular Season - 2,1244946,Deportivo Pereira,976881,Fortaleza FC,0.0,0.0,Finished
+1281555724,2026-01-24T21:10:00.000Z,Regular Season - 2,1246648,Llaneros,963265,Bucaramanga,1.0,1.0,Finished
+1281556575,2026-01-24T23:20:00.000Z,Regular Season - 2,959861,Deportivo Cali,960712,Independiente Medellin,3.0,1.0,Finished
+1281557426,2026-01-25T01:30:00.000Z,Regular Season - 2,964116,Chico,969222,America de Cali,0.0,1.0,Finished
+1281558277,2026-01-25T21:00:00.000Z,Regular Season - 2,974328,Rionegro Aguilas,959010,Deportivo Pasto,1.0,2.0,Finished
+1281559128,2026-01-25T23:10:00.000Z,Regular Season - 2,958159,Millonarios,966669,Junior,1.0,2.0,Finished
+1281559979,2026-01-26T01:20:00.000Z,Regular Season - 2,967520,Once Caldas,970073,Santa Fe,1.0,1.0,Finished
+1281561681,2026-01-27T21:00:00.000Z,Regular Season - 3,1251754,Cúcuta Deportivo,963265,Bucaramanga,2.0,2.0,Finished
+1281562532,2026-01-27T23:20:00.000Z,Regular Season - 3,976881,Fortaleza FC,1246648,Llaneros,1.0,1.0,Finished
+1281563383,2026-01-28T01:30:00.000Z,Regular Season - 3,960712,Independiente Medellin,972626,Deportes Tolima,2.0,2.0,Finished
+1281564234,2026-01-28T21:10:00.000Z,Regular Season - 3,971775,Alianza Petrolera,964116,Chico,1.0,1.0,Finished
+1281565085,2026-01-28T23:30:00.000Z,Regular Season - 3,970073,Santa Fe,1244946,Deportivo Pereira,2.0,2.0,Finished
+1281565936,2026-01-29T01:30:00.000Z,Regular Season - 3,959010,Deportivo Pasto,958159,Millonarios,2.0,1.0,Finished
+1281566787,2026-01-29T21:00:00.000Z,Regular Season - 3,974328,Rionegro Aguilas,959861,Deportivo Cali,2.0,1.0,Finished
+1281567638,2026-01-29T23:10:00.000Z,Regular Season - 3,964967,Jaguares,965818,La Equidad FC,2.0,3.0,Finished
+1281568489,2026-01-30T01:20:00.000Z,Regular Season - 3,969222,America de Cali,967520,Once Caldas,1.0,1.0,Finished
+1281570191,2026-01-31T21:00:00.000Z,Regular Season - 4,1251754,Cúcuta Deportivo,976881,Fortaleza FC,1.0,1.0,Finished
+1281571042,2026-01-31T23:10:00.000Z,Regular Season - 4,964116,Chico,970073,Santa Fe,0.0,1.0,Finished
+1281572744,2026-02-01T19:00:00.000Z,Regular Season - 4,963265,Bucaramanga,971775,Alianza Petrolera,5.0,0.0,Finished
+1281573595,2026-02-01T21:10:00.000Z,Regular Season - 4,959861,Deportivo Cali,959010,Deportivo Pasto,3.0,0.0,Finished
+1281574446,2026-02-01T23:10:00.000Z,Regular Season - 4,967520,Once Caldas,964967,Jaguares,1.0,1.0,Finished
+1281575297,2026-02-02T01:30:00.000Z,Regular Season - 4,1246648,Llaneros,974328,Rionegro Aguilas,1.0,1.0,Finished
+1281571893,2026-02-02T20:00:00.000Z,Regular Season - 4,958159,Millonarios,960712,Independiente Medellin,0.0,0.0,Finished
+1281576148,2026-02-02T23:20:00.000Z,Regular Season - 4,965818,La Equidad FC,972626,Deportes Tolima,0.0,0.0,Finished
+1281576999,2026-02-03T01:30:00.000Z,Regular Season - 4,1244946,Deportivo Pereira,966669,Junior,2.0,3.0,Finished
+1281577850,2026-02-05T01:00:00.000Z,Regular Season - 4,968371,Atlético Nacional,969222,America de Cali,2.0,1.0,Finished
+1281578701,2026-02-06T23:20:00.000Z,Regular Season - 5,959010,Deportivo Pasto,963265,Bucaramanga,0.0,0.0,Finished
+1281579552,2026-02-07T01:30:00.000Z,Regular Season - 5,960712,Independiente Medellin,965818,La Equidad FC,1.0,2.0,Finished
+1281580403,2026-02-07T19:00:00.000Z,Regular Season - 5,974328,Rionegro Aguilas,1251754,Cúcuta Deportivo,3.0,2.0,Finished
+1281581254,2026-02-07T21:10:00.000Z,Regular Season - 5,972626,Deportes Tolima,1246648,Llaneros,0.0,1.0,Finished
+1281616145,2026-02-07T23:20:00.000Z,Regular Season - 9,976881,Fortaleza FC,970073,Santa Fe,1.0,1.0,Finished
+1281582956,2026-02-08T01:30:00.000Z,Regular Season - 5,966669,Junior,964116,Chico,3.0,0.0,Finished
+1281584658,2026-02-08T21:10:00.000Z,Regular Season - 5,971775,Alianza Petrolera,967520,Once Caldas,1.0,1.0,Finished
+1281585509,2026-02-08T23:20:00.000Z,Regular Season - 5,959861,Deportivo Cali,958159,Millonarios,0.0,0.0,Finished
+1281586360,2026-02-09T01:30:00.000Z,Regular Season - 5,964967,Jaguares,1244946,Deportivo Pereira,1.0,0.0,Finished
+1281587211,2026-02-10T21:00:00.000Z,Regular Season - 6,1251754,Cúcuta Deportivo,960712,Independiente Medellin,1.0,3.0,Finished
+1281588062,2026-02-10T23:20:00.000Z,Regular Season - 6,1246648,Llaneros,959010,Deportivo Pasto,0.0,1.0,Finished
+1281588913,2026-02-11T01:30:00.000Z,Regular Season - 6,963265,Bucaramanga,972626,Deportes Tolima,0.0,0.0,Finished
+1281590615,2026-02-11T23:30:00.000Z,Regular Season - 6,958159,Millonarios,974328,Rionegro Aguilas,1.0,0.0,Finished
+1281589764,2026-02-12T01:30:00.000Z,Regular Season - 6,965818,La Equidad FC,959861,Deportivo Cali,3.0,2.0,Finished
+1281592317,2026-02-12T21:10:00.000Z,Regular Season - 6,964116,Chico,964967,Jaguares,5.0,0.0,Finished
+1281593168,2026-02-12T23:20:00.000Z,Regular Season - 6,967520,Once Caldas,966669,Junior,2.0,1.0,Finished
+1281594019,2026-02-13T01:30:00.000Z,Regular Season - 6,968371,Atlético Nacional,976881,Fortaleza FC,4.0,1.0,Finished
+1281594870,2026-02-14T01:00:00.000Z,Regular Season - 6,969222,America de Cali,970073,Santa Fe,1.0,0.0,Finished
+1281595721,2026-02-14T21:30:00.000Z,Regular Season - 7,958159,Millonarios,1246648,Llaneros,2.0,1.0,Finished
+1281596572,2026-02-14T23:30:00.000Z,Regular Season - 7,960712,Independiente Medellin,1244946,Deportivo Pereira,1.0,1.0,Finished
+1281597423,2026-02-15T01:30:00.000Z,Regular Season - 7,959010,Deportivo Pasto,965818,La Equidad FC,1.0,1.0,Finished
+1281599125,2026-02-15T21:20:00.000Z,Regular Season - 7,972626,Deportes Tolima,967520,Once Caldas,2.0,1.0,Finished
+1281599976,2026-02-15T23:30:00.000Z,Regular Season - 7,959861,Deportivo Cali,968371,Atlético Nacional,1.0,0.0,Finished
+1281600827,2026-02-16T01:30:00.000Z,Regular Season - 7,976881,Fortaleza FC,964116,Chico,2.0,1.0,Finished
+1281603380,2026-02-17T21:00:00.000Z,Regular Season - 7,971775,Alianza Petrolera,1251754,Cúcuta Deportivo,1.0,1.0,Finished
+1281601678,2026-02-17T23:00:00.000Z,Regular Season - 7,964967,Jaguares,970073,Santa Fe,3.0,1.0,Finished
+1281602529,2026-02-19T00:30:00.000Z,Regular Season - 7,966669,Junior,969222,America de Cali,2.0,1.0,Finished
+1281604231,2026-02-20T23:20:00.000Z,Regular Season - 8,1246648,Llaneros,960712,Independiente Medellin,2.0,2.0,Finished
+1281611039,2026-02-21T01:30:00.000Z,Regular Season - 8,1244946,Deportivo Pereira,959010,Deportivo Pasto,2.0,2.0,Finished
+1281605933,2026-02-21T19:00:00.000Z,Regular Season - 8,967520,Once Caldas,976881,Fortaleza FC,4.0,2.0,Finished
+1281606784,2026-02-21T21:10:00.000Z,Regular Season - 8,963265,Bucaramanga,959861,Deportivo Cali,0.0,0.0,Finished
+1281607635,2026-02-21T23:20:00.000Z,Regular Season - 8,968371,Atlético Nacional,971775,Alianza Petrolera,3.0,0.0,Finished
+1281608486,2026-02-22T01:30:00.000Z,Regular Season - 8,965818,La Equidad FC,958159,Millonarios,3.0,2.0,Finished
+1281609337,2026-02-22T21:00:00.000Z,Regular Season - 8,970073,Santa Fe,966669,Junior,2.0,1.0,Finished
+1281610188,2026-02-22T23:10:00.000Z,Regular Season - 8,964116,Chico,974328,Rionegro Aguilas,0.0,1.0,Finished
+1281605082,2026-02-23T01:30:00.000Z,Regular Season - 8,969222,America de Cali,964967,Jaguares,3.0,0.0,Finished
+1281611890,2026-02-23T21:00:00.000Z,Regular Season - 8,1251754,Cúcuta Deportivo,972626,Deportes Tolima,3.0,2.0,Finished
+1281582105,2026-02-26T00:00:00.000Z,Regular Season - 5,970073,Santa Fe,968371,Atlético Nacional,1.0,2.0,Finished
+1281612741,2026-02-27T00:30:00.000Z,Regular Season - 9,958159,Millonarios,1244946,Deportivo Pereira,5.0,1.0,Finished
+1281614443,2026-02-28T01:30:00.000Z,Regular Season - 9,967520,Once Caldas,964116,Chico,3.0,0.0,Finished
+1281615294,2026-02-28T21:10:00.000Z,Regular Season - 9,971775,Alianza Petrolera,969222,America de Cali,0.0,3.0,Finished
+1281613592,2026-02-28T23:20:00.000Z,Regular Season - 9,964967,Jaguares,966669,Junior,0.0,2.0,Finished
+1281616996,2026-03-01T01:30:00.000Z,Regular Season - 9,960712,Independiente Medellin,963265,Bucaramanga,1.0,2.0,Finished
+1281617847,2026-03-01T19:00:00.000Z,Regular Season - 9,959010,Deportivo Pasto,1251754,Cúcuta Deportivo,3.0,2.0,Finished
+1281618698,2026-03-01T21:00:00.000Z,Regular Season - 9,974328,Rionegro Aguilas,965818,La Equidad FC,0.0,0.0,Finished
+1281678268,2026-03-01T23:10:00.000Z,Regular Season - 16,959861,Deportivo Cali,976881,Fortaleza FC,1.0,1.0,Finished
+1281620400,2026-03-02T01:30:00.000Z,Regular Season - 9,972626,Deportes Tolima,968371,Atlético Nacional,1.0,0.0,Finished
+1281625506,2026-03-05T01:00:00.000Z,Regular Season - 10,976881,Fortaleza FC,964967,Jaguares,2.0,1.0,Finished
+1281628059,2026-03-05T23:10:00.000Z,Regular Season - 10,1246648,Llaneros,965818,La Equidad FC,1.0,1.0,Finished
+1281627208,2026-03-06T01:20:00.000Z,Regular Season - 10,966669,Junior,971775,Alianza Petrolera,1.0,1.0,Finished
+1281622953,2026-03-07T01:30:00.000Z,Regular Season - 10,959861,Deportivo Cali,967520,Once Caldas,0.0,2.0,Finished
+1281621251,2026-03-07T21:00:00.000Z,Regular Season - 10,974328,Rionegro Aguilas,968371,Atlético Nacional,1.0,2.0,Finished
+1281673162,2026-03-09T21:00:00.000Z,Regular Season - 16,1246648,Llaneros,964967,Jaguares,2.0,0.0,Finished
+1281628910,2026-03-09T23:20:00.000Z,Regular Season - 10,958159,Millonarios,1251754,Cúcuta Deportivo,2.0,0.0,Finished
+1281624655,2026-03-10T01:30:00.000Z,Regular Season - 10,959010,Deportivo Pasto,969222,America de Cali,2.0,0.0,Finished
+1281622102,2026-03-10T23:20:00.000Z,Regular Season - 10,963265,Bucaramanga,1244946,Deportivo Pereira,3.0,0.0,Finished
+1281569340,2026-03-11T01:30:00.000Z,Regular Season - 3,966669,Junior,968371,Atlético Nacional,0.0,4.0,Finished
+1281629761,2026-03-13T23:20:00.000Z,Regular Season - 11,967520,Once Caldas,959010,Deportivo Pasto,4.0,2.0,Finished
+1281630612,2026-03-14T01:30:00.000Z,Regular Season - 11,968371,Atlético Nacional,1246648,Llaneros,2.0,0.0,Finished
+1281631463,2026-03-14T19:00:00.000Z,Regular Season - 11,965818,La Equidad FC,963265,Bucaramanga,0.0,0.0,Finished
+1281632314,2026-03-14T21:10:00.000Z,Regular Season - 11,1251754,Cúcuta Deportivo,959861,Deportivo Cali,0.0,2.0,Finished
+1281633165,2026-03-14T23:20:00.000Z,Regular Season - 11,964116,Chico,958159,Millonarios,2.0,1.0,Finished
+1281634016,2026-03-15T01:30:00.000Z,Regular Season - 11,970073,Santa Fe,971775,Alianza Petrolera,1.0,1.0,Finished
+1281634867,2026-03-15T20:30:00.000Z,Regular Season - 11,1244946,Deportivo Pereira,974328,Rionegro Aguilas,0.0,1.0,Finished
+1281635718,2026-03-15T21:10:00.000Z,Regular Season - 11,969222,America de Cali,972626,Deportes Tolima,1.0,1.0,Finished
+1281636569,2026-03-15T23:20:00.000Z,Regular Season - 11,964967,Jaguares,960712,Independiente Medellin,1.0,2.0,Finished
+1281637420,2026-03-16T01:30:00.000Z,Regular Season - 11,966669,Junior,976881,Fortaleza FC,2.0,1.0,Finished
+1281638271,2026-03-17T21:10:00.000Z,Regular Season - 12,1246648,Llaneros,1251754,Cúcuta Deportivo,2.0,2.0,Finished
+1281639973,2026-03-18T01:30:00.000Z,Regular Season - 12,958159,Millonarios,968371,Atlético Nacional,3.0,0.0,Finished
+1281640824,2026-03-18T21:10:00.000Z,Regular Season - 12,959010,Deportivo Pasto,964116,Chico,2.0,0.0,Finished
+1281641675,2026-03-18T23:20:00.000Z,Regular Season - 12,965818,La Equidad FC,1244946,Deportivo Pereira,2.0,2.0,Finished
+1281639122,2026-03-19T00:30:00.000Z,Regular Season - 12,963265,Bucaramanga,967520,Once Caldas,1.0,1.0,Finished
+1281642526,2026-03-19T01:30:00.000Z,Regular Season - 12,959861,Deportivo Cali,970073,Santa Fe,1.0,1.0,Finished
+1281643377,2026-03-19T21:10:00.000Z,Regular Season - 12,971775,Alianza Petrolera,964967,Jaguares,1.0,0.0,Finished
+1281644228,2026-03-19T23:20:00.000Z,Regular Season - 12,972626,Deportes Tolima,976881,Fortaleza FC,2.0,0.0,Finished
+1281645079,2026-03-20T01:30:00.000Z,Regular Season - 12,960712,Independiente Medellin,966669,Junior,2.0,0.0,Finished
+1281645930,2026-03-20T21:00:00.000Z,Regular Season - 12,974328,Rionegro Aguilas,969222,America de Cali,0.0,1.0,Finished
+1281646781,2026-03-21T23:20:00.000Z,Regular Season - 13,967520,Once Caldas,958159,Millonarios,1.0,4.0,Finished
+1281649334,2026-03-22T01:30:00.000Z,Regular Season - 13,968371,Atlético Nacional,965818,La Equidad FC,3.0,0.0,Finished
+1281647632,2026-03-22T21:00:00.000Z,Regular Season - 13,971775,Alianza Petrolera,959861,Deportivo Cali,1.0,0.0,Finished
+1281650185,2026-03-23T19:00:00.000Z,Regular Season - 13,964116,Chico,972626,Deportes Tolima,1.0,1.0,Finished
+1281651036,2026-03-23T21:10:00.000Z,Regular Season - 13,970073,Santa Fe,960712,Independiente Medellin,2.0,1.0,Finished
+1281651887,2026-03-23T23:20:00.000Z,Regular Season - 13,964967,Jaguares,974328,Rionegro Aguilas,1.0,1.0,Finished
+1281648483,2026-03-24T20:30:00.000Z,Regular Season - 13,1244946,Deportivo Pereira,1251754,Cúcuta Deportivo,2.0,2.0,Finished
+1281652738,2026-03-24T23:00:00.000Z,Regular Season - 13,966669,Junior,963265,Bucaramanga,2.0,0.0,Finished
+1281653589,2026-03-25T01:00:00.000Z,Regular Season - 13,976881,Fortaleza FC,959010,Deportivo Pasto,1.0,2.0,Finished
+1281654440,2026-03-26T01:00:00.000Z,Regular Season - 13,969222,America de Cali,1246648,Llaneros,0.0,0.0,Finished
+1281655291,2026-03-27T21:00:00.000Z,Regular Season - 14,974328,Rionegro Aguilas,971775,Alianza Petrolera,1.0,0.0,Finished
+1281656142,2026-03-28T01:10:00.000Z,Regular Season - 14,963265,Bucaramanga,970073,Santa Fe,1.0,2.0,Finished
+1281656993,2026-03-28T21:00:00.000Z,Regular Season - 14,1251754,Cúcuta Deportivo,964116,Chico,1.0,0.0,Finished
+1281657844,2026-03-28T23:10:00.000Z,Regular Season - 14,972626,Deportes Tolima,964967,Jaguares,3.0,1.0,Finished
+1281658695,2026-03-29T01:20:00.000Z,Regular Season - 14,959861,Deportivo Cali,1244946,Deportivo Pereira,1.0,0.0,Finished
+1281659546,2026-03-29T21:10:00.000Z,Regular Season - 14,965818,La Equidad FC,966669,Junior,0.0,1.0,Finished
+1281660397,2026-03-29T23:20:00.000Z,Regular Season - 14,959010,Deportivo Pasto,968371,Atlético Nacional,1.0,2.0,Finished
+1281662099,2026-03-30T15:00:00.000Z,Regular Season - 14,1246648,Llaneros,967520,Once Caldas,1.0,1.0,Finished
+1281661248,2026-03-30T23:10:00.000Z,Regular Season - 14,960712,Independiente Medellin,969222,America de Cali,2.0,1.0,Finished
+1281662950,2026-03-31T01:20:00.000Z,Regular Season - 14,958159,Millonarios,976881,Fortaleza FC,2.0,2.0,Finished
+1281663801,2026-04-01T01:00:00.000Z,Regular Season - 15,972626,Deportes Tolima,974328,Rionegro Aguilas,4.0,1.0,Finished
+1281664652,2026-04-01T21:10:00.000Z,Regular Season - 15,971775,Alianza Petrolera,959010,Deportivo Pasto,0.0,0.0,Finished
+1281665503,2026-04-01T23:30:00.000Z,Regular Season - 15,970073,Santa Fe,1246648,Llaneros,0.0,1.0,Finished
+1281666354,2026-04-02T01:30:00.000Z,Regular Season - 15,968371,Atlético Nacional,1251754,Cúcuta Deportivo,0.0,0.0,Finished
+1281667205,2026-04-02T19:00:00.000Z,Regular Season - 15,964116,Chico,1244946,Deportivo Pereira,1.0,0.0,Finished
+1281668056,2026-04-02T21:10:00.000Z,Regular Season - 15,969222,America de Cali,963265,Bucaramanga,2.0,0.0,Finished
+1281668907,2026-04-02T23:20:00.000Z,Regular Season - 15,964967,Jaguares,958159,Millonarios,1.0,0.0,Finished
+1281669758,2026-04-03T01:30:00.000Z,Regular Season - 15,967520,Once Caldas,960712,Independiente Medellin,1.0,1.0,Finished
+1281670609,2026-04-03T23:20:00.000Z,Regular Season - 15,976881,Fortaleza FC,965818,La Equidad FC,1.0,1.0,Finished
+1281671460,2026-04-04T01:30:00.000Z,Regular Season - 15,966669,Junior,959861,Deportivo Cali,1.0,2.0,Finished
+1281623804,2026-04-05T00:30:00.000Z,Regular Season - 10,972626,Deportes Tolima,970073,Santa Fe,2.0,2.0,Finished
+1281672311,2026-04-05T21:00:00.000Z,Regular Season - 16,1251754,Cúcuta Deportivo,969222,America de Cali,2.0,0.0,Finished
+1281591466,2026-04-06T20:30:00.000Z,Regular Season - 6,1244946,Deportivo Pereira,971775,Alianza Petrolera,2.0,3.0,Finished
+1281560830,2026-04-07T01:10:00.000Z,Regular Season - 2,968371,Atlético Nacional,964967,Jaguares,2.0,1.0,Finished
+1281598274,2026-04-07T21:00:00.000Z,Regular Season - 7,974328,Rionegro Aguilas,963265,Bucaramanga,2.0,1.0,Finished
+1281674013,2026-04-10T20:30:00.000Z,Regular Season - 16,1244946,Deportivo Pereira,967520,Once Caldas,0.0,0.0,Finished
+1281674864,2026-04-11T01:05:00.000Z,Regular Season - 16,959010,Deportivo Pasto,972626,Deportes Tolima,1.0,0.0,Finished
+1281677417,2026-04-11T21:00:00.000Z,Regular Season - 16,974328,Rionegro Aguilas,966669,Junior,0.0,3.0,Finished
+1281676566,2026-04-12T01:20:00.000Z,Regular Season - 16,960712,Independiente Medellin,968371,Atlético Nacional,2.0,3.0,Finished
+1281675715,2026-04-12T19:00:00.000Z,Regular Season - 16,958159,Millonarios,970073,Santa Fe,1.0,1.0,Finished
+1281619549,2026-04-12T21:10:00.000Z,Regular Season - 9,959861,Deportivo Cali,1246648,Llaneros,1.0,1.0,Finished
+1281679119,2026-04-12T23:20:00.000Z,Regular Season - 16,963265,Bucaramanga,964116,Chico,5.0,0.0,Finished
+1281679970,2026-04-13T01:30:00.000Z,Regular Season - 16,965818,La Equidad FC,971775,Alianza Petrolera,2.0,1.0,Finished
+1281681672,2026-04-17T21:00:00.000Z,Regular Season - 17,964116,Chico,959861,Deportivo Cali,1.0,0.0,Finished
+1281680821,2026-04-17T21:00:00.000Z,Regular Season - 17,964967,Jaguares,959010,Deportivo Pasto,2.0,3.0,Finished
+1281682523,2026-04-18T23:10:00.000Z,Regular Season - 17,972626,Deportes Tolima,1244946,Deportivo Pereira,2.0,0.0,Finished
+1281683374,2026-04-19T01:30:00.000Z,Regular Season - 17,976881,Fortaleza FC,974328,Rionegro Aguilas,2.0,0.0,Finished
+1281684225,2026-04-19T19:00:00.000Z,Regular Season - 17,970073,Santa Fe,1251754,Cúcuta Deportivo,5.0,0.0,Finished
+1281686778,2026-04-19T21:10:00.000Z,Regular Season - 17,971775,Alianza Petrolera,960712,Independiente Medellin,0.0,1.0,Finished
+1281685927,2026-04-19T23:20:00.000Z,Regular Season - 17,966669,Junior,1246648,Llaneros,2.0,0.0,Finished
+1281685076,2026-04-20T01:30:00.000Z,Regular Season - 17,969222,America de Cali,958159,Millonarios,3.0,1.0,Finished
+1281687629,2026-04-20T23:20:00.000Z,Regular Season - 17,967520,Once Caldas,965818,La Equidad FC,2.0,1.0,Finished
+1281688480,2026-04-21T01:30:00.000Z,Regular Season - 17,968371,Atlético Nacional,963265,Bucaramanga,2.0,0.0,Finished
+1281626357,2026-04-22T23:20:00.000Z,Regular Season - 10,960712,Independiente Medellin,964116,Chico,2.0,0.0,Finished
+1281583807,2026-04-23T01:30:00.000Z,Regular Season - 5,976881,Fortaleza FC,969222,America de Cali,1.0,2.0,Finished
+1281691033,2026-04-23T23:00:00.000Z,Regular Season - 18,959010,Deportivo Pasto,970073,Santa Fe,1.0,2.0,Finished
+1281689331,2026-04-24T01:00:00.000Z,Regular Season - 18,958159,Millonarios,972626,Deportes Tolima,2.0,0.0,Finished
+1281690182,2026-04-24T21:00:00.000Z,Regular Season - 18,1251754,Cúcuta Deportivo,966669,Junior,1.0,1.0,Finished
+1281691884,2026-04-25T19:00:00.000Z,Regular Season - 18,963265,Bucaramanga,964967,Jaguares,2.0,2.0,Finished
+1281694437,2026-04-25T21:00:00.000Z,Regular Season - 18,1244946,Deportivo Pereira,968371,Atlético Nacional,1.0,0.0,Finished
+1281693586,2026-04-25T23:10:00.000Z,Regular Season - 18,959861,Deportivo Cali,969222,America de Cali,1.0,0.0,Finished
+1281692735,2026-04-26T01:30:00.000Z,Regular Season - 18,960712,Independiente Medellin,976881,Fortaleza FC,1.0,0.0,Finished
+1281695288,2026-04-26T21:00:00.000Z,Regular Season - 18,974328,Rionegro Aguilas,967520,Once Caldas,2.0,2.0,Finished
+1281696139,2026-04-26T23:10:00.000Z,Regular Season - 18,1246648,Llaneros,971775,Alianza Petrolera,0.0,0.0,Finished
+1281696990,2026-04-27T01:20:00.000Z,Regular Season - 18,965818,La Equidad FC,964116,Chico,4.0,0.0,Finished
+1281704649,2026-05-01T23:00:00.000Z,Apertura - 19,967520,Once Caldas,968371,Atlético Nacional,1.0,0.0,Finished
+1281699543,2026-05-02T19:00:00.000Z,Apertura - 19,964116,Chico,1246648,Llaneros,3.0,0.0,Finished
+1281702947,2026-05-02T21:00:00.000Z,Apertura - 19,964967,Jaguares,1251754,Cúcuta Deportivo,2.0,0.0,Finished
+1281702096,2026-05-03T20:30:00.000Z,Apertura - 19,960712,Independiente Medellin,974328,Rionegro Aguilas,1.0,2.0,Finished
+1281697841,2026-05-03T20:30:00.000Z,Apertura - 19,971775,Alianza Petrolera,958159,Millonarios,2.0,2.0,Finished
+1281701245,2026-05-03T20:30:00.000Z,Apertura - 19,976881,Fortaleza FC,963265,Bucaramanga,2.0,1.0,Finished
+1281700394,2026-05-03T20:30:00.000Z,Apertura - 19,972626,Deportes Tolima,959861,Deportivo Cali,1.0,1.0,Finished
+1281705500,2026-05-03T20:30:00.000Z,Apertura - 19,970073,Santa Fe,965818,La Equidad FC,3.0,1.0,Finished
+1281698692,2026-05-03T22:45:00.000Z,Apertura - 19,969222,America de Cali,1244946,Deportivo Pereira,1.0,0.0,Finished
+1281703798,2026-05-03T22:45:00.000Z,Apertura - 19,966669,Junior,959010,Deportivo Pasto,4.0,3.0,Finished
+1314134557,2026-05-09T21:00:00.000Z,Apertura - Quarter-finals,965818,La Equidad FC,968371,Atlético Nacional,1.0,2.0,Finished
+1314135408,2026-05-09T23:10:00.000Z,Apertura - Quarter-finals,972626,Deportes Tolima,959010,Deportivo Pasto,1.0,0.0,Finished
+1314136259,2026-05-10T01:20:00.000Z,Apertura - Quarter-finals,969222,America de Cali,970073,Santa Fe,1.0,1.0,Finished
+1314137110,2026-05-10T23:10:00.000Z,Apertura - Quarter-finals,967520,Once Caldas,966669,Junior,0.0,1.0,Finished
+1314137961,2026-05-12T23:20:00.000Z,Apertura - Quarter-finals,968371,Atlético Nacional,965818,La Equidad FC,7.0,1.0,Finished
+1314138812,2026-05-13T01:30:00.000Z,Apertura - Quarter-finals,970073,Santa Fe,969222,America de Cali,4.0,0.0,Finished
+1314139663,2026-05-13T23:00:00.000Z,Apertura - Quarter-finals,959010,Deportivo Pasto,972626,Deportes Tolima,0.0,2.0,Finished
+1314140514,2026-05-14T01:15:00.000Z,Apertura - Quarter-finals,966669,Junior,967520,Once Caldas,2.0,2.0,Finished
+1314937050,2026-05-16T23:00:00.000Z,Apertura - Semi-finals,972626,Deportes Tolima,968371,Atlético Nacional,0.0,1.0,Finished
+1314937901,2026-05-17T01:30:00.000Z,Apertura - Semi-finals,970073,Santa Fe,966669,Junior,1.0,1.0,Finished
+1314938752,2026-05-23T23:00:00.000Z,Apertura - Semi-finals,968371,Atlético Nacional,972626,Deportes Tolima,3.0,1.0,Finished
+1314939603,2026-05-24T01:30:00.000Z,Apertura - Semi-finals,966669,Junior,970073,Santa Fe,0.0,0.0,Finished after penalties
+1315997396,2026-06-03T00:30:00.000Z,Apertura - Final,966669,Junior,968371,Atlético Nacional,3.0,0.0,Finished
+1315998247,2026-06-08T22:00:00.000Z,Apertura - Final,968371,Atlético Nacional,966669,Junior,1.0,0.0,Finished
+1318786974,2026-07-24T23:10:00.000Z,Clausura - 1,1246648,Llaneros,1244946,Deportivo Pereira,1.0,0.0,Finished
+1318783570,2026-07-25T01:15:00.000Z,Clausura - 1,959861,Deportivo Cali,964967,Jaguares,2.0,0.0,Finished
+1318785272,2026-07-25T21:05:00.000Z,Clausura - 1,960712,Independiente Medellin,959010,Deportivo Pasto,3.0,2.0,Finished
+1318787825,2026-07-25T23:10:00.000Z,Clausura - 1,958159,Millonarios,963265,Bucaramanga,0.0,1.0,Finished
+1318784421,2026-07-26T01:15:00.000Z,Clausura - 1,972626,Deportes Tolima,966669,Junior,2.0,1.0,Finished
+1318786123,2026-07-26T19:00:00.000Z,Clausura - 1,965818,La Equidad FC,969222,America de Cali,0.0,2.0,Finished
+1318781017,2026-07-26T21:05:00.000Z,Clausura - 1,974328,Rionegro Aguilas,970073,Santa Fe,2.0,1.0,Finished
+1318781868,2026-07-26T23:10:00.000Z,Clausura - 1,971775,Alianza Petrolera,976881,Fortaleza FC,1.0,1.0,Finished
+1318788676,2026-07-27T01:15:00.000Z,Clausura - 1,967520,Once Caldas,1251754,Cúcuta Deportivo,5.0,1.0,Finished
+1318791229,2026-07-31T01:00:00.000Z,Clausura - 2,963265,Bucaramanga,1246648,Llaneros,1.0,1.0,Finished
+1318793782,2026-08-01T01:00:00.000Z,Clausura - 2,976881,Fortaleza FC,1244946,Deportivo Pereira,0.0,0.0,Finished
+1318792931,2026-08-01T19:00:00.000Z,Clausura - 2,959010,Deportivo Pasto,974328,Rionegro Aguilas,1.0,2.0,Finished
+1318789527,2026-08-01T21:05:00.000Z,Clausura - 2,971775,Alianza Petrolera,972626,Deportes Tolima,1.0,2.0,Finished
+1318794633,2026-08-01T23:10:00.000Z,Clausura - 2,960712,Independiente Medellin,959861,Deportivo Cali,1.0,0.0,Finished
+1318796335,2026-08-02T01:15:00.000Z,Clausura - 2,966669,Junior,958159,Millonarios,0.0,1.0,Finished
+1318795484,2026-08-02T20:45:00.000Z,Clausura - 2,964967,Jaguares,968371,Atlético Nacional,0.0,3.0,Finished
+1318790378,2026-08-02T22:45:00.000Z,Clausura - 2,969222,America de Cali,964116,Chico,7.0,0.0,Finished
+1318797186,2026-08-03T01:00:00.000Z,Clausura - 2,970073,Santa Fe,967520,Once Caldas,2.0,2.0,Finished
+1318798888,2026-08-04T01:00:00.000Z,Clausura - 3,963265,Bucaramanga,1251754,Cúcuta Deportivo,1.0,1.0,Finished
+1318803143,2026-08-04T21:10:00.000Z,Clausura - 3,1246648,Llaneros,976881,Fortaleza FC,3.0,1.0,Finished
+1318801441,2026-08-04T23:15:00.000Z,Clausura - 3,972626,Deportes Tolima,960712,Independiente Medellin,2.0,3.0,Finished
+1318803994,2026-08-05T01:20:00.000Z,Clausura - 3,958159,Millonarios,959010,Deportivo Pasto,2.0,0.0,Finished
+1318802292,2026-08-05T23:15:00.000Z,Clausura - 3,965818,La Equidad FC,964967,Jaguares,1.0,0.0,Finished
+1318804845,2026-08-06T01:30:00.000Z,Clausura - 3,967520,Once Caldas,969222,America de Cali,0.0,1.0,Finished
+1318814206,2026-08-08T19:00:00.000Z,Clausura - 4,970073,Santa Fe,964116,Chico,2.0,0.0,Finished
+1318810802,2026-08-08T21:20:00.000Z,Clausura - 4,976881,Fortaleza FC,1251754,Cúcuta Deportivo,2.0,0.0,Finished
+1318809100,2026-08-08T23:25:00.000Z,Clausura - 4,972626,Deportes Tolima,965818,La Equidad FC,2.0,1.0,Finished
+1318809951,2026-08-09T01:30:00.000Z,Clausura - 4,959010,Deportivo Pasto,959861,Deportivo Cali,0.0,2.0,Finished
+1318807398,2026-08-09T21:05:00.000Z,Clausura - 4,971775,Alianza Petrolera,963265,Bucaramanga,2.0,3.0,Finished
+1318812504,2026-08-09T23:10:00.000Z,Clausura - 4,964967,Jaguares,967520,Once Caldas,1.0,1.0,Finished
+1318808249,2026-08-10T01:15:00.000Z,Clausura - 4,969222,America de Cali,968371,Atlético Nacional,1.0,0.0,Finished
+1318806547,2026-08-19T21:00:00.000Z,Clausura - 4,974328,Rionegro Aguilas,1246648,Llaneros,1.0,1.0,Finished
+1318792080,2026-08-19T23:00:00.000Z,Clausura - 2,1251754,Cúcuta Deportivo,965818,La Equidad FC,1.0,1.0,Finished
+1318829524,2026-08-21T21:00:00.000Z,Clausura - 6,964967,Jaguares,964116,Chico,1.0,0.0,Finished
+1318824418,2026-08-22T00:30:00.000Z,Clausura - 6,971775,Alianza Petrolera,1244946,Deportivo Pereira,0.0,0.0,Finished
+1318823567,2026-08-22T20:30:00.000Z,Clausura - 6,974328,Rionegro Aguilas,958159,Millonarios,1.0,1.0,Finished
+1318826120,2026-08-22T21:05:00.000Z,Clausura - 6,972626,Deportes Tolima,963265,Bucaramanga,0.0,0.0,Finished
+1318831226,2026-08-22T23:10:00.000Z,Clausura - 6,970073,Santa Fe,969222,America de Cali,0.0,0.0,Finished
+1318828673,2026-08-23T01:15:00.000Z,Clausura - 6,960712,Independiente Medellin,1251754,Cúcuta Deportivo,0.0,1.0,Finished
+1318827822,2026-08-23T19:00:00.000Z,Clausura - 6,976881,Fortaleza FC,968371,Atlético Nacional,1.0,2.0,Finished
+1318826971,2026-08-23T21:05:00.000Z,Clausura - 6,959010,Deportivo Pasto,1246648,Llaneros,0.0,1.0,Finished
+1318825269,2026-08-23T23:10:00.000Z,Clausura - 6,959861,Deportivo Cali,965818,La Equidad FC,2.0,2.0,Finished
+1318830375,2026-08-24T01:15:00.000Z,Clausura - 6,966669,Junior,967520,Once Caldas,1.0,1.0,Finished
+1318835481,2026-08-26T01:00:00.000Z,Clausura - 7,1251754,Cúcuta Deportivo,971775,Alianza Petrolera,1.0,0.0,Finished
+1318834630,2026-08-26T21:00:00.000Z,Clausura - 7,964116,Chico,976881,Fortaleza FC,0.0,0.0,Finished
+1318832077,2026-08-26T23:25:00.000Z,Clausura - 7,969222,America de Cali,966669,Junior,4.0,2.0,Finished
+1318832928,2026-08-27T01:30:00.000Z,Clausura - 7,968371,Atlético Nacional,959861,Deportivo Cali,2.0,1.0,Finished
+1318837183,2026-08-27T23:10:00.000Z,Clausura - 7,1246648,Llaneros,958159,Millonarios,0.0,2.0,Finished
+1318836332,2026-08-28T01:15:00.000Z,Clausura - 7,965818,La Equidad FC,959010,Deportivo Pasto,1.0,1.0,Finished
+1318846544,2026-08-29T21:25:00.000Z,Clausura - 8,964967,Jaguares,969222,America de Cali,2.0,2.0,Finished
+1318847395,2026-08-29T23:30:00.000Z,Clausura - 8,966669,Junior,970073,Santa Fe,1.0,1.0,Finished
+1318841438,2026-08-30T01:30:00.000Z,Clausura - 8,971775,Alianza Petrolera,968371,Atlético Nacional,1.0,5.0,Finished
+1318840587,2026-08-30T19:00:00.000Z,Clausura - 8,974328,Rionegro Aguilas,964116,Chico,2.0,2.0,Finished
+1318845693,2026-08-30T21:10:00.000Z,Clausura - 8,960712,Independiente Medellin,1246648,Llaneros,2.0,1.0,Finished
+1318848246,2026-08-30T23:15:00.000Z,Clausura - 8,958159,Millonarios,965818,La Equidad FC,0.0,0.0,Finished
+1318842289,2026-08-31T01:20:00.000Z,Clausura - 8,959861,Deportivo Cali,963265,Bucaramanga,1.0,1.0,Finished
+1318843991,2026-08-31T23:00:00.000Z,Clausura - 8,959010,Deportivo Pasto,1244946,Deportivo Pereira,1.0,2.0,Finished
+1318843140,2026-09-01T01:05:00.000Z,Clausura - 8,972626,Deportes Tolima,1251754,Cúcuta Deportivo,2.0,1.0,Finished
+1318844842,2026-09-02T01:00:00.000Z,Clausura - 8,976881,Fortaleza FC,967520,Once Caldas,1.0,2.0,Finished
+1318916326,2026-09-03T01:25:00.000Z,Clausura - 16,970073,Santa Fe,958159,Millonarios,3.0,2.0,Finished
+1318849097,2026-09-03T21:00:00.000Z,Clausura - 9,969222,America de Cali,971775,Alianza Petrolera,3.0,0.0,Finished
+1318838885,2026-09-04T01:00:00.000Z,Clausura - 7,1244946,Deportivo Pereira,960712,Independiente Medellin,0.0,3.0,Finished
+1318851650,2026-09-05T21:00:00.000Z,Clausura - 9,964116,Chico,967520,Once Caldas,2.0,0.0,Finished
+1318852501,2026-09-05T23:10:00.000Z,Clausura - 9,1251754,Cúcuta Deportivo,959010,Deportivo Pasto,2.0,2.0,Finished
+1318856756,2026-09-05T23:25:00.000Z,Clausura - 9,970073,Santa Fe,976881,Fortaleza FC,2.0,2.0,Finished
+1318854203,2026-09-06T01:30:00.000Z,Clausura - 9,966669,Junior,964967,Jaguares,3.0,3.0,Finished
+1318853352,2026-09-06T21:00:00.000Z,Clausura - 9,965818,La Equidad FC,974328,Rionegro Aguilas,2.0,2.0,Finished
+1318855905,2026-09-06T23:10:00.000Z,Clausura - 9,1244946,Deportivo Pereira,958159,Millonarios,1.0,1.0,Finished
+1318820163,2026-09-07T23:00:00.000Z,Clausura - 5,1246648,Llaneros,972626,Deportes Tolima,1.0,2.0,Finished
+1318821014,2026-09-11T01:00:00.000Z,Clausura - 5,958159,Millonarios,959861,Deportivo Cali,1.0,1.0,Finished
+1318862713,2026-09-11T23:15:00.000Z,Clausura - 10,964967,Jaguares,976881,Fortaleza FC,2.0,2.0,Finished
+1318865266,2026-09-12T01:30:00.000Z,Clausura - 10,970073,Santa Fe,972626,Deportes Tolima,1.0,0.0,Finished
+1318861862,2026-09-12T21:05:00.000Z,Clausura - 10,965818,La Equidad FC,1246648,Llaneros,3.0,2.0,Finished
+1318860160,2026-09-12T23:10:00.000Z,Clausura - 10,964116,Chico,960712,Independiente Medellin,2.0,1.0,Finished
+1318857607,2026-09-13T01:20:00.000Z,Clausura - 10,971775,Alianza Petrolera,966669,Junior,1.0,0.0,Finished
+1318864415,2026-09-13T19:00:00.000Z,Clausura - 10,1244946,Deportivo Pereira,963265,Bucaramanga,1.0,3.0,Finished
+1318859309,2026-09-13T21:05:00.000Z,Clausura - 10,968371,Atlético Nacional,974328,Rionegro Aguilas,2.0,0.0,Finished
+1318863564,2026-09-13T23:10:00.000Z,Clausura - 10,967520,Once Caldas,959861,Deportivo Cali,1.0,2.0,Finished
+1318861011,2026-09-14T01:15:00.000Z,Clausura - 10,1251754,Cúcuta Deportivo,958159,Millonarios,1.0,2.0,Finished
+1318858458,2026-09-15T01:00:00.000Z,Clausura - 10,969222,America de Cali,959010,Deportivo Pasto,0.0,1.0,Finished
+1318799739,2026-09-16T00:30:00.000Z,Clausura - 3,964116,Chico,971775,Alianza Petrolera,1.0,2.0,Finished
+1318838034,2026-09-16T23:15:00.000Z,Clausura - 7,967520,Once Caldas,972626,Deportes Tolima,1.0,0.0,Finished
+1318889094,2026-09-17T01:20:00.000Z,Clausura - 13,965818,La Equidad FC,968371,Atlético Nacional,2.0,3.0,Finished
+1318850799,2026-09-18T00:00:00.000Z,Clausura - 9,963265,Bucaramanga,960712,Independiente Medellin,2.0,2.0,Finished
+1318866117,2026-09-18T21:00:00.000Z,Clausura - 11,974328,Rionegro Aguilas,1244946,Deportivo Pereira,2.0,2.0,Finished
+1318873776,2026-09-19T19:00:00.000Z,Clausura - 11,958159,Millonarios,964116,Chico,3.0,0.0,Finished
+1318866968,2026-09-19T21:05:00.000Z,Clausura - 11,971775,Alianza Petrolera,970073,Santa Fe,1.0,4.0,Finished
+1318868670,2026-09-19T23:10:00.000Z,Clausura - 11,959861,Deportivo Cali,1251754,Cúcuta Deportivo,3.0,0.0,Finished
+1318870372,2026-09-20T01:15:00.000Z,Clausura - 11,959010,Deportivo Pasto,967520,Once Caldas,1.0,0.0,Finished
+1318871223,2026-09-20T19:00:00.000Z,Clausura - 11,976881,Fortaleza FC,966669,Junior,1.0,4.0,Finished
+1318867819,2026-09-20T21:05:00.000Z,Clausura - 11,963265,Bucaramanga,965818,La Equidad FC,2.0,0.0,Finished
+1318869521,2026-09-20T23:10:00.000Z,Clausura - 11,972626,Deportes Tolima,969222,America de Cali,1.0,1.0,Finished
+1318872925,2026-09-21T01:15:00.000Z,Clausura - 11,1246648,Llaneros,968371,Atlético Nacional,2.0,0.0,Finished
+1318872074,2026-09-22T23:00:00.000Z,Clausura - 11,960712,Independiente Medellin,964967,Jaguares,2.0,1.0,Finished
+1318882286,2026-09-23T01:00:00.000Z,Clausura - 12,970073,Santa Fe,959861,Deportivo Cali,0.0,1.0,Finished
+1318874627,2026-09-24T00:30:00.000Z,Clausura - 12,969222,America de Cali,974328,Rionegro Aguilas,1.0,0.0,Finished
+1318875478,2026-09-25T00:30:00.000Z,Clausura - 12,968371,Atlético Nacional,958159,Millonarios,1.0,1.0,Finished
+1318876329,2026-09-25T23:10:00.000Z,Clausura - 12,964116,Chico,959010,Deportivo Pasto,3.0,0.0,Finished
+1318880584,2026-09-26T01:15:00.000Z,Clausura - 12,967520,Once Caldas,963265,Bucaramanga,1.0,3.0,Finished
+1318881435,2026-09-26T21:00:00.000Z,Clausura - 12,1244946,Deportivo Pereira,965818,La Equidad FC,0.0,0.0,Finished
+1318877180,2026-09-26T23:15:00.000Z,Clausura - 12,1251754,Cúcuta Deportivo,1246648,Llaneros,2.0,1.0,Finished
+1318879733,2026-09-27T01:20:00.000Z,Clausura - 12,966669,Junior,960712,Independiente Medellin,2.0,0.0,Finished
+1318878882,2026-09-27T21:00:00.000Z,Clausura - 12,964967,Jaguares,971775,Alianza Petrolera,,,Not started
+1318878031,2026-09-27T23:05:00.000Z,Clausura - 12,976881,Fortaleza FC,972626,Deportes Tolima,,,Not started
+1318800590,2026-09-28T01:10:00.000Z,Clausura - 3,959861,Deportivo Cali,974328,Rionegro Aguilas,,,Not started
+1318805696,2026-09-29T20:30:00.000Z,Clausura - 3,1244946,Deportivo Pereira,970073,Santa Fe,,,Not started
+1318811653,2026-09-30T01:05:00.000Z,Clausura - 4,960712,Independiente Medellin,958159,Millonarios,,,Not started
+1318798037,2026-10-01T01:00:00.000Z,Clausura - 3,968371,Atlético Nacional,966669,Junior,,,Not started
+1318922283,2026-10-02T01:00:00.000Z,Clausura - 17,965818,La Equidad FC,967520,Once Caldas,,,Not started
+1318885690,2026-10-03T00:45:00.000Z,Clausura - 13,959861,Deportivo Cali,971775,Alianza Petrolera,,,Not started
+1318883137,2026-10-03T19:00:00.000Z,Clausura - 13,974328,Rionegro Aguilas,964967,Jaguares,,,Not started
+1318886541,2026-10-03T21:05:00.000Z,Clausura - 13,972626,Deportes Tolima,964116,Chico,,,Not started
+1318888243,2026-10-04T01:15:00.000Z,Clausura - 13,960712,Independiente Medellin,970073,Santa Fe,,,Not started
+1318887392,2026-10-04T19:00:00.000Z,Clausura - 13,959010,Deportivo Pasto,976881,Fortaleza FC,,,Not started
+1318884839,2026-10-04T21:05:00.000Z,Clausura - 13,1251754,Cúcuta Deportivo,1244946,Deportivo Pereira,,,Not started
+1318883988,2026-10-04T23:10:00.000Z,Clausura - 13,963265,Bucaramanga,966669,Junior,,,Not started
+1318889945,2026-10-05T01:15:00.000Z,Clausura - 13,1246648,Llaneros,969222,America de Cali,,,Not started
+1318849948,2026-10-08T01:20:00.000Z,Clausura - 9,968371,Atlético Nacional,972626,Deportes Tolima,,,Not started
+1318891647,2026-10-10T00:30:00.000Z,Clausura - 14,971775,Alianza Petrolera,974328,Rionegro Aguilas,,,Not started
+1318897604,2026-10-10T21:00:00.000Z,Clausura - 14,967520,Once Caldas,1246648,Llaneros,,,Not started
+1318896753,2026-10-10T23:10:00.000Z,Clausura - 14,966669,Junior,965818,La Equidad FC,,,Not started
+1318893349,2026-10-11T01:15:00.000Z,Clausura - 14,968371,Atlético Nacional,959010,Deportivo Pasto,,,Not started
+1318898455,2026-10-11T19:00:00.000Z,Clausura - 14,1244946,Deportivo Pereira,959861,Deportivo Cali,,,Not started
+1318895051,2026-10-11T20:00:00.000Z,Clausura - 14,976881,Fortaleza FC,958159,Millonarios,,,Not started
+1318895902,2026-10-11T21:05:00.000Z,Clausura - 14,964967,Jaguares,972626,Deportes Tolima,,,Not started
+1318892498,2026-10-12T01:15:00.000Z,Clausura - 14,969222,America de Cali,960712,Independiente Medellin,,,Not started
+1318894200,2026-10-13T01:10:00.000Z,Clausura - 14,964116,Chico,1251754,Cúcuta Deportivo,,,Not started
+1318833779,2026-10-14T00:00:00.000Z,Clausura - 7,963265,Bucaramanga,974328,Rionegro Aguilas,,,Not started
+1318813355,2026-10-14T23:00:00.000Z,Clausura - 4,966669,Junior,1244946,Deportivo Pereira,,,Not started
+1318839736,2026-10-15T01:05:00.000Z,Clausura - 7,970073,Santa Fe,964967,Jaguares,,,Not started
+1318782719,2026-10-17T19:00:00.000Z,Clausura - 1,964116,Chico,968371,Atlético Nacional,,,Not started
+1318900157,2026-10-17T21:00:00.000Z,Clausura - 15,974328,Rionegro Aguilas,972626,Deportes Tolima,,,Not started
+1318906965,2026-10-17T23:05:00.000Z,Clausura - 15,958159,Millonarios,964967,Jaguares,,,Not started
+1318904412,2026-10-18T01:10:00.000Z,Clausura - 15,960712,Independiente Medellin,967520,Once Caldas,,,Not started
+1318901008,2026-10-18T20:30:00.000Z,Clausura - 15,963265,Bucaramanga,969222,America de Cali,,,Not started
+1318906114,2026-10-18T22:45:00.000Z,Clausura - 15,1246648,Llaneros,970073,Santa Fe,,,Not started
+1318902710,2026-10-19T01:00:00.000Z,Clausura - 15,959861,Deportivo Cali,966669,Junior,,,Not started
+1318903561,2026-10-20T01:05:00.000Z,Clausura - 15,959010,Deportivo Pasto,971775,Alianza Petrolera,,,Not started
+1318907816,2026-10-20T21:30:00.000Z,Clausura - 15,1244946,Deportivo Pereira,964116,Chico,,,Not started
+1318890796,2026-10-20T23:30:00.000Z,Clausura - 13,958159,Millonarios,967520,Once Caldas,,,Not started
+1318901859,2026-10-21T01:30:00.000Z,Clausura - 15,1251754,Cúcuta Deportivo,968371,Atlético Nacional,,,Not started
+1318855054,2026-10-21T23:15:00.000Z,Clausura - 9,1246648,Llaneros,959861,Deportivo Cali,,,Not started
+1318905263,2026-10-22T01:20:00.000Z,Clausura - 15,965818,La Equidad FC,976881,Fortaleza FC,,,Not started
+1318911220,2026-10-23T23:00:00.000Z,Clausura - 16,964116,Chico,963265,Bucaramanga,,,Not started
+1318914624,2026-10-24T01:10:00.000Z,Clausura - 16,966669,Junior,974328,Rionegro Aguilas,,,Not started
+1318909518,2026-10-24T23:05:00.000Z,Clausura - 16,969222,America de Cali,1251754,Cúcuta Deportivo,,,Not started
+1318915475,2026-10-25T00:15:00.000Z,Clausura - 16,967520,Once Caldas,1244946,Deportivo Pereira,,,Not started
+1318912922,2026-10-25T19:00:00.000Z,Clausura - 16,976881,Fortaleza FC,959861,Deportivo Cali,,,Not started
+1318908667,2026-10-25T21:05:00.000Z,Clausura - 16,971775,Alianza Petrolera,965818,La Equidad FC,,,Not started
+1318910369,2026-10-25T23:10:00.000Z,Clausura - 16,968371,Atlético Nacional,960712,Independiente Medellin,,,Not started
+1318912071,2026-10-26T01:15:00.000Z,Clausura - 16,972626,Deportes Tolima,959010,Deportivo Pasto,,,Not started
+1318913773,2026-10-26T23:00:00.000Z,Clausura - 16,964967,Jaguares,1246648,Llaneros,,,Not started
+1318899306,2026-10-27T01:05:00.000Z,Clausura - 14,970073,Santa Fe,963265,Bucaramanga,,,Not started
+1318818461,2026-10-27T23:00:00.000Z,Clausura - 5,1251754,Cúcuta Deportivo,974328,Rionegro Aguilas,,,Not started
+1318817610,2026-10-28T01:05:00.000Z,Clausura - 5,964116,Chico,966669,Junior,,,Not started
+1318821865,2026-10-28T23:00:00.000Z,Clausura - 5,967520,Once Caldas,971775,Alianza Petrolera,,,Not started
+1318819312,2026-10-29T01:05:00.000Z,Clausura - 5,965818,La Equidad FC,960712,Independiente Medellin,,,Not started
+1318815057,2026-10-29T23:15:00.000Z,Clausura - 5,969222,America de Cali,976881,Fortaleza FC,,,Not started
+1318815908,2026-10-30T01:30:00.000Z,Clausura - 5,968371,Atlético Nacional,970073,Santa Fe,,,Not started
+1318822716,2026-10-30T23:00:00.000Z,Clausura - 5,1244946,Deportivo Pereira,964967,Jaguares,,,Not started
+1318816759,2026-10-31T01:05:00.000Z,Clausura - 5,963265,Bucaramanga,959010,Deportivo Pasto,,,Not started
+1318923134,2026-10-31T23:00:00.000Z,Clausura - 17,1246648,Llaneros,966669,Junior,,,Not started
+1318921432,2026-11-01T23:10:00.000Z,Clausura - 17,960712,Independiente Medellin,971775,Alianza Petrolera,,,Not started
+1318919730,2026-11-02T01:15:00.000Z,Clausura - 17,959861,Deportivo Cali,964116,Chico,,,Not started
+1318917177,2026-11-02T21:05:00.000Z,Clausura - 17,974328,Rionegro Aguilas,976881,Fortaleza FC,,,Not started
+1318918879,2026-11-02T23:10:00.000Z,Clausura - 17,1251754,Cúcuta Deportivo,970073,Santa Fe,,,Not started
+1318918028,2026-11-03T01:15:00.000Z,Clausura - 17,963265,Bucaramanga,968371,Atlético Nacional,,,Not started
+1318924836,2026-11-03T23:00:00.000Z,Clausura - 17,1244946,Deportivo Pereira,972626,Deportes Tolima,,,Not started
+1318923985,2026-11-04T01:10:00.000Z,Clausura - 17,958159,Millonarios,969222,America de Cali,,,Not started
+1318920581,2026-11-05T00:00:00.000Z,Clausura - 17,959010,Deportivo Pasto,964967,Jaguares,,,Not started
+1318929942,2026-11-07T01:00:00.000Z,Clausura - 18,976881,Fortaleza FC,960712,Independiente Medellin,,,Not started
+1318932495,2026-11-07T19:00:00.000Z,Clausura - 18,967520,Once Caldas,974328,Rionegro Aguilas,,,Not started
+1318929091,2026-11-07T21:05:00.000Z,Clausura - 18,972626,Deportes Tolima,958159,Millonarios,,,Not started
+1318927389,2026-11-07T23:10:00.000Z,Clausura - 18,968371,Atlético Nacional,1244946,Deportivo Pereira,,,Not started
+1318926538,2026-11-08T01:15:00.000Z,Clausura - 18,969222,America de Cali,959861,Deportivo Cali,,,Not started
+1318928240,2026-11-08T19:00:00.000Z,Clausura - 18,964116,Chico,965818,La Equidad FC,,,Not started
+1318930793,2026-11-08T21:05:00.000Z,Clausura - 18,964967,Jaguares,963265,Bucaramanga,,,Not started
+1318931644,2026-11-08T23:10:00.000Z,Clausura - 18,966669,Junior,1251754,Cúcuta Deportivo,,,Not started
+1318925687,2026-11-09T01:15:00.000Z,Clausura - 18,971775,Alianza Petrolera,1246648,Llaneros,,,Not started
+1318933346,2026-11-10T00:30:00.000Z,Clausura - 18,970073,Santa Fe,959010,Deportivo Pasto,,,Not started
+1318941005,2026-11-12T21:00:00.000Z,Clausura - 19,958159,Millonarios,971775,Alianza Petrolera,,,Not started
+1318941856,2026-11-12T21:00:00.000Z,Clausura - 19,1244946,Deportivo Pereira,969222,America de Cali,,,Not started
+1318935048,2026-11-12T21:00:00.000Z,Clausura - 19,968371,Atlético Nacional,967520,Once Caldas,,,Not started
+1318938452,2026-11-12T21:00:00.000Z,Clausura - 19,959010,Deportivo Pasto,966669,Junior,,,Not started
+1318936750,2026-11-12T21:00:00.000Z,Clausura - 19,1251754,Cúcuta Deportivo,964967,Jaguares,,,Not started
+1318940154,2026-11-12T21:00:00.000Z,Clausura - 19,1246648,Llaneros,964116,Chico,,,Not started
+1318934197,2026-11-12T21:00:00.000Z,Clausura - 19,974328,Rionegro Aguilas,960712,Independiente Medellin,,,Not started
+1318935899,2026-11-12T21:00:00.000Z,Clausura - 19,963265,Bucaramanga,976881,Fortaleza FC,,,Not started
+1318937601,2026-11-12T21:00:00.000Z,Clausura - 19,959861,Deportivo Cali,972626,Deportes Tolima,,,Not started
+1318939303,2026-11-12T21:00:00.000Z,Clausura - 19,965818,La Equidad FC,970073,Santa Fe,,,Not started
