@@ -1,4 +1,4 @@
-# Pronósticos de selecciones (27/09/2026 15:44 UTC)
+# Pronósticos de selecciones (27/09/2026 17:53 UTC)
 
 Tema aparte del proyecto de ambos marcan. Por mercado: **modelo** (selecciones + nota justa de los jugadores + árbitro), **mercado** (mediana de casas sin margen) y **final** (mezcla con el peso que se aprende de los partidos ya jugados, ver `evaluacion.md`). Pronóstico = el lado más probable según final. **Cuota mínima** = 1/probabilidad final: por debajo no compensa.
 
@@ -11,6 +11,7 @@ Goles esperados 2.00 - 1.00, marcador más probable 2-1. Córners esperados 12.9
 | mercado | pronóstico | final | modelo | mercado | cuota mínima | cuota mediana | mejor cuota | casas |
 |---|---|---|---|---|---|---|---|---|
 | 1X2 | **gana Denmark** | 64% | 60% | 68% | 1.55 | 1.39 | 1.42 | 49 |
+| Sin empate | **gana Denmark (sin empate)** | 80% | 77% | 83% | 1.25 | 1.14 | 1.22 | 12 |
 | Más/menos 2.5 | **más de 2.5 goles** | 59% | 58% | 59% | 1.68 | 1.60 | 1.64 | 34 |
 | Ambos marcan | **ambos marcan: sí** | 53% | 55% | 51% | 1.89 | 1.83 | 1.92 | 28 |
 | Tarjetas | **menos de 3.5 tarjetas** | 51% | 65% | 51% | 1.95 | 1.79 | 1.81 | 2 |
@@ -30,6 +31,7 @@ Goles esperados 1.58 - 1.05, marcador más probable 1-1. Córners esperados 6.4.
 | mercado | pronóstico | final | modelo | mercado | cuota mínima | cuota mediana | mejor cuota | casas |
 |---|---|---|---|---|---|---|---|---|
 | 1X2 | **gana Austria** | 55% | 49% | 60% | 1.83 | 1.57 | 1.65 | 50 |
+| Sin empate | **gana Austria (sin empate)** | 72% | 66% | 78% | 1.39 | 1.19 | 1.25 | 8 |
 | Más/menos 2.5 | **menos de 2.5 goles** | 51% | 51% | 51% | 1.97 | 1.86 | 1.95 | 35 |
 | Ambos marcan | **ambos marcan: no** | 50% | 48% | 52% | 1.99 | 1.79 | 1.92 | 29 |
 | Tarjetas | **más de 3.5 tarjetas** | 56% | 40% | 56% | 1.78 | 1.65 | 1.65 | 2 |
@@ -49,6 +51,7 @@ Goles esperados 0.93 - 2.26, marcador más probable 0-2. Córners esperados 8.8.
 | mercado | pronóstico | final | modelo | mercado | cuota mínima | cuota mediana | mejor cuota | casas |
 |---|---|---|---|---|---|---|---|---|
 | 1X2 | **gana Netherlands** | 67% | 67% | 67% | 1.49 | 1.42 | 1.46 | 49 |
+| Sin empate | **gana Netherlands (sin empate)** | 82% | 83% | 81% | 1.23 | 1.17 | 1.24 | 12 |
 | Más/menos 2.5 | **más de 2.5 goles** | 62% | 62% | 62% | 1.60 | 1.50 | 1.55 | 34 |
 | Ambos marcan | **ambos marcan: sí** | 55% | 54% | 55% | 1.83 | 1.70 | 1.76 | 28 |
 | Tarjetas | **menos de 3.5 tarjetas** | 57% | 73% | 57% | 1.75 | 1.60 | 1.69 | 2 |
@@ -68,6 +71,7 @@ Goles esperados 1.13 - 1.19, marcador más probable 1-1. Córners esperados 8.1.
 | mercado | pronóstico | final | modelo | mercado | cuota mínima | cuota mediana | mejor cuota | casas |
 |---|---|---|---|---|---|---|---|---|
 | 1X2 | **gana Andorra** | 38% | 37% | 39% | 2.63 | 2.42 | 2.50 | 50 |
+| Sin empate | **gana Andorra (sin empate)** | 56% | 52% | 59% | 1.80 | 1.57 | 1.59 | 13 |
 | Más/menos 2.5 | **menos de 2.5 goles** | 74% | 59% | 74% | 1.35 | 1.25 | 1.36 | 35 |
 | Ambos marcan | **ambos marcan: no** | 59% | 53% | 66% | 1.69 | 1.41 | 1.47 | 29 |
 | Tarjetas | **más de 3.5 tarjetas** | 79% | 52% | 79% | 1.26 | 1.17 | 1.17 | 1 |
@@ -87,6 +91,7 @@ Goles esperados 1.29 - 1.44, marcador más probable 1-1. Córners esperados 8.5.
 | mercado | pronóstico | final | modelo | mercado | cuota mínima | cuota mediana | mejor cuota | casas |
 |---|---|---|---|---|---|---|---|---|
 | 1X2 | **gana Republic of Ireland** | 38% | 41% | 36% | 2.63 | 2.63 | 2.78 | 50 |
+| Sin empate | **gana Republic of Ireland (sin empate)** | 53% | 55% | 51% | 1.90 | 1.85 | 1.93 | 13 |
 | Más/menos 2.5 | **menos de 2.5 goles** | 55% | 49% | 55% | 1.83 | 1.72 | 1.80 | 35 |
 | Ambos marcan | **ambos marcan: sí** | 53% | 55% | 52% | 1.87 | 1.80 | 1.83 | 29 |
 | Tarjetas | **más de 3.5 tarjetas** | 52% | 40% | 52% | 1.93 | 1.83 | 1.56 | 2 |
@@ -106,6 +111,7 @@ Goles esperados 2.85 - 0.81, marcador más probable 2-0. Córners esperados 9.7.
 | mercado | pronóstico | final | modelo | mercado | cuota mínima | cuota mediana | mejor cuota | casas |
 |---|---|---|---|---|---|---|---|---|
 | 1X2 | **gana Germany** | 73% | 79% | 66% | 1.38 | 1.43 | 1.48 | 50 |
+| Sin empate | **gana Germany (sin empate)** | 85% | 91% | 80% | 1.17 | 1.17 | 1.19 | 10 |
 | Más/menos 2.5 | **más de 2.5 goles** | 66% | 71% | 66% | 1.52 | 1.42 | 1.50 | 35 |
 | Ambos marcan | **ambos marcan: sí** | 56% | 52% | 59% | 1.80 | 1.59 | 1.63 | 29 |
 | Tarjetas | **más de 3.5 tarjetas** | 52% | 37% | 52% | 1.92 | 1.76 | 1.85 | 2 |
@@ -120,22 +126,23 @@ Once probable Greece: K. Tzolakis, K. Mavropanos, C. Tzolis, P. Retsos, V. Pavli
 
 ## Norway - Portugal (2026-09-27 18:45 UTC)
 
-Goles esperados 1.67 - 1.32, marcador más probable 1-1. Córners esperados 8.9. Amarillas esperadas 1.9 (árbitro Letexier, Francois, 31 partidos en nuestras ligas, x0.97). Forma del once: Norway -0.09, Portugal -0.11. Partidos en el modelo: Norway 21, Portugal 20.
+Goles esperados 1.74 - 1.26, marcador más probable 1-1. Córners esperados 8.9. Amarillas esperadas 1.9 (árbitro Letexier, Francois, 31 partidos en nuestras ligas, x0.97). Forma del once: Norway -0.04, Portugal -0.18. Partidos en el modelo: Norway 21, Portugal 20.
 
 | mercado | pronóstico | final | modelo | mercado | cuota mínima | cuota mediana | mejor cuota | casas |
 |---|---|---|---|---|---|---|---|---|
-| 1X2 | **gana Norway** | 43% | 46% | 41% | 2.30 | 2.28 | 2.40 | 50 |
-| Más/menos 2.5 | **más de 2.5 goles** | 64% | 57% | 64% | 1.57 | 1.47 | 1.50 | 35 |
-| Ambos marcan | **ambos marcan: sí** | 63% | 59% | 66% | 1.59 | 1.40 | 1.44 | 29 |
+| 1X2 | **gana Norway** | 45% | 49% | 41% | 2.22 | 2.28 | 2.40 | 50 |
+| Sin empate | **gana Norway (sin empate)** | 59% | 64% | 55% | 1.69 | 1.72 | 1.80 | 13 |
+| Más/menos 2.5 | **más de 2.5 goles** | 64% | 58% | 64% | 1.57 | 1.47 | 1.50 | 35 |
+| Ambos marcan | **ambos marcan: sí** | 63% | 59% | 66% | 1.60 | 1.40 | 1.44 | 29 |
 | Tarjetas | **menos de 3.5 tarjetas** | 58% | 83% | 58% | 1.72 | 1.58 | 1.58 | 2 |
 | Tarjetas | **menos de 4.5 tarjetas** | 74% | 91% | 74% | 1.34 | 1.22 | 1.23 | 2 |
 | Córners | **más de 8.5 córners** | 55% | 52% | 55% | 1.81 | 1.67 | 1.82 | 11 |
 | Córners | **menos de 9.5 córners** | 56% | 60% | 56% | 1.78 | 1.64 | 1.71 | 10 |
 | Goles | **más de 1.5 goles** | 83% | 80% | 83% | 1.21 | 1.13 | 1.17 | 34 |
-| Goles | **Norway marca primero** | 53% | 56% | 53% | 1.90 | 1.80 | 1.82 | 4 |
+| Goles | **Norway marca primero** | 53% | 58% | 53% | 1.90 | 1.80 | 1.82 | 4 |
 
-Once probable Norway: E. Haaland, M. Ødegaard, A. Nusa, Ø. Nyland, J. Ryerson, S. Berge, P. Berg, Alexander Sørloth, K. Ajer, Torbjørn Heggem, D. Møller Wolfe
-Once probable Portugal: Vitinha, Bruno Fernandes, Nuno Mendes, João Félix, Diogo Costa, Renato Veiga, Rúben Dias, João Neves, Cristiano Ronaldo, João Cancelo, Pedro Neto
+Once real Norway: E. Haaland, M. Ødegaard, A. Nusa, A. Schjelderup, Ø. Nyland, J. Ryerson, S. Berge, P. Berg, K. Ajer, F. Aursnes, Torbjørn Heggem
+Once real Portugal: Nuno Mendes, João Félix, Diogo Costa, Renato Veiga, Francisco Conceição, Rúben Dias, João Neves, João Palhinha, João Cancelo, Pedro Neto, Gonçalo Ramos
 
 ## Armenia - Montenegro (2026-09-28 16:00 UTC)
 
@@ -144,6 +151,7 @@ Goles esperados 1.31 - 1.64, marcador más probable 1-1. Córners esperados 9.9.
 | mercado | pronóstico | final | modelo | mercado | cuota mínima | cuota mediana | mejor cuota | casas |
 |---|---|---|---|---|---|---|---|---|
 | 1X2 | **gana Montenegro** | 40% | 45% | 35% | 2.49 | 2.65 | 2.75 | 45 |
+| Sin empate | **gana Montenegro (sin empate)** | 55% | 60% | 50% | 1.83 | 1.86 | 1.94 | 12 |
 | Más/menos 2.5 | **menos de 2.5 goles** | 57% | 43% | 57% | 1.75 | 1.64 | 1.69 | 33 |
 | Ambos marcan | **ambos marcan: sí** | 54% | 59% | 49% | 1.85 | 1.87 | 2.00 | 28 |
 | Tarjetas | **menos de 3.5 tarjetas** | 60% | 60% | - | 1.66 | nan | nan | 0 |
@@ -163,6 +171,7 @@ Goles esperados 1.33 - 1.42, marcador más probable 1-1. Córners esperados 8.1.
 | mercado | pronóstico | final | modelo | mercado | cuota mínima | cuota mediana | mejor cuota | casas |
 |---|---|---|---|---|---|---|---|---|
 | 1X2 | **gana Ukraine** | 37% | 39% | 35% | 2.68 | 2.65 | 2.80 | 49 |
+| Sin empate | **gana Ukraine (sin empate)** | 51% | 53% | 50% | 1.96 | 1.88 | 1.95 | 13 |
 | Más/menos 2.5 | **menos de 2.5 goles** | 55% | 48% | 55% | 1.82 | 1.70 | 1.77 | 34 |
 | Ambos marcan | **ambos marcan: sí** | 54% | 56% | 51% | 1.86 | 1.80 | 1.87 | 29 |
 | Tarjetas | **menos de 3.5 tarjetas** | 54% | 54% | - | 1.87 | nan | nan | 0 |
@@ -182,6 +191,7 @@ Goles esperados 1.19 - 1.18, marcador más probable 1-1. Córners esperados 9.5.
 | mercado | pronóstico | final | modelo | mercado | cuota mínima | cuota mediana | mejor cuota | casas |
 |---|---|---|---|---|---|---|---|---|
 | 1X2 | **gana Latvia** | 36% | 36% | 36% | 2.77 | 2.60 | 2.80 | 45 |
+| Sin empate | **gana Latvia (sin empate)** | 51% | 50% | 51% | 1.98 | 1.85 | 1.93 | 12 |
 | Más/menos 2.5 | **menos de 2.5 goles** | 56% | 58% | 56% | 1.77 | 1.66 | 1.72 | 33 |
 | Ambos marcan | **ambos marcan: no** | 51% | 52% | 50% | 1.96 | 1.85 | 1.95 | 28 |
 | Tarjetas | **menos de 3.5 tarjetas** | 54% | 54% | - | 1.85 | nan | nan | 0 |
@@ -201,6 +211,7 @@ Goles esperados 1.18 - 1.17, marcador más probable 1-1. Córners esperados 7.7.
 | mercado | pronóstico | final | modelo | mercado | cuota mínima | cuota mediana | mejor cuota | casas |
 |---|---|---|---|---|---|---|---|---|
 | 1X2 | **gana Northern Ireland** | 36% | 36% | 35% | 2.81 | 2.66 | 2.80 | 49 |
+| Sin empate | **gana Northern Ireland (sin empate)** | 50% | 50% | 51% | 1.98 | 1.85 | 1.89 | 13 |
 | Más/menos 2.5 | **menos de 2.5 goles** | 62% | 58% | 62% | 1.60 | 1.50 | 1.57 | 34 |
 | Ambos marcan | **ambos marcan: no** | 53% | 52% | 55% | 1.87 | 1.70 | 1.77 | 29 |
 | Tarjetas | **más de 3.5 tarjetas** | 56% | 56% | - | 1.79 | nan | nan | 0 |
@@ -220,6 +231,7 @@ Goles esperados 1.16 - 1.78, marcador más probable 1-1. Córners esperados 11.4
 | mercado | pronóstico | final | modelo | mercado | cuota mínima | cuota mediana | mejor cuota | casas |
 |---|---|---|---|---|---|---|---|---|
 | 1X2 | **gana Italy** | 45% | 52% | 37% | 2.25 | 2.52 | 2.63 | 49 |
+| Sin empate | **gana Italy (sin empate)** | 59% | 68% | 51% | 1.69 | 1.85 | 1.89 | 13 |
 | Más/menos 2.5 | **más de 2.5 goles** | 54% | 56% | 54% | 1.86 | 1.76 | 1.91 | 34 |
 | Ambos marcan | **ambos marcan: sí** | 58% | 57% | 59% | 1.73 | 1.59 | 1.72 | 29 |
 | Tarjetas | **menos de 3.5 tarjetas** | 58% | 58% | - | 1.71 | nan | nan | 0 |
@@ -239,6 +251,7 @@ Goles esperados 1.14 - 1.25, marcador más probable 1-1. Córners esperados 8.9.
 | mercado | pronóstico | final | modelo | mercado | cuota mínima | cuota mediana | mejor cuota | casas |
 |---|---|---|---|---|---|---|---|---|
 | 1X2 | **gana Romania** | 38% | 34% | 43% | 2.60 | 2.17 | 2.25 | 49 |
+| Sin empate | **gana Romania (sin empate)** | 53% | 46% | 59% | 1.89 | 1.58 | 1.61 | 12 |
 | Más/menos 2.5 | **menos de 2.5 goles** | 53% | 57% | 53% | 1.89 | 1.77 | 1.84 | 34 |
 | Ambos marcan | **ambos marcan: sí** | 50% | 49% | 52% | 1.98 | 1.77 | 1.84 | 29 |
 | Tarjetas | **más de 3.5 tarjetas** | 53% | 53% | - | 1.89 | nan | nan | 0 |
@@ -258,6 +271,7 @@ Goles esperados 1.52 - 1.76, marcador más probable 1-1. Córners esperados 8.9.
 | mercado | pronóstico | final | modelo | mercado | cuota mínima | cuota mediana | mejor cuota | casas |
 |---|---|---|---|---|---|---|---|---|
 | 1X2 | **gana France** | 47% | 44% | 50% | 2.14 | 1.88 | 1.95 | 48 |
+| Sin empate | **gana France (sin empate)** | 61% | 56% | 65% | 1.65 | 1.46 | 1.52 | 12 |
 | Más/menos 2.5 | **más de 2.5 goles** | 62% | 64% | 62% | 1.61 | 1.50 | 1.54 | 33 |
 | Ambos marcan | **ambos marcan: sí** | 64% | 65% | 63% | 1.57 | 1.49 | 1.63 | 28 |
 | Tarjetas | **menos de 3.5 tarjetas** | 68% | 68% | - | 1.47 | nan | nan | 0 |
@@ -277,6 +291,7 @@ Goles esperados 1.53 - 1.35, marcador más probable 1-1. Córners esperados 9.1.
 | mercado | pronóstico | final | modelo | mercado | cuota mínima | cuota mediana | mejor cuota | casas |
 |---|---|---|---|---|---|---|---|---|
 | 1X2 | **gana Sweden** | 45% | 42% | 49% | 2.21 | 1.92 | 1.98 | 48 |
+| Sin empate | **gana Sweden (sin empate)** | 60% | 56% | 65% | 1.66 | 1.44 | 1.49 | 11 |
 | Más/menos 2.5 | **más de 2.5 goles** | 55% | 55% | 55% | 1.80 | 1.69 | 1.87 | 33 |
 | Ambos marcan | **ambos marcan: sí** | 58% | 58% | 58% | 1.72 | 1.60 | 1.77 | 28 |
 | Tarjetas | **menos de 3.5 tarjetas** | 57% | 57% | - | 1.75 | nan | nan | 0 |
@@ -291,7 +306,7 @@ Once probable Poland: Piotr Zieliński, S. Szymański, J. Bednarek, J. Kamiński
 
 ## Cuánto fiarse
 
-- Pesos de la mezcla modelo/mercado: 1 0.50, X 0.50, 2 0.50, btts 0.50 (el resto 0 = manda el mercado). Se reaprenden en `evaluacion.md` con los partidos jugados.
+- Pesos de la mezcla modelo/mercado: 1 0.50, X 0.50, 2 0.50, btts 0.50, sin_empate_local 0.50 (el resto 0 = manda el mercado). Se reaprenden en `evaluacion.md` con los partidos jugados.
 - Tarjetas: pocas casas y probablemente cuentan distinto (roja = 2); el modelo cuenta amarillas.
 - El ajuste de forma (nota justa) está puesto a mano (B_FORMA = 0.5).
 
