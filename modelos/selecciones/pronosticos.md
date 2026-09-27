@@ -1,4 +1,4 @@
-# Pronósticos de selecciones (27/09/2026 15:21 UTC)
+# Pronósticos de selecciones (27/09/2026 15:44 UTC)
 
 Tema aparte del proyecto de ambos marcan. Por mercado: **modelo** (selecciones + nota justa de los jugadores + árbitro), **mercado** (mediana de casas sin margen) y **final** (mezcla con el peso que se aprende de los partidos ya jugados, ver `evaluacion.md`). Pronóstico = el lado más probable según final. **Cuota mínima** = 1/probabilidad final: por debajo no compensa.
 
@@ -6,60 +6,60 @@ Datos del modelo: 499 partidos de selecciones desde 2025 (descartados 28 contra 
 
 ## Denmark - Wales (2026-09-27 16:00 UTC)
 
-Goles esperados 2.05 - 0.99, marcador más probable 2-0. Córners esperados 12.9. Amarillas esperadas 3.0 (árbitro Delajod, Willy, 37 partidos en nuestras ligas, x0.95). Forma del once: Denmark -0.22, Wales -0.02. Partidos en el modelo: Denmark 15, Wales 15.
+Goles esperados 2.00 - 1.00, marcador más probable 2-1. Córners esperados 12.9. Amarillas esperadas 3.0 (árbitro Delajod, Willy, 37 partidos en nuestras ligas, x0.95). Forma del once: Denmark -0.27, Wales -0.02. Partidos en el modelo: Denmark 15, Wales 15.
 
 | mercado | pronóstico | final | modelo | mercado | cuota mínima | cuota mediana | mejor cuota | casas |
 |---|---|---|---|---|---|---|---|---|
-| 1X2 | **gana Denmark** | 65% | 62% | 68% | 1.54 | 1.39 | 1.42 | 49 |
-| Más/menos 2.5 | **más de 2.5 goles** | 59% | 59% | 59% | 1.68 | 1.60 | 1.64 | 34 |
+| 1X2 | **gana Denmark** | 64% | 60% | 68% | 1.55 | 1.39 | 1.42 | 49 |
+| Más/menos 2.5 | **más de 2.5 goles** | 59% | 58% | 59% | 1.68 | 1.60 | 1.64 | 34 |
 | Ambos marcan | **ambos marcan: sí** | 53% | 55% | 51% | 1.89 | 1.83 | 1.92 | 28 |
 | Tarjetas | **menos de 3.5 tarjetas** | 51% | 65% | 51% | 1.95 | 1.79 | 1.81 | 2 |
 | Tarjetas | **menos de 4.5 tarjetas** | 69% | 78% | 69% | 1.45 | 1.32 | 1.34 | 2 |
 | Córners | **más de 8.5 córners** | 62% | 87% | 62% | 1.60 | 1.47 | 1.53 | 10 |
 | Córners | **más de 9.5 córners** | 51% | 80% | 51% | 1.97 | 1.82 | 1.90 | 11 |
-| Goles | **más de 1.5 goles** | 80% | 81% | 80% | 1.25 | 1.18 | 1.21 | 34 |
+| Goles | **más de 1.5 goles** | 80% | 80% | 80% | 1.25 | 1.18 | 1.21 | 34 |
 | Goles | **Denmark marca primero** | 72% | 67% | 72% | 1.40 | 1.35 | 1.36 | 4 |
 
-Once probable Denmark: M. Damsgaard, P. Højbjerg, A. Bah, V. Nelsson, J. Mæhle, Gustav Isaksen, M. Hjulmand, M. Hermansen, J. Andersen, Rasmus Højlund, Victor Mow Froholdt
+Once real Denmark: T. Jørgensen, M. Damsgaard, P. Højbjerg, J. Mæhle, M. Hjulmand, J. Andersen, R. Kristensen, Rasmus Højlund, P. Dorgu, Victor Mow Froholdt, Oliver Provstgaard
 Once probable Wales: N. Williams, K. Darlow, D. Ward, E. Ampadu, Joe Rodon, D. James, J. Dasilva, D. Brooks, J. Sheehan, L. Koumas, B. Johnson
 
 ## Austria - Kosovo National Team (2026-09-27 16:00 UTC)
 
-Goles esperados 1.62 - 1.05, marcador más probable 1-1. Córners esperados 6.4. Amarillas esperadas 3.3 (árbitro Walsh, Nick, 0 partidos en nuestras ligas, x1.00). Forma del once: Austria -0.04, Kosovo National Team -0.03. Partidos en el modelo: Austria 18, Kosovo National Team 14.
+Goles esperados 1.58 - 1.05, marcador más probable 1-1. Córners esperados 6.4. Amarillas esperadas 3.3 (árbitro Walsh, Nick, 0 partidos en nuestras ligas, x1.00). Forma del once: Austria -0.10, Kosovo National Team -0.04. Partidos en el modelo: Austria 18, Kosovo National Team 14.
 
 | mercado | pronóstico | final | modelo | mercado | cuota mínima | cuota mediana | mejor cuota | casas |
 |---|---|---|---|---|---|---|---|---|
-| 1X2 | **gana Austria** | 55% | 51% | 60% | 1.81 | 1.57 | 1.65 | 50 |
-| Más/menos 2.5 | **menos de 2.5 goles** | 51% | 50% | 51% | 1.97 | 1.86 | 1.95 | 35 |
-| Ambos marcan | **ambos marcan: no** | 50% | 48% | 52% | 2.00 | 1.79 | 1.92 | 29 |
+| 1X2 | **gana Austria** | 55% | 49% | 60% | 1.83 | 1.57 | 1.65 | 50 |
+| Más/menos 2.5 | **menos de 2.5 goles** | 51% | 51% | 51% | 1.97 | 1.86 | 1.95 | 35 |
+| Ambos marcan | **ambos marcan: no** | 50% | 48% | 52% | 1.99 | 1.79 | 1.92 | 29 |
 | Tarjetas | **más de 3.5 tarjetas** | 56% | 40% | 56% | 1.78 | 1.65 | 1.65 | 2 |
 | Tarjetas | **menos de 4.5 tarjetas** | 62% | 74% | 62% | 1.61 | 1.48 | 1.49 | 2 |
 | Córners | **menos de 8.5 córners** | 51% | 79% | 51% | 1.98 | 1.83 | 1.87 | 11 |
 | Córners | **menos de 9.5 córners** | 63% | 87% | 63% | 1.60 | 1.48 | 1.53 | 10 |
 | Goles | **más de 1.5 goles** | 72% | 74% | 72% | 1.38 | 1.29 | 1.32 | 35 |
-| Goles | **Austria marca primero** | 67% | 61% | 67% | 1.48 | 1.46 | 1.50 | 4 |
+| Goles | **Austria marca primero** | 67% | 60% | 67% | 1.48 | 1.46 | 1.50 | 4 |
 
-Once probable Austria: M. Gregoritsch, David Alaba, M. Sabitzer, X. Schlager, Romano Schmid, N. Seiwald, S. Posch, A. Schlager, P. Wanner, K. Laimer, K. Danso
-Once probable Kosovo National Team: A. Murić, V. Muriqi, Florent Muslija, Kreshnik Hajrizi, L. Dellova, F. Asllani, D. Gallapeni, E. Rexhbeçaj, M. Vojvoda, V. Hodža, A. Hajdari
+Once real Austria: X. Schlager, Romano Schmid, Zawieschitzky, N. Veratschnig, N. Seiwald, J. Adamu, P. Wimmer, M. Wöber, P. Wanner, D. Affengruber, K. Danso
+Once real Kosovo National Team: A. Murić, V. Muriqi, I. Krasniqi, L. Dellova, R. Raci, D. Gallapeni, L. Avdullahu, E. Krasniqi, M. Vojvoda, B. Zabërgja, V. Hodža
 
 ## Serbia - Netherlands (2026-09-27 16:00 UTC)
 
-Goles esperados 0.91 - 2.32, marcador más probable 0-2. Córners esperados 8.8. Amarillas esperadas 2.5 (árbitro Marciniak, Szymon, 0 partidos en nuestras ligas, x1.00). Forma del once: Serbia -0.06, Netherlands -0.08. Partidos en el modelo: Serbia 15, Netherlands 19.
+Goles esperados 0.93 - 2.26, marcador más probable 0-2. Córners esperados 8.8. Amarillas esperadas 2.5 (árbitro Marciniak, Szymon, 0 partidos en nuestras ligas, x1.00). Forma del once: Serbia -0.01, Netherlands -0.11. Partidos en el modelo: Serbia 15, Netherlands 19.
 
 | mercado | pronóstico | final | modelo | mercado | cuota mínima | cuota mediana | mejor cuota | casas |
 |---|---|---|---|---|---|---|---|---|
-| 1X2 | **gana Netherlands** | 68% | 69% | 67% | 1.47 | 1.42 | 1.46 | 49 |
-| Más/menos 2.5 | **más de 2.5 goles** | 62% | 63% | 62% | 1.60 | 1.50 | 1.55 | 34 |
-| Ambos marcan | **ambos marcan: sí** | 54% | 54% | 55% | 1.84 | 1.70 | 1.76 | 28 |
+| 1X2 | **gana Netherlands** | 67% | 67% | 67% | 1.49 | 1.42 | 1.46 | 49 |
+| Más/menos 2.5 | **más de 2.5 goles** | 62% | 62% | 62% | 1.60 | 1.50 | 1.55 | 34 |
+| Ambos marcan | **ambos marcan: sí** | 55% | 54% | 55% | 1.83 | 1.70 | 1.76 | 28 |
 | Tarjetas | **menos de 3.5 tarjetas** | 57% | 73% | 57% | 1.75 | 1.60 | 1.69 | 2 |
 | Tarjetas | **menos de 4.5 tarjetas** | 74% | 84% | 74% | 1.36 | 1.23 | 1.27 | 2 |
 | Córners | **más de 8.5 córners** | 53% | 51% | 53% | 1.87 | 1.73 | 1.84 | 11 |
 | Córners | **menos de 9.5 córners** | 58% | 61% | 58% | 1.72 | 1.58 | 1.60 | 10 |
 | Goles | **más de 1.5 goles** | 81% | 83% | 81% | 1.23 | 1.16 | 1.29 | 35 |
-| Goles | **Netherlands marca primero** | 69% | 72% | 69% | 1.44 | 1.38 | 1.40 | 4 |
+| Goles | **Netherlands marca primero** | 69% | 71% | 69% | 1.44 | 1.38 | 1.40 | 4 |
 
-Once probable Serbia: Vanja Milinković-Savić, Strahinja Pavlović, F. Kostić, Aleksandar Stanković, S. Milinković-Savić, N. Milenković, Aleksa Terzić, Strahinja Eraković, L. Jović, V. Birmančević, N. Simić
-Once probable Netherlands: J. van Hecke, C. Gakpo, Frenkie de Jong, B. Verbruggen, V. van Dijk, C. Summerville, B. Brobbey, T. Reijnders, M. van de Ven, R. Gravenberch, D. Dumfries
+Once real Serbia: A. Živković, Vanja Milinković-Savić, Strahinja Pavlović, Aleksandar Stanković, S. Babić, S. Milinković-Savić, K. Nedeljković, Aleksa Terzić, Dejan Joveljić, S. Lukić, N. Gudelj
+Once real Netherlands: J. van Hecke, C. Gakpo, B. Verbruggen, V. van Dijk, C. Summerville, M. Meerdink, T. Reijnders, J. Veerman, M. van de Ven, R. Gravenberch, D. Dumfries
 
 ## Gibraltar - Andorra (2026-09-27 16:00 UTC)
 
