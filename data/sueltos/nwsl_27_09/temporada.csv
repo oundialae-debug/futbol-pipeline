@@ -1,0 +1,241 @@
+match_id,fecha,ronda,local_id,local,visitante_id,visitante,goles_l,goles_v,estado
+1283611740,2026-03-14T00:00:00.000Z,Group Stage,2558039,Washington Spirit Women,2554635,Portland Thorns Women,0.0,1.0,Finished
+1283612591,2026-03-14T16:30:00.000Z,Group Stage,23298611,Boston Legacy Women,2556337,NJ/NY Gotham FC Women,0.0,1.0,Finished
+1283613442,2026-03-14T20:00:00.000Z,Group Stage,14031221,Kansas City Women,2557188,Utah Royals Women,2.0,1.0,Finished
+1283614293,2026-03-14T22:30:00.000Z,Group Stage,19525277,Bay FC,23299462,Denver Summit Women,2.0,1.0,Finished
+1283615144,2026-03-14T23:00:00.000Z,Group Stage,2552933,North Carolina Courage Women,14032072,Racing Louisville Women,2.0,1.0,Finished
+1283615995,2026-03-15T00:45:00.000Z,Group Stage,15702585,San Diego Wave Women,2552082,Houston Dash,0.0,1.0,Finished
+1283616846,2026-03-15T20:00:00.000Z,Group Stage,2553784,Orlando Pride Women,2555486,OL Reign,1.0,2.0,Finished
+1283617697,2026-03-15T23:00:00.000Z,Group Stage,15701734,Angel City,2551231,Chicago Red Stars Women,4.0,0.0,Finished
+1283618548,2026-03-21T00:00:00.000Z,Group Stage,2553784,Orlando Pride Women,23299462,Denver Summit Women,1.0,1.0,Finished
+1283619399,2026-03-21T00:00:00.000Z,Group Stage,14032072,Racing Louisville Women,2558039,Washington Spirit Women,2.0,2.0,Finished
+1283620250,2026-03-21T02:00:00.000Z,Group Stage,2554635,Portland Thorns Women,2555486,OL Reign,2.0,0.0,Finished
+1283621101,2026-03-21T20:00:00.000Z,Group Stage,2552082,Houston Dash,23298611,Boston Legacy Women,3.0,0.0,Finished
+1283621952,2026-03-21T22:30:00.000Z,Group Stage,2556337,NJ/NY Gotham FC Women,2552933,North Carolina Courage Women,0.0,0.0,Finished
+1283622803,2026-03-22T00:45:00.000Z,Group Stage,19525277,Bay FC,15701734,Angel City,1.0,3.0,Finished
+1283623654,2026-03-22T18:00:00.000Z,Group Stage,2551231,Chicago Red Stars Women,14031221,Kansas City Women,2.0,1.0,Finished
+1283624505,2026-03-22T23:00:00.000Z,Group Stage,2557188,Utah Royals Women,15702585,San Diego Wave Women,1.0,2.0,Finished
+1283626207,2026-03-25T23:00:00.000Z,Group Stage,2558039,Washington Spirit Women,2557188,Utah Royals Women,1.0,1.0,Finished
+1283625356,2026-03-25T23:00:00.000Z,Group Stage,2556337,NJ/NY Gotham FC Women,23299462,Denver Summit Women,0.0,2.0,Finished
+1283627058,2026-03-26T00:00:00.000Z,Group Stage,2551231,Chicago Red Stars Women,2553784,Orlando Pride Women,0.0,3.0,Finished
+1283627909,2026-03-26T01:00:00.000Z,Group Stage,2555486,OL Reign,14031221,Kansas City Women,3.0,0.0,Finished
+1283628760,2026-03-26T02:00:00.000Z,Group Stage,15702585,San Diego Wave Women,2554635,Portland Thorns Women,3.0,1.0,Finished
+1283629611,2026-03-28T02:00:00.000Z,Group Stage,15701734,Angel City,2552082,Houston Dash,2.0,1.0,Finished
+1283630462,2026-03-28T16:00:00.000Z,Group Stage,23298611,Boston Legacy Women,2557188,Utah Royals Women,1.0,2.0,Finished
+1283631313,2026-03-28T18:00:00.000Z,Group Stage,23299462,Denver Summit Women,2558039,Washington Spirit Women,0.0,0.0,Finished
+1283632164,2026-03-28T20:00:00.000Z,Group Stage,2554635,Portland Thorns Women,14031221,Kansas City Women,2.0,0.0,Finished
+1283633015,2026-03-28T22:30:00.000Z,Group Stage,2555486,OL Reign,14032072,Racing Louisville Women,2.0,1.0,Finished
+1283633866,2026-03-28T23:00:00.000Z,Group Stage,2552933,North Carolina Courage Women,19525277,Bay FC,1.0,3.0,Finished
+1283634717,2026-03-29T00:45:00.000Z,Group Stage,15702585,San Diego Wave Women,2551231,Chicago Red Stars Women,2.0,0.0,Finished
+1283635568,2026-03-29T23:00:00.000Z,Group Stage,2556337,NJ/NY Gotham FC Women,2553784,Orlando Pride Women,0.0,0.0,Finished
+1283636419,2026-04-03T23:00:00.000Z,Group Stage,23298611,Boston Legacy Women,15702585,San Diego Wave Women,0.0,1.0,Finished
+1283637270,2026-04-04T00:00:00.000Z,Group Stage,2553784,Orlando Pride Women,15701734,Angel City,2.0,1.0,Finished
+1283638121,2026-04-04T00:30:00.000Z,Group Stage,2552082,Houston Dash,14032072,Racing Louisville Women,4.0,3.0,Finished
+1283638972,2026-04-04T01:00:00.000Z,Group Stage,2557188,Utah Royals Women,2551231,Chicago Red Stars Women,1.0,0.0,Finished
+1283639823,2026-04-04T20:00:00.000Z,Group Stage,14031221,Kansas City Women,2556337,NJ/NY Gotham FC Women,2.0,1.0,Finished
+1283640674,2026-04-04T22:30:00.000Z,Group Stage,2552933,North Carolina Courage Women,2554635,Portland Thorns Women,2.0,2.0,Finished
+1283641525,2026-04-05T00:45:00.000Z,Group Stage,2555486,OL Reign,23299462,Denver Summit Women,0.0,0.0,Finished
+1283642376,2026-04-05T21:00:00.000Z,Group Stage,19525277,Bay FC,2558039,Washington Spirit Women,0.0,2.0,Finished
+1283643227,2026-04-24T21:30:00.000Z,Group Stage,14032072,Racing Louisville Women,2553784,Orlando Pride Women,3.0,2.0,Finished
+1283644078,2026-04-25T00:00:00.000Z,Group Stage,2558039,Washington Spirit Women,14031221,Kansas City Women,4.0,0.0,Finished
+1283644929,2026-04-25T17:00:00.000Z,Group Stage,2556337,NJ/NY Gotham FC Women,19525277,Bay FC,3.0,0.0,Finished
+1283645780,2026-04-25T22:30:00.000Z,Group Stage,2551231,Chicago Red Stars Women,23298611,Boston Legacy Women,2.0,0.0,Finished
+1283646631,2026-04-26T00:00:00.000Z,Group Stage,2552082,Houston Dash,2552933,North Carolina Courage Women,0.0,1.0,Finished
+1283647482,2026-04-26T00:45:00.000Z,Group Stage,23299462,Denver Summit Women,15702585,San Diego Wave Women,2.0,3.0,Finished
+1283648333,2026-04-26T22:00:00.000Z,Group Stage,15701734,Angel City,2554635,Portland Thorns Women,1.0,2.0,Finished
+1283649184,2026-04-27T00:00:00.000Z,Group Stage,2555486,OL Reign,2557188,Utah Royals Women,0.0,3.0,Finished
+1283650035,2026-04-29T23:00:00.000Z,Group Stage,2558039,Washington Spirit Women,14032072,Racing Louisville Women,1.0,0.0,Finished
+1283650886,2026-04-29T23:00:00.000Z,Group Stage,23298611,Boston Legacy Women,2552933,North Carolina Courage Women,2.0,2.0,Finished
+1283651737,2026-04-30T00:00:00.000Z,Group Stage,2551231,Chicago Red Stars Women,2556337,NJ/NY Gotham FC Women,0.0,2.0,Finished
+1283652588,2026-04-30T02:00:00.000Z,Group Stage,2554635,Portland Thorns Women,15702585,San Diego Wave Women,2.0,0.0,Finished
+1283653439,2026-05-02T00:00:00.000Z,Group Stage,2552082,Houston Dash,2555486,OL Reign,0.0,0.0,Finished
+1283654290,2026-05-02T20:00:00.000Z,Group Stage,2553784,Orlando Pride Women,2558039,Washington Spirit Women,2.0,4.0,Finished
+1283655141,2026-05-02T22:30:00.000Z,Group Stage,2552933,North Carolina Courage Women,14031221,Kansas City Women,1.0,2.0,Finished
+1283655992,2026-05-03T00:45:00.000Z,Group Stage,15701734,Angel City,2557188,Utah Royals Women,0.0,1.0,Finished
+1283656843,2026-05-03T17:00:00.000Z,Group Stage,2551231,Chicago Red Stars Women,2554635,Portland Thorns Women,0.0,2.0,Finished
+1283657694,2026-05-03T19:00:00.000Z,Group Stage,23298611,Boston Legacy Women,23299462,Denver Summit Women,3.0,2.0,Finished
+1283658545,2026-05-03T21:00:00.000Z,Group Stage,2556337,NJ/NY Gotham FC Women,14032072,Racing Louisville Women,1.0,0.0,Finished
+1283659396,2026-05-03T23:00:00.000Z,Group Stage,15702585,San Diego Wave Women,19525277,Bay FC,0.0,1.0,Finished
+1283660247,2026-05-07T02:00:00.000Z,Group Stage,2557188,Utah Royals Women,2552082,Houston Dash,2.0,0.0,Finished
+1283661098,2026-05-08T22:30:00.000Z,Group Stage,14032072,Racing Louisville Women,2554635,Portland Thorns Women,3.0,1.0,Finished
+1283661949,2026-05-09T00:00:00.000Z,Group Stage,2553784,Orlando Pride Women,2552933,North Carolina Courage Women,1.0,0.0,Finished
+1283662800,2026-05-09T22:30:00.000Z,Group Stage,2556337,NJ/NY Gotham FC Women,23298611,Boston Legacy Women,1.0,1.0,Finished
+1283663651,2026-05-10T00:00:00.000Z,Group Stage,2552082,Houston Dash,23299462,Denver Summit Women,1.0,4.0,Finished
+1283664502,2026-05-10T00:45:00.000Z,Group Stage,15701734,Angel City,15702585,San Diego Wave Women,1.0,2.0,Finished
+1283665353,2026-05-10T16:25:00.000Z,Group Stage,14031221,Kansas City Women,2551231,Chicago Red Stars Women,3.0,0.0,Finished
+1283666204,2026-05-10T20:00:00.000Z,Group Stage,19525277,Bay FC,2557188,Utah Royals Women,0.0,0.0,Finished
+1283667055,2026-05-10T23:00:00.000Z,Group Stage,2555486,OL Reign,2558039,Washington Spirit Women,0.0,1.0,Finished
+1283667906,2026-05-12T23:00:00.000Z,Group Stage,23298611,Boston Legacy Women,2553784,Orlando Pride Women,2.0,1.0,Finished
+1283668757,2026-05-16T00:00:00.000Z,Group Stage,14031221,Kansas City Women,2552082,Houston Dash,3.0,0.0,Finished
+1283671310,2026-05-16T02:00:00.000Z,Group Stage,2555486,OL Reign,2556337,NJ/NY Gotham FC Women,0.0,2.0,Finished
+1283669608,2026-05-16T02:00:00.000Z,Group Stage,19525277,Bay FC,23298611,Boston Legacy Women,1.0,1.0,Finished
+1283670459,2026-05-16T02:00:00.000Z,Group Stage,15702585,San Diego Wave Women,2558039,Washington Spirit Women,2.0,1.0,Finished
+1283672161,2026-05-16T22:30:00.000Z,Group Stage,2552933,North Carolina Courage Women,2551231,Chicago Red Stars Women,4.0,0.0,Finished
+1283673012,2026-05-17T00:45:00.000Z,Group Stage,23299462,Denver Summit Women,2553784,Orlando Pride Women,3.0,1.0,Finished
+1283673863,2026-05-17T22:00:00.000Z,Group Stage,2554635,Portland Thorns Women,15701734,Angel City,0.0,0.0,Finished
+1283674714,2026-05-18T00:00:00.000Z,Group Stage,2557188,Utah Royals Women,14032072,Racing Louisville Women,2.0,1.0,Finished
+1283675565,2026-05-21T00:00:00.000Z,Group Stage,2552082,Houston Dash,15702585,San Diego Wave Women,2.0,2.0,Finished
+1283676416,2026-05-21T02:00:00.000Z,Group Stage,15701734,Angel City,14031221,Kansas City Women,2.0,1.0,Finished
+1283677267,2026-05-21T02:00:00.000Z,Group Stage,2554635,Portland Thorns Women,19525277,Bay FC,2.0,0.0,Finished
+1283678118,2026-05-23T00:00:00.000Z,Group Stage,23298611,Boston Legacy Women,2555486,OL Reign,1.0,2.0,Finished
+1283678969,2026-05-23T20:00:00.000Z,Group Stage,14032072,Racing Louisville Women,2552933,North Carolina Courage Women,1.0,2.0,Finished
+1283679820,2026-05-23T22:30:00.000Z,Group Stage,2557188,Utah Royals Women,23299462,Denver Summit Women,2.0,1.0,Finished
+1283680671,2026-05-24T00:45:00.000Z,Group Stage,2552082,Houston Dash,15701734,Angel City,2.0,1.0,Finished
+1283681522,2026-05-24T17:00:00.000Z,Group Stage,14031221,Kansas City Women,2554635,Portland Thorns Women,3.0,1.0,Finished
+1283682373,2026-05-24T21:00:00.000Z,Group Stage,19525277,Bay FC,2551231,Chicago Red Stars Women,0.0,1.0,Finished
+1283683224,2026-05-24T23:00:00.000Z,Group Stage,15702585,San Diego Wave Women,2553784,Orlando Pride Women,0.0,1.0,Finished
+1283684075,2026-05-29T23:00:00.000Z,Group Stage,2553784,Orlando Pride Women,19525277,Bay FC,3.0,1.0,Finished
+1283684926,2026-05-30T00:00:00.000Z,Group Stage,14032072,Racing Louisville Women,23299462,Denver Summit Women,0.0,1.0,Finished
+1283685777,2026-05-30T17:30:00.000Z,Group Stage,14031221,Kansas City Women,23298611,Boston Legacy Women,1.0,0.0,Finished
+1283686628,2026-05-30T20:00:00.000Z,Group Stage,2554635,Portland Thorns Women,2557188,Utah Royals Women,2.0,2.0,Finished
+1283687479,2026-05-30T22:30:00.000Z,Group Stage,2558039,Washington Spirit Women,2555486,OL Reign,2.0,1.0,Finished
+1283688330,2026-05-31T17:00:00.000Z,Group Stage,2551231,Chicago Red Stars Women,15702585,San Diego Wave Women,0.0,2.0,Finished
+1283689181,2026-05-31T19:00:00.000Z,Group Stage,2556337,NJ/NY Gotham FC Women,2552082,Houston Dash,1.0,0.0,Finished
+1283690032,2026-05-31T23:00:00.000Z,Group Stage,15701734,Angel City,2552933,North Carolina Courage Women,1.0,2.0,Finished
+1283690883,2026-07-04T00:00:00.000Z,Group Stage,2558039,Washington Spirit Women,2552082,Houston Dash,2.0,1.0,Finished
+1283691734,2026-07-04T01:30:00.000Z,Group Stage,23299462,Denver Summit Women,14031221,Kansas City Women,0.0,3.0,Finished
+1283692585,2026-07-04T02:00:00.000Z,Group Stage,15701734,Angel City,2553784,Orlando Pride Women,2.0,0.0,Finished
+1283693436,2026-07-04T23:30:00.000Z,Group Stage,2552933,North Carolina Courage Women,2555486,OL Reign,3.0,1.0,Finished
+1283694287,2026-07-05T00:45:00.000Z,Group Stage,15702585,San Diego Wave Women,2556337,NJ/NY Gotham FC Women,2.0,0.0,Finished
+1283695138,2026-07-05T16:00:00.000Z,Group Stage,23298611,Boston Legacy Women,19525277,Bay FC,2.0,2.0,Finished
+1283695989,2026-07-05T21:00:00.000Z,Group Stage,2551231,Chicago Red Stars Women,2557188,Utah Royals Women,3.0,2.0,Finished
+1283696840,2026-07-05T23:00:00.000Z,Group Stage,2554635,Portland Thorns Women,14032072,Racing Louisville Women,4.0,0.0,Finished
+1283698542,2026-07-11T00:00:00.000Z,Group Stage,2553784,Orlando Pride Women,14031221,Kansas City Women,3.0,0.0,Finished
+1283697691,2026-07-11T00:00:00.000Z,Group Stage,23298611,Boston Legacy Women,2551231,Chicago Red Stars Women,2.0,0.0,Finished
+1283699393,2026-07-11T00:00:00.000Z,Group Stage,14032072,Racing Louisville Women,19525277,Bay FC,0.0,2.0,Finished
+1283700244,2026-07-11T02:00:00.000Z,Group Stage,2557188,Utah Royals Women,2556337,NJ/NY Gotham FC Women,1.0,3.0,Finished
+1283701095,2026-07-11T22:30:00.000Z,Group Stage,2552933,North Carolina Courage Women,2558039,Washington Spirit Women,0.0,2.0,Finished
+1283701946,2026-07-12T00:45:00.000Z,Group Stage,15702585,San Diego Wave Women,15701734,Angel City,0.0,2.0,Finished
+1283702797,2026-07-12T20:00:00.000Z,Group Stage,2555486,OL Reign,2554635,Portland Thorns Women,2.0,0.0,Finished
+1283703648,2026-07-12T23:00:00.000Z,Group Stage,23299462,Denver Summit Women,2552082,Houston Dash,2.0,2.0,Finished
+1283705350,2026-07-15T23:00:00.000Z,Group Stage,2553784,Orlando Pride Women,23298611,Boston Legacy Women,0.0,1.0,Finished
+1283704499,2026-07-16T00:00:00.000Z,Group Stage,2556337,NJ/NY Gotham FC Women,2558039,Washington Spirit Women,1.0,0.0,Finished
+1283706201,2026-07-18T00:00:00.000Z,Group Stage,14031221,Kansas City Women,15702585,San Diego Wave Women,2.0,2.0,Finished
+1283707052,2026-07-18T16:00:00.000Z,Group Stage,2556337,NJ/NY Gotham FC Women,2555486,OL Reign,3.0,2.0,Finished
+1283707903,2026-07-18T18:00:00.000Z,Group Stage,23299462,Denver Summit Women,2554635,Portland Thorns Women,2.0,1.0,Finished
+1283708754,2026-07-18T20:00:00.000Z,Group Stage,19525277,Bay FC,2552933,North Carolina Courage Women,3.0,0.0,Finished
+1283709605,2026-07-18T22:30:00.000Z,Group Stage,2551231,Chicago Red Stars Women,15701734,Angel City,0.0,2.0,Finished
+1283710456,2026-07-19T00:00:00.000Z,Group Stage,14032072,Racing Louisville Women,2552082,Houston Dash,1.0,1.0,Finished
+1283711307,2026-07-19T00:45:00.000Z,Group Stage,2557188,Utah Royals Women,2553784,Orlando Pride Women,1.0,0.0,Finished
+1283712158,2026-07-19T23:00:00.000Z,Group Stage,23298611,Boston Legacy Women,2558039,Washington Spirit Women,1.0,2.0,Finished
+1283713009,2026-07-25T00:00:00.000Z,Group Stage,2552082,Houston Dash,19525277,Bay FC,1.0,0.0,Finished
+1283713860,2026-07-25T00:00:00.000Z,Group Stage,2553784,Orlando Pride Women,2551231,Chicago Red Stars Women,1.0,0.0,Finished
+1283714711,2026-07-25T02:00:00.000Z,Group Stage,2554635,Portland Thorns Women,2556337,NJ/NY Gotham FC Women,2.0,2.0,Finished
+1283715562,2026-07-25T21:00:00.000Z,Group Stage,23298611,Boston Legacy Women,14031221,Kansas City Women,1.0,0.0,Finished
+1283716413,2026-07-25T23:45:00.000Z,Group Stage,2552933,North Carolina Courage Women,2557188,Utah Royals Women,1.0,4.0,Finished
+1283717264,2026-07-26T21:00:00.000Z,Group Stage,15702585,San Diego Wave Women,2555486,OL Reign,0.0,2.0,Finished
+1283718115,2026-07-26T23:00:00.000Z,Group Stage,2558039,Washington Spirit Women,23299462,Denver Summit Women,1.0,0.0,Finished
+1283718966,2026-07-27T01:00:00.000Z,Group Stage,15701734,Angel City,14032072,Racing Louisville Women,1.0,2.0,Finished
+1283719817,2026-07-30T00:00:00.000Z,Group Stage,14031221,Kansas City Women,14032072,Racing Louisville Women,5.0,1.0,Finished
+1283720668,2026-07-30T01:00:00.000Z,Group Stage,2557188,Utah Royals Women,2558039,Washington Spirit Women,0.0,1.0,Finished
+1283721519,2026-07-30T02:00:00.000Z,Group Stage,19525277,Bay FC,2556337,NJ/NY Gotham FC Women,0.0,1.0,Finished
+1283722370,2026-08-01T00:00:00.000Z,Group Stage,2552933,North Carolina Courage Women,2553784,Orlando Pride Women,5.0,0.0,Finished
+1283723221,2026-08-01T20:00:00.000Z,Group Stage,14032072,Racing Louisville Women,2551231,Chicago Red Stars Women,2.0,1.0,Finished
+1283724072,2026-08-01T22:30:00.000Z,Group Stage,14031221,Kansas City Women,15701734,Angel City,1.0,1.0,Finished
+1283724923,2026-08-02T00:00:00.000Z,Group Stage,2552082,Houston Dash,2556337,NJ/NY Gotham FC Women,0.0,1.0,Finished
+1283725774,2026-08-02T00:45:00.000Z,Group Stage,19525277,Bay FC,2555486,OL Reign,2.0,3.0,Finished
+1283726625,2026-08-02T20:00:00.000Z,Group Stage,2558039,Washington Spirit Women,15702585,San Diego Wave Women,0.0,1.0,Finished
+1283727476,2026-08-02T23:00:00.000Z,Group Stage,2557188,Utah Royals Women,2554635,Portland Thorns Women,5.0,1.0,Finished
+1283728327,2026-08-03T01:00:00.000Z,Group Stage,23299462,Denver Summit Women,23298611,Boston Legacy Women,1.0,1.0,Finished
+1283729178,2026-08-06T02:00:00.000Z,Group Stage,23299462,Denver Summit Women,2552933,North Carolina Courage Women,0.0,2.0,Finished
+1283732582,2026-08-07T23:00:00.000Z,Group Stage,2553784,Orlando Pride Women,14032072,Racing Louisville Women,1.0,3.0,Finished
+1283730029,2026-08-08T00:00:00.000Z,Group Stage,2556337,NJ/NY Gotham FC Women,15702585,San Diego Wave Women,1.0,0.0,Finished
+1283731731,2026-08-08T22:30:00.000Z,Group Stage,2558039,Washington Spirit Women,2552933,North Carolina Courage Women,3.0,4.0,Finished
+1283733433,2026-08-09T00:45:00.000Z,Group Stage,2552082,Houston Dash,14031221,Kansas City Women,1.0,1.0,Finished
+1283730880,2026-08-09T02:00:00.000Z,Group Stage,23299462,Denver Summit Women,2557188,Utah Royals Women,2.0,1.0,Finished
+1283734284,2026-08-09T20:00:00.000Z,Group Stage,23298611,Boston Legacy Women,2554635,Portland Thorns Women,3.0,4.0,Finished
+1283735135,2026-08-09T23:00:00.000Z,Group Stage,2551231,Chicago Red Stars Women,19525277,Bay FC,0.0,0.0,Finished
+1283735986,2026-08-10T01:00:00.000Z,Group Stage,2555486,OL Reign,15701734,Angel City,2.0,2.0,Finished
+1283736837,2026-08-15T00:00:00.000Z,Group Stage,2556337,NJ/NY Gotham FC Women,14031221,Kansas City Women,2.0,1.0,Finished
+1283738539,2026-08-15T02:00:00.000Z,Group Stage,2555486,OL Reign,2551231,Chicago Red Stars Women,1.0,0.0,Finished
+1283737688,2026-08-15T02:00:00.000Z,Group Stage,15702585,San Diego Wave Women,23299462,Denver Summit Women,1.0,1.0,Finished
+1283739390,2026-08-15T02:00:00.000Z,Group Stage,2557188,Utah Royals Women,19525277,Bay FC,3.0,2.0,Finished
+1283740241,2026-08-15T22:30:00.000Z,Group Stage,14032072,Racing Louisville Women,23298611,Boston Legacy Women,4.0,1.0,Finished
+1283741092,2026-08-16T00:45:00.000Z,Group Stage,2554635,Portland Thorns Women,2553784,Orlando Pride Women,2.0,1.0,Finished
+1283741943,2026-08-16T23:00:00.000Z,Group Stage,2552933,North Carolina Courage Women,2552082,Houston Dash,2.0,3.0,Finished
+1283742794,2026-08-17T01:00:00.000Z,Group Stage,15701734,Angel City,2558039,Washington Spirit Women,1.0,1.0,Finished
+1283743645,2026-08-19T22:30:00.000Z,Group Stage,14032072,Racing Louisville Women,2555486,OL Reign,2.0,1.0,Finished
+1283744496,2026-08-20T00:00:00.000Z,Group Stage,2552082,Houston Dash,2551231,Chicago Red Stars Women,5.0,0.0,Finished
+1283745347,2026-08-22T02:00:00.000Z,Group Stage,15702585,San Diego Wave Women,2557188,Utah Royals Women,4.0,2.0,Finished
+1283746198,2026-08-22T22:30:00.000Z,Group Stage,14031221,Kansas City Women,2555486,OL Reign,1.0,1.0,Finished
+1283747049,2026-08-22T23:30:00.000Z,Group Stage,2552933,North Carolina Courage Women,23298611,Boston Legacy Women,2.0,1.0,Finished
+1283747900,2026-08-23T00:45:00.000Z,Group Stage,2554635,Portland Thorns Women,23299462,Denver Summit Women,1.0,0.0,Finished
+1283748751,2026-08-23T18:00:00.000Z,Group Stage,2551231,Chicago Red Stars Women,14032072,Racing Louisville Women,3.0,2.0,Finished
+1283749602,2026-08-23T20:00:00.000Z,Group Stage,2558039,Washington Spirit Women,2553784,Orlando Pride Women,0.0,1.0,Finished
+1283750453,2026-08-23T22:00:00.000Z,Group Stage,19525277,Bay FC,2552082,Houston Dash,1.0,0.0,Finished
+1283751304,2026-08-24T00:00:00.000Z,Group Stage,15701734,Angel City,2556337,NJ/NY Gotham FC Women,0.0,0.0,Finished
+1283752155,2026-08-27T00:00:00.000Z,Group Stage,2552933,North Carolina Courage Women,15701734,Angel City,2.0,0.0,Finished
+1283753006,2026-08-29T00:00:00.000Z,Group Stage,2556337,NJ/NY Gotham FC Women,2554635,Portland Thorns Women,1.0,1.0,Finished
+1283753857,2026-08-29T02:00:00.000Z,Group Stage,15702585,San Diego Wave Women,14032072,Racing Louisville Women,3.0,2.0,Finished
+1283754708,2026-08-29T22:30:00.000Z,Group Stage,14031221,Kansas City Women,2552933,North Carolina Courage Women,3.0,2.0,Finished
+1283755559,2026-08-29T23:00:00.000Z,Group Stage,2553784,Orlando Pride Women,2557188,Utah Royals Women,1.0,2.0,Finished
+1283756410,2026-08-30T00:55:00.000Z,Group Stage,23299462,Denver Summit Women,2551231,Chicago Red Stars Women,6.0,1.0,Finished
+1283757261,2026-08-30T16:30:00.000Z,Group Stage,2558039,Washington Spirit Women,19525277,Bay FC,1.0,0.0,Finished
+1283758112,2026-08-30T23:00:00.000Z,Group Stage,2555486,OL Reign,2552082,Houston Dash,1.0,0.0,Finished
+1283758963,2026-09-01T00:00:00.000Z,Group Stage,23298611,Boston Legacy Women,15701734,Angel City,2.0,5.0,Finished
+1283759814,2026-09-05T01:30:00.000Z,Group Stage,2557188,Utah Royals Women,23298611,Boston Legacy Women,1.0,2.0,Finished
+1283760665,2026-09-05T02:00:00.000Z,Group Stage,19525277,Bay FC,14031221,Kansas City Women,1.0,2.0,Finished
+1283761516,2026-09-05T22:30:00.000Z,Group Stage,14032072,Racing Louisville Women,15701734,Angel City,0.0,2.0,Finished
+1283762367,2026-09-06T18:00:00.000Z,Group Stage,23299462,Denver Summit Women,2556337,NJ/NY Gotham FC Women,3.0,0.0,Finished
+1283764069,2026-09-06T20:00:00.000Z,Group Stage,2554635,Portland Thorns Women,2558039,Washington Spirit Women,1.0,2.0,Finished
+1283763218,2026-09-06T20:00:00.000Z,Group Stage,2551231,Chicago Red Stars Women,2552933,North Carolina Courage Women,0.0,6.0,Finished
+1283764920,2026-09-07T00:30:00.000Z,Group Stage,2553784,Orlando Pride Women,2552082,Houston Dash,3.0,1.0,Finished
+1283765771,2026-09-07T01:00:00.000Z,Group Stage,2555486,OL Reign,15702585,San Diego Wave Women,1.0,0.0,Finished
+1283766622,2026-09-11T22:30:00.000Z,Group Stage,14032072,Racing Louisville Women,2556337,NJ/NY Gotham FC Women,1.0,2.0,Finished
+1283767473,2026-09-12T00:00:00.000Z,Group Stage,14031221,Kansas City Women,2553784,Orlando Pride Women,2.0,2.0,Finished
+1283769175,2026-09-12T02:00:00.000Z,Group Stage,15701734,Angel City,23299462,Denver Summit Women,3.0,3.0,Finished
+1283770026,2026-09-12T22:30:00.000Z,Group Stage,15702585,San Diego Wave Women,2552933,North Carolina Courage Women,2.0,1.0,Finished
+1283768324,2026-09-13T00:00:00.000Z,Group Stage,2555486,OL Reign,19525277,Bay FC,2.0,0.0,Finished
+1283770877,2026-09-13T00:45:00.000Z,Group Stage,2552082,Houston Dash,2557188,Utah Royals Women,0.0,1.0,Finished
+1283771728,2026-09-13T17:00:00.000Z,Group Stage,2558039,Washington Spirit Women,23298611,Boston Legacy Women,0.0,3.0,Finished
+1283772579,2026-09-13T23:00:00.000Z,Group Stage,2554635,Portland Thorns Women,2551231,Chicago Red Stars Women,1.0,1.0,Finished
+1283773430,2026-09-17T01:30:00.000Z,Group Stage,23299462,Denver Summit Women,19525277,Bay FC,2.0,2.0,Finished
+1283774281,2026-09-17T02:00:00.000Z,Group Stage,15701734,Angel City,2555486,OL Reign,3.0,1.0,Finished
+1283775132,2026-09-19T02:10:00.000Z,Group Stage,15702585,San Diego Wave Women,14031221,Kansas City Women,2.0,0.0,Finished
+1283775983,2026-09-19T20:00:00.000Z,Group Stage,2553784,Orlando Pride Women,2554635,Portland Thorns Women,1.0,4.0,Finished
+1283776834,2026-09-19T22:30:00.000Z,Group Stage,2552933,North Carolina Courage Women,2556337,NJ/NY Gotham FC Women,1.0,2.0,Finished
+1283777685,2026-09-20T01:50:00.000Z,Group Stage,23299462,Denver Summit Women,2555486,OL Reign,2.0,1.0,Finished
+1283778536,2026-09-20T18:05:00.000Z,Group Stage,23298611,Boston Legacy Women,2552082,Houston Dash,1.0,2.0,Finished
+1283779387,2026-09-20T21:05:00.000Z,Group Stage,2551231,Chicago Red Stars Women,2558039,Washington Spirit Women,0.0,3.0,Finished
+1283780238,2026-09-20T23:05:00.000Z,Group Stage,19525277,Bay FC,14032072,Racing Louisville Women,2.0,0.0,Finished
+1283781089,2026-09-20T23:05:00.000Z,Group Stage,2557188,Utah Royals Women,15701734,Angel City,0.0,3.0,Finished
+1283781940,2026-09-25T22:30:00.000Z,Group Stage,14032072,Racing Louisville Women,15702585,San Diego Wave Women,0.0,2.0,Finished
+1283782791,2026-09-26T00:00:00.000Z,Group Stage,2556337,NJ/NY Gotham FC Women,2551231,Chicago Red Stars Women,3.0,1.0,Finished
+1283783642,2026-09-26T00:30:00.000Z,Group Stage,2555486,OL Reign,23298611,Boston Legacy Women,2.0,0.0,Finished
+1283784493,2026-09-26T16:30:00.000Z,Group Stage,14031221,Kansas City Women,23299462,Denver Summit Women,4.0,1.0,Finished
+1283785344,2026-09-26T22:30:00.000Z,Group Stage,2558039,Washington Spirit Women,15701734,Angel City,0.0,1.0,Finished
+1283786195,2026-09-27T00:45:00.000Z,Group Stage,2554635,Portland Thorns Women,2552082,Houston Dash,1.0,1.0,Finished
+1283787046,2026-09-27T21:00:00.000Z,Group Stage,19525277,Bay FC,2553784,Orlando Pride Women,,,Not started
+1283787897,2026-09-27T23:00:00.000Z,Group Stage,2557188,Utah Royals Women,2552933,North Carolina Courage Women,,,Not started
+1283788748,2026-10-03T00:00:00.000Z,Group Stage,2553784,Orlando Pride Women,15702585,San Diego Wave Women,,,Not started
+1283789599,2026-10-03T02:00:00.000Z,Group Stage,2555486,OL Reign,2552933,North Carolina Courage Women,,,Not started
+1283790450,2026-10-03T20:00:00.000Z,Group Stage,14032072,Racing Louisville Women,2557188,Utah Royals Women,,,Not started
+1283791301,2026-10-03T22:30:00.000Z,Group Stage,14031221,Kansas City Women,19525277,Bay FC,,,Not started
+1283792152,2026-10-04T00:45:00.000Z,Group Stage,2554635,Portland Thorns Women,23298611,Boston Legacy Women,,,Not started
+1283793003,2026-10-04T16:00:00.000Z,Group Stage,2556337,NJ/NY Gotham FC Women,15701734,Angel City,,,Not started
+1283793854,2026-10-04T20:00:00.000Z,Group Stage,2551231,Chicago Red Stars Women,23299462,Denver Summit Women,,,Not started
+1283794705,2026-10-04T23:00:00.000Z,Group Stage,2552082,Houston Dash,2558039,Washington Spirit Women,,,Not started
+1283795556,2026-10-17T00:00:00.000Z,Group Stage,23298611,Boston Legacy Women,14032072,Racing Louisville Women,,,Not started
+1283796407,2026-10-17T16:30:00.000Z,Group Stage,2558039,Washington Spirit Women,2556337,NJ/NY Gotham FC Women,,,Not started
+1283797258,2026-10-17T22:30:00.000Z,Group Stage,2557188,Utah Royals Women,14031221,Kansas City Women,,,Not started
+1283798109,2026-10-17T23:00:00.000Z,Group Stage,2552933,North Carolina Courage Women,15702585,San Diego Wave Women,,,Not started
+1283798960,2026-10-18T00:45:00.000Z,Group Stage,23299462,Denver Summit Women,15701734,Angel City,,,Not started
+1283799811,2026-10-18T17:00:00.000Z,Group Stage,2552082,Houston Dash,2553784,Orlando Pride Women,,,Not started
+1283800662,2026-10-18T21:00:00.000Z,Group Stage,19525277,Bay FC,2554635,Portland Thorns Women,,,Not started
+1283801513,2026-10-18T23:00:00.000Z,Group Stage,2551231,Chicago Red Stars Women,2555486,OL Reign,,,Not started
+1283802364,2026-10-24T00:00:00.000Z,Group Stage,2551231,Chicago Red Stars Women,2552082,Houston Dash,,,Not started
+1283803215,2026-10-24T01:30:00.000Z,Group Stage,2557188,Utah Royals Women,2555486,OL Reign,,,Not started
+1283804066,2026-10-24T02:00:00.000Z,Group Stage,2554635,Portland Thorns Women,2552933,North Carolina Courage Women,,,Not started
+1283804917,2026-10-24T22:30:00.000Z,Group Stage,23299462,Denver Summit Women,14032072,Racing Louisville Women,,,Not started
+1283805768,2026-10-25T00:45:00.000Z,Group Stage,15701734,Angel City,19525277,Bay FC,,,Not started
+1283806619,2026-10-25T19:00:00.000Z,Group Stage,2553784,Orlando Pride Women,2556337,NJ/NY Gotham FC Women,,,Not started
+1283807470,2026-10-25T21:00:00.000Z,Group Stage,14031221,Kansas City Women,2558039,Washington Spirit Women,,,Not started
+1283808321,2026-10-25T23:00:00.000Z,Group Stage,15702585,San Diego Wave Women,23298611,Boston Legacy Women,,,Not started
+1283810874,2026-11-01T22:00:00.000Z,Group Stage,2556337,NJ/NY Gotham FC Women,2557188,Utah Royals Women,,,Not started
+1283815129,2026-11-01T22:00:00.000Z,Group Stage,2558039,Washington Spirit Women,2551231,Chicago Red Stars Women,,,Not started
+1283812576,2026-11-01T22:00:00.000Z,Group Stage,2552933,North Carolina Courage Women,23299462,Denver Summit Women,,,Not started
+1283810023,2026-11-01T22:00:00.000Z,Group Stage,19525277,Bay FC,15702585,San Diego Wave Women,,,Not started
+1283813427,2026-11-01T22:00:00.000Z,Group Stage,14032072,Racing Louisville Women,14031221,Kansas City Women,,,Not started
+1283814278,2026-11-01T22:00:00.000Z,Group Stage,2555486,OL Reign,2553784,Orlando Pride Women,,,Not started
+1283811725,2026-11-01T22:00:00.000Z,Group Stage,2552082,Houston Dash,2554635,Portland Thorns Women,,,Not started
+1283809172,2026-11-01T22:00:00.000Z,Group Stage,15701734,Angel City,23298611,Boston Legacy Women,,,Not started
