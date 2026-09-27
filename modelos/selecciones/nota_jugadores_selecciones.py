@@ -122,14 +122,13 @@ def main():
             if tiene_club:
                 c = agg_club.loc[jid]
                 club_ahora = (c.club_nota_bruta * c.club_min + mu * K_CLUB) / (c.club_min + K_CLUB)
-            elif len(g) and g.w.sum() > 0:
-                # sin club en nuestras 6 ligas: su propio nivel con la selección (sin
-                # información de forma, no mueve nada). Antes era la media de su
-                # posición en las grandes ligas: en selecciones pequeñas daba "forma"
-                # positiva a todo el once (Gibraltar +0.32, ~+17% de goles, 27/09).
-                club_ahora = np.average(g.nota, weights=g.w)
             else:
-                club_ahora = nivel_sel   # ni club ni selección: el nivel de su selección
+                # sin club en nuestras 6 ligas: su nota con la selección encogida hacia
+                # el nivel de su selección (K_SEL minutos), sin información de forma.
+                # Antes era la media de su posición en las grandes ligas: en selecciones
+                # pequeñas daba "forma" positiva a todo el once (Gibraltar +0.32, 27/09).
+                # Sin encoger, un debutante con un 8.15 en un partido movía a Lituania +0.17.
+                club_ahora = ((g.nota * g.w).sum() + nivel_sel * K_SEL) / (g.w.sum() + K_SEL)
             seleccion = ((g.nota * g.w).sum() + club_ahora * K_SEL) / (g.w.sum() + K_SEL) if len(g) else club_ahora
             nota = PESO_CLUB * club_ahora + PESO_SEL * seleccion
             filas.append({

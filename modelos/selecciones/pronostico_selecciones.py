@@ -95,7 +95,10 @@ def forma(notas, equipo):
     o, h = n[n.once_probable], n[n.once_habitual]
     if o.empty or h.empty:
         return 0.0, o
-    return float(o.nota.mean() - h.sel_nota_bruta.fillna(h.nota).mean()), o
+    # base: su nota con la selección; sin club, su nota justa (misma escala que la
+    # de hoy, que para ellos no lleva forma: solo cuenta quién juega)
+    base = h.nota.where(h.sin_datos_club, h.sel_nota_bruta.fillna(h.nota))
+    return float(o.nota.mean() - base.mean()), o
 
 
 def pesos():

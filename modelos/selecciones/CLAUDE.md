@@ -193,8 +193,11 @@ dos, puntos de tarjeta...). No fiarse del precio.
   datos de club recibía como "nota de club" la media de su posición en las
   grandes ligas. La forma resta su nota con la selección, así que en los
   equipos débiles salía positiva para todo el once: Gibraltar +0.32 (~+17%
-  de goles), Armenia +0.24, Andorra +0.23. Ahora, sin club, cuenta su propia
-  nota con la selección, que no mueve la forma. Comprobado: entre club y
+  de goles), Armenia +0.24, Andorra +0.23. Ahora, sin club, cuenta su nota
+  con la selección encogida hacia el nivel de su selección (180 minutos), y
+  la base de la forma para ellos es esa misma nota: solo mueve la forma
+  QUIÉN juega, no un valor por defecto. (Sin encoger, un debutante con un
+  8.15 en su único partido subía a Lituania a +0.17.) Comprobado: entre club y
   selección no hay desfase de escala (club - selección = +0.04 ± 0.04 en
   163 jugadores con los dos datos).
 - **Cuota atípica:** una casa descolgada (Casumo, España a 2.55 con
