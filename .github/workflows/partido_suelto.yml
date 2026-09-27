@@ -6,8 +6,8 @@ on:
       pais: {description: 'País (countryName de la API)', required: true, default: 'Argentina'}
       liga: {description: 'Nombre de la liga', required: true, default: 'Primera Nacional'}
       temporada: {description: 'Temporada', required: true, default: '2026'}
-      local: {description: 'Texto del nombre del local', required: true}
-      visitante: {description: 'Texto del nombre del visitante', required: true}
+      local: {description: 'Texto del nombre del local (vacío = los que empiezan en 90 min)', required: false, default: ''}
+      visitante: {description: 'Texto del nombre del visitante', required: false, default: ''}
       carpeta: {description: 'Carpeta en data/sueltos', required: true}
 
 jobs:

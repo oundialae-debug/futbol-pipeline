@@ -23,8 +23,9 @@ BASE = "https://soccer.highlightly.net"
 PAIS = os.environ.get("PAIS", "Argentina")
 LIGA_NOMBRE = os.environ.get("LIGA_NOMBRE", "Primera Nacional")
 TEMPORADA = int(os.environ.get("TEMPORADA", "2026"))
-LOCAL = os.environ.get("LOCAL", "Gimnasia")
-VISITANTE = os.environ.get("VISITANTE", "Rafaela")
+LOCAL = os.environ.get("LOCAL", "")
+VISITANTE = os.environ.get("VISITANTE", "")
+VENTANA_MIN = int(os.environ.get("VENTANA_MIN", "90"))
 N_BOX = int(os.environ.get("N_BOX", "6"))
 TOPE = int(os.environ.get("TOPE_LLAMADAS", "40"))
 CARPETA = f"data/sueltos/{os.environ.get('CARPETA', 'gimnasia_tiro_rafaela')}"
@@ -102,24 +103,34 @@ def main():
     d.to_csv(f"{CARPETA}/temporada.csv", index=False)
     fin = d[d.estado.str.lower().str.contains("finish")]
     print(f"Temporada {TEMPORADA}: {len(d)} partidos, {len(fin)} terminados")
-    ok = d[d.local.str.contains(LOCAL, case=False, na=False) & d.visitante.str.contains(VISITANTE, case=False, na=False)
-           & ~d.estado.str.lower().str.contains("finish")]
+    pend = d[~d.estado.str.lower().str.contains("finish")]
+    if LOCAL or VISITANTE:
+        ok = pend[pend.local.str.contains(LOCAL, case=False, na=False)
+                  & pend.visitante.str.contains(VISITANTE, case=False, na=False)].head(1)
+    else:   # sin equipos: los que empiezan en las próximas VENTANA_MIN
+        ahora = pd.Timestamp.now(tz="UTC")
+        dt = pd.to_datetime(pend.fecha, utc=True, errors="coerce")
+        ok = pend[(dt >= ahora - pd.Timedelta(minutes=20)) & (dt <= ahora + pd.Timedelta(minutes=VENTANA_MIN))]
     if ok.empty:
-        print(f"[!] No encuentro {LOCAL} - {VISITANTE} sin jugar en la temporada."); return
-    m = ok.iloc[0]
-    mid = int(m.match_id)
-    print(f"Partido: {m.local} - {m.visitante}, {m.fecha}, id {mid}, estado {m.estado}")
-    pedir(f"/matches/{mid}", nombre="partido")
-    pedir("/odds", {"matchId": mid, "oddsType": "prematch"}, "cuotas")
-    pedir(f"/lineups/{mid}", nombre="lineups")
-    for tid in (int(m.local_id), int(m.visitante_id)):
-        suyos = fin[(fin.local_id == tid) | (fin.visitante_id == tid)].tail(N_BOX)
-        for x in suyos.match_id:
-            if not os.path.exists(f"{RAW}/boxscore_{x}.json"):
-                pedir(f"/box-score/{x}", nombre=f"boxscore_{x}")
-    json.dump({"liga_id": lid, "match_id": mid, "local": m.local, "local_id": int(m.local_id),
-               "visitante": m.visitante, "visitante_id": int(m.visitante_id), "fecha": m.fecha},
-              open(f"{CARPETA}/partido.json", "w"), ensure_ascii=False, indent=1)
+        print(f"[!] No encuentro el partido ({LOCAL} - {VISITANTE}) sin jugar."); return
+    partidos = []
+    for _, m in ok.iterrows():
+        mid = int(m.match_id)
+        print(f"Partido: {m.local} - {m.visitante}, {m.fecha}, id {mid}, estado {m.estado}")
+        pedir(f"/matches/{mid}", nombre=f"partido_{mid}")
+        pedir("/odds", {"matchId": mid, "oddsType": "prematch"}, f"cuotas_{mid}")
+        pedir(f"/lineups/{mid}", nombre=f"lineups_{mid}")
+        partidos.append({"liga_id": lid, "match_id": mid, "local": m.local, "local_id": int(m.local_id),
+                         "visitante": m.visitante, "visitante_id": int(m.visitante_id), "fecha": m.fecha})
+    for p in partidos:
+        for tid in (p["local_id"], p["visitante_id"]):
+            suyos = fin[(fin.local_id == tid) | (fin.visitante_id == tid)].tail(N_BOX)
+            for x in suyos.match_id:
+                if not os.path.exists(f"{RAW}/boxscore_{x}.json"):
+                    j = pedir(f"/box-score/{x}", nombre=f"boxscore_{x}")
+                    if j == [] or j == {}:   # la liga no tiene datos de jugadores: no gastar más
+                        print("  box-score vacío: la API no tiene jugadores de esta liga, paro aquí"); break
+    json.dump(partidos, open(f"{CARPETA}/partidos.json", "w"), ensure_ascii=False, indent=1)
     print(f"Llamadas: {llamadas[0]}")
 
 
