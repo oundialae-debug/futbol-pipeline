@@ -120,6 +120,11 @@ def pronosticar():
     from cuota_como_variable import MKT
     from apuesta_ambos_marcan import rasgos_mercado
     hoy = pd.read_csv(f"{CARPETA}/partidos.csv")
+    empezados = hoy[hoy.estado.astype(str) != "Not started"]
+    if len(empezados):
+        print("Ya empezados o jugados (no se pronostican): " +
+              ", ".join(f"{a}-{b} ({e})" for a, b, e in zip(empezados.local, empezados.visitante, empezados.estado)))
+    hoy = hoy[hoy.estado.astype(str) == "Not started"].reset_index(drop=True)
     cuotas = pd.read_csv(f"{CARPETA}/cuotas.csv")
     hist = M.cargar()
     ult = hist[hist.liga_id == LIGA_ID].sort_values("fecha").iloc[-1]
