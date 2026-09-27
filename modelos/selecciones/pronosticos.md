@@ -1,27 +1,27 @@
-# Pronósticos de selecciones (27/09/2026 13:46 UTC)
+# Pronósticos de selecciones (27/09/2026 15:21 UTC)
 
 Tema aparte del proyecto de ambos marcan. Por mercado: **modelo** (selecciones + nota justa de los jugadores + árbitro), **mercado** (mediana de casas sin margen) y **final** (mezcla con el peso que se aprende de los partidos ya jugados, ver `evaluacion.md`). Pronóstico = el lado más probable según final. **Cuota mínima** = 1/probabilidad final: por debajo no compensa.
 
-Datos del modelo: 498 partidos de selecciones desde 2025 (descartados 28 contra rivales sin jugadores en la API y 2 xG roto).
+Datos del modelo: 499 partidos de selecciones desde 2025 (descartados 28 contra rivales sin jugadores en la API y 2 xG roto).
 
-## Lithuania - Azerbaijan (2026-09-27 13:00 UTC)
+## Denmark - Wales (2026-09-27 16:00 UTC)
 
-Goles esperados 1.43 - 0.80, marcador más probable 1-0. Córners esperados 9.6. Amarillas esperadas 3.8 (árbitro Antoniou, Menelaos, 0 partidos en nuestras ligas, x1.00). Forma del once: Lithuania +0.05, Azerbaijan -0.00. Partidos en el modelo: Lithuania 15, Azerbaijan 12.
+Goles esperados 2.05 - 0.99, marcador más probable 2-0. Córners esperados 12.9. Amarillas esperadas 3.0 (árbitro Delajod, Willy, 37 partidos en nuestras ligas, x0.95). Forma del once: Denmark -0.22, Wales -0.02. Partidos en el modelo: Denmark 15, Wales 15.
 
 | mercado | pronóstico | final | modelo | mercado | cuota mínima | cuota mediana | mejor cuota | casas |
 |---|---|---|---|---|---|---|---|---|
-| 1X2 | **gana Lithuania** | 47% | 52% | 43% | 2.11 | 2.20 | 2.44 | 50 |
-| Más/menos 2.5 | **menos de 2.5 goles** | 66% | 61% | 66% | 1.52 | 1.42 | 1.50 | 35 |
-| Ambos marcan | **ambos marcan: no** | 58% | 58% | 58% | 1.72 | 1.60 | 1.70 | 29 |
-| Tarjetas | **más de 3.5 tarjetas** | 63% | 48% | 63% | 1.59 | 1.46 | 1.50 | 2 |
-| Tarjetas | **menos de 4.5 tarjetas** | 54% | 67% | 54% | 1.84 | 1.70 | 1.75 | 2 |
-| Córners | **más de 8.5 córners** | 51% | 60% | 51% | 1.98 | 1.82 | 1.86 | 11 |
-| Córners | **menos de 9.5 córners** | 60% | 52% | 60% | 1.66 | 1.52 | 1.58 | 10 |
-| Goles | **más de 1.5 goles** | 60% | 65% | 60% | 1.67 | 1.57 | 1.60 | 35 |
-| Goles | **Lithuania marca primero** | 58% | 64% | 58% | 1.73 | 1.83 | 1.84 | 4 |
+| 1X2 | **gana Denmark** | 65% | 62% | 68% | 1.54 | 1.39 | 1.42 | 49 |
+| Más/menos 2.5 | **más de 2.5 goles** | 59% | 59% | 59% | 1.68 | 1.60 | 1.64 | 34 |
+| Ambos marcan | **ambos marcan: sí** | 53% | 55% | 51% | 1.89 | 1.83 | 1.92 | 28 |
+| Tarjetas | **menos de 3.5 tarjetas** | 51% | 65% | 51% | 1.95 | 1.79 | 1.81 | 2 |
+| Tarjetas | **menos de 4.5 tarjetas** | 69% | 78% | 69% | 1.45 | 1.32 | 1.34 | 2 |
+| Córners | **más de 8.5 córners** | 62% | 87% | 62% | 1.60 | 1.47 | 1.53 | 10 |
+| Córners | **más de 9.5 córners** | 51% | 80% | 51% | 1.97 | 1.82 | 1.90 | 11 |
+| Goles | **más de 1.5 goles** | 80% | 81% | 80% | 1.25 | 1.18 | 1.21 | 34 |
+| Goles | **Denmark marca primero** | 72% | 67% | 72% | 1.40 | 1.35 | 1.36 | 4 |
 
-Once real Lithuania: Lukas Michelbrink, E. Utkus, Armandas Kučys, Dziugas Bartkus, Gvidas Gineitis, Artur Dolznikov, A. Lickūnas, Artemijus Tutyškinas, Vykintas Slivka, Justas Lasickas, V. Armalas
-Once real Azerbaijan: Renat Dadaşov, Rüfat Abbasov, E. Balayev, B. Hüseynov, T. Mütəllimov, A. Isaev, E. Səfərov, A. Xaybulayev, R. Məmmədov, M. Emreli, R. Daşdəmirov
+Once probable Denmark: M. Damsgaard, P. Højbjerg, A. Bah, V. Nelsson, J. Mæhle, Gustav Isaksen, M. Hjulmand, M. Hermansen, J. Andersen, Rasmus Højlund, Victor Mow Froholdt
+Once probable Wales: N. Williams, K. Darlow, D. Ward, E. Ampadu, Joe Rodon, D. James, J. Dasilva, D. Brooks, J. Sheehan, L. Koumas, B. Johnson
 
 ## Austria - Kosovo National Team (2026-09-27 16:00 UTC)
 
@@ -53,32 +53,13 @@ Goles esperados 0.91 - 2.32, marcador más probable 0-2. Córners esperados 8.8.
 | Ambos marcan | **ambos marcan: sí** | 54% | 54% | 55% | 1.84 | 1.70 | 1.76 | 28 |
 | Tarjetas | **menos de 3.5 tarjetas** | 57% | 73% | 57% | 1.75 | 1.60 | 1.69 | 2 |
 | Tarjetas | **menos de 4.5 tarjetas** | 74% | 84% | 74% | 1.36 | 1.23 | 1.27 | 2 |
-| Córners | **más de 8.5 córners** | 53% | 50% | 53% | 1.87 | 1.73 | 1.84 | 11 |
-| Córners | **menos de 9.5 córners** | 58% | 62% | 58% | 1.72 | 1.58 | 1.60 | 10 |
+| Córners | **más de 8.5 córners** | 53% | 51% | 53% | 1.87 | 1.73 | 1.84 | 11 |
+| Córners | **menos de 9.5 córners** | 58% | 61% | 58% | 1.72 | 1.58 | 1.60 | 10 |
 | Goles | **más de 1.5 goles** | 81% | 83% | 81% | 1.23 | 1.16 | 1.29 | 35 |
 | Goles | **Netherlands marca primero** | 69% | 72% | 69% | 1.44 | 1.38 | 1.40 | 4 |
 
 Once probable Serbia: Vanja Milinković-Savić, Strahinja Pavlović, F. Kostić, Aleksandar Stanković, S. Milinković-Savić, N. Milenković, Aleksa Terzić, Strahinja Eraković, L. Jović, V. Birmančević, N. Simić
 Once probable Netherlands: J. van Hecke, C. Gakpo, Frenkie de Jong, B. Verbruggen, V. van Dijk, C. Summerville, B. Brobbey, T. Reijnders, M. van de Ven, R. Gravenberch, D. Dumfries
-
-## Denmark - Wales (2026-09-27 16:00 UTC)
-
-Goles esperados 2.05 - 0.99, marcador más probable 2-0. Córners esperados 12.9. Amarillas esperadas 3.0 (árbitro Delajod, Willy, 37 partidos en nuestras ligas, x0.95). Forma del once: Denmark -0.22, Wales -0.02. Partidos en el modelo: Denmark 15, Wales 15.
-
-| mercado | pronóstico | final | modelo | mercado | cuota mínima | cuota mediana | mejor cuota | casas |
-|---|---|---|---|---|---|---|---|---|
-| 1X2 | **gana Denmark** | 65% | 62% | 68% | 1.54 | 1.39 | 1.42 | 49 |
-| Más/menos 2.5 | **más de 2.5 goles** | 59% | 59% | 59% | 1.68 | 1.60 | 1.64 | 34 |
-| Ambos marcan | **ambos marcan: sí** | 53% | 55% | 51% | 1.89 | 1.83 | 1.92 | 28 |
-| Tarjetas | **menos de 3.5 tarjetas** | 51% | 65% | 51% | 1.95 | 1.79 | 1.81 | 2 |
-| Tarjetas | **menos de 4.5 tarjetas** | 69% | 78% | 69% | 1.45 | 1.32 | 1.34 | 2 |
-| Córners | **más de 8.5 córners** | 62% | 87% | 62% | 1.60 | 1.47 | 1.53 | 10 |
-| Córners | **más de 9.5 córners** | 51% | 80% | 51% | 1.97 | 1.82 | 1.90 | 11 |
-| Goles | **más de 1.5 goles** | 80% | 81% | 80% | 1.25 | 1.18 | 1.21 | 34 |
-| Goles | **Denmark marca primero** | 72% | 67% | 72% | 1.40 | 1.35 | 1.36 | 4 |
-
-Once probable Denmark: M. Damsgaard, P. Højbjerg, A. Bah, V. Nelsson, J. Mæhle, Gustav Isaksen, M. Hjulmand, M. Hermansen, J. Andersen, Rasmus Højlund, Victor Mow Froholdt
-Once probable Wales: N. Williams, K. Darlow, D. Ward, E. Ampadu, Joe Rodon, D. James, J. Dasilva, D. Brooks, J. Sheehan, L. Koumas, B. Johnson
 
 ## Gibraltar - Andorra (2026-09-27 16:00 UTC)
 
@@ -92,7 +73,7 @@ Goles esperados 1.13 - 1.19, marcador más probable 1-1. Córners esperados 8.1.
 | Tarjetas | **más de 3.5 tarjetas** | 79% | 52% | 79% | 1.26 | 1.17 | 1.17 | 1 |
 | Tarjetas | **más de 4.5 tarjetas** | 66% | 37% | 66% | 1.51 | 1.39 | 1.41 | 2 |
 | Córners | **menos de 8.5 córners** | 57% | 58% | 57% | 1.77 | 1.65 | 1.73 | 11 |
-| Córners | **menos de 9.5 córners** | 67% | 69% | 67% | 1.48 | 1.36 | 1.43 | 10 |
+| Córners | **menos de 9.5 córners** | 67% | 70% | 67% | 1.48 | 1.36 | 1.43 | 10 |
 | Goles | **más de 1.5 goles** | 50% | 67% | 50% | 2.00 | 1.88 | 1.94 | 35 |
 | Goles | **Andorra marca primero** | 58% | 51% | 58% | 1.73 | 1.96 | 2.00 | 4 |
 
@@ -148,7 +129,7 @@ Goles esperados 1.67 - 1.32, marcador más probable 1-1. Córners esperados 8.9.
 | Ambos marcan | **ambos marcan: sí** | 63% | 59% | 66% | 1.59 | 1.40 | 1.44 | 29 |
 | Tarjetas | **menos de 3.5 tarjetas** | 58% | 83% | 58% | 1.72 | 1.58 | 1.58 | 2 |
 | Tarjetas | **menos de 4.5 tarjetas** | 74% | 91% | 74% | 1.34 | 1.22 | 1.23 | 2 |
-| Córners | **más de 8.5 córners** | 55% | 53% | 55% | 1.81 | 1.67 | 1.82 | 11 |
+| Córners | **más de 8.5 córners** | 55% | 52% | 55% | 1.81 | 1.67 | 1.82 | 11 |
 | Córners | **menos de 9.5 córners** | 56% | 60% | 56% | 1.78 | 1.64 | 1.71 | 10 |
 | Goles | **más de 1.5 goles** | 83% | 80% | 83% | 1.21 | 1.13 | 1.17 | 34 |
 | Goles | **Norway marca primero** | 53% | 56% | 53% | 1.90 | 1.80 | 1.82 | 4 |
@@ -164,11 +145,11 @@ Goles esperados 1.31 - 1.64, marcador más probable 1-1. Córners esperados 9.9.
 |---|---|---|---|---|---|---|---|---|
 | 1X2 | **gana Montenegro** | 40% | 45% | 35% | 2.49 | 2.65 | 2.75 | 45 |
 | Más/menos 2.5 | **menos de 2.5 goles** | 57% | 43% | 57% | 1.75 | 1.64 | 1.69 | 33 |
-| Ambos marcan | **ambos marcan: sí** | 54% | 59% | 49% | 1.84 | 1.87 | 2.00 | 28 |
+| Ambos marcan | **ambos marcan: sí** | 54% | 59% | 49% | 1.85 | 1.87 | 2.00 | 28 |
 | Tarjetas | **menos de 3.5 tarjetas** | 60% | 60% | - | 1.66 | nan | nan | 0 |
 | Tarjetas | **menos de 4.5 tarjetas** | 74% | 74% | - | 1.35 | nan | nan | 0 |
 | Córners | **más de 8.5 córners** | 57% | 64% | 57% | 1.75 | 1.61 | 1.63 | 6 |
-| Córners | **menos de 9.5 córners** | 54% | 47% | 54% | 1.86 | 1.71 | 1.73 | 7 |
+| Córners | **menos de 9.5 córners** | 54% | 48% | 54% | 1.86 | 1.71 | 1.73 | 7 |
 | Goles | **más de 1.5 goles** | 67% | 79% | 67% | 1.49 | 1.38 | 1.43 | 33 |
 | Goles | **Armenia marca primero** | 50% | 44% | 50% | 2.00 | 2.00 | 2.00 | 3 |
 
@@ -177,17 +158,17 @@ Once probable Montenegro: Milutin Osmajić, Marko Janković, Stefan Savić, Niko
 
 ## Georgia - Ukraine (2026-09-28 16:00 UTC)
 
-Goles esperados 1.33 - 1.42, marcador más probable 1-1. Córners esperados 8.0. Amarillas esperadas 3.7 (árbitro ?, 0 partidos en nuestras ligas, x1.00). Forma del once: Georgia -0.05, Ukraine +0.04. Partidos en el modelo: Georgia 14, Ukraine 15.
+Goles esperados 1.33 - 1.42, marcador más probable 1-1. Córners esperados 8.1. Amarillas esperadas 3.7 (árbitro ?, 0 partidos en nuestras ligas, x1.00). Forma del once: Georgia -0.05, Ukraine +0.04. Partidos en el modelo: Georgia 14, Ukraine 15.
 
 | mercado | pronóstico | final | modelo | mercado | cuota mínima | cuota mediana | mejor cuota | casas |
 |---|---|---|---|---|---|---|---|---|
-| 1X2 | **gana Ukraine** | 37% | 39% | 35% | 2.69 | 2.65 | 2.80 | 49 |
+| 1X2 | **gana Ukraine** | 37% | 39% | 35% | 2.68 | 2.65 | 2.80 | 49 |
 | Más/menos 2.5 | **menos de 2.5 goles** | 55% | 48% | 55% | 1.82 | 1.70 | 1.77 | 34 |
 | Ambos marcan | **ambos marcan: sí** | 54% | 56% | 51% | 1.86 | 1.80 | 1.87 | 29 |
 | Tarjetas | **menos de 3.5 tarjetas** | 54% | 54% | - | 1.87 | nan | nan | 0 |
 | Tarjetas | **menos de 4.5 tarjetas** | 68% | 68% | - | 1.47 | nan | nan | 0 |
-| Córners | **más de 8.5 córners** | 52% | 41% | 52% | 1.93 | 1.78 | 1.81 | 9 |
-| Córners | **menos de 9.5 córners** | 60% | 70% | 60% | 1.66 | 1.54 | 1.56 | 8 |
+| Córners | **más de 8.5 córners** | 52% | 42% | 52% | 1.93 | 1.78 | 1.81 | 9 |
+| Córners | **menos de 9.5 córners** | 60% | 69% | 60% | 1.66 | 1.54 | 1.56 | 8 |
 | Goles | **más de 1.5 goles** | 69% | 76% | 69% | 1.44 | 1.34 | 1.38 | 34 |
 | Goles | **Georgia marca primero** | 50% | 48% | 50% | 2.00 | 2.00 | 2.00 | 4 |
 
@@ -196,14 +177,14 @@ Once probable Ukraine: V. Mykolenko, H. Sudakov, V. Tsygankov, Ivan Kalyuzhnyi, 
 
 ## Latvia - Cyprus (2026-09-28 16:00 UTC)
 
-Goles esperados 1.19 - 1.17, marcador más probable 1-1. Córners esperados 9.5. Amarillas esperadas 3.6 (árbitro ?, 0 partidos en nuestras ligas, x1.00). Forma del once: Latvia +0.00, Cyprus +0.00. Partidos en el modelo: Latvia 15, Cyprus 15.
+Goles esperados 1.19 - 1.18, marcador más probable 1-1. Córners esperados 9.5. Amarillas esperadas 3.6 (árbitro ?, 0 partidos en nuestras ligas, x1.00). Forma del once: Latvia +0.00, Cyprus +0.00. Partidos en el modelo: Latvia 15, Cyprus 15.
 
 | mercado | pronóstico | final | modelo | mercado | cuota mínima | cuota mediana | mejor cuota | casas |
 |---|---|---|---|---|---|---|---|---|
 | 1X2 | **gana Latvia** | 36% | 36% | 36% | 2.77 | 2.60 | 2.80 | 45 |
 | Más/menos 2.5 | **menos de 2.5 goles** | 56% | 58% | 56% | 1.77 | 1.66 | 1.72 | 33 |
 | Ambos marcan | **ambos marcan: no** | 51% | 52% | 50% | 1.96 | 1.85 | 1.95 | 28 |
-| Tarjetas | **menos de 3.5 tarjetas** | 54% | 54% | - | 1.84 | nan | nan | 0 |
+| Tarjetas | **menos de 3.5 tarjetas** | 54% | 54% | - | 1.85 | nan | nan | 0 |
 | Tarjetas | **menos de 4.5 tarjetas** | 69% | 69% | - | 1.45 | nan | nan | 0 |
 | Córners | **más de 8.5 córners** | 57% | 59% | 57% | 1.76 | 1.62 | 1.78 | 7 |
 | Córners | **menos de 9.5 córners** | 55% | 53% | 55% | 1.81 | 1.67 | 1.68 | 8 |
@@ -213,32 +194,13 @@ Goles esperados 1.19 - 1.17, marcador más probable 1-1. Córners esperados 9.5.
 Once probable Latvia: Roberts Savaļnieks, A. Cigaņiks, Antonijs Černomordijs, Roberts Veips, Lukass Vapne, Dmitrijs Zelenkovs, Raivis Jurkovskis, Vladislavs Gutkovskis, D. Meļņiks, Rihards Matrevics, Jānis Ikaunieks
 Once probable Cyprus: G. Kastanos, Konstantinos Laifis, L. Loizou, Stelios Andreou, I. Pittas, Anderson Correia, M. Tzionis, Charalampos Charalampous, Andreas Siikkis, N. Panagiotou, Fabiano
 
-## Turkey - Italy (2026-09-28 18:45 UTC)
-
-Goles esperados 1.16 - 1.78, marcador más probable 1-1. Córners esperados 11.4. Amarillas esperadas 3.4 (árbitro ?, 0 partidos en nuestras ligas, x1.00). Forma del once: Turkey -0.08, Italy -0.00. Partidos en el modelo: Turkey 18, Italy 15.
-
-| mercado | pronóstico | final | modelo | mercado | cuota mínima | cuota mediana | mejor cuota | casas |
-|---|---|---|---|---|---|---|---|---|
-| 1X2 | **gana Italy** | 44% | 52% | 37% | 2.25 | 2.52 | 2.63 | 49 |
-| Más/menos 2.5 | **más de 2.5 goles** | 54% | 56% | 54% | 1.86 | 1.76 | 1.91 | 34 |
-| Ambos marcan | **ambos marcan: sí** | 58% | 57% | 59% | 1.73 | 1.59 | 1.72 | 29 |
-| Tarjetas | **menos de 3.5 tarjetas** | 58% | 58% | - | 1.71 | nan | nan | 0 |
-| Tarjetas | **menos de 4.5 tarjetas** | 72% | 72% | - | 1.38 | nan | nan | 0 |
-| Córners | **más de 8.5 córners** | 56% | 78% | 56% | 1.78 | 1.64 | 1.67 | 9 |
-| Córners | **menos de 9.5 córners** | 55% | 31% | 55% | 1.81 | 1.67 | 1.67 | 8 |
-| Goles | **más de 1.5 goles** | 76% | 79% | 76% | 1.31 | 1.23 | 1.28 | 33 |
-| Goles | **Italy marca primero** | 52% | 61% | 52% | 1.94 | 1.88 | 1.95 | 4 |
-
-Once probable Turkey: H. Çalhanoğlu, A. Güler, Kenan Yıldız, Abdülkerim Bardakcı, Salih Özcan, İsmail Yüksek, Barış Alper Yılmaz, Zeki Çelik, Merih Demiral, F. Kadıoğlu, Uğurcan Çakır
-Once probable Italy: G. Donnarumma, S. Tonali, Nicolò Barella, Pio Esposito, Davide Bartesaghi, F. Chiarodia, Gianluca Mancini, R. Calafiori, Niccolò Pisilli, L. Koleosho, Cher Ndour
-
 ## Northern Ireland - Hungary (2026-09-28 18:45 UTC)
 
 Goles esperados 1.18 - 1.17, marcador más probable 1-1. Córners esperados 7.7. Amarillas esperadas 4.3 (árbitro ?, 0 partidos en nuestras ligas, x1.00). Forma del once: Northern Ireland -0.06, Hungary -0.06. Partidos en el modelo: Northern Ireland 15, Hungary 15.
 
 | mercado | pronóstico | final | modelo | mercado | cuota mínima | cuota mediana | mejor cuota | casas |
 |---|---|---|---|---|---|---|---|---|
-| 1X2 | **gana Northern Ireland** | 36% | 36% | 35% | 2.80 | 2.66 | 2.80 | 49 |
+| 1X2 | **gana Northern Ireland** | 36% | 36% | 35% | 2.81 | 2.66 | 2.80 | 49 |
 | Más/menos 2.5 | **menos de 2.5 goles** | 62% | 58% | 62% | 1.60 | 1.50 | 1.57 | 34 |
 | Ambos marcan | **ambos marcan: no** | 53% | 52% | 55% | 1.87 | 1.70 | 1.77 | 29 |
 | Tarjetas | **más de 3.5 tarjetas** | 56% | 56% | - | 1.79 | nan | nan | 0 |
@@ -250,6 +212,25 @@ Goles esperados 1.18 - 1.17, marcador más probable 1-1. Córners esperados 7.7.
 
 Once probable Northern Ireland: S. Charles, P. Charles, Ruairi McConville, I. Price, T. Hume, J. Devenny, Patrick Kelly, E. Galbraith, C. Brown, B. Spencer, J. Donley
 Once probable Hungary: B. Varga, D. Szoboszlai, W. Orbán, B. Tóth, M. Vitális, M. Csinger, A. Osváth, Roland Sallai, A. Schäfer, D. Redzic, M. Kerkez
+
+## Turkey - Italy (2026-09-28 18:45 UTC)
+
+Goles esperados 1.16 - 1.78, marcador más probable 1-1. Córners esperados 11.4. Amarillas esperadas 3.4 (árbitro ?, 0 partidos en nuestras ligas, x1.00). Forma del once: Turkey -0.08, Italy -0.00. Partidos en el modelo: Turkey 18, Italy 15.
+
+| mercado | pronóstico | final | modelo | mercado | cuota mínima | cuota mediana | mejor cuota | casas |
+|---|---|---|---|---|---|---|---|---|
+| 1X2 | **gana Italy** | 45% | 52% | 37% | 2.25 | 2.52 | 2.63 | 49 |
+| Más/menos 2.5 | **más de 2.5 goles** | 54% | 56% | 54% | 1.86 | 1.76 | 1.91 | 34 |
+| Ambos marcan | **ambos marcan: sí** | 58% | 57% | 59% | 1.73 | 1.59 | 1.72 | 29 |
+| Tarjetas | **menos de 3.5 tarjetas** | 58% | 58% | - | 1.71 | nan | nan | 0 |
+| Tarjetas | **menos de 4.5 tarjetas** | 72% | 72% | - | 1.38 | nan | nan | 0 |
+| Córners | **más de 8.5 córners** | 56% | 78% | 56% | 1.78 | 1.64 | 1.67 | 9 |
+| Córners | **menos de 9.5 córners** | 55% | 32% | 55% | 1.81 | 1.67 | 1.67 | 8 |
+| Goles | **más de 1.5 goles** | 76% | 79% | 76% | 1.31 | 1.23 | 1.28 | 33 |
+| Goles | **Italy marca primero** | 52% | 61% | 52% | 1.94 | 1.88 | 1.95 | 4 |
+
+Once probable Turkey: H. Çalhanoğlu, A. Güler, Kenan Yıldız, Abdülkerim Bardakcı, Salih Özcan, İsmail Yüksek, Barış Alper Yılmaz, Zeki Çelik, Merih Demiral, F. Kadıoğlu, Uğurcan Çakır
+Once probable Italy: G. Donnarumma, S. Tonali, Nicolò Barella, Pio Esposito, Davide Bartesaghi, F. Chiarodia, Gianluca Mancini, R. Calafiori, Niccolò Pisilli, L. Koleosho, Cher Ndour
 
 ## Romania - Bosnia & Herzegovina (2026-09-28 18:45 UTC)
 
@@ -272,17 +253,17 @@ Once probable Bosnia & Herzegovina: T. Muharemović, Ivan Bašić, N. Katić, E.
 
 ## Belgium - France (2026-09-28 18:45 UTC)
 
-Goles esperados 1.52 - 1.75, marcador más probable 1-1. Córners esperados 8.9. Amarillas esperadas 2.8 (árbitro ?, 0 partidos en nuestras ligas, x1.00). Forma del once: Belgium -0.12, France -0.04. Partidos en el modelo: Belgium 21, France 23.
+Goles esperados 1.52 - 1.76, marcador más probable 1-1. Córners esperados 8.9. Amarillas esperadas 2.8 (árbitro ?, 0 partidos en nuestras ligas, x1.00). Forma del once: Belgium -0.12, France -0.04. Partidos en el modelo: Belgium 21, France 23.
 
 | mercado | pronóstico | final | modelo | mercado | cuota mínima | cuota mediana | mejor cuota | casas |
 |---|---|---|---|---|---|---|---|---|
-| 1X2 | **gana France** | 47% | 43% | 50% | 2.14 | 1.88 | 1.95 | 48 |
+| 1X2 | **gana France** | 47% | 44% | 50% | 2.14 | 1.88 | 1.95 | 48 |
 | Más/menos 2.5 | **más de 2.5 goles** | 62% | 64% | 62% | 1.61 | 1.50 | 1.54 | 33 |
 | Ambos marcan | **ambos marcan: sí** | 64% | 65% | 63% | 1.57 | 1.49 | 1.63 | 28 |
 | Tarjetas | **menos de 3.5 tarjetas** | 68% | 68% | - | 1.47 | nan | nan | 0 |
 | Tarjetas | **menos de 4.5 tarjetas** | 80% | 80% | - | 1.24 | nan | nan | 0 |
-| Córners | **más de 8.5 córners** | 56% | 52% | 56% | 1.78 | 1.65 | 1.66 | 8 |
-| Córners | **menos de 9.5 córners** | 56% | 60% | 56% | 1.80 | 1.67 | 1.78 | 9 |
+| Córners | **más de 8.5 córners** | 56% | 53% | 56% | 1.78 | 1.65 | 1.66 | 8 |
+| Córners | **menos de 9.5 córners** | 56% | 59% | 56% | 1.80 | 1.67 | 1.78 | 9 |
 | Goles | **más de 1.5 goles** | 82% | 84% | 82% | 1.22 | 1.15 | 1.22 | 32 |
 | Goles | **France marca primero** | 59% | 54% | 59% | 1.70 | 1.61 | 1.64 | 4 |
 
@@ -291,7 +272,7 @@ Once probable France: Kylian Mbappé, M. Olise, D. Upamecano, Manu Koné, Mike M
 
 ## Sweden - Poland (2026-09-28 18:45 UTC)
 
-Goles esperados 1.53 - 1.35, marcador más probable 1-1. Córners esperados 9.0. Amarillas esperadas 3.5 (árbitro ?, 0 partidos en nuestras ligas, x1.00). Forma del once: Sweden +0.00, Poland -0.05. Partidos en el modelo: Sweden 19, Poland 15.
+Goles esperados 1.53 - 1.35, marcador más probable 1-1. Córners esperados 9.1. Amarillas esperadas 3.5 (árbitro ?, 0 partidos en nuestras ligas, x1.00). Forma del once: Sweden +0.00, Poland -0.05. Partidos en el modelo: Sweden 19, Poland 15.
 
 | mercado | pronóstico | final | modelo | mercado | cuota mínima | cuota mediana | mejor cuota | casas |
 |---|---|---|---|---|---|---|---|---|
