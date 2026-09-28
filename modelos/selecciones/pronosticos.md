@@ -1,4 +1,4 @@
-# Pronósticos de selecciones (28/09/2026 15:21 UTC)
+# Pronósticos de selecciones (28/09/2026 15:26 UTC)
 
 Tema aparte del proyecto de ambos marcan. Por mercado: **modelo** (selecciones + nota justa de los jugadores + árbitro), **mercado** (mediana de casas sin margen) y **final** (mezcla con el peso que se aprende de los partidos ya jugados, ver `evaluacion.md`). Pronóstico = el lado más probable según final. **Cuota mínima** = 1/probabilidad final: por debajo no compensa.
 
@@ -64,6 +64,66 @@ Goles esperados 1.35 - 1.36, marcador más probable 1-1. Córners esperados 8.1.
 Once real Georgia: K. Kvaratskhelia, G. Kochorashvili, G. Mamardashvili, Giorgi Chakvetadze, O. Kiteishvili, G. Mikautadze, L. Dvali, G. Tsitaishvili, Saba Goglichidze, L. Lochoshvili, O. Kakabadze
 Once real Ukraine: O. Zubkov, Matvii Ponomarenko, V. Vanat, Oleksandr Pikhalyonok, M. Khlan, Taras Mykhavko, Yehor Nazaryna, Eduard Sarapii, Valerii Bondar, Bogdan Mykhaylichenko, A. Trubin
 
+## Sweden - Poland (2026-09-28 18:45 UTC)
+
+Goles esperados 1.52 - 1.35, marcador más probable 1-1. Córners esperados 9.0. Amarillas esperadas 3.0 (árbitro Alberola Rojas, Javier, 41 partidos en nuestras ligas, x0.87). Forma del once: Sweden -0.00, Poland -0.05. Partidos en el modelo: Sweden 19, Poland 15.
+
+| mercado | pronóstico | final | modelo | mercado | cuota mínima | cuota mediana | mejor cuota | casas |
+|---|---|---|---|---|---|---|---|---|
+| 1X2 | **gana Sweden** | 45% | 42% | 48% | 2.24 | 1.98 | 2.05 | 49 |
+| Sin empate | **gana Sweden (sin empate)** | 59% | 55% | 64% | 1.68 | 1.49 | 1.53 | 13 |
+| Más/menos 2.5 | **más de 2.5 goles** | 57% | 55% | 57% | 1.75 | 1.64 | 1.69 | 34 |
+| Ambos marcan | **ambos marcan: sí** | 59% | 58% | 60% | 1.70 | 1.56 | 1.60 | 28 |
+| Tarjetas | **más de 3.5 tarjetas** | 50% | 35% | 50% | 2.00 | 1.83 | 1.85 | 2 |
+| Tarjetas | **menos de 4.5 tarjetas** | 68% | 78% | 68% | 1.48 | 1.35 | 1.35 | 2 |
+| Córners | **más de 8.5 córners** | 56% | 54% | 56% | 1.80 | 1.67 | 1.73 | 11 |
+| Córners | **menos de 9.5 córners** | 57% | 58% | 57% | 1.76 | 1.64 | 1.76 | 10 |
+| Goles | **más de 1.5 goles** | 78% | 78% | 78% | 1.28 | 1.20 | 1.27 | 34 |
+| Goles | **Sweden marca primero** | 57% | 53% | 57% | 1.75 | 1.69 | 1.70 | 4 |
+
+Once probable Sweden: A. Isak, J. Widell Zetterström, A. Elanga, V. Gyökeres, Y. Ayari, G. Gudmundsson, L. Bergvall, G. Lagerbielke, E. Stroud, V. Lindelöf, A. Bernhardsson
+Once probable Poland: Piotr Zieliński, S. Szymański, J. Bednarek, J. Kamiński, Robert Lewandowski, J. Kiwior, Nicola Zalewski, M. Skóraś, K. Grabara, P. Wiśniewski, M. Cash
+
+## Belgium - France (2026-09-28 18:45 UTC)
+
+Goles esperados 1.51 - 1.77, marcador más probable 1-1. Córners esperados 9.0. Amarillas esperadas 2.9 (árbitro Obrenovic, Rade, 0 partidos en nuestras ligas, x1.00). Forma del once: Belgium -0.12, France -0.04. Partidos en el modelo: Belgium 21, France 23.
+
+| mercado | pronóstico | final | modelo | mercado | cuota mínima | cuota mediana | mejor cuota | casas |
+|---|---|---|---|---|---|---|---|---|
+| 1X2 | **gana France** | 47% | 44% | 51% | 2.12 | 1.86 | 2.05 | 49 |
+| Sin empate | **gana France (sin empate)** | 62% | 57% | 67% | 1.62 | 1.41 | 1.44 | 12 |
+| Más/menos 2.5 | **más de 2.5 goles** | 60% | 64% | 60% | 1.66 | 1.57 | 1.61 | 34 |
+| Ambos marcan | **ambos marcan: sí** | 63% | 65% | 61% | 1.59 | 1.52 | 1.55 | 28 |
+| Tarjetas | **más de 3.5 tarjetas** | 53% | 32% | 53% | 1.88 | 1.72 | 1.74 | 2 |
+| Tarjetas | **menos de 4.5 tarjetas** | 64% | 80% | 64% | 1.56 | 1.42 | 1.42 | 2 |
+| Córners | **más de 8.5 córners** | 55% | 53% | 55% | 1.82 | 1.68 | 1.68 | 10 |
+| Córners | **menos de 9.5 córners** | 57% | 59% | 57% | 1.76 | 1.62 | 1.68 | 11 |
+| Goles | **más de 1.5 goles** | 80% | 84% | 80% | 1.25 | 1.17 | 1.20 | 34 |
+| Goles | **France marca primero** | 60% | 54% | 60% | 1.68 | 1.61 | 1.61 | 4 |
+
+Once probable Belgium: L. Trossard, Y. Tielemans, H. Vanaken, Kevin De Bruyne, Charles De Ketelaere, B. Mechele, N. Raskin, T. Courtois, N. Ngoy, M. De Cuyper, T. Castagne
+Once probable France: Kylian Mbappé, M. Olise, D. Upamecano, Manu Koné, Mike Maignan, O. Dembélé, D. Doué, Adrien Rabiot, J. Koundé, L. Digne, M. Lacroix
+
+## Turkey - Italy (2026-09-28 18:45 UTC)
+
+Goles esperados 1.15 - 1.79, marcador más probable 1-1. Córners esperados 11.4. Amarillas esperadas 3.1 (árbitro Oliver, Michael, 59 partidos en nuestras ligas, x0.93). Forma del once: Turkey -0.08, Italy -0.00. Partidos en el modelo: Turkey 18, Italy 15.
+
+| mercado | pronóstico | final | modelo | mercado | cuota mínima | cuota mediana | mejor cuota | casas |
+|---|---|---|---|---|---|---|---|---|
+| 1X2 | **gana Italy** | 45% | 52% | 38% | 2.22 | 2.49 | 2.60 | 50 |
+| Sin empate | **gana Italy (sin empate)** | 60% | 68% | 52% | 1.67 | 1.82 | 1.87 | 13 |
+| Más/menos 2.5 | **más de 2.5 goles** | 58% | 56% | 58% | 1.72 | 1.62 | 1.65 | 35 |
+| Ambos marcan | **ambos marcan: sí** | 60% | 57% | 62% | 1.68 | 1.50 | 1.53 | 29 |
+| Tarjetas | **más de 3.5 tarjetas** | 57% | 37% | 57% | 1.77 | 1.64 | 1.67 | 2 |
+| Tarjetas | **menos de 4.5 tarjetas** | 61% | 76% | 61% | 1.64 | 1.50 | 1.52 | 2 |
+| Córners | **más de 8.5 córners** | 57% | 78% | 57% | 1.77 | 1.65 | 1.67 | 11 |
+| Córners | **menos de 9.5 córners** | 55% | 32% | 55% | 1.81 | 1.68 | 1.68 | 11 |
+| Goles | **más de 1.5 goles** | 79% | 79% | 79% | 1.26 | 1.18 | 1.29 | 35 |
+| Goles | **Italy marca primero** | 51% | 61% | 51% | 1.98 | 1.91 | 1.91 | 4 |
+
+Once probable Turkey: A. Güler, H. Çalhanoğlu, Kenan Yıldız, Abdülkerim Bardakcı, Salih Özcan, İsmail Yüksek, Barış Alper Yılmaz, Zeki Çelik, Merih Demiral, F. Kadıoğlu, Uğurcan Çakır
+Once probable Italy: G. Donnarumma, S. Tonali, Nicolò Barella, Pio Esposito, Davide Bartesaghi, F. Chiarodia, Gianluca Mancini, R. Calafiori, Niccolò Pisilli, L. Koleosho, Cher Ndour
+
 ## Northern Ireland - Hungary (2026-09-28 18:45 UTC)
 
 Goles esperados 1.17 - 1.19, marcador más probable 1-1. Córners esperados 7.7. Amarillas esperadas 4.0 (árbitro De Burgos Bengoechea, Ricardo, 17 partidos en nuestras ligas, x0.96). Forma del once: Northern Ireland -0.06, Hungary -0.07. Partidos en el modelo: Northern Ireland 15, Hungary 15.
@@ -103,66 +163,6 @@ Goles esperados 1.14 - 1.25, marcador más probable 1-1. Córners esperados 8.9.
 
 Once probable Romania: D. Man, I. Radu, Daniel Bîrligea, N. Bancu, Ianis Hagi, Radu Drăguşin, Vlad Dragomir, A. Rațiu, R. Marin, Louis Munteanu, V. Ghiță
 Once probable Bosnia & Herzegovina: T. Muharemović, Ivan Bašić, N. Katić, E. Bajraktarevic, Kerim Alajbegović, Sead Kolašinac, A. Dedić, Amar Memić, Ivan Šunjić, E. Demirović, N. Vasilj
-
-## Sweden - Poland (2026-09-28 18:45 UTC)
-
-Goles esperados 1.52 - 1.35, marcador más probable 1-1. Córners esperados 9.0. Amarillas esperadas 3.0 (árbitro Alberola Rojas, Javier, 41 partidos en nuestras ligas, x0.87). Forma del once: Sweden -0.00, Poland -0.05. Partidos en el modelo: Sweden 19, Poland 15.
-
-| mercado | pronóstico | final | modelo | mercado | cuota mínima | cuota mediana | mejor cuota | casas |
-|---|---|---|---|---|---|---|---|---|
-| 1X2 | **gana Sweden** | 45% | 42% | 48% | 2.24 | 1.98 | 2.05 | 49 |
-| Sin empate | **gana Sweden (sin empate)** | 59% | 55% | 64% | 1.68 | 1.49 | 1.53 | 13 |
-| Más/menos 2.5 | **más de 2.5 goles** | 57% | 55% | 57% | 1.75 | 1.64 | 1.69 | 34 |
-| Ambos marcan | **ambos marcan: sí** | 59% | 58% | 60% | 1.70 | 1.56 | 1.60 | 28 |
-| Tarjetas | **más de 3.5 tarjetas** | 50% | 35% | 50% | 2.00 | 1.83 | 1.85 | 2 |
-| Tarjetas | **menos de 4.5 tarjetas** | 68% | 78% | 68% | 1.48 | 1.35 | 1.35 | 2 |
-| Córners | **más de 8.5 córners** | 56% | 54% | 56% | 1.80 | 1.67 | 1.73 | 11 |
-| Córners | **menos de 9.5 córners** | 57% | 58% | 57% | 1.76 | 1.64 | 1.76 | 10 |
-| Goles | **más de 1.5 goles** | 78% | 78% | 78% | 1.28 | 1.20 | 1.27 | 34 |
-| Goles | **Sweden marca primero** | 57% | 53% | 57% | 1.75 | 1.69 | 1.70 | 4 |
-
-Once probable Sweden: A. Isak, J. Widell Zetterström, A. Elanga, V. Gyökeres, Y. Ayari, G. Gudmundsson, L. Bergvall, G. Lagerbielke, E. Stroud, V. Lindelöf, A. Bernhardsson
-Once probable Poland: Piotr Zieliński, S. Szymański, J. Bednarek, J. Kamiński, Robert Lewandowski, J. Kiwior, Nicola Zalewski, M. Skóraś, K. Grabara, P. Wiśniewski, M. Cash
-
-## Turkey - Italy (2026-09-28 18:45 UTC)
-
-Goles esperados 1.15 - 1.79, marcador más probable 1-1. Córners esperados 11.4. Amarillas esperadas 3.1 (árbitro Oliver, Michael, 59 partidos en nuestras ligas, x0.93). Forma del once: Turkey -0.08, Italy -0.00. Partidos en el modelo: Turkey 18, Italy 15.
-
-| mercado | pronóstico | final | modelo | mercado | cuota mínima | cuota mediana | mejor cuota | casas |
-|---|---|---|---|---|---|---|---|---|
-| 1X2 | **gana Italy** | 45% | 52% | 38% | 2.22 | 2.49 | 2.60 | 50 |
-| Sin empate | **gana Italy (sin empate)** | 60% | 68% | 52% | 1.67 | 1.82 | 1.87 | 13 |
-| Más/menos 2.5 | **más de 2.5 goles** | 58% | 56% | 58% | 1.72 | 1.62 | 1.65 | 35 |
-| Ambos marcan | **ambos marcan: sí** | 60% | 57% | 62% | 1.68 | 1.50 | 1.53 | 29 |
-| Tarjetas | **más de 3.5 tarjetas** | 57% | 37% | 57% | 1.77 | 1.64 | 1.67 | 2 |
-| Tarjetas | **menos de 4.5 tarjetas** | 61% | 76% | 61% | 1.64 | 1.50 | 1.52 | 2 |
-| Córners | **más de 8.5 córners** | 57% | 78% | 57% | 1.77 | 1.65 | 1.67 | 11 |
-| Córners | **menos de 9.5 córners** | 55% | 32% | 55% | 1.81 | 1.68 | 1.68 | 11 |
-| Goles | **más de 1.5 goles** | 79% | 79% | 79% | 1.26 | 1.18 | 1.29 | 35 |
-| Goles | **Italy marca primero** | 51% | 61% | 51% | 1.98 | 1.91 | 1.91 | 4 |
-
-Once probable Turkey: A. Güler, H. Çalhanoğlu, Kenan Yıldız, Abdülkerim Bardakcı, Salih Özcan, İsmail Yüksek, Barış Alper Yılmaz, Zeki Çelik, Merih Demiral, F. Kadıoğlu, Uğurcan Çakır
-Once probable Italy: G. Donnarumma, S. Tonali, Nicolò Barella, Pio Esposito, Davide Bartesaghi, F. Chiarodia, Gianluca Mancini, R. Calafiori, Niccolò Pisilli, L. Koleosho, Cher Ndour
-
-## Belgium - France (2026-09-28 18:45 UTC)
-
-Goles esperados 1.51 - 1.77, marcador más probable 1-1. Córners esperados 9.0. Amarillas esperadas 2.9 (árbitro Obrenovic, Rade, 0 partidos en nuestras ligas, x1.00). Forma del once: Belgium -0.12, France -0.04. Partidos en el modelo: Belgium 21, France 23.
-
-| mercado | pronóstico | final | modelo | mercado | cuota mínima | cuota mediana | mejor cuota | casas |
-|---|---|---|---|---|---|---|---|---|
-| 1X2 | **gana France** | 47% | 44% | 51% | 2.12 | 1.86 | 2.05 | 49 |
-| Sin empate | **gana France (sin empate)** | 62% | 57% | 67% | 1.62 | 1.41 | 1.44 | 12 |
-| Más/menos 2.5 | **más de 2.5 goles** | 60% | 64% | 60% | 1.66 | 1.57 | 1.61 | 34 |
-| Ambos marcan | **ambos marcan: sí** | 63% | 65% | 61% | 1.59 | 1.52 | 1.55 | 28 |
-| Tarjetas | **más de 3.5 tarjetas** | 53% | 32% | 53% | 1.88 | 1.72 | 1.74 | 2 |
-| Tarjetas | **menos de 4.5 tarjetas** | 64% | 80% | 64% | 1.56 | 1.42 | 1.42 | 2 |
-| Córners | **más de 8.5 córners** | 55% | 53% | 55% | 1.82 | 1.68 | 1.68 | 10 |
-| Córners | **menos de 9.5 córners** | 57% | 59% | 57% | 1.76 | 1.62 | 1.68 | 11 |
-| Goles | **más de 1.5 goles** | 80% | 84% | 80% | 1.25 | 1.17 | 1.20 | 34 |
-| Goles | **France marca primero** | 60% | 54% | 60% | 1.68 | 1.61 | 1.61 | 4 |
-
-Once probable Belgium: L. Trossard, Y. Tielemans, H. Vanaken, Kevin De Bruyne, Charles De Ketelaere, B. Mechele, N. Raskin, T. Courtois, N. Ngoy, M. De Cuyper, T. Castagne
-Once probable France: Kylian Mbappé, M. Olise, D. Upamecano, Manu Koné, Mike Maignan, O. Dembélé, D. Doué, Adrien Rabiot, J. Koundé, L. Digne, M. Lacroix
 
 ## Moldova - Faroe Islands (2026-09-29 16:00 UTC)
 
@@ -264,26 +264,6 @@ Goles esperados 1.02 - 1.86, marcador más probable 1-1. Córners esperados 9.2.
 Once probable Scotland: Angus Gunn, Lewis Ferguson, L. Shankland, G. Hanley, J. Hendry, B. Doak, A. Robertson, Scott McTominay, Nathan Patterson, J.  McGinn, Scott McKenna
 Once probable Switzerland: G. Xhaka, R. Freuler, G. Kobel, B. Embolo, F. Rieder, N. Elvedi, Manuel Akanji, D. Zakaria, D. Ndoye, Ricardo Rodríguez, Djibril Sow
 
-## Bulgaria - Estonia (2026-09-29 18:45 UTC)
-
-Goles esperados 1.17 - 1.25, marcador más probable 1-1. Córners esperados 7.4. Amarillas esperadas 3.7 (árbitro Kikacheishvili, Goga, 0 partidos en nuestras ligas, x1.00). Forma del once: Bulgaria +0.00, Estonia -0.02. Partidos en el modelo: Bulgaria 13, Estonia 13.
-
-| mercado | pronóstico | final | modelo | mercado | cuota mínima | cuota mediana | mejor cuota | casas |
-|---|---|---|---|---|---|---|---|---|
-| 1X2 | **gana Bulgaria** | 46% | 34% | 57% | 2.19 | 1.64 | 1.70 | 50 |
-| Sin empate | **gana Bulgaria (sin empate)** | 62% | 48% | 76% | 1.61 | 1.22 | 1.25 | 7 |
-| Más/menos 2.5 | **menos de 2.5 goles** | 59% | 56% | 59% | 1.69 | 1.57 | 1.62 | 35 |
-| Ambos marcan | **ambos marcan: no** | 55% | 51% | 59% | 1.83 | 1.59 | 1.67 | 29 |
-| Tarjetas | **menos de 3.5 tarjetas** | 53% | 53% | - | 1.89 | nan | nan | 0 |
-| Tarjetas | **menos de 4.5 tarjetas** | 68% | 68% | - | 1.48 | nan | nan | 0 |
-| Córners | **más de 8.5 córners** | 55% | 33% | 55% | 1.81 | 1.67 | 1.80 | 10 |
-| Córners | **menos de 9.5 córners** | 57% | 77% | 57% | 1.77 | 1.63 | 1.70 | 9 |
-| Goles | **más de 1.5 goles** | 65% | 70% | 65% | 1.53 | 1.42 | 1.46 | 35 |
-| Goles | **Bulgaria marca primero** | 68% | 48% | 68% | 1.47 | 1.50 | 1.53 | 4 |
-
-Once probable Bulgaria: Filip Krastev, D. Velkovski, I. Gruev, G. Rusev, Zdravko Dimitrov, D. Mitov, M. Todorski, Kiril Despodov, A. Chernev, H. Petrov, K. Dimitrov
-Once probable Estonia: K. Hein, M. Paskotši, Rasmus Peetson, Markus Soomets, M. Käit, Robi Saarma, V. Sinyavskiy, M. Kuusk, K. Mets, M. Schjønning-Larsen, K. Palumets
-
 ## Slovenia - North Macedonia (2026-09-29 18:45 UTC)
 
 Goles esperados 1.25 - 0.87, marcador más probable 1-0. Córners esperados 9.3. Amarillas esperadas 3.4 (árbitro Colombo, 32 partidos en nuestras ligas, x1.02). Forma del once: Slovenia -0.03, North Macedonia +0.03. Partidos en el modelo: Slovenia 15, North Macedonia 15.
@@ -303,6 +283,26 @@ Goles esperados 1.25 - 0.87, marcador más probable 1-0. Córners esperados 9.3.
 
 Once probable Slovenia: J. Oblak, J. Bijol, T. Elšnik, V. Drkušić, Igor Vekić, M. Ratnik, A. Šporar, E. Janža, Žan Karničnik, A. Čerin, Danijel Šturm
 Once probable North Macedonia: Imran Fetai, S. Dimitrievski, V. Musliu, G. Zajkov, B. Miovski, D. Churlinov, Enis Bardhi, Agon Elezi, Eljif Elmas, E. Rastoder, Sebastian Herrera
+
+## Slovakia - Kazakhstan (2026-09-29 18:45 UTC)
+
+Goles esperados 1.78 - 0.85, marcador más probable 1-0. Córners esperados 11.6. Amarillas esperadas 3.8 (árbitro Kolaric, Patrik, 0 partidos en nuestras ligas, x1.00). Forma del once: Slovakia +0.01, Kazakhstan +0.00. Partidos en el modelo: Slovakia 15, Kazakhstan 14.
+
+| mercado | pronóstico | final | modelo | mercado | cuota mínima | cuota mediana | mejor cuota | casas |
+|---|---|---|---|---|---|---|---|---|
+| 1X2 | **gana Slovakia** | 67% | 59% | 74% | 1.50 | 1.27 | 1.31 | 49 |
+| Sin empate | **gana Slovakia (sin empate)** | 83% | 77% | 88% | 1.21 | 1.04 | 1.07 | 5 |
+| Más/menos 2.5 | **más de 2.5 goles** | 52% | 49% | 52% | 1.93 | 1.80 | 1.88 | 34 |
+| Ambos marcan | **ambos marcan: no** | 57% | 52% | 62% | 1.75 | 1.50 | 1.54 | 28 |
+| Tarjetas | **menos de 3.5 tarjetas** | 52% | 52% | - | 1.94 | nan | nan | 0 |
+| Tarjetas | **menos de 4.5 tarjetas** | 66% | 66% | - | 1.51 | nan | nan | 0 |
+| Córners | **más de 8.5 córners** | 62% | 80% | 62% | 1.62 | 1.50 | 1.61 | 8 |
+| Córners | **más de 9.5 córners** | 50% | 70% | 50% | 1.99 | 1.83 | 1.97 | 10 |
+| Goles | **más de 1.5 goles** | 74% | 74% | 74% | 1.35 | 1.25 | 1.33 | 34 |
+| Goles | **Slovakia marca primero** | 78% | 68% | 78% | 1.27 | 1.25 | 1.29 | 4 |
+
+Once probable Slovakia: D. Hancko, Stanislav Lobotka, O. Duda, Milan Škriniar, Adam Obert, L. Haraslín, M. Dúbravka, T. Rigo, L. Sauer, D. Strelec, M. Bero
+Once probable Kazakhstan: N. Alip, Temirlan Anarbekov, Alibek Kasym, Bagdat Kairov, G. Kenzhebek, Dinmukhamed Karaman, Ramazan Orazov, Yan Vorogovskiy, Aleksandr Mrynskiy, I. Chesnokov, Islambek Kuat
 
 ## Luxembourg - Iceland (2026-09-29 18:45 UTC)
 
@@ -324,6 +324,26 @@ Goles esperados 1.12 - 1.25, marcador más probable 1-1. Córners esperados 7.6.
 Once probable Luxembourg: V. Thill, A. Moris, L. Barreiro, S. Korač, D. Sinani, L. Jans, D. Carlson, Mathias Olesen, F. Bohnert, Tomas de Sousa Moreira, Aiman Dardari
 Once probable Iceland: H. Valdimarsson, H. Haraldsson, E. Ólafsson, Í. Bergmann Jóhannesson, D. Grétarsson, O. Óskarsson, V. Pálsson, S. Þórðarson, H. Magnússon, Kristian Hlynsson, Mikael Ellertsson
 
+## Bulgaria - Estonia (2026-09-29 18:45 UTC)
+
+Goles esperados 1.17 - 1.25, marcador más probable 1-1. Córners esperados 7.4. Amarillas esperadas 3.7 (árbitro Kikacheishvili, Goga, 0 partidos en nuestras ligas, x1.00). Forma del once: Bulgaria +0.00, Estonia -0.02. Partidos en el modelo: Bulgaria 13, Estonia 13.
+
+| mercado | pronóstico | final | modelo | mercado | cuota mínima | cuota mediana | mejor cuota | casas |
+|---|---|---|---|---|---|---|---|---|
+| 1X2 | **gana Bulgaria** | 46% | 34% | 57% | 2.19 | 1.64 | 1.70 | 50 |
+| Sin empate | **gana Bulgaria (sin empate)** | 62% | 48% | 76% | 1.61 | 1.22 | 1.25 | 7 |
+| Más/menos 2.5 | **menos de 2.5 goles** | 59% | 56% | 59% | 1.69 | 1.57 | 1.62 | 35 |
+| Ambos marcan | **ambos marcan: no** | 55% | 51% | 59% | 1.83 | 1.59 | 1.67 | 29 |
+| Tarjetas | **menos de 3.5 tarjetas** | 53% | 53% | - | 1.89 | nan | nan | 0 |
+| Tarjetas | **menos de 4.5 tarjetas** | 68% | 68% | - | 1.48 | nan | nan | 0 |
+| Córners | **más de 8.5 córners** | 55% | 33% | 55% | 1.81 | 1.67 | 1.80 | 10 |
+| Córners | **menos de 9.5 córners** | 57% | 77% | 57% | 1.77 | 1.63 | 1.70 | 9 |
+| Goles | **más de 1.5 goles** | 65% | 70% | 65% | 1.53 | 1.42 | 1.46 | 35 |
+| Goles | **Bulgaria marca primero** | 68% | 48% | 68% | 1.47 | 1.50 | 1.53 | 4 |
+
+Once probable Bulgaria: Filip Krastev, D. Velkovski, I. Gruev, G. Rusev, Zdravko Dimitrov, D. Mitov, M. Todorski, Kiril Despodov, A. Chernev, H. Petrov, K. Dimitrov
+Once probable Estonia: K. Hein, M. Paskotši, Rasmus Peetson, Markus Soomets, M. Käit, Robi Saarma, V. Sinyavskiy, M. Kuusk, K. Mets, M. Schjønning-Larsen, K. Palumets
+
 ## San Marino - Albania (2026-09-29 18:45 UTC)
 
 Goles esperados 0.75 - 2.29, marcador más probable 0-2. Córners esperados 7.5. Amarillas esperadas 3.8 (árbitro Kapraly, Mihaly, 0 partidos en nuestras ligas, x1.00). Forma del once: San Marino +0.00, Albania -0.01. Partidos en el modelo: San Marino 14, Albania 15.
@@ -343,26 +363,6 @@ Goles esperados 0.75 - 2.29, marcador más probable 0-2. Córners esperados 7.5.
 
 Once probable San Marino: Edoardo Colombo, Nicola Nanni, Samuele Zannoni, Filippo Berardi, Matteo Valli Casadei, Lorenzo Capicchioni, Alberto Riccardi, Michele Cevoli, Giacomo Valentini, Alessandro Golinucci, Alessandro Tosi
 Once probable Albania: K. Asllani, Mario Mitaj, Elseid Hysaj, B. Djimsiti, Qazim Laci, T. Strakosha, Myrto Uzuni, Ardian Ismajli, Arber Hoxha, N. Bajrami, Ylber Ramadani
-
-## Slovakia - Kazakhstan (2026-09-29 18:45 UTC)
-
-Goles esperados 1.78 - 0.85, marcador más probable 1-0. Córners esperados 11.6. Amarillas esperadas 3.8 (árbitro Kolaric, Patrik, 0 partidos en nuestras ligas, x1.00). Forma del once: Slovakia +0.01, Kazakhstan +0.00. Partidos en el modelo: Slovakia 15, Kazakhstan 14.
-
-| mercado | pronóstico | final | modelo | mercado | cuota mínima | cuota mediana | mejor cuota | casas |
-|---|---|---|---|---|---|---|---|---|
-| 1X2 | **gana Slovakia** | 67% | 59% | 74% | 1.50 | 1.27 | 1.31 | 49 |
-| Sin empate | **gana Slovakia (sin empate)** | 83% | 77% | 88% | 1.21 | 1.04 | 1.07 | 5 |
-| Más/menos 2.5 | **más de 2.5 goles** | 52% | 49% | 52% | 1.93 | 1.80 | 1.88 | 34 |
-| Ambos marcan | **ambos marcan: no** | 57% | 52% | 62% | 1.75 | 1.50 | 1.54 | 28 |
-| Tarjetas | **menos de 3.5 tarjetas** | 52% | 52% | - | 1.94 | nan | nan | 0 |
-| Tarjetas | **menos de 4.5 tarjetas** | 66% | 66% | - | 1.51 | nan | nan | 0 |
-| Córners | **más de 8.5 córners** | 62% | 80% | 62% | 1.62 | 1.50 | 1.61 | 8 |
-| Córners | **más de 9.5 córners** | 50% | 70% | 50% | 1.99 | 1.83 | 1.97 | 10 |
-| Goles | **más de 1.5 goles** | 74% | 74% | 74% | 1.35 | 1.25 | 1.33 | 34 |
-| Goles | **Slovakia marca primero** | 78% | 68% | 78% | 1.27 | 1.25 | 1.29 | 4 |
-
-Once probable Slovakia: D. Hancko, Stanislav Lobotka, O. Duda, Milan Škriniar, Adam Obert, L. Haraslín, M. Dúbravka, T. Rigo, L. Sauer, D. Strelec, M. Bero
-Once probable Kazakhstan: N. Alip, Temirlan Anarbekov, Alibek Kasym, Bagdat Kairov, G. Kenzhebek, Dinmukhamed Karaman, Ramazan Orazov, Yan Vorogovskiy, Aleksandr Mrynskiy, I. Chesnokov, Islambek Kuat
 
 ## Cuánto fiarse
 
