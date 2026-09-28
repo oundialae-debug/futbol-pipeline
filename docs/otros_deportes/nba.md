@@ -71,3 +71,33 @@ Con el plan gratuito (100/día): ~70 días. Con PRO (12,49 $/mes, 7.500/día): 1
 Aunque el modelo mejore, el cierre de MGM ya es exacto. Las ventajas que quedan en la NBA
 suelen estar en la línea de APERTURA o en reaccionar antes que la casa a una baja. Nuestro
 histórico solo tiene cierres. Por eso la prueba honesta será siempre contra el cierre.
+
+## Modelo entrenado con partidos pasados (28/09/2026) -- EN PAUSA, seguir desde aquí
+
+Datos históricos sin gastar API: Kaggle `eoinamoore/historical-nba-data-and-player-box-scores`
+(box-score por equipo y por jugador, con DNP/lesión, y árbitros en ~20% de los partidos),
+de 2021-22 a la final de 2026, en `data/nba/kaggle/`. Cruzado con nuestra API: marcador
+idéntico en el 99,97% de 6.921 partidos.
+
+`scripts/nba/modelo_totales.py` (`MERCADO=totales|handicap`): ritmo, eficiencia ofensiva y
+defensiva, tasa de triples y tiros libres (temporada y últimos 10), descanso, back-to-back,
+bajas de jugadores fijos (≥20 min) y árbitros. XGBoost reentrenado cada mes, 5 semillas.
+Prueba: 1.926 partidos de 2024-25 y 2025-26, contra el cierre de MGM.
+
+| mercado | config | corr(pred, real-línea) | ROI apostando todo |
+|---|---|---|---|
+| totales | base | +0.002 (+0.08s) | -4.6% |
+| totales | +bajas | +0.018 (+0.80s) | -7.7% |
+| totales | +bajas+árbitros | +0.014 (+0.63s) | -5.3% |
+| hándicap | base / +bajas / +árbitros | entre -0.017 y +0.005 | -4% a -7% |
+
+Sin línea, el modelo tiene más error que la línea (totales: RMSE 20.3 frente a 19.4). Los
+ROI positivos que salen solo en los umbrales altos (n≈250-460, <0.7s, tras probar 5 umbrales)
+son ruido. **No hay hallazgo: el cierre de MGM ya lleva dentro ritmo, eficiencia, descanso y bajas.**
+
+Pendiente:
+- Árbitros: solo en el 11% de los partidos de prueba, así que aún no se han probado de verdad.
+- Ganador (moneyline) con cuota ≥ 1.4: sin probar con este modelo.
+- El cron de box-score de la API (`nba_boxscore.yml`) ya es redundante para el histórico
+  (Kaggle lo trae entero). Decidir si se reorienta a la temporada en curso (alineaciones antes del partido).
+- Lo que puede quedar: la línea de APERTURA (el histórico solo tiene el cierre).
