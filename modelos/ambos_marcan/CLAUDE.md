@@ -794,3 +794,34 @@ perdido). Oviedo-Sporting quedó pendiente.
 Los valores de 1X2 y más de 2.5 de esos 3 están redondeados a %: el
 registro se creó después del pronóstico, con los números que se dieron al
 usuario a las 15:39 UTC, antes de los saques.
+
+## xG/xA por jugador de los titulares (28/09/2026): pista pequeña, no entra
+
+Backfill completo: `data/historico_xg_jugador.csv`, con 130.685 filas de
+3.046 partidos (abril de 2025 en adelante; antes la API no da xG por
+jugador). Un xG vacío es casi siempre "no tiró": el 88,5% de los vacíos
+tienen 0 tiros. El 7,7% de los que sí tiraron vienen sin xG (huecos de
+cobertura). Se tratan como 0.
+
+**Prueba:** `scripts/experimento_xg_jugador.py`.
+- Para cada titular, su xG y su xA por 90 minutos en sus 10 apariciones
+  anteriores, encogido hacia la media de su posición con 270 minutos.
+- Rasgos por equipo: la suma del once (`xi_xg90`, `xi_xa90`) y cuántos
+  titulares tienen dato. Todos con `loc_`/`vis_`/`dif_`.
+- Se compara mes a mes contra el modelo oficial (`predecir_mes`, 5
+  semillas), en los 14 meses con datos: 3.026 partidos.
+
+| | resultado |
+|---|---|
+| Oficial + xG de titulares contra oficial | **+0.88s** |
+| Brier | 0.2481 -> 0.2477 |
+| Meses que mejoran | 10 de 14 (los que empeoran: 03/2026 y 05/2026) |
+
+Mejora pequeña y bastante constante, pero lejos de +2s. **No entra en el
+modelo oficial.** Queda como pista: vuelve a medirse cuando haya más meses
+(el backfill es reanudable y añade los partidos nuevos). Si al crecer la
+muestra se va hacia cero, era ruido.
+
+No probar variantes (ventana, encogimiento, solo xA...) sobre estos mismos
+partidos hasta que la muestra crezca: sería buscar el número bueno a base de
+intentos.
