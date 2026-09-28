@@ -825,3 +825,30 @@ muestra se va hacia cero, era ruido.
 No probar variantes (ventana, encogimiento, solo xA...) sobre estos mismos
 partidos hasta que la muestra crezca: sería buscar el número bueno a base de
 intentos.
+
+**Revisión del 28/09 (el usuario no se creía el +0.88s): sin fallo que esconda un efecto grande.**
+
+Comprobado:
+- **IDs de equipo:** el 100% de los del box-score están en el histórico.
+- **Cobertura:** el 100% de los partidos desde abril de 2025 tiene el rasgo.
+- **Valores:** plausibles, 1.27 de xG por 90 sumando el once.
+
+Lo único mal era la definición de titular. El box-score marca a veces más
+de 11 "no suplentes" (hasta 25 en un partido). Ahora se usa el once
+CONFIRMADO de `/lineups` y, solo si falta, el box-score. Resultado:
+**+0.89s** (antes +0.88s): el fallo no movía nada.
+
+Variante pedida por la revisión: entrenar los dos brazos solo con partidos
+que tienen xG por jugador (2/3 del entrenamiento viejo no lo tiene y podría
+diluir los rasgos). Resultado: **-0.83s**. Con menos partidos de
+entrenamiento los rasgos nuevos sobreajustan: el mismo patrón de siempre en
+este proyecto.
+
+**Por qué aporta tan poco:** el xG del once se parece mucho (correlación
+0.75) al xG medio del equipo, que el modelo YA tiene (`m_expected_goals`).
+Correlación con los goles: 0.257 el del once, 0.274 el del equipo. Quién
+sale de titular cambia poco la media en la mayoría de partidos, y el
+precio previo ya recoge las bajas importantes conocidas días antes.
+
+Veredicto sin cambios: pista pequeña (+0.9s), no entra. Volver a medir con
+más meses.

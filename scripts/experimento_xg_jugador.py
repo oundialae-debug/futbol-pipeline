@@ -49,9 +49,25 @@ def rasgos_xi():
     x["xg90"] = (x.prev_xg.fillna(0) * 90 + mu_g * K_MIN) / (pm + K_MIN)
     x["xa90"] = (x.prev_xa.fillna(0) * 90 + mu_a * K_MIN) / (pm + K_MIN)
     x["conocido"] = pm > 0
-    # titulares = los que NO salieron del banquillo en ese partido (la alineación es
-    # información previa; el valor de cada uno sale solo de partidos anteriores)
-    tit = x[x.suplente.astype(str).str.lower() == "false"]
+    # titulares: los del once CONFIRMADO de /lineups (historico_lineups.csv) cuando
+    # existe; si no, los que el box-score no marca como suplentes. Revisión del
+    # 28/09: el box-score marca a veces más de 11 "no suplentes" (hasta 25 en un
+    # partido), así que la fuente buena es la alineación.
+    lu = pd.read_csv("data/historico_lineups.csv")
+    filas = []
+    for _, r in lu.iterrows():
+        for lado in ("local", "visitante"):
+            ids = str(r[f"{lado}_ids"]) if pd.notna(r[f"{lado}_ids"]) else ""
+            for j in ids.split("|"):
+                if j.strip().isdigit():
+                    filas.append((r.match_id, lado, int(j)))
+    once = pd.DataFrame(filas, columns=["match_id", "lado", "jugador_id"])
+    once = once.merge(h[["match_id", "local_id", "visitante_id"]], on="match_id")
+    once["equipo_id"] = np.where(once.lado == "local", once.local_id, once.visitante_id)
+    x = x.merge(once[["match_id", "jugador_id"]].assign(en_once=True), on=["match_id", "jugador_id"], how="left")
+    con_once = set(once.match_id)
+    tit = x[np.where(x.match_id.isin(con_once), x.en_once.fillna(False).astype(bool),
+                     x.suplente.astype(str).str.lower() == "false")]
     t = tit.groupby(["match_id", "equipo_id"]).agg(xi_xg90=("xg90", "sum"), xi_xa90=("xa90", "sum"),
                                                      xi_conocidos=("conocido", "sum")).reset_index()
     out = h[["match_id", "local_id", "visitante_id"]]
@@ -73,6 +89,13 @@ def main():
     meses = [m for m, n in bt.mes.value_counts().sort_index().items()
              if n >= 20 and cob.get(m, 0) >= 0.5]
     print(f"Rasgos nuevos: {extra}\nMeses con xG por jugador (>=50% de partidos): {meses}")
+    import os
+    if os.environ.get("ENTRENO") == "desde_xg":
+        # los dos brazos entrenan SOLO con partidos que tienen xG por jugador: mide
+        # lo que aportan los rasgos sin que 2/3 de filas vacías los diluyan
+        bt = bt[bt.mes >= meses[0]].reset_index(drop=True)
+        meses = meses[2:]
+        print(f"Entrenamiento solo desde {bt.mes.min()}; se prueban {meses}")
     filas = []
     for m in meses:
         a = A.predecir_mes(bt, cols, m)
@@ -87,7 +110,8 @@ def main():
     s = d.mean() / (d.std(ddof=1) / np.sqrt(len(d)))
     print(f"\nTOTAL {len(t)} partidos: oficial+xG jugadores vs oficial {s:+.2f}s "
           f"(Brier oficial {((t.p_ambos-t.ambos_marcan)**2).mean():.4f}, con xG {((t.p_xi-t.ambos_marcan)**2).mean():.4f})")
-    t.to_csv("data/experimento_xg_jugador.csv", index=False)
+    import os
+    t.to_csv(f"data/experimento_xg_jugador{'_' + os.environ['ENTRENO'] if os.environ.get('ENTRENO') else ''}.csv", index=False)
 
 
 if __name__ == "__main__":
