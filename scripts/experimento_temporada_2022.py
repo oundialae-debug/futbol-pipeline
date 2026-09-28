@@ -23,9 +23,8 @@ import portero
 
 
 def preparar(sin_2022):
+    M.TEMPORADA_MINIMA = 2023 if sin_2022 else 2022
     hist = M.cargar()
-    if sin_2022:
-        hist = hist[hist.temporada.astype(int) != 2022]
     bt = rasgos.construir(hist).sort_values("fecha").reset_index(drop=True)
     cols = rasgos.columnas_rasgo_default(bt) + portero.COLS + A.MKT
     fd = pd.read_csv("data/cuotas_historicas_fd.csv")
