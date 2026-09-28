@@ -25,7 +25,8 @@ p = p[p.estado == "Finished"]
 equipos_nba = set(p.local.value_counts().head(30).index)
 p = p[p.local.isin(equipos_nba) & p.visitante.isin(equipos_nba)]
 INICIO = {2022: "2021-10-19", 2023: "2022-10-18", 2024: "2023-10-24", 2025: "2024-10-22", 2026: "2025-10-21"}
-p = p[p.fecha >= p.temporada.map(INICIO)]  # fuera pretemporada NBA-NBA
+# fuera pretemporada NBA-NBA. Temporada sin fecha apuntada: 20 de octubre (revisar al empezar)
+p = p[p.fecha >= p.temporada.map(lambda t: INICIO.get(t, f"{t - 1}-10-20"))]
 pendientes = [i for i in p.sort_values("fecha", ascending=False).id if not (DIR / f"{i}.json").exists()]
 print(f"pendientes {len(pendientes)}")
 hechos = 0

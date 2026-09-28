@@ -1,7 +1,7 @@
 name: NBA box-score (backfill)
 
 # Plan gratuito NBA: 100 llamadas/dia, cuota APARTE de la de futbol.
-# El schedule solo corre desde la rama por defecto (main).
+# Cada dia a las 06:17 UTC desde main. Tope 85 box-scores + 1-2 de calendario.
 on:
   workflow_dispatch:
   schedule:
@@ -21,6 +21,13 @@ jobs:
         with:
           python-version: '3.11'
       - run: pip install requests pandas
+      # Temporada en curso (2026-27 = 2027): solo re-pide su ultima pagina, 1-2 llamadas.
+      - name: Partidos nuevos
+        run: python scripts/nba/descargar_partidos.py
+        env:
+          HIGHLIGHTLY_API_KEY: ${{ secrets.HIGHLIGHTLY_API_KEY }}
+          TEMPORADAS: '2027'
+          TOPE_LLAMADAS: '5'
       - name: Descargar
         run: python scripts/nba/backfill_boxscore.py
         env:
@@ -30,7 +37,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/nba/boxscore_crudo || true
+          git add data/nba || true
           if git diff --staged --quiet; then echo "Sin cambios"; exit 0; fi
           git commit -m "NBA box-score: $(ls data/nba/boxscore_crudo | wc -l) partidos"
           git pull --rebase origin ${{ github.ref_name }}
