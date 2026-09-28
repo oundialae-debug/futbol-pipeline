@@ -125,7 +125,7 @@ def precio(cuotas, mid):
 
 
 def pronosticar():
-    evaluar()   # primero se apunta lo que ya se jugó: cada uso deja el registro al día
+    import rasgos, modelo_xgboost as M, modelo_ambos_marcan as A
     sys.path.insert(0, "scripts")
     import rasgos, modelo_xgboost as M
     from btts_implicito import ajustar
@@ -138,6 +138,7 @@ def pronosticar():
               ", ".join(f"{a}-{b} ({e})" for a, b, e in zip(empezados.local, empezados.visitante, empezados.estado)))
     hoy = hoy[hoy.estado.astype(str) == "Not started"].reset_index(drop=True)
     cuotas = pd.read_csv(f"{CARPETA}/cuotas.csv")
+    M.TEMPORADA_MINIMA = A.TEMPORADA_MINIMA   # 2022/23 dentro, solo para ambos marcan
     hist = M.cargar()
     ult = hist[hist.liga_id == LIGA_ID].sort_values("fecha").iloc[-1]
     nuevas = pd.DataFrame({"match_id": hoy.match_id, "fecha": hoy.fecha, "liga_id": LIGA_ID, "liga": ult.liga,
@@ -170,11 +171,13 @@ def pronosticar():
         for k, v in vals.items():
             bt.loc[bt.match_id == mid, k] = v
     ent = bt[bt.goles_l.notna() & ~bt.match_id.isin(hoy.match_id)]
+    de_2022 = set(hist[hist.temporada.astype(int) < 2023].match_id)
     test = bt[bt.match_id.isin(hoy.match_id)]
     prob = {}
     for obj, nc in (("ambos_marcan", 2), ("mas_2_5", 2), ("resultado", 3)):
-        y = ent[obj].values.astype(int)
-        prob[obj] = np.mean([M.probabilidades(M.entrenar(ent[cols].values, y, nc, semilla=s), test[cols].values, nc)
+        e = ent if obj == "ambos_marcan" else ent[~ent.match_id.isin(de_2022)]   # 1X2 y 2.5: sin probar con 2022/23
+        y = e[obj].values.astype(int)
+        prob[obj] = np.mean([M.probabilidades(M.entrenar(e[cols].values, y, nc, semilla=s), test[cols].values, nc)
                              for s in (0, 1, 2, 3, 4)], axis=0)
     test = test.assign(p=prob["ambos_marcan"][:, 1], p_mas25=prob["mas_2_5"][:, 1], p_1=prob["resultado"][:, 0],
                        p_x=prob["resultado"][:, 1], p_2=prob["resultado"][:, 2])

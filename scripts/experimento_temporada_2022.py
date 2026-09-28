@@ -9,6 +9,14 @@ ANTES de mirar resultados, la misma mes a mes del modelo oficial:
 Meses de prueba: sep-2024 a hoy, mismos partidos en los dos brazos, Brier
 emparejado. Entra si mejora; si sale en el ruido, se queda fuera del
 entrenamiento (más filas sin su señal ya no compraron nada con 2023/24).
+
+REVISIÓN (28/09, misma tarde): la primera pasada dio +2.55s, pero el brazo B
+había perdido SOLO las 6 variables de xG del equipo. rasgos.py descarta una
+medida con menos del 30% de cobertura (COBERTURA_MINIMA), y con 2022/23 (sin
+xG) el xG baja del 38% al 29%. Cero error: comparaba "más filas y sin xG"
+contra "menos filas y con xG". Ahora B usa exactamente los rasgos de A
+(umbral bajado solo para construirlo, y se comprueba), y un brazo C mide
+lo que hacía quitar el xG sin 2022/23. Decide B contra A.
 """
 import sys
 import warnings
@@ -22,8 +30,9 @@ import rasgos
 import portero
 
 
-def preparar(sin_2022):
+def preparar(sin_2022, cobertura=rasgos.COBERTURA_MINIMA):
     M.TEMPORADA_MINIMA = 2023 if sin_2022 else 2022
+    rasgos.COBERTURA_MINIMA = cobertura
     hist = M.cargar()
     bt = rasgos.construir(hist).sort_values("fecha").reset_index(drop=True)
     cols = rasgos.columnas_rasgo_default(bt) + portero.COLS + A.MKT
@@ -37,14 +46,19 @@ def preparar(sin_2022):
 
 def main():
     a, cols_a = preparar(True)
-    b, cols_b = preparar(False)
-    print(f"Filas: sin 2022/23 {len(a)}, con {len(b)}")
+    b, cols_b = preparar(False, cobertura=0.2)
+    assert set(cols_a) <= set(b.columns), "B no tiene todos los rasgos de A"
+    cols_b = cols_a
+    sin_xg = [c for c in cols_a if "expected_goals" not in c]
+    print(f"Filas: sin 2022/23 {len(a)}, con {len(b)}; {len(cols_a)} rasgos en los dos; "
+          f"C (sin 2022/23, sin xG) {len(sin_xg)}")
     meses = [m for m, n in a.mes.value_counts().sort_index().items() if m >= "2024-09" and n >= 20]
     filas = []
     for m in meses:
         pa = A.predecir_mes(a, cols_a, m)[["match_id", "mes", A.OBJETIVO, "p_ambos"]]
         pb = A.predecir_mes(b, cols_b, m)[["match_id", "p_ambos"]].rename(columns={"p_ambos": "p_con"})
-        t = pa.merge(pb, on="match_id")
+        pc = A.predecir_mes(a, sin_xg, m)[["match_id", "p_ambos"]].rename(columns={"p_ambos": "p_sin_xg"})
+        t = pa.merge(pb, on="match_id").merge(pc, on="match_id")
         y = t[A.OBJETIVO]
         d = (t.p_ambos - y) ** 2 - (t.p_con - y) ** 2
         print(f"  {m}: n={len(t)}  con 2022/23 {d.mean()*100:+.2f} pts de Brier", flush=True)
@@ -56,6 +70,9 @@ def main():
     print(f"\nTOTAL {len(t)} partidos: con 2022/23 vs sin {d.mean()/(d.std(ddof=1)/np.sqrt(len(d))):+.2f}s "
           f"(Brier sin {((t.p_ambos-y)**2).mean():.4f}, con {((t.p_con-y)**2).mean():.4f}; "
           f"mejora en {pos}/{len(filas)} meses)")
+    dc = (t.p_ambos - y) ** 2 - (t.p_sin_xg - y) ** 2
+    print(f"Control C, quitar el xG sin 2022/23: {dc.mean()/(dc.std(ddof=1)/np.sqrt(len(dc))):+.2f}s "
+          f"(Brier {((t.p_sin_xg-y)**2).mean():.4f})")
     t.to_csv("data/experimento_temporada_2022.csv", index=False)
 
 
