@@ -1127,3 +1127,8 @@ reciente hacia atrás (6.591 en total, unos 70 días), y da de alta los partidos
 temporada en curso. NO se pausa con los crons de fútbol. Todo en `docs/otros_deportes/nba.md`:
 - Mercado elegido: totales. El cierre de MGM (Kaggle, 2021-2026) es exacto, solo caro.
 - `/matches/{id}` repite las estadísticas del local en el visitante: usar `/box-score`.
+- Histórico completo gratis en Kaggle (`data/nba/kaggle/`), así que el cron ya no hace falta para
+  el histórico. Modelo en `scripts/nba/` (rasgos_nba.py + modelo_totales.py + modelo_ganador.py):
+  ni en ganador ni en totales le gana al cierre de MGM (acierta 65-67% frente al 68% del mercado).
+- Fallos silenciosos ya arreglados en `rasgos_nba.py`, NO repetir: playerteamId vacío en Kaggle
+  (se recupera con partido+local); "los que jugaron" es fuga (depende del marcador): usar DISPONIBLES.

@@ -72,7 +72,7 @@ Aunque el modelo mejore, el cierre de MGM ya es exacto. Las ventajas que quedan 
 suelen estar en la línea de APERTURA o en reaccionar antes que la casa a una baja. Nuestro
 histórico solo tiene cierres. Por eso la prueba honesta será siempre contra el cierre.
 
-## Modelo entrenado con partidos pasados (28/09/2026) -- EN PAUSA, seguir desde aquí
+## Modelo entrenado con partidos pasados (28/09/2026)
 
 Datos históricos sin gastar API: Kaggle `eoinamoore/historical-nba-data-and-player-box-scores`
 (box-score por equipo y por jugador, con DNP/lesión, y árbitros en ~20% de los partidos),
@@ -101,3 +101,54 @@ Pendiente:
 - El cron de box-score de la API (`nba_boxscore.yml`) ya es redundante para el histórico
   (Kaggle lo trae entero). Decidir si se reorienta a la temporada en curso (alineaciones antes del partido).
 - Lo que puede quedar: la línea de APERTURA (el histórico solo tiene el cierre).
+
+## Segunda ronda (28/09/2026, noche): Elo, calidad de los disponibles, ganador y dinero del público
+
+Rasgos en `scripts/nba/rasgos_nba.py` (compartido); modelos en `modelo_totales.py` y
+`modelo_ganador.py`. Prueba: los mismos 1.926 partidos de 2024-25 y 2025-26, reentreno mensual.
+
+**Dos fallos silenciosos del dataset de Kaggle, arreglados:**
+- `playerteamId` está vacío en el 99,9% de 2021-22 y en el ~7% del resto. Las bajas de esos
+  partidos salían a 0 sin avisar. Se recupera con (partido, local/visitante): coincide en el
+  99,9% de los casos donde sí venía.
+- Los lesionados de larga duración **no tienen fila** (Embiid 2024-25: 19 partidos jugados y
+  solo 9 ausencias registradas). "Bajas" solo ve a los que causan baja ese mismo día.
+
+**Fuga detectada y quitada:** la primera versión de la calidad de plantilla sumaba a "los que
+JUGARON". Eso depende del propio partido: el número de jugadores que juegan correlaciona 0,63
+con el margen final (19,5 en partidos igualados, 24 en palizas de más de 30). Ahora suma a los
+DISPONIBLES (con fila y sin marca de baja). "DNP - Coach's Decision" cuenta como disponible.
+
+**Ganador (moneyline), cuota ≥ 1.4:**
+
+| modelo | Brier vs mercado | acierto eligiendo al favorito |
+|---|---|---|
+| mercado (cierre MGM) | -- | 68.0% |
+| XGBoost, rasgos de equipo | -5.11s | 65.1% |
+| + Elo + calidad de los disponibles | -4.26s | 65.3% |
+| + precio como variable | -3.39s | 67.2% |
+| logística simple (solo Elo) | -5.19s | 65.3% |
+
+Apostando con VE>0 y cuota ≥ 1.4, todas las variantes pierden (-1% a -9%). El Elo solo ya
+acierta lo mismo que el XGBoost entero: el techo son los datos, no el modelo.
+
+**Totales con Elo y calidad:** Pearson +0.100 (+4.38s) con el modelo que ve la línea, pero
+**Spearman 0.005** y deciles planos (del 46% al 55% de "más", sin tendencia). Lo empujan unos
+pocos partidos con desvíos enormes. No es señal. `evaluar()` imprime ya las dos correlaciones.
+
+**Dinero del público (MGM trae % de dinero y % de apuestas por lado):** unas 40 reglas a ciegas
+(seguir al dinero grande o ir contra el público, en totales, hándicap y ganador). La mejor sale a
++1,02 sigmas, lo esperable por azar con tantas pruebas. Nada.
+
+**Árbitros (solo 2025-26 trae árbitro; con línea de MGM, 626 partidos, nov-2025 a feb-2026):**
+Spearman -0.057 (-1.43s). Los tríos con partidos más altos en el pasado dan totales POR DEBAJO
+de la línea (42% de "más" en el cuartil alto, 50% en el bajo). Encaja con que la casa sobreajuste
+por árbitro, pero con una sola temporada no significa nada. **Pista, no hallazgo.** Para medirla
+de verdad harían falta árbitros de temporadas anteriores, y la API NBA no los da.
+
+**Conclusión de la ronda:** con datos públicos (box-scores, Elo, disponibles, descanso), el
+modelo NBA acierta el 65-67% de ganadores frente al 68% del cierre, y en totales y hándicap no
+ve nada que la línea no sepa. Lo que puede quedar:
+1. Árbitros con más temporadas (otra fuente).
+2. Línea de APERTURA en vez de cierre: el modelo compite contra un precio menos informado.
+3. Saber las bajas antes que la casa (noticias de última hora): es cuestión de velocidad, no de modelo.
