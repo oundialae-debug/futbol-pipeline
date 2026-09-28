@@ -4,9 +4,11 @@ Especificaciones OpenAPI descargadas de `https://highlightly.net/<deporte>-api/d
 (la web de documentación, CERO llamadas a la API). `spec_sport.json` es la "All Sports API"
 (`sports.highlightly.net`, 211 rutas con prefijo `/<deporte>/`).
 
-**Sin comprobar:** si nuestra clave (producto Football, `soccer.highlightly.net`) sirve para
-los otros deportes. La web vende la "All Sports API" como producto aparte con una sola clave
-para todos. Comprobarlo cuesta 1 llamada.
+**Comprobado el 28/09/2026 con 1 llamada** (`scripts/sondeo_otros_deportes.py`): nuestra clave
+SÍ entra en `nba.highlightly.net`, pero con el plan **BASIC gratuito: 100 llamadas/día**, cuota
+aparte de la de fútbol (7.500, que no se toca). Datos históricos sí (15/03/2026: 18 partidos NBA,
+terminados). Según la spec, `/odds` **no está disponible en el plan Basic/Free**. Para tener cuotas
+de otro deporte habría que pagar ese deporte o la All Sports API.
 
 | deporte | host | rutas | box-score jugador | alineaciones | stats partido | stats jugador temporada |
 |---|---|---|---|---|---|---|
