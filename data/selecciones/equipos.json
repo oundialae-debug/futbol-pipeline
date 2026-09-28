@@ -1,67 +1,27 @@
 {
  "equipos": {
-  "Romania": 659458,
-  "Bosnia & Herzegovina": 947947,
-  "Turkey": 662011,
-  "Italy": 654352,
-  "Northern Ireland": 656905,
-  "Hungary": 655203,
-  "Belgium": 1635,
-  "France": 2486,
-  "Sweden": 5039,
-  "Poland": 21208,
   "Moldova": 948798,
   "Faroe Islands": 935182,
   "Finland": 936033,
   "Belarus": 936884,
-  "Spain": 8443,
-  "Croatia": 3337,
+  "Luxembourg": 938586,
+  "Iceland": 16102,
   "Czech Republic": 656054,
   "England": 9294,
   "Slovenia": 929225,
   "North Macedonia": 941139,
   "Bulgaria": 939437,
   "Estonia": 937735,
+  "San Marino": 949649,
+  "Albania": 662862,
   "Scotland": 943692,
   "Switzerland": 13549,
   "Slovakia": 658607,
   "Kazakhstan": 932629,
-  "Luxembourg": 938586,
-  "Iceland": 16102,
-  "San Marino": 949649,
-  "Albania": 662862
+  "Spain": 8443,
+  "Croatia": 3337
  },
  "cruces": [
-  [
-   "Romania",
-   "Bosnia & Herzegovina",
-   1301101492,
-   "2026-09-28T18:45:00.000Z"
-  ],
-  [
-   "Turkey",
-   "Italy",
-   1301098939,
-   "2026-09-28T18:45:00.000Z"
-  ],
-  [
-   "Northern Ireland",
-   "Hungary",
-   1301099790,
-   "2026-09-28T18:45:00.000Z"
-  ],
-  [
-   "Belgium",
-   "France",
-   1301098088,
-   "2026-09-28T18:45:00.000Z"
-  ],
-  [
-   "Sweden",
-   "Poland",
-   1301100641,
-   "2026-09-28T18:45:00.000Z"
-  ],
   [
    "Moldova",
    "Faroe Islands",
@@ -75,9 +35,9 @@
    "2026-09-29T16:00:00.000Z"
   ],
   [
-   "Spain",
-   "Croatia",
-   1301102343,
+   "Luxembourg",
+   "Iceland",
+   1315311490,
    "2026-09-29T18:45:00.000Z"
   ],
   [
@@ -99,6 +59,12 @@
    "2026-09-29T18:45:00.000Z"
   ],
   [
+   "San Marino",
+   "Albania",
+   1301104045,
+   "2026-09-29T18:45:00.000Z"
+  ],
+  [
    "Scotland",
    "Switzerland",
    1315349785,
@@ -111,17 +77,11 @@
    "2026-09-29T18:45:00.000Z"
   ],
   [
-   "Luxembourg",
-   "Iceland",
-   1315311490,
-   "2026-09-29T18:45:00.000Z"
-  ],
-  [
-   "San Marino",
-   "Albania",
-   1301104045,
+   "Spain",
+   "Croatia",
+   1301102343,
    "2026-09-29T18:45:00.000Z"
   ]
  ],
- "generado": "2026-09-28T17:56:36.419352+00:00"
+ "generado": "2026-09-28T21:10:37.863052+00:00"
 }
