@@ -1117,3 +1117,13 @@ comentado (marcado "EN PAUSA"):
   `modelos/ambos_marcan/CLAUDE.md`).
 
 Para reactivar: descomentar el `schedule` de cada uno.
+
+## NBA: descarga diaria gratis (28/09/2026)
+
+`nba_boxscore.yml` corre cada día a las 06:17 UTC desde `main`. Usa la misma clave,
+pero en `nba.highlightly.net` con el plan gratuito: **100 llamadas/día, cuota APARTE
+de la de fútbol** (no toca las 7.500). Baja 85 box-scores al día, del partido más
+reciente hacia atrás (6.591 en total, unos 70 días), y da de alta los partidos de la
+temporada en curso. NO se pausa con los crons de fútbol. Todo en `docs/otros_deportes/nba.md`:
+- Mercado elegido: totales. El cierre de MGM (Kaggle, 2021-2026) es exacto, solo caro.
+- `/matches/{id}` repite las estadísticas del local en el visitante: usar `/box-score`.
