@@ -147,9 +147,16 @@ def pronosticar():
                            "local_formacion": hoy.local_formacion, "visitante_formacion": hoy.visitante_formacion})
     todo = pd.concat([hist[~hist.match_id.isin(nuevas.match_id)], nuevas], ignore_index=True)
     bt = rasgos.construir(todo).sort_values("fecha").reset_index(drop=True)
-    cols = rasgos.columnas_rasgo_default(bt) + MKT
+    import portero
+    cols = rasgos.columnas_rasgo_default(bt) + portero.COLS + MKT
     fd = pd.read_csv("data/cuotas_historicas_fd.csv")
     bt = bt.merge(rasgos_mercado(fd, "_previa"), on="match_id", how="left")
+    bt = bt.merge(portero.historico(), on="match_id", how="left")
+    # portero de hoy: el del once confirmado si ya está; si no, su último titular
+    for _, h in hoy.iterrows():
+        for lado, eq, ids in (("loc", h.local_id, h.local_ids), ("vis", h.visitante_id, h.visitante_ids)):
+            lista_ids = str(ids).split("|") if isinstance(ids, str) else []
+            bt.loc[bt.match_id == h.match_id, f"{lado}_gk_gp90"] = portero.para_partido(lista_ids, eq, h.fecha)
     # precio de hoy para los partidos de hoy (misma construcción que rasgos_mercado)
     for mid in hoy.match_id:
         r, o, b, mb, n = precio(cuotas, mid)

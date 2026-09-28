@@ -873,3 +873,26 @@ defensiva que la primera versión no tenía. Aun así no llega al listón.
 
 **Ninguna entra.** Quedan como pistas para volver a medir con más meses
 **sin cambiarlas**: xG del once (+0.89s) y portero (+1.25s).
+
+## MODELO OFICIAL desde el 28/09/2026: + portero titular
+
+Decisión del usuario: "lo que mejor haya funcionado será el mejor modelo a
+partir de ahora". `scripts/modelo_ambos_marcan.py` pasa a tener:
+- producción (99 variables);
+- **portero titular** (`scripts/portero.py`: `loc_gk_gp90`, `vis_gk_gp90`,
+  goles evitados por 90 en sus 10 partidos anteriores);
+- precio previo (7 variables).
+
+Son **108 variables**, con reentreno mensual y entrenamiento con huecos (el
+portero solo existe desde abril de 2025).
+
+- **En `ambos_marcan_hoy.py`** se usa el portero del once confirmado si la
+  API ya lo tiene. Si no, el último portero titular del equipo.
+- **Aviso honesto (lo que se sabía al adoptarlo):** +1.25s sobre el
+  oficial anterior y 10 de 14 meses mejor, pero por debajo del listón de
+  ~+2.4s que tocaba con 3 intentos. Se vigila en el registro en papel y al
+  crecer la muestra. Si se va hacia cero, se vuelve a la versión sin
+  portero.
+- **Primer uso:** Leganés-Castellón (28/09), ambos marcan sí 54.8% (antes
+  55.2%). Portero del Leganés -0.16 goles evitados por 90, del Castellón
+  +0.09.

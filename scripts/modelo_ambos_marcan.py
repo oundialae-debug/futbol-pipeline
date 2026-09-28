@@ -1,9 +1,11 @@
 """
 EL modelo de ambos marcan: la configuración que mejor ha funcionado
 (fijada el 26/09/2026 a petición del usuario, ver CLAUDE.md "Ambos marcan
-mes a mes").
+mes a mes"; desde el 28/09/2026 con el portero titular, scripts/portero.py,
++1.25s sobre la versión anterior en la prueba mes a mes).
 
-  - variables: las de producción (columnas_rasgo_default, 99) + los 7
+  - variables: las de producción (columnas_rasgo_default, 99) + portero
+    titular (loc_/vis_gk_gp90, goles evitados por 90) + los 7
     rasgos del precio PREVIO de Pinnacle/Betfair (football-data, días antes
     del partido; nunca el cierre, que no se conoce al apostar)
   - entrenamiento: con huecos (M.partir), con TODO lo anterior a la fecha
@@ -18,7 +20,7 @@ import sys
 sys.path.insert(0, "scripts")
 import numpy as np
 import pandas as pd
-import rasgos, modelo_xgboost as M
+import rasgos, modelo_xgboost as M, portero
 from apuesta_ambos_marcan import rasgos_mercado
 from cuota_como_variable import MKT
 
@@ -30,9 +32,10 @@ def preparar():
     """Histórico con rasgos + precio previo. Devuelve (tabla, columnas del modelo)."""
     hist = M.cargar()
     bt = rasgos.construir(hist).sort_values("fecha").reset_index(drop=True)
-    cols = rasgos.columnas_rasgo_default(bt) + MKT
+    cols = rasgos.columnas_rasgo_default(bt) + portero.COLS + MKT
     fd = pd.read_csv("data/cuotas_historicas_fd.csv")
     bt = bt.merge(rasgos_mercado(fd, "_previa"), on="match_id", how="left")
+    bt = bt.merge(portero.historico(), on="match_id", how="left")
     bt = bt[bt.goles_l.notna()].reset_index(drop=True)
     bt["mes"] = pd.to_datetime(bt.fecha, utc=True).dt.strftime("%Y-%m")
     return bt, cols

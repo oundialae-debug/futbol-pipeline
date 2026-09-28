@@ -2,7 +2,7 @@
 
 Cada pronóstico se apunta ANTES del partido; aquí se cruza con lo que pasó. Apuesta = ambos marcan, 1 unidad, solo si el valor esperado es positivo contra la cuota mediana. Es la prueba limpia del modelo: no se toca nada del modelo por lo que salga aquí hasta tener muestra (100+ apuestas).
 
-**Partidos jugados: 3** (pendientes 0).
+**Partidos jugados: 3** (pendientes 1).
 
 | mercado | acierto modelo | acierto mercado | Brier modelo | Brier mercado |
 |---|---|---|---|---|

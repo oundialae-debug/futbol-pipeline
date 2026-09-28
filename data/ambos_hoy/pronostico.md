@@ -4,4 +4,4 @@ Modelo oficial de ambos marcan (producción + precio, 6996 partidos de entrenami
 
 | partido | hora (España) | modelo: sí | mercado: sí | lado del modelo | cuota mínima | cuota mediana | VE | once |
 |---|---|---|---|---|---|---|---|---|
-| Leganes - Castellón | 20:30 | 55% | 56% | **sí** | 1.81 | 1.65 | -8.9% | sin once |
+| Leganes - Castellón | 20:30 | 55% | 56% | **sí** | 1.83 | 1.65 | -9.7% | sin once |
