@@ -537,7 +537,7 @@ match_id,fecha,competicion,local_id,local,visitante_id,visitante,goles_l,goles_v
 1301092982,2026-09-27,UEFA Nations League,660309,Austria,946245,Kosovo National Team,3.0,1.0,True
 1301092131,2026-09-27,UEFA Nations League,18655,Denmark,653501,Wales,2.0,0.0,True
 1301091280,2026-09-27,UEFA Nations League,12698,Serbia,952202,Netherlands,1.0,2.0,True
-1386278082,2026-09-27,Friendlies,947096,Malta,942841,Liechtenstein,,,False
+1386278082,2026-09-27,Friendlies,947096,Malta,942841,Liechtenstein,2.0,0.0,True
 1301093833,2026-09-27,UEFA Nations League,22059,Germany,951351,Greece,0.0,1.0,True
 1301095535,2026-09-27,UEFA Nations League,950500,Israel,661160,Republic of Ireland,0.0,3.0,True
 1301094684,2026-09-27,UEFA Nations League,928374,Norway,23761,Portugal,1.0,2.0,True
