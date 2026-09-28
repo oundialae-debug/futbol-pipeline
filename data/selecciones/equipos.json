@@ -1,21 +1,15 @@
 {
  "equipos": {
-  "Armenia": 931778,
-  "Montenegro": 944543,
-  "Latvia": 930076,
-  "Cyprus": 941990,
-  "Georgia": 940288,
-  "Ukraine": 657756,
-  "Sweden": 5039,
-  "Poland": 21208,
-  "Belgium": 1635,
-  "France": 2486,
+  "Romania": 659458,
+  "Bosnia & Herzegovina": 947947,
   "Turkey": 662011,
   "Italy": 654352,
   "Northern Ireland": 656905,
   "Hungary": 655203,
-  "Romania": 659458,
-  "Bosnia & Herzegovina": 947947,
+  "Belgium": 1635,
+  "France": 2486,
+  "Sweden": 5039,
+  "Poland": 21208,
   "Moldova": 948798,
   "Faroe Islands": 935182,
   "Finland": 936033,
@@ -24,48 +18,24 @@
   "Croatia": 3337,
   "Czech Republic": 656054,
   "England": 9294,
-  "Scotland": 943692,
-  "Switzerland": 13549,
   "Slovenia": 929225,
   "North Macedonia": 941139,
+  "Bulgaria": 939437,
+  "Estonia": 937735,
+  "Scotland": 943692,
+  "Switzerland": 13549,
   "Slovakia": 658607,
   "Kazakhstan": 932629,
   "Luxembourg": 938586,
   "Iceland": 16102,
-  "Bulgaria": 939437,
-  "Estonia": 937735,
   "San Marino": 949649,
   "Albania": 662862
  },
  "cruces": [
   [
-   "Armenia",
-   "Montenegro",
-   1301097237,
-   "2026-09-28T16:00:00.000Z"
-  ],
-  [
-   "Latvia",
-   "Cyprus",
-   1315310639,
-   "2026-09-28T16:00:00.000Z"
-  ],
-  [
-   "Georgia",
-   "Ukraine",
-   1301096386,
-   "2026-09-28T16:00:00.000Z"
-  ],
-  [
-   "Sweden",
-   "Poland",
-   1301100641,
-   "2026-09-28T18:45:00.000Z"
-  ],
-  [
-   "Belgium",
-   "France",
-   1301098088,
+   "Romania",
+   "Bosnia & Herzegovina",
+   1301101492,
    "2026-09-28T18:45:00.000Z"
   ],
   [
@@ -81,9 +51,15 @@
    "2026-09-28T18:45:00.000Z"
   ],
   [
-   "Romania",
-   "Bosnia & Herzegovina",
-   1301101492,
+   "Belgium",
+   "France",
+   1301098088,
+   "2026-09-28T18:45:00.000Z"
+  ],
+  [
+   "Sweden",
+   "Poland",
+   1301100641,
    "2026-09-28T18:45:00.000Z"
   ],
   [
@@ -111,15 +87,21 @@
    "2026-09-29T18:45:00.000Z"
   ],
   [
-   "Scotland",
-   "Switzerland",
-   1315349785,
-   "2026-09-29T18:45:00.000Z"
-  ],
-  [
    "Slovenia",
    "North Macedonia",
    1315358295,
+   "2026-09-29T18:45:00.000Z"
+  ],
+  [
+   "Bulgaria",
+   "Estonia",
+   1301107449,
+   "2026-09-29T18:45:00.000Z"
+  ],
+  [
+   "Scotland",
+   "Switzerland",
+   1315349785,
    "2026-09-29T18:45:00.000Z"
   ],
   [
@@ -135,17 +117,11 @@
    "2026-09-29T18:45:00.000Z"
   ],
   [
-   "Bulgaria",
-   "Estonia",
-   1301107449,
-   "2026-09-29T18:45:00.000Z"
-  ],
-  [
    "San Marino",
    "Albania",
    1301104045,
    "2026-09-29T18:45:00.000Z"
   ]
  ],
- "generado": "2026-09-28T15:25:36.564566+00:00"
+ "generado": "2026-09-28T17:56:36.419352+00:00"
 }
