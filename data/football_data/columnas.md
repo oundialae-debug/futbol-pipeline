@@ -2,6 +2,12 @@
 
 | fichero | filas | columnas | Pinnacle (PS*/P>/PC*) | ambos marcan (BTTS) |
 |---|---|---|---|---|
+| 2223_E0.csv | 380 | 106 | PSH PSD PSA P>2.5 P<2.5 PAHH PAHA PSCH PSCD PSCA PC>2.5 PC<2.5 PCAHH PCAHA | ninguna |
+| 2223_SP1.csv | 380 | 105 | PSH PSD PSA P>2.5 P<2.5 PAHH PAHA PSCH PSCD PSCA PC>2.5 PC<2.5 PCAHH PCAHA | ninguna |
+| 2223_I1.csv | 380 | 105 | PSH PSD PSA P>2.5 P<2.5 PAHH PAHA PSCH PSCD PSCA PC>2.5 PC<2.5 PCAHH PCAHA | ninguna |
+| 2223_D1.csv | 306 | 105 | PSH PSD PSA P>2.5 P<2.5 PAHH PAHA PSCH PSCD PSCA PC>2.5 PC<2.5 PCAHH PCAHA | ninguna |
+| 2223_F1.csv | 380 | 105 | PSH PSD PSA P>2.5 P<2.5 PAHH PAHA PSCH PSCD PSCA PC>2.5 PC<2.5 PCAHH PCAHA | ninguna |
+| 2223_SP2.csv | 462 | 105 | PSH PSD PSA P>2.5 P<2.5 PAHH PAHA PSCH PSCD PSCA PC>2.5 PC<2.5 PCAHH PCAHA | ninguna |
 | 2324_E0.csv | 380 | 106 | PSH PSD PSA P>2.5 P<2.5 PAHH PAHA PSCH PSCD PSCA PC>2.5 PC<2.5 PCAHH PCAHA | ninguna |
 | 2324_SP1.csv | 380 | 105 | PSH PSD PSA P>2.5 P<2.5 PAHH PAHA PSCH PSCD PSCA PC>2.5 PC<2.5 PCAHH PCAHA | ninguna |
 | 2324_I1.csv | 380 | 105 | PSH PSD PSA P>2.5 P<2.5 PAHH PAHA PSCH PSCD PSCA PC>2.5 PC<2.5 PCAHH PCAHA | ninguna |
@@ -25,7 +31,7 @@
 | 2627_I1.csv | 50 | 113 | - | ninguna |
 | 2627_D1.csv | 36 | 113 | - | ninguna |
 | 2627_F1.csv | 45 | 113 | - | ninguna |
-| 2627_SP2.csv | 66 | 113 | - | ninguna |
+| 2627_SP2.csv | 76 | 113 | - | ninguna |
 
 ## Todas las columnas vistas
 
