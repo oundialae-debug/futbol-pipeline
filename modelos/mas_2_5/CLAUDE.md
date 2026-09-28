@@ -611,3 +611,28 @@ más información que xG/xA de pocos partidos por jugador. Limitación: el
 entrenamiento solo tiene esta variable desde abr 2025 (la mitad de filas).
 Con 2026/27 avanzada (xG de temporada completa 2025/26 como "temporada
 anterior") podría repetirse con el mismo formato que el g/a.
+
+## Auditoría de xG/xA por jugador y corrección (28/09/2026)
+
+El usuario no se creyó el "no mejora" (con razón revisarlo).
+`auditar_xg_jugador.py`: **los datos están bien** -- 98.9% de los titulares
+de las alineaciones están en el box-score y el 99.6% coinciden como
+titulares. **Y la variable es la mejor que tenemos:** correlación con el
+total de goles (oct 2025 - sep 2026, 2.157 partidos): suma xG+xA de los 22
+titulares 0.199, suma xG 0.175, tiros a puerta del modelo 0.157, g/a 0.132.
+
+El fallo estaba en CÓMO se metía: 6 columnas loc/vis/dif (para Más 2.5 cuenta
+la SUMA de los dos equipos) y árboles que aprenden sobre todo de la mitad del
+entrenamiento sin la variable. Tres versiones fijadas antes de mirar:
+
+| modelo | vs 28 | vs casa | acierto | apostando |
+|---|---|---|---|---|
+| 28 | -- | -1.09s | 57.7% | +0.2% |
+| A: 28 + suma xG+xA (1 col.) | -0.08s | -1.10s | 57.0% | +1.0% |
+| B: logística (suma xG+xA, tiros, g/a) | -0.55s | -1.61s | 56.8% | -2.4% |
+| **C: mezcla 50/50 de 28 y B** | **+1.27s** | **-0.47s** | 58.1% | -0.4% |
+| casa | | | 58.4% | |
+
+C es lo más cerca de la casa en este periodo (-0.47s). No la bate. B se
+entrena solo con partidos desde abr 2025 (xG por jugador no existe antes):
+con 2026/27 avanzada tendrá más filas.

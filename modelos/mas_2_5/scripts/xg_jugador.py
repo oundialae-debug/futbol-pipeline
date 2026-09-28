@@ -88,8 +88,13 @@ bc["f"] = pd.to_datetime(bc.fecha, utc=True)
 bc["mes"] = bc.f.dt.strftime("%Y-%m")
 C28 = R.columnas_produccion(bc)
 XGJ = [f"{p}_{k}" for k in ("xg90", "xa90") for p in ("loc", "vis", "dif")]
-CFG = {"28": C28, "28 + xG/xA jugador": C28 + XGJ,
-       "28 con xG/xA en lugar de g/a": [c for c in C28 if "_cp_" not in c] + XGJ}
+bc["xga_suma"] = bc.loc_xg90 + bc.vis_xg90 + bc.loc_xa90 + bc.vis_xa90
+bc["tiros_suma"] = (bc.loc_m_shots_on_target + bc.vis_m_shots_on_target
+                    + bc.loc_m_contra_shots_on_target + bc.vis_m_contra_shots_on_target)
+bc["ga_suma"] = bc.loc_cp_del_ga90 + bc.vis_cp_del_ga90
+CFG = {"28": C28, "28 + xG/xA jugador (6 col.)": C28 + XGJ,
+       "A: 28 + suma xG+xA (1 col.)": C28 + ["xga_suma"]}
+LIN = ["xga_suma", "tiros_suma", "ga_suma"]
 ev = bc[bc.f >= "2025-10-01"]
 print(f"Cobertura de la variable en la evaluación: {ev.loc_xg90.notna().mean()*100:.0f}%")
 
@@ -107,18 +112,26 @@ for mes in sorted(ev.mes.unique()):
                       "o": val["Avg>2.5"].values, "u": val["Avg<2.5"].values})
     for n, c in CFG.items():
         r[n] = pred(c, ent, val)
+    # B: logística con las tres sumas, entrenada solo donde existen (desde abr 2025)
+    e = ent.dropna(subset=LIN)
+    from sklearn.linear_model import LogisticRegression
+    from sklearn.preprocessing import StandardScaler
+    sc = StandardScaler().fit(e[LIN])
+    lr = LogisticRegression().fit(sc.transform(e[LIN]), e.mas_2_5.astype(int))
+    r["B: lineal (xG+xA, tiros, g/a)"] = lr.predict_proba(sc.transform(val[LIN].fillna(e[LIN].mean())))[:, 1]
+    r["C: mezcla 28 + B"] = (r["28"] + r["B: lineal (xG+xA, tiros, g/a)"]) / 2
     res.append(r)
 d = pd.concat(res, ignore_index=True)
 d.to_csv("data/xg_jugador.csv", index=False)
 sig = lambda s: s.mean() / (s.std(ddof=1) / np.sqrt(len(s)))
 bm, b28 = 2 * (d.pm - d.y) ** 2, 2 * (d["28"] - d.y) ** 2
 print(f"\n{len(d)} partidos, oct 2025 - sep 2026, mes a mes. Positivo = mejor.")
-print(f"{'modelo':30s} {'vs 28':>7s} {'vs casa':>8s} {'acierto':>8s} {'apostando (cuota media)':>26s}")
-for n in CFG:
+print(f"{'modelo':34s} {'vs 28':>7s} {'vs casa':>8s} {'acierto':>8s} {'apostando (cuota media)':>26s}")
+for n in list(CFG) + ["B: lineal (xG+xA, tiros, g/a)", "C: mezcla 28 + B"]:
     b = 2 * (d[n] - d.y) ** 2
     vo, vu = d[n] * d.o - 1, (1 - d[n]) * d.u - 1
     ov, un = (vo > 0) & (vo >= vu), (vu > 0) & (vu > vo)
     ret = np.r_[(d.y[ov] * d.o[ov] - 1).values, ((1 - d.y[un]) * d.u[un] - 1).values]
-    print(f"{n:30s} {sig(b28 - b) if n != '28' else 0:+6.2f}s {sig(bm - b):+7.2f}s "
+    print(f"{n:34s} {sig(b28 - b) if n != '28' else 0:+6.2f}s {sig(bm - b):+7.2f}s "
           f"{((d[n] > .5) == d.y).mean()*100:7.1f}% {ret.mean()*100:+9.2f}% (±{ret.std(ddof=1)/np.sqrt(len(ret))*100:.2f}, {len(ret)})")
-print(f"{'casa':30s} {'':7s} {'':8s} {((d.pm > .5) == d.y).mean()*100:7.1f}%")
+print(f"{'casa':34s} {'':7s} {'':8s} {((d.pm > .5) == d.y).mean()*100:7.1f}%")
