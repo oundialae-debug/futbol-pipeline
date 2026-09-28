@@ -1,0 +1,21 @@
+name: Sondeo otros deportes
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [ccr-806f37a0-trajzr]
+    paths: [scripts/sondeo_otros_deportes.py]
+
+jobs:
+  sondeo:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install requests
+      - name: Sondear
+        run: python scripts/sondeo_otros_deportes.py
+        env:
+          HIGHLIGHTLY_API_KEY: ${{ secrets.HIGHLIGHTLY_API_KEY }}
