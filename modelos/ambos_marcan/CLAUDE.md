@@ -897,3 +897,41 @@ portero solo existe desde abril de 2025).
   55.2%). Portero del Leganés -0.16 goles evitados por 90, del Castellón
   +0.09.
 
+
+## MODELO OFICIAL desde el 28/09/2026 (tarde): + 2022/23, - xG del equipo
+
+La temporada 2022/23 se descargó con cuota sobrante del día: 2.295 partidos
+de las 6 ligas, con estadísticas y cuotas de football-data. No trae árbitro,
+alineaciones ni xG.
+
+Prueba en `scripts/experimento_temporada_2022.py`: mes a mes de sep-2024 a
+sep-2026, 4.600 partidos, contra el oficial de ese momento (108 variables).
+
+| cambio | sigmas | meses mejor |
+|---|---|---|
+| + 2022/23, mismas 108 variables | +1.89s | 12/21 |
+| - xG medio del equipo (6 columnas), sin 2022/23 | +1.39s | -- |
+| **+ 2022/23 y - xG del equipo (102 variables)** | **+2.55s** | **13/21** |
+
+**Fallo silencioso de la primera pasada:** `rasgos.py` descarta una medida
+con menos del 30% de cobertura (`COBERTURA_MINIMA`). Con 2022/23 el xG del
+equipo baja al 29% y desaparecía solo del brazo nuevo, sin avisar. El +2.55s
+salió así, por accidente. Se repitió con las mismas variables en los dos
+brazos y un control sin xG.
+
+- **Decisión, por la regla del usuario ("lo que mejor haya funcionado"):**
+  2022/23 dentro y xG del equipo fuera, de forma EXPLÍCITA
+  (`modelo_ambos_marcan.columnas()`), no por el umbral.
+- **Por qué puede sobrar el xG del equipo:** solo existe desde 2025 (vacío
+  en la mayoría de filas de entrenamiento) y el precio previo ya lo lleva
+  dentro. El xG por jugador (portero) sigue.
+- **Aviso honesto:** se miraron tres configuraciones, así que el listón es
+  ~+2.4s. Esta lo pasa por poco. Y en los dos últimos meses (ago y sep de
+  2026, el arranque de temporada) sale un poco PEOR que el oficial anterior
+  (-0.26 y -0.10 puntos de Brier). Vigilar en el registro en papel.
+- **Solo ambos marcan.** El resto de modelos sigue desde 2023/24
+  (`modelo_xgboost.TEMPORADA_MINIMA = 2023`), sin probar con 2022/23. En
+  `ambos_marcan_hoy.py`, 1X2 y más/menos 2.5 siguen con sus 99 variables y
+  filas desde 2023/24.
+- **Ojo:** `backfill_arbitro_clima.py` intentaría rellenar 2022/23, y la API
+  no tiene árbitro de esa temporada. No lanzarlo sobre 2022.

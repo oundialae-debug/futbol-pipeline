@@ -139,6 +139,7 @@ def pronosticar():
     hoy = hoy[hoy.estado.astype(str) == "Not started"].reset_index(drop=True)
     cuotas = pd.read_csv(f"{CARPETA}/cuotas.csv")
     M.TEMPORADA_MINIMA = A.TEMPORADA_MINIMA   # 2022/23 dentro, solo para ambos marcan
+    rasgos.COBERTURA_MINIMA = 0.2   # que el xG del equipo no desaparezca de la tabla: 1X2 y 2.5 lo siguen usando
     hist = M.cargar()
     ult = hist[hist.liga_id == LIGA_ID].sort_values("fecha").iloc[-1]
     nuevas = pd.DataFrame({"match_id": hoy.match_id, "fecha": hoy.fecha, "liga_id": LIGA_ID, "liga": ult.liga,
@@ -149,7 +150,8 @@ def pronosticar():
     todo = pd.concat([hist[~hist.match_id.isin(nuevas.match_id)], nuevas], ignore_index=True)
     bt = rasgos.construir(todo).sort_values("fecha").reset_index(drop=True)
     import portero
-    cols = rasgos.columnas_rasgo_default(bt) + portero.COLS + MKT
+    cols = A.columnas(bt)                                                # ambos marcan: modelo oficial
+    cols_otros = rasgos.columnas_rasgo_default(bt) + portero.COLS + MKT  # 1X2 y 2.5: como antes
     fd = pd.read_csv("data/cuotas_historicas_fd.csv")
     bt = bt.merge(rasgos_mercado(fd, "_previa"), on="match_id", how="left")
     bt = bt.merge(portero.historico(), on="match_id", how="left")
@@ -175,9 +177,9 @@ def pronosticar():
     test = bt[bt.match_id.isin(hoy.match_id)]
     prob = {}
     for obj, nc in (("ambos_marcan", 2), ("mas_2_5", 2), ("resultado", 3)):
-        e = ent if obj == "ambos_marcan" else ent[~ent.match_id.isin(de_2022)]   # 1X2 y 2.5: sin probar con 2022/23
+        e, c = (ent, cols) if obj == "ambos_marcan" else (ent[~ent.match_id.isin(de_2022)], cols_otros)
         y = e[obj].values.astype(int)
-        prob[obj] = np.mean([M.probabilidades(M.entrenar(e[cols].values, y, nc, semilla=s), test[cols].values, nc)
+        prob[obj] = np.mean([M.probabilidades(M.entrenar(e[c].values, y, nc, semilla=s), test[c].values, nc)
                              for s in (0, 1, 2, 3, 4)], axis=0)
     test = test.assign(p=prob["ambos_marcan"][:, 1], p_mas25=prob["mas_2_5"][:, 1], p_1=prob["resultado"][:, 0],
                        p_x=prob["resultado"][:, 1], p_2=prob["resultado"][:, 2])

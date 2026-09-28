@@ -26,9 +26,18 @@ from cuota_como_variable import MKT
 
 OBJETIVO = "ambos_marcan"
 SEMILLAS = (0, 1, 2, 3, 4)
-# Primera temporada del entrenamiento. 2022/23 está descargada pero fuera
-# hasta que experimento_temporada_2022.py (versión corregida) decida.
-TEMPORADA_MINIMA = 2023
+# Desde el 28/09/2026 (experimento_temporada_2022.py, mes a mes sep-2024 a
+# sep-2026): entra 2022/23 y sale el xG medio del EQUIPO (6 columnas
+# *_expected_goals). Juntos, +2.55s y 13 de 21 meses. Por separado: 2022/23
+# +1.89s, quitar el xG +1.39s. El xG del equipo solo existe desde 2025 y el
+# precio ya lo lleva dentro. El portero (xG por jugador) sigue.
+TEMPORADA_MINIMA = 2022
+
+
+def columnas(bt):
+    """Las variables del modelo oficial."""
+    return ([c for c in rasgos.columnas_rasgo_default(bt) if "expected_goals" not in c]
+            + portero.COLS + MKT)
 
 
 def preparar():
@@ -36,7 +45,7 @@ def preparar():
     M.TEMPORADA_MINIMA = TEMPORADA_MINIMA
     hist = M.cargar()
     bt = rasgos.construir(hist).sort_values("fecha").reset_index(drop=True)
-    cols = rasgos.columnas_rasgo_default(bt) + portero.COLS + MKT
+    cols = columnas(bt)
     fd = pd.read_csv("data/cuotas_historicas_fd.csv")
     bt = bt.merge(rasgos_mercado(fd, "_previa"), on="match_id", how="left")
     bt = bt.merge(portero.historico(), on="match_id", how="left")
