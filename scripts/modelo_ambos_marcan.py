@@ -26,10 +26,14 @@ from cuota_como_variable import MKT
 
 OBJETIVO = "ambos_marcan"
 SEMILLAS = (0, 1, 2, 3, 4)
+# Primera temporada del entrenamiento. 2022/23 está descargada pero fuera
+# hasta que experimento_temporada_2022.py (versión corregida) decida.
+TEMPORADA_MINIMA = 2023
 
 
 def preparar():
     """Histórico con rasgos + precio previo. Devuelve (tabla, columnas del modelo)."""
+    M.TEMPORADA_MINIMA = TEMPORADA_MINIMA
     hist = M.cargar()
     bt = rasgos.construir(hist).sort_values("fecha").reset_index(drop=True)
     cols = rasgos.columnas_rasgo_default(bt) + portero.COLS + MKT

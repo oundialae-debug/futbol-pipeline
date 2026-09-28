@@ -40,6 +40,10 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import rasgos
 
 RUTA_HIST = "data/historico_partidos.csv"
+# 2022/23 se descargó el 28/09/2026 (sin árbitro ni alineaciones). Queda FUERA
+# de todos los modelos hasta que una prueba demuestre que ayuda
+# (experimento_temporada_2022.py); sin esto entraría sola, sin probar.
+TEMPORADA_MINIMA = int(os.environ.get("TEMPORADA_MINIMA", "2023"))
 RUTA_SALIDA = "modelo.md"
 PROPORCION_VALIDACION = 0.25     # el 25% más reciente
 MINIMO_ENTRENAMIENTO = 300
@@ -90,6 +94,7 @@ def cargar():
         print(f"No existe {RUTA_HIST}. Lanza antes el backfill del histórico.")
         return None
     hist = pd.read_csv(RUTA_HIST)
+    hist = hist[hist.temporada.astype(int) >= TEMPORADA_MINIMA].reset_index(drop=True)
     if os.path.exists(RUTA_BOXSCORE):
         box = pd.read_csv(RUTA_BOXSCORE)
         antes = len(hist.columns)

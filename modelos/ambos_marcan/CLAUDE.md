@@ -896,3 +896,4 @@ portero solo existe desde abril de 2025).
 - **Primer uso:** Leganés-Castellón (28/09), ambos marcan sí 54.8% (antes
   55.2%). Portero del Leganés -0.16 goles evitados por 90, del Castellón
   +0.09.
+
