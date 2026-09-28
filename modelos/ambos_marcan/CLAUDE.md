@@ -935,3 +935,13 @@ brazos y un control sin xG.
   filas desde 2023/24.
 - **Ojo:** `backfill_arbitro_clima.py` intentaría rellenar 2022/23, y la API
   no tiene árbitro de esa temporada. No lanzarlo sobre 2022.
+
+**Arranque de 2026/27, nuevo contra anterior** (pregunta del usuario):
+- **Datos:** 326 partidos de ago-sep 2026. Brier 0.2464 del nuevo contra
+  0.2443 del anterior (-1.29s en contra del nuevo). Acierto 56.4% contra
+  57.4%.
+- **Tasa base:** en agosto ninguno de los dos bate a la tasa base del mes.
+- **Decisión del usuario:** se queda el nuevo. La prueba larga es de 4.600
+  partidos y dos temporadas; esta es de 326.
+- **Vigilar:** si el arranque sigue peor cuando haya más jornadas de
+  2026/27, reconsiderar.
