@@ -1,0 +1,9 @@
+FUGA: pasa (propio igual: True; posteriores que cambian: 751)
+Cobertura de la variable en la evaluación: 99%
+
+2172 partidos, oct 2025 - sep 2026, mes a mes. Positivo = mejor.
+modelo                           vs 28  vs casa  acierto    apostando (cuota media)
+28                              +0.00s   -1.09s    57.7%     +0.20% (±2.83, 1352)
+28 + xG/xA jugador              -0.13s   -1.09s    56.8%     -0.77% (±2.80, 1353)
+28 con xG/xA en lugar de g/a    -0.84s   -1.65s    56.5%     -3.66% (±2.80, 1376)
+casa                                               58.4%

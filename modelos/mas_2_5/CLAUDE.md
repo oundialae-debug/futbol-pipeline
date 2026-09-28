@@ -588,3 +588,26 @@ elecciones por mes en data/adaptativo*.
 Lectura: el modelo que se ajusta solo "descubre" lo mismo que las demás
 pruebas: su mejor movimiento es parecerse a la casa. Lo que lo acercaría es
 información nueva (alineaciones de 2023/24, xG por jugador), no más ajuste.
+
+## xG y xA por jugador (xg_jugador.py, 28/09/2026)
+
+Fuente: main:data/historico_xg_jugador.csv (otro chat, /box-score por
+jugador), 3.046 partidos desde abr 2025 (antes la API no da xG por jugador).
+Copiado a data/. Variable: suma del once de xG/90 y xA/90 con los minutos
+ANTERIORES de cada titular (contraído a la media de su posición con 270 min).
+xG vacío sin tiros = 0; con tiros = desconocido. Fuga comprobada. Mes a mes,
+oct 2025 - sep 2026, 2.172 partidos:
+
+| modelo | vs 28 | vs casa | acierto | apostando |
+|---|---|---|---|---|
+| 28 | -- | -1.09s | 57.7% | +0.2% |
+| 28 + xG/xA jugador | -0.13s | -1.09s | 56.8% | -0.8% |
+| 28 con xG/xA en lugar de g/a | -0.84s | -1.65s | 56.5% | -3.7% |
+| casa | | | 58.4% | |
+
+**No mejora.** Sumado, empate con el 28; como sustituto del g/a, peor. El g/a
+de la temporada anterior (cerrada, con temporada entera de muestra) lleva
+más información que xG/xA de pocos partidos por jugador. Limitación: el
+entrenamiento solo tiene esta variable desde abr 2025 (la mitad de filas).
+Con 2026/27 avanzada (xG de temporada completa 2025/26 como "temporada
+anterior") podría repetirse con el mismo formato que el g/a.
