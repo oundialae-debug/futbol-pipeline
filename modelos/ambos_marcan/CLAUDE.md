@@ -852,3 +852,24 @@ precio previo ya recoge las bajas importantes conocidas días antes.
 
 Veredicto sin cambios: pista pequeña (+0.9s), no entra. Volver a medir con
 más meses.
+
+**Segunda vuelta (28/09, pregunta del usuario: ¿y si el problema era CÓMO se le dio la variable?).**
+`scripts/experimento_xg_jugador_v2.py`: tres formas fijadas ANTES de
+ejecutar, misma prueba mes a mes contra el oficial (14 meses, ~3.000
+partidos). Con 3 intentos, el listón honesto es ~+2.4s.
+
+| forma | vs oficial | meses que mejoran |
+|---|---|---|
+| A: desviación (xG del once de hoy menos el de sus 5 partidos anteriores, que mide bajas y rotaciones) | -0.43s | 8/14 |
+| **B: portero titular** (goles evitados por 90 en sus 10 partidos anteriores) | **+1.25s** | **10/14** |
+| C: probabilidad combinada ya cruzada ((1-e^-λl)(1-e^-λv) con el xG del once contra el xG que concede el rival) | +0.10s | 7/14 |
+
+C sola predice casi como el precio: correlación con ambos marcan 0.098,
+frente a 0.119 del ambos marcan implícito del precio. Pero se parece al
+precio en un 0.51 y no añade encima de él.
+
+B es la mejor forma encontrada, y tiene sentido: el portero es la parte
+defensiva que la primera versión no tenía. Aun así no llega al listón.
+
+**Ninguna entra.** Quedan como pistas para volver a medir con más meses
+**sin cambiarlas**: xG del once (+0.89s) y portero (+1.25s).
