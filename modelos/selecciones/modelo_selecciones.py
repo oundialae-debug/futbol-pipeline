@@ -47,6 +47,25 @@ def calidad_equipos():
     return t.bueno / t.minutos.clip(lower=1)
 
 
+# Nombres de la API -> nombres del ranking FIFA (data/selecciones/ranking_fifa.csv)
+ALIAS_FIFA = {"Bosnia & Herzegovina": "Bosnia and Herzegovina", "Cape Verde": "Cabo Verde",
+              "Czech Republic": "Czechia", "Iran": "IR Iran", "Ivory Coast": "Côte d'Ivoire",
+              "Kosovo National Team": "Kosovo", "North Korea": "Korea DPR", "South Korea": "Korea Republic",
+              "St. Lucia": "St Lucia", "Turkey": "Türkiye", "Sao Tome and Principe": "São Tomé and Príncipe"}
+
+
+def fifa_antes(fechas, equipos):
+    """Puntos del último ranking FIFA publicado ANTES de cada fecha. Sin ranking (clubes
+    en amistosos, selecciones sin clasificar): el percentil 10 de los puntos."""
+    r = pd.read_csv(f"{CARPETA}/ranking_fifa.csv")
+    r["fecha"] = pd.to_datetime(r.fecha)
+    q = pd.DataFrame({"fecha": pd.to_datetime(list(fechas)) - pd.Timedelta(days=1),
+                      "equipo": [ALIAS_FIFA.get(e, e) for e in equipos], "i": range(len(fechas))})
+    out = pd.merge_asof(q.sort_values("fecha"), r.sort_values("fecha"), on="fecha", by="equipo",
+                        direction="backward").sort_values("i")
+    return out.puntos.fillna(r.puntos.quantile(0.1)).values
+
+
 def cargar():
     p = pd.read_csv(f"{CARPETA}/partidos.csv")
     p = p[p.terminado & p.goles_l.notna()].copy()
@@ -66,21 +85,32 @@ def cargar():
     sin_calidad = ~p.local_id.isin(q.index) | ~p.visitante_id.isin(q.index)
     p = p[~sin_calidad].copy()
     p["w"] = 0.5 ** ((HOY - pd.to_datetime(p.fecha)).dt.days / VIDA_MEDIA)
+    # ranking FIFA (28/09/2026): +2.60s en 1X2 y +3.21s en más de 2.5 en la prueba hacia
+    # delante (experimento_variables.md). Solo entra en el modelo de goles.
+    p["fifa_l"], p["fifa_v"] = fifa_antes(p.fecha, p.local), fifa_antes(p.fecha, p.visitante)
     return p, q, int(roto.sum()), int(sin_calidad.sum())
 
 
-def ajustar(p, q, objetivo):
-    """Devuelve f(atacante, defensor, casa, amistoso) -> conteo esperado del atacante."""
+def ajustar(p, q, objetivo, extras=()):
+    """Devuelve f(atacante, defensor, casa, amistoso, ext) -> conteo esperado del atacante.
+    extras: covariables por partido (columnas <e>_l/<e>_v, p. ej. "fifa"), estandarizadas con
+    el entreno, del atacante y del defensor. ext = {e: (valor_atacante, valor_defensor)}."""
     a = pd.DataFrame({"at": p.local_id, "de": p.visitante_id, "casa": p.casa, "am": p.amistoso,
-                      "y": p[f"{objetivo}_l"], "w": p.w})
+                      "y": p[f"{objetivo}_l"], "w": p.w,
+                      **{f"{e}_at": p[f"{e}_l"] for e in extras}, **{f"{e}_de": p[f"{e}_v"] for e in extras}})
     b = pd.DataFrame({"at": p.visitante_id, "de": p.local_id, "casa": 0.0, "am": p.amistoso,
-                      "y": p[f"{objetivo}_v"], "w": p.w})
+                      "y": p[f"{objetivo}_v"], "w": p.w,
+                      **{f"{e}_at": p[f"{e}_v"] for e in extras}, **{f"{e}_de": p[f"{e}_l"] for e in extras}})
     d = pd.concat([a, b]).dropna(subset=["y"])
     idx = {t: i for i, t in enumerate(sorted(set(d["at"]) | set(d["de"])))}
     n = len(idx)
+    escala = {}
+    for e in extras:
+        v = np.r_[p[f"{e}_l"], p[f"{e}_v"]]
+        escala[e] = (v.mean(), v.std() or 1.0)
 
-    def matriz(at, de, casa, am):
-        X = np.zeros((len(at), 2 * n + 4))
+    def matriz(at, de, casa, am, ext_at, ext_de):
+        X = np.zeros((len(at), 2 * n + 4 + 2 * len(extras)))
         for k, (x, y) in enumerate(zip(at, de)):
             if x in idx:
                 X[k, idx[x]] = 1
@@ -90,11 +120,22 @@ def ajustar(p, q, objetivo):
         X[:, 2 * n + 1] = am
         X[:, 2 * n + 2] = [10 * q[x] for x in at]     # x10: que el ridge apenas toque la calidad
         X[:, 2 * n + 3] = [-10 * q[y] for y in de]
+        for j, e in enumerate(extras):
+            mu, sd = escala[e]
+            X[:, 2 * n + 4 + 2 * j] = (np.asarray(ext_at[e], dtype=float) - mu) / sd
+            X[:, 2 * n + 5 + 2 * j] = -(np.asarray(ext_de[e], dtype=float) - mu) / sd
         return X
 
     m = PoissonRegressor(alpha=ALPHA, max_iter=3000)
-    m.fit(matriz(d["at"], d["de"], d["casa"], d["am"]), d.y, sample_weight=d.w)
-    return lambda at, de, casa, am=0.0: float(m.predict(matriz([at], [de], [casa], [am]))[0])
+    m.fit(matriz(d["at"], d["de"], d["casa"], d["am"], {e: d[f"{e}_at"] for e in extras},
+                 {e: d[f"{e}_de"] for e in extras}), d.y, sample_weight=d.w)
+
+    def f(at, de, casa, am=0.0, ext=None):
+        if extras and not ext:
+            raise ValueError(f"el modelo lleva {extras}: falta ext para {at}-{de}")
+        return float(m.predict(matriz([at], [de], [casa], [am], {e: [ext[e][0]] for e in extras},
+                                      {e: [ext[e][1]] for e in extras}))[0])
+    return f
 
 
 def esperados(p, q, objetivos, loc, vis, casa=1.0, am=0.0):

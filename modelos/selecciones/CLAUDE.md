@@ -189,6 +189,47 @@ Tarjetas: cada línea la cotiza 1 sola casa. El modelo espera unas 2
 amarillas y el mercado unas 4: seguramente cuentan distinto (la roja como
 dos, puntos de tarjeta...). No fiarse del precio.
 
+## Variables de clubes en selecciones (28/09/2026): el ranking FIFA entra
+
+Pregunta del usuario: ¿por qué no tiene selecciones las variables del modelo
+de clubes? `experimento_variables.py` (resultado en `experimento_variables.md`).
+Prueba hacia delante: 337 partidos desde oct-2025, entreno desde ene-2025 (el
+usuario pidió no ir muy atrás), sigmas contra el modelo de entonces:
+
+| variable | 1X2 | más de 2.5 | ambos marcan | sin empate |
+|---|---|---|---|---|
+| **ranking FIFA** (idea del usuario, en lugar de la clasificación) | **+2.60s** | **+3.21s** | +0.73s | +1.26s |
+| Elo desde ene-2025 (arranca del FIFA de dic-2024) | +2.39s | +3.06s | +0.50s | +1.16s |
+| xG/xA de club de los titulares | +0.66s | -0.35s | +0.09s | -0.85s |
+| todas juntas | +2.85s | +2.26s | +0.58s | +0.99s |
+
+- **Comprobado antes de creérselo.** 1X2: positivo en los 4 trimestres y
+  +1.85s sin los 5 partidos que más aportan. Más de 2.5: positivo en 3 de 4
+  trimestres y +2.43s sin los 5 mejores.
+- **Por qué funciona:** con ~15 partidos por selección el modelo sabía poco
+  de cada una. El ranking resume años de resultados.
+- **Elo:** correlación 1.00 con el FIFA (el FIFA ya es un Elo; en 20 meses el
+  nuestro apenas se aparta de su arranque). No aporta nada encima.
+- **xG de los titulares:** no aporta, igual que en clubes.
+- **Enfrentamientos directos:** 117 de 507 partidos tienen uno previo en la
+  ventana. Sin probar todavía.
+
+**Entra en producción:**
+- Ranking FIFA en el modelo de goles (`modelo_selecciones.ajustar(...,
+  extras=("fifa",))`). De ahí salen 1X2, goles, ambos marcan, sin empate y
+  primer gol.
+- Córners y tarjetas, sin él.
+- Cada partido usa el último ranking publicado ANTES de jugarse
+  (`fifa_antes`). Nombres de la API -> FIFA en `ALIAS_FIFA`.
+
+**Mantenerlo al día:**
+- Ranking en `data/selecciones/ranking_fifa.csv` (11 publicaciones, dic-2024 a
+  jul-2026). **Próximo: 07/10/2026.**
+- Se baja de `https://inside.fifa.com/api/ranking-overview?locale=en&dateId=idNNNNN`.
+  Los ids no se listan en la web: hay que probarlos a partir del último (15175).
+- Si no se actualiza, el modelo sigue usando el último publicado (no falla,
+  pero envejece).
+
 ## Sin empate (27/09/2026): el modelo propio no mejora, se deriva del de goles
 
 Petición del usuario: reentrenar solo para "gana o pierde sin empate" (Asian

@@ -193,19 +193,25 @@ def prueba(p, q):
 
 
 def brier(t):
+    # .values: con index=match_id, las Series con el índice viejo se alineaban mal y
+    # salían NaN (primera corrida del 28/09); sin_empate usaba np.where y sí salía
+    t = t.reset_index(drop=True)
     y1, yx, y2 = (t.gl > t.gv) * 1.0, (t.gl == t.gv) * 1.0, (t.gl < t.gv) * 1.0
-    return pd.DataFrame({
+    return pd.DataFrame({k: np.asarray(v, dtype=float) for k, v in {
         "1X2": (t.p1 - y1) ** 2 + (t.pX - yx) ** 2 + (t.p2 - y2) ** 2,
         "mas_2.5": (t.mas25 - ((t.gl + t.gv) > 2.5)) ** 2,
         "ambos": (t.btts - ((t.gl > 0) & (t.gv > 0))) ** 2,
-        "sin_empate": np.where(t.gl != t.gv, (t.se - y1) ** 2, np.nan)}, index=t.match_id)
+        "sin_empate": np.where(t.gl != t.gv, (t.se - y1) ** 2, np.nan)}.items()}, index=t.match_id.values)
 
 
 def main():
     p, q, h2h = preparar()
     cob_xi = p.xi_ok[p.fecha >= DESDE].mean()
-    t = prueba(p, q)
-    t.to_csv("data/selecciones/experimento_variables.csv", index=False)
+    if "--desde-csv" in sys.argv:       # recalcular la tabla sin repetir la prueba (~25 min)
+        t = pd.read_csv("data/selecciones/experimento_variables.csv")
+    else:
+        t = prueba(p, q)
+        t.to_csv("data/selecciones/experimento_variables.csv", index=False)
     b = {c: brier(g) for c, g in t.groupby("config")}
     base = b["actual"]
     L = ["# Variables de clubes en el modelo de selecciones", "",

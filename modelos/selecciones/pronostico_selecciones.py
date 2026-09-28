@@ -136,7 +136,9 @@ def main():
         pd.DataFrame(columns=["partido", "mercado", "lado", "cuota"])
     w = pesos()
     # un ajuste por objetivo para toda la jornada (antes se reajustaba en cada partido)
-    f_gol = [S.ajustar(p[p[f"{o}_l"].notna()], q, o) for o in ("goles", "xg")]
+    # goles con el ranking FIFA (28/09: +2.60s en 1X2, +3.21s en más de 2.5); córners y tarjetas sin él
+    f_gol = [S.ajustar(p[p[f"{o}_l"].notna()], q, o, extras=("fifa",)) for o in ("goles", "xg")]
+    hoy = [ahora.date().isoformat()]
     f_cor = S.ajustar(p[p.corners_l.notna()], q, "corners")
     f_tar = S.ajustar(p[p.amarillas_l.notna()], q, "amarillas")
     n_part = pd.concat([p.local_id, p.visitante_id]).value_counts()
@@ -156,7 +158,9 @@ def main():
                   f"{MIN_PARTIDOS}): sin pronóstico. Faltan datos por bajar; el ciclo sigue en la próxima pasada.", ""]
             print(f"{partido}: pocos partidos ({n_l}, {n_v}), se salta")
             continue
-        lam = (np.mean([f(tl, tv, 1.0) for f in f_gol]), np.mean([f(tv, tl, 0.0) for f in f_gol]))
+        pf_l, pf_v = S.fifa_antes(hoy, [loc])[0], S.fifa_antes(hoy, [vis])[0]
+        lam = (np.mean([f(tl, tv, 1.0, ext={"fifa": (pf_l, pf_v)}) for f in f_gol]),
+               np.mean([f(tv, tl, 0.0, ext={"fifa": (pf_v, pf_l)}) for f in f_gol]))
         fl, ol = forma(notas, loc)
         fv, ov = forma(notas, vis)
         lam = (lam[0] * np.exp(B_FORMA * fl - 0.5 * B_FORMA * fv), lam[1] * np.exp(B_FORMA * fv - 0.5 * B_FORMA * fl))
@@ -218,6 +222,7 @@ def main():
         filas.append(linea("Goles", "primero_local", f"{loc} marca primero", f"{vis} marca primero", "Home", "Away"))
 
         L += [f"## {partido} ({str(fecha)[:16].replace('T', ' ')} UTC)", "",
+              f"Ranking FIFA (puntos): {loc} {pf_l:.0f}, {vis} {pf_v:.0f}. "
               f"Goles esperados {lam[0]:.2f} - {lam[1]:.2f}, marcador más probable "
               f"{gm['marcador'][0]}-{gm['marcador'][1]}. Córners esperados {cor:.1f}. Amarillas esperadas "
               f"{tar:.1f} (árbitro {arb or '?'}, {n_arb} partidos en nuestras ligas, x{r_arb:.2f}). "
