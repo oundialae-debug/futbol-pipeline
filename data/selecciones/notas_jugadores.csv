@@ -117,7 +117,7 @@ Belgium,11263,B. Mechele,Defender,True,probable,True,0,0,,,,,13,1027,7.07,7.09,7
 Belgium,341474,N. Raskin,Midfielder,True,probable,True,0,0,,,,,20,1251,7.04,7.07,7.05,7.06,True
 Belgium,117684,T. Courtois,Goalkeeper,True,probable,True,7,630,7.05,0.0,0.0,0.04,13,1185,6.97,7.06,6.99,7.03,False
 Belgium,50387358,N. Ngoy,Defender,True,probable,True,5,450,6.93,0.0,0.0,0.14,9,688,6.96,6.88,6.94,6.9,False
-Belgium,26083281,M. De Cuyper,Defender,True,probable,True,5,425,6.86,1.0,2.0,,20,1283,6.99,6.84,6.96,6.89,False
+Belgium,26083281,M. De Cuyper,Defender,True,probable,True,5,425,6.86,1.0,2.0,,20,1283,6.99,6.84,6.96,6.88,False
 Belgium,470274,T. Castagne,Defender,True,probable,True,5,410,6.47,0.0,1.0,0.04,17,1226,7.11,6.6,6.99,6.76,False
 Belgium,48980862,Z. Debast,Defender,False,probable,False,0,0,,,,,10,807,7.17,7.17,7.17,7.17,True
 Belgium,4098892,D. Lukebakio,Forward,False,probable,False,0,0,,,,0.47,10,380,7.16,7.16,7.16,7.16,True
@@ -519,7 +519,7 @@ France,7615454,Theo Hernández,Defender,False,probable,False,0,0,,,,0.35,13,938,
 France,26125141,A. Truffert,Defender,False,probable,False,5,450,6.92,0.0,0.0,0.16,1,90,6.68,6.88,6.81,6.85,False
 France,184499,I. Konaté,Defender,False,probable,False,6,540,6.92,0.0,0.0,0.04,9,627,6.66,6.88,6.76,6.84,False
 France,26112422,Pierre Kalulu,Defender,False,probable,False,5,450,6.83,0.0,0.0,0.18,3,167,6.84,6.82,6.83,6.83,False
-France,54201931,W. Zaïre-Emery,Midfielder,False,probable,False,5,381,6.71,0.0,0.0,0.17,7,294,6.75,6.78,6.77,6.78,False
+France,54201931,W. Zaïre-Emery,Midfielder,False,probable,False,5,381,6.71,0.0,0.0,0.17,7,294,6.75,6.79,6.77,6.78,False
 France,28161952,L. Badé,Defender,False,probable,False,2,74,6.52,0.0,0.0,0.0,1,90,7.7,6.75,6.82,6.77,False
 France,44162454,M. Akliouche,Midfielder,False,probable,False,5,226,6.44,0.0,0.0,0.47,9,265,7.04,6.68,6.82,6.74,False
 France,5467,L. Hernández,Defender,False,probable,False,2,116,6.38,0.0,0.0,0.13,5,323,6.98,6.68,6.79,6.72,False
@@ -684,9 +684,9 @@ Italy,54475309,M. Zoma,Forward,False,probable,False,0,0,,,,,1,10,6.21,6.97,6.93,
 Italy,4992603,Alessandro Bastoni,Defender,False,probable,False,5,392,7.11,0.0,0.0,0.23,10,820,6.74,6.99,6.86,6.94,False
 Italy,4908722,Riccardo Orsolini,Forward,False,probable,False,3,94,6.82,0.0,0.0,0.46,6,237,7.46,6.88,7.02,6.94,False
 Italy,21723240,Daniel Maldini,Forward,False,probable,False,5,369,7.02,3.0,0.0,0.37,5,113,6.33,6.97,6.86,6.93,False
-Italy,56113806,Costantino Favasuli,Defender,False,probable,False,2,62,7.46,0.0,1.0,,2,89,6.88,6.93,6.92,6.93,False
 Italy,72692298,J. Ekhator,Forward,False,probable,False,0,0,,,,0.34,1,45,6.57,6.95,6.9,6.93,True
 Italy,53298560,I. Doumbia,Midfielder,False,probable,False,0,0,,,,0.45,1,10,5.92,6.95,6.9,6.93,True
+Italy,56113806,Costantino Favasuli,Defender,False,probable,False,2,62,7.46,0.0,1.0,,2,89,6.88,6.93,6.92,6.92,False
 Italy,55068916,L. Cherubini,Forward,False,probable,False,0,0,,,,,1,67,6.64,6.94,6.88,6.92,True
 Italy,35413,Matteo Politano,Midfielder,False,probable,False,5,337,6.96,1.0,1.0,0.25,8,486,6.8,6.93,6.87,6.91,False
 Italy,61666052,M. Palestra,Defender,False,probable,False,0,0,,,,0.15,2,85,6.56,6.93,6.86,6.9,True
@@ -1017,7 +1017,7 @@ Poland,6526128,B. Slisz,Midfielder,False,probable,False,0,0,,,,,7,506,6.86,6.95,
 Poland,366268,M. Bułka,Goalkeeper,False,probable,False,0,0,,,,,1,90,6.81,6.95,6.9,6.93,True
 Poland,59366811,Wiktor Nowak,Midfielder,False,probable,False,0,0,,,,,1,45,6.67,6.95,6.89,6.93,True
 Poland,1414056,B. Kapustka,Midfielder,False,probable,False,0,0,,,,,5,158,6.64,6.95,6.89,6.92,True
-Poland,6535788,A. Buksa,Forward,False,probable,False,5,97,6.67,1.0,0.0,0.32,3,37,6.55,6.84,6.83,6.84,False
+Poland,6535788,A. Buksa,Forward,False,probable,False,5,97,6.68,1.0,0.0,0.32,3,37,6.55,6.85,6.84,6.84,False
 Poland,482832,Łukasz Skorupski,Goalkeeper,False,probable,False,4,360,6.55,0.0,0.0,0.0,6,540,6.74,6.77,6.76,6.77,False
 Poland,484281,P. Frankowski,Midfielder,False,probable,False,5,409,6.6,1.0,1.0,0.22,4,246,7.17,6.71,6.85,6.77,False
 Poland,71250060,K. Potulski,Defender,False,probable,False,4,280,6.17,0.0,0.0,0.13,1,90,6.78,6.49,6.58,6.52,False
