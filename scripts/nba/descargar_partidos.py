@@ -15,13 +15,14 @@ import requests
 
 URL = "https://nba.highlightly.net/matches"
 H = {"x-rapidapi-key": os.environ["HIGHLIGHTLY_API_KEY"]}
-TEMPORADAS = [int(t) for t in os.environ.get("TEMPORADAS", "2026,2025,2024,2023").split(",")]
+TEMPORADAS = [int(t) for t in os.environ.get("TEMPORADAS", "2026,2025,2024,2023,2022").split(",")]
 TOPE = int(os.environ.get("TOPE_LLAMADAS", "70"))
 RESERVA = 10  # no bajar de aqui en la cuota diaria
 CRUDO = Path("data/nba/partidos_crudo")
 CRUDO.mkdir(parents=True, exist_ok=True)
 
 llamadas = 0
+quedan = None
 for temporada in TEMPORADAS:
     offset = 0
     while True:
