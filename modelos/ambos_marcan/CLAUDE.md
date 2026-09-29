@@ -945,3 +945,33 @@ brazos y un control sin xG.
   partidos y dos temporadas; esta es de 326.
 - **Vigilar:** si el arranque sigue peor cuando haya más jornadas de
   2026/27, reconsiderar.
+
+## Edad media y valor de mercado del once (29/09/2026): no entran
+
+Petición del usuario, con la edad como prioritaria.
+- **Datos:** `/players/{id}` para los 4.558 jugadores de las alineaciones, una
+  sola pasada (`backfill_perfil_jugador.py`). Se guardó todo lo que sirve:
+  `data/jugador_perfil.csv` (nacimiento, altura, pie, posición),
+  `data/jugador_valor_mercado.csv` (84.780 valoraciones CON fecha, desde
+  2004) y `data/jugador_lesiones.csv` (historial de lesiones, sin usar aún).
+- **Fallo silencioso pillado antes de usar nada:** la especificación da las
+  fechas como "Feb 2, 1989" y la API real como "16/12/1986". Con el formato
+  de la especificación se leían 0 fechas y no había ningún error. Arreglado y
+  reprocesado sin volver a llamar a la API: 4.057 de 4.067 fechas leídas.
+- **Portero:** el primer id del once es el portero (9.453 de 9.453 con perfil).
+
+Prueba fijada antes (`scripts/experimento_edad_valor.py`): mes a mes contra el
+oficial de 102 variables, 24 meses (abr-2024 a sep-2026). Cobertura 52% de
+los partidos, porque solo hay alineaciones desde abril de 2024.
+
+| variante | sigmas | meses mejor | arranque 2026/27 (327 partidos) |
+|---|---|---|---|
+| A edad media de los 10 de campo | -0.20s | 11/24 | -0.11 pts |
+| B valor medio del once (última valoración antes del partido) | +0.31s | 10/24 | +0.04 pts |
+| C las dos | +0.69s | 14/24 | -0.09 pts |
+
+Ninguna llega al listón (+2s para A; ~+2.4s para B y C). El modelo oficial
+no cambia. Lectura probable: la calidad de plantilla, el Elo y el precio
+previo ya llevan lo que dicen la edad y el valor. No reabrir estas dos
+variables con los mismos partidos. Las lesiones quedan descargadas por si
+se prueban "bajas importantes" más adelante.
