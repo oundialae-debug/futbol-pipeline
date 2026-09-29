@@ -1,0 +1,11 @@
+valor del once: 5033 partidos con dato; titulares con valor 94%
+valor_suma en la evaluación: 98%; correlación con total de goles: +0.105
+
+2172 partidos, oct 2025 - sep 2026, mes a mes. Positivo = mejor.
+modelo                vs C  vs casa  acierto    apostando (cuota media)
+28 solo             -1.39s   -1.35s    57.5%     -0.48% (±2.84, 1352)
+C                   +0.00s   -0.69s    58.2%     -3.05% (±2.98, 1316)
+C +2022/23          +1.18s   -0.48s    58.4%     -3.04% (±2.99, 1317)
+C' (con valor)      -0.98s   -0.80s    58.0%     -2.78% (±3.00, 1297)
+C' +2022/23         +0.52s   -0.59s    58.7%     -3.04% (±2.98, 1313)
+casa                                   58.4%

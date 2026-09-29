@@ -636,3 +636,33 @@ entrenamiento sin la variable. Tres versiones fijadas antes de mirar:
 C es lo más cerca de la casa en este periodo (-0.47s). No la bate. B se
 entrena solo con partidos desde abr 2025 (xG por jugador no existe antes):
 con 2026/27 avanzada tendrá más filas.
+
+## Valor de mercado del once y 2022/23 (valor_y_2022.py, 29/09/2026)
+
+Copiado de main:data/ (histórico con 2022/23 sin alineaciones, 9.292
+partidos; jugador_valor_mercado.csv con historial fechado; jugador_perfil).
+Cruce football-data 9.239 (99.4%). Humo OK. Ojo: con 2022/23 el xG de
+equipo baja del 30% de cobertura y rasgos.py deja de hacer sus medias (no
+afecta al 28, que no las usa).
+
+valor_suma = log(1 + suma del valor de los 22 titulares), último valor con
+fecha anterior al partido. Correlación con el total de goles +0.105 (menor
+que xG+xA 0.199). Mes a mes, oct 2025 - sep 2026, 2.172 partidos:
+
+| modelo | vs C | vs casa | acierto | apostando |
+|---|---|---|---|---|
+| 28 solo | -1.39s | -1.35s | 57.5% | -0.5% |
+| C (28 + logística xG+xA) | -- | -0.69s | 58.2% | -3.1% |
+| **C entrenado con 2022/23** | **+1.18s** | **-0.48s** | 58.4% | -3.0% |
+| C' (valor en la logística) | -0.98s | -0.80s | 58.0% | -2.8% |
+| C' con 2022/23 | +0.52s | -0.59s | 58.7% | -3.0% |
+| casa | | | 58.4% | |
+
+- **2022/23 en el entrenamiento ayuda (+1.18s)** aunque no tenga alineaciones.
+- **El valor de mercado no** (-0.98s solo; con 2022/23 queda por debajo de no
+  usarlo). Lo que dice del once ya lo dicen g/a y xG+xA.
+- C da -0.69s aquí frente a -0.47s en la corrida anterior: los datos base
+  cambiaron (las medias de 2023/24 ya usan partidos de 2022/23). Del orden
+  del ruido de proceso.
+- **Mejor modelo: C entrenado con todo desde 2022/23, a -0.48s de la casa.**
+  Apostando sigue sin ganar (-3%).
