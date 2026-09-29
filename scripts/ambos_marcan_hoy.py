@@ -179,7 +179,9 @@ def pronosticar():
     for obj, nc in (("ambos_marcan", 2), ("mas_2_5", 2), ("resultado", 3)):
         e, c = (ent, cols) if obj == "ambos_marcan" else (ent[~ent.match_id.isin(de_2022)], cols_otros)
         y = e[obj].values.astype(int)
-        prob[obj] = np.mean([M.probabilidades(M.entrenar(e[c].values, y, nc, semilla=s), test[c].values, nc)
+        fit = (lambda X, yy, s: A.entrenar(X, yy, semilla=s)) if obj == "ambos_marcan" else \
+            (lambda X, yy, s: M.entrenar(X, yy, nc, semilla=s))
+        prob[obj] = np.mean([M.probabilidades(fit(e[c].values, y, s), test[c].values, nc)
                              for s in (0, 1, 2, 3, 4)], axis=0)
     test = test.assign(p=prob["ambos_marcan"][:, 1], p_mas25=prob["mas_2_5"][:, 1], p_1=prob["resultado"][:, 0],
                        p_x=prob["resultado"][:, 1], p_2=prob["resultado"][:, 2])

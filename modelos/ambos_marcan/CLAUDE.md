@@ -1057,3 +1057,30 @@ partidos). Probado ponerlo vacío (`scripts/experimento_calidad_vacia.py`):
 separar "no hay once" de "equipo malo". Se queda como está. Ojo al medir
 cobertura de esta variable: `notna()` da 100% siempre; hay que mirar
 `calidad_conocidos > 0`.
+
+## Ajuste interno (29/09/2026): árboles de un nivel pasan a ser el oficial
+
+`scripts/afinar_ambos.py`. Selección en sep-2024..ago-2025 (2 semillas),
+confirmación en sep-2025..sep-2026 (5 semillas, meses que la selección no vio).
+
+- **Ronda 1** (12 combinaciones: profundidad 2/3/4, hoja 5/20, lambda 1/5):
+  gana la actual (profundidad 2, hoja 20, lambda 5). Cuanto más complejo,
+  peor, sin excepción.
+- **Ronda 2** (la actual estaba en el borde; más simple: profundidad 1/2,
+  hoja 20/50, lambda 5/20): gana profundidad 1, hoja 20, lambda 5.
+- **Confirmación:** +1.54s sobre la actual en 2.387 partidos no vistos,
+  mejor en 9 de 11 meses.
+- **Contra el mercado (262 partidos con cuota):** igual (-0.26s frente a
+  -0.11s de la actual). Apostando con VE>0 en esos 262: -5.4% frente a
+  +1.9%; con tan pocas apuestas es ruido.
+
+**Decisión, por la regla del usuario ("lo que mejor funcione"):** entra.
+- Por debajo de +2s, pero es la prueba más limpia hecha hasta ahora (selección
+  y confirmación separadas) y el modelo es más simple.
+- **Qué cambia:** `modelo_ambos_marcan.PARAMS` y `entrenar()`, usados por
+  `predecir_mes` y por `ambos_marcan_hoy.py` SOLO para ambos marcan. 1X2 y
+  más/menos 2.5 siguen con `modelo_xgboost.entrenar` (profundidad 2).
+- **Lectura:** con árboles de un nivel no hay interacciones entre variables;
+  cada una suma por su cuenta. Con estos datos, las interacciones eran ruido.
+- **Vigilar:** si en el registro en papel o con más meses el efecto se va a
+  cero, se vuelve a profundidad 2.

@@ -34,6 +34,21 @@ SEMILLAS = (0, 1, 2, 3, 4)
 TEMPORADA_MINIMA = 2022
 
 
+# Ajuste interno propio de ambos marcan (29/09/2026, afinar_ambos.py): árboles
+# de UN nivel. Elegido en sep-2024..ago-2025 y confirmado en sep-2025..sep-2026
+# (2.387 partidos que la selección no vio): +1.54s sobre profundidad 2, mejor
+# en 9 de 11 meses. Contra el mercado, igual. El resto de modelos sigue con
+# modelo_xgboost.entrenar (profundidad 2).
+PARAMS = dict(n_estimators=400, max_depth=1, learning_rate=0.03, subsample=0.8, colsample_bytree=0.8,
+              min_child_weight=20, reg_lambda=5.0)
+
+
+def entrenar(X, y, semilla=0):
+    from xgboost import XGBClassifier
+    return XGBClassifier(objective="binary:logistic", random_state=semilla, n_jobs=2,
+                         eval_metric="logloss", tree_method="hist", **PARAMS).fit(X, y)
+
+
 def columnas(bt):
     """Las variables del modelo oficial."""
     return ([c for c in rasgos.columnas_rasgo_default(bt) if "expected_goals" not in c]
@@ -59,7 +74,7 @@ def predecir_mes(bt, cols, mes, extra=()):
     c = list(cols) + list(extra)
     pasado, test = bt[bt.mes < mes], bt[bt.mes == mes]
     y = pasado[OBJETIVO].values.astype(int)
-    p = np.mean([M.probabilidades(M.entrenar(pasado[c].values, y, 2, semilla=s),
+    p = np.mean([M.probabilidades(entrenar(pasado[c].values, y, semilla=s),
                                   test[c].values, 2)[:, 1] for s in SEMILLAS], axis=0)
     return test.assign(p_ambos=p)
 
