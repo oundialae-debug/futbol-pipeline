@@ -1058,7 +1058,7 @@ separar "no hay once" de "equipo malo". Se queda como está. Ojo al medir
 cobertura de esta variable: `notna()` da 100% siempre; hay que mirar
 `calidad_conocidos > 0`.
 
-## Ajuste interno (29/09/2026): árboles de un nivel pasan a ser el oficial
+## Ajuste interno (29/09/2026): árboles de un nivel (NO CONFIRMADO, ver revisión abajo)
 
 `scripts/afinar_ambos.py`. Selección en sep-2024..ago-2025 (2 semillas),
 confirmación en sep-2025..sep-2026 (5 semillas, meses que la selección no vio).
@@ -1084,3 +1084,30 @@ confirmación en sep-2025..sep-2026 (5 semillas, meses que la selección no vio)
   cada una suma por su cuenta. Con estos datos, las interacciones eran ruido.
 - **Vigilar:** si en el registro en papel o con más meses el efecto se va a
   cero, se vuelve a profundidad 2.
+
+## Revisión de 1 contra 2 niveles (29/09/2026): no se confirma, vuelve a 2
+
+Petición del usuario: "que salga mejor pero apostando no me gusta".
+`scripts/revision_profundidad.py`, fijado antes, 21 meses (4.601 partidos),
+dos juegos de semillas.
+
+| prueba | 1 nivel frente a 2 |
+|---|---|
+| semillas 0-4 / 10-14 / las 10 | +2.55s / +3.17s / +2.86s, 16 de 21 meses |
+| ruido de semillas | la mejora (0.106 pts de Brier) es 4 veces el ruido (0.027) |
+| por liga | Bundesliga +2.50, Ligue 1 +2.50, Premier +2.30, Serie A +0.94, Segunda +0.33, **LaLiga -1.17** |
+| por temporada | 2024/25 +2.06, 2025/26 +2.02, **2026/27 +0.22** |
+| contra el mercado (262 con cuota) | -0.29s (2 niveles: -0.10s) |
+| apostando VE>0 | **-6.6%** en 84 apuestas (2 niveles: +5.5% en 113); 1 nivel peor en el 95% de los remuestreos |
+
+- **Lectura:** en probabilidad media, 1 nivel es algo mejor y no es ruido.
+  Pero en esta temporada no mejora, empeora en LaLiga, y apuesta peor en la
+  única prueba con cuotas reales. Sin interacciones pierde los matices por
+  liga, justo donde se separa del mercado.
+- **Decisión:** vuelve a 2 niveles. `modelo_ambos_marcan.PARAMS` queda igual
+  que `modelo_xgboost.entrenar`.
+- **Pendiente:** repetir cuando haya más meses de 2026/27 con cuota real.
+- **Lección para el resto de pruebas:** dos juegos de semillas del MISMO
+  modelo dan +2.12s entre sí. El sigma emparejado mide "mejor en estos
+  partidos", no el azar del entrenamiento. Un +2s suelto puede ser en parte
+  ruido de semillas: repetir con otras semillas antes de creérselo.

@@ -34,12 +34,13 @@ SEMILLAS = (0, 1, 2, 3, 4)
 TEMPORADA_MINIMA = 2022
 
 
-# Ajuste interno propio de ambos marcan (29/09/2026, afinar_ambos.py): árboles
-# de UN nivel. Elegido en sep-2024..ago-2025 y confirmado en sep-2025..sep-2026
-# (2.387 partidos que la selección no vio): +1.54s sobre profundidad 2, mejor
-# en 9 de 11 meses. Contra el mercado, igual. El resto de modelos sigue con
-# modelo_xgboost.entrenar (profundidad 2).
-PARAMS = dict(n_estimators=400, max_depth=1, learning_rate=0.03, subsample=0.8, colsample_bytree=0.8,
+# Profundidad de los árboles de ambos marcan. Probado el 29/09/2026 un nivel
+# (afinar_ambos.py y revision_profundidad.py): mejor en Brier (+2.86s en 21
+# meses, fuera del ruido de semillas) pero NO en esta temporada (+0.22s), peor
+# en LaLiga, y apostando claramente peor en los 262 partidos con cuota real
+# (-6.6% contra +5.5%; peor en el 95% de los remuestreos). No se confirmó: se
+# queda en 2, igual que el resto de modelos. Repetir con más meses de 2026/27.
+PARAMS = dict(n_estimators=400, max_depth=2, learning_rate=0.03, subsample=0.8, colsample_bytree=0.8,
               min_child_weight=20, reg_lambda=5.0)
 
 
