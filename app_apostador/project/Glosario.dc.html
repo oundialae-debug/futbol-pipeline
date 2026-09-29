@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Veredicto · Palabras explicadas</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&amp;family=IBM+Plex+Sans:wght@400;500;600&amp;family=IBM+Plex+Mono:wght@500;600&amp;display=swap">
+<style>
+body{margin:0;background:#0E1116;font-family:"IBM Plex Sans",system-ui,sans-serif;color:#E8ECF1}
+a{color:inherit;text-decoration:none}a:hover{color:#FFFFFF}
+button{font-family:inherit;cursor:pointer}
+</style>
+</helmet>
+<div style="width: 390px; height: 1900px; box-sizing: border-box; background: #0E1116; display: flex; flex-direction: column">
+
+<header style="padding: 26px 20px 16px 20px; display: flex; flex-direction: column; gap: 8px">
+<span style="font-size: 11px; letter-spacing: 0.6px; color: {{accent}}">APRENDE</span>
+<h1 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 32px; letter-spacing: -0.5px">Palabras explicadas</h1>
+<p style="margin: 0; font-size: 14px; line-height: 1.55; color: #C4CCD6">Toca una palabra para ver qué significa, con un ejemplo de esta jornada.</p>
+</header>
+
+<div style="margin: 0 16px; border-radius: 20px; background: #171B22; display: flex; flex-direction: column">
+<sc-for list="{{terminos}}" as="t" hint-placeholder-count="12">
+<div style="display: flex; flex-direction: column; border-top: {{t.borde}}">
+<button onClick="{{t.toggle}}" aria-expanded="{{t.abierto}}" style="min-height: 52px; padding: 0 16px; border: none; background: transparent; color: #E8ECF1; display: flex; align-items: center; justify-content: space-between; gap: 12px; text-align: left">
+<span style="font-size: 15px; font-weight: 600">{{t.palabra}}</span>
+<span style="font-family: 'IBM Plex Mono', monospace; font-size: 18px; color: #9AA4B2">{{t.signo}}</span>
+</button>
+<sc-if value="{{t.abierto}}" hint-placeholder-val="{{ false }}">
+<div style="padding: 0 16px 16px 16px; display: flex; flex-direction: column; gap: 8px">
+<span style="font-size: 14px; line-height: 1.55; color: #C4CCD6">{{t.que}}</span>
+<div style="padding: 10px 12px; border-radius: 12px; background: #0E1116; font-size: 13px; line-height: 1.5; color: #C4CCD6"><b style="color: {{accent}}">Ejemplo · </b>{{t.ejemplo}}</div>
+</div>
+</sc-if>
+</div>
+</sc-for>
+</div>
+
+<a href="Main.dc.html" style="margin: 16px 16px 20px 16px; height: 48px; border-radius: 24px; border: 1px solid #2C333D; display: flex; align-items: center; justify-content: center; font-size: 14px; color: #C4CCD6">Volver a las cuatro ideas básicas</a>
+
+<nav aria-label="Principal" style="margin-top: auto; display: flex; justify-content: space-around; padding: 10px 8px 26px 8px; border-top: 1px solid #1E232B; background: #0E1116">
+<a href="Jornada.dc.html" style="width: 76px; height: 52px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; color: #9AA4B2">
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"></circle><path d="M12 3v4M12 17v4M3 12h4M17 12h4"></path></svg>
+<span style="font-size: 11px">Jornada</span>
+</a>
+<a href="Nivel.dc.html" style="width: 76px; height: 52px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; color: #9AA4B2">
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"></path></svg>
+<span style="font-size: 11px">Nivel</span>
+</a>
+<a href="Arbitros.dc.html" style="width: 76px; height: 52px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; color: #9AA4B2">
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="3" width="10" height="15" rx="2" transform="rotate(12 11 10)"></rect></svg>
+<span style="font-size: 11px">Árbitros</span>
+</a>
+<a href="Glosario.dc.html" aria-current="page" style="width: 76px; height: 52px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; color: #FFFFFF">
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5a2 2 0 012-2h13v16H6a2 2 0 00-2 2zM4 21V5M8 7h7"></path></svg>
+<span style="font-size: 11px; font-weight: 600">Aprende</span>
+</a>
+</nav>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"accent":{"editor":"color","default":"#C6F24E","options":["#C6F24E","#5EEAD4","#F9A8D4"]},"$preview":{"width":390,"height":1900}}'>
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.state = { abiertos: { cuota: true, justa: true } };
+  }
+  renderVals() {
+    const lista = [
+      ['unoxdos', '1 · X · 2', 'La apuesta al resultado. 1 = gana el equipo de casa, X = empate, 2 = gana el de fuera.', 'En Real Madrid – Villarreal, el 1 es que gane el Madrid y el 2 que gane el Villarreal.'],
+      ['cuota', 'Cuota', 'Lo que te devuelven por cada euro si aciertas, contando el euro que pusiste.', 'Apuestas 10 € a cuota 1,60 y aciertas: te devuelven 16 €, es decir, ganas 6 €.'],
+      ['pct', 'Probabilidad (%)', 'De cada 100 veces que se jugara el partido, cuántas pasaría eso. No es una promesa: un 66% falla 34 de cada 100 veces.', 'Barcelona – Getafe: 88% para el Barça. Aun así, unas 12 de cada 100 veces no gana.'],
+      ['justa', 'Cuota justa', 'El precio con el que a la larga ni ganas ni pierdes. Es 100 dividido entre el %.', '66% → 100 ÷ 66 = 1,51. Si tu casa paga 1,51, a la larga quedas en tablas.'],
+      ['margen', 'Margen de la casa', 'Lo que se queda la casa. Por eso sus cuotas suelen ser algo más bajas que las justas. Es su negocio, no una trampa.', 'Si la cuota justa es 1,51 y tu casa paga 1,45, esa diferencia es su margen.'],
+      ['valor', 'Te pagan más (o menos) de lo justo', 'Comparar la cuota de tu casa con la justa. Si paga más, el precio te favorece según nuestros números; si paga menos, te está cobrando margen.', 'Justa 1,51 y tu casa paga 1,60: te pagan un 6% más de lo justo. Mira antes si hay bajas.'],
+      ['nivel', 'Nivel', 'Una nota de cada equipo que sube al ganar y baja al perder, y cambia más si el rival era bueno. Usa todos sus partidos desde 2022, así que no se deja engañar por dos o tres resultados.', 'El Sevilla va 5.º en la tabla, pero por nivel es el 15.º.'],
+      ['mas25', 'Más de 2,5 goles', 'Aciertas si entre los dos equipos marcan 3 goles o más. Con 2 goles, pierdes.', 'Un 2-1 es «más de 2,5». Un 1-1, no.'],
+      ['ambos', 'Ambos marcan', 'Aciertas si los dos equipos marcan al menos un gol, sin importar quién gane.', 'Un 3-1 es «ambos marcan: sí». Un 2-0, no.'],
+      ['tarjetas', 'Más de 4,5 tarjetas', 'Aciertas si entre los dos equipos ven 5 tarjetas o más. En muchas casas una roja cuenta distinto: revisa sus reglas.', 'En LaLiga pasa en el 47% de los partidos.'],
+      ['fiable', 'Dato sólido / Puede ser azar', 'Cuántos partidos hay detrás de un número. Con cientos, es sólido. Con 10 o 20, una racha puede salir por casualidad.', '«Villarreal: 8 de sus últimos 10 con 3 goles o más» es una pista, no una prueba.'],
+      ['h2h', 'Cara a cara', 'Los últimos partidos entre esos dos equipos. Cuenta poco: las plantillas cambian cada año.', 'Madrid y Villarreal: 6 victorias del Madrid, 2 empates y 2 del Villarreal desde 2022.']
+    ];
+    const ab = this.state.abiertos;
+    const terminos = lista.map(([id, palabra, que, ejemplo], i) => ({
+      palabra, que, ejemplo,
+      abierto: !!ab[id],
+      signo: ab[id] ? '−' : '+',
+      borde: i ? '1px solid #242A33' : 'none',
+      toggle: () => this.setState({ abiertos: { ...ab, [id]: !ab[id] } })
+    }));
+    return { accent: this.props.accent ?? '#C6F24E', terminos };
+  }
+}
+</script>
+</body>
+</html>

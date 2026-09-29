@@ -1,0 +1,732 @@
+{
+ "fuente": "data/ del repositorio, sin API. Generado por app_apostador/generar_datos.py",
+ "modelo_1x2": {
+  "partidos_ajuste": 1209,
+  "calibracion_local": [
+   {
+    "dice": 20.3,
+    "pasa": 22.4,
+    "n": 263
+   },
+   {
+    "dice": 38.4,
+    "pasa": 34.8,
+    "n": 330
+   },
+   {
+    "dice": 51.6,
+    "pasa": 49.3,
+    "n": 345
+   },
+   {
+    "dice": 67.4,
+    "pasa": 72.6,
+    "n": 168
+   },
+   {
+    "dice": 81.8,
+    "pasa": 84.5,
+    "n": 103
+   }
+  ]
+ },
+ "tabla": [
+  {
+   "pos": 1,
+   "equipo": "Barcelona",
+   "pj": 7,
+   "pts": 21,
+   "dg": 24,
+   "gf": 31,
+   "gc": 7,
+   "elo": 1853,
+   "pos_fuerza": 1
+  },
+  {
+   "pos": 2,
+   "equipo": "Atlético",
+   "pj": 7,
+   "pts": 16,
+   "dg": 9,
+   "gf": 16,
+   "gc": 7,
+   "elo": 1669,
+   "pos_fuerza": 3
+  },
+  {
+   "pos": 3,
+   "equipo": "Betis",
+   "pj": 7,
+   "pts": 16,
+   "dg": 2,
+   "gf": 9,
+   "gc": 7,
+   "elo": 1623,
+   "pos_fuerza": 5
+  },
+  {
+   "pos": 4,
+   "equipo": "Real Madrid",
+   "pj": 7,
+   "pts": 15,
+   "dg": 10,
+   "gf": 18,
+   "gc": 8,
+   "elo": 1765,
+   "pos_fuerza": 2
+  },
+  {
+   "pos": 5,
+   "equipo": "Sevilla",
+   "pj": 7,
+   "pts": 13,
+   "dg": 1,
+   "gf": 10,
+   "gc": 9,
+   "elo": 1488,
+   "pos_fuerza": 15
+  },
+  {
+   "pos": 6,
+   "equipo": "Alavés",
+   "pj": 7,
+   "pts": 11,
+   "dg": 5,
+   "gf": 11,
+   "gc": 6,
+   "elo": 1497,
+   "pos_fuerza": 12
+  },
+  {
+   "pos": 7,
+   "equipo": "Deportivo",
+   "pj": 7,
+   "pts": 10,
+   "dg": 2,
+   "gf": 10,
+   "gc": 8,
+   "elo": 1516,
+   "pos_fuerza": 9
+  },
+  {
+   "pos": 8,
+   "equipo": "Real Sociedad",
+   "pj": 7,
+   "pts": 10,
+   "dg": -4,
+   "gf": 9,
+   "gc": 13,
+   "elo": 1509,
+   "pos_fuerza": 10
+  },
+  {
+   "pos": 9,
+   "equipo": "Villarreal",
+   "pj": 7,
+   "pts": 8,
+   "dg": 1,
+   "gf": 13,
+   "gc": 12,
+   "elo": 1624,
+   "pos_fuerza": 4
+  },
+  {
+   "pos": 10,
+   "equipo": "Athletic",
+   "pj": 6,
+   "pts": 8,
+   "dg": 1,
+   "gf": 7,
+   "gc": 6,
+   "elo": 1522,
+   "pos_fuerza": 8
+  },
+  {
+   "pos": 11,
+   "equipo": "Getafe",
+   "pj": 7,
+   "pts": 8,
+   "dg": -3,
+   "gf": 4,
+   "gc": 7,
+   "elo": 1489,
+   "pos_fuerza": 14
+  },
+  {
+   "pos": 12,
+   "equipo": "Rayo",
+   "pj": 7,
+   "pts": 8,
+   "dg": -5,
+   "gf": 11,
+   "gc": 16,
+   "elo": 1531,
+   "pos_fuerza": 6
+  },
+  {
+   "pos": 13,
+   "equipo": "Osasuna",
+   "pj": 7,
+   "pts": 8,
+   "dg": -7,
+   "gf": 6,
+   "gc": 13,
+   "elo": 1460,
+   "pos_fuerza": 18
+  },
+  {
+   "pos": 14,
+   "equipo": "Celta",
+   "pj": 7,
+   "pts": 7,
+   "dg": 2,
+   "gf": 8,
+   "gc": 6,
+   "elo": 1528,
+   "pos_fuerza": 7
+  },
+  {
+   "pos": 15,
+   "equipo": "Espanyol",
+   "pj": 7,
+   "pts": 7,
+   "dg": 0,
+   "gf": 10,
+   "gc": 10,
+   "elo": 1456,
+   "pos_fuerza": 19
+  },
+  {
+   "pos": 16,
+   "equipo": "Racing",
+   "pj": 7,
+   "pts": 7,
+   "dg": -10,
+   "gf": 11,
+   "gc": 21,
+   "elo": 1482,
+   "pos_fuerza": 16
+  },
+  {
+   "pos": 17,
+   "equipo": "Levante",
+   "pj": 6,
+   "pts": 5,
+   "dg": -4,
+   "gf": 8,
+   "gc": 12,
+   "elo": 1491,
+   "pos_fuerza": 13
+  },
+  {
+   "pos": 18,
+   "equipo": "Elche",
+   "pj": 7,
+   "pts": 5,
+   "dg": -6,
+   "gf": 11,
+   "gc": 17,
+   "elo": 1451,
+   "pos_fuerza": 20
+  },
+  {
+   "pos": 19,
+   "equipo": "Valencia",
+   "pj": 7,
+   "pts": 4,
+   "dg": -9,
+   "gf": 4,
+   "gc": 13,
+   "elo": 1498,
+   "pos_fuerza": 11
+  },
+  {
+   "pos": 20,
+   "equipo": "Málaga",
+   "pj": 7,
+   "pts": 3,
+   "dg": -9,
+   "gf": 3,
+   "gc": 12,
+   "elo": 1467,
+   "pos_fuerza": 17
+  }
+ ],
+ "jornada8": [
+  {
+   "fecha": "2026-10-09",
+   "hora_utc": "19:00",
+   "local": "Málaga",
+   "visitante": "Espanyol",
+   "p1": 47,
+   "px": 29,
+   "p2": 24,
+   "justa1": 2.13,
+   "justax": 3.44,
+   "justa2": 4.19,
+   "local_tabla": 20,
+   "local_fuerza": 17,
+   "vis_tabla": 15,
+   "vis_fuerza": 19
+  },
+  {
+   "fecha": "2026-10-10",
+   "hora_utc": "12:00",
+   "local": "Rayo",
+   "visitante": "Athletic",
+   "p1": 47,
+   "px": 29,
+   "p2": 24,
+   "justa1": 2.14,
+   "justax": 3.43,
+   "justa2": 4.16,
+   "local_tabla": 12,
+   "local_fuerza": 6,
+   "vis_tabla": 10,
+   "vis_fuerza": 8
+  },
+  {
+   "fecha": "2026-10-10",
+   "hora_utc": "14:15",
+   "local": "Alavés",
+   "visitante": "Atlético",
+   "p1": 23,
+   "px": 29,
+   "p2": 49,
+   "justa1": 4.4,
+   "justax": 3.49,
+   "justa2": 2.06,
+   "local_tabla": 6,
+   "local_fuerza": 12,
+   "vis_tabla": 2,
+   "vis_fuerza": 3
+  },
+  {
+   "fecha": "2026-10-10",
+   "hora_utc": "16:30",
+   "local": "Barcelona",
+   "visitante": "Getafe",
+   "p1": 88,
+   "px": 8,
+   "p2": 4,
+   "justa1": 1.13,
+   "justax": 12.28,
+   "justa2": 28.12,
+   "local_tabla": 1,
+   "local_fuerza": 1,
+   "vis_tabla": 11,
+   "vis_fuerza": 14
+  },
+  {
+   "fecha": "2026-10-10",
+   "hora_utc": "19:00",
+   "local": "Real Madrid",
+   "visitante": "Villarreal",
+   "p1": 66,
+   "px": 21,
+   "p2": 13,
+   "justa1": 1.51,
+   "justax": 4.67,
+   "justa2": 8.0,
+   "local_tabla": 4,
+   "local_fuerza": 2,
+   "vis_tabla": 9,
+   "vis_fuerza": 4
+  },
+  {
+   "fecha": "2026-10-11",
+   "hora_utc": "12:00",
+   "local": "Elche",
+   "visitante": "Celta",
+   "p1": 34,
+   "px": 31,
+   "p2": 35,
+   "justa1": 2.91,
+   "justax": 3.23,
+   "justa2": 2.88,
+   "local_tabla": 18,
+   "local_fuerza": 20,
+   "vis_tabla": 14,
+   "vis_fuerza": 7
+  },
+  {
+   "fecha": "2026-10-11",
+   "hora_utc": "14:15",
+   "local": "Real Sociedad",
+   "visitante": "Deportivo",
+   "p1": 44,
+   "px": 30,
+   "p2": 26,
+   "justa1": 2.25,
+   "justax": 3.36,
+   "justa2": 3.87,
+   "local_tabla": 8,
+   "local_fuerza": 10,
+   "vis_tabla": 7,
+   "vis_fuerza": 9
+  },
+  {
+   "fecha": "2026-10-11",
+   "hora_utc": "16:30",
+   "local": "Betis",
+   "visitante": "Osasuna",
+   "p1": 69,
+   "px": 20,
+   "p2": 11,
+   "justa1": 1.45,
+   "justax": 5.03,
+   "justa2": 9.01,
+   "local_tabla": 3,
+   "local_fuerza": 5,
+   "vis_tabla": 13,
+   "vis_fuerza": 18
+  },
+  {
+   "fecha": "2026-10-11",
+   "hora_utc": "19:00",
+   "local": "Racing",
+   "visitante": "Valencia",
+   "p1": 43,
+   "px": 30,
+   "p2": 27,
+   "justa1": 2.32,
+   "justax": 3.33,
+   "justa2": 3.71,
+   "local_tabla": 16,
+   "local_fuerza": 16,
+   "vis_tabla": 19,
+   "vis_fuerza": 11
+  },
+  {
+   "fecha": "2026-10-12",
+   "hora_utc": "19:00",
+   "local": "Levante",
+   "visitante": "Sevilla",
+   "p1": 46,
+   "px": 29,
+   "p2": 25,
+   "justa1": 2.18,
+   "justax": 3.4,
+   "justa2": 4.04,
+   "local_tabla": 17,
+   "local_fuerza": 13,
+   "vis_tabla": 5,
+   "vis_fuerza": 15
+  }
+ ],
+ "foco": {
+  "Real Madrid": {
+   "forma": [
+    {
+     "rival": "Málaga",
+     "casa": true,
+     "gf": 4,
+     "gc": 0,
+     "r": "G"
+    },
+    {
+     "rival": "Betis",
+     "casa": false,
+     "gf": 0,
+     "gc": 1,
+     "r": "P"
+    },
+    {
+     "rival": "Rayo",
+     "casa": true,
+     "gf": 4,
+     "gc": 1,
+     "r": "G"
+    },
+    {
+     "rival": "Elche",
+     "casa": false,
+     "gf": 3,
+     "gc": 2,
+     "r": "G"
+    },
+    {
+     "rival": "Atlético",
+     "casa": false,
+     "gf": 1,
+     "gc": 2,
+     "r": "P"
+    }
+   ],
+   "goles": {
+    "n": 10,
+    "mas25": 7,
+    "ambos": 6,
+    "gf_media": 2.5,
+    "gc_media": 1.0
+   },
+   "elo_hist": [
+    1768,
+    1772,
+    1777,
+    1781,
+    1768,
+    1773,
+    1777,
+    1765
+   ]
+  },
+  "Villarreal": {
+   "forma": [
+    {
+     "rival": "Alavés",
+     "casa": false,
+     "gf": 0,
+     "gc": 1,
+     "r": "P"
+    },
+    {
+     "rival": "Deportivo",
+     "casa": true,
+     "gf": 2,
+     "gc": 3,
+     "r": "P"
+    },
+    {
+     "rival": "Betis",
+     "casa": true,
+     "gf": 1,
+     "gc": 2,
+     "r": "P"
+    },
+    {
+     "rival": "Málaga",
+     "casa": false,
+     "gf": 3,
+     "gc": 1,
+     "r": "G"
+    },
+    {
+     "rival": "Levante",
+     "casa": true,
+     "gf": 3,
+     "gc": 1,
+     "r": "G"
+    }
+   ],
+   "goles": {
+    "n": 10,
+    "mas25": 8,
+    "ambos": 8,
+    "gf_media": 2.0,
+    "gc_media": 1.8
+   },
+   "elo_hist": [
+    1644,
+    1641,
+    1643,
+    1631,
+    1616,
+    1604,
+    1616,
+    1624
+   ]
+  }
+ },
+ "goles_liga": {
+  "mas25": 51.0,
+  "ambos": 56.8,
+  "goles_media": 2.75,
+  "n": 449
+ },
+ "h2h_rma_vil": [
+  {
+   "fecha": "2022-02-12",
+   "rma_casa": false,
+   "rma": 0,
+   "vil": 0
+  },
+  {
+   "fecha": "2023-01-07",
+   "rma_casa": false,
+   "rma": 1,
+   "vil": 2
+  },
+  {
+   "fecha": "2023-01-19",
+   "rma_casa": false,
+   "rma": 3,
+   "vil": 2
+  },
+  {
+   "fecha": "2023-04-08",
+   "rma_casa": true,
+   "rma": 2,
+   "vil": 3
+  },
+  {
+   "fecha": "2023-12-17",
+   "rma_casa": true,
+   "rma": 4,
+   "vil": 1
+  },
+  {
+   "fecha": "2024-05-19",
+   "rma_casa": false,
+   "rma": 4,
+   "vil": 4
+  },
+  {
+   "fecha": "2024-10-05",
+   "rma_casa": true,
+   "rma": 2,
+   "vil": 0
+  },
+  {
+   "fecha": "2025-03-15",
+   "rma_casa": false,
+   "rma": 2,
+   "vil": 1
+  },
+  {
+   "fecha": "2025-10-04",
+   "rma_casa": true,
+   "rma": 3,
+   "vil": 1
+  },
+  {
+   "fecha": "2026-01-24",
+   "rma_casa": false,
+   "rma": 2,
+   "vil": 0
+  }
+ ],
+ "arbitros": {
+  "partidos": 395,
+  "media_liga": 4.52,
+  "pct_mas45_liga": 47,
+  "lista": [
+   {
+    "nombre": "Hernandez Hernandez, Alejandro Jose",
+    "n": 18,
+    "media": 5.67,
+    "pct_mas45": 56,
+    "sigmas": 2.2
+   },
+   {
+    "nombre": "Busquets Ferrer, Mateo",
+    "n": 20,
+    "media": 5.4,
+    "pct_mas45": 60,
+    "sigmas": 1.8
+   },
+   {
+    "nombre": "Diaz de Mera Escuderos, Isidro",
+    "n": 23,
+    "media": 5.17,
+    "pct_mas45": 48,
+    "sigmas": 1.4
+   },
+   {
+    "nombre": "Galech Apezteguia, Iosu",
+    "n": 17,
+    "media": 5.06,
+    "pct_mas45": 53,
+    "sigmas": 1.0
+   },
+   {
+    "nombre": "Quintero Gonzalez, Alejandro",
+    "n": 20,
+    "media": 5.0,
+    "pct_mas45": 65,
+    "sigmas": 1.0
+   },
+   {
+    "nombre": "Gil Manzano, Jesus",
+    "n": 20,
+    "media": 4.9,
+    "pct_mas45": 60,
+    "sigmas": 0.8
+   },
+   {
+    "nombre": "Soto Grado, Cesar",
+    "n": 19,
+    "media": 4.74,
+    "pct_mas45": 47,
+    "sigmas": 0.4
+   },
+   {
+    "nombre": "Sanchez Martinez, Jose Maria",
+    "n": 18,
+    "media": 4.67,
+    "pct_mas45": 44,
+    "sigmas": 0.3
+   },
+   {
+    "nombre": "Alberola Rojas, Javier",
+    "n": 21,
+    "media": 4.57,
+    "pct_mas45": 48,
+    "sigmas": 0.1
+   },
+   {
+    "nombre": "Muniz Ruiz, Alejandro",
+    "n": 17,
+    "media": 4.47,
+    "pct_mas45": 47,
+    "sigmas": -0.1
+   },
+   {
+    "nombre": "Ortiz Arias, Miguel Angel",
+    "n": 21,
+    "media": 4.14,
+    "pct_mas45": 48,
+    "sigmas": -0.8
+   },
+   {
+    "nombre": "Sesma Espinosa, Miguel",
+    "n": 20,
+    "media": 4.1,
+    "pct_mas45": 45,
+    "sigmas": -0.9
+   },
+   {
+    "nombre": "De Burgos Bengoechea, Ricardo",
+    "n": 17,
+    "media": 4.06,
+    "pct_mas45": 29,
+    "sigmas": -0.9
+   },
+   {
+    "nombre": "Munuera Montero, Jose Luis",
+    "n": 20,
+    "media": 3.95,
+    "pct_mas45": 35,
+    "sigmas": -1.2
+   },
+   {
+    "nombre": "Martinez Munuera, Juan",
+    "n": 18,
+    "media": 3.89,
+    "pct_mas45": 33,
+    "sigmas": -1.2
+   },
+   {
+    "nombre": "Cordero Vega, Adrian",
+    "n": 15,
+    "media": 3.87,
+    "pct_mas45": 40,
+    "sigmas": -1.1
+   },
+   {
+    "nombre": "Garcia Verdura, Victor",
+    "n": 22,
+    "media": 3.27,
+    "pct_mas45": 32,
+    "sigmas": -2.6
+   },
+   {
+    "nombre": "Hernandez Maeso, Francisco Jose",
+    "n": 19,
+    "media": 3.16,
+    "pct_mas45": 21,
+    "sigmas": -2.7
+   }
+  ]
+ }
+}
