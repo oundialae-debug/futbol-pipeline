@@ -1,4 +1,4 @@
-# Pronósticos de selecciones (29/09/2026 18:08 UTC)
+# Pronósticos de selecciones (29/09/2026 18:17 UTC)
 
 Tema aparte del proyecto de ambos marcan. Por mercado: **modelo** (selecciones + nota justa de los jugadores + árbitro), **mercado** (mediana de casas sin margen) y **final** (mezcla con el peso que se aprende de los partidos ya jugados, ver `evaluacion.md`). Pronóstico = el lado más probable según final. **Cuota mínima** = 1/probabilidad final: por debajo no compensa.
 
@@ -126,23 +126,23 @@ Once real Croatia: I. Perišić, Marco Pašalić, J. Gvardiol, Petar Sučić, Di
 
 ## Luxembourg - Iceland (2026-09-29 18:45 UTC)
 
-Ranking FIFA (puntos): Luxembourg 1233, Iceland 1343. Goles esperados 1.00 - 1.28, marcador más probable 0-1. Córners esperados 7.6. Amarillas esperadas 4.1 (árbitro Jorgji, Enea, 0 partidos en nuestras ligas, x1.00). Forma del once: Luxembourg +0.00, Iceland -0.02. Partidos en el modelo: Luxembourg 15, Iceland 16.
+Ranking FIFA (puntos): Luxembourg 1233, Iceland 1343. Goles esperados 0.99 - 1.30, marcador más probable 0-1. Córners esperados 7.6. Amarillas esperadas 4.1 (árbitro Jorgji, Enea, 0 partidos en nuestras ligas, x1.00). Forma del once: Luxembourg +0.00, Iceland +0.01. Partidos en el modelo: Luxembourg 15, Iceland 16.
 
 | mercado | pronóstico | final | modelo | mercado | cuota mínima | cuota mediana | mejor cuota | casas |
 |---|---|---|---|---|---|---|---|---|
-| 1X2 | **gana Iceland** | 43% | 43% | - | 2.32 | nan | nan | 0 |
-| Sin empate | **gana Iceland (sin empate)** | 60% | 60% | - | 1.67 | nan | nan | 0 |
-| Más/menos 2.5 | **menos de 2.5 goles** | 60% | 60% | - | 1.66 | nan | nan | 0 |
+| 1X2 | **gana Iceland** | 44% | 44% | - | 2.29 | nan | nan | 0 |
+| Sin empate | **gana Iceland (sin empate)** | 61% | 61% | - | 1.65 | nan | nan | 0 |
+| Más/menos 2.5 | **menos de 2.5 goles** | 60% | 60% | - | 1.67 | nan | nan | 0 |
 | Ambos marcan | **ambos marcan: no** | 54% | 54% | - | 1.84 | nan | nan | 0 |
 | Tarjetas | **más de 3.5 tarjetas** | 53% | 53% | - | 1.89 | nan | nan | 0 |
 | Tarjetas | **menos de 4.5 tarjetas** | 62% | 62% | - | 1.61 | nan | nan | 0 |
 | Córners | **menos de 8.5 córners** | 65% | 65% | - | 1.55 | nan | nan | 0 |
 | Córners | **menos de 9.5 córners** | 75% | 75% | - | 1.33 | nan | nan | 0 |
-| Goles | **más de 1.5 goles** | 66% | 66% | - | 1.51 | nan | nan | 0 |
-| Goles | **Iceland marca primero** | 56% | 56% | - | 1.78 | nan | nan | 0 |
+| Goles | **más de 1.5 goles** | 67% | 67% | - | 1.50 | nan | nan | 0 |
+| Goles | **Iceland marca primero** | 57% | 57% | - | 1.76 | nan | nan | 0 |
 
 Once probable Luxembourg: V. Thill, A. Moris, L. Barreiro, S. Korač, D. Sinani, L. Jans, D. Carlson, Mathias Olesen, F. Bohnert, Tomas de Sousa Moreira, Aiman Dardari
-Once probable Iceland: H. Valdimarsson, H. Haraldsson, E. Ólafsson, Í. Bergmann Jóhannesson, D. Grétarsson, O. Óskarsson, V. Pálsson, S. Þórðarson, H. Magnússon, Kristian Hlynsson, Mikael Ellertsson
+Once real Iceland: H. Valdimarsson, A. Guðjohnsen, H. Haraldsson, Í. Bergmann Jóhannesson, D. Grétarsson, O. Óskarsson, V. Pálsson, S. Þórðarson, Gylfi Sigurðsson, Logi Tomasson, Mikael Ellertsson
 
 ## Slovenia - North Macedonia (2026-09-29 18:45 UTC)
 
