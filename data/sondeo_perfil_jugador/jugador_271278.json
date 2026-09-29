@@ -1,0 +1,516 @@
+{
+ "id": 271278,
+ "logo": null,
+ "name": "Andrés Fernández",
+ "fullName": "Andrés Eduardo Fernández Moreno",
+ "profile": {
+  "club": {
+   "current": "UD Almería",
+   "joinedAt": "21/07/2025",
+   "contractExpiry": "30/06/2027",
+   "latestContractExtension": null
+  },
+  "foot": "right",
+  "height": "1,85 m",
+  "fullName": "Andrés Fernández",
+  "position": {
+   "main": "Goalkeeper",
+   "secondary": null
+  },
+  "birthDate": "16/12/1986",
+  "deathDate": null,
+  "birthPlace": "Alcantarilla",
+  "citizenship": "Spain"
+ },
+ "rumours": {
+  "current": [],
+  "historical": [
+   {
+    "club": "CD Leganés",
+    "rumourDate": "04/07/2025",
+    "transferProbability": "N/A"
+   },
+   {
+    "club": "Retired",
+    "rumourDate": "28/05/2025",
+    "transferProbability": "N/A"
+   },
+   {
+    "club": "Villarreal CF",
+    "rumourDate": "11/07/2013",
+    "transferProbability": "N/A"
+   },
+   {
+    "club": "Real Madrid",
+    "rumourDate": "13/01/2013",
+    "transferProbability": "N/A"
+   }
+  ]
+ },
+ "relatedNews": [],
+ "transfers": [
+  {
+   "to": "UD Almería",
+   "fee": null,
+   "from": "Levante",
+   "type": "transfer",
+   "season": "25/26",
+   "marketValue": "€250.00K",
+   "transferDate": "Jul 21, 2025"
+  },
+  {
+   "to": "Levante",
+   "fee": null,
+   "from": "SD Huesca",
+   "type": "transfer",
+   "season": "23/24",
+   "marketValue": "€600.00K",
+   "transferDate": "Aug 18, 2023"
+  },
+  {
+   "to": "SD Huesca",
+   "fee": "€500.00K",
+   "from": "Villarreal",
+   "type": "transfer",
+   "season": "20/21",
+   "marketValue": "€800.00K",
+   "transferDate": "Aug 28, 2020"
+  },
+  {
+   "to": "Villarreal",
+   "fee": "€2.00M",
+   "from": "Porto",
+   "type": "transfer",
+   "season": "17/18",
+   "marketValue": "€1.50M",
+   "transferDate": "Jul 1, 2017"
+  },
+  {
+   "to": "Porto",
+   "fee": null,
+   "from": "Villarreal",
+   "type": "end of loan",
+   "season": "16/17",
+   "marketValue": "€1.50M",
+   "transferDate": "Jun 30, 2017"
+  },
+  {
+   "to": "Villarreal",
+   "fee": null,
+   "from": "Porto",
+   "type": "loan",
+   "season": "16/17",
+   "marketValue": "€1.50M",
+   "transferDate": "Jul 25, 2016"
+  },
+  {
+   "to": "Porto",
+   "fee": null,
+   "from": "Granada CF",
+   "type": "end of loan",
+   "season": "15/16",
+   "marketValue": "€1.50M",
+   "transferDate": "Jun 30, 2016"
+  },
+  {
+   "to": "Granada CF",
+   "fee": "€400.00K",
+   "from": "Porto",
+   "type": "loan",
+   "season": "15/16",
+   "marketValue": "€2.00M",
+   "transferDate": "Jul 18, 2015"
+  },
+  {
+   "to": "Porto",
+   "fee": "€1.60M",
+   "from": "CA Osasuna",
+   "type": "transfer",
+   "season": "14/15",
+   "marketValue": "€3.50M",
+   "transferDate": "Jul 30, 2014"
+  },
+  {
+   "to": "CA Osasuna",
+   "fee": null,
+   "from": "SD Huesca",
+   "type": "end of loan",
+   "season": "10/11",
+   "marketValue": "€600.00K",
+   "transferDate": "Jun 30, 2011"
+  },
+  {
+   "to": "SD Huesca",
+   "fee": null,
+   "from": "CA Osasuna",
+   "type": "loan",
+   "season": "10/11",
+   "marketValue": "€200.00K",
+   "transferDate": "Jul 1, 2010"
+  },
+  {
+   "to": "CA Osasuna",
+   "fee": null,
+   "from": "RCD Mallorca B ",
+   "type": "transfer",
+   "season": "07/08",
+   "marketValue": null,
+   "transferDate": "Jul 1, 2007"
+  },
+  {
+   "to": "RCD Mallorca B ",
+   "fee": null,
+   "from": "Tenerife U19",
+   "type": "transfer",
+   "season": "05/06",
+   "marketValue": null,
+   "transferDate": "Jul 1, 2005"
+  },
+  {
+   "to": "Tenerife U19",
+   "fee": null,
+   "from": "CD Tenerife You",
+   "type": "transfer",
+   "season": "03/04",
+   "marketValue": null,
+   "transferDate": "Jul 1, 2003"
+  }
+ ],
+ "marketValue": [
+  {
+   "age": 39,
+   "club": "UD Almería",
+   "value": 100000,
+   "currency": "€",
+   "recordedDate": "22/06/2026"
+  },
+  {
+   "age": 39,
+   "club": "UD Almería",
+   "value": 100000,
+   "currency": "€",
+   "recordedDate": "30/12/2025"
+  },
+  {
+   "age": 38,
+   "club": "UD Almería",
+   "value": 200000,
+   "currency": "€",
+   "recordedDate": "10/10/2025"
+  },
+  {
+   "age": 38,
+   "club": "Levante UD",
+   "value": 250000,
+   "currency": "€",
+   "recordedDate": "24/06/2025"
+  },
+  {
+   "age": 37,
+   "club": "Levante UD",
+   "value": 300000,
+   "currency": "€",
+   "recordedDate": "13/12/2024"
+  },
+  {
+   "age": 37,
+   "club": "Levante UD",
+   "value": 400000,
+   "currency": "€",
+   "recordedDate": "24/06/2024"
+  },
+  {
+   "age": 37,
+   "club": "Levante UD",
+   "value": 500000,
+   "currency": "€",
+   "recordedDate": "20/12/2023"
+  },
+  {
+   "age": 36,
+   "club": "SD Huesca",
+   "value": 600000,
+   "currency": "€",
+   "recordedDate": "14/06/2023"
+  },
+  {
+   "age": 36,
+   "club": "SD Huesca",
+   "value": 600000,
+   "currency": "€",
+   "recordedDate": "29/12/2022"
+  },
+  {
+   "age": 35,
+   "club": "SD Huesca",
+   "value": 600000,
+   "currency": "€",
+   "recordedDate": "29/06/2022"
+  },
+  {
+   "age": 35,
+   "club": "SD Huesca",
+   "value": 600000,
+   "currency": "€",
+   "recordedDate": "27/12/2021"
+  },
+  {
+   "age": 34,
+   "club": "SD Huesca",
+   "value": 600000,
+   "currency": "€",
+   "recordedDate": "10/06/2021"
+  },
+  {
+   "age": 34,
+   "club": "SD Huesca",
+   "value": 600000,
+   "currency": "€",
+   "recordedDate": "05/01/2021"
+  },
+  {
+   "age": 33,
+   "club": "SD Huesca",
+   "value": 600000,
+   "currency": "€",
+   "recordedDate": "08/10/2020"
+  },
+  {
+   "age": 33,
+   "club": "Villarreal CF",
+   "value": 800000,
+   "currency": "€",
+   "recordedDate": "08/04/2020"
+  },
+  {
+   "age": 33,
+   "club": "Villarreal CF",
+   "value": 1000000,
+   "currency": "€",
+   "recordedDate": "20/12/2019"
+  },
+  {
+   "age": 32,
+   "club": "Villarreal CF",
+   "value": 1500000,
+   "currency": "€",
+   "recordedDate": "11/06/2019"
+  },
+  {
+   "age": 32,
+   "club": "Villarreal CF",
+   "value": 800000,
+   "currency": "€",
+   "recordedDate": "21/12/2018"
+  },
+  {
+   "age": 31,
+   "club": "Villarreal CF",
+   "value": 800000,
+   "currency": "€",
+   "recordedDate": "30/05/2018"
+  },
+  {
+   "age": 31,
+   "club": "Villarreal CF",
+   "value": 1000000,
+   "currency": "€",
+   "recordedDate": "01/01/2018"
+  },
+  {
+   "age": 30,
+   "club": "Villarreal CF",
+   "value": 1500000,
+   "currency": "€",
+   "recordedDate": "05/06/2017"
+  },
+  {
+   "age": 30,
+   "club": "Villarreal CF",
+   "value": 1500000,
+   "currency": "€",
+   "recordedDate": "24/01/2017"
+  },
+  {
+   "age": 29,
+   "club": "Villarreal CF",
+   "value": 1500000,
+   "currency": "€",
+   "recordedDate": "15/08/2016"
+  },
+  {
+   "age": 29,
+   "club": "Granada CF",
+   "value": 1500000,
+   "currency": "€",
+   "recordedDate": "22/02/2016"
+  },
+  {
+   "age": 28,
+   "club": "FC Porto",
+   "value": 2000000,
+   "currency": "€",
+   "recordedDate": "01/07/2015"
+  },
+  {
+   "age": 28,
+   "club": "FC Porto",
+   "value": 3000000,
+   "currency": "€",
+   "recordedDate": "17/02/2015"
+  },
+  {
+   "age": 27,
+   "club": "CA Osasuna",
+   "value": 3500000,
+   "currency": "€",
+   "recordedDate": "24/01/2014"
+  },
+  {
+   "age": 26,
+   "club": "CA Osasuna",
+   "value": 5000000,
+   "currency": "€",
+   "recordedDate": "25/07/2013"
+  },
+  {
+   "age": 26,
+   "club": "CA Osasuna",
+   "value": 3000000,
+   "currency": "€",
+   "recordedDate": "14/06/2013"
+  },
+  {
+   "age": 26,
+   "club": "CA Osasuna",
+   "value": 3000000,
+   "currency": "€",
+   "recordedDate": "11/01/2013"
+  },
+  {
+   "age": 25,
+   "club": "CA Osasuna",
+   "value": 2000000,
+   "currency": "€",
+   "recordedDate": "19/08/2012"
+  },
+  {
+   "age": 25,
+   "club": "CA Osasuna",
+   "value": 1500000,
+   "currency": "€",
+   "recordedDate": "05/02/2012"
+  },
+  {
+   "age": 24,
+   "club": "CA Osasuna",
+   "value": 800000,
+   "currency": "€",
+   "recordedDate": "08/08/2011"
+  },
+  {
+   "age": 24,
+   "club": "SD Huesca",
+   "value": 600000,
+   "currency": "€",
+   "recordedDate": "11/02/2011"
+  },
+  {
+   "age": 23,
+   "club": "SD Huesca",
+   "value": 300000,
+   "currency": "€",
+   "recordedDate": "09/12/2010"
+  },
+  {
+   "age": 23,
+   "club": "SD Huesca",
+   "value": 200000,
+   "currency": "€",
+   "recordedDate": "20/08/2010"
+  },
+  {
+   "age": 23,
+   "club": "CA Osasuna",
+   "value": 200000,
+   "currency": "€",
+   "recordedDate": "08/04/2010"
+  },
+  {
+   "age": 22,
+   "club": "CA Osasuna",
+   "value": 200000,
+   "currency": "€",
+   "recordedDate": "02/12/2009"
+  },
+  {
+   "age": 22,
+   "club": "CA Osasuna",
+   "value": 200000,
+   "currency": "€",
+   "recordedDate": "22/07/2009"
+  },
+  {
+   "age": 22,
+   "club": "CA Osasuna",
+   "value": 200000,
+   "currency": "€",
+   "recordedDate": "21/01/2009"
+  },
+  {
+   "age": 21,
+   "club": "CA Osasuna",
+   "value": 300000,
+   "currency": "€",
+   "recordedDate": "22/07/2008"
+  },
+  {
+   "age": 21,
+   "club": "CA Osasuna",
+   "value": 300000,
+   "currency": "€",
+   "recordedDate": "04/02/2008"
+  },
+  {
+   "age": 20,
+   "club": "CA Osasuna",
+   "value": 200000,
+   "currency": "€",
+   "recordedDate": "28/08/2007"
+  }
+ ],
+ "injuries": [
+  {
+   "reason": "Adductor injury",
+   "season": "2024",
+   "toDate": "23.11.2023",
+   "fromDate": "04.11.2023",
+   "missedGames": 3,
+   "absentDurationInDays": 20
+  },
+  {
+   "reason": "Corona virus",
+   "season": "2021",
+   "toDate": "22.01.2021",
+   "fromDate": "08.01.2021",
+   "missedGames": 2,
+   "absentDurationInDays": 15
+  },
+  {
+   "reason": "Cruciate ligament tear",
+   "season": "2018",
+   "toDate": "26.03.2018",
+   "fromDate": "26.08.2017",
+   "missedGames": 39,
+   "absentDurationInDays": 213
+  },
+  {
+   "reason": "Back injury",
+   "season": "2016",
+   "toDate": "13.10.2015",
+   "fromDate": "07.10.2015",
+   "missedGames": null,
+   "absentDurationInDays": 7
+  }
+ ]
+}

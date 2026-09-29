@@ -1,0 +1,286 @@
+{
+ "id": 7541877,
+ "logo": null,
+ "name": "Alfonso Herrero",
+ "fullName": "Alfonso Herrero Peinador",
+ "profile": {
+  "club": {
+   "current": "Málaga CF",
+   "joinedAt": "01/07/2023",
+   "contractExpiry": "30/06/2028",
+   "latestContractExtension": "04/02/2025"
+  },
+  "foot": "right",
+  "height": "1,83 m",
+  "fullName": "Alfonso Herrero",
+  "position": {
+   "main": "Goalkeeper",
+   "secondary": null
+  },
+  "birthDate": "21/04/1994",
+  "deathDate": null,
+  "birthPlace": "Toledo",
+  "citizenship": "Spain"
+ },
+ "rumours": {
+  "current": [],
+  "historical": []
+ },
+ "relatedNews": [],
+ "transfers": [
+  {
+   "to": "Málaga CF",
+   "fee": null,
+   "from": "CD Mirandés",
+   "type": "transfer",
+   "season": "23/24",
+   "marketValue": "€500.00K",
+   "transferDate": "Jul 1, 2023"
+  },
+  {
+   "to": "CD Mirandés",
+   "fee": null,
+   "from": "Burgos CF",
+   "type": "transfer",
+   "season": "22/23",
+   "marketValue": "€500.00K",
+   "transferDate": "Jul 14, 2022"
+  },
+  {
+   "to": "Burgos CF",
+   "fee": null,
+   "from": "Marbella FC",
+   "type": "transfer",
+   "season": "21/22",
+   "marketValue": "€250.00K",
+   "transferDate": "Jul 5, 2021"
+  },
+  {
+   "to": "Marbella FC",
+   "fee": null,
+   "from": "Real Oviedo",
+   "type": "transfer",
+   "season": "20/21",
+   "marketValue": "€300.00K",
+   "transferDate": "Aug 29, 2020"
+  },
+  {
+   "to": "Real Oviedo",
+   "fee": null,
+   "from": "Oviedo Vetusta",
+   "type": "transfer",
+   "season": "17/18",
+   "marketValue": null,
+   "transferDate": "Jul 1, 2017"
+  },
+  {
+   "to": "Oviedo Vetusta",
+   "fee": null,
+   "from": "RM Castilla",
+   "type": "transfer",
+   "season": "16/17",
+   "marketValue": null,
+   "transferDate": "Jul 22, 2016"
+  },
+  {
+   "to": "RM Castilla",
+   "fee": null,
+   "from": "Real Madrid C",
+   "type": "transfer",
+   "season": "14/15",
+   "marketValue": "€200.00K",
+   "transferDate": "Jul 1, 2014"
+  },
+  {
+   "to": "Real Madrid C",
+   "fee": null,
+   "from": "Real Madrid U19",
+   "type": "transfer",
+   "season": "13/14",
+   "marketValue": "€200.00K",
+   "transferDate": "Jul 1, 2013"
+  },
+  {
+   "to": "Real Madrid U19",
+   "fee": null,
+   "from": "Real Madrid U18",
+   "type": "transfer",
+   "season": "12/13",
+   "marketValue": null,
+   "transferDate": "Jul 1, 2012"
+  },
+  {
+   "to": "Real Madrid U18",
+   "fee": null,
+   "from": "Real Madrid U17",
+   "type": "transfer",
+   "season": "10/11",
+   "marketValue": null,
+   "transferDate": "Jul 1, 2010"
+  }
+ ],
+ "marketValue": [
+  {
+   "age": 32,
+   "club": "Málaga CF",
+   "value": 400000,
+   "currency": "€",
+   "recordedDate": "22/06/2026"
+  },
+  {
+   "age": 31,
+   "club": "Málaga CF",
+   "value": 400000,
+   "currency": "€",
+   "recordedDate": "30/12/2025"
+  },
+  {
+   "age": 31,
+   "club": "Málaga CF",
+   "value": 400000,
+   "currency": "€",
+   "recordedDate": "24/06/2025"
+  },
+  {
+   "age": 30,
+   "club": "Málaga CF",
+   "value": 400000,
+   "currency": "€",
+   "recordedDate": "13/12/2024"
+  },
+  {
+   "age": 30,
+   "club": "Málaga CF",
+   "value": 400000,
+   "currency": "€",
+   "recordedDate": "24/06/2024"
+  },
+  {
+   "age": 29,
+   "club": "Málaga CF",
+   "value": 400000,
+   "currency": "€",
+   "recordedDate": "26/03/2024"
+  },
+  {
+   "age": 29,
+   "club": "Málaga CF",
+   "value": 600000,
+   "currency": "€",
+   "recordedDate": "20/12/2023"
+  },
+  {
+   "age": 29,
+   "club": "CD Mirandés",
+   "value": 500000,
+   "currency": "€",
+   "recordedDate": "14/06/2023"
+  },
+  {
+   "age": 28,
+   "club": "CD Mirandés",
+   "value": 500000,
+   "currency": "€",
+   "recordedDate": "29/12/2022"
+  },
+  {
+   "age": 28,
+   "club": "Burgos CF",
+   "value": 500000,
+   "currency": "€",
+   "recordedDate": "29/06/2022"
+  },
+  {
+   "age": 27,
+   "club": "Burgos CF",
+   "value": 500000,
+   "currency": "€",
+   "recordedDate": "27/12/2021"
+  },
+  {
+   "age": 27,
+   "club": "Burgos CF",
+   "value": 500000,
+   "currency": "€",
+   "recordedDate": "13/10/2021"
+  },
+  {
+   "age": 27,
+   "club": "Marbella FC",
+   "value": 250000,
+   "currency": "€",
+   "recordedDate": "30/06/2021"
+  },
+  {
+   "age": 26,
+   "club": "Marbella FC",
+   "value": 300000,
+   "currency": "€",
+   "recordedDate": "08/01/2021"
+  },
+  {
+   "age": 26,
+   "club": "Marbella FC",
+   "value": 300000,
+   "currency": "€",
+   "recordedDate": "08/10/2020"
+  },
+  {
+   "age": 26,
+   "club": "Real Oviedo",
+   "value": 300000,
+   "currency": "€",
+   "recordedDate": "23/07/2020"
+  },
+  {
+   "age": 25,
+   "club": "Real Oviedo",
+   "value": 300000,
+   "currency": "€",
+   "recordedDate": "20/12/2019"
+  },
+  {
+   "age": 25,
+   "club": "Real Oviedo",
+   "value": 300000,
+   "currency": "€",
+   "recordedDate": "29/06/2019"
+  },
+  {
+   "age": 24,
+   "club": "Real Oviedo",
+   "value": 300000,
+   "currency": "€",
+   "recordedDate": "19/02/2019"
+  },
+  {
+   "age": 24,
+   "club": "Real Oviedo",
+   "value": 300000,
+   "currency": "€",
+   "recordedDate": "30/05/2018"
+  },
+  {
+   "age": 23,
+   "club": "Real Oviedo",
+   "value": 300000,
+   "currency": "€",
+   "recordedDate": "01/01/2018"
+  },
+  {
+   "age": 23,
+   "club": "Real Oviedo",
+   "value": 100000,
+   "currency": "€",
+   "recordedDate": "02/08/2017"
+  },
+  {
+   "age": 19,
+   "club": "Real Madrid U19",
+   "value": 200000,
+   "currency": "€",
+   "recordedDate": "22/06/2013"
+  }
+ ],
+ "injuries": []
+}
