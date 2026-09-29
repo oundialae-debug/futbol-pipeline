@@ -1,37 +1,38 @@
 seleccion,jugador_id,jugador,posicion,once_probable,fuente_once,once_habitual,club_partidos,club_min,club_nota_bruta,club_goles,club_asist,prev_ga90_25_26,sel_partidos,sel_min,sel_nota_bruta,club_ahora,seleccion_ajustada,nota,sin_datos_club
-Albania,44400090,K. Asllani,Midfielder,True,probable,True,0,0,,,,0.17,11,989,7.53,7.32,7.46,7.38,True
-Albania,43568847,Mario Mitaj,Defender,True,probable,True,0,0,,,,,8,638,7.32,7.14,7.24,7.18,True
-Albania,51191,Elseid Hysaj,Defender,True,probable,True,0,0,,,,0.0,8,654,7.26,7.14,7.21,7.17,True
-Albania,4897935,B. Djimsiti,Defender,True,probable,True,0,0,,,,0.03,10,877,6.98,6.96,6.97,6.97,True
-Albania,3373587,Qazim Laci,Midfielder,True,probable,True,0,0,,,,,10,777,6.9,6.92,6.91,6.91,True
-Albania,295589,T. Strakosha,Goalkeeper,True,probable,True,0,0,,,,0.0,9,807,6.85,6.89,6.87,6.89,True
-Albania,2319359,Myrto Uzuni,Forward,True,probable,True,0,0,,,,,9,461,6.72,6.84,6.78,6.82,True
-Albania,2307123,Ardian Ismajli,Defender,True,probable,True,4,253,6.79,0.0,0.0,0.04,4,347,6.87,6.8,6.84,6.81,False
-Albania,17065027,Arber Hoxha,Midfielder,True,probable,True,0,0,,,,,11,698,6.64,6.76,6.69,6.73,True
-Albania,7821051,N. Bajrami,Midfielder,True,probable,True,0,0,,,,0.52,9,397,6.49,6.76,6.66,6.72,True
-Albania,2523507,Ylber Ramadani,Midfielder,True,probable,True,0,0,,,,0.03,5,344,6.52,6.74,6.63,6.69,True
-Albania,585872,Ernest Muçi,Midfielder,False,probable,False,0,0,,,,,3,117,7.98,7.27,7.49,7.36,True
-Albania,595854,Juljan Shehu,Midfielder,False,probable,False,0,0,,,,,9,662,7.31,7.12,7.21,7.16,True
-Albania,601811,Alen Sherri,Goalkeeper,False,probable,False,0,0,,,,0.0,1,90,7.3,7.03,7.09,7.05,True
-Albania,7522879,R. Manaj,Forward,False,probable,False,0,0,,,,,7,547,6.95,6.94,6.95,6.95,True
-Albania,5067468,Elhan Kastrati,Goalkeeper,False,probable,False,0,0,,,,,1,8,6.57,6.94,6.93,6.94,True
-Albania,4310446,E. Mihaj,Defender,False,probable,False,0,0,,,,,0,1,,6.94,6.94,6.94,True
-Albania,628376,Andi Hadroj,Defender,False,probable,False,0,0,,,,,1,10,7.03,6.94,6.94,6.94,True
-Albania,10960873,Indrit Tuci,Forward,False,probable,False,0,0,,,,,1,13,6.72,6.93,6.93,6.93,True
-Albania,4897130,E. Berisha,Goalkeeper,False,probable,False,0,0,,,,0.0,1,90,6.92,6.93,6.93,6.93,True
-Albania,44767653,Adrion Pajaziti,Midfielder,False,probable,False,0,0,,,,,5,60,6.65,6.92,6.89,6.91,True
-Albania,52390037,C. Shpendi,Forward,False,probable,False,0,0,,,,,1,10,6.25,6.91,6.89,6.91,True
-Albania,7819280,Arlind Ajeti,Defender,False,probable,False,0,0,,,,,8,648,6.86,6.9,6.88,6.89,True
-Albania,4978918,M. Kumbulla,Defender,False,probable,False,0,0,,,,0.0,2,119,6.57,6.9,6.87,6.89,True
-Albania,557858,Jasir Asani,Midfielder,False,probable,False,0,0,,,,,1,78,6.04,6.89,6.85,6.88,True
-Albania,2359609,M. Daku,Forward,False,probable,False,0,0,,,,,6,108,6.61,6.87,6.82,6.85,True
-Albania,53951576,Luis Hasa,Midfielder,False,probable,False,2,42,6.62,0.0,0.0,,1,12,6.86,6.85,6.85,6.85,False
-Albania,6951651,Naser Aliji,Defender,False,probable,False,0,0,,,,,3,270,6.56,6.86,6.8,6.83,True
-Albania,7840532,Taulant Seferi,Midfielder,False,probable,False,0,0,,,,,1,61,6.43,6.81,6.71,6.77,True
-Albania,46102343,A. Mehmeti,Forward,False,probable,False,0,0,,,,,2,77,6.3,6.79,6.67,6.74,True
-Albania,22350496,A. Broja,Forward,False,probable,False,0,0,,,,0.27,10,569,6.56,6.77,6.68,6.73,True
-Albania,4336850,S. Pilios,Defender,False,probable,False,0,0,,,,,2,112,6.12,6.65,6.46,6.57,True
-Albania,3303874,I. Balliu,Defender,False,probable,False,6,229,6.08,0.0,0.0,0.06,4,339,6.8,6.47,6.55,6.5,False
+Albania,44400090,K. Asllani,Midfielder,True,real,True,0,0,,,,0.17,11,989,7.53,7.32,7.46,7.38,True
+Albania,585872,Ernest Muçi,Midfielder,True,real,False,0,0,,,,,3,117,7.98,7.27,7.49,7.36,True
+Albania,43568847,Mario Mitaj,Defender,True,real,True,0,0,,,,,8,638,7.32,7.14,7.24,7.18,True
+Albania,595854,Juljan Shehu,Midfielder,True,real,False,0,0,,,,,9,662,7.31,7.12,7.21,7.16,True
+Albania,601811,Alen Sherri,Goalkeeper,True,real,False,0,0,,,,0.0,1,90,7.3,7.03,7.09,7.05,True
+Albania,4897935,B. Djimsiti,Defender,True,real,True,0,0,,,,0.03,10,877,6.98,6.96,6.97,6.97,True
+Albania,7522879,R. Manaj,Forward,True,real,False,0,0,,,,,7,547,6.95,6.94,6.95,6.95,True
+Albania,-66286201,Sina,Defender,True,real,False,0,0,,,,,0,0,,6.94,6.94,6.94,True
+Albania,2319359,Myrto Uzuni,Forward,True,real,True,0,0,,,,,9,461,6.72,6.84,6.78,6.82,True
+Albania,2307123,Ardian Ismajli,Defender,True,real,True,4,253,6.79,0.0,0.0,0.04,4,347,6.87,6.8,6.84,6.81,False
+Albania,46102343,A. Mehmeti,Forward,True,real,False,0,0,,,,,2,77,6.3,6.79,6.67,6.74,True
+Albania,51191,Elseid Hysaj,Defender,False,real,True,0,0,,,,0.0,8,654,7.26,7.14,7.21,7.17,True
+Albania,5067468,Elhan Kastrati,Goalkeeper,False,real,False,0,0,,,,,1,8,6.57,6.94,6.93,6.94,True
+Albania,4310446,E. Mihaj,Defender,False,real,False,0,0,,,,,0,1,,6.94,6.94,6.94,True
+Albania,628376,Andi Hadroj,Defender,False,real,False,0,0,,,,,1,10,7.03,6.94,6.94,6.94,True
+Albania,10960873,Indrit Tuci,Forward,False,real,False,0,0,,,,,1,13,6.72,6.93,6.93,6.93,True
+Albania,4897130,E. Berisha,Goalkeeper,False,real,False,0,0,,,,0.0,1,90,6.92,6.93,6.93,6.93,True
+Albania,3373587,Qazim Laci,Midfielder,False,real,True,0,0,,,,,10,777,6.9,6.92,6.91,6.91,True
+Albania,44767653,Adrion Pajaziti,Midfielder,False,real,False,0,0,,,,,5,60,6.65,6.92,6.89,6.91,True
+Albania,52390037,C. Shpendi,Forward,False,real,False,0,0,,,,,1,10,6.25,6.91,6.89,6.91,True
+Albania,295589,T. Strakosha,Goalkeeper,False,real,True,0,0,,,,0.0,9,807,6.85,6.89,6.87,6.89,True
+Albania,7819280,Arlind Ajeti,Defender,False,real,False,0,0,,,,,8,648,6.86,6.9,6.88,6.89,True
+Albania,4978918,M. Kumbulla,Defender,False,real,False,0,0,,,,0.0,2,119,6.57,6.9,6.87,6.89,True
+Albania,557858,Jasir Asani,Midfielder,False,real,False,0,0,,,,,1,78,6.04,6.89,6.85,6.88,True
+Albania,2359609,M. Daku,Forward,False,real,False,0,0,,,,,6,108,6.61,6.87,6.82,6.85,True
+Albania,53951576,Luis Hasa,Midfielder,False,real,False,2,42,6.62,0.0,0.0,,1,12,6.86,6.85,6.85,6.85,False
+Albania,6951651,Naser Aliji,Defender,False,real,False,0,0,,,,,3,270,6.56,6.86,6.8,6.83,True
+Albania,7840532,Taulant Seferi,Midfielder,False,real,False,0,0,,,,,1,61,6.43,6.81,6.71,6.77,True
+Albania,22350496,A. Broja,Forward,False,real,False,0,0,,,,0.27,10,569,6.56,6.77,6.68,6.73,True
+Albania,17065027,Arber Hoxha,Midfielder,False,real,True,0,0,,,,,11,698,6.64,6.76,6.69,6.73,True
+Albania,7821051,N. Bajrami,Midfielder,False,real,True,0,0,,,,0.52,9,397,6.49,6.76,6.66,6.72,True
+Albania,2523507,Ylber Ramadani,Midfielder,False,real,True,0,0,,,,0.03,5,344,6.52,6.74,6.63,6.69,True
+Albania,4336850,S. Pilios,Defender,False,real,False,0,0,,,,,2,112,6.12,6.65,6.46,6.57,True
+Albania,3303874,I. Balliu,Defender,False,real,False,6,229,6.08,0.0,0.0,0.06,4,339,6.8,6.47,6.55,6.5,False
 Belarus,52337551,F. Lapoukhov,Goalkeeper,True,real,True,0,0,,,,,7,630,6.7,6.62,6.66,6.64,True
 Belarus,34842164,German Barkovskiy,Forward,True,real,True,0,0,,,,,7,415,6.65,6.58,6.61,6.59,True
 Belarus,1284129,K. Pechenin,Defender,True,real,True,0,0,,,,,7,612,6.6,6.56,6.58,6.57,True
@@ -519,77 +520,79 @@ Moldova,6846518,V. Raţă,Midfielder,False,real,True,0,0,,,,,8,588,6.3,6.38,6.34
 Moldova,9027746,Sergiu Plătică,Midfielder,False,real,False,0,0,,,,,7,339,6.08,6.35,6.27,6.32,True
 Moldova,22894998,N. Cleșcenco,Midfielder,False,real,False,0,0,,,,,1,55,5.93,6.34,6.24,6.3,True
 Moldova,51283806,N. Moțpan,Midfielder,False,real,False,0,0,,,,,6,387,6.01,6.27,6.16,6.22,True
-North Macedonia,26133191,Imran Fetai,Defender,True,probable,True,0,0,,,,,2,111,7.37,6.8,6.94,6.86,True
-North Macedonia,7652001,S. Dimitrievski,Goalkeeper,True,probable,True,7,630,6.67,0.0,0.0,0.0,13,1162,6.77,6.79,6.78,6.79,False
-North Macedonia,16981468,V. Musliu,Defender,True,probable,True,0,0,,,,,10,800,6.76,6.7,6.73,6.71,True
-North Macedonia,1378314,G. Zajkov,Defender,True,probable,True,0,0,,,,,12,988,6.73,6.68,6.71,6.69,True
-North Macedonia,17639958,B. Miovski,Forward,True,probable,True,0,0,,,,0.67,11,695,6.73,6.67,6.71,6.69,True
-North Macedonia,17032183,D. Churlinov,Forward,True,probable,True,0,0,,,,,11,556,6.73,6.67,6.7,6.68,True
-North Macedonia,7641375,Enis Bardhi,Midfielder,True,probable,True,0,0,,,,,12,990,6.71,6.67,6.69,6.68,True
-North Macedonia,23513238,Agon Elezi,Midfielder,True,probable,True,0,0,,,,,4,209,6.7,6.64,6.66,6.65,True
-North Macedonia,218792,Eljif Elmas,Midfielder,True,probable,True,4,118,6.37,0.0,0.0,0.18,13,1041,6.28,6.73,6.43,6.61,False
-North Macedonia,44741410,E. Rastoder,Forward,True,probable,True,0,0,,,,,8,318,6.37,6.5,6.44,6.48,True
-North Macedonia,17636416,Sebastian Herrera,Defender,True,probable,True,0,0,,,,,3,270,6.05,6.33,6.19,6.27,True
-North Macedonia,3080567,E. Alioski,Defender,False,probable,False,0,0,,,,,9,731,7.22,6.9,7.06,6.96,True
-North Macedonia,5081797,Aleksandar Trajkovski,Forward,False,probable,False,0,0,,,,,5,268,7.32,6.76,6.88,6.81,True
-North Macedonia,9129498,I. Alimi,Midfielder,False,probable,False,0,0,,,,,9,478,6.84,6.7,6.76,6.73,True
-North Macedonia,32367433,Luka Stankovski,Midfielder,False,probable,False,0,0,,,,,3,99,6.91,6.65,6.69,6.67,True
-North Macedonia,17252753,S. Alomeroviс,Defender,False,probable,False,0,0,,,,,1,25,6.98,6.64,6.66,6.65,True
-North Macedonia,47224030,Andrej Stojchevski,Defender,False,probable,False,0,0,,,,,7,457,6.66,6.63,6.64,6.63,True
-North Macedonia,48944154,S. Despotovski,Defender,False,probable,False,0,0,,,,,4,249,6.66,6.62,6.63,6.62,True
-North Macedonia,17636738,Ljupche Doriev,Forward,False,probable,False,0,0,,,,,2,56,6.68,6.62,6.63,6.62,True
-North Macedonia,377860,Boban Nikolov,Midfielder,False,probable,False,0,0,,,,,2,55,6.68,6.62,6.63,6.62,True
-North Macedonia,8087345,Jani Atanasov,Midfielder,False,probable,False,0,0,,,,,9,433,6.61,6.61,6.61,6.61,True
-North Macedonia,16981629,Egzon Bejtulai,Defender,False,probable,False,0,0,,,,,1,19,6.71,6.61,6.62,6.61,True
-North Macedonia,17631425,Darko Dodev,Forward,False,probable,False,0,0,,,,,1,25,6.62,6.61,6.61,6.61,True
-North Macedonia,17652355,Bojan Ilievski,Defender,False,probable,False,0,0,,,,,7,531,6.59,6.6,6.6,6.6,True
-North Macedonia,22068907,D. Toševski,Forward,False,probable,False,0,0,,,,,1,27,6.23,6.6,6.59,6.6,True
-North Macedonia,12962425,Kristijan Trapanovski,Midfielder,False,probable,False,0,0,,,,,1,10,6.26,6.6,6.6,6.6,True
-North Macedonia,2300844,Milan Ristovski,Forward,False,probable,False,0,0,,,,,8,324,6.59,6.6,6.59,6.6,True
-North Macedonia,54367922,Reshat Ramadani,Midfielder,False,probable,False,0,0,,,,,2,30,6.53,6.6,6.6,6.6,True
-North Macedonia,22068746,N. Serafimov,Defender,False,probable,False,0,0,,,,,7,339,6.54,6.58,6.57,6.58,True
-North Macedonia,17637865,Bojan Dimoski,Defender,False,probable,False,0,0,,,,,2,37,5.92,6.59,6.57,6.58,True
-North Macedonia,2599177,L. Qamili,Forward,False,probable,False,0,0,,,,,4,179,6.46,6.57,6.54,6.56,True
-North Macedonia,4313666,Davor Taleski,Goalkeeper,False,probable,False,0,0,,,,,1,25,6.21,6.57,6.54,6.56,True
-North Macedonia,9853998,Tihomir Kostadinov,Midfielder,False,probable,False,0,0,,,,,9,533,6.48,6.55,6.52,6.54,True
-North Macedonia,2298912,Darko Velkovski,Defender,False,probable,False,0,0,,,,,6,284,6.45,6.55,6.51,6.54,True
-North Macedonia,16482207,D. Musovski,Forward,False,probable,False,0,0,,,,,2,58,6.23,6.55,6.51,6.54,True
-North Macedonia,19175737,S. Emini,Midfielder,False,probable,False,0,0,,,,,1,46,6.25,6.56,6.51,6.54,True
-North Macedonia,54773642,Anes Meljichi,Defender,False,probable,False,0,0,,,,,1,34,6.27,6.55,6.51,6.54,True
-North Macedonia,34815921,Jovan Manev,Defender,False,probable,False,0,0,,,,,1,47,6.15,6.54,6.49,6.52,True
-North Macedonia,79063068,M. Gashtarov,Midfielder,False,probable,False,0,0,,,,,1,90,6.38,6.53,6.48,6.51,True
-North Macedonia,48997445,Azer Omeragikj,Forward,False,probable,False,0,0,,,,,2,100,6.19,6.48,6.39,6.45,True
-North Macedonia,26320917,Dimitar Mitrovski,Midfielder,False,probable,False,0,0,,,,,3,108,6.04,6.47,6.37,6.43,True
-North Macedonia,1807862,Stefan Aškovski,Defender,False,probable,False,0,0,,,,,4,176,5.84,6.46,6.34,6.41,True
-San Marino,5026735,Edoardo Colombo,Goalkeeper,True,probable,True,0,0,,,,,7,630,6.76,6.39,6.55,6.45,True
-San Marino,4991154,Nicola Nanni,Forward,True,probable,True,0,0,,,,,8,684,6.5,6.32,6.41,6.36,True
-San Marino,49053312,Samuele Zannoni,Midfielder,True,probable,True,0,0,,,,,8,636,6.41,6.24,6.31,6.26,True
-San Marino,5163424,Filippo Berardi,Forward,True,probable,True,0,0,,,,,5,339,6.26,6.15,6.18,6.16,True
-San Marino,55105946,Matteo Valli Casadei,Midfielder,True,probable,True,0,0,,,,,8,323,6.2,6.14,6.16,6.15,True
-San Marino,58204391,Lorenzo Capicchioni,Midfielder,True,probable,True,0,0,,,,,8,501,6.13,6.12,6.12,6.12,True
-San Marino,63469413,Alberto Riccardi,Defender,True,probable,True,0,0,,,,,6,459,5.89,6.04,5.99,6.02,True
-San Marino,9031610,Michele Cevoli,Defender,True,probable,True,0,0,,,,,7,606,5.85,5.98,5.92,5.96,True
-San Marino,32872007,Giacomo Valentini,Defender,True,probable,True,0,0,,,,,5,367,5.62,5.95,5.85,5.91,True
-San Marino,9032898,Alessandro Golinucci,Midfielder,True,probable,True,0,0,,,,,8,607,5.64,5.89,5.78,5.85,True
-San Marino,27243769,Alessandro Tosi,Defender,True,probable,True,0,0,,,,,6,387,5.17,5.69,5.46,5.6,True
-San Marino,63464583,Nicolas Giacopetti,Forward,False,probable,False,0,0,,,,,6,207,6.64,6.29,6.4,6.33,True
-San Marino,34742022,Andrea Contadini,Forward,False,probable,False,0,0,,,,,7,373,6.56,6.23,6.32,6.27,True
-San Marino,55092100,T. Benvenuti,Defender,False,probable,False,0,0,,,,,4,360,6.56,6.21,6.29,6.24,True
-San Marino,56069048,Lorenzo Lazzari,Forward,False,probable,False,0,0,,,,,4,246,6.55,6.21,6.28,6.24,True
-San Marino,55106107,Nicko Sensoli,Forward,False,probable,False,0,0,,,,,5,192,6.64,6.19,6.25,6.22,True
-San Marino,56075488,Pietro Amici,Goalkeeper,False,probable,False,0,0,,,,,1,90,6.55,6.14,6.16,6.15,True
-San Marino,32171335,Dante Rossi,Defender,False,probable,False,0,0,,,,,2,135,6.28,6.14,6.16,6.15,True
-San Marino,34746852,Filippo Fabbri,Defender,False,probable,False,0,0,,,,,4,328,6.2,6.14,6.15,6.14,True
-San Marino,9034186,Matteo Vitaioli,Forward,False,probable,False,0,0,,,,,2,38,6.41,6.13,6.14,6.13,True
-San Marino,53424301,Simone Santi,Midfielder,False,probable,False,0,0,,,,,1,14,6.49,6.12,6.12,6.12,True
-San Marino,55106268,Giacomo Benvenuti,Defender,False,probable,False,0,0,,,,,6,264,6.11,6.11,6.11,6.11,True
-San Marino,63464905,Gabriel Capicchioni,Forward,False,probable,False,0,0,,,,,3,64,6.11,6.11,6.11,6.11,True
-San Marino,92045464,Matteo Sammaritani,Defender,False,probable,False,0,0,,,,,2,54,6.13,6.11,6.12,6.11,True
-San Marino,56075649,Marco Pasolini,Defender,False,probable,False,0,0,,,,,1,96,6.0,6.08,6.05,6.07,True
-San Marino,17018015,Samuel Pancotti,Forward,False,probable,False,0,0,,,,,2,118,5.96,6.08,6.05,6.07,True
-San Marino,34746530,Giacomo Matteoni,Defender,False,probable,False,0,0,,,,,2,126,5.83,6.07,6.03,6.05,True
-San Marino,9033542,Marcello Mularoni,Midfielder,False,probable,False,0,0,,,,,6,197,5.87,6.04,5.99,6.02,True
-San Marino,70633108,Simone Giocondi,Defender,False,probable,False,0,0,,,,,1,20,5.41,6.04,5.98,6.02,True
+North Macedonia,7652001,S. Dimitrievski,Goalkeeper,True,real,True,7,630,6.67,0.0,0.0,0.0,13,1162,6.77,6.79,6.78,6.79,False
+North Macedonia,23513238,Agon Elezi,Midfielder,True,real,True,0,0,,,,,4,209,6.7,6.64,6.66,6.65,True
+North Macedonia,17252753,S. Alomeroviс,Defender,True,real,False,0,0,,,,,1,25,6.98,6.64,6.66,6.65,True
+North Macedonia,47224030,Andrej Stojchevski,Defender,True,real,False,0,0,,,,,7,457,6.66,6.63,6.64,6.63,True
+North Macedonia,218792,Eljif Elmas,Midfielder,True,real,True,4,118,6.37,0.0,0.0,0.18,13,1041,6.28,6.73,6.43,6.61,False
+North Macedonia,8087345,Jani Atanasov,Midfielder,True,real,False,0,0,,,,,9,433,6.61,6.61,6.61,6.61,True
+North Macedonia,24728788,Mario Mladenovski,Defender,True,real,False,0,0,,,,,0,0,,6.61,6.61,6.61,True
+North Macedonia,54773642,Anes Meljichi,Defender,True,real,False,0,0,,,,,1,34,6.27,6.55,6.51,6.54,True
+North Macedonia,79063068,M. Gashtarov,Midfielder,True,real,False,0,0,,,,,1,90,6.38,6.53,6.48,6.51,True
+North Macedonia,48997445,Azer Omeragikj,Forward,True,real,False,0,0,,,,,2,100,6.19,6.48,6.39,6.45,True
+North Macedonia,26320917,Dimitar Mitrovski,Midfielder,True,real,False,0,0,,,,,3,108,6.04,6.47,6.37,6.43,True
+North Macedonia,3080567,E. Alioski,Defender,False,real,False,0,0,,,,,9,731,7.22,6.9,7.06,6.96,True
+North Macedonia,26133191,Imran Fetai,Defender,False,real,True,0,0,,,,,2,111,7.37,6.8,6.94,6.86,True
+North Macedonia,5081797,Aleksandar Trajkovski,Forward,False,real,False,0,0,,,,,5,268,7.32,6.76,6.88,6.81,True
+North Macedonia,9129498,I. Alimi,Midfielder,False,real,False,0,0,,,,,9,478,6.84,6.7,6.76,6.73,True
+North Macedonia,16981468,V. Musliu,Defender,False,real,True,0,0,,,,,10,800,6.76,6.7,6.73,6.71,True
+North Macedonia,1378314,G. Zajkov,Defender,False,real,True,0,0,,,,,12,988,6.73,6.68,6.71,6.69,True
+North Macedonia,17639958,B. Miovski,Forward,False,real,True,0,0,,,,0.67,11,695,6.73,6.67,6.71,6.69,True
+North Macedonia,17032183,D. Churlinov,Forward,False,real,True,0,0,,,,,11,556,6.73,6.67,6.7,6.68,True
+North Macedonia,7641375,Enis Bardhi,Midfielder,False,real,True,0,0,,,,,12,990,6.71,6.67,6.69,6.68,True
+North Macedonia,32367433,Luka Stankovski,Midfielder,False,real,False,0,0,,,,,3,99,6.91,6.65,6.69,6.67,True
+North Macedonia,48944154,S. Despotovski,Defender,False,real,False,0,0,,,,,4,249,6.66,6.62,6.63,6.62,True
+North Macedonia,17636738,Ljupche Doriev,Forward,False,real,False,0,0,,,,,2,56,6.68,6.62,6.63,6.62,True
+North Macedonia,377860,Boban Nikolov,Midfielder,False,real,False,0,0,,,,,2,55,6.68,6.62,6.63,6.62,True
+North Macedonia,16981629,Egzon Bejtulai,Defender,False,real,False,0,0,,,,,1,19,6.71,6.61,6.62,6.61,True
+North Macedonia,17631425,Darko Dodev,Forward,False,real,False,0,0,,,,,1,25,6.62,6.61,6.61,6.61,True
+North Macedonia,17652355,Bojan Ilievski,Defender,False,real,False,0,0,,,,,7,531,6.59,6.6,6.6,6.6,True
+North Macedonia,22068907,D. Toševski,Forward,False,real,False,0,0,,,,,1,27,6.23,6.6,6.59,6.6,True
+North Macedonia,12962425,Kristijan Trapanovski,Midfielder,False,real,False,0,0,,,,,1,10,6.26,6.6,6.6,6.6,True
+North Macedonia,2300844,Milan Ristovski,Forward,False,real,False,0,0,,,,,8,324,6.59,6.6,6.59,6.6,True
+North Macedonia,54367922,Reshat Ramadani,Midfielder,False,real,False,0,0,,,,,2,30,6.53,6.6,6.6,6.6,True
+North Macedonia,22068746,N. Serafimov,Defender,False,real,False,0,0,,,,,7,339,6.54,6.58,6.57,6.58,True
+North Macedonia,17637865,Bojan Dimoski,Defender,False,real,False,0,0,,,,,2,37,5.92,6.59,6.57,6.58,True
+North Macedonia,2599177,L. Qamili,Forward,False,real,False,0,0,,,,,4,179,6.46,6.57,6.54,6.56,True
+North Macedonia,4313666,Davor Taleski,Goalkeeper,False,real,False,0,0,,,,,1,25,6.21,6.57,6.54,6.56,True
+North Macedonia,9853998,Tihomir Kostadinov,Midfielder,False,real,False,0,0,,,,,9,533,6.48,6.55,6.52,6.54,True
+North Macedonia,2298912,Darko Velkovski,Defender,False,real,False,0,0,,,,,6,284,6.45,6.55,6.51,6.54,True
+North Macedonia,16482207,D. Musovski,Forward,False,real,False,0,0,,,,,2,58,6.23,6.55,6.51,6.54,True
+North Macedonia,19175737,S. Emini,Midfielder,False,real,False,0,0,,,,,1,46,6.25,6.56,6.51,6.54,True
+North Macedonia,34815921,Jovan Manev,Defender,False,real,False,0,0,,,,,1,47,6.15,6.54,6.49,6.52,True
+North Macedonia,44741410,E. Rastoder,Forward,False,real,True,0,0,,,,,8,318,6.37,6.5,6.44,6.48,True
+North Macedonia,1807862,Stefan Aškovski,Defender,False,real,False,0,0,,,,,4,176,5.84,6.46,6.34,6.41,True
+North Macedonia,17636416,Sebastian Herrera,Defender,False,real,True,0,0,,,,,3,270,6.05,6.33,6.19,6.27,True
+San Marino,5026735,Edoardo Colombo,Goalkeeper,True,real,True,0,0,,,,,7,630,6.76,6.39,6.55,6.45,True
+San Marino,4991154,Nicola Nanni,Forward,True,real,True,0,0,,,,,8,684,6.5,6.32,6.41,6.36,True
+San Marino,56069048,Lorenzo Lazzari,Forward,True,real,False,0,0,,,,,4,246,6.55,6.21,6.28,6.24,True
+San Marino,58204391,Lorenzo Capicchioni,Midfielder,True,real,True,0,0,,,,,8,501,6.13,6.12,6.12,6.12,True
+San Marino,55106268,Giacomo Benvenuti,Defender,True,real,False,0,0,,,,,6,264,6.11,6.11,6.11,6.11,True
+San Marino,63464905,Gabriel Capicchioni,Forward,True,real,False,0,0,,,,,3,64,6.11,6.11,6.11,6.11,True
+San Marino,99897917,D. Rossi,Defender,True,real,False,0,0,,,,,0,0,,6.11,6.11,6.11,True
+San Marino,17018015,Samuel Pancotti,Forward,True,real,False,0,0,,,,,2,118,5.96,6.08,6.05,6.07,True
+San Marino,9033542,Marcello Mularoni,Midfielder,True,real,False,0,0,,,,,6,197,5.87,6.04,5.99,6.02,True
+San Marino,70633108,Simone Giocondi,Defender,True,real,False,0,0,,,,,1,20,5.41,6.04,5.98,6.02,True
+San Marino,9031610,Michele Cevoli,Defender,True,real,True,0,0,,,,,7,606,5.85,5.98,5.92,5.96,True
+San Marino,63464583,Nicolas Giacopetti,Forward,False,real,False,0,0,,,,,6,207,6.64,6.29,6.4,6.33,True
+San Marino,34742022,Andrea Contadini,Forward,False,real,False,0,0,,,,,7,373,6.56,6.23,6.32,6.27,True
+San Marino,49053312,Samuele Zannoni,Midfielder,False,real,True,0,0,,,,,8,636,6.41,6.24,6.31,6.26,True
+San Marino,55092100,T. Benvenuti,Defender,False,real,False,0,0,,,,,4,360,6.56,6.21,6.29,6.24,True
+San Marino,55106107,Nicko Sensoli,Forward,False,real,False,0,0,,,,,5,192,6.64,6.19,6.25,6.22,True
+San Marino,5163424,Filippo Berardi,Forward,False,real,True,0,0,,,,,5,339,6.26,6.15,6.18,6.16,True
+San Marino,55105946,Matteo Valli Casadei,Midfielder,False,real,True,0,0,,,,,8,323,6.2,6.14,6.16,6.15,True
+San Marino,56075488,Pietro Amici,Goalkeeper,False,real,False,0,0,,,,,1,90,6.55,6.14,6.16,6.15,True
+San Marino,32171335,Dante Rossi,Defender,False,real,False,0,0,,,,,2,135,6.28,6.14,6.16,6.15,True
+San Marino,34746852,Filippo Fabbri,Defender,False,real,False,0,0,,,,,4,328,6.2,6.14,6.15,6.14,True
+San Marino,9034186,Matteo Vitaioli,Forward,False,real,False,0,0,,,,,2,38,6.41,6.13,6.14,6.13,True
+San Marino,53424301,Simone Santi,Midfielder,False,real,False,0,0,,,,,1,14,6.49,6.12,6.12,6.12,True
+San Marino,92045464,Matteo Sammaritani,Defender,False,real,False,0,0,,,,,2,54,6.13,6.11,6.12,6.11,True
+San Marino,56075649,Marco Pasolini,Defender,False,real,False,0,0,,,,,1,96,6.0,6.08,6.05,6.07,True
+San Marino,34746530,Giacomo Matteoni,Defender,False,real,False,0,0,,,,,2,126,5.83,6.07,6.03,6.05,True
+San Marino,63469413,Alberto Riccardi,Defender,False,real,True,0,0,,,,,6,459,5.89,6.04,5.99,6.02,True
+San Marino,32872007,Giacomo Valentini,Defender,False,real,True,0,0,,,,,5,367,5.62,5.95,5.85,5.91,True
+San Marino,9032898,Alessandro Golinucci,Midfielder,False,real,True,0,0,,,,,8,607,5.64,5.89,5.78,5.85,True
+San Marino,27243769,Alessandro Tosi,Defender,False,real,True,0,0,,,,,6,387,5.17,5.69,5.46,5.6,True
 Scotland,3048367,Angus Gunn,Goalkeeper,True,real,True,0,0,,,,,10,907,7.31,7.21,7.28,7.24,True
 Scotland,7215208,Lewis Ferguson,Midfielder,True,real,True,5,450,7.38,0.0,0.0,0.03,16,1318,7.2,7.2,7.2,7.2,False
 Scotland,20998257,Billy Gilmour,Midfielder,True,real,False,3,191,7.36,1.0,0.0,0.1,11,735,7.0,7.08,7.04,7.06,False
@@ -634,68 +637,68 @@ Scotland,7224385,A. Hickey,Defender,False,real,False,4,151,6.65,0.0,0.0,0.09,9,5
 Scotland,55312992,Lennon Miller,Midfielder,False,real,False,5,254,6.38,0.0,0.0,0.25,3,127,7.96,6.64,6.78,6.7,False
 Scotland,181279,R. Christie,Midfielder,False,real,False,3,107,5.86,0.0,0.0,0.17,13,727,6.93,6.6,6.8,6.68,False
 Scotland,52733450,R. Ure,Forward,False,real,False,6,396,6.22,0.0,1.0,1.12,1,67,6.04,6.49,6.37,6.45,False
-Slovakia,4894393,D. Hancko,Defender,True,probable,True,7,549,7.26,0.0,2.0,0.13,9,822,7.31,7.11,7.23,7.16,False
-Slovakia,7637833,Stanislav Lobotka,Midfielder,True,probable,True,5,438,7.31,1.0,0.0,0.06,8,750,7.08,7.15,7.11,7.13,False
-Slovakia,4081343,O. Duda,Midfielder,True,probable,True,0,0,,,,0.0,9,714,7.23,7.1,7.17,7.13,True
-Slovakia,32032,Milan Škriniar,Defender,True,probable,True,0,0,,,,0.08,9,840,7.01,6.97,6.99,6.98,True
-Slovakia,51800938,Adam Obert,Defender,True,probable,True,5,447,7.07,0.0,0.0,0.09,8,619,6.95,6.97,6.96,6.97,False
-Slovakia,6511960,L. Haraslín,Forward,True,probable,True,0,0,,,,,7,483,6.97,6.95,6.96,6.95,True
-Slovakia,3040800,M. Dúbravka,Goalkeeper,True,probable,True,0,0,,,,0.0,9,840,6.9,6.91,6.9,6.91,True
-Slovakia,46724125,T. Rigo,Midfielder,True,probable,True,0,0,,,,,7,344,6.72,6.85,6.81,6.84,True
-Slovakia,55088397,L. Sauer,Forward,True,probable,True,3,27,6.56,0.0,0.0,,8,447,6.64,6.87,6.77,6.83,False
-Slovakia,9846270,D. Strelec,Forward,True,probable,True,0,0,,,,,8,639,6.76,6.83,6.79,6.82,True
-Slovakia,5976796,M. Bero,Midfielder,True,probable,True,0,0,,,,0.09,9,758,6.72,6.82,6.77,6.8,True
-Slovakia,9844016,D. Greif,Goalkeeper,False,probable,False,4,360,7.9,0.0,0.0,0.03,1,90,6.91,7.54,7.33,7.46,False
-Slovakia,2467962,Ivan Schranz,Forward,False,probable,False,0,0,,,,,6,262,7.36,7.09,7.19,7.13,True
-Slovakia,7524972,M. Valjent,Defender,False,probable,False,6,540,7.29,0.0,0.0,0.0,2,117,7.15,7.13,7.14,7.13,False
-Slovakia,31368911,T. Suslov,Forward,False,probable,False,0,0,,,,0.0,4,346,7.25,7.06,7.14,7.1,True
-Slovakia,224427,I. Mesík,Defender,False,probable,False,0,0,,,,,2,163,7.15,6.95,6.97,6.96,True
-Slovakia,4080377,P. Pekarík,Defender,False,probable,False,0,0,,,,,1,8,6.3,6.92,6.91,6.91,True
-Slovakia,4990993,S. Mráz,Forward,False,probable,False,0,0,,,,,3,67,6.47,6.9,6.88,6.9,True
-Slovakia,9860599,R. Boženík,Forward,False,probable,False,0,0,,,,,6,213,6.72,6.89,6.87,6.88,True
-Slovakia,4019036,L. Bénes,Midfielder,False,probable,False,0,0,,,,0.31,6,83,6.57,6.89,6.86,6.88,True
-Slovakia,9855125,Tomáš Bobček,Forward,False,probable,False,1,19,6.6,0.0,0.0,,2,35,6.77,6.88,6.88,6.88,False
-Slovakia,208005,Denis Vavro,Defender,False,probable,False,0,0,,,,0.07,3,119,6.73,6.87,6.84,6.86,True
-Slovakia,9007943,Ľubomír Šatka,Defender,False,probable,False,0,0,,,,,4,270,6.75,6.88,6.84,6.86,True
-Slovakia,4981977,Lubomir Tupta,Forward,False,probable,False,0,0,,,,,7,89,6.47,6.87,6.83,6.85,True
-Slovakia,130081,Patrik Hrošovský,Midfielder,False,probable,False,0,0,,,,,2,101,6.28,6.85,6.78,6.82,True
-Slovakia,17022040,E. Prekop,Forward,False,probable,False,0,0,,,,,1,18,6.08,6.85,6.78,6.82,True
-Slovakia,32965226,A. Kaprálik,Forward,False,probable,False,0,0,,,,,1,63,6.53,6.82,6.75,6.79,True
-Slovakia,9858828,D. Ďuriš,Forward,False,probable,False,0,0,,,,,5,334,6.47,6.78,6.68,6.74,True
-Slovakia,5053783,Norbert Gyömbér,Defender,False,probable,False,0,0,,,,0.0,8,703,6.56,6.76,6.67,6.72,True
-Slovenia,4823,J. Oblak,Goalkeeper,True,probable,True,7,630,6.89,0.0,0.0,0.02,9,840,7.18,6.95,7.09,7.0,False
-Slovenia,134267,J. Bijol,Defender,True,probable,True,3,164,7.1,0.0,0.0,,11,994,6.84,6.92,6.87,6.9,False
-Slovenia,2864183,T. Elšnik,Midfielder,True,probable,True,0,0,,,,,10,805,6.93,6.86,6.9,6.88,True
-Slovenia,5954417,V. Drkušić,Defender,True,probable,True,2,114,6.81,0.0,0.0,0.0,11,965,7.04,6.81,6.96,6.87,False
-Slovenia,17700333,Igor Vekić,Goalkeeper,True,probable,True,0,0,,,,,2,180,6.9,6.8,6.83,6.81,True
-Slovenia,52062885,M. Ratnik,Defender,True,probable,True,0,0,,,,,2,180,6.82,6.79,6.8,6.79,True
-Slovenia,9020340,A. Šporar,Forward,True,probable,True,0,0,,,,,6,408,6.71,6.73,6.72,6.73,True
-Slovenia,2302293,E. Janža,Defender,True,probable,True,0,0,,,,,11,896,6.7,6.73,6.71,6.72,True
-Slovenia,17665718,Žan Karničnik,Defender,True,probable,True,0,0,,,,,11,879,6.66,6.7,6.68,6.69,True
-Slovenia,9020179,A. Čerin,Midfielder,True,probable,True,0,0,,,,,9,823,6.66,6.7,6.68,6.69,True
-Slovenia,21779107,Danijel Šturm,Midfielder,True,probable,True,0,0,,,,,7,452,6.37,6.54,6.44,6.5,True
-Slovenia,1222305,Sandi Lovrić,Midfielder,False,probable,False,1,10,6.88,0.0,0.0,0.13,6,347,6.9,6.89,6.89,6.89,False
-Slovenia,18609983,B. Šeško,Forward,False,probable,False,4,76,6.68,1.0,0.0,0.64,6,569,6.93,6.85,6.88,6.86,False
-Slovenia,17691961,David Brekalo,Defender,False,probable,False,0,0,,,,,6,379,6.87,6.81,6.84,6.83,True
-Slovenia,32436180,T. Begić,Midfielder,False,probable,False,0,0,,,,,1,64,6.97,6.8,6.83,6.81,True
-Slovenia,17668294,T. Horvat,Midfielder,False,probable,False,0,0,,,,,6,215,6.78,6.77,6.77,6.77,True
-Slovenia,4977952,Jure Balkovec,Defender,False,probable,False,0,0,,,,,2,106,6.8,6.77,6.77,6.77,True
-Slovenia,46697399,Adrian Zeljković,Midfielder,False,probable,False,0,0,,,,,0,2,,6.76,6.76,6.76,True
-Slovenia,19284734,Blaž Kramer,Forward,False,probable,False,0,0,,,,,1,31,6.55,6.76,6.76,6.76,True
-Slovenia,21143318,Jošt Urbančič,Defender,False,probable,False,0,0,,,,,1,11,6.67,6.76,6.76,6.76,True
-Slovenia,14724731,Jan Mlakar,Forward,False,probable,False,0,0,,,,,3,59,6.6,6.76,6.75,6.75,True
-Slovenia,26217233,Z. Vipotnik,Forward,False,probable,False,0,0,,,,,10,520,6.73,6.75,6.74,6.75,True
-Slovenia,17664108,Dejan Petrovič,Midfielder,False,probable,False,0,0,,,,,6,292,6.69,6.75,6.74,6.74,True
-Slovenia,21143640,T. Svetlin,Midfielder,False,probable,False,0,0,,,,,2,40,6.43,6.74,6.72,6.74,True
-Slovenia,21146377,Mark Zabukovnik,Midfielder,False,probable,False,0,0,,,,,1,26,6.6,6.74,6.73,6.74,True
-Slovenia,3065755,J. Gorenc Stankovič,Midfielder,False,probable,False,0,0,,,,,3,94,6.48,6.74,6.71,6.73,True
-Slovenia,42796691,N. Gradišar,Forward,False,probable,False,0,0,,,,,2,87,6.53,6.74,6.71,6.73,True
-Slovenia,351617,Benjamin Verbič,Midfielder,False,probable,False,0,0,,,,,2,36,6.42,6.74,6.71,6.73,True
-Slovenia,17708061,Svit Sešlar,Midfielder,False,probable,False,0,0,,,,,4,158,6.48,6.71,6.67,6.69,True
-Slovenia,6694212,D. Zec,Defender,False,probable,False,0,0,,,,0.17,2,55,6.39,6.7,6.64,6.68,True
-Slovenia,211869,Petar Stojanović,Midfielder,False,probable,False,0,0,,,,,8,516,6.57,6.69,6.64,6.67,True
-Slovenia,44847670,S. Kuzmić,Defender,False,probable,False,0,0,,,,,1,74,6.3,6.67,6.59,6.64,True
-Slovenia,18018791,A. Matko,Forward,False,probable,False,0,0,,,,,2,117,6.2,6.56,6.42,6.5,True
+Slovakia,4894393,D. Hancko,Defender,True,real,True,7,549,7.26,0.0,2.0,0.13,9,822,7.31,7.11,7.23,7.16,False
+Slovakia,7637833,Stanislav Lobotka,Midfielder,True,real,True,5,438,7.31,1.0,0.0,0.06,8,750,7.08,7.15,7.11,7.13,False
+Slovakia,4081343,O. Duda,Midfielder,True,real,True,0,0,,,,0.0,9,714,7.23,7.1,7.17,7.13,True
+Slovakia,7524972,M. Valjent,Defender,True,real,False,6,540,7.29,0.0,0.0,0.0,2,117,7.15,7.13,7.14,7.13,False
+Slovakia,31368911,T. Suslov,Forward,True,real,False,0,0,,,,0.0,4,346,7.25,7.06,7.14,7.1,True
+Slovakia,32032,Milan Škriniar,Defender,True,real,True,0,0,,,,0.08,9,840,7.01,6.97,6.99,6.98,True
+Slovakia,51800938,Adam Obert,Defender,True,real,True,5,447,7.07,0.0,0.0,0.09,8,619,6.95,6.97,6.96,6.97,False
+Slovakia,6511960,L. Haraslín,Forward,True,real,True,0,0,,,,,7,483,6.97,6.95,6.96,6.95,True
+Slovakia,3040800,M. Dúbravka,Goalkeeper,True,real,True,0,0,,,,0.0,9,840,6.9,6.91,6.9,6.91,True
+Slovakia,55088397,L. Sauer,Forward,True,real,True,3,27,6.56,0.0,0.0,,8,447,6.64,6.87,6.77,6.83,False
+Slovakia,9846270,D. Strelec,Forward,True,real,True,0,0,,,,,8,639,6.76,6.83,6.79,6.82,True
+Slovakia,9844016,D. Greif,Goalkeeper,False,real,False,4,360,7.9,0.0,0.0,0.03,1,90,6.91,7.54,7.33,7.46,False
+Slovakia,2467962,Ivan Schranz,Forward,False,real,False,0,0,,,,,6,262,7.36,7.09,7.19,7.13,True
+Slovakia,224427,I. Mesík,Defender,False,real,False,0,0,,,,,2,163,7.15,6.95,6.97,6.96,True
+Slovakia,4080377,P. Pekarík,Defender,False,real,False,0,0,,,,,1,8,6.3,6.92,6.91,6.91,True
+Slovakia,4990993,S. Mráz,Forward,False,real,False,0,0,,,,,3,67,6.47,6.9,6.88,6.9,True
+Slovakia,9860599,R. Boženík,Forward,False,real,False,0,0,,,,,6,213,6.72,6.89,6.87,6.88,True
+Slovakia,4019036,L. Bénes,Midfielder,False,real,False,0,0,,,,0.31,6,83,6.57,6.89,6.86,6.88,True
+Slovakia,9855125,Tomáš Bobček,Forward,False,real,False,1,19,6.6,0.0,0.0,,2,35,6.77,6.88,6.88,6.88,False
+Slovakia,208005,Denis Vavro,Defender,False,real,False,0,0,,,,0.07,3,119,6.73,6.87,6.84,6.86,True
+Slovakia,9007943,Ľubomír Šatka,Defender,False,real,False,0,0,,,,,4,270,6.75,6.88,6.84,6.86,True
+Slovakia,4981977,Lubomir Tupta,Forward,False,real,False,0,0,,,,,7,89,6.47,6.87,6.83,6.85,True
+Slovakia,46724125,T. Rigo,Midfielder,False,real,True,0,0,,,,,7,344,6.72,6.85,6.81,6.84,True
+Slovakia,130081,Patrik Hrošovský,Midfielder,False,real,False,0,0,,,,,2,101,6.28,6.85,6.78,6.82,True
+Slovakia,17022040,E. Prekop,Forward,False,real,False,0,0,,,,,1,18,6.08,6.85,6.78,6.82,True
+Slovakia,5976796,M. Bero,Midfielder,False,real,True,0,0,,,,0.09,9,758,6.72,6.82,6.77,6.8,True
+Slovakia,32965226,A. Kaprálik,Forward,False,real,False,0,0,,,,,1,63,6.53,6.82,6.75,6.79,True
+Slovakia,9858828,D. Ďuriš,Forward,False,real,False,0,0,,,,,5,334,6.47,6.78,6.68,6.74,True
+Slovakia,5053783,Norbert Gyömbér,Defender,False,real,False,0,0,,,,0.0,8,703,6.56,6.76,6.67,6.72,True
+Slovenia,4823,J. Oblak,Goalkeeper,True,real,True,7,630,6.89,0.0,0.0,0.02,9,840,7.18,6.95,7.09,7.0,False
+Slovenia,134267,J. Bijol,Defender,True,real,True,3,164,7.1,0.0,0.0,,11,994,6.84,6.92,6.87,6.9,False
+Slovenia,1222305,Sandi Lovrić,Midfielder,True,real,False,1,10,6.88,0.0,0.0,0.13,6,347,6.9,6.89,6.89,6.89,False
+Slovenia,5954417,V. Drkušić,Defender,True,real,True,2,114,6.81,0.0,0.0,0.0,11,965,7.04,6.81,6.96,6.87,False
+Slovenia,17691961,David Brekalo,Defender,True,real,False,0,0,,,,,6,379,6.87,6.81,6.84,6.83,True
+Slovenia,32436180,T. Begić,Midfielder,True,real,False,0,0,,,,,1,64,6.97,6.8,6.83,6.81,True
+Slovenia,26217233,Z. Vipotnik,Forward,True,real,False,0,0,,,,,10,520,6.73,6.75,6.74,6.75,True
+Slovenia,2302293,E. Janža,Defender,True,real,True,0,0,,,,,11,896,6.7,6.73,6.71,6.72,True
+Slovenia,17665718,Žan Karničnik,Defender,True,real,True,0,0,,,,,11,879,6.66,6.7,6.68,6.69,True
+Slovenia,9020179,A. Čerin,Midfielder,True,real,True,0,0,,,,,9,823,6.66,6.7,6.68,6.69,True
+Slovenia,21779107,Danijel Šturm,Midfielder,True,real,True,0,0,,,,,7,452,6.37,6.54,6.44,6.5,True
+Slovenia,2864183,T. Elšnik,Midfielder,False,real,True,0,0,,,,,10,805,6.93,6.86,6.9,6.88,True
+Slovenia,18609983,B. Šeško,Forward,False,real,False,4,76,6.68,1.0,0.0,0.64,6,569,6.93,6.85,6.88,6.86,False
+Slovenia,17700333,Igor Vekić,Goalkeeper,False,real,True,0,0,,,,,2,180,6.9,6.8,6.83,6.81,True
+Slovenia,52062885,M. Ratnik,Defender,False,real,True,0,0,,,,,2,180,6.82,6.79,6.8,6.79,True
+Slovenia,17668294,T. Horvat,Midfielder,False,real,False,0,0,,,,,6,215,6.78,6.77,6.77,6.77,True
+Slovenia,4977952,Jure Balkovec,Defender,False,real,False,0,0,,,,,2,106,6.8,6.77,6.77,6.77,True
+Slovenia,46697399,Adrian Zeljković,Midfielder,False,real,False,0,0,,,,,0,2,,6.76,6.76,6.76,True
+Slovenia,19284734,Blaž Kramer,Forward,False,real,False,0,0,,,,,1,31,6.55,6.76,6.76,6.76,True
+Slovenia,21143318,Jošt Urbančič,Defender,False,real,False,0,0,,,,,1,11,6.67,6.76,6.76,6.76,True
+Slovenia,14724731,Jan Mlakar,Forward,False,real,False,0,0,,,,,3,59,6.6,6.76,6.75,6.75,True
+Slovenia,17664108,Dejan Petrovič,Midfielder,False,real,False,0,0,,,,,6,292,6.69,6.75,6.74,6.74,True
+Slovenia,21143640,T. Svetlin,Midfielder,False,real,False,0,0,,,,,2,40,6.43,6.74,6.72,6.74,True
+Slovenia,21146377,Mark Zabukovnik,Midfielder,False,real,False,0,0,,,,,1,26,6.6,6.74,6.73,6.74,True
+Slovenia,3065755,J. Gorenc Stankovič,Midfielder,False,real,False,0,0,,,,,3,94,6.48,6.74,6.71,6.73,True
+Slovenia,9020340,A. Šporar,Forward,False,real,True,0,0,,,,,6,408,6.71,6.73,6.72,6.73,True
+Slovenia,42796691,N. Gradišar,Forward,False,real,False,0,0,,,,,2,87,6.53,6.74,6.71,6.73,True
+Slovenia,351617,Benjamin Verbič,Midfielder,False,real,False,0,0,,,,,2,36,6.42,6.74,6.71,6.73,True
+Slovenia,17708061,Svit Sešlar,Midfielder,False,real,False,0,0,,,,,4,158,6.48,6.71,6.67,6.69,True
+Slovenia,6694212,D. Zec,Defender,False,real,False,0,0,,,,0.17,2,55,6.39,6.7,6.64,6.68,True
+Slovenia,211869,Petar Stojanović,Midfielder,False,real,False,0,0,,,,,8,516,6.57,6.69,6.64,6.67,True
+Slovenia,44847670,S. Kuzmić,Defender,False,real,False,0,0,,,,,1,74,6.3,6.67,6.59,6.64,True
+Slovenia,18018791,A. Matko,Forward,False,real,False,0,0,,,,,2,117,6.2,6.56,6.42,6.5,True
 Spain,62279462,Lamine Yamal,Midfielder,True,real,True,7,581,8.51,7.0,4.0,1.02,17,1352,7.42,7.99,7.54,7.81,False
 Spain,54840940,Fermín,Midfielder,True,real,False,6,447,7.64,4.0,2.0,0.88,5,156,7.36,7.36,7.36,7.36,False
 Spain,63856457,Pau Cubarsí Paredes,Defender,True,real,True,5,422,7.46,0.0,0.0,0.02,15,1279,7.47,7.2,7.42,7.29,False

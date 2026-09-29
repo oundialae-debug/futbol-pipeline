@@ -1,4 +1,4 @@
-# Pronósticos de selecciones (29/09/2026 17:54 UTC)
+# Pronósticos de selecciones (29/09/2026 17:55 UTC)
 
 Tema aparte del proyecto de ambos marcan. Por mercado: **modelo** (selecciones + nota justa de los jugadores + árbitro), **mercado** (mediana de casas sin margen) y **final** (mezcla con el peso que se aprende de los partidos ya jugados, ver `evaluacion.md`). Pronóstico = el lado más probable según final. **Cuota mínima** = 1/probabilidad final: por debajo no compensa.
 
@@ -106,43 +106,43 @@ Once probable Estonia: K. Hein, M. Paskotši, Rasmus Peetson, Markus Soomets, M.
 
 ## Slovakia - Kazakhstan (2026-09-29 18:45 UTC)
 
-Ranking FIFA (puntos): Slovakia 1474, Kazakhstan 1181. Goles esperados 1.81 - 0.77, marcador más probable 1-0. Córners esperados 11.8. Amarillas esperadas 3.8 (árbitro Kolaric, Patrik, 0 partidos en nuestras ligas, x1.00). Forma del once: Slovakia +0.01, Kazakhstan +0.00. Partidos en el modelo: Slovakia 15, Kazakhstan 14.
+Ranking FIFA (puntos): Slovakia 1474, Kazakhstan 1181. Goles esperados 1.86 - 0.76, marcador más probable 1-0. Córners esperados 11.8. Amarillas esperadas 3.8 (árbitro Kolaric, Patrik, 0 partidos en nuestras ligas, x1.00). Forma del once: Slovakia +0.06, Kazakhstan +0.00. Partidos en el modelo: Slovakia 15, Kazakhstan 14.
 
 | mercado | pronóstico | final | modelo | mercado | cuota mínima | cuota mediana | mejor cuota | casas |
 |---|---|---|---|---|---|---|---|---|
-| 1X2 | **gana Slovakia** | 62% | 62% | - | 1.61 | nan | nan | 0 |
-| Sin empate | **gana Slovakia (sin empate)** | 80% | 80% | - | 1.25 | nan | nan | 0 |
-| Más/menos 2.5 | **menos de 2.5 goles** | 53% | 53% | - | 1.90 | nan | nan | 0 |
+| 1X2 | **gana Slovakia** | 63% | 63% | - | 1.58 | nan | nan | 0 |
+| Sin empate | **gana Slovakia (sin empate)** | 81% | 81% | - | 1.23 | nan | nan | 0 |
+| Más/menos 2.5 | **menos de 2.5 goles** | 52% | 52% | - | 1.94 | nan | nan | 0 |
 | Ambos marcan | **ambos marcan: no** | 55% | 55% | - | 1.81 | nan | nan | 0 |
 | Tarjetas | **menos de 3.5 tarjetas** | 51% | 51% | - | 1.95 | nan | nan | 0 |
 | Tarjetas | **menos de 4.5 tarjetas** | 66% | 66% | - | 1.51 | nan | nan | 0 |
 | Córners | **más de 8.5 córners** | 81% | 81% | - | 1.24 | nan | nan | 0 |
 | Córners | **más de 9.5 córners** | 72% | 72% | - | 1.39 | nan | nan | 0 |
-| Goles | **más de 1.5 goles** | 73% | 73% | - | 1.37 | nan | nan | 0 |
-| Goles | **Slovakia marca primero** | 70% | 70% | - | 1.42 | nan | nan | 0 |
+| Goles | **más de 1.5 goles** | 74% | 74% | - | 1.36 | nan | nan | 0 |
+| Goles | **Slovakia marca primero** | 71% | 71% | - | 1.41 | nan | nan | 0 |
 
-Once probable Slovakia: D. Hancko, Stanislav Lobotka, O. Duda, Milan Škriniar, Adam Obert, L. Haraslín, M. Dúbravka, T. Rigo, L. Sauer, D. Strelec, M. Bero
+Once real Slovakia: D. Hancko, Stanislav Lobotka, O. Duda, M. Valjent, T. Suslov, Milan Škriniar, Adam Obert, L. Haraslín, M. Dúbravka, L. Sauer, D. Strelec
 Once probable Kazakhstan: N. Alip, Temirlan Anarbekov, Alibek Kasym, Bagdat Kairov, G. Kenzhebek, Dinmukhamed Karaman, Ramazan Orazov, Yan Vorogovskiy, Aleksandr Mrynskiy, I. Chesnokov, Islambek Kuat
 
 ## San Marino - Albania (2026-09-29 18:45 UTC)
 
-Ranking FIFA (puntos): San Marino 721, Albania 1376. Goles esperados 0.41 - 2.98, marcador más probable 0-2. Córners esperados 7.4. Amarillas esperadas 3.9 (árbitro Kapraly, Mihaly, 0 partidos en nuestras ligas, x1.00). Forma del once: San Marino +0.00, Albania -0.01. Partidos en el modelo: San Marino 14, Albania 15.
+Ranking FIFA (puntos): San Marino 721, Albania 1376. Goles esperados 0.41 - 3.08, marcador más probable 0-3. Córners esperados 7.4. Amarillas esperadas 3.9 (árbitro Kapraly, Mihaly, 0 partidos en nuestras ligas, x1.00). Forma del once: San Marino +0.07, Albania +0.09. Partidos en el modelo: San Marino 14, Albania 15.
 
 | mercado | pronóstico | final | modelo | mercado | cuota mínima | cuota mediana | mejor cuota | casas |
 |---|---|---|---|---|---|---|---|---|
-| 1X2 | **gana Albania** | 88% | 88% | - | 1.13 | nan | nan | 0 |
+| 1X2 | **gana Albania** | 89% | 89% | - | 1.12 | nan | nan | 0 |
 | Sin empate | **gana Albania (sin empate)** | 97% | 97% | - | 1.03 | nan | nan | 0 |
-| Más/menos 2.5 | **más de 2.5 goles** | 66% | 66% | - | 1.52 | nan | nan | 0 |
-| Ambos marcan | **ambos marcan: no** | 68% | 68% | - | 1.47 | nan | nan | 0 |
+| Más/menos 2.5 | **más de 2.5 goles** | 68% | 68% | - | 1.48 | nan | nan | 0 |
+| Ambos marcan | **ambos marcan: no** | 68% | 68% | - | 1.48 | nan | nan | 0 |
 | Tarjetas | **menos de 3.5 tarjetas** | 50% | 50% | - | 1.98 | nan | nan | 0 |
 | Tarjetas | **menos de 4.5 tarjetas** | 65% | 65% | - | 1.53 | nan | nan | 0 |
 | Córners | **menos de 8.5 córners** | 67% | 67% | - | 1.48 | nan | nan | 0 |
 | Córners | **menos de 9.5 córners** | 78% | 78% | - | 1.29 | nan | nan | 0 |
-| Goles | **más de 1.5 goles** | 85% | 85% | - | 1.17 | nan | nan | 0 |
-| Goles | **Albania marca primero** | 88% | 88% | - | 1.14 | nan | nan | 0 |
+| Goles | **más de 1.5 goles** | 86% | 86% | - | 1.16 | nan | nan | 0 |
+| Goles | **Albania marca primero** | 88% | 88% | - | 1.13 | nan | nan | 0 |
 
-Once probable San Marino: Edoardo Colombo, Nicola Nanni, Samuele Zannoni, Filippo Berardi, Matteo Valli Casadei, Lorenzo Capicchioni, Alberto Riccardi, Michele Cevoli, Giacomo Valentini, Alessandro Golinucci, Alessandro Tosi
-Once probable Albania: K. Asllani, Mario Mitaj, Elseid Hysaj, B. Djimsiti, Qazim Laci, T. Strakosha, Myrto Uzuni, Ardian Ismajli, Arber Hoxha, N. Bajrami, Ylber Ramadani
+Once real San Marino: Edoardo Colombo, Nicola Nanni, Lorenzo Lazzari, Lorenzo Capicchioni, Giacomo Benvenuti, Gabriel Capicchioni, D. Rossi, Samuel Pancotti, Marcello Mularoni, Simone Giocondi, Michele Cevoli
+Once real Albania: K. Asllani, Ernest Muçi, Mario Mitaj, Juljan Shehu, Alen Sherri, B. Djimsiti, R. Manaj, Sina, Myrto Uzuni, Ardian Ismajli, A. Mehmeti
 
 ## Spain - Croatia (2026-09-29 18:45 UTC)
 
@@ -186,23 +186,23 @@ Once probable Iceland: H. Valdimarsson, H. Haraldsson, E. Ólafsson, Í. Bergman
 
 ## Slovenia - North Macedonia (2026-09-29 18:45 UTC)
 
-Ranking FIFA (puntos): Slovenia 1441, North Macedonia 1369. Goles esperados 1.28 - 0.82, marcador más probable 1-0. Córners esperados 9.3. Amarillas esperadas 3.4 (árbitro Colombo, 32 partidos en nuestras ligas, x1.02). Forma del once: Slovenia -0.03, North Macedonia +0.03. Partidos en el modelo: Slovenia 15, North Macedonia 15.
+Ranking FIFA (puntos): Slovenia 1441, North Macedonia 1369. Goles esperados 1.30 - 0.79, marcador más probable 1-0. Córners esperados 9.3. Amarillas esperadas 3.4 (árbitro Colombo, 32 partidos en nuestras ligas, x1.02). Forma del once: Slovenia -0.02, North Macedonia -0.03. Partidos en el modelo: Slovenia 15, North Macedonia 15.
 
 | mercado | pronóstico | final | modelo | mercado | cuota mínima | cuota mediana | mejor cuota | casas |
 |---|---|---|---|---|---|---|---|---|
-| 1X2 | **gana Slovenia** | 47% | 47% | - | 2.11 | nan | nan | 0 |
-| Sin empate | **gana Slovenia (sin empate)** | 67% | 67% | - | 1.50 | nan | nan | 0 |
-| Más/menos 2.5 | **menos de 2.5 goles** | 65% | 65% | - | 1.54 | nan | nan | 0 |
-| Ambos marcan | **ambos marcan: no** | 60% | 60% | - | 1.67 | nan | nan | 0 |
+| 1X2 | **gana Slovenia** | 49% | 49% | - | 2.06 | nan | nan | 0 |
+| Sin empate | **gana Slovenia (sin empate)** | 68% | 68% | - | 1.47 | nan | nan | 0 |
+| Más/menos 2.5 | **menos de 2.5 goles** | 65% | 65% | - | 1.53 | nan | nan | 0 |
+| Ambos marcan | **ambos marcan: no** | 60% | 60% | - | 1.66 | nan | nan | 0 |
 | Tarjetas | **menos de 3.5 tarjetas** | 58% | 58% | - | 1.72 | nan | nan | 0 |
 | Tarjetas | **menos de 4.5 tarjetas** | 72% | 72% | - | 1.39 | nan | nan | 0 |
 | Córners | **más de 8.5 córners** | 57% | 57% | - | 1.76 | nan | nan | 0 |
 | Córners | **menos de 9.5 córners** | 55% | 55% | - | 1.81 | nan | nan | 0 |
 | Goles | **más de 1.5 goles** | 62% | 62% | - | 1.62 | nan | nan | 0 |
-| Goles | **Slovenia marca primero** | 61% | 61% | - | 1.64 | nan | nan | 0 |
+| Goles | **Slovenia marca primero** | 62% | 62% | - | 1.61 | nan | nan | 0 |
 
-Once probable Slovenia: J. Oblak, J. Bijol, T. Elšnik, V. Drkušić, Igor Vekić, M. Ratnik, A. Šporar, E. Janža, Žan Karničnik, A. Čerin, Danijel Šturm
-Once probable North Macedonia: Imran Fetai, S. Dimitrievski, V. Musliu, G. Zajkov, B. Miovski, D. Churlinov, Enis Bardhi, Agon Elezi, Eljif Elmas, E. Rastoder, Sebastian Herrera
+Once real Slovenia: J. Oblak, J. Bijol, Sandi Lovrić, V. Drkušić, David Brekalo, T. Begić, Z. Vipotnik, E. Janža, Žan Karničnik, A. Čerin, Danijel Šturm
+Once real North Macedonia: S. Dimitrievski, Agon Elezi, S. Alomeroviс, Andrej Stojchevski, Eljif Elmas, Jani Atanasov, Mario Mladenovski, Anes Meljichi, M. Gashtarov, Azer Omeragikj, Dimitar Mitrovski
 
 ## Cuánto fiarse
 
