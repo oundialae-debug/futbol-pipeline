@@ -351,3 +351,57 @@ ALTERNATIVA = ["base_clasica", "elo", "cp_ataque"]
 def columnas_produccion(base, grupos_elegidos=PRODUCCION):
     g = grupos(base)
     return list(dict.fromkeys(sum((g[k] for k in grupos_elegidos), [])))
+
+
+# ---------------------------------------------------------------------------
+# xG y xA POR JUGADOR (de /box-score; solo existen desde abril de 2025).
+# Movido aquí desde xg_jugador.py (29/09/2026) para que el modelo oficial no
+# dependa de un script de prueba. Misma lógica: xG/90 y xA/90 de cada titular
+# con sus minutos ANTERIORES, contraídos hacia la media de su posición con
+# 270 minutos ficticios; se lee el estado y DESPUÉS se actualiza.
+# ---------------------------------------------------------------------------
+K_MIN_XG = 270.0
+
+
+def xg_xa_jugador(hist, ruta="data/historico_xg_jugador.csv"):
+    x = pd.read_csv(ruta)
+    x = x[(x.minutos > 0) & x.jugador_id.notna()].copy()
+    x["xg"] = np.where(x.expectedGoals.notna(), x.expectedGoals,
+                       np.where(x.shotsTotal.fillna(0) == 0, 0.0, np.nan))
+    x["xa"] = np.where(x.expectedAssists.notna(), x.expectedAssists,
+                       np.where(x.passesKey.fillna(0) == 0, 0.0, np.nan))
+    x["jugador_id"] = x.jugador_id.astype(int)
+    por_partido = {m: g for m, g in x.groupby("match_id")}
+    pos_jug = x.groupby("jugador_id").posicion.agg(lambda s: s.mode().iloc[0])
+
+    o = hist.assign(fdt=pd.to_datetime(hist.fecha, format="mixed", utc=True)).sort_values("fdt")
+    acc = defaultdict(lambda: [0.0, 0.0, 0.0, 0.0])
+    pos_acc = defaultdict(lambda: [0.0, 0.0, 0.0, 0.0])
+    filas = []
+    for f in o.itertuples(index=False):
+        r = {"match_id": f.match_id}
+        for lado, ids in (("loc", getattr(f, "local_ids", np.nan)), ("vis", getattr(f, "visitante_ids", np.nan))):
+            if not isinstance(ids, str) or not acc:
+                r[f"{lado}_xg90"] = r[f"{lado}_xa90"] = np.nan
+                continue
+            sx = sa = 0.0
+            for j in (int(v) for v in ids.split("|")):
+                p = pos_acc[pos_jug.get(j, "Midfielder")]
+                mx = p[0] / p[1] * 90 if p[1] else 0.1
+                ma = p[2] / p[3] * 90 if p[3] else 0.05
+                a = acc.get(j, [0, 0, 0, 0])
+                sx += (a[0] + K_MIN_XG / 90 * mx) / ((a[1] + K_MIN_XG) / 90)
+                sa += (a[2] + K_MIN_XG / 90 * ma) / ((a[3] + K_MIN_XG) / 90)
+            r[f"{lado}_xg90"], r[f"{lado}_xa90"] = sx, sa
+        r["dif_xg90"] = r["loc_xg90"] - r["vis_xg90"]
+        r["dif_xa90"] = r["loc_xa90"] - r["vis_xa90"]
+        filas.append(r)
+        g = por_partido.get(f.match_id)
+        if g is not None:
+            for t in g.itertuples(index=False):
+                a, p = acc[t.jugador_id], pos_acc[t.posicion]
+                if not np.isnan(t.xg):
+                    a[0] += t.xg; a[1] += t.minutos; p[0] += t.xg; p[1] += t.minutos
+                if not np.isnan(t.xa):
+                    a[2] += t.xa; a[3] += t.minutos; p[2] += t.xa; p[3] += t.minutos
+    return pd.DataFrame(filas)

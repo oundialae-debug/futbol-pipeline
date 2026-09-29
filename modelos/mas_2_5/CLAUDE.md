@@ -666,3 +666,20 @@ que xG+xA 0.199). Mes a mes, oct 2025 - sep 2026, 2.172 partidos:
   del ruido de proceso.
 - **Mejor modelo: C entrenado con todo desde 2022/23, a -0.48s de la casa.**
   Apostando sigue sin ganar (-3%).
+
+## MODELO OFICIAL (scripts/modelo_oficial.py, 29/09/2026)
+
+p = 50% XGBoost 28 (columnas_produccion: tiros a puerta, tiros fuera,
+pases, puntos, liga, g/a de delanteros y medios) + 50% logística con tres
+sumas (xG+xA/90 de los 22 titulares, tiros a puerta de los dos equipos, g/a).
+Entrenado con todo lo jugado desde 2022/23. xG/xA por jugador movido a
+`rasgos_mas25.xg_xa_jugador()`.
+- `python scripts/modelo_oficial.py pronosticar PARTIDOS.csv [CUOTAS.csv]`:
+  mismo formato que data/ambos_hoy/ del repo padre. Añade los partidos sin
+  resultado, rasgos solo con lo anterior, entrena con todo y escribe
+  data/pronostico_mas25.md/.csv (modelo, casa, lado, cuota mínima, VE, once).
+- `python scripts/modelo_oficial.py comprobar`: sep 2026 como si fuera futuro.
+  Resultado: -0.53s contra la casa (186 partidos), acierto 64.0% vs 65.6%.
+  Coherente con las pruebas mes a mes (-0.48s). NO bate a la casa.
+Pendiente: titulares de 2023/24 ya en main (92%, desde /box-score); repetir
+las pruebas con ellos.
