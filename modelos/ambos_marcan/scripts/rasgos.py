@@ -393,8 +393,11 @@ def calcular_tabla(hist):
         l, v = fila["local_id"], fila["visitante_id"]
 
         equipos_vistos = list(tabla.keys())
+        # desempate fijo (29/09/2026): puntos, diferencia, goles a favor y, al final,
+        # el ID del equipo. Antes el empate dependía del orden de las filas y la
+        # posición cambiaba en el 1,1% de los partidos con solo desordenar el histórico.
         ranking = sorted(equipos_vistos,
-                         key=lambda e: (-tabla[e][0], -(tabla[e][1] - tabla[e][2])))
+                         key=lambda e: (-tabla[e][0], -(tabla[e][1] - tabla[e][2]), -tabla[e][1], e))
         posiciones = {e: i + 1 for i, e in enumerate(ranking)}
         n_vistos = len(ranking)
 

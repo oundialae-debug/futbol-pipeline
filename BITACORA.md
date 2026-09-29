@@ -31,6 +31,9 @@ Dónde está cada cosa:
 | `comprobar_sin_fuga` tiene un segundo control: se truca un partido y ningún otro partido del mismo día (de cualquier liga) puede cambiar. | El control antiguo solo miraba el propio partido, así que la fuga de la tabla pasó sin avisar. Comprobado: con la tabla o el árbitro viejos falla, con el código nuevo pasa. | los dos `rasgos.py` | 2115bfb, 6c596cc |
 | Registro en papel: columna `mod_ambos_precio`, el modelo de solo precio (logística "C"). | Resolver con partidos limpios la contradicción de la auditoría 2: C gana al oficial frente al resultado, pero pierde frente al mercado real. | `scripts/ambos_marcan_hoy.py` | 00727aa |
 | Registro en papel: juez principal = Brier y log loss sobre TODOS los partidos contra el mercado real; control a los 400 partidos; apuesta solo con VE > 8%. | Reglas fijadas antes de ver resultados (auditoría 2, paso 4). Con VE > 0 el "valor" puede ser solo ruido de la fuente de precio. | `scripts/ambos_marcan_hoy.py` | 00727aa |
+| Desempate fijo en la tabla: puntos, diferencia, goles a favor y el ID del equipo. | Con empate, el orden dependía de cómo vinieran las filas: la posición cambiaba en el 1,1% de los partidos con solo desordenar el histórico, y quedaban diferencias de 1 puesto con el directo. Ahora da igual el orden (0,00% en 3 desordenados). | los dos `rasgos.py` | este commit |
+| El flujo automático ejecuta `evaluar` cada mañana (sin API). | Fallo silencioso: ningún paso lo llamaba, así que `registro_papel.md` (resultados y juez) nunca se actualizaba solo. | `.github/workflows/ambos_marcan_diario.yml` | este commit |
+| En directo, la temporada de los partidos de hoy sale de la fecha (julio en adelante = año; si no, año − 1). | Antes se copiaba de la última fila de la liga. El primer día de una temporada nueva, el partido caía en la tabla de la anterior y la calidad de plantilla usaba la temporada de jugadores equivocada. La regla coincide en el 100% del histórico (9.292 partidos). | `scripts/ambos_marcan_hoy.py` | este commit |
 | Limpieza: importaciones repetidas en `pronosticar`. | Sobraban, no cambian nada. | `scripts/ambos_marcan_hoy.py` | este commit |
 | Fechas de hoy corregidas de 30/09 a 29/09 en textos y comentarios. | Las escribí mal; el día era el 29. | 11 ficheros | este commit |
 | Scripts nuevos de la auditoría 2 (sin API): `auditoria2_precio.py`, `auditoria2_paridad.py`, `auditoria2_elo.py`, `auditoria2_tabla_fuga.py`. | Cada prueba en un script nuevo, con las reglas fijadas antes (regla del usuario). | `scripts/` | ccd5688, 7f598e9, f476f8f, e10e95c |
@@ -50,6 +53,15 @@ Dónde está cada cosa:
 | Auditoría 1: separar fútbol y precio, precio de entreno frente a directo, semillas | El precio solo recalibrado empata con el modelo; 64 de 125 apuestas cambian según la fuente de precio; el portero no se confirma con otras semillas y 2022/23 sí. | El portero se queda por decisión del usuario; 2022/23 dentro. | ídem |
 | Árboles de 1 nivel | +1.54s en 2.387 partidos, pero la apuesta sale peor en el 95% de remuestreos y peor en LaLiga y esta temporada. | Revertido a 2 niveles. | ídem |
 | Ajuste por liga (desplazar o Platt por liga) | Desplazar -1.43s; Platt por liga +0.88s, mezclado. | No. La liga ya pesa lo que tiene que pesar. | ídem |
+
+### Comprobaciones hechas en la revisión de código (sin cambios)
+
+- Directo y entrenamiento usan exactamente las mismas 102 variables de ambos
+  marcan, pese a los distintos umbrales de cobertura (0,2 y 0,3).
+- H2H profundo filtra bien: solo usa enfrentamientos de fecha estrictamente
+  anterior.
+- Elo, medias móviles, H2H propio, rotación, calidad y portero son de cada
+  equipo o jugador: los partidos a la misma hora no se cruzan.
 
 ### Errores en los datos encontrados
 

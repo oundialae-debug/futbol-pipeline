@@ -204,8 +204,14 @@ def pronosticar():
     hist = M.cargar()
     ult = hist.sort_values("fecha").groupby("liga_id").tail(1).set_index("liga_id")
     hoy = hoy[hoy.liga_id.isin(ult.index)].reset_index(drop=True)   # liga sin histórico: no se pronostica
+    # Temporada por la fecha (julio en adelante = temporada de ese año; coincide en el 100% del
+    # histórico). Antes se copiaba de la última fila de la liga: el primer día de una temporada
+    # nueva el partido caía en la tabla de la anterior y la calidad de plantilla usaba la
+    # temporada de jugadores equivocada (revisión del 29/09/2026).
+    saque = pd.to_datetime(hoy.fecha, utc=True, format="ISO8601")
+    temporada = saque.dt.year.where(saque.dt.month >= 7, saque.dt.year - 1).astype(hist.temporada.dtype)
     nuevas = pd.DataFrame({"match_id": hoy.match_id, "fecha": hoy.fecha, "liga_id": hoy.liga_id,
-                           "liga": hoy.liga_id.map(ult.liga), "temporada": hoy.liga_id.map(ult.temporada),
+                           "liga": hoy.liga_id.map(ult.liga), "temporada": temporada,
                            "local_id": hoy.local_id, "local": hoy.local,
                            "visitante_id": hoy.visitante_id, "visitante": hoy.visitante,
                            "arbitro": hoy.arbitro, "local_ids": hoy.local_ids, "visitante_ids": hoy.visitante_ids,

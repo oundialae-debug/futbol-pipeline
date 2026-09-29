@@ -85,6 +85,13 @@ jobs:
         if: env.MANANA == 'true' || steps.previa.outputs.hay == 'si'
         run: python scripts/ambos_marcan_hoy.py pronosticar
 
+      # Cruce del registro con los resultados ya bajados (sin API). Añadido el
+      # 29/09/2026: hasta entonces ningún paso llamaba a `evaluar` y
+      # registro_papel.md no se actualizaba nunca solo.
+      - name: Evaluar el registro en papel
+        if: always() && env.MANANA == 'true'
+        run: python scripts/ambos_marcan_hoy.py evaluar
+
       - name: Guardar
         if: always() && (env.MANANA == 'true' || steps.previa.outputs.hay == 'si')
         run: |
