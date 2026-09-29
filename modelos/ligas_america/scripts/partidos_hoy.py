@@ -20,6 +20,7 @@ PAISES = ("Argentina", "Brazil", "Mexico")
 
 
 def pedir(path, params=None):
+    print(f"  GET {path} {params}", flush=True)
     for intento in range(3):
         try:
             r = requests.get(f"{BASE_URL}{path}", headers=HEADERS, params=params, timeout=25)
@@ -48,14 +49,18 @@ def main():
         temps = sorted({s.get("season") for s in (l.get("seasons") or []) if isinstance(s, dict)})
         out.append(f"| {l.get('id')} | {l.get('name')} | {', '.join(map(str, temps[-5:]))} |")
     for pais in PAISES:
-        todos, offset = [], 0
-        while True:
+        # tope de 5 páginas y corte si una página no trae ids nuevos: la
+        # primera versión se quedó en bucle (la API repetía la página)
+        todos, vistos = [], set()
+        for pagina in range(5):
             lote = lista(pedir("/matches", {"countryName": pais, "date": FECHA, "timezone": TZ,
-                                            "limit": 100, "offset": offset}))
-            todos += lote
-            if len(lote) < 100:
+                                            "limit": 100, "offset": 100 * pagina}))
+            nuevos = [p for p in lote if isinstance(p, dict) and p.get("id") not in vistos]
+            print(f"  {pais} página {pagina}: {len(lote)} partidos, {len(nuevos)} nuevos", flush=True)
+            vistos |= {p.get("id") for p in nuevos}
+            todos += nuevos
+            if len(lote) < 100 or not nuevos:
                 break
-            offset += 100
         out.append(f"\n## {pais}: {len(todos)} partidos\n\n| liga_id | liga | temporada | hora | partido | estado |\n|---|---|---|---|---|---|")
         for p in sorted(todos, key=lambda p: ((p.get("league") or {}).get("id") or 0, str(p.get("date")))):
             lg = p.get("league") or {}

@@ -1,16 +1,21 @@
-name: Ligas America - partidos de hoy
+name: Ligas America - backfill
 
-# Pocas llamadas. Escribe solo en modelos/ligas_america/. Se dispara al
-# empujar el script a la rama de trabajo (no hace falta que esté en main).
+# Escribe SOLO en modelos/ligas_america/data/. Se dispara al empujar un cambio
+# en modelos/ligas_america/backfill.env (ligas, temporadas, pasos y tope).
 on:
   workflow_dispatch:
   push:
     branches: [ccr-b5b31cbb-u7gf0v]
-    paths: [modelos/ligas_america/scripts/partidos_hoy.py]
+    paths: [modelos/ligas_america/backfill.env]
+
+concurrency:
+  group: ligas-america-backfill
+  cancel-in-progress: false
 
 jobs:
-  hoy:
+  backfill:
     runs-on: ubuntu-latest
+    timeout-minutes: 300
     permissions:
       contents: write
     steps:
@@ -18,10 +23,11 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - run: pip install requests
-      - name: Partidos de hoy
-        run: python -u modelos/ligas_america/scripts/partidos_hoy.py
-        timeout-minutes: 5
+      - run: pip install requests pandas
+      - name: Backfill
+        run: |
+          set -a; . modelos/ligas_america/backfill.env; set +a
+          python modelos/ligas_america/scripts/backfill.py
         env:
           HIGHLIGHTLY_API_KEY: ${{ secrets.HIGHLIGHTLY_API_KEY }}
       - name: Guardar
@@ -29,8 +35,8 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add modelos/ligas_america || true
+          git add modelos/ligas_america/data || true
           if git diff --staged --quiet; then exit 0; fi
-          git commit -m "Ligas America: partidos de hoy ($(date -u +%Y-%m-%dT%H:%M))"
+          git commit -m "Ligas America: backfill ($(date -u +%Y-%m-%dT%H:%M))"
           git pull --rebase origin ${{ github.ref_name }}
           git push origin HEAD:${{ github.ref_name }}
