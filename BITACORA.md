@@ -56,12 +56,33 @@ Dónde está cada cosa:
 
 ### Comprobaciones hechas en la revisión de código (sin cambios)
 
+- **Paridad final** (`auditoria2_paridad.py`, 197 partidos de sep-2026, con el
+  código definitivo): las 84 variables que no son de precio, tabla incluida,
+  coinciden al **100%** entre entrenamiento y directo (antes, la tabla difería
+  en el 26-35%). Portero 1,3%, casi nada. Solo queda la diferencia conocida
+  del precio.
+- **Prueba completa de `pronosticar`** con dos partidos de la Segunda ya
+  jugados, marcados como "por empezar": entrena con 102 variables, la
+  temporada sale de la fecha, la columna de solo precio se rellena y el
+  registro real queda intacto.
+
 - Directo y entrenamiento usan exactamente las mismas 102 variables de ambos
   marcan, pese a los distintos umbrales de cobertura (0,2 y 0,3).
 - H2H profundo filtra bien: solo usa enfrentamientos de fecha estrictamente
   anterior.
 - Elo, medias móviles, H2H propio, rotación, calidad y portero son de cada
   equipo o jugador: los partidos a la misma hora no se cruzan.
+
+### Fuera del código: maquetas de app (sin cambios en el repositorio)
+
+- Dos diseños de app al estilo FotMob, publicados como artefactos privados
+  del usuario, con datos reales calculados en local y sin API:
+  1. **"Veredicto" registro:** el registro en papel de ambos marcan.
+  2. **"Veredicto" LaLiga, para el público:** la jornada 8 con probabilidades
+     por Elo, Real Madrid–Villarreal, "La tabla miente" (tabla frente a fuerza
+     Elo) y el ranking de árbitros por tarjetas.
+- Las probabilidades por Elo salen de una logística sobre la diferencia de Elo
+  en 1.589 partidos de LaLiga: dice 44,8% y pasa 44,8%; dice 64,4% y pasa 62,3%.
 
 ### Errores en los datos encontrados
 
