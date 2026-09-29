@@ -998,3 +998,32 @@ antes de mirar; datos de `data/jugador_lesiones.csv`.
 Las dos empeoran. Lectura: el once real (calidad de plantilla, portero) y el
 precio previo ya recogen las bajas. No reabrir las lesiones como variable
 con estos datos.
+
+## Recalibración (29/09/2026): el fallo es real, el arreglo no llega al listón
+
+**Hallazgo:** en 4.601 partidos (sep-2024 a sep-2026), el modelo oficial es
+honesto hasta el 65%. Cuando da 65-70% pasa el 60%, y cuando da 70% o más, el
+56%. Exagera justo los partidos "claros". Por eso la idea de "apostar solo
+en los de probabilidad alta" pierde: con cuotas reales, las reglas de
+prob >= 55-65% salen entre -1% y -18% (solo una en positivo, 24 apuestas,
++0.29s).
+
+**Prueba** (`scripts/recalibrar_ambos.py`, fijada antes): cada mes, un
+calibrador ajustado solo con las predicciones de los meses anteriores (al
+menos 6 meses detrás). 3.247 partidos, mar-2025 a sep-2026.
+
+| forma | vs sin recalibrar | meses mejor | vs mercado (262 con cuota) |
+|---|---|---|---|
+| sin recalibrar | -- | -- | -0.44s |
+| A Platt | +1.20s | 8/15 | -0.98s |
+| B isotónica | +0.90s | 9/15 | -0.39s |
+
+- **Calibración:** Platt quita la zona inflada (casi nada pasa ya del 65%).
+- **Por qué no llega al listón:** pocos partidos caen en esa zona (unos 300
+  de 3.247), así que el Brier casi no se mueve. Ninguna llega a ~+2.2s, ni
+  mejora frente al mercado.
+- **Decisión:** el modelo oficial NO se cambia.
+- **Regla práctica:** un "ambos marcan sí/no" del modelo por encima del 65%
+  hay que leerlo como ~60%.
+- **Isotónica, ojo:** da algún 100% absurdo en los extremos (2 partidos). Si
+  algún día se usa, recortarla.
