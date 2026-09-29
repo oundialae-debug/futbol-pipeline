@@ -1027,3 +1027,33 @@ menos 6 meses detrás). 3.247 partidos, mar-2025 a sep-2026.
   hay que leerlo como ~60%.
 - **Isotónica, ojo:** da algún 100% absurdo en los extremos (2 partidos). Si
   algún día se usa, recortarla.
+
+## Titulares de 2023/24 (29/09/2026): datos buenos, el modelo casi no cambia
+
+El otro chat sacó de /box-score los onces de ago-2023 a mar-2024: 1.734
+partidos, 11 titulares por equipo, portero primero. Se descargaron los 385
+jugadores nuevos (perfil y estadísticas, unas 770 llamadas). Cobertura de
+onces: del 52% al ~70% de los partidos. Siguen sin once los 184 partidos de
+abr-jun 2024 (ni /lineups ni el backfill del otro chat) y toda 2022/23.
+
+`scripts/experimento_titulares_2324.py`, fijado antes, mes a mes sep-2024 a
+sep-2026:
+
+| prueba | sigmas | meses mejor |
+|---|---|---|
+| 1. oficial CON onces 23/24 vs SIN | +0.31s | 10/21 |
+| 2a. + edad media (ahora 69% cobertura) | +0.30s | 12/21 |
+| 2b. + valor medio | -0.22s | 10/21 |
+| 2c. + bajas por lesión (71% cobertura) | -0.61s | 10/21 |
+
+Nada llega al listón. Los onces se quedan en el histórico: son datos
+correctos y el modelo oficial ya los lee solo. Edad, valor y bajas siguen
+fuera, ahora probadas también con más cobertura: no reabrir.
+
+**Depuración: calidad de plantilla sin once vale 0, no hueco.** Parecía un
+fallo (un partido sin once llega como "equipo de calidad 0"; el 27% de los
+partidos). Probado ponerlo vacío (`scripts/experimento_calidad_vacia.py`):
+**-1.92s, peor**. Con el 0 y "titulares conocidos = 0", el árbol ya sabe
+separar "no hay once" de "equipo malo". Se queda como está. Ojo al medir
+cobertura de esta variable: `notna()` da 100% siempre; hay que mirar
+`calidad_conocidos > 0`.
