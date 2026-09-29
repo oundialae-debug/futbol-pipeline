@@ -723,3 +723,19 @@ normal y el modelo, con solo dos temporadas detrás, menos. El casi-empate de
 2025/26 (-0.55s) fue el año favorable. **La distancia real del modelo a la
 casa en una temporada cualquiera está entre -0.5s y -5s: no la bate, y en
 un mal año queda lejos.**
+
+## Bug: calidad de plantilla antigua rellenaba con 0 sin once (29/09/2026)
+
+Detectado por el usuario. `rasgos.calcular_calidad_plantilla()` (la calidad
+"vieja": minutos y g/a medios del once) devolvía 0.0 cuando no había once o
+ningún titular conocido: 100% de ceros en 2022/23 y 38% en abr-jun 2024.
+Corregido en la copia de ESTA carpeta: devuelve NaN (desconocido).
+- **El modelo oficial NO estaba afectado:** usa `rasgos_mas25.calidad_posicion`
+  (cp_ataque), que ya marcaba NaN (2022/23: 100% vacío, 0% ceros).
+- Afectaba solo a experimentos con "calidad_plantilla_vieja" o con la
+  producción del repo padre como referencia; ninguno fue elegido.
+- La misma función sigue con el fallo en scripts/rasgos.py del repo padre y
+  en modelos/ambos_marcan (no tocados desde aquí).
+- Aparte: 184 partidos de abr-jun 2024 no tienen once (ni /lineups ni el
+  backfill de box-score, que paró en 2024-04-01). Se pueden completar con
+  ~184 llamadas de /box-score.

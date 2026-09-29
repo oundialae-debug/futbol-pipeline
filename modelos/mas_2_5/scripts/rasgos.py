@@ -536,8 +536,11 @@ def calcular_calidad_plantilla(hist, jugador_stats_crudo):
         stats_prev[clave] = (m0 + m, ga0 + g + a, p0 + p)
 
     def calidad_equipo(ids_str, temporada_str):
+        # 29/09/2026: sin once, o sin ningún titular conocido, la calidad es
+        # DESCONOCIDA (NaN), no 0. Con 0 el modelo veía "plantilla sin goles ni
+        # minutos" en toda 2022/23 y en 184 partidos de abr-jun 2024.
         if pd.isna(ids_str):
-            return 0.0, 0.0, 0
+            return np.nan, np.nan, 0
         minutos, ga = [], []
         for jid_s in ids_str.split("|"):
             clave = (int(jid_s), temporada_str)
@@ -547,7 +550,7 @@ def calcular_calidad_plantilla(hist, jugador_stats_crudo):
                 ga.append(g_a)
         n = len(minutos)
         if n == 0:
-            return 0.0, 0.0, 0
+            return np.nan, np.nan, 0
         return float(np.mean(minutos)), float(np.mean(ga)), n
 
     if "local_ids" not in hist.columns or "visitante_ids" not in hist.columns:
