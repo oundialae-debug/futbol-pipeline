@@ -17,271 +17,185 @@ button{font-family:inherit;cursor:pointer}
 input:focus{outline:2px solid #C6F24E;outline-offset:1px}
 </style>
 </helmet>
-<div style="width: 390px; height: 3060px; box-sizing: border-box; background: #0E1116; display: flex; flex-direction: column">
+<div style="width: 390px; height: 1540px; box-sizing: border-box; background: #0E1116; display: flex; flex-direction: column; gap: 10px; padding-bottom: 24px">
 
-<header style="display: flex; align-items: center; gap: 4px; padding: 16px 12px 0 8px">
-<a href="Jornada.dc.html" aria-label="Volver a la jornada" style="width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; color: #C4CCD6">
+<header style="display: flex; align-items: center; gap: 4px; padding: 14px 12px 0 8px">
+<a href="Main.dc.html" aria-label="Volver a partidos" style="width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; color: #C4CCD6">
 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"></path></svg>
 </a>
-<div style="flex-grow: 1; display: flex; flex-direction: column">
-<span style="font-size: 13px; font-weight: 600">LaLiga · Jornada 8</span>
-<span style="font-size: 12px; color: #9AA4B2">Sábado 10 de octubre · 21:00</span>
-</div>
+<span style="flex-grow: 1; font-size: 13px; color: #9AA4B2">LaLiga · J8 · Sáb 10 oct</span>
 </header>
 
-<section style="display: flex; align-items: flex-start; justify-content: space-between; padding: 18px 20px 22px 20px">
-<div style="width: 130px; display: flex; flex-direction: column; align-items: center; gap: 6px; text-align: center">
-<div style="width: 56px; height: 56px; border-radius: 50%; background: #E8ECF1; color: #0E1116; font-weight: 700; font-size: 15px; display: flex; align-items: center; justify-content: center">RMA</div>
-<span style="font-size: 15px; font-weight: 600">Real Madrid</span>
-<span style="font-size: 12px; color: #9AA4B2">4.º en la tabla<br>2.º por nivel</span>
+<section style="display: flex; align-items: center; justify-content: space-between; padding: 4px 24px 8px 24px">
+<div style="width: 100px; display: flex; flex-direction: column; align-items: center; gap: 6px">
+<div style="width: 52px; height: 52px; border-radius: 50%; background: #E8ECF1; color: #0E1116; font-weight: 700; font-size: 14px; display: flex; align-items: center; justify-content: center">RMA</div>
+<span style="font-size: 14px; font-weight: 600">Real Madrid</span>
+<span style="font-size: 11px; color: #9AA4B2">4.º</span>
 </div>
-<span style="margin-top: 18px; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 22px; color: #9AA4B2">vs</span>
-<div style="width: 130px; display: flex; flex-direction: column; align-items: center; gap: 6px; text-align: center">
-<div style="width: 56px; height: 56px; border-radius: 50%; background: #E3C33C; color: #0E1116; font-weight: 700; font-size: 15px; display: flex; align-items: center; justify-content: center">VIL</div>
-<span style="font-size: 15px; font-weight: 600">Villarreal</span>
-<span style="font-size: 12px; color: #9AA4B2">9.º en la tabla<br>4.º por nivel</span>
+<span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 30px">21:00</span>
+<div style="width: 100px; display: flex; flex-direction: column; align-items: center; gap: 6px">
+<div style="width: 52px; height: 52px; border-radius: 50%; background: #E3C33C; color: #0E1116; font-weight: 700; font-size: 14px; display: flex; align-items: center; justify-content: center">VIL</div>
+<span style="font-size: 14px; font-weight: 600">Villarreal</span>
+<span style="font-size: 11px; color: #9AA4B2">9.º</span>
 </div>
 </section>
 
-<section style="margin: 0 16px; padding: 18px; border-radius: 22px; background: #171B22; display: flex; flex-direction: column; gap: 14px">
-<div style="display: flex; justify-content: space-between; align-items: center">
-<span style="font-size: 17px; font-weight: 600">¿Quién gana?</span>
-<span style="padding: 4px 10px; border-radius: 10px; background: #1F3A2B; color: #9BE3BD; font-size: 12px; font-weight: 600">Dato sólido</span>
-</div>
-<div style="display: flex; height: 40px; border-radius: 10px; overflow: hidden; gap: 3px">
-<div style="width: 66%; background: {{c1}}; color: #0E1116; display: flex; align-items: center; justify-content: space-between; padding: 0 12px; font-size: 12px; font-weight: 600"><span>Madrid</span><span style="font-family: 'IBM Plex Mono', monospace; font-size: 15px">66%</span></div>
-<div style="width: 21%; background: #4A5360; color: #FFFFFF; display: flex; align-items: center; justify-content: center; font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 600">21%</div>
-<div style="width: 13%; background: {{c2}}; color: #0E1116; display: flex; align-items: center; justify-content: center; font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 600">13%</div>
-</div>
-<p style="margin: 0; font-size: 14px; line-height: 1.55; color: #C4CCD6">De cada 100 veces que se jugara este partido, el Madrid ganaría unas <b style="color: #E8ECF1">66</b>, habría empate en <b style="color: #E8ECF1">21</b> y ganaría el Villarreal en <b style="color: #E8ECF1">13</b>.</p>
+<section style="margin: 0 16px; padding: 14px; border-radius: 18px; background: #171B22; display: flex; flex-direction: column; gap: 12px">
 <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px">
-<div style="padding: 10px; border-radius: 12px; background: #0E1116; display: flex; flex-direction: column; gap: 2px"><span style="font-size: 11px; color: #9AA4B2">Cuota justa 1</span><span style="font-family: 'IBM Plex Mono', monospace; font-size: 18px; font-weight: 600">1,51</span></div>
-<div style="padding: 10px; border-radius: 12px; background: #0E1116; display: flex; flex-direction: column; gap: 2px"><span style="font-size: 11px; color: #9AA4B2">Cuota justa X</span><span style="font-family: 'IBM Plex Mono', monospace; font-size: 18px; font-weight: 600">4,67</span></div>
-<div style="padding: 10px; border-radius: 12px; background: #0E1116; display: flex; flex-direction: column; gap: 2px"><span style="font-size: 11px; color: #9AA4B2">Cuota justa 2</span><span style="font-family: 'IBM Plex Mono', monospace; font-size: 18px; font-weight: 600">8,00</span></div>
-</div>
-<span style="font-size: 12px; line-height: 1.5; color: #9AA4B2">Por qué «sólido»: en 1.209 partidos de LaLiga, cuando dijimos que el local ganaba 67 de cada 100, ganó 73; cuando dijimos 52, ganó 49.</span>
-</section>
-
-<section style="margin: 12px 16px 0 16px; padding: 18px; border-radius: 22px; background: #171B22; border: 1px solid #2C333D; display: flex; flex-direction: column; gap: 14px">
-<div style="display: flex; flex-direction: column; gap: 4px">
-<span style="font-size: 17px; font-weight: 600">¿Te pagan bien?</span>
-<span style="font-size: 13px; line-height: 1.5; color: #9AA4B2">Elige a qué apostarías y escribe la cuota que ves en tu casa de apuestas.</span>
-</div>
-<div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px" role="group" aria-label="Qué apostarías">
 <sc-for list="{{opciones}}" as="o" hint-placeholder-count="3">
-<button onClick="{{o.pick}}" aria-pressed="{{o.on}}" style="height: 44px; border-radius: 12px; border: {{o.borde}}; background: {{o.fondo}}; color: {{o.texto}}; font-size: 13px; font-weight: 600">{{o.label}}</button>
+<button onClick="{{o.pick}}" aria-pressed="{{o.on}}" style="height: 64px; border-radius: 12px; border: {{o.borde}}; background: {{o.fondo}}; color: {{o.texto}}; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px">
+<span style="font-size: 11px; opacity: 0.85">{{o.label}}</span>
+<span style="font-family: 'IBM Plex Mono', monospace; font-size: 18px; font-weight: 600">{{o.cuota}}</span>
+<span style="font-size: 11px; opacity: 0.85">{{o.pct}}%</span>
+</button>
 </sc-for>
 </div>
 <div style="display: flex; align-items: center; gap: 8px">
-<label for="cuota-casa" style="flex-grow: 1; font-size: 14px; color: #C4CCD6">Cuota de tu casa</label>
-<button onClick="{{menos}}" aria-label="Bajar la cuota" style="width: 44px; height: 44px; border-radius: 12px; border: 1px solid #2C333D; background: #0E1116; color: #E8ECF1; font-size: 20px">−</button>
-<input id="cuota-casa" type="text" inputmode="decimal" value="{{cuota}}" onChange="{{onCuota}}" style="width: 84px; height: 44px; box-sizing: border-box; border-radius: 12px; border: 1px solid #3A4250; background: #0E1116; color: #E8ECF1; text-align: center; font-family: 'IBM Plex Mono', monospace; font-size: 18px; font-weight: 600">
-<button onClick="{{mas}}" aria-label="Subir la cuota" style="width: 44px; height: 44px; border-radius: 12px; border: 1px solid #2C333D; background: #0E1116; color: #E8ECF1; font-size: 20px">+</button>
+<label for="cuota-casa" style="flex-grow: 1; font-size: 13px; color: #C4CCD6">Tu casa paga</label>
+<button onClick="{{menos}}" aria-label="Bajar la cuota" style="width: 40px; height: 44px; border-radius: 10px; border: 1px solid #2C333D; background: #0E1116; color: #E8ECF1; font-size: 18px">−</button>
+<input id="cuota-casa" type="text" inputmode="decimal" value="{{cuota}}" onChange="{{onCuota}}" style="width: 76px; height: 44px; box-sizing: border-box; border-radius: 10px; border: 1px solid #3A4250; background: #0E1116; color: #E8ECF1; text-align: center; font-family: 'IBM Plex Mono', monospace; font-size: 17px; font-weight: 600">
+<button onClick="{{mas}}" aria-label="Subir la cuota" style="width: 40px; height: 44px; border-radius: 10px; border: 1px solid #2C333D; background: #0E1116; color: #E8ECF1; font-size: 18px">+</button>
 </div>
-<div style="padding: 14px; border-radius: 14px; background: #0E1116; display: flex; flex-direction: column; gap: 8px" aria-live="polite">
-<span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 22px; line-height: 1.15; color: {{veredictoColor}}">{{veredicto}}</span>
-<span style="font-size: 13px; line-height: 1.55; color: #C4CCD6">{{explicacion}}</span>
-<div style="display: flex; justify-content: space-between; padding-top: 8px; border-top: 1px solid #242A33; font-size: 12px; color: #9AA4B2">
-<span>Cuota justa de «{{selNombre}}»</span>
-<span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #E8ECF1">{{justaSel}}</span>
-</div>
+<div style="height: 44px; padding: 0 14px; border-radius: 12px; background: {{vFondo}}; display: flex; align-items: center; justify-content: space-between" aria-live="polite">
+<span style="font-size: 15px; font-weight: 700; color: {{vColor}}">{{veredicto}}</span>
+<span style="font-family: 'IBM Plex Mono', monospace; font-size: 15px; font-weight: 600; color: {{vColor}}">{{vPct}}</span>
 </div>
 </section>
 
-<section style="margin: 12px 16px 0 16px; padding: 18px; border-radius: 22px; background: #171B22; display: flex; flex-direction: column; gap: 14px">
-<span style="font-size: 17px; font-weight: 600">¿Quién es mejor?</span>
-<sc-for list="{{nivel}}" as="n" hint-placeholder-count="2">
-<div style="display: flex; flex-direction: column; gap: 6px">
-<div style="display: flex; justify-content: space-between; font-size: 13px"><span>{{n.eq}}</span><span style="color: #C4CCD6"><b style="color: #E8ECF1">{{n.pos}}.º</b> de 20 por nivel</span></div>
-<div style="display: grid; grid-template-columns: repeat(20, minmax(0, 1fr)); gap: 3px" aria-hidden="true">
-<sc-for list="{{n.puntos}}" as="p" hint-placeholder-count="20">
-<span style="height: 10px; border-radius: 3px; background: {{p.color}}"></span>
-</sc-for>
+<section style="margin: 0 16px; padding: 14px; border-radius: 18px; background: #171B22; display: flex; flex-direction: column; gap: 10px">
+<div style="display: flex; justify-content: space-between; align-items: baseline"><span style="font-size: 14px; font-weight: 600">Nivel</span><span style="font-size: 11px; color: #9AA4B2">1.º ← → 20.º</span></div>
+<div style="position: relative; height: 34px">
+<div style="position: absolute; left: 0; right: 0; top: 16px; height: 2px; background: #242A33"></div>
+<div style="position: absolute; left: {{posRma}}%; top: 4px; width: 26px; height: 26px; margin-left: -13px; border-radius: 50%; background: #E8ECF1; color: #0E1116; font-size: 11px; font-weight: 700; display: flex; align-items: center; justify-content: center">2</div>
+<div style="position: absolute; left: {{posVil}}%; top: 4px; width: 26px; height: 26px; margin-left: -13px; border-radius: 50%; background: #E3C33C; color: #0E1116; font-size: 11px; font-weight: 700; display: flex; align-items: center; justify-content: center">4</div>
 </div>
-</div>
-</sc-for>
-<div style="display: flex; justify-content: space-between; font-size: 11px; color: #9AA4B2"><span>1.º, el mejor</span><span>20.º, el peor</span></div>
-<p style="margin: 0; font-size: 13px; line-height: 1.55; color: #C4CCD6"><b style="color: #E8ECF1">Qué es el nivel:</b> una nota que sube al ganar y baja al perder, y se mueve más si el rival era bueno. Usa todos sus partidos desde 2022, así que un mal día le afecta poco. A la tabla, con 7 jornadas, un par de goles con suerte la mueven mucho.</p>
+<span style="font-size: 12px; color: #9AA4B2">Los dos, mejores de lo que dice la tabla (4.º y 9.º).</span>
 </section>
 
-<section style="margin: 12px 16px 0 16px; padding: 18px; border-radius: 22px; background: #171B22; display: flex; flex-direction: column; gap: 14px">
-<div style="display: flex; justify-content: space-between; align-items: baseline">
-<span style="font-size: 17px; font-weight: 600">¿Cómo llegan?</span>
-<span style="font-size: 12px; color: #9AA4B2">del más reciente al más antiguo</span>
-</div>
+<section style="margin: 0 16px; padding: 14px; border-radius: 18px; background: #171B22; display: flex; flex-direction: column; gap: 12px">
+<span style="font-size: 14px; font-weight: 600">Últimos 5</span>
 <sc-for list="{{forma}}" as="f" hint-placeholder-count="2">
-<div style="display: flex; flex-direction: column; gap: 6px">
-<span style="font-size: 14px; font-weight: 600">{{f.eq}} · {{f.resumen}}</span>
-<div style="display: flex; flex-direction: column; border-radius: 12px; background: #0E1116">
+<div style="display: flex; align-items: center; gap: 8px">
+<span style="width: 36px; font-size: 12px; font-weight: 600; color: #C4CCD6">{{f.eq}}</span>
+<div style="flex-grow: 1; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 5px">
 <sc-for list="{{f.res}}" as="x" hint-placeholder-count="5">
-<div style="display: flex; align-items: center; gap: 10px; padding: 8px 12px; border-top: {{x.borde}}">
-<span style="width: 62px; font-size: 12px; font-weight: 700; color: {{x.color}}">{{x.txt}}</span>
-<span style="flex-grow: 1; font-size: 13px">{{x.rival}}</span>
-<span style="font-size: 11px; color: #9AA4B2">{{x.donde}}</span>
-<span style="width: 34px; text-align: right; font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 600">{{x.marcador}}</span>
+<div style="display: flex; flex-direction: column; align-items: center; gap: 3px">
+<span style="width: 100%; height: 30px; border-radius: 8px; background: {{x.fondo}}; color: #FFFFFF; font-family: 'IBM Plex Mono', monospace; font-size: 12px; font-weight: 600; display: flex; align-items: center; justify-content: center">{{x.marcador}}</span>
+<span style="font-size: 10px; color: #9AA4B2">{{x.rival}}</span>
 </div>
 </sc-for>
 </div>
 </div>
 </sc-for>
-<span style="font-size: 12px; line-height: 1.5; color: #9AA4B2">El marcador va con los goles del equipo primero: «1-2» ante el Atlético es que el Madrid marcó 1 y encajó 2.</span>
+<div style="display: flex; gap: 12px; font-size: 11px; color: #9AA4B2">
+<span><span style="display: inline-block; width: 8px; height: 8px; border-radius: 2px; background: #2F7D55; margin-right: 4px"></span>ganó</span>
+<span><span style="display: inline-block; width: 8px; height: 8px; border-radius: 2px; background: #4A5360; margin-right: 4px"></span>empató</span>
+<span><span style="display: inline-block; width: 8px; height: 8px; border-radius: 2px; background: #A33A2E; margin-right: 4px"></span>perdió</span>
+<span style="margin-left: auto">más reciente →</span>
+</div>
 </section>
 
-<section style="margin: 12px 16px 0 16px; padding: 18px; border-radius: 22px; background: #171B22; display: flex; flex-direction: column; gap: 14px">
-<div style="display: flex; justify-content: space-between; align-items: center">
-<span style="font-size: 17px; font-weight: 600">¿Habrá goles?</span>
-<span style="padding: 4px 10px; border-radius: 10px; background: #3A3320; color: #F2D38A; font-size: 12px; font-weight: 600">Puede ser azar</span>
-</div>
-<span style="font-size: 13px; line-height: 1.5; color: #9AA4B2">En sus últimos 10 partidos. La raya blanca es lo normal en LaLiga.</span>
+<section style="margin: 0 16px; padding: 14px; border-radius: 18px; background: #171B22; display: flex; flex-direction: column; gap: 14px">
+<div style="display: flex; justify-content: space-between; align-items: baseline"><span style="font-size: 14px; font-weight: 600">Goles · últimos 10</span><span style="font-size: 11px; color: #9AA4B2">▮ = sí pasó</span></div>
 <sc-for list="{{goles}}" as="g" hint-placeholder-count="2">
-<div style="display: flex; flex-direction: column; gap: 8px">
-<span style="font-size: 14px; font-weight: 600">{{g.mercado}}</span>
-<span style="font-size: 12px; color: #9AA4B2">{{g.explica}}</span>
+<div style="display: flex; flex-direction: column; gap: 6px">
+<div style="display: flex; justify-content: space-between; font-size: 12px"><span style="color: #C4CCD6">{{g.mercado}}</span><span style="color: #9AA4B2">LaLiga: {{g.liga}}</span></div>
 <sc-for list="{{g.filas}}" as="r" hint-placeholder-count="2">
 <div style="display: flex; align-items: center; gap: 8px">
-<span style="width: 80px; font-size: 12px; color: #C4CCD6">{{r.eq}}</span>
-<div style="position: relative; flex-grow: 1; height: 12px; border-radius: 6px; background: #242A33">
-<div style="width: {{r.w}}%; height: 12px; border-radius: 6px; background: {{r.color}}"></div>
-<div style="position: absolute; left: {{g.liga}}%; top: -3px; width: 2px; height: 18px; background: #E8ECF1"></div>
+<span style="width: 36px; font-size: 12px; font-weight: 600; color: #C4CCD6">{{r.eq}}</span>
+<div style="flex-grow: 1; display: grid; grid-template-columns: repeat(10, minmax(0, 1fr)); gap: 3px">
+<sc-for list="{{r.puntos}}" as="p" hint-placeholder-count="10">
+<span style="height: 14px; border-radius: 3px; background: {{p.c}}"></span>
+</sc-for>
 </div>
-<span style="width: 58px; text-align: right; font-family: 'IBM Plex Mono', monospace; font-size: 12px">{{r.txt}}</span>
+<span style="width: 36px; text-align: right; font-family: 'IBM Plex Mono', monospace; font-size: 12px; font-weight: 600">{{r.txt}}</span>
 </div>
 </sc-for>
-<span style="font-size: 12px; color: #9AA4B2">Lo normal en LaLiga: {{g.ligaTxt}}</span>
 </div>
 </sc-for>
-<p style="margin: 0; font-size: 13px; line-height: 1.55; color: #C4CCD6">Los dos vienen de partidos con goles, el Villarreal sobre todo. Pero 10 partidos son pocos: una racha así puede darse por casualidad. Tómalo como pista, no como prueba.</p>
 </section>
 
-<section style="margin: 12px 16px 0 16px; padding: 18px; border-radius: 22px; background: #171B22; display: flex; flex-direction: column; gap: 14px">
-<div style="display: flex; justify-content: space-between; align-items: center">
-<span style="font-size: 17px; font-weight: 600">Cara a cara</span>
-<span style="padding: 4px 10px; border-radius: 10px; background: #3A3320; color: #F2D38A; font-size: 12px; font-weight: 600">Puede ser azar</span>
-</div>
-<span style="font-size: 13px; line-height: 1.5; color: #9AA4B2">Sus últimos 10 partidos entre ellos, desde febrero de 2022.</span>
-<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px">
-<div style="padding: 12px; border-radius: 12px; background: #0E1116; display: flex; flex-direction: column; gap: 2px"><span style="font-size: 20px; font-weight: 600">6 · 2 · 2</span><span style="font-size: 12px; color: #9AA4B2">victorias Madrid · empates · victorias Villarreal</span></div>
-<div style="padding: 12px; border-radius: 12px; background: #0E1116; display: flex; flex-direction: column; gap: 2px"><span style="font-size: 20px; font-weight: 600">3,7 goles</span><span style="font-size: 12px; color: #9AA4B2">de media por partido (en LaLiga: unos 2,7)</span></div>
-<div style="padding: 12px; border-radius: 12px; background: #0E1116; display: flex; flex-direction: column; gap: 2px"><span style="font-size: 20px; font-weight: 600">7 de 10</span><span style="font-size: 12px; color: #9AA4B2">con 3 goles o más</span></div>
-<div style="padding: 12px; border-radius: 12px; background: #0E1116; display: flex; flex-direction: column; gap: 2px"><span style="font-size: 20px; font-weight: 600">7 de 10</span><span style="font-size: 12px; color: #9AA4B2">marcaron los dos</span></div>
-</div>
-<div style="display: flex; flex-direction: column">
-<sc-for list="{{ultimos}}" as="u" hint-placeholder-count="4">
-<div style="display: flex; align-items: center; gap: 10px; padding: 9px 0; border-top: {{u.borde}}">
-<span style="width: 78px; font-size: 12px; color: #9AA4B2">{{u.fecha}}</span>
-<span style="flex-grow: 1; font-size: 13px">{{u.partido}}</span>
-<span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 600">{{u.res}}</span>
-</div>
+<section style="margin: 0 16px; padding: 14px; border-radius: 18px; background: #171B22; display: flex; flex-direction: column; gap: 10px">
+<div style="display: flex; justify-content: space-between; align-items: baseline"><span style="font-size: 14px; font-weight: 600">Cara a cara · últimos 10</span><span style="font-size: 11px; color: #9AA4B2">desde 2022</span></div>
+<div style="display: grid; grid-template-columns: repeat(10, minmax(0, 1fr)); gap: 4px">
+<sc-for list="{{h2h}}" as="h" hint-placeholder-count="10">
+<span style="height: 30px; border-radius: 7px; background: {{h.fondo}}; color: #0E1116; font-size: 11px; font-weight: 700; display: flex; align-items: center; justify-content: center">{{h.l}}</span>
 </sc-for>
 </div>
-<span style="font-size: 12px; line-height: 1.5; color: #9AA4B2">Las plantillas cambian de un año a otro: lo que pasó en 2022 dice poco de este partido.</span>
+<div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px; text-align: center">
+<div style="padding: 8px 4px; border-radius: 10px; background: #0E1116; display: flex; flex-direction: column"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 15px; font-weight: 600">6-2-2</span><span style="font-size: 10px; color: #9AA4B2">R · X · V</span></div>
+<div style="padding: 8px 4px; border-radius: 10px; background: #0E1116; display: flex; flex-direction: column"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 15px; font-weight: 600">3,7</span><span style="font-size: 10px; color: #9AA4B2">goles/partido</span></div>
+<div style="padding: 8px 4px; border-radius: 10px; background: #0E1116; display: flex; flex-direction: column"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 15px; font-weight: 600">7/10</span><span style="font-size: 10px; color: #9AA4B2">ambos marcan</span></div>
+</div>
 </section>
 
-<a href="Arbitros.dc.html" style="margin: 12px 16px 0 16px; padding: 16px 18px; border-radius: 22px; border: 1px dashed #2C333D; display: flex; align-items: center; gap: 12px">
-<div style="flex-grow: 1; display: flex; flex-direction: column; gap: 4px">
-<span style="font-size: 15px; font-weight: 600">Árbitro: aún sin designar</span>
-<span style="font-size: 13px; line-height: 1.5; color: #9AA4B2">Cuando se sepa, verás cuántas tarjetas saca comparado con la media de LaLiga (4,5 por partido).</span>
-</div>
-<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#9AA4B2" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"></path></svg>
+<a href="Arbitros.dc.html" style="margin: 0 16px; min-height: 52px; padding: 0 14px; border-radius: 18px; border: 1px dashed #2C333D; display: flex; align-items: center; gap: 10px">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#9AA4B2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="3" width="10" height="15" rx="2" transform="rotate(12 11 10)"></rect></svg>
+<span style="flex-grow: 1; font-size: 13px; color: #C4CCD6">Árbitro: sin designar</span>
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#9AA4B2" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"></path></svg>
 </a>
 
-<section style="margin: 12px 16px 28px 16px; padding: 16px 18px; border-radius: 18px; background: #171B22; display: flex; flex-direction: column; gap: 6px">
-<span style="font-size: 14px; font-weight: 600">Lo que estos números NO saben</span>
-<span style="font-size: 13px; line-height: 1.55; color: #C4CCD6">Lesiones, sanciones, rotaciones por Champions, el once que saldrá. Las casas sí lo saben. Si ves una cuota muy distinta de la justa, casi siempre la explicación está ahí.</span>
-</section>
+<p style="margin: 0 20px; font-size: 11px; line-height: 1.5; color: #9AA4B2">No incluye bajas ni alineaciones.</p>
 </div>
 </x-dc>
-<script type="text/x-dc" data-dc-script data-props='{"c1":{"editor":"color","default":"#5B9DFF"},"c2":{"editor":"color","default":"#F2A541"},"$preview":{"width":390,"height":3060}}'>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":1540}}'>
 class Component extends DCLogic {
   constructor(props) {
     super(props);
     this.state = { sel: '1', cuota: '1,60' };
   }
   renderVals() {
-    const c1 = this.props.c1 ?? '#5B9DFF', c2 = this.props.c2 ?? '#F2A541';
-    const azul = '#8CBBFF', naranja = '#F2A541';
     const f2 = (x) => x.toFixed(2).replace('.', ',');
+    const accent = '#C6F24E';
     // Datos de app_apostador/datos.json (generar_datos.py)
     const justas = { '1': 1.51, 'X': 4.67, '2': 8.00 };
-    const nombres = { '1': 'gana el Madrid', 'X': 'empate', '2': 'gana el Villarreal' };
+    const pcts = { '1': 66, 'X': 21, '2': 13 };
     const sel = this.state.sel;
-    const opciones = [['1', '1 · Madrid'], ['X', 'X · Empate'], ['2', '2 · Villarreal']].map(([k, label]) => {
+    const opciones = [['1', 'Madrid'], ['X', 'Empate'], ['2', 'Villarreal']].map(([k, label]) => {
       const on = k === sel;
       return {
-        label, on,
-        borde: on ? '1px solid #E8ECF1' : '1px solid #2C333D',
-        fondo: on ? '#E8ECF1' : '#0E1116', texto: on ? '#0E1116' : '#C4CCD6',
-        pick: () => this.setState({ sel: k })
+        label, cuota: f2(justas[k]), pct: pcts[k], on,
+        borde: on ? '1px solid ' + accent : '1px solid #2C333D',
+        fondo: on ? accent : '#0E1116', texto: on ? '#0E1116' : '#E8ECF1',
+        pick: () => this.setState({ sel: k, cuota: f2(justas[k] + 0.1) })
       };
     });
     const leer = (s) => parseFloat(String(s).replace(',', '.'));
     const cuota = leer(this.state.cuota);
     const justa = justas[sel];
-    let veredicto, explicacion, veredictoColor;
-    if (!(cuota > 1)) {
-      veredicto = 'Escribe una cuota';
-      explicacion = 'Tiene que ser un número mayor que 1, como 1,60.';
-      veredictoColor = '#E8ECF1';
-    } else {
+    let veredicto = 'Escribe una cuota', vPct = '', vColor = '#C4CCD6', vFondo = '#0E1116';
+    if (cuota > 1) {
       const valor = cuota / justa - 1;
-      const euros = Math.round(Math.abs(valor) * 100);
-      if (valor < -0.02) {
-        veredicto = 'Te pagan menos de lo justo';
-        veredictoColor = naranja;
-        explicacion = 'A la larga perderías unos ' + euros + ' € de cada 100 € apostados. Es el margen de la casa: lo normal. Para que el precio sea justo, la cuota tendría que ser al menos ' + f2(justa) + '.';
-      } else if (valor <= 0.03) {
-        veredicto = 'Precio casi justo';
-        veredictoColor = '#E8ECF1';
-        explicacion = 'La diferencia con la cuota justa es tan pequeña que cabe dentro del error de nuestros números. No es ni buena ni mala apuesta.';
-      } else {
-        veredicto = 'Te pagan más de lo justo';
-        veredictoColor = azul;
-        explicacion = 'Según nuestros números ganarías unos ' + euros + ' € por cada 100 € a la larga. Antes de apostar, mira bajas y alineaciones: si la casa paga tanto, puede que sepa algo que nuestros números no ven.';
-      }
+      vPct = (valor >= 0 ? '+' : '−') + Math.round(Math.abs(valor) * 100) + '%';
+      if (valor > 0.03) { veredicto = 'Buena cuota'; vColor = '#0E1116'; vFondo = '#8CBBFF'; }
+      else if (valor >= -0.02) { veredicto = 'Cuota justa'; vColor = '#E8ECF1'; vFondo = '#242A33'; }
+      else { veredicto = 'Cuota baja'; vColor = '#0E1116'; vFondo = '#F2A541'; }
     }
     const paso = (d) => () => {
       const c = leer(this.state.cuota);
-      const n = Math.max(1.01, (c > 1 ? c : justa) + d);
-      this.setState({ cuota: f2(n) });
+      this.setState({ cuota: f2(Math.max(1.01, (c > 1 ? c : justa) + d)) });
     };
-    const scale = (pos, color) => Array.from({ length: 20 }, (_, i) => ({ color: i + 1 === pos ? color : (i + 1 < pos ? '#3A4250' : '#242A33') }));
-    const R = (r, rival, casa, gf, gc, i) => ({
-      txt: r === 'G' ? 'Ganó' : r === 'E' ? 'Empató' : 'Perdió',
-      color: r === 'G' ? '#9BE3BD' : r === 'E' ? '#C4CCD6' : '#FFB4A8',
-      rival: 'vs ' + rival, donde: casa ? 'en casa' : 'fuera', marcador: gf + '-' + gc,
-      borde: i ? '1px solid #242A33' : 'none'
-    });
+    const col = { G: '#2F7D55', E: '#4A5360', P: '#A33A2E' };
+    const R = (r, rival, gf, gc) => ({ fondo: col[r], rival, marcador: gf + '-' + gc });
     const forma = [
-      { eq: 'Real Madrid', resumen: '3 ganados, 2 perdidos', res: [
-        ['P', 'Atlético', false, 1, 2], ['G', 'Elche', false, 3, 2], ['G', 'Rayo', true, 4, 1],
-        ['P', 'Betis', false, 0, 1], ['G', 'Málaga', true, 4, 0]].map((x, i) => R(...x, i)) },
-      { eq: 'Villarreal', resumen: '2 ganados, 3 perdidos', res: [
-        ['G', 'Levante', true, 3, 1], ['G', 'Málaga', false, 3, 1], ['P', 'Betis', true, 1, 2],
-        ['P', 'Deportivo', true, 2, 3], ['P', 'Alavés', false, 0, 1]].map((x, i) => R(...x, i)) }
+      { eq: 'RMA', res: [R('G', 'MAL', 4, 0), R('P', 'BET', 0, 1), R('G', 'RAY', 4, 1), R('G', 'ELC', 3, 2), R('P', 'ATM', 1, 2)] },
+      { eq: 'VIL', res: [R('P', 'ALA', 0, 1), R('P', 'DEP', 2, 3), R('P', 'BET', 1, 2), R('G', 'MAL', 3, 1), R('G', 'LEV', 3, 1)] }
     ];
+    const tira = (n, c) => Array.from({ length: 10 }, (_, i) => ({ c: i < n ? c : '#242A33' }));
     const goles = [
-      { mercado: 'Más de 2,5 goles', explica: 'Partidos que acabaron con 3 goles o más, sumando los dos equipos.', liga: 51, ligaTxt: '5 de cada 10 partidos.',
-        filas: [{ eq: 'Real Madrid', w: 70, txt: '7 de 10', color: c1 }, { eq: 'Villarreal', w: 80, txt: '8 de 10', color: c2 }] },
-      { mercado: 'Ambos marcan', explica: 'Partidos en los que marcaron los dos equipos.', liga: 57, ligaTxt: '6 de cada 10 partidos.',
-        filas: [{ eq: 'Real Madrid', w: 60, txt: '6 de 10', color: c1 }, { eq: 'Villarreal', w: 80, txt: '8 de 10', color: c2 }] }
+      { mercado: 'Más de 2,5 goles', liga: '5/10', filas: [{ eq: 'RMA', txt: '7/10', puntos: tira(7, '#E8ECF1') }, { eq: 'VIL', txt: '8/10', puntos: tira(8, '#E3C33C') }] },
+      { mercado: 'Ambos marcan', liga: '6/10', filas: [{ eq: 'RMA', txt: '6/10', puntos: tira(6, '#E8ECF1') }, { eq: 'VIL', txt: '8/10', puntos: tira(8, '#E3C33C') }] }
     ];
+    const hc = { R: ['R', '#E8ECF1'], X: ['X', '#5A6472'], V: ['V', '#E3C33C'] };
+    const h2h = ['X', 'V', 'R', 'V', 'R', 'X', 'R', 'R', 'R', 'R'].map((k) => ({ l: hc[k][0], fondo: hc[k][1] }));
+    const pos = (n) => Math.round(4 + (n - 1) / 19 * 92);
     return {
-      c1, c2, opciones, goles, forma,
+      opciones, forma, goles, h2h,
       cuota: this.state.cuota,
       onCuota: (e) => this.setState({ cuota: e.target.value }),
       menos: paso(-0.05), mas: paso(0.05),
-      veredicto, explicacion, veredictoColor,
-      selNombre: nombres[sel], justaSel: f2(justa),
-      nivel: [
-        { eq: 'Real Madrid', pos: 2, puntos: scale(2, c1) },
-        { eq: 'Villarreal', pos: 4, puntos: scale(4, c2) }
-      ],
-      ultimos: [
-        { fecha: '24/01/2026', partido: 'Villarreal – Real Madrid', res: '0-2', borde: 'none' },
-        { fecha: '04/10/2025', partido: 'Real Madrid – Villarreal', res: '3-1', borde: '1px solid #242A33' },
-        { fecha: '15/03/2025', partido: 'Villarreal – Real Madrid', res: '1-2', borde: '1px solid #242A33' },
-        { fecha: '05/10/2024', partido: 'Real Madrid – Villarreal', res: '2-0', borde: '1px solid #242A33' }
-      ]
+      veredicto, vPct, vColor, vFondo,
+      posRma: pos(2), posVil: pos(4)
     };
   }
 }

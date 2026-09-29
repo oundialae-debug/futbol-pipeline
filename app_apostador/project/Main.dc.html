@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
 <meta charset="utf-8">
-<title>Veredicto · Cómo leer los datos</title>
+<title>Veredicto · Partidos</title>
 <script src="./support.js"></script>
 </head>
 <body>
@@ -16,107 +16,156 @@ a{color:inherit;text-decoration:none}a:hover{color:#FFFFFF}
 button{font-family:inherit;cursor:pointer}
 </style>
 </helmet>
-<div style="width: 390px; height: 1560px; box-sizing: border-box; background: #0E1116; display: flex; flex-direction: column; gap: 14px; padding: 0 0 28px 0">
+<div style="width: 390px; height: 1320px; box-sizing: border-box; background: #0E1116; display: flex; flex-direction: column">
 
-<header style="display: flex; align-items: center; gap: 8px; padding: 22px 20px 0 20px">
+<header style="display: flex; align-items: center; justify-content: space-between; padding: 20px 16px 10px 20px">
+<div style="display: flex; align-items: center; gap: 8px">
 <div style="width: 10px; height: 10px; border-radius: 50%; background: {{accent}}"></div>
 <div style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 24px; letter-spacing: -0.5px">Veredicto</div>
+</div>
+<button style="height: 40px; padding: 0 12px 0 10px; border-radius: 20px; border: 1px solid #242A33; background: #171B22; color: #E8ECF1; display: flex; align-items: center; gap: 6px; font-size: 13px; font-weight: 600">
+LaLiga · J8
+<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
+</button>
 </header>
 
-<section style="padding: 6px 20px 4px 20px; display: flex; flex-direction: column; gap: 10px">
-<span style="font-size: 11px; letter-spacing: 0.6px; color: {{accent}}">ANTES DE EMPEZAR · 1 MINUTO</span>
-<h1 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 32px; line-height: 1.05; letter-spacing: -0.5px">Cuatro ideas para entender todo lo que verás</h1>
-<p style="margin: 0; font-size: 14px; line-height: 1.5; color: #C4CCD6">No hace falta saber estadística. Cada número de la app se lee con una de estas cuatro ideas.</p>
-</section>
-
-<section style="margin: 0 16px; padding: 18px; border-radius: 22px; background: #171B22; display: flex; flex-direction: column; gap: 12px">
-<div style="display: flex; align-items: center; gap: 10px">
-<span style="width: 28px; height: 28px; border-radius: 50%; background: {{accent}}; color: #0E1116; font-weight: 700; font-size: 14px; display: flex; align-items: center; justify-content: center">1</span>
-<span style="font-size: 17px; font-weight: 600">Un % es «de cada 100 partidos»</span>
+<div style="display: flex; align-items: center; gap: 8px; padding: 0 16px 12px 16px">
+<div style="flex-grow: 1; height: 1px"></div>
+<div style="width: 150px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 4px; font-size: 11px; font-weight: 600; color: #9AA4B2; text-align: center"><span>1</span><span>X</span><span>2</span></div>
 </div>
-<p style="margin: 0; font-size: 14px; line-height: 1.55; color: #C4CCD6">«Real Madrid 66%» no dice que vaya a ganar. Dice que, si este partido se jugara 100 veces, ganaría unas 66. Las otras 34 no gana.</p>
-<div style="display: grid; grid-template-columns: repeat(10, minmax(0, 1fr)); gap: 4px" aria-label="66 de 100 casillas marcadas">
-<sc-for list="{{cien}}" as="c" hint-placeholder-count="100">
-<span style="height: 12px; border-radius: 3px; background: {{c.color}}"></span>
+
+<button onClick="{{toggleInfo}}" aria-expanded="{{info}}" style="margin: 0 16px 12px 16px; padding: 10px 12px; border-radius: 12px; border: none; background: #171B22; color: #C4CCD6; display: flex; align-items: center; gap: 10px; font-size: 13px; text-align: left">
+<span style="padding: 3px 7px; border-radius: 7px; background: #0E1116; font-family: 'IBM Plex Mono', monospace; font-size: 12px; font-weight: 600; color: #E8ECF1">1,51</span>
+<span style="flex-grow: 1">= cuota justa. <b style="color: #E8ECF1">Si tu casa paga más, buena cuota.</b></span>
+<span style="font-size: 12px; color: #9AA4B2">{{infoSigno}}</span>
+</button>
+<sc-if value="{{info}}" hint-placeholder-val="{{ false }}">
+<div style="margin: -4px 16px 12px 16px; padding: 0 12px; display: flex; gap: 14px; font-size: 12px; color: #9AA4B2">
+<span><span style="display: inline-block; width: 8px; height: 8px; border-radius: 2px; background: {{accent}}; margin-right: 5px"></span>favorito</span>
+<span>Barra = de cada 100 partidos</span>
+</div>
+</sc-if>
+
+<sc-for list="{{dias}}" as="d" hint-placeholder-count="4">
+<div style="display: flex; flex-direction: column; padding: 0 16px 12px 16px">
+<span style="padding: 6px 4px; font-size: 12px; font-weight: 600; letter-spacing: 0.3px; color: #9AA4B2">{{d.dia}}</span>
+<div style="border-radius: 16px; background: #171B22; display: flex; flex-direction: column">
+<sc-for list="{{d.partidos}}" as="p" hint-placeholder-count="3">
+<a href="{{p.enlace}}" style="display: flex; flex-direction: column; gap: 8px; padding: 12px; border-top: {{p.borde}}">
+<div style="display: flex; align-items: center; gap: 8px">
+<span style="width: 38px; font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #9AA4B2">{{p.hora}}</span>
+<div style="flex-grow: 1; min-width: 0; display: flex; flex-direction: column; gap: 5px">
+<div style="display: flex; align-items: center; gap: 7px">
+<span style="width: 20px; height: 20px; border-radius: 50%; background: {{p.cl}}; color: {{p.tl}}; font-size: 7px; font-weight: 700; display: flex; align-items: center; justify-content: center; flex-shrink: 0">{{p.il}}</span>
+<span style="font-size: 14px; font-weight: 500; white-space: nowrap; overflow: hidden; text-overflow: ellipsis">{{p.local}}</span>
+</div>
+<div style="display: flex; align-items: center; gap: 7px">
+<span style="width: 20px; height: 20px; border-radius: 50%; background: {{p.cv}}; color: {{p.tv}}; font-size: 7px; font-weight: 700; display: flex; align-items: center; justify-content: center; flex-shrink: 0">{{p.iv}}</span>
+<span style="font-size: 14px; font-weight: 500; white-space: nowrap; overflow: hidden; text-overflow: ellipsis">{{p.visitante}}</span>
+</div>
+</div>
+<div style="width: 150px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 4px">
+<sc-for list="{{p.cuotas}}" as="c" hint-placeholder-count="3">
+<div style="height: 46px; border-radius: 10px; background: {{c.fondo}}; color: {{c.texto}}; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1px">
+<span style="font-family: 'IBM Plex Mono', monospace; font-size: 14px; font-weight: 600">{{c.cuota}}</span>
+<span style="font-size: 10px; opacity: 0.8">{{c.pct}}%</span>
+</div>
 </sc-for>
 </div>
-<span style="font-size: 12px; color: #9AA4B2">Azul: gana el Madrid (66). Gris: empate o gana el Villarreal (34).</span>
-</section>
-
-<section style="margin: 0 16px; padding: 18px; border-radius: 22px; background: #171B22; display: flex; flex-direction: column; gap: 12px">
-<div style="display: flex; align-items: center; gap: 10px">
-<span style="width: 28px; height: 28px; border-radius: 50%; background: {{accent}}; color: #0E1116; font-weight: 700; font-size: 14px; display: flex; align-items: center; justify-content: center">2</span>
-<span style="font-size: 17px; font-weight: 600">La «cuota justa» es el precio sin trampa</span>
 </div>
-<p style="margin: 0; font-size: 14px; line-height: 1.55; color: #C4CCD6">Es la cuota con la que, a la larga, ni ganas ni pierdes. Se calcula dividiendo 100 entre el %.</p>
-<div style="padding: 14px; border-radius: 14px; background: #0E1116; display: flex; align-items: center; justify-content: space-between">
-<div style="display: flex; flex-direction: column; gap: 2px">
-<span style="font-size: 11px; color: #9AA4B2">Probabilidad</span>
-<span style="font-family: 'IBM Plex Mono', monospace; font-size: 22px; font-weight: 600">66%</span>
+<sc-if value="{{p.chip}}" hint-placeholder-val="{{ true }}">
+<div style="margin-left: 46px; display: flex; align-items: center; gap: 6px">
+<span style="padding: 3px 8px; border-radius: 8px; background: {{p.chipFondo}}; color: {{p.chipColor}}; font-size: 11px; font-weight: 600">{{p.chip}}</span>
+<span style="font-size: 12px; color: #9AA4B2">{{p.chipDato}}</span>
 </div>
-<span style="font-family: 'IBM Plex Mono', monospace; font-size: 15px; color: #9AA4B2">100 ÷ 66 =</span>
-<div style="display: flex; flex-direction: column; gap: 2px; align-items: flex-end">
-<span style="font-size: 11px; color: #9AA4B2">Cuota justa</span>
-<span style="font-family: 'IBM Plex Mono', monospace; font-size: 22px; font-weight: 600; color: {{accent}}">1,51</span>
-</div>
-</div>
-</section>
-
-<section style="margin: 0 16px; padding: 18px; border-radius: 22px; background: #171B22; display: flex; flex-direction: column; gap: 12px">
-<div style="display: flex; align-items: center; gap: 10px">
-<span style="width: 28px; height: 28px; border-radius: 50%; background: {{accent}}; color: #0E1116; font-weight: 700; font-size: 14px; display: flex; align-items: center; justify-content: center">3</span>
-<span style="font-size: 17px; font-weight: 600">Compara con lo que paga tu casa</span>
-</div>
-<p style="margin: 0; font-size: 14px; line-height: 1.55; color: #C4CCD6">Las casas cobran un margen, así que casi siempre pagan <b style="color: #E8ECF1">menos</b> que la cuota justa. Eso es lo normal.</p>
-<div style="display: flex; flex-direction: column; gap: 8px">
-<div style="padding: 12px 14px; border-radius: 14px; background: #0E1116; display: flex; justify-content: space-between; align-items: center; gap: 12px">
-<span style="font-size: 13px; color: #C4CCD6">Tu casa paga <b style="font-family: 'IBM Plex Mono', monospace; color: #E8ECF1">1,40</b></span>
-<span style="font-size: 13px; font-weight: 600; color: {{naranja}}">Te pagan menos de lo justo</span>
-</div>
-<div style="padding: 12px 14px; border-radius: 14px; background: #0E1116; display: flex; justify-content: space-between; align-items: center; gap: 12px">
-<span style="font-size: 13px; color: #C4CCD6">Tu casa paga <b style="font-family: 'IBM Plex Mono', monospace; color: #E8ECF1">1,60</b></span>
-<span style="font-size: 13px; font-weight: 600; color: {{azul}}">Te pagan más de lo justo</span>
-</div>
-</div>
-<p style="margin: 0; font-size: 13px; line-height: 1.55; color: #9AA4B2">Si una casa paga más que la cuota justa, antes de apostar pregúntate qué sabe ella que nosotros no: una baja, una rotación, una alineación. Nuestros números salen de resultados y no ven esas noticias.</p>
-</section>
-
-<section style="margin: 0 16px; padding: 18px; border-radius: 22px; background: #171B22; display: flex; flex-direction: column; gap: 12px">
-<div style="display: flex; align-items: center; gap: 10px">
-<span style="width: 28px; height: 28px; border-radius: 50%; background: {{accent}}; color: #0E1116; font-weight: 700; font-size: 14px; display: flex; align-items: center; justify-content: center">4</span>
-<span style="font-size: 17px; font-weight: 600">Pocos partidos, poca confianza</span>
-</div>
-<p style="margin: 0; font-size: 14px; line-height: 1.55; color: #C4CCD6">«7 de sus últimos 10» puede ser casualidad. Por eso cada dato lleva una etiqueta:</p>
-<div style="display: flex; flex-direction: column; gap: 8px">
-<div style="display: flex; align-items: center; gap: 10px">
-<span style="padding: 4px 10px; border-radius: 10px; background: #1F3A2B; color: #9BE3BD; font-size: 12px; font-weight: 600">Dato sólido</span>
-<span style="font-size: 13px; color: #C4CCD6">Cientos de partidos. Te puedes fiar.</span>
-</div>
-<div style="display: flex; align-items: center; gap: 10px">
-<span style="padding: 4px 10px; border-radius: 10px; background: #3A3320; color: #F2D38A; font-size: 12px; font-weight: 600">Puede ser azar</span>
-<span style="font-size: 13px; color: #C4CCD6">Pocos partidos. Úsalo como pista.</span>
-</div>
-</div>
-</section>
-
-<section style="margin: 0 16px; padding: 16px 18px; border-radius: 18px; border: 1px dashed #2C333D; display: flex; gap: 12px; align-items: flex-start">
-<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#9AA4B2" stroke-width="2" stroke-linecap="round" style="flex-shrink: 0; margin-top: 1px"><circle cx="12" cy="12" r="9"></circle><path d="M12 8v5M12 16.5v.5"></path></svg>
-<span style="font-size: 13px; line-height: 1.55; color: #9AA4B2">¿Funciona? Lo comprobamos con 1.209 partidos de LaLiga: cuando decimos que el local gana el 52% de las veces, ganó el 49%. Cuando decimos 82%, ganó el 85%. Aun así, las casas suelen afinar más que nosotros: esto no es una máquina de ganar, es una forma de no apostar a ciegas.</span>
-</section>
-
-<a href="Jornada.dc.html" style="margin: 4px 16px 0 16px; height: 54px; border-radius: 27px; background: {{accent}}; color: #0E1116; font-size: 16px; font-weight: 700; display: flex; align-items: center; justify-content: center; gap: 8px">
-Ver la jornada 8
-<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
+</sc-if>
 </a>
-<a href="Glosario.dc.html" style="margin: 0 16px; height: 44px; display: flex; align-items: center; justify-content: center; font-size: 14px; color: #C4CCD6; text-decoration: underline">Ver todas las palabras explicadas</a>
+</sc-for>
+</div>
+</div>
+</sc-for>
+
+<nav aria-label="Principal" style="margin-top: auto; display: flex; justify-content: space-around; padding: 10px 8px 26px 8px; border-top: 1px solid #1E232B; background: #0E1116">
+<a href="Main.dc.html" aria-current="page" style="width: 90px; height: 52px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; color: #FFFFFF">
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"></circle><path d="M12 3v4M12 17v4M3 12h4M17 12h4"></path></svg>
+<span style="font-size: 11px; font-weight: 600">Partidos</span>
+</a>
+<a href="Nivel.dc.html" style="width: 90px; height: 52px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; color: #9AA4B2">
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"></path></svg>
+<span style="font-size: 11px">Nivel</span>
+</a>
+<a href="Arbitros.dc.html" style="width: 90px; height: 52px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; color: #9AA4B2">
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="3" width="10" height="15" rx="2" transform="rotate(12 11 10)"></rect></svg>
+<span style="font-size: 11px">Árbitros</span>
+</a>
+</nav>
 </div>
 </x-dc>
-<script type="text/x-dc" data-dc-script data-props='{"accent":{"editor":"color","default":"#C6F24E","options":["#C6F24E","#5EEAD4","#F9A8D4"]},"$preview":{"width":390,"height":1560}}'>
+<script type="text/x-dc" data-dc-script data-props='{"accent":{"editor":"color","default":"#C6F24E","options":["#C6F24E","#5EEAD4","#F9A8D4"]},"$preview":{"width":390,"height":1320}}'>
 class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.state = { info: false };
+  }
   renderVals() {
-    const azul = '#5B9DFF';
-    const cien = Array.from({ length: 100 }, (_, i) => ({ color: i < 66 ? azul : '#3A4250' }));
-    return { accent: this.props.accent ?? '#C6F24E', azul, naranja: '#F2A541', cien };
+    const accent = this.props.accent ?? '#C6F24E';
+    const esc = {
+      'Málaga': ['MAL', '#5AA0D8', '#0E1116'], 'Espanyol': ['ESP', '#2A64B8', '#FFFFFF'],
+      'Rayo': ['RAY', '#E8ECF1', '#B3262E'], 'Athletic': ['ATH', '#C8252F', '#FFFFFF'],
+      'Alavés': ['ALA', '#1F4E9E', '#FFFFFF'], 'Atlético': ['ATM', '#C4323A', '#FFFFFF'],
+      'Barcelona': ['BAR', '#8A1E3F', '#FFFFFF'], 'Getafe': ['GET', '#1B55A3', '#FFFFFF'],
+      'Real Madrid': ['RMA', '#E8ECF1', '#0E1116'], 'Villarreal': ['VIL', '#E3C33C', '#0E1116'],
+      'Elche': ['ELC', '#2E8B57', '#FFFFFF'], 'Celta': ['CEL', '#8BC4EA', '#0E1116'],
+      'Real Sociedad': ['RSO', '#1D5FB0', '#FFFFFF'], 'Deportivo': ['DEP', '#2B67C2', '#FFFFFF'],
+      'Betis': ['BET', '#1E8A4C', '#FFFFFF'], 'Osasuna': ['OSA', '#B3262E', '#FFFFFF'],
+      'Racing': ['RAC', '#2E8B57', '#FFFFFF'], 'Valencia': ['VAL', '#E8ECF1', '#0E1116'],
+      'Levante': ['LEV', '#7A1F3D', '#FFFFFF'], 'Sevilla': ['SEV', '#E8ECF1', '#B3262E']
+    };
+    const f = (x) => x.toFixed(2).replace('.', ',');
+    const chips = {
+      infla: ['Tabla engaña', '#3A2A14', '#F2A541'],
+      merece: ['Mejor de lo que va', '#172A45', '#8CBBFF'],
+      igualado: ['Igualado', '#242A33', '#C4CCD6'],
+      goles: ['Goles', '#1F3A2B', '#9BE3BD']
+    };
+    // Datos de app_apostador/datos.json (generar_datos.py)
+    const P = (hora, local, visitante, p1, px, p2, j1, jx, j2, chip, chipDato, enlace) => {
+      const [il, cl, tl] = esc[local], [iv, cv, tv] = esc[visitante];
+      const mx = Math.max(p1, px, p2);
+      const c = (pct, j) => ({ pct, cuota: f(j), fondo: pct === mx ? accent : '#0E1116', texto: pct === mx ? '#0E1116' : '#E8ECF1' });
+      const ch = chip ? chips[chip] : null;
+      return {
+        hora, local, visitante, il, cl, tl, iv, cv, tv, enlace: enlace || '#',
+        cuotas: [c(p1, j1), c(px, jx), c(p2, j2)],
+        chip: ch ? ch[0] : '', chipFondo: ch ? ch[1] : '', chipColor: ch ? ch[2] : '', chipDato: chipDato || ''
+      };
+    };
+    const dias = [
+      { dia: 'VIERNES 9', partidos: [
+        P('21:00', 'Málaga', 'Espanyol', 47, 29, 24, 2.13, 3.44, 4.19)
+      ] },
+      { dia: 'SÁBADO 10', partidos: [
+        P('14:00', 'Rayo', 'Athletic', 47, 29, 24, 2.14, 3.43, 4.16, 'merece', 'Rayo: 12.º, nivel de 6.º'),
+        P('16:15', 'Alavés', 'Atlético', 23, 29, 49, 4.40, 3.49, 2.06, 'infla', 'Alavés: 6.º, nivel de 12.º'),
+        P('18:30', 'Barcelona', 'Getafe', 88, 8, 4, 1.13, 12.28, 28.12),
+        P('21:00', 'Real Madrid', 'Villarreal', 66, 21, 13, 1.51, 4.67, 8.00, 'goles', '3,7 goles en sus 10 duelos', 'Partido.dc.html')
+      ] },
+      { dia: 'DOMINGO 11', partidos: [
+        P('14:00', 'Elche', 'Celta', 34, 31, 35, 2.91, 3.23, 2.88, 'igualado', 'El más abierto de la jornada'),
+        P('16:15', 'Real Sociedad', 'Deportivo', 44, 30, 26, 2.25, 3.36, 3.87),
+        P('18:30', 'Betis', 'Osasuna', 69, 20, 11, 1.45, 5.03, 9.01, 'infla', 'Osasuna: 13.º, nivel de 18.º'),
+        P('21:00', 'Racing', 'Valencia', 43, 30, 27, 2.32, 3.33, 3.71, 'merece', 'Valencia: 19.º, nivel de 11.º')
+      ] },
+      { dia: 'LUNES 12', partidos: [
+        P('21:00', 'Levante', 'Sevilla', 46, 29, 25, 2.18, 3.40, 4.04, 'infla', 'Sevilla: 5.º, nivel de 15.º', 'Nivel.dc.html')
+      ] }
+    ].map((d) => ({ ...d, partidos: d.partidos.map((p, i) => ({ ...p, borde: i ? '1px solid #242A33' : 'none' })) }));
+    return {
+      accent, dias,
+      info: this.state.info,
+      infoSigno: this.state.info ? '−' : '+',
+      toggleInfo: () => this.setState({ info: !this.state.info })
+    };
   }
 }
 </script>

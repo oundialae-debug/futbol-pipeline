@@ -20,3 +20,16 @@ carpeta se apunta aquí.
   18.º), Málaga 17.º (antes 11.º), media de tarjetas 4,52 (antes 5,28).
   Detalle en `README.md`.
 - **Ficheros:** `app_apostador/` entero. Nada fuera.
+
+## 29/09/2026: versión 2, visual y con poco texto
+
+- **Qué:** la lista de partidos (`Main.dc.html`) y la ficha del partido
+  (`Partido.dc.html`) rehechas al estilo FotMob/Flashscore: cuota justa como
+  número principal, etiquetas de 2-3 palabras, forma/goles/cara a cara en
+  casillas de colores. Fuera la portada explicativa y el glosario
+  (`Jornada.dc.html` y `Glosario.dc.html` borrados; la lista pasa a `Main`).
+  Nivel y Árbitros se quedan igual (solo cambia la barra de navegación).
+- **Por qué:** al usuario no le gustó la versión 1, salvo Nivel y Árbitros:
+  no se trata de explicarlo todo, sino de que sea intuitivo o se explique
+  con pocas palabras.
+- **Datos:** los mismos de `datos.json`, sin llamadas ni descargas.
