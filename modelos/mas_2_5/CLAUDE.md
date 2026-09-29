@@ -1,3 +1,11 @@
+# REGLA DEL USUARIO (29/09/2026): NUNCA llamar a la API sin consultarle antes
+
+Ninguna llamada a Highlightly -- ni sondeos pequeños, ni backfills, ni
+lanzar un workflow de GitHub que la use -- sin preguntarle ANTES y tener su
+sí explícito para ESA llamada. Un sí anterior no vale para la siguiente.
+Descargas de fuentes gratuitas sin clave (p. ej. football-data.co.uk) no
+son la API, pero también se avisan antes.
+
 # Más de 2.5 goles -- carpeta propia (24/09/2026)
 
 Mismo patrón que `modelos/ambos_marcan/`: todo lo necesario para trabajar
