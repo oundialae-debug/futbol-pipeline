@@ -359,8 +359,13 @@ def calcular_tabla(hist):
     liga (varía entre competiciones y no está en los datos que tenemos).
 
     MISMA REGLA ANTI-FUGA: la posición y los puntos que ve el partido X son
-    los de ANTES de jugarse X -- se lee la tabla, se calculan las columnas
-    de esa fila, y solo DESPUÉS se actualiza la tabla con el resultado de X.
+    los de ANTES de jugarse X. Desde el 30/09/2026 se va POR DÍAS (UTC): se leen
+    todos los partidos de un día con la tabla del final del día anterior, y solo
+    después se actualiza con sus resultados. Antes se iba partido a partido, y
+    con dos partidos de la misma liga a la misma hora el segundo en el orden
+    veía el resultado del primero (fuga en el 8,6% de los partidos, hasta 8
+    puestos; auditoria2_tabla_fuga.py). Por días además iguala entrenamiento y
+    directo: al pronosticar, el histórico solo llega hasta ayer.
 
     Un equipo que aún no ha jugado esta temporada (jornada 1) no tiene
     posición real todavía: se le da el último puesto de los ya vistos + 1,
@@ -369,9 +374,20 @@ def calcular_tabla(hist):
     modelo pueda descontar una posición basada en muy pocos partidos.
     """
     orden = hist.sort_values("fecha").reset_index(drop=True)
+    dias = pd.to_datetime(orden["fecha"], utc=True, format="ISO8601").dt.strftime("%Y-%m-%d").values
     tablas = {}
+    pendientes = []                     # resultados del día en curso, se aplican al cambiar de día
     pos_l, pos_v, ppg_l, ppg_v, pj_l, pj_v = [], [], [], [], [], []
-    for _, fila in orden.iterrows():
+    for k, (_, fila) in enumerate(orden.iterrows()):
+        if k and dias[k] != dias[k - 1]:
+            for tabla, l, v, gl, gv in pendientes:
+                pts_l0, gf_l0, gc_l0, pj_l0 = tabla.get(l, (0, 0, 0, 0))
+                pts_v0, gf_v0, gc_v0, pj_v0 = tabla.get(v, (0, 0, 0, 0))
+                pl3 = 3 if gl > gv else (1 if gl == gv else 0)
+                pv3 = 3 if gv > gl else (1 if gl == gv else 0)
+                tabla[l] = (pts_l0 + pl3, gf_l0 + gl, gc_l0 + gv, pj_l0 + 1)
+                tabla[v] = (pts_v0 + pv3, gf_v0 + gv, gc_v0 + gl, pj_v0 + 1)
+            pendientes = []
         clave = (fila["liga_id"], fila["temporada"])
         tabla = tablas.setdefault(clave, {})
         l, v = fila["local_id"], fila["visitante_id"]
@@ -394,10 +410,7 @@ def calcular_tabla(hist):
 
         gl, gv = fila["goles_l"], fila["goles_v"]
         if pd.notna(gl) and pd.notna(gv):
-            pl3 = 3 if gl > gv else (1 if gl == gv else 0)
-            pv3 = 3 if gv > gl else (1 if gl == gv else 0)
-            tabla[l] = (pts_l0 + pl3, gf_l0 + gl, gc_l0 + gv, pj_l0 + 1)
-            tabla[v] = (pts_v0 + pv3, gf_v0 + gv, gc_v0 + gl, pj_v0 + 1)
+            pendientes.append((tabla, l, v, gl, gv))
     return pd.DataFrame({"match_id": orden["match_id"].values,
                          "loc_tabla_pos": pos_l, "vis_tabla_pos": pos_v,
                          "loc_tabla_ppg": ppg_l, "vis_tabla_ppg": ppg_v,
@@ -763,4 +776,28 @@ def comprobar_sin_fuga(hist):
     culpables = list(dif[dif].index)
     if culpables:
         return False, f"FUGA en {len(culpables)} rasgos: {culpables[:6]}"
-    return True, f"{len(cols)} rasgos, ninguno usa el propio partido"
+    # Segundo control (30/09/2026): los OTROS partidos del mismo día tampoco pueden
+    # moverse. El primero no vio que la tabla dejaba a un partido ver el resultado
+    # de otro de su liga a la misma hora. Se truca un partido que comparte día con
+    # otros de su liga y se exige que esos otros no cambien.
+    dia = pd.to_datetime(hist["fecha"], utc=True, format="ISO8601").dt.strftime("%Y-%m-%d")
+    grupo = hist.groupby([hist["liga_id"], dia])["match_id"]
+    n_dia = grupo.transform("count")
+    candidatos = hist[(n_dia > 1) & hist["goles_l"].notna()]
+    if candidatos.empty:
+        return True, f"{len(cols)} rasgos, ninguno usa el propio partido (sin días con varios partidos)"
+    obj2 = candidatos.iloc[len(candidatos) // 2]
+    mismo_dia = set(hist.loc[(hist["liga_id"] == obj2["liga_id"]) & (dia == dia[obj2.name]), "match_id"]) - {obj2["match_id"]}
+    trucado = hist.copy()
+    for col in ("goles_l", "goles_v", "l_corners", "v_corners"):
+        if col in trucado.columns:
+            trucado.loc[trucado.match_id == obj2["match_id"], col] = 99
+    base3 = construir(trucado)
+    a = base[base.match_id.isin(mismo_dia)].set_index("match_id")[cols].sort_index()
+    b = base3[base3.match_id.isin(mismo_dia)].set_index("match_id")[cols].sort_index()
+    dif = (a.fillna(-999) != b.fillna(-999)).any()
+    culpables = list(dif[dif].index)
+    if culpables:
+        return False, f"FUGA ENTRE PARTIDOS DEL MISMO DÍA en {len(culpables)} rasgos: {culpables[:6]}"
+    return True, (f"{len(cols)} rasgos, ninguno usa el propio partido ni los de su mismo día "
+                  f"({len(mismo_dia)} partidos comprobados)")
