@@ -683,3 +683,25 @@ Entrenado con todo lo jugado desde 2022/23. xG/xA por jugador movido a
   Coherente con las pruebas mes a mes (-0.48s). NO bate a la casa.
 Pendiente: titulares de 2023/24 ya en main (92%, desde /box-score); repetir
 las pruebas con ellos.
+
+## Con los titulares de 2023/24 (29/09/2026)
+
+Copiados de main: titulares de 2023/24 desde /box-score (92% de partidos;
+g/a de 22/23 para el 86% de esos titulares). Humo OK. Tres pruebas:
+
+- efecto del g/a (mismos 2.527 partidos): +1.62s (antes +2.61s); el 28 con
+  g/a queda a -1.33s de la casa (antes -1.11s).
+- valor_y_2022.py repetido (oct 2025 - sep 2026): el modelo oficial
+  ("C +2022/23") queda a -0.65s de la casa (antes -0.48s); 28 solo -1.90s
+  (antes -1.35s). **Los titulares de 2023/24 no mejoran; si acaso, algo
+  peor** (del orden del ruido de proceso).
+- wf_oficial.py, mes a mes desde ago 2024 (4.739 partidos):
+  | modelo | total | 2024/25 | 2025/26 | 2026/27 | acierto | apostando |
+  |---|---|---|---|---|---|---|
+  | XGBoost 28 | -4.85s | -5.24s | -0.87s | -1.74s | 57.4% | -5.9% |
+  | oficial | -4.55s | -5.08s | -0.55s | -1.37s | 57.2% | -6.6% |
+  **2024/25 sigue muy mal aunque su entrenamiento ya tenga g/a.** No era la
+  falta de alineaciones de 2023/24. Las estadísticas base (tiros, pases,
+  córners) están al 100% en todas las temporadas; xG de equipo solo desde
+  2025/26. Causa de 2024/25 sin identificar -- pendiente de investigar antes
+  de fiarse de ninguna cifra "de temporada entera".
