@@ -108,6 +108,13 @@ def descargar():
     hoy = hoy[saque > ahora]                                   # los ya empezados no se piden
     if VENTANA_MIN is not None:
         hoy = hoy[pd.to_datetime(hoy.fecha, utc=True, format="ISO8601") <= ahora + pd.Timedelta(minutes=VENTANA_MIN)]
+        if os.path.exists(REGISTRO) and len(hoy):             # una sola pasada de previa por partido
+            r = pd.read_csv(REGISTRO, usecols=["match_id", "generado"])
+            r["generado"] = pd.to_datetime(r.generado, utc=True, format="ISO8601")
+            s_ = pd.to_datetime(hoy.set_index("match_id").fecha, utc=True, format="ISO8601")
+            r = r[r.match_id.isin(s_.index)]
+            hechos = set(r[r.generado >= r.match_id.map(s_) - pd.Timedelta(minutes=90)].match_id)
+            hoy = hoy[~hoy.match_id.isin(hechos)]
     filas, cuotas = [], []
     for _, c in hoy.iterrows():
         mid = int(c.match_id)

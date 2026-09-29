@@ -1,20 +1,27 @@
 name: Ambos marcan - registro en papel diario
 
-# Petición del usuario (29/09/2026): el registro en papel de ambos marcan se
-# llena solo. Las 6 ligas por ID: durante la Nations League solo juega la
-# Segunda; cuando vuelva la liga, entran las demás sin tocar nada.
-#  - 08:07 UTC: resultados de ayer (backfill_historico, temporada 2026), evalúa
-#    el registro, busca los partidos de hoy (1 llamada por liga) y hace un
-#    primer pronóstico de todos (3 llamadas por partido).
-#  - cada media hora de 10:07 a 21:37 UTC: SOLO si un partido empieza en los
-#    próximos 35 minutos, lo repite con el once y las cuotas del momento. Si
-#    no hay ninguno, no gasta API.
+# Registro en papel de ambos marcan, automático (usuario, 29/09/2026). Las 6
+# ligas por ID; durante los parones solo juega la Segunda.
+#
+# Horario ajustado a los calendarios (29/09/2026): en 2025/26 y 2026/27,
+# TODOS los partidos de las 6 ligas empezaron entre las 12:00 y las 21:30
+# hora española, y el 93% de viernes a lunes. Parones FIFA: 21/09-06/10 y
+# 09-17/11 de 2026 (la Segunda sigue jugando). Bundesliga para tras el
+# 18-20/12.
+#  - 08:07 UTC todos los días: partidos del día (1 llamada por liga),
+#    resultados de ayer SOLO si ayer hubo partidos, y primer pronóstico.
+#  - Viernes a lunes, cada media hora de 09:07 a 20:37 UTC (11:07-22:37 en
+#    verano español, 10:07-21:37 en invierno): comprobación de segundos SIN
+#    API ni dependencias; solo si un partido empieza en <=45 min y aún no tiene
+#    su pronóstico con el once, se descarga (3 llamadas) y se pronostica.
+#    Los partidos de martes a jueves (~7%) se quedan con el de la mañana.
+#
+# EN PAUSA (29/09/2026): regla del usuario, ninguna llamada a la API sin su sí
+# explícito. Descomentar el schedule cuando lo apruebe.
 on:
-  # EN PAUSA (29/09/2026): regla del usuario, ninguna llamada a la API sin su sí
-  # explícito. Se reactiva cuando apruebe las llamadas automáticas.
   # schedule:
   #   - cron: '7 8 * * *'
-  #   - cron: '7,37 10-21 * * *'
+  #   - cron: '7,37 9-20 * * 1,5,6,0'
   workflow_dispatch:
     inputs:
       modo:
@@ -35,14 +42,27 @@ jobs:
       MANANA: ${{ github.event.schedule == '7 8 * * *' || (github.event_name == 'workflow_dispatch' && inputs.modo != 'previa') }}
     steps:
       - uses: actions/checkout@v4
+
+      - name: ¿Hay algo que hacer? (sin API, sin instalar nada)
+        id: previa
+        if: env.MANANA != 'true'
+        run: python3 scripts/ambos_hay_partido.py previa
+
+      - name: ¿Hubo partidos ayer?
+        id: ayer
+        if: env.MANANA == 'true'
+        run: python3 scripts/ambos_hay_partido.py ayer
+
       - uses: actions/setup-python@v5
+        if: env.MANANA == 'true' || steps.previa.outputs.hay == 'si'
         with:
           python-version: '3.11'
           cache: 'pip'
-      - run: pip install -r requirements.txt
+      - if: env.MANANA == 'true' || steps.previa.outputs.hay == 'si'
+        run: pip install -r requirements.txt
 
       - name: Resultados de ayer
-        if: env.MANANA == 'true'
+        if: env.MANANA == 'true' && steps.ayer.outputs.hay == 'si'
         run: python scripts/backfill_historico.py
         env:
           HIGHLIGHTLY_API_KEY: ${{ secrets.HIGHLIGHTLY_API_KEY }}
@@ -50,25 +70,22 @@ jobs:
           TOPE_LLAMADAS: '80'
 
       - name: Partidos de hoy (datos y cuotas)
+        if: env.MANANA == 'true' || steps.previa.outputs.hay == 'si'
         run: |
           if [ "$MANANA" = "true" ]; then
             python scripts/ambos_marcan_hoy.py descargar
           else
-            VENTANA_MIN=35 python scripts/ambos_marcan_hoy.py descargar
+            VENTANA_MIN=45 python scripts/ambos_marcan_hoy.py descargar
           fi
         env:
           HIGHLIGHTLY_API_KEY: ${{ secrets.HIGHLIGHTLY_API_KEY }}
 
       - name: Pronóstico y registro
-        run: |
-          if [ "$(tail -n +2 data/ambos_hoy/partidos.csv | wc -l)" -gt 0 ] || [ "$MANANA" = "true" ]; then
-            python scripts/ambos_marcan_hoy.py pronosticar
-          else
-            echo "Ningún partido empieza pronto: nada que hacer."
-          fi
+        if: env.MANANA == 'true' || steps.previa.outputs.hay == 'si'
+        run: python scripts/ambos_marcan_hoy.py pronosticar
 
       - name: Guardar
-        if: always()
+        if: always() && (env.MANANA == 'true' || steps.previa.outputs.hay == 'si')
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"

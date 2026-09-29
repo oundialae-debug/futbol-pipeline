@@ -1132,19 +1132,41 @@ anteriores. 3.247 partidos, mar-2025 a sep-2026.
   modelo de 1 nivel eran reglas que cambian por liga, y el de 2 niveles ya
   las tiene. No reabrir "más peso a la liga".
 
-## Registro en papel automático (desde el 29/09/2026)
+## Registro en papel automático (29/09/2026) -- EN PAUSA hasta el sí del usuario
 
-Petición del usuario: que el registro se llene solo con la Segunda, y que esté
-listo para cuando vuelva la liga. `.github/workflows/ambos_marcan_diario.yml`
-(ACTIVO, no está en pausa como los demás crons):
-- **08:07 UTC:** resultados de ayer (`backfill_historico`, temporada 2026, tope
-  80), evaluación del registro y partidos de hoy de las 6 ligas por ID
-  (`/matches` por liga y día, 1 llamada por liga). Primer pronóstico de todos.
-- **Cada media hora de 10:07 a 21:37 UTC:** solo si un partido empieza en los
-  próximos 35 minutos, se repite con el once y las cuotas de ese momento.
-  Si no, 0 llamadas.
-- **Coste:** ~6 llamadas por partido al día + ~30 de la mañana.
-- `ambos_marcan_hoy.py` acepta ahora `LIGAS` (lista de IDs; por defecto las 6)
-  y `VENTANA_MIN`. `LIGA_ID` se sigue aceptando.
-- La evaluación toma el ÚLTIMO pronóstico antes del pitido de cada partido.
+`.github/workflows/ambos_marcan_diario.yml`. La regla del usuario del 29/09
+("nunca llamar a la API sin su sí explícito", ver CLAUDE.md raíz) llegó
+después de montarlo: el `schedule` está comentado hasta que apruebe las
+llamadas automáticas.
+
+**Horario ajustado a los calendarios.**
+- **Datos de partida:** en 2025/26 y 2026/27, todos los partidos de las 6
+  ligas empezaron entre las 12:00 y las 21:30 hora española, y el 93% de
+  viernes a lunes.
+- **Parones FIFA 2026:** 21/09-06/10 y 09-17/11; la Segunda sigue jugando.
+- **Bundesliga:** para tras el 18-20/12.
+- **Premier:** 5 jornadas entre semana en toda la temporada.
+
+**Qué hace cada pasada.**
+- **08:07 UTC, todos los días:** partidos del día (`/matches` por liga y día,
+  6 llamadas), resultados de ayer SOLO si ayer hubo partidos
+  (`backfill_historico`), y primer pronóstico de todos (3 llamadas por
+  partido).
+- **Viernes a lunes, 09:07-20:37 UTC cada media hora:**
+  - Primero `scripts/ambos_hay_partido.py`: segundos, sin API y sin instalar
+    nada.
+  - Solo si un partido empieza en 45 minutos o menos y no tiene pronóstico
+    en los 90 minutos antes de su pitido, se descarga (3 llamadas, con el
+    once) y se pronostica.
+  - Una sola pasada por partido, aunque GitHub se retrase.
+- **Martes a jueves (~7% de los partidos):** solo el pronóstico de la mañana.
+
+**Gasto estimado.**
+- **Con solo la Segunda:** ~30 llamadas al día.
+- **Con las 6 ligas:** ~80 al día (~1% de la cuota).
+
+**Otros detalles.**
+- `ambos_marcan_hoy.py` acepta `LIGAS` (lista de IDs; por defecto las 6) y
+  `VENTANA_MIN`.
+- La evaluación toma el ÚLTIMO pronóstico antes del pitido.
 - **Regla:** no tocar el modelo por el registro hasta 100+ apuestas.
