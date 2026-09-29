@@ -975,3 +975,26 @@ no cambia. Lectura probable: la calidad de plantilla, el Elo y el precio
 previo ya llevan lo que dicen la edad y el valor. No reabrir estas dos
 variables con los mismos partidos. Las lesiones quedan descargadas por si
 se prueban "bajas importantes" más adelante.
+
+## Bajas por lesión (29/09/2026): no entran, empeoran
+
+Petición del usuario. Un lesionado no sale en el once, y el once real ya lo
+ve el modelo, así que se midió QUIÉN FALTA: titulares habituales (titular en
+3 de sus 5 onces anteriores) de baja el día del partido. La lesión tiene que
+haber empezado ANTES de ese día. `scripts/experimento_lesiones.py`, fijado
+antes de mirar; datos de `data/jugador_lesiones.csv`.
+
+- **Comprobación con un caso real:** Real Madrid-Getafe, 01/12/2024: 4
+  habituales de baja por valor de 460 M, que coincide con la plaga de
+  lesiones del Madrid de esas fechas.
+- **Qué mide:** media de 0,53 bajas por equipo y partido; el 39% de los
+  equipos tiene al menos una.
+
+| variante | sigmas | meses mejor | arranque 2026/27 |
+|---|---|---|---|
+| A bajas de habituales (número) | -1.53s | 10/23 | +0.03 pts |
+| B valor de esas bajas (M€) | -1.80s | 10/23 | +0.01 pts |
+
+Las dos empeoran. Lectura: el once real (calidad de plantilla, portero) y el
+precio previo ya recogen las bajas. No reabrir las lesiones como variable
+con estos datos.
