@@ -1183,8 +1183,10 @@ con el nuevo pasa.
 nueva): resultado -2.00s / -2.01s, más de 2.5 -2.51s / -2.57s, ambos marcan
 +0.18s / +0.18s, córners -1.28s / -1.28s, tarjetas -2.42s / -2.46s. Dentro del
 ruido: la fuga no infló nada y las conclusiones anteriores siguen valiendo.
-Las cifras de referencia de la rutina diaria pasan a ser las de la tabla
-nueva (`data/validacion_mercados.json`).
+Con el código definitivo (tabla y árbitro por días, más el desempate fijo
+de la tabla por goles a favor e ID), las **referencias nuevas de la rutina
+diaria** (`data/validacion_mercados.json`) son: resultado -2.01s, más de 2.5
+-2.59s, ambos marcan +0.21s, córners -1.24s, tarjetas -2.46s.
 
 **Lección:** el control de fuga solo miraba si un partido veía SU PROPIO
 resultado. Cualquier variable que mezcle equipos (tabla, medias de liga) puede

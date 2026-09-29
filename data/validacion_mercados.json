@@ -2,9 +2,9 @@
   "resultado": {
     "evaluable": true,
     "partidos": 230,
-    "brier_modelo": 0.603671133518219,
+    "brier_modelo": 0.6036157608032227,
     "brier_mercado": 0.5818120721403423,
-    "sigmas": -2.0104942545605904,
+    "sigmas": -2.0063903135830867,
     "bate_al_mercado": false,
     "peso_mezcla_optimo": 0.0,
     "brier_mezcla": 0.5818120721403423,
@@ -16,9 +16,9 @@
   "mas_2_5": {
     "evaluable": true,
     "partidos": 230,
-    "brier_modelo": 0.4719504117965698,
+    "brier_modelo": 0.4723784327507019,
     "brier_mercado": 0.4512278279749098,
-    "sigmas": -2.565026100247821,
+    "sigmas": -2.5949005407977888,
     "bate_al_mercado": false,
     "peso_mezcla_optimo": 0.0,
     "brier_mezcla": 0.4512278279749098,
@@ -30,12 +30,12 @@
   "ambos_marcan": {
     "evaluable": true,
     "partidos": 230,
-    "brier_modelo": 0.4718550443649292,
+    "brier_modelo": 0.47158679366111755,
     "brier_mercado": 0.4733777800004007,
-    "sigmas": 0.1810204329229818,
+    "sigmas": 0.21310543920856587,
     "bate_al_mercado": false,
     "peso_mezcla_optimo": 0.6000000000000001,
-    "brier_mezcla": 0.4704248250550009,
+    "brier_mezcla": 0.4702715759029686,
     "intervalo_peso_95": [
       0.0,
       1.0
@@ -44,9 +44,9 @@
   "mas_9_5_corners": {
     "evaluable": true,
     "partidos": 230,
-    "brier_modelo": 0.4925661087036133,
+    "brier_modelo": 0.49226561188697815,
     "brier_mercado": 0.48129944770392585,
-    "sigmas": -1.281824874480983,
+    "sigmas": -1.2438840617605178,
     "bate_al_mercado": false,
     "peso_mezcla_optimo": 0.0,
     "brier_mezcla": 0.48129944770392585,
@@ -58,9 +58,9 @@
   "mas_4_5_tarjetas": {
     "evaluable": true,
     "partidos": 207,
-    "brier_modelo": 0.4519977569580078,
+    "brier_modelo": 0.45215559005737305,
     "brier_mercado": 0.4172665905978263,
-    "sigmas": -2.457754920672895,
+    "sigmas": -2.4599935180132504,
     "bate_al_mercado": false,
     "peso_mezcla_optimo": 0.0,
     "brier_mezcla": 0.4172665905978263,
