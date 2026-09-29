@@ -1127,3 +1127,15 @@ reciente hacia atrás (6.591 en total, unos 70 días), y da de alta los partidos
 temporada en curso. NO se pausa con los crons de fútbol. Todo en `docs/otros_deportes/nba.md`:
 - Mercado elegido: totales. El cierre de MGM (Kaggle, 2021-2026) es exacto, solo caro.
 - `/matches/{id}` repite las estadísticas del local en el visitante: usar `/box-score`.
+
+## Titulares de 2023/24 desde /box-score (29/09/2026)
+
+/lineups no tiene nada antes de abril de 2024, pero /box-score SÍ marca
+isSubstitute. `sondeo_titulares_boxscore.md`: 16 de 16 partidos (ago-2023 a
+mar-2024, 5 ligas + Segunda) con 11+11 titulares, posición y minutos; los dos
+controles coinciden al 100% con /lineups. `scripts/backfill_titulares_boxscore.py`
+(workflow backfill_titulares_boxscore.yml) escribió 1.734 partidos en
+**data/historico_lineups.csv**, mismo formato (IDs ordenados portero,
+defensas, medios, delanteros; formación reconstruida contando posiciones).
+Cobertura de titulares de 2023/24: 14% -> **92%**. Titulares de 2023/24 con
+estadísticas de 22/23 (para el g/a): 77%. 2022/23 NO se ha pedido (ni sondeado).
