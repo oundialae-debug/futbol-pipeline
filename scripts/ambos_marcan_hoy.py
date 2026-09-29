@@ -35,7 +35,16 @@ from datetime import datetime, timezone
 import numpy as np
 import pandas as pd
 
-LIGA_ID = int(os.environ.get("LIGA_ID", "120775"))
+# Ligas (por ID, nunca por nombre). Por defecto las 6 del proyecto: durante la
+# Nations League solo juega la Segunda y las demás devuelven 0 partidos (1
+# llamada por liga y día); cuando vuelva la liga entran solas. LIGA_ID (una
+# sola) se sigue aceptando por compatibilidad.
+LIGAS = [int(x) for x in (os.environ.get("LIGAS") or os.environ.get("LIGA_ID")
+                          or "120775,33973,119924,115669,67162,52695").split(",") if x.strip()]
+LIGA_ID = LIGAS[0]
+# Si se da, solo se pronostican los partidos que empiezan en los próximos N
+# minutos (pasada de justo antes del pitido, con el once ya publicado).
+VENTANA_MIN = int(os.environ["VENTANA_MIN"]) if os.environ.get("VENTANA_MIN") else None
 FECHA = os.environ.get("FECHA") or datetime.now(timezone.utc).date().isoformat()
 CARPETA = "data/ambos_hoy"
 REGISTRO = "data/ambos_marcan/registro_papel.csv"
@@ -67,10 +76,38 @@ def lista(d):
     return d or []
 
 
+def partidos_del_dia():
+    """Partidos de FECHA en LIGAS: /matches por liga y día (1 llamada por liga), una
+    vez al día; las pasadas siguientes reutilizan data/ambos_hoy/dia_FECHA.csv."""
+    ruta = f"{CARPETA}/dia_{FECHA}.csv"
+    if os.path.exists(ruta):
+        return pd.read_csv(ruta)
+    filas, fuera = [], 0
+    for liga in LIGAS:
+        for p in lista(pedir("/matches", {"leagueId": liga, "date": FECHA, "timezone": "UTC", "limit": 100})):
+            if not isinstance(p, dict) or not p.get("id"):
+                continue
+            lg = (p.get("league") or {}).get("id")
+            if lg is None or int(lg) != liga:      # ante la duda, fuera (y se cuenta)
+                fuera += 1
+                continue
+            filas.append({"match_id": int(p["id"]), "liga_id": liga, "fecha": p.get("date"),
+                          "local": (p.get("homeTeam") or {}).get("name"),
+                          "visitante": (p.get("awayTeam") or {}).get("name")})
+    d = pd.DataFrame(filas, columns=["match_id", "liga_id", "fecha", "local", "visitante"]).drop_duplicates("match_id")
+    print(f"{FECHA}: {len(d)} partidos en {len(LIGAS)} ligas" + (f" ({fuera} descartados: liga no comprobable)" if fuera else ""))
+    d.to_csv(ruta, index=False)
+    return d
+
+
 def descargar():
     os.makedirs(CARPETA, exist_ok=True)
-    cal = pd.read_csv("data/calendario.csv")
-    hoy = cal[(cal.liga_id == LIGA_ID) & (cal.fecha.astype(str) == FECHA)]
+    hoy = partidos_del_dia()
+    ahora = pd.Timestamp.now(tz="UTC")
+    saque = pd.to_datetime(hoy.fecha, utc=True, format="ISO8601")
+    hoy = hoy[saque > ahora]                                   # los ya empezados no se piden
+    if VENTANA_MIN is not None:
+        hoy = hoy[pd.to_datetime(hoy.fecha, utc=True, format="ISO8601") <= ahora + pd.Timedelta(minutes=VENTANA_MIN)]
     filas, cuotas = [], []
     for _, c in hoy.iterrows():
         mid = int(c.match_id)
@@ -88,7 +125,8 @@ def descargar():
                    for j in (linea if isinstance(linea, list) else [linea]) if isinstance(j, dict)]
             ids[lado] = ("|".join(str(j.get("id")) for j in jug) if len(jug) >= 11 else None,
                          t.get("formation") if len(jug) >= 11 else None)
-        filas.append({"match_id": mid, "fecha": m.get("date"), "saque_utc": c.saque_utc,
+        filas.append({"match_id": mid, "liga_id": int(c.liga_id), "fecha": m.get("date"),
+                      "saque_utc": str(m.get("date"))[11:16],
                       "local_id": (m.get("homeTeam") or {}).get("id"), "local": (m.get("homeTeam") or {}).get("name"),
                       "visitante_id": (m.get("awayTeam") or {}).get("id"),
                       "visitante": (m.get("awayTeam") or {}).get("name"),
@@ -106,9 +144,12 @@ def descargar():
                                            "lado": str(v.get("value")), "cuota": float(v.get("odd"))})
                         except (TypeError, ValueError):
                             pass
-    pd.DataFrame(filas).to_csv(f"{CARPETA}/partidos.csv", index=False)
-    pd.DataFrame(cuotas).to_csv(f"{CARPETA}/cuotas.csv", index=False)
-    print(f"{FECHA}, liga {LIGA_ID}: {len(filas)} partidos, {len(cuotas)} cuotas, "
+    pd.DataFrame(filas, columns=["match_id", "liga_id", "fecha", "saque_utc", "local_id", "local", "visitante_id",
+                                 "visitante", "estado", "arbitro", "clima_status", "clima_temp_txt", "local_ids",
+                                 "local_formacion", "visitante_ids", "visitante_formacion"]).to_csv(
+        f"{CARPETA}/partidos.csv", index=False)
+    pd.DataFrame(cuotas, columns=["match_id", "mercado", "casa", "lado", "cuota"]).to_csv(f"{CARPETA}/cuotas.csv", index=False)
+    print(f"{FECHA}, ligas {LIGAS}: {len(filas)} partidos a pronosticar, {len(cuotas)} cuotas, "
           f"onces: {sum(1 for f in filas if f['local_ids'])}")
 
 
@@ -137,13 +178,20 @@ def pronosticar():
         print("Ya empezados o jugados (no se pronostican): " +
               ", ".join(f"{a}-{b} ({e})" for a, b, e in zip(empezados.local, empezados.visitante, empezados.estado)))
     hoy = hoy[hoy.estado.astype(str) == "Not started"].reset_index(drop=True)
+    if hoy.empty:
+        print("Ningún partido por empezar: nada que pronosticar.")
+        return
+    if "liga_id" not in hoy.columns:                           # ficheros de antes del 29/09
+        hoy["liga_id"] = LIGA_ID
     cuotas = pd.read_csv(f"{CARPETA}/cuotas.csv")
     M.TEMPORADA_MINIMA = A.TEMPORADA_MINIMA   # 2022/23 dentro, solo para ambos marcan
     rasgos.COBERTURA_MINIMA = 0.2   # que el xG del equipo no desaparezca de la tabla: 1X2 y 2.5 lo siguen usando
     hist = M.cargar()
-    ult = hist[hist.liga_id == LIGA_ID].sort_values("fecha").iloc[-1]
-    nuevas = pd.DataFrame({"match_id": hoy.match_id, "fecha": hoy.fecha, "liga_id": LIGA_ID, "liga": ult.liga,
-                           "temporada": ult.temporada, "local_id": hoy.local_id, "local": hoy.local,
+    ult = hist.sort_values("fecha").groupby("liga_id").tail(1).set_index("liga_id")
+    hoy = hoy[hoy.liga_id.isin(ult.index)].reset_index(drop=True)   # liga sin histórico: no se pronostica
+    nuevas = pd.DataFrame({"match_id": hoy.match_id, "fecha": hoy.fecha, "liga_id": hoy.liga_id,
+                           "liga": hoy.liga_id.map(ult.liga), "temporada": hoy.liga_id.map(ult.temporada),
+                           "local_id": hoy.local_id, "local": hoy.local,
                            "visitante_id": hoy.visitante_id, "visitante": hoy.visitante,
                            "arbitro": hoy.arbitro, "local_ids": hoy.local_ids, "visitante_ids": hoy.visitante_ids,
                            "local_formacion": hoy.local_formacion, "visitante_formacion": hoy.visitante_formacion})
@@ -186,8 +234,8 @@ def pronosticar():
     test = test.assign(p=prob["ambos_marcan"][:, 1], p_mas25=prob["mas_2_5"][:, 1], p_1=prob["resultado"][:, 0],
                        p_x=prob["resultado"][:, 1], p_2=prob["resultado"][:, 2])
     print(f"Entrenado con {len(ent)} partidos, {len(cols)} variables. Último partido de la liga en el "
-          f"histórico: {str(ult.fecha)[:10]}\n")
-    L = [f"# Ambos marcan, {FECHA} (liga {LIGA_ID})", "",
+          f"histórico: {str(ult.fecha.max())[:10]}\n")
+    L = [f"# Ambos marcan, {FECHA} (ligas {', '.join(map(str, sorted(hoy.liga_id.unique())))})", "",
          f"Modelo oficial de ambos marcan (producción + precio, {len(ent)} partidos de entrenamiento). "
          "Mercado = mediana de casas sin margen. Cuota mínima = 1/p del modelo.", "",
          "| partido | hora (España) | modelo: sí | mercado: sí | lado del modelo | cuota mínima | cuota mediana | VE | once |",
@@ -228,7 +276,7 @@ def registrar(hoy, test, cuotas):
         si = t.p >= 0.5
         pl = t.p if si else 1 - t.p
         cuota = mb.get("Yes" if si else "No", np.nan)
-        filas.append({"generado": ahora.isoformat(timespec="seconds"), "match_id": h.match_id, "liga_id": LIGA_ID,
+        filas.append({"generado": ahora.isoformat(timespec="seconds"), "match_id": h.match_id, "liga_id": int(h.liga_id),
                       "saque": h.fecha, "local": h.local, "visitante": h.visitante,
                       "mod_1": round(t.p_1, 4), "mod_x": round(t.p_x, 4), "mod_2": round(t.p_2, 4),
                       "mkt_1": round(r.get("Home", np.nan), 4), "mkt_x": round(r.get("Draw", np.nan), 4),

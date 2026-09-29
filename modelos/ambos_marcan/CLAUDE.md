@@ -1131,3 +1131,20 @@ anteriores. 3.247 partidos, mar-2025 a sep-2026.
 - **Conclusión:** la liga ya pesa lo que tiene que pesar. Lo que perdía el
   modelo de 1 nivel eran reglas que cambian por liga, y el de 2 niveles ya
   las tiene. No reabrir "más peso a la liga".
+
+## Registro en papel automático (desde el 29/09/2026)
+
+Petición del usuario: que el registro se llene solo con la Segunda, y que esté
+listo para cuando vuelva la liga. `.github/workflows/ambos_marcan_diario.yml`
+(ACTIVO, no está en pausa como los demás crons):
+- **08:07 UTC:** resultados de ayer (`backfill_historico`, temporada 2026, tope
+  80), evaluación del registro y partidos de hoy de las 6 ligas por ID
+  (`/matches` por liga y día, 1 llamada por liga). Primer pronóstico de todos.
+- **Cada media hora de 10:07 a 21:37 UTC:** solo si un partido empieza en los
+  próximos 35 minutos, se repite con el once y las cuotas de ese momento.
+  Si no, 0 llamadas.
+- **Coste:** ~6 llamadas por partido al día + ~30 de la mañana.
+- `ambos_marcan_hoy.py` acepta ahora `LIGAS` (lista de IDs; por defecto las 6)
+  y `VENTANA_MIN`. `LIGA_ID` se sigue aceptando.
+- La evaluación toma el ÚLTIMO pronóstico antes del pitido de cada partido.
+- **Regla:** no tocar el modelo por el registro hasta 100+ apuestas.
