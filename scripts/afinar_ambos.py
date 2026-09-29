@@ -15,6 +15,7 @@ Protocolo FIJADO ANTES, para no engañarse con muchas combinaciones:
      intento: listón +2s.
 Si la ganadora es la actual, no hay nada que confirmar.
 """
+import os
 import sys
 import itertools
 import warnings
@@ -28,6 +29,12 @@ import modelo_ambos_marcan as A
 ACTUAL = dict(max_depth=2, min_child_weight=20, reg_lambda=5.0)
 REJILLA = [dict(max_depth=d, min_child_weight=w, reg_lambda=l)
            for d, w, l in itertools.product((2, 3, 4), (5, 20), (1.0, 5.0))]
+# Ronda 2 (29/09): la ronda 1 dio ganadora a la actual, en el BORDE de la
+# rejilla (lo más simple). Se mira más allá, hacia modelos aún más simples.
+# Misma selección y misma confirmación (esta sigue sin mirarse).
+if os.environ.get("RONDA") == "2":
+    REJILLA = [dict(max_depth=d, min_child_weight=w, reg_lambda=l)
+               for d, w, l in itertools.product((1, 2), (20, 50), (5.0, 20.0))]
 
 
 def entrenar(X, y, semilla, p):
@@ -65,7 +72,7 @@ def main():
         filas.append({**p, "brier": brier})
         print(f"  {nombre(p):32s} Brier {brier:.5f}{'   <- actual' if p == ACTUAL else ''}", flush=True)
     t = pd.DataFrame(filas).sort_values("brier")
-    t.to_csv("data/afinar_ambos_seleccion.csv", index=False)
+    t.to_csv(f"data/afinar_ambos_seleccion{'_r2' if os.environ.get('RONDA') == '2' else ''}.csv", index=False)
     mejor = {k: t.iloc[0][k] for k in ("max_depth", "min_child_weight", "reg_lambda")}
     mejor = dict(max_depth=int(mejor["max_depth"]), min_child_weight=int(mejor["min_child_weight"]),
                  reg_lambda=float(mejor["reg_lambda"]))
