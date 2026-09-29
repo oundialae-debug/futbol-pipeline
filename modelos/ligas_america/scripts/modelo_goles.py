@@ -43,7 +43,8 @@ import pandas as pd
 RAIZ = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", ".."))
 CARPETA = os.path.join(RAIZ, "modelos", "ligas_america")
 FD = os.path.join(CARPETA, "data", "football_data")
-LIGAS = {"ARG": "Liga Profesional", "BRA": "Brasileirão", "MEX": "Liga MX"}
+LIGAS = {"ARG": "Liga Profesional", "BRA": "Brasileirão", "MEX": "Liga MX",
+         "COLB": "Primera B Colombia"}   # COLB: resultados de FotMob, SIN cuotas (fotmob_resultados.py)
 OBJETIVOS = {"ambos_marcan": "btts", "mas_2_5": "o25"}
 SEMILLAS = (0, 1, 2)
 DESDE_PRUEBA = os.environ.get("DESDE_PRUEBA", "2024-01")
@@ -55,7 +56,10 @@ MKT = ["m_pl", "m_pe", "m_pv", "m_lam_l", "m_lam_v", "m_lam_tot", "m_p_btts", "m
 def cargar():
     tabs = []
     for cod in LIGAS:
-        d = pd.read_csv(os.path.join(FD, f"{cod}.csv"), encoding="utf-8-sig")
+        ruta = os.path.join(FD, f"{cod}.csv")
+        if not os.path.exists(ruta):
+            continue
+        d = pd.read_csv(ruta, encoding="utf-8-sig")
         d["liga"] = cod
         tabs.append(d)
     d = pd.concat(tabs, ignore_index=True)
