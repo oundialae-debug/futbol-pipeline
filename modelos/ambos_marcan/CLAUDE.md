@@ -1324,3 +1324,40 @@ El modelo oficial NO cambia. En `ambos_marcan_hoy.py`:
 - **Pendiente, sin prisa:** la posición en la tabla en directo no cuenta los
   partidos acabados ese mismo día. Arreglarlo costaría llamadas a la API o
   cambiar `rasgos.py`.
+
+**Fuga en la posición de la tabla (30/09/2026, `scripts/auditoria2_tabla_fuga.py`, sin API).**
+`rasgos.calcular_tabla` va partido a partido por orden de hora. Con dos partidos
+de la misma liga a la MISMA hora, el que cae segundo en el orden ya ve el
+resultado del otro en la tabla. Es información que no existía al empezar.
+La reimplementación reproduce la tabla actual en los 9.292 partidos.
+
+Cuánto afecta:
+- El 38% de los partidos empiezan a la misma hora que otro de su liga.
+- La fuga cambia la posición en el **8,6%** de los partidos: 1,3 puestos de
+  media, hasta 8.
+- Los partidos jugados antes ese mismo día (que en directo no se ven y al
+  entrenar sí; no es fuga) cambian otro **18%**.
+- Entre las dos cosas, un 25% de partidos difiere de lo que se ve en directo.
+
+Efecto en el modelo oficial (21 meses, 5 semillas):
+
+| versión de la tabla | frente a la actual | meses mejor | contra el ambos marcan real |
+|---|---|---|---|
+| actual | - | - | -0.02s |
+| estricta (sin fuga) | Brier -0.37s, log loss -0.35s | 7/21 | -0.04s |
+| inicio del día (= directo) | Brier +0.31s, log loss +0.24s | 11/21 | +0.11s |
+
+- Inicio del día frente a estricta: Brier +0.65s, log loss +0.56s, mejor en
+  12/21 meses.
+- La probabilidad cambia 0,25-0,29 puntos de media.
+
+Lectura:
+- La fuga es real pero no infló nada: quitarla no cambia el modelo más allá del
+  ruido de semillas. Las conclusiones anteriores siguen en pie.
+- Con las reglas fijadas antes, la versión recomendada es **inicio del día**:
+  quita la fuga, no es peor que la estricta e iguala entrenamiento y directo.
+- No se ha aplicado todavía: cambiarla es decisión del usuario.
+- `rasgos.py` NO se toca (lo usan los otros modelos). El cambio iría dentro de
+  `modelo_ambos_marcan.preparar()`.
+- La misma fuga existe en los modelos de 1X2 y goles, que usan
+  `calcular_tabla`. Sin arreglar allí.
