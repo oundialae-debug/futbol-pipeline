@@ -1306,3 +1306,21 @@ con cuota real):
   valor esperado con una desviación del 4.9% (percentil 90 de |diferencia|:
   7.8%). Propuesta: apostar solo si el valor esperado supera el 8%. Por
   debajo, el "valor" puede ser solo ruido del precio.
+
+**Cambios en el registro en papel (30/09/2026), aprobados por el usuario tras la auditoría.**
+El modelo oficial NO cambia. En `ambos_marcan_hoy.py`:
+- **Columna nueva `mod_ambos_precio`:** el modelo de solo precio ampliado (la
+  logística "C" de `auditoria2_precio.py`, reentrenada en cada pasada). Solo se
+  apunta; no se apuesta con él. Sirve para que el registro resuelva la
+  contradicción de la auditoría: C gana al oficial frente al resultado, pero
+  pierde frente al mercado real.
+- **Juez principal en `evaluar`:** Brier y log loss sobre TODOS los partidos,
+  contra el ambos marcan real, con sigmas emparejadas. Se calcula para el oficial
+  y para el de solo precio.
+- **Punto de control a los 400 partidos.** Hasta entonces no se toca el modelo.
+- **Apuesta en papel solo con VE > 8%** (`UMBRAL_VE`). Se aplica también a las
+  filas anteriores al cambio. VE > 0 se sigue enseñando, pero solo como
+  referencia.
+- **Pendiente, sin prisa:** la posición en la tabla en directo no cuenta los
+  partidos acabados ese mismo día. Arreglarlo costaría llamadas a la API o
+  cambiar `rasgos.py`.

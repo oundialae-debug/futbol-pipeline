@@ -21,7 +21,8 @@ Dos pasos:
 REGISTRO EN PAPEL (desde el 27/09/2026, petición del usuario: "todo lo que se
 haga a partir de ahora tiene que ir aprendiendo"): cada pronóstico se apunta
 ANTES del partido en data/ambos_marcan/registro_papel.csv (1X2, más de 2.5 y
-ambos marcan, modelo y mercado, y la apuesta de ambos marcan si VE > 0 contra
+ambos marcan, modelo, modelo de solo precio y mercado, y la apuesta de ambos
+marcan si VE > 8% contra
 la cuota mediana). Es el único juez limpio: partidos que ninguna prueba ha
 tocado. El modelo además se reentrena con todo lo jugado cada vez que se usa.
 Uso: python scripts/ambos_marcan_hoy.py descargar|pronosticar|evaluar
@@ -49,6 +50,14 @@ FECHA = os.environ.get("FECHA") or datetime.now(timezone.utc).date().isoformat()
 CARPETA = "data/ambos_hoy"
 REGISTRO = "data/ambos_marcan/registro_papel.csv"
 BASE_URL = "https://soccer.highlightly.net"
+# Reglas del registro fijadas el 30/09/2026 (segunda auditoría, paso 4), ANTES de ver resultados:
+#  - juez principal: Brier y log loss sobre TODOS los partidos registrados (el último
+#    pronóstico antes del pitido) contra el ambos marcan real, emparejado partido a partido;
+#  - primer punto de control a los 400 partidos (ahí se ve una mejora de ~0.005 de Brier);
+#  - apuesta en papel solo si VE > 8% (el ruido de cambiar de fuente de precio mueve el VE
+#    ~5% de media, hasta ~8%). Por debajo, el "valor" puede ser solo ruido del precio.
+UMBRAL_VE = 0.08
+CONTROL = 400
 
 
 def pedir(path, params=None):
@@ -240,13 +249,28 @@ def pronosticar():
                              for s in (0, 1, 2, 3, 4)], axis=0)
     test = test.assign(p=prob["ambos_marcan"][:, 1], p_mas25=prob["mas_2_5"][:, 1], p_1=prob["resultado"][:, 0],
                        p_x=prob["resultado"][:, 1], p_2=prob["resultado"][:, 2])
+    # Modelo de comparación (30/09/2026): SOLO precio ampliado, la logística "C" de
+    # auditoria2_precio.py. En 21 meses ganó al oficial frente al resultado (+3.01s) pero
+    # perdió frente al ambos marcan real (-0.73s en 255 partidos). Solo se apunta, para que
+    # el registro decida cuál de los dos va mejor contra el mercado. No se apuesta con él.
+    from auditoria2_precio import x_precio
+    from sklearn.linear_model import LogisticRegression
+    from sklearn.pipeline import make_pipeline
+    from sklearn.preprocessing import StandardScaler
+    ep = ent[ent[MKT].notna().all(axis=1)]
+    tp = test[MKT].notna().all(axis=1).values
+    p_precio = np.full(len(test), np.nan)
+    if tp.any():
+        lr = make_pipeline(StandardScaler(), LogisticRegression(C=1e6)).fit(x_precio(ep), ep["ambos_marcan"].astype(int))
+        p_precio[tp] = lr.predict_proba(x_precio(test[tp]))[:, 1]
+    test = test.assign(p_precio=p_precio)
     print(f"Entrenado con {len(ent)} partidos, {len(cols)} variables. Último partido de la liga en el "
           f"histórico: {str(ult.fecha.max())[:10]}\n")
     L = [f"# Ambos marcan, {FECHA} (ligas {', '.join(map(str, sorted(hoy.liga_id.unique())))})", "",
          f"Modelo oficial de ambos marcan (producción + precio, {len(ent)} partidos de entrenamiento). "
          "Mercado = mediana de casas sin margen. Cuota mínima = 1/p del modelo.", "",
-         "| partido | hora (España) | modelo: sí | mercado: sí | lado del modelo | cuota mínima | cuota mediana | VE | once |",
-         "|---|---|---|---|---|---|---|---|---|"]
+         "| partido | hora (España) | modelo: sí | solo precio: sí | mercado: sí | lado del modelo | cuota mínima | cuota mediana | VE | apuesta (VE > 8%) | once |",
+         "|---|---|---|---|---|---|---|---|---|---|---|"]
     for _, h in hoy.iterrows():
         t = test[test.match_id == h.match_id]
         if t.empty:
@@ -262,8 +286,11 @@ def pronosticar():
                 if pd.notna(h.fecha) else "")
         once = "real" if isinstance(h.local_ids, str) and isinstance(h.visitante_ids, str) else "sin once"
         falta_precio = t[MKT].isna().any(axis=1).iloc[0]
-        L.append(f"| {h.local} - {h.visitante} | {hora} | {pm*100:.0f}% | {pk*100:.0f}% | **{lado}** | "
-                 f"{1/pl:.2f} | {cuota:.2f} | {ve*100:+.1f}% | {once}{', SIN precio' if falta_precio else ''} |")
+        pp = float(t.p_precio.iloc[0])
+        L.append(f"| {h.local} - {h.visitante} | {hora} | {pm*100:.0f}% | "
+                 f"{'-' if np.isnan(pp) else f'{pp*100:.0f}%'} | {pk*100:.0f}% | **{lado}** | "
+                 f"{1/pl:.2f} | {cuota:.2f} | {ve*100:+.1f}% | {'sí' if ve > UMBRAL_VE else 'no'} | "
+                 f"{once}{', SIN precio' if falta_precio else ''} |")
         print(f"{h.local:>14s} - {h.visitante:<15s} {hora}  modelo sí {pm*100:4.1f}%  mercado sí {pk*100:4.1f}% "
               f"({n} casas)  -> {lado} a {cuota:.2f} (mín {1/pl:.2f}, VE {ve*100:+.1f}%)  {once}  estado {h.estado}")
     open(f"{CARPETA}/pronostico.md", "w").write("\n".join(L) + "\n")
@@ -291,7 +318,8 @@ def registrar(hoy, test, cuotas):
                       "mod_mas25": round(t.p_mas25, 4), "mkt_mas25": round(o.get("Over", np.nan), 4),
                       "mod_ambos": round(t.p, 4), "mkt_ambos": round(b.get("Yes", np.nan), 4),
                       "lado_ambos": "si" if si else "no", "cuota_ambos": cuota,
-                      "ve_ambos": round(pl * cuota - 1, 4), "apuesta": bool(pl * cuota - 1 > 0)})
+                      "ve_ambos": round(pl * cuota - 1, 4), "apuesta": bool(pl * cuota - 1 > UMBRAL_VE),
+                      "mod_ambos_precio": round(t.p_precio, 4)})
     if filas:
         os.makedirs(os.path.dirname(REGISTRO), exist_ok=True)
         r = pd.DataFrame(filas)
@@ -316,16 +344,24 @@ def evaluar():
     jugados["ambos"] = ((gl > 0) & (gv > 0)).astype(int)
     jugados["mas25"] = ((gl + gv) > 2.5).astype(int)
     jugados["res"] = np.select([gl > gv, gl == gv], ["1", "x"], "2")
+    # la regla de apuesta se aplica igual a todas las filas (también a las de antes del 30/09)
+    jugados["apuesta"] = jugados.ve_ambos > UMBRAL_VE
     ap = jugados[jugados.apuesta]
     gano = np.where(ap.lado_ambos == "si", ap.ambos == 1, ap.ambos == 0)
     benef = np.where(gano, ap.cuota_ambos - 1, -1.0)
+    ap0 = jugados[jugados.ve_ambos > 0]
+    b0 = np.where(np.where(ap0.lado_ambos == "si", ap0.ambos == 1, ap0.ambos == 0), ap0.cuota_ambos - 1, -1.0)
     def brier(p, y): return float(np.mean((p - y) ** 2))
     L = ["# Registro en papel: modelo de ambos marcan (desde el 27/09/2026)", "",
-         "Cada pronóstico se apunta ANTES del partido; aquí se cruza con lo que pasó. Apuesta = ambos marcan, "
-         "1 unidad, solo si el valor esperado es positivo contra la cuota mediana. Es la prueba limpia del "
-         "modelo: no se toca nada del modelo por lo que salga aquí hasta tener muestra (100+ apuestas).", "",
+         "Cada pronóstico se apunta ANTES del partido; aquí se cruza con lo que pasó (el último "
+         "pronóstico antes del pitido). Es la prueba limpia del modelo.", "",
+         "**Reglas fijadas el 30/09/2026, antes de ver resultados:** el juez principal es el Brier y el "
+         "log loss sobre TODOS los partidos, contra el ambos marcan real (mediana de casas sin margen), "
+         f"emparejado partido a partido. Primer punto de control a los {CONTROL} partidos. Apuesta en papel "
+         f"(1 unidad) solo si el VE supera el {UMBRAL_VE:.0%}. No se toca el modelo antes del control.", "",
          f"**Partidos jugados: {len(jugados)}** (pendientes {d.goles_l.isna().sum()}).", ""]
     if len(jugados):
+        L += juez(jugados)
         acierto = lambda col_mod, col_real, umbral=0.5: float(((jugados[col_mod] >= umbral).astype(int) == jugados[col_real]).mean())
         pick_mod = jugados[["mod_1", "mod_x", "mod_2"]].values.argmax(1)
         pick_mkt = jugados[["mkt_1", "mkt_x", "mkt_2"]].values.argmax(1)
@@ -336,8 +372,9 @@ def evaluar():
               f"| más de 2.5 | {acierto('mod_mas25', 'mas25')*100:.0f}% | {acierto('mkt_mas25', 'mas25')*100:.0f}% | "
               f"{brier(jugados.mod_mas25, jugados.mas25):.3f} | {brier(jugados.mkt_mas25, jugados.mas25):.3f} |",
               f"| 1X2 | {(pick_mod == real).mean()*100:.0f}% | {(pick_mkt == real).mean()*100:.0f}% | - | - |", "",
-              f"**Apuestas de ambos marcan:** {len(ap)}, ganadas {int(gano.sum())}, beneficio "
-              f"{benef.sum():+.2f} unidades ({(benef.mean()*100 if len(ap) else 0):+.1f}% por apuesta).", "",
+              f"**Apuestas de ambos marcan (VE > {UMBRAL_VE:.0%}):** {len(ap)}, ganadas {int(gano.sum())}, beneficio "
+              f"{benef.sum():+.2f} unidades ({(benef.mean()*100 if len(ap) else 0):+.1f}% por apuesta). "
+              f"Solo como referencia, con VE > 0: {len(ap0)} apuestas, {b0.sum():+.2f} unidades.", "",
               "| saque | partido | resultado | ambos (modelo/mercado) | apuesta | cuota | beneficio |",
               "|---|---|---|---|---|---|---|"]
         for _, j in jugados.sort_values("saque").iterrows():
@@ -350,7 +387,37 @@ def evaluar():
                      f"{j.cuota_ambos:.2f} | {ben} |")
     os.makedirs("modelos/ambos_marcan", exist_ok=True)
     open("modelos/ambos_marcan/registro_papel.md", "w").write("\n".join(L) + "\n")
-    print("\n".join(L[4:6] + L[6:12]))
+    print("\n".join(L[6:]))
+
+
+def juez(j):
+    """Juez principal: Brier y log loss de cada modelo contra el ambos marcan real, sobre
+    todos los partidos que tienen los dos precios. + = el modelo mejor que el mercado."""
+    eps = 1e-4
+    def ll(p, y):
+        p = np.clip(p, eps, 1 - eps)
+        return -(y * np.log(p) + (1 - y) * np.log(1 - p))
+    def sig(x):
+        return x.mean() / (x.std(ddof=1) / np.sqrt(len(x))) if len(x) > 2 and x.std(ddof=1) > 0 else np.nan
+    L = [f"## Juez principal: todos los partidos contra el ambos marcan real", "",
+         "| modelo | partidos | Brier modelo | Brier mercado | sigmas Brier | log loss modelo | log loss mercado | sigmas log loss |",
+         "|---|---|---|---|---|---|---|---|"]
+    modelos = [("oficial", "mod_ambos")]
+    if "mod_ambos_precio" in j.columns:
+        modelos.append(("solo precio (comparación)", "mod_ambos_precio"))
+    for nombre, col in modelos:
+        k = j[j[col].notna() & j.mkt_ambos.notna()]
+        if k.empty:
+            L.append(f"| {nombre} | 0 | - | - | - | - | - | - |")
+            continue
+        y, pm, pk = k.ambos.values, k[col].values, k.mkt_ambos.values
+        db, dl = (pk - y) ** 2 - (pm - y) ** 2, ll(pk, y) - ll(pm, y)
+        L.append(f"| {nombre} | {len(k)} | {((pm - y) ** 2).mean():.4f} | {((pk - y) ** 2).mean():.4f} | "
+                 f"{sig(db):+.2f}s | {ll(pm, y).mean():.4f} | {ll(pk, y).mean():.4f} | {sig(dl):+.2f}s |")
+    n = int(j.mkt_ambos.notna().sum())
+    L += ["", f"Punto de control: {n} de {CONTROL} partidos. Hasta entonces las sigmas son orientativas "
+          "(hace falta +2s en Brier Y log loss para decir que un modelo bate al mercado).", ""]
+    return L
 
 
 if __name__ == "__main__":
