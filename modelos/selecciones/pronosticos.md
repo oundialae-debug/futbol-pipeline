@@ -1,4 +1,4 @@
-# Pronósticos de selecciones (29/09/2026 15:31 UTC)
+# Pronósticos de selecciones (29/09/2026 17:54 UTC)
 
 Tema aparte del proyecto de ambos marcan. Por mercado: **modelo** (selecciones + nota justa de los jugadores + árbitro), **mercado** (mediana de casas sin margen) y **final** (mezcla con el peso que se aprende de los partidos ya jugados, ver `evaluacion.md`). Pronóstico = el lado más probable según final. **Cuota mínima** = 1/probabilidad final: por debajo no compensa.
 
@@ -46,43 +46,43 @@ Once real Belarus: F. Lapoukhov, German Barkovskiy, K. Pechenin, K. Gomanov, A. 
 
 ## Czech Republic - England (2026-09-29 18:45 UTC)
 
-Ranking FIFA (puntos): Czech Republic 1467, England 1923. Goles esperados 0.75 - 2.70, marcador más probable 0-2. Córners esperados 9.2. Amarillas esperadas 2.4 (árbitro Meler, Halil Umut, 0 partidos en nuestras ligas, x1.00). Forma del once: Czech Republic +0.06, England +0.01. Partidos en el modelo: Czech Republic 17, England 23.
+Ranking FIFA (puntos): Czech Republic 1467, England 1923. Goles esperados 0.76 - 2.60, marcador más probable 0-2. Córners esperados 9.2. Amarillas esperadas 2.4 (árbitro Meler, Halil Umut, 0 partidos en nuestras ligas, x1.00). Forma del once: Czech Republic +0.05, England -0.06. Partidos en el modelo: Czech Republic 17, England 23.
 
 | mercado | pronóstico | final | modelo | mercado | cuota mínima | cuota mediana | mejor cuota | casas |
 |---|---|---|---|---|---|---|---|---|
-| 1X2 | **gana England** | 78% | 78% | - | 1.27 | nan | nan | 0 |
-| Sin empate | **gana England (sin empate)** | 91% | 91% | - | 1.10 | nan | nan | 0 |
-| Más/menos 2.5 | **más de 2.5 goles** | 67% | 67% | - | 1.50 | nan | nan | 0 |
-| Ambos marcan | **ambos marcan: no** | 51% | 51% | - | 1.96 | nan | nan | 0 |
+| 1X2 | **gana England** | 77% | 77% | - | 1.30 | nan | nan | 0 |
+| Sin empate | **gana England (sin empate)** | 90% | 90% | - | 1.11 | nan | nan | 0 |
+| Más/menos 2.5 | **más de 2.5 goles** | 65% | 65% | - | 1.53 | nan | nan | 0 |
+| Ambos marcan | **ambos marcan: no** | 51% | 51% | - | 1.97 | nan | nan | 0 |
 | Tarjetas | **menos de 3.5 tarjetas** | 75% | 75% | - | 1.33 | nan | nan | 0 |
 | Tarjetas | **menos de 4.5 tarjetas** | 86% | 86% | - | 1.17 | nan | nan | 0 |
 | Córners | **más de 8.5 córners** | 56% | 56% | - | 1.79 | nan | nan | 0 |
 | Córners | **menos de 9.5 córners** | 56% | 56% | - | 1.78 | nan | nan | 0 |
-| Goles | **más de 1.5 goles** | 86% | 86% | - | 1.17 | nan | nan | 0 |
-| Goles | **England marca primero** | 78% | 78% | - | 1.28 | nan | nan | 0 |
+| Goles | **más de 1.5 goles** | 85% | 85% | - | 1.18 | nan | nan | 0 |
+| Goles | **England marca primero** | 77% | 77% | - | 1.29 | nan | nan | 0 |
 
-Once probable Czech Republic: L. Krejčí, P. Schick, A. Hložek, P. Šulc, M. Kovář, Lukáš Červ, Michal Sadílek, V. Coufal, R. Hranáč, Štěpán Chaloupek, Tomáš Holeš
-Once probable England: J. Bellingham, H. Kane, B. Saka, D. Rice, E. Anderson, M. Rogers, M. Guéhi, Djed Spence, J. Pickford, A. Gordon, E. Konsa
+Once real Czech Republic: L. Krejčí, Adam Karabec, A. Hložek, P. Šulc, M. Kovář, Lukáš Červ, Michal Sadílek, R. Hranáč, Štěpán Chaloupek, Matej Radosta, Jiří Sláma
+Once real England: H. Kane, B. Saka, E. Anderson, M. Rogers, L. Hall, M. Guéhi, T. Alexander-Arnold, A. Gordon, Trevoh Chalobah, J. Trafford, M. Lewis-Skelly
 
 ## Scotland - Switzerland (2026-09-29 18:45 UTC)
 
-Ranking FIFA (puntos): Scotland 1491, Switzerland 1711. Goles esperados 0.97 - 1.96, marcador más probable 0-1. Córners esperados 9.2. Amarillas esperadas 2.9 (árbitro Minakovic, Nenad, 0 partidos en nuestras ligas, x1.00). Forma del once: Scotland -0.01, Switzerland -0.03. Partidos en el modelo: Scotland 18, Switzerland 21.
+Ranking FIFA (puntos): Scotland 1491, Switzerland 1711. Goles esperados 0.95 - 2.00, marcador más probable 0-2. Córners esperados 9.2. Amarillas esperadas 2.9 (árbitro Minakovic, Nenad, 0 partidos en nuestras ligas, x1.00). Forma del once: Scotland -0.05, Switzerland -0.00. Partidos en el modelo: Scotland 18, Switzerland 21.
 
 | mercado | pronóstico | final | modelo | mercado | cuota mínima | cuota mediana | mejor cuota | casas |
 |---|---|---|---|---|---|---|---|---|
-| 1X2 | **gana Switzerland** | 60% | 60% | - | 1.66 | nan | nan | 0 |
-| Sin empate | **gana Switzerland (sin empate)** | 77% | 77% | - | 1.30 | nan | nan | 0 |
-| Más/menos 2.5 | **más de 2.5 goles** | 56% | 56% | - | 1.78 | nan | nan | 0 |
-| Ambos marcan | **ambos marcan: sí** | 53% | 53% | - | 1.87 | nan | nan | 0 |
+| 1X2 | **gana Switzerland** | 62% | 62% | - | 1.62 | nan | nan | 0 |
+| Sin empate | **gana Switzerland (sin empate)** | 78% | 78% | - | 1.28 | nan | nan | 0 |
+| Más/menos 2.5 | **más de 2.5 goles** | 57% | 57% | - | 1.77 | nan | nan | 0 |
+| Ambos marcan | **ambos marcan: sí** | 53% | 53% | - | 1.89 | nan | nan | 0 |
 | Tarjetas | **menos de 3.5 tarjetas** | 66% | 66% | - | 1.51 | nan | nan | 0 |
 | Tarjetas | **menos de 4.5 tarjetas** | 79% | 79% | - | 1.27 | nan | nan | 0 |
 | Córners | **más de 8.5 córners** | 56% | 56% | - | 1.80 | nan | nan | 0 |
 | Córners | **menos de 9.5 córners** | 57% | 57% | - | 1.77 | nan | nan | 0 |
-| Goles | **más de 1.5 goles** | 79% | 79% | - | 1.27 | nan | nan | 0 |
-| Goles | **Switzerland marca primero** | 67% | 67% | - | 1.50 | nan | nan | 0 |
+| Goles | **más de 1.5 goles** | 79% | 79% | - | 1.26 | nan | nan | 0 |
+| Goles | **Switzerland marca primero** | 68% | 68% | - | 1.47 | nan | nan | 0 |
 
-Once probable Scotland: Angus Gunn, Lewis Ferguson, L. Shankland, G. Hanley, J. Hendry, B. Doak, A. Robertson, Scott McTominay, Nathan Patterson, J.  McGinn, Scott McKenna
-Once probable Switzerland: G. Xhaka, R. Freuler, G. Kobel, B. Embolo, F. Rieder, N. Elvedi, Manuel Akanji, D. Zakaria, D. Ndoye, Ricardo Rodríguez, Djibril Sow
+Once real Scotland: Angus Gunn, Lewis Ferguson, Billy Gilmour, J. Hendry, L. Binks, A. Robertson, Nathan Patterson, Kieron Bowie, O. McBurnie, J.  McGinn, Scott McKenna
+Once real Switzerland: Z. Amdouni, Z. Athekame, J. Manzambi, R. Freuler, G. Kobel, N. Elvedi, Manuel Akanji, D. Ndoye, Ardon Jashari, Ricardo Rodríguez, M. Aebischer
 
 ## Bulgaria - Estonia (2026-09-29 18:45 UTC)
 
@@ -146,23 +146,23 @@ Once probable Albania: K. Asllani, Mario Mitaj, Elseid Hysaj, B. Djimsiti, Qazim
 
 ## Spain - Croatia (2026-09-29 18:45 UTC)
 
-Ranking FIFA (puntos): Spain 1996, Croatia 1723. Goles esperados 2.63 - 0.71, marcador más probable 2-0. Córners esperados 10.3. Amarillas esperadas 2.5 (árbitro Gozubuyuk, Serdar, 0 partidos en nuestras ligas, x1.00). Forma del once: Spain -0.08, Croatia -0.01. Partidos en el modelo: Spain 22, Croatia 19.
+Ranking FIFA (puntos): Spain 1996, Croatia 1723. Goles esperados 2.54 - 0.73, marcador más probable 2-0. Córners esperados 10.3. Amarillas esperadas 2.5 (árbitro Gozubuyuk, Serdar, 0 partidos en nuestras ligas, x1.00). Forma del once: Spain -0.14, Croatia +0.01. Partidos en el modelo: Spain 22, Croatia 19.
 
 | mercado | pronóstico | final | modelo | mercado | cuota mínima | cuota mediana | mejor cuota | casas |
 |---|---|---|---|---|---|---|---|---|
-| 1X2 | **gana Spain** | 78% | 78% | - | 1.28 | nan | nan | 0 |
-| Sin empate | **gana Spain (sin empate)** | 91% | 91% | - | 1.10 | nan | nan | 0 |
-| Más/menos 2.5 | **más de 2.5 goles** | 65% | 65% | - | 1.54 | nan | nan | 0 |
-| Ambos marcan | **ambos marcan: no** | 53% | 53% | - | 1.89 | nan | nan | 0 |
+| 1X2 | **gana Spain** | 77% | 77% | - | 1.30 | nan | nan | 0 |
+| Sin empate | **gana Spain (sin empate)** | 90% | 90% | - | 1.11 | nan | nan | 0 |
+| Más/menos 2.5 | **más de 2.5 goles** | 63% | 63% | - | 1.58 | nan | nan | 0 |
+| Ambos marcan | **ambos marcan: no** | 52% | 52% | - | 1.91 | nan | nan | 0 |
 | Tarjetas | **menos de 3.5 tarjetas** | 74% | 74% | - | 1.35 | nan | nan | 0 |
 | Tarjetas | **menos de 4.5 tarjetas** | 85% | 85% | - | 1.18 | nan | nan | 0 |
 | Córners | **más de 8.5 córners** | 68% | 68% | - | 1.47 | nan | nan | 0 |
 | Córners | **más de 9.5 córners** | 57% | 57% | - | 1.77 | nan | nan | 0 |
-| Goles | **más de 1.5 goles** | 85% | 85% | - | 1.18 | nan | nan | 0 |
-| Goles | **Spain marca primero** | 79% | 79% | - | 1.27 | nan | nan | 0 |
+| Goles | **más de 1.5 goles** | 84% | 84% | - | 1.19 | nan | nan | 0 |
+| Goles | **Spain marca primero** | 78% | 78% | - | 1.29 | nan | nan | 0 |
 
-Once probable Spain: Lamine Yamal, Rodri, Pau Cubarsí Paredes, Álex Baena, Dani Olmo, Aymeric Laporte, Unai Simón, Pedro Porro, Fabián Ruiz, Mikel Oyarzabal, Marc Cucurella
-Once probable Croatia: I. Perišić, A. Budimir, Luka Modrić, Martin Baturina, Petar Sučić, D. Livaković, M. Kovačić, Josip Šutalo, J. Stanišić, Marin Pongračić, Nikola Vlašić
+Once real Spain: Lamine Yamal, Fermín, Pau Cubarsí Paredes, Álex Baena, Unai Simón, D. Huijsen, Fabián Ruiz, Mikel Oyarzabal, Martín Zubimendi, Marc Pubill, Marc Cucurella
+Once real Croatia: I. Perišić, Marco Pašalić, J. Gvardiol, Petar Sučić, Dion Drena Beljo, Josip Mišić, D. Livaković, M. Kovačić, Josip Šutalo, Ivan Smolčić, Marin Pongračić
 
 ## Luxembourg - Iceland (2026-09-29 18:45 UTC)
 
