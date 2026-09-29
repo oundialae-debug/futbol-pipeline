@@ -84,8 +84,9 @@ def pedir(jugador_id):
 
 
 def fecha(txt):
-    """'Feb 2, 1989' -> '1989-02-02'. Vacío si no se entiende (se cuenta, no se inventa)."""
-    for f in ("%b %d, %Y", "%d.%m.%Y", "%Y-%m-%d"):
+    """'16/12/1986' (formato REAL de la API; la especificación decía 'Feb 2, 1989')
+    -> '1986-12-16'. Vacío si no se entiende (se cuenta, no se inventa)."""
+    for f in ("%d/%m/%Y", "%b %d, %Y", "%d.%m.%Y", "%Y-%m-%d"):
         try:
             return datetime.strptime(str(txt).strip(), f).strftime("%Y-%m-%d")
         except Exception:
