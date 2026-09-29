@@ -16,12 +16,13 @@ name: Ambos marcan - registro en papel diario
 #    su pronóstico con el once, se descarga (3 llamadas) y se pronostica.
 #    Los partidos de martes a jueves (~7%) se quedan con el de la mañana.
 #
-# EN PAUSA (29/09/2026): regla del usuario, ninguna llamada a la API sin su sí
-# explícito. Descomentar el schedule cuando lo apruebe.
+# ACTIVO: el usuario aprobó el 29/09/2026 estas llamadas automáticas (~30/día
+# con la Segunda, ~80/día con las 6 ligas). Cualquier llamada NUEVA o mayor
+# necesita otro sí explícito (regla del CLAUDE.md raíz).
 on:
-  # schedule:
-  #   - cron: '7 8 * * *'
-  #   - cron: '7,37 9-20 * * 1,5,6,0'
+  schedule:
+    - cron: '7 8 * * *'
+    - cron: '7,37 9-20 * * 1,5,6,0'
   workflow_dispatch:
     inputs:
       modo:

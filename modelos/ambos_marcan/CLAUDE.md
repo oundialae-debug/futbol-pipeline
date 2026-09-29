@@ -1132,12 +1132,11 @@ anteriores. 3.247 partidos, mar-2025 a sep-2026.
   modelo de 1 nivel eran reglas que cambian por liga, y el de 2 niveles ya
   las tiene. No reabrir "más peso a la liga".
 
-## Registro en papel automático (29/09/2026) -- EN PAUSA hasta el sí del usuario
+## Registro en papel automático (29/09/2026) -- ACTIVO (aprobado por el usuario el 29/09)
 
-`.github/workflows/ambos_marcan_diario.yml`. La regla del usuario del 29/09
-("nunca llamar a la API sin su sí explícito", ver CLAUDE.md raíz) llegó
-después de montarlo: el `schedule` está comentado hasta que apruebe las
-llamadas automáticas.
+`.github/workflows/ambos_marcan_diario.yml`. Con la regla del 29/09 ("nunca
+llamar a la API sin su sí explícito", ver CLAUDE.md raíz), el usuario aprobó
+expresamente estas llamadas automáticas. Ampliarlas necesita otro sí.
 
 **Horario ajustado a los calendarios.**
 - **Datos de partida:** en 2025/26 y 2026/27, todos los partidos de las 6

@@ -1127,8 +1127,9 @@ comentado (marcado "EN PAUSA"):
 
 Para reactivar: descomentar el `schedule` de cada uno.
 
-`ambos_marcan_diario.yml` (registro en papel de ambos marcan) también está EN PAUSA hasta que
-el usuario apruebe sus llamadas automáticas. Ver `modelos/ambos_marcan/CLAUDE.md`.
+`ambos_marcan_diario.yml` (registro en papel de ambos marcan) SÍ está ACTIVO: el usuario aprobó
+el 29/09/2026 sus llamadas automáticas (~30/día con la Segunda, ~80/día con las 6 ligas).
+Cualquier llamada nueva o mayor necesita otro sí. Ver `modelos/ambos_marcan/CLAUDE.md`.
 
 ## NBA: descarga diaria gratis (28/09/2026)
 
