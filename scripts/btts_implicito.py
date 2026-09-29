@@ -31,15 +31,28 @@ def probs(ll, lv):
     return (np.tril(m, -1).sum(), np.trace(m), np.triu(m, 1).sum(), m[tot > 2.5].sum())
 
 
+# Varios puntos de partida (arreglo del 29/09/2026, auditoría punto 7): con un
+# solo arranque en (1.4, 1.1), en partidos con un favorito muy claro el ajuste
+# se iba a soluciones absurdas (p. ej. 3.2 y 8.2 goles en vez de 0.9 y 2.9, con
+# un error ~400 veces mayor) y el ambos marcan implícito salía 96% en vez de
+# 53%. Pasaba en 7 de 301 partidos de Highlightly y 30 de 9.107 de
+# football-data. Cero error: números plausibles y falsos.
+INICIOS = ((1.4, 1.1), (0.8, 2.5), (2.5, 0.8), (1.2, 1.2), (0.6, 1.8), (1.8, 0.6))
+
+
 def ajustar(p_l, p_e, p_v, p_o):
     obj = np.array([p_l, p_e, p_v, p_o])
     ok = ~np.isnan(obj)
 
     def err(x):
         return ((np.array(probs(*np.exp(x))) - obj)[ok] ** 2).sum()
-    r = minimize(err, np.log([1.4, 1.1]), method="Nelder-Mead",
-                 options={"xatol": 1e-4, "fatol": 1e-9})
-    return np.exp(r.x)
+    mejor = None
+    for ini in INICIOS:
+        r = minimize(err, np.log(ini), method="Nelder-Mead",
+                     options={"xatol": 1e-4, "fatol": 1e-9})
+        if mejor is None or r.fun < mejor.fun:
+            mejor = r
+    return np.exp(mejor.x)
 
 
 def main():
