@@ -1111,3 +1111,23 @@ dos juegos de semillas.
   modelo dan +2.12s entre sí. El sigma emparejado mide "mejor en estos
   partidos", no el azar del entrenamiento. Un +2s suelto puede ser en parte
   ruido de semillas: repetir con otras semillas antes de creérselo.
+
+## ¿Debe pesar más la liga? (29/09/2026): no
+
+Pregunta del usuario tras la revisión de 1 contra 2 niveles.
+`scripts/ajuste_por_liga.py`, sobre las predicciones guardadas del oficial (2
+niveles, 10 semillas). Cada mes, un ajuste por liga con solo sus meses
+anteriores. 3.247 partidos, mar-2025 a sep-2026.
+
+| ajuste | sigmas | por liga |
+|---|---|---|
+| A desplazar el nivel de cada liga | -1.43s | peor en las 6 |
+| B Platt por liga (nivel y confianza) | +0.88s | 3 mejor, 3 peor |
+
+- **A:** el oficial ya acierta el nivel de ambos marcan de cada liga; los
+  desplazamientos aprendidos son pequeños (±0.15 en logit) y empeoran.
+- **B:** mezclado liga a liga, y por debajo del Platt global (+1.20s, ver
+  "Recalibración"). Separar por liga no añade nada.
+- **Conclusión:** la liga ya pesa lo que tiene que pesar. Lo que perdía el
+  modelo de 1 nivel eran reglas que cambian por liga, y el de 2 niveles ya
+  las tiene. No reabrir "más peso a la liga".
