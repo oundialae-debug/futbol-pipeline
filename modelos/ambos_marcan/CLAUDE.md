@@ -1224,3 +1224,85 @@ partidos, mar-2025 a sep-2026):
   variables y, sumando las dos pruebas, su efecto neto es ~0 (+1.25s y
   -0.78s), así que ni ayuda ni daña de forma medible. No volver a proponer
   quitarlo salvo que una prueba nueva lo muestre dañando con claridad.
+
+## Segunda auditoría externa (30/09/2026): reproducida con XGBoost real
+
+Todo sin API, en scripts nuevos, con las reglas fijadas antes.
+
+**Paso 1, precio frente a modelo** (`scripts/auditoria2_precio.py`, 4.422
+partidos con precio previo, sep-2024 a sep-2026, 21 meses):
+
+| comparación | Brier | log loss | meses mejor |
+|---|---|---|---|
+| ruido: oficial semillas 10-14 frente a 0-4 | -1.52s | -1.58s | 7/21 |
+| P1: solo precio (B) frente al oficial | **+2.58s** | +2.68s | 14/21 |
+| P1: precio ampliado (C) frente al oficial | **+3.01s** | +3.05s | 17/21 |
+| XGBoost con solo el precio (D) frente al oficial | +0.95s | +1.00s | 10/21 |
+| P2: partir del precio + árboles de fútbol (120) frente a B | -1.64s | -1.73s | 8/21 |
+| P2: lo mismo con 300 árboles frente a B | -2.56s | -2.70s | 5/21 |
+| P3: precio ampliado (C) frente a solo precio (B) | +1.06s | +0.92s | 12/21 |
+| P3: C + liga frente a C | -0.85s | -0.88s | 9/21 |
+
+- **Calibración (lado elegido, >65%):** oficial dice 68.3% y pasa 61.2%;
+  B 67.6/64.1; C 68.1/64.8. El precio está mejor calibrado.
+- **Contra el ambos marcan REAL (255 partidos, ago-sep 2026):** oficial -0.06s,
+  B -0.91s, C -0.73s, C+liga -0.69s, D -0.63s, E120 -0.22s, E300 +0.14s.
+  Ninguno bate al mercado; el oficial empata y los de solo precio quedan
+  algo por debajo.
+- **Veredicto:** puntos 1 y 2 CONFIRMADOS: frente al resultado, en 21 meses,
+  el precio solo gana al oficial por encima del ruido de semillas, y el
+  fútbol encima del precio empeora. Punto 3 NO confirmado (+1.06s, la liga
+  tampoco aporta).
+- **Pero** en los únicos partidos con ambos marcan real, el oficial está
+  más cerca del mercado que los modelos de solo precio. La muestra es
+  pequeña y solo cubre el arranque de temporada.
+
+**Paso 2, paridad entrenamiento/directo** (`scripts/auditoria2_paridad.py`,
+197 partidos de sep-2026 reconstruidos día a día):
+
+| grupo | variables | partidos que difieren | notas |
+|---|---|---|---|
+| calidad de plantilla | 9 | 0.0% | paridad exacta |
+| portero | 2 | 1.3% | diferencias pequeñas (máx. 0.37) |
+| precio | 7 | 100% | otra fuente (Highlightly frente a football-data) |
+| resto | 84 | 1.2% | solo la posición en la tabla difiere (26-35% de los partidos, hasta 4 puestos: el entrenamiento cuenta los partidos del mismo día jugados antes, el directo no) |
+
+- **Efecto en la predicción:** 1.71 puntos de media, más de 3 puntos en el
+  21% de los partidos.
+- **Todo viene del precio:** con el mismo precio en los dos caminos, el
+  cambio es de 0.03 puntos de media (máx. 0.5).
+- **El precio de directo acierta más:** Brier +1.08s, log loss +1.09s. Es
+  más reciente.
+- **Conclusión:** portero, calidad y resto tienen paridad en la práctica. La
+  única diferencia material es la fuente del precio.
+
+**Paso 3, Elo** (`scripts/auditoria2_elo.py`, 4.601 partidos, 21 meses):
+
+| variante | Brier | log loss | meses mejor | contra el real |
+|---|---|---|---|---|
+| V1: regresión 1/3 a la media de la liga cada temporada | +0.62s | +0.59s | 12/21 | +0.05s |
+| V2: V1 + ancla (percentil 20 al subir, 80 al bajar de LaLiga) | -0.46s | -0.54s | 12/21 | -0.05s |
+
+- Como predictor del resultado por sí solo, el Elo queda igual en las tres
+  versiones (Brier 0.2201 / 0.2205 / 0.2200).
+- **No se confirma:** los problemas del Elo que señala la auditoría existen,
+  pero no mueven nada, porque el precio ya lo lleva dentro.
+
+**Paso 4, cómo juzgar el registro en papel** (números con los 257 partidos
+con cuota real):
+- **Métrica principal:** Brier y log loss del modelo frente al ambos marcan
+  real (mediana sin margen), sobre TODOS los partidos pronosticados y
+  emparejados partido a partido. No solo sobre los apostados.
+- **La desviación por partido de la diferencia de Brier es 0.048.** Partidos
+  necesarios para ver una mejora a 2 sigmas:
+  - 0.005 de Brier (~2% del Brier del mercado): ~370
+  - 0.002: ~2.300
+  - 0.001: ~9.200
+- **Apuestas:** con cuota media 1.92, la desviación del beneficio por
+  apuesta es ~0.96. Para ver a 2 sigmas una ventaja del +5% hacen falta
+  ~1.500 apuestas; del +10%, ~370. Con 100 apuestas solo se vería una
+  ventaja de más del +19%.
+- **Margen mínimo de valor esperado:** cambiar de fuente de precio mueve el
+  valor esperado con una desviación del 4.9% (percentil 90 de |diferencia|:
+  7.8%). Propuesta: apostar solo si el valor esperado supera el 8%. Por
+  debajo, el "valor" puede ser solo ruido del precio.
