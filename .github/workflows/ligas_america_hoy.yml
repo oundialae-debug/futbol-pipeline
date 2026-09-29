@@ -1,0 +1,35 @@
+name: Ligas America - partidos de hoy
+
+# Pocas llamadas. Escribe solo en modelos/ligas_america/. Se dispara al
+# empujar el script a la rama de trabajo (no hace falta que esté en main).
+on:
+  workflow_dispatch:
+  push:
+    branches: [ccr-b5b31cbb-u7gf0v]
+    paths: [modelos/ligas_america/scripts/partidos_hoy.py]
+
+jobs:
+  hoy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install requests
+      - name: Partidos de hoy
+        run: python modelos/ligas_america/scripts/partidos_hoy.py
+        env:
+          HIGHLIGHTLY_API_KEY: ${{ secrets.HIGHLIGHTLY_API_KEY }}
+      - name: Guardar
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add modelos/ligas_america || true
+          if git diff --staged --quiet; then exit 0; fi
+          git commit -m "Ligas America: partidos de hoy ($(date -u +%Y-%m-%dT%H:%M))"
+          git pull --rebase origin ${{ github.ref_name }}
+          git push origin HEAD:${{ github.ref_name }}
