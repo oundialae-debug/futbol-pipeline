@@ -1,0 +1,25 @@
+2. Media de cada variable (solo loc_) por temporada:
+temp                             2022    2023    2024    2025    2026
+loc_m_shots_on_target            4.16    4.36    4.31    4.28    4.46
+loc_m_contra_shots_on_target     4.23    4.37    4.33    4.32    4.50
+loc_m_shots_off_target           4.84    4.99    4.80    4.86    5.12
+loc_m_contra_shots_off_target    4.90    5.02    4.86    4.88    5.23
+loc_m_total_passes             434.24  446.60  436.21  433.73  435.77
+loc_m_contra_total_passes      435.01  445.54  436.45  433.26  435.87
+loc_m_puntos                     1.36    1.36    1.36    1.36    1.38
+loc_cp_del_ga90                   NaN    0.54    0.56    0.55    0.55
+loc_cp_med_ga90                   NaN    0.27    0.28    0.28    0.29
+
+1. XGBoost 28 contra la casa, por liga (sigmas; n):
+temp                      2024            2025
+liga                                          
+Bundesliga      -2.98s (n=305)  -2.01s (n=306)
+La Liga         -2.55s (n=380)  +0.55s (n=380)
+Ligue 1         -1.72s (n=306)  +0.04s (n=305)
+Premier League  -2.10s (n=380)  -0.99s (n=380)
+Segunda         -3.02s (n=461)  -0.68s (n=460)
+Serie A         -0.68s (n=380)  +0.56s (n=380)
+
+3. Por temporada: Brier casa / XGBoost 28 / modelo tonto, y cada uno contra la casa:
+   2024/25 n=2212: casa 0.4794  XGB 0.4961 (-5.18s)  tonto 0.4994 (-5.88s) | casa mejora al tonto en 4.0%, XGB en 0.7%
+   2025/26 n=2211: casa 0.4838  XGB 0.4860 (-0.81s)  tonto 0.4956 (-3.62s) | casa mejora al tonto en 2.4%, XGB en 1.9%

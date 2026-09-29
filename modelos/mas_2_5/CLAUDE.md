@@ -705,3 +705,21 @@ g/a de 22/23 para el 86% de esos titulares). Humo OK. Tres pruebas:
   córners) están al 100% en todas las temporadas; xG de equipo solo desde
   2025/26. Causa de 2024/25 sin identificar -- pendiente de investigar antes
   de fiarse de ninguna cifra "de temporada entera".
+
+## Por qué 2024/25 sale tan mal: no es un fallo (diagnostico_2024.py, 29/09/2026)
+
+- Las 28 variables tienen la misma escala todas las temporadas (tiros ~4.3,
+  pases ~435, puntos 1.36, g/a 0.55): no hay fuente que cuente distinto.
+- 2024/25 va mal en TODAS las ligas (XGBoost 28: -0.7s a -3.0s por liga; en
+  2025/26, de -2.0s a +0.6s). No es una liga.
+- Contra un modelo tonto (tasa de Más 2.5 de la liga): la casa lo mejora un
+  4.0% en 2024/25 y un 2.4% en 2025/26; el XGBoost, 0.7% y 1.9%.
+- La cuota previa de football-data se toma igual todos los años (a ~2 puntos
+  del cierre en todas las temporadas). Con toda football-data, la previa
+  mejora a la tasa: 22/23 2.0%, 23/24 2.5%, **24/25 3.1%**, 25/26 1.9%.
+
+Lectura: nada roto. 2024/25 fue un año en que la casa acertó mucho más de lo
+normal y el modelo, con solo dos temporadas detrás, menos. El casi-empate de
+2025/26 (-0.55s) fue el año favorable. **La distancia real del modelo a la
+casa en una temporada cualquiera está entre -0.5s y -5s: no la bate, y en
+un mal año queda lejos.**
