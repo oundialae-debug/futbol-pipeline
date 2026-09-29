@@ -747,3 +747,14 @@ Corregido en la copia de ESTA carpeta: devuelve NaN (desconocido).
 - Aparte: 184 partidos de abr-jun 2024 no tienen once (ni /lineups ni el
   backfill de box-score, que paró en 2024-04-01). Se pueden completar con
   ~184 llamadas de /box-score.
+
+## Hiperparámetros con 9.000 partidos (rejilla_con_mas_datos.py, 29/09/2026)
+
+Elegidos con ~1.700 partidos; ahora hay ~9.000. Rejilla de 12 (max_depth
+2/3/4, min_child_weight 5/20, reg_lambda 1/5) elegida mes a mes en 2024/25;
+prueba una vez en ago 2025 - sep 2026 (2.527) con el modelo oficial completo.
+Elección: árboles de profundidad 2 siguen ganando; 3 y 4 empeoran todas.
+min_child_weight 5 queda por delante por 0.0003 de Brier. En la prueba:
+actual -1.02s contra la casa, elegida -1.00s (elegida vs actual +0.35s:
+ruido). **No se cambia nada.** Con 5 veces más datos, el modelo sigue
+queriendo árboles pequeños: la señal que hay es simple, no falta capacidad.
