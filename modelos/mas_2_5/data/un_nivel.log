@@ -1,0 +1,20 @@
+ELECCIÓN (2024/25, Brier del XGBoost 28; menor es mejor):
+  profundidad=1 árboles=400 calidad sin once=cero   Brier 0.4923
+  profundidad=1 árboles=400 calidad sin once=vacío  Brier 0.4925
+  profundidad=1 árboles=800 calidad sin once=cero   Brier 0.4941
+  profundidad=1 árboles=800 calidad sin once=vacío  Brier 0.4944
+  profundidad=2 árboles=400 calidad sin once=vacío  Brier 0.4959  <- actual
+  profundidad=2 árboles=400 calidad sin once=cero   Brier 0.4960
+Elegida: (1, 400, 'cero')
+
+PRUEBA (2527 partidos, ago 2025 - sep 2026), modelo oficial completo:
+  actual  (2, 400, 'vacío'): vs casa -1.02s
+  elegida (1, 400, 'cero'): vs casa -1.34s | elegida vs actual -1.24s
+
+Informativo (NO decide; elegir mirando esto sería contaminar la prueba):
+  (2, 400, 'vacío'): vs casa -1.02s | vs actual +0.00s
+  (1, 400, 'vacío'): vs casa -1.37s | vs actual -1.37s
+  (1, 800, 'vacío'): vs casa -1.09s | vs actual -0.45s
+  (2, 400, 'cero'): vs casa -1.02s | vs actual -0.16s
+  (1, 400, 'cero'): vs casa -1.34s | vs actual -1.24s
+  (1, 800, 'cero'): vs casa -1.07s | vs actual -0.33s

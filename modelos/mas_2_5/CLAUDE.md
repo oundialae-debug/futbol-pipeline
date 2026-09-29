@@ -758,3 +758,17 @@ min_child_weight 5 queda por delante por 0.0003 de Brier. En la prueba:
 actual -1.02s contra la casa, elegida -1.00s (elegida vs actual +0.35s:
 ruido). **No se cambia nada.** Con 5 veces más datos, el modelo sigue
 queriendo árboles pequeños: la señal que hay es simple, no falta capacidad.
+
+## Árboles de un nivel y calidad sin once = 0 (un_nivel.py, 29/09/2026)
+
+En ambos_marcan los árboles de un nivel pasaron a oficial (+1.54s) y el 0 en
+la calidad sin once salió mejor que "desconocido". Probado aquí, fijado antes:
+elección en 2024/25 (mes a mes), prueba una vez en ago 2025 - sep 2026.
+- Elección: un nivel con 400 árboles gana (Brier 0.4923-0.4925 frente a
+  0.4959 del actual).
+- **Prueba: el elegido (un nivel, 400, cero) PIERDE contra el actual: -1.24s**
+  (casa: -1.34s frente a -1.02s). Un nivel con 800 árboles, también peor.
+- 0 frente a vacío en la calidad sin once: sin diferencia (±0.2s).
+**No se cambia nada.** Lo que funciona en ambos marcan no se traslada: en
+Más 2.5 las interacciones de dos variables (árboles de dos niveles) sí
+aportan, y lo que ganó en 2024/25 no se sostuvo en la temporada siguiente.
