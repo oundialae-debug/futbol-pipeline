@@ -312,3 +312,13 @@ se parece mucho a acertar lanzamientos de moneda. La medida de verdad es el Brie
 contra el mercado en `evaluacion.md`, a partir de 30 partidos.
 
 Fuentes: TNT Sports (Inglaterra-España) y VAVEL (Chequia-Croacia).
+
+## Fuga de la tabla de clubes arreglada (29/09/2026): a selecciones no le afecta
+
+En `rasgos.py` de clubes, la posición en la tabla y la media de tarjetas de
+relleno del árbitro dejaban ver el resultado de otro partido jugado a la
+misma hora. Desde el 29/09 se calculan por días. Selecciones solo toca
+`rasgos.py` en `segunda_opinion_ambos_selecciones.py`, que usa la variante
+"solo precio" (sin tabla ni árbitro), así que sus números no cambian. Si algún
+día usa variables de clubes, ya van sin la fuga. Detalle en el `CLAUDE.md`
+raíz y en `BITACORA.md`.

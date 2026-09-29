@@ -1170,7 +1170,7 @@ expresamente estas llamadas automáticas. Ampliarlas necesita otro sí.
 - La evaluación toma el ÚLTIMO pronóstico antes del pitido.
 - **Regla:** no tocar el modelo por el registro hasta 100+ apuestas.
 
-## Auditoría externa (29-30/09/2026): pruebas de los puntos aceptados
+## Auditoría externa (29/09/2026): pruebas de los puntos aceptados
 
 Contraste completo con la auditoría en el chat. Se aceptaron los puntos 1, 6
 y 7 (y el log loss del 8). Todo sin API, fijado antes de mirar.
@@ -1225,7 +1225,7 @@ partidos, mar-2025 a sep-2026):
   -0.78s), así que ni ayuda ni daña de forma medible. No volver a proponer
   quitarlo salvo que una prueba nueva lo muestre dañando con claridad.
 
-## Segunda auditoría externa (30/09/2026): reproducida con XGBoost real
+## Segunda auditoría externa (29/09/2026): reproducida con XGBoost real
 
 Todo sin API, en scripts nuevos, con las reglas fijadas antes.
 
@@ -1307,7 +1307,7 @@ con cuota real):
   7.8%). Propuesta: apostar solo si el valor esperado supera el 8%. Por
   debajo, el "valor" puede ser solo ruido del precio.
 
-**Cambios en el registro en papel (30/09/2026), aprobados por el usuario tras la auditoría.**
+**Cambios en el registro en papel (29/09/2026), aprobados por el usuario tras la auditoría.**
 El modelo oficial NO cambia. En `ambos_marcan_hoy.py`:
 - **Columna nueva `mod_ambos_precio`:** el modelo de solo precio ampliado (la
   logística "C" de `auditoria2_precio.py`, reentrenada en cada pasada). Solo se
@@ -1325,7 +1325,7 @@ El modelo oficial NO cambia. En `ambos_marcan_hoy.py`:
   partidos acabados ese mismo día. Arreglarlo costaría llamadas a la API o
   cambiar `rasgos.py`.
 
-**Fuga en la posición de la tabla (30/09/2026, `scripts/auditoria2_tabla_fuga.py`, sin API).**
+**Fuga en la posición de la tabla (29/09/2026, `scripts/auditoria2_tabla_fuga.py`, sin API).**
 `rasgos.calcular_tabla` va partido a partido por orden de hora. Con dos partidos
 de la misma liga a la MISMA hora, el que cae segundo en el orden ya ve el
 resultado del otro en la tabla. Es información que no existía al empezar.
@@ -1357,7 +1357,13 @@ Lectura:
 - Con las reglas fijadas antes, la versión recomendada es **inicio del día**:
   quita la fuga, no es peor que la estricta e iguala entrenamiento y directo.
 - No se ha aplicado todavía: cambiarla es decisión del usuario.
-- `rasgos.py` NO se toca (lo usan los otros modelos). El cambio iría dentro de
-  `modelo_ambos_marcan.preparar()`.
-- La misma fuga existe en los modelos de 1X2 y goles, que usan
-  `calcular_tabla`. Sin arreglar allí.
+- **APLICADA el mismo 29/09, con el sí del usuario, en TODOS los modelos**
+  (commits 2115bfb y 6c596cc). Se cambió `rasgos.calcular_tabla` (y la copia
+  de `modelos/ambos_marcan/scripts/rasgos.py`), no solo el modelo de ambos
+  marcan. La media de relleno del árbitro tenía la misma fuga y también va
+  por días. La tabla nueva coincide exactamente con la versión "inicio del
+  día" de la prueba. Puntos por partido y partidos jugados no cambian (son
+  del propio equipo). Ver `BITACORA.md`.
+- (Texto de antes de la decisión: se pensaba cambiar solo
+  `modelo_ambos_marcan.preparar()`. El usuario pidió arreglarlo en todos los
+  modelos, así que se cambió `rasgos.py`.)

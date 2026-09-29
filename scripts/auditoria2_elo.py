@@ -1,5 +1,5 @@
 """
-Segunda auditoría externa, paso 3 (30/09/2026): Elo con regresión a la media
+Segunda auditoría externa, paso 3 (29/09/2026): Elo con regresión a la media
 entre temporadas y ancla para los que cambian de liga. Sin API. No toca
 rasgos.py: el Elo alternativo se calcula aquí y SUSTITUYE a loc_elo, vis_elo y
 dif_elo solo dentro de esta prueba.

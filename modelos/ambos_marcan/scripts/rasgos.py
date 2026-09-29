@@ -359,7 +359,7 @@ def calcular_tabla(hist):
     liga (varía entre competiciones y no está en los datos que tenemos).
 
     MISMA REGLA ANTI-FUGA: la posición y los puntos que ve el partido X son
-    los de ANTES de jugarse X. Desde el 30/09/2026 se va POR DÍAS (UTC): se leen
+    los de ANTES de jugarse X. Desde el 29/09/2026 se va POR DÍAS (UTC): se leen
     todos los partidos de un día con la tabla del final del día anterior, y solo
     después se actualiza con sus resultados. Antes se iba partido a partido, y
     con dos partidos de la misma liga a la misma hora el segundo en el orden
@@ -429,10 +429,10 @@ def calcular_arbitro(hist):
     sondeo_matches.py) o sin apariciones previas de ESE árbitro en el
     histórico, se rellena con la media acumulada hasta ese momento de TODAS
     las ligas juntas (no un cero, que el modelo leería como "cero tarjetas
-    esperadas"). Ojo: hasta el 30/09/2026 este texto decía "media de LIGA",
+    esperadas"). Ojo: hasta el 29/09/2026 este texto decía "media de LIGA",
     pero el código siempre ha usado la de todas las ligas; se corrige el texto,
     no el código (cambiarlo sería otra variable y habría que probarla).
-    Desde el 30/09/2026 las medias se actualizan POR DÍAS (UTC), igual que la
+    Desde el 29/09/2026 las medias se actualizan POR DÍAS (UTC), igual que la
     tabla: un partido no ve las tarjetas de otro que se juega a la misma hora.
     `arbitro_partidos_previos` viaja al lado para poder descontar un
     árbitro con muy poca muestra.
@@ -787,7 +787,7 @@ def comprobar_sin_fuga(hist):
     culpables = list(dif[dif].index)
     if culpables:
         return False, f"FUGA en {len(culpables)} rasgos: {culpables[:6]}"
-    # Segundo control (30/09/2026): los OTROS partidos del mismo día tampoco pueden
+    # Segundo control (29/09/2026): los OTROS partidos del mismo día tampoco pueden
     # moverse. El primero no vio que la tabla dejaba a un partido ver el resultado
     # de otro de su liga a la misma hora. Se truca un partido que comparte día con
     # otros de su liga y se exige que NINGÚN partido de ese día (de cualquier liga:

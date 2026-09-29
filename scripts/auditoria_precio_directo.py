@@ -1,5 +1,5 @@
 """
-Auditoría externa, punto 7 (30/09/2026): el precio con el que se ENTRENA no es
+Auditoría externa, punto 7 (29/09/2026): el precio con el que se ENTRENA no es
 el mismo con el que se pronostica EN DIRECTO.
 
   entrenamiento: previa de football-data (Pinnacle/Betfair), 1X2 y más/menos 2.5

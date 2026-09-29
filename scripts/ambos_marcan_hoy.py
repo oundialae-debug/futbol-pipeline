@@ -50,7 +50,7 @@ FECHA = os.environ.get("FECHA") or datetime.now(timezone.utc).date().isoformat()
 CARPETA = "data/ambos_hoy"
 REGISTRO = "data/ambos_marcan/registro_papel.csv"
 BASE_URL = "https://soccer.highlightly.net"
-# Reglas del registro fijadas el 30/09/2026 (segunda auditoría, paso 4), ANTES de ver resultados:
+# Reglas del registro fijadas el 29/09/2026 (segunda auditoría, paso 4), ANTES de ver resultados:
 #  - juez principal: Brier y log loss sobre TODOS los partidos registrados (el último
 #    pronóstico antes del pitido) contra el ambos marcan real, emparejado partido a partido;
 #  - primer punto de control a los 400 partidos (ahí se ve una mejora de ~0.005 de Brier);
@@ -182,9 +182,8 @@ def precio(cuotas, mid):
 
 
 def pronosticar():
-    import rasgos, modelo_xgboost as M, modelo_ambos_marcan as A
     sys.path.insert(0, "scripts")
-    import rasgos, modelo_xgboost as M
+    import rasgos, modelo_xgboost as M, modelo_ambos_marcan as A
     from btts_implicito import ajustar
     from cuota_como_variable import MKT
     from apuesta_ambos_marcan import rasgos_mercado
@@ -249,7 +248,7 @@ def pronosticar():
                              for s in (0, 1, 2, 3, 4)], axis=0)
     test = test.assign(p=prob["ambos_marcan"][:, 1], p_mas25=prob["mas_2_5"][:, 1], p_1=prob["resultado"][:, 0],
                        p_x=prob["resultado"][:, 1], p_2=prob["resultado"][:, 2])
-    # Modelo de comparación (30/09/2026): SOLO precio ampliado, la logística "C" de
+    # Modelo de comparación (29/09/2026): SOLO precio ampliado, la logística "C" de
     # auditoria2_precio.py. En 21 meses ganó al oficial frente al resultado (+3.01s) pero
     # perdió frente al ambos marcan real (-0.73s en 255 partidos). Solo se apunta, para que
     # el registro decida cuál de los dos va mejor contra el mercado. No se apuesta con él.
@@ -355,7 +354,7 @@ def evaluar():
     L = ["# Registro en papel: modelo de ambos marcan (desde el 27/09/2026)", "",
          "Cada pronóstico se apunta ANTES del partido; aquí se cruza con lo que pasó (el último "
          "pronóstico antes del pitido). Es la prueba limpia del modelo.", "",
-         "**Reglas fijadas el 30/09/2026, antes de ver resultados:** el juez principal es el Brier y el "
+         "**Reglas fijadas el 29/09/2026, antes de ver resultados:** el juez principal es el Brier y el "
          "log loss sobre TODOS los partidos, contra el ambos marcan real (mediana de casas sin margen), "
          f"emparejado partido a partido. Primer punto de control a los {CONTROL} partidos. Apuesta en papel "
          f"(1 unidad) solo si el VE supera el {UMBRAL_VE:.0%}. No se toca el modelo antes del control.", "",

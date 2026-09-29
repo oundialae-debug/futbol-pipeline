@@ -1,5 +1,5 @@
 """
-Segunda auditoría externa, puntos 1-3 (30/09/2026), reproducidos con XGBoost real.
+Segunda auditoría externa, puntos 1-3 (29/09/2026), reproducidos con XGBoost real.
 
 La auditoría (con un modelo scikit-learn) dijo: (1) el precio solo supera al
 modelo de 102 variables (+3.0s, 16/23 meses); (2) partir del precio y añadir

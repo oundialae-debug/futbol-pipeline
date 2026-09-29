@@ -1,5 +1,5 @@
 """
-Fuga en la posición de la tabla (30/09/2026). Sin API. No toca rasgos.py.
+Fuga en la posición de la tabla (29/09/2026). Sin API. No toca rasgos.py.
 
 rasgos.calcular_tabla ordena por fecha y va partido a partido: lee la tabla,
 apunta la posición y la actualiza con el resultado. Con dos partidos de la

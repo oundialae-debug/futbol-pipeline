@@ -7,6 +7,12 @@ Vale para cualquier chat y cualquier carpeta de este repositorio.
 Descargas de fuentes gratuitas sin clave (p. ej. football-data.co.uk) no
 son la API, pero también se avisan antes.
 
+# BITÁCORA (29/09/2026): apuntar TODO en `BITACORA.md`
+
+Petición del usuario. Cada cambio de código o de ficheros, cada idea probada
+y cada descarga se apunta en `BITACORA.md`, EN EL MISMO COMMIT: qué, por qué,
+ficheros y commit. El detalle largo sigue yendo en el CLAUDE.md que toque.
+
 # Notas para trabajar en este repositorio
 
 Escrito el 20 de septiembre de 2026, después de un día en el que casi todos
@@ -1152,3 +1158,35 @@ controles coinciden al 100% con /lineups. `scripts/backfill_titulares_boxscore.p
 defensas, medios, delanteros; formación reconstruida contando posiciones).
 Cobertura de titulares de 2023/24: 14% -> **92%**. Titulares de 2023/24 con
 estadísticas de 22/23 (para el g/a): 77%. 2022/23 NO se ha pedido (ni sondeado).
+
+## Fuga en la posición de la tabla y en la media del árbitro: arreglada (29/09/2026)
+
+Afecta a TODOS los modelos que usan `rasgos.py`: 1X2, goles, córners, tarjetas
+y ambos marcan.
+
+**Qué pasaba.** `calcular_tabla` iba partido a partido por orden de hora.
+Con dos partidos de la misma liga a la misma hora, el que caía segundo en el
+orden ya veía en la tabla el resultado del primero. Es información que no
+existía al empezar el partido. Pasaba en el **8,6%** de los partidos (hasta 8
+puestos de diferencia). La media de tarjetas con la que se rellenan los
+partidos sin árbitro conocido tenía la misma fuga, en pequeño (0,004 tarjetas
+de media).
+
+**Arreglo.** Las dos se calculan **por días (UTC)**: todos los partidos de un
+día leen la tabla y la media del final del día anterior. Esto además iguala
+entrenamiento y directo, porque al pronosticar el histórico solo llega hasta
+ayer. `comprobar_sin_fuga` tiene un segundo control: se truca un partido y
+ningún otro partido de ese día puede cambiar. Con el código viejo falla y
+con el nuevo pasa.
+
+**Efecto** (`evaluar_mercados.py`, mismos 230 partidos, tabla vieja frente a
+nueva): resultado -2.00s / -2.01s, más de 2.5 -2.51s / -2.57s, ambos marcan
++0.18s / +0.18s, córners -1.28s / -1.28s, tarjetas -2.42s / -2.46s. Dentro del
+ruido: la fuga no infló nada y las conclusiones anteriores siguen valiendo.
+Las cifras de referencia de la rutina diaria pasan a ser las de la tabla
+nueva (`data/validacion_mercados.json`).
+
+**Lección:** el control de fuga solo miraba si un partido veía SU PROPIO
+resultado. Cualquier variable que mezcle equipos (tabla, medias de liga) puede
+filtrar el resultado de OTRO partido jugado a la vez. Detalle en
+`modelos/ambos_marcan/CLAUDE.md` y `scripts/auditoria2_tabla_fuga.py`.

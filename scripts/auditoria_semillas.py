@@ -1,5 +1,5 @@
 """
-Auditoría externa, punto 6 (30/09/2026): ¿aguantan los cambios aceptados por
+Auditoría externa, punto 6 (29/09/2026): ¿aguantan los cambios aceptados por
 debajo del listón si se repiten con OTRAS semillas?
 
 El 29/09 se vio que el mismo modelo con semillas 0-4 y 10-14 difiere +2.12s

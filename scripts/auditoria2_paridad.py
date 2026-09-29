@@ -1,5 +1,5 @@
 """
-Segunda auditoría externa, paso 2 (30/09/2026): test de paridad entre el camino
+Segunda auditoría externa, paso 2 (29/09/2026): test de paridad entre el camino
 de ENTRENAMIENTO (modelo_ambos_marcan.preparar) y el de DIRECTO
 (ambos_marcan_hoy.pronosticar), reconstruyendo días pasados. Sin API.
 

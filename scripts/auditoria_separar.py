@@ -1,5 +1,5 @@
 """
-Auditoría externa, punto 1 (30/09/2026): separar modelo futbolístico y mercado.
+Auditoría externa, punto 1 (29/09/2026): separar modelo futbolístico y mercado.
 
 El modelo oficial mete el precio dentro (7 variables mkt_). No se sabía cuánto
 aporta el fútbol por su cuenta en ambos marcan. Fijado ANTES de mirar:
