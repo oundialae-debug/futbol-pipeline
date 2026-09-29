@@ -728,5 +728,160 @@
     "sigmas": -2.7
    }
   ]
+ },
+ "pronosticos": {
+  "real_madrid_villarreal": {
+   "goles_esperados": [
+    2.3,
+    1.31
+   ],
+   "mas15": 87.5,
+   "mas25": 69.8,
+   "mas35": 48.6,
+   "ambos": 65.6
+  },
+  "calibracion_goles": {
+   "partidos": 829,
+   "mas15": [
+    {
+     "dice": 45.4,
+     "pasa": 50.0,
+     "n": 2
+    },
+    {
+     "dice": 56.7,
+     "pasa": 59.6,
+     "n": 57
+    },
+    {
+     "dice": 65.6,
+     "pasa": 68.0,
+     "n": 206
+    },
+    {
+     "dice": 75.2,
+     "pasa": 76.4,
+     "n": 377
+    },
+    {
+     "dice": 84.0,
+     "pasa": 86.6,
+     "n": 187
+    }
+   ],
+   "mas25": [
+    {
+     "dice": 34.1,
+     "pasa": 39.7,
+     "n": 174
+    },
+    {
+     "dice": 45.4,
+     "pasa": 46.1,
+     "n": 256
+    },
+    {
+     "dice": 54.6,
+     "pasa": 51.4,
+     "n": 259
+    },
+    {
+     "dice": 64.2,
+     "pasa": 64.0,
+     "n": 114
+    },
+    {
+     "dice": 73.2,
+     "pasa": 80.0,
+     "n": 25
+    },
+    {
+     "dice": 82.5,
+     "pasa": 100.0,
+     "n": 1
+    }
+   ],
+   "mas35": [
+    {
+     "dice": 25.8,
+     "pasa": 23.9,
+     "n": 727
+    },
+    {
+     "dice": 44.2,
+     "pasa": 38.3,
+     "n": 81
+    },
+    {
+     "dice": 53.7,
+     "pasa": 45.0,
+     "n": 20
+    },
+    {
+     "dice": 65.5,
+     "pasa": 100.0,
+     "n": 1
+    }
+   ],
+   "ambos": [
+    {
+     "dice": 36.6,
+     "pasa": 40.2,
+     "n": 82
+    },
+    {
+     "dice": 45.5,
+     "pasa": 53.6,
+     "n": 289
+    },
+    {
+     "dice": 54.5,
+     "pasa": 56.8,
+     "n": 366
+    },
+    {
+     "dice": 63.4,
+     "pasa": 70.8,
+     "n": 89
+    },
+    {
+     "dice": 72.4,
+     "pasa": 66.7,
+     "n": 3
+    }
+   ]
+  },
+  "acierto_casa": {
+   "1x2": {
+    "acierta": 54.9,
+    "n": 1589,
+    "fuente": "cierre, LaLiga"
+   },
+   "doble": {
+    "acierta": 80.1,
+    "n": 1589,
+    "fuente": "cierre, LaLiga"
+   },
+   "mas25": {
+    "acierta": 61.0,
+    "n": 1589,
+    "fuente": "cierre, LaLiga"
+   },
+   "ambos": {
+    "acierta": 58.8,
+    "n": 262,
+    "fuente": "casas cosechadas, 7 ligas"
+   },
+   "mas15": {
+    "acierta": 77.9,
+    "n": 262,
+    "fuente": "casas cosechadas, 7 ligas"
+   },
+   "mas35": {
+    "acierta": 62.2,
+    "n": 262,
+    "fuente": "casas cosechadas, 7 ligas"
+   }
+  }
  }
 }

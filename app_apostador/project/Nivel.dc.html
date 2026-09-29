@@ -9,98 +9,103 @@
 <x-dc>
 <helmet>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&amp;family=IBM+Plex+Sans:wght@400;500;600&amp;family=IBM+Plex+Mono:wght@500;600&amp;display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&amp;family=JetBrains+Mono:wght@500;700&amp;display=swap">
 <style>
-body{margin:0;background:#0E1116;font-family:"IBM Plex Sans",system-ui,sans-serif;color:#E8ECF1}
+body{margin:0;background:#313338;font-family:"Figtree",system-ui,sans-serif;color:#F2F3F5}
 a{color:inherit;text-decoration:none}a:hover{color:#FFFFFF}
 button{font-family:inherit;cursor:pointer}
 </style>
 </helmet>
-<div style="width: 390px; height: 1960px; box-sizing: border-box; background: #0E1116; display: flex; flex-direction: column">
-
-<header style="padding: 26px 20px 14px 20px; display: flex; flex-direction: column; gap: 8px">
-<span style="font-size: 11px; letter-spacing: 0.6px; color: {{accent}}">LALIGA · TRAS 7 JORNADAS</span>
-<h1 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 32px; letter-spacing: -0.5px">¿Suerte o nivel?</h1>
-<p style="margin: 0; font-size: 14px; line-height: 1.55; color: #C4CCD6">La clasificación dice cómo le ha ido a cada equipo. El nivel dice lo bueno que es de verdad. Cuando no coinciden, la tabla suele estar exagerando.</p>
+<div style="width: 390px; height: 2000px; box-sizing: border-box; background: #313338; display: flex; flex-direction: column">
+<header style="height: 52px; padding: 0 8px 0 12px; display: flex; align-items: center; gap: 8px; border-bottom: 1px solid #1F2023; box-shadow: 0 1px 0 rgba(0,0,0,0.2)">
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#949BA4" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M5 9h15M4 15h15M10 4L8 20M16 4l-2 16"></path></svg>
+<span style="flex-grow: 1; font-size: 17px; font-weight: 700">suerte-o-nivel</span>
 </header>
 
-<section style="margin: 0 16px 14px 16px; padding: 16px; border-radius: 20px; background: #171B22; display: flex; flex-direction: column; gap: 12px">
+
+<header style="padding: 18px 20px 14px 20px; display: flex; flex-direction: column; gap: 8px">
+<span style="font-size: 11px; letter-spacing: 0.6px; color: #BF94FF">LALIGA · TRAS 7 JORNADAS</span>
+<h1 style="margin: 0; font-weight: 800; font-size: 28px; letter-spacing: -0.5px">¿Suerte o nivel?</h1>
+<p style="margin: 0; font-size: 14px; line-height: 1.55; color: #B5BAC1">La clasificación dice cómo le ha ido a cada equipo. El nivel dice lo bueno que es de verdad. Cuando no coinciden, la tabla suele estar exagerando.</p>
+</header>
+
+<section style="margin: 0 16px 14px 16px; padding: 16px; border-radius: 8px; background: #2B2D31; display: flex; flex-direction: column; gap: 12px">
 <span style="font-size: 13px; font-weight: 600">Un ejemplo: el Sevilla</span>
 <div style="display: flex; align-items: center; gap: 10px">
-<div style="flex-grow: 1; padding: 12px; border-radius: 14px; background: #0E1116; display: flex; flex-direction: column; gap: 2px">
-<span style="font-size: 11px; color: #9AA4B2">En la tabla</span>
-<span style="font-family: 'IBM Plex Mono', monospace; font-size: 22px; font-weight: 600">5.º</span>
+<div style="flex-grow: 1; padding: 12px; border-radius: 14px; background: #1E1F22; display: flex; flex-direction: column; gap: 2px">
+<span style="font-size: 11px; color: #949BA4">En la tabla</span>
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 22px; font-weight: 600">5.º</span>
 </div>
-<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#9AA4B2" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
-<div style="flex-grow: 1; padding: 12px; border-radius: 14px; background: #0E1116; display: flex; flex-direction: column; gap: 2px">
-<span style="font-size: 11px; color: #9AA4B2">Por nivel</span>
-<span style="font-family: 'IBM Plex Mono', monospace; font-size: 22px; font-weight: 600; color: {{naranja}}">15.º</span>
+<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#949BA4" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
+<div style="flex-grow: 1; padding: 12px; border-radius: 14px; background: #1E1F22; display: flex; flex-direction: column; gap: 2px">
+<span style="font-size: 11px; color: #949BA4">Por nivel</span>
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 22px; font-weight: 600; color: {{naranja}}">15.º</span>
 </div>
 </div>
-<p style="margin: 0; font-size: 13px; line-height: 1.55; color: #C4CCD6">Lleva 13 puntos, pero con solo un gol más a favor que en contra. Ha ganado partidos justos. Los equipos así suelen bajar con las jornadas: no apuestes a su favor solo porque vaya arriba.</p>
+<p style="margin: 0; font-size: 13px; line-height: 1.55; color: #B5BAC1">Lleva 13 puntos, pero con solo un gol más a favor que en contra. Ha ganado partidos justos. Los equipos así suelen bajar con las jornadas: no apuestes a su favor solo porque vaya arriba.</p>
 </section>
 
 <section style="margin: 0 16px 14px 16px; display: flex; flex-direction: column; gap: 8px">
-<div style="display: flex; align-items: center; gap: 10px; font-size: 13px; color: #C4CCD6">
+<div style="display: flex; align-items: center; gap: 10px; font-size: 13px; color: #B5BAC1">
 <span style="width: 110px; padding: 4px 8px; border-radius: 8px; background: #3A2A14; color: {{naranja}}; font-size: 12px; font-weight: 600; text-align: center">La tabla lo infla</span>
 <span>Va mejor de lo que juega.</span>
 </div>
-<div style="display: flex; align-items: center; gap: 10px; font-size: 13px; color: #C4CCD6">
+<div style="display: flex; align-items: center; gap: 10px; font-size: 13px; color: #B5BAC1">
 <span style="width: 110px; padding: 4px 8px; border-radius: 8px; background: #172A45; color: {{azul}}; font-size: 12px; font-weight: 600; text-align: center">Merece más</span>
 <span>Juega mejor de lo que va.</span>
 </div>
-<div style="display: flex; align-items: center; gap: 10px; font-size: 13px; color: #C4CCD6">
-<span style="width: 110px; padding: 4px 8px; border-radius: 8px; background: #242A33; color: #C4CCD6; font-size: 12px; font-weight: 600; text-align: center">En su sitio</span>
+<div style="display: flex; align-items: center; gap: 10px; font-size: 13px; color: #B5BAC1">
+<span style="width: 110px; padding: 4px 8px; border-radius: 8px; background: #3F4147; color: #B5BAC1; font-size: 12px; font-weight: 600; text-align: center">En su sitio</span>
 <span>Tabla y nivel casi coinciden.</span>
 </div>
 </section>
 
-<div style="display: flex; align-items: center; gap: 8px; padding: 0 20px 8px 20px; font-size: 11px; color: #9AA4B2">
+<div style="display: flex; align-items: center; gap: 8px; padding: 0 20px 8px 20px; font-size: 11px; color: #949BA4">
 <span style="width: 70px">Tabla</span>
 <span style="flex-grow: 1">Equipo</span>
 <span style="width: 50px; text-align: right">Nivel</span>
 <span style="width: 110px; text-align: center">Veredicto</span>
 </div>
 
-<div style="margin: 0 16px; border-radius: 18px; background: #171B22; display: flex; flex-direction: column">
+<div style="margin: 0 16px; border-radius: 8px; background: #2B2D31; display: flex; flex-direction: column">
 <sc-for list="{{filas}}" as="f" hint-placeholder-count="20">
 <div style="display: flex; align-items: center; gap: 8px; min-height: 52px; padding: 6px 12px; border-top: {{f.borde}}">
 <div style="width: 58px; display: flex; flex-direction: column">
-<span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 600">{{f.pos}}.º</span>
-<span style="font-size: 11px; color: #9AA4B2">{{f.pts}} pts</span>
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 13px; font-weight: 600">{{f.pos}}.º</span>
+<span style="font-size: 11px; color: #949BA4">{{f.pts}} pts</span>
 </div>
 <div style="flex-grow: 1; display: flex; flex-direction: column">
 <span style="font-size: 14px; font-weight: 500">{{f.eq}}</span>
-<span style="font-size: 11px; color: #9AA4B2">goles {{f.gf}}-{{f.gc}}</span>
+<span style="font-size: 11px; color: #949BA4">goles {{f.gf}}-{{f.gc}}</span>
 </div>
-<span style="width: 40px; text-align: right; font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: {{f.color}}">{{f.nivel}}.º</span>
+<span style="width: 40px; text-align: right; font-family: 'JetBrains Mono', monospace; font-size: 13px; color: {{f.color}}">{{f.nivel}}.º</span>
 <span style="width: 106px; padding: 4px 6px; border-radius: 8px; background: {{f.fondo}}; color: {{f.color}}; font-size: 11px; font-weight: 600; text-align: center">{{f.tag}}</span>
 </div>
 </sc-for>
 </div>
 
-<p style="margin: 14px 20px 20px 20px; font-size: 12px; line-height: 1.55; color: #9AA4B2">«Goles 31-7» = marcó 31 y encajó 7. «Merece más» o «la tabla lo infla» salen cuando tabla y nivel se separan 5 puestos o más. El nivel usa todos los partidos de LaLiga desde 2022: sube al ganar, baja al perder, y cuenta más ganar a un rival fuerte.</p>
+<p style="margin: 14px 20px 20px 20px; font-size: 12px; line-height: 1.55; color: #949BA4">«Goles 31-7» = marcó 31 y encajó 7. «Merece más» o «la tabla lo infla» salen cuando tabla y nivel se separan 5 puestos o más. El nivel usa todos los partidos de LaLiga desde 2022: sube al ganar, baja al perder, y cuenta más ganar a un rival fuerte.</p>
 
-<nav aria-label="Principal" style="margin-top: auto; display: flex; justify-content: space-around; padding: 10px 8px 26px 8px; border-top: 1px solid #1E232B; background: #0E1116">
-<a href="Main.dc.html" style="width: 90px; height: 52px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; color: #9AA4B2">
-<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"></circle><path d="M12 3v4M12 17v4M3 12h4M17 12h4"></path></svg>
-<span style="font-size: 11px">Partidos</span>
+<nav aria-label="Principal" style="margin-top: auto; display: flex; justify-content: space-around; padding: 8px 8px 24px 8px; background: #1E1F22">
+<a href="Main.dc.html" style="width: 90px; height: 52px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; color: #949BA4">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11l8-7 8 7v9H4z"></path></svg>
+<span style="font-size: 11px; font-weight: 600">Partidos</span>
 </a>
-<a href="Nivel.dc.html" aria-current="page" style="width: 90px; height: 52px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; color: #FFFFFF">
-<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"></path></svg>
-<span style="font-size: 11px; font-weight: 600">Nivel</span>
+<a href="Nivel.dc.html" aria-current="page" style="width: 90px; height: 52px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; color: #F2F3F5">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"></path></svg>
+<span style="font-size: 11px; font-weight: 700">Nivel</span>
 </a>
-<a href="Arbitros.dc.html" style="width: 90px; height: 52px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; color: #9AA4B2">
-<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="3" width="10" height="15" rx="2" transform="rotate(12 11 10)"></rect></svg>
-<span style="font-size: 11px">Árbitros</span>
+<a href="Arbitros.dc.html" style="width: 90px; height: 52px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; color: #949BA4">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="3" width="10" height="15" rx="2" transform="rotate(12 11 10)"></rect></svg>
+<span style="font-size: 11px; font-weight: 600">Árbitros</span>
 </a>
 </nav>
 </div>
 </x-dc>
-<script type="text/x-dc" data-dc-script data-props='{"accent":{"editor":"color","default":"#C6F24E","options":["#C6F24E","#5EEAD4","#F9A8D4"]},"$preview":{"width":390,"height":1960}}'>
+<script type="text/x-dc" data-dc-script data-props='{"accent":{"editor":"color","default":"#9147FF","options":["#9147FF","#5865F2","#EB459E"]},"$preview":{"width":390,"height":2000}}'>
 class Component extends DCLogic {
   renderVals() {
-    const azul = '#8CBBFF', naranja = '#F2A541';
+    const azul = '#00A8FC', naranja = '#F0B232';
     // Datos de app_apostador/datos.json (generar_datos.py): equipo, puntos, goles a favor, en contra, puesto por nivel
     const datos = [
       ['Barcelona', 21, 31, 7, 1], ['Atlético', 16, 16, 7, 3], ['Betis', 16, 9, 7, 5], ['Real Madrid', 15, 18, 8, 2],
@@ -114,13 +119,13 @@ class Component extends DCLogic {
       const infla = dif >= 5, merece = dif <= -5;
       return {
         pos, eq, pts, gf, gc, nivel,
-        borde: i ? '1px solid #242A33' : 'none',
+        borde: i ? '1px solid #3F4147' : 'none',
         tag: infla ? 'La tabla lo infla' : merece ? 'Merece más' : 'En su sitio',
-        color: infla ? naranja : merece ? azul : '#C4CCD6',
-        fondo: infla ? '#3A2A14' : merece ? '#172A45' : '#242A33'
+        color: infla ? naranja : merece ? azul : '#B5BAC1',
+        fondo: infla ? '#3A2A14' : merece ? '#172A45' : '#3F4147'
       };
     });
-    return { accent: this.props.accent ?? '#C6F24E', azul, naranja, filas };
+    return { accent: this.props.accent ?? '#9147FF', azul, naranja, filas };
   }
 }
 </script>

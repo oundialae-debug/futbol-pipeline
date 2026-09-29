@@ -9,74 +9,69 @@
 <x-dc>
 <helmet>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&amp;family=IBM+Plex+Sans:wght@400;500;600&amp;family=IBM+Plex+Mono:wght@500;600&amp;display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&amp;family=JetBrains+Mono:wght@500;700&amp;display=swap">
 <style>
-body{margin:0;background:#0E1116;font-family:"IBM Plex Sans",system-ui,sans-serif;color:#E8ECF1}
+body{margin:0;background:#313338;font-family:"Figtree",system-ui,sans-serif;color:#F2F3F5}
 a{color:inherit;text-decoration:none}a:hover{color:#FFFFFF}
 button{font-family:inherit;cursor:pointer}
 </style>
 </helmet>
-<div style="width: 390px; height: 1320px; box-sizing: border-box; background: #0E1116; display: flex; flex-direction: column">
+<div style="width: 390px; height: 2060px; box-sizing: border-box; background: #313338; display: flex; flex-direction: column">
 
-<header style="display: flex; align-items: center; justify-content: space-between; padding: 20px 16px 10px 20px">
-<div style="display: flex; align-items: center; gap: 8px">
-<div style="width: 10px; height: 10px; border-radius: 50%; background: {{accent}}"></div>
-<div style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 24px; letter-spacing: -0.5px">Veredicto</div>
+<div style="background: #1E1F22; padding: 14px 12px 12px 12px; display: flex; gap: 10px; align-items: center">
+<sc-for list="{{ligas}}" as="l" hint-placeholder-count="6">
+<button aria-label="{{l.nombre}}" aria-pressed="{{l.on}}" style="position: relative; width: 48px; height: 48px; flex-shrink: 0; border: none; border-radius: {{l.radio}}; background: {{l.fondo}}; color: {{l.texto}}; font-size: 13px; font-weight: 800; display: flex; align-items: center; justify-content: center">{{l.sigla}}</button>
+</sc-for>
 </div>
-<button style="height: 40px; padding: 0 12px 0 10px; border-radius: 20px; border: 1px solid #242A33; background: #171B22; color: #E8ECF1; display: flex; align-items: center; gap: 6px; font-size: 13px; font-weight: 600">
-LaLiga · J8
-<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
+<div style="height: 4px; background: #1E1F22; display: flex; padding-left: 20px"><span style="width: 32px; height: 4px; border-radius: 4px 4px 0 0; background: #F2F3F5"></span></div>
+
+<header style="height: 52px; padding: 0 8px 0 12px; display: flex; align-items: center; gap: 8px; border-bottom: 1px solid #1F2023; box-shadow: 0 1px 0 rgba(0,0,0,0.2)">
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#949BA4" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M5 9h15M4 15h15M10 4L8 20M16 4l-2 16"></path></svg>
+<span style="flex-grow: 1; font-size: 17px; font-weight: 700">jornada-8</span>
+<span style="padding: 3px 8px; border-radius: 4px; background: #EB0400; color: #FFFFFF; font-size: 11px; font-weight: 800; letter-spacing: 0.4px">ESTA SEMANA</span>
+<button aria-label="Buscar" style="width: 44px; height: 44px; border: none; background: transparent; color: #B5BAC1; display: flex; align-items: center; justify-content: center">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-3.5-3.5"></path></svg>
 </button>
 </header>
 
-<div style="display: flex; align-items: center; gap: 8px; padding: 0 16px 12px 16px">
-<div style="flex-grow: 1; height: 1px"></div>
-<div style="width: 150px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 4px; font-size: 11px; font-weight: 600; color: #9AA4B2; text-align: center"><span>1</span><span>X</span><span>2</span></div>
+<div style="margin: 12px 12px 4px 12px; padding: 10px 12px; border-radius: 8px; background: #2B2D31; display: flex; gap: 10px; align-items: center">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="{{accent}}" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0" aria-hidden="true"><path d="M9 4h6l-1 6 4 3H6l4-3zM12 13v7"></path></svg>
+<span style="font-size: 13px; line-height: 1.4; color: #B5BAC1"><b style="font-family: 'JetBrains Mono', monospace; color: #F2F3F5">1,51</b> = cuota justa. Si tu casa paga más, <b style="color: #F2F3F5">buena cuota</b>.</span>
 </div>
-
-<button onClick="{{toggleInfo}}" aria-expanded="{{info}}" style="margin: 0 16px 12px 16px; padding: 10px 12px; border-radius: 12px; border: none; background: #171B22; color: #C4CCD6; display: flex; align-items: center; gap: 10px; font-size: 13px; text-align: left">
-<span style="padding: 3px 7px; border-radius: 7px; background: #0E1116; font-family: 'IBM Plex Mono', monospace; font-size: 12px; font-weight: 600; color: #E8ECF1">1,51</span>
-<span style="flex-grow: 1">= cuota justa. <b style="color: #E8ECF1">Si tu casa paga más, buena cuota.</b></span>
-<span style="font-size: 12px; color: #9AA4B2">{{infoSigno}}</span>
-</button>
-<sc-if value="{{info}}" hint-placeholder-val="{{ false }}">
-<div style="margin: -4px 16px 12px 16px; padding: 0 12px; display: flex; gap: 14px; font-size: 12px; color: #9AA4B2">
-<span><span style="display: inline-block; width: 8px; height: 8px; border-radius: 2px; background: {{accent}}; margin-right: 5px"></span>favorito</span>
-<span>Barra = de cada 100 partidos</span>
-</div>
-</sc-if>
 
 <sc-for list="{{dias}}" as="d" hint-placeholder-count="4">
-<div style="display: flex; flex-direction: column; padding: 0 16px 12px 16px">
-<span style="padding: 6px 4px; font-size: 12px; font-weight: 600; letter-spacing: 0.3px; color: #9AA4B2">{{d.dia}}</span>
-<div style="border-radius: 16px; background: #171B22; display: flex; flex-direction: column">
+<div style="display: flex; align-items: center; gap: 8px; padding: 16px 16px 4px 16px">
+<span style="flex-grow: 1; height: 1px; background: #3F4147"></span>
+<span style="font-size: 12px; font-weight: 600; color: #949BA4">{{d.dia}}</span>
+<span style="flex-grow: 1; height: 1px; background: #3F4147"></span>
+</div>
+<div style="display: flex; gap: 12px; padding: 8px 16px 4px 12px">
+<div style="width: 40px; height: 40px; flex-shrink: 0; border-radius: 50%; background: {{accent}}; color: #FFFFFF; font-weight: 800; font-size: 18px; display: flex; align-items: center; justify-content: center">V</div>
+<div style="flex-grow: 1; min-width: 0; display: flex; flex-direction: column; gap: 8px">
+<div style="display: flex; align-items: center; gap: 6px">
+<span style="font-size: 15px; font-weight: 700; color: {{accent2}}">Veredicto</span>
+<span style="padding: 1px 5px; border-radius: 4px; background: #5865F2; color: #FFFFFF; font-size: 10px; font-weight: 800">BOT</span>
+<span style="font-size: 12px; color: #949BA4">{{d.cuando}}</span>
+</div>
 <sc-for list="{{d.partidos}}" as="p" hint-placeholder-count="3">
-<a href="{{p.enlace}}" style="display: flex; flex-direction: column; gap: 8px; padding: 12px; border-top: {{p.borde}}">
-<div style="display: flex; align-items: center; gap: 8px">
-<span style="width: 38px; font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #9AA4B2">{{p.hora}}</span>
-<div style="flex-grow: 1; min-width: 0; display: flex; flex-direction: column; gap: 5px">
-<div style="display: flex; align-items: center; gap: 7px">
-<span style="width: 20px; height: 20px; border-radius: 50%; background: {{p.cl}}; color: {{p.tl}}; font-size: 7px; font-weight: 700; display: flex; align-items: center; justify-content: center; flex-shrink: 0">{{p.il}}</span>
-<span style="font-size: 14px; font-weight: 500; white-space: nowrap; overflow: hidden; text-overflow: ellipsis">{{p.local}}</span>
+<a href="{{p.enlace}}" style="border-radius: 4px; border-left: 4px solid {{p.barra}}; background: #2B2D31; padding: 10px 12px 12px 12px; display: flex; flex-direction: column; gap: 10px">
+<div style="display: flex; justify-content: space-between; align-items: baseline; gap: 8px">
+<span style="font-size: 15px; font-weight: 700; color: #00A8FC">{{p.local}} vs {{p.visitante}}</span>
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #949BA4">{{p.hora}}</span>
 </div>
-<div style="display: flex; align-items: center; gap: 7px">
-<span style="width: 20px; height: 20px; border-radius: 50%; background: {{p.cv}}; color: {{p.tv}}; font-size: 7px; font-weight: 700; display: flex; align-items: center; justify-content: center; flex-shrink: 0">{{p.iv}}</span>
-<span style="font-size: 14px; font-weight: 500; white-space: nowrap; overflow: hidden; text-overflow: ellipsis">{{p.visitante}}</span>
-</div>
-</div>
-<div style="width: 150px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 4px">
+<div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px">
 <sc-for list="{{p.cuotas}}" as="c" hint-placeholder-count="3">
-<div style="height: 46px; border-radius: 10px; background: {{c.fondo}}; color: {{c.texto}}; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1px">
-<span style="font-family: 'IBM Plex Mono', monospace; font-size: 14px; font-weight: 600">{{c.cuota}}</span>
-<span style="font-size: 10px; opacity: 0.8">{{c.pct}}%</span>
+<div style="padding: 6px 8px; border-radius: 6px; background: {{c.fondo}}; display: flex; flex-direction: column; gap: 1px">
+<span style="font-size: 11px; font-weight: 700; color: {{c.etq}}; white-space: nowrap; overflow: hidden; text-overflow: ellipsis">{{c.nombre}}</span>
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 16px; font-weight: 700; color: {{c.texto}}">{{c.cuota}}</span>
+<span style="font-size: 11px; color: {{c.etq}}">{{c.pct}}%</span>
 </div>
 </sc-for>
 </div>
-</div>
-<sc-if value="{{p.chip}}" hint-placeholder-val="{{ true }}">
-<div style="margin-left: 46px; display: flex; align-items: center; gap: 6px">
-<span style="padding: 3px 8px; border-radius: 8px; background: {{p.chipFondo}}; color: {{p.chipColor}}; font-size: 11px; font-weight: 600">{{p.chip}}</span>
-<span style="font-size: 12px; color: #9AA4B2">{{p.chipDato}}</span>
+<sc-if value="{{p.tag}}" hint-placeholder-val="{{ true }}">
+<div style="display: flex; align-items: center; gap: 6px; flex-wrap: wrap">
+<span style="padding: 2px 9px; border-radius: 10px; background: #404249; color: #DBDEE1; font-size: 12px; font-weight: 600">{{p.tag}}</span>
+<span style="font-size: 12px; color: #949BA4">{{p.tagDato}}</span>
 </div>
 </sc-if>
 </a>
@@ -85,87 +80,73 @@ LaLiga · J8
 </div>
 </sc-for>
 
-<nav aria-label="Principal" style="margin-top: auto; display: flex; justify-content: space-around; padding: 10px 8px 26px 8px; border-top: 1px solid #1E232B; background: #0E1116">
-<a href="Main.dc.html" aria-current="page" style="width: 90px; height: 52px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; color: #FFFFFF">
-<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"></circle><path d="M12 3v4M12 17v4M3 12h4M17 12h4"></path></svg>
-<span style="font-size: 11px; font-weight: 600">Partidos</span>
+<nav aria-label="Principal" style="margin-top: auto; display: flex; justify-content: space-around; padding: 8px 8px 24px 8px; background: #1E1F22">
+<a href="Main.dc.html" aria-current="page" style="width: 90px; height: 52px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; color: #F2F3F5">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11l8-7 8 7v9H4z"></path></svg>
+<span style="font-size: 11px; font-weight: 700">Partidos</span>
 </a>
-<a href="Nivel.dc.html" style="width: 90px; height: 52px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; color: #9AA4B2">
-<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"></path></svg>
-<span style="font-size: 11px">Nivel</span>
+<a href="Nivel.dc.html" style="width: 90px; height: 52px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; color: #949BA4">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"></path></svg>
+<span style="font-size: 11px; font-weight: 600">Nivel</span>
 </a>
-<a href="Arbitros.dc.html" style="width: 90px; height: 52px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; color: #9AA4B2">
-<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="3" width="10" height="15" rx="2" transform="rotate(12 11 10)"></rect></svg>
-<span style="font-size: 11px">Árbitros</span>
+<a href="Arbitros.dc.html" style="width: 90px; height: 52px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; color: #949BA4">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="3" width="10" height="15" rx="2" transform="rotate(12 11 10)"></rect></svg>
+<span style="font-size: 11px; font-weight: 600">Árbitros</span>
 </a>
 </nav>
 </div>
 </x-dc>
-<script type="text/x-dc" data-dc-script data-props='{"accent":{"editor":"color","default":"#C6F24E","options":["#C6F24E","#5EEAD4","#F9A8D4"]},"$preview":{"width":390,"height":1320}}'>
+<script type="text/x-dc" data-dc-script data-props='{"accent":{"editor":"color","default":"#9147FF","options":["#9147FF","#5865F2","#EB459E"]},"$preview":{"width":390,"height":2060}}'>
 class Component extends DCLogic {
-  constructor(props) {
-    super(props);
-    this.state = { info: false };
-  }
   renderVals() {
-    const accent = this.props.accent ?? '#C6F24E';
-    const esc = {
-      'Málaga': ['MAL', '#5AA0D8', '#0E1116'], 'Espanyol': ['ESP', '#2A64B8', '#FFFFFF'],
-      'Rayo': ['RAY', '#E8ECF1', '#B3262E'], 'Athletic': ['ATH', '#C8252F', '#FFFFFF'],
-      'Alavés': ['ALA', '#1F4E9E', '#FFFFFF'], 'Atlético': ['ATM', '#C4323A', '#FFFFFF'],
-      'Barcelona': ['BAR', '#8A1E3F', '#FFFFFF'], 'Getafe': ['GET', '#1B55A3', '#FFFFFF'],
-      'Real Madrid': ['RMA', '#E8ECF1', '#0E1116'], 'Villarreal': ['VIL', '#E3C33C', '#0E1116'],
-      'Elche': ['ELC', '#2E8B57', '#FFFFFF'], 'Celta': ['CEL', '#8BC4EA', '#0E1116'],
-      'Real Sociedad': ['RSO', '#1D5FB0', '#FFFFFF'], 'Deportivo': ['DEP', '#2B67C2', '#FFFFFF'],
-      'Betis': ['BET', '#1E8A4C', '#FFFFFF'], 'Osasuna': ['OSA', '#B3262E', '#FFFFFF'],
-      'Racing': ['RAC', '#2E8B57', '#FFFFFF'], 'Valencia': ['VAL', '#E8ECF1', '#0E1116'],
-      'Levante': ['LEV', '#7A1F3D', '#FFFFFF'], 'Sevilla': ['SEV', '#E8ECF1', '#B3262E']
-    };
+    const accent = this.props.accent ?? '#9147FF';
     const f = (x) => x.toFixed(2).replace('.', ',');
-    const chips = {
-      infla: ['Tabla engaña', '#3A2A14', '#F2A541'],
-      merece: ['Mejor de lo que va', '#172A45', '#8CBBFF'],
-      igualado: ['Igualado', '#242A33', '#C4CCD6'],
-      goles: ['Goles', '#1F3A2B', '#9BE3BD']
+    const ligas = [['LL', 'LaLiga'], ['PL', 'Premier League'], ['SA', 'Serie A'], ['BL', 'Bundesliga'], ['L1', 'Ligue 1'], ['2ª', 'Segunda']].map(([sigla, nombre], i) => ({
+      sigla, nombre, on: i === 0,
+      radio: i === 0 ? '16px' : '24px',
+      fondo: i === 0 ? accent : '#313338', texto: i === 0 ? '#FFFFFF' : '#DBDEE1'
+    }));
+    const tags = {
+      infla: ['Tabla engaña', '#F0B232'],
+      merece: ['Mejor de lo que va', '#00A8FC'],
+      igualado: ['Igualado', '#949BA4'],
+      goles: ['Goles', '#23A55A']
     };
     // Datos de app_apostador/datos.json (generar_datos.py)
-    const P = (hora, local, visitante, p1, px, p2, j1, jx, j2, chip, chipDato, enlace) => {
-      const [il, cl, tl] = esc[local], [iv, cv, tv] = esc[visitante];
+    const P = (hora, local, visitante, p1, px, p2, j1, jx, j2, tag, tagDato, enlace) => {
       const mx = Math.max(p1, px, p2);
-      const c = (pct, j) => ({ pct, cuota: f(j), fondo: pct === mx ? accent : '#0E1116', texto: pct === mx ? '#0E1116' : '#E8ECF1' });
-      const ch = chip ? chips[chip] : null;
+      const c = (nombre, pct, j) => {
+        const fav = pct === mx;
+        return { nombre, pct, cuota: f(j), fondo: fav ? accent : '#1E1F22', texto: '#FFFFFF', etq: fav ? '#E9DDFF' : '#949BA4' };
+      };
+      const t = tag ? tags[tag] : null;
       return {
-        hora, local, visitante, il, cl, tl, iv, cv, tv, enlace: enlace || '#',
-        cuotas: [c(p1, j1), c(px, jx), c(p2, j2)],
-        chip: ch ? ch[0] : '', chipFondo: ch ? ch[1] : '', chipColor: ch ? ch[2] : '', chipDato: chipDato || ''
+        hora, local, visitante, enlace: enlace || '#',
+        cuotas: [c('1 · ' + local, p1, j1), c('X', px, jx), c('2 · ' + visitante, p2, j2)],
+        barra: t ? t[1] : '#1E1F22', tag: t ? t[0] : '', tagDato: tagDato || ''
       };
     };
     const dias = [
-      { dia: 'VIERNES 9', partidos: [
+      { dia: 'viernes, 9 de octubre', cuando: 'hoy a las 12:00', partidos: [
         P('21:00', 'Málaga', 'Espanyol', 47, 29, 24, 2.13, 3.44, 4.19)
       ] },
-      { dia: 'SÁBADO 10', partidos: [
+      { dia: 'sábado, 10 de octubre', cuando: 'hoy a las 12:00', partidos: [
         P('14:00', 'Rayo', 'Athletic', 47, 29, 24, 2.14, 3.43, 4.16, 'merece', 'Rayo: 12.º, nivel de 6.º'),
         P('16:15', 'Alavés', 'Atlético', 23, 29, 49, 4.40, 3.49, 2.06, 'infla', 'Alavés: 6.º, nivel de 12.º'),
         P('18:30', 'Barcelona', 'Getafe', 88, 8, 4, 1.13, 12.28, 28.12),
-        P('21:00', 'Real Madrid', 'Villarreal', 66, 21, 13, 1.51, 4.67, 8.00, 'goles', '3,7 goles en sus 10 duelos', 'Partido.dc.html')
+        P('21:00', 'Real Madrid', 'Villarreal', 66, 21, 13, 1.51, 4.67, 8.00, 'goles', 'Más de 2,5: 70% · ver pronósticos', 'Partido.dc.html')
       ] },
-      { dia: 'DOMINGO 11', partidos: [
+      { dia: 'domingo, 11 de octubre', cuando: 'hoy a las 12:00', partidos: [
         P('14:00', 'Elche', 'Celta', 34, 31, 35, 2.91, 3.23, 2.88, 'igualado', 'El más abierto de la jornada'),
         P('16:15', 'Real Sociedad', 'Deportivo', 44, 30, 26, 2.25, 3.36, 3.87),
         P('18:30', 'Betis', 'Osasuna', 69, 20, 11, 1.45, 5.03, 9.01, 'infla', 'Osasuna: 13.º, nivel de 18.º'),
         P('21:00', 'Racing', 'Valencia', 43, 30, 27, 2.32, 3.33, 3.71, 'merece', 'Valencia: 19.º, nivel de 11.º')
       ] },
-      { dia: 'LUNES 12', partidos: [
+      { dia: 'lunes, 12 de octubre', cuando: 'hoy a las 12:00', partidos: [
         P('21:00', 'Levante', 'Sevilla', 46, 29, 25, 2.18, 3.40, 4.04, 'infla', 'Sevilla: 5.º, nivel de 15.º', 'Nivel.dc.html')
       ] }
-    ].map((d) => ({ ...d, partidos: d.partidos.map((p, i) => ({ ...p, borde: i ? '1px solid #242A33' : 'none' })) }));
-    return {
-      accent, dias,
-      info: this.state.info,
-      infoSigno: this.state.info ? '−' : '+',
-      toggleInfo: () => this.setState({ info: !this.state.info })
-    };
+    ];
+    return { accent, accent2: '#BF94FF', ligas, dias };
   }
 }
 </script>

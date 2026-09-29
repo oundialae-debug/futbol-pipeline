@@ -7,8 +7,10 @@ Lienzo con las pantallas: https://claude.ai/artifact/FBTarsYtUpRSFEYTpVSvaG
 
 ## Idea
 
-Datos para apostar que se entienden de un vistazo, como FotMob o
-Flashscore: cuotas, colores y puntos en vez de párrafos. Lo que haga falta
+Datos para apostar que se entienden de un vistazo, con aspecto de Discord
+y Twitch (grises de Discord, morado de Twitch, mensajes de un bot con
+«embeds» por partido, etiquetas en píldora, pestañas con subrayado).
+Cuotas, colores y puntos en vez de párrafos. Lo que haga falta
 explicar, en 3-4 palabras.
 
 - El número principal es la **cuota justa** (100 ÷ %). El % va debajo, pequeño.
@@ -24,7 +26,7 @@ explicar, en 3-4 palabras.
 | fichero | pantalla |
 |---|---|
 | `Main.dc.html` | Partidos de la jornada 8 con cuota justa 1-X-2 |
-| `Partido.dc.html` | Real Madrid – Villarreal: tu cuota contra la justa, nivel, forma, goles, cara a cara |
+| `Partido.dc.html` | Real Madrid – Villarreal: pestañas Pronósticos (los 5 más probables, con acierto de la casa y tu cuota), Datos y Cara a cara |
 | `Nivel.dc.html` | ¿Suerte o nivel?: tabla frente a nivel (se mantiene de la versión 1) |
 | `Arbitros.dc.html` | Árbitros y tarjetas (se mantiene de la versión 1) |
 
@@ -47,6 +49,20 @@ nivel y el Málaga 11.º; con el Elo del proyecto salen 15.º y 17.º. La media
 de tarjetas era 5,28 y aquí sale 4,52 (395 partidos con árbitro y
 tarjetas de `historico_partidos.csv`). No se ha averiguado de dónde salían las
 cifras anteriores. Se usan las recalculadas porque se pueden reproducir.
+
+**Pronósticos** (versión 3):
+
+- Goles (más de 1,5 / 2,5 / 3,5, ambos marcan): Poisson con ataque y defensa
+  de los últimos 20 partidos de cada equipo, encogidos 10 partidos hacia la
+  media de LaLiga. Comprobado partido a partido en 829 partidos desde
+  ago-2024, solo con el pasado: más de 1,5 dice 75% → pasa 76%; más de 2,5
+  dice 64% → pasa 64%; ambos marcan dice 63% → pasa 71% (se queda algo
+  corto). Brier algo mejor que la media de la liga en los cuatro.
+- Acierto de la casa = cuántas veces sale el lado que la casa da como
+  favorito. 1X2 55%, doble oportunidad 80% y más de 2,5 61%: cierre de
+  Pinnacle/Betfair, 1.589 partidos de LaLiga. Ambos marcan 59%, más de 1,5
+  78%, más de 3,5 62%: mediana de las casas cosechadas, 262 partidos de 7
+  ligas (ago-sep 2026).
 
 **Fuera**: "nivel del once" (goles + asistencias de los titulares la
 temporada pasada). No se ha recalculado, así que no se muestra.

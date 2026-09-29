@@ -225,5 +225,104 @@ def _elo_temporada(ll, eq_id):
     return [f.elo_l if f.local_id == eq_id else f.elo_v for _, f in m.iterrows()]
 
 
+# --- Pronósticos de goles (Poisson) y acierto de la casa por mercado ---------
+from scipy.stats import poisson as _poisson
+
+N_POISSON, K_POISSON = 20, 10  # últimos 20 partidos, encogidos 10 partidos hacia la media
+
+
+def lambdas(prev, local, visitante):
+    """Goles esperados de cada equipo: ataque y defensa de sus últimos 20
+    partidos de liga, encogidos hacia la media de LaLiga."""
+    lh, la = prev.goles_l.mean(), prev.goles_v.mean()
+    media = (lh + la) / 2
+
+    def tasas(t):
+        m = prev[(prev.local == t) | (prev.visitante == t)].tail(N_POISSON)
+        gf = np.where(m.local == t, m.goles_l, m.goles_v).sum()
+        gc = np.where(m.local == t, m.goles_v, m.goles_l).sum()
+        n = len(m)
+        return ((gf + K_POISSON * media) / (n + K_POISSON) / media,
+                (gc + K_POISSON * media) / (n + K_POISSON) / media)
+    al, dl = tasas(local)
+    av, dv = tasas(visitante)
+    return lh * al * dv, la * av * dl
+
+
+def mercados_goles(lh, la):
+    g = np.arange(11)
+    m = np.outer(_poisson.pmf(g, lh), _poisson.pmf(g, la))
+    tot = np.add.outer(g, g)
+    return {"mas15": m[tot > 1].sum(), "mas25": m[tot > 2].sum(),
+            "mas35": m[tot > 3].sum(), "ambos": m[1:, 1:].sum()}
+
+
+def calibracion_goles(ll):
+    """Dice X%, pasa Y%, partido a partido desde ago-2024, solo con el pasado."""
+    ll = ll.sort_values("fecha").reset_index(drop=True)
+    filas = []
+    for i, r in ll.iterrows():
+        if r.fecha < "2024-08-01":
+            continue
+        prev = ll.iloc[:i]
+        prev = prev[prev.fecha < r.fecha[:10]]
+        p = mercados_goles(*lambdas(prev, r.local, r.visitante))
+        t = r.goles_l + r.goles_v
+        filas.append({**p, "y_mas15": t > 1, "y_mas25": t > 2, "y_mas35": t > 3,
+                      "y_ambos": (r.goles_l > 0) and (r.goles_v > 0)})
+    d = pd.DataFrame(filas)
+    out = {"partidos": int(len(d))}
+    for k in ("mas15", "mas25", "mas35", "ambos"):
+        tr = pd.cut(d[k], [0, .4, .5, .6, .7, .8, 1])
+        out[k] = [{"dice": round(100 * g[k].mean(), 1), "pasa": round(100 * g["y_" + k].mean(), 1), "n": int(len(g))}
+                  for _, g in d.groupby(tr, observed=True)]
+    return out
+
+
+def acierto_casa(h):
+    """Cuántas veces sale el lado que la casa da como favorito, por mercado.
+    1X2, doble oportunidad y más de 2,5: cierre de Pinnacle/Betfair de
+    football-data (LaLiga). Ambos marcan, más de 1,5 y más de 3,5: mediana de
+    las casas cosechadas de Highlightly (todas las ligas, ago-sep 2026)."""
+    h = h.dropna(subset=["goles_l", "goles_v"])
+    f = pd.read_csv(DATA / "cuotas_historicas_fd.csv").merge(
+        h[["match_id", "liga", "goles_l", "goles_v"]], on="match_id")
+    f = f[f.liga == LIGA]
+    res = np.select([f.goles_l > f.goles_v, f.goles_l == f.goles_v], ["1", "X"], "2")
+    p = f[["p_local", "p_empate", "p_visitante"]].values
+    fav = np.array(["1", "X", "2"])[p.argmax(1)]
+    dc = np.stack([p[:, 0] + p[:, 1], p[:, 1] + p[:, 2], p[:, 0] + p[:, 2]], 1).argmax(1)
+    dc_ok = np.select([dc == 0, dc == 1], [res != "2", res != "1"], res != "X")
+    g = f.dropna(subset=["p_mas_2_5"])
+    tot = g.goles_l + g.goles_v
+    out = {"1x2": {"acierta": round(100 * (fav == res).mean(), 1), "n": int(len(f)), "fuente": "cierre, LaLiga"},
+           "doble": {"acierta": round(100 * dc_ok.mean(), 1), "n": int(len(f)), "fuente": "cierre, LaLiga"},
+           "mas25": {"acierta": round(100 * np.where(g.p_mas_2_5 >= .5, tot > 2, tot <= 2).mean(), 1),
+                     "n": int(len(g)), "fuente": "cierre, LaLiga"}}
+    c = pd.read_csv(DATA / "cuotas_cosechadas.csv")
+    for clave, mercado in (("ambos", "Both Teams To Score"), ("mas15", "Total Goals 1.5"), ("mas35", "Total Goals 3.5")):
+        x = c[c.mercado == mercado].groupby(["match_id", "lado"]).cuota.median().unstack()
+        x = x.merge(h[["match_id", "goles_l", "goles_v"]], left_index=True, right_on="match_id")
+        si, no = ("Yes", "No") if clave == "ambos" else ("Over", "Under")
+        p_si = (1 / x[si]) / (1 / x[si] + 1 / x[no])
+        t = x.goles_l + x.goles_v
+        pasa = (x.goles_l > 0) & (x.goles_v > 0) if clave == "ambos" else t > float(mercado.split()[-1])
+        out[clave] = {"acierta": round(100 * np.where(p_si >= .5, pasa, ~pasa).mean(), 1),
+                      "n": int(len(x)), "fuente": "casas cosechadas, 7 ligas"}
+    return out
+
+
+def pronosticos():
+    h = pd.read_csv(DATA / "historico_partidos.csv")
+    ll = h[h.liga == LIGA].dropna(subset=["goles_l", "goles_v"])
+    lh, la = lambdas(ll.sort_values("fecha"), "Real Madrid", "Villarreal")
+    goles = {k: round(100 * v, 1) for k, v in mercados_goles(lh, la).items()}
+    return {"real_madrid_villarreal": {"goles_esperados": [round(lh, 2), round(la, 2)], **goles},
+            "calibracion_goles": calibracion_goles(ll), "acierto_casa": acierto_casa(h)}
+
+
 if __name__ == "__main__":
     main()
+    d = json.loads(SALIDA.read_text())
+    d["pronosticos"] = pronosticos()
+    SALIDA.write_text(json.dumps(d, ensure_ascii=False, indent=1))

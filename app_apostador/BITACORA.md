@@ -33,3 +33,17 @@ carpeta se apunta aquí.
   no se trata de explicarlo todo, sino de que sea intuitivo o se explique
   con pocas palabras.
 - **Datos:** los mismos de `datos.json`, sin llamadas ni descargas.
+
+## 29/09/2026: versión 3, estilo Discord/Twitch y pestaña Pronósticos
+
+- **Qué:** las cuatro pantallas con aspecto Discord/Twitch. La ficha del
+  partido tiene pestañas; la primera, Pronósticos: los 5 más probables con
+  nuestro %, cuota justa y cuánto acierta la casa en ese mercado, y tu cuota
+  contra la justa del pronóstico elegido. Nivel y Árbitros: mismo contenido,
+  nuevo aspecto.
+- **Por qué:** el usuario pidió los pronósticos con el acierto de la casa, y
+  un diseño que no se parezca a FotMob.
+- **Datos:** `generar_datos.py` añade `pronosticos` a `datos.json` (Poisson de
+  goles comprobado en 829 partidos y acierto de la casa por mercado). Lee
+  además `cuotas_historicas_fd.csv` y `cuotas_cosechadas.csv`. Sin API ni
+  descargas.
