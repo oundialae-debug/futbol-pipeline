@@ -1,2 +1,1 @@
-match_id,fecha,saque_utc,local_id,local,visitante_id,visitante,estado,arbitro,clima_status,clima_temp_txt,local_ids,local_formacion,visitante_ids,visitante_formacion
-1336022277,2026-09-28T18:30:00.000Z,18:30,457771,Leganes,4471938,Castellón,Not started,"Ojaos Valera, Alejandro",cloudy,18.78°C,,,,
+match_id,liga_id,fecha,saque_utc,local_id,local,visitante_id,visitante,estado,arbitro,clima_status,clima_temp_txt,local_ids,local_formacion,visitante_ids,visitante_formacion
