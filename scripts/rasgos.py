@@ -427,16 +427,31 @@ def calcular_arbitro(hist):
 
     Sin árbitro conocido (~20% de los partidos, comprobado en
     sondeo_matches.py) o sin apariciones previas de ESE árbitro en el
-    histórico, se rellena con la media de LIGA acumulada hasta ese momento
-    (no un cero, que el modelo leería como "cero tarjetas esperadas").
+    histórico, se rellena con la media acumulada hasta ese momento de TODAS
+    las ligas juntas (no un cero, que el modelo leería como "cero tarjetas
+    esperadas"). Ojo: hasta el 30/09/2026 este texto decía "media de LIGA",
+    pero el código siempre ha usado la de todas las ligas; se corrige el texto,
+    no el código (cambiarlo sería otra variable y habría que probarla).
+    Desde el 30/09/2026 las medias se actualizan POR DÍAS (UTC), igual que la
+    tabla: un partido no ve las tarjetas de otro que se juega a la misma hora.
     `arbitro_partidos_previos` viaja al lado para poder descontar un
     árbitro con muy poca muestra.
     """
     orden = hist.sort_values("fecha").reset_index(drop=True)
+    dias = pd.to_datetime(orden["fecha"], utc=True, format="ISO8601").dt.strftime("%Y-%m-%d").values
     stats_arb = {}
     media_num, media_den = 0.0, 0
+    pendientes = []                     # tarjetas del día en curso, se aplican al cambiar de día
     valores, n_prev = [], []
-    for _, fila in orden.iterrows():
+    for k, (_, fila) in enumerate(orden.iterrows()):
+        if k and dias[k] != dias[k - 1]:
+            for tarjetas, arb in pendientes:
+                media_num += tarjetas
+                media_den += 1
+                if pd.notna(arb):
+                    s, n = stats_arb.get(arb, (0.0, 0))
+                    stats_arb[arb] = (s + tarjetas, n + 1)
+            pendientes = []
         arb = fila.get("arbitro")
         media_actual = (media_num / media_den) if media_den else 3.5
         if pd.notna(arb) and arb in stats_arb and stats_arb[arb][1] > 0:
@@ -452,11 +467,7 @@ def calcular_arbitro(hist):
             tarjetas = (fila["l_yellow_cards"] + fila["l_red_cards"] +
                        fila["v_yellow_cards"] + fila["v_red_cards"])
         if tarjetas is not None:
-            media_num += tarjetas
-            media_den += 1
-            if pd.notna(arb):
-                s, n = stats_arb.get(arb, (0.0, 0))
-                stats_arb[arb] = (s + tarjetas, n + 1)
+            pendientes.append((tarjetas, arb))
     return pd.DataFrame({"match_id": orden["match_id"].values,
                          "arbitro_tarjetas_media": valores,
                          "arbitro_partidos_previos": n_prev})
@@ -800,7 +811,8 @@ def comprobar_sin_fuga(hist):
     # Segundo control (30/09/2026): los OTROS partidos del mismo día tampoco pueden
     # moverse. El primero no vio que la tabla dejaba a un partido ver el resultado
     # de otro de su liga a la misma hora. Se truca un partido que comparte día con
-    # otros de su liga y se exige que esos otros no cambien.
+    # otros de su liga y se exige que NINGÚN partido de ese día (de cualquier liga:
+    # la media de tarjetas del árbitro mezcla ligas) cambie.
     dia = pd.to_datetime(hist["fecha"], utc=True, format="ISO8601").dt.strftime("%Y-%m-%d")
     grupo = hist.groupby([hist["liga_id"], dia])["match_id"]
     n_dia = grupo.transform("count")
@@ -808,9 +820,10 @@ def comprobar_sin_fuga(hist):
     if candidatos.empty:
         return True, f"{len(cols)} rasgos, ninguno usa el propio partido (sin días con varios partidos)"
     obj2 = candidatos.iloc[len(candidatos) // 2]
-    mismo_dia = set(hist.loc[(hist["liga_id"] == obj2["liga_id"]) & (dia == dia[obj2.name]), "match_id"]) - {obj2["match_id"]}
+    mismo_dia = set(hist.loc[dia == dia[obj2.name], "match_id"]) - {obj2["match_id"]}   # todas las ligas
     trucado = hist.copy()
-    for col in ("goles_l", "goles_v", "l_corners", "v_corners"):
+    for col in ("goles_l", "goles_v", "l_corners", "v_corners",
+                "l_yellow_cards", "v_yellow_cards", "l_red_cards", "v_red_cards"):
         if col in trucado.columns:
             trucado.loc[trucado.match_id == obj2["match_id"], col] = 99
     base3 = construir(trucado)
