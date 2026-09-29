@@ -1169,3 +1169,55 @@ expresamente estas llamadas automáticas. Ampliarlas necesita otro sí.
   `VENTANA_MIN`.
 - La evaluación toma el ÚLTIMO pronóstico antes del pitido.
 - **Regla:** no tocar el modelo por el registro hasta 100+ apuestas.
+
+## Auditoría externa (29-30/09/2026): pruebas de los puntos aceptados
+
+Contraste completo con la auditoría en el chat. Se aceptaron los puntos 1, 6
+y 7 (y el log loss del 8). Todo sin API, fijado antes de mirar.
+
+**Punto 1, separar fútbol y precio** (`scripts/auditoria_separar.py`, 3.096
+partidos, mar-2025 a sep-2026):
+
+| probabilidad | Brier | log loss | frente al oficial |
+|---|---|---|---|
+| oficial (fútbol + precio) | 0.2467 | 0.6868 | -- |
+| solo fútbol | 0.2476 | 0.6885 | -1.25s |
+| solo precio (implícito recalibrado) | 0.2459 | 0.6875 | +0.89s Brier / -0.21s log loss |
+| mezcla aprendida mes a mes | 0.2458 | 0.6872 | +0.98s / -0.13s |
+
+- **Peso del fútbol en la mezcla:** 0.16, intervalo [-0.13, 0.47], cero o
+  menos en el 16% de los remuestreos.
+- **Frente al ambos marcan REAL (257 partidos):** oficial -0.08s, solo fútbol
+  -0.19s, mezcla -1.13s, solo precio -1.32s.
+- **Lectura:** en 18 meses, el precio solo, bien recalibrado, empata o supera
+  al modelo entero. El fútbol añade muy poco encima del precio. En el
+  arranque de 2026/27, contra el mercado real, el oficial es el mejor de los
+  cuatro, pero ninguno bate al mercado.
+
+**Punto 7, precio de entrenamiento frente al de directo**
+(`scripts/auditoria_precio_directo.py`, 255 partidos):
+- Correlación entre las dos fuentes: 1X2 0.99, más de 2.5 0.96, goles
+  esperados 0.88, ambos marcan implícito 0.84.
+- La probabilidad del modelo cambia 1.7 puntos de media (más de 3 puntos en
+  el 23% de los partidos). El Brier casi no cambia.
+- **Apuestas con VE>0: cambian 64 de unas 125 según la fuente.** La decisión
+  de apostar es muy frágil al precio que se use.
+- **Fallo silencioso encontrado:** `btts_implicito.ajustar()` partía de un
+  solo punto y, con favoritos muy claros, daba goles esperados absurdos (3.2
+  y 8.2 en vez de 0.9 y 2.9; implícito 96% en vez de 53%). Pasaba en 7 de 301
+  partidos de Highlightly y 30 de 9.107 de football-data.
+- **Arreglo:** varios puntos de partida. Efecto en el oficial: -0.31s (ruido),
+  12 partidos cambian el implícito más de 5 puntos. Se queda por ser correcto.
+
+**Punto 6, cambios aceptados repetidos con semillas nuevas (10-14)**
+(`scripts/auditoria_semillas.py`):
+
+| cambio | semillas 0-4 (cuando se aceptó) | semillas 10-14 |
+|---|---|---|
+| A portero titular | +1.25s, 10/14 meses | **-0.78s, 8/14 meses** |
+| B 2022/23 sin xG del equipo | +2.55s, 13/21 meses | **+2.37s, 13/21 meses** (log loss +2.34s) |
+
+- **B se confirma.**
+- **A no se confirma:** el signo se da la vuelta. Winner's curse de libro.
+  Queda pendiente la decisión del usuario sobre quitarlo (la regla del
+  28/09 decía: si se va a cero, se vuelve a la versión sin portero).
