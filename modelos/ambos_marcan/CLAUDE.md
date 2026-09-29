@@ -1219,5 +1219,8 @@ partidos, mar-2025 a sep-2026):
 
 - **B se confirma.**
 - **A no se confirma:** el signo se da la vuelta. Winner's curse de libro.
-  Queda pendiente la decisión del usuario sobre quitarlo (la regla del
-  28/09 decía: si se va a cero, se vuelve a la versión sin portero).
+  **Decisión del usuario (30/09): el portero SE QUEDA**, por lógica de
+  fútbol ("es una pieza fundamental en el ambos marcan"). Coste bajo: son 2
+  variables y, sumando las dos pruebas, su efecto neto es ~0 (+1.25s y
+  -0.78s), así que ni ayuda ni daña de forma medible. No volver a proponer
+  quitarlo salvo que una prueba nueva lo muestre dañando con claridad.
