@@ -99,7 +99,8 @@ def pasar(d, v0, tau, v0s, alfa_mu=0.002):
             if puntos > 0 and ganados == ganados and 0 < ganados < puntos:
                 mu[s] = (1 - alfa_mu) * m + alfa_mu * math.log(ganados / (puntos - ganados))
                 m = mu[s]
-    return {"th_w": th_w, "v_w": v_w, "th_l": th_l, "v_l": v_l, "sw": sw, "ww": ww, "sl": sl, "wl": wl}
+    return {"th_w": th_w, "v_w": v_w, "th_l": th_l, "v_l": v_l, "sw": sw, "ww": ww, "sl": sl, "wl": wl,
+            "estado": est, "estado_sup": est_s, "mu": mu}
 
 
 def prob_punto(th, v):

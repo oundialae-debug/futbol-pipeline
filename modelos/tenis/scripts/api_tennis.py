@@ -101,3 +101,11 @@ def estado(p):
         a_saca = a_saca if (n % 4 == 0 or n % 4 == 3) else not a_saca
     return {"sa": sa, "sb": sb, "ga": ga, "gb": gb, "xa": xa, "xb": xb, "a_saca": a_saca,
             "previos": (ja, jb), "mejor_de": mejor_de(p)}
+
+
+def partidos_dia(fecha):
+    return _pedir("get_fixtures", date_start=fecha, date_stop=fecha)
+
+
+def cuotas_dia(fecha):
+    return _pedir("get_odds", date_start=fecha, date_stop=fecha)
