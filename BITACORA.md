@@ -26,6 +26,7 @@ Dónde está cada cosa:
 
 | qué | por qué | ficheros | commit |
 |---|---|---|---|
+| Aviso de ntfy con botones **Copiar <apellido>** de cada jugador + Abrir Luckia (publicado en JSON). | El usuario comprobó que Luckia no abre el partido sin su número interno (ni sin número ni con uno inventado); los nombres raros cuestan de escribir en el buscador. | `modelos/tenis/scripts/vigilante_juegos.py` | este commit |
 | Vigilante de juegos: no avisa si la casa da más del 75% (cuota justa < 1,33). | Petición del usuario tras un aviso a 1,11 (partido casi decidido). Las direcciones de partido de Luckia llevan un número interno (`/apuestas/eventos/<torneo>-<jugadores>/<id>/`) que no se puede sacar desde aquí (Luckia devuelve 451 fuera de España). | `modelos/tenis/scripts/vigilante_juegos.py` | este commit |
 | Aviso de ntfy: el título pasa a ser los apellidos de los jugadores. | Luckia no tiene dirección por partido (el usuario lo comprobó: todo es /apuestas/tenis/); el título es lo que escribe en el buscador de Luckia. | `modelos/tenis/scripts/vigilante_juegos.py` | este commit |
 | Vigilante de juegos: pasada cada **1 minuto** (antes 2). ~2.880 peticiones/día a API-Tennis. | Petición del usuario, para que el aviso llegue antes. | `modelos/tenis/scripts/vigilante_juegos.py` | este commit |

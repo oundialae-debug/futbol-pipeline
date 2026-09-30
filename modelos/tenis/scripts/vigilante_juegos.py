@@ -32,13 +32,19 @@ MINUTOS = float(os.environ.get("MINUTOS", 345))
 TOPIC = os.environ.get("NTFY_TOPIC", "tenis-f059172b4dc7")
 
 
-def avisar(txt, titulo="Tenis: juegos"):
-    """titulo = apellidos de los jugadores: Luckia no tiene dirección por partido (todo cuelga de
-    /apuestas/tenis/), así que el título es lo que el usuario escribe en su buscador."""
+def avisar(txt, jugadores=()):
+    """Luckia no tiene dirección por partido que se pueda montar (lleva un número interno suyo):
+    el título son los apellidos y hay un botón para COPIAR cada uno (acción "copy" de ntfy, en la
+    app de Android) y pegarlo en el buscador de Luckia. Se publica en JSON para que los acentos
+    y letras raras de los nombres no se rompan en las cabeceras."""
     print(txt, flush=True)
+    ap = [apellido(j) for j in jugadores]
+    acciones = [{"action": "copy", "label": f"Copiar {a}", "value": a} for a in ap]
+    acciones.append({"action": "view", "label": "Abrir Luckia", "url": J.LUCKIA})
     try:
-        requests.post(f"https://ntfy.sh/{TOPIC}", data=txt.encode(), timeout=15,
-                      headers={"Title": titulo.encode("utf-8"), "Priority": "high", "Click": J.LUCKIA})
+        requests.post("https://ntfy.sh/", timeout=15, json={
+            "topic": TOPIC, "title": " - ".join(ap) or "Tenis: juegos", "message": txt, "priority": 4,
+            "click": J.LUCKIA, "actions": acciones[:3]})
     except requests.RequestException as e:
         print(f"ntfy falló: {type(e).__name__}", flush=True)
 
@@ -103,7 +109,7 @@ def main():
                     ln, mn = f"{x.linea:g}".replace(".", ","), f"{1 / pcas:.2f}".replace(".", ",")
                     avisar(f"{x.jugador1} VS {x.jugador2} | {lado} de {ln} juegos | modelo {pmod:.0%} / cuota {pcas:.0%} | "
                            f"mínima {mn} | {J.torneo(x.tipo, x.torneo)}",
-                           f"{apellido(x.jugador1)} - {apellido(x.jugador2)}")
+                           (x.jugador1, x.jugador2))
             for k in set(racha) - vistos:
                 racha.pop(k)
             fallos = 0
