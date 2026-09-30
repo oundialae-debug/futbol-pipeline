@@ -24,8 +24,13 @@ def _pedir(metodo, **params):
     clave = os.environ.get("API_TENNIS_KEY")
     if not clave:
         raise RuntimeError("Falta API_TENNIS_KEY en el entorno (ajustes del entorno -> Edit).")
-    r = requests.get(URL, params={"method": metodo, "APIkey": clave, **params}, timeout=30)
-    r.raise_for_status()
+    try:
+        r = requests.get(URL, params={"method": metodo, "APIkey": clave, **params}, timeout=30)
+    except requests.RequestException as e:
+        # el mensaje de requests incluye la URL, y la URL lleva la clave: no se muestra
+        raise RuntimeError(f"API-Tennis sin respuesta en {metodo} ({type(e).__name__})") from None
+    if r.status_code != 200:
+        raise RuntimeError(f"API-Tennis devolvió HTTP {r.status_code} en {metodo}")
     j = r.json()
     if str(j.get("success")) not in ("1", "True", "true"):
         raise RuntimeError(f"API-Tennis devolvió error en {metodo}: {str(j)[:200]}")
