@@ -93,3 +93,17 @@ carpeta se apunta aquí.
   por jugador. Fondo papel cálido, negro tinta, azul y amarillo ácido.
 - **Datos:** todos inventados. No hay cifras del proyecto en este diseño.
 - **Ficheros:** `app_apostador/diseno_nuevo/`. Nada fuera de la carpeta.
+
+## 30/09/2026: diseño oscuro, siete pantallas
+
+- **Qué:** `diseno_nuevo/` rehecho: más oscuro y con más contenido, solo diseño,
+  datos falsos (clubes inventados). Siete pantallas: Matches, Match, Match
+  stats, Lineups, Team, Player y Tips. Mismo lienzo:
+  https://claude.ai/artifact/5i65iCH12v7HmM1oSY7R8K
+- **Por qué:** el usuario dijo que el diseño anterior era muy pobre, que lo
+  quería más oscuro y que nos centráramos solo en diseño; los datos reales
+  se ajustan después.
+- **Cómo:** `diseno_nuevo/generador/` (Python) genera los `.dc.html` con las
+  mismas cabecera, colores y barra de navegación. Los `.dc.html` son la
+  versión que vale.
+- **Datos:** todos inventados. Sin API ni descargas.

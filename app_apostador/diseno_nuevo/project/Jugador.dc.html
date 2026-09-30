@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Player</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,500..900&amp;family=Instrument+Sans:wght@400;500;600;700&amp;display=swap">
+<style>
+body{margin:0;background:#0A0C11;font-family:"Instrument Sans",system-ui,sans-serif;color:#F1F3F8}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer}
+</style>
+</helmet>
+
+<div style="position: relative; width: 390px; height: 2200px; box-sizing: border-box; background: #0A0C11; overflow: hidden; display: flex; flex-direction: column; gap: 14px">
+
+<div style="position: relative; display: flex; flex-direction: column">
+<span style="position: absolute; left: 50%; top: -70px; width: 300px; height: 260px; margin-left: -150px; border-radius: 50%; background: #2F63D8; opacity: 0.4; filter: blur(70px)"></span>
+<header style="position: relative; display: flex; align-items: center; gap: 4px; padding: 12px 8px 0 4px">
+<a href="Equipo.dc.html" aria-label="Back" style="width: 44px; height: 44px; display: flex; align-items: center; justify-content: center"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"></path></svg></a>
+<span style="flex-grow: 1"></span>
+<button aria-label="Follow player" style="width: 44px; height: 44px; border: none; background: transparent; color: #F1F3F8"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20s-7-4.4-7-10a4 4 0 017-2.6A4 4 0 0119 10c0 5.6-7 10-7 10z"></path></svg></button>
+</header>
+<div style="position: relative; display: flex; align-items: center; gap: 16px; padding: 6px 16px 18px 16px">
+<span style="position: relative; width: 96px; height: 96px; flex-shrink: 0; border-radius: 50%; background: #1A1E28; font-weight: 800; font-size: 30px; display: flex; align-items: center; justify-content: center; box-shadow: 0 0 0 4px #2F63D8">OK<span style="position: absolute; right: -6px; bottom: -2px; padding: 3px 10px; border-radius: 12px; background: #C8FF3D; color: #0A0C11; font-family: 'Archivo', sans-serif; font-stretch: 80%; font-weight: 800; font-size: 20px">8.1</span></span>
+<div style="display: flex; flex-direction: column; gap: 6px">
+<span style="font-family: 'Archivo', sans-serif; font-stretch: 75%; font-weight: 800; font-size: 34px; line-height: 1">Emeka Okafor</span>
+<div style="display: flex; align-items: center; gap: 8px"><span style="width: 22px; height: 22px; border-radius: 50%; background: #2F63D8; font-size: 8px; font-weight: 800; display: flex; align-items: center; justify-content: center">RIV</span><span style="font-size: 13px; color: #C6CBD8">Riverton · #9</span></div>
+<div style="display: flex; gap: 6px"><span style="padding: 3px 10px; border-radius: 9px; background: #1E2330; font-size: 12px; font-weight: 700">Forward</span><span style="padding: 3px 10px; border-radius: 9px; background: #1E2330; font-size: 12px; font-weight: 700">Right foot</span></div>
+</div>
+</div>
+</div>
+
+<div style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px; padding: 0 12px">
+<div style="padding: 10px 6px; border-radius: 16px; background: #12151C; border: 1px solid #232838; text-align: center"><span style="display: block; font-family: 'Archivo', sans-serif; font-stretch: 80%; font-weight: 800; font-size: 20px">26</span><span style="font-size: 11px; color: #8E96AA">Age</span></div>
+<div style="padding: 10px 6px; border-radius: 16px; background: #12151C; border: 1px solid #232838; text-align: center"><span style="display: block; font-family: 'Archivo', sans-serif; font-stretch: 80%; font-weight: 800; font-size: 20px">184</span><span style="font-size: 11px; color: #8E96AA">cm</span></div>
+<div style="padding: 10px 6px; border-radius: 16px; background: #12151C; border: 1px solid #232838; text-align: center"><span style="display: block; font-family: 'Archivo', sans-serif; font-stretch: 80%; font-weight: 800; font-size: 20px">NGA</span><span style="font-size: 11px; color: #8E96AA">Country</span></div>
+<div style="padding: 10px 6px; border-radius: 16px; background: #12151C; border: 1px solid #232838; text-align: center"><span style="display: block; font-family: 'Archivo', sans-serif; font-stretch: 80%; font-weight: 800; font-size: 20px">€38M</span><span style="font-size: 11px; color: #8E96AA">Value</span></div>
+</div>
+
+<nav aria-label="Sections" style="display: flex; gap: 24px; padding: 0 16px; border-bottom: 1px solid #232838">
+<a href="#" aria-current="page" style="height: 46px; display: flex; align-items: center; border-bottom: 3px solid #C8FF3D; color: #F1F3F8; font-size: 14px; font-weight: 700; white-space: nowrap">Season</a>
+<a href="#"  style="height: 46px; display: flex; align-items: center; border-bottom: 3px solid transparent; color: #8E96AA; font-size: 14px; font-weight: 700; white-space: nowrap">Matches</a>
+<a href="#"  style="height: 46px; display: flex; align-items: center; border-bottom: 3px solid transparent; color: #8E96AA; font-size: 14px; font-weight: 700; white-space: nowrap">Stats</a>
+<a href="#"  style="height: 46px; display: flex; align-items: center; border-bottom: 3px solid transparent; color: #8E96AA; font-size: 14px; font-weight: 700; white-space: nowrap">Career</a>
+</nav>
+
+<section style="margin: 0 12px; padding: 16px; border-radius: 24px; background: #12151C; border: 1px solid #232838; display: flex; flex-direction: column; gap: 12px">
+<div style="display: flex; justify-content: space-between; align-items: baseline"><span style="font-size: 16px; font-weight: 700">This season</span><span style="font-size: 12px; color: #8E96AA">Coastal League</span></div>
+<div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px">
+<sc-for list="{{resumen}}" as="r" hint-placeholder-count="6">
+<div style="padding: 12px; border-radius: 16px; background: #1A1E28"><span style="display: block; font-family: 'Archivo', sans-serif; font-stretch: 80%; font-weight: 800; font-size: 26px; line-height: 1.1; color: {{r.color}}">{{r.valor}}</span><span style="font-size: 12px; color: #8E96AA">{{r.nombre}}</span></div>
+</sc-for>
+</div>
+</section>
+
+<section style="margin: 0 12px; padding: 16px; border-radius: 24px; background: #12151C; border: 1px solid #232838; display: flex; flex-direction: column; gap: 12px">
+<div style="display: flex; justify-content: space-between; align-items: baseline"><span style="font-size: 16px; font-weight: 700">Match ratings</span><span style="font-size: 12px; color: #8E96AA">last 10</span></div>
+<div style="display: grid; grid-template-columns: repeat(10, minmax(0, 1fr)); gap: 4px; align-items: end; height: 132px">
+<sc-for list="{{notas}}" as="n" hint-placeholder-count="10">
+<div style="display: flex; flex-direction: column; align-items: center; justify-content: flex-end; gap: 4px; height: 100%"><span style="font-size: 10px; font-weight: 700; color: {{n.color}}">{{n.txt}}</span><span style="width: 100%; height: {{n.h}}px; border-radius: 5px; background: {{n.color}}"></span></div>
+</sc-for>
+</div>
+<div style="display: flex; justify-content: space-between; font-size: 11px; color: #8E96AA"><span>oldest</span><span>latest</span></div>
+</section>
+
+<section style="margin: 0 12px; padding: 16px; border-radius: 24px; background: #12151C; border: 1px solid #232838; display: flex; flex-direction: column; gap: 14px">
+<div style="display: flex; flex-direction: column; gap: 2px"><span style="font-size: 16px; font-weight: 700">Compared with forwards</span><span style="font-size: 12px; color: #8E96AA">percentile in Coastal League, per 90</span></div>
+<sc-for list="{{percentiles}}" as="p" hint-placeholder-count="6">
+<div style="display: flex; align-items: center; gap: 10px">
+<span style="width: 108px; font-size: 13px; color: #C6CBD8">{{p.nombre}}</span>
+<div style="flex-grow: 1; height: 10px; border-radius: 5px; background: #1E2330"><div style="width: {{p.pct}}%; height: 10px; border-radius: 5px; background: {{p.color}}"></div></div>
+<span style="width: 30px; text-align: right; font-family: 'Archivo', sans-serif; font-stretch: 85%; font-weight: 800; font-size: 15px">{{p.pct}}</span>
+</div>
+</sc-for>
+</section>
+
+<section style="margin: 0 12px; padding: 16px; border-radius: 24px; background: #12151C; border: 1px solid #232838; display: flex; flex-direction: column; gap: 12px">
+<div style="display: flex; justify-content: space-between; align-items: baseline"><span style="font-size: 16px; font-weight: 700">Shot map</span><span style="font-size: 12px; color: #8E96AA">21 shots · 9 goals</span></div>
+<svg width="342" height="200" viewBox="0 0 342 200" role="img" aria-label="Shot map of Okafor: 21 shots, 9 goals" style="display: block; max-width: 100%; border-radius: 16px; background: #0F1B15">
+<rect x="6" y="6" width="330" height="188" rx="4" fill="none" stroke="#25392E" stroke-width="2"></rect>
+<rect x="96" y="6" width="150" height="76" fill="none" stroke="#25392E" stroke-width="2"></rect>
+<rect x="136" y="6" width="70" height="28" fill="none" stroke="#25392E" stroke-width="2"></rect>
+<path d="M136 82 A 36 36 0 0 0 206 82" fill="none" stroke="#25392E" stroke-width="2"></path>
+<circle cx="171" cy="60" r="2.5" fill="#25392E"></circle>
+<circle cx="171" cy="26" r="10" fill="#2F63D8" fill-opacity="0.85" stroke="#C8FF3D" stroke-width="3"></circle>
+<circle cx="150" cy="44" r="12" fill="#2F63D8" fill-opacity="0.85" stroke="#C8FF3D" stroke-width="3"></circle>
+<circle cx="192" cy="40" r="9" fill="#2F63D8" fill-opacity="0.85" stroke="#C8FF3D" stroke-width="3"></circle>
+<circle cx="164" cy="60" r="8" fill="#2F63D8" fill-opacity="0.85" stroke="#C8FF3D" stroke-width="3"></circle>
+<circle cx="182" cy="66" r="7" fill="#2F63D8" fill-opacity="0.85" stroke="#C8FF3D" stroke-width="3"></circle>
+<circle cx="130" cy="56" r="6" fill="#2F63D8" fill-opacity="0.85" stroke="#C8FF3D" stroke-width="3"></circle>
+<circle cx="214" cy="52" r="6" fill="#2F63D8" fill-opacity="0.85" stroke="#C8FF3D" stroke-width="3"></circle>
+<circle cx="171" cy="80" r="6" fill="#2F63D8" fill-opacity="0.85" stroke="#C8FF3D" stroke-width="3"></circle>
+<circle cx="150" cy="30" r="5" fill="#2F63D8" fill-opacity="0.85" stroke="#C8FF3D" stroke-width="3"></circle>
+<circle cx="120" cy="84" r="5" fill="#2F63D8" fill-opacity="0.85"></circle>
+<circle cx="226" cy="90" r="5" fill="#2F63D8" fill-opacity="0.85"></circle>
+<circle cx="171" cy="102" r="4" fill="#2F63D8" fill-opacity="0.85"></circle>
+<circle cx="140" cy="112" r="4" fill="#2F63D8" fill-opacity="0.85"></circle>
+<circle cx="200" cy="116" r="4" fill="#2F63D8" fill-opacity="0.85"></circle>
+<circle cx="100" cy="100" r="4" fill="#2F63D8" fill-opacity="0.85"></circle>
+<circle cx="250" cy="110" r="4" fill="#2F63D8" fill-opacity="0.85"></circle>
+<circle cx="171" cy="136" r="4" fill="#2F63D8" fill-opacity="0.85"></circle>
+<circle cx="120" cy="140" r="4" fill="#2F63D8" fill-opacity="0.85"></circle>
+<circle cx="220" cy="146" r="4" fill="#2F63D8" fill-opacity="0.85"></circle>
+<circle cx="171" cy="166" r="4" fill="#2F63D8" fill-opacity="0.85"></circle>
+<circle cx="90" cy="70" r="4" fill="#2F63D8" fill-opacity="0.85"></circle>
+</svg>
+</section>
+
+<section style="margin: 0 12px; border-radius: 24px; background: #12151C; border: 1px solid #232838; overflow: hidden">
+<div style="padding: 16px 16px 8px 16px"><span style="font-size: 16px; font-weight: 700">Latest matches</span></div>
+<sc-for list="{{partidos}}" as="p" hint-placeholder-count="4">
+<div style="display: flex; align-items: center; gap: 12px; min-height: 54px; padding: 0 16px; border-top: 1px solid #1E2330">
+<span style="width: 40px; font-size: 12px; color: #8E96AA">{{p.fecha}}</span>
+<span style="width: 24px; height: 24px; border-radius: 50%; background: {{p.color}}; flex-shrink: 0"></span>
+<div style="flex-grow: 1; display: flex; flex-direction: column"><span style="font-size: 14px; font-weight: 600">{{p.rival}}</span><span style="font-size: 12px; color: #8E96AA">{{p.res}} · {{p.min}}'</span></div>
+<span style="font-size: 12px; font-weight: 600; color: #C6CBD8">{{p.g}}</span>
+<span style="padding: 2px 8px; border-radius: 8px; background: {{p.rbg}}; color: {{p.rfg}}; font-size: 12px; font-weight: 800">{{p.nota}}</span>
+</div>
+</sc-for>
+</section>
+
+<nav aria-label="Main" style="position: absolute; left: 16px; right: 16px; bottom: 18px; height: 64px; box-sizing: border-box; padding: 6px; border-radius: 32px; background: #161A23; border: 1px solid #2A3040; display: flex; align-items: center; justify-content: space-between">
+<a href="Main.dc.html" aria-label="Matches" style="width: 50px; height: 50px; border-radius: 25px; color: #8E96AA; display: flex; align-items: center; justify-content: center"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><path d="M12 3v4M12 17v4M3 12h4M17 12h4"></path></svg></a>
+<a href="Equipo.dc.html" aria-label="Explore" style="width: 50px; height: 50px; border-radius: 25px; color: #8E96AA; display: flex; align-items: center; justify-content: center"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-3.5-3.5"></path></svg></a>
+<a href="Tips.dc.html" aria-label="Tips" style="width: 50px; height: 50px; border-radius: 25px; color: #8E96AA; display: flex; align-items: center; justify-content: center"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l2.4 5.6 6.1.5-4.6 4 1.4 6-5.3-3.2-5.3 3.2 1.4-6-4.6-4 6.1-.5z"></path></svg></a>
+<a href="Jugador.dc.html" aria-current="page" style="height: 50px; padding: 0 18px; border-radius: 25px; background: #4A63FF; color: #FFFFFF; display: flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 700"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20s-7-4.4-7-10a4 4 0 017-2.6A4 4 0 0119 10c0 5.6-7 10-7 10z"></path></svg>Following</a>
+</nav>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":2200}}'>
+class Component extends DCLogic {
+  renderVals() {
+    const col = (r) => r >= 7.5 ? '#C8FF3D' : r >= 6.5 ? '#8E96AA' : '#FF8A3D';
+    const resumen = [['Apps', '14', '#F1F3F8'], ['Minutes', '1,142', '#F1F3F8'], ['Goals', '9', '#C8FF3D'], ['Assists', '3', '#F1F3F8'], ['xG', '7.4', '#8FA2FF'], ['Rating', '7.62', '#C8FF3D']].map(([nombre, valor, color]) => ({ nombre, valor, color }));
+    const notas = [6.4, 7.1, 8.4, 6.8, 7.9, 6.2, 8.1, 7.6, 9.0, 8.6].map((r) => ({ txt: r.toFixed(1), h: Math.round((r - 4) / 6 * 90), color: col(r) }));
+    const percentiles = [['Goals', 96], ['Expected goals', 91], ['Shots on target', 84], ['Dribbles', 62], ['Key passes', 41], ['Aerial duels won', 28]].map(([nombre, pct]) => ({ nombre, pct, color: pct >= 75 ? '#C8FF3D' : pct >= 40 ? '#4A63FF' : '#FF8A3D' }));
+    const partidos = [
+      { fecha: '16 Sep', rival: 'Ashford Utd', res: 'Live 2-1', min: 67, g: '1 goal', nota: '8.6', color: '#E0424B' },
+      { fecha: '12 Sep', rival: 'Calder City', res: 'W 3-1', min: 90, g: '1 goal', nota: '9.0', color: '#E8ECF3' },
+      { fecha: '05 Sep', rival: 'Northgate', res: 'W 2-0', min: 82, g: '—', nota: '7.6', color: '#2FA36B' },
+      { fecha: '29 Aug', rival: 'Bayfield', res: 'D 1-1', min: 90, g: '1 goal', nota: '8.1', color: '#F2C230' }
+    ].map((p) => ({ ...p, rbg: parseFloat(p.nota) >= 7.5 ? '#C8FF3D' : '#3A4256', rfg: parseFloat(p.nota) >= 7.5 ? '#0A0C11' : '#FFFFFF' }));
+    return { resumen, notas, percentiles, partidos };
+  }
+}
+</script>
+</body>
+</html>
