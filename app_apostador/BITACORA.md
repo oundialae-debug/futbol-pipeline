@@ -107,3 +107,12 @@ carpeta se apunta aquí.
   mismas cabecera, colores y barra de navegación. Los `.dc.html` son la
   versión que vale.
 - **Datos:** todos inventados. Sin API ni descargas.
+
+## 30/09/2026: tres direcciones visuales
+
+- **Qué:** `diseno_direcciones/`, un lienzo con tres direcciones oscuras y
+  distintas, dos pantallas cada una (inicio y partido): A Night Pitch,
+  B Poster, C Glass. https://claude.ai/artifact/FK9bJiMQKuhDwmGCaCnxU7
+- **Por qué:** el usuario pidió solo diseño, sin ocuparse de cómo se muestran
+  los datos (todo es relleno).
+- **Ficheros:** `app_apostador/diseno_direcciones/`. Sin API ni descargas.
