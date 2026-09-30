@@ -319,3 +319,22 @@ carpeta se apunta aquí.
   último fotograma de cada escena del vídeo (`carrusel_cro_eng.py`).
 - **Regla nueva** en `app_apostador/CLAUDE.md`.
 - **Por qué:** petición del usuario.
+
+## 30/09/2026: vídeo de la app en uso (Inglaterra)
+
+- **Qué:** `diseno_nl/video/2yellow_app_england.mp4`, 1080×1920, 30 fps, 36 s.
+  Simula a alguien usando la app en un móvil:
+  1. Matches: baja y toca Croacia–Inglaterra.
+  2. Recorre la previa: probabilidades, goles, córners y tarjetas, forma y
+     onces.
+  3. Toca Group: clasificación con Inglaterra 2.ª.
+  4. Toca Following: ficha de Inglaterra (próximo partido, FIFA 4.º,
+     goles vs xG, goleadores, mejor valorados).
+  5. Cierre con el logo.
+- **Por qué:** el usuario pidió una grabación como si se manejara la app, no
+  un vídeo de gráficos (el anterior, `2yellow_croatia_england.mp4`, y su
+  carrusel se quedan para TikTok).
+- **Cómo:** `diseno_nl/video/grabacion_app.py`. Chromium dibuja las pantallas
+  del lienzo a 2,2x con las fuentes de la marca en local. PIL monta el marco,
+  el desplazamiento, los toques y las transiciones; ffmpeg lo codifica.
+  Sin API.
