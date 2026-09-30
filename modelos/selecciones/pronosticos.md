@@ -1,168 +1,168 @@
-# Pronósticos de selecciones (29/09/2026 18:17 UTC)
+# Pronósticos de selecciones (30/09/2026 07:37 UTC)
 
 Tema aparte del proyecto de ambos marcan. Por mercado: **modelo** (selecciones + nota justa de los jugadores + árbitro), **mercado** (mediana de casas sin margen) y **final** (mezcla con el peso que se aprende de los partidos ya jugados, ver `evaluacion.md`). Pronóstico = el lado más probable según final. **Cuota mínima** = 1/probabilidad final: por debajo no compensa.
 
-Datos del modelo: 515 partidos de selecciones desde 2025 (descartados 28 contra rivales sin jugadores en la API y 2 xG roto).
+Datos del modelo: 525 partidos de selecciones desde 2025 (descartados 28 contra rivales sin jugadores en la API y 2 xG roto).
 
-## Czech Republic - England (2026-09-29 18:45 UTC)
+## Azerbaijan - Liechtenstein (2026-10-01 16:00 UTC)
 
-Ranking FIFA (puntos): Czech Republic 1467, England 1923. Goles esperados 0.76 - 2.60, marcador más probable 0-2. Córners esperados 9.2. Amarillas esperadas 2.4 (árbitro Meler, Halil Umut, 0 partidos en nuestras ligas, x1.00). Forma del once: Czech Republic +0.05, England -0.06. Partidos en el modelo: Czech Republic 17, England 23.
-
-| mercado | pronóstico | final | modelo | mercado | cuota mínima | cuota mediana | mejor cuota | casas |
-|---|---|---|---|---|---|---|---|---|
-| 1X2 | **gana England** | 77% | 77% | - | 1.30 | nan | nan | 0 |
-| Sin empate | **gana England (sin empate)** | 90% | 90% | - | 1.11 | nan | nan | 0 |
-| Más/menos 2.5 | **más de 2.5 goles** | 65% | 65% | - | 1.53 | nan | nan | 0 |
-| Ambos marcan | **ambos marcan: no** | 51% | 51% | - | 1.97 | nan | nan | 0 |
-| Tarjetas | **menos de 3.5 tarjetas** | 75% | 75% | - | 1.33 | nan | nan | 0 |
-| Tarjetas | **menos de 4.5 tarjetas** | 86% | 86% | - | 1.17 | nan | nan | 0 |
-| Córners | **más de 8.5 córners** | 56% | 56% | - | 1.79 | nan | nan | 0 |
-| Córners | **menos de 9.5 córners** | 56% | 56% | - | 1.78 | nan | nan | 0 |
-| Goles | **más de 1.5 goles** | 85% | 85% | - | 1.18 | nan | nan | 0 |
-| Goles | **England marca primero** | 77% | 77% | - | 1.29 | nan | nan | 0 |
-
-Once real Czech Republic: L. Krejčí, Adam Karabec, A. Hložek, P. Šulc, M. Kovář, Lukáš Červ, Michal Sadílek, R. Hranáč, Štěpán Chaloupek, Matej Radosta, Jiří Sláma
-Once real England: H. Kane, B. Saka, E. Anderson, M. Rogers, L. Hall, M. Guéhi, T. Alexander-Arnold, A. Gordon, Trevoh Chalobah, J. Trafford, M. Lewis-Skelly
-
-## Scotland - Switzerland (2026-09-29 18:45 UTC)
-
-Ranking FIFA (puntos): Scotland 1491, Switzerland 1711. Goles esperados 0.95 - 2.00, marcador más probable 0-2. Córners esperados 9.2. Amarillas esperadas 2.9 (árbitro Minakovic, Nenad, 0 partidos en nuestras ligas, x1.00). Forma del once: Scotland -0.05, Switzerland -0.00. Partidos en el modelo: Scotland 18, Switzerland 21.
+Ranking FIFA (puntos): Azerbaijan 1132, Liechtenstein 798. Goles esperados 1.62 - 0.54, marcador más probable 1-0. Córners esperados 10.0. Amarillas esperadas 3.0 (árbitro ?, 0 partidos en nuestras ligas, x1.00). Forma del once: Azerbaijan +0.00, Liechtenstein +0.00. Partidos en el modelo: Azerbaijan 13, Liechtenstein 14.
 
 | mercado | pronóstico | final | modelo | mercado | cuota mínima | cuota mediana | mejor cuota | casas |
 |---|---|---|---|---|---|---|---|---|
-| 1X2 | **gana Switzerland** | 62% | 62% | - | 1.62 | nan | nan | 0 |
-| Sin empate | **gana Switzerland (sin empate)** | 78% | 78% | - | 1.28 | nan | nan | 0 |
-| Más/menos 2.5 | **más de 2.5 goles** | 57% | 57% | - | 1.77 | nan | nan | 0 |
-| Ambos marcan | **ambos marcan: sí** | 53% | 53% | - | 1.89 | nan | nan | 0 |
-| Tarjetas | **menos de 3.5 tarjetas** | 66% | 66% | - | 1.51 | nan | nan | 0 |
-| Tarjetas | **menos de 4.5 tarjetas** | 79% | 79% | - | 1.27 | nan | nan | 0 |
-| Córners | **más de 8.5 córners** | 56% | 56% | - | 1.80 | nan | nan | 0 |
-| Córners | **menos de 9.5 córners** | 57% | 57% | - | 1.77 | nan | nan | 0 |
-| Goles | **más de 1.5 goles** | 79% | 79% | - | 1.26 | nan | nan | 0 |
-| Goles | **Switzerland marca primero** | 68% | 68% | - | 1.47 | nan | nan | 0 |
+| 1X2 | **gana Azerbaijan** | 73% | 64% | 81% | 1.38 | 1.15 | 1.18 | 49 |
+| Sin empate | **gana Azerbaijan (sin empate)** | 88% | 84% | 91% | 1.14 | 1.03 | 1.03 | 4 |
+| Más/menos 2.5 | **más de 2.5 goles** | 58% | 37% | 58% | 1.71 | 1.60 | 1.68 | 34 |
+| Ambos marcan | **ambos marcan: no** | 66% | 67% | 65% | 1.52 | 1.42 | 1.47 | 29 |
+| Tarjetas | **menos de 3.5 tarjetas** | 65% | 65% | - | 1.53 | nan | nan | 0 |
+| Tarjetas | **menos de 4.5 tarjetas** | 78% | 78% | - | 1.28 | nan | nan | 0 |
+| Córners | **más de 8.5 córners** | 54% | 65% | 54% | 1.84 | 1.70 | 1.80 | 7 |
+| Córners | **menos de 9.5 córners** | 56% | 47% | 56% | 1.78 | 1.63 | 1.67 | 6 |
+| Goles | **más de 1.5 goles** | 79% | 64% | 79% | 1.27 | 1.18 | 1.20 | 29 |
+| Goles | **Azerbaijan marca primero** | 84% | 75% | 84% | 1.19 | 1.15 | 1.20 | 5 |
 
-Once real Scotland: Angus Gunn, Lewis Ferguson, Billy Gilmour, J. Hendry, L. Binks, A. Robertson, Nathan Patterson, Kieron Bowie, O. McBurnie, J.  McGinn, Scott McKenna
-Once real Switzerland: Z. Amdouni, Z. Athekame, J. Manzambi, R. Freuler, G. Kobel, N. Elvedi, Manuel Akanji, D. Ndoye, Ardon Jashari, Ricardo Rodríguez, M. Aebischer
+Once probable Azerbaijan: Emin Mahmudov, Bahlul Mustafazada, Renat Dadaşov, A. Xaybulayev, A. Krivotsyuk, Khayal Aliyev, Abbas Hüseynov, Toral Bayramov, Nariman Akhundzade, Elvin Badalov, R. Daşdəmirov
+Once probable Liechtenstein: B. Büchel, Maximilian Goppel, Andreas Malin, S. Lüchinger, Livio Meier, N. Hasler, Aron Sele, Fabio Luque Notaro, Emanuel Zund, Alessio Hasler, Jens Hofer
 
-## Bulgaria - Estonia (2026-09-29 18:45 UTC)
+## Wales - Norway (2026-10-01 18:45 UTC)
 
-Ranking FIFA (puntos): Bulgaria 1272, Estonia 1131. Goles esperados 1.30 - 1.02, marcador más probable 1-1. Córners esperados 7.5. Amarillas esperadas 3.7 (árbitro Kikacheishvili, Goga, 0 partidos en nuestras ligas, x1.00). Forma del once: Bulgaria +0.00, Estonia -0.02. Partidos en el modelo: Bulgaria 13, Estonia 13.
-
-| mercado | pronóstico | final | modelo | mercado | cuota mínima | cuota mediana | mejor cuota | casas |
-|---|---|---|---|---|---|---|---|---|
-| 1X2 | **gana Bulgaria** | 43% | 43% | - | 2.33 | nan | nan | 0 |
-| Sin empate | **gana Bulgaria (sin empate)** | 60% | 60% | - | 1.68 | nan | nan | 0 |
-| Más/menos 2.5 | **menos de 2.5 goles** | 59% | 59% | - | 1.69 | nan | nan | 0 |
-| Ambos marcan | **ambos marcan: no** | 54% | 54% | - | 1.86 | nan | nan | 0 |
-| Tarjetas | **menos de 3.5 tarjetas** | 53% | 53% | - | 1.89 | nan | nan | 0 |
-| Tarjetas | **menos de 4.5 tarjetas** | 68% | 68% | - | 1.48 | nan | nan | 0 |
-| Córners | **menos de 8.5 córners** | 66% | 66% | - | 1.51 | nan | nan | 0 |
-| Córners | **menos de 9.5 córners** | 77% | 77% | - | 1.30 | nan | nan | 0 |
-| Goles | **más de 1.5 goles** | 67% | 67% | - | 1.49 | nan | nan | 0 |
-| Goles | **Bulgaria marca primero** | 56% | 56% | - | 1.78 | nan | nan | 0 |
-
-Once probable Bulgaria: Filip Krastev, D. Velkovski, I. Gruev, G. Rusev, Zdravko Dimitrov, D. Mitov, M. Todorski, Kiril Despodov, A. Chernev, H. Petrov, K. Dimitrov
-Once probable Estonia: K. Hein, M. Paskotši, Rasmus Peetson, Markus Soomets, M. Käit, Robi Saarma, V. Sinyavskiy, M. Kuusk, K. Mets, M. Schjønning-Larsen, K. Palumets
-
-## Slovakia - Kazakhstan (2026-09-29 18:45 UTC)
-
-Ranking FIFA (puntos): Slovakia 1474, Kazakhstan 1181. Goles esperados 1.86 - 0.76, marcador más probable 1-0. Córners esperados 11.8. Amarillas esperadas 3.8 (árbitro Kolaric, Patrik, 0 partidos en nuestras ligas, x1.00). Forma del once: Slovakia +0.06, Kazakhstan +0.00. Partidos en el modelo: Slovakia 15, Kazakhstan 14.
+Ranking FIFA (puntos): Wales 1517, Norway 1651. Goles esperados 0.92 - 2.34, marcador más probable 0-2. Córners esperados 9.8. Amarillas esperadas 2.5 (árbitro ?, 0 partidos en nuestras ligas, x1.00). Forma del once: Wales -0.04, Norway -0.06. Partidos en el modelo: Wales 16, Norway 22.
 
 | mercado | pronóstico | final | modelo | mercado | cuota mínima | cuota mediana | mejor cuota | casas |
 |---|---|---|---|---|---|---|---|---|
-| 1X2 | **gana Slovakia** | 63% | 63% | - | 1.58 | nan | nan | 0 |
-| Sin empate | **gana Slovakia (sin empate)** | 81% | 81% | - | 1.23 | nan | nan | 0 |
-| Más/menos 2.5 | **menos de 2.5 goles** | 52% | 52% | - | 1.94 | nan | nan | 0 |
-| Ambos marcan | **ambos marcan: no** | 55% | 55% | - | 1.81 | nan | nan | 0 |
-| Tarjetas | **menos de 3.5 tarjetas** | 51% | 51% | - | 1.95 | nan | nan | 0 |
-| Tarjetas | **menos de 4.5 tarjetas** | 66% | 66% | - | 1.51 | nan | nan | 0 |
-| Córners | **más de 8.5 córners** | 81% | 81% | - | 1.24 | nan | nan | 0 |
-| Córners | **más de 9.5 córners** | 72% | 72% | - | 1.39 | nan | nan | 0 |
-| Goles | **más de 1.5 goles** | 74% | 74% | - | 1.36 | nan | nan | 0 |
-| Goles | **Slovakia marca primero** | 71% | 71% | - | 1.41 | nan | nan | 0 |
+| 1X2 | **gana Norway** | 66% | 69% | 63% | 1.52 | 1.50 | 1.53 | 47 |
+| Sin empate | **gana Norway (sin empate)** | 81% | 84% | 78% | 1.23 | 1.21 | 1.25 | 11 |
+| Más/menos 2.5 | **más de 2.5 goles** | 60% | 63% | 60% | 1.66 | 1.57 | 1.61 | 34 |
+| Ambos marcan | **ambos marcan: sí** | 55% | 54% | 56% | 1.82 | 1.67 | 1.73 | 29 |
+| Tarjetas | **menos de 3.5 tarjetas** | 53% | 73% | 53% | 1.88 | 1.73 | 1.73 | 1 |
+| Tarjetas | **menos de 4.5 tarjetas** | 84% | 84% | - | 1.19 | nan | nan | 0 |
+| Córners | **más de 8.5 córners** | 54% | 63% | 54% | 1.85 | 1.70 | 1.73 | 10 |
+| Córners | **menos de 9.5 córners** | 58% | 49% | 58% | 1.72 | 1.58 | 1.68 | 9 |
+| Goles | **más de 1.5 goles** | 80% | 84% | 80% | 1.25 | 1.17 | 1.21 | 33 |
+| Goles | **Norway marca primero** | 68% | 72% | 68% | 1.48 | 1.44 | 1.44 | 5 |
 
-Once real Slovakia: D. Hancko, Stanislav Lobotka, O. Duda, M. Valjent, T. Suslov, Milan Škriniar, Adam Obert, L. Haraslín, M. Dúbravka, L. Sauer, D. Strelec
-Once probable Kazakhstan: N. Alip, Temirlan Anarbekov, Alibek Kasym, Bagdat Kairov, G. Kenzhebek, Dinmukhamed Karaman, Ramazan Orazov, Yan Vorogovskiy, Aleksandr Mrynskiy, I. Chesnokov, Islambek Kuat
+Once probable Wales: N. Williams, E. Ampadu, Joe Rodon, J. Dasilva, D. James, D. Ward, J. Sheehan, S. Thomas, K. Moore, B. Johnson, B. Davies
+Once probable Norway: E. Haaland, M. Ødegaard, A. Nusa, A. Schjelderup, Ø. Nyland, J. Ryerson, S. Berge, P. Berg, K. Ajer, Torbjørn Heggem, F. Aursnes
 
-## San Marino - Albania (2026-09-29 18:45 UTC)
+## Greece - Netherlands (2026-10-01 18:45 UTC)
 
-Ranking FIFA (puntos): San Marino 721, Albania 1376. Goles esperados 0.41 - 3.08, marcador más probable 0-3. Córners esperados 7.4. Amarillas esperadas 3.9 (árbitro Kapraly, Mihaly, 0 partidos en nuestras ligas, x1.00). Forma del once: San Marino +0.07, Albania +0.09. Partidos en el modelo: San Marino 14, Albania 15.
-
-| mercado | pronóstico | final | modelo | mercado | cuota mínima | cuota mediana | mejor cuota | casas |
-|---|---|---|---|---|---|---|---|---|
-| 1X2 | **gana Albania** | 89% | 89% | - | 1.12 | nan | nan | 0 |
-| Sin empate | **gana Albania (sin empate)** | 97% | 97% | - | 1.03 | nan | nan | 0 |
-| Más/menos 2.5 | **más de 2.5 goles** | 68% | 68% | - | 1.48 | nan | nan | 0 |
-| Ambos marcan | **ambos marcan: no** | 68% | 68% | - | 1.48 | nan | nan | 0 |
-| Tarjetas | **menos de 3.5 tarjetas** | 50% | 50% | - | 1.98 | nan | nan | 0 |
-| Tarjetas | **menos de 4.5 tarjetas** | 65% | 65% | - | 1.53 | nan | nan | 0 |
-| Córners | **menos de 8.5 córners** | 67% | 67% | - | 1.48 | nan | nan | 0 |
-| Córners | **menos de 9.5 córners** | 78% | 78% | - | 1.29 | nan | nan | 0 |
-| Goles | **más de 1.5 goles** | 86% | 86% | - | 1.16 | nan | nan | 0 |
-| Goles | **Albania marca primero** | 88% | 88% | - | 1.13 | nan | nan | 0 |
-
-Once real San Marino: Edoardo Colombo, Nicola Nanni, Lorenzo Lazzari, Lorenzo Capicchioni, Giacomo Benvenuti, Gabriel Capicchioni, D. Rossi, Samuel Pancotti, Marcello Mularoni, Simone Giocondi, Michele Cevoli
-Once real Albania: K. Asllani, Ernest Muçi, Mario Mitaj, Juljan Shehu, Alen Sherri, B. Djimsiti, R. Manaj, Sina, Myrto Uzuni, Ardian Ismajli, A. Mehmeti
-
-## Spain - Croatia (2026-09-29 18:45 UTC)
-
-Ranking FIFA (puntos): Spain 1996, Croatia 1723. Goles esperados 2.54 - 0.73, marcador más probable 2-0. Córners esperados 10.3. Amarillas esperadas 2.5 (árbitro Gozubuyuk, Serdar, 0 partidos en nuestras ligas, x1.00). Forma del once: Spain -0.14, Croatia +0.01. Partidos en el modelo: Spain 22, Croatia 19.
+Ranking FIFA (puntos): Greece 1473, Netherlands 1776. Goles esperados 0.95 - 1.90, marcador más probable 0-1. Córners esperados 8.2. Amarillas esperadas 2.6 (árbitro ?, 0 partidos en nuestras ligas, x1.00). Forma del once: Greece +0.01, Netherlands -0.07. Partidos en el modelo: Greece 16, Netherlands 20.
 
 | mercado | pronóstico | final | modelo | mercado | cuota mínima | cuota mediana | mejor cuota | casas |
 |---|---|---|---|---|---|---|---|---|
-| 1X2 | **gana Spain** | 77% | 77% | - | 1.30 | nan | nan | 0 |
-| Sin empate | **gana Spain (sin empate)** | 90% | 90% | - | 1.11 | nan | nan | 0 |
-| Más/menos 2.5 | **más de 2.5 goles** | 63% | 63% | - | 1.58 | nan | nan | 0 |
-| Ambos marcan | **ambos marcan: no** | 52% | 52% | - | 1.91 | nan | nan | 0 |
-| Tarjetas | **menos de 3.5 tarjetas** | 74% | 74% | - | 1.35 | nan | nan | 0 |
-| Tarjetas | **menos de 4.5 tarjetas** | 85% | 85% | - | 1.18 | nan | nan | 0 |
-| Córners | **más de 8.5 córners** | 68% | 68% | - | 1.47 | nan | nan | 0 |
-| Córners | **más de 9.5 córners** | 57% | 57% | - | 1.77 | nan | nan | 0 |
-| Goles | **más de 1.5 goles** | 84% | 84% | - | 1.19 | nan | nan | 0 |
-| Goles | **Spain marca primero** | 78% | 78% | - | 1.29 | nan | nan | 0 |
+| 1X2 | **gana Netherlands** | 52% | 60% | 44% | 1.94 | 2.15 | 2.25 | 49 |
+| Sin empate | **gana Netherlands (sin empate)** | 67% | 76% | 59% | 1.48 | 1.60 | 1.62 | 12 |
+| Más/menos 2.5 | **más de 2.5 goles** | 54% | 54% | 54% | 1.87 | 1.76 | 1.83 | 34 |
+| Ambos marcan | **ambos marcan: sí** | 55% | 52% | 57% | 1.83 | 1.62 | 1.65 | 29 |
+| Tarjetas | **menos de 3.5 tarjetas** | 53% | 72% | 53% | 1.88 | 1.73 | 1.73 | 1 |
+| Tarjetas | **menos de 4.5 tarjetas** | 84% | 84% | - | 1.20 | nan | nan | 0 |
+| Córners | **más de 8.5 córners** | 51% | 44% | 51% | 1.97 | 1.82 | 1.83 | 10 |
+| Córners | **menos de 9.5 córners** | 60% | 68% | 60% | 1.66 | 1.53 | 1.70 | 8 |
+| Goles | **más de 1.5 goles** | 76% | 78% | 76% | 1.32 | 1.23 | 1.27 | 33 |
+| Goles | **Netherlands marca primero** | 55% | 67% | 55% | 1.81 | 1.75 | 1.75 | 5 |
 
-Once real Spain: Lamine Yamal, Fermín, Pau Cubarsí Paredes, Álex Baena, Unai Simón, D. Huijsen, Fabián Ruiz, Mikel Oyarzabal, Martín Zubimendi, Marc Pubill, Marc Cucurella
-Once real Croatia: I. Perišić, Marco Pašalić, J. Gvardiol, Petar Sučić, Dion Drena Beljo, Josip Mišić, D. Livaković, M. Kovačić, Josip Šutalo, Ivan Smolčić, Marin Pongračić
+Once probable Greece: K. Mavropanos, K. Tzolakis, C. Tzolis, K. Karetsas, D. Kourbelis, K. Tsimikas, A. Tetteh, G. Vagiannidis, P. Retsos, V. Pavlidis, C. Zafeiris
+Once probable Netherlands: J. van Hecke, C. Gakpo, Frenkie de Jong, B. Verbruggen, V. van Dijk, B. Brobbey, C. Summerville, T. Reijnders, M. van de Ven, R. Gravenberch, D. Dumfries
 
-## Luxembourg - Iceland (2026-09-29 18:45 UTC)
+## Germany - Serbia (2026-10-01 18:45 UTC)
 
-Ranking FIFA (puntos): Luxembourg 1233, Iceland 1343. Goles esperados 0.99 - 1.30, marcador más probable 0-1. Córners esperados 7.6. Amarillas esperadas 4.1 (árbitro Jorgji, Enea, 0 partidos en nuestras ligas, x1.00). Forma del once: Luxembourg +0.00, Iceland +0.01. Partidos en el modelo: Luxembourg 15, Iceland 16.
-
-| mercado | pronóstico | final | modelo | mercado | cuota mínima | cuota mediana | mejor cuota | casas |
-|---|---|---|---|---|---|---|---|---|
-| 1X2 | **gana Iceland** | 44% | 44% | - | 2.29 | nan | nan | 0 |
-| Sin empate | **gana Iceland (sin empate)** | 61% | 61% | - | 1.65 | nan | nan | 0 |
-| Más/menos 2.5 | **menos de 2.5 goles** | 60% | 60% | - | 1.67 | nan | nan | 0 |
-| Ambos marcan | **ambos marcan: no** | 54% | 54% | - | 1.84 | nan | nan | 0 |
-| Tarjetas | **más de 3.5 tarjetas** | 53% | 53% | - | 1.89 | nan | nan | 0 |
-| Tarjetas | **menos de 4.5 tarjetas** | 62% | 62% | - | 1.61 | nan | nan | 0 |
-| Córners | **menos de 8.5 córners** | 65% | 65% | - | 1.55 | nan | nan | 0 |
-| Córners | **menos de 9.5 córners** | 75% | 75% | - | 1.33 | nan | nan | 0 |
-| Goles | **más de 1.5 goles** | 67% | 67% | - | 1.50 | nan | nan | 0 |
-| Goles | **Iceland marca primero** | 57% | 57% | - | 1.76 | nan | nan | 0 |
-
-Once probable Luxembourg: V. Thill, A. Moris, L. Barreiro, S. Korač, D. Sinani, L. Jans, D. Carlson, Mathias Olesen, F. Bohnert, Tomas de Sousa Moreira, Aiman Dardari
-Once real Iceland: H. Valdimarsson, A. Guðjohnsen, H. Haraldsson, Í. Bergmann Jóhannesson, D. Grétarsson, O. Óskarsson, V. Pálsson, S. Þórðarson, Gylfi Sigurðsson, Logi Tomasson, Mikael Ellertsson
-
-## Slovenia - North Macedonia (2026-09-29 18:45 UTC)
-
-Ranking FIFA (puntos): Slovenia 1441, North Macedonia 1369. Goles esperados 1.30 - 0.79, marcador más probable 1-0. Córners esperados 9.3. Amarillas esperadas 3.4 (árbitro Colombo, 32 partidos en nuestras ligas, x1.02). Forma del once: Slovenia -0.02, North Macedonia -0.03. Partidos en el modelo: Slovenia 15, North Macedonia 15.
+Ranking FIFA (puntos): Germany 1726, Serbia 1502. Goles esperados 2.89 - 0.80, marcador más probable 2-0. Córners esperados 10.1. Amarillas esperadas 3.0 (árbitro ?, 0 partidos en nuestras ligas, x1.00). Forma del once: Germany +0.04, Serbia +0.03. Partidos en el modelo: Germany 20, Serbia 16.
 
 | mercado | pronóstico | final | modelo | mercado | cuota mínima | cuota mediana | mejor cuota | casas |
 |---|---|---|---|---|---|---|---|---|
-| 1X2 | **gana Slovenia** | 49% | 49% | - | 2.06 | nan | nan | 0 |
-| Sin empate | **gana Slovenia (sin empate)** | 68% | 68% | - | 1.47 | nan | nan | 0 |
-| Más/menos 2.5 | **menos de 2.5 goles** | 65% | 65% | - | 1.53 | nan | nan | 0 |
-| Ambos marcan | **ambos marcan: no** | 60% | 60% | - | 1.66 | nan | nan | 0 |
-| Tarjetas | **menos de 3.5 tarjetas** | 58% | 58% | - | 1.72 | nan | nan | 0 |
-| Tarjetas | **menos de 4.5 tarjetas** | 72% | 72% | - | 1.39 | nan | nan | 0 |
-| Córners | **más de 8.5 córners** | 57% | 57% | - | 1.76 | nan | nan | 0 |
-| Córners | **menos de 9.5 córners** | 55% | 55% | - | 1.81 | nan | nan | 0 |
-| Goles | **más de 1.5 goles** | 62% | 62% | - | 1.62 | nan | nan | 0 |
-| Goles | **Slovenia marca primero** | 62% | 62% | - | 1.61 | nan | nan | 0 |
+| 1X2 | **gana Germany** | 77% | 80% | 75% | 1.29 | 1.25 | 1.30 | 49 |
+| Sin empate | **gana Germany (sin empate)** | 90% | 91% | 88% | 1.11 | 1.04 | 1.11 | 5 |
+| Más/menos 2.5 | **más de 2.5 goles** | 67% | 71% | 67% | 1.49 | 1.40 | 1.45 | 34 |
+| Ambos marcan | **ambos marcan: sí** | 52% | 52% | 51% | 1.93 | 1.80 | 1.90 | 29 |
+| Tarjetas | **más de 3.5 tarjetas** | 53% | 35% | 53% | 1.90 | 1.75 | 1.75 | 1 |
+| Tarjetas | **menos de 4.5 tarjetas** | 78% | 78% | - | 1.28 | nan | nan | 0 |
+| Córners | **más de 8.5 córners** | 56% | 66% | 56% | 1.79 | 1.66 | 1.67 | 10 |
+| Córners | **menos de 9.5 córners** | 56% | 45% | 56% | 1.78 | 1.63 | 1.73 | 9 |
+| Goles | **más de 1.5 goles** | 84% | 88% | 84% | 1.19 | 1.11 | 1.14 | 32 |
+| Goles | **Germany marca primero** | 76% | 78% | 76% | 1.32 | 1.25 | 1.30 | 5 |
 
-Once real Slovenia: J. Oblak, J. Bijol, Sandi Lovrić, V. Drkušić, David Brekalo, T. Begić, Z. Vipotnik, E. Janža, Žan Karničnik, A. Čerin, Danijel Šturm
-Once real North Macedonia: S. Dimitrievski, Agon Elezi, S. Alomeroviс, Andrej Stojchevski, Eljif Elmas, Jani Atanasov, Mario Mladenovski, Anes Meljichi, M. Gashtarov, Azer Omeragikj, Dimitar Mitrovski
+Once probable Germany: J. Kimmich, Y. Ebnoutalib, J. Tah, K. Adeyemi, M. Neuer, F. Nmecha, F. Wirtz, Leroy Sané, K. Havertz, A. Rüdiger, N. Brown
+Once probable Serbia: Vanja Milinković-Savić, A. Živković, Strahinja Pavlović, Aleksandar Stanković, L. Jović, S. Lukić, S. Milinković-Savić, Aleksa Terzić, Strahinja Eraković, D. Tadić, N. Simić
+
+## Denmark - Portugal (2026-10-01 18:45 UTC)
+
+Ranking FIFA (puntos): Denmark 1619, Portugal 1788. Goles esperados 1.16 - 1.64, marcador más probable 1-1. Córners esperados 9.9. Amarillas esperadas 3.1 (árbitro ?, 0 partidos en nuestras ligas, x1.00). Forma del once: Denmark -0.12, Portugal -0.06. Partidos en el modelo: Denmark 16, Portugal 21.
+
+| mercado | pronóstico | final | modelo | mercado | cuota mínima | cuota mediana | mejor cuota | casas |
+|---|---|---|---|---|---|---|---|---|
+| 1X2 | **gana Portugal** | 47% | 48% | 46% | 2.12 | 2.05 | 2.10 | 49 |
+| Sin empate | **gana Portugal (sin empate)** | 63% | 64% | 61% | 1.59 | 1.54 | 1.56 | 12 |
+| Más/menos 2.5 | **más de 2.5 goles** | 55% | 53% | 55% | 1.82 | 1.71 | 1.78 | 34 |
+| Ambos marcan | **ambos marcan: sí** | 57% | 55% | 58% | 1.77 | 1.61 | 1.64 | 29 |
+| Tarjetas | **más de 3.5 tarjetas** | 54% | 37% | 54% | 1.84 | 1.67 | 1.67 | 1 |
+| Tarjetas | **menos de 4.5 tarjetas** | 63% | 76% | 63% | 1.58 | 1.43 | 1.43 | 1 |
+| Córners | **más de 8.5 córners** | 54% | 64% | 54% | 1.85 | 1.70 | 1.78 | 10 |
+| Córners | **menos de 9.5 córners** | 58% | 48% | 58% | 1.73 | 1.60 | 1.73 | 9 |
+| Goles | **más de 1.5 goles** | 77% | 77% | 77% | 1.30 | 1.22 | 1.25 | 33 |
+| Goles | **Portugal marca primero** | 56% | 59% | 56% | 1.77 | 1.70 | 1.73 | 5 |
+
+Once probable Denmark: P. Højbjerg, M. Damsgaard, A. Bah, M. Hjulmand, J. Andersen, M. Hermansen, R. Kristensen, J. Mæhle, Rasmus Højlund, Victor Mow Froholdt, Oliver Provstgaard
+Once probable Portugal: Vitinha, Bruno Fernandes, João Félix, Diogo Costa, Nuno Mendes, Rúben Dias, Renato Veiga, João Neves, Cristiano Ronaldo, João Cancelo, Pedro Neto
+
+## Republic of Ireland - Austria (2026-10-01 18:45 UTC)
+
+Ranking FIFA (puntos): Republic of Ireland 1441, Austria 1599. Goles esperados 1.14 - 1.41, marcador más probable 1-1. Córners esperados 7.0. Amarillas esperadas 3.0 (árbitro ?, 0 partidos en nuestras ligas, x1.00). Forma del once: Republic of Ireland -0.09, Austria -0.03. Partidos en el modelo: Republic of Ireland 17, Austria 19.
+
+| mercado | pronóstico | final | modelo | mercado | cuota mínima | cuota mediana | mejor cuota | casas |
+|---|---|---|---|---|---|---|---|---|
+| 1X2 | **gana Austria** | 43% | 43% | 43% | 2.32 | 2.17 | 2.25 | 49 |
+| Sin empate | **gana Austria (sin empate)** | 59% | 59% | 60% | 1.69 | 1.55 | 1.58 | 12 |
+| Más/menos 2.5 | **menos de 2.5 goles** | 57% | 53% | 57% | 1.76 | 1.65 | 1.69 | 34 |
+| Ambos marcan | **ambos marcan: sí** | 50% | 51% | 49% | 1.99 | 1.90 | 1.97 | 29 |
+| Tarjetas | **más de 3.5 tarjetas** | 59% | 35% | 59% | 1.69 | 1.56 | 1.56 | 1 |
+| Tarjetas | **menos de 4.5 tarjetas** | 59% | 78% | 59% | 1.71 | 1.58 | 1.58 | 1 |
+| Córners | **más de 8.5 córners** | 50% | 28% | 50% | 1.99 | 1.83 | 1.86 | 10 |
+| Córners | **menos de 9.5 córners** | 62% | 82% | 62% | 1.62 | 1.50 | 1.54 | 8 |
+| Goles | **más de 1.5 goles** | 68% | 72% | 68% | 1.47 | 1.37 | 1.42 | 34 |
+| Goles | **Austria marca primero** | 57% | 55% | 57% | 1.77 | 1.77 | 1.80 | 5 |
+
+Once probable Republic of Ireland: J. Moylan, C. Kelleher, T. Parrott, J. Molumby, J. O&apos;Brien, J. Knight, D. O&apos;Shea, J. Abankwah, C. Ogbene, C. Coventry, L. Scales
+Once probable Austria: P. Lienhart, M. Sabitzer, X. Schlager, P. Mwene, Romano Schmid, N. Seiwald, S. Posch, A. Schlager, K. Laimer, K. Danso, P. Wanner
+
+## Malta - Gibraltar (2026-10-01 18:45 UTC)
+
+Ranking FIFA (puntos): Malta 993, Gibraltar 820. Goles esperados 1.86 - 0.68, marcador más probable 1-0. Córners esperados 9.5. Amarillas esperadas 3.8 (árbitro ?, 0 partidos en nuestras ligas, x1.00). Forma del once: Malta +0.00, Gibraltar +0.00. Partidos en el modelo: Malta 16, Gibraltar 12.
+
+| mercado | pronóstico | final | modelo | mercado | cuota mínima | cuota mediana | mejor cuota | casas |
+|---|---|---|---|---|---|---|---|---|
+| 1X2 | **gana Malta** | 69% | 65% | 73% | 1.45 | 1.27 | 1.31 | 49 |
+| Sin empate | **gana Malta (sin empate)** | 86% | 83% | 88% | 1.17 | 1.04 | 1.06 | 4 |
+| Más/menos 2.5 | **menos de 2.5 goles** | 53% | 53% | 53% | 1.88 | 1.75 | 1.83 | 34 |
+| Ambos marcan | **ambos marcan: no** | 62% | 58% | 66% | 1.61 | 1.41 | 1.46 | 29 |
+| Tarjetas | **menos de 3.5 tarjetas** | 51% | 51% | - | 1.97 | nan | nan | 0 |
+| Tarjetas | **menos de 4.5 tarjetas** | 66% | 66% | - | 1.52 | nan | nan | 0 |
+| Córners | **más de 8.5 córners** | 54% | 59% | 54% | 1.86 | 1.73 | 1.74 | 7 |
+| Córners | **menos de 9.5 córners** | 57% | 53% | 57% | 1.76 | 1.61 | 1.64 | 6 |
+| Goles | **más de 1.5 goles** | 70% | 72% | 70% | 1.43 | 1.32 | 1.35 | 34 |
+| Goles | **Malta marca primero** | 80% | 73% | 80% | 1.26 | 1.25 | 1.29 | 5 |
+
+Once probable Malta: Teddy Teuma, I. Cardona, Henry Bonello, Alexander Satariano, Matthew Guillaumier, Zach Muscat, I. Chouaref, Paul Mbong, Kurt Shaw, Enrico Pepe, Ryan Camenzuli
+Once probable Gibraltar: Jaylan Hankins, Bernardo Lopes, Dan Bent, T. De Barr, Graeme Torrilla, Ethan Jolley, Carlos Richards, J. Scanlon, Nicholas Pozo, Kian Ronan, Jaiden Bartolo
+
+## Israel - Kosovo National Team (2026-10-01 18:45 UTC)
+
+Ranking FIFA (puntos): Israel 1334, Kosovo National Team 1319. Goles esperados 1.12 - 1.59, marcador más probable 1-1. Córners esperados 7.3. Amarillas esperadas 3.6 (árbitro ?, 0 partidos en nuestras ligas, x1.00). Forma del once: Israel +0.02, Kosovo National Team +0.02. Partidos en el modelo: Israel 14, Kosovo National Team 15.
+
+| mercado | pronóstico | final | modelo | mercado | cuota mínima | cuota mediana | mejor cuota | casas |
+|---|---|---|---|---|---|---|---|---|
+| 1X2 | **gana Kosovo National Team** | 45% | 48% | 42% | 2.22 | 2.25 | 2.32 | 49 |
+| Sin empate | **gana Kosovo National Team (sin empate)** | 61% | 64% | 57% | 1.64 | 1.63 | 1.67 | 12 |
+| Más/menos 2.5 | **menos de 2.5 goles** | 51% | 49% | 51% | 1.97 | 1.84 | 1.92 | 34 |
+| Ambos marcan | **ambos marcan: sí** | 54% | 54% | 55% | 1.85 | 1.70 | 1.78 | 29 |
+| Tarjetas | **más de 3.5 tarjetas** | 52% | 46% | 52% | 1.92 | 1.77 | 1.77 | 1 |
+| Tarjetas | **menos de 4.5 tarjetas** | 69% | 69% | - | 1.45 | nan | nan | 0 |
+| Córners | **más de 8.5 córners** | 54% | 31% | 54% | 1.85 | 1.70 | 1.78 | 10 |
+| Córners | **menos de 9.5 córners** | 58% | 79% | 58% | 1.72 | 1.58 | 1.64 | 9 |
+| Goles | **más de 1.5 goles** | 73% | 75% | 73% | 1.38 | 1.28 | 1.32 | 29 |
+| Goles | **Kosovo National Team marca primero** | 54% | 59% | 54% | 1.84 | 1.80 | 1.81 | 5 |
+
+Once probable Israel: O. Gloukh, Stav Lemkin, M. Solomon, E. Peretz, G. Kanichowsky, R. Revivo, Dor Turgeman, Dor Peretz, N. Stoioanov, Daniel Peretz, G. Mizrahi
+Once probable Kosovo National Team: A. Murić, Florent Muslija, Kreshnik Hajrizi, V. Muriqi, L. Avdullahu, L. Dellova, I. Krasniqi, M. Vojvoda, A. Hajdari, D. Gallapeni, V. Hodža
 
 ## Cuánto fiarse
 

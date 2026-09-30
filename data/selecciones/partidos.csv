@@ -549,16 +549,16 @@ match_id,fecha,competicion,local_id,local,visitante_id,visitante,goles_l,goles_v
 1301099790,2026-09-28,UEFA Nations League,656905,Northern Ireland,655203,Hungary,0.0,0.0,True
 1301098939,2026-09-28,UEFA Nations League,662011,Turkey,654352,Italy,1.0,4.0,True
 1301100641,2026-09-28,UEFA Nations League,5039,Sweden,21208,Poland,3.0,1.0,True
-1301104896,2026-09-29,UEFA Nations League,936033,Finland,936884,Belarus,,,False
-1301106598,2026-09-29,UEFA Nations League,948798,Moldova,935182,Faroe Islands,,,False
-1301104045,2026-09-29,UEFA Nations League,949649,San Marino,662862,Albania,,,False
-1301107449,2026-09-29,UEFA Nations League,939437,Bulgaria,937735,Estonia,,,False
-1301102343,2026-09-29,UEFA Nations League,8443,Spain,3337,Croatia,,,False
-1301103194,2026-09-29,UEFA Nations League,656054,Czech Republic,9294,England,,,False
-1315311490,2026-09-29,UEFA Nations League,938586,Luxembourg,16102,Iceland,,,False
-1301105747,2026-09-29,UEFA Nations League,658607,Slovakia,932629,Kazakhstan,,,False
-1315358295,2026-09-29,UEFA Nations League,929225,Slovenia,941139,North Macedonia,,,False
-1315349785,2026-09-29,UEFA Nations League,943692,Scotland,13549,Switzerland,,,False
+1301104896,2026-09-29,UEFA Nations League,936033,Finland,936884,Belarus,0.0,0.0,True
+1301106598,2026-09-29,UEFA Nations League,948798,Moldova,935182,Faroe Islands,1.0,1.0,True
+1301104045,2026-09-29,UEFA Nations League,949649,San Marino,662862,Albania,0.0,3.0,True
+1301107449,2026-09-29,UEFA Nations League,939437,Bulgaria,937735,Estonia,0.0,0.0,True
+1301102343,2026-09-29,UEFA Nations League,8443,Spain,3337,Croatia,4.0,1.0,True
+1301103194,2026-09-29,UEFA Nations League,656054,Czech Republic,9294,England,0.0,2.0,True
+1315311490,2026-09-29,UEFA Nations League,938586,Luxembourg,16102,Iceland,0.0,3.0,True
+1301105747,2026-09-29,UEFA Nations League,658607,Slovakia,932629,Kazakhstan,2.0,1.0,True
+1315358295,2026-09-29,UEFA Nations League,929225,Slovenia,941139,North Macedonia,2.0,0.0,True
+1315349785,2026-09-29,UEFA Nations League,943692,Scotland,13549,Switzerland,0.0,3.0,True
 1370857962,2026-09-30,Friendlies,934331,Lithuania,945394,Andorra,,,False
 1301108300,2026-10-01,UEFA Nations League,933480,Azerbaijan,942841,Liechtenstein,,,False
 1301112555,2026-10-01,UEFA Nations League,661160,Republic of Ireland,660309,Austria,,,False
