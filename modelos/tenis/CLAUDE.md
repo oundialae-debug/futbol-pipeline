@@ -483,6 +483,16 @@ sacar enlaces a cada partido; el aviso lleva la sección de tenis. No se apuesta
 usuario (sin acceso a su cuenta, Luckia prohíbe apostar con programas, y la señal no está
 probada).
 
+## Vigilante con aviso al móvil (30/09/2026)
+
+`vigilante_juegos.py`, lanzado por `vigilante_tenis.yml` (en main, cada hora; cada ejecución dura
+~5h45 y la siguiente espera en cola, así que hay una sola a la vez). Cada 2 minutos: modelo Y casa
+(sin margen) >54% al mismo lado en la línea principal, 2 pasadas seguidas -> aviso por ntfy al canal
+`tenis-f059172b4dc7` (el repo es público: cualquiera que lea esto puede suscribirse; si molesta,
+pasar el canal a un secreto NTFY_TOPIC). Formato: `Jugador VS Jugador | más/menos de X juegos |
+modelo % / cuota % | mínima | torneo`. La regla la fijó el usuario; NO está medida: el registro de
+cada 5 minutos y evaluar_juegos.py son los que dirán si acierta.
+
 ## Plan (en este orden)
 
 1. Ganador del partido, único mercado con cierre de Pinnacle.

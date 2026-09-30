@@ -1,0 +1,108 @@
+"""
+Vigilante de más/menos juegos en directo con aviso al móvil (30/09/2026). Lo corre GitHub Actions
+(vigilante_tenis.yml en main): cada 2 minutos, durante casi 6 horas, 2 peticiones a API-Tennis
+(marcadores y cuotas en directo). No gasta créditos de Claude.
+
+Regla (pedida por el usuario): en la línea principal de cada partido (la más cercana al 50% según
+la casa), el modelo Y la casa (sin margen) dan más del 54% al mismo lado (más o menos), durante
+2 pasadas seguidas (~2 min) para no avisar por un vaivén puntual. Un aviso por partido y lado.
+Aviso por ntfy (topic en NTFY_TOPIC):
+  Jugador VS Jugador | más/menos de X juegos | modelo 57% / cuota 55% | mínima 1,82 | torneo
+"mínima" = 1 / prob. de la casa: apostar solo si Luckia paga eso o más.
+"""
+import os
+import sys
+import time
+
+import pandas as pd
+import requests
+
+sys.path.insert(0, "modelos/tenis/scripts")
+import api_tennis as A  # noqa: E402
+import juegos_directo as J  # noqa: E402
+import markov_tenis as K  # noqa: E402
+import pronosticos_api as Q  # noqa: E402
+
+UMBRAL, PASADAS, CADA = 0.54, 2, 120
+MINUTOS = float(os.environ.get("MINUTOS", 345))
+TOPIC = os.environ.get("NTFY_TOPIC", "tenis-f059172b4dc7")
+
+
+def avisar(txt):
+    print(txt, flush=True)
+    try:
+        requests.post(f"https://ntfy.sh/{TOPIC}", data=txt.encode(), timeout=15,
+                      headers={"Title": "Tenis: juegos", "Priority": "high", "Click": J.LUCKIA})
+    except requests.RequestException as e:
+        print(f"ntfy falló: {type(e).__name__}", flush=True)
+
+
+def lineas():
+    vivos = A.marcadores()
+    try:
+        vodds = A.cuotas_directo()
+    except RuntimeError:
+        vodds = {}
+    filas = []
+    for p in vivos:
+        circ, e = A.circuito(p), A.estado(p)
+        if circ is None or e is None:
+            continue
+        a, b = Q.jugador(circ, p.get("event_first_player")), Q.jugador(circ, p.get("event_second_player"))
+        if a is None or b is None:
+            continue
+        ev = vodds.get(str(p.get("event_key")), {}) if isinstance(vodds, dict) else {}
+        mk = {k: t for k, t in Q.mercados_directo(ev.get("live_odds")).items()
+              if k[0] == "Total Games in Match" and "Over" in t and "Under" in t}
+        if not mk:
+            continue
+        sup = Q.superficie(circ, p.get("tournament_name"), p.get("tournament_key"))
+        pa, pb = K.redondear(Q.prob_saque(circ, a, b, sup)), K.redondear(Q.prob_saque(circ, b, a, sup))
+        r = K.partido_desde(pa, pb, e["mejor_de"], e["sa"], e["sb"], e["ga"], e["gb"], e["a_saca"], e["xa"], e["xb"],
+                            e["previos"])
+        for (_, h), t in mk.items():
+            ln = float(h)
+            filas.append({"hora": "", "event_key": p.get("event_key"), "tipo": p.get("event_type_type"),
+                          "torneo": p.get("tournament_name"), "jugador1": p.get("event_first_player"),
+                          "jugador2": p.get("event_second_player"), "mercado": "total_juegos", "linea": ln,
+                          "cuota": t["Over"], "cuota_rival": t["Under"],
+                          "prob_mercado": Q.sin_margen(t["Over"], t["Under"]),
+                          "prob_modelo": sum(x for k, x in r["total"].items() if k > ln)})
+    return J.principales(pd.DataFrame(filas)) if filas else pd.DataFrame()
+
+
+def main():
+    fin = time.time() + MINUTOS * 60
+    racha, avisados, fallos = {}, set(), 0
+    while time.time() < fin:
+        t0 = time.time()
+        try:
+            pr = lineas()
+            vistos = set()
+            for _, x in pr.iterrows():
+                pm, mo = float(x.prob_mercado), float(x.prob_modelo)
+                lado = ("más" if pm > UMBRAL and mo > UMBRAL else
+                        "menos" if 1 - pm > UMBRAL and 1 - mo > UMBRAL else None)
+                k = x.event_key
+                vistos.add(k)
+                n = racha[k][1] + 1 if lado and racha.get(k, (None, 0))[0] == lado else (1 if lado else 0)
+                racha[k] = (lado, n)
+                if lado and n >= PASADAS and (k, lado) not in avisados:
+                    avisados.add((k, lado))
+                    pmod, pcas = (mo, pm) if lado == "más" else (1 - mo, 1 - pm)
+                    ln, mn = f"{x.linea:g}".replace(".", ","), f"{1 / pcas:.2f}".replace(".", ",")
+                    avisar(f"{x.jugador1} VS {x.jugador2} | {lado} de {ln} juegos | modelo {pmod:.0%} / cuota {pcas:.0%} | "
+                           f"mínima {mn} | {J.torneo(x.tipo, x.torneo)}")
+            for k in set(racha) - vistos:
+                racha.pop(k)
+            fallos = 0
+        except Exception as ex:  # una pasada fallida no para el vigilante
+            fallos += 1
+            print(f"pasada fallida: {type(ex).__name__}: {str(ex)[:150]}", flush=True)
+            if fallos == 5:
+                avisar("Vigilante de tenis: 5 fallos seguidos leyendo la API (¿clave caducada?)")
+        time.sleep(max(5, CADA - (time.time() - t0)))
+
+
+if __name__ == "__main__":
+    main()
