@@ -1,4 +1,4 @@
-# Tenis en directo, 30/09/2026 18:42 UTC (20:42 en España)
+# Tenis en directo, 30/09/2026 18:56 UTC (20:56 en España)
 
 Calculadora desde el marcador exacto (modelo de puntos, superficie real) frente a la cuota en directo
 (sin margen). Ganador y sets: la calculadora suele coincidir con la casa. Total de juegos: el modelo
@@ -7,19 +7,18 @@ Se actualiza cada ~5 min; el registro en data/tenis/api_tennis/registro/ servir�
 
 | partido | tipo | superficie | marcador (sets, juegos, puntos, saca) | gana 1º: modelo / cuota | sets más probables (modelo) | total juegos: línea, modelo / cuota |
 |---|---|---|---|---|---|---|
-| L. Staeheli vs A. Andrade | Challenger Men Singles | Hard | 0-0, 0-3, 0 - 0, saca A. Andrade | 15% / 10% | 0-2 61%, 1-2 24% | 16.5: 77% / 49% |
-| L. Poullain vs R. Bertola | Challenger Men Singles | Hard | 0-0, 0-0, 0 - 0, saca R. Bertola | 59% / 48% | 2-0 31%, 2-1 28% | 22.5: 59% / 50% |
-| Dar. Blanch vs D. Milavsky | Challenger Men Singles | Hard | 1-1, 3-2, 0 - 0, saca D. Milavsky | 50% / 61% | 2-1 50%, 1-2 50% | 26.5: 47% / 38% |
-| C. Buyukakcay vs L. Stefanini | Challenger Women Singles | Hard | 0-0, 0-1, 0 - 0, saca C. Buyukakcay | 17% / 11% | 0-2 56%, 1-2 27% | 17.5: 75% / 50% |
-| J. A. Rodriguez vs J. Roddick | Itf Men Singles | Hard | 1-0, 4-4, 0 - 0, saca J. Roddick | 71% / 71% | 2-0 47%, 1-2 29% |  |
-| T. Papamalamis vs B. Weintraub | Itf Men Singles | Hard | 0-0, 3-3, A - 40, saca T. Papamalamis | 70% / 79% | 2-0 41%, 2-1 29% |  |
-| D. Mosejczuk vs I. Vasa | Itf Men Singles | Hard | 1-0, 2-4, 0 - 15, saca I. Vasa | 53% / 62% | 1-2 47%, 2-1 44% |  |
-| G. Elicha Navas vs T. Chavez | Itf Men Singles | Hard | 1-1, 0-0, 0 - 0, saca T. Chavez | 36% / 39% | 1-2 64%, 2-1 36% |  |
-| J. Sarr vs D. Zhalgasbay | Itf Men Singles | Hard | 0-0, 2-2, 0 - 30, saca D. Zhalgasbay | 62% / 34% | 2-0 33%, 2-1 30% |  |
-| E. McDonald vs S. Broadus | Itf Women Singles | Hard | 0-0, 0-0, 30 - 40, saca E. McDonald | 30% /  | 0-2 42%, 1-2 28% |  |
-| E. Koike vs A. Zucchini | Itf Women Singles | Hard | 0-0, 1-0, A - 40, saca A. Zucchini | 62% / 75% | 2-0 36%, 2-1 26% |  |
-| C. Di Genova vs A. Hejtmanek | Itf Women Singles | Hard | 1-1, 0-0, 0 - 0, saca C. Di Genova | 46% / 25% | 1-2 54%, 2-1 46% |  |
-| S. A. Larraya Guidi vs M. F. Urrutia | Itf Women Singles | Hard | 0-1, 1-3, 15 - 15, saca S. A. Larraya Guidi | 2% / 6% | 0-2 92%, 1-2 6% |  |
-| K. Chiarello vs S. Djoubri | Itf Women Singles | Hard | 1-1, 2-5, 15 - 15, saca S. Djoubri | 6% / 6% | 1-2 94%, 2-1 6% |  |
-| K. Penickova vs I. Shymanovich | Itf Women Singles | Hard | 0-0, 0-0, 0 - 15, saca K. Penickova | 54% / 29% | 2-0 27%, 2-1 27% |  |
-| K. Cross vs W. Osuigwe | Itf Women Singles | Hard | 1-1, 2-0, 30 - 40, saca K. Cross | 67% / 59% | 2-1 67%, 1-2 33% |  |
+| L. Staeheli vs A. Andrade | Challenger Men Singles | Hard | 0-0, 1-4, 40 - 30, saca A. Andrade | 16% / 12% | 0-2 60%, 1-2 24% | 18.5: 66% / 51% |
+| L. Poullain vs R. Bertola | Challenger Men Singles | Hard | 0-0, 1-1, 30 - 40, saca R. Bertola | 57% / 42% | 2-0 29%, 2-1 28% | 22.5: 61% / 51% |
+| Dar. Blanch vs D. Milavsky | Challenger Men Singles | Hard | 1-1, 5-3, 0 - 40, saca Dar. Blanch | 63% / 73% | 2-1 63%, 1-2 37% | 26.5: 68% / 46% |
+| C. Buyukakcay vs L. Stefanini | Challenger Women Singles | Hard | 0-0, 2-2, 0 - 0, saca L. Stefanini | 22% / 16% | 0-2 47%, 1-2 30% | 20.5: 63% / 50% |
+| J. Sarr vs D. Zhalgasbay | Itf Men Singles | Hard | 0-0, 3-4, 30 - 0, saca J. Sarr | 63% / 38% | 2-0 34%, 2-1 30% |  |
+| T. Papamalamis vs B. Weintraub | Itf Men Singles | Hard | 1-0, 0-0, 0 - 30, saca B. Weintraub | 85% / 90% | 2-0 58%, 2-1 26% |  |
+| D. Mosejczuk vs I. Vasa | Itf Men Singles | Hard | 1-1, 0-0, 0 - 0, saca D. Mosejczuk | 48% / 58% | 1-2 52%, 2-1 48% |  |
+| G. Elicha Navas vs T. Chavez | Itf Men Singles | Hard | 1-1, 0-1, 40 - 40, saca G. Elicha Navas | 29% / 23% | 1-2 71%, 2-1 29% |  |
+| E. McDonald vs S. Broadus | Itf Women Singles | Hard | 0-0, 1-2, A - 40, saca S. Broadus | 30% /  | 0-2 42%, 1-2 28% |  |
+| E. Koike vs A. Zucchini | Itf Women Singles | Hard | 0-0, 3-1, 30 - 15, saca E. Koike | 70% / 83% | 2-0 44%, 2-1 25% |  |
+| E. M. Ionescu vs F. Mattioli | Itf Women Singles | Hard | 0-0, 0-0, 40 - 15, saca F. Mattioli | 52% / 55% | 2-0 28%, 1-2 27% |  |
+| C. Di Genova vs A. Hejtmanek | Itf Women Singles | Hard | 1-1, 1-0, 15 - 15, saca A. Hejtmanek | 55% / 38% | 2-1 55%, 1-2 45% |  |
+| S. A. Larraya Guidi vs M. F. Urrutia | Itf Women Singles | Hard | 0-1, 2-4, A - 40, saca S. A. Larraya Guidi | 2% / 8% | 0-2 91%, 1-2 7% |  |
+| K. Penickova vs I. Shymanovich | Itf Women Singles | Hard | 0-0, 2-1, 0 - 30, saca I. Shymanovich | 58% / 34% | 2-0 31%, 2-1 27% |  |
+| K. Cross vs W. Osuigwe | Itf Women Singles | Hard | 1-1, 2-4, 0 - 0, saca K. Cross | 17% / 16% | 1-2 83%, 2-1 17% |  |
