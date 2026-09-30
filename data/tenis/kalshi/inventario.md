@@ -1,0 +1,13 @@
+# Kalshi: mercados de tenis cerrados
+
+| serie | mercados | partidos (eventos) | primer cierre | último cierre |
+|---|---|---|---|---|
+| KXATPMATCH | 9466 | 4733 | 2025-06-18 | 2026-09-30 |
+| KXWTAMATCH | 9400 | 4700 | 2025-06-18 | 2026-09-30 |
+| KXATPCHALLENGERMATCH | 18702 | 9351 | 2026-01-13 | 2026-09-30 |
+| KXWTACHALLENGERMATCH | 3924 | 1962 | 2026-01-30 | 2026-09-30 |
+| KXITFMATCH | 37170 | 18585 | 2026-04-11 | 2026-09-30 |
+| KXITFWMATCH | 33026 | 16513 | 2026-04-11 | 2026-09-30 |
+| KXATPGTOTAL | 5396 | 1806 | 2026-05-07 | 2026-09-30 |
+| KXWTAGTOTAL | 1723 | 600 | 2026-08-11 | 2026-09-30 |
+| KXATPGSPREAD | 5864 | 1868 | 2026-03-07 | 2026-09-30 |
