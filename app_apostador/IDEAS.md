@@ -62,3 +62,25 @@ Con servidores DNS = registrado. El RDAP de `.io` y `.co` no es fiable
 confirmar en un registrador (Namecheap, Cloudflare) y ver precio. Que un
 dominio esté libre no dice nada de si el nombre está registrado como marca
 ni de si hay una app con ese nombre: eso no se ha comprobado.
+
+## Nombres inventados, al estilo Flashscore / SofaScore / FotMob (30/09/2026)
+
+El usuario descartó los nombres evidentes (Pitchside, Gaffer…): quiere algo
+como Flashscore, SofaScore o FotMob, donde el nombre no dice «datos de
+fútbol» directamente. Fórmula: palabra con gancho + palabra de función
+(score, stats, mob, data), o palabra inventada.
+
+Comprobado por DNS y RDAP. Método validado: da «ocupado» en sofascore.com,
+flashscore.com, fotmob.com, livescore.com, onefootball.com, fbref.com,
+transfermarkt.com y understat.com, y «libre» en una palabra sin sentido.
+El `.io` es solo pista (su RDAP no es fiable).
+
+- Palabras sueltas de fútbol (regista, cutback, halfspace, rondo, panenka,
+  rabona, nutmeg, dugout, tifo, crossbar…): todas ocupadas en `.com`, `.app`
+  y `.io`.
+- Con `.com`, `.app` y `.io` libres: **rondoscore, rondostats, rondodata,
+  rondomob, panenkascore, panenkastats, registascore, registastats,
+  tifostat, cutbackstats, halfspacedata, mezzalastats, nutmob, kopmob,
+  ballmob, fotstat, kopstat**, y muchas más de la misma fórmula.
+- Sin comprobar: si están registradas como marca o ya las usa alguna app.
+  `nutmob` puede chocar con Nutmeg (empresa de inversión).

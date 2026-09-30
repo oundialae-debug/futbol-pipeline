@@ -58,3 +58,12 @@ carpeta se apunta aquí.
 - **Dominios:** consultas DNS y RDAP públicas (`dns.google`, `rdap.org`), sin
   API de Highlightly. Resultado en `IDEAS.md`.
 - **Ficheros:** `app_apostador/IDEAS.md`. Nada fuera de la carpeta.
+
+## 30/09/2026: nombres inventados
+
+- **Qué:** búsqueda de nombres al estilo Flashscore/SofaScore/FotMob y
+  comprobación de dominios (unos 200 nombres). Resultado en `IDEAS.md`.
+- **Por qué:** el usuario descartó los nombres evidentes.
+- **Cómo:** DNS y RDAP públicos, sin API de Highlightly. Validado contra
+  sitios conocidos antes de fiarse de los «libre».
+- **Ficheros:** `app_apostador/IDEAS.md`.
