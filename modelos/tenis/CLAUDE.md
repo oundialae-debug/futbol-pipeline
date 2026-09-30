@@ -17,7 +17,8 @@ silenciosos) valen igual aquí.
   particulares y bloquea a los agentes de IA en `robots.txt` (y la carpeta
   de ficheros ha cambiado de ruta). El workflow que la bajaba (30/09) dio
   47/47 FALLO con la ejecución en verde; se retiró. El usuario baja los
-  ficheros a mano a `data/tenis/tennis_data_crudo/` (ver su `LEEME.md`) y
+  ficheros a mano y los sube TAL CUAL a `data/tenis/tennis_data_crudo/` (zip o
+  Excel, cualquier nombre; circuito y año salen del contenido) y
   `scripts/procesar_tennis_data.py` los pasa a CSV
   (`data/tenis/resumen_tennis_data.md`). Sin ficheros, sale con error.
 - **Sackmann**: los repos `JeffSackmann/tennis_atp` y `tennis_wta` **ya no

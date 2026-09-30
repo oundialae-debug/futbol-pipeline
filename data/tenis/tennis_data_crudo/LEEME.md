@@ -1,13 +1,9 @@
-# Ficheros de tennis-data.co.uk, bajados A MANO por el usuario
+# Ficheros de tennis-data.co.uk, bajados a mano
 
-tennis-data.co.uk limita su uso a particulares y bloquea a los agentes de IA
-en su robots.txt, así que Claude no los descarga. Bájalos desde
-http://www.tennis-data.co.uk/alldata.php y déjalos en esta carpeta tal cual:
+tennis-data.co.uk limita su uso a particulares y bloquea a los agentes de IA,
+así que Claude no los descarga. Desde http://www.tennis-data.co.uk/alldata.php
+se suben aquí **tal cual**: .zip, .xlsx o .xls, cualquier nombre, hombres (ATP)
+y mujeres (WTA) mezclados. Sin renombrar ni descomprimir.
 
-- ATP: un fichero por año (`2024.xlsx`, `2025.xlsx`, ...). Renómbralos a
-  `atp_2024.xlsx`, `atp_2025.xlsx`...
-- WTA: igual, `wta_2024.xlsx`, `wta_2025.xlsx`...
-- Antes de 2013 son `.xls` (vale igual: `atp_2010.xls`).
-- Si vienen en .zip, descomprime primero.
-
-Luego: `python3 modelos/tenis/scripts/procesar_tennis_data.py`.
+`modelos/tenis/scripts/procesar_tennis_data.py` distingue circuito y año por
+el contenido.
