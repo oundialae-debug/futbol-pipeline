@@ -84,14 +84,15 @@ def estado(p):
                   (PUNTOS.get(partes[0].upper(), 0), PUNTOS.get(partes[1].upper(), 0)))
     except (ValueError, IndexError):
         xa = xb = 0
-    if xa == 4 and xb < 3:                            # "A" solo tiene sentido tras 40-40
-        xa = 3
-    if xb == 4 and xa < 3:
-        xb = 3
-    if xa == 4:
-        xb = 3
-    if xb == 4:
-        xa = 3
+    if not en_tb:                                     # la "A" (ventaja) solo existe en juegos normales
+        if xa == 4 and xb < 3:
+            xa = 3
+        if xb == 4 and xa < 3:
+            xb = 3
+        if xa == 4:
+            xb = 3
+        if xb == 4:
+            xa = 3
     saque = str(p.get("event_serve", "")).lower()
     a_saca = True if saque.startswith("first") else False if saque.startswith("second") else None
     if en_tb and a_saca is not None:

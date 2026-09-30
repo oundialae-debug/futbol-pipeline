@@ -432,6 +432,13 @@ partido al marcador de `partido_desde` (probado con una respuesta de ejemplo
 hecha según la documentación; en tie-break deduce quién sacó el primer
 punto). Tennis Explorer descartado: sus condiciones (apartados 2.10 y 2.11)
 prohíben raspar y las peticiones automáticas.
+**Prueba real de API-Tennis (30/09/2026, 2 llamadas, secreto del repo):**
+`data/tenis/api_tennis/prueba.md`. 61 partidos en juego (41 ITF, 8
+Challenger, 2 ATP, 2 WTA, dobles aparte). Campos como en la documentación,
+nombres abreviados ("P. Berezina") con clave de jugador (`first_player_key`).
+`get_live_odds`: 59 partidos, mercados con línea (`handicap`), cuota,
+`suspended` y hora (`upd`), p. ej. "Total Games in Set 1". Fallo arreglado:
+en tie-break se aplicaba la corrección de la "ventaja" (4-5 salía 4-3).
 **Sin validar todavía**: falta comprobar la calibración en directo con el
 punto a punto de Grand Slam (copia de Sackmann) y compararlo con cuotas en
 directo, que no tenemos.
