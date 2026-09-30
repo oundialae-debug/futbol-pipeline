@@ -47,3 +47,14 @@ carpeta se apunta aquí.
   goles comprobado en 829 partidos y acierto de la casa por mercado). Lee
   además `cuotas_historicas_fd.csv` y `cuotas_cosechadas.csv`. Sin API ni
   descargas.
+
+## 30/09/2026: ideas de datos y nombre
+
+- **Qué:** `IDEAS.md` con las ideas de pantallas y datos que se harán a
+  continuación (partido con más pestañas, equipo, jugador), qué datos hay en
+  `data/` para cada una, sus límites y el estudio de nombre y dominios.
+- **Por qué:** el usuario quiere una app de datos al nivel de FotMob, no solo
+  de cuotas, y pidió guardar las ideas. La app será en inglés.
+- **Dominios:** consultas DNS y RDAP públicas (`dns.google`, `rdap.org`), sin
+  API de Highlightly. Resultado en `IDEAS.md`.
+- **Ficheros:** `app_apostador/IDEAS.md`. Nada fuera de la carpeta.
