@@ -40,6 +40,44 @@ def resumen(nombre, g):
     return f"| {nombre} | {n} | {g.gana.mean():.0%} | {m:+.1%} | {sig:+.2f} |"
 
 
+def previa(res):
+    """Pronósticos PREVIOS (previa_juegos.py) contra el resultado: línea principal de juegos y ganador.
+    'corregido' = modelo con la corrección aprendida del historial (historico_juegos.py)."""
+    import json
+    fs = sorted(glob.glob("data/tenis/api_tennis/previa/*.csv"))
+    out = ["", "## Previos (antes de empezar), línea principal de juegos y ganador", ""]
+    if not fs:
+        return out + ["Todavía no hay previos registrados."]
+    p = pd.concat(pd.read_csv(f) for f in fs)
+    p = p[p.principal == 1].drop_duplicates("event_key", keep="last")
+    p = p.merge(res[["event_key", "juegos_totales", "sets"]], on="event_key")
+    if p.empty:
+        return out + ["Ningún partido con previo ha terminado todavía."]
+    try:
+        coef = json.load(open("data/tenis/correccion_juegos_historica.json"))
+    except (OSError, ValueError):
+        coef = {}
+
+    def corr(r):
+        a, b, c = coef.get("wta" if ("wta" in str(r.tipo).lower() or "women" in str(r.tipo).lower()) else "atp",
+                           [0, 1, 0])
+        q = np.clip(r.mas_modelo, .01, .99)
+        return 1 / (1 + np.exp(-(a + b * np.log(q / (1 - q)) + c * (r.linea - 21.5))))
+    p["mas_corregido"] = p.apply(corr, axis=1)
+    y = (p.juegos_totales > p.linea).astype(float)
+    bri = {k: ((p[c] - y) ** 2).mean() for k, c in
+           [("modelo", "mas_modelo"), ("modelo corregido con el historial", "mas_corregido"), ("casa", "mas_casa")]}
+    out += [f"{len(p)} partidos. Juegos (más de la línea principal), Brier (menor es mejor): " +
+            ", ".join(f"{k} {v:.4f}" for k, v in bri.items()) + f". Pasó el más en el {y.mean():.0%}."]
+    g = p.dropna(subset=["gana1_casa"])
+    if len(g):
+        y1 = g.sets.astype(str).str.split("-").str[0].str.strip().astype(float) > \
+            g.sets.astype(str).str.split("-").str[1].str.strip().astype(float)
+        out.append(f"Ganador ({len(g)}): acierto modelo {((g.gana1_modelo > .5) == y1).mean():.0%}, "
+                   f"casa {((g.gana1_casa > .5) == y1).mean():.0%}.")
+    return out
+
+
 def main():
     reg, res = cargar()
     lin = ["# Más/menos juegos en directo: apuestas en papel\n"]
@@ -93,6 +131,7 @@ def main():
             lin.append(resumen(lado, g).replace("| ", f"| ", 1))
         if not len(a):
             lin.append("| (ninguno resuelto aún) | 0 | | | |")
+    lin += previa(res)
     cal = C.ajustar()
     lin += ["", "## Aprendizaje (recalibración del modelo)", "",
             f"Partidos resueltos: {cal['partidos']} ({cal['filas']} líneas). Activa: **{'sí' if cal['activo'] else 'no'}** "

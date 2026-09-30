@@ -517,6 +517,23 @@ aprende de todas las líneas registradas con las tres entradas (modelo, casa, di
 evaluación compara el Brier de las dos versiones. El vigilante usa la recalibrada solo si se
 activa (30+ partidos y mejora en validación por partidos).
 
+## El modelo exagera los juegos TAMBIÉN antes del partido, en todo el historial (30/09/2026)
+
+`historico_juegos.py` -> `data/tenis/historico_juegos.md`. Fuerza antes de cada partido (modelo de
+puntos) + marcador final, 2021-2026, ~222.000 partidos al mejor de 3. Juegos esperados menos reales:
+ATP 250/500 +1,35, Masters +1,09, Grand Slam +1,57, Challenger +1,59; WTA 250 +1,83, 500-1000
++1,63, 125 +2,09, ITF femenino +5,02. P(más): 19,5 dice 71% y pasa 47%; 21,5 dice 60% y pasa 35%.
+Estable por años (2021-24 ~+3,8; 2025 +2,5; 2026 +2,0, al mezclar niveles). Causa probable: el
+modelo acerca demasiado a los dos jugadores (fuerzas encogidas) -> partidos más igualados -> más
+juegos. Recalibración aprendida con 2021-23, juzgada en 2024-26: Brier +15% en las tres líneas.
+Guardada en `data/tenis/correccion_juegos_historica.json` (por circuito; en WTA el coeficiente del
+modelo sale ~0: su P(más) casi no informa, manda la línea). El sesgo del directo (+30% en el más)
+es este mismo problema, no suerte de un día.
+
+`previa_juegos.py`: cada hora, previos de los partidos de hoy aún sin empezar (modelo, casa,
+ganador y todas las líneas de juegos; la última foto antes del pitido). `evaluar_juegos.py` los
+cruza con el resultado: modelo, modelo corregido con el historial y casa.
+
 ## Plan (en este orden)
 
 1. Ganador del partido, único mercado con cierre de Pinnacle.

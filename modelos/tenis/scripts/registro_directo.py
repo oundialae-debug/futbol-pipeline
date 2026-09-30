@@ -14,7 +14,8 @@ Escribe:
 - modelos/tenis/pronosticos/directo_api.md: la tabla de AHORA (se sobrescribe);
 - data/tenis/api_tennis/registro/<fecha>.csv: una fila por partido, mercado y línea, con
   prob. del modelo y cuota; el resultado final se cruza después para medir si acierta;
-- una vez por hora, data/tenis/api_tennis/resultados/<fecha>.csv (get_fixtures de hoy y ayer,
+- una vez por hora, los previos de los partidos por empezar (previa_juegos.py) y
+  data/tenis/api_tennis/resultados/<fecha>.csv (get_fixtures de hoy y ayer,
   2 peticiones más) y la evaluación en papel de la señal de juegos (evaluar_juegos.py).
 """
 import csv
@@ -42,6 +43,7 @@ def resultados(ahora):
     """Una vez por hora: partidos de hoy y de ayer (UTC) con su estado y juegos totales (2 peticiones
     get_fixtures), para cruzar con el registro (evaluar_juegos.py)."""
     os.makedirs(RES, exist_ok=True)
+    hoy = []
     for dia in (ahora - timedelta(days=1), ahora):
         f = f"{dia:%Y-%m-%d}"
         try:
@@ -61,6 +63,9 @@ def resultados(ahora):
                 w.writerow([p.get("event_key"), p.get("event_type_type"), p.get("tournament_name"),
                             p.get("event_first_player"), p.get("event_second_player"), p.get("event_status"),
                             p.get("event_final_result"), tot])
+        hoy = ps
+    import previa_juegos       # pronósticos previos de los que aún no han empezado (1 petición más)
+    previa_juegos.registrar(ahora, hoy)
 
 
 def main():
