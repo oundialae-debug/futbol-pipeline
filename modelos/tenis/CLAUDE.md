@@ -293,6 +293,16 @@ usuario (en fútbol la cuota como variable fue lo mejor). Ventana móvil
 - No se quita 2021 después de verlo. Es la versión a vigilar con partidos
   futuros, no un hallazgo.
 
+## Ventana corta para la mezcla (30/09/2026): no mejora
+
+Pregunta del usuario: entrenar con 3-4 años en vez de todo.
+`scripts/ventanas.py` -> `data/tenis/ventanas.md`, juzgado 2023-2026. Solo
+cambia con qué años se ajustan los 3 pesos de la mezcla (las puntuaciones de
+jugador ya olvidan solas). Todo lo anterior -1,72s / apuestas -0,08%;
+3 años -1,51s / -0,04% (igual); 2 años -0,54s / -0,93%; 1 año -0,23s /
+-1,14%. Más corto = pesos más ruidosos = más apuestas falsas. Mismo patrón
+que el peso por recencia en fútbol.
+
 ## Plan (en este orden)
 
 1. Ganador del partido, único mercado con cierre de Pinnacle.
