@@ -443,6 +443,26 @@ en tie-break se aplicaba la corrección de la "ventaja" (4-5 salía 4-3).
 punto a punto de Grand Slam (copia de Sackmann) y compararlo con cuotas en
 directo, que no tenemos.
 
+## Pronósticos en directo cada 5 minutos (30/09/2026)
+
+`scripts/registro_directo.py`, programado por `tenis_directo.yml` en **main**
+(autorizado por el usuario; trabaja sobre esta rama). Cada pasada: marcadores
+y cuotas en directo de API-Tennis; para cada partido individual en juego con
+los dos jugadores conocidos, calculadora desde el marcador EXACTO (sets,
+juegos, puntos, quién saca) con la fuerza del modelo de puntos
+(`data/tenis/estado_puntos_*.json`, foto de `estado_jugadores.py`: rehacerla
+de vez en cuando) en la superficie real (`get_draw`). Mercados en directo
+reconocidos: "To Win", "Total Games in Match", "Set Betting".
+- `pronosticos/directo_api.md`: tabla de ahora.
+- `data/tenis/api_tennis/registro/<fecha>.csv`: partido, marcador, mercado,
+  línea, cuota, prob. sin margen, prob. del modelo. **Falta cruzar el
+  resultado final para medir** calibración y rendimiento por mercado.
+- Primera lectura (30/09 10:19): en ATP/WTA/Challenger la calculadora
+  coincide con la cuota en ganador y sets (a pocos puntos); en total de
+  juegos el modelo da más "más de" que la casa (sesgo ya visto en Kalshi);
+  en ITF hay discrepancias grandes en ganador, donde el modelo es más flojo
+  (sin estadísticas jun-sep): no fiarse del modelo en ITF.
+
 ## Plan (en este orden)
 
 1. Ganador del partido, único mercado con cierre de Pinnacle.

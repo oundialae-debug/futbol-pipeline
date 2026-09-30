@@ -1137,6 +1137,15 @@ Para reactivar: descomentar el `schedule` de cada uno.
 el 29/09/2026 sus llamadas automáticas (~30/día con la Segunda, ~80/día con las 6 ligas).
 Cualquier llamada nueva o mayor necesita otro sí. Ver `modelos/ambos_marcan/CLAUDE.md`.
 
+## Tenis en directo cada 5 minutos (30/09/2026)
+
+`tenis_directo.yml` vive en **main** (GitHub solo programa desde la rama principal) pero
+trabaja y guarda en la rama de tenis `ccr-3c3cfe57-etcioo`. Autorizado por el usuario el
+30/09/2026: cada 5 minutos, 2 peticiones a API-Tennis (su cuenta, secreto `API_TENNIS_KEY`)
++ `get_draw` de torneos nuevos. NO es Highlightly. Escribe `modelos/tenis/pronosticos/directo_api.md`
+(tabla de ahora) y `data/tenis/api_tennis/registro/<fecha>.csv`. Detalle en
+`modelos/tenis/CLAUDE.md`. Para pararlo: comentar el `schedule` en main.
+
 ## NBA: descarga diaria gratis (28/09/2026)
 
 `nba_boxscore.yml` corre cada día a las 06:17 UTC desde `main`. Usa la misma clave,
