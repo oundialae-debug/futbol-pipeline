@@ -41,6 +41,17 @@ def jugador(circ, abreviado):
     return max(cands, key=lambda j: j["dia"]) if cands else None
 
 
+K_DIRECTO = 80   # puntos de saque que "vale" la previa; fijado antes de medir (30/09/2026)
+
+
+def saque_directo(p0, ganados, total, k=K_DIRECTO):
+    """Prob. de ganar el punto al saque mezclando la previa del modelo (p0) con lo que el jugador
+    lleva HOY (ganados de total puntos al saque). Con 0 puntos es la previa; con 80, mitad y mitad."""
+    if not total:
+        return p0
+    return (k * p0 + ganados) / (k + total)
+
+
 def prob_saque(circ, a, b, sup="Hard"):
     """Prob. de que a gane un punto sacando contra b (con la incertidumbre del modelo)."""
     v0, tau, v0s = ESTADO[circ]["params"]

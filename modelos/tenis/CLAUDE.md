@@ -505,6 +505,18 @@ cada 5 minutos y evaluar_juegos.py son los que dirán si acierta.
   frente a 0,257 del modelo y 0,236 de la casa, pero con 11 partidos de UNA mañana eso puede ser
   "hoy hubo pocos juegos", no aprendizaje: por eso el mínimo de 30.
 
+## Estadísticas del directo y modelo "con el saque de hoy" (30/09/2026)
+
+`get_livescore` trae `statistics` (periodo "match", por jugador): aces, dobles faltas, % primeros,
+puntos ganados al saque y al resto (x de y), break points salvados/convertidos, últimos 10 puntos
+(`api_tennis.estadisticas`). No viene en muchos ITF. El registro guarda todo eso por jugador
+(`aces1`, `saque_gan1`, `saque_tot1`...), la prob. al saque previa (`p_saque1/2`) y la mezclada
+con hoy (`p_saque1/2_directo` = (80·previa + ganados)/(80 + jugados), K=80 fijado sin mirar), y la
+prob. de cada mercado con las dos (`prob_modelo`, `prob_modelo_directo`). `calibrar_juegos.py`
+aprende de todas las líneas registradas con las tres entradas (modelo, casa, directo); la
+evaluación compara el Brier de las dos versiones. El vigilante usa la recalibrada solo si se
+activa (30+ partidos y mejora en validación por partidos).
+
 ## Plan (en este orden)
 
 1. Ganador del partido, único mercado con cierre de Pinnacle.

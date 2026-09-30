@@ -30,7 +30,12 @@ import pronosticos_api as Q  # noqa: E402
 REG = "data/tenis/api_tennis/registro"
 RES = "data/tenis/api_tennis/resultados"
 CAMPOS = ["hora", "event_key", "tipo", "torneo", "superficie", "jugador1", "jugador2", "sets", "juegos", "puntos",
-          "saca", "mercado", "linea", "seleccion", "cuota", "cuota_rival", "prob_mercado", "prob_modelo"]
+          "saca", "mercado", "linea", "seleccion", "cuota", "cuota_rival", "prob_mercado", "prob_modelo",
+          "prob_modelo_directo", "p_saque1", "p_saque2", "p_saque1_directo", "p_saque2_directo"]
+# lo que cada jugador lleva HOY (statistics de la API), para aprender de ello (calibrar_juegos.py)
+EST = ["aces", "df", "primer_pct", "saque_gan", "saque_tot", "resto_gan", "resto_tot", "bp_salvados_gan",
+       "bp_salvados_tot", "bp_convertidos_gan", "bp_convertidos_tot", "ultimos10"]
+CAMPOS += [f"{c}{lado}" for lado in ("1", "2") for c in EST]
 
 
 def resultados(ahora):
@@ -78,13 +83,22 @@ def main():
         pa, pb = K.redondear(Q.prob_saque(circ, a, b, sup)), K.redondear(Q.prob_saque(circ, b, a, sup))
         r = K.partido_desde(pa, pb, e["mejor_de"], e["sa"], e["sb"], e["ga"], e["gb"], e["a_saca"], e["xa"], e["xb"],
                             e["previos"])
+        # versión "directo": la prob. al saque se mezcla con lo que cada uno lleva hoy (se guardan las dos
+        # y la evaluación dirá cuál acierta más)
+        st = A.estadisticas(p)
+        pa2 = K.redondear(Q.saque_directo(pa, st["1"].get("saque_gan", 0), st["1"].get("saque_tot", 0)))
+        pb2 = K.redondear(Q.saque_directo(pb, st["2"].get("saque_gan", 0), st["2"].get("saque_tot", 0)))
+        r2 = r if (pa2, pb2) == (pa, pb) else K.partido_desde(pa2, pb2, e["mejor_de"], e["sa"], e["sb"], e["ga"], e["gb"],
+                                                             e["a_saca"], e["xa"], e["xb"], e["previos"])
         ev = vodds.get(str(p.get("event_key")), {}) if isinstance(vodds, dict) else {}
         mk = Q.mercados_directo(ev.get("live_odds"))
         base = {"hora": ahora.strftime("%Y-%m-%d %H:%M"), "event_key": p.get("event_key"),
                 "tipo": p.get("event_type_type"), "torneo": p.get("tournament_name"), "superficie": sup,
                 "jugador1": p.get("event_first_player"), "jugador2": p.get("event_second_player"),
                 "sets": f"{e['sa']}-{e['sb']}", "juegos": f"{e['ga']}-{e['gb']}", "puntos": p.get("event_game_result"),
-                "saca": {True: 1, False: 2}.get(e["a_saca"], "")}
+                "saca": {True: 1, False: 2}.get(e["a_saca"], ""),
+                "p_saque1": pa, "p_saque2": pb, "p_saque1_directo": pa2, "p_saque2_directo": pb2,
+                **{f"{c}{lado}": st[lado].get(c, "") for lado in ("1", "2") for c in EST}}
         gan = tot = None
         mejor_tot = None
         for (n, h), tipos in mk.items():
@@ -94,14 +108,16 @@ def main():
                     v = list(tipos.values())
                 gan = Q.sin_margen(v[0], v[1])
                 filas.append({**base, "mercado": "ganador", "linea": "", "seleccion": "jugador1", "cuota": v[0],
-                              "cuota_rival": v[1], "prob_mercado": gan, "prob_modelo": r["gana_A"]})
+                              "cuota_rival": v[1], "prob_mercado": gan, "prob_modelo": r["gana_A"],
+                              "prob_modelo_directo": r2["gana_A"]})
             elif n == "Total Games in Match" and "Over" in tipos and "Under" in tipos:
                 linea = float(h)
                 pm = sum(x for k, x in r["total"].items() if k > linea)
                 pk = Q.sin_margen(tipos["Over"], tipos["Under"])
                 filas.append({**base, "mercado": "total_juegos", "linea": linea, "seleccion": "mas",
                               "cuota": tipos["Over"], "cuota_rival": tipos["Under"], "prob_mercado": pk,
-                              "prob_modelo": pm})
+                              "prob_modelo": pm,
+                              "prob_modelo_directo": sum(x for k, x in r2["total"].items() if k > linea)})
                 if pk is not None and (mejor_tot is None or abs(pk - 0.5) < abs(mejor_tot[1] - 0.5)):
                     mejor_tot = (linea, pk, pm)
             elif n == "Set Betting" and tipos:
@@ -113,12 +129,15 @@ def main():
                         continue
                     ab = tuple(int(y) for y in kk.split(":"))
                     filas.append({**base, "mercado": "sets", "linea": kk, "seleccion": kk, "cuota": x,
-                                  "cuota_rival": "", "prob_mercado": inv[k] / s, "prob_modelo": r["sets"].get(ab, 0)})
+                                  "cuota_rival": "", "prob_mercado": inv[k] / s, "prob_modelo": r["sets"].get(ab, 0),
+                                  "prob_modelo_directo": r2["sets"].get(ab, 0)})
         sets = sorted(r["sets"].items(), key=lambda kv: -kv[1])[:2]
         tabla.append((p, e, sup, r, gan, mejor_tot, sets))
     # registro
     os.makedirs(REG, exist_ok=True)
     ruta = f"{REG}/{ahora:%Y-%m-%d}.csv"
+    if os.path.exists(ruta) and open(ruta).readline().strip().split(",") != CAMPOS:
+        ruta = f"{REG}/{ahora:%Y-%m-%d}_v2.csv"         # columnas nuevas (30/09): fichero aparte ese día
     nuevo = not os.path.exists(ruta)
     with open(ruta, "a", newline="") as fh:
         w = csv.DictWriter(fh, fieldnames=CAMPOS)

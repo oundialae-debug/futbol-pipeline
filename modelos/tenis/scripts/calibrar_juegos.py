@@ -4,8 +4,10 @@ El modelo de juegos en directo APRENDE de lo que se va recogiendo (30/09/2026, p
 Cada línea de total de juegos del registro de 5 minutos (data/tenis/api_tennis/registro/) con el
 partido ya terminado (resultados/) es un ejemplo: prob. del modelo, prob. de la casa (sin margen)
 y si hubo más juegos que la línea. Con eso se ajusta una recalibración logística:
-    p_nueva = sigmoide(a + b·logit(p_modelo) + c·logit(p_casa))
-que corrige el sesgo conocido (el modelo exagera el "más") y aprende cuánto fiarse de la casa.
+    p_nueva = sigmoide(a + b·logit(p_modelo) + c·logit(p_casa) + d·logit(p_modelo_directo))
+que corrige el sesgo conocido (el modelo exagera el "más"), aprende cuánto fiarse de la casa y
+cuánto de la versión "directo" (saque mezclado con lo que cada jugador lleva hoy). Aprende de
+TODAS las líneas de TODOS los partidos registrados, no solo de los avisos.
 
 Disciplina (CLAUDE.md): cada partido pesa lo mismo (sus líneas y pasadas ganan y pierden juntas),
 y la recalibración solo se ACTIVA si, validada por partidos que no vio (5 bloques por partido),
@@ -44,6 +46,9 @@ def datos():
     d = d[d.mercado == "total_juegos"].dropna(subset=["prob_mercado", "prob_modelo"])
     d = d.merge(res[["event_key", "juegos_totales"]], on="event_key")
     d = d.dropna(subset=["juegos_totales"])
+    if "prob_modelo_directo" not in d:
+        d["prob_modelo_directo"] = np.nan
+    d["prob_modelo_directo"] = d.prob_modelo_directo.fillna(d.prob_modelo)   # filas viejas: sin versión directo
     d["y"] = (d.juegos_totales.astype(float) > d.linea.astype(float)).astype(float)
     d["w"] = 1 / d.groupby("event_key").event_key.transform("size")
     return d
@@ -62,7 +67,7 @@ def _ajustar(X, y, w, l2=1.0, it=50):
 
 
 def _X(d):
-    return np.column_stack([_logit(d.prob_modelo), _logit(d.prob_mercado)])
+    return np.column_stack([_logit(d.prob_modelo), _logit(d.prob_mercado), _logit(d.prob_modelo_directo)])
 
 
 def ajustar():
@@ -84,6 +89,7 @@ def ajustar():
             return float(np.sum(w * (np.asarray(p, float) - d.y.values) ** 2))
         info["brier_modelo"] = brier(d.prob_modelo)
         info["brier_casa"] = brier(d.prob_mercado)
+        info["brier_modelo_directo"] = brier(d.prob_modelo_directo)
         info["brier_recalibrado_cv"] = brier(cal)
         info["sesgo_modelo_mas"] = float(np.sum(w * (d.prob_modelo.astype(float) - d.y.values)))
         b = _ajustar(_X(d), d.y.values, d.w.values)
@@ -101,12 +107,13 @@ def cargar():
         return {"activo": False}
 
 
-def aplicar(info, p_modelo, p_casa):
+def aplicar(info, p_modelo, p_casa, p_directo=None):
     """Prob. del 'más' recalibrada; si la recalibración no está activa, la del modelo tal cual."""
-    if not info.get("activo") or not info.get("coef"):
+    if not info.get("activo") or not info.get("coef") or len(info["coef"]) != 4:
         return p_modelo
-    a, b, c = info["coef"]
-    return float(_sig(a + b * _logit(p_modelo) + c * _logit(p_casa)))
+    a, b, c, e = info["coef"]
+    p_directo = p_modelo if p_directo is None else p_directo
+    return float(_sig(a + b * _logit(p_modelo) + c * _logit(p_casa) + e * _logit(p_directo)))
 
 
 if __name__ == "__main__":

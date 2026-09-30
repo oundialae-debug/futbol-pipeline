@@ -58,13 +58,13 @@ def escalera(k, linea, lado):
     """Otras líneas cercanas: la casa mueve la línea en cuanto se juega un juego, y cuando el usuario
     llega a Luckia puede estar ya en otra. Para cada una, prob. del modelo / de la casa (si la API
     la da) y cuota mínima; sin precio de la casa, la mínima sale del modelo (menos fiable en el más)."""
-    tot, casa, out = TOTALES.get(k, {}), CASA.get(k, {}), []
+    (tot, tot2), casa, out = TOTALES.get(k, ({}, {})), CASA.get(k, {}), []
     for d in (-2, -1, 1, 2):
         ln = linea + d
         pc = casa.get(ln)
         mo = sum(x for g, x in tot.items() if g > ln)
         if pc is not None:
-            mo = C.aplicar(CAL, mo, pc)
+            mo = C.aplicar(CAL, mo, pc, sum(x for g, x in tot2.items() if g > ln))
         mo = mo if lado == "más" else 1 - mo
         pc = None if pc is None else (pc if lado == "más" else 1 - pc)
         ref = pc if pc else mo
@@ -129,7 +129,12 @@ def lineas():
         pa, pb = K.redondear(Q.prob_saque(circ, a, b, sup)), K.redondear(Q.prob_saque(circ, b, a, sup))
         r = K.partido_desde(pa, pb, e["mejor_de"], e["sa"], e["sb"], e["ga"], e["gb"], e["a_saca"], e["xa"], e["xb"],
                             e["previos"])
-        TOTALES[p.get("event_key")] = r["total"]
+        st = A.estadisticas(p)
+        pa2 = K.redondear(Q.saque_directo(pa, st["1"].get("saque_gan", 0), st["1"].get("saque_tot", 0)))
+        pb2 = K.redondear(Q.saque_directo(pb, st["2"].get("saque_gan", 0), st["2"].get("saque_tot", 0)))
+        r2 = r if (pa2, pb2) == (pa, pb) else K.partido_desde(pa2, pb2, e["mejor_de"], e["sa"], e["sb"], e["ga"], e["gb"],
+                                                             e["a_saca"], e["xa"], e["xb"], e["previos"])
+        TOTALES[p.get("event_key")] = (r["total"], r2["total"])
         CASA[p.get("event_key")] = {float(h): Q.sin_margen(t["Over"], t["Under"]) for (_, h), t in mk.items()}
         for (_, h), t in mk.items():
             ln = float(h)
@@ -139,7 +144,8 @@ def lineas():
                           "cuota": t["Over"], "cuota_rival": t["Under"],
                           "prob_mercado": Q.sin_margen(t["Over"], t["Under"]),
                           "prob_modelo": C.aplicar(CAL, sum(x for k, x in r["total"].items() if k > ln),
-                                                   Q.sin_margen(t["Over"], t["Under"]))})
+                                                   Q.sin_margen(t["Over"], t["Under"]),
+                                                   sum(x for k, x in r2["total"].items() if k > ln))})
     return J.principales(pd.DataFrame(filas)) if filas else pd.DataFrame()
 
 

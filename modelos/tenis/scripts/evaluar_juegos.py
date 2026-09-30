@@ -97,7 +97,8 @@ def main():
             f"Partidos resueltos: {cal['partidos']} ({cal['filas']} líneas). Activa: **{'sí' if cal['activo'] else 'no'}** "
             f"(hace falta {C.MIN_PARTIDOS}+ partidos y que mejore al modelo en partidos que no vio)."]
     if cal.get("coef"):
-        lin.append(f"Brier (menor es mejor): modelo {cal['brier_modelo']:.4f}, casa {cal['brier_casa']:.4f}, "
+        lin.append(f"Brier (menor es mejor): modelo {cal['brier_modelo']:.4f}, modelo con el saque de hoy "
+                   f"{cal['brier_modelo_directo']:.4f}, casa {cal['brier_casa']:.4f}, "
                    f"recalibrado (validado por partidos) {cal['brier_recalibrado_cv']:.4f}. "
                    f"Sesgo del modelo hacia el más: {cal['sesgo_modelo_mas']:+.1%}.")
     open(SAL, "w").write("\n".join(lin) + "\n")

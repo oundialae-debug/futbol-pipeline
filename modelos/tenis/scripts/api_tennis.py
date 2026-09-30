@@ -103,6 +103,31 @@ def estado(p):
             "previos": (ja, jb), "mejor_de": mejor_de(p)}
 
 
+# estadísticas del partido en curso (campo statistics de get_livescore, periodo "match"): nombre API -> columna
+ESTAD = {"Aces": "aces", "Double Faults": "df", "1st serve percentage": "primer_pct",
+         "Service Points Won": "saque", "Return Points Won": "resto", "Break Points Saved": "bp_salvados",
+         "Break Points Converted": "bp_convertidos", "Last 10 balls": "ultimos10"}
+
+
+def estadisticas(p):
+    """{'1': {...}, '2': {...}} con lo que va haciendo cada jugador HOY. Los que son 'x de y' dan
+    col_gan y col_tot; los demás, el número. Vacío si la API no trae estadísticas (muchos ITF)."""
+    lados = {str(p.get("first_player_key")): "1", str(p.get("second_player_key")): "2"}
+    out = {"1": {}, "2": {}}
+    for st in p.get("statistics") or []:
+        lado, col = lados.get(str(st.get("player_key"))), ESTAD.get(st.get("stat_name"))
+        if lado is None or col is None or st.get("stat_period") != "match":
+            continue
+        if st.get("stat_total") not in (None, ""):
+            out[lado][col + "_gan"], out[lado][col + "_tot"] = int(st["stat_won"]), int(st["stat_total"])
+        else:
+            try:
+                out[lado][col] = float(str(st.get("stat_value", "")).rstrip("%"))
+            except ValueError:
+                pass
+    return out
+
+
 def partidos_dia(fecha):
     return _pedir("get_fixtures", date_start=fecha, date_stop=fecha)
 
