@@ -319,7 +319,16 @@ log-loss y elegir "solo ATP" ahora sería elegir tras mirar 8 grupos.
 futuros:** mezcla cuota + Elo + puntos ajustada solo con ATP, apostar
 cuando p·cuota − 1 > 0.
 
-## Kalshi: qué mercado tiene el precio más flojo (30/09/2026, parcial)
+## Kalshi: qué mercado tiene el precio más flojo (30/09/2026, completo)
+
+**ITF (añadido al terminar la descarga):** hombres 3.760 partidos, mujeres
+2.394. Precio bien calibrado (pendiente 0,94 y 0,96, sin sesgo
+significativo), pero poco líquido: solo el 38-51% tiene precio 4 h antes y
+el diferencial mediano es 4 céntimos. A ciegas, favorito -3,0%/-5,2%,
+marginado -16,5%/-15,5%. Challenger ATP: pendiente 1,16 (+1,38s, no
+significativo), 38% con precio. **Ningún nivel de Kalshi tiene el precio
+torcido en el ganador; lo único torcido son los juegos ATP, y son caros.**
+
 
 `scripts/calibracion_kalshi.py` -> `data/tenis/calibracion_kalshi.md` y
 `scripts/kalshi_puntos.py` -> `data/tenis/kalshi_puntos.md`. Foto a cierre -
