@@ -77,6 +77,12 @@ def estado(p):
             sa, sb, ja, jb = sa + (a > b), sb + (b > a), ja + a, jb + b
         elif int(s.get("score_set", 0)) == actual:
             ga, gb = a, b
+    # marcador imposible para un set EN JUEGO (p. ej. 4-6 con el juego en 30-0: la API a veces muestra
+    # el set como acabado antes de pasar al siguiente). Con eso el cálculo daba el partido por terminado
+    # y un "menos" al 100% (aviso Staeheli-Andrade, 30/09). Ante la duda, no se usa.
+    alto, bajo = max(ga, gb), min(ga, gb)
+    if alto > 7 or (alto == 7 and bajo < 5) or (alto >= 6 and alto - bajo >= 2):
+        return None
     partes = [x.strip() for x in str(p.get("event_game_result", "0 - 0")).split("-")]
     en_tb = ga == 6 and gb == 6
     try:
