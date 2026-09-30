@@ -1,4 +1,4 @@
-# Tenis en directo, 30/09/2026 16:03 UTC (18:03 en España)
+# Tenis en directo, 30/09/2026 16:21 UTC (18:21 en España)
 
 Calculadora desde el marcador exacto (modelo de puntos, superficie real) frente a la cuota en directo
 (sin margen). Ganador y sets: la calculadora suele coincidir con la casa. Total de juegos: el modelo
@@ -7,19 +7,22 @@ Se actualiza cada ~5 min; el registro en data/tenis/api_tennis/registro/ servir�
 
 | partido | tipo | superficie | marcador (sets, juegos, puntos, saca) | gana 1º: modelo / cuota | sets más probables (modelo) | total juegos: línea, modelo / cuota |
 |---|---|---|---|---|---|---|
-| A. Fenty vs D. Dietrich | Challenger Men Singles | Hard | 0-0, 5-5, 30 - 30, saca A. Fenty | 20% / 23% | 0-2 49%, 1-2 31% | 24.5: 59% / 54% |
-| S. Heredia vs J. E. Schiessl | Challenger Men Singles | Clay | 0-1, 0-0, 0 - 15, saca J. E. Schiessl | 16% /  | 0-2 62%, 1-2 23% |  |
-| L. Jeanjean vs M. Ercan | Challenger Women Singles | Hard | 0-0, 3-5, 0 - 0, saca L. Jeanjean | 54% / 65% | 2-1 43%, 0-2 27% | 26.5: 53% / 49% |
-| M. Mesarovic vs D. Bobo | Itf Men Singles | Hard | 1-0, 4-5, 15 - 15, saca M. Mesarovic | 88% / 79% | 2-0 54%, 2-1 33% |  |
-| C. Stanke vs R. Nijboer | Itf Men Singles | Clay | 0-1, 0-3, 0 - 0, saca C. Stanke | 1% /  | 0-2 95%, 1-2 4% |  |
-| H. Lieberman vs N. Djosic | Itf Men Singles | Hard | 0-0, 3-5, A - 40, saca N. Djosic | 39% / 31% | 0-2 37%, 2-1 27% |  |
-| F. K. Solheim vs O. Pieczkowski | Itf Men Singles | Hard | 0-0, 4-3, 40 - A, saca O. Pieczkowski | 8% / 12% | 0-2 64%, 1-2 28% |  |
-| A. Harazaki vs J. Braswell | Itf Men Singles | Hard | 0-0, 3-4, 15 - 15, saca J. Braswell | 65% / 56% | 2-1 43%, 2-0 22% |  |
-| S. Rozin vs N. Schlagenhauf | Itf Men Singles | Hard | 1-0, 0-0, 15 - 0, saca S. Rozin | 76% / 89% | 2-0 52%, 1-2 24% |  |
-| G. Kawano Cho vs D. Bhatia | Itf Women Singles | Hard | 0-1, 5-2, 40 - 40, saca G. Kawano Cho | 35% / 62% | 1-2 59%, 2-1 35% |  |
-| A. S. Sanchez vs C. C. Sosa | Itf Women Singles | Hard | 0-0, 3-2, A - 40, saca A. S. Sanchez | 94% / 98% | 2-0 74%, 2-1 20% |  |
-| T. Sfilio vs M. Bulbarella | Itf Women Singles | Hard | 0-0, 0-1, 40 - A, saca T. Sfilio | 91% / 8% | 2-0 61%, 2-1 30% |  |
-| C. Moreno vs M. Sholokhova | Itf Women Singles | Hard | 1-1, 2-2, 15 - 30, saca C. Moreno | 23% / 44% | 1-2 77%, 2-1 23% |  |
-| R. Caballero Chica vs S. Lam | Itf Women Singles | Hard | 1-0, 3-0, 40 - 40, saca S. Lam | 86% / 89% | 2-0 77%, 1-2 14% |  |
-| K. Chiarello vs S. Djoubri | Itf Women Singles | Hard | 0-0, 0-0, 0 - 0, saca S. Djoubri | 70% / 39% | 2-0 41%, 2-1 29% |  |
-| A. Sedysheva vs A. L. Popovic | Itf Women Singles | Hard | 1-1, 0-0, 0 - 0, saca A. L. Popovic | 36% / 58% | 1-2 64%, 2-1 36% |  |
+| A. Fenty vs D. Dietrich | Challenger Men Singles | Hard | 0-1, 0-0, 40 - A, saca A. Fenty | 5% / 7% | 0-2 81%, 1-2 14% | 21.5: 68% / 54% |
+| S. Heredia vs J. E. Schiessl | Challenger Men Singles | Clay | 0-1, 1-2, 40 - 40, saca S. Heredia | 14% /  | 0-2 66%, 1-2 20% |  |
+| M. Echargui vs D. Dzumhur | Challenger Men Singles | Hard | 0-0, 2-1, 0 - 15, saca D. Dzumhur | 33% / 44% | 0-2 36%, 1-2 30% | 22.5: 59% / 50% |
+| L. Jeanjean vs M. Ercan | Challenger Women Singles | Hard | 0-1, 1-1, 0 - 0, saca M. Ercan | 46% / 50% | 2-1 46%, 0-2 33% | 26.5: 55% / 50% |
+| F. K. Solheim vs O. Pieczkowski | Itf Men Singles | Hard | 0-1, 0-1, 0 - 30, saca O. Pieczkowski | 0% / 4% | 0-2 96%, 1-2 3% |  |
+| C. Stanke vs R. Nijboer | Itf Men Singles | Clay | 0-1, 2-5, 0 - 0, saca C. Stanke | 1% /  | 0-2 97%, 1-2 2% |  |
+| H. Lieberman vs N. Djosic | Itf Men Singles | Hard | 0-1, 1-2, 0 - 0, saca N. Djosic | 16% / 13% | 0-2 70%, 2-1 16% |  |
+| A. Harazaki vs J. Braswell | Itf Men Singles | Hard | 0-1, 0-0, 0 - 0, saca A. Harazaki | 53% / 44% | 2-1 53%, 0-2 27% |  |
+| S. Rozin vs N. Schlagenhauf | Itf Men Singles | Hard | 1-0, 4-1, 0 - 0, saca N. Schlagenhauf | 95% / 95% | 2-0 90%, 1-2 5% |  |
+| G. Kawano Cho vs D. Bhatia | Itf Women Singles | Hard | 1-1, 1-0, 0 - 0, saca G. Kawano Cho | 57% / 72% | 2-1 57%, 1-2 43% |  |
+| A. S. Sanchez vs C. C. Sosa | Itf Women Singles | Hard | 1-0, 0-0, 15 - 0, saca C. C. Sosa | 97% /  | 2-0 83%, 2-1 13% |  |
+| T. Sfilio vs M. Bulbarella | Itf Women Singles | Hard | 0-0, 1-2, 40 - 40, saca T. Sfilio | 91% / 8% | 2-0 63%, 2-1 28% |  |
+| C. Moreno vs M. Sholokhova | Itf Women Singles | Hard | 1-1, 5-2, 0 - 0, saca M. Sholokhova | 84% / 91% | 2-1 84%, 1-2 16% |  |
+| R. Caballero Chica vs S. Lam | Itf Women Singles | Hard | 1-0, 5-2, 0 - 0, saca S. Lam | 93% / 91% | 2-0 90%, 1-2 7% |  |
+| R. M. Nijkamp vs A. Xu | Itf Women Singles | Hard | 0-0, 0-1, 0 - 15, saca R. M. Nijkamp | 45% / 47% | 0-2 30%, 2-1 26% |  |
+| K. Paskauskas vs A. Das | Itf Women Singles | Hard | 0-0, 0-1, 0 - 0, saca K. Paskauskas | 30% / 50% | 0-2 42%, 1-2 28% |  |
+| M. Refaat vs A. Soulie | Itf Women Singles | Hard | 0-0, 1-2, 15 - 0, saca M. Refaat | 44% / 65% | 0-2 30%, 1-2 26% |  |
+| K. Chiarello vs S. Djoubri | Itf Women Singles | Hard | 0-0, 0-3, 40 - 30, saca K. Chiarello | 54% / 25% | 2-1 36%, 0-2 26% |  |
+| A. Sedysheva vs A. L. Popovic | Itf Women Singles | Hard | 1-1, 1-3, 15 - 30, saca A. L. Popovic | 12% / 21% | 1-2 88%, 2-1 12% |  |
