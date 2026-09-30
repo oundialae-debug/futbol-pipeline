@@ -123,3 +123,14 @@ carpeta se apunta aquí.
   (`diseno_nuevo/`, https://claude.ai/artifact/5i65iCH12v7HmM1oSY7R8K) como
   base de la app. Las tres direcciones de `diseno_direcciones/` quedan
   descartadas (se conservan como referencia).
+
+## 30/09/2026: nombre 2yellow y logotipo
+
+- **Qué:** nombre elegido por el usuario: **2yellow**. Logotipo: dos tarjetas
+  amarillas que se solapan; donde se cruzan, roja (dos amarillas = roja).
+  Palabra «2yellow» con el «2» en amarillo. Hoja de logo (`Logo.dc.html`:
+  versión grande, icono de app, sobre amarillo, tamaños pequeños, sobre claro,
+  solo palabra y colores) y logo puesto en la cabecera de `Main.dc.html`.
+- **Ficheros:** `diseno_nuevo/generador/logo.py` (el logo en un sitio),
+  `s1.py`, `s4_logo.py` y los `.dc.html` generados. Nombre sin comprobar como
+  marca ni dominio.
