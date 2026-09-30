@@ -1,0 +1,2 @@
+hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cuota_api,calibrado
+2026-09-30 12:43,12166526,Atp Singles,Beijing,N. Borges,N. Djokovic,menos,22.5,0.5886,0.5889,1.571,False
