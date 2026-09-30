@@ -1,0 +1,35 @@
+name: Vigilante tenis (juegos, aviso al móvil)
+
+# Autorizado por el usuario el 30/09/2026. Cada 2 minutos mira el directo en API-Tennis (secreto
+# API_TENNIS_KEY, 2 peticiones por pasada) y avisa al móvil por ntfy cuando el modelo Y la casa dan
+# más del 54% al mismo lado del total de juegos durante 2 pasadas seguidas. Cada ejecución dura
+# ~5h45; se lanza cada hora y la siguiente espera en cola (una sola a la vez). El código vive en
+# la rama de tenis ccr-3c3cfe57-etcioo (modelos/tenis/scripts/vigilante_juegos.py).
+# Para pararlo: comentar el schedule o borrar este fichero de main.
+on:
+  schedule:
+    - cron: '7 * * * *'
+  workflow_dispatch:
+
+concurrency:
+  group: vigilante-tenis
+  cancel-in-progress: false
+
+jobs:
+  vigilar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 355
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ccr-3c3cfe57-etcioo
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install requests pandas
+      - name: Vigilar
+        env:
+          API_TENNIS_KEY: ${{ secrets.API_TENNIS_KEY }}
+          NTFY_TOPIC: tenis-f059172b4dc7
+          MINUTOS: '345'
+        run: python -u modelos/tenis/scripts/vigilante_juegos.py
