@@ -221,3 +221,16 @@ carpeta se apunta aquí.
 - **Por qué:** comentario del usuario en el lienzo.
 - **Ficheros:** `diseno_nuevo/generador/s5b_real.py`, `project/Stats.dc.html`,
   `project/canvas.json`. Sin API.
+
+## 30/09/2026: nota media de cada once contra sus últimos 10
+
+- **Qué:** en alineaciones, nota media del once de cada equipo y diferencia
+  con la media de sus 10 partidos de liga anteriores (Atlético 6,91 frente a
+  7,06; Madrid 6,95 frente a 7,13). Cada jugador lleva ▲/▼ si su nota se aleja
+  0,3 o más de su media de los 10 anteriores (solo con 5+ partidos previos).
+- **Por qué:** comentario del usuario en el lienzo.
+- **Datos:** `datos_extra.py` añade `notas_once` (solo partidos anteriores al
+  del informe; media del once solo con 9+ notas). Sin API.
+- **Ficheros:** `datos_extra.py`, `datos_extra.json`,
+  `diseno_nuevo/generador/s5b_real.py`, `project/Alineacion.dc.html`,
+  `project/canvas.json`.

@@ -3057,5 +3057,118 @@
     "Tackles": 16.6
    }
   }
+ },
+ "notas_once": {
+  "equipos": {
+   "Atlético Madrid": {
+    "hoy": 6.91,
+    "media10": 7.06,
+    "n": 10,
+    "dif": -0.15
+   },
+   "Real Madrid": {
+    "hoy": 6.95,
+    "media10": 7.13,
+    "n": 10,
+    "dif": -0.18
+   }
+  },
+  "jugadores": {
+   "J. Oblak": {
+    "media10": 7.1,
+    "dif": -0.79,
+    "n": 10
+   },
+   "D. Hancko": {
+    "media10": 6.91,
+    "dif": 0.59,
+    "n": 10
+   },
+   "Marc Pubill": {
+    "media10": 6.97,
+    "dif": -0.11,
+    "n": 10
+   },
+   "Marcos Llorente": {
+    "media10": 6.88,
+    "dif": -0.33,
+    "n": 10
+   },
+   "Álex Grimaldo": {
+    "media10": 6.98,
+    "dif": -0.38,
+    "n": 5
+   },
+   "Johnny Cardoso": {
+    "media10": 6.85,
+    "dif": -0.3,
+    "n": 10
+   },
+   "Álex Baena": {
+    "media10": 7.38,
+    "dif": -0.48,
+    "n": 10
+   },
+   "Giuliano Simeone": {
+    "media10": 6.77,
+    "dif": 0.48,
+    "n": 10
+   },
+   "Kang-in Lee": {
+    "media10": 7.46,
+    "dif": -0.58,
+    "n": 6
+   },
+   "Thibaut Courtois": {
+    "media10": 6.89,
+    "dif": 1.81,
+    "n": 10
+   },
+   "Marc Cucurella": {
+    "media10": 6.75,
+    "dif": -0.4,
+    "n": 5
+   },
+   "D. Huijsen": {
+    "media10": 7.33,
+    "dif": -1.07,
+    "n": 10
+   },
+   "Ibrahima Konaté": {
+    "media10": 6.85,
+    "dif": 0.42,
+    "n": 5
+   },
+   "Aurélien Tchouaméni": {
+    "media10": 7.11,
+    "dif": -0.24,
+    "n": 10
+   },
+   "Federico Valverde": {
+    "media10": 7.1,
+    "dif": -0.17,
+    "n": 10
+   },
+   "Vinícius Júnior": {
+    "media10": 7.35,
+    "dif": -0.6,
+    "n": 10
+   },
+   "J. Bellingham": {
+    "media10": 7.7,
+    "dif": -0.5,
+    "n": 10
+   },
+   "A. Güler": {
+    "media10": 7.43,
+    "dif": -0.52,
+    "n": 10
+   },
+   "Kylian Mbappé": {
+    "media10": 7.62,
+    "dif": -0.68,
+    "n": 10
+   }
+  }
  }
 }

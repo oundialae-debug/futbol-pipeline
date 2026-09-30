@@ -272,6 +272,7 @@ page("Stats.dc.html", "Match stats", 390, 3090, raiz(3090, cabecera("Stats", Tru
 
 # ---------------------------------------------------------------- alineaciones reales
 A = D["alineaciones_informe"]
+NO = DX["notas_once"]
 
 
 def rc(n):
@@ -304,10 +305,13 @@ def dibuja(lineas, arriba, color):
             sy = 3 + d * 44 if arriba else 97 - d * 44
             bg, fg, t = rc(p["nota"])
             nombre = apellido(p["jugador"])
-            out += (f'<div style="position: absolute; left: {sx:.1f}%; top: {sy:.1f}%; width: 76px; margin-left: -38px; margin-top: -18px; display: flex; flex-direction: column; align-items: center; gap: 2px">'
+            fj = NO["jugadores"].get(p["jugador"])
+            if fj and abs(fj["dif"]) >= 0.3:
+                nombre = (f'<span style="color: {LIMA if fj["dif"] > 0 else NARANJA}">{"▲" if fj["dif"] > 0 else "▼"}</span> ' + nombre)
+            out += (f'<div style="position: absolute; left: {sx:.1f}%; top: {sy:.1f}%; width: 92px; margin-left: -46px; margin-top: -18px; display: flex; flex-direction: column; align-items: center; gap: 2px">'
                     f'<div style="position: relative; width: 28px; height: 28px"><span style="width: 28px; height: 28px; border-radius: 50%; background: {color["c1"] if color.get("una") else "linear-gradient(90deg, " + color["c1"] + " 0 50%, " + color["c2"] + " 50% 100%)"}; display: block; box-shadow: 0 0 0 2px {color["c2"] if color.get("una") else color["c1"]}, 0 0 0 3px rgba(0,0,0,0.6)"></span>'
                     f'<span style="position: absolute; right: -18px; top: -7px; padding: 1px 5px; border-radius: 7px; background: {bg}; color: {fg}; font-size: 10px; font-weight: 800">{t}</span></div>'
-                    f'<span style="max-width: 76px; overflow: hidden; text-overflow: ellipsis; font-size: 10.5px; font-weight: 700; white-space: nowrap; text-shadow: 0 1px 2px #000">{nombre}</span></div>')
+                    f'<span style="max-width: 92px; overflow: hidden; text-overflow: ellipsis; font-size: 10.5px; font-weight: 700; white-space: nowrap; text-shadow: 0 1px 2px #000">{nombre}</span></div>')
     return out
 
 
@@ -319,12 +323,26 @@ CAMPO = f'''<section style="margin: 0 12px; position: relative; height: 620px; b
 <div style="position: absolute; left: 50%; bottom: 14px; width: 156px; height: 66px; margin-left: -78px; border: 2px solid #25392E; border-bottom: none"></div>
 {dibuja(A["local"]["lineas"], True, KA)}{dibuja(A["visitante"]["lineas"], False, KB)}
 </section>'''
-FORM = f'''<div style="display: flex; justify-content: space-between; align-items: center; padding: 0 16px">
-<div style="display: flex; align-items: center; gap: 8px">{franjas(KA)}<span style="font-size: 14px; font-weight: 700">Atlético</span>{chip(A["local"]["formacion"])}</div>
-<div style="display: flex; align-items: center; gap: 8px">{chip(A["visitante"]["formacion"])}<span style="font-size: 14px; font-weight: 700">Real Madrid</span>{franjas(KB)}</div></div>'''
+
+
+def media_eq(n, k, lado):
+    x = NO["equipos"][n]
+    d = x["dif"]
+    col = LIMA if d >= 0.1 else (NARANJA if d <= -0.1 else SOFT)
+    flecha = "▲" if d >= 0.1 else ("▼" if d <= -0.1 else "=")
+    dir_ = "row" if lado == "i" else "row-reverse"
+    return (f'<div style="flex: 1 1 0; min-width: 0; padding: 10px 12px; border-radius: 16px; background: {CARD}; border: 1px solid {BORDE}; display: flex; flex-direction: column; gap: 4px; align-items: {"flex-start" if lado == "i" else "flex-end"}">'
+            f'<div style="display: flex; align-items: center; gap: 8px; flex-direction: {dir_}">{franjas(k)}<span style="font-size: 14px; font-weight: 700; white-space: nowrap">{eq(n)[0]}</span></div>'
+            f'<div style="display: flex; align-items: baseline; gap: 6px; flex-direction: {dir_}"><span style="{DISP}; font-size: 28px; line-height: 1; color: {k["barra"]}">{x["hoy"]:.2f}</span>'
+            f'<span style="font-size: 11px; color: {MUT}">avg · {A["local" if lado == "i" else "visitante"]["formacion"]}</span></div>'
+            f'<span style="font-size: 12px; font-weight: 700; color: {col}; white-space: nowrap">{flecha} {abs(d):.2f} vs last 10 <span style="font-weight: 500; color: {MUT}">({x["media10"]:.2f})</span></span></div>')
+
+
+FORM = (f'<div style="display: flex; gap: 8px; padding: 0 12px">' + media_eq("Atlético Madrid", KA, "i") + media_eq("Real Madrid", KB, "d") + '</div>')
 LEY = f'''<div style="display: flex; gap: 14px; padding: 0 16px; font-size: 11px; color: {MUT}; align-items: center"><span style="font-weight: 700; color: {TXT}">Rating</span>
 <span style="display: flex; align-items: center; gap: 5px"><span style="padding: 1px 7px; border-radius: 8px; background: {LIMA}; color: {BG}; font-weight: 800">7.5+</span>strong</span>
 <span style="display: flex; align-items: center; gap: 5px"><span style="padding: 1px 7px; border-radius: 8px; background: #3A4256; color: #FFFFFF; font-weight: 800">6.5</span>fine</span>
-<span style="display: flex; align-items: center; gap: 5px"><span style="padding: 1px 7px; border-radius: 8px; background: {NARANJA}; color: {BG}; font-weight: 800">&lt;6.5</span>weak</span></div>'''
-page("Alineacion.dc.html", "Lineups", 390, 1010, raiz(1010, cabecera("Lineups", True) + FORM + CAMPO + LEY), JS0, nav_active="m")
+<span style="display: flex; align-items: center; gap: 5px"><span style="padding: 1px 7px; border-radius: 8px; background: {NARANJA}; color: {BG}; font-weight: 800">&lt;6.5</span>weak</span></div>
+<div style="display: flex; gap: 14px; padding: 0 16px; font-size: 11px; color: {MUT}"><span><b style="color: {LIMA}">▲</b> <b style="color: {NARANJA}">▼</b> vs his last 10 games</span></div>'''
+page("Alineacion.dc.html", "Lineups", 390, 1110, raiz(1110, cabecera("Lineups", True) + FORM + CAMPO + LEY), JS0, nav_active="m")
 print("s5b ok")

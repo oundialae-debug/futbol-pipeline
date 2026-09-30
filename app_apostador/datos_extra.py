@@ -341,3 +341,41 @@ print("bajas:", OUT["bajas2"])
 
 (AQUI / "datos_extra.json").write_text(json.dumps(OUT, ensure_ascii=False, indent=1, default=str))
 print("OK datos_extra.json")
+
+# ------------------------------------------------------------------ alineaciones: nota media del once contra sus 10 partidos anteriores
+def once_ids(match_id, eq):
+    f = A.lu[A.lu.match_id == match_id]
+    if not len(f):
+        return None
+    f = f.iloc[0]
+    m = A.ll[A.ll.match_id == match_id].iloc[0]
+    txt = f.local_ids if m.local == eq else f.visitante_ids
+    return [int(x) for x in str(txt).split("|")] if pd.notna(txt) else None
+
+
+def media_once(match_id, eq):
+    ids_ = once_ids(match_id, eq)
+    if not ids_:
+        return np.nan
+    x = X[(X.match_id == match_id) & X.jugador_id.isin(ids_)].nota.dropna()
+    return x.mean() if len(x) >= 9 else np.nan
+
+
+notas_eq = {}
+for e in (M.local, M.visitante):
+    hoy = media_once(M.match_id, e)
+    prev = A.L[(A.L.eqn == e) & (A.L.fecha < M.fecha)].tail(10)
+    medias = [media_once(mid, e) for mid in prev.match_id]
+    medias = [v for v in medias if pd.notna(v)]
+    notas_eq[e] = {"hoy": r(hoy), "media10": r(np.mean(medias)), "n": len(medias), "dif": r(hoy - np.mean(medias))}
+jug_prev = {}
+for e in (M.local, M.visitante):
+    for i in once_ids(M.match_id, e):
+        x = X[(X.jugador_id == i) & (X.fecha < M.fecha) & (X.minutos > 0)].sort_values("fecha").nota.dropna().tail(10)
+        hoy = X[(X.match_id == M.match_id) & (X.jugador_id == i)].nota
+        if len(x) >= 5 and len(hoy) and pd.notna(hoy.iloc[0]):
+            jug_prev[A.nom.get(i, str(i))] = {"media10": r(x.mean()), "dif": r(hoy.iloc[0] - x.mean()), "n": int(len(x))}
+OUT["notas_once"] = {"equipos": notas_eq, "jugadores": jug_prev}
+print("notas once:", notas_eq)
+print("jugadores:", {k: v["dif"] for k, v in jug_prev.items()})
+(AQUI / "datos_extra.json").write_text(json.dumps(OUT, ensure_ascii=False, indent=1, default=str))
