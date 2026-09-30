@@ -100,13 +100,13 @@ def main():
     out = ["# Modelo de puntos contra los precios de Kalshi\n",
            "Generado por `modelos/tenis/scripts/kalshi_puntos.py`. Log-loss: negativo = el modelo es mejor",
            "que el precio de Kalshi. Apuestas al precio de venta con comisión.\n",
-           "| mercado | partidos emparejados | log-loss modelo | log-loss Kalshi | modelo - Kalshi (sigmas) | "
-           "apuestas valor>0: n / rendimiento (sigmas) | valor>5%: n / rendimiento (sigmas) |",
-           "|---|---|---|---|---|---|---|"]
+           "| mercado | partidos emparejados | acierto modelo | acierto Kalshi | log-loss modelo | log-loss Kalshi | "
+           "modelo - Kalshi (sigmas) | apuestas valor>0: n / rendimiento (sigmas) | valor>5%: n / rendimiento (sigmas) |",
+           "|---|---|---|---|---|---|---|---|---|"]
     for serie, (circ, tipo) in SERIES.items():
         d = CK.cargar(serie)
         if d is None:
-            out.append(f"| {serie} | sin precios | | | | | |")
+            out.append(f"| {serie} | sin precios | | | | | | | |")
             continue
         d = d.dropna(subset=["p"])
         d = d[(d.p > 0) & (d.p < 1)]
@@ -130,7 +130,7 @@ def main():
             filas.append({"y": f["y"], "p_k": f["p"], "p_m": pm, "ask_si": f["ask_si"], "ask_no": f["ask_no"]})
         x = pd.DataFrame(filas)
         if len(x) < 50:
-            out.append(f"| {serie} | {len(x)} | | | | | |")
+            out.append(f"| {serie} | {len(x)} | | | | | | | |")
             continue
         x["p_m"] = x["p_m"].clip(0.01, 0.99)
         llm = -(x.y * np.log(x.p_m) + (1 - x.y) * np.log(1 - x.p_m))
@@ -152,7 +152,9 @@ def main():
             ret = np.array(ret)
             celdas.append(f"{len(ret)} / {ret.mean():+.2%} ({ret.mean() / (ret.std(ddof=1) / np.sqrt(len(ret))):+.2f})"
                           if len(ret) > 1 else f"{len(ret)} / -")
-        out.append(f"| {serie} | {len(x)} de {len(d)} | {llm.mean():.4f} | {llk.mean():.4f} | "
+        acm = ((x.p_m > 0.5) == (x.y == 1)).mean()
+        ack = ((x.p_k > 0.5) == (x.y == 1)).mean()
+        out.append(f"| {serie} | {len(x)} de {len(d)} | {acm:.1%} | {ack:.1%} | {llm.mean():.4f} | {llk.mean():.4f} | "
                    f"{dif.mean():+.4f} ({dif.mean() / (dif.std(ddof=1) / np.sqrt(len(dif))):+.2f}) | "
                    f"{celdas[0]} | {celdas[1]} |")
         print(out[-1], flush=True)

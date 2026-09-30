@@ -337,6 +337,10 @@ por serie. Faltan Challenger ATP e ITF (descargando).
 - Modelo de puntos contra Kalshi: partido ATP +4,81s peor (-5,9% apostando),
   WTA +4,28s (-3,8%), Challenger WTA +3,38s (-2,4%); total ATP +1,05s
   (-11,6%), total WTA +0,26s (+1,7%, ruido), hándicap ATP -0,69s (-3,8%).
+  Challenger ATP (910 partidos): +4,15s peor, -7,5% apostando.
+  **Acierto modelo / Kalshi:** ATP 66,5/69,0; Challenger ATP 64,9/66,0; WTA
+  66,8/68,1; Challenger WTA 63,0/65,8; total ATP 53,1/56,8; total WTA
+  56,7/61,3; hándicap ATP 58,1/57,7 (empate). Kalshi acierta más en todo.
   Fallo arreglado: el texto de juegos empieza "If the number of...", y el
   patrón de nombres cogía esa frase (17 emparejados en vez de ~500).
 
