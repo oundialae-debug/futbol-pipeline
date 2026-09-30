@@ -218,6 +218,21 @@ Solo se leyeron webs y documentación; nada descargado ni llamado.
   ITF, 71 líneas de total de juegos. Su histórico es de UN partido por
   petición (máx. 3 casas): inútil para backtest; como mucho, seguimiento en
   papel de unos pocos partidos. (Datos de su propio blog, sin verificar.)
+- **Polymarket** (mercado de predicción): el 18/08/2026 había 400+ partidos
+  individuales abiertos en ATP, WTA, **Challenger e ITF**, más ganador de set
+  y **total de juegos**. Precios legibles sin cuenta ni clave (API Gamma
+  pública); historial de precios desde 2024. Comisión de tomador en deportes
+  0,05·p·(1-p) desde julio de 2026 (1,25% a p=0,5). Diferencial mediano 0,010.
+  Poder apostar desde el país del usuario: SIN comprobar.
+- **Kalshi** (mercado de predicción, EE. UU.): partidos ATP, WTA y
+  **Challenger** (series KXATPMATCH, KXWTAMATCH, KXWTACHALLENGERMATCH...),
+  API pública gratuita con mercados cerrados y velas diarias o por minuto.
+  Solo residentes en EE. UU. pueden operar: sirve como DATO, no para apostar.
+- **API-Tennis** (api-tennis.com): 40-120 $/mes, **14 días de prueba gratis**.
+  No documenta casas, mercados ni profundidad del histórico.
+- Tennis API y SportsAPI365 usan el mismo texto y la misma lista de casas
+  (Marathon Bet, Pinnacle, bet365, DraftKings, MelBet): probablemente el
+  mismo proveedor. Dicen tener histórico desde 2010; no documentan cómo.
 - The Odds API: sin Challenger, histórico a 10x el coste. Descartada.
 - Scrapers de Tennis Explorer/Flashscore (Apify): condiciones de uso.
   Descartados.
