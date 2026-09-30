@@ -261,3 +261,33 @@ carpeta se apunta aquí.
 - **Qué:** `app_apostador/CLAUDE.md` (nuevo) con la regla del usuario: a él,
   siempre en español; el proyecto (la app), en inglés. Más las normas de
   trabajo de esta carpeta.
+
+## 30/09/2026: 2yellow · Nations League, con Inglaterra de ejemplo
+
+- **Qué:** lienzo nuevo, aparte del de LaLiga:
+  https://claude.ai/artifact/PyGg13vymnA4UtaYcunLzR. Siete pantallas:
+  - Partidos: últimos resultados con nuestro pronóstico ✓/✗ y la jornada 3.
+  - Previa Croacia–Inglaterra (3/10).
+  - Informe Chequia 0-2 Inglaterra y sus alineaciones.
+  - Ficha de Inglaterra.
+  - Clasificación de la Liga A y ranking FIFA.
+  - Tips con «cuánto acertamos».
+- **Datos:** `diseno_nl/nl_datos.py` → `diseno_nl/datos_nl.json`. Lee
+  `diseno_nl/datos_main/`, copias de `data/selecciones` y
+  `modelos/selecciones` tomadas de `main` el 30/09 (de main solo se copia).
+  `notas_2909.csv` son las notas del ciclo del 29/09 18:17 (onces reales de
+  Inglaterra y Croacia). Sin API.
+- **Previa Croacia–Inglaterra:** aún no está en el registro (las cuotas llegan
+  ~36 h antes). Se calcula en local con el modelo de selecciones
+  (`modelo_selecciones.py` sin tocarlo, apuntado a la copia): Inglaterra 56%,
+  1,12–1,92 goles, más de 2,5 59%, ambos marcan 58%. Sin árbitro ni cuotas.
+- **Fallo silencioso encontrado en el registro de `main` (no tocado):** las
+  pasadas de las últimas ~3 h antes del pitido del 29/09 guardan `mkt_*`
+  vacío (desde las 15:31 UTC en todos los partidos de ese día). La casa
+  desaparece justo del pronóstico que cuenta. Aquí se usa la última pasada
+  con cuotas (3,5 h antes) y se dice en pantalla.
+- **Otros arreglados aquí:** notas del once cruzadas por ID (por nombre no
+  casaban); la columna `eq` volvía a chocar con `DataFrame.eq` y ponía a
+  todos los jugadores en Inglaterra; los nombres de grupo (A1…A4) no los da
+  la API: no se inventan («Group 1…4»).
+- **Ficheros:** `app_apostador/diseno_nl/` entero.

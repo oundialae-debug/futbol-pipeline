@@ -1,0 +1,2116 @@
+{
+ "resultados": [
+  {
+   "local": "Czech Republic",
+   "visitante": "England",
+   "gl": 0,
+   "gv": 2,
+   "fecha": "2026-09-29",
+   "ronda": "League A - 2",
+   "xg": [
+    0.33,
+    1.37
+   ],
+   "merecido": [
+    9.0,
+    28.0,
+    64.0
+   ],
+   "match_id": 1301103194,
+   "nuestro": [
+    9.0,
+    16.0,
+    75.0
+   ],
+   "acierto": true
+  },
+  {
+   "local": "Spain",
+   "visitante": "Croatia",
+   "gl": 4,
+   "gv": 1,
+   "fecha": "2026-09-29",
+   "ronda": "League A - 2",
+   "xg": [
+    1.81,
+    0.47
+   ],
+   "merecido": [
+    70.0,
+    21.0,
+    9.0
+   ],
+   "match_id": 1301102343,
+   "nuestro": [
+    78.0,
+    14.0,
+    8.0
+   ],
+   "acierto": true
+  },
+  {
+   "local": "Belgium",
+   "visitante": "France",
+   "gl": 0,
+   "gv": 1,
+   "fecha": "2026-09-28",
+   "ronda": "League A - 2",
+   "xg": [
+    0.74,
+    1.15
+   ],
+   "merecido": [
+    24.0,
+    31.0,
+    45.0
+   ],
+   "match_id": 1301098088,
+   "nuestro": [
+    27.0,
+    24.0,
+    49.0
+   ],
+   "acierto": true
+  },
+  {
+   "local": "Turkey",
+   "visitante": "Italy",
+   "gl": 1,
+   "gv": 4,
+   "fecha": "2026-09-28",
+   "ronda": "League A - 2",
+   "xg": [
+    1.86,
+    2.39
+   ],
+   "merecido": [
+    30.0,
+    19.0,
+    50.0
+   ],
+   "match_id": 1301098939,
+   "nuestro": [
+    36.0,
+    26.0,
+    38.0
+   ],
+   "acierto": true
+  },
+  {
+   "local": "Germany",
+   "visitante": "Greece",
+   "gl": 0,
+   "gv": 1,
+   "fecha": "2026-09-27",
+   "ronda": "League A - 2",
+   "xg": [
+    1.34,
+    0.77
+   ],
+   "merecido": [
+    50.0,
+    28.0,
+    22.0
+   ],
+   "match_id": 1301093833,
+   "nuestro": [
+    72.0,
+    16.0,
+    11.0
+   ],
+   "acierto": false
+  },
+  {
+   "local": "Norway",
+   "visitante": "Portugal",
+   "gl": 1,
+   "gv": 2,
+   "fecha": "2026-09-27",
+   "ronda": "League A - 2",
+   "xg": [
+    2.72,
+    1.03
+   ],
+   "merecido": [
+    73.0,
+    15.0,
+    12.0
+   ],
+   "match_id": 1301094684,
+   "nuestro": [
+    45.0,
+    24.0,
+    31.0
+   ],
+   "acierto": false
+  },
+  {
+   "local": "Serbia",
+   "visitante": "Netherlands",
+   "gl": 1,
+   "gv": 2,
+   "fecha": "2026-09-27",
+   "ronda": "League A - 2",
+   "xg": [
+    1.41,
+    2.75
+   ],
+   "merecido": [
+    18.0,
+    17.0,
+    66.0
+   ],
+   "match_id": 1301091280,
+   "nuestro": [
+    14.0,
+    19.0,
+    67.0
+   ],
+   "acierto": true
+  },
+  {
+   "local": "Denmark",
+   "visitante": "Wales",
+   "gl": 2,
+   "gv": 0,
+   "fecha": "2026-09-27",
+   "ronda": "League A - 2",
+   "xg": [
+    1.31,
+    0.65
+   ],
+   "merecido": [
+    52.0,
+    29.0,
+    18.0
+   ],
+   "match_id": 1301092131,
+   "nuestro": [
+    64.0,
+    20.0,
+    16.0
+   ],
+   "acierto": true
+  },
+  {
+   "local": "England",
+   "visitante": "Spain",
+   "gl": 2,
+   "gv": 3,
+   "fecha": "2026-09-26",
+   "ronda": "League A - 1",
+   "xg": [
+    1.74,
+    3.12
+   ],
+   "merecido": [
+    19.0,
+    15.0,
+    65.0
+   ],
+   "match_id": 1301087025,
+   "nuestro": [
+    25.0,
+    26.0,
+    50.0
+   ],
+   "acierto": true
+  },
+  {
+   "local": "Czech Republic",
+   "visitante": "Croatia",
+   "gl": 1,
+   "gv": 2,
+   "fecha": "2026-09-26",
+   "ronda": "League A - 1",
+   "xg": [
+    0.92,
+    1.84
+   ],
+   "merecido": [
+    18.0,
+    23.0,
+    59.0
+   ],
+   "match_id": 1301087876,
+   "nuestro": [
+    23.0,
+    24.0,
+    53.0
+   ],
+   "acierto": true
+  },
+  {
+   "local": "Turkey",
+   "visitante": "France",
+   "gl": 0,
+   "gv": 1,
+   "fecha": "2026-09-25",
+   "ronda": "League A - 1",
+   "xg": [
+    1.21,
+    1.17
+   ],
+   "merecido": [
+    37.0,
+    28.0,
+    35.0
+   ],
+   "match_id": 1301079366
+  },
+  {
+   "local": "Italy",
+   "visitante": "Belgium",
+   "gl": 0,
+   "gv": 2,
+   "fecha": "2026-09-25",
+   "ronda": "League A - 1",
+   "xg": [
+    1.7,
+    2.76
+   ],
+   "merecido": [
+    22.0,
+    17.0,
+    60.0
+   ],
+   "match_id": 1301080217
+  },
+  {
+   "local": "Norway",
+   "visitante": "Denmark",
+   "gl": 3,
+   "gv": 2,
+   "fecha": "2026-09-24",
+   "ronda": "League A - 1",
+   "xg": [
+    1.41,
+    1.09
+   ],
+   "merecido": [
+    44.0,
+    27.0,
+    29.0
+   ],
+   "match_id": 1301064899
+  },
+  {
+   "local": "Serbia",
+   "visitante": "Greece",
+   "gl": 1,
+   "gv": 2,
+   "fecha": "2026-09-24",
+   "ronda": "League A - 1",
+   "xg": [
+    1.42,
+    2.51
+   ],
+   "merecido": [
+    20.0,
+    18.0,
+    61.0
+   ],
+   "match_id": 1301063197
+  },
+  {
+   "local": "Portugal",
+   "visitante": "Wales",
+   "gl": 1,
+   "gv": 0,
+   "fecha": "2026-09-24",
+   "ronda": "League A - 1",
+   "xg": [
+    1.93,
+    0.85
+   ],
+   "merecido": [
+    63.0,
+    22.0,
+    16.0
+   ],
+   "match_id": 1301064048
+  },
+  {
+   "local": "Netherlands",
+   "visitante": "Germany",
+   "gl": 1,
+   "gv": 1,
+   "fecha": "2026-09-24",
+   "ronda": "League A - 1",
+   "xg": [
+    3.18,
+    1.45
+   ],
+   "merecido": [
+    71.0,
+    14.0,
+    14.0
+   ],
+   "match_id": 1301062346
+  }
+ ],
+ "proximos": [
+  {
+   "local": "Wales",
+   "visitante": "Norway",
+   "fecha": "2026-10-01T18:45:00.000Z",
+   "ronda": "League A - 3",
+   "p": [
+    14.0,
+    19.0,
+    66.0
+   ],
+   "fuente": "registro"
+  },
+  {
+   "local": "Denmark",
+   "visitante": "Portugal",
+   "fecha": "2026-10-01T18:45:00.000Z",
+   "ronda": "League A - 3",
+   "p": [
+    27.0,
+    25.0,
+    47.0
+   ],
+   "fuente": "registro"
+  },
+  {
+   "local": "Greece",
+   "visitante": "Netherlands",
+   "fecha": "2026-10-01T18:45:00.000Z",
+   "ronda": "League A - 3",
+   "p": [
+    23.0,
+    24.0,
+    53.0
+   ],
+   "fuente": "registro"
+  },
+  {
+   "local": "Germany",
+   "visitante": "Serbia",
+   "fecha": "2026-10-01T18:45:00.000Z",
+   "ronda": "League A - 3",
+   "p": [
+    78.0,
+    14.0,
+    8.0
+   ],
+   "fuente": "registro"
+  },
+  {
+   "local": "France",
+   "visitante": "Italy",
+   "fecha": "2026-10-02T18:45:00.000Z",
+   "ronda": "League A - 3",
+   "p": null,
+   "fuente": null
+  },
+  {
+   "local": "Belgium",
+   "visitante": "Turkey",
+   "fecha": "2026-10-02T18:45:00.000Z",
+   "ronda": "League A - 3",
+   "p": null,
+   "fuente": null
+  },
+  {
+   "local": "Croatia",
+   "visitante": "England",
+   "fecha": "2026-10-03T16:00:00.000Z",
+   "ronda": "League A - 3",
+   "p": [
+    22.0,
+    22.0,
+    56.0
+   ],
+   "fuente": "modelo"
+  },
+  {
+   "local": "Spain",
+   "visitante": "Czech Republic",
+   "fecha": "2026-10-03T18:45:00.000Z",
+   "ronda": "League A - 3",
+   "p": null,
+   "fuente": null
+  }
+ ],
+ "previa": {
+  "lam": [
+   1.12,
+   1.92
+  ],
+  "p1x2": [
+   22.0,
+   22.0,
+   56.0
+  ],
+  "mas15": 81.0,
+  "mas25": 59.0,
+  "mas35": 36.0,
+  "btts": 58.0,
+  "marcador": [
+   1,
+   1
+  ],
+  "primero": [
+   35.0,
+   60.0,
+   5.0
+  ],
+  "corners": 9.4,
+  "corners_85": 58.0,
+  "corners_95": 46.0,
+  "tarjetas": 2.3,
+  "tarjetas_35": 23.0,
+  "forma": {
+   "Croatia": [
+    {
+     "riv": "Panama",
+     "casa": false,
+     "gf": 1,
+     "gc": 0,
+     "comp": "World Cup",
+     "fecha": "2026-06-23"
+    },
+    {
+     "riv": "Ghana",
+     "casa": true,
+     "gf": 2,
+     "gc": 1,
+     "comp": "World Cup",
+     "fecha": "2026-06-27"
+    },
+    {
+     "riv": "Portugal",
+     "casa": false,
+     "gf": 1,
+     "gc": 2,
+     "comp": "World Cup",
+     "fecha": "2026-07-02"
+    },
+    {
+     "riv": "Czech Republic",
+     "casa": false,
+     "gf": 2,
+     "gc": 1,
+     "comp": "UEFA Nations League",
+     "fecha": "2026-09-26"
+    },
+    {
+     "riv": "Spain",
+     "casa": false,
+     "gf": 1,
+     "gc": 4,
+     "comp": "UEFA Nations League",
+     "fecha": "2026-09-29"
+    }
+   ],
+   "England": [
+    {
+     "riv": "Norway",
+     "casa": false,
+     "gf": 2,
+     "gc": 1,
+     "comp": "World Cup",
+     "fecha": "2026-07-11"
+    },
+    {
+     "riv": "Argentina",
+     "casa": true,
+     "gf": 1,
+     "gc": 2,
+     "comp": "World Cup",
+     "fecha": "2026-07-15"
+    },
+    {
+     "riv": "France",
+     "casa": false,
+     "gf": 6,
+     "gc": 4,
+     "comp": "World Cup",
+     "fecha": "2026-07-18"
+    },
+    {
+     "riv": "Spain",
+     "casa": true,
+     "gf": 2,
+     "gc": 3,
+     "comp": "UEFA Nations League",
+     "fecha": "2026-09-26"
+    },
+    {
+     "riv": "Czech Republic",
+     "casa": false,
+     "gf": 2,
+     "gc": 0,
+     "comp": "UEFA Nations League",
+     "fecha": "2026-09-29"
+    }
+   ]
+  },
+  "fifa_pts": [
+   1723.0,
+   1923.0
+  ],
+  "once": {
+   "Croatia": [
+    {
+     "jugador": "I. Perišić",
+     "posicion": "Midfielder",
+     "nota": 7.23
+    },
+    {
+     "jugador": "Marco Pašalić",
+     "posicion": "Forward",
+     "nota": 7.18
+    },
+    {
+     "jugador": "J. Gvardiol",
+     "posicion": "Defender",
+     "nota": 7.12
+    },
+    {
+     "jugador": "Petar Sučić",
+     "posicion": "Midfielder",
+     "nota": 7.0
+    },
+    {
+     "jugador": "Dion Drena Beljo",
+     "posicion": "Forward",
+     "nota": 7.0
+    },
+    {
+     "jugador": "Josip Mišić",
+     "posicion": "Midfielder",
+     "nota": 6.93
+    },
+    {
+     "jugador": "D. Livaković",
+     "posicion": "Goalkeeper",
+     "nota": 6.92
+    },
+    {
+     "jugador": "M. Kovačić",
+     "posicion": "Midfielder",
+     "nota": 6.9
+    },
+    {
+     "jugador": "Josip Šutalo",
+     "posicion": "Defender",
+     "nota": 6.87
+    },
+    {
+     "jugador": "Ivan Smolčić",
+     "posicion": "Defender",
+     "nota": 6.81
+    },
+    {
+     "jugador": "Marin Pongračić",
+     "posicion": "Defender",
+     "nota": 6.71
+    }
+   ],
+   "England": [
+    {
+     "jugador": "H. Kane",
+     "posicion": "Forward",
+     "nota": 7.27
+    },
+    {
+     "jugador": "B. Saka",
+     "posicion": "Forward",
+     "nota": 7.26
+    },
+    {
+     "jugador": "E. Anderson",
+     "posicion": "Midfielder",
+     "nota": 7.23
+    },
+    {
+     "jugador": "M. Rogers",
+     "posicion": "Midfielder",
+     "nota": 7.2
+    },
+    {
+     "jugador": "L. Hall",
+     "posicion": "Defender",
+     "nota": 7.2
+    },
+    {
+     "jugador": "M. Guéhi",
+     "posicion": "Defender",
+     "nota": 7.13
+    },
+    {
+     "jugador": "T. Alexander-Arnold",
+     "posicion": "Defender",
+     "nota": 7.07
+    },
+    {
+     "jugador": "A. Gordon",
+     "posicion": "Midfielder",
+     "nota": 6.98
+    },
+    {
+     "jugador": "Trevoh Chalobah",
+     "posicion": "Defender",
+     "nota": 6.97
+    },
+    {
+     "jugador": "J. Trafford",
+     "posicion": "Goalkeeper",
+     "nota": 6.95
+    },
+    {
+     "jugador": "M. Lewis-Skelly",
+     "posicion": "Defender",
+     "nota": 6.84
+    }
+   ]
+  },
+  "fifa_puesto": [
+   13,
+   4
+  ],
+  "h2h": [
+   {
+    "local": "England",
+    "visitante": "Croatia",
+    "gl": 4,
+    "gv": 2,
+    "fecha": "2026-06-17",
+    "comp": "World Cup"
+   }
+  ]
+ },
+ "informe": {
+  "local": "Czech Republic",
+  "visitante": "England",
+  "gl": 0,
+  "gv": 2,
+  "fecha": "2026-09-29",
+  "ronda": "League A - 2",
+  "stats": {
+   "Expected Goals": [
+    0.33,
+    1.37
+   ],
+   "Possession": [
+    0.34,
+    0.66
+   ],
+   "Shots on target": [
+    2.0,
+    7.0
+   ],
+   "Shots off target": [
+    1.0,
+    10.0
+   ],
+   "Blocked shots": [
+    3.0,
+    5.0
+   ],
+   "Shots within penalty area": [
+    4.0,
+    12.0
+   ],
+   "Big Chances Created": [
+    1.0,
+    2.0
+   ],
+   "Total passes": [
+    343.0,
+    670.0
+   ],
+   "Passes Into Final Third": [
+    47.0,
+    231.0
+   ],
+   "Key Passes": [
+    4.0,
+    16.0
+   ],
+   "Crosses": [
+    6.0,
+    19.0
+   ],
+   "Tackles": [
+    14.0,
+    8.0
+   ],
+   "Interceptions": [
+    6.0,
+    10.0
+   ],
+   "Clearances": [
+    22.0,
+    16.0
+   ],
+   "Goalkeeper saves": [
+    4.0,
+    2.0
+   ],
+   "Fouls": [
+    9.0,
+    12.0
+   ],
+   "Yellow cards": [
+    0.0,
+    1.0
+   ],
+   "Red cards": [
+    1.0,
+    0.0
+   ],
+   "Offsides": [
+    2.0,
+    3.0
+   ],
+   "Corners": [
+    1.0,
+    6.0
+   ]
+  },
+  "merecido": [
+   9.0,
+   28.0,
+   64.0
+  ],
+  "jugadores": [
+   {
+    "jugador": "A. Gordon",
+    "equipo": "England",
+    "pos": "Midfielder",
+    "min": 81,
+    "nota": 8.15,
+    "goles": 1,
+    "asist": 0,
+    "suplente": false
+   },
+   {
+    "jugador": "H. Kane",
+    "equipo": "England",
+    "pos": "Forward",
+    "min": 71,
+    "nota": 7.92,
+    "goles": 1,
+    "asist": 0,
+    "suplente": false
+   },
+   {
+    "jugador": "T. Alexander-Arnold",
+    "equipo": "England",
+    "pos": "Defender",
+    "min": 90,
+    "nota": 7.83,
+    "goles": 0,
+    "asist": 1,
+    "suplente": false
+   },
+   {
+    "jugador": "M. Lewis-Skelly",
+    "equipo": "England",
+    "pos": "Midfielder",
+    "min": 45,
+    "nota": 7.48,
+    "goles": 0,
+    "asist": 0,
+    "suplente": false
+   },
+   {
+    "jugador": "E. Eze",
+    "equipo": "England",
+    "pos": "Midfielder",
+    "min": 45,
+    "nota": 7.39,
+    "goles": 0,
+    "asist": 0,
+    "suplente": true
+   },
+   {
+    "jugador": "J. Trafford",
+    "equipo": "England",
+    "pos": "Goalkeeper",
+    "min": 90,
+    "nota": 7.26,
+    "goles": 0,
+    "asist": 0,
+    "suplente": false
+   },
+   {
+    "jugador": "L. Hall",
+    "equipo": "England",
+    "pos": "Defender",
+    "min": 90,
+    "nota": 7.22,
+    "goles": 0,
+    "asist": 0,
+    "suplente": false
+   },
+   {
+    "jugador": "E. Anderson",
+    "equipo": "England",
+    "pos": "Midfielder",
+    "min": 70,
+    "nota": 7.22,
+    "goles": 0,
+    "asist": 0,
+    "suplente": false
+   },
+   {
+    "jugador": "Trevoh Chalobah",
+    "equipo": "England",
+    "pos": "Defender",
+    "min": 90,
+    "nota": 7.01,
+    "goles": 0,
+    "asist": 0,
+    "suplente": false
+   },
+   {
+    "jugador": "M. Guéhi",
+    "equipo": "England",
+    "pos": "Defender",
+    "min": 90,
+    "nota": 6.86,
+    "goles": 0,
+    "asist": 0,
+    "suplente": false
+   },
+   {
+    "jugador": "A. Scott",
+    "equipo": "England",
+    "pos": "Midfielder",
+    "min": 20,
+    "nota": 6.76,
+    "goles": 0,
+    "asist": 0,
+    "suplente": true
+   },
+   {
+    "jugador": "R. Ngumoha",
+    "equipo": "England",
+    "pos": "Forward",
+    "min": 19,
+    "nota": 6.56,
+    "goles": 0,
+    "asist": 0,
+    "suplente": true
+   },
+   {
+    "jugador": "A. Král",
+    "equipo": "Czech Republic",
+    "pos": "Midfielder",
+    "min": 34,
+    "nota": 6.55,
+    "goles": 0,
+    "asist": 0,
+    "suplente": true
+   },
+   {
+    "jugador": "Lukáš Červ",
+    "equipo": "Czech Republic",
+    "pos": "Midfielder",
+    "min": 80,
+    "nota": 6.55,
+    "goles": 0,
+    "asist": 0,
+    "suplente": false
+   },
+   {
+    "jugador": "J. Bellingham",
+    "equipo": "England",
+    "pos": "Midfielder",
+    "min": 19,
+    "nota": 6.54,
+    "goles": 0,
+    "asist": 0,
+    "suplente": true
+   },
+   {
+    "jugador": "L. Krejčí",
+    "equipo": "Czech Republic",
+    "pos": "Defender",
+    "min": 90,
+    "nota": 6.54,
+    "goles": 0,
+    "asist": 0,
+    "suplente": false
+   },
+   {
+    "jugador": "B. Saka",
+    "equipo": "England",
+    "pos": "Midfielder",
+    "min": 71,
+    "nota": 6.51,
+    "goles": 0,
+    "asist": 0,
+    "suplente": false
+   },
+   {
+    "jugador": "M. Gibbs-White",
+    "equipo": "England",
+    "pos": "Midfielder",
+    "min": 9,
+    "nota": 6.45,
+    "goles": 0,
+    "asist": 0,
+    "suplente": true
+   },
+   {
+    "jugador": "Michal Sadílek",
+    "equipo": "Czech Republic",
+    "pos": "Midfielder",
+    "min": 56,
+    "nota": 6.37,
+    "goles": 0,
+    "asist": 0,
+    "suplente": false
+   },
+   {
+    "jugador": "Daniel Vašulín",
+    "equipo": "Czech Republic",
+    "pos": "Forward",
+    "min": 10,
+    "nota": 6.34,
+    "goles": 0,
+    "asist": 0,
+    "suplente": true
+   },
+   {
+    "jugador": "A. Hložek",
+    "equipo": "Czech Republic",
+    "pos": "Forward",
+    "min": 80,
+    "nota": 6.32,
+    "goles": 0,
+    "asist": 0,
+    "suplente": false
+   },
+   {
+    "jugador": "R. Hranáč",
+    "equipo": "Czech Republic",
+    "pos": "Defender",
+    "min": 90,
+    "nota": 6.21,
+    "goles": 0,
+    "asist": 0,
+    "suplente": false
+   },
+   {
+    "jugador": "M. Rogers",
+    "equipo": "England",
+    "pos": "Midfielder",
+    "min": 90,
+    "nota": 6.18,
+    "goles": 0,
+    "asist": 0,
+    "suplente": false
+   },
+   {
+    "jugador": "O. Lingr",
+    "equipo": "Czech Republic",
+    "pos": "Midfielder",
+    "min": 46,
+    "nota": 6.17,
+    "goles": 0,
+    "asist": 0,
+    "suplente": true
+   },
+   {
+    "jugador": "Štěpán Chaloupek",
+    "equipo": "Czech Republic",
+    "pos": "Defender",
+    "min": 90,
+    "nota": 6.16,
+    "goles": 0,
+    "asist": 0,
+    "suplente": false
+   },
+   {
+    "jugador": "Roman Macek",
+    "equipo": "Czech Republic",
+    "pos": "Midfielder",
+    "min": 10,
+    "nota": 6.13,
+    "goles": 0,
+    "asist": 0,
+    "suplente": true
+   },
+   {
+    "jugador": "Adam Karabec",
+    "equipo": "Czech Republic",
+    "pos": "Midfielder",
+    "min": 44,
+    "nota": 6.08,
+    "goles": 0,
+    "asist": 0,
+    "suplente": false
+   },
+   {
+    "jugador": "M. Kovář",
+    "equipo": "Czech Republic",
+    "pos": "Goalkeeper",
+    "min": 90,
+    "nota": 6.01,
+    "goles": 0,
+    "asist": 0,
+    "suplente": false
+   },
+   {
+    "jugador": "Matej Radosta",
+    "equipo": "Czech Republic",
+    "pos": "Midfielder",
+    "min": 57,
+    "nota": 5.89,
+    "goles": 0,
+    "asist": 0,
+    "suplente": false
+   },
+   {
+    "jugador": "L. Ambros",
+    "equipo": "Czech Republic",
+    "pos": "Midfielder",
+    "min": 33,
+    "nota": 5.8,
+    "goles": 0,
+    "asist": 0,
+    "suplente": true
+   },
+   {
+    "jugador": "Jiří Sláma",
+    "equipo": "Czech Republic",
+    "pos": "Defender",
+    "min": 90,
+    "nota": 5.44,
+    "goles": 0,
+    "asist": 0,
+    "suplente": false
+   },
+   {
+    "jugador": "P. Šulc",
+    "equipo": "Czech Republic",
+    "pos": "Midfielder",
+    "min": 25,
+    "nota": 5.11,
+    "goles": 0,
+    "asist": 0,
+    "suplente": false
+   }
+  ],
+  "porteros": [
+   {
+    "jugador": "J. Trafford",
+    "equipo": "England",
+    "paradas": 2,
+    "evitados": null
+   },
+   {
+    "jugador": "M. Kovář",
+    "equipo": "Czech Republic",
+    "paradas": 4,
+    "evitados": null
+   }
+  ],
+  "lineas": {
+   "Czech Republic": {
+    "formacion": "4-3-3",
+    "lineas": [
+     [
+      {
+       "jugador": "M. Kovář",
+       "nota": 6.01
+      }
+     ],
+     [
+      {
+       "jugador": "J. Sláma",
+       "nota": 5.44
+      },
+      {
+       "jugador": "L. Krejčí",
+       "nota": 6.54
+      },
+      {
+       "jugador": "R. Hranáč",
+       "nota": 6.21
+      },
+      {
+       "jugador": "Š. Chaloupek",
+       "nota": 6.16
+      }
+     ],
+     [
+      {
+       "jugador": "M. Sadílek",
+       "nota": 6.37
+      },
+      {
+       "jugador": "P. Šulc",
+       "nota": 5.11
+      },
+      {
+       "jugador": "L. Červ",
+       "nota": 6.55
+      }
+     ],
+     [
+      {
+       "jugador": "A. Karabec",
+       "nota": 6.08
+      },
+      {
+       "jugador": "A. Hložek",
+       "nota": 6.32
+      },
+      {
+       "jugador": "M. Radosta",
+       "nota": 5.89
+      }
+     ]
+    ]
+   },
+   "England": {
+    "formacion": "4-2-3-1",
+    "lineas": [
+     [
+      {
+       "jugador": "J. Trafford",
+       "nota": 7.26
+      }
+     ],
+     [
+      {
+       "jugador": "L. Hall",
+       "nota": 7.22
+      },
+      {
+       "jugador": "M. Guéhi",
+       "nota": 6.86
+      },
+      {
+       "jugador": "T. Chalobah",
+       "nota": 7.01
+      },
+      {
+       "jugador": "T. Alexander-Arnold",
+       "nota": 7.83
+      }
+     ],
+     [
+      {
+       "jugador": "M. Lewis-Skelly",
+       "nota": 7.48
+      },
+      {
+       "jugador": "E. Anderson",
+       "nota": 7.22
+      }
+     ],
+     [
+      {
+       "jugador": "A. Gordon",
+       "nota": 8.15
+      },
+      {
+       "jugador": "M. Rogers",
+       "nota": 6.18
+      },
+      {
+       "jugador": "B. Saka",
+       "nota": 6.51
+      }
+     ],
+     [
+      {
+       "jugador": "H. Kane",
+       "nota": 7.92
+      }
+     ]
+    ]
+   }
+  },
+  "nuestro": {
+   "1x2": [
+    9.0,
+    16.0,
+    75.0
+   ],
+   "mas15": 79.0,
+   "mas25": 58.0,
+   "btts": 48.0
+  },
+  "casa": {
+   "1x2": [
+    11.0,
+    18.0,
+    72.0
+   ],
+   "mas15": 79.0,
+   "mas25": 58.0,
+   "btts": 47.0
+  },
+  "real": {
+   "1x2": 2,
+   "mas15": true,
+   "mas25": false,
+   "btts": false
+  },
+  "fuente_once": "probable",
+  "generado": "2026-09-29T15:16:02.457750+00:00",
+  "horas_antes": 3.5,
+  "esperados": [
+   0.75,
+   2.7
+  ],
+  "corners_esp": 9.2,
+  "tarjetas_esp": 2.4,
+  "corners_real": [
+   1.0,
+   6.0
+  ],
+  "fifa_antes": [
+   1467.0,
+   1923.0
+  ]
+ },
+ "equipo": {
+  "partidos": [
+   {
+    "fecha": "2025-03-21",
+    "riv": "Albania",
+    "casa": true,
+    "comp": "World Cup - Qualification Europe",
+    "gf": 2,
+    "gc": 0,
+    "xg": null,
+    "xga": null
+   },
+   {
+    "fecha": "2025-03-24",
+    "riv": "Latvia",
+    "casa": true,
+    "comp": "World Cup - Qualification Europe",
+    "gf": 3,
+    "gc": 0,
+    "xg": 3.53,
+    "xga": 0.31
+   },
+   {
+    "fecha": "2025-06-07",
+    "riv": "Andorra",
+    "casa": false,
+    "comp": "World Cup - Qualification Europe",
+    "gf": 1,
+    "gc": 0,
+    "xg": 3.35,
+    "xga": 0.3
+   },
+   {
+    "fecha": "2025-06-10",
+    "riv": "Senegal",
+    "casa": true,
+    "comp": "Friendlies",
+    "gf": 1,
+    "gc": 3,
+    "xg": 1.38,
+    "xga": 1.86
+   },
+   {
+    "fecha": "2025-09-06",
+    "riv": "Andorra",
+    "casa": true,
+    "comp": "World Cup - Qualification Europe",
+    "gf": 2,
+    "gc": 0,
+    "xg": 2.21,
+    "xga": 0.1
+   },
+   {
+    "fecha": "2025-09-09",
+    "riv": "Serbia",
+    "casa": false,
+    "comp": "World Cup - Qualification Europe",
+    "gf": 5,
+    "gc": 0,
+    "xg": 4.49,
+    "xga": 0.08
+   },
+   {
+    "fecha": "2025-10-09",
+    "riv": "Wales",
+    "casa": true,
+    "comp": "Friendlies",
+    "gf": 3,
+    "gc": 0,
+    "xg": 3.01,
+    "xga": 0.53
+   },
+   {
+    "fecha": "2025-10-14",
+    "riv": "Latvia",
+    "casa": false,
+    "comp": "World Cup - Qualification Europe",
+    "gf": 5,
+    "gc": 0,
+    "xg": 2.37,
+    "xga": 0.4
+   },
+   {
+    "fecha": "2025-11-13",
+    "riv": "Serbia",
+    "casa": true,
+    "comp": "World Cup - Qualification Europe",
+    "gf": 2,
+    "gc": 0,
+    "xg": 1.33,
+    "xga": 0.43
+   },
+   {
+    "fecha": "2025-11-16",
+    "riv": "Albania",
+    "casa": false,
+    "comp": "World Cup - Qualification Europe",
+    "gf": 2,
+    "gc": 0,
+    "xg": 1.6,
+    "xga": 0.49
+   },
+   {
+    "fecha": "2026-03-27",
+    "riv": "Uruguay",
+    "casa": true,
+    "comp": "Friendlies",
+    "gf": 1,
+    "gc": 1,
+    "xg": 1.86,
+    "xga": 1.27
+   },
+   {
+    "fecha": "2026-03-31",
+    "riv": "Japan",
+    "casa": true,
+    "comp": "Friendlies",
+    "gf": 0,
+    "gc": 1,
+    "xg": 0.89,
+    "xga": 0.58
+   },
+   {
+    "fecha": "2026-06-06",
+    "riv": "New Zealand",
+    "casa": true,
+    "comp": "Friendlies",
+    "gf": 1,
+    "gc": 0,
+    "xg": 1.49,
+    "xga": 0.12
+   },
+   {
+    "fecha": "2026-06-10",
+    "riv": "Costa Rica",
+    "casa": true,
+    "comp": "Friendlies",
+    "gf": 3,
+    "gc": 0,
+    "xg": 4.89,
+    "xga": 0.03
+   },
+   {
+    "fecha": "2026-06-17",
+    "riv": "Croatia",
+    "casa": true,
+    "comp": "World Cup",
+    "gf": 4,
+    "gc": 2,
+    "xg": 3.2,
+    "xga": 0.7
+   },
+   {
+    "fecha": "2026-06-23",
+    "riv": "Ghana",
+    "casa": true,
+    "comp": "World Cup",
+    "gf": 0,
+    "gc": 0,
+    "xg": 1.36,
+    "xga": 0.17
+   },
+   {
+    "fecha": "2026-06-27",
+    "riv": "Panama",
+    "casa": false,
+    "comp": "World Cup",
+    "gf": 2,
+    "gc": 0,
+    "xg": 1.56,
+    "xga": 0.66
+   },
+   {
+    "fecha": "2026-07-01",
+    "riv": "Congo DR",
+    "casa": true,
+    "comp": "World Cup",
+    "gf": 2,
+    "gc": 1,
+    "xg": 2.16,
+    "xga": 0.77
+   },
+   {
+    "fecha": "2026-07-06",
+    "riv": "Mexico",
+    "casa": false,
+    "comp": "World Cup",
+    "gf": 3,
+    "gc": 2,
+    "xg": 1.61,
+    "xga": 1.88
+   },
+   {
+    "fecha": "2026-07-11",
+    "riv": "Norway",
+    "casa": false,
+    "comp": "World Cup",
+    "gf": 2,
+    "gc": 1,
+    "xg": 1.04,
+    "xga": 0.68
+   },
+   {
+    "fecha": "2026-07-15",
+    "riv": "Argentina",
+    "casa": true,
+    "comp": "World Cup",
+    "gf": 1,
+    "gc": 2,
+    "xg": 0.53,
+    "xga": 1.59
+   },
+   {
+    "fecha": "2026-07-18",
+    "riv": "France",
+    "casa": false,
+    "comp": "World Cup",
+    "gf": 6,
+    "gc": 4,
+    "xg": null,
+    "xga": null
+   },
+   {
+    "fecha": "2026-09-26",
+    "riv": "Spain",
+    "casa": true,
+    "comp": "UEFA Nations League",
+    "gf": 2,
+    "gc": 3,
+    "xg": 1.74,
+    "xga": 3.12
+   },
+   {
+    "fecha": "2026-09-29",
+    "riv": "Czech Republic",
+    "casa": false,
+    "comp": "UEFA Nations League",
+    "gf": 2,
+    "gc": 0,
+    "xg": 1.37,
+    "xga": 0.33
+   }
+  ],
+  "fifa": [
+   {
+    "fecha": "2024-12-19",
+    "puesto": 4,
+    "puntos": 1814.0
+   },
+   {
+    "fecha": "2025-04-03",
+    "puesto": 4,
+    "puntos": 1819.0
+   },
+   {
+    "fecha": "2025-07-10",
+    "puesto": 4,
+    "puntos": 1813.0
+   },
+   {
+    "fecha": "2025-09-18",
+    "puesto": 4,
+    "puntos": 1820.0
+   },
+   {
+    "fecha": "2025-10-17",
+    "puesto": 4,
+    "puntos": 1824.0
+   },
+   {
+    "fecha": "2025-11-19",
+    "puesto": 4,
+    "puntos": 1834.0
+   },
+   {
+    "fecha": "2025-12-22",
+    "puesto": 4,
+    "puntos": 1834.0
+   },
+   {
+    "fecha": "2026-01-19",
+    "puesto": 4,
+    "puntos": 1834.0
+   },
+   {
+    "fecha": "2026-04-01",
+    "puesto": 4,
+    "puntos": 1826.0
+   },
+   {
+    "fecha": "2026-06-11",
+    "puesto": 4,
+    "puntos": 1828.0
+   },
+   {
+    "fecha": "2026-07-20",
+    "puesto": 4,
+    "puntos": 1923.0
+   }
+  ],
+  "goleadores": [
+   {
+    "jugador": "H. Kane",
+    "pj": 19,
+    "min": 1566,
+    "goles": 17,
+    "asist": 1,
+    "nota": 7.47,
+    "xg": 0.0
+   },
+   {
+    "jugador": "J. Bellingham",
+    "pj": 17,
+    "min": 1161,
+    "goles": 7,
+    "asist": 3,
+    "nota": 7.55,
+    "xg": 0.0
+   },
+   {
+    "jugador": "B. Saka",
+    "pj": 15,
+    "min": 857,
+    "goles": 5,
+    "asist": 4,
+    "nota": 7.22,
+    "xg": 0.0
+   },
+   {
+    "jugador": "A. Gordon",
+    "pj": 18,
+    "min": 1085,
+    "goles": 5,
+    "asist": 4,
+    "nota": 7.11,
+    "xg": 0.0
+   },
+   {
+    "jugador": "D. Rice",
+    "pj": 17,
+    "min": 1201,
+    "goles": 3,
+    "asist": 5,
+    "nota": 7.48,
+    "xg": 0.0
+   }
+  ],
+  "mejores": [
+   {
+    "jugador": "J. Bellingham",
+    "nota": 7.55,
+    "pj": 17
+   },
+   {
+    "jugador": "D. Rice",
+    "nota": 7.48,
+    "pj": 17
+   },
+   {
+    "jugador": "H. Kane",
+    "nota": 7.47,
+    "pj": 19
+   },
+   {
+    "jugador": "E. Anderson",
+    "nota": 7.32,
+    "pj": 19
+   },
+   {
+    "jugador": "B. Saka",
+    "nota": 7.22,
+    "pj": 15
+   }
+  ]
+ },
+ "grupos": [
+  {
+   "equipos": [
+    "Croatia",
+    "Czech Republic",
+    "England",
+    "Spain"
+   ],
+   "tabla": [
+    {
+     "equipo": "Spain",
+     "pj": 2,
+     "g": 2,
+     "e": 0,
+     "p": 0,
+     "gf": 7,
+     "gc": 3,
+     "pts": 6,
+     "fifa": 1
+    },
+    {
+     "equipo": "England",
+     "pj": 2,
+     "g": 1,
+     "e": 0,
+     "p": 1,
+     "gf": 4,
+     "gc": 3,
+     "pts": 3,
+     "fifa": 4
+    },
+    {
+     "equipo": "Croatia",
+     "pj": 2,
+     "g": 1,
+     "e": 0,
+     "p": 1,
+     "gf": 3,
+     "gc": 5,
+     "pts": 3,
+     "fifa": 13
+    },
+    {
+     "equipo": "Czech Republic",
+     "pj": 2,
+     "g": 0,
+     "e": 0,
+     "p": 2,
+     "gf": 1,
+     "gc": 4,
+     "pts": 0,
+     "fifa": 48
+    }
+   ],
+   "nombre": "Group 1"
+  },
+  {
+   "equipos": [
+    "Belgium",
+    "France",
+    "Italy",
+    "Turkey"
+   ],
+   "tabla": [
+    {
+     "equipo": "France",
+     "pj": 2,
+     "g": 2,
+     "e": 0,
+     "p": 0,
+     "gf": 2,
+     "gc": 0,
+     "pts": 6,
+     "fifa": 3
+    },
+    {
+     "equipo": "Italy",
+     "pj": 2,
+     "g": 1,
+     "e": 0,
+     "p": 1,
+     "gf": 4,
+     "gc": 3,
+     "pts": 3,
+     "fifa": 15
+    },
+    {
+     "equipo": "Belgium",
+     "pj": 2,
+     "g": 1,
+     "e": 0,
+     "p": 1,
+     "gf": 2,
+     "gc": 1,
+     "pts": 3,
+     "fifa": 8
+    },
+    {
+     "equipo": "Turkey",
+     "pj": 2,
+     "g": 0,
+     "e": 0,
+     "p": 2,
+     "gf": 1,
+     "gc": 5,
+     "pts": 0,
+     "fifa": 27
+    }
+   ],
+   "nombre": "Group 2"
+  },
+  {
+   "equipos": [
+    "Denmark",
+    "Norway",
+    "Portugal",
+    "Wales"
+   ],
+   "tabla": [
+    {
+     "equipo": "Portugal",
+     "pj": 2,
+     "g": 2,
+     "e": 0,
+     "p": 0,
+     "gf": 3,
+     "gc": 1,
+     "pts": 6,
+     "fifa": 7
+    },
+    {
+     "equipo": "Denmark",
+     "pj": 2,
+     "g": 1,
+     "e": 0,
+     "p": 1,
+     "gf": 4,
+     "gc": 3,
+     "pts": 3,
+     "fifa": 21
+    },
+    {
+     "equipo": "Norway",
+     "pj": 2,
+     "g": 1,
+     "e": 0,
+     "p": 1,
+     "gf": 4,
+     "gc": 4,
+     "pts": 3,
+     "fifa": 19
+    },
+    {
+     "equipo": "Wales",
+     "pj": 2,
+     "g": 0,
+     "e": 0,
+     "p": 2,
+     "gf": 0,
+     "gc": 3,
+     "pts": 0,
+     "fifa": 38
+    }
+   ],
+   "nombre": "Group 3"
+  },
+  {
+   "equipos": [
+    "Germany",
+    "Greece",
+    "Netherlands",
+    "Serbia"
+   ],
+   "tabla": [
+    {
+     "equipo": "Greece",
+     "pj": 2,
+     "g": 2,
+     "e": 0,
+     "p": 0,
+     "gf": 3,
+     "gc": 1,
+     "pts": 6,
+     "fifa": 46
+    },
+    {
+     "equipo": "Netherlands",
+     "pj": 2,
+     "g": 1,
+     "e": 1,
+     "p": 0,
+     "gf": 3,
+     "gc": 2,
+     "pts": 4,
+     "fifa": 9
+    },
+    {
+     "equipo": "Germany",
+     "pj": 2,
+     "g": 0,
+     "e": 1,
+     "p": 1,
+     "gf": 1,
+     "gc": 2,
+     "pts": 1,
+     "fifa": 12
+    },
+    {
+     "equipo": "Serbia",
+     "pj": 2,
+     "g": 0,
+     "e": 0,
+     "p": 2,
+     "gf": 2,
+     "gc": 4,
+     "pts": 0,
+     "fifa": 40
+    }
+   ],
+   "nombre": "Group 4"
+  }
+ ],
+ "fifa": [
+  {
+   "equipo": "Spain",
+   "codigo": "ESP",
+   "puesto": 1,
+   "puntos": 1996.0,
+   "cambio": 1
+  },
+  {
+   "equipo": "Argentina",
+   "codigo": "ARG",
+   "puesto": 2,
+   "puntos": 1970.0,
+   "cambio": -1
+  },
+  {
+   "equipo": "France",
+   "codigo": "FRA",
+   "puesto": 3,
+   "puntos": 1949.0,
+   "cambio": 0
+  },
+  {
+   "equipo": "England",
+   "codigo": "ENG",
+   "puesto": 4,
+   "puntos": 1923.0,
+   "cambio": 0
+  },
+  {
+   "equipo": "Brazil",
+   "codigo": "BRA",
+   "puesto": 5,
+   "puntos": 1805.0,
+   "cambio": 1
+  },
+  {
+   "equipo": "Morocco",
+   "codigo": "MAR",
+   "puesto": 6,
+   "puntos": 1804.0,
+   "cambio": 1
+  },
+  {
+   "equipo": "Portugal",
+   "codigo": "POR",
+   "puesto": 7,
+   "puntos": 1788.0,
+   "cambio": -2
+  },
+  {
+   "equipo": "Belgium",
+   "codigo": "BEL",
+   "puesto": 8,
+   "puntos": 1778.0,
+   "cambio": 1
+  },
+  {
+   "equipo": "Netherlands",
+   "codigo": "NED",
+   "puesto": 9,
+   "puntos": 1776.0,
+   "cambio": -1
+  },
+  {
+   "equipo": "Mexico",
+   "codigo": "MEX",
+   "puesto": 10,
+   "puntos": 1754.0,
+   "cambio": 4
+  },
+  {
+   "equipo": "Colombia",
+   "codigo": "COL",
+   "puesto": 11,
+   "puntos": 1740.0,
+   "cambio": 2
+  },
+  {
+   "equipo": "Germany",
+   "codigo": "GER",
+   "puesto": 12,
+   "puntos": 1726.0,
+   "cambio": -2
+  },
+  {
+   "equipo": "Croatia",
+   "codigo": "CRO",
+   "puesto": 13,
+   "puntos": 1723.0,
+   "cambio": -2
+  },
+  {
+   "equipo": "Switzerland",
+   "codigo": "SUI",
+   "puesto": 14,
+   "puntos": 1711.0,
+   "cambio": 5
+  },
+  {
+   "equipo": "Italy",
+   "codigo": "ITA",
+   "puesto": 15,
+   "puntos": 1705.0,
+   "cambio": -3
+  },
+  {
+   "equipo": "USA",
+   "codigo": "USA",
+   "puesto": 16,
+   "puntos": 1690.0,
+   "cambio": 1
+  },
+  {
+   "equipo": "Japan",
+   "codigo": "JPN",
+   "puesto": 17,
+   "puntos": 1674.0,
+   "cambio": 1
+  },
+  {
+   "equipo": "Senegal",
+   "codigo": "SEN",
+   "puesto": 18,
+   "puntos": 1653.0,
+   "cambio": -3
+  },
+  {
+   "equipo": "Norway",
+   "codigo": "NOR",
+   "puesto": 19,
+   "puntos": 1651.0,
+   "cambio": 12
+  },
+  {
+   "equipo": "Uruguay",
+   "codigo": "URU",
+   "puesto": 20,
+   "puntos": 1635.0,
+   "cambio": -4
+  }
+ ],
+ "fifa_fecha": "2026-07-20",
+ "acierto": {
+  "n": 28,
+  "mercados": [
+   {
+    "mercado": "Result",
+    "n": 28,
+    "nuestro": 61.0,
+    "casa": 61.0
+   },
+   {
+    "mercado": "Over 1.5",
+    "n": 28,
+    "nuestro": 71.0,
+    "casa": 71.0
+   },
+   {
+    "mercado": "Over 2.5",
+    "n": 28,
+    "nuestro": 64.0,
+    "casa": 64.0
+   },
+   {
+    "mercado": "Both score",
+    "n": 28,
+    "nuestro": 57.0,
+    "casa": 64.0
+   }
+  ]
+ },
+ "tips": [
+  {
+   "partido": "Germany – Serbia",
+   "local": "Germany",
+   "visitante": "Serbia",
+   "pick": "Germany to win",
+   "p": 78.0,
+   "casa": 76.0,
+   "mejor": 1.3,
+   "mediana": 1.23,
+   "casas": 50
+  },
+  {
+   "partido": "Azerbaijan – Liechtenstein",
+   "local": "Azerbaijan",
+   "visitante": "Liechtenstein",
+   "pick": "Azerbaijan to win",
+   "p": 73.0,
+   "casa": 83.0,
+   "mejor": 1.16,
+   "mediana": 1.13,
+   "casas": 50
+  },
+  {
+   "partido": "Malta – Gibraltar",
+   "local": "Malta",
+   "visitante": "Gibraltar",
+   "pick": "Malta to win",
+   "p": 69.0,
+   "casa": 73.0,
+   "mejor": 1.3,
+   "mediana": 1.27,
+   "casas": 50
+  },
+  {
+   "partido": "Wales – Norway",
+   "local": "Wales",
+   "visitante": "Norway",
+   "pick": "Norway to win",
+   "p": 66.0,
+   "casa": 64.0,
+   "mejor": 1.53,
+   "mediana": 1.48,
+   "casas": 48
+  },
+  {
+   "partido": "Denmark – Portugal",
+   "local": "Denmark",
+   "visitante": "Portugal",
+   "pick": "Both teams score",
+   "p": 57.0,
+   "casa": 58.0,
+   "mejor": 1.64,
+   "mediana": 1.6,
+   "casas": 29
+  },
+  {
+   "partido": "Republic of Ireland – Austria",
+   "local": "Republic of Ireland",
+   "visitante": "Austria",
+   "pick": "Under 2.5 goals",
+   "p": 57.0,
+   "casa": 57.0,
+   "mejor": 1.71,
+   "mediana": 1.65,
+   "casas": 35
+  }
+ ]
+}
