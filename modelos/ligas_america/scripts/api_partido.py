@@ -19,14 +19,24 @@ def pedir(p, q=None):
         if r.status_code != 200: out.append(f"[HTTP {r.status_code}] {p} {q}"); return None
         return r.json()
 def lista(j): return (j.get("data") if isinstance(j, dict) else j) or []
-hoy = (datetime.now(timezone.utc) - timedelta(hours=6)).date().isoformat()
 partido = None
-for f in (hoy, (datetime.now(timezone.utc)).date().isoformat()):
-    for p in lista(pedir("/matches", {"countryName": PAIS, "date": f, "limit": 100})):
-        if CLAVE.lower() in json.dumps(p, ensure_ascii=False).lower():
-            partido = p; break
+# 1) el equipo por nombre; 2) sus últimos/próximos partidos con /matches por equipo y fecha
+cands = []
+for nombre in ("Amatitlan", "Amatitlán", "CSD Amatitlan", "Santa Lucia", "Santa Lucía Cotzumalguapa", "Cotzumalguapa"):
+    for t in lista(pedir("/teams", {"name": nombre})):
+        cands.append(t); out.append(f"equipo: {t.get('id')} {t.get('name')}")
+dias = [(datetime.now(timezone.utc) + timedelta(days=k)).date().isoformat() for k in (-1, 0, 1)]
+for t in cands:
+    for f in dias:
+        for p in lista(pedir("/matches", {"homeTeamId": t["id"], "date": f})) + lista(pedir("/matches", {"awayTeamId": t["id"], "date": f})):
+            out.append(f"partido: {p.get('date')} {p['homeTeam']['name']} - {p['awayTeam']['name']} ({(p.get('league') or {}).get('name')}, {(p.get('state') or {}).get('description')})")
+            if partido is None and any(k in (p['homeTeam']['name'] + p['awayTeam']['name']) for k in ("Amatit", "Luc", "Cotz")):
+                partido = p
     if partido: break
 if not partido:
+    for f in dias:
+        for p in lista(pedir("/matches", {"countryName": PAIS, "date": f, "limit": 100})):
+            out.append(f"GUA {f}: {p['homeTeam']['name']} - {p['awayTeam']['name']} ({(p.get('league') or {}).get('name')})")
     out.append("No encontrado el partido"); open("modelos/ligas_america/api_partido.md","w").write("\n".join(out)); raise SystemExit
 lg = partido["league"]; loc, vis = partido["homeTeam"], partido["awayTeam"]
 out.append(f"# {loc['name']} - {vis['name']} | {lg.get('name')} (id {lg.get('id')}, temporada {lg.get('season')}) | {partido.get('date')}\n")
