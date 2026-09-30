@@ -338,3 +338,21 @@ carpeta se apunta aquí.
   del lienzo a 2,2x con las fuentes de la marca en local. PIL monta el marco,
   el desplazamiento, los toques y las transiciones; ffmpeg lo codifica.
   Sin API.
+
+## 30/09/2026: paquete de marca de 2yellow
+
+- **Qué:** `app_apostador/marca/2yellow_brand/` (y `2yellow_brand.zip`),
+  39 ficheros sacados del logo aprobado (`diseno_nuevo/generador/logo.py`):
+  - icono SVG (oscuro, claro, amarillo, transparente);
+  - iconos de app 1024/512/192 y apple-touch 180;
+  - favicon.ico (16/32/48) + favicon.svg + PNG 16–96 + etiquetas `<head>`;
+  - perfiles 1080 y 400 (oscuro y amarillo, aptos para recorte en círculo);
+  - logotipo horizontal SVG y PNG (oscuro, claro, amarillo, transparente);
+  - palabra sola;
+  - cabecera de X, portada de YouTube, imagen al compartir enlaces
+    (1200×630) e historia (1080×1920).
+- **Cómo:** `marca/generar_marca.py`. Los SVG llevan la fuente Archivo
+  incrustada (licencia OFL, `marca/fuentes/`), así se ven igual sin tenerla
+  instalada. Comprobado a la vista: la palabra sola se cortaba por la derecha
+  y se amplió su lienzo.
+- **Por qué:** petición del usuario.
