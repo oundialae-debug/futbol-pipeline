@@ -149,6 +149,30 @@ mejor de 15. El sesgo existe en el precio pero no deja dinero.
 
 No reabrir "Elo solo" ni "regla del favorito" con estos mismos datos.
 
+## Modelo con saque, fatiga, perfil y cara a cara (30/09/2026): no bate al mercado
+
+`scripts/rasgos_tenis.py` (variables antes de cada partido, control de fuga
+que pasa) y `scripts/modelo_tenis.py` -> `data/tenis/modelo_tenis.md`.
+Entrena 2020-2022, elige en 2023, reentrena 2020-2023 y juzga 2024-2026.
+Comparador: el mercado recalibrado (ya corrige el favorito-marginado).
+
+- Ninguna de 20 configuraciones (10 conjuntos x logística/XGBoost) mejora al
+  mercado recalibrado con significación. Elegida en 2023: "perfil"
+  (logística): -1,41s en 2024-2025, +1,42s en 2026. Ruido. Apostando con
+  ella: +0,80% en 7.776 apuestas, +0,73s.
+- XGBoost empeora SIEMPRE frente a la logística (sobreajuste con ~16.000
+  partidos de entrenamiento), como en fútbol.
+- Pista, no hallazgo: **fatiga** (logística) mejora en las dos pruebas
+  (-1,91s en 2024-2025, -0,95s en 2026) pero empeoraba en 2023 (+0,91s).
+  Solo se podría confirmar con partidos futuros.
+
+**Fallo silencioso encontrado y arreglado:** TennisMyLife WTA 2026 trae
+columnas desplazadas (edad 3.387, altura 20011008 = fecha de nacimiento de
+Peyton Stearns) y hay alturas 0 sueltas en sus Challengers. Metidas en el
+modelo, empeoraban 2026 en +0,0116 de log-loss (diez veces cualquier otra
+diferencia) sin ningún error. Ahora edad fuera de 14-50 y altura fuera de
+150-215 quedan vacías, y `validar_interno.py` cuenta los fuera de rango.
+
 ## Plan (en este orden)
 
 1. Ganador del partido, único mercado con cierre de Pinnacle.

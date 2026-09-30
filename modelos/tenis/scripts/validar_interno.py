@@ -59,12 +59,22 @@ def main():
             reglas[f"{p}_bpSaved>{p}_bpFaced"] = s[f"{p}_bpSaved"] > s[f"{p}_bpFaced"]
             reglas[f"{p} negativo"] = (s[[f"{p}_{c}" for c in STATS]] < 0).any(axis=1)
         malas = pd.concat(reglas, axis=1).any(axis=1)
+        rango = []
+        for p in ("winner", "loser"):
+            for c, lo, hi in (("age", 14, 50), ("ht", 150, 215)):
+                v = pd.to_numeric(d[f"{p}_{c}"], errors="coerce")
+                for i in d.index[v.notna() & ~v.between(lo, hi)][:3]:
+                    rango.append(f"{d.at[i, 'fichero']}: {p}_{c}={d.at[i, f'{p}_{c}']!r} ({d.at[i, f'{p}_name']})")
+                texto_n = int((v.notna() & ~v.between(lo, hi)).sum())
+                if texto_n:
+                    rango.append(f"total {p}_{c} fuera de [{lo}, {hi}]: {texto_n}")
         dup = d.duplicated(subset=["tourney_id", "tourney_date", "winner_name", "loser_name", "round"]).sum()
         ret = d.score.astype(str).str.contains("RET|W/O|DEF|Walkover", case=False).sum()
         out.append(f"| {nombre} | {len(d)} | {len(s)} ({len(s)/len(d):.0%}) | {malas.sum()} | {len(texto)} | "
                    f"{dup} | {(d.winner_name == d.loser_name).sum()} | {ret} ({ret/len(d):.1%}) | {d.score.isna().sum()} |")
-        if malas.sum() or texto:
+        if malas.sum() or texto or rango:
             detalle.append(f"\n## {nombre}\n")
+            detalle += [f"- fuera de rango: {x}" for x in rango]
             detalle += [f"- regla {k}: {int(v.sum())}" for k, v in reglas.items() if v.sum()]
             detalle += [f"- texto: {t}" for t in texto]
             for i in s.index[malas][:10]:

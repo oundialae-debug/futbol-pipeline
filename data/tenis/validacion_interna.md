@@ -13,6 +13,32 @@ Generado por `modelos/tenis/scripts/validar_interno.py`.
 | TennisMyLife previas ATP | 24612 | 23828 (97%) | 12 | 0 | 1 | 0 | 720 (2.9%) | 0 |
 | TennisMyLife WTA | 72224 | 48562 (67%) | 3 | 1 | 0 | 0 | 2397 (3.3%) | 1 |
 
+## Sackmann ATP
+
+- fuera de rango: atp_matches_2013.csv: winner_ht=np.float64(3.0) (Jorge Brian Panta Herreros)
+- fuera de rango: atp_matches_2016.csv: winner_ht=np.float64(3.0) (Jorge Brian Panta Herreros)
+- fuera de rango: atp_matches_2018.csv: winner_ht=np.float64(3.0) (Jorge Brian Panta Herreros)
+- fuera de rango: total winner_ht fuera de [150, 215]: 6
+- fuera de rango: atp_matches_2012.csv: loser_ht=np.float64(3.0) (Jorge Brian Panta Herreros)
+- fuera de rango: atp_matches_2013.csv: loser_ht=np.float64(3.0) (Jorge Brian Panta Herreros)
+- fuera de rango: atp_matches_2021.csv: loser_ht=np.float64(15.0) (Johannes Ingildsen)
+- fuera de rango: total loser_ht fuera de [150, 215]: 6
+
+## Sackmann Challenger+previas ATP
+
+- fuera de rango: atp_matches_qual_chall_2016.csv: winner_ht=np.float64(3.0) (Jorge Brian Panta Herreros)
+- fuera de rango: atp_matches_qual_chall_2016.csv: winner_ht=np.float64(145.0) (Ilija Vucic)
+- fuera de rango: atp_matches_qual_chall_2016.csv: winner_ht=np.float64(145.0) (Ilija Vucic)
+- fuera de rango: total winner_ht fuera de [150, 215]: 52
+- fuera de rango: atp_matches_qual_chall_2016.csv: loser_age=np.float64(53.9) (Charlie Maher)
+- fuera de rango: atp_matches_qual_chall_2017.csv: loser_age=np.float64(50.4) (Rick Kepler)
+- fuera de rango: atp_matches_qual_chall_2018.csv: loser_age=np.float64(51.2) (Jeff Greenwald)
+- fuera de rango: total loser_age fuera de [14, 50]: 3
+- fuera de rango: atp_matches_qual_chall_2012.csv: loser_ht=np.float64(3.0) (Jorge Brian Panta Herreros)
+- fuera de rango: atp_matches_qual_chall_2013.csv: loser_ht=np.float64(3.0) (Jorge Brian Panta Herreros)
+- fuera de rango: atp_matches_qual_chall_2014.csv: loser_ht=np.float64(145.0) (Ilija Vucic)
+- fuera de rango: total loser_ht fuera de [150, 215]: 104
+
 ## Sackmann WTA
 
 - regla w_1stWon>w_1stIn: 1
@@ -23,11 +49,21 @@ Generado por `modelos/tenis/scripts/validar_interno.py`.
 
 ## Sackmann previas+ITF WTA
 
+- fuera de rango: wta_matches_qual_itf_2010.csv: winner_age=np.float64(11.5) (Yue Yuan)
+- fuera de rango: wta_matches_qual_itf_2011.csv: winner_age=np.float64(12.9) (Yue Yuan)
+- fuera de rango: wta_matches_qual_itf_2011.csv: winner_age=np.float64(12.9) (Yue Yuan)
+- fuera de rango: total winner_age fuera de [14, 50]: 19
+- fuera de rango: wta_matches_qual_itf_2010.csv: loser_age=np.float64(11.5) (Yue Yuan)
+- fuera de rango: wta_matches_qual_itf_2011.csv: loser_age=np.float64(53.5) (Gleici Silva Do Espirito Santo)
+- fuera de rango: wta_matches_qual_itf_2011.csv: loser_age=np.float64(12.9) (Yue Yuan)
+- fuera de rango: total loser_age fuera de [14, 50]: 63
 - regla l negativo: 1
 - imposible: wta_matches_qual_itf_2025.csv 20251027 Benedetta Ortenzi - Valentina Abril Bruno
 
 ## TennisMyLife ATP
 
+- fuera de rango: 2026.csv: loser_ht=np.float64(0.0) (Tiago Pereira)
+- fuera de rango: total loser_ht fuera de [150, 215]: 1
 - regla w_ace+w_df>w_svpt: 1
 - regla w_1stIn>w_svpt: 4
 - regla w_1stWon+w_2ndWon>w_svpt: 1
@@ -46,10 +82,34 @@ Generado por `modelos/tenis/scripts/validar_interno.py`.
 
 ## TennisMyLife Challenger
 
+- fuera de rango: 2025_challenger.csv: winner_age=np.float64(56.81) (Miguel Tobon)
+- fuera de rango: 2025_challenger.csv: winner_age=np.float64(56.81) (Miguel Tobon)
+- fuera de rango: 2025_challenger.csv: winner_age=np.float64(56.887) (Miguel Tobon)
+- fuera de rango: total winner_age fuera de [14, 50]: 25
+- fuera de rango: 2010_challenger.csv: winner_ht=np.float64(0.0) (Diego Alvarez)
+- fuera de rango: 2010_challenger.csv: winner_ht=np.float64(0.0) (Diego Alvarez)
+- fuera de rango: 2012_challenger.csv: winner_ht=np.float64(0.0) (Ivan Arenas-Gualda)
+- fuera de rango: total winner_ht fuera de [150, 215]: 26
+- fuera de rango: 2025_challenger.csv: loser_age=np.float64(56.734) (Miguel Tobon)
+- fuera de rango: 2025_challenger.csv: loser_age=np.float64(56.81) (Miguel Tobon)
+- fuera de rango: 2025_challenger.csv: loser_age=np.float64(56.887) (Miguel Tobon)
+- fuera de rango: total loser_age fuera de [14, 50]: 23
+- fuera de rango: 2010_challenger.csv: loser_ht=np.float64(0.0) (Diego Alvarez)
+- fuera de rango: 2010_challenger.csv: loser_ht=np.float64(0.0) (Diego Acosta)
+- fuera de rango: 2010_challenger.csv: loser_ht=np.float64(0.0) (Juan-Pablo Amado)
+- fuera de rango: total loser_ht fuera de [150, 215]: 121
 - texto: 2026_challenger.csv: l_bpFaced='4y' (Javier Barranco Cosano - Martin Krumich)
 
 ## TennisMyLife previas ATP
 
+- fuera de rango: 2010_atp_quali.csv: winner_ht=np.float64(0.0) (Miles Armstrong)
+- fuera de rango: 2010_atp_quali.csv: winner_ht=np.float64(0.0) (Juan-Pablo Amado)
+- fuera de rango: 2010_atp_quali.csv: winner_ht=np.float64(0.0) (Victor-Mugurel Anagnastopol)
+- fuera de rango: total winner_ht fuera de [150, 215]: 7
+- fuera de rango: 2010_atp_quali.csv: loser_ht=np.float64(0.0) (Miles Armstrong)
+- fuera de rango: 2010_atp_quali.csv: loser_ht=np.float64(0.0) (Juan-Pablo Amado)
+- fuera de rango: 2010_atp_quali.csv: loser_ht=np.float64(0.0) (Mauricio Astorga)
+- fuera de rango: total loser_ht fuera de [150, 215]: 24
 - regla w_bpSaved>w_bpFaced: 9
 - regla l_bpSaved>l_bpFaced: 5
 - imposible: 2026_atp_quali.csv 20260524 Jesper de Jong - Fajing Sun
@@ -65,6 +125,22 @@ Generado por `modelos/tenis/scripts/validar_interno.py`.
 
 ## TennisMyLife WTA
 
+- fuera de rango: 2026_wta.csv: winner_age=np.float64(2808.0) (Jaqueline Cristian)
+- fuera de rango: 2026_wta.csv: winner_age=np.float64(2143.0) (Alexandra Eala)
+- fuera de rango: 2026_wta.csv: winner_age=np.float64(3387.0) (Ajla Tomljanovic)
+- fuera de rango: total winner_age fuera de [14, 50]: 6
+- fuera de rango: 2026_wta.csv: winner_ht=np.float64(20011008.0) (Peyton Stearns)
+- fuera de rango: 2026_wta.csv: winner_ht=np.float64(20011008.0) (Peyton Stearns)
+- fuera de rango: 2026_wta.csv: winner_ht=np.float64(20011008.0) (Peyton Stearns)
+- fuera de rango: total winner_ht fuera de [150, 215]: 4
+- fuera de rango: 2026_wta.csv: loser_age=np.float64(2312.0) (Polina Kudermetova)
+- fuera de rango: 2026_wta.csv: loser_age=np.float64(2808.0) (Jaqueline Cristian)
+- fuera de rango: 2026_wta.csv: loser_age=np.float64(2143.0) (Alexandra Eala)
+- fuera de rango: total loser_age fuera de [14, 50]: 6
+- fuera de rango: 2026_wta.csv: loser_ht=np.float64(20011008.0) (Peyton Stearns)
+- fuera de rango: 2026_wta.csv: loser_ht=np.float64(20011008.0) (Peyton Stearns)
+- fuera de rango: 2026_wta.csv: loser_ht=np.float64(20011008.0) (Peyton Stearns)
+- fuera de rango: total loser_ht fuera de [150, 215]: 4
 - regla w_ace+w_df>w_svpt: 1
 - regla w_1stIn>w_svpt: 1
 - regla w_1stWon>w_1stIn: 1
