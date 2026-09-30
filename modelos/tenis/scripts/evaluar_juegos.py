@@ -83,7 +83,8 @@ def main():
     # avisos reales del vigilante (cada minuto, regla del usuario), con su cuota de la API
     av = [pd.read_csv(f) for f in sorted(glob.glob("data/tenis/api_tennis/avisos/*.csv"))]
     if av:
-        a = pd.concat(av).merge(res[["event_key", "juegos_totales"]], on="event_key")
+        a = pd.concat(av).sort_values("hora").drop_duplicates(["event_key", "lado"])   # uno por partido (los reinicios repiten)
+        a = a.merge(res[["event_key", "juegos_totales"]], on="event_key")
         a["gana"] = np.where(a.lado == "menos", a.juegos_totales < a.linea, a.juegos_totales > a.linea)
         a["benef"] = np.where(a.gana, a.cuota_api.astype(float) - 1, -1.0)
         lin += ["", "## Avisos del vigilante (lo que llega al móvil)", "",
