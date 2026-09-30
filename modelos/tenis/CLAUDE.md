@@ -13,12 +13,16 @@ silenciosos) valen igual aquí.
 - **tennis-data.co.uk** (`data/tenis/tennis_data/`): resultados con cuotas de
   cierre (Pinnacle `PSW/PSL`, Bet365, `Max`, `Avg`). ATP desde 2000, WTA desde
   2007. Es la referencia de mercado y **la única fuente independiente** para
-  validar las otras dos. Bloqueada desde el contenedor (403): se baja con
-  `.github/workflows/descargar_tenis.yml` (a mano) y
-  `scripts/descargar_tenis.py`. Resumen: `data/tenis/resumen_descarga.md`.
+  validar las otras dos. **Claude NO la descarga**: limita el uso a
+  particulares y bloquea a los agentes de IA en `robots.txt` (y la carpeta
+  de ficheros ha cambiado de ruta). El workflow que la bajaba (30/09) dio
+  47/47 FALLO con la ejecución en verde; se retiró. El usuario baja los
+  ficheros a mano a `data/tenis/tennis_data_crudo/` (ver su `LEEME.md`) y
+  `scripts/procesar_tennis_data.py` los pasa a CSV
+  (`data/tenis/resumen_tennis_data.md`). Sin ficheros, sale con error.
 - **Sackmann**: los repos `JeffSackmann/tennis_atp` y `tennis_wta` **ya no
-  existen en GitHub** (el clon falló el 30/09 y hay constancia pública de su
-  retirada). Se usa la copia de archivo
+  existen en GitHub**: la API de GitHub da "Not Found" y en su cuenta solo
+  queda `tennis_MatchChartingProject` (`data/tenis/sondeo_sackmann.md`). Se usa la copia de archivo
   `huggingface.co/datasets/Aneeshers/tennis-sackmann-archive`, congelada en
   junio de 2026 (ATP y WTA hasta el 25/05/2026). CC BY-NC-SA 4.0, uso no
   comercial. En `data/tenis/sackmann/`: circuito principal desde 1991,
