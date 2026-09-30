@@ -53,6 +53,24 @@ Consecuencia: cruzarlas entre sí NO detecta errores de origen. El control
 independiente es tennis-data. Sus diferencias sí marcan dónde una de las dos
 corrigió algo.
 
+## Validación interna (30/09/2026): Sackmann limpio, lo nuevo de TennisMyLife no tanto
+
+`scripts/validar_interno.py` -> `data/tenis/validacion_interna.md`. Desde 2000:
+imposibles físicos en stats de saque, texto en columnas numéricas,
+duplicados, ganador = perdedor, retiradas.
+
+- Sackmann ATP: 0 imposibles en 79.299 partidos (91% con stats). WTA: 1 en
+  72.714 (66% con stats). Challenger+previas ATP: 0 en 137.088 (97%).
+- Previas+ITF WTA (Sackmann): 1.354 duplicados y solo 15% con stats. Quitar
+  duplicados antes de usarlo.
+- TennisMyLife: los errores están en lo que ha añadido él, no en lo heredado:
+  Copa Davis del 12/09/2025, previas de Roland Garros 2026 (10 partidos con
+  bpSaved > bpFaced, todos del 24/05/2026) y 2026 tecleado a mano
+  (`l_bpFaced='4y'`, `l_2ndWon='-35.9%'`). Poco en total (~0,01%), pero **la
+  parte reciente de TennisMyLife, la que Sackmann ya no cubre (desde junio de
+  2026), es la menos fiable**, y es justo la que hará falta para pronosticar.
+- Retiradas/walkovers: 3-4% en todas las fuentes. Se apartan al medir precio.
+
 ## Plan (en este orden)
 
 1. Ganador del partido, único mercado con cierre de Pinnacle.

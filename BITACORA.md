@@ -33,6 +33,7 @@ Dónde está cada cosa:
 | Descarga de **TennisMyLife** (ATP, Challenger, previas y WTA; 1991/2010-29/09/2026) y de la **copia de archivo de Sackmann** en Hugging Face (junio de 2026). Desde el contenedor, sin Actions. | Los repos originales de Sackmann ya no existen en GitHub. Aprobada por el usuario. | `modelos/tenis/scripts/descargar_tml_sackmann.py`, `data/tenis/tennismylife/`, `data/tenis/sackmann/`, `data/tenis/resumen_*.md` | este commit |
 | **TennisMyLife no es independiente de Sackmann**: mismo nº de partidos ATP cada año, WTA casi idéntica. Solo tennis-data sirve para validar. | Comprobado partido a partido antes de usarlas como control cruzado. Un primer cruce por `tourney_id`+`match_num` dio diferencias falsas: cada fuente numera distinto. | `modelos/tenis/CLAUDE.md` | este commit |
 | El workflow de tenis baja solo tennis-data y ya no se dispara al empujar (solo a mano). | Sackmann se baja ahora desde el contenedor; así se evita relanzar la descarga en cada cambio del script. | `.github/workflows/descargar_tenis.yml`, `modelos/tenis/scripts/descargar_tenis.py` | este commit |
+| Validación interna de Sackmann y TennisMyLife: imposibles en stats, texto en numéricas, duplicados. Sackmann limpio (0 imposibles en 79.299 partidos ATP); los errores de TennisMyLife están en lo que añade él (Davis 2025, previas RG 2026, 2026 tecleado a mano). | Petición del usuario: cuidado con datos erróneos. | `modelos/tenis/scripts/validar_interno.py`, `data/tenis/validacion_interna.md`, `modelos/tenis/CLAUDE.md` | este commit |
 
 ---
 
