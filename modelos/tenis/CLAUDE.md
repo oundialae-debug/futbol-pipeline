@@ -196,6 +196,32 @@ que aguante en los dos tramos de prueba.
   indicador ahora sería elegir después de mirar: se confirma solo con
   partidos futuros, con la regla escrita antes.
 
+## Fuentes de cuotas para Challenger/ITF y juegos/hándicap (30/09/2026, sin llamadas)
+
+Petición del usuario (opciones 2 y 3): mercados más blandos y otros mercados.
+Solo se leyeron webs y documentación; nada descargado ni llamado.
+
+- **Kaggle "A large Tennis dataset for ATP and ITF betting"** (ehallmar):
+  ganador, spread (juegos/sets) y totales, ATP + Challenger + ITF, cuotas
+  desde ~2010. **Última actualización: 27/08/2018** (así que 2010-2018).
+  915 MB (all_matches.csv 836 MB; betting_moneyline.csv 28 MB). Licencia
+  "Unknown". Qué casas trae: sin comprobar. Descarga: hace falta cuenta de
+  Kaggle; el fichero de partidos no cabe en una subida web de GitHub
+  (límite 100 MB), así que lo práctico es una clave de Kaggle en el entorno.
+  Sirve para la pregunta de fondo (¿están peor puestos los precios en
+  Challenger/ITF y en juegos/hándicap?), no para apostar hoy.
+- **Tennis API (tennis-api.com / RapidAPI)**: 10 $/mes 10.000 peticiones,
+  39 $/mes 75.000. Promete Challenger, ITF, total de juegos, hándicap,
+  apertura/cierre. SIN publicar qué casas, desde qué año ni cuántos partidos
+  por petición: habría que sondearlo antes de creérselo.
+- **OddsPapi**: gratis 250 peticiones/mes, Pinnacle y Betfair, Challenger e
+  ITF, 71 líneas de total de juegos. Su histórico es de UN partido por
+  petición (máx. 3 casas): inútil para backtest; como mucho, seguimiento en
+  papel de unos pocos partidos. (Datos de su propio blog, sin verificar.)
+- The Odds API: sin Challenger, histórico a 10x el coste. Descartada.
+- Scrapers de Tennis Explorer/Flashscore (Apify): condiciones de uso.
+  Descartados.
+
 ## Plan (en este orden)
 
 1. Ganador del partido, único mercado con cierre de Pinnacle.
