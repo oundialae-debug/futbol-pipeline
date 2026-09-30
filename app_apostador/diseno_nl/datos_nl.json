@@ -403,16 +403,24 @@
    "visitante": "Italy",
    "fecha": "2026-10-02T18:45:00.000Z",
    "ronda": "League A - 3",
-   "p": null,
-   "fuente": null
+   "p": [
+    71.0,
+    17.0,
+    13.0
+   ],
+   "fuente": "modelo"
   },
   {
    "local": "Belgium",
    "visitante": "Turkey",
    "fecha": "2026-10-02T18:45:00.000Z",
    "ronda": "League A - 3",
-   "p": null,
-   "fuente": null
+   "p": [
+    67.0,
+    18.0,
+    15.0
+   ],
+   "fuente": "modelo"
   },
   {
    "local": "Croatia",
@@ -431,8 +439,12 @@
    "visitante": "Czech Republic",
    "fecha": "2026-10-03T18:45:00.000Z",
    "ronda": "League A - 3",
-   "p": null,
-   "fuente": null
+   "p": [
+    90.0,
+    8.0,
+    3.0
+   ],
+   "fuente": "modelo"
   }
  ],
  "previa": {

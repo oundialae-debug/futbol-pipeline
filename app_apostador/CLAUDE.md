@@ -16,4 +16,8 @@
 - Cuando el usuario dice «no empieces hasta que diga empieza ya», solo se
   contestan y apuntan sus comentarios. Cada cambio pedido se aplica en todas
   las pantallas donde encaje.
+- **Aspecto de app ya publicada (30/09/2026):** nada de textos provisionales en
+  pantallas, vídeos o imágenes («[odds from API]», «Forecast soon», «Referee
+  not named»...). Lo que falta se quita o se calcula con nuestro modelo; nunca
+  se inventan cuotas ni datos de terceros.
 - Dónde lo dejamos y cómo regenerar: final de `BITACORA.md`.

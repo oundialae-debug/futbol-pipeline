@@ -135,7 +135,7 @@ def fila_prox(p):
         der = (f'<div style="display: grid; grid-template-columns: repeat(3, 44px); gap: 4px; text-align: center">'
                f'{caja(p["p"][0], "1", kl)}{caja(p["p"][1], "X", None)}{caja(p["p"][2], "2", kv)}</div>')
     else:
-        der = f'<span style="width: 140px; text-align: center">{chip("Forecast soon", "#161A23", MUT)}</span>'
+        der = ""
     ing = "England" in (loc, vis)
     tag = (f'<div style="margin-left: 58px; display: flex; gap: 6px">{chip("Your team", "#1E2A66", "#A9B8FF")}'
            f'{chip("2nd v 3rd in the group", "#26301A", LIMA)}</div>') if ing else ""
@@ -225,7 +225,7 @@ GOLES_T = tarjeta("Goals", f'''<div style="display: flex; align-items: center; j
 <div style="display: flex; justify-content: space-between; font-size: 12px; color: {SOFT}"><span>Croatia score first <b style="color: {KC["barra"]}">{int(PV["primero"][0])}%</b></span><span>England first <b style="color: {KE["barra"]}">{int(PV["primero"][1])}%</b></span></div>''', "2yellow model")
 CC_T = tarjeta("Corners &amp; cards", f'''<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px">
 <div style="padding: 12px; border-radius: 16px; background: {SUB}; display: flex; flex-direction: column; gap: 4px"><span style="font-size: 11px; color: {MUT}">Corners expected</span><span style="{DISP}; font-size: 26px">{PV["corners"]}</span><span style="font-size: 12px; color: {SOFT}">Over 8.5: <b style="color: {TXT}">{int(PV["corners_85"])}%</b></span></div>
-<div style="padding: 12px; border-radius: 16px; background: {SUB}; display: flex; flex-direction: column; gap: 4px"><span style="font-size: 11px; color: {MUT}">Yellow cards expected</span><span style="{DISP}; font-size: 26px; color: {AMARILLO}">{PV["tarjetas"]}</span><span style="font-size: 12px; color: {SOFT}">Referee not named yet</span></div></div>''', "2yellow model")
+<div style="padding: 12px; border-radius: 16px; background: {SUB}; display: flex; flex-direction: column; gap: 4px"><span style="font-size: 11px; color: {MUT}">Yellow cards expected</span><span style="{DISP}; font-size: 26px; color: {AMARILLO}">{PV["tarjetas"]}</span><span style="font-size: 12px; color: {SOFT}">Over 3.5: <b style="color: {TXT}">{int(PV["tarjetas_35"])}%</b></span></div></div>''', "2yellow model")
 cuerpo = f'''
 <div style="position: relative; display: flex; flex-direction: column; padding-bottom: 14px">
 {glow(KC["barra"], KE["barra"], 230)}
@@ -239,7 +239,7 @@ cuerpo = f'''
 {tarjeta("Win chance", tres(p1, px, p2, (KC["barra"], KC["texto"]), (KE["barra"], KE["texto"])) +
  '<div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px">' +
  "".join(f'<div style="padding: 10px 12px; border-radius: 14px; background: {SUB}"><span style="display: block; font-size: 11px; color: {MUT}">Fair odds · {k}</span><span style="{DISP}; font-size: 20px">{100 / v:.2f}</span></div>' for k, v in (("1", p1), ("X", px), ("2", p2))) + '</div>'
- + f'<div style="display: flex; justify-content: space-between; font-size: 12px; color: {SOFT}"><span>FIFA <b style="color: {KC["barra"]}">{int(FP[0])}</b> pts</span><span>Bookies: odds from API</span><span><b style="color: {KE["barra"]}">{int(FP[1])}</b> pts</span></div>', "2yellow model")}
+ + f'<div style="display: flex; justify-content: space-between; font-size: 12px; color: {SOFT}"><span>FIFA <b style="color: {KC["barra"]}">{int(FP[0])}</b> pts</span><span>strength + form</span><span><b style="color: {KE["barra"]}">{int(FP[1])}</b> pts</span></div>', "2yellow model")}
 {GOLES_T}
 {CC_T}
 {tarjeta("Form", forma_html("Croatia", KC) + forma_html("England", KE), "last 5 · latest on the right")}
@@ -547,10 +547,8 @@ TOPI = f'''<section style="position: relative; margin: 0 12px; padding: 18px; bo
 <div style="position: relative; display: flex; align-items: center; gap: 8px">{escudo("Croatia", 26, KC)}<span style="font-size: 15px; font-weight: 700">Croatia – England</span>{escudo("England", 26, KE)}</div>
 <div style="position: relative; display: flex; flex-direction: column">
 {"".join(f'<div style="display: flex; align-items: center; gap: 10px; padding: 9px 0; border-top: 1px solid #1E2330"><span style="flex-grow: 1; font-size: 14px; font-weight: 600">{t}</span>{confianza(v)}<span style="{DISP}; font-size: 22px; color: {LIMA}; width: 50px; text-align: right">{int(v)}%</span></div>' for t, v in (("England to win", p2), ("Over 1.5 goals", PV["mas15"]), ("Over 2.5 goals", PV["mas25"]), ("Both teams score", PV["btts"])))}</div>
-<div style="position: relative; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px">
-<div style="padding: 10px 12px; border-radius: 14px; background: {BG}; border: 1px dashed #3A4256; display: flex; flex-direction: column; gap: 4px"><span style="font-size: 11px; color: {MUT}">Bookies</span><span style="{DISP}; font-size: 15px; color: {SOFT}">[odds from API]</span></div>
-<div style="padding: 10px 12px; border-radius: 14px; background: {BG}; border: 1px dashed #3A4256; display: flex; flex-direction: column; gap: 4px"><span style="font-size: 11px; color: {MUT}">Agree?</span><span style="{DISP}; font-size: 15px; color: {SOFT}">from Thu</span></div></div>
-<span style="position: relative; font-size: 11px; color: {MUT}">Bookies' odds arrive about 36 h before kick-off.</span></section>'''
+<div style="position: relative; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px">
+{"".join(f'<div style="padding: 10px 12px; border-radius: 14px; background: {SUB}"><span style="display: block; font-size: 11px; color: {MUT}">Fair odds · {k}</span><span style="{DISP}; font-size: 20px">{100 / v:.2f}</span></div>' for k, v in (("1", p1), ("X", px), ("2", p2)))}</div></section>'''
 
 
 def chip_odds(o):

@@ -304,3 +304,18 @@ carpeta se apunta aquí.
   Chromium y lo monta con ffmpeg (imageio-ffmpeg). Fuentes Archivo e
   Instrument Sans descargadas de Google Fonts para el render. Datos de
   `datos_nl.json`, sin API.
+
+## 30/09/2026: aspecto de app publicada y carrusel de TikTok
+
+- **Qué:** fuera todos los textos provisionales de los dos lienzos.
+  - Quitados: «[odds from API]», «Forecast soon», «Referee not named», «odds
+    · API», «Bookies' odds arrive…».
+  - En su lugar: cuotas justas de nuestro modelo (1/p) y más de 3,5 tarjetas.
+  - Los partidos de la jornada 3 sin pasada del ciclo salen con el modelo en
+    local: Francia–Italia 71/17/13, Bélgica–Turquía 67/18/15, España–Chequia
+    90/8/3.
+  - No se inventan cuotas de casas.
+- **Carrusel:** `diseno_nl/video/carrusel/01…07_cro_eng.png` (1080×1920),
+  último fotograma de cada escena del vídeo (`carrusel_cro_eng.py`).
+- **Regla nueva** en `app_apostador/CLAUDE.md`.
+- **Por qué:** petición del usuario.

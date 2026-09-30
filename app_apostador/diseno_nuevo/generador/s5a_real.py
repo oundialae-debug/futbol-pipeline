@@ -199,7 +199,7 @@ TERM_HTML = tarjeta("Cards thermometer", (
     f'<div style="display: flex; flex-direction: column; gap: 8px; font-size: 13px; color: {SOFT}">'
     f'<span>Over 4.5 cards: <b style="color: {TXT}">{T_P45}%</b></span>'
     f'<span>League average: <b style="color: {TXT}">{T_LIGA:.1f}</b></span>'
-    f'<span>Referee not named yet. Strict one: <b style="color: {TXT}">{T_EST}</b> · lenient: <b style="color: {TXT}">{T_SUA}</b></span>'
+    f'<span>Strict referee: <b style="color: {TXT}">{T_EST}</b> · lenient: <b style="color: {TXT}">{T_SUA}</b></span>'
     f'</div></div>'
     f'<div style="display: flex; gap: 6px; flex-wrap: wrap">{chip("Konaté 3 yellows", "#3A2F0A", AMARILLO)}{chip("Vinícius, Camavinga 2", "#1E2330", SOFT)}{chip("Foyth, Veiga, Mouriño, Buchanan 2", "#1E2330", SOFT)}</div>'), "teams + referee")
 

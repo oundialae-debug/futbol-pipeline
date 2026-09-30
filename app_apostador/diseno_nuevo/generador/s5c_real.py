@@ -279,11 +279,6 @@ page("Elo.dc.html", "2yellow Ranking", 390, 2720, raiz(2720, cuerpo), js_selecto
 pr = DJ["pronosticos"]["real_madrid_villarreal"]
 ca = DJ["pronosticos"]["acierto_casa"]
 cg = DJ["pronosticos"]["calibracion_goles"]
-def cuota_api(t):
-    return (f'<div style="padding: 10px 12px; border-radius: 14px; background: {BG}; border: 1px dashed #3A4256; display: flex; flex-direction: column; gap: 4px">'
-            f'<span style="font-size: 11px; color: {MUT}">{t}</span><span style="{DISP}; font-size: 15px; color: {SOFT}">[odds from API]</span></div>')
-
-
 tips = [("Over 1.5 goals", pr["mas15"], ca["mas15"]["acierta"]), ("Madrid or draw", 87, ca["doble"]["acierta"]),
         ("Over 2.5 goals", pr["mas25"], ca["mas25"]["acierta"]), ("Real Madrid to win", 66, ca["1x2"]["acierta"]),
         ("Both teams score", pr["ambos"], ca["ambos"]["acierta"]), ("Over 4.5 cards", D["termometro"]["p_mas45"], None)]
@@ -295,14 +290,11 @@ TOP = f'''<section style="position: relative; margin: 0 12px; padding: 18px; bor
 <div style="display: flex; flex-direction: column; gap: 6px"><span style="{DISP}; font-size: 28px; line-height: 1.05">Over 1.5 goals</span>
 <div style="display: flex; align-items: center; gap: 8px">{escudo("Real Madrid", 22)}<span style="font-size: 13px; font-weight: 600">Real Madrid – Villarreal</span>{escudo("Villarreal", 22)}</div>
 <div style="display: flex; align-items: center; gap: 8px"><span style="font-size: 13px; color: {SOFT}">Fair odds <b style="color: {TXT}">{100 / pr["mas15"]:.2f}</b></span>{confianza(pr["mas15"])}</div></div></div>
-<div style="position: relative; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px">
-{cuota_api("Best odds")}{cuota_api("Average")}
-<div style="padding: 10px 12px; border-radius: 14px; background: {BG}; border: 1px dashed #3A4256; display: flex; flex-direction: column; gap: 4px"><span style="font-size: 11px; color: {MUT}">Verdict</span><span style="font-size: 12px; font-weight: 800; color: {LIMA}">Good · Fair · Short</span></div></div>
-<span style="position: relative; font-size: 11px; color: {MUT}">Odds come in automatically before kick-off.</span></section>'''
+</section>'''
 MAS = "".join(
     f'<div style="margin: 0 12px; padding: 14px 16px; border-radius: 22px; background: {CARD}; border: 1px solid {BORDE}; display: flex; align-items: center; gap: 14px">'
     f'<div style="flex-grow: 1; display: flex; flex-direction: column; gap: 6px"><span style="font-size: 12px; color: {MUT}">Real Madrid – Villarreal</span><span style="font-size: 16px; font-weight: 700">{n}</span>'
-    f'<div style="display: flex; gap: 6px; flex-wrap: wrap">{confianza(p)}{chip("fair " + f"{100 / p:.2f}")}{chip("odds · API", "#161A23", MUT)}{"" if c else chip("referee not named", "#3A2412", "#FFB27A")}</div></div>'
+    f'<div style="display: flex; gap: 6px; flex-wrap: wrap">{confianza(p)}{chip("fair " + f"{100 / p:.2f}")}</div></div>'
     f'<span style="{DISP}; font-size: 36px; line-height: 1; color: {LIMA}">{round(p)}<span style="font-size: 18px">%</span></span></div>' for n, p, c in tips[1:])
 cal = cg["mas25"]
 COMO = tarjeta("Do our numbers hold up?", lista(
@@ -311,5 +303,5 @@ COMO = tarjeta("Do our numbers hold up?", lista(
     + f'<span style="font-size: 12px; color: {MUT}">Over 2.5 goals · {cg["partidos"]} LaLiga games.</span>', "checked")
 HEAD = f'<header style="display: flex; align-items: center; gap: 10px; padding: 18px 12px 0 16px"><span style="flex-grow: 1; {DISP}; font-size: 34px">Tips</span></header>'
 cuerpo = HEAD + TOP + f'<div style="padding: 6px 16px 0 16px; font-size: 18px; font-weight: 700">More for this match</div>' + MAS + COMO
-page("Tips.dc.html", "Tips", 390, 1390, raiz(1390, cuerpo), JS0, nav_active="t")
+page("Tips.dc.html", "Tips", 390, 1250, raiz(1250, cuerpo), JS0, nav_active="t")
 print("s5c ok")

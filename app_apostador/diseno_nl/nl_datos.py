@@ -145,7 +145,7 @@ for _, f in A[(~A.terminado) & (A.dia <= "2026-10-03")].sort_values("fecha").ite
     if len(x):
         fi = final(x.iloc[-1])
         fila["p"], fila["fuente"] = [r(fi[k] * 100, 0) for k in ("1", "X", "2")], "registro"
-    elif "England" in (f.local, f.visitante):
+    else:   # sin pasada del ciclo todavía: el mismo modelo en local
         fila["p"], fila["fuente"] = modelo(f.local, f.visitante)["p1x2"], "modelo"
     prox.append(fila)
 OUT["proximos"] = prox
