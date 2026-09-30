@@ -11,3 +11,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-09-30 18:01,12167003,Challenger Women Singles,Adana (Turkey) - Qualification,L. Jeanjean,M. Ercan,menos,31.5,0.5767,0.6451,1.444,False
 2026-09-30 19:55,12167241,Challenger Men Singles,Columbus,L. Staeheli,A. Andrade,menos,22.5,1.0,0.6876,1.363,False
 2026-09-30 20:36,12167205,Challenger Men Singles,Mouilleron-Le-Captif,L. Poullain,R. Bertola,menos,31.5,0.594,0.625,1.5,False
+2026-09-30 21:26,12167182,Challenger Women Singles,Adana (Turkey) - Qualification,C. Buyukakcay,L. Stefanini,menos,32.5,0.7612,0.6876,1.363,True
