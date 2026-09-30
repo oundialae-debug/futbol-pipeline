@@ -1,4 +1,4 @@
-# Pronósticos de selecciones (30/09/2026 13:51 UTC)
+# Pronósticos de selecciones (30/09/2026 15:27 UTC)
 
 Tema aparte del proyecto de ambos marcan. Por mercado: **modelo** (selecciones + nota justa de los jugadores + árbitro), **mercado** (mediana de casas sin margen) y **final** (mezcla con el peso que se aprende de los partidos ya jugados, ver `evaluacion.md`). Pronóstico = el lado más probable según final. **Cuota mínima** = 1/probabilidad final: por debajo no compensa.
 
@@ -24,46 +24,6 @@ Ranking FIFA (puntos): Azerbaijan 1132, Liechtenstein 798. Goles esperados 1.62 
 Once probable Azerbaijan: Emin Mahmudov, Bahlul Mustafazada, Renat Dadaşov, A. Xaybulayev, A. Krivotsyuk, Khayal Aliyev, Abbas Hüseynov, Toral Bayramov, Nariman Akhundzade, Elvin Badalov, R. Daşdəmirov
 Once probable Liechtenstein: B. Büchel, Maximilian Goppel, Andreas Malin, S. Lüchinger, Livio Meier, N. Hasler, Aron Sele, Fabio Luque Notaro, Emanuel Zund, Alessio Hasler, Jens Hofer
 
-## Wales - Norway (2026-10-01 18:45 UTC)
-
-Ranking FIFA (puntos): Wales 1517, Norway 1651. Goles esperados 0.92 - 2.34, marcador más probable 0-2. Córners esperados 9.8. Amarillas esperadas 2.7 (árbitro Hernandez, Alejandro, 3 partidos en nuestras ligas, x1.08). Forma del once: Wales -0.04, Norway -0.06. Partidos en el modelo: Wales 16, Norway 22.
-
-| mercado | pronóstico | final | modelo | mercado | cuota mínima | cuota mediana | mejor cuota | casas |
-|---|---|---|---|---|---|---|---|---|
-| 1X2 | **gana Norway** | 66% | 69% | 64% | 1.51 | 1.49 | 1.53 | 48 |
-| Sin empate | **gana Norway (sin empate)** | 81% | 84% | 79% | 1.23 | 1.19 | 1.25 | 12 |
-| Más/menos 2.5 | **más de 2.5 goles** | 61% | 63% | 61% | 1.64 | 1.53 | 1.59 | 35 |
-| Ambos marcan | **ambos marcan: sí** | 55% | 54% | 56% | 1.81 | 1.66 | 1.70 | 29 |
-| Tarjetas | **menos de 3.5 tarjetas** | 53% | 70% | 53% | 1.88 | 1.73 | 1.73 | 1 |
-| Tarjetas | **menos de 4.5 tarjetas** | 82% | 82% | - | 1.23 | nan | nan | 0 |
-| Córners | **más de 8.5 córners** | 54% | 63% | 54% | 1.87 | 1.73 | 1.75 | 10 |
-| Córners | **menos de 9.5 córners** | 59% | 49% | 59% | 1.71 | 1.58 | 1.68 | 9 |
-| Goles | **más de 1.5 goles** | 81% | 84% | 81% | 1.24 | 1.16 | 1.21 | 35 |
-| Goles | **Norway marca primero** | 67% | 72% | 67% | 1.48 | 1.40 | 1.44 | 5 |
-
-Once probable Wales: N. Williams, E. Ampadu, Joe Rodon, J. Dasilva, D. James, D. Ward, J. Sheehan, S. Thomas, K. Moore, B. Johnson, B. Davies
-Once probable Norway: E. Haaland, M. Ødegaard, A. Nusa, A. Schjelderup, Ø. Nyland, J. Ryerson, S. Berge, P. Berg, K. Ajer, Torbjørn Heggem, F. Aursnes
-
-## Greece - Netherlands (2026-10-01 18:45 UTC)
-
-Ranking FIFA (puntos): Greece 1473, Netherlands 1776. Goles esperados 0.95 - 1.90, marcador más probable 0-1. Córners esperados 8.2. Amarillas esperadas 2.8 (árbitro Guida, Marco, 29 partidos en nuestras ligas, x1.07). Forma del once: Greece +0.01, Netherlands -0.07. Partidos en el modelo: Greece 16, Netherlands 20.
-
-| mercado | pronóstico | final | modelo | mercado | cuota mínima | cuota mediana | mejor cuota | casas |
-|---|---|---|---|---|---|---|---|---|
-| 1X2 | **gana Netherlands** | 53% | 60% | 46% | 1.90 | 2.05 | 2.15 | 50 |
-| Sin empate | **gana Netherlands (sin empate)** | 68% | 76% | 60% | 1.46 | 1.55 | 1.57 | 12 |
-| Más/menos 2.5 | **más de 2.5 goles** | 56% | 54% | 56% | 1.78 | 1.67 | 1.77 | 35 |
-| Ambos marcan | **ambos marcan: sí** | 56% | 52% | 59% | 1.79 | 1.57 | 1.60 | 29 |
-| Tarjetas | **menos de 3.5 tarjetas** | 53% | 69% | 53% | 1.88 | 1.73 | 1.73 | 1 |
-| Tarjetas | **menos de 4.5 tarjetas** | 81% | 81% | - | 1.23 | nan | nan | 0 |
-| Córners | **más de 8.5 córners** | 51% | 44% | 51% | 1.96 | 1.81 | 1.85 | 10 |
-| Córners | **menos de 9.5 córners** | 60% | 68% | 60% | 1.66 | 1.54 | 1.58 | 8 |
-| Goles | **más de 1.5 goles** | 78% | 78% | 78% | 1.29 | 1.20 | 1.23 | 35 |
-| Goles | **Netherlands marca primero** | 56% | 67% | 56% | 1.77 | 1.70 | 1.73 | 5 |
-
-Once probable Greece: K. Mavropanos, K. Tzolakis, C. Tzolis, K. Karetsas, D. Kourbelis, K. Tsimikas, A. Tetteh, G. Vagiannidis, P. Retsos, V. Pavlidis, C. Zafeiris
-Once probable Netherlands: J. van Hecke, C. Gakpo, Frenkie de Jong, B. Verbruggen, V. van Dijk, B. Brobbey, C. Summerville, T. Reijnders, M. van de Ven, R. Gravenberch, D. Dumfries
-
 ## Israel - Kosovo National Team (2026-10-01 18:45 UTC)
 
 Ranking FIFA (puntos): Israel 1334, Kosovo National Team 1319. Goles esperados 1.12 - 1.59, marcador más probable 1-1. Córners esperados 7.3. Amarillas esperadas 3.6 (árbitro Petrescu, Radu Marian, 0 partidos en nuestras ligas, x1.00). Forma del once: Israel +0.02, Kosovo National Team +0.02. Partidos en el modelo: Israel 14, Kosovo National Team 15.
@@ -84,25 +44,25 @@ Ranking FIFA (puntos): Israel 1334, Kosovo National Team 1319. Goles esperados 1
 Once probable Israel: O. Gloukh, Stav Lemkin, M. Solomon, E. Peretz, G. Kanichowsky, R. Revivo, Dor Turgeman, Dor Peretz, N. Stoioanov, Daniel Peretz, G. Mizrahi
 Once probable Kosovo National Team: A. Murić, Florent Muslija, Kreshnik Hajrizi, V. Muriqi, L. Avdullahu, L. Dellova, I. Krasniqi, M. Vojvoda, A. Hajdari, D. Gallapeni, V. Hodža
 
-## Malta - Gibraltar (2026-10-01 18:45 UTC)
+## Greece - Netherlands (2026-10-01 18:45 UTC)
 
-Ranking FIFA (puntos): Malta 993, Gibraltar 820. Goles esperados 1.86 - 0.68, marcador más probable 1-0. Córners esperados 9.5. Amarillas esperadas 3.8 (árbitro Bandic, Antoni, 0 partidos en nuestras ligas, x1.00). Forma del once: Malta +0.00, Gibraltar +0.00. Partidos en el modelo: Malta 16, Gibraltar 12.
+Ranking FIFA (puntos): Greece 1473, Netherlands 1776. Goles esperados 0.95 - 1.90, marcador más probable 0-1. Córners esperados 8.2. Amarillas esperadas 2.8 (árbitro Guida, Marco, 29 partidos en nuestras ligas, x1.07). Forma del once: Greece +0.01, Netherlands -0.07. Partidos en el modelo: Greece 16, Netherlands 20.
 
 | mercado | pronóstico | final | modelo | mercado | cuota mínima | cuota mediana | mejor cuota | casas |
 |---|---|---|---|---|---|---|---|---|
-| 1X2 | **gana Malta** | 69% | 65% | 73% | 1.44 | 1.27 | 1.30 | 50 |
-| Sin empate | **gana Malta (sin empate)** | 86% | 83% | 88% | 1.17 | 1.04 | 1.06 | 5 |
-| Más/menos 2.5 | **menos de 2.5 goles** | 53% | 53% | 53% | 1.88 | 1.75 | 1.83 | 35 |
-| Ambos marcan | **ambos marcan: no** | 62% | 58% | 66% | 1.61 | 1.41 | 1.50 | 29 |
-| Tarjetas | **menos de 3.5 tarjetas** | 51% | 51% | - | 1.97 | nan | nan | 0 |
-| Tarjetas | **menos de 4.5 tarjetas** | 66% | 66% | - | 1.52 | nan | nan | 0 |
-| Córners | **más de 8.5 córners** | 53% | 59% | 53% | 1.87 | 1.73 | 1.74 | 7 |
-| Córners | **menos de 9.5 córners** | 57% | 53% | 57% | 1.75 | 1.61 | 1.63 | 6 |
-| Goles | **más de 1.5 goles** | 70% | 72% | 70% | 1.43 | 1.32 | 1.35 | 35 |
-| Goles | **Malta marca primero** | 80% | 73% | 80% | 1.25 | 1.25 | 1.30 | 5 |
+| 1X2 | **gana Netherlands** | 53% | 60% | 46% | 1.90 | 2.05 | 2.15 | 50 |
+| Sin empate | **gana Netherlands (sin empate)** | 68% | 76% | 60% | 1.46 | 1.55 | 1.57 | 12 |
+| Más/menos 2.5 | **más de 2.5 goles** | 56% | 54% | 56% | 1.78 | 1.67 | 1.77 | 35 |
+| Ambos marcan | **ambos marcan: sí** | 56% | 52% | 59% | 1.79 | 1.57 | 1.60 | 29 |
+| Tarjetas | **menos de 3.5 tarjetas** | 53% | 69% | 53% | 1.88 | 1.73 | 1.73 | 1 |
+| Tarjetas | **menos de 4.5 tarjetas** | 81% | 81% | - | 1.23 | nan | nan | 0 |
+| Córners | **más de 8.5 córners** | 51% | 44% | 51% | 1.96 | 1.81 | 1.85 | 10 |
+| Córners | **menos de 9.5 córners** | 60% | 68% | 60% | 1.66 | 1.54 | 1.58 | 8 |
+| Goles | **más de 1.5 goles** | 78% | 78% | 78% | 1.29 | 1.20 | 1.23 | 35 |
+| Goles | **Netherlands marca primero** | 56% | 67% | 56% | 1.77 | 1.70 | 1.73 | 5 |
 
-Once probable Malta: Teddy Teuma, I. Cardona, Henry Bonello, Alexander Satariano, Matthew Guillaumier, Zach Muscat, I. Chouaref, Paul Mbong, Kurt Shaw, Enrico Pepe, Ryan Camenzuli
-Once probable Gibraltar: Jaylan Hankins, Bernardo Lopes, Dan Bent, T. De Barr, Graeme Torrilla, Ethan Jolley, Carlos Richards, J. Scanlon, Nicholas Pozo, Kian Ronan, Jaiden Bartolo
+Once probable Greece: K. Mavropanos, K. Tzolakis, C. Tzolis, K. Karetsas, D. Kourbelis, K. Tsimikas, A. Tetteh, G. Vagiannidis, P. Retsos, V. Pavlidis, C. Zafeiris
+Once probable Netherlands: J. van Hecke, C. Gakpo, Frenkie de Jong, B. Verbruggen, V. van Dijk, B. Brobbey, C. Summerville, T. Reijnders, M. van de Ven, R. Gravenberch, D. Dumfries
 
 ## Republic of Ireland - Austria (2026-10-01 18:45 UTC)
 
@@ -163,6 +123,46 @@ Ranking FIFA (puntos): Denmark 1619, Portugal 1788. Goles esperados 1.16 - 1.64,
 
 Once probable Denmark: P. Højbjerg, M. Damsgaard, A. Bah, M. Hjulmand, J. Andersen, M. Hermansen, R. Kristensen, J. Mæhle, Rasmus Højlund, Victor Mow Froholdt, Oliver Provstgaard
 Once probable Portugal: Vitinha, Bruno Fernandes, João Félix, Diogo Costa, Nuno Mendes, Rúben Dias, Renato Veiga, João Neves, Cristiano Ronaldo, João Cancelo, Pedro Neto
+
+## Wales - Norway (2026-10-01 18:45 UTC)
+
+Ranking FIFA (puntos): Wales 1517, Norway 1651. Goles esperados 0.92 - 2.34, marcador más probable 0-2. Córners esperados 9.8. Amarillas esperadas 2.7 (árbitro Hernandez, Alejandro, 3 partidos en nuestras ligas, x1.08). Forma del once: Wales -0.04, Norway -0.06. Partidos en el modelo: Wales 16, Norway 22.
+
+| mercado | pronóstico | final | modelo | mercado | cuota mínima | cuota mediana | mejor cuota | casas |
+|---|---|---|---|---|---|---|---|---|
+| 1X2 | **gana Norway** | 66% | 69% | 64% | 1.51 | 1.49 | 1.53 | 48 |
+| Sin empate | **gana Norway (sin empate)** | 81% | 84% | 79% | 1.23 | 1.19 | 1.25 | 12 |
+| Más/menos 2.5 | **más de 2.5 goles** | 61% | 63% | 61% | 1.64 | 1.53 | 1.59 | 35 |
+| Ambos marcan | **ambos marcan: sí** | 55% | 54% | 56% | 1.81 | 1.66 | 1.70 | 29 |
+| Tarjetas | **menos de 3.5 tarjetas** | 53% | 70% | 53% | 1.88 | 1.73 | 1.73 | 1 |
+| Tarjetas | **menos de 4.5 tarjetas** | 82% | 82% | - | 1.23 | nan | nan | 0 |
+| Córners | **más de 8.5 córners** | 54% | 63% | 54% | 1.87 | 1.73 | 1.75 | 10 |
+| Córners | **menos de 9.5 córners** | 59% | 49% | 59% | 1.71 | 1.58 | 1.68 | 9 |
+| Goles | **más de 1.5 goles** | 81% | 84% | 81% | 1.24 | 1.16 | 1.21 | 35 |
+| Goles | **Norway marca primero** | 67% | 72% | 67% | 1.48 | 1.40 | 1.44 | 5 |
+
+Once probable Wales: N. Williams, E. Ampadu, Joe Rodon, J. Dasilva, D. James, D. Ward, J. Sheehan, S. Thomas, K. Moore, B. Johnson, B. Davies
+Once probable Norway: E. Haaland, M. Ødegaard, A. Nusa, A. Schjelderup, Ø. Nyland, J. Ryerson, S. Berge, P. Berg, K. Ajer, Torbjørn Heggem, F. Aursnes
+
+## Malta - Gibraltar (2026-10-01 18:45 UTC)
+
+Ranking FIFA (puntos): Malta 993, Gibraltar 820. Goles esperados 1.86 - 0.68, marcador más probable 1-0. Córners esperados 9.5. Amarillas esperadas 3.8 (árbitro Bandic, Antoni, 0 partidos en nuestras ligas, x1.00). Forma del once: Malta +0.00, Gibraltar +0.00. Partidos en el modelo: Malta 16, Gibraltar 12.
+
+| mercado | pronóstico | final | modelo | mercado | cuota mínima | cuota mediana | mejor cuota | casas |
+|---|---|---|---|---|---|---|---|---|
+| 1X2 | **gana Malta** | 69% | 65% | 73% | 1.44 | 1.27 | 1.30 | 50 |
+| Sin empate | **gana Malta (sin empate)** | 86% | 83% | 88% | 1.17 | 1.04 | 1.06 | 5 |
+| Más/menos 2.5 | **menos de 2.5 goles** | 53% | 53% | 53% | 1.88 | 1.75 | 1.83 | 35 |
+| Ambos marcan | **ambos marcan: no** | 62% | 58% | 66% | 1.61 | 1.41 | 1.50 | 29 |
+| Tarjetas | **menos de 3.5 tarjetas** | 51% | 51% | - | 1.97 | nan | nan | 0 |
+| Tarjetas | **menos de 4.5 tarjetas** | 66% | 66% | - | 1.52 | nan | nan | 0 |
+| Córners | **más de 8.5 córners** | 53% | 59% | 53% | 1.87 | 1.73 | 1.74 | 7 |
+| Córners | **menos de 9.5 córners** | 57% | 53% | 57% | 1.75 | 1.61 | 1.63 | 6 |
+| Goles | **más de 1.5 goles** | 70% | 72% | 70% | 1.43 | 1.32 | 1.35 | 35 |
+| Goles | **Malta marca primero** | 80% | 73% | 80% | 1.25 | 1.25 | 1.30 | 5 |
+
+Once probable Malta: Teddy Teuma, I. Cardona, Henry Bonello, Alexander Satariano, Matthew Guillaumier, Zach Muscat, I. Chouaref, Paul Mbong, Kurt Shaw, Enrico Pepe, Ryan Camenzuli
+Once probable Gibraltar: Jaylan Hankins, Bernardo Lopes, Dan Bent, T. De Barr, Graeme Torrilla, Ethan Jolley, Carlos Richards, J. Scanlon, Nicholas Pozo, Kian Ronan, Jaiden Bartolo
 
 ## Cuánto fiarse
 
