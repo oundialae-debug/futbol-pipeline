@@ -211,3 +211,13 @@ carpeta se apunta aquí.
   cuotas de la casa del informe son previas al partido.
 - **Ficheros:** `datos_extra.py`, `datos_extra.json`,
   `diseno_nuevo/generador/*.py`, `diseno_nuevo/project/*`.
+
+## 30/09/2026: duelos con cada equipo en su lado
+
+- **Qué:** en «Head to head» (estadísticas) el Atlético va siempre a la
+  izquierda y el Madrid a la derecha, en dos apartados (ataque de cada uno);
+  antes el atacante iba siempre a la izquierda y el Madrid cambiaba de lado.
+  Nombres con inicial («M. Cucurella», «Vinícius J.»).
+- **Por qué:** comentario del usuario en el lienzo.
+- **Ficheros:** `diseno_nuevo/generador/s5b_real.py`, `project/Stats.dc.html`,
+  `project/canvas.json`. Sin API.

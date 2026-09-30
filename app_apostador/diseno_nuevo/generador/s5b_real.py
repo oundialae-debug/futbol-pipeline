@@ -226,26 +226,49 @@ def apellido(n):
     return t[0] if t[-1] in ("Júnior", "Junior") else t[-1]
 
 
-def duelo(p, k_at, k_df):
-    a_, d_ = p["at"], p["df"]
-    gana_a = (a_["nota"] or 0) >= (d_["nota"] or 0)
+def corto(n):
+    """Inicial y apellido: «M. Cucurella», «Vinícius J.»; los que ya vienen así o de una palabra, igual."""
+    t = n.split(" ")
+    if len(t) < 2 or t[0].endswith("."):
+        return n
+    if t[-1] in ("Júnior", "Junior"):
+        return f"{t[0]} J."
+    return f"{t[0][0]}. {' '.join(t[1:])}"
 
-    def caja(j, k, lado, gana, datos):
+
+def duelo(p, atm_ataca):
+    """Atlético siempre a la izquierda y Madrid a la derecha, ataque o defensa."""
+    at, df = p["at"], p["df"]
+    izq, der = (at, df) if atm_ataca else (df, at)
+    gana_i = (izq["nota"] or 0) >= (der["nota"] or 0)
+
+    def datos(j, ataca):
+        if ataca:
+            return f'{j["duelos"]}/{j["duelos_t"]} duels · {j["regates"]} dribbles'
+        return f'{j["duelos"]}/{j["duelos_t"]} duels · {j["entradas"] + j["intercep"]} tkl+int'
+
+    def caja(j, k, lado, gana, ataca):
         return (f'<div style="flex: 1 1 0; min-width: 0; display: flex; flex-direction: column; gap: 4px; align-items: {"flex-start" if lado == "i" else "flex-end"}">'
-                f'<div style="display: flex; align-items: center; gap: 6px; flex-direction: {"row" if lado == "i" else "row-reverse"}">{franjas(k, 18)}<span style="font-size: 14px; font-weight: 700; white-space: nowrap">{apellido(j["jugador"])}</span></div>'
-                f'<span style="font-size: 11px; color: {MUT}">{datos} · {j["min"]}\'</span>'
+                f'<div style="display: flex; align-items: center; gap: 6px; flex-direction: {"row" if lado == "i" else "row-reverse"}">{franjas(k, 18)}<span style="font-size: 14px; font-weight: 700; white-space: nowrap">{corto(j["jugador"])}</span></div>'
+                f'<span style="font-size: 11px; color: {MUT}">{datos(j, ataca)} · {j["min"]}\'</span>'
                 f'<span style="padding: 2px 8px; border-radius: 8px; background: {k["barra"] if gana else "#2A3040"}; color: {k["texto"] if gana else TXT}; {DISP}; font-size: 15px">{j["nota"]:.1f}</span></div>')
-    da = f'{a_["duelos"]}/{a_["duelos_t"]} duels · {a_["regates"]} dribbles'
-    dd = f'{d_["duelos"]}/{d_["duelos_t"]} duels · {d_["entradas"] + d_["intercep"]} tkl+int'
     return (f'<div style="display: flex; align-items: center; gap: 8px; padding: 10px 0; border-top: 1px solid #1E2330">'
-            + caja(a_, k_at, "i", gana_a, da) + f'<span style="{DISP}; font-size: 12px; color: {MUT}">VS</span>' + caja(d_, k_df, "d", not gana_a, dd) + '</div>')
+            + caja(izq, KA, "i", gana_i, atm_ataca) + f'<span style="{DISP}; font-size: 12px; color: {MUT}">VS</span>'
+            + caja(der, KB, "d", not gana_i, not atm_ataca) + '</div>')
+
+
+def subtitulo(txt):
+    return f'<span style="padding-top: 6px; font-size: 11px; font-weight: 800; letter-spacing: 0.6px; color: {MUT}">{txt}</span>'
 
 
 ZONAS = (zona_html("Atlético attack vs Madrid defence", DU["atm_ataque"], KA, KB, "Atlético", "Madrid")
          + zona_html("Madrid attack vs Atlético defence", DU["rma_ataque"], KB, KA, "Madrid", "Atlético"))
-DUELOS = tarjeta("Head to head", "".join(duelo(p, KA, KB) for p in DU["pares_atm"]) + "".join(duelo(p, KB, KA) for p in DU["pares_rma"])
+CABEZA_D = (f'<div style="display: flex; justify-content: space-between; align-items: center"><span style="display: flex; align-items: center; gap: 6px; font-size: 12px; font-weight: 700">{franjas(KA, 14)}Atlético</span>'
+            f'<span style="display: flex; align-items: center; gap: 6px; font-size: 12px; font-weight: 700">Real Madrid{franjas(KB, 14)}</span></div>')
+DUELOS = tarjeta("Head to head", CABEZA_D + subtitulo("ATLÉTICO ATTACKING") + "".join(duelo(p, True) for p in DU["pares_atm"])
+                 + subtitulo("MADRID ATTACKING") + "".join(duelo(p, False) for p in DU["pares_rma"])
                  + f'<span style="font-size: 11px; color: {MUT}">Paired by position in the lineup. Rating decides.</span>', "who beat whom")
-page("Stats.dc.html", "Match stats", 390, 3000, raiz(3000, cabecera("Stats", True) + POSESION + ZONAS + DUELOS + bloques), JS0, nav_active="m")
+page("Stats.dc.html", "Match stats", 390, 3090, raiz(3090, cabecera("Stats", True) + POSESION + ZONAS + DUELOS + bloques), JS0, nav_active="m")
 
 # ---------------------------------------------------------------- alineaciones reales
 A = D["alineaciones_informe"]
