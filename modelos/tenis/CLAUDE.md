@@ -340,6 +340,29 @@ por serie. Faltan Challenger ATP e ITF (descargando).
   Fallo arreglado: el texto de juegos empieza "If the number of...", y el
   patrón de nombres cogía esa frase (17 emparejados en vez de ~500).
 
+## Objetivo: ACERTAR MÁS, no ganar al mercado (30/09/2026)
+
+Aclaración del usuario: lo que se busca es acertar más, no batir al mercado.
+`scripts/acierto.py` -> `data/tenis/acierto.md`, ventana móvil 2021-2026,
+27.603 partidos:
+
+| opción | acierto | log-loss |
+|---|---|---|
+| cuota sin margen | **68,34%** | 0,5834 |
+| cuota + Elo + puntos | 68,31% | 0,5834 |
+| puntos solo (sin cuota) | **67,14%** | 0,6082 |
+| Elo + puntos (sin cuota) | 66,83% | 0,5987 |
+| Elo solo | 66,27% | 0,6058 |
+
+- Con cuota, lo que más acierta es la cuota; añadir modelos no sube el
+  acierto (discrepan en 382 de 27.603 partidos, -0,04%, -0,51s).
+- Sin cuota, el mejor en acierto es el modelo de puntos; en calidad de la
+  probabilidad, Elo + puntos.
+- Techo ~68% en conjunto: 74% en Grand Slam ATP, 65% en ATP 250. Igual en
+  todos los niveles: no hace falta un modelo por nivel.
+- **Uso recomendado:** con cuota -> la cuota; sin cuota -> modelo de puntos
+  (da también juegos, hándicap y sets).
+
 ## Plan (en este orden)
 
 1. Ganador del partido, único mercado con cierre de Pinnacle.
