@@ -279,6 +279,20 @@ móvil 2021-2026 (cada año con capa ajustada solo con los anteriores):
 Como dice la literatura, el modelo de puntos no gana en el ganador. Su sitio
 es el total de juegos y el hándicap: se prueba contra Kalshi.
 
+## Cuota + Elo + puntos juntos (30/09/2026): la mejor combinación, sin dinero
+
+`scripts/mezcla_tres.py` -> `data/tenis/mezcla_tres.md`. Pregunta del
+usuario (en fútbol la cuota como variable fue lo mejor). Ventana móvil
+2021-2026 contra el mercado recalibrado:
+- 2021 peor (+3,43s; solo 2020 para ajustar), 2022 -1,43s, **2023 -2,63s**,
+  2024 +0,13s, 2025 -1,77s, 2026 -0,10s. Total fijado de antemano
+  2021-2026: +1,83s (peor) y apuestas -1,49% en 11.430 (-1,84s).
+- Pesos estables desde 2022: cuota ~1,1, **Elo negativo (-0,04 a -0,13),
+  puntos positivo (+0,02 a +0,07)**: aprovecha cuando el modelo de puntos ve
+  mejor a un jugador que el Elo. 2022-2026 apostando: ~0%.
+- No se quita 2021 después de verlo. Es la versión a vigilar con partidos
+  futuros, no un hallazgo.
+
 ## Plan (en este orden)
 
 1. Ganador del partido, único mercado con cierre de Pinnacle.
