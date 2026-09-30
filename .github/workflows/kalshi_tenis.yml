@@ -2,9 +2,10 @@ name: Kalshi tenis (precios previos al partido)
 
 # API pública de Kalshi, sin clave; aprobado por el usuario el 30/09/2026.
 # Corre aquí para no gastar la sesión de Claude. Una máquina por serie, en
-# paralelo (el límite de ritmo de Kalshi es por conexión). En ITF, muestra
-# fija de 4.000 mercados antiguos por serie (petición del usuario: reducir
-# tiempo); el resto completo. Guarda en la rama que lo lanza. Reanudable.
+# paralelo. Kalshi limita a ~1 petición/s efectiva en los mercados antiguos
+# (medido: 2.000 mercados en 20 min), así que de los anteriores al 01/08/2026
+# se toma una muestra fija de 1.500 por serie (petición del usuario: reducir
+# tiempo); los recientes van completos. Guarda en la rama que lo lanza.
 on:
   workflow_dispatch:
   push:
@@ -22,15 +23,15 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          - {serie: KXATPCHALLENGERMATCH, max: ""}
-          - {serie: KXWTACHALLENGERMATCH, max: ""}
-          - {serie: KXATPMATCH, max: ""}
-          - {serie: KXWTAMATCH, max: ""}
-          - {serie: KXATPGTOTAL, max: ""}
-          - {serie: KXATPGSPREAD, max: ""}
-          - {serie: KXWTAGTOTAL, max: ""}
-          - {serie: KXITFMATCH, max: "--max=4000"}
-          - {serie: KXITFWMATCH, max: "--max=4000"}
+          - {serie: KXATPCHALLENGERMATCH, max: "--max=1500"}
+          - {serie: KXWTACHALLENGERMATCH, max: "--max=1500"}
+          - {serie: KXATPMATCH, max: "--max=1500"}
+          - {serie: KXWTAMATCH, max: "--max=1500"}
+          - {serie: KXATPGTOTAL, max: "--max=1500"}
+          - {serie: KXATPGSPREAD, max: "--max=1500"}
+          - {serie: KXWTAGTOTAL, max: "--max=1500"}
+          - {serie: KXITFMATCH, max: "--max=1500"}
+          - {serie: KXITFWMATCH, max: "--max=1500"}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5

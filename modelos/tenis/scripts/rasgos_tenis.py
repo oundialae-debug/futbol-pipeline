@@ -116,4 +116,30 @@ def calcular(d):
         r[f"zurdo_{lado}"] = (d[f"{p}_hand"] == "L").astype(float).values
         r[f"ioc_{lado}"] = d[f"{p}_ioc"].astype(str).values if f"{p}_ioc" in d else ""
         r[f"entry_{lado}"] = d[f"{p}_entry"].astype(str).str.upper().values if f"{p}_entry" in d else ""
+    r["pista_rapida"] = ritmo_pista(d)
     return r
+
+
+def ritmo_pista(d):
+    """Velocidad de pista por torneo SIN fuga: tasa de aces (aces / puntos de saque) de la
+    edición ANTERIOR más reciente del mismo torneo, dividida por la media de su superficie ese
+    año, menos 1 (0 = pista media; +0,2 = 20% más aces de lo normal en esa superficie)."""
+    x = pd.DataFrame({"nombre": d["tourney_name"].astype(str).str.lower().str.strip(),
+                      "año": d["inicio"].dt.year, "sup": d["sup"],
+                      "ace": num(d, "w_ace") + num(d, "l_ace"), "svpt": num(d, "w_svpt") + num(d, "l_svpt")})
+    ok = x["svpt"] > 0
+    ed = x[ok].groupby(["nombre", "año", "sup"])[["ace", "svpt"]].sum()
+    ed = ed[ed["svpt"] >= 1000]                                   # ediciones con muestra suficiente
+    media = x[ok].groupby(["año", "sup"])[["ace", "svpt"]].sum()
+    ed["rel"] = (ed["ace"] / ed["svpt"]) / (media["ace"] / media["svpt"]).reindex(
+        ed.index.droplevel("nombre")).values - 1
+    rel = ed["rel"].reset_index().sort_values("año")
+    salida = np.full(len(d), np.nan)
+    por_torneo = {k: g for k, g in rel.groupby(["nombre", "sup"])}
+    for i, (n, a, s) in enumerate(zip(x["nombre"].values, x["año"].values, x["sup"].values)):
+        g = por_torneo.get((n, s))
+        if g is not None:
+            prev = g[g["año"] < a]
+            if len(prev):
+                salida[i] = prev["rel"].values[-1]
+    return salida

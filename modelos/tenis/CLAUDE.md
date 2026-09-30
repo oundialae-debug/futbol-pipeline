@@ -237,6 +237,25 @@ Solo se leyeron webs y documentación; nada descargado ni llamado.
 - Scrapers de Tennis Explorer/Flashscore (Apify): condiciones de uso.
   Descartados.
 
+## Desfase horario, altitud y velocidad de pista (30/09/2026): nada, una pista débil
+
+Tres variables de una propuesta de "pipeline" con redes de grafos que el
+usuario trajo (el resto de esa propuesta necesita tracking 3D que no es
+público). `scripts/entorno.py` -> `data/tenis/entorno.md`. Entrena
+2020-2023, juzga 2024-2026 contra el mercado recalibrado.
+
+- desfase horario pendiente (horas de diferencia - días desde el último
+  partido en la sede anterior): cambia de signo entre entreno y prueba. Nada.
+- altitud x diferencia de saque: cambia de signo. Nada.
+- velocidad de pista (aces de la edición ANTERIOR del torneo) x diferencia
+  de saque: +0,49s entreno, +2,05s prueba, mejora el log-loss en los dos
+  tramos (-0,71s y -1,51s). Pista débil, no llega a 2,5s.
+
+**Fallo silencioso encontrado:** sin estandarizar, altitud y pista (valores
+~0,005) daban coeficiente 0 y 0,00 sigmas: el ajustador se quedaba parado
+sin avisar. Estandarizar SIEMPRE antes de una logística con variables de
+escala pequeña.
+
 ## Plan (en este orden)
 
 1. Ganador del partido, único mercado con cierre de Pinnacle.
