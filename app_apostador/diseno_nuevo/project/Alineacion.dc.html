@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Lineups</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,500..900&amp;family=Instrument+Sans:wght@400;500;600;700&amp;display=swap">
+<style>
+body{margin:0;background:#F3F0E8;font-family:"Instrument Sans",system-ui,sans-serif;color:#12141A}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer}
+</style>
+</helmet>
+<div style="width: 390px; height: 1260px; box-sizing: border-box; background: #F3F0E8; display: flex; flex-direction: column; gap: 12px; padding-bottom: 28px">
+
+<header style="display: flex; align-items: center; gap: 4px; padding: 12px 8px 0 4px">
+<a href="Partido.dc.html" aria-label="Back to match" style="width: 44px; height: 44px; display: flex; align-items: center; justify-content: center"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"></path></svg></a>
+<div style="flex-grow: 1; display: flex; flex-direction: column"><span style="font-size: 14px; font-weight: 700">Riverton 2 – 1 Ashford Utd</span><span style="font-size: 12px; color: #5F646D">67' · Coastal League</span></div>
+</header>
+
+<nav aria-label="Match sections" style="display: flex; gap: 22px; padding: 0 16px; border-bottom: 1px solid #E4DFD3">
+<sc-for list="{{tabs}}" as="t" hint-placeholder-count="5">
+<a href="{{t.enlace}}" aria-current="{{t.actual}}" style="height: 44px; display: flex; align-items: center; border-bottom: 3px solid {{t.linea}}; color: {{t.color}}; font-size: 14px; font-weight: 700; white-space: nowrap">{{t.nombre}}</a>
+</sc-for>
+</nav>
+
+<div style="display: flex; justify-content: space-between; align-items: center; padding: 0 16px">
+<div style="display: flex; align-items: center; gap: 8px"><span style="width: 12px; height: 12px; border-radius: 50%; background: #1F4E9E"></span><span style="font-size: 13px; font-weight: 700">Riverton</span><span style="font-size: 12px; color: #5F646D">4-3-3</span></div>
+<div style="display: flex; align-items: center; gap: 8px"><span style="font-size: 12px; color: #5F646D">4-4-2</span><span style="font-size: 13px; font-weight: 700">Ashford Utd</span><span style="width: 12px; height: 12px; border-radius: 50%; background: #B3262E"></span></div>
+</div>
+
+<section style="margin: 0 12px; position: relative; height: 640px; border-radius: 22px; background: #E3EBD6; overflow: hidden" aria-label="Pitch with both starting elevens">
+<div style="position: absolute; left: 12px; right: 12px; top: 12px; bottom: 12px; border: 2px solid #BFCDAA; border-radius: 6px"></div>
+<div style="position: absolute; left: 12px; right: 12px; top: 319px; height: 2px; background: #BFCDAA"></div>
+<div style="position: absolute; left: 50%; top: 320px; width: 84px; height: 84px; margin: -42px 0 0 -42px; border: 2px solid #BFCDAA; border-radius: 50%"></div>
+<div style="position: absolute; left: 50%; top: 12px; width: 150px; height: 64px; margin-left: -75px; border: 2px solid #BFCDAA; border-top: none"></div>
+<div style="position: absolute; left: 50%; bottom: 12px; width: 150px; height: 64px; margin-left: -75px; border: 2px solid #BFCDAA; border-bottom: none"></div>
+<sc-for list="{{jugadores}}" as="j" hint-placeholder-count="22">
+<div style="position: absolute; left: {{j.x}}%; top: {{j.y}}%; width: 64px; margin-left: -32px; margin-top: -22px; display: flex; flex-direction: column; align-items: center; gap: 2px">
+<div style="position: relative; width: 34px; height: 34px">
+<span style="width: 34px; height: 34px; border-radius: 50%; background: {{j.bg}}; color: {{j.fg}}; font-size: 13px; font-weight: 800; display: flex; align-items: center; justify-content: center; box-shadow: 0 0 0 2px #FFFFFF">{{j.num}}</span>
+<span style="position: absolute; right: -12px; top: -7px; padding: 1px 5px; border-radius: 7px; background: {{j.rbg}}; color: {{j.rfg}}; font-size: 10px; font-weight: 800">{{j.rating}}</span>
+</div>
+<span style="font-size: 11px; font-weight: 700; text-align: center; white-space: nowrap">{{j.nombre}}</span>
+</div>
+</sc-for>
+</section>
+
+<div style="display: flex; gap: 14px; padding: 0 16px; font-size: 11px; color: #5F646D; align-items: center">
+<span style="font-weight: 700; color: #12141A">Rating</span>
+<span style="display: flex; align-items: center; gap: 5px"><span style="padding: 1px 6px; border-radius: 7px; background: #2B3BFF; color: #FFFFFF; font-weight: 800">7.5+</span>strong</span>
+<span style="display: flex; align-items: center; gap: 5px"><span style="padding: 1px 6px; border-radius: 7px; background: #12141A; color: #FFFFFF; font-weight: 800">6.5</span>fine</span>
+<span style="display: flex; align-items: center; gap: 5px"><span style="padding: 1px 6px; border-radius: 7px; background: #FF7A1A; color: #12141A; font-weight: 800">&lt;6.5</span>weak</span>
+</div>
+
+<section style="margin: 0 12px; padding: 16px; border-radius: 20px; background: #FFFFFF; display: flex; flex-direction: column; gap: 12px">
+<span style="font-size: 15px; font-weight: 700">Not playing</span>
+<sc-for list="{{fuera}}" as="f" hint-placeholder-count="3">
+<div style="display: flex; align-items: center; gap: 10px">
+<span style="width: 28px; height: 28px; border-radius: 50%; background: {{f.bg}}; color: {{f.fg}}; font-size: 9px; font-weight: 800; display: flex; align-items: center; justify-content: center">{{f.club}}</span>
+<span style="flex-grow: 1; font-size: 14px; font-weight: 600">{{f.nombre}}</span>
+<span style="padding: 3px 9px; border-radius: 9px; background: {{f.tagBg}}; color: {{f.tagFg}}; font-size: 12px; font-weight: 700">{{f.tag}}</span>
+</div>
+</sc-for>
+</section>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":1260}}'>
+class Component extends DCLogic {
+  renderVals() {
+    // Sample data. Invented players and clubs.
+    const tabs = [['Overview', 'Partido.dc.html'], ['Stats', '#'], ['Lineups', 'Alineacion.dc.html'], ['H2H', '#'], ['Tips', '#']].map(([nombre, enlace], i) => ({
+      nombre, enlace, actual: i === 2 ? 'page' : 'false', linea: i === 2 ? '#2B3BFF' : 'transparent', color: i === 2 ? '#12141A' : '#5F646D'
+    }));
+    const rc = (r) => r >= 7.5 ? ['#2B3BFF', '#FFFFFF'] : r >= 6.5 ? ['#12141A', '#FFFFFF'] : ['#FF7A1A', '#12141A'];
+    const fila = (equipo, y, nombres, nums, ratings) => nombres.map((nombre, i) => {
+      const n = nombres.length, x = n === 1 ? 50 : 12 + i * (76 / (n - 1));
+      const [rbg, rfg] = rc(ratings[i]);
+      return { x: Math.round(x * 10) / 10, y, nombre, num: nums[i], rating: ratings[i].toFixed(1), rbg, rfg,
+        bg: equipo === 'h' ? '#1F4E9E' : '#B3262E', fg: '#FFFFFF' };
+    });
+    const jugadores = [
+      ...fila('h', 8, ['Brandt'], [1], [6.9]),
+      ...fila('h', 19, ['Osei', 'Vance', 'Roca', 'Hale'], [2, 4, 5, 3], [7.1, 6.8, 7.4, 6.6]),
+      ...fila('h', 31, ['Moreau', 'Keane', 'Lindqvist'], [8, 6, 10], [7.0, 7.3, 8.2]),
+      ...fila('h', 43, ['Tanaka', 'Okafor', 'Diaz'], [11, 9, 7], [6.4, 8.6, 7.7]),
+      ...fila('a', 57, ['Marsh', 'Rossi'], [9, 10], [7.6, 6.1]),
+      ...fila('a', 69, ['Pike', 'Novak', 'Duarte', 'Sato'], [7, 8, 6, 11], [6.3, 6.6, 6.8, 6.2]),
+      ...fila('a', 81, ['Ward', 'Haas', 'Ilic', 'Cruz'], [2, 4, 5, 3], [6.9, 6.7, 6.5, 6.4]),
+      ...fila('a', 93, ['Ferro'], [1], [7.2])
+    ];
+    const fuera = [
+      { club: 'RIV', bg: '#1F4E9E', fg: '#FFFFFF', nombre: 'D. Kessler', tag: 'Injured', tagBg: '#FFE7D2', tagFg: '#8A3B00' },
+      { club: 'ASH', bg: '#B3262E', fg: '#FFFFFF', nombre: 'T. Bergman', tag: 'Suspended', tagBg: '#FFE7D2', tagFg: '#8A3B00' },
+      { club: 'ASH', bg: '#B3262E', fg: '#FFFFFF', nombre: 'L. Amara', tag: 'Doubtful', tagBg: '#F3F0E8', tagFg: '#12141A' }
+    ];
+    return { tabs, jugadores, fuera };
+  }
+}
+</script>
+</body>
+</html>

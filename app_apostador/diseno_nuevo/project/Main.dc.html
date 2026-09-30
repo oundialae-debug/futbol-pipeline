@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Matches</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,500..900&amp;family=Instrument+Sans:wght@400;500;600;700&amp;display=swap">
+<style>
+body{margin:0;background:#F3F0E8;font-family:"Instrument Sans",system-ui,sans-serif;color:#12141A}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer}
+</style>
+</helmet>
+<div style="width: 390px; height: 1200px; box-sizing: border-box; background: #F3F0E8; display: flex; flex-direction: column">
+
+<header style="display: flex; align-items: center; gap: 10px; padding: 18px 12px 8px 16px">
+<svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><rect width="30" height="30" rx="9" fill="#2B3BFF"></rect><circle cx="15" cy="15" r="7" fill="none" stroke="#F3F0E8" stroke-width="2.4"></circle><circle cx="15" cy="15" r="2.4" fill="#D6FF3D"></circle></svg>
+<span style="flex-grow: 1; font-family: 'Archivo', sans-serif; font-stretch: 80%; font-weight: 800; font-size: 22px; letter-spacing: 0.2px">[Brand]</span>
+<button aria-label="Search" style="width: 44px; height: 44px; border: none; background: transparent; color: #12141A; display: flex; align-items: center; justify-content: center"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-3.5-3.5"></path></svg></button>
+<button aria-label="Alerts" style="width: 44px; height: 44px; border: none; background: transparent; color: #12141A; display: flex; align-items: center; justify-content: center"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 16V11a6 6 0 0112 0v5l1.5 2h-15zM10 20a2 2 0 004 0"></path></svg></button>
+</header>
+
+<nav aria-label="Days" style="display: flex; gap: 6px; padding: 4px 16px 10px 16px">
+<sc-for list="{{dias}}" as="d" hint-placeholder-count="7">
+<button aria-current="{{d.actual}}" style="flex: 1 1 0; min-width: 0; height: 58px; border-radius: 16px; border: {{d.borde}}; background: {{d.fondo}}; color: {{d.texto}}; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1px">
+<span style="font-size: 10px; font-weight: 700; letter-spacing: 0.6px; opacity: 0.75">{{d.dow}}</span>
+<span style="font-family: 'Archivo', sans-serif; font-stretch: 80%; font-weight: 800; font-size: 20px; line-height: 1">{{d.num}}</span>
+</button>
+</sc-for>
+</nav>
+
+<div style="display: flex; gap: 8px; padding: 0 16px 12px 16px">
+<sc-for list="{{filtros}}" as="f" hint-placeholder-count="4">
+<button style="height: 36px; padding: 0 14px; border-radius: 18px; border: {{f.borde}}; background: {{f.fondo}}; color: {{f.texto}}; font-size: 13px; font-weight: 600; display: flex; align-items: center; gap: 6px; white-space: nowrap">
+<span style="width: 7px; height: 7px; border-radius: 50%; background: {{f.punto}}"></span>{{f.nombre}}
+</button>
+</sc-for>
+</div>
+
+<sc-for list="{{ligas}}" as="l" hint-placeholder-count="2">
+<section style="margin: 0 12px 12px 12px; border-radius: 20px; background: #FFFFFF; overflow: hidden">
+<div style="display: flex; align-items: center; gap: 10px; padding: 12px 14px; background: #FAF8F3; border-bottom: 1px solid #E4DFD3">
+<span style="width: 26px; height: 26px; border-radius: 8px; background: {{l.color}}; color: #FFFFFF; font-family: 'Archivo', sans-serif; font-weight: 800; font-size: 11px; display: flex; align-items: center; justify-content: center">{{l.sigla}}</span>
+<div style="flex-grow: 1; display: flex; flex-direction: column">
+<span style="font-size: 14px; font-weight: 700">{{l.nombre}}</span>
+<span style="font-size: 11px; color: #5F646D">{{l.ronda}}</span>
+</div>
+<span style="font-size: 12px; font-weight: 600; color: #5F646D">{{l.n}} matches</span>
+</div>
+<sc-for list="{{l.partidos}}" as="p" hint-placeholder-count="3">
+<a href="{{p.enlace}}" style="display: flex; flex-direction: column; gap: 9px; padding: 13px 14px 12px 14px; border-top: {{p.borde}}">
+<div style="display: flex; align-items: center; gap: 12px">
+<div style="width: 44px; display: flex; flex-direction: column; align-items: center; gap: 3px">
+<span style="font-family: 'Archivo', sans-serif; font-stretch: 85%; font-weight: 800; font-size: 15px; color: {{p.tColor}}">{{p.tiempo}}</span>
+<sc-if value="{{p.enVivo}}" hint-placeholder-val="{{ false }}"><span style="padding: 1px 6px; border-radius: 6px; background: #D6FF3D; color: #12141A; font-size: 9px; font-weight: 800; letter-spacing: 0.5px">LIVE</span></sc-if>
+</div>
+<div style="flex-grow: 1; min-width: 0; display: flex; flex-direction: column; gap: 6px">
+<div style="display: flex; align-items: center; gap: 8px">
+<span style="width: 22px; height: 22px; flex-shrink: 0; border-radius: 50%; background: {{p.cl}}; color: {{p.tl}}; font-size: 8px; font-weight: 800; display: flex; align-items: center; justify-content: center">{{p.il}}</span>
+<span style="font-size: 15px; font-weight: {{p.wl}}">{{p.local}}</span>
+</div>
+<div style="display: flex; align-items: center; gap: 8px">
+<span style="width: 22px; height: 22px; flex-shrink: 0; border-radius: 50%; background: {{p.cv}}; color: {{p.tv}}; font-size: 8px; font-weight: 800; display: flex; align-items: center; justify-content: center">{{p.iv}}</span>
+<span style="font-size: 15px; font-weight: {{p.wv}}">{{p.visitante}}</span>
+</div>
+</div>
+<div style="width: 26px; display: flex; flex-direction: column; align-items: center; gap: 6px">
+<span style="font-family: 'Archivo', sans-serif; font-stretch: 80%; font-weight: 800; font-size: 20px; line-height: 22px">{{p.gl}}</span>
+<span style="font-family: 'Archivo', sans-serif; font-stretch: 80%; font-weight: 800; font-size: 20px; line-height: 22px">{{p.gv}}</span>
+</div>
+</div>
+<div style="margin-left: 56px; display: flex; align-items: center; gap: 8px">
+<div style="width: 92px; display: flex; height: 6px; border-radius: 3px; overflow: hidden; gap: 2px" aria-hidden="true">
+<span style="width: {{p.a}}%; background: #12141A"></span>
+<span style="width: {{p.b}}%; background: #CFC9BA"></span>
+<span style="width: {{p.c}}%; background: #2B3BFF"></span>
+</div>
+<span style="font-size: 11px; font-weight: 600; color: #5F646D; white-space: nowrap">{{p.a}} · {{p.b}} · {{p.c}}</span>
+<span style="margin-left: auto; padding: 2px 8px; border-radius: 8px; background: {{p.chipFondo}}; color: {{p.chipTexto}}; font-size: 11px; font-weight: 700; white-space: nowrap">{{p.chip}}</span>
+</div>
+</a>
+</sc-for>
+</section>
+</sc-for>
+
+<nav aria-label="Main" style="margin-top: auto; display: flex; justify-content: space-around; padding: 8px 8px 24px 8px; background: #FFFFFF; border-top: 1px solid #E4DFD3">
+<a href="Main.dc.html" aria-current="page" style="width: 76px; height: 52px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; color: #2B3BFF">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="12" cy="12" r="9"></circle><path d="M12 3v4M12 17v4M3 12h4M17 12h4"></path></svg>
+<span style="font-size: 11px; font-weight: 700">Matches</span>
+</a>
+<a href="#" style="width: 76px; height: 52px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; color: #5F646D">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="4" y="4" width="7" height="7" rx="2"></rect><rect x="13" y="4" width="7" height="7" rx="2"></rect><rect x="4" y="13" width="7" height="7" rx="2"></rect><rect x="13" y="13" width="7" height="7" rx="2"></rect></svg>
+<span style="font-size: 11px; font-weight: 600">Leagues</span>
+</a>
+<a href="#" style="width: 76px; height: 52px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; color: #5F646D">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l2.4 5.6 6.1.5-4.6 4 1.4 6-5.3-3.2-5.3 3.2 1.4-6-4.6-4 6.1-.5z"></path></svg>
+<span style="font-size: 11px; font-weight: 600">Tips</span>
+</a>
+<a href="#" style="width: 76px; height: 52px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; color: #5F646D">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="8" r="4"></circle><path d="M4 21c1-4 4-6 8-6s7 2 8 6"></path></svg>
+<span style="font-size: 11px; font-weight: 600">Me</span>
+</a>
+</nav>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":1200}}'>
+class Component extends DCLogic {
+  renderVals() {
+    const dias = [['MON', 14], ['TUE', 15], ['WED', 16], ['THU', 17], ['FRI', 18], ['SAT', 19], ['SUN', 20]].map(([dow, num], i) => {
+      const on = i === 2;
+      return { dow, num, actual: on ? 'date' : 'false', fondo: on ? '#12141A' : '#FFFFFF', texto: on ? '#FFFFFF' : '#12141A', borde: on ? '1px solid #12141A' : '1px solid #E4DFD3' };
+    });
+    const filtros = [['All', false], ['Live', true], ['Following', false], ['Tips', false]].map(([nombre, vivo], i) => ({
+      nombre, fondo: i === 0 ? '#2B3BFF' : '#FFFFFF', texto: i === 0 ? '#FFFFFF' : '#12141A',
+      borde: i === 0 ? '1px solid #2B3BFF' : '1px solid #E4DFD3', punto: vivo ? '#2B3BFF' : 'transparent'
+    }));
+    // Sample data. Invented clubs.
+    const E = { RIV: ['#1F4E9E', '#FFFFFF'], ASH: ['#B3262E', '#FFFFFF'], CAL: ['#12141A', '#FFFFFF'], BAY: ['#E3C33C', '#12141A'], NOR: ['#2E7D5B', '#FFFFFF'], HAR: ['#7A2E8A', '#FFFFFF'], VAL: ['#F2F3F5', '#12141A'], OAK: ['#D9631E', '#FFFFFF'], LAK: ['#3AA0C8', '#12141A'], STO: ['#5F646D', '#FFFFFF'] };
+    const chipStyle = { xg: ['#E4E7FF', '#1E2BB8'], tip: ['#F3F0E8', '#12141A'], tight: ['#FFE7D2', '#8A3B00'] };
+    const P = (tiempo, estado, il, local, iv, visitante, gl, gv, a, b, c, chip, tipo, enlace) => {
+      const enVivo = estado === 'live';
+      const ganaL = gl !== '' && Number(gl) > Number(gv), ganaV = gl !== '' && Number(gv) > Number(gl);
+      return {
+        tiempo, enVivo, enlace: enlace || '#',
+        tColor: enVivo ? '#2B3BFF' : estado === 'ft' ? '#5F646D' : '#12141A',
+        il, local, iv, visitante, gl, gv, a, b, c, chip,
+        cl: E[il][0], tl: E[il][1], cv: E[iv][0], tv: E[iv][1],
+        wl: ganaL ? 700 : 500, wv: ganaV ? 700 : 500,
+        chipFondo: chipStyle[tipo][0], chipTexto: chipStyle[tipo][1]
+      };
+    };
+    const ligas = [
+      { sigla: 'CL', nombre: 'Coastal League', ronda: 'Matchday 12', color: '#2B3BFF', partidos: [
+        P("67'", 'live', 'RIV', 'Riverton', 'ASH', 'Ashford Utd', 2, 1, 62, 22, 16, 'xG 1.9 – 0.8', 'xg', 'Partido.dc.html'),
+        P('18:30', 'next', 'CAL', 'Calder City', 'BAY', 'Bayfield', '', '', 48, 27, 25, 'Over 2.5 · 61%', 'tip'),
+        P('20:45', 'next', 'NOR', 'Northgate', 'HAR', 'Harbor Town', '', '', 41, 29, 30, 'Tight game', 'tight'),
+        P('FT', 'ft', 'OAK', 'Oakmont', 'STO', 'Stonebridge', 0, 3, 39, 30, 31, 'xG 0.6 – 2.4', 'xg')
+      ] },
+      { sigla: 'MC', nombre: 'Metro Cup', ronda: 'Round of 16', color: '#12141A', partidos: [
+        P('21:00', 'next', 'VAL', 'Vale Rovers', 'LAK', 'Lakeside', '', '', 34, 31, 35, 'Tight game', 'tight'),
+        P('FT', 'ft', 'LAK', 'Lakeside', 'VAL', 'Vale Rovers', 1, 1, 44, 28, 28, 'xG 1.3 – 1.5', 'xg')
+      ] }
+    ].map((l) => ({ ...l, n: l.partidos.length, partidos: l.partidos.map((p, i) => ({ ...p, borde: i ? '1px solid #EEE9DD' : 'none' })) }));
+    return { dias, filtros, ligas };
+  }
+}
+</script>
+</body>
+</html>

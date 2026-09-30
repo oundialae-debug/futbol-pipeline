@@ -77,3 +77,19 @@ carpeta se apunta aquí.
 
 - **Qué:** 870 combinaciones de término de fútbol + palabra corta, con sus
   dominios. Resultado en `IDEAS.md`. DNS y RDAP, sin API.
+
+## 30/09/2026: diseño nuevo (mezcla propia de FotMob y Flashscore)
+
+- **Qué:** `diseno_nuevo/`, un lienzo aparte con un solo diseño en inglés y
+  datos falsos (clubes y jugadores inventados): Matches, Match y Lineups.
+  Lienzo: https://claude.ai/artifact/5i65iCH12v7HmM1oSY7R8K
+- **Por qué:** el usuario pidió inventar un diseño a partir de FotMob y
+  Flashscore sin copiarlos, y ver solo uno. Sustituye al estilo Discord/Twitch
+  (que queda en `project/` como referencia).
+- **Ideas del diseño:** filas densas como las de Flashscore, pero cada una con
+  una barra de probabilidad 1 · X · 2 y una etiqueta de dato (xG, tip);
+  ficha de partido con tarjeta negra, línea de tiempo, momentum, estadísticas
+  centradas y mejores tips con el acierto de la casa; alineaciones con notas
+  por jugador. Fondo papel cálido, negro tinta, azul y amarillo ácido.
+- **Datos:** todos inventados. No hay cifras del proyecto en este diseño.
+- **Ficheros:** `app_apostador/diseno_nuevo/`. Nada fuera de la carpeta.

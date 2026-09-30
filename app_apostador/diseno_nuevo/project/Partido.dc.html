@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Match</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,500..900&amp;family=Instrument+Sans:wght@400;500;600;700&amp;display=swap">
+<style>
+body{margin:0;background:#F3F0E8;font-family:"Instrument Sans",system-ui,sans-serif;color:#12141A}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer}
+</style>
+</helmet>
+<div style="width: 390px; height: 1900px; box-sizing: border-box; background: #F3F0E8; display: flex; flex-direction: column; gap: 12px; padding-bottom: 28px">
+
+<header style="display: flex; align-items: center; gap: 4px; padding: 12px 8px 0 4px">
+<a href="Main.dc.html" aria-label="Back to matches" style="width: 44px; height: 44px; display: flex; align-items: center; justify-content: center"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"></path></svg></a>
+<div style="flex-grow: 1; display: flex; flex-direction: column"><span style="font-size: 14px; font-weight: 700">Coastal League</span><span style="font-size: 12px; color: #5F646D">Matchday 12 · Wed 16 Sep</span></div>
+<button aria-label="Follow match" style="width: 44px; height: 44px; border: none; background: transparent; color: #12141A"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l2.4 5.6 6.1.5-4.6 4 1.4 6-5.3-3.2-5.3 3.2 1.4-6-4.6-4 6.1-.5z"></path></svg></button>
+<button aria-label="Share" style="width: 44px; height: 44px; border: none; background: transparent; color: #12141A"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15V4M8 8l4-4 4 4M5 13v6h14v-6"></path></svg></button>
+</header>
+
+<section style="margin: 0 12px; padding: 20px 16px 16px 16px; border-radius: 26px; background: #12141A; color: #FFFFFF; display: flex; flex-direction: column; gap: 18px">
+<div style="display: flex; align-items: flex-start; justify-content: space-between">
+<div style="width: 104px; display: flex; flex-direction: column; align-items: center; gap: 8px; text-align: center">
+<span style="width: 54px; height: 54px; border-radius: 50%; background: #1F4E9E; color: #FFFFFF; font-weight: 800; font-size: 14px; display: flex; align-items: center; justify-content: center">RIV</span>
+<span style="font-size: 14px; font-weight: 700">Riverton</span>
+</div>
+<div style="display: flex; flex-direction: column; align-items: center; gap: 6px; padding-top: 2px">
+<span style="font-family: 'Archivo', sans-serif; font-stretch: 75%; font-weight: 800; font-size: 56px; line-height: 1; letter-spacing: 1px">2 – 1</span>
+<span style="display: flex; align-items: center; gap: 6px; padding: 3px 10px; border-radius: 12px; background: #D6FF3D; color: #12141A; font-size: 13px; font-weight: 800"><span style="width: 7px; height: 7px; border-radius: 50%; background: #12141A"></span>67'</span>
+</div>
+<div style="width: 104px; display: flex; flex-direction: column; align-items: center; gap: 8px; text-align: center">
+<span style="width: 54px; height: 54px; border-radius: 50%; background: #B3262E; color: #FFFFFF; font-weight: 800; font-size: 14px; display: flex; align-items: center; justify-content: center">ASH</span>
+<span style="font-size: 14px; font-weight: 700">Ashford Utd</span>
+</div>
+</div>
+<div style="display: flex; justify-content: space-between; font-size: 12px; line-height: 1.5; color: #C9CCD4">
+<span style="width: 150px">Okafor 12'<br>Lindqvist 58'</span>
+<span style="width: 150px; text-align: right">Marsh 34'</span>
+</div>
+<div style="display: flex; flex-direction: column; gap: 6px">
+<div style="position: relative; height: 22px" aria-label="Match timeline, 67 minutes played">
+<div style="position: absolute; left: 0; right: 0; top: 10px; height: 2px; background: #3A3E48"></div>
+<div style="position: absolute; left: 0; width: 74%; top: 10px; height: 2px; background: #D6FF3D"></div>
+<sc-for list="{{marcas}}" as="m" hint-placeholder-count="4">
+<span style="position: absolute; left: {{m.left}}%; top: {{m.top}}px; width: {{m.w}}px; height: {{m.w}}px; margin-left: -{{m.mm}}px; border-radius: {{m.radio}}; background: {{m.color}}"></span>
+</sc-for>
+</div>
+<div style="display: flex; justify-content: space-between; font-size: 10px; color: #9DA1AB"><span>0'</span><span>HT</span><span>90'</span></div>
+</div>
+</section>
+
+<nav aria-label="Match sections" style="display: flex; gap: 22px; padding: 0 16px; overflow: hidden; border-bottom: 1px solid #E4DFD3">
+<sc-for list="{{tabs}}" as="t" hint-placeholder-count="5">
+<a href="{{t.enlace}}" aria-current="{{t.actual}}" style="height: 44px; display: flex; align-items: center; border-bottom: 3px solid {{t.linea}}; color: {{t.color}}; font-size: 14px; font-weight: 700; white-space: nowrap">{{t.nombre}}</a>
+</sc-for>
+</nav>
+
+<section style="margin: 0 12px; padding: 16px; border-radius: 20px; background: #FFFFFF; display: flex; flex-direction: column; gap: 12px">
+<div style="display: flex; justify-content: space-between; align-items: baseline"><span style="font-size: 15px; font-weight: 700">Win chance</span><span style="font-size: 12px; color: #5F646D">right now</span></div>
+<div style="display: flex; height: 44px; border-radius: 12px; overflow: hidden; gap: 3px">
+<div style="width: 62%; background: #12141A; color: #FFFFFF; display: flex; align-items: center; justify-content: space-between; padding: 0 12px"><span style="font-size: 12px; font-weight: 600">Riverton</span><span style="font-family: 'Archivo', sans-serif; font-stretch: 80%; font-weight: 800; font-size: 22px">62</span></div>
+<div style="width: 22%; background: #CFC9BA; color: #12141A; display: flex; align-items: center; justify-content: center; font-family: 'Archivo', sans-serif; font-stretch: 80%; font-weight: 800; font-size: 18px">22</div>
+<div style="width: 16%; background: #2B3BFF; color: #FFFFFF; display: flex; align-items: center; justify-content: center; font-family: 'Archivo', sans-serif; font-stretch: 80%; font-weight: 800; font-size: 18px">16</div>
+</div>
+<div style="display: flex; justify-content: space-between; font-size: 12px; color: #5F646D"><span>Fair odds 1.61</span><span>Draw 4.55</span><span>Ashford 6.25</span></div>
+</section>
+
+<section style="margin: 0 12px; padding: 16px; border-radius: 20px; background: #FFFFFF; display: flex; flex-direction: column; gap: 12px">
+<div style="display: flex; justify-content: space-between; align-items: baseline"><span style="font-size: 15px; font-weight: 700">Momentum</span><span style="font-size: 12px; color: #5F646D">chances per 5 min</span></div>
+<div style="display: grid; grid-template-columns: repeat(14, minmax(0, 1fr)); gap: 3px" aria-label="Momentum chart, Riverton on top, Ashford below">
+<sc-for list="{{momentum}}" as="b" hint-placeholder-count="14">
+<div style="display: flex; flex-direction: column">
+<div style="height: 44px; display: flex; align-items: flex-end"><span style="width: 100%; height: {{b.up}}px; border-radius: 3px 3px 0 0; background: #12141A"></span></div>
+<div style="height: 1px; background: #E4DFD3"></div>
+<div style="height: 44px; display: flex; align-items: flex-start"><span style="width: 100%; height: {{b.down}}px; border-radius: 0 0 3px 3px; background: #2B3BFF"></span></div>
+</div>
+</sc-for>
+</div>
+<div style="display: flex; justify-content: space-between; font-size: 11px; color: #5F646D"><span>0'</span><span>30'</span><span>67'</span></div>
+</section>
+
+<section style="margin: 0 12px; padding: 16px; border-radius: 20px; background: #FFFFFF; display: flex; flex-direction: column; gap: 14px">
+<span style="font-size: 15px; font-weight: 700">Key stats</span>
+<sc-for list="{{stats}}" as="s" hint-placeholder-count="5">
+<div style="display: flex; flex-direction: column; gap: 5px">
+<div style="display: flex; justify-content: space-between; align-items: baseline">
+<span style="font-family: 'Archivo', sans-serif; font-stretch: 85%; font-weight: 800; font-size: 17px; width: 60px">{{s.h}}</span>
+<span style="font-size: 12px; font-weight: 600; color: #5F646D">{{s.nombre}}</span>
+<span style="font-family: 'Archivo', sans-serif; font-stretch: 85%; font-weight: 800; font-size: 17px; width: 60px; text-align: right">{{s.a}}</span>
+</div>
+<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 3px">
+<div style="height: 6px; border-radius: 3px 0 0 3px; background: #EEE9DD; display: flex; justify-content: flex-end"><span style="width: {{s.wh}}%; height: 6px; border-radius: 3px 0 0 3px; background: #12141A"></span></div>
+<div style="height: 6px; border-radius: 0 3px 3px 0; background: #EEE9DD"><span style="display: block; width: {{s.wa}}%; height: 6px; border-radius: 0 3px 3px 0; background: #2B3BFF"></span></div>
+</div>
+</div>
+</sc-for>
+</section>
+
+<section style="margin: 0 12px; padding: 16px; border-radius: 20px; background: #FFFFFF; display: flex; flex-direction: column; gap: 4px">
+<div style="display: flex; justify-content: space-between; align-items: baseline; padding-bottom: 8px"><span style="font-size: 15px; font-weight: 700">Best tips</span><span style="font-size: 12px; color: #5F646D">us · bookmaker hit rate</span></div>
+<sc-for list="{{tips}}" as="t" hint-placeholder-count="3">
+<div style="display: flex; align-items: center; gap: 12px; padding: 11px 0; border-top: {{t.borde}}">
+<span style="flex-grow: 1; font-size: 14px; font-weight: 600">{{t.nombre}}</span>
+<span style="font-family: 'Archivo', sans-serif; font-stretch: 80%; font-weight: 800; font-size: 22px; color: #2B3BFF">{{t.pct}}%</span>
+<span style="width: 50px; padding: 3px 0; border-radius: 8px; background: #F3F0E8; font-size: 12px; font-weight: 700; text-align: center">{{t.casa}}%</span>
+</div>
+</sc-for>
+</section>
+
+<section style="margin: 0 12px; padding: 14px 16px; border-radius: 20px; background: #FFFFFF; display: flex; align-items: center; gap: 12px">
+<span style="width: 40px; height: 40px; border-radius: 50%; background: #F3F0E8; display: flex; align-items: center; justify-content: center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#12141A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="3" width="10" height="15" rx="2" transform="rotate(12 11 10)"></rect></svg></span>
+<div style="flex-grow: 1; display: flex; flex-direction: column"><span style="font-size: 14px; font-weight: 700">M. Alder</span><span style="font-size: 12px; color: #5F646D">Referee · 5.3 cards per match</span></div>
+<span style="padding: 3px 9px; border-radius: 9px; background: #FFE7D2; color: #8A3B00; font-size: 12px; font-weight: 700">Strict</span>
+</section>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":1900}}'>
+class Component extends DCLogic {
+  renderVals() {
+    // Sample data. Invented clubs.
+    const M = (min, color, tipo) => ({ left: min / 90 * 100, color, top: tipo === 'card' ? 4 : 2, w: tipo === 'card' ? 10 : 16, mm: tipo === 'card' ? 5 : 8, radio: tipo === 'card' ? '2px' : '50%' });
+    const marcas = [M(12, '#D6FF3D', 'goal'), M(34, '#FFFFFF', 'goal'), M(41, '#FFD24A', 'card'), M(58, '#D6FF3D', 'goal')];
+    const tabs = [['Overview', 'Partido.dc.html'], ['Stats', '#'], ['Lineups', 'Alineacion.dc.html'], ['H2H', '#'], ['Tips', '#']].map(([nombre, enlace], i) => ({
+      nombre, enlace, actual: i === 0 ? 'page' : 'false', linea: i === 0 ? '#2B3BFF' : 'transparent', color: i === 0 ? '#12141A' : '#5F646D'
+    }));
+    const up = [8, 14, 6, 22, 30, 12, 4, 18, 26, 34, 10, 16, 28, 20];
+    const down = [4, 6, 18, 8, 5, 26, 30, 9, 4, 6, 20, 12, 5, 9];
+    const momentum = up.map((u, i) => ({ up: u, down: down[i] }));
+    const S = (nombre, h, a, dec) => {
+      const t = h + a;
+      const f = (v) => (dec ? v.toFixed(1) : String(v));
+      return { nombre, h: f(h), a: f(a), wh: Math.round(h / t * 100), wa: Math.round(a / t * 100) };
+    };
+    const stats = [S('Expected goals', 1.9, 0.8, true), S('Shots', 12, 6), S('On target', 6, 2), S('Big chances', 3, 1), S('Corners', 7, 3)];
+    const tips = [['Riverton to win', 62, 55], ['Over 1.5 goals', 88, 78], ['Both teams score', 58, 59]].map(([nombre, pct, casa], i) => ({ nombre, pct, casa, borde: i ? '1px solid #EEE9DD' : '1px solid #EEE9DD' }));
+    return { marcas, tabs, momentum, stats, tips };
+  }
+}
+</script>
+</body>
+</html>
