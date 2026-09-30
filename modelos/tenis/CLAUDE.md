@@ -121,6 +121,34 @@ aparte). Margen medio de Pinnacle: ATP 2,60%, WTA 2,83%.
   95-97% en 2026). Betfair Exchange (BFEW/BFEL) entra a finales de 2025 (75%
   vacío en 2025, 5% en 2026): desde 2026 la referencia de cierre es Betfair.
 
+## Elo y regla del favorito, prueba limpia (30/09/2026): ninguno bate al cierre
+
+Regla fijada antes de mirar: 2020-2023 para elegir, 2024-2026 solo para
+juzgar (2024-2025 contra Pinnacle, 2026 contra Betfair Exchange).
+
+**Elo por superficie** (`scripts/elo_tenis.py`, `scripts/evaluar_elo.py` ->
+`data/tenis/evaluar_elo.md`). Historial: TennisMyLife ATP (con Challenger y
+previas) y Sackmann WTA (con previas e ITF) + TennisMyLife WTA tras mayo de
+2026. Orden por inicio de torneo y ronda; control de fuga (trucar un
+resultado no cambia nada anterior ni de la misma ronda): pasa. Elegido
+c=250 (ATP) / 350 (WTA), peso de superficie 0,25.
+- Solo, pierde con claridad: log-loss +7,2 a +8,5 sigmas peor que Pinnacle
+  (2024-2025) y +4,6/+5,2 peor que Betfair (2026); 2-3 puntos menos de
+  acierto. Apostando con él: ATP -3,7%, WTA -6,3%.
+- Mezcla mercado+Elo (ajustada en 2020-2023): mercado con peso >1 (1,12
+  ATP, 1,20 WTA) y Elo con peso NEGATIVO (-0,08/-0,10). La mejora no viene
+  del Elo sino de estirar el precio: es el sesgo favorito-marginado. En la
+  prueba mejora al mercado 0,25-1,26 sigmas: nada.
+
+**Regla del favorito** (`scripts/regla_favorito.py` ->
+`data/tenis/regla_favorito.md`). 15 candidatas; elegida "1ª-2ª ronda,
+favorito >= 90%": +1,61% (+2,10s) en la elección. En la prueba: **-0,09%
+(2024-2025, Pinnacle, 345 apuestas) y -2,07% (2026, Betfair bruto, 173)**.
+Al hacer la prueba limpia, el número fue a cero: era el premio de elegir la
+mejor de 15. El sesgo existe en el precio pero no deja dinero.
+
+No reabrir "Elo solo" ni "regla del favorito" con estos mismos datos.
+
 ## Plan (en este orden)
 
 1. Ganador del partido, único mercado con cierre de Pinnacle.
