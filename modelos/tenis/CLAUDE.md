@@ -256,6 +256,29 @@ público). `scripts/entorno.py` -> `data/tenis/entorno.md`. Entrena
 sin avisar. Estandarizar SIEMPRE antes de una logística con variables de
 escala pequeña.
 
+## Modelo de puntos con incertidumbre (30/09/2026): empata con el Elo en el ganador
+
+Cambio estructural propuesto por otra conversación de Claude a partir de
+este mismo repositorio. `scripts/markov_tenis.py` (puntos -> juego -> set ->
+partido, exacto; comprobado: juego al 60% = 0,7357) y
+`scripts/modelo_puntos.py`: cada jugador con fuerza al saque y al resto más
+desviación por superficie, cada una con varianza (filtro tipo Kalman/Glicko)
+que CRECE con los días sin jugar y sin pisar la superficie; se actualiza con
+los puntos al saque de cada partido, con ajuste por rival y encogimiento a la
+media. Parámetros elegidos con la verosimilitud de PUNTOS 2015-2019 (sin
+cuotas): v0=0,01, crecimiento 5e-6/día, v0 superficie 0,001. La rejilla se
+amplió al salir el óptimo en el borde; **el crecimiento por tiempo queda en
+el interior** (mejor que 0): los puntos piden el "óxido".
+
+`scripts/evaluar_puntos.py` -> `data/tenis/evaluar_puntos.md`, ventana
+móvil 2021-2026 (cada año con capa ajustada solo con los anteriores):
+- puntos contra Elo: log-loss +0,0025 (+1,72s, algo peor), acierto 67,0%
+  contra 66,3%. Empate técnico.
+- puntos contra mercado: +16,6s peor (acierto 67,0% contra 68,2%).
+- mezcla mercado+puntos: peso de puntos 0,00-0,02 todos los años. Nada.
+Como dice la literatura, el modelo de puntos no gana en el ganador. Su sitio
+es el total de juegos y el hándicap: se prueba contra Kalshi.
+
 ## Plan (en este orden)
 
 1. Ganador del partido, único mercado con cierre de Pinnacle.
