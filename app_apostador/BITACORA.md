@@ -157,3 +157,19 @@ carpeta se apunta aquí.
 - **Fallos silenciosos:** tarjetas con dos IDs por jugador (unificados),
   minutos negativos, etiqueta de posición, valor 0, porteros sin nombre.
 - **Datos:** solo lectura de `data/`. Sin API ni descargas.
+
+## 30/09/2026: colores de club y segunda equipación
+
+- **Qué:** `diseno_nuevo/generador/equipaciones.py`: dos equipaciones de dos
+  colores por club. En cada partido el visitante cambia a la segunda si su
+  color choca con el del local (distancia CIE76 < 30). Las barras se aclaran
+  hasta contraste 3:1 sobre el fondo oscuro. Franjas de dos colores junto al
+  nombre, como en los marcadores de TV. Aplicado a portada, previa, informe,
+  estadísticas, alineaciones (camiseta en dos mitades) y tabla Elo. Hoja nueva
+  `Kits.dc.html` con los colores de los 20 clubes y ejemplos.
+- **Por qué:** petición del usuario.
+- **Comprobación:** las 506 parejas de LaLiga sin choque tras la regla (88 con
+  segunda equipación). Málaga tenía las dos equipaciones azules y chocaba con
+  4 equipos: su segunda pasa a blanca.
+- **Ojo:** colores de la primera, tradicionales; los de la segunda,
+  aproximados (cambian cada temporada): revisar.

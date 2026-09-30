@@ -2,6 +2,7 @@
 import json
 from pathlib import Path
 from logo import icono, palabra
+from equipaciones import kit, colores_partido, KITS
 
 APP = Path(__file__).resolve().parents[2]
 D = json.loads((APP / "datos_app.json").read_text())
@@ -34,12 +35,25 @@ def eq(nombre):
     return EQ.get(n, (nombre, nombre[:3].upper(), "#3A4256", "#FFFFFF"))
 
 
-def escudo(nombre, px=24):
-    c, s, bg, fg = eq(nombre)
+def escudo(nombre, px=24, k=None):
+    """Escudo provisional con los colores de la equipación que lleva ese día."""
+    c, s, _, _ = eq(nombre)
+    k = k or kit(CORTO_A_LARGO.get(nombre, nombre))
     fs = max(7, round(px * 0.3))
-    return (f'<span style="width: {px}px; height: {px}px; flex-shrink: 0; border-radius: 50%; background: {bg}; color: {fg}; '
+    anillo = max(2, round(px / 18))
+    return (f'<span style="width: {px}px; height: {px}px; flex-shrink: 0; border-radius: 50%; background: {k["c1"]}; color: {k["texto"]}; '
             f'font-size: {fs}px; font-weight: 800; display: flex; align-items: center; justify-content: center; '
-            f'box-shadow: 0 0 0 1px rgba(255,255,255,0.12)">{s}</span>')
+            f'box-shadow: inset 0 0 0 {anillo}px {k["c2"]}">{s}</span>')
+
+
+def franjas(k, alto=20):
+    """Las dos franjas de color junto al nombre, como en el marcador de la TV."""
+    return (f'<span aria-hidden="true" style="display: inline-flex; flex-shrink: 0; height: {alto}px; border-radius: 3px; overflow: hidden; box-shadow: 0 0 0 1px rgba(255,255,255,0.14)">'
+            f'<span style="width: 5px; background: {k["c1"]}"></span><span style="width: 5px; background: {k["c2"]}"></span></span>')
+
+
+def kits(local, visitante):
+    return colores_partido(CORTO_A_LARGO.get(local, local), CORTO_A_LARGO.get(visitante, visitante))
 
 
 def num(x, dec=1):

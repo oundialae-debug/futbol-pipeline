@@ -135,7 +135,7 @@ for f in D["tabla_elo"]["filas"]:
     s_ = f["suerte"]
     col = LIMA if s_ >= 2 else ("#FFB27A" if s_ <= -2 else SOFT)
     filas += (f'<div style="display: flex; align-items: center; gap: 8px; min-height: 48px; padding: 0 14px; border-top: 1px solid #1E2330; background: {"#182042" if f["equipo"] == "Real Madrid" else "transparent"}">'
-              f'<span style="width: 20px; {DISP}; font-size: 14px">{f["pos"]}</span>{escudo(f["equipo"], 22)}'
+              f'<span style="width: 20px; {DISP}; font-size: 14px">{f["pos"]}</span>{franjas(kit(f["equipo"]), 22)}'
               f'<span style="flex-grow: 1; font-size: 14px; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis">{eq(f["equipo"])[0]}</span>'
               f'<span style="width: 26px; text-align: right; {DISP}; font-size: 15px">{f["pts"]}</span>'
               f'<span style="width: 40px; text-align: right; font-size: 13px; color: {SOFT}">{f["xpts"]:.1f}</span>'
@@ -144,7 +144,7 @@ for f in D["tabla_elo"]["filas"]:
               f'<span style="width: 44px; display: flex; justify-content: flex-end">{sparkline(f["elo_hist"], 44, 18, LIMA if f["elo_cambio"] >= 0 else NARANJA)}</span></div>')
 TABLA = (f'<section style="margin: 0 12px; border-radius: 24px; background: {CARD}; border: 1px solid {BORDE}; overflow: hidden">'
          f'<div style="display: flex; align-items: center; gap: 8px; padding: 12px 14px 8px 14px; font-size: 10px; letter-spacing: 0.4px; color: {MUT}">'
-         f'<span style="width: 20px">#</span><span style="width: 22px"></span><span style="flex-grow: 1">TEAM</span><span style="width: 26px; text-align: right">PTS</span>'
+         f'<span style="width: 20px">#</span><span style="width: 10px"></span><span style="flex-grow: 1">TEAM</span><span style="width: 26px; text-align: right">PTS</span>'
          f'<span style="width: 40px; text-align: right">ELO PTS</span><span style="width: 40px; text-align: right">LUCK</span><span style="width: 30px; text-align: center">RANK</span><span style="width: 44px; text-align: right">TREND</span></div>{filas}</section>')
 v5 = D["tabla_elo"]["comprobacion"]
 HONESTO = tarjeta("How good is Elo this early?", f'''<span style="font-size: 13px; color: {SOFT}">After 7 matchdays, how well each ranking matched the final table:</span>
