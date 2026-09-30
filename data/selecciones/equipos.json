@@ -2,8 +2,8 @@
  "equipos": {
   "Azerbaijan": 933480,
   "Liechtenstein": 942841,
-  "Israel": 950500,
-  "Kosovo National Team": 946245,
+  "Malta": 947096,
+  "Gibraltar": 930927,
   "Greece": 951351,
   "Netherlands": 952202,
   "Republic of Ireland": 661160,
@@ -14,8 +14,8 @@
   "Portugal": 23761,
   "Wales": 653501,
   "Norway": 928374,
-  "Malta": 947096,
-  "Gibraltar": 930927
+  "Israel": 950500,
+  "Kosovo National Team": 946245
  },
  "cruces": [
   [
@@ -25,9 +25,9 @@
    "2026-10-01T16:00:00.000Z"
   ],
   [
-   "Israel",
-   "Kosovo National Team",
-   1301113406,
+   "Malta",
+   "Gibraltar",
+   1315312341,
    "2026-10-01T18:45:00.000Z"
   ],
   [
@@ -61,11 +61,11 @@
    "2026-10-01T18:45:00.000Z"
   ],
   [
-   "Malta",
-   "Gibraltar",
-   1315312341,
+   "Israel",
+   "Kosovo National Team",
+   1301113406,
    "2026-10-01T18:45:00.000Z"
   ]
  ],
- "generado": "2026-09-30T15:27:06.556391+00:00"
+ "generado": "2026-09-30T17:57:01.803648+00:00"
 }
