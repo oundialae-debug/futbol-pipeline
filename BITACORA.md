@@ -16,6 +16,18 @@ Dónde está cada cosa:
 - Ambos marcan: `modelos/ambos_marcan/CLAUDE.md`.
 - Selecciones: `modelos/selecciones/CLAUDE.md` (otro chat).
 - NBA: `docs/otros_deportes/nba.md`.
+- Tenis: `modelos/tenis/CLAUDE.md`.
+
+---
+
+## 30/09/2026
+
+### Cambios de código y ficheros
+
+| qué | por qué | ficheros | commit |
+|---|---|---|---|
+| Empieza el tema **tenis** (ATP y WTA), aparte del fútbol: guía y plan. | Petición del usuario: "quiero que empecemos a pronosticar tenis", los dos circuitos. | `modelos/tenis/CLAUDE.md` | este commit |
+| Descarga de tennis-data.co.uk (resultados y cuotas de cierre, ATP 2000+, WTA 2007+) y Sackmann (partidos con stats de saque, 1991+ circuito principal, 2010+ Challenger/qualy/ITF). Por GitHub Actions, al empujar a esta rama. | Highlightly no tiene tenis. Las dos fuentes están bloqueadas desde el contenedor (403, y GitHub solo a los repos del usuario). **Aprobada por el usuario** antes de lanzarla. | `modelos/tenis/scripts/descargar_tenis.py`, `.github/workflows/descargar_tenis.yml` | este commit |
 
 ---
 

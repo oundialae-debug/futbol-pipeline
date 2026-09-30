@@ -1,0 +1,44 @@
+name: Descargar tenis (tennis-data + Sackmann)
+
+# Sin API de Highlightly (no tiene tenis). Fuentes gratuitas sin clave,
+# bloqueadas desde el contenedor de Claude. Aprobado por el usuario el
+# 30/09/2026. Se lanza al empujar este fichero o el script a la rama de
+# trabajo, o a mano; guarda los datos en la MISMA rama que lo lanzó.
+on:
+  workflow_dispatch:
+  push:
+    branches: [ccr-3c3cfe57-etcioo]
+    paths:
+      - .github/workflows/descargar_tenis.yml
+      - modelos/tenis/scripts/descargar_tenis.py
+
+jobs:
+  descargar:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install requests pandas openpyxl xlrd
+      - name: Clonar Sackmann
+        run: |
+          git clone --depth 1 https://github.com/JeffSackmann/tennis_atp /tmp/sackmann/tennis_atp
+          git clone --depth 1 https://github.com/JeffSackmann/tennis_wta /tmp/sackmann/tennis_wta
+      - name: Descargar
+        run: python modelos/tenis/scripts/descargar_tenis.py
+      - name: Guardar
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/tenis || true
+          if git diff --staged --quiet; then
+            echo "Sin cambios que guardar"
+            exit 0
+          fi
+          git commit -m "Tenis: descarga tennis-data + Sackmann ($(date -u +%Y-%m-%dT%H:%M))"
+          git pull --rebase origin "${GITHUB_REF_NAME}"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
