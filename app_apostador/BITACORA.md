@@ -291,3 +291,16 @@ carpeta se apunta aquí.
   todos los jugadores en Inglaterra; los nombres de grupo (A1…A4) no los da
   la API: no se inventan («Group 1…4»).
 - **Ficheros:** `app_apostador/diseno_nl/` entero.
+
+## 30/09/2026: vídeo corto para redes, Croacia–Inglaterra
+
+- **Qué:** `diseno_nl/video/2yellow_croatia_england.mp4`, vertical 1080×1920,
+  30 fps, 23 s, sin sonido. Siete escenas: partido, 1X2 (22/22/56), goles
+  esperados (1,12–1,92, 1-1), más de 1,5/2,5 y ambos marcan, forma de los
+  últimos 5, jugadores clave con nota justa y cierre «Croatia or England?
+  1 · X · 2». Pie: «probabilities, not betting advice · 18+».
+- **Por qué:** petición del usuario, para probar opiniones en redes.
+- **Cómo:** `diseno_nl/video/video_cro_eng.py` dibuja cada fotograma con
+  Chromium y lo monta con ffmpeg (imageio-ffmpeg). Fuentes Archivo e
+  Instrument Sans descargadas de Google Fonts para el render. Datos de
+  `datos_nl.json`, sin API.
