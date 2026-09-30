@@ -348,3 +348,68 @@ hora,event_key,tipo,torneo,superficie,jugador1,jugador2,sets,juegos,puntos,saca,
 2026-09-30 10:49,12167030,Itf Men Singles,M15 Telavi 2 (Georgia),Clay,G. Bosio,K. Malirz,1-0,3-2,40 - 40,2,sets,2:1,2:1,6,,0.14944885926685464,0.15899761135648843
 2026-09-30 10:49,12167030,Itf Men Singles,M15 Telavi 2 (Georgia),Clay,G. Bosio,K. Malirz,1-0,3-2,40 - 40,2,sets,1:2,1:2,11,,0.08151755960010254,0.05481263175008727
 2026-09-30 10:49,12167030,Itf Men Singles,M15 Telavi 2 (Georgia),Clay,G. Bosio,K. Malirz,1-0,3-2,40 - 40,2,ganador,,jugador1,1.03,11,0.914380714879468,0.9451873682499127
+2026-09-30 10:59,12167113,Itf Women Singles,W15 Monastir 28,Hard,N. Sahnoun,C. Zouein Yanez,0-0,1-0,A - 40,1,ganador,,jugador1,1.95,1.8,0.48,0.50369080191801
+2026-09-30 10:59,12167071,Itf Men Singles,M15 Monastir 33,Hard,L. Branger,R. Piatti,0-0,0-0,0 - 0,1,ganador,,jugador1,1.444,2.625,0.6451216515114279,0.5863184529001954
+2026-09-30 10:59,12167086,Itf Men Singles,M15 Sharm ElSheikh 11,Hard,F. Livet Novkirichka,G. El Feky,0-1,4-3,0 - 15,2,ganador,,jugador1,2.75,1.4,0.3373493975903614,0.2854897637072364
+2026-09-30 10:59,12167087,Itf Men Singles,M15 Sharm ElSheikh 11,Hard,F. Zakaria,K. Ibrahim,1-0,4-1,15 - 15,2,ganador,,jugador1,1.002,34,0.9713730643963203,0.9106424497484776
+2026-09-30 10:59,12167100,Itf Men Singles,M15 Sibenik,Clay,I. Biletic,N. Toffanin,1-0,0-0,0 - 0,2,ganador,,jugador1,1.062,8,0.8828073273008165,0.6648982762767237
+2026-09-30 10:59,12167101,Itf Men Singles,M15 Sibenik,Clay,P. Galus,D. Petrovic,0-0,0-0,40 - 30,1,ganador,,jugador1,2.375,1.533,0.3922722620266121,0.6016808600196983
+2026-09-30 10:59,12167111,Itf Women Singles,W15 Monastir 28,Hard,C. Fontenel,V. Losciale,0-0,2-2,0 - 0,1,ganador,,jugador1,1.222,4,0.7659900421294522,0.7234751079988866
+2026-09-30 10:59,12167112,Itf Women Singles,W15 Monastir 28,Hard,J. Hinojosa Gomez,E. Maloney,0-0,2-3,0 - 0,2,ganador,,jugador1,4.333,1.2,0.21688053497198623,0.25882617704738164
+2026-09-30 10:59,12167067,Itf Men Singles,M15 Monastir 33,Hard,A. Colombo,E. Lumsden,1-1,0-0,0 - 30,2,ganador,,jugador1,2.5,1.5,0.375,0.35123314200727
+2026-09-30 10:59,12167118,Itf Women Singles,W35 Baza,Hard,C. Brace,E. Tomase,1-0,3-3,A - 40,1,ganador,,jugador1,1.083,7,0.8660150934059138,0.9657737209642002
+2026-09-30 10:59,12167120,Itf Women Singles,W35 Baza,Hard,K. Novak,M. Teixido Garcia,1-0,0-0,0 - 0,1,ganador,,jugador1,1.071,7.5,0.8750437521876094,0.8811514875210731
+2026-09-30 10:59,12167121,Itf Women Singles,W35 Baza,Hard,A. Arifullina,A. Hesse,0-0,0-0,0 - 0,,ganador,,jugador1,4.5,1.166,0.20578891634309918,0.3441346034855618
+2026-09-30 10:59,12167130,Itf Women Singles,W35 Reims,Hard,A. Nesmianovych,G. M. Dittmann,0-1,1-0,30 - 15,2,ganador,,jugador1,12,1.025,0.07869481765834932,0.2857342993532317
+2026-09-30 10:59,12167158,Itf Women Singles,W15 Sharm ElSheikh 13,Hard,S. Samir,L. Rothensteiner,1-1,3-3,15 - 15,2,ganador,,jugador1,1.7,2.05,0.5466666666666666,0.8112931488122876
+2026-09-30 10:59,12167160,Itf Women Singles,W15 Sharm ElSheikh 13,Hard,C. Odorizzi,A. Snigireva,0-0,2-1,15 - 15,1,ganador,,jugador1,7,1.083,0.13398490659408635,0.06323035134591207
+2026-09-30 10:59,12167162,Itf Women Singles,W15 Sharm ElSheikh 13,Hard,M. Favier,M. Giordano,0-0,1-3,0 - 0,1,ganador,,jugador1,2.1,1.666,0.4423791821561338,0.36029765891669124
+2026-09-30 10:59,12166490,Atp Singles,Tokyo,Hard,M. Arnaldi,R. Sakamoto,1-1,4-3,0 - 30,2,total_juegos,29.5,mas,1.666,2.1,0.5576208178438662,0.7222297572348495
+2026-09-30 10:59,12166490,Atp Singles,Tokyo,Hard,M. Arnaldi,R. Sakamoto,1-1,4-3,0 - 30,2,sets,0:2,0:2,4,,0.23247232472324725,0
+2026-09-30 10:59,12166490,Atp Singles,Tokyo,Hard,M. Arnaldi,R. Sakamoto,1-1,4-3,0 - 30,2,sets,2:1,2:1,2.625,,0.35424354243542433,0.4859585980879324
+2026-09-30 10:59,12166490,Atp Singles,Tokyo,Hard,M. Arnaldi,R. Sakamoto,1-1,4-3,0 - 30,2,sets,1:2,1:2,2.25,,0.4132841328413284,0.5140414019120675
+2026-09-30 10:59,12166490,Atp Singles,Tokyo,Hard,M. Arnaldi,R. Sakamoto,1-1,4-3,0 - 30,2,ganador,,jugador1,2.1,1.727,0.45126731120982494,0.4859585980879324
+2026-09-30 10:59,12166538,Challenger Women Singles,Jingshan,Hard,S. Wei,F. Ferro,1-0,2-0,0 - 0,2,ganador,,jugador1,1.125,6,0.8421052631578947,0.7782612025523229
+2026-09-30 10:59,12166592,Itf Men Singles,M25 Darwin,Hard,S. Ryan Ziegann,Ja. Delaney,0-1,4-5,0 - 0,1,ganador,,jugador1,11,1.05,0.08713692946058092,0.11689685574752251
+2026-09-30 10:59,12166593,Itf Men Singles,M25 Darwin,Hard,S. Vujic,C. Sinclair,0-0,6-6,1 - 1,1,ganador,,jugador1,2.625,1.444,0.3548783484885721,0.46133456732170997
+2026-09-30 10:59,12166713,Itf Men Singles,M25 Slobozia (Romania),Clay,S. A. Andreescu,R. M. Papoe,0-1,2-3,0 - 0,1,ganador,,jugador1,9,1.04,0.10358565737051792,0.052184104698277514
+2026-09-30 10:59,12166719,Itf Men Singles,M25 Slobozia (Romania),Clay,V. Vanta,L. Pokorny,0-1,1-1,0 - 15,1,ganador,,jugador1,12,1.015,0.07798693814829043,0.09654530445745407
+2026-09-30 10:59,12166733,Challenger Men Singles,Mouilleron-Le-Captif,Hard,H. Mayot,N. Visker,0-0,2-2,40 - 30,2,total_juegos,22.5,mas,1.833,1.833,0.5,0.5237286882934176
+2026-09-30 10:59,12166733,Challenger Men Singles,Mouilleron-Le-Captif,Hard,H. Mayot,N. Visker,0-0,2-2,40 - 30,2,sets,2:0,2:0,1.615,,0.5577810455859237,0.6076509486402248
+2026-09-30 10:59,12166733,Challenger Men Singles,Mouilleron-Le-Captif,Hard,H. Mayot,N. Visker,0-0,2-2,40 - 30,2,sets,0:2,0:2,11,,0.0818923989655697,0.04736184307798913
+2026-09-30 10:59,12166733,Challenger Men Singles,Mouilleron-Le-Captif,Hard,H. Mayot,N. Visker,0-0,2-2,40 - 30,2,sets,2:1,2:1,3.75,,0.24021770363233774,0.2583700194864279
+2026-09-30 10:59,12166733,Challenger Men Singles,Mouilleron-Le-Captif,Hard,H. Mayot,N. Visker,0-0,2-2,40 - 30,2,sets,1:2,1:2,7.5,,0.12010885181616887,0.08661718879535837
+2026-09-30 10:59,12166733,Challenger Men Singles,Mouilleron-Le-Captif,Hard,H. Mayot,N. Visker,0-0,2-2,40 - 30,2,ganador,,jugador1,1.181,4.5,0.7921140644252772,0.8660209681266523
+2026-09-30 10:59,12166785,Itf Men Singles,M25 Kigali,Clay,A. Nefve,A. Beckley,1-1,0-0,0 - 0,1,ganador,,jugador1,2.375,1.533,0.3922722620266121,0.2790437295322199
+2026-09-30 10:59,12166787,Itf Men Singles,M25 Kigali,Clay,L. Van Herck,C. Hemery,0-1,0-1,15 - 40,1,ganador,,jugador1,26,1,0.037037037037037035,0.007514542118350861
+2026-09-30 10:59,12166824,Itf Women Singles,W75 Quinta do Lago,Hard,A. Akli,P. Hercog,0-1,0-0,0 - 0,1,ganador,,jugador1,3.5,1.285,0.26854754440961337,0.17280266243314996
+2026-09-30 10:59,12166826,Itf Women Singles,W75 Quinta do Lago,Hard,R. Brantmeier,K. Swan,0-1,2-3,40 - 40,2,ganador,,jugador1,5,1.142,0.18593292087267993,0.0379149413851304
+2026-09-30 10:59,12166868,Itf Women Singles,W35 Reims,Hard,T. J. Brockmann,D. Tran,1-0,1-0,30 - 15,2,ganador,,jugador1,1.004,29,0.9665377949606718,0.913738148121738
+2026-09-30 10:59,12166948,Atp Singles,Beijing,Hard,Z. Zhang,A. Gea,0-1,1-1,15 - 30,2,total_juegos,19.5,mas,1.833,1.833,0.5,0.6191259963074998
+2026-09-30 10:59,12166948,Atp Singles,Beijing,Hard,Z. Zhang,A. Gea,0-1,1-1,15 - 30,2,sets,0:2,0:2,1.222,,0.7500340924587481,0.7189365161536047
+2026-09-30 10:59,12166948,Atp Singles,Beijing,Hard,Z. Zhang,A. Gea,0-1,1-1,15 - 30,2,sets,2:1,2:1,11,,0.08332196918041729,0.07989595208357954
+2026-09-30 10:59,12166948,Atp Singles,Beijing,Hard,Z. Zhang,A. Gea,0-1,1-1,15 - 30,2,sets,1:2,1:2,5.5,,0.16664393836083458,0.20116753176281596
+2026-09-30 10:59,12166948,Atp Singles,Beijing,Hard,Z. Zhang,A. Gea,0-1,1-1,15 - 30,2,ganador,,jugador1,11,1.05,0.08713692946058092,0.07989595208357954
+2026-09-30 10:59,12166967,Wta Singles,Beijing,Hard,M. Hontama,K. Boulter,0-1,3-4,40 - 30,1,sets,0:2,0:2,1.5,,0.6060606060606061,0.6817313630012602
+2026-09-30 10:59,12166967,Wta Singles,Beijing,Hard,M. Hontama,K. Boulter,0-1,3-4,40 - 30,1,sets,2:1,2:1,6,,0.15151515151515152,0.10222546634760406
+2026-09-30 10:59,12166967,Wta Singles,Beijing,Hard,M. Hontama,K. Boulter,0-1,3-4,40 - 30,1,sets,1:2,1:2,3.75,,0.24242424242424246,0.21604317065113576
+2026-09-30 10:59,12166967,Wta Singles,Beijing,Hard,M. Hontama,K. Boulter,0-1,3-4,40 - 30,1,total_juegos,21.5,mas,1.8,1.909,0.5146939875977352,0.4610221301626026
+2026-09-30 10:59,12166967,Wta Singles,Beijing,Hard,M. Hontama,K. Boulter,0-1,3-4,40 - 30,1,ganador,,jugador1,6,1.125,0.15789473684210525,0.10222546634760406
+2026-09-30 10:59,12166971,Challenger Men Singles,Bari (Italy) - Qualification,Clay,D. Kuzmanov,V. Sachko,0-0,0-0,0 - 0,1,total_juegos,21.5,mas,1.8,1.909,0.5146939875977352,0.6266565384766726
+2026-09-30 10:59,12166971,Challenger Men Singles,Bari (Italy) - Qualification,Clay,D. Kuzmanov,V. Sachko,0-0,0-0,0 - 0,1,sets,2:0,2:0,4.333,,0.20510179315939941,0.1643270819833925
+2026-09-30 10:59,12166971,Challenger Men Singles,Bari (Italy) - Qualification,Clay,D. Kuzmanov,V. Sachko,0-0,0-0,0 - 0,1,sets,0:2,0:2,2.25,,0.39498047544874565,0.35358154364625805
+2026-09-30 10:59,12166971,Challenger Men Singles,Bari (Italy) - Qualification,Clay,D. Kuzmanov,V. Sachko,0-0,0-0,0 - 0,1,sets,2:1,2:1,5,,0.17774121395193557,0.19542671542078896
+2026-09-30 10:59,12166971,Challenger Men Singles,Bari (Italy) - Qualification,Clay,D. Kuzmanov,V. Sachko,0-0,0-0,0 - 0,1,sets,1:2,1:2,4,,0.22217651743991945,0.2866646589495606
+2026-09-30 10:59,12166971,Challenger Men Singles,Bari (Italy) - Qualification,Clay,D. Kuzmanov,V. Sachko,0-0,0-0,0 - 0,1,ganador,,jugador1,2.5,1.5,0.375,0.3597537974041815
+2026-09-30 10:59,12167030,Itf Men Singles,M15 Telavi 2 (Georgia),Clay,G. Bosio,K. Malirz,1-0,3-4,40 - 0,2,total_juegos,21.5,mas,1.727,2,0.5366246310705661,0.5652054683922363
+2026-09-30 10:59,12167030,Itf Men Singles,M15 Telavi 2 (Georgia),Clay,G. Bosio,K. Malirz,1-0,3-4,40 - 0,2,sets,2:0,2:0,1.444,,0.6177197317331451,0.6211586290466835
+2026-09-30 10:59,12167030,Itf Men Singles,M15 Telavi 2 (Georgia),Clay,G. Bosio,K. Malirz,1-0,3-4,40 - 0,2,sets,2:1,2:1,3.5,,0.25485351217790325,0.28172117569956673
+2026-09-30 10:59,12167030,Itf Men Singles,M15 Telavi 2 (Georgia),Clay,G. Bosio,K. Malirz,1-0,3-4,40 - 0,2,sets,1:2,1:2,7,,0.12742675608895163,0.09712019525374979
+2026-09-30 10:59,12167030,Itf Men Singles,M15 Telavi 2 (Georgia),Clay,G. Bosio,K. Malirz,1-0,3-4,40 - 0,2,ganador,,jugador1,1.083,7,0.8660150934059138,0.9028798047462502
+2026-09-30 10:59,12167033,Itf Men Singles,M15 Telavi 2 (Georgia),Clay,N. Rispoli,S. Purtseladze,0-0,4-5,15 - 30,1,total_juegos,24.5,mas,1.833,1.833,0.5,0.42154747189995995
+2026-09-30 10:59,12167033,Itf Men Singles,M15 Telavi 2 (Georgia),Clay,N. Rispoli,S. Purtseladze,0-0,4-5,15 - 30,1,sets,2:0,2:0,7,,0.12713735558408218,0.052570082173759004
+2026-09-30 10:59,12167033,Itf Men Singles,M15 Telavi 2 (Georgia),Clay,N. Rispoli,S. Purtseladze,0-0,4-5,15 - 30,1,sets,0:2,0:2,2,,0.4449807445442876,0.5733380922537026
+2026-09-30 10:59,12167033,Itf Men Singles,M15 Telavi 2 (Georgia),Clay,N. Rispoli,S. Purtseladze,0-0,4-5,15 - 30,1,sets,2:1,2:1,4.333,,0.20539152759948653,0.11567942956529584
+2026-09-30 10:59,12167033,Itf Men Singles,M15 Telavi 2 (Georgia),Clay,N. Rispoli,S. Purtseladze,0-0,4-5,15 - 30,1,sets,1:2,1:2,4,,0.2224903722721438,0.25841239600724264
+2026-09-30 10:59,12167033,Itf Men Singles,M15 Telavi 2 (Georgia),Clay,N. Rispoli,S. Purtseladze,0-0,4-5,15 - 30,1,ganador,,jugador1,2.75,1.4,0.3373493975903614,0.16824951173905475
+2026-09-30 10:59,12167053,Itf Men Singles,M25 Darwin,Hard,H. Satara,H. Jones,0-0,2-3,0 - 15,2,ganador,,jugador1,5.5,1.142,0.17193616380608248,0.4066568048203846
