@@ -44,7 +44,8 @@ RAIZ = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "..")
 CARPETA = os.path.join(RAIZ, "modelos", "ligas_america")
 FD = os.path.join(CARPETA, "data", "football_data")
 LIGAS = {"ARG": "Liga Profesional", "BRA": "Brasileirão", "MEX": "Liga MX",
-         "COLB": "Primera B Colombia"}   # COLB: resultados de FotMob, SIN cuotas (fotmob_resultados.py)
+         "COLB": "Primera B Colombia", "COLA": "Primera A Colombia", "URU": "Primera Uruguay",
+         "USA": "MLS"}   # COLB: resultados de FotMob, SIN cuotas (fotmob_resultados.py)
 OBJETIVOS = {"ambos_marcan": "btts", "mas_2_5": "o25"}
 SEMILLAS = (0, 1, 2)
 DESDE_PRUEBA = os.environ.get("DESDE_PRUEBA", "2024-01")
@@ -63,6 +64,8 @@ def cargar():
         d["liga"] = cod
         tabs.append(d)
     d = pd.concat(tabs, ignore_index=True)
+    for c in ("AvgCH", "AvgCD", "AvgCA", "HG", "AG"):
+        d[c] = pd.to_numeric(d[c], errors="coerce")     # alguna cuota viene como texto
     d["fecha"] = pd.to_datetime(d.Date, dayfirst=True)
     d = d[d.HG.notna() & d.AG.notna()].copy()
     d["hg"], d["ag"] = d.HG.astype(int), d.AG.astype(int)
