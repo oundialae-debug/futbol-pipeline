@@ -29,6 +29,7 @@ Dónde está cada cosa:
 | Empieza el tema **tenis** (ATP y WTA), aparte del fútbol: guía y plan. | Petición del usuario: "quiero que empecemos a pronosticar tenis", los dos circuitos. | `modelos/tenis/CLAUDE.md` | este commit |
 | Descarga de tennis-data.co.uk (resultados y cuotas de cierre, ATP 2000+, WTA 2007+) y Sackmann (partidos con stats de saque, 1991+ circuito principal, 2010+ Challenger/qualy/ITF). Por GitHub Actions, al empujar a esta rama. | Highlightly no tiene tenis. Las dos fuentes están bloqueadas desde el contenedor (403, y GitHub solo a los repos del usuario). **Aprobada por el usuario** antes de lanzarla. | `modelos/tenis/scripts/descargar_tenis.py`, `.github/workflows/descargar_tenis.yml` | este commit |
 | El workflow de tenis ya no se para si falla Sackmann, y deja un sondeo (`data/tenis/sondeo_sackmann.md`): qué responde GitHub por `JeffSackmann/tennis_atp`/`tennis_wta` y qué copias hay. | 1ª ejecución: el clon falló con "could not read Username" (repo inexistente o privado) y por eso tennis-data no llegó a bajarse. No se da Sackmann por desaparecido sin ver la respuesta. | `.github/workflows/descargar_tenis.yml`, `modelos/tenis/scripts/descargar_tenis.py` | este commit |
+| Reglas para validar Sackmann antes de usarlo (cruce con tennis-data, imposibles en stats de saque) y aviso de fuga: `tourney_date` es el inicio del torneo. | Pregunta del usuario: qué pasa si los datos de Sackmann son erróneos. | `modelos/tenis/CLAUDE.md` | este commit |
 
 ---
 

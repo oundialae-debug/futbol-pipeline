@@ -41,5 +41,19 @@ se mide en partidos YA jugados, nunca con una foto de un partido futuro.
 - Los nombres no coinciden: tennis-data usa "Nadal R.", Sackmann "Rafael
   Nadal". El emparejamiento se comprueba a mano en una muestra, igual que los
   alias de football-data.
+- **Sackmann se valida antes de usarlo** (pregunta del usuario, 30/09):
+  cruce partido a partido con tennis-data (ganador, marcador, superficie,
+  ranking; lo que no cuadre se aparta y se cuenta), e imposibles físicos en
+  las estadísticas de saque (aces/dobles faltas <= puntos de saque,
+  1stWon <= 1stIn <= svpt, bpSaved <= bpFaced, juegos al saque coherentes con
+  el marcador, duplicados). Cobertura de stats medida por año y nivel, no con
+  un partido.
+- **Fuga: `tourney_date` de Sackmann es el INICIO del torneo**, igual para
+  todas las rondas. Ordenar por fecha sin más deja que la 1ª ronda vea la
+  semifinal (misma forma que la tabla de fútbol del 29/09). Ordenar por ronda
+  dentro del torneo o usar la fecha real de tennis-data, y control de fuga:
+  trucar un resultado y que nada anterior ni de la misma ronda cambie.
+- Si Sackmann no está disponible, el Elo sale solo de tennis-data (ganador,
+  marcador, superficie, ronda, ranking, fecha); se pierden las stats de saque.
 - Retiradas y walkovers (`Comment` en tennis-data, `score` con "RET"/"W/O" en
   Sackmann): cada casa liquida distinto. Se apartan antes de medir nada.
