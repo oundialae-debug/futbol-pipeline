@@ -134,3 +134,11 @@ carpeta se apunta aquí.
 - **Ficheros:** `diseno_nuevo/generador/logo.py` (el logo en un sitio),
   `s1.py`, `s4_logo.py` y los `.dc.html` generados. Nombre sin comprobar como
   marca ni dominio.
+
+## 30/09/2026: inventario de datos e ideas de cruces
+
+- **Qué:** inventario de lo que hay en `data/` y 12 ideas de datos nuevos
+  cruzando ficheros, con qué está probado y qué no. En `IDEAS.md`.
+- **Por qué:** el usuario quiere definir los datos antes de llevarlos al
+  diseño y crear cosas que no tengan otras apps.
+- **Cómo:** solo lectura de cabeceras y conteos. Sin API ni descargas.

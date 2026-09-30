@@ -112,3 +112,76 @@ rondopulse, rondoradar, rondowire, rondomap, pannalens, pannaview,
 nutmegview, backheellens, strikerlens, keeperwire, wingerlens**.
 
 Sin comprobar: marca registrada y apps con ese nombre. `.io` solo es pista.
+
+## Qué datos tenemos y qué podemos crear cruzándolos (30/09/2026)
+
+Revisado fichero a fichero. Todo en `data/`, sin llamar a la API.
+
+| dato | fichero | alcance |
+|---|---|---|
+| Partidos + 39 estadísticas por equipo | `historico_partidos.csv` | 6 ligas, 2022/23→hoy; xG de equipo desde 2025/26 |
+| Descanso (marcador al HT, tiros, córners, tarjetas) | `football_data/*.csv` | 6 ligas, 2022/23→hoy |
+| Alineaciones (once por ID) | `historico_lineups.csv` | desde abr-2024 (+ 2023/24 vía box-score) |
+| Jugador por partido: nota, xG, xA, tiros, pases clave, regates, duelos, faltas, xG evitado (porteros) | `historico_xg_jugador.csv` | 3.046 partidos, desde abr-2025 |
+| Jugador por temporada: partidos, minutos, goles, asist., tarjetas | `historico_jugador_stats.csv` | 148.833 filas |
+| Tarjetas con jugador y minuto | `eventos_tarjetas_jugadores_2025_26.csv` | solo 2025/26 |
+| Perfil: edad, altura, pie, posición | `jugador_perfil.csv` | 4.953 jugadores |
+| Valor de mercado (histórico) | `jugador_valor_mercado.csv` | 4.306 jugadores, 2004→hoy |
+| Lesiones (motivo, desde-hasta, partidos perdidos) | `jugador_lesiones.csv` | 2022→hoy |
+| Árbitro y clima | `historico_arbitro_clima.csv` | ~91% / 95% de partidos |
+| Cara a cara real | `historico_h2h_profundo.csv` | últimos 10 por par, desde antes de 2022 |
+| Cuotas de 50+ casas con hora de captura | `cuotas_cosechadas.csv` | ago-sep 2026 |
+| Cierre de Pinnacle/Betfair | `cuotas_historicas_fd.csv` | 2022/23→hoy |
+
+### Ideas nuevas (cruces que otras apps no dan)
+
+Marcadas: **[probado]** ya medido en el proyecto; **[por comprobar]** hay que
+medirlo antes de enseñarlo (regla del proyecto: nada sin comprobar).
+
+1. **Peso de las bajas.** Lesiones × valor de mercado × minutos/nota ×
+   alineaciones: «Hoy le faltan jugadores que suman el 28% de sus goles y
+   asistencias» y «con él / sin él». [por comprobar el efecto; como dato
+   descriptivo sirve ya]
+2. **Con él / sin él.** Alineaciones × resultados × xG: puntos por partido y xG
+   del equipo con y sin cada titular. [por comprobar muestra: n pequeño, dar el n]
+3. **Ciclo de amarillas.** Tarjetas por jugador y minuto: «a una amarilla de
+   la sanción», «ve la amarilla sobre el minuto 60». [datos de 2025/26; falta
+   la regla de sanción de cada liga]
+4. **Termómetro de tarjetas del partido.** Árbitro (tarjetas y minuto medio)
+   × faltas de los dos equipos × jugadores al límite. [árbitro probado como
+   la mejor variable de tarjetas; el resto por comprobar]
+5. **Tabla merecida.** Puntos esperados según el xG de cada partido frente a
+   los puntos reales: quién va por encima y quién por debajo. Complementa
+   «¿Suerte o nivel?» (Elo). [por comprobar si predice]
+6. **Rachas que no aguantan.** Goles frente a xG, de equipo y de jugador:
+   «marca el doble de lo que le toca». [por comprobar; la forma reciente ya
+   se vio que no añade al modelo, así que no venderlo como predicción]
+7. **Segundas partes.** Marcador al descanso × final (football-data, 4
+   temporadas): quién remonta, quién se cae, puntos ganados/perdidos tras el
+   descanso. [por comprobar estabilidad año a año]
+8. **Cansancio y rotación.** Días desde el último partido × titulares que
+   cambia cada equipo: «suele rotar 4 jugadores tras jugar entre semana».
+   [rotación medida; efecto por comprobar]
+9. **Portero que salva.** xG evitado: «su portero le ha ahorrado 4 goles; la
+   defensa es peor de lo que parece». [desde abr-2025]
+10. **Moneyball.** Valor de mercado × xG/xA/nota por 90: jugadores que rinden
+    muy por encima de lo que valen, y plantillas que rinden por debajo de su
+    valor. [descriptivo]
+11. **Duelo de estilos.** Posesión, pases, duelos y centros frente a la media
+    de la liga: «equipo de posesión contra equipo que presiona», y cómo le
+    fue a cada uno contra ese estilo. [por comprobar muestra]
+12. **Cuota justa y acierto de la casa.** Ya hecho: nuestro %, cuota justa,
+    acierto de la casa en ese mercado y «tu cuota». Añadible: cómo se movió
+    la cuota antes del partido (tenemos hora de captura). [probado]
+
+### Lo que NO aporta (ya lo tienen otras o no sirve)
+
+- Mapa de tiros: lo da FotMob y además no tenemos coordenadas.
+- Momentum en directo: no tenemos datos en vivo.
+- Clima como predictor: probado, no ayuda (se puede mostrar como contexto).
+
+### Recomendación de orden
+
+1 Peso de las bajas · 3-4 Tarjetas (ciclo + termómetro) · 5 Tabla merecida ·
+7 Segundas partes · 12 Cuotas (ya hecho). Son las más únicas y las que
+mejor responden a «¿qué va a pasar en este partido?».
