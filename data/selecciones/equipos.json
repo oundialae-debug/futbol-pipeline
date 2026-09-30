@@ -6,16 +6,16 @@
   "Norway": 928374,
   "Greece": 951351,
   "Netherlands": 952202,
+  "Israel": 950500,
+  "Kosovo National Team": 946245,
+  "Malta": 947096,
+  "Gibraltar": 930927,
+  "Republic of Ireland": 661160,
+  "Austria": 660309,
   "Germany": 22059,
   "Serbia": 12698,
   "Denmark": 18655,
-  "Portugal": 23761,
-  "Republic of Ireland": 661160,
-  "Austria": 660309,
-  "Malta": 947096,
-  "Gibraltar": 930927,
-  "Israel": 950500,
-  "Kosovo National Team": 946245
+  "Portugal": 23761
  },
  "cruces": [
   [
@@ -37,6 +37,24 @@
    "2026-10-01T18:45:00.000Z"
   ],
   [
+   "Israel",
+   "Kosovo National Team",
+   1301113406,
+   "2026-10-01T18:45:00.000Z"
+  ],
+  [
+   "Malta",
+   "Gibraltar",
+   1315312341,
+   "2026-10-01T18:45:00.000Z"
+  ],
+  [
+   "Republic of Ireland",
+   "Austria",
+   1301112555,
+   "2026-10-01T18:45:00.000Z"
+  ],
+  [
    "Germany",
    "Serbia",
    1301109151,
@@ -47,25 +65,7 @@
    "Portugal",
    1301110853,
    "2026-10-01T18:45:00.000Z"
-  ],
-  [
-   "Republic of Ireland",
-   "Austria",
-   1301112555,
-   "2026-10-01T18:45:00.000Z"
-  ],
-  [
-   "Malta",
-   "Gibraltar",
-   1315312341,
-   "2026-10-01T18:45:00.000Z"
-  ],
-  [
-   "Israel",
-   "Kosovo National Team",
-   1301113406,
-   "2026-10-01T18:45:00.000Z"
   ]
  ],
- "generado": "2026-09-30T07:37:20.325752+00:00"
+ "generado": "2026-09-30T13:50:45.306017+00:00"
 }
