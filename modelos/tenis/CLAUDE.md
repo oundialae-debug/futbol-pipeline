@@ -463,6 +463,26 @@ reconocidos: "To Win", "Total Games in Match", "Set Betting".
   en ITF hay discrepancias grandes en ganador, donde el modelo es más flojo
   (sin estadísticas jun-sep): no fiarse del modelo en ITF.
 
+## Más/menos juegos en directo: señal y apuestas en papel (30/09/2026)
+
+El usuario pidió centrarse en directo SOLO en el total de juegos. Regla fijada ANTES de
+medirla (`juegos_directo.py`):
+- línea principal de cada partido = la de prob. sin margen más cercana al 50%;
+- señal "vigilar el MENOS" si el modelo da al "más" al menos 5 puntos menos que la casa.
+  Solo en esa dirección: el modelo sobreestima los juegos, un "más" suyo no cuenta;
+- cuota mínima del menos = 1 / (1 - prob. del más según el mercado).
+
+Evaluación (`evaluar_juegos.py`, la llama `registro_directo.py` una vez por hora tras bajar
+`get_fixtures` de hoy y ayer a `data/tenis/api_tennis/resultados/`): una apuesta por partido
+(la primera pasada con señal), a la cuota de la API; retiradas fuera; controles "siempre el
+menos" y "siempre el más" en la 1ª pasada, y Brier del modelo frente al mercado. Resultado en
+`data/tenis/api_tennis/evaluacion_juegos.md`. Con menos de 20 apuestas no se concluye nada.
+
+Luckia bloquea el acceso desde fuera de España (probado desde el contenedor): no se pueden
+sacar enlaces a cada partido; el aviso lleva la sección de tenis. No se apuesta por el
+usuario (sin acceso a su cuenta, Luckia prohíbe apostar con programas, y la señal no está
+probada).
+
 ## Plan (en este orden)
 
 1. Ganador del partido, único mercado con cierre de Pinnacle.
