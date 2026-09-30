@@ -255,3 +255,9 @@ carpeta se apunta aquí.
 - **Sin decidir:** nombres con inicial también en el campo de alineaciones
   (ahora solo apellido, por espacio); opción (b) «Bookies agree/disagree»
   cuando haya cuotas del partido.
+
+## 30/09/2026: idioma
+
+- **Qué:** `app_apostador/CLAUDE.md` (nuevo) con la regla del usuario: a él,
+  siempre en español; el proyecto (la app), en inglés. Más las normas de
+  trabajo de esta carpeta.
