@@ -1,11 +1,12 @@
 """
 Vigilante de más/menos juegos en directo con aviso al móvil (30/09/2026). Lo corre GitHub Actions
 (vigilante_tenis.yml en main): cada 2 minutos, durante casi 6 horas, 2 peticiones a API-Tennis
-(marcadores y cuotas en directo). No gasta créditos de Claude.
+(marcadores y cuotas en directo). No gasta créditos de Claude. Desde el 30/09 cada minuto
+(CADA=60), a petición del usuario.
 
 Regla (pedida por el usuario): en la línea principal de cada partido (la más cercana al 50% según
 la casa), el modelo Y la casa (sin margen) dan más del 54% al mismo lado (más o menos), durante
-2 pasadas seguidas (~2 min) para no avisar por un vaivén puntual. Un aviso por partido y lado.
+2 pasadas seguidas (~1-2 min) para no avisar por un vaivén puntual. Un aviso por partido y lado.
 Aviso por ntfy (topic en NTFY_TOPIC):
   Jugador VS Jugador | más/menos de X juegos | modelo 57% / cuota 55% | mínima 1,82 | torneo
 "mínima" = 1 / prob. de la casa: apostar solo si Luckia paga eso o más.
@@ -23,7 +24,8 @@ import juegos_directo as J  # noqa: E402
 import markov_tenis as K  # noqa: E402
 import pronosticos_api as Q  # noqa: E402
 
-UMBRAL, PASADAS, CADA = 0.54, 2, 120
+UMBRAL, PASADAS = 0.54, 2
+CADA = float(os.environ.get("CADA", 60))   # segundos entre pasadas
 MINUTOS = float(os.environ.get("MINUTOS", 345))
 TOPIC = os.environ.get("NTFY_TOPIC", "tenis-f059172b4dc7")
 
