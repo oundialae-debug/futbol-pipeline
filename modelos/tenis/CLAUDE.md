@@ -303,6 +303,22 @@ jugador ya olvidan solas). Todo lo anterior -1,72s / apuestas -0,08%;
 -1,14%. Más corto = pesos más ruidosos = más apuestas falsas. Mismo patrón
 que el peso por recencia en fútbol.
 
+## Mezcla por circuito y nivel (30/09/2026): no mejora la predicción; pista en ATP
+
+Pregunta del usuario: son torneos distintos, no mezclar. Las puntuaciones de
+jugador siguen usando todos los niveles; solo se separa la capa de mezcla.
+`scripts/por_nivel.py` -> `data/tenis/por_nivel.md`, juzgado 2023-2026:
+- una para todo: -1,72s, apuestas -0,08% (7.299)
+- por circuito: -1,36s, **+0,93%** (7.739, +0,98s)
+- por circuito x nivel (8 grupos): +0,46s (peor), +0,52% (10.806)
+Separar más = pesos más ruidosos. Por grupos, ATP gana en los 4 niveles
+(1000 +3,7% en 1.750 apuestas, ~1,5s; 250 +2,8%; 500 +1,8%; GS +0,6%) y
+WTA pierde (1000 -2,5%, 500 -2,8%), pero ningún grupo mejora al mercado en
+log-loss y elegir "solo ATP" ahora sería elegir tras mirar 8 grupos.
+**Regla fijada el 30/09/2026 para comprobar en papel con partidos
+futuros:** mezcla cuota + Elo + puntos ajustada solo con ATP, apostar
+cuando p·cuota − 1 > 0.
+
 ## Plan (en este orden)
 
 1. Ganador del partido, único mercado con cierre de Pinnacle.
