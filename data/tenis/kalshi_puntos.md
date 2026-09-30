@@ -9,6 +9,6 @@ que el precio de Kalshi. Apuestas al precio de venta con comisión.
 | KXATPCHALLENGERMATCH | sin precios | | | | | |
 | KXWTAMATCH | 1376 de 2068 | 0.6152 | 0.5866 | +0.0286 (+4.28) | 1141 / -3.82% (-1.18) | 588 / -2.11% (-0.46) |
 | KXWTACHALLENGERMATCH | 787 de 1298 | 0.6329 | 0.5983 | +0.0346 (+3.38) | 645 / -2.43% (-0.47) | 404 / -2.63% (-0.39) |
-| KXATPGTOTAL | sin precios | | | | | |
-| KXWTAGTOTAL | 13 | | | | | |
-| KXATPGSPREAD | sin precios | | | | | |
+| KXATPGTOTAL | 495 de 628 | 0.6945 | 0.6806 | +0.0139 (+1.05) | 360 / -11.64% (-2.33) | 222 / -12.59% (-1.97) |
+| KXWTAGTOTAL | 351 de 558 | 0.6731 | 0.6692 | +0.0038 (+0.26) | 318 / +1.66% (+0.31) | 254 / -0.61% (-0.10) |
+| KXATPGSPREAD | 482 de 594 | 0.6825 | 0.6969 | -0.0144 (-0.69) | 294 / -3.75% (-0.69) | 176 / -2.43% (-0.33) |

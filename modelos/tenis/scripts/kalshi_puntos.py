@@ -32,7 +32,9 @@ import modelo_puntos as P  # noqa: E402
 SERIES = {"KXATPMATCH": ("atp", "partido"), "KXATPCHALLENGERMATCH": ("atp", "partido"),
           "KXWTAMATCH": ("wta", "partido"), "KXWTACHALLENGERMATCH": ("wta", "partido"),
           "KXATPGTOTAL": ("atp", "total"), "KXWTAGTOTAL": ("wta", "total"), "KXATPGSPREAD": ("atp", "hándicap")}
-NOMBRES = re.compile(r"the (.+?) vs\.? (.+?) professional tennis match")
+# el "the" INMEDIATAMENTE anterior a "X vs Y": en juegos el texto empieza "If the number of
+# completed games...", y un "the (.+?) vs" cogía esa frase como nombre (solo 17 emparejados)
+NOMBRES = re.compile(r"the ((?:(?!the ).)+?) vs\.? (.+?) professional tennis match")
 
 
 def historiales():

@@ -319,6 +319,27 @@ log-loss y elegir "solo ATP" ahora sería elegir tras mirar 8 grupos.
 futuros:** mezcla cuota + Elo + puntos ajustada solo con ATP, apostar
 cuando p·cuota − 1 > 0.
 
+## Kalshi: qué mercado tiene el precio más flojo (30/09/2026, parcial)
+
+`scripts/calibracion_kalshi.py` -> `data/tenis/calibracion_kalshi.md` y
+`scripts/kalshi_puntos.py` -> `data/tenis/kalshi_puntos.md`. Foto a cierre -
+4 h (ATP 6 h). Muestra: recientes (ago-sep 2026) completos + 1.500 antiguos
+por serie. Faltan Challenger ATP e ITF (descargando).
+
+- Ganador ATP y WTA en Kalshi: bien calibrado (pendiente 1,02 y 1,00). A
+  ciegas, favorito -3,1%/-5,1% (diferencial + comisión).
+- Challenger WTA: pendiente 1,16 (+1,34s, no significativo); a ciegas -5,5%.
+- **Total y hándicap de juegos ATP: precio demasiado extremo** (pendiente
+  0,44, -3,98s; 0,27, -5,62s): el lado >50% gana menos de lo que dice. Pero
+  es el más caro (diferencial 3-4 céntimos + comisión): a ciegas -7% a -17%,
+  hueco con el precio perfecto ~0. Ojo: medido en la línea más cercana al
+  50% elegida con el propio precio; parte puede ser ruido del precio.
+- Modelo de puntos contra Kalshi: partido ATP +4,81s peor (-5,9% apostando),
+  WTA +4,28s (-3,8%), Challenger WTA +3,38s (-2,4%); total ATP +1,05s
+  (-11,6%), total WTA +0,26s (+1,7%, ruido), hándicap ATP -0,69s (-3,8%).
+  Fallo arreglado: el texto de juegos empieza "If the number of...", y el
+  patrón de nombres cogía esa frase (17 emparejados en vez de ~500).
+
 ## Plan (en este orden)
 
 1. Ganador del partido, único mercado con cierre de Pinnacle.
