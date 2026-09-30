@@ -10,7 +10,7 @@ la casa), el modelo Y la casa (sin margen) dan más del 54% al MENOS (el más se
 pasa del 75%, salvo que la cuota real de la API para ese lado pague 1,33 o más. Un aviso por partido y lado.
 Aviso por ntfy (topic en NTFY_TOPIC):
   Jugador VS Jugador | más/menos de X juegos | modelo 57% / cuota 55% | mínima 1,82 | torneo
-"mínima" = 1 / prob. de la casa: apostar solo si Luckia paga eso o más.
+"mínima" = 1 / prob. de la casa: apostar solo si la casa (Stake) paga eso o más.
 """
 import os
 import sys
@@ -25,6 +25,7 @@ import calibrar_juegos as C  # noqa: E402
 import juegos_directo as J  # noqa: E402
 import markov_tenis as K  # noqa: E402
 import pronosticos_api as Q  # noqa: E402
+import stake  # noqa: E402
 
 UMBRAL, PASADAS = 0.54, 2
 TECHO, CUOTA_BUENA = 0.75, 1.33   # por encima del 75% solo se avisa si la cuota REAL de la API paga 1,33 o más
@@ -33,19 +34,20 @@ MINUTOS = float(os.environ.get("MINUTOS", 345))
 TOPIC = os.environ.get("NTFY_TOPIC", "tenis-f059172b4dc7")
 
 
-def avisar(txt, jugadores=()):
-    """Luckia no tiene dirección por partido que se pueda montar (lleva un número interno suyo):
-    el título son los apellidos y hay un botón para COPIAR cada uno (acción "copy" de ntfy, en la
-    app de Android) y pegarlo en el buscador de Luckia. Se publica en JSON para que los acentos
+def avisar(txt, jugadores=(), url=stake.BASE):
+    """Ni Luckia ni Stake tienen dirección por partido que se pueda montar (llevan un número interno):
+    el título son los apellidos, hay un botón para COPIAR cada uno (acción "copy" de ntfy, en la
+    app de Android) y otro que abre la página del TORNEO en Stake (stake.py; el usuario cambió
+    de Luckia a Stake el 30/09). Se publica en JSON para que los acentos
     y letras raras de los nombres no se rompan en las cabeceras."""
     print(txt, flush=True)
     ap = [apellido(j) for j in jugadores]
     acciones = [{"action": "copy", "label": f"Copiar {a}", "value": a} for a in ap]
-    acciones.append({"action": "view", "label": "Abrir Luckia", "url": J.LUCKIA})
+    acciones.append({"action": "view", "label": "Abrir en Stake", "url": url})
     try:
         requests.post("https://ntfy.sh/", timeout=15, json={
             "topic": TOPIC, "title": " - ".join(ap) or "Tenis: juegos", "message": txt, "priority": 4,
-            "click": J.LUCKIA, "actions": acciones[:3]})
+            "click": url, "actions": acciones[:3]})
     except requests.RequestException as e:
         print(f"ntfy falló: {type(e).__name__}", flush=True)
 
@@ -175,7 +177,7 @@ def main():
                     avisar(f"{x.jugador1} VS {x.jugador2} | {lado} de {ln} juegos | modelo {pmod:.0%} / cuota {pcas:.0%} | "
                            f"mínima {mn} | {J.torneo(x.tipo, x.torneo)}\n"
                            f"Si la línea ya cambió ({lado}, modelo/casa): {escalera(k, float(x.linea), lado)}",
-                           (x.jugador1, x.jugador2))
+                           (x.jugador1, x.jugador2), stake.enlace(x.tipo, x.torneo))
             for k in set(racha) - vistos:
                 racha.pop(k)
             fallos = 0
