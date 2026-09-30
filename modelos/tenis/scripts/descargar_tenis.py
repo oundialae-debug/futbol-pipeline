@@ -86,6 +86,10 @@ def sackmann(resumen):
                 "|---|---|---|---|"]
     for circuito, segundo in (("atp", "qual_chall"), ("wta", "qual_itf")):
         repo = f"{CLONES}/tennis_{circuito}"
+        if not os.path.isdir(repo):
+            print(f"  tennis_{circuito}: no se pudo clonar (ver sondeo_sackmann.md)")
+            resumen.append(f"| tennis_{circuito} | NO SE PUDO CLONAR | | |")
+            continue
         commit = os.popen(f"git -C {repo} log -1 --format='%h %cs'").read().strip()
         resumen.append(f"| tennis_{circuito} (commit {commit}) | | | |")
         elegidos = [f"{circuito}_players.csv"]

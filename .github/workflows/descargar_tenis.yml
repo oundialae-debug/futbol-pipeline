@@ -23,10 +23,36 @@ jobs:
         with:
           python-version: '3.11'
       - run: pip install requests pandas openpyxl xlrd
-      - name: Clonar Sackmann
+      - name: Sondeo Sackmann
+        continue-on-error: true
+        # El 30/09 el clon falló con "could not read Username" (repo inexistente
+        # o privado). Se deja constancia de lo que responde GitHub y se buscan
+        # copias, sin suponer nada.
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
-          git clone --depth 1 https://github.com/JeffSackmann/tennis_atp /tmp/sackmann/tennis_atp
-          git clone --depth 1 https://github.com/JeffSackmann/tennis_wta /tmp/sackmann/tennis_wta
+          mkdir -p data/tenis
+          f=data/tenis/sondeo_sackmann.md
+          echo "# Sondeo Sackmann ($(date -u +%Y-%m-%dT%H:%M) UTC)" > $f
+          for r in JeffSackmann/tennis_atp JeffSackmann/tennis_wta; do
+            echo "## $r" >> $f
+            curl -sS -H "Authorization: Bearer $GH_TOKEN" https://api.github.com/repos/$r \
+              | python3 -c "import json,sys; d=json.load(sys.stdin); print('respuesta:', {k: d.get(k) for k in ('message','full_name','private','archived','pushed_at','html_url')})" >> $f
+          done
+          echo "## Cuenta JeffSackmann (repos públicos)" >> $f
+          curl -sS -H "Authorization: Bearer $GH_TOKEN" "https://api.github.com/users/JeffSackmann/repos?per_page=100" \
+            | python3 -c "import json,sys; d=json.load(sys.stdin); print(d if isinstance(d,dict) else '\n'.join(f\"- {x['full_name']} (push {x['pushed_at']})\" for x in d))" >> $f
+          for q in "tennis_atp" "tennis_wta"; do
+            echo "## Búsqueda de repos: $q" >> $f
+            curl -sS -H "Authorization: Bearer $GH_TOKEN" "https://api.github.com/search/repositories?q=$q+in:name&sort=stars&per_page=15" \
+              | python3 -c "import json,sys; d=json.load(sys.stdin); print('\n'.join(f\"- {x['full_name']} (push {x['pushed_at']}, {x['size']} KB, fork={x['fork']}, estrellas {x['stargazers_count']})\" for x in d.get('items',[])) or d)" >> $f
+          done
+          cat $f
+      - name: Clonar Sackmann
+        continue-on-error: true
+        run: |
+          git clone --depth 1 https://github.com/JeffSackmann/tennis_atp /tmp/sackmann/tennis_atp || true
+          git clone --depth 1 https://github.com/JeffSackmann/tennis_wta /tmp/sackmann/tennis_wta || true
       - name: Descargar
         run: python modelos/tenis/scripts/descargar_tenis.py
       - name: Guardar
