@@ -1,14 +1,14 @@
 # Más/menos juegos en directo: apuestas en papel
 
-Partidos acabados con cuota de juegos en el registro: **35**. Una apuesta por partido (se agrupa por partido). Cuota = la de la API en esa pasada, no la de Luckia. Con menos de 20 apuestas el número no significa nada.
+Partidos acabados con cuota de juegos en el registro: **36**. Una apuesta por partido (se agrupa por partido). Cuota = la de la API en esa pasada, no la de Luckia. Con menos de 20 apuestas el número no significa nada.
 
 | estrategia | apuestas | aciertos | beneficio medio | sigmas |
 |---|---|---|---|---|
-| **señal: vigilar el menos** | 11 | 73% | +16.2% | +0.70 |
-| control: siempre el menos (1ª pasada) | 35 | 63% | +17.0% | +1.09 |
-| control: siempre el más (1ª pasada) | 35 | 37% | -28.8% | -1.80 |
+| **señal: vigilar el menos** | 12 | 75% | +28.4% | +1.16 |
+| control: siempre el menos (1ª pasada) | 36 | 61% | +13.8% | +0.89 |
+| control: siempre el más (1ª pasada) | 36 | 39% | -25.7% | -1.62 |
 
-Brier del 'más' en la línea principal (1ª pasada): modelo 0.3045, mercado 0.2572 (menor es mejor). El modelo da al más +26.6% sobre lo que pasa de verdad.
+Brier del 'más' en la línea principal (1ª pasada): modelo 0.2978, mercado 0.2570 (menor es mejor). El modelo da al más +25.1% sobre lo que pasa de verdad.
 
 ## Señales
 
@@ -23,6 +23,7 @@ Brier del 'más' en la línea principal (1ª pasada): modelo 0.3045, mercado 0.2
 | WTA 1000 Beijing: M. Hontama vs K. Boulter | 21.5 | 1.91 | 19 | gana |
 | WTA 1000 Beijing: E. Jacquemot vs M. Frech | 21.5 | 1.91 | 31 | pierde |
 | ITF M M15 Telavi 2 (Georgia): N. Rispoli vs S. Purtseladze | 25.5 | 1.80 | 26 | pierde |
+| WTA 125 Adana (Turkey): C. Buyukakcay vs L. Stefanini | 31.5 | 2.62 | 31 | gana |
 | Challenger Mouilleron-Le-Captif: L. Poullain vs R. Bertola | 31.5 | 1.83 | 30 | gana |
 | Challenger Columbus: L. Staeheli vs A. Andrade | 22.5 | 1.36 | 22 | gana |
 
@@ -30,13 +31,14 @@ Brier del 'más' en la línea principal (1ª pasada): modelo 0.3045, mercado 0.2
 
 | lado | avisos resueltos | aciertos | beneficio medio (cuota API) | sigmas |
 |---|---|---|---|---|
-| menos | 11 | 82% | +20.2% | +1.12 |
+| menos | 12 | 83% | +21.6% | +1.30 |
 
 ## Previos (antes de empezar), línea principal de juegos y ganador
 
-Ningún partido con previo ha terminado todavía.
+1 partidos. Juegos (más de la línea principal), Brier (menor es mejor): modelo 0.5210, modelo corregido con el historial 0.3701, casa 0.2555. Pasó el más en el 0%.
+Ganador (1): acierto modelo 0%, casa 0%.
 
 ## Aprendizaje (recalibración del modelo)
 
-Partidos resueltos: 35 (218 líneas). Activa: **sí** (hace falta 30+ partidos y que mejore al modelo en partidos que no vio).
-Brier (menor es mejor): modelo 0.3046, modelo con el saque de hoy 0.2975, casa 0.2432, recalibrado (validado por partidos) 0.2317. Sesgo del modelo hacia el más: +27.4%.
+Partidos resueltos: 36 (234 líneas). Activa: **sí** (hace falta 30+ partidos y que mejore al modelo en partidos que no vio).
+Brier (menor es mejor): modelo 0.3017, modelo con el saque de hoy 0.2950, casa 0.2438, recalibrado (validado por partidos) 0.2386. Sesgo del modelo hacia el más: +26.3%.

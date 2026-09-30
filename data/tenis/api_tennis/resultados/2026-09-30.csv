@@ -30,7 +30,7 @@ event_key,tipo,torneo,jugador1,jugador2,estado,sets,juegos_totales
 12166437,Challenger Men Doubles,Porto,Cukierman/ Romboli,Hilderbrand/ Pavel,Finished,2 - 0,25
 12166438,Challenger Men Doubles,Porto,Reymond/ Sanchez,Domingues/ Torres,Finished,2 - 0,15
 12166439,Challenger Men Doubles,Porto,Barrientos/ Walkow,Paul/ Vocel,Finished,2 - 1,30
-12166452,Challenger Men Doubles,Columbus,Fenty/ Maloney,Ayeni/ Suarez,Set 2,0 - 1,9
+12166452,Challenger Men Doubles,Columbus,Fenty/ Maloney,Ayeni/ Suarez,Finished,0 - 2,16
 12166455,Challenger Men Doubles,Columbus,Milavsky/ Shick,Kim/ Nakashima,Cancelled,-,0
 12166456,Challenger Men Doubles,Columbus,Rybakov/ Smith,Colby/ Zamora,Cancelled,-,0
 12166457,Challenger Men Doubles,Columbus,Okonkwo/ Stearns,Jarvis/ Vance,Finished,2 - 0,24
@@ -162,7 +162,7 @@ event_key,tipo,torneo,jugador1,jugador2,estado,sets,juegos_totales
 12166924,Itf Women Singles,W100 Templeton,K. Penickova,I. Shymanovich,Finished,2 - 0,21
 12166925,Itf Women Doubles,W100 Templeton,Frodin/ Sahdiieva,Goto/ Rapolu,,-,0
 12166926,Itf Women Doubles,W100 Templeton,Herea/ Shymanovich,Penickova/ Penickova,,-,0
-12166927,Itf Women Doubles,W100 Templeton,Osuigwe/ Urhobo,Cross/ Rogers,,-,0
+12166927,Itf Women Doubles,W100 Templeton,Osuigwe/ Urhobo,Cross/ Rogers,Set 1,0 - 0,9
 12166928,Itf Women Doubles,W100 Templeton,Pace/ Zucchini,McDonald/ Xu,,-,0
 12166929,Challenger Women Singles,Jingshan,A. Shubladze,J. Lu,Finished,2 - 0,14
 12166931,Challenger Men Doubles,Bari (Italy),Blancaneaux/ Clarke,Alvarez Valdes/ Oetzbach,Finished,1 - 2,39
@@ -338,7 +338,7 @@ event_key,tipo,torneo,jugador1,jugador2,estado,sets,juegos_totales
 12167144,Itf Women Doubles,W35 Baza,Liu/ Moccia,Hietaranta/ Zelnickova,Finished,0 - 2,22
 12167147,Itf Women Doubles,W75 Quinta do Lago,Cembranos/ Ortega Redondo,Collins/ Tanguilig,Finished,0 - 2,14
 12167149,Challenger Men Singles,Curitiba,G. Heide,F. Meligeni Alves,Finished,2 - 0,19
-12167150,Challenger Men Singles,Curitiba,J. Reis Da Silva,M. Pucinelli de Almeida,,-,0
+12167150,Challenger Men Singles,Curitiba,J. Reis Da Silva,M. Pucinelli de Almeida,Set 1,0 - 0,3
 12167151,Challenger Men Doubles,Mouilleron-Le-Captif,Bittoun/ Visker,Balshaw/ Martineau,Finished,2 - 1,36
 12167152,Itf Women Singles,W15 Sharm ElSheikh 13,J. Elkady,E. Adeshina,Finished,0 - 2,16
 12167153,Itf Women Singles,W15 Sharm ElSheikh 13,Y. Hatouka,K. N. Kucikova,Finished,2 - 0,13
@@ -363,7 +363,7 @@ event_key,tipo,torneo,jugador1,jugador2,estado,sets,juegos_totales
 12167173,Itf Women Doubles,W75 Quinta do Lago,Bonardi/ Pereira De Aguiar,Bayerlova/ Gimbrere,Finished,0 - 2,14
 12167180,Challenger Men Singles,Columbus,Dar. Blanch,D. Milavsky,Finished,2 - 1,25
 12167181,Challenger Men Singles,Curitiba,B. Fernandez,L. Midon,Finished,0 - 2,20
-12167182,Challenger Women Singles,Adana (Turkey) - Qualification,C. Buyukakcay,L. Stefanini,Set 3,1 - 1,23
+12167182,Challenger Women Singles,Adana (Turkey) - Qualification,C. Buyukakcay,L. Stefanini,Finished,1 - 2,31
 12167183,Itf Men Singles,M25 Zaragoza,A. Petrov,B. Pujol Navarro,Finished,0 - 2,17
 12167184,Itf Men Singles,M25 Zaragoza,L. Sheyngezikht,M. Damas,Finished,0 - 2,15
 12167185,Itf Men Singles,M25 Zaragoza,O. Font,J. Barranco Cosano,Finished,0 - 2,14
@@ -399,7 +399,7 @@ event_key,tipo,torneo,jugador1,jugador2,estado,sets,juegos_totales
 12167217,Itf Women Doubles,W15 Trelew,Ayala/ Britez Risso,Baier/ Jurado,,-,0
 12167218,Itf Women Doubles,W15 Trelew,Moyano/ Sanchez,Martinez/ Mondati,Finished,2 - 0,14
 12167219,Itf Women Doubles,W15 Trelew,Gobbi Monllau/ Zornada,Carrocera/ Maruca,Finished,0 - 2,19
-12167220,Itf Women Doubles,W15 Trelew,Duarte/ Lassaga,Meabe/ Urrutia,Set 1,0 - 0,11
+12167220,Itf Women Doubles,W15 Trelew,Duarte/ Lassaga,Meabe/ Urrutia,Finished,0 - 2,18
 12167221,Itf Women Doubles,W15 Trelew,Kawano Cho/ Tarantola,Bulbarella/ Rain Contreras,,-,0
 12167222,Itf Women Doubles,W35 Reims,Boulard/ Yardley,Im/ Kim Eunchae,Finished,0 - 2,17
 12167225,Challenger Men Singles,Columbus,A. Fenty,D. Dietrich,Finished,0 - 2,20
@@ -411,25 +411,25 @@ event_key,tipo,torneo,jugador1,jugador2,estado,sets,juegos_totales
 12167231,Itf Men Singles,"M15 Ann Arbor, MI",M. Mesarovic,D. Bobo,Finished,2 - 0,20
 12167232,Itf Men Singles,"M15 Ann Arbor, MI",Ma. Sheldon,N. Heng,Finished,2 - 1,24
 12167233,Itf Men Singles,"M15 Ann Arbor, MI",F. K. Solheim,O. Pieczkowski,Finished,0 - 2,20
-12167234,Itf Men Singles,"M15 Ann Arbor, MI",A. Bernard,G. Albieri,Finished,1 - 0,0
+12167234,Itf Men Singles,"M15 Ann Arbor, MI",A. Bernard,G. Albieri,Finished,2 - 0,17
 12167235,Itf Men Singles,"M15 Ann Arbor, MI",J. Sarr,D. Zhalgasbay,Finished,0 - 2,25
 12167236,Itf Men Singles,"M15 Ann Arbor, MI",N. Tomizawa,B. Swenson,Finished,0 - 1,0
 12167237,Itf Men Singles,"M15 Ann Arbor, MI",V. Gogineni,M. Dahlin,Finished,0 - 2,15
-12167238,Itf Men Doubles,"M15 Ann Arbor, MI",Albieri/ Heng,Komopisut/ Suttisomboon,Set 1,0 - 0,1
+12167238,Itf Men Doubles,"M15 Ann Arbor, MI",Albieri/ Heng,Komopisut/ Suttisomboon,Finished,2 - 0,17
 12167241,Challenger Men Singles,Columbus,L. Staeheli,A. Andrade,Finished,0 - 2,22
 12167242,Challenger Men Doubles,Curitiba,Heredia/ Tobon,Dickerson/ Rodriguez,Finished,2 - 0,18
 12167244,Itf Men Singles,"M15 Fayetteville, AR",A. Harazaki,J. Braswell,Finished,0 - 2,20
 12167245,Itf Men Singles,"M15 Fayetteville, AR",K. A. Melero,A. Arcila,Finished,2 - 1,24
 12167246,Itf Men Singles,"M15 Fayetteville, AR",D. Rolland,A. Shah,Finished,0 - 2,15
 12167247,Itf Men Singles,"M15 Fayetteville, AR",S. Rozin,N. Schlagenhauf,Finished,2 - 0,17
-12167248,Itf Men Singles,"M15 Fayetteville, AR",G. Elicha Navas,T. Chavez,Finished,1 - 2,21
+12167248,Itf Men Singles,"M15 Fayetteville, AR",G. Elicha Navas,T. Chavez,Finished,1 - 2,33
 12167249,Itf Men Singles,"M15 Fayetteville, AR",D. Mosejczuk,I. Vasa,Finished,2 - 1,23
 12167250,Itf Men Singles,"M15 Fayetteville, AR",T. Papamalamis,B. Weintraub,Finished,2 - 0,17
 12167251,Itf Men Singles,"M15 Fayetteville, AR",J. A. Rodriguez,J. Roddick,Finished,2 - 0,19
-12167252,Itf Men Singles,"M15 Fayetteville, AR",V. Jankanj,P. Martinez Gomez,Set 2,1 - 0,11
-12167253,Itf Men Singles,"M15 Fayetteville, AR",N. Niedner,D. Markovina,Set 2,0 - 1,15
+12167252,Itf Men Singles,"M15 Fayetteville, AR",V. Jankanj,P. Martinez Gomez,Finished,2 - 0,18
+12167253,Itf Men Singles,"M15 Fayetteville, AR",N. Niedner,D. Markovina,Finished,2 - 1,26
 12167254,Itf Men Singles,"M15 Fayetteville, AR",C. Robertson,A. Pisaric,,-,0
-12167255,Itf Men Doubles,"M15 Fayetteville, AR",Goity Zapico/ Valletta,Cazacu/ Uta,Finished,2 - 0,13
+12167255,Itf Men Doubles,"M15 Fayetteville, AR",Goity Zapico/ Valletta,Cazacu/ Uta,Finished,2 - 0,19
 12167256,Itf Men Doubles,"M15 Fayetteville, AR",Chavez/ Melero,Gurenko/ Tudorica,,-,0
 12167257,Itf Men Doubles,"M15 Fayetteville, AR",Harazaki/ Rodriguez,Arcila/ Rozin,,-,0
 12167260,Itf Women Singles,W15 Nashville,A. Bowers,M. Yamakita,Finished,2 - 0,17
@@ -442,23 +442,23 @@ event_key,tipo,torneo,jugador1,jugador2,estado,sets,juegos_totales
 12167267,Itf Women Singles,W15 Nashville,R. M. Nijkamp,A. Xu,Finished,2 - 0,20
 12167268,Itf Women Singles,W15 Nashville,K. Paskauskas,A. Das,Finished,2 - 0,17
 12167269,Itf Women Singles,W15 Nashville,M. Refaat,A. Soulie,Finished,2 - 0,22
-12167270,Itf Women Singles,W15 Nashville,E. M. Ionescu,F. Mattioli,Set 3,1 - 1,20
+12167270,Itf Women Singles,W15 Nashville,E. M. Ionescu,F. Mattioli,Finished,1 - 2,18
 12167271,Itf Women Singles,W15 Nashville,M. Sohns,A. Sharma,Retired,0 - 0,3
 12167272,Itf Women Doubles,W15 Nashville,Malmkjaer/ Kruger,Bedard/ Miret Avante,Finished,2 - 0,6
 12167273,Itf Women Doubles,W15 Nashville,Malkin/ Marton,Drugdova/ Nijkamp,Finished,0 - 2,15
-12167274,Itf Women Doubles,W15 Nashville,Jirakova/ Singeorzan,Bartel/ Hejtmanek,,-,0
-12167275,Itf Women Doubles,W15 Nashville,Pearce/ Yamakita,Diianni/ Soulie,Set 2,1 - 0,16
-12167276,Itf Women Singles,W100 Templeton,V. Bosio,K. Fakih,Set 1,0 - 0,0
-12167277,Itf Women Singles,W100 Templeton,C. Branstine,C. Kuhl,,-,0
+12167274,Itf Women Doubles,W15 Nashville,Jirakova/ Singeorzan,Bartel/ Hejtmanek,Set 2,0 - 1,8
+12167275,Itf Women Doubles,W15 Nashville,Pearce/ Yamakita,Diianni/ Soulie,Finished,2 - 0,7
+12167276,Itf Women Singles,W100 Templeton,V. Bosio,K. Fakih,Set 2,1 - 0,13
+12167277,Itf Women Singles,W100 Templeton,C. Branstine,C. Kuhl,Set 2,0 - 1,11
 12167278,Itf Women Singles,W100 Templeton,C. Dolehide,J. Chan,Finished,2 - 0,16
 12167279,Itf Women Singles,W100 Templeton,E. Koike,A. Zucchini,Finished,1 - 2,26
 12167280,Itf Women Singles,W100 Templeton,T. Maria,L. Perez Alarcon,Finished,2 - 0,15
 12167281,Itf Women Singles,W100 Templeton,E. McDonald,S. Broadus,Finished,2 - 0,21
 12167282,Itf Women Singles,W100 Templeton,M. Rapolu,C. A. Herea,Finished,2 - 0,15
-12167283,Itf Women Singles,W100 Templeton,A. Van Impe,K. Day,Set 1,0 - 0,4
+12167283,Itf Women Singles,W100 Templeton,A. Van Impe,K. Day,Set 2,1 - 0,14
 12167290,Wta Singles,Beijing,Y. Ma,P. Kudermetova,Finished,1 - 2,30
 12167311,Itf Men Doubles,M15 Luan 4,Chen/ Komagata,Malaszszak/ Van Herzeele,Finished,2 - 1,37
 12167356,Itf Men Doubles,M25 Darwin,Hoole/ Pham,Jovic/ Qariaqus,Finished,2 - 0,17
 12167369,Challenger Men Doubles,Curitiba,Oliveira/ Rodrigues,Braga/ Braga,Finished,2 - 0,19
-12167503,Challenger Men Doubles,Columbus,Rybakov/ Smith,Battistone/ Kozlov,Set 1,0 - 0,5
-12167504,Challenger Men Doubles,Columbus,Milavsky/ Shick,Blando/ Overmyer,,-,0
+12167503,Challenger Men Doubles,Columbus,Rybakov/ Smith,Battistone/ Kozlov,Set 3,1 - 1,26
+12167504,Challenger Men Doubles,Columbus,Milavsky/ Shick,Blando/ Overmyer,Set 1,0 - 0,6
