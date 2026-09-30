@@ -16,7 +16,7 @@ HEADERS = {"x-rapidapi-key": API_KEY}   # nunca se imprime
 CARPETA = "modelos/ligas_america"
 TZ = "America/Argentina/Buenos_Aires"
 FECHA = os.environ.get("FECHA") or (datetime.now(timezone.utc) - timedelta(hours=3)).date().isoformat()
-PAISES = ("Argentina", "Brazil", "Mexico")
+PAISES = ("Argentina", "Brazil", "Mexico")  # relanzado 30/09 para ver cuota e ID de la Liga Profesional
 
 
 def pedir(path, params=None):
