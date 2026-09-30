@@ -7,6 +7,8 @@ responden desde el contenedor, así que no hace falta GitHub Actions.
   lista de ficheros en /api/data-files. Se bajan circuito ATP, Challenger,
   WTA, previas ATP, torneos en curso y la base de jugadores. No se bajan sus
   copias de seguridad (backup_*) ni ficheros ocultos (.*).
+- ITF masculino (atp_matches_futures_*) desde 2010, añadido el 30/09/2026 para
+  entrenar en ITF (2026 trae estadísticas de saque en el 99,7% de partidos).
 - Sackmann: los repos originales (JeffSackmann/tennis_atp, tennis_wta) ya no
   existen en GitHub. Copia de archivo, snapshot de junio de 2026:
   huggingface.co/datasets/Aneeshers/tennis-sackmann-archive (CC BY-NC-SA 4.0).
@@ -100,9 +102,9 @@ def sackmann():
                 or base.endswith("_players.csv"):
             elegidos.append(n)
             continue
-        m = re.match(r"(atp|wta)_matches_(qual_chall_|qual_itf_)?(\d{4})\.csv$", base)
+        m = re.match(r"(atp|wta)_matches_(qual_chall_|qual_itf_|futures_)?(\d{4})\.csv$", base)
         if not m:
-            continue                                  # dobles, futures, amateur, rankings, slams
+            continue                                  # dobles, amateur, rankings, slams
         a = int(m.group(3))
         if (m.group(2) and a >= DESDE_SEGUNDO) or (not m.group(2) and a >= DESDE_PRINCIPAL):
             elegidos.append(n)

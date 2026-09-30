@@ -376,6 +376,37 @@ Aclaración del usuario: lo que se busca es acertar más, no batir al mercado.
 - **Uso recomendado:** con cuota -> la cuota; sin cuota -> modelo de puntos
   (da también juegos, hándicap y sets).
 
+## Entrenar en ITF (30/09/2026)
+
+Petición del usuario. `scripts/itf.py` -> `data/tenis/itf.md`.
+- Datos: ITF masculino de la copia de Sackmann (`atp_matches_futures_*`,
+  2010-jun 2026; **estadísticas de saque en 2025 (97%) y 2026 (100%)**,
+  nada antes; `data/tenis/resumen_itf.md`), ITF femenino (qual_itf, ya
+  bajado, hasta jun 2026) y, para jun-sep 2026, **resultados de los mercados
+  cerrados de Kalshi** (ganador y nombres completos, fecha de cierre, torneo
+  y ronda del texto; 11.551 partidos masculinos y 9.745 femeninos; superficie
+  de la última edición del torneo en Sackmann, 72-78% conocida, si no dura).
+  Todo junto con ATP/Challenger o WTA. La web de la ITF no tiene descarga.
+- **Fallo silencioso arreglado:** Kalshi escribe "Jack Bruce-Smith" y
+  Sackmann "Jack Bruce Smith": la clave de jugador (`elo_tenis.norm`) ahora
+  es solo letras, sin espacios ni guiones. Apenas cambia la cobertura (64% ->
+  65% de nombres de Kalshi con historial): el resto son jugadores nuevos.
+- **Debutantes en ITF:** empezaban con 1500 (la media del circuito). Nota de
+  partida elegida con ITF 2025 de Sackmann (antes de Kalshi): 1100 hombres
+  (plana 1000-1100), 1300 mujeres (plana 1300-1400). Parámetro
+  `inicial_itf` en `elo_tenis.calcular` (por defecto 1500: no cambia nada
+  de lo anterior).
+- Resultado en partidos de ITF de Kalshi posteriores a Sackmann, con precio:
+  | | Kalshi | Elo | Elo debutantes bajos | puntos |
+  |---|---|---|---|---|
+  | ITF hombres (3.413) | **74,5%** | 66,9% | 68,2% | 62,6% |
+  | ITF mujeres (1.977) | **72,2%** | 68,8% | 69,6% | 62,0% |
+- Con historial completo (ITF 2025 de Sackmann) el Elo acierta 70,9% (h) y
+  71,7% (m): gran parte de la distancia con Kalshi es que jun-sep solo tiene
+  resultados sueltos. El modelo de puntos va peor en ITF porque jun-sep no
+  tiene estadísticas. **Uso:** en ITF con cuota -> la cuota; sin cuota -> Elo
+  con debutantes bajos.
+
 ## Plan (en este orden)
 
 1. Ganador del partido, único mercado con cierre de Pinnacle.

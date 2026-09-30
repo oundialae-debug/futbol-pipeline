@@ -37,8 +37,12 @@ COLS = ["tourney_id", "tourney_name", "tourney_date", "tourney_level", "surface"
 
 
 def norm(s):
+    """Clave de jugador: solo letras, sin espacios, guiones ni acentos. Kalshi escribe
+    "Jack Bruce-Smith" / "Kuan-Shou Chen" y Sackmann "Jack Bruce Smith" / "Kuan Shou Chen": con
+    espacios y sin guion eran jugadores distintos (solo el 64% de los nombres de ITF de Kalshi
+    encontraba su historial)."""
     s = unicodedata.normalize("NFKD", str(s)).encode("ascii", "ignore").decode().lower()
-    return re.sub(r"[^a-z ]", "", s).strip()
+    return re.sub(r"[^a-z]", "", s)
 
 
 def leer(patrones):
@@ -47,15 +51,22 @@ def leer(patrones):
                      ignore_index=True)
 
 
-def historial(circuito):
+def historial(circuito, itf=False, extra=None):
+    """itf=True añade el ITF masculino de Sackmann (atp_matches_futures_*). extra: partidos
+    adicionales con las mismas columnas (p. ej. resultados de ITF sacados de Kalshi)."""
     if circuito == "atp":
-        d = leer([f"{D}/tennismylife/[12][0-9][0-9][0-9].csv", f"{D}/tennismylife/*_challenger.csv",
-                  f"{D}/tennismylife/atp_quali/*.csv"])
+        pat = [f"{D}/tennismylife/[12][0-9][0-9][0-9].csv", f"{D}/tennismylife/*_challenger.csv",
+               f"{D}/tennismylife/atp_quali/*.csv"]
+        if itf:
+            pat.append(f"{D}/sackmann/atp_matches_futures_*.csv")
+        d = leer(pat)
     else:
         s = leer([f"{D}/sackmann/wta_matches_[12][0-9][0-9][0-9].csv", f"{D}/sackmann/wta_matches_qual_itf_*.csv"])
         t = leer([f"{D}/tennismylife/*_wta.csv"])
         fin = s["tourney_date"].max()
         d = pd.concat([s, t[t["tourney_date"] > fin]], ignore_index=True)
+    if extra is not None:
+        d = pd.concat([d, extra], ignore_index=True)
     d["inicio"] = pd.to_datetime(d["tourney_date"].astype(str).str[:8], format="%Y%m%d", errors="coerce")
     d = d.dropna(subset=["inicio", "winner_name", "loser_name"])
     d = d.drop_duplicates(subset=["tourney_id", "inicio", "winner_name", "loser_name", "round"])
@@ -68,13 +79,24 @@ def historial(circuito):
     return d.sort_values(["inicio", "orden", "tourney_id"], kind="stable").reset_index(drop=True)
 
 
-def calcular(d, c=250.0):
-    """Elo general y por superficie ANTES de cada partido. Devuelve columnas nuevas."""
+NIVEL_ITF = {"15", "25", "35", "50", "75", "100", "S", "F", "ITF", "W15", "W35"}
+
+
+def calcular(d, c=250.0, inicial_itf=1500.0):
+    """Elo general y por superficie ANTES de cada partido. Devuelve columnas nuevas.
+    inicial_itf: nota de partida de un jugador que aparece por primera vez en un partido de ITF
+    (un debutante de ITF no es un jugador medio del circuito)."""
     elo, n, elo_s, n_s = {}, {}, {}, {}
+    ini = np.where(d["tourney_level"].astype(str).isin(NIVEL_ITF), inicial_itf, 1500.0) \
+        if "tourney_level" in d else np.full(len(d), 1500.0)
     ew, el, esw, esl, nw, nl = (np.empty(len(d)) for _ in range(6))
     for i, (w, l, s, act) in enumerate(zip(d["w"].values, d["l"].values, d["sup"].values, d["actualiza"].values)):
-        a, b = elo.get(w, 1500.0), elo.get(l, 1500.0)
-        a_s, b_s = elo_s.get((w, s), 1500.0), elo_s.get((l, s), 1500.0)
+        if w not in elo:
+            elo[w] = ini[i]
+        if l not in elo:
+            elo[l] = ini[i]
+        a, b = elo[w], elo[l]
+        a_s, b_s = elo_s.get((w, s), a), elo_s.get((l, s), b)
         ew[i], el[i], esw[i], esl[i] = a, b, a_s, b_s
         nw[i], nl[i] = n.get(w, 0), n.get(l, 0)
         if not act:
