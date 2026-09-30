@@ -1,14 +1,14 @@
 # Más/menos juegos en directo: apuestas en papel
 
-Partidos acabados con cuota de juegos en el registro: **33**. Una apuesta por partido (se agrupa por partido). Cuota = la de la API en esa pasada, no la de Luckia. Con menos de 20 apuestas el número no significa nada.
+Partidos acabados con cuota de juegos en el registro: **35**. Una apuesta por partido (se agrupa por partido). Cuota = la de la API en esa pasada, no la de Luckia. Con menos de 20 apuestas el número no significa nada.
 
 | estrategia | apuestas | aciertos | beneficio medio | sigmas |
 |---|---|---|---|---|
-| **señal: vigilar el menos** | 9 | 67% | +6.5% | +0.24 |
-| control: siempre el menos (1ª pasada) | 33 | 67% | +24.1% | +1.54 |
-| control: siempre el más (1ª pasada) | 33 | 33% | -35.8% | -2.21 |
+| **señal: vigilar el menos** | 11 | 73% | +16.2% | +0.70 |
+| control: siempre el menos (1ª pasada) | 35 | 63% | +17.0% | +1.09 |
+| control: siempre el más (1ª pasada) | 35 | 37% | -28.8% | -1.80 |
 
-Brier del 'más' en la línea principal (1ª pasada): modelo 0.3163, mercado 0.2572 (menor es mejor). El modelo da al más +30.1% sobre lo que pasa de verdad.
+Brier del 'más' en la línea principal (1ª pasada): modelo 0.3045, mercado 0.2572 (menor es mejor). El modelo da al más +26.6% sobre lo que pasa de verdad.
 
 ## Señales
 
@@ -23,12 +23,14 @@ Brier del 'más' en la línea principal (1ª pasada): modelo 0.3163, mercado 0.2
 | WTA 1000 Beijing: M. Hontama vs K. Boulter | 21.5 | 1.91 | 19 | gana |
 | WTA 1000 Beijing: E. Jacquemot vs M. Frech | 21.5 | 1.91 | 31 | pierde |
 | ITF M M15 Telavi 2 (Georgia): N. Rispoli vs S. Purtseladze | 25.5 | 1.80 | 26 | pierde |
+| Challenger Mouilleron-Le-Captif: L. Poullain vs R. Bertola | 31.5 | 1.83 | 30 | gana |
+| Challenger Columbus: L. Staeheli vs A. Andrade | 22.5 | 1.36 | 22 | gana |
 
 ## Avisos del vigilante (lo que llega al móvil)
 
 | lado | avisos resueltos | aciertos | beneficio medio (cuota API) | sigmas |
 |---|---|---|---|---|
-| menos | 9 | 78% | +15.1% | +0.69 |
+| menos | 11 | 82% | +20.2% | +1.12 |
 
 ## Previos (antes de empezar), línea principal de juegos y ganador
 
@@ -36,5 +38,5 @@ Ningún partido con previo ha terminado todavía.
 
 ## Aprendizaje (recalibración del modelo)
 
-Partidos resueltos: 33 (198 líneas). Activa: **sí** (hace falta 30+ partidos y que mejore al modelo en partidos que no vio).
-Brier (menor es mejor): modelo 0.3135, modelo con el saque de hoy 0.3037, casa 0.2432, recalibrado (validado por partidos) 0.2241. Sesgo del modelo hacia el más: +29.6%.
+Partidos resueltos: 35 (218 líneas). Activa: **sí** (hace falta 30+ partidos y que mejore al modelo en partidos que no vio).
+Brier (menor es mejor): modelo 0.3046, modelo con el saque de hoy 0.2975, casa 0.2432, recalibrado (validado por partidos) 0.2317. Sesgo del modelo hacia el más: +27.4%.

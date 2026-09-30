@@ -1,8 +1,8 @@
 hora,event_key,tipo,torneo,superficie,jugador1,jugador2,mejor_de,p_saque1,p_saque2,gana1_modelo,gana1_casa,linea,mas_modelo,mas_casa,cuota_mas,cuota_menos,principal,esperado_modelo
-2026-09-30 20:01,12167150,Challenger Men Singles,Curitiba,Clay,J. Reis Da Silva,M. Pucinelli de Almeida,3,0.5750000000000001,0.62,0.28,0.3896,20.5,0.6526,0.5791,1.57,2.16,0,24.19
-2026-09-30 20:01,12167150,Challenger Men Singles,Curitiba,Clay,J. Reis Da Silva,M. Pucinelli de Almeida,3,0.5750000000000001,0.62,0.28,0.3896,21.5,0.6003,0.5492,1.74,2.12,0,24.19
-2026-09-30 20:01,12167150,Challenger Men Singles,Curitiba,Clay,J. Reis Da Silva,M. Pucinelli de Almeida,3,0.5750000000000001,0.62,0.28,0.3896,22.5,0.5299,0.483,1.98,1.85,1,24.19
-2026-09-30 20:01,12167150,Challenger Men Singles,Curitiba,Clay,J. Reis Da Silva,M. Pucinelli de Almeida,3,0.5750000000000001,0.62,0.28,0.3896,23.5,0.481,0.4319,2.21,1.68,0,24.19
+2026-09-30 21:00,12167150,Challenger Men Singles,Curitiba,Clay,J. Reis Da Silva,M. Pucinelli de Almeida,3,0.5750000000000001,0.62,0.28,0.4005,20.5,0.6526,0.5791,1.57,2.16,0,24.19
+2026-09-30 21:00,12167150,Challenger Men Singles,Curitiba,Clay,J. Reis Da Silva,M. Pucinelli de Almeida,3,0.5750000000000001,0.62,0.28,0.4005,21.5,0.6003,0.5467,1.7,2.05,0,24.19
+2026-09-30 21:00,12167150,Challenger Men Singles,Curitiba,Clay,J. Reis Da Silva,M. Pucinelli de Almeida,3,0.5750000000000001,0.62,0.28,0.4005,22.5,0.5299,0.4852,1.91,1.8,1,24.19
+2026-09-30 21:00,12167150,Challenger Men Singles,Curitiba,Clay,J. Reis Da Silva,M. Pucinelli de Almeida,3,0.5750000000000001,0.62,0.28,0.4005,23.5,0.481,0.4465,2.07,1.67,0,24.19
 2026-09-30 20:01,12167252,Itf Men Singles,"M15 Fayetteville, AR",Hard,V. Jankanj,P. Martinez Gomez,3,0.6225,0.655,0.3424,0.2547,19.5,0.795,0.5939,1.6,2.34,0,25.3
 2026-09-30 20:01,12167252,Itf Men Singles,"M15 Fayetteville, AR",Hard,V. Jankanj,P. Martinez Gomez,3,0.6225,0.655,0.3424,0.2547,20.5,0.7218,0.5055,1.8,1.84,1,25.3
 2026-09-30 20:01,12167252,Itf Men Singles,"M15 Fayetteville, AR",Hard,V. Jankanj,P. Martinez Gomez,3,0.6225,0.655,0.3424,0.2547,21.5,0.6719,0.4569,2.08,1.75,0,25.3
@@ -11,5 +11,5 @@ hora,event_key,tipo,torneo,superficie,jugador1,jugador2,mejor_de,p_saque1,p_saqu
 2026-09-30 20:01,12167276,Itf Women Singles,W100 Templeton,Hard,V. Bosio,K. Fakih,3,0.6275000000000001,0.515,0.9302,0.4918,20.5,0.4139,0.5082,1.79,1.85,1,20.96
 2026-09-30 20:01,12167276,Itf Women Singles,W100 Templeton,Hard,V. Bosio,K. Fakih,3,0.6275000000000001,0.515,0.9302,0.4918,21.5,0.3617,0.474,1.92,1.73,0,20.96
 2026-09-30 20:01,12167276,Itf Women Singles,W100 Templeton,Hard,V. Bosio,K. Fakih,3,0.6275000000000001,0.515,0.9302,0.4918,22.5,0.3081,0.4156,2.25,1.6,0,20.96
-2026-09-30 20:01,12167277,Itf Women Singles,W100 Templeton,Hard,C. Branstine,C. Kuhl,3,0.6275000000000001,0.545,0.8589,0.7757,18.5,0.696,0.5288,1.72,1.93,1,22.58
-2026-09-30 20:01,12167277,Itf Women Singles,W100 Templeton,Hard,C. Branstine,C. Kuhl,3,0.6275000000000001,0.545,0.8589,0.7757,19.5,0.6109,0.4416,2.15,1.7,0,22.58
+2026-09-30 21:00,12167277,Itf Women Singles,W100 Templeton,Hard,C. Branstine,C. Kuhl,3,0.6275000000000001,0.545,0.8589,0.7849,18.5,0.696,0.5233,1.74,1.91,1,22.58
+2026-09-30 21:00,12167277,Itf Women Singles,W100 Templeton,Hard,C. Branstine,C. Kuhl,3,0.6275000000000001,0.545,0.8589,0.7849,19.5,0.6109,0.4416,2.15,1.7,0,22.58
