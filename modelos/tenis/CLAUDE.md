@@ -93,6 +93,34 @@ fecha dentro de [inicio del torneo -3, +20 días]).
   tierra), Acapulco 2020 WTA como tierra (era dura). Con tres fuentes decide
   la mayoría; ninguna es perfecta.
 
+## Precio de cierre de Pinnacle: sesgo real, pero no tapa el margen (30/09/2026)
+
+`scripts/calibracion_cierre.py` -> `data/tenis/calibracion_cierre.md`.
+ATP+WTA 2020-2026, 26.467 partidos completos (walkovers fuera, retiradas
+aparte). Margen medio de Pinnacle: ATP 2,60%, WTA 2,83%.
+
+- **Sesgo favorito-marginado, sí**: pendiente logística 1,135 (±0,028),
+  +4,85 sigmas contra 1. El favorito gana más de lo que dice el precio, sobre
+  todo los muy favoritos (ATP 90-95%: dice 92,4%, gana 95,8%, +2,84s; WTA
+  85%+: +2,2 a +2,4s).
+- Dónde: 1ª-2ª ronda +5,07s (3ª ronda o más +0,90s); Grand Slam +3,91s;
+  Masters 1000 nada (-0,27s). Por años, inestable: 2022 1,26, 2024 1,22,
+  **2025 0,98 (sin sesgo)**. Vigilar 2026 antes de creérselo.
+- **No da dinero a ciegas**: apostar siempre al favorito en Pinnacle pierde
+  -2,28% (ATP) y -2,03% (WTA). El hueco con el precio perfecto es solo
+  +0,43s y +1,18s. **Contando retiradas como "gana quien avanza"**, el hueco
+  del favorito desaparece (-0,01s): depende de cómo liquide cada casa las
+  retiradas.
+- Favorito y marginado son la misma cosa vista desde los dos lados (mercado
+  de dos resultados): no son dos hallazgos.
+- "Máxima" casi empata en favoritos (ATP -0,32%, WTA +0,28%), pero su
+  esperado en marginados sale +1,5%: precios de casas distintas NO
+  simultáneos, la misma trampa que en fútbol ("casas contra cierre"). No es
+  accesible.
+- **Pinnacle desaparece de tennis-data desde febrero de 2026** (PSW vacío
+  95-97% en 2026). Betfair Exchange (BFEW/BFEL) entra a finales de 2025 (75%
+  vacío en 2025, 5% en 2026): desde 2026 la referencia de cierre es Betfair.
+
 ## Plan (en este orden)
 
 1. Ganador del partido, único mercado con cierre de Pinnacle.
