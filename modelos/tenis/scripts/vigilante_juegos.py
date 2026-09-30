@@ -30,13 +30,19 @@ MINUTOS = float(os.environ.get("MINUTOS", 345))
 TOPIC = os.environ.get("NTFY_TOPIC", "tenis-f059172b4dc7")
 
 
-def avisar(txt):
+def avisar(txt, titulo="Tenis: juegos"):
+    """titulo = apellidos de los jugadores: Luckia no tiene dirección por partido (todo cuelga de
+    /apuestas/tenis/), así que el título es lo que el usuario escribe en su buscador."""
     print(txt, flush=True)
     try:
         requests.post(f"https://ntfy.sh/{TOPIC}", data=txt.encode(), timeout=15,
-                      headers={"Title": "Tenis: juegos", "Priority": "high", "Click": J.LUCKIA})
+                      headers={"Title": titulo.encode("utf-8"), "Priority": "high", "Click": J.LUCKIA})
     except requests.RequestException as e:
         print(f"ntfy falló: {type(e).__name__}", flush=True)
+
+
+def apellido(n):
+    return str(n).split(". ", 1)[-1]
 
 
 def lineas():
@@ -94,7 +100,8 @@ def main():
                     pmod, pcas = (mo, pm) if lado == "más" else (1 - mo, 1 - pm)
                     ln, mn = f"{x.linea:g}".replace(".", ","), f"{1 / pcas:.2f}".replace(".", ",")
                     avisar(f"{x.jugador1} VS {x.jugador2} | {lado} de {ln} juegos | modelo {pmod:.0%} / cuota {pcas:.0%} | "
-                           f"mínima {mn} | {J.torneo(x.tipo, x.torneo)}")
+                           f"mínima {mn} | {J.torneo(x.tipo, x.torneo)}",
+                           f"{apellido(x.jugador1)} - {apellido(x.jugador2)}")
             for k in set(racha) - vistos:
                 racha.pop(k)
             fallos = 0
