@@ -422,6 +422,7 @@ H_AL = 1030
 common.page("Alineacion.dc.html", "Lineups", 390, H_AL, raiz(H_AL, cabecera("Lineups", True) + FORM + CAMPO), JS0, nav_active="m")
 
 # ======================================================================= TEAM · England
+TABS_EQ = [("Overview", "Equipo.dc.html"), ("Record", "Historial.dc.html"), ("Group", "Elo.dc.html"), ("Fixtures", "#")]
 EQ_ = N["equipo"]
 KEN = kit("England")
 P = EQ_["partidos"]
@@ -485,10 +486,107 @@ proximo = f'''<a href="Partido.dc.html" style="margin: 0 12px; padding: 14px 16p
 <div style="display: flex; flex-direction: column; gap: 4px; flex-grow: 1"><span style="font-size: 11px; font-weight: 700; letter-spacing: 0.6px; color: {MUT}">NEXT · SAT 3 OCT · 18:00</span>
 <span style="display: flex; align-items: center; gap: 8px; font-size: 15px; font-weight: 700">{franjas(KC, 16)}Croatia <span style="color: {MUT}">vs</span> England{franjas(KE, 16)}</span></div>
 <span style="{DISP}; font-size: 26px; color: {KE["barra"]}">{p2}%</span></a>'''
-cuerpo = HERO + pestañas("Overview", [("Overview", "Equipo.dc.html"), ("Squad", "#"), ("Group", "Elo.dc.html"), ("Fixtures", "#")]) + proximo + FIFA_T \
+cuerpo = HERO + pestañas("Overview", TABS_EQ) + proximo + FIFA_T \
     + tarjeta("Form", forma_eq_html(P[-5:]), "latest on the right") + FIN + GOL + MEJ
 H_EQ = 1680
 common.page("Equipo.dc.html", "England", 390, H_EQ, raiz(H_EQ, cuerpo), js_selectores(SEL_EQ), nav_active="f")
+
+# ======================================================================= RECORD · England en el pasado
+HI = N["historial"]
+COMP = {"World Cup - Qualification Europe": "WC qualifying", "World Cup": "World Cup 2026", "UEFA Nations League": "Nations League",
+        "Friendlies": "Friendlies"}
+ORDEN_C = ["World Cup - Qualification Europe", "World Cup", "UEFA Nations League", "Friendlies"]
+
+
+def res_col(gf, gc):
+    return (LIMA, BG) if gf > gc else (("#3A4256", TXT) if gf == gc else (NARANJA, BG))
+
+
+def fila_bal(b):
+    return (f'<div style="display: flex; align-items: center; gap: 8px; padding: 10px 0; border-top: 1px solid #1E2330">'
+            f'<span style="flex-grow: 1; font-size: 14px; font-weight: 600">{COMP[b["comp"]]}</span>'
+            f'<span style="width: 26px; text-align: right; font-size: 13px; color: {SOFT}">{b["pj"]}</span>'
+            f'<span style="width: 26px; text-align: right; font-size: 13px; font-weight: 700; color: {LIMA}">{b["g"]}</span>'
+            f'<span style="width: 26px; text-align: right; font-size: 13px; color: {SOFT}">{b["e"]}</span>'
+            f'<span style="width: 26px; text-align: right; font-size: 13px; font-weight: 700; color: #FFB27A">{b["p"]}</span>'
+            f'<span style="width: 58px; text-align: right; {DISP}; font-size: 16px">{b["gf"]}–{b["gc"]}</span></div>')
+
+
+bal = sorted(HI["balance"], key=lambda b: ORDEN_C.index(b["comp"]))
+CAB_BAL = (f'<div style="display: flex; gap: 8px; font-size: 10px; font-weight: 700; letter-spacing: 0.5px; color: {MUT}">'
+           f'<span style="flex-grow: 1">COMPETITION</span><span style="width: 26px; text-align: right">P</span><span style="width: 26px; text-align: right">W</span>'
+           f'<span style="width: 26px; text-align: right">D</span><span style="width: 26px; text-align: right">L</span><span style="width: 58px; text-align: right">GOALS</span></div>')
+RESUMEN_HI = f'''<section style="position: relative; margin: 0 12px; padding: 18px 16px; border-radius: 24px; background: {CARD}; border: 1px solid {BORDE}; overflow: hidden; display: flex; flex-direction: column; gap: 14px">
+<span style="position: absolute; right: -60px; top: -80px; width: 240px; height: 240px; border-radius: 50%; background: #F1F3F8; opacity: 0.10; filter: blur(60px)"></span>
+<div style="position: relative; display: flex; justify-content: space-between; align-items: baseline"><span style="font-size: 16px; font-weight: 700">Since March 2025</span><span style="font-size: 12px; color: {MUT}">{HI["pj"]} games</span></div>
+<div style="position: relative; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px">
+<div style="padding: 12px; border-radius: 16px; background: {SUB}"><span style="display: block; {DISP}; font-size: 32px; line-height: 1; color: {LIMA}">{HI["g"]}</span><span style="font-size: 12px; color: {MUT}">wins</span></div>
+<div style="padding: 12px; border-radius: 16px; background: {SUB}"><span style="display: block; {DISP}; font-size: 32px; line-height: 1">{HI["e"]}</span><span style="font-size: 12px; color: {MUT}">draws</span></div>
+<div style="padding: 12px; border-radius: 16px; background: {SUB}"><span style="display: block; {DISP}; font-size: 32px; line-height: 1; color: #FFB27A">{HI["p"]}</span><span style="font-size: 12px; color: {MUT}">defeats</span></div></div>
+<div style="position: relative; display: flex; flex-direction: column">{CAB_BAL}{"".join(fila_bal(b) for b in bal)}</div></section>'''
+
+
+COD_FIFA = {"Latvia": "LVA", "Congo DR": "COD", "Albania": "ALB", "Andorra": "AND", "Ghana": "GHA", "Panama": "PAN",
+            "Mexico": "MEX", "Norway": "NOR", "Argentina": "ARG", "France": "FRA", "Croatia": "CRO", "Serbia": "SRB"}
+
+
+def ficha(x, neutral=False):
+    bg, fg = res_col(x["gf"], x["gc"])
+    riv = COD_FIFA.get(x["riv"]) or (eq(x["riv"])[1] if x["riv"] in real_ui.EQ else x["riv"][:3].upper())
+    pre = "" if neutral or x.get("casa", True) else "@"
+    return (f'<div style="display: flex; flex-direction: column; align-items: center; gap: 5px">'
+            f'<span style="width: 100%; height: 40px; border-radius: 11px; background: {bg}; color: {fg}; {DISP}; font-size: 16px; display: flex; align-items: center; justify-content: center">{x["gf"]}-{x["gc"]}</span>'
+            f'<span style="font-size: 10px; font-weight: 700; color: {SOFT}">{pre}{riv}</span></div>')
+
+
+CLAS = tarjeta("World Cup qualifying", f'''<div style="display: flex; align-items: center; gap: 14px">
+<span style="{DISP}; font-size: 44px; line-height: 1; color: {LIMA}">8/8</span>
+<span style="font-size: 14px; color: {SOFT}">Perfect: <b style="color: {TXT}">8 wins</b>, <b style="color: {TXT}">22 scored</b>, <b style="color: {TXT}">0 conceded</b></span></div>
+<div style="display: grid; grid-template-columns: repeat(8, minmax(0, 1fr)); gap: 4px">{"".join(ficha(x) for x in HI["clasificacion"])}</div>''', "2025")
+
+MUN = HI["mundial"]
+g_m = sum(x["gf"] for x in MUN)
+MUNDIAL = tarjeta("World Cup 2026", f'''<div style="display: flex; align-items: center; gap: 14px">
+<span style="{DISP}; font-size: 44px; line-height: 1">{len(MUN)}</span>
+<span style="font-size: 14px; color: {SOFT}">games · <b style="color: {TXT}">{g_m} goals</b> · beaten only by <b style="color: {TXT}">Argentina</b></span></div>
+<div style="display: grid; grid-template-columns: repeat(8, minmax(0, 1fr)); gap: 4px">{"".join(ficha(x, True) for x in MUN)}</div>
+<div style="display: flex; justify-content: space-between; font-size: 11px; color: {MUT}"><span>17 Jun</span><span>18 Jul</span></div>''', "Jun – Jul 2026")
+
+DOM = HI["dominio"]
+dom_filas = "".join(fila_stat(n_, DOM[k][0] * (100 if k == "Possession" else 1), DOM[k][1] * (100 if k == "Possession" else 1),
+                              (lambda v: f"{v:.0f}%") if k == "Possession" else (lambda v: f"{v:.1f}"), KEN["barra"], "#5B6378")
+                    for k, n_ in (("Possession", "Possession"), ("Shots on target", "Shots on target"),
+                                  ("Big Chances Created", "Big chances"), ("Corners", "Corners")))
+DOMINIO = tarjeta("How England play", f'<div style="display: flex; justify-content: space-between; font-size: 12px; color: {SOFT}"><span style="display: flex; align-items: center; gap: 6px">{franjas(KEN, 14)}England</span><span>per game</span><span>Opponents</span></div>' + dom_filas, "since 2025")
+
+cs = HI["porterias_cero"]
+PORTE = tarjeta("Clean sheets", f'''<div style="display: flex; align-items: center; gap: 18px">
+<div style="position: relative; width: 110px; height: 110px; flex-shrink: 0">
+<svg width="110" height="110" viewBox="0 0 120 120" role="img" aria-label="{cs} clean sheets in {HI["pj"]}"><circle cx="60" cy="60" r="48" fill="none" stroke="#232838" stroke-width="12"></circle><circle cx="60" cy="60" r="48" fill="none" stroke="{LIMA}" stroke-width="12" stroke-linecap="round" stroke-dasharray="{cs / HI["pj"] * 302:.0f} 302" transform="rotate(-90 60 60)"></circle></svg>
+<span style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; {DISP}; font-size: 30px">{cs}/{HI["pj"]}</span></div>
+<div style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; color: {SOFT}"><span><b style="color: {TXT}">{round(cs / HI["pj"] * 100)}%</b> of games without conceding</span>
+<span>Only <b style="color: {TXT}">{HI["gc"]}</b> goals against in {HI["pj"]} games</span><span>0 conceded in qualifying</span></div></div>''', "since 2025")
+
+
+def linea_res(x, verde):
+    riv = eq(x["riv"])[0] if x["riv"] in real_ui.EQ else x["riv"]
+    comp = COMP.get(x["comp"], x["comp"])
+    return (f'<div style="display: flex; align-items: center; gap: 10px; padding: 8px 0; border-top: 1px solid #1E2330">'
+            f'<span style="width: 52px; {DISP}; font-size: 18px; color: {LIMA if verde else "#FFB27A"}">{x["gf"]}–{x["gc"]}</span>'
+            f'<span style="flex-grow: 1; font-size: 14px; font-weight: 600">{"" if x.get("casa", True) else "at "}{riv}</span>'
+            f'<span style="font-size: 11px; color: {MUT}">{comp} · {x["fecha"][:4]}</span></div>')
+
+
+EXTREMOS = tarjeta("Biggest wins", "".join(linea_res(x, True) for x in HI["mayores"]), "since 2025") \
+    + tarjeta("The 4 defeats", "".join(linea_res(x, False) for x in HI["derrotas"]), "since 2025")
+HERO_HI = f'''<div style="position: relative; display: flex; flex-direction: column">
+<span style="position: absolute; left: 50%; top: -70px; width: 300px; height: 260px; margin-left: -150px; border-radius: 50%; background: #F1F3F8; opacity: 0.16; filter: blur(70px)"></span>
+{volver("Equipo.dc.html", "", "")}
+<div style="position: relative; display: flex; align-items: center; gap: 14px; padding: 0 16px 14px 16px">{escudo("England", 56)}
+<div style="display: flex; flex-direction: column"><span style="{DISP}; font-size: 30px; line-height: 1">England</span><span style="font-size: 13px; color: {SOFT}">FIFA 4th · record</span></div></div></div>'''
+cuerpo = HERO_HI + pestañas("Record", TABS_EQ) + RESUMEN_HI + CLAS + MUNDIAL + DOMINIO + PORTE + EXTREMOS
+H_HI = 2040
+common.page("Historial.dc.html", "England record", 390, H_HI, raiz(H_HI, cuerpo), JS0, nav_active="f")
 
 # ======================================================================= GROUPS + FIFA
 def tabla_grupo(g):
@@ -579,7 +677,7 @@ common.page("Tips.dc.html", "Tips", 390, H_T, raiz(H_T, cuerpo), JS0, nav_active
 # ---------------------------------------------------------------- lienzo
 tablero = [("Main.dc.html", "1 · Matches", H_MAIN), ("Partido.dc.html", "2 · Preview · Croatia–England", H_PV),
            ("Report.dc.html", "3 · Report · Czechia 0-2 England", H_REP), ("Alineacion.dc.html", "4 · Report lineups", H_AL),
-           ("Equipo.dc.html", "5 · Team · England", H_EQ), ("Elo.dc.html", "6 · Standings", H_G), ("Tips.dc.html", "7 · Tips", H_T)]
+           ("Equipo.dc.html", "5 · Team · England", H_EQ), ("Historial.dc.html", "6 · England record", H_HI), ("Elo.dc.html", "7 · Standings", H_G), ("Tips.dc.html", "8 · Tips", H_T)]
 canvas = {"v": 3, "createdOnFiles": {"v": 1, "at": "2026-09-30T20:00:00Z"}, "title": "2yellow · Nations League",
           "launch": {"view": "canvas"}, "pages": [],
           "boards": {f: {"x": i * 470, "y": 0, "w": 390, "h": h, "title": t, "is_interactive": True, "radius": 36} for i, (f, t, h) in enumerate(tablero)},

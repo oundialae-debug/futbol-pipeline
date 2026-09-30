@@ -356,3 +356,26 @@ carpeta se apunta aquí.
   instalada. Comprobado a la vista: la palabra sola se cortaba por la derecha
   y se amplió su lienzo.
 - **Por qué:** petición del usuario.
+
+## 30/09/2026: segundo vídeo de la app, Inglaterra en el pasado
+
+- **Qué:** `diseno_nl/video/2yellow_app_england_record.mp4`, 1080×1920, 46 s.
+  Grabación simulada:
+  1. Matches: toca Chequia 0-2 Inglaterra.
+  2. Informe: merecido, nuestro pronóstico contra las casas, estadísticas y
+     mejores jugadores.
+  3. Alineaciones: medias 6,06 y 7,24.
+  4. Ficha de Inglaterra y pestaña nueva «Record».
+- **Pantalla nueva «Record»** (`Historial.dc.html`, en el lienzo de la Nations
+  League), solo con datos que no salían en el primer vídeo:
+  - 18V 2E 4D desde marzo de 2025 y balance por competición;
+  - clasificación al Mundial 8/8 (22-0);
+  - Mundial 2026: 8 partidos, 20 goles, solo perdió con Argentina;
+  - dominio por partido (posesión 64%, tiros a puerta 6,6 contra 2,5,
+    ocasiones claras 3,6 contra 1,3, córners 6,8 contra 2,8);
+  - porterías a cero 14/24;
+  - mayores victorias y las 4 derrotas.
+  No se dice en qué ronda cayó en el Mundial: no está en los datos.
+- **Cómo:** `nl_datos.py` añade `historial`; `grabacion_pasado.py` (misma
+  maquinaria que `grabacion_app.py`). Sin API.
+- **Por qué:** petición del usuario. El primer vídeo se queda como estaba.

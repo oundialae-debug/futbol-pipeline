@@ -248,6 +248,27 @@ OUT["equipo"] = {"partidos": filas, "fifa": [{"fecha": f.fecha, "puesto": int(f.
                  "mejores": [{"jugador": i, "nota": r(f.nota), "pj": int(f.pj)} for i, f in top.sort_values("nota", ascending=False).head(5).iterrows()]}
 print("Inglaterra:", len(filas), "partidos; FIFA", OUT["equipo"]["fifa"][-1], "goleadores", [(g["jugador"], g["goles"]) for g in OUT["equipo"]["goleadores"]])
 
+# ------------------------------------------------------------------ Inglaterra en el pasado: balance, Mundial, dominio, porterías
+Pd = pd.DataFrame(filas)
+Pd["r"] = np.where(Pd.gf > Pd.gc, "W", np.where(Pd.gf == Pd.gc, "D", "L"))
+bal = [{"comp": c, "pj": int(len(g)), "g": int((g.r == "W").sum()), "e": int((g.r == "D").sum()), "p": int((g.r == "L").sum()),
+        "gf": int(g.gf.sum()), "gc": int(g.gc.sum())} for c, g in Pd.groupby("comp")]
+ms = part[((part.local == "England") | (part.visitante == "England")) & part.terminado & (part.fecha >= "2025-01-01")].match_id
+ss = est[est.match_id.isin(ms)]
+dom = {}
+for st_ in ("Possession", "Shots on target", "Big Chances Created", "Corners", "Yellow cards"):
+    a_ = ss[(ss.estadistica == st_) & (ss.equipo_id == ids["England"])].valor
+    b_ = ss[(ss.estadistica == st_) & (ss.equipo_id != ids["England"])].valor
+    dom[st_] = [r(a_.mean()), r(b_.mean()), int(len(a_))]
+OUT["historial"] = {"desde": str(Pd.fecha.min()), "pj": int(len(Pd)), "g": int((Pd.r == "W").sum()), "e": int((Pd.r == "D").sum()),
+                    "p": int((Pd.r == "L").sum()), "gf": int(Pd.gf.sum()), "gc": int(Pd.gc.sum()),
+                    "porterias_cero": int((Pd.gc == 0).sum()), "balance": bal, "dominio": dom,
+                    "mundial": Pd[Pd.comp == "World Cup"][["fecha", "riv", "gf", "gc", "xg", "xga"]].to_dict("records"),
+                    "clasificacion": Pd[Pd.comp == "World Cup - Qualification Europe"][["fecha", "riv", "casa", "gf", "gc"]].to_dict("records"),
+                    "derrotas": Pd[Pd.r == "L"][["fecha", "riv", "comp", "gf", "gc"]].to_dict("records"),
+                    "mayores": Pd.assign(d=Pd.gf - Pd.gc).sort_values(["d", "gf"], ascending=False).head(3)[["fecha", "riv", "comp", "casa", "gf", "gc"]].to_dict("records")}
+print("historial:", {k: OUT["historial"][k] for k in ("pj", "g", "e", "p", "gf", "gc", "porterias_cero")}, OUT["historial"]["dominio"])
+
 # ------------------------------------------------------------------ grupos de la Liga A y ranking FIFA
 grupos, visto = [], set()
 for eq in sorted(set(A.local) | set(A.visitante)):

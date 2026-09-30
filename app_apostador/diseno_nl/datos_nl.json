@@ -1663,6 +1663,261 @@
    }
   ]
  },
+ "historial": {
+  "desde": "2025-03-21",
+  "pj": 24,
+  "g": 18,
+  "e": 2,
+  "p": 4,
+  "gf": 55,
+  "gc": 20,
+  "porterias_cero": 14,
+  "balance": [
+   {
+    "comp": "Friendlies",
+    "pj": 6,
+    "g": 3,
+    "e": 1,
+    "p": 2,
+    "gf": 9,
+    "gc": 5
+   },
+   {
+    "comp": "UEFA Nations League",
+    "pj": 2,
+    "g": 1,
+    "e": 0,
+    "p": 1,
+    "gf": 4,
+    "gc": 3
+   },
+   {
+    "comp": "World Cup",
+    "pj": 8,
+    "g": 6,
+    "e": 1,
+    "p": 1,
+    "gf": 20,
+    "gc": 12
+   },
+   {
+    "comp": "World Cup - Qualification Europe",
+    "pj": 8,
+    "g": 8,
+    "e": 0,
+    "p": 0,
+    "gf": 22,
+    "gc": 0
+   }
+  ],
+  "dominio": {
+   "Possession": [
+    0.64,
+    0.36,
+    24
+   ],
+   "Shots on target": [
+    6.58,
+    2.54,
+    24
+   ],
+   "Big Chances Created": [
+    3.61,
+    1.26,
+    23
+   ],
+   "Corners": [
+    6.75,
+    2.79,
+    24
+   ],
+   "Yellow cards": [
+    1.0,
+    1.35,
+    23
+   ]
+  },
+  "mundial": [
+   {
+    "fecha": "2026-06-17",
+    "riv": "Croatia",
+    "gf": 4,
+    "gc": 2,
+    "xg": 3.2,
+    "xga": 0.7
+   },
+   {
+    "fecha": "2026-06-23",
+    "riv": "Ghana",
+    "gf": 0,
+    "gc": 0,
+    "xg": 1.36,
+    "xga": 0.17
+   },
+   {
+    "fecha": "2026-06-27",
+    "riv": "Panama",
+    "gf": 2,
+    "gc": 0,
+    "xg": 1.56,
+    "xga": 0.66
+   },
+   {
+    "fecha": "2026-07-01",
+    "riv": "Congo DR",
+    "gf": 2,
+    "gc": 1,
+    "xg": 2.16,
+    "xga": 0.77
+   },
+   {
+    "fecha": "2026-07-06",
+    "riv": "Mexico",
+    "gf": 3,
+    "gc": 2,
+    "xg": 1.61,
+    "xga": 1.88
+   },
+   {
+    "fecha": "2026-07-11",
+    "riv": "Norway",
+    "gf": 2,
+    "gc": 1,
+    "xg": 1.04,
+    "xga": 0.68
+   },
+   {
+    "fecha": "2026-07-15",
+    "riv": "Argentina",
+    "gf": 1,
+    "gc": 2,
+    "xg": 0.53,
+    "xga": 1.59
+   },
+   {
+    "fecha": "2026-07-18",
+    "riv": "France",
+    "gf": 6,
+    "gc": 4,
+    "xg": NaN,
+    "xga": NaN
+   }
+  ],
+  "clasificacion": [
+   {
+    "fecha": "2025-03-21",
+    "riv": "Albania",
+    "casa": true,
+    "gf": 2,
+    "gc": 0
+   },
+   {
+    "fecha": "2025-03-24",
+    "riv": "Latvia",
+    "casa": true,
+    "gf": 3,
+    "gc": 0
+   },
+   {
+    "fecha": "2025-06-07",
+    "riv": "Andorra",
+    "casa": false,
+    "gf": 1,
+    "gc": 0
+   },
+   {
+    "fecha": "2025-09-06",
+    "riv": "Andorra",
+    "casa": true,
+    "gf": 2,
+    "gc": 0
+   },
+   {
+    "fecha": "2025-09-09",
+    "riv": "Serbia",
+    "casa": false,
+    "gf": 5,
+    "gc": 0
+   },
+   {
+    "fecha": "2025-10-14",
+    "riv": "Latvia",
+    "casa": false,
+    "gf": 5,
+    "gc": 0
+   },
+   {
+    "fecha": "2025-11-13",
+    "riv": "Serbia",
+    "casa": true,
+    "gf": 2,
+    "gc": 0
+   },
+   {
+    "fecha": "2025-11-16",
+    "riv": "Albania",
+    "casa": false,
+    "gf": 2,
+    "gc": 0
+   }
+  ],
+  "derrotas": [
+   {
+    "fecha": "2025-06-10",
+    "riv": "Senegal",
+    "comp": "Friendlies",
+    "gf": 1,
+    "gc": 3
+   },
+   {
+    "fecha": "2026-03-31",
+    "riv": "Japan",
+    "comp": "Friendlies",
+    "gf": 0,
+    "gc": 1
+   },
+   {
+    "fecha": "2026-07-15",
+    "riv": "Argentina",
+    "comp": "World Cup",
+    "gf": 1,
+    "gc": 2
+   },
+   {
+    "fecha": "2026-09-26",
+    "riv": "Spain",
+    "comp": "UEFA Nations League",
+    "gf": 2,
+    "gc": 3
+   }
+  ],
+  "mayores": [
+   {
+    "fecha": "2025-09-09",
+    "riv": "Serbia",
+    "comp": "World Cup - Qualification Europe",
+    "casa": false,
+    "gf": 5,
+    "gc": 0
+   },
+   {
+    "fecha": "2025-10-14",
+    "riv": "Latvia",
+    "comp": "World Cup - Qualification Europe",
+    "casa": false,
+    "gf": 5,
+    "gc": 0
+   },
+   {
+    "fecha": "2025-03-24",
+    "riv": "Latvia",
+    "comp": "World Cup - Qualification Europe",
+    "casa": true,
+    "gf": 3,
+    "gc": 0
+   }
+  ]
+ },
  "grupos": [
   {
    "equipos": [
