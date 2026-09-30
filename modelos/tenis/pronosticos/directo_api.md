@@ -1,4 +1,4 @@
-# Tenis en directo, 30/09/2026 15:24 UTC (17:24 en España)
+# Tenis en directo, 30/09/2026 15:39 UTC (17:39 en España)
 
 Calculadora desde el marcador exacto (modelo de puntos, superficie real) frente a la cuota en directo
 (sin margen). Ganador y sets: la calculadora suele coincidir con la casa. Total de juegos: el modelo
@@ -7,32 +7,28 @@ Se actualiza cada ~5 min; el registro en data/tenis/api_tennis/registro/ servir�
 
 | partido | tipo | superficie | marcador (sets, juegos, puntos, saca) | gana 1º: modelo / cuota | sets más probables (modelo) | total juegos: línea, modelo / cuota |
 |---|---|---|---|---|---|---|
-| B. Fernandez vs L. Midon | Challenger Men Singles | Clay | 0-1, 0-0, 40 - A, saca L. Midon | 5% /  | 0-2 79%, 1-2 16% |  |
-| A. Fenty vs D. Dietrich | Challenger Men Singles | Hard | 0-0, 2-2, 0 - 0, saca A. Fenty | 19% / 25% | 0-2 52%, 1-2 30% | 22.5: 57% / 50% |
-| L. A. Miguel vs F. Mena | Challenger Men Singles | Clay | 0-0, 5-2, 30 - 15, saca L. A. Miguel | 61% /  | 1-2 38%, 2-0 37% |  |
-| E. Butvilas vs M. Geerts | Challenger Men Singles | Hard | 1-0, 0-0, 0 - 0, saca E. Butvilas | 87% / 91% | 2-0 64%, 2-1 23% |  |
-| L. Potenza vs I. Montes-De La Torre | Challenger Men Singles | Hard | 0-1, 1-5, 40 - 0, saca L. Potenza | 0% / 2% | 0-2 99%, 1-2 1% | 17.5: 18% / 19% |
-| S. Heredia vs J. E. Schiessl | Challenger Men Singles | Clay | 0-0, 1-1, 0 - 15, saca J. E. Schiessl | 36% /  | 0-2 36%, 1-2 28% |  |
-| G. I. Justo vs F. Roncadelli | Challenger Men Singles | Clay | 1-0, 5-2, 0 - 0, saca F. Roncadelli | 98% /  | 2-0 94%, 2-1 3% |  |
-| L. Jeanjean vs M. Ercan | Challenger Women Singles | Hard | 0-0, 0-1, 30 - 40, saca M. Ercan | 65% / 78% | 2-1 36%, 2-0 29% | 21.5: 67% / 49% |
-| P. Delage vs J. Garcia Mestre | Itf Men Singles | Clay | 1-0, 0-0, 0 - 0, saca P. Delage | 95% / 92% | 2-0 77%, 2-1 18% |  |
-| A. Moro Canas vs D. Naharro | Itf Men Singles | Clay | 1-0, 5-3, 15 - 30, saca D. Naharro | 100% / 96% | 2-0 98%, 2-1 2% |  |
-| C. Stanke vs R. Nijboer | Itf Men Singles | Clay | 0-0, 1-3, 0 - 0, saca R. Nijboer | 8% / 6% | 0-2 71%, 1-2 21% |  |
-| O. Bonding vs M. Thomson | Itf Men Singles | Hard | 1-0, 2-1, 40 - 40, saca O. Bonding | 96% / 94% | 2-0 88%, 2-1 9% |  |
-| H. Lieberman vs N. Djosic | Itf Men Singles | Hard | 0-0, 0-0, 15 - 0, saca N. Djosic | 56% / 46% | 2-0 30%, 2-1 26% |  |
-| M. Mesarovic vs D. Bobo | Itf Men Singles | Hard | 0-0, 5-0, 0 - 30, saca D. Bobo | 92% / 89% | 2-0 72%, 2-1 20% |  |
-| A. Harazaki vs J. Braswell | Itf Men Singles | Hard | 0-0, 1-0, 15 - 30, saca J. Braswell | 83% / 71% | 2-0 54%, 2-1 28% |  |
-| S. Rozin vs N. Schlagenhauf | Itf Men Singles | Hard | 0-0, 1-0, 40 - 40, saca N. Schlagenhauf | 53% / 75% | 2-0 28%, 1-2 25% |  |
-| C. Hernandez vs T. Nirundorn | Itf Men Singles | Hard | 1-0, 3-4, A - 40, saca C. Hernandez | 69% / 78% | 2-0 43%, 1-2 31% |  |
-| A. F. Alhogbani vs P. Vaitiekunas | Itf Men Singles | Hard | 1-0, 6-5, 15 - 0, saca P. Vaitiekunas | 82% / 87% | 2-0 67%, 1-2 18% |  |
-| G. Kawano Cho vs D. Bhatia | Itf Women Singles | Hard | 0-1, 0-0, 15 - 0, saca D. Bhatia | 15% / 31% | 0-2 59%, 1-2 26% |  |
-| E. Jamshidi vs F. Dell'Edera | Itf Women Singles | Hard | 1-0, 4-5, 0 - 0, saca F. Dell'Edera | 78% / 62% | 2-1 49%, 2-0 29% |  |
-| A. Sedysheva vs A. L. Popovic | Itf Women Singles | Hard | 1-0, 4-2, 0 - 0, saca A. L. Popovic | 83% / 94% | 2-0 73%, 1-2 17% |  |
-| C. Van Zonneveld vs D. D. Feldmane | Itf Women Singles | Hard | 1-1, 0-0, 0 - 0, saca D. D. Feldmane | 46% / 78% | 1-2 54%, 2-1 46% |  |
-| A. S. Sanchez vs C. C. Sosa | Itf Women Singles | Hard | 0-0, 0-0, 0 - 0, saca C. C. Sosa | 90% / 98% | 2-0 65%, 2-1 25% |  |
-| A. Bowers vs M. Yamakita | Itf Women Singles | Hard | 1-0, 3-2, 0 - 0, saca A. Bowers | 82% / 91% | 2-0 67%, 1-2 18% |  |
-| C. Moreno vs M. Sholokhova | Itf Women Singles | Hard | 0-1, 5-1, 40 - 30, saca M. Sholokhova | 23% / 45% | 1-2 73%, 2-1 23% |  |
-| R. Caballero Chica vs S. Lam | Itf Women Singles | Hard | 0-0, 3-2, 0 - 0, saca R. Caballero Chica | 41% / 38% | 1-2 33%, 0-2 27% |  |
-| K. Pavlova vs A. Dudeney | Itf Women Singles | Hard | 0-1, 0-4, 0 - 0, saca A. Dudeney | 0% / 5% | 0-2 98%, 1-2 1% |  |
-| L. Mi vs B. Q. Quadre | Itf Women Singles | Hard | 1-0, 1-1, 0 - 0, saca L. Mi | 94% / 88% | 2-0 74%, 2-1 19% |  |
-| A. Bondar vs R. Zarazua | Wta Singles | Hard | 0-1, 3-2, 0 - 30, saca A. Bondar | 42% /  | 2-1 42%, 0-2 31% |  |
+| B. Fernandez vs L. Midon | Challenger Men Singles | Clay | 0-1, 3-3, 0 - 0, saca L. Midon | 7% /  | 0-2 70%, 1-2 23% |  |
+| A. Fenty vs D. Dietrich | Challenger Men Singles | Hard | 0-0, 3-3, 15 - 0, saca A. Fenty | 20% / 31% | 0-2 48%, 1-2 31% | 24.5: 53% / 50% |
+| L. A. Miguel vs F. Mena | Challenger Men Singles | Clay | 1-0, 1-1, 0 - 0, saca F. Mena | 62% /  | 2-0 39%, 1-2 38% |  |
+| E. Butvilas vs M. Geerts | Challenger Men Singles | Hard | 1-0, 2-1, 15 - 15, saca M. Geerts | 89% / 94% | 2-0 69%, 2-1 20% | 19.5: 64% / 35% |
+| L. Potenza vs I. Montes-De La Torre | Challenger Men Singles | Hard | 0-1, 2-5, 40 - 40, saca I. Montes-De La Torre | 0% / 2% | 0-2 99%, 1-2 1% | 17.5: 23% / 31% |
+| S. Heredia vs J. E. Schiessl | Challenger Men Singles | Clay | 0-0, 1-4, 40 - 40, saca S. Heredia | 20% /  | 0-2 55%, 1-2 25% |  |
+| L. Jeanjean vs M. Ercan | Challenger Women Singles | Hard | 0-0, 1-2, 15 - 30, saca M. Ercan | 64% / 77% | 2-1 37%, 2-0 27% | 22.5: 63% / 49% |
+| O. Bonding vs M. Thomson | Itf Men Singles | Hard | 1-0, 5-1, 0 - 15, saca M. Thomson | 100% / 96% | 2-0 100%, 2-1 0% |  |
+| P. Delage vs J. Garcia Mestre | Itf Men Singles | Clay | 1-0, 3-0, 15 - 0, saca J. Garcia Mestre | 99% / 96% | 2-0 96%, 2-1 3% |  |
+| C. Stanke vs R. Nijboer | Itf Men Singles | Clay | 0-0, 2-5, 0 - 15, saca C. Stanke | 6% / 5% | 0-2 76%, 1-2 18% |  |
+| H. Lieberman vs N. Djosic | Itf Men Singles | Hard | 0-0, 1-3, 0 - 0, saca N. Djosic | 38% / 27% | 0-2 37%, 2-1 27% |  |
+| M. Mesarovic vs D. Bobo | Itf Men Singles | Hard | 1-0, 1-2, 0 - 0, saca M. Mesarovic | 90% / 84% | 2-0 65%, 2-1 26% |  |
+| F. K. Solheim vs O. Pieczkowski | Itf Men Singles | Hard | 0-0, 1-1, 30 - 15, saca F. K. Solheim | 6% / 11% | 0-2 71%, 1-2 23% |  |
+| A. Harazaki vs J. Braswell | Itf Men Singles | Hard | 0-0, 2-2, 15 - 15, saca A. Harazaki | 80% / 66% | 2-0 50%, 2-1 30% |  |
+| S. Rozin vs N. Schlagenhauf | Itf Men Singles | Hard | 0-0, 3-0, 15 - 40, saca N. Schlagenhauf | 67% / 84% | 2-0 42%, 2-1 25% |  |
+| C. Van Zonneveld vs D. D. Feldmane | Itf Women Singles | Hard | 1-1, 2-1, 0 - 0, saca C. Van Zonneveld | 65% / 88% | 2-1 65%, 1-2 35% |  |
+| G. Kawano Cho vs D. Bhatia | Itf Women Singles | Hard | 0-1, 2-1, 0 - 0, saca G. Kawano Cho | 22% / 39% | 0-2 40%, 1-2 38% |  |
+| A. S. Sanchez vs C. C. Sosa | Itf Women Singles | Hard | 0-0, 1-1, 15 - 0, saca C. C. Sosa | 91% / 98% | 2-0 66%, 2-1 25% |  |
+| A. Sedysheva vs A. L. Popovic | Itf Women Singles | Hard | 1-0, 5-4, 15 - 0, saca A. Sedysheva | 86% / 93% | 2-0 78%, 1-2 14% |  |
+| A. Bowers vs M. Yamakita | Itf Women Singles | Hard | 1-0, 4-3, 0 - 0, saca A. Bowers | 85% / 91% | 2-0 72%, 1-2 15% |  |
+| C. Moreno vs M. Sholokhova | Itf Women Singles | Hard | 1-1, 0-1, 0 - 0, saca M. Sholokhova | 14% / 34% | 1-2 86%, 2-1 14% |  |
+| R. Caballero Chica vs S. Lam | Itf Women Singles | Hard | 0-0, 5-3, 30 - 15, saca S. Lam | 55% / 58% | 1-2 38%, 2-0 33% |  |
+| L. Mi vs B. Q. Quadre | Itf Women Singles | Hard | 1-0, 3-1, 30 - 40, saca L. Mi | 97% / 92% | 2-0 87%, 2-1 10% |  |
+| E. Jamshidi vs F. Dell'Edera | Itf Women Singles | Hard | 1-0, 6-6, 1 - 0, saca E. Jamshidi | 90% / 84% | 2-0 68%, 2-1 22% |  |
+| A. Bondar vs R. Zarazua | Wta Singles | Hard | 0-1, 3-4, 0 - 40, saca A. Bondar | 12% /  | 0-2 80%, 2-1 12% |  |
