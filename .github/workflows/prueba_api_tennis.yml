@@ -1,13 +1,9 @@
 name: Prueba API-Tennis
 
-# Cuenta de API-Tennis del usuario (30/09/2026). Dos llamadas de prueba. La clave
-# se busca con los nombres de secreto más probables; nunca se escribe en disco.
+# Cuenta de API-Tennis del usuario (30/09/2026). Dos llamadas de prueba. Clave en el
+# secreto del repo API_TENNIS_KEY; nunca se escribe en disco.
 on:
   workflow_dispatch:
-  push:
-    branches: [ccr-3c3cfe57-etcioo]
-    paths:
-      - .github/workflows/prueba_api_tennis.yml
 
 jobs:
   prueba:
@@ -22,9 +18,9 @@ jobs:
       - run: pip install requests pandas
       - name: Probar
         env:
-          API_TENNIS_KEY: ${{ secrets.API_TENNIS_KEY || secrets.APITENNIS_KEY || secrets.API_TENNIS || secrets.APITENNIS || secrets.APITENNIS_API_KEY || secrets.API_TENNIS_API_KEY }}
+          API_TENNIS_KEY: ${{ secrets.API_TENNIS_KEY }}
         run: |
-          if [ -z "$API_TENNIS_KEY" ]; then echo "NO HAY SECRETO con ninguno de los nombres probados"; mkdir -p data/tenis/api_tennis; echo "# Prueba de API-Tennis\n\nNo se encontró el secreto (nombres probados: API_TENNIS_KEY, APITENNIS_KEY, API_TENNIS, APITENNIS, APITENNIS_API_KEY, API_TENNIS_API_KEY)." > data/tenis/api_tennis/prueba.md; else python -u modelos/tenis/scripts/prueba_api_tennis.py || true; fi
+          if [ -z "$API_TENNIS_KEY" ]; then echo "NO HAY SECRETO API_TENNIS_KEY"; mkdir -p data/tenis/api_tennis; echo "# Prueba de API-Tennis\n\nNo se encontró el secreto API_TENNIS_KEY." > data/tenis/api_tennis/prueba.md; else python -u modelos/tenis/scripts/prueba_api_tennis.py || true; fi
       - name: Guardar
         if: always()
         run: |
