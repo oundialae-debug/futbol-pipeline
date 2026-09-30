@@ -142,3 +142,18 @@ carpeta se apunta aquí.
 - **Por qué:** el usuario quiere definir los datos antes de llevarlos al
   diseño y crear cosas que no tengan otras apps.
 - **Cómo:** solo lectura de cabeceras y conteos. Sin API ni descargas.
+
+## 30/09/2026: los 12 datos, calculados, comprobados y en el diseño
+
+- **Qué:** `analisis_app.py` calcula los 12 datos pedidos más el informe
+  post-partido; `datos_app.json` con los resultados; el lienzo 2yellow pasa a
+  datos reales de LaLiga en 9 pantallas (portada, previa RMA–Villarreal,
+  informe Atlético 2-1 Madrid, sus estadísticas y alineaciones, Real Madrid,
+  Mbappé, tabla Elo, tips). Generador en `diseno_nuevo/generador/s5*_real.py`.
+- **Por qué:** petición del usuario; la distinción es el Elo; la app es tanto
+  de después del partido como de antes.
+- **Comprobaciones:** detalle en `IDEAS.md`. Termómetro 3,2 sigmas; Elo en J7
+  solo algo mejor que la tabla; segundas partes casi todo nivel.
+- **Fallos silenciosos:** tarjetas con dos IDs por jugador (unificados),
+  minutos negativos, etiqueta de posición, valor 0, porteros sin nombre.
+- **Datos:** solo lectura de `data/`. Sin API ni descargas.

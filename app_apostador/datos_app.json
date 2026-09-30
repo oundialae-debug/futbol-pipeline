@@ -1,0 +1,2658 @@
+{
+ "tabla_elo": {
+  "comprobacion": [
+   {
+    "temporada": 2023,
+    "spearman_tabla_j7": 0.79,
+    "spearman_elo_j7": 0.87,
+    "suerte_j7_vs_resto": 0.51
+   },
+   {
+    "temporada": 2024,
+    "spearman_tabla_j7": 0.83,
+    "spearman_elo_j7": 0.72,
+    "suerte_j7_vs_resto": 0.31
+   },
+   {
+    "temporada": 2025,
+    "spearman_tabla_j7": 0.65,
+    "spearman_elo_j7": 0.68,
+    "suerte_j7_vs_resto": -0.07
+   }
+  ],
+  "filas": [
+   {
+    "pos": 1,
+    "equipo": "Barcelona",
+    "pj": 7,
+    "pts": 21,
+    "xpts": 17.5,
+    "suerte": 3.5,
+    "elo": 1853.0,
+    "elo_rank": 1,
+    "elo_cambio": 33.0,
+    "elo_hist": [
+     1825.0,
+     1828.0,
+     1832.0,
+     1839.0,
+     1845.0,
+     1848.0,
+     1853.0
+    ]
+   },
+   {
+    "pos": 2,
+    "equipo": "Atlético Madrid",
+    "pj": 7,
+    "pts": 16,
+    "xpts": 12.3,
+    "suerte": 3.7,
+    "elo": 1669.0,
+    "elo_rank": 3,
+    "elo_cambio": 27.0,
+    "elo_hist": [
+     1648.0,
+     1647.0,
+     1657.0,
+     1635.0,
+     1649.0,
+     1657.0,
+     1669.0
+    ]
+   },
+   {
+    "pos": 3,
+    "equipo": "Real Betis",
+    "pj": 7,
+    "pts": 16,
+    "xpts": 10.5,
+    "suerte": 5.5,
+    "elo": 1623.0,
+    "elo_rank": 5,
+    "elo_cambio": 23.0,
+    "elo_hist": [
+     1606.0,
+     1615.0,
+     1594.0,
+     1608.0,
+     1620.0,
+     1625.0,
+     1623.0
+    ]
+   },
+   {
+    "pos": 4,
+    "equipo": "Real Madrid",
+    "pj": 7,
+    "pts": 15,
+    "xpts": 15.5,
+    "suerte": -0.5,
+    "elo": 1765.0,
+    "elo_rank": 2,
+    "elo_cambio": -3.0,
+    "elo_hist": [
+     1772.0,
+     1777.0,
+     1781.0,
+     1768.0,
+     1773.0,
+     1777.0,
+     1765.0
+    ]
+   },
+   {
+    "pos": 5,
+    "equipo": "Sevilla FC",
+    "pj": 7,
+    "pts": 13,
+    "xpts": 7.0,
+    "suerte": 6.0,
+    "elo": 1488.0,
+    "elo_rank": 15,
+    "elo_cambio": 39.0,
+    "elo_hist": [
+     1459.0,
+     1479.0,
+     1469.0,
+     1470.0,
+     1480.0,
+     1493.0,
+     1488.0
+    ]
+   },
+   {
+    "pos": 6,
+    "equipo": "Alavés",
+    "pj": 7,
+    "pts": 11,
+    "xpts": 8.9,
+    "suerte": 2.1,
+    "elo": 1497.0,
+    "elo_rank": 12,
+    "elo_cambio": 28.0,
+    "elo_hist": [
+     1485.0,
+     1488.0,
+     1501.0,
+     1515.0,
+     1506.0,
+     1495.0,
+     1497.0
+    ]
+   },
+   {
+    "pos": 7,
+    "equipo": "Deportivo La Coruña",
+    "pj": 7,
+    "pts": 10,
+    "xpts": 9.4,
+    "suerte": 0.6,
+    "elo": 1516.0,
+    "elo_rank": 9,
+    "elo_cambio": 16.0,
+    "elo_hist": [
+     1497.0,
+     1499.0,
+     1512.0,
+     1527.0,
+     1528.0,
+     1515.0,
+     1516.0
+    ]
+   },
+   {
+    "pos": 8,
+    "equipo": "Real Sociedad",
+    "pj": 7,
+    "pts": 10,
+    "xpts": 7.8,
+    "suerte": 2.2,
+    "elo": 1509.0,
+    "elo_rank": 10,
+    "elo_cambio": 4.0,
+    "elo_hist": [
+     1500.0,
+     1495.0,
+     1503.0,
+     1501.0,
+     1511.0,
+     1497.0,
+     1509.0
+    ]
+   },
+   {
+    "pos": 9,
+    "equipo": "Villarreal",
+    "pj": 7,
+    "pts": 8,
+    "xpts": 11.8,
+    "suerte": -3.8,
+    "elo": 1624.0,
+    "elo_rank": 4,
+    "elo_cambio": -19.0,
+    "elo_hist": [
+     1641.0,
+     1643.0,
+     1631.0,
+     1616.0,
+     1604.0,
+     1616.0,
+     1624.0
+    ]
+   },
+   {
+    "pos": 10,
+    "equipo": "Athletic Club",
+    "pj": 6,
+    "pts": 8,
+    "xpts": 7.8,
+    "suerte": 0.2,
+    "elo": 1522.0,
+    "elo_rank": 8,
+    "elo_cambio": 12.0,
+    "elo_hist": [
+     1490.0,
+     1488.0,
+     1507.0,
+     1529.0,
+     1525.0,
+     1522.0
+    ]
+   },
+   {
+    "pos": 11,
+    "equipo": "Getafe",
+    "pj": 7,
+    "pts": 8,
+    "xpts": 9.2,
+    "suerte": -1.2,
+    "elo": 1489.0,
+    "elo_rank": 14,
+    "elo_cambio": -14.0,
+    "elo_hist": [
+     1487.0,
+     1496.0,
+     1487.0,
+     1486.0,
+     1486.0,
+     1481.0,
+     1489.0
+    ]
+   },
+   {
+    "pos": 12,
+    "equipo": "Rayo Vallecano",
+    "pj": 7,
+    "pts": 8,
+    "xpts": 8.8,
+    "suerte": -0.8,
+    "elo": 1531.0,
+    "elo_rank": 6,
+    "elo_cambio": -8.0,
+    "elo_hist": [
+     1529.0,
+     1526.0,
+     1522.0,
+     1530.0,
+     1524.0,
+     1531.0,
+     1531.0
+    ]
+   },
+   {
+    "pos": 13,
+    "equipo": "Osasuna",
+    "pj": 7,
+    "pts": 8,
+    "xpts": 8.8,
+    "suerte": -0.8,
+    "elo": 1460.0,
+    "elo_rank": 18,
+    "elo_cambio": -20.0,
+    "elo_hist": [
+     1479.0,
+     1492.0,
+     1500.0,
+     1486.0,
+     1467.0,
+     1460.0,
+     1460.0
+    ]
+   },
+   {
+    "pos": 14,
+    "equipo": "Celta de Vigo",
+    "pj": 7,
+    "pts": 7,
+    "xpts": 10.5,
+    "suerte": -3.5,
+    "elo": 1528.0,
+    "elo_rank": 7,
+    "elo_cambio": -15.0,
+    "elo_hist": [
+     1545.0,
+     1531.0,
+     1512.0,
+     1513.0,
+     1514.0,
+     1512.0,
+     1528.0
+    ]
+   },
+   {
+    "pos": 15,
+    "equipo": "Espanyol",
+    "pj": 7,
+    "pts": 7,
+    "xpts": 8.4,
+    "suerte": -1.4,
+    "elo": 1456.0,
+    "elo_rank": 19,
+    "elo_cambio": -5.0,
+    "elo_hist": [
+     1478.0,
+     1474.0,
+     1466.0,
+     1464.0,
+     1483.0,
+     1476.0,
+     1456.0
+    ]
+   },
+   {
+    "pos": 16,
+    "equipo": "Racing Santander",
+    "pj": 7,
+    "pts": 7,
+    "xpts": 7.8,
+    "suerte": -0.8,
+    "elo": 1482.0,
+    "elo_rank": 16,
+    "elo_cambio": -18.0,
+    "elo_hist": [
+     1502.0,
+     1494.0,
+     1501.0,
+     1493.0,
+     1502.0,
+     1498.0,
+     1482.0
+    ]
+   },
+   {
+    "pos": 17,
+    "equipo": "Levante",
+    "pj": 6,
+    "pts": 5,
+    "xpts": 5.6,
+    "suerte": -0.6,
+    "elo": 1491.0,
+    "elo_rank": 13,
+    "elo_cambio": -5.0,
+    "elo_hist": [
+     1479.0,
+     1481.0,
+     1502.0,
+     1504.0,
+     1499.0,
+     1491.0
+    ]
+   },
+   {
+    "pos": 18,
+    "equipo": "Elche",
+    "pj": 7,
+    "pts": 5,
+    "xpts": 5.6,
+    "suerte": -0.6,
+    "elo": 1451.0,
+    "elo_rank": 20,
+    "elo_cambio": 0.0,
+    "elo_hist": [
+     1453.0,
+     1448.0,
+     1441.0,
+     1431.0,
+     1435.0,
+     1432.0,
+     1451.0
+    ]
+   },
+   {
+    "pos": 19,
+    "equipo": "Valencia",
+    "pj": 7,
+    "pts": 4,
+    "xpts": 8.6,
+    "suerte": -4.6,
+    "elo": 1498.0,
+    "elo_rank": 11,
+    "elo_cambio": -42.0,
+    "elo_hist": [
+     1539.0,
+     1529.0,
+     1515.0,
+     1508.0,
+     1499.0,
+     1510.0,
+     1498.0
+    ]
+   },
+   {
+    "pos": 20,
+    "equipo": "Malaga",
+    "pj": 7,
+    "pts": 3,
+    "xpts": 7.3,
+    "suerte": -4.3,
+    "elo": 1467.0,
+    "elo_rank": 17,
+    "elo_cambio": -33.0,
+    "elo_hist": [
+     1493.0,
+     1491.0,
+     1487.0,
+     1485.0,
+     1488.0,
+     1475.0,
+     1467.0
+    ]
+   }
+  ]
+ },
+ "informe": {
+  "partido": "Atlético Madrid 2-1 Real Madrid",
+  "fecha": "2026-09-20",
+  "descanso": [
+   0,
+   0
+  ],
+  "final": [
+   2,
+   1
+  ],
+  "xg": [
+   2.38,
+   0.32
+  ],
+  "merecido_xg": [
+   83.0,
+   13.0,
+   4.0
+  ],
+  "prob_previa": [
+   29.0,
+   30.0,
+   41.0
+  ],
+  "elo_antes": [
+   1657.0,
+   1777.0
+  ],
+  "elo_despues": [
+   1669.0,
+   1765.0
+  ],
+  "stats": {
+   "possession": [
+    0.61,
+    0.39
+   ],
+   "shots_on_target": [
+    9.0,
+    3.0
+   ],
+   "shots_off_target": [
+    4.0,
+    4.0
+   ],
+   "big_chances_created": [
+    3.0,
+    1.0
+   ],
+   "corners": [
+    3.0,
+    1.0
+   ],
+   "fouls": [
+    19.0,
+    6.0
+   ],
+   "yellow_cards": [
+    2.0,
+    2.0
+   ],
+   "key_passes": [
+    13.0,
+    6.0
+   ],
+   "total_passes": [
+    618.0,
+    394.0
+   ]
+  },
+  "tarjetas": [
+   {
+    "min": "6",
+    "jugador": "Giuliano Simeone",
+    "equipo": "Atlético Madrid",
+    "tipo": "Yellow Card"
+   },
+   {
+    "min": "35",
+    "jugador": "M. Pubill",
+    "equipo": "Atlético Madrid",
+    "tipo": "Yellow Card"
+   },
+   {
+    "min": "38",
+    "jugador": "Cristian Romero",
+    "equipo": "Atlético Madrid",
+    "tipo": "Yellow Card"
+   },
+   {
+    "min": "49",
+    "jugador": "Denzel Dumfries",
+    "equipo": "Real Madrid",
+    "tipo": "Yellow Card"
+   },
+   {
+    "min": "52",
+    "jugador": "D. Huijsen",
+    "equipo": "Real Madrid",
+    "tipo": "Red Card"
+   },
+   {
+    "min": "78",
+    "jugador": "J. Bellingham",
+    "equipo": "Real Madrid",
+    "tipo": "Yellow Card"
+   }
+  ],
+  "jugadores": [
+   {
+    "jugador": "Thibaut Courtois",
+    "equipo": "Real Madrid",
+    "nota": 8.7,
+    "min": 90,
+    "goles": 0,
+    "asist": 0,
+    "xg": null,
+    "pos": "Goalkeeper"
+   },
+   {
+    "jugador": "Koke",
+    "equipo": "Atlético Madrid",
+    "nota": 7.9,
+    "min": 45,
+    "goles": 0,
+    "asist": 0,
+    "xg": 0.08,
+    "pos": "Midfielder"
+   },
+   {
+    "jugador": "D. Hancko",
+    "equipo": "Atlético Madrid",
+    "nota": 7.5,
+    "min": 90,
+    "goles": 0,
+    "asist": 0,
+    "xg": 0.28,
+    "pos": "Defender"
+   },
+   {
+    "jugador": "Cristian Romero",
+    "equipo": "Atlético Madrid",
+    "nota": 7.49,
+    "min": 89,
+    "goles": 0,
+    "asist": 0,
+    "xg": 0.07,
+    "pos": "Defender"
+   },
+   {
+    "jugador": "Antonio Rüdiger",
+    "equipo": "Real Madrid",
+    "nota": 7.35,
+    "min": 36,
+    "goles": 1,
+    "asist": 0,
+    "xg": 0.07,
+    "pos": "Defender"
+   },
+   {
+    "jugador": "Yan Diomande",
+    "equipo": "Real Madrid",
+    "nota": 7.3,
+    "min": 36,
+    "goles": 0,
+    "asist": 0,
+    "xg": 0.07,
+    "pos": "Forward"
+   }
+  ],
+  "porteros": [
+   {
+    "jugador": "J. Oblak",
+    "equipo": "Atlético Madrid",
+    "paradas": 2,
+    "evitados": -0.57
+   },
+   {
+    "jugador": "J. Musso",
+    "equipo": "Atlético Madrid",
+    "paradas": 0,
+    "evitados": null
+   },
+   {
+    "jugador": "Thibaut Courtois",
+    "equipo": "Real Madrid",
+    "paradas": 5,
+    "evitados": 0.87
+   },
+   {
+    "jugador": "A. Lunin",
+    "equipo": "Real Madrid",
+    "paradas": 0,
+    "evitados": null
+   }
+  ],
+  "cuotas": {
+   "apertura": [
+    3.43,
+    3.8,
+    1.95
+   ],
+   "cierre": [
+    3.44,
+    3.8,
+    1.97
+   ]
+  },
+  "momentum_nota": "Por mitades (goles) y tarjetas por minuto. Sin minutos de goles ni cambios: la API los da en /matches/{id}, no guardados."
+ },
+ "bajas": {
+  "Real Madrid": {
+   "lista": [
+    {
+     "jugador": "Federico Valverde",
+     "motivo": "Ankle injury",
+     "vuelve": "2026-10-11",
+     "pct_ga": 9.0,
+     "pct_min": 7.0,
+     "valor_m": 90.0
+    },
+    {
+     "jugador": "Éder Militão",
+     "motivo": "Muscle injury",
+     "vuelve": "2026-11-01",
+     "pct_ga": 2.0,
+     "pct_min": 3.0,
+     "valor_m": 20.0
+    },
+    {
+     "jugador": "Rodrygo",
+     "motivo": "Cruciate ligament tear",
+     "vuelve": "2027-01-01",
+     "pct_ga": 2.0,
+     "pct_min": 2.0,
+     "valor_m": 45.0
+    }
+   ],
+   "pct_ga": 13.0,
+   "pct_min": 12.0
+  },
+  "Villarreal": {
+   "lista": [
+    {
+     "jugador": "Etta Eyong",
+     "motivo": "Hamstring injury",
+     "vuelve": "2026-10-12",
+     "pct_ga": 2.0,
+     "pct_min": 1.0,
+     "valor_m": 15.0
+    }
+   ],
+   "pct_ga": 2.0,
+   "pct_min": 1.0
+  }
+ },
+ "con_sin": {
+  "Real Madrid": {
+   "partidos": 83,
+   "lista": [
+    {
+     "jugador": "Franco Mastantuono",
+     "con_n": 11,
+     "sin_n": 72,
+     "con_pts": 3.0,
+     "sin_pts": 2.11,
+     "con_res": 0.64,
+     "sin_res": -0.12,
+     "efecto": 0.76
+    },
+    {
+     "jugador": "Thibaut Courtois",
+     "con_n": 69,
+     "sin_n": 14,
+     "con_pts": 2.26,
+     "sin_pts": 2.07,
+     "con_res": 0.03,
+     "sin_res": -0.27,
+     "efecto": 0.3
+    },
+    {
+     "jugador": "Federico Valverde",
+     "con_n": 72,
+     "sin_n": 11,
+     "con_pts": 2.26,
+     "sin_pts": 2.0,
+     "con_res": 0.02,
+     "sin_res": -0.25,
+     "efecto": 0.27
+    },
+    {
+     "jugador": "D. Huijsen",
+     "con_n": 31,
+     "sin_n": 52,
+     "con_pts": 2.32,
+     "sin_pts": 2.17,
+     "con_res": 0.12,
+     "sin_res": -0.1,
+     "efecto": 0.22
+    },
+    {
+     "jugador": "Raúl Asencio",
+     "con_n": 35,
+     "sin_n": 48,
+     "con_pts": 2.37,
+     "sin_pts": 2.12,
+     "con_res": 0.09,
+     "sin_res": -0.1,
+     "efecto": 0.18
+    },
+    {
+     "jugador": "E. Camavinga",
+     "con_n": 29,
+     "sin_n": 54,
+     "con_pts": 2.28,
+     "sin_pts": 2.2,
+     "con_res": 0.08,
+     "sin_res": -0.07,
+     "efecto": 0.15
+    },
+    {
+     "jugador": "A. Güler",
+     "con_n": 44,
+     "sin_n": 39,
+     "con_pts": 2.27,
+     "sin_pts": 2.18,
+     "con_res": 0.04,
+     "sin_res": -0.09,
+     "efecto": 0.13
+    },
+    {
+     "jugador": "Álvaro Carreras",
+     "con_n": 29,
+     "sin_n": 54,
+     "con_pts": 2.34,
+     "sin_pts": 2.17,
+     "con_res": 0.04,
+     "sin_res": -0.05,
+     "efecto": 0.09
+    },
+    {
+     "jugador": "D. Ceballos",
+     "con_n": 19,
+     "sin_n": 64,
+     "con_pts": 2.32,
+     "sin_pts": 2.2,
+     "con_res": 0.05,
+     "sin_res": -0.04,
+     "efecto": 0.08
+    },
+    {
+     "jugador": "Dani Carvajal",
+     "con_n": 17,
+     "sin_n": 66,
+     "con_pts": 2.29,
+     "sin_pts": 2.21,
+     "con_res": 0.04,
+     "sin_res": -0.03,
+     "efecto": 0.07
+    },
+    {
+     "jugador": "Rodrygo",
+     "con_n": 28,
+     "sin_n": 55,
+     "con_pts": 2.32,
+     "sin_pts": 2.18,
+     "con_res": 0.02,
+     "sin_res": -0.04,
+     "efecto": 0.05
+    },
+    {
+     "jugador": "Éder Militão",
+     "con_n": 25,
+     "sin_n": 58,
+     "con_pts": 2.24,
+     "sin_pts": 2.22,
+     "con_res": -0.03,
+     "sin_res": -0.01,
+     "efecto": -0.02
+    },
+    {
+     "jugador": "Brahim Díaz",
+     "con_n": 30,
+     "sin_n": 53,
+     "con_pts": 2.2,
+     "sin_pts": 2.25,
+     "con_res": -0.05,
+     "sin_res": -0.0,
+     "efecto": -0.05
+    },
+    {
+     "jugador": "Luka Modrić",
+     "con_n": 17,
+     "sin_n": 66,
+     "con_pts": 2.18,
+     "sin_pts": 2.24,
+     "con_res": -0.08,
+     "sin_res": -0.0,
+     "efecto": -0.08
+    },
+    {
+     "jugador": "Antonio Rüdiger",
+     "con_n": 44,
+     "sin_n": 39,
+     "con_pts": 2.18,
+     "sin_pts": 2.28,
+     "con_res": -0.06,
+     "sin_res": 0.03,
+     "efecto": -0.09
+    },
+    {
+     "jugador": "A. Lunin",
+     "con_n": 13,
+     "sin_n": 70,
+     "con_pts": 2.23,
+     "sin_pts": 2.23,
+     "con_res": -0.09,
+     "sin_res": -0.01,
+     "efecto": -0.09
+    },
+    {
+     "jugador": "Kylian Mbappé",
+     "con_n": 70,
+     "sin_n": 13,
+     "con_pts": 2.23,
+     "sin_pts": 2.23,
+     "con_res": -0.04,
+     "sin_res": 0.09,
+     "efecto": -0.13
+    },
+    {
+     "jugador": "Aurélien Tchouaméni",
+     "con_n": 64,
+     "sin_n": 19,
+     "con_pts": 2.17,
+     "sin_pts": 2.42,
+     "con_res": -0.06,
+     "sin_res": 0.11,
+     "efecto": -0.17
+    },
+    {
+     "jugador": "J. Bellingham",
+     "con_n": 57,
+     "sin_n": 26,
+     "con_pts": 2.12,
+     "sin_pts": 2.46,
+     "con_res": -0.09,
+     "sin_res": 0.13,
+     "efecto": -0.22
+    },
+    {
+     "jugador": "T. Alexander-Arnold",
+     "con_n": 16,
+     "sin_n": 67,
+     "con_pts": 2.06,
+     "sin_pts": 2.27,
+     "con_res": -0.2,
+     "sin_res": 0.02,
+     "efecto": -0.22
+    },
+    {
+     "jugador": "Vinícius Júnior",
+     "con_n": 63,
+     "sin_n": 20,
+     "con_pts": 2.14,
+     "sin_pts": 2.5,
+     "con_res": -0.08,
+     "sin_res": 0.17,
+     "efecto": -0.24
+    },
+    {
+     "jugador": "Fran García",
+     "con_n": 34,
+     "sin_n": 49,
+     "con_pts": 2.12,
+     "sin_pts": 2.31,
+     "con_res": -0.17,
+     "sin_res": 0.09,
+     "efecto": -0.25
+    }
+   ]
+  },
+  "Villarreal": {
+   "partidos": 83,
+   "lista": [
+    {
+     "jugador": "I. Akhomach",
+     "con_n": 11,
+     "sin_n": 72,
+     "con_pts": 2.82,
+     "sin_pts": 1.65,
+     "con_res": 0.96,
+     "sin_res": -0.04,
+     "efecto": 1.0
+    },
+    {
+     "jugador": "Santi Comesaña",
+     "con_n": 63,
+     "sin_n": 20,
+     "con_pts": 1.86,
+     "sin_pts": 1.65,
+     "con_res": 0.21,
+     "sin_res": -0.28,
+     "efecto": 0.49
+    },
+    {
+     "jugador": "S. Cardona",
+     "con_n": 57,
+     "sin_n": 26,
+     "con_pts": 1.88,
+     "sin_pts": 1.65,
+     "con_res": 0.22,
+     "sin_res": -0.19,
+     "efecto": 0.41
+    },
+    {
+     "jugador": "Ayoze Pérez",
+     "con_n": 39,
+     "sin_n": 44,
+     "con_pts": 1.97,
+     "sin_pts": 1.66,
+     "con_res": 0.26,
+     "sin_res": -0.06,
+     "efecto": 0.33
+    },
+    {
+     "jugador": "Álex Baena",
+     "con_n": 30,
+     "sin_n": 53,
+     "con_pts": 1.83,
+     "sin_pts": 1.79,
+     "con_res": 0.29,
+     "sin_res": -0.02,
+     "efecto": 0.31
+    },
+    {
+     "jugador": "J. Foyth",
+     "con_n": 32,
+     "sin_n": 51,
+     "con_pts": 1.97,
+     "sin_pts": 1.71,
+     "con_res": 0.27,
+     "sin_res": -0.02,
+     "efecto": 0.29
+    },
+    {
+     "jugador": "Rafa Marín",
+     "con_n": 21,
+     "sin_n": 62,
+     "con_pts": 2.1,
+     "sin_pts": 1.71,
+     "con_res": 0.27,
+     "sin_res": 0.03,
+     "efecto": 0.24
+    },
+    {
+     "jugador": "Logan Costa",
+     "con_n": 29,
+     "sin_n": 54,
+     "con_pts": 1.83,
+     "sin_pts": 1.8,
+     "con_res": 0.23,
+     "sin_res": 0.01,
+     "efecto": 0.22
+    },
+    {
+     "jugador": "Kiko Femenía",
+     "con_n": 27,
+     "sin_n": 56,
+     "con_pts": 1.81,
+     "sin_pts": 1.8,
+     "con_res": 0.21,
+     "sin_res": 0.03,
+     "efecto": 0.18
+    },
+    {
+     "jugador": "Luiz Júnior",
+     "con_n": 48,
+     "sin_n": 35,
+     "con_pts": 1.88,
+     "sin_pts": 1.71,
+     "con_res": 0.15,
+     "sin_res": 0.01,
+     "efecto": 0.13
+    },
+    {
+     "jugador": "Yeremy Pino",
+     "con_n": 27,
+     "sin_n": 56,
+     "con_pts": 1.85,
+     "sin_pts": 1.79,
+     "con_res": 0.18,
+     "sin_res": 0.05,
+     "efecto": 0.13
+    },
+    {
+     "jugador": "Pau Navarro",
+     "con_n": 34,
+     "sin_n": 49,
+     "con_pts": 1.94,
+     "sin_pts": 1.71,
+     "con_res": 0.12,
+     "sin_res": 0.07,
+     "efecto": 0.04
+    },
+    {
+     "jugador": "A. Moleiro",
+     "con_n": 35,
+     "sin_n": 48,
+     "con_pts": 1.86,
+     "sin_pts": 1.77,
+     "con_res": 0.06,
+     "sin_res": 0.11,
+     "efecto": -0.05
+    },
+    {
+     "jugador": "Alfonso Pedraza",
+     "con_n": 23,
+     "sin_n": 60,
+     "con_pts": 1.96,
+     "sin_pts": 1.75,
+     "con_res": 0.04,
+     "sin_res": 0.11,
+     "efecto": -0.07
+    },
+    {
+     "jugador": "S. Mourino",
+     "con_n": 31,
+     "sin_n": 52,
+     "con_pts": 1.77,
+     "sin_pts": 1.83,
+     "con_res": 0.02,
+     "sin_res": 0.13,
+     "efecto": -0.12
+    },
+    {
+     "jugador": "G. Mikautadze",
+     "con_n": 27,
+     "sin_n": 56,
+     "con_pts": 1.81,
+     "sin_pts": 1.8,
+     "con_res": -0.02,
+     "sin_res": 0.14,
+     "efecto": -0.16
+    },
+    {
+     "jugador": "Nicolas Pépé",
+     "con_n": 46,
+     "sin_n": 37,
+     "con_pts": 1.78,
+     "sin_pts": 1.84,
+     "con_res": 0.01,
+     "sin_res": 0.19,
+     "efecto": -0.17
+    },
+    {
+     "jugador": "Dani Parejo",
+     "con_n": 42,
+     "sin_n": 41,
+     "con_pts": 1.62,
+     "sin_pts": 2.0,
+     "con_res": -0.08,
+     "sin_res": 0.27,
+     "efecto": -0.34
+    },
+    {
+     "jugador": "Pape Gueye",
+     "con_n": 58,
+     "sin_n": 25,
+     "con_pts": 1.71,
+     "sin_pts": 2.04,
+     "con_res": -0.03,
+     "sin_res": 0.36,
+     "efecto": -0.39
+    },
+    {
+     "jugador": "Tajon Buchanan",
+     "con_n": 28,
+     "sin_n": 55,
+     "con_pts": 1.5,
+     "sin_pts": 1.96,
+     "con_res": -0.21,
+     "sin_res": 0.24,
+     "efecto": -0.45
+    },
+    {
+     "jugador": "Renato Veiga",
+     "con_n": 34,
+     "sin_n": 49,
+     "con_pts": 1.59,
+     "sin_pts": 1.96,
+     "con_res": -0.18,
+     "sin_res": 0.28,
+     "efecto": -0.46
+    }
+   ]
+  }
+ },
+ "amarillas": {
+  "regla": "LaLiga: 5 amarillas = 1 partido de sanción (y cada 5 más)",
+  "al_limite": [
+   {
+    "jugador": "P. Ciss",
+    "equipo": "Rayo Vallecano",
+    "amarillas": 4,
+    "minuto": 67.0
+   },
+   {
+    "jugador": "I. Romero",
+    "equipo": "Sevilla FC",
+    "amarillas": 4,
+    "minuto": 61.0
+   },
+   {
+    "jugador": "Yassir Zabiri",
+    "equipo": "Racing Santander",
+    "amarillas": 4,
+    "minuto": 46.0
+   }
+  ],
+  "equipos": {
+   "Real Madrid": [
+    {
+     "jugador": "Ibrahima Konaté",
+     "amarillas": 3,
+     "faltan": 2,
+     "minuto": 73.0
+    },
+    {
+     "jugador": "Vinicius Junior",
+     "amarillas": 2,
+     "faltan": 3,
+     "minuto": 80.0
+    },
+    {
+     "jugador": "E. Camavinga",
+     "amarillas": 2,
+     "faltan": 3,
+     "minuto": 58.0
+    },
+    {
+     "jugador": "Denzel Dumfries",
+     "amarillas": 1,
+     "faltan": 4,
+     "minuto": 49.0
+    },
+    {
+     "jugador": "J. Bellingham",
+     "amarillas": 1,
+     "faltan": 4,
+     "minuto": 58.0
+    },
+    {
+     "jugador": "A. Carreras",
+     "amarillas": 1,
+     "faltan": 4,
+     "minuto": 66.0
+    },
+    {
+     "jugador": "Arda Güler",
+     "amarillas": 1,
+     "faltan": 4,
+     "minuto": 48.0
+    },
+    {
+     "jugador": "Yan Diomande",
+     "amarillas": 1,
+     "faltan": 4,
+     "minuto": 4.0
+    }
+   ],
+   "Villarreal": [
+    {
+     "jugador": "J. Foyth",
+     "amarillas": 2,
+     "faltan": 3,
+     "minuto": 69.0
+    },
+    {
+     "jugador": "R. Veiga",
+     "amarillas": 2,
+     "faltan": 3,
+     "minuto": 84.0
+    },
+    {
+     "jugador": "S. Mourino",
+     "amarillas": 2,
+     "faltan": 3,
+     "minuto": 56.0
+    },
+    {
+     "jugador": "T. Buchanan",
+     "amarillas": 2,
+     "faltan": 3,
+     "minuto": 78.0
+    },
+    {
+     "jugador": "S. Comesana",
+     "amarillas": 1,
+     "faltan": 4,
+     "minuto": 78.0
+    },
+    {
+     "jugador": "P. Gueye",
+     "amarillas": 1,
+     "faltan": 4,
+     "minuto": 70.0
+    },
+    {
+     "jugador": "N. Pepe",
+     "amarillas": 1,
+     "faltan": 4,
+     "minuto": 83.0
+    },
+    {
+     "jugador": "C. Romero",
+     "amarillas": 1,
+     "faltan": 4,
+     "minuto": 87.0
+    }
+   ]
+  }
+ },
+ "termometro": {
+  "comprobacion": {
+   "partidos": 820,
+   "brier_mas45": {
+    "liga": 0.2614,
+    "equipos": 0.2496,
+    "equipos_arbitro": 0.2469
+   },
+   "correlacion": {
+    "equipos": 0.157,
+    "equipos_arbitro": 0.196
+   },
+   "sigmas_vs_liga": 3.2
+  },
+  "media_liga": 4.97,
+  "esperadas": 4.4,
+  "p_mas45": 45.0,
+  "con_arbitro_estricto": 5.0,
+  "con_arbitro_suave": 2.8
+ },
+ "segundas_partes": {
+  "comprobacion": [
+   {
+    "de": "2324",
+    "a": "2425",
+    "corr": 0.59,
+    "n": 17
+   },
+   {
+    "de": "2425",
+    "a": "2526",
+    "corr": 0.73,
+    "n": 17
+   }
+  ],
+  "2025_26": [
+   {
+    "equipo": "Barcelona",
+    "pts_tras_descanso": 20.0,
+    "por_partido": 0.53,
+    "remontadas": 2,
+    "caidas": 1
+   },
+   {
+    "equipo": "Real Madrid",
+    "pts_tras_descanso": 16.0,
+    "por_partido": 0.42,
+    "remontadas": 2,
+    "caidas": 1
+   },
+   {
+    "equipo": "Real Betis",
+    "pts_tras_descanso": 13.0,
+    "por_partido": 0.34,
+    "remontadas": 6,
+    "caidas": 4
+   },
+   {
+    "equipo": "Atlético Madrid",
+    "pts_tras_descanso": 12.0,
+    "por_partido": 0.32,
+    "remontadas": 1,
+    "caidas": 3
+   },
+   {
+    "equipo": "Getafe",
+    "pts_tras_descanso": 9.0,
+    "por_partido": 0.24,
+    "remontadas": 2,
+    "caidas": 0
+   },
+   {
+    "equipo": "Valencia",
+    "pts_tras_descanso": 9.0,
+    "por_partido": 0.24,
+    "remontadas": 3,
+    "caidas": 3
+   },
+   {
+    "equipo": "Espanyol",
+    "pts_tras_descanso": 8.0,
+    "por_partido": 0.21,
+    "remontadas": 4,
+    "caidas": 3
+   },
+   {
+    "equipo": "Celta de Vigo",
+    "pts_tras_descanso": 8.0,
+    "por_partido": 0.21,
+    "remontadas": 6,
+    "caidas": 6
+   },
+   {
+    "equipo": "Rayo Vallecano",
+    "pts_tras_descanso": 5.0,
+    "por_partido": 0.13,
+    "remontadas": 4,
+    "caidas": 3
+   },
+   {
+    "equipo": "Villarreal",
+    "pts_tras_descanso": 5.0,
+    "por_partido": 0.13,
+    "remontadas": 3,
+    "caidas": 2
+   },
+   {
+    "equipo": "Athletic Club",
+    "pts_tras_descanso": 4.0,
+    "por_partido": 0.11,
+    "remontadas": 7,
+    "caidas": 1
+   },
+   {
+    "equipo": "Mallorca",
+    "pts_tras_descanso": 3.0,
+    "por_partido": 0.08,
+    "remontadas": 4,
+    "caidas": 3
+   },
+   {
+    "equipo": "Sevilla FC",
+    "pts_tras_descanso": 2.0,
+    "por_partido": 0.05,
+    "remontadas": 3,
+    "caidas": 4
+   },
+   {
+    "equipo": "Elche",
+    "pts_tras_descanso": -1.0,
+    "por_partido": -0.03,
+    "remontadas": 3,
+    "caidas": 3
+   },
+   {
+    "equipo": "Levante",
+    "pts_tras_descanso": -4.0,
+    "por_partido": -0.11,
+    "remontadas": 2,
+    "caidas": 5
+   },
+   {
+    "equipo": "Alavés",
+    "pts_tras_descanso": -6.0,
+    "por_partido": -0.16,
+    "remontadas": 3,
+    "caidas": 4
+   },
+   {
+    "equipo": "Real Sociedad",
+    "pts_tras_descanso": -6.0,
+    "por_partido": -0.16,
+    "remontadas": 4,
+    "caidas": 5
+   },
+   {
+    "equipo": "Oviedo",
+    "pts_tras_descanso": -7.0,
+    "por_partido": -0.18,
+    "remontadas": 2,
+    "caidas": 3
+   },
+   {
+    "equipo": "Girona",
+    "pts_tras_descanso": -11.0,
+    "por_partido": -0.29,
+    "remontadas": 4,
+    "caidas": 6
+   },
+   {
+    "equipo": "Osasuna",
+    "pts_tras_descanso": -13.0,
+    "por_partido": -0.34,
+    "remontadas": 1,
+    "caidas": 6
+   }
+  ],
+  "2026_27": {
+   "Real Madrid": {
+    "pts_tras_descanso": 2.0
+   },
+   "Villarreal": {
+    "pts_tras_descanso": 1.0
+   }
+  },
+  "comprobacion_sin_nivel": [
+   {
+    "de": "2324",
+    "a": "2425",
+    "corr_sin_nivel": 0.11,
+    "corr_con_nivel": 0.87
+   },
+   {
+    "de": "2425",
+    "a": "2526",
+    "corr_sin_nivel": 0.49,
+    "corr_con_nivel": 0.87
+   }
+  ]
+ },
+ "rotacion": {
+  "Real Madrid": {
+   "media_cambios": 3.5,
+   "corto": 3.6,
+   "n_corto": 12,
+   "largo": 3.5,
+   "ultimo": 2,
+   "dias_hasta_previa": 19
+  },
+  "Villarreal": {
+   "media_cambios": 3.7,
+   "corto": 5.6,
+   "n_corto": 10,
+   "largo": 3.4,
+   "ultimo": 1,
+   "dias_hasta_previa": 19
+  },
+  "nota": "Solo partidos de liga: Champions y Copa no están en los datos."
+ },
+ "porteros": {
+  "comprobacion": {
+   "corr_mitades_2025_26": 0.31,
+   "n": 34
+  },
+  "ranking": [
+   {
+    "jugador": "Joan García",
+    "equipo": "Barcelona",
+    "evitados": 11.3,
+    "por90": 0.32
+   },
+   {
+    "jugador": "David Soria",
+    "equipo": "Getafe",
+    "evitados": 8.6,
+    "por90": 0.19
+   },
+   {
+    "jugador": "A. Valles",
+    "equipo": "Real Betis",
+    "evitados": 6.4,
+    "por90": 0.18
+   },
+   {
+    "jugador": "A. Escandell",
+    "equipo": "Oviedo",
+    "evitados": 5.7,
+    "por90": 0.16
+   },
+   {
+    "jugador": "Leo Román",
+    "equipo": "Mallorca",
+    "evitados": 4.6,
+    "por90": 0.14
+   },
+   {
+    "jugador": "Paulo Gazzaniga",
+    "equipo": "Girona",
+    "evitados": 2.1,
+    "por90": 0.06
+   },
+   {
+    "jugador": "Augusto Batalla",
+    "equipo": "Rayo Vallecano",
+    "evitados": 1.6,
+    "por90": 0.05
+   },
+   {
+    "jugador": "I. Radu",
+    "equipo": "Celta de Vigo",
+    "evitados": 0.9,
+    "por90": 0.02
+   },
+   {
+    "jugador": "Antonio Sivera",
+    "equipo": "Alavés",
+    "evitados": 0.5,
+    "por90": 0.01
+   },
+   {
+    "jugador": "Thibaut Courtois",
+    "equipo": "Real Madrid",
+    "evitados": 0.2,
+    "por90": 0.01
+   },
+   {
+    "jugador": "Sergio Herrera",
+    "equipo": "Osasuna",
+    "evitados": -0.0,
+    "por90": -0.0
+   },
+   {
+    "jugador": "Odysseas Vlachodimos",
+    "equipo": "Sevilla FC",
+    "evitados": -0.5,
+    "por90": -0.01
+   },
+   {
+    "jugador": "M. Ryan",
+    "equipo": "Levante",
+    "evitados": -0.9,
+    "por90": -0.02
+   },
+   {
+    "jugador": "J. Oblak",
+    "equipo": "Atlético Madrid",
+    "evitados": -1.7,
+    "por90": -0.05
+   },
+   {
+    "jugador": "Unai Simón",
+    "equipo": "Athletic Club",
+    "evitados": -2.2,
+    "por90": -0.05
+   },
+   {
+    "jugador": "Luiz Júnior",
+    "equipo": "Villarreal",
+    "evitados": -2.3,
+    "por90": -0.07
+   },
+   {
+    "jugador": "Julen Agirrezabala",
+    "equipo": "Valencia",
+    "evitados": -3.8,
+    "por90": -0.21
+   },
+   {
+    "jugador": "S. Dimitrievski",
+    "equipo": "Valencia",
+    "evitados": -4.2,
+    "por90": -0.15
+   },
+   {
+    "jugador": "Matías Dituro",
+    "equipo": "Elche",
+    "evitados": -6.3,
+    "por90": -0.22
+   },
+   {
+    "jugador": "Álex Remiro",
+    "equipo": "Real Sociedad",
+    "evitados": -8.0,
+    "por90": -0.19
+   }
+  ]
+ },
+ "rachas": {
+  "comprobacion": {
+   "racha_se_mantiene": 0.34,
+   "xg_predice_goles": 0.81,
+   "goles_predicen_goles": 0.8
+  },
+  "equipos_2026_27": [
+   {
+    "equipo": "Atlético Madrid",
+    "goles": 16,
+    "xg": 12.1,
+    "dif": 3.9,
+    "encajados": 7,
+    "xg_contra": 7.1
+   },
+   {
+    "equipo": "Sevilla FC",
+    "goles": 10,
+    "xg": 7.0,
+    "dif": 3.0,
+    "encajados": 9,
+    "xg_contra": 8.9
+   },
+   {
+    "equipo": "Deportivo La Coruña",
+    "goles": 10,
+    "xg": 7.0,
+    "dif": 3.0,
+    "encajados": 8,
+    "xg_contra": 8.3
+   },
+   {
+    "equipo": "Barcelona",
+    "goles": 31,
+    "xg": 28.3,
+    "dif": 2.7,
+    "encajados": 7,
+    "xg_contra": 7.7
+   },
+   {
+    "equipo": "Elche",
+    "goles": 11,
+    "xg": 8.6,
+    "dif": 2.4,
+    "encajados": 17,
+    "xg_contra": 14.1
+   },
+   {
+    "equipo": "Alavés",
+    "goles": 11,
+    "xg": 8.9,
+    "dif": 2.1,
+    "encajados": 6,
+    "xg_contra": 8.5
+   },
+   {
+    "equipo": "Rayo Vallecano",
+    "goles": 11,
+    "xg": 9.1,
+    "dif": 1.9,
+    "encajados": 16,
+    "xg_contra": 12.5
+   },
+   {
+    "equipo": "Espanyol",
+    "goles": 10,
+    "xg": 8.7,
+    "dif": 1.3,
+    "encajados": 10,
+    "xg_contra": 9.7
+   },
+   {
+    "equipo": "Celta de Vigo",
+    "goles": 8,
+    "xg": 7.0,
+    "dif": 1.0,
+    "encajados": 6,
+    "xg_contra": 9.0
+   },
+   {
+    "equipo": "Racing Santander",
+    "goles": 11,
+    "xg": 10.1,
+    "dif": 0.9,
+    "encajados": 21,
+    "xg_contra": 15.4
+   },
+   {
+    "equipo": "Real Sociedad",
+    "goles": 9,
+    "xg": 8.4,
+    "dif": 0.6,
+    "encajados": 13,
+    "xg_contra": 11.6
+   },
+   {
+    "equipo": "Levante",
+    "goles": 8,
+    "xg": 8.2,
+    "dif": -0.2,
+    "encajados": 12,
+    "xg_contra": 12.4
+   },
+   {
+    "equipo": "Real Madrid",
+    "goles": 18,
+    "xg": 18.5,
+    "dif": -0.5,
+    "encajados": 8,
+    "xg_contra": 7.7
+   },
+   {
+    "equipo": "Getafe",
+    "goles": 4,
+    "xg": 4.8,
+    "dif": -0.8,
+    "encajados": 7,
+    "xg_contra": 9.2
+   },
+   {
+    "equipo": "Valencia",
+    "goles": 4,
+    "xg": 6.3,
+    "dif": -2.3,
+    "encajados": 13,
+    "xg_contra": 11.4
+   },
+   {
+    "equipo": "Real Betis",
+    "goles": 9,
+    "xg": 11.5,
+    "dif": -2.5,
+    "encajados": 7,
+    "xg_contra": 13.2
+   },
+   {
+    "equipo": "Osasuna",
+    "goles": 6,
+    "xg": 8.7,
+    "dif": -2.7,
+    "encajados": 13,
+    "xg_contra": 9.7
+   },
+   {
+    "equipo": "Athletic Club",
+    "goles": 7,
+    "xg": 9.8,
+    "dif": -2.8,
+    "encajados": 6,
+    "xg_contra": 8.2
+   },
+   {
+    "equipo": "Malaga",
+    "goles": 3,
+    "xg": 5.9,
+    "dif": -2.9,
+    "encajados": 12,
+    "xg_contra": 11.6
+   },
+   {
+    "equipo": "Villarreal",
+    "goles": 13,
+    "xg": 16.3,
+    "dif": -3.3,
+    "encajados": 12,
+    "xg_contra": 9.0
+   }
+  ],
+  "jugadores_arriba": [
+   {
+    "jugador": "Sergio Camello",
+    "equipo": "Rayo Vallecano",
+    "goles": 12,
+    "xg": 5.4
+   },
+   {
+    "jugador": "Raphinha",
+    "equipo": "Barcelona",
+    "goles": 25,
+    "xg": 19.3
+   },
+   {
+    "jugador": "Pablo Fornals",
+    "equipo": "Real Betis",
+    "goles": 9,
+    "xg": 4.1
+   },
+   {
+    "jugador": "A. Moleiro",
+    "equipo": "Villarreal",
+    "goles": 12,
+    "xg": 7.2
+   },
+   {
+    "jugador": "V. Muriqi",
+    "equipo": "Mallorca",
+    "goles": 23,
+    "xg": 18.4
+   },
+   {
+    "jugador": "Lamine Yamal",
+    "equipo": "Barcelona",
+    "goles": 23,
+    "xg": 19.0
+   }
+  ],
+  "jugadores_abajo": [
+   {
+    "jugador": "Iñaki Williams",
+    "equipo": "Athletic Club",
+    "goles": 4,
+    "xg": 9.4
+   },
+   {
+    "jugador": "O. Sancet",
+    "equipo": "Athletic Club",
+    "goles": 5,
+    "xg": 9.1
+   },
+   {
+    "jugador": "Tani Oluwaseyi",
+    "equipo": "Villarreal",
+    "goles": 2,
+    "xg": 6.1
+   },
+   {
+    "jugador": "Iker Muñoz",
+    "equipo": "Osasuna",
+    "goles": 0,
+    "xg": 3.2
+   },
+   {
+    "jugador": "Bryan Gil",
+    "equipo": "Girona",
+    "goles": 0,
+    "xg": 3.2
+   },
+   {
+    "jugador": "Fran García",
+    "equipo": "Real Madrid",
+    "goles": 1,
+    "xg": 4.2
+   }
+  ]
+ },
+ "moneyball": {
+  "n": 241,
+  "gangas": [
+   {
+    "jugador": "Dani Calvo",
+    "equipo": "Oviedo",
+    "pos": "Defender",
+    "nota": 7.04,
+    "valor_m": 1.0,
+    "xgi90": 0.15,
+    "pct_nota": 92.0
+   },
+   {
+    "jugador": "M. Bartra",
+    "equipo": "Real Betis",
+    "pos": "Defender",
+    "nota": 7.04,
+    "valor_m": 1.0,
+    "xgi90": 0.07,
+    "pct_nota": 91.0
+   },
+   {
+    "jugador": "A. Raillo",
+    "equipo": "Mallorca",
+    "pos": "Defender",
+    "nota": 6.97,
+    "valor_m": 1.0,
+    "xgi90": 0.06,
+    "pct_nota": 86.0
+   },
+   {
+    "jugador": "Marcos Alonso",
+    "equipo": "Celta de Vigo",
+    "pos": "Defender",
+    "nota": 7.04,
+    "valor_m": 1.0,
+    "xgi90": 0.14,
+    "pct_nota": 93.0
+   },
+   {
+    "jugador": "A. Budimir",
+    "equipo": "Osasuna",
+    "pos": "Forward",
+    "nota": 6.93,
+    "valor_m": 3.0,
+    "xgi90": 0.6,
+    "pct_nota": 81.0
+   },
+   {
+    "jugador": "Yuri Berchiche",
+    "equipo": "Athletic Club",
+    "pos": "Defender",
+    "nota": 6.96,
+    "valor_m": 1.0,
+    "xgi90": 0.17,
+    "pct_nota": 81.0
+   },
+   {
+    "jugador": "M. Ryan",
+    "equipo": "Levante",
+    "pos": "Goalkeeper",
+    "nota": 7.25,
+    "valor_m": 2.0,
+    "xgi90": 0.0,
+    "pct_nota": 83.0
+   },
+   {
+    "jugador": "V. Muriqi",
+    "equipo": "Mallorca",
+    "pos": "Forward",
+    "nota": 7.11,
+    "valor_m": 4.0,
+    "xgi90": 0.57,
+    "pct_nota": 93.0
+   }
+  ],
+  "caros": [
+   {
+    "jugador": "Unai Simón",
+    "equipo": "Athletic Club",
+    "nota": 6.91,
+    "valor_m": 22.0,
+    "pct_nota": 11.0
+   },
+   {
+    "jugador": "Luiz Júnior",
+    "equipo": "Villarreal",
+    "nota": 6.9,
+    "valor_m": 12.0,
+    "pct_nota": 6.0
+   },
+   {
+    "jugador": "Alejandro Balde",
+    "equipo": "Barcelona",
+    "nota": 6.7,
+    "valor_m": 50.0,
+    "pct_nota": 27.0
+   },
+   {
+    "jugador": "O. Sancet",
+    "equipo": "Athletic Club",
+    "nota": 6.64,
+    "valor_m": 25.0,
+    "pct_nota": 9.0
+   },
+   {
+    "jugador": "Jon Aramburu",
+    "equipo": "Real Sociedad",
+    "nota": 6.63,
+    "valor_m": 15.0,
+    "pct_nota": 8.0
+   }
+  ]
+ },
+ "estilos": {
+  "Real Madrid": {
+   "Posesión": 1.4,
+   "Pases": 1.8,
+   "Centros": -0.4,
+   "Duelos aéreos": -1.6,
+   "Entradas": -0.8,
+   "Intercepciones": -2.0,
+   "Tiros lejanos": 1.9
+  },
+  "Villarreal": {
+   "Posesión": -0.4,
+   "Pases": -0.0,
+   "Centros": -1.1,
+   "Duelos aéreos": -1.0,
+   "Entradas": -0.1,
+   "Intercepciones": 0.7,
+   "Tiros lejanos": -0.7
+  },
+  "rma_vs_posesion": {
+   "false": {
+    "n": 34,
+    "res": 0.06
+   },
+   "true": {
+    "n": 11,
+    "res": -0.22
+   }
+  }
+ },
+ "cuotas": {
+  "pronosticos": {
+   "real_madrid_villarreal": {
+    "goles_esperados": [
+     2.3,
+     1.31
+    ],
+    "mas15": 87.5,
+    "mas25": 69.8,
+    "mas35": 48.6,
+    "ambos": 65.6
+   },
+   "calibracion_goles": {
+    "partidos": 829,
+    "mas15": [
+     {
+      "dice": 45.4,
+      "pasa": 50.0,
+      "n": 2
+     },
+     {
+      "dice": 56.7,
+      "pasa": 59.6,
+      "n": 57
+     },
+     {
+      "dice": 65.6,
+      "pasa": 68.0,
+      "n": 206
+     },
+     {
+      "dice": 75.2,
+      "pasa": 76.4,
+      "n": 377
+     },
+     {
+      "dice": 84.0,
+      "pasa": 86.6,
+      "n": 187
+     }
+    ],
+    "mas25": [
+     {
+      "dice": 34.1,
+      "pasa": 39.7,
+      "n": 174
+     },
+     {
+      "dice": 45.4,
+      "pasa": 46.1,
+      "n": 256
+     },
+     {
+      "dice": 54.6,
+      "pasa": 51.4,
+      "n": 259
+     },
+     {
+      "dice": 64.2,
+      "pasa": 64.0,
+      "n": 114
+     },
+     {
+      "dice": 73.2,
+      "pasa": 80.0,
+      "n": 25
+     },
+     {
+      "dice": 82.5,
+      "pasa": 100.0,
+      "n": 1
+     }
+    ],
+    "mas35": [
+     {
+      "dice": 25.8,
+      "pasa": 23.9,
+      "n": 727
+     },
+     {
+      "dice": 44.2,
+      "pasa": 38.3,
+      "n": 81
+     },
+     {
+      "dice": 53.7,
+      "pasa": 45.0,
+      "n": 20
+     },
+     {
+      "dice": 65.5,
+      "pasa": 100.0,
+      "n": 1
+     }
+    ],
+    "ambos": [
+     {
+      "dice": 36.6,
+      "pasa": 40.2,
+      "n": 82
+     },
+     {
+      "dice": 45.5,
+      "pasa": 53.6,
+      "n": 289
+     },
+     {
+      "dice": 54.5,
+      "pasa": 56.8,
+      "n": 366
+     },
+     {
+      "dice": 63.4,
+      "pasa": 70.8,
+      "n": 89
+     },
+     {
+      "dice": 72.4,
+      "pasa": 66.7,
+      "n": 3
+     }
+    ]
+   },
+   "acierto_casa": {
+    "1x2": {
+     "acierta": 54.9,
+     "n": 1589,
+     "fuente": "cierre, LaLiga"
+    },
+    "doble": {
+     "acierta": 80.1,
+     "n": 1589,
+     "fuente": "cierre, LaLiga"
+    },
+    "mas25": {
+     "acierta": 61.0,
+     "n": 1589,
+     "fuente": "cierre, LaLiga"
+    },
+    "ambos": {
+     "acierta": 58.8,
+     "n": 262,
+     "fuente": "casas cosechadas, 7 ligas"
+    },
+    "mas15": {
+     "acierta": 77.9,
+     "n": 262,
+     "fuente": "casas cosechadas, 7 ligas"
+    },
+    "mas35": {
+     "acierta": 62.2,
+     "n": 262,
+     "fuente": "casas cosechadas, 7 ligas"
+    }
+   }
+  },
+  "apertura_cierre_post": {
+   "apertura": [
+    3.43,
+    3.8,
+    1.95
+   ],
+   "cierre": [
+    3.44,
+    3.8,
+    1.97
+   ]
+  }
+ },
+ "equipo": {
+  "elo": 1765.0,
+  "elo_hist": [
+   1772.0,
+   1777.0,
+   1781.0,
+   1768.0,
+   1773.0,
+   1777.0,
+   1765.0
+  ],
+  "forma": [
+   {
+    "riv": "Espanyol",
+    "gf": 2,
+    "gc": 1,
+    "casa": false,
+    "elo_cambio": 4.0
+   },
+   {
+    "riv": "Real Sociedad",
+    "gf": 4,
+    "gc": 1,
+    "casa": true,
+    "elo_cambio": 4.0
+   },
+   {
+    "riv": "Malaga",
+    "gf": 4,
+    "gc": 0,
+    "casa": true,
+    "elo_cambio": 5.0
+   },
+   {
+    "riv": "Real Betis",
+    "gf": 0,
+    "gc": 1,
+    "casa": false,
+    "elo_cambio": -14.0
+   },
+   {
+    "riv": "Rayo Vallecano",
+    "gf": 4,
+    "gc": 1,
+    "casa": true,
+    "elo_cambio": 5.0
+   },
+   {
+    "riv": "Elche",
+    "gf": 3,
+    "gc": 2,
+    "casa": false,
+    "elo_cambio": 3.0
+   },
+   {
+    "riv": "Atlético Madrid",
+    "gf": 1,
+    "gc": 2,
+    "casa": false,
+    "elo_cambio": -12.0
+   }
+  ]
+ },
+ "jugador_top_rma": "Kylian Mbappé",
+ "alineaciones_informe": {
+  "local": {
+   "formacion": "4-4-2",
+   "lineas": [
+    [
+     {
+      "jugador": "J. Oblak",
+      "nota": 6.31
+     }
+    ],
+    [
+     {
+      "jugador": "D. Hancko",
+      "nota": 7.5
+     },
+     {
+      "jugador": "Cristian Romero",
+      "nota": 7.49
+     },
+     {
+      "jugador": "Marc Pubill",
+      "nota": 6.86
+     },
+     {
+      "jugador": "Marcos Llorente",
+      "nota": 6.55
+     }
+    ],
+    [
+     {
+      "jugador": "Álex Grimaldo",
+      "nota": 6.6
+     },
+     {
+      "jugador": "Johnny Cardoso",
+      "nota": 6.55
+     },
+     {
+      "jugador": "Álex Baena",
+      "nota": 6.9
+     },
+     {
+      "jugador": "Giuliano Simeone",
+      "nota": 7.25
+     }
+    ],
+    [
+     {
+      "jugador": "Jonathan David",
+      "nota": 7.17
+     },
+     {
+      "jugador": "Kang-in Lee",
+      "nota": 6.88
+     }
+    ]
+   ]
+  },
+  "visitante": {
+   "formacion": "4-2-3-1",
+   "lineas": [
+    [
+     {
+      "jugador": "Thibaut Courtois",
+      "nota": 8.7
+     }
+    ],
+    [
+     {
+      "jugador": "Marc Cucurella",
+      "nota": 6.35
+     },
+     {
+      "jugador": "D. Huijsen",
+      "nota": 6.26
+     },
+     {
+      "jugador": "Ibrahima Konaté",
+      "nota": 7.27
+     },
+     {
+      "jugador": "D. Dumfries",
+      "nota": 6.26
+     }
+    ],
+    [
+     {
+      "jugador": "Aurélien Tchouaméni",
+      "nota": 6.87
+     },
+     {
+      "jugador": "Federico Valverde",
+      "nota": 6.93
+     }
+    ],
+    [
+     {
+      "jugador": "Vinícius Júnior",
+      "nota": 6.75
+     },
+     {
+      "jugador": "J. Bellingham",
+      "nota": 7.2
+     },
+     {
+      "jugador": "A. Güler",
+      "nota": 6.91
+     }
+    ],
+    [
+     {
+      "jugador": "Kylian Mbappé",
+      "nota": 6.94
+     }
+    ]
+   ]
+  }
+ },
+ "jugador": {
+  "nombre": "Kylian Mbappé",
+  "equipo": "Real Madrid",
+  "perfil": {
+   "edad": 27,
+   "altura": 180.0,
+   "pie": "right",
+   "posicion": "Centre-Forward"
+  },
+  "valor_m": 200.0,
+  "valor_hist": [
+   {
+    "fecha": "2023-12-18",
+    "m": 180.0
+   },
+   {
+    "fecha": "2024-06-03",
+    "m": 180.0
+   },
+   {
+    "fecha": "2024-12-27",
+    "m": 160.0
+   },
+   {
+    "fecha": "2025-03-21",
+    "m": 170.0
+   },
+   {
+    "fecha": "2025-06-09",
+    "m": 180.0
+   },
+   {
+    "fecha": "2025-12-12",
+    "m": 200.0
+   },
+   {
+    "fecha": "2026-06-05",
+    "m": 180.0
+   },
+   {
+    "fecha": "2026-07-22",
+    "m": 200.0
+   }
+  ],
+  "t2026": {
+   "pj": 7,
+   "min": 630,
+   "goles": 7,
+   "asist": 2,
+   "xg": 7.9,
+   "xa": 2.0,
+   "nota": 8.04,
+   "tiros": 31,
+   "pases_clave": 11
+  },
+  "t2025": {
+   "pj": 32,
+   "min": 2604,
+   "goles": 25,
+   "asist": 5,
+   "xg": 23.4,
+   "xa": 5.7,
+   "nota": 7.53,
+   "tiros": 110,
+   "pases_clave": 65
+  },
+  "notas_ult": [
+   6.6,
+   5.86,
+   8.23,
+   6.49,
+   10.03,
+   9.17,
+   6.04,
+   9.29,
+   8.35,
+   6.94
+  ],
+  "rivales_ult": [],
+  "con_sin": {
+   "jugador": "Kylian Mbappé",
+   "con_n": 70,
+   "sin_n": 13,
+   "con_pts": 2.23,
+   "sin_pts": 2.23,
+   "con_res": -0.04,
+   "sin_res": 0.09,
+   "efecto": -0.13
+  },
+  "amarillas_2026": 0,
+  "percentiles_delanteros": {
+   "Goles": 97.0,
+   "xG": 98.0,
+   "xA": 88.0,
+   "Tiros": 98.0,
+   "Regates": 98.0,
+   "Pases clave": 93.0,
+   "Nota": 97.0
+  },
+  "n_delanteros": 58
+ },
+ "resultados": [
+  {
+   "local": "Valencia",
+   "visitante": "Real Sociedad",
+   "gl": 2,
+   "gv": 3,
+   "xg": [
+    1.55,
+    2.65
+   ],
+   "merecido": [
+    21.0,
+    18.0,
+    61.0
+   ],
+   "prev": [
+    47.0,
+    29.0,
+    24.0
+   ],
+   "elo_cambio": -12.0,
+   "fecha": "2026-09-20"
+  },
+  {
+   "local": "Villarreal",
+   "visitante": "Levante",
+   "gl": 3,
+   "gv": 1,
+   "xg": [
+    4.02,
+    0.46
+   ],
+   "merecido": [
+    94.0,
+    4.0,
+    1.0
+   ],
+   "prev": [
+    63.0,
+    23.0,
+    14.0
+   ],
+   "elo_cambio": 8.0,
+   "fecha": "2026-09-20"
+  },
+  {
+   "local": "Deportivo La Coruña",
+   "visitante": "Real Betis",
+   "gl": 1,
+   "gv": 1,
+   "xg": [
+    2.29,
+    1.05
+   ],
+   "merecido": [
+    65.0,
+    19.0,
+    16.0
+   ],
+   "prev": [
+    30.0,
+    31.0,
+    39.0
+   ],
+   "elo_cambio": 1.0,
+   "fecha": "2026-09-20"
+  },
+  {
+   "local": "Atlético Madrid",
+   "visitante": "Real Madrid",
+   "gl": 2,
+   "gv": 1,
+   "xg": [
+    2.38,
+    0.32
+   ],
+   "merecido": [
+    84.0,
+    13.0,
+    4.0
+   ],
+   "prev": [
+    29.0,
+    30.0,
+    41.0
+   ],
+   "elo_cambio": 12.0,
+   "fecha": "2026-09-20"
+  },
+  {
+   "local": "Getafe",
+   "visitante": "Malaga",
+   "gl": 1,
+   "gv": 0,
+   "xg": [
+    0.9,
+    0.52
+   ],
+   "merecido": [
+    43.0,
+    37.0,
+    20.0
+   ],
+   "prev": [
+    46.0,
+    29.0,
+    24.0
+   ],
+   "elo_cambio": 8.0,
+   "fecha": "2026-09-20"
+  },
+  {
+   "local": "Sevilla FC",
+   "visitante": "Barcelona",
+   "gl": 1,
+   "gv": 3,
+   "xg": [
+    0.45,
+    3.26
+   ],
+   "merecido": [
+    3.0,
+    8.0,
+    90.0
+   ],
+   "prev": [
+    9.0,
+    17.0,
+    74.0
+   ],
+   "elo_cambio": -5.0,
+   "fecha": "2026-09-19"
+  },
+  {
+   "local": "Celta de Vigo",
+   "visitante": "Racing Santander",
+   "gl": 5,
+   "gv": 0,
+   "xg": [
+    2.14,
+    0.75
+   ],
+   "merecido": [
+    70.0,
+    19.0,
+    12.0
+   ],
+   "prev": [
+    47.0,
+    29.0,
+    24.0
+   ],
+   "elo_cambio": 16.0,
+   "fecha": "2026-09-19"
+  },
+  {
+   "local": "Athletic Club",
+   "visitante": "Alavés",
+   "gl": 0,
+   "gv": 0,
+   "xg": [
+    1.62,
+    0.05
+   ],
+   "merecido": [
+    79.0,
+    20.0,
+    1.0
+   ],
+   "prev": [
+    50.0,
+    28.0,
+    22.0
+   ],
+   "elo_cambio": -3.0,
+   "fecha": "2026-09-19"
+  },
+  {
+   "local": "Osasuna",
+   "visitante": "Rayo Vallecano",
+   "gl": 1,
+   "gv": 1,
+   "xg": [
+    0.53,
+    1.01
+   ],
+   "merecido": [
+    19.0,
+    34.0,
+    46.0
+   ],
+   "prev": [
+    35.0,
+    31.0,
+    34.0
+   ],
+   "elo_cambio": 0.0,
+   "fecha": "2026-09-19"
+  },
+  {
+   "local": "Espanyol",
+   "visitante": "Elche",
+   "gl": 1,
+   "gv": 3,
+   "xg": [
+    1.05,
+    1.61
+   ],
+   "merecido": [
+    24.0,
+    25.0,
+    50.0
+   ],
+   "prev": [
+    52.0,
+    28.0,
+    20.0
+   ],
+   "elo_cambio": -19.0,
+   "fecha": "2026-09-18"
+  }
+ ]
+}

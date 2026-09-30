@@ -16,155 +16,197 @@ a{color:inherit;text-decoration:none}
 button{font-family:inherit;cursor:pointer}
 </style>
 </helmet>
-
-<div style="position: relative; width: 390px; height: 1700px; box-sizing: border-box; background: #0A0C11; overflow: hidden; display: flex; flex-direction: column; gap: 14px">
-
+<div style="position: relative; width: 390px; height: 2330px; box-sizing: border-box; background: #0A0C11; overflow: hidden; display: flex; flex-direction: column; gap: 14px; padding-bottom: 100px">
 <header style="display: flex; align-items: center; gap: 10px; padding: 18px 12px 0 16px">
 <a href="Main.dc.html" aria-label="2yellow home" style="flex-grow: 1; display: flex; align-items: center; gap: 6px"><svg width="38" height="38" viewBox="0 0 48 48" aria-hidden="true"><defs><clipPath id="cAhdr"><rect x="7" y="7" width="20" height="30" rx="3.2" transform="rotate(-14 17 22)"></rect></clipPath></defs><rect x="7" y="7" width="20" height="30" rx="3.2" transform="rotate(-14 17 22)" fill="#FFD21F"></rect><rect x="21" y="11" width="20" height="30" rx="3.2" transform="rotate(10 31 26)" fill="#FFD21F" stroke="#0A0C11" stroke-width="2"></rect><rect x="21" y="11" width="20" height="30" rx="3.2" transform="rotate(10 31 26)" fill="#FF3B3B" stroke="#0A0C11" stroke-width="2" clip-path="url(#cAhdr)"></rect></svg><span style="font-family: 'Archivo', sans-serif; font-stretch: 78%; font-weight: 900; font-size: 27px; line-height: 1; letter-spacing: -0.5px; color: #F1F3F8"><span style="color: #FFD21F">2</span>yellow</span></a>
 <button aria-label="Search" style="width: 44px; height: 44px; border: none; border-radius: 22px; background: #161A23; color: #F1F3F8; display: flex; align-items: center; justify-content: center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-3.5-3.5"></path></svg></button>
-<button aria-label="Profile" style="width: 44px; height: 44px; border: 2px solid #4A63FF; border-radius: 22px; background: #1A1E28; color: #F1F3F8; font-weight: 800; font-size: 15px">A</button>
 </header>
-
-<div style="display: flex; align-items: center; justify-content: space-between; padding: 6px 16px 0 16px">
-<span style="display: flex; align-items: center; gap: 8px; font-size: 18px; font-weight: 700"><span style="width: 9px; height: 9px; border-radius: 50%; background: #C8FF3D"></span>Live now</span>
-<a href="#" style="font-size: 13px; font-weight: 600; color: #8FA2FF">See all 6</a>
-</div>
-
-<div style="display: flex; gap: 12px; padding: 0 16px; overflow: hidden">
-<sc-for list="{{vivos}}" as="c" hint-placeholder-count="2">
-<a href="{{c.enlace}}" style="position: relative; flex-shrink: 0; width: 304px; height: 188px; box-sizing: border-box; border-radius: 26px; background: #12151C; border: 1px solid #262C3B; overflow: hidden; display: block">
-<span style="position: absolute; left: -40px; top: -50px; width: 170px; height: 170px; border-radius: 50%; background: {{c.cl}}; opacity: 0.42; filter: blur(46px)"></span>
-<span style="position: absolute; right: -40px; top: -50px; width: 170px; height: 170px; border-radius: 50%; background: {{c.cv}}; opacity: 0.42; filter: blur(46px)"></span>
+<div style="display: flex; align-items: center; justify-content: space-between; padding: 6px 16px 0 16px"><span style="font-size: 18px; font-weight: 700">Latest results</span><span style="font-size: 12px; color: #8E96AA">LaLiga · matchday 7</span></div>
+<div style="display: flex; gap: 12px; padding: 0 16px; overflow: hidden"><a href="Report.dc.html" style="position: relative; flex-shrink: 0; width: 304px; height: 212px; box-sizing: border-box; border-radius: 26px; background: #12151C; border: 1px solid #262C3B; overflow: hidden; display: block">
+<span style="position: absolute; left: -60px; top: -70px; width: 170px; height: 170px; border-radius: 50%; background: #CB3524; opacity: 0.35; filter: blur(60px)"></span><span style="position: absolute; right: -60px; top: -70px; width: 170px; height: 170px; border-radius: 50%; background: #F1F3F8; opacity: 0.35; filter: blur(60px)"></span>
 <div style="position: relative; display: flex; flex-direction: column; gap: 12px; padding: 14px 16px">
-<div style="display: flex; justify-content: space-between; align-items: center">
-<span style="font-size: 12px; font-weight: 600; color: #C6CBD8">{{c.liga}}</span>
-<span style="display: flex; align-items: center; gap: 6px; padding: 3px 10px; border-radius: 12px; background: #C8FF3D; color: #0A0C11; font-size: 12px; font-weight: 800"><span style="width: 6px; height: 6px; border-radius: 50%; background: #0A0C11"></span>{{c.min}}</span>
-</div>
+<div style="display: flex; justify-content: space-between; align-items: center"><span style="font-size: 12px; font-weight: 600; color: #C6CBD8">LaLiga · FT</span><span style="padding: 3px 9px; border-radius: 9px; background: #1F3A16; color: #C8FF3D; font-size: 11px; font-weight: 700; white-space: nowrap">Deserved</span></div>
 <div style="display: flex; align-items: center; justify-content: space-between">
-<div style="width: 86px; display: flex; flex-direction: column; align-items: center; gap: 6px"><span style="width: 46px; height: 46px; border-radius: 50%; background: {{c.cl}}; color: {{c.tl}}; font-size: 12px; font-weight: 800; display: flex; align-items: center; justify-content: center; box-shadow: 0 0 0 2px rgba(255,255,255,0.18)">{{c.il}}</span><span style="font-size: 12px; font-weight: 600">{{c.local}}</span></div>
-<span style="font-family: 'Archivo', sans-serif; font-stretch: 75%; font-weight: 800; font-size: 46px; line-height: 1; letter-spacing: 1px">{{c.gl}} – {{c.gv}}</span>
-<div style="width: 86px; display: flex; flex-direction: column; align-items: center; gap: 6px"><span style="width: 46px; height: 46px; border-radius: 50%; background: {{c.cv}}; color: {{c.tv}}; font-size: 12px; font-weight: 800; display: flex; align-items: center; justify-content: center; box-shadow: 0 0 0 2px rgba(255,255,255,0.18)">{{c.iv}}</span><span style="font-size: 12px; font-weight: 600">{{c.visitante}}</span></div>
+<div style="width: 86px; display: flex; flex-direction: column; align-items: center; gap: 6px"><span style="width: 44px; height: 44px; flex-shrink: 0; border-radius: 50%; background: #CB3524; color: #FFFFFF; font-size: 13px; font-weight: 800; display: flex; align-items: center; justify-content: center; box-shadow: 0 0 0 1px rgba(255,255,255,0.12)">ATM</span><span style="font-size: 12px; font-weight: 600">Atlético</span></div>
+<span style="font-family: 'Archivo', sans-serif; font-stretch: 78%; font-weight: 800; font-size: 46px; line-height: 1">2 – 1</span>
+<div style="width: 86px; display: flex; flex-direction: column; align-items: center; gap: 6px"><span style="width: 44px; height: 44px; flex-shrink: 0; border-radius: 50%; background: #F1F3F8; color: #0A0C11; font-size: 13px; font-weight: 800; display: flex; align-items: center; justify-content: center; box-shadow: 0 0 0 1px rgba(255,255,255,0.12)">RMA</span><span style="font-size: 12px; font-weight: 600">Real Madrid</span></div>
 </div>
-<div style="display: flex; align-items: center; gap: 8px">
-<span style="font-size: 11px; font-weight: 700; color: #C6CBD8; width: 46px">xG {{c.xh}}</span>
-<div style="flex-grow: 1; display: flex; height: 5px; border-radius: 3px; overflow: hidden; gap: 2px"><span style="width: {{c.a}}%; background: {{c.cl}}"></span><span style="width: {{c.b}}%; background: #3A4256"></span><span style="width: {{c.c}}%; background: {{c.cv}}"></span></div>
-<span style="font-size: 11px; font-weight: 700; color: #C6CBD8; width: 46px; text-align: right">{{c.xa}} xG</span>
+<div style="display: flex; justify-content: space-between; font-size: 12px; color: #C6CBD8"><span>xG <b style="color: #F1F3F8">2.4</b></span><span>Chances say 84.0 · 13.0 · 4.0</span><span><b style="color: #F1F3F8">0.3</b> xG</span></div>
+<div style="display: flex; justify-content: space-between; font-size: 12px; color: #C6CBD8"><span>Elo +12</span><span>Pre-match 29.0 · 30.0 · 41.0</span><span>Elo -12</span></div>
+</div></a><a href="#" style="position: relative; flex-shrink: 0; width: 304px; height: 212px; box-sizing: border-box; border-radius: 26px; background: #12151C; border: 1px solid #262C3B; overflow: hidden; display: block">
+<span style="position: absolute; left: -60px; top: -70px; width: 170px; height: 170px; border-radius: 50%; background: #C8252F; opacity: 0.35; filter: blur(60px)"></span><span style="position: absolute; right: -60px; top: -70px; width: 170px; height: 170px; border-radius: 50%; background: #1F4E9E; opacity: 0.35; filter: blur(60px)"></span>
+<div style="position: relative; display: flex; flex-direction: column; gap: 12px; padding: 14px 16px">
+<div style="display: flex; justify-content: space-between; align-items: center"><span style="font-size: 12px; font-weight: 600; color: #C6CBD8">LaLiga · FT</span><span style="padding: 3px 9px; border-radius: 9px; background: #3A2412; color: #FFB27A; font-size: 11px; font-weight: 700; white-space: nowrap">Should have won</span></div>
+<div style="display: flex; align-items: center; justify-content: space-between">
+<div style="width: 86px; display: flex; flex-direction: column; align-items: center; gap: 6px"><span style="width: 44px; height: 44px; flex-shrink: 0; border-radius: 50%; background: #C8252F; color: #FFFFFF; font-size: 13px; font-weight: 800; display: flex; align-items: center; justify-content: center; box-shadow: 0 0 0 1px rgba(255,255,255,0.12)">ATH</span><span style="font-size: 12px; font-weight: 600">Athletic</span></div>
+<span style="font-family: 'Archivo', sans-serif; font-stretch: 78%; font-weight: 800; font-size: 46px; line-height: 1">0 – 0</span>
+<div style="width: 86px; display: flex; flex-direction: column; align-items: center; gap: 6px"><span style="width: 44px; height: 44px; flex-shrink: 0; border-radius: 50%; background: #1F4E9E; color: #FFFFFF; font-size: 13px; font-weight: 800; display: flex; align-items: center; justify-content: center; box-shadow: 0 0 0 1px rgba(255,255,255,0.12)">ALA</span><span style="font-size: 12px; font-weight: 600">Alavés</span></div>
 </div>
+<div style="display: flex; justify-content: space-between; font-size: 12px; color: #C6CBD8"><span>xG <b style="color: #F1F3F8">1.6</b></span><span>Chances say 79.0 · 20.0 · 1.0</span><span><b style="color: #F1F3F8">0.1</b> xG</span></div>
+<div style="display: flex; justify-content: space-between; font-size: 12px; color: #C6CBD8"><span>Elo -3</span><span>Pre-match 50.0 · 28.0 · 22.0</span><span>Elo +3</span></div>
+</div></a><a href="#" style="position: relative; flex-shrink: 0; width: 304px; height: 212px; box-sizing: border-box; border-radius: 26px; background: #12151C; border: 1px solid #262C3B; overflow: hidden; display: block">
+<span style="position: absolute; left: -60px; top: -70px; width: 170px; height: 170px; border-radius: 50%; background: #2A64B8; opacity: 0.35; filter: blur(60px)"></span><span style="position: absolute; right: -60px; top: -70px; width: 170px; height: 170px; border-radius: 50%; background: #2E8B57; opacity: 0.35; filter: blur(60px)"></span>
+<div style="position: relative; display: flex; flex-direction: column; gap: 12px; padding: 14px 16px">
+<div style="display: flex; justify-content: space-between; align-items: center"><span style="font-size: 12px; font-weight: 600; color: #C6CBD8">LaLiga · FT</span><span style="padding: 3px 9px; border-radius: 9px; background: #1F3A16; color: #C8FF3D; font-size: 11px; font-weight: 700; white-space: nowrap">Deserved</span></div>
+<div style="display: flex; align-items: center; justify-content: space-between">
+<div style="width: 86px; display: flex; flex-direction: column; align-items: center; gap: 6px"><span style="width: 44px; height: 44px; flex-shrink: 0; border-radius: 50%; background: #2A64B8; color: #FFFFFF; font-size: 13px; font-weight: 800; display: flex; align-items: center; justify-content: center; box-shadow: 0 0 0 1px rgba(255,255,255,0.12)">ESP</span><span style="font-size: 12px; font-weight: 600">Espanyol</span></div>
+<span style="font-family: 'Archivo', sans-serif; font-stretch: 78%; font-weight: 800; font-size: 46px; line-height: 1">1 – 3</span>
+<div style="width: 86px; display: flex; flex-direction: column; align-items: center; gap: 6px"><span style="width: 44px; height: 44px; flex-shrink: 0; border-radius: 50%; background: #2E8B57; color: #FFFFFF; font-size: 13px; font-weight: 800; display: flex; align-items: center; justify-content: center; box-shadow: 0 0 0 1px rgba(255,255,255,0.12)">ELC</span><span style="font-size: 12px; font-weight: 600">Elche</span></div>
 </div>
-</a>
-</sc-for>
-</div>
-
-<nav aria-label="Days" style="display: flex; gap: 6px; padding: 4px 16px 0 16px">
-<sc-for list="{{dias}}" as="d" hint-placeholder-count="7">
-<button aria-current="{{d.actual}}" style="flex: 1 1 0; min-width: 0; height: 60px; border-radius: 18px; border: 1px solid {{d.borde}}; background: {{d.fondo}}; color: {{d.texto}}; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1px">
-<span style="font-size: 10px; font-weight: 700; letter-spacing: 0.6px; opacity: 0.8">{{d.dow}}</span>
-<span style="font-family: 'Archivo', sans-serif; font-stretch: 80%; font-weight: 800; font-size: 21px; line-height: 1">{{d.num}}</span>
-</button>
-</sc-for>
-</nav>
-
-<div style="display: flex; gap: 8px; padding: 0 16px">
-<sc-for list="{{filtros}}" as="f" hint-placeholder-count="4">
-<button style="height: 38px; padding: 0 16px; border-radius: 19px; border: 1px solid {{f.borde}}; background: {{f.fondo}}; color: {{f.texto}}; font-size: 13px; font-weight: 700; white-space: nowrap">{{f.nombre}}</button>
-</sc-for>
-</div>
-
-<sc-for list="{{ligas}}" as="l" hint-placeholder-count="2">
+<div style="display: flex; justify-content: space-between; font-size: 12px; color: #C6CBD8"><span>xG <b style="color: #F1F3F8">1.1</b></span><span>Chances say 24.0 · 25.0 · 50.0</span><span><b style="color: #F1F3F8">1.6</b> xG</span></div>
+<div style="display: flex; justify-content: space-between; font-size: 12px; color: #C6CBD8"><span>Elo -19</span><span>Pre-match 52.0 · 28.0 · 20.0</span><span>Elo +19</span></div>
+</div></a></div>
 <section style="margin: 0 12px; border-radius: 24px; background: #12151C; border: 1px solid #232838; overflow: hidden">
-<div style="display: flex; align-items: center; gap: 10px; padding: 14px 14px 12px 14px">
-<span style="width: 30px; height: 30px; border-radius: 10px; background: {{l.color}}; color: #FFFFFF; font-family: 'Archivo', sans-serif; font-weight: 800; font-size: 12px; display: flex; align-items: center; justify-content: center">{{l.sigla}}</span>
-<div style="flex-grow: 1; display: flex; flex-direction: column"><span style="font-size: 15px; font-weight: 700">{{l.nombre}}</span><span style="font-size: 12px; color: #8E96AA">{{l.ronda}}</span></div>
-<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#8E96AA" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
+<div style="display: flex; align-items: center; gap: 10px; padding: 14px 14px 6px 14px">
+<span style="width: 30px; height: 30px; border-radius: 10px; background: #4A63FF; font-family: 'Archivo', sans-serif; font-stretch: 78%; font-weight: 800; font-size: 12px; display: flex; align-items: center; justify-content: center">LL</span>
+<div style="flex-grow: 1; display: flex; flex-direction: column"><span style="font-size: 15px; font-weight: 700">LaLiga</span><span style="font-size: 12px; color: #8E96AA">Matchday 8 · win chance by Elo</span></div>
 </div>
-<sc-for list="{{l.partidos}}" as="p" hint-placeholder-count="3">
-<a href="{{p.enlace}}" style="display: flex; flex-direction: column; gap: 10px; padding: 13px 14px 13px 14px; border-top: 1px solid #1E2330">
+<div style="padding: 10px 14px 4px 14px; font-size: 11px; font-weight: 700; letter-spacing: 0.8px; color: #8E96AA">FRIDAY 9 OCT</div><a href="#" style="display: flex; flex-direction: column; gap: 10px; padding: 13px 14px; border-top: 1px solid #1E2330">
 <div style="display: flex; align-items: center; gap: 12px">
-<div style="width: 46px; display: flex; flex-direction: column; align-items: center; gap: 3px"><span style="font-family: 'Archivo', sans-serif; font-stretch: 85%; font-weight: 800; font-size: 15px; color: {{p.tColor}}">{{p.tiempo}}</span></div>
+<span style="width: 46px; font-family: 'Archivo', sans-serif; font-stretch: 78%; font-weight: 800; font-size: 15px">21:00</span>
 <div style="flex-grow: 1; min-width: 0; display: flex; flex-direction: column; gap: 7px">
-<div style="display: flex; align-items: center; gap: 8px"><span style="width: 22px; height: 22px; flex-shrink: 0; border-radius: 50%; background: {{p.cl}}; color: {{p.tl}}; font-size: 8px; font-weight: 800; display: flex; align-items: center; justify-content: center">{{p.il}}</span><span style="font-size: 15px; font-weight: {{p.wl}}">{{p.local}}</span></div>
-<div style="display: flex; align-items: center; gap: 8px"><span style="width: 22px; height: 22px; flex-shrink: 0; border-radius: 50%; background: {{p.cv}}; color: {{p.tv}}; font-size: 8px; font-weight: 800; display: flex; align-items: center; justify-content: center">{{p.iv}}</span><span style="font-size: 15px; font-weight: {{p.wv}}">{{p.visitante}}</span></div>
+<div style="display: flex; align-items: center; gap: 8px"><span style="width: 22px; height: 22px; flex-shrink: 0; border-radius: 50%; background: #5AA0D8; color: #0A0C11; font-size: 7px; font-weight: 800; display: flex; align-items: center; justify-content: center; box-shadow: 0 0 0 1px rgba(255,255,255,0.12)">MAL</span><span style="font-size: 15px; font-weight: 600">Málaga</span></div>
+<div style="display: flex; align-items: center; gap: 8px"><span style="width: 22px; height: 22px; flex-shrink: 0; border-radius: 50%; background: #2A64B8; color: #FFFFFF; font-size: 7px; font-weight: 800; display: flex; align-items: center; justify-content: center; box-shadow: 0 0 0 1px rgba(255,255,255,0.12)">ESP</span><span style="font-size: 15px; font-weight: 600">Espanyol</span></div>
 </div>
-<div style="width: 26px; display: flex; flex-direction: column; align-items: center; gap: 7px"><span style="font-family: 'Archivo', sans-serif; font-stretch: 80%; font-weight: 800; font-size: 20px; line-height: 22px">{{p.gl}}</span><span style="font-family: 'Archivo', sans-serif; font-stretch: 80%; font-weight: 800; font-size: 20px; line-height: 22px">{{p.gv}}</span></div>
+<div style="display: grid; grid-template-columns: repeat(3, 40px); gap: 4px; text-align: center">
+<div style="padding: 5px 0; border-radius: 9px; background: #26301A"><span style="display: block; font-family: 'Archivo', sans-serif; font-stretch: 78%; font-weight: 800; font-size: 14px">47</span><span style="font-size: 9px; color: #8E96AA">1</span></div>
+<div style="padding: 5px 0; border-radius: 9px; background: #1A1E28"><span style="display: block; font-family: 'Archivo', sans-serif; font-stretch: 78%; font-weight: 800; font-size: 14px">29</span><span style="font-size: 9px; color: #8E96AA">X</span></div>
+<div style="padding: 5px 0; border-radius: 9px; background: #1A1E28"><span style="display: block; font-family: 'Archivo', sans-serif; font-stretch: 78%; font-weight: 800; font-size: 14px">24</span><span style="font-size: 9px; color: #8E96AA">2</span></div>
+</div></div>
+
+</a><div style="padding: 10px 14px 4px 14px; font-size: 11px; font-weight: 700; letter-spacing: 0.8px; color: #8E96AA">SATURDAY 10 OCT</div><a href="#" style="display: flex; flex-direction: column; gap: 10px; padding: 13px 14px; border-top: 1px solid #1E2330">
+<div style="display: flex; align-items: center; gap: 12px">
+<span style="width: 46px; font-family: 'Archivo', sans-serif; font-stretch: 78%; font-weight: 800; font-size: 15px">14:00</span>
+<div style="flex-grow: 1; min-width: 0; display: flex; flex-direction: column; gap: 7px">
+<div style="display: flex; align-items: center; gap: 8px"><span style="width: 22px; height: 22px; flex-shrink: 0; border-radius: 50%; background: #E8ECF3; color: #C8102E; font-size: 7px; font-weight: 800; display: flex; align-items: center; justify-content: center; box-shadow: 0 0 0 1px rgba(255,255,255,0.12)">RAY</span><span style="font-size: 15px; font-weight: 600">Rayo</span></div>
+<div style="display: flex; align-items: center; gap: 8px"><span style="width: 22px; height: 22px; flex-shrink: 0; border-radius: 50%; background: #C8252F; color: #FFFFFF; font-size: 7px; font-weight: 800; display: flex; align-items: center; justify-content: center; box-shadow: 0 0 0 1px rgba(255,255,255,0.12)">ATH</span><span style="font-size: 15px; font-weight: 600">Athletic</span></div>
 </div>
-<div style="margin-left: 58px; display: flex; align-items: center; gap: 8px">
-<div style="width: 90px; display: flex; height: 6px; border-radius: 3px; overflow: hidden; gap: 2px" aria-hidden="true"><span style="width: {{p.a}}%; background: {{p.cl}}"></span><span style="width: {{p.b}}%; background: #3A4256"></span><span style="width: {{p.c}}%; background: {{p.cv}}"></span></div>
-<span style="font-size: 11px; font-weight: 600; color: #8E96AA; white-space: nowrap">{{p.a}} · {{p.b}} · {{p.c}}</span>
-<span style="margin-left: auto; padding: 3px 9px; border-radius: 9px; background: {{p.chipFondo}}; color: {{p.chipTexto}}; font-size: 11px; font-weight: 700; white-space: nowrap">{{p.chip}}</span>
+<div style="display: grid; grid-template-columns: repeat(3, 40px); gap: 4px; text-align: center">
+<div style="padding: 5px 0; border-radius: 9px; background: #26301A"><span style="display: block; font-family: 'Archivo', sans-serif; font-stretch: 78%; font-weight: 800; font-size: 14px">47</span><span style="font-size: 9px; color: #8E96AA">1</span></div>
+<div style="padding: 5px 0; border-radius: 9px; background: #1A1E28"><span style="display: block; font-family: 'Archivo', sans-serif; font-stretch: 78%; font-weight: 800; font-size: 14px">29</span><span style="font-size: 9px; color: #8E96AA">X</span></div>
+<div style="padding: 5px 0; border-radius: 9px; background: #1A1E28"><span style="display: block; font-family: 'Archivo', sans-serif; font-stretch: 78%; font-weight: 800; font-size: 14px">24</span><span style="font-size: 9px; color: #8E96AA">2</span></div>
+</div></div>
+<div style="margin-left: 58px; display: flex; gap: 6px; flex-wrap: wrap"><span style="padding: 3px 9px; border-radius: 9px; background: #1E2A66; color: #A9B8FF; font-size: 11px; font-weight: 700; white-space: nowrap">Rayo better than table: Elo 6th</span></div>
+</a><a href="#" style="display: flex; flex-direction: column; gap: 10px; padding: 13px 14px; border-top: 1px solid #1E2330">
+<div style="display: flex; align-items: center; gap: 12px">
+<span style="width: 46px; font-family: 'Archivo', sans-serif; font-stretch: 78%; font-weight: 800; font-size: 15px">16:15</span>
+<div style="flex-grow: 1; min-width: 0; display: flex; flex-direction: column; gap: 7px">
+<div style="display: flex; align-items: center; gap: 8px"><span style="width: 22px; height: 22px; flex-shrink: 0; border-radius: 50%; background: #1F4E9E; color: #FFFFFF; font-size: 7px; font-weight: 800; display: flex; align-items: center; justify-content: center; box-shadow: 0 0 0 1px rgba(255,255,255,0.12)">ALA</span><span style="font-size: 15px; font-weight: 600">Alavés</span></div>
+<div style="display: flex; align-items: center; gap: 8px"><span style="width: 22px; height: 22px; flex-shrink: 0; border-radius: 50%; background: #CB3524; color: #FFFFFF; font-size: 7px; font-weight: 800; display: flex; align-items: center; justify-content: center; box-shadow: 0 0 0 1px rgba(255,255,255,0.12)">ATM</span><span style="font-size: 15px; font-weight: 600">Atlético</span></div>
 </div>
+<div style="display: grid; grid-template-columns: repeat(3, 40px); gap: 4px; text-align: center">
+<div style="padding: 5px 0; border-radius: 9px; background: #1A1E28"><span style="display: block; font-family: 'Archivo', sans-serif; font-stretch: 78%; font-weight: 800; font-size: 14px">23</span><span style="font-size: 9px; color: #8E96AA">1</span></div>
+<div style="padding: 5px 0; border-radius: 9px; background: #1A1E28"><span style="display: block; font-family: 'Archivo', sans-serif; font-stretch: 78%; font-weight: 800; font-size: 14px">29</span><span style="font-size: 9px; color: #8E96AA">X</span></div>
+<div style="padding: 5px 0; border-radius: 9px; background: #26301A"><span style="display: block; font-family: 'Archivo', sans-serif; font-stretch: 78%; font-weight: 800; font-size: 14px">49</span><span style="font-size: 9px; color: #8E96AA">2</span></div>
+</div></div>
+<div style="margin-left: 58px; display: flex; gap: 6px; flex-wrap: wrap"><span style="padding: 3px 9px; border-radius: 9px; background: #3A2412; color: #FFB27A; font-size: 11px; font-weight: 700; white-space: nowrap">Table flatters Alavés: 6th, Elo 12th</span></div>
+</a><a href="#" style="display: flex; flex-direction: column; gap: 10px; padding: 13px 14px; border-top: 1px solid #1E2330">
+<div style="display: flex; align-items: center; gap: 12px">
+<span style="width: 46px; font-family: 'Archivo', sans-serif; font-stretch: 78%; font-weight: 800; font-size: 15px">18:30</span>
+<div style="flex-grow: 1; min-width: 0; display: flex; flex-direction: column; gap: 7px">
+<div style="display: flex; align-items: center; gap: 8px"><span style="width: 22px; height: 22px; flex-shrink: 0; border-radius: 50%; background: #A50044; color: #FFFFFF; font-size: 7px; font-weight: 800; display: flex; align-items: center; justify-content: center; box-shadow: 0 0 0 1px rgba(255,255,255,0.12)">BAR</span><span style="font-size: 15px; font-weight: 600">Barcelona</span></div>
+<div style="display: flex; align-items: center; gap: 8px"><span style="width: 22px; height: 22px; flex-shrink: 0; border-radius: 50%; background: #1B55A3; color: #FFFFFF; font-size: 7px; font-weight: 800; display: flex; align-items: center; justify-content: center; box-shadow: 0 0 0 1px rgba(255,255,255,0.12)">GET</span><span style="font-size: 15px; font-weight: 600">Getafe</span></div>
+</div>
+<div style="display: grid; grid-template-columns: repeat(3, 40px); gap: 4px; text-align: center">
+<div style="padding: 5px 0; border-radius: 9px; background: #26301A"><span style="display: block; font-family: 'Archivo', sans-serif; font-stretch: 78%; font-weight: 800; font-size: 14px">88</span><span style="font-size: 9px; color: #8E96AA">1</span></div>
+<div style="padding: 5px 0; border-radius: 9px; background: #1A1E28"><span style="display: block; font-family: 'Archivo', sans-serif; font-stretch: 78%; font-weight: 800; font-size: 14px">8</span><span style="font-size: 9px; color: #8E96AA">X</span></div>
+<div style="padding: 5px 0; border-radius: 9px; background: #1A1E28"><span style="display: block; font-family: 'Archivo', sans-serif; font-stretch: 78%; font-weight: 800; font-size: 14px">4</span><span style="font-size: 9px; color: #8E96AA">2</span></div>
+</div></div>
+
+</a><a href="Partido.dc.html" style="display: flex; flex-direction: column; gap: 10px; padding: 13px 14px; border-top: 1px solid #1E2330">
+<div style="display: flex; align-items: center; gap: 12px">
+<span style="width: 46px; font-family: 'Archivo', sans-serif; font-stretch: 78%; font-weight: 800; font-size: 15px">21:00</span>
+<div style="flex-grow: 1; min-width: 0; display: flex; flex-direction: column; gap: 7px">
+<div style="display: flex; align-items: center; gap: 8px"><span style="width: 22px; height: 22px; flex-shrink: 0; border-radius: 50%; background: #F1F3F8; color: #0A0C11; font-size: 7px; font-weight: 800; display: flex; align-items: center; justify-content: center; box-shadow: 0 0 0 1px rgba(255,255,255,0.12)">RMA</span><span style="font-size: 15px; font-weight: 600">Real Madrid</span></div>
+<div style="display: flex; align-items: center; gap: 8px"><span style="width: 22px; height: 22px; flex-shrink: 0; border-radius: 50%; background: #FFE11F; color: #0A0C11; font-size: 7px; font-weight: 800; display: flex; align-items: center; justify-content: center; box-shadow: 0 0 0 1px rgba(255,255,255,0.12)">VIL</span><span style="font-size: 15px; font-weight: 600">Villarreal</span></div>
+</div>
+<div style="display: grid; grid-template-columns: repeat(3, 40px); gap: 4px; text-align: center">
+<div style="padding: 5px 0; border-radius: 9px; background: #26301A"><span style="display: block; font-family: 'Archivo', sans-serif; font-stretch: 78%; font-weight: 800; font-size: 14px">66</span><span style="font-size: 9px; color: #8E96AA">1</span></div>
+<div style="padding: 5px 0; border-radius: 9px; background: #1A1E28"><span style="display: block; font-family: 'Archivo', sans-serif; font-stretch: 78%; font-weight: 800; font-size: 14px">21</span><span style="font-size: 9px; color: #8E96AA">X</span></div>
+<div style="padding: 5px 0; border-radius: 9px; background: #1A1E28"><span style="display: block; font-family: 'Archivo', sans-serif; font-stretch: 78%; font-weight: 800; font-size: 14px">13</span><span style="font-size: 9px; color: #8E96AA">2</span></div>
+</div></div>
+<div style="margin-left: 58px; display: flex; gap: 6px; flex-wrap: wrap"><span style="padding: 3px 9px; border-radius: 9px; background: #26301A; color: #C8FF3D; font-size: 11px; font-weight: 700; white-space: nowrap">Over 2.5 · 70%</span> <span style="padding: 3px 9px; border-radius: 9px; background: #3A2412; color: #FFB27A; font-size: 11px; font-weight: 700; white-space: nowrap">4.4 cards expected</span></div>
+</a><div style="padding: 10px 14px 4px 14px; font-size: 11px; font-weight: 700; letter-spacing: 0.8px; color: #8E96AA">SUNDAY 11 OCT</div><a href="#" style="display: flex; flex-direction: column; gap: 10px; padding: 13px 14px; border-top: 1px solid #1E2330">
+<div style="display: flex; align-items: center; gap: 12px">
+<span style="width: 46px; font-family: 'Archivo', sans-serif; font-stretch: 78%; font-weight: 800; font-size: 15px">14:00</span>
+<div style="flex-grow: 1; min-width: 0; display: flex; flex-direction: column; gap: 7px">
+<div style="display: flex; align-items: center; gap: 8px"><span style="width: 22px; height: 22px; flex-shrink: 0; border-radius: 50%; background: #2E8B57; color: #FFFFFF; font-size: 7px; font-weight: 800; display: flex; align-items: center; justify-content: center; box-shadow: 0 0 0 1px rgba(255,255,255,0.12)">ELC</span><span style="font-size: 15px; font-weight: 600">Elche</span></div>
+<div style="display: flex; align-items: center; gap: 8px"><span style="width: 22px; height: 22px; flex-shrink: 0; border-radius: 50%; background: #8BC4EA; color: #0A0C11; font-size: 7px; font-weight: 800; display: flex; align-items: center; justify-content: center; box-shadow: 0 0 0 1px rgba(255,255,255,0.12)">CEL</span><span style="font-size: 15px; font-weight: 600">Celta</span></div>
+</div>
+<div style="display: grid; grid-template-columns: repeat(3, 40px); gap: 4px; text-align: center">
+<div style="padding: 5px 0; border-radius: 9px; background: #1A1E28"><span style="display: block; font-family: 'Archivo', sans-serif; font-stretch: 78%; font-weight: 800; font-size: 14px">34</span><span style="font-size: 9px; color: #8E96AA">1</span></div>
+<div style="padding: 5px 0; border-radius: 9px; background: #1A1E28"><span style="display: block; font-family: 'Archivo', sans-serif; font-stretch: 78%; font-weight: 800; font-size: 14px">31</span><span style="font-size: 9px; color: #8E96AA">X</span></div>
+<div style="padding: 5px 0; border-radius: 9px; background: #26301A"><span style="display: block; font-family: 'Archivo', sans-serif; font-stretch: 78%; font-weight: 800; font-size: 14px">35</span><span style="font-size: 9px; color: #8E96AA">2</span></div>
+</div></div>
+<div style="margin-left: 58px; display: flex; gap: 6px; flex-wrap: wrap"><span style="padding: 3px 9px; border-radius: 9px; background: #1E2330; color: #C6CBD8; font-size: 11px; font-weight: 700; white-space: nowrap">Coin flip</span></div>
+</a><a href="#" style="display: flex; flex-direction: column; gap: 10px; padding: 13px 14px; border-top: 1px solid #1E2330">
+<div style="display: flex; align-items: center; gap: 12px">
+<span style="width: 46px; font-family: 'Archivo', sans-serif; font-stretch: 78%; font-weight: 800; font-size: 15px">16:15</span>
+<div style="flex-grow: 1; min-width: 0; display: flex; flex-direction: column; gap: 7px">
+<div style="display: flex; align-items: center; gap: 8px"><span style="width: 22px; height: 22px; flex-shrink: 0; border-radius: 50%; background: #1F5FB0; color: #FFFFFF; font-size: 7px; font-weight: 800; display: flex; align-items: center; justify-content: center; box-shadow: 0 0 0 1px rgba(255,255,255,0.12)">RSO</span><span style="font-size: 15px; font-weight: 600">Real Sociedad</span></div>
+<div style="display: flex; align-items: center; gap: 8px"><span style="width: 22px; height: 22px; flex-shrink: 0; border-radius: 50%; background: #2B67C2; color: #FFFFFF; font-size: 7px; font-weight: 800; display: flex; align-items: center; justify-content: center; box-shadow: 0 0 0 1px rgba(255,255,255,0.12)">DEP</span><span style="font-size: 15px; font-weight: 600">Deportivo</span></div>
+</div>
+<div style="display: grid; grid-template-columns: repeat(3, 40px); gap: 4px; text-align: center">
+<div style="padding: 5px 0; border-radius: 9px; background: #26301A"><span style="display: block; font-family: 'Archivo', sans-serif; font-stretch: 78%; font-weight: 800; font-size: 14px">44</span><span style="font-size: 9px; color: #8E96AA">1</span></div>
+<div style="padding: 5px 0; border-radius: 9px; background: #1A1E28"><span style="display: block; font-family: 'Archivo', sans-serif; font-stretch: 78%; font-weight: 800; font-size: 14px">30</span><span style="font-size: 9px; color: #8E96AA">X</span></div>
+<div style="padding: 5px 0; border-radius: 9px; background: #1A1E28"><span style="display: block; font-family: 'Archivo', sans-serif; font-stretch: 78%; font-weight: 800; font-size: 14px">26</span><span style="font-size: 9px; color: #8E96AA">2</span></div>
+</div></div>
+
+</a><a href="#" style="display: flex; flex-direction: column; gap: 10px; padding: 13px 14px; border-top: 1px solid #1E2330">
+<div style="display: flex; align-items: center; gap: 12px">
+<span style="width: 46px; font-family: 'Archivo', sans-serif; font-stretch: 78%; font-weight: 800; font-size: 15px">18:30</span>
+<div style="flex-grow: 1; min-width: 0; display: flex; flex-direction: column; gap: 7px">
+<div style="display: flex; align-items: center; gap: 8px"><span style="width: 22px; height: 22px; flex-shrink: 0; border-radius: 50%; background: #0BB363; color: #0A0C11; font-size: 7px; font-weight: 800; display: flex; align-items: center; justify-content: center; box-shadow: 0 0 0 1px rgba(255,255,255,0.12)">BET</span><span style="font-size: 15px; font-weight: 600">Betis</span></div>
+<div style="display: flex; align-items: center; gap: 8px"><span style="width: 22px; height: 22px; flex-shrink: 0; border-radius: 50%; background: #B3262E; color: #FFFFFF; font-size: 7px; font-weight: 800; display: flex; align-items: center; justify-content: center; box-shadow: 0 0 0 1px rgba(255,255,255,0.12)">OSA</span><span style="font-size: 15px; font-weight: 600">Osasuna</span></div>
+</div>
+<div style="display: grid; grid-template-columns: repeat(3, 40px); gap: 4px; text-align: center">
+<div style="padding: 5px 0; border-radius: 9px; background: #26301A"><span style="display: block; font-family: 'Archivo', sans-serif; font-stretch: 78%; font-weight: 800; font-size: 14px">69</span><span style="font-size: 9px; color: #8E96AA">1</span></div>
+<div style="padding: 5px 0; border-radius: 9px; background: #1A1E28"><span style="display: block; font-family: 'Archivo', sans-serif; font-stretch: 78%; font-weight: 800; font-size: 14px">20</span><span style="font-size: 9px; color: #8E96AA">X</span></div>
+<div style="padding: 5px 0; border-radius: 9px; background: #1A1E28"><span style="display: block; font-family: 'Archivo', sans-serif; font-stretch: 78%; font-weight: 800; font-size: 14px">11</span><span style="font-size: 9px; color: #8E96AA">2</span></div>
+</div></div>
+<div style="margin-left: 58px; display: flex; gap: 6px; flex-wrap: wrap"><span style="padding: 3px 9px; border-radius: 9px; background: #3A2412; color: #FFB27A; font-size: 11px; font-weight: 700; white-space: nowrap">Table flatters Osasuna: 13th, Elo 18th</span></div>
+</a><a href="#" style="display: flex; flex-direction: column; gap: 10px; padding: 13px 14px; border-top: 1px solid #1E2330">
+<div style="display: flex; align-items: center; gap: 12px">
+<span style="width: 46px; font-family: 'Archivo', sans-serif; font-stretch: 78%; font-weight: 800; font-size: 15px">21:00</span>
+<div style="flex-grow: 1; min-width: 0; display: flex; flex-direction: column; gap: 7px">
+<div style="display: flex; align-items: center; gap: 8px"><span style="width: 22px; height: 22px; flex-shrink: 0; border-radius: 50%; background: #2E8B57; color: #FFFFFF; font-size: 7px; font-weight: 800; display: flex; align-items: center; justify-content: center; box-shadow: 0 0 0 1px rgba(255,255,255,0.12)">RAC</span><span style="font-size: 15px; font-weight: 600">Racing</span></div>
+<div style="display: flex; align-items: center; gap: 8px"><span style="width: 22px; height: 22px; flex-shrink: 0; border-radius: 50%; background: #E8ECF3; color: #0A0C11; font-size: 7px; font-weight: 800; display: flex; align-items: center; justify-content: center; box-shadow: 0 0 0 1px rgba(255,255,255,0.12)">VAL</span><span style="font-size: 15px; font-weight: 600">Valencia</span></div>
+</div>
+<div style="display: grid; grid-template-columns: repeat(3, 40px); gap: 4px; text-align: center">
+<div style="padding: 5px 0; border-radius: 9px; background: #26301A"><span style="display: block; font-family: 'Archivo', sans-serif; font-stretch: 78%; font-weight: 800; font-size: 14px">43</span><span style="font-size: 9px; color: #8E96AA">1</span></div>
+<div style="padding: 5px 0; border-radius: 9px; background: #1A1E28"><span style="display: block; font-family: 'Archivo', sans-serif; font-stretch: 78%; font-weight: 800; font-size: 14px">30</span><span style="font-size: 9px; color: #8E96AA">X</span></div>
+<div style="padding: 5px 0; border-radius: 9px; background: #1A1E28"><span style="display: block; font-family: 'Archivo', sans-serif; font-stretch: 78%; font-weight: 800; font-size: 14px">27</span><span style="font-size: 9px; color: #8E96AA">2</span></div>
+</div></div>
+<div style="margin-left: 58px; display: flex; gap: 6px; flex-wrap: wrap"><span style="padding: 3px 9px; border-radius: 9px; background: #1E2A66; color: #A9B8FF; font-size: 11px; font-weight: 700; white-space: nowrap">Valencia better than table: Elo 11th</span></div>
+</a><div style="padding: 10px 14px 4px 14px; font-size: 11px; font-weight: 700; letter-spacing: 0.8px; color: #8E96AA">MONDAY 12 OCT</div><a href="#" style="display: flex; flex-direction: column; gap: 10px; padding: 13px 14px; border-top: 1px solid #1E2330">
+<div style="display: flex; align-items: center; gap: 12px">
+<span style="width: 46px; font-family: 'Archivo', sans-serif; font-stretch: 78%; font-weight: 800; font-size: 15px">21:00</span>
+<div style="flex-grow: 1; min-width: 0; display: flex; flex-direction: column; gap: 7px">
+<div style="display: flex; align-items: center; gap: 8px"><span style="width: 22px; height: 22px; flex-shrink: 0; border-radius: 50%; background: #7A1F3D; color: #FFFFFF; font-size: 7px; font-weight: 800; display: flex; align-items: center; justify-content: center; box-shadow: 0 0 0 1px rgba(255,255,255,0.12)">LEV</span><span style="font-size: 15px; font-weight: 600">Levante</span></div>
+<div style="display: flex; align-items: center; gap: 8px"><span style="width: 22px; height: 22px; flex-shrink: 0; border-radius: 50%; background: #D8262F; color: #FFFFFF; font-size: 7px; font-weight: 800; display: flex; align-items: center; justify-content: center; box-shadow: 0 0 0 1px rgba(255,255,255,0.12)">SEV</span><span style="font-size: 15px; font-weight: 600">Sevilla</span></div>
+</div>
+<div style="display: grid; grid-template-columns: repeat(3, 40px); gap: 4px; text-align: center">
+<div style="padding: 5px 0; border-radius: 9px; background: #26301A"><span style="display: block; font-family: 'Archivo', sans-serif; font-stretch: 78%; font-weight: 800; font-size: 14px">46</span><span style="font-size: 9px; color: #8E96AA">1</span></div>
+<div style="padding: 5px 0; border-radius: 9px; background: #1A1E28"><span style="display: block; font-family: 'Archivo', sans-serif; font-stretch: 78%; font-weight: 800; font-size: 14px">29</span><span style="font-size: 9px; color: #8E96AA">X</span></div>
+<div style="padding: 5px 0; border-radius: 9px; background: #1A1E28"><span style="display: block; font-family: 'Archivo', sans-serif; font-stretch: 78%; font-weight: 800; font-size: 14px">25</span><span style="font-size: 9px; color: #8E96AA">2</span></div>
+</div></div>
+<div style="margin-left: 58px; display: flex; gap: 6px; flex-wrap: wrap"><span style="padding: 3px 9px; border-radius: 9px; background: #3A2412; color: #FFB27A; font-size: 11px; font-weight: 700; white-space: nowrap">Table flatters Sevilla: 5th, Elo 15th</span></div>
 </a>
-</sc-for>
 </section>
-</sc-for>
-
-<div style="display: flex; align-items: center; justify-content: space-between; padding: 6px 16px 0 16px">
-<span style="font-size: 18px; font-weight: 700">Top tips today</span>
-<a href="Tips.dc.html" style="font-size: 13px; font-weight: 600; color: #8FA2FF">All tips</a>
-</div>
+<div style="display: flex; align-items: center; justify-content: space-between; padding: 4px 16px 0 16px"><span style="font-size: 18px; font-weight: 700">Top tips</span><a href="Tips.dc.html" style="font-size: 13px; font-weight: 600; color: #8FA2FF">All tips</a></div>
 <div style="display: flex; gap: 10px; padding: 0 16px; overflow: hidden">
-<sc-for list="{{tips}}" as="t" hint-placeholder-count="3">
-<a href="Tips.dc.html" style="flex-shrink: 0; width: 176px; box-sizing: border-box; padding: 14px; border-radius: 22px; background: #12151C; border: 1px solid #232838; display: flex; flex-direction: column; gap: 6px">
-<span style="font-size: 12px; font-weight: 600; color: #8E96AA">{{t.partido}}</span>
-<span style="font-size: 15px; font-weight: 700">{{t.mercado}}</span>
-<span style="font-family: 'Archivo', sans-serif; font-stretch: 75%; font-weight: 800; font-size: 40px; line-height: 1; color: #C8FF3D">{{t.pct}}<span style="font-size: 22px">%</span></span>
-<span style="align-self: flex-start; padding: 3px 9px; border-radius: 9px; background: #1E2330; color: #C6CBD8; font-size: 11px; font-weight: 700">Books hit {{t.casa}}%</span>
-</a>
-</sc-for>
+<a href="Tips.dc.html" style="flex-shrink: 0; width: 176px; box-sizing: border-box; padding: 14px; border-radius: 22px; background: #12151C; border: 1px solid #232838; display: flex; flex-direction: column; gap: 6px"><span style="font-size: 12px; color: #8E96AA">Real Madrid – Villarreal</span><span style="font-size: 15px; font-weight: 700">Over 1.5 goals</span><span style="font-family: 'Archivo', sans-serif; font-stretch: 78%; font-weight: 800; font-size: 40px; line-height: 1; color: #C8FF3D">88<span style="font-size: 22px">%</span></span><span style="padding: 3px 9px; border-radius: 9px; background: #1E2330; color: #C6CBD8; font-size: 11px; font-weight: 700; white-space: nowrap">Books hit 78%</span></a><a href="Tips.dc.html" style="flex-shrink: 0; width: 176px; box-sizing: border-box; padding: 14px; border-radius: 22px; background: #12151C; border: 1px solid #232838; display: flex; flex-direction: column; gap: 6px"><span style="font-size: 12px; color: #8E96AA">Real Madrid – Villarreal</span><span style="font-size: 15px; font-weight: 700">Madrid or draw</span><span style="font-family: 'Archivo', sans-serif; font-stretch: 78%; font-weight: 800; font-size: 40px; line-height: 1; color: #C8FF3D">87<span style="font-size: 22px">%</span></span><span style="padding: 3px 9px; border-radius: 9px; background: #1E2330; color: #C6CBD8; font-size: 11px; font-weight: 700; white-space: nowrap">Books hit 80%</span></a><a href="Tips.dc.html" style="flex-shrink: 0; width: 176px; box-sizing: border-box; padding: 14px; border-radius: 22px; background: #12151C; border: 1px solid #232838; display: flex; flex-direction: column; gap: 6px"><span style="font-size: 12px; color: #8E96AA">Real Madrid – Villarreal</span><span style="font-size: 15px; font-weight: 700">Over 2.5 goals</span><span style="font-family: 'Archivo', sans-serif; font-stretch: 78%; font-weight: 800; font-size: 40px; line-height: 1; color: #C8FF3D">70<span style="font-size: 22px">%</span></span><span style="padding: 3px 9px; border-radius: 9px; background: #1E2330; color: #C6CBD8; font-size: 11px; font-weight: 700; white-space: nowrap">Books hit 61%</span></a>
 </div>
-
 <nav aria-label="Main" style="position: absolute; left: 16px; right: 16px; bottom: 18px; height: 64px; box-sizing: border-box; padding: 6px; border-radius: 32px; background: #161A23; border: 1px solid #2A3040; display: flex; align-items: center; justify-content: space-between">
 <a href="Main.dc.html" aria-current="page" style="height: 50px; padding: 0 18px; border-radius: 25px; background: #4A63FF; color: #FFFFFF; display: flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 700"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><path d="M12 3v4M12 17v4M3 12h4M17 12h4"></path></svg>Matches</a>
-<a href="Equipo.dc.html" aria-label="Explore" style="width: 50px; height: 50px; border-radius: 25px; color: #8E96AA; display: flex; align-items: center; justify-content: center"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-3.5-3.5"></path></svg></a>
+<a href="Elo.dc.html" aria-label="Elo" style="width: 50px; height: 50px; border-radius: 25px; color: #8E96AA; display: flex; align-items: center; justify-content: center"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"></path></svg></a>
 <a href="Tips.dc.html" aria-label="Tips" style="width: 50px; height: 50px; border-radius: 25px; color: #8E96AA; display: flex; align-items: center; justify-content: center"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l2.4 5.6 6.1.5-4.6 4 1.4 6-5.3-3.2-5.3 3.2 1.4-6-4.6-4 6.1-.5z"></path></svg></a>
-<a href="Jugador.dc.html" aria-label="Following" style="width: 50px; height: 50px; border-radius: 25px; color: #8E96AA; display: flex; align-items: center; justify-content: center"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20s-7-4.4-7-10a4 4 0 017-2.6A4 4 0 0119 10c0 5.6-7 10-7 10z"></path></svg></a>
-</nav>
-</div>
-
+<a href="Equipo.dc.html" aria-label="Following" style="width: 50px; height: 50px; border-radius: 25px; color: #8E96AA; display: flex; align-items: center; justify-content: center"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20s-7-4.4-7-10a4 4 0 017-2.6A4 4 0 0119 10c0 5.6-7 10-7 10z"></path></svg></a>
+</nav></div>
 </x-dc>
-<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":1700}}'>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":2330}}'>
 class Component extends DCLogic {
-  renderVals() {
-    const dias = [['MON', 14], ['TUE', 15], ['WED', 16], ['THU', 17], ['FRI', 18], ['SAT', 19], ['SUN', 20]].map(([dow, num], i) => {
-      const on = i === 2;
-      return { dow, num, actual: on ? 'date' : 'false', fondo: on ? '#F1F3F8' : '#12151C', texto: on ? '#0A0C11' : '#F1F3F8', borde: on ? '#F1F3F8' : '#232838' };
-    });
-    const filtros = ['All', 'Following', 'Tips', 'Big games'].map((nombre, i) => ({ nombre, fondo: i === 0 ? '#4A63FF' : '#12151C', texto: '#FFFFFF', borde: i === 0 ? '#4A63FF' : '#262C3B' }));
-    // Sample data. Invented clubs.
-    const E = { RIV: ['#2F63D8', '#FFFFFF'], ASH: ['#E0424B', '#FFFFFF'], CAL: ['#E8ECF3', '#0A0C11'], BAY: ['#F2C230', '#0A0C11'], NOR: ['#2FA36B', '#FFFFFF'], HAR: ['#9B4FD0', '#FFFFFF'], VAL: ['#E8ECF3', '#0A0C11'], OAK: ['#F07A2A', '#0A0C11'], LAK: ['#33B5E5', '#0A0C11'], STO: ['#7C8496', '#FFFFFF'] };
-    const V = (liga, min, il, local, gl, iv, visitante, gv, xh, xa, a, b, c, enlace) => ({
-      liga, min, il, local, gl, iv, visitante, gv, xh, xa, a, b, c, enlace: enlace || '#',
-      cl: E[il][0], tl: E[il][1], cv: E[iv][0], tv: E[iv][1]
-    });
-    const vivos = [
-      V('Coastal League', "67'", 'RIV', 'Riverton', 2, 'ASH', 'Ashford Utd', 1, '1.9', '0.8', 62, 22, 16, 'Partido.dc.html'),
-      V('Metro Cup', "31'", 'LAK', 'Lakeside', 0, 'VAL', 'Vale Rovers', 0, '0.7', '0.9', 33, 31, 36)
-    ];
-    const chip = { xg: ['#1E2A66', '#A9B8FF'], tip: ['#26301A', '#C8FF3D'], tight: ['#3A2412', '#FFB27A'] };
-    const P = (tiempo, estado, il, local, iv, visitante, gl, gv, a, b, c, ch, tipo) => {
-      const ganaL = gl !== '' && gl > gv, ganaV = gl !== '' && gv > gl;
-      return { tiempo, il, local, iv, visitante, gl, gv, a, b, c, chip: ch, enlace: '#',
-        tColor: estado === 'ft' ? '#8E96AA' : '#F1F3F8',
-        cl: E[il][0], tl: E[il][1], cv: E[iv][0], tv: E[iv][1],
-        wl: ganaL ? 700 : 500, wv: ganaV ? 700 : 500, chipFondo: chip[tipo][0], chipTexto: chip[tipo][1] };
-    };
-    const ligas = [
-      { sigla: 'CL', nombre: 'Coastal League', ronda: 'Matchday 12', color: '#4A63FF', partidos: [
-        P('18:30', 'next', 'CAL', 'Calder City', 'BAY', 'Bayfield', '', '', 48, 27, 25, 'Over 2.5 · 61%', 'tip'),
-        P('20:45', 'next', 'NOR', 'Northgate', 'HAR', 'Harbor Town', '', '', 41, 29, 30, 'Tight game', 'tight'),
-        P('FT', 'ft', 'OAK', 'Oakmont', 'STO', 'Stonebridge', 0, 3, 39, 30, 31, 'xG 0.6 – 2.4', 'xg')
-      ] },
-      { sigla: 'MC', nombre: 'Metro Cup', ronda: 'Round of 16', color: '#7A4FE0', partidos: [
-        P('21:00', 'next', 'VAL', 'Vale Rovers', 'LAK', 'Lakeside', '', '', 34, 31, 35, 'Tight game', 'tight'),
-        P('FT', 'ft', 'LAK', 'Lakeside', 'VAL', 'Vale Rovers', 1, 1, 44, 28, 28, 'xG 1.3 – 1.5', 'xg')
-      ] }
-    ];
-    const tips = [
-      { partido: 'Riverton – Ashford', mercado: 'Over 1.5 goals', pct: 88, casa: 78 },
-      { partido: 'Calder – Bayfield', mercado: 'Both teams score', pct: 64, casa: 59 },
-      { partido: 'Northgate – Harbor', mercado: 'Under 3.5 goals', pct: 79, casa: 62 }
-    ];
-    return { dias, filtros, vivos, ligas, tips };
-  }
+  renderVals() { return {}; }
 }
 </script>
 </body>

@@ -185,3 +185,31 @@ medirlo antes de enseñarlo (regla del proyecto: nada sin comprobar).
 1 Peso de las bajas · 3-4 Tarjetas (ciclo + termómetro) · 5 Tabla merecida ·
 7 Segundas partes · 12 Cuotas (ya hecho). Son las más únicas y las que
 mejor responden a «¿qué va a pasar en este partido?».
+
+## Resultado: los 12 datos calculados y comprobados (30/09/2026)
+
+`analisis_app.py` → `datos_app.json`. LaLiga, ejemplo Real Madrid. Sin API.
+
+| # | dato | comprobación | veredicto |
+|---|---|---|---|
+| 1 | Peso de las bajas | descriptivo | RMA: le faltan jugadores con el 13% de sus G+A (Valverde, Militão, Rodrygo) |
+| 2 | Con él / sin él (sobre lo esperado por Elo) | n por cada lado | ruidoso: con menos de ~20 partidos por lado puede ser azar; se enseña el n |
+| 3 | Ciclo de amarillas | datos limpiados | la API da el mismo jugador con 2 IDs; unificados 20; sin eso nadie llegaba al límite |
+| 4 | Termómetro de tarjetas | 820 partidos, Brier emparejado | equipos + árbitro bate a la media de liga por **3,2 sigmas** |
+| 5 | Tabla por Elo (puntos esperados) | J7 → tabla final, 3 temporadas | Elo 0,87/0,72/0,68 vs tabla 0,79/0,83/0,65: gana 2 de 3, por poco. Valor = contexto, no «predice mucho mejor» |
+| 6 | Segundas partes | estabilidad año a año | 0,59-0,73, pero controlando por nivel 0,11-0,49: casi todo es calidad. Se enseña como dato, no como rasgo |
+| 7 | Rotación y descanso | descriptivo | solo liga: Champions y Copa no están |
+| 8 | Portero (goles evitados) | mitad vs mitad 2025/26 | 0,31: pista, no ley |
+| 9 | Rachas (goles vs xG) | 1ª vuelta → 2ª 2025/26 | persiste 0,34; el xG predice tan bien como los goles (0,81 vs 0,80) |
+| 10 | Moneyball | por posición, sin valor 0 | descriptivo |
+| 11 | Duelo de estilos | z-scores vs liga | RMA contra equipos de posesión: −0,22 pts/partido vs Elo (11 partidos, poca muestra) |
+| 12 | Cuotas | apertura → cierre (football-data) | las cosechadas se capturaron todas a la vez (20/09): sin movimiento desde ahí |
+| + | Informe post-partido | — | historia por mitades + tarjetas por minuto, merecido por xG (Poisson), sorpresa previa, Elo antes/después |
+
+**Momentum a posteriori:** sin minutos de goles ni cambios guardados. La API
+los da en `/matches/{id}` (eventos: goles, tarjetas, cambios, VAR) y el script
+de 2025/26 solo guardó las tarjetas. Hace falta un backfill con permiso.
+
+**Fallos silenciosos encontrados:** tarjetas del mismo jugador con dos IDs
+(20 casos), minutos de tarjeta negativos (8 filas), posición «Forward» (no
+«Attacker»), valor de mercado 0 = sin dato, porteros sin nombre.
