@@ -26,6 +26,7 @@ Dónde está cada cosa:
 
 | qué | por qué | ficheros | commit |
 |---|---|---|---|
+| Aviso del vigilante con "escalera": líneas ±1 y ±2 juegos con prob. del modelo (y de la casa si la API la da) y cuota mínima. | El usuario llegó a Luckia y la línea ya había pasado de 19,5 a 21,5: la línea cambia en cada juego y la de la API puede no ser la de Luckia. | `modelos/tenis/scripts/vigilante_juegos.py` | este commit |
 | Vigilante: el tope del 75% solo filtra si la cuota real de la API para ese lado paga menos de 1,33. | Petición del usuario: descartar solo cuotas bajas, no avisos probables bien pagados. | `modelos/tenis/scripts/vigilante_juegos.py` | este commit |
 | Aviso de ntfy con botones **Copiar <apellido>** de cada jugador + Abrir Luckia (publicado en JSON). | El usuario comprobó que Luckia no abre el partido sin su número interno (ni sin número ni con uno inventado); los nombres raros cuestan de escribir en el buscador. | `modelos/tenis/scripts/vigilante_juegos.py` | este commit |
 | Vigilante de juegos: no avisa si la casa da más del 75% (cuota justa < 1,33). | Petición del usuario tras un aviso a 1,11 (partido casi decidido). Las direcciones de partido de Luckia llevan un número interno (`/apuestas/eventos/<torneo>-<jugadores>/<id>/`) que no se puede sacar desde aquí (Luckia devuelve 451 fuera de España). | `modelos/tenis/scripts/vigilante_juegos.py` | este commit |

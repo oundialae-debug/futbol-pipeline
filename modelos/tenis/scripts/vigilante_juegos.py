@@ -49,6 +49,28 @@ def avisar(txt, jugadores=()):
         print(f"ntfy falló: {type(e).__name__}", flush=True)
 
 
+TOTALES, CASA = {}, {}   # por partido, de la última pasada: reparto de juegos del modelo y líneas de la casa
+
+
+def escalera(k, linea, lado):
+    """Otras líneas cercanas: la casa mueve la línea en cuanto se juega un juego, y cuando el usuario
+    llega a Luckia puede estar ya en otra. Para cada una, prob. del modelo / de la casa (si la API
+    la da) y cuota mínima; sin precio de la casa, la mínima sale del modelo (menos fiable en el más)."""
+    tot, casa, out = TOTALES.get(k, {}), CASA.get(k, {}), []
+    for d in (-2, -1, 1, 2):
+        ln = linea + d
+        mo = sum(x for g, x in tot.items() if g > ln)
+        mo = mo if lado == "más" else 1 - mo
+        pc = casa.get(ln)
+        pc = None if pc is None else (pc if lado == "más" else 1 - pc)
+        ref = pc if pc else mo
+        if not 0.01 < ref < 0.99:
+            continue
+        txt = f"{ln:g}: {mo:.0%}" + (f"/{pc:.0%}" if pc else "") + f" mín {1 / ref:.2f}"
+        out.append(txt.replace(".", ","))
+    return " · ".join(out)
+
+
 def apellido(n):
     return str(n).split(". ", 1)[-1]
 
@@ -76,6 +98,8 @@ def lineas():
         pa, pb = K.redondear(Q.prob_saque(circ, a, b, sup)), K.redondear(Q.prob_saque(circ, b, a, sup))
         r = K.partido_desde(pa, pb, e["mejor_de"], e["sa"], e["sb"], e["ga"], e["gb"], e["a_saca"], e["xa"], e["xb"],
                             e["previos"])
+        TOTALES[p.get("event_key")] = r["total"]
+        CASA[p.get("event_key")] = {float(h): Q.sin_margen(t["Over"], t["Under"]) for (_, h), t in mk.items()}
         for (_, h), t in mk.items():
             ln = float(h)
             filas.append({"hora": "", "event_key": p.get("event_key"), "tipo": p.get("event_type_type"),
@@ -109,7 +133,8 @@ def main():
                     avisados.add((k, lado))
                     ln, mn = f"{x.linea:g}".replace(".", ","), f"{1 / pcas:.2f}".replace(".", ",")
                     avisar(f"{x.jugador1} VS {x.jugador2} | {lado} de {ln} juegos | modelo {pmod:.0%} / cuota {pcas:.0%} | "
-                           f"mínima {mn} | {J.torneo(x.tipo, x.torneo)}",
+                           f"mínima {mn} | {J.torneo(x.tipo, x.torneo)}\n"
+                           f"Si la línea ya cambió ({lado}, modelo/casa): {escalera(k, float(x.linea), lado)}",
                            (x.jugador1, x.jugador2))
             for k in set(racha) - vistos:
                 racha.pop(k)
