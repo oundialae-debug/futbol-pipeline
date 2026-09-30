@@ -135,22 +135,34 @@ def main():
         ev = vodds.get(str(p.get("event_key")), {}) if isinstance(vodds, dict) else {}
         mk = mercados_directo(ev.get("live_odds"))
         nombres_mercado |= {k[0] for k in mk}
+        # nombres reales de API-Tennis (prueba del 30/09/2026): "To Win", "Total Games in Match", "Set Betting"
         gan = None
         for (n, h), tipos in mk.items():
-            if n in ("Home/Away", "To Win Match", "Match Winner", "Winner") and len(tipos) == 2:
-                v = list(tipos.values())
-                gan = sin_margen(v[0], v[1]) if "Home" not in tipos else sin_margen(tipos.get("Home"), tipos.get("Away"))
+            if n in ("To Win", "Home/Away") and len(tipos) == 2:
+                v = [tipos.get("Home", tipos.get("1")), tipos.get("Away", tipos.get("2"))]
+                if None in v:
+                    v = list(tipos.values())
+                gan = sin_margen(v[0], v[1])
         tot = []
         for (n, h), tipos in mk.items():
-            if n in ("Total Games", "Total games", "Over/Under Games") and "Over" in tipos and "Under" in tipos:
+            if n in ("Total Games in Match", "Total Games") and "Over" in tipos and "Under" in tipos:
                 linea = float(h)
                 pm = sum(v for k, v in r["total"].items() if k > linea)
                 tot.append(f"{linea}: {pm:.0%} ({sin_margen(tipos['Over'], tipos['Under']):.0%})")
         sets = sorted(r["sets"].items(), key=lambda kv: -kv[1])[:2]
+        for (n, h), tipos in mk.items():
+            if n == "Set Betting" and tipos:
+                inv = {k: 1 / float(v) for k, v in tipos.items() if v and float(v) > 1}
+                s = sum(inv.values())
+                sets = [(tuple(int(x) for x in k.replace("-", ":").split(":")), v / s) for k, v in inv.items()
+                        if ":" in k.replace("-", ":")]
+                sets = sorted(((ab, r["sets"].get(ab, 0), pc) for ab, pc in sets), key=lambda z: -z[1])[:2]
+                sets = [((a, b), f"{pm:.0%} (cuota {pc:.0%})") for (a, b), pm, pc in sets]
+                break
         marc = f"{e['sa']}-{e['sb']}, {e['ga']}-{e['gb']}, {p.get('event_game_result')}"
         lin.append(f"| {p.get('event_first_player')} vs {p.get('event_second_player')} | {p.get('event_type_type')} | {marc} | "
                    f"{r['gana_A']:.0%} | {'' if gan is None else f'{gan:.0%}'} | {'; '.join(tot[:3])} | "
-                   f"{', '.join(f'{a}-{b} {v:.0%}' for (a, b), v in sets)} |")
+                   f"{', '.join(f'{a}-{b} ' + (v if isinstance(v, str) else f'{v:.0%}') for (a, b), v in sets)} |")
     # ---- próximos
     lin += ["\n## Próximos de hoy\n", "| hora (Berlín) | torneo | partido | **pronóstico** | prob. | fuente | modelo: gana 1º | "
             "modelo: juegos esperados | modelo: más de 21,5 |", "|---|---|---|---|---|---|---|---|---|"]
