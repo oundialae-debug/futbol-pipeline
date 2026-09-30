@@ -21,11 +21,13 @@ campos no llevan el sufijo _dollars.
 
 Los liquidados tras el corte van en lotes de 100 (/markets/candlesticks);
 los antiguos, de uno en uno a 8 peticiones/s como mucho (el límite de Kalshi
-devuelve 429 con más). `--recientes` / `--antiguos` para hacer solo una parte.
+devuelve 429 con más). `--recientes` / `--antiguos` para hacer solo una parte; `--max=N` limita
+los antiguos a una muestra al azar fija de N (para ir más rápido en ITF).
 
 Los liquidados tras el corte van en lotes de 100 (/markets/candlesticks);
 los antiguos, de uno en uno a 8 peticiones/s como mucho (el límite de Kalshi
-devuelve 429 con más). `--recientes` / `--antiguos` para hacer solo una parte.
+devuelve 429 con más). `--recientes` / `--antiguos` para hacer solo una parte; `--max=N` limita
+los antiguos a una muestra al azar fija de N (para ir más rápido en ITF).
 Corre en GitHub Actions (kalshi_tenis.yml) para no gastar la sesión.
 
 Reanudable: data/tenis/kalshi/precios_<serie>.csv se completa sin repetir.
@@ -134,9 +136,11 @@ def lote_recientes(filas, serie):
 
 def main():
     args = sys.argv[1:]
-    solo = None
+    solo, maximo = None, None
     if args and args[0] in ("--recientes", "--antiguos"):
         solo, args = args[0][2:], args[1:]
+    if args and args[0].startswith("--max="):
+        maximo, args = int(args[0].split("=")[1]), args[1:]
     series = args
     for serie in series:
         m = pd.read_csv(f"{D}/mercados_{serie}.csv")
@@ -147,7 +151,12 @@ def main():
         hechos = set(pd.read_csv(salida)["ticker"]) if os.path.exists(salida) else set()
         pend = m[~m["ticker"].isin(hechos)]
         recientes = pend[pend["origen"] == "markets"].sort_values("close_time").to_dict("records")
-        antiguos = pend[pend["origen"] != "markets"].to_dict("records")
+        antiguos = pend[pend["origen"] != "markets"]
+        if maximo is not None:
+            # muestra al azar fija de los antiguos (semilla 1), descontando los ya hechos
+            todos = m[m["origen"] != "markets"].sample(frac=1, random_state=1).head(maximo)
+            antiguos = antiguos[antiguos["ticker"].isin(todos["ticker"])]
+        antiguos = antiguos.to_dict("records")
         print(f"{serie}: {len(m)} mercados, {len(pend)} pendientes ({len(recientes)} recientes)", flush=True)
         if solo != "antiguos" and recientes:
             pd.DataFrame(lote_recientes(recientes, serie)).to_csv(salida, mode="a", header=not os.path.exists(salida),

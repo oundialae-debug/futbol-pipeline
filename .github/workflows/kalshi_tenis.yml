@@ -1,9 +1,10 @@
 name: Kalshi tenis (precios previos al partido)
 
 # API pública de Kalshi, sin clave; aprobado por el usuario el 30/09/2026.
-# Corre aquí para no gastar la sesión de Claude. Primero los mercados
-# recientes (en lotes de 100), luego los antiguos serie a serie, guardando
-# en la rama que lo lanza después de cada paso. Reanudable.
+# Corre aquí para no gastar la sesión de Claude. Una máquina por serie, en
+# paralelo (el límite de ritmo de Kalshi es por conexión). En ITF, muestra
+# fija de 4.000 mercados antiguos por serie (petición del usuario: reducir
+# tiempo); el resto completo. Guarda en la rama que lo lanza. Reanudable.
 on:
   workflow_dispatch:
   push:
@@ -14,33 +15,40 @@ on:
 jobs:
   precios:
     runs-on: ubuntu-latest
-    timeout-minutes: 350
+    timeout-minutes: 120
     permissions:
       contents: write
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - {serie: KXATPCHALLENGERMATCH, max: ""}
+          - {serie: KXWTACHALLENGERMATCH, max: ""}
+          - {serie: KXATPMATCH, max: ""}
+          - {serie: KXWTAMATCH, max: ""}
+          - {serie: KXATPGTOTAL, max: ""}
+          - {serie: KXATPGSPREAD, max: ""}
+          - {serie: KXWTAGTOTAL, max: ""}
+          - {serie: KXITFMATCH, max: "--max=4000"}
+          - {serie: KXITFWMATCH, max: "--max=4000"}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
       - run: pip install requests pandas
-      - name: Descargar y guardar por partes
+      - name: Descargar ${{ matrix.serie }}
+        run: python -u modelos/tenis/scripts/kalshi_precios.py ${{ matrix.max }} ${{ matrix.serie }}
+      - name: Guardar
+        if: always()
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          guardar() {
-            git add data/tenis/kalshi || true
-            if git diff --staged --quiet; then return 0; fi
-            git commit -q -m "Kalshi tenis: $1 ($(date -u +%Y-%m-%dT%H:%M))"
-            for i in 1 2 3 4; do
-              git pull -q --rebase origin "${GITHUB_REF_NAME}" && git push -q origin "HEAD:${GITHUB_REF_NAME}" && return 0
-              sleep $((2 ** i))
-            done
-          }
-          SERIES="KXATPCHALLENGERMATCH KXWTACHALLENGERMATCH KXATPMATCH KXWTAMATCH KXATPGTOTAL KXATPGSPREAD KXWTAGTOTAL KXITFMATCH KXITFWMATCH"
-          python -u modelos/tenis/scripts/kalshi_precios.py --recientes $SERIES
-          guardar "recientes, todas las series"
-          for s in $SERIES; do
-            python -u modelos/tenis/scripts/kalshi_precios.py --antiguos $s
-            guardar "antiguos $s"
+          git add data/tenis/kalshi/precios_${{ matrix.serie }}.csv || true
+          if git diff --staged --quiet; then echo "sin cambios"; exit 0; fi
+          git commit -q -m "Kalshi tenis: precios ${{ matrix.serie }} ($(date -u +%Y-%m-%dT%H:%M))"
+          for i in 1 2 3 4 5 6; do
+            git pull -q --rebase origin "${GITHUB_REF_NAME}" && git push -q origin "HEAD:${GITHUB_REF_NAME}" && exit 0
+            sleep $((RANDOM % 20 + 5))
           done
-          echo "TERMINADO"
+          exit 1
