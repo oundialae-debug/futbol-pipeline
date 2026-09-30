@@ -72,3 +72,8 @@ carpeta se apunta aquí.
 
 - **Qué:** 109 términos de fútbol en inglés comprobados en `.com`, `.app` e
   `.io`. Resultado en `IDEAS.md`. Consultas DNS y RDAP, sin API.
+
+## 30/09/2026: combinaciones de dos palabras
+
+- **Qué:** 870 combinaciones de término de fútbol + palabra corta, con sus
+  dominios. Resultado en `IDEAS.md`. DNS y RDAP, sin API.

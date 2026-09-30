@@ -98,3 +98,17 @@ stats/data/hub.
   headerstats, tacklestats, offsidestats, freekickstats/data/hub, tapinhub,
   topbinsstats/data/hub, cleansheetstats, cleansheethub.
 - Sin comprobar: marca registrada y apps con ese nombre.
+
+## Dos palabras en inglés (30/09/2026)
+
+Probados 126 términos de fútbol solos: ninguno con `.com` libre. Probadas
+870 combinaciones de un término de fútbol con una palabra corta (lens, edge,
+deck, lab, base, pulse, radar, view, wire, map, book, log, room, zone, side,
+line, post, box, hub, wall, club): unas 340 con `.com`, `.app` e `.io`
+libres.
+
+Las mejores por longitud y pronunciación mundial: **rondolens, rondoedge,
+rondopulse, rondoradar, rondowire, rondomap, pannalens, pannaview,
+nutmegview, backheellens, strikerlens, keeperwire, wingerlens**.
+
+Sin comprobar: marca registrada y apps con ese nombre. `.io` solo es pista.
