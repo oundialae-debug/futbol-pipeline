@@ -19,6 +19,8 @@ jobs:
   vigilar:
     runs-on: ubuntu-latest
     timeout-minutes: 355
+    permissions:
+      contents: write     # sube cada aviso a la rama de tenis para evaluarlo después
     steps:
       - uses: actions/checkout@v4
         with:
@@ -26,7 +28,10 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - run: pip install requests pandas
+      - run: pip install requests pandas numpy
+      - run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
       - name: Vigilar
         env:
           API_TENNIS_KEY: ${{ secrets.API_TENNIS_KEY }}
