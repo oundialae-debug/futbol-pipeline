@@ -1,0 +1,50 @@
+name: Tenis directo (cada 5 min)
+
+# Pronósticos en directo de tenis y registro para medirlos. Autorizado por el usuario el
+# 30/09/2026 (cada 5 minutos, API-Tennis con su clave en el secreto API_TENNIS_KEY; 2
+# peticiones por pasada + get_draw de torneos nuevos). Este fichero vive en main porque
+# GitHub solo programa desde la rama principal, pero TRABAJA Y GUARDA en la rama de tenis
+# ccr-3c3cfe57-etcioo (modelos/tenis/scripts/registro_directo.py):
+#   - modelos/tenis/pronosticos/directo_api.md: tabla de ahora (se sobrescribe)
+#   - data/tenis/api_tennis/registro/<fecha>.csv: registro por partido, mercado y línea
+# Para pararlo: comentar el schedule o borrar este fichero de main.
+on:
+  schedule:
+    - cron: '*/5 * * * *'
+  workflow_dispatch:
+
+concurrency:
+  group: tenis-directo
+  cancel-in-progress: false
+
+jobs:
+  directo:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ccr-3c3cfe57-etcioo
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install requests pandas
+      - name: Pasada
+        env:
+          API_TENNIS_KEY: ${{ secrets.API_TENNIS_KEY }}
+        run: python -u modelos/tenis/scripts/registro_directo.py
+      - name: Guardar en la rama de tenis
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add modelos/tenis/pronosticos/directo_api.md data/tenis/api_tennis || true
+          if git diff --staged --quiet; then exit 0; fi
+          git commit -q -m "Tenis directo ($(date -u +%Y-%m-%dT%H:%M))"
+          for i in 1 2 3 4 5; do
+            git pull -q --rebase origin ccr-3c3cfe57-etcioo && git push -q origin HEAD:ccr-3c3cfe57-etcioo && exit 0
+            sleep $((RANDOM % 10 + 3))
+          done
+          exit 1
