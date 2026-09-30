@@ -1,0 +1,35 @@
+name: Ligas America - datos de un partido (API)
+
+# ~20 llamadas, autorizadas por el usuario para un partido concreto.
+on:
+  workflow_dispatch:
+  push:
+    branches: [ccr-b5b31cbb-u7gf0v]
+    paths: [modelos/ligas_america/scripts/api_partido.py]
+
+jobs:
+  partido:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install requests
+      - name: Datos del partido
+        run: python -u modelos/ligas_america/scripts/api_partido.py
+        timeout-minutes: 5
+        env:
+          HIGHLIGHTLY_API_KEY: ${{ secrets.HIGHLIGHTLY_API_KEY }}
+      - name: Guardar
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add modelos/ligas_america || true
+          if git diff --staged --quiet; then exit 0; fi
+          git commit -m "Ligas America: datos de partido por API ($(date -u +%Y-%m-%dT%H:%M))"
+          git pull --rebase origin ${{ github.ref_name }}
+          git push origin HEAD:${{ github.ref_name }}
