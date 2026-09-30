@@ -76,6 +76,23 @@ duplicados, ganador = perdedor, retiradas.
   2026), es la menos fiable**, y es justo la que hará falta para pronosticar.
 - Retiradas/walkovers: 3-4% en todas las fuentes. Se apartan al medir precio.
 
+## Cruce independiente con tennis-data (30/09/2026)
+
+`scripts/cruce_fuentes.py` -> `data/tenis/cruce_fuentes.md`. 2020-2026, cada
+partido de tennis-data buscado en Sackmann y TennisMyLife (apellido+inicial,
+fecha dentro de [inicio del torneo -3, +20 días]).
+
+- Emparejan 96-98%. Los que no, sobre todo por nombres escritos distinto
+  ("O Connell C.", "Varillas J. P.", "Osorio M." = Camila Osorio), no por
+  datos malos. Si se necesita el 100%, hace falta una tabla de alias.
+- Ganador al revés: 4-8 de ~15.000 (casi todos retiradas), salvo
+  TennisMyLife WTA: 24, varios de Rouen 2026 (lo que añade él, otra vez).
+- Marcador distinto en partidos completos: 0,3% (TennisMyLife WTA 1%).
+- **tennis-data también falla**: da ganador a De Minaur contra Fritz en el
+  Masters 2024 (ganó Fritz), Sardegna Open 2021 como pista dura (era
+  tierra), Acapulco 2020 WTA como tierra (era dura). Con tres fuentes decide
+  la mayoría; ninguna es perfecta.
+
 ## Plan (en este orden)
 
 1. Ganador del partido, único mercado con cierre de Pinnacle.
