@@ -16,6 +16,7 @@ import numpy as np
 import pandas as pd
 
 sys.path.insert(0, "modelos/tenis/scripts")
+import calibrar_juegos as C  # noqa: E402
 import juegos_directo as J  # noqa: E402
 
 SAL = "data/tenis/api_tennis/evaluacion_juegos.md"
@@ -79,6 +80,26 @@ def main():
         for _, r in s.iterrows():
             lin.append(f"| {J.torneo(r.tipo, r.torneo)}: {r.jugador1} vs {r.jugador2} | {r.linea:g} | "
                        f"{r.cuota_menos:.2f} | {r.juegos_totales} | {'gana' if r.gana else 'pierde'} |")
+    # avisos reales del vigilante (cada minuto, regla del usuario), con su cuota de la API
+    av = [pd.read_csv(f) for f in sorted(glob.glob("data/tenis/api_tennis/avisos/*.csv"))]
+    if av:
+        a = pd.concat(av).merge(res[["event_key", "juegos_totales"]], on="event_key")
+        a["gana"] = np.where(a.lado == "menos", a.juegos_totales < a.linea, a.juegos_totales > a.linea)
+        a["benef"] = np.where(a.gana, a.cuota_api.astype(float) - 1, -1.0)
+        lin += ["", "## Avisos del vigilante (lo que llega al móvil)", "",
+                "| lado | avisos resueltos | aciertos | beneficio medio (cuota API) | sigmas |", "|---|---|---|---|---|"]
+        for lado, g in a.groupby("lado"):
+            lin.append(resumen(lado, g).replace("| ", f"| ", 1))
+        if not len(a):
+            lin.append("| (ninguno resuelto aún) | 0 | | | |")
+    cal = C.ajustar()
+    lin += ["", "## Aprendizaje (recalibración del modelo)", "",
+            f"Partidos resueltos: {cal['partidos']} ({cal['filas']} líneas). Activa: **{'sí' if cal['activo'] else 'no'}** "
+            f"(hace falta {C.MIN_PARTIDOS}+ partidos y que mejore al modelo en partidos que no vio)."]
+    if cal.get("coef"):
+        lin.append(f"Brier (menor es mejor): modelo {cal['brier_modelo']:.4f}, casa {cal['brier_casa']:.4f}, "
+                   f"recalibrado (validado por partidos) {cal['brier_recalibrado_cv']:.4f}. "
+                   f"Sesgo del modelo hacia el más: {cal['sesgo_modelo_mas']:+.1%}.")
     open(SAL, "w").write("\n".join(lin) + "\n")
     print(f"evaluación: {len(primera)} partidos, {len(s)} señales")
 

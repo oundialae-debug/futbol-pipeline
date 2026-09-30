@@ -5,7 +5,7 @@ Vigilante de más/menos juegos en directo con aviso al móvil (30/09/2026). Lo c
 (CADA=60), a petición del usuario.
 
 Regla (pedida por el usuario): en la línea principal de cada partido (la más cercana al 50% según
-la casa), el modelo Y la casa (sin margen) dan más del 54% al mismo lado (más o menos), durante
+la casa), el modelo Y la casa (sin margen) dan más del 54% al MENOS (el más se quitó el 30/09), durante
 2 pasadas seguidas (~1-2 min) para no avisar por un vaivén puntual, y la casa no
 pasa del 75%, salvo que la cuota real de la API para ese lado pague 1,33 o más. Un aviso por partido y lado.
 Aviso por ntfy (topic en NTFY_TOPIC):
@@ -21,6 +21,7 @@ import requests
 
 sys.path.insert(0, "modelos/tenis/scripts")
 import api_tennis as A  # noqa: E402
+import calibrar_juegos as C  # noqa: E402
 import juegos_directo as J  # noqa: E402
 import markov_tenis as K  # noqa: E402
 import pronosticos_api as Q  # noqa: E402
@@ -49,6 +50,7 @@ def avisar(txt, jugadores=()):
         print(f"ntfy falló: {type(e).__name__}", flush=True)
 
 
+CAL = C.cargar()   # recalibración aprendida de lo recogido (se relee al arrancar cada ejecución)
 TOTALES, CASA = {}, {}   # por partido, de la última pasada: reparto de juegos del modelo y líneas de la casa
 
 
@@ -59,9 +61,11 @@ def escalera(k, linea, lado):
     tot, casa, out = TOTALES.get(k, {}), CASA.get(k, {}), []
     for d in (-2, -1, 1, 2):
         ln = linea + d
-        mo = sum(x for g, x in tot.items() if g > ln)
-        mo = mo if lado == "más" else 1 - mo
         pc = casa.get(ln)
+        mo = sum(x for g, x in tot.items() if g > ln)
+        if pc is not None:
+            mo = C.aplicar(CAL, mo, pc)
+        mo = mo if lado == "más" else 1 - mo
         pc = None if pc is None else (pc if lado == "más" else 1 - pc)
         ref = pc if pc else mo
         if not 0.01 < ref < 0.99:
@@ -69,6 +73,33 @@ def escalera(k, linea, lado):
         txt = f"{ln:g}: {mo:.0%}" + (f"/{pc:.0%}" if pc else "") + f" mín {1 / ref:.2f}"
         out.append(txt.replace(".", ","))
     return " · ".join(out)
+
+
+AVISOS = "data/tenis/api_tennis/avisos"
+
+
+def guardar(x, lado, pmod, pcas, real):
+    """Cada aviso queda en data/tenis/api_tennis/avisos/<fecha>.csv (y se sube a la rama) para
+    evaluarlo en papel con el resultado final (evaluar_juegos.py)."""
+    import csv
+    import subprocess
+    from datetime import datetime, timezone
+    ahora = datetime.now(timezone.utc)
+    os.makedirs(AVISOS, exist_ok=True)
+    ruta = f"{AVISOS}/{ahora:%Y-%m-%d}.csv"
+    nuevo = not os.path.exists(ruta)
+    with open(ruta, "a", newline="") as fh:
+        w = csv.writer(fh)
+        if nuevo:
+            w.writerow(["hora", "event_key", "tipo", "torneo", "jugador1", "jugador2", "lado", "linea",
+                        "prob_modelo", "prob_casa", "cuota_api", "calibrado"])
+        w.writerow([f"{ahora:%Y-%m-%d %H:%M}", x.event_key, x.tipo, x.torneo, x.jugador1, x.jugador2, lado,
+                    x.linea, round(pmod, 4), round(pcas, 4), real, bool(CAL.get("activo"))])
+    if os.environ.get("GITHUB_ACTIONS"):
+        orden = (f'git add {AVISOS} && git commit -q -m "Tenis aviso ({ahora:%Y-%m-%dT%H:%M})" && '
+                 'for i in 1 2 3 4 5; do git pull -q --rebase origin ccr-3c3cfe57-etcioo && '
+                 'git push -q origin HEAD:ccr-3c3cfe57-etcioo && exit 0; sleep 5; done; exit 1')
+        subprocess.run(orden, shell=True, timeout=120)
 
 
 def apellido(n):
@@ -107,7 +138,8 @@ def lineas():
                           "jugador2": p.get("event_second_player"), "mercado": "total_juegos", "linea": ln,
                           "cuota": t["Over"], "cuota_rival": t["Under"],
                           "prob_mercado": Q.sin_margen(t["Over"], t["Under"]),
-                          "prob_modelo": sum(x for k, x in r["total"].items() if k > ln)})
+                          "prob_modelo": C.aplicar(CAL, sum(x for k, x in r["total"].items() if k > ln),
+                                                   Q.sin_margen(t["Over"], t["Under"]))})
     return J.principales(pd.DataFrame(filas)) if filas else pd.DataFrame()
 
 
@@ -121,8 +153,9 @@ def main():
             vistos = set()
             for _, x in pr.iterrows():
                 pm, mo = float(x.prob_mercado), float(x.prob_modelo)
-                lado = ("más" if pm > UMBRAL and mo > UMBRAL else
-                        "menos" if 1 - pm > UMBRAL and 1 - mo > UMBRAL else None)
+                # solo el MENOS (30/09, usuario): en el más el modelo exagera y la línea que sube va en contra.
+                # Se reabre si la evaluación en papel demuestra lo contrario.
+                lado = "menos" if 1 - pm > UMBRAL and 1 - mo > UMBRAL else None
                 k = x.event_key
                 vistos.add(k)
                 n = racha[k][1] + 1 if lado and racha.get(k, (None, 0))[0] == lado else (1 if lado else 0)
@@ -131,6 +164,7 @@ def main():
                 real = float(x.cuota if lado == "más" else x.cuota_rival)
                 if lado and n >= PASADAS and (pcas <= TECHO or real >= CUOTA_BUENA) and (k, lado) not in avisados:
                     avisados.add((k, lado))
+                    guardar(x, lado, pmod, pcas, real)
                     ln, mn = f"{x.linea:g}".replace(".", ","), f"{1 / pcas:.2f}".replace(".", ",")
                     avisar(f"{x.jugador1} VS {x.jugador2} | {lado} de {ln} juegos | modelo {pmod:.0%} / cuota {pcas:.0%} | "
                            f"mínima {mn} | {J.torneo(x.tipo, x.torneo)}\n"

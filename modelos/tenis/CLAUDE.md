@@ -493,6 +493,18 @@ pasar el canal a un secreto NTFY_TOPIC). Formato: `Jugador VS Jugador | más/men
 modelo % / cuota % | mínima | torneo`. La regla la fijó el usuario; NO está medida: el registro de
 cada 5 minutos y evaluar_juegos.py son los que dirán si acierta.
 
+## Solo menos, avisos guardados y aprendizaje (30/09/2026)
+
+- El vigilante ya solo avisa del MENOS: en el más la línea que sube va en contra y el modelo
+  exagera (sesgo +34% en los 11 primeros partidos). Reabrir el más SOLO si la evaluación lo avala.
+- Cada aviso va a `data/tenis/api_tennis/avisos/<fecha>.csv` (el vigilante lo sube a la rama) y
+  `evaluar_juegos.py` lo cruza con el resultado: sección "Avisos del vigilante".
+- `calibrar_juegos.py`: recalibración logística p = sig(a + b·logit(modelo) + c·logit(casa)),
+  cada partido pesa igual, validada por bloques de partidos. Se ACTIVA sola con 30+ partidos si
+  mejora el Brier del modelo en partidos no vistos. Con 11 partidos la validación ya daba 0,183
+  frente a 0,257 del modelo y 0,236 de la casa, pero con 11 partidos de UNA mañana eso puede ser
+  "hoy hubo pocos juegos", no aprendizaje: por eso el mínimo de 30.
+
 ## Plan (en este orden)
 
 1. Ganador del partido, único mercado con cierre de Pinnacle.
