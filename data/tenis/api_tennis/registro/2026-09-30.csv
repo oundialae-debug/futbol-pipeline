@@ -1,0 +1,100 @@
+hora,event_key,tipo,torneo,superficie,jugador1,jugador2,sets,juegos,puntos,saca,mercado,linea,seleccion,cuota,cuota_rival,prob_mercado,prob_modelo
+2026-09-30 10:19,12167104,Itf Women Singles,W15 Monastir 28,Hard,P. Berezina,A. Kumru,1-1,0-0,40 - 40,1,ganador,,jugador1,1.95,1.8,0.48,0.4759337507775546
+2026-09-30 10:19,12167033,Itf Men Singles,M15 Telavi 2 (Georgia),Clay,N. Rispoli,S. Purtseladze,0-0,0-0,15 - 0,2,total_juegos,21.5,mas,1.833,1.833,0.5,0.5772075310361368
+2026-09-30 10:19,12167033,Itf Men Singles,M15 Telavi 2 (Georgia),Clay,N. Rispoli,S. Purtseladze,0-0,0-0,15 - 0,2,sets,2:0,2:0,3,,0.2978339350180505,0.10796764404225222
+2026-09-30 10:19,12167033,Itf Men Singles,M15 Telavi 2 (Georgia),Clay,N. Rispoli,S. Purtseladze,0-0,0-0,15 - 0,2,sets,0:2,0:2,2.75,,0.3249097472924187,0.4495873376969784
+2026-09-30 10:19,12167033,Itf Men Singles,M15 Telavi 2 (Georgia),Clay,N. Rispoli,S. Purtseladze,0-0,0-0,15 - 0,2,sets,2:1,2:1,5,,0.1787003610108303,0.1368161072434027
+2026-09-30 10:19,12167033,Itf Men Singles,M15 Telavi 2 (Georgia),Clay,N. Rispoli,S. Purtseladze,0-0,0-0,15 - 0,2,sets,1:2,1:2,4.5,,0.19855595667870032,0.3056289110173669
+2026-09-30 10:19,12167033,Itf Men Singles,M15 Telavi 2 (Georgia),Clay,N. Rispoli,S. Purtseladze,0-0,0-0,15 - 0,2,ganador,,jugador1,1.95,1.8,0.48,0.2447837512856548
+2026-09-30 10:19,12167058,Challenger Women Singles,Adana (Turkey) - Qualification,Hard,L. Boisson,M. Kubka,1-0,4-2,15 - 15,2,total_juegos,18.5,mas,1.8,1.909,0.5146939875977352,0.7539567397339711
+2026-09-30 10:19,12167058,Challenger Women Singles,Adana (Turkey) - Qualification,Hard,L. Boisson,M. Kubka,1-0,4-2,15 - 15,2,sets,2:0,2:0,1.05,,0.8824940047961631,0.8607745448662575
+2026-09-30 10:19,12167058,Challenger Women Singles,Adana (Turkey) - Qualification,Hard,L. Boisson,M. Kubka,1-0,4-2,15 - 15,2,sets,2:1,2:1,12,,0.07721822541966428,0.06055524776281983
+2026-09-30 10:19,12167058,Challenger Women Singles,Adana (Turkey) - Qualification,Hard,L. Boisson,M. Kubka,1-0,4-2,15 - 15,2,sets,1:2,1:2,23,,0.040287769784172665,0.07867020737092265
+2026-09-30 10:19,12167058,Challenger Women Singles,Adana (Turkey) - Qualification,Hard,L. Boisson,M. Kubka,1-0,4-2,15 - 15,2,ganador,,jugador1,1.012,23,0.9578544061302682,0.9213297926290773
+2026-09-30 10:19,12167065,Itf Men Singles,M15 Baku 2 (Azerbaijan),Hard,M. Krivoshchekov,M. Elesin,1-1,5-5,15 - 15,1,ganador,,jugador1,1.7,2.05,0.5466666666666666,0.5091757694140395
+2026-09-30 10:19,12167066,Itf Men Singles,M15 Baku 2 (Azerbaijan),Hard,M. Walters,E. Kypriotis,1-1,4-0,40 - 15,1,ganador,,jugador1,1.002,34,0.9713730643963203,0.9966001188330386
+2026-09-30 10:19,12167067,Itf Men Singles,M15 Monastir 33,Hard,A. Colombo,E. Lumsden,1-0,2-5,0 - 0,1,ganador,,jugador1,1.909,1.909,0.5,0.41962614217764393
+2026-09-30 10:19,12167068,Itf Men Singles,M15 Monastir 33,Hard,J. Echeverria,L. G. Verwerft,0-1,0-1,0 - 0,1,ganador,,jugador1,2.05,1.7,0.4533333333333333,0.49641965141559163
+2026-09-30 10:19,12167070,Itf Men Singles,M15 Monastir 33,Hard,V. Ryden,A. Ouakaa,0-1,1-5,15 - 15,1,ganador,,jugador1,41,1,0.023809523809523808,0.004789414536450765
+2026-09-30 10:19,12167085,Itf Men Singles,M15 Sharm ElSheikh 11,Hard,M. Krajci,P. O. Fellin,1-0,2-0,0 - 0,1,ganador,,jugador1,1.055,8.5,0.8895866038723181,0.9251644350336007
+2026-09-30 10:19,12167086,Itf Men Singles,M15 Sharm ElSheikh 11,Hard,F. Livet Novkirichka,G. El Feky,0-0,1-4,0 - 30,1,ganador,,jugador1,2.5,1.5,0.375,0.2938289858016003
+2026-09-30 10:19,12167087,Itf Men Singles,M15 Sharm ElSheikh 11,Hard,F. Zakaria,K. Ibrahim,0-0,4-5,30 - 15,1,ganador,,jugador1,1.3,3.4,0.7234042553191489,0.2847682303696169
+2026-09-30 10:19,12167100,Itf Men Singles,M15 Sibenik,Clay,I. Biletic,N. Toffanin,0-0,2-0,40 - 40,1,ganador,,jugador1,1.2,4.333,0.7831194650280138,0.5132380780345929
+2026-09-30 10:19,12167030,Itf Men Singles,M15 Telavi 2 (Georgia),Clay,G. Bosio,K. Malirz,1-0,1-0,30 - 40,2,total_juegos,18.5,mas,2.5,1.5,0.375,0.5096467660737322
+2026-09-30 10:19,12167030,Itf Men Singles,M15 Telavi 2 (Georgia),Clay,G. Bosio,K. Malirz,1-0,1-0,30 - 40,2,sets,2:0,2:0,1.125,,0.8017621145374451,0.7607934284248965
+2026-09-30 10:19,12167030,Itf Men Singles,M15 Telavi 2 (Georgia),Clay,G. Bosio,K. Malirz,1-0,1-0,30 - 40,2,sets,2:1,2:1,7,,0.1288546255506608,0.17788330880975747
+2026-09-30 10:19,12167030,Itf Men Singles,M15 Telavi 2 (Georgia),Clay,G. Bosio,K. Malirz,1-0,1-0,30 - 40,2,sets,1:2,1:2,13,,0.06938325991189428,0.06132326276534595
+2026-09-30 10:19,12167030,Itf Men Singles,M15 Telavi 2 (Georgia),Clay,G. Bosio,K. Malirz,1-0,1-0,30 - 40,2,ganador,,jugador1,1.02,13,0.927246790299572,0.9386767372346538
+2026-09-30 10:19,12167108,Itf Women Singles,W15 Monastir 28,Hard,K. Ruchkina,K. Blazkova,1-0,4-1,15 - 15,1,ganador,,jugador1,1,41,0.9761904761904762,0.9858217297731243
+2026-09-30 10:19,12167118,Itf Women Singles,W35 Baza,Hard,C. Brace,E. Tomase,1-0,0-0,30 - 30,1,ganador,,jugador1,1.062,8,0.8828073273008165,0.9679342965943482
+2026-09-30 10:19,12167120,Itf Women Singles,W35 Baza,Hard,K. Novak,M. Teixido Garcia,0-0,3-4,0 - 0,2,ganador,,jugador1,1.571,2.25,0.5888510861031143,0.590842198220148
+2026-09-30 10:19,12167127,Itf Women Singles,W35 Reims,Hard,M. Ciocan,M. Szostak,0-1,0-1,40 - A,2,ganador,,jugador1,7.5,1.071,0.12495624781239062,0.05178350502220307
+2026-09-30 10:19,12167130,Itf Women Singles,W35 Reims,Hard,A. Nesmianovych,G. M. Dittmann,0-0,1-2,0 - 30,2,ganador,,jugador1,12,1.025,0.07869481765834932,0.32811758509704425
+2026-09-30 10:19,12167158,Itf Women Singles,W15 Sharm ElSheikh 13,Hard,S. Samir,L. Rothensteiner,1-1,0-0,0 - 0,2,ganador,,jugador1,1.7,2.05,0.5466666666666666,0.8850010004577964
+2026-09-30 10:19,12167161,Itf Women Singles,W15 Sharm ElSheikh 13,Hard,A. Vasileva,A. Sushkova,0-1,1-5,0 - 15,2,ganador,,jugador1,0,1,,0.004693688110798585
+2026-09-30 10:19,12167195,Itf Women Singles,W15 Varna,Clay,J. Stamatova,O. Simion,1-1,0-1,40 - 40,1,ganador,,jugador1,6,1.111,0.15623681620025312,0.3085131623825776
+2026-09-30 10:19,12166787,Itf Men Singles,M25 Kigali,Clay,L. Van Herck,C. Hemery,0-0,0-0,30 - 40,1,ganador,,jugador1,10,1.03,0.09338168631006347,0.03989874191374349
+2026-09-30 10:19,12166182,Challenger Men Singles,Mouilleron-Le-Captif,Hard,P. Henning,T. Schoolkate,0-1,2-4,0 - 0,1,sets,0:2,0:2,1.015,,0.9355529981348466,0.8641449383953982
+2026-09-30 10:19,12166182,Challenger Men Singles,Mouilleron-Le-Captif,Hard,P. Henning,T. Schoolkate,0-1,2-4,0 - 0,1,sets,2:1,2:1,41,,0.023160641295289493,0.07773802301700378
+2026-09-30 10:19,12166182,Challenger Men Singles,Mouilleron-Le-Captif,Hard,P. Henning,T. Schoolkate,0-1,2-4,0 - 0,1,sets,1:2,1:2,23,,0.04128636056986388,0.05811703858759809
+2026-09-30 10:19,12166182,Challenger Men Singles,Mouilleron-Le-Captif,Hard,P. Henning,T. Schoolkate,0-1,2-4,0 - 0,1,total_juegos,18.5,mas,1.909,1.8,0.4853060124022647,0.7961050598648545
+2026-09-30 10:19,12166182,Challenger Men Singles,Mouilleron-Le-Captif,Hard,P. Henning,T. Schoolkate,0-1,2-4,0 - 0,1,ganador,,jugador1,41,1.004,0.023902485477573565,0.07773802301700378
+2026-09-30 10:19,12166490,Atp Singles,Tokyo,Hard,M. Arnaldi,R. Sakamoto,1-1,0-0,0 - 0,1,total_juegos,27.5,mas,1.615,2.2,0.5766710353866317,0.6549546054773383
+2026-09-30 10:19,12166490,Atp Singles,Tokyo,Hard,M. Arnaldi,R. Sakamoto,1-1,0-0,0 - 0,1,sets,0:2,0:2,4,,0.23247232472324725,0
+2026-09-30 10:19,12166490,Atp Singles,Tokyo,Hard,M. Arnaldi,R. Sakamoto,1-1,0-0,0 - 0,1,sets,2:1,2:1,2.625,,0.35424354243542433,0.4595050789052645
+2026-09-30 10:19,12166490,Atp Singles,Tokyo,Hard,M. Arnaldi,R. Sakamoto,1-1,0-0,0 - 0,1,sets,1:2,1:2,2.25,,0.4132841328413284,0.5404949210947354
+2026-09-30 10:19,12166490,Atp Singles,Tokyo,Hard,M. Arnaldi,R. Sakamoto,1-1,0-0,0 - 0,1,ganador,,jugador1,2,1.8,0.47368421052631576,0.4595050789052645
+2026-09-30 10:19,12166554,Wta Singles,Beijing,Hard,T. Preston,T. Korpatsch,1-0,5-5,30 - 15,2,sets,2:0,2:0,1.571,,0.5807115769838779,0.6659557010156703
+2026-09-30 10:19,12166554,Wta Singles,Beijing,Hard,T. Preston,T. Korpatsch,1-0,5-5,30 - 15,2,sets,2:1,2:1,3.6,,0.25341607984490894,0.20489422470166158
+2026-09-30 10:19,12166554,Wta Singles,Beijing,Hard,T. Preston,T. Korpatsch,1-0,5-5,30 - 15,2,sets,1:2,1:2,5.5,,0.1658723431712131,0.1291500742826682
+2026-09-30 10:19,12166554,Wta Singles,Beijing,Hard,T. Preston,T. Korpatsch,1-0,5-5,30 - 15,2,total_juegos,21.5,mas,2.375,1.533,0.3922722620266121,0.3340442989843298
+2026-09-30 10:19,12166554,Wta Singles,Beijing,Hard,T. Preston,T. Korpatsch,1-0,5-5,30 - 15,2,ganador,,jugador1,1.142,5.5,0.8280638361939174,0.8708499257173316
+2026-09-30 10:19,12166592,Itf Men Singles,M25 Darwin,Hard,S. Ryan Ziegann,Ja. Delaney,0-1,1-2,30 - 15,1,ganador,,jugador1,19,1.02,0.050949050949050945,0.11765396676829504
+2026-09-30 10:19,12166593,Itf Men Singles,M25 Darwin,Hard,S. Vujic,C. Sinclair,0-0,2-2,15 - 15,1,ganador,,jugador1,2.625,1.444,0.3548783484885721,0.4514081577259321
+2026-09-30 10:19,12166621,Challenger Women Singles,Adana (Turkey) - Qualification,Hard,A. Ruzic,J. Riera,1-0,3-2,30 - 15,1,total_juegos,18.5,mas,2,1.727,0.4633753689294338,0.5978226396785548
+2026-09-30 10:19,12166621,Challenger Women Singles,Adana (Turkey) - Qualification,Hard,A. Ruzic,J. Riera,1-0,3-2,30 - 15,1,sets,2:0,2:0,1.1,,0.8364312267657993,0.8254585132056642
+2026-09-30 10:19,12166621,Challenger Women Singles,Adana (Turkey) - Qualification,Hard,A. Ruzic,J. Riera,1-0,3-2,30 - 15,1,sets,2:1,2:1,9,,0.10223048327137547,0.1069193755581691
+2026-09-30 10:19,12166621,Challenger Women Singles,Adana (Turkey) - Qualification,Hard,A. Ruzic,J. Riera,1-0,3-2,30 - 15,1,sets,1:2,1:2,15,,0.06133828996282528,0.06762211123616667
+2026-09-30 10:19,12166621,Challenger Women Singles,Adana (Turkey) - Qualification,Hard,A. Ruzic,J. Riera,1-0,3-2,30 - 15,1,ganador,,jugador1,1.03,15,0.9357454772301934,0.9323778887638334
+2026-09-30 10:19,12166713,Itf Men Singles,M25 Slobozia (Romania),Clay,S. A. Andreescu,R. M. Papoe,0-0,3-5,30 - 30,1,ganador,,jugador1,5.5,1.125,0.16981132075471697,0.08907436655947445
+2026-09-30 10:19,12166717,Itf Men Singles,M25 Slobozia (Romania),Clay,R. Guna,F. Broska,0-1,3-5,0 - 0,2,ganador,,jugador1,21,1.002,0.04554131442596127,0.008945086393063144
+2026-09-30 10:19,12166718,Itf Men Singles,M25 Slobozia (Romania),Clay,F. J. Planinsek,A. Berge Nourescu,1-0,4-3,15 - 0,1,ganador,,jugador1,1.002,21,0.9544586855740387,0.9657774574177465
+2026-09-30 10:19,12166719,Itf Men Singles,M25 Slobozia (Romania),Clay,V. Vanta,L. Pokorny,0-0,1-3,0 - 15,1,ganador,,jugador1,10,1.03,0.09338168631006347,0.14446549471937292
+2026-09-30 10:19,12166785,Itf Men Singles,M25 Kigali,Clay,A. Nefve,A. Beckley,1-0,0-1,0 - 40,2,ganador,,jugador1,1.833,1.833,0.5,0.35343850061708876
+2026-09-30 10:19,12166178,Challenger Men Singles,Mouilleron-Le-Captif,Hard,L. Broady,D. Stricker,0-1,5-2,15 - 0,2,total_juegos,28.5,mas,2,1.727,0.4633753689294338,0.505974782713337
+2026-09-30 10:19,12166178,Challenger Men Singles,Mouilleron-Le-Captif,Hard,L. Broady,D. Stricker,0-1,5-2,15 - 0,2,sets,0:2,0:2,8,,0.11322065900061626,0.06355546131062487
+2026-09-30 10:19,12166178,Challenger Men Singles,Mouilleron-Le-Captif,Hard,L. Broady,D. Stricker,0-1,5-2,15 - 0,2,sets,2:1,2:1,2.5,,0.362306108801972,0.3991376941172876
+2026-09-30 10:19,12166178,Challenger Men Singles,Mouilleron-Le-Captif,Hard,L. Broady,D. Stricker,0-1,5-2,15 - 0,2,sets,1:2,1:2,1.727,,0.5244732321974117,0.5373068445720877
+2026-09-30 10:19,12166178,Challenger Men Singles,Mouilleron-Le-Captif,Hard,L. Broady,D. Stricker,0-1,5-2,15 - 0,2,ganador,,jugador1,2.5,1.5,0.375,0.3991376941172876
+2026-09-30 10:19,12166789,Itf Men Singles,M25 Kigali,Clay,A. Venkataraman,N. Grunewald,0-1,3-4,40 - 30,2,ganador,,jugador1,5,1.142,0.18593292087267993,0.1244972247058085
+2026-09-30 10:19,12166825,Itf Women Singles,W75 Quinta do Lago,Hard,N. Bains,M. Martinez Vaquero,1-1,0-0,0 - 0,2,ganador,,jugador1,1.222,4,0.7659900421294522,0.6207261361448378
+2026-09-30 10:19,12166826,Itf Women Singles,W75 Quinta do Lago,Hard,R. Brantmeier,K. Swan,0-0,6-6,4 - 6,2,ganador,,jugador1,2.625,1.444,0.3548783484885721,0.12071869764947912
+2026-09-30 10:19,12166828,Itf Women Singles,W75 Quinta do Lago,Hard,A. Nagy,A. Voloshchuk,1-0,5-3,40 - 30,2,ganador,,jugador1,1.04,10,0.9057971014492753,0.9714984328492566
+2026-09-30 10:19,12166868,Itf Women Singles,W35 Reims,Hard,T. J. Brockmann,D. Tran,0-0,1-2,0 - 15,2,ganador,,jugador1,1.2,4.333,0.7831194650280138,0.5888555926006286
+2026-09-30 10:19,12166948,Atp Singles,Beijing,Hard,Z. Zhang,A. Gea,0-0,1-2,15 - 30,1,total_juegos,20.5,mas,1.8,1.909,0.5146939875977352,0.6491919777388109
+2026-09-30 10:19,12166948,Atp Singles,Beijing,Hard,Z. Zhang,A. Gea,0-0,1-2,15 - 30,1,sets,2:0,2:0,13,,0.06836204132616473,0.058244046611137246
+2026-09-30 10:19,12166948,Atp Singles,Beijing,Hard,Z. Zhang,A. Gea,0-0,1-2,15 - 30,1,sets,0:2,0:2,1.444,,0.6154477404710121,0.569086116735569
+2026-09-30 10:19,12166948,Atp Singles,Beijing,Hard,Z. Zhang,A. Gea,0-0,1-2,15 - 30,1,sets,2:1,2:1,8,,0.11108831715501769,0.10593624972114574
+2026-09-30 10:19,12166948,Atp Singles,Beijing,Hard,Z. Zhang,A. Gea,0-0,1-2,15 - 30,1,sets,1:2,1:2,4.333,,0.20510190104780554,0.2667335869321479
+2026-09-30 10:19,12166948,Atp Singles,Beijing,Hard,Z. Zhang,A. Gea,0-0,1-2,15 - 30,1,ganador,,jugador1,5.5,1.142,0.17193616380608248,0.16418029633228295
+2026-09-30 10:19,12166967,Wta Singles,Beijing,Hard,M. Hontama,K. Boulter,0-0,3-4,15 - 30,2,sets,2:0,2:0,13,,0.06819806807330381,0.03923317999289456
+2026-09-30 10:19,12166967,Wta Singles,Beijing,Hard,M. Hontama,K. Boulter,0-0,3-4,15 - 30,2,sets,0:2,0:2,1.615,,0.5489627770606499,0.5958922504564728
+2026-09-30 10:19,12166967,Wta Singles,Beijing,Hard,M. Hontama,K. Boulter,0-0,3-4,15 - 30,2,sets,2:1,2:1,5.5,,0.161195433627809,0.117194937529589
+2026-09-30 10:19,12166967,Wta Singles,Beijing,Hard,M. Hontama,K. Boulter,0-0,3-4,15 - 30,2,sets,1:2,1:2,4,,0.22164372123823736,0.24767963202104384
+2026-09-30 10:19,12166967,Wta Singles,Beijing,Hard,M. Hontama,K. Boulter,0-0,3-4,15 - 30,2,total_juegos,21.5,mas,1.8,1.909,0.5146939875977352,0.5249288133075188
+2026-09-30 10:19,12166967,Wta Singles,Beijing,Hard,M. Hontama,K. Boulter,0-0,3-4,15 - 30,2,ganador,,jugador1,4.333,1.222,0.21998199819981995,0.15642811752248342
+2026-09-30 10:19,12166970,Challenger Men Singles,Bari (Italy) - Qualification,Clay,G. Cadenasso,L. Angelini,0-1,5-3,40 - 40,1,total_juegos,30.5,mas,2,1.727,0.4633753689294338,0.5249868460407199
+2026-09-30 10:19,12166970,Challenger Men Singles,Bari (Italy) - Qualification,Clay,G. Cadenasso,L. Angelini,0-1,5-3,40 - 40,1,sets,0:2,0:2,21,,0.04361021196014056,0.06322443644130812
+2026-09-30 10:19,12166970,Challenger Men Singles,Bari (Italy) - Qualification,Clay,G. Cadenasso,L. Angelini,0-1,5-3,40 - 40,1,sets,2:1,2:1,1.333,,0.6870325965213442,0.6934044992847421
+2026-09-30 10:19,12166970,Challenger Men Singles,Bari (Italy) - Qualification,Clay,G. Cadenasso,L. Angelini,0-1,5-3,40 - 40,1,sets,1:2,1:2,3.4,,0.2693571915185152,0.24337106427394986
+2026-09-30 10:19,12166970,Challenger Men Singles,Bari (Italy) - Qualification,Clay,G. Cadenasso,L. Angelini,0-1,5-3,40 - 40,1,ganador,,jugador1,1.333,3.25,0.7091424830896792,0.6934044992847421
+2026-09-30 10:19,12167000,Challenger Men Singles,Bari (Italy) - Qualification,Clay,J. C. Martin Manzano,J. Clarke,1-0,4-4,0 - 0,2,total_juegos,28.5,mas,1.8,1.909,0.5146939875977352,0.5073317340992278
+2026-09-30 10:19,12167000,Challenger Men Singles,Bari (Italy) - Qualification,Clay,J. C. Martin Manzano,J. Clarke,1-0,4-4,0 - 0,2,sets,2:0,2:0,2.375,,0.3740701381509033,0.40424000460623194
+2026-09-30 10:19,12167000,Challenger Men Singles,Bari (Italy) - Qualification,Clay,J. C. Martin Manzano,J. Clarke,1-0,4-4,0 - 0,2,sets,2:1,2:1,4,,0.22210414452709884,0.21031859038854497
+2026-09-30 10:19,12167000,Challenger Men Singles,Bari (Italy) - Qualification,Clay,J. C. Martin Manzano,J. Clarke,1-0,4-4,0 - 0,2,sets,1:2,1:2,2.2,,0.40382571732199785,0.3854414050052231
+2026-09-30 10:19,12167000,Challenger Men Singles,Bari (Italy) - Qualification,Clay,J. C. Martin Manzano,J. Clarke,1-0,4-4,0 - 0,2,ganador,,jugador1,1.615,2.2,0.5766710353866317,0.6145585949947769
+2026-09-30 10:19,12167024,Challenger Women Singles,Adana (Turkey) - Qualification,Hard,E. Andreeva,S. Waltert,1-0,2-0,A - 40,1,total_juegos,17.5,mas,1.666,2.1,0.5576208178438662,0.6286429174886444
+2026-09-30 10:19,12167024,Challenger Women Singles,Adana (Turkey) - Qualification,Hard,E. Andreeva,S. Waltert,1-0,2-0,A - 40,1,sets,2:0,2:0,1.166,,0.7921733275240623,0.7992365149757839
+2026-09-30 10:19,12167024,Challenger Women Singles,Adana (Turkey) - Qualification,Hard,E. Andreeva,S. Waltert,1-0,2-0,A - 40,1,sets,2:1,2:1,10,,0.09236740998930568,0.09862979539732891
+2026-09-30 10:19,12167024,Challenger Women Singles,Adana (Turkey) - Qualification,Hard,E. Andreeva,S. Waltert,1-0,2-0,A - 40,1,sets,1:2,1:2,8,,0.11545926248663207,0.10213368962688744
+2026-09-30 10:19,12167024,Challenger Women Singles,Adana (Turkey) - Qualification,Hard,E. Andreeva,S. Waltert,1-0,2-0,A - 40,1,ganador,,jugador1,1.083,8,0.8807662666519872,0.8978663103731125
