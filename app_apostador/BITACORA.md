@@ -116,3 +116,10 @@ carpeta se apunta aquí.
 - **Por qué:** el usuario pidió solo diseño, sin ocuparse de cómo se muestran
   los datos (todo es relleno).
 - **Ficheros:** `app_apostador/diseno_direcciones/`. Sin API ni descargas.
+
+## 30/09/2026: diseño elegido
+
+- **Qué:** el usuario elige el diseño oscuro de siete pantallas
+  (`diseno_nuevo/`, https://claude.ai/artifact/5i65iCH12v7HmM1oSY7R8K) como
+  base de la app. Las tres direcciones de `diseno_direcciones/` quedan
+  descartadas (se conservan como referencia).
