@@ -74,8 +74,11 @@ def superficie(circ, torneo, tournament_key=None):
             SUP_API[k] = A.superficie_torneo(k)           # una petición por torneo nuevo
         s = SUP_API.get(k)
         if s:
-            s = str(s).strip().capitalize()
-            return {"Carpet": "Hard", "Indoor": "Hard", "Hardcourt": "Hard"}.get(s, s)
+            s = str(s).strip().lower()            # "Hard (Indoor)", "Clay", "Grass", "Carpet"...
+            for pref, sup in (("hard", "Hard"), ("clay", "Clay"), ("grass", "Grass"), ("carpet", "Hard"),
+                              ("indoor", "Hard")):
+                if s.startswith(pref):
+                    return sup
     base = E.norm(re.sub(r"\s+\d+$", "", str(torneo).strip()))
     return ESTADO[circ].get("superficies", {}).get(base, "Hard")
 
