@@ -7,7 +7,7 @@ Vigilante de más/menos juegos en directo con aviso al móvil (30/09/2026). Lo c
 Regla (pedida por el usuario): en la línea principal de cada partido (la más cercana al 50% según
 la casa), el modelo Y la casa (sin margen) dan más del 54% al mismo lado (más o menos), durante
 2 pasadas seguidas (~1-2 min) para no avisar por un vaivén puntual, y la casa no
-pasa del 75% (por debajo de cuota 1,33 no se avisa). Un aviso por partido y lado.
+pasa del 75%, salvo que la cuota real de la API para ese lado pague 1,33 o más. Un aviso por partido y lado.
 Aviso por ntfy (topic en NTFY_TOPIC):
   Jugador VS Jugador | más/menos de X juegos | modelo 57% / cuota 55% | mínima 1,82 | torneo
 "mínima" = 1 / prob. de la casa: apostar solo si Luckia paga eso o más.
@@ -26,7 +26,7 @@ import markov_tenis as K  # noqa: E402
 import pronosticos_api as Q  # noqa: E402
 
 UMBRAL, PASADAS = 0.54, 2
-TECHO = 0.75   # si la casa da más del 75% (cuota justa < 1,33) no se avisa: casi decidido y paga poco
+TECHO, CUOTA_BUENA = 0.75, 1.33   # por encima del 75% solo se avisa si la cuota REAL de la API paga 1,33 o más
 CADA = float(os.environ.get("CADA", 60))   # segundos entre pasadas
 MINUTOS = float(os.environ.get("MINUTOS", 345))
 TOPIC = os.environ.get("NTFY_TOPIC", "tenis-f059172b4dc7")
@@ -104,7 +104,8 @@ def main():
                 n = racha[k][1] + 1 if lado and racha.get(k, (None, 0))[0] == lado else (1 if lado else 0)
                 racha[k] = (lado, n)
                 pmod, pcas = (mo, pm) if lado == "más" else (1 - mo, 1 - pm)
-                if lado and n >= PASADAS and pcas <= TECHO and (k, lado) not in avisados:
+                real = float(x.cuota if lado == "más" else x.cuota_rival)
+                if lado and n >= PASADAS and (pcas <= TECHO or real >= CUOTA_BUENA) and (k, lado) not in avisados:
                     avisados.add((k, lado))
                     ln, mn = f"{x.linea:g}".replace(".", ","), f"{1 / pcas:.2f}".replace(".", ",")
                     avisar(f"{x.jugador1} VS {x.jugador2} | {lado} de {ln} juegos | modelo {pmod:.0%} / cuota {pcas:.0%} | "
