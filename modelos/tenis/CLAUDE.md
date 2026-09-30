@@ -422,6 +422,16 @@ cuadros femeninos de torneos mixtos; ESPN pone 5 sets a todo el ATP (solo
 los Grand Slams masculinos son a 5); nombres chinos al revés ("Yuan Yue").
 Otras fuentes de marcadores: 365Scores (punto a punto, ITF incluido, gratis
 pero condiciones dudosas), Goalserve (30 días gratis, con licencia).
+**API-Tennis (cuenta del usuario, 30/09/2026):** `scripts/api_tennis.py`,
+clave en la variable de entorno `API_TENNIS_KEY` (la recoge una sesión
+nueva). `get_livescore` trae quién saca (`event_serve`) y los puntos del
+juego (`event_game_result`), ATP/WTA/Challenger/ITF; `get_live_odds` trae
+cuotas EN DIRECTO por mercado (ganador, sets, juegos...) con hora: permite
+comparar la calculadora con la cuota en directo. `estado()` traduce un
+partido al marcador de `partido_desde` (probado con una respuesta de ejemplo
+hecha según la documentación; en tie-break deduce quién sacó el primer
+punto). Tennis Explorer descartado: sus condiciones (apartados 2.10 y 2.11)
+prohíben raspar y las peticiones automáticas.
 **Sin validar todavía**: falta comprobar la calibración en directo con el
 punto a punto de Grand Slam (copia de Sackmann) y compararlo con cuotas en
 directo, que no tenemos.
