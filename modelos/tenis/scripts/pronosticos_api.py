@@ -9,8 +9,9 @@ directo y cuotas en directo.
   margen); el modelo de puntos da además sets y total de juegos.
 - En juego: calculadora desde el marcador (markov_tenis.partido_desde) comparada con las
   cuotas en directo de los mercados reconocidos.
-- Superficie: API-Tennis no la da; se toma la de la última edición del torneo en el
-  historial (tabla en estado_puntos_*.json); si no se encuentra, pista dura. Dobles: fuera.
+- Superficie: campo tournament_surface de get_draw (una petición por torneo nuevo, guardada
+  en data/tenis/api_tennis/superficies.json); si no viene, la última edición del torneo en el
+  historial; si tampoco, pista dura. Dobles: fuera.
 Escribe modelos/tenis/pronosticos/api_<fecha-hora>.md.
 """
 import json
@@ -56,8 +57,25 @@ def prob_saque(circ, a, b, sup="Hard"):
     return 1 / (1 + math.exp(-th / math.sqrt(1 + math.pi * V / 8)))
 
 
-def superficie(circ, torneo):
+CACHE_SUP = "data/tenis/api_tennis/superficies.json"
+try:
+    SUP_API = json.load(open(CACHE_SUP))
+except (FileNotFoundError, ValueError):
+    SUP_API = {}
+
+
+def superficie(circ, torneo, tournament_key=None):
+    """1) tournament_surface de get_draw (API-Tennis), guardado en CACHE_SUP; 2) última edición del
+    torneo en el historial; 3) pista dura."""
     import re
+    if tournament_key is not None:
+        k = str(tournament_key)
+        if k not in SUP_API:
+            SUP_API[k] = A.superficie_torneo(k)           # una petición por torneo nuevo
+        s = SUP_API.get(k)
+        if s:
+            s = str(s).strip().capitalize()
+            return {"Carpet": "Hard", "Indoor": "Hard", "Hardcourt": "Hard"}.get(s, s)
     base = E.norm(re.sub(r"\s+\d+$", "", str(torneo).strip()))
     return ESTADO[circ].get("superficies", {}).get(base, "Hard")
 
@@ -69,7 +87,7 @@ def fuerzas(p):
     a, b = jugador(circ, p.get("event_first_player")), jugador(circ, p.get("event_second_player"))
     if a is None or b is None:
         return circ, None, None, (a is not None, b is not None)
-    s = superficie(circ, p.get("tournament_name"))
+    s = superficie(circ, p.get("tournament_name"), p.get("tournament_key"))
     return circ, K.redondear(prob_saque(circ, a, b, s)), K.redondear(prob_saque(circ, b, a, s)), (True, True)
 
 
@@ -190,6 +208,13 @@ def main():
         lin.append(f"| {p.get('event_time')} | {p.get('tournament_name')} | {uno} vs {dos} | **{pron}** | {prob:.0%} | {fuente} | "
                    f"{mo} | {tm} | {m21} |")
     lin.append(f"\nMercados en directo vistos: {sorted(x for x in nombres_mercado if x)}")
+    import os
+    os.makedirs(os.path.dirname(CACHE_SUP), exist_ok=True)
+    json.dump(SUP_API, open(CACHE_SUP, "w"), indent=0, sort_keys=True)
+    vistas = {}
+    for v in SUP_API.values():
+        vistas[str(v)] = vistas.get(str(v), 0) + 1
+    lin.append(f"Superficies de API-Tennis (get_draw) conocidas: {vistas}")
     salida = f"modelos/tenis/pronosticos/api_{HOY:%Y-%m-%d_%H%M}.md"
     open(salida, "w").write("\n".join(lin) + "\n")
     print("\n".join(lin[:40]))

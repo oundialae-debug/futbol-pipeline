@@ -109,3 +109,27 @@ def partidos_dia(fecha):
 
 def cuotas_dia(fecha):
     return _pedir("get_odds", date_start=fecha, date_stop=fecha)
+
+
+def superficie_torneo(tournament_key):
+    """Superficie del torneo ('Hard', 'Clay', 'Grass'...) del campo tournament_surface de get_draw
+    (el único método que la trae; get_fixtures, get_livescore y get_tournaments no). None si no viene."""
+    try:
+        r = _pedir("get_draw", tournament_key=tournament_key)
+    except RuntimeError:
+        return None
+    def buscar(x):
+        if isinstance(x, dict):
+            if x.get("tournament_surface"):
+                return x["tournament_surface"]
+            for v in x.values():
+                s = buscar(v)
+                if s:
+                    return s
+        elif isinstance(x, list):
+            for v in x:
+                s = buscar(v)
+                if s:
+                    return s
+        return None
+    return buscar(r)
