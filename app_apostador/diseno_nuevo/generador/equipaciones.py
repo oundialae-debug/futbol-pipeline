@@ -6,6 +6,10 @@ dos casi blancos): entonces viste la segunda, como en los marcadores de TV.
 
 Los colores de la primera son los tradicionales del club; los de la segunda
 son aproximados (cambian cada temporada) y conviene revisarlos.
+
+Clubes de un solo color (Madrid blanco, Villarreal amarillo...): una sola
+franja. Rayas o dos colores de verdad (Barça, Atlético, Athletic...): dos.
+La segunda equipación va siempre con una franja.
 """
 BG = "#0A0C11"
 
@@ -20,20 +24,22 @@ KITS = {  # equipo: ((principal, secundario) casa, (principal, secundario) fuera
     "Alavés": (("#1F4E9E", "#F4F4F4"), ("#E03A3E", "#F4F4F4")),
     "Deportivo La Coruña": (("#2B67C2", "#F4F4F4"), ("#E9B44C", "#1B3A6B")),
     "Athletic Club": (("#EE2523", "#F4F4F4"), ("#10924A", "#111111")),
-    "Getafe": (("#1B55A3", "#F4F4F4"), ("#D7263D", "#F4F4F4")),
+    "Getafe": (("#005CA9", "#F4F4F4"), ("#D7263D", "#F4F4F4")),
     "Rayo Vallecano": (("#F4F4F4", "#D0202E"), ("#D0202E", "#F4F4F4")),
     "Osasuna": (("#D91A21", "#0A346F"), ("#F4F4F4", "#D91A21")),
-    "Celta de Vigo": (("#8BC4EA", "#F4F4F4"), ("#E53945", "#8BC4EA")),
+    "Celta de Vigo": (("#8AC3EE", "#F4F4F4"), ("#E53945", "#8AC3EE")),
     "Espanyol": (("#1E6FC8", "#F4F4F4"), ("#E8C547", "#1E6FC8")),
     "Racing Santander": (("#1E9E57", "#F4F4F4"), ("#F4F4F4", "#1E9E57")),
     "Levante": (("#A6192E", "#1C3F94"), ("#F4F4F4", "#A6192E")),
     "Elche": (("#F4F4F4", "#1E8C4E"), ("#1E8C4E", "#F4F4F4")),
     "Valencia": (("#F4F4F4", "#1B1B1B"), ("#F28C28", "#1B1B1B")),
     "Malaga": (("#5AA0D8", "#F4F4F4"), ("#F4F4F4", "#5AA0D8")),
-    "Oviedo": (("#1D4E9E", "#F4F4F4"), ("#F4F4F4", "#1D4E9E")),
+    "Oviedo": (("#0B4A9C", "#F4F4F4"), ("#F4F4F4", "#0B4A9C")),
     "Mallorca": (("#C8102E", "#111111"), ("#F4F4F4", "#C8102E")),
     "Girona": (("#D7182A", "#F4F4F4"), ("#1F2F5C", "#D7182A")),
 }
+UN_COLOR = {"Real Madrid", "Villarreal", "Getafe", "Celta de Vigo", "Valencia", "Sevilla FC", "Osasuna",
+            "Mallorca", "Oviedo"}
 
 
 def _rgb(h):
@@ -95,7 +101,8 @@ def texto_sobre(h):
 
 def kit(equipo, cual=0):
     k = KITS.get(equipo, (("#7C8496", "#F4F4F4"), ("#F4F4F4", "#7C8496")))[cual]
-    return {"c1": k[0], "c2": k[1], "barra": legible(k[0]), "texto": texto_sobre(k[0]), "segunda": cual == 1}
+    return {"c1": k[0], "c2": k[1], "barra": legible(k[0]), "texto": texto_sobre(k[0]), "segunda": cual == 1,
+            "una": cual == 1 or equipo in UN_COLOR}
 
 
 def colores_partido(local, visitante):
@@ -106,7 +113,7 @@ def colores_partido(local, visitante):
         v = kit(visitante, 1)
         if choca(l["barra"], v["barra"]):  # la segunda también choca: su color secundario manda
             c = KITS[visitante][1]
-            v = {"c1": c[1], "c2": c[0], "barra": legible(c[1]), "texto": texto_sobre(c[1]), "segunda": True}
+            v = {"c1": c[1], "c2": c[0], "barra": legible(c[1]), "texto": texto_sobre(c[1]), "segunda": True, "una": True}
     return l, v
 
 

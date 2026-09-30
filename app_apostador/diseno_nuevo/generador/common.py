@@ -24,7 +24,7 @@ button{font-family:inherit;cursor:pointer}
 def nav(active):
     items = [
         ("m", "Main.dc.html", "Matches", '<circle cx="12" cy="12" r="9"></circle><path d="M12 3v4M12 17v4M3 12h4M17 12h4"></path>'),
-        ("e", "Elo.dc.html", "Elo", '<path d="M4 20V10M10 20V4M16 20v-7M22 20H2"></path>'),
+        ("e", "Elo.dc.html", "Ranking", '<path d="M4 20V10M10 20V4M16 20v-7M22 20H2"></path>'),
         ("t", "Tips.dc.html", "Tips", '<path d="M12 3l2.4 5.6 6.1.5-4.6 4 1.4 6-5.3-3.2-5.3 3.2 1.4-6-4.6-4 6.1-.5z"></path>'),
         ("f", "Equipo.dc.html", "Following", '<path d="M12 20s-7-4.4-7-10a4 4 0 017-2.6A4 4 0 0119 10c0 5.6-7 10-7 10z"></path>'),
     ]

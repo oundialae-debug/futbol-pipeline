@@ -7,6 +7,7 @@ from equipaciones import kit, colores_partido, KITS
 APP = Path(__file__).resolve().parents[2]
 D = json.loads((APP / "datos_app.json").read_text())
 DJ = json.loads((APP / "datos.json").read_text())
+DX = json.loads((APP / "datos_extra.json").read_text())
 
 BG, CARD, BORDE, SUB, MUT, TXT, SOFT = "#0A0C11", "#12151C", "#232838", "#1A1E28", "#8E96AA", "#F1F3F8", "#C6CBD8"
 AZUL, LIMA, NARANJA, ROJO, AMARILLO = "#4A63FF", "#C8FF3D", "#FF8A3D", "#FF3B3B", "#FFD21F"
@@ -47,9 +48,58 @@ def escudo(nombre, px=24, k=None):
 
 
 def franjas(k, alto=20):
-    """Las dos franjas de color junto al nombre, como en el marcador de la TV."""
+    """Franjas de color junto al nombre, como en el marcador de la TV: una para
+    los clubes de un solo color (Madrid blanco), dos para rayas o dos colores."""
+    if k.get("una"):
+        return (f'<span aria-hidden="true" style="display: inline-block; flex-shrink: 0; width: 8px; height: {alto}px; border-radius: 3px; '
+                f'background: {k["c1"]}; box-shadow: 0 0 0 1px rgba(255,255,255,0.14)"></span>')
     return (f'<span aria-hidden="true" style="display: inline-flex; flex-shrink: 0; height: {alto}px; border-radius: 3px; overflow: hidden; box-shadow: 0 0 0 1px rgba(255,255,255,0.14)">'
             f'<span style="width: 5px; background: {k["c1"]}"></span><span style="width: 5px; background: {k["c2"]}"></span></span>')
+
+
+def kequipo(nombre):
+    return kit(CORTO_A_LARGO.get(nombre, nombre))
+
+
+def en_color(txt, k, extra=""):
+    """Un número de un equipo, en el color de su camiseta."""
+    return f'<span style="color: {k["barra"]}; {extra}">{txt}</span>'
+
+
+def confianza(p):
+    """Etiqueta sencilla en vez de porcentajes de acierto de la casa."""
+    if p >= 80:
+        return chip("Very likely", "#26301A", LIMA)
+    if p >= 62:
+        return chip("Likely", "#1E2A66", "#A9B8FF")
+    return chip("Toss-up", "#1E2330", SOFT)
+
+
+def pocos():
+    return chip("few games", "#2A2412", "#E8C547")
+
+
+def selector(clave):
+    """Pastillas Last 5 · Last 10 · Season; el estado vive en el JS de la página (js_selectores)."""
+    return (f'<div style="display: flex; gap: 6px; flex-wrap: wrap"><sc-for list="{{{{sel_{clave}}}}}" as="o" hint-placeholder-count="3">'
+            f'<button onClick="{{{{o.pick}}}}" style="height: 30px; padding: 0 12px; border: none; border-radius: 15px; '
+            f'background: {{{{o.bg}}}}; color: {{{{o.fg}}}}; font-size: 12px; font-weight: 700">{{{{o.txt}}}}</button></sc-for></div>')
+
+
+def js_selectores(datos):
+    """datos = {clave: {"opts": [[id, texto], ...], "ini": id, "vals": {id: {...}}}}.
+    La plantilla lee {{ clave.campo }} y pinta las pastillas con {{ sel_clave }}."""
+    ini = {k: v["ini"] for k, v in datos.items()}
+    d = {k: {"opts": v["opts"], "vals": v["vals"]} for k, v in datos.items()}
+    return ("class Component extends DCLogic {\n"
+            "  constructor(props) {\n    super(props);\n    this.state = " + json.dumps(ini) + ";\n  }\n"
+            "  renderVals() {\n    const D = " + json.dumps(d, ensure_ascii=False) + ";\n"
+            "    const out = {};\n"
+            "    for (const k of Object.keys(D)) {\n"
+            "      const cur = this.state[k];\n"
+            "      out[k] = D[k].vals[cur];\n"
+            f"      out['sel_' + k] = D[k].opts.map(([id, txt]) => ({{ txt, bg: id === cur ? '{LIMA}' : '{SUB}', fg: id === cur ? '{BG}' : '{SOFT}', pick: () => this.setState({{ [k]: id }}) }}));\n"
+            "    }\n    return out;\n  }\n}")
 
 
 def kits(local, visitante):
@@ -83,19 +133,20 @@ def barra_dos(h, a, ch=AZUL, ca=NARANJA, alto=7):
 
 
 def fila_stat(nombre, h, a, fmt=lambda v: num(v, 0), ch=AZUL, ca=NARANJA):
+    """Número de cada equipo en su color, barra de cada uno en su color."""
     return (f'<div style="display: flex; flex-direction: column; gap: 6px">'
             f'<div style="display: flex; justify-content: space-between; align-items: baseline">'
-            f'<span style="{DISP}; font-size: 18px; width: 70px">{fmt(h)}</span>'
+            f'<span style="{DISP}; font-size: 18px; width: 70px; color: {ch}">{fmt(h)}</span>'
             f'<span style="font-size: 12px; font-weight: 600; color: {MUT}">{nombre}</span>'
-            f'<span style="{DISP}; font-size: 18px; width: 70px; text-align: right">{fmt(a)}</span></div>'
+            f'<span style="{DISP}; font-size: 18px; width: 70px; text-align: right; color: {ca}">{fmt(a)}</span></div>'
             f'{barra_dos(h, a, ch, ca)}</div>')
 
 
 def tres(p1, px, p2, c1, c2, alto=44, grande=24):
     return (f'<div style="display: flex; height: {alto}px; border-radius: 14px; overflow: hidden; gap: 3px">'
-            f'<div style="width: {p1}%; background: {c1[0]}; color: {c1[1]}; display: flex; align-items: center; justify-content: center; {DISP}; font-size: {grande}px">{p1}</div>'
-            f'<div style="width: {px}%; background: #3A4256; display: flex; align-items: center; justify-content: center; {DISP}; font-size: {grande - 4}px">{px}</div>'
-            f'<div style="width: {p2}%; background: {c2[0]}; color: {c2[1]}; display: flex; align-items: center; justify-content: center; {DISP}; font-size: {grande - 4}px">{p2}</div></div>')
+            f'<div style="width: {p1}%; background: {c1[0]}; color: {c1[1]}; display: flex; align-items: center; justify-content: center; {DISP}; font-size: {grande}px">{p1}%</div>'
+            f'<div style="width: {px}%; background: #3A4256; display: flex; align-items: center; justify-content: center; {DISP}; font-size: {grande - 4}px">{px}%</div>'
+            f'<div style="width: {p2}%; background: {c2[0]}; color: {c2[1]}; display: flex; align-items: center; justify-content: center; {DISP}; font-size: {grande - 4}px">{p2}%</div></div>')
 
 
 def sparkline(vals, w=64, h=22, color=LIMA):

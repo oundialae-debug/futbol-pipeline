@@ -173,3 +173,41 @@ carpeta se apunta aquí.
   4 equipos: su segunda pasa a blanca.
 - **Ojo:** colores de la primera, tradicionales; los de la segunda,
   aproximados (cambian cada temporada): revisar.
+
+## 30/09/2026: los 19 comentarios del lienzo 2yellow, aplicados
+
+- **Qué:** cambios pedidos en los comentarios del lienzo
+  (https://claude.ai/artifact/5i65iCH12v7HmM1oSY7R8K), aplicados también en
+  las demás pantallas donde encajan (petición del usuario):
+  - Porcentajes con «%» y cabecera «Win chance · 1 X 2»; etiquetas «X better /
+    worse than table: Elo Nth»; «Books hit» sustituido por «Very likely /
+    Likely / Toss-up» (portada y Tips).
+  - Colores: una franja para clubes de un color (Madrid, Villarreal, Getafe,
+    Celta, Valencia, Sevilla, Osasuna, Mallorca, Oviedo), dos para rayas; los
+    números de cada equipo en su color en todas las pantallas.
+  - Previa: bajas en «Out» (lesión que pasa del partido + sancionados: Huijsen,
+    roja) y «Doubtful» (vuelven ±2-3 días del partido: Valverde, Etta Eyong);
+    choque de estilos con etiquetas y 4 datos en unidades con la media de LaLiga.
+  - Informe: «Deserved?» con tiros, ocasiones, pases al último tercio, paradas
+    y goles evitados; «Our call vs the bookies» (nuestro % previo frente a la
+    mediana de 49 casas cosechadas antes del pitido, sin margen): 3/4 cada uno.
+  - Estadísticas: zona contra zona y 8 duelos por puesto en la alineación.
+  - Alineaciones con posiciones reales por dibujo (4-4-2, 4-2-3-1).
+  - Equipo: «Second halves» (70 pts al descanso contra 86 reales, +16, 2.º de
+    LaLiga 2025/26); selector Last 5 / Last 10 / Season en goles vs xG y
+    portero.
+  - Jugador: rival y minutos en cada nota; percentiles con selector de tramo.
+  - «2yellow Ranking» (ordenado por Elo) y pestaña «LaLiga table» con P/G/E/P,
+    DG, puntos merecidos, suerte y flecha si el ranking lo pone más arriba o
+    abajo; selectores de tramo en rachas y porteros.
+  - Tips: sin campo para escribir la cuota; hueco [odds from API] para mejor
+    cuota, media y veredicto.
+  - Menos texto explicativo en todas las pantallas; etiqueta «few games».
+- **Datos:** `datos_extra.py` (nuevo) escribe `datos_extra.json`. Solo lee
+  `data/`. Sin API ni descargas.
+- **Comprobaciones:** las líneas de la alineación vienen de izquierda a derecha
+  (Hancko, Romero, Pubill, Llorente), comprobado con los nombres; percentiles
+  solo contra delanteros con la mitad de los minutos posibles del tramo; las
+  cuotas de la casa del informe son previas al partido.
+- **Ficheros:** `datos_extra.py`, `datos_extra.json`,
+  `diseno_nuevo/generador/*.py`, `diseno_nuevo/project/*`.
