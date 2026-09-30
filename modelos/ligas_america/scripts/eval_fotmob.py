@@ -15,7 +15,7 @@ DESDE = os.environ.get("DESDE", "2024-07")
 
 d = G.construir()
 d = d[d.liga != "COLB"].reset_index(drop=True)
-d, n = R.rasgos(d)
+d, n = R.rasgos(d, ligas=PRUEBA)   # solo FotMob de las ligas de prueba (las otras pueden ir a medias)
 print(f"{n} partidos de FotMob cruzados")
 cj, fm = G.columnas_juego(d), R.columnas(d)
 brazos = {"completo": G.MKT + cj, "completo_fm": G.MKT + cj + fm, "mercado_fm": G.MKT + fm}

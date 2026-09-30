@@ -54,11 +54,11 @@ def diccionario_nombres(d, f):
     return mapa, faltan, c
 
 
-def rasgos(d, parar=True):
+def rasgos(d, parar=True, ligas=None):
     """Devuelve d con columnas fm_l_* y fm_v_* (medias previas) y el nº de
     partidos de FotMob emparejados."""
     f = cargar_fotmob()
-    f = f[f.liga.isin(d.liga.unique())]
+    f = f[f.liga.isin(ligas or d.liga.unique())]
     mapa, faltan, _ = diccionario_nombres(d, f)
     if faltan:
         msg = f"Equipos de FotMob sin pareja fiable en football-data: {faltan}"
