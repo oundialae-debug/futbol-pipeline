@@ -67,3 +67,8 @@ carpeta se apunta aquí.
 - **Cómo:** DNS y RDAP públicos, sin API de Highlightly. Validado contra
   sitios conocidos antes de fiarse de los «libre».
 - **Ficheros:** `app_apostador/IDEAS.md`.
+
+## 30/09/2026: términos de fútbol en inglés
+
+- **Qué:** 109 términos de fútbol en inglés comprobados en `.com`, `.app` e
+  `.io`. Resultado en `IDEAS.md`. Consultas DNS y RDAP, sin API.

@@ -84,3 +84,17 @@ El `.io` es solo pista (su RDAP no es fiable).
   ballmob, fotstat, kopstat**, y muchas más de la misma fórmula.
 - Sin comprobar: si están registradas como marca o ya las usa alguna app.
   `nutmob` puede chocar con Nutmeg (empresa de inversión).
+
+## Términos de fútbol en inglés (30/09/2026)
+
+Probados 109 (corner, throw-in, bench, shot, cross, save, goal kick, free
+kick, penalty, offside, header, tackle, dribble, assist, clean sheet, volley,
+tap-in, own goal, kickoff, whistle, top bins, backheel…), solos y con
+stats/data/hub.
+
+- **Solos: todos ocupados en `.com`.** Con `.app` y `.io` libres: **throwin,
+  backheel**. El resto, ocupados en `.com` y `.app`.
+- **Compuestos con `.com`, `.app` y `.io` libres:** throwinstats, throwinhub,
+  headerstats, tacklestats, offsidestats, freekickstats/data/hub, tapinhub,
+  topbinsstats/data/hub, cleansheetstats, cleansheethub.
+- Sin comprobar: marca registrada y apps con ese nombre.
