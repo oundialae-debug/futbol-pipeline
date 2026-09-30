@@ -234,3 +234,24 @@ carpeta se apunta aquí.
 - **Ficheros:** `datos_extra.py`, `datos_extra.json`,
   `diseno_nuevo/generador/s5b_real.py`, `project/Alineacion.dc.html`,
   `project/canvas.json`.
+
+## 30/09/2026: dónde lo dejamos (para retomar otro día)
+
+- **Lienzo vigente:** https://claude.ai/artifact/5i65iCH12v7HmM1oSY7R8K
+  (versión 11). Todos los comentarios del usuario resueltos; le gusta como está.
+- **Cómo regenerar:** `python3 analisis_app.py` y `python3 datos_extra.py`
+  (datos), luego en `diseno_nuevo/generador/`: `s5a_real.py`, `s5b_real.py`,
+  `s5c_real.py`, `s6_kits.py`. Publicar `diseno_nuevo/project/canvas.json`
+  con `root` = `diseno_nuevo` y los `.dc.html` en `files`. Si cambia el alto
+  de una pantalla, cambiarlo también en `canvas.json`.
+- **Forma de trabajar pedida:** el usuario manda comentarios en el lienzo;
+  cuando dice «no empieces hasta que diga empieza ya», solo se contesta y se
+  apunta. Cada cambio se aplica en todas las pantallas donde encaje.
+- **Pendiente, necesita su permiso (llamadas a la API):**
+  1. Minutos de goles y cambios (`/matches/{id}`, ~450 llamadas) para un
+     momentum real en «Match story».
+  2. Cuotas previas de los partidos próximos para rellenar los huecos
+     [odds from API] de Tips (mejor cuota, media y veredicto).
+- **Sin decidir:** nombres con inicial también en el campo de alineaciones
+  (ahora solo apellido, por espacio); opción (b) «Bookies agree/disagree»
+  cuando haya cuotas del partido.
