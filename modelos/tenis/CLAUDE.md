@@ -407,6 +407,25 @@ Petición del usuario. `scripts/itf.py` -> `data/tenis/itf.md`.
   tiene estadísticas. **Uso:** en ITF con cuota -> la cuota; sin cuota -> Elo
   con debutantes bajos.
 
+## En directo (30/09/2026): calculadora desde cualquier marcador
+
+Idea del usuario: en directo quizá no haya valor en el ganador pero sí en
+juegos o sets. `markov_tenis.partido_desde` (sets, juegos, puntos y quién
+saca; sin saber quién saca promedia): comprobado que desde 0-0 da lo mismo
+que el modelo previo (69,744%), 1-0 en sets entre iguales = 75%.
+`scripts/directo.py` coge los partidos en juego de ESPN (API pública sin
+clave: sets y juegos, SIN puntos ni saque; ATP, WTA y WTA 125; no ITF ni
+Challenger) y da ganador, sets, total de juegos y hándicap desde el
+marcador -> `pronosticos/directo_<fecha>.md`.
+Fallos arreglados en la primera pasada: el enlace ATP de ESPN trae también
+cuadros femeninos de torneos mixtos; ESPN pone 5 sets a todo el ATP (solo
+los Grand Slams masculinos son a 5); nombres chinos al revés ("Yuan Yue").
+Otras fuentes de marcadores: 365Scores (punto a punto, ITF incluido, gratis
+pero condiciones dudosas), Goalserve (30 días gratis, con licencia).
+**Sin validar todavía**: falta comprobar la calibración en directo con el
+punto a punto de Grand Slam (copia de Sackmann) y compararlo con cuotas en
+directo, que no tenemos.
+
 ## Plan (en este orden)
 
 1. Ganador del partido, único mercado con cierre de Pinnacle.
