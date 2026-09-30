@@ -173,6 +173,29 @@ modelo, empeoraban 2026 en +0,0116 de log-loss (diez veces cualquier otra
 diferencia) sin ningún error. Ahora edad fuera de 14-50 y altura fuera de
 150-215 quedan vacías, y `validar_interno.py` cuenta los fuera de rango.
 
+## Cinco situaciones concretas (30/09/2026): dos pistas de "óxido", nada confirmado
+
+`scripts/situaciones.py` -> `data/tenis/situaciones.md`. Hipótesis fijadas
+antes de mirar; logística mercado + indicador, entrena 2020-2023, juzga
+2024-2026 contra el mercado recalibrado. Exigencia fijada: >= 2,5 sigmas y
+que aguante en los dos tramos de prueba.
+
+| situación | coef. entreno | coef. prueba | log-loss 2024-25 | log-loss 2026 |
+|---|---|---|---|---|
+| local (juega en su país) | -0,70s | -1,16s | -0,86s | -0,47s |
+| previa (Q/LL) | **+3,61s** | +0,84s | +0,75s | +0,44s |
+| cansancio (anterior >= 180 min) | -0,39s | -0,41s | +0,03s | -0,18s |
+| regreso (>= 60 días sin torneo) | -1,96s | -1,85s | -0,43s | -1,03s |
+| cambio de superficie (>= 120 días) | -1,53s | -2,39s | -1,94s | -0,18s |
+
+- "previa" parecía fuerte y en la prueba fue hacia cero: descartada.
+- **Pistas, no hallazgos**: "regreso" y "cambio de superficie" van en la
+  misma dirección en entreno y prueba. El mercado sobrevalora al jugador
+  "oxidado" (vuelve de parón o no ha pisado esa superficie en 4 meses). No
+  llegan a 2,5 sigmas y mejoran el log-loss muy poco. Juntarlas en un solo
+  indicador ahora sería elegir después de mirar: se confirma solo con
+  partidos futuros, con la regla escrita antes.
+
 ## Plan (en este orden)
 
 1. Ganador del partido, único mercado con cierre de Pinnacle.

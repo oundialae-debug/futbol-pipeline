@@ -49,7 +49,9 @@ def calcular(d):
     fechas = defaultdict(lambda: deque(maxlen=60))            # inicios de torneo por partido
     ult_torneo = {}                                           # jugador -> (tid, inicio)
     h2h = defaultdict(int)
-    nombres = ["spw", "rpw", "ace", "df", "in1", "bps", "n_saque", "t_partidos", "t_sets", "t_min",
+    ult_sup = {}                                              # (jugador, superficie) -> último inicio
+    sup = d["sup"].values
+    nombres = ["dias_sup", "spw", "rpw", "ace", "df", "in1", "bps", "n_saque", "t_partidos", "t_sets", "t_min",
                "min_ant", "p30", "descanso", "h2h"]
     out = {f"{n}_{lado}": np.full(len(d), np.nan) for n in nombres for lado in "wl"}
     W, L = d["w"].values, d["l"].values
@@ -75,6 +77,8 @@ def calcular(d):
             elif u and u[0] == tid[i]:
                 out[f"descanso_{lado}"][i] = u[2] if len(u) > 2 else np.nan
             out[f"h2h_{lado}"][i] = h2h[(j, o)]
+            us = ult_sup.get((j, sup[i]))
+            out[f"dias_sup_{lado}"][i] = ini[i] - us if us is not None else np.nan
         # actualizar DESPUÉS de leer
         if not d["actualiza"].values[i]:
             continue
@@ -99,6 +103,7 @@ def calcular(d):
             if u is None or u[0] != tid[i]:
                 ult_torneo[j] = (tid[i], ini[i], ini[i] - u[1] if u else np.nan)
         h2h[(w, l)] += 1
+        ult_sup[(w, sup[i])] = ult_sup[(l, sup[i])] = ini[i]
     r = pd.DataFrame(out, index=d.index)
     for lado, p in (("w", "winner"), ("l", "loser")):
         r[f"rank_{lado}"] = np.log(num(d, f"{p}_rank").values)
@@ -109,4 +114,6 @@ def calcular(d):
         r[f"edad_{lado}"] = edad.where(edad.between(14, 50)).values
         r[f"alt_{lado}"] = alt.where(alt.between(150, 215)).values
         r[f"zurdo_{lado}"] = (d[f"{p}_hand"] == "L").astype(float).values
+        r[f"ioc_{lado}"] = d[f"{p}_ioc"].astype(str).values if f"{p}_ioc" in d else ""
+        r[f"entry_{lado}"] = d[f"{p}_entry"].astype(str).str.upper().values if f"{p}_entry" in d else ""
     return r

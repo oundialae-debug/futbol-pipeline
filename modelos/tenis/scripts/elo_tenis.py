@@ -30,7 +30,7 @@ ORDEN_RONDA = {"Q1": 0, "Q2": 1, "Q3": 2, "Q4": 3, "ER": 3.5, "R128": 4, "R64": 
                "R16": 7, "RR": 7.5, "QF": 8, "SF": 9, "BR": 9.5, "F": 10}
 COLS = ["tourney_id", "tourney_name", "tourney_date", "tourney_level", "surface", "round",
         "winner_name", "loser_name", "score", "best_of", "minutes",
-        "winner_hand", "loser_hand", "winner_ht", "loser_ht", "winner_age", "loser_age",
+        "winner_hand", "loser_hand", "winner_ioc", "loser_ioc", "winner_entry", "loser_entry", "winner_ht", "loser_ht", "winner_age", "loser_age",
         "winner_rank", "loser_rank", "winner_rank_points", "loser_rank_points",
         "w_ace", "w_df", "w_svpt", "w_1stIn", "w_1stWon", "w_2ndWon", "w_bpSaved", "w_bpFaced",
         "l_ace", "l_df", "l_svpt", "l_1stIn", "l_1stWon", "l_2ndWon", "l_bpSaved", "l_bpFaced"]
