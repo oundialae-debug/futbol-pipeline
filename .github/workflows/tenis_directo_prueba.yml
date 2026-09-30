@@ -1,0 +1,36 @@
+name: Tenis directo (pasada manual en la rama)
+
+# Una pasada del registro en directo, lanzada al empujar este fichero o el script a la rama
+# de tenis. La versión programada (cada 5 min) vive en main: tenis_directo.yml.
+on:
+  workflow_dispatch:
+  push:
+    branches: [ccr-3c3cfe57-etcioo]
+    paths:
+      - .github/workflows/tenis_directo_prueba.yml
+      - modelos/tenis/scripts/registro_directo.py
+
+jobs:
+  directo:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install requests pandas
+      - name: Pasada
+        env:
+          API_TENNIS_KEY: ${{ secrets.API_TENNIS_KEY }}
+        run: python -u modelos/tenis/scripts/registro_directo.py
+      - name: Guardar
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add modelos/tenis/pronosticos/directo_api.md data/tenis/api_tennis || true
+          if git diff --staged --quiet; then exit 0; fi
+          git commit -q -m "Tenis directo ($(date -u +%Y-%m-%dT%H:%M))"
+          for i in 1 2 3 4 5; do git pull -q --rebase origin "${GITHUB_REF_NAME}" && git push -q origin "HEAD:${GITHUB_REF_NAME}" && exit 0; sleep $((RANDOM % 10 + 3)); done
