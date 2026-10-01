@@ -1,4 +1,4 @@
-# Tenis en directo, 01/10/2026 01:04 UTC (03:04 en España)
+# Tenis en directo, 01/10/2026 01:20 UTC (03:20 en España)
 
 Calculadora desde el marcador exacto (modelo de puntos, superficie real) frente a la cuota en directo
 (sin margen). Ganador y sets: la calculadora suele coincidir con la casa. Total de juegos: el modelo
@@ -7,5 +7,6 @@ Se actualiza cada ~5 min; el registro en data/tenis/api_tennis/registro/ servir�
 
 | partido | tipo | superficie | marcador (sets, juegos, puntos, saca) | gana 1º: modelo / cuota | sets más probables (modelo) | total juegos: línea, modelo / cuota |
 |---|---|---|---|---|---|---|
-| R. Kikawada vs H. Sato | Itf Women Singles | Hard | 0-1, 1-0, 0 - 30, saca H. Sato | 6% / 6% | 0-2 74%, 1-2 20% |  |
-| N. Sato vs H. Arakawa | Itf Women Singles | Hard | 0-0, 3-0, 15 - 0, saca H. Arakawa | 73% / 91% | 2-0 47%, 2-1 25% |  |
+| H. Chang vs M. Stoiana | Itf Women Singles | Hard | 0-0, 0-1, 40 - 40, saca H. Chang | 44% / 13% | 0-2 31%, 1-2 25% |  |
+| R. Kikawada vs H. Sato | Itf Women Singles | Hard | 0-1, 2-2, 30 - 30, saca R. Kikawada | 6% / 6% | 0-2 74%, 1-2 20% |  |
+| N. Sato vs H. Arakawa | Itf Women Singles | Hard | 1-0, 0-0, 0 - 0, saca N. Sato | 78% / 94% | 2-0 54%, 2-1 25% |  |
