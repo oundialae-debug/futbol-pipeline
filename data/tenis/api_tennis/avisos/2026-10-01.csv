@@ -63,3 +63,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-01 09:00,12167004,Itf Men Singles,M25 Kigali,D. Javia,P. Brown,menos,19.5,0.7357,0.5767,1.615,True
 2026-10-01 09:02,12167384,Itf Men Singles,M25 Slobozia (Romania),V. Melnic,R. M. Papoe,menos,16.5,0.7093,0.5767,1.615,True
 2026-10-01 09:04,12167007,Itf Men Singles,M25 Darwin,R. Falck,H. Hoeyeraal,menos,22.5,0.7302,0.5576,1.666,True
+2026-10-01 09:05,12167480,Itf Men Singles,M15 Sharm ElSheikh 11,M. Fondriest,R. Faucon,menos,18.5,0.704,0.5576,1.666,True
