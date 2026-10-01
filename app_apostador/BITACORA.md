@@ -392,3 +392,17 @@ carpeta se apunta aquí.
   - traspasos con precio, contratos y rumores.
 - **Pendiente:** sondear 2–3 partidos terminados (necesita permiso del
   usuario) para saber si tiros, goles y predicción en directo vienen rellenos.
+
+## 01/10/2026: sondeo de 3 partidos terminados (permiso del usuario)
+
+- **Qué:** 3 llamadas a `/matches/{id}`:
+  - Chequia 0-2 Inglaterra;
+  - España 4-1 Croacia;
+  - Atlético 2-1 Real Madrid.
+  Se guarda la respuesta entera en `app_apostador/sondeos/raw/`.
+- **Por qué:** saber si tiros, goles con minuto y predicción en directo vienen
+  rellenos después del pitido (ver `IDEAS_API.md`). El usuario dio su sí a
+  estas 3 llamadas.
+- **Cómo:** `sondeos/sondeo_matches_3.py`, lanzado por un workflow nuevo
+  (`.github/workflows/sondeo_2yellow.yml`). Es el único fichero fuera de esta
+  carpeta y solo se dispara desde esta rama. No repite partidos ya guardados.
