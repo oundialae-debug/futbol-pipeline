@@ -553,3 +553,11 @@ carpeta se apunta aquí.
 - **LaLiga:** pantalla de colores con 1ª, 2ª y 3ª; 0 choques en las 380
   parejas.
 - **Publicado:** lienzo NL (versión 9) y lienzo LaLiga (versión 13).
+
+## 01/10/2026: estructura confirmada
+
+- **El usuario:** «Todo ok». Las 12 tarjetas pendientes (sede, What's at
+  stake, Squads this season, Style clash, Last time out, Last meeting; en el
+  informe: sede, Match story, Shots, From the bench, In the news) y la regla
+  de colores pasan a fijas en `ESTRUCTURA.md`: plantilla para todo lo
+  siguiente.

@@ -3,7 +3,7 @@
 Petición del usuario (01/10/2026): todo lo que acabemos metiendo **y él
 confirme** queda aquí como estructura fija. Cualquier partido, selección o
 liga nueva se monta con estas tarjetas, en este orden, con estas reglas.
-Lo que aún no ha confirmado va marcado **pendiente**: no se copia a otras
+Lo que aún no ha confirmado va marcado **pendiente** (01/10/2026: todo confirmado, «Todo ok», incluidos los colores): no se copia a otras
 pantallas hasta que diga que sí. Al confirmarlo, cambiar el estado aquí (y
 apuntarlo en `BITACORA.md`).
 
@@ -34,32 +34,32 @@ Ejemplo vivo: lienzo de la Nations League
 | # | Tarjeta | Qué enseña | Datos | Estado |
 |---|---|---|---|---|
 | 0 | Cabecera | escudos, hora, ciudad, puesto FIFA (o en la liga) | calendario | en uso |
-| 0b | Sede | estadio y aforo, previsión del tiempo, hora; árbitro solo si está designado | `/matches/{id}` | **pendiente** |
+| 0b | Sede | estadio y aforo, previsión del tiempo, hora; árbitro solo si está designado | `/matches/{id}` | confirmada (01/10) |
 | 1 | Win chance | 1X2 y cuota justa (100/p) | nuestro modelo | en uso |
 | 2 | Goals | más de 1.5/2.5/3.5, ambos marcan, marcador probable, quién marca primero | nuestro modelo | en uso |
 | 3 | Corners & cards | córners y tarjetas esperados y líneas | nuestro modelo | en uso |
 | 4 | Form | últimos 5 de cada uno, el más reciente a la derecha | histórico | en uso |
-| 5 | What's at stake | puesto final de cada equipo del grupo/tabla (20.000 simulaciones) y top 2 si gana/empata/pierde | modelo + calendario | **pendiente** |
+| 5 | What's at stake | puesto final de cada equipo del grupo/tabla (20.000 simulaciones) y top 2 si gana/empata/pierde | modelo + calendario | confirmada (01/10) |
 | 6 | Likely XIs | último once con nota justa | alineaciones + notas | en uso |
-| 6b | Squads this season | valor de mercado de los onces, minutos y G+A con sus clubes esta temporada, 3 más en forma, lesiones actuales | `/players/{id}` y `/players/{id}/statistics` de los titulares probables | **pendiente** |
-| 7 | Style clash | medias por partido de los dos (posesión, tiros a puerta, ocasiones claras, goles a favor/en contra, porterías a cero) | estadísticas de partido | **pendiente** |
-| 8 | Last time out | último partido de cada uno minuto a minuto: tiros cada 5', goles con asistente | `/matches/{id}` (`events`, `shots`) | **pendiente** |
-| 9 | Last meeting | último cara a cara minuto a minuto (goles con asistente), xG, tiros a puerta, ocasiones, 3 mejores notas, y los anteriores | `/head-2-head` + `/matches/{id}` + box-score | **pendiente** |
+| 6b | Squads this season | valor de mercado de los onces, minutos y G+A con sus clubes esta temporada, 3 más en forma, lesiones actuales | `/players/{id}` y `/players/{id}/statistics` de los titulares probables | confirmada (01/10) |
+| 7 | Style clash | medias por partido de los dos (posesión, tiros a puerta, ocasiones claras, goles a favor/en contra, porterías a cero) | estadísticas de partido | confirmada (01/10) |
+| 8 | Last time out | último partido de cada uno minuto a minuto: tiros cada 5', goles con asistente | `/matches/{id}` (`events`, `shots`) | confirmada (01/10) |
+| 9 | Last meeting | último cara a cara minuto a minuto (goles con asistente), xG, tiros a puerta, ocasiones, 3 mejores notas, y los anteriores | `/head-2-head` + `/matches/{id}` + box-score | confirmada (01/10) |
 
 ## Informe de un partido terminado (pantalla Report)
 
 | # | Tarjeta | Qué enseña | Datos | Estado |
 |---|---|---|---|---|
-| 1 | Sede | estadio, árbitro, tiempo | `/matches/{id}` | **pendiente** |
-| 2 | Match story | tiros cada 5' por equipo, goles, rojas, momento clave | `events` + `shots` | **pendiente** |
+| 1 | Sede | estadio, árbitro, tiempo | `/matches/{id}` | confirmada (01/10) |
+| 2 | Match story | tiros cada 5' por equipo, goles, rojas, momento clave | `events` + `shots` | confirmada (01/10) |
 | 3 | Deserved? | goles frente a xG | estadísticas | en uso |
-| 4 | Shots | tiros por resultado y zona de la portería | `shots` | **pendiente** |
+| 4 | Shots | tiros por resultado y zona de la portería | `shots` | confirmada (01/10) |
 | 5 | Our call vs the bookies | nuestro pronóstico frente al de las casas, y acierto | registro + cuotas reales | en uso |
 | 6 | Key stats | estadísticas principales | estadísticas | en uso |
 | 7 | Best players | mejores notas | box-score | en uso |
-| 8 | From the bench | cambios con la nota del que entra | `events` + box-score | **pendiente** |
+| 8 | From the bench | cambios con la nota del que entra | `events` + box-score | confirmada (01/10) |
 | 9 | Goalkeepers | paradas y nota de los porteros | box-score | en uso |
-| 10 | In the news | titulares del partido (filtrados) | `/matches/{id}` (`news`) | **pendiente** |
+| 10 | In the news | titulares del partido (filtrados) | `/matches/{id}` (`news`) | confirmada (01/10) |
 
 ## Trampas de datos ya conocidas (no redescubrir)
 
