@@ -599,3 +599,21 @@ carpeta se apunta aquí.
 - **El usuario:** ese aviso de la portada se puede dejar. Vuelve a la portada
   del lienzo y al vídeo 1 (regenerado). Lo que no vuelve es la tarjeta «How
   we did» de Tips. Regla de `ESTRUCTURA.md` ajustada.
+
+## 01/10/2026: vídeo explicativo con guion de locución
+
+- **Pedido:** un vídeo que se quede en las «cajas» que nos diferencian de otras
+  apps, y un guion para nuevos usuarios, ajustado al vídeo, con el mismo nombre.
+- **Qué:** `diseno_nl/video/grabacion_explicada.py` escribe
+  `2yellow_app_explainer.mp4` (2 min) y `2yellow_app_explainer.md`. Los dos
+  salen de la misma lista de segmentos: cada frase dura lo que se tarda en
+  leer a 2,5 palabras por segundo y el vídeo se estira a eso, así que el
+  guion cuadra al segundo.
+- **Recorrido:** portada (acierto 61%) → previa: cuota justa, «What's at
+  stake», onces con nota justa, «Squads this season», «Last meeting» → Tips:
+  todos los pronósticos, goleadores, tips de la jornada → informe Chequia
+  0-2 Inglaterra: «Match story», «Deserved?», «Our call vs the bookies»,
+  «From the bench». Lo común en otras apps (forma, estadísticas, tabla) solo
+  se ve de paso.
+- **Guion en inglés** (idioma del proyecto). Cierre: «Probabilities, not
+  betting advice. Eighteen plus.»
