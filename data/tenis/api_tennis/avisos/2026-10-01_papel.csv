@@ -25,3 +25,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-01 18:31,12167284,Challenger Men Singles,Columbus,A. Mayo,C. Smith,menos,18.5,0.8228,0.6451,1.444,True,actual
 2026-10-01 18:37,12167284,Challenger Men Singles,Columbus,A. Mayo,C. Smith,menos,18.5,0.6876,0.6876,1.363,True,casa65
 2026-10-01 18:44,12167528,Itf Men Singles,"M15 Ann Arbor, MI",N. Djosic,T. Boosarawongse,menos,22.5,0.7942,0.7942,1.166,True,casa65
+2026-10-01 18:45,12167357,Challenger Men Singles,Mouilleron-Le-Captif,H. Mayot,T. Schoolkate,menos,23.5,0.7666,0.5767,1.615,True,actual
