@@ -379,3 +379,16 @@ carpeta se apunta aquí.
 - **Cómo:** `nl_datos.py` añade `historial`; `grabacion_pasado.py` (misma
   maquinaria que `grabacion_app.py`). Sin API.
 - **Por qué:** petición del usuario. El primer vídeo se queda como estaba.
+
+## 01/10/2026: qué da la API y no usamos
+
+- **Qué:** `app_apostador/IDEAS_API.md`. Revisión de las 25 rutas de
+  `docs/openapi_highlightly.json` contra lo que guarda `data/`, con las
+  respuestas crudas ya guardadas (sin llamar a la API).
+- **Hallazgo principal:** `/matches/{id}` y `/players/{id}` ya se piden, y se
+  tira casi todo:
+  - goles y cambios con minuto, tiros, predicciones de la API, noticias y
+    estadio;
+  - traspasos con precio, contratos y rumores.
+- **Pendiente:** sondear 2–3 partidos terminados (necesita permiso del
+  usuario) para saber si tiros, goles y predicción en directo vienen rellenos.
