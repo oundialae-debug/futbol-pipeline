@@ -17,8 +17,15 @@ Ejemplo vivo: lienzo de la Nations League
 - Si falta un dato, **la tarjeta no sale** (o se calcula con nuestro modelo).
   Nunca se inventan cuotas ni datos de terceros.
 - Sin la predicción de la propia API (petición del usuario, 01/10/2026).
-- Colores de cada equipo: `kits(local, visitante)` (sin choques); franjas
-  junto al nombre.
+- **Colores (01/10/2026, queja del usuario: España y Chequia las dos en
+  rojo):** los de las equipaciones reales 2026/27 (1ª, 2ª y 3ª) sacados de
+  Wikipedia (`colores/`). Nunca dos equipos con el mismo color en la misma
+  vista:
+  - un partido: `kits(local, visitante)`; el visitante, la primera de sus
+    equipaciones que no choque;
+  - varios equipos a la vez (grupo, «What's at stake»): `kgrupo(...)`, con
+    los dos del partido fijos;
+  - tablas largas: `klista(...)`, filas vecinas distintas.
 - Muestra pequeña: el n al lado («20 games», «since 2025»).
 - Ninguna llamada nueva a la API sin un sí del usuario para esa llamada.
 
@@ -26,16 +33,18 @@ Ejemplo vivo: lienzo de la Nations League
 
 | # | Tarjeta | Qué enseña | Datos | Estado |
 |---|---|---|---|---|
-| 0 | Cabecera | escudos, hora, sede, puesto FIFA (o en la liga) | calendario | en uso |
+| 0 | Cabecera | escudos, hora, ciudad, puesto FIFA (o en la liga) | calendario | en uso |
+| 0b | Sede | estadio y aforo, previsión del tiempo, hora; árbitro solo si está designado | `/matches/{id}` | **pendiente** |
 | 1 | Win chance | 1X2 y cuota justa (100/p) | nuestro modelo | en uso |
 | 2 | Goals | más de 1.5/2.5/3.5, ambos marcan, marcador probable, quién marca primero | nuestro modelo | en uso |
 | 3 | Corners & cards | córners y tarjetas esperados y líneas | nuestro modelo | en uso |
 | 4 | Form | últimos 5 de cada uno, el más reciente a la derecha | histórico | en uso |
 | 5 | What's at stake | puesto final de cada equipo del grupo/tabla (20.000 simulaciones) y top 2 si gana/empata/pierde | modelo + calendario | **pendiente** |
 | 6 | Likely XIs | último once con nota justa | alineaciones + notas | en uso |
+| 6b | Squads this season | valor de mercado de los onces, minutos y G+A con sus clubes esta temporada, 3 más en forma, lesiones actuales | `/players/{id}` y `/players/{id}/statistics` de los titulares probables | **pendiente** |
 | 7 | Style clash | medias por partido de los dos (posesión, tiros a puerta, ocasiones claras, goles a favor/en contra, porterías a cero) | estadísticas de partido | **pendiente** |
 | 8 | Last time out | último partido de cada uno minuto a minuto: tiros cada 5', goles con asistente | `/matches/{id}` (`events`, `shots`) | **pendiente** |
-| 9 | Last meeting | último cara a cara: marcador, goleadores, xG, tiros a puerta, ocasiones, 3 mejores notas | histórico + box-score | **pendiente** |
+| 9 | Last meeting | último cara a cara minuto a minuto (goles con asistente), xG, tiros a puerta, ocasiones, 3 mejores notas, y los anteriores | `/head-2-head` + `/matches/{id}` + box-score | **pendiente** |
 
 ## Informe de un partido terminado (pantalla Report)
 
@@ -53,6 +62,16 @@ Ejemplo vivo: lienzo de la Nations League
 | 10 | In the news | titulares del partido (filtrados) | `/matches/{id}` (`news`) | **pendiente** |
 
 ## Trampas de datos ya conocidas (no redescubrir)
+
+- La ciudad del partido sale de `venue`, no se supone: Croacia–Inglaterra se
+  juega en Rijeka, no en Zagreb.
+- Los eventos de la API llegan sin tildes («P. Sucic»): recuperar el nombre
+  de nuestros datos.
+- `/head-2-head` da como mucho 10, pero solo los que tiene: Croacia–Inglaterra,
+  2.
+- `/lineups` solo desde 40' antes del partido: no pedirlas antes.
+- Temporada en `/players/{id}/statistics`: «26/27» en Europa, «2026» en la MLS.
+- Vídeos (`/highlights`): fuera hasta aclarar si es legal ponerlos.
 
 - En un cambio, `player` es el que **sale** y `substituted` el que **entra**.
 - Un penalti marcado llega como `Penalty`, no `Goal`.

@@ -526,3 +526,10 @@ carpeta se apunta aquí.
   el mismo color). Si todas chocan, el color secundario pasa a principal.
   Aplicado en el grupo, la tabla de grupos, el ranking FIFA y las tablas de
   LaLiga.
+
+## 01/10/2026: ESTRUCTURA.md al día
+
+- Añadidas (pendientes de su sí) la franja de sede y «Squads this season»;
+  «Last meeting» con el minuto a minuto y los cara a cara anteriores; regla
+  de colores sin choques; trampas nuevas de la API (ciudad, tildes,
+  head-to-head corto, /lineups, temporada de la MLS, vídeos fuera).
