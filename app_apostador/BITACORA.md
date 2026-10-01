@@ -479,3 +479,15 @@ carpeta se apunta aquí.
   más las trampas de datos ya conocidas. Regla añadida en `CLAUDE.md`.
 - **API:** pedido buscar también en la API; propuestas las llamadas, sin
   hacer ninguna hasta su sí.
+
+## 01/10/2026: llamadas a la API para la previa Croacia–Inglaterra
+
+- **Permiso:** «Todas las llamadas que necesites, no tienes límite para esta
+  vez». Vídeos (/highlights) fuera: el usuario duda de que sea legal.
+- **Qué:** `sondeos/sondeo_cro_eng.py`, 47 llamadas como mucho:
+  head-to-head (1), partido del sábado (1), Inglaterra 4-2 Croacia del
+  Mundial (1), perfil (22) y temporada (22) de los titulares probables.
+  Respuestas enteras en `sondeos/raw/cro_eng/`. /lineups no se pide (solo
+  desde 40' antes del partido).
+- **Workflow:** `sondeo_2yellow.yml` lanza ahora el script nombrado en la
+  primera línea de `sondeos/ejecutar.txt`.
