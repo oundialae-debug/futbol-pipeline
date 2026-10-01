@@ -1,4 +1,4 @@
-# Tenis en directo, 01/10/2026 16:47 UTC (18:47 en España)
+# Tenis en directo, 01/10/2026 16:56 UTC (18:56 en España)
 
 Calculadora desde el marcador exacto (modelo de puntos, superficie real) frente a la cuota en directo
 (sin margen). Ganador y sets: la calculadora suele coincidir con la casa. Total de juegos: el modelo
@@ -7,17 +7,17 @@ Se actualiza cada ~5 min; el registro en data/tenis/api_tennis/registro/ servir�
 
 | partido | tipo | superficie | marcador (sets, juegos, puntos, saca) | gana 1º: modelo / cuota | sets más probables (modelo) | total juegos: línea, modelo / cuota |
 |---|---|---|---|---|---|---|
-| A. Shelbayh vs D. Ostapenkov | Challenger Men Singles | Hard | 0-0, 2-0, 15 - 0, saca D. Ostapenkov | 65% / 83% | 2-0 41%, 1-2 26% | 18.5: 83% / 50% |
-| B. Nakashima vs K. Smith | Challenger Men Singles | Hard | 1-1, 1-1, 30 - 30, saca K. Smith | 77% / 48% | 2-1 77%, 1-2 23% | 29.5: 44% / 39% |
-| C. Chidekh vs U. Blanchet | Challenger Men Singles | Hard | 1-1, 1-0, 15 - 30, saca U. Blanchet | 63% / 61% | 2-1 63%, 1-2 37% | 28.5: 59% / 56% |
-| M. Braswell vs H. Coquelin | Itf Men Singles | Hard | 0-0, 2-3, 0 - 0, saca H. Coquelin | 60% / 50% | 2-1 37%, 2-0 23% | 23.5: 59% / 49% |
-| D. N. Cazacu vs S. Rozin | Itf Men Singles | Hard | 0-0, 0-0, 15 - 15, saca D. N. Cazacu | 50% / 25% | 0-2 25%, 2-1 25% | 20.5: 73% / 49% |
-| A. N. Tudorica vs N. Niedner | Itf Men Singles | Hard | 1-0, 4-4, 40 - 40, saca N. Niedner | 79% / 81% | 2-0 55%, 2-1 24% | 21.5: 64% / 54% |
-| J. Braswell vs J. Lee | Itf Men Singles | Hard | 1-0, 4-5, 40 - 15, saca J. Braswell | 57% / 56% | 1-2 43%, 2-0 37% | 25.5: 58% / 51% |
-| D. Zhalgasbay vs F. Corwin | Itf Men Singles | Hard | 0-0, 1-0, 30 - 30, saca F. Corwin | 24% / 51% | 0-2 44%, 1-2 32% | 21.5: 65% / 54% |
-| N. Djosic vs T. Boosarawongse | Itf Men Singles | Hard | 0-0, 1-1, 15 - 40, saca T. Boosarawongse | 50% / 39% | 2-1 26%, 0-2 26% | 22.5: 60% / 46% |
-| Ma. Sheldon vs O. Pieczkowski | Itf Men Singles | Hard | 1-1, 1-2, 15 - 30, saca O. Pieczkowski | 9% / 17% | 1-2 91%, 2-1 9% | 30.5: 50% / 46% |
-| R. M. Nijkamp vs F. Mattioli | Itf Women Singles | Hard | 0-0, 3-4, 15 - 30, saca R. M. Nijkamp | 46% / 48% | 0-2 31%, 2-1 29% |  |
-| C. D. Vega Gudino vs M. F. Urrutia | Itf Women Singles | Hard | 0-0, 2-4, 0 - 0, saca M. F. Urrutia | 11% / 2% | 0-2 66%, 1-2 23% |  |
-| E. Meri vs A. Sharma | Itf Women Singles | Hard | 0-0, 3-5, 0 - 15, saca A. Sharma | 21% / 13% | 0-2 54%, 1-2 25% |  |
-| A. Lahey vs R. Caballero Chica | Itf Women Singles | Hard | 0-0, 4-2, 0 - 30, saca A. Lahey | 78% / 84% | 2-0 52%, 2-1 27% |  |
+| A. Shelbayh vs D. Ostapenkov | Challenger Men Singles | Hard | 0-0, 4-1, 0 - 0, saca A. Shelbayh | 72% / 86% | 2-0 47%, 1-2 26% | 18.5: 74% / 44% |
+| B. Nakashima vs K. Smith | Challenger Men Singles | Hard | 1-1, 3-2, 0 - 0, saca B. Nakashima | 96% / 83% | 2-1 96%, 1-2 4% | 28.5: 73% / 73% |
+| C. Chidekh vs U. Blanchet | Challenger Men Singles | Hard | 1-1, 2-1, 0 - 15, saca U. Blanchet | 63% / 66% | 2-1 63%, 1-2 37% | 28.5: 66% / 58% |
+| N. Djosic vs T. Boosarawongse | Itf Men Singles | Hard | 0-0, 2-2, 30 - 15, saca T. Boosarawongse | 57% / 49% | 2-0 31%, 2-1 26% | 22.5: 60% / 51% |
+| D. N. Cazacu vs S. Rozin | Itf Men Singles | Hard | 0-0, 1-0, 30 - 30, saca S. Rozin | 54% / 29% | 2-0 29%, 1-2 25% | 21.5: 69% / 50% |
+| A. N. Tudorica vs N. Niedner | Itf Men Singles | Hard | 1-0, 5-5, 0 - 30, saca N. Niedner | 74% / 73% | 2-0 43%, 2-1 31% | 28.5: 55% / 51% |
+| J. Braswell vs J. Lee | Itf Men Singles | Hard | 1-0, 5-6, 0 - 0, saca J. Braswell | 53% / 50% | 1-2 47%, 2-0 30% | 26.5: 62% / 56% |
+| D. Zhalgasbay vs F. Corwin | Itf Men Singles | Hard | 0-0, 2-1, 0 - 0, saca F. Corwin | 24% / 50% | 0-2 44%, 1-2 32% | 22.5: 57% / 50% |
+| M. Braswell vs H. Coquelin | Itf Men Singles | Hard | 0-0, 2-4, A - 40, saca M. Braswell | 56% / 44% | 2-1 39%, 0-2 25% | 23.5: 62% / 50% |
+| Ma. Sheldon vs O. Pieczkowski | Itf Men Singles | Hard | 1-1, 2-3, 40 - A, saca O. Pieczkowski | 7% / 16% | 1-2 93%, 2-1 7% | 30.5: 59% / 58% |
+| R. M. Nijkamp vs F. Mattioli | Itf Women Singles | Hard | 0-1, 0-0, 0 - 0, saca R. M. Nijkamp | 31% / 35% | 0-2 45%, 2-1 31% |  |
+| C. D. Vega Gudino vs M. F. Urrutia | Itf Women Singles | Hard | 0-1, 0-0, 0 - 0, saca M. F. Urrutia | 8% /  | 0-2 72%, 1-2 20% |  |
+| E. Meri vs A. Sharma | Itf Women Singles | Hard | 0-1, 0-0, 40 - 40, saca E. Meri | 18% / 12% | 0-2 58%, 1-2 24% |  |
+| A. Lahey vs R. Caballero Chica | Itf Women Singles | Hard | 0-0, 5-2, A - 40, saca R. Caballero Chica | 86% / 91% | 2-0 63%, 2-1 23% |  |
