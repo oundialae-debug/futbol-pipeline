@@ -1,14 +1,14 @@
 # Más/menos juegos en directo: apuestas en papel
 
-Partidos acabados con cuota de juegos en el registro: **142**. Una apuesta por partido (se agrupa por partido). Cuota = la de la API en esa pasada, no la de Luckia. Con menos de 20 apuestas el número no significa nada.
+Partidos acabados con cuota de juegos en el registro: **158**. Una apuesta por partido (se agrupa por partido). Cuota = la de la API en esa pasada, no la de Luckia. Con menos de 20 apuestas el número no significa nada.
 
 | estrategia | apuestas | aciertos | beneficio medio | sigmas |
 |---|---|---|---|---|
-| **señal: vigilar el menos** | 38 | 61% | +1.4% | +0.10 |
-| control: siempre el menos (1ª pasada) | 142 | 58% | +5.6% | +0.74 |
-| control: siempre el más (1ª pasada) | 142 | 42% | -20.6% | -2.63 |
+| **señal: vigilar el menos** | 40 | 57% | -3.7% | -0.27 |
+| control: siempre el menos (1ª pasada) | 158 | 58% | +6.8% | +0.94 |
+| control: siempre el más (1ª pasada) | 158 | 42% | -21.5% | -2.90 |
 
-Brier del 'más' en la línea principal (1ª pasada): modelo 0.2923, mercado 0.2499 (menor es mejor). El modelo da al más +21.4% sobre lo que pasa de verdad.
+Brier del 'más' en la línea principal (1ª pasada): modelo 0.3005, mercado 0.2509 (menor es mejor). El modelo da al más +22.1% sobre lo que pasa de verdad.
 
 ## Señales
 
@@ -42,6 +42,7 @@ Brier del 'más' en la línea principal (1ª pasada): modelo 0.2923, mercado 0.2
 | Challenger Mouilleron-Le-Captif: L. Poullain vs R. Bertola | 31.5 | 1.83 | 30 | gana |
 | ITF M M25 Zaragoza: N. Ifi vs P. Rodenas | 27.5 | 1.91 | 33 | pierde |
 | Challenger Columbus: L. Staeheli vs A. Andrade | 22.5 | 1.36 | 22 | gana |
+| Challenger Columbus: B. Nakashima vs K. Smith | 25.5 | 1.83 | 31 | pierde |
 | ITF M M25 Darwin: J. Beale vs D. Pham | 16.5 | 1.57 | 24 | pierde |
 | ATP 500 Tokyo: J. Faria vs A. Fery | 29.5 | 1.33 | 29 | gana |
 | ITF M M25 Kigali: C. Denolly vs M. Plunger | 21.5 | 1.83 | 16 | gana |
@@ -51,20 +52,24 @@ Brier del 'más' en la línea principal (1ª pasada): modelo 0.2923, mercado 0.2
 | ITF M M15 Baku 2 (Azerbaijan): J. Connel vs N. Jadoun | 21.5 | 1.01 | 21 | gana |
 | ITF M M15 Sharm ElSheikh 11: F. Zakaria vs G. El Feky | 25.5 | 1.80 | 27 | pierde |
 | ITF M M15 Sibenik: J. Nicod vs S. Seghetti | 22.5 | 1.83 | 28 | pierde |
+| ITF M M15 Ann Arbor, MI: Ma. Sheldon vs O. Pieczkowski | 21.5 | 1.80 | 29 | pierde |
 | ITF M M15 Monastir 33: M. Chazal vs K. van Wyk | 25.5 | 1.57 | 25 | gana |
 
 ## Reglas del vigilante (desde el 01/10 solo en papel)
 
 | regla | apuestas resueltas | aciertos | beneficio medio (cuota API) | sigmas |
 |---|---|---|---|---|
-| actual (al móvil) | 112 | 63% | -3.0% | -0.42 |
+| actual | 3 | 67% | -3.3% | -0.07 |
+| actual (al móvil) | 125 | 62% | -4.1% | -0.61 |
+| aprendida | 8 | 75% | +39.3% | +1.27 |
+| casa65 | 2 | 100% | +26.7% | +15.29 |
 
 ## Previos (antes de empezar), línea principal de juegos y ganador
 
-135 partidos. Juegos (más de la línea principal), Brier (menor es mejor): modelo 0.2961, modelo corregido con el historial 0.2631, casa 0.2502. Pasó el más en el 44%.
-Ganador (135): acierto modelo 64%, casa 73%.
+158 partidos. Juegos (más de la línea principal), Brier (menor es mejor): modelo 0.3046, modelo corregido con el historial 0.2651, casa 0.2498. Pasó el más en el 44%.
+Ganador (158): acierto modelo 63%, casa 73%.
 
 ## Aprendizaje (recalibración del modelo)
 
-Partidos resueltos: 74 (509 líneas). Activa: **sí** (hace falta 30+ partidos y que mejore a la CASA en partidos que no vio).
-Brier (menor es mejor): modelo 0.2903, modelo con el saque de hoy 0.2620, casa 0.2377, recalibrado (validado por partidos) 0.2365. Sesgo del modelo hacia el más: +22.3%.
+Partidos resueltos: 86 (578 líneas). Activa: **sí** (hace falta 30+ partidos y que mejore a la CASA en partidos que no vio).
+Brier (menor es mejor): modelo 0.2876, modelo con el saque de hoy 0.2629, casa 0.2401, recalibrado (validado por partidos) 0.2286. Sesgo del modelo hacia el más: +23.8%.

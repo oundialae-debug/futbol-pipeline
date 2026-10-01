@@ -748,13 +748,13 @@ hora,event_key,tipo,torneo,superficie,jugador1,jugador2,mejor_de,p_saque1,p_saqu
 2026-10-01 13:00,12167411,Itf Women Singles,W35 Baza,Hard,C. Gallardo Guevara,C. Cervino Ruiz,3,0.585,0.5325,0.7568,0.5879,21.5,0.5543,0.479,1.9249999999999998,1.77,1,23.45
 2026-10-01 13:00,12167411,Itf Women Singles,W35 Baza,Hard,C. Gallardo Guevara,C. Cervino Ruiz,3,0.585,0.5325,0.7568,0.5879,22.5,0.491,0.4297,2.15,1.62,0,23.45
 2026-10-01 13:00,12167411,Itf Women Singles,W35 Baza,Hard,C. Gallardo Guevara,C. Cervino Ruiz,3,0.585,0.5325,0.7568,0.5879,23.5,0.4492,0.3866,2.38,1.5,0,23.45
-2026-10-01 15:00,12167422,Challenger Men Singles,Curitiba,Clay,M. Alves,G. Villanueva,3,0.6125,0.62,0.4619,0.6622,20.5,0.7183,0.5623,1.65,2.12,0,25.18
-2026-10-01 15:00,12167422,Challenger Men Singles,Curitiba,Clay,M. Alves,G. Villanueva,3,0.6125,0.62,0.4619,0.6622,21.5,0.6689,0.5061,1.8250000000000002,1.87,1,25.18
-2026-10-01 15:00,12167422,Challenger Men Singles,Curitiba,Clay,M. Alves,G. Villanueva,3,0.6125,0.62,0.4619,0.6622,22.5,0.5934,0.4662,2.0149999999999997,1.76,0,25.18
-2026-10-01 15:00,12167422,Challenger Men Singles,Curitiba,Clay,M. Alves,G. Villanueva,3,0.6125,0.62,0.4619,0.6622,23.5,0.5367,0.4465,2.07,1.67,0,25.18
-2026-10-01 15:00,12167423,Challenger Men Singles,Curitiba,Clay,P. Boscardin Dias,G. A. Olivieri,3,0.5750000000000001,0.5775,0.4869,0.5463,20.5,0.6872,0.5405,1.7,2.0,0,24.6
-2026-10-01 15:00,12167423,Challenger Men Singles,Curitiba,Clay,P. Boscardin Dias,G. A. Olivieri,3,0.5750000000000001,0.5775,0.4869,0.5463,21.5,0.6373,0.4885,1.895,1.81,1,24.6
-2026-10-01 15:00,12167423,Challenger Men Singles,Curitiba,Clay,P. Boscardin Dias,G. A. Olivieri,3,0.5750000000000001,0.5775,0.4869,0.5463,22.5,0.5697,0.4297,2.15,1.62,0,24.6
+2026-10-01 18:00,12167422,Challenger Men Singles,Curitiba,Clay,M. Alves,G. Villanueva,3,0.6125,0.62,0.4619,0.6622,20.5,0.7183,0.5623,1.65,2.12,0,25.18
+2026-10-01 18:00,12167422,Challenger Men Singles,Curitiba,Clay,M. Alves,G. Villanueva,3,0.6125,0.62,0.4619,0.6622,21.5,0.6689,0.5007,1.8250000000000002,1.83,1,25.18
+2026-10-01 18:00,12167422,Challenger Men Singles,Curitiba,Clay,M. Alves,G. Villanueva,3,0.6125,0.62,0.4619,0.6622,22.5,0.5934,0.4663,2.02,1.7650000000000001,0,25.18
+2026-10-01 18:00,12167422,Challenger Men Singles,Curitiba,Clay,M. Alves,G. Villanueva,3,0.6125,0.62,0.4619,0.6622,23.5,0.5367,0.4465,2.07,1.67,0,25.18
+2026-10-01 18:00,12167423,Challenger Men Singles,Curitiba,Clay,P. Boscardin Dias,G. A. Olivieri,3,0.5750000000000001,0.5775,0.4869,0.5469,20.5,0.6872,0.5405,1.7,2.0,0,24.6
+2026-10-01 18:00,12167423,Challenger Men Singles,Curitiba,Clay,P. Boscardin Dias,G. A. Olivieri,3,0.5750000000000001,0.5775,0.4869,0.5469,21.5,0.6373,0.4885,1.895,1.81,1,24.6
+2026-10-01 18:00,12167423,Challenger Men Singles,Curitiba,Clay,P. Boscardin Dias,G. A. Olivieri,3,0.5750000000000001,0.5775,0.4869,0.5469,22.5,0.5697,0.4297,2.15,1.62,0,24.6
 2026-10-01 13:00,12167424,Challenger Men Singles,Porto,Hard,T. Pereira,H. Grenier,3,0.625,0.64,0.4252,0.4305,20.5,0.7323,0.5867,1.55,2.2,0,25.44
 2026-10-01 13:00,12167424,Challenger Men Singles,Porto,Hard,T. Pereira,H. Grenier,3,0.625,0.64,0.4252,0.4305,21.5,0.6835,0.5527,1.6549999999999998,2.045,0,25.44
 2026-10-01 13:00,12167424,Challenger Men Singles,Porto,Hard,T. Pereira,H. Grenier,3,0.625,0.64,0.4252,0.4305,22.5,0.6035,0.4864,1.89,1.79,1,25.44
@@ -769,10 +769,10 @@ hora,event_key,tipo,torneo,superficie,jugador1,jugador2,mejor_de,p_saque1,p_saqu
 2026-10-01 11:00,12167433,Itf Women Singles,W15 Varna,Clay,G. Krastenova,O. Simion,3,0.4925,0.5375,0.2728,0.1329,17.5,0.8246,0.5355,1.7,1.96,0,23.43
 2026-10-01 11:00,12167433,Itf Women Singles,W15 Varna,Clay,G. Krastenova,O. Simion,3,0.4925,0.5375,0.2728,0.1329,18.5,0.7487,0.4773,1.955,1.785,1,23.43
 2026-10-01 11:00,12167433,Itf Women Singles,W15 Varna,Clay,G. Krastenova,O. Simion,3,0.4925,0.5375,0.2728,0.1329,19.5,0.6748,0.4143,2.29,1.62,0,23.43
-2026-10-01 15:00,12167441,Challenger Men Singles,Curitiba,Clay,G. I. Justo,P. Sakamoto,3,0.6375000000000001,0.5625,0.8335,0.6449,20.5,0.5748,0.5575,1.6549999999999998,2.085,0,23.14
-2026-10-01 15:00,12167441,Challenger Men Singles,Curitiba,Clay,G. I. Justo,P. Sakamoto,3,0.6375000000000001,0.5625,0.8335,0.6449,21.5,0.5196,0.5034,1.835,1.8599999999999999,1,23.14
-2026-10-01 15:00,12167441,Challenger Men Singles,Curitiba,Clay,G. I. Justo,P. Sakamoto,3,0.6375000000000001,0.5625,0.8335,0.6449,22.5,0.4512,0.4512,2.08,1.71,0,23.14
-2026-10-01 15:00,12167441,Challenger Men Singles,Curitiba,Clay,G. I. Justo,P. Sakamoto,3,0.6375000000000001,0.5625,0.8335,0.6449,23.5,0.4061,0.4263,2.18,1.62,0,23.14
+2026-10-01 18:00,12167441,Challenger Men Singles,Curitiba,Clay,G. I. Justo,P. Sakamoto,3,0.6375000000000001,0.5625,0.8335,0.6449,20.5,0.5748,0.5597,1.66,2.1100000000000003,0,23.14
+2026-10-01 18:00,12167441,Challenger Men Singles,Curitiba,Clay,G. I. Justo,P. Sakamoto,3,0.6375000000000001,0.5625,0.8335,0.6449,21.5,0.5196,0.5014,1.83,1.84,1,23.14
+2026-10-01 18:00,12167441,Challenger Men Singles,Curitiba,Clay,G. I. Justo,P. Sakamoto,3,0.6375000000000001,0.5625,0.8335,0.6449,22.5,0.4512,0.473,1.95,1.75,0,23.14
+2026-10-01 18:00,12167441,Challenger Men Singles,Curitiba,Clay,G. I. Justo,P. Sakamoto,3,0.6375000000000001,0.5625,0.8335,0.6449,23.5,0.4061,0.4263,2.18,1.62,0,23.14
 2026-10-01 04:01,12167448,Itf Men Singles,M15 Sharm ElSheikh 11,Hard,D. Dziubailau,A. Elsayed,3,0.6275000000000001,0.6375000000000001,0.45,0.0943,16.5,0.9725,0.5027,1.81,1.83,1,25.49
 2026-10-01 04:01,12167449,Itf Men Singles,M15 Sharm ElSheikh 11,Hard,R. Strombachs,L. Castagnola,3,0.67,0.5925,0.8349,0.8198,19.5,0.6909,0.5,1.82,1.82,1,23.67
 2026-10-01 04:01,12167450,Itf Men Singles,M15 Sharm ElSheikh 11,Hard,F. Zakaria,G. El Feky,3,0.615,0.6675,0.2566,0.7221,20.5,0.6894,0.5,1.82,1.82,1,24.83
@@ -892,9 +892,9 @@ hora,event_key,tipo,torneo,superficie,jugador1,jugador2,mejor_de,p_saque1,p_saqu
 2026-10-01 15:00,12167568,Itf Men Singles,"M15 Fayetteville, AR",Hard,D. N. Cazacu,S. Rozin,3,0.6275000000000001,0.6275000000000001,0.5,0.2322,19.5,0.8018,0.5328,1.71,1.95,1,25.42
 2026-10-01 15:00,12167568,Itf Men Singles,"M15 Fayetteville, AR",Hard,D. N. Cazacu,S. Rozin,3,0.6275000000000001,0.6275000000000001,0.5,0.2322,20.5,0.7317,0.4642,1.9849999999999999,1.72,0,25.42
 2026-10-01 15:00,12167568,Itf Men Singles,"M15 Fayetteville, AR",Hard,D. N. Cazacu,S. Rozin,3,0.6275000000000001,0.6275000000000001,0.5,0.2322,21.5,0.683,0.4368,2.14,1.66,0,25.42
-2026-10-01 15:00,12167572,Itf Men Singles,"M15 Fayetteville, AR",Hard,A. Shah,E. Bynoe,3,0.6575,0.6025,0.7557,0.7282,19.5,0.7444,0.5596,1.7,2.16,0,24.49
-2026-10-01 15:00,12167572,Itf Men Singles,"M15 Fayetteville, AR",Hard,A. Shah,E. Bynoe,3,0.6575,0.6025,0.7557,0.7282,20.5,0.6675,0.5,1.82,1.82,1,24.49
-2026-10-01 15:00,12167572,Itf Men Singles,"M15 Fayetteville, AR",Hard,A. Shah,E. Bynoe,3,0.6575,0.6025,0.7557,0.7282,21.5,0.6139,0.4536,2.06,1.71,0,24.49
+2026-10-01 18:00,12167572,Itf Men Singles,"M15 Fayetteville, AR",Hard,A. Shah,E. Bynoe,3,0.6575,0.6025,0.7557,0.7282,19.5,0.7444,0.5707,1.67,2.22,0,24.49
+2026-10-01 18:00,12167572,Itf Men Singles,"M15 Fayetteville, AR",Hard,A. Shah,E. Bynoe,3,0.6575,0.6025,0.7557,0.7282,20.5,0.6675,0.5,1.82,1.82,1,24.49
+2026-10-01 18:00,12167572,Itf Men Singles,"M15 Fayetteville, AR",Hard,A. Shah,E. Bynoe,3,0.6575,0.6025,0.7557,0.7282,21.5,0.6139,0.443,2.15,1.71,0,24.49
 2026-10-01 08:00,12167574,Itf Women Singles,W15 Monastir 28,Hard,E. Haavisto,S. Biolay,3,0.4875,0.59,0.086,0.1995,18.5,0.5827,0.5089,1.8,1.865,1,21.1
 2026-10-01 08:00,12167574,Itf Women Singles,W15 Monastir 28,Hard,E. Haavisto,S. Biolay,3,0.4875,0.59,0.086,0.1995,19.5,0.4989,0.4734,1.93,1.7349999999999999,0,21.1
 2026-10-01 08:00,12167576,Itf Women Singles,W15 Monastir 28,Hard,Y. Matsumoto,J. Hinojosa Gomez,3,0.515,0.555,0.2963,0.2843,18.5,0.7642,0.5521,1.72,2.12,0,23.66
@@ -935,11 +935,11 @@ hora,event_key,tipo,torneo,superficie,jugador1,jugador2,mejor_de,p_saque1,p_saqu
 2026-10-01 15:00,12167507,Itf Women Singles,W100 Templeton,Hard,M. Rapolu,A. Urhobo,3,0.5650000000000001,0.5925,0.3591,0.5805,21.5,0.6183,0.4799,1.94,1.79,0,24.36
 2026-10-01 15:00,12167507,Itf Women Singles,W100 Templeton,Hard,M. Rapolu,A. Urhobo,3,0.5650000000000001,0.5925,0.3591,0.5805,22.5,0.5508,0.4241,2.2,1.62,0,24.36
 2026-10-01 15:00,12167507,Itf Women Singles,W100 Templeton,Hard,M. Rapolu,A. Urhobo,3,0.5650000000000001,0.5925,0.3591,0.5805,23.5,0.5039,0.3913,2.38,1.53,0,24.36
-2026-10-01 15:00,12167520,Itf Women Singles,W100 Templeton,Hard,M. Brengle,A. Zucchini,3,0.545,0.5,0.727,0.7469,17.5,0.8262,0.6627,1.4,2.75,0,23.45
-2026-10-01 15:00,12167520,Itf Women Singles,W100 Templeton,Hard,M. Brengle,A. Zucchini,3,0.545,0.5,0.727,0.7469,18.5,0.7503,0.5847,1.605,2.26,0,23.45
-2026-10-01 15:00,12167520,Itf Women Singles,W100 Templeton,Hard,M. Brengle,A. Zucchini,3,0.545,0.5,0.727,0.7469,19.5,0.6763,0.5107,1.83,1.91,1,23.45
-2026-10-01 15:00,12167520,Itf Women Singles,W100 Templeton,Hard,M. Brengle,A. Zucchini,3,0.545,0.5,0.727,0.7469,20.5,0.611,0.4562,2.05,1.72,0,23.45
-2026-10-01 15:00,12167520,Itf Women Singles,W100 Templeton,Hard,M. Brengle,A. Zucchini,3,0.545,0.5,0.727,0.7469,21.5,0.5604,0.4156,2.25,1.6,0,23.45
+2026-10-01 18:00,12167520,Itf Women Singles,W100 Templeton,Hard,M. Brengle,A. Zucchini,3,0.545,0.5,0.727,0.7469,17.5,0.8262,0.6627,1.4,2.75,0,23.45
+2026-10-01 18:00,12167520,Itf Women Singles,W100 Templeton,Hard,M. Brengle,A. Zucchini,3,0.545,0.5,0.727,0.7469,18.5,0.7503,0.5733,1.645,2.21,0,23.45
+2026-10-01 18:00,12167520,Itf Women Singles,W100 Templeton,Hard,M. Brengle,A. Zucchini,3,0.545,0.5,0.727,0.7469,19.5,0.6763,0.5075,1.815,1.87,1,23.45
+2026-10-01 18:00,12167520,Itf Women Singles,W100 Templeton,Hard,M. Brengle,A. Zucchini,3,0.545,0.5,0.727,0.7469,20.5,0.611,0.443,2.125,1.69,0,23.45
+2026-10-01 18:00,12167520,Itf Women Singles,W100 Templeton,Hard,M. Brengle,A. Zucchini,3,0.545,0.5,0.727,0.7469,21.5,0.5604,0.4156,2.25,1.6,0,23.45
 2026-10-01 15:00,12167522,Itf Women Singles,W100 Templeton,Hard,W. Osuigwe,E. McDonald,3,0.5475,0.52,0.6436,0.5405,19.5,0.712,0.5943,1.57,2.3,0,23.96
 2026-10-01 15:00,12167522,Itf Women Singles,W100 Templeton,Hard,W. Osuigwe,E. McDonald,3,0.5475,0.52,0.6436,0.5405,20.5,0.6476,0.525,1.755,1.94,0,23.96
 2026-10-01 15:00,12167522,Itf Women Singles,W100 Templeton,Hard,W. Osuigwe,E. McDonald,3,0.5475,0.52,0.6436,0.5405,21.5,0.5976,0.4886,1.91,1.8250000000000002,1,23.96
@@ -948,19 +948,19 @@ hora,event_key,tipo,torneo,superficie,jugador1,jugador2,mejor_de,p_saque1,p_saqu
 2026-10-01 15:00,12167533,Itf Men Singles,"M15 Ann Arbor, MI",Hard,D. Zhalgasbay,F. Corwin,3,0.5975,0.6625,0.2066,0.4788,20.5,0.6425,0.5584,1.7,2.15,0,24.13
 2026-10-01 15:00,12167533,Itf Men Singles,"M15 Ann Arbor, MI",Hard,D. Zhalgasbay,F. Corwin,3,0.5975,0.6625,0.2066,0.4788,21.5,0.5874,0.5,1.82,1.82,1,24.13
 2026-10-01 15:00,12167533,Itf Men Singles,"M15 Ann Arbor, MI",Hard,D. Zhalgasbay,F. Corwin,3,0.5975,0.6625,0.2066,0.4788,22.5,0.5084,0.4378,2.17,1.69,0,24.13
-2026-10-01 15:00,12167534,Itf Women Singles,W100 Templeton,Hard,C. Kuhl,K. Penickova,3,0.5575,0.6125,0.2363,0.3575,17.5,0.8455,0.6627,1.4,2.75,0,23.68
-2026-10-01 15:00,12167534,Itf Women Singles,W100 Templeton,Hard,C. Kuhl,K. Penickova,3,0.5575,0.6125,0.2363,0.3575,18.5,0.7679,0.6453,1.44,2.62,0,23.68
-2026-10-01 15:00,12167534,Itf Women Singles,W100 Templeton,Hard,C. Kuhl,K. Penickova,3,0.5575,0.6125,0.2363,0.3575,19.5,0.6894,0.5742,1.635,2.205,0,23.68
-2026-10-01 15:00,12167534,Itf Women Singles,W100 Templeton,Hard,C. Kuhl,K. Penickova,3,0.5575,0.6125,0.2363,0.3575,20.5,0.6179,0.502,1.8399999999999999,1.855,1,23.68
-2026-10-01 15:00,12167534,Itf Women Singles,W100 Templeton,Hard,C. Kuhl,K. Penickova,3,0.5575,0.6125,0.2363,0.3575,21.5,0.565,0.4622,2.025,1.74,0,23.68
-2026-10-01 15:00,12167534,Itf Women Singles,W100 Templeton,Hard,C. Kuhl,K. Penickova,3,0.5575,0.6125,0.2363,0.3575,22.5,0.4979,0.4156,2.25,1.6,0,23.68
-2026-10-01 15:00,12167535,Itf Women Singles,W100 Templeton,Hard,F. Pace,A. Van Impe,3,0.5875,0.5725,0.578,0.5858,18.5,0.8222,0.625,1.5,2.5,0,24.57
-2026-10-01 15:00,12167535,Itf Women Singles,W100 Templeton,Hard,F. Pace,A. Van Impe,3,0.5875,0.5725,0.578,0.5858,19.5,0.7507,0.557,1.67,2.1,0,24.57
-2026-10-01 15:00,12167535,Itf Women Singles,W100 Templeton,Hard,F. Pace,A. Van Impe,3,0.5875,0.5725,0.578,0.5858,20.5,0.6838,0.5041,1.82,1.85,1,24.57
-2026-10-01 15:00,12167535,Itf Women Singles,W100 Templeton,Hard,F. Pace,A. Van Impe,3,0.5875,0.5725,0.578,0.5858,21.5,0.6336,0.4533,2.05,1.7,0,24.57
-2026-10-01 15:00,12167535,Itf Women Singles,W100 Templeton,Hard,F. Pace,A. Van Impe,3,0.5875,0.5725,0.578,0.5858,22.5,0.5656,0.4057,2.3,1.57,0,24.57
-2026-10-01 15:00,12167535,Itf Women Singles,W100 Templeton,Hard,F. Pace,A. Van Impe,3,0.5875,0.5725,0.578,0.5858,23.5,0.5179,0.3424,2.67,1.39,0,24.57
-2026-10-01 15:00,12167535,Itf Women Singles,W100 Templeton,Hard,F. Pace,A. Van Impe,3,0.5875,0.5725,0.578,0.5858,24.5,0.4953,0.3254,2.82,1.36,0,24.57
+2026-10-01 18:00,12167534,Itf Women Singles,W100 Templeton,Hard,C. Kuhl,K. Penickova,3,0.5575,0.6125,0.2363,0.3575,17.5,0.8455,0.6627,1.4,2.75,0,23.68
+2026-10-01 18:00,12167534,Itf Women Singles,W100 Templeton,Hard,C. Kuhl,K. Penickova,3,0.5575,0.6125,0.2363,0.3575,18.5,0.7679,0.6453,1.44,2.62,0,23.68
+2026-10-01 18:00,12167534,Itf Women Singles,W100 Templeton,Hard,C. Kuhl,K. Penickova,3,0.5575,0.6125,0.2363,0.3575,19.5,0.6894,0.5759,1.62,2.2,0,23.68
+2026-10-01 18:00,12167534,Itf Women Singles,W100 Templeton,Hard,C. Kuhl,K. Penickova,3,0.5575,0.6125,0.2363,0.3575,20.5,0.6179,0.502,1.8399999999999999,1.855,1,23.68
+2026-10-01 18:00,12167534,Itf Women Singles,W100 Templeton,Hard,C. Kuhl,K. Penickova,3,0.5575,0.6125,0.2363,0.3575,21.5,0.565,0.4638,2.0,1.73,0,23.68
+2026-10-01 18:00,12167534,Itf Women Singles,W100 Templeton,Hard,C. Kuhl,K. Penickova,3,0.5575,0.6125,0.2363,0.3575,22.5,0.4979,0.4156,2.25,1.6,0,23.68
+2026-10-01 18:00,12167535,Itf Women Singles,W100 Templeton,Hard,F. Pace,A. Van Impe,3,0.5875,0.5725,0.578,0.5858,18.5,0.8222,0.625,1.5,2.5,0,24.57
+2026-10-01 18:00,12167535,Itf Women Singles,W100 Templeton,Hard,F. Pace,A. Van Impe,3,0.5875,0.5725,0.578,0.5858,19.5,0.7507,0.557,1.67,2.1,0,24.57
+2026-10-01 18:00,12167535,Itf Women Singles,W100 Templeton,Hard,F. Pace,A. Van Impe,3,0.5875,0.5725,0.578,0.5858,20.5,0.6838,0.5075,1.8,1.855,1,24.57
+2026-10-01 18:00,12167535,Itf Women Singles,W100 Templeton,Hard,F. Pace,A. Van Impe,3,0.5875,0.5725,0.578,0.5858,21.5,0.6336,0.4767,1.91,1.74,0,24.57
+2026-10-01 18:00,12167535,Itf Women Singles,W100 Templeton,Hard,F. Pace,A. Van Impe,3,0.5875,0.5725,0.578,0.5858,22.5,0.5656,0.4057,2.3,1.57,0,24.57
+2026-10-01 18:00,12167535,Itf Women Singles,W100 Templeton,Hard,F. Pace,A. Van Impe,3,0.5875,0.5725,0.578,0.5858,23.5,0.5179,0.3424,2.67,1.39,0,24.57
+2026-10-01 18:00,12167535,Itf Women Singles,W100 Templeton,Hard,F. Pace,A. Van Impe,3,0.5875,0.5725,0.578,0.5858,24.5,0.4953,0.3254,2.82,1.36,0,24.57
 2026-10-01 14:01,12167561,Itf Men Singles,"M15 Ann Arbor, MI",Hard,M. Dahlin,A. Bernard,3,0.6725,0.6075,0.7911,0.7649,18.5,0.8221,0.5795,1.64,2.26,0,24.37
 2026-10-01 14:01,12167561,Itf Men Singles,"M15 Ann Arbor, MI",Hard,M. Dahlin,A. Bernard,3,0.6725,0.6075,0.7911,0.7649,19.5,0.7379,0.5205,1.75,1.9,1,24.37
 2026-10-01 14:01,12167561,Itf Men Singles,"M15 Ann Arbor, MI",Hard,M. Dahlin,A. Bernard,3,0.6725,0.6075,0.7911,0.7649,20.5,0.6578,0.4231,2.25,1.65,0,24.37
@@ -976,12 +976,12 @@ hora,event_key,tipo,torneo,superficie,jugador1,jugador2,mejor_de,p_saque1,p_saqu
 2026-10-01 15:00,12167569,Itf Men Singles,"M15 Fayetteville, AR",Hard,T. Papamalamis,T. Chavez,3,0.615,0.5825,0.663,0.7111,19.5,0.7473,0.5343,1.73,1.9849999999999999,0,24.54
 2026-10-01 15:00,12167569,Itf Men Singles,"M15 Fayetteville, AR",Hard,T. Papamalamis,T. Chavez,3,0.615,0.5825,0.663,0.7111,20.5,0.6772,0.4863,1.87,1.77,0,24.54
 2026-10-01 15:00,12167569,Itf Men Singles,"M15 Fayetteville, AR",Hard,T. Papamalamis,T. Chavez,3,0.615,0.5825,0.663,0.7111,21.5,0.6259,0.4877,1.88,1.79,1,24.54
-2026-10-01 15:00,12167608,Itf Women Singles,W100 Templeton,Hard,J. Pareja,M. Stoiana,3,0.555,0.5825,0.3583,0.4489,17.5,0.8715,0.6453,1.44,2.62,0,24.24
-2026-10-01 15:00,12167608,Itf Women Singles,W100 Templeton,Hard,J. Pareja,M. Stoiana,3,0.555,0.5825,0.3583,0.4489,18.5,0.802,0.6453,1.44,2.62,0,24.24
-2026-10-01 15:00,12167608,Itf Women Singles,W100 Templeton,Hard,J. Pareja,M. Stoiana,3,0.555,0.5825,0.3583,0.4489,19.5,0.7295,0.5943,1.57,2.3,0,24.24
-2026-10-01 15:00,12167608,Itf Women Singles,W100 Templeton,Hard,J. Pareja,M. Stoiana,3,0.555,0.5825,0.3583,0.4489,20.5,0.6628,0.534,1.78,2.04,0,24.24
-2026-10-01 15:00,12167608,Itf Women Singles,W100 Templeton,Hard,J. Pareja,M. Stoiana,3,0.555,0.5825,0.3583,0.4489,21.5,0.6121,0.4795,1.9,1.75,1,24.24
-2026-10-01 15:00,12167608,Itf Women Singles,W100 Templeton,Hard,J. Pareja,M. Stoiana,3,0.555,0.5825,0.3583,0.4489,22.5,0.546,0.4241,2.2,1.62,0,24.24
-2026-10-01 15:00,12167608,Itf Women Singles,W100 Templeton,Hard,J. Pareja,M. Stoiana,3,0.555,0.5825,0.3583,0.4489,23.5,0.5006,0.3913,2.38,1.53,0,24.24
+2026-10-01 18:00,12167608,Itf Women Singles,W100 Templeton,Hard,J. Pareja,M. Stoiana,3,0.555,0.5825,0.3583,0.4595,17.5,0.8715,0.6453,1.44,2.62,0,24.24
+2026-10-01 18:00,12167608,Itf Women Singles,W100 Templeton,Hard,J. Pareja,M. Stoiana,3,0.555,0.5825,0.3583,0.4595,18.5,0.802,0.6453,1.44,2.62,0,24.24
+2026-10-01 18:00,12167608,Itf Women Singles,W100 Templeton,Hard,J. Pareja,M. Stoiana,3,0.555,0.5825,0.3583,0.4595,19.5,0.7295,0.5943,1.57,2.3,0,24.24
+2026-10-01 18:00,12167608,Itf Women Singles,W100 Templeton,Hard,J. Pareja,M. Stoiana,3,0.555,0.5825,0.3583,0.4595,20.5,0.6628,0.5137,1.78,1.88,1,24.24
+2026-10-01 18:00,12167608,Itf Women Singles,W100 Templeton,Hard,J. Pareja,M. Stoiana,3,0.555,0.5825,0.3583,0.4595,21.5,0.6121,0.4863,1.87,1.77,0,24.24
+2026-10-01 18:00,12167608,Itf Women Singles,W100 Templeton,Hard,J. Pareja,M. Stoiana,3,0.555,0.5825,0.3583,0.4595,22.5,0.546,0.4241,2.2,1.62,0,24.24
+2026-10-01 18:00,12167608,Itf Women Singles,W100 Templeton,Hard,J. Pareja,M. Stoiana,3,0.555,0.5825,0.3583,0.4595,23.5,0.5006,0.3913,2.38,1.53,0,24.24
 2026-10-01 15:00,12167552,Itf Women Singles,W15 Trelew,Hard,L. Moyano,S. Meabe,3,0.5575,0.5125,0.7264,0.7002,19.5,0.6801,0.5495,1.73,2.11,0,23.51
 2026-10-01 15:00,12167552,Itf Women Singles,W15 Trelew,Hard,L. Moyano,S. Meabe,3,0.5575,0.5125,0.7264,0.7002,20.5,0.6143,0.4777,1.99,1.82,1,23.51
