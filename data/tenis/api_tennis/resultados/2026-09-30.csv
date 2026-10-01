@@ -161,7 +161,7 @@ event_key,tipo,torneo,jugador1,jugador2,estado,sets,juegos_totales
 12166923,Itf Women Singles,W100 Templeton,L. Ma,V. Hu,Finished,2 - 0,18
 12166924,Itf Women Singles,W100 Templeton,K. Penickova,I. Shymanovich,Finished,2 - 0,21
 12166925,Itf Women Doubles,W100 Templeton,Frodin/ Sahdiieva,Goto/ Rapolu,Finished,2 - 0,15
-12166926,Itf Women Doubles,W100 Templeton,Herea/ Shymanovich,Penickova/ Penickova,Set 1,0 - 0,7
+12166926,Itf Women Doubles,W100 Templeton,Herea/ Shymanovich,Penickova/ Penickova,Set 2,0 - 1,20
 12166927,Itf Women Doubles,W100 Templeton,Osuigwe/ Urhobo,Cross/ Rogers,Finished,2 - 1,47
 12166928,Itf Women Doubles,W100 Templeton,Pace/ Zucchini,McDonald/ Xu,Walk Over,-,0
 12166929,Challenger Women Singles,Jingshan,A. Shubladze,J. Lu,Finished,2 - 0,14
@@ -338,7 +338,7 @@ event_key,tipo,torneo,jugador1,jugador2,estado,sets,juegos_totales
 12167144,Itf Women Doubles,W35 Baza,Liu/ Moccia,Hietaranta/ Zelnickova,Finished,0 - 2,22
 12167147,Itf Women Doubles,W75 Quinta do Lago,Cembranos/ Ortega Redondo,Collins/ Tanguilig,Finished,0 - 2,14
 12167149,Challenger Men Singles,Curitiba,G. Heide,F. Meligeni Alves,Finished,2 - 0,19
-12167150,Challenger Men Singles,Curitiba,J. Reis Da Silva,M. Pucinelli de Almeida,Set 3,1 - 1,26
+12167150,Challenger Men Singles,Curitiba,J. Reis Da Silva,M. Pucinelli de Almeida,Finished,1 - 2,28
 12167151,Challenger Men Doubles,Mouilleron-Le-Captif,Bittoun/ Visker,Balshaw/ Martineau,Finished,2 - 1,36
 12167152,Itf Women Singles,W15 Sharm ElSheikh 13,J. Elkady,E. Adeshina,Finished,0 - 2,16
 12167153,Itf Women Singles,W15 Sharm ElSheikh 13,Y. Hatouka,K. N. Kucikova,Finished,2 - 0,13
@@ -400,7 +400,7 @@ event_key,tipo,torneo,jugador1,jugador2,estado,sets,juegos_totales
 12167218,Itf Women Doubles,W15 Trelew,Moyano/ Sanchez,Martinez/ Mondati,Finished,2 - 0,14
 12167219,Itf Women Doubles,W15 Trelew,Gobbi Monllau/ Zornada,Carrocera/ Maruca,Finished,0 - 2,19
 12167220,Itf Women Doubles,W15 Trelew,Duarte/ Lassaga,Meabe/ Urrutia,Finished,0 - 2,18
-12167221,Itf Women Doubles,W15 Trelew,Kawano Cho/ Tarantola,Bulbarella/ Rain Contreras,,-,0
+12167221,Itf Women Doubles,W15 Trelew,Kawano Cho/ Tarantola,Bulbarella/ Rain Contreras,Finished,2 - 1,35
 12167222,Itf Women Doubles,W35 Reims,Boulard/ Yardley,Im/ Kim Eunchae,Finished,0 - 2,17
 12167225,Challenger Men Singles,Columbus,A. Fenty,D. Dietrich,Finished,0 - 2,20
 12167226,Itf Men Singles,"M15 Ann Arbor, MI",O. Bonding,M. Thomson,Finished,2 - 0,17
@@ -415,7 +415,7 @@ event_key,tipo,torneo,jugador1,jugador2,estado,sets,juegos_totales
 12167235,Itf Men Singles,"M15 Ann Arbor, MI",J. Sarr,D. Zhalgasbay,Finished,0 - 2,25
 12167236,Itf Men Singles,"M15 Ann Arbor, MI",N. Tomizawa,B. Swenson,Finished,2 - 1,28
 12167237,Itf Men Singles,"M15 Ann Arbor, MI",V. Gogineni,M. Dahlin,Finished,0 - 2,15
-12167238,Itf Men Doubles,"M15 Ann Arbor, MI",Albieri/ Heng,Komopisut/ Suttisomboon,Finished,2 - 0,9
+12167238,Itf Men Doubles,"M15 Ann Arbor, MI",Albieri/ Heng,Komopisut/ Suttisomboon,Finished,2 - 0,17
 12167241,Challenger Men Singles,Columbus,L. Staeheli,A. Andrade,Finished,0 - 2,22
 12167242,Challenger Men Doubles,Curitiba,Heredia/ Tobon,Dickerson/ Rodriguez,Finished,2 - 0,18
 12167244,Itf Men Singles,"M15 Fayetteville, AR",A. Harazaki,J. Braswell,Finished,0 - 2,20
@@ -427,10 +427,10 @@ event_key,tipo,torneo,jugador1,jugador2,estado,sets,juegos_totales
 12167250,Itf Men Singles,"M15 Fayetteville, AR",T. Papamalamis,B. Weintraub,Finished,2 - 0,17
 12167251,Itf Men Singles,"M15 Fayetteville, AR",J. A. Rodriguez,J. Roddick,Finished,2 - 0,19
 12167252,Itf Men Singles,"M15 Fayetteville, AR",V. Jankanj,P. Martinez Gomez,Finished,2 - 0,18
-12167253,Itf Men Singles,"M15 Fayetteville, AR",N. Niedner,D. Markovina,Finished,2 - 1,19
-12167254,Itf Men Singles,"M15 Fayetteville, AR",C. Robertson,A. Pisaric,,-,0
+12167253,Itf Men Singles,"M15 Fayetteville, AR",N. Niedner,D. Markovina,Finished,2 - 1,26
+12167254,Itf Men Singles,"M15 Fayetteville, AR",C. Robertson,A. Pisaric,Finished,2 - 0,23
 12167255,Itf Men Doubles,"M15 Fayetteville, AR",Goity Zapico/ Valletta,Cazacu/ Uta,Finished,2 - 0,19
-12167256,Itf Men Doubles,"M15 Fayetteville, AR",Chavez/ Melero,Gurenko/ Tudorica,,-,0
+12167256,Itf Men Doubles,"M15 Fayetteville, AR",Chavez/ Melero,Gurenko/ Tudorica,Finished,2 - 1,34
 12167257,Itf Men Doubles,"M15 Fayetteville, AR",Harazaki/ Rodriguez,Arcila/ Rozin,Finished,1 - 2,22
 12167260,Itf Women Singles,W15 Nashville,A. Bowers,M. Yamakita,Finished,2 - 0,17
 12167261,Itf Women Singles,W15 Nashville,M. Malkin,E. K. Malmkjaer,Finished,0 - 2,18
