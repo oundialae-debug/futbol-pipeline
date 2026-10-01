@@ -5,7 +5,9 @@ El guion y el vídeo salen de la MISMA lista de segmentos (SEG): cada frase dura
 tarda en leerse a 2,5 palabras por segundo, y el vídeo se ajusta a eso. Escribe
 2yellow_app_explainer.mp4 y 2yellow_app_explainer.md (mismo nombre).
 Misma maquinaria que grabacion_app.py.
-Uso: python3 grabacion_explicada.py <carpeta con las páginas .html expandidas> <carpeta de trabajo>
+Tres guiones (GUIONES): explainer (la app entera), england (próximo partido) y
+england_record (Inglaterra en el pasado). Cada uno escribe <nombre>.mp4 y <nombre>.md.
+Uso: python3 grabacion_explicada.py <páginas .html expandidas> <carpeta de trabajo> <guion>
 """
 import json
 import subprocess
@@ -18,7 +20,7 @@ from PIL import Image, ImageDraw, ImageFilter
 from playwright.sync_api import sync_playwright
 
 AQUI = Path(__file__).resolve().parent
-PAGINAS, TRABAJO = Path(sys.argv[1]), Path(sys.argv[2])
+PAGINAS, TRABAJO, CUAL = Path(sys.argv[1]), Path(sys.argv[2]), sys.argv[3]
 TRABAJO.mkdir(parents=True, exist_ok=True)
 FUENTES_CSS = PAGINAS.parent / "video" / "fonts" / "local.css"
 ESC = 2.2                      # escala: 390 px CSS -> 858 px
@@ -33,7 +35,7 @@ POS = {}
 with sync_playwright() as pw:
     b = pw.chromium.launch(executable_path="/opt/pw-browsers/chromium")
     pg = b.new_page(viewport={"width": VW, "height": VH}, device_scale_factor=ESC)
-    for nombre in ("Main", "Partido", "Tips", "Report"):
+    for nombre in ("Main", "Partido", "Tips", "Report", "Alineacion", "Elo", "Equipo", "Historial"):
         pg.goto(f"file://{PAGINAS / (nombre + '.html')}")
         # las fuentes de la marca, en local (Chromium aquí no llega a Google Fonts)
         pg.evaluate(f"""() => {{ const l = document.createElement('link'); l.rel = 'stylesheet';
@@ -57,11 +59,11 @@ with sync_playwright() as pw:
             POS[nombre]["fila"] = caja('a[href="Partido.dc.html"]')
             POS[nombre]["informe"] = caja('a[href="Report.dc.html"]')
             POS[nombre]["aviso"] = caja('a[href="Tips.dc.html"]')
-        if nombre == "Partido":
-            POS[nombre]["tab"] = caja('nav[aria-label="Sections"] a[href="Tips.dc.html"]')
-        if nombre == "Tips":
-            POS[nombre]["inicio"] = pg.evaluate("""() => { const a = [...document.querySelectorAll('nav[aria-label="Main"] a, nav[aria-label="Main"] button')][0];
-                const r = a.getBoundingClientRect(); return [r.x, r.y, r.width, r.height]; }""")
+        for dest in ("Tips", "Elo", "Alineacion", "Historial"):   # pestañas de sección
+            POS[nombre]["tab_" + dest] = caja(f'nav[aria-label="Sections"] a[href="{dest}.dc.html"]')
+        # botones de la barra de abajo (va fija: solo cuenta la x)
+        POS[nombre]["barra"] = pg.evaluate("""() => [...document.querySelectorAll('nav[aria-label="Main"] a, nav[aria-label="Main"] button')]
+            .map(a => { const r = a.getBoundingClientRect(); return [r.x, r.width]; })""")
         POS[nombre]["corazon"] = [VW - 16 - 6 - 50 + 0, VH - 18 - 64 + 7, 50, 50]
     b.close()
 print(json.dumps(POS)[:600])
@@ -92,38 +94,85 @@ c = lambda n, i: cerca(n, POS[n]["secciones"][i])
 P = lambda i: c("Partido", i)
 T = lambda i: c("Tips", i)
 R = lambda i: c("Report", i)
+E_ = lambda i: c("Equipo", i)
+H_ = lambda i: c("Historial", i)
+s_al = min(120, maxs("Alineacion"))
 # Previa: 0 Win chance, 1 Goals, 2 Corners & cards, 3 Form, 4 What's at stake, 5 Likely XIs,
 # 6 Squads this season, 7 Style clash, 8 Last time out, 9 Last meeting.
 # Informe: 0 Match story, 1 Deserved?, 2 Shots, 3 Our call vs the bookies, 4 Key stats,
 # 5 Best players, 6 From the bench, 7 Goalkeepers, 8 In the news.
 # Tips: 0 Your team, 1 Anytime scorer; luego las tarjetas de la jornada.
+# Equipo: 0 FIFA ranking, 1 Form, 2 Goals vs chances, 3 Top scorers, 4 Best rated.
+# Historial: 0 Since March 2025, 1 WC qualifying, 2 World Cup 2026, 3 How England play,
+# 4 Clean sheets, 5 Biggest wins, 6 The 4 defeats.
 #
 # SEG: (pantalla, desplazamiento de, a, locución, qué se ve). Si la pantalla es una tupla,
 # el segmento empieza con la transición (0,6 s) y el toque va al final del anterior.
 WPS = 2.5            # palabras por segundo de la locución
-SEG = [
-    ("Main", 0, 0, "This is 2yellow: football data, before and after the match.", "Home: latest results"),
-    ("Main", 0, s_main, "Every game gets a win chance from our own model, home, draw or away.", "Matchday list with win chances"),
-    ("Main", s_main, s_aviso, "And we keep score. Our favourite has won sixty-one percent of the time.", "Our favourite won 61% of the time"),
-    (("Main", "Partido"), s_aviso, 0, "Tap a match for the full preview. Croatia against England, Saturday, in Rijeka.", "Preview header: venue and forecast"),
-    ("Partido", 0, P(0), "We turn every probability into a fair price. England win fifty-six percent of the time, so their fair odds are one seventy-nine.", "Win chance and fair odds"),
-    ("Partido", P(0), P(4), "What's at stake? We play the rest of the group twenty thousand times. If England win on Saturday, they finish top two ninety-five percent of the time.", "What's at stake: group simulation"),
-    ("Partido", P(4), P(5), "Likely line-ups, with a fair rating for every player: club form and country form in one number.", "Likely XIs with fair ratings"),
-    ("Partido", P(5), P(6), "And how both squads are really doing: market value, plus minutes, goals and assists for their clubs this season.", "Squads this season"),
-    ("Partido", P(6), P(9), "Last meeting, minute by minute: every goal and every chance, from the World Cup four-two.", "Last meeting: England 4-2 Croatia"),
-    ("Partido", P(9), 0, "Want it all in one place? Open Tips.", "Back to the top, tap Tips"),
-    (("Partido", "Tips"), 0, 0, "Every prediction for the game, from most to least likely.", "Tips: your team"),
-    ("Tips", 0, T(1), "Plus who is likely to score. Harry Kane: forty-three percent.", "Anytime scorer"),
-    ("Tips", T(1), maxs("Tips"), "For the other games, we show the best price, and whether the bookmakers agree with us.", "Tips of the day"),
-    ("Tips", maxs("Tips"), maxs("Tips"), "After the whistle, every match gets its own report.", "Tap Matches"),
-    (("Tips", "Main"), maxs("Tips"), 0, "Like Czechia against England.", "Home, tap the result"),
-    (("Main", "Report"), 0, R(0), "The match story: shots every five minutes, the goals, and the red card that changed the game.", "Match story"),
-    ("Report", R(0), R(1), "Did they deserve it? We replay every chance a hundred times.", "Deserved?"),
-    ("Report", R(1), R(3), "We put our call next to the bookmakers', market by market.", "Our call vs the bookies"),
-    ("Report", R(3), R(6), "Even the bench: who came on, and how they played.", "From the bench"),
-    ("Report", R(6), R(6), "2yellow: football data, before and after the match.", "Report"),
-]
-CIERRE_VOZ = "Probabilities, not betting advice. Eighteen plus."
+GUIONES = {
+    "explainer": ("2yellow_app_explainer", "Croatia – England · Sat 18:00", [
+        ("Main", 0, 0, "This is 2yellow: football data, before and after the match.", "Home: latest results"),
+        ("Main", 0, s_main, "Every game gets a win chance from our own model, home, draw or away.", "Matchday list with win chances"),
+        ("Main", s_main, s_aviso, "And we keep score. Our favourite has won sixty-one percent of the time.", "Our favourite won 61% of the time"),
+        (("Main", "Partido"), s_aviso, 0, "Tap a match for the full preview. Croatia against England, Saturday, in Rijeka.", "Preview header: venue and forecast"),
+        ("Partido", 0, P(0), "We turn every probability into a fair price. England win fifty-six percent of the time, so their fair odds are one seventy-nine.", "Win chance and fair odds"),
+        ("Partido", P(0), P(4), "What's at stake? We play the rest of the group twenty thousand times. If England win on Saturday, they finish top two ninety-five percent of the time.", "What's at stake: group simulation"),
+        ("Partido", P(4), P(5), "Likely line-ups, with a fair rating for every player: club form and country form in one number.", "Likely XIs with fair ratings"),
+        ("Partido", P(5), P(6), "And how both squads are really doing: market value, plus minutes, goals and assists for their clubs this season.", "Squads this season"),
+        ("Partido", P(6), P(9), "Last meeting, minute by minute: every goal and every chance, from the World Cup four-two.", "Last meeting: England 4-2 Croatia"),
+        ("Partido", P(9), 0, "Want it all in one place? Open Tips.", "Back to the top, tap Tips"),
+        (("Partido", "Tips"), 0, 0, "Every prediction for the game, from most to least likely.", "Tips: your team"),
+        ("Tips", 0, T(1), "Plus who is likely to score. Harry Kane: forty-three percent.", "Anytime scorer"),
+        ("Tips", T(1), maxs("Tips"), "For the other games, we show the best price, and whether the bookmakers agree with us.", "Tips of the day"),
+        ("Tips", maxs("Tips"), maxs("Tips"), "After the whistle, every match gets its own report.", "Tap Matches"),
+        (("Tips", "Main"), maxs("Tips"), 0, "Like Czechia against England.", "Home, tap the result"),
+        (("Main", "Report"), 0, R(0), "The match story: shots every five minutes, the goals, and the red card that changed the game.", "Match story"),
+        ("Report", R(0), R(1), "Did they deserve it? We replay every chance a hundred times.", "Deserved?"),
+        ("Report", R(1), R(3), "We put our call next to the bookmakers', market by market.", "Our call vs the bookies"),
+        ("Report", R(3), R(6), "Even the bench: who came on, and how they played.", "From the bench"),
+        ("Report", R(6), R(6), "2yellow: football data, before and after the match.", "Report"),
+    ]),
+    "england": ("2yellow_app_england", "Croatia – England · Sat 18:00", [
+        ("Main", 0, 0, "This is 2yellow. Here's everything you need before England's next game.", "Home"),
+        ("Main", 0, s_main, "Croatia against England, on Saturday. Our model gives England a fifty-six percent chance to win.", "Matchday list, Croatia – England"),
+        (("Main", "Partido"), s_main, 0, "Open the preview: venue, forecast and kick-off, right at the top.", "Preview header: Rijeka, 20°C, 18:00"),
+        ("Partido", 0, P(0), "Every probability comes with a fair price. Fifty-six percent means fair odds of one seventy-nine.", "Win chance and fair odds"),
+        ("Partido", P(0), P(1), "Goals: we expect almost two from England and one from Croatia. The most likely score is one-one.", "Goals"),
+        ("Partido", P(1), P(4), "What's at stake? Twenty thousand simulations of the group. A win on Saturday puts England in the top two ninety-five percent of the time. A defeat, only forty-eight.", "What's at stake"),
+        ("Partido", P(4), P(5), "Likely line-ups, with a fair rating for every player. Kane and Saka lead the way for England.", "Likely XIs"),
+        ("Partido", P(5), P(6), "England's eleven is worth seven hundred and forty-five million euros. Croatia's, one hundred and seventy-two.", "Squads this season"),
+        ("Partido", P(6), P(7), "Style clash: England keep the ball more and concede less. Fourteen clean sheets in twenty-four games.", "Style clash"),
+        ("Partido", P(7), P(9), "And the last meeting, minute by minute: England four, Croatia two, at the World Cup. Kane scored twice.", "Last meeting"),
+        ("Partido", P(9), 0, "Ready to make your call? Open Tips.", "Back to the top, tap Tips"),
+        (("Partido", "Tips"), 0, 0, "Every prediction for the game. Over one and a half goals: eighty-one percent. England or a draw: seventy-eight.", "Tips: your team"),
+        ("Tips", 0, T(1), "And the likely scorers. Harry Kane: forty-three percent.", "Anytime scorer"),
+        ("Tips", T(1), maxs("Tips"), "Plus today's tips across the Nations League, with the best price.", "Tips of the day"),
+        (("Tips", "Elo"), maxs("Tips"), 0, "England's group: Spain lead, England are second.", "Standings, Group 1"),
+        (("Elo", "Equipo"), 0, 0, "Follow England, and their page keeps it all together.", "England page"),
+        ("Equipo", 0, E_(2), "FIFA ranking, recent form, and goals against expected goals.", "FIFA ranking, form, goals vs chances"),
+        ("Equipo", E_(2), E_(3), "Top scorer since twenty twenty-five: Harry Kane, seventeen goals.", "Top scorers"),
+    ]),
+    "england_record": ("2yellow_app_england_record", "England · 18 wins in 24 games", [
+        ("Main", 0, 0, "England won in Prague on Tuesday. Here's how 2yellow tells the story.", "Home: Czechia 0-2 England"),
+        (("Main", "Report"), 0, 0, "The report opens with the venue, the referee and the weather.", "Report header"),
+        ("Report", 0, R(0), "The match story: shots every five minutes. Šulc was sent off after twenty-five minutes. Gordon and Kane scored after the break.", "Match story"),
+        ("Report", R(0), R(1), "Did England deserve it? We replay every chance a hundred times. England win sixty-four of them.", "Deserved?"),
+        ("Report", R(1), R(2), "Twenty-two shots to six. And this is where England aimed.", "Shots"),
+        ("Report", R(2), R(3), "We put our call next to the bookmakers'. Three out of four right, for both of us.", "Our call vs the bookies"),
+        ("Report", R(3), R(6), "From the bench: who came on, and how they played.", "From the bench"),
+        ("Report", R(6), R(8), "And the headlines from the match.", "In the news"),
+        ("Report", R(8), 0, "Now, the line-ups.", "Back to the top, tap Lineups"),
+        (("Report", "Alineacion"), 0, s_al, "Every player's rating, in the position they played. Gordon, eight point one five.", "Lineups with ratings"),
+        (("Alineacion", "Equipo"), s_al, 0, "Then England's own page.", "England page"),
+        (("Equipo", "Historial"), 0, 0, "Their record since March twenty twenty-five: eighteen wins, two draws and four defeats.", "Record"),
+        ("Historial", 0, H_(1), "A perfect World Cup qualifying campaign: eight wins, twenty-two goals, none conceded.", "World Cup qualifying"),
+        ("Historial", H_(1), H_(2), "At the World Cup: twenty goals in eight games, beaten only by Argentina.", "World Cup 2026"),
+        ("Historial", H_(2), H_(3), "How England play: sixty-four percent of the ball, on average.", "How England play"),
+        ("Historial", H_(3), H_(4), "And fourteen clean sheets in twenty-four games.", "Clean sheets"),
+    ]),
+}
+NOMBRE, PILDORA, SEG = GUIONES[CUAL]
+CIERRE_VOZ = "2yellow. Probabilities, not betting advice. Eighteen plus."
 TRAMOS, TOQUES_EN = [], []
 for i, (pant, s1, s2, voz, _) in enumerate(SEG):
     dur = max(len(voz.split()) / WPS + 0.5, 2.4)
@@ -141,18 +190,36 @@ for dur, pant, s1, s2 in TRAMOS:
     GUION.append((t0, t0 + dur, pant, s1, s2))
     t0 += dur
 fin_de = lambda i: GUION[i][1]
-tb, ini = POS["Partido"]["tab"], POS["Tips"]["inicio"]
-cz = POS["Main"]["corazon"]
-DONDE = {("Main", "Partido"): (fila[0] + fila[2] * 0.45, fila[1] + fila[3] * 0.4 - s_aviso),
-         ("Partido", "Tips"): (tb[0] + tb[2] / 2, tb[1] + tb[3] / 2),
-         ("Tips", "Main"): (ini[0] + ini[2] / 2, cz[1] + cz[3] / 2),      # la barra va fija abajo
-         ("Main", "Report"): (inf[0] + inf[2] * 0.5, inf[1] + inf[3] * 0.45)}
-TOQUES = [(fin_de(i) - 0.45, *DONDE[p]) for i, p in TOQUES_EN]
+FILA_BARRA = POS["Main"]["corazon"][1] + POS["Main"]["corazon"][3] / 2   # la barra va fija abajo
+
+
+def barra(pant, i):
+    x, w = POS[pant]["barra"][i]
+    return (x + w / 2, FILA_BARRA, True)
+
+
+def tab(pant, dest):
+    b_ = POS[pant]["tab_" + dest]
+    return (b_[0] + b_[2] / 2, b_[1] + b_[3] / 2, False)
+
+
+DONDE = {("Main", "Partido"): (fila[0] + fila[2] * 0.45, fila[1] + fila[3] * 0.4, False),
+         ("Main", "Report"): (inf[0] + inf[2] * 0.5, inf[1] + inf[3] * 0.45, False),
+         ("Partido", "Tips"): tab("Partido", "Tips"),
+         ("Report", "Alineacion"): tab("Report", "Alineacion"),
+         ("Equipo", "Historial"): tab("Equipo", "Historial"),
+         ("Tips", "Main"): barra("Tips", 0),
+         ("Tips", "Elo"): barra("Tips", 1),
+         ("Elo", "Equipo"): barra("Elo", 3),
+         ("Alineacion", "Equipo"): barra("Alineacion", 3)}
+TOQUES = []
+for i, p in TOQUES_EN:
+    x, y, fija = DONDE[p]
+    TOQUES.append((fin_de(i) - 0.45, x, y if fija else y - GUION[i][4]))   # menos el desplazamiento de ese momento
 T_FIN = GUION[-1][1]
-FIN = T_FIN + 3.6   # cierre con el logo y su frase
+FIN = T_FIN + max(len(CIERRE_VOZ.split()) / WPS + 0.6, 2.6)   # cierre con el logo y su frase
 
 # ---------------------------------------------------------------- guion de locución (mismo nombre que el vídeo)
-NOMBRE = "2yellow_app_explainer"
 
 
 def mmss(x):
@@ -163,7 +230,7 @@ inicios, t0 = [], 0.0
 for pant, s1, s2, voz, _ in SEG:
     inicios.append(t0)
     t0 += max(len(voz.split()) / WPS + 0.5, 2.4)
-lineas = [f"# {NOMBRE}", "", "Voice-over script for new users. Times match the video "
+lineas = [f"# {NOMBRE}", "", "Voice-over script. Times match the video "
           f"({mmss(FIN)} long). Pace: about {WPS:g} words per second; each line starts at its time code.", "",
           "| Time | On screen | Voice-over |", "|---|---|---|"]
 for (pant, s1, s2, voz, ve), a in zip(SEG, inicios):
@@ -251,7 +318,7 @@ html = f'''<!doctype html><html><head><meta charset="utf-8"><link rel="styleshee
 <body style="margin:0"><div id="c" style="width:1080px;height:1920px;background:#0A0C11;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:44px;font-family:'Instrument Sans',sans-serif;color:#F1F3F8">
 <div style="display:flex;align-items:center;gap:30px">{icono(190, "c")}{palabra(170)}</div>
 <span style="font-size:44px;color:#C6CBD8">Football data, before and after the match</span>
-<span style="margin-top:30px;padding:26px 60px;border-radius:60px;background:#C8FF3D;color:#0A0C11;font-family:'Archivo',sans-serif;font-stretch:78%;font-weight:800;font-size:56px">Croatia – England · Sat 18:00</span>
+<span style="margin-top:30px;padding:26px 60px;border-radius:60px;background:#C8FF3D;color:#0A0C11;font-family:'Archivo',sans-serif;font-stretch:78%;font-weight:800;font-size:56px">{PILDORA}</span>
 <span style="position:absolute;bottom:80px;font-size:28px;color:#8E96AA">Probabilities, not betting advice · 18+</span></div></body></html>'''
 (TRABAJO / "cierre.html").write_text(html)
 with sync_playwright() as pw:

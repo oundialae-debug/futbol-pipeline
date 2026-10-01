@@ -617,3 +617,12 @@ carpeta se apunta aquí.
   se ve de paso.
 - **Guion en inglés** (idioma del proyecto). Cierre: «Probabilities, not
   betting advice. Eighteen plus.»
+
+## 01/10/2026: los dos vídeos de Inglaterra con guion (en curso)
+
+- **Pedido:** los dos vídeos de Inglaterra con su guion de locución (el
+  explicativo se queda también).
+- **Qué:** `grabacion_explicada.py` pasa a tener tres guiones (`explainer`,
+  `england`, `england_record`); cada uno escribe su `.mp4` y su `.md` con el
+  mismo nombre. Los dos de Inglaterra sustituyen a los de
+  `grabacion_app.py` / `grabacion_pasado.py`.
