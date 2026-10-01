@@ -445,3 +445,27 @@ carpeta se apunta aquí.
   (no lo dice).
 - **Ligas:** el derbi de LaLiga también se descargó, pero se deja para cuando
   haya datos de las ligas (petición del usuario).
+
+## 01/10/2026: tres tarjetas nuevas en la previa Croacia–Inglaterra
+
+- **Pedido:** «¿No se puede añadir nada nuevo?» al próximo partido de
+  Inglaterra (03/10).
+- **Qué** (pantalla Partido del lienzo de la Nations League):
+  - **«What's at stake»:** dónde acaba cada equipo del grupo (20.000
+    simulaciones de los 8 partidos que quedan, con nuestro modelo) y qué
+    pasa si Inglaterra gana, empata o pierde el sábado (top 2: 95%, 80%,
+    48%). Desempate usado: puntos, luego enfrentamientos entre empatados,
+    diferencia de goles y goles a favor. No se afirma qué da el top 2 en el
+    torneo.
+  - **«Style clash»:** medias por partido desde 2025 de los dos (posesión,
+    tiros a puerta, ocasiones claras, goles a favor y en contra, porterías a
+    cero).
+  - **«Last meeting»:** Mundial, 17/06/2026, Inglaterra 4-2 Croacia: goles,
+    xG 3,20–0,70, tiros a puerta, ocasiones claras y las 3 mejores notas.
+  - Quitada la tarjeta «Head to head»: solo tenía ese mismo partido.
+- **Datos:** `nl_datos.py` añade `en_juego`, `ultimo_cara` y `estilo_sel`
+  con datos que ya había en disco. Sin llamadas a la API.
+- **Ficheros:** `diseno_nl/nl_datos.py`, `diseno_nl/datos_nl.json`,
+  `diseno_nl/generador/nl_pantallas.py` (H_PV 2760 → 3750),
+  `diseno_nl/project/Partido.dc.html`, `diseno_nl/project/canvas.json`.
+- **Vídeos:** sin tocar (el primero se dejó así por petición del usuario).

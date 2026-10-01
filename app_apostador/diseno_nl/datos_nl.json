@@ -2709,6 +2709,212 @@
    "marcador": "4 - 1"
   }
  },
+ "en_juego": {
+  "pos": {
+   "England": [
+    8.0,
+    73.0,
+    18.0,
+    0.0
+   ],
+   "Croatia": [
+    1.0,
+    18.0,
+    77.0,
+    5.0
+   ],
+   "Spain": [
+    91.0,
+    9.0,
+    0.0,
+    0.0
+   ],
+   "Czech Republic": [
+    0.0,
+    0.0,
+    5.0,
+    95.0
+   ]
+  },
+  "si": {
+   "W": {
+    "n": 56.0,
+    "primero": 12.0,
+    "top2": 95.0
+   },
+   "D": {
+    "n": 22.0,
+    "primero": 5.0,
+    "top2": 80.0
+   },
+   "L": {
+    "n": 22.0,
+    "primero": 2.0,
+    "top2": 48.0
+   }
+  },
+  "quedan": [
+   {
+    "fecha": "2026-10-03",
+    "local": "Croatia",
+    "visitante": "England"
+   },
+   {
+    "fecha": "2026-10-03",
+    "local": "Spain",
+    "visitante": "Czech Republic"
+   },
+   {
+    "fecha": "2026-10-06",
+    "local": "Croatia",
+    "visitante": "Spain"
+   },
+   {
+    "fecha": "2026-10-06",
+    "local": "England",
+    "visitante": "Czech Republic"
+   },
+   {
+    "fecha": "2026-11-12",
+    "local": "England",
+    "visitante": "Croatia"
+   },
+   {
+    "fecha": "2026-11-12",
+    "local": "Czech Republic",
+    "visitante": "Spain"
+   },
+   {
+    "fecha": "2026-11-15",
+    "local": "Croatia",
+    "visitante": "Czech Republic"
+   },
+   {
+    "fecha": "2026-11-15",
+    "local": "Spain",
+    "visitante": "England"
+   }
+  ],
+  "sims": 20000
+ },
+ "ultimo_cara": {
+  "fecha": "2026-06-17",
+  "comp": "World Cup",
+  "gl": 4,
+  "gv": 2,
+  "xg": [
+   3.2,
+   0.7
+  ],
+  "goles": [
+   {
+    "jugador": "H. Kane",
+    "equipo": "England",
+    "n": 2
+   },
+   {
+    "jugador": "J. Bellingham",
+    "equipo": "England",
+    "n": 1
+   },
+   {
+    "jugador": "M. Rashford",
+    "equipo": "England",
+    "n": 1
+   },
+   {
+    "jugador": "Martin Baturina",
+    "equipo": "Croatia",
+    "n": 1
+   },
+   {
+    "jugador": "Petar Musa",
+    "equipo": "Croatia",
+    "n": 1
+   }
+  ],
+  "asist": [
+   {
+    "jugador": "E. Anderson",
+    "equipo": "England"
+   },
+   {
+    "jugador": "D. Rice",
+    "equipo": "England"
+   },
+   {
+    "jugador": "B. Saka",
+    "equipo": "England"
+   },
+   {
+    "jugador": "I. Perišić",
+    "equipo": "Croatia"
+   },
+   {
+    "jugador": "Petar Sučić",
+    "equipo": "Croatia"
+   }
+  ],
+  "mejores": [
+   {
+    "jugador": "H. Kane",
+    "equipo": "England",
+    "nota": 8.16
+   },
+   {
+    "jugador": "Martin Baturina",
+    "equipo": "Croatia",
+    "nota": 7.94
+   },
+   {
+    "jugador": "D. Livaković",
+    "equipo": "Croatia",
+    "nota": 7.68
+   }
+  ],
+  "stats": {
+   "Possession": [
+    0.52,
+    0.48
+   ],
+   "Shots on target": [
+    11.0,
+    5.0
+   ],
+   "Big Chances Created": [
+    7.0,
+    2.0
+   ],
+   "Corners": [
+    8.0,
+    2.0
+   ]
+  }
+ },
+ "estilo_sel": {
+  "Croatia": {
+   "Possession": 0.57,
+   "Shots on target": 5.45,
+   "Big Chances Created": 3.21,
+   "Corners": 5.7,
+   "Yellow cards": 1.45,
+   "Goals scored": 2.1,
+   "Goals conceded": 1.25,
+   "pj": 20,
+   "porterias_cero": 7
+  },
+  "England": {
+   "Possession": 0.64,
+   "Shots on target": 6.58,
+   "Big Chances Created": 3.61,
+   "Corners": 6.75,
+   "Yellow cards": 1.0,
+   "Goals scored": 2.29,
+   "Goals conceded": 0.83,
+   "pj": 24,
+   "porterias_cero": 14
+  }
+ },
  "grupos": [
   {
    "equipos": [

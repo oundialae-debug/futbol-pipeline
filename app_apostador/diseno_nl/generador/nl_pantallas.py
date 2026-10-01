@@ -393,6 +393,72 @@ def once_html(e, k):
             f'<span style="margin-left: auto; {DISP}; font-size: 16px; color: {k["barra"]}">{media:.2f}</span></div>{filas}</div>')
 
 
+# ---- previa: qué se juegan, último cara a cara, choque de estilos
+EJ = N["en_juego"]
+KSP, KCZ = kit("Spain"), kit("Czech Republic")
+COL_POS = [LIMA, "#8FA2FF", "#5B6378", "#2E3546"]
+
+
+def fila_pos(e, k):
+    p_ = EJ["pos"][e]
+    seg = "".join(f'<span style="flex: {max(v, 0.0001)} 1 0; background: {COL_POS[i]}; color: {BG if i < 2 else TXT}; font-size: 11px; font-weight: 800; '
+                  f'display: flex; align-items: center; justify-content: center; overflow: hidden">{int(v)}%</span>' if v >= 6 else
+                  f'<span style="flex: {max(v, 0.0001)} 1 0; background: {COL_POS[i]}"></span>' for i, v in enumerate(p_))
+    return (f'<div style="display: flex; align-items: center; gap: 10px">{franjas(k, 18)}<span style="width: 70px; font-size: 13px; font-weight: {800 if e == "England" else 600}">{eq(e)[0]}</span>'
+            f'<div style="flex-grow: 1; height: 22px; border-radius: 7px; overflow: hidden; display: flex; gap: 2px">{seg}</div></div>')
+
+
+def si(k, txt):
+    v = EJ["si"][k]
+    col = LIMA if v["top2"] >= 90 else ("#A9B8FF" if v["top2"] >= 70 else "#FFB27A")
+    return (f'<div style="padding: 10px 12px; border-radius: 14px; background: {SUB}; display: flex; flex-direction: column; gap: 2px">'
+            f'<span style="font-size: 11px; color: {MUT}">{txt}</span><span style="{DISP}; font-size: 24px; color: {col}">{int(v["top2"])}%</span>'
+            f'<span style="font-size: 11px; color: {SOFT}">top 2</span></div>')
+
+
+ley_pos = "".join(f'<span style="display: flex; align-items: center; gap: 5px"><span style="width: 10px; height: 10px; border-radius: 3px; background: {c}"></span>{t}</span>'
+                  for c, t in zip(COL_POS, ("1st", "2nd", "3rd", "4th")))
+EN_JUEGO = tarjeta("What's at stake", f'<span style="font-size: 13px; color: {SOFT}">Where each team finishes the group</span>'
+                   + "".join(fila_pos(e, k) for e, k in (("Spain", KSP), ("England", KE), ("Croatia", KC), ("Czech Republic", KCZ)))
+                   + f'<div style="display: flex; gap: 12px; font-size: 11px; color: {MUT}">{ley_pos}</div>'
+                   + f'<span style="padding-top: 4px; font-size: 13px; font-weight: 700">If England on Saturday…</span>'
+                   + f'<div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px">{si("W", "win")}{si("D", "draw")}{si("L", "lose")}</div>'
+                   + f'<span style="font-size: 11px; color: {MUT}">{EJ["sims"]:,} simulations of the {len(EJ["quedan"])} games left, through 15 Nov.</span>', "2yellow model")
+
+UC = N["ultimo_cara"]
+KEw, KCw = kits("England", "Croatia")
+
+
+def goleadores(e, k):
+    gs = [g for g in UC["goles"] if g["equipo"] == e]
+    return (f'<div style="flex: 1 1 0; display: flex; flex-direction: column; gap: 6px; align-items: {"flex-start" if e == "England" else "flex-end"}">'
+            + "".join(f'<span style="display: flex; align-items: center; gap: 6px; font-size: 13px; font-weight: 600">'
+                      f'{"" if e != "England" else franjas(k, 14)}{corto(g["jugador"])}{" ×" + str(g["n"]) if g["n"] > 1 else ""}{"" if e == "England" else franjas(k, 14)}</span>' for g in gs)
+            + '</div>')
+
+
+st_ = UC["stats"]
+CARA = tarjeta("Last meeting", f'''<div style="display: flex; align-items: center; justify-content: space-between">
+<span style="display: flex; align-items: center; gap: 8px; font-size: 15px; font-weight: 700">{franjas(KEw, 16)}England</span>
+<span style="{DISP}; font-size: 40px; line-height: 1">{UC["gl"]}–{UC["gv"]}</span>
+<span style="display: flex; align-items: center; gap: 8px; font-size: 15px; font-weight: 700">Croatia{franjas(KCw, 16)}</span></div>
+<span style="align-self: center; font-size: 12px; color: {MUT}">World Cup · {fecha(UC["fecha"])} {UC["fecha"][:4]}</span>
+<div style="display: flex; gap: 12px">{goleadores("England", KEw)}{goleadores("Croatia", KCw)}</div>
+{fila_stat("Expected goals", UC["xg"][0], UC["xg"][1], lambda v: f"{v:.2f}", KEw["barra"], KCw["barra"])}
+{fila_stat("Shots on target", st_["Shots on target"][0], st_["Shots on target"][1], ch=KEw["barra"], ca=KCw["barra"])}
+{fila_stat("Big chances", st_["Big Chances Created"][0], st_["Big Chances Created"][1], ch=KEw["barra"], ca=KCw["barra"])}
+<div style="display: flex; gap: 6px; flex-wrap: wrap">{"".join(chip(corto(m["jugador"]) + " " + f"{m['nota']:.1f}", LIMA if m["nota"] >= 7.5 else "#3A4256", BG if m["nota"] >= 7.5 else TXT) for m in UC["mejores"])}</div>''', "head to head")
+
+ES = N["estilo_sel"]
+ESTILO = tarjeta("Style clash", f'<div style="display: flex; justify-content: space-between; font-size: 12px; color: {SOFT}"><span style="display: flex; align-items: center; gap: 6px">{franjas(KC, 14)}Croatia · {ES["Croatia"]["pj"]} games</span><span style="display: flex; align-items: center; gap: 6px">England · {ES["England"]["pj"]} games{franjas(KE, 14)}</span></div>'
+                 + fila_stat("Possession", ES["Croatia"]["Possession"] * 100, ES["England"]["Possession"] * 100, lambda v: f"{v:.0f}%", KC["barra"], KE["barra"])
+                 + fila_stat("Shots on target", ES["Croatia"]["Shots on target"], ES["England"]["Shots on target"], lambda v: f"{v:.1f}", KC["barra"], KE["barra"])
+                 + fila_stat("Big chances", ES["Croatia"]["Big Chances Created"], ES["England"]["Big Chances Created"], lambda v: f"{v:.1f}", KC["barra"], KE["barra"])
+                 + fila_stat("Goals scored", ES["Croatia"]["Goals scored"], ES["England"]["Goals scored"], lambda v: f"{v:.1f}", KC["barra"], KE["barra"])
+                 + fila_stat("Goals conceded", ES["Croatia"]["Goals conceded"], ES["England"]["Goals conceded"], lambda v: f"{v:.1f}", KC["barra"], KE["barra"])
+                 + fila_stat("Clean sheets", ES["Croatia"]["porterias_cero"], ES["England"]["porterias_cero"], ch=KC["barra"], ca=KE["barra"]), "per game · since 2025")
+
+
 h2h = PV["h2h"]
 H2H = "".join(
     f'<div style="display: flex; align-items: center; gap: 10px; padding: 8px 0; border-top: 1px solid #1E2330"><span style="width: 56px; font-size: 12px; color: {MUT}">{h["fecha"][:4]}</span>'
@@ -425,11 +491,13 @@ cuerpo = f'''
 {GOLES_T}
 {CC_T}
 {tarjeta("Form", forma_html("Croatia", KC) + forma_html("England", KE), "last 5 · latest on the right")}
+{EN_JUEGO}
 {tarjeta("Likely XIs", '<div style="display: flex; gap: 14px">' + once_html("Croatia", KC) + once_html("England", KE) + '</div>' + f'<span style="font-size: 11px; color: {MUT}">Last XI · fair rating (club form + country)</span>', "fair rating")}
+{ESTILO}
 {ULTIMO}
-{tarjeta("Head to head", H2H, "since 2025")}
+{CARA}
 '''
-H_PV = 2760
+H_PV = 3750
 common.page("Partido.dc.html", "Croatia – England preview", 390, H_PV, raiz(H_PV, cuerpo), JS0, nav_active="m")
 
 # ======================================================================= REPORT Czechia 0–2 England

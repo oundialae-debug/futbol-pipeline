@@ -346,6 +346,87 @@ for k, v in OUT["minuto"].items():
     print("minuto", k, v["marcador"], len(v["eventos"]), "eventos,", len(v["tiros"]), "tiros,", len(v["news"]), "noticias",
           [(e["min"], e["tipo"], e.get("jugador") or (e.get("sale"), e.get("entra"), e.get("nota_entra"))) for e in v["eventos"] if e["tipo"] in ("gol", "roja", "cambio")][:8])
 
+
+# ------------------------------------------------------------------ previa: qué se juegan, último cara a cara, choque de estilos
+G4 = ["England", "Croatia", "Spain", "Czech Republic"]
+pg = part[(part.competicion == "UEFA Nations League") & part.local.isin(G4) & part.visitante.isin(G4)]
+jugados = pg[pg.terminado]
+quedan = pg[~pg.terminado].sort_values("fecha")
+lam_q = {int(f.match_id): modelo(f.local, f.visitante)["lam"] for _, f in quedan.iterrows()}
+rng = np.random.default_rng(7)
+NS = 20000
+pos = {e: np.zeros(4) for e in G4}
+cond = {k: {"n": 0, "pos": np.zeros(4)} for k in ("W", "D", "L")}   # según el Croacia - Inglaterra del sábado
+mid_sab = int(quedan[(quedan.local == "Croatia") & (quedan.visitante == "England")].match_id.iloc[0])
+base = [(f.local, f.visitante, int(f.goles_l), int(f.goles_v)) for _, f in jugados.iterrows()]
+sims = {m: (rng.poisson(lam_q[m][0], NS), rng.poisson(lam_q[m][1], NS)) for m in lam_q}
+filas_q = [(int(f.match_id), f.local, f.visitante) for _, f in quedan.iterrows()]
+
+
+def tabla(res):
+    t = {e: [0, 0, 0] for e in G4}   # puntos, dg, gf
+    for l_, v_, a_, b_ in res:
+        t[l_][1] += a_ - b_; t[v_][1] += b_ - a_; t[l_][2] += a_; t[v_][2] += b_
+        t[l_][0] += 3 if a_ > b_ else (1 if a_ == b_ else 0)
+        t[v_][0] += 3 if b_ > a_ else (1 if a_ == b_ else 0)
+    # desempate: puntos; entre empatados, puntos y diferencia en sus partidos; luego diferencia y goles totales
+    def clave(e):
+        empatados = [x for x in G4 if t[x][0] == t[e][0]]
+        h = [0, 0]
+        for l_, v_, a_, b_ in res:
+            if l_ in empatados and v_ in empatados and e in (l_, v_):
+                gf, gc = (a_, b_) if e == l_ else (b_, a_)
+                h[0] += 3 if gf > gc else (1 if gf == gc else 0)
+                h[1] += gf - gc
+        return (t[e][0], h[0], h[1], t[e][1], t[e][2])
+    return sorted(G4, key=clave, reverse=True)
+
+
+for i in range(NS):
+    res = base + [(l_, v_, int(sims[m][0][i]), int(sims[m][1][i])) for m, l_, v_ in filas_q]
+    orden = tabla(res)
+    for k, e in enumerate(orden):
+        pos[e][k] += 1
+    a_, b_ = sims[mid_sab][0][i], sims[mid_sab][1][i]
+    r_ = "W" if b_ > a_ else ("D" if a_ == b_ else "L")   # visto desde Inglaterra (visitante)
+    cond[r_]["n"] += 1
+    cond[r_]["pos"][orden.index("England")] += 1
+OUT["en_juego"] = {"pos": {e: [r(x / NS * 100, 0) for x in pos[e]] for e in G4},
+                   "si": {k: {"n": r(v["n"] / NS * 100, 0), "primero": r(v["pos"][0] / max(v["n"], 1) * 100, 0),
+                              "top2": r((v["pos"][0] + v["pos"][1]) / max(v["n"], 1) * 100, 0)} for k, v in cond.items()},
+                   "quedan": [{"fecha": f.fecha, "local": f.local, "visitante": f.visitante} for _, f in quedan.iterrows()],
+                   "sims": NS}
+print("en juego:", OUT["en_juego"]["pos"], OUT["en_juego"]["si"])
+
+wc = part[(part.local == "England") & (part.visitante == "Croatia") & (part.competicion == "World Cup")].iloc[0]
+jw = jp[jp.match_id == wc.match_id].copy()
+jw["nota"] = pd.to_numeric(jw.nota, errors="coerce")
+jw["eqn"] = np.where(jw.equipo_id == ids["England"], "England", "Croatia")
+xl, xv = xg_ok(wc.match_id, wc.local_id, wc.visitante_id)
+OUT["ultimo_cara"] = {"fecha": wc.fecha[:10], "comp": wc.competicion, "gl": int(wc.goles_l), "gv": int(wc.goles_v), "xg": [r(xl), r(xv)],
+                      "goles": [{"jugador": f.jugador, "equipo": f.eqn, "n": int(f.goalsScored)} for _, f in jw[jw.goalsScored > 0].sort_values("goalsScored", ascending=False).iterrows()],
+                      "asist": [{"jugador": f.jugador, "equipo": f.eqn} for _, f in jw[jw.assists > 0].iterrows()],
+                      "mejores": [{"jugador": f.jugador, "equipo": f.eqn, "nota": r(f.nota)} for _, f in jw.dropna(subset=["nota"]).sort_values("nota", ascending=False).head(3).iterrows()],
+                      "stats": {s_: [r(stat(wc.match_id, wc.local_id, s_)), r(stat(wc.match_id, wc.visitante_id, s_))] for s_ in ("Possession", "Shots on target", "Big Chances Created", "Corners")}}
+print("último cara a cara:", OUT["ultimo_cara"]["goles"], OUT["ultimo_cara"]["xg"])
+
+
+def estilo_sel(e):
+    ms = part[((part.local == e) | (part.visitante == e)) & part.terminado & (part.fecha >= "2025-01-01")]
+    x = est[est.match_id.isin(ms.match_id)]
+    out = {}
+    for s_ in ("Possession", "Shots on target", "Big Chances Created", "Corners", "Yellow cards"):
+        out[s_] = r(x[(x.estadistica == s_) & (x.equipo_id == ids[e])].valor.mean())
+    gc = np.where(ms.local == e, ms.goles_v, ms.goles_l)
+    gf = np.where(ms.local == e, ms.goles_l, ms.goles_v)
+    out["Goals scored"], out["Goals conceded"], out["pj"] = r(gf.mean()), r(gc.mean()), int(len(ms))
+    out["porterias_cero"] = int((gc == 0).sum())
+    return out
+
+
+OUT["estilo_sel"] = {e: estilo_sel(e) for e in ("Croatia", "England")}
+print("estilos:", OUT["estilo_sel"])
+
 # ------------------------------------------------------------------ grupos de la Liga A y ranking FIFA
 grupos, visto = [], set()
 for eq in sorted(set(A.local) | set(A.visitante)):
