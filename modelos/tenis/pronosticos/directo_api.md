@@ -1,4 +1,4 @@
-# Tenis en directo, 01/10/2026 03:51 UTC (05:51 en España)
+# Tenis en directo, 01/10/2026 04:01 UTC (06:01 en España)
 
 Calculadora desde el marcador exacto (modelo de puntos, superficie real) frente a la cuota en directo
 (sin margen). Ganador y sets: la calculadora suele coincidir con la casa. Total de juegos: el modelo
@@ -7,28 +7,27 @@ Se actualiza cada ~5 min; el registro en data/tenis/api_tennis/registro/ servir�
 
 | partido | tipo | superficie | marcador (sets, juegos, puntos, saca) | gana 1º: modelo / cuota | sets más probables (modelo) | total juegos: línea, modelo / cuota |
 |---|---|---|---|---|---|---|
-| A. Molcan vs T. Machac | Atp Singles | Hard | 0-0, 4-3, 30 - 30, saca T. Machac | 44% / 64% | 1-2 29%, 0-2 27% | 23.5: 61% / 50% |
-| J. Faria vs A. Fery | Atp Singles | Hard | 1-1, 3-1, 0 - 0, saca A. Fery | 82% / 78% | 2-1 82%, 1-2 18% | 28.5: 68% / 61% |
-| L. Darderi vs C. Ruud | Atp Singles | Hard | 1-0, 5-1, 15 - 40, saca L. Darderi | 95% / 96% | 2-0 93%, 1-2 5% | 20.5: 70% / 50% |
-| T. Fritz vs J. Munar | Atp Singles | Hard | 1-0, 2-1, 0 - 0, saca J. Munar | 89% / 84% | 2-0 68%, 2-1 21% |  |
-| T. M. Etcheverry vs S. Tsitsipas | Atp Singles | Hard | 0-0, 2-1, 0 - 0, saca T. M. Etcheverry | 59% / 47% | 2-0 35%, 1-2 30% | 25.5: 57% / 51% |
-| A. De Minaur vs M. Navone | Atp Singles | Hard | 0-0, 4-5, 40 - 15, saca A. De Minaur | 80% / 79% | 2-0 48%, 2-1 32% | 24.5: 54% / 51% |
-| P. Bar Biryukov vs D. Sweeny | Challenger Men Singles | Hard | 0-0, 0-0, 0 - 0, saca P. Bar Biryukov | 26% / 35% | 0-2 45%, 1-2 30% | 22.5: 62% / 49% |
-| A. Bolt vs E. Zhu | Challenger Men Singles | Hard | 0-0, 1-0, 15 - 40, saca E. Zhu | 76% / 59% | 2-0 46%, 2-1 30% | 22.5: 57% / 51% |
-| L. Harris vs L. Pavlovic | Challenger Men Singles | Hard | 0-0, 2-0, 15 - 0, saca L. Pavlovic | 91% / 89% | 2-0 70%, 2-1 21% | 19.5: 70% / 50% |
-| A. Walton vs M. Bellucci | Challenger Men Singles | Hard | 0-0, 4-3, 40 - 15, saca A. Walton | 72% / 69% | 2-0 47%, 2-1 25% | 23.5: 52% / 46% |
-| S. Lansere vs S. Costoulas | Challenger Women Singles | Hard | 0-0, 1-1, 40 - 40, saca S. Lansere | 44% / 38% | 0-2 29%, 1-2 27% | 22.5: 57% / 50% |
-| A. Ibragimova vs K. Okamura | Challenger Women Singles | Hard | 0-0, 5-3, A - 40, saca A. Ibragimova | 75% / 86% | 2-0 50%, 2-1 25% | 19.5: 65% / 49% |
-| Z. Zhao vs M. Purcell | Itf Men Singles | Hard | 0-0, 0-4, 0 - 15, saca Z. Zhao | 2% / 5% | 0-2 87%, 1-2 11% | 14.5: 85% / 50% |
-| T. Yamanaka vs Y. Tomida | Itf Men Singles | Hard | 1-1, 2-2, 15 - 15, saca Y. Tomida | 53% / 46% | 2-1 53%, 1-2 47% | 25.5: 73% / 62% |
-| R. Matsuda vs R. Komagata | Itf Men Singles | Hard | 1-0, 4-1, 0 - 0, saca R. Komagata | 96% / 95% | 2-0 90%, 2-1 5% | 17.5: 83% / 59% |
-| K. Sawashiro vs A. Beck | Itf Women Singles | Hard | 1-0, 2-3, 0 - 40, saca K. Sawashiro | 88% / 79% | 2-1 46%, 2-0 42% |  |
-| A. Yang vs Z. Jiang | Itf Women Singles | Hard | 0-0, 0-0, 0 - 0, saca Z. Jiang | 55% / 31% | 2-0 29%, 2-1 27% |  |
-| E. M. Desvignes vs H. Koyama | Itf Women Singles | Hard | 0-0, 1-3, 30 - 30, saca E. M. Desvignes | 45% / 77% | 0-2 32%, 2-1 30% |  |
-| H. E. Lee vs Y. Hou | Itf Women Singles | Hard | 1-0, 6-5, 40 - 40, saca Y. Hou | 90% / 90% | 2-0 74%, 2-1 16% |  |
-| T. Kokkinis vs M. Uemura | Itf Women Singles | Hard | 1-1, 0-0, 0 - 0, saca M. Uemura | 77% / 65% | 2-1 77%, 1-2 23% |  |
-| M. Barry vs Y. Kitahara | Itf Women Singles | Hard | 0-0, 1-3, A - 40, saca Y. Kitahara | 17% / 22% | 0-2 58%, 1-2 26% |  |
-| Q. Zheng vs H. Shi | Wta Singles | Hard | 0-0, 5-4, 0 - 0, saca H. Shi | 92% / 88% | 2-0 68%, 2-1 24% | 21.5: 53% / 50% |
-| K. Volynets vs R. Montgomery | Wta Singles | Hard | 0-0, 4-2, 30 - 40, saca R. Montgomery | 83% / 70% | 2-0 57%, 2-1 25% | 22.5: 45% / 50% |
-| Y. Starodubtseva vs A. Charaeva | Wta Singles | Hard | 0-0, 4-2, 40 - A, saca A. Charaeva | 78% / 72% | 2-0 52%, 2-1 26% | 22.5: 50% / 46% |
-| S. Kenin vs A. Krueger | Wta Singles | Hard | 0-1, 0-0, 30 - 15, saca S. Kenin | 19% / 24% | 0-2 55%, 1-2 26% | 21.5: 55% / 51% |
+| A. Molcan vs T. Machac | Atp Singles | Hard | 1-0, 1-0, 15 - 15, saca A. Molcan | 81% / 85% | 2-0 68%, 1-2 19% | 18.5: 75% / 58% |
+| J. Faria vs A. Fery | Atp Singles | Hard | 1-1, 4-2, 15 - 30, saca A. Fery | 86% / 79% | 2-1 86%, 1-2 14% | 29.5: 23% / 29% |
+| T. Fritz vs J. Munar | Atp Singles | Hard | 1-0, 2-2, 40 - 15, saca T. Fritz | 88% / 85% | 2-0 67%, 2-1 22% | 25.5: 56% / 51% |
+| T. M. Etcheverry vs S. Tsitsipas | Atp Singles | Hard | 0-0, 3-2, 0 - 0, saca T. M. Etcheverry | 61% / 47% | 2-0 37%, 1-2 30% | 26.5: 53% / 50% |
+| A. De Minaur vs M. Navone | Atp Singles | Hard | 0-0, 5-6, 0 - 0, saca A. De Minaur | 76% / 74% | 2-0 40%, 2-1 36% | 25.5: 56% / 54% |
+| A. Walton vs M. Bellucci | Challenger Men Singles | Hard | 0-0, 5-4, 0 - 0, saca A. Walton | 72% / 65% | 2-0 47%, 2-1 25% | 24.5: 52% / 50% |
+| P. Bar Biryukov vs D. Sweeny | Challenger Men Singles | Hard | 0-0, 1-0, 0 - 40, saca D. Sweeny | 26% / 34% | 0-2 44%, 1-2 30% | 22.5: 64% / 50% |
+| A. Bolt vs E. Zhu | Challenger Men Singles | Hard | 0-0, 2-2, 0 - 0, saca A. Bolt | 75% / 65% | 2-0 45%, 2-1 30% | 23.5: 52% / 49% |
+| L. Harris vs L. Pavlovic | Challenger Men Singles | Hard | 0-0, 4-1, 0 - 0, saca L. Harris | 92% / 93% | 2-0 73%, 2-1 20% | 17.5: 82% / 56% |
+| S. Lansere vs S. Costoulas | Challenger Women Singles | Hard | 0-0, 3-2, 0 - 0, saca S. Costoulas | 51% / 35% | 2-0 27%, 1-2 27% | 22.5: 60% / 51% |
+| A. Ibragimova vs K. Okamura | Challenger Women Singles | Hard | 0-0, 5-4, 40 - A, saca K. Okamura | 57% / 77% | 2-0 31%, 2-1 26% | 23.5: 61% / 49% |
+| Z. Zhao vs M. Purcell | Itf Men Singles | Hard | 0-0, 1-4, 30 - 30, saca M. Purcell | 2% / 6% | 0-2 87%, 1-2 11% | 16.5: 67% / 42% |
+| T. Yamanaka vs Y. Tomida | Itf Men Singles | Hard | 1-1, 3-3, 40 - A, saca Y. Tomida | 47% / 42% | 1-2 53%, 2-1 47% | 26.5: 53% / 44% |
+| R. Matsuda vs R. Komagata | Itf Men Singles | Hard | 1-0, 4-2, 0 - 0, saca R. Matsuda | 95% / 94% | 2-0 88%, 2-1 6% | 18.5: 83% / 62% |
+| A. Yang vs Z. Jiang | Itf Women Singles | Hard | 0-0, 1-1, 15 - 15, saca Z. Jiang | 55% / 29% | 2-0 29%, 2-1 27% |  |
+| A. Kakenova vs H. Y. Son | Itf Women Singles | Hard | 0-0, 0-0, 0 - 0, saca A. Kakenova | 42% / 35% | 0-2 31%, 1-2 27% |  |
+| E. M. Desvignes vs H. Koyama | Itf Women Singles | Hard | 0-0, 3-3, 40 - 15, saca E. M. Desvignes | 64% / 89% | 2-0 37%, 2-1 27% |  |
+| K. Sawashiro vs A. Beck | Itf Women Singles | Hard | 1-0, 3-4, 40 - 15, saca K. Sawashiro | 93% / 88% | 2-0 66%, 2-1 27% |  |
+| T. Kokkinis vs M. Uemura | Itf Women Singles | Hard | 1-1, 0-1, 0 - 0, saca T. Kokkinis | 69% / 53% | 2-1 69%, 1-2 31% |  |
+| M. Barry vs Y. Kitahara | Itf Women Singles | Hard | 0-0, 2-3, 30 - 40, saca M. Barry | 17% / 21% | 0-2 58%, 1-2 26% |  |
+| Q. Zheng vs H. Shi | Wta Singles | Hard | 0-0, 6-5, 15 - 30, saca H. Shi | 90% / 83% | 2-0 62%, 2-1 28% | 23.5: 46% / 49% |
+| K. Volynets vs R. Montgomery | Wta Singles | Hard | 0-0, 5-4, 0 - 0, saca K. Volynets | 83% / 72% | 2-0 58%, 2-1 25% | 22.5: 48% / 51% |
+| Y. Starodubtseva vs A. Charaeva | Wta Singles | Hard | 0-0, 5-4, 0 - 0, saca Y. Starodubtseva | 79% / 70% | 2-0 54%, 2-1 25% | 23.5: 45% / 49% |
+| S. Kenin vs A. Krueger | Wta Singles | Hard | 0-1, 2-1, 15 - 0, saca A. Krueger | 23% / 32% | 0-2 45%, 1-2 32% | 25.5: 50% / 50% |

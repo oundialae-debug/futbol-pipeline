@@ -1,20 +1,21 @@
 # Más/menos juegos en directo: apuestas en papel
 
-Partidos acabados con cuota de juegos en el registro: **36**. Una apuesta por partido (se agrupa por partido). Cuota = la de la API en esa pasada, no la de Luckia. Con menos de 20 apuestas el número no significa nada.
+Partidos acabados con cuota de juegos en el registro: **39**. Una apuesta por partido (se agrupa por partido). Cuota = la de la API en esa pasada, no la de Luckia. Con menos de 20 apuestas el número no significa nada.
 
 | estrategia | apuestas | aciertos | beneficio medio | sigmas |
 |---|---|---|---|---|
-| **señal: vigilar el menos** | 12 | 75% | +28.4% | +1.16 |
-| control: siempre el menos (1ª pasada) | 36 | 61% | +13.8% | +0.89 |
-| control: siempre el más (1ª pasada) | 36 | 39% | -25.7% | -1.62 |
+| **señal: vigilar el menos** | 13 | 77% | +33.9% | +1.46 |
+| control: siempre el menos (1ª pasada) | 39 | 64% | +19.3% | +1.32 |
+| control: siempre el más (1ª pasada) | 39 | 36% | -31.4% | -2.10 |
 
-Brier del 'más' en la línea principal (1ª pasada): modelo 0.2978, mercado 0.2570 (menor es mejor). El modelo da al más +25.1% sobre lo que pasa de verdad.
+Brier del 'más' en la línea principal (1ª pasada): modelo 0.3112, mercado 0.2569 (menor es mejor). El modelo da al más +28.4% sobre lo que pasa de verdad.
 
 ## Señales
 
 | partido | línea | cuota menos | juegos | resultado |
 |---|---|---|---|---|
 | Challenger Mouilleron-Le-Captif: L. Broady vs D. Stricker | 26.5 | 1.53 | 26 | gana |
+| ATP 500 Tokyo: L. Darderi vs C. Ruud | 25.5 | 2.00 | 22 | gana |
 | ATP 500 Beijing: N. Borges vs N. Djokovic | 22.5 | 1.80 | 22 | gana |
 | WTA 1000 Beijing: T. Preston vs T. Korpatsch | 21.5 | 1.53 | 21 | gana |
 | WTA 125 Adana (Turkey): A. Ruzic vs J. Riera | 19.5 | 1.44 | 19 | gana |
@@ -31,14 +32,14 @@ Brier del 'más' en la línea principal (1ª pasada): modelo 0.2978, mercado 0.2
 
 | lado | avisos resueltos | aciertos | beneficio medio (cuota API) | sigmas |
 |---|---|---|---|---|
-| menos | 12 | 83% | +21.6% | +1.30 |
+| menos | 15 | 80% | +17.5% | +1.11 |
 
 ## Previos (antes de empezar), línea principal de juegos y ganador
 
-3 partidos. Juegos (más de la línea principal), Brier (menor es mejor): modelo 0.3618, modelo corregido con el historial 0.3578, casa 0.2541. Pasó el más en el 67%.
-Ganador (3): acierto modelo 33%, casa 67%.
+9 partidos. Juegos (más de la línea principal), Brier (menor es mejor): modelo 0.4005, modelo corregido con el historial 0.2893, casa 0.2542. Pasó el más en el 33%.
+Ganador (9): acierto modelo 44%, casa 67%.
 
 ## Aprendizaje (recalibración del modelo)
 
-Partidos resueltos: 36 (234 líneas). Activa: **sí** (hace falta 30+ partidos y que mejore al modelo en partidos que no vio).
-Brier (menor es mejor): modelo 0.3017, modelo con el saque de hoy 0.2950, casa 0.2438, recalibrado (validado por partidos) 0.2386. Sesgo del modelo hacia el más: +26.3%.
+Partidos resueltos: 39 (256 líneas). Activa: **sí** (hace falta 30+ partidos y que mejore al modelo en partidos que no vio).
+Brier (menor es mejor): modelo 0.3078, modelo con el saque de hoy 0.3012, casa 0.2432, recalibrado (validado por partidos) 0.2293. Sesgo del modelo hacia el más: +28.5%.
