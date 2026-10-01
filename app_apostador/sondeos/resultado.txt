@@ -1,0 +1,22 @@
+1301103194 HTTP 200
+   estado: {'clock': 90, 'score': {'current': '0 - 2', 'penalties': None}, 'description': 'Finished'}
+   events: 14 ['Goal', 'Red Card', 'Substitution', 'Yellow Card']
+   homeTeam shots: 6
+   awayTeam shots: 22
+   predictions prematch/live: 26 11
+   news: 20 venue: {'city': 'Prague', 'name': 'Fortuna Arena', 'country': 'Czechia', 'capacity': '21000'}
+1301102343 HTTP 200
+   estado: {'clock': 90, 'score': {'current': '4 - 1', 'penalties': None}, 'description': 'Finished'}
+   events: 20 ['Goal', 'Substitution', 'Yellow Card']
+   homeTeam shots: 16
+   awayTeam shots: 5
+   predictions prematch/live: 26 11
+   news: 4 venue: {'city': 'Seville', 'name': 'Ramon Sanchez Pizjuan', 'country': 'Spain', 'capacity': '42714'}
+1336406078 HTTP 200
+   estado: {'clock': 90, 'score': {'current': '2 - 1', 'penalties': None}, 'description': 'Finished'}
+   events: 18 ['Goal', 'Penalty', 'Red Card', 'Substitution', 'Yellow Card']
+   homeTeam shots: 18
+   awayTeam shots: 8
+   predictions prematch/live: 10 10
+   news: 8 venue: {'city': 'Madrid', 'name': 'Riyadh Air Metropolitano', 'country': 'Spain', 'capacity': '70460'}
+llamadas hechas: 3

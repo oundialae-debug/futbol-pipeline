@@ -1,0 +1,1353 @@
+[
+ {
+  "venue": {
+   "city": "Seville",
+   "name": "Ramon Sanchez Pizjuan",
+   "country": "Spain",
+   "capacity": "42714"
+  },
+  "referee": {
+   "name": "Gozubuyuk, Serdar",
+   "nationality": "Netherlands"
+  },
+  "forecast": {
+   "status": "partly cloudy night",
+   "temperature": "26.77°C"
+  },
+  "events": [
+   {
+    "team": {
+     "id": 8443,
+     "logo": "https://highlightly.net/soccer/images/teams/8443.png",
+     "name": "Spain"
+    },
+    "time": "2",
+    "type": "Goal",
+    "assist": "Alejandro Baena Rodríguez",
+    "player": "Lamine Yamal",
+    "playerId": 62279462,
+    "substituted": null,
+    "assistingPlayerId": 29337413
+   },
+   {
+    "team": {
+     "id": 3337,
+     "logo": "https://highlightly.net/soccer/images/teams/3337.png",
+     "name": "Croatia"
+    },
+    "time": "18",
+    "type": "Yellow Card",
+    "assist": null,
+    "player": "Marin Pongračić",
+    "playerId": 174678,
+    "substituted": null,
+    "assistingPlayerId": null
+   },
+   {
+    "team": {
+     "id": 3337,
+     "logo": "https://highlightly.net/soccer/images/teams/3337.png",
+     "name": "Croatia"
+    },
+    "time": "28",
+    "type": "Goal",
+    "assist": "Ivan Perišić",
+    "player": "Dion Drena Beljo",
+    "playerId": 29372028,
+    "substituted": null,
+    "assistingPlayerId": 33481
+   },
+   {
+    "team": {
+     "id": 8443,
+     "logo": "https://highlightly.net/soccer/images/teams/8443.png",
+     "name": "Spain"
+    },
+    "time": "31",
+    "type": "Goal",
+    "assist": "Lamine Yamal",
+    "player": "Marc Pubill",
+    "playerId": 47622827,
+    "substituted": null,
+    "assistingPlayerId": 62279462
+   },
+   {
+    "team": {
+     "id": 3337,
+     "logo": "https://highlightly.net/soccer/images/teams/3337.png",
+     "name": "Croatia"
+    },
+    "time": "37",
+    "type": "Yellow Card",
+    "assist": null,
+    "player": "Petar Sučić",
+    "playerId": 56061159,
+    "substituted": null,
+    "assistingPlayerId": null
+   },
+   {
+    "team": {
+     "id": 3337,
+     "logo": "https://highlightly.net/soccer/images/teams/3337.png",
+     "name": "Croatia"
+    },
+    "time": "45",
+    "type": "Substitution",
+    "assist": null,
+    "player": "Marin Pongračić",
+    "playerId": 174678,
+    "substituted": "Luka Vuskovic",
+    "assistingPlayerId": 62391035
+   },
+   {
+    "team": {
+     "id": 8443,
+     "logo": "https://highlightly.net/soccer/images/teams/8443.png",
+     "name": "Spain"
+    },
+    "time": "49",
+    "type": "Yellow Card",
+    "assist": null,
+    "player": "Alejandro Baena Rodríguez",
+    "playerId": 29337413,
+    "substituted": null,
+    "assistingPlayerId": null
+   },
+   {
+    "team": {
+     "id": 3337,
+     "logo": "https://highlightly.net/soccer/images/teams/3337.png",
+     "name": "Croatia"
+    },
+    "time": "54",
+    "type": "Yellow Card",
+    "assist": null,
+    "player": "Marco Pašalić",
+    "playerId": 41999419,
+    "substituted": null,
+    "assistingPlayerId": null
+   },
+   {
+    "team": {
+     "id": 8443,
+     "logo": "https://highlightly.net/soccer/images/teams/8443.png",
+     "name": "Spain"
+    },
+    "time": "57",
+    "type": "Substitution",
+    "assist": null,
+    "player": "Fermín López",
+    "playerId": 54840940,
+    "substituted": "Mikel Merino",
+    "assistingPlayerId": 7617225
+   },
+   {
+    "team": {
+     "id": 8443,
+     "logo": "https://highlightly.net/soccer/images/teams/8443.png",
+     "name": "Spain"
+    },
+    "time": "57",
+    "type": "Substitution",
+    "assist": null,
+    "player": "Fabián Ruiz",
+    "playerId": 52962,
+    "substituted": "Pedri",
+    "assistingPlayerId": 21511203
+   },
+   {
+    "team": {
+     "id": 3337,
+     "logo": "https://highlightly.net/soccer/images/teams/3337.png",
+     "name": "Croatia"
+    },
+    "time": "58",
+    "type": "Yellow Card",
+    "assist": null,
+    "player": "Josip Mišić",
+    "playerId": 382207,
+    "substituted": null,
+    "assistingPlayerId": null
+   },
+   {
+    "team": {
+     "id": 3337,
+     "logo": "https://highlightly.net/soccer/images/teams/3337.png",
+     "name": "Croatia"
+    },
+    "time": "60",
+    "type": "Substitution",
+    "assist": null,
+    "player": "Dion Drena Beljo",
+    "playerId": 29372028,
+    "substituted": "Ante Budimir",
+    "assistingPlayerId": 7526260
+   },
+   {
+    "team": {
+     "id": 3337,
+     "logo": "https://highlightly.net/soccer/images/teams/3337.png",
+     "name": "Croatia"
+    },
+    "time": "60",
+    "type": "Substitution",
+    "assist": null,
+    "player": "Mateo Kovačić",
+    "playerId": 369005,
+    "substituted": "Mario Pašalić",
+    "assistingPlayerId": 444997
+   },
+   {
+    "team": {
+     "id": 8443,
+     "logo": "https://highlightly.net/soccer/images/teams/8443.png",
+     "name": "Spain"
+    },
+    "time": "63",
+    "type": "Goal",
+    "assist": "Pedri",
+    "player": "Lamine Yamal",
+    "playerId": 62279462,
+    "substituted": null,
+    "assistingPlayerId": 21511203
+   },
+   {
+    "team": {
+     "id": 8443,
+     "logo": "https://highlightly.net/soccer/images/teams/8443.png",
+     "name": "Spain"
+    },
+    "time": "68",
+    "type": "Substitution",
+    "assist": null,
+    "player": "Alejandro Baena Rodríguez",
+    "playerId": 29337413,
+    "substituted": "Nico Williams",
+    "assistingPlayerId": 29591793
+   },
+   {
+    "team": {
+     "id": 8443,
+     "logo": "https://highlightly.net/soccer/images/teams/8443.png",
+     "name": "Spain"
+    },
+    "time": "68",
+    "type": "Substitution",
+    "assist": null,
+    "player": "Lamine Yamal",
+    "playerId": 62279462,
+    "substituted": "Víctor Muñoz",
+    "assistingPlayerId": 54539065
+   },
+   {
+    "team": {
+     "id": 3337,
+     "logo": "https://highlightly.net/soccer/images/teams/3337.png",
+     "name": "Croatia"
+    },
+    "time": "72",
+    "type": "Substitution",
+    "assist": null,
+    "player": "Ivan Perišić",
+    "playerId": 33481,
+    "substituted": "Franjo Ivanovic",
+    "assistingPlayerId": 32675265
+   },
+   {
+    "team": {
+     "id": 8443,
+     "logo": "https://highlightly.net/soccer/images/teams/8443.png",
+     "name": "Spain"
+    },
+    "time": "72",
+    "type": "Substitution",
+    "assist": null,
+    "player": "Martín Zubimendi",
+    "playerId": 7617869,
+    "substituted": "Rodrigo Hernandez Cascante",
+    "assistingPlayerId": 7238
+   },
+   {
+    "team": {
+     "id": 3337,
+     "logo": "https://highlightly.net/soccer/images/teams/3337.png",
+     "name": "Croatia"
+    },
+    "time": "81",
+    "type": "Substitution",
+    "assist": null,
+    "player": "Petar Sučić",
+    "playerId": 56061159,
+    "substituted": "Luka Modrić",
+    "assistingPlayerId": 121548
+   },
+   {
+    "team": {
+     "id": 8443,
+     "logo": "https://highlightly.net/soccer/images/teams/8443.png",
+     "name": "Spain"
+    },
+    "time": "89",
+    "type": "Goal",
+    "assist": "Mikel Merino",
+    "player": "Nico Williams",
+    "playerId": 29591793,
+    "substituted": null,
+    "assistingPlayerId": 7617225
+   }
+  ],
+  "predictions": {
+   "live": [
+    {
+     "type": "live",
+     "modelType": "three-way",
+     "description": "Spain is most likely to win the game against Croatia.",
+     "generatedAt": "2026-09-29T18:51:17.895Z",
+     "probabilities": {
+      "away": "4.15%",
+      "draw": "8.62%",
+      "home": "87.23%"
+     }
+    },
+    {
+     "type": "live",
+     "modelType": "three-way",
+     "description": "Spain is most likely to win the game against Croatia.",
+     "generatedAt": "2026-09-29T19:01:11.873Z",
+     "probabilities": {
+      "away": "4.16%",
+      "draw": "9.37%",
+      "home": "86.47%"
+     }
+    },
+    {
+     "type": "live",
+     "modelType": "three-way",
+     "description": "Spain is most likely to win the game against Croatia.",
+     "generatedAt": "2026-09-29T19:11:18.338Z",
+     "probabilities": {
+      "away": "3.98%",
+      "draw": "9.69%",
+      "home": "86.33%"
+     }
+    },
+    {
+     "type": "live",
+     "modelType": "three-way",
+     "description": "Spain is most likely to win the game against Croatia.",
+     "generatedAt": "2026-09-29T19:21:09.241Z",
+     "probabilities": {
+      "away": "4.06%",
+      "draw": "10.68%",
+      "home": "85.26%"
+     }
+    },
+    {
+     "type": "live",
+     "modelType": "three-way",
+     "description": "Spain is most likely to win the game against Croatia.",
+     "generatedAt": "2026-09-29T19:31:21.676Z",
+     "probabilities": {
+      "away": "3.46%",
+      "draw": "11.02%",
+      "home": "85.51%"
+     }
+    },
+    {
+     "type": "live",
+     "modelType": "three-way",
+     "description": "Spain is most likely to win the game against Croatia.",
+     "generatedAt": "2026-09-29T19:41:09.994Z",
+     "probabilities": {
+      "away": "3.48%",
+      "draw": "11.19%",
+      "home": "85.33%"
+     }
+    },
+    {
+     "type": "live",
+     "modelType": "three-way",
+     "description": "Spain is most likely to win the game against Croatia.",
+     "generatedAt": "2026-09-29T19:51:28.652Z",
+     "probabilities": {
+      "away": "3.44%",
+      "draw": "11.25%",
+      "home": "85.30%"
+     }
+    },
+    {
+     "type": "live",
+     "modelType": "three-way",
+     "description": "Spain is most likely to win the game against Croatia.",
+     "generatedAt": "2026-09-29T20:01:11.869Z",
+     "probabilities": {
+      "away": "3.32%",
+      "draw": "12.48%",
+      "home": "84.20%"
+     }
+    },
+    {
+     "type": "live",
+     "modelType": "three-way",
+     "description": "Spain is most likely to win the game against Croatia.",
+     "generatedAt": "2026-09-29T20:11:35.995Z",
+     "probabilities": {
+      "away": "1.12%",
+      "draw": "4.71%",
+      "home": "94.17%"
+     }
+    },
+    {
+     "type": "live",
+     "modelType": "three-way",
+     "description": "Spain is most likely to win the game against Croatia.",
+     "generatedAt": "2026-09-29T20:21:13.089Z",
+     "probabilities": {
+      "away": "0.75%",
+      "draw": "4.03%",
+      "home": "95.22%"
+     }
+    },
+    {
+     "type": "live",
+     "modelType": "three-way",
+     "description": "Spain is most likely to win the game against Croatia.",
+     "generatedAt": "2026-09-29T20:31:34.095Z",
+     "probabilities": {
+      "away": "0.65%",
+      "draw": "3.77%",
+      "home": "95.57%"
+     }
+    }
+   ],
+   "prematch": [
+    {
+     "type": "prematch",
+     "modelType": "three-way",
+     "description": "Spain is most likely to win the game against Croatia.",
+     "generatedAt": "2026-09-22T09:22:15.033Z",
+     "probabilities": {
+      "away": "10.49%",
+      "draw": "18.04%",
+      "home": "71.47%"
+     }
+    },
+    {
+     "type": "prematch",
+     "modelType": "three-way",
+     "description": "Spain is most likely to win the game against Croatia.",
+     "generatedAt": "2026-09-22T13:15:24.210Z",
+     "probabilities": {
+      "away": "10.48%",
+      "draw": "18.05%",
+      "home": "71.47%"
+     }
+    },
+    {
+     "type": "prematch",
+     "modelType": "three-way",
+     "description": "Spain is most likely to win the game against Croatia.",
+     "generatedAt": "2026-09-22T17:28:16.689Z",
+     "probabilities": {
+      "away": "10.45%",
+      "draw": "18.03%",
+      "home": "71.52%"
+     }
+    },
+    {
+     "type": "prematch",
+     "modelType": "three-way",
+     "description": "Spain is most likely to win the game against Croatia.",
+     "generatedAt": "2026-09-22T21:48:29.994Z",
+     "probabilities": {
+      "away": "10.44%",
+      "draw": "18.03%",
+      "home": "71.53%"
+     }
+    },
+    {
+     "type": "prematch",
+     "modelType": "three-way",
+     "description": "Spain is most likely to win the game against Croatia.",
+     "generatedAt": "2026-09-23T10:36:05.769Z",
+     "probabilities": {
+      "away": "10.02%",
+      "draw": "17.78%",
+      "home": "72.20%"
+     }
+    },
+    {
+     "type": "prematch",
+     "modelType": "three-way",
+     "description": "Spain is most likely to win the game against Croatia.",
+     "generatedAt": "2026-09-23T18:09:41.738Z",
+     "probabilities": {
+      "away": "9.83%",
+      "draw": "17.51%",
+      "home": "72.66%"
+     }
+    },
+    {
+     "type": "prematch",
+     "modelType": "three-way",
+     "description": "Spain is most likely to win the game against Croatia.",
+     "generatedAt": "2026-09-23T22:15:35.052Z",
+     "probabilities": {
+      "away": "9.84%",
+      "draw": "17.51%",
+      "home": "72.65%"
+     }
+    },
+    {
+     "type": "prematch",
+     "modelType": "three-way",
+     "description": "Spain is most likely to win the game against Croatia.",
+     "generatedAt": "2026-09-24T09:07:15.119Z",
+     "probabilities": {
+      "away": "9.80%",
+      "draw": "17.48%",
+      "home": "72.71%"
+     }
+    },
+    {
+     "type": "prematch",
+     "modelType": "three-way",
+     "description": "Spain is most likely to win the game against Croatia.",
+     "generatedAt": "2026-09-24T13:27:20.898Z",
+     "probabilities": {
+      "away": "9.81%",
+      "draw": "17.51%",
+      "home": "72.69%"
+     }
+    },
+    {
+     "type": "prematch",
+     "modelType": "three-way",
+     "description": "Spain is most likely to win the game against Croatia.",
+     "generatedAt": "2026-09-24T17:43:26.772Z",
+     "probabilities": {
+      "away": "9.80%",
+      "draw": "17.60%",
+      "home": "72.60%"
+     }
+    },
+    {
+     "type": "prematch",
+     "modelType": "three-way",
+     "description": "Spain is most likely to win the game against Croatia.",
+     "generatedAt": "2026-09-25T12:42:58.673Z",
+     "probabilities": {
+      "away": "10.53%",
+      "draw": "17.50%",
+      "home": "71.97%"
+     }
+    },
+    {
+     "type": "prematch",
+     "modelType": "three-way",
+     "description": "Spain is most likely to win the game against Croatia.",
+     "generatedAt": "2026-09-25T17:36:01.835Z",
+     "probabilities": {
+      "away": "10.59%",
+      "draw": "17.47%",
+      "home": "71.94%"
+     }
+    },
+    {
+     "type": "prematch",
+     "modelType": "three-way",
+     "description": "Spain is most likely to win the game against Croatia.",
+     "generatedAt": "2026-09-26T12:43:59.920Z",
+     "probabilities": {
+      "away": "9.64%",
+      "draw": "16.65%",
+      "home": "73.71%"
+     }
+    },
+    {
+     "type": "prematch",
+     "modelType": "three-way",
+     "description": "Spain is most likely to win the game against Croatia.",
+     "generatedAt": "2026-09-27T15:49:47.977Z",
+     "probabilities": {
+      "away": "7.52%",
+      "draw": "14.07%",
+      "home": "78.41%"
+     }
+    },
+    {
+     "type": "prematch",
+     "modelType": "three-way",
+     "description": "Spain is most likely to win the game against Croatia.",
+     "generatedAt": "2026-09-27T19:04:07.208Z",
+     "probabilities": {
+      "away": "7.45%",
+      "draw": "13.99%",
+      "home": "78.55%"
+     }
+    },
+    {
+     "type": "prematch",
+     "modelType": "three-way",
+     "description": "Spain is most likely to win the game against Croatia.",
+     "generatedAt": "2026-09-28T08:12:23.533Z",
+     "probabilities": {
+      "away": "7.30%",
+      "draw": "13.79%",
+      "home": "78.91%"
+     }
+    },
+    {
+     "type": "prematch",
+     "modelType": "three-way",
+     "description": "Spain is most likely to win the game against Croatia.",
+     "generatedAt": "2026-09-28T10:49:02.510Z",
+     "probabilities": {
+      "away": "7.35%",
+      "draw": "13.73%",
+      "home": "78.92%"
+     }
+    },
+    {
+     "type": "prematch",
+     "modelType": "three-way",
+     "description": "Spain is most likely to win the game against Croatia.",
+     "generatedAt": "2026-09-28T13:25:29.620Z",
+     "probabilities": {
+      "away": "7.51%",
+      "draw": "13.74%",
+      "home": "78.75%"
+     }
+    },
+    {
+     "type": "prematch",
+     "modelType": "three-way",
+     "description": "Spain is most likely to win the game against Croatia.",
+     "generatedAt": "2026-09-28T16:06:32.383Z",
+     "probabilities": {
+      "away": "7.41%",
+      "draw": "13.66%",
+      "home": "78.93%"
+     }
+    },
+    {
+     "type": "prematch",
+     "modelType": "three-way",
+     "description": "Spain is most likely to win the game against Croatia.",
+     "generatedAt": "2026-09-28T18:50:53.451Z",
+     "probabilities": {
+      "away": "7.54%",
+      "draw": "13.53%",
+      "home": "78.93%"
+     }
+    },
+    {
+     "type": "prematch",
+     "modelType": "three-way",
+     "description": "Spain is most likely to win the game against Croatia.",
+     "generatedAt": "2026-09-28T21:39:35.944Z",
+     "probabilities": {
+      "away": "7.51%",
+      "draw": "13.52%",
+      "home": "78.97%"
+     }
+    },
+    {
+     "type": "prematch",
+     "modelType": "three-way",
+     "description": "Spain is most likely to win the game against Croatia.",
+     "generatedAt": "2026-09-29T08:17:43.095Z",
+     "probabilities": {
+      "away": "8.06%",
+      "draw": "14.04%",
+      "home": "77.90%"
+     }
+    },
+    {
+     "type": "prematch",
+     "modelType": "three-way",
+     "description": "Spain is most likely to win the game against Croatia.",
+     "generatedAt": "2026-09-29T11:01:30.748Z",
+     "probabilities": {
+      "away": "8.05%",
+      "draw": "14.07%",
+      "home": "77.88%"
+     }
+    },
+    {
+     "type": "prematch",
+     "modelType": "three-way",
+     "description": "Spain is most likely to win the game against Croatia.",
+     "generatedAt": "2026-09-29T13:55:38.651Z",
+     "probabilities": {
+      "away": "7.92%",
+      "draw": "13.91%",
+      "home": "78.16%"
+     }
+    },
+    {
+     "type": "prematch",
+     "modelType": "three-way",
+     "description": "Spain is most likely to win the game against Croatia.",
+     "generatedAt": "2026-09-29T16:46:30.253Z",
+     "probabilities": {
+      "away": "8.19%",
+      "draw": "13.85%",
+      "home": "77.97%"
+     }
+    },
+    {
+     "type": "prematch",
+     "modelType": "three-way",
+     "description": "Spain is most likely to win the game against Croatia.",
+     "generatedAt": "2026-09-29T19:38:35.308Z",
+     "probabilities": {
+      "away": "8.79%",
+      "draw": "14.09%",
+      "home": "77.11%"
+     }
+    }
+   ]
+  },
+  "statistics": [
+   {
+    "team": {
+     "id": 8443,
+     "logo": "https://highlightly.net/soccer/images/teams/8443.png",
+     "name": "Spain"
+    },
+    "statistics": [
+     {
+      "value": 1.81,
+      "displayName": "Expected Goals"
+     },
+     {
+      "value": 4,
+      "displayName": "Big Chances Created"
+     },
+     {
+      "value": 112,
+      "displayName": "Attacks"
+     },
+     {
+      "value": 9,
+      "displayName": "Free Kicks"
+     },
+     {
+      "value": 1.69,
+      "displayName": "Expected Assists"
+     },
+     {
+      "value": 3,
+      "displayName": "Successful Crosses"
+     },
+     {
+      "value": 11,
+      "displayName": "Crosses"
+     },
+     {
+      "value": 249,
+      "displayName": "Passes Own Half"
+     },
+     {
+      "value": 382,
+      "displayName": "Passes Opposition Half"
+     },
+     {
+      "value": 17,
+      "displayName": "Successful Long Passes"
+     },
+     {
+      "value": 27,
+      "displayName": "Long Passes"
+     },
+     {
+      "value": 12,
+      "displayName": "Throw-Ins"
+     },
+     {
+      "value": 13,
+      "displayName": "Key Passes"
+     },
+     {
+      "value": 153,
+      "displayName": "Passes Into Final Third"
+     },
+     {
+      "value": 106,
+      "displayName": "Backward Passes"
+     },
+     {
+      "value": 2,
+      "displayName": "Goal Kicks"
+     },
+     {
+      "value": 8,
+      "displayName": "Interceptions"
+     },
+     {
+      "value": 6,
+      "displayName": "Successful Tackles"
+     },
+     {
+      "value": 15,
+      "displayName": "Tackles"
+     },
+     {
+      "value": 14,
+      "displayName": "Clearances"
+     },
+     {
+      "value": 6,
+      "displayName": "Successful Aerial Duels"
+     },
+     {
+      "value": 7,
+      "displayName": "Aerial Duels"
+     },
+     {
+      "value": 9,
+      "displayName": "Successful Dribbles"
+     },
+     {
+      "value": 23,
+      "displayName": "Dribbles"
+     },
+     {
+      "value": 0.44,
+      "displayName": "Shots accuracy"
+     },
+     {
+      "value": 52,
+      "displayName": "Failed passes"
+     },
+     {
+      "value": 0.64,
+      "displayName": "Possession"
+     },
+     {
+      "value": 7,
+      "displayName": "Shots on target"
+     },
+     {
+      "value": 6,
+      "displayName": "Corners"
+     },
+     {
+      "value": 5,
+      "displayName": "Offsides"
+     },
+     {
+      "value": 568,
+      "displayName": "Successful passes"
+     },
+     {
+      "value": 0,
+      "displayName": "Red cards"
+     },
+     {
+      "value": 6,
+      "displayName": "Shots off target"
+     },
+     {
+      "value": 3,
+      "displayName": "Blocked shots"
+     },
+     {
+      "value": 12,
+      "displayName": "Shots within penalty area"
+     },
+     {
+      "value": 620,
+      "displayName": "Total passes"
+     },
+     {
+      "value": 1,
+      "displayName": "Goalkeeper saves"
+     },
+     {
+      "value": 9,
+      "displayName": "Fouls"
+     },
+     {
+      "value": 1,
+      "displayName": "Yellow cards"
+     },
+     {
+      "displayName": "Shots outside penalty area",
+      "value": 4
+     }
+    ]
+   },
+   {
+    "team": {
+     "id": 3337,
+     "logo": "https://highlightly.net/soccer/images/teams/3337.png",
+     "name": "Croatia"
+    },
+    "statistics": [
+     {
+      "value": 0.47,
+      "displayName": "Expected Goals"
+     },
+     {
+      "value": 1,
+      "displayName": "Big Chances Created"
+     },
+     {
+      "value": 58,
+      "displayName": "Attacks"
+     },
+     {
+      "value": 9,
+      "displayName": "Free Kicks"
+     },
+     {
+      "value": 1.03,
+      "displayName": "Expected Assists"
+     },
+     {
+      "value": 5,
+      "displayName": "Successful Crosses"
+     },
+     {
+      "value": 12,
+      "displayName": "Crosses"
+     },
+     {
+      "value": 192,
+      "displayName": "Passes Own Half"
+     },
+     {
+      "value": 165,
+      "displayName": "Passes Opposition Half"
+     },
+     {
+      "value": 20,
+      "displayName": "Successful Long Passes"
+     },
+     {
+      "value": 38,
+      "displayName": "Long Passes"
+     },
+     {
+      "value": 6,
+      "displayName": "Throw-Ins"
+     },
+     {
+      "value": 5,
+      "displayName": "Key Passes"
+     },
+     {
+      "value": 57,
+      "displayName": "Passes Into Final Third"
+     },
+     {
+      "value": 49,
+      "displayName": "Backward Passes"
+     },
+     {
+      "value": 6,
+      "displayName": "Goal Kicks"
+     },
+     {
+      "value": 9,
+      "displayName": "Interceptions"
+     },
+     {
+      "value": 14,
+      "displayName": "Successful Tackles"
+     },
+     {
+      "value": 21,
+      "displayName": "Tackles"
+     },
+     {
+      "value": 20,
+      "displayName": "Clearances"
+     },
+     {
+      "value": 1,
+      "displayName": "Successful Aerial Duels"
+     },
+     {
+      "value": 7,
+      "displayName": "Aerial Duels"
+     },
+     {
+      "value": 4,
+      "displayName": "Successful Dribbles"
+     },
+     {
+      "value": 7,
+      "displayName": "Dribbles"
+     },
+     {
+      "value": 0.4,
+      "displayName": "Shots accuracy"
+     },
+     {
+      "value": 49,
+      "displayName": "Failed passes"
+     },
+     {
+      "value": 0.36,
+      "displayName": "Possession"
+     },
+     {
+      "value": 2,
+      "displayName": "Shots on target"
+     },
+     {
+      "value": 2,
+      "displayName": "Corners"
+     },
+     {
+      "value": 0,
+      "displayName": "Offsides"
+     },
+     {
+      "value": 296,
+      "displayName": "Successful passes"
+     },
+     {
+      "value": 0,
+      "displayName": "Red cards"
+     },
+     {
+      "value": 1,
+      "displayName": "Shots off target"
+     },
+     {
+      "value": 2,
+      "displayName": "Blocked shots"
+     },
+     {
+      "value": 4,
+      "displayName": "Shots within penalty area"
+     },
+     {
+      "value": 345,
+      "displayName": "Total passes"
+     },
+     {
+      "value": 3,
+      "displayName": "Goalkeeper saves"
+     },
+     {
+      "value": 10,
+      "displayName": "Fouls"
+     },
+     {
+      "value": 4,
+      "displayName": "Yellow cards"
+     },
+     {
+      "displayName": "Shots outside penalty area",
+      "value": 1
+     }
+    ]
+   }
+  ],
+  "id": 1301102343,
+  "round": "League A - 2",
+  "date": "2026-09-29T18:45:00.000Z",
+  "country": {
+   "code": "World",
+   "name": "World",
+   "logo": "https://highlightly.net/soccer/images/countries/World.png"
+  },
+  "state": {
+   "clock": 90,
+   "score": {
+    "current": "4 - 1",
+    "penalties": null
+   },
+   "description": "Finished"
+  },
+  "awayTeam": {
+   "id": 3337,
+   "logo": "https://highlightly.net/soccer/images/teams/3337.png",
+   "name": "Croatia",
+   "topPlayers": [
+    {
+     "name": "Dion Beljo",
+     "position": "Attacker",
+     "statistics": [
+      {
+       "name": "Expected Goals",
+       "value": 0.31
+      },
+      {
+       "name": "Shots On Target",
+       "value": 1
+      },
+      {
+       "name": "Minutes",
+       "value": 59
+      }
+     ]
+    },
+    {
+     "name": "Ivan Perisic",
+     "position": "Midfielder",
+     "statistics": [
+      {
+       "name": "Expected Goals",
+       "value": 0
+      },
+      {
+       "name": "Shots On Target",
+       "value": 0
+      },
+      {
+       "name": "Minutes",
+       "value": 71
+      }
+     ]
+    },
+    {
+     "name": "Josip Šutalo",
+     "position": "Defender",
+     "statistics": [
+      {
+       "name": "Interceptions",
+       "value": 1
+      },
+      {
+       "name": "Tackles",
+       "value": 0
+      },
+      {
+       "name": "Minutes",
+       "value": 90
+      }
+     ]
+    }
+   ],
+   "shots": [
+    {
+     "time": "28'",
+     "outcome": "Goal",
+     "goalTarget": "High Left",
+     "playerName": "Dion Beljo"
+    },
+    {
+     "time": "50'",
+     "outcome": "Blocked",
+     "goalTarget": "Low Right",
+     "playerName": "Marco Pasalic"
+    },
+    {
+     "time": "52'",
+     "outcome": "Blocked",
+     "goalTarget": "Low Centre",
+     "playerName": "Dion Beljo"
+    },
+    {
+     "time": "77'",
+     "outcome": "Missed",
+     "goalTarget": "Close Right",
+     "playerName": "Franjo Ivanović"
+    },
+    {
+     "time": "90'",
+     "outcome": "Saved",
+     "goalTarget": "Low Centre",
+     "playerName": "Luka Modric"
+    }
+   ]
+  },
+  "homeTeam": {
+   "id": 8443,
+   "logo": "https://highlightly.net/soccer/images/teams/8443.png",
+   "name": "Spain",
+   "topPlayers": [
+    {
+     "name": "Lamine Yamal",
+     "position": "Attacker",
+     "statistics": [
+      {
+       "name": "Expected Goals",
+       "value": 0.26
+      },
+      {
+       "name": "Shots On Target",
+       "value": 2
+      },
+      {
+       "name": "Minutes",
+       "value": 67
+      }
+     ]
+    },
+    {
+     "name": "Pedri",
+     "position": "Midfielder",
+     "statistics": [
+      {
+       "name": "Expected Goals",
+       "value": 0.03
+      },
+      {
+       "name": "Shots On Target",
+       "value": 1
+      },
+      {
+       "name": "Minutes",
+       "value": 34
+      }
+     ]
+    },
+    {
+     "name": "Marc Pubill",
+     "position": "Defender",
+     "statistics": [
+      {
+       "name": "Interceptions",
+       "value": 1
+      },
+      {
+       "name": "Tackles",
+       "value": 0
+      },
+      {
+       "name": "Minutes",
+       "value": 90
+      }
+     ]
+    }
+   ],
+   "shots": [
+    {
+     "time": "2'",
+     "outcome": "Goal",
+     "goalTarget": "Low Left",
+     "playerName": "Lamine Yamal"
+    },
+    {
+     "time": "4'",
+     "outcome": "Saved",
+     "goalTarget": "Low Left",
+     "playerName": "Álex Baena"
+    },
+    {
+     "time": "4'",
+     "outcome": "Blocked",
+     "goalTarget": "Low Left",
+     "playerName": "Marc Cucurella"
+    },
+    {
+     "time": "20'",
+     "outcome": "Blocked",
+     "goalTarget": "Low Centre",
+     "playerName": "Martín Zubimendi"
+    },
+    {
+     "time": "20'",
+     "outcome": "Missed",
+     "goalTarget": "CloseLeft",
+     "playerName": "Pau Cubarsí"
+    },
+    {
+     "time": "31'",
+     "outcome": "Goal",
+     "goalTarget": "High Centre",
+     "playerName": "Marc Pubill"
+    },
+    {
+     "time": "35'",
+     "outcome": "Missed",
+     "goalTarget": "Close Right",
+     "playerName": "Fermín López"
+    },
+    {
+     "time": "36'",
+     "outcome": "Saved",
+     "goalTarget": "Low Centre",
+     "playerName": "Fermín López"
+    },
+    {
+     "time": "44'",
+     "outcome": "Blocked",
+     "goalTarget": "Low Centre",
+     "playerName": "Fermín López"
+    },
+    {
+     "time": "45'",
+     "outcome": "Post",
+     "goalTarget": null,
+     "playerName": "Fermín López"
+    },
+    {
+     "time": "63'",
+     "outcome": "Goal",
+     "goalTarget": "Low Right",
+     "playerName": "Lamine Yamal"
+    },
+    {
+     "time": "73'",
+     "outcome": "Missed",
+     "goalTarget": null,
+     "playerName": "Víctor Muñoz"
+    },
+    {
+     "time": "76'",
+     "outcome": "Missed",
+     "goalTarget": null,
+     "playerName": "Nico Williams"
+    },
+    {
+     "time": "79'",
+     "outcome": "Saved",
+     "goalTarget": "Low Left",
+     "playerName": "Pedri"
+    },
+    {
+     "time": "89'",
+     "outcome": "Goal",
+     "goalTarget": "Low Centre",
+     "playerName": "Nico Williams"
+    },
+    {
+     "time": "90 + 1'",
+     "outcome": "Missed",
+     "goalTarget": null,
+     "playerName": "Mikel Oyarzabal"
+    }
+   ]
+  },
+  "league": {
+   "id": 5039,
+   "logo": "https://highlightly.net/soccer/images/leagues/5039.png",
+   "name": "UEFA Nations League",
+   "season": 2026
+  },
+  "news": [
+   {
+    "url": "https://www.footyheadlines.com/3301301031/special-nike-2026-spain-world-cup-winners-boots-revealed-close-up-images.html",
+    "image": "https://www.footyheadlines.com/static/img/post/2026/09/30/AtAbIQWxHTofHaK/special-nike-2026-spain-world-cup-winners-boots-revealed-close-up-images.jpg",
+    "title": "Special Nike 2026 Spain World Cup Winners Boots Revealed - Close-Up Images",
+    "datePublished": "2026-09-30T11:18:00Z"
+   },
+   {
+    "url": "https://www.bbc.co.ukundefined/",
+    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/5af4/live/a1864ff0-bc47-11f1-a76b-c53c7866f2b5.png",
+    "title": "Yamal inspires Spain to homecoming victory over Croatia",
+    "datePublished": "2026-09-29T21:22:42Z"
+   },
+   {
+    "url": "https://www.fourfourtwo.com/competition/watch-spain-vs-croatia-nations-league-free",
+    "image": "https://cdn.mos.cms.futurecdn.net/QVt4MjhGXBf7zfzVaRaV28-2560-80.jpg",
+    "title": "How to watch Spain vs Croatia: Free streams & TV details",
+    "datePublished": "2026-09-29T16:00:00Z"
+   },
+   {
+    "url": "https://www.goal.com/en/news/tebas-erupts-manchester-city-must-be-crushed-what-happened-is-a-scandal-stretching-back-to-2009/blt4b752ecfbcf8869c",
+    "image": "https://assets.goal.com/images/v3/getty-2189715691/crop/MM5DINJSHA5DENJUG45G433XMU5DGMJSHI3DIMI=/GettyImages-2189715691.jpg",
+    "title": "Tebas explodes: Manchester City must be crushed, and what happened is a scandal stretching back to 2009 | Goal.com",
+    "datePublished": "2026-09-29T13:33:01Z"
+   }
+  ]
+ }
+]

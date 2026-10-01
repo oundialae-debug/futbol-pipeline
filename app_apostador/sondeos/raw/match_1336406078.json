@@ -1,0 +1,1184 @@
+[
+ {
+  "venue": {
+   "city": "Madrid",
+   "name": "Riyadh Air Metropolitano",
+   "country": "Spain",
+   "capacity": "70460"
+  },
+  "referee": {
+   "name": "Ortiz Arias, Miguel Angel",
+   "nationality": "Spain"
+  },
+  "forecast": {
+   "status": "clear day",
+   "temperature": "29.62°C"
+  },
+  "events": [
+   {
+    "team": {
+     "id": 451814,
+     "logo": "https://highlightly.net/soccer/images/teams/451814.png",
+     "name": "Atlético Madrid"
+    },
+    "time": "6",
+    "type": "Yellow Card",
+    "assist": null,
+    "player": "Diego Pablo Simeone",
+    "playerId": 52153689,
+    "substituted": null,
+    "assistingPlayerId": null
+   },
+   {
+    "team": {
+     "id": 451814,
+     "logo": "https://highlightly.net/soccer/images/teams/451814.png",
+     "name": "Atlético Madrid"
+    },
+    "time": "35",
+    "type": "Yellow Card",
+    "assist": null,
+    "player": "Marc Pubill",
+    "playerId": 47622827,
+    "substituted": null,
+    "assistingPlayerId": null
+   },
+   {
+    "team": {
+     "id": 451814,
+     "logo": "https://highlightly.net/soccer/images/teams/451814.png",
+     "name": "Atlético Madrid"
+    },
+    "time": "38",
+    "type": "Yellow Card",
+    "assist": null,
+    "player": "Cristian Romero",
+    "playerId": 4955090,
+    "substituted": null,
+    "assistingPlayerId": null
+   },
+   {
+    "team": {
+     "id": 451814,
+     "logo": "https://highlightly.net/soccer/images/teams/451814.png",
+     "name": "Atlético Madrid"
+    },
+    "time": "45",
+    "type": "Substitution",
+    "assist": null,
+    "player": "Marc Pubill",
+    "playerId": 47622827,
+    "substituted": "Koke",
+    "assistingPlayerId": 8204
+   },
+   {
+    "team": {
+     "id": 461175,
+     "logo": "https://highlightly.net/soccer/images/teams/461175.png",
+     "name": "Real Madrid"
+    },
+    "time": "49",
+    "type": "Yellow Card",
+    "assist": null,
+    "player": "Denzel Dumfries",
+    "playerId": 36540,
+    "substituted": null,
+    "assistingPlayerId": null
+   },
+   {
+    "team": {
+     "id": 461175,
+     "logo": "https://highlightly.net/soccer/images/teams/461175.png",
+     "name": "Real Madrid"
+    },
+    "time": "52",
+    "type": "Red Card",
+    "assist": null,
+    "player": "Dean Huijsen",
+    "playerId": 58201171,
+    "substituted": null,
+    "assistingPlayerId": null
+   },
+   {
+    "team": {
+     "id": 451814,
+     "logo": "https://highlightly.net/soccer/images/teams/451814.png",
+     "name": "Atlético Madrid"
+    },
+    "time": "53",
+    "type": "Penalty",
+    "assist": null,
+    "player": "Alejandro Grimaldo",
+    "playerId": 90797,
+    "substituted": null,
+    "assistingPlayerId": null
+   },
+   {
+    "team": {
+     "id": 461175,
+     "logo": "https://highlightly.net/soccer/images/teams/461175.png",
+     "name": "Real Madrid"
+    },
+    "time": "54",
+    "type": "Substitution",
+    "assist": null,
+    "player": "Arda Güler",
+    "playerId": 47006358,
+    "substituted": "Antonio Rüdiger",
+    "assistingPlayerId": 368039
+   },
+   {
+    "team": {
+     "id": 461175,
+     "logo": "https://highlightly.net/soccer/images/teams/461175.png",
+     "name": "Real Madrid"
+    },
+    "time": "54",
+    "type": "Substitution",
+    "assist": null,
+    "player": "Vinícius",
+    "playerId": 122836,
+    "substituted": "Yan Diomande",
+    "assistingPlayerId": 82718090
+   },
+   {
+    "team": {
+     "id": 451814,
+     "logo": "https://highlightly.net/soccer/images/teams/451814.png",
+     "name": "Atlético Madrid"
+    },
+    "time": "59",
+    "type": "Goal",
+    "assist": "Giuliano Simeone Baldini",
+    "player": "Jonathan David",
+    "playerId": 1366883,
+    "substituted": null,
+    "assistingPlayerId": 52153689
+   },
+   {
+    "team": {
+     "id": 451814,
+     "logo": "https://highlightly.net/soccer/images/teams/451814.png",
+     "name": "Atlético Madrid"
+    },
+    "time": "62",
+    "type": "Substitution",
+    "assist": null,
+    "player": "Jonathan David",
+    "playerId": 1366883,
+    "substituted": "Julián Álvarez",
+    "assistingPlayerId": 967603
+   },
+   {
+    "team": {
+     "id": 451814,
+     "logo": "https://highlightly.net/soccer/images/teams/451814.png",
+     "name": "Atlético Madrid"
+    },
+    "time": "67",
+    "type": "Substitution",
+    "assist": null,
+    "player": "Alejandro Baena Rodríguez",
+    "playerId": 29337413,
+    "substituted": "Ademola Lookman",
+    "assistingPlayerId": 3021641
+   },
+   {
+    "team": {
+     "id": 461175,
+     "logo": "https://highlightly.net/soccer/images/teams/461175.png",
+     "name": "Real Madrid"
+    },
+    "time": "71",
+    "type": "Substitution",
+    "assist": null,
+    "player": "Aurelien Tchouameni",
+    "playerId": 204785,
+    "substituted": "Eduardo Camavinga",
+    "assistingPlayerId": 355481
+   },
+   {
+    "team": {
+     "id": 461175,
+     "logo": "https://highlightly.net/soccer/images/teams/461175.png",
+     "name": "Real Madrid"
+    },
+    "time": "78",
+    "type": "Yellow Card",
+    "assist": null,
+    "player": "Jude Bellingham",
+    "playerId": 20884752,
+    "substituted": null,
+    "assistingPlayerId": null
+   },
+   {
+    "team": {
+     "id": 461175,
+     "logo": "https://highlightly.net/soccer/images/teams/461175.png",
+     "name": "Real Madrid"
+    },
+    "time": "82",
+    "type": "Substitution",
+    "assist": null,
+    "player": "Jude Bellingham",
+    "playerId": 20884752,
+    "substituted": "Bernardo Silva",
+    "assistingPlayerId": 102550
+   },
+   {
+    "team": {
+     "id": 451814,
+     "logo": "https://highlightly.net/soccer/images/teams/451814.png",
+     "name": "Atlético Madrid"
+    },
+    "time": "89",
+    "type": "Substitution",
+    "assist": null,
+    "player": "Cristian Romero",
+    "playerId": 4955090,
+    "substituted": "Robin Le Normand",
+    "assistingPlayerId": 7615615
+   },
+   {
+    "team": {
+     "id": 451814,
+     "logo": "https://highlightly.net/soccer/images/teams/451814.png",
+     "name": "Atlético Madrid"
+    },
+    "time": "89",
+    "type": "Substitution",
+    "assist": null,
+    "player": "Lee Kang-In",
+    "playerId": 149401,
+    "substituted": "Morten Hjulmand",
+    "assistingPlayerId": 1241786
+   },
+   {
+    "team": {
+     "id": 461175,
+     "logo": "https://highlightly.net/soccer/images/teams/461175.png",
+     "name": "Real Madrid"
+    },
+    "time": "89",
+    "type": "Goal",
+    "assist": "Bernardo Silva",
+    "player": "Antonio Rüdiger",
+    "playerId": 368039,
+    "substituted": null,
+    "assistingPlayerId": 102550
+   }
+  ],
+  "predictions": {
+   "live": [
+    {
+     "type": "live",
+     "modelType": "three-way",
+     "description": "Real Madrid is most likely to win the game against Atlético Madrid.",
+     "generatedAt": "2026-09-20T14:20:48.345Z",
+     "probabilities": {
+      "away": "46.83%",
+      "draw": "25.38%",
+      "home": "27.79%"
+     }
+    },
+    {
+     "type": "live",
+     "modelType": "three-way",
+     "description": "Real Madrid is most likely to win the game against Atlético Madrid.",
+     "generatedAt": "2026-09-20T14:30:37.463Z",
+     "probabilities": {
+      "away": "47.93%",
+      "draw": "26.24%",
+      "home": "25.83%"
+     }
+    },
+    {
+     "type": "live",
+     "modelType": "three-way",
+     "description": "Real Madrid is most likely to win the game against Atlético Madrid.",
+     "generatedAt": "2026-09-20T14:40:38.808Z",
+     "probabilities": {
+      "away": "45.34%",
+      "draw": "27.92%",
+      "home": "26.75%"
+     }
+    },
+    {
+     "type": "live",
+     "modelType": "three-way",
+     "description": "Real Madrid is most likely to win the game against Atlético Madrid.",
+     "generatedAt": "2026-09-20T14:50:38.507Z",
+     "probabilities": {
+      "away": "40.87%",
+      "draw": "30.98%",
+      "home": "28.15%"
+     }
+    },
+    {
+     "type": "live",
+     "modelType": "three-way",
+     "description": "Real Madrid is most likely to win the game against Atlético Madrid.",
+     "generatedAt": "2026-09-20T15:10:15.786Z",
+     "probabilities": {
+      "away": "40.24%",
+      "draw": "34.82%",
+      "home": "24.93%"
+     }
+    },
+    {
+     "type": "live",
+     "modelType": "three-way",
+     "description": "The match will most likely result in a draw.",
+     "generatedAt": "2026-09-20T15:30:14.985Z",
+     "probabilities": {
+      "away": "33.44%",
+      "draw": "34.98%",
+      "home": "31.58%"
+     }
+    },
+    {
+     "type": "live",
+     "modelType": "three-way",
+     "description": "Atlético Madrid is most likely to win the game against Real Madrid.",
+     "generatedAt": "2026-09-20T15:40:30.767Z",
+     "probabilities": {
+      "away": "1.48%",
+      "draw": "5.40%",
+      "home": "93.12%"
+     }
+    },
+    {
+     "type": "live",
+     "modelType": "three-way",
+     "description": "Atlético Madrid is most likely to win the game against Real Madrid.",
+     "generatedAt": "2026-09-20T15:50:24.294Z",
+     "probabilities": {
+      "away": "1.07%",
+      "draw": "4.79%",
+      "home": "94.13%"
+     }
+    },
+    {
+     "type": "live",
+     "modelType": "three-way",
+     "description": "Atlético Madrid is most likely to win the game against Real Madrid.",
+     "generatedAt": "2026-09-20T16:00:28.348Z",
+     "probabilities": {
+      "away": "0.63%",
+      "draw": "3.56%",
+      "home": "95.81%"
+     }
+    },
+    {
+     "type": "live",
+     "modelType": "three-way",
+     "description": "Atlético Madrid is most likely to win the game against Real Madrid.",
+     "generatedAt": "2026-09-20T16:10:26.446Z",
+     "probabilities": {
+      "away": "0.63%",
+      "draw": "6.82%",
+      "home": "92.54%"
+     }
+    }
+   ],
+   "prematch": [
+    {
+     "type": "prematch",
+     "modelType": "three-way",
+     "description": "Real Madrid is most likely to win the game against Atlético Madrid.",
+     "generatedAt": "2026-09-17T20:00:08.339Z",
+     "probabilities": {
+      "away": "48.29%",
+      "draw": "24.78%",
+      "home": "26.92%"
+     }
+    },
+    {
+     "type": "prematch",
+     "modelType": "three-way",
+     "description": "Real Madrid is most likely to win the game against Atlético Madrid.",
+     "generatedAt": "2026-09-18T09:40:58.987Z",
+     "probabilities": {
+      "away": "48.19%",
+      "draw": "24.88%",
+      "home": "26.93%"
+     }
+    },
+    {
+     "type": "prematch",
+     "modelType": "three-way",
+     "description": "Real Madrid is most likely to win the game against Atlético Madrid.",
+     "generatedAt": "2026-09-18T15:23:26.276Z",
+     "probabilities": {
+      "away": "48.33%",
+      "draw": "24.87%",
+      "home": "26.80%"
+     }
+    },
+    {
+     "type": "prematch",
+     "modelType": "three-way",
+     "description": "Real Madrid is most likely to win the game against Atlético Madrid.",
+     "generatedAt": "2026-09-18T21:14:29.398Z",
+     "probabilities": {
+      "away": "48.13%",
+      "draw": "24.89%",
+      "home": "26.98%"
+     }
+    },
+    {
+     "type": "prematch",
+     "modelType": "three-way",
+     "description": "Real Madrid is most likely to win the game against Atlético Madrid.",
+     "generatedAt": "2026-09-19T11:00:06.432Z",
+     "probabilities": {
+      "away": "48.20%",
+      "draw": "24.89%",
+      "home": "26.92%"
+     }
+    },
+    {
+     "type": "prematch",
+     "modelType": "three-way",
+     "description": "Real Madrid is most likely to win the game against Atlético Madrid.",
+     "generatedAt": "2026-09-19T17:08:19.634Z",
+     "probabilities": {
+      "away": "48.11%",
+      "draw": "24.87%",
+      "home": "27.02%"
+     }
+    },
+    {
+     "type": "prematch",
+     "modelType": "three-way",
+     "description": "Real Madrid is most likely to win the game against Atlético Madrid.",
+     "generatedAt": "2026-09-19T22:13:41.196Z",
+     "probabilities": {
+      "away": "47.93%",
+      "draw": "24.79%",
+      "home": "27.29%"
+     }
+    },
+    {
+     "type": "prematch",
+     "modelType": "three-way",
+     "description": "Real Madrid is most likely to win the game against Atlético Madrid.",
+     "generatedAt": "2026-09-20T10:50:54.196Z",
+     "probabilities": {
+      "away": "46.55%",
+      "draw": "25.53%",
+      "home": "27.93%"
+     }
+    },
+    {
+     "type": "prematch",
+     "modelType": "three-way",
+     "description": "Real Madrid is most likely to win the game against Atlético Madrid.",
+     "generatedAt": "2026-09-20T16:01:53.146Z",
+     "probabilities": {
+      "away": "47.75%",
+      "draw": "25.18%",
+      "home": "27.07%"
+     }
+    },
+    {
+     "type": "prematch",
+     "modelType": "three-way",
+     "description": "Real Madrid is most likely to win the game against Atlético Madrid.",
+     "generatedAt": "2026-09-20T21:08:37.695Z",
+     "probabilities": {
+      "away": "47.75%",
+      "draw": "25.18%",
+      "home": "27.07%"
+     }
+    }
+   ]
+  },
+  "statistics": [
+   {
+    "team": {
+     "id": 451814,
+     "logo": "https://highlightly.net/soccer/images/teams/451814.png",
+     "name": "Atlético Madrid"
+    },
+    "statistics": [
+     {
+      "value": 2.35,
+      "displayName": "Expected Goals"
+     },
+     {
+      "value": 4,
+      "displayName": "Big Chances Created"
+     },
+     {
+      "value": 6,
+      "displayName": "Free Kicks"
+     },
+     {
+      "value": 1.45,
+      "displayName": "Expected Assists"
+     },
+     {
+      "value": 5,
+      "displayName": "Successful Crosses"
+     },
+     {
+      "value": 16,
+      "displayName": "Crosses"
+     },
+     {
+      "value": 249,
+      "displayName": "Passes Own Half"
+     },
+     {
+      "value": 385,
+      "displayName": "Passes Opposition Half"
+     },
+     {
+      "value": 30,
+      "displayName": "Successful Long Passes"
+     },
+     {
+      "value": 48,
+      "displayName": "Long Passes"
+     },
+     {
+      "value": 15,
+      "displayName": "Throw-Ins"
+     },
+     {
+      "value": 13,
+      "displayName": "Key Passes"
+     },
+     {
+      "value": 166,
+      "displayName": "Passes Into Final Third"
+     },
+     {
+      "value": 123,
+      "displayName": "Backward Passes"
+     },
+     {
+      "value": 5,
+      "displayName": "Goal Kicks"
+     },
+     {
+      "value": 9,
+      "displayName": "Interceptions"
+     },
+     {
+      "value": 11,
+      "displayName": "Successful Tackles"
+     },
+     {
+      "value": 15,
+      "displayName": "Tackles"
+     },
+     {
+      "value": 15,
+      "displayName": "Clearances"
+     },
+     {
+      "value": 2,
+      "displayName": "Successful Aerial Duels"
+     },
+     {
+      "value": 12,
+      "displayName": "Aerial Duels"
+     },
+     {
+      "value": 7,
+      "displayName": "Successful Dribbles"
+     },
+     {
+      "value": 13,
+      "displayName": "Dribbles"
+     },
+     {
+      "value": 0.5,
+      "displayName": "Shots accuracy"
+     },
+     {
+      "value": 62,
+      "displayName": "Failed passes"
+     },
+     {
+      "value": 0.61,
+      "displayName": "Possession"
+     },
+     {
+      "value": 9,
+      "displayName": "Shots on target"
+     },
+     {
+      "value": 3,
+      "displayName": "Corners"
+     },
+     {
+      "value": 2,
+      "displayName": "Offsides"
+     },
+     {
+      "value": 556,
+      "displayName": "Successful passes"
+     },
+     {
+      "value": 0,
+      "displayName": "Red cards"
+     },
+     {
+      "value": 4,
+      "displayName": "Shots off target"
+     },
+     {
+      "value": 5,
+      "displayName": "Blocked shots"
+     },
+     {
+      "value": 13,
+      "displayName": "Shots within penalty area"
+     },
+     {
+      "value": 618,
+      "displayName": "Total passes"
+     },
+     {
+      "value": 2,
+      "displayName": "Goalkeeper saves"
+     },
+     {
+      "value": 19,
+      "displayName": "Fouls"
+     },
+     {
+      "value": 2,
+      "displayName": "Yellow cards"
+     },
+     {
+      "displayName": "Shots outside penalty area",
+      "value": 5
+     }
+    ]
+   },
+   {
+    "team": {
+     "id": 461175,
+     "logo": "https://highlightly.net/soccer/images/teams/461175.png",
+     "name": "Real Madrid"
+    },
+    "statistics": [
+     {
+      "value": 0.3,
+      "displayName": "Expected Goals"
+     },
+     {
+      "value": 1,
+      "displayName": "Big Chances Created"
+     },
+     {
+      "value": 18,
+      "displayName": "Free Kicks"
+     },
+     {
+      "value": 0.33,
+      "displayName": "Expected Assists"
+     },
+     {
+      "value": 3,
+      "displayName": "Successful Crosses"
+     },
+     {
+      "value": 14,
+      "displayName": "Crosses"
+     },
+     {
+      "value": 198,
+      "displayName": "Passes Own Half"
+     },
+     {
+      "value": 209,
+      "displayName": "Passes Opposition Half"
+     },
+     {
+      "value": 27,
+      "displayName": "Successful Long Passes"
+     },
+     {
+      "value": 43,
+      "displayName": "Long Passes"
+     },
+     {
+      "value": 19,
+      "displayName": "Throw-Ins"
+     },
+     {
+      "value": 6,
+      "displayName": "Key Passes"
+     },
+     {
+      "value": 66,
+      "displayName": "Passes Into Final Third"
+     },
+     {
+      "value": 61,
+      "displayName": "Backward Passes"
+     },
+     {
+      "value": 4,
+      "displayName": "Goal Kicks"
+     },
+     {
+      "value": 6,
+      "displayName": "Interceptions"
+     },
+     {
+      "value": 13,
+      "displayName": "Successful Tackles"
+     },
+     {
+      "value": 20,
+      "displayName": "Tackles"
+     },
+     {
+      "value": 20,
+      "displayName": "Clearances"
+     },
+     {
+      "value": 10,
+      "displayName": "Successful Aerial Duels"
+     },
+     {
+      "value": 12,
+      "displayName": "Aerial Duels"
+     },
+     {
+      "value": 14,
+      "displayName": "Successful Dribbles"
+     },
+     {
+      "value": 20,
+      "displayName": "Dribbles"
+     },
+     {
+      "value": 0.38,
+      "displayName": "Shots accuracy"
+     },
+     {
+      "value": 56,
+      "displayName": "Failed passes"
+     },
+     {
+      "value": 0.39,
+      "displayName": "Possession"
+     },
+     {
+      "value": 3,
+      "displayName": "Shots on target"
+     },
+     {
+      "value": 1,
+      "displayName": "Corners"
+     },
+     {
+      "value": 2,
+      "displayName": "Offsides"
+     },
+     {
+      "value": 337,
+      "displayName": "Successful passes"
+     },
+     {
+      "value": 1,
+      "displayName": "Red cards"
+     },
+     {
+      "value": 4,
+      "displayName": "Shots off target"
+     },
+     {
+      "value": 1,
+      "displayName": "Blocked shots"
+     },
+     {
+      "value": 3,
+      "displayName": "Shots within penalty area"
+     },
+     {
+      "value": 393,
+      "displayName": "Total passes"
+     },
+     {
+      "value": 5,
+      "displayName": "Goalkeeper saves"
+     },
+     {
+      "value": 6,
+      "displayName": "Fouls"
+     },
+     {
+      "value": 2,
+      "displayName": "Yellow cards"
+     },
+     {
+      "displayName": "Shots outside penalty area",
+      "value": 5
+     }
+    ]
+   }
+  ],
+  "id": 1336406078,
+  "round": "Regular Season - 7",
+  "date": "2026-09-20T14:15:00.000Z",
+  "country": {
+   "code": "ES",
+   "name": "Spain",
+   "logo": "https://highlightly.net/soccer/images/countries/ES.svg"
+  },
+  "state": {
+   "clock": 90,
+   "score": {
+    "current": "2 - 1",
+    "penalties": null
+   },
+   "description": "Finished"
+  },
+  "awayTeam": {
+   "id": 461175,
+   "logo": "https://highlightly.net/soccer/images/teams/461175.png",
+   "name": "Real Madrid",
+   "topPlayers": [
+    {
+     "name": "Yan Diomande",
+     "position": "Attacker",
+     "statistics": [
+      {
+       "name": "Expected Goals",
+       "value": 0.07
+      },
+      {
+       "name": "Shots On Target",
+       "value": 1
+      },
+      {
+       "name": "Minutes",
+       "value": 37
+      }
+     ]
+    },
+    {
+     "name": "Bernardo Silva",
+     "position": "Midfielder",
+     "statistics": [
+      {
+       "name": "Expected Goals",
+       "value": 0
+      },
+      {
+       "name": "Shots On Target",
+       "value": 0
+      },
+      {
+       "name": "Minutes",
+       "value": 9
+      }
+     ]
+    },
+    {
+     "name": "Antonio Rüdiger",
+     "position": "Defender",
+     "statistics": [
+      {
+       "name": "Interceptions",
+       "value": 0
+      },
+      {
+       "name": "Tackles",
+       "value": 0
+      },
+      {
+       "name": "Minutes",
+       "value": 37
+      }
+     ]
+    }
+   ],
+   "shots": [
+    {
+     "time": "7'",
+     "outcome": "Missed",
+     "goalTarget": "Close Right",
+     "playerName": "Aurélien Tchouaméni"
+    },
+    {
+     "time": "21'",
+     "outcome": "Missed",
+     "goalTarget": null,
+     "playerName": "Aurélien Tchouaméni"
+    },
+    {
+     "time": "23'",
+     "outcome": "Missed",
+     "goalTarget": null,
+     "playerName": "Vinicius Júnior"
+    },
+    {
+     "time": "26'",
+     "outcome": "Missed",
+     "goalTarget": null,
+     "playerName": "Vinicius Júnior"
+    },
+    {
+     "time": "40'",
+     "outcome": "Saved",
+     "goalTarget": "High Centre",
+     "playerName": "Arda Güler"
+    },
+    {
+     "time": "40'",
+     "outcome": "Blocked",
+     "goalTarget": "Low Left",
+     "playerName": "Kylian Mbappe"
+    },
+    {
+     "time": "77'",
+     "outcome": "Saved",
+     "goalTarget": "Low Centre",
+     "playerName": "Yan Diomande"
+    },
+    {
+     "time": "89'",
+     "outcome": "Goal",
+     "goalTarget": "Low Left",
+     "playerName": "Antonio Rüdiger"
+    }
+   ]
+  },
+  "homeTeam": {
+   "id": 451814,
+   "logo": "https://highlightly.net/soccer/images/teams/451814.png",
+   "name": "Atlético Madrid",
+   "topPlayers": [
+    {
+     "name": "Jonathan David",
+     "position": "Attacker",
+     "statistics": [
+      {
+       "name": "Expected Goals",
+       "value": 0.59
+      },
+      {
+       "name": "Shots On Target",
+       "value": 1
+      },
+      {
+       "name": "Minutes",
+       "value": 61
+      }
+     ]
+    },
+    {
+     "name": "Giuliano Simeone",
+     "position": "Midfielder",
+     "statistics": [
+      {
+       "name": "Expected Goals",
+       "value": 0.04
+      },
+      {
+       "name": "Shots On Target",
+       "value": 0
+      },
+      {
+       "name": "Minutes",
+       "value": 90
+      }
+     ]
+    },
+    {
+     "name": "David Hancko",
+     "position": "Defender",
+     "statistics": [
+      {
+       "name": "Interceptions",
+       "value": 0
+      },
+      {
+       "name": "Tackles",
+       "value": 0
+      },
+      {
+       "name": "Minutes",
+       "value": 90
+      }
+     ]
+    }
+   ],
+   "shots": [
+    {
+     "time": "15'",
+     "outcome": "Missed",
+     "goalTarget": null,
+     "playerName": "Jonathan David"
+    },
+    {
+     "time": "22'",
+     "outcome": "Missed",
+     "goalTarget": null,
+     "playerName": "Giuliano Simeone"
+    },
+    {
+     "time": "32'",
+     "outcome": "Blocked",
+     "goalTarget": "Low Centre",
+     "playerName": "David Hancko"
+    },
+    {
+     "time": "33'",
+     "outcome": "Blocked",
+     "goalTarget": "Low Left",
+     "playerName": "Lee Kang-in"
+    },
+    {
+     "time": "47'",
+     "outcome": "Saved",
+     "goalTarget": "Low Right",
+     "playerName": "Álex Baena"
+    },
+    {
+     "time": "53'",
+     "outcome": "Goal",
+     "goalTarget": "Low Left",
+     "playerName": "Alex Grimaldo"
+    },
+    {
+     "time": "56'",
+     "outcome": "Saved",
+     "goalTarget": "High Centre",
+     "playerName": "Lee Kang-in"
+    },
+    {
+     "time": "59'",
+     "outcome": "Goal",
+     "goalTarget": "High Centre",
+     "playerName": "Jonathan David"
+    },
+    {
+     "time": "65'",
+     "outcome": "Missed",
+     "goalTarget": null,
+     "playerName": "Johnny Cardoso"
+    },
+    {
+     "time": "65'",
+     "outcome": "Blocked",
+     "goalTarget": "Low Centre",
+     "playerName": "Alex Grimaldo"
+    },
+    {
+     "time": "66'",
+     "outcome": "Saved",
+     "goalTarget": "High Left",
+     "playerName": "Cristian Romero"
+    },
+    {
+     "time": "66'",
+     "outcome": "Blocked",
+     "goalTarget": "Low Right",
+     "playerName": "Julian Alvarez"
+    },
+    {
+     "time": "66'",
+     "outcome": "Blocked",
+     "goalTarget": "Low Left",
+     "playerName": "David Hancko"
+    },
+    {
+     "time": "77'",
+     "outcome": "Saved",
+     "goalTarget": "Low Centre",
+     "playerName": "Julian Alvarez"
+    },
+    {
+     "time": "84'",
+     "outcome": "Blocked",
+     "goalTarget": "Low Left",
+     "playerName": "David Hancko"
+    },
+    {
+     "time": "84'",
+     "outcome": "Blocked",
+     "goalTarget": "Low Left",
+     "playerName": "David Hancko"
+    },
+    {
+     "time": "90'",
+     "outcome": "Missed",
+     "goalTarget": "Close Right",
+     "playerName": "Julian Alvarez"
+    },
+    {
+     "time": "90 + 2'",
+     "outcome": "Saved",
+     "goalTarget": "Low Left",
+     "playerName": "Koke"
+    }
+   ]
+  },
+  "league": {
+   "id": 119924,
+   "logo": "https://highlightly.net/soccer/images/leagues/119924.png",
+   "name": "La Liga",
+   "season": 2026
+  },
+  "news": [
+   {
+    "url": "https://www.dailymail.com/sport/football/article-16147441/Jude-Bellingham-Madrid-derby.html",
+    "image": "https://i.dailymail.com/1s/2026/09/21/07/111370693-0-image-m-19_1789971647615.jpg",
+    "title": "Jude Bellingham launches Madrid derby tirade: Real star yells 'f***ing p****' at opponent minutes after clash with former Spurs star - and hunts down referee to make his feelings known at full-time",
+    "datePublished": "2026-09-21T07:16:56Z"
+   },
+   {
+    "url": "https://www.skysports.com/watch/video/13590255/jose-mourinho-criticises-refereeing-vs-atletico-with-receipts",
+    "image": "https://e2.365dm.com/26/09/1920x1080/skysports-football-jose_7357466.jpg?20260920210018",
+    "title": "'Two clear red cards' - Mourinho criticises refereeing vs Atletico with printouts!",
+    "datePublished": "2026-09-20T20:42:00Z"
+   },
+   {
+    "url": "https://www.skysports.com/football/news/11835/13590219/jose-mourinho-real-madrid-boss-holds-up-pictures-of-referee-errors-in-press-conference-after-defeat-to-atletico-madrid",
+    "image": "https://e1.365dm.com/26/09/1920x1080/skysports-jose-mourinho-real-madrid_7357365.jpg?20260920190141",
+    "title": "Furious Mourinho holds up pictures of ref 'errors' after Madrid derby defeat",
+    "datePublished": "2026-09-20T18:54:00Z"
+   },
+   {
+    "url": "https://www.dailymail.com/sport/football/article-16146425/Jose-Mourinho-RAGES-poor-Madrid-derby-referee.html",
+    "image": "https://i.dailymail.com/1s/2026/09/20/18/111361257-0-image-a-28_1789924654682.jpg",
+    "title": "Furious Jose Mourinho brings PRINTOUTS of referee 'errors' to tense Madrid derby press conference - and blasts 'poor' officials who 'couldn't handle the pressure' after his side's 2-1 defeat",
+    "datePublished": "2026-09-20T17:40:46Z"
+   },
+   {
+    "url": "https://www.skysports.com/watch/video/13590185/atletico-madrid-2-1-real-madrid-la-liga-highlights",
+    "image": "https://e1.365dm.com/26/09/1920x1080/skysports-football-la-liga_7357279.jpg?20260920175433",
+    "title": "Atletico beat 10-man Real in thrilling LaLiga derby!",
+    "datePublished": "2026-09-20T17:08:11Z"
+   },
+   {
+    "url": "https://www.goal.com/en/news/real-madrid-dealt-a-harsh-blow-in-the-derby/bltaab9e172eb9f6fde",
+    "image": "https://assets.goal.com/images/v3/getty-2296243375/crop/MM5DIMZXGI5DENBVHE5G433XMU5DAORSGEYQ====/GettyImages-2296243375.jpg",
+    "title": "Real Madrid suffer a harsh blow in the derby",
+    "datePublished": "2026-09-20T16:08:54Z"
+   },
+   {
+    "url": "https://www.goal.com/en/news/refereeing-expert-a-refereeing-scandal-over-romero-not-being-sent-off/blt8562f76d8628dbf3",
+    "image": "https://assets.goal.com/images/v3/getty-2296239195/crop/MM5DGOJYGQ5DEMRUGE5G433XMU5DAORRHA4A====/GettyImages-2296239195.jpg",
+    "title": "Refereeing expert: a refereeing scandal over Romero not being sent off",
+    "datePublished": "2026-09-20T15:31:47Z"
+   },
+   {
+    "url": "https://www.fourfourtwo.com/competition/watch-atletico-madrid-vs-real-madrid-la-liga-free",
+    "image": "https://cdn.mos.cms.futurecdn.net/GRoLcaP9TYNRgSc8DrW596-1000-80.png",
+    "title": "How to watch Atletico Madrid vs Real Madrid for FREE: Live stream details and TV channels for Madrid derby in La Liga",
+    "datePublished": "2026-09-20T11:00:00Z"
+   }
+  ]
+ }
+]

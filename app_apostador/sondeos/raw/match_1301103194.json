@@ -1,0 +1,1407 @@
+[
+ {
+  "venue": {
+   "city": "Prague",
+   "name": "Fortuna Arena",
+   "country": "Czechia",
+   "capacity": "21000"
+  },
+  "referee": {
+   "name": "Meler, Halil Umut",
+   "nationality": "Turkiye"
+  },
+  "forecast": {
+   "status": "clear night",
+   "temperature": "16.31°C"
+  },
+  "events": [
+   {
+    "team": {
+     "id": 656054,
+     "logo": "https://highlightly.net/soccer/images/teams/656054.png",
+     "name": "Czech Republic"
+    },
+    "time": "25",
+    "type": "Red Card",
+    "assist": null,
+    "player": "Pavel Šulc",
+    "playerId": 10688461,
+    "substituted": null,
+    "assistingPlayerId": null
+   },
+   {
+    "team": {
+     "id": 9294,
+     "logo": "https://highlightly.net/soccer/images/teams/9294.png",
+     "name": "England"
+    },
+    "time": "35",
+    "type": "Yellow Card",
+    "assist": null,
+    "player": "Myles Lewis-Skelly",
+    "playerId": 50432599,
+    "substituted": null,
+    "assistingPlayerId": null
+   },
+   {
+    "team": {
+     "id": 656054,
+     "logo": "https://highlightly.net/soccer/images/teams/656054.png",
+     "name": "Czech Republic"
+    },
+    "time": "45",
+    "type": "Substitution",
+    "assist": null,
+    "player": "Adam Karabec",
+    "playerId": 32179385,
+    "substituted": "Ondrej Lingr",
+    "assistingPlayerId": 10659642
+   },
+   {
+    "team": {
+     "id": 9294,
+     "logo": "https://highlightly.net/soccer/images/teams/9294.png",
+     "name": "England"
+    },
+    "time": "45",
+    "type": "Substitution",
+    "assist": null,
+    "player": "Myles Lewis-Skelly",
+    "playerId": 50432599,
+    "substituted": "Eberechi Eze",
+    "assistingPlayerId": 3153500
+   },
+   {
+    "team": {
+     "id": 9294,
+     "logo": "https://highlightly.net/soccer/images/teams/9294.png",
+     "name": "England"
+    },
+    "time": "47",
+    "type": "Goal",
+    "assist": "Trent Alexander-Arnold",
+    "player": "Anthony Gordon",
+    "playerId": 22344861,
+    "substituted": null,
+    "assistingPlayerId": 45717
+   },
+   {
+    "team": {
+     "id": 656054,
+     "logo": "https://highlightly.net/soccer/images/teams/656054.png",
+     "name": "Czech Republic"
+    },
+    "time": "56",
+    "type": "Substitution",
+    "assist": null,
+    "player": "Michal Sadílek",
+    "playerId": 38955,
+    "substituted": "Alex Král",
+    "assistingPlayerId": 198828
+   },
+   {
+    "team": {
+     "id": 656054,
+     "logo": "https://highlightly.net/soccer/images/teams/656054.png",
+     "name": "Czech Republic"
+    },
+    "time": "57",
+    "type": "Substitution",
+    "assist": null,
+    "player": "Matej Radosta",
+    "playerId": 10678318,
+    "substituted": "Lukas Ambros",
+    "assistingPlayerId": 52750355
+   },
+   {
+    "team": {
+     "id": 9294,
+     "logo": "https://highlightly.net/soccer/images/teams/9294.png",
+     "name": "England"
+    },
+    "time": "69",
+    "type": "Goal",
+    "assist": null,
+    "player": "Harry Kane",
+    "playerId": 29778,
+    "substituted": null,
+    "assistingPlayerId": null
+   },
+   {
+    "team": {
+     "id": 9294,
+     "logo": "https://highlightly.net/soccer/images/teams/9294.png",
+     "name": "England"
+    },
+    "time": "70",
+    "type": "Substitution",
+    "assist": null,
+    "player": "Elliot Anderson",
+    "playerId": 22364342,
+    "substituted": "Alex Scott",
+    "assistingPlayerId": 49081487
+   },
+   {
+    "team": {
+     "id": 9294,
+     "logo": "https://highlightly.net/soccer/images/teams/9294.png",
+     "name": "England"
+    },
+    "time": "71",
+    "type": "Substitution",
+    "assist": null,
+    "player": "Harry Kane",
+    "playerId": 29778,
+    "substituted": "Jude Bellingham",
+    "assistingPlayerId": 20884752
+   },
+   {
+    "team": {
+     "id": 9294,
+     "logo": "https://highlightly.net/soccer/images/teams/9294.png",
+     "name": "England"
+    },
+    "time": "71",
+    "type": "Substitution",
+    "assist": null,
+    "player": "Bukayo Saka",
+    "playerId": 235214,
+    "substituted": "Rio Ngumoha",
+    "assistingPlayerId": 72882439
+   },
+   {
+    "team": {
+     "id": 656054,
+     "logo": "https://highlightly.net/soccer/images/teams/656054.png",
+     "name": "Czech Republic"
+    },
+    "time": "80",
+    "type": "Substitution",
+    "assist": null,
+    "player": "Adam Hložek",
+    "playerId": 10629213,
+    "substituted": "Daniel Vasulin",
+    "assistingPlayerId": 10732253
+   },
+   {
+    "team": {
+     "id": 656054,
+     "logo": "https://highlightly.net/soccer/images/teams/656054.png",
+     "name": "Czech Republic"
+    },
+    "time": "80",
+    "type": "Substitution",
+    "assist": null,
+    "player": "Lukáš Červ",
+    "playerId": 26113388,
+    "substituted": "Roman Macek",
+    "assistingPlayerId": 7793842
+   },
+   {
+    "team": {
+     "id": 9294,
+     "logo": "https://highlightly.net/soccer/images/teams/9294.png",
+     "name": "England"
+    },
+    "time": "81",
+    "type": "Substitution",
+    "assist": null,
+    "player": "Anthony Gordon",
+    "playerId": 22344861,
+    "substituted": "Morgan Gibbs-White",
+    "assistingPlayerId": 3018260
+   }
+  ],
+  "predictions": {
+   "live": [
+    {
+     "type": "live",
+     "modelType": "three-way",
+     "description": "England is most likely to win the game against Czech Republic.",
+     "generatedAt": "2026-09-29T18:50:50.989Z",
+     "probabilities": {
+      "away": "71.71%",
+      "draw": "17.86%",
+      "home": "10.43%"
+     }
+    },
+    {
+     "type": "live",
+     "modelType": "three-way",
+     "description": "England is most likely to win the game against Czech Republic.",
+     "generatedAt": "2026-09-29T19:00:45.713Z",
+     "probabilities": {
+      "away": "67.49%",
+      "draw": "20.20%",
+      "home": "12.30%"
+     }
+    },
+    {
+     "type": "live",
+     "modelType": "three-way",
+     "description": "England is most likely to win the game against Czech Republic.",
+     "generatedAt": "2026-09-29T19:10:50.157Z",
+     "probabilities": {
+      "away": "68.57%",
+      "draw": "20.55%",
+      "home": "10.88%"
+     }
+    },
+    {
+     "type": "live",
+     "modelType": "three-way",
+     "description": "England is most likely to win the game against Czech Republic.",
+     "generatedAt": "2026-09-29T19:20:44.359Z",
+     "probabilities": {
+      "away": "81.05%",
+      "draw": "14.55%",
+      "home": "4.40%"
+     }
+    },
+    {
+     "type": "live",
+     "modelType": "three-way",
+     "description": "England is most likely to win the game against Czech Republic.",
+     "generatedAt": "2026-09-29T19:30:50.729Z",
+     "probabilities": {
+      "away": "76.56%",
+      "draw": "18.82%",
+      "home": "4.62%"
+     }
+    },
+    {
+     "type": "live",
+     "modelType": "three-way",
+     "description": "England is most likely to win the game against Czech Republic.",
+     "generatedAt": "2026-09-29T19:40:44.669Z",
+     "probabilities": {
+      "away": "75.19%",
+      "draw": "20.34%",
+      "home": "4.47%"
+     }
+    },
+    {
+     "type": "live",
+     "modelType": "three-way",
+     "description": "England is most likely to win the game against Czech Republic.",
+     "generatedAt": "2026-09-29T19:50:59.114Z",
+     "probabilities": {
+      "away": "87.10%",
+      "draw": "10.62%",
+      "home": "2.27%"
+     }
+    },
+    {
+     "type": "live",
+     "modelType": "three-way",
+     "description": "England is most likely to win the game against Czech Republic.",
+     "generatedAt": "2026-09-29T20:00:46.574Z",
+     "probabilities": {
+      "away": "91.63%",
+      "draw": "7.11%",
+      "home": "1.26%"
+     }
+    },
+    {
+     "type": "live",
+     "modelType": "three-way",
+     "description": "England is most likely to win the game against Czech Republic.",
+     "generatedAt": "2026-09-29T20:11:02.393Z",
+     "probabilities": {
+      "away": "91.69%",
+      "draw": "7.30%",
+      "home": "1.01%"
+     }
+    },
+    {
+     "type": "live",
+     "modelType": "three-way",
+     "description": "England is most likely to win the game against Czech Republic.",
+     "generatedAt": "2026-09-29T20:20:47.322Z",
+     "probabilities": {
+      "away": "93.56%",
+      "draw": "5.76%",
+      "home": "0.69%"
+     }
+    },
+    {
+     "type": "live",
+     "modelType": "three-way",
+     "description": "England is most likely to win the game against Czech Republic.",
+     "generatedAt": "2026-09-29T20:31:00.819Z",
+     "probabilities": {
+      "away": "93.57%",
+      "draw": "5.76%",
+      "home": "0.67%"
+     }
+    }
+   ],
+   "prematch": [
+    {
+     "type": "prematch",
+     "modelType": "three-way",
+     "description": "England is most likely to win the game against Czech Republic.",
+     "generatedAt": "2026-09-22T09:21:39.948Z",
+     "probabilities": {
+      "away": "63.26%",
+      "draw": "21.40%",
+      "home": "15.34%"
+     }
+    },
+    {
+     "type": "prematch",
+     "modelType": "three-way",
+     "description": "England is most likely to win the game against Czech Republic.",
+     "generatedAt": "2026-09-22T13:14:52.445Z",
+     "probabilities": {
+      "away": "63.19%",
+      "draw": "21.41%",
+      "home": "15.39%"
+     }
+    },
+    {
+     "type": "prematch",
+     "modelType": "three-way",
+     "description": "England is most likely to win the game against Czech Republic.",
+     "generatedAt": "2026-09-22T17:27:45.400Z",
+     "probabilities": {
+      "away": "63.08%",
+      "draw": "21.43%",
+      "home": "15.49%"
+     }
+    },
+    {
+     "type": "prematch",
+     "modelType": "three-way",
+     "description": "England is most likely to win the game against Czech Republic.",
+     "generatedAt": "2026-09-22T21:47:58.225Z",
+     "probabilities": {
+      "away": "63.32%",
+      "draw": "21.48%",
+      "home": "15.20%"
+     }
+    },
+    {
+     "type": "prematch",
+     "modelType": "three-way",
+     "description": "England is most likely to win the game against Czech Republic.",
+     "generatedAt": "2026-09-23T10:35:33.270Z",
+     "probabilities": {
+      "away": "64.04%",
+      "draw": "21.19%",
+      "home": "14.77%"
+     }
+    },
+    {
+     "type": "prematch",
+     "modelType": "three-way",
+     "description": "England is most likely to win the game against Czech Republic.",
+     "generatedAt": "2026-09-23T18:09:06.966Z",
+     "probabilities": {
+      "away": "64.27%",
+      "draw": "21.15%",
+      "home": "14.58%"
+     }
+    },
+    {
+     "type": "prematch",
+     "modelType": "three-way",
+     "description": "England is most likely to win the game against Czech Republic.",
+     "generatedAt": "2026-09-23T22:14:55.223Z",
+     "probabilities": {
+      "away": "64.27%",
+      "draw": "21.13%",
+      "home": "14.60%"
+     }
+    },
+    {
+     "type": "prematch",
+     "modelType": "three-way",
+     "description": "England is most likely to win the game against Czech Republic.",
+     "generatedAt": "2026-09-24T09:06:38.982Z",
+     "probabilities": {
+      "away": "64.37%",
+      "draw": "21.11%",
+      "home": "14.52%"
+     }
+    },
+    {
+     "type": "prematch",
+     "modelType": "three-way",
+     "description": "England is most likely to win the game against Czech Republic.",
+     "generatedAt": "2026-09-24T13:26:44.085Z",
+     "probabilities": {
+      "away": "64.37%",
+      "draw": "21.11%",
+      "home": "14.52%"
+     }
+    },
+    {
+     "type": "prematch",
+     "modelType": "three-way",
+     "description": "England is most likely to win the game against Czech Republic.",
+     "generatedAt": "2026-09-24T17:42:50.770Z",
+     "probabilities": {
+      "away": "64.41%",
+      "draw": "21.09%",
+      "home": "14.51%"
+     }
+    },
+    {
+     "type": "prematch",
+     "modelType": "three-way",
+     "description": "England is most likely to win the game against Czech Republic.",
+     "generatedAt": "2026-09-25T12:42:20.059Z",
+     "probabilities": {
+      "away": "65.02%",
+      "draw": "20.89%",
+      "home": "14.08%"
+     }
+    },
+    {
+     "type": "prematch",
+     "modelType": "three-way",
+     "description": "England is most likely to win the game against Czech Republic.",
+     "generatedAt": "2026-09-25T17:35:23.113Z",
+     "probabilities": {
+      "away": "65.13%",
+      "draw": "20.89%",
+      "home": "13.97%"
+     }
+    },
+    {
+     "type": "prematch",
+     "modelType": "three-way",
+     "description": "England is most likely to win the game against Czech Republic.",
+     "generatedAt": "2026-09-26T12:43:17.123Z",
+     "probabilities": {
+      "away": "65.57%",
+      "draw": "20.62%",
+      "home": "13.80%"
+     }
+    },
+    {
+     "type": "prematch",
+     "modelType": "three-way",
+     "description": "England is most likely to win the game against Czech Republic.",
+     "generatedAt": "2026-09-27T15:49:16.269Z",
+     "probabilities": {
+      "away": "66.78%",
+      "draw": "20.00%",
+      "home": "13.22%"
+     }
+    },
+    {
+     "type": "prematch",
+     "modelType": "three-way",
+     "description": "England is most likely to win the game against Czech Republic.",
+     "generatedAt": "2026-09-27T19:03:25.457Z",
+     "probabilities": {
+      "away": "67.00%",
+      "draw": "19.86%",
+      "home": "13.14%"
+     }
+    },
+    {
+     "type": "prematch",
+     "modelType": "three-way",
+     "description": "England is most likely to win the game against Czech Republic.",
+     "generatedAt": "2026-09-28T08:11:46.001Z",
+     "probabilities": {
+      "away": "69.18%",
+      "draw": "19.07%",
+      "home": "11.75%"
+     }
+    },
+    {
+     "type": "prematch",
+     "modelType": "three-way",
+     "description": "England is most likely to win the game against Czech Republic.",
+     "generatedAt": "2026-09-28T10:48:30.703Z",
+     "probabilities": {
+      "away": "69.41%",
+      "draw": "18.93%",
+      "home": "11.65%"
+     }
+    },
+    {
+     "type": "prematch",
+     "modelType": "three-way",
+     "description": "England is most likely to win the game against Czech Republic.",
+     "generatedAt": "2026-09-28T13:24:56.831Z",
+     "probabilities": {
+      "away": "69.26%",
+      "draw": "19.03%",
+      "home": "11.70%"
+     }
+    },
+    {
+     "type": "prematch",
+     "modelType": "three-way",
+     "description": "England is most likely to win the game against Czech Republic.",
+     "generatedAt": "2026-09-28T16:05:57.115Z",
+     "probabilities": {
+      "away": "69.73%",
+      "draw": "18.89%",
+      "home": "11.37%"
+     }
+    },
+    {
+     "type": "prematch",
+     "modelType": "three-way",
+     "description": "England is most likely to win the game against Czech Republic.",
+     "generatedAt": "2026-09-28T18:50:16.324Z",
+     "probabilities": {
+      "away": "70.10%",
+      "draw": "18.69%",
+      "home": "11.21%"
+     }
+    },
+    {
+     "type": "prematch",
+     "modelType": "three-way",
+     "description": "England is most likely to win the game against Czech Republic.",
+     "generatedAt": "2026-09-28T21:39:03.219Z",
+     "probabilities": {
+      "away": "70.24%",
+      "draw": "18.62%",
+      "home": "11.14%"
+     }
+    },
+    {
+     "type": "prematch",
+     "modelType": "three-way",
+     "description": "England is most likely to win the game against Czech Republic.",
+     "generatedAt": "2026-09-29T08:17:12.043Z",
+     "probabilities": {
+      "away": "71.16%",
+      "draw": "18.12%",
+      "home": "10.72%"
+     }
+    },
+    {
+     "type": "prematch",
+     "modelType": "three-way",
+     "description": "England is most likely to win the game against Czech Republic.",
+     "generatedAt": "2026-09-29T11:00:56.546Z",
+     "probabilities": {
+      "away": "71.54%",
+      "draw": "17.88%",
+      "home": "10.58%"
+     }
+    },
+    {
+     "type": "prematch",
+     "modelType": "three-way",
+     "description": "England is most likely to win the game against Czech Republic.",
+     "generatedAt": "2026-09-29T13:54:40.286Z",
+     "probabilities": {
+      "away": "72.38%",
+      "draw": "17.38%",
+      "home": "10.24%"
+     }
+    },
+    {
+     "type": "prematch",
+     "modelType": "three-way",
+     "description": "England is most likely to win the game against Czech Republic.",
+     "generatedAt": "2026-09-29T16:45:31.360Z",
+     "probabilities": {
+      "away": "73.82%",
+      "draw": "16.50%",
+      "home": "9.68%"
+     }
+    },
+    {
+     "type": "prematch",
+     "modelType": "three-way",
+     "description": "England is most likely to win the game against Czech Republic.",
+     "generatedAt": "2026-09-29T19:37:37.252Z",
+     "probabilities": {
+      "away": "72.71%",
+      "draw": "17.09%",
+      "home": "10.20%"
+     }
+    }
+   ]
+  },
+  "statistics": [
+   {
+    "team": {
+     "id": 656054,
+     "logo": "https://highlightly.net/soccer/images/teams/656054.png",
+     "name": "Czech Republic"
+    },
+    "statistics": [
+     {
+      "value": 0.32,
+      "displayName": "Expected Goals"
+     },
+     {
+      "value": 1,
+      "displayName": "Big Chances Created"
+     },
+     {
+      "value": 47,
+      "displayName": "Attacks"
+     },
+     {
+      "value": 11,
+      "displayName": "Free Kicks"
+     },
+     {
+      "value": 0.38,
+      "displayName": "Expected Assists"
+     },
+     {
+      "value": 0,
+      "displayName": "Successful Crosses"
+     },
+     {
+      "value": 6,
+      "displayName": "Crosses"
+     },
+     {
+      "value": 199,
+      "displayName": "Passes Own Half"
+     },
+     {
+      "value": 150,
+      "displayName": "Passes Opposition Half"
+     },
+     {
+      "value": 19,
+      "displayName": "Successful Long Passes"
+     },
+     {
+      "value": 49,
+      "displayName": "Long Passes"
+     },
+     {
+      "value": 11,
+      "displayName": "Throw-Ins"
+     },
+     {
+      "value": 4,
+      "displayName": "Key Passes"
+     },
+     {
+      "value": 47,
+      "displayName": "Passes Into Final Third"
+     },
+     {
+      "value": 58,
+      "displayName": "Backward Passes"
+     },
+     {
+      "value": 11,
+      "displayName": "Goal Kicks"
+     },
+     {
+      "value": 6,
+      "displayName": "Interceptions"
+     },
+     {
+      "value": 7,
+      "displayName": "Successful Tackles"
+     },
+     {
+      "value": 14,
+      "displayName": "Tackles"
+     },
+     {
+      "value": 22,
+      "displayName": "Clearances"
+     },
+     {
+      "value": 3,
+      "displayName": "Successful Aerial Duels"
+     },
+     {
+      "value": 17,
+      "displayName": "Aerial Duels"
+     },
+     {
+      "value": 6,
+      "displayName": "Successful Dribbles"
+     },
+     {
+      "value": 8,
+      "displayName": "Dribbles"
+     },
+     {
+      "value": 0.33,
+      "displayName": "Shots accuracy"
+     },
+     {
+      "value": 63,
+      "displayName": "Failed passes"
+     },
+     {
+      "value": 0.34,
+      "displayName": "Possession"
+     },
+     {
+      "value": 2,
+      "displayName": "Shots on target"
+     },
+     {
+      "value": 1,
+      "displayName": "Corners"
+     },
+     {
+      "value": 2,
+      "displayName": "Offsides"
+     },
+     {
+      "value": 280,
+      "displayName": "Successful passes"
+     },
+     {
+      "value": 1,
+      "displayName": "Red cards"
+     },
+     {
+      "value": 1,
+      "displayName": "Shots off target"
+     },
+     {
+      "value": 3,
+      "displayName": "Blocked shots"
+     },
+     {
+      "value": 4,
+      "displayName": "Shots within penalty area"
+     },
+     {
+      "value": 343,
+      "displayName": "Total passes"
+     },
+     {
+      "value": 4,
+      "displayName": "Goalkeeper saves"
+     },
+     {
+      "value": 9,
+      "displayName": "Fouls"
+     },
+     {
+      "value": 0,
+      "displayName": "Yellow cards"
+     },
+     {
+      "displayName": "Shots outside penalty area",
+      "value": 2
+     }
+    ]
+   },
+   {
+    "team": {
+     "id": 9294,
+     "logo": "https://highlightly.net/soccer/images/teams/9294.png",
+     "name": "England"
+    },
+    "statistics": [
+     {
+      "value": 1.48,
+      "displayName": "Expected Goals"
+     },
+     {
+      "value": 3,
+      "displayName": "Big Chances Created"
+     },
+     {
+      "value": 133,
+      "displayName": "Attacks"
+     },
+     {
+      "value": 9,
+      "displayName": "Free Kicks"
+     },
+     {
+      "value": 1.92,
+      "displayName": "Expected Assists"
+     },
+     {
+      "value": 5,
+      "displayName": "Successful Crosses"
+     },
+     {
+      "value": 20,
+      "displayName": "Crosses"
+     },
+     {
+      "value": 194,
+      "displayName": "Passes Own Half"
+     },
+     {
+      "value": 495,
+      "displayName": "Passes Opposition Half"
+     },
+     {
+      "value": 17,
+      "displayName": "Successful Long Passes"
+     },
+     {
+      "value": 27,
+      "displayName": "Long Passes"
+     },
+     {
+      "value": 13,
+      "displayName": "Throw-Ins"
+     },
+     {
+      "value": 16,
+      "displayName": "Key Passes"
+     },
+     {
+      "value": 226,
+      "displayName": "Passes Into Final Third"
+     },
+     {
+      "value": 99,
+      "displayName": "Backward Passes"
+     },
+     {
+      "value": 4,
+      "displayName": "Goal Kicks"
+     },
+     {
+      "value": 10,
+      "displayName": "Interceptions"
+     },
+     {
+      "value": 6,
+      "displayName": "Successful Tackles"
+     },
+     {
+      "value": 8,
+      "displayName": "Tackles"
+     },
+     {
+      "value": 16,
+      "displayName": "Clearances"
+     },
+     {
+      "value": 14,
+      "displayName": "Successful Aerial Duels"
+     },
+     {
+      "value": 17,
+      "displayName": "Aerial Duels"
+     },
+     {
+      "value": 3,
+      "displayName": "Successful Dribbles"
+     },
+     {
+      "value": 12,
+      "displayName": "Dribbles"
+     },
+     {
+      "value": 0.32,
+      "displayName": "Shots accuracy"
+     },
+     {
+      "value": 52,
+      "displayName": "Failed passes"
+     },
+     {
+      "value": 0.66,
+      "displayName": "Possession"
+     },
+     {
+      "value": 7,
+      "displayName": "Shots on target"
+     },
+     {
+      "value": 6,
+      "displayName": "Corners"
+     },
+     {
+      "value": 3,
+      "displayName": "Offsides"
+     },
+     {
+      "value": 617,
+      "displayName": "Successful passes"
+     },
+     {
+      "value": 0,
+      "displayName": "Red cards"
+     },
+     {
+      "value": 10,
+      "displayName": "Shots off target"
+     },
+     {
+      "value": 5,
+      "displayName": "Blocked shots"
+     },
+     {
+      "value": 12,
+      "displayName": "Shots within penalty area"
+     },
+     {
+      "value": 669,
+      "displayName": "Total passes"
+     },
+     {
+      "value": 2,
+      "displayName": "Goalkeeper saves"
+     },
+     {
+      "value": 12,
+      "displayName": "Fouls"
+     },
+     {
+      "value": 1,
+      "displayName": "Yellow cards"
+     },
+     {
+      "displayName": "Shots outside penalty area",
+      "value": 10
+     }
+    ]
+   }
+  ],
+  "id": 1301103194,
+  "round": "League A - 2",
+  "date": "2026-09-29T18:45:00.000Z",
+  "country": {
+   "code": "World",
+   "name": "World",
+   "logo": "https://highlightly.net/soccer/images/countries/World.png"
+  },
+  "state": {
+   "clock": 90,
+   "score": {
+    "current": "0 - 2",
+    "penalties": null
+   },
+   "description": "Finished"
+  },
+  "awayTeam": {
+   "id": 9294,
+   "logo": "https://highlightly.net/soccer/images/teams/9294.png",
+   "name": "England",
+   "topPlayers": [
+    {
+     "name": "Harry Kane",
+     "position": "Attacker",
+     "statistics": [
+      {
+       "name": "Expected Goals",
+       "value": 0.13
+      },
+      {
+       "name": "Shots On Target",
+       "value": 2
+      },
+      {
+       "name": "Minutes",
+       "value": 70
+      }
+     ]
+    },
+    {
+     "name": "Anthony Gordon",
+     "position": "Midfielder",
+     "statistics": [
+      {
+       "name": "Expected Goals",
+       "value": 0.26
+      },
+      {
+       "name": "Shots On Target",
+       "value": 2
+      },
+      {
+       "name": "Minutes",
+       "value": 80
+      }
+     ]
+    },
+    {
+     "name": "Trent Alexander-Arnold",
+     "position": "Defender",
+     "statistics": [
+      {
+       "name": "Interceptions",
+       "value": 2
+      },
+      {
+       "name": "Tackles",
+       "value": 0
+      },
+      {
+       "name": "Minutes",
+       "value": 90
+      }
+     ]
+    }
+   ],
+   "shots": [
+    {
+     "time": "4'",
+     "outcome": "Missed",
+     "goalTarget": null,
+     "playerName": "Bukayo Saka"
+    },
+    {
+     "time": "16'",
+     "outcome": "Post",
+     "goalTarget": null,
+     "playerName": "Morgan Rogers"
+    },
+    {
+     "time": "16'",
+     "outcome": "Blocked",
+     "goalTarget": "Low Left",
+     "playerName": "Elliot Anderson"
+    },
+    {
+     "time": "16'",
+     "outcome": "Blocked",
+     "goalTarget": "Low Centre",
+     "playerName": "Bukayo Saka"
+    },
+    {
+     "time": "22'",
+     "outcome": "Missed",
+     "goalTarget": "Close Right",
+     "playerName": "Anthony Gordon"
+    },
+    {
+     "time": "31'",
+     "outcome": "Saved",
+     "goalTarget": "High Centre",
+     "playerName": "Anthony Gordon"
+    },
+    {
+     "time": "43'",
+     "outcome": "Missed",
+     "goalTarget": null,
+     "playerName": "Morgan Rogers"
+    },
+    {
+     "time": "45'",
+     "outcome": "Blocked",
+     "goalTarget": "Low Centre",
+     "playerName": "Anthony Gordon"
+    },
+    {
+     "time": "45 + 1'",
+     "outcome": "Saved",
+     "goalTarget": "High Right",
+     "playerName": "Harry Kane"
+    },
+    {
+     "time": "47'",
+     "outcome": "Goal",
+     "goalTarget": "Low Right",
+     "playerName": "Anthony Gordon"
+    },
+    {
+     "time": "51'",
+     "outcome": "Missed",
+     "goalTarget": "Close Right",
+     "playerName": "Lewis Hall"
+    },
+    {
+     "time": "58'",
+     "outcome": "Missed",
+     "goalTarget": null,
+     "playerName": "Lewis Hall"
+    },
+    {
+     "time": "62'",
+     "outcome": "Missed",
+     "goalTarget": null,
+     "playerName": "Trent Alexander-Arnold"
+    },
+    {
+     "time": "69'",
+     "outcome": "Blocked",
+     "goalTarget": "Low Centre",
+     "playerName": "Elliot Anderson"
+    },
+    {
+     "time": "69'",
+     "outcome": "Goal",
+     "goalTarget": "Low Right",
+     "playerName": "Harry Kane"
+    },
+    {
+     "time": "79'",
+     "outcome": "Blocked",
+     "goalTarget": "Low Right",
+     "playerName": "Rio Ngumoha"
+    },
+    {
+     "time": "80'",
+     "outcome": "Missed",
+     "goalTarget": "CloseLeft",
+     "playerName": "Morgan Rogers"
+    },
+    {
+     "time": "82'",
+     "outcome": "Blocked",
+     "goalTarget": "Low Centre",
+     "playerName": "Jude Bellingham"
+    },
+    {
+     "time": "82'",
+     "outcome": "Saved",
+     "goalTarget": "High Left",
+     "playerName": "Eberechi Eze"
+    },
+    {
+     "time": "87'",
+     "outcome": "Missed",
+     "goalTarget": "Close Right",
+     "playerName": "Alex Scott"
+    },
+    {
+     "time": "89'",
+     "outcome": "Missed",
+     "goalTarget": null,
+     "playerName": "Eberechi Eze"
+    },
+    {
+     "time": "90 + 2'",
+     "outcome": "Saved",
+     "goalTarget": "Low Right",
+     "playerName": "Jude Bellingham"
+    }
+   ]
+  },
+  "homeTeam": {
+   "id": 656054,
+   "logo": "https://highlightly.net/soccer/images/teams/656054.png",
+   "name": "Czech Republic",
+   "topPlayers": [
+    {
+     "name": "Adam Hložek",
+     "position": "Attacker",
+     "statistics": [
+      {
+       "name": "Expected Goals",
+       "value": 0.08
+      },
+      {
+       "name": "Shots On Target",
+       "value": 1
+      },
+      {
+       "name": "Minutes",
+       "value": 79
+      }
+     ]
+    },
+    {
+     "name": "Michal Sadilek",
+     "position": "Midfielder",
+     "statistics": [
+      {
+       "name": "Expected Goals",
+       "value": 0
+      },
+      {
+       "name": "Shots On Target",
+       "value": 0
+      },
+      {
+       "name": "Minutes",
+       "value": 55
+      }
+     ]
+    },
+    {
+     "name": "Robin Hranáč",
+     "position": "Defender",
+     "statistics": [
+      {
+       "name": "Interceptions",
+       "value": 1
+      },
+      {
+       "name": "Tackles",
+       "value": 0
+      },
+      {
+       "name": "Minutes",
+       "value": 90
+      }
+     ]
+    }
+   ],
+   "shots": [
+    {
+     "time": "5'",
+     "outcome": "Saved",
+     "goalTarget": "Low Centre",
+     "playerName": "Pavel Šulc"
+    },
+    {
+     "time": "12'",
+     "outcome": "Missed",
+     "goalTarget": "High Right",
+     "playerName": "Lukáš Cerv"
+    },
+    {
+     "time": "13'",
+     "outcome": "Blocked",
+     "goalTarget": "Low Left",
+     "playerName": "Pavel Šulc"
+    },
+    {
+     "time": "50'",
+     "outcome": "Blocked",
+     "goalTarget": "Low Centre",
+     "playerName": "Adam Hložek"
+    },
+    {
+     "time": "75'",
+     "outcome": "Blocked",
+     "goalTarget": "Low Centre",
+     "playerName": "Lukáš Ambros"
+    },
+    {
+     "time": "77'",
+     "outcome": "Saved",
+     "goalTarget": "High Left",
+     "playerName": "Adam Hložek"
+    }
+   ]
+  },
+  "league": {
+   "id": 5039,
+   "logo": "https://highlightly.net/soccer/images/leagues/5039.png",
+   "name": "UEFA Nations League",
+   "season": 2026
+  },
+  "news": [
+   {
+    "url": "https://www.fourfourtwo.com/team/manchester-city-fans-should-boycott-the-club-the-owners-sold-the-clubs-soul",
+    "image": "https://cdn.mos.cms.futurecdn.net/9t34PdZqmRkchVpi4q8ATZ-2560-80.jpg",
+    "title": "Manchester City fans should boycott the club: the owners sold the club's soul",
+    "datePublished": "2026-09-30T14:27:12Z"
+   },
+   {
+    "url": "https://www.bbc.co.uk/sport/football/articles/cmly4dqr9g6go",
+    "image": "https://ichef.bbci.co.uk/ace/branded_sport/1200/cpsprodpb/b32c/live/91aab9e0-bcba-11f1-b3b2-8f83c947a78c.jpg",
+    "title": "Guernsey's pride as Scott wins first England cap",
+    "datePublished": "2026-09-30T11:12:58Z"
+   },
+   {
+    "url": "https://www.dailymail.com/sport/football/article-16171051/Thomas-Tuchel-admits-bad-conscience-not-checking-Englands-Man-City-stars-amid-guilty-verdict-financial-sham-suggests-Jude-Bellingham-England-captain.html",
+    "image": "https://i.dailymail.com/1s/2026/09/29/23/111553049-0-image-m-48_1790722294011.jpg",
+    "title": "Thomas Tuchel admits he has a 'bad conscience' for not checking on England's Man City stars amid guilty verdict on financial 'sham' - and suggests why Jude Bellingham could be his next England captain",
+    "datePublished": "2026-09-30T09:29:10Z"
+   },
+   {
+    "url": "https://www.dailymail.com/sport/football/article-16171937/Harry-Kane-Anthony-Gordon-Barcelona-England.html",
+    "image": "https://i.dailymail.com/1s/2026/09/30/09/111559951-0-image-m-24_1790757699667.jpg",
+    "title": "Harry Kane explains how Anthony Gordon's £69m Barcelona move has helped in-form winger become 'difference maker' for England",
+    "datePublished": "2026-09-30T09:04:17Z"
+   },
+   {
+    "url": "https://www.dailymail.com/sport/football/article-16169425/How-Thomas-Tuchel-Trent-Alexander-Arnold-reshuffle-unlocked-England-Nations-League-Prague-FINALLY-clean-sheet.html",
+    "image": "https://i.dailymail.com/1s/2026/09/29/23/111552241-0-image-m-31_1790719675018.jpg",
+    "title": "How Thomas Tuchel's Trent Alexander-Arnold reshuffle unlocked England - as Three Lions win first Nations League points in Prague and FINALLY keep a clean sheet",
+    "datePublished": "2026-09-30T06:33:35Z"
+   },
+   {
+    "url": "https://www.bbc.co.uk/sport/football/articles/c8dx51r59xndo",
+    "image": "https://ichef.bbci.co.uk/ace/branded_sport/1200/cpsprodpb/daad/live/5e8c73d0-bc4e-11f1-bd21-bdf910f2cec6.jpg",
+    "title": "It is time for Tuchel to offer Alexander-Arnold some trust",
+    "datePublished": "2026-09-29T22:06:30Z"
+   },
+   {
+    "url": "https://www.dailymail.com/sport/football/article-16169139/Czech-Republic-vs-England-Nations-League-LIVE.html",
+    "image": "https://i.dailymail.com/1s/2026/09/29/21/111549969-0-image-m-128_1790713219859.jpg",
+    "title": "Czech Republic vs England - Nations League RECAP: Reaction as Three Lions claim comfortable victory against 10 men",
+    "datePublished": "2026-09-29T21:19:33Z"
+   },
+   {
+    "url": "https://www.dailymail.com/sport/football/article-16168727/czech-republic-england-player-ratings.html",
+    "image": "https://i.dailymail.com/1s/2026/09/29/21/111550407-0-image-m-30_1790714921113.jpg",
+    "title": "Czech Republic 0-2 England PLAYER RATINGS: How did Trent Alexander-Arnold fare on his return? Who was almost embarrassed by an early error? Who proved he belongs at international level?",
+    "datePublished": "2026-09-29T20:50:53Z"
+   },
+   {
+    "url": "https://www.independent.co.uk/sport/football/czech-republic-england-result-score-nations-league-b3058564.html",
+    "image": "https://static.independent.co.uk/2026/09/29/21/01M3QC3WA42CT1C8VPB8D5PQZJ.jpg?trim=0,0,0,0&width=1200&height=800&crop=1200:800",
+    "title": "How Trent Alexander-Arnold showed his value in England’s win over the Czech Republic",
+    "datePublished": "2026-09-29T20:48:18Z"
+   },
+   {
+    "url": "https://www.bbc.co.uk/sport/football/articles/c6g7kldr9378o",
+    "image": "https://ichef.bbci.co.uk/ace/branded_sport/1200/cpsprodpb/8e69/live/c94a88f0-bc40-11f1-8666-b5dc4bdc94cb.jpg",
+    "title": "Who continues to show how important they are? England player ratings",
+    "datePublished": "2026-09-29T20:39:46Z"
+   },
+   {
+    "url": "https://www.dailystar.co.uk/sport/football/breaking-england-tuchel-czech-republic-37716272",
+    "image": "https://i2-prod.mirror.co.uk/incoming/article37716392.ece/ALTERNATES/n615/1_Czechia-v-England-UEFA-Nations-League-202627-Group-A3-MD2.jpg",
+    "title": "Thomas Tuchel corrects dreadful World Cup mistake as England beat Czech Republic",
+    "datePublished": "2026-09-29T20:37:04Z"
+   },
+   {
+    "url": "https://www.independent.co.uk/sport/football/pavel-sulc-red-card-czech-republic-england-b3058569.html",
+    "image": "https://static.independent.co.uk/2026/09/29/20/2297759955..?trim=45,0,45,0&width=1200&height=800&crop=1200:800",
+    "title": "Why was Pavel Sulc sent off for the Czech Republic against England?",
+    "datePublished": "2026-09-29T19:20:04Z"
+   },
+   {
+    "url": "https://www.fourfourtwo.com/competition/watch-czechia-vs-england-nations-league-free",
+    "image": "https://cdn.mos.cms.futurecdn.net/jjUHG4UyYjQSYse52aCdN8-2423-80.jpg",
+    "title": "How to watch Czechia vs England: FREE streams and TV info",
+    "datePublished": "2026-09-29T15:45:00Z"
+   },
+   {
+    "url": "https://www.bbc.co.uk/sport/football/articles/c68048pynj94o",
+    "image": "https://ichef.bbci.co.uk/ace/branded_sport/1200/cpsprodpb/8a85/live/6c44dd20-bc1a-11f1-9a78-d72908473b45.jpg",
+    "title": "England's Palmer a 'victim' of 'sick' schedule, says PFA chief",
+    "datePublished": "2026-09-29T15:37:43Z"
+   },
+   {
+    "url": "https://www.dailymail.com/sport/football/article-16169395/England-John-Stones-speeding-mobile-phone-driving-Range-Rover.html",
+    "image": "https://i.dailymail.com/1s/2026/09/29/13/111538879-0-image-m-84_1790685161765.jpg",
+    "title": "England star John Stones caught speeding in driving £150,000 Range Rover as defender is hit with fine",
+    "datePublished": "2026-09-29T14:27:20Z"
+   },
+   {
+    "url": "https://www.bbc.co.uk/sport/football/articles/c6y9z7dlq199o",
+    "image": "https://ichef.bbci.co.uk/ace/branded_sport/1200/cpsprodpb/4cd6/live/669db1d0-bbed-11f1-9074-3d74885a19d6.jpg",
+    "title": "Toone and Kelly miss out on Lionesses squad",
+    "datePublished": "2026-09-29T11:39:35Z"
+   },
+   {
+    "url": "https://www.dailymail.com/sport/football/article-16169243/Ella-Toone-Chloe-Kelly-dropped-Lionesses-Sarina-Wiegman-leaves-two-trusted-players-World-Cup-qualifiers-tells-levels-dropped.html",
+    "image": "https://i.dailymail.com/1s/2026/09/29/12/111537391-0-image-m-11_1790680611274.jpg",
+    "title": "Ella Toone and Chloe Kelly dropped by Lionesses: Sarina Wiegman leaves out two of her most trusted players for World Cup qualifiers - and tells them their 'levels' have dropped",
+    "datePublished": "2026-09-29T11:19:53Z"
+   },
+   {
+    "url": "https://www.bbc.co.uk/sport/football/articles/cry8z31pl534o",
+    "image": "https://ichef.bbci.co.uk/ace/branded_sport/1200/cpsprodpb/1ee3/live/536b95e0-bb30-11f1-a9b8-670e5d9d8eee.jpg",
+    "title": "Could Potter be England's next breakthrough star?",
+    "datePublished": "2026-09-29T10:42:03Z"
+   },
+   {
+    "url": "https://www.independent.co.uk/sport/football/england-czech-republic-nations-league-ngumoha-o-reilly-b3058144.html",
+    "image": "https://static.independent.co.uk/2026/09/29/10/2297500812..?trim=0,17,0,17&width=1200&height=800&crop=1200:800",
+    "title": "England star ruled out of clash with Czech Republic as Rio Ngumoha called up",
+    "datePublished": "2026-09-29T10:18:07Z"
+   },
+   {
+    "url": "https://www.dailymail.com/sport/football/article-16168789/Argentina-Premier-League-World-Cup-abuse.html",
+    "image": "https://i.dailymail.com/1s/2026/09/29/12/111537311-0-image-m-293_1790680203264.jpg",
+    "title": "Revealed: Fearful Argentina youngsters are reluctant to move to the Premier League with World Cup villains hit by fan abuse following semi-final exploits against England",
+    "datePublished": "2026-09-29T09:47:18Z"
+   }
+  ]
+ }
+]
