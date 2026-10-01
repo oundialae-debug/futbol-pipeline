@@ -626,3 +626,9 @@ carpeta se apunta aquí.
   `england`, `england_record`); cada uno escribe su `.mp4` y su `.md` con el
   mismo nombre. Los dos de Inglaterra sustituyen a los de
   `grabacion_app.py` / `grabacion_pasado.py`.
+- **Hecho:** `2yellow_app_england` (1:49, previa → Tips → grupo → Inglaterra) y
+  `2yellow_app_england_record` (1:24, informe → alineaciones → historial),
+  cada uno con su `.md`. Cifras de la locución comprobadas contra las
+  pantallas (56%, 1.79, 95%/48%, €745M/€172M, 14 de 24 porterías a cero,
+  Kane 43%, 64 de 100 repeticiones, 3/4 frente a 3/4, 18-2-4, 8/8, 20 goles
+  en el Mundial).
