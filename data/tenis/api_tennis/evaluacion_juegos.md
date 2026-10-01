@@ -53,11 +53,11 @@ Brier del 'más' en la línea principal (1ª pasada): modelo 0.2923, mercado 0.2
 | ITF M M15 Sibenik: J. Nicod vs S. Seghetti | 22.5 | 1.83 | 28 | pierde |
 | ITF M M15 Monastir 33: M. Chazal vs K. van Wyk | 25.5 | 1.57 | 25 | gana |
 
-## Avisos del vigilante (lo que llega al móvil)
+## Reglas del vigilante (desde el 01/10 solo en papel)
 
-| lado | avisos resueltos | aciertos | beneficio medio (cuota API) | sigmas |
+| regla | apuestas resueltas | aciertos | beneficio medio (cuota API) | sigmas |
 |---|---|---|---|---|
-| menos | 112 | 63% | -3.0% | -0.42 |
+| actual (al móvil) | 112 | 63% | -3.0% | -0.42 |
 
 ## Previos (antes de empezar), línea principal de juegos y ganador
 
@@ -66,5 +66,5 @@ Ganador (135): acierto modelo 64%, casa 73%.
 
 ## Aprendizaje (recalibración del modelo)
 
-Partidos resueltos: 142 (1069 líneas). Activa: **sí** (hace falta 30+ partidos y que mejore al modelo en partidos que no vio).
-Brier (menor es mejor): modelo 0.2931, modelo con el saque de hoy 0.2809, casa 0.2422, recalibrado (validado por partidos) 0.2327. Sesgo del modelo hacia el más: +22.5%.
+Partidos resueltos: 74 (509 líneas). Activa: **sí** (hace falta 30+ partidos y que mejore a la CASA en partidos que no vio).
+Brier (menor es mejor): modelo 0.2903, modelo con el saque de hoy 0.2620, casa 0.2377, recalibrado (validado por partidos) 0.2365. Sesgo del modelo hacia el más: +22.3%.

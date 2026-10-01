@@ -32,7 +32,7 @@ REG = "data/tenis/api_tennis/registro"
 RES = "data/tenis/api_tennis/resultados"
 CAMPOS = ["hora", "event_key", "tipo", "torneo", "superficie", "jugador1", "jugador2", "sets", "juegos", "puntos",
           "saca", "mercado", "linea", "seleccion", "cuota", "cuota_rival", "prob_mercado", "prob_modelo",
-          "prob_modelo_directo", "p_saque1", "p_saque2", "p_saque1_directo", "p_saque2_directo"]
+          "prob_modelo_directo", "p_saque1", "p_saque2", "p_saque1_directo", "p_saque2_directo", "jugados"]
 # lo que cada jugador lleva HOY (statistics de la API), para aprender de ello (calibrar_juegos.py)
 EST = ["aces", "df", "primer_pct", "saque_gan", "saque_tot", "resto_gan", "resto_tot", "bp_salvados_gan",
        "bp_salvados_tot", "bp_convertidos_gan", "bp_convertidos_tot", "ultimos10"]
@@ -103,6 +103,7 @@ def main():
                 "sets": f"{e['sa']}-{e['sb']}", "juegos": f"{e['ga']}-{e['gb']}", "puntos": p.get("event_game_result"),
                 "saca": {True: 1, False: 2}.get(e["a_saca"], ""),
                 "p_saque1": pa, "p_saque2": pb, "p_saque1_directo": pa2, "p_saque2_directo": pb2,
+                "jugados": sum(e["previos"]) + e["ga"] + e["gb"],
                 **{f"{c}{lado}": st[lado].get(c, "") for lado in ("1", "2") for c in EST}}
         gan = tot = None
         mejor_tot = None
@@ -142,7 +143,7 @@ def main():
     os.makedirs(REG, exist_ok=True)
     ruta = f"{REG}/{ahora:%Y-%m-%d}.csv"
     if os.path.exists(ruta) and open(ruta).readline().strip().split(",") != CAMPOS:
-        ruta = f"{REG}/{ahora:%Y-%m-%d}_v2.csv"         # columnas nuevas (30/09): fichero aparte ese día
+        ruta = f"{REG}/{ahora:%Y-%m-%d}_v3.csv"         # columnas nuevas: fichero aparte ese día
     nuevo = not os.path.exists(ruta)
     with open(ruta, "a", newline="") as fh:
         w = csv.DictWriter(fh, fieldnames=CAMPOS)

@@ -534,6 +534,21 @@ es este mismo problema, no suerte de un día.
 ganador y todas las líneas de juegos; la última foto antes del pitido). `evaluar_juegos.py` los
 cruza con el resultado: modelo, modelo corregido con el historial y casa.
 
+## Los avisos no ganaban: solo papel y aprendizaje rehecho (01/10/2026)
+
+112 avisos de "menos" resueltos (30/09-01/10): 63% de aciertos, −3,0% a cuota de la API. Los 11
+primeros (sin aprendizaje) +20%; los 101 con el aprendizaje viejo, −5,5% con 61% de aciertos cuando
+la casa ya daba 60%. El aprendizaje viejo (sin la casa como base) aprendió "casi todo es menos" y
+la regla acabó siendo "seguir a la casa", que pierde el margen. Cuanto más se separaba el modelo de
+la casa, peor (≥13 puntos: 51%, −18%). Previos: casa mejor en juegos (Brier 0,250 vs 0,263 del
+modelo corregido) y en ganador (73% vs 64%).
+
+Cambios: vigilante en papel con tres reglas (`actual`, `casa65`, `aprendida`); `casa65` salió de
+mirar esos 112 avisos (14/16, +17%): NO vale como prueba hasta que gane en partidos nuevos.
+`calibrar_juegos.py` parte de la casa (b=1, resto 0, regularizado hacia ahí), añade juegos que
+faltan y nivel, y se mide por días (`walk_forward`). Con 74 partidos con datos: Brier aprendido
+0,2365 vs casa 0,2377: casi igual que la casa, que es lo esperable sin ventaja real.
+
 ## Plan (en este orden)
 
 1. Ganador del partido, único mercado con cierre de Pinnacle.

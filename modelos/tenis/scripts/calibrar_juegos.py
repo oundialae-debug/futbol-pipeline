@@ -1,19 +1,19 @@
 """
-El modelo de juegos en directo APRENDE de lo que se va recogiendo (30/09/2026, petición del usuario).
+El modelo de juegos en directo APRENDE de todo lo recogido (30/09-01/10/2026, petición del usuario).
 
-Cada línea de total de juegos del registro de 5 minutos (data/tenis/api_tennis/registro/) con el
-partido ya terminado (resultados/) es un ejemplo: prob. del modelo, prob. de la casa (sin margen)
-y si hubo más juegos que la línea. Con eso se ajusta una recalibración logística:
-    p_nueva = sigmoide(a + b·logit(p_modelo) + c·logit(p_casa) + d·logit(p_modelo_directo))
-que corrige el sesgo conocido (el modelo exagera el "más"), aprende cuánto fiarse de la casa y
-cuánto de la versión "directo" (saque mezclado con lo que cada jugador lleva hoy). Aprende de
-TODAS las líneas de TODOS los partidos registrados, no solo de los avisos.
+Cada línea de total de juegos del registro de 5 minutos con el partido ya terminado es un ejemplo.
+Variables: la casa (prob. sin margen), el modelo de siempre, el modelo "con el saque de hoy", cuántos
+juegos faltan hasta la línea ((línea − jugados)/10) y el nivel (ITF, Challenger/125, WTA).
+    p = sig(a + b·logit(casa) + c·logit(modelo) + d·logit(directo) + e·faltan + f·itf + g·chall + h·wta)
 
-Disciplina (CLAUDE.md): cada partido pesa lo mismo (sus líneas y pasadas ganan y pierden juntas),
-y la recalibración solo se ACTIVA si, validada por partidos que no vio (5 bloques por partido),
-mejora el Brier del modelo crudo y hay al menos MIN_PARTIDOS partidos. Si no, el vigilante sigue
-con el modelo crudo. Se reajusta cada hora (registro_directo.py -> evaluar_juegos.py) y el
-vigilante la lee al arrancar cada ejecución. Resultado en data/tenis/api_tennis/calibracion_juegos.json.
+Lección del 01/10: la primera versión (sin la casa como punto de partida) aprendió "todo es menos",
+avisó 101 veces en un día y acertó lo mismo que ya decía la casa (61% vs 60%, −5,5%). Ahora:
+- el punto de partida es FIARSE DE LA CASA (b=1, el resto 0) y la regularización tira hacia ahí:
+  solo se aparta de la casa si los datos lo sostienen;
+- cada partido pesa igual (sus líneas y pasadas ganan y pierden juntas);
+- se mide como se usaría: por DÍAS (walk_forward): para cada día, se aprende solo con los días
+  anteriores y se "apuesta" en papel donde lo aprendido se separa de la casa >= UMBRAL.
+Resultado en data/tenis/api_tennis/calibracion_juegos.json; el vigilante lo lee al arrancar.
 """
 import glob
 import json
@@ -24,6 +24,8 @@ import pandas as pd
 
 SAL = "data/tenis/api_tennis/calibracion_juegos.json"
 MIN_PARTIDOS = 30
+UMBRAL = 0.05
+NOMBRES = ["const", "casa", "modelo", "directo", "faltan", "itf", "challenger", "wta"]
 
 
 def _logit(p):
@@ -46,34 +48,78 @@ def datos():
     d = d[d.mercado == "total_juegos"].dropna(subset=["prob_mercado", "prob_modelo"])
     d = d.merge(res[["event_key", "juegos_totales"]], on="event_key")
     d = d.dropna(subset=["juegos_totales"])
-    if "prob_modelo_directo" not in d:
-        d["prob_modelo_directo"] = np.nan
-    d["prob_modelo_directo"] = d.prob_modelo_directo.fillna(d.prob_modelo)   # filas viejas: sin versión directo
-    d["y"] = (d.juegos_totales.astype(float) > d.linea.astype(float)).astype(float)
+    for c in ("prob_modelo_directo", "jugados", "saque_tot1", "saque_tot2"):
+        if c not in d:
+            d[c] = np.nan
+    d["prob_modelo_directo"] = d.prob_modelo_directo.fillna(d.prob_modelo)
+    # juegos ya jugados: columna propia desde el 01/10; antes, estimados por los puntos al saque (~6,2 por juego)
+    d["jugados"] = pd.to_numeric(d.jugados, errors="coerce").fillna(
+        (pd.to_numeric(d.saque_tot1, errors="coerce") + pd.to_numeric(d.saque_tot2, errors="coerce")) / 6.2)
+    d = d.dropna(subset=["jugados"])
+    d["linea"] = d.linea.astype(float)
+    d["y"] = (d.juegos_totales.astype(float) > d.linea).astype(float)
     d["w"] = 1 / d.groupby("event_key").event_key.transform("size")
+    d["dia"] = d.hora.astype(str).str[:10]
     return d
 
 
-def _ajustar(X, y, w, l2=1.0, it=50):
-    X = np.column_stack([np.ones(len(X)), X])
-    b = np.zeros(X.shape[1])
-    b[1] = 1.0                                         # parte de "fiarse del modelo tal cual"
+def X(d):
+    t = d.tipo.astype(str).str.lower()
+    return np.column_stack([_logit(d.prob_mercado), _logit(d.prob_modelo), _logit(d.prob_modelo_directo),
+                            (d.linea.astype(float) - d.jugados.astype(float)) / 10,
+                            t.str.contains("itf").astype(float), t.str.contains("challenger").astype(float),
+                            (t.str.contains("wta") | t.str.contains("women")).astype(float)])
+
+
+PREVIA = np.array([0, 1, 0, 0, 0, 0, 0, 0], float)     # punto de partida: la casa tal cual
+
+
+def _ajustar(Xm, y, w, l2=2.0, it=60):
+    Xm = np.column_stack([np.ones(len(Xm)), Xm])
+    b = PREVIA.copy()
+    R = l2 * np.diag(np.r_[0.0, np.ones(len(b) - 1)])
     for _ in range(it):
-        p = _sig(X @ b)
-        g = X.T @ (w * (p - y)) + l2 * np.r_[0, b[1:] - np.r_[1, np.zeros(len(b) - 2)]]
-        H = (X * (w * p * (1 - p))[:, None]).T @ X + l2 * np.diag(np.r_[0, np.ones(len(b) - 1)])
+        p = _sig(Xm @ b)
+        g = Xm.T @ (w * (p - y)) + R @ (b - PREVIA)
+        H = (Xm * (w * p * (1 - p))[:, None]).T @ Xm + R
         b -= np.linalg.solve(H, g)
     return b
 
 
-def _X(d):
-    return np.column_stack([_logit(d.prob_modelo), _logit(d.prob_mercado), _logit(d.prob_modelo_directo)])
+def _pred(b, d):
+    return _sig(np.column_stack([np.ones(len(d)), X(d)]) @ b)
+
+
+def walk_forward(d):
+    """Apuestas en papel día a día: se aprende con los días anteriores; en el día siguiente, en la línea
+    principal de cada partido (la más cercana al 50%), PRIMERA pasada en que lo aprendido se separa de la
+    casa >= UMBRAL, se apuesta ese lado a la cuota de la API. Un partido, una apuesta."""
+    out = []
+    dias = sorted(d.dia.unique())
+    for i, dia in enumerate(dias[1:], 1):
+        tr, te = d[d.dia < dia], d[d.dia == dia].copy()
+        if tr.event_key.nunique() < MIN_PARTIDOS or te.empty:
+            continue
+        b = _ajustar(X(tr), tr.y.values, tr.w.values)
+        te["p"] = _pred(b, te)
+        te["dist"] = (te.prob_mercado.astype(float) - 0.5).abs()
+        te = te.sort_values(["hora", "dist"]).groupby(["hora", "event_key"]).head(1)
+        te["dif"] = te.p - te.prob_mercado.astype(float)
+        sen = te[te.dif.abs() >= UMBRAL].sort_values("hora").groupby("event_key").head(1)
+        for r in sen.itertuples():
+            mas = r.dif > 0
+            cuota = float(r.cuota if mas else r.cuota_rival)
+            gana = (r.juegos_totales > r.linea) if mas else (r.juegos_totales < r.linea)
+            out.append({"dia": dia, "event_key": r.event_key, "lado": "más" if mas else "menos", "cuota": cuota,
+                        "p_aprendida": r.p if mas else 1 - r.p, "p_casa": r.prob_mercado if mas else 1 - r.prob_mercado,
+                        "gana": bool(gana), "benef": cuota - 1 if gana else -1.0})
+    return pd.DataFrame(out)
 
 
 def ajustar():
     d = datos()
     ev = d.event_key.unique() if len(d) else []
-    info = {"partidos": int(len(ev)), "filas": int(len(d)), "activo": False, "coef": None}
+    info = {"partidos": int(len(ev)), "filas": int(len(d)), "activo": False, "coef": None, "variables": NOMBRES}
     if len(ev) >= 10:
         rng = np.random.default_rng(0)
         bloque = dict(zip(ev, rng.permutation(len(ev)) % 5))
@@ -81,8 +127,8 @@ def ajustar():
         cal = np.zeros(len(d))
         for k in range(5):
             tr, te = (d.bloque != k).values, (d.bloque == k).values
-            b = _ajustar(_X(d[tr]), d.y.values[tr], d.w.values[tr])
-            cal[te] = _sig(np.column_stack([np.ones(te.sum()), _X(d[te])]) @ b)
+            b = _ajustar(X(d[tr]), d.y.values[tr], d.w.values[tr])
+            cal[te] = _pred(b, d[te])
         w = d.w.values / d.w.sum()
 
         def brier(p):
@@ -92,9 +138,15 @@ def ajustar():
         info["brier_modelo_directo"] = brier(d.prob_modelo_directo)
         info["brier_recalibrado_cv"] = brier(cal)
         info["sesgo_modelo_mas"] = float(np.sum(w * (d.prob_modelo.astype(float) - d.y.values)))
-        b = _ajustar(_X(d), d.y.values, d.w.values)
+        b = _ajustar(X(d), d.y.values, d.w.values)
         info["coef"] = [float(x) for x in b]
-        info["activo"] = bool(len(ev) >= MIN_PARTIDOS and info["brier_recalibrado_cv"] < info["brier_modelo"])
+        info["activo"] = bool(len(ev) >= MIN_PARTIDOS and info["brier_recalibrado_cv"] < info["brier_casa"])
+        wf = walk_forward(d)
+        if len(wf):
+            info["papel_por_dias"] = {"apuestas": int(len(wf)), "aciertos": float(wf.gana.mean()),
+                                      "beneficio_medio": float(wf.benef.mean()),
+                                      "sigmas": float(wf.benef.mean() / (wf.benef.std(ddof=1) / np.sqrt(len(wf))))
+                                      if len(wf) > 1 else None}
     os.makedirs(os.path.dirname(SAL), exist_ok=True)
     json.dump(info, open(SAL, "w"), indent=1)
     return info
@@ -107,14 +159,13 @@ def cargar():
         return {"activo": False}
 
 
-def aplicar(info, p_modelo, p_casa, p_directo=None):
-    """Prob. del 'más' recalibrada; si la recalibración no está activa, la del modelo tal cual."""
-    if not info.get("activo") or not info.get("coef") or len(info["coef"]) != 4:
-        return p_modelo
-    a, b, c, e = info["coef"]
-    p_directo = p_modelo if p_directo is None else p_directo
-    return float(_sig(a + b * _logit(p_modelo) + c * _logit(p_casa) + e * _logit(p_directo)))
+def aplicar(info, fila):
+    """Prob. aprendida del 'más' para una línea (fila: dict con prob_mercado, prob_modelo,
+    prob_modelo_directo, linea, jugados, tipo). Sin coeficientes válidos: la casa tal cual."""
+    if not info.get("coef") or len(info["coef"]) != len(NOMBRES):
+        return float(fila["prob_mercado"])
+    return float(_pred(np.array(info["coef"]), pd.DataFrame([fila]))[0])
 
 
 if __name__ == "__main__":
-    print(ajustar())
+    print(json.dumps(ajustar(), indent=1))

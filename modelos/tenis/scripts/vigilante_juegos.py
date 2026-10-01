@@ -32,15 +32,23 @@ TECHO, CUOTA_BUENA = 0.75, 1.33   # por encima del 75% solo se avisa si la cuota
 CADA = float(os.environ.get("CADA", 60))   # segundos entre pasadas
 MINUTOS = float(os.environ.get("MINUTOS", 345))
 TOPIC = os.environ.get("NTFY_TOPIC", "tenis-f059172b4dc7")
+# 01/10, usuario: SOLO PAPEL. Con 112 avisos el "menos" acertaba lo mismo que ya decía la casa (−3%).
+# No se manda nada al móvil (salvo fallos); se registran tres reglas fijadas hoy para medirlas:
+#   actual     - la de hasta ahora: casa Y aprendido > 54% al menos (con el tope del 75%)
+#   casa65     - la casa da al menos >= 65% (sale de mirar los 112 avisos: hay que probarla en partidos NUEVOS)
+#   aprendida  - lo aprendido (calibrar_juegos) se separa de la casa >= 5 puntos, a cualquier lado
+AVISAR = os.environ.get("AVISAR", "0") == "1"
 
 
-def avisar(txt, jugadores=(), url=stake.BASE):
+def avisar(txt, jugadores=(), url=stake.BASE, forzar=False):
     """Ni Luckia ni Stake tienen dirección por partido que se pueda montar (llevan un número interno):
     el título son los apellidos, hay un botón para COPIAR cada uno (acción "copy" de ntfy, en la
     app de Android) y otro que abre la página del TORNEO en Stake (stake.py; el usuario cambió
     de Luckia a Stake el 30/09). Se publica en JSON para que los acentos
     y letras raras de los nombres no se rompan en las cabeceras."""
     print(txt, flush=True)
+    if not (AVISAR or forzar):
+        return
     ap = [apellido(j) for j in jugadores]
     acciones = [{"action": "copy", "label": f"Copiar {a}", "value": a} for a in ap]
     acciones.append({"action": "view", "label": "Abrir en Stake", "url": url})
@@ -65,8 +73,6 @@ def escalera(k, linea, lado):
         ln = linea + d
         pc = casa.get(ln)
         mo = sum(x for g, x in tot.items() if g > ln)
-        if pc is not None:
-            mo = C.aplicar(CAL, mo, pc, sum(x for g, x in tot2.items() if g > ln))
         mo = mo if lado == "más" else 1 - mo
         pc = None if pc is None else (pc if lado == "más" else 1 - pc)
         ref = pc if pc else mo
@@ -80,7 +86,7 @@ def escalera(k, linea, lado):
 AVISOS = "data/tenis/api_tennis/avisos"
 
 
-def guardar(x, lado, pmod, pcas, real):
+def guardar(x, lado, pmod, pcas, real, regla):
     """Cada aviso queda en data/tenis/api_tennis/avisos/<fecha>.csv (y se sube a la rama) para
     evaluarlo en papel con el resultado final (evaluar_juegos.py)."""
     import csv
@@ -88,15 +94,15 @@ def guardar(x, lado, pmod, pcas, real):
     from datetime import datetime, timezone
     ahora = datetime.now(timezone.utc)
     os.makedirs(AVISOS, exist_ok=True)
-    ruta = f"{AVISOS}/{ahora:%Y-%m-%d}.csv"
+    ruta = f"{AVISOS}/{ahora:%Y-%m-%d}_papel.csv"     # desde el 01/10: con la columna "regla"
     nuevo = not os.path.exists(ruta)
     with open(ruta, "a", newline="") as fh:
         w = csv.writer(fh)
         if nuevo:
             w.writerow(["hora", "event_key", "tipo", "torneo", "jugador1", "jugador2", "lado", "linea",
-                        "prob_modelo", "prob_casa", "cuota_api", "calibrado"])
+                        "prob_modelo", "prob_casa", "cuota_api", "calibrado", "regla"])
         w.writerow([f"{ahora:%Y-%m-%d %H:%M}", x.event_key, x.tipo, x.torneo, x.jugador1, x.jugador2, lado,
-                    x.linea, round(pmod, 4), round(pcas, 4), real, bool(CAL.get("activo"))])
+                    x.linea, round(pmod, 4), round(pcas, 4), real, bool(CAL.get("coef")), regla])
     if os.environ.get("GITHUB_ACTIONS"):
         orden = (f'git add {AVISOS} && git commit -q -m "Tenis aviso ({ahora:%Y-%m-%dT%H:%M})" && '
                  'for i in 1 2 3 4 5; do git pull -q --rebase origin ccr-3c3cfe57-etcioo && '
@@ -145,47 +151,66 @@ def lineas():
                           "jugador2": p.get("event_second_player"), "mercado": "total_juegos", "linea": ln,
                           "cuota": t["Over"], "cuota_rival": t["Under"],
                           "prob_mercado": Q.sin_margen(t["Over"], t["Under"]),
-                          "prob_modelo": C.aplicar(CAL, sum(x for k, x in r["total"].items() if k > ln),
-                                                   Q.sin_margen(t["Over"], t["Under"]),
-                                                   sum(x for k, x in r2["total"].items() if k > ln))})
-    return J.principales(pd.DataFrame(filas)) if filas else pd.DataFrame()
+                          "prob_modelo": sum(x for k, x in r["total"].items() if k > ln),
+                          "prob_modelo_directo": sum(x for k, x in r2["total"].items() if k > ln),
+                          "jugados": sum(e["previos"]) + e["ga"] + e["gb"]})
+    if not filas:
+        return pd.DataFrame()
+    pr = J.principales(pd.DataFrame(filas))
+    pr["p_aprendida"] = [C.aplicar(CAL, f) for f in pr.to_dict("records")]
+    return pr
+
+
+def reglas(x):
+    """{regla: (lado, p_regla, p_casa, cuota_real)} de las reglas que se cumplen en esta línea."""
+    pm, pa = float(x.prob_mercado), float(x.p_aprendida)
+    out = {}
+    if 1 - pm > UMBRAL and 1 - pa > UMBRAL:
+        real = float(x.cuota_rival)
+        if 1 - pm <= TECHO or real >= CUOTA_BUENA:
+            out["actual"] = ("menos", 1 - pa, 1 - pm, real)
+    if 1 - pm >= 0.65:
+        out["casa65"] = ("menos", 1 - pm, 1 - pm, float(x.cuota_rival))
+    if abs(pa - pm) >= C.UMBRAL:
+        mas = pa > pm
+        out["aprendida"] = ("más" if mas else "menos", pa if mas else 1 - pa, pm if mas else 1 - pm,
+                            float(x.cuota if mas else x.cuota_rival))
+    return out
 
 
 def main():
     fin = time.time() + MINUTOS * 60
-    racha, avisados, fallos = {}, set(), 0
+    racha, hechos, fallos = {}, set(), 0
     while time.time() < fin:
         t0 = time.time()
         try:
             pr = lineas()
             vistos = set()
             for _, x in pr.iterrows():
-                pm, mo = float(x.prob_mercado), float(x.prob_modelo)
-                # solo el MENOS (30/09, usuario): en el más el modelo exagera y la línea que sube va en contra.
-                # Se reabre si la evaluación en papel demuestra lo contrario.
-                lado = "menos" if 1 - pm > UMBRAL and 1 - mo > UMBRAL else None
                 k = x.event_key
-                vistos.add(k)
-                n = racha[k][1] + 1 if lado and racha.get(k, (None, 0))[0] == lado else (1 if lado else 0)
-                racha[k] = (lado, n)
-                pmod, pcas = (mo, pm) if lado == "más" else (1 - mo, 1 - pm)
-                real = float(x.cuota if lado == "más" else x.cuota_rival)
-                if lado and n >= PASADAS and (pcas <= TECHO or real >= CUOTA_BUENA) and (k, lado) not in avisados:
-                    avisados.add((k, lado))
-                    guardar(x, lado, pmod, pcas, real)
-                    ln, mn = f"{x.linea:g}".replace(".", ","), f"{1 / pcas:.2f}".replace(".", ",")
-                    avisar(f"{x.jugador1} VS {x.jugador2} | {lado} de {ln} juegos | modelo {pmod:.0%} / cuota {pcas:.0%} | "
-                           f"mínima {mn} | {J.torneo(x.tipo, x.torneo)}\n"
-                           f"Si la línea ya cambió ({lado}, modelo/casa): {escalera(k, float(x.linea), lado)}",
-                           (x.jugador1, x.jugador2), stake.enlace(x.tipo, x.torneo))
-            for k in set(racha) - vistos:
-                racha.pop(k)
+                rg = reglas(x)
+                for nombre in ("actual", "casa65", "aprendida"):
+                    clave = (k, nombre)
+                    vistos.add(clave)
+                    lado = rg[nombre][0] if nombre in rg else None
+                    n = racha[clave][1] + 1 if lado and racha.get(clave, (None, 0))[0] == lado else (1 if lado else 0)
+                    racha[clave] = (lado, n)
+                    if lado and n >= PASADAS and (k, nombre, lado) not in hechos:
+                        hechos.add((k, nombre, lado))
+                        _, preg, pcas, real = rg[nombre]
+                        guardar(x, lado, preg, pcas, real, nombre)
+                        ln, mn = f"{x.linea:g}".replace(".", ","), f"{1 / pcas:.2f}".replace(".", ",")
+                        avisar(f"[{nombre}] {x.jugador1} VS {x.jugador2} | {lado} de {ln} juegos | modelo {preg:.0%} / "
+                               f"cuota {pcas:.0%} | mínima {mn} | {J.torneo(x.tipo, x.torneo)}",
+                               (x.jugador1, x.jugador2), stake.enlace(x.tipo, x.torneo))
+            for c in set(racha) - vistos:
+                racha.pop(c)
             fallos = 0
         except Exception as ex:  # una pasada fallida no para el vigilante
             fallos += 1
             print(f"pasada fallida: {type(ex).__name__}: {str(ex)[:150]}", flush=True)
             if fallos == 5:
-                avisar("Vigilante de tenis: 5 fallos seguidos leyendo la API (¿clave caducada?)")
+                avisar("Vigilante de tenis: 5 fallos seguidos leyendo la API (¿clave caducada?)", forzar=True)
         time.sleep(max(5, CADA - (time.time() - t0)))
 
 

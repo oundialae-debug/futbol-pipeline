@@ -118,24 +118,32 @@ def main():
         for _, r in s.iterrows():
             lin.append(f"| {J.torneo(r.tipo, r.torneo)}: {r.jugador1} vs {r.jugador2} | {r.linea:g} | "
                        f"{r.cuota_menos:.2f} | {r.juegos_totales} | {'gana' if r.gana else 'pierde'} |")
-    # avisos reales del vigilante (cada minuto, regla del usuario), con su cuota de la API
+    # avisos del vigilante: hasta el 01/10 llegaban al móvil (regla "actual"); desde entonces, solo papel y
+    # tres reglas (vigilante_juegos.py). Uno por partido, regla y lado.
     av = [pd.read_csv(f) for f in sorted(glob.glob("data/tenis/api_tennis/avisos/*.csv"))]
     if av:
-        a = pd.concat(av).sort_values("hora").drop_duplicates(["event_key", "lado"])   # uno por partido (los reinicios repiten)
+        a = pd.concat(av)
+        if "regla" not in a:
+            a["regla"] = np.nan
+        a["regla"] = a.regla.fillna("actual (al móvil)")
+        a = a.sort_values("hora").drop_duplicates(["event_key", "regla", "lado"])
         a = a.merge(res[["event_key", "juegos_totales"]], on="event_key")
         a["gana"] = np.where(a.lado == "menos", a.juegos_totales < a.linea, a.juegos_totales > a.linea)
         a["benef"] = np.where(a.gana, a.cuota_api.astype(float) - 1, -1.0)
-        lin += ["", "## Avisos del vigilante (lo que llega al móvil)", "",
-                "| lado | avisos resueltos | aciertos | beneficio medio (cuota API) | sigmas |", "|---|---|---|---|---|"]
-        for lado, g in a.groupby("lado"):
-            lin.append(resumen(lado, g).replace("| ", f"| ", 1))
-        if not len(a):
-            lin.append("| (ninguno resuelto aún) | 0 | | | |")
+        lin += ["", "## Reglas del vigilante (desde el 01/10 solo en papel)", "",
+                "| regla | apuestas resueltas | aciertos | beneficio medio (cuota API) | sigmas |", "|---|---|---|---|---|"]
+        for regla, g in a.groupby("regla"):
+            lin.append(resumen(regla, g))
     lin += previa(res)
     cal = C.ajustar()
     lin += ["", "## Aprendizaje (recalibración del modelo)", "",
             f"Partidos resueltos: {cal['partidos']} ({cal['filas']} líneas). Activa: **{'sí' if cal['activo'] else 'no'}** "
-            f"(hace falta {C.MIN_PARTIDOS}+ partidos y que mejore al modelo en partidos que no vio)."]
+            f"(hace falta {C.MIN_PARTIDOS}+ partidos y que mejore a la CASA en partidos que no vio)."]
+    pp = cal.get("papel_por_dias")
+    if pp:
+        lin.append(f"**Apostando con lo aprendido, día a día** (cada día aprende solo de los anteriores): "
+                   f"{pp['apuestas']} apuestas, aciertos {pp['aciertos']:.0%}, beneficio medio {pp['beneficio_medio']:+.1%}"
+                   + (f", {pp['sigmas']:+.2f} sigmas." if pp.get("sigmas") is not None else "."))
     if cal.get("coef"):
         lin.append(f"Brier (menor es mejor): modelo {cal['brier_modelo']:.4f}, modelo con el saque de hoy "
                    f"{cal['brier_modelo_directo']:.4f}, casa {cal['brier_casa']:.4f}, "
