@@ -6,3 +6,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-01 03:33,12166491,Atp Singles,Tokyo,L. Darderi,C. Ruud,menos,22.5,0.6321,0.6077,1.533,True
 2026-10-01 03:34,12166961,Wta Singles,Beijing,Q. Zheng,H. Shi,menos,19.5,0.6879,0.5576,1.666,True
 2026-10-01 03:43,12166972,Challenger Women Singles,Jingshan,A. Ibragimova,K. Okamura,menos,19.5,0.6317,0.5576,1.666,True
+2026-10-01 03:52,12167383,Itf Men Singles,M15 Luan 4,Z. Zhao,M. Purcell,menos,14.5,0.6851,0.6077,1.533,True
