@@ -1,14 +1,14 @@
 # Más/menos juegos en directo: apuestas en papel
 
-Partidos acabados con cuota de juegos en el registro: **96**. Una apuesta por partido (se agrupa por partido). Cuota = la de la API en esa pasada, no la de Luckia. Con menos de 20 apuestas el número no significa nada.
+Partidos acabados con cuota de juegos en el registro: **111**. Una apuesta por partido (se agrupa por partido). Cuota = la de la API en esa pasada, no la de Luckia. Con menos de 20 apuestas el número no significa nada.
 
 | estrategia | apuestas | aciertos | beneficio medio | sigmas |
 |---|---|---|---|---|
-| **señal: vigilar el menos** | 25 | 68% | +16.0% | +0.94 |
-| control: siempre el menos (1ª pasada) | 96 | 59% | +8.4% | +0.90 |
-| control: siempre el más (1ª pasada) | 96 | 41% | -23.1% | -2.42 |
+| **señal: vigilar el menos** | 28 | 64% | +7.1% | +0.44 |
+| control: siempre el menos (1ª pasada) | 111 | 58% | +5.4% | +0.62 |
+| control: siempre el más (1ª pasada) | 111 | 42% | -20.1% | -2.25 |
 
-Brier del 'más' en la línea principal (1ª pasada): modelo 0.3038, mercado 0.2501 (menor es mejor). El modelo da al más +23.5% sobre lo que pasa de verdad.
+Brier del 'más' en la línea principal (1ª pasada): modelo 0.3008, mercado 0.2506 (menor es mejor). El modelo da al más +22.1% sobre lo que pasa de verdad.
 
 ## Señales
 
@@ -24,6 +24,7 @@ Brier del 'más' en la línea principal (1ª pasada): modelo 0.3038, mercado 0.2
 | WTA 125 Adana (Turkey): A. Ruzic vs J. Riera | 19.5 | 1.44 | 19 | gana |
 | Challenger Porto: L. Potenza vs I. Montes-De La Torre | 17.5 | 1.36 | 17 | gana |
 | Challenger Columbus: B. Shick vs M. Rottgering | 16.5 | 1.57 | 17 | pierde |
+| WTA 125 Jingshan: A. Falei vs K. Sidorova | 22.5 | 1.91 | 33 | pierde |
 | ATP 500 Tokyo: T. Fritz vs J. Munar | 33.5 | 1.61 | 32 | gana |
 | WTA 1000 Beijing: Q. Zheng vs H. Shi | 25.5 | 1.83 | 31 | pierde |
 | WTA 1000 Beijing: M. Hontama vs K. Boulter | 21.5 | 1.91 | 19 | gana |
@@ -31,6 +32,7 @@ Brier del 'más' en la línea principal (1ª pasada): modelo 0.3038, mercado 0.2
 | WTA 125 Jingshan: S. Lansere vs S. Costoulas | 16.5 | 2.62 | 19 | pierde |
 | WTA 125 Jingshan: J. Bouzas Maneiro vs Y. Wang | 14.5 | 1.44 | 14 | gana |
 | ITF M M15 Telavi 2 (Georgia): N. Rispoli vs S. Purtseladze | 25.5 | 1.80 | 26 | pierde |
+| ITF M M25 Slobozia (Romania): F. C. Jianu vs M. Todoran | 18.5 | 1.17 | 19 | pierde |
 | WTA 125 Adana (Turkey): C. Buyukakcay vs L. Stefanini | 31.5 | 2.62 | 31 | gana |
 | Challenger Mouilleron-Le-Captif: L. Poullain vs R. Bertola | 31.5 | 1.83 | 30 | gana |
 | Challenger Columbus: L. Staeheli vs A. Andrade | 22.5 | 1.36 | 22 | gana |
@@ -38,20 +40,21 @@ Brier del 'más' en la línea principal (1ª pasada): modelo 0.3038, mercado 0.2
 | ATP 500 Tokyo: J. Faria vs A. Fery | 29.5 | 1.33 | 29 | gana |
 | ITF M M15 Luan 4: K. Ogura vs D. J. Kim | 26.5 | 2.75 | 31 | pierde |
 | ITF M M15 Luan 4: Y. Taka vs I. Becroft | 22.5 | 1.83 | 17 | gana |
+| ITF M M15 Baku 2 (Azerbaijan): J. Connel vs N. Jadoun | 21.5 | 1.01 | 21 | gana |
 | ITF M M15 Sharm ElSheikh 11: F. Zakaria vs G. El Feky | 25.5 | 1.80 | 27 | pierde |
 
 ## Avisos del vigilante (lo que llega al móvil)
 
 | lado | avisos resueltos | aciertos | beneficio medio (cuota API) | sigmas |
 |---|---|---|---|---|
-| menos | 68 | 69% | +6.9% | +0.78 |
+| menos | 83 | 64% | -2.1% | -0.26 |
 
 ## Previos (antes de empezar), línea principal de juegos y ganador
 
-67 partidos. Juegos (más de la línea principal), Brier (menor es mejor): modelo 0.3098, modelo corregido con el historial 0.2772, casa 0.2499. Pasó el más en el 46%.
-Ganador (67): acierto modelo 63%, casa 78%.
+89 partidos. Juegos (más de la línea principal), Brier (menor es mejor): modelo 0.3173, modelo corregido con el historial 0.2735, casa 0.2504. Pasó el más en el 44%.
+Ganador (89): acierto modelo 67%, casa 80%.
 
 ## Aprendizaje (recalibración del modelo)
 
-Partidos resueltos: 96 (695 líneas). Activa: **sí** (hace falta 30+ partidos y que mejore al modelo en partidos que no vio).
-Brier (menor es mejor): modelo 0.2961, modelo con el saque de hoy 0.2857, casa 0.2418, recalibrado (validado por partidos) 0.2327. Sesgo del modelo hacia el más: +23.9%.
+Partidos resueltos: 111 (824 líneas). Activa: **sí** (hace falta 30+ partidos y que mejore al modelo en partidos que no vio).
+Brier (menor es mejor): modelo 0.2919, modelo con el saque de hoy 0.2822, casa 0.2419, recalibrado (validado por partidos) 0.2347. Sesgo del modelo hacia el más: +22.4%.
