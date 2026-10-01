@@ -1,14 +1,14 @@
 # Más/menos juegos en directo: apuestas en papel
 
-Partidos acabados con cuota de juegos en el registro: **74**. Una apuesta por partido (se agrupa por partido). Cuota = la de la API en esa pasada, no la de Luckia. Con menos de 20 apuestas el número no significa nada.
+Partidos acabados con cuota de juegos en el registro: **96**. Una apuesta por partido (se agrupa por partido). Cuota = la de la API en esa pasada, no la de Luckia. Con menos de 20 apuestas el número no significa nada.
 
 | estrategia | apuestas | aciertos | beneficio medio | sigmas |
 |---|---|---|---|---|
-| **señal: vigilar el menos** | 24 | 71% | +20.8% | +1.22 |
-| control: siempre el menos (1ª pasada) | 74 | 62% | +14.6% | +1.39 |
-| control: siempre el más (1ª pasada) | 74 | 38% | -28.3% | -2.62 |
+| **señal: vigilar el menos** | 25 | 68% | +16.0% | +0.94 |
+| control: siempre el menos (1ª pasada) | 96 | 59% | +8.4% | +0.90 |
+| control: siempre el más (1ª pasada) | 96 | 41% | -23.1% | -2.42 |
 
-Brier del 'más' en la línea principal (1ª pasada): modelo 0.3107, mercado 0.2530 (menor es mejor). El modelo da al más +25.7% sobre lo que pasa de verdad.
+Brier del 'más' en la línea principal (1ª pasada): modelo 0.3038, mercado 0.2501 (menor es mejor). El modelo da al más +23.5% sobre lo que pasa de verdad.
 
 ## Señales
 
@@ -38,19 +38,20 @@ Brier del 'más' en la línea principal (1ª pasada): modelo 0.3107, mercado 0.2
 | ATP 500 Tokyo: J. Faria vs A. Fery | 29.5 | 1.33 | 29 | gana |
 | ITF M M15 Luan 4: K. Ogura vs D. J. Kim | 26.5 | 2.75 | 31 | pierde |
 | ITF M M15 Luan 4: Y. Taka vs I. Becroft | 22.5 | 1.83 | 17 | gana |
+| ITF M M15 Sharm ElSheikh 11: F. Zakaria vs G. El Feky | 25.5 | 1.80 | 27 | pierde |
 
 ## Avisos del vigilante (lo que llega al móvil)
 
 | lado | avisos resueltos | aciertos | beneficio medio (cuota API) | sigmas |
 |---|---|---|---|---|
-| menos | 49 | 69% | +5.1% | +0.50 |
+| menos | 68 | 69% | +6.9% | +0.78 |
 
 ## Previos (antes de empezar), línea principal de juegos y ganador
 
-43 partidos. Juegos (más de la línea principal), Brier (menor es mejor): modelo 0.3292, modelo corregido con el historial 0.2838, casa 0.2484. Pasó el más en el 40%.
-Ganador (43): acierto modelo 60%, casa 72%.
+67 partidos. Juegos (más de la línea principal), Brier (menor es mejor): modelo 0.3098, modelo corregido con el historial 0.2772, casa 0.2499. Pasó el más en el 46%.
+Ganador (67): acierto modelo 63%, casa 78%.
 
 ## Aprendizaje (recalibración del modelo)
 
-Partidos resueltos: 74 (535 líneas). Activa: **sí** (hace falta 30+ partidos y que mejore al modelo en partidos que no vio).
-Brier (menor es mejor): modelo 0.3020, modelo con el saque de hoy 0.2911, casa 0.2422, recalibrado (validado por partidos) 0.2231. Sesgo del modelo hacia el más: +27.0%.
+Partidos resueltos: 96 (695 líneas). Activa: **sí** (hace falta 30+ partidos y que mejore al modelo en partidos que no vio).
+Brier (menor es mejor): modelo 0.2961, modelo con el saque de hoy 0.2857, casa 0.2418, recalibrado (validado por partidos) 0.2327. Sesgo del modelo hacia el más: +23.9%.
