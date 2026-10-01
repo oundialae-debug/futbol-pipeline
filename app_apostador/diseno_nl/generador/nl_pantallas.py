@@ -49,9 +49,11 @@ SEL = {  # nombre API: (corto, código FIFA, casa (c1, c2), fuera (c1, c2), un c
     "Ghana": ("Ghana", "GHA", (BLANCO, "#006B3F"), ("#006B3F", "#FCD116"), True),
 }
 for nombre, (corto, cod, casa, fuera, una) in SEL.items():
-    equipaciones.KITS[nombre] = (casa, fuera)
-    if una:
-        equipaciones.UN_COLOR.add(nombre)
+    if nombre not in equipaciones.REALES:   # las reales (colores/equipaciones.json) mandan
+        equipaciones.KITS[nombre] = (casa, fuera)
+        if una:
+            equipaciones.UN_COLOR.add(nombre)
+    casa = equipaciones.KITS[nombre][0]
     real_ui.EQ[nombre] = (corto, cod, casa[0], equipaciones.texto_sobre(casa[0]))
     real_ui.CORTO_A_LARGO[corto] = nombre
 for f in N["fifa"]:  # el resto: código FIFA y color neutro

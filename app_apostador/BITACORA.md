@@ -533,3 +533,23 @@ carpeta se apunta aquí.
   «Last meeting» con el minuto a minuto y los cara a cara anteriores; regla
   de colores sin choques; trampas nuevas de la API (ciudad, tildes,
   head-to-head corto, /lineups, temporada de la MLS, vídeos fuera).
+
+## 01/10/2026: colores reales de las equipaciones, publicados
+
+- **Descarga** (GitHub Actions, `colores_2yellow.yml`): fichas de 79 equipos y
+  186 de 188 dibujos de camiseta (faltan la 3ª del Madrid y uno viejo de
+  Túnez, sin dibujo en Commons). `colores/curar.py` saca
+  `colores/equipaciones.json`: 1ª, 2ª y 3ª de cada equipo.
+- **Corregido a mano, con motivo en `curar.py`:** en las rayas y cuadros manda
+  el color del club, no el que más píxeles ocupa (Croacia, Argentina,
+  Atlético, Athletic, Real Sociedad, Girona, Espanyol, Alavés, Deportivo,
+  Betis, Málaga, Barça); Mallorca y Chequia (la 1ª es roja lisa); Suecia no
+  tiene campos de equipación en Wikipedia.
+- **Reglas:** `equipaciones.py` carga el JSON y manda sobre las tablas viejas.
+  En un partido, el visitante usa la primera equipación que no choque. En las
+  listas, una franja de dos colores se distingue de una lisa del mismo color
+  (Croacia a cuadros frente a España roja); dos lisas parecidas, nunca.
+  Grupo 1: España roja, Inglaterra blanca, Croacia a cuadros, Chequia azul.
+- **LaLiga:** pantalla de colores con 1ª, 2ª y 3ª; 0 choques en las 380
+  parejas.
+- **Publicado:** lienzo NL (versión 9) y lienzo LaLiga (versión 13).

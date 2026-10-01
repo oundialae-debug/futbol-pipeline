@@ -42,6 +42,16 @@ UN_COLOR = {"Real Madrid", "Villarreal", "Getafe", "Celta de Vigo", "Valencia", 
             "Mallorca", "Oviedo"}
 
 
+# Equipaciones reales 2026/27 (1ª, 2ª y 3ª) medidas en Wikipedia: app_apostador/colores/
+# (petición del usuario, 01/10/2026). Mandan sobre la tabla de arriba.
+import json as _json  # noqa: E402
+from pathlib import Path as _Path  # noqa: E402
+_REALES = _Path(__file__).resolve().parents[2] / "colores" / "equipaciones.json"
+if _REALES.exists():
+    for _e, _ks in _json.loads(_REALES.read_text()).items():
+        KITS[_e] = tuple(tuple(k) for k in _ks)
+REALES = set(_json.loads(_REALES.read_text())) if _REALES.exists() else set()
+
 def _rgb(h):
     h = h.lstrip("#")
     return tuple(int(h[i:i + 2], 16) / 255 for i in (0, 2, 4))
@@ -110,34 +120,38 @@ def n_kits(equipo):
     return len(KITS.get(equipo, ((), ())))
 
 
-def _sin_choque(equipo, ocupados):
-    """Primera equipación (1ª, 2ª, 3ª) que no choca con ningún color ya puesto;
-    si todas chocan, la que más se separa del más parecido."""
-    mejor, dmejor = None, -1
-    for i in range(n_kits(equipo)):
-        k = kit(equipo, i)
-        d = min((distancia(k["barra"], o) for o in ocupados), default=999)
-        if d >= 30:
+def se_parecen(a, b, estricto=True):
+    """¿Se confunden dos equipaciones? En un partido (estricto) basta con que el
+    color principal se parezca. En una lista de franjas, una de dos colores
+    (Croacia, a cuadros rojos y blancos) se distingue de una lisa del mismo
+    color (España, roja): solo se confunden si las dos son lisas o si los dos
+    colores se parecen."""
+    if distancia(a["barra"], b["barra"]) >= 30:
+        return False
+    if estricto or (a["una"] and b["una"]):
+        return True
+    if a["una"] != b["una"]:
+        return False
+    return distancia(a["c2"], b["c2"]) < 30
+
+
+def _sin_choque(equipo, ocupados, estricto=True):
+    """Primera equipación (1ª, 2ª, 3ª) que no se confunde con ninguna ya puesta;
+    si todas se confunden, el color secundario de alguna como principal; si aun
+    así, la que más se separa."""
+    cands = [kit(equipo, i) for i in range(n_kits(equipo))]
+    cands += [{**b, "c1": b["c2"], "c2": b["c1"], "barra": legible(b["c2"]), "texto": texto_sobre(b["c2"]), "una": True} for b in cands]
+    for k in cands:
+        if not any(se_parecen(k, o, estricto) for o in ocupados):
             return k
-        if d > dmejor:
-            mejor, dmejor = k, d
-    # todas chocan: el color secundario de alguna equipación como principal (Chequia: el azul del pantalón)
-    for i in range(n_kits(equipo)):
-        b = kit(equipo, i)
-        k = {**b, "c1": b["c2"], "c2": b["c1"], "barra": legible(b["c2"]), "texto": texto_sobre(b["c2"]), "una": True}
-        d = min((distancia(k["barra"], o) for o in ocupados), default=999)
-        if d >= 30:
-            return k
-        if d > dmejor:
-            mejor, dmejor = k, d
-    return mejor
+    return max(cands, key=lambda k: min((distancia(k["barra"], o["barra"]) for o in ocupados), default=999))
 
 
 def colores_partido(local, visitante):
     """(kit local, kit visitante) sin choques: el local con la 1ª; el visitante
     con la 1ª, 2ª o 3ª, la primera que no choque (como en la TV)."""
     l = kit(local, 0)
-    return l, _sin_choque(visitante, [l["barra"]])
+    return l, _sin_choque(visitante, [l])
 
 
 def colores_grupo(equipos, fijos=None):
@@ -145,13 +159,13 @@ def colores_grupo(equipos, fijos=None):
     en el orden dado, cada uno la primera equipación que no choque con las ya
     puestas. Así España (roja) y Chequia no salen las dos en rojo."""
     out = dict(fijos or {})   # p. ej. los dos del partido, ya con sus colores
-    ocupados = [k["barra"] for k in out.values()]
+    ocupados = list(out.values())
     for e in equipos:
         if e in out:
             continue
-        k = _sin_choque(e, ocupados)
+        k = _sin_choque(e, ocupados, estricto=False)
         out[e] = k
-        ocupados.append(k["barra"])
+        ocupados.append(k)
     return out
 
 
@@ -160,9 +174,9 @@ def colores_lista(equipos):
     chocar con la de arriba y la de abajo."""
     out, prev = {}, []
     for e in equipos:
-        k = _sin_choque(e, prev[-1:])
+        k = _sin_choque(e, prev[-1:], estricto=False)
         out[e] = k
-        prev.append(k["barra"])
+        prev.append(k)
     return out
 
 
