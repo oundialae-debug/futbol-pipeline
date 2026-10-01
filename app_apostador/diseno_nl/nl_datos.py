@@ -269,6 +269,83 @@ OUT["historial"] = {"desde": str(Pd.fecha.min()), "pj": int(len(Pd)), "g": int((
                     "mayores": Pd.assign(d=Pd.gf - Pd.gc).sort_values(["d", "gf"], ascending=False).head(3)[["fecha", "riv", "comp", "casa", "gf", "gc"]].to_dict("records")}
 print("historial:", {k: OUT["historial"][k] for k in ("pj", "g", "e", "p", "gf", "gc", "porterias_cero")}, OUT["historial"]["dominio"])
 
+
+# ------------------------------------------------------------------ minuto a minuto (sondeo del 01/10: /matches/{id} de partidos terminados)
+# Trampas comprobadas (IDEAS_API.md): en un cambio `player` SALE y `substituted` ENTRA;
+# un penalti marcado es `Penalty`, no `Goal`; los tiros no cuadran al 100% con las
+# estadísticas del equipo (la lista vale para el minuto a minuto, no para totales).
+import re
+import unicodedata
+RAW = AQUI.parent / "sondeos" / "raw"
+
+
+def minuto(t):
+    n = [int(x) for x in re.findall(r"\d+", str(t))]
+    return (n[0], n[1] if len(n) > 1 else 0) if n else (None, 0)
+
+
+def plano(n):
+    return unicodedata.normalize("NFKD", str(n)).encode("ascii", "ignore").decode().lower()
+
+
+def apellido_ok(a, b):
+    """«Anthony Gordon» y «A. Gordon» son el mismo; compara por el último apellido sin tildes."""
+    return plano(a).split()[-1] == plano(b).split()[-1]
+
+
+def minuto_a_minuto(mid, local, visitante):
+    d = json.loads((RAW / f"match_{mid}.json").read_text())
+    d = d[0] if isinstance(d, list) else d
+    lado = {d["homeTeam"]["id"]: "l", d["awayTeam"]["id"]: "v"}
+    jj = jp[jp.match_id == mid]
+    eqid = {"l": ids[local], "v": ids[visitante]}
+
+    def nota(nombre, l_):
+        # el que entra siempre es suplente: así no se confunden dos con el mismo apellido
+        # (Croacia: Mario Pašalić entra, Marco Pašalić es titular)
+        x = jj[(jj.equipo_id == eqid[l_]) & (jj.suplente == True) & jj.jugador.map(lambda j: apellido_ok(j, nombre))]  # noqa: E712
+        if len(x) > 1:
+            x = x[x.jugador.map(lambda j: plano(j).split()[0][0] == plano(nombre).split()[0][0])]
+        v = pd.to_numeric(x.nota, errors="coerce").dropna()
+        return r(v.iloc[0]) if len(v) else None
+    ev = []
+    for e in d["events"]:
+        m, extra = minuto(e["time"])
+        l_ = lado.get(e["team"]["id"])
+        t = e["type"]
+        tipo = {"Goal": "gol", "Penalty": "gol", "Own Goal": "gol_pp", "Yellow Card": "amarilla", "Red Card": "roja",
+                "Substitution": "cambio", "Missed Penalty": "penalti_fallado"}.get(t, t)
+        x = {"min": m, "extra": extra, "lado": l_, "tipo": tipo, "penalti": t == "Penalty"}
+        if tipo == "cambio":
+            x.update({"sale": e.get("player"), "entra": e.get("substituted"), "nota_entra": nota(e.get("substituted") or "?", l_)})
+        else:
+            x.update({"jugador": e.get("player"), "asist": e.get("assist")})
+        ev.append(x)
+    tiros = []
+    for t_, l_ in (("homeTeam", "l"), ("awayTeam", "v")):
+        for s_ in d[t_]["shots"]:
+            m, extra = minuto(s_["time"])
+            tiros.append({"min": m, "extra": extra, "lado": l_, "jugador": s_["playerName"], "res": s_["outcome"],
+                          "zona": (s_["goalTarget"] or "").replace("CloseLeft", "Close Left")})
+    claves = [plano(w) for w in (local, visitante)] + [plano(x.get("jugador") or x.get("entra") or "").split()[-1]
+                                                       for x in ev if (x.get("jugador") or x.get("entra"))]
+    claves += ["tuchel", "three lions", "croatia", "czech", "spain", "england"]
+    news = []
+    for n_ in d.get("news") or []:
+        tit = plano(n_["title"])
+        if any(k and k in tit for k in claves) and not any(x in tit for x in ("how to watch", "boots", "free stream")):
+            news.append({"titulo": n_["title"], "fuente": n_["url"].split("/")[2].replace("www.", "").replace("undefined", ""),
+                         "fecha": n_["datePublished"][:10]})
+    return {"venue": d.get("venue"), "arbitro": d.get("referee"), "tiempo": d.get("forecast"), "eventos": ev, "tiros": tiros,
+            "news": news[:4], "marcador": d["state"]["score"]["current"]}
+
+
+OUT["minuto"] = {"Czech Republic-England": minuto_a_minuto(1301103194, "Czech Republic", "England"),
+                 "Spain-Croatia": minuto_a_minuto(1301102343, "Spain", "Croatia")}
+for k, v in OUT["minuto"].items():
+    print("minuto", k, v["marcador"], len(v["eventos"]), "eventos,", len(v["tiros"]), "tiros,", len(v["news"]), "noticias",
+          [(e["min"], e["tipo"], e.get("jugador") or (e.get("sale"), e.get("entra"), e.get("nota_entra"))) for e in v["eventos"] if e["tipo"] in ("gol", "roja", "cambio")][:8])
+
 # ------------------------------------------------------------------ grupos de la Liga A y ranking FIFA
 grupos, visto = [], set()
 for eq in sorted(set(A.local) | set(A.visitante)):

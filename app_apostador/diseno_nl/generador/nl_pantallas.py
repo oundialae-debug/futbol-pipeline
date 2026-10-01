@@ -170,6 +170,188 @@ cuerpo = f'''
 H_MAIN = 1340
 common.page("Main.dc.html", "Nations League", 390, H_MAIN, raiz(H_MAIN, cuerpo), JS0, nav_active="m")
 
+# ======================================================================= MINUTO A MINUTO (sondeo del 01/10)
+MM = N["minuto"]
+
+
+def pct(m, extra=0):
+    return min(m + min(extra, 3) * 0.3, 93) / 93 * 100
+
+
+def icono_ev(e, k, tam=14):
+    t = e["tipo"]
+    if t in ("gol", "gol_pp"):
+        return (f'<span style="width: {tam}px; height: {tam}px; border-radius: 50%; background: {LIMA}; box-shadow: 0 0 0 2px {k["barra"]}; '
+                f'display: inline-flex; align-items: center; justify-content: center; color: {BG}; font-size: {tam - 5}px; font-weight: 900">G</span>')
+    if t == "roja":
+        return f'<span style="width: {tam - 4}px; height: {tam}px; border-radius: 2px; background: {ROJO}"></span>'
+    if t == "amarilla":
+        return f'<span style="width: {tam - 5}px; height: {tam - 2}px; border-radius: 2px; background: {AMARILLO}"></span>'
+    return (f'<span style="width: {tam}px; height: {tam}px; border-radius: 50%; background: #2A3040; color: {SOFT}; font-size: {tam - 4}px; font-weight: 800; '
+            f'display: inline-flex; align-items: center; justify-content: center">⇄</span>')
+
+
+def linea_partido(m, kl, kv, nl, nv, alto_barras=34):
+    """Línea 0-90': tiros cada 5 minutos (local arriba, visitante abajo) y los eventos encima."""
+    bins = {"l": [0] * 19, "v": [0] * 19}
+    goles = {"l": set(), "v": set()}
+    for t in m["tiros"]:
+        i = min(t["min"] // 5, 18)
+        bins[t["lado"]][i] += 1
+        if t["res"] == "Goal":
+            goles[t["lado"]].add(i)
+    mx = max(max(bins["l"]), max(bins["v"]), 1)
+    barras = ""
+    for i in range(19):
+        for l_, k in (("l", kl), ("v", kv)):
+            h = bins[l_][i] / mx * alto_barras
+            if not h:
+                continue
+            col = LIMA if i in goles[l_] else k["barra"]
+            top = (alto_barras + 26 - h) if l_ == "l" else (alto_barras + 34)
+            barras += (f'<span style="position: absolute; left: {i / 19 * 100 + 0.6:.1f}%; width: {100 / 19 - 1.2:.1f}%; top: {top:.0f}px; height: {h:.0f}px; '
+                       f'border-radius: 3px; background: {col}; opacity: {1 if i in goles[l_] else 0.85}"></span>')
+    marcas = ""
+    for e in m["eventos"]:
+        if e["tipo"] == "cambio":
+            continue
+        k = kl if e["lado"] == "l" else kv
+        y = 4 if e["lado"] == "l" else alto_barras * 2 + 44
+        marcas += (f'<span style="position: absolute; left: {pct(e["min"], e["extra"]):.1f}%; top: {y}px; margin-left: -7px; display: flex">{icono_ev(e, k)}</span>')
+    eje = alto_barras + 29
+    return (f'<div style="display: flex; justify-content: space-between; font-size: 12px; color: {SOFT}"><span style="display: flex; align-items: center; gap: 6px">{franjas(kl, 14)}{nl}</span>'
+            f'<span>shots every 5 minutes</span></div>'
+            f'<div style="position: relative; height: {alto_barras * 2 + 64}px">'
+            f'<span style="position: absolute; left: 0; right: 0; top: {eje}px; height: 2px; background: #2A3040"></span>'
+            f'<span style="position: absolute; left: 50%; top: 16px; bottom: 16px; width: 1px; background: #2A3040"></span>'
+            f'{barras}{marcas}</div>'
+            f'<div style="display: flex; justify-content: space-between; font-size: 11px; color: {MUT}"><span>0\'</span><span>HT</span><span>90\'</span></div>'
+            f'<div style="display: flex; justify-content: space-between; font-size: 12px; color: {SOFT}"><span style="display: flex; align-items: center; gap: 6px">{franjas(kv, 14)}{nv}</span>'
+            f'<span style="display: flex; align-items: center; gap: 5px"><span style="width: 10px; height: 10px; border-radius: 3px; background: {LIMA}"></span>scored in that spell</span></div>')
+
+
+def ap(n):
+    t = (n or "?").split(" ")
+    return n if len(t) < 2 else f"{t[0][0]}. {' '.join(t[1:])}"
+
+
+def momentos(m, kl, kv, con_cambios=False):
+    filas = ""
+    for e in m["eventos"]:
+        if e["tipo"] == "amarilla" or (e["tipo"] == "cambio" and not con_cambios):
+            continue
+        k = kl if e["lado"] == "l" else kv
+        minuto_txt = f'{e["min"]}\'' + (f'+{e["extra"]}' if e["extra"] else "")
+        if e["tipo"] in ("gol", "gol_pp"):
+            txt = f'<b>{ap(e["jugador"])}</b>' + (" (pen.)" if e["penalti"] else "") + (f'<span style="color: {MUT}"> · assist {ap(e["asist"])}</span>' if e.get("asist") else "")
+        elif e["tipo"] == "roja":
+            txt = f'<b>{ap(e["jugador"])}</b> <span style="color: #FF8A80">sent off</span>'
+        else:
+            txt = f'{ap(e["entra"])} <span style="color: {MUT}">for {ap(e["sale"])}</span>'
+        filas += (f'<div style="display: flex; align-items: center; gap: 10px; padding: 7px 0; border-top: 1px solid #1E2330">'
+                  f'<span style="width: 34px; {DISP}; font-size: 14px; color: {SOFT}">{minuto_txt}</span>{franjas(k, 16)}{icono_ev(e, k, 16)}'
+                  f'<span style="flex-grow: 1; font-size: 13px">{txt}</span></div>')
+    return f'<div style="display: flex; flex-direction: column">{filas}</div>'
+
+
+# ---- informe Chequia - Inglaterra
+KA, KB = kits("Czech Republic", "England")
+MC = MM["Czech Republic-England"]
+roja = next(e for e in MC["eventos"] if e["tipo"] == "roja")
+STORY = tarjeta("Match story", linea_partido(MC, KA, KB, "Czechia", "England") + momentos(MC, KA, KB)
+                + f'<div style="padding: 12px; border-radius: 16px; background: #2A1416; display: flex; gap: 10px; align-items: center">'
+                  f'<span style="width: 12px; height: 16px; border-radius: 2px; background: {ROJO}; flex-shrink: 0"></span>'
+                  f'<span style="font-size: 13px"><b>Turning point · {roja["min"]}\'</b> {ap(roja["jugador"])} sent off at 0–0. Czechia played {90 - roja["min"]} minutes with ten; both goals came after.</span></div>',
+                "minute by minute")
+
+RES_ORD = [("Goal", "Goals", LIMA), ("Saved", "Saved", "#8FA2FF"), ("Post", "Woodwork", NARANJA), ("Blocked", "Blocked", "#5B6378"), ("Missed", "Off target", "#2E3546")]
+
+
+def barra_tiros(m, l_, k, nombre):
+    ts = [t for t in m["tiros"] if t["lado"] == l_]
+    seg = "".join(f'<span style="flex: {sum(t["res"] == r_ for t in ts)} 1 0; background: {c}"></span>' for r_, _, c in RES_ORD if any(t["res"] == r_ for t in ts))
+    return (f'<div style="display: flex; flex-direction: column; gap: 6px"><div style="display: flex; align-items: center; gap: 8px">{franjas(k, 16)}'
+            f'<span style="flex-grow: 1; font-size: 13px; font-weight: 700">{nombre}</span><span style="{DISP}; font-size: 22px; color: {k["barra"]}">{len(ts)}</span></div>'
+            f'<div style="display: flex; height: 12px; border-radius: 6px; overflow: hidden; gap: 2px">{seg}</div></div>')
+
+
+def porteria(m, l_):
+    ts = [t for t in m["tiros"] if t["lado"] == l_ and t["zona"]]
+    c = {}
+    for t in ts:
+        c[t["zona"]] = c.get(t["zona"], 0) + 1
+    g = {}
+    for t in ts:
+        if t["res"] == "Goal":
+            g[t["zona"]] = g.get(t["zona"], 0) + 1
+
+    def celda(z):
+        n = c.get(z, 0)
+        gg = g.get(z, 0)
+        alpha = min(0.15 + n * 0.18, 0.95)
+        return (f'<div style="display: flex; flex-direction: column; align-items: center; justify-content: center; background: rgba(200,255,61,{alpha if n else 0.04:.2f}); '
+                f'color: {BG if n >= 3 else TXT}; border-radius: 4px"><span style="{DISP}; font-size: 20px">{n or ""}</span>'
+                f'{"<span style=" + chr(34) + "font-size: 10px; font-weight: 800" + chr(34) + ">" + str(gg) + " goal" + ("s" if gg > 1 else "") + "</span>" if gg else ""}</div>')
+    lado_txt = lambda z: f'<div style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; color: {MUT}; font-size: 10px"><span style="{DISP}; font-size: 16px; color: {SOFT}">{c.get(z, 0) or "–"}</span>just wide</div>'
+    return (f'<div style="display: grid; grid-template-columns: 54px minmax(0, 1fr) 54px; gap: 6px; align-items: stretch">{lado_txt("Close Left")}'
+            f'<div style="height: 120px; padding: 6px; border: 4px solid {TXT}; border-bottom: none; border-radius: 4px 4px 0 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); grid-template-rows: repeat(2, minmax(0, 1fr)); gap: 4px">'
+            f'{celda("High Left")}{celda("High Centre")}{celda("High Right")}{celda("Low Left")}{celda("Low Centre")}{celda("Low Right")}</div>'
+            f'{lado_txt("Close Right")}</div>')
+
+
+ley = "".join(f'<span style="display: flex; align-items: center; gap: 5px"><span style="width: 10px; height: 10px; border-radius: 3px; background: {c}"></span>{n_}</span>' for _, n_, c in RES_ORD)
+TIROS = tarjeta("Shots", barra_tiros(MC, "l", KA, "Czechia") + barra_tiros(MC, "v", KB, "England")
+                + f'<div style="display: flex; flex-wrap: wrap; gap: 10px; font-size: 11px; color: {MUT}">{ley}</div>'
+                + f'<span style="padding-top: 6px; font-size: 13px; font-weight: 700">Where England aimed</span>' + porteria(MC, "v")
+                + f'<span style="font-size: 11px; color: {MUT}">Shots with a target zone.</span>', "every attempt")
+
+
+def fila_cambio(e, k):
+    n = e["nota_entra"]
+    bg, fg = (LIMA, BG) if n and n >= 7.5 else (("#3A4256", TXT) if n and n >= 6.5 else ((NARANJA, BG) if n else ("#2A3040", MUT)))
+    return (f'<div style="display: flex; align-items: center; gap: 10px; padding: 7px 0; border-top: 1px solid #1E2330">'
+            f'<span style="width: 30px; {DISP}; font-size: 14px; color: {SOFT}">{e["min"]}\'</span>{franjas(k, 16)}'
+            f'<div style="flex-grow: 1; min-width: 0; display: flex; flex-direction: column"><span style="font-size: 13px; font-weight: 700">{ap(e["entra"])}</span>'
+            f'<span style="font-size: 11px; color: {MUT}">for {ap(e["sale"])}</span></div>'
+            f'<span style="padding: 2px 8px; border-radius: 8px; background: {bg}; color: {fg}; {DISP}; font-size: 14px">{f"{n:.1f}" if n else "–"}</span></div>')
+
+
+CAMBIOS = tarjeta("From the bench", "".join(fila_cambio(e, KA if e["lado"] == "l" else KB) for e in MC["eventos"] if e["tipo"] == "cambio")
+                  + f'<span style="font-size: 11px; color: {MUT}">Rating of the player coming on.</span>', "substitutions")
+NEWS = tarjeta("In the news", "".join(
+    f'<div style="display: flex; flex-direction: column; gap: 3px; padding: 9px 0; border-top: 1px solid #1E2330"><span style="font-size: 14px; font-weight: 600; line-height: 1.3; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden">{n_["titulo"]}</span>'
+    f'<span style="font-size: 11px; color: {MUT}">{n_["fuente"]} · {fecha(n_["fecha"])}</span></div>' for n_ in MC["news"]), "after the match")
+v_, ar_, ti_ = MC["venue"], MC["arbitro"], MC["tiempo"]
+SEDE = (f'<div style="margin: 0 12px; padding: 12px 14px; border-radius: 18px; background: {CARD}; border: 1px solid {BORDE}; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px">'
+        f'<div style="display: flex; flex-direction: column; gap: 2px"><span style="font-size: 11px; color: {MUT}">Stadium</span><span style="font-size: 13px; font-weight: 700">{v_["name"]}</span><span style="font-size: 11px; color: {SOFT}">{v_["city"]} · {int(v_["capacity"]):,}</span></div>'
+        f'<div style="display: flex; flex-direction: column; gap: 2px"><span style="font-size: 11px; color: {MUT}">Referee</span><span style="font-size: 13px; font-weight: 700">{ar_["name"].split(",")[1].strip()} {ar_["name"].split(",")[0]}</span><span style="font-size: 11px; color: {SOFT}">{ar_["nationality"].replace("Turkiye", "Türkiye")}</span></div>'
+        f'<div style="display: flex; flex-direction: column; gap: 2px"><span style="font-size: 11px; color: {MUT}">Weather</span><span style="font-size: 13px; font-weight: 700">{round(float(ti_["temperature"].replace("°C", "")))}°C</span><span style="font-size: 11px; color: {SOFT}">{ti_["status"].capitalize()}</span></div></div>')
+
+# ---- previa: el último partido de cada uno
+MS = MM["Spain-Croatia"]
+KS, KCR = kits("Spain", "Croatia")
+
+
+def ultimo(m, kl, kv, nl, nv, titulo, nota_txt):
+    gl, gv = m["marcador"].split(" - ")
+    return (f'<div style="display: flex; flex-direction: column; gap: 10px">'
+            f'<div style="display: flex; align-items: center; justify-content: space-between"><span style="font-size: 12px; font-weight: 800; letter-spacing: 0.6px; color: {MUT}">{titulo}</span>'
+            f'<span style="display: flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 700; white-space: nowrap">{franjas(kl, 14)}{nl} <span style="{DISP}; font-size: 18px">{gl}–{gv}</span> {nv}{franjas(kv, 14)}</span></div>'
+            + linea_partido(m, kl, kv, nl, nv, 24) + momentos(m, kl, kv)
+            + f'<span style="font-size: 12px; color: {SOFT}">{nota_txt}</span></div>')
+
+
+n_tiros_es = sum(t["lado"] == "l" for t in MS["tiros"])
+n_tiros_cr = sum(t["lado"] == "v" for t in MS["tiros"])
+ULTIMO = tarjeta("Last time out",
+                 ultimo(MS, KS, KCR, "Spain", "Croatia", "CROATIA",
+                        f"Croatia level at 1–1 after 28', then conceded three. Shots {n_tiros_cr} to Spain's {n_tiros_es}.")
+                 + '<div style="height: 1px; background: #232838"></div>'
+                 + ultimo(MC, KA, KB, "Czechia", "England", "ENGLAND",
+                          f"England had {sum(t['lado'] == 'v' for t in MC['tiros'])} shots to {sum(t['lado'] == 'l' for t in MC['tiros'])}; Czechia were down to ten from the {roja['min']}th minute."),
+                 "minute by minute")
+
+
 # ======================================================================= PREVIEW Croatia – England
 PV = N["previa"]
 KC, KE = kits("Croatia", "England")
@@ -244,9 +426,10 @@ cuerpo = f'''
 {CC_T}
 {tarjeta("Form", forma_html("Croatia", KC) + forma_html("England", KE), "last 5 · latest on the right")}
 {tarjeta("Likely XIs", '<div style="display: flex; gap: 14px">' + once_html("Croatia", KC) + once_html("England", KE) + '</div>' + f'<span style="font-size: 11px; color: {MUT}">Last XI · fair rating (club form + country)</span>', "fair rating")}
+{ULTIMO}
 {tarjeta("Head to head", H2H, "since 2025")}
 '''
-H_PV = 1870
+H_PV = 2760
 common.page("Partido.dc.html", "Croatia – England preview", 390, H_PV, raiz(H_PV, cuerpo), JS0, nav_active="m")
 
 # ======================================================================= REPORT Czechia 0–2 England
@@ -350,8 +533,8 @@ PORTERO = tarjeta("Goalkeepers", "".join(
     f'<span style="font-size: 12px; color: {MUT}">{g["paradas"]} saves</span>'
     f'{chip_gk(g["evitados"]) if g["evitados"] is not None else ""}</div>'
     for g in gk), "shot-stopping")
-cuerpo = cabecera("Report") + MERECIDO + MERCADO + STATS + NOTAS + PORTERO
-H_REP = 2100
+cuerpo = cabecera("Report") + SEDE + STORY + MERECIDO + TIROS + MERCADO + STATS + NOTAS + CAMBIOS + PORTERO + NEWS
+H_REP = 4170
 common.page("Report.dc.html", "Czechia 0-2 England report", 390, H_REP, raiz(H_REP, cuerpo), JS0, nav_active="m")
 
 # ---------------------------------------------------------------- alineaciones

@@ -88,47 +88,43 @@ sr = POS["Report"]["secciones"]
 sh = POS["Historial"]["secciones"]
 c = lambda n, i: cerca(n, POS[n]["secciones"][i])
 s_al = min(120, maxs("Alineacion"))
-# (inicio, fin, pantalla, desplazamiento de, a)
-GUION = [
-    (0.0, 2.2, "Main", 0, 0),                     # toque en Chequia 0-2 Inglaterra a los 1,7 s
-    (2.2, 2.8, ("Main", "Report"), 0, 0),
-    (2.8, 4.6, "Report", 0, 0),
-    (4.6, 5.8, "Report", 0, c("Report", 0)),      # ¿merecido?
-    (5.8, 8.0, "Report", c("Report", 0), c("Report", 0)),
-    (8.0, 9.4, "Report", c("Report", 0), c("Report", 1)),   # nuestro pronóstico contra las casas
-    (9.4, 11.6, "Report", c("Report", 1), c("Report", 1)),
-    (11.6, 13.0, "Report", c("Report", 1), c("Report", 2)),  # estadísticas
-    (13.0, 14.6, "Report", c("Report", 2), c("Report", 2)),
-    (14.6, 16.0, "Report", c("Report", 2), c("Report", 3)),  # mejores jugadores
-    (16.0, 17.6, "Report", c("Report", 3), c("Report", 3)),
-    (17.6, 18.8, "Report", c("Report", 3), 0),
-    (18.8, 19.6, "Report", 0, 0),                 # toque en Lineups a los 19,1 s
-    (19.6, 20.2, ("Report", "Alineacion"), 0, 0),
-    (20.2, 21.4, "Alineacion", 0, 0),
-    (21.4, 22.4, "Alineacion", 0, s_al),
-    (22.4, 24.4, "Alineacion", s_al, s_al),       # toque en el corazón a los 24,0 s
-    (24.4, 25.0, ("Alineacion", "Equipo"), s_al, 0),
-    (25.0, 26.4, "Equipo", 0, 0),                 # toque en Record a los 25,9 s
-    (26.4, 27.0, ("Equipo", "Historial"), 0, 0),
-    (27.0, 29.0, "Historial", 0, 0),
-    (29.0, 30.4, "Historial", 0, c("Historial", 1)),        # clasificación 8/8
-    (30.4, 32.0, "Historial", c("Historial", 1), c("Historial", 1)),
-    (32.0, 33.2, "Historial", c("Historial", 1), c("Historial", 2)),  # Mundial
-    (33.2, 34.8, "Historial", c("Historial", 2), c("Historial", 2)),
-    (34.8, 36.0, "Historial", c("Historial", 2), c("Historial", 3)),  # cómo juega
-    (36.0, 37.6, "Historial", c("Historial", 3), c("Historial", 3)),
-    (37.6, 38.8, "Historial", c("Historial", 3), c("Historial", 4)),  # porterías a cero
-    (38.8, 40.2, "Historial", c("Historial", 4), c("Historial", 4)),
-    (40.2, 41.6, "Historial", c("Historial", 4), maxs("Historial")),  # victorias y derrotas
-    (41.6, 43.4, "Historial", maxs("Historial"), maxs("Historial")),
+# Guion por tramos: (duración, pantalla, desplazamiento de, a); los tiempos se suman solos.
+R = lambda i: c("Report", i)
+H_ = lambda i: c("Historial", i)
+TRAMOS = [
+    (2.2, "Main", 0, 0),                          # toque en Chequia 0-2 Inglaterra
+    (0.6, ("Main", "Report"), 0, 0),
+    (1.6, "Report", 0, 0),
+    (1.2, "Report", 0, R(0)), (3.2, "Report", R(0), R(0)),            # Match story: roja 25', goles 47' y 69'
+    (1.2, "Report", R(0), R(1)), (2.2, "Report", R(1), R(1)),         # ¿merecido?
+    (1.2, "Report", R(1), R(2)), (2.4, "Report", R(2), R(2)),         # tiros y dónde apuntó Inglaterra
+    (1.2, "Report", R(2), R(3)), (2.2, "Report", R(3), R(3)),         # nuestro pronóstico contra las casas
+    (1.4, "Report", R(3), R(6)), (2.4, "Report", R(6), R(6)),         # desde el banquillo
+    (1.4, "Report", R(6), 0), (0.8, "Report", 0, 0),                  # arriba; toque en Lineups
+    (0.6, ("Report", "Alineacion"), 0, 0),
+    (1.2, "Alineacion", 0, 0), (1.0, "Alineacion", 0, s_al), (2.0, "Alineacion", s_al, s_al),   # toque en el corazón
+    (0.6, ("Alineacion", "Equipo"), s_al, 0),
+    (1.4, "Equipo", 0, 0),                        # toque en Record
+    (0.6, ("Equipo", "Historial"), 0, 0),
+    (2.0, "Historial", 0, 0),
+    (1.4, "Historial", 0, H_(1)), (1.6, "Historial", H_(1), H_(1)),   # clasificación 8/8
+    (1.2, "Historial", H_(1), H_(2)), (1.6, "Historial", H_(2), H_(2)),  # Mundial
+    (1.2, "Historial", H_(2), H_(3)), (1.6, "Historial", H_(3), H_(3)),  # cómo juega
+    (1.2, "Historial", H_(3), H_(4)), (1.4, "Historial", H_(4), H_(4)),  # porterías a cero
+    (1.4, "Historial", H_(4), maxs("Historial")), (1.8, "Historial", maxs("Historial"), maxs("Historial")),
 ]
+GUION, t0 = [], 0.0
+for dur, pant, s1, s2 in TRAMOS:
+    GUION.append((t0, t0 + dur, pant, s1, s2))
+    t0 += dur
+fin_de = lambda i: GUION[i][1]        # final de un tramo, para colocar los toques
 t1, t2 = POS["Report"]["tab"], POS["Equipo"]["tab"]
 cz = POS["Alineacion"]["corazon"]
-TOQUES = [(1.7, fila[0] + fila[2] * 0.5, fila[1] + fila[3] * 0.45),
-          (19.1, t1[0] + t1[2] / 2, t1[1] + t1[3] / 2),
-          (24.0, cz[0] + cz[2] / 2, cz[1] + cz[3] / 2),
-          (25.9, t2[0] + t2[2] / 2, t2[1] + t2[3] / 2)]
-T_FIN = 43.4
+TOQUES = [(fin_de(0) - 0.5, fila[0] + fila[2] * 0.5, fila[1] + fila[3] * 0.45),
+          (fin_de(14) - 0.5, t1[0] + t1[2] / 2, t1[1] + t1[3] / 2),
+          (fin_de(18) - 0.4, cz[0] + cz[2] / 2, cz[1] + cz[3] / 2),
+          (fin_de(20) - 0.5, t2[0] + t2[2] / 2, t2[1] + t2[3] / 2)]
+T_FIN = GUION[-1][1]
 FIN = T_FIN + 2.6   # cierre con el logo
 
 
@@ -234,7 +230,7 @@ for i in range(n):
     im = fotograma(t) if t < T_FIN else cierre_img(t)
     if t < T_FIN:
         fotograma_ultimo = im
-    if i in (int(1.8 * FPS), int(7 * FPS), int(10.5 * FPS), int(16.8 * FPS), int(23 * FPS), int(31 * FPS), int(34 * FPS), int(37 * FPS), int(39.5 * FPS), int(43 * FPS), int(45.5 * FPS)):
+    if i in tuple(int((GUION[j][0] + GUION[j][1]) / 2 * FPS) for j in (4, 6, 8, 10, 12, 18, 22, 24, 26, 28)) + (int((T_FIN + 2) * FPS),):
         im.save(TRABAJO / f"muestra_{i:04d}.jpg", quality=85)
     ff.stdin.write(np.asarray(im, dtype=np.uint8).tobytes())
 ff.stdin.close()

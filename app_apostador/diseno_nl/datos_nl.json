@@ -471,7 +471,7 @@
    5.0
   ],
   "corners": 9.4,
-  "corners_85": 58.0,
+  "corners_85": 59.0,
   "corners_95": 46.0,
   "tarjetas": 2.3,
   "tarjetas_35": 23.0,
@@ -1917,6 +1917,797 @@
     "gc": 0
    }
   ]
+ },
+ "minuto": {
+  "Czech Republic-England": {
+   "venue": {
+    "city": "Prague",
+    "name": "Fortuna Arena",
+    "country": "Czechia",
+    "capacity": "21000"
+   },
+   "arbitro": {
+    "name": "Meler, Halil Umut",
+    "nationality": "Turkiye"
+   },
+   "tiempo": {
+    "status": "clear night",
+    "temperature": "16.31°C"
+   },
+   "eventos": [
+    {
+     "min": 25,
+     "extra": 0,
+     "lado": "l",
+     "tipo": "roja",
+     "penalti": false,
+     "jugador": "Pavel Šulc",
+     "asist": null
+    },
+    {
+     "min": 35,
+     "extra": 0,
+     "lado": "v",
+     "tipo": "amarilla",
+     "penalti": false,
+     "jugador": "Myles Lewis-Skelly",
+     "asist": null
+    },
+    {
+     "min": 45,
+     "extra": 0,
+     "lado": "l",
+     "tipo": "cambio",
+     "penalti": false,
+     "sale": "Adam Karabec",
+     "entra": "Ondrej Lingr",
+     "nota_entra": 6.17
+    },
+    {
+     "min": 45,
+     "extra": 0,
+     "lado": "v",
+     "tipo": "cambio",
+     "penalti": false,
+     "sale": "Myles Lewis-Skelly",
+     "entra": "Eberechi Eze",
+     "nota_entra": 7.39
+    },
+    {
+     "min": 47,
+     "extra": 0,
+     "lado": "v",
+     "tipo": "gol",
+     "penalti": false,
+     "jugador": "Anthony Gordon",
+     "asist": "Trent Alexander-Arnold"
+    },
+    {
+     "min": 56,
+     "extra": 0,
+     "lado": "l",
+     "tipo": "cambio",
+     "penalti": false,
+     "sale": "Michal Sadílek",
+     "entra": "Alex Král",
+     "nota_entra": 6.55
+    },
+    {
+     "min": 57,
+     "extra": 0,
+     "lado": "l",
+     "tipo": "cambio",
+     "penalti": false,
+     "sale": "Matej Radosta",
+     "entra": "Lukas Ambros",
+     "nota_entra": 5.8
+    },
+    {
+     "min": 69,
+     "extra": 0,
+     "lado": "v",
+     "tipo": "gol",
+     "penalti": false,
+     "jugador": "Harry Kane",
+     "asist": null
+    },
+    {
+     "min": 70,
+     "extra": 0,
+     "lado": "v",
+     "tipo": "cambio",
+     "penalti": false,
+     "sale": "Elliot Anderson",
+     "entra": "Alex Scott",
+     "nota_entra": 6.76
+    },
+    {
+     "min": 71,
+     "extra": 0,
+     "lado": "v",
+     "tipo": "cambio",
+     "penalti": false,
+     "sale": "Harry Kane",
+     "entra": "Jude Bellingham",
+     "nota_entra": 6.54
+    },
+    {
+     "min": 71,
+     "extra": 0,
+     "lado": "v",
+     "tipo": "cambio",
+     "penalti": false,
+     "sale": "Bukayo Saka",
+     "entra": "Rio Ngumoha",
+     "nota_entra": 6.56
+    },
+    {
+     "min": 80,
+     "extra": 0,
+     "lado": "l",
+     "tipo": "cambio",
+     "penalti": false,
+     "sale": "Adam Hložek",
+     "entra": "Daniel Vasulin",
+     "nota_entra": 6.34
+    },
+    {
+     "min": 80,
+     "extra": 0,
+     "lado": "l",
+     "tipo": "cambio",
+     "penalti": false,
+     "sale": "Lukáš Červ",
+     "entra": "Roman Macek",
+     "nota_entra": 6.13
+    },
+    {
+     "min": 81,
+     "extra": 0,
+     "lado": "v",
+     "tipo": "cambio",
+     "penalti": false,
+     "sale": "Anthony Gordon",
+     "entra": "Morgan Gibbs-White",
+     "nota_entra": 6.45
+    }
+   ],
+   "tiros": [
+    {
+     "min": 5,
+     "extra": 0,
+     "lado": "l",
+     "jugador": "Pavel Šulc",
+     "res": "Saved",
+     "zona": "Low Centre"
+    },
+    {
+     "min": 12,
+     "extra": 0,
+     "lado": "l",
+     "jugador": "Lukáš Cerv",
+     "res": "Missed",
+     "zona": "High Right"
+    },
+    {
+     "min": 13,
+     "extra": 0,
+     "lado": "l",
+     "jugador": "Pavel Šulc",
+     "res": "Blocked",
+     "zona": "Low Left"
+    },
+    {
+     "min": 50,
+     "extra": 0,
+     "lado": "l",
+     "jugador": "Adam Hložek",
+     "res": "Blocked",
+     "zona": "Low Centre"
+    },
+    {
+     "min": 75,
+     "extra": 0,
+     "lado": "l",
+     "jugador": "Lukáš Ambros",
+     "res": "Blocked",
+     "zona": "Low Centre"
+    },
+    {
+     "min": 77,
+     "extra": 0,
+     "lado": "l",
+     "jugador": "Adam Hložek",
+     "res": "Saved",
+     "zona": "High Left"
+    },
+    {
+     "min": 4,
+     "extra": 0,
+     "lado": "v",
+     "jugador": "Bukayo Saka",
+     "res": "Missed",
+     "zona": ""
+    },
+    {
+     "min": 16,
+     "extra": 0,
+     "lado": "v",
+     "jugador": "Morgan Rogers",
+     "res": "Post",
+     "zona": ""
+    },
+    {
+     "min": 16,
+     "extra": 0,
+     "lado": "v",
+     "jugador": "Elliot Anderson",
+     "res": "Blocked",
+     "zona": "Low Left"
+    },
+    {
+     "min": 16,
+     "extra": 0,
+     "lado": "v",
+     "jugador": "Bukayo Saka",
+     "res": "Blocked",
+     "zona": "Low Centre"
+    },
+    {
+     "min": 22,
+     "extra": 0,
+     "lado": "v",
+     "jugador": "Anthony Gordon",
+     "res": "Missed",
+     "zona": "Close Right"
+    },
+    {
+     "min": 31,
+     "extra": 0,
+     "lado": "v",
+     "jugador": "Anthony Gordon",
+     "res": "Saved",
+     "zona": "High Centre"
+    },
+    {
+     "min": 43,
+     "extra": 0,
+     "lado": "v",
+     "jugador": "Morgan Rogers",
+     "res": "Missed",
+     "zona": ""
+    },
+    {
+     "min": 45,
+     "extra": 0,
+     "lado": "v",
+     "jugador": "Anthony Gordon",
+     "res": "Blocked",
+     "zona": "Low Centre"
+    },
+    {
+     "min": 45,
+     "extra": 1,
+     "lado": "v",
+     "jugador": "Harry Kane",
+     "res": "Saved",
+     "zona": "High Right"
+    },
+    {
+     "min": 47,
+     "extra": 0,
+     "lado": "v",
+     "jugador": "Anthony Gordon",
+     "res": "Goal",
+     "zona": "Low Right"
+    },
+    {
+     "min": 51,
+     "extra": 0,
+     "lado": "v",
+     "jugador": "Lewis Hall",
+     "res": "Missed",
+     "zona": "Close Right"
+    },
+    {
+     "min": 58,
+     "extra": 0,
+     "lado": "v",
+     "jugador": "Lewis Hall",
+     "res": "Missed",
+     "zona": ""
+    },
+    {
+     "min": 62,
+     "extra": 0,
+     "lado": "v",
+     "jugador": "Trent Alexander-Arnold",
+     "res": "Missed",
+     "zona": ""
+    },
+    {
+     "min": 69,
+     "extra": 0,
+     "lado": "v",
+     "jugador": "Elliot Anderson",
+     "res": "Blocked",
+     "zona": "Low Centre"
+    },
+    {
+     "min": 69,
+     "extra": 0,
+     "lado": "v",
+     "jugador": "Harry Kane",
+     "res": "Goal",
+     "zona": "Low Right"
+    },
+    {
+     "min": 79,
+     "extra": 0,
+     "lado": "v",
+     "jugador": "Rio Ngumoha",
+     "res": "Blocked",
+     "zona": "Low Right"
+    },
+    {
+     "min": 80,
+     "extra": 0,
+     "lado": "v",
+     "jugador": "Morgan Rogers",
+     "res": "Missed",
+     "zona": "Close Left"
+    },
+    {
+     "min": 82,
+     "extra": 0,
+     "lado": "v",
+     "jugador": "Jude Bellingham",
+     "res": "Blocked",
+     "zona": "Low Centre"
+    },
+    {
+     "min": 82,
+     "extra": 0,
+     "lado": "v",
+     "jugador": "Eberechi Eze",
+     "res": "Saved",
+     "zona": "High Left"
+    },
+    {
+     "min": 87,
+     "extra": 0,
+     "lado": "v",
+     "jugador": "Alex Scott",
+     "res": "Missed",
+     "zona": "Close Right"
+    },
+    {
+     "min": 89,
+     "extra": 0,
+     "lado": "v",
+     "jugador": "Eberechi Eze",
+     "res": "Missed",
+     "zona": ""
+    },
+    {
+     "min": 90,
+     "extra": 2,
+     "lado": "v",
+     "jugador": "Jude Bellingham",
+     "res": "Saved",
+     "zona": "Low Right"
+    }
+   ],
+   "news": [
+    {
+     "titulo": "Guernsey's pride as Scott wins first England cap",
+     "fuente": "bbc.co.uk",
+     "fecha": "2026-09-30"
+    },
+    {
+     "titulo": "Thomas Tuchel admits he has a 'bad conscience' for not checking on England's Man City stars amid guilty verdict on financial 'sham' - and suggests why Jude Bellingham could be his next England captain",
+     "fuente": "dailymail.com",
+     "fecha": "2026-09-30"
+    },
+    {
+     "titulo": "Harry Kane explains how Anthony Gordon's £69m Barcelona move has helped in-form winger become 'difference maker' for England",
+     "fuente": "dailymail.com",
+     "fecha": "2026-09-30"
+    },
+    {
+     "titulo": "How Thomas Tuchel's Trent Alexander-Arnold reshuffle unlocked England - as Three Lions win first Nations League points in Prague and FINALLY keep a clean sheet",
+     "fuente": "dailymail.com",
+     "fecha": "2026-09-30"
+    }
+   ],
+   "marcador": "0 - 2"
+  },
+  "Spain-Croatia": {
+   "venue": {
+    "city": "Seville",
+    "name": "Ramon Sanchez Pizjuan",
+    "country": "Spain",
+    "capacity": "42714"
+   },
+   "arbitro": {
+    "name": "Gozubuyuk, Serdar",
+    "nationality": "Netherlands"
+   },
+   "tiempo": {
+    "status": "partly cloudy night",
+    "temperature": "26.77°C"
+   },
+   "eventos": [
+    {
+     "min": 2,
+     "extra": 0,
+     "lado": "l",
+     "tipo": "gol",
+     "penalti": false,
+     "jugador": "Lamine Yamal",
+     "asist": "Alejandro Baena Rodríguez"
+    },
+    {
+     "min": 18,
+     "extra": 0,
+     "lado": "v",
+     "tipo": "amarilla",
+     "penalti": false,
+     "jugador": "Marin Pongračić",
+     "asist": null
+    },
+    {
+     "min": 28,
+     "extra": 0,
+     "lado": "v",
+     "tipo": "gol",
+     "penalti": false,
+     "jugador": "Dion Drena Beljo",
+     "asist": "Ivan Perišić"
+    },
+    {
+     "min": 31,
+     "extra": 0,
+     "lado": "l",
+     "tipo": "gol",
+     "penalti": false,
+     "jugador": "Marc Pubill",
+     "asist": "Lamine Yamal"
+    },
+    {
+     "min": 37,
+     "extra": 0,
+     "lado": "v",
+     "tipo": "amarilla",
+     "penalti": false,
+     "jugador": "Petar Sučić",
+     "asist": null
+    },
+    {
+     "min": 45,
+     "extra": 0,
+     "lado": "v",
+     "tipo": "cambio",
+     "penalti": false,
+     "sale": "Marin Pongračić",
+     "entra": "Luka Vuskovic",
+     "nota_entra": 5.98
+    },
+    {
+     "min": 49,
+     "extra": 0,
+     "lado": "l",
+     "tipo": "amarilla",
+     "penalti": false,
+     "jugador": "Alejandro Baena Rodríguez",
+     "asist": null
+    },
+    {
+     "min": 54,
+     "extra": 0,
+     "lado": "v",
+     "tipo": "amarilla",
+     "penalti": false,
+     "jugador": "Marco Pašalić",
+     "asist": null
+    },
+    {
+     "min": 57,
+     "extra": 0,
+     "lado": "l",
+     "tipo": "cambio",
+     "penalti": false,
+     "sale": "Fermín López",
+     "entra": "Mikel Merino",
+     "nota_entra": 6.55
+    },
+    {
+     "min": 57,
+     "extra": 0,
+     "lado": "l",
+     "tipo": "cambio",
+     "penalti": false,
+     "sale": "Fabián Ruiz",
+     "entra": "Pedri",
+     "nota_entra": 7.02
+    },
+    {
+     "min": 58,
+     "extra": 0,
+     "lado": "v",
+     "tipo": "amarilla",
+     "penalti": false,
+     "jugador": "Josip Mišić",
+     "asist": null
+    },
+    {
+     "min": 60,
+     "extra": 0,
+     "lado": "v",
+     "tipo": "cambio",
+     "penalti": false,
+     "sale": "Dion Drena Beljo",
+     "entra": "Ante Budimir",
+     "nota_entra": 6.24
+    },
+    {
+     "min": 60,
+     "extra": 0,
+     "lado": "v",
+     "tipo": "cambio",
+     "penalti": false,
+     "sale": "Mateo Kovačić",
+     "entra": "Mario Pašalić",
+     "nota_entra": 5.81
+    },
+    {
+     "min": 63,
+     "extra": 0,
+     "lado": "l",
+     "tipo": "gol",
+     "penalti": false,
+     "jugador": "Lamine Yamal",
+     "asist": "Pedri"
+    },
+    {
+     "min": 68,
+     "extra": 0,
+     "lado": "l",
+     "tipo": "cambio",
+     "penalti": false,
+     "sale": "Alejandro Baena Rodríguez",
+     "entra": "Nico Williams",
+     "nota_entra": 7.63
+    },
+    {
+     "min": 68,
+     "extra": 0,
+     "lado": "l",
+     "tipo": "cambio",
+     "penalti": false,
+     "sale": "Lamine Yamal",
+     "entra": "Víctor Muñoz",
+     "nota_entra": 6.33
+    },
+    {
+     "min": 72,
+     "extra": 0,
+     "lado": "v",
+     "tipo": "cambio",
+     "penalti": false,
+     "sale": "Ivan Perišić",
+     "entra": "Franjo Ivanovic",
+     "nota_entra": 6.65
+    },
+    {
+     "min": 72,
+     "extra": 0,
+     "lado": "l",
+     "tipo": "cambio",
+     "penalti": false,
+     "sale": "Martín Zubimendi",
+     "entra": "Rodrigo Hernandez Cascante",
+     "nota_entra": null
+    },
+    {
+     "min": 81,
+     "extra": 0,
+     "lado": "v",
+     "tipo": "cambio",
+     "penalti": false,
+     "sale": "Petar Sučić",
+     "entra": "Luka Modrić",
+     "nota_entra": 5.65
+    },
+    {
+     "min": 89,
+     "extra": 0,
+     "lado": "l",
+     "tipo": "gol",
+     "penalti": false,
+     "jugador": "Nico Williams",
+     "asist": "Mikel Merino"
+    }
+   ],
+   "tiros": [
+    {
+     "min": 2,
+     "extra": 0,
+     "lado": "l",
+     "jugador": "Lamine Yamal",
+     "res": "Goal",
+     "zona": "Low Left"
+    },
+    {
+     "min": 4,
+     "extra": 0,
+     "lado": "l",
+     "jugador": "Álex Baena",
+     "res": "Saved",
+     "zona": "Low Left"
+    },
+    {
+     "min": 4,
+     "extra": 0,
+     "lado": "l",
+     "jugador": "Marc Cucurella",
+     "res": "Blocked",
+     "zona": "Low Left"
+    },
+    {
+     "min": 20,
+     "extra": 0,
+     "lado": "l",
+     "jugador": "Martín Zubimendi",
+     "res": "Blocked",
+     "zona": "Low Centre"
+    },
+    {
+     "min": 20,
+     "extra": 0,
+     "lado": "l",
+     "jugador": "Pau Cubarsí",
+     "res": "Missed",
+     "zona": "Close Left"
+    },
+    {
+     "min": 31,
+     "extra": 0,
+     "lado": "l",
+     "jugador": "Marc Pubill",
+     "res": "Goal",
+     "zona": "High Centre"
+    },
+    {
+     "min": 35,
+     "extra": 0,
+     "lado": "l",
+     "jugador": "Fermín López",
+     "res": "Missed",
+     "zona": "Close Right"
+    },
+    {
+     "min": 36,
+     "extra": 0,
+     "lado": "l",
+     "jugador": "Fermín López",
+     "res": "Saved",
+     "zona": "Low Centre"
+    },
+    {
+     "min": 44,
+     "extra": 0,
+     "lado": "l",
+     "jugador": "Fermín López",
+     "res": "Blocked",
+     "zona": "Low Centre"
+    },
+    {
+     "min": 45,
+     "extra": 0,
+     "lado": "l",
+     "jugador": "Fermín López",
+     "res": "Post",
+     "zona": ""
+    },
+    {
+     "min": 63,
+     "extra": 0,
+     "lado": "l",
+     "jugador": "Lamine Yamal",
+     "res": "Goal",
+     "zona": "Low Right"
+    },
+    {
+     "min": 73,
+     "extra": 0,
+     "lado": "l",
+     "jugador": "Víctor Muñoz",
+     "res": "Missed",
+     "zona": ""
+    },
+    {
+     "min": 76,
+     "extra": 0,
+     "lado": "l",
+     "jugador": "Nico Williams",
+     "res": "Missed",
+     "zona": ""
+    },
+    {
+     "min": 79,
+     "extra": 0,
+     "lado": "l",
+     "jugador": "Pedri",
+     "res": "Saved",
+     "zona": "Low Left"
+    },
+    {
+     "min": 89,
+     "extra": 0,
+     "lado": "l",
+     "jugador": "Nico Williams",
+     "res": "Goal",
+     "zona": "Low Centre"
+    },
+    {
+     "min": 90,
+     "extra": 1,
+     "lado": "l",
+     "jugador": "Mikel Oyarzabal",
+     "res": "Missed",
+     "zona": ""
+    },
+    {
+     "min": 28,
+     "extra": 0,
+     "lado": "v",
+     "jugador": "Dion Beljo",
+     "res": "Goal",
+     "zona": "High Left"
+    },
+    {
+     "min": 50,
+     "extra": 0,
+     "lado": "v",
+     "jugador": "Marco Pasalic",
+     "res": "Blocked",
+     "zona": "Low Right"
+    },
+    {
+     "min": 52,
+     "extra": 0,
+     "lado": "v",
+     "jugador": "Dion Beljo",
+     "res": "Blocked",
+     "zona": "Low Centre"
+    },
+    {
+     "min": 77,
+     "extra": 0,
+     "lado": "v",
+     "jugador": "Franjo Ivanović",
+     "res": "Missed",
+     "zona": "Close Right"
+    },
+    {
+     "min": 90,
+     "extra": 0,
+     "lado": "v",
+     "jugador": "Luka Modric",
+     "res": "Saved",
+     "zona": "Low Centre"
+    }
+   ],
+   "news": [
+    {
+     "titulo": "Yamal inspires Spain to homecoming victory over Croatia",
+     "fuente": "bbc.co.uk",
+     "fecha": "2026-09-29"
+    }
+   ],
+   "marcador": "4 - 1"
+  }
  },
  "grupos": [
   {

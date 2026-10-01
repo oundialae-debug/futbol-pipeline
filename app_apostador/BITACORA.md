@@ -413,3 +413,35 @@ carpeta se apunta aquí.
   - un penalti marcado es `Penalty`, no `Goal`;
   - los tiros no cuadran al 100% con las estadísticas del equipo.
 - Dato nuevo: roja a Šulc (Chequia) en el 25' de Chequia–Inglaterra.
+
+## 01/10/2026: minuto a minuto real en la Nations League
+
+- **Qué** (lienzo de la Nations League):
+  - **Informe Chequia 0-2 Inglaterra:**
+    - estadio, árbitro y tiempo;
+    - «Match story»: tiros cada 5 minutos por equipo, roja de Šulc (25'),
+      goles de Gordon (47', asist. Alexander-Arnold) y Kane (69'), y el
+      momento clave;
+    - «Shots»: 22 contra 6, por resultado, y dónde apuntó Inglaterra en la
+      portería;
+    - «From the bench»: los 10 cambios con la nota del que entra;
+    - «In the news»: 4 titulares del partido.
+  - **Previa Croacia–Inglaterra:** «Last time out», el último partido de cada
+    uno minuto a minuto (España 4-1 Croacia y Chequia 0-2 Inglaterra).
+  - **Segundo vídeo regenerado** (51 s) pasando por las tarjetas nuevas.
+- **Sin la predicción de la API:** petición del usuario.
+- **Datos:** `nl_datos.py` añade `minuto`, a partir de `sondeos/raw/`
+  (las 3 llamadas autorizadas). Sin llamadas nuevas.
+- **Fallos silenciosos evitados:**
+  - en un cambio, `player` es el que sale;
+  - un penalti marcado es `Penalty`;
+  - Croacia tiene dos Pašalić: Mario (suplente) y Marco (titular). La nota
+    del que entra se busca solo entre suplentes y, si hay dos, por la
+    inicial;
+  - noticias filtradas por el partido (fuera Man City, Tebas, «how to
+    watch», botas);
+  - el dominio «bbc.co.ukundefined» llega roto de la API y se limpia.
+- **No se afirma:** desde qué lado define la API las zonas de la portería
+  (no lo dice).
+- **Ligas:** el derbi de LaLiga también se descargó, pero se deja para cuando
+  haya datos de las ligas (petición del usuario).
