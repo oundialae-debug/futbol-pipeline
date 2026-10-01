@@ -33,3 +33,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-01 21:33,12167572,Itf Men Singles,"M15 Fayetteville, AR",A. Shah,E. Bynoe,menos,17.5,0.6747,0.5767,1.615,True,actual
 2026-10-01 22:19,12167571,Itf Men Singles,"M15 Fayetteville, AR",C. Robertson,H. Roh,menos,24.5,0.6746,0.5767,1.615,True,actual
 2026-10-01 22:44,12167569,Itf Men Singles,"M15 Fayetteville, AR",T. Papamalamis,T. Chavez,menos,25.5,0.8096,0.5366,1.727,True,aprendida
+2026-10-01 22:44,12167571,Itf Men Singles,"M15 Fayetteville, AR",C. Robertson,H. Roh,menos,24.5,0.791,0.5366,1.727,True,aprendida
