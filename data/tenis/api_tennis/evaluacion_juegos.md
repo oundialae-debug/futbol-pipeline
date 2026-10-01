@@ -1,14 +1,14 @@
 # Más/menos juegos en directo: apuestas en papel
 
-Partidos acabados con cuota de juegos en el registro: **141**. Una apuesta por partido (se agrupa por partido). Cuota = la de la API en esa pasada, no la de Luckia. Con menos de 20 apuestas el número no significa nada.
+Partidos acabados con cuota de juegos en el registro: **142**. Una apuesta por partido (se agrupa por partido). Cuota = la de la API en esa pasada, no la de Luckia. Con menos de 20 apuestas el número no significa nada.
 
 | estrategia | apuestas | aciertos | beneficio medio | sigmas |
 |---|---|---|---|---|
 | **señal: vigilar el menos** | 38 | 61% | +1.4% | +0.10 |
-| control: siempre el menos (1ª pasada) | 141 | 57% | +5.1% | +0.66 |
-| control: siempre el más (1ª pasada) | 141 | 43% | -20.0% | -2.55 |
+| control: siempre el menos (1ª pasada) | 142 | 58% | +5.6% | +0.74 |
+| control: siempre el más (1ª pasada) | 142 | 42% | -20.6% | -2.63 |
 
-Brier del 'más' en la línea principal (1ª pasada): modelo 0.2918, mercado 0.2500 (menor es mejor). El modelo da al más +21.1% sobre lo que pasa de verdad.
+Brier del 'más' en la línea principal (1ª pasada): modelo 0.2923, mercado 0.2499 (menor es mejor). El modelo da al más +21.4% sobre lo que pasa de verdad.
 
 ## Señales
 
@@ -57,14 +57,14 @@ Brier del 'más' en la línea principal (1ª pasada): modelo 0.2918, mercado 0.2
 
 | lado | avisos resueltos | aciertos | beneficio medio (cuota API) | sigmas |
 |---|---|---|---|---|
-| menos | 111 | 64% | -2.1% | -0.30 |
+| menos | 112 | 63% | -3.0% | -0.42 |
 
 ## Previos (antes de empezar), línea principal de juegos y ganador
 
-130 partidos. Juegos (más de la línea principal), Brier (menor es mejor): modelo 0.2957, modelo corregido con el historial 0.2637, casa 0.2504. Pasó el más en el 45%.
-Ganador (130): acierto modelo 65%, casa 75%.
+135 partidos. Juegos (más de la línea principal), Brier (menor es mejor): modelo 0.2961, modelo corregido con el historial 0.2631, casa 0.2502. Pasó el más en el 44%.
+Ganador (135): acierto modelo 64%, casa 73%.
 
 ## Aprendizaje (recalibración del modelo)
 
-Partidos resueltos: 141 (1063 líneas). Activa: **sí** (hace falta 30+ partidos y que mejore al modelo en partidos que no vio).
-Brier (menor es mejor): modelo 0.2940, modelo con el saque de hoy 0.2816, casa 0.2425, recalibrado (validado por partidos) 0.2352. Sesgo del modelo hacia el más: +22.6%.
+Partidos resueltos: 142 (1069 líneas). Activa: **sí** (hace falta 30+ partidos y que mejore al modelo en partidos que no vio).
+Brier (menor es mejor): modelo 0.2931, modelo con el saque de hoy 0.2809, casa 0.2422, recalibrado (validado por partidos) 0.2327. Sesgo del modelo hacia el más: +22.5%.
