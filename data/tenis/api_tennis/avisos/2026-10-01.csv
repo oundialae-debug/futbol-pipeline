@@ -35,3 +35,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-01 07:00,12167401,Itf Men Singles,M15 Baku 2 (Azerbaijan),S. Morag,L. Larue,menos,18.5,0.6737,0.5576,1.666,True
 2026-10-01 07:04,12167400,Itf Men Singles,M15 Baku 2 (Azerbaijan),V. Iakubenko,M. Krivoshchekov,menos,15.5,0.6983,0.6077,1.533,True
 2026-10-01 07:05,12166955,Atp Singles,Beijing,B. Van De Zandschulp,F. Cerundolo,menos,30.5,0.7112,0.5889,1.571,True
+2026-10-01 07:06,12167034,Itf Men Singles,M25 Darwin,C. Hoole,M. E. Sik,menos,20.5,0.7108,0.5767,1.615,True
