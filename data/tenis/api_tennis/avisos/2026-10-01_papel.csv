@@ -11,3 +11,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-01 16:59,12167567,Itf Men Singles,"M15 Fayetteville, AR",A. N. Tudorica,N. Niedner,menos,29.5,0.5982,0.5,1.833,True,aprendida
 2026-10-01 16:59,12167568,Itf Men Singles,"M15 Fayetteville, AR",D. N. Cazacu,S. Rozin,menos,21.5,0.6061,0.5,1.833,True,aprendida
 2026-10-01 17:01,12167148,Challenger Men Singles,Columbus,A. Shelbayh,D. Ostapenkov,menos,16.5,0.7842,0.5889,1.571,True,actual
+2026-10-01 17:06,12167565,Itf Men Singles,"M15 Fayetteville, AR",J. Braswell,J. Lee,menos,19.5,0.75,0.75,1.25,True,casa65
