@@ -12,3 +12,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-01 04:11,12166547,Wta Singles,Beijing,S. Kenin,A. Krueger,menos,22.5,0.7206,0.5576,1.666,True
 2026-10-01 04:13,12167607,Atp Singles,Beijing,A. Molcan,T. Machac,menos,19.5,0.6842,0.6876,1.363,True
 2026-10-01 04:21,12166951,Atp Singles,Tokyo,T. Fritz,J. Munar,menos,26.5,0.7299,0.625,1.5,True
+2026-10-01 04:34,12167291,Challenger Men Singles,Jingshan,A. Walton,M. Bellucci,menos,21.5,0.755,0.7315,1.285,True
