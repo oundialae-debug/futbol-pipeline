@@ -155,6 +155,8 @@ for dia in sorted({p["fecha"][:10] for p in N["proximos"]}):
     bloques += (f'<div style="display: flex; align-items: center; padding: 10px 14px 4px 14px; font-size: 11px; font-weight: 700; letter-spacing: 0.8px; color: {MUT}">'
                 f'<span style="flex-grow: 1">{nombre}</span><span style="width: 140px; text-align: center; letter-spacing: 0.4px">WIN CHANCE · 1 X 2</span></div>'
                 + "".join(fila_prox(p) for p in ps))
+ACI = N["acierto"]
+res1 = ACI["mercados"][0]
 cuerpo = f'''
 <header style="display: flex; align-items: center; gap: 10px; padding: 18px 12px 0 16px">
 <a href="Main.dc.html" aria-label="2yellow home" style="flex-grow: 1; display: flex; align-items: center; gap: 6px">{icono(38, "hdr")}{palabra(27)}</a>
@@ -164,8 +166,8 @@ cuerpo = f'''
 <section style="margin: 0 12px; border-radius: 24px; background: {CARD}; border: 1px solid {BORDE}; overflow: hidden">
 <div style="padding: 14px 14px 6px 14px">{CAB_NL.replace("League A", "League A · Matchday 3")}</div>{bloques}</section>
 <a href="Tips.dc.html" style="margin: 0 12px; padding: 14px 16px; border-radius: 22px; background: {CARD}; border: 1px solid {BORDE}; display: flex; align-items: center; gap: 12px">
-{icono(34, "acc")}<div style="flex-grow: 1; display: flex; flex-direction: column"><span style="font-size: 14px; font-weight: 700">Tips for Croatia – England</span>
-<span style="font-size: 12px; color: {MUT}">{len(N["previa"]["mas_tips"])} picks and the likely scorers</span></div><span style="color: #8FA2FF; font-size: 13px; font-weight: 700">See</span></a>
+{icono(34, "acc")}<div style="flex-grow: 1; display: flex; flex-direction: column"><span style="font-size: 14px; font-weight: 700">Our favourite won {int(res1["nuestro"])}% of the time</span>
+<span style="font-size: 12px; color: {MUT}">{ACI["n"]} Nations League games · bookies {int(res1["casa"])}%</span></div><span style="color: #8FA2FF; font-size: 13px; font-weight: 700">See</span></a>
 '''
 H_MAIN = 1340
 common.page("Main.dc.html", "Nations League", 390, H_MAIN, raiz(H_MAIN, cuerpo), JS0, nav_active="m")

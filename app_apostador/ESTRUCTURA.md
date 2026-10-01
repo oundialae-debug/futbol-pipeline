@@ -13,9 +13,10 @@ Ejemplo vivo: lienzo de la Nations League
 
 ## Reglas comunes
 
-- **Nunca «How we did»** (ni nuestro acierto contra el de las casas, ni
-  «Our favourite won X% of the time») en ninguna pantalla, vídeo o imagen.
-  Petición del usuario, 01/10/2026.
+- **Nunca la tarjeta «How we did»** (tabla de nuestro acierto contra el de
+  las casas por mercado) en ninguna pantalla, vídeo o imagen. Petición del
+  usuario, 01/10/2026. Sí se queda el aviso de la portada «Our favourite won
+  X% of the time» (el usuario lo pidió expresamente).
 
 - Textos de la app en inglés. Aspecto de app publicada: nada provisional.
 - Si falta un dato, **la tarjeta no sale** (o se calcula con nuestro modelo).

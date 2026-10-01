@@ -593,3 +593,9 @@ carpeta se apunta aquí.
 - **Vídeo 1** (55 s): después de «Last meeting», toque en Tips, la pantalla
   entera (cuotas de las casas incluidas) y de ahí a la clasificación por la
   barra de abajo.
+
+## 01/10/2026: vuelve «Our favourite won 61% of the time»
+
+- **El usuario:** ese aviso de la portada se puede dejar. Vuelve a la portada
+  del lienzo y al vídeo 1 (regenerado). Lo que no vuelve es la tarjeta «How
+  we did» de Tips. Regla de `ESTRUCTURA.md` ajustada.
