@@ -57,3 +57,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-01 08:46,12166957,Wta Singles,Beijing,H. Dart,Y. Qu,menos,16.5,0.7171,0.5767,1.615,True
 2026-10-01 08:47,12166489,Atp Singles,Tokyo,C. Alcaraz,A. Michelsen,menos,22.5,0.7312,0.5889,1.571,True
 2026-10-01 08:47,12166556,Wta Singles,Beijing,Y. Shao,A. Zakharova,menos,14.5,0.6759,0.5889,1.571,True
+2026-10-01 08:56,12166498,Atp Singles,Tokyo,D. Shapovalov,S. Shimabukuro,menos,21.5,0.7142,0.5576,1.666,True
