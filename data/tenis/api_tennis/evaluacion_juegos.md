@@ -35,8 +35,8 @@ Brier del 'más' en la línea principal (1ª pasada): modelo 0.2978, mercado 0.2
 
 ## Previos (antes de empezar), línea principal de juegos y ganador
 
-1 partidos. Juegos (más de la línea principal), Brier (menor es mejor): modelo 0.5210, modelo corregido con el historial 0.3701, casa 0.2555. Pasó el más en el 0%.
-Ganador (1): acierto modelo 0%, casa 0%.
+2 partidos. Juegos (más de la línea principal), Brier (menor es mejor): modelo 0.4323, modelo corregido con el historial 0.3770, casa 0.2487. Pasó el más en el 50%.
+Ganador (2): acierto modelo 0%, casa 50%.
 
 ## Aprendizaje (recalibración del modelo)
 
