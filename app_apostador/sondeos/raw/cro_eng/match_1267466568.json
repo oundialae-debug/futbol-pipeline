@@ -1,0 +1,1635 @@
+[
+ {
+  "venue": {
+   "city": null,
+   "name": null,
+   "country": null,
+   "capacity": null
+  },
+  "referee": {
+   "name": null,
+   "nationality": null
+  },
+  "forecast": {
+   "status": null,
+   "temperature": null
+  },
+  "events": [
+   {
+    "team": {
+     "id": 9294,
+     "logo": "https://highlightly.net/soccer/images/teams/9294.png",
+     "name": "England"
+    },
+    "time": "12",
+    "type": "Penalty",
+    "assist": null,
+    "player": "H. Kane",
+    "playerId": 29778,
+    "substituted": null,
+    "assistingPlayerId": null
+   },
+   {
+    "team": {
+     "id": 3337,
+     "logo": "https://highlightly.net/soccer/images/teams/3337.png",
+     "name": "Croatia"
+    },
+    "time": "36",
+    "type": "Goal",
+    "assist": "P. Sucic",
+    "player": "M. Baturina",
+    "playerId": 47499340,
+    "substituted": null,
+    "assistingPlayerId": 56061159
+   },
+   {
+    "team": {
+     "id": 9294,
+     "logo": "https://highlightly.net/soccer/images/teams/9294.png",
+     "name": "England"
+    },
+    "time": "42",
+    "type": "Goal",
+    "assist": "D. Rice",
+    "player": "H. Kane",
+    "playerId": 29778,
+    "substituted": null,
+    "assistingPlayerId": 473011
+   },
+   {
+    "team": {
+     "id": 3337,
+     "logo": "https://highlightly.net/soccer/images/teams/3337.png",
+     "name": "Croatia"
+    },
+    "time": "45+5",
+    "type": "Goal",
+    "assist": "I. Perisic",
+    "player": "P. Musa",
+    "playerId": 10635009,
+    "substituted": null,
+    "assistingPlayerId": 33481
+   },
+   {
+    "team": {
+     "id": 9294,
+     "logo": "https://highlightly.net/soccer/images/teams/9294.png",
+     "name": "England"
+    },
+    "time": "47",
+    "type": "Goal",
+    "assist": "E. Anderson",
+    "player": "J. Bellingham",
+    "playerId": 20884752,
+    "substituted": null,
+    "assistingPlayerId": 22364342
+   },
+   {
+    "team": {
+     "id": 3337,
+     "logo": "https://highlightly.net/soccer/images/teams/3337.png",
+     "name": "Croatia"
+    },
+    "time": "58",
+    "type": "Substitution",
+    "assist": null,
+    "player": "L. Modric",
+    "playerId": 121548,
+    "substituted": "M. Kovacic",
+    "assistingPlayerId": 369005
+   },
+   {
+    "team": {
+     "id": 3337,
+     "logo": "https://highlightly.net/soccer/images/teams/3337.png",
+     "name": "Croatia"
+    },
+    "time": "66",
+    "type": "Substitution",
+    "assist": null,
+    "player": "L. Vuskovic",
+    "playerId": 62391035,
+    "substituted": "M. Pasalic",
+    "assistingPlayerId": 41999419
+   },
+   {
+    "team": {
+     "id": 3337,
+     "logo": "https://highlightly.net/soccer/images/teams/3337.png",
+     "name": "Croatia"
+    },
+    "time": "66",
+    "type": "Substitution",
+    "assist": null,
+    "player": "P. Musa",
+    "playerId": 10635009,
+    "substituted": "I. Matanovic",
+    "assistingPlayerId": 32634210
+   },
+   {
+    "team": {
+     "id": 9294,
+     "logo": "https://highlightly.net/soccer/images/teams/9294.png",
+     "name": "England"
+    },
+    "time": "72",
+    "type": "Substitution",
+    "assist": null,
+    "player": "A. Gordon",
+    "playerId": 22344861,
+    "substituted": "M. Rashford",
+    "assistingPlayerId": 146503
+   },
+   {
+    "team": {
+     "id": 9294,
+     "logo": "https://highlightly.net/soccer/images/teams/9294.png",
+     "name": "England"
+    },
+    "time": "72",
+    "type": "Substitution",
+    "assist": null,
+    "player": "N. Madueke",
+    "playerId": 22012557,
+    "substituted": "B. Saka",
+    "assistingPlayerId": 235214
+   },
+   {
+    "team": {
+     "id": 9294,
+     "logo": "https://highlightly.net/soccer/images/teams/9294.png",
+     "name": "England"
+    },
+    "time": "72",
+    "type": "Substitution",
+    "assist": null,
+    "player": "D. Rice",
+    "playerId": 473011,
+    "substituted": "M. Rogers",
+    "assistingPlayerId": 3086524
+   },
+   {
+    "team": {
+     "id": 3337,
+     "logo": "https://highlightly.net/soccer/images/teams/3337.png",
+     "name": "Croatia"
+    },
+    "time": "78",
+    "type": "Substitution",
+    "assist": null,
+    "player": "M. Baturina",
+    "playerId": 47499340,
+    "substituted": "N. Vlasic",
+    "assistingPlayerId": 135716
+   },
+   {
+    "team": {
+     "id": 3337,
+     "logo": "https://highlightly.net/soccer/images/teams/3337.png",
+     "name": "Croatia"
+    },
+    "time": "79",
+    "type": "Substitution",
+    "assist": null,
+    "player": "M. Pasalic",
+    "playerId": 444997,
+    "substituted": "A. Kramaric",
+    "assistingPlayerId": 117040
+   },
+   {
+    "team": {
+     "id": 9294,
+     "logo": "https://highlightly.net/soccer/images/teams/9294.png",
+     "name": "England"
+    },
+    "time": "80",
+    "type": "Substitution",
+    "assist": null,
+    "player": "J. Bellingham",
+    "playerId": 20884752,
+    "substituted": "D. Spence",
+    "assistingPlayerId": 3096989
+   },
+   {
+    "team": {
+     "id": 9294,
+     "logo": "https://highlightly.net/soccer/images/teams/9294.png",
+     "name": "England"
+    },
+    "time": "85",
+    "type": "Goal",
+    "assist": "B. Saka",
+    "player": "M. Rashford",
+    "playerId": 146503,
+    "substituted": null,
+    "assistingPlayerId": 235214
+   },
+   {
+    "team": {
+     "id": 9294,
+     "logo": "https://highlightly.net/soccer/images/teams/9294.png",
+     "name": "England"
+    },
+    "time": "87",
+    "type": "Substitution",
+    "assist": null,
+    "player": "J. Stones",
+    "playerId": 100940,
+    "substituted": "M. Guehi",
+    "assistingPlayerId": 10943485
+   }
+  ],
+  "predictions": {
+   "live": [
+    {
+     "type": "live",
+     "modelType": "three-way",
+     "description": "England is most likely to win the game against Croatia.",
+     "generatedAt": "2026-06-17T20:00:35.643Z",
+     "probabilities": {
+      "away": "17.46%",
+      "draw": "25.21%",
+      "home": "57.33%"
+     }
+    },
+    {
+     "type": "live",
+     "modelType": "three-way",
+     "description": "England is most likely to win the game against Croatia.",
+     "generatedAt": "2026-06-17T20:10:26.220Z",
+     "probabilities": {
+      "away": "16.49%",
+      "draw": "24.43%",
+      "home": "59.08%"
+     }
+    },
+    {
+     "type": "live",
+     "modelType": "three-way",
+     "description": "England is most likely to win the game against Croatia.",
+     "generatedAt": "2026-06-17T20:20:29.682Z",
+     "probabilities": {
+      "away": "8.01%",
+      "draw": "17.31%",
+      "home": "74.68%"
+     }
+    },
+    {
+     "type": "live",
+     "modelType": "three-way",
+     "description": "England is most likely to win the game against Croatia.",
+     "generatedAt": "2026-06-17T20:30:27.149Z",
+     "probabilities": {
+      "away": "7.41%",
+      "draw": "17.12%",
+      "home": "75.47%"
+     }
+    },
+    {
+     "type": "live",
+     "modelType": "three-way",
+     "description": "England is most likely to win the game against Croatia.",
+     "generatedAt": "2026-06-17T20:40:26.489Z",
+     "probabilities": {
+      "away": "14.16%",
+      "draw": "29.72%",
+      "home": "56.13%"
+     }
+    },
+    {
+     "type": "live",
+     "modelType": "three-way",
+     "description": "England is most likely to win the game against Croatia.",
+     "generatedAt": "2026-06-17T20:50:29.274Z",
+     "probabilities": {
+      "away": "7.65%",
+      "draw": "22.46%",
+      "home": "69.89%"
+     }
+    },
+    {
+     "type": "live",
+     "modelType": "three-way",
+     "description": "England is most likely to win the game against Croatia.",
+     "generatedAt": "2026-06-17T21:00:30.308Z",
+     "probabilities": {
+      "away": "15.56%",
+      "draw": "34.21%",
+      "home": "50.23%"
+     }
+    },
+    {
+     "type": "live",
+     "modelType": "three-way",
+     "description": "England is most likely to win the game against Croatia.",
+     "generatedAt": "2026-06-17T21:10:19.868Z",
+     "probabilities": {
+      "away": "16.05%",
+      "draw": "34.48%",
+      "home": "49.46%"
+     }
+    },
+    {
+     "type": "live",
+     "modelType": "three-way",
+     "description": "England is most likely to win the game against Croatia.",
+     "generatedAt": "2026-06-17T21:20:20.000Z",
+     "probabilities": {
+      "away": "6.61%",
+      "draw": "21.85%",
+      "home": "71.54%"
+     }
+    },
+    {
+     "type": "live",
+     "modelType": "three-way",
+     "description": "England is most likely to win the game against Croatia.",
+     "generatedAt": "2026-06-17T21:30:20.992Z",
+     "probabilities": {
+      "away": "3.17%",
+      "draw": "14.98%",
+      "home": "81.85%"
+     }
+    },
+    {
+     "type": "live",
+     "modelType": "three-way",
+     "description": "England is most likely to win the game against Croatia.",
+     "generatedAt": "2026-06-17T21:40:21.059Z",
+     "probabilities": {
+      "away": "2.51%",
+      "draw": "14.33%",
+      "home": "83.16%"
+     }
+    },
+    {
+     "type": "live",
+     "modelType": "three-way",
+     "description": "England is most likely to win the game against Croatia.",
+     "generatedAt": "2026-06-17T21:50:19.167Z",
+     "probabilities": {
+      "away": "1.13%",
+      "draw": "7.62%",
+      "home": "91.25%"
+     }
+    }
+   ],
+   "prematch": [
+    {
+     "type": "prematch",
+     "modelType": "three-way",
+     "description": "England is most likely to win the game against Croatia.",
+     "generatedAt": "2026-06-10T09:02:25.884Z",
+     "probabilities": {
+      "away": "19.82%",
+      "draw": "25.27%",
+      "home": "54.91%"
+     }
+    },
+    {
+     "type": "prematch",
+     "modelType": "three-way",
+     "description": "England is most likely to win the game against Croatia.",
+     "generatedAt": "2026-06-10T12:02:27.155Z",
+     "probabilities": {
+      "away": "19.77%",
+      "draw": "25.27%",
+      "home": "54.96%"
+     }
+    },
+    {
+     "type": "prematch",
+     "modelType": "three-way",
+     "description": "England is most likely to win the game against Croatia.",
+     "generatedAt": "2026-06-10T15:02:00.041Z",
+     "probabilities": {
+      "away": "19.78%",
+      "draw": "25.27%",
+      "home": "54.94%"
+     }
+    },
+    {
+     "type": "prematch",
+     "modelType": "three-way",
+     "description": "England is most likely to win the game against Croatia.",
+     "generatedAt": "2026-06-10T18:07:15.878Z",
+     "probabilities": {
+      "away": "19.70%",
+      "draw": "25.22%",
+      "home": "55.08%"
+     }
+    },
+    {
+     "type": "prematch",
+     "modelType": "three-way",
+     "description": "England is most likely to win the game against Croatia.",
+     "generatedAt": "2026-06-10T21:07:52.433Z",
+     "probabilities": {
+      "away": "19.68%",
+      "draw": "25.23%",
+      "home": "55.09%"
+     }
+    },
+    {
+     "type": "prematch",
+     "modelType": "three-way",
+     "description": "England is most likely to win the game against Croatia.",
+     "generatedAt": "2026-06-11T08:55:07.371Z",
+     "probabilities": {
+      "away": "19.67%",
+      "draw": "25.24%",
+      "home": "55.09%"
+     }
+    },
+    {
+     "type": "prematch",
+     "modelType": "three-way",
+     "description": "England is most likely to win the game against Croatia.",
+     "generatedAt": "2026-06-11T11:58:33.013Z",
+     "probabilities": {
+      "away": "19.69%",
+      "draw": "25.26%",
+      "home": "55.05%"
+     }
+    },
+    {
+     "type": "prematch",
+     "modelType": "three-way",
+     "description": "England is most likely to win the game against Croatia.",
+     "generatedAt": "2026-06-11T14:51:06.293Z",
+     "probabilities": {
+      "away": "19.68%",
+      "draw": "25.24%",
+      "home": "55.09%"
+     }
+    },
+    {
+     "type": "prematch",
+     "modelType": "three-way",
+     "description": "England is most likely to win the game against Croatia.",
+     "generatedAt": "2026-06-11T17:47:06.544Z",
+     "probabilities": {
+      "away": "19.68%",
+      "draw": "25.24%",
+      "home": "55.08%"
+     }
+    },
+    {
+     "type": "prematch",
+     "modelType": "three-way",
+     "description": "England is most likely to win the game against Croatia.",
+     "generatedAt": "2026-06-11T20:51:18.767Z",
+     "probabilities": {
+      "away": "19.64%",
+      "draw": "25.22%",
+      "home": "55.14%"
+     }
+    },
+    {
+     "type": "prematch",
+     "modelType": "three-way",
+     "description": "England is most likely to win the game against Croatia.",
+     "generatedAt": "2026-06-12T08:46:38.839Z",
+     "probabilities": {
+      "away": "19.63%",
+      "draw": "25.34%",
+      "home": "55.03%"
+     }
+    },
+    {
+     "type": "prematch",
+     "modelType": "three-way",
+     "description": "England is most likely to win the game against Croatia.",
+     "generatedAt": "2026-06-12T11:44:15.435Z",
+     "probabilities": {
+      "away": "19.63%",
+      "draw": "25.27%",
+      "home": "55.10%"
+     }
+    },
+    {
+     "type": "prematch",
+     "modelType": "three-way",
+     "description": "England is most likely to win the game against Croatia.",
+     "generatedAt": "2026-06-12T14:42:00.223Z",
+     "probabilities": {
+      "away": "19.60%",
+      "draw": "25.32%",
+      "home": "55.08%"
+     }
+    },
+    {
+     "type": "prematch",
+     "modelType": "three-way",
+     "description": "England is most likely to win the game against Croatia.",
+     "generatedAt": "2026-06-12T17:44:36.711Z",
+     "probabilities": {
+      "away": "19.61%",
+      "draw": "25.32%",
+      "home": "55.07%"
+     }
+    },
+    {
+     "type": "prematch",
+     "modelType": "three-way",
+     "description": "England is most likely to win the game against Croatia.",
+     "generatedAt": "2026-06-12T20:52:45.628Z",
+     "probabilities": {
+      "away": "19.59%",
+      "draw": "25.33%",
+      "home": "55.08%"
+     }
+    },
+    {
+     "type": "prematch",
+     "modelType": "three-way",
+     "description": "England is most likely to win the game against Croatia.",
+     "generatedAt": "2026-06-13T09:16:49.538Z",
+     "probabilities": {
+      "away": "19.51%",
+      "draw": "25.40%",
+      "home": "55.09%"
+     }
+    },
+    {
+     "type": "prematch",
+     "modelType": "three-way",
+     "description": "England is most likely to win the game against Croatia.",
+     "generatedAt": "2026-06-13T12:20:43.032Z",
+     "probabilities": {
+      "away": "19.42%",
+      "draw": "25.34%",
+      "home": "55.24%"
+     }
+    },
+    {
+     "type": "prematch",
+     "modelType": "three-way",
+     "description": "England is most likely to win the game against Croatia.",
+     "generatedAt": "2026-06-13T15:35:16.068Z",
+     "probabilities": {
+      "away": "19.39%",
+      "draw": "25.36%",
+      "home": "55.25%"
+     }
+    },
+    {
+     "type": "prematch",
+     "modelType": "three-way",
+     "description": "England is most likely to win the game against Croatia.",
+     "generatedAt": "2026-06-13T18:43:53.583Z",
+     "probabilities": {
+      "away": "19.40%",
+      "draw": "25.36%",
+      "home": "55.24%"
+     }
+    },
+    {
+     "type": "prematch",
+     "modelType": "three-way",
+     "description": "England is most likely to win the game against Croatia.",
+     "generatedAt": "2026-06-13T22:00:10.752Z",
+     "probabilities": {
+      "away": "19.40%",
+      "draw": "25.37%",
+      "home": "55.23%"
+     }
+    },
+    {
+     "type": "prematch",
+     "modelType": "three-way",
+     "description": "England is most likely to win the game against Croatia.",
+     "generatedAt": "2026-06-14T09:39:32.847Z",
+     "probabilities": {
+      "away": "19.38%",
+      "draw": "25.37%",
+      "home": "55.25%"
+     }
+    },
+    {
+     "type": "prematch",
+     "modelType": "three-way",
+     "description": "England is most likely to win the game against Croatia.",
+     "generatedAt": "2026-06-14T12:37:01.235Z",
+     "probabilities": {
+      "away": "19.39%",
+      "draw": "25.39%",
+      "home": "55.22%"
+     }
+    },
+    {
+     "type": "prematch",
+     "modelType": "three-way",
+     "description": "England is most likely to win the game against Croatia.",
+     "generatedAt": "2026-06-14T15:34:49.512Z",
+     "probabilities": {
+      "away": "19.39%",
+      "draw": "25.38%",
+      "home": "55.23%"
+     }
+    },
+    {
+     "type": "prematch",
+     "modelType": "three-way",
+     "description": "England is most likely to win the game against Croatia.",
+     "generatedAt": "2026-06-14T18:35:13.884Z",
+     "probabilities": {
+      "away": "19.39%",
+      "draw": "25.39%",
+      "home": "55.23%"
+     }
+    },
+    {
+     "type": "prematch",
+     "modelType": "three-way",
+     "description": "England is most likely to win the game against Croatia.",
+     "generatedAt": "2026-06-14T21:35:21.540Z",
+     "probabilities": {
+      "away": "19.37%",
+      "draw": "25.37%",
+      "home": "55.26%"
+     }
+    },
+    {
+     "type": "prematch",
+     "modelType": "three-way",
+     "description": "England is most likely to win the game against Croatia.",
+     "generatedAt": "2026-06-15T08:16:37.146Z",
+     "probabilities": {
+      "away": "19.44%",
+      "draw": "25.46%",
+      "home": "55.11%"
+     }
+    },
+    {
+     "type": "prematch",
+     "modelType": "three-way",
+     "description": "England is most likely to win the game against Croatia.",
+     "generatedAt": "2026-06-15T10:53:37.510Z",
+     "probabilities": {
+      "away": "19.42%",
+      "draw": "25.49%",
+      "home": "55.09%"
+     }
+    },
+    {
+     "type": "prematch",
+     "modelType": "three-way",
+     "description": "England is most likely to win the game against Croatia.",
+     "generatedAt": "2026-06-15T13:32:17.813Z",
+     "probabilities": {
+      "away": "19.42%",
+      "draw": "25.48%",
+      "home": "55.09%"
+     }
+    },
+    {
+     "type": "prematch",
+     "modelType": "three-way",
+     "description": "England is most likely to win the game against Croatia.",
+     "generatedAt": "2026-06-15T16:11:54.673Z",
+     "probabilities": {
+      "away": "19.41%",
+      "draw": "25.50%",
+      "home": "55.09%"
+     }
+    },
+    {
+     "type": "prematch",
+     "modelType": "three-way",
+     "description": "England is most likely to win the game against Croatia.",
+     "generatedAt": "2026-06-15T18:54:23.452Z",
+     "probabilities": {
+      "away": "19.41%",
+      "draw": "25.49%",
+      "home": "55.10%"
+     }
+    },
+    {
+     "type": "prematch",
+     "modelType": "three-way",
+     "description": "England is most likely to win the game against Croatia.",
+     "generatedAt": "2026-06-15T21:30:40.122Z",
+     "probabilities": {
+      "away": "19.55%",
+      "draw": "25.41%",
+      "home": "55.03%"
+     }
+    },
+    {
+     "type": "prematch",
+     "modelType": "three-way",
+     "description": "England is most likely to win the game against Croatia.",
+     "generatedAt": "2026-06-16T08:17:10.238Z",
+     "probabilities": {
+      "away": "19.55%",
+      "draw": "25.47%",
+      "home": "54.98%"
+     }
+    },
+    {
+     "type": "prematch",
+     "modelType": "three-way",
+     "description": "England is most likely to win the game against Croatia.",
+     "generatedAt": "2026-06-16T10:59:16.213Z",
+     "probabilities": {
+      "away": "19.55%",
+      "draw": "25.48%",
+      "home": "54.97%"
+     }
+    },
+    {
+     "type": "prematch",
+     "modelType": "three-way",
+     "description": "England is most likely to win the game against Croatia.",
+     "generatedAt": "2026-06-16T13:44:13.178Z",
+     "probabilities": {
+      "away": "19.43%",
+      "draw": "25.66%",
+      "home": "54.91%"
+     }
+    },
+    {
+     "type": "prematch",
+     "modelType": "three-way",
+     "description": "England is most likely to win the game against Croatia.",
+     "generatedAt": "2026-06-16T16:30:34.860Z",
+     "probabilities": {
+      "away": "19.41%",
+      "draw": "25.63%",
+      "home": "54.96%"
+     }
+    },
+    {
+     "type": "prematch",
+     "modelType": "three-way",
+     "description": "England is most likely to win the game against Croatia.",
+     "generatedAt": "2026-06-16T19:11:44.912Z",
+     "probabilities": {
+      "away": "19.38%",
+      "draw": "25.64%",
+      "home": "54.98%"
+     }
+    },
+    {
+     "type": "prematch",
+     "modelType": "three-way",
+     "description": "England is most likely to win the game against Croatia.",
+     "generatedAt": "2026-06-16T21:51:41.144Z",
+     "probabilities": {
+      "away": "19.36%",
+      "draw": "25.67%",
+      "home": "54.97%"
+     }
+    },
+    {
+     "type": "prematch",
+     "modelType": "three-way",
+     "description": "England is most likely to win the game against Croatia.",
+     "generatedAt": "2026-06-17T07:58:42.639Z",
+     "probabilities": {
+      "away": "19.25%",
+      "draw": "25.67%",
+      "home": "55.08%"
+     }
+    },
+    {
+     "type": "prematch",
+     "modelType": "three-way",
+     "description": "England is most likely to win the game against Croatia.",
+     "generatedAt": "2026-06-17T10:49:27.832Z",
+     "probabilities": {
+      "away": "18.81%",
+      "draw": "25.79%",
+      "home": "55.39%"
+     }
+    },
+    {
+     "type": "prematch",
+     "modelType": "three-way",
+     "description": "England is most likely to win the game against Croatia.",
+     "generatedAt": "2026-06-17T15:44:12.933Z",
+     "probabilities": {
+      "away": "18.79%",
+      "draw": "25.73%",
+      "home": "55.48%"
+     }
+    },
+    {
+     "type": "prematch",
+     "modelType": "three-way",
+     "description": "England is most likely to win the game against Croatia.",
+     "generatedAt": "2026-06-17T18:28:20.941Z",
+     "probabilities": {
+      "away": "18.48%",
+      "draw": "25.53%",
+      "home": "55.99%"
+     }
+    }
+   ]
+  },
+  "statistics": [
+   {
+    "team": {
+     "id": 9294,
+     "logo": "https://highlightly.net/soccer/images/teams/9294.png",
+     "name": "England"
+    },
+    "statistics": [
+     {
+      "value": 3.2,
+      "displayName": "Expected Goals"
+     },
+     {
+      "value": 7,
+      "displayName": "Big Chances Created"
+     },
+     {
+      "value": 72,
+      "displayName": "Attacks"
+     },
+     {
+      "value": 12,
+      "displayName": "Free Kicks"
+     },
+     {
+      "value": 1.1,
+      "displayName": "Expected Assists"
+     },
+     {
+      "value": 6,
+      "displayName": "Successful Crosses"
+     },
+     {
+      "value": 13,
+      "displayName": "Crosses"
+     },
+     {
+      "value": 304,
+      "displayName": "Passes Own Half"
+     },
+     {
+      "value": 183,
+      "displayName": "Passes Opposition Half"
+     },
+     {
+      "value": 15,
+      "displayName": "Successful Long Passes"
+     },
+     {
+      "value": 41,
+      "displayName": "Long Passes"
+     },
+     {
+      "value": 15,
+      "displayName": "Throw-Ins"
+     },
+     {
+      "value": 15,
+      "displayName": "Key Passes"
+     },
+     {
+      "value": 49,
+      "displayName": "Passes Into Final Third"
+     },
+     {
+      "value": 75,
+      "displayName": "Backward Passes"
+     },
+     {
+      "value": 6,
+      "displayName": "Goal Kicks"
+     },
+     {
+      "value": 7,
+      "displayName": "Interceptions"
+     },
+     {
+      "value": 7,
+      "displayName": "Successful Tackles"
+     },
+     {
+      "value": 9,
+      "displayName": "Tackles"
+     },
+     {
+      "value": 16,
+      "displayName": "Clearances"
+     },
+     {
+      "value": 12,
+      "displayName": "Successful Aerial Duels"
+     },
+     {
+      "value": 28,
+      "displayName": "Aerial Duels"
+     },
+     {
+      "value": 7,
+      "displayName": "Successful Dribbles"
+     },
+     {
+      "value": 14,
+      "displayName": "Dribbles"
+     },
+     {
+      "value": 0.5,
+      "displayName": "Shots accuracy"
+     },
+     {
+      "value": 68,
+      "displayName": "Failed passes"
+     },
+     {
+      "value": 0.52,
+      "displayName": "Possession"
+     },
+     {
+      "value": 11,
+      "displayName": "Shots on target"
+     },
+     {
+      "value": 8,
+      "displayName": "Corners"
+     },
+     {
+      "value": 0,
+      "displayName": "Offsides"
+     },
+     {
+      "value": 406,
+      "displayName": "Successful passes"
+     },
+     {
+      "value": 0,
+      "displayName": "Red cards"
+     },
+     {
+      "value": 6,
+      "displayName": "Shots off target"
+     },
+     {
+      "value": 5,
+      "displayName": "Blocked shots"
+     },
+     {
+      "value": 20,
+      "displayName": "Shots within penalty area"
+     },
+     {
+      "value": 474,
+      "displayName": "Total passes"
+     },
+     {
+      "value": 3,
+      "displayName": "Goalkeeper saves"
+     },
+     {
+      "value": 10,
+      "displayName": "Fouls"
+     },
+     {
+      "value": 0,
+      "displayName": "Yellow cards"
+     },
+     {
+      "displayName": "Shots outside penalty area",
+      "value": 2
+     }
+    ]
+   },
+   {
+    "team": {
+     "id": 3337,
+     "logo": "https://highlightly.net/soccer/images/teams/3337.png",
+     "name": "Croatia"
+    },
+    "statistics": [
+     {
+      "value": 0.7,
+      "displayName": "Expected Goals"
+     },
+     {
+      "value": 2,
+      "displayName": "Big Chances Created"
+     },
+     {
+      "value": 78,
+      "displayName": "Attacks"
+     },
+     {
+      "value": 10,
+      "displayName": "Free Kicks"
+     },
+     {
+      "value": 0.82,
+      "displayName": "Expected Assists"
+     },
+     {
+      "value": 2,
+      "displayName": "Successful Crosses"
+     },
+     {
+      "value": 13,
+      "displayName": "Crosses"
+     },
+     {
+      "value": 239,
+      "displayName": "Passes Own Half"
+     },
+     {
+      "value": 217,
+      "displayName": "Passes Opposition Half"
+     },
+     {
+      "value": 18,
+      "displayName": "Successful Long Passes"
+     },
+     {
+      "value": 42,
+      "displayName": "Long Passes"
+     },
+     {
+      "value": 18,
+      "displayName": "Throw-Ins"
+     },
+     {
+      "value": 7,
+      "displayName": "Key Passes"
+     },
+     {
+      "value": 64,
+      "displayName": "Passes Into Final Third"
+     },
+     {
+      "value": 68,
+      "displayName": "Backward Passes"
+     },
+     {
+      "value": 7,
+      "displayName": "Goal Kicks"
+     },
+     {
+      "value": 9,
+      "displayName": "Interceptions"
+     },
+     {
+      "value": 8,
+      "displayName": "Successful Tackles"
+     },
+     {
+      "value": 11,
+      "displayName": "Tackles"
+     },
+     {
+      "value": 17,
+      "displayName": "Clearances"
+     },
+     {
+      "value": 16,
+      "displayName": "Successful Aerial Duels"
+     },
+     {
+      "value": 28,
+      "displayName": "Aerial Duels"
+     },
+     {
+      "value": 5,
+      "displayName": "Successful Dribbles"
+     },
+     {
+      "value": 10,
+      "displayName": "Dribbles"
+     },
+     {
+      "value": 0.5,
+      "displayName": "Shots accuracy"
+     },
+     {
+      "value": 62,
+      "displayName": "Failed passes"
+     },
+     {
+      "value": 0.48,
+      "displayName": "Possession"
+     },
+     {
+      "value": 5,
+      "displayName": "Shots on target"
+     },
+     {
+      "value": 2,
+      "displayName": "Corners"
+     },
+     {
+      "value": 1,
+      "displayName": "Offsides"
+     },
+     {
+      "value": 381,
+      "displayName": "Successful passes"
+     },
+     {
+      "value": 0,
+      "displayName": "Red cards"
+     },
+     {
+      "value": 3,
+      "displayName": "Shots off target"
+     },
+     {
+      "value": 2,
+      "displayName": "Blocked shots"
+     },
+     {
+      "value": 4,
+      "displayName": "Shots within penalty area"
+     },
+     {
+      "value": 443,
+      "displayName": "Total passes"
+     },
+     {
+      "value": 7,
+      "displayName": "Goalkeeper saves"
+     },
+     {
+      "value": 12,
+      "displayName": "Fouls"
+     },
+     {
+      "value": 0,
+      "displayName": "Yellow cards"
+     },
+     {
+      "displayName": "Shots outside penalty area",
+      "value": 6
+     }
+    ]
+   }
+  ],
+  "id": 1267466568,
+  "round": "Group Stage - 1",
+  "date": "2026-06-17T20:00:00.000Z",
+  "country": {
+   "code": "World",
+   "name": "World",
+   "logo": "https://highlightly.net/soccer/images/countries/World.png"
+  },
+  "state": {
+   "clock": 90,
+   "score": {
+    "current": "4 - 2",
+    "penalties": null
+   },
+   "description": "Finished"
+  },
+  "awayTeam": {
+   "id": 3337,
+   "logo": "https://highlightly.net/soccer/images/teams/3337.png",
+   "name": "Croatia",
+   "topPlayers": [
+    {
+     "name": "Petar Musa",
+     "position": "Attacker",
+     "statistics": [
+      {
+       "name": "Total Shots",
+       "value": 1
+      },
+      {
+       "name": "Shots On Target",
+       "value": 1
+      },
+      {
+       "name": "Offsides",
+       "value": 0
+      }
+     ]
+    },
+    {
+     "name": "Martin Baturina",
+     "position": "Midfielder",
+     "statistics": [
+      {
+       "name": "Total Shots",
+       "value": 1
+      },
+      {
+       "name": "Shots On Target",
+       "value": 1
+      },
+      {
+       "name": "Offsides",
+       "value": 0
+      }
+     ]
+    },
+    {
+     "name": "Josip Šutalo",
+     "position": "Defender",
+     "statistics": [
+      {
+       "name": "Total Shots",
+       "value": 1
+      },
+      {
+       "name": "Offsides",
+       "value": 0
+      },
+      {
+       "name": "Passes Completed",
+       "value": "63/70"
+      }
+     ]
+    }
+   ],
+   "shots": [
+    {
+     "time": "3'",
+     "outcome": "Missed",
+     "goalTarget": "High Right",
+     "playerName": "Josip Šutalo"
+    },
+    {
+     "time": "36'",
+     "outcome": "Goal",
+     "goalTarget": "High Left",
+     "playerName": "Martin Baturina"
+    },
+    {
+     "time": "45 + 4'",
+     "outcome": "Missed",
+     "goalTarget": "Close Right And High",
+     "playerName": "Mario Pasalic"
+    },
+    {
+     "time": "45 + 5'",
+     "outcome": "Goal",
+     "goalTarget": "Low Centre",
+     "playerName": "Petar Musa"
+    },
+    {
+     "time": "76'",
+     "outcome": "Saved",
+     "goalTarget": "Low Centre",
+     "playerName": "Marco Pasalic"
+    },
+    {
+     "time": "77'",
+     "outcome": "Saved",
+     "goalTarget": "Low Left",
+     "playerName": "Igor Matanovic"
+    },
+    {
+     "time": "81'",
+     "outcome": "Missed",
+     "goalTarget": "High Right",
+     "playerName": "Petar Sucic"
+    },
+    {
+     "time": "84'",
+     "outcome": "Saved",
+     "goalTarget": "Low Left",
+     "playerName": "Mateo Kovacic"
+    },
+    {
+     "time": "90 + 4'",
+     "outcome": "Blocked",
+     "goalTarget": "Low Right",
+     "playerName": "Andrej Kramaric"
+    },
+    {
+     "time": "90 + 5'",
+     "outcome": "Blocked",
+     "goalTarget": "Low Centre",
+     "playerName": "Josko Gvardiol"
+    }
+   ]
+  },
+  "homeTeam": {
+   "id": 9294,
+   "logo": "https://highlightly.net/soccer/images/teams/9294.png",
+   "name": "England",
+   "topPlayers": [
+    {
+     "name": "Harry Kane",
+     "position": "Attacker",
+     "statistics": [
+      {
+       "name": "Total Shots",
+       "value": 7
+      },
+      {
+       "name": "Shots On Target",
+       "value": 3
+      },
+      {
+       "name": "Offsides",
+       "value": 0
+      }
+     ]
+    },
+    {
+     "name": "Jude Bellingham",
+     "position": "Midfielder",
+     "statistics": [
+      {
+       "name": "Total Shots",
+       "value": 3
+      },
+      {
+       "name": "Shots On Target",
+       "value": 2
+      },
+      {
+       "name": "Offsides",
+       "value": 0
+      }
+     ]
+    },
+    {
+     "name": "Reece James",
+     "position": "Defender",
+     "statistics": [
+      {
+       "name": "Total Shots",
+       "value": 1
+      },
+      {
+       "name": "Offsides",
+       "value": 0
+      },
+      {
+       "name": "Passes Completed",
+       "value": "36/43"
+      }
+     ]
+    }
+   ],
+   "shots": [
+    {
+     "time": "8'",
+     "outcome": "Blocked",
+     "goalTarget": "Low Left",
+     "playerName": "Harry Kane"
+    },
+    {
+     "time": "9'",
+     "outcome": "Missed",
+     "goalTarget": null,
+     "playerName": "Ezri Konsa"
+    },
+    {
+     "time": "12'",
+     "outcome": "Goal",
+     "goalTarget": "Low Right",
+     "playerName": "Harry Kane"
+    },
+    {
+     "time": "16'",
+     "outcome": "Blocked",
+     "goalTarget": "Low Centre",
+     "playerName": "Noni Madueke"
+    },
+    {
+     "time": "16'",
+     "outcome": "Blocked",
+     "goalTarget": "Low Centre",
+     "playerName": "Elliot Anderson"
+    },
+    {
+     "time": "31'",
+     "outcome": "Missed",
+     "goalTarget": null,
+     "playerName": "Jude Bellingham"
+    },
+    {
+     "time": "35'",
+     "outcome": "Missed",
+     "goalTarget": null,
+     "playerName": "Harry Kane"
+    },
+    {
+     "time": "42'",
+     "outcome": "Goal",
+     "goalTarget": "Low Left",
+     "playerName": "Harry Kane"
+    },
+    {
+     "time": "45 + 1'",
+     "outcome": "Blocked",
+     "goalTarget": "Low Right",
+     "playerName": "Reece James"
+    },
+    {
+     "time": "47'",
+     "outcome": "Goal",
+     "goalTarget": "Low Left",
+     "playerName": "Jude Bellingham"
+    },
+    {
+     "time": "48'",
+     "outcome": "Saved",
+     "goalTarget": "Low Left",
+     "playerName": "Jude Bellingham"
+    },
+    {
+     "time": "49'",
+     "outcome": "Missed",
+     "goalTarget": "Close Right",
+     "playerName": "Nico O'Reilly"
+    },
+    {
+     "time": "52'",
+     "outcome": "Saved",
+     "goalTarget": "High Right",
+     "playerName": "Declan Rice"
+    },
+    {
+     "time": "56'",
+     "outcome": "Saved",
+     "goalTarget": "High Centre",
+     "playerName": "Nico O'Reilly"
+    },
+    {
+     "time": "56'",
+     "outcome": "Saved",
+     "goalTarget": "Low Centre",
+     "playerName": "Anthony Gordon"
+    },
+    {
+     "time": "56'",
+     "outcome": "Saved",
+     "goalTarget": "Low Centre",
+     "playerName": "Ezri Konsa"
+    },
+    {
+     "time": "57'",
+     "outcome": "Saved",
+     "goalTarget": "Low Centre",
+     "playerName": "Harry Kane"
+    },
+    {
+     "time": "57'",
+     "outcome": "Missed",
+     "goalTarget": "Close Right",
+     "playerName": "Harry Kane"
+    },
+    {
+     "time": "69'",
+     "outcome": "Blocked",
+     "goalTarget": "Low Centre",
+     "playerName": "Anthony Gordon"
+    },
+    {
+     "time": "82'",
+     "outcome": "Saved",
+     "goalTarget": "Low Centre",
+     "playerName": "Djed Spence"
+    },
+    {
+     "time": "85'",
+     "outcome": "Goal",
+     "goalTarget": "Low Right",
+     "playerName": "Marcus Rashford"
+    },
+    {
+     "time": "90 + 6'",
+     "outcome": "Missed",
+     "goalTarget": "High Right",
+     "playerName": "Harry Kane"
+    }
+   ]
+  },
+  "league": {
+   "id": 1635,
+   "logo": null,
+   "name": "World Cup",
+   "season": 2026
+  },
+  "news": [
+   {
+    "url": "https://www.dailymail.com/vertical-galleries/article-15911385/Police-hunt-suspect-Kansas-City-shooting-spree.html",
+    "image": "https://i.dailymail.com/1s/2026/06/18/15/109442977-0-image-m-14_1781792134141.jpg",
+    "title": "Police hunt for suspect in Kansas City shooting spree",
+    "datePublished": "2026-06-18T15:46:00Z"
+   },
+   {
+    "url": "https://www.bbc.com/sport/football/articles/cvg5de1dyn2o",
+    "image": "https://ichef.bbci.co.uk/ace/branded_sport/1200/cpsprodpb/985d/live/8ad63b90-6b1f-11f1-be36-65d2d6d55e70.jpg",
+    "title": "Kane is England's greatest striker, says Lineker",
+    "datePublished": "2026-06-18T14:37:23Z"
+   },
+   {
+    "url": "https://www.fourfourtwo.com/person/player/thierry-henry-names-his-favourites-for-world-cup-2026-and-its-not-england",
+    "image": "https://cdn.mos.cms.futurecdn.net/HZNMTgHno5zAhUWFkqb7hn-2560-80.jpg",
+    "title": "Thierry Henry names his favourites for World Cup 2026 - and it's not England",
+    "datePublished": "2026-06-18T14:34:55Z"
+   },
+   {
+    "url": "https://www.dailymail.com/sport/football/article-15910759/Harry-Maguire-Gary-Lineker-Thomas-Tuchel-England.html",
+    "image": "https://i.dailymail.com/1s/2026/06/18/14/109442233-0-image-m-18_1781790964354.jpg",
+    "title": "The awkward moment Harry Maguire squirms on Gary Lineker's Netflix show as Alan Shearer and Micah Richards lavish 'refreshing' Thomas Tuchel with praise after England's World Cup win over Croatia",
+    "datePublished": "2026-06-18T13:56:17Z"
+   },
+   {
+    "url": "https://www.fourfourtwo.com/competition/englands-route-to-the-world-cup-final-heres-who-the-three-lions-face-en-route-to-glory",
+    "image": "https://cdn.mos.cms.futurecdn.net/iR2MPKamgp8SYAvZN4MpMQ-2500-80.jpg",
+    "title": "England's route to the World Cup final: Here's who the Three Lions face en route to glory",
+    "datePublished": "2026-06-18T13:39:45Z"
+   },
+   {
+    "url": "https://www.dailystar.co.uk/showbiz/robbie-williams-strips-underwear-england-37314478",
+    "image": "https://i2-prod.dailystar.co.uk/showbiz/article37314473.ece/ALTERNATES/n615/1_Robbie-Williams-strips-to-pants-to-watch-England-as-he-teaches-daughter-chant.jpg",
+    "title": "Robbie Williams strips to underwear as England win first World Cup game",
+    "datePublished": "2026-06-18T13:25:15Z"
+   },
+   {
+    "url": "https://www.dailymail.com/sport/football/article-15904321/marc-guehi-anthony-gordon-jordan-pickford-england-croatia.html",
+    "image": "https://i.dailymail.com/1s/2026/06/18/13/109440251-0-image-m-23_1781785609417.jpg",
+    "title": "Should Marc Guehi start against Ghana? Has Anthony Gordon wasted his chance? And should Jordan Pickford be DROPPED? LEWIS STEELE responds to YOUR comments following England's win over Croatia",
+    "datePublished": "2026-06-18T13:01:20Z"
+   },
+   {
+    "url": "https://www.footyheadlines.com/7077600766/england-move-home-kit-front-numbers-to-center-for-2026-world-cup.html",
+    "image": "https://www.footyheadlines.com/static/img/post/2026/06/18/o7Vwg41W7C5xBFx/england-move-home-kit-front-numbers-to-center-for-2026-world-cup.jpg?s=800",
+    "title": "England Move Home Kit Front Numbers to Center for 2026 World Cup",
+    "datePublished": "2026-06-18T12:55:20Z"
+   },
+   {
+    "url": "https://www.goal.com/en/lists/thomas-tuchel-begging-fifa-change-pre-match-protocol-england-croatia/blt1e2cdf5407a2e582",
+    "image": "https://assets.goal.com/images/v3/getty-2282102457/crop/MM5DEMRYHA5DCMRYG45G433XMU5DAORRGAYA====/GettyImages-2282102457.jpg",
+    "title": "Thomas Tuchel 'begging' FIFA to change pre-match protocol after 'very special moment' was ruined for England boss ahead of Croatia clash | Goal.com",
+    "datePublished": "2026-06-18T12:52:19Z"
+   },
+   {
+    "url": "https://www.bbc.com/sport/football/articles/c5yzkx6vjxno",
+    "image": "https://ichef.bbci.co.uk/ace/branded_sport/1200/cpsprodpb/9723/live/2dbc5460-6b0d-11f1-8e1d-bbbb1017d210.jpg",
+    "title": "Why are England playing a darts song at the World Cup?",
+    "datePublished": "2026-06-18T12:48:57Z"
+   },
+   {
+    "url": "https://www.dailymail.com/sport/football/article-15910163/Thomas-Tuchel-England-World-Cup-Croatia.html",
+    "image": "https://i.dailymail.com/1s/2026/06/18/10/109436527-0-image-a-17_1781776436733.jpg",
+    "title": "How German fury inspired England to World Cup turnaround: Fired-up Thomas Tuchel was angry from the start, gave Jordan Pickford and Noni Madueke a rollicking - and his Scouse sidekick had to calm him down!",
+    "datePublished": "2026-06-18T11:40:32Z"
+   },
+   {
+    "url": "https://www.dailymail.com/sport/football/article-15908177/England-set-pieces-World-Cup-Kane-playbook.html",
+    "image": "https://i.dailymail.com/1s/2026/06/18/11/109436873-0-image-a-23_1781777859046.jpg",
+    "title": "Inside England's set-piece playbook that has opponents terrified: The 'four and two' trick that gives Harry Kane free headers, how they get around the crackdown on grappling and a genius who wrote an essay on 16,000 throw-ins",
+    "datePublished": "2026-06-18T11:00:52Z"
+   },
+   {
+    "url": "https://www.bbc.com/sport/football/videos/czxqyv2le79o",
+    "image": "https://ichef.bbci.co.uk/ace/standard/1024/cpsprodpb/ac57/live/15868190-6afe-11f1-8e1d-bbbb1017d210.jpg",
+    "title": "Why is a darts song playing at the World Cup?",
+    "datePublished": "2026-06-18T10:14:51Z"
+   },
+   {
+    "url": "https://www.express.co.uk/sport/football/2218945/Harry-Kane-injury-England-Croatia-World-Cup",
+    "image": "https://cdn.images.express.co.uk/img/dynamic/67/1200x630/6989111.jpg",
+    "title": "Harry Kane sparks injury concern as England hero spotted wearing bandage after Croatia win",
+    "datePublished": "2026-06-18T10:05:00Z"
+   },
+   {
+    "url": "https://www.bbc.com/sport/football/videos/c3dy4epgkj0o",
+    "image": "https://ichef.bbci.co.uk/ace/standard/1024/cpsprodpb/06f6/live/c1850fc0-6af9-11f1-8e1d-bbbb1017d210.jpg",
+    "title": "Why England's win left Steve Bracknall in tears",
+    "datePublished": "2026-06-18T09:41:45Z"
+   },
+   {
+    "url": "https://www.bbc.com/sport/articles/c98256ypwy0o",
+    "image": "https://ichef.bbci.co.uk/ace/branded_sport/1200/cpsprodpb/20ba/live/4d7a6b00-6afb-11f1-80a3-b70219ebe550.jpg",
+    "title": "Tactical analysis: England look exciting but how can they tighten up?",
+    "datePublished": "2026-06-18T09:38:00Z"
+   },
+   {
+    "url": "https://www.dailystar.co.uk/sport/football/england-croatia-wag-megan-pickford-37313086",
+    "image": "https://i2-prod.dailystar.co.uk/incoming/article37313066.ece/ALTERNATES/n615/2_Megan-Pickford.jpg",
+    "title": "England ace's gorgeous wife loses clothes so becomes stunning cowgirl to wow at World Cup",
+    "datePublished": "2026-06-18T09:27:30Z"
+   },
+   {
+    "url": "https://www.bbc.com/sport/football/videos/c77y14l0kk1o",
+    "image": "https://ichef.bbci.co.uk/ace/standard/1024/cpsprodpb/516f/live/2312d860-6af7-11f1-8546-8f19e4fe30f4.jpg",
+    "title": "Tuchel unhappy with World Cup photographers",
+    "datePublished": "2026-06-18T09:22:43Z"
+   },
+   {
+    "url": "https://www.express.co.uk/sport/football/2218869/Thomas-Tuchel-World-Cup-England-national-anthem",
+    "image": "https://cdn.images.express.co.uk/img/dynamic/67/1200x630/6988754.jpg",
+    "title": "Thomas Tuchel demands World Cup rule change after England national anthem 'ruined'",
+    "datePublished": "2026-06-18T08:32:00Z"
+   },
+   {
+    "url": "https://www.dailymail.com/sport/football/article-15889079/Thomas-Tuchel-England-World-Cup-Munich-Everest-Serbia-stars.html",
+    "image": "https://i.dailymail.com/1s/2026/06/15/15/109363183-0-image-m-23_1781534172495.jpg",
+    "title": "England's brutally frank boss Thomas Tuchel is the 'German with the wrong passport' who refuses to accept big egos and sends endless late-night WhatsApps - now he's building a team to win the World Cup",
+    "datePublished": "2026-06-18T08:12:35Z"
+   }
+  ]
+ }
+]

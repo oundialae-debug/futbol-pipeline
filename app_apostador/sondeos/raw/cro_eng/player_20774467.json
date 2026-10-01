@@ -1,0 +1,461 @@
+[
+ {
+  "id": 20774467,
+  "logo": null,
+  "name": "J. Gvardiol",
+  "fullName": "Joško Gvardiol",
+  "profile": {
+   "club": {
+    "current": "Manchester City",
+    "joinedAt": "05/08/2023",
+    "contractExpiry": "30/06/2031",
+    "latestContractExtension": "28/07/2026"
+   },
+   "foot": "left",
+   "height": "1,85 m",
+   "fullName": "Josko Gvardiol",
+   "position": {
+    "main": "Centre-Back",
+    "secondary": "Left-Back"
+   },
+   "birthDate": "23/01/2002",
+   "deathDate": null,
+   "birthPlace": "Zagreb",
+   "citizenship": "Croatia"
+  },
+  "rumours": {
+   "current": [
+    {
+     "club": "Real Madrid",
+     "rumourDate": "15/06/2026",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Bayern Munich",
+     "rumourDate": "10/06/2026",
+     "transferProbability": "41.95%"
+    },
+    {
+     "club": "FC Barcelona",
+     "rumourDate": "29/05/2026",
+     "transferProbability": "N/A"
+    }
+   ],
+   "historical": [
+    {
+     "club": "Leeds United",
+     "rumourDate": "09/09/2020",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Bayern Munich",
+     "rumourDate": "12/05/2020",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "AS Roma",
+     "rumourDate": "07/01/2020",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Real Madrid",
+     "rumourDate": "15/06/2026",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Bayern Munich",
+     "rumourDate": "10/06/2026",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "FC Barcelona",
+     "rumourDate": "29/05/2026",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Manchester City",
+     "rumourDate": "05/08/2023",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Liverpool FC",
+     "rumourDate": "31/07/2023",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Real Madrid",
+     "rumourDate": "23/03/2023",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Chelsea FC",
+     "rumourDate": "08/01/2023",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Bayern Munich",
+     "rumourDate": "12/12/2022",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Manchester United",
+     "rumourDate": "15/12/2022",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "FC Barcelona",
+     "rumourDate": "18/11/2022",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Tottenham Hotspur",
+     "rumourDate": "27/06/2022",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Inter Milan",
+     "rumourDate": "26/05/2022",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Juventus FC",
+     "rumourDate": "13/05/2022",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Leeds United",
+     "rumourDate": "15/04/2022",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "RB Leipzig",
+     "rumourDate": "25/09/2020",
+     "transferProbability": "N/A"
+    }
+   ]
+  },
+  "relatedNews": [
+   {
+    "url": "https://www.transfermarkt.com/all-time-record-transfers-xi-man-united-vs-man-city-combined-ahead-of-manchester-derby/view/news/486975",
+    "date": "Sep 13, 2026",
+    "title": "All-time record transfers XI - Man United vs Man City combined ahead of Manchester derby"
+   },
+   {
+    "url": "https://www.transfermarkt.com/how-man-city-could-line-up-under-enzo-maresca-amp-five-stars-who-could-leave-this-summer/view/news/480914",
+    "date": "Jun 12, 2026",
+    "title": "How Man City could line up under Enzo Maresca & five stars who could leave this summer"
+   },
+   {
+    "url": "https://www.transfermarkt.com/william-saliba-equals-all-time-record-the-most-valuable-centre-backs-in-transfermarkt-history/view/news/480357",
+    "date": "Jun 5, 2026",
+    "title": "William Saliba equals all-time record - the most valuable centre-backs in Transfermarkt history"
+   },
+   {
+    "url": "https://www.transfermarkt.com/guardiola-set-to-leave-five-star-players-that-could-depart-man-city-this-summer/view/news/479667",
+    "date": "May 19, 2026",
+    "title": "Guardiola set to leave - Five star players that could depart Man City this summer"
+   },
+   {
+    "url": "https://www.transfermarkt.com/no-erling-haaland-chelsea-vs-manchester-city-most-expensive-xi-based-on-transfer-fees/view/news/477888",
+    "date": "Apr 12, 2026",
+    "title": "No Erling Haaland - Chelsea vs Manchester City most expensive XI based on transfer fees"
+   },
+   {
+    "url": "https://www.transfermarkt.com/wirtz-amp-rodri-but-no-haaland-man-city-amp-liverpool-combined-xi-based-on-transfer-fees/view/news/477504",
+    "date": "Apr 3, 2026",
+    "title": "Wirtz & Rodri but no Haaland - Man City & Liverpool combined XI based on transfer fees"
+   },
+   {
+    "url": "https://www.transfermarkt.com/-euro-1-15b-worth-of-talent-the-new-premier-league-most-valuable-starting-xi/view/news/463993",
+    "date": "Mar 10, 2026",
+    "title": "€1.15b worth of talent - The NEW Premier League most valuable starting XI"
+   },
+   {
+    "url": "https://www.transfermarkt.com/arsenal-centre-back-william-saliba-now-the-mvp-the-most-valuable-defenders-in-the-world/view/news/463811",
+    "date": "Dec 13, 2025",
+    "title": "Arsenal centre-back William Saliba now the MVP - The most valuable defenders in the world"
+   },
+   {
+    "url": "https://www.transfermarkt.com/foden-embraces-man-city-icon-status-with-clutch-display-as-haaland-struggles-in-leeds-win/view/news/463551",
+    "date": "Nov 29, 2025",
+    "title": "Foden embraces Man City icon status with clutch display as Haaland struggles in Leeds win"
+   },
+   {
+    "url": "https://www.transfermarkt.com/unrivalled-across-europe-erling-haalands-incredible-record-in-the-champions-league/view/news/461162",
+    "date": "Oct 1, 2025",
+    "title": "Unrivalled across Europe - Erling Haaland's incredible record in the Champions League"
+   }
+  ],
+  "transfers": [
+   {
+    "to": "Man City",
+    "fee": "€90.00M",
+    "from": "Leipzig",
+    "type": "transfer",
+    "season": "23/24",
+    "marketValue": "€75.00M",
+    "transferDate": "Aug 5, 2023"
+   },
+   {
+    "to": "Leipzig",
+    "fee": "€36.80M",
+    "from": "Dinamo Zagreb",
+    "type": "transfer",
+    "season": "21/22",
+    "marketValue": "€19.00M",
+    "transferDate": "Jul 1, 2021"
+   },
+   {
+    "to": "Dinamo Zagreb",
+    "fee": null,
+    "from": "Din. Zagreb U19",
+    "type": "transfer",
+    "season": "19/20",
+    "marketValue": null,
+    "transferDate": "Jul 1, 2019"
+   },
+   {
+    "to": "Din. Zagreb U19",
+    "fee": null,
+    "from": "Din. Zagreb U17",
+    "type": "transfer",
+    "season": "18/19",
+    "marketValue": null,
+    "transferDate": "Jan 26, 2019"
+   },
+   {
+    "to": "Din. Zagreb U17",
+    "fee": null,
+    "from": "D. Zagreb Yth.",
+    "type": "transfer",
+    "season": "17/18",
+    "marketValue": null,
+    "transferDate": "Jul 1, 2017"
+   },
+   {
+    "to": "D. Zagreb Yth.",
+    "fee": null,
+    "from": "NK Tresnjevka",
+    "type": "transfer",
+    "season": "10/11",
+    "marketValue": null,
+    "transferDate": "Sep 3, 2010"
+   }
+  ],
+  "marketValue": [
+   {
+    "age": 24,
+    "club": "Manchester City",
+    "value": 70000000,
+    "currency": "€",
+    "recordedDate": "03/06/2026"
+   },
+   {
+    "age": 23,
+    "club": "Manchester City",
+    "value": 70000000,
+    "currency": "€",
+    "recordedDate": "09/12/2025"
+   },
+   {
+    "age": 23,
+    "club": "Manchester City",
+    "value": 75000000,
+    "currency": "€",
+    "recordedDate": "30/05/2025"
+   },
+   {
+    "age": 22,
+    "club": "Manchester City",
+    "value": 75000000,
+    "currency": "€",
+    "recordedDate": "16/12/2024"
+   },
+   {
+    "age": 22,
+    "club": "Manchester City",
+    "value": 75000000,
+    "currency": "€",
+    "recordedDate": "27/05/2024"
+   },
+   {
+    "age": 22,
+    "club": "Manchester City",
+    "value": 75000000,
+    "currency": "€",
+    "recordedDate": "14/03/2024"
+   },
+   {
+    "age": 21,
+    "club": "Manchester City",
+    "value": 80000000,
+    "currency": "€",
+    "recordedDate": "19/12/2023"
+   },
+   {
+    "age": 21,
+    "club": "Manchester City",
+    "value": 80000000,
+    "currency": "€",
+    "recordedDate": "09/10/2023"
+   },
+   {
+    "age": 21,
+    "club": "RB Leipzig",
+    "value": 75000000,
+    "currency": "€",
+    "recordedDate": "22/06/2023"
+   },
+   {
+    "age": 20,
+    "club": "RB Leipzig",
+    "value": 75000000,
+    "currency": "€",
+    "recordedDate": "23/12/2022"
+   },
+   {
+    "age": 20,
+    "club": "RB Leipzig",
+    "value": 60000000,
+    "currency": "€",
+    "recordedDate": "09/11/2022"
+   },
+   {
+    "age": 20,
+    "club": "RB Leipzig",
+    "value": 60000000,
+    "currency": "€",
+    "recordedDate": "21/09/2022"
+   },
+   {
+    "age": 20,
+    "club": "RB Leipzig",
+    "value": 35000000,
+    "currency": "€",
+    "recordedDate": "09/06/2022"
+   },
+   {
+    "age": 20,
+    "club": "RB Leipzig",
+    "value": 30000000,
+    "currency": "€",
+    "recordedDate": "24/03/2022"
+   },
+   {
+    "age": 19,
+    "club": "RB Leipzig",
+    "value": 25000000,
+    "currency": "€",
+    "recordedDate": "22/12/2021"
+   },
+   {
+    "age": 19,
+    "club": "GNK Dinamo Zagreb",
+    "value": 19000000,
+    "currency": "€",
+    "recordedDate": "28/05/2021"
+   },
+   {
+    "age": 18,
+    "club": "GNK Dinamo Zagreb",
+    "value": 16000000,
+    "currency": "€",
+    "recordedDate": "28/12/2020"
+   },
+   {
+    "age": 18,
+    "club": "GNK Dinamo Zagreb",
+    "value": 6000000,
+    "currency": "€",
+    "recordedDate": "27/07/2020"
+   },
+   {
+    "age": 18,
+    "club": "GNK Dinamo Zagreb",
+    "value": 1300000,
+    "currency": "€",
+    "recordedDate": "08/04/2020"
+   },
+   {
+    "age": 17,
+    "club": "GNK Dinamo Zagreb",
+    "value": 1500000,
+    "currency": "€",
+    "recordedDate": "27/12/2019"
+   },
+   {
+    "age": 17,
+    "club": "GNK Dinamo Zagreb",
+    "value": 300000,
+    "currency": "€",
+    "recordedDate": "16/09/2019"
+   }
+  ],
+  "injuries": [
+   {
+    "reason": "Broken tibia",
+    "season": "2026",
+    "toDate": "01.05.2026",
+    "fromDate": "04.01.2026",
+    "missedGames": 27,
+    "absentDurationInDays": 118
+   },
+   {
+    "reason": "Unknown",
+    "season": "2026",
+    "toDate": "01.09.2025",
+    "fromDate": "01.08.2025",
+    "missedGames": 3,
+    "absentDurationInDays": 32
+   },
+   {
+    "reason": "Ankle ligament tear",
+    "season": "2024",
+    "toDate": "04.03.2024",
+    "fromDate": "11.02.2024",
+    "missedGames": 5,
+    "absentDurationInDays": 23
+   },
+   {
+    "reason": "Groin problems",
+    "season": "2023",
+    "toDate": "07.07.2023",
+    "fromDate": "11.06.2023",
+    "missedGames": 2,
+    "absentDurationInDays": 27
+   },
+   {
+    "reason": "Thigh problems",
+    "season": "2023",
+    "toDate": "13.05.2023",
+    "fromDate": "06.05.2023",
+    "missedGames": 1,
+    "absentDurationInDays": 8
+   },
+   {
+    "reason": "Knee problems",
+    "season": "2022",
+    "toDate": "12.05.2022",
+    "fromDate": "05.05.2022",
+    "missedGames": 1,
+    "absentDurationInDays": 8
+   },
+   {
+    "reason": "Muscle injury",
+    "season": "2021",
+    "toDate": "17.06.2021",
+    "fromDate": "13.05.2021",
+    "missedGames": 1,
+    "absentDurationInDays": 36
+   },
+   {
+    "reason": "Muscle injury",
+    "season": "2021",
+    "toDate": "29.03.2021",
+    "fromDate": "08.03.2021",
+    "missedGames": 6,
+    "absentDurationInDays": 22
+   }
+  ]
+ }
+]

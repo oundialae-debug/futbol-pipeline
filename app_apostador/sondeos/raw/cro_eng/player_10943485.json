@@ -1,0 +1,474 @@
+[
+ {
+  "id": 10943485,
+  "logo": null,
+  "name": "M. Guéhi",
+  "fullName": "Addji Keaninkin Marc-Israel Guéhi",
+  "profile": {
+   "club": {
+    "current": "Manchester City",
+    "joinedAt": "19/01/2026",
+    "contractExpiry": "30/06/2031",
+    "latestContractExtension": null
+   },
+   "foot": "right",
+   "height": "1,82 m",
+   "fullName": "Marc Guéhi",
+   "position": {
+    "main": "Centre-Back",
+    "secondary": "Defensive Midfield"
+   },
+   "birthDate": "13/07/2000",
+   "deathDate": null,
+   "birthPlace": "Abidjan",
+   "citizenship": "England, Cote d'Ivoire"
+  },
+  "rumours": {
+   "current": [
+    {
+     "club": "Bayern Munich",
+     "rumourDate": "16/12/2025",
+     "transferProbability": "47.66%"
+    },
+    {
+     "club": "FC Barcelona",
+     "rumourDate": "04/12/2025",
+     "transferProbability": "44.43%"
+    },
+    {
+     "club": "Atlético de Madrid",
+     "rumourDate": "03/12/2025",
+     "transferProbability": "45.32%"
+    },
+    {
+     "club": "Liverpool FC",
+     "rumourDate": "27/11/2025",
+     "transferProbability": "69.31%"
+    }
+   ],
+   "historical": [
+    {
+     "club": "Crystal Palace",
+     "rumourDate": "18/07/2021",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Swansea City",
+     "rumourDate": "10/01/2020",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Manchester City",
+     "rumourDate": "19/01/2026",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Liverpool FC",
+     "rumourDate": "18/01/2026",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Bayern Munich",
+     "rumourDate": "16/01/2026",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Arsenal FC",
+     "rumourDate": "10/01/2026",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Real Madrid",
+     "rumourDate": "30/12/2025",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "FC Barcelona",
+     "rumourDate": "27/12/2025",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Atlético de Madrid",
+     "rumourDate": "03/12/2025",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Inter Milan",
+     "rumourDate": "20/08/2025",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Newcastle United",
+     "rumourDate": "05/08/2025",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "AFC Bournemouth",
+     "rumourDate": "16/06/2025",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Chelsea FC",
+     "rumourDate": "20/05/2025",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Nottingham Forest",
+     "rumourDate": "20/05/2025",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Manchester United",
+     "rumourDate": "20/05/2025",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Tottenham Hotspur",
+     "rumourDate": "01/05/2025",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Borussia Mönchengladbach",
+     "rumourDate": "18/07/2021",
+     "transferProbability": "N/A"
+    }
+   ]
+  },
+  "relatedNews": [
+   {
+    "url": "https://www.transfermarkt.com/rice-4th-vinicius-11th-which-players-played-the-most-games-in-the-25-26-season-/view/news/483252",
+    "date": "Jul 21, 2026",
+    "title": "Rice 4th, Vinicius 11th - which players played the most games in the 25/26 season?"
+   },
+   {
+    "url": "https://www.transfermarkt.com/615-market-value-growth-oliver-glasner-may-be-the-man-to-turn-forests-strategy-into-success/view/news/482459",
+    "date": "Jul 6, 2026",
+    "title": "615% market value growth - Oliver Glasner may be the man to turn Forest's strategy into success"
+   },
+   {
+    "url": "https://www.transfermarkt.com/haaland-yildiz-amp-co-the-30-world-cup-mvps-not-playing-for-their-country-of-birth/view/news/481027",
+    "date": "Jun 14, 2026",
+    "title": "Haaland, Yıldız  & Co. - The 30 World Cup MVPs not playing for their country of birth"
+   },
+   {
+    "url": "https://www.transfermarkt.com/how-man-city-could-line-up-under-enzo-maresca-amp-five-stars-who-could-leave-this-summer/view/news/480914",
+    "date": "Jun 12, 2026",
+    "title": "How Man City could line up under Enzo Maresca & five stars who could leave this summer"
+   },
+   {
+    "url": "https://www.transfermarkt.com/guardiola-set-to-leave-five-star-players-that-could-depart-man-city-this-summer/view/news/479667",
+    "date": "May 19, 2026",
+    "title": "Guardiola set to leave - Five star players that could depart Man City this summer"
+   },
+   {
+    "url": "https://www.transfermarkt.com/germany-7th-turkiye-17th-which-nation-has-the-most-valuable-collection-of-defenders-/view/news/479413",
+    "date": "May 15, 2026",
+    "title": "Germany 7th, Türkiye 17th - Which nation has the most valuable collection of defenders?"
+   },
+   {
+    "url": "https://www.transfermarkt.com/raya-cherki-amp-co-the-24-tm-premier-league-player-of-the-season-nominees-revealed/view/news/479349",
+    "date": "May 13, 2026",
+    "title": "Raya, Cherki & Co. - The 24 TM Premier League Player of the Season nominees revealed"
+   },
+   {
+    "url": "https://www.transfermarkt.com/can-rayan-cherki-break-eric-cantonas-record-most-assists-in-debut-premier-league-seasons/view/news/477987",
+    "date": "Apr 13, 2026",
+    "title": "Can Rayan Cherki break Eric Cantona's record? Most assists in debut Premier League seasons"
+   },
+   {
+    "url": "https://www.transfermarkt.com/title-no-7-man-city-amp-guardiola-make-strong-statement-with-dominant-chelsea-win/view/news/477937",
+    "date": "Apr 12, 2026",
+    "title": "Title No. 7? Man City & Guardiola make strong statement with dominant Chelsea win"
+   },
+   {
+    "url": "https://www.transfermarkt.com/man-utd-6th-amp-chelsea-3rd-every-premier-league-squad-ranked-by-market-value/view/news/476391",
+    "date": "Mar 10, 2026",
+    "title": "Man Utd 6th & Chelsea 3rd - Every Premier League squad ranked by market value"
+   },
+   {
+    "url": "https://www.transfermarkt.com/which-club-made-the-best-january-signing-transfermarkts-experts-pick-their-favourites/view/news/474923",
+    "date": "Feb 4, 2026",
+    "title": "Which club made the best January signing? Transfermarkt's experts pick their favourites"
+   },
+   {
+    "url": "https://www.transfermarkt.com/paqueta-lookman-guendouzi-amp-co-the-25-most-expensive-transfers-of-the-winter-window/view/news/474879",
+    "date": "Feb 3, 2026",
+    "title": "Paquetá, Lookman, Guendouzi & Co. - The 25 most expensive transfers of the winter window"
+   }
+  ],
+  "transfers": [
+   {
+    "to": "Man City",
+    "fee": "€23.00M",
+    "from": "Crystal Palace",
+    "type": "transfer",
+    "season": "25/26",
+    "marketValue": "€55.00M",
+    "transferDate": "Jan 19, 2026"
+   },
+   {
+    "to": "Crystal Palace",
+    "fee": "€23.34M",
+    "from": "Chelsea",
+    "type": "transfer",
+    "season": "21/22",
+    "marketValue": "€10.00M",
+    "transferDate": "Jul 18, 2021"
+   },
+   {
+    "to": "Chelsea",
+    "fee": null,
+    "from": "Swansea",
+    "type": "end of loan",
+    "season": "20/21",
+    "marketValue": "€6.00M",
+    "transferDate": "May 31, 2021"
+   },
+   {
+    "to": "Swansea",
+    "fee": null,
+    "from": "Chelsea",
+    "type": "loan",
+    "season": "20/21",
+    "marketValue": "€2.70M",
+    "transferDate": "Aug 26, 2020"
+   },
+   {
+    "to": "Chelsea",
+    "fee": null,
+    "from": "Swansea",
+    "type": "end of loan",
+    "season": "19/20",
+    "marketValue": "€2.70M",
+    "transferDate": "Jul 31, 2020"
+   },
+   {
+    "to": "Swansea",
+    "fee": null,
+    "from": "Chelsea",
+    "type": "loan",
+    "season": "19/20",
+    "marketValue": "€1.50M",
+    "transferDate": "Jan 10, 2020"
+   },
+   {
+    "to": "Chelsea",
+    "fee": null,
+    "from": "Chelsea U21",
+    "type": "transfer",
+    "season": "19/20",
+    "marketValue": "€1.50M",
+    "transferDate": "Jan 1, 2020"
+   },
+   {
+    "to": "Chelsea U21",
+    "fee": null,
+    "from": "Chelsea U18",
+    "type": "transfer",
+    "season": "18/19",
+    "marketValue": null,
+    "transferDate": "Jul 1, 2018"
+   },
+   {
+    "to": "Chelsea U18",
+    "fee": null,
+    "from": "Chelsea Youth",
+    "type": "transfer",
+    "season": "16/17",
+    "marketValue": null,
+    "transferDate": "Jul 1, 2016"
+   }
+  ],
+  "marketValue": [
+   {
+    "age": 25,
+    "club": "Manchester City",
+    "value": 70000000,
+    "currency": "€",
+    "recordedDate": "03/06/2026"
+   },
+   {
+    "age": 25,
+    "club": "Manchester City",
+    "value": 65000000,
+    "currency": "€",
+    "recordedDate": "09/03/2026"
+   },
+   {
+    "age": 25,
+    "club": "Crystal Palace",
+    "value": 55000000,
+    "currency": "€",
+    "recordedDate": "09/12/2025"
+   },
+   {
+    "age": 25,
+    "club": "Crystal Palace",
+    "value": 50000000,
+    "currency": "€",
+    "recordedDate": "17/10/2025"
+   },
+   {
+    "age": 24,
+    "club": "Crystal Palace",
+    "value": 45000000,
+    "currency": "€",
+    "recordedDate": "30/05/2025"
+   },
+   {
+    "age": 24,
+    "club": "Crystal Palace",
+    "value": 45000000,
+    "currency": "€",
+    "recordedDate": "16/12/2024"
+   },
+   {
+    "age": 24,
+    "club": "Crystal Palace",
+    "value": 45000000,
+    "currency": "€",
+    "recordedDate": "01/10/2024"
+   },
+   {
+    "age": 23,
+    "club": "Crystal Palace",
+    "value": 38000000,
+    "currency": "€",
+    "recordedDate": "27/05/2024"
+   },
+   {
+    "age": 23,
+    "club": "Crystal Palace",
+    "value": 38000000,
+    "currency": "€",
+    "recordedDate": "19/12/2023"
+   },
+   {
+    "age": 22,
+    "club": "Crystal Palace",
+    "value": 35000000,
+    "currency": "€",
+    "recordedDate": "20/06/2023"
+   },
+   {
+    "age": 22,
+    "club": "Crystal Palace",
+    "value": 35000000,
+    "currency": "€",
+    "recordedDate": "03/11/2022"
+   },
+   {
+    "age": 21,
+    "club": "Crystal Palace",
+    "value": 32000000,
+    "currency": "€",
+    "recordedDate": "15/06/2022"
+   },
+   {
+    "age": 21,
+    "club": "Crystal Palace",
+    "value": 30000000,
+    "currency": "€",
+    "recordedDate": "29/03/2022"
+   },
+   {
+    "age": 21,
+    "club": "Crystal Palace",
+    "value": 22000000,
+    "currency": "€",
+    "recordedDate": "23/12/2021"
+   },
+   {
+    "age": 21,
+    "club": "Crystal Palace",
+    "value": 20000000,
+    "currency": "€",
+    "recordedDate": "05/10/2021"
+   },
+   {
+    "age": 20,
+    "club": "Chelsea FC",
+    "value": 10000000,
+    "currency": "€",
+    "recordedDate": "08/06/2021"
+   },
+   {
+    "age": 20,
+    "club": "Swansea City",
+    "value": 6000000,
+    "currency": "€",
+    "recordedDate": "10/03/2021"
+   },
+   {
+    "age": 20,
+    "club": "Swansea City",
+    "value": 5500000,
+    "currency": "€",
+    "recordedDate": "15/10/2020"
+   },
+   {
+    "age": 19,
+    "club": "Swansea City",
+    "value": 2700000,
+    "currency": "€",
+    "recordedDate": "08/04/2020"
+   },
+   {
+    "age": 19,
+    "club": "Swansea City",
+    "value": 3000000,
+    "currency": "€",
+    "recordedDate": "27/02/2020"
+   },
+   {
+    "age": 19,
+    "club": "Chelsea FC U23",
+    "value": 1500000,
+    "currency": "€",
+    "recordedDate": "10/12/2019"
+   }
+  ],
+  "injuries": [
+   {
+    "reason": "Ankle injury",
+    "season": "2026",
+    "toDate": "21.11.2025",
+    "fromDate": "06.11.2025",
+    "missedGames": 3,
+    "absentDurationInDays": 16
+   },
+   {
+    "reason": "Concussion",
+    "season": "2025",
+    "toDate": "07.06.2025",
+    "fromDate": "12.05.2025",
+    "missedGames": 2,
+    "absentDurationInDays": 27
+   },
+   {
+    "reason": "Knee problems",
+    "season": "2024",
+    "toDate": "01.05.2024",
+    "fromDate": "03.02.2024",
+    "missedGames": 14,
+    "absentDurationInDays": 89
+   },
+   {
+    "reason": "Hip injury",
+    "season": "2024",
+    "toDate": "20.09.2023",
+    "fromDate": "13.09.2023",
+    "missedGames": 1,
+    "absentDurationInDays": 8
+   },
+   {
+    "reason": "Groin injury",
+    "season": "2021",
+    "toDate": "19.03.2021",
+    "fromDate": "09.03.2021",
+    "missedGames": 2,
+    "absentDurationInDays": 11
+   }
+  ]
+ }
+]

@@ -1,0 +1,457 @@
+[
+ {
+  "id": 22344861,
+  "logo": null,
+  "name": "A. Gordon",
+  "fullName": "Anthony Michael Gordon",
+  "profile": {
+   "club": {
+    "current": "FC Barcelona",
+    "joinedAt": "01/07/2026",
+    "contractExpiry": "30/06/2031",
+    "latestContractExtension": null
+   },
+   "foot": "right",
+   "height": "1,83 m",
+   "fullName": "Anthony Gordon",
+   "position": {
+    "main": "Left Winger",
+    "secondary": "Right Winger, Centre-Forward"
+   },
+   "birthDate": "24/02/2001",
+   "deathDate": null,
+   "birthPlace": "Liverpool",
+   "citizenship": "England, Scotland"
+  },
+  "rumours": {
+   "current": [
+    {
+     "club": "Bayern Munich",
+     "rumourDate": "22/05/2026",
+     "transferProbability": "58.23%"
+    },
+    {
+     "club": "FC Barcelona",
+     "rumourDate": "05/05/2026",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Chelsea FC",
+     "rumourDate": "28/04/2026",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Manchester United",
+     "rumourDate": "28/04/2026",
+     "transferProbability": "N/A"
+    }
+   ],
+   "historical": [
+    {
+     "club": "Bayern Munich",
+     "rumourDate": "27/05/2026",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "FC Barcelona",
+     "rumourDate": "28/05/2026",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Chelsea FC",
+     "rumourDate": "28/04/2026",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Manchester United",
+     "rumourDate": "28/04/2026",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Liverpool FC",
+     "rumourDate": "15/06/2025",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Arsenal FC",
+     "rumourDate": "16/05/2025",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Newcastle United",
+     "rumourDate": "29/01/2023",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Chelsea FC",
+     "rumourDate": "24/01/2023",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Tottenham Hotspur",
+     "rumourDate": "21/11/2022",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Preston North End",
+     "rumourDate": "02/02/2021",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "VfL Wolfsburg",
+     "rumourDate": "29/01/2021",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Blackburn Rovers",
+     "rumourDate": "29/01/2021",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Bayern Munich",
+     "rumourDate": "11/01/2020",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Borussia Dortmund",
+     "rumourDate": "12/11/2019",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Arsenal FC",
+     "rumourDate": "23/11/2018",
+     "transferProbability": "N/A"
+    }
+   ]
+  },
+  "relatedNews": [
+   {
+    "url": "https://www.transfermarkt.com/-euro-205m-duo-why-bayern-munich-walked-away-from-anthony-gordon-and-bradley-barcola-deals/view/news/486903",
+    "date": "Sep 10, 2026",
+    "title": "€205m duo - Why Bayern Munich walked away from Anthony Gordon and Bradley Barcola deals"
+   },
+   {
+    "url": "https://www.transfermarkt.com/barcola-4th-rodri-20th-cucurella-30th-top-50-most-expensive-transfers-this-summer-ranked/view/news/483667",
+    "date": "Sep 4, 2026",
+    "title": "Barcola 4th, Rodri 20th, Cucurella 30th - Top 50 most expensive transfers this summer ranked"
+   },
+   {
+    "url": "https://www.transfermarkt.com/man-city-smash-liverpools-record-spend-in-one-window-top-10-revealed-with-chelsea-prominent/view/news/486042",
+    "date": "Sep 2, 2026",
+    "title": "Man City smash Liverpool's record spend in one window: Top 10 revealed with Chelsea prominent"
+   },
+   {
+    "url": "https://www.transfermarkt.com/bellingham-gordon-amp-co-the-six-england-stars-given-market-value-upgrades-after-world-cup/view/news/483385",
+    "date": "Jul 24, 2026",
+    "title": "Bellingham, Gordon & Co. - The six England stars given market value upgrades after World Cup"
+   },
+   {
+    "url": "https://www.transfermarkt.com/lionel-messi-and-argentina-on-the-verge-of-history-england-world-cup-drought-continues/view/news/483021",
+    "date": "Jul 15, 2026",
+    "title": "Lionel Messi and Argentina on the verge of history - England World Cup drought continues"
+   },
+   {
+    "url": "https://www.transfermarkt.com/newcastles-chaotic-summer-window-is-the-hard-reset-the-club-desperately-needs/view/news/482689",
+    "date": "Jul 11, 2026",
+    "title": "Newcastle's chaotic summer window is the hard reset the club desperately needs"
+   }
+  ],
+  "transfers": [
+   {
+    "to": "Barcelona",
+    "fee": "€80.00M",
+    "from": "Newcastle",
+    "type": "transfer",
+    "season": "26/27",
+    "marketValue": "€65.00M",
+    "transferDate": "Jul 1, 2026"
+   },
+   {
+    "to": "Newcastle",
+    "fee": "€45.60M",
+    "from": "Everton",
+    "type": "transfer",
+    "season": "22/23",
+    "marketValue": "€40.00M",
+    "transferDate": "Jan 29, 2023"
+   },
+   {
+    "to": "Everton",
+    "fee": null,
+    "from": "Preston",
+    "type": "end of loan",
+    "season": "20/21",
+    "marketValue": "€5.00M",
+    "transferDate": "May 31, 2021"
+   },
+   {
+    "to": "Preston",
+    "fee": null,
+    "from": "Everton",
+    "type": "loan",
+    "season": "20/21",
+    "marketValue": "€5.00M",
+    "transferDate": "Feb 1, 2021"
+   },
+   {
+    "to": "Everton",
+    "fee": null,
+    "from": "Everton U21",
+    "type": "transfer",
+    "season": "19/20",
+    "marketValue": null,
+    "transferDate": "Jul 1, 2019"
+   },
+   {
+    "to": "Everton U21",
+    "fee": null,
+    "from": "Everton U18",
+    "type": "transfer",
+    "season": "18/19",
+    "marketValue": null,
+    "transferDate": "Jul 1, 2018"
+   },
+   {
+    "to": "Everton U18",
+    "fee": null,
+    "from": "Everton Youth",
+    "type": "transfer",
+    "season": "17/18",
+    "marketValue": null,
+    "transferDate": "Jul 1, 2017"
+   },
+   {
+    "to": "Everton Youth",
+    "fee": null,
+    "from": "Liverpool Youth",
+    "type": "transfer",
+    "season": "12/13",
+    "marketValue": null,
+    "transferDate": "Jul 1, 2012"
+   }
+  ],
+  "marketValue": [
+   {
+    "age": 25,
+    "club": "FC Barcelona",
+    "value": 80000000,
+    "currency": "€",
+    "recordedDate": "22/07/2026"
+   },
+   {
+    "age": 25,
+    "club": "Newcastle United",
+    "value": 65000000,
+    "currency": "€",
+    "recordedDate": "03/06/2026"
+   },
+   {
+    "age": 24,
+    "club": "Newcastle United",
+    "value": 60000000,
+    "currency": "€",
+    "recordedDate": "09/12/2025"
+   },
+   {
+    "age": 24,
+    "club": "Newcastle United",
+    "value": 65000000,
+    "currency": "€",
+    "recordedDate": "30/05/2025"
+   },
+   {
+    "age": 24,
+    "club": "Newcastle United",
+    "value": 65000000,
+    "currency": "€",
+    "recordedDate": "18/03/2025"
+   },
+   {
+    "age": 23,
+    "club": "Newcastle United",
+    "value": 60000000,
+    "currency": "€",
+    "recordedDate": "16/12/2024"
+   },
+   {
+    "age": 23,
+    "club": "Newcastle United",
+    "value": 60000000,
+    "currency": "€",
+    "recordedDate": "27/05/2024"
+   },
+   {
+    "age": 22,
+    "club": "Newcastle United",
+    "value": 50000000,
+    "currency": "€",
+    "recordedDate": "19/12/2023"
+   },
+   {
+    "age": 22,
+    "club": "Newcastle United",
+    "value": 45000000,
+    "currency": "€",
+    "recordedDate": "09/10/2023"
+   },
+   {
+    "age": 22,
+    "club": "Newcastle United",
+    "value": 38000000,
+    "currency": "€",
+    "recordedDate": "12/07/2023"
+   },
+   {
+    "age": 22,
+    "club": "Newcastle United",
+    "value": 35000000,
+    "currency": "€",
+    "recordedDate": "20/06/2023"
+   },
+   {
+    "age": 21,
+    "club": "Everton FC",
+    "value": 40000000,
+    "currency": "€",
+    "recordedDate": "03/11/2022"
+   },
+   {
+    "age": 21,
+    "club": "Everton FC",
+    "value": 40000000,
+    "currency": "€",
+    "recordedDate": "15/09/2022"
+   },
+   {
+    "age": 21,
+    "club": "Everton FC",
+    "value": 20000000,
+    "currency": "€",
+    "recordedDate": "15/06/2022"
+   },
+   {
+    "age": 21,
+    "club": "Everton FC",
+    "value": 16000000,
+    "currency": "€",
+    "recordedDate": "29/03/2022"
+   },
+   {
+    "age": 20,
+    "club": "Everton FC",
+    "value": 8000000,
+    "currency": "€",
+    "recordedDate": "23/12/2021"
+   },
+   {
+    "age": 20,
+    "club": "Preston North End",
+    "value": 5000000,
+    "currency": "€",
+    "recordedDate": "10/03/2021"
+   },
+   {
+    "age": 19,
+    "club": "Everton FC",
+    "value": 5000000,
+    "currency": "€",
+    "recordedDate": "13/10/2020"
+   },
+   {
+    "age": 19,
+    "club": "Everton FC",
+    "value": 5000000,
+    "currency": "€",
+    "recordedDate": "30/07/2020"
+   },
+   {
+    "age": 19,
+    "club": "Everton FC",
+    "value": 1300000,
+    "currency": "€",
+    "recordedDate": "08/04/2020"
+   },
+   {
+    "age": 18,
+    "club": "Everton FC",
+    "value": 1500000,
+    "currency": "€",
+    "recordedDate": "10/12/2019"
+   }
+  ],
+  "injuries": [
+   {
+    "reason": "Hip injury",
+    "season": "2026",
+    "toDate": "30.04.2026",
+    "fromDate": "17.04.2026",
+    "missedGames": 2,
+    "absentDurationInDays": 14
+   },
+   {
+    "reason": "Thigh problems",
+    "season": "2026",
+    "toDate": "09.02.2026",
+    "fromDate": "06.02.2026",
+    "missedGames": 1,
+    "absentDurationInDays": 4
+   },
+   {
+    "reason": "Hip problems",
+    "season": "2026",
+    "toDate": "24.11.2025",
+    "fromDate": "07.11.2025",
+    "missedGames": 4,
+    "absentDurationInDays": 18
+   },
+   {
+    "reason": "Knock",
+    "season": "2025",
+    "toDate": "14.04.2025",
+    "fromDate": "21.03.2025",
+    "missedGames": 3,
+    "absentDurationInDays": 25
+   },
+   {
+    "reason": "Thigh problems",
+    "season": "2025",
+    "toDate": "10.02.2025",
+    "fromDate": "06.02.2025",
+    "missedGames": 1,
+    "absentDurationInDays": 5
+   },
+   {
+    "reason": "Groin injury",
+    "season": "2025",
+    "toDate": "30.10.2024",
+    "fromDate": "26.10.2024",
+    "missedGames": 1,
+    "absentDurationInDays": 5
+   },
+   {
+    "reason": "Ankle injury",
+    "season": "2024",
+    "toDate": "27.05.2024",
+    "fromDate": "15.05.2024",
+    "missedGames": 1,
+    "absentDurationInDays": 13
+   },
+   {
+    "reason": "Ankle injury",
+    "season": "2023",
+    "toDate": "01.04.2023",
+    "fromDate": "10.03.2023",
+    "missedGames": 4,
+    "absentDurationInDays": 23
+   },
+   {
+    "reason": "Ill",
+    "season": "2023",
+    "toDate": "04.01.2023",
+    "fromDate": "29.12.2022",
+    "missedGames": 2,
+    "absentDurationInDays": 7
+   }
+  ]
+ }
+]

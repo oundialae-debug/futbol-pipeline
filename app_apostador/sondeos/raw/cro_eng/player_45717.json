@@ -1,0 +1,522 @@
+[
+ {
+  "id": 45717,
+  "logo": null,
+  "name": "T. Alexander-Arnold",
+  "fullName": "Trent John Alexander-Arnold",
+  "profile": {
+   "club": {
+    "current": "Real Madrid",
+    "joinedAt": "01/06/2025",
+    "contractExpiry": "30/06/2031",
+    "latestContractExtension": null
+   },
+   "foot": "right",
+   "height": "1,80 m",
+   "fullName": "Trent Alexander-Arnold",
+   "position": {
+    "main": "Right-Back",
+    "secondary": null
+   },
+   "birthDate": "07/10/1998",
+   "deathDate": null,
+   "birthPlace": "Liverpool",
+   "citizenship": "England"
+  },
+  "rumours": {
+   "current": [
+    {
+     "club": "Liverpool FC",
+     "rumourDate": "27/08/2026",
+     "transferProbability": "24.34%"
+    }
+   ],
+   "historical": [
+    {
+     "club": "Liverpool FC",
+     "rumourDate": "27/08/2026",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Manchester City",
+     "rumourDate": "25/01/2026",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Bayern Munich",
+     "rumourDate": "21/01/2026",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Newcastle United",
+     "rumourDate": "06/01/2026",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Manchester United",
+     "rumourDate": "03/01/2026",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Real Madrid",
+     "rumourDate": "09/06/2025",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Bayern Munich",
+     "rumourDate": "15/02/2025",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "FC Barcelona",
+     "rumourDate": "14/11/2024",
+     "transferProbability": "N/A"
+    }
+   ]
+  },
+  "relatedNews": [
+   {
+    "url": "https://www.transfermarkt.com/the-most-valuable-players-excluded-from-the-latest-england-squad/view/news/487301",
+    "date": "Sep 18, 2026",
+    "title": "The most valuable players EXCLUDED from the latest England squad"
+   },
+   {
+    "url": "https://www.transfermarkt.com/lionel-messi-jude-bellingham-amp-co-england-vs-argentina-all-time-most-valuable-combined-xi/view/news/482992",
+    "date": "Jul 15, 2026",
+    "title": "Lionel Messi, Jude Bellingham & Co: England vs Argentina all-time most valuable combined XI"
+   },
+   {
+    "url": "https://www.transfermarkt.com/konate-signs-for-real-madrid-where-does-he-rank-among-most-valuable-free-transfers-ever-/view/news/480594",
+    "date": "Jun 18, 2026",
+    "title": "Konaté signs for Real Madrid - where does he rank among most valuable free transfers ever?"
+   },
+   {
+    "url": "https://www.transfermarkt.com/top-15-which-players-gained-the-most-market-value-after-winning-the-champions-league-/view/news/480157",
+    "date": "May 29, 2026",
+    "title": "Top 15 - Which players gained the most market value after winning the Champions League?"
+   },
+   {
+    "url": "https://www.transfermarkt.com/set-to-leave-liverpool-on-free-transfer-4-clubs-who-could-sign-ibrahima-konate-this-summer/view/news/480229",
+    "date": "May 29, 2026",
+    "title": "Set to leave Liverpool on free transfer - 4 clubs who could sign Ibrahima Konaté this summer"
+   },
+   {
+    "url": "https://www.transfermarkt.com/palmer-foden-amp-co-the-most-valuable-players-excluded-from-england-world-cup-squad/view/news/479836",
+    "date": "May 22, 2026",
+    "title": "Palmer, Foden & Co. - the most valuable players EXCLUDED from England World Cup squad"
+   },
+   {
+    "url": "https://www.transfermarkt.com/germany-7th-turkiye-17th-which-nation-has-the-most-valuable-collection-of-defenders-/view/news/479413",
+    "date": "May 15, 2026",
+    "title": "Germany 7th, Türkiye 17th - Which nation has the most valuable collection of defenders?"
+   },
+   {
+    "url": "https://www.transfermarkt.com/no-kylian-mbappe-or-vinicius-jr-real-madrid-vs-bayern-munich-most-expensive-current-xi/view/news/477667",
+    "date": "Apr 7, 2026",
+    "title": "No Kylian Mbappe or Vinicius Jr - Real Madrid vs Bayern Munich most expensive current XI"
+   },
+   {
+    "url": "https://www.transfermarkt.com/lamine-yamal-kylian-mbappe-amp-co-the-most-valuable-barcelona-amp-real-madrid-combined-xi/view/news/476736",
+    "date": "Mar 17, 2026",
+    "title": "Lamine Yamal, Kylian Mbappé & Co - The most valuable Barcelona & Real Madrid combined XI"
+   },
+   {
+    "url": "https://www.transfermarkt.com/laliga-market-values-pedri-now-2nd-bellingham-amp-alexander-arnold-downgraded/view/news/476538",
+    "date": "Mar 16, 2026",
+    "title": "LaLiga market values: Pedri now 2nd - Bellingham & Alexander-Arnold downgraded"
+   },
+   {
+    "url": "https://www.transfermarkt.com/second-worst-points-tally-in-10-seasons-are-liverpool-going-backwards-under-arne-slot-/view/news/476707",
+    "date": "Mar 16, 2026",
+    "title": "Second-worst points tally in 10 seasons - are Liverpool going backwards under Arne Slot?"
+   },
+   {
+    "url": "https://www.transfermarkt.com/arsenal-centre-back-william-saliba-now-the-mvp-the-most-valuable-defenders-in-the-world/view/news/463811",
+    "date": "Dec 13, 2025",
+    "title": "Arsenal centre-back William Saliba now the MVP - The most valuable defenders in the world"
+   }
+  ],
+  "transfers": [
+   {
+    "to": "Real Madrid",
+    "fee": "€10.00M",
+    "from": "Liverpool",
+    "type": "transfer",
+    "season": "25/26",
+    "marketValue": "€75.00M",
+    "transferDate": "Jun 1, 2025"
+   },
+   {
+    "to": "Liverpool",
+    "fee": null,
+    "from": "Liverpool U18",
+    "type": "transfer",
+    "season": "16/17",
+    "marketValue": null,
+    "transferDate": "Jul 1, 2016"
+   },
+   {
+    "to": "Liverpool U18",
+    "fee": null,
+    "from": "Liverpool Youth",
+    "type": "transfer",
+    "season": "15/16",
+    "marketValue": null,
+    "transferDate": "Jul 1, 2015"
+   }
+  ],
+  "marketValue": [
+   {
+    "age": 27,
+    "club": "Real Madrid",
+    "value": 60000000,
+    "currency": "€",
+    "recordedDate": "05/06/2026"
+   },
+   {
+    "age": 27,
+    "club": "Real Madrid",
+    "value": 65000000,
+    "currency": "€",
+    "recordedDate": "16/03/2026"
+   },
+   {
+    "age": 27,
+    "club": "Real Madrid",
+    "value": 70000000,
+    "currency": "€",
+    "recordedDate": "12/12/2025"
+   },
+   {
+    "age": 26,
+    "club": "Liverpool FC",
+    "value": 75000000,
+    "currency": "€",
+    "recordedDate": "30/05/2025"
+   },
+   {
+    "age": 26,
+    "club": "Liverpool FC",
+    "value": 75000000,
+    "currency": "€",
+    "recordedDate": "16/12/2024"
+   },
+   {
+    "age": 25,
+    "club": "Liverpool FC",
+    "value": 70000000,
+    "currency": "€",
+    "recordedDate": "27/05/2024"
+   },
+   {
+    "age": 25,
+    "club": "Liverpool FC",
+    "value": 70000000,
+    "currency": "€",
+    "recordedDate": "19/12/2023"
+   },
+   {
+    "age": 24,
+    "club": "Liverpool FC",
+    "value": 65000000,
+    "currency": "€",
+    "recordedDate": "20/06/2023"
+   },
+   {
+    "age": 24,
+    "club": "Liverpool FC",
+    "value": 65000000,
+    "currency": "€",
+    "recordedDate": "16/03/2023"
+   },
+   {
+    "age": 24,
+    "club": "Liverpool FC",
+    "value": 70000000,
+    "currency": "€",
+    "recordedDate": "03/11/2022"
+   },
+   {
+    "age": 23,
+    "club": "Liverpool FC",
+    "value": 80000000,
+    "currency": "€",
+    "recordedDate": "15/06/2022"
+   },
+   {
+    "age": 23,
+    "club": "Liverpool FC",
+    "value": 80000000,
+    "currency": "€",
+    "recordedDate": "23/12/2021"
+   },
+   {
+    "age": 22,
+    "club": "Liverpool FC",
+    "value": 75000000,
+    "currency": "€",
+    "recordedDate": "28/05/2021"
+   },
+   {
+    "age": 22,
+    "club": "Liverpool FC",
+    "value": 100000000,
+    "currency": "€",
+    "recordedDate": "18/03/2021"
+   },
+   {
+    "age": 22,
+    "club": "Liverpool FC",
+    "value": 110000000,
+    "currency": "€",
+    "recordedDate": "13/10/2020"
+   },
+   {
+    "age": 21,
+    "club": "Liverpool FC",
+    "value": 110000000,
+    "currency": "€",
+    "recordedDate": "30/07/2020"
+   },
+   {
+    "age": 21,
+    "club": "Liverpool FC",
+    "value": 99000000,
+    "currency": "€",
+    "recordedDate": "08/04/2020"
+   },
+   {
+    "age": 21,
+    "club": "Liverpool FC",
+    "value": 110000000,
+    "currency": "€",
+    "recordedDate": "10/12/2019"
+   },
+   {
+    "age": 20,
+    "club": "Liverpool FC",
+    "value": 80000000,
+    "currency": "€",
+    "recordedDate": "13/06/2019"
+   },
+   {
+    "age": 20,
+    "club": "Liverpool FC",
+    "value": 50000000,
+    "currency": "€",
+    "recordedDate": "05/03/2019"
+   },
+   {
+    "age": 20,
+    "club": "Liverpool FC",
+    "value": 45000000,
+    "currency": "€",
+    "recordedDate": "19/12/2018"
+   },
+   {
+    "age": 20,
+    "club": "Liverpool FC",
+    "value": 35000000,
+    "currency": "€",
+    "recordedDate": "17/10/2018"
+   },
+   {
+    "age": 19,
+    "club": "Liverpool FC",
+    "value": 25000000,
+    "currency": "€",
+    "recordedDate": "28/05/2018"
+   },
+   {
+    "age": 19,
+    "club": "Liverpool FC",
+    "value": 8000000,
+    "currency": "€",
+    "recordedDate": "02/01/2018"
+   },
+   {
+    "age": 19,
+    "club": "Liverpool FC",
+    "value": 5000000,
+    "currency": "€",
+    "recordedDate": "23/10/2017"
+   },
+   {
+    "age": 18,
+    "club": "Liverpool FC",
+    "value": 1500000,
+    "currency": "€",
+    "recordedDate": "28/06/2017"
+   },
+   {
+    "age": 18,
+    "club": "Liverpool FC",
+    "value": 500000,
+    "currency": "€",
+    "recordedDate": "20/02/2017"
+   }
+  ],
+  "injuries": [
+   {
+    "reason": "Calf injury",
+    "season": "2021",
+    "toDate": "07.12.2020",
+    "fromDate": "09.11.2020",
+    "missedGames": 7,
+    "absentDurationInDays": 29
+   },
+   {
+    "reason": "Ill",
+    "season": "2020",
+    "toDate": "28.10.2019",
+    "fromDate": "21.10.2019",
+    "missedGames": 1,
+    "absentDurationInDays": 8
+   },
+   {
+    "reason": "Back problems",
+    "season": "2019",
+    "toDate": "01.04.2019",
+    "fromDate": "18.03.2019",
+    "missedGames": 2,
+    "absentDurationInDays": 15
+   },
+   {
+    "reason": "Knee injury",
+    "season": "2019",
+    "toDate": "11.02.2019",
+    "fromDate": "10.01.2019",
+    "missedGames": 3,
+    "absentDurationInDays": 33
+   },
+   {
+    "reason": "Foot injury",
+    "season": "2019",
+    "toDate": "27.12.2018",
+    "fromDate": "10.12.2018",
+    "missedGames": 2,
+    "absentDurationInDays": 18
+   },
+   {
+    "reason": "Muscle tear",
+    "season": "2026",
+    "toDate": "02.02.2026",
+    "fromDate": "04.12.2025",
+    "missedGames": 14,
+    "absentDurationInDays": 61
+   },
+   {
+    "reason": "Hamstring injury",
+    "season": "2026",
+    "toDate": "23.10.2025",
+    "fromDate": "16.09.2025",
+    "missedGames": 9,
+    "absentDurationInDays": 38
+   },
+   {
+    "reason": "Muscular problems",
+    "season": "2026",
+    "toDate": "13.07.2025",
+    "fromDate": "07.07.2025",
+    "missedGames": 1,
+    "absentDurationInDays": 7
+   },
+   {
+    "reason": "Ankle injury",
+    "season": "2025",
+    "toDate": "17.04.2025",
+    "fromDate": "12.03.2025",
+    "missedGames": 6,
+    "absentDurationInDays": 37
+   },
+   {
+    "reason": "Hamstring injury",
+    "season": "2025",
+    "toDate": "11.02.2025",
+    "fromDate": "02.02.2025",
+    "missedGames": 2,
+    "absentDurationInDays": 10
+   },
+   {
+    "reason": "Hamstring injury",
+    "season": "2025",
+    "toDate": "25.11.2024",
+    "fromDate": "09.11.2024",
+    "missedGames": 3,
+    "absentDurationInDays": 17
+   },
+   {
+    "reason": "Torn lateral knee ligament",
+    "season": "2024",
+    "toDate": "08.04.2024",
+    "fromDate": "13.02.2024",
+    "missedGames": 14,
+    "absentDurationInDays": 56
+   },
+   {
+    "reason": "Torn lateral knee ligament",
+    "season": "2024",
+    "toDate": "28.01.2024",
+    "fromDate": "08.01.2024",
+    "missedGames": 3,
+    "absentDurationInDays": 21
+   },
+   {
+    "reason": "Hamstring injury",
+    "season": "2024",
+    "toDate": "29.09.2023",
+    "fromDate": "04.09.2023",
+    "missedGames": 6,
+    "absentDurationInDays": 26
+   },
+   {
+    "reason": "Ankle problems",
+    "season": "2023",
+    "toDate": "15.10.2022",
+    "fromDate": "10.10.2022",
+    "missedGames": 1,
+    "absentDurationInDays": 6
+   },
+   {
+    "reason": "Hamstring injury",
+    "season": "2022",
+    "toDate": "31.03.2022",
+    "fromDate": "17.03.2022",
+    "missedGames": 3,
+    "absentDurationInDays": 15
+   },
+   {
+    "reason": "Corona virus",
+    "season": "2022",
+    "toDate": "13.01.2022",
+    "fromDate": "03.01.2022",
+    "missedGames": 1,
+    "absentDurationInDays": 11
+   },
+   {
+    "reason": "Muscular problems",
+    "season": "2022",
+    "toDate": "14.10.2021",
+    "fromDate": "27.09.2021",
+    "missedGames": 4,
+    "absentDurationInDays": 18
+   },
+   {
+    "reason": "Ill",
+    "season": "2022",
+    "toDate": "20.09.2021",
+    "fromDate": "18.09.2021",
+    "missedGames": 1,
+    "absentDurationInDays": 3
+   },
+   {
+    "reason": "Hamstring injury",
+    "season": "2022",
+    "toDate": "12.07.2021",
+    "fromDate": "03.06.2021",
+    "missedGames": 8,
+    "absentDurationInDays": 40
+   }
+  ]
+ }
+]

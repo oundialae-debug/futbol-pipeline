@@ -1,0 +1,354 @@
+[
+ {
+  "id": 22364342,
+  "logo": null,
+  "name": "E. Anderson",
+  "fullName": "Elliot Anderson",
+  "profile": {
+   "club": {
+    "current": "Manchester City",
+    "joinedAt": "23/07/2026",
+    "contractExpiry": "30/06/2031",
+    "latestContractExtension": null
+   },
+   "foot": "right",
+   "height": "1,79 m",
+   "fullName": "Elliot Anderson",
+   "position": {
+    "main": "Defensive Midfield",
+    "secondary": "Central Midfield, Attacking Midfield"
+   },
+   "birthDate": "06/11/2002",
+   "deathDate": null,
+   "birthPlace": "Whitley Bay",
+   "citizenship": "England, Scotland"
+  },
+  "rumours": {
+   "current": [
+    {
+     "club": "Manchester City",
+     "rumourDate": "03/06/2026",
+     "transferProbability": "56.2%"
+    },
+    {
+     "club": "Manchester United",
+     "rumourDate": "13/05/2026",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Bayern Munich",
+     "rumourDate": "18/03/2026",
+     "transferProbability": "N/A"
+    }
+   ],
+   "historical": [
+    {
+     "club": "Manchester City",
+     "rumourDate": "26/06/2026",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Manchester United",
+     "rumourDate": "13/05/2026",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Bayern Munich",
+     "rumourDate": "18/03/2026",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Chelsea FC",
+     "rumourDate": "12/12/2025",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Liverpool FC",
+     "rumourDate": "07/12/2025",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Newcastle United",
+     "rumourDate": "27/10/2025",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Nottingham Forest",
+     "rumourDate": "01/07/2024",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Nottingham Forest",
+     "rumourDate": "01/07/2024",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Wolverhampton Wanderers",
+     "rumourDate": "25/06/2024",
+     "transferProbability": "N/A"
+    }
+   ]
+  },
+  "relatedNews": [
+   {
+    "url": "https://www.transfermarkt.com/all-time-most-expensive-xis-for-each-premier-league-big-six-team-revealed/view/news/484448",
+    "date": "Sep 14, 2026",
+    "title": "All-time most expensive XIs for each Premier League 'Big Six' team revealed"
+   },
+   {
+    "url": "https://www.transfermarkt.com/all-time-record-transfers-xi-man-united-vs-man-city-combined-ahead-of-manchester-derby/view/news/486975",
+    "date": "Sep 13, 2026",
+    "title": "All-time record transfers XI - Man United vs Man City combined ahead of Manchester derby"
+   },
+   {
+    "url": "https://www.transfermarkt.com/saka-guler-amp-co-the-20-most-valuable-players-snubbed-in-2026-ballon-dor-shortlist/view/news/486828",
+    "date": "Sep 9, 2026",
+    "title": "Saka, Guler & Co - The 20 most valuable players snubbed in 2026 Ballon d’Or shortlist"
+   },
+   {
+    "url": "https://www.transfermarkt.com/premier-league-matchday-3-10-standout-performers-with-kai-havertz-top/view/news/486727",
+    "date": "Sep 7, 2026",
+    "title": "Premier League Matchday 3: 10 standout performers with Kai Havertz top"
+   },
+   {
+    "url": "https://www.transfermarkt.com/brazil-4th-germany-11th-nigeria-19th-the-most-expensive-nationalities-this-summer/view/news/486524",
+    "date": "Sep 4, 2026",
+    "title": "Brazil 4th, Germany 11th, Nigeria 19th - the most expensive nationalities this summer"
+   },
+   {
+    "url": "https://www.transfermarkt.com/barcola-4th-rodri-20th-cucurella-30th-top-50-most-expensive-transfers-this-summer-ranked/view/news/483667",
+    "date": "Sep 4, 2026",
+    "title": "Barcola 4th, Rodri 20th, Cucurella 30th - Top 50 most expensive transfers this summer ranked"
+   },
+   {
+    "url": "https://www.transfermarkt.com/man-city-smash-liverpools-record-spend-in-one-window-top-10-revealed-with-chelsea-prominent/view/news/486042",
+    "date": "Sep 2, 2026",
+    "title": "Man City smash Liverpool's record spend in one window: Top 10 revealed with Chelsea prominent"
+   },
+   {
+    "url": "https://www.transfermarkt.com/cody-gakpo-agrees-shock-switch-man-citys-transfer-spend-could-soar-past-euro-500m/view/news/485889",
+    "date": "Aug 30, 2026",
+    "title": "Cody Gakpo agrees shock switch - Man City's transfer spend could soar past €500m"
+   },
+   {
+    "url": "https://www.transfermarkt.com/premier-league-proven-the-euro-1-45bn-english-top-flight-transfer-record-to-be-smashed/view/news/485637",
+    "date": "Aug 27, 2026",
+    "title": "Premier League proven - The €1.45bn English top-flight transfer record to be smashed"
+   }
+  ],
+  "transfers": [
+   {
+    "to": "Man City",
+    "fee": "€135.00M",
+    "from": "Nott'm Forest",
+    "type": "transfer",
+    "season": "26/27",
+    "marketValue": "€110.00M",
+    "transferDate": "Jul 23, 2026"
+   },
+   {
+    "to": "Nott'm Forest",
+    "fee": "€41.20M",
+    "from": "Newcastle",
+    "type": "transfer",
+    "season": "24/25",
+    "marketValue": "€15.00M",
+    "transferDate": "Jul 1, 2024"
+   },
+   {
+    "to": "Newcastle",
+    "fee": null,
+    "from": "Newcastle U21",
+    "type": "transfer",
+    "season": "22/23",
+    "marketValue": "€200.00K",
+    "transferDate": "Jul 1, 2022"
+   },
+   {
+    "to": "Newcastle U21",
+    "fee": null,
+    "from": "Bristol Rovers",
+    "type": "end of loan",
+    "season": "21/22",
+    "marketValue": "€200.00K",
+    "transferDate": "May 31, 2022"
+   },
+   {
+    "to": "Bristol Rovers",
+    "fee": null,
+    "from": "Newcastle U21",
+    "type": "loan",
+    "season": "21/22",
+    "marketValue": "€200.00K",
+    "transferDate": "Jan 31, 2022"
+   },
+   {
+    "to": "Newcastle U21",
+    "fee": null,
+    "from": "Newcastle U18",
+    "type": "transfer",
+    "season": "20/21",
+    "marketValue": null,
+    "transferDate": "Jul 1, 2020"
+   },
+   {
+    "to": "Newcastle U18",
+    "fee": null,
+    "from": "Newcastle Yth.",
+    "type": "transfer",
+    "season": "18/19",
+    "marketValue": null,
+    "transferDate": "Jul 1, 2018"
+   }
+  ],
+  "marketValue": [
+   {
+    "age": 23,
+    "club": "Nottingham Forest",
+    "value": 110000000,
+    "currency": "€",
+    "recordedDate": "22/07/2026"
+   },
+   {
+    "age": 23,
+    "club": "Nottingham Forest",
+    "value": 75000000,
+    "currency": "€",
+    "recordedDate": "03/06/2026"
+   },
+   {
+    "age": 23,
+    "club": "Nottingham Forest",
+    "value": 60000000,
+    "currency": "€",
+    "recordedDate": "09/12/2025"
+   },
+   {
+    "age": 22,
+    "club": "Nottingham Forest",
+    "value": 45000000,
+    "currency": "€",
+    "recordedDate": "17/10/2025"
+   },
+   {
+    "age": 22,
+    "club": "Nottingham Forest",
+    "value": 32000000,
+    "currency": "€",
+    "recordedDate": "30/05/2025"
+   },
+   {
+    "age": 22,
+    "club": "Nottingham Forest",
+    "value": 30000000,
+    "currency": "€",
+    "recordedDate": "18/03/2025"
+   },
+   {
+    "age": 22,
+    "club": "Nottingham Forest",
+    "value": 24000000,
+    "currency": "€",
+    "recordedDate": "16/12/2024"
+   },
+   {
+    "age": 21,
+    "club": "Nottingham Forest",
+    "value": 22000000,
+    "currency": "€",
+    "recordedDate": "01/10/2024"
+   },
+   {
+    "age": 21,
+    "club": "Newcastle United",
+    "value": 15000000,
+    "currency": "€",
+    "recordedDate": "27/05/2024"
+   },
+   {
+    "age": 21,
+    "club": "Newcastle United",
+    "value": 13000000,
+    "currency": "€",
+    "recordedDate": "19/12/2023"
+   },
+   {
+    "age": 20,
+    "club": "Newcastle United",
+    "value": 13000000,
+    "currency": "€",
+    "recordedDate": "09/10/2023"
+   },
+   {
+    "age": 20,
+    "club": "Newcastle United",
+    "value": 8000000,
+    "currency": "€",
+    "recordedDate": "20/06/2023"
+   },
+   {
+    "age": 19,
+    "club": "Newcastle United",
+    "value": 3500000,
+    "currency": "€",
+    "recordedDate": "03/11/2022"
+   },
+   {
+    "age": 19,
+    "club": "Newcastle United",
+    "value": 1500000,
+    "currency": "€",
+    "recordedDate": "15/09/2022"
+   },
+   {
+    "age": 18,
+    "club": "Newcastle United U23",
+    "value": 200000,
+    "currency": "€",
+    "recordedDate": "17/03/2021"
+   }
+  ],
+  "injuries": [
+   {
+    "reason": "Foot injury",
+    "season": "2025",
+    "toDate": "28.11.2024",
+    "fromDate": "13.11.2024",
+    "missedGames": 3,
+    "absentDurationInDays": 16
+   },
+   {
+    "reason": "Back injury",
+    "season": "2024",
+    "toDate": "25.02.2024",
+    "fromDate": "23.10.2023",
+    "missedGames": 25,
+    "absentDurationInDays": 126
+   },
+   {
+    "reason": "Calf problems",
+    "season": "2023",
+    "toDate": "18.01.2023",
+    "fromDate": "11.01.2023",
+    "missedGames": 1,
+    "absentDurationInDays": 8
+   },
+   {
+    "reason": "Minor knock",
+    "season": "2023",
+    "toDate": "03.11.2022",
+    "fromDate": "21.10.2022",
+    "missedGames": 2,
+    "absentDurationInDays": 14
+   },
+   {
+    "reason": "Quarantine",
+    "season": "2021",
+    "toDate": "22.10.2020",
+    "fromDate": "08.10.2020",
+    "missedGames": 2,
+    "absentDurationInDays": 15
+   }
+  ]
+ }
+]

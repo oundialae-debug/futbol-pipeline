@@ -1,0 +1,601 @@
+[
+ {
+  "id": 3175074,
+  "logo": null,
+  "name": "Trevoh Chalobah",
+  "fullName": "Trevoh Thomas Chalobah",
+  "profile": {
+   "club": {
+    "current": "Como 1907",
+    "joinedAt": "09/08/2026",
+    "contractExpiry": "30/06/2031",
+    "latestContractExtension": null
+   },
+   "foot": "right",
+   "height": "1,92 m",
+   "fullName": "Trevoh Chalobah",
+   "position": {
+    "main": "Centre-Back",
+    "secondary": "Defensive Midfield, Right-Back"
+   },
+   "birthDate": "05/07/1999",
+   "deathDate": null,
+   "birthPlace": "Freetown",
+   "citizenship": "England, Sierra Leone"
+  },
+  "rumours": {
+   "current": [
+    {
+     "club": "Como 1907",
+     "rumourDate": "08/07/2026",
+     "transferProbability": "40.28%"
+    },
+    {
+     "club": "Inter Milan",
+     "rumourDate": "08/07/2026",
+     "transferProbability": "49.59%"
+    }
+   ],
+   "historical": [
+    {
+     "club": "Borussia Dortmund",
+     "rumourDate": "17/11/2023",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "RB Leipzig",
+     "rumourDate": "25/08/2022",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Trabzonspor",
+     "rumourDate": "29/07/2022",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "FC Lorient",
+     "rumourDate": "14/08/2021",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "West Bromwich Albion",
+     "rumourDate": "14/07/2021",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "SV Werder Bremen",
+     "rumourDate": "08/08/2019",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "FC Schalke 04",
+     "rumourDate": "08/08/2019",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Ipswich Town",
+     "rumourDate": "25/06/2018",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Como 1907",
+     "rumourDate": "05/08/2026",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Inter Milan",
+     "rumourDate": "08/07/2026",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "SSC Napoli",
+     "rumourDate": "11/06/2025",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Chelsea FC",
+     "rumourDate": "15/01/2025",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Crystal Palace",
+     "rumourDate": "30/08/2024",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "VfB Stuttgart",
+     "rumourDate": "29/08/2024",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Atalanta BC",
+     "rumourDate": "27/08/2024",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Newcastle United",
+     "rumourDate": "17/08/2024",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Bologna FC 1909",
+     "rumourDate": "14/08/2024",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Fulham FC",
+     "rumourDate": "22/06/2024",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Manchester United",
+     "rumourDate": "17/06/2024",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Tottenham Hotspur",
+     "rumourDate": "22/05/2024",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "AC Milan",
+     "rumourDate": "20/03/2024",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Bayern Munich",
+     "rumourDate": "06/01/2024",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "AS Roma",
+     "rumourDate": "29/12/2023",
+     "transferProbability": "N/A"
+    }
+   ]
+  },
+  "relatedNews": [
+   {
+    "url": "https://www.transfermarkt.com/serie-a-market-values-como-stars-keep-shining-world-cup-star-manu-kone-up-by-euro-10m/view/news/487378",
+    "date": "Sep 22, 2026",
+    "title": "Serie A market values: Como stars keep shining - World Cup star Manu Koné  up by €10m"
+   },
+   {
+    "url": "https://www.transfermarkt.com/chelsea-break-record-as-villa-go-2nd-amp-man-city-4th-highest-transfer-sales-in-a-single-window/view/news/485332",
+    "date": "Sep 2, 2026",
+    "title": "Chelsea break record, as Villa go 2nd & Man City 4th - Highest transfer sales in a single window"
+   },
+   {
+    "url": "https://www.transfermarkt.com/inside-xabi-alonsos-chelsea-rebuild-3-signings-strasbourg-link-amp-world-cup-benefit/view/news/480757",
+    "date": "Jun 7, 2026",
+    "title": "Inside Xabi Alonso's Chelsea rebuild - 3 signings, Strasbourg link & World Cup benefit"
+   },
+   {
+    "url": "https://www.transfermarkt.com/palmer-foden-amp-co-the-most-valuable-players-excluded-from-england-world-cup-squad/view/news/479836",
+    "date": "May 22, 2026",
+    "title": "Palmer, Foden & Co. - the most valuable players EXCLUDED from England World Cup squad"
+   },
+   {
+    "url": "https://www.transfermarkt.com/rice-wilson-semenyo-amp-co-our-writers-pick-their-premier-league-team-of-the-seasons-so-far/view/news/474482",
+    "date": "Jan 31, 2026",
+    "title": "Rice, Wilson, Semenyo & Co. - Our writers pick their Premier League Team of the Seasons so far"
+   },
+   {
+    "url": "https://www.transfermarkt.com/arsenal-rue-missed-chance-as-10-man-chelsea-hold-out-for-draw-in-fiery-london-derby/view/news/463579",
+    "date": "Nov 30, 2025",
+    "title": "Arsenal rue missed chance as 10-man Chelsea hold out for draw in fiery London derby"
+   },
+   {
+    "url": "https://www.transfermarkt.com/moises-caicedo-up-jamie-gittens-down-chelseas-biggest-market-value-winners-amp-losers/view/news/461856",
+    "date": "Oct 21, 2025",
+    "title": "Moisés Caicedo up, Jamie Gittens down - Chelsea's biggest market value winners & losers"
+   },
+   {
+    "url": "https://www.transfermarkt.com/two-wins-in-six-games-how-good-is-enzo-marescas-chelsea-record-in-the-premier-league-/view/news/461032",
+    "date": "Sep 29, 2025",
+    "title": "Two wins in six games - How good is Enzo Maresca's Chelsea record in the Premier League?"
+   },
+   {
+    "url": "https://www.transfermarkt.com/how-chelsea-could-line-up-next-season-three-new-signings-to-fuel-next-silverware-challenge/view/news/458427",
+    "date": "Aug 11, 2025",
+    "title": "How Chelsea could line up next season: Three new signings to fuel next silverware challenge"
+   },
+   {
+    "url": "https://www.transfermarkt.com/which-premier-league-clubs-have-the-most-valuable-collection-of-former-academy-players-/view/news/458134",
+    "date": "Aug 4, 2025",
+    "title": "Which Premier League clubs have the most valuable collection of former academy players?"
+   },
+   {
+    "url": "https://www.transfermarkt.com/who-do-the-premier-leagues-big-six-clubs-need-to-sign-amp-sell-before-the-window-closes-friday-/view/news/442909",
+    "date": "Aug 27, 2024",
+    "title": "Who do the Premier League's 'Big six' clubs need to sign & sell before the window closes Friday?"
+   }
+  ],
+  "transfers": [
+   {
+    "to": "Como",
+    "fee": "€30.00M",
+    "from": "Chelsea",
+    "type": "transfer",
+    "season": "26/27",
+    "marketValue": "€40.00M",
+    "transferDate": "Aug 9, 2026"
+   },
+   {
+    "to": "Chelsea",
+    "fee": null,
+    "from": "Crystal Palace",
+    "type": "end of loan",
+    "season": "24/25",
+    "marketValue": "€13.00M",
+    "transferDate": "Jan 15, 2025"
+   },
+   {
+    "to": "Crystal Palace",
+    "fee": null,
+    "from": "Chelsea",
+    "type": "loan",
+    "season": "24/25",
+    "marketValue": "€13.00M",
+    "transferDate": "Aug 30, 2024"
+   },
+   {
+    "to": "Chelsea",
+    "fee": null,
+    "from": "Chelsea U21",
+    "type": "transfer",
+    "season": "21/22",
+    "marketValue": "€3.50M",
+    "transferDate": "Jul 1, 2021"
+   },
+   {
+    "to": "Chelsea U21",
+    "fee": null,
+    "from": "FC Lorient",
+    "type": "end of loan",
+    "season": "20/21",
+    "marketValue": "€3.50M",
+    "transferDate": "Jun 30, 2021"
+   },
+   {
+    "to": "FC Lorient",
+    "fee": null,
+    "from": "Chelsea U21",
+    "type": "loan",
+    "season": "20/21",
+    "marketValue": "€2.70M",
+    "transferDate": "Aug 18, 2020"
+   },
+   {
+    "to": "Chelsea U21",
+    "fee": null,
+    "from": "Huddersfield",
+    "type": "end of loan",
+    "season": "19/20",
+    "marketValue": "€2.70M",
+    "transferDate": "Jul 31, 2020"
+   },
+   {
+    "to": "Huddersfield",
+    "fee": null,
+    "from": "Chelsea U21",
+    "type": "loan",
+    "season": "19/20",
+    "marketValue": "€3.00M",
+    "transferDate": "Aug 8, 2019"
+   },
+   {
+    "to": "Chelsea U21",
+    "fee": null,
+    "from": "Ipswich",
+    "type": "end of loan",
+    "season": "18/19",
+    "marketValue": "€1.00M",
+    "transferDate": "May 31, 2019"
+   },
+   {
+    "to": "Ipswich",
+    "fee": null,
+    "from": "Chelsea U21",
+    "type": "loan",
+    "season": "18/19",
+    "marketValue": null,
+    "transferDate": "Jul 1, 2018"
+   },
+   {
+    "to": "Chelsea U21",
+    "fee": null,
+    "from": "Chelsea U18",
+    "type": "transfer",
+    "season": "16/17",
+    "marketValue": null,
+    "transferDate": "Jul 1, 2016"
+   },
+   {
+    "to": "Chelsea U18",
+    "fee": null,
+    "from": "Chelsea Youth",
+    "type": "transfer",
+    "season": "15/16",
+    "marketValue": null,
+    "transferDate": "Jul 1, 2015"
+   }
+  ],
+  "marketValue": [
+   {
+    "age": 27,
+    "club": "Como 1907",
+    "value": 35000000,
+    "currency": "€",
+    "recordedDate": "22/09/2026"
+   },
+   {
+    "age": 26,
+    "club": "Chelsea FC",
+    "value": 40000000,
+    "currency": "€",
+    "recordedDate": "03/06/2026"
+   },
+   {
+    "age": 26,
+    "club": "Chelsea FC",
+    "value": 40000000,
+    "currency": "€",
+    "recordedDate": "09/03/2026"
+   },
+   {
+    "age": 26,
+    "club": "Chelsea FC",
+    "value": 35000000,
+    "currency": "€",
+    "recordedDate": "09/12/2025"
+   },
+   {
+    "age": 26,
+    "club": "Chelsea FC",
+    "value": 32000000,
+    "currency": "€",
+    "recordedDate": "17/10/2025"
+   },
+   {
+    "age": 25,
+    "club": "Chelsea FC",
+    "value": 25000000,
+    "currency": "€",
+    "recordedDate": "30/05/2025"
+   },
+   {
+    "age": 25,
+    "club": "Chelsea FC",
+    "value": 17000000,
+    "currency": "€",
+    "recordedDate": "18/03/2025"
+   },
+   {
+    "age": 25,
+    "club": "Crystal Palace",
+    "value": 13000000,
+    "currency": "€",
+    "recordedDate": "16/12/2024"
+   },
+   {
+    "age": 24,
+    "club": "Chelsea FC",
+    "value": 13000000,
+    "currency": "€",
+    "recordedDate": "27/05/2024"
+   },
+   {
+    "age": 24,
+    "club": "Chelsea FC",
+    "value": 13000000,
+    "currency": "€",
+    "recordedDate": "14/03/2024"
+   },
+   {
+    "age": 24,
+    "club": "Chelsea FC",
+    "value": 18000000,
+    "currency": "€",
+    "recordedDate": "19/12/2023"
+   },
+   {
+    "age": 23,
+    "club": "Chelsea FC",
+    "value": 18000000,
+    "currency": "€",
+    "recordedDate": "20/06/2023"
+   },
+   {
+    "age": 23,
+    "club": "Chelsea FC",
+    "value": 22000000,
+    "currency": "€",
+    "recordedDate": "03/11/2022"
+   },
+   {
+    "age": 22,
+    "club": "Chelsea FC",
+    "value": 20000000,
+    "currency": "€",
+    "recordedDate": "15/06/2022"
+   },
+   {
+    "age": 22,
+    "club": "Chelsea FC",
+    "value": 20000000,
+    "currency": "€",
+    "recordedDate": "29/03/2022"
+   },
+   {
+    "age": 22,
+    "club": "Chelsea FC",
+    "value": 18000000,
+    "currency": "€",
+    "recordedDate": "23/12/2021"
+   },
+   {
+    "age": 22,
+    "club": "Chelsea FC",
+    "value": 10000000,
+    "currency": "€",
+    "recordedDate": "05/10/2021"
+   },
+   {
+    "age": 21,
+    "club": "FC Lorient",
+    "value": 3500000,
+    "currency": "€",
+    "recordedDate": "04/06/2021"
+   },
+   {
+    "age": 21,
+    "club": "FC Lorient",
+    "value": 3000000,
+    "currency": "€",
+    "recordedDate": "09/04/2021"
+   },
+   {
+    "age": 21,
+    "club": "FC Lorient",
+    "value": 2700000,
+    "currency": "€",
+    "recordedDate": "15/10/2020"
+   },
+   {
+    "age": 20,
+    "club": "Huddersfield Town",
+    "value": 2700000,
+    "currency": "€",
+    "recordedDate": "08/04/2020"
+   },
+   {
+    "age": 20,
+    "club": "Huddersfield Town",
+    "value": 3000000,
+    "currency": "€",
+    "recordedDate": "27/02/2020"
+   },
+   {
+    "age": 19,
+    "club": "Chelsea FC U23",
+    "value": 3000000,
+    "currency": "€",
+    "recordedDate": "13/06/2019"
+   },
+   {
+    "age": 19,
+    "club": "Ipswich Town",
+    "value": 1000000,
+    "currency": "€",
+    "recordedDate": "24/09/2018"
+   }
+  ],
+  "injuries": [
+   {
+    "reason": "Ankle injury",
+    "season": "2026",
+    "toDate": "17.04.2026",
+    "fromDate": "17.03.2026",
+    "missedGames": 5,
+    "absentDurationInDays": 32
+   },
+   {
+    "reason": "Unknown",
+    "season": "2025",
+    "toDate": "04.03.2025",
+    "fromDate": "23.02.2025",
+    "missedGames": 1,
+    "absentDurationInDays": 10
+   },
+   {
+    "reason": "Back injury",
+    "season": "2025",
+    "toDate": "06.03.2025",
+    "fromDate": "22.02.2025",
+    "missedGames": 1,
+    "absentDurationInDays": 13
+   },
+   {
+    "reason": "Abdominal muscle strain",
+    "season": "2025",
+    "toDate": "27.09.2024",
+    "fromDate": "10.08.2024",
+    "missedGames": 8,
+    "absentDurationInDays": 49
+   },
+   {
+    "reason": "Fitness",
+    "season": "2024",
+    "toDate": "07.02.2024",
+    "fromDate": "10.01.2024",
+    "missedGames": 5,
+    "absentDurationInDays": 29
+   },
+   {
+    "reason": "Thigh problems",
+    "season": "2024",
+    "toDate": "10.01.2024",
+    "fromDate": "01.08.2023",
+    "missedGames": 26,
+    "absentDurationInDays": 163
+   },
+   {
+    "reason": "Fitness",
+    "season": "2023",
+    "toDate": "28.02.2023",
+    "fromDate": "25.02.2023",
+    "missedGames": 1,
+    "absentDurationInDays": 4
+   },
+   {
+    "reason": "Fitness",
+    "season": "2024",
+    "toDate": "27.02.2023",
+    "fromDate": "25.02.2023",
+    "missedGames": 1,
+    "absentDurationInDays": 3
+   },
+   {
+    "reason": "Fitness",
+    "season": "2023",
+    "toDate": "31.08.2022",
+    "fromDate": "29.08.2022",
+    "missedGames": 1,
+    "absentDurationInDays": 3
+   },
+   {
+    "reason": "Surgery",
+    "season": "2022",
+    "toDate": "03.03.2022",
+    "fromDate": "27.02.2022",
+    "missedGames": 1,
+    "absentDurationInDays": 5
+   },
+   {
+    "reason": "Hamstring injury",
+    "season": "2022",
+    "toDate": "21.01.2022",
+    "fromDate": "03.01.2022",
+    "missedGames": 5,
+    "absentDurationInDays": 19
+   },
+   {
+    "reason": "Hamstring injury",
+    "season": "2022",
+    "toDate": "13.12.2021",
+    "fromDate": "03.12.2021",
+    "missedGames": 3,
+    "absentDurationInDays": 11
+   },
+   {
+    "reason": "Ankle injury",
+    "season": "2018",
+    "toDate": "05.09.2017",
+    "fromDate": "10.07.2017",
+    "missedGames": 7,
+    "absentDurationInDays": 58
+   }
+  ]
+ }
+]

@@ -1,0 +1,197 @@
+[
+ {
+  "id": 50432599,
+  "logo": null,
+  "name": "M. Lewis-Skelly",
+  "fullName": "Myles Anthony Lewis-Skelly",
+  "profile": {
+   "club": {
+    "current": "Arsenal FC",
+    "joinedAt": "01/07/2024",
+    "contractExpiry": "30/06/2030",
+    "latestContractExtension": "26/06/2025"
+   },
+   "foot": "left",
+   "height": "1,78 m",
+   "fullName": "Myles Lewis-Skelly",
+   "position": {
+    "main": "Defensive Midfield",
+    "secondary": "Central Midfield, Left-Back"
+   },
+   "birthDate": "26/09/2006",
+   "deathDate": null,
+   "birthPlace": "London",
+   "citizenship": "England, Barbados"
+  },
+  "rumours": {
+   "current": [
+    {
+     "club": "Chelsea FC",
+     "rumourDate": "11/08/2026",
+     "transferProbability": "N/A"
+    }
+   ],
+   "historical": [
+    {
+     "club": "Manchester United",
+     "rumourDate": "23/03/2026",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Real Madrid",
+     "rumourDate": "29/05/2025",
+     "transferProbability": "N/A"
+    }
+   ]
+  },
+  "relatedNews": [
+   {
+    "url": "https://www.transfermarkt.com/want-to-have-your-say-on-premier-league-market-values-get-involved-in-our-forum/view/news/453270",
+    "date": "Sep 14, 2026",
+    "title": "Want to have your say on Premier League market values? Get involved in our forum"
+   },
+   {
+    "url": "https://www.transfermarkt.com/golden-boy-top-100-31-premier-league-talents-in-running-for-prestigious-award/view/news/482558",
+    "date": "Sep 12, 2026",
+    "title": "Golden Boy Top 100: 31 Premier League talents in running for prestigious award"
+   },
+   {
+    "url": "https://www.transfermarkt.com/myles-lewis-skelly-top-five-man-united-left-back-alternatives-to-lewis-hall-ranked/view/news/484464",
+    "date": "Aug 11, 2026",
+    "title": "Myles Lewis-Skelly top - Five Man United left-back alternatives to Lewis Hall ranked"
+   },
+   {
+    "url": "https://www.transfermarkt.com/kroupi-2nd-lewis-skelly-8th-the-most-valuable-u21-players-in-the-premier-league/view/news/461720",
+    "date": "Jun 3, 2026",
+    "title": "Kroupi 2nd, Lewis-Skelly 8th - The most valuable U21 players in the Premier League"
+   },
+   {
+    "url": "https://www.transfermarkt.com/15-year-drought-every-english-player-to-score-in-a-champions-league-final/view/news/480295",
+    "date": "May 30, 2026",
+    "title": "15-year drought - Every English player to score in a Champions League final"
+   },
+   {
+    "url": "https://www.transfermarkt.com/golden-boy-top-100-powered-by-transfermarkt-21-premier-league-talents-feature/view/news/479696",
+    "date": "May 20, 2026",
+    "title": "Golden Boy Top 100 powered by Transfermarkt: 21 Premier League talents feature"
+   },
+   {
+    "url": "https://www.transfermarkt.com/compared-to-martin-odegaard-amp-pedri-who-is-arsenal-teenage-target-vasilije-kostov-/view/news/478996",
+    "date": "May 5, 2026",
+    "title": "Compared to Martin Ødegaard & Pedri - Who is Arsenal teenage target Vasilije Kostov?"
+   },
+   {
+    "url": "https://www.transfermarkt.com/compared-to-yamal-karl-amp-co-how-does-mls-talent-rank-versus-the-rest-of-the-world-/view/news/477782",
+    "date": "Apr 9, 2026",
+    "title": "Compared to Yamal, Karl & Co: How does MLS talent rank versus the rest of the world?"
+   },
+   {
+    "url": "https://www.transfermarkt.com/i-need-to-prove-myself-arsenal-signing-jaden-dixon-talks-first-team-path-arteta-amp-title-race/view/news/475525",
+    "date": "Feb 18, 2026",
+    "title": "'I need to prove myself' - Arsenal signing Jaden Dixon talks first-team path, Arteta & title race"
+   },
+   {
+    "url": "https://www.transfermarkt.com/bench-warmers-the-10-mvps-that-need-to-move-club-before-the-january-window-closes/view/news/474583",
+    "date": "Feb 1, 2026",
+    "title": "Bench warmers: The 10 MVPs that NEED to move club before the January window closes"
+   }
+  ],
+  "transfers": [
+   {
+    "to": "Arsenal",
+    "fee": null,
+    "from": "Arsenal U21",
+    "type": "transfer",
+    "season": "24/25",
+    "marketValue": "€2.00M",
+    "transferDate": "Jul 1, 2024"
+   },
+   {
+    "to": "Arsenal U21",
+    "fee": null,
+    "from": "Arsenal U18",
+    "type": "transfer",
+    "season": "23/24",
+    "marketValue": null,
+    "transferDate": "Jul 1, 2023"
+   },
+   {
+    "to": "Arsenal U18",
+    "fee": null,
+    "from": "Arsenal Youth",
+    "type": "transfer",
+    "season": "22/23",
+    "marketValue": null,
+    "transferDate": "Jul 1, 2022"
+   }
+  ],
+  "marketValue": [
+   {
+    "age": 19,
+    "club": "Arsenal FC",
+    "value": 45000000,
+    "currency": "€",
+    "recordedDate": "03/06/2026"
+   },
+   {
+    "age": 19,
+    "club": "Arsenal FC",
+    "value": 35000000,
+    "currency": "€",
+    "recordedDate": "09/03/2026"
+   },
+   {
+    "age": 19,
+    "club": "Arsenal FC",
+    "value": 40000000,
+    "currency": "€",
+    "recordedDate": "09/12/2025"
+   },
+   {
+    "age": 18,
+    "club": "Arsenal FC",
+    "value": 45000000,
+    "currency": "€",
+    "recordedDate": "30/05/2025"
+   },
+   {
+    "age": 18,
+    "club": "Arsenal FC",
+    "value": 28000000,
+    "currency": "€",
+    "recordedDate": "18/03/2025"
+   },
+   {
+    "age": 18,
+    "club": "Arsenal FC",
+    "value": 10000000,
+    "currency": "€",
+    "recordedDate": "16/12/2024"
+   },
+   {
+    "age": 18,
+    "club": "Arsenal FC",
+    "value": 5000000,
+    "currency": "€",
+    "recordedDate": "01/10/2024"
+   },
+   {
+    "age": 17,
+    "club": "Arsenal FC U21",
+    "value": 2000000,
+    "currency": "€",
+    "recordedDate": "19/12/2023"
+   }
+  ],
+  "injuries": [
+   {
+    "reason": "Knock",
+    "season": "2025",
+    "toDate": "06.12.2024",
+    "fromDate": "20.11.2024",
+    "missedGames": 3,
+    "absentDurationInDays": 17
+   }
+  ]
+ }
+]

@@ -1,0 +1,398 @@
+[
+ {
+  "id": 26160883,
+  "logo": null,
+  "name": "J. Trafford",
+  "fullName": "James Harrington Trafford",
+  "profile": {
+   "club": {
+    "current": "Leeds United",
+    "joinedAt": "06/08/2026",
+    "contractExpiry": "30/06/2031",
+    "latestContractExtension": null
+   },
+   "foot": "right",
+   "height": "1,92 m",
+   "fullName": "James Trafford",
+   "position": {
+    "main": "Goalkeeper",
+    "secondary": null
+   },
+   "birthDate": "10/10/2002",
+   "deathDate": null,
+   "birthPlace": "Greysouthen",
+   "citizenship": "England"
+  },
+  "rumours": {
+   "current": [
+    {
+     "club": "Newcastle United",
+     "rumourDate": "12/06/2026",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Brighton & Hove Albion",
+     "rumourDate": "21/04/2026",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Juventus FC",
+     "rumourDate": "21/04/2026",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Aston Villa",
+     "rumourDate": "16/04/2026",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Tottenham Hotspur",
+     "rumourDate": "08/04/2026",
+     "transferProbability": "N/A"
+    }
+   ],
+   "historical": [
+    {
+     "club": "Chelsea FC",
+     "rumourDate": "26/05/2024",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Burnley FC",
+     "rumourDate": "19/07/2023",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Rangers FC",
+     "rumourDate": "30/12/2022",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Leeds United",
+     "rumourDate": "27/07/2026",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Newcastle United",
+     "rumourDate": "12/06/2026",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Brighton & Hove Albion",
+     "rumourDate": "21/04/2026",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Juventus FC",
+     "rumourDate": "21/04/2026",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Aston Villa",
+     "rumourDate": "16/04/2026",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Tottenham Hotspur",
+     "rumourDate": "08/04/2026",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Bayer 04 Leverkusen",
+     "rumourDate": "20/01/2026",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "West Ham United",
+     "rumourDate": "10/01/2026",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Manchester City",
+     "rumourDate": "29/07/2025",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Galatasaray",
+     "rumourDate": "25/07/2025",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Newcastle United",
+     "rumourDate": "25/07/2025",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Manchester United",
+     "rumourDate": "07/03/2025",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Tottenham Hotspur",
+     "rumourDate": "22/12/2024",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Bayern Munich",
+     "rumourDate": "05/06/2024",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Liverpool FC",
+     "rumourDate": "03/06/2024",
+     "transferProbability": "N/A"
+    }
+   ]
+  },
+  "relatedNews": [
+   {
+    "url": "https://www.transfermarkt.com/11-premier-league-clubs-which-clubs-have-broke-their-transfer-record-this-summer-/view/news/485312",
+    "date": "Aug 24, 2026",
+    "title": "11 Premier League clubs - Which clubs have broke their transfer record this summer?"
+   },
+   {
+    "url": "https://www.transfermarkt.com/nearly-euro-500m-in-fees-every-transfer-you-may-have-missed-while-transfermarkt-was-offline/view/news/484285",
+    "date": "Aug 9, 2026",
+    "title": "Nearly €500m in fees - Every transfer you may have missed while Transfermarkt was offline"
+   },
+   {
+    "url": "https://www.transfermarkt.com/set-for-big-money-leeds-move-james-trafford-set-to-become-most-expensive-goalkeeper-ever/view/news/483662",
+    "date": "Jul 28, 2026",
+    "title": "Set for big-money Leeds move - James Trafford set to become most expensive goalkeeper ever"
+   },
+   {
+    "url": "https://www.transfermarkt.com/rogers-nmecha-amp-co-star-studded-former-man-city-academy-xi-boasts-euro-650m-value/view/news/483343",
+    "date": "Jul 22, 2026",
+    "title": "Rogers, Nmecha & Co. - Star-studded former Man City academy XI boasts €650m value"
+   },
+   {
+    "url": "https://www.transfermarkt.com/guardiola-set-to-leave-five-star-players-that-could-depart-man-city-this-summer/view/news/479667",
+    "date": "May 19, 2026",
+    "title": "Guardiola set to leave - Five star players that could depart Man City this summer"
+   },
+   {
+    "url": "https://www.transfermarkt.com/lammens-second-the-15-most-highly-rated-u-23-goalkeepers-in-the-world-this-season/view/news/479038",
+    "date": "May 6, 2026",
+    "title": "Lammens second - The 15 most highly rated U-23 goalkeepers in the world this season"
+   },
+   {
+    "url": "https://www.transfermarkt.com/no-erling-haaland-chelsea-vs-manchester-city-most-expensive-xi-based-on-transfer-fees/view/news/477888",
+    "date": "Apr 12, 2026",
+    "title": "No Erling Haaland - Chelsea vs Manchester City most expensive XI based on transfer fees"
+   },
+   {
+    "url": "https://www.transfermarkt.com/when-was-the-last-time-each-english-club-had-a-player-called-up-for-the-three-lions-/view/news/477439",
+    "date": "Mar 31, 2026",
+    "title": "When was the last time each English club had a player called up for the Three Lions?"
+   },
+   {
+    "url": "https://www.transfermarkt.com/suzuki-trafford-amp-co-five-chelsea-goalkeeper-transfer-targets-valued-under-euro-45-million/view/news/476585",
+    "date": "Mar 13, 2026",
+    "title": "Suzuki, Trafford & Co - Five Chelsea goalkeeper transfer targets valued under €45 million"
+   },
+   {
+    "url": "https://www.transfermarkt.com/newcastle-amp-tottenham-interested-five-james-trafford-transfer-options-as-man-city-exit-looms/view/news/463664",
+    "date": "Dec 4, 2025",
+    "title": "Newcastle & Tottenham interested: Five James Trafford transfer options as Man City exit looms"
+   },
+   {
+    "url": "https://www.transfermarkt.com/foden-down-reijnders-up-man-citys-biggest-market-value-winners-amp-losers/view/news/461768",
+    "date": "Oct 20, 2025",
+    "title": "Foden down, Reijnders up - Man City's biggest market value winners & losers"
+   },
+   {
+    "url": "https://www.transfermarkt.com/wirtz-gyokeres-hato-amp-co-the-most-valuable-premier-league-summer-signings-xi/view/news/459307",
+    "date": "Aug 27, 2025",
+    "title": "Wirtz, Gyökeres, Hato & Co. - The most valuable Premier League summer signings XI"
+   }
+  ],
+  "transfers": [
+   {
+    "to": "Leeds",
+    "fee": "€46.70M",
+    "from": "Man City",
+    "type": "transfer",
+    "season": "26/27",
+    "marketValue": "€25.00M",
+    "transferDate": "Aug 6, 2026"
+   },
+   {
+    "to": "Man City",
+    "fee": "€31.20M",
+    "from": "Burnley",
+    "type": "transfer",
+    "season": "25/26",
+    "marketValue": "€22.00M",
+    "transferDate": "Jul 29, 2025"
+   },
+   {
+    "to": "Burnley",
+    "fee": "€17.30M",
+    "from": "Man City",
+    "type": "transfer",
+    "season": "23/24",
+    "marketValue": "€15.00M",
+    "transferDate": "Jul 20, 2023"
+   },
+   {
+    "to": "Man City",
+    "fee": null,
+    "from": "Man City U21",
+    "type": "transfer",
+    "season": "23/24",
+    "marketValue": "€2.50M",
+    "transferDate": "Jul 1, 2023"
+   },
+   {
+    "to": "Man City U21",
+    "fee": null,
+    "from": "Bolton",
+    "type": "end of loan",
+    "season": "22/23",
+    "marketValue": "€2.50M",
+    "transferDate": "May 31, 2023"
+   },
+   {
+    "to": "Bolton",
+    "fee": null,
+    "from": "Man City U21",
+    "type": "loan",
+    "season": "21/22",
+    "marketValue": null,
+    "transferDate": "Jan 13, 2022"
+   },
+   {
+    "to": "Man City U21",
+    "fee": null,
+    "from": "Accrington",
+    "type": "end of loan",
+    "season": "21/22",
+    "marketValue": null,
+    "transferDate": "Jan 12, 2022"
+   },
+   {
+    "to": "Accrington",
+    "fee": null,
+    "from": "Man City U21",
+    "type": "loan",
+    "season": "21/22",
+    "marketValue": null,
+    "transferDate": "Jul 1, 2021"
+   },
+   {
+    "to": "Man City U21",
+    "fee": null,
+    "from": "Man City U18",
+    "type": "transfer",
+    "season": "20/21",
+    "marketValue": null,
+    "transferDate": "Jul 1, 2020"
+   },
+   {
+    "to": "Man City U18",
+    "fee": null,
+    "from": "Man City Youth",
+    "type": "transfer",
+    "season": "19/20",
+    "marketValue": null,
+    "transferDate": "Jul 1, 2019"
+   }
+  ],
+  "marketValue": [
+   {
+    "age": 23,
+    "club": "Manchester City",
+    "value": 25000000,
+    "currency": "€",
+    "recordedDate": "03/06/2026"
+   },
+   {
+    "age": 23,
+    "club": "Manchester City",
+    "value": 25000000,
+    "currency": "€",
+    "recordedDate": "09/12/2025"
+   },
+   {
+    "age": 23,
+    "club": "Manchester City",
+    "value": 30000000,
+    "currency": "€",
+    "recordedDate": "17/10/2025"
+   },
+   {
+    "age": 22,
+    "club": "Burnley FC",
+    "value": 22000000,
+    "currency": "€",
+    "recordedDate": "27/05/2025"
+   },
+   {
+    "age": 22,
+    "club": "Burnley FC",
+    "value": 20000000,
+    "currency": "€",
+    "recordedDate": "28/03/2025"
+   },
+   {
+    "age": 22,
+    "club": "Burnley FC",
+    "value": 18000000,
+    "currency": "€",
+    "recordedDate": "30/12/2024"
+   },
+   {
+    "age": 21,
+    "club": "Burnley FC",
+    "value": 18000000,
+    "currency": "€",
+    "recordedDate": "27/05/2024"
+   },
+   {
+    "age": 21,
+    "club": "Burnley FC",
+    "value": 18000000,
+    "currency": "€",
+    "recordedDate": "14/03/2024"
+   },
+   {
+    "age": 21,
+    "club": "Burnley FC",
+    "value": 15000000,
+    "currency": "€",
+    "recordedDate": "19/12/2023"
+   },
+   {
+    "age": 20,
+    "club": "Manchester City",
+    "value": 15000000,
+    "currency": "€",
+    "recordedDate": "12/07/2023"
+   },
+   {
+    "age": 20,
+    "club": "Bolton Wanderers",
+    "value": 2500000,
+    "currency": "€",
+    "recordedDate": "05/04/2023"
+   },
+   {
+    "age": 19,
+    "club": "Bolton Wanderers",
+    "value": 1000000,
+    "currency": "€",
+    "recordedDate": "15/06/2022"
+   }
+  ],
+  "injuries": [
+   {
+    "reason": "Ill",
+    "season": "2025",
+    "toDate": "18.08.2024",
+    "fromDate": "16.08.2024",
+    "missedGames": 1,
+    "absentDurationInDays": 3
+   }
+  ]
+ }
+]

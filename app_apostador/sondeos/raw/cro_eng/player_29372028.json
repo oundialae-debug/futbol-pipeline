@@ -1,0 +1,397 @@
+[
+ {
+  "id": 29372028,
+  "logo": null,
+  "name": "Dion Drena Beljo",
+  "fullName": "Dion Drena Beljo",
+  "profile": {
+   "club": {
+    "current": "GNK Dinamo Zagreb",
+    "joinedAt": "16/07/2025",
+    "contractExpiry": "30/06/2030",
+    "latestContractExtension": null
+   },
+   "foot": "left",
+   "height": "1,95 m",
+   "fullName": "Dion Beljo",
+   "position": {
+    "main": "Centre-Forward",
+    "secondary": null
+   },
+   "birthDate": "01/03/2002",
+   "deathDate": null,
+   "birthPlace": "Zagreb",
+   "citizenship": "Croatia"
+  },
+  "rumours": {
+   "current": [
+    {
+     "club": "SL Benfica",
+     "rumourDate": "13/05/2026",
+     "transferProbability": "N/A"
+    }
+   ],
+   "historical": [
+    {
+     "club": "RSC Anderlecht",
+     "rumourDate": "31/10/2022",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Galatasaray",
+     "rumourDate": "16/08/2022",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "VfB Stuttgart",
+     "rumourDate": "23/06/2022",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "VfL Wolfsburg",
+     "rumourDate": "23/06/2022",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Pisa Sporting Club",
+     "rumourDate": "20/06/2022",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Borussia Dortmund",
+     "rumourDate": "12/06/2022",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "FC Basel 1893",
+     "rumourDate": "29/05/2022",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "West Ham United",
+     "rumourDate": "25/05/2022",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "SL Benfica",
+     "rumourDate": "13/05/2026",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "FC Porto",
+     "rumourDate": "06/05/2026",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Ajax Amsterdam",
+     "rumourDate": "06/05/2026",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Feyenoord Rotterdam",
+     "rumourDate": "06/05/2026",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "LOSC Lille",
+     "rumourDate": "30/03/2026",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Stade Rennais FC",
+     "rumourDate": "25/02/2026",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Olympique Marseille",
+     "rumourDate": "25/02/2026",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "GNK Dinamo Zagreb",
+     "rumourDate": "16/07/2025",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Real Sociedad",
+     "rumourDate": "03/06/2025",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Rapid Vienna",
+     "rumourDate": "07/11/2024",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "HNK Hajduk Split",
+     "rumourDate": "27/06/2024",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "VfB Stuttgart",
+     "rumourDate": "11/12/2023",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "FC Augsburg",
+     "rumourDate": "13/01/2023",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Borussia Mönchengladbach",
+     "rumourDate": "11/01/2023",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "AC Monza",
+     "rumourDate": "27/12/2022",
+     "transferProbability": "N/A"
+    }
+   ]
+  },
+  "relatedNews": [
+   {
+    "url": "https://www.transfermarkt.com/who-can-catch-harry-kane-the-2025-26-european-golden-boot-race/view/news/475375",
+    "date": "Apr 17, 2026",
+    "title": "Who can catch Harry Kane? - The 2025/26 European golden boot race"
+   },
+   {
+    "url": "https://www.transfermarkt.com/market-values-croatia-biggest-minus-for-leader-ivanusec-drmic-increases-again/view/news/401879",
+    "date": "Mar 23, 2022",
+    "title": "Market values Croatia: Biggest minus for leader Ivanusec - Drmic increases again"
+   }
+  ],
+  "transfers": [
+   {
+    "to": "Dinamo Zagreb",
+    "fee": "€4.00M",
+    "from": "Augsburg",
+    "type": "transfer",
+    "season": "25/26",
+    "marketValue": "€4.00M",
+    "transferDate": "Jul 16, 2025"
+   },
+   {
+    "to": "Augsburg",
+    "fee": null,
+    "from": "Rapid Vienna",
+    "type": "end of loan",
+    "season": "24/25",
+    "marketValue": "€4.00M",
+    "transferDate": "Jun 30, 2025"
+   },
+   {
+    "to": "Rapid Vienna",
+    "fee": "€300.00K",
+    "from": "Augsburg",
+    "type": "loan",
+    "season": "24/25",
+    "marketValue": "€4.00M",
+    "transferDate": "Jul 9, 2024"
+   },
+   {
+    "to": "Augsburg",
+    "fee": "€3.00M",
+    "from": "NK Osijek",
+    "type": "transfer",
+    "season": "22/23",
+    "marketValue": "€6.50M",
+    "transferDate": "Jan 13, 2023"
+   },
+   {
+    "to": "NK Osijek",
+    "fee": null,
+    "from": "NK Istra",
+    "type": "end of loan",
+    "season": "21/22",
+    "marketValue": "€3.00M",
+    "transferDate": "May 31, 2022"
+   },
+   {
+    "to": "NK Istra",
+    "fee": null,
+    "from": "NK Osijek",
+    "type": "loan",
+    "season": "21/22",
+    "marketValue": "€650.00K",
+    "transferDate": "Jul 14, 2021"
+   },
+   {
+    "to": "NK Osijek",
+    "fee": null,
+    "from": "NK Osijek II",
+    "type": "transfer",
+    "season": "21/22",
+    "marketValue": "€650.00K",
+    "transferDate": "Jul 1, 2021"
+   },
+   {
+    "to": "NK Osijek II",
+    "fee": null,
+    "from": "Cibalia",
+    "type": "transfer",
+    "season": "19/20",
+    "marketValue": null,
+    "transferDate": "Jul 1, 2019"
+   },
+   {
+    "to": "Cibalia",
+    "fee": null,
+    "from": "Cibalia U17",
+    "type": "transfer",
+    "season": "18/19",
+    "marketValue": null,
+    "transferDate": "Jul 1, 2018"
+   },
+   {
+    "to": "Cibalia U17",
+    "fee": null,
+    "from": "Cibalia Jgd",
+    "type": "transfer",
+    "season": "17/18",
+    "marketValue": null,
+    "transferDate": "Jul 1, 2017"
+   }
+  ],
+  "marketValue": [
+   {
+    "age": 24,
+    "club": "GNK Dinamo Zagreb",
+    "value": 12000000,
+    "currency": "€",
+    "recordedDate": "29/05/2026"
+   },
+   {
+    "age": 23,
+    "club": "GNK Dinamo Zagreb",
+    "value": 4000000,
+    "currency": "€",
+    "recordedDate": "22/12/2025"
+   },
+   {
+    "age": 23,
+    "club": "Rapid Vienna",
+    "value": 4000000,
+    "currency": "€",
+    "recordedDate": "06/06/2025"
+   },
+   {
+    "age": 22,
+    "club": "Rapid Vienna",
+    "value": 5000000,
+    "currency": "€",
+    "recordedDate": "17/12/2024"
+   },
+   {
+    "age": 22,
+    "club": "FC Augsburg",
+    "value": 4000000,
+    "currency": "€",
+    "recordedDate": "29/05/2024"
+   },
+   {
+    "age": 22,
+    "club": "FC Augsburg",
+    "value": 5000000,
+    "currency": "€",
+    "recordedDate": "27/03/2024"
+   },
+   {
+    "age": 21,
+    "club": "FC Augsburg",
+    "value": 6500000,
+    "currency": "€",
+    "recordedDate": "14/12/2023"
+   },
+   {
+    "age": 21,
+    "club": "FC Augsburg",
+    "value": 6500000,
+    "currency": "€",
+    "recordedDate": "22/06/2023"
+   },
+   {
+    "age": 20,
+    "club": "NK Osijek",
+    "value": 6500000,
+    "currency": "€",
+    "recordedDate": "08/11/2022"
+   },
+   {
+    "age": 20,
+    "club": "NK Osijek",
+    "value": 4500000,
+    "currency": "€",
+    "recordedDate": "06/06/2022"
+   },
+   {
+    "age": 20,
+    "club": "NK Istra 1961",
+    "value": 3000000,
+    "currency": "€",
+    "recordedDate": "22/03/2022"
+   },
+   {
+    "age": 19,
+    "club": "NK Istra 1961",
+    "value": 1500000,
+    "currency": "€",
+    "recordedDate": "30/12/2021"
+   },
+   {
+    "age": 19,
+    "club": "NK Osijek II",
+    "value": 650000,
+    "currency": "€",
+    "recordedDate": "10/06/2021"
+   },
+   {
+    "age": 18,
+    "club": "NK Osijek II",
+    "value": 650000,
+    "currency": "€",
+    "recordedDate": "28/12/2020"
+   },
+   {
+    "age": 18,
+    "club": "NK Osijek II",
+    "value": 500000,
+    "currency": "€",
+    "recordedDate": "27/07/2020"
+   },
+   {
+    "age": 17,
+    "club": "NK Osijek II",
+    "value": 100000,
+    "currency": "€",
+    "recordedDate": "27/12/2019"
+   }
+  ],
+  "injuries": [
+   {
+    "reason": "Influenza",
+    "season": "2027",
+    "toDate": "18.09.2026",
+    "fromDate": "12.09.2026",
+    "missedGames": 2,
+    "absentDurationInDays": 7
+   },
+   {
+    "reason": "Ankle injury",
+    "season": "2025",
+    "toDate": "19.11.2024",
+    "fromDate": "07.11.2024",
+    "missedGames": 4,
+    "absentDurationInDays": 13
+   },
+   {
+    "reason": "Ankle injury",
+    "season": "2025",
+    "toDate": "10.09.2024",
+    "fromDate": "01.09.2024",
+    "missedGames": 3,
+    "absentDurationInDays": 10
+   }
+  ]
+ }
+]

@@ -1,0 +1,917 @@
+[
+ {
+  "id": 369005,
+  "logo": null,
+  "name": "M. Kovačić",
+  "fullName": "Mateo Kovačić",
+  "profile": {
+   "club": {
+    "current": "Manchester City",
+    "joinedAt": "01/07/2023",
+    "contractExpiry": "30/06/2027",
+    "latestContractExtension": null
+   },
+   "foot": "right",
+   "height": "1,78 m",
+   "fullName": "Mateo Kovacic",
+   "position": {
+    "main": "Central Midfield",
+    "secondary": "Attacking Midfield, Defensive Midfield"
+   },
+   "birthDate": "06/05/1994",
+   "deathDate": null,
+   "birthPlace": "Linz",
+   "citizenship": "Croatia"
+  },
+  "rumours": {
+   "current": [
+    {
+     "club": "Inter Milan",
+     "rumourDate": "14/07/2026",
+     "transferProbability": "N/A"
+    }
+   ],
+   "historical": [
+    {
+     "club": "FC Barcelona",
+     "rumourDate": "21/04/2015",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Everton FC",
+     "rumourDate": "16/03/2015",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Borussia Dortmund",
+     "rumourDate": "03/04/2014",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Inter Milan",
+     "rumourDate": "31/01/2013",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Arsenal FC",
+     "rumourDate": "04/10/2012",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Manchester City",
+     "rumourDate": "13/12/2011",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Málaga CF",
+     "rumourDate": "14/12/2011",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Manchester United",
+     "rumourDate": "03/11/2011",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Tottenham Hotspur",
+     "rumourDate": "18/05/2011",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "VfB Stuttgart",
+     "rumourDate": "07/10/2010",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Manchester City",
+     "rumourDate": "10/07/2018",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "SSC Napoli",
+     "rumourDate": "26/06/2018",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "FC Schalke 04",
+     "rumourDate": "04/06/2018",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Juventus FC",
+     "rumourDate": "14/05/2018",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "AS Roma",
+     "rumourDate": "08/02/2018",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Liverpool FC",
+     "rumourDate": "23/08/2017",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Tottenham Hotspur",
+     "rumourDate": "17/07/2017",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Borussia Dortmund",
+     "rumourDate": "20/07/2016",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Sevilla FC",
+     "rumourDate": "29/03/2016",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Real Madrid",
+     "rumourDate": "16/08/2015",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "AC Milan",
+     "rumourDate": "15/08/2015",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Bayer 04 Leverkusen",
+     "rumourDate": "15/07/2015",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Bayern Munich",
+     "rumourDate": "01/07/2015",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Juventus FC",
+     "rumourDate": "29/06/2015",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Liverpool FC",
+     "rumourDate": "17/06/2015",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Inter Milan",
+     "rumourDate": "14/07/2026",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "West Ham United",
+     "rumourDate": "20/01/2026",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Atlético de Madrid",
+     "rumourDate": "24/04/2025",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Galatasaray",
+     "rumourDate": "18/06/2024",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Manchester City",
+     "rumourDate": "27/06/2023",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Bayern Munich",
+     "rumourDate": "11/05/2023",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Liverpool FC",
+     "rumourDate": "25/03/2023",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "AC Milan",
+     "rumourDate": "14/03/2023",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Chelsea FC",
+     "rumourDate": "01/07/2019",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Chelsea FC",
+     "rumourDate": "01/07/2019",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Inter Milan",
+     "rumourDate": "17/06/2019",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Inter Milan",
+     "rumourDate": "30/05/2019",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Zenit St. Petersburg",
+     "rumourDate": "19/04/2019",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "AC Milan",
+     "rumourDate": "06/08/2018",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Manchester United",
+     "rumourDate": "01/08/2018",
+     "transferProbability": "N/A"
+    }
+   ]
+  },
+  "relatedNews": [
+   {
+    "url": "https://www.transfermarkt.com/azpilicueta-jorginho-lukaku-amp-co-the-last-chelsea-xi-to-beat-arsenal-revealed/view/news/486597",
+    "date": "Sep 6, 2026",
+    "title": "Azpilicueta, Jorginho, Lukaku & Co. - the last Chelsea XI to beat Arsenal revealed"
+   },
+   {
+    "url": "https://www.transfermarkt.com/2nd-most-valuable-u18-star-man-city-pushing-for-euro-100m-ayyoub-bouaddi-deal-from-lille/view/news/482922",
+    "date": "Jul 14, 2026",
+    "title": "2nd most valuable U18 star - Man City pushing for €100m Ayyoub Bouaddi deal from Lille"
+   },
+   {
+    "url": "https://www.transfermarkt.com/seedorf-ronaldo-amp-co-every-player-to-win-the-champions-league-with-more-than-one-club/view/news/475483",
+    "date": "Feb 16, 2026",
+    "title": "Seedorf, Ronaldo & Co. - Every player to win the Champions League with more than one club"
+   },
+   {
+    "url": "https://www.transfermarkt.com/-euro-218m-spent-on-new-signings-will-man-citys-january-recruits-be-able-to-save-their-season-/view/news/449797",
+    "date": "Feb 5, 2025",
+    "title": "€218m spent on new signings - will Man City's January recruits be able to save their season?"
+   },
+   {
+    "url": "https://www.transfermarkt.com/points-per-game-ranking-every-premier-league-clubs-most-important-player-so-far-this-season/view/news/449498",
+    "date": "Jan 31, 2025",
+    "title": "Points per game - Ranking every Premier League club's most important player so far this season"
+   },
+   {
+    "url": "https://www.transfermarkt.com/yamal-fabregas-amp-co-the-youngest-goalscorers-in-champions-league-history/view/news/449426",
+    "date": "Jan 30, 2025",
+    "title": "Yamal, Fàbregas & Co - The youngest goalscorers in Champions League history"
+   },
+   {
+    "url": "https://www.transfermarkt.com/an-over-reliance-on-haaland-faltering-foden-why-man-citys-attack-is-falling-apart-this-season/view/news/446138",
+    "date": "Nov 12, 2024",
+    "title": "An over-reliance on Haaland, faltering Foden - why Man City's attack is falling apart this season"
+   },
+   {
+    "url": "https://www.transfermarkt.com/will-miss-the-season-with-acl-injury-is-rodri-the-irreplaceable-cog-in-man-citys-machinery-/view/news/431003",
+    "date": "Nov 8, 2024",
+    "title": "Will miss the season with ACL injury - Is Rodri the irreplaceable cog in Man City’s machinery?"
+   },
+   {
+    "url": "https://www.transfermarkt.com/torres-casemiro-amp-alonso-included-rafa-benitezs-top-20-most-expensive-signings/view/news/442608",
+    "date": "Aug 21, 2024",
+    "title": "Torres, Casemiro & Alonso included - Rafa Benítez's top 20 most expensive signings"
+   },
+   {
+    "url": "https://www.transfermarkt.com/leeds-move-into-fifth-which-english-clubs-have-made-the-most-in-a-single-transfer-window-/view/news/442516",
+    "date": "Aug 20, 2024",
+    "title": "Leeds move into fifth - Which English clubs have made the most in a single transfer window?"
+   },
+   {
+    "url": "https://www.transfermarkt.com/salah-de-bruyne-messi-amp-co-the-worlds-current-most-valuable-players-aged-30-and-over/view/news/439793",
+    "date": "Jul 1, 2024",
+    "title": "Salah, De Bruyne, Messi & Co - The world's current most valuable players aged 30 and over"
+   }
+  ],
+  "transfers": [
+   {
+    "to": "Man City",
+    "fee": "€29.10M",
+    "from": "Chelsea",
+    "type": "transfer",
+    "season": "23/24",
+    "marketValue": "€38.00M",
+    "transferDate": "Jul 1, 2023"
+   },
+   {
+    "to": "Chelsea",
+    "fee": "€45.00M",
+    "from": "Real Madrid",
+    "type": "transfer",
+    "season": "19/20",
+    "marketValue": "€35.00M",
+    "transferDate": "Jul 1, 2019"
+   },
+   {
+    "to": "Real Madrid",
+    "fee": null,
+    "from": "Chelsea",
+    "type": "end of loan",
+    "season": "18/19",
+    "marketValue": "€35.00M",
+    "transferDate": "Jun 30, 2019"
+   },
+   {
+    "to": "Chelsea",
+    "fee": null,
+    "from": "Real Madrid",
+    "type": "loan",
+    "season": "18/19",
+    "marketValue": "€30.00M",
+    "transferDate": "Aug 9, 2018"
+   },
+   {
+    "to": "Real Madrid",
+    "fee": "€38.00M",
+    "from": "Inter",
+    "type": "transfer",
+    "season": "15/16",
+    "marketValue": "€22.00M",
+    "transferDate": "Aug 18, 2015"
+   },
+   {
+    "to": "Inter",
+    "fee": "€11.00M",
+    "from": "Dinamo Zagreb",
+    "type": "transfer",
+    "season": "12/13",
+    "marketValue": "€3.00M",
+    "transferDate": "Jan 31, 2013"
+   },
+   {
+    "to": "Dinamo Zagreb",
+    "fee": null,
+    "from": "Din. Zagreb U17",
+    "type": "transfer",
+    "season": "10/11",
+    "marketValue": null,
+    "transferDate": "Oct 1, 2010"
+   },
+   {
+    "to": "Din. Zagreb U17",
+    "fee": null,
+    "from": "D. Zagreb Yth.",
+    "type": "transfer",
+    "season": "09/10",
+    "marketValue": null,
+    "transferDate": "Jul 1, 2009"
+   },
+   {
+    "to": "D. Zagreb Yth.",
+    "fee": null,
+    "from": "LASK Youth",
+    "type": "transfer",
+    "season": "07/08",
+    "marketValue": null,
+    "transferDate": "Mar 1, 2008"
+   },
+   {
+    "to": "LASK Youth",
+    "fee": null,
+    "from": "Ebelsberg J.",
+    "type": "transfer",
+    "season": "00/01",
+    "marketValue": null,
+    "transferDate": "Sep 1, 2000"
+   }
+  ],
+  "marketValue": [
+   {
+    "age": 32,
+    "club": "Manchester City",
+    "value": 10000000,
+    "currency": "€",
+    "recordedDate": "03/06/2026"
+   },
+   {
+    "age": 31,
+    "club": "Manchester City",
+    "value": 12000000,
+    "currency": "€",
+    "recordedDate": "09/03/2026"
+   },
+   {
+    "age": 31,
+    "club": "Manchester City",
+    "value": 15000000,
+    "currency": "€",
+    "recordedDate": "09/12/2025"
+   },
+   {
+    "age": 31,
+    "club": "Manchester City",
+    "value": 20000000,
+    "currency": "€",
+    "recordedDate": "30/05/2025"
+   },
+   {
+    "age": 30,
+    "club": "Manchester City",
+    "value": 25000000,
+    "currency": "€",
+    "recordedDate": "18/03/2025"
+   },
+   {
+    "age": 30,
+    "club": "Manchester City",
+    "value": 28000000,
+    "currency": "€",
+    "recordedDate": "16/12/2024"
+   },
+   {
+    "age": 30,
+    "club": "Manchester City",
+    "value": 30000000,
+    "currency": "€",
+    "recordedDate": "27/05/2024"
+   },
+   {
+    "age": 29,
+    "club": "Manchester City",
+    "value": 30000000,
+    "currency": "€",
+    "recordedDate": "14/03/2024"
+   },
+   {
+    "age": 29,
+    "club": "Manchester City",
+    "value": 38000000,
+    "currency": "€",
+    "recordedDate": "19/12/2023"
+   },
+   {
+    "age": 29,
+    "club": "Chelsea FC",
+    "value": 38000000,
+    "currency": "€",
+    "recordedDate": "20/06/2023"
+   },
+   {
+    "age": 28,
+    "club": "Chelsea FC",
+    "value": 40000000,
+    "currency": "€",
+    "recordedDate": "03/11/2022"
+   },
+   {
+    "age": 28,
+    "club": "Chelsea FC",
+    "value": 42000000,
+    "currency": "€",
+    "recordedDate": "15/06/2022"
+   },
+   {
+    "age": 27,
+    "club": "Chelsea FC",
+    "value": 45000000,
+    "currency": "€",
+    "recordedDate": "23/12/2021"
+   },
+   {
+    "age": 27,
+    "club": "Chelsea FC",
+    "value": 45000000,
+    "currency": "€",
+    "recordedDate": "28/05/2021"
+   },
+   {
+    "age": 26,
+    "club": "Chelsea FC",
+    "value": 45000000,
+    "currency": "€",
+    "recordedDate": "18/03/2021"
+   },
+   {
+    "age": 26,
+    "club": "Chelsea FC",
+    "value": 45000000,
+    "currency": "€",
+    "recordedDate": "13/10/2020"
+   },
+   {
+    "age": 26,
+    "club": "Chelsea FC",
+    "value": 40000000,
+    "currency": "€",
+    "recordedDate": "30/07/2020"
+   },
+   {
+    "age": 25,
+    "club": "Chelsea FC",
+    "value": 36000000,
+    "currency": "€",
+    "recordedDate": "08/04/2020"
+   },
+   {
+    "age": 25,
+    "club": "Chelsea FC",
+    "value": 45000000,
+    "currency": "€",
+    "recordedDate": "10/12/2019"
+   },
+   {
+    "age": 25,
+    "club": "Chelsea FC",
+    "value": 35000000,
+    "currency": "€",
+    "recordedDate": "13/06/2019"
+   },
+   {
+    "age": 24,
+    "club": "Chelsea FC",
+    "value": 35000000,
+    "currency": "€",
+    "recordedDate": "19/12/2018"
+   },
+   {
+    "age": 24,
+    "club": "Real Madrid",
+    "value": 30000000,
+    "currency": "€",
+    "recordedDate": "30/05/2018"
+   },
+   {
+    "age": 23,
+    "club": "Real Madrid",
+    "value": 30000000,
+    "currency": "€",
+    "recordedDate": "22/03/2018"
+   },
+   {
+    "age": 23,
+    "club": "Real Madrid",
+    "value": 25000000,
+    "currency": "€",
+    "recordedDate": "01/01/2018"
+   },
+   {
+    "age": 23,
+    "club": "Real Madrid",
+    "value": 25000000,
+    "currency": "€",
+    "recordedDate": "05/06/2017"
+   },
+   {
+    "age": 22,
+    "club": "Real Madrid",
+    "value": 25000000,
+    "currency": "€",
+    "recordedDate": "24/01/2017"
+   },
+   {
+    "age": 22,
+    "club": "Real Madrid",
+    "value": 20000000,
+    "currency": "€",
+    "recordedDate": "15/07/2016"
+   },
+   {
+    "age": 22,
+    "club": "Real Madrid",
+    "value": 20000000,
+    "currency": "€",
+    "recordedDate": "01/06/2016"
+   },
+   {
+    "age": 21,
+    "club": "Real Madrid",
+    "value": 20000000,
+    "currency": "€",
+    "recordedDate": "22/02/2016"
+   },
+   {
+    "age": 21,
+    "club": "Real Madrid",
+    "value": 20000000,
+    "currency": "€",
+    "recordedDate": "22/11/2015"
+   },
+   {
+    "age": 21,
+    "club": "Real Madrid",
+    "value": 25000000,
+    "currency": "€",
+    "recordedDate": "25/08/2015"
+   },
+   {
+    "age": 21,
+    "club": "Inter Milan",
+    "value": 22000000,
+    "currency": "€",
+    "recordedDate": "01/07/2015"
+   },
+   {
+    "age": 20,
+    "club": "Inter Milan",
+    "value": 22000000,
+    "currency": "€",
+    "recordedDate": "07/01/2015"
+   },
+   {
+    "age": 20,
+    "club": "Inter Milan",
+    "value": 22000000,
+    "currency": "€",
+    "recordedDate": "08/11/2014"
+   },
+   {
+    "age": 20,
+    "club": "Inter Milan",
+    "value": 19000000,
+    "currency": "€",
+    "recordedDate": "11/07/2014"
+   },
+   {
+    "age": 19,
+    "club": "Inter Milan",
+    "value": 15000000,
+    "currency": "€",
+    "recordedDate": "07/01/2014"
+   },
+   {
+    "age": 19,
+    "club": "Inter Milan",
+    "value": 15000000,
+    "currency": "€",
+    "recordedDate": "19/06/2013"
+   },
+   {
+    "age": 18,
+    "club": "Inter Milan",
+    "value": 12000000,
+    "currency": "€",
+    "recordedDate": "12/02/2013"
+   },
+   {
+    "age": 18,
+    "club": "GNK Dinamo Zagreb",
+    "value": 3000000,
+    "currency": "€",
+    "recordedDate": "30/09/2012"
+   },
+   {
+    "age": 17,
+    "club": "GNK Dinamo Zagreb",
+    "value": 3000000,
+    "currency": "€",
+    "recordedDate": "29/02/2012"
+   },
+   {
+    "age": 17,
+    "club": "GNK Dinamo Zagreb",
+    "value": 1500000,
+    "currency": "€",
+    "recordedDate": "29/08/2011"
+   },
+   {
+    "age": 16,
+    "club": "GNK Dinamo Zagreb",
+    "value": 500000,
+    "currency": "€",
+    "recordedDate": "13/02/2011"
+   }
+  ],
+  "injuries": [
+   {
+    "reason": "Calf injury",
+    "season": "2020",
+    "toDate": "10.07.2020",
+    "fromDate": "02.07.2020",
+    "missedGames": 2,
+    "absentDurationInDays": 9
+   },
+   {
+    "reason": "Achilles tendon problems",
+    "season": "2020",
+    "toDate": "06.06.2020",
+    "fromDate": "04.03.2020",
+    "missedGames": 1,
+    "absentDurationInDays": 95
+   },
+   {
+    "reason": "Knee injury",
+    "season": "2020",
+    "toDate": "18.10.2019",
+    "fromDate": "15.10.2019",
+    "missedGames": null,
+    "absentDurationInDays": 4
+   },
+   {
+    "reason": "Calf injury",
+    "season": "2020",
+    "toDate": "12.09.2019",
+    "fromDate": "01.09.2019",
+    "missedGames": 2,
+    "absentDurationInDays": 12
+   },
+   {
+    "reason": "Knock",
+    "season": "2019",
+    "toDate": "15.12.2018",
+    "fromDate": "09.12.2018",
+    "missedGames": 1,
+    "absentDurationInDays": 7
+   },
+   {
+    "reason": "Knock",
+    "season": "2019",
+    "toDate": "04.12.2018",
+    "fromDate": "03.12.2018",
+    "missedGames": null,
+    "absentDurationInDays": 2
+   },
+   {
+    "reason": "Ankle injury",
+    "season": "2019",
+    "toDate": "23.11.2018",
+    "fromDate": "16.11.2018",
+    "missedGames": 1,
+    "absentDurationInDays": 8
+   },
+   {
+    "reason": "Knock",
+    "season": "2019",
+    "toDate": "19.10.2018",
+    "fromDate": "14.10.2018",
+    "missedGames": 1,
+    "absentDurationInDays": 6
+   },
+   {
+    "reason": "Knock",
+    "season": "2019",
+    "toDate": "17.08.2018",
+    "fromDate": "09.08.2018",
+    "missedGames": 1,
+    "absentDurationInDays": 9
+   },
+   {
+    "reason": "Shoulder injury",
+    "season": "2019",
+    "toDate": "06.07.2018",
+    "fromDate": "02.07.2018",
+    "missedGames": null,
+    "absentDurationInDays": 5
+   },
+   {
+    "reason": "Patellar tendon tear",
+    "season": "2018",
+    "toDate": "23.11.2017",
+    "fromDate": "14.09.2017",
+    "missedGames": 18,
+    "absentDurationInDays": 71
+   },
+   {
+    "reason": "Muscular problems",
+    "season": "2018",
+    "toDate": "24.08.2017",
+    "fromDate": "17.08.2017",
+    "missedGames": 1,
+    "absentDurationInDays": 8
+   },
+   {
+    "reason": "Ankle injury",
+    "season": "2017",
+    "toDate": "12.01.2017",
+    "fromDate": "19.12.2016",
+    "missedGames": 3,
+    "absentDurationInDays": 25
+   },
+   {
+    "reason": "Knee problems",
+    "season": "2014",
+    "toDate": "17.02.2014",
+    "fromDate": "10.02.2014",
+    "missedGames": 1,
+    "absentDurationInDays": 8
+   },
+   {
+    "reason": "Ankle injury",
+    "season": "2026",
+    "toDate": "12.03.2026",
+    "fromDate": "27.10.2025",
+    "missedGames": 35,
+    "absentDurationInDays": 137
+   },
+   {
+    "reason": "Achilles tendon surgery",
+    "season": "2025",
+    "toDate": "03.10.2025",
+    "fromDate": "02.06.2025",
+    "missedGames": 15,
+    "absentDurationInDays": 124
+   },
+   {
+    "reason": "Unknown",
+    "season": "2025",
+    "toDate": "12.12.2024",
+    "fromDate": "18.11.2024",
+    "missedGames": 5,
+    "absentDurationInDays": 25
+   },
+   {
+    "reason": "Knee injury",
+    "season": "2024",
+    "toDate": "15.02.2024",
+    "fromDate": "08.02.2024",
+    "missedGames": 2,
+    "absentDurationInDays": 8
+   },
+   {
+    "reason": "Muscle injury",
+    "season": "2024",
+    "toDate": "01.12.2023",
+    "fromDate": "16.11.2023",
+    "missedGames": 4,
+    "absentDurationInDays": 16
+   },
+   {
+    "reason": "Muscle injury",
+    "season": "2024",
+    "toDate": "25.09.2023",
+    "fromDate": "12.09.2023",
+    "missedGames": 3,
+    "absentDurationInDays": 14
+   },
+   {
+    "reason": "Knock",
+    "season": "2023",
+    "toDate": "27.05.2023",
+    "fromDate": "20.05.2023",
+    "missedGames": 2,
+    "absentDurationInDays": 8
+   },
+   {
+    "reason": "Ill",
+    "season": "2023",
+    "toDate": "27.02.2023",
+    "fromDate": "20.02.2023",
+    "missedGames": 1,
+    "absentDurationInDays": 8
+   },
+   {
+    "reason": "Calf problems",
+    "season": "2023",
+    "toDate": "04.02.2023",
+    "fromDate": "21.01.2023",
+    "missedGames": 2,
+    "absentDurationInDays": 15
+   },
+   {
+    "reason": "Rest",
+    "season": "2023",
+    "toDate": "28.12.2022",
+    "fromDate": "18.12.2022",
+    "missedGames": 1,
+    "absentDurationInDays": 11
+   },
+   {
+    "reason": "Knee problems",
+    "season": "2023",
+    "toDate": "24.08.2022",
+    "fromDate": "07.08.2022",
+    "missedGames": 2,
+    "absentDurationInDays": 18
+   },
+   {
+    "reason": "Ankle injury",
+    "season": "2022",
+    "toDate": "30.04.2022",
+    "fromDate": "17.04.2022",
+    "missedGames": 3,
+    "absentDurationInDays": 14
+   },
+   {
+    "reason": "Corona virus",
+    "season": "2022",
+    "toDate": "18.12.2021",
+    "fromDate": "03.12.2021",
+    "missedGames": 4,
+    "absentDurationInDays": 16
+   },
+   {
+    "reason": "Adductor pain",
+    "season": "2022",
+    "toDate": "01.12.2021",
+    "fromDate": "29.10.2021",
+    "missedGames": 8,
+    "absentDurationInDays": 34
+   },
+   {
+    "reason": "Muscle injury",
+    "season": "2021",
+    "toDate": "14.05.2021",
+    "fromDate": "11.04.2021",
+    "missedGames": 9,
+    "absentDurationInDays": 34
+   }
+  ]
+ }
+]

@@ -1,0 +1,210 @@
+[
+ {
+  "id": 2296980,
+  "logo": null,
+  "name": "Ivan Smolčić",
+  "fullName": "Ivan Smolčić",
+  "profile": {
+   "club": {
+    "current": "Como 1907",
+    "joinedAt": "03/02/2025",
+    "contractExpiry": "30/06/2031",
+    "latestContractExtension": "23/06/2026"
+   },
+   "foot": "right",
+   "height": "1,81 m",
+   "fullName": "Ivan Smolcic",
+   "position": {
+    "main": "Right-Back",
+    "secondary": "Centre-Back"
+   },
+   "birthDate": "17/08/2000",
+   "deathDate": null,
+   "birthPlace": "Gospić",
+   "citizenship": "Croatia"
+  },
+  "rumours": {
+   "current": [
+    {
+     "club": "FC Copenhagen",
+     "rumourDate": "17/01/2026",
+     "transferProbability": "N/A"
+    }
+   ],
+   "historical": [
+    {
+     "club": "FC Copenhagen",
+     "rumourDate": "17/01/2026",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Como 1907",
+     "rumourDate": "04/02/2025",
+     "transferProbability": "N/A"
+    }
+   ]
+  },
+  "relatedNews": [],
+  "transfers": [
+   {
+    "to": "Como",
+    "fee": "€1.60M",
+    "from": "HNK Rijeka",
+    "type": "transfer",
+    "season": "24/25",
+    "marketValue": "€2.00M",
+    "transferDate": "Feb 3, 2025"
+   },
+   {
+    "to": "HNK Rijeka",
+    "fee": null,
+    "from": "Hrv Dragovoljac",
+    "type": "transfer",
+    "season": "22/23",
+    "marketValue": "€300.00K",
+    "transferDate": "Jul 1, 2022"
+   },
+   {
+    "to": "Hrv Dragovoljac",
+    "fee": null,
+    "from": "HNK Rijeka",
+    "type": "transfer",
+    "season": "21/22",
+    "marketValue": "€50.00K",
+    "transferDate": "Jan 27, 2022"
+   },
+   {
+    "to": "HNK Rijeka",
+    "fee": null,
+    "from": "NK Orijent 1919",
+    "type": "end of loan",
+    "season": "20/21",
+    "marketValue": "€150.00K",
+    "transferDate": "Jun 30, 2021"
+   },
+   {
+    "to": "NK Orijent 1919",
+    "fee": null,
+    "from": "HNK Rijeka U19",
+    "type": "loan",
+    "season": "19/20",
+    "marketValue": null,
+    "transferDate": "Aug 9, 2019"
+   },
+   {
+    "to": "HNK Rijeka U19",
+    "fee": null,
+    "from": "HNK Rijeka U17",
+    "type": "transfer",
+    "season": "17/18",
+    "marketValue": null,
+    "transferDate": "Jul 1, 2017"
+   },
+   {
+    "to": "HNK Rijeka U17",
+    "fee": null,
+    "from": "HNK Rijeka Jgd",
+    "type": "transfer",
+    "season": "15/16",
+    "marketValue": null,
+    "transferDate": "Jul 1, 2015"
+   },
+   {
+    "to": "HNK Rijeka Jgd",
+    "fee": null,
+    "from": "NK Gospic 91",
+    "type": "transfer",
+    "season": "13/14",
+    "marketValue": null,
+    "transferDate": "Feb 7, 2014"
+   }
+  ],
+  "marketValue": [
+   {
+    "age": 25,
+    "club": "Como 1907",
+    "value": 3500000,
+    "currency": "€",
+    "recordedDate": "29/05/2026"
+   },
+   {
+    "age": 25,
+    "club": "Como 1907",
+    "value": 2500000,
+    "currency": "€",
+    "recordedDate": "23/12/2025"
+   },
+   {
+    "age": 24,
+    "club": "Como 1907",
+    "value": 1800000,
+    "currency": "€",
+    "recordedDate": "17/06/2025"
+   },
+   {
+    "age": 24,
+    "club": "HNK Rijeka",
+    "value": 2000000,
+    "currency": "€",
+    "recordedDate": "23/12/2024"
+   },
+   {
+    "age": 23,
+    "club": "HNK Rijeka",
+    "value": 2000000,
+    "currency": "€",
+    "recordedDate": "04/06/2024"
+   },
+   {
+    "age": 23,
+    "club": "HNK Rijeka",
+    "value": 1200000,
+    "currency": "€",
+    "recordedDate": "18/12/2023"
+   },
+   {
+    "age": 22,
+    "club": "HNK Rijeka",
+    "value": 400000,
+    "currency": "€",
+    "recordedDate": "06/06/2023"
+   },
+   {
+    "age": 22,
+    "club": "HNK Rijeka",
+    "value": 400000,
+    "currency": "€",
+    "recordedDate": "08/11/2022"
+   },
+   {
+    "age": 21,
+    "club": "NK Hrvatski Dragovoljac",
+    "value": 300000,
+    "currency": "€",
+    "recordedDate": "06/06/2022"
+   },
+   {
+    "age": 21,
+    "club": "NK Hrvatski Dragovoljac",
+    "value": 150000,
+    "currency": "€",
+    "recordedDate": "22/03/2022"
+   },
+   {
+    "age": 21,
+    "club": "HNK Rijeka",
+    "value": 50000,
+    "currency": "€",
+    "recordedDate": "30/12/2021"
+   },
+   {
+    "age": 20,
+    "club": "HNK Rijeka",
+    "value": 150000,
+    "currency": "€",
+    "recordedDate": "30/06/2021"
+   }
+  ],
+  "injuries": []
+ }
+]

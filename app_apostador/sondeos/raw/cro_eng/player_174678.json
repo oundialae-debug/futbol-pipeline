@@ -1,0 +1,561 @@
+[
+ {
+  "id": 174678,
+  "logo": null,
+  "name": "Marin Pongračić",
+  "fullName": "Marin Pongračić",
+  "profile": {
+   "club": {
+    "current": "ACF Fiorentina",
+    "joinedAt": "19/07/2024",
+    "contractExpiry": "30/06/2029",
+    "latestContractExtension": null
+   },
+   "foot": "right",
+   "height": "1,93 m",
+   "fullName": "Marin Pongracic",
+   "position": {
+    "main": "Centre-Back",
+    "secondary": null
+   },
+   "birthDate": "11/09/1997",
+   "deathDate": null,
+   "birthPlace": "Landshut",
+   "citizenship": "Croatia, Germany"
+  },
+  "rumours": {
+   "current": [
+    {
+     "club": "RB Leipzig",
+     "rumourDate": "16/01/2026",
+     "transferProbability": "0.96%"
+    },
+    {
+     "club": "Bologna FC 1909",
+     "rumourDate": "04/01/2026",
+     "transferProbability": "N/A"
+    }
+   ],
+   "historical": [
+    {
+     "club": "Red Bull Salzburg",
+     "rumourDate": "19/06/2017",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "SG Dynamo Dresden",
+     "rumourDate": "16/06/2017",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Hannover 96",
+     "rumourDate": "11/05/2017",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "1.FC Union Berlin",
+     "rumourDate": "06/06/2017",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "VfL Wolfsburg",
+     "rumourDate": "11/05/2017",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "RB Leipzig",
+     "rumourDate": "16/01/2026",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Bologna FC 1909",
+     "rumourDate": "04/01/2026",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Torino FC",
+     "rumourDate": "15/08/2025",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "SSC Napoli",
+     "rumourDate": "23/01/2025",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "GNK Dinamo Zagreb",
+     "rumourDate": "19/12/2024",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "ACF Fiorentina",
+     "rumourDate": "18/07/2024",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Stade Rennais FC",
+     "rumourDate": "18/07/2024",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Bologna FC 1909",
+     "rumourDate": "07/07/2024",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "SSC Napoli",
+     "rumourDate": "19/06/2024",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "US Lecce",
+     "rumourDate": "30/06/2023",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Borussia Dortmund",
+     "rumourDate": "31/08/2021",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Bayern Munich",
+     "rumourDate": "18/06/2020",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "VfL Wolfsburg",
+     "rumourDate": "15/01/2020",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Southampton FC",
+     "rumourDate": "13/01/2020",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "RB Leipzig",
+     "rumourDate": "02/01/2020",
+     "transferProbability": "N/A"
+    }
+   ]
+  },
+  "relatedNews": [
+   {
+    "url": "https://www.transfermarkt.com/many-possible-debuts-in-the-nations-league-first-call-ups-from-bellingham-to-thuram/view/news/374403",
+    "date": "Nov 11, 2020",
+    "title": "Many possible debuts in the Nations League - First call-ups from Bellingham to Thuram"
+   },
+   {
+    "url": "https://www.transfermarkt.com/john-anthony-brooks-on-the-market-wolfsburg-looking-for-new-defender/view/news/365979",
+    "date": "Jul 20, 2020",
+    "title": "John Anthony Brooks on the market? - Wolfsburg looking for new defender"
+   },
+   {
+    "url": "https://www.transfermarkt.com/wolfsburg-shock-leverkusen-sargent-and-werder-goalless-against-gladbach/view/news/361363",
+    "date": "May 26, 2020",
+    "title": "Wolfsburg shock Leverkusen - Sargent and Werder goalless against Gladbach"
+   }
+  ],
+  "transfers": [
+   {
+    "to": "Fiorentina",
+    "fee": "€15.00M",
+    "from": "Lecce",
+    "type": "transfer",
+    "season": "24/25",
+    "marketValue": "€7.00M",
+    "transferDate": "Jul 19, 2024"
+   },
+   {
+    "to": "Lecce",
+    "fee": "€1.60M",
+    "from": "Wolfsburg",
+    "type": "transfer",
+    "season": "23/24",
+    "marketValue": "€4.00M",
+    "transferDate": "Jul 1, 2023"
+   },
+   {
+    "to": "Wolfsburg",
+    "fee": null,
+    "from": "Lecce",
+    "type": "end of loan",
+    "season": "22/23",
+    "marketValue": "€4.00M",
+    "transferDate": "Jun 30, 2023"
+   },
+   {
+    "to": "Lecce",
+    "fee": null,
+    "from": "Wolfsburg",
+    "type": "loan",
+    "season": "22/23",
+    "marketValue": "€6.00M",
+    "transferDate": "Aug 22, 2022"
+   },
+   {
+    "to": "Wolfsburg",
+    "fee": null,
+    "from": "Dortmund",
+    "type": "end of loan",
+    "season": "21/22",
+    "marketValue": "€6.00M",
+    "transferDate": "Jun 30, 2022"
+   },
+   {
+    "to": "Dortmund",
+    "fee": null,
+    "from": "Wolfsburg",
+    "type": "loan",
+    "season": "21/22",
+    "marketValue": "€8.50M",
+    "transferDate": "Aug 31, 2021"
+   },
+   {
+    "to": "Wolfsburg",
+    "fee": "€9.00M",
+    "from": "Salzburg",
+    "type": "transfer",
+    "season": "19/20",
+    "marketValue": "€6.00M",
+    "transferDate": "Jan 15, 2020"
+   },
+   {
+    "to": "Salzburg",
+    "fee": "€1.00M",
+    "from": "1860 Munich",
+    "type": "transfer",
+    "season": "17/18",
+    "marketValue": "€250.00K",
+    "transferDate": "Jul 1, 2017"
+   },
+   {
+    "to": "1860 Munich",
+    "fee": null,
+    "from": "1860 München II",
+    "type": "transfer",
+    "season": "16/17",
+    "marketValue": "€25.00K",
+    "transferDate": "Apr 16, 2017"
+   },
+   {
+    "to": "1860 München II",
+    "fee": null,
+    "from": "Ingolstadt U19",
+    "type": "transfer",
+    "season": "16/17",
+    "marketValue": "€25.00K",
+    "transferDate": "Aug 31, 2016"
+   },
+   {
+    "to": "Ingolstadt U19",
+    "fee": null,
+    "from": "Ingolstadt U17",
+    "type": "transfer",
+    "season": "14/15",
+    "marketValue": null,
+    "transferDate": "Jul 1, 2014"
+   },
+   {
+    "to": "Ingolstadt U17",
+    "fee": null,
+    "from": "B. München Yth.",
+    "type": "transfer",
+    "season": "13/14",
+    "marketValue": null,
+    "transferDate": "Jul 1, 2013"
+   },
+   {
+    "to": "B. München Yth.",
+    "fee": null,
+    "from": "Landshut Jgd.",
+    "type": "transfer",
+    "season": "10/11",
+    "marketValue": null,
+    "transferDate": "Jul 1, 2010"
+   }
+  ],
+  "marketValue": [
+   {
+    "age": 28,
+    "club": "ACF Fiorentina",
+    "value": 6500000,
+    "currency": "€",
+    "recordedDate": "29/05/2026"
+   },
+   {
+    "age": 28,
+    "club": "ACF Fiorentina",
+    "value": 7500000,
+    "currency": "€",
+    "recordedDate": "23/12/2025"
+   },
+   {
+    "age": 27,
+    "club": "ACF Fiorentina",
+    "value": 10000000,
+    "currency": "€",
+    "recordedDate": "17/06/2025"
+   },
+   {
+    "age": 27,
+    "club": "ACF Fiorentina",
+    "value": 10000000,
+    "currency": "€",
+    "recordedDate": "18/12/2024"
+   },
+   {
+    "age": 27,
+    "club": "ACF Fiorentina",
+    "value": 10000000,
+    "currency": "€",
+    "recordedDate": "18/10/2024"
+   },
+   {
+    "age": 26,
+    "club": "US Lecce",
+    "value": 7000000,
+    "currency": "€",
+    "recordedDate": "05/06/2024"
+   },
+   {
+    "age": 26,
+    "club": "US Lecce",
+    "value": 6000000,
+    "currency": "€",
+    "recordedDate": "20/12/2023"
+   },
+   {
+    "age": 25,
+    "club": "US Lecce",
+    "value": 4000000,
+    "currency": "€",
+    "recordedDate": "15/06/2023"
+   },
+   {
+    "age": 25,
+    "club": "US Lecce",
+    "value": 6000000,
+    "currency": "€",
+    "recordedDate": "11/11/2022"
+   },
+   {
+    "age": 24,
+    "club": "Borussia Dortmund",
+    "value": 6000000,
+    "currency": "€",
+    "recordedDate": "09/06/2022"
+   },
+   {
+    "age": 24,
+    "club": "Borussia Dortmund",
+    "value": 7500000,
+    "currency": "€",
+    "recordedDate": "22/12/2021"
+   },
+   {
+    "age": 23,
+    "club": "VfL Wolfsburg",
+    "value": 8500000,
+    "currency": "€",
+    "recordedDate": "09/06/2021"
+   },
+   {
+    "age": 23,
+    "club": "VfL Wolfsburg",
+    "value": 10000000,
+    "currency": "€",
+    "recordedDate": "10/02/2021"
+   },
+   {
+    "age": 22,
+    "club": "VfL Wolfsburg",
+    "value": 10000000,
+    "currency": "€",
+    "recordedDate": "08/07/2020"
+   },
+   {
+    "age": 22,
+    "club": "VfL Wolfsburg",
+    "value": 7000000,
+    "currency": "€",
+    "recordedDate": "08/04/2020"
+   },
+   {
+    "age": 22,
+    "club": "VfL Wolfsburg",
+    "value": 9000000,
+    "currency": "€",
+    "recordedDate": "11/02/2020"
+   },
+   {
+    "age": 22,
+    "club": "Red Bull Salzburg",
+    "value": 6000000,
+    "currency": "€",
+    "recordedDate": "16/12/2019"
+   },
+   {
+    "age": 21,
+    "club": "Red Bull Salzburg",
+    "value": 7500000,
+    "currency": "€",
+    "recordedDate": "03/06/2019"
+   },
+   {
+    "age": 21,
+    "club": "Red Bull Salzburg",
+    "value": 7500000,
+    "currency": "€",
+    "recordedDate": "19/12/2018"
+   },
+   {
+    "age": 21,
+    "club": "Red Bull Salzburg",
+    "value": 5000000,
+    "currency": "€",
+    "recordedDate": "25/10/2018"
+   },
+   {
+    "age": 20,
+    "club": "Red Bull Salzburg",
+    "value": 2500000,
+    "currency": "€",
+    "recordedDate": "14/06/2018"
+   },
+   {
+    "age": 20,
+    "club": "Red Bull Salzburg",
+    "value": 1500000,
+    "currency": "€",
+    "recordedDate": "02/01/2018"
+   },
+   {
+    "age": 20,
+    "club": "Red Bull Salzburg",
+    "value": 900000,
+    "currency": "€",
+    "recordedDate": "11/10/2017"
+   },
+   {
+    "age": 19,
+    "club": "Red Bull Salzburg",
+    "value": 500000,
+    "currency": "€",
+    "recordedDate": "02/07/2017"
+   },
+   {
+    "age": 19,
+    "club": "TSV 1860 Munich",
+    "value": 250000,
+    "currency": "€",
+    "recordedDate": "27/06/2017"
+   },
+   {
+    "age": 18,
+    "club": "FC Ingolstadt 04 U19",
+    "value": 25000,
+    "currency": "€",
+    "recordedDate": "23/08/2016"
+   }
+  ],
+  "injuries": [
+   {
+    "reason": "Thigh problems",
+    "season": "2025",
+    "toDate": "22.12.2024",
+    "fromDate": "07.12.2024",
+    "missedGames": 3,
+    "absentDurationInDays": 16
+   },
+   {
+    "reason": "Muscle injury",
+    "season": "2025",
+    "toDate": "02.11.2024",
+    "fromDate": "21.09.2024",
+    "missedGames": 10,
+    "absentDurationInDays": 43
+   },
+   {
+    "reason": "Ankle surgery",
+    "season": "2023",
+    "toDate": "05.05.2023",
+    "fromDate": "23.12.2022",
+    "missedGames": 19,
+    "absentDurationInDays": 134
+   },
+   {
+    "reason": "Mononucleation",
+    "season": "2021",
+    "toDate": "31.10.2020",
+    "fromDate": "27.08.2020",
+    "missedGames": 9,
+    "absentDurationInDays": 66
+   },
+   {
+    "reason": "Stomach flu",
+    "season": "2020",
+    "toDate": "18.10.2019",
+    "fromDate": "04.10.2019",
+    "missedGames": 1,
+    "absentDurationInDays": 15
+   },
+   {
+    "reason": "Hamstring injury",
+    "season": "2020",
+    "toDate": "27.09.2019",
+    "fromDate": "16.08.2019",
+    "missedGames": 7,
+    "absentDurationInDays": 43
+   },
+   {
+    "reason": "Hamstring injury",
+    "season": "2020",
+    "toDate": "26.07.2019",
+    "fromDate": "19.07.2019",
+    "missedGames": 1,
+    "absentDurationInDays": 8
+   },
+   {
+    "reason": "Torn muscle fiber",
+    "season": "2019",
+    "toDate": "06.07.2019",
+    "fromDate": "14.04.2019",
+    "missedGames": 8,
+    "absentDurationInDays": 84
+   },
+   {
+    "reason": "Torn muscle bundle",
+    "season": "2019",
+    "toDate": "13.04.2019",
+    "fromDate": "22.02.2019",
+    "missedGames": 9,
+    "absentDurationInDays": 51
+   },
+   {
+    "reason": "Ill",
+    "season": "2018",
+    "toDate": "25.02.2018",
+    "fromDate": "16.02.2018",
+    "missedGames": 2,
+    "absentDurationInDays": 10
+   },
+   {
+    "reason": "Knee injury",
+    "season": "2018",
+    "toDate": "09.02.2018",
+    "fromDate": "15.12.2017",
+    "missedGames": 2,
+    "absentDurationInDays": 57
+   },
+   {
+    "reason": "Adductor injury",
+    "season": "2018",
+    "toDate": "04.11.2017",
+    "fromDate": "04.09.2017",
+    "missedGames": 15,
+    "absentDurationInDays": 62
+   }
+  ]
+ }
+]

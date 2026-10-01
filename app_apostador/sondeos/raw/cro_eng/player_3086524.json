@@ -1,0 +1,406 @@
+[
+ {
+  "id": 3086524,
+  "logo": null,
+  "name": "M. Rogers",
+  "fullName": "Morgan Elliot Rogers",
+  "profile": {
+   "club": {
+    "current": "Chelsea FC",
+    "joinedAt": "21/07/2026",
+    "contractExpiry": "30/06/2033",
+    "latestContractExtension": null
+   },
+   "foot": "right",
+   "height": "1,87 m",
+   "fullName": "Morgan Rogers",
+   "position": {
+    "main": "Attacking Midfield",
+    "secondary": "Right Winger, Left Winger"
+   },
+   "birthDate": "26/07/2002",
+   "deathDate": null,
+   "birthPlace": "Halesowen",
+   "citizenship": "England, Jamaica"
+  },
+  "rumours": {
+   "current": [
+    {
+     "club": "Arsenal FC",
+     "rumourDate": "26/06/2026",
+     "transferProbability": "74.82%"
+    },
+    {
+     "club": "Chelsea FC",
+     "rumourDate": "31/05/2026",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Paris Saint-Germain",
+     "rumourDate": "31/05/2026",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Manchester United",
+     "rumourDate": "31/05/2026",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Bayern Munich",
+     "rumourDate": "10/04/2026",
+     "transferProbability": "N/A"
+    }
+   ],
+   "historical": [
+    {
+     "club": "Chelsea FC",
+     "rumourDate": "20/07/2026",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Arsenal FC",
+     "rumourDate": "17/07/2026",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Paris Saint-Germain",
+     "rumourDate": "31/05/2026",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Manchester United",
+     "rumourDate": "31/05/2026",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Bayern Munich",
+     "rumourDate": "10/04/2026",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Manchester City",
+     "rumourDate": "18/04/2025",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Aston Villa",
+     "rumourDate": "31/01/2024",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Middlesbrough FC",
+     "rumourDate": "06/07/2023",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "AFC Bournemouth",
+     "rumourDate": "24/08/2021",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Manchester City",
+     "rumourDate": "01/08/2019",
+     "transferProbability": "N/A"
+    }
+   ]
+  },
+  "relatedNews": [
+   {
+    "url": "https://www.transfermarkt.com/barcelona-1st-chelsea-5th-the-most-lethal-attacking-trios-in-europes-top-five-leagues/view/news/487380",
+    "date": "Sep 19, 2026",
+    "title": "Barcelona 1st, Chelsea 5th: The most lethal attacking trios in Europe's top five leagues"
+   },
+   {
+    "url": "https://www.transfermarkt.com/all-time-most-expensive-xis-for-each-premier-league-big-six-team-revealed/view/news/484448",
+    "date": "Sep 14, 2026",
+    "title": "All-time most expensive XIs for each Premier League 'Big Six' team revealed"
+   },
+   {
+    "url": "https://www.transfermarkt.com/palmer-yildiz-amp-co-top-20-most-valuable-stars-not-playing-in-champions-league/view/news/486971",
+    "date": "Sep 11, 2026",
+    "title": "Palmer, Yildiz & Co - Top 20 most valuable stars not playing in Champions League"
+   },
+   {
+    "url": "https://www.transfermarkt.com/saka-guler-amp-co-the-20-most-valuable-players-snubbed-in-2026-ballon-dor-shortlist/view/news/486828",
+    "date": "Sep 9, 2026",
+    "title": "Saka, Guler & Co - The 20 most valuable players snubbed in 2026 Ballon d’Or shortlist"
+   },
+   {
+    "url": "https://www.transfermarkt.com/-euro-435m-market-value-arsenals-blueprint-to-premier-league-success-after-chelsea-win/view/news/486690",
+    "date": "Sep 6, 2026",
+    "title": "€435m market value - Arsenal's blueprint to Premier League success after Chelsea win"
+   },
+   {
+    "url": "https://www.transfermarkt.com/brazil-4th-germany-11th-nigeria-19th-the-most-expensive-nationalities-this-summer/view/news/486524",
+    "date": "Sep 4, 2026",
+    "title": "Brazil 4th, Germany 11th, Nigeria 19th - the most expensive nationalities this summer"
+   },
+   {
+    "url": "https://www.transfermarkt.com/barcola-4th-rodri-20th-cucurella-30th-top-50-most-expensive-transfers-this-summer-ranked/view/news/483667",
+    "date": "Sep 4, 2026",
+    "title": "Barcola 4th, Rodri 20th, Cucurella 30th - Top 50 most expensive transfers this summer ranked"
+   },
+   {
+    "url": "https://www.transfermarkt.com/ten-best-premier-league-summer-transfers-ranked-baleba-martinez-sangare-amp-co/view/news/486528",
+    "date": "Sep 3, 2026",
+    "title": "Ten best Premier League summer transfers ranked: Baleba, Martinez, Sangare & Co"
+   },
+   {
+    "url": "https://www.transfermarkt.com/man-city-smash-liverpools-record-spend-in-one-window-top-10-revealed-with-chelsea-prominent/view/news/486042",
+    "date": "Sep 2, 2026",
+    "title": "Man City smash Liverpool's record spend in one window: Top 10 revealed with Chelsea prominent"
+   },
+   {
+    "url": "https://www.transfermarkt.com/chelsea-break-record-as-villa-go-2nd-amp-man-city-4th-highest-transfer-sales-in-a-single-window/view/news/485332",
+    "date": "Sep 2, 2026",
+    "title": "Chelsea break record, as Villa go 2nd & Man City 4th - Highest transfer sales in a single window"
+   }
+  ],
+  "transfers": [
+   {
+    "to": "Chelsea",
+    "fee": "€138.00M",
+    "from": "Aston Villa",
+    "type": "transfer",
+    "season": "26/27",
+    "marketValue": "€90.00M",
+    "transferDate": "Jul 21, 2026"
+   },
+   {
+    "to": "Aston Villa",
+    "fee": "€33.00M",
+    "from": "Middlesbrough",
+    "type": "transfer",
+    "season": "23/24",
+    "marketValue": "€2.80M",
+    "transferDate": "Feb 1, 2024"
+   },
+   {
+    "to": "Middlesbrough",
+    "fee": "€1.20M",
+    "from": "Man City U21",
+    "type": "transfer",
+    "season": "23/24",
+    "marketValue": "€1.80M",
+    "transferDate": "Jul 7, 2023"
+   },
+   {
+    "to": "Man City U21",
+    "fee": null,
+    "from": "Blackpool",
+    "type": "end of loan",
+    "season": "22/23",
+    "marketValue": "€1.80M",
+    "transferDate": "May 31, 2023"
+   },
+   {
+    "to": "Blackpool",
+    "fee": null,
+    "from": "Man City U21",
+    "type": "loan",
+    "season": "22/23",
+    "marketValue": "€1.80M",
+    "transferDate": "Jan 4, 2023"
+   },
+   {
+    "to": "Man City U21",
+    "fee": null,
+    "from": "Bournemouth",
+    "type": "end of loan",
+    "season": "21/22",
+    "marketValue": "€1.80M",
+    "transferDate": "May 31, 2022"
+   },
+   {
+    "to": "Bournemouth",
+    "fee": null,
+    "from": "Man City U21",
+    "type": "loan",
+    "season": "21/22",
+    "marketValue": "€1.30M",
+    "transferDate": "Aug 23, 2021"
+   },
+   {
+    "to": "Man City U21",
+    "fee": null,
+    "from": "Lincoln City",
+    "type": "end of loan",
+    "season": "20/21",
+    "marketValue": "€1.30M",
+    "transferDate": "May 31, 2021"
+   },
+   {
+    "to": "Lincoln City",
+    "fee": null,
+    "from": "Man City U21",
+    "type": "loan",
+    "season": "20/21",
+    "marketValue": "€1.30M",
+    "transferDate": "Jan 4, 2021"
+   },
+   {
+    "to": "Man City U21",
+    "fee": "€4.40M",
+    "from": "West Brom U18",
+    "type": "transfer",
+    "season": "19/20",
+    "marketValue": null,
+    "transferDate": "Aug 1, 2019"
+   },
+   {
+    "to": "West Brom U18",
+    "fee": null,
+    "from": "West Brom Yth.",
+    "type": "transfer",
+    "season": "17/18",
+    "marketValue": null,
+    "transferDate": "Jul 1, 2017"
+   }
+  ],
+  "marketValue": [
+   {
+    "age": 23,
+    "club": "Chelsea FC",
+    "value": 110000000,
+    "currency": "€",
+    "recordedDate": "22/07/2026"
+   },
+   {
+    "age": 23,
+    "club": "Aston Villa",
+    "value": 90000000,
+    "currency": "€",
+    "recordedDate": "03/06/2026"
+   },
+   {
+    "age": 23,
+    "club": "Aston Villa",
+    "value": 80000000,
+    "currency": "€",
+    "recordedDate": "09/03/2026"
+   },
+   {
+    "age": 23,
+    "club": "Aston Villa",
+    "value": 70000000,
+    "currency": "€",
+    "recordedDate": "09/12/2025"
+   },
+   {
+    "age": 23,
+    "club": "Aston Villa",
+    "value": 65000000,
+    "currency": "€",
+    "recordedDate": "17/10/2025"
+   },
+   {
+    "age": 22,
+    "club": "Aston Villa",
+    "value": 55000000,
+    "currency": "€",
+    "recordedDate": "30/05/2025"
+   },
+   {
+    "age": 22,
+    "club": "Aston Villa",
+    "value": 50000000,
+    "currency": "€",
+    "recordedDate": "18/03/2025"
+   },
+   {
+    "age": 22,
+    "club": "Aston Villa",
+    "value": 40000000,
+    "currency": "€",
+    "recordedDate": "16/12/2024"
+   },
+   {
+    "age": 22,
+    "club": "Aston Villa",
+    "value": 22000000,
+    "currency": "€",
+    "recordedDate": "01/10/2024"
+   },
+   {
+    "age": 21,
+    "club": "Aston Villa",
+    "value": 15000000,
+    "currency": "€",
+    "recordedDate": "27/05/2024"
+   },
+   {
+    "age": 21,
+    "club": "Aston Villa",
+    "value": 8000000,
+    "currency": "€",
+    "recordedDate": "14/03/2024"
+   },
+   {
+    "age": 21,
+    "club": "Middlesbrough FC",
+    "value": 2800000,
+    "currency": "€",
+    "recordedDate": "21/12/2023"
+   },
+   {
+    "age": 21,
+    "club": "Middlesbrough FC",
+    "value": 2200000,
+    "currency": "€",
+    "recordedDate": "27/10/2023"
+   },
+   {
+    "age": 20,
+    "club": "Manchester City U21",
+    "value": 1800000,
+    "currency": "€",
+    "recordedDate": "01/06/2023"
+   },
+   {
+    "age": 20,
+    "club": "Blackpool FC",
+    "value": 1800000,
+    "currency": "€",
+    "recordedDate": "24/03/2023"
+   },
+   {
+    "age": 19,
+    "club": "AFC Bournemouth",
+    "value": 1800000,
+    "currency": "€",
+    "recordedDate": "13/05/2022"
+   },
+   {
+    "age": 19,
+    "club": "AFC Bournemouth",
+    "value": 1800000,
+    "currency": "€",
+    "recordedDate": "24/11/2021"
+   },
+   {
+    "age": 17,
+    "club": "Manchester City U23",
+    "value": 1300000,
+    "currency": "€",
+    "recordedDate": "08/04/2020"
+   },
+   {
+    "age": 17,
+    "club": "Manchester City U23",
+    "value": 1500000,
+    "currency": "€",
+    "recordedDate": "10/12/2019"
+   }
+  ],
+  "injuries": [
+   {
+    "reason": "Hamstring injury",
+    "season": "2024",
+    "toDate": "01.06.2024",
+    "fromDate": "06.05.2024",
+    "missedGames": 3,
+    "absentDurationInDays": 27
+   }
+  ]
+ }
+]

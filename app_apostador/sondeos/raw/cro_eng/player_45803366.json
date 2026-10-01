@@ -1,0 +1,292 @@
+[
+ {
+  "id": 45803366,
+  "logo": null,
+  "name": "L. Hall",
+  "fullName": "Lewis Kieran Hall",
+  "profile": {
+   "club": {
+    "current": "Newcastle United",
+    "joinedAt": "01/07/2024",
+    "contractExpiry": "-",
+    "latestContractExtension": "11/09/2026"
+   },
+   "foot": "left",
+   "height": "1,79 m",
+   "fullName": "Lewis Hall",
+   "position": {
+    "main": "Left-Back",
+    "secondary": "Left Midfield, Central Midfield"
+   },
+   "birthDate": "08/09/2004",
+   "deathDate": null,
+   "birthPlace": "Slough",
+   "citizenship": "England"
+  },
+  "rumours": {
+   "current": [
+    {
+     "club": "Manchester United",
+     "rumourDate": "02/08/2026",
+     "transferProbability": "N/A"
+    }
+   ],
+   "historical": [
+    {
+     "club": "Manchester United",
+     "rumourDate": "02/08/2026",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Newcastle United",
+     "rumourDate": "01/07/2024",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Newcastle United",
+     "rumourDate": "01/07/2024",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Borussia Dortmund",
+     "rumourDate": "08/05/2024",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Crystal Palace",
+     "rumourDate": "05/08/2023",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Crystal Palace",
+     "rumourDate": "30/06/2023",
+     "transferProbability": "N/A"
+    }
+   ]
+  },
+  "relatedNews": [
+   {
+    "url": "https://www.transfermarkt.com/myles-lewis-skelly-top-five-man-united-left-back-alternatives-to-lewis-hall-ranked/view/news/484464",
+    "date": "Aug 11, 2026",
+    "title": "Myles Lewis-Skelly top - Five Man United left-back alternatives to Lewis Hall ranked"
+   },
+   {
+    "url": "https://www.transfermarkt.com/hall-seys-amp-co-five-chelsea-left-back-targets-to-replace-marc-cucurella-under-euro-45-million/view/news/481351",
+    "date": "Jun 18, 2026",
+    "title": "Hall, Seys & Co: Five Chelsea left-back targets to replace Marc Cucurella under €45 million"
+   },
+   {
+    "url": "https://www.transfermarkt.com/england-squad-announced-as-mainoo-included-amp-alexander-arnold-left-out/view/news/476951",
+    "date": "Mar 20, 2026",
+    "title": "England squad announced as Mainoo included & Alexander-Arnold left out"
+   },
+   {
+    "url": "https://www.transfermarkt.com/haalands-tyne-wear-misery-man-city-blanks-again-vs-newcastle-but-oreilly-double-seals-win/view/news/475686",
+    "date": "Feb 21, 2026",
+    "title": "Haaland's Tyne-Wear misery - Man City blanks again vs Newcastle but O'Reilly double seals win"
+   },
+   {
+    "url": "https://www.transfermarkt.com/rice-wilson-semenyo-amp-co-our-writers-pick-their-premier-league-team-of-the-seasons-so-far/view/news/474482",
+    "date": "Jan 31, 2026",
+    "title": "Rice, Wilson, Semenyo & Co. - Our writers pick their Premier League Team of the Seasons so far"
+   },
+   {
+    "url": "https://www.transfermarkt.com/tonali-isak-and-now-elanga-why-newcastle-rarely-miss-with-their-big-money-signings/view/news/456854",
+    "date": "Jul 11, 2025",
+    "title": "Tonali, Isak and now Elanga? Why Newcastle rarely miss with their big-money signings"
+   },
+   {
+    "url": "https://www.transfermarkt.com/which-clubs-have-earned-the-most-from-player-sales-in-the-last-10-seasons-top-20-ranked/view/news/449910",
+    "date": "Feb 9, 2025",
+    "title": "Which clubs have earned the most from player sales in the last 10 seasons? Top 20 ranked"
+   },
+   {
+    "url": "https://www.transfermarkt.com/englands-left-back-conundrum-hall-lewis-or-colwill-a-three-lions-position-up-for-grabs/view/news/446195",
+    "date": "Nov 14, 2024",
+    "title": "England's left-back conundrum - Hall, Lewis or Colwill? A Three Lions position up for grabs"
+   },
+   {
+    "url": "https://www.transfermarkt.com/-euro-75m-difference-chelsea-academy-xi-more-valuable-than-enzo-marescas-current-side/view/news/441902",
+    "date": "Aug 8, 2024",
+    "title": "€75m difference - Chelsea academy XI more valuable than Enzo Maresca's current side"
+   },
+   {
+    "url": "https://www.transfermarkt.com/all-action-at-st-james-park-newcastle-complete-euro-79-8m-combined-sale-of-anderson-amp-minteh/view/news/439940",
+    "date": "Jul 1, 2024",
+    "title": "All action at St James Park - Newcastle complete €79.8m combined sale of Anderson & Minteh"
+   },
+   {
+    "url": "https://www.transfermarkt.com/mitchell-chilwell-amp-co-the-back-up-left-backs-southgate-could-have-taken-to-euro-2024/view/news/439553",
+    "date": "Jun 24, 2024",
+    "title": "Mitchell, Chilwell & Co - The back-up left-backs Southgate could have taken to Euro 2024"
+   }
+  ],
+  "transfers": [
+   {
+    "to": "Newcastle",
+    "fee": "€33.00M",
+    "from": "Chelsea",
+    "type": "transfer",
+    "season": "24/25",
+    "marketValue": "€18.00M",
+    "transferDate": "Jul 1, 2024"
+   },
+   {
+    "to": "Chelsea",
+    "fee": null,
+    "from": "Newcastle",
+    "type": "end of loan",
+    "season": "23/24",
+    "marketValue": "€18.00M",
+    "transferDate": "Jun 30, 2024"
+   },
+   {
+    "to": "Newcastle",
+    "fee": null,
+    "from": "Chelsea",
+    "type": "loan",
+    "season": "23/24",
+    "marketValue": "€10.00M",
+    "transferDate": "Aug 22, 2023"
+   },
+   {
+    "to": "Chelsea",
+    "fee": null,
+    "from": "Chelsea U21",
+    "type": "transfer",
+    "season": "23/24",
+    "marketValue": "€10.00M",
+    "transferDate": "Jul 1, 2023"
+   },
+   {
+    "to": "Chelsea U21",
+    "fee": null,
+    "from": "Chelsea U18",
+    "type": "transfer",
+    "season": "21/22",
+    "marketValue": null,
+    "transferDate": "Jan 1, 2022"
+   },
+   {
+    "to": "Chelsea U18",
+    "fee": null,
+    "from": "Chelsea Youth",
+    "type": "transfer",
+    "season": "20/21",
+    "marketValue": null,
+    "transferDate": "Jul 1, 2020"
+   }
+  ],
+  "marketValue": [
+   {
+    "age": 21,
+    "club": "Newcastle United",
+    "value": 40000000,
+    "currency": "€",
+    "recordedDate": "03/06/2026"
+   },
+   {
+    "age": 21,
+    "club": "Newcastle United",
+    "value": 35000000,
+    "currency": "€",
+    "recordedDate": "09/03/2026"
+   },
+   {
+    "age": 21,
+    "club": "Newcastle United",
+    "value": 32000000,
+    "currency": "€",
+    "recordedDate": "09/12/2025"
+   },
+   {
+    "age": 20,
+    "club": "Newcastle United",
+    "value": 32000000,
+    "currency": "€",
+    "recordedDate": "30/05/2025"
+   },
+   {
+    "age": 20,
+    "club": "Newcastle United",
+    "value": 30000000,
+    "currency": "€",
+    "recordedDate": "18/03/2025"
+   },
+   {
+    "age": 20,
+    "club": "Newcastle United",
+    "value": 25000000,
+    "currency": "€",
+    "recordedDate": "16/12/2024"
+   },
+   {
+    "age": 20,
+    "club": "Newcastle United",
+    "value": 22000000,
+    "currency": "€",
+    "recordedDate": "01/10/2024"
+   },
+   {
+    "age": 19,
+    "club": "Newcastle United",
+    "value": 18000000,
+    "currency": "€",
+    "recordedDate": "27/05/2024"
+   },
+   {
+    "age": 19,
+    "club": "Newcastle United",
+    "value": 18000000,
+    "currency": "€",
+    "recordedDate": "19/12/2023"
+   },
+   {
+    "age": 19,
+    "club": "Newcastle United",
+    "value": 18000000,
+    "currency": "€",
+    "recordedDate": "09/10/2023"
+   },
+   {
+    "age": 18,
+    "club": "Chelsea FC U21",
+    "value": 10000000,
+    "currency": "€",
+    "recordedDate": "20/06/2023"
+   },
+   {
+    "age": 18,
+    "club": "Chelsea FC U21",
+    "value": 8000000,
+    "currency": "€",
+    "recordedDate": "16/03/2023"
+   },
+   {
+    "age": 18,
+    "club": "Chelsea FC U21",
+    "value": 5000000,
+    "currency": "€",
+    "recordedDate": "16/01/2023"
+   }
+  ],
+  "injuries": [
+   {
+    "reason": "Hamstring injury",
+    "season": "2026",
+    "toDate": "02.11.2025",
+    "fromDate": "01.10.2025",
+    "missedGames": 9,
+    "absentDurationInDays": 33
+   },
+   {
+    "reason": "Ankle surgery",
+    "season": "2025",
+    "toDate": "02.08.2025",
+    "fromDate": "27.02.2025",
+    "missedGames": 25,
+    "absentDurationInDays": 157
+   }
+  ]
+ }
+]

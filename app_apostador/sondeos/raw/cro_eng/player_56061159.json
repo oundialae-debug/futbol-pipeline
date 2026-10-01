@@ -1,0 +1,250 @@
+[
+ {
+  "id": 56061159,
+  "logo": null,
+  "name": "Petar Sučić",
+  "fullName": "Petar Sučić",
+  "profile": {
+   "club": {
+    "current": "Inter Milan",
+    "joinedAt": "01/06/2025",
+    "contractExpiry": "30/06/2030",
+    "latestContractExtension": null
+   },
+   "foot": "right",
+   "height": "1,83 m",
+   "fullName": "Petar Sučić",
+   "position": {
+    "main": "Central Midfield",
+    "secondary": "Defensive Midfield"
+   },
+   "birthDate": "25/10/2003",
+   "deathDate": null,
+   "birthPlace": "Livno",
+   "citizenship": "Croatia, Bosnia-Herzegovina"
+  },
+  "rumours": {
+   "current": [],
+   "historical": [
+    {
+     "club": "Inter Milan",
+     "rumourDate": "10/02/2025",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Borussia Dortmund",
+     "rumourDate": "19/01/2025",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "ACF Fiorentina",
+     "rumourDate": "27/11/2024",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Atlético de Madrid",
+     "rumourDate": "13/11/2024",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Como 1907",
+     "rumourDate": "28/07/2024",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "HSK Zrinjski Mostar",
+     "rumourDate": "12/06/2022",
+     "transferProbability": "N/A"
+    }
+   ]
+  },
+  "relatedNews": [
+   {
+    "url": "https://www.transfermarkt.com/-euro-285m-market-value-chelseas-five-man-shortlist-for-xabi-alonso-after-granit-xhaka-snub/view/news/482396",
+    "date": "Jul 4, 2026",
+    "title": "€285m market value - Chelsea's five-man shortlist for Xabi Alonso after Granit Xhaka snub"
+   },
+   {
+    "url": "https://www.transfermarkt.com/haaland-yildiz-amp-co-the-30-world-cup-mvps-not-playing-for-their-country-of-birth/view/news/481027",
+    "date": "Jun 14, 2026",
+    "title": "Haaland, Yıldız  & Co. - The 30 World Cup MVPs not playing for their country of birth"
+   },
+   {
+    "url": "https://www.transfermarkt.com/serie-a-market-values-nico-paz-hits-new-heights-christian-pulisic-amp-rafael-leao-drop/view/news/479884",
+    "date": "May 29, 2026",
+    "title": "Serie A market values: Nico Paz hits new heights - Christian Pulisic & Rafael Leão drop"
+   },
+   {
+    "url": "https://www.transfermarkt.com/how-inter-milan-approach-new-era-amp-transfer-approach-after-incredible-inzaghi-success/view/news/460328",
+    "date": "Sep 12, 2025",
+    "title": "How Inter Milan approach new era & transfer approach after incredible Inzaghi success"
+   },
+   {
+    "url": "https://www.transfermarkt.com/who-is-pio-esposito-meet-the-inter-milan-wonderkid-wanted-by-quot-half-of-serie-a-quot-/view/news/456149",
+    "date": "Jun 28, 2025",
+    "title": "Who is Pio Esposito? Meet the Inter Milan wonderkid wanted by \"half of Serie A\""
+   }
+  ],
+  "transfers": [
+   {
+    "to": "Inter",
+    "fee": "€14.60M",
+    "from": "Dinamo Zagreb",
+    "type": "transfer",
+    "season": "25/26",
+    "marketValue": "€14.00M",
+    "transferDate": "Jun 1, 2025"
+   },
+   {
+    "to": "Dinamo Zagreb",
+    "fee": null,
+    "from": "Zrinjski Mostar",
+    "type": "end of loan",
+    "season": "22/23",
+    "marketValue": "€400.00K",
+    "transferDate": "Jun 30, 2023"
+   },
+   {
+    "to": "Zrinjski Mostar",
+    "fee": null,
+    "from": "Dinamo Zagreb",
+    "type": "loan",
+    "season": "22/23",
+    "marketValue": "€150.00K",
+    "transferDate": "Jul 2, 2022"
+   },
+   {
+    "to": "Dinamo Zagreb",
+    "fee": null,
+    "from": "Din. Zagreb II",
+    "type": "transfer",
+    "season": "22/23",
+    "marketValue": "€150.00K",
+    "transferDate": "Jul 1, 2022"
+   },
+   {
+    "to": "Din. Zagreb II",
+    "fee": "€200.00K",
+    "from": "Zr. Mostar U19",
+    "type": "transfer",
+    "season": "21/22",
+    "marketValue": null,
+    "transferDate": "Jan 19, 2022"
+   },
+   {
+    "to": "Zr. Mostar U19",
+    "fee": null,
+    "from": "Zr. Mostar U17",
+    "type": "transfer",
+    "season": "20/21",
+    "marketValue": null,
+    "transferDate": "Jul 1, 2020"
+   },
+   {
+    "to": "Zr. Mostar U17",
+    "fee": null,
+    "from": "Iskra U19",
+    "type": "transfer",
+    "season": "18/19",
+    "marketValue": null,
+    "transferDate": "Feb 15, 2019"
+   }
+  ],
+  "marketValue": [
+   {
+    "age": 22,
+    "club": "Inter Milan",
+    "value": 45000000,
+    "currency": "€",
+    "recordedDate": "22/07/2026"
+   },
+   {
+    "age": 22,
+    "club": "Inter Milan",
+    "value": 40000000,
+    "currency": "€",
+    "recordedDate": "29/05/2026"
+   },
+   {
+    "age": 22,
+    "club": "Inter Milan",
+    "value": 30000000,
+    "currency": "€",
+    "recordedDate": "23/12/2025"
+   },
+   {
+    "age": 21,
+    "club": "Inter Milan",
+    "value": 20000000,
+    "currency": "€",
+    "recordedDate": "07/10/2025"
+   },
+   {
+    "age": 21,
+    "club": "Inter Milan",
+    "value": 14000000,
+    "currency": "€",
+    "recordedDate": "09/06/2025"
+   },
+   {
+    "age": 21,
+    "club": "GNK Dinamo Zagreb",
+    "value": 14000000,
+    "currency": "€",
+    "recordedDate": "31/03/2025"
+   },
+   {
+    "age": 21,
+    "club": "GNK Dinamo Zagreb",
+    "value": 12000000,
+    "currency": "€",
+    "recordedDate": "23/12/2024"
+   },
+   {
+    "age": 20,
+    "club": "GNK Dinamo Zagreb",
+    "value": 3000000,
+    "currency": "€",
+    "recordedDate": "04/06/2024"
+   },
+   {
+    "age": 20,
+    "club": "GNK Dinamo Zagreb",
+    "value": 1000000,
+    "currency": "€",
+    "recordedDate": "18/12/2023"
+   },
+   {
+    "age": 19,
+    "club": "HSK Zrinjski Mostar",
+    "value": 400000,
+    "currency": "€",
+    "recordedDate": "02/06/2023"
+   },
+   {
+    "age": 19,
+    "club": "HSK Zrinjski Mostar",
+    "value": 200000,
+    "currency": "€",
+    "recordedDate": "28/11/2022"
+   },
+   {
+    "age": 18,
+    "club": "GNK Dinamo Zagreb II",
+    "value": 150000,
+    "currency": "€",
+    "recordedDate": "14/06/2022"
+   }
+  ],
+  "injuries": [
+   {
+    "reason": "Metatarsal fracture",
+    "season": "2025",
+    "toDate": "10.02.2025",
+    "fromDate": "21.11.2024",
+    "missedGames": 12,
+    "absentDurationInDays": 82
+   }
+  ]
+ }
+]

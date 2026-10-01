@@ -1,0 +1,706 @@
+[
+ {
+  "id": 210259,
+  "logo": null,
+  "name": "D. Livaković",
+  "fullName": "Dominik Livaković",
+  "profile": {
+   "club": {
+    "current": "FC Barcelona",
+    "joinedAt": "27/08/2026",
+    "contractExpiry": "30/06/2030",
+    "latestContractExtension": null
+   },
+   "foot": "right",
+   "height": "1,88 m",
+   "fullName": "Dominik Livakovic",
+   "position": {
+    "main": "Goalkeeper",
+    "secondary": null
+   },
+   "birthDate": "09/01/1995",
+   "deathDate": null,
+   "birthPlace": "Zadar",
+   "citizenship": "Croatia"
+  },
+  "rumours": {
+   "current": [
+    {
+     "club": "FC Barcelona",
+     "rumourDate": "21/08/2026",
+     "transferProbability": "71.37%"
+    }
+   ],
+   "historical": [
+    {
+     "club": "Ajax Amsterdam",
+     "rumourDate": "23/12/2022",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Chelsea FC",
+     "rumourDate": "22/12/2022",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Juventus FC",
+     "rumourDate": "20/12/2022",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Bayern Munich",
+     "rumourDate": "20/12/2022",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Wolverhampton Wanderers",
+     "rumourDate": "06/07/2021",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "AS Roma",
+     "rumourDate": "08/06/2021",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "LOSC Lille",
+     "rumourDate": "01/06/2021",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Stade Rennais FC",
+     "rumourDate": "21/09/2020",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Montpellier HSC",
+     "rumourDate": "16/07/2019",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "FC Porto",
+     "rumourDate": "11/05/2019",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "SV Werder Bremen",
+     "rumourDate": "01/05/2018",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Al-Nassr FC",
+     "rumourDate": "14/03/2024",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Unknown",
+     "rumourDate": "10/11/2023",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Fenerbahce",
+     "rumourDate": "24/08/2023",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "SS Lazio",
+     "rumourDate": "24/08/2023",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "UD Almería",
+     "rumourDate": "16/08/2023",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Sevilla FC",
+     "rumourDate": "02/08/2023",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Celtic FC",
+     "rumourDate": "26/07/2023",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Al-Nassr FC",
+     "rumourDate": "21/07/2023",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Villarreal CF",
+     "rumourDate": "01/07/2023",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "ACF Fiorentina",
+     "rumourDate": "01/07/2023",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Real Madrid",
+     "rumourDate": "23/05/2023",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Galatasaray",
+     "rumourDate": "26/05/2023",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Manchester United",
+     "rumourDate": "26/04/2023",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Nottingham Forest",
+     "rumourDate": "19/01/2023",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Leeds United",
+     "rumourDate": "26/12/2022",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "FC Barcelona",
+     "rumourDate": "26/08/2026",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Beşiktaş JK",
+     "rumourDate": "26/06/2026",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Olympiacos Piraeus",
+     "rumourDate": "24/07/2026",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "GNK Dinamo Zagreb",
+     "rumourDate": "29/01/2026",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Ajax Amsterdam",
+     "rumourDate": "28/12/2025",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Genoa CFC",
+     "rumourDate": "27/12/2025",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Girona FC",
+     "rumourDate": "01/09/2025",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Dynamo Kyiv",
+     "rumourDate": "19/08/2025",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "West Ham United",
+     "rumourDate": "01/09/2025",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "AC Milan",
+     "rumourDate": "22/07/2025",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Leeds United",
+     "rumourDate": "09/07/2025",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "RCD Espanyol Barcelona",
+     "rumourDate": "02/06/2025",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Bayern Munich",
+     "rumourDate": "30/12/2024",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Celtic FC",
+     "rumourDate": "26/06/2024",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Ipswich Town",
+     "rumourDate": "16/06/2024",
+     "transferProbability": "N/A"
+    }
+   ]
+  },
+  "relatedNews": [
+   {
+    "url": "https://www.transfermarkt.com/galatasaray-vs-fenerbahce-the-most-valuable-combined-xi-ahead-of-historic-derby/view/news/450621",
+    "date": "Feb 24, 2025",
+    "title": "Galatasaray vs Fenerbahce - The most valuable combined XI ahead of historic derby"
+   },
+   {
+    "url": "https://www.transfermarkt.com/ballon-dor-messi-and-haaland-the-favourites-ronaldo-not-nominated/view/news/427697",
+    "date": "Sep 8, 2023",
+    "title": "Ballon d'Or: Messi and Haaland the favourites - Ronaldo not nominated"
+   },
+   {
+    "url": "https://www.transfermarkt.com/market-values-croatia-champions-dinamo-zagreb-drop-sutalo-with-the-biggest-increase/view/news/405504",
+    "date": "Jun 6, 2022",
+    "title": "Market values Croatia: Champions Dinamo Zagreb drop - Sutalo with the biggest increase"
+   },
+   {
+    "url": "https://www.transfermarkt.com/market-values-croatia-livakovic-loses-pole-position-top-goalscorer-drmic-up/view/news/397396",
+    "date": "Dec 30, 2021",
+    "title": "Market values Croatia: Livaković loses pole position - Top goalscorer Drmić up"
+   },
+   {
+    "url": "https://www.transfermarkt.com/market-values-croatia-future-leipzig-defender-gvardiol-on-top-huge-plus-for-majer/view/news/376758",
+    "date": "Dec 28, 2020",
+    "title": "Market values Croatia: Future Leipzig defender Gvardiol on top - Huge plus for Majer"
+   },
+   {
+    "url": "https://www.transfermarkt.com/big-footsteps-for-olmo-how-dinamo-zagreb-could-line-up-if-they-hadnt-sold-anyone/view/news/347566",
+    "date": "Oct 24, 2019",
+    "title": "Big footsteps for Olmo: How Dinamo Zagreb could line up if they hadn't sold anyone"
+   }
+  ],
+  "transfers": [
+   {
+    "to": "Barcelona",
+    "fee": "€2.00M",
+    "from": "Fenerbahçe",
+    "type": "transfer",
+    "season": "26/27",
+    "marketValue": "€4.00M",
+    "transferDate": "Aug 27, 2026"
+   },
+   {
+    "to": "Fenerbahçe",
+    "fee": null,
+    "from": "Dinamo Zagreb",
+    "type": "end of loan",
+    "season": "25/26",
+    "marketValue": "€4.00M",
+    "transferDate": "Jun 30, 2026"
+   },
+   {
+    "to": "Dinamo Zagreb",
+    "fee": "€300.00K",
+    "from": "Fenerbahçe",
+    "type": "loan",
+    "season": "25/26",
+    "marketValue": "€4.00M",
+    "transferDate": "Jan 30, 2026"
+   },
+   {
+    "to": "Fenerbahçe",
+    "fee": null,
+    "from": "Girona",
+    "type": "end of loan",
+    "season": "25/26",
+    "marketValue": "€4.00M",
+    "transferDate": "Jan 29, 2026"
+   },
+   {
+    "to": "Girona",
+    "fee": null,
+    "from": "Fenerbahçe",
+    "type": "loan",
+    "season": "25/26",
+    "marketValue": "€9.00M",
+    "transferDate": "Sep 1, 2025"
+   },
+   {
+    "to": "Fenerbahçe",
+    "fee": "€6.65M",
+    "from": "Dinamo Zagreb",
+    "type": "transfer",
+    "season": "23/24",
+    "marketValue": "€12.00M",
+    "transferDate": "Aug 25, 2023"
+   },
+   {
+    "to": "Dinamo Zagreb",
+    "fee": null,
+    "from": "NK Zagreb",
+    "type": "end of loan",
+    "season": "15/16",
+    "marketValue": "€600.00K",
+    "transferDate": "Jun 30, 2016"
+   },
+   {
+    "to": "NK Zagreb",
+    "fee": null,
+    "from": "Dinamo Zagreb",
+    "type": "loan",
+    "season": "15/16",
+    "marketValue": "€800.00K",
+    "transferDate": "Sep 1, 2015"
+   },
+   {
+    "to": "Dinamo Zagreb",
+    "fee": "€625.00K",
+    "from": "NK Zagreb",
+    "type": "transfer",
+    "season": "15/16",
+    "marketValue": "€800.00K",
+    "transferDate": "Aug 31, 2015"
+   },
+   {
+    "to": "NK Zagreb",
+    "fee": null,
+    "from": "NK Zagreb U19",
+    "type": "transfer",
+    "season": "12/13",
+    "marketValue": null,
+    "transferDate": "Aug 30, 2012"
+   },
+   {
+    "to": "NK Zagreb U19",
+    "fee": null,
+    "from": "Zadar U17",
+    "type": "transfer",
+    "season": "12/13",
+    "marketValue": null,
+    "transferDate": "Jul 1, 2012"
+   },
+   {
+    "to": "Zadar U17",
+    "fee": null,
+    "from": "Zadar Jgd",
+    "type": "transfer",
+    "season": "10/11",
+    "marketValue": null,
+    "transferDate": "Jul 1, 2010"
+   }
+  ],
+  "marketValue": [
+   {
+    "age": 31,
+    "club": "GNK Dinamo Zagreb",
+    "value": 4000000,
+    "currency": "€",
+    "recordedDate": "29/05/2026"
+   },
+   {
+    "age": 30,
+    "club": "Girona FC",
+    "value": 4000000,
+    "currency": "€",
+    "recordedDate": "12/12/2025"
+   },
+   {
+    "age": 30,
+    "club": "Girona FC",
+    "value": 6000000,
+    "currency": "€",
+    "recordedDate": "02/10/2025"
+   },
+   {
+    "age": 30,
+    "club": "Fenerbahce",
+    "value": 9000000,
+    "currency": "€",
+    "recordedDate": "18/06/2025"
+   },
+   {
+    "age": 30,
+    "club": "Fenerbahce",
+    "value": 10000000,
+    "currency": "€",
+    "recordedDate": "20/03/2025"
+   },
+   {
+    "age": 29,
+    "club": "Fenerbahce",
+    "value": 11000000,
+    "currency": "€",
+    "recordedDate": "23/12/2024"
+   },
+   {
+    "age": 29,
+    "club": "Fenerbahce",
+    "value": 11000000,
+    "currency": "€",
+    "recordedDate": "04/10/2024"
+   },
+   {
+    "age": 29,
+    "club": "Fenerbahce",
+    "value": 11000000,
+    "currency": "€",
+    "recordedDate": "31/05/2024"
+   },
+   {
+    "age": 29,
+    "club": "Fenerbahce",
+    "value": 11000000,
+    "currency": "€",
+    "recordedDate": "15/03/2024"
+   },
+   {
+    "age": 28,
+    "club": "Fenerbahce",
+    "value": 12000000,
+    "currency": "€",
+    "recordedDate": "21/12/2023"
+   },
+   {
+    "age": 28,
+    "club": "Fenerbahce",
+    "value": 12000000,
+    "currency": "€",
+    "recordedDate": "27/09/2023"
+   },
+   {
+    "age": 28,
+    "club": "GNK Dinamo Zagreb",
+    "value": 12000000,
+    "currency": "€",
+    "recordedDate": "06/06/2023"
+   },
+   {
+    "age": 27,
+    "club": "GNK Dinamo Zagreb",
+    "value": 14000000,
+    "currency": "€",
+    "recordedDate": "23/12/2022"
+   },
+   {
+    "age": 27,
+    "club": "GNK Dinamo Zagreb",
+    "value": 8500000,
+    "currency": "€",
+    "recordedDate": "08/11/2022"
+   },
+   {
+    "age": 27,
+    "club": "GNK Dinamo Zagreb",
+    "value": 8500000,
+    "currency": "€",
+    "recordedDate": "06/06/2022"
+   },
+   {
+    "age": 26,
+    "club": "GNK Dinamo Zagreb",
+    "value": 10000000,
+    "currency": "€",
+    "recordedDate": "30/12/2021"
+   },
+   {
+    "age": 26,
+    "club": "GNK Dinamo Zagreb",
+    "value": 15000000,
+    "currency": "€",
+    "recordedDate": "28/05/2021"
+   },
+   {
+    "age": 25,
+    "club": "GNK Dinamo Zagreb",
+    "value": 13000000,
+    "currency": "€",
+    "recordedDate": "28/12/2020"
+   },
+   {
+    "age": 25,
+    "club": "GNK Dinamo Zagreb",
+    "value": 12500000,
+    "currency": "€",
+    "recordedDate": "27/07/2020"
+   },
+   {
+    "age": 25,
+    "club": "GNK Dinamo Zagreb",
+    "value": 10500000,
+    "currency": "€",
+    "recordedDate": "08/04/2020"
+   },
+   {
+    "age": 24,
+    "club": "GNK Dinamo Zagreb",
+    "value": 13000000,
+    "currency": "€",
+    "recordedDate": "27/12/2019"
+   },
+   {
+    "age": 24,
+    "club": "GNK Dinamo Zagreb",
+    "value": 8000000,
+    "currency": "€",
+    "recordedDate": "16/09/2019"
+   },
+   {
+    "age": 24,
+    "club": "GNK Dinamo Zagreb",
+    "value": 3000000,
+    "currency": "€",
+    "recordedDate": "11/03/2019"
+   },
+   {
+    "age": 23,
+    "club": "GNK Dinamo Zagreb",
+    "value": 1750000,
+    "currency": "€",
+    "recordedDate": "25/09/2018"
+   },
+   {
+    "age": 23,
+    "club": "GNK Dinamo Zagreb",
+    "value": 1500000,
+    "currency": "€",
+    "recordedDate": "18/03/2018"
+   },
+   {
+    "age": 22,
+    "club": "GNK Dinamo Zagreb",
+    "value": 1500000,
+    "currency": "€",
+    "recordedDate": "23/10/2017"
+   },
+   {
+    "age": 22,
+    "club": "GNK Dinamo Zagreb",
+    "value": 1200000,
+    "currency": "€",
+    "recordedDate": "13/03/2017"
+   },
+   {
+    "age": 21,
+    "club": "GNK Dinamo Zagreb",
+    "value": 600000,
+    "currency": "€",
+    "recordedDate": "14/09/2016"
+   },
+   {
+    "age": 21,
+    "club": "NK Zagreb",
+    "value": 600000,
+    "currency": "€",
+    "recordedDate": "01/06/2016"
+   },
+   {
+    "age": 21,
+    "club": "NK Zagreb",
+    "value": 650000,
+    "currency": "€",
+    "recordedDate": "14/03/2016"
+   },
+   {
+    "age": 20,
+    "club": "NK Zagreb",
+    "value": 800000,
+    "currency": "€",
+    "recordedDate": "14/09/2015"
+   },
+   {
+    "age": 20,
+    "club": "NK Zagreb",
+    "value": 800000,
+    "currency": "€",
+    "recordedDate": "17/03/2015"
+   },
+   {
+    "age": 19,
+    "club": "NK Zagreb",
+    "value": 500000,
+    "currency": "€",
+    "recordedDate": "01/10/2014"
+   },
+   {
+    "age": 18,
+    "club": "NK Zagreb",
+    "value": 250000,
+    "currency": "€",
+    "recordedDate": "03/03/2013"
+   },
+   {
+    "age": 17,
+    "club": "NK Zagreb",
+    "value": 150000,
+    "currency": "€",
+    "recordedDate": "30/09/2012"
+   }
+  ],
+  "injuries": [
+   {
+    "reason": "Muscular problems",
+    "season": "2027",
+    "toDate": "10.08.2026",
+    "fromDate": "03.07.2026",
+    "missedGames": 3,
+    "absentDurationInDays": 39
+   },
+   {
+    "reason": "Strain in the thigh and gluteal muscles",
+    "season": "2026",
+    "toDate": "14.04.2026",
+    "fromDate": "02.04.2026",
+    "missedGames": 3,
+    "absentDurationInDays": 13
+   },
+   {
+    "reason": "Torn thigh muscle",
+    "season": "2025",
+    "toDate": "21.02.2025",
+    "fromDate": "13.01.2025",
+    "missedGames": 10,
+    "absentDurationInDays": 40
+   },
+   {
+    "reason": "Fitness",
+    "season": "2025",
+    "toDate": "06.01.2025",
+    "fromDate": "31.12.2024",
+    "missedGames": 1,
+    "absentDurationInDays": 7
+   },
+   {
+    "reason": "Torn thigh muscle",
+    "season": "2025",
+    "toDate": "31.12.2024",
+    "fromDate": "15.12.2024",
+    "missedGames": 1,
+    "absentDurationInDays": 17
+   },
+   {
+    "reason": "Adductor pain",
+    "season": "2022",
+    "toDate": "01.12.2021",
+    "fromDate": "26.11.2021",
+    "missedGames": 1,
+    "absentDurationInDays": 6
+   },
+   {
+    "reason": "Adductor pain",
+    "season": "2022",
+    "toDate": "13.09.2021",
+    "fromDate": "08.09.2021",
+    "missedGames": 1,
+    "absentDurationInDays": 6
+   },
+   {
+    "reason": "Corona virus",
+    "season": "2021",
+    "toDate": "12.11.2020",
+    "fromDate": "02.11.2020",
+    "missedGames": 3,
+    "absentDurationInDays": 11
+   },
+   {
+    "reason": "Thumb injury",
+    "season": "2019",
+    "toDate": "29.08.2018",
+    "fromDate": "23.08.2018",
+    "missedGames": 2,
+    "absentDurationInDays": 7
+   }
+  ]
+ }
+]

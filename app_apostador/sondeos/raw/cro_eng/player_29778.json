@@ -1,0 +1,726 @@
+[
+ {
+  "id": 29778,
+  "logo": null,
+  "name": "H. Kane",
+  "fullName": "Harry Edward Kane",
+  "profile": {
+   "club": {
+    "current": "Bayern Munich",
+    "joinedAt": "12/08/2023",
+    "contractExpiry": "30/06/2027",
+    "latestContractExtension": null
+   },
+   "foot": "right",
+   "height": "1,88 m",
+   "fullName": "Harry Kane",
+   "position": {
+    "main": "Centre-Forward",
+    "secondary": "Second Striker"
+   },
+   "birthDate": "28/07/1993",
+   "deathDate": null,
+   "birthPlace": "London",
+   "citizenship": "England, Ireland"
+  },
+  "rumours": {
+   "current": [
+    {
+     "club": "FC Barcelona",
+     "rumourDate": "29/07/2026",
+     "transferProbability": "N/A"
+    }
+   ],
+   "historical": [
+    {
+     "club": "FC Barcelona",
+     "rumourDate": "14/12/2018",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "AC Milan",
+     "rumourDate": "20/11/2016",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "SSC Napoli",
+     "rumourDate": "25/08/2016",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Southampton FC",
+     "rumourDate": "18/11/2014",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Queens Park Rangers",
+     "rumourDate": "12/08/2014",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Crystal Palace",
+     "rumourDate": "04/05/2014",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Stoke City",
+     "rumourDate": "04/05/2014",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "US Livorno 1915",
+     "rumourDate": "10/08/2013",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Wigan Athletic",
+     "rumourDate": "25/07/2013",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Al-Hilal SFC",
+     "rumourDate": "29/07/2026",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Tottenham Hotspur",
+     "rumourDate": "11/03/2025",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Liverpool FC",
+     "rumourDate": "25/03/2025",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Manchester United",
+     "rumourDate": "11/03/2025",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Arsenal FC",
+     "rumourDate": "11/03/2025",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Paris Saint-Germain",
+     "rumourDate": "12/11/2024",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Chelsea FC",
+     "rumourDate": "19/02/2024",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Bayern Munich",
+     "rumourDate": "14/08/2023",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Paris Saint-Germain",
+     "rumourDate": "24/07/2023",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Manchester United",
+     "rumourDate": "24/07/2023",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Real Madrid",
+     "rumourDate": "08/06/2023",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Manchester City",
+     "rumourDate": "15/11/2021",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Chelsea FC",
+     "rumourDate": "22/06/2021",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "FC Barcelona",
+     "rumourDate": "13/05/2021",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Juventus FC",
+     "rumourDate": "21/05/2020",
+     "transferProbability": "N/A"
+    }
+   ]
+  },
+  "relatedNews": [
+   {
+    "url": "https://www.transfermarkt.com/erling-haaland-matches-harry-kane-incredible-premier-league-record-with-sunderland-goal/view/news/487401",
+    "date": "Sep 20, 2026",
+    "title": "Erling Haaland matches Harry Kane incredible Premier League record with Sunderland goal"
+   },
+   {
+    "url": "https://www.transfermarkt.com/harry-kane-smashes-bundesliga-record-to-match-cristiano-ronaldo-and-zlatan-ibrahimovic/view/news/487381",
+    "date": "Sep 19, 2026",
+    "title": "Harry Kane smashes Bundesliga record to match Cristiano Ronaldo and Zlatan Ibrahimović"
+   },
+   {
+    "url": "https://www.transfermarkt.com/intensity-rarely-seen-in-italy-why-donyell-malen-has-exploded-at-roma-ahead-of-inter-clash/view/news/487329",
+    "date": "Sep 18, 2026",
+    "title": "'Intensity rarely seen in Italy' - Why Donyell Malen has exploded at Roma ahead of Inter clash"
+   },
+   {
+    "url": "https://www.transfermarkt.com/harry-kane-cristiano-ronaldo-amp-co-10-players-to-reach-150-club-goals-in-fewest-games/view/news/487187",
+    "date": "Sep 16, 2026",
+    "title": "Harry Kane, Cristiano Ronaldo & Co: 10 players to reach 150 club goals in fewest games"
+   },
+   {
+    "url": "https://www.transfermarkt.com/saka-guler-amp-co-the-20-most-valuable-players-snubbed-in-2026-ballon-dor-shortlist/view/news/486828",
+    "date": "Sep 9, 2026",
+    "title": "Saka, Guler & Co - The 20 most valuable players snubbed in 2026 Ballon d’Or shortlist"
+   },
+   {
+    "url": "https://www.transfermarkt.com/ballon-dor-2026-all-30-nominees-announced-lionel-messi-kylian-mbappe-amp-co/view/news/486767",
+    "date": "Sep 8, 2026",
+    "title": "Ballon d’Or 2026: All 30 nominees announced - Lionel Messi, Kylian Mbappe & Co"
+   },
+   {
+    "url": "https://www.transfermarkt.com/kane-dimarco-amp-fernandes-18-stars-who-can-walk-away-on-free-transfers-in-2027/view/news/484766",
+    "date": "Aug 16, 2026",
+    "title": "Kane, Dimarco & Fernandes: 18 stars who can walk away on free transfers in 2027"
+   },
+   {
+    "url": "https://www.transfermarkt.com/mls-6th-laliga-2nd-which-leagues-dominated-the-2026-world-cup-/view/news/483292",
+    "date": "Jul 21, 2026",
+    "title": "MLS 6th, LaLiga 2nd - Which leagues dominated the 2026 World Cup?"
+   }
+  ],
+  "transfers": [
+   {
+    "to": "Bayern Munich",
+    "fee": "€95.00M",
+    "from": "Tottenham",
+    "type": "transfer",
+    "season": "23/24",
+    "marketValue": "€90.00M",
+    "transferDate": "Aug 12, 2023"
+   },
+   {
+    "to": "Tottenham",
+    "fee": null,
+    "from": "Leicester",
+    "type": "end of loan",
+    "season": "12/13",
+    "marketValue": "€500.00K",
+    "transferDate": "May 14, 2013"
+   },
+   {
+    "to": "Leicester",
+    "fee": null,
+    "from": "Tottenham",
+    "type": "loan",
+    "season": "12/13",
+    "marketValue": "€500.00K",
+    "transferDate": "Feb 21, 2013"
+   },
+   {
+    "to": "Tottenham",
+    "fee": null,
+    "from": "Norwich",
+    "type": "end of loan",
+    "season": "12/13",
+    "marketValue": "€500.00K",
+    "transferDate": "Feb 1, 2013"
+   },
+   {
+    "to": "Norwich",
+    "fee": null,
+    "from": "Tottenham",
+    "type": "loan",
+    "season": "12/13",
+    "marketValue": null,
+    "transferDate": "Aug 31, 2012"
+   },
+   {
+    "to": "Tottenham",
+    "fee": null,
+    "from": "Millwall",
+    "type": "end of loan",
+    "season": "11/12",
+    "marketValue": null,
+    "transferDate": "May 31, 2012"
+   },
+   {
+    "to": "Millwall",
+    "fee": null,
+    "from": "Tottenham",
+    "type": "loan",
+    "season": "11/12",
+    "marketValue": null,
+    "transferDate": "Jan 1, 2012"
+   },
+   {
+    "to": "Tottenham",
+    "fee": null,
+    "from": "Leyton Orient",
+    "type": "end of loan",
+    "season": "10/11",
+    "marketValue": null,
+    "transferDate": "May 31, 2011"
+   },
+   {
+    "to": "Leyton Orient",
+    "fee": null,
+    "from": "Tottenham",
+    "type": "loan",
+    "season": "10/11",
+    "marketValue": null,
+    "transferDate": "Jan 7, 2011"
+   },
+   {
+    "to": "Tottenham",
+    "fee": null,
+    "from": "Spurs U18",
+    "type": "transfer",
+    "season": "10/11",
+    "marketValue": null,
+    "transferDate": "Jul 1, 2010"
+   },
+   {
+    "to": "Spurs U18",
+    "fee": null,
+    "from": "Tottenham Yth.",
+    "type": "transfer",
+    "season": "09/10",
+    "marketValue": null,
+    "transferDate": "Jul 1, 2009"
+   },
+   {
+    "to": "Tottenham Yth.",
+    "fee": null,
+    "from": "Watford Yth.",
+    "type": "transfer",
+    "season": "04/05",
+    "marketValue": null,
+    "transferDate": "Aug 16, 2004"
+   },
+   {
+    "to": "Watford Yth.",
+    "fee": null,
+    "from": "Rovers FC Youth",
+    "type": "transfer",
+    "season": "04/05",
+    "marketValue": null,
+    "transferDate": "Jul 1, 2004"
+   },
+   {
+    "to": "Rovers FC Youth",
+    "fee": null,
+    "from": "Arsenal Youth",
+    "type": "transfer",
+    "season": "02/03",
+    "marketValue": null,
+    "transferDate": "Jul 1, 2002"
+   },
+   {
+    "to": "Arsenal Youth",
+    "fee": null,
+    "from": "Rovers FC Youth",
+    "type": "transfer",
+    "season": "01/02",
+    "marketValue": null,
+    "transferDate": "Jul 1, 2001"
+   }
+  ],
+  "marketValue": [
+   {
+    "age": 32,
+    "club": "Bayern Munich",
+    "value": 60000000,
+    "currency": "€",
+    "recordedDate": "27/05/2026"
+   },
+   {
+    "age": 32,
+    "club": "Bayern Munich",
+    "value": 65000000,
+    "currency": "€",
+    "recordedDate": "19/12/2025"
+   },
+   {
+    "age": 31,
+    "club": "Bayern Munich",
+    "value": 75000000,
+    "currency": "€",
+    "recordedDate": "05/06/2025"
+   },
+   {
+    "age": 31,
+    "club": "Bayern Munich",
+    "value": 90000000,
+    "currency": "€",
+    "recordedDate": "20/12/2024"
+   },
+   {
+    "age": 30,
+    "club": "Bayern Munich",
+    "value": 100000000,
+    "currency": "€",
+    "recordedDate": "29/05/2024"
+   },
+   {
+    "age": 30,
+    "club": "Bayern Munich",
+    "value": 110000000,
+    "currency": "€",
+    "recordedDate": "14/12/2023"
+   },
+   {
+    "age": 30,
+    "club": "Bayern Munich",
+    "value": 110000000,
+    "currency": "€",
+    "recordedDate": "18/10/2023"
+   },
+   {
+    "age": 29,
+    "club": "Tottenham Hotspur",
+    "value": 90000000,
+    "currency": "€",
+    "recordedDate": "20/06/2023"
+   },
+   {
+    "age": 29,
+    "club": "Tottenham Hotspur",
+    "value": 90000000,
+    "currency": "€",
+    "recordedDate": "03/11/2022"
+   },
+   {
+    "age": 28,
+    "club": "Tottenham Hotspur",
+    "value": 90000000,
+    "currency": "€",
+    "recordedDate": "15/06/2022"
+   },
+   {
+    "age": 28,
+    "club": "Tottenham Hotspur",
+    "value": 100000000,
+    "currency": "€",
+    "recordedDate": "23/12/2021"
+   },
+   {
+    "age": 27,
+    "club": "Tottenham Hotspur",
+    "value": 120000000,
+    "currency": "€",
+    "recordedDate": "28/05/2021"
+   },
+   {
+    "age": 27,
+    "club": "Tottenham Hotspur",
+    "value": 120000000,
+    "currency": "€",
+    "recordedDate": "18/03/2021"
+   },
+   {
+    "age": 27,
+    "club": "Tottenham Hotspur",
+    "value": 120000000,
+    "currency": "€",
+    "recordedDate": "13/10/2020"
+   },
+   {
+    "age": 26,
+    "club": "Tottenham Hotspur",
+    "value": 120000000,
+    "currency": "€",
+    "recordedDate": "08/04/2020"
+   },
+   {
+    "age": 26,
+    "club": "Tottenham Hotspur",
+    "value": 150000000,
+    "currency": "€",
+    "recordedDate": "10/12/2019"
+   },
+   {
+    "age": 25,
+    "club": "Tottenham Hotspur",
+    "value": 150000000,
+    "currency": "€",
+    "recordedDate": "13/06/2019"
+   },
+   {
+    "age": 25,
+    "club": "Tottenham Hotspur",
+    "value": 150000000,
+    "currency": "€",
+    "recordedDate": "19/12/2018"
+   },
+   {
+    "age": 24,
+    "club": "Tottenham Hotspur",
+    "value": 150000000,
+    "currency": "€",
+    "recordedDate": "28/05/2018"
+   },
+   {
+    "age": 24,
+    "club": "Tottenham Hotspur",
+    "value": 120000000,
+    "currency": "€",
+    "recordedDate": "02/01/2018"
+   },
+   {
+    "age": 24,
+    "club": "Tottenham Hotspur",
+    "value": 80000000,
+    "currency": "€",
+    "recordedDate": "23/10/2017"
+   },
+   {
+    "age": 23,
+    "club": "Tottenham Hotspur",
+    "value": 60000000,
+    "currency": "€",
+    "recordedDate": "28/06/2017"
+   },
+   {
+    "age": 23,
+    "club": "Tottenham Hotspur",
+    "value": 50000000,
+    "currency": "€",
+    "recordedDate": "20/02/2017"
+   },
+   {
+    "age": 23,
+    "club": "Tottenham Hotspur",
+    "value": 40000000,
+    "currency": "€",
+    "recordedDate": "01/08/2016"
+   },
+   {
+    "age": 22,
+    "club": "Tottenham Hotspur",
+    "value": 40000000,
+    "currency": "€",
+    "recordedDate": "01/06/2016"
+   },
+   {
+    "age": 22,
+    "club": "Tottenham Hotspur",
+    "value": 30000000,
+    "currency": "€",
+    "recordedDate": "09/02/2016"
+   },
+   {
+    "age": 21,
+    "club": "Tottenham Hotspur",
+    "value": 25000000,
+    "currency": "€",
+    "recordedDate": "01/07/2015"
+   },
+   {
+    "age": 21,
+    "club": "Tottenham Hotspur",
+    "value": 15000000,
+    "currency": "€",
+    "recordedDate": "12/02/2015"
+   },
+   {
+    "age": 21,
+    "club": "Tottenham Hotspur",
+    "value": 3000000,
+    "currency": "€",
+    "recordedDate": "12/08/2014"
+   },
+   {
+    "age": 19,
+    "club": "Norwich City",
+    "value": 500000,
+    "currency": "€",
+    "recordedDate": "28/01/2013"
+   },
+   {
+    "age": 19,
+    "club": "Norwich City",
+    "value": 500000,
+    "currency": "€",
+    "recordedDate": "15/11/2012"
+   }
+  ],
+  "injuries": [
+   {
+    "reason": "Knee injury",
+    "season": "2018",
+    "toDate": "14.11.2017",
+    "fromDate": "06.11.2017",
+    "missedGames": 1,
+    "absentDurationInDays": 9
+   },
+   {
+    "reason": "Hamstring injury",
+    "season": "2018",
+    "toDate": "30.10.2017",
+    "fromDate": "23.10.2017",
+    "missedGames": 2,
+    "absentDurationInDays": 8
+   },
+   {
+    "reason": "Ankle injury",
+    "season": "2017",
+    "toDate": "06.04.2017",
+    "fromDate": "13.03.2017",
+    "missedGames": 5,
+    "absentDurationInDays": 25
+   },
+   {
+    "reason": "Ankle injury",
+    "season": "2017",
+    "toDate": "07.11.2016",
+    "fromDate": "19.09.2016",
+    "missedGames": 12,
+    "absentDurationInDays": 50
+   },
+   {
+    "reason": "Back injury",
+    "season": "2014",
+    "toDate": "30.12.2013",
+    "fromDate": "11.11.2013",
+    "missedGames": 15,
+    "absentDurationInDays": 50
+   },
+   {
+    "reason": "Metatarsal fracture",
+    "season": "2013",
+    "toDate": "19.11.2012",
+    "fromDate": "27.09.2012",
+    "missedGames": 14,
+    "absentDurationInDays": 54
+   },
+   {
+    "reason": "Ankle problems",
+    "season": "2026",
+    "toDate": "06.04.2026",
+    "fromDate": "31.03.2026",
+    "missedGames": 2,
+    "absentDurationInDays": 7
+   },
+   {
+    "reason": "Calf problems",
+    "season": "2026",
+    "toDate": "08.03.2026",
+    "fromDate": "05.03.2026",
+    "missedGames": 1,
+    "absentDurationInDays": 4
+   },
+   {
+    "reason": "Torn muscle fiber",
+    "season": "2025",
+    "toDate": "15.12.2024",
+    "fromDate": "01.12.2024",
+    "missedGames": 4,
+    "absentDurationInDays": 15
+   },
+   {
+    "reason": "Back problems",
+    "season": "2024",
+    "toDate": "01.06.2024",
+    "fromDate": "09.05.2024",
+    "missedGames": 2,
+    "absentDurationInDays": 24
+   },
+   {
+    "reason": "Ankle injury",
+    "season": "2024",
+    "toDate": "27.03.2024",
+    "fromDate": "17.03.2024",
+    "missedGames": 2,
+    "absentDurationInDays": 11
+   },
+   {
+    "reason": "Ankle injury",
+    "season": "2021",
+    "toDate": "22.04.2021",
+    "fromDate": "16.04.2021",
+    "missedGames": 1,
+    "absentDurationInDays": 7
+   },
+   {
+    "reason": "Ankle injury",
+    "season": "2021",
+    "toDate": "05.02.2021",
+    "fromDate": "29.01.2021",
+    "missedGames": 2,
+    "absentDurationInDays": 8
+   },
+   {
+    "reason": "Unknown",
+    "season": "2021",
+    "toDate": "05.12.2020",
+    "fromDate": "30.11.2020",
+    "missedGames": 1,
+    "absentDurationInDays": 6
+   },
+   {
+    "reason": "Fitness",
+    "season": "2020",
+    "toDate": "01.04.2020",
+    "fromDate": "09.03.2020",
+    "missedGames": 1,
+    "absentDurationInDays": 24
+   },
+   {
+    "reason": "Torn thigh muscle",
+    "season": "2020",
+    "toDate": "09.03.2020",
+    "fromDate": "02.01.2020",
+    "missedGames": 14,
+    "absentDurationInDays": 68
+   },
+   {
+    "reason": "Ill",
+    "season": "2020",
+    "toDate": "04.11.2019",
+    "fromDate": "01.11.2019",
+    "missedGames": 1,
+    "absentDurationInDays": 4
+   },
+   {
+    "reason": "Ligament injury",
+    "season": "2019",
+    "toDate": "31.05.2019",
+    "fromDate": "10.04.2019",
+    "missedGames": 9,
+    "absentDurationInDays": 52
+   },
+   {
+    "reason": "Torn ankle ligaments",
+    "season": "2019",
+    "toDate": "23.02.2019",
+    "fromDate": "14.01.2019",
+    "missedGames": 7,
+    "absentDurationInDays": 41
+   },
+   {
+    "reason": "Back injury",
+    "season": "2019",
+    "toDate": "06.07.2018",
+    "fromDate": "04.07.2018",
+    "missedGames": null,
+    "absentDurationInDays": 3
+   },
+   {
+    "reason": "Ankle injury",
+    "season": "2018",
+    "toDate": "01.04.2018",
+    "fromDate": "12.03.2018",
+    "missedGames": 3,
+    "absentDurationInDays": 21
+   }
+  ]
+ }
+]

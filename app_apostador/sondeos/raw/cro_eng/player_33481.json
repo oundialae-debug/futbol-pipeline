@@ -1,0 +1,1011 @@
+[
+ {
+  "id": 33481,
+  "logo": null,
+  "name": "I. Perišić",
+  "fullName": "Ivan Perišić",
+  "profile": {
+   "club": {
+    "current": "PSV Eindhoven",
+    "joinedAt": "18/09/2024",
+    "contractExpiry": "30/06/2027",
+    "latestContractExtension": "27/06/2025"
+   },
+   "foot": "both",
+   "height": "1,86 m",
+   "fullName": "Ivan Perisic",
+   "position": {
+    "main": "Right Winger",
+    "secondary": "Left Midfield, Left Winger"
+   },
+   "birthDate": "02/02/1989",
+   "deathDate": null,
+   "birthPlace": "Split",
+   "citizenship": "Croatia"
+  },
+  "rumours": {
+   "current": [
+    {
+     "club": "Inter Milan",
+     "rumourDate": "17/07/2026",
+     "transferProbability": "N/A"
+    }
+   ],
+   "historical": [
+    {
+     "club": "AC Milan",
+     "rumourDate": "20/06/2014",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Manchester United",
+     "rumourDate": "05/01/2014",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "VfL Wolfsburg",
+     "rumourDate": "06/01/2013",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Hamburger SV",
+     "rumourDate": "18/08/2012",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Borussia Dortmund",
+     "rumourDate": "30/05/2011",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Tottenham Hotspur",
+     "rumourDate": "09/03/2011",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Valencia CF",
+     "rumourDate": "10/02/2011",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "GNK Dinamo Zagreb",
+     "rumourDate": "05/11/2010",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Ajax Amsterdam",
+     "rumourDate": "27/10/2009",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Hertha BSC",
+     "rumourDate": "27/10/2009",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Arsenal FC",
+     "rumourDate": "25/06/2019",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Shanghai Shenhua",
+     "rumourDate": "22/06/2019",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Leicester City",
+     "rumourDate": "17/06/2019",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Wolverhampton Wanderers",
+     "rumourDate": "13/06/2019",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "West Ham United",
+     "rumourDate": "14/04/2019",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Atlético de Madrid",
+     "rumourDate": "24/01/2019",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "FC Barcelona",
+     "rumourDate": "12/08/2017",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Paris Saint-Germain",
+     "rumourDate": "12/06/2017",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Liverpool FC",
+     "rumourDate": "21/03/2017",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Everton FC",
+     "rumourDate": "27/04/2016",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Inter Milan",
+     "rumourDate": "30/08/2015",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "SSC Napoli",
+     "rumourDate": "04/12/2014",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Juventus FC",
+     "rumourDate": "21/06/2014",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Everton FC",
+     "rumourDate": "20/06/2014",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "AS Roma",
+     "rumourDate": "20/06/2014",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Tottenham Hotspur",
+     "rumourDate": "31/05/2022",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Inter Milan",
+     "rumourDate": "23/05/2022",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Chelsea FC",
+     "rumourDate": "22/05/2022",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Juventus FC",
+     "rumourDate": "21/05/2022",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "VfL Wolfsburg",
+     "rumourDate": "06/01/2022",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Borussia Dortmund",
+     "rumourDate": "01/12/2021",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Eintracht Frankfurt",
+     "rumourDate": "08/06/2021",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Hertha BSC",
+     "rumourDate": "26/01/2021",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Bayer 04 Leverkusen",
+     "rumourDate": "22/09/2020",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "RB Leipzig",
+     "rumourDate": "18/09/2020",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Bayern Munich",
+     "rumourDate": "01/09/2020",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Bayern Munich",
+     "rumourDate": "09/09/2020",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Manchester United",
+     "rumourDate": "10/06/2020",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "AS Roma",
+     "rumourDate": "08/08/2019",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "AS Monaco",
+     "rumourDate": "04/08/2019",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Inter Milan",
+     "rumourDate": "17/07/2026",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "FC Barcelona",
+     "rumourDate": "18/06/2025",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Olympique Marseille",
+     "rumourDate": "04/06/2025",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "PSV Eindhoven",
+     "rumourDate": "18/09/2024",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "AC Monza",
+     "rumourDate": "31/08/2024",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Como 1907",
+     "rumourDate": "31/08/2024",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Como 1907",
+     "rumourDate": "31/08/2024",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Genoa CFC",
+     "rumourDate": "30/08/2024",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "FC Barcelona",
+     "rumourDate": "14/08/2024",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Galatasaray",
+     "rumourDate": "15/07/2024",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Inter Milan",
+     "rumourDate": "03/07/2024",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "HNK Hajduk Split",
+     "rumourDate": "20/01/2024",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Fenerbahce",
+     "rumourDate": "23/06/2023",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Beşiktaş JK",
+     "rumourDate": "10/06/2023",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Inter Milan",
+     "rumourDate": "31/05/2023",
+     "transferProbability": "N/A"
+    }
+   ]
+  },
+  "relatedNews": [
+   {
+    "url": "https://www.transfermarkt.com/arsenal-amp-chelsea-eye-adam-guram-can-new-ivan-perisic-take-the-premier-league-by-storm-/view/news/483929",
+    "date": "Aug 2, 2026",
+    "title": "Arsenal & Chelsea eye Adam Guram - Can 'new Ivan Perišić' take the Premier League by storm?"
+   },
+   {
+    "url": "https://www.transfermarkt.com/cristiano-ronaldo-reigns-supreme-over-messi-which-players-have-scored-at-most-world-cups-/view/news/480856",
+    "date": "Jun 23, 2026",
+    "title": "Cristiano Ronaldo reigns supreme over Messi: Which players have scored at most World Cups?"
+   },
+   {
+    "url": "https://www.transfermarkt.com/where-do-ronaldo-amp-messi-rank-most-goal-contributions-by-players-aged-35-in-2026/view/news/479785",
+    "date": "May 21, 2026",
+    "title": "Where do Ronaldo & Messi rank? Most goal contributions by players aged 35+ in 2026"
+   },
+   {
+    "url": "https://www.transfermarkt.com/ivanovic-on-turning-down-the-bundesliga-working-with-mourinho-and-his-euro-150m-target/view/news/462239",
+    "date": "Oct 30, 2025",
+    "title": "Ivanović on turning down the Bundesliga, working with Mourinho and his €150m target"
+   },
+   {
+    "url": "https://www.transfermarkt.com/third-youngest-squad-in-the-pl-postecoglou-aiming-for-top-four-with-new-look-spurs-side/view/news/441066",
+    "date": "Jul 23, 2024",
+    "title": "Third youngest squad in the PL - Postecoglou aiming for top four with new-look Spurs side"
+   },
+   {
+    "url": "https://www.transfermarkt.com/most-games-in-2022-van-dijk-just-ahead-of-silva-amp-fernandez-37-year-old-modric-in-top-5/view/news/415778",
+    "date": "Jan 3, 2023",
+    "title": "Most games in 2022: van Dijk just ahead of Silva & Fernández - 37-year-old Modric in top 5"
+   },
+   {
+    "url": "https://www.transfermarkt.com/debuts-and-swansongs-the-players-making-their-first-and-last-world-cup-appearances-in-qatar/view/news/414092",
+    "date": "Nov 22, 2022",
+    "title": "Debuts and swansongs - the players making their first and last World Cup appearances in Qatar"
+   },
+   {
+    "url": "https://www.transfermarkt.com/were-fully-motivated-to-do-it-again-can-croatia-perform-another-world-cup-miracle-/view/news/413885",
+    "date": "Nov 16, 2022",
+    "title": "'We're fully motivated to do it again' - Can Croatia perform another World Cup miracle?"
+   },
+   {
+    "url": "https://www.transfermarkt.com/serie-a-market-values-eriksen-in-free-fall-morata-among-biggest-winners/view/news/376747",
+    "date": "Dec 29, 2020",
+    "title": "Serie A market values: Eriksen in free fall - Morata among biggest winners"
+   }
+  ],
+  "transfers": [
+   {
+    "to": "PSV",
+    "fee": null,
+    "from": "No Club",
+    "type": "transfer",
+    "season": "24/25",
+    "marketValue": "€2.00M",
+    "transferDate": "Sep 18, 2024"
+   },
+   {
+    "to": "No Club",
+    "fee": null,
+    "from": "Hajduk Split",
+    "type": "transfer",
+    "season": "24/25",
+    "marketValue": "€2.00M",
+    "transferDate": "Aug 30, 2024"
+   },
+   {
+    "to": "Hajduk Split",
+    "fee": null,
+    "from": "Tottenham",
+    "type": "transfer",
+    "season": "24/25",
+    "marketValue": "€2.00M",
+    "transferDate": "Jul 4, 2024"
+   },
+   {
+    "to": "Tottenham",
+    "fee": null,
+    "from": "Hajduk Split",
+    "type": "end of loan",
+    "season": "23/24",
+    "marketValue": "€2.00M",
+    "transferDate": "Jun 30, 2024"
+   },
+   {
+    "to": "Hajduk Split",
+    "fee": null,
+    "from": "Tottenham",
+    "type": "loan",
+    "season": "23/24",
+    "marketValue": "€4.00M",
+    "transferDate": "Jan 19, 2024"
+   },
+   {
+    "to": "Tottenham",
+    "fee": null,
+    "from": "Inter",
+    "type": "transfer",
+    "season": "22/23",
+    "marketValue": "€10.00M",
+    "transferDate": "Jul 1, 2022"
+   },
+   {
+    "to": "Inter",
+    "fee": null,
+    "from": "Bayern Munich",
+    "type": "end of loan",
+    "season": "19/20",
+    "marketValue": "€17.00M",
+    "transferDate": "Aug 31, 2020"
+   },
+   {
+    "to": "Bayern Munich",
+    "fee": "€5.00M",
+    "from": "Inter",
+    "type": "loan",
+    "season": "19/20",
+    "marketValue": "€30.00M",
+    "transferDate": "Aug 13, 2019"
+   },
+   {
+    "to": "Inter",
+    "fee": "€19.00M",
+    "from": "Wolfsburg",
+    "type": "transfer",
+    "season": "15/16",
+    "marketValue": "€13.00M",
+    "transferDate": "Aug 30, 2015"
+   },
+   {
+    "to": "Wolfsburg",
+    "fee": "€8.00M",
+    "from": "Dortmund",
+    "type": "transfer",
+    "season": "12/13",
+    "marketValue": "€7.00M",
+    "transferDate": "Jan 6, 2013"
+   },
+   {
+    "to": "Dortmund",
+    "fee": "€4.00M",
+    "from": "Club Brugge",
+    "type": "transfer",
+    "season": "11/12",
+    "marketValue": "€6.00M",
+    "transferDate": "Jul 1, 2011"
+   },
+   {
+    "to": "Club Brugge",
+    "fee": "€200.00K",
+    "from": "FC Sochaux",
+    "type": "transfer",
+    "season": "09/10",
+    "marketValue": "€1.00M",
+    "transferDate": "Aug 26, 2009"
+   },
+   {
+    "to": "FC Sochaux",
+    "fee": null,
+    "from": "KSV Roeselare",
+    "type": "end of loan",
+    "season": "08/09",
+    "marketValue": "€600.00K",
+    "transferDate": "Jun 30, 2009"
+   },
+   {
+    "to": "KSV Roeselare",
+    "fee": null,
+    "from": "FC Sochaux",
+    "type": "loan",
+    "season": "08/09",
+    "marketValue": "€100.00K",
+    "transferDate": "Jan 1, 2009"
+   },
+   {
+    "to": "FC Sochaux",
+    "fee": null,
+    "from": "FC Sochaux B",
+    "type": "transfer",
+    "season": "08/09",
+    "marketValue": "€325.00K",
+    "transferDate": "Jul 1, 2008"
+   },
+   {
+    "to": "FC Sochaux B",
+    "fee": "€360.00K",
+    "from": "Hajduk U17",
+    "type": "transfer",
+    "season": "06/07",
+    "marketValue": null,
+    "transferDate": "Jul 1, 2006"
+   },
+   {
+    "to": "Hajduk U17",
+    "fee": null,
+    "from": "Hajduk Yth.",
+    "type": "transfer",
+    "season": "04/05",
+    "marketValue": null,
+    "transferDate": "Jul 1, 2004"
+   }
+  ],
+  "marketValue": [
+   {
+    "age": 37,
+    "club": "PSV Eindhoven",
+    "value": 1200000,
+    "currency": "€",
+    "recordedDate": "28/05/2026"
+   },
+   {
+    "age": 36,
+    "club": "PSV Eindhoven",
+    "value": 1300000,
+    "currency": "€",
+    "recordedDate": "02/12/2025"
+   },
+   {
+    "age": 36,
+    "club": "PSV Eindhoven",
+    "value": 1500000,
+    "currency": "€",
+    "recordedDate": "28/05/2025"
+   },
+   {
+    "age": 35,
+    "club": "PSV Eindhoven",
+    "value": 1500000,
+    "currency": "€",
+    "recordedDate": "17/12/2024"
+   },
+   {
+    "age": 35,
+    "club": "HNK Hajduk Split",
+    "value": 2000000,
+    "currency": "€",
+    "recordedDate": "04/06/2024"
+   },
+   {
+    "age": 34,
+    "club": "Tottenham Hotspur",
+    "value": 4000000,
+    "currency": "€",
+    "recordedDate": "19/12/2023"
+   },
+   {
+    "age": 34,
+    "club": "Tottenham Hotspur",
+    "value": 4000000,
+    "currency": "€",
+    "recordedDate": "09/10/2023"
+   },
+   {
+    "age": 34,
+    "club": "Tottenham Hotspur",
+    "value": 7000000,
+    "currency": "€",
+    "recordedDate": "20/06/2023"
+   },
+   {
+    "age": 33,
+    "club": "Tottenham Hotspur",
+    "value": 10000000,
+    "currency": "€",
+    "recordedDate": "03/11/2022"
+   },
+   {
+    "age": 33,
+    "club": "Inter Milan",
+    "value": 10000000,
+    "currency": "€",
+    "recordedDate": "07/06/2022"
+   },
+   {
+    "age": 32,
+    "club": "Inter Milan",
+    "value": 10000000,
+    "currency": "€",
+    "recordedDate": "28/12/2021"
+   },
+   {
+    "age": 32,
+    "club": "Inter Milan",
+    "value": 10000000,
+    "currency": "€",
+    "recordedDate": "28/05/2021"
+   },
+   {
+    "age": 31,
+    "club": "Inter Milan",
+    "value": 10000000,
+    "currency": "€",
+    "recordedDate": "29/12/2020"
+   },
+   {
+    "age": 31,
+    "club": "Inter Milan",
+    "value": 15000000,
+    "currency": "€",
+    "recordedDate": "16/09/2020"
+   },
+   {
+    "age": 31,
+    "club": "Bayern Munich",
+    "value": 17500000,
+    "currency": "€",
+    "recordedDate": "08/04/2020"
+   },
+   {
+    "age": 30,
+    "club": "Bayern Munich",
+    "value": 22000000,
+    "currency": "€",
+    "recordedDate": "17/12/2019"
+   },
+   {
+    "age": 30,
+    "club": "Bayern Munich",
+    "value": 24000000,
+    "currency": "€",
+    "recordedDate": "02/10/2019"
+   },
+   {
+    "age": 30,
+    "club": "Inter Milan",
+    "value": 30000000,
+    "currency": "€",
+    "recordedDate": "06/06/2019"
+   },
+   {
+    "age": 30,
+    "club": "Inter Milan",
+    "value": 35000000,
+    "currency": "€",
+    "recordedDate": "01/03/2019"
+   },
+   {
+    "age": 29,
+    "club": "Inter Milan",
+    "value": 40000000,
+    "currency": "€",
+    "recordedDate": "20/12/2018"
+   },
+   {
+    "age": 29,
+    "club": "Inter Milan",
+    "value": 45000000,
+    "currency": "€",
+    "recordedDate": "16/07/2018"
+   },
+   {
+    "age": 29,
+    "club": "Inter Milan",
+    "value": 40000000,
+    "currency": "€",
+    "recordedDate": "07/06/2018"
+   },
+   {
+    "age": 29,
+    "club": "Inter Milan",
+    "value": 40000000,
+    "currency": "€",
+    "recordedDate": "24/03/2018"
+   },
+   {
+    "age": 28,
+    "club": "Inter Milan",
+    "value": 45000000,
+    "currency": "€",
+    "recordedDate": "29/12/2017"
+   },
+   {
+    "age": 28,
+    "club": "Inter Milan",
+    "value": 35000000,
+    "currency": "€",
+    "recordedDate": "13/10/2017"
+   },
+   {
+    "age": 28,
+    "club": "Inter Milan",
+    "value": 30000000,
+    "currency": "€",
+    "recordedDate": "08/06/2017"
+   },
+   {
+    "age": 27,
+    "club": "Inter Milan",
+    "value": 25000000,
+    "currency": "€",
+    "recordedDate": "02/01/2017"
+   },
+   {
+    "age": 27,
+    "club": "Inter Milan",
+    "value": 25000000,
+    "currency": "€",
+    "recordedDate": "15/07/2016"
+   },
+   {
+    "age": 27,
+    "club": "Inter Milan",
+    "value": 21000000,
+    "currency": "€",
+    "recordedDate": "01/06/2016"
+   },
+   {
+    "age": 27,
+    "club": "Inter Milan",
+    "value": 19000000,
+    "currency": "€",
+    "recordedDate": "01/04/2016"
+   },
+   {
+    "age": 26,
+    "club": "Inter Milan",
+    "value": 16000000,
+    "currency": "€",
+    "recordedDate": "04/01/2016"
+   },
+   {
+    "age": 26,
+    "club": "Inter Milan",
+    "value": 16000000,
+    "currency": "€",
+    "recordedDate": "05/11/2015"
+   },
+   {
+    "age": 26,
+    "club": "VfL Wolfsburg",
+    "value": 13000000,
+    "currency": "€",
+    "recordedDate": "01/07/2015"
+   },
+   {
+    "age": 26,
+    "club": "VfL Wolfsburg",
+    "value": 11000000,
+    "currency": "€",
+    "recordedDate": "04/02/2015"
+   },
+   {
+    "age": 25,
+    "club": "VfL Wolfsburg",
+    "value": 8000000,
+    "currency": "€",
+    "recordedDate": "10/07/2014"
+   },
+   {
+    "age": 25,
+    "club": "VfL Wolfsburg",
+    "value": 6000000,
+    "currency": "€",
+    "recordedDate": "31/03/2014"
+   },
+   {
+    "age": 24,
+    "club": "VfL Wolfsburg",
+    "value": 7000000,
+    "currency": "€",
+    "recordedDate": "30/06/2013"
+   },
+   {
+    "age": 23,
+    "club": "VfL Wolfsburg",
+    "value": 7500000,
+    "currency": "€",
+    "recordedDate": "13/01/2013"
+   },
+   {
+    "age": 23,
+    "club": "Borussia Dortmund",
+    "value": 7000000,
+    "currency": "€",
+    "recordedDate": "29/06/2012"
+   },
+   {
+    "age": 22,
+    "club": "Borussia Dortmund",
+    "value": 6000000,
+    "currency": "€",
+    "recordedDate": "23/01/2012"
+   },
+   {
+    "age": 22,
+    "club": "Club Brugge KV",
+    "value": 6000000,
+    "currency": "€",
+    "recordedDate": "24/05/2011"
+   },
+   {
+    "age": 22,
+    "club": "Club Brugge KV",
+    "value": 5000000,
+    "currency": "€",
+    "recordedDate": "14/04/2011"
+   },
+   {
+    "age": 22,
+    "club": "Club Brugge KV",
+    "value": 4500000,
+    "currency": "€",
+    "recordedDate": "18/03/2011"
+   },
+   {
+    "age": 21,
+    "club": "Club Brugge KV",
+    "value": 3500000,
+    "currency": "€",
+    "recordedDate": "28/12/2010"
+   },
+   {
+    "age": 21,
+    "club": "Club Brugge KV",
+    "value": 3500000,
+    "currency": "€",
+    "recordedDate": "28/07/2010"
+   },
+   {
+    "age": 20,
+    "club": "Club Brugge KV",
+    "value": 2500000,
+    "currency": "€",
+    "recordedDate": "07/12/2009"
+   },
+   {
+    "age": 20,
+    "club": "FC Sochaux-Montbéliard",
+    "value": 1000000,
+    "currency": "€",
+    "recordedDate": "01/07/2009"
+   },
+   {
+    "age": 20,
+    "club": "KSV Roeselare (-2020)",
+    "value": 600000,
+    "currency": "€",
+    "recordedDate": "26/03/2009"
+   },
+   {
+    "age": 19,
+    "club": "KSV Roeselare (-2020)",
+    "value": 350000,
+    "currency": "€",
+    "recordedDate": "28/01/2009"
+   },
+   {
+    "age": 19,
+    "club": "FC Sochaux-Montbéliard",
+    "value": 100000,
+    "currency": "€",
+    "recordedDate": "05/07/2008"
+   },
+   {
+    "age": 18,
+    "club": "FC Sochaux-Montbéliard B",
+    "value": 325000,
+    "currency": "€",
+    "recordedDate": "12/02/2007"
+   },
+   {
+    "age": 17,
+    "club": "FC Sochaux-Montbéliard B",
+    "value": 350000,
+    "currency": "€",
+    "recordedDate": "20/08/2006"
+   }
+  ],
+  "injuries": [
+   {
+    "reason": "Inner knee ligament tear",
+    "season": "2013",
+    "toDate": "22.04.2013",
+    "fromDate": "11.03.2013",
+    "missedGames": 8,
+    "absentDurationInDays": 43
+   },
+   {
+    "reason": "Cruciate ligament tear",
+    "season": "2024",
+    "toDate": "28.02.2024",
+    "fromDate": "20.09.2023",
+    "missedGames": 27,
+    "absentDurationInDays": 162
+   },
+   {
+    "reason": "Leg injury",
+    "season": "2022",
+    "toDate": "26.06.2022",
+    "fromDate": "22.05.2022",
+    "missedGames": 4,
+    "absentDurationInDays": 36
+   },
+   {
+    "reason": "Muscle fatigue",
+    "season": "2022",
+    "toDate": "08.03.2022",
+    "fromDate": "04.03.2022",
+    "missedGames": 1,
+    "absentDurationInDays": 5
+   },
+   {
+    "reason": "Corona virus",
+    "season": "2021",
+    "toDate": "14.07.2021",
+    "fromDate": "26.06.2021",
+    "missedGames": 1,
+    "absentDurationInDays": 19
+   },
+   {
+    "reason": "Muscle fatigue",
+    "season": "2021",
+    "toDate": "11.04.2021",
+    "fromDate": "02.04.2021",
+    "missedGames": 2,
+    "absentDurationInDays": 10
+   },
+   {
+    "reason": "Knock",
+    "season": "2020",
+    "toDate": "22.06.2020",
+    "fromDate": "14.06.2020",
+    "missedGames": 2,
+    "absentDurationInDays": 9
+   },
+   {
+    "reason": "Ankle injury",
+    "season": "2020",
+    "toDate": "30.03.2020",
+    "fromDate": "04.02.2020",
+    "missedGames": 8,
+    "absentDurationInDays": 56
+   },
+   {
+    "reason": "Influenza",
+    "season": "2020",
+    "toDate": "30.09.2019",
+    "fromDate": "27.09.2019",
+    "missedGames": 1,
+    "absentDurationInDays": 4
+   },
+   {
+    "reason": "Shoulder injury",
+    "season": "2018",
+    "toDate": "23.02.2018",
+    "fromDate": "12.02.2018",
+    "missedGames": 1,
+    "absentDurationInDays": 12
+   },
+   {
+    "reason": "Leg injury",
+    "season": "2016",
+    "toDate": "16.06.2016",
+    "fromDate": "13.06.2016",
+    "missedGames": null,
+    "absentDurationInDays": 4
+   },
+   {
+    "reason": "Ankle sprain",
+    "season": "2016",
+    "toDate": "28.01.2016",
+    "fromDate": "25.01.2016",
+    "missedGames": 1,
+    "absentDurationInDays": 4
+   },
+   {
+    "reason": "Adductor pain",
+    "season": "2015",
+    "toDate": "09.03.2015",
+    "fromDate": "12.02.2015",
+    "missedGames": 7,
+    "absentDurationInDays": 26
+   },
+   {
+    "reason": "Muscle strain",
+    "season": "2015",
+    "toDate": "12.02.2015",
+    "fromDate": "05.02.2015",
+    "missedGames": 1,
+    "absentDurationInDays": 8
+   },
+   {
+    "reason": "Broken shoulder",
+    "season": "2015",
+    "toDate": "22.09.2014",
+    "fromDate": "28.07.2014",
+    "missedGames": 8,
+    "absentDurationInDays": 57
+   },
+   {
+    "reason": "Stomach flu",
+    "season": "2014",
+    "toDate": "12.08.2013",
+    "fromDate": "08.08.2013",
+    "missedGames": 1,
+    "absentDurationInDays": 5
+   }
+  ]
+ }
+]

@@ -1,0 +1,424 @@
+[
+ {
+  "id": 382207,
+  "logo": null,
+  "name": "Josip Mišić",
+  "fullName": "Josip Mišić",
+  "profile": {
+   "club": {
+    "current": "GNK Dinamo Zagreb",
+    "joinedAt": "01/07/2021",
+    "contractExpiry": "30/06/2029",
+    "latestContractExtension": "01/08/2025"
+   },
+   "foot": "right",
+   "height": "1,87 m",
+   "fullName": "Josip Misic",
+   "position": {
+    "main": "Defensive Midfield",
+    "secondary": "Central Midfield"
+   },
+   "birthDate": "28/06/1994",
+   "deathDate": null,
+   "birthPlace": "Vinkovci",
+   "citizenship": "Croatia"
+  },
+  "rumours": {
+   "current": [],
+   "historical": [
+    {
+     "club": "PAOK Thessaloniki",
+     "rumourDate": "08/04/2024",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Fenerbahce",
+     "rumourDate": "07/09/2023",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Dynamo Moscow",
+     "rumourDate": "29/01/2022",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "PAOK Thessaloniki",
+     "rumourDate": "06/01/2019",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Frosinone Calcio",
+     "rumourDate": "05/01/2019",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Sporting CP",
+     "rumourDate": "07/01/2018",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "AC Sparta Praha",
+     "rumourDate": "02/01/2018",
+     "transferProbability": "N/A"
+    }
+   ]
+  },
+  "relatedNews": [],
+  "transfers": [
+   {
+    "to": "Dinamo Zagreb",
+    "fee": "€2.00M",
+    "from": "Sporting",
+    "type": "transfer",
+    "season": "21/22",
+    "marketValue": "€3.00M",
+    "transferDate": "Jul 1, 2021"
+   },
+   {
+    "to": "Sporting",
+    "fee": null,
+    "from": "Dinamo Zagreb",
+    "type": "end of loan",
+    "season": "20/21",
+    "marketValue": "€3.00M",
+    "transferDate": "Jun 30, 2021"
+   },
+   {
+    "to": "Dinamo Zagreb",
+    "fee": null,
+    "from": "Sporting",
+    "type": "loan",
+    "season": "20/21",
+    "marketValue": "€3.00M",
+    "transferDate": "Oct 19, 2020"
+   },
+   {
+    "to": "Sporting",
+    "fee": null,
+    "from": "PAOK",
+    "type": "end of loan",
+    "season": "19/20",
+    "marketValue": "€2.00M",
+    "transferDate": "Jun 30, 2020"
+   },
+   {
+    "to": "PAOK",
+    "fee": null,
+    "from": "Sporting",
+    "type": "loan",
+    "season": "18/19",
+    "marketValue": "€1.50M",
+    "transferDate": "Jan 17, 2019"
+   },
+   {
+    "to": "Sporting",
+    "fee": "€2.75M",
+    "from": "HNK Rijeka",
+    "type": "transfer",
+    "season": "17/18",
+    "marketValue": "€2.30M",
+    "transferDate": "Jan 6, 2018"
+   },
+   {
+    "to": "HNK Rijeka",
+    "fee": null,
+    "from": "Spezia Calcio",
+    "type": "end of loan",
+    "season": "15/16",
+    "marketValue": "€400.00K",
+    "transferDate": "Jun 30, 2016"
+   },
+   {
+    "to": "Spezia Calcio",
+    "fee": null,
+    "from": "HNK Rijeka",
+    "type": "loan",
+    "season": "15/16",
+    "marketValue": "€600.00K",
+    "transferDate": "Aug 24, 2015"
+   },
+   {
+    "to": "HNK Rijeka",
+    "fee": "€250.00K",
+    "from": "NK Osijek",
+    "type": "transfer",
+    "season": "14/15",
+    "marketValue": "€550.00K",
+    "transferDate": "Jan 26, 2015"
+   },
+   {
+    "to": "NK Osijek",
+    "fee": null,
+    "from": "NK Osijek U19",
+    "type": "transfer",
+    "season": "12/13",
+    "marketValue": null,
+    "transferDate": "Jul 1, 2012"
+   },
+   {
+    "to": "NK Osijek U19",
+    "fee": null,
+    "from": "NK Osijek U17",
+    "type": "transfer",
+    "season": "11/12",
+    "marketValue": null,
+    "transferDate": "Jul 1, 2011"
+   },
+   {
+    "to": "NK Osijek U17",
+    "fee": null,
+    "from": "NK Osijek Yth.",
+    "type": "transfer",
+    "season": "09/10",
+    "marketValue": null,
+    "transferDate": "Jul 1, 2009"
+   },
+   {
+    "to": "NK Osijek Yth.",
+    "fee": null,
+    "from": "Z. Bosnjaci",
+    "type": "transfer",
+    "season": "05/06",
+    "marketValue": null,
+    "transferDate": "Aug 19, 2005"
+   }
+  ],
+  "marketValue": [
+   {
+    "age": 31,
+    "club": "GNK Dinamo Zagreb",
+    "value": 1000000,
+    "currency": "€",
+    "recordedDate": "29/05/2026"
+   },
+   {
+    "age": 31,
+    "club": "GNK Dinamo Zagreb",
+    "value": 1200000,
+    "currency": "€",
+    "recordedDate": "22/12/2025"
+   },
+   {
+    "age": 31,
+    "club": "GNK Dinamo Zagreb",
+    "value": 1500000,
+    "currency": "€",
+    "recordedDate": "30/09/2025"
+   },
+   {
+    "age": 30,
+    "club": "GNK Dinamo Zagreb",
+    "value": 2000000,
+    "currency": "€",
+    "recordedDate": "09/06/2025"
+   },
+   {
+    "age": 30,
+    "club": "GNK Dinamo Zagreb",
+    "value": 2000000,
+    "currency": "€",
+    "recordedDate": "23/12/2024"
+   },
+   {
+    "age": 29,
+    "club": "GNK Dinamo Zagreb",
+    "value": 2500000,
+    "currency": "€",
+    "recordedDate": "04/06/2024"
+   },
+   {
+    "age": 29,
+    "club": "GNK Dinamo Zagreb",
+    "value": 2500000,
+    "currency": "€",
+    "recordedDate": "18/12/2023"
+   },
+   {
+    "age": 28,
+    "club": "GNK Dinamo Zagreb",
+    "value": 3500000,
+    "currency": "€",
+    "recordedDate": "06/06/2023"
+   },
+   {
+    "age": 28,
+    "club": "GNK Dinamo Zagreb",
+    "value": 3500000,
+    "currency": "€",
+    "recordedDate": "08/11/2022"
+   },
+   {
+    "age": 27,
+    "club": "GNK Dinamo Zagreb",
+    "value": 2000000,
+    "currency": "€",
+    "recordedDate": "06/06/2022"
+   },
+   {
+    "age": 27,
+    "club": "GNK Dinamo Zagreb",
+    "value": 2000000,
+    "currency": "€",
+    "recordedDate": "30/12/2021"
+   },
+   {
+    "age": 26,
+    "club": "GNK Dinamo Zagreb",
+    "value": 3000000,
+    "currency": "€",
+    "recordedDate": "10/06/2021"
+   },
+   {
+    "age": 26,
+    "club": "GNK Dinamo Zagreb",
+    "value": 3000000,
+    "currency": "€",
+    "recordedDate": "28/12/2020"
+   },
+   {
+    "age": 26,
+    "club": "Sporting CP",
+    "value": 3000000,
+    "currency": "€",
+    "recordedDate": "04/08/2020"
+   },
+   {
+    "age": 25,
+    "club": "PAOK Thessaloniki",
+    "value": 2000000,
+    "currency": "€",
+    "recordedDate": "08/04/2020"
+   },
+   {
+    "age": 25,
+    "club": "PAOK Thessaloniki",
+    "value": 2500000,
+    "currency": "€",
+    "recordedDate": "18/12/2019"
+   },
+   {
+    "age": 24,
+    "club": "PAOK Thessaloniki",
+    "value": 1500000,
+    "currency": "€",
+    "recordedDate": "21/05/2019"
+   },
+   {
+    "age": 24,
+    "club": "Sporting CP",
+    "value": 1500000,
+    "currency": "€",
+    "recordedDate": "11/01/2019"
+   },
+   {
+    "age": 23,
+    "club": "Sporting CP",
+    "value": 2000000,
+    "currency": "€",
+    "recordedDate": "13/06/2018"
+   },
+   {
+    "age": 23,
+    "club": "Sporting CP",
+    "value": 2000000,
+    "currency": "€",
+    "recordedDate": "07/02/2018"
+   },
+   {
+    "age": 23,
+    "club": "HNK Rijeka",
+    "value": 2350000,
+    "currency": "€",
+    "recordedDate": "23/10/2017"
+   },
+   {
+    "age": 22,
+    "club": "HNK Rijeka",
+    "value": 1500000,
+    "currency": "€",
+    "recordedDate": "13/03/2017"
+   },
+   {
+    "age": 22,
+    "club": "HNK Rijeka",
+    "value": 500000,
+    "currency": "€",
+    "recordedDate": "14/09/2016"
+   },
+   {
+    "age": 21,
+    "club": "Spezia Calcio",
+    "value": 400000,
+    "currency": "€",
+    "recordedDate": "13/06/2016"
+   },
+   {
+    "age": 21,
+    "club": "Spezia Calcio",
+    "value": 500000,
+    "currency": "€",
+    "recordedDate": "28/12/2015"
+   },
+   {
+    "age": 20,
+    "club": "HNK Rijeka",
+    "value": 600000,
+    "currency": "€",
+    "recordedDate": "17/03/2015"
+   },
+   {
+    "age": 20,
+    "club": "NK Osijek",
+    "value": 550000,
+    "currency": "€",
+    "recordedDate": "01/10/2014"
+   },
+   {
+    "age": 19,
+    "club": "NK Osijek",
+    "value": 350000,
+    "currency": "€",
+    "recordedDate": "11/03/2014"
+   },
+   {
+    "age": 19,
+    "club": "NK Osijek",
+    "value": 250000,
+    "currency": "€",
+    "recordedDate": "08/10/2013"
+   },
+   {
+    "age": 18,
+    "club": "NK Osijek",
+    "value": 250000,
+    "currency": "€",
+    "recordedDate": "03/03/2013"
+   },
+   {
+    "age": 18,
+    "club": "NK Osijek",
+    "value": 150000,
+    "currency": "€",
+    "recordedDate": "30/09/2012"
+   }
+  ],
+  "injuries": [
+   {
+    "reason": "Cyst in the knee",
+    "season": "2020",
+    "toDate": "16.11.2020",
+    "fromDate": "12.06.2020",
+    "missedGames": 28,
+    "absentDurationInDays": 158
+   },
+   {
+    "reason": "Ankle injury",
+    "season": "2019",
+    "toDate": "01.03.2019",
+    "fromDate": "27.02.2019",
+    "missedGames": null,
+    "absentDurationInDays": 3
+   }
+  ]
+ }
+]

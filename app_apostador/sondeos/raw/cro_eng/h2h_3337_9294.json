@@ -1,0 +1,70 @@
+[
+ {
+  "id": 1267466568,
+  "round": "Group Stage - 1",
+  "date": "2026-06-17T20:00:00.000Z",
+  "country": {
+   "code": "World",
+   "name": "World",
+   "logo": "https://highlightly.net/soccer/images/countries/World.png"
+  },
+  "state": {
+   "clock": 90,
+   "score": {
+    "current": "4 - 2",
+    "penalties": null
+   },
+   "description": "Finished"
+  },
+  "awayTeam": {
+   "id": 3337,
+   "logo": "https://highlightly.net/soccer/images/teams/3337.png",
+   "name": "Croatia"
+  },
+  "homeTeam": {
+   "id": 9294,
+   "logo": "https://highlightly.net/soccer/images/teams/9294.png",
+   "name": "England"
+  },
+  "league": {
+   "id": 1635,
+   "logo": null,
+   "name": "World Cup",
+   "season": 2026
+  }
+ },
+ {
+  "id": 559684762,
+  "round": "Group D - 1",
+  "date": "2021-06-13T13:00:00.000Z",
+  "country": {
+   "code": "World",
+   "name": "World",
+   "logo": "https://highlightly.net/soccer/images/countries/World.png"
+  },
+  "state": {
+   "clock": 90,
+   "score": {
+    "current": "1 - 0",
+    "penalties": null
+   },
+   "description": "Finished"
+  },
+  "awayTeam": {
+   "id": 3337,
+   "logo": "https://highlightly.net/soccer/images/teams/3337.png",
+   "name": "Croatia"
+  },
+  "homeTeam": {
+   "id": 9294,
+   "logo": "https://highlightly.net/soccer/images/teams/9294.png",
+   "name": "England"
+  },
+  "league": {
+   "id": 4188,
+   "logo": "https://highlightly.net/soccer/images/leagues/4188.png",
+   "name": "Euro Championship",
+   "season": 2020
+  }
+ }
+]

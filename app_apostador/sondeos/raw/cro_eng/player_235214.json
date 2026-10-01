@@ -1,0 +1,458 @@
+[
+ {
+  "id": 235214,
+  "logo": null,
+  "name": "B. Saka",
+  "fullName": "Bukayo Ayoyinka Temidayo Saka",
+  "profile": {
+   "club": {
+    "current": "Arsenal FC",
+    "joinedAt": "01/07/2019",
+    "contractExpiry": "30/06/2030",
+    "latestContractExtension": "19/02/2026"
+   },
+   "foot": "left",
+   "height": "1,78 m",
+   "fullName": "Bukayo Saka",
+   "position": {
+    "main": "Right Winger",
+    "secondary": "Left Winger, Right Midfield"
+   },
+   "birthDate": "05/09/2001",
+   "deathDate": null,
+   "birthPlace": "London",
+   "citizenship": "England, Nigeria"
+  },
+  "rumours": {
+   "current": [],
+   "historical": [
+    {
+     "club": "Paris Saint-Germain",
+     "rumourDate": "27/04/2023",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Real Madrid",
+     "rumourDate": "30/11/2022",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Manchester City",
+     "rumourDate": "07/06/2022",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Atlético de Madrid",
+     "rumourDate": "20/09/2021",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Juventus FC",
+     "rumourDate": "20/09/2021",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "AS Roma",
+     "rumourDate": "29/06/2021",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Liverpool FC",
+     "rumourDate": "11/05/2020",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Bayern Munich",
+     "rumourDate": "27/04/2020",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Borussia Dortmund",
+     "rumourDate": "26/04/2020",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Eintracht Frankfurt",
+     "rumourDate": "04/05/2019",
+     "transferProbability": "N/A"
+    }
+   ]
+  },
+  "relatedNews": [
+   {
+    "url": "https://www.transfermarkt.com/luke-shaw-3rd-phil-foden-11th-the-longest-serving-players-in-the-premier-league-at-one-club/view/news/487087",
+    "date": "Sep 15, 2026",
+    "title": "Luke Shaw 3rd, Phil Foden 11th - the longest serving players in the Premier League at one club"
+   },
+   {
+    "url": "https://www.transfermarkt.com/saka-guler-amp-co-the-20-most-valuable-players-snubbed-in-2026-ballon-dor-shortlist/view/news/486828",
+    "date": "Sep 9, 2026",
+    "title": "Saka, Guler & Co - The 20 most valuable players snubbed in 2026 Ballon d’Or shortlist"
+   },
+   {
+    "url": "https://www.transfermarkt.com/premier-league-2026-27-predictions-our-writers-predict-the-final-table-with-arsenal-top/view/news/485109",
+    "date": "Aug 21, 2026",
+    "title": "Premier League 2026/27 predictions: Our writers predict the final table with Arsenal top"
+   },
+   {
+    "url": "https://www.transfermarkt.com/brazilian-superstar-vinicius-junior-numbers-compared-to-arsenal-wingers-under-mikel-arteta/view/news/483593",
+    "date": "Jul 27, 2026",
+    "title": "Brazilian superstar - Vinicius Junior numbers compared to Arsenal wingers under Mikel Arteta"
+   },
+   {
+    "url": "https://www.transfermarkt.com/olise-4th-rice-7th-alvarez-10th-the-most-valuable-players-in-the-world-cup-semi-finals/view/news/482845",
+    "date": "Jul 13, 2026",
+    "title": "Olise 4th, Rice 7th, Alvarez 10th - the most valuable players in the World Cup semi-finals"
+   },
+   {
+    "url": "https://www.transfermarkt.com/bellingham-2nd-amp-saka-6th-which-players-lost-the-most-market-value-last-season-/view/news/481303",
+    "date": "Jun 19, 2026",
+    "title": "Bellingham 2nd & Saka 6th: Which players lost the most market value last season?"
+   },
+   {
+    "url": "https://www.transfermarkt.com/out-of-form-and-falling-market-values-the-mvps-that-need-to-have-a-strong-world-cup/view/news/480800",
+    "date": "Jun 12, 2026",
+    "title": "Out of form and falling market values - The MVPs that need to have a strong World Cup"
+   },
+   {
+    "url": "https://www.transfermarkt.com/bellingham-9th-guler-20th-amp-leao-82nd-the-top-100-most-valuable-players-at-the-world-cup/view/news/480791",
+    "date": "Jun 10, 2026",
+    "title": "Bellingham 9th, Güler 20th & Leão 82nd: The top 100 most valuable players at the World Cup"
+   },
+   {
+    "url": "https://www.transfermarkt.com/wirtz-3rd-foden-6th-the-premier-league-players-to-lose-the-most-value-last-season/view/news/480777",
+    "date": "Jun 9, 2026",
+    "title": "Wirtz 3rd, Foden 6th - the Premier League players to lose the most value last season"
+   },
+   {
+    "url": "https://www.transfermarkt.com/mbappe-3rd-rice-12th-amp-osimhen-52nd-the-top-100-most-valuable-players-in-the-world/view/news/480648",
+    "date": "Jun 6, 2026",
+    "title": "Mbappe 3rd, Rice 12th & Osimhen 52nd: The top 100 most valuable players in the world"
+   },
+   {
+    "url": "https://www.transfermarkt.com/premier-league-market-values-saliba-hits-milestone-huge-downgrades-at-tottenham/view/news/480081",
+    "date": "Jun 3, 2026",
+    "title": "Premier League market values: Saliba hits milestone, huge downgrades at Tottenham"
+   },
+   {
+    "url": "https://www.transfermarkt.com/15-year-drought-every-english-player-to-score-in-a-champions-league-final/view/news/480295",
+    "date": "May 30, 2026",
+    "title": "15-year drought - Every English player to score in a Champions League final"
+   }
+  ],
+  "transfers": [
+   {
+    "to": "Arsenal",
+    "fee": null,
+    "from": "Arsenal U21",
+    "type": "transfer",
+    "season": "19/20",
+    "marketValue": null,
+    "transferDate": "Jul 1, 2019"
+   },
+   {
+    "to": "Arsenal U21",
+    "fee": null,
+    "from": "Arsenal U18",
+    "type": "transfer",
+    "season": "18/19",
+    "marketValue": null,
+    "transferDate": "Jul 1, 2018"
+   },
+   {
+    "to": "Arsenal U18",
+    "fee": null,
+    "from": "Arsenal Youth",
+    "type": "transfer",
+    "season": "17/18",
+    "marketValue": null,
+    "transferDate": "Jul 1, 2017"
+   },
+   {
+    "to": "Arsenal Youth",
+    "fee": null,
+    "from": "Watford Yth.",
+    "type": "transfer",
+    "season": "10/11",
+    "marketValue": null,
+    "transferDate": "Jul 1, 2010"
+   }
+  ],
+  "marketValue": [
+   {
+    "age": 24,
+    "club": "Arsenal FC",
+    "value": 110000000,
+    "currency": "€",
+    "recordedDate": "03/06/2026"
+   },
+   {
+    "age": 24,
+    "club": "Arsenal FC",
+    "value": 120000000,
+    "currency": "€",
+    "recordedDate": "09/03/2026"
+   },
+   {
+    "age": 24,
+    "club": "Arsenal FC",
+    "value": 130000000,
+    "currency": "€",
+    "recordedDate": "09/12/2025"
+   },
+   {
+    "age": 24,
+    "club": "Arsenal FC",
+    "value": 140000000,
+    "currency": "€",
+    "recordedDate": "17/10/2025"
+   },
+   {
+    "age": 23,
+    "club": "Arsenal FC",
+    "value": 150000000,
+    "currency": "€",
+    "recordedDate": "30/05/2025"
+   },
+   {
+    "age": 23,
+    "club": "Arsenal FC",
+    "value": 150000000,
+    "currency": "€",
+    "recordedDate": "16/12/2024"
+   },
+   {
+    "age": 22,
+    "club": "Arsenal FC",
+    "value": 140000000,
+    "currency": "€",
+    "recordedDate": "27/05/2024"
+   },
+   {
+    "age": 22,
+    "club": "Arsenal FC",
+    "value": 130000000,
+    "currency": "€",
+    "recordedDate": "14/03/2024"
+   },
+   {
+    "age": 22,
+    "club": "Arsenal FC",
+    "value": 120000000,
+    "currency": "€",
+    "recordedDate": "19/12/2023"
+   },
+   {
+    "age": 21,
+    "club": "Arsenal FC",
+    "value": 120000000,
+    "currency": "€",
+    "recordedDate": "20/06/2023"
+   },
+   {
+    "age": 21,
+    "club": "Arsenal FC",
+    "value": 110000000,
+    "currency": "€",
+    "recordedDate": "16/03/2023"
+   },
+   {
+    "age": 21,
+    "club": "Arsenal FC",
+    "value": 100000000,
+    "currency": "€",
+    "recordedDate": "23/12/2022"
+   },
+   {
+    "age": 21,
+    "club": "Arsenal FC",
+    "value": 90000000,
+    "currency": "€",
+    "recordedDate": "03/11/2022"
+   },
+   {
+    "age": 21,
+    "club": "Arsenal FC",
+    "value": 70000000,
+    "currency": "€",
+    "recordedDate": "15/09/2022"
+   },
+   {
+    "age": 20,
+    "club": "Arsenal FC",
+    "value": 65000000,
+    "currency": "€",
+    "recordedDate": "15/06/2022"
+   },
+   {
+    "age": 20,
+    "club": "Arsenal FC",
+    "value": 65000000,
+    "currency": "€",
+    "recordedDate": "23/12/2021"
+   },
+   {
+    "age": 19,
+    "club": "Arsenal FC",
+    "value": 65000000,
+    "currency": "€",
+    "recordedDate": "28/05/2021"
+   },
+   {
+    "age": 19,
+    "club": "Arsenal FC",
+    "value": 60000000,
+    "currency": "€",
+    "recordedDate": "18/03/2021"
+   },
+   {
+    "age": 19,
+    "club": "Arsenal FC",
+    "value": 40000000,
+    "currency": "€",
+    "recordedDate": "13/10/2020"
+   },
+   {
+    "age": 18,
+    "club": "Arsenal FC",
+    "value": 35000000,
+    "currency": "€",
+    "recordedDate": "30/07/2020"
+   },
+   {
+    "age": 18,
+    "club": "Arsenal FC",
+    "value": 20000000,
+    "currency": "€",
+    "recordedDate": "08/04/2020"
+   },
+   {
+    "age": 18,
+    "club": "Arsenal FC",
+    "value": 22000000,
+    "currency": "€",
+    "recordedDate": "09/03/2020"
+   },
+   {
+    "age": 18,
+    "club": "Arsenal FC",
+    "value": 13000000,
+    "currency": "€",
+    "recordedDate": "10/12/2019"
+   },
+   {
+    "age": 18,
+    "club": "Arsenal FC",
+    "value": 7000000,
+    "currency": "€",
+    "recordedDate": "23/09/2019"
+   }
+  ],
+  "injuries": [
+   {
+    "reason": "Achilles tendon problems",
+    "season": "2026",
+    "toDate": "20.04.2026",
+    "fromDate": "23.03.2026",
+    "missedGames": 7,
+    "absentDurationInDays": 29
+   },
+   {
+    "reason": "Hip injury",
+    "season": "2026",
+    "toDate": "11.02.2026",
+    "fromDate": "30.01.2026",
+    "missedGames": 3,
+    "absentDurationInDays": 13
+   },
+   {
+    "reason": "Hamstring injury",
+    "season": "2026",
+    "toDate": "17.09.2025",
+    "fromDate": "23.08.2025",
+    "missedGames": 5,
+    "absentDurationInDays": 26
+   },
+   {
+    "reason": "Hamstring injury",
+    "season": "2025",
+    "toDate": "30.03.2025",
+    "fromDate": "22.12.2024",
+    "missedGames": 21,
+    "absentDurationInDays": 99
+   },
+   {
+    "reason": "Thigh problems",
+    "season": "2025",
+    "toDate": "24.10.2024",
+    "fromDate": "10.10.2024",
+    "missedGames": 3,
+    "absentDurationInDays": 15
+   },
+   {
+    "reason": "Muscle injury",
+    "season": "2025",
+    "toDate": "20.05.2024",
+    "fromDate": "13.05.2024",
+    "missedGames": 1,
+    "absentDurationInDays": 8
+   },
+   {
+    "reason": "Unknown",
+    "season": "2024",
+    "toDate": "06.04.2024",
+    "fromDate": "21.03.2024",
+    "missedGames": 3,
+    "absentDurationInDays": 17
+   },
+   {
+    "reason": "Thigh problems",
+    "season": "2024",
+    "toDate": "21.10.2023",
+    "fromDate": "03.10.2023",
+    "missedGames": 3,
+    "absentDurationInDays": 19
+   },
+   {
+    "reason": "Dead leg",
+    "season": "2022",
+    "toDate": "05.07.2021",
+    "fromDate": "30.06.2021",
+    "missedGames": 1,
+    "absentDurationInDays": 6
+   },
+   {
+    "reason": "Hip problems",
+    "season": "2021",
+    "toDate": "31.01.2021",
+    "fromDate": "28.01.2021",
+    "missedGames": 1,
+    "absentDurationInDays": 4
+   },
+   {
+    "reason": "Ankle injury",
+    "season": "2021",
+    "toDate": "01.01.2021",
+    "fromDate": "30.12.2020",
+    "missedGames": null,
+    "absentDurationInDays": 3
+   },
+   {
+    "reason": "Hamstring injury",
+    "season": "2021",
+    "toDate": "28.11.2020",
+    "fromDate": "23.11.2020",
+    "missedGames": 1,
+    "absentDurationInDays": 6
+   },
+   {
+    "reason": "Knee injury",
+    "season": "2020",
+    "toDate": "15.02.2020",
+    "fromDate": "03.02.2020",
+    "missedGames": null,
+    "absentDurationInDays": 13
+   }
+  ]
+ }
+]

@@ -1,0 +1,348 @@
+[
+ {
+  "id": 41999419,
+  "logo": null,
+  "name": "Marco Pašalić",
+  "fullName": "Marco Pasalic",
+  "profile": {
+   "club": {
+    "current": "Orlando City SC",
+    "joinedAt": "05/02/2025",
+    "contractExpiry": "31/12/2027",
+    "latestContractExtension": null
+   },
+   "foot": "left",
+   "height": "1,77 m",
+   "fullName": "Marco Pasalic",
+   "position": {
+    "main": "Right Winger",
+    "secondary": "Left Winger, Right Midfield"
+   },
+   "birthDate": "14/09/2000",
+   "deathDate": null,
+   "birthPlace": "Karlsruhe",
+   "citizenship": "Croatia, Germany"
+  },
+  "rumours": {
+   "current": [
+    {
+     "club": "Corum FK",
+     "rumourDate": "31/08/2026",
+     "transferProbability": "N/A"
+    }
+   ],
+   "historical": [
+    {
+     "club": "Hull City",
+     "rumourDate": "23/07/2026",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "AS Roma",
+     "rumourDate": "17/12/2025",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Bologna FC 1909",
+     "rumourDate": "27/10/2025",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Feyenoord Rotterdam",
+     "rumourDate": "27/10/2025",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Borussia Mönchengladbach",
+     "rumourDate": "20/10/2025",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Orlando City SC",
+     "rumourDate": "08/02/2025",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Hellas Verona",
+     "rumourDate": "15/01/2025",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Wolverhampton Wanderers",
+     "rumourDate": "03/08/2024",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "GNK Dinamo Zagreb",
+     "rumourDate": "04/07/2024",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "NK Osijek",
+     "rumourDate": "03/06/2023",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "HNK Rijeka",
+     "rumourDate": "22/06/2023",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "Eintracht Braunschweig",
+     "rumourDate": "15/06/2023",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "HNK Hajduk Split",
+     "rumourDate": "12/05/2023",
+     "transferProbability": "N/A"
+    },
+    {
+     "club": "GNK Dinamo Zagreb",
+     "rumourDate": "11/05/2023",
+     "transferProbability": "N/A"
+    }
+   ]
+  },
+  "relatedNews": [
+   {
+    "url": "https://www.transfermarkt.com/major-league-soccer-market-values-heung-min-son-drops-sebastian-berhalter-up-by-euro-3m/view/news/480074",
+    "date": "Jun 2, 2026",
+    "title": "Major League Soccer market values: Heung-min Son drops - Sebastian Berhalter up by €3m"
+   },
+   {
+    "url": "https://www.transfermarkt.com/major-league-soccer-preview-30-players-to-watch-ahead-of-the-2025-season/view/news/450521",
+    "date": "Feb 20, 2025",
+    "title": "Major League Soccer Preview: 30 players to watch ahead of the 2025 season"
+   }
+  ],
+  "transfers": [
+   {
+    "to": "Orlando",
+    "fee": "€4.80M",
+    "from": "HNK Rijeka",
+    "type": "transfer",
+    "season": "24/25",
+    "marketValue": "€4.00M",
+    "transferDate": "Feb 5, 2025"
+   },
+   {
+    "to": "HNK Rijeka",
+    "fee": null,
+    "from": "B. Dortmund II",
+    "type": "transfer",
+    "season": "23/24",
+    "marketValue": "€350.00K",
+    "transferDate": "Jul 1, 2023"
+   },
+   {
+    "to": "B. Dortmund II",
+    "fee": null,
+    "from": "Stuttgart II",
+    "type": "transfer",
+    "season": "21/22",
+    "marketValue": "€250.00K",
+    "transferDate": "Jul 1, 2021"
+   },
+   {
+    "to": "Stuttgart II",
+    "fee": null,
+    "from": "Karlsruhe U19",
+    "type": "transfer",
+    "season": "19/20",
+    "marketValue": null,
+    "transferDate": "Jul 1, 2019"
+   },
+   {
+    "to": "Karlsruhe U19",
+    "fee": null,
+    "from": "Karlsruhe U17",
+    "type": "transfer",
+    "season": "17/18",
+    "marketValue": null,
+    "transferDate": "Jul 1, 2017"
+   },
+   {
+    "to": "Karlsruhe U17",
+    "fee": null,
+    "from": "Hoffenheim Yth.",
+    "type": "transfer",
+    "season": "16/17",
+    "marketValue": null,
+    "transferDate": "Jul 1, 2016"
+   }
+  ],
+  "marketValue": [
+   {
+    "age": 25,
+    "club": "Orlando City SC",
+    "value": 6500000,
+    "currency": "€",
+    "recordedDate": "02/06/2026"
+   },
+   {
+    "age": 25,
+    "club": "Orlando City SC",
+    "value": 6500000,
+    "currency": "€",
+    "recordedDate": "11/12/2025"
+   },
+   {
+    "age": 24,
+    "club": "Orlando City SC",
+    "value": 6000000,
+    "currency": "€",
+    "recordedDate": "12/09/2025"
+   },
+   {
+    "age": 24,
+    "club": "Orlando City SC",
+    "value": 5000000,
+    "currency": "€",
+    "recordedDate": "05/06/2025"
+   },
+   {
+    "age": 24,
+    "club": "Orlando City SC",
+    "value": 5000000,
+    "currency": "€",
+    "recordedDate": "17/04/2025"
+   },
+   {
+    "age": 24,
+    "club": "HNK Rijeka",
+    "value": 4000000,
+    "currency": "€",
+    "recordedDate": "23/12/2024"
+   },
+   {
+    "age": 23,
+    "club": "HNK Rijeka",
+    "value": 4000000,
+    "currency": "€",
+    "recordedDate": "04/06/2024"
+   },
+   {
+    "age": 23,
+    "club": "HNK Rijeka",
+    "value": 3500000,
+    "currency": "€",
+    "recordedDate": "18/12/2023"
+   },
+   {
+    "age": 22,
+    "club": "Borussia Dortmund II",
+    "value": 350000,
+    "currency": "€",
+    "recordedDate": "13/06/2023"
+   },
+   {
+    "age": 22,
+    "club": "Borussia Dortmund II",
+    "value": 400000,
+    "currency": "€",
+    "recordedDate": "08/12/2022"
+   },
+   {
+    "age": 21,
+    "club": "Borussia Dortmund II",
+    "value": 275000,
+    "currency": "€",
+    "recordedDate": "01/06/2022"
+   },
+   {
+    "age": 21,
+    "club": "Borussia Dortmund II",
+    "value": 350000,
+    "currency": "€",
+    "recordedDate": "30/12/2021"
+   },
+   {
+    "age": 21,
+    "club": "Borussia Dortmund II",
+    "value": 350000,
+    "currency": "€",
+    "recordedDate": "11/10/2021"
+   },
+   {
+    "age": 20,
+    "club": "VfB Stuttgart II",
+    "value": 250000,
+    "currency": "€",
+    "recordedDate": "30/06/2021"
+   },
+   {
+    "age": 20,
+    "club": "VfB Stuttgart II",
+    "value": 125000,
+    "currency": "€",
+    "recordedDate": "15/02/2021"
+   },
+   {
+    "age": 20,
+    "club": "VfB Stuttgart II",
+    "value": 75000,
+    "currency": "€",
+    "recordedDate": "15/09/2020"
+   }
+  ],
+  "injuries": [
+   {
+    "reason": "Muscle injury",
+    "season": "2027",
+    "toDate": "03.08.2026",
+    "fromDate": "21.07.2026",
+    "missedGames": 3,
+    "absentDurationInDays": 14
+   },
+   {
+    "reason": "Hamstring injury",
+    "season": "2026",
+    "toDate": "12.05.2026",
+    "fromDate": "17.04.2026",
+    "missedGames": 6,
+    "absentDurationInDays": 26
+   },
+   {
+    "reason": "Ill",
+    "season": "2023",
+    "toDate": "09.04.2023",
+    "fromDate": "31.03.2023",
+    "missedGames": 5,
+    "absentDurationInDays": 10
+   },
+   {
+    "reason": "Shoulder injury",
+    "season": "2022",
+    "toDate": "08.08.2022",
+    "fromDate": "13.03.2022",
+    "missedGames": 20,
+    "absentDurationInDays": 149
+   },
+   {
+    "reason": "Syndesmosis ligament tear",
+    "season": "2022",
+    "toDate": "23.01.2022",
+    "fromDate": "05.09.2021",
+    "missedGames": 40,
+    "absentDurationInDays": 141
+   },
+   {
+    "reason": "Minor knock",
+    "season": "2021",
+    "toDate": "28.05.2021",
+    "fromDate": "14.05.2021",
+    "missedGames": 2,
+    "absentDurationInDays": 15
+   },
+   {
+    "reason": "Ill",
+    "season": "2018",
+    "toDate": "22.09.2017",
+    "fromDate": "09.09.2017",
+    "missedGames": 2,
+    "absentDurationInDays": 14
+   }
+  ]
+ }
+]
