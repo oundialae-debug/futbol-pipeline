@@ -1,4 +1,4 @@
-# Tenis en directo, 01/10/2026 03:23 UTC (05:23 en España)
+# Tenis en directo, 01/10/2026 03:37 UTC (05:37 en España)
 
 Calculadora desde el marcador exacto (modelo de puntos, superficie real) frente a la cuota en directo
 (sin margen). Ganador y sets: la calculadora suele coincidir con la casa. Total de juegos: el modelo
@@ -7,22 +7,26 @@ Se actualiza cada ~5 min; el registro en data/tenis/api_tennis/registro/ servir�
 
 | partido | tipo | superficie | marcador (sets, juegos, puntos, saca) | gana 1º: modelo / cuota | sets más probables (modelo) | total juegos: línea, modelo / cuota |
 |---|---|---|---|---|---|---|
-| A. Molcan vs T. Machac | Atp Singles | Hard | 0-0, 1-0, 0 - 40, saca T. Machac | 38% /  | 0-2 33%, 1-2 28% |  |
-| J. Faria vs A. Fery | Atp Singles | Hard | 1-0, 2-3, 0 - 0, saca A. Fery | 56% / 57% | 1-2 44%, 2-1 39% |  |
-| L. Darderi vs C. Ruud | Atp Singles | Hard | 1-0, 1-0, 15 - 0, saca C. Ruud | 53% / 74% | 1-2 47%, 2-0 36% |  |
-| T. Fritz vs J. Munar | Atp Singles | Hard | 0-0, 6-6, 7 - 7, saca J. Munar | 67% / 64% | 2-0 36%, 2-1 31% | 26.5: 48% / 49% |
-| A. De Minaur vs M. Navone | Atp Singles | Hard | 0-0, 1-2, 40 - 0, saca A. De Minaur | 83% / 79% | 2-0 54%, 2-1 29% | 21.5: 60% / 54% |
-| A. Walton vs M. Bellucci | Challenger Men Singles | Hard | 0-0, 2-1, 30 - 15, saca A. Walton | 67% / 65% | 2-0 42%, 2-1 25% | 22.5: 63% / 51% |
-| A. Ibragimova vs K. Okamura | Challenger Women Singles | Hard | 0-0, 2-1, 40 - 30, saca K. Okamura | 63% / 83% | 2-0 37%, 2-1 26% | 19.5: 74% / 46% |
-| T. Yamanaka vs Y. Tomida | Itf Men Singles | Hard | 1-0, 1-5, 40 - 40, saca T. Yamanaka | 53% / 38% | 2-1 52%, 1-2 47% | 26.5: 55% / 46% |
-| R. Matsuda vs R. Komagata | Itf Men Singles | Hard | 1-0, 0-0, 0 - 15, saca R. Matsuda | 77% / 90% | 2-0 50%, 2-1 27% | 19.5: 73% / 46% |
-| T. Kokkinis vs M. Uemura | Itf Women Singles | Hard | 1-0, 3-3, 15 - 40, saca M. Uemura | 91% / 83% | 2-0 61%, 2-1 30% |  |
-| Y. Sun vs M. Chen | Itf Women Singles | Hard | 1-0, 3-0, 15 - 30, saca Y. Sun | 98% / 91% | 2-0 93%, 2-1 5% |  |
-| H. E. Lee vs Y. Hou | Itf Women Singles | Hard | 1-0, 3-3, 0 - 0, saca H. E. Lee | 85% / 87% | 2-0 60%, 2-1 25% |  |
-| N. Hanatani vs N. Onozawa | Itf Women Singles | Hard | 1-1, 1-1, 40 - A, saca N. Hanatani | 28% /  | 1-2 72%, 2-1 28% |  |
-| K. Sawashiro vs A. Beck | Itf Women Singles | Hard | 1-0, 0-0, 0 - 0, saca A. Beck | 96% / 91% | 2-0 79%, 2-1 17% |  |
-| M. Barry vs Y. Kitahara | Itf Women Singles | Hard | 0-0, 0-0, 0 - 0, saca Y. Kitahara | 22% / 31% | 0-2 48%, 1-2 29% |  |
-| Q. Zheng vs H. Shi | Wta Singles | Hard | 0-0, 1-1, 15 - 40, saca Q. Zheng | 88% / 84% | 2-0 56%, 2-1 32% | 21.5: 52% / 46% |
-| K. Volynets vs R. Montgomery | Wta Singles | Hard | 0-0, 0-1, A - 40, saca K. Volynets | 71% / 53% | 2-0 41%, 2-1 31% | 22.5: 53% / 50% |
-| Y. Starodubtseva vs A. Charaeva | Wta Singles | Hard | 0-0, 2-0, 15 - 0, saca A. Charaeva | 78% / 73% | 2-0 53%, 2-1 26% | 19.5: 63% / 51% |
-| S. Kenin vs A. Krueger | Wta Singles | Hard | 0-0, 1-2, 0 - 0, saca S. Kenin | 34% / 34% | 0-2 38%, 1-2 28% | 21.5: 66% / 51% |
+| A. Molcan vs T. Machac | Atp Singles | Hard | 0-0, 2-2, 15 - 15, saca A. Molcan | 38% / 47% | 0-2 34%, 1-2 28% | 24.5: 55% / 50% |
+| J. Faria vs A. Fery | Atp Singles | Hard | 1-1, 0-0, 15 - 40, saca A. Fery | 42% / 30% | 1-2 58%, 2-1 42% | 28.5: 61% / 49% |
+| L. Darderi vs C. Ruud | Atp Singles | Hard | 1-0, 3-0, 0 - 0, saca C. Ruud | 81% / 91% | 2-0 74%, 1-2 19% | 21.5: 84% / 56% |
+| T. Fritz vs J. Munar | Atp Singles | Hard | 1-0, 0-0, 40 - 40, saca T. Fritz | 87% / 81% | 2-0 63%, 2-1 24% | 25.5: 54% / 51% |
+| T. M. Etcheverry vs S. Tsitsipas | Atp Singles | Hard | 0-0, 0-0, 0 - 0, saca S. Tsitsipas | 41% / 27% | 0-2 32%, 1-2 28% | 22.5: 69% / 51% |
+| A. De Minaur vs M. Navone | Atp Singles | Hard | 0-0, 3-3, 30 - 40, saca M. Navone | 81% / 79% | 2-0 48%, 2-1 32% | 22.5: 56% / 50% |
+| A. Walton vs M. Bellucci | Challenger Men Singles | Hard | 0-0, 3-2, 15 - 30, saca A. Walton | 64% / 59% | 2-0 38%, 2-1 25% | 23.5: 56% / 50% |
+| S. Lansere vs S. Costoulas | Challenger Women Singles | Hard | 0-0, 0-0, 30 - 15, saca S. Lansere | 47% / 29% | 1-2 27%, 0-2 27% | 20.5: 68% / 49% |
+| A. Ibragimova vs K. Okamura | Challenger Women Singles | Hard | 0-0, 5-2, 15 - 0, saca K. Okamura | 75% / 90% | 2-0 50%, 2-1 25% | 17.5: 80% / 50% |
+| Z. Zhao vs M. Purcell | Itf Men Singles | Hard | 0-0, 0-0, 0 - 0, saca Z. Zhao | 5% / 9% | 0-2 76%, 1-2 20% | 17.5: 83% / 51% |
+| T. Yamanaka vs Y. Tomida | Itf Men Singles | Hard | 1-1, 0-2, 0 - 15, saca Y. Tomida | 20% / 13% | 1-2 80%, 2-1 20% | 24.5: 69% / 49% |
+| R. Matsuda vs R. Komagata | Itf Men Singles | Hard | 1-0, 3-0, 30 - 15, saca R. Komagata | 96% / 96% | 2-0 90%, 2-1 5% | 16.5: 92% / 69% |
+| T. Kokkinis vs M. Uemura | Itf Women Singles | Hard | 1-0, 4-5, 0 - 15, saca T. Kokkinis | 87% / 77% | 2-1 44%, 2-0 42% |  |
+| E. M. Desvignes vs H. Koyama | Itf Women Singles | Hard | 0-0, 0-1, 15 - 30, saca H. Koyama | 50% / 78% | 2-1 30%, 0-2 28% |  |
+| Y. Sun vs M. Chen | Itf Women Singles | Hard | 1-0, 5-1, 15 - 0, saca M. Chen | 100% / 98% | 2-0 99%, 2-1 1% |  |
+| H. E. Lee vs Y. Hou | Itf Women Singles | Hard | 1-0, 5-4, 15 - 30, saca Y. Hou | 88% / 87% | 2-0 67%, 2-1 21% |  |
+| N. Hanatani vs N. Onozawa | Itf Women Singles | Hard | 1-1, 4-1, 0 - 0, saca N. Onozawa | 80% /  | 2-1 80%, 1-2 20% |  |
+| K. Sawashiro vs A. Beck | Itf Women Singles | Hard | 1-0, 0-2, 15 - 30, saca A. Beck | 89% / 78% | 2-0 47%, 2-1 42% |  |
+| M. Barry vs Y. Kitahara | Itf Women Singles | Hard | 0-0, 0-2, 40 - 30, saca Y. Kitahara | 17% / 25% | 0-2 57%, 1-2 26% |  |
+| Q. Zheng vs H. Shi | Wta Singles | Hard | 0-0, 3-3, 0 - 0, saca Q. Zheng | 90% / 88% | 2-0 62%, 2-1 27% | 20.5: 60% / 54% |
+| K. Volynets vs R. Montgomery | Wta Singles | Hard | 0-0, 2-2, 15 - 0, saca R. Montgomery | 75% / 62% | 2-0 45%, 2-1 29% | 22.5: 52% / 50% |
+| Y. Starodubtseva vs A. Charaeva | Wta Singles | Hard | 0-0, 4-1, 0 - 0, saca Y. Starodubtseva | 83% / 78% | 2-0 58%, 2-1 24% | 19.5: 58% / 50% |
+| S. Kenin vs A. Krueger | Wta Singles | Hard | 0-0, 2-5, 0 - 0, saca S. Kenin | 20% / 21% | 0-2 55%, 1-2 25% | 20.5: 60% / 50% |
