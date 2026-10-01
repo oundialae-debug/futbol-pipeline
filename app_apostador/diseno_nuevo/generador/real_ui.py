@@ -2,7 +2,7 @@
 import json
 from pathlib import Path
 from logo import icono, palabra
-from equipaciones import kit, colores_partido, KITS
+from equipaciones import kit, colores_partido, colores_grupo, colores_lista, KITS
 
 APP = Path(__file__).resolve().parents[2]
 D = json.loads((APP / "datos_app.json").read_text())
@@ -55,6 +55,21 @@ def franjas(k, alto=20):
                 f'background: {k["c1"]}; box-shadow: 0 0 0 1px rgba(255,255,255,0.14)"></span>')
     return (f'<span aria-hidden="true" style="display: inline-flex; flex-shrink: 0; height: {alto}px; border-radius: 3px; overflow: hidden; box-shadow: 0 0 0 1px rgba(255,255,255,0.14)">'
             f'<span style="width: 5px; background: {k["c1"]}"></span><span style="width: 5px; background: {k["c2"]}"></span></span>')
+
+
+def largo(n):
+    return CORTO_A_LARGO.get(n, n)
+
+
+def kgrupo(nombres, fijos=None):
+    """Colores de varios equipos a la vez, sin dos iguales (por nombre corto o largo)."""
+    c = colores_grupo([largo(n) for n in nombres], {largo(k): v for k, v in (fijos or {}).items()})
+    return {n: c[largo(n)] for n in nombres}
+
+
+def klista(nombres):
+    c = colores_lista([largo(n) for n in nombres])
+    return {n: c[largo(n)] for n in nombres}
 
 
 def kequipo(nombre):

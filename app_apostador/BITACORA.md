@@ -491,3 +491,38 @@ carpeta se apunta aquí.
   desde 40' antes del partido).
 - **Workflow:** `sondeo_2yellow.yml` lanza ahora el script nombrado en la
   primera línea de `sondeos/ejecutar.txt`.
+
+## 01/10/2026: previa Croacia–Inglaterra con lo que trajo la API
+
+- **Resultado del sondeo** (47 llamadas, todas HTTP 200): `sondeos/resultado.txt`.
+- **Fallo corregido:** la previa decía «Zagreb». El partido es en **Rijeka**
+  (Stadion HNK Rijeka, 8.191). Corregido en la pantalla y en `video_cro_eng.py`
+  (el vídeo no se ha regenerado).
+- **Nuevo en la previa:**
+  - franja de sede: estadio, previsión (despejado, 20 °C) y hora; árbitro
+    sin designar todavía, así que no sale;
+  - «Squads this season»: valor de mercado de los dos onces probables (€172M
+    contra €745M), minutos y goles+asistencias con sus clubes en 2026/27, y
+    los 3 más en forma de cada uno; ninguna lesión actual en la lista;
+  - «Last meeting»: ahora con el minuto a minuto real del Mundial (6 goles
+    con asistente) y el partido anterior (Euro 2020, 13/06/2021, 1-0). La API
+    solo tiene esos 2 cara a cara.
+- **Datos:** `nl_datos.py` añade `partido_api`, `h2h_api`, `plantilla_api` y
+  el minuto a minuto del Mundial. Las tildes que la API quita en los eventos
+  («P. Sucic») se recuperan de nuestros nombres.
+- **Vídeos fuera** (/highlights): el usuario duda de que sea legal.
+
+## 01/10/2026: colores de las equipaciones (en curso)
+
+- **Queja del usuario:** España y Chequia salían las dos en rojo.
+- **Fuente:** ficha de Wikipedia de cada selección y club (1ª, 2ª y 3ª
+  equipación 2026/27) y el dibujo de cada camiseta en Commons, del que se
+  miden los colores (rayas y cuadros incluidos). Scripts en `colores/`.
+  Wikimedia bloqueó el contenedor por exceso de peticiones: la descarga va por
+  GitHub Actions (`colores_2yellow.yml`, sin la API de fútbol).
+- **Reparto sin choques** (`equipaciones.py`): el visitante prueba 1ª, 2ª y
+  3ª; nuevo `colores_grupo` para varios equipos a la vez (grupo, tarjeta
+  «What's at stake») y `colores_lista` para tablas largas (filas vecinas sin
+  el mismo color). Si todas chocan, el color secundario pasa a principal.
+  Aplicado en el grupo, la tabla de grupos, el ranking FIFA y las tablas de
+  LaLiga.

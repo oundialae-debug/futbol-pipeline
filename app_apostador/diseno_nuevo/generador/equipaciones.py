@@ -100,21 +100,70 @@ def texto_sobre(h):
 
 
 def kit(equipo, cual=0):
-    k = KITS.get(equipo, (("#7C8496", "#F4F4F4"), ("#F4F4F4", "#7C8496")))[cual]
-    return {"c1": k[0], "c2": k[1], "barra": legible(k[0]), "texto": texto_sobre(k[0]), "segunda": cual == 1,
-            "una": cual == 1 or equipo in UN_COLOR}
+    ks = KITS.get(equipo, (("#7C8496", "#F4F4F4"), ("#F4F4F4", "#7C8496")))
+    k = ks[min(cual, len(ks) - 1)]
+    una = k[2] if len(k) > 2 else (equipo in UN_COLOR if cual == 0 else True)   # 3er campo: camiseta de un color
+    return {"c1": k[0], "c2": k[1], "barra": legible(k[0]), "texto": texto_sobre(k[0]), "segunda": cual >= 1, "cual": cual, "una": una}
+
+
+def n_kits(equipo):
+    return len(KITS.get(equipo, ((), ())))
+
+
+def _sin_choque(equipo, ocupados):
+    """Primera equipación (1ª, 2ª, 3ª) que no choca con ningún color ya puesto;
+    si todas chocan, la que más se separa del más parecido."""
+    mejor, dmejor = None, -1
+    for i in range(n_kits(equipo)):
+        k = kit(equipo, i)
+        d = min((distancia(k["barra"], o) for o in ocupados), default=999)
+        if d >= 30:
+            return k
+        if d > dmejor:
+            mejor, dmejor = k, d
+    # todas chocan: el color secundario de alguna equipación como principal (Chequia: el azul del pantalón)
+    for i in range(n_kits(equipo)):
+        b = kit(equipo, i)
+        k = {**b, "c1": b["c2"], "c2": b["c1"], "barra": legible(b["c2"]), "texto": texto_sobre(b["c2"]), "una": True}
+        d = min((distancia(k["barra"], o) for o in ocupados), default=999)
+        if d >= 30:
+            return k
+        if d > dmejor:
+            mejor, dmejor = k, d
+    return mejor
 
 
 def colores_partido(local, visitante):
-    """(kit local, kit visitante) sin choques."""
+    """(kit local, kit visitante) sin choques: el local con la 1ª; el visitante
+    con la 1ª, 2ª o 3ª, la primera que no choque (como en la TV)."""
     l = kit(local, 0)
-    v = kit(visitante, 0)
-    if choca(l["barra"], v["barra"]):
-        v = kit(visitante, 1)
-        if choca(l["barra"], v["barra"]):  # la segunda también choca: su color secundario manda
-            c = KITS[visitante][1]
-            v = {"c1": c[1], "c2": c[0], "barra": legible(c[1]), "texto": texto_sobre(c[1]), "segunda": True, "una": True}
-    return l, v
+    return l, _sin_choque(visitante, [l["barra"]])
+
+
+def colores_grupo(equipos, fijos=None):
+    """{equipo: kit} para varios equipos a la vez (un grupo, una tabla corta):
+    en el orden dado, cada uno la primera equipación que no choque con las ya
+    puestas. Así España (roja) y Chequia no salen las dos en rojo."""
+    out = dict(fijos or {})   # p. ej. los dos del partido, ya con sus colores
+    ocupados = [k["barra"] for k in out.values()]
+    for e in equipos:
+        if e in out:
+            continue
+        k = _sin_choque(e, ocupados)
+        out[e] = k
+        ocupados.append(k["barra"])
+    return out
+
+
+def colores_lista(equipos):
+    """Para listas largas (clasificación de 20, ranking FIFA): cada fila sin
+    chocar con la de arriba y la de abajo."""
+    out, prev = {}, []
+    for e in equipos:
+        k = _sin_choque(e, prev[-1:])
+        out[e] = k
+        prev.append(k["barra"])
+    return out
 
 
 if __name__ == "__main__":

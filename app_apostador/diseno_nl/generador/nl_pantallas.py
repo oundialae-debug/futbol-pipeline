@@ -393,9 +393,17 @@ def once_html(e, k):
             f'<span style="margin-left: auto; {DISP}; font-size: 16px; color: {k["barra"]}">{media:.2f}</span></div>{filas}</div>')
 
 
+# ---- sede y tiempo del partido (API, 01/10)
+PA = N["partido_api"]
+SEDE_PV = (f'<div style="margin: 0 12px; padding: 12px 14px; border-radius: 18px; background: {CARD}; border: 1px solid {BORDE}; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px">'
+           f'<div style="display: flex; flex-direction: column; gap: 2px"><span style="font-size: 11px; color: {MUT}">Stadium</span><span style="font-size: 13px; font-weight: 700">{PA["estadio"].replace("Stadion ", "")}</span><span style="font-size: 11px; color: {SOFT}">{PA["ciudad"]} · {PA["aforo"]:,}</span></div>'
+           f'<div style="display: flex; flex-direction: column; gap: 2px"><span style="font-size: 11px; color: {MUT}">Forecast</span><span style="font-size: 13px; font-weight: 700">{PA["temp"]}°C</span><span style="font-size: 11px; color: {SOFT}">{PA["tiempo"].capitalize()}</span></div>'
+           f'<div style="display: flex; flex-direction: column; gap: 2px"><span style="font-size: 11px; color: {MUT}">Kick-off</span><span style="font-size: 13px; font-weight: 700">18:00 CEST</span><span style="font-size: 11px; color: {SOFT}">Sat 3 Oct</span></div></div>')
+
 # ---- previa: qué se juegan, último cara a cara, choque de estilos
 EJ = N["en_juego"]
-KSP, KCZ = kit("Spain"), kit("Czech Republic")
+KG1 = real_ui.kgrupo(["Spain", "Czech Republic"], {"Croatia": KC, "England": KE})   # sin dos rojos en el mismo grupo
+KSP, KCZ = KG1["Spain"], KG1["Czech Republic"]
 COL_POS = [LIMA, "#8FA2FF", "#5B6378", "#2E3546"]
 
 
@@ -438,16 +446,59 @@ def goleadores(e, k):
 
 
 st_ = UC["stats"]
+MW = MM["England-Croatia"]
+H2A = [h for h in N["h2h_api"] if h["fecha"] != UC["fecha"]]
+COMP = {"Euro Championship": "Euro 2020", "World Cup": "World Cup"}
+antes = "".join(f'<div style="display: flex; align-items: center; justify-content: space-between; padding-top: 8px; border-top: 1px solid #232838; font-size: 13px">'
+                f'<span style="color: {MUT}">{COMP.get(h["comp"], h["comp"])} · {fecha(h["fecha"])} {h["fecha"][:4]}</span>'
+                f'<span style="font-weight: 700">{eq(h["local"])[0]} {h["marcador"].replace(" - ", "–")} {eq(h["visitante"])[0]}</span></div>' for h in H2A)
 CARA = tarjeta("Last meeting", f'''<div style="display: flex; align-items: center; justify-content: space-between">
 <span style="display: flex; align-items: center; gap: 8px; font-size: 15px; font-weight: 700">{franjas(KEw, 16)}England</span>
 <span style="{DISP}; font-size: 40px; line-height: 1">{UC["gl"]}–{UC["gv"]}</span>
 <span style="display: flex; align-items: center; gap: 8px; font-size: 15px; font-weight: 700">Croatia{franjas(KCw, 16)}</span></div>
 <span style="align-self: center; font-size: 12px; color: {MUT}">World Cup · {fecha(UC["fecha"])} {UC["fecha"][:4]}</span>
-<div style="display: flex; gap: 12px">{goleadores("England", KEw)}{goleadores("Croatia", KCw)}</div>
+{linea_partido(MW, KEw, KCw, "England", "Croatia", 24)}{momentos(MW, KEw, KCw)}
 {fila_stat("Expected goals", UC["xg"][0], UC["xg"][1], lambda v: f"{v:.2f}", KEw["barra"], KCw["barra"])}
 {fila_stat("Shots on target", st_["Shots on target"][0], st_["Shots on target"][1], ch=KEw["barra"], ca=KCw["barra"])}
 {fila_stat("Big chances", st_["Big Chances Created"][0], st_["Big Chances Created"][1], ch=KEw["barra"], ca=KCw["barra"])}
-<div style="display: flex; gap: 6px; flex-wrap: wrap">{"".join(chip(corto(m["jugador"]) + " " + f"{m['nota']:.1f}", LIMA if m["nota"] >= 7.5 else "#3A4256", BG if m["nota"] >= 7.5 else TXT) for m in UC["mejores"])}</div>''', "head to head")
+<div style="display: flex; gap: 6px; flex-wrap: wrap">{"".join(chip(corto(m["jugador"]) + " " + f"{m['nota']:.1f}", LIMA if m["nota"] >= 7.5 else "#3A4256", BG if m["nota"] >= 7.5 else TXT) for m in UC["mejores"])}</div>
+{antes}''', f"{len(N['h2h_api'])} meetings")
+
+# ---- las dos plantillas esta temporada (perfil y estadísticas de cada titular probable)
+PL = N["plantilla_api"]
+
+
+def millones(v):
+    return f"€{v / 1e6:.0f}M" if v >= 1e7 else f"€{v / 1e6:.1f}M"
+
+
+def en_forma(e, k):
+    x = sorted([j for j in PL if j["seleccion"] == e], key=lambda j: (-(j["goles"] + j["asist"]), -j["min"]))[:3]
+    return (f'<div style="flex: 1 1 0; min-width: 0; display: flex; flex-direction: column; gap: 8px">'
+            f'<span style="display: flex; align-items: center; gap: 6px; font-size: 13px; font-weight: 700">{franjas(k, 14)}{eq(e)[0]}</span>'
+            + "".join(f'<div style="display: flex; flex-direction: column; gap: 1px"><span style="font-size: 13px; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis">{corto(j["jugador"])}</span>'
+                      f'<span style="font-size: 11px; color: {SOFT}; white-space: nowrap; overflow: hidden; text-overflow: ellipsis">{club(j["club"])} · {j["goles"]}G {j["asist"]}A</span></div>' for j in x)
+            + '</div>')
+
+
+def club(n):
+    for a, b in (("GNK ", ""), (" SC", ""), ("ACF ", ""), ("SS ", ""), (" 1907", ""), (" Eindhoven", ""), (" United", " Utd")):
+        n = n.replace(a, b)
+    return n
+
+
+def suma(e, c):
+    return sum(j[c] or 0 for j in PL if j["seleccion"] == e)
+
+
+heridos = [j for j in PL if j["lesion_actual"]]
+PLANT = tarjeta("Squads this season", fila_stat("XI market value", suma("Croatia", "valor") / 1e6, suma("England", "valor") / 1e6, lambda v: f"€{v:.0f}M", KC["barra"], KE["barra"])
+                + fila_stat("Club minutes (XI)", suma("Croatia", "min"), suma("England", "min"), lambda v: f"{v:,.0f}", KC["barra"], KE["barra"])
+                + fila_stat("Club goals + assists (XI)", suma("Croatia", "goles") + suma("Croatia", "asist"), suma("England", "goles") + suma("England", "asist"), ch=KC["barra"], ca=KE["barra"])
+                + f'<span style="padding-top: 4px; font-size: 13px; font-weight: 700">In form for their clubs</span>'
+                + f'<div style="display: flex; gap: 14px">{en_forma("Croatia", KC)}{en_forma("England", KE)}</div>'
+                + f'<span style="font-size: 11px; color: {MUT}">{"No current injuries listed for either likely XI." if not heridos else "Injured: " + ", ".join(corto(j["jugador"]) for j in heridos)} All competitions, 2026/27.</span>',
+                "likely XIs")
 
 ES = N["estilo_sel"]
 ESTILO = tarjeta("Style clash", f'<div style="display: flex; justify-content: space-between; font-size: 12px; color: {SOFT}"><span style="display: flex; align-items: center; gap: 6px">{franjas(KC, 14)}Croatia · {ES["Croatia"]["pj"]} games</span><span style="display: flex; align-items: center; gap: 6px">England · {ES["England"]["pj"]} games{franjas(KE, 14)}</span></div>'
@@ -477,13 +528,14 @@ CC_T = tarjeta("Corners &amp; cards", f'''<div style="display: grid; grid-templa
 cuerpo = f'''
 <div style="position: relative; display: flex; flex-direction: column; padding-bottom: 14px">
 {glow(KC["barra"], KE["barra"], 230)}
-{volver("Main.dc.html", "Nations League · League A · MD3", "Sat 3 Oct · 18:00 · Zagreb")}
+{volver("Main.dc.html", "Nations League · League A · MD3", "Sat 3 Oct · 18:00 · Rijeka")}
 <div style="position: relative; display: flex; align-items: flex-start; justify-content: space-between; padding: 14px 16px 0 16px">
 <div style="width: 112px; display: flex; flex-direction: column; align-items: center; gap: 8px; text-align: center">{escudo("Croatia", 62, KC)}<span style="display: flex; align-items: center; gap: 6px; font-size: 15px; font-weight: 700">{franjas(KC, 16)}Croatia</span><span style="font-size: 12px; color: {SOFT}">FIFA {ordinal(PV["fifa_puesto"][0])}</span></div>
 <div style="display: flex; flex-direction: column; align-items: center; gap: 6px; padding-top: 8px"><span style="{DISP}; font-size: 44px; line-height: 1">18:00</span>{chip("Preview", "#1E2A66", "#A9B8FF")}</div>
 <div style="width: 112px; display: flex; flex-direction: column; align-items: center; gap: 8px; text-align: center">{escudo("England", 62, KE)}<span style="display: flex; align-items: center; gap: 6px; font-size: 15px; font-weight: 700">England{franjas(KE, 16)}</span><span style="font-size: 12px; color: {SOFT}">FIFA {ordinal(PV["fifa_puesto"][1])}</span></div>
 </div></div>
 {pestañas("Preview", [("Preview", "Partido.dc.html"), ("Tips", "Tips.dc.html"), ("H2H", "#"), ("Group", "Elo.dc.html")])}
+{SEDE_PV}
 {tarjeta("Win chance", tres(p1, px, p2, (KC["barra"], KC["texto"]), (KE["barra"], KE["texto"])) +
  '<div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px">' +
  "".join(f'<div style="padding: 10px 12px; border-radius: 14px; background: {SUB}"><span style="display: block; font-size: 11px; color: {MUT}">Fair odds · {k}</span><span style="{DISP}; font-size: 20px">{100 / v:.2f}</span></div>' for k, v in (("1", p1), ("X", px), ("2", p2))) + '</div>'
@@ -493,11 +545,12 @@ cuerpo = f'''
 {tarjeta("Form", forma_html("Croatia", KC) + forma_html("England", KE), "last 5 · latest on the right")}
 {EN_JUEGO}
 {tarjeta("Likely XIs", '<div style="display: flex; gap: 14px">' + once_html("Croatia", KC) + once_html("England", KE) + '</div>' + f'<span style="font-size: 11px; color: {MUT}">Last XI · fair rating (club form + country)</span>', "fair rating")}
+{PLANT}
 {ESTILO}
 {ULTIMO}
 {CARA}
 '''
-H_PV = 3750
+H_PV = 4610
 common.page("Partido.dc.html", "Croatia – England preview", 390, H_PV, raiz(H_PV, cuerpo), JS0, nav_active="m")
 
 # ======================================================================= REPORT Czechia 0–2 England
@@ -842,8 +895,9 @@ common.page("Historial.dc.html", "England record", 390, H_HI, raiz(H_HI, cuerpo)
 # ======================================================================= GROUPS + FIFA
 def tabla_grupo(g):
     filas = ""
+    kg = real_ui.kgrupo([t["equipo"] for t in g["tabla"]], {"Croatia": KC, "England": KE} if "England" in g["equipos"] else None)
     for i, t in enumerate(g["tabla"]):
-        k = kit(t["equipo"])
+        k = kg[t["equipo"]]
         yo = t["equipo"] == "England"
         dg = t["gf"] - t["gc"]
         filas += (f'<div style="display: flex; align-items: center; gap: 6px; min-height: 42px; padding: 0 12px; border-top: 1px solid #1E2330; background: {"#141A33" if yo else "transparent"}">'
@@ -863,9 +917,10 @@ def tabla_grupo(g):
 GRUPOS = '<div style="display: flex; flex-direction: column; gap: 12px">' + "".join(tabla_grupo(g) for g in N["grupos"]) \
     + f'<span style="padding: 0 16px; font-size: 11px; color: {MUT}">Matchday 3: 1–3 Oct.</span></div>'
 filas_f = ""
+NOMBRE_F = {f["codigo"]: next((k for k, v in real_ui.EQ.items() if v[1] == f["codigo"]), f["equipo"]) for f in N["fifa"]}
+KF = real_ui.klista([NOMBRE_F[f["codigo"]] for f in N["fifa"]])
 for f in N["fifa"]:
-    nombre = next((k for k, v in real_ui.EQ.items() if v[1] == f["codigo"]), f["equipo"])
-    k = kit(nombre)
+    k = KF[NOMBRE_F[f["codigo"]]]
     c_ = f["cambio"]
     filas_f += (f'<div style="display: flex; align-items: center; gap: 10px; min-height: 44px; padding: 0 14px; border-top: 1px solid #1E2330; background: {"#141A33" if f["equipo"] == "England" else "transparent"}">'
                 f'<span style="width: 22px; {DISP}; font-size: 15px">{f["puesto"]}</span>{franjas(k, 22)}'

@@ -1,6 +1,7 @@
 """Equipo (Real Madrid), jugador (Mbappé), tabla Elo de la liga y tips, con datos reales."""
 from common import page
 from real_ui import *
+import real_ui
 from s5a_real import raiz, JS0
 
 RANGOS = [["l5", "Last 5"], ["l10", "Last 10"], ["season", "Season"]]
@@ -174,8 +175,9 @@ def ordinal(n):
 
 
 filas_r = ""
+KR = real_ui.klista([f["equipo"] for f in TB["ranking"]])   # filas vecinas sin el mismo color
 for f in TB["ranking"]:
-    k = kit(f["equipo"])
+    k = KR[f["equipo"]]
     yo = f["equipo"] == "Real Madrid"
     filas_r += (f'<div style="display: flex; align-items: center; gap: 10px; min-height: 50px; padding: 0 14px; border-top: 1px solid #1E2330; background: {"#182042" if yo else "transparent"}">'
                 f'<span style="width: 22px; {DISP}; font-size: 16px; color: {LIMA if f["rank"] <= 4 else TXT}">{f["rank"]}</span>{franjas(k, 24)}'
@@ -191,8 +193,9 @@ RANKING = (f'<section style="margin: 0 12px; border-radius: 24px; background: {C
 
 C = "text-align: right; font-size: 12px"
 filas_l = ""
+KL = real_ui.klista([f["equipo"] for f in TB["liga"]])
 for f in TB["liga"]:
-    k = kit(f["equipo"])
+    k = KL[f["equipo"]]
     s_ = f["suerte"]
     col = LIMA if s_ >= 2 else ("#FFB27A" if s_ <= -2 else SOFT)
     rk = next(x["rank"] for x in TB["ranking"] if x["equipo"] == f["equipo"])
@@ -229,7 +232,8 @@ GXL, PL = DX["rangos"]["goles_xg"], DX["rangos"]["porteros_liga"]
 def rachas_vals(k):
     xs = sorted(({"e": e, **v[k]} for e, v in GXL.items()), key=lambda x: -x["dif"])
     sel = xs[:3] + xs[-3:]
-    return {"filas": [{"eq": eq(x["e"])[0], "sig": eq(x["e"])[1], "c1": kit(x["e"])["c1"], "tx": kit(x["e"])["texto"],
+    kg = real_ui.kgrupo([x["e"] for x in sel])
+    return {"filas": [{"eq": eq(x["e"])[0], "sig": eq(x["e"])[1], "c1": kg[x["e"]]["c1"], "tx": kg[x["e"]]["texto"],
                        "txt": f'{x["goles"]} goals · {x["xg"]} xG', "dif": signo(x["dif"]),
                        "bg": "#1F3A16" if x["dif"] > 0 else "#3A2412", "fg": LIMA if x["dif"] > 0 else "#FFB27A"} for x in sel]}
 

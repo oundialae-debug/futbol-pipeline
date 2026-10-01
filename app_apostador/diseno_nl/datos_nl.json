@@ -2048,7 +2048,7 @@
      "tipo": "cambio",
      "penalti": false,
      "sale": "Adam Hložek",
-     "entra": "Daniel Vasulin",
+     "entra": "Daniel Vašulín",
      "nota_entra": 6.34
     },
     {
@@ -2085,7 +2085,7 @@
      "min": 12,
      "extra": 0,
      "lado": "l",
-     "jugador": "Lukáš Cerv",
+     "jugador": "Lukáš Červ",
      "res": "Missed",
      "zona": "High Right"
     },
@@ -2670,7 +2670,7 @@
      "min": 50,
      "extra": 0,
      "lado": "v",
-     "jugador": "Marco Pasalic",
+     "jugador": "Marco Pašalić",
      "res": "Blocked",
      "zona": "Low Right"
     },
@@ -2694,7 +2694,7 @@
      "min": 90,
      "extra": 0,
      "lado": "v",
-     "jugador": "Luka Modric",
+     "jugador": "Luka Modrić",
      "res": "Saved",
      "zona": "Low Centre"
     }
@@ -2707,8 +2707,773 @@
     }
    ],
    "marcador": "4 - 1"
+  },
+  "England-Croatia": {
+   "venue": {
+    "city": null,
+    "name": null,
+    "country": null,
+    "capacity": null
+   },
+   "arbitro": {
+    "name": null,
+    "nationality": null
+   },
+   "tiempo": {
+    "status": null,
+    "temperature": null
+   },
+   "eventos": [
+    {
+     "min": 12,
+     "extra": 0,
+     "lado": "l",
+     "tipo": "gol",
+     "penalti": true,
+     "jugador": "H. Kane",
+     "asist": null
+    },
+    {
+     "min": 36,
+     "extra": 0,
+     "lado": "v",
+     "tipo": "gol",
+     "penalti": false,
+     "jugador": "M. Baturina",
+     "asist": "P. Sučić"
+    },
+    {
+     "min": 42,
+     "extra": 0,
+     "lado": "l",
+     "tipo": "gol",
+     "penalti": false,
+     "jugador": "H. Kane",
+     "asist": "D. Rice"
+    },
+    {
+     "min": 45,
+     "extra": 5,
+     "lado": "v",
+     "tipo": "gol",
+     "penalti": false,
+     "jugador": "P. Musa",
+     "asist": "I. Perišić"
+    },
+    {
+     "min": 47,
+     "extra": 0,
+     "lado": "l",
+     "tipo": "gol",
+     "penalti": false,
+     "jugador": "J. Bellingham",
+     "asist": "E. Anderson"
+    },
+    {
+     "min": 58,
+     "extra": 0,
+     "lado": "v",
+     "tipo": "cambio",
+     "penalti": false,
+     "sale": "L. Modrić",
+     "entra": "M. Kovačić",
+     "nota_entra": 7.0
+    },
+    {
+     "min": 66,
+     "extra": 0,
+     "lado": "v",
+     "tipo": "cambio",
+     "penalti": false,
+     "sale": "L. Vušković",
+     "entra": "M. Pašalić",
+     "nota_entra": 6.67
+    },
+    {
+     "min": 66,
+     "extra": 0,
+     "lado": "v",
+     "tipo": "cambio",
+     "penalti": false,
+     "sale": "P. Musa",
+     "entra": "I. Matanović",
+     "nota_entra": 6.26
+    },
+    {
+     "min": 72,
+     "extra": 0,
+     "lado": "l",
+     "tipo": "cambio",
+     "penalti": false,
+     "sale": "A. Gordon",
+     "entra": "M. Rashford",
+     "nota_entra": 7.47
+    },
+    {
+     "min": 72,
+     "extra": 0,
+     "lado": "l",
+     "tipo": "cambio",
+     "penalti": false,
+     "sale": "N. Madueke",
+     "entra": "B. Saka",
+     "nota_entra": 6.95
+    },
+    {
+     "min": 72,
+     "extra": 0,
+     "lado": "l",
+     "tipo": "cambio",
+     "penalti": false,
+     "sale": "D. Rice",
+     "entra": "M. Rogers",
+     "nota_entra": 7.17
+    },
+    {
+     "min": 78,
+     "extra": 0,
+     "lado": "v",
+     "tipo": "cambio",
+     "penalti": false,
+     "sale": "M. Baturina",
+     "entra": "N. Vlašić",
+     "nota_entra": 6.25
+    },
+    {
+     "min": 79,
+     "extra": 0,
+     "lado": "v",
+     "tipo": "cambio",
+     "penalti": false,
+     "sale": "M. Pašalić",
+     "entra": "A. Kramarić",
+     "nota_entra": 6.34
+    },
+    {
+     "min": 80,
+     "extra": 0,
+     "lado": "l",
+     "tipo": "cambio",
+     "penalti": false,
+     "sale": "J. Bellingham",
+     "entra": "D. Spence",
+     "nota_entra": 6.74
+    },
+    {
+     "min": 85,
+     "extra": 0,
+     "lado": "l",
+     "tipo": "gol",
+     "penalti": false,
+     "jugador": "M. Rashford",
+     "asist": "B. Saka"
+    },
+    {
+     "min": 87,
+     "extra": 0,
+     "lado": "l",
+     "tipo": "cambio",
+     "penalti": false,
+     "sale": "J. Stones",
+     "entra": "M. Guéhi",
+     "nota_entra": 6.62
+    }
+   ],
+   "tiros": [
+    {
+     "min": 8,
+     "extra": 0,
+     "lado": "l",
+     "jugador": "Harry Kane",
+     "res": "Blocked",
+     "zona": "Low Left"
+    },
+    {
+     "min": 9,
+     "extra": 0,
+     "lado": "l",
+     "jugador": "Ezri Konsa",
+     "res": "Missed",
+     "zona": ""
+    },
+    {
+     "min": 12,
+     "extra": 0,
+     "lado": "l",
+     "jugador": "Harry Kane",
+     "res": "Goal",
+     "zona": "Low Right"
+    },
+    {
+     "min": 16,
+     "extra": 0,
+     "lado": "l",
+     "jugador": "Noni Madueke",
+     "res": "Blocked",
+     "zona": "Low Centre"
+    },
+    {
+     "min": 16,
+     "extra": 0,
+     "lado": "l",
+     "jugador": "Elliot Anderson",
+     "res": "Blocked",
+     "zona": "Low Centre"
+    },
+    {
+     "min": 31,
+     "extra": 0,
+     "lado": "l",
+     "jugador": "Jude Bellingham",
+     "res": "Missed",
+     "zona": ""
+    },
+    {
+     "min": 35,
+     "extra": 0,
+     "lado": "l",
+     "jugador": "Harry Kane",
+     "res": "Missed",
+     "zona": ""
+    },
+    {
+     "min": 42,
+     "extra": 0,
+     "lado": "l",
+     "jugador": "Harry Kane",
+     "res": "Goal",
+     "zona": "Low Left"
+    },
+    {
+     "min": 45,
+     "extra": 1,
+     "lado": "l",
+     "jugador": "Reece James",
+     "res": "Blocked",
+     "zona": "Low Right"
+    },
+    {
+     "min": 47,
+     "extra": 0,
+     "lado": "l",
+     "jugador": "Jude Bellingham",
+     "res": "Goal",
+     "zona": "Low Left"
+    },
+    {
+     "min": 48,
+     "extra": 0,
+     "lado": "l",
+     "jugador": "Jude Bellingham",
+     "res": "Saved",
+     "zona": "Low Left"
+    },
+    {
+     "min": 49,
+     "extra": 0,
+     "lado": "l",
+     "jugador": "Nico O'Reilly",
+     "res": "Missed",
+     "zona": "Close Right"
+    },
+    {
+     "min": 52,
+     "extra": 0,
+     "lado": "l",
+     "jugador": "Declan Rice",
+     "res": "Saved",
+     "zona": "High Right"
+    },
+    {
+     "min": 56,
+     "extra": 0,
+     "lado": "l",
+     "jugador": "Nico O'Reilly",
+     "res": "Saved",
+     "zona": "High Centre"
+    },
+    {
+     "min": 56,
+     "extra": 0,
+     "lado": "l",
+     "jugador": "Anthony Gordon",
+     "res": "Saved",
+     "zona": "Low Centre"
+    },
+    {
+     "min": 56,
+     "extra": 0,
+     "lado": "l",
+     "jugador": "Ezri Konsa",
+     "res": "Saved",
+     "zona": "Low Centre"
+    },
+    {
+     "min": 57,
+     "extra": 0,
+     "lado": "l",
+     "jugador": "Harry Kane",
+     "res": "Saved",
+     "zona": "Low Centre"
+    },
+    {
+     "min": 57,
+     "extra": 0,
+     "lado": "l",
+     "jugador": "Harry Kane",
+     "res": "Missed",
+     "zona": "Close Right"
+    },
+    {
+     "min": 69,
+     "extra": 0,
+     "lado": "l",
+     "jugador": "Anthony Gordon",
+     "res": "Blocked",
+     "zona": "Low Centre"
+    },
+    {
+     "min": 82,
+     "extra": 0,
+     "lado": "l",
+     "jugador": "Djed Spence",
+     "res": "Saved",
+     "zona": "Low Centre"
+    },
+    {
+     "min": 85,
+     "extra": 0,
+     "lado": "l",
+     "jugador": "Marcus Rashford",
+     "res": "Goal",
+     "zona": "Low Right"
+    },
+    {
+     "min": 90,
+     "extra": 6,
+     "lado": "l",
+     "jugador": "Harry Kane",
+     "res": "Missed",
+     "zona": "High Right"
+    },
+    {
+     "min": 3,
+     "extra": 0,
+     "lado": "v",
+     "jugador": "Josip Šutalo",
+     "res": "Missed",
+     "zona": "High Right"
+    },
+    {
+     "min": 36,
+     "extra": 0,
+     "lado": "v",
+     "jugador": "Martin Baturina",
+     "res": "Goal",
+     "zona": "High Left"
+    },
+    {
+     "min": 45,
+     "extra": 4,
+     "lado": "v",
+     "jugador": "Mario Pašalić",
+     "res": "Missed",
+     "zona": "Close Right And High"
+    },
+    {
+     "min": 45,
+     "extra": 5,
+     "lado": "v",
+     "jugador": "Petar Musa",
+     "res": "Goal",
+     "zona": "Low Centre"
+    },
+    {
+     "min": 76,
+     "extra": 0,
+     "lado": "v",
+     "jugador": "Marco Pašalić",
+     "res": "Saved",
+     "zona": "Low Centre"
+    },
+    {
+     "min": 77,
+     "extra": 0,
+     "lado": "v",
+     "jugador": "Igor Matanovic",
+     "res": "Saved",
+     "zona": "Low Left"
+    },
+    {
+     "min": 81,
+     "extra": 0,
+     "lado": "v",
+     "jugador": "Petar Sučić",
+     "res": "Missed",
+     "zona": "High Right"
+    },
+    {
+     "min": 84,
+     "extra": 0,
+     "lado": "v",
+     "jugador": "Mateo Kovacic",
+     "res": "Saved",
+     "zona": "Low Left"
+    },
+    {
+     "min": 90,
+     "extra": 4,
+     "lado": "v",
+     "jugador": "Andrej Kramaric",
+     "res": "Blocked",
+     "zona": "Low Right"
+    },
+    {
+     "min": 90,
+     "extra": 5,
+     "lado": "v",
+     "jugador": "Josko Gvardiol",
+     "res": "Blocked",
+     "zona": "Low Centre"
+    }
+   ],
+   "news": [
+    {
+     "titulo": "Kane is England's greatest striker, says Lineker",
+     "fuente": "bbc.com",
+     "fecha": "2026-06-18"
+    },
+    {
+     "titulo": "Thierry Henry names his favourites for World Cup 2026 - and it's not England",
+     "fuente": "fourfourtwo.com",
+     "fecha": "2026-06-18"
+    },
+    {
+     "titulo": "The awkward moment Harry Maguire squirms on Gary Lineker's Netflix show as Alan Shearer and Micah Richards lavish 'refreshing' Thomas Tuchel with praise after England's World Cup win over Croatia",
+     "fuente": "dailymail.com",
+     "fecha": "2026-06-18"
+    },
+    {
+     "titulo": "England's route to the World Cup final: Here's who the Three Lions face en route to glory",
+     "fuente": "fourfourtwo.com",
+     "fecha": "2026-06-18"
+    }
+   ],
+   "marcador": "4 - 2"
   }
  },
+ "partido_api": {
+  "estadio": "Stadion HNK Rijeka",
+  "ciudad": "Rijeka",
+  "aforo": 8191,
+  "tiempo": "clear day",
+  "temp": 20,
+  "arbitro": null
+ },
+ "h2h_api": [
+  {
+   "fecha": "2026-06-17",
+   "comp": "World Cup",
+   "local": "England",
+   "visitante": "Croatia",
+   "marcador": "4 - 2"
+  },
+  {
+   "fecha": "2021-06-13",
+   "comp": "Euro Championship",
+   "local": "England",
+   "visitante": "Croatia",
+   "marcador": "1 - 0"
+  }
+ ],
+ "plantilla_api": [
+  {
+   "seleccion": "Croatia",
+   "jugador": "I. Perišić",
+   "posicion": "Midfielder",
+   "club": "PSV Eindhoven",
+   "valor": 1200000,
+   "valor_fecha": "28/05/2026",
+   "pj": 9,
+   "min": 603,
+   "goles": 2,
+   "asist": 1,
+   "lesion_actual": null
+  },
+  {
+   "seleccion": "Croatia",
+   "jugador": "Marco Pašalić",
+   "posicion": "Forward",
+   "club": "Orlando City SC",
+   "valor": 6500000,
+   "valor_fecha": "02/06/2026",
+   "pj": 23,
+   "min": 1089,
+   "goles": 3,
+   "asist": 0,
+   "lesion_actual": null
+  },
+  {
+   "seleccion": "Croatia",
+   "jugador": "J. Gvardiol",
+   "posicion": "Defender",
+   "club": "Manchester City",
+   "valor": 70000000,
+   "valor_fecha": "03/06/2026",
+   "pj": 7,
+   "min": 573,
+   "goles": 1,
+   "asist": 2,
+   "lesion_actual": null
+  },
+  {
+   "seleccion": "Croatia",
+   "jugador": "Petar Sučić",
+   "posicion": "Midfielder",
+   "club": "Inter Milan",
+   "valor": 45000000,
+   "valor_fecha": "22/07/2026",
+   "pj": 5,
+   "min": 212,
+   "goles": 0,
+   "asist": 0,
+   "lesion_actual": null
+  },
+  {
+   "seleccion": "Croatia",
+   "jugador": "Dion Drena Beljo",
+   "posicion": "Forward",
+   "club": "GNK Dinamo Zagreb",
+   "valor": 12000000,
+   "valor_fecha": "29/05/2026",
+   "pj": 12,
+   "min": 1043,
+   "goles": 11,
+   "asist": 6,
+   "lesion_actual": null
+  },
+  {
+   "seleccion": "Croatia",
+   "jugador": "Josip Mišić",
+   "posicion": "Midfielder",
+   "club": "GNK Dinamo Zagreb",
+   "valor": 1000000,
+   "valor_fecha": "29/05/2026",
+   "pj": 13,
+   "min": 1136,
+   "goles": 1,
+   "asist": 2,
+   "lesion_actual": null
+  },
+  {
+   "seleccion": "Croatia",
+   "jugador": "D. Livaković",
+   "posicion": "Goalkeeper",
+   "club": "FC Barcelona",
+   "valor": 4000000,
+   "valor_fecha": "29/05/2026",
+   "pj": 1,
+   "min": 90,
+   "goles": 0,
+   "asist": 0,
+   "lesion_actual": null
+  },
+  {
+   "seleccion": "Croatia",
+   "jugador": "M. Kovačić",
+   "posicion": "Midfielder",
+   "club": "Manchester City",
+   "valor": 10000000,
+   "valor_fecha": "03/06/2026",
+   "pj": 5,
+   "min": 226,
+   "goles": 0,
+   "asist": 0,
+   "lesion_actual": null
+  },
+  {
+   "seleccion": "Croatia",
+   "jugador": "Josip Šutalo",
+   "posicion": "Defender",
+   "club": "SS Lazio",
+   "valor": 12000000,
+   "valor_fecha": "28/05/2026",
+   "pj": 2,
+   "min": 174,
+   "goles": 0,
+   "asist": 0,
+   "lesion_actual": null
+  },
+  {
+   "seleccion": "Croatia",
+   "jugador": "Ivan Smolčić",
+   "posicion": "Defender",
+   "club": "Como 1907",
+   "valor": 3500000,
+   "valor_fecha": "29/05/2026",
+   "pj": 3,
+   "min": 49,
+   "goles": 0,
+   "asist": 0,
+   "lesion_actual": null
+  },
+  {
+   "seleccion": "Croatia",
+   "jugador": "Marin Pongračić",
+   "posicion": "Defender",
+   "club": "ACF Fiorentina",
+   "valor": 6500000,
+   "valor_fecha": "29/05/2026",
+   "pj": 5,
+   "min": 160,
+   "goles": 0,
+   "asist": 0,
+   "lesion_actual": null
+  },
+  {
+   "seleccion": "England",
+   "jugador": "H. Kane",
+   "posicion": "Forward",
+   "club": "Bayern Munich",
+   "valor": 60000000,
+   "valor_fecha": "27/05/2026",
+   "pj": 7,
+   "min": 563,
+   "goles": 6,
+   "asist": 1,
+   "lesion_actual": null
+  },
+  {
+   "seleccion": "England",
+   "jugador": "B. Saka",
+   "posicion": "Forward",
+   "club": "Arsenal FC",
+   "valor": 110000000,
+   "valor_fecha": "03/06/2026",
+   "pj": 7,
+   "min": 522,
+   "goles": 3,
+   "asist": 0,
+   "lesion_actual": null
+  },
+  {
+   "seleccion": "England",
+   "jugador": "E. Anderson",
+   "posicion": "Midfielder",
+   "club": "Manchester City",
+   "valor": 110000000,
+   "valor_fecha": "22/07/2026",
+   "pj": 7,
+   "min": 503,
+   "goles": 0,
+   "asist": 0,
+   "lesion_actual": null
+  },
+  {
+   "seleccion": "England",
+   "jugador": "M. Rogers",
+   "posicion": "Midfielder",
+   "club": "Chelsea FC",
+   "valor": 110000000,
+   "valor_fecha": "22/07/2026",
+   "pj": 7,
+   "min": 552,
+   "goles": 3,
+   "asist": 4,
+   "lesion_actual": null
+  },
+  {
+   "seleccion": "England",
+   "jugador": "L. Hall",
+   "posicion": "Defender",
+   "club": "Newcastle United",
+   "valor": 40000000,
+   "valor_fecha": "03/06/2026",
+   "pj": 7,
+   "min": 630,
+   "goles": 1,
+   "asist": 2,
+   "lesion_actual": null
+  },
+  {
+   "seleccion": "England",
+   "jugador": "M. Guéhi",
+   "posicion": "Defender",
+   "club": "Manchester City",
+   "valor": 70000000,
+   "valor_fecha": "03/06/2026",
+   "pj": 7,
+   "min": 576,
+   "goles": 1,
+   "asist": 1,
+   "lesion_actual": null
+  },
+  {
+   "seleccion": "England",
+   "jugador": "T. Alexander-Arnold",
+   "posicion": "Defender",
+   "club": "Real Madrid",
+   "valor": 60000000,
+   "valor_fecha": "05/06/2026",
+   "pj": 5,
+   "min": 292,
+   "goles": 0,
+   "asist": 1,
+   "lesion_actual": null
+  },
+  {
+   "seleccion": "England",
+   "jugador": "A. Gordon",
+   "posicion": "Midfielder",
+   "club": "FC Barcelona",
+   "valor": 80000000,
+   "valor_fecha": "22/07/2026",
+   "pj": 7,
+   "min": 424,
+   "goles": 0,
+   "asist": 5,
+   "lesion_actual": null
+  },
+  {
+   "seleccion": "England",
+   "jugador": "Trevoh Chalobah",
+   "posicion": "Defender",
+   "club": "Como 1907",
+   "valor": 35000000,
+   "valor_fecha": "22/09/2026",
+   "pj": 5,
+   "min": 450,
+   "goles": 0,
+   "asist": 0,
+   "lesion_actual": null
+  },
+  {
+   "seleccion": "England",
+   "jugador": "J. Trafford",
+   "posicion": "Goalkeeper",
+   "club": "Leeds United",
+   "valor": 25000000,
+   "valor_fecha": "03/06/2026",
+   "pj": 6,
+   "min": 540,
+   "goles": 0,
+   "asist": 0,
+   "lesion_actual": null
+  },
+  {
+   "seleccion": "England",
+   "jugador": "M. Lewis-Skelly",
+   "posicion": "Defender",
+   "club": "Arsenal FC",
+   "valor": 45000000,
+   "valor_fecha": "03/06/2026",
+   "pj": 6,
+   "min": 438,
+   "goles": 0,
+   "asist": 1,
+   "lesion_actual": null
+  }
+ ],
  "en_juego": {
   "pos": {
    "England": [

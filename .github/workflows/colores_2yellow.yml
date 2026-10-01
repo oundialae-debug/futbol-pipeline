@@ -1,0 +1,37 @@
+name: Colores 2yellow (equipaciones desde Wikipedia)
+
+# Baja las fichas y los dibujos de las camisetas de Wikipedia/Commons y saca
+# sus colores. No usa la API de fútbol. Solo se dispara al empujar
+# app_apostador/colores/ejecutar.txt en la rama ccr-302c299f-kdpgwl.
+on:
+  push:
+    branches: [ccr-302c299f-kdpgwl]
+    paths: [app_apostador/colores/ejecutar.txt]
+
+jobs:
+  colores:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install pillow
+      - name: Colores
+        working-directory: app_apostador/colores
+        run: |
+          python wiki_equipaciones.py > fichas.txt
+          python colores_camiseta.py | tee resultado.txt
+      - name: Guardar
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add app_apostador/colores
+          if git diff --staged --quiet; then echo "Sin cambios"; exit 0; fi
+          git commit -m "Colores 2yellow: equipaciones desde Wikipedia"
+          git pull --rebase origin ccr-302c299f-kdpgwl
+          git push

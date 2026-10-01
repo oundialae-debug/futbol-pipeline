@@ -293,8 +293,8 @@ def apellido_ok(a, b):
     return plano(a).split()[-1] == plano(b).split()[-1]
 
 
-def minuto_a_minuto(mid, local, visitante):
-    d = json.loads((RAW / f"match_{mid}.json").read_text())
+def minuto_a_minuto(mid, local, visitante, carpeta=RAW):
+    d = json.loads((carpeta / f"match_{mid}.json").read_text())
     d = d[0] if isinstance(d, list) else d
     lado = {d["homeTeam"]["id"]: "l", d["awayTeam"]["id"]: "v"}
     jj = jp[jp.match_id == mid]
@@ -336,15 +336,60 @@ def minuto_a_minuto(mid, local, visitante):
         if any(k and k in tit for k in claves) and not any(x in tit for x in ("how to watch", "boots", "free stream")):
             news.append({"titulo": n_["title"], "fuente": n_["url"].split("/")[2].replace("www.", "").replace("undefined", ""),
                          "fecha": n_["datePublished"][:10]})
+    # la API quita las tildes en los eventos («P. Sucic»): se recuperan de nuestros nombres
+    todos = pd.concat([jp.jugador, notas.jugador]).dropna().unique()
+    bien = {plano(f"{n.split()[0][0]}. {' '.join(n.split()[1:])}"): f"{n.split()[0][0]}. {' '.join(n.split()[1:])}" for n in todos if len(n.split()) > 1}
+    bien.update({plano(n): n for n in todos})
+    for x in ev + tiros:
+        for c in ("jugador", "asist", "sale", "entra"):
+            if x.get(c) and plano(x[c]) in bien:
+                x[c] = bien[plano(x[c])]
     return {"venue": d.get("venue"), "arbitro": d.get("referee"), "tiempo": d.get("forecast"), "eventos": ev, "tiros": tiros,
             "news": news[:4], "marcador": d["state"]["score"]["current"]}
 
 
 OUT["minuto"] = {"Czech Republic-England": minuto_a_minuto(1301103194, "Czech Republic", "England"),
-                 "Spain-Croatia": minuto_a_minuto(1301102343, "Spain", "Croatia")}
+                 "Spain-Croatia": minuto_a_minuto(1301102343, "Spain", "Croatia"),
+                 # sondeo del 01/10 para la previa (permiso del usuario): Mundial, 17/06/2026
+                 "England-Croatia": minuto_a_minuto(1267466568, "England", "Croatia", RAW / "cro_eng")}
 for k, v in OUT["minuto"].items():
     print("minuto", k, v["marcador"], len(v["eventos"]), "eventos,", len(v["tiros"]), "tiros,", len(v["news"]), "noticias",
           [(e["min"], e["tipo"], e.get("jugador") or (e.get("sale"), e.get("entra"), e.get("nota_entra"))) for e in v["eventos"] if e["tipo"] in ("gol", "roja", "cambio")][:8])
+
+
+# ------------------------------------------------------------------ previa Croacia–Inglaterra con la API (sondeo del 01/10, permiso del usuario)
+CE = RAW / "cro_eng"
+
+
+def leer(n):
+    d = json.loads((CE / f"{n}.json").read_text())
+    return d[0] if isinstance(d, list) and n.startswith(("match", "player")) else d
+
+
+pa = leer("match_1301122767")
+OUT["partido_api"] = {"estadio": pa["venue"]["name"], "ciudad": pa["venue"]["city"], "aforo": int(pa["venue"]["capacity"]),
+                      "tiempo": pa["forecast"]["status"], "temp": round(float(pa["forecast"]["temperature"].replace("°C", ""))),
+                      "arbitro": (pa.get("referee") or {}).get("name")}
+OUT["h2h_api"] = [{"fecha": m["date"][:10], "comp": m["league"]["name"], "local": m["homeTeam"]["name"], "visitante": m["awayTeam"]["name"],
+                   "marcador": m["state"]["score"]["current"]} for m in leer("h2h_3337_9294")]
+HOY_D = pd.Timestamp("2026-10-01")
+plant = []
+for _, f in notas[notas.seleccion.isin(["Croatia", "England"]) & notas.once_probable].iterrows():
+    d = leer(f"player_{f.jugador_id}")
+    s = leer(f"player_stats_{f.jugador_id}")
+    temp = [x for x in s["perCompetition"] if x["season"] in ("26/27", "2026")]   # MLS va por año natural
+    mv = d["marketValue"][0] if d.get("marketValue") else None
+    les = [i for i in d.get("injuries") or [] if pd.to_datetime(i["toDate"], format="%d.%m.%Y", errors="coerce") >= HOY_D]
+    plant.append({"seleccion": f.seleccion, "jugador": f.jugador, "posicion": f.posicion, "club": d["profile"]["club"]["current"],
+                  "valor": mv["value"] if mv else None, "valor_fecha": mv["recordedDate"] if mv else None,
+                  "pj": sum(x["gamesPlayed"] for x in temp), "min": sum(x["minutesPlayed"] for x in temp),
+                  "goles": sum(x["goals"] for x in temp), "asist": sum(x["assists"] for x in temp),
+                  "lesion_actual": les[0]["reason"] if les else None})
+OUT["plantilla_api"] = plant
+for e in ("Croatia", "England"):
+    x = [j for j in plant if j["seleccion"] == e]
+    print("plantilla", e, "valor", sum(j["valor"] or 0 for j in x) / 1e6, "M; min", sum(j["min"] for j in x), "; lesionados", [j["jugador"] for j in x if j["lesion_actual"]])
+print("partido_api", OUT["partido_api"], "h2h", OUT["h2h_api"])
 
 
 # ------------------------------------------------------------------ previa: qué se juegan, último cara a cara, choque de estilos

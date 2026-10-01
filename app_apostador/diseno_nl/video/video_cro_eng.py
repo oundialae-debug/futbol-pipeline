@@ -103,7 +103,7 @@ html,body{{margin:0;background:{BG}}}
 <div style="display:flex;flex-direction:column;align-items:center;gap:20px"><span style="width:190px;height:190px;border-radius:50%;background:{CRO};box-shadow:inset 0 0 0 10px {ENG};{DISP};font-size:64px;display:flex;align-items:center;justify-content:center;color:#fff">CRO</span><span style="font-size:48px;font-weight:700">Croatia</span></div>
 <span class="h" style="font-size:90px;color:{MUT}">vs</span>
 <div style="display:flex;flex-direction:column;align-items:center;gap:20px"><span style="width:190px;height:190px;border-radius:50%;background:{ENG};box-shadow:inset 0 0 0 10px #1E2B5C;{DISP};font-size:64px;display:flex;align-items:center;justify-content:center;color:{BG}">ENG</span><span style="font-size:48px;font-weight:700">England</span></div></div>
-<span style="font-size:40px;color:{SOFT}">Sat 3 Oct · 18:00 CEST · Zagreb</span></div>
+<span style="font-size:40px;color:{SOFT}">Sat 3 Oct · 18:00 CEST · Rijeka</span></div>
 
 <div class="sc" id="s2" style="justify-content:center;gap:56px">
 <span class="kick">WHO WINS?</span><span class="h">Win chance</span>

@@ -1,0 +1,1635 @@
+{
+ "England": {
+  "pagina": "England national football team",
+  "kits": [
+   {
+    "body": "FFFFFF",
+    "shorts": "000040",
+    "socks": "FFFFFF",
+    "leftarm": "FFFFFF",
+    "pattern_b": "_eng26H"
+   },
+   {
+    "body": "fe080a",
+    "shorts": "000040",
+    "socks": "fe080a",
+    "leftarm": "fe080a",
+    "pattern_b": "_eng26A"
+   }
+  ]
+ },
+ "Croatia": {
+  "pagina": "Croatia national football team",
+  "kits": [
+   {
+    "body": "FFFFFF",
+    "shorts": "FFFFFF",
+    "socks": "FFFFFF",
+    "leftarm": "FFFFFF",
+    "pattern_b": "_cro2627h"
+   },
+   {
+    "body": "0000ff",
+    "shorts": "0000bc",
+    "socks": "0000bc",
+    "leftarm": "0000ff",
+    "pattern_b": "_cro2627a"
+   }
+  ]
+ },
+ "Czech Republic": {
+  "pagina": "Czech Republic national football team",
+  "kits": [
+   {
+    "body": "F6090F",
+    "shorts": "001553",
+    "socks": "001553",
+    "leftarm": "F6090F",
+    "pattern_b": "_cze2627h"
+   },
+   {
+    "body": "e9e9e9",
+    "shorts": "FFFFFF",
+    "socks": "222f52",
+    "leftarm": "e9e9e9",
+    "pattern_b": "_cze2627a"
+   }
+  ]
+ },
+ "Spain": {
+  "pagina": "Spain national football team",
+  "kits": [
+   {
+    "body": "D71726",
+    "shorts": "000066",
+    "socks": "D71726",
+    "leftarm": "D71726",
+    "pattern_b": "_esp26hA_wc"
+   },
+   {
+    "body": "FFFFFF",
+    "shorts": "6a2335",
+    "socks": "6a2335",
+    "leftarm": "FFFFFF",
+    "pattern_b": "_esp26a_wc"
+   }
+  ]
+ },
+ "France": {
+  "pagina": "France national football team",
+  "kits": [
+   {
+    "body": "17367F",
+    "shorts": "FFFFFF",
+    "socks": "FF0000",
+    "leftarm": "17367F",
+    "pattern_b": "_fra26H"
+   },
+   {
+    "body": "bde4d7",
+    "shorts": "bde4d7",
+    "socks": "bde4d7",
+    "leftarm": "bde4d7",
+    "pattern_b": "_fra26a"
+   }
+  ]
+ },
+ "Italy": {
+  "pagina": "Italy national football team",
+  "kits": [
+   {
+    "body": "0048BA",
+    "shorts": "FFFFFF",
+    "socks": "0048BA",
+    "leftarm": "0048BA",
+    "pattern_b": "_ita26hA"
+   },
+   {
+    "body": "FFFFFF",
+    "shorts": "0000FF",
+    "socks": "FFFFFF",
+    "leftarm": "FFFFFF",
+    "pattern_b": "_ita26a"
+   }
+  ]
+ },
+ "Belgium": {
+  "pagina": "Belgium national football team",
+  "kits": [
+   {
+    "body": "ee3137",
+    "shorts": "000000",
+    "socks": "000000",
+    "leftarm": "ee3137",
+    "pattern_b": "_bel26hA"
+   },
+   {
+    "body": "8bddf5",
+    "shorts": "FFFFFF",
+    "socks": "FFFFFF",
+    "leftarm": "8bddf5",
+    "pattern_b": "_bel26a"
+   }
+  ]
+ },
+ "Turkey": {
+  "pagina": "Turkey national football team",
+  "kits": [
+   {
+    "body": "ff0000",
+    "shorts": "ff0000",
+    "socks": "ff0000",
+    "leftarm": "ff0000",
+    "pattern_b": "_tur26a"
+   },
+   {
+    "body": "FFFFFF",
+    "shorts": "FFFFFF",
+    "socks": "FFFFFF",
+    "leftarm": "FFFFFF",
+    "pattern_b": "_tur26h"
+   }
+  ]
+ },
+ "Germany": {
+  "pagina": "Germany national football team",
+  "kits": [
+   {
+    "body": "FFFFFF",
+    "shorts": "000000",
+    "socks": "FFFFFF",
+    "leftarm": "FFFFFF",
+    "pattern_b": "_ger26h"
+   },
+   {
+    "body": "DD42AA",
+    "shorts": "241E76",
+    "socks": "241E76",
+    "leftarm": "DD42AA",
+    "pattern_b": "_ger26a"
+   },
+   {
+    "body": "000000",
+    "shorts": "000000",
+    "socks": "000000",
+    "leftarm": "000000",
+    "pattern_b": "_ger26t"
+   }
+  ]
+ },
+ "Netherlands": {
+  "pagina": "Netherlands national football team",
+  "kits": [
+   {
+    "body": "FF5533",
+    "shorts": "000000",
+    "socks": "FF5533",
+    "leftarm": "FF5533",
+    "pattern_b": "_ned26h"
+   },
+   {
+    "body": "FFFFFF",
+    "shorts": "FF6600",
+    "socks": "FFFFFF",
+    "leftarm": "FFFFFF",
+    "pattern_b": "_ned26a"
+   }
+  ]
+ },
+ "Serbia": {
+  "pagina": "Serbia national football team",
+  "kits": [
+   {
+    "body": "0000FF",
+    "shorts": "0000FF",
+    "socks": "0000FF",
+    "leftarm": "0000FF",
+    "pattern_b": "_srb25h"
+   },
+   {
+    "body": "FFFFFF",
+    "shorts": "FFFFFF",
+    "socks": "FFFFFF",
+    "leftarm": "FFFFFF",
+    "pattern_b": "_srb25a"
+   }
+  ]
+ },
+ "Greece": {
+  "pagina": "Greece national football team",
+  "kits": [
+   {
+    "body": "FFFFFF",
+    "shorts": "FFFFFF",
+    "socks": "FFFFFF",
+    "leftarm": "FFFFFF",
+    "pattern_b": "_gre26hA"
+   },
+   {
+    "body": "032f70",
+    "shorts": "151f3a",
+    "socks": "151f3a",
+    "leftarm": "032f70",
+    "pattern_b": "_gre26aA"
+   }
+  ]
+ },
+ "Norway": {
+  "pagina": "Norway national football team",
+  "kits": [
+   {
+    "body": "BA0003",
+    "shorts": "BA0003",
+    "socks": "202747",
+    "leftarm": "BA0003",
+    "pattern_b": "_nor26h"
+   },
+   {
+    "body": "FFFFFF",
+    "shorts": "FFFFFF",
+    "socks": "000000",
+    "leftarm": "FFFFFF",
+    "pattern_b": "_nor26a"
+   },
+   {
+    "body": "FFFFFF",
+    "shorts": "FFFFFF",
+    "socks": "FFFFFF",
+    "leftarm": "FFFFFF",
+    "pattern_b": "_nor26t"
+   }
+  ]
+ },
+ "Denmark": {
+  "pagina": "Denmark national football team",
+  "kits": [
+   {
+    "body": "FF0000",
+    "shorts": "FF0000",
+    "socks": "FF0000",
+    "leftarm": "FF0000",
+    "pattern_b": "_dnm26h"
+   },
+   {
+    "body": "FFFFFF",
+    "shorts": "FFFFFF",
+    "socks": "FFFFFF",
+    "leftarm": "FFFFFF",
+    "pattern_b": "_dnm26a"
+   }
+  ]
+ },
+ "Portugal": {
+  "pagina": "Portugal national football team",
+  "kits": [
+   {
+    "body": "a73737",
+    "shorts": "a73737",
+    "socks": "2d7f7b",
+    "leftarm": "a73737",
+    "pattern_b": "_por26h"
+   },
+   {
+    "body": "ffffff",
+    "shorts": "ffffff",
+    "socks": "ffffff",
+    "leftarm": "ffffff",
+    "pattern_b": "_por26a"
+   }
+  ]
+ },
+ "Wales": {
+  "pagina": "Wales national football team",
+  "kits": [
+   {
+    "body": "EF0000",
+    "shorts": "EF0000",
+    "socks": "EF0000",
+    "leftarm": "EF0000",
+    "pattern_b": "_wls2627h"
+   },
+   {
+    "body": "Ffffff",
+    "shorts": "08963d",
+    "socks": "f2b129",
+    "leftarm": "Ffffff",
+    "pattern_b": "_wls2627a"
+   }
+  ]
+ },
+ "Austria": {
+  "pagina": "Austria national football team",
+  "kits": [
+   {
+    "body": "FF0000",
+    "shorts": "000000",
+    "socks": "FF0000",
+    "leftarm": "000000",
+    "pattern_b": "_aut26h"
+   },
+   {
+    "body": "FFFFFF",
+    "shorts": "003A41",
+    "socks": "FFFFFF",
+    "leftarm": "FFFFFF",
+    "pattern_b": "_aut26a"
+   },
+   {
+    "body": "000000",
+    "shorts": "000000",
+    "socks": "000000",
+    "leftarm": "000000",
+    "pattern_b": "_aut50ypuma"
+   }
+  ]
+ },
+ "Republic of Ireland": {
+  "pagina": "Republic of Ireland national football team",
+  "kits": [
+   {
+    "body": "005f31",
+    "shorts": "005f31",
+    "socks": "005f31",
+    "leftarm": "005f31",
+    "pattern_b": "_ire26h"
+   },
+   {
+    "body": "FFFFFF",
+    "shorts": "001f4e",
+    "socks": "FFFFFF",
+    "leftarm": "FFFFFF",
+    "pattern_b": "_ire26a"
+   }
+  ]
+ },
+ "Israel": {
+  "pagina": "Israel national football team",
+  "kits": [
+   {
+    "body": "ffffff",
+    "shorts": "ffffff",
+    "socks": "ffffff",
+    "leftarm": "ffffff",
+    "pattern_b": "_isr25h1"
+   },
+   {
+    "body": "0000ff",
+    "shorts": "0000ff",
+    "socks": "0000ff",
+    "leftarm": "0000ff",
+    "pattern_b": "_isr25a"
+   }
+  ]
+ },
+ "Kosovo National Team": {
+  "pagina": "Kosovo national football team",
+  "kits": [
+   {
+    "body": "0000DD",
+    "shorts": "0000DD",
+    "socks": "0000DD",
+    "leftarm": "0000DD",
+    "pattern_b": "_kvx26h"
+   },
+   {
+    "body": "FFFFFF",
+    "shorts": "FFFFFF",
+    "socks": "FFFFFF",
+    "leftarm": "FFFFFF",
+    "pattern_b": "_kvx26a"
+   }
+  ]
+ },
+ "Azerbaijan": {
+  "pagina": "Azerbaijan national football team",
+  "kits": [
+   {
+    "body": "007FFF",
+    "shorts": "007FFF",
+    "socks": "007FFF",
+    "leftarm": "0048BA",
+    "pattern_b": "_aze25h"
+   },
+   {
+    "body": "FFFFFF",
+    "shorts": "FFFFFF",
+    "socks": "FFFFFF",
+    "leftarm": "FFFFFF",
+    "pattern_b": "_aze25a"
+   },
+   {
+    "body": "FF0000",
+    "shorts": "FF0000",
+    "socks": "FF0000",
+    "leftarm": "c90000",
+    "pattern_b": "_aze25t"
+   }
+  ]
+ },
+ "Liechtenstein": {
+  "pagina": "Liechtenstein national football team",
+  "kits": [
+   {
+    "body": "0000E0",
+    "shorts": "FF0000",
+    "socks": "0000E0",
+    "leftarm": "0000E0",
+    "pattern_b": "_lie26h"
+   },
+   {
+    "body": "FFFFFF",
+    "shorts": "FFFFFF",
+    "socks": "FFFFFF",
+    "leftarm": "FFFFFF",
+    "pattern_b": "_lie26a"
+   }
+  ]
+ },
+ "Malta": {
+  "pagina": "Malta national football team",
+  "kits": [
+   {
+    "body": "EF0000",
+    "shorts": "EF0000",
+    "socks": "EF0000",
+    "leftarm": "EF0000",
+    "pattern_b": "_mlt26h"
+   },
+   {
+    "body": "FFFFFF",
+    "shorts": "FFFFFF",
+    "socks": "FFFFFF",
+    "leftarm": "FFFFFF",
+    "pattern_b": "_mlt26a"
+   }
+  ]
+ },
+ "Gibraltar": {
+  "pagina": "Gibraltar national football team",
+  "kits": [
+   {
+    "body": "EF0000",
+    "shorts": "EF0000",
+    "socks": "EF0000",
+    "leftarm": "EF0000",
+    "pattern_b": "_gib26h"
+   },
+   {
+    "body": "FFFFFF",
+    "shorts": "FFFFFF",
+    "socks": "FFFFFF",
+    "leftarm": "FFFFFF",
+    "pattern_b": "_gib25a"
+   }
+  ]
+ },
+ "Argentina": {
+  "pagina": "Argentina national football team",
+  "kits": [
+   {
+    "body": "FFFFFF",
+    "shorts": "ffffff",
+    "socks": "ffffff",
+    "leftarm": "FFFFFF",
+    "pattern_b": "_arg26h"
+   },
+   {
+    "pattern_b": "_arg26A"
+   }
+  ]
+ },
+ "Panama": {
+  "pagina": "Panama national football team",
+  "kits": [
+   {
+    "body": "ff0000",
+    "shorts": "ff0000",
+    "socks": "ff0000",
+    "leftarm": "ff0000",
+    "pattern_b": "_pan26h"
+   },
+   {
+    "body": "FFFFFF",
+    "shorts": "FFFFFF",
+    "socks": "FFFFFF",
+    "leftarm": "FFFFFF",
+    "pattern_b": "_pan26a"
+   },
+   {
+    "body": "000080",
+    "shorts": "000080",
+    "socks": "000080",
+    "leftarm": "000080",
+    "pattern_b": "_pan26t"
+   }
+  ]
+ },
+ "Ghana": {
+  "pagina": "Ghana national football team",
+  "kits": [
+   {
+    "body": "FFFFFF",
+    "shorts": "FFFFFF",
+    "socks": "FFFFFF",
+    "leftarm": "FFFFFF",
+    "pattern_b": "_gha26h"
+   },
+   {
+    "body": "f8cd5c",
+    "shorts": "f8cd5c",
+    "socks": "f8cd5c",
+    "leftarm": "f8cd5c",
+    "pattern_b": "_gha26a"
+   }
+  ]
+ },
+ "Scotland": {
+  "pagina": "Scotland national football team",
+  "kits": [
+   {
+    "body": "000040",
+    "shorts": "000040",
+    "socks": "000040",
+    "leftarm": "000040",
+    "pattern_b": "_sco26hA"
+   },
+   {
+    "body": "fa4d4f",
+    "shorts": "4C2882",
+    "socks": "FA4D4F",
+    "leftarm": "fa4d4f",
+    "pattern_b": "_sco26aA"
+   }
+  ]
+ },
+ "Switzerland": {
+  "pagina": "Switzerland national football team",
+  "kits": [
+   {
+    "body": "FF0000",
+    "shorts": "FF0000",
+    "socks": "FF0000",
+    "leftarm": "FF0000",
+    "pattern_b": "_sui26h"
+   },
+   {
+    "body": "d6e6e5",
+    "shorts": "d6e6e5",
+    "socks": "d6e6e5",
+    "leftarm": "d6e6e5",
+    "pattern_b": "_sui26a"
+   }
+  ]
+ },
+ "Hungary": {
+  "pagina": "Hungary national football team",
+  "kits": [
+   {
+    "body": "EF0000",
+    "shorts": "FFFFFF",
+    "socks": "006633",
+    "leftarm": "EF0000",
+    "pattern_b": "_hun26hA"
+   },
+   {
+    "body": "FFFFFF",
+    "shorts": "FFFFFF",
+    "socks": "ca0f3a",
+    "leftarm": "FFFFFF",
+    "pattern_b": "_hun26a"
+   }
+  ]
+ },
+ "Poland": {
+  "pagina": "Poland national football team",
+  "kits": [
+   {
+    "body": "FFFFFF",
+    "shorts": "FF0000",
+    "socks": "FFFFFF",
+    "leftarm": "FFFFFF",
+    "pattern_b": "_pol26h"
+   },
+   {
+    "body": "FF0000",
+    "shorts": "C60000",
+    "socks": "C60000",
+    "leftarm": "FF0000",
+    "pattern_b": "_pol26a"
+   }
+  ]
+ },
+ "Ukraine": {
+  "pagina": "Ukraine national football team",
+  "kits": [
+   {
+    "body": "F9E733",
+    "shorts": "F9E733",
+    "socks": "F9E733",
+    "leftarm": "F9E733",
+    "pattern_b": "_ukr26hA"
+   },
+   {
+    "body": "085cb9",
+    "shorts": "085cb9",
+    "socks": "085cb9",
+    "leftarm": "085cb9",
+    "pattern_b": "_ukr26aA"
+   }
+  ]
+ },
+ "Sweden": {
+  "pagina": "Sweden national football team",
+  "kits": []
+ },
+ "Slovenia": {
+  "pagina": "Slovenia national football team",
+  "kits": [
+   {
+    "body": "FFFFFF",
+    "shorts": "FFFFFF",
+    "socks": "FFFFFF",
+    "leftarm": "FFFFFF",
+    "pattern_b": "_svn26h"
+   },
+   {
+    "body": "0044FF",
+    "shorts": "0044FF",
+    "socks": "0044FF",
+    "leftarm": "0044FF",
+    "pattern_b": "_svn26a"
+   }
+  ]
+ },
+ "Slovakia": {
+  "pagina": "Slovakia national football team",
+  "kits": [
+   {
+    "body": "0000FF",
+    "shorts": "0000FF",
+    "socks": "0000FF",
+    "leftarm": "0000FF",
+    "pattern_b": "_svk2425h"
+   },
+   {
+    "body": "FFFFFF",
+    "shorts": "FFFFFF",
+    "socks": "FFFFFF",
+    "leftarm": "FFFFFF",
+    "pattern_b": "_svk2425a"
+   }
+  ]
+ },
+ "Romania": {
+  "pagina": "Romania national football team",
+  "kits": [
+   {
+    "body": "FEEE00",
+    "shorts": "FEEE00",
+    "socks": "FEEE00",
+    "leftarm": "FEEE00",
+    "pattern_b": "_rom25h"
+   },
+   {
+    "body": "175eab",
+    "shorts": "175eab",
+    "socks": "FF0000",
+    "leftarm": "175eab",
+    "pattern_b": "_rom25a"
+   },
+   {
+    "body": "0000FF",
+    "shorts": "0000FF",
+    "socks": "0000B3",
+    "leftarm": "0000FF",
+    "pattern_b": "_rom25t"
+   }
+  ]
+ },
+ "Bosnia and Herzegovina": {
+  "pagina": "Bosnia and Herzegovina national football team",
+  "kits": [
+   {
+    "body": "001970",
+    "shorts": "001970",
+    "socks": "001970",
+    "leftarm": "001970",
+    "pattern_b": "_bih26h"
+   },
+   {
+    "body": "FFFFFF",
+    "shorts": "FFFFFF",
+    "socks": "FFFFFF",
+    "leftarm": "001970",
+    "pattern_b": "_bih26a"
+   }
+  ]
+ },
+ "Iceland": {
+  "pagina": "Iceland national football team",
+  "kits": [
+   {
+    "body": "0044FF",
+    "shorts": "0044FF",
+    "socks": "0044FF",
+    "leftarm": "0044FF",
+    "pattern_b": "_isl26h"
+   },
+   {
+    "body": "d9d9d9",
+    "shorts": "d9d9d9",
+    "socks": "d9d9d9",
+    "leftarm": "d9d9d9",
+    "pattern_b": "_isl26a"
+   }
+  ]
+ },
+ "Northern Ireland": {
+  "pagina": "Northern Ireland national football team",
+  "kits": [
+   {
+    "body": "008000",
+    "shorts": "22913C",
+    "socks": "1F504C",
+    "leftarm": "1F504C",
+    "pattern_b": "_nir26hA"
+   },
+   {
+    "body": "FFFFFF",
+    "shorts": "FFFFFF",
+    "socks": "36655b",
+    "leftarm": "FFFFFF",
+    "pattern_b": "_nir26aA"
+   }
+  ]
+ },
+ "Georgia": {
+  "pagina": "Georgia national football team",
+  "kits": [
+   {
+    "body": "FFFFFF",
+    "shorts": "FFFFFF",
+    "socks": "FFFFFF",
+    "leftarm": "FFFFFF",
+    "pattern_b": "_geo25h"
+   },
+   {
+    "body": "000000",
+    "shorts": "000000",
+    "socks": "000000",
+    "leftarm": "000000",
+    "pattern_b": "_geo25a"
+   },
+   {
+    "body": "FF0000",
+    "shorts": "000000",
+    "socks": "000000",
+    "leftarm": "FF0000",
+    "pattern_b": "_geo22a"
+   }
+  ]
+ },
+ "Albania": {
+  "pagina": "Albania national football team",
+  "kits": [
+   {
+    "body": "FF0000",
+    "shorts": "000000",
+    "socks": "000000",
+    "leftarm": "FF0000",
+    "pattern_b": "_alb26h"
+   },
+   {
+    "body": "fffdf5",
+    "shorts": "fffdf5",
+    "socks": "fffdf5",
+    "leftarm": "fffdf5",
+    "pattern_b": "_alb26a"
+   },
+   {
+    "body": "000000",
+    "shorts": "000000",
+    "socks": "000000",
+    "leftarm": "000000",
+    "pattern_b": "_alb26t"
+   }
+  ]
+ },
+ "North Macedonia": {
+  "pagina": "North Macedonia national football team",
+  "kits": [
+   {
+    "body": "FF0000",
+    "shorts": "FF0000",
+    "socks": "FFD300",
+    "leftarm": "FF0000",
+    "pattern_b": "_mkd26h"
+   },
+   {
+    "shorts": "_3_stripes_red",
+    "socks": "000000",
+    "pattern_b": "_tun can82h"
+   },
+   {
+    "body": "FFFFFF",
+    "shorts": "000000",
+    "socks": "FFD300",
+    "leftarm": "FFFFFF",
+    "pattern_b": "_mex13t"
+   }
+  ]
+ },
+ "Finland": {
+  "pagina": "Finland national football team",
+  "kits": [
+   {
+    "body": "FFFFFF",
+    "shorts": "FFFFFF",
+    "socks": "FFFFFF",
+    "leftarm": "FFFFFF",
+    "pattern_b": "_fin26h"
+   },
+   {
+    "body": "0000FF",
+    "shorts": "0000FF",
+    "socks": "0000FF",
+    "leftarm": "0000FF",
+    "pattern_b": "_fin26a"
+   }
+  ]
+ },
+ "Bulgaria": {
+  "pagina": "Bulgaria national football team",
+  "kits": [
+   {
+    "body": "FFFFFF",
+    "shorts": "008800",
+    "socks": "FF0000",
+    "leftarm": "FFFFFF",
+    "pattern_b": "_bul25h"
+   },
+   {
+    "body": "ff0000",
+    "leftarm": "ff0000",
+    "pattern_b": "_macronwyverneco24rw"
+   }
+  ]
+ },
+ "Montenegro": {
+  "pagina": "Montenegro national football team",
+  "kits": [
+   {
+    "body": "FF0000",
+    "shorts": "FF0000",
+    "socks": "FF0000",
+    "leftarm": "FF0000",
+    "pattern_b": "_mne26h"
+   },
+   {
+    "body": "FFFFFF",
+    "shorts": "FFFFFF",
+    "socks": "FFFFFF",
+    "leftarm": "FFFFFF",
+    "pattern_b": "_mne26a"
+   }
+  ]
+ },
+ "Armenia": {
+  "pagina": "Armenia national football team",
+  "kits": [
+   {
+    "body": "B70000",
+    "shorts": "6f0000",
+    "socks": "B70000",
+    "leftarm": "B70000",
+    "pattern_b": "_arm26h"
+   },
+   {
+    "body": "Ffffff",
+    "shorts": "Ffffff",
+    "socks": "FFFFFF",
+    "leftarm": "Ffffff",
+    "pattern_b": "_arm26a"
+   }
+  ]
+ },
+ "Belarus": {
+  "pagina": "Belarus national football team",
+  "kits": [
+   {
+    "body": "600020",
+    "shorts": "600020",
+    "socks": "600020",
+    "leftarm": "600020",
+    "pattern_b": "_blr26h"
+   },
+   {
+    "body": "FFFFFF",
+    "shorts": "FFFFFF",
+    "socks": "FFFFFF",
+    "leftarm": "FFFFFF",
+    "pattern_b": "_blr26a"
+   }
+  ]
+ },
+ "Kazakhstan": {
+  "pagina": "Kazakhstan national football team",
+  "kits": [
+   {
+    "body": "FFEE00",
+    "shorts": "FFEE00",
+    "socks": "FFEE00",
+    "leftarm": "FFEE00",
+    "pattern_b": "_kaz2627h"
+   },
+   {
+    "body": "0000DD",
+    "shorts": "0000DD",
+    "socks": "0000DD",
+    "leftarm": "0000DD",
+    "pattern_b": "_kaz2627a"
+   }
+  ]
+ },
+ "Luxembourg": {
+  "pagina": "Luxembourg national football team",
+  "kits": [
+   {
+    "body": "FF0000",
+    "shorts": "FF0000",
+    "socks": "FF0000",
+    "leftarm": "FF0000",
+    "pattern_b": "_lux2627h"
+   },
+   {
+    "body": "3DA7E9",
+    "shorts": "3DA7E9",
+    "socks": "3DA7E9",
+    "leftarm": "3DA7E9",
+    "pattern_b": "_lux2627a"
+   }
+  ]
+ },
+ "Cyprus": {
+  "pagina": "Cyprus national football team",
+  "kits": [
+   {
+    "body": "0000FF",
+    "shorts": "0000FF",
+    "socks": "0000FF",
+    "leftarm": "0000FF",
+    "pattern_b": "_cyp24h"
+   },
+   {
+    "body": "FFFFFF",
+    "shorts": "FFFFFF",
+    "socks": "FFFFFF",
+    "leftarm": "FFFFFF",
+    "pattern_b": "_cyp24a"
+   }
+  ]
+ },
+ "Faroe Islands": {
+  "pagina": "Faroe Islands national football team",
+  "kits": [
+   {
+    "body": "FFFFFF",
+    "shorts": "0000E0",
+    "socks": "FFFFFF",
+    "leftarm": "FFFFFF",
+    "pattern_b": "_fro26h"
+   },
+   {
+    "body": "000055",
+    "shorts": "000055",
+    "socks": "000055",
+    "leftarm": "000055",
+    "pattern_b": "_fro26a"
+   }
+  ]
+ },
+ "Estonia": {
+  "pagina": "Estonia national football team",
+  "kits": [
+   {
+    "body": "0000FF",
+    "shorts": "000000",
+    "socks": "FFFFFF",
+    "leftarm": "0000FF",
+    "pattern_b": "_nikechallenge5grw"
+   },
+   {
+    "body": "FFFFFF",
+    "shorts": "FFFFFF",
+    "socks": "FFFFFF",
+    "leftarm": "FFFFFF",
+    "pattern_b": "_nikechallenge5wb"
+   }
+  ]
+ },
+ "Latvia": {
+  "pagina": "Latvia national football team",
+  "kits": [
+   {
+    "body": "000000",
+    "shorts": "000000",
+    "socks": "000000",
+    "leftarm": "000000",
+    "pattern_b": "_adidastirol26bw"
+   },
+   {
+    "body": "FFFFFF",
+    "shorts": "FFFFFF",
+    "socks": "FFFFFF",
+    "leftarm": "FFFFFF",
+    "pattern_b": "_adidastirol26wb"
+   }
+  ]
+ },
+ "Lithuania": {
+  "pagina": "Lithuania national football team",
+  "kits": [
+   {
+    "body": "FFDD00",
+    "shorts": "FFDD00",
+    "socks": "FFDD00",
+    "leftarm": "FFDD00",
+    "pattern_b": "_ltu24h"
+   },
+   {
+    "body": "00711a",
+    "shorts": "00711a",
+    "socks": "00711a",
+    "leftarm": "00711a",
+    "pattern_b": "_ltu24a"
+   }
+  ]
+ },
+ "Moldova": {
+  "pagina": "Moldova national football team",
+  "kits": [
+   {
+    "body": "0000DD",
+    "shorts": "0000DD",
+    "socks": "0000DD",
+    "leftarm": "0000DD",
+    "pattern_b": "_mda22h"
+   },
+   {
+    "body": "FFBB00",
+    "shorts": "FFBB00",
+    "socks": "FFBB00",
+    "leftarm": "FFFFFF",
+    "pattern_b": "_mda22a"
+   },
+   {
+    "body": "FF0000",
+    "shorts": "FF0000",
+    "socks": "FF0000",
+    "leftarm": "FF0000",
+    "pattern_b": "_mda22t"
+   }
+  ]
+ },
+ "Andorra": {
+  "pagina": "Andorra national football team",
+  "kits": [
+   {
+    "body": "FF0000",
+    "shorts": "FF0000",
+    "socks": "FF0000",
+    "leftarm": "FF0000",
+    "pattern_b": "_and26h"
+   },
+   {
+    "body": "FFFFFF",
+    "shorts": "FFFFFF",
+    "socks": "FFFFFF",
+    "leftarm": "FFFFFF",
+    "pattern_b": "_and26a"
+   }
+  ]
+ },
+ "San Marino": {
+  "pagina": "San Marino national football team",
+  "kits": [
+   {
+    "body": "ffffff",
+    "shorts": "FFFFFF",
+    "socks": "FFFFFF",
+    "leftarm": "ffffff",
+    "pattern_b": "_smr26h"
+   },
+   {
+    "body": "000055",
+    "shorts": "000055",
+    "socks": "000055",
+    "leftarm": "000055",
+    "pattern_b": "_smr26a"
+   }
+  ]
+ },
+ "Barcelona": {
+  "pagina": "FC Barcelona",
+  "kits": [
+   {
+    "body": "05003B",
+    "shorts": "05003B",
+    "socks": "05003B",
+    "leftarm": "05003B",
+    "pattern_b": "_barcelona2627h"
+   },
+   {
+    "body": "000000",
+    "shorts": "7F20E0",
+    "socks": "000000",
+    "leftarm": "000000",
+    "pattern_b": "_barcelona2627a"
+   },
+   {
+    "body": "88D9D3",
+    "shorts": "89DAD4",
+    "socks": "88D9D3",
+    "leftarm": "88D9D3",
+    "pattern_b": "_barcelona2627t"
+   }
+  ]
+ },
+ "Real Madrid": {
+  "pagina": "Real Madrid CF",
+  "kits": [
+   {
+    "body": "FFFFFF",
+    "shorts": "FFFFFF",
+    "socks": "FFFFFF",
+    "leftarm": "FFFFFF",
+    "pattern_b": "_realmadrid2627h"
+   },
+   {
+    "body": "162E32",
+    "shorts": "162E32",
+    "socks": "162E32",
+    "leftarm": "162E32",
+    "pattern_b": "_realmadrid2627a"
+   },
+   {
+    "socks": "}}",
+    "pattern_b": "_realmadrid2627tA"
+   }
+  ]
+ },
+ "Atlético Madrid": {
+  "pagina": "Atlético Madrid",
+  "kits": [
+   {
+    "body": "FF0000",
+    "shorts": "0000FF",
+    "socks": "0000FF",
+    "leftarm": "FF0000",
+    "pattern_b": "_atleticomadrid2627h"
+   },
+   {
+    "body": "000000",
+    "shorts": "000000",
+    "socks": "000000",
+    "leftarm": "000000",
+    "pattern_b": "_atleticomadrid2627a"
+   },
+   {
+    "pattern_b": "_atleticomadrid2627t"
+   }
+  ]
+ },
+ "Villarreal": {
+  "pagina": "Villarreal CF",
+  "kits": [
+   {
+    "body": "FFFF00",
+    "shorts": "FFFF00",
+    "socks": "FFFF00",
+    "leftarm": "FFFF00",
+    "pattern_b": "_villarreal2627h"
+   },
+   {
+    "body": "cbcbcb",
+    "shorts": "cbcbcb",
+    "socks": "cbcbcb",
+    "leftarm": "1880ff",
+    "pattern_b": "_villarreal2627a"
+   },
+   {
+    "socks": "}}",
+    "pattern_b": "_villarreal2627t"
+   }
+  ]
+ },
+ "Real Betis": {
+  "pagina": "Real Betis",
+  "kits": [
+   {
+    "body": "359B5C",
+    "shorts": "FFFFFF",
+    "socks": "359B5C",
+    "leftarm": "359B5C",
+    "pattern_b": "_betis2627h"
+   },
+   {
+    "body": "005c29",
+    "shorts": "005c29",
+    "socks": "005c29",
+    "leftarm": "005c29",
+    "pattern_b": "_betis2627a"
+   },
+   {
+    "pattern_b": "_betis2627t"
+   }
+  ]
+ },
+ "Sevilla FC": {
+  "pagina": "Sevilla FC",
+  "kits": [
+   {
+    "body": "FFFFFF",
+    "shorts": "FFFFFF",
+    "socks": "e20000",
+    "leftarm": "E20001",
+    "pattern_b": "_sevilla2627h"
+   },
+   {
+    "body": "E20001",
+    "shorts": "E20001",
+    "socks": "E20001",
+    "leftarm": "E20001",
+    "pattern_b": "_sevilla2627a"
+   },
+   {
+    "body": "000000",
+    "shorts": "000000",
+    "socks": "000000",
+    "leftarm": "000000",
+    "pattern_b": "_sevilla2627t"
+   }
+  ]
+ },
+ "Real Sociedad": {
+  "pagina": "Real Sociedad",
+  "kits": [
+   {
+    "body": "0042FF",
+    "shorts": "FFFFFF",
+    "socks": "FFFFFF",
+    "leftarm": "0042FF",
+    "pattern_b": "_realsociedad2627h"
+   },
+   {
+    "body": "000000",
+    "shorts": "000000",
+    "socks": "000000",
+    "leftarm": "000000",
+    "pattern_b": "_realsociedad2627a"
+   },
+   {
+    "body": "b61d2f",
+    "shorts": "b61d2f",
+    "socks": "b61d2f",
+    "leftarm": "b61d2f",
+    "pattern_b": "_realsociedad2627t"
+   }
+  ]
+ },
+ "Alavés": {
+  "pagina": "Deportivo Alavés",
+  "kits": [
+   {
+    "body": "ffffff",
+    "shorts": "ffffff",
+    "socks": "ffffff",
+    "leftarm": "ffffff",
+    "pattern_b": "_alaves2627h"
+   },
+   {
+    "body": "ffffff",
+    "shorts": "ffffff",
+    "socks": "ffffff",
+    "leftarm": "ffffff",
+    "pattern_b": "_alaves2627a"
+   },
+   {
+    "body": "ffffff",
+    "shorts": "ffffff",
+    "socks": "ffffff",
+    "leftarm": "ffffff",
+    "pattern_b": "_alaves2627t"
+   }
+  ]
+ },
+ "Deportivo La Coruña": {
+  "pagina": "Deportivo de A Coruña",
+  "kits": [
+   {
+    "shorts": "0000FF",
+    "socks": "0000FF",
+    "pattern_b": "_depor2627h"
+   },
+   {
+    "shorts": "000000",
+    "socks": "000000",
+    "pattern_b": "_depor2627a"
+   },
+   {
+    "shorts": "FFFFFF",
+    "socks": "FFFFFF",
+    "pattern_b": "_depor2627t"
+   }
+  ]
+ },
+ "Athletic Club": {
+  "pagina": "Athletic Bilbao",
+  "kits": [
+   {
+    "body": "FFFFFF",
+    "shorts": "000000",
+    "socks": "000000",
+    "leftarm": "FFFFFF",
+    "pattern_b": "_bilbao2627h"
+   },
+   {
+    "body": "000000",
+    "shorts": "ff0000",
+    "socks": "ff0000",
+    "leftarm": "000000",
+    "pattern_b": "_bilbao2627a"
+   },
+   {
+    "pattern_b": "_bilbao2627t"
+   }
+  ]
+ },
+ "Getafe": {
+  "pagina": "Getafe CF",
+  "kits": [
+   {
+    "body": "0000ff",
+    "shorts": "0000ff",
+    "socks": "0000ff",
+    "leftarm": "0000ff",
+    "pattern_b": "_getafe2627h"
+   },
+   {
+    "body": "7b0018",
+    "shorts": "7b0018",
+    "socks": "7b0018",
+    "leftarm": "7b0018",
+    "pattern_b": "_getafe2627a"
+   },
+   {
+    "body": "c2daff",
+    "shorts": "c2daff",
+    "socks": "c2daff",
+    "leftarm": "c2daff",
+    "pattern_b": "_getafe2627t"
+   }
+  ]
+ },
+ "Rayo Vallecano": {
+  "pagina": "Rayo Vallecano",
+  "kits": [
+   {
+    "body": "FFFFFF",
+    "shorts": "FFFFFF",
+    "socks": "FFFFFF",
+    "leftarm": "FFFFFF",
+    "pattern_b": "_rayo2627h"
+   },
+   {
+    "body": "FF0000",
+    "shorts": "FF0000",
+    "socks": "FF0000",
+    "leftarm": "FF0000",
+    "pattern_b": "_rayo2627a"
+   },
+   {
+    "body": "f1c463",
+    "shorts": "f1c463",
+    "socks": "f1c463",
+    "leftarm": "f1c463",
+    "pattern_b": "_rayo2627t"
+   }
+  ]
+ },
+ "Osasuna": {
+  "pagina": "CA Osasuna",
+  "kits": [
+   {
+    "socks": "000000",
+    "pattern_b": "_osasuna2627h"
+   },
+   {
+    "socks": "f0efeb",
+    "pattern_b": "_osasuna2627a"
+   },
+   {
+    "pattern_b": "_osasuna2627t"
+   }
+  ]
+ },
+ "Celta de Vigo": {
+  "pagina": "RC Celta de Vigo",
+  "kits": [
+   {
+    "pattern_b": "_celta2627h"
+   },
+   {
+    "pattern_b": "_celta2627a"
+   },
+   {
+    "socks": "D30430",
+    "pattern_b": "_celta2627t"
+   }
+  ]
+ },
+ "Espanyol": {
+  "pagina": "RCD Espanyol",
+  "kits": [
+   {
+    "pattern_b": "_rcde2627h"
+   },
+   {
+    "pattern_b": "_rcde2627a"
+   },
+   {
+    "pattern_b": "_rcde2627t"
+   }
+  ]
+ },
+ "Racing Santander": {
+  "pagina": "Racing de Santander",
+  "kits": [
+   {
+    "body": "FFFFFF",
+    "shorts": "000000",
+    "socks": "369028",
+    "leftarm": "FFFFFF",
+    "pattern_b": "_santander2627h"
+   },
+   {
+    "body": "000000",
+    "shorts": "00924F",
+    "socks": "021d01",
+    "leftarm": "000000",
+    "pattern_b": "_santander2627a"
+   }
+  ]
+ },
+ "Levante": {
+  "pagina": "Levante UD",
+  "kits": [
+   {
+    "body": "222730",
+    "shorts": "222730",
+    "socks": "222730",
+    "leftarm": "661424",
+    "pattern_b": "_levante2627h"
+   },
+   {
+    "pattern_b": "_levante2627a"
+   }
+  ]
+ },
+ "Elche": {
+  "pagina": "Elche CF",
+  "kits": [
+   {
+    "socks": "FFFFFF",
+    "pattern_b": "_elche2627h"
+   },
+   {
+    "body": "5f04b4",
+    "shorts": "5f04b4",
+    "socks": "5f04b4",
+    "leftarm": "5f04b4",
+    "pattern_b": "_elche2627a"
+   },
+   {
+    "body": "000000",
+    "shorts": "000000",
+    "socks": "000000",
+    "leftarm": "000000",
+    "pattern_b": "_elche2627t"
+   }
+  ]
+ },
+ "Valencia": {
+  "pagina": "Valencia CF",
+  "kits": [
+   {
+    "body": "FFFFFF",
+    "shorts": "000000",
+    "socks": "000000",
+    "leftarm": "FFFFFF",
+    "pattern_b": "_valencia2627h"
+   },
+   {
+    "body": "024560",
+    "shorts": "024560",
+    "socks": "024560",
+    "leftarm": "024560",
+    "pattern_b": "_valencia2627a"
+   }
+  ]
+ },
+ "Malaga": {
+  "pagina": "Málaga CF",
+  "kits": [
+   {
+    "body": "FFFFFF",
+    "shorts": "103E9E",
+    "socks": "FFFFFF",
+    "leftarm": "FFFFFF",
+    "pattern_b": "_malaga2627h"
+   },
+   {
+    "pattern_b": "_malaga2627a"
+   },
+   {
+    "socks": "000000",
+    "pattern_b": "_malaga2627t"
+   }
+  ]
+ },
+ "Oviedo": {
+  "pagina": "Real Oviedo",
+  "kits": [
+   {
+    "body": "0000DD",
+    "shorts": "FFFFFF",
+    "socks": "0000DD",
+    "leftarm": "0000DD",
+    "pattern_b": "_realoviedo2627h"
+   },
+   {
+    "body": "d0d0d0",
+    "shorts": "d0d0d0",
+    "socks": "d0d0d0",
+    "leftarm": "d0d0d0",
+    "pattern_b": "_realoviedo2627a"
+   },
+   {
+    "body": "ffc7cf",
+    "shorts": "96d6e3",
+    "socks": "96d6e3",
+    "leftarm": "ffc7cf",
+    "pattern_b": "_realoviedo2627t"
+   }
+  ]
+ },
+ "Mallorca": {
+  "pagina": "RCD Mallorca",
+  "kits": [
+   {
+    "body": "ff0000",
+    "shorts": "000000",
+    "socks": "000000",
+    "leftarm": "ff0000",
+    "pattern_b": "_mallorca2627h"
+   },
+   {
+    "body": "000000",
+    "shorts": "000000",
+    "socks": "000000",
+    "leftarm": "000000",
+    "pattern_b": "_mallorca2627a"
+   },
+   {
+    "body": "77bbff",
+    "shorts": "77bbff",
+    "socks": "77bbff",
+    "leftarm": "77bbff",
+    "pattern_b": "_mallorca2627t"
+   }
+  ]
+ },
+ "Girona": {
+  "pagina": "Girona FC",
+  "kits": [
+   {
+    "body": "FFFFFF",
+    "shorts": "0042ff",
+    "socks": "ffffff",
+    "leftarm": "FFFFFF",
+    "pattern_b": "_girona2627h"
+   },
+   {
+    "body": "000000",
+    "shorts": "000000",
+    "socks": "000000",
+    "leftarm": "000000",
+    "pattern_b": "_girona2627a"
+   },
+   {
+    "socks": "17cbb3",
+    "pattern_b": "_girona26273"
+   }
+  ]
+ }
+}
