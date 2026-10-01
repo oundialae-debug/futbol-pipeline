@@ -560,7 +560,7 @@ match_id,fecha,competicion,local_id,local,visitante_id,visitante,goles_l,goles_v
 1315358295,2026-09-29,UEFA Nations League,929225,Slovenia,941139,North Macedonia,2.0,0.0,True
 1315349785,2026-09-29,UEFA Nations League,943692,Scotland,13549,Switzerland,0.0,3.0,True
 1370857962,2026-09-30,Friendlies,934331,Lithuania,945394,Andorra,,,False
-1301108300,2026-10-01,UEFA Nations League,933480,Azerbaijan,942841,Liechtenstein,,,False
+1301108300,2026-10-01,UEFA Nations League,933480,Azerbaijan,942841,Liechtenstein,0.0,0.0,True
 1301112555,2026-10-01,UEFA Nations League,661160,Republic of Ireland,660309,Austria,,,False
 1301110853,2026-10-01,UEFA Nations League,18655,Denmark,23761,Portugal,,,False
 1301109151,2026-10-01,UEFA Nations League,22059,Germany,12698,Serbia,,,False
