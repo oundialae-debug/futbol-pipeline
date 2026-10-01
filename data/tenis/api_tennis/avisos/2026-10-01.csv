@@ -21,3 +21,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-01 05:23,12166958,Wta Singles,Beijing,S. Kartal,A. Lazaro Garcia,menos,18.5,0.6963,0.5889,1.571,True
 2026-10-01 05:23,12166960,Wta Singles,Beijing,K. Volynets,R. Montgomery,menos,25.5,0.7,0.5889,1.571,True
 2026-10-01 05:37,12167309,Itf Men Singles,M25 Darwin,P. Sekulic,Z. Talic,menos,17.5,0.6674,0.5576,1.666,True
+2026-10-01 05:42,12167380,Itf Men Singles,M15 Luan 4,N. Ehrenschneider,J. Van Herzeele,menos,16.5,0.7131,0.6451,1.444,True
