@@ -16,3 +16,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-01 04:38,12166998,Challenger Women Singles,Jingshan,S. Lansere,S. Costoulas,menos,17.5,0.6524,0.5889,1.571,True
 2026-10-01 04:40,12166530,Atp Singles,Beijing,A. De Minaur,M. Navone,menos,22.5,0.7054,0.5576,1.666,True
 2026-10-01 04:46,12166558,Wta Singles,Beijing,Y. Starodubtseva,A. Charaeva,menos,22.5,0.7347,0.5889,1.571,True
+2026-10-01 04:46,12166949,Atp Singles,Tokyo,T. M. Etcheverry,S. Tsitsipas,menos,29.5,0.7349,0.625,1.5,True
