@@ -83,40 +83,44 @@ def cerca(n, y):
 
 fila = POS["Main"]["fila"]
 s_main = min(max(0, fila[1] - 330), maxs("Main"))
-sp = POS["Partido"]["secciones"]
-se = POS["Equipo"]["secciones"]
-# (inicio, fin, pantalla, desplazamiento de, a)
-GUION = [
-    (0.0, 1.6, "Main", 0, 0),
-    (1.6, 3.4, "Main", 0, s_main),
-    (3.4, 4.4, "Main", s_main, s_main),          # toque en Croacia - Inglaterra a los 3,8 s
-    (4.4, 5.0, ("Main", "Partido"), s_main, 0),   # transición
-    (5.0, 7.0, "Partido", 0, 0),
-    (7.0, 8.4, "Partido", 0, cerca("Partido", sp[1])),       # goles
-    (8.4, 10.0, "Partido", cerca("Partido", sp[1]), cerca("Partido", sp[1])),
-    (10.0, 11.4, "Partido", cerca("Partido", sp[1]), cerca("Partido", sp[3])),  # forma
-    (11.4, 12.8, "Partido", cerca("Partido", sp[3]), cerca("Partido", sp[3])),
-    (12.8, 14.2, "Partido", cerca("Partido", sp[3]), cerca("Partido", sp[4])),  # onces
-    (14.2, 15.8, "Partido", cerca("Partido", sp[4]), cerca("Partido", sp[4])),
-    (15.8, 17.0, "Partido", cerca("Partido", sp[4]), 0),
-    (17.0, 17.8, "Partido", 0, 0),                # toque en Group a los 17,3 s
-    (17.8, 18.4, ("Partido", "Elo"), 0, 0),
-    (18.4, 21.4, "Elo", 0, 0),                    # toque en el corazón a los 21,0 s
-    (21.4, 22.0, ("Elo", "Equipo"), 0, 0),
-    (22.0, 24.0, "Equipo", 0, 0),
-    (24.0, 25.4, "Equipo", 0, cerca("Equipo", se[1])),       # forma / ranking
-    (25.4, 27.0, "Equipo", cerca("Equipo", se[1]), cerca("Equipo", se[1])),
-    (27.0, 28.4, "Equipo", cerca("Equipo", se[1]), cerca("Equipo", se[3])),     # goles vs xG
-    (28.4, 30.0, "Equipo", cerca("Equipo", se[3]), cerca("Equipo", se[3])),
-    (30.0, 31.4, "Equipo", cerca("Equipo", se[3]), maxs("Equipo")),             # goleadores
-    (31.4, 33.4, "Equipo", maxs("Equipo"), maxs("Equipo")),
+P = lambda i: cerca("Partido", POS["Partido"]["secciones"][i])
+E_ = lambda i: cerca("Equipo", POS["Equipo"]["secciones"][i])
+# Secciones de la previa: 0 Win chance, 1 Goals, 2 Corners & cards, 3 Form, 4 What's at stake,
+# 5 Likely XIs, 6 Squads this season, 7 Style clash, 8 Last time out, 9 Last meeting.
+# Guion por tramos: (duración, pantalla, desplazamiento de, a); los tiempos se suman solos.
+TRAMOS = [
+    (1.6, "Main", 0, 0),
+    (1.8, "Main", 0, s_main),
+    (1.0, "Main", s_main, s_main),                                      # toque en Croacia - Inglaterra
+    (0.6, ("Main", "Partido"), s_main, 0),
+    (2.4, "Partido", 0, 0),                                             # sede (Rijeka), probabilidades
+    (1.2, "Partido", 0, P(1)), (2.0, "Partido", P(1), P(1)),            # goles
+    (1.4, "Partido", P(1), P(4)), (3.0, "Partido", P(4), P(4)),         # qué se juegan
+    (1.2, "Partido", P(4), P(6)), (3.0, "Partido", P(6), P(6)),         # plantillas: valor y forma
+    (1.0, "Partido", P(6), P(7)), (2.4, "Partido", P(7), P(7)),         # choque de estilos
+    (1.4, "Partido", P(7), P(9)), (3.0, "Partido", P(9), P(9)),         # último cara a cara, minuto a minuto
+    (1.0, "Partido", P(9), maxs("Partido")), (1.6, "Partido", maxs("Partido"), maxs("Partido")),
+    (1.6, "Partido", maxs("Partido"), 0), (0.8, "Partido", 0, 0),       # arriba; toque en Group
+    (0.6, ("Partido", "Elo"), 0, 0),
+    (2.6, "Elo", 0, 0),                                                 # toque en el corazón
+    (0.6, ("Elo", "Equipo"), 0, 0),
+    (1.8, "Equipo", 0, 0),
+    (1.2, "Equipo", 0, E_(1)), (1.6, "Equipo", E_(1), E_(1)),           # forma / ranking
+    (1.2, "Equipo", E_(1), E_(3)), (1.6, "Equipo", E_(3), E_(3)),       # goles vs xG
+    (1.2, "Equipo", E_(3), maxs("Equipo")), (1.8, "Equipo", maxs("Equipo"), maxs("Equipo")),   # goleadores
 ]
+GUION, t0 = [], 0.0
+for dur, pant, s1, s2 in TRAMOS:
+    GUION.append((t0, t0 + dur, pant, s1, s2))
+    t0 += dur
+fin_de = lambda i: GUION[i][1]
 g = POS["Partido"]["grupo"]
 cz = POS["Elo"]["corazon"]
-TOQUES = [(3.8, fila[0] + fila[2] * 0.45, fila[1] + fila[3] * 0.4 - s_main),
-          (17.3, g[0] + g[2] / 2, g[1] + g[3] / 2),
-          (21.0, cz[0] + cz[2] / 2, cz[1] + cz[3] / 2)]
-FIN = 33.4 + 2.6   # cierre con el logo
+TOQUES = [(fin_de(2) - 0.5, fila[0] + fila[2] * 0.45, fila[1] + fila[3] * 0.4 - s_main),
+          (fin_de(18) - 0.5, g[0] + g[2] / 2, g[1] + g[3] / 2),
+          (fin_de(20) - 0.4, cz[0] + cz[2] / 2, cz[1] + cz[3] / 2)]
+T_FIN = GUION[-1][1]
+FIN = T_FIN + 2.6   # cierre con el logo
 
 
 def vista(n, s):
@@ -184,7 +188,7 @@ def fotograma(t):
 
 
 def cierre_img(t):
-    k = ease((t - 33.4) / 0.6)
+    k = ease((t - T_FIN) / 0.6)
     base = fotograma_ultimo.copy()
     return Image.blend(base, cierre, k)
 
@@ -218,10 +222,10 @@ fotograma_ultimo = None
 n = int(FIN * FPS)
 for i in range(n):
     t = i / FPS
-    im = fotograma(t) if t < 33.4 else cierre_img(t)
-    if t < 33.4:
+    im = fotograma(t) if t < T_FIN else cierre_img(t)
+    if t < T_FIN:
         fotograma_ultimo = im
-    if i in (int(2 * FPS), int(3.85 * FPS), int(6 * FPS), int(9 * FPS), int(19 * FPS), int(23 * FPS), int(29 * FPS), int(35 * FPS)):
+    if i % int(4 * FPS) == 0:
         im.save(TRABAJO / f"muestra_{i:04d}.jpg", quality=85)
     ff.stdin.write(np.asarray(im, dtype=np.uint8).tobytes())
 ff.stdin.close()

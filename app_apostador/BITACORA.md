@@ -561,3 +561,17 @@ carpeta se apunta aquí.
   informe: sede, Match story, Shots, From the bench, In the news) y la regla
   de colores pasan a fijas en `ESTRUCTURA.md`: plantilla para todo lo
   siguiente.
+
+## 01/10/2026: los dos vídeos de la app, rehechos
+
+- **Pedido:** «Rehaz los dos vídeos con las nuevas implementaciones».
+- **Vídeo 1** (`2yellow_app_england.mp4`, 49 s): Matches → previa Croacia–
+  Inglaterra con la sede (Rijeka, 20 °C), goles, «What's at stake», «Squads
+  this season», «Style clash» y «Last meeting» minuto a minuto → Group →
+  Inglaterra. Guion por tramos en `grabacion_app.py`, como el segundo.
+- **Vídeo 2** (`2yellow_app_england_record.mp4`, 56 s): el mismo recorrido,
+  más una parada en las noticias del partido.
+- **Los dos:** colores reales sin choques (grupo con Chequia en azul).
+- **Cómo regenerar:** `vista_nl.py` (expande las páginas) y
+  `grabacion_app.py` / `grabacion_pasado.py` con rutas ABSOLUTAS (con rutas
+  relativas, Chromium no abre las páginas).

@@ -100,7 +100,8 @@ TRAMOS = [
     (1.2, "Report", R(1), R(2)), (2.4, "Report", R(2), R(2)),         # tiros y dónde apuntó Inglaterra
     (1.2, "Report", R(2), R(3)), (2.2, "Report", R(3), R(3)),         # nuestro pronóstico contra las casas
     (1.4, "Report", R(3), R(6)), (2.4, "Report", R(6), R(6)),         # desde el banquillo
-    (1.4, "Report", R(6), 0), (0.8, "Report", 0, 0),                  # arriba; toque en Lineups
+    (1.4, "Report", R(6), R(8)), (2.4, "Report", R(8), R(8)),         # noticias del partido
+    (1.6, "Report", R(8), 0), (0.8, "Report", 0, 0),                  # arriba; toque en Lineups
     (0.6, ("Report", "Alineacion"), 0, 0),
     (1.2, "Alineacion", 0, 0), (1.0, "Alineacion", 0, s_al), (2.0, "Alineacion", s_al, s_al),   # toque en el corazón
     (0.6, ("Alineacion", "Equipo"), s_al, 0),
@@ -121,9 +122,9 @@ fin_de = lambda i: GUION[i][1]        # final de un tramo, para colocar los toqu
 t1, t2 = POS["Report"]["tab"], POS["Equipo"]["tab"]
 cz = POS["Alineacion"]["corazon"]
 TOQUES = [(fin_de(0) - 0.5, fila[0] + fila[2] * 0.5, fila[1] + fila[3] * 0.45),
-          (fin_de(14) - 0.5, t1[0] + t1[2] / 2, t1[1] + t1[3] / 2),
-          (fin_de(18) - 0.4, cz[0] + cz[2] / 2, cz[1] + cz[3] / 2),
-          (fin_de(20) - 0.5, t2[0] + t2[2] / 2, t2[1] + t2[3] / 2)]
+          (fin_de(16) - 0.5, t1[0] + t1[2] / 2, t1[1] + t1[3] / 2),
+          (fin_de(20) - 0.4, cz[0] + cz[2] / 2, cz[1] + cz[3] / 2),
+          (fin_de(22) - 0.5, t2[0] + t2[2] / 2, t2[1] + t2[3] / 2)]
 T_FIN = GUION[-1][1]
 FIN = T_FIN + 2.6   # cierre con el logo
 
