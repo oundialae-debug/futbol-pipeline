@@ -1,3 +1,4 @@
 hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cuota_api,calibrado
 2026-10-01 02:59,12167376,Itf Men Singles,M15 Luan 4,Y. Jin,T. Ichikawa,menos,16.5,0.705,0.625,1.5,True
 2026-10-01 03:13,12167377,Itf Men Singles,M15 Luan 4,R. Matsuda,R. Komagata,menos,19.5,0.6947,0.6077,1.533,True
+2026-10-01 03:15,12167379,Itf Men Singles,M15 Luan 4,T. Yamanaka,Y. Tomida,menos,27.5,0.7025,0.5576,1.666,True
