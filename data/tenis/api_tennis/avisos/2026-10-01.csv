@@ -77,3 +77,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-01 09:43,12166534,Atp Singles,Beijing,J. Shang,S. Baez,menos,30.5,0.7118,0.5767,1.615,True
 2026-10-01 09:52,12167319,Itf Men Singles,M25 Kigali,B. Lock,T. Sahtali,menos,20.5,0.788,0.7091,1.333,True
 2026-10-01 09:53,12167482,Itf Men Singles,M15 Sharm ElSheikh 11,J. Simonsson,M. Krajci,menos,20.5,0.7022,0.5576,1.666,True
+2026-10-01 10:02,12167403,Itf Men Singles,M15 Baku 2 (Azerbaijan),J. Connel,N. Jadoun,menos,21.5,0.8076,0.6876,1.363,True
