@@ -13,6 +13,10 @@ Ejemplo vivo: lienzo de la Nations League
 
 ## Reglas comunes
 
+- **Nunca «How we did»** (ni nuestro acierto contra el de las casas, ni
+  «Our favourite won X% of the time») en ninguna pantalla, vídeo o imagen.
+  Petición del usuario, 01/10/2026.
+
 - Textos de la app en inglés. Aspecto de app publicada: nada provisional.
 - Si falta un dato, **la tarjeta no sale** (o se calcula con nuestro modelo).
   Nunca se inventan cuotas ni datos de terceros.
@@ -45,6 +49,14 @@ Ejemplo vivo: lienzo de la Nations League
 | 7 | Style clash | medias por partido de los dos (posesión, tiros a puerta, ocasiones claras, goles a favor/en contra, porterías a cero) | estadísticas de partido | confirmada (01/10) |
 | 8 | Last time out | último partido de cada uno minuto a minuto: tiros cada 5', goles con asistente | `/matches/{id}` (`events`, `shots`) | confirmada (01/10) |
 | 9 | Last meeting | último cara a cara minuto a minuto (goles con asistente), xG, tiros a puerta, ocasiones, 3 mejores notas, y los anteriores | `/head-2-head` + `/matches/{id}` + box-score | confirmada (01/10) |
+
+## Tips (pantalla Tips)
+
+| # | Bloque | Qué enseña | Datos | Estado |
+|---|---|---|---|---|
+| 1 | Your team | todos los pronósticos del partido del equipo seguido, ordenados por %: 1X2, doble oportunidad, empate no cuenta, más/menos goles, ambos marcan, quién marca primero, 2+ goles del favorito, córners, tarjetas, marcador más probable; cuotas justas | nuestro modelo | **pendiente** |
+| 2 | Anytime scorer | 3 por equipo: goles por 90' con su selección (encogidos hacia su puesto, 10 partidos de peso) sobre los goles esperados | nuestro modelo | **pendiente** |
+| 3 | Tips de la jornada | un pronóstico por partido (55–90%), si las casas coinciden y la mejor cuota | modelo + cuotas reales | en uso |
 
 ## Informe de un partido terminado (pantalla Report)
 

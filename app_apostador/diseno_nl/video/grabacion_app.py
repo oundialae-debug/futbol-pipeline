@@ -33,7 +33,7 @@ POS = {}
 with sync_playwright() as pw:
     b = pw.chromium.launch(executable_path="/opt/pw-browsers/chromium")
     pg = b.new_page(viewport={"width": VW, "height": VH}, device_scale_factor=ESC)
-    for nombre in ("Main", "Partido", "Elo", "Equipo"):
+    for nombre in ("Main", "Partido", "Tips", "Elo", "Equipo"):
         pg.goto(f"file://{PAGINAS / (nombre + '.html')}")
         # las fuentes de la marca, en local (Chromium aquí no llega a Google Fonts)
         pg.evaluate(f"""() => {{ const l = document.createElement('link'); l.rel = 'stylesheet';
@@ -55,7 +55,12 @@ with sync_playwright() as pw:
             POS[nombre]["fila"] = caja('a[href="Partido.dc.html"]')
         if nombre == "Partido":
             POS[nombre]["grupo"] = caja('nav[aria-label="Sections"] a[href="Elo.dc.html"]')
+            POS[nombre]["tips"] = caja('nav[aria-label="Sections"] a[href="Tips.dc.html"]')
             POS[nombre]["secciones"] = pg.evaluate("""() => [...document.querySelectorAll('section')].map(s => s.getBoundingClientRect().y + window.scrollY)""")
+        if nombre == "Tips":
+            POS[nombre]["secciones"] = pg.evaluate("""() => [...document.querySelectorAll('section')].map(s => s.getBoundingClientRect().y + window.scrollY)""")
+            POS[nombre]["ranking"] = pg.evaluate("""() => { const a = [...document.querySelectorAll('nav[aria-label="Main"] a, nav[aria-label="Main"] button')][1];
+                if (!a) return null; const r = a.getBoundingClientRect(); return [r.x, r.y, r.width, r.height]; }""")
         if nombre == "Equipo":
             POS[nombre]["secciones"] = pg.evaluate("""() => [...document.querySelectorAll('section')].map(s => s.getBoundingClientRect().y + window.scrollY)""")
         POS[nombre]["corazon"] = [VW - 16 - 6 - 50 + 0, VH - 18 - 64 + 7, 50, 50]
@@ -85,6 +90,7 @@ fila = POS["Main"]["fila"]
 s_main = min(max(0, fila[1] - 330), maxs("Main"))
 P = lambda i: cerca("Partido", POS["Partido"]["secciones"][i])
 E_ = lambda i: cerca("Equipo", POS["Equipo"]["secciones"][i])
+T = lambda i: cerca("Tips", POS["Tips"]["secciones"][i])
 # Secciones de la previa: 0 Win chance, 1 Goals, 2 Corners & cards, 3 Form, 4 What's at stake,
 # 5 Likely XIs, 6 Squads this season, 7 Style clash, 8 Last time out, 9 Last meeting.
 # Guion por tramos: (duración, pantalla, desplazamiento de, a); los tiempos se suman solos.
@@ -100,8 +106,12 @@ TRAMOS = [
     (1.0, "Partido", P(6), P(7)), (2.4, "Partido", P(7), P(7)),         # choque de estilos
     (1.4, "Partido", P(7), P(9)), (3.0, "Partido", P(9), P(9)),         # último cara a cara, minuto a minuto
     (1.0, "Partido", P(9), maxs("Partido")), (1.6, "Partido", maxs("Partido"), maxs("Partido")),
-    (1.6, "Partido", maxs("Partido"), 0), (0.8, "Partido", 0, 0),       # arriba; toque en Group
-    (0.6, ("Partido", "Elo"), 0, 0),
+    (1.6, "Partido", maxs("Partido"), 0), (0.8, "Partido", 0, 0),       # arriba; toque en Tips
+    (0.6, ("Partido", "Tips"), 0, 0),
+    (3.2, "Tips", 0, 0),                                                # todos los pronósticos del partido
+    (1.2, "Tips", 0, T(1)), (2.6, "Tips", T(1), T(1)),                  # goleadores
+    (1.4, "Tips", T(1), maxs("Tips")), (2.4, "Tips", maxs("Tips"), maxs("Tips")),   # tips de la jornada; toque en la clasificación
+    (0.6, ("Tips", "Elo"), maxs("Tips"), 0),
     (2.6, "Elo", 0, 0),                                                 # toque en el corazón
     (0.6, ("Elo", "Equipo"), 0, 0),
     (1.8, "Equipo", 0, 0),
@@ -114,11 +124,13 @@ for dur, pant, s1, s2 in TRAMOS:
     GUION.append((t0, t0 + dur, pant, s1, s2))
     t0 += dur
 fin_de = lambda i: GUION[i][1]
-g = POS["Partido"]["grupo"]
+g = POS["Partido"]["tips"]
+rk = POS["Tips"]["ranking"]
 cz = POS["Elo"]["corazon"]
 TOQUES = [(fin_de(2) - 0.5, fila[0] + fila[2] * 0.45, fila[1] + fila[3] * 0.4 - s_main),
           (fin_de(18) - 0.5, g[0] + g[2] / 2, g[1] + g[3] / 2),
-          (fin_de(20) - 0.4, cz[0] + cz[2] / 2, cz[1] + cz[3] / 2)]
+          (fin_de(24) - 0.5, rk[0] + rk[2] / 2, cz[1] + cz[3] / 2),   # misma fila que el corazón: la barra va fija abajo
+          (fin_de(26) - 0.4, cz[0] + cz[2] / 2, cz[1] + cz[3] / 2)]
 T_FIN = GUION[-1][1]
 FIN = T_FIN + 2.6   # cierre con el logo
 

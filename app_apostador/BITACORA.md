@@ -575,3 +575,21 @@ carpeta se apunta aquí.
 - **Cómo regenerar:** `vista_nl.py` (expande las páginas) y
   `grabacion_app.py` / `grabacion_pasado.py` con rutas ABSOLUTAS (con rutas
   relativas, Chromium no abre las páginas).
+
+## 01/10/2026: más tips, fuera «How we did», vídeo 1 con Tips
+
+- **Análisis** (20 partidos de la Nations League con nuestro % y el de las
+  casas): las casas tienen mejor Brier en 10 de 11 mercados (tarjetas +4.5,
+  empate); en aciertos, parejos. Los tips son probabilidades, no valor.
+- **Fuera «How we did»** en todas partes (petición del usuario): la tarjeta
+  de Tips y el aviso de la portada («Our favourite won 61%…»), que pasa a
+  «Tips for Croatia – England». Regla en `ESTRUCTURA.md`.
+- **Tips de Croacia–Inglaterra:** de 4 a 11 pronósticos más el marcador más
+  probable (doble oportunidad, empate no cuenta, menos de 3.5 goles, quién
+  marca primero, Inglaterra 2+ goles, córners, tarjetas), todos del mismo
+  modelo. Bloque nuevo «Anytime scorer» (Kane 43%, Saka 28%, Gordon 19%;
+  Drena Beljo 18%, Perišić 13%, Pašalić 12%): goles por 90' encogidos hacia
+  el puesto. Sin cuotas de casas: el ciclo aún no las tiene para el sábado.
+- **Vídeo 1** (55 s): después de «Last meeting», toque en Tips, la pantalla
+  entera (cuotas de las casas incluidas) y de ahí a la clasificación por la
+  barra de abajo.

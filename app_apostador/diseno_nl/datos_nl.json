@@ -694,7 +694,101 @@
     "fecha": "2026-06-17",
     "comp": "World Cup"
    }
-  ]
+  ],
+  "mas_tips": [
+   {
+    "txt": "England or draw",
+    "p": 78.0
+   },
+   {
+    "txt": "England, draw no bet",
+    "p": 72.0
+   },
+   {
+    "txt": "England to win",
+    "p": 56.0
+   },
+   {
+    "txt": "Over 1.5 goals",
+    "p": 81.0
+   },
+   {
+    "txt": "Under 3.5 goals",
+    "p": 64.0
+   },
+   {
+    "txt": "Over 2.5 goals",
+    "p": 59.0
+   },
+   {
+    "txt": "Both teams score",
+    "p": 58.0
+   },
+   {
+    "txt": "England score first",
+    "p": 60.0
+   },
+   {
+    "txt": "England 2+ goals",
+    "p": 57.0
+   },
+   {
+    "txt": "Over 8.5 corners",
+    "p": 59.0
+   },
+   {
+    "txt": "Under 3.5 cards",
+    "p": 77.0
+   }
+  ],
+  "marcadores": [
+   {
+    "l": 1,
+    "v": 1,
+    "p": 10.0
+   },
+   {
+    "l": 1,
+    "v": 2,
+    "p": 10.0
+   }
+  ],
+  "goleadores": {
+   "Croatia": [
+    {
+     "jugador": "Dion Drena Beljo",
+     "p": 18.0,
+     "goles": 1
+    },
+    {
+     "jugador": "I. Perišić",
+     "p": 13.0,
+     "goles": 6
+    },
+    {
+     "jugador": "Marco Pašalić",
+     "p": 12.0,
+     "goles": 1
+    }
+   ],
+   "England": [
+    {
+     "jugador": "H. Kane",
+     "p": 43.0,
+     "goles": 17
+    },
+    {
+     "jugador": "B. Saka",
+     "p": 28.0,
+     "goles": 5
+    },
+    {
+     "jugador": "A. Gordon",
+     "p": 19.0,
+     "goles": 5
+    }
+   ]
+  }
  },
  "informe": {
   "local": "Czech Republic",

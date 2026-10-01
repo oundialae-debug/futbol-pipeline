@@ -155,8 +155,6 @@ for dia in sorted({p["fecha"][:10] for p in N["proximos"]}):
     bloques += (f'<div style="display: flex; align-items: center; padding: 10px 14px 4px 14px; font-size: 11px; font-weight: 700; letter-spacing: 0.8px; color: {MUT}">'
                 f'<span style="flex-grow: 1">{nombre}</span><span style="width: 140px; text-align: center; letter-spacing: 0.4px">WIN CHANCE · 1 X 2</span></div>'
                 + "".join(fila_prox(p) for p in ps))
-ACI = N["acierto"]
-res1 = ACI["mercados"][0]
 cuerpo = f'''
 <header style="display: flex; align-items: center; gap: 10px; padding: 18px 12px 0 16px">
 <a href="Main.dc.html" aria-label="2yellow home" style="flex-grow: 1; display: flex; align-items: center; gap: 6px">{icono(38, "hdr")}{palabra(27)}</a>
@@ -166,8 +164,8 @@ cuerpo = f'''
 <section style="margin: 0 12px; border-radius: 24px; background: {CARD}; border: 1px solid {BORDE}; overflow: hidden">
 <div style="padding: 14px 14px 6px 14px">{CAB_NL.replace("League A", "League A · Matchday 3")}</div>{bloques}</section>
 <a href="Tips.dc.html" style="margin: 0 12px; padding: 14px 16px; border-radius: 22px; background: {CARD}; border: 1px solid {BORDE}; display: flex; align-items: center; gap: 12px">
-{icono(34, "acc")}<div style="flex-grow: 1; display: flex; flex-direction: column"><span style="font-size: 14px; font-weight: 700">Our favourite won {int(res1["nuestro"])}% of the time</span>
-<span style="font-size: 12px; color: {MUT}">{ACI["n"]} Nations League games · bookies {int(res1["casa"])}%</span></div><span style="color: #8FA2FF; font-size: 13px; font-weight: 700">See</span></a>
+{icono(34, "acc")}<div style="flex-grow: 1; display: flex; flex-direction: column"><span style="font-size: 14px; font-weight: 700">Tips for Croatia – England</span>
+<span style="font-size: 12px; color: {MUT}">{len(N["previa"]["mas_tips"])} picks and the likely scorers</span></div><span style="color: #8FA2FF; font-size: 13px; font-weight: 700">See</span></a>
 '''
 H_MAIN = 1340
 common.page("Main.dc.html", "Nations League", 390, H_MAIN, raiz(H_MAIN, cuerpo), JS0, nav_active="m")
@@ -952,7 +950,8 @@ TOPI = f'''<section style="position: relative; margin: 0 12px; padding: 18px; bo
 <div style="position: relative; display: flex; justify-content: space-between; align-items: center">{chip("YOUR TEAM", "#1E2A66", "#A9B8FF")}<span style="font-size: 12px; color: {SOFT}">Sat 3 Oct · 18:00</span></div>
 <div style="position: relative; display: flex; align-items: center; gap: 8px">{escudo("Croatia", 26, KC)}<span style="font-size: 15px; font-weight: 700">Croatia – England</span>{escudo("England", 26, KE)}</div>
 <div style="position: relative; display: flex; flex-direction: column">
-{"".join(f'<div style="display: flex; align-items: center; gap: 10px; padding: 9px 0; border-top: 1px solid #1E2330"><span style="flex-grow: 1; font-size: 14px; font-weight: 600">{t}</span>{confianza(v)}<span style="{DISP}; font-size: 22px; color: {LIMA}; width: 50px; text-align: right">{int(v)}%</span></div>' for t, v in (("England to win", p2), ("Over 1.5 goals", PV["mas15"]), ("Over 2.5 goals", PV["mas25"]), ("Both teams score", PV["btts"])))}</div>
+{"".join(f'<div style="display: flex; align-items: center; gap: 10px; padding: 9px 0; border-top: 1px solid #1E2330"><span style="flex-grow: 1; font-size: 14px; font-weight: 600">{x["txt"]}</span>{confianza(x["p"])}<span style="{DISP}; font-size: 22px; color: {LIMA}; width: 50px; text-align: right">{int(x["p"])}%</span></div>' for x in sorted(PV["mas_tips"], key=lambda x: -x["p"]))}
+<div style="display: flex; align-items: center; gap: 10px; padding: 9px 0; border-top: 1px solid #1E2330"><span style="flex-grow: 1; font-size: 14px; font-weight: 600">Most likely score</span><span style="font-size: 14px; font-weight: 700">{" or ".join(f'{m["l"]}–{m["v"]}' for m in PV["marcadores"])}</span><span style="{DISP}; font-size: 22px; color: {SOFT}; width: 50px; text-align: right">{int(PV["marcadores"][0]["p"])}%</span></div></div>
 <div style="position: relative; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px">
 {"".join(f'<div style="padding: 10px 12px; border-radius: 14px; background: {SUB}"><span style="display: block; font-size: 11px; color: {MUT}">Fair odds · {k}</span><span style="{DISP}; font-size: 20px">{100 / v:.2f}</span></div>' for k, v in (("1", p1), ("X", px), ("2", p2)))}</div></section>'''
 
@@ -972,14 +971,15 @@ def tip(t):
             f'<span style="{DISP}; font-size: 36px; line-height: 1; color: {LIMA}">{int(t["p"])}<span style="font-size: 18px">%</span></span></div>')
 
 
-ACI_T = tarjeta("How we did", '<div style="display: grid; grid-template-columns: minmax(0, 1fr) 70px 70px; gap: 8px; font-size: 10px; font-weight: 700; letter-spacing: 0.6px; color: {MUT}"><span>MARKET</span><span style="text-align: right">2YELLOW</span><span style="text-align: right">BOOKIES</span></div>'.replace("{MUT}", MUT)
-                + "".join(f'<div style="display: grid; grid-template-columns: minmax(0, 1fr) 70px 70px; gap: 8px; align-items: center; padding: 8px 0; border-top: 1px solid #1E2330">'
-                          f'<span style="font-size: 13px; font-weight: 600">{m["mercado"]}</span><span style="text-align: right; {DISP}; font-size: 17px; color: {LIMA if m["nuestro"] >= m["casa"] else TXT}">{int(m["nuestro"])}%</span>'
-                          f'<span style="text-align: right; {DISP}; font-size: 17px">{int(m["casa"])}%</span></div>' for m in ACI["mercados"])
-                + f'<span style="font-size: 11px; color: {MUT}">Favourite side right · {ACI["n"]} Nations League games.</span>', "so far")
+GOLEADORES = tarjeta("Anytime scorer", '<div style="display: flex; gap: 14px">' + "".join(
+    f'<div style="flex: 1 1 0; min-width: 0; display: flex; flex-direction: column; gap: 8px"><span style="display: flex; align-items: center; gap: 6px; font-size: 13px; font-weight: 700">{franjas(k, 14)}{eq(e)[0]}</span>'
+    + "".join(f'<div style="display: flex; align-items: center; gap: 8px"><div style="flex-grow: 1; min-width: 0; display: flex; flex-direction: column"><span style="font-size: 13px; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis">{corto(g["jugador"])}</span>'
+              f'<span style="font-size: 11px; color: {MUT}">{g["goles"]} goal{"s" if g["goles"] != 1 else ""} since 2025</span></div><span style="{DISP}; font-size: 20px; color: {LIMA if g["p"] >= 30 else TXT}">{int(g["p"])}%</span></div>' for g in PV["goleadores"][e])
+    + '</div>' for e, k in (("Croatia", KC), ("England", KE))) + '</div>'
+    + f'<span style="font-size: 11px; color: {MUT}">Likely starters · goals per 90 for their country, over the expected goals.</span>', "2yellow model")
 cuerpo = (f'<header style="display: flex; align-items: center; gap: 10px; padding: 18px 12px 0 16px"><span style="flex-grow: 1; {DISP}; font-size: 34px">Tips</span>{chip("Nations League", "#12204F", "#A9B8FF")}</header>'
-          + TOPI + f'<div style="padding: 6px 16px 0 16px; font-size: 18px; font-weight: 700">Thursday 1 Oct</div>' + "".join(tip(t) for t in N["tips"]) + ACI_T)
-H_T = 1600
+          + TOPI + GOLEADORES + f'<div style="padding: 6px 16px 0 16px; font-size: 18px; font-weight: 700">Thursday 1 Oct</div>' + "".join(tip(t) for t in N["tips"]))
+H_T = 1840
 common.page("Tips.dc.html", "Tips", 390, H_T, raiz(H_T, cuerpo), JS0, nav_active="t")
 
 # ---------------------------------------------------------------- lienzo

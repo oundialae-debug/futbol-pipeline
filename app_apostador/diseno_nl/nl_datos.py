@@ -173,6 +173,48 @@ h2h = part[(((part.local == "Croatia") & (part.visitante == "England")) | ((part
            & part.terminado]
 PV["h2h"] = [{"local": f.local, "visitante": f.visitante, "gl": int(f.goles_l), "gv": int(f.goles_v), "fecha": f.fecha[:10],
               "comp": f.competicion} for _, f in h2h.sort_values("fecha").iterrows()]
+
+# ---- más tips de Croacia–Inglaterra, todos del mismo modelo (petición del usuario, 01/10)
+from math import exp as _exp, factorial as _fact  # noqa: E402
+_l, _v = PV["lam"]
+_M = np.array([[_exp(-_l) * _l ** i / _fact(i) * _exp(-_v) * _v ** j / _fact(j) for j in range(11)] for i in range(11)])
+_1, _X, _2 = np.tril(_M, -1).sum(), np.trace(_M), np.triu(_M, 1).sum()
+_mejor = sorted(((i, j) for i in range(6) for j in range(6)), key=lambda s: -_M[s])[:2]
+PV["mas_tips"] = [
+    {"txt": "England or draw", "p": r((_2 + _X) * 100, 0)},
+    {"txt": "England, draw no bet", "p": r(_2 / (_1 + _2) * 100, 0)},
+    {"txt": "England to win", "p": PV["p1x2"][2]},
+    {"txt": "Over 1.5 goals", "p": PV["mas15"]},
+    {"txt": "Under 3.5 goals", "p": 100 - PV["mas35"]},
+    {"txt": "Over 2.5 goals", "p": PV["mas25"]},
+    {"txt": "Both teams score", "p": PV["btts"]},
+    {"txt": "England score first", "p": PV["primero"][1]},
+    {"txt": "England 2+ goals", "p": r((1 - _exp(-_v) * (1 + _v)) * 100, 0)},
+    {"txt": "Over 8.5 corners", "p": PV["corners_85"]},
+    {"txt": "Under 3.5 cards", "p": 100 - PV["tarjetas_35"]},
+]
+PV["marcadores"] = [{"l": int(i), "v": int(j), "p": r(_M[i, j] * 100, 0)} for i, j in _mejor]
+
+# Goleador: goles por 90' de cada titular con su selección desde 2025, encogidos hacia su
+# puesto con 10 partidos de peso (un gol en 60' no da un 51%), sobre los goles esperados del
+# equipo; 80' esperados para un titular.
+PRIOR90 = {"Forward": 0.35, "Midfielder": 0.12, "Defender": 0.04, "Goalkeeper": 0.0}
+_p25 = part[(part.fecha >= "2025-01-01") & part.terminado]
+goleadores = {}
+for e, lam_e in (("Croatia", _l), ("England", _v)):
+    ms = _p25[(_p25.local == e) | (_p25.visitante == e)]
+    eq_por_partido = sum(m.goles_l if m.local == e else m.goles_v for _, m in ms.iterrows()) / len(ms)
+    x = jp[jp.match_id.isin(ms.match_id) & (jp.equipo_id == ids[e])]
+    fil = []
+    for _, j in notas[(notas.seleccion == e) & notas.once_probable].iterrows():
+        y = x[x.jugador_id == j.jugador_id]
+        g, mins = y.goalsScored.sum(), y.minutos.sum()
+        tasa = (g + PRIOR90[j.posicion] * 10) / (mins / 90 + 10)
+        fil.append({"jugador": j.jugador, "p": r((1 - _exp(-lam_e * tasa / eq_por_partido * 80 / 90)) * 100, 0), "goles": int(g)})
+    goleadores[e] = sorted(fil, key=lambda f: -f["p"])[:3]
+PV["goleadores"] = goleadores
+print("más tips:", PV["mas_tips"], PV["marcadores"], goleadores)
+
 OUT["previa"] = PV
 print("previa CRO-ENG:", {k: PV[k] for k in ("lam", "p1x2", "mas25", "btts", "marcador", "corners", "tarjetas", "forma", "fifa_pts", "fifa_puesto")})
 
