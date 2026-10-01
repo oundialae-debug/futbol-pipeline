@@ -20,4 +20,7 @@
   pantallas, vídeos o imágenes («[odds from API]», «Forecast soon», «Referee
   not named»...). Lo que falta se quita o se calcula con nuestro modelo; nunca
   se inventan cuotas ni datos de terceros.
+- **Estructura final (01/10/2026):** lo que el usuario confirma queda en
+  `ESTRUCTURA.md` y es la plantilla para todo lo siguiente (otros partidos,
+  selecciones y ligas). Lo marcado «pendiente» no se copia hasta su sí.
 - Dónde lo dejamos y cómo regenerar: final de `BITACORA.md`.

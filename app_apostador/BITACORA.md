@@ -469,3 +469,13 @@ carpeta se apunta aquí.
   `diseno_nl/generador/nl_pantallas.py` (H_PV 2760 → 3750),
   `diseno_nl/project/Partido.dc.html`, `diseno_nl/project/canvas.json`.
 - **Vídeos:** sin tocar (el primero se dejó así por petición del usuario).
+
+## 01/10/2026: ESTRUCTURA.md, la plantilla final
+
+- **Pedido:** «Para todo lo que acabemos metiendo y confirmemos, guárdalo como
+  estructura final para todo lo siguiente».
+- **Qué:** `ESTRUCTURA.md` con las tarjetas de la previa y del informe, en
+  orden, de dónde sale cada dato y su estado (en uso / pendiente de su sí),
+  más las trampas de datos ya conocidas. Regla añadida en `CLAUDE.md`.
+- **API:** pedido buscar también en la API; propuestas las llamadas, sin
+  hacer ninguna hasta su sí.
