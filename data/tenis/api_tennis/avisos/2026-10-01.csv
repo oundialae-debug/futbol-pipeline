@@ -59,3 +59,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-01 08:47,12166556,Wta Singles,Beijing,Y. Shao,A. Zakharova,menos,14.5,0.6759,0.5889,1.571,True
 2026-10-01 08:56,12166498,Atp Singles,Tokyo,D. Shapovalov,S. Shimabukuro,menos,21.5,0.7142,0.5576,1.666,True
 2026-10-01 08:58,12167359,Itf Men Singles,M25 Kigali,N. Grunewald,A. Beckley,menos,17.5,0.6868,0.5576,1.666,True
+2026-10-01 08:59,12167039,Itf Men Singles,M25 Slobozia (Romania),F. C. Jianu,M. Todoran,menos,18.5,0.7053,0.5576,1.666,True
