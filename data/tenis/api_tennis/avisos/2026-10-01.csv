@@ -19,3 +19,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-01 04:46,12166949,Atp Singles,Tokyo,T. M. Etcheverry,S. Tsitsipas,menos,29.5,0.7349,0.625,1.5,True
 2026-10-01 04:59,12166497,Atp Singles,Tokyo,H. Rune,K. Jacquet,menos,19.5,0.6787,0.6451,1.444,True
 2026-10-01 05:23,12166958,Wta Singles,Beijing,S. Kartal,A. Lazaro Garcia,menos,18.5,0.6963,0.5889,1.571,True
+2026-10-01 05:23,12166960,Wta Singles,Beijing,K. Volynets,R. Montgomery,menos,25.5,0.7,0.5889,1.571,True
