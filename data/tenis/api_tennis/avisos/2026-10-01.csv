@@ -68,3 +68,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-01 09:10,12166537,Atp Singles,Beijing,A. Zverev,C. Norrie,menos,22.5,0.7214,0.5767,1.615,True
 2026-10-01 09:14,12167322,Itf Men Singles,M25 Slobozia (Romania),Pe. Tsitsipas,S. Gima,menos,19.5,0.7227,0.5767,1.615,True
 2026-10-01 09:16,12166938,Challenger Women Singles,Jingshan,A. Falei,K. Sidorova,menos,18.5,0.658,0.5576,1.666,True
+2026-10-01 09:28,12167404,Itf Men Singles,M15 Baku 2 (Azerbaijan),M. Hurrion,J. Hasson,menos,17.5,0.7283,0.625,1.5,True
