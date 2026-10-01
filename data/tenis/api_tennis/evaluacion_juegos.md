@@ -1,14 +1,14 @@
 # Más/menos juegos en directo: apuestas en papel
 
-Partidos acabados con cuota de juegos en el registro: **158**. Una apuesta por partido (se agrupa por partido). Cuota = la de la API en esa pasada, no la de Luckia. Con menos de 20 apuestas el número no significa nada.
+Partidos acabados con cuota de juegos en el registro: **159**. Una apuesta por partido (se agrupa por partido). Cuota = la de la API en esa pasada, no la de Luckia. Con menos de 20 apuestas el número no significa nada.
 
 | estrategia | apuestas | aciertos | beneficio medio | sigmas |
 |---|---|---|---|---|
-| **señal: vigilar el menos** | 40 | 57% | -3.7% | -0.27 |
-| control: siempre el menos (1ª pasada) | 158 | 58% | +6.8% | +0.94 |
-| control: siempre el más (1ª pasada) | 158 | 42% | -21.5% | -2.90 |
+| **señal: vigilar el menos** | 41 | 59% | -1.6% | -0.12 |
+| control: siempre el menos (1ª pasada) | 159 | 58% | +6.2% | +0.85 |
+| control: siempre el más (1ª pasada) | 159 | 42% | -20.8% | -2.82 |
 
-Brier del 'más' en la línea principal (1ª pasada): modelo 0.3005, mercado 0.2509 (menor es mejor). El modelo da al más +22.1% sobre lo que pasa de verdad.
+Brier del 'más' en la línea principal (1ª pasada): modelo 0.2992, mercado 0.2508 (menor es mejor). El modelo da al más +21.8% sobre lo que pasa de verdad.
 
 ## Señales
 
@@ -53,23 +53,24 @@ Brier del 'más' en la línea principal (1ª pasada): modelo 0.3005, mercado 0.2
 | ITF M M15 Sharm ElSheikh 11: F. Zakaria vs G. El Feky | 25.5 | 1.80 | 27 | pierde |
 | ITF M M15 Sibenik: J. Nicod vs S. Seghetti | 22.5 | 1.83 | 28 | pierde |
 | ITF M M15 Ann Arbor, MI: Ma. Sheldon vs O. Pieczkowski | 21.5 | 1.80 | 29 | pierde |
+| ITF M M15 Ann Arbor, MI: N. Djosic vs T. Boosarawongse | 26.5 | 1.83 | 22 | gana |
 | ITF M M15 Monastir 33: M. Chazal vs K. van Wyk | 25.5 | 1.57 | 25 | gana |
 
 ## Reglas del vigilante (desde el 01/10 solo en papel)
 
 | regla | apuestas resueltas | aciertos | beneficio medio (cuota API) | sigmas |
 |---|---|---|---|---|
-| actual | 3 | 67% | -3.3% | -0.07 |
+| actual | 4 | 75% | +14.1% | +0.36 |
 | actual (al móvil) | 125 | 62% | -4.1% | -0.61 |
-| aprendida | 8 | 75% | +39.3% | +1.27 |
-| casa65 | 2 | 100% | +26.7% | +15.29 |
+| aprendida | 9 | 78% | +45.1% | +1.62 |
+| casa65 | 3 | 100% | +23.4% | +6.62 |
 
 ## Previos (antes de empezar), línea principal de juegos y ganador
 
-158 partidos. Juegos (más de la línea principal), Brier (menor es mejor): modelo 0.3046, modelo corregido con el historial 0.2651, casa 0.2498. Pasó el más en el 44%.
-Ganador (158): acierto modelo 63%, casa 73%.
+162 partidos. Juegos (más de la línea principal), Brier (menor es mejor): modelo 0.3024, modelo corregido con el historial 0.2657, casa 0.2501. Pasó el más en el 44%.
+Ganador (162): acierto modelo 62%, casa 73%.
 
 ## Aprendizaje (recalibración del modelo)
 
-Partidos resueltos: 86 (578 líneas). Activa: **sí** (hace falta 30+ partidos y que mejore a la CASA en partidos que no vio).
-Brier (menor es mejor): modelo 0.2876, modelo con el saque de hoy 0.2629, casa 0.2401, recalibrado (validado por partidos) 0.2286. Sesgo del modelo hacia el más: +23.8%.
+Partidos resueltos: 87 (587 líneas). Activa: **sí** (hace falta 30+ partidos y que mejore a la CASA en partidos que no vio).
+Brier (menor es mejor): modelo 0.2873, modelo con el saque de hoy 0.2628, casa 0.2401, recalibrado (validado por partidos) 0.2196. Sesgo del modelo hacia el más: +24.1%.
