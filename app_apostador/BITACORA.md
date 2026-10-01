@@ -406,3 +406,10 @@ carpeta se apunta aquí.
 - **Cómo:** `sondeos/sondeo_matches_3.py`, lanzado por un workflow nuevo
   (`.github/workflows/sondeo_2yellow.yml`). Es el único fichero fuera de esta
   carpeta y solo se dispara desde esta rama. No repite partidos ya guardados.
+- **Resultado del sondeo (3 llamadas, hechas):** eventos, tiros, noticias y
+  estadio vienen rellenos. La predicción en directo es floja (cada 10 minutos
+  y reacciona tarde). Trampas apuntadas en `IDEAS_API.md`:
+  - en un cambio, `player` es el que sale;
+  - un penalti marcado es `Penalty`, no `Goal`;
+  - los tiros no cuadran al 100% con las estadísticas del equipo.
+- Dato nuevo: roja a Šulc (Chequia) en el 25' de Chequia–Inglaterra.

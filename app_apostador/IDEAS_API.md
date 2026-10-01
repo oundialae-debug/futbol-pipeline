@@ -79,3 +79,22 @@ respuestas crudas ya guardadas (`data/sondeo_perfil_jugador/*.json` y
 | 5 (estadísticas por competición) | ~600 | |
 | 6 (vídeos) | 1 por partido | o 1 por jornada filtrando por liga |
 | Nations League (selecciones) | ~1 por partido | `/matches/{id}` ya se pide en el ciclo: basta con guardar más campos |
+
+## Resultado del sondeo (01/10/2026, 3 llamadas autorizadas)
+
+Partidos terminados: Chequia 0-2 Inglaterra, España 4-1 Croacia, Atlético 2-1
+Real Madrid. Respuestas enteras en `app_apostador/sondeos/raw/`.
+
+| Campo | ¿Viene? | Notas |
+|---|---|---|
+| `events` | **Sí** (14–20 por partido) | goles con minuto y asistente, cambios, tarjetas, rojas. **Ojo 1:** en un cambio, `player` es el que SALE y `substituted` el que ENTRA (comprobado con el box-score: sale Pubill, entra Koke, 45'). **Ojo 2:** un penalti marcado llega como `Penalty`, no como `Goal`: contar solo «Goal» pierde goles sin avisar. |
+| `shots` | **Sí** (6–22 por equipo) | minuto, jugador, resultado (Missed/Blocked/Saved/Goal) y zona de la portería (Low Left, High Centre…). Sin xG por tiro ni posición en el campo. **No cuadra al 100% con las estadísticas del equipo** (Atlético: 7 a puerta en la lista frente a 9 en las estadísticas): usar la lista para la línea del partido y las estadísticas para los totales. |
+| `predictions.live` | Sí, pero **floja** | 10–11 fotos, una cada ~10 minutos, a veces con huecos de 20. Reacciona tarde: en España–Croacia, el 1-1 del 28' no la movió (85% → 85%). Vale como curiosidad, no como «momentum»; el momentum se construye mejor con los tiros y los goles. |
+| `predictions.prematch` | Sí | 10–26 versiones por partido. Atlético–Madrid: Madrid 48% toda la semana (igual que las casas). |
+| `news` | Sí | 4–20 titulares por partido, con imagen y enlace. |
+| `venue` | Sí | estadio, ciudad y aforo. |
+| `topPlayers` | Sí | después del partido sí trae cifras (xG, tiros a puerta, minutos). |
+
+Dato nuevo encontrado al mirarlo: **Chequia jugó con diez desde el 25'**
+(roja a Šulc). El informe de la app no lo decía porque esa roja no estaba en
+nuestros datos de selecciones.
