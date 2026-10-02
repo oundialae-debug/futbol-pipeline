@@ -325,9 +325,7 @@ event_key,tipo,torneo,jugador1,jugador2,estado,sets,juegos_totales
 12167555,Itf Women Doubles,W15 Nashville,Malmkjaer/ Kruger,Drugdova/ Nijkamp,Finished,2 - 0,18
 12167556,Itf Women Doubles,W15 Nashville,Vijayakumar/ Weng,Mattioli/ Webb,Finished,0 - 2,14
 12167557,Itf Women Doubles,W15 Trelew,Carrocera/ Maruca,Ayala/ Britez Risso,Finished,0 - 2,16
-12167558,Itf Women Doubles,W15 Trelew,Doldan/ Sosa,Larraya Guidi/ Sousa Salazar,Set 2,0 - 1,15
-12167559,Itf Women Doubles,W15 Trelew,Moyano/ Sanchez,Bhatia/ Moron,,-,0
-12167560,Itf Women Doubles,W15 Trelew,Kawano Cho/ Tarantola,Meabe/ Urrutia,,-,0
+12167558,Itf Women Doubles,W15 Trelew,Doldan/ Sosa,Larraya Guidi/ Sousa Salazar,Finished,0 - 2,19
 12167561,Itf Men Singles,"M15 Ann Arbor, MI",M. Dahlin,A. Bernard,Finished,2 - 0,25
 12167562,Itf Men Singles,"M15 Ann Arbor, MI",N. Tomizawa,M. Kuhar,Finished,2 - 0,16
 12167563,Itf Men Doubles,"M15 Ann Arbor, MI",Fradkin/ Kuhar,Albieri/ Heng,Finished,2 - 0,20
@@ -336,10 +334,10 @@ event_key,tipo,torneo,jugador1,jugador2,estado,sets,juegos_totales
 12167566,Itf Men Singles,"M15 Fayetteville, AR",D. Mosejczuk,V. Jankanj,Finished,2 - 0,16
 12167567,Itf Men Singles,"M15 Fayetteville, AR",A. N. Tudorica,N. Niedner,Finished,2 - 0,22
 12167568,Itf Men Singles,"M15 Fayetteville, AR",D. N. Cazacu,S. Rozin,Finished,1 - 2,26
-12167569,Itf Men Singles,"M15 Fayetteville, AR",T. Papamalamis,T. Chavez,Set 2,1 - 0,14
+12167569,Itf Men Singles,"M15 Fayetteville, AR",T. Papamalamis,T. Chavez,Finished,2 - 0,20
 12167570,Itf Men Singles,"M15 Fayetteville, AR",J. A. Rodriguez,K. A. Melero,Finished,2 - 0,22
-12167571,Itf Men Singles,"M15 Fayetteville, AR",C. Robertson,H. Roh,Set 3,1 - 1,22
-12167572,Itf Men Singles,"M15 Fayetteville, AR",A. Shah,E. Bynoe,Set 3,1 - 1,24
+12167571,Itf Men Singles,"M15 Fayetteville, AR",C. Robertson,H. Roh,Finished,1 - 2,28
+12167572,Itf Men Singles,"M15 Fayetteville, AR",A. Shah,E. Bynoe,Finished,2 - 1,25
 12167573,Challenger Men Doubles,Columbus,MacKinlay/ Okonkwo,Rybakov/ Smith,Finished,1 - 2,42
 12167574,Itf Women Singles,W15 Monastir 28,E. Haavisto,S. Biolay,Finished,0 - 2,16
 12167575,Itf Women Singles,W15 Monastir 28,V. Losciale,Z. Y. Ruan,Finished,2 - 1,32
@@ -364,7 +362,7 @@ event_key,tipo,torneo,jugador1,jugador2,estado,sets,juegos_totales
 12167594,Itf Men Singles,M15 Monastir 33,M. Chazal,K. van Wyk,Finished,1 - 2,25
 12167595,Itf Men Singles,M15 Monastir 33,C. Hernandez,S. Hamza Reguig,Finished,2 - 0,17
 12167596,Itf Men Singles,M15 Monastir 33,L. G. Verwerft,A. Rathi,Finished,2 - 0,17
-12167597,Itf Men Doubles,"M15 Fayetteville, AR",Horwood/ Vrba,Roddick/ Tokac,,-,0
+12167597,Itf Men Doubles,"M15 Fayetteville, AR",Horwood/ Vrba,Roddick/ Tokac,Set 2,0 - 1,9
 12167599,Itf Men Doubles,"M15 Fayetteville, AR",Goity Zapico/ Valletta,Arcila/ Rozin,,-,0
 12167600,Itf Men Doubles,M15 Monastir 33,Colombo/ Demanet,Branger/ Dugardin,Finished,0 - 2,19
 12167601,Itf Men Doubles,M15 Monastir 33,Duran/ Ouakaa,Abibsi/ Dell'Elba,Finished,2 - 0,18
