@@ -73,3 +73,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-02 07:03,12167354,Wta Singles,Beijing,T. Preston,D. Parry,menos,20.5,0.8109,0.8109,1.166,True,casa65
 2026-10-02 07:03,12167632,Challenger Women Singles,Jingshan,J. Bouzas Maneiro,S. Lansere,menos,16.5,0.7242,0.6077,1.533,True,actual
 2026-10-02 07:09,12167703,Itf Men Singles,M15 Sharm ElSheikh 11,P. Jubb,A. Elsayed,menos,18.5,0.6089,0.5,1.833,True,aprendida
+2026-10-02 07:12,12167353,Wta Singles,Beijing,K. Muchova,K. Boulter,menos,20.5,0.5545,0.5,1.833,True,aprendida
