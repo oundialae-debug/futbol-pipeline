@@ -203,3 +203,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-02 13:24,12167673,Itf Men Singles,M25 Kigali,Y. Oliel,F. Bax,menos,19.5,0.772,0.5576,1.666,True,actual
 2026-10-02 13:34,12167421,Challenger Women Singles,Adana (Turkey) - Qualification,E. Pridankina,E. Andreeva,menos,23.5,0.6969,0.5576,1.666,True,actual
 2026-10-02 13:41,12167474,Challenger Men Singles,Mouilleron-Le-Captif,C. Tabur,S. Gueymard Wayenburg,menos,22.5,0.6395,0.4853,1.909,True,aprendida
+2026-10-02 13:48,12167532,Challenger Women Singles,Adana (Turkey) - Qualification,L. Jeanjean,L. Stefanini,menos,27.5,0.6991,0.5576,1.666,True,actual
