@@ -16,3 +16,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-02 03:17,12167636,Itf Men Singles,M15 Luan 4,K. Wang,I. Becroft,menos,13.5,0.9442,0.9442,1.004,True,casa65
 2026-10-02 03:19,12167298,Challenger Men Singles,Jingshan,E. Ymer,F. Cina,menos,22.5,0.684,0.5,1.833,True,aprendida
 2026-10-02 03:22,12167616,Atp Singles,Tokyo,V. Vacherot,S. Tsitsipas,menos,23.5,0.6617,0.5147,1.8,True,aprendida
+2026-10-02 03:35,12167300,Wta Singles,Beijing,J. Tjen,D. Shnaider,menos,15.5,0.6948,0.5889,1.571,True,actual
