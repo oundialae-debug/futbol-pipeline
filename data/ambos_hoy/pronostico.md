@@ -4,4 +4,4 @@ Modelo oficial de ambos marcan (producción + precio, 9292 partidos de entrenami
 
 | partido | hora (España) | modelo: sí | solo precio: sí | mercado: sí | lado del modelo | cuota mínima | cuota mediana | VE | apuesta (VE > 8%) | once |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Eldense - Oviedo | 20:30 | 46% | 48% | 47% | **no** | 1.85 | 1.74 | -6.2% | no | sin once |
+| Eldense - Oviedo | 20:30 | 47% | 48% | 46% | **no** | 1.87 | 1.73 | -7.5% | no | sin once |
