@@ -171,3 +171,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-02 10:58,12167732,Itf Men Singles,M15 Monastir 33,E. Demanet,A. Ouakaa,menos,26.5,0.7332,0.5576,1.666,True,actual
 2026-10-02 10:59,12167293,Wta Singles,Beijing,M. Timofeeva,N. Osaka,más,25.5,0.5395,0.3549,2.625,True,aprendida
 2026-10-02 10:59,12167473,Wta Singles,Beijing,R. Zarazua,A. Sabalenka,menos,17.5,0.6571,0.5576,1.666,True,actual
+2026-10-02 10:59,12167473,Wta Singles,Beijing,R. Zarazua,A. Sabalenka,menos,17.5,0.6571,0.5576,1.666,True,aprendida
