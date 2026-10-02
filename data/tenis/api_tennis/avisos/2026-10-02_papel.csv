@@ -178,3 +178,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-02 11:15,12167671,Challenger Men Singles,Porto,D. Rincon,D. Jorda Sanchis,menos,19.5,0.8468,0.6876,1.363,True,actual
 2026-10-02 11:16,12167669,Challenger Men Singles,Bari (Italy) - Qualification,S. Pieri,C. Taberner,menos,28.5,0.7282,0.5576,1.666,True,actual
 2026-10-02 11:17,12167623,Atp Singles,Tokyo,A. Fils,F. Tiafoe,menos,21.5,0.8808,0.8808,1.083,True,casa65
+2026-10-02 11:22,12167671,Challenger Men Singles,Porto,D. Rincon,D. Jorda Sanchis,menos,19.5,0.766,0.766,1.222,True,casa65
