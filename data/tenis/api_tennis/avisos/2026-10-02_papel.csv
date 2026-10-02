@@ -104,3 +104,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-02 08:48,12167316,Wta Singles,Beijing,S. Bejlek,M. Inglis,menos,22.5,0.5687,0.5147,1.8,True,aprendida
 2026-10-02 08:55,12167613,Atp Singles,Tokyo,K. Jacquet,L. Darderi,menos,22.5,0.7001,0.5576,1.666,True,actual
 2026-10-02 08:57,12167293,Wta Singles,Beijing,M. Timofeeva,N. Osaka,menos,19.5,0.541,0.4853,1.909,True,aprendida
+2026-10-02 09:00,12167657,Itf Men Singles,M25 Slobozia (Romania),S. Gima,J. Opitz,menos,25.5,0.7072,0.5767,1.615,True,actual
