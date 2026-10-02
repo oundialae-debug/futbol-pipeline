@@ -211,3 +211,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-02 14:35,12167727,Challenger Men Singles,Bari (Italy) - Qualification,M. Donald,M. Krumich,menos,21.5,0.668,0.5147,1.8,True,aprendida
 2026-10-02 14:35,12167771,Itf Men Singles,"M15 Ann Arbor, MI",J. Hallquist Lithen,N. Tomizawa,menos,20.5,0.672,0.5147,1.8,True,aprendida
 2026-10-02 14:38,12167778,Itf Men Singles,"M15 Ann Arbor, MI",M. Dahlin,D. Zhalgasbay,menos,20.5,0.6617,0.5147,1.8,True,aprendida
+2026-10-02 14:49,12167474,Challenger Men Singles,Mouilleron-Le-Captif,C. Tabur,S. Gueymard Wayenburg,menos,21.5,0.7475,0.5576,1.666,True,actual
