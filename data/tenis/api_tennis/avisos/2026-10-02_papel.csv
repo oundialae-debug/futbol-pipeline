@@ -97,3 +97,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-02 08:33,12167703,Itf Men Singles,M15 Sharm ElSheikh 11,P. Jubb,A. Elsayed,menos,18.5,0.9278,0.9278,1.012,True,casa65
 2026-10-02 08:34,12167806,Challenger Men Singles,Jingshan,Y. Erel,F. Cina,menos,22.5,0.6394,0.5,1.833,True,aprendida
 2026-10-02 08:37,12167730,Itf Men Singles,M15 Monastir 33,T. Duran,J. Loge,menos,21.5,0.5965,0.5,1.833,True,aprendida
+2026-10-02 08:38,12167353,Wta Singles,Beijing,K. Muchova,K. Boulter,menos,20.5,0.9129,0.9129,1.05,True,casa65
