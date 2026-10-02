@@ -117,3 +117,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-02 09:34,12167706,Itf Men Singles,M15 Sibenik,F. Krolo,N. Lopez,menos,20.5,0.7932,0.625,1.5,True,actual
 2026-10-02 09:35,12167293,Wta Singles,Beijing,M. Timofeeva,N. Osaka,menos,19.5,0.6749,0.5889,1.571,True,actual
 2026-10-02 09:36,12167701,Itf Men Singles,M15 Baku 2 (Azerbaijan),V. Iakubenko,K. Yilmaz,menos,18.5,0.75,0.75,1.25,True,casa65
+2026-10-02 09:36,12167806,Challenger Men Singles,Jingshan,Y. Erel,F. Cina,menos,22.5,0.7557,0.5576,1.666,True,actual
