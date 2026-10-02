@@ -2,3 +2,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-02 01:55,12167614,Atp Singles,Tokyo,J. Munar,J. Faria,menos,22.5,0.6531,0.5,1.833,True,aprendida
 2026-10-02 02:04,12167634,Itf Men Singles,M15 Luan 4,N. Ehrenschneider,T. Ichikawa,menos,20.5,0.7562,0.4853,1.909,True,aprendida
 2026-10-02 02:04,12167637,Itf Men Singles,M15 Luan 4,T. Yamanaka,M. Purcell,menos,18.5,0.7578,0.5,1.833,True,aprendida
+2026-10-02 02:07,12167636,Itf Men Singles,M15 Luan 4,K. Wang,I. Becroft,menos,19.5,0.763,0.5,1.833,True,aprendida
