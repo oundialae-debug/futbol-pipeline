@@ -260,3 +260,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-02 19:02,12167755,Challenger Men Singles,Columbus,A. Shelbayh,A. Mayo,menos,25.5,0.6876,0.6876,1.363,True,casa65
 2026-10-02 19:14,12167440,Challenger Women Singles,Adana (Turkey) - Qualification,A. Ruzic,T. Kostovic,menos,28.5,0.7007,0.5576,1.666,True,actual
 2026-10-02 19:14,12167795,Itf Men Singles,"M15 Fayetteville, AR",T. Papamalamis,A. Shah,menos,17.5,0.6788,0.5576,1.666,True,actual
+2026-10-02 20:34,12167795,Itf Men Singles,"M15 Fayetteville, AR",T. Papamalamis,A. Shah,más,27.5,0.7154,0.5366,1.727,True,aprendida
