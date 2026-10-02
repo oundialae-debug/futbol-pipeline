@@ -194,3 +194,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-02 12:11,12167420,Challenger Men Singles,Bari (Italy) - Qualification,E. Dalla Valle,J. C. Martin Manzano,menos,20.5,0.6469,0.5,1.833,True,aprendida
 2026-10-02 12:11,12167473,Wta Singles,Beijing,R. Zarazua,A. Sabalenka,menos,16.5,0.8421,0.8421,1.125,True,casa65
 2026-10-02 12:11,12167694,Challenger Men Singles,Porto,H. Grenier,I. Montes-De La Torre,menos,21.5,0.7921,0.7921,1.181,True,casa65
+2026-10-02 12:13,12167710,Itf Men Singles,M25 Zaragoza,N. Ifi,R. Nijboer,menos,20.5,0.7507,0.5889,1.571,True,actual
