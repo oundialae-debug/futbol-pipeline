@@ -65,3 +65,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-02 06:37,12167692,Challenger Men Singles,Jingshan,L. Harris,A. Ilagan,menos,21.5,0.7479,0.5767,1.615,True,actual
 2026-10-02 06:48,12167313,Wta Singles,Beijing,E. Alexandrova,A. Sasnovich,menos,17.5,0.6755,0.5767,1.615,True,actual
 2026-10-02 06:48,12167354,Wta Singles,Beijing,T. Preston,D. Parry,menos,22.5,0.6746,0.5576,1.666,True,actual
+2026-10-02 06:52,12167670,Challenger Men Singles,Jingshan,A. Bolt,D. Sweeny,menos,22.5,0.8536,0.6876,1.363,True,actual
