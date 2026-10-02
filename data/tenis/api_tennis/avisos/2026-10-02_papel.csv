@@ -245,3 +245,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-02 16:52,12167512,Challenger Men Singles,Columbus,Dar. Blanch,D. Dietrich,menos,22.5,0.6998,0.5366,1.727,True,aprendida
 2026-10-02 17:09,12167755,Challenger Men Singles,Columbus,A. Shelbayh,A. Mayo,menos,22.5,0.6533,0.5,1.833,True,aprendida
 2026-10-02 17:28,12167793,Itf Men Singles,"M15 Fayetteville, AR",S. Rozin,H. Roh,menos,26.5,0.705,0.5576,1.666,True,actual
+2026-10-02 17:32,12167792,Itf Men Singles,"M15 Fayetteville, AR",J. A. Rodriguez,J. Braswell,menos,18.5,0.7907,0.6876,1.363,True,actual
