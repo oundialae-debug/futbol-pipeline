@@ -1,14 +1,14 @@
 # Más/menos juegos en directo: apuestas en papel
 
-Partidos acabados con cuota de juegos en el registro: **202**. Una apuesta por partido (se agrupa por partido). Cuota = la de la API en esa pasada, no la de Luckia. Con menos de 20 apuestas el número no significa nada.
+Partidos acabados con cuota de juegos en el registro: **208**. Una apuesta por partido (se agrupa por partido). Cuota = la de la API en esa pasada, no la de Luckia. Con menos de 20 apuestas el número no significa nada.
 
 | estrategia | apuestas | aciertos | beneficio medio | sigmas |
 |---|---|---|---|---|
-| **señal: vigilar el menos** | 54 | 65% | +12.4% | +1.04 |
-| control: siempre el menos (1ª pasada) | 202 | 55% | +0.8% | +0.13 |
-| control: siempre el más (1ª pasada) | 202 | 45% | -15.9% | -2.41 |
+| **señal: vigilar el menos** | 57 | 65% | +12.9% | +1.12 |
+| control: siempre el menos (1ª pasada) | 208 | 55% | +0.6% | +0.10 |
+| control: siempre el más (1ª pasada) | 208 | 45% | -15.7% | -2.43 |
 
-Brier del 'más' en la línea principal (1ª pasada): modelo 0.2861, mercado 0.2501 (menor es mejor). El modelo da al más +19.1% sobre lo que pasa de verdad.
+Brier del 'más' en la línea principal (1ª pasada): modelo 0.2850, mercado 0.2501 (menor es mejor). El modelo da al más +18.8% sobre lo que pasa de verdad.
 
 ## Señales
 
@@ -52,6 +52,7 @@ Brier del 'más' en la línea principal (1ª pasada): modelo 0.2861, mercado 0.2
 | ATP 500 Tokyo: J. Faria vs A. Fery | 29.5 | 1.33 | 29 | gana |
 | ITF M M25 Kigali: C. Denolly vs M. Plunger | 21.5 | 1.83 | 16 | gana |
 | ITF M M25 Slobozia (Romania): F. J. Planinsek vs B. Zgola | 26.5 | 1.73 | 32 | pierde |
+| WTA 125 Jingshan: A. Shubladze vs S. Wei | 25.5 | 1.80 | 30 | pierde |
 | Challenger Mouilleron-Le-Captif: H. Mayot vs T. Schoolkate | 28.5 | 1.53 | 28 | gana |
 | ITF M M15 Luan 4: K. Ogura vs D. J. Kim | 26.5 | 2.75 | 31 | pierde |
 | ITF M M15 Luan 4: Y. Taka vs I. Becroft | 22.5 | 1.83 | 17 | gana |
@@ -67,24 +68,26 @@ Brier del 'más' en la línea principal (1ª pasada): modelo 0.2861, mercado 0.2
 | ITF M M25 Slobozia (Romania): S. Gima vs J. Opitz | 23.5 | 1.80 | 22 | gana |
 | Challenger Jingshan: A. Bolt vs D. Sweeny | 29.5 | 1.83 | 22 | gana |
 | ITF M M15 Baku 2 (Azerbaijan): A. Azkara vs D. Singh | 24.5 | 1.14 | 25 | pierde |
+| ITF M M15 Sharm ElSheikh 11: F. Zakaria vs R. Faucon | 21.5 | 1.83 | 20 | gana |
 | ITF M M15 Sibenik: F. Krolo vs N. Lopez | 23.5 | 1.80 | 18 | gana |
+| Challenger Jingshan: Y. Erel vs F. Cina | 25.5 | 1.83 | 25 | gana |
 
 ## Reglas del vigilante (desde el 01/10 solo en papel)
 
 | regla | apuestas resueltas | aciertos | beneficio medio (cuota API) | sigmas |
 |---|---|---|---|---|
-| actual | 45 | 67% | +2.7% | +0.25 |
+| actual | 51 | 69% | +6.1% | +0.60 |
 | actual (al móvil) | 125 | 62% | -4.1% | -0.61 |
-| aprendida | 54 | 56% | +0.6% | +0.05 |
-| casa65 | 25 | 80% | -3.3% | -0.33 |
+| aprendida | 60 | 55% | -0.3% | -0.02 |
+| casa65 | 29 | 79% | -3.0% | -0.32 |
 
 ## Previos (antes de empezar), línea principal de juegos y ganador
 
-220 partidos. Juegos (más de la línea principal), Brier (menor es mejor): modelo 0.2925, modelo corregido con el historial 0.2603, casa 0.2506. Pasó el más en el 46%.
-Ganador (220): acierto modelo 64%, casa 71%.
+230 partidos. Juegos (más de la línea principal), Brier (menor es mejor): modelo 0.2903, modelo corregido con el historial 0.2600, casa 0.2506. Pasó el más en el 46%.
+Ganador (230): acierto modelo 64%, casa 70%.
 
 ## Aprendizaje (recalibración del modelo)
 
-Partidos resueltos: 130 (950 líneas). Activa: **sí** (hace falta 30+ partidos y que mejore a la CASA en partidos que no vio).
-**Apostando con lo aprendido, día a día** (cada día aprende solo de los anteriores): 35 apuestas, aciertos 54%, beneficio medio -1.0%, -0.06 sigmas.
-Brier (menor es mejor): modelo 0.2850, modelo con el saque de hoy 0.2664, casa 0.2419, recalibrado (validado por partidos) 0.2256. Sesgo del modelo hacia el más: +23.5%.
+Partidos resueltos: 136 (1006 líneas). Activa: **sí** (hace falta 30+ partidos y que mejore a la CASA en partidos que no vio).
+**Apostando con lo aprendido, día a día** (cada día aprende solo de los anteriores): 41 apuestas, aciertos 54%, beneficio medio -2.3%, -0.16 sigmas.
+Brier (menor es mejor): modelo 0.2846, modelo con el saque de hoy 0.2663, casa 0.2419, recalibrado (validado por partidos) 0.2280. Sesgo del modelo hacia el más: +23.1%.
