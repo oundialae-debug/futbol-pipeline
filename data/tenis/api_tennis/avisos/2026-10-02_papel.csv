@@ -50,3 +50,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-02 05:22,12167692,Challenger Men Singles,Jingshan,L. Harris,A. Ilagan,menos,21.5,0.6335,0.5,1.833,True,aprendida
 2026-10-02 05:33,12167645,Itf Men Singles,M25 Darwin,C. Hoole,C. Sinclair,menos,22.5,0.603,0.5,1.833,True,aprendida
 2026-10-02 05:40,12167640,Itf Men Singles,M25 Darwin,P. Sekulic,H. Hoeyeraal,menos,19.5,0.5742,0.5,1.833,True,aprendida
+2026-10-02 05:40,12167652,Challenger Women Singles,Jingshan,A. Falei,S. Sorribes Tormo,menos,19.5,0.7406,0.5767,1.615,True,actual
