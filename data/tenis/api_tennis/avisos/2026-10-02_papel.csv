@@ -12,3 +12,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-02 03:04,12167300,Wta Singles,Beijing,J. Tjen,D. Shnaider,menos,20.5,0.5815,0.5,1.833,True,aprendida
 2026-10-02 03:04,12167324,Wta Singles,Beijing,Y. Yuan,M. Andreeva,menos,17.5,0.5593,0.4853,1.909,True,aprendida
 2026-10-02 03:04,12167626,Challenger Women Singles,Jingshan,K. Okamura,E. Jones,menos,19.5,0.6159,0.5,1.833,True,aprendida
+2026-10-02 03:10,12167637,Itf Men Singles,M15 Luan 4,T. Yamanaka,M. Purcell,menos,23.5,0.8491,0.6077,1.533,True,actual
