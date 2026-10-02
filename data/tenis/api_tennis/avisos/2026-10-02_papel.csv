@@ -102,3 +102,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-02 08:43,12167705,Itf Men Singles,M15 Sharm ElSheikh 11,F. Zakaria,R. Faucon,menos,21.5,0.6586,0.5,1.833,True,aprendida
 2026-10-02 08:46,12167641,Itf Men Singles,M25 Darwin,D. Pham,Ja. Delaney,menos,21.5,0.5902,0.4853,1.909,True,aprendida
 2026-10-02 08:48,12167316,Wta Singles,Beijing,S. Bejlek,M. Inglis,menos,22.5,0.5687,0.5147,1.8,True,aprendida
+2026-10-02 08:55,12167613,Atp Singles,Tokyo,K. Jacquet,L. Darderi,menos,22.5,0.7001,0.5576,1.666,True,actual
