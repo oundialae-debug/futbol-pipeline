@@ -176,3 +176,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-02 11:08,12167710,Itf Men Singles,M25 Zaragoza,N. Ifi,R. Nijboer,menos,19.5,0.6339,0.4853,1.909,True,aprendida
 2026-10-02 11:11,12167687,Itf Men Singles,M25 Slobozia (Romania),B. Zgola,R. M. Papoe,menos,21.5,0.8302,0.8302,1.125,True,casa65
 2026-10-02 11:15,12167671,Challenger Men Singles,Porto,D. Rincon,D. Jorda Sanchis,menos,19.5,0.8468,0.6876,1.363,True,actual
+2026-10-02 11:16,12167669,Challenger Men Singles,Bari (Italy) - Qualification,S. Pieri,C. Taberner,menos,28.5,0.7282,0.5576,1.666,True,actual
