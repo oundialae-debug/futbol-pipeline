@@ -181,3 +181,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-02 11:22,12167671,Challenger Men Singles,Porto,D. Rincon,D. Jorda Sanchis,menos,19.5,0.766,0.766,1.222,True,casa65
 2026-10-02 11:26,12167690,Atp Singles,Beijing,H. Hurkacz,A. Gea,menos,23.5,0.6541,0.5366,1.727,True,aprendida
 2026-10-02 11:27,12167655,Itf Men Singles,M25 Kigali,M. Houkes,A. Beckley,menos,27.5,0.7412,0.5889,1.571,True,actual
+2026-10-02 11:30,12167368,Challenger Men Singles,Bari (Italy) - Qualification,G. Cadenasso,V. Sachko,menos,27.5,0.7208,0.5576,1.666,True,actual
