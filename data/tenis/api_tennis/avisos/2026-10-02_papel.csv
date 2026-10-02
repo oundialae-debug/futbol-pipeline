@@ -90,3 +90,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-02 08:04,12167657,Itf Men Singles,M25 Slobozia (Romania),S. Gima,J. Opitz,menos,20.5,0.5988,0.5,1.833,True,aprendida
 2026-10-02 08:04,12167701,Itf Men Singles,M15 Baku 2 (Azerbaijan),V. Iakubenko,K. Yilmaz,menos,21.5,0.6035,0.5,1.833,True,aprendida
 2026-10-02 08:06,12167698,Itf Men Singles,M15 Baku 2 (Azerbaijan),A. Azkara,D. Singh,menos,24.5,0.8141,0.8141,1.142,True,casa65
+2026-10-02 08:07,12167707,Itf Men Singles,M15 Sibenik,N. Mashtakov,J. Von der Schulenburg,menos,21.5,0.6152,0.5,1.833,True,aprendida
