@@ -236,3 +236,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-02 16:29,12167516,Challenger Men Singles,Columbus,M. Rottgering,A. Andrade,menos,19.5,0.8041,0.6451,1.444,True,actual
 2026-10-02 16:29,12167769,Challenger Men Singles,Columbus,M. Krueger,K. Smith,menos,23.5,0.7464,0.5767,1.615,True,actual
 2026-10-02 16:33,12167676,Itf Men Singles,M25 Zaragoza,A. Moro Canas,P. Vives Marcos,menos,20.5,0.5809,0.5,1.833,True,aprendida
+2026-10-02 16:37,12167693,Challenger Men Singles,Mouilleron-Le-Captif,H. Bernet,F. Balshaw,menos,23.5,0.6724,0.5,1.833,True,aprendida
