@@ -231,3 +231,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-02 16:09,12167792,Itf Men Singles,"M15 Fayetteville, AR",J. A. Rodriguez,J. Braswell,menos,21.5,0.6143,0.5,1.833,True,aprendida
 2026-10-02 16:09,12167793,Itf Men Singles,"M15 Fayetteville, AR",S. Rozin,H. Roh,menos,22.5,0.6165,0.5147,1.8,True,aprendida
 2026-10-02 16:13,12167741,Itf Men Singles,M25 Zaragoza,A. Ritschard,M. Damas,menos,20.5,0.7973,0.6876,1.363,True,actual
+2026-10-02 16:16,12167741,Itf Men Singles,M25 Zaragoza,A. Ritschard,M. Damas,menos,20.5,0.7315,0.7315,1.285,True,casa65
