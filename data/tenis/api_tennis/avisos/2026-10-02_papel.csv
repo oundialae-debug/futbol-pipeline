@@ -198,3 +198,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-02 12:29,12167394,Atp Singles,Beijing,Y. Bu,N. Djokovic,menos,22.5,0.6525,0.5366,1.727,True,aprendida
 2026-10-02 12:29,12167673,Itf Men Singles,M25 Kigali,Y. Oliel,F. Bax,menos,20.5,0.7022,0.5,1.833,True,aprendida
 2026-10-02 12:59,12167651,Challenger Men Singles,Mouilleron-Le-Captif,L. Poullain,J. J. Schwaerzler,menos,17.5,0.8109,0.8109,1.166,True,casa65
+2026-10-02 13:08,12167675,Itf Men Singles,M25 Zaragoza,L. Carboni,S. Jong,menos,21.5,0.6675,0.5147,1.8,True,aprendida
