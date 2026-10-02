@@ -25,3 +25,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-02 04:17,12167635,Itf Men Singles,M15 Luan 4,R. Matsuda,K. Ogura,menos,22.5,0.793,0.5576,1.666,True,actual
 2026-10-02 04:25,12167324,Wta Singles,Beijing,Y. Yuan,M. Andreeva,menos,24.5,0.6378,0.5576,1.666,True,actual
 2026-10-02 04:26,12167298,Challenger Men Singles,Jingshan,E. Ymer,F. Cina,menos,27.5,0.7391,0.5576,1.666,True,actual
+2026-10-02 04:29,12167298,Challenger Men Singles,Jingshan,E. Ymer,F. Cina,menos,27.5,0.6388,0.4634,2.0,True,aprendida
