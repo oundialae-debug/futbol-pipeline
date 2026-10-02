@@ -52,3 +52,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-02 05:40,12167640,Itf Men Singles,M25 Darwin,P. Sekulic,H. Hoeyeraal,menos,19.5,0.5742,0.5,1.833,True,aprendida
 2026-10-02 05:40,12167652,Challenger Women Singles,Jingshan,A. Falei,S. Sorribes Tormo,menos,19.5,0.7406,0.5767,1.615,True,actual
 2026-10-02 05:43,12167616,Atp Singles,Tokyo,V. Vacherot,S. Tsitsipas,más,32.5,0.7948,0.7315,1.285,True,aprendida
+2026-10-02 05:58,12167612,Atp Singles,Beijing,A. Molcan,K. Khachanov,menos,21.5,0.7337,0.625,1.5,True,actual
