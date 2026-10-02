@@ -6,3 +6,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-02 02:09,12167635,Itf Men Singles,M15 Luan 4,R. Matsuda,K. Ogura,menos,21.5,0.7843,0.5147,1.8,True,aprendida
 2026-10-02 02:42,12167636,Itf Men Singles,M15 Luan 4,K. Wang,I. Becroft,menos,15.5,0.8121,0.5889,1.571,True,actual
 2026-10-02 02:43,12167614,Atp Singles,Tokyo,J. Munar,J. Faria,menos,17.5,0.7396,0.5767,1.615,True,actual
+2026-10-02 03:02,12167306,Wta Singles,Beijing,V. Golubic,P. Stearns,menos,21.5,0.5868,0.5,1.833,True,aprendida
