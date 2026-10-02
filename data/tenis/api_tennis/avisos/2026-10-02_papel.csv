@@ -257,3 +257,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-02 18:29,12167755,Challenger Men Singles,Columbus,A. Shelbayh,A. Mayo,menos,23.5,0.7983,0.6451,1.444,True,actual
 2026-10-02 18:40,12167766,Challenger Men Singles,Mouilleron-Le-Captif,C. Chidekh,H. Mayot,menos,23.5,0.6797,0.5147,1.8,True,aprendida
 2026-10-02 18:41,12167676,Itf Men Singles,M25 Zaragoza,A. Moro Canas,P. Vives Marcos,menos,20.5,0.7831,0.7831,1.2,True,casa65
+2026-10-02 19:02,12167755,Challenger Men Singles,Columbus,A. Shelbayh,A. Mayo,menos,25.5,0.6876,0.6876,1.363,True,casa65
