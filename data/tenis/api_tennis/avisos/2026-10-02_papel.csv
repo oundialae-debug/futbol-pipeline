@@ -95,3 +95,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-02 08:09,12167706,Itf Men Singles,M15 Sibenik,F. Krolo,N. Lopez,menos,21.5,0.6367,0.5147,1.8,True,aprendida
 2026-10-02 08:21,12167308,Wta Singles,Beijing,C. Tauson,P. Kudermetova,menos,23.5,0.6717,0.5767,1.615,True,actual
 2026-10-02 08:33,12167703,Itf Men Singles,M15 Sharm ElSheikh 11,P. Jubb,A. Elsayed,menos,18.5,0.9278,0.9278,1.012,True,casa65
+2026-10-02 08:34,12167806,Challenger Men Singles,Jingshan,Y. Erel,F. Cina,menos,22.5,0.6394,0.5,1.833,True,aprendida
