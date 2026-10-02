@@ -1,4 +1,4 @@
-# Tenis en directo, 02/10/2026 18:29 UTC (20:29 en España)
+# Tenis en directo, 02/10/2026 18:45 UTC (20:45 en España)
 
 Calculadora desde el marcador exacto (modelo de puntos, superficie real) frente a la cuota en directo
 (sin margen). Ganador y sets: la calculadora suele coincidir con la casa. Total de juegos: el modelo
@@ -7,11 +7,13 @@ Se actualiza cada ~5 min; el registro en data/tenis/api_tennis/registro/ servir�
 
 | partido | tipo | superficie | marcador (sets, juegos, puntos, saca) | gana 1º: modelo / cuota | sets más probables (modelo) | total juegos: línea, modelo / cuota |
 |---|---|---|---|---|---|---|
-| A. Shelbayh vs A. Mayo | Challenger Men Singles | Hard | 1-0, 2-1, 30 - 40, saca A. Shelbayh | 76% / 81% | 2-0 59%, 1-2 24% | 23.5: 57% / 49% |
-| P. Boscardin Dias vs L. A. Miguel | Challenger Men Singles | Clay | 1-0, 5-6, 15 - 30, saca P. Boscardin Dias | 58% /  | 1-2 42%, 2-1 36% |  |
-| A. Ruzic vs T. Kostovic | Challenger Women Singles | Hard | 0-0, 2-4, 30 - 15, saca T. Kostovic | 42% / 44% | 0-2 34%, 2-1 28% | 23.5: 56% / 50% |
-| A. Moro Canas vs P. Vives Marcos | Itf Men Singles | Clay | 1-0, 4-2, 40 - 15, saca P. Vives Marcos | 98% / 94% | 2-0 95%, 2-1 3% | 18.5: 40% / 35% |
-| H. Coquelin vs O. Pieczkowski | Itf Men Singles | Hard | 0-0, 0-1, 30 - 30, saca H. Coquelin | 8% / 28% | 0-2 69%, 1-2 23% | 20.5: 44% / 50% |
-| T. Papamalamis vs A. Shah | Itf Men Singles | Hard | 0-0, 3-0, 0 - 15, saca A. Shah | 69% / 71% | 2-0 44%, 2-1 25% | 20.5: 66% / 50% |
-| T. Maria vs M. Rapolu | Itf Women Singles | Hard | 0-0, 4-0, 0 - 0, saca T. Maria | 80% / 90% | 2-0 55%, 2-1 25% |  |
-| E. McDonald vs K. Penickova | Itf Women Singles | Hard | 0-0, 2-2, 0 - 15, saca K. Penickova | 44% / 48% | 0-2 30%, 1-2 26% |  |
+| A. Shelbayh vs A. Mayo | Challenger Men Singles | Hard | 1-0, 3-4, 0 - 0, saca A. Shelbayh | 62% / 65% | 1-2 38%, 2-0 36% | 31.5: 55% / 49% |
+| C. Chidekh vs H. Mayot | Challenger Men Singles | Hard | 0-0, 0-0, 0 - 0, saca H. Mayot | 47% / 52% | 0-2 27%, 1-2 26% | 23.5: 54% / 49% |
+| P. Boscardin Dias vs L. A. Miguel | Challenger Men Singles | Clay | 1-1, 1-1, 0 - 0, saca L. A. Miguel | 47% /  | 1-2 53%, 2-1 47% |  |
+| A. Ruzic vs T. Kostovic | Challenger Women Singles | Hard | 0-0, 4-5, 15 - 40, saca A. Ruzic | 36% / 39% | 0-2 40%, 2-1 29% | 24.5: 55% / 51% |
+| A. Moro Canas vs P. Vives Marcos | Itf Men Singles | Clay | 1-0, 5-4, 15 - 15, saca A. Moro Canas | 96% / 91% | 2-0 90%, 2-1 6% | 20.5: 23% / 25% |
+| H. Coquelin vs O. Pieczkowski | Itf Men Singles | Hard | 0-0, 2-2, 15 - 30, saca O. Pieczkowski | 10% / 28% | 0-2 65%, 1-2 26% | 21.5: 47% / 51% |
+| T. Papamalamis vs A. Shah | Itf Men Singles | Hard | 0-0, 4-1, 40 - 15, saca A. Shah | 74% / 77% | 2-0 49%, 2-1 25% | 19.5: 64% / 50% |
+| T. Maria vs M. Rapolu | Itf Women Singles | Hard | 1-0, 1-0, 0 - 0, saca M. Rapolu | 85% / 94% | 2-0 64%, 2-1 20% |  |
+| E. McDonald vs K. Penickova | Itf Women Singles | Hard | 0-0, 4-3, 0 - 0, saca E. McDonald | 59% / 65% | 2-0 35%, 1-2 27% |  |
+| E. Zornada vs M. F. Urrutia | Itf Women Singles | Hard | 0-0, 1-0, 0 - 30, saca M. F. Urrutia | 31% / 14% | 0-2 38%, 1-2 30% |  |
