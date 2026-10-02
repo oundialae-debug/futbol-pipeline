@@ -4,13 +4,14 @@ Cada pronóstico se apunta ANTES del partido; aquí se cruza con lo que pasó (e
 
 **Reglas fijadas el 29/09/2026, antes de ver resultados:** el juez principal es el Brier y el log loss sobre TODOS los partidos, contra el ambos marcan real (mediana de casas sin margen), emparejado partido a partido. Primer punto de control a los 400 partidos. Apuesta en papel (1 unidad) solo si el VE supera el 8%. No se toca el modelo antes del control.
 
-**Partidos jugados: 4** (pendientes 0).
+**Partidos jugados: 4** (pendientes 1).
 
 ## Juez principal: todos los partidos contra el ambos marcan real
 
 | modelo | partidos | Brier modelo | Brier mercado | sigmas Brier | log loss modelo | log loss mercado | sigmas log loss |
 |---|---|---|---|---|---|---|---|
 | oficial | 4 | 0.2507 | 0.2408 | -0.63s | 0.6945 | 0.6747 | -0.62s |
+| solo precio (comparación) | 0 | - | - | - | - | - | - |
 
 Punto de control: 4 de 400 partidos. Hasta entonces las sigmas son orientativas (hace falta +2s en Brier Y log loss para decir que un modelo bate al mercado).
 
