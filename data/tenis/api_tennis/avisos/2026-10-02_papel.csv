@@ -201,3 +201,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-02 13:08,12167675,Itf Men Singles,M25 Zaragoza,L. Carboni,S. Jong,menos,21.5,0.6675,0.5147,1.8,True,aprendida
 2026-10-02 13:09,12167728,Challenger Men Singles,Porto,A. Holmgren,H. Rocha,menos,22.5,0.7372,0.5576,1.666,True,actual
 2026-10-02 13:24,12167673,Itf Men Singles,M25 Kigali,Y. Oliel,F. Bax,menos,19.5,0.772,0.5576,1.666,True,actual
+2026-10-02 13:34,12167421,Challenger Women Singles,Adana (Turkey) - Qualification,E. Pridankina,E. Andreeva,menos,23.5,0.6969,0.5576,1.666,True,actual
