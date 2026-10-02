@@ -167,3 +167,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-02 10:48,12167623,Atp Singles,Tokyo,A. Fils,F. Tiafoe,menos,22.5,0.7219,0.5767,1.615,True,actual
 2026-10-02 10:55,12167674,Itf Men Singles,M25 Kigali,M. Plunger,B. Lock,menos,20.5,0.8573,0.6876,1.363,True,actual
 2026-10-02 10:55,12167674,Itf Men Singles,M25 Kigali,M. Plunger,B. Lock,menos,20.5,0.6876,0.6876,1.363,True,casa65
+2026-10-02 10:58,12167641,Itf Men Singles,M25 Darwin,D. Pham,Ja. Delaney,menos,35.5,0.7369,0.5576,1.666,True,actual
