@@ -125,3 +125,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-02 09:43,12167709,Itf Men Singles,M15 Sibenik,M. Mikovic,M. Van Der Meerschen,menos,19.5,0.6011,0.5,1.833,True,aprendida
 2026-10-02 09:48,12167707,Itf Men Singles,M15 Sibenik,N. Mashtakov,J. Von der Schulenburg,menos,18.5,0.7669,0.5889,1.571,True,actual
 2026-10-02 09:52,12167730,Itf Men Singles,M15 Monastir 33,T. Duran,J. Loge,menos,20.5,0.8283,0.6876,1.363,True,actual
+2026-10-02 09:52,12167730,Itf Men Singles,M15 Monastir 33,T. Duran,J. Loge,menos,20.5,0.6876,0.6876,1.363,True,casa65
