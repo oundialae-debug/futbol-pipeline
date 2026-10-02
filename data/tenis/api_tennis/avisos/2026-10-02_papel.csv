@@ -77,3 +77,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-02 07:14,12167699,Itf Men Singles,M15 Baku 2 (Azerbaijan),M. Hurrion,L. Larue,menos,13.5,0.8302,0.8302,1.125,True,casa65
 2026-10-02 07:16,12167355,Challenger Women Singles,Jingshan,A. Shubladze,S. Wei,menos,19.5,0.5831,0.4634,2.0,True,aprendida
 2026-10-02 07:16,12167700,Itf Men Singles,M15 Baku 2 (Azerbaijan),M. Walters,J. Connel,menos,18.5,0.8456,0.7091,1.333,True,actual
+2026-10-02 07:16,12167700,Itf Men Singles,M15 Baku 2 (Azerbaijan),M. Walters,J. Connel,menos,18.5,0.7091,0.7091,1.333,True,casa65
