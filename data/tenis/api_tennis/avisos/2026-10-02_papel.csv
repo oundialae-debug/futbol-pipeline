@@ -164,3 +164,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-02 10:40,12167707,Itf Men Singles,M15 Sibenik,N. Mashtakov,J. Von der Schulenburg,menos,30.5,0.743,0.5767,1.615,True,actual
 2026-10-02 10:45,12167731,Itf Men Singles,M15 Monastir 33,K. van Wyk,L. Branger,menos,26.5,0.8394,0.6876,1.363,True,actual
 2026-10-02 10:45,12167731,Itf Men Singles,M15 Monastir 33,K. van Wyk,L. Branger,menos,26.5,0.6876,0.6876,1.363,True,casa65
+2026-10-02 10:48,12167623,Atp Singles,Tokyo,A. Fils,F. Tiafoe,menos,22.5,0.7219,0.5767,1.615,True,actual
