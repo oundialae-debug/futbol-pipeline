@@ -209,3 +209,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-02 14:16,12167394,Atp Singles,Beijing,Y. Bu,N. Djokovic,menos,29.5,0.6977,0.5767,1.615,True,actual
 2026-10-02 14:29,12167741,Itf Men Singles,M25 Zaragoza,A. Ritschard,M. Damas,menos,21.5,0.6874,0.5147,1.8,True,aprendida
 2026-10-02 14:35,12167727,Challenger Men Singles,Bari (Italy) - Qualification,M. Donald,M. Krumich,menos,21.5,0.668,0.5147,1.8,True,aprendida
+2026-10-02 14:35,12167771,Itf Men Singles,"M15 Ann Arbor, MI",J. Hallquist Lithen,N. Tomizawa,menos,20.5,0.672,0.5147,1.8,True,aprendida
