@@ -6,34 +6,34 @@
   "Montenegro": 944543,
   "Cyprus": 941990,
   "Armenia": 931778,
+  "Ukraine": 657756,
+  "Northern Ireland": 656905,
   "Faroe Islands": 935182,
   "Slovakia": 658607,
+  "France": 2486,
+  "Italy": 654352,
   "Poland": 21208,
   "Romania": 659458,
   "Bosnia & Herzegovina": 947947,
   "Sweden": 5039,
-  "Belgium": 1635,
-  "Turkey": 662011,
   "Hungary": 655203,
   "Georgia": 940288,
-  "Ukraine": 657756,
-  "Northern Ireland": 656905,
-  "France": 2486,
-  "Italy": 654352,
+  "Belgium": 1635,
+  "Turkey": 662011,
   "Finland": 936033,
   "Albania": 662862,
-  "Belarus": 936884,
-  "San Marino": 949649,
-  "Iceland": 16102,
-  "Bulgaria": 939437,
   "Croatia": 3337,
   "England": 9294,
   "Estonia": 937735,
   "Luxembourg": 938586,
-  "Switzerland": 13549,
-  "Slovenia": 929225,
+  "Belarus": 936884,
+  "San Marino": 949649,
+  "Iceland": 16102,
+  "Bulgaria": 939437,
   "Spain": 8443,
   "Czech Republic": 656054,
+  "Switzerland": 13549,
+  "Slovenia": 929225,
   "North Macedonia": 941139,
   "Scotland": 943692
  },
@@ -57,9 +57,21 @@
    "2026-10-02T16:00:00.000Z"
   ],
   [
+   "Ukraine",
+   "Northern Ireland",
+   1301117661,
+   "2026-10-02T18:45:00.000Z"
+  ],
+  [
    "Faroe Islands",
    "Slovakia",
    1301121065,
+   "2026-10-02T18:45:00.000Z"
+  ],
+  [
+   "France",
+   "Italy",
+   1301115108,
    "2026-10-02T18:45:00.000Z"
   ],
   [
@@ -75,27 +87,15 @@
    "2026-10-02T18:45:00.000Z"
   ],
   [
-   "Belgium",
-   "Turkey",
-   1301115959,
-   "2026-10-02T18:45:00.000Z"
-  ],
-  [
    "Hungary",
    "Georgia",
    1301116810,
    "2026-10-02T18:45:00.000Z"
   ],
   [
-   "Ukraine",
-   "Northern Ireland",
-   1301117661,
-   "2026-10-02T18:45:00.000Z"
-  ],
-  [
-   "France",
-   "Italy",
-   1301115108,
+   "Belgium",
+   "Turkey",
+   1301115959,
    "2026-10-02T18:45:00.000Z"
   ],
   [
@@ -103,18 +103,6 @@
    "Albania",
    1301121916,
    "2026-10-03T13:00:00.000Z"
-  ],
-  [
-   "Belarus",
-   "San Marino",
-   1301123618,
-   "2026-10-03T16:00:00.000Z"
-  ],
-  [
-   "Iceland",
-   "Bulgaria",
-   1301124469,
-   "2026-10-03T16:00:00.000Z"
   ],
   [
    "Croatia",
@@ -129,15 +117,27 @@
    "2026-10-03T16:00:00.000Z"
   ],
   [
-   "Switzerland",
-   "Slovenia",
-   1315351487,
-   "2026-10-03T18:45:00.000Z"
+   "Belarus",
+   "San Marino",
+   1301123618,
+   "2026-10-03T16:00:00.000Z"
+  ],
+  [
+   "Iceland",
+   "Bulgaria",
+   1301124469,
+   "2026-10-03T16:00:00.000Z"
   ],
   [
    "Spain",
    "Czech Republic",
    1301125320,
+   "2026-10-03T18:45:00.000Z"
+  ],
+  [
+   "Switzerland",
+   "Slovenia",
+   1315351487,
    "2026-10-03T18:45:00.000Z"
   ],
   [
@@ -147,5 +147,5 @@
    "2026-10-03T18:45:00.000Z"
   ]
  ],
- "generado": "2026-10-02T07:37:02.888077+00:00"
+ "generado": "2026-10-02T13:51:20.537735+00:00"
 }
