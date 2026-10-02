@@ -8,3 +8,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-02 02:43,12167614,Atp Singles,Tokyo,J. Munar,J. Faria,menos,17.5,0.7396,0.5767,1.615,True,actual
 2026-10-02 03:02,12167306,Wta Singles,Beijing,V. Golubic,P. Stearns,menos,21.5,0.5868,0.5,1.833,True,aprendida
 2026-10-02 03:02,12167323,Wta Singles,Beijing,L. Fruhvirtova,L. Samsonova,menos,19.5,0.5886,0.5147,1.8,True,aprendida
+2026-10-02 03:04,12167299,Wta Singles,Beijing,A. Potapova,S. Kraus,menos,20.5,0.585,0.5,1.833,True,aprendida
