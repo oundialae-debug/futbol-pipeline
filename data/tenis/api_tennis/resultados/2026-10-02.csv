@@ -41,10 +41,10 @@ event_key,tipo,torneo,jugador1,jugador2,estado,sets,juegos_totales
 12167517,Challenger Men Doubles,Curitiba,Pissetti Vialle/ Storck,Miguel/ Ribeiro,Finished,0 - 2,19
 12167519,Challenger Men Doubles,Curitiba,Roncadelli/ Villanueva,Arias/ Carou,Finished,0 - 2,16
 12167532,Challenger Women Singles,Adana (Turkey) - Qualification,L. Jeanjean,L. Stefanini,,-,0
-12167538,Itf Women Singles,W100 Templeton,C. Dolehide,K. Fakih,,-,0
+12167538,Itf Women Singles,W100 Templeton,C. Dolehide,K. Fakih,Set 1,0 - 0,0
 12167559,Itf Women Doubles,W15 Trelew,Moyano/ Sanchez,Bhatia/ Moron,Finished,2 - 0,12
-12167560,Itf Women Doubles,W15 Trelew,Kawano Cho/ Tarantola,Meabe/ Urrutia,Set 2,0 - 1,11
-12167598,Itf Men Doubles,"M15 Fayetteville, AR",Boland/ Smillie,Lestir/ Milosavljevic,Set 1,0 - 0,12
+12167560,Itf Women Doubles,W15 Trelew,Kawano Cho/ Tarantola,Meabe/ Urrutia,Finished,0 - 2,16
+12167598,Itf Men Doubles,"M15 Fayetteville, AR",Boland/ Smillie,Lestir/ Milosavljevic,Finished,2 - 0,21
 12167604,Itf Women Doubles,W100 Templeton,Penickova/ Penickova,Osuigwe/ Urhobo,Finished,1 - 2,42
 12167605,Challenger Men Singles,Curitiba,M. Pucinelli de Almeida,T. Barrios Vera,,-,0
 12167606,Itf Women Singles,W35 Wagga Wagga,N. Sato,H. Sato,,-,0
@@ -201,5 +201,4 @@ event_key,tipo,torneo,jugador1,jugador2,estado,sets,juegos_totales
 12167785,Itf Women Singles,W15 Nashville,A. Sharma,A. Lahey,,-,0
 12167786,Itf Women Doubles,W15 Nashville,Malmkjaer/ Kruger,Bartel/ Hejtmanek,,-,0
 12167788,Itf Women Singles,W100 Templeton,M. Brengle,A. Van Impe,,-,0
-12167790,Itf Women Doubles,W100 Templeton,Pace/ Zucchini,Osuigwe/ Urhobo,1,-,0
 12167791,Challenger Men Doubles,Curitiba,Arias/ Carou,Miguel/ Ribeiro,,-,0

@@ -1,4 +1,4 @@
-# Tenis en directo, 02/10/2026 00:53 UTC (02:53 en España)
+# Tenis en directo, 02/10/2026 01:03 UTC (03:03 en España)
 
 Calculadora desde el marcador exacto (modelo de puntos, superficie real) frente a la cuota en directo
 (sin margen). Ganador y sets: la calculadora suele coincidir con la casa. Total de juegos: el modelo
@@ -7,3 +7,4 @@ Se actualiza cada ~5 min; el registro en data/tenis/api_tennis/registro/ servir�
 
 | partido | tipo | superficie | marcador (sets, juegos, puntos, saca) | gana 1º: modelo / cuota | sets más probables (modelo) | total juegos: línea, modelo / cuota |
 |---|---|---|---|---|---|---|
+| C. Dolehide vs K. Fakih | Itf Women Singles | Hard | 0-0, 0-0, 0 - 0, saca ? | 96% / 84% | 2-0 77%, 2-1 19% |  |
