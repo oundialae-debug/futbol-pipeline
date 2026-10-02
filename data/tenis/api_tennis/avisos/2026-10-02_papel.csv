@@ -140,3 +140,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-02 10:15,12167439,Wta Singles,Beijing,N. Bartunkova,M. Frech,menos,17.5,0.649,0.5366,1.727,True,aprendida
 2026-10-02 10:15,12167623,Atp Singles,Tokyo,A. Fils,F. Tiafoe,menos,20.5,0.6309,0.5,1.833,True,aprendida
 2026-10-02 10:15,12167641,Itf Men Singles,M25 Darwin,D. Pham,Ja. Delaney,menos,31.5,0.6867,0.5147,1.8,True,aprendida
+2026-10-02 10:15,12167655,Itf Men Singles,M25 Kigali,M. Houkes,A. Beckley,menos,26.5,0.7127,0.5366,1.727,True,aprendida
