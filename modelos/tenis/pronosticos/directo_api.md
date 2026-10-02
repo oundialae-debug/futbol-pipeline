@@ -1,4 +1,4 @@
-# Tenis en directo, 02/10/2026 17:58 UTC (19:58 en España)
+# Tenis en directo, 02/10/2026 18:11 UTC (20:11 en España)
 
 Calculadora desde el marcador exacto (modelo de puntos, superficie real) frente a la cuota en directo
 (sin margen). Ganador y sets: la calculadora suele coincidir con la casa. Total de juegos: el modelo
@@ -7,13 +7,13 @@ Se actualiza cada ~5 min; el registro en data/tenis/api_tennis/registro/ servir�
 
 | partido | tipo | superficie | marcador (sets, juegos, puntos, saca) | gana 1º: modelo / cuota | sets más probables (modelo) | total juegos: línea, modelo / cuota |
 |---|---|---|---|---|---|---|
-| Dar. Blanch vs D. Dietrich | Challenger Men Singles | Hard | 0-1, 3-2, 15 - 30, saca Dar. Blanch | 16% / 31% | 0-2 43%, 1-2 41% | 26.5: 51% / 51% |
-| H. Bernet vs F. Balshaw | Challenger Men Singles | Hard | 1-1, 1-0, 40 - A, saca F. Balshaw | 39% / 56% | 1-2 61%, 2-1 39% | 27.5: 41% / 38% |
-| A. Shelbayh vs A. Mayo | Challenger Men Singles | Hard | 0-0, 5-5, 40 - 0, saca A. Shelbayh | 43% / 58% | 1-2 30%, 0-2 27% | 26.5: 51% / 46% |
-| G. I. Justo vs G. Villanueva | Challenger Men Singles | Clay | 1-0, 5-4, A - 40, saca G. I. Justo | 97% /  | 2-0 94%, 2-1 4% |  |
-| P. Boscardin Dias vs L. A. Miguel | Challenger Men Singles | Clay | 1-0, 1-3, 0 - 15, saca L. A. Miguel | 55% /  | 1-2 45%, 2-1 39% |  |
-| A. Moro Canas vs P. Vives Marcos | Itf Men Singles | Clay | 1-0, 1-0, A - 40, saca A. Moro Canas | 93% / 90% | 2-0 82%, 2-1 11% | 18.5: 66% / 54% |
-| J. Hallquist Lithen vs N. Tomizawa | Itf Men Singles | Hard | 1-1, 1-4, 40 - A, saca N. Tomizawa | 6% / 10% | 1-2 94%, 2-1 6% | 35.5: 27% / 46% |
-| S. Rozin vs H. Roh | Itf Men Singles | Hard | 1-0, 5-4, 40 - 30, saca H. Roh | 89% / 88% | 2-0 77%, 2-1 12% | 23.5: 49% / 46% |
-| A. N. Tudorica vs D. Mosejczuk | Itf Men Singles | Hard | 0-1, 5-4, 15 - 30, saca D. Mosejczuk | 43% / 21% | 2-1 43%, 0-2 34% | 23.5: 66% / 49% |
-| A. S. Sanchez vs L. Ayala | Itf Women Singles | Hard | 1-0, 1-0, 0 - 0, saca L. Ayala | 99% / 96% | 2-0 91%, 2-1 7% |  |
+| P. Boscardin Dias vs L. A. Miguel | Challenger Men Singles | Clay | 1-0, 2-5, 40 - 15, saca P. Boscardin Dias | 51% /  | 1-2 49%, 2-1 42% |  |
+| A. Shelbayh vs A. Mayo | Challenger Men Singles | Hard | 0-0, 6-6, 5 - 6, saca A. Shelbayh | 31% / 42% | 0-2 42%, 1-2 27% | 26.5: 46% / 50% |
+| H. Bernet vs F. Balshaw | Challenger Men Singles | Hard | 1-1, 2-2, 30 - 15, saca H. Bernet | 41% / 56% | 1-2 59%, 2-1 41% | 27.5: 51% / 50% |
+| A. Ruzic vs T. Kostovic | Challenger Women Singles | Hard | 0-0, 1-0, 15 - 30, saca A. Ruzic | 63% / 66% | 2-0 36%, 2-1 26% | 20.5: 67% / 50% |
+| T. Papamalamis vs A. Shah | Itf Men Singles | Hard | 0-0, 0-0, 0 - 0, saca T. Papamalamis | 53% / 54% | 2-0 27%, 2-1 26% | 21.5: 67% / 49% |
+| A. N. Tudorica vs D. Mosejczuk | Itf Men Singles | Hard | 0-1, 5-6, 0 - 15, saca D. Mosejczuk | 6% / 7% | 0-2 91%, 2-1 6% | 22.5: 17% / 22% |
+| A. Moro Canas vs P. Vives Marcos | Itf Men Singles | Clay | 1-0, 2-0, 15 - 15, saca P. Vives Marcos | 94% / 90% | 2-0 85%, 2-1 9% | 18.5: 62% / 50% |
+| A. S. Sanchez vs L. Ayala | Itf Women Singles | Hard | 1-0, 3-1, 40 - 15, saca A. S. Sanchez | 100% / 98% | 2-0 98%, 2-1 2% |  |
+| E. McDonald vs K. Penickova | Itf Women Singles | Hard | 0-0, 0-0, 30 - 30, saca K. Penickova | 46% / 56% | 0-2 27%, 1-2 26% |  |
+| T. Maria vs M. Rapolu | Itf Women Singles | Hard | 0-0, 0-0, 40 - 0, saca T. Maria | 64% / 78% | 2-0 36%, 2-1 27% |  |
