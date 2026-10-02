@@ -38,3 +38,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-02 04:33,12167294,Wta Singles,Beijing,D. Yastremska,M. Chwalinska,menos,23.5,0.5529,0.5,1.833,True,aprendida
 2026-10-02 04:33,12167323,Wta Singles,Beijing,L. Fruhvirtova,L. Samsonova,menos,26.5,0.6307,0.5576,1.666,True,actual
 2026-10-02 04:43,12167324,Wta Singles,Beijing,Y. Yuan,M. Andreeva,menos,22.5,0.7111,0.625,1.5,True,actual
+2026-10-02 04:45,12167635,Itf Men Singles,M15 Luan 4,R. Matsuda,K. Ogura,menos,24.5,0.6925,0.5576,1.666,True,actual
