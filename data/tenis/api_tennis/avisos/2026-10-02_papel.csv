@@ -109,3 +109,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-02 09:16,12167355,Challenger Women Singles,Jingshan,A. Shubladze,S. Wei,menos,31.5,0.6903,0.5576,1.666,True,actual
 2026-10-02 09:21,12167731,Itf Men Singles,M15 Monastir 33,K. van Wyk,L. Branger,menos,19.5,0.6948,0.5576,1.666,True,actual
 2026-10-02 09:29,12167613,Atp Singles,Tokyo,K. Jacquet,L. Darderi,menos,22.5,0.7091,0.7091,1.333,True,casa65
+2026-10-02 09:29,12167701,Itf Men Singles,M15 Baku 2 (Azerbaijan),V. Iakubenko,K. Yilmaz,menos,18.5,0.7236,0.5576,1.666,True,actual
