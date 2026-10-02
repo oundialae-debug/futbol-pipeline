@@ -218,3 +218,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-02 15:22,12167474,Challenger Men Singles,Mouilleron-Le-Captif,C. Tabur,S. Gueymard Wayenburg,menos,27.5,0.6876,0.6876,1.363,True,casa65
 2026-10-02 15:28,12167394,Atp Singles,Beijing,Y. Bu,N. Djokovic,más,30.5,0.7278,0.6451,1.444,True,aprendida
 2026-10-02 15:41,12167779,Itf Men Singles,"M15 Ann Arbor, MI",O. Bonding,N. Djosic,menos,17.5,0.5658,0.4853,1.909,True,aprendida
+2026-10-02 15:48,12167769,Challenger Men Singles,Columbus,M. Krueger,K. Smith,menos,23.5,0.7351,0.5576,1.666,True,actual
