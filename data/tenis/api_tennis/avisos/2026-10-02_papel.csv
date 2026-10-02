@@ -196,3 +196,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-02 12:11,12167694,Challenger Men Singles,Porto,H. Grenier,I. Montes-De La Torre,menos,21.5,0.7921,0.7921,1.181,True,casa65
 2026-10-02 12:13,12167710,Itf Men Singles,M25 Zaragoza,N. Ifi,R. Nijboer,menos,20.5,0.7507,0.5889,1.571,True,actual
 2026-10-02 12:29,12167394,Atp Singles,Beijing,Y. Bu,N. Djokovic,menos,22.5,0.6525,0.5366,1.727,True,aprendida
+2026-10-02 12:29,12167673,Itf Men Singles,M25 Kigali,Y. Oliel,F. Bax,menos,20.5,0.7022,0.5,1.833,True,aprendida
