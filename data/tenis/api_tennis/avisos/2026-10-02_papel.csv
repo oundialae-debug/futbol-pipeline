@@ -242,3 +242,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-02 16:43,12167771,Itf Men Singles,"M15 Ann Arbor, MI",J. Hallquist Lithen,N. Tomizawa,menos,26.5,0.6885,0.5576,1.666,True,actual
 2026-10-02 16:43,12167794,Itf Men Singles,"M15 Fayetteville, AR",A. N. Tudorica,D. Mosejczuk,menos,18.5,0.5777,0.5576,1.666,True,actual
 2026-10-02 16:49,12167779,Itf Men Singles,"M15 Ann Arbor, MI",O. Bonding,N. Djosic,menos,26.5,0.6393,0.5576,1.666,True,actual
+2026-10-02 16:52,12167512,Challenger Men Singles,Columbus,Dar. Blanch,D. Dietrich,menos,22.5,0.6998,0.5366,1.727,True,aprendida
