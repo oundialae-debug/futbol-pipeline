@@ -122,3 +122,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-03 12:33,12167892,Challenger Men Singles,Mouilleron-Le-Captif,J. J. Schwaerzler,S. Gueymard Wayenburg,menos,22.5,0.6007,0.5,1.833,True,aprendida
 2026-10-03 12:40,12167839,Itf Men Singles,M25 Slobozia (Romania),R. D. Turcanu,S. Gima,menos,27.5,0.6673,0.5576,1.666,True,actual
 2026-10-03 12:44,12167915,Itf Men Singles,M25 Zaragoza,A. Moro Canas,S. Jong,menos,29.5,0.6702,0.5767,1.615,True,actual
+2026-10-03 13:04,12167625,Wta Singles,Beijing,E. Rybakina,A. Charaeva,menos,19.5,0.635,0.5576,1.666,True,actual
