@@ -1,2 +1,5 @@
 match_id,liga_id,fecha,saque_utc,local_id,local,visitante_id,visitante,estado,arbitro,clima_status,clima_temp_txt,local_ids,local_formacion,visitante_ids,visitante_formacion
-1336030787,120775,2026-10-02T18:30:00.000Z,18:30,8248676,Eldense,611802,Oviedo,Not started,"Sanchez Lopez, Rafael",cloudy,21.2°C,,,,
+1336035042,120775,2026-10-03T16:30:00.000Z,16:30,8164427,Sabadell,6942391,FC Andorra,Not started,,rain,21.58°C,,,,
+1336028234,120775,2026-10-03T16:30:00.000Z,16:30,616908,Cadiz,457771,Leganes,Not started,,cloudy,27.41°C,,,,
+1336027383,120775,2026-10-03T14:15:00.000Z,14:15,616057,Almería,8153364,Burgos,Not started,,cloudy,27.49°C,,,,
+1336026532,120775,2026-10-03T12:00:00.000Z,12:00,615206,Albacete,464579,Eibar,Not started,,cloudy,22.73°C,,,,
