@@ -114,3 +114,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-03 11:47,12167903,Itf Men Singles,M15 Monastir 33,K. van Wyk,L. G. Verwerft,menos,25.5,0.8438,0.8438,1.111,True,casa65
 2026-10-03 12:04,12167870,Challenger Women Singles,Adana (Turkey) - Qualification,E. Andreeva,L. Boisson,menos,21.5,0.5672,0.5,1.833,True,aprendida
 2026-10-03 12:10,12167647,Atp Singles,Beijing,A. Zverev,J. Shang,menos,15.5,0.9807,0.9807,1.002,True,casa65
+2026-10-03 12:17,12167867,Challenger Men Singles,Bari (Italy) - Qualification,V. Sachko,S. Pieri,menos,31.5,0.7315,0.5767,1.615,True,actual
