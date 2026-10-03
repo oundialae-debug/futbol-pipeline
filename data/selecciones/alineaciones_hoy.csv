@@ -1,4 +1,26 @@
 match_id,equipo,equipo_id,formacion,jugador_id,jugador,posicion
+1315351487,Switzerland,13549,4-2-3-1,4070556.0,G. Kobel,Goalkeeper
+1315351487,Switzerland,13549,4-2-3-1,262745.0,R. Rodríguez,Defender
+1315351487,Switzerland,13549,4-2-3-1,959.0,M. Akanji,Defender
+1315351487,Switzerland,13549,4-2-3-1,451437.0,N. Elvedi,Defender
+1315351487,Switzerland,13549,4-2-3-1,63817334.0,Z. Athekame,Defender
+1315351487,Switzerland,13549,4-2-3-1,452081.0,R. Freuler,Midfielder
+1315351487,Switzerland,13549,4-2-3-1,42617659.0,A. Jashari,Midfielder
+1315351487,Switzerland,13549,4-2-3-1,7832482.0,D. Ndoye,Midfielder
+1315351487,Switzerland,13549,4-2-3-1,65405438.0,J. Manzambi,Midfielder
+1315351487,Switzerland,13549,4-2-3-1,153265.0,M. Aebischer,Midfielder
+1315351487,Switzerland,13549,4-2-3-1,19878663.0,Z. Amdouni,Forward
+1315351487,Slovenia,929225,4-4-2,4823.0,J. Oblak,Goalkeeper
+1315351487,Slovenia,929225,4-4-2,2302293.0,E. Janža,Defender
+1315351487,Slovenia,929225,4-4-2,6694212.0,D. Zec,Defender
+1315351487,Slovenia,929225,4-4-2,134267.0,J. Bijol,Defender
+1315351487,Slovenia,929225,4-4-2,5954417.0,V. Drkušić,Defender
+1315351487,Slovenia,929225,4-4-2,1222305.0,S. Lovrić,Midfielder
+1315351487,Slovenia,929225,4-4-2,17665718.0,Ž. Karničnik,Midfielder
+1315351487,Slovenia,929225,4-4-2,21146377.0,M. Zabukovnik,Midfielder
+1315351487,Slovenia,929225,4-4-2,18018791.0,A. Matko,Midfielder
+1315351487,Slovenia,929225,4-4-2,21779107.0,D. Šturm,Forward
+1315351487,Slovenia,929225,4-4-2,26217233.0,Z. Vipotnik,Forward
 1315357444,North Macedonia,941139,3-4-2-1,7652001.0,S. Dimitrievski,Goalkeeper
 1315357444,North Macedonia,941139,3-4-2-1,16981468.0,V. Musliu,Defender
 1315357444,North Macedonia,941139,3-4-2-1,54773642.0,Anes Meljichi,Defender
@@ -43,25 +65,3 @@ match_id,equipo,equipo_id,formacion,jugador_id,jugador,posicion
 1301125320,Czech Republic,656054,4-3-3,10659642.0,O. Lingr,Forward
 1301125320,Czech Republic,656054,4-3-3,10629213.0,A. Hložek,Forward
 1301125320,Czech Republic,656054,4-3-3,10678318.0,M. Radosta,Forward
-1315351487,Switzerland,13549,4-2-3-1,4070556.0,G. Kobel,Goalkeeper
-1315351487,Switzerland,13549,4-2-3-1,262745.0,R. Rodríguez,Defender
-1315351487,Switzerland,13549,4-2-3-1,959.0,M. Akanji,Defender
-1315351487,Switzerland,13549,4-2-3-1,451437.0,N. Elvedi,Defender
-1315351487,Switzerland,13549,4-2-3-1,63817334.0,Z. Athekame,Defender
-1315351487,Switzerland,13549,4-2-3-1,452081.0,R. Freuler,Midfielder
-1315351487,Switzerland,13549,4-2-3-1,42617659.0,A. Jashari,Midfielder
-1315351487,Switzerland,13549,4-2-3-1,7832482.0,D. Ndoye,Midfielder
-1315351487,Switzerland,13549,4-2-3-1,65405438.0,J. Manzambi,Midfielder
-1315351487,Switzerland,13549,4-2-3-1,153265.0,M. Aebischer,Midfielder
-1315351487,Switzerland,13549,4-2-3-1,19878663.0,Z. Amdouni,Forward
-1315351487,Slovenia,929225,4-4-2,4823.0,J. Oblak,Goalkeeper
-1315351487,Slovenia,929225,4-4-2,2302293.0,E. Janža,Defender
-1315351487,Slovenia,929225,4-4-2,6694212.0,D. Zec,Defender
-1315351487,Slovenia,929225,4-4-2,134267.0,J. Bijol,Defender
-1315351487,Slovenia,929225,4-4-2,5954417.0,V. Drkušić,Defender
-1315351487,Slovenia,929225,4-4-2,1222305.0,S. Lovrić,Midfielder
-1315351487,Slovenia,929225,4-4-2,17665718.0,Ž. Karničnik,Midfielder
-1315351487,Slovenia,929225,4-4-2,21146377.0,M. Zabukovnik,Midfielder
-1315351487,Slovenia,929225,4-4-2,18018791.0,A. Matko,Midfielder
-1315351487,Slovenia,929225,4-4-2,21779107.0,D. Šturm,Forward
-1315351487,Slovenia,929225,4-4-2,26217233.0,Z. Vipotnik,Forward
