@@ -119,3 +119,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-03 12:20,12167624,Wta Singles,Beijing,M. Bouzkova,K. Birrell,menos,24.5,0.5574,0.5,1.833,True,aprendida
 2026-10-03 12:20,12167724,Atp Singles,Beijing,F. Cerundolo,J. Mensik,menos,23.5,0.5574,0.5,1.833,True,aprendida
 2026-10-03 12:32,12167617,Wta Singles,Beijing,S. Kartal,Xin. Wang,menos,23.5,0.5538,0.5,1.833,True,aprendida
+2026-10-03 12:33,12167892,Challenger Men Singles,Mouilleron-Le-Captif,J. J. Schwaerzler,S. Gueymard Wayenburg,menos,22.5,0.6007,0.5,1.833,True,aprendida
