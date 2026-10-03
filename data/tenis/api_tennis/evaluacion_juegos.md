@@ -1,14 +1,14 @@
 # Más/menos juegos en directo: apuestas en papel
 
-Partidos acabados con cuota de juegos en el registro: **253**. Una apuesta por partido (se agrupa por partido). Cuota = la de la API en esa pasada, no la de Luckia. Con menos de 20 apuestas el número no significa nada.
+Partidos acabados con cuota de juegos en el registro: **269**. Una apuesta por partido (se agrupa por partido). Cuota = la de la API en esa pasada, no la de Luckia. Con menos de 20 apuestas el número no significa nada.
 
 | estrategia | apuestas | aciertos | beneficio medio | sigmas |
 |---|---|---|---|---|
-| **señal: vigilar el menos** | 70 | 66% | +14.3% | +1.39 |
-| control: siempre el menos (1ª pasada) | 253 | 51% | -5.8% | -1.01 |
-| control: siempre el más (1ª pasada) | 253 | 49% | -9.2% | -1.56 |
+| **señal: vigilar el menos** | 75 | 65% | +14.2% | +1.41 |
+| control: siempre el menos (1ª pasada) | 269 | 50% | -8.0% | -1.42 |
+| control: siempre el más (1ª pasada) | 269 | 50% | -7.0% | -1.22 |
 
-Brier del 'más' en la línea principal (1ª pasada): modelo 0.2737, mercado 0.2504 (menor es mejor). El modelo da al más +15.0% sobre lo que pasa de verdad.
+Brier del 'más' en la línea principal (1ª pasada): modelo 0.2738, mercado 0.2506 (menor es mejor). El modelo da al más +13.5% sobre lo que pasa de verdad.
 
 ## Señales
 
@@ -67,14 +67,18 @@ Brier del 'más' en la línea principal (1ª pasada): modelo 0.2737, mercado 0.2
 | ITF M M15 Fayetteville, AR: A. Shah vs E. Bynoe | 26.5 | 1.80 | 25 | gana |
 | ITF M M15 Monastir 33: M. Chazal vs K. van Wyk | 25.5 | 1.57 | 25 | gana |
 | ATP 500 Tokyo: A. Fils vs F. Tiafoe | 22.5 | 1.83 | 21 | gana |
+| WTA 1000 Beijing: M. Sakkari vs S. Hunter | 19.5 | 1.91 | 16 | gana |
 | ITF M M15 Luan 4: N. Ehrenschneider vs T. Ichikawa | 24.5 | 1.83 | 23 | gana |
 | ITF M M25 Darwin: D. Pham vs Ja. Delaney | 33.5 | 1.83 | 26 | gana |
+| ATP 500 Tokyo: C. Alcaraz vs M. Arnaldi | 24.5 | 1.83 | 20 | gana |
+| WTA 1000 Beijing: D. Vekic vs L. Zhu | 21.5 | 1.83 | 25 | pierde |
 | WTA 125 Jingshan: A. Falei vs S. Sorribes Tormo | 22.5 | 1.91 | 18 | gana |
 | ITF M M25 Slobozia (Romania): S. Gima vs J. Opitz | 23.5 | 1.80 | 22 | gana |
 | Challenger Jingshan: A. Bolt vs D. Sweeny | 29.5 | 1.83 | 22 | gana |
 | Challenger Porto: D. Rincon vs D. Jorda Sanchis | 19.5 | 1.73 | 19 | gana |
 | ITF M M25 Kigali: Y. Oliel vs F. Bax | 21.5 | 1.91 | 16 | gana |
 | ITF M M25 Kigali: M. Plunger vs B. Lock | 22.5 | 1.83 | 20 | gana |
+| WTA 1000 Beijing: C. Gauff vs C. Osorio | 24.5 | 1.83 | 31 | pierde |
 | ATP 500 Beijing: H. Hurkacz vs A. Gea | 26.5 | 1.73 | 34 | pierde |
 | Challenger Mouilleron-Le-Captif: H. Bernet vs F. Balshaw | 22.5 | 1.73 | 26 | pierde |
 | ITF M M15 Baku 2 (Azerbaijan): A. Azkara vs D. Singh | 24.5 | 1.14 | 25 | pierde |
@@ -84,23 +88,24 @@ Brier del 'más' en la línea principal (1ª pasada): modelo 0.2737, mercado 0.2
 | ITF M M15 Ann Arbor, MI: J. Hallquist Lithen vs N. Tomizawa | 35.5 | 1.73 | 34 | gana |
 | ITF M M15 Fayetteville, AR: A. N. Tudorica vs D. Mosejczuk | 22.5 | 1.20 | 22 | gana |
 | Challenger Jingshan: Y. Erel vs F. Cina | 25.5 | 1.83 | 25 | gana |
+| WTA 125 Jingshan: E. Jones vs A. Shubladze | 24.5 | 1.83 | 22 | gana |
 
 ## Reglas del vigilante (desde el 01/10 solo en papel)
 
 | regla | apuestas resueltas | aciertos | beneficio medio (cuota API) | sigmas |
 |---|---|---|---|---|
-| actual | 90 | 59% | -8.4% | -1.03 |
+| actual | 104 | 55% | -14.6% | -1.89 |
 | actual (al móvil) | 125 | 62% | -4.1% | -0.61 |
-| aprendida | 112 | 48% | -10.9% | -1.23 |
-| casa65 | 47 | 83% | +2.6% | +0.37 |
+| aprendida | 129 | 47% | -13.7% | -1.66 |
+| casa65 | 54 | 80% | -1.3% | -0.19 |
 
 ## Previos (antes de empezar), línea principal de juegos y ganador
 
-285 partidos. Juegos (más de la línea principal), Brier (menor es mejor): modelo 0.2791, modelo corregido con el historial 0.2618, casa 0.2513. Pasó el más en el 49%.
-Ganador (285): acierto modelo 64%, casa 72%.
+302 partidos. Juegos (más de la línea principal), Brier (menor es mejor): modelo 0.2807, modelo corregido con el historial 0.2638, casa 0.2515. Pasó el más en el 50%.
+Ganador (302): acierto modelo 64%, casa 73%.
 
 ## Aprendizaje (recalibración del modelo)
 
-Partidos resueltos: 181 (1451 líneas). Activa: **sí** (hace falta 30+ partidos y que mejore a la CASA en partidos que no vio).
-**Apostando con lo aprendido, día a día** (cada día aprende solo de los anteriores): 86 apuestas, aciertos 44%, beneficio medio -19.9%, -2.03 sigmas.
-Brier (menor es mejor): modelo 0.2752, modelo con el saque de hoy 0.2604, casa 0.2426, recalibrado (validado por partidos) 0.2304. Sesgo del modelo hacia el más: +20.4%.
+Partidos resueltos: 197 (1575 líneas). Activa: **sí** (hace falta 30+ partidos y que mejore a la CASA en partidos que no vio).
+**Apostando con lo aprendido, día a día** (cada día aprende solo de los anteriores): 102 apuestas, aciertos 42%, beneficio medio -23.4%, -2.61 sigmas.
+Brier (menor es mejor): modelo 0.2741, modelo con el saque de hoy 0.2619, casa 0.2432, recalibrado (validado por partidos) 0.2346. Sesgo del modelo hacia el más: +19.1%.
