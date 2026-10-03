@@ -131,3 +131,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-03 13:28,12167870,Challenger Women Singles,Adana (Turkey) - Qualification,E. Andreeva,L. Boisson,menos,18.5,0.6799,0.5576,1.666,True,actual
 2026-10-03 13:38,12167857,Itf Men Singles,M25 Kigali,M. Houkes,B. Lock,menos,22.5,0.683,0.6077,1.533,True,actual
 2026-10-03 13:39,12167839,Itf Men Singles,M25 Slobozia (Romania),R. D. Turcanu,S. Gima,más,27.5,0.635,0.4111,2.25,True,aprendida
+2026-10-03 13:42,12167892,Challenger Men Singles,Mouilleron-Le-Captif,J. J. Schwaerzler,S. Gueymard Wayenburg,menos,18.5,0.9259,0.9259,1.04,True,casa65
