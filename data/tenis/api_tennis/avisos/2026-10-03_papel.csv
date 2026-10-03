@@ -7,3 +7,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-03 02:56,12167683,Wta Singles,Beijing,C. Gauff,C. Osorio,menos,18.5,0.5818,0.5147,1.8,True,aprendida
 2026-10-03 03:04,12167810,Challenger Men Singles,Jingshan,L. Harris,A. Bolt,menos,22.5,0.651,0.5366,1.727,True,aprendida
 2026-10-03 03:11,12167615,Wta Singles,Beijing,A. Krueger,A. Li,menos,22.5,0.5749,0.5147,1.8,True,aprendida
+2026-10-03 03:19,12167644,Atp Singles,Tokyo,D. Shapovalov,A. Tabilo,menos,30.5,0.6701,0.5576,1.666,True,actual
