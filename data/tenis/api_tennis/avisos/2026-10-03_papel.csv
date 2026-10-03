@@ -65,3 +65,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-03 08:45,12167843,Itf Men Singles,M25 Darwin,H. Jones,D. Pham,menos,18.5,0.6405,0.5576,1.666,True,actual
 2026-10-03 08:56,12167648,Wta Singles,Beijing,B. Bencic,A. Zakharova,menos,16.5,0.7341,0.625,1.5,True,actual
 2026-10-03 08:57,12167896,Itf Men Singles,M15 Telavi 2 (Georgia),S. Paardekooper,D. Popko,menos,20.5,0.6876,0.6876,1.363,True,casa65
+2026-10-03 09:04,12167628,Atp Singles,Tokyo,U. Humbert,J. Lehecka,menos,22.5,0.5168,0.4634,2.0,True,aprendida
