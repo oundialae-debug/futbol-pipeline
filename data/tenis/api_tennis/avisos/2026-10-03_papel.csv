@@ -150,3 +150,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-03 16:09,12167924,Itf Men Singles,"M15 Fayetteville, AR",T. Papamalamis,S. Rozin,menos,21.5,0.545,0.4853,1.909,True,aprendida
 2026-10-03 16:18,12167929,Itf Men Singles,"M15 Ann Arbor, MI",N. Tomizawa,M. Dahlin,menos,16.5,0.4947,0.4424,2.1,True,aprendida
 2026-10-03 16:26,12167929,Itf Men Singles,"M15 Ann Arbor, MI",N. Tomizawa,M. Dahlin,menos,16.5,0.6627,0.6627,1.4,True,casa65
+2026-10-03 16:46,12167910,Challenger Men Singles,Columbus,D. Dietrich,A. Andrade,menos,21.5,0.6051,0.5,1.833,True,aprendida
