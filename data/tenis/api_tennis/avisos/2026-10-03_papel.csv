@@ -107,3 +107,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-03 11:07,12167915,Itf Men Singles,M25 Zaragoza,A. Moro Canas,S. Jong,menos,21.5,0.5563,0.5,1.833,True,aprendida
 2026-10-03 11:20,12167628,Atp Singles,Tokyo,U. Humbert,J. Lehecka,más,31.5,0.8116,0.6876,1.363,True,aprendida
 2026-10-03 11:27,12167647,Atp Singles,Beijing,A. Zverev,J. Shang,menos,17.5,0.5902,0.5366,1.727,True,aprendida
+2026-10-03 11:31,12167839,Itf Men Singles,M25 Slobozia (Romania),R. D. Turcanu,S. Gima,menos,21.5,0.5439,0.4853,1.909,True,aprendida
