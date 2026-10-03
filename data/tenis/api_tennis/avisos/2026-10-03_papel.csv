@@ -133,3 +133,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-03 13:39,12167839,Itf Men Singles,M25 Slobozia (Romania),R. D. Turcanu,S. Gima,más,27.5,0.635,0.4111,2.25,True,aprendida
 2026-10-03 13:42,12167892,Challenger Men Singles,Mouilleron-Le-Captif,J. J. Schwaerzler,S. Gueymard Wayenburg,menos,18.5,0.9259,0.9259,1.04,True,casa65
 2026-10-03 13:43,12167909,Challenger Men Singles,Bari (Italy) - Qualification,J. C. Martin Manzano,M. Donald,menos,21.5,0.6128,0.5,1.833,True,aprendida
+2026-10-03 13:48,12167915,Itf Men Singles,M25 Zaragoza,A. Moro Canas,S. Jong,más,29.5,0.7136,0.5366,1.727,True,aprendida
