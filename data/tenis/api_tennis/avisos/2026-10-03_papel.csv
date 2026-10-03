@@ -117,3 +117,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-03 12:17,12167867,Challenger Men Singles,Bari (Italy) - Qualification,V. Sachko,S. Pieri,menos,31.5,0.7315,0.5767,1.615,True,actual
 2026-10-03 12:19,12167625,Wta Singles,Beijing,E. Rybakina,A. Charaeva,menos,17.5,0.5429,0.4853,1.909,True,aprendida
 2026-10-03 12:20,12167624,Wta Singles,Beijing,M. Bouzkova,K. Birrell,menos,24.5,0.5574,0.5,1.833,True,aprendida
+2026-10-03 12:20,12167724,Atp Singles,Beijing,F. Cerundolo,J. Mensik,menos,23.5,0.5574,0.5,1.833,True,aprendida
