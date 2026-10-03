@@ -74,3 +74,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-03 09:16,12167648,Wta Singles,Beijing,B. Bencic,A. Zakharova,menos,24.5,0.6177,0.5366,1.727,True,aprendida
 2026-10-03 09:16,12167649,Wta Singles,Beijing,K. Rakhimova,L. Fernandez,menos,27.5,0.6266,0.5576,1.666,True,actual
 2026-10-03 09:16,12167649,Wta Singles,Beijing,K. Rakhimova,L. Fernandez,menos,27.5,0.6266,0.5576,1.666,True,aprendida
+2026-10-03 09:16,12167843,Itf Men Singles,M25 Darwin,H. Jones,D. Pham,menos,18.5,0.6934,0.5767,1.615,True,aprendida
