@@ -25,3 +25,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-03 04:11,12167880,Itf Men Singles,M15 Luan 4,N. Ehrenschneider,R. Matsuda,menos,26.5,0.7658,0.625,1.5,True,actual
 2026-10-03 04:13,12167615,Wta Singles,Beijing,A. Krueger,A. Li,menos,18.5,0.7815,0.6627,1.4,True,actual
 2026-10-03 04:13,12167615,Wta Singles,Beijing,A. Krueger,A. Li,menos,18.5,0.6627,0.6627,1.4,True,casa65
+2026-10-03 04:16,12167622,Atp Singles,Beijing,A. De Minaur,Q. Halys,menos,19.5,0.7315,0.7315,1.285,True,casa65
