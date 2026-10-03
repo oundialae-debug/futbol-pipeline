@@ -27,3 +27,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-03 04:13,12167615,Wta Singles,Beijing,A. Krueger,A. Li,menos,18.5,0.6627,0.6627,1.4,True,casa65
 2026-10-03 04:16,12167622,Atp Singles,Beijing,A. De Minaur,Q. Halys,menos,19.5,0.7315,0.7315,1.285,True,casa65
 2026-10-03 04:23,12167810,Challenger Men Singles,Jingshan,L. Harris,A. Bolt,menos,21.5,0.8699,0.7315,1.285,True,actual
+2026-10-03 04:33,12167630,Wta Singles,Beijing,M. Sakkari,S. Hunter,menos,20.5,0.5523,0.4853,1.909,True,aprendida
