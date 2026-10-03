@@ -46,3 +46,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-03 06:35,12167629,Wta Singles,Beijing,K. Siniakova,E. Svitolina,menos,23.5,0.568,0.5,1.833,True,aprendida
 2026-10-03 06:41,12167838,Challenger Women Singles,Jingshan,E. Jones,A. Shubladze,menos,20.5,0.7477,0.5767,1.615,True,actual
 2026-10-03 06:49,12167679,Atp Singles,Tokyo,M. Berrettini,D. Vallejo,menos,22.5,0.568,0.5,1.833,True,aprendida
+2026-10-03 06:52,12167631,Wta Singles,Beijing,J. Ostapenko,P. Badosa,menos,32.5,0.64,0.5576,1.666,True,actual
