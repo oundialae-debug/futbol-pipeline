@@ -192,12 +192,12 @@ event_key,tipo,torneo,jugador1,jugador2,estado,sets,juegos_totales
 12167779,Itf Men Singles,"M15 Ann Arbor, MI",O. Bonding,N. Djosic,Finished,2 - 1,27
 12167780,Itf Men Singles,"M15 Ann Arbor, MI",H. Coquelin,O. Pieczkowski,Retired,0 - 0,11
 12167781,Challenger Men Singles,Curitiba,P. Boscardin Dias,L. A. Miguel,Finished,2 - 1,29
-12167782,Itf Women Singles,W15 Nashville,A. Bowers,C. Di Genova,Set 1,0 - 0,0
-12167783,Itf Women Singles,W15 Nashville,R. M. Nijkamp,E. K. Malmkjaer,Set 2,1 - 0,19
+12167782,Itf Women Singles,W15 Nashville,A. Bowers,C. Di Genova,Finished,2 - 0,16
+12167783,Itf Women Singles,W15 Nashville,R. M. Nijkamp,E. K. Malmkjaer,Finished,2 - 0,23
 12167784,Itf Women Singles,W15 Nashville,M. Refaat,C. Moreno,Finished,2 - 0,19
-12167785,Itf Women Singles,W15 Nashville,A. Sharma,A. Lahey,,-,0
-12167788,Itf Women Singles,W100 Templeton,M. Brengle,A. Van Impe,Interrupted,1 - 0,6
-12167791,Challenger Men Doubles,Curitiba,Arias/ Carou,Miguel/ Ribeiro,Set 1,0 - 0,3
+12167785,Itf Women Singles,W15 Nashville,A. Sharma,A. Lahey,Set 3,1 - 1,17
+12167788,Itf Women Singles,W100 Templeton,M. Brengle,A. Van Impe,Finished,2 - 0,16
+12167791,Challenger Men Doubles,Curitiba,Arias/ Carou,Miguel/ Ribeiro,Finished,0 - 2,20
 12167792,Itf Men Singles,"M15 Fayetteville, AR",J. A. Rodriguez,J. Braswell,Finished,0 - 2,18
 12167793,Itf Men Singles,"M15 Fayetteville, AR",S. Rozin,H. Roh,Finished,2 - 0,23
 12167794,Itf Men Singles,"M15 Fayetteville, AR",A. N. Tudorica,D. Mosejczuk,Finished,0 - 2,22
@@ -206,9 +206,8 @@ event_key,tipo,torneo,jugador1,jugador2,estado,sets,juegos_totales
 12167797,Itf Women Singles,W15 Trelew,L. Moyano,S. P. Da,Finished,2 - 0,14
 12167798,Itf Women Singles,W15 Trelew,A. S. Sanchez,L. Ayala,Finished,2 - 0,20
 12167799,Itf Women Singles,W15 Trelew,E. Zornada,M. F. Urrutia,Finished,1 - 2,30
-12167800,Itf Women Doubles,W15 Trelew,Meabe/ Urrutia,Larraya Guidi/ Sousa Salazar,,-,0
-12167801,Itf Women Doubles,W15 Trelew,Moyano/ Sanchez,Ayala/ Britez Risso,,-,0
-12167802,Itf Women Singles,W100 Templeton,C. Dolehide,J. Pareja,Interrupted,0 - 0,3
+12167801,Itf Women Doubles,W15 Trelew,Moyano/ Sanchez,Ayala/ Britez Risso,Finished,1 - 2,19
+12167802,Itf Women Singles,W100 Templeton,C. Dolehide,J. Pareja,Set 2,1 - 0,19
 12167803,Itf Men Doubles,"M15 Fayetteville, AR",Arcila/ Rozin,Boland/ Smillie,Finished,2 - 0,20
 12167804,Itf Men Doubles,"M15 Fayetteville, AR",Roddick/ Tokac,Chavez/ Melero,Finished,2 - 1,32
 12167805,Challenger Men Singles,Jingshan,B. Tomic,M. Bellucci,Walk Over,-,0
