@@ -1,4 +1,4 @@
-# Tenis en directo, 03/10/2026 09:18 UTC (11:18 en España)
+# Tenis en directo, 03/10/2026 09:32 UTC (11:32 en España)
 
 Calculadora desde el marcador exacto (modelo de puntos, superficie real) frente a la cuota en directo
 (sin margen). Ganador y sets: la calculadora suele coincidir con la casa. Total de juegos: el modelo
@@ -7,18 +7,19 @@ Se actualiza cada ~5 min; el registro en data/tenis/api_tennis/registro/ servir�
 
 | partido | tipo | superficie | marcador (sets, juegos, puntos, saca) | gana 1º: modelo / cuota | sets más probables (modelo) | total juegos: línea, modelo / cuota |
 |---|---|---|---|---|---|---|
-| U. Humbert vs J. Lehecka | Atp Singles | Hard | 0-0, 1-0, 0 - 30, saca J. Lehecka | 40% / 43% | 0-2 32%, 1-2 28% | 23.5: 59% / 49% |
-| R. Nijboer vs A. Ritschard | Itf Men Singles | Clay | 0-0, 1-1, 30 - 40, saca A. Ritschard | 19% / 29% | 0-2 52%, 1-2 29% | 21.5: 54% / 51% |
-| K. van Wyk vs L. G. Verwerft | Itf Men Singles | Hard | 0-0, 0-0, 30 - 30, saca L. G. Verwerft | 23% / 41% | 0-2 48%, 1-2 30% |  |
-| E. Demanet vs T. Duran | Itf Men Singles | Hard | 0-0, 0-1, 15 - 40, saca E. Demanet | 36% / 29% | 0-2 38%, 1-2 26% | 20.5: 70% / 49% |
-| N. Lopez vs M. Van Der Meerschen | Itf Men Singles | Clay | 0-0, 0-1, 0 - 15, saca M. Van Der Meerschen | 32% / 22% | 0-2 42%, 1-2 26% | 19.5: 73% / 50% |
-| C. Hemery vs F. Bax | Itf Men Singles | Clay | 0-0, 0-1, 40 - 15, saca C. Hemery | 48% / 56% | 0-2 26%, 1-2 25% |  |
-| H. Jones vs D. Pham | Itf Men Singles | Hard | 1-0, 2-3, 0 - 0, saca H. Jones | 80% / 77% | 2-0 51%, 2-1 29% | 21.5: 49% / 46% |
-| L. Pigato vs K. Swan | Itf Women Singles | Hard | 0-0, 1-0, 15 - 40, saca K. Swan | 27% / 41% | 0-2 43%, 1-2 30% |  |
-| K. Sawashiro vs N. Sato | Itf Women Singles | Hard | 0-0, 4-4, 30 - 0, saca N. Sato | 64% / 44% | 2-0 38%, 2-1 26% |  |
-| G. S. Popa vs S. Sakellaridi | Itf Women Singles | Clay | 1-0, 3-4, 40 - A, saca G. S. Popa | 58% / 61% | 1-2 42%, 2-1 35% |  |
-| M. Soriano Santiago vs S. Biolay | Itf Women Singles | Hard | 0-0, 1-0, 0 - 0, saca S. Biolay | 20% / 41% | 0-2 49%, 1-2 32% |  |
-| Q. Zheng vs A. Kalinskaya | Wta Singles | Hard | 0-0, 6-6, 3 - 5, saca Q. Zheng | 39% / 40% | 0-2 37%, 2-1 29% | 26.5: 53% / 50% |
-| I. Jovic vs H. Dart | Wta Singles | Hard | 0-0, 2-4, A - 40, saca I. Jovic | 74% / 74% | 2-1 43%, 2-0 31% | 24.5: 55% / 50% |
-| K. Rakhimova vs L. Fernandez | Wta Singles | Hard | 1-1, 1-2, 30 - 15, saca K. Rakhimova | 28% / 27% | 1-2 72%, 2-1 28% | 27.5: 53% / 50% |
-| B. Bencic vs A. Zakharova | Wta Singles | Hard | 1-0, 2-4, 40 - 30, saca B. Bencic | 87% / 79% | 2-1 48%, 2-0 38% | 24.5: 49% / 50% |
+| U. Humbert vs J. Lehecka | Atp Singles | Hard | 0-0, 2-2, 40 - 40, saca U. Humbert | 39% / 38% | 0-2 33%, 1-2 28% | 24.5: 60% / 50% |
+| C. Hemery vs F. Bax | Itf Men Singles | Clay | 0-0, 3-1, 15 - 30, saca F. Bax | 66% / 77% | 2-0 41%, 1-2 26% |  |
+| R. Nijboer vs A. Ritschard | Itf Men Singles | Clay | 0-0, 3-2, 40 - 15, saca R. Nijboer | 36% / 51% | 1-2 41%, 0-2 22% | 24.5: 59% / 50% |
+| K. van Wyk vs L. G. Verwerft | Itf Men Singles | Hard | 0-0, 1-2, 15 - 0, saca K. van Wyk | 21% / 35% | 0-2 50%, 1-2 29% |  |
+| E. Demanet vs T. Duran | Itf Men Singles | Hard | 0-0, 0-4, 30 - 30, saca T. Duran | 24% / 19% | 0-2 51%, 1-2 25% | 17.5: 72% / 50% |
+| N. Lopez vs M. Van Der Meerschen | Itf Men Singles | Clay | 0-0, 1-3, 30 - 40, saca N. Lopez | 26% / 19% | 0-2 49%, 1-2 25% | 19.5: 70% / 50% |
+| H. Jones vs D. Pham | Itf Men Singles | Hard | 1-0, 3-4, 30 - 15, saca H. Jones | 81% / 75% | 2-0 53%, 2-1 28% | 24.5: 47% / 50% |
+| K. Sawashiro vs N. Sato | Itf Women Singles | Hard | 0-1, 0-0, 0 - 0, saca N. Sato | 30% / 17% | 0-2 46%, 2-1 30% |  |
+| G. S. Popa vs S. Sakellaridi | Itf Women Singles | Clay | 1-1, 1-0, 0 - 0, saca S. Sakellaridi | 55% / 59% | 2-1 55%, 1-2 45% |  |
+| M. Soriano Santiago vs S. Biolay | Itf Women Singles | Hard | 0-0, 1-2, 15 - 0, saca S. Biolay | 13% / 29% | 0-2 61%, 1-2 26% |  |
+| L. Pigato vs K. Swan | Itf Women Singles | Hard | 0-0, 3-0, 0 - 0, saca K. Swan | 43% / 59% | 1-2 39%, 2-0 24% |  |
+| A. Hesse vs C. Esquiva Banuls | Itf Women Singles | Hard | 0-0, 0-2, 40 - 30, saca C. Esquiva Banuls | 56% / 31% | 2-1 31%, 2-0 25% |  |
+| Q. Zheng vs A. Kalinskaya | Wta Singles | Hard | 0-1, 0-1, 0 - 0, saca Q. Zheng | 26% / 28% | 0-2 53%, 2-1 26% | 26.5: 47% / 46% |
+| I. Jovic vs H. Dart | Wta Singles | Hard | 0-1, 0-0, 0 - 15, saca I. Jovic | 57% / 55% | 2-1 57%, 0-2 26% | 24.5: 58% / 50% |
+| K. Rakhimova vs L. Fernandez | Wta Singles | Hard | 1-1, 2-2, 40 - 40, saca L. Fernandez | 35% / 34% | 1-2 65%, 2-1 35% | 27.5: 61% / 59% |
+| B. Bencic vs A. Zakharova | Wta Singles | Hard | 1-0, 4-5, 0 - 0, saca A. Zakharova | 84% / 78% | 2-1 56%, 2-0 28% | 25.5: 52% / 54% |
