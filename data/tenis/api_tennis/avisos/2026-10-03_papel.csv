@@ -155,3 +155,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-03 17:00,12167921,Challenger Women Singles,Adana (Turkey) - Qualification,A. Ruzic,L. Jeanjean,menos,25.5,0.7393,0.5576,1.666,True,actual
 2026-10-03 17:17,12167921,Challenger Women Singles,Adana (Turkey) - Qualification,A. Ruzic,L. Jeanjean,más,25.5,0.6384,0.4424,2.1,True,aprendida
 2026-10-03 17:23,12167910,Challenger Men Singles,Columbus,D. Dietrich,A. Andrade,menos,19.5,0.733,0.5889,1.571,True,actual
+2026-10-03 17:23,12167924,Itf Men Singles,"M15 Fayetteville, AR",T. Papamalamis,S. Rozin,menos,18.5,0.84,0.7234,1.3,True,actual
