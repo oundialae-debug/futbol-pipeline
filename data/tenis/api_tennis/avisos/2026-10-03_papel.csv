@@ -111,3 +111,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-03 11:38,12167647,Atp Singles,Beijing,A. Zverev,J. Shang,menos,15.5,0.6655,0.5889,1.571,True,actual
 2026-10-03 11:39,12167681,Wta Singles,Beijing,X. Sun,C. Bucsa,menos,23.5,0.6988,0.5767,1.615,True,actual
 2026-10-03 11:46,12167857,Itf Men Singles,M25 Kigali,M. Houkes,B. Lock,menos,20.5,0.5893,0.5147,1.8,True,aprendida
+2026-10-03 11:47,12167903,Itf Men Singles,M15 Monastir 33,K. van Wyk,L. G. Verwerft,menos,25.5,0.8438,0.8438,1.111,True,casa65
