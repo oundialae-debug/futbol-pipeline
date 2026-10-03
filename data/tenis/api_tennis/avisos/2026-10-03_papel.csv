@@ -100,3 +100,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-03 10:38,12167904,Itf Men Singles,M25 Zaragoza,R. Nijboer,A. Ritschard,menos,19.5,0.8302,0.8302,1.125,True,casa65
 2026-10-03 10:44,12167854,Challenger Men Singles,Porto,D. Jorda Sanchis,I. Montes-De La Torre,menos,18.5,0.7402,0.5889,1.571,True,actual
 2026-10-03 10:45,12167903,Itf Men Singles,M15 Monastir 33,K. van Wyk,L. G. Verwerft,menos,22.5,0.6935,0.6077,1.533,True,actual
+2026-10-03 10:47,12167867,Challenger Men Singles,Bari (Italy) - Qualification,V. Sachko,S. Pieri,menos,20.5,0.6112,0.4853,1.909,True,aprendida
