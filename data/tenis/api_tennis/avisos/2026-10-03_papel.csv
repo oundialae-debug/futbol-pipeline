@@ -147,3 +147,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-03 15:30,12167916,Challenger Men Singles,Mouilleron-Le-Captif,C. Chidekh,H. Bernet,menos,18.5,0.8421,0.8421,1.125,True,casa65
 2026-10-03 15:56,12167929,Itf Men Singles,"M15 Ann Arbor, MI",N. Tomizawa,M. Dahlin,menos,17.5,0.5511,0.5576,1.666,True,actual
 2026-10-03 16:07,12167928,Itf Men Singles,"M15 Ann Arbor, MI",H. Coquelin,O. Bonding,menos,19.5,0.701,0.6077,1.533,True,actual
+2026-10-03 16:09,12167924,Itf Men Singles,"M15 Fayetteville, AR",T. Papamalamis,S. Rozin,menos,21.5,0.545,0.4853,1.909,True,aprendida
