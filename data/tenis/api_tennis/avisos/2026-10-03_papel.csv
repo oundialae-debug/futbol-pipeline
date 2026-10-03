@@ -32,3 +32,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-03 04:59,12167643,Atp Singles,Tokyo,C. Alcaraz,M. Arnaldi,menos,18.5,0.6914,0.5767,1.615,True,actual
 2026-10-03 05:13,12167838,Challenger Women Singles,Jingshan,E. Jones,A. Shubladze,menos,20.5,0.5834,0.4853,1.909,True,aprendida
 2026-10-03 05:23,12167630,Wta Singles,Beijing,M. Sakkari,S. Hunter,menos,18.5,0.6826,0.5576,1.666,True,actual
+2026-10-03 05:33,12167816,Itf Men Singles,M25 Darwin,H. Hoeyeraal,C. Hoole,menos,22.5,0.5641,0.5,1.833,True,aprendida
