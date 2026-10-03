@@ -42,3 +42,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-03 06:04,12167725,Wta Singles,Beijing,X. Gao,I. Swiatek,menos,16.5,0.5925,0.5366,1.727,True,aprendida
 2026-10-03 06:22,12167725,Wta Singles,Beijing,X. Gao,I. Swiatek,menos,16.5,0.6331,0.5767,1.615,True,actual
 2026-10-03 06:24,12167643,Atp Singles,Tokyo,C. Alcaraz,M. Arnaldi,menos,20.5,0.6876,0.6876,1.363,True,casa65
+2026-10-03 06:33,12167678,Atp Singles,Beijing,A. Rublev,R. Safiullin,menos,21.5,0.7219,0.5767,1.615,True,actual
