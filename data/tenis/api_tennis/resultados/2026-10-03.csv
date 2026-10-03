@@ -1,28 +1,28 @@
 event_key,tipo,torneo,jugador1,jugador2,estado,sets,juegos_totales
 12167611,Itf Women Singles,W35 Wagga Wagga,K. Sawashiro,N. Hanatani,Finished,2 - 1,28
-12167615,Wta Singles,Beijing,A. Krueger,A. Li,Set 1,0 - 0,0
+12167615,Wta Singles,Beijing,A. Krueger,A. Li,Set 2,0 - 1,12
 12167617,Wta Singles,Beijing,S. Kartal,Xin. Wang,,-,0
-12167618,Wta Singles,Beijing,K. Volynets,E. Mertens,Set 1,0 - 0,0
+12167618,Wta Singles,Beijing,K. Volynets,E. Mertens,Set 2,0 - 1,8
 12167619,Wta Singles,Beijing,Q. Zheng,A. Kalinskaya,,-,0
-12167622,Atp Singles,Beijing,A. De Minaur,Q. Halys,Set 1,0 - 0,0
+12167622,Atp Singles,Beijing,A. De Minaur,Q. Halys,Set 2,0 - 1,11
 12167624,Wta Singles,Beijing,M. Bouzkova,K. Birrell,,-,0
 12167625,Wta Singles,Beijing,E. Rybakina,A. Charaeva,,-,0
-12167627,Itf Women Doubles,W35 Wagga Wagga,Stevens/ Thompson,Kitahara/ Wan I,Interrupted,1 - 0,16
+12167627,Itf Women Doubles,W35 Wagga Wagga,Stevens/ Thompson,Kitahara/ Wan I,Finished,2 - 0,19
 12167628,Atp Singles,Tokyo,U. Humbert,J. Lehecka,,-,0
 12167629,Wta Singles,Beijing,K. Siniakova,E. Svitolina,,-,0
 12167630,Wta Singles,Beijing,M. Sakkari,S. Hunter,,-,0
 12167631,Wta Singles,Beijing,J. Ostapenko,P. Badosa,,-,0
 12167643,Atp Singles,Tokyo,C. Alcaraz,M. Arnaldi,,-,0
-12167644,Atp Singles,Tokyo,D. Shapovalov,A. Tabilo,Set 2,1 - 0,13
+12167644,Atp Singles,Tokyo,D. Shapovalov,A. Tabilo,Set 3,1 - 1,26
 12167647,Atp Singles,Beijing,A. Zverev,J. Shang,,-,0
 12167648,Wta Singles,Beijing,B. Bencic,A. Zakharova,,-,0
 12167649,Wta Singles,Beijing,K. Rakhimova,L. Fernandez,,-,0
-12167650,Wta Singles,Beijing,D. Vekic,L. Zhu,Set 1,0 - 0,0
+12167650,Wta Singles,Beijing,D. Vekic,L. Zhu,Set 2,1 - 0,12
 12167678,Atp Singles,Beijing,A. Rublev,R. Safiullin,,-,0
 12167679,Atp Singles,Tokyo,M. Berrettini,D. Vallejo,,-,0
 12167680,Wta Singles,Beijing,I. Jovic,H. Dart,,-,0
 12167681,Wta Singles,Beijing,X. Sun,C. Bucsa,,-,0
-12167683,Wta Singles,Beijing,C. Gauff,C. Osorio,Set 1,0 - 0,0
+12167683,Wta Singles,Beijing,C. Gauff,C. Osorio,Set 1,0 - 0,12
 12167724,Atp Singles,Beijing,F. Cerundolo,J. Mensik,,-,0
 12167725,Wta Singles,Beijing,X. Gao,I. Swiatek,,-,0
 12167786,Itf Women Doubles,W15 Nashville,Malmkjaer/ Kruger,Bartel/ Hejtmanek,Finished,2 - 0,24
@@ -30,12 +30,12 @@ event_key,tipo,torneo,jugador1,jugador2,estado,sets,juegos_totales
 12167789,Itf Women Doubles,W100 Templeton,Frodin/ Sahdiieva,Broadus/ Zamarripa,Finished,0 - 2,18
 12167790,Itf Women Doubles,W100 Templeton,Pace/ Zucchini,Osuigwe/ Urhobo,Finished,0 - 2,21
 12167800,Itf Women Doubles,W15 Trelew,Meabe/ Urrutia,Larraya Guidi/ Sousa Salazar,Finished,2 - 1,35
-12167809,Atp Doubles,Tokyo,Miedler/ Oberleitner,Arribage/ Olivetti,Set 2,0 - 1,16
-12167810,Challenger Men Singles,Jingshan,L. Harris,A. Bolt,Set 1,0 - 0,0
-12167812,Itf Women Singles,W35 Wagga Wagga,M. Uemura,Mushika Mio,Interrupted,1 - 0,13
+12167809,Atp Doubles,Tokyo,Miedler/ Oberleitner,Arribage/ Olivetti,Finished,0 - 2,23
+12167810,Challenger Men Singles,Jingshan,L. Harris,A. Bolt,Set 2,0 - 1,13
+12167812,Itf Women Singles,W35 Wagga Wagga,M. Uemura,Mushika Mio,Set 3,1 - 1,20
 12167816,Itf Men Singles,M25 Darwin,H. Hoeyeraal,C. Hoole,,-,0
 12167817,Atp Singles,Beijing,D. Medvedev,J-L. Struff,,-,0
-12167818,Atp Doubles,Tokyo,Hijikata/ Uesugi,Nys/ Roger-Vasselin,,-,0
+12167818,Atp Doubles,Tokyo,Hijikata/ Uesugi,Nys/ Roger-Vasselin,Set 1,0 - 0,5
 12167819,Atp Doubles,Tokyo,Krajicek/ Mektic,Tabilo/ van Assche,,-,0
 12167836,Challenger Women Singles,Jingshan,J. Bouzas Maneiro,A. Falei,,-,0
 12167837,Atp Doubles,Tokyo,Bolelli/ Vavassori,Polmans/ Zielinski,,-,0
@@ -73,7 +73,7 @@ event_key,tipo,torneo,jugador1,jugador2,estado,sets,juegos_totales
 12167877,Challenger Women Singles,Suzhou,D. Astakhova,S. Wei,,-,0
 12167878,Challenger Women Singles,Suzhou,S. Lansere,Y. Qu,,-,0
 12167879,Challenger Men Doubles,Bari (Italy),Alvarez Valdes/ Oetzbach,Ovcharenko/ Wehnelt,,-,0
-12167880,Itf Men Singles,M15 Luan 4,N. Ehrenschneider,R. Matsuda,Set 2,0 - 1,8
+12167880,Itf Men Singles,M15 Luan 4,N. Ehrenschneider,R. Matsuda,Set 3,1 - 1,19
 12167881,Itf Men Singles,M15 Sharm ElSheikh 11,R. Strombachs,P. Jubb,,-,0
 12167882,Itf Men Singles,M15 Sharm ElSheikh 11,F. Zakaria,K. Singh,,-,0
 12167883,Itf Men Singles,M25 Kigali,C. Hemery,F. Bax,,-,0
@@ -121,3 +121,11 @@ event_key,tipo,torneo,jugador1,jugador2,estado,sets,juegos_totales
 12167929,Itf Men Singles,"M15 Ann Arbor, MI",N. Tomizawa,M. Dahlin,,-,0
 12167930,Itf Men Doubles,"M15 Ann Arbor, MI",Fradkin/ Kuhar,Sheldon/ Swenson,,-,0
 12167932,Itf Women Singles,W35 Wagga Wagga,K. Sawashiro,N. Sato,,-,0
+12167933,Itf Women Doubles,W100 Templeton,Broadus/ Zamarripa,Osuigwe/ Urhobo,,-,0
+12167934,Itf Women Singles,W15 Nashville,A. Bowers,A. Sharma,,-,0
+12167935,Itf Women Singles,W15 Nashville,M. Refaat,R. M. Nijkamp,,-,0
+12167936,Itf Women Doubles,W15 Nashville,Pearce/ Yamakita,Malmkjaer/ Kruger,,-,0
+12167937,Itf Women Singles,W15 Trelew,L. F. Britez Risso,M. F. Urrutia,,-,0
+12167938,Itf Women Singles,W15 Trelew,A. S. Sanchez,L. Moyano,,-,0
+12167939,Itf Women Doubles,W15 Trelew,Ayala/ Britez Risso,Meabe/ Urrutia,,-,0
+12167940,Itf Women Doubles,W35 Wagga Wagga,Stevens/ Thompson,Arakawa/ Tse,,-,0
