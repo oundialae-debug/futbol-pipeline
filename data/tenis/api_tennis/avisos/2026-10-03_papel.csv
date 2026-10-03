@@ -98,3 +98,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-03 10:21,12167848,Itf Men Singles,M25 Slobozia (Romania),G. A. Boitan,B. Zgola,menos,15.5,0.6288,0.5767,1.615,True,actual
 2026-10-03 10:26,12167902,Itf Men Singles,M15 Monastir 33,E. Demanet,T. Duran,menos,17.5,0.8828,0.8828,1.062,True,casa65
 2026-10-03 10:38,12167904,Itf Men Singles,M25 Zaragoza,R. Nijboer,A. Ritschard,menos,19.5,0.8302,0.8302,1.125,True,casa65
+2026-10-03 10:44,12167854,Challenger Men Singles,Porto,D. Jorda Sanchis,I. Montes-De La Torre,menos,18.5,0.7402,0.5889,1.571,True,actual
