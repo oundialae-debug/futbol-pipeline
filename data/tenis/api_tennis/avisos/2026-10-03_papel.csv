@@ -78,3 +78,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-03 09:16,12167903,Itf Men Singles,M15 Monastir 33,K. van Wyk,L. G. Verwerft,menos,21.5,0.5788,0.5,1.833,True,aprendida
 2026-10-03 09:16,12167904,Itf Men Singles,M25 Zaragoza,R. Nijboer,A. Ritschard,menos,21.5,0.578,0.4853,1.909,True,aprendida
 2026-10-03 09:24,12167894,Itf Men Singles,M15 Sibenik,N. Lopez,M. Van Der Meerschen,menos,20.5,0.5573,0.5,1.833,True,aprendida
+2026-10-03 09:26,12167680,Wta Singles,Beijing,I. Jovic,H. Dart,menos,24.5,0.5155,0.4634,2.0,True,aprendida
