@@ -36,3 +36,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-03 05:34,12167845,Challenger Men Singles,Jingshan,Y. Erel,M. Bellucci,menos,21.5,0.5721,0.5,1.833,True,aprendida
 2026-10-03 05:36,12167631,Wta Singles,Beijing,J. Ostapenko,P. Badosa,menos,21.5,0.5355,0.4853,1.909,True,aprendida
 2026-10-03 05:37,12167678,Atp Singles,Beijing,A. Rublev,R. Safiullin,menos,24.5,0.5838,0.5,1.833,True,aprendida
+2026-10-03 05:43,12167630,Wta Singles,Beijing,M. Sakkari,S. Hunter,menos,14.5,0.7315,0.7315,1.285,True,casa65
