@@ -72,3 +72,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-03 09:12,12167680,Wta Singles,Beijing,I. Jovic,H. Dart,menos,23.5,0.552,0.5,1.833,True,aprendida
 2026-10-03 09:16,12167619,Wta Singles,Beijing,Q. Zheng,A. Kalinskaya,menos,26.5,0.5692,0.5,1.833,True,aprendida
 2026-10-03 09:16,12167648,Wta Singles,Beijing,B. Bencic,A. Zakharova,menos,24.5,0.6177,0.5366,1.727,True,aprendida
+2026-10-03 09:16,12167649,Wta Singles,Beijing,K. Rakhimova,L. Fernandez,menos,27.5,0.6266,0.5576,1.666,True,actual
