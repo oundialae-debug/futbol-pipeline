@@ -1,5 +1,5 @@
 event_key,tipo,torneo,jugador1,jugador2,estado,sets,juegos_totales
-12167611,Itf Women Singles,W35 Wagga Wagga,K. Sawashiro,N. Hanatani,Interrupted,1 - 1,19
+12167611,Itf Women Singles,W35 Wagga Wagga,K. Sawashiro,N. Hanatani,Set 3,1 - 1,19
 12167615,Wta Singles,Beijing,A. Krueger,A. Li,,-,0
 12167617,Wta Singles,Beijing,S. Kartal,Xin. Wang,,-,0
 12167618,Wta Singles,Beijing,K. Volynets,E. Mertens,,-,0
@@ -25,14 +25,14 @@ event_key,tipo,torneo,jugador1,jugador2,estado,sets,juegos_totales
 12167683,Wta Singles,Beijing,C. Gauff,C. Osorio,,-,0
 12167724,Atp Singles,Beijing,F. Cerundolo,J. Mensik,,-,0
 12167725,Wta Singles,Beijing,X. Gao,I. Swiatek,,-,0
-12167786,Itf Women Doubles,W15 Nashville,Malmkjaer/ Kruger,Bartel/ Hejtmanek,,-,0
-12167787,Itf Women Doubles,W15 Nashville,Pearce/ Yamakita,Mattioli/ Webb,,-,0
-12167789,Itf Women Doubles,W100 Templeton,Frodin/ Sahdiieva,Broadus/ Zamarripa,,-,0
+12167786,Itf Women Doubles,W15 Nashville,Malmkjaer/ Kruger,Bartel/ Hejtmanek,Set 2,1 - 0,14
+12167787,Itf Women Doubles,W15 Nashville,Pearce/ Yamakita,Mattioli/ Webb,Set 1,0 - 0,5
+12167789,Itf Women Doubles,W100 Templeton,Frodin/ Sahdiieva,Broadus/ Zamarripa,Set 2,0 - 1,15
 12167790,Itf Women Doubles,W100 Templeton,Pace/ Zucchini,Osuigwe/ Urhobo,,-,0
-12167800,Itf Women Doubles,W15 Trelew,Meabe/ Urrutia,Larraya Guidi/ Sousa Salazar,Set 1,0 - 0,4
+12167800,Itf Women Doubles,W15 Trelew,Meabe/ Urrutia,Larraya Guidi/ Sousa Salazar,Set 3,1 - 1,17
 12167809,Atp Doubles,Tokyo,Miedler/ Oberleitner,Arribage/ Olivetti,,-,0
 12167810,Challenger Men Singles,Jingshan,L. Harris,A. Bolt,,-,0
-12167812,Itf Women Singles,W35 Wagga Wagga,M. Uemura,Mushika Mio,,-,0
+12167812,Itf Women Singles,W35 Wagga Wagga,M. Uemura,Mushika Mio,Set 1,0 - 0,0
 12167816,Itf Men Singles,M25 Darwin,H. Hoeyeraal,C. Hoole,,-,0
 12167817,Atp Singles,Beijing,D. Medvedev,J-L. Struff,,-,0
 12167818,Atp Doubles,Tokyo,Hijikata/ Uesugi,Nys/ Roger-Vasselin,,-,0
@@ -120,3 +120,4 @@ event_key,tipo,torneo,jugador1,jugador2,estado,sets,juegos_totales
 12167927,Challenger Men Doubles,Curitiba,Kestelboim/ Zormann Da Silva,Miguel/ Ribeiro,,-,0
 12167928,Itf Men Singles,"M15 Ann Arbor, MI",H. Coquelin,O. Bonding,,-,0
 12167929,Itf Men Singles,"M15 Ann Arbor, MI",N. Tomizawa,M. Dahlin,,-,0
+12167930,Itf Men Doubles,"M15 Ann Arbor, MI",Fradkin/ Kuhar,Sheldon/ Swenson,,-,0
