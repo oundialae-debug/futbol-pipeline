@@ -1,4 +1,4 @@
-# Tenis en directo, 03/10/2026 01:44 UTC (03:44 en España)
+# Tenis en directo, 03/10/2026 01:53 UTC (03:53 en España)
 
 Calculadora desde el marcador exacto (modelo de puntos, superficie real) frente a la cuota en directo
 (sin margen). Ganador y sets: la calculadora suele coincidir con la casa. Total de juegos: el modelo
@@ -7,4 +7,4 @@ Se actualiza cada ~5 min; el registro en data/tenis/api_tennis/registro/ servir�
 
 | partido | tipo | superficie | marcador (sets, juegos, puntos, saca) | gana 1º: modelo / cuota | sets más probables (modelo) | total juegos: línea, modelo / cuota |
 |---|---|---|---|---|---|---|
-| K. Sawashiro vs N. Hanatani | Itf Women Singles | Hard | 1-1, 3-4, 30 - 15, saca K. Sawashiro | 64% / 56% | 2-1 64%, 1-2 36% |  |
+| K. Sawashiro vs N. Hanatani | Itf Women Singles | Hard | 1-1, 4-4, 40 - 40, saca N. Hanatani | 71% / 66% | 2-1 71%, 1-2 29% |  |
