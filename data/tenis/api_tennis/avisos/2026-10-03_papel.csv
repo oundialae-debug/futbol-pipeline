@@ -138,3 +138,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-03 14:31,12167625,Wta Singles,Beijing,E. Rybakina,A. Charaeva,menos,29.5,0.6627,0.6627,1.4,True,casa65
 2026-10-03 14:49,12167916,Challenger Men Singles,Mouilleron-Le-Captif,C. Chidekh,H. Bernet,menos,18.5,0.7349,0.5576,1.666,True,actual
 2026-10-03 14:50,12167857,Itf Men Singles,M25 Kigali,M. Houkes,B. Lock,menos,32.5,0.6627,0.6627,1.4,True,casa65
+2026-10-03 14:57,12167921,Challenger Women Singles,Adana (Turkey) - Qualification,A. Ruzic,L. Jeanjean,menos,21.5,0.5747,0.5,1.833,True,aprendida
