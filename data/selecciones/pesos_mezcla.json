@@ -1,74 +1,74 @@
 {
  "1": {
   "peso": 0.0,
-  "n": 38,
+  "n": 46,
   "aprendido": true,
-  "sigmas_modelo_vs_mercado": -0.6
+  "sigmas_modelo_vs_mercado": -0.7
  },
  "X": {
   "peso": 0.0,
-  "n": 38,
+  "n": 46,
   "aprendido": true,
-  "sigmas_modelo_vs_mercado": -0.58
+  "sigmas_modelo_vs_mercado": -0.52
  },
  "2": {
   "peso": 0.0,
-  "n": 38,
+  "n": 46,
   "aprendido": true,
-  "sigmas_modelo_vs_mercado": -1.43
+  "sigmas_modelo_vs_mercado": -1.32
  },
  "mas_2.5": {
   "peso": 0.0,
-  "n": 38,
+  "n": 46,
   "aprendido": true,
-  "sigmas_modelo_vs_mercado": -0.68
+  "sigmas_modelo_vs_mercado": -0.76
  },
  "btts": {
   "peso": 0.0,
-  "n": 38,
+  "n": 46,
   "aprendido": true,
-  "sigmas_modelo_vs_mercado": -0.9
+  "sigmas_modelo_vs_mercado": -1.02
  },
  "mas_1.5": {
-  "peso": 0.0,
-  "n": 38,
+  "peso": 0.1,
+  "n": 46,
   "aprendido": true,
-  "sigmas_modelo_vs_mercado": -0.5
+  "sigmas_modelo_vs_mercado": -0.29
  },
  "mas_3.5": {
   "peso": 0.0,
-  "n": 38,
+  "n": 46,
   "aprendido": true,
-  "sigmas_modelo_vs_mercado": -1.36
+  "sigmas_modelo_vs_mercado": -1.17
  },
  "corners_mas_8.5": {
-  "peso": 0.25,
-  "n": 38,
+  "peso": 0.0,
+  "n": 46,
   "aprendido": true,
-  "sigmas_modelo_vs_mercado": -0.31
+  "sigmas_modelo_vs_mercado": -1.17
  },
  "corners_mas_9.5": {
-  "peso": 0.45,
-  "n": 38,
+  "peso": 0.0,
+  "n": 46,
   "aprendido": true,
-  "sigmas_modelo_vs_mercado": -0.05
+  "sigmas_modelo_vs_mercado": -1.0
  },
  "tarjetas_mas_3.5": {
-  "peso": 0.65,
-  "n": 38,
+  "peso": 0.5,
+  "n": 43,
   "aprendido": true,
-  "sigmas_modelo_vs_mercado": 0.34
+  "sigmas_modelo_vs_mercado": -0.0
  },
  "tarjetas_mas_4.5": {
-  "peso": 0.8500000000000001,
-  "n": 38,
+  "peso": 0.4,
+  "n": 42,
   "aprendido": true,
-  "sigmas_modelo_vs_mercado": 0.7
+  "sigmas_modelo_vs_mercado": -0.19
  },
  "sin_empate_local": {
   "peso": 0.0,
-  "n": 18,
+  "n": 26,
   "aprendido": false,
-  "sigmas_modelo_vs_mercado": -1.65
+  "sigmas_modelo_vs_mercado": -1.6
  }
 }
