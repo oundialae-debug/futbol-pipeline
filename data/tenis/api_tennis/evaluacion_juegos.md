@@ -1,14 +1,14 @@
 # Más/menos juegos en directo: apuestas en papel
 
-Partidos acabados con cuota de juegos en el registro: **269**. Una apuesta por partido (se agrupa por partido). Cuota = la de la API en esa pasada, no la de Luckia. Con menos de 20 apuestas el número no significa nada.
+Partidos acabados con cuota de juegos en el registro: **294**. Una apuesta por partido (se agrupa por partido). Cuota = la de la API en esa pasada, no la de Luckia. Con menos de 20 apuestas el número no significa nada.
 
 | estrategia | apuestas | aciertos | beneficio medio | sigmas |
 |---|---|---|---|---|
-| **señal: vigilar el menos** | 75 | 65% | +14.2% | +1.41 |
-| control: siempre el menos (1ª pasada) | 269 | 50% | -8.0% | -1.42 |
-| control: siempre el más (1ª pasada) | 269 | 50% | -7.0% | -1.22 |
+| **señal: vigilar el menos** | 78 | 67% | +17.9% | +1.80 |
+| control: siempre el menos (1ª pasada) | 294 | 49% | -8.8% | -1.61 |
+| control: siempre el más (1ª pasada) | 294 | 51% | -5.4% | -0.98 |
 
-Brier del 'más' en la línea principal (1ª pasada): modelo 0.2738, mercado 0.2506 (menor es mejor). El modelo da al más +13.5% sobre lo que pasa de verdad.
+Brier del 'más' en la línea principal (1ª pasada): modelo 0.2723, mercado 0.2520 (menor es mejor). El modelo da al más +12.8% sobre lo que pasa de verdad.
 
 ## Señales
 
@@ -71,6 +71,7 @@ Brier del 'más' en la línea principal (1ª pasada): modelo 0.2738, mercado 0.2
 | ITF M M15 Luan 4: N. Ehrenschneider vs T. Ichikawa | 24.5 | 1.83 | 23 | gana |
 | ITF M M25 Darwin: D. Pham vs Ja. Delaney | 33.5 | 1.83 | 26 | gana |
 | ATP 500 Tokyo: C. Alcaraz vs M. Arnaldi | 24.5 | 1.83 | 20 | gana |
+| WTA 1000 Beijing: K. Rakhimova vs L. Fernandez | 27.5 | 2.75 | 27 | gana |
 | WTA 1000 Beijing: D. Vekic vs L. Zhu | 21.5 | 1.83 | 25 | pierde |
 | WTA 125 Jingshan: A. Falei vs S. Sorribes Tormo | 22.5 | 1.91 | 18 | gana |
 | ITF M M25 Slobozia (Romania): S. Gima vs J. Opitz | 23.5 | 1.80 | 22 | gana |
@@ -89,23 +90,25 @@ Brier del 'más' en la línea principal (1ª pasada): modelo 0.2738, mercado 0.2
 | ITF M M15 Fayetteville, AR: A. N. Tudorica vs D. Mosejczuk | 22.5 | 1.20 | 22 | gana |
 | Challenger Jingshan: Y. Erel vs F. Cina | 25.5 | 1.83 | 25 | gana |
 | WTA 125 Jingshan: E. Jones vs A. Shubladze | 24.5 | 1.83 | 22 | gana |
+| ITF M M15 Telavi 2 (Georgia): S. Paardekooper vs D. Popko | 20.5 | 1.67 | 19 | gana |
+| ITF M M25 Zaragoza: R. Nijboer vs A. Ritschard | 24.5 | 1.91 | 19 | gana |
 
 ## Reglas del vigilante (desde el 01/10 solo en papel)
 
 | regla | apuestas resueltas | aciertos | beneficio medio (cuota API) | sigmas |
 |---|---|---|---|---|
-| actual | 104 | 55% | -14.6% | -1.89 |
+| actual | 135 | 54% | -15.8% | -2.34 |
 | actual (al móvil) | 125 | 62% | -4.1% | -0.61 |
-| aprendida | 129 | 47% | -13.7% | -1.66 |
-| casa65 | 54 | 80% | -1.3% | -0.19 |
+| aprendida | 167 | 49% | -9.3% | -1.29 |
+| casa65 | 73 | 84% | +3.5% | +0.62 |
 
 ## Previos (antes de empezar), línea principal de juegos y ganador
 
-302 partidos. Juegos (más de la línea principal), Brier (menor es mejor): modelo 0.2807, modelo corregido con el historial 0.2638, casa 0.2515. Pasó el más en el 50%.
-Ganador (302): acierto modelo 64%, casa 73%.
+337 partidos. Juegos (más de la línea principal), Brier (menor es mejor): modelo 0.2790, modelo corregido con el historial 0.2620, casa 0.2517. Pasó el más en el 49%.
+Ganador (337): acierto modelo 65%, casa 73%.
 
 ## Aprendizaje (recalibración del modelo)
 
-Partidos resueltos: 197 (1575 líneas). Activa: **sí** (hace falta 30+ partidos y que mejore a la CASA en partidos que no vio).
-**Apostando con lo aprendido, día a día** (cada día aprende solo de los anteriores): 102 apuestas, aciertos 42%, beneficio medio -23.4%, -2.61 sigmas.
-Brier (menor es mejor): modelo 0.2741, modelo con el saque de hoy 0.2619, casa 0.2432, recalibrado (validado por partidos) 0.2346. Sesgo del modelo hacia el más: +19.1%.
+Partidos resueltos: 222 (1697 líneas). Activa: **sí** (hace falta 30+ partidos y que mejore a la CASA en partidos que no vio).
+**Apostando con lo aprendido, día a día** (cada día aprende solo de los anteriores): 126 apuestas, aciertos 43%, beneficio medio -19.8%, -2.34 sigmas.
+Brier (menor es mejor): modelo 0.2726, modelo con el saque de hoy 0.2614, casa 0.2452, recalibrado (validado por partidos) 0.2368. Sesgo del modelo hacia el más: +18.4%.
