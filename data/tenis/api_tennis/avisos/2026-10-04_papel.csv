@@ -42,3 +42,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-04 06:56,12167847,Itf Men Singles,M15 Baku 2 (Azerbaijan),M. Walters,D. Singh,menos,23.5,0.5685,0.5147,1.8,True,aprendida
 2026-10-04 07:02,12167949,Challenger Women Singles,Jingshan,J. Bouzas Maneiro,A. Shubladze,menos,15.5,0.6627,0.6627,1.4,True,casa65
 2026-10-04 07:08,12167974,Itf Men Singles,M15 Sharm ElSheikh 11,P. Jubb,F. Zakaria,menos,19.5,0.6772,0.5147,1.8,True,aprendida
+2026-10-04 07:14,12167811,Wta Singles,Beijing,L. Noskova,V. Golubic,menos,17.5,0.6293,0.5889,1.571,True,actual
