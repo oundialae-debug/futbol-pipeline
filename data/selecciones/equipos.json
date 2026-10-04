@@ -1,31 +1,23 @@
 {
  "equipos": {
-  "Portugal": 23761,
-  "Norway": 928374,
   "Cyprus": 941990,
   "Latvia": 930076,
-  "Northern Ireland": 656905,
-  "Georgia": 940288,
+  "Montenegro": 944543,
+  "Armenia": 931778,
   "France": 2486,
   "Belgium": 1635,
   "Romania": 659458,
   "Sweden": 5039,
   "Ukraine": 657756,
   "Hungary": 655203,
-  "Montenegro": 944543,
-  "Armenia": 931778,
   "Bosnia & Herzegovina": 947947,
   "Poland": 21208,
+  "Northern Ireland": 656905,
+  "Georgia": 940288,
   "Italy": 654352,
   "Turkey": 662011
  },
  "cruces": [
-  [
-   "Portugal",
-   "Norway",
-   1301129575,
-   "2026-10-04T18:45:00.000Z"
-  ],
   [
    "Cyprus",
    "Latvia",
@@ -33,9 +25,9 @@
    "2026-10-05T16:00:00.000Z"
   ],
   [
-   "Northern Ireland",
-   "Georgia",
-   1301134681,
+   "Montenegro",
+   "Armenia",
+   1301137234,
    "2026-10-05T18:45:00.000Z"
   ],
   [
@@ -57,15 +49,15 @@
    "2026-10-05T18:45:00.000Z"
   ],
   [
-   "Montenegro",
-   "Armenia",
-   1301137234,
-   "2026-10-05T18:45:00.000Z"
-  ],
-  [
    "Bosnia & Herzegovina",
    "Poland",
    1301135532,
+   "2026-10-05T18:45:00.000Z"
+  ],
+  [
+   "Northern Ireland",
+   "Georgia",
+   1301134681,
    "2026-10-05T18:45:00.000Z"
   ],
   [
@@ -75,5 +67,5 @@
    "2026-10-05T18:45:00.000Z"
   ]
  ],
- "generado": "2026-10-04T20:41:27.979938+00:00"
+ "generado": "2026-10-04T21:06:01.381811+00:00"
 }
