@@ -48,3 +48,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-04 07:29,12167814,Wta Singles,Beijing,D. Snigur,T. Preston,menos,18.5,0.5668,0.5147,1.8,True,aprendida
 2026-10-04 07:30,12167875,Challenger Women Singles,Suzhou,K. Zavatska,K. Sidorova,menos,19.5,0.7439,0.5889,1.571,True,actual
 2026-10-04 07:32,12167811,Wta Singles,Beijing,L. Noskova,V. Golubic,menos,15.5,0.9129,0.9129,1.05,True,casa65
+2026-10-04 07:40,12167953,Itf Men Singles,M25 Darwin,C. Hoole,H. Jones,menos,23.5,0.7308,0.5889,1.571,True,actual
