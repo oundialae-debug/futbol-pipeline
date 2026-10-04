@@ -4,3 +4,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-04 02:33,12167840,Atp Singles,Tokyo,J. Munar,K. Jacquet,menos,24.5,0.5761,0.5,1.833,True,aprendida
 2026-10-04 02:33,12167944,Itf Men Singles,M15 Luan 4,N. Ehrenschneider,I. Becroft,menos,21.5,0.5792,0.5,1.833,True,aprendida
 2026-10-04 03:05,12167951,Challenger Men Singles,Jingshan,M. Bellucci,L. Harris,menos,24.5,0.6394,0.5,1.833,True,aprendida
+2026-10-04 03:13,12167874,Challenger Women Singles,Suzhou,J. Lu,Z. Li,menos,21.5,0.5476,0.4853,1.909,True,aprendida
