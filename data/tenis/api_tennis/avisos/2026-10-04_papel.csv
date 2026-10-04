@@ -23,3 +23,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-04 05:15,12167945,Atp Singles,Tokyo,C. Alcaraz,D. Shapovalov,menos,22.5,0.6545,0.5576,1.666,True,actual
 2026-10-04 05:20,12167891,Atp Singles,Beijing,H. Hurkacz,K. Khachanov,menos,23.5,0.5586,0.5,1.833,True,aprendida
 2026-10-04 05:46,12167953,Itf Men Singles,M25 Darwin,C. Hoole,H. Jones,menos,22.5,0.549,0.4853,1.909,True,aprendida
+2026-10-04 05:50,12167813,Wta Singles,Beijing,E. Alexandrova,D. Shnaider,menos,19.5,0.638,0.5767,1.615,True,aprendida
