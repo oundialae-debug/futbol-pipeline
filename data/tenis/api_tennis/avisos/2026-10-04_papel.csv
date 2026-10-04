@@ -13,3 +13,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-04 04:18,12167862,Wta Singles,Beijing,N. Bartunkova,A. Sabalenka,menos,22.5,0.5572,0.5,1.833,True,aprendida
 2026-10-04 04:18,12167944,Itf Men Singles,M15 Luan 4,N. Ehrenschneider,I. Becroft,más,26.5,0.846,0.7091,1.333,True,aprendida
 2026-10-04 04:21,12167951,Challenger Men Singles,Jingshan,M. Bellucci,L. Harris,menos,26.5,0.7645,0.6077,1.533,True,actual
+2026-10-04 04:25,12167862,Wta Singles,Beijing,N. Bartunkova,A. Sabalenka,menos,20.5,0.6285,0.5889,1.571,True,actual
