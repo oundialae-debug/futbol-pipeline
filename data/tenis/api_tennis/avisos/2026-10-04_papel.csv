@@ -25,3 +25,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-04 05:46,12167953,Itf Men Singles,M25 Darwin,C. Hoole,H. Jones,menos,22.5,0.549,0.4853,1.909,True,aprendida
 2026-10-04 05:50,12167813,Wta Singles,Beijing,E. Alexandrova,D. Shnaider,menos,19.5,0.638,0.5767,1.615,True,aprendida
 2026-10-04 05:58,12167941,Challenger Women Singles,Suzhou,W. Zheng,Y. Qu,menos,28.5,0.6862,0.5767,1.615,True,actual
+2026-10-04 05:58,12167949,Challenger Women Singles,Jingshan,J. Bouzas Maneiro,A. Shubladze,menos,21.5,0.5844,0.5,1.833,True,aprendida
