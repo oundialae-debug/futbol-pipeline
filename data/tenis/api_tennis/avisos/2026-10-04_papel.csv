@@ -39,3 +39,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-04 06:47,12167846,Itf Men Singles,M15 Baku 2 (Azerbaijan),M. Hurrion,K. Yilmaz,menos,20.5,0.537,0.4853,1.909,True,aprendida
 2026-10-04 06:53,12167947,Atp Singles,Beijing,A. De Minaur,A. Rublev,menos,23.5,0.5729,0.5,1.833,True,aprendida
 2026-10-04 06:53,12167949,Challenger Women Singles,Jingshan,J. Bouzas Maneiro,A. Shubladze,menos,17.5,0.7715,0.6077,1.533,True,actual
+2026-10-04 06:56,12167847,Itf Men Singles,M15 Baku 2 (Azerbaijan),M. Walters,D. Singh,menos,23.5,0.5685,0.5147,1.8,True,aprendida
