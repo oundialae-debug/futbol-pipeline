@@ -81,3 +81,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-04 17:03,12168070,Itf Men Singles,"M15 Ann Arbor, MI",M. Dahlin,O. Bonding,menos,20.5,0.5813,0.5576,1.666,True,actual
 2026-10-04 17:46,12168070,Itf Men Singles,"M15 Ann Arbor, MI",M. Dahlin,O. Bonding,menos,20.5,0.7942,0.7942,1.166,True,casa65
 2026-10-04 18:07,12168104,Itf Men Singles,"M15 Fayetteville, AR",T. Papamalamis,D. Mosejczuk,menos,18.5,0.9278,0.9278,1.012,True,casa65
+2026-10-04 19:31,12168009,Challenger Women Singles,Adana (Turkey) - Qualification,L. Jeanjean,L. Boisson,más,33.5,0.5772,0.4233,2.2,True,aprendida
