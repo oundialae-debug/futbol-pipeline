@@ -1,5 +1,4 @@
 match_id,liga_id,fecha,saque_utc,local_id,local,visitante_id,visitante,estado,arbitro,clima_status,clima_temp_txt,local_ids,local_formacion,visitante_ids,visitante_formacion
-1336035042,120775,2026-10-03T16:30:00.000Z,16:30,8164427,Sabadell,6942391,FC Andorra,Not started,,rain,21.58°C,,,,
-1336028234,120775,2026-10-03T16:30:00.000Z,16:30,616908,Cadiz,457771,Leganes,Not started,,cloudy,27.41°C,,,,
-1336027383,120775,2026-10-03T14:15:00.000Z,14:15,616057,Almería,8153364,Burgos,Not started,,cloudy,27.49°C,,,,
-1336026532,120775,2026-10-03T12:00:00.000Z,12:00,615206,Albacete,464579,Eibar,Not started,,cloudy,22.73°C,,,,
+1336032489,120775,2026-10-04T19:00:00.000Z,19:00,466281,Girona,679882,Mallorca,Not started,"Mallo Fernandez, Eder",rain,19.46°C,,,,
+1336029085,120775,2026-10-04T16:30:00.000Z,16:30,4471938,Castellón,8629073,AD Ceuta FC,Not started,"Huerta de Aza, Marta",cloudy,22.08°C,,,,
+1336033340,120775,2026-10-04T16:30:00.000Z,16:30,455218,Las Palmas,613504,Valladolid,Not started,"Perez Hernandez, Manuel Angel",partly cloudy day,23.95°C,,,,
