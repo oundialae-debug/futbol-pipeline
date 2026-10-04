@@ -18,3 +18,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-04 04:41,12167807,Wta Singles,Beijing,S. Kraus,D. Yastremska,menos,17.5,0.6876,0.6876,1.363,True,casa65
 2026-10-04 04:42,12167862,Wta Singles,Beijing,N. Bartunkova,A. Sabalenka,menos,20.5,0.75,0.75,1.25,True,casa65
 2026-10-04 04:59,12167874,Challenger Women Singles,Suzhou,J. Lu,Z. Li,menos,17.5,0.8141,0.6876,1.363,True,actual
+2026-10-04 04:59,12167874,Challenger Women Singles,Suzhou,J. Lu,Z. Li,menos,17.5,0.6876,0.6876,1.363,True,casa65
