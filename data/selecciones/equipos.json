@@ -1,29 +1,37 @@
 {
  "equipos": {
-  "Azerbaijan": 933480,
-  "Lithuania": 934331,
   "Malta": 947096,
   "Andorra": 945394,
   "Kosovo National Team": 946245,
   "Austria": 660309,
+  "Greece": 951351,
+  "Germany": 22059,
+  "Republic of Ireland": 661160,
+  "Israel": 950500,
+  "Netherlands": 952202,
+  "Serbia": 12698,
   "Wales": 653501,
   "Denmark": 18655,
   "Portugal": 23761,
   "Norway": 928374,
-  "Republic of Ireland": 661160,
-  "Israel": 950500,
-  "Greece": 951351,
-  "Germany": 22059,
-  "Netherlands": 952202,
-  "Serbia": 12698
+  "Cyprus": 941990,
+  "Latvia": 930076,
+  "Northern Ireland": 656905,
+  "Georgia": 940288,
+  "France": 2486,
+  "Belgium": 1635,
+  "Ukraine": 657756,
+  "Hungary": 655203,
+  "Romania": 659458,
+  "Sweden": 5039,
+  "Montenegro": 944543,
+  "Armenia": 931778,
+  "Bosnia & Herzegovina": 947947,
+  "Poland": 21208,
+  "Italy": 654352,
+  "Turkey": 662011
  },
  "cruces": [
-  [
-   "Azerbaijan",
-   "Lithuania",
-   1301126171,
-   "2026-10-04T13:00:00.000Z"
-  ],
   [
    "Malta",
    "Andorra",
@@ -35,6 +43,24 @@
    "Austria",
    1301127022,
    "2026-10-04T16:00:00.000Z"
+  ],
+  [
+   "Greece",
+   "Germany",
+   1301127873,
+   "2026-10-04T18:45:00.000Z"
+  ],
+  [
+   "Republic of Ireland",
+   "Israel",
+   1301131277,
+   "2026-10-04T18:45:00.000Z"
+  ],
+  [
+   "Netherlands",
+   "Serbia",
+   1301128724,
+   "2026-10-04T18:45:00.000Z"
   ],
   [
    "Wales",
@@ -49,23 +75,53 @@
    "2026-10-04T18:45:00.000Z"
   ],
   [
-   "Republic of Ireland",
-   "Israel",
-   1301131277,
-   "2026-10-04T18:45:00.000Z"
+   "Cyprus",
+   "Latvia",
+   1315315745,
+   "2026-10-05T16:00:00.000Z"
   ],
   [
-   "Greece",
-   "Germany",
-   1301127873,
-   "2026-10-04T18:45:00.000Z"
+   "Northern Ireland",
+   "Georgia",
+   1301134681,
+   "2026-10-05T18:45:00.000Z"
   ],
   [
-   "Netherlands",
-   "Serbia",
-   1301128724,
-   "2026-10-04T18:45:00.000Z"
+   "France",
+   "Belgium",
+   1301132128,
+   "2026-10-05T18:45:00.000Z"
+  ],
+  [
+   "Ukraine",
+   "Hungary",
+   1301133830,
+   "2026-10-05T18:45:00.000Z"
+  ],
+  [
+   "Romania",
+   "Sweden",
+   1301136383,
+   "2026-10-05T18:45:00.000Z"
+  ],
+  [
+   "Montenegro",
+   "Armenia",
+   1301137234,
+   "2026-10-05T18:45:00.000Z"
+  ],
+  [
+   "Bosnia & Herzegovina",
+   "Poland",
+   1301135532,
+   "2026-10-05T18:45:00.000Z"
+  ],
+  [
+   "Italy",
+   "Turkey",
+   1301132979,
+   "2026-10-05T18:45:00.000Z"
   ]
  ],
- "generado": "2026-10-03T21:23:17.034420+00:00"
+ "generado": "2026-10-04T15:05:26.700700+00:00"
 }
