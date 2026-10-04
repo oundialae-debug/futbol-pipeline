@@ -68,3 +68,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-04 08:18,12167974,Itf Men Singles,M15 Sharm ElSheikh 11,P. Jubb,F. Zakaria,menos,25.5,0.5701,0.5,1.833,True,aprendida
 2026-10-04 08:20,12167846,Itf Men Singles,M15 Baku 2 (Azerbaijan),M. Hurrion,K. Yilmaz,menos,23.5,0.8271,0.7234,1.3,True,actual
 2026-10-04 08:20,12167846,Itf Men Singles,M15 Baku 2 (Azerbaijan),M. Hurrion,K. Yilmaz,menos,23.5,0.7234,0.7234,1.3,True,casa65
+2026-10-04 14:13,12168006,Challenger Women Singles,Samsun,D. Jakupovic,L. Ciric Bagaric,menos,19.5,0.5002,0.2909,3.25,True,aprendida
