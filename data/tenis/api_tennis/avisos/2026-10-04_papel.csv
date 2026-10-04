@@ -37,3 +37,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-04 06:36,12167891,Atp Singles,Beijing,H. Hurkacz,K. Khachanov,menos,23.5,0.7234,0.7234,1.3,True,casa65
 2026-10-04 06:39,12167813,Wta Singles,Beijing,E. Alexandrova,D. Shnaider,menos,29.5,0.6789,0.625,1.5,True,actual
 2026-10-04 06:47,12167846,Itf Men Singles,M15 Baku 2 (Azerbaijan),M. Hurrion,K. Yilmaz,menos,20.5,0.537,0.4853,1.909,True,aprendida
+2026-10-04 06:53,12167947,Atp Singles,Beijing,A. De Minaur,A. Rublev,menos,23.5,0.5729,0.5,1.833,True,aprendida
