@@ -1,14 +1,14 @@
 # Más/menos juegos en directo: apuestas en papel
 
-Partidos acabados con cuota de juegos en el registro: **294**. Una apuesta por partido (se agrupa por partido). Cuota = la de la API en esa pasada, no la de Luckia. Con menos de 20 apuestas el número no significa nada.
+Partidos acabados con cuota de juegos en el registro: **310**. Una apuesta por partido (se agrupa por partido). Cuota = la de la API en esa pasada, no la de Luckia. Con menos de 20 apuestas el número no significa nada.
 
 | estrategia | apuestas | aciertos | beneficio medio | sigmas |
 |---|---|---|---|---|
-| **señal: vigilar el menos** | 78 | 67% | +17.9% | +1.80 |
-| control: siempre el menos (1ª pasada) | 294 | 49% | -8.8% | -1.61 |
-| control: siempre el más (1ª pasada) | 294 | 51% | -5.4% | -0.98 |
+| **señal: vigilar el menos** | 79 | 67% | +18.7% | +1.90 |
+| control: siempre el menos (1ª pasada) | 310 | 50% | -7.6% | -1.42 |
+| control: siempre el más (1ª pasada) | 310 | 50% | -6.6% | -1.24 |
 
-Brier del 'más' en la línea principal (1ª pasada): modelo 0.2723, mercado 0.2520 (menor es mejor). El modelo da al más +12.8% sobre lo que pasa de verdad.
+Brier del 'más' en la línea principal (1ª pasada): modelo 0.2714, mercado 0.2519 (menor es mejor). El modelo da al más +13.2% sobre lo que pasa de verdad.
 
 ## Señales
 
@@ -90,6 +90,7 @@ Brier del 'más' en la línea principal (1ª pasada): modelo 0.2723, mercado 0.2
 | ITF M M15 Fayetteville, AR: A. N. Tudorica vs D. Mosejczuk | 22.5 | 1.20 | 22 | gana |
 | Challenger Jingshan: Y. Erel vs F. Cina | 25.5 | 1.83 | 25 | gana |
 | WTA 125 Jingshan: E. Jones vs A. Shubladze | 24.5 | 1.83 | 22 | gana |
+| ATP 500 Tokyo: J. Munar vs K. Jacquet | 23.5 | 1.80 | 18 | gana |
 | ITF M M15 Telavi 2 (Georgia): S. Paardekooper vs D. Popko | 20.5 | 1.67 | 19 | gana |
 | ITF M M25 Zaragoza: R. Nijboer vs A. Ritschard | 24.5 | 1.91 | 19 | gana |
 
@@ -97,18 +98,18 @@ Brier del 'más' en la línea principal (1ª pasada): modelo 0.2723, mercado 0.2
 
 | regla | apuestas resueltas | aciertos | beneficio medio (cuota API) | sigmas |
 |---|---|---|---|---|
-| actual | 135 | 54% | -15.8% | -2.34 |
+| actual | 157 | 56% | -12.8% | -2.06 |
 | actual (al móvil) | 125 | 62% | -4.1% | -0.61 |
-| aprendida | 167 | 49% | -9.3% | -1.29 |
-| casa65 | 73 | 84% | +3.5% | +0.62 |
+| aprendida | 200 | 50% | -8.5% | -1.28 |
+| casa65 | 89 | 83% | +2.6% | +0.52 |
 
 ## Previos (antes de empezar), línea principal de juegos y ganador
 
-337 partidos. Juegos (más de la línea principal), Brier (menor es mejor): modelo 0.2790, modelo corregido con el historial 0.2620, casa 0.2517. Pasó el más en el 49%.
-Ganador (337): acierto modelo 65%, casa 73%.
+397 partidos. Juegos (más de la línea principal), Brier (menor es mejor): modelo 0.2794, modelo corregido con el historial 0.2591, casa 0.2513. Pasó el más en el 49%.
+Ganador (397): acierto modelo 67%, casa 73%.
 
 ## Aprendizaje (recalibración del modelo)
 
-Partidos resueltos: 222 (1697 líneas). Activa: **sí** (hace falta 30+ partidos y que mejore a la CASA en partidos que no vio).
-**Apostando con lo aprendido, día a día** (cada día aprende solo de los anteriores): 126 apuestas, aciertos 43%, beneficio medio -19.8%, -2.34 sigmas.
-Brier (menor es mejor): modelo 0.2726, modelo con el saque de hoy 0.2614, casa 0.2452, recalibrado (validado por partidos) 0.2368. Sesgo del modelo hacia el más: +18.4%.
+Partidos resueltos: 238 (1714 líneas). Activa: **sí** (hace falta 30+ partidos y que mejore a la CASA en partidos que no vio).
+**Apostando con lo aprendido, día a día** (cada día aprende solo de los anteriores): 136 apuestas, aciertos 45%, beneficio medio -16.3%, -2.00 sigmas.
+Brier (menor es mejor): modelo 0.2712, modelo con el saque de hoy 0.2622, casa 0.2455, recalibrado (validado por partidos) 0.2355. Sesgo del modelo hacia el más: +18.6%.
