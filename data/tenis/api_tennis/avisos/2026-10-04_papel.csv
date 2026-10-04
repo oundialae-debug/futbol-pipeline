@@ -57,3 +57,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-04 07:58,12167814,Wta Singles,Beijing,D. Snigur,T. Preston,menos,13.5,0.7315,0.7315,1.285,True,casa65
 2026-10-04 08:02,12167873,Challenger Women Singles,Suzhou,Y. Yang,R. Saigo,menos,18.5,0.7234,0.7234,1.3,True,casa65
 2026-10-04 08:08,12167947,Atp Singles,Beijing,A. De Minaur,A. Rublev,menos,25.5,0.6406,0.5576,1.666,True,actual
+2026-10-04 08:12,12167847,Itf Men Singles,M15 Baku 2 (Azerbaijan),M. Walters,D. Singh,menos,32.5,0.6176,0.5576,1.666,True,actual
