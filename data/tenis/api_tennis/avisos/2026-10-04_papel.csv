@@ -27,3 +27,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-04 05:58,12167941,Challenger Women Singles,Suzhou,W. Zheng,Y. Qu,menos,28.5,0.6862,0.5767,1.615,True,actual
 2026-10-04 05:58,12167949,Challenger Women Singles,Jingshan,J. Bouzas Maneiro,A. Shubladze,menos,21.5,0.5844,0.5,1.833,True,aprendida
 2026-10-04 05:59,12167841,Wta Singles,Beijing,P. Kudermetova,M. Andreeva,menos,20.5,0.6022,0.5366,1.727,True,aprendida
+2026-10-04 06:03,12167841,Wta Singles,Beijing,P. Kudermetova,M. Andreeva,menos,19.5,0.6718,0.625,1.5,True,actual
