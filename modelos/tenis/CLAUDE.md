@@ -549,6 +549,16 @@ mirar esos 112 avisos (14/16, +17%): NO vale como prueba hasta que gane en parti
 faltan y nivel, y se mide por días (`walk_forward`). Con 74 partidos con datos: Brier aprendido
 0,2365 vs casa 0,2377: casi igual que la casa, que es lo esperable sin ventaja real.
 
+## Cuatro días en papel: nada gana (05/10/2026)
+
+Juegos (01-05/10, partidos nuevos): regla `actual` 176 apuestas −13,6% (−2,3s); `aprendida` 222,
+−8,6%; `casa65` 101, 81% de aciertos, +0,9% (empate). Aprendido por días: 157, −14,8% (−2,0s).
+Ganador en directo (615 partidos) y sets (450): todas las reglas pierden (ver
+`data/tenis/otros_mercados_directo.md`); la casa predice mejor que el modelo en los dos. Previos
+(424): casa mejor en juegos y ganador. **Mismo veredicto que el fútbol: donde el modelo se separa
+de la cuota, se equivoca él.** Trampa encontrada: en "Set Betting", si falta un resultado (suspendido)
+la prob. sin margen de los demás se infla; usar solo pasadas con todos los posibles cotizados.
+
 ## Plan (en este orden)
 
 1. Ganador del partido, único mercado con cierre de Pinnacle.
