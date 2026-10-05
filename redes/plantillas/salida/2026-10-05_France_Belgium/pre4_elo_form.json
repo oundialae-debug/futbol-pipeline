@@ -1,0 +1,39 @@
+{
+ "competition": "Nations League",
+ "home": {
+  "name": "France",
+  "short": "France"
+ },
+ "away": {
+  "name": "Belgium",
+  "short": "Belgium"
+ },
+ "template": "elo_form",
+ "focus": "home",
+ "elo_home": [
+  1873,
+  1884,
+  1890,
+  1893,
+  1904,
+  1881,
+  1856,
+  1862,
+  1875,
+  1866
+ ],
+ "elo_away": [
+  1744,
+  1736,
+  1732,
+  1736,
+  1745,
+  1765,
+  1756,
+  1775,
+  1763,
+  1772
+ ],
+ "extra": "Belgium: +27 in the same span.",
+ "question": "Crisis or just a blip?"
+}

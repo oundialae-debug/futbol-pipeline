@@ -1,0 +1,20 @@
+{
+ "competition": "Nations League",
+ "home": {
+  "name": "Greece",
+  "short": "Greece"
+ },
+ "away": {
+  "name": "Germany",
+  "short": "Germany"
+ },
+ "score": [
+  0,
+  0
+ ],
+ "template": "deserved",
+ "xg": [
+  0.72,
+  1.05
+ ]
+}

@@ -1,0 +1,21 @@
+{
+ "competition": "Nations League",
+ "home": {
+  "name": "France",
+  "short": "France"
+ },
+ "away": {
+  "name": "Belgium",
+  "short": "Belgium"
+ },
+ "template": "prediction",
+ "probs": [
+  58,
+  21,
+  21
+ ],
+ "predicted_score": [
+  1,
+  1
+ ]
+}

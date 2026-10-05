@@ -1,0 +1,111 @@
+{
+ "template": "weekend_record",
+ "competition": "Nations League · 04/10",
+ "matches": [
+  [
+   "Azerbaijan",
+   1,
+   0,
+   "Lithuania",
+   {
+    "1X2": "home",
+    "Over/Under 2.5": "under25",
+    "Both teams score": "btts_no",
+    "Over/Under 1.5": "over15",
+    "Over/Under 3.5": "under35"
+   }
+  ],
+  [
+   "Malta",
+   1,
+   0,
+   "Andorra",
+   {
+    "1X2": "home",
+    "Over/Under 2.5": "under25",
+    "Both teams score": "btts_no",
+    "Over/Under 1.5": "over15",
+    "Over/Under 3.5": "under35"
+   }
+  ],
+  [
+   "Kosovo",
+   1,
+   1,
+   "Austria",
+   {
+    "1X2": "away",
+    "Over/Under 2.5": "under25",
+    "Both teams score": "btts_yes",
+    "Over/Under 1.5": "over15",
+    "Over/Under 3.5": "under35"
+   }
+  ],
+  [
+   "Wales",
+   0,
+   1,
+   "Denmark",
+   {
+    "1X2": "away",
+    "Over/Under 2.5": "over25",
+    "Both teams score": "btts_yes",
+    "Over/Under 1.5": "over15",
+    "Over/Under 3.5": "under35"
+   }
+  ],
+  [
+   "Greece",
+   0,
+   0,
+   "Germany",
+   {
+    "1X2": "away",
+    "Over/Under 2.5": "over25",
+    "Both teams score": "btts_yes",
+    "Over/Under 1.5": "over15",
+    "Over/Under 3.5": "under35"
+   }
+  ],
+  [
+   "Ireland",
+   1,
+   1,
+   "Israel",
+   {
+    "1X2": "home",
+    "Over/Under 2.5": "under25",
+    "Both teams score": "btts_no",
+    "Over/Under 1.5": "over15",
+    "Over/Under 3.5": "under35"
+   }
+  ],
+  [
+   "Netherlands",
+   2,
+   1,
+   "Serbia",
+   {
+    "1X2": "home",
+    "Over/Under 2.5": "over25",
+    "Both teams score": "btts_no",
+    "Over/Under 1.5": "over15",
+    "Over/Under 3.5": "under35"
+   }
+  ],
+  [
+   "Portugal",
+   2,
+   1,
+   "Norway",
+   {
+    "1X2": "home",
+    "Over/Under 2.5": "over25",
+    "Both teams score": "btts_yes",
+    "Over/Under 1.5": "over15",
+    "Over/Under 3.5": "under35"
+   }
+  ]
+ ],
+ "question": "Beat us next time?"
+}

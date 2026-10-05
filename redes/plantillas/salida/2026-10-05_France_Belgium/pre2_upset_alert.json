@@ -1,0 +1,15 @@
+{
+ "competition": "Nations League",
+ "home": {
+  "name": "France",
+  "short": "France"
+ },
+ "away": {
+  "name": "Belgium",
+  "short": "Belgium"
+ },
+ "template": "upset_alert",
+ "underdog": "away",
+ "model_pct": 21,
+ "bookies_pct": 18
+}

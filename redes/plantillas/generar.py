@@ -216,12 +216,14 @@ def deserved(d):
 
 
 MERCADOS = {"home": "{h} to win", "draw": "Draw", "away": "{a} to win", "over25": "Over 2.5 goals",
-            "under25": "Under 2.5 goals", "btts_yes": "Both teams score", "btts_no": "Not both teams score"}
+            "under25": "Under 2.5 goals", "btts_yes": "Both teams score", "btts_no": "Not both teams score",
+            "over15": "Over 1.5 goals", "under15": "Under 1.5 goals", "over35": "Over 3.5 goals", "under35": "Under 3.5 goals"}
 
 
 def acierto(m, gh, ga):
     return {"home": gh > ga, "draw": gh == ga, "away": ga > gh, "over25": gh + ga > 2, "under25": gh + ga < 3,
-            "btts_yes": gh > 0 and ga > 0, "btts_no": gh == 0 or ga == 0}[m]
+            "btts_yes": gh > 0 and ga > 0, "btts_no": gh == 0 or ga == 0, "over15": gh + ga > 1, "under15": gh + ga < 2,
+            "over35": gh + ga > 3, "under35": gh + ga < 4}[m]
 
 
 def nombre_mercado(m, h="Home", a="Away"):

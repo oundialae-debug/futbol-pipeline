@@ -1,0 +1,17 @@
+{
+ "competition": "Nations League",
+ "home": {
+  "name": "France",
+  "short": "France"
+ },
+ "away": {
+  "name": "Belgium",
+  "short": "Belgium"
+ },
+ "template": "goals",
+ "btts": 58,
+ "exp_goals": [
+  2.0,
+  1.1
+ ]
+}
