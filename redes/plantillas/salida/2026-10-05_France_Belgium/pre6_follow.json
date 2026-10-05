@@ -1,0 +1,16 @@
+{
+ "template": "follow",
+ "competition": "Nations League",
+ "home": {
+  "name": "Croatia",
+  "short": "Croatia"
+ },
+ "away": {
+  "name": "Spain",
+  "short": "Spain"
+ },
+ "kicker": "Not done yet",
+ "number": "17",
+ "text": "more games already called by our model. <b>All on our profile.</b>",
+ "next_label": "Including tomorrow’s big one"
+}

@@ -337,9 +337,26 @@ def weekend_record(d):
     return pagina(d, "Our matchday", cuerpo, d.get("question", "Beat us next week?"))
 
 
+def follow(d):
+    """Última del carrusel: gancho con un dato nuestro + lo siguiente que hay en el perfil + swipe y seguir."""
+    h, a = d["home"], d["away"]
+    flechas = "".join(f'<span style="opacity:{o}">&#8250;</span>' for o in (.35, .65, 1))
+    cta = (f'<div style="display:flex;align-items:center;gap:26px;background:#161A23;border:3px solid {AMARILLO};'
+           f'border-radius:28px;padding:24px 28px">'
+           f'<img src="data:image/png;base64,{b64("perfil.png")}" style="width:120px;height:120px;border-radius:50%">'
+           f'<div style="flex:1"><div class="disp" style="font-size:54px">@2yellowdata</div>'
+           f'<div class="mini" style="color:#F1F3F8">Swipe to our profile &amp; follow</div></div>'
+           f'<div class="disp" style="font-size:150px;line-height:.7;color:{AMARILLO};letter-spacing:-18px">{flechas}</div></div>')
+    cuerpo = (num(d["number"], AMARILLO) + f'<div class="frase">{d["text"]}</div>'
+              + f'<div><div class="mini" style="margin-bottom:16px">{e(d.get("next_label", "Next on our profile"))}</div>'
+              + vs(h, a) + '</div>' + cta)
+    return pagina(d, d.get("kicker", "One more swipe"), cuerpo, d.get("question", "Don’t miss the next one."))
+
+
 PLANTILLAS = {"prediction": prediction, "upset_alert": upset_alert, "goals": goals, "elo_form": elo_form,
               "key_number": key_number, "deserved": deserved, "prediction_vs_result": prediction_vs_result,
-              "upset_happened": upset_happened, "stat_of_match": stat_of_match, "weekend_record": weekend_record}
+              "upset_happened": upset_happened, "stat_of_match": stat_of_match, "weekend_record": weekend_record,
+              "follow": follow}
 
 
 def html_de(d):

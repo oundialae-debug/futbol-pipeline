@@ -83,6 +83,26 @@ def partido(equipo, fecha):
     return m.iloc[0], p
 
 
+def dia(fecha_partido):
+    t = pd.Timestamp(fecha_partido).tz_convert("Europe/Madrid")
+    hoy = pd.Timestamp.now(tz="Europe/Madrid").normalize()
+    return "tonight’s" if t.normalize() == hoy else "tomorrow’s" if t.normalize() == hoy + pd.Timedelta(days=1) \
+        else f"{t:%A}’s"
+
+
+def siguiente(desde, excluir=None):
+    """Partidos ya pronosticados desde 'desde' y el más llamativo (más puntos FIFA sumados)."""
+    r = pd.read_csv(f"{C}/registro_pronosticos.csv")
+    r = r[pd.to_datetime(r.fecha_partido, utc=True) >= pd.Timestamp(desde, tz="UTC")].drop_duplicates("match_id")
+    if excluir is not None:
+        r = r[r.match_id != excluir]
+    f = pd.read_csv(f"{C}/ranking_fifa.csv").sort_values("fecha").groupby("equipo").puntos.last()
+    import experimento_variables as X
+    pts = lambda n: f.get(X.ALIAS.get(n, n), f.get(n.replace(" & ", " and "), 1000))
+    top = max(r.itertuples(), key=lambda x: pts(x.local) + pts(x.visitante)) if len(r) else None
+    return len(r), top
+
+
 def post(equipo, fecha):
     m, p = partido(equipo, fecha)
     h, a = eq(m.local), eq(m.visitante)
@@ -131,6 +151,16 @@ def post(equipo, fecha):
     if len(filas) >= 3:
         out["post5_weekend_record"] = {"template": "weekend_record", "competition": f"{COMP} · {fecha[8:]}/{fecha[5:7]}",
                                        "matches": filas, "question": "Beat us next time?"}
+    # última: gancho para ir al perfil
+    n, top = siguiente(pd.Timestamp(fecha) + pd.Timedelta(days=1))
+    rec = out.get("post5_weekend_record")
+    if top is not None and rec:
+        filas = G.mejores_aciertos(rec["matches"])
+        ok = sum(1 for x in filas if x[6])
+        out["post6_follow"] = {"template": "follow", "competition": COMP, "home": eq(top.local), "away": eq(top.visitante),
+                               "kicker": "One more swipe", "number": f"{ok}/{len(filas)}",
+                               "text": f"of our boldest calls landed. <b>{n} more games</b> are already called.",
+                               "next_label": f"Including {dia(top.fecha_partido)} big one"}
     return m, out
 
 
@@ -176,6 +206,12 @@ def pre(equipo, fecha):
         lado = None if gl == gv else ("home" if (u.local if gl > gv else u.visitante) == m.local else "away")
         out["pre5_key_number"] = {**base, "template": "key_number", "team": lado, "number": f"{max(gl, gv)}–{min(gl, gv)}", "text": txt,
                                   "when": "Tonight · " + pd.Timestamp(x.fecha_partido).tz_convert("Europe/Madrid").strftime("%H:%M %Z"), "question": "Revenge or repeat?"}
+    n, top = siguiente(fecha, excluir=m.match_id)
+    if top is not None:
+        out["pre6_follow"] = {"template": "follow", "competition": COMP, "home": eq(top.local), "away": eq(top.visitante),
+                              "kicker": "Not done yet", "number": str(n),
+                              "text": "more games already called by our model. <b>All on our profile.</b>",
+                              "next_label": f"Including {dia(top.fecha_partido)} big one"}
     return m, out
 
 
