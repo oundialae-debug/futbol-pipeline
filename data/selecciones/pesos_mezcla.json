@@ -1,74 +1,74 @@
 {
  "1": {
   "peso": 0.0,
-  "n": 55,
+  "n": 62,
   "aprendido": true,
-  "sigmas_modelo_vs_mercado": -1.59
+  "sigmas_modelo_vs_mercado": -1.7
  },
  "X": {
   "peso": 0.0,
-  "n": 55,
+  "n": 62,
   "aprendido": true,
-  "sigmas_modelo_vs_mercado": -1.07
+  "sigmas_modelo_vs_mercado": -1.02
  },
  "2": {
   "peso": 0.0,
-  "n": 55,
+  "n": 62,
   "aprendido": true,
-  "sigmas_modelo_vs_mercado": -1.86
+  "sigmas_modelo_vs_mercado": -2.13
  },
  "mas_2.5": {
   "peso": 0.0,
-  "n": 55,
+  "n": 62,
   "aprendido": true,
-  "sigmas_modelo_vs_mercado": -1.14
+  "sigmas_modelo_vs_mercado": -0.95
  },
  "btts": {
   "peso": 0.0,
-  "n": 55,
-  "aprendido": true,
-  "sigmas_modelo_vs_mercado": -1.04
- },
- "mas_1.5": {
-  "peso": 0.05,
-  "n": 55,
-  "aprendido": true,
-  "sigmas_modelo_vs_mercado": -0.33
- },
- "mas_3.5": {
-  "peso": 0.0,
-  "n": 55,
-  "aprendido": true,
-  "sigmas_modelo_vs_mercado": -0.44
- },
- "corners_mas_8.5": {
-  "peso": 0.0,
-  "n": 55,
-  "aprendido": true,
-  "sigmas_modelo_vs_mercado": -1.1
- },
- "corners_mas_9.5": {
-  "peso": 0.0,
-  "n": 55,
-  "aprendido": true,
-  "sigmas_modelo_vs_mercado": -1.07
- },
- "tarjetas_mas_3.5": {
-  "peso": 0.2,
-  "n": 52,
+  "n": 62,
   "aprendido": true,
   "sigmas_modelo_vs_mercado": -0.71
  },
- "tarjetas_mas_4.5": {
-  "peso": 0.35000000000000003,
-  "n": 51,
+ "mas_1.5": {
+  "peso": 0.1,
+  "n": 62,
   "aprendido": true,
   "sigmas_modelo_vs_mercado": -0.3
  },
+ "mas_3.5": {
+  "peso": 0.0,
+  "n": 62,
+  "aprendido": true,
+  "sigmas_modelo_vs_mercado": -0.51
+ },
+ "corners_mas_8.5": {
+  "peso": 0.0,
+  "n": 62,
+  "aprendido": true,
+  "sigmas_modelo_vs_mercado": -1.26
+ },
+ "corners_mas_9.5": {
+  "peso": 0.0,
+  "n": 62,
+  "aprendido": true,
+  "sigmas_modelo_vs_mercado": -1.02
+ },
+ "tarjetas_mas_3.5": {
+  "peso": 0.1,
+  "n": 59,
+  "aprendido": true,
+  "sigmas_modelo_vs_mercado": -1.05
+ },
+ "tarjetas_mas_4.5": {
+  "peso": 0.45,
+  "n": 58,
+  "aprendido": true,
+  "sigmas_modelo_vs_mercado": -0.14
+ },
  "sin_empate_local": {
   "peso": 0.0,
-  "n": 32,
+  "n": 37,
   "aprendido": true,
-  "sigmas_modelo_vs_mercado": -2.43
+  "sigmas_modelo_vs_mercado": -2.8
  }
 }

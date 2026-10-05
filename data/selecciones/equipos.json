@@ -1,83 +1,27 @@
 {
  "equipos": {
-  "Ukraine": 657756,
-  "Hungary": 655203,
-  "France": 2486,
-  "Belgium": 1635,
-  "Northern Ireland": 656905,
-  "Georgia": 940288,
-  "Bosnia & Herzegovina": 947947,
-  "Poland": 21208,
-  "Romania": 659458,
-  "Sweden": 5039,
-  "Montenegro": 944543,
-  "Armenia": 931778,
-  "Italy": 654352,
-  "Turkey": 662011,
   "Kazakhstan": 932629,
   "Faroe Islands": 935182,
-  "Moldova": 948798,
-  "Slovakia": 658607,
-  "Belarus": 936884,
-  "Finland": 936033,
-  "Estonia": 937735,
-  "Iceland": 16102,
+  "England": 9294,
+  "Czech Republic": 656054,
   "Switzerland": 13549,
   "North Macedonia": 941139,
+  "Estonia": 937735,
+  "Iceland": 16102,
+  "Albania": 662862,
+  "San Marino": 949649,
+  "Belarus": 936884,
+  "Finland": 936033,
+  "Luxembourg": 938586,
+  "Bulgaria": 939437,
   "Scotland": 943692,
   "Slovenia": 929225,
   "Croatia": 3337,
   "Spain": 8443,
-  "Luxembourg": 938586,
-  "Bulgaria": 939437,
-  "England": 9294,
-  "Czech Republic": 656054,
-  "Albania": 662862,
-  "San Marino": 949649
+  "Moldova": 948798,
+  "Slovakia": 658607
  },
  "cruces": [
-  [
-   "Ukraine",
-   "Hungary",
-   1301133830,
-   "2026-10-05T18:45:00.000Z"
-  ],
-  [
-   "France",
-   "Belgium",
-   1301132128,
-   "2026-10-05T18:45:00.000Z"
-  ],
-  [
-   "Northern Ireland",
-   "Georgia",
-   1301134681,
-   "2026-10-05T18:45:00.000Z"
-  ],
-  [
-   "Bosnia & Herzegovina",
-   "Poland",
-   1301135532,
-   "2026-10-05T18:45:00.000Z"
-  ],
-  [
-   "Romania",
-   "Sweden",
-   1301136383,
-   "2026-10-05T18:45:00.000Z"
-  ],
-  [
-   "Montenegro",
-   "Armenia",
-   1301137234,
-   "2026-10-05T18:45:00.000Z"
-  ],
-  [
-   "Italy",
-   "Turkey",
-   1301132979,
-   "2026-10-05T18:45:00.000Z"
-  ],
   [
    "Kazakhstan",
    "Faroe Islands",
@@ -85,15 +29,15 @@
    "2026-10-06T14:00:00.000Z"
   ],
   [
-   "Moldova",
-   "Slovakia",
-   1301142340,
+   "England",
+   "Czech Republic",
+   1301139787,
    "2026-10-06T18:45:00.000Z"
   ],
   [
-   "Belarus",
-   "Finland",
-   1301141489,
+   "Switzerland",
+   "North Macedonia",
+   1315353189,
    "2026-10-06T18:45:00.000Z"
   ],
   [
@@ -103,9 +47,21 @@
    "2026-10-06T18:45:00.000Z"
   ],
   [
-   "Switzerland",
-   "North Macedonia",
-   1315353189,
+   "Albania",
+   "San Marino",
+   1301140638,
+   "2026-10-06T18:45:00.000Z"
+  ],
+  [
+   "Belarus",
+   "Finland",
+   1301141489,
+   "2026-10-06T18:45:00.000Z"
+  ],
+  [
+   "Luxembourg",
+   "Bulgaria",
+   1315316596,
    "2026-10-06T18:45:00.000Z"
   ],
   [
@@ -121,23 +77,11 @@
    "2026-10-06T18:45:00.000Z"
   ],
   [
-   "Luxembourg",
-   "Bulgaria",
-   1315316596,
-   "2026-10-06T18:45:00.000Z"
-  ],
-  [
-   "England",
-   "Czech Republic",
-   1301139787,
-   "2026-10-06T18:45:00.000Z"
-  ],
-  [
-   "Albania",
-   "San Marino",
-   1301140638,
+   "Moldova",
+   "Slovakia",
+   1301142340,
    "2026-10-06T18:45:00.000Z"
   ]
  ],
- "generado": "2026-10-05T17:59:10.184227+00:00"
+ "generado": "2026-10-05T21:32:02.751390+00:00"
 }

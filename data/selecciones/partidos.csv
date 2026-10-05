@@ -595,14 +595,14 @@ match_id,fecha,competicion,local_id,local,visitante_id,visitante,goles_l,goles_v
 1301128724,2026-10-04,UEFA Nations League,952202,Netherlands,12698,Serbia,2.0,1.0,True
 1301129575,2026-10-04,UEFA Nations League,23761,Portugal,928374,Norway,2.0,1.0,True
 1315315745,2026-10-05,UEFA Nations League,941990,Cyprus,930076,Latvia,2.0,1.0,True
-1301137234,2026-10-05,UEFA Nations League,944543,Montenegro,931778,Armenia,,,False
-1301132128,2026-10-05,UEFA Nations League,2486,France,1635,Belgium,,,False
-1301135532,2026-10-05,UEFA Nations League,947947,Bosnia & Herzegovina,21208,Poland,,,False
-1301134681,2026-10-05,UEFA Nations League,656905,Northern Ireland,940288,Georgia,,,False
+1301137234,2026-10-05,UEFA Nations League,944543,Montenegro,931778,Armenia,0.0,0.0,True
+1301132128,2026-10-05,UEFA Nations League,2486,France,1635,Belgium,4.0,1.0,True
+1301135532,2026-10-05,UEFA Nations League,947947,Bosnia & Herzegovina,21208,Poland,1.0,0.0,True
+1301134681,2026-10-05,UEFA Nations League,656905,Northern Ireland,940288,Georgia,0.0,0.0,True
 1370859664,2026-10-05,Friendlies,942841,Liechtenstein,930927,Gibraltar,,,False
-1301133830,2026-10-05,UEFA Nations League,657756,Ukraine,655203,Hungary,,,False
-1301132979,2026-10-05,UEFA Nations League,654352,Italy,662011,Turkey,,,False
-1301136383,2026-10-05,UEFA Nations League,659458,Romania,5039,Sweden,,,False
+1301133830,2026-10-05,UEFA Nations League,657756,Ukraine,655203,Hungary,1.0,2.0,True
+1301132979,2026-10-05,UEFA Nations League,654352,Italy,662011,Turkey,3.0,1.0,True
+1301136383,2026-10-05,UEFA Nations League,659458,Romania,5039,Sweden,0.0,1.0,True
 1301138085,2026-10-06,UEFA Nations League,932629,Kazakhstan,935182,Faroe Islands,,,False
 1301140638,2026-10-06,UEFA Nations League,662862,Albania,949649,San Marino,,,False
 1301141489,2026-10-06,UEFA Nations League,936884,Belarus,936033,Finland,,,False
