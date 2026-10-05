@@ -11,6 +11,11 @@ cambios de código y archivos".
   el resumen y dónde leerlo.
 - Lo más nuevo, arriba.
 
+## 05/10/2026 — redes: backup sin Claude
+- Qué: `scripts/backup_redes.py`, `.github/workflows/redes_backup.yml` (apagado salvo variable `BACKUP_REDES=on`), plantillas de `redes/plantillas/` llevadas a main, guía en `redes/backup/LEEME.md`.
+- Por qué: el usuario pidió poder seguir publicando sin la suscripción de Claude.
+
+
 Dónde está cada cosa:
 - Modelos de clubes (1X2, goles, córners, tarjetas) y reglas generales: `CLAUDE.md` (corto) y `docs/notas_proyecto.md` (lecciones y resultados).
 - Ambos marcan: `modelos/ambos_marcan/CLAUDE.md`.

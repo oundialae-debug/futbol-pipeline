@@ -1,0 +1,47 @@
+name: redes_backup
+# BACKUP sin Claude de la publicación diaria de 2yellow. APAGADO por defecto:
+# solo corre si la variable del repo BACKUP_REDES vale "on" (Settings > Secrets and variables > Actions > Variables).
+# Necesita el secreto BUFFER_API_KEY. Guía: redes/backup/LEEME.md
+on:
+  schedule:
+    - cron: '45 5 * * *'        # mañana: previos + vídeo del día
+    - cron: '*/20 14-23 * * *'  # post-partido (reintenta hasta que los datos estén actualizados)
+    - cron: '*/20 0-1 * * *'
+  workflow_dispatch:
+    inputs:
+      fase: {description: "manana | post | publicar", default: manana}
+permissions: {contents: write}
+concurrency: redes_backup
+jobs:
+  backup:
+    if: vars.BACKUP_REDES == 'on'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with: {repository: oundialae-debug/Live, path: live}
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - run: |
+          pip install pandas numpy scipy scikit-learn pillow playwright
+          playwright install --with-deps chromium
+          sudo apt-get install -y ffmpeg
+      - name: preparar
+        run: |
+          FASE="${{ github.event.inputs.fase }}"
+          [ -z "$FASE" ] && { [ "${{ github.event.schedule }}" = "45 5 * * *" ] && FASE=manana || FASE=post; }
+          echo "fase=$FASE"
+          [ "$FASE" != publicar ] && python3 scripts/backup_redes.py preparar "$FASE" || true
+      - name: subir medios
+        run: |
+          git config user.name "redes-backup"; git config user.email "redes-backup@users.noreply.github.com"
+          git add redes/media redes/backup && git commit -qm "redes_backup: medios" || true
+          git pull -q --rebase --autostash && git push -q
+      - name: publicar en Buffer
+        env: {BUFFER_API_KEY: "${{ secrets.BUFFER_API_KEY }}"}
+        run: python3 scripts/backup_redes.py publicar
+      - name: guardar estado
+        if: always()
+        run: |
+          git add redes/backup && git commit -qm "redes_backup: estado y log" || true
+          git pull -q --rebase --autostash && git push -q
