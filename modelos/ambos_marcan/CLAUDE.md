@@ -589,7 +589,7 @@ C (añadir 2023/24 a medias) no mejora a B en conjunto (-0.00s). Juzgar
 
 ## Cuota como variable, con football-data (25/09/2026)
 
-Detalle en el CLAUDE.md del repo padre ("Cuotas históricas de
+Detalle en docs/notas_proyecto.md del repo padre ("Cuotas históricas de
 football-data.co.uk"). Para ambos_marcan: football-data NO trae ambos marcan;
 se usa un ambos marcan implícito (Poisson sobre 1X2 + más/menos 2.5, 0.73
 de correlación con el real) más el 1X2 y el más/menos 2.5 como variables.

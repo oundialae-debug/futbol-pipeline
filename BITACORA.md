@@ -12,12 +12,24 @@ cambios de código y archivos".
 - Lo más nuevo, arriba.
 
 Dónde está cada cosa:
-- Modelos de clubes (1X2, goles, córners, tarjetas) y reglas generales: `CLAUDE.md`.
+- Modelos de clubes (1X2, goles, córners, tarjetas) y reglas generales: `CLAUDE.md` (corto) y `docs/notas_proyecto.md` (lecciones y resultados).
 - Ambos marcan: `modelos/ambos_marcan/CLAUDE.md`.
 - Selecciones: `modelos/selecciones/CLAUDE.md` (otro chat).
 - NBA: `docs/otros_deportes/nba.md`.
 
 ---
+
+## 05/10/2026
+
+### Cambios de código y ficheros
+
+| qué | por qué | ficheros |
+|---|---|---|
+| Skill `free-llm-apis` copiada de mnfst/awesome-free-llm-apis (revisada: solo documentación, sin scripts). Sin claves ni proveedores configurados. | Petición del usuario: tener a mano proveedores LLM gratuitos para ahorrar tokens. | `.claude/skills/free-llm-apis/` |
+| Grafo de conocimiento con graphify (paquete `graphifyy` 0.9.76): pipeline completo, solo código, sin `data/`. 1.064 nodos, 2.869 aristas, 56 comunidades con nombre. Cero tokens (análisis estático). | Responder preguntas que cruzan varios archivos sin leerlos todos. | `graphify-out/`, `.graphifyignore` |
+| Workflow que actualiza el grafo en cada push a `main` con cambios en `.py` o workflows (`graphify update .`). | Que el grafo no se quede viejo. Ojo: `update` renombra las comunidades por su nodo principal (pierde los nombres puestos a mano) e indexa también la estructura de los `.md`. | `.github/workflows/actualizar-grafo.yml` |
+| Hook de arranque de sesión que instala graphify si falta. NO se instalaron `graphify claude install` ni `graphify hook install`. | Que cualquier chat nuevo pueda consultar el grafo. | `.claude/settings.json`, `.gitignore` |
+| `CLAUDE.md` reducido a ~30 líneas (reglas clave, mapa, grafo, APIs gratuitas, notas compartidas). El texto anterior, entero y sin cambios, pasa a `docs/notas_proyecto.md`; referencias actualizadas. | Se carga en cada chat: menos tokens por conversación. | `CLAUDE.md`, `docs/notas_proyecto.md` |
 
 ## 29/09/2026
 
@@ -121,5 +133,5 @@ Ideas probadas antes del 29/09:
 - Modelos de clubes: variables (box-score, árbitro, clima, rotación, H2H,
   H2H profundo, tabla, calidad de plantilla, forma reciente, momentum,
   btts_tasa), hiperparámetros, peso por recencia, poda, Correct Score, casas
-  frente al cierre, cuota como variable. Todo en `CLAUDE.md`, con sus tablas.
+  frente al cierre, cuota como variable. Todo en `docs/notas_proyecto.md`, con sus tablas.
 - Ambos marcan: todo en `modelos/ambos_marcan/CLAUDE.md`.

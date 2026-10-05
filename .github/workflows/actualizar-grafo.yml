@@ -1,0 +1,31 @@
+name: Actualizar grafo
+on:
+  push:
+    branches: [main]
+    paths:
+      - "**.py"
+      - ".github/workflows/**"
+  workflow_dispatch: {}
+permissions:
+  contents: write
+concurrency:
+  group: actualizar-grafo
+  cancel-in-progress: true
+jobs:
+  grafo:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install -q graphifyy
+      - run: graphify update .
+      - name: Guardar el grafo en el repositorio
+        run: |
+          git config user.email "actions@github.com"
+          git config user.name "GitHub Actions"
+          git add graphify-out
+          git commit -m "Actualizar grafo" || { echo "Sin cambios"; exit 0; }
+          git pull --rebase origin main
+          git push
