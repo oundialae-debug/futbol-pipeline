@@ -80,3 +80,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-05 09:11,12168205,Challenger Women Singles,Samsun,N. Noha Akugue,E. Micic,menos,21.5,0.6378,0.5767,1.615,True,actual
 2026-10-05 09:14,12168148,Atp Singles,Beijing,A. De Minaur,H. Hurkacz,menos,23.5,0.5848,0.5147,1.8,True,aprendida
 2026-10-05 09:17,12167946,Wta Singles,Beijing,J. Ostapenko,E. Mertens,menos,20.5,0.5682,0.5147,1.8,True,aprendida
+2026-10-05 09:33,12168161,Atp Singles,Shanghai,J. Cui,A. Vukic,menos,20.5,0.5428,0.4853,1.909,True,aprendida
