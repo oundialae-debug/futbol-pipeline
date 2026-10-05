@@ -180,9 +180,9 @@ def upset_alert(d):
                                 f'<div style="width:{v * 2}%;height:100%;background:{col};border-radius:10px"></div></div>'
                                 f'<div class="disp" style="font-size:60px;width:120px;text-align:right">{v}%</div></div>')
     cuerpo = (vs(h, a) + num(f"{m}%", t["c"])
-              + f'<div class="frase">chance of a <b>{e(t["short"])}</b> win. The bookies only see {c}%.</div>'
+              + f'<div class="frase">chance of a <b>{e(t["short"])}</b> win. The consensus only sees {c}%.</div>'
               + '<div style="display:flex;flex-direction:column;gap:18px">'
-              + fila("Our model", m, ROJO) + fila("Bookies", c, GRIS) + '</div>')
+              + fila("Our model", m, ROJO) + fila("Consensus", c, GRIS) + '</div>')
     return pagina(d, "Upset alert", cuerpo, "Shock incoming?")
 
 

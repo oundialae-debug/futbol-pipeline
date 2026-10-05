@@ -11,6 +11,10 @@ cambios de código y archivos".
   el resumen y dónde leerlo.
 - Lo más nuevo, arriba.
 
+## 05/10/2026 — redes: fuera "bookies" de las imágenes
+- Qué: `generar.py` (upset alert) dice "Consensus" en vez de "Bookies".
+- Por qué: TikTok parece no mostrar posts con vocabulario de apuestas (las 2 últimas se quedaron en 0 vistas).
+
 ## 05/10/2026 — redes: backup sin Claude
 - Qué: `scripts/backup_redes.py`, `.github/workflows/redes_backup.yml` (apagado salvo variable `BACKUP_REDES=on`), plantillas de `redes/plantillas/` llevadas a main, guía en `redes/backup/LEEME.md`.
 - Por qué: el usuario pidió poder seguir publicando sin la suscripción de Claude.
