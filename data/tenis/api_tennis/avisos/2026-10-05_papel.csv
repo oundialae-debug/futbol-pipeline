@@ -85,3 +85,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-05 09:37,12168166,Atp Singles,Shanghai,A. Shevchenko,Y. Nishioka,menos,18.5,0.7315,0.7315,1.285,True,casa65
 2026-10-05 09:39,12167946,Wta Singles,Beijing,J. Ostapenko,E. Mertens,menos,17.5,0.6213,0.5576,1.666,True,actual
 2026-10-05 09:40,12168205,Challenger Women Singles,Samsun,N. Noha Akugue,E. Micic,menos,21.5,0.75,0.75,1.25,True,casa65
+2026-10-05 09:44,12168132,Challenger Women Singles,Suzhou,X. Yao,A. Sasnovich,menos,21.5,0.6049,0.5576,1.666,True,actual
