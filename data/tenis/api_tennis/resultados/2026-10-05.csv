@@ -1,21 +1,21 @@
 event_key,tipo,torneo,jugador1,jugador2,estado,sets,juegos_totales
-12167828,Wta Doubles,Beijing,Khromacheva/ Samsonova,Maleckova/ Skoch,,-,0
+12167828,Wta Doubles,Beijing,Khromacheva/ Samsonova,Maleckova/ Skoch,Set 2,1 - 0,13
 12167829,Wta Doubles,Beijing,Alexandrova/ Stollar,Bucsa/ Melichar-Martinez,Finished,1 - 2,45
 12167830,Wta Doubles,Beijing,Routliffe/ Sutjiadi,Neel/ Olmos,Finished,2 - 0,23
 12167831,Wta Doubles,Beijing,Noskova/ Tauson,Eikeri/ Gleason,Finished,0 - 2,21
-12167946,Wta Singles,Beijing,J. Ostapenko,E. Mertens,,-,0
+12167946,Wta Singles,Beijing,J. Ostapenko,E. Mertens,Set 1,0 - 0,3
 12167948,Wta Singles,Beijing,D. Vekic,I. Swiatek,Finished,1 - 2,31
-12167952,Wta Singles,Beijing,M. Sakkari,E. Svitolina,,-,0
-12167955,Wta Singles,Beijing,B. Bencic,A. Li,Set 1,0 - 0,6
+12167952,Wta Singles,Beijing,M. Sakkari,E. Svitolina,Set 1,0 - 0,0
+12167955,Wta Singles,Beijing,B. Bencic,A. Li,Finished,0 - 2,19
 12167956,Atp Doubles,Tokyo,Bolelli/ Vavassori,Krajicek/ Mektic,Finished,0 - 2,25
 12167959,Wta Singles,Beijing,C. Gauff,X. Sun,,-,0
 12167960,Wta Singles,Beijing,I. Jovic,K. Rakhimova,Finished,2 - 0,19
-12167976,Challenger Men Singles,Wuning 3 (China) - Qualification,L. Castelnuovo,A. Santillan,Set 2,0 - 1,15
+12167976,Challenger Men Singles,Wuning 3 (China) - Qualification,L. Castelnuovo,A. Santillan,Set 3,1 - 1,28
 12167977,Challenger Men Singles,Wuning 3 (China) - Qualification,S. Fomin,T. Derepasko,Finished,0 - 2,21
 12167980,Challenger Men Singles,Wuning 3 (China) - Qualification,S. Pankin,M. Sharipov,Finished,0 - 2,22
 12167985,Challenger Men Singles,Wuning 3 (China) - Qualification,B. Zhukayev,Y. Demin,Finished,0 - 2,20
-12167986,Wta Singles,Beijing,M. Bouzkova,Q. Zheng,Set 2,0 - 1,22
-12167997,Wta Singles,Beijing,A. Charaeva,S. Kartal,Set 2,1 - 0,11
+12167986,Wta Singles,Beijing,M. Bouzkova,Q. Zheng,Set 3,1 - 1,34
+12167997,Wta Singles,Beijing,A. Charaeva,S. Kartal,Finished,2 - 0,17
 12168048,Challenger Men Singles,Villena,M. Carrascosa Diaz,B. Gojo,,-,0
 12168050,Challenger Men Singles,Villena,M. Echargui,R. Brancaccio,,-,0
 12168053,Challenger Men Singles,Villena,P. Llamas Ruiz,L. Nardi,,-,0
@@ -32,18 +32,18 @@ event_key,tipo,torneo,jugador1,jugador2,estado,sets,juegos_totales
 12168099,Challenger Men Singles,Antofagasta,G. A. Olivieri,V. Aboian,,-,0
 12168103,Challenger Men Singles,Antofagasta,G. Villanueva,N. Hardt,,-,0
 12168107,Challenger Men Singles,Wuning 3 (China) - Qualification,A. Kachmazov,G. Lomakin,Finished,2 - 0,14
-12168110,Atp Singles,Tokyo,C. Alcaraz,J. Munar,Set 1,0 - 0,7
+12168110,Atp Singles,Tokyo,C. Alcaraz,J. Munar,Set 2,0 - 1,17
 12168111,Challenger Men Singles,Wuning 3 (China) - Qualification,K. Saitoh,Y. Takahashi,Finished,2 - 1,27
 12168112,Challenger Men Singles,Wuning 3 (China) - Qualification,K. Tamm,M. Borisiouk,Finished,0 - 2,20
 12168121,Challenger Women Singles,Suzhou,W. Zheng,J. Lu,Finished,2 - 1,31
 12168122,Challenger Women Singles,Suzhou,S. Costoulas,D. Astakhova,Retired,0 - 1,9
 12168124,Challenger Women Singles,Suzhou,A. Ibragimova,R. Sramkova,Finished,0 - 2,17
 12168125,Challenger Women Singles,Suzhou,E. Jacquemot,C. Liu,Finished,0 - 2,14
-12168127,Challenger Women Singles,Suzhou,E. Kalieva,Y. Ma,Set 2,1 - 0,12
-12168132,Challenger Women Singles,Suzhou,X. Yao,A. Sasnovich,,-,0
+12168127,Challenger Women Singles,Suzhou,E. Kalieva,Y. Ma,Finished,2 - 0,19
+12168132,Challenger Women Singles,Suzhou,X. Yao,A. Sasnovich,Set 1,0 - 0,4
 12168133,Challenger Women Singles,Suzhou,R. Zhang,T. Prozorova,Finished,1 - 2,27
-12168136,Challenger Women Doubles,Suzhou,Huang Yujia/Plipuech,Kobori/ Shimizu,Set 2,1 - 0,13
-12168138,Challenger Women Doubles,Suzhou,Korpatsch/ Tagger,Cho I-/Cho,Set 3,1 - 1,15
+12168136,Challenger Women Doubles,Suzhou,Huang Yujia/Plipuech,Kobori/ Shimizu,Finished,1 - 2,33
+12168138,Challenger Women Doubles,Suzhou,Korpatsch/ Tagger,Cho I-/Cho,Finished,2 - 1,30
 12168142,Challenger Women Singles,Suzhou,K. Zavatska,D. Khomutsianskaya,Finished,0 - 2,17
 12168148,Atp Singles,Beijing,A. De Minaur,H. Hurkacz,,-,0
 12168149,Atp Singles,Shanghai,T. Daniel,S. Mochizuki,Finished,1 - 2,24
@@ -52,25 +52,25 @@ event_key,tipo,torneo,jugador1,jugador2,estado,sets,juegos_totales
 12168152,Atp Singles,Shanghai,R. Safiullin,A. Galarneau,Finished,2 - 0,15
 12168153,Atp Singles,Shanghai,L. Sonego,A. Dougaz,Finished,1 - 2,35
 12168154,Atp Singles,Shanghai,L. Xiao,F. Cina,Finished,1 - 2,25
-12168155,Atp Singles,Shanghai,T. Atmane,B. Tomic,Set 3,1 - 1,25
+12168155,Atp Singles,Shanghai,T. Atmane,B. Tomic,Retired,1 - 1,27
 12168156,Atp Singles,Shanghai,L. Pavlovic,I. Simakin,Finished,1 - 2,27
-12168157,Atp Singles,Shanghai,T. Skatov,S. Sakellaridis,Set 2,1 - 0,13
+12168157,Atp Singles,Shanghai,T. Skatov,S. Sakellaridis,Finished,2 - 0,17
 12168158,Atp Singles,Shanghai,C. H. Tseng,N. Mejia,Retired,0 - 1,10
-12168159,Atp Singles,Shanghai,A. Walton,R. Te,Set 2,1 - 0,13
-12168160,Atp Singles,Shanghai,M. Zheng,F. A. Gomez,Set 2,0 - 1,20
+12168159,Atp Singles,Shanghai,A. Walton,R. Te,Set 3,1 - 1,28
+12168160,Atp Singles,Shanghai,M. Zheng,F. A. Gomez,Finished,2 - 1,31
 12168161,Atp Singles,Shanghai,J. Cui,A. Vukic,,-,0
-12168162,Atp Singles,Shanghai,M. Damm,P. Kotov,,-,0
-12168163,Atp Singles,Shanghai,B. Harris,D. Svrcina,Set 1,0 - 0,0
-12168164,Atp Singles,Shanghai,S. C. Hong,R. Sakamoto,Set 1,0 - 0,8
-12168165,Atp Singles,Shanghai,K. Jacquet,T. Zhang,,-,0
-12168166,Atp Singles,Shanghai,A. Shevchenko,Y. Nishioka,,-,0
+12168162,Atp Singles,Shanghai,M. Damm,P. Kotov,Set 1,0 - 0,9
+12168163,Atp Singles,Shanghai,B. Harris,D. Svrcina,Set 2,1 - 0,12
+12168164,Atp Singles,Shanghai,S. C. Hong,R. Sakamoto,Finished,0 - 2,21
+12168165,Atp Singles,Shanghai,K. Jacquet,T. Zhang,Set 1,0 - 0,0
+12168166,Atp Singles,Shanghai,A. Shevchenko,Y. Nishioka,Set 1,0 - 0,5
 12168167,Atp Singles,Shanghai,M. Bellucci,E. Ymer,,-,0
 12168168,Atp Singles,Shanghai,A. Bolt,L. Harris,,-,0
 12168169,Atp Singles,Shanghai,K. Coppejans,N. Basavareddy,,-,0
 12168170,Atp Singles,Shanghai,R. Noguchi,A. Muller,,-,0
 12168171,Atp Singles,Shanghai,D. Sweeny,T. Schoolkate,,-,0
 12168172,Atp Singles,Shanghai,C. Wong,C. Hewitt,,-,0
-12168173,Challenger Men Singles,Palermo (Italy) - Qualification,G. Campana Lee,P. Vives Marcos,,-,0
+12168173,Challenger Men Singles,Palermo (Italy) - Qualification,G. Campana Lee,P. Vives Marcos,Walk Over,-,0
 12168174,Challenger Men Singles,Wuning 3 (China) - Qualification,M. Purcell,B. Bayldon,Walk Over,-,0
 12168175,Challenger Men Singles,Wuning 3 (China) - Qualification,R. Seggerman,M. Zhukov,Finished,2 - 1,28
 12168176,Challenger Women Singles,Suzhou,H. Shi,Y. Yang,Finished,2 - 0,23
@@ -85,19 +85,19 @@ event_key,tipo,torneo,jugador1,jugador2,estado,sets,juegos_totales
 12168196,Challenger Women Singles,Samsun,D. Galfi,J. Grabher,,-,0
 12168197,Challenger Women Singles,Samsun,P. Iatcenko,S. Lamens,,-,0
 12168202,Challenger Women Singles,Samsun,D. Salkova,H. Sakatsume,,-,0
-12168205,Challenger Women Singles,Samsun,N. Noha Akugue,E. Micic,,-,0
+12168205,Challenger Women Singles,Samsun,N. Noha Akugue,E. Micic,Set 2,1 - 0,12
 12168206,Challenger Women Singles,Suzhou,S. Wei,K. Okamura,Finished,0 - 2,17
 12168216,Challenger Men Singles,Villena,H. Grenier,G. Kravchenko,,-,0
 12168217,Challenger Men Singles,Villena,D. Stricker,M. Topo,,-,0
 12168226,Atp Singles,Beijing,N. Djokovic,D. Medvedev,,-,0
 12168227,Challenger Men Singles,Palermo (Italy) - Qualification,F. Moroni,I. Parisca,,-,0
-12168228,Challenger Women Singles,Samsun,M. Tkacheva,M. Bolkvadze,,-,0
+12168228,Challenger Women Singles,Samsun,M. Tkacheva,M. Bolkvadze,Set 1,0 - 0,9
 12168229,Atp Doubles,Beijing,Cash/ Erler,Cash/ Glasspool,,-,0
 12168230,Challenger Men Singles,Antofagasta,J. Aguilar Cardozo,L. J. Rodriguez,,-,0
 12168231,Challenger Men Singles,Braga,N. Barrientos,J. Barranco Cosano,,-,0
 12168232,Challenger Men Singles,Braga,R. Nijboer,B. Hassan,,-,0
 12168233,Challenger Men Singles,Palermo (Italy) - Qualification,F. Arnaboldi,K. Ivanovski,,-,0
-12168234,Challenger Women Singles,Samsun,C. Werner,W. Falkowska,,-,0
+12168234,Challenger Women Singles,Samsun,C. Werner,W. Falkowska,Set 1,0 - 0,6
 12168235,Challenger Women Singles,Samsun,A. Smith,D. Jakupovic,,-,0
 12168236,Challenger Women Doubles,Samsun,Monnet/ Radivojevic,Egribel/ Oral,,-,0
 12168237,Itf Women Singles,W35 Seville,Y. Kabbaj,N. Torner Sensano,,-,0
