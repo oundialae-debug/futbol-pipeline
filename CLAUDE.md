@@ -1146,6 +1146,13 @@ trabaja y guarda en la rama de tenis `ccr-3c3cfe57-etcioo`. Autorizado por el us
 (tabla de ahora) y `data/tenis/api_tennis/registro/<fecha>.csv`. Detalle en
 `modelos/tenis/CLAUDE.md`. Para pararlo: comentar el `schedule` en main.
 
+## Tenis: vigilante en pausa (05/10/2026)
+
+`vigilante_tenis.yml` (main) tiene el `schedule` comentado: ninguna regla de juegos, ganador ni
+sets gana en papel (ver `modelos/tenis/CLAUDE.md`). Siguen activos `tenis_directo.yml` (registro
+cada 5 min + previos y resultados cada hora, ~650 peticiones/día a API-Tennis). Para reactivar el
+vigilante: descomentar su `schedule`.
+
 ## NBA: descarga diaria gratis (28/09/2026)
 
 `nba_boxscore.yml` corre cada día a las 06:17 UTC desde `main`. Usa la misma clave,
