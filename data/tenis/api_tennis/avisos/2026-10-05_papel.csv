@@ -28,3 +28,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-05 05:33,12168206,Challenger Women Singles,Suzhou,S. Wei,K. Okamura,menos,17.5,0.854,0.854,1.111,True,casa65
 2026-10-05 05:43,12168149,Atp Singles,Shanghai,T. Daniel,S. Mochizuki,menos,24.5,0.7124,0.5889,1.571,True,actual
 2026-10-05 05:45,12168150,Atp Singles,Shanghai,H. Gaston,L. Draxl,menos,22.5,0.7632,0.6451,1.444,True,actual
+2026-10-05 05:52,12168150,Atp Singles,Shanghai,H. Gaston,L. Draxl,menos,22.5,0.6876,0.6876,1.363,True,casa65
