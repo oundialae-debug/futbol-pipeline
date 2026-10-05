@@ -74,3 +74,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-05 08:46,12168166,Atp Singles,Shanghai,A. Shevchenko,Y. Nishioka,menos,23.5,0.6193,0.5147,1.8,True,aprendida
 2026-10-05 08:54,12167986,Wta Singles,Beijing,M. Bouzkova,Q. Zheng,más,33.5,0.6043,0.4634,2.0,True,aprendida
 2026-10-05 08:55,12167976,Challenger Men Singles,Wuning 3 (China) - Qualification,L. Castelnuovo,A. Santillan,más,27.5,0.7359,0.4424,2.1,True,aprendida
+2026-10-05 08:55,12168159,Atp Singles,Shanghai,A. Walton,R. Te,menos,31.5,0.6627,0.6627,1.4,True,casa65
