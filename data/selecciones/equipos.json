@@ -2,34 +2,34 @@
  "equipos": {
   "Cyprus": 941990,
   "Latvia": 930076,
-  "France": 2486,
-  "Belgium": 1635,
-  "Ukraine": 657756,
-  "Hungary": 655203,
-  "Romania": 659458,
-  "Sweden": 5039,
-  "Montenegro": 944543,
-  "Armenia": 931778,
-  "Italy": 654352,
-  "Turkey": 662011,
   "Northern Ireland": 656905,
   "Georgia": 940288,
+  "Montenegro": 944543,
+  "Armenia": 931778,
+  "France": 2486,
+  "Belgium": 1635,
+  "Romania": 659458,
+  "Sweden": 5039,
   "Bosnia & Herzegovina": 947947,
   "Poland": 21208,
+  "Ukraine": 657756,
+  "Hungary": 655203,
+  "Italy": 654352,
+  "Turkey": 662011,
   "Kazakhstan": 932629,
   "Faroe Islands": 935182,
-  "Scotland": 943692,
-  "Slovenia": 929225,
-  "Switzerland": 13549,
-  "North Macedonia": 941139,
-  "Luxembourg": 938586,
-  "Bulgaria": 939437,
   "Albania": 662862,
   "San Marino": 949649,
-  "Croatia": 3337,
-  "Spain": 8443,
+  "Switzerland": 13549,
+  "North Macedonia": 941139,
   "Belarus": 936884,
   "Finland": 936033,
+  "Scotland": 943692,
+  "Slovenia": 929225,
+  "Croatia": 3337,
+  "Spain": 8443,
+  "Luxembourg": 938586,
+  "Bulgaria": 939437,
   "Moldova": 948798,
   "Slovakia": 658607,
   "Estonia": 937735,
@@ -45,21 +45,9 @@
    "2026-10-05T16:00:00.000Z"
   ],
   [
-   "France",
-   "Belgium",
-   1301132128,
-   "2026-10-05T18:45:00.000Z"
-  ],
-  [
-   "Ukraine",
-   "Hungary",
-   1301133830,
-   "2026-10-05T18:45:00.000Z"
-  ],
-  [
-   "Romania",
-   "Sweden",
-   1301136383,
+   "Northern Ireland",
+   "Georgia",
+   1301134681,
    "2026-10-05T18:45:00.000Z"
   ],
   [
@@ -69,15 +57,15 @@
    "2026-10-05T18:45:00.000Z"
   ],
   [
-   "Italy",
-   "Turkey",
-   1301132979,
+   "France",
+   "Belgium",
+   1301132128,
    "2026-10-05T18:45:00.000Z"
   ],
   [
-   "Northern Ireland",
-   "Georgia",
-   1301134681,
+   "Romania",
+   "Sweden",
+   1301136383,
    "2026-10-05T18:45:00.000Z"
   ],
   [
@@ -87,15 +75,27 @@
    "2026-10-05T18:45:00.000Z"
   ],
   [
+   "Ukraine",
+   "Hungary",
+   1301133830,
+   "2026-10-05T18:45:00.000Z"
+  ],
+  [
+   "Italy",
+   "Turkey",
+   1301132979,
+   "2026-10-05T18:45:00.000Z"
+  ],
+  [
    "Kazakhstan",
    "Faroe Islands",
    1301138085,
    "2026-10-06T14:00:00.000Z"
   ],
   [
-   "Scotland",
-   "Slovenia",
-   1315354891,
+   "Albania",
+   "San Marino",
+   1301140638,
    "2026-10-06T18:45:00.000Z"
   ],
   [
@@ -105,15 +105,15 @@
    "2026-10-06T18:45:00.000Z"
   ],
   [
-   "Luxembourg",
-   "Bulgaria",
-   1315316596,
+   "Belarus",
+   "Finland",
+   1301141489,
    "2026-10-06T18:45:00.000Z"
   ],
   [
-   "Albania",
-   "San Marino",
-   1301140638,
+   "Scotland",
+   "Slovenia",
+   1315354891,
    "2026-10-06T18:45:00.000Z"
   ],
   [
@@ -123,9 +123,9 @@
    "2026-10-06T18:45:00.000Z"
   ],
   [
-   "Belarus",
-   "Finland",
-   1301141489,
+   "Luxembourg",
+   "Bulgaria",
+   1315316596,
    "2026-10-06T18:45:00.000Z"
   ],
   [
@@ -147,5 +147,5 @@
    "2026-10-06T18:45:00.000Z"
   ]
  ],
- "generado": "2026-10-05T13:54:31.185621+00:00"
+ "generado": "2026-10-05T15:27:02.048552+00:00"
 }
