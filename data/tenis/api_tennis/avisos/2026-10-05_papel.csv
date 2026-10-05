@@ -31,3 +31,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-05 05:52,12168150,Atp Singles,Shanghai,H. Gaston,L. Draxl,menos,22.5,0.6876,0.6876,1.363,True,casa65
 2026-10-05 05:59,12167960,Wta Singles,Beijing,I. Jovic,K. Rakhimova,menos,17.5,0.6054,0.5767,1.615,True,actual
 2026-10-05 05:59,12168125,Challenger Women Singles,Suzhou,E. Jacquemot,C. Liu,menos,17.5,0.6736,0.5889,1.571,True,actual
+2026-10-05 05:59,12168149,Atp Singles,Shanghai,T. Daniel,S. Mochizuki,más,23.5,0.6921,0.5889,1.571,True,aprendida
