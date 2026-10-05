@@ -41,3 +41,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-05 06:25,12167985,Challenger Men Singles,Wuning 3 (China) - Qualification,B. Zhukayev,Y. Demin,menos,20.5,0.7831,0.7831,1.2,True,casa65
 2026-10-05 06:26,12168151,Atp Singles,Shanghai,A. Ilagan,N. Basilashvili,más,34.5,0.6706,0.4424,2.1,True,aprendida
 2026-10-05 06:36,12168160,Atp Singles,Shanghai,M. Zheng,F. A. Gomez,menos,21.5,0.5684,0.5147,1.8,True,aprendida
+2026-10-05 06:57,12167976,Challenger Men Singles,Wuning 3 (China) - Qualification,L. Castelnuovo,A. Santillan,menos,23.5,0.619,0.5147,1.8,True,aprendida
