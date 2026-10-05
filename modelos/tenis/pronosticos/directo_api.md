@@ -1,4 +1,4 @@
-# Tenis en directo, 05/10/2026 22:11 UTC (00:11 en España)
+# Tenis en directo, 05/10/2026 22:24 UTC (00:24 en España)
 
 Calculadora desde el marcador exacto (modelo de puntos, superficie real) frente a la cuota en directo
 (sin margen). Ganador y sets: la calculadora suele coincidir con la casa. Total de juegos: el modelo
@@ -7,4 +7,3 @@ Se actualiza cada ~5 min; el registro en data/tenis/api_tennis/registro/ servir�
 
 | partido | tipo | superficie | marcador (sets, juegos, puntos, saca) | gana 1º: modelo / cuota | sets más probables (modelo) | total juegos: línea, modelo / cuota |
 |---|---|---|---|---|---|---|
-| M. Bulbarella vs A. Pajello | Itf Women Singles | Hard | 1-1, 6-5, 30 - 40, saca M. Bulbarella | 50% / 72% | 2-1 50%, 1-2 50% |  |
