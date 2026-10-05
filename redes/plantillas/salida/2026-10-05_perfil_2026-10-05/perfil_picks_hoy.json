@@ -1,0 +1,121 @@
+{
+ "template": "picks_list",
+ "competition": "Nations League · 05/10",
+ "home": {
+  "name": "France",
+  "short": "France"
+ },
+ "away": {
+  "name": "Italy",
+  "short": "Italy"
+ },
+ "kicker": "Unlocked",
+ "title": "Tonight’s 8 calls",
+ "picks": [
+  {
+   "time": "20:45",
+   "home": {
+    "name": "Italy",
+    "short": "Italy"
+   },
+   "away": {
+    "name": "Turkey",
+    "short": "Turkey"
+   },
+   "pick": "Italy win",
+   "pct": 66
+  },
+  {
+   "time": "20:45",
+   "home": {
+    "name": "France",
+    "short": "France"
+   },
+   "away": {
+    "name": "Belgium",
+    "short": "Belgium"
+   },
+   "pick": "Over 2.5 goals",
+   "pct": 64
+  },
+  {
+   "time": "20:45",
+   "home": {
+    "name": "Ukraine",
+    "short": "Ukraine"
+   },
+   "away": {
+    "name": "Hungary",
+    "short": "Hungary"
+   },
+   "pick": "Under 9.5 corners",
+   "pct": 64
+  },
+  {
+   "time": "20:45",
+   "home": {
+    "name": "Romania",
+    "short": "Romania"
+   },
+   "away": {
+    "name": "Sweden",
+    "short": "Sweden"
+   },
+   "pick": "Under 9.5 corners",
+   "pct": 63
+  },
+  {
+   "time": "20:45",
+   "home": {
+    "name": "Bosnia and Herzegovina",
+    "short": "Bosnia"
+   },
+   "away": {
+    "name": "Poland",
+    "short": "Poland"
+   },
+   "pick": "Under 9.5 corners",
+   "pct": 63
+  },
+  {
+   "time": "20:45",
+   "home": {
+    "name": "Northern Ireland",
+    "short": "N. Ireland"
+   },
+   "away": {
+    "name": "Georgia",
+    "short": "Georgia"
+   },
+   "pick": "Over 1.5 goals",
+   "pct": 63
+  },
+  {
+   "time": "20:45",
+   "home": {
+    "name": "Montenegro",
+    "short": "Montenegro"
+   },
+   "away": {
+    "name": "Armenia",
+    "short": "Armenia"
+   },
+   "pick": "Montenegro win",
+   "pct": 61
+  },
+  {
+   "time": "18:00",
+   "home": {
+    "name": "Cyprus",
+    "short": "Cyprus"
+   },
+   "away": {
+    "name": "Latvia",
+    "short": "Latvia"
+   },
+   "pick": "Cyprus win",
+   "pct": 58
+  }
+ ],
+ "question": "Which one are you taking?"
+}

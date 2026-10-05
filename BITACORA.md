@@ -25,6 +25,7 @@ Dónde está cada cosa:
 
 | qué | por qué | ficheros |
 |---|---|---|
+| Plantilla "picks_list": todos los pronósticos del día en una imagen (hora, partido con colores, elección y %). Primera: las 8 de la Nations League del 05/10 que pasó el usuario (horas pasadas a la española, sin cuotas). Las 6ª de hoy tapan ahora el France-Belgium de esa lista (más de 2.5, 64 %). | Destino del swipe de la 6ª. | `redes/plantillas/` |
 | Imagen del perfil "our_calls" (`datos_selecciones.py perfil <fecha>`): los pronósticos que tapa la 6ª, destapados en una sola imagen (partido grande del día y del siguiente: 1X2, marcador más probable y el mercado de goles más seguro). | Petición del usuario: destino del swipe. | `redes/plantillas/` |
 | Plantilla 6 rehecha con menos texto: el próximo partido grande con nuestro % del favorito DIFUMINADO y un candado, "Our call is on our profile." y barra amarilla @2yellowdata con flechas. En post, sello "7/8 yesterday". | El usuario: le faltaba gancho y sobraba texto. | `redes/plantillas/` |
 | Plantilla 6 (previo y post) "follow": cierre del carrusel que invita a deslizar al perfil y seguir. Gancho con dato real (aciertos de la jornada o nº de partidos ya pronosticados) + el partido más llamativo que viene (por puntos FIFA) + tarjeta @2yellowdata con flechas. | Petición del usuario: un último swipe hacia el perfil con gancho potente. | `redes/plantillas/` |
