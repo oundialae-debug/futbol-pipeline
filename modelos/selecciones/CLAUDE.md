@@ -167,6 +167,13 @@ Rama main.
   clubes, variante "solo precio". Da casi lo mismo que el mercado. No
   merece la pena repetirla.
 
+## Listas para el usuario (05/10/2026)
+
+Cuando pida "lo más probable" (una por partido, cuota mínima...), usar SOLO mercados
+con historial medido en `evaluacion.md`: 1X2, sin empate, goles (1.5/2.5/3.5), ambos
+marcan, córners y tarjetas. Nunca "marca primero": la API no da quién marca primero
+y no tiene historial de aciertos. Petición del usuario: "siempre mete mercados ya probados".
+
 ## Cuánto fiarse
 
 Resultado de la prueba hacia delante del 26/09: 48 partidos desde

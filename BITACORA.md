@@ -25,6 +25,7 @@ Dónde está cada cosa:
 
 | qué | por qué | ficheros |
 |---|---|---|
+| Selecciones: al dar listas de "lo más probable", solo mercados con historial medido (1X2, sin empate, goles, ambos marcan, córners, tarjetas); nunca "marca primero" (la API no da quién marca primero, no se puede evaluar). | Petición del usuario (05/10): "siempre mete mercados ya probados". | `modelos/selecciones/CLAUDE.md` |
 | Skill `free-llm-apis` copiada de mnfst/awesome-free-llm-apis (revisada: solo documentación, sin scripts). Sin claves ni proveedores configurados. | Petición del usuario: tener a mano proveedores LLM gratuitos para ahorrar tokens. | `.claude/skills/free-llm-apis/` |
 | Grafo de conocimiento con graphify (paquete `graphifyy` 0.9.76): pipeline completo, solo código, sin `data/`. 1.064 nodos, 2.869 aristas, 56 comunidades con nombre. Cero tokens (análisis estático). | Responder preguntas que cruzan varios archivos sin leerlos todos. | `graphify-out/`, `.graphifyignore` |
 | Workflow que actualiza el grafo en cada push a `main` con cambios en `.py` o workflows (`graphify update .`). | Que el grafo no se quede viejo. Ojo: `update` renombra las comunidades por su nodo principal (pierde los nombres puestos a mano) e indexa también la estructura de los `.md`. | `.github/workflows/actualizar-grafo.yml` |
