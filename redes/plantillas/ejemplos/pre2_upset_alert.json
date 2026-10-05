@@ -1,0 +1,15 @@
+{
+ "template": "upset_alert",
+ "competition": "LaLiga · Matchday 8",
+ "home": {
+  "name": "Real Madrid",
+  "short": "Real Madrid"
+ },
+ "away": {
+  "name": "Osasuna",
+  "short": "Osasuna"
+ },
+ "underdog": "away",
+ "model_pct": 27,
+ "bookies_pct": 14
+}

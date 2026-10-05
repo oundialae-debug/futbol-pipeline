@@ -1,4 +1,0 @@
-{"template": "deserved", "competition": "LaLiga · MD8",
- "home": {"name": "Real Madrid", "code": "RMA"}, "away": {"name": "Getafe", "code": "GET"},
- "score": [1, 0], "xg": [0.84, 1.67],
- "stats": [["Shots", 9, 15], ["On target", 3, 6], ["Possession %", 58, 42]]}

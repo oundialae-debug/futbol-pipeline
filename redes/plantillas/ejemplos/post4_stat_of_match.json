@@ -1,0 +1,19 @@
+{
+ "template": "stat_of_match",
+ "competition": "LaLiga · Matchday 8",
+ "home": {
+  "name": "Real Sociedad",
+  "short": "Real Sociedad"
+ },
+ "away": {
+  "name": "Mallorca",
+  "short": "Mallorca"
+ },
+ "number": "22",
+ "text": "shots from <b>Real Sociedad</b>. Zero goals.",
+ "score": [
+  0,
+  0
+ ],
+ "question": "Worst finishing of the season?"
+}

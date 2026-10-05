@@ -1,0 +1,21 @@
+{
+ "template": "prediction",
+ "competition": "LaLiga · Matchday 8",
+ "home": {
+  "name": "Barcelona",
+  "short": "Barça"
+ },
+ "away": {
+  "name": "Sevilla FC",
+  "short": "Sevilla"
+ },
+ "probs": [
+  64,
+  21,
+  15
+ ],
+ "predicted_score": [
+  2,
+  0
+ ]
+}

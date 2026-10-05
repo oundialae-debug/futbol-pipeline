@@ -1,0 +1,17 @@
+{
+ "template": "goals",
+ "competition": "LaLiga · Matchday 8",
+ "home": {
+  "name": "Villarreal",
+  "short": "Villarreal"
+ },
+ "away": {
+  "name": "Real Betis",
+  "short": "Betis"
+ },
+ "btts": 71,
+ "exp_goals": [
+  1.6,
+  1.3
+ ]
+}

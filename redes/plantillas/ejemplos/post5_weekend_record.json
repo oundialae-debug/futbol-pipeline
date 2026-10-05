@@ -1,0 +1,76 @@
+{
+ "template": "weekend_record",
+ "competition": "LaLiga · Matchday 8",
+ "matches": [
+  [
+   "Barça",
+   3,
+   1,
+   "Sevilla",
+   1
+  ],
+  [
+   "Real Madrid",
+   1,
+   0,
+   "Getafe",
+   1
+  ],
+  [
+   "Atlético",
+   0,
+   1,
+   "Rayo",
+   0
+  ],
+  [
+   "Villarreal",
+   2,
+   2,
+   "Betis",
+   1
+  ],
+  [
+   "Valencia",
+   1,
+   0,
+   "Celta",
+   0
+  ],
+  [
+   "Athletic",
+   2,
+   0,
+   "Alavés",
+   1
+  ],
+  [
+   "R. Sociedad",
+   0,
+   0,
+   "Mallorca",
+   0
+  ],
+  [
+   "Girona",
+   2,
+   1,
+   "Espanyol",
+   1
+  ],
+  [
+   "Osasuna",
+   1,
+   1,
+   "Elche",
+   1
+  ],
+  [
+   "Levante",
+   0,
+   2,
+   "Oviedo",
+   1
+  ]
+ ]
+}

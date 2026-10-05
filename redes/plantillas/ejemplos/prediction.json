@@ -1,3 +1,0 @@
-{"template": "prediction", "competition": "LaLiga · MD8",
- "home": {"name": "Barcelona", "code": "BAR"}, "away": {"name": "Sevilla FC", "code": "SEV"},
- "probs": [64, 21, 15], "predicted_score": [2, 0], "score": [3, 1]}

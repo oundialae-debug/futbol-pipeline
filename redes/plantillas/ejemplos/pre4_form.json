@@ -1,0 +1,17 @@
+{
+ "template": "form",
+ "competition": "LaLiga · Matchday 8",
+ "home": {
+  "name": "Athletic Club",
+  "short": "Athletic"
+ },
+ "away": {
+  "name": "Getafe",
+  "short": "Getafe"
+ },
+ "number": "5",
+ "text": "wins in a row for <b>Athletic</b>",
+ "form_home": "WWWWW",
+ "form_away": "LDLWL",
+ "question": "Can Getafe stop them?"
+}

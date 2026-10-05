@@ -1,0 +1,15 @@
+{
+ "template": "key_number",
+ "competition": "LaLiga · Matchday 8",
+ "home": {
+  "name": "Valencia",
+  "short": "Valencia"
+ },
+ "away": {
+  "name": "Celta de Vigo",
+  "short": "Celta"
+ },
+ "number": "0",
+ "text": "away wins in 9 games for <b>Celta</b>",
+ "when": "Saturday · 18:30 CET"
+}

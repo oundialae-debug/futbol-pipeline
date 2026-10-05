@@ -1,0 +1,18 @@
+{
+ "template": "upset_happened",
+ "competition": "LaLiga · Matchday 8",
+ "home": {
+  "name": "Atlético Madrid",
+  "short": "Atlético"
+ },
+ "away": {
+  "name": "Rayo Vallecano",
+  "short": "Rayo"
+ },
+ "underdog": "away",
+ "pre_pct": 15,
+ "score": [
+  0,
+  1
+ ]
+}
