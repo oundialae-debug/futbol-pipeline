@@ -49,3 +49,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-05 07:14,12168127,Challenger Women Singles,Suzhou,E. Kalieva,Y. Ma,menos,22.5,0.5673,0.5147,1.8,True,aprendida
 2026-10-05 07:18,12168156,Atp Singles,Shanghai,L. Pavlovic,I. Simakin,menos,29.5,0.6927,0.5889,1.571,True,actual
 2026-10-05 07:30,12167976,Challenger Men Singles,Wuning 3 (China) - Qualification,L. Castelnuovo,A. Santillan,menos,22.5,0.6737,0.5,1.833,True,aprendida
+2026-10-05 07:30,12168156,Atp Singles,Shanghai,L. Pavlovic,I. Simakin,menos,29.5,0.5573,0.4233,2.2,True,aprendida
