@@ -90,6 +90,15 @@ def dia(fecha_partido):
         else f"{t:%A}’s"
 
 
+def teaser(top):
+    """Datos de la 6ª: el próximo partido grande y el % de nuestro favorito, que irá tapado."""
+    pr = {"home": top.mod_1, "draw": top.mod_X, "away": top.mod_2}
+    fav = max(pr, key=pr.get)
+    return {"template": "follow", "competition": COMP, "home": eq(top.local), "away": eq(top.visitante),
+            "kicker": f"Next up · {dia(top.fecha_partido).replace('’s', '')}", "side": fav,
+            "hidden_pct": round(pr[fav] * 100), "text": "Our call is on our profile."}
+
+
 def siguiente(desde, excluir=None):
     """Partidos ya pronosticados desde 'desde' y el más llamativo (más puntos FIFA sumados)."""
     r = pd.read_csv(f"{C}/registro_pronosticos.csv")
@@ -157,10 +166,7 @@ def post(equipo, fecha):
     if top is not None and rec:
         filas = G.mejores_aciertos(rec["matches"])
         ok = sum(1 for x in filas if x[6])
-        out["post6_follow"] = {"template": "follow", "competition": COMP, "home": eq(top.local), "away": eq(top.visitante),
-                               "kicker": "One more swipe", "number": f"{ok}/{len(filas)}",
-                               "text": f"of our boldest calls landed. <b>{n} more games</b> are already called.",
-                               "next_label": f"Including {dia(top.fecha_partido)} big one"}
+        out["post6_follow"] = {**teaser(top), "badge": f"{ok}/{len(filas)} yesterday"}
     return m, out
 
 
@@ -208,10 +214,7 @@ def pre(equipo, fecha):
                                   "when": "Tonight · " + pd.Timestamp(x.fecha_partido).tz_convert("Europe/Madrid").strftime("%H:%M %Z"), "question": "Revenge or repeat?"}
     n, top = siguiente(fecha, excluir=m.match_id)
     if top is not None:
-        out["pre6_follow"] = {"template": "follow", "competition": COMP, "home": eq(top.local), "away": eq(top.visitante),
-                              "kicker": "Not done yet", "number": str(n),
-                              "text": "more games already called by our model. <b>All on our profile.</b>",
-                              "next_label": f"Including {dia(top.fecha_partido)} big one"}
+        out["pre6_follow"] = teaser(top)
     return m, out
 
 

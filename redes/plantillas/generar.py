@@ -338,19 +338,25 @@ def weekend_record(d):
 
 
 def follow(d):
-    """Última del carrusel: gancho con un dato nuestro + lo siguiente que hay en el perfil + swipe y seguir."""
+    """Última del carrusel: el próximo partido grande con nuestro % TAPADO. Poco texto, mucha curiosidad."""
     h, a = d["home"], d["away"]
+    t = d[d["side"]] if d.get("side") in ("home", "away") else {"c": AMARILLO}
     flechas = "".join(f'<span style="opacity:{o}">&#8250;</span>' for o in (.35, .65, 1))
-    cta = (f'<div style="display:flex;align-items:center;gap:26px;background:#161A23;border:3px solid {AMARILLO};'
-           f'border-radius:28px;padding:24px 28px">'
-           f'<img src="data:image/png;base64,{b64("perfil.png")}" style="width:120px;height:120px;border-radius:50%">'
-           f'<div style="flex:1"><div class="disp" style="font-size:54px">@2yellowdata</div>'
-           f'<div class="mini" style="color:#F1F3F8">Swipe to our profile &amp; follow</div></div>'
-           f'<div class="disp" style="font-size:150px;line-height:.7;color:{AMARILLO};letter-spacing:-18px">{flechas}</div></div>')
-    cuerpo = (num(d["number"], AMARILLO) + f'<div class="frase">{d["text"]}</div>'
-              + f'<div><div class="mini" style="margin-bottom:16px">{e(d.get("next_label", "Next on our profile"))}</div>'
-              + vs(h, a) + '</div>' + cta)
-    return pagina(d, d.get("kicker", "One more swipe"), cuerpo, d.get("question", "Don’t miss the next one."))
+    badge = (f'<div class="pill" style="background:{VERDE};font-size:40px">&#10003; {e(d["badge"])}</div>'
+             if d.get("badge") else "")
+    oculto = (f'<div style="position:relative;align-self:center">'
+              f'<div class="num" style="font-size:340px;color:{t["c"]};filter:blur(44px)">{d["hidden_pct"]}%</div>'
+              f'<div style="position:absolute;inset:0;display:grid;place-items:center">'
+              f'<svg width="150" height="170" viewBox="0 0 24 27"><rect x="2" y="11" width="20" height="15" rx="3" fill="#F1F3F8"/>'
+              f'<path d="M6 11V7a6 6 0 0 1 12 0v4" fill="none" stroke="#F1F3F8" stroke-width="3"/></svg></div></div>')
+    cta = (f'<div style="display:flex;align-items:center;gap:24px;background:{AMARILLO};color:{NOCHE};'
+           f'border-radius:28px;padding:22px 28px">'
+           f'<img src="data:image/png;base64,{b64("perfil.png")}" style="width:110px;height:110px;border-radius:50%;border:4px solid {NOCHE}">'
+           f'<div class="disp" style="flex:1;font-size:58px">@2yellowdata</div>'
+           f'<div class="disp" style="font-size:150px;line-height:.7;letter-spacing:-18px">{flechas}</div></div>')
+    cuerpo = (badge + vs(h, a) + oculto
+              + f'<div class="frase" style="text-align:center">{e(d.get("text", "Our call is on our profile."))}</div>' + cta)
+    return pagina(d, d.get("kicker", "Next up"), cuerpo, d.get("question", "Swipe. Follow. Don’t miss it."))
 
 
 PLANTILLAS = {"prediction": prediction, "upset_alert": upset_alert, "goals": goals, "elo_form": elo_form,

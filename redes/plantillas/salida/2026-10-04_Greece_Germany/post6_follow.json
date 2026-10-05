@@ -9,8 +9,9 @@
   "name": "Belgium",
   "short": "Belgium"
  },
- "kicker": "One more swipe",
- "number": "7/8",
- "text": "of our boldest calls landed. <b>18 more games</b> are already called.",
- "next_label": "Including tonight’s big one"
+ "kicker": "Next up · tonight",
+ "side": "home",
+ "hidden_pct": 58,
+ "text": "Our call is on our profile.",
+ "badge": "7/8 yesterday"
 }
