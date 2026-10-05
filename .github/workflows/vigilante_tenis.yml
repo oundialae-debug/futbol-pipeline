@@ -6,9 +6,11 @@ name: Vigilante tenis (juegos, aviso al móvil)
 # ~5h45; se lanza cada hora y la siguiente espera en cola (una sola a la vez). El código vive en
 # la rama de tenis ccr-3c3cfe57-etcioo (modelos/tenis/scripts/vigilante_juegos.py).
 # Para pararlo: comentar el schedule o borrar este fichero de main.
+# EN PAUSA (05/10/2026, usuario): ninguna regla gana en papel; quedan el registro de 5 min y los previos.
+# Para reactivar: descomentar el schedule.
 on:
-  schedule:
-    - cron: '7 * * * *'
+  # schedule:
+  #   - cron: '7 * * * *'
   workflow_dispatch:
 
 concurrency:
