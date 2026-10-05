@@ -1,4 +1,4 @@
-# Tenis en directo, 05/10/2026 02:31 UTC (04:31 en España)
+# Tenis en directo, 05/10/2026 02:46 UTC (04:46 en España)
 
 Calculadora desde el marcador exacto (modelo de puntos, superficie real) frente a la cuota en directo
 (sin margen). Ganador y sets: la calculadora suele coincidir con la casa. Total de juegos: el modelo
@@ -7,9 +7,9 @@ Se actualiza cada ~5 min; el registro en data/tenis/api_tennis/registro/ servir�
 
 | partido | tipo | superficie | marcador (sets, juegos, puntos, saca) | gana 1º: modelo / cuota | sets más probables (modelo) | total juegos: línea, modelo / cuota |
 |---|---|---|---|---|---|---|
-| A. Kachmazov vs G. Lomakin | Challenger Men Singles | Hard | 0-0, 5-0, 30 - 30, saca G. Lomakin | 97% /  | 2-0 82%, 2-1 15% |  |
-| K. Saitoh vs Y. Takahashi | Challenger Men Singles | Hard | 0-0, 3-3, 15 - 0, saca K. Saitoh | 60% / 59% | 2-0 33%, 2-1 27% |  |
-| K. Tamm vs M. Borisiouk | Challenger Men Singles | Hard | 0-0, 2-3, 15 - 30, saca M. Borisiouk | 14% / 11% | 0-2 62%, 1-2 24% |  |
-| W. Zheng vs J. Lu | Challenger Women Singles | Hard | 0-0, 2-3, 30 - 30, saca W. Zheng | 23% / 35% | 0-2 49%, 1-2 28% | 22.5: 51% / 50% |
-| K. Zavatska vs D. Khomutsianskaya | Challenger Women Singles | Hard | 0-0, 1-2, 40 - A, saca K. Zavatska | 22% / 28% | 0-2 51%, 1-2 27% |  |
-| H. Shi vs Y. Yang | Challenger Women Singles | Hard | 0-0, 3-2, 15 - 30, saca Y. Yang | 64% / 81% | 2-0 36%, 2-1 28% | 21.5: 65% / 46% |
+| A. Kachmazov vs G. Lomakin | Challenger Men Singles | Hard | 1-0, 0-0, 30 - 15, saca G. Lomakin | 97% /  | 2-0 86%, 2-1 12% |  |
+| K. Saitoh vs Y. Takahashi | Challenger Men Singles | Hard | 0-0, 4-5, 15 - 30, saca Y. Takahashi | 35% / 38% | 0-2 41%, 2-1 31% |  |
+| K. Tamm vs M. Borisiouk | Challenger Men Singles | Hard | 0-1, 0-0, 0 - 15, saca K. Tamm | 10% / 6% | 0-2 71%, 1-2 20% |  |
+| W. Zheng vs J. Lu | Challenger Women Singles | Hard | 0-1, 0-0, 0 - 0, saca W. Zheng | 11% / 17% | 0-2 67%, 1-2 22% | 19.5: 48% / 46% |
+| K. Zavatska vs D. Khomutsianskaya | Challenger Women Singles | Hard | 0-0, 3-3, 15 - 40, saca D. Khomutsianskaya | 26% / 35% | 0-2 46%, 1-2 28% |  |
+| H. Shi vs Y. Yang | Challenger Women Singles | Hard | 0-0, 4-4, 15 - 0, saca H. Shi | 63% / 79% | 2-0 36%, 2-1 28% | 22.5: 63% / 50% |
