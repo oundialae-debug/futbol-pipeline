@@ -1,3 +1,4 @@
 hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cuota_api,calibrado,regla
 2026-10-05 02:04,12168121,Challenger Women Singles,Suzhou,W. Zheng,J. Lu,menos,21.5,0.5554,0.4853,1.909,True,aprendida
 2026-10-05 02:36,12168176,Challenger Women Singles,Suzhou,H. Shi,Y. Yang,menos,22.5,0.5745,0.5147,1.8,True,aprendida
+2026-10-05 03:19,12167948,Wta Singles,Beijing,D. Vekic,I. Swiatek,menos,18.5,0.556,0.5,1.833,True,aprendida
