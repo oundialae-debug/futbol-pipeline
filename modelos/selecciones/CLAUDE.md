@@ -320,5 +320,5 @@ relleno del árbitro dejaban ver el resultado de otro partido jugado a la
 misma hora. Desde el 29/09 se calculan por días. Selecciones solo toca
 `rasgos.py` en `segunda_opinion_ambos_selecciones.py`, que usa la variante
 "solo precio" (sin tabla ni árbitro), así que sus números no cambian. Si algún
-día usa variables de clubes, ya van sin la fuga. Detalle en el `CLAUDE.md`
-raíz y en `BITACORA.md`.
+día usa variables de clubes, ya van sin la fuga. Detalle en `docs/notas_proyecto.md`
+y en `BITACORA.md`.
