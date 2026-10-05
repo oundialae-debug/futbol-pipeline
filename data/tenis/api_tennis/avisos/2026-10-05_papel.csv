@@ -59,3 +59,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-05 07:49,12168110,Atp Singles,Tokyo,C. Alcaraz,J. Munar,menos,22.5,0.6299,0.5576,1.666,True,actual
 2026-10-05 07:50,12168159,Atp Singles,Shanghai,A. Walton,R. Te,menos,22.5,0.7348,0.6451,1.444,True,actual
 2026-10-05 07:52,12168164,Atp Singles,Shanghai,S. C. Hong,R. Sakamoto,menos,19.5,0.6712,0.5576,1.666,True,actual
+2026-10-05 07:57,12167986,Wta Singles,Beijing,M. Bouzkova,Q. Zheng,menos,32.5,0.5878,0.5576,1.666,True,actual
