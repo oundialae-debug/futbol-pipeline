@@ -1,0 +1,64 @@
+{
+ "template": "our_calls",
+ "competition": "Nations League",
+ "home": {
+  "name": "France",
+  "short": "France"
+ },
+ "away": {
+  "name": "Spain",
+  "short": "Spain"
+ },
+ "kicker": "Unlocked",
+ "title": "The calls you swiped for",
+ "matches": [
+  {
+   "home": {
+    "name": "France",
+    "short": "France"
+   },
+   "away": {
+    "name": "Belgium",
+    "short": "Belgium"
+   },
+   "when": "tonight · 20:45 CEST",
+   "probs": [
+    58,
+    21,
+    21
+   ],
+   "score": [
+    1,
+    1
+   ],
+   "extra": [
+    "over25",
+    0.6016
+   ]
+  },
+  {
+   "home": {
+    "name": "Croatia",
+    "short": "Croatia"
+   },
+   "away": {
+    "name": "Spain",
+    "short": "Spain"
+   },
+   "when": "tomorrow · 20:45 CEST",
+   "probs": [
+    13,
+    18,
+    69
+   ],
+   "score": [
+    0,
+    2
+   ],
+   "extra": [
+    "over25",
+    0.6286
+   ]
+  }
+ ]
+}

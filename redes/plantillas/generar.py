@@ -359,10 +359,37 @@ def follow(d):
     return pagina(d, d.get("kicker", "Next up"), cuerpo, d.get("question", "Swipe. Follow. Don’t miss it."))
 
 
+def our_calls(d):
+    """Post fijo del perfil: los pronósticos que se tapan en la 6ª, destapados, todos en una imagen."""
+    tarjetas = ""
+    for m in d["matches"]:
+        h, a = dict(m["home"]), dict(m["away"])
+        for t in (h, a):
+            t["c"] = color(t); t["t"] = texto_sobre(t["c"]); t.setdefault("short", t["name"])
+        p = m["probs"]
+        i = max(range(3), key=lambda k: p[k])
+        quien = [f'{h["short"]} win', "Draw", f'{a["short"]} win'][i]
+        col = [h["c"], AMARILLO, a["c"]][i]
+        cols = [h["c"], GRIS, a["c"]]
+        seg = "".join(f'<div style="width:{p[k]}%;background:{cols[k]};opacity:{1 if k == i else .35}"></div>' for k in range(3))
+        mk, pc = m["extra"]
+        tarjetas += (f'<div style="background:#12151DE6;border-radius:28px;padding:26px 30px;display:flex;flex-direction:column;gap:18px">'
+                     f'<div class="mini" style="font-size:30px;letter-spacing:2px;text-transform:uppercase">{e(m["when"])}</div>'
+                     f'{vs(h, a, peq=True)}'
+                     f'<div style="display:flex;align-items:baseline;gap:22px"><div class="num" style="font-size:150px;color:{col}">{p[i]}%</div>'
+                     f'<div class="frase" style="font-size:52px">{e(quien)}</div></div>'
+                     f'<div class="barra" style="height:22px">{seg}</div>'
+                     f'<div style="display:flex;justify-content:space-between" class="mini">'
+                     f'<span>Score: <b style="color:#F1F3F8">{m["score"][0]}–{m["score"][1]}</b></span>'
+                     f'<span>{e(nombre_mercado(mk, h["short"], a["short"]))}: <b style="color:#F1F3F8">{round(pc * 100)}%</b></span></div></div>')
+    cuerpo = f'<div class="frase" style="font-size:70px">{e(d.get("title", "Our calls"))}</div>' + tarjetas
+    return pagina(d, d.get("kicker", "Unlocked"), cuerpo, d.get("question", "Who are you backing?"))
+
+
 PLANTILLAS = {"prediction": prediction, "upset_alert": upset_alert, "goals": goals, "elo_form": elo_form,
               "key_number": key_number, "deserved": deserved, "prediction_vs_result": prediction_vs_result,
               "upset_happened": upset_happened, "stat_of_match": stat_of_match, "weekend_record": weekend_record,
-              "follow": follow}
+              "follow": follow, "our_calls": our_calls}
 
 
 def html_de(d):

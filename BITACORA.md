@@ -25,6 +25,7 @@ Dónde está cada cosa:
 
 | qué | por qué | ficheros |
 |---|---|---|
+| Imagen del perfil "our_calls" (`datos_selecciones.py perfil <fecha>`): los pronósticos que tapa la 6ª, destapados en una sola imagen (partido grande del día y del siguiente: 1X2, marcador más probable y el mercado de goles más seguro). | Petición del usuario: destino del swipe. | `redes/plantillas/` |
 | Plantilla 6 rehecha con menos texto: el próximo partido grande con nuestro % del favorito DIFUMINADO y un candado, "Our call is on our profile." y barra amarilla @2yellowdata con flechas. En post, sello "7/8 yesterday". | El usuario: le faltaba gancho y sobraba texto. | `redes/plantillas/` |
 | Plantilla 6 (previo y post) "follow": cierre del carrusel que invita a deslizar al perfil y seguir. Gancho con dato real (aciertos de la jornada o nº de partidos ya pronosticados) + el partido más llamativo que viene (por puntos FIFA) + tarjeta @2yellowdata con flechas. | Petición del usuario: un último swipe hacia el perfil con gancho potente. | `redes/plantillas/` |
 | Plantillas: "Our matchday" ya no elige un mercado; por partido enseña el acierto MÁS DIFÍCIL (menor % que le dábamos) de 1X2, más/menos 2.5 o ambos marcan (1.5 y 3.5 fuera, demasiado fáciles), siempre con 1 o 2 fallos a la vista. "Prediction vs result" también prefiere el acierto más difícil. "Upset!" cuenta también un empate improbable (Greece 0-0 Germany, 21%). | Petición del usuario: un acierto difícil vale más para el espectador, y enseñar algún fallo da credibilidad. | `redes/plantillas/` |

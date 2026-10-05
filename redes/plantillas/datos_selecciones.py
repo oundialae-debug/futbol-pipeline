@@ -99,17 +99,21 @@ def teaser(top):
             "hidden_pct": round(pr[fav] * 100), "text": "Our call is on our profile."}
 
 
+def siguiente_en(r):
+    f = pd.read_csv(f"{C}/ranking_fifa.csv").sort_values("fecha").groupby("equipo").puntos.last()
+    import experimento_variables as X
+    pts = lambda n: f.get(X.ALIAS.get(n, n), f.get(n.replace(" & ", " and "), 1000))
+    r = r.drop_duplicates("match_id")
+    return len(r), max(r.itertuples(), key=lambda x: pts(x.local) + pts(x.visitante))
+
+
 def siguiente(desde, excluir=None):
     """Partidos ya pronosticados desde 'desde' y el más llamativo (más puntos FIFA sumados)."""
     r = pd.read_csv(f"{C}/registro_pronosticos.csv")
     r = r[pd.to_datetime(r.fecha_partido, utc=True) >= pd.Timestamp(desde, tz="UTC")].drop_duplicates("match_id")
     if excluir is not None:
         r = r[r.match_id != excluir]
-    f = pd.read_csv(f"{C}/ranking_fifa.csv").sort_values("fecha").groupby("equipo").puntos.last()
-    import experimento_variables as X
-    pts = lambda n: f.get(X.ALIAS.get(n, n), f.get(n.replace(" & ", " and "), 1000))
-    top = max(r.itertuples(), key=lambda x: pts(x.local) + pts(x.visitante)) if len(r) else None
-    return len(r), top
+    return siguiente_en(r) if len(r) else (0, None)
 
 
 def post(equipo, fecha):
@@ -218,9 +222,40 @@ def pre(equipo, fecha):
     return m, out
 
 
+def perfil(fecha):
+    """La imagen del perfil: el partido grande de 'fecha' y el del día siguiente, destapados
+    (son los que tapa la 6ª del post y del previo)."""
+    r = pd.read_csv(f"{C}/registro_pronosticos.csv")
+    tops = []
+    for f in (fecha, str((pd.Timestamp(fecha) + pd.Timedelta(days=1)).date())):
+        del_dia = r[r.fecha_partido.str.startswith(f)]
+        if not del_dia.empty:
+            tops.append(siguiente_en(del_dia)[1])
+    partidos = []
+    for t in tops:
+        x = pronostico(t.match_id)
+        elec, pct = picks(x)
+        extra = max((elec[k] for k in ("Over/Under 2.5", "Both teams score")), key=lambda v: pct[v])
+        ms = max(((i, j) for i in range(7) for j in range(7)),
+                 key=lambda q: poisson.pmf(q[0], x.lam_l) * poisson.pmf(q[1], x.lam_v))
+        hora = pd.Timestamp(x.fecha_partido).tz_convert("Europe/Madrid")
+        partidos.append({"home": eq(x.local), "away": eq(x.visitante), "when": f"{dia(x.fecha_partido).replace('’s', '')} · {hora:%H:%M %Z}",
+                         "probs": [round(x.mod_1 * 100), round(x.mod_X * 100), round(x.mod_2 * 100)],
+                         "score": list(ms), "extra": [extra, float(pct[extra])]})
+    d = {"template": "our_calls", "competition": COMP, "home": partidos[0]["home"], "away": partidos[-1]["away"],
+         "kicker": "Unlocked", "title": "The calls you swiped for", "matches": partidos}
+    return {"local": "perfil", "visitante": fecha}, {"perfil_our_calls": d}
+
+
 if __name__ == "__main__":
-    modo, equipo, fecha = sys.argv[1:4]
-    m, datos = (post if modo == "post" else pre)(equipo, fecha)
+    modo = sys.argv[1]
+    if modo == "perfil":
+        fecha = sys.argv[2]
+        m, datos = perfil(fecha)
+        m = pd.Series(m)
+    else:
+        equipo, fecha = sys.argv[2:4]
+        m, datos = (post if modo == "post" else pre)(equipo, fecha)
     carpeta = AQUI / "salida" / f"{fecha}_{m.local}_{m.visitante}".replace(" ", "_")
     carpeta.mkdir(parents=True, exist_ok=True)
     trabajos = []
