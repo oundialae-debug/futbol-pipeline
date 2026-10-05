@@ -66,3 +66,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-05 08:18,12167986,Wta Singles,Beijing,M. Bouzkova,Q. Zheng,menos,32.5,0.5152,0.4634,2.0,True,aprendida
 2026-10-05 08:18,12168127,Challenger Women Singles,Suzhou,E. Kalieva,Y. Ma,menos,18.5,0.7831,0.7831,1.2,True,casa65
 2026-10-05 08:21,12167976,Challenger Men Singles,Wuning 3 (China) - Qualification,L. Castelnuovo,A. Santillan,menos,28.5,0.7383,0.5889,1.571,True,actual
+2026-10-05 08:31,12167955,Wta Singles,Beijing,B. Bencic,A. Li,menos,19.5,0.6137,0.5576,1.666,True,aprendida
