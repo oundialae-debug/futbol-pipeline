@@ -1,4 +1,4 @@
-# Tenis en directo, 05/10/2026 13:00 UTC (15:00 en España)
+# Tenis en directo, 05/10/2026 13:16 UTC (15:16 en España)
 
 Calculadora desde el marcador exacto (modelo de puntos, superficie real) frente a la cuota en directo
 (sin margen). Ganador y sets: la calculadora suele coincidir con la casa. Total de juegos: el modelo
@@ -7,19 +7,24 @@ Se actualiza cada ~5 min; el registro en data/tenis/api_tennis/registro/ servir�
 
 | partido | tipo | superficie | marcador (sets, juegos, puntos, saca) | gana 1º: modelo / cuota | sets más probables (modelo) | total juegos: línea, modelo / cuota |
 |---|---|---|---|---|---|---|
-| N. Djokovic vs D. Medvedev | Atp Singles | Hard | 1-0, 1-1, 0 - 40, saca N. Djokovic | 62% / 55% | 1-2 38%, 2-1 35% | 30.5: 57% / 49% |
-| C. Wong vs C. Hewitt | Atp Singles | Hard | 0-0, 0-0, 0 - 0, saca C. Wong | 81% / 77% | 2-0 52%, 2-1 29% | 21.5: 62% / 50% |
-| K. Coppejans vs N. Basavareddy | Atp Singles | Hard | 1-0, 5-3, 40 - 15, saca K. Coppejans | 98% / 96% | 2-0 97%, 1-2 2% | 22.5: 6% / 6% |
-| M. Bellucci vs E. Ymer | Atp Singles | Hard | 1-1, 3-2, 0 - 0, saca E. Ymer | 71% / 75% | 2-1 71%, 1-2 29% | 31.5: 69% / 59% |
-| M. H. Rehberg vs M. Poljicak | Challenger Men Singles | Clay | 1-1, 0-0, 40 - 15, saca M. H. Rehberg | 60% / 71% | 2-1 60%, 1-2 40% |  |
-| H. Barton vs P. Nesterov | Challenger Men Singles | Clay | 1-0, 3-3, 0 - 15, saca P. Nesterov | 77% / 75% | 2-0 49%, 2-1 28% |  |
-| O. Krutykh vs F. Pieczonka | Challenger Men Singles | Clay | 1-1, 4-0, 40 - 0, saca O. Krutykh | 99% / 99% | 2-1 99%, 1-2 1% |  |
-| C. Langmo vs O. Ovcharenko | Challenger Men Singles | Clay | 1-1, 4-1, 0 - 30, saca O. Ovcharenko | 77% / 78% | 2-1 77%, 1-2 23% |  |
-| M. Cerny vs D. Sakellaridis | Challenger Men Singles | Clay | 1-1, 0-1, 0 - 0, saca M. Cerny | 53% / 35% | 2-1 53%, 1-2 47% |  |
-| D. Rincon vs A. Sanchez Quilez | Challenger Men Singles | Clay | 0-0, 1-1, 40 - 40, saca A. Sanchez Quilez | 62% / 69% | 2-0 34%, 2-1 28% | 22.5: 57% / 46% |
-| F. Moroni vs I. Parisca | Challenger Men Singles | Clay | 0-0, 3-3, 40 - 15, saca F. Moroni | 68% /  | 2-0 40%, 2-1 28% |  |
-| Z. Piros vs T. Boyer | Challenger Men Singles | Clay | 1-0, 1-3, 30 - 30, saca Z. Piros | 65% / 65% | 2-1 44%, 1-2 35% | 26.5: 52% / 44% |
-| D. Ajdukovic vs F. C. Jianu | Challenger Men Singles | Clay | 0-0, 4-1, 30 - 30, saca F. C. Jianu | 60% / 77% | 2-0 36%, 1-2 32% | 20.5: 72% / 49% |
-| A. Smith vs D. Jakupovic | Challenger Women Singles | Hard | 1-0, 4-3, 0 - 0, saca A. Smith | 91% / 93% | 2-0 81%, 2-1 10% | 16.5: 78% / 69% |
-| H. Muzinic vs M. E. Poulka | Itf Women Singles | Clay | 1-0, 4-3, 0 - 0, saca H. Muzinic | 86% / 84% | 2-0 71%, 1-2 14% |  |
-| Y. Kabbaj vs N. Torner Sensano | Itf Women Singles | Clay | 0-0, 6-5, 1 - 0, saca N. Torner Sensano | 48% / 75% | 1-2 34%, 2-0 27% |  |
+| N. Djokovic vs D. Medvedev | Atp Singles | Hard | 1-0, 2-2, 0 - 0, saca N. Djokovic | 73% / 66% | 2-0 49%, 1-2 27% | 29.5: 50% / 50% |
+| C. Wong vs C. Hewitt | Atp Singles | Hard | 0-0, 2-2, 40 - 15, saca C. Wong | 81% / 75% | 2-0 53%, 2-1 29% | 23.5: 49% / 49% |
+| M. Bellucci vs E. Ymer | Atp Singles | Hard | 1-1, 5-4, 0 - 0, saca E. Ymer | 70% / 72% | 2-1 70%, 1-2 30% | 33.5: 79% / 50% |
+| M. H. Rehberg vs M. Poljicak | Challenger Men Singles | Clay | 1-1, 2-1, 30 - 40, saca M. Poljicak | 57% / 66% | 2-1 57%, 1-2 43% |  |
+| H. Barton vs P. Nesterov | Challenger Men Singles | Clay | 1-0, 4-5, 40 - 40, saca H. Barton | 72% / 66% | 2-0 39%, 2-1 33% |  |
+| J. E. Schiessl vs A. Magadan | Challenger Men Singles | Clay | 0-0, 2-0, 30 - 15, saca J. E. Schiessl | 57% / 72% | 2-0 34%, 1-2 30% |  |
+| H. Casanova vs B. Munk Mesa | Challenger Men Singles | Clay | 0-0, 0-0, 40 - A, saca B. Munk Mesa | 83% / 61% | 2-0 53%, 2-1 30% |  |
+| M. Cerny vs D. Sakellaridis | Challenger Men Singles | Clay | 1-1, 2-3, 0 - 0, saca M. Cerny | 48% / 34% | 1-2 52%, 2-1 48% |  |
+| D. Rincon vs A. Sanchez Quilez | Challenger Men Singles | Clay | 0-0, 3-2, 30 - 0, saca D. Rincon | 75% / 78% | 2-0 49%, 2-1 26% | 21.5: 59% / 49% |
+| J. Aguilar Cardozo vs L. J. Rodriguez | Challenger Men Singles | Clay | 0-0, 2-0, 0 - 0, saca L. J. Rodriguez | 67% / 90% | 2-0 41%, 2-1 26% |  |
+| F. Moroni vs I. Parisca | Challenger Men Singles | Clay | 0-0, 5-5, 0 - 0, saca F. Moroni | 62% /  | 2-0 33%, 2-1 29% |  |
+| Z. Piros vs T. Boyer | Challenger Men Singles | Clay | 1-0, 3-4, 0 - 0, saca T. Boyer | 65% / 65% | 2-1 45%, 1-2 35% | 26.5: 64% / 56% |
+| G. Marques vs N. Sanchez Izquierdo | Challenger Men Singles | Clay | 0-0, 0-0, 0 - 0, saca G. Marques | 8% / 16% | 0-2 68%, 1-2 24% | 19.5: 54% / 50% |
+| D. Ajdukovic vs F. C. Jianu | Challenger Men Singles | Clay | 1-0, 1-0, 0 - 15, saca F. C. Jianu | 69% / 81% | 2-0 47%, 1-2 31% | 18.5: 68% / 49% |
+| A. Smith vs D. Jakupovic | Challenger Women Singles | Hard | 1-0, 5-4, 0 - 0, saca A. Smith | 94% / 91% | 2-0 87%, 2-1 7% | 17.5: 27% / 29% |
+| D. Salkova vs H. Sakatsume | Challenger Women Singles | Hard | 0-0, 1-1, A - 40, saca H. Sakatsume | 52% / 52% | 2-0 28%, 1-2 26% | 22.5: 58% / 50% |
+| L. Schmidt vs V. Veleva | Itf Women Singles | Clay | 0-0, 1-0, 40 - 40, saca L. Schmidt | 53% / 62% | 2-0 29%, 1-2 26% |  |
+| M. Laron vs M. Giordano | Itf Women Singles | Clay | 0-0, 1-0, 40 - 30, saca M. Giordano | 89% / 88% | 2-0 65%, 2-1 24% |  |
+| A. Tejada vs A. D. Duarte | Itf Women Singles | Hard | 0-0, 0-1, 15 - 0, saca A. Tejada | 72% / 10% | 2-0 41%, 2-1 31% |  |
+| A. Soto Neira vs G. Kawano Cho | Itf Women Singles | Hard | 0-0, 0-0, 40 - 15, saca A. Soto Neira | 59% / 53% | 2-0 32%, 2-1 26% |  |
+| Y. Kabbaj vs N. Torner Sensano | Itf Women Singles | Clay | 1-0, 0-0, 40 - 30, saca N. Torner Sensano | 65% / 88% | 2-0 44%, 1-2 35% |  |
