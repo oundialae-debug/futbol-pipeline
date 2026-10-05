@@ -47,3 +47,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-05 07:06,12167960,Wta Singles,Beijing,I. Jovic,K. Rakhimova,menos,19.5,0.7234,0.7234,1.3,True,casa65
 2026-10-05 07:13,12168164,Atp Singles,Shanghai,S. C. Hong,R. Sakamoto,menos,21.5,0.565,0.4853,1.909,True,aprendida
 2026-10-05 07:14,12168127,Challenger Women Singles,Suzhou,E. Kalieva,Y. Ma,menos,22.5,0.5673,0.5147,1.8,True,aprendida
+2026-10-05 07:18,12168156,Atp Singles,Shanghai,L. Pavlovic,I. Simakin,menos,29.5,0.6927,0.5889,1.571,True,actual
