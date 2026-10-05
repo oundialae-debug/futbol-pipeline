@@ -124,7 +124,15 @@ def pagina(d, kicker, cuerpo, pregunta):
             f'<div style="flex:1;border-radius:5px;background:{a["c"]}"></div></div>'
             f'<div class="kick">{e(kicker)}</div><div class="cuerpo">{cuerpo}</div>'
             f'<div class="q">{e(d.get("question", pregunta))}</div>'
-            f'<div class="pie">{e(pie)}</div></div></div></body></html>')
+            f'<div class="pie" style="display:flex;justify-content:space-between;align-items:center"><span>{e(pie)}</span>'
+            f'{SWIPE if d["template"] not in SIN_SWIPE and d.get("swipe", True) else ""}</div></div></div></body></html>')
+
+
+# Aviso de "hay más": en todas menos en la última del carrusel y en las del perfil.
+SIN_SWIPE = {"follow", "our_calls", "picks_list"}
+SWIPE = (f'<span style="display:inline-flex;align-items:center;gap:10px;background:{AMARILLO};color:{NOCHE};'
+         f'border-radius:999px;padding:8px 22px;font-size:34px;font-weight:900;font-stretch:85%">Swipe'
+         f'<span style="font-size:46px;line-height:.6;letter-spacing:-8px">&#8250;&#8250;&#8250;</span></span>')
 
 
 def vs(h, a, centro='<span class="disp" style="font-size:56px;color:#5C6476">vs</span>', peq=False):
