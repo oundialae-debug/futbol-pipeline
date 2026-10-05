@@ -17,3 +17,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-05 04:39,12168206,Challenger Women Singles,Suzhou,S. Wei,K. Okamura,menos,22.5,0.5695,0.5,1.833,True,aprendida
 2026-10-05 04:40,12168133,Challenger Women Singles,Suzhou,R. Zhang,T. Prozorova,menos,17.5,0.5278,0.4424,2.1,True,aprendida
 2026-10-05 04:51,12168152,Atp Singles,Shanghai,R. Safiullin,A. Galarneau,menos,19.5,0.7223,0.625,1.5,True,actual
+2026-10-05 04:53,12168153,Atp Singles,Shanghai,L. Sonego,A. Dougaz,menos,26.5,0.6656,0.5767,1.615,True,actual
