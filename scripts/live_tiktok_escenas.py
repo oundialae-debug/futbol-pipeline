@@ -181,8 +181,6 @@ def escena_partido(m, r, rk, tab_eq, estrella, abre=False):
         frases.append(f"Three goals or more? {pct(o25)} percent.")
     if btts:
         frases.append(f"Both teams scoring: {pct(btts)} percent.")
-    if fnum(r.get("corners")):
-        frases.append(f"About {round(float(r['corners']))} corners and {round(float(r['tarjetas']))} yellow cards expected.")
     for e in (L, V):
         f = tab_eq.get(e)
         if f and f["forma"]:
@@ -193,9 +191,7 @@ def escena_partido(m, r, rk, tab_eq, estrella, abre=False):
         if e in estrella:
             j, n, _ = estrella[e]
             frases.append(f"Watch {j}: player rating *{n:.1f}*.")
-    rl, rv = ranking(rk, L), ranking(rk, V)
-    if rl[0] and rv[0]:
-        frases.append(f"FIFA ranking: {nom(L)} number {rl[0]}, {nom(V)} number {rv[0]}.")
+    rl, rv = ranking(rk, L), ranking(rk, V)  # en pantalla; no se dice, para que quepa en 30 min
     return {"id": "", "tipo": "partido", "objetivo_s": 72, "abre": abre, "frases": frases,
             "datos": {"local": nom(L), "visitante": nom(V), "cod_l": rl[1], "cod_v": rv[1],
                       "rk_l": rl[0], "rk_v": rv[0], "dia": dia(m["fecha"]), "hora_uk": hora_uk(m["fecha"]),
