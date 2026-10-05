@@ -14,3 +14,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-05 04:22,12168153,Atp Singles,Shanghai,L. Sonego,A. Dougaz,menos,23.5,0.5655,0.5147,1.8,True,aprendida
 2026-10-05 04:31,12168124,Challenger Women Singles,Suzhou,A. Ibragimova,R. Sramkova,menos,18.5,0.6492,0.5576,1.666,True,actual
 2026-10-05 04:38,12167948,Wta Singles,Beijing,D. Vekic,I. Swiatek,menos,18.5,0.6627,0.6627,1.4,True,casa65
+2026-10-05 04:39,12168206,Challenger Women Singles,Suzhou,S. Wei,K. Okamura,menos,22.5,0.5695,0.5,1.833,True,aprendida
