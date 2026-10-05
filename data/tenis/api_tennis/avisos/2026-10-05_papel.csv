@@ -54,3 +54,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-05 07:30,12168160,Atp Singles,Shanghai,M. Zheng,F. A. Gomez,menos,30.5,0.5985,0.5,1.833,True,aprendida
 2026-10-05 07:30,12168164,Atp Singles,Shanghai,S. C. Hong,R. Sakamoto,menos,22.5,0.6021,0.5147,1.8,True,aprendida
 2026-10-05 07:33,12168127,Challenger Women Singles,Suzhou,E. Kalieva,Y. Ma,menos,21.5,0.5596,0.5,1.833,True,aprendida
+2026-10-05 07:37,12168110,Atp Singles,Tokyo,C. Alcaraz,J. Munar,menos,21.5,0.5812,0.5147,1.8,True,aprendida
