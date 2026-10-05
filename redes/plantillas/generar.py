@@ -397,6 +397,7 @@ def our_calls(d):
 def picks_list(d):
     """Todos los pronósticos del día en una imagen: hora, partido, nuestra elección y su %."""
     filas = ""
+    vel = "filter:blur(22px);opacity:.9;user-select:none" if d.get("locked") else ""   # 6ª: pronóstico y % tapados
     for m in d["picks"]:
         h, a = dict(m["home"]), dict(m["away"])
         for t in (h, a):
@@ -406,15 +407,18 @@ def picks_list(d):
                   f'<div style="flex:1;min-width:0"><div style="font-size:36px;font-weight:800;white-space:nowrap">'
                   f'<span style="color:{h["c"]}">&#9679;</span> {e(h["short"])} <span style="color:{GRIS}">v</span> '
                   f'{e(a["short"])} <span style="color:{a["c"]}">&#9679;</span></div>'
-                  f'<div style="font-size:32px;font-weight:700;color:{AMARILLO};margin-top:2px">{e(m["pick"])}</div></div>'
-                  f'<div class="disp" style="font-size:72px">{m["pct"]}%</div></div>')
+                  f'<div style="font-size:32px;font-weight:700;color:{AMARILLO};margin-top:2px;{vel}">{e(m["pick"])}</div></div>'
+                  f'<div class="disp" style="font-size:72px;{vel}">{m["pct"]}%</div></div>')
     flechas = "".join(f'<span style="opacity:{o}">&#8250;</span>' for o in (.35, .65, 1))
     cta = (f'<div style="display:flex;align-items:center;gap:22px;background:{AMARILLO};color:{NOCHE};border-radius:26px;'
            f'padding:14px 26px"><img src="data:image/png;base64,{b64("perfil.png")}" style="width:84px;height:84px;'
            f'border-radius:50%;border:4px solid {NOCHE}"><div class="disp" style="flex:1;font-size:54px">@2yellowdata</div>'
            f'<div class="disp" style="font-size:120px;line-height:.7;letter-spacing:-14px">{flechas}</div></div>'
            if d.get("cta", True) else "")
-    cuerpo = (f'<div class="frase" style="font-size:62px">{e(d.get("title", "Today’s calls"))}</div>'
+    candado = ('<svg width="64" height="72" viewBox="0 0 24 27" style="vertical-align:middle;margin-right:14px">'
+               '<rect x="2" y="11" width="20" height="15" rx="3" fill="#F1F3F8"/>'
+               '<path d="M6 11V7a6 6 0 0 1 12 0v4" fill="none" stroke="#F1F3F8" stroke-width="3"/></svg>') if d.get("locked") else ""
+    cuerpo = (f'<div class="frase" style="font-size:62px">{candado}{e(d.get("title", "Today’s calls"))}</div>'
               f'<div>{filas}</div>{cta}')
     return pagina(d, d.get("kicker", "Unlocked"), cuerpo, d.get("question", "Which one are you taking?"))
 

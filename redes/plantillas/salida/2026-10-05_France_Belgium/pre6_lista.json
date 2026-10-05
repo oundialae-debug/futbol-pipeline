@@ -9,8 +9,8 @@
   "name": "Latvia",
   "short": "Latvia"
  },
- "kicker": "Unlocked",
- "title": "Tonight’s 8 calls",
+ "kicker": "Locked",
+ "title": "8 calls tonight",
  "picks": [
   {
    "time": "18:00",
@@ -116,5 +116,7 @@
    "pick": "Montenegro win",
    "pct": 55
   }
- ]
+ ],
+ "locked": true,
+ "question": "Swipe to unlock them all."
 }

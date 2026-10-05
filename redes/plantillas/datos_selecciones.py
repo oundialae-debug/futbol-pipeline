@@ -92,6 +92,13 @@ def dia(fecha_partido):
         else f"{t:%A}’s"
 
 
+def tapada(d):
+    """La 6ª enseña los partidos pero tapa pronóstico y %: la lista completa está en el perfil."""
+    n = len(d["picks"])
+    return {**d, "locked": True, "kicker": "Locked", "title": f"{n} calls tonight",
+            "question": "Swipe to unlock them all."}
+
+
 def teaser_lista(fecha, excluir=()):
     """6ª: el pronóstico MÁS SEGURO de la lista del día (solo modelo) que no sea el del propio partido.
     Lo que se tapa es justo lo que enseña la imagen del perfil."""
@@ -184,7 +191,7 @@ def post(equipo, fecha):
     # 6ª: la lista de pronósticos de la jornada siguiente (solo modelo), con @2yellowdata
     sig = str((pd.Timestamp(fecha) + pd.Timedelta(days=1)).date())
     try:
-        out["post6_lista"] = lista_hoy(sig)[1]["perfil_picks_hoy"]
+        out["post6_lista"] = tapada(lista_hoy(sig)[1]["perfil_picks_hoy"])
     except Exception:
         pass
     return m, out
@@ -232,7 +239,7 @@ def pre(equipo, fecha):
         lado = None if gl == gv else ("home" if (u.local if gl > gv else u.visitante) == m.local else "away")
         out["pre5_key_number"] = {**base, "template": "key_number", "team": lado, "number": f"{max(gl, gv)}–{min(gl, gv)}", "text": txt,
                                   "when": "Tonight · " + pd.Timestamp(x.fecha_partido).tz_convert("Europe/Madrid").strftime("%H:%M %Z"), "question": "Revenge or repeat?"}
-    out["pre6_lista"] = lista_hoy(fecha)[1]["perfil_picks_hoy"]       # 6ª: la lista del día, con @2yellowdata
+    out["pre6_lista"] = tapada(lista_hoy(fecha)[1]["perfil_picks_hoy"])     # 6ª: partidos a la vista, pronósticos tapados
     return m, out
 
 
