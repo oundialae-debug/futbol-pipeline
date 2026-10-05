@@ -1,0 +1,39 @@
+{
+ "competition": "Nations League",
+ "home": {
+  "name": "Italy",
+  "short": "Italy"
+ },
+ "away": {
+  "name": "Turkey",
+  "short": "Turkey"
+ },
+ "template": "elo_form",
+ "focus": "away",
+ "elo_home": [
+  1692,
+  1693,
+  1652,
+  1657,
+  1650,
+  1652,
+  1656,
+  1637,
+  1665,
+  1674
+ ],
+ "elo_away": [
+  1620,
+  1628,
+  1632,
+  1622,
+  1595,
+  1576,
+  1591,
+  1584,
+  1556,
+  1546
+ ],
+ "extra": "Italy: +24 in the same span.",
+ "question": "Crisis or just a blip?"
+}

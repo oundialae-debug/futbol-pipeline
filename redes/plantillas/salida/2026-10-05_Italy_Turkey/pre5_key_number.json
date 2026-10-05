@@ -1,0 +1,17 @@
+{
+ "competition": "Nations League",
+ "home": {
+  "name": "Italy",
+  "short": "Italy"
+ },
+ "away": {
+  "name": "Turkey",
+  "short": "Turkey"
+ },
+ "template": "key_number",
+ "team": "home",
+ "number": "4–1",
+ "text": "<b>Italy</b> won the last meeting, 7 days ago.",
+ "when": "Tonight · 20:45 CEST",
+ "question": "Revenge or repeat?"
+}

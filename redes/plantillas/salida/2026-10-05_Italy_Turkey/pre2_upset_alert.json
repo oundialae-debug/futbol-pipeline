@@ -1,0 +1,15 @@
+{
+ "competition": "Nations League",
+ "home": {
+  "name": "Italy",
+  "short": "Italy"
+ },
+ "away": {
+  "name": "Turkey",
+  "short": "Turkey"
+ },
+ "template": "upset_alert",
+ "underdog": "away",
+ "model_pct": 24,
+ "bookies_pct": 15
+}

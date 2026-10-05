@@ -1,0 +1,17 @@
+{
+ "competition": "Nations League",
+ "home": {
+  "name": "Italy",
+  "short": "Italy"
+ },
+ "away": {
+  "name": "Turkey",
+  "short": "Turkey"
+ },
+ "template": "goals",
+ "btts": 58,
+ "exp_goals": [
+  1.9,
+  1.2
+ ]
+}

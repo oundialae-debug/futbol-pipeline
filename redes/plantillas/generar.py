@@ -199,7 +199,7 @@ def goals(d):
 def elo_chart(d):
     """Línea del Elo de los dos equipos en sus últimos partidos (SVG)."""
     h, a = d["home"], d["away"]
-    W, H, pad = 860, 330, 16
+    W, H, pad = 860, 250, 16
     todos = d["elo_home"] + d["elo_away"]
     lo, hi = min(todos) - 10, max(todos) + 10
     def linea(vs_, c):

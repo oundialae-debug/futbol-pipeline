@@ -92,6 +92,21 @@ def dia(fecha_partido):
         else f"{t:%A}’s"
 
 
+def teaser_lista(fecha, excluir=()):
+    """6ª: el pronóstico MÁS SEGURO de la lista del día (solo modelo) que no sea el del propio partido.
+    Lo que se tapa es justo lo que enseña la imagen del perfil."""
+    _, datos = lista_hoy(fecha)
+    cand = [m for m in datos["perfil_picks_hoy"]["picks"]
+            if m["home"]["name"] not in excluir and m["away"]["name"] not in excluir]
+    if not cand:
+        return None
+    t = cand[0]                                   # la lista ya va ordenada de mayor a menor %
+    hora = pd.Timestamp(f"{fecha} {t['time']}")
+    return {"template": "follow", "competition": COMP, "home": t["home"], "away": t["away"],
+            "kicker": "Next up · Tonight", "side": None, "hidden_pct": t["pct"],
+            "text": f"Our call + {len(datos['perfil_picks_hoy']['picks']) - 1} more on our profile."}
+
+
 def teaser(top):
     """Datos de la 6ª: el próximo partido grande y el % de nuestro favorito, que irá tapado."""
     pr = {"home": top.mod_1, "draw": top.mod_X, "away": top.mod_2}
@@ -218,9 +233,9 @@ def pre(equipo, fecha):
         lado = None if gl == gv else ("home" if (u.local if gl > gv else u.visitante) == m.local else "away")
         out["pre5_key_number"] = {**base, "template": "key_number", "team": lado, "number": f"{max(gl, gv)}–{min(gl, gv)}", "text": txt,
                                   "when": "Tonight · " + pd.Timestamp(x.fecha_partido).tz_convert("Europe/Madrid").strftime("%H:%M %Z"), "question": "Revenge or repeat?"}
-    n, top = siguiente(fecha, excluir=m.match_id)
-    if top is not None:
-        out["pre6_follow"] = teaser(top)
+    t6 = teaser_lista(fecha, excluir=(m.local, m.visitante))
+    if t6 is not None:
+        out["pre6_follow"] = t6
     return m, out
 
 
