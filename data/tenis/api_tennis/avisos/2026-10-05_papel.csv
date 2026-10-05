@@ -36,3 +36,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-05 06:01,12167985,Challenger Men Singles,Wuning 3 (China) - Qualification,B. Zhukayev,Y. Demin,menos,20.5,0.7173,0.5889,1.571,True,actual
 2026-10-05 06:11,12168153,Atp Singles,Shanghai,L. Sonego,A. Dougaz,menos,35.5,0.6627,0.6627,1.4,True,casa65
 2026-10-05 06:17,12167977,Challenger Men Singles,Wuning 3 (China) - Qualification,S. Fomin,T. Derepasko,menos,17.5,0.6627,0.6627,1.4,True,casa65
+2026-10-05 06:18,12167960,Wta Singles,Beijing,I. Jovic,K. Rakhimova,menos,17.5,0.5767,0.5,1.833,True,aprendida
