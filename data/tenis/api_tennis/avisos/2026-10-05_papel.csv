@@ -19,3 +19,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-05 04:51,12168152,Atp Singles,Shanghai,R. Safiullin,A. Galarneau,menos,19.5,0.7223,0.625,1.5,True,actual
 2026-10-05 04:53,12168153,Atp Singles,Shanghai,L. Sonego,A. Dougaz,menos,26.5,0.6656,0.5767,1.615,True,actual
 2026-10-05 04:55,12168151,Atp Singles,Shanghai,A. Ilagan,N. Basilashvili,menos,17.5,0.721,0.6077,1.533,True,actual
+2026-10-05 05:04,12167977,Challenger Men Singles,Wuning 3 (China) - Qualification,S. Fomin,T. Derepasko,menos,22.5,0.6439,0.5366,1.727,True,aprendida
