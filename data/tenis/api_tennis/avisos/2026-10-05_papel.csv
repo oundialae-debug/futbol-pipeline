@@ -39,3 +39,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-05 06:18,12167960,Wta Singles,Beijing,I. Jovic,K. Rakhimova,menos,17.5,0.5767,0.5,1.833,True,aprendida
 2026-10-05 06:19,12168156,Atp Singles,Shanghai,L. Pavlovic,I. Simakin,menos,22.5,0.5652,0.5,1.833,True,aprendida
 2026-10-05 06:25,12167985,Challenger Men Singles,Wuning 3 (China) - Qualification,B. Zhukayev,Y. Demin,menos,20.5,0.7831,0.7831,1.2,True,casa65
+2026-10-05 06:26,12168151,Atp Singles,Shanghai,A. Ilagan,N. Basilashvili,más,34.5,0.6706,0.4424,2.1,True,aprendida
