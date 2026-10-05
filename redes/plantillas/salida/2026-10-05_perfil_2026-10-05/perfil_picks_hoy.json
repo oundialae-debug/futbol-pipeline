@@ -2,12 +2,12 @@
  "template": "picks_list",
  "competition": "Nations League · 05/10",
  "home": {
-  "name": "France",
-  "short": "France"
- },
- "away": {
   "name": "Italy",
   "short": "Italy"
+ },
+ "away": {
+  "name": "Turkey",
+  "short": "Turkey"
  },
  "kicker": "Unlocked",
  "title": "Tonight’s 8 calls",
@@ -28,19 +28,6 @@
   {
    "time": "20:45",
    "home": {
-    "name": "France",
-    "short": "France"
-   },
-   "away": {
-    "name": "Belgium",
-    "short": "Belgium"
-   },
-   "pick": "Over 2.5 goals",
-   "pct": 64
-  },
-  {
-   "time": "20:45",
-   "home": {
     "name": "Ukraine",
     "short": "Ukraine"
    },
@@ -49,6 +36,19 @@
     "short": "Hungary"
    },
    "pick": "Under 9.5 corners",
+   "pct": 64
+  },
+  {
+   "time": "20:45",
+   "home": {
+    "name": "France",
+    "short": "France"
+   },
+   "away": {
+    "name": "Belgium",
+    "short": "Belgium"
+   },
+   "pick": "Over 2.5 goals",
    "pct": 64
   },
   {
@@ -67,19 +67,6 @@
   {
    "time": "20:45",
    "home": {
-    "name": "Bosnia and Herzegovina",
-    "short": "Bosnia"
-   },
-   "away": {
-    "name": "Poland",
-    "short": "Poland"
-   },
-   "pick": "Under 9.5 corners",
-   "pct": 63
-  },
-  {
-   "time": "20:45",
-   "home": {
     "name": "Northern Ireland",
     "short": "N. Ireland"
    },
@@ -88,6 +75,19 @@
     "short": "Georgia"
    },
    "pick": "Over 1.5 goals",
+   "pct": 63
+  },
+  {
+   "time": "20:45",
+   "home": {
+    "name": "Bosnia and Herzegovina",
+    "short": "Bosnia"
+   },
+   "away": {
+    "name": "Poland",
+    "short": "Poland"
+   },
+   "pick": "Under 9.5 corners",
    "pct": 63
   },
   {
@@ -116,6 +116,5 @@
    "pick": "Cyprus win",
    "pct": 58
   }
- ],
- "question": "Which one are you taking?"
+ ]
 }

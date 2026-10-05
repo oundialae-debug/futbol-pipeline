@@ -5,6 +5,8 @@ Cruza data/selecciones/partidos.csv (resultados), registro_pronosticos.csv (nues
 y el Elo de modelos/selecciones/experimento_variables.py.
     python3 redes/plantillas/datos_selecciones.py post Germany 2026-10-04
     python3 redes/plantillas/datos_selecciones.py pre France 2026-10-05
+    python3 redes/plantillas/datos_selecciones.py hoy 2026-10-05        # todos los pronósticos del día
+    python3 redes/plantillas/datos_selecciones.py perfil 2026-10-05     # los dos que tapa la 6ª
 Deja los JSON y los PNG en redes/plantillas/salida/<fecha>_<local>_<visitante>/.
 Ejecutar desde la raíz del repo.
 """
@@ -20,7 +22,7 @@ sys.path.insert(0, "modelos/selecciones")
 import generar as G  # noqa: E402
 
 C = "data/selecciones"
-CORTO = {"Kosovo National Team": "Kosovo", "Republic of Ireland": "Ireland", "Bosnia and Herzegovina": "Bosnia",
+CORTO = {"Kosovo National Team": "Kosovo", "Republic of Ireland": "Ireland", "Bosnia and Herzegovina": "Bosnia", "Bosnia & Herzegovina": "Bosnia",
          "Czech Republic": "Czechia", "North Macedonia": "N. Macedonia", "Northern Ireland": "N. Ireland"}
 COMP = "Nations League"
 
@@ -247,11 +249,64 @@ def perfil(fecha):
     return {"local": "perfil", "visitante": fecha}, {"perfil_our_calls": d}
 
 
+def leer(nombre):
+    """Lee data/selecciones/<nombre> de origin/main (lo actualiza el workflow de selecciones); si no, el local."""
+    import io, subprocess
+    try:
+        txt = subprocess.run(["git", "show", f"origin/main:{C}/{nombre}"], capture_output=True, text=True, check=True).stdout
+        return pd.read_csv(io.StringIO(txt))
+    except Exception:
+        return pd.read_csv(f"{C}/{nombre}")
+
+
+# (columna del registro, mercado en cuotas_hoy, lado sí, lado no, texto sí, texto no). Solo mercados
+# con historial medido (modelos/selecciones/CLAUDE.md, "Listas para el usuario").
+MERCADOS_LISTA = [("1", "Full Time Result", "Home", None, "{h} win", None),
+                  ("X", "Full Time Result", "Draw", None, "Draw", None),
+                  ("2", "Full Time Result", "Away", None, "{a} win", None),
+                  ("btts", "Both Teams To Score", "Yes", "No", "Both teams score", "Not both teams score")]
+MERCADOS_LISTA += [(f"mas_{x}", f"Total Goals {x}", "Over", "Under", f"Over {x} goals", f"Under {x} goals")
+                   for x in ("1.5", "2.5", "3.5")]
+MERCADOS_LISTA += [(f"corners_mas_{x}", f"Total Corners {x}", "Over", "Under", f"Over {x} corners", f"Under {x} corners")
+                   for x in ("8.5", "9.5")]
+
+
+def lista_hoy(fecha, cuota_min=1.44, mejor_min=1.50):
+    """Lo más probable de cada partido (mezcla modelo/mercado de pesos_mezcla.json) con cuota mediana
+    >= cuota_min y mejor cuota >= mejor_min. Reproduce las listas del chat de la Nations League."""
+    w = {k: v["peso"] for k, v in json.load(open(f"{C}/pesos_mezcla.json")).items()}
+    r = leer("registro_pronosticos.csv")
+    r = r[r.fecha_partido.str.startswith(fecha)].sort_values("generado").drop_duplicates("match_id", keep="last")
+    cu = leer("cuotas_hoy.csv")
+    picks_ = []
+    for _, x in r.iterrows():
+        q = cu[cu.match_id == x.match_id]
+        cand = []
+        for k, mk, si, no, tsi, tno in MERCADOS_LISTA:
+            mo, ma = x.get(f"mod_{k}"), x.get(f"mkt_{k}")
+            if pd.isna(mo):
+                continue
+            p = mo if pd.isna(ma) else w.get(k, 0) * mo + (1 - w.get(k, 0)) * ma
+            for lado, txt, pp in ((si, tsi, p), (no, tno, 1 - p)):
+                o = q[(q.mercado == mk) & (q.lado == lado)].cuota if lado else pd.Series(dtype=float)
+                if len(o) and o.median() >= cuota_min and o.max() >= mejor_min:
+                    cand.append((pp, txt.format(h=CORTO.get(x.local, x.local), a=CORTO.get(x.visitante, x.visitante))))
+        if cand:
+            pp, txt = max(cand)
+            hora = pd.Timestamp(x.fecha_partido).tz_convert("Europe/Madrid")
+            picks_.append({"time": f"{hora:%H:%M}", "home": eq(x.local.replace(" & ", " and ")),
+                           "away": eq(x.visitante.replace(" & ", " and ")), "pick": txt, "pct": round(pp * 100)})
+    picks_.sort(key=lambda m: -m["pct"])
+    d = {"template": "picks_list", "competition": f"{COMP} · {fecha[8:]}/{fecha[5:7]}", "home": picks_[0]["home"],
+         "away": picks_[0]["away"], "kicker": "Unlocked", "title": f"Tonight’s {len(picks_)} calls", "picks": picks_}
+    return {"local": "perfil", "visitante": fecha}, {"perfil_picks_hoy": d}
+
+
 if __name__ == "__main__":
     modo = sys.argv[1]
-    if modo == "perfil":
+    if modo in ("perfil", "hoy"):
         fecha = sys.argv[2]
-        m, datos = perfil(fecha)
+        m, datos = perfil(fecha) if modo == "perfil" else lista_hoy(fecha, *map(float, sys.argv[3:5]))
         m = pd.Series(m)
     else:
         equipo, fecha = sys.argv[2:4]
