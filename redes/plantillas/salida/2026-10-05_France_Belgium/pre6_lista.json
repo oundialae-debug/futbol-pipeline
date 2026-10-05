@@ -1,0 +1,120 @@
+{
+ "template": "picks_list",
+ "competition": "Nations League · 05/10",
+ "home": {
+  "name": "Cyprus",
+  "short": "Cyprus"
+ },
+ "away": {
+  "name": "Latvia",
+  "short": "Latvia"
+ },
+ "kicker": "Unlocked",
+ "title": "Tonight’s 8 calls",
+ "picks": [
+  {
+   "time": "18:00",
+   "home": {
+    "name": "Cyprus",
+    "short": "Cyprus"
+   },
+   "away": {
+    "name": "Latvia",
+    "short": "Latvia"
+   },
+   "pick": "Under 2.5 goals",
+   "pct": 65
+  },
+  {
+   "time": "20:45",
+   "home": {
+    "name": "Italy",
+    "short": "Italy"
+   },
+   "away": {
+    "name": "Turkey",
+    "short": "Turkey"
+   },
+   "pick": "Under 3.5 goals",
+   "pct": 64
+  },
+  {
+   "time": "20:45",
+   "home": {
+    "name": "Northern Ireland",
+    "short": "N. Ireland"
+   },
+   "away": {
+    "name": "Georgia",
+    "short": "Georgia"
+   },
+   "pick": "Under 2.5 goals",
+   "pct": 64
+  },
+  {
+   "time": "20:45",
+   "home": {
+    "name": "Romania",
+    "short": "Romania"
+   },
+   "away": {
+    "name": "Sweden",
+    "short": "Sweden"
+   },
+   "pick": "Under 3.5 goals",
+   "pct": 62
+  },
+  {
+   "time": "20:45",
+   "home": {
+    "name": "France",
+    "short": "France"
+   },
+   "away": {
+    "name": "Belgium",
+    "short": "Belgium"
+   },
+   "pick": "Under 3.5 goals",
+   "pct": 62
+  },
+  {
+   "time": "20:45",
+   "home": {
+    "name": "Ukraine",
+    "short": "Ukraine"
+   },
+   "away": {
+    "name": "Hungary",
+    "short": "Hungary"
+   },
+   "pick": "Under 2.5 goals",
+   "pct": 57
+  },
+  {
+   "time": "20:45",
+   "home": {
+    "name": "Bosnia and Herzegovina",
+    "short": "Bosnia"
+   },
+   "away": {
+    "name": "Poland",
+    "short": "Poland"
+   },
+   "pick": "Under 2.5 goals",
+   "pct": 56
+  },
+  {
+   "time": "20:45",
+   "home": {
+    "name": "Montenegro",
+    "short": "Montenegro"
+   },
+   "away": {
+    "name": "Armenia",
+    "short": "Armenia"
+   },
+   "pick": "Montenegro win",
+   "pct": 55
+  }
+ ]
+}

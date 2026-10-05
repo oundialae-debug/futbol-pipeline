@@ -181,13 +181,12 @@ def post(equipo, fecha):
     if len(filas) >= 3:
         out["post5_weekend_record"] = {"template": "weekend_record", "competition": f"{COMP} · {fecha[8:]}/{fecha[5:7]}",
                                        "matches": filas, "question": "Beat us next time?"}
-    # última: gancho para ir al perfil
-    n, top = siguiente(pd.Timestamp(fecha) + pd.Timedelta(days=1))
-    rec = out.get("post5_weekend_record")
-    if top is not None and rec:
-        filas = G.mejores_aciertos(rec["matches"])
-        ok = sum(1 for x in filas if x[6])
-        out["post6_follow"] = {**teaser(top), "badge": f"{ok}/{len(filas)} yesterday"}
+    # 6ª: la lista de pronósticos de la jornada siguiente (solo modelo), con @2yellowdata
+    sig = str((pd.Timestamp(fecha) + pd.Timedelta(days=1)).date())
+    try:
+        out["post6_lista"] = lista_hoy(sig)[1]["perfil_picks_hoy"]
+    except Exception:
+        pass
     return m, out
 
 
@@ -233,9 +232,7 @@ def pre(equipo, fecha):
         lado = None if gl == gv else ("home" if (u.local if gl > gv else u.visitante) == m.local else "away")
         out["pre5_key_number"] = {**base, "template": "key_number", "team": lado, "number": f"{max(gl, gv)}–{min(gl, gv)}", "text": txt,
                                   "when": "Tonight · " + pd.Timestamp(x.fecha_partido).tz_convert("Europe/Madrid").strftime("%H:%M %Z"), "question": "Revenge or repeat?"}
-    t6 = teaser_lista(fecha, excluir=(m.local, m.visitante))
-    if t6 is not None:
-        out["pre6_follow"] = t6
+    out["pre6_lista"] = lista_hoy(fecha)[1]["perfil_picks_hoy"]       # 6ª: la lista del día, con @2yellowdata
     return m, out
 
 
