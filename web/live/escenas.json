@@ -1,6 +1,6 @@
 {
  "titulo": "Nations League live data",
- "generado": "2026-10-05T14:38+00:00",
+ "generado": "2026-10-05T14:44+00:00",
  "datos_hasta": "2026-10-05T13:54",
  "escenas": [
   {
@@ -8,7 +8,7 @@
    "objetivo_s": 35,
    "abre": true,
    "frases": [
-    "Hey hey hey! Welcome in! I'm *Blitz*, your AI football data host.",
+    "Hey hey hey! Welcome in! I'm *Blitz*, and tonight every number comes from our AI model.",
     "Nations League week. *18 matches* coming up, and I've got numbers on every single one.",
     "86 games already played. *213 goals*. Let's go!"
    ],
@@ -2148,7 +2148,7 @@
    "objetivo_s": 25,
    "frases": [
     "That's the full board! Every match, every number.",
-    "I'm Blitz, an AI, and I'll be right back. From the top. Stay, stay, stay!"
+    "All of it worked out by our AI model. I'll be right back, from the top. Stay, stay, stay!"
    ],
    "datos": {},
    "id": "s29",

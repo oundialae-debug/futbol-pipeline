@@ -240,7 +240,7 @@ def construir(ahora):
 
     n_jug = len(jugados)
     escenas.append({"tipo": "intro", "objetivo_s": 35, "abre": True, "frases": [
-        "Hey hey hey! Welcome in! I'm *Blitz*, your AI football data host.",
+        "Hey hey hey! Welcome in! I'm *Blitz*, and tonight every number comes from our AI model.",
         f"Nations League week. *{sum(len(v) for v in dias.values())} matches* coming up, and I've got numbers on every single one.",
         f"{n_jug} games already played. *{sum(m['gl'] + m['gv'] for m in jugados)} goals*. Let's go!"],
         "datos": {"jugados": n_jug, "goles": sum(m["gl"] + m["gv"] for m in jugados),
@@ -344,7 +344,7 @@ def construir(ahora):
     escenas.extend(extra)
     escenas.append({"tipo": "cierre", "objetivo_s": 25, "frases": [
         "That's the full board! Every match, every number.",
-        "I'm Blitz, an AI, and I'll be right back. From the top. Stay, stay, stay!"], "datos": {}})
+        "All of it worked out by our AI model. I'll be right back, from the top. Stay, stay, stay!"], "datos": {}})
     for i, e in enumerate(escenas):
         e["id"] = f"s{i:02d}"
         e.setdefault("abre", False)

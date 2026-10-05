@@ -138,7 +138,7 @@ h2 { font-family: var(--f-display); font-weight: 800; font-size: 1.6rem; margin:
 </style>
 
 <div class="stage">
-  <div class="bar"><span class="live">Live</span><span class="ai">AI host</span><span class="grow"></span><span class="clock" id="clock">--:--</span></div>
+  <div class="bar"><span class="live">Live</span><span class="ai">AI-powered data</span><span class="grow"></span><span class="clock" id="clock">--:--</span></div>
   <div class="host">
     <div class="blitz" id="blitz" aria-hidden="true"><span class="eye l"></span><span class="eye r"></span><span class="mouth" id="mouth"></span></div>
     <div class="say"><div class="name">Blitz</div><div class="line" id="line">Nations League data, no brakes.</div></div>
@@ -169,7 +169,7 @@ let ESC = null, GUION = {}, idx = 0, audio = new Audio(), analyser = null, demoT
 audio.preload = "auto";
 
 const R = {
-  intro: d => `<div class="eyebrow">UEFA Nations League · AI data show</div><h1>Every match.<br>Every number.</h1>
+  intro: d => `<div class="eyebrow">UEFA Nations League · data by our AI model</div><h1>Every match.<br>Every number.</h1>
     <div class="tiles"><div class="tile hot"><div class="k">Coming up</div><div class="v">${d.proximos}</div></div>
     <div class="tile"><div class="k">Played</div><div class="v">${d.jugados}</div></div><div class="tile"><div class="k">Goals</div><div class="v">${d.goles}</div></div></div>`,
   agenda: d => `<div class="eyebrow">${esc(d.dia)} · UK time</div><h1>${d.partidos.length} matches</h1><div class="rows">${d.partidos.map(p => `
@@ -302,7 +302,7 @@ function ticker() {
     if (s.tipo === "partido") items.push(`<span>${esc(d.dia.slice(0, 3))} ${d.hora_uk} · <b>${esc(d.local)}</b> ${d.p1}% · draw ${d.px}% · <b>${esc(d.visitante)}</b> ${d.p2}%</span>`);
     if (s.tipo === "resultados") d.partidos.forEach(p => items.push(`<span>FT · ${esc(p.local)} <b>${p.gl}–${p.gv}</b> ${esc(p.visitante)}</span>`));
   }
-  $("#ticker").innerHTML = items.join("") + "<span>AI-generated commentary · statistics only</span>";
+  $("#ticker").innerHTML = items.join("") + "<span>Probabilities and ratings by our AI model · statistics only</span>";
 }
 
 setInterval(() => { $("#clock").textContent = new Date().toLocaleTimeString([], {hour: "2-digit", minute: "2-digit"}); }, 1000);
