@@ -7,8 +7,8 @@ Las claves NO están aquí: son credenciales del entorno (ajustes del entorno ->
 API credentials, tipo Bearer) y el proxy las añade solo a las peticiones a su
 dominio. Por eso no se envía cabecera Authorization.
 
-Probado el 05/10/2026: Groq y Cerebras responden; Mistral acepta la clave pero
-devuelve 429 en todo (plan gratuito de la API sin activar del todo).
+Probado el 05/10/2026: Groq, Cerebras y Mistral responden. En el plan gratuito
+de Mistral, small/medium/magistral tienen límite 0 (devuelven 429); ministral sí va.
 
 Uso:
     from llm_gratis import preguntar
@@ -25,7 +25,8 @@ import urllib.request
 PROVEEDORES = [
     ("groq", "https://api.groq.com/openai/v1", "openai/gpt-oss-120b"),
     ("cerebras", "https://api.cerebras.ai/v1", "gpt-oss-120b"),
-    ("mistral", "https://api.mistral.ai/v1", "mistral-small-latest"),
+    # Mistral gratis: solo ministral-14b/8b/3b, codestral y open-mistral-nemo (small/medium/magistral: 0 pet./min)
+    ("mistral", "https://api.mistral.ai/v1", "ministral-14b-latest"),
 ]
 
 

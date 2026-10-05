@@ -24,7 +24,7 @@
 
 ## APIs gratuitas
 La skill .claude/skills/free-llm-apis guía para usar proveedores LLM gratuitos. El nivel gratuito de Gemini está bloqueado en el EEE, Reino Unido y Suiza.
-- Configurados (credenciales del entorno, el proxy pone la clave; nunca en el código): Groq y Cerebras funcionan; Mistral da 429 (plan sin activar). Usar `scripts/llm_gratis.py` → `preguntar(prompt)` (Groq, si falla Cerebras). Solo tareas mecánicas y datos públicos; avisar al usuario antes de usarlo.
+- Configurados (credenciales del entorno, el proxy pone la clave; nunca en el código): Groq, Cerebras y Mistral funcionan (Mistral gratis: solo ministral/codestral/nemo; small y medium dan 429). Usar `scripts/llm_gratis.py` → `preguntar(prompt)` (Groq → Cerebras → Mistral). Solo tareas mecánicas y datos públicos; avisar al usuario antes de usarlo.
 
 ## Notas compartidas
 Apunta aquí, en una línea, las decisiones y lo aprendido para los próximos chats.
