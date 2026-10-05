@@ -626,9 +626,7 @@ hora,event_key,tipo,torneo,superficie,jugador1,jugador2,mejor_de,p_saque1,p_saqu
 2026-10-05 13:00,12168048,Challenger Men Singles,Villena,Clay,M. Carrascosa Diaz,B. Gojo,3,0.5825,0.68,0.1105,0.0841,17.5,0.8192,0.5472,1.68,2.03,1,22.79
 2026-10-05 13:00,12168048,Challenger Men Singles,Villena,Clay,M. Carrascosa Diaz,B. Gojo,3,0.5825,0.68,0.1105,0.0841,18.5,0.725,0.4523,2.01,1.66,0,22.79
 2026-10-05 13:00,12168048,Challenger Men Singles,Villena,Clay,M. Carrascosa Diaz,B. Gojo,3,0.5825,0.68,0.1105,0.0841,19.5,0.6305,0.3854,2.36,1.48,0,22.79
-2026-10-05 13:00,12168099,Challenger Men Singles,Antofagasta,Clay,G. A. Olivieri,V. Aboian,3,0.5725,0.5650000000000001,0.5394,0.6134,20.5,0.6814,0.5543,1.64,2.04,0,24.5
-2026-10-05 13:00,12168099,Challenger Men Singles,Antofagasta,Clay,G. A. Olivieri,V. Aboian,3,0.5725,0.5650000000000001,0.5394,0.6134,21.5,0.6315,0.5027,1.83,1.85,1,24.5
-2026-10-05 13:00,12168099,Challenger Men Singles,Antofagasta,Clay,G. A. Olivieri,V. Aboian,3,0.5725,0.5650000000000001,0.5394,0.6134,22.5,0.5649,0.4457,2.04,1.64,0,24.5
+2026-10-05 17:02,12168099,Challenger Men Singles,Antofagasta,Clay,G. A. Olivieri,V. Aboian,3,0.5725,0.5650000000000001,0.5394,0.6057,21.5,0.6315,0.513,1.87,1.97,1,24.5
 2026-10-05 13:00,12168361,Itf Women Singles,W50 Heraklion 3 (Greece),Clay,M. Laron,M. Giordano,3,0.5650000000000001,0.4875,0.8503,0.8453,17.5,0.7519,0.5328,1.71,1.95,0,22.2
 2026-10-05 13:00,12168361,Itf Women Singles,W50 Heraklion 3 (Greece),Clay,M. Laron,M. Giordano,3,0.5650000000000001,0.4875,0.8503,0.8453,18.5,0.6641,0.4945,1.84,1.8,1,22.2
 2026-10-05 13:00,12168365,Itf Women Singles,W50 Heraklion 3 (Greece),Clay,S. Kryvoruchko,S. Ogescu,3,0.505,0.5325,0.3559,0.2159,18.5,0.7794,0.5219,1.75,1.91,1,23.9
@@ -637,3 +635,4 @@ hora,event_key,tipo,torneo,superficie,jugador1,jugador2,mejor_de,p_saque1,p_saqu
 2026-10-05 13:00,12168367,Itf Women Singles,W50 Heraklion 3 (Greece),Clay,K. Wiersholm,E. Korokozidi,3,0.48,0.52,0.2953,0.1009,16.5,0.8999,0.629,1.51,2.56,0,23.56
 2026-10-05 13:00,12168367,Itf Women Singles,W50 Heraklion 3 (Greece),Clay,K. Wiersholm,E. Korokozidi,3,0.48,0.52,0.2953,0.1009,17.5,0.8319,0.4945,1.84,1.8,1,23.56
 2026-10-05 13:00,12168367,Itf Women Singles,W50 Heraklion 3 (Greece),Clay,K. Wiersholm,E. Korokozidi,3,0.48,0.52,0.2953,0.1009,18.5,0.7575,0.4378,2.17,1.69,0,23.56
+2026-10-05 17:02,12168358,Itf Women Singles,W15 Cipolletti (Argentina),Hard,M. Bulbarella,A. Pajello,3,0.5175,0.6375000000000001,0.0583,0.8125,19.5,0.465,0.4767,1.91,1.74,1,20.69

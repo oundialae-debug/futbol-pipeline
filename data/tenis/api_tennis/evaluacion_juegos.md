@@ -1,14 +1,14 @@
 # Más/menos juegos en directo: apuestas en papel
 
-Partidos acabados con cuota de juegos en el registro: **349**. Una apuesta por partido (se agrupa por partido). Cuota = la de la API en esa pasada, no la de Luckia. Con menos de 20 apuestas el número no significa nada.
+Partidos acabados con cuota de juegos en el registro: **360**. Una apuesta por partido (se agrupa por partido). Cuota = la de la API en esa pasada, no la de Luckia. Con menos de 20 apuestas el número no significa nada.
 
 | estrategia | apuestas | aciertos | beneficio medio | sigmas |
 |---|---|---|---|---|
-| **señal: vigilar el menos** | 87 | 67% | +19.0% | +1.99 |
-| control: siempre el menos (1ª pasada) | 349 | 50% | -8.4% | -1.68 |
-| control: siempre el más (1ª pasada) | 349 | 50% | -6.0% | -1.20 |
+| **señal: vigilar el menos** | 89 | 67% | +20.6% | +2.19 |
+| control: siempre el menos (1ª pasada) | 360 | 50% | -7.6% | -1.55 |
+| control: siempre el más (1ª pasada) | 360 | 50% | -6.8% | -1.38 |
 
-Brier del 'más' en la línea principal (1ª pasada): modelo 0.2696, mercado 0.2515 (menor es mejor). El modelo da al más +12.5% sobre lo que pasa de verdad.
+Brier del 'más' en la línea principal (1ª pasada): modelo 0.2700, mercado 0.2516 (menor es mejor). El modelo da al más +12.9% sobre lo que pasa de verdad.
 
 ## Señales
 
@@ -94,7 +94,9 @@ Brier del 'más' en la línea principal (1ª pasada): modelo 0.2696, mercado 0.2
 | ITF M M15 Telavi 2 (Georgia): S. Paardekooper vs D. Popko | 20.5 | 1.67 | 19 | gana |
 | ITF M M25 Zaragoza: R. Nijboer vs A. Ritschard | 24.5 | 1.91 | 19 | gana |
 | WTA 1000 Beijing: D. Vekic vs I. Swiatek | 32.5 | 1.61 | 31 | gana |
+| WTA 1000 Beijing: C. Gauff vs X. Sun | 25.5 | 1.91 | 19 | gana |
 | Challenger Wuning 3 (China): L. Castelnuovo vs A. Santillan | 27.5 | 1.67 | 31 | pierde |
+| Challenger Braga: G. Marques vs N. Sanchez Izquierdo | 20.5 | 1.83 | 19 | gana |
 | WTA 125 Suzhou: R. Zhang vs T. Prozorova | 22.5 | 1.83 | 27 | pierde |
 | ATP Shanghai: L. Sonego vs A. Dougaz | 35.5 | 1.36 | 35 | gana |
 | ATP Shanghai: L. Pavlovic vs I. Simakin | 28.5 | 3.00 | 27 | gana |
@@ -113,11 +115,11 @@ Brier del 'más' en la línea principal (1ª pasada): modelo 0.2696, mercado 0.2
 
 ## Previos (antes de empezar), línea principal de juegos y ganador
 
-454 partidos. Juegos (más de la línea principal), Brier (menor es mejor): modelo 0.2743, modelo corregido con el historial 0.2557, casa 0.2507. Pasó el más en el 50%.
-Ganador (454): acierto modelo 67%, casa 72%.
+479 partidos. Juegos (más de la línea principal), Brier (menor es mejor): modelo 0.2744, modelo corregido con el historial 0.2553, casa 0.2509. Pasó el más en el 50%.
+Ganador (479): acierto modelo 66%, casa 71%.
 
 ## Aprendizaje (recalibración del modelo)
 
-Partidos resueltos: 277 (1984 líneas). Activa: **sí** (hace falta 30+ partidos y que mejore a la CASA en partidos que no vio).
-**Apostando con lo aprendido, día a día** (cada día aprende solo de los anteriores): 175 apuestas, aciertos 46%, beneficio medio -15.3%, -2.15 sigmas.
-Brier (menor es mejor): modelo 0.2702, modelo con el saque de hoy 0.2612, casa 0.2456, recalibrado (validado por partidos) 0.2359. Sesgo del modelo hacia el más: +18.2%.
+Partidos resueltos: 288 (2057 líneas). Activa: **sí** (hace falta 30+ partidos y que mejore a la CASA en partidos que no vio).
+**Apostando con lo aprendido, día a día** (cada día aprende solo de los anteriores): 186 apuestas, aciertos 47%, beneficio medio -13.3%, -1.93 sigmas.
+Brier (menor es mejor): modelo 0.2693, modelo con el saque de hoy 0.2605, casa 0.2448, recalibrado (validado por partidos) 0.2347. Sesgo del modelo hacia el más: +18.3%.
