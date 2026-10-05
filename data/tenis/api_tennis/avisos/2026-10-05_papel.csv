@@ -51,3 +51,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-05 07:30,12167976,Challenger Men Singles,Wuning 3 (China) - Qualification,L. Castelnuovo,A. Santillan,menos,22.5,0.6737,0.5,1.833,True,aprendida
 2026-10-05 07:30,12168156,Atp Singles,Shanghai,L. Pavlovic,I. Simakin,menos,29.5,0.5573,0.4233,2.2,True,aprendida
 2026-10-05 07:30,12168159,Atp Singles,Shanghai,A. Walton,R. Te,menos,23.5,0.632,0.5366,1.727,True,aprendida
+2026-10-05 07:30,12168160,Atp Singles,Shanghai,M. Zheng,F. A. Gomez,menos,30.5,0.5985,0.5,1.833,True,aprendida
