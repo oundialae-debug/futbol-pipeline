@@ -57,3 +57,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-05 07:37,12168110,Atp Singles,Tokyo,C. Alcaraz,J. Munar,menos,21.5,0.5812,0.5147,1.8,True,aprendida
 2026-10-05 07:37,12168156,Atp Singles,Shanghai,L. Pavlovic,I. Simakin,menos,29.5,0.7102,0.5767,1.615,True,actual
 2026-10-05 07:49,12168110,Atp Singles,Tokyo,C. Alcaraz,J. Munar,menos,22.5,0.6299,0.5576,1.666,True,actual
+2026-10-05 07:50,12168159,Atp Singles,Shanghai,A. Walton,R. Te,menos,22.5,0.7348,0.6451,1.444,True,actual
