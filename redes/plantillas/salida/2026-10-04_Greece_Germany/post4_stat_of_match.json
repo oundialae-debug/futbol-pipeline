@@ -15,5 +15,6 @@
  "template": "stat_of_match",
  "number": "21",
  "text": "shots from <b>Germany</b>. Zero goals.",
+ "team": "away",
  "question": "Wasteful or unlucky?"
 }

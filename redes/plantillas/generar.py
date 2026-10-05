@@ -7,7 +7,7 @@ y la pregunta final. Cinco de previo y cinco de postpartido.
 Zona segura de TikTok: nada a menos de 185 px arriba, 380 abajo, 140 a la derecha
 (--guias la dibuja). Sin API: solo datos que ya estén en disco.
 """
-import argparse, base64, html, json
+import argparse, base64, html, json, re
 from pathlib import Path
 
 AQUI = Path(__file__).resolve().parent
@@ -15,6 +15,7 @@ REC = AQUI / "recursos"
 AMARILLO, ROJO, VERDE, GRIS, NOCHE = "#FFD21F", "#FF3B3B", "#2BD67B", "#5C6476", "#0A0C11"
 KITS = json.loads((REC / "kits_camiseta.json").read_text())
 GUIAS = False
+ACTUAL = ({"c": "#F1F3F8"}, {"c": "#F1F3F8"})
 
 
 def b64(p):
@@ -25,23 +26,47 @@ def e(t):
     return html.escape(str(t))
 
 
+def _hls(c):
+    import colorsys
+    r, g, b = (int(c.lstrip("#")[k:k + 2], 16) / 255 for k in (0, 2, 4))
+    return colorsys.rgb_to_hls(r, g, b)
+
+
+def _hex(h, l, s):
+    import colorsys
+    return "#%02X%02X%02X" % tuple(round(v * 255) for v in colorsys.hls_to_rgb(h, l, s))
+
+
 def visible(c):
-    """Aclara los colores muy oscuros para que se vean sobre el fondo noche."""
-    r, g, b = (int(c.lstrip("#")[i:i + 2], 16) for i in (0, 2, 4))
-    if 0.2126 * r + 0.7152 * g + 0.0722 * b >= 70:
-        return c
-    return "#%02X%02X%02X" % tuple(round(v + (255 - v) * .45) for v in (r, g, b))
+    """Sube la luz de los colores oscuros SIN perder el tono (no a gris), para el fondo noche."""
+    h, l, s = _hls(c)
+    if s < .2:                       # blanco, negro o gris: blanco
+        return "#F1F3F8" if l > .5 or l < .25 else _hex(h, .75, s)
+    return _hex(h, min(max(l, .52), .62), max(s, .7))
 
 
 def color(eq):
-    """Color de la 1ª equipación; si es blanca casi entera, el segundo color."""
+    """El color con más carácter de la 1ª equipación (rojo de Bélgica, azul de Francia...).
+    Si la camiseta es blanca/negra sin color fuerte (Alemania, Real Madrid), blanco."""
     if eq.get("color"):
         return visible(eq["color"])
+    if eq["name"] in COLOR_FIJO:
+        return COLOR_FIJO[eq["name"]]
     kit = (KITS.get(eq.get("kit", eq["name"])) or [{}])[0]
-    cs = kit.get("colores") or ["#9AA3B5"]
-    if cs[0].upper() == "#FFFFFF" and len(cs) > 1 and kit["partes"][0] < 0.8:
-        return visible(cs[1])
-    return visible(cs[0])
+    cand = [(c, p) for c, p in zip(kit.get("colores", []), kit.get("partes", [])) if p >= .04]
+    vivos = [(c, p) for c, p in cand if _hls(c)[2] >= .35 and .08 < _hls(c)[1] < .92]
+    if not vivos:
+        return "#F1F3F8"
+    return visible(max(vivos, key=lambda cp: cp[1] * (.5 + _hls(cp[0])[2]))[0])
+
+
+# Equipos cuyo color de camiseta engaña (un detalle se lleva el protagonismo).
+COLOR_FIJO = {"Germany": "#F1F3F8"}
+
+
+def texto_sobre(c):
+    r, g, b = (int(c.lstrip("#")[k:k + 2], 16) for k in (0, 2, 4))
+    return NOCHE if 0.2126 * r + 0.7152 * g + 0.0722 * b > 150 else "#FFFFFF"
 
 
 CSS = f"""
@@ -50,13 +75,13 @@ CSS = f"""
 *{{box-sizing:border-box;margin:0}}
 body{{width:1080px;height:1920px;background:{NOCHE};color:#F1F3F8;font-family:Archivo,sans-serif;overflow:hidden}}
 #v{{position:relative;width:1080px;height:1920px;overflow:hidden;
- background:radial-gradient(1100px 900px at 0% 0%,color-mix(in srgb,var(--c1) 38%,transparent),transparent 70%),
-            radial-gradient(1100px 900px at 100% 0%,color-mix(in srgb,var(--c2) 34%,transparent),transparent 70%),{NOCHE}}}
+ background:radial-gradient(1100px 900px at 0% 0%,color-mix(in srgb,var(--c1) 62%,transparent),transparent 70%),
+            radial-gradient(1100px 900px at 100% 0%,color-mix(in srgb,var(--c2) 58%,transparent),transparent 70%),{NOCHE}}}
 .safe{{position:absolute;left:80px;right:140px;top:185px;bottom:380px;display:flex;flex-direction:column}}
 .top{{display:flex;justify-content:space-between;align-items:center}}
 .top img{{height:80px;margin-left:-14px}}
 .chip{{font-size:30px;font-weight:700;letter-spacing:2px;color:#C9CED9;text-transform:uppercase}}
-.kick{{margin-top:40px;display:inline-block;align-self:flex-start;padding:10px 22px;border-radius:12px;
+.kick{{margin-top:30px;display:inline-block;align-self:flex-start;padding:10px 22px;border-radius:12px;
  background:{AMARILLO};color:{NOCHE};font-size:36px;font-weight:900;letter-spacing:3px;text-transform:uppercase}}
 .cuerpo{{flex:1;display:flex;flex-direction:column;justify-content:center;gap:44px}}
 .num{{font-size:300px;line-height:.85;font-weight:900;font-stretch:72%;letter-spacing:-6px}}
@@ -64,12 +89,12 @@ body{{width:1080px;height:1920px;background:{NOCHE};color:#F1F3F8;font-family:Ar
 .frase b{{color:{AMARILLO}}}
 .disp{{font-weight:900;font-stretch:75%}}
 .vs{{display:flex;align-items:center;justify-content:space-between;gap:20px}}
-.eq{{display:flex;align-items:center;gap:18px;font-size:50px;font-weight:800;font-stretch:85%}}
-.eq i{{width:30px;height:30px;border-radius:50%;background:var(--c);flex:none}}
+.eq{{display:inline-flex;align-items:center;padding:8px 24px;border-radius:14px;background:var(--c);color:var(--t);font-size:48px;font-weight:900;font-stretch:85%;white-space:nowrap}}
+.eq i{{display:none}}
 .eq.r{{flex-direction:row-reverse;text-align:right}}
 .res{{font-size:150px;line-height:1;font-weight:900;font-stretch:72%;white-space:nowrap}}
 .res s{{text-decoration:none;color:{GRIS};margin:0 8px}}
-.vs.peq .eq{{font-size:40px}} .vs.peq .res{{font-size:96px}} .vs.peq .eq i{{width:24px;height:24px}}
+.vs.peq .eq{{font-size:38px;padding:6px 18px}} .vs.peq .res{{font-size:96px}} .vs.peq .eq i{{width:24px;height:24px}}
 .mini{{font-size:38px;color:#AEB5C4;font-weight:600}}
 .pill{{align-self:flex-start;padding:16px 30px;border-radius:999px;font-size:44px;font-weight:900;color:{NOCHE}}}
 .q{{font-size:64px;font-weight:900;font-stretch:80%;line-height:1}}
@@ -95,18 +120,21 @@ def pagina(d, kicker, cuerpo, pregunta):
             f'<div id="v" style="--c1:{h["c"]};--c2:{a["c"]}"><div class="safe">'
             f'<div class="top"><img src="data:image/png;base64,{b64("2yellow-logo-transparent-for-dark.png")}">'
             f'<div class="chip">{e(d.get("competition", ""))}</div></div>'
+            f'<div style="display:flex;height:10px;gap:6px;margin-top:22px"><div style="flex:1;border-radius:5px;background:{h["c"]}"></div>'
+            f'<div style="flex:1;border-radius:5px;background:{a["c"]}"></div></div>'
             f'<div class="kick">{e(kicker)}</div><div class="cuerpo">{cuerpo}</div>'
             f'<div class="q">{e(d.get("question", pregunta))}</div>'
             f'<div class="pie">{e(pie)}</div></div></div></body></html>')
 
 
 def vs(h, a, centro='<span class="disp" style="font-size:56px;color:#5C6476">vs</span>', peq=False):
-    return (f'<div class="vs{" peq" if peq else ""}"><div class="eq" style="--c:{h["c"]}"><i></i>{e(h["short"])}</div>'
-            f'{centro}<div class="eq r" style="--c:{a["c"]}"><i></i>{e(a["short"])}</div></div>')
+    return (f'<div class="vs{" peq" if peq else ""}"><div class="eq" style="--c:{h["c"]};--t:{h["t"]}"><i></i>{e(h["short"])}</div>'
+            f'{centro}<div class="eq r" style="--c:{a["c"]};--t:{a["t"]}"><i></i>{e(a["short"])}</div></div>')
 
 
 def res(gh, ga):
-    return f'<div class="res">{gh}<s>–</s>{ga}</div>'
+    h, a = ACTUAL
+    return f'<div class="res"><span style="color:{h["c"]}">{gh}</span><s>–</s><span style="color:{a["c"]}">{ga}</span></div>'
 
 
 def num(n, col="#F1F3F8"):
@@ -130,7 +158,7 @@ def prediction(d):
     i = max(range(3), key=lambda k: p[k])
     quien = [f"{h['short']} win", "a draw", f"{a['short']} win"][i]
     ps = d["predicted_score"]
-    cuerpo = (vs(h, a) + num(f"{p[i]:.0f}%", AMARILLO) + f'<div class="frase">chance of <b>{e(quien)}</b></div>'
+    cuerpo = (vs(h, a) + num(f"{p[i]:.0f}%", [h["c"], AMARILLO, a["c"]][i]) + f'<div class="frase">chance of <b>{e(quien)}</b></div>'
               + barra3(d, p, i) + f'<div class="mini">Most likely score: <b style="color:#F1F3F8">{ps[0]}–{ps[1]}</b></div>')
     return pagina(d, "Our prediction", cuerpo, "Agree?")
 
@@ -143,7 +171,7 @@ def upset_alert(d):
                                 f'<div style="flex:1;height:44px;background:#1E2330;border-radius:10px">'
                                 f'<div style="width:{v * 2}%;height:100%;background:{col};border-radius:10px"></div></div>'
                                 f'<div class="disp" style="font-size:60px;width:120px;text-align:right">{v}%</div></div>')
-    cuerpo = (vs(h, a) + num(f"{m}%", ROJO)
+    cuerpo = (vs(h, a) + num(f"{m}%", t["c"])
               + f'<div class="frase">chance of a <b>{e(t["short"])}</b> win. The bookies only see {c}%.</div>'
               + '<div style="display:flex;flex-direction:column;gap:18px">'
               + fila("Our model", m, ROJO) + fila("Bookies", c, GRIS) + '</div>')
@@ -153,7 +181,8 @@ def upset_alert(d):
 def goals(d):
     h, a = d["home"], d["away"]
     xh, xa = d["exp_goals"]
-    centro = f'<div class="res" style="font-size:120px">{xh:.1f}<s>·</s>{xa:.1f}</div>'
+    centro = (f'<div class="res" style="font-size:120px"><span style="color:{h["c"]}">{xh:.1f}</span><s>·</s>'
+              f'<span style="color:{a["c"]}">{xa:.1f}</span></div>')
     cuerpo = (num(f'{d["btts"]}%', AMARILLO) + '<div class="frase"><b>both teams</b> score, says our model</div>'
               + '<div class="mini">Expected goals</div>' + vs(h, a, centro))
     return pagina(d, "Goals or nothing?", cuerpo, "Over or under?")
@@ -182,7 +211,7 @@ def elo_form(d):
     serie = d["elo_" + d["focus"]]
     cambio = serie[-1] - serie[-6]
     signo = "+" if cambio >= 0 else "−"
-    cuerpo = (num(f"{signo}{abs(cambio)}", VERDE if cambio >= 0 else ROJO)
+    cuerpo = (num(f"{signo}{abs(cambio)}", t["c"])
               + f'<div class="frase">Elo points for <b>{e(t["short"])}</b> in 5 games. {d.get("extra", "")}</div>'
               + f'<div><div class="mini" style="margin-bottom:10px">2yellow Elo · last {len(serie)} games</div>{elo_chart(d)}</div>'
               + vs(h, a, peq=True))
@@ -190,7 +219,7 @@ def elo_form(d):
 
 def key_number(d):
     h, a = d["home"], d["away"]
-    cuerpo = (num(d["number"], AMARILLO) + f'<div class="frase">{d["text"]}</div>' + vs(h, a)
+    cuerpo = (num(d["number"], d[d["team"]]["c"] if d.get("team") else AMARILLO) + f'<div class="frase">{d["text"]}</div>' + vs(h, a)
               + f'<div class="mini">{e(d.get("when", ""))}</div>')
     return pagina(d, "Key number", cuerpo, d.get("question", "Does the streak end?"))
 
@@ -208,7 +237,8 @@ def deserved(d):
         gano = (gh > ga) == (xh > xa) and gh != ga
         veredicto = f'{mejor["short"]} deserved it'
         col = VERDE if gano else ROJO
-    centro_xg = f'<div class="res" style="font-size:130px;color:{AMARILLO}">{xh:.1f}<s>·</s>{xa:.1f}</div>'
+    centro_xg = (f'<div class="res" style="font-size:130px"><span style="color:{h["c"]}">{xh:.1f}</span><s>·</s>'
+                 f'<span style="color:{a["c"]}">{xa:.1f}</span></div>')
     cuerpo = ('<div class="mini">Final score</div>' + vs(h, a, res(gh, ga), peq=True)
               + '<div class="mini">Chances created (xG)</div>' + vs(h, a, centro_xg, peq=True)
               + f'<div class="pill" style="background:{col}">{e(veredicto)}</div>')
@@ -247,7 +277,7 @@ def upset_happened(d):
     h, a = d["home"], d["away"]
     t = d[d["underdog"]]
     gh, ga = d["score"]
-    cuerpo = (num(f'{d["pre_pct"]}%', ROJO)
+    cuerpo = (num(f'{d["pre_pct"]}%', t["c"])
               + f'<div class="frase">That was <b>{e(t["short"])}</b>’s chance before kick-off. They won.</div>'
               + vs(h, a, res(gh, ga)))
     return pagina(d, "Upset!", cuerpo, "Who called it?")
@@ -256,7 +286,7 @@ def upset_happened(d):
 def stat_of_match(d):
     h, a = d["home"], d["away"]
     gh, ga = d["score"]
-    cuerpo = (num(d["number"], AMARILLO) + f'<div class="frase">{d["text"]}</div>' + vs(h, a, res(gh, ga), peq=True))
+    cuerpo = (num(d["number"], d[d["team"]]["c"] if d.get("team") else AMARILLO) + f'<div class="frase">{d["text"]}</div>' + vs(h, a, res(gh, ga), peq=True))
     return pagina(d, "Stat of the match", cuerpo, d.get("question", "Seen worse?"))
 
 
@@ -289,8 +319,16 @@ def html_de(d):
     d.setdefault("away", {"name": "", "short": "", "color": "#FF3B3B"})
     for k in ("home", "away"):
         d[k]["c"] = color(d[k])
+        d[k]["t"] = texto_sobre(d[k]["c"])
         d[k].setdefault("short", d[k]["name"])
-    return PLANTILLAS[d["template"]](d)
+    global ACTUAL
+    ACTUAL = (d["home"], d["away"])
+    out = PLANTILLAS[d["template"]](d)
+    for t in (d["home"], d["away"]):
+        if t["short"]:
+            out = re.sub(r"<b>([^<]*\b%s\b[^<]*)</b>" % re.escape(html.escape(t["short"])),
+                         r'<b style="color:%s">\1</b>' % t["c"], out)
+    return out
 
 
 def renderizar(trabajos):

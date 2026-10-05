@@ -116,7 +116,7 @@ def post(equipo, fecha):
         texto = (f'shots from <b>{t["short"]}</b>. Zero goals.' if goles == 0
                  else f'shots from <b>{t["short"]}</b> for {goles} goal{"s" * (goles > 1)}.')
         out["post4_stat_of_match"] = {**base, "template": "stat_of_match", "number": str(int(tiros[lado])),
-                                      "text": texto, "question": "Wasteful or unlucky?"}
+                                      "text": texto, "team": lado, "question": "Wasteful or unlucky?"}
     # la jornada entera (todos los partidos de ese día con pronóstico)
     filas = []
     for _, r in p[(p.fecha == fecha) & p.terminado].iterrows():
@@ -169,7 +169,8 @@ def pre(equipo, fecha):
         else:
             gan = u.local if gl > gv else u.visitante
             txt = f'<b>{CORTO.get(gan, gan)}</b> won the last meeting, {dias} days ago.'
-        out["pre5_key_number"] = {**base, "template": "key_number", "number": f"{max(gl, gv)}–{min(gl, gv)}", "text": txt,
+        lado = None if gl == gv else ("home" if (u.local if gl > gv else u.visitante) == m.local else "away")
+        out["pre5_key_number"] = {**base, "template": "key_number", "team": lado, "number": f"{max(gl, gv)}–{min(gl, gv)}", "text": txt,
                                   "when": "Tonight · " + pd.Timestamp(x.fecha_partido).tz_convert("Europe/Madrid").strftime("%H:%M %Z"), "question": "Revenge or repeat?"}
     return m, out
 
