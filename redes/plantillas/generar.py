@@ -274,13 +274,19 @@ def prediction_vs_result(d):
     return pagina(d, "Prediction vs result", cuerpo, d.get("question", "Did you see it coming?"))
 
 def upset_happened(d):
+    """Sorpresa: ganó el que no esperábamos o hubo un empate improbable (underdog = "draw")."""
     h, a = d["home"], d["away"]
-    t = d[d["underdog"]]
     gh, ga = d["score"]
-    cuerpo = (num(f'{d["pre_pct"]}%', t["c"])
-              + f'<div class="frase">That was <b>{e(t["short"])}</b>’s chance before kick-off. They won.</div>'
-              + vs(h, a, res(gh, ga)))
-    return pagina(d, "Upset!", cuerpo, "Who called it?")
+    if d["underdog"] == "draw":
+        fuerte = h if d.get("favourite") == "home" else a
+        debil = a if fuerte is h else h
+        col, txt = AMARILLO, (f'That was the chance of a draw. <b>{e(debil["short"])}</b> held '
+                              f'<b>{e(fuerte["short"])}</b>.')
+    else:
+        t = d[d["underdog"]]
+        col, txt = t["c"], f'That was <b>{e(t["short"])}</b>’s chance before kick-off. They won.'
+    cuerpo = num(f'{d["pre_pct"]}%', col) + f'<div class="frase">{txt}</div>' + vs(h, a, res(gh, ga))
+    return pagina(d, "Upset!", cuerpo, d.get("question", "Who called it?"))
 
 
 def stat_of_match(d):
@@ -290,24 +296,46 @@ def stat_of_match(d):
     return pagina(d, "Stat of the match", cuerpo, d.get("question", "Seen worse?"))
 
 
-def weekend_record(d):
-    """Elige solo el mercado con más aciertos de la jornada y lo enseña."""
-    ms = d["matches"]  # [local, gl, gv, visitante, {mercado: pick}]
-    tabla = {}
+PRINCIPALES = ("1X2", "Over/Under 2.5", "Both teams score")   # 1.5 y 3.5 son demasiado fáciles
+
+
+def mejores_aciertos(ms, max_fallos=2):
+    """Por partido, el acierto MÁS DIFÍCIL (menor probabilidad que le dábamos) en los mercados
+    principales; si no acertamos ninguno, nuestro fallo en 1X2. Siempre 1 o 2 fallos a la vista."""
+    filas = []
     for loc, gh, ga, vis, picks in ms:
-        for m, pick in picks.items():
-            tabla.setdefault(m, []).append((loc, gh, ga, vis, pick, acierto(pick, gh, ga)))
-    m, filas_m = max(tabla.items(), key=lambda kv: sum(x[5] for x in kv[1]) / len(kv[1]))
-    ok = sum(x[5] for x in filas_m)
+        cand = [(pct, pick, acierto(pick, gh, ga)) for fam, (pick, pct) in picks.items() if fam in PRINCIPALES]
+        buenos = sorted(c for c in cand if c[2])
+        malos = [c for c in cand if not c[2]]
+        fallo = next((c for c in malos if c[1] in ("home", "draw", "away")), malos[0] if malos else None)
+        filas.append({"m": (loc, gh, ga, vis), "bien": buenos[0] if buenos else None, "mal": fallo})
+    con_fallo = [f for f in filas if f["bien"] is None]
+    if not con_fallo:     # todo acertado: enseñamos el fallo del partido cuyo acierto era más fácil
+        f = max((f for f in filas if f["mal"]), key=lambda f: f["bien"][0], default=None)
+        if f:
+            f["bien"] = None
+    elif len(con_fallo) > max_fallos:
+        quitar = con_fallo[max_fallos:]
+        filas = [f for f in filas if f not in quitar]
+    return [(*f["m"], *(f["bien"] or f["mal"])) for f in filas]
+
+
+def weekend_record(d):
+    """Lo mejor de la jornada: el acierto más difícil de cada partido y 1-2 fallos."""
+    filas_m = mejores_aciertos(d["matches"])
+    ok = sum(1 for x in filas_m if x[6])
     filas = "".join(f'<div class="fila"><span>{e(loc)} <b class="disp">{gh}–{ga}</b> {e(vis)}</span>'
-                    f'<span style="display:flex;gap:18px;align-items:center"><span class="mini" style="font-size:30px">'
-                    f'{e(nombre_mercado(p, "Home", "Away"))}</span><span class="{"ok" if x else "ko"}">{"&#10003;" if x else "&#10007;"}</span></span></div>'
-                    for loc, gh, ga, vis, p, x in filas_m)
+                    f'<span style="display:flex;gap:16px;align-items:center"><span class="mini" style="font-size:28px">'
+                    f'{e(nombre_mercado(p, loc, vis))} · {round(pct * 100)}%</span>'
+                    f'<span class="{"ok" if x else "ko"}">{"&#10003;" if x else "&#10007;"}</span></span></div>'
+                    for loc, gh, ga, vis, pct, p, x in filas_m)
     marca = f'<div class="num" style="color:{AMARILLO};font-size:220px">{ok}/{len(filas_m)}</div>'
     cuerpo = (f'<div style="display:flex;align-items:flex-end;gap:30px">{marca}'
               f'<div class="frase" style="padding-bottom:20px">correct<br>calls</div></div>'
-              f'<div class="frase" style="margin-top:-20px">Our best market this matchday: <b>{e(m)}</b></div><div style="--f:34px">{filas}</div>')
+              f'<div class="frase" style="margin-top:-20px">Our boldest calls this matchday, with the % we gave</div>'
+              f'<div style="--f:32px">{filas}</div>')
     return pagina(d, "Our matchday", cuerpo, d.get("question", "Beat us next week?"))
+
 
 PLANTILLAS = {"prediction": prediction, "upset_alert": upset_alert, "goals": goals, "elo_form": elo_form,
               "key_number": key_number, "deserved": deserved, "prediction_vs_result": prediction_vs_result,

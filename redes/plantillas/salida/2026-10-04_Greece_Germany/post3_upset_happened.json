@@ -1,0 +1,20 @@
+{
+ "competition": "Nations League",
+ "home": {
+  "name": "Greece",
+  "short": "Greece"
+ },
+ "away": {
+  "name": "Germany",
+  "short": "Germany"
+ },
+ "score": [
+  0,
+  0
+ ],
+ "template": "upset_happened",
+ "underdog": "draw",
+ "favourite": "away",
+ "pre_pct": 21,
+ "question": "Shock or fair?"
+}

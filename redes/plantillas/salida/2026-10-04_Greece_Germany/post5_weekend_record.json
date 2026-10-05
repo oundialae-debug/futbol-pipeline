@@ -8,11 +8,26 @@
    0,
    "Lithuania",
    {
-    "1X2": "home",
-    "Over/Under 2.5": "under25",
-    "Both teams score": "btts_no",
-    "Over/Under 1.5": "over15",
-    "Over/Under 3.5": "under35"
+    "1X2": [
+     "home",
+     0.3493
+    ],
+    "Over/Under 2.5": [
+     "under25",
+     0.7037
+    ],
+    "Both teams score": [
+     "btts_no",
+     0.624
+    ],
+    "Over/Under 1.5": [
+     "over15",
+     0.5662
+    ],
+    "Over/Under 3.5": [
+     "under35",
+     0.8747
+    ]
    }
   ],
   [
@@ -21,11 +36,26 @@
    0,
    "Andorra",
    {
-    "1X2": "home",
-    "Over/Under 2.5": "under25",
-    "Both teams score": "btts_no",
-    "Over/Under 1.5": "over15",
-    "Over/Under 3.5": "under35"
+    "1X2": [
+     "home",
+     0.4927
+    ],
+    "Over/Under 2.5": [
+     "under25",
+     0.6435
+    ],
+    "Both teams score": [
+     "btts_no",
+     0.597
+    ],
+    "Over/Under 1.5": [
+     "over15",
+     0.6262
+    ],
+    "Over/Under 3.5": [
+     "under35",
+     0.8343
+    ]
    }
   ],
   [
@@ -34,11 +64,26 @@
    1,
    "Austria",
    {
-    "1X2": "away",
-    "Over/Under 2.5": "under25",
-    "Both teams score": "btts_yes",
-    "Over/Under 1.5": "over15",
-    "Over/Under 3.5": "under35"
+    "1X2": [
+     "away",
+     0.4902
+    ],
+    "Over/Under 2.5": [
+     "under25",
+     0.5058
+    ],
+    "Both teams score": [
+     "btts_yes",
+     0.5222
+    ],
+    "Over/Under 1.5": [
+     "over15",
+     0.7422
+    ],
+    "Over/Under 3.5": [
+     "under35",
+     0.725
+    ]
    }
   ],
   [
@@ -47,11 +92,26 @@
    1,
    "Denmark",
    {
-    "1X2": "away",
-    "Over/Under 2.5": "over25",
-    "Both teams score": "btts_yes",
-    "Over/Under 1.5": "over15",
-    "Over/Under 3.5": "under35"
+    "1X2": [
+     "away",
+     0.4884
+    ],
+    "Over/Under 2.5": [
+     "over25",
+     0.5221
+    ],
+    "Both teams score": [
+     "btts_yes",
+     0.5457
+    ],
+    "Over/Under 1.5": [
+     "over15",
+     0.7629
+    ],
+    "Over/Under 3.5": [
+     "under35",
+     0.6997
+    ]
    }
   ],
   [
@@ -60,11 +120,26 @@
    0,
    "Germany",
    {
-    "1X2": "away",
-    "Over/Under 2.5": "over25",
-    "Both teams score": "btts_yes",
-    "Over/Under 1.5": "over15",
-    "Over/Under 3.5": "under35"
+    "1X2": [
+     "away",
+     0.6017
+    ],
+    "Over/Under 2.5": [
+     "over25",
+     0.575
+    ],
+    "Both teams score": [
+     "btts_yes",
+     0.547
+    ],
+    "Over/Under 1.5": [
+     "over15",
+     0.7996
+    ],
+    "Over/Under 3.5": [
+     "under35",
+     0.649
+    ]
    }
   ],
   [
@@ -73,11 +148,26 @@
    1,
    "Israel",
    {
-    "1X2": "home",
-    "Over/Under 2.5": "under25",
-    "Both teams score": "btts_no",
-    "Over/Under 1.5": "over15",
-    "Over/Under 3.5": "under35"
+    "1X2": [
+     "home",
+     0.5725
+    ],
+    "Over/Under 2.5": [
+     "under25",
+     0.5035000000000001
+    ],
+    "Both teams score": [
+     "btts_no",
+     0.5065999999999999
+    ],
+    "Over/Under 1.5": [
+     "over15",
+     0.744
+    ],
+    "Over/Under 3.5": [
+     "under35",
+     0.7229
+    ]
    }
   ],
   [
@@ -86,11 +176,26 @@
    1,
    "Serbia",
    {
-    "1X2": "home",
-    "Over/Under 2.5": "over25",
-    "Both teams score": "btts_no",
-    "Over/Under 1.5": "over15",
-    "Over/Under 3.5": "under35"
+    "1X2": [
+     "home",
+     0.7651
+    ],
+    "Over/Under 2.5": [
+     "over25",
+     0.6483
+    ],
+    "Both teams score": [
+     "btts_no",
+     0.5081
+    ],
+    "Over/Under 1.5": [
+     "over15",
+     0.846
+    ],
+    "Over/Under 3.5": [
+     "under35",
+     0.5718
+    ]
    }
   ],
   [
@@ -99,11 +204,26 @@
    1,
    "Norway",
    {
-    "1X2": "home",
-    "Over/Under 2.5": "over25",
-    "Both teams score": "btts_yes",
-    "Over/Under 1.5": "over15",
-    "Over/Under 3.5": "under35"
+    "1X2": [
+     "home",
+     0.4432
+    ],
+    "Over/Under 2.5": [
+     "over25",
+     0.5973
+    ],
+    "Both teams score": [
+     "btts_yes",
+     0.6151
+    ],
+    "Over/Under 1.5": [
+     "over15",
+     0.8143
+    ],
+    "Over/Under 3.5": [
+     "under35",
+     0.6265000000000001
+    ]
    }
   ]
  ],

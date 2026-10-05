@@ -96,16 +96,20 @@ def post(equipo, fecha):
     if x is not None:
         elec, pct = picks(x)
         # el mercado acertado con más confianza
-        buenos = [(pct[v], v) for v in elec.values() if G.acierto(v, gh, ga)]
+        buenos = sorted((pct[v], v) for f, v in elec.items() if f in G.PRINCIPALES and G.acierto(v, gh, ga))
+        buenos = buenos or sorted(((pct[v], v) for v in elec.values() if G.acierto(v, gh, ga)), reverse=True)
         if buenos:
-            pc, mk = max(buenos)
+            pc, mk = buenos[0]
             out["post2_prediction_vs_result"] = {**base, "template": "prediction_vs_result", "market": mk, "pct": round(pc * 100)}
         fav = max(("home", "draw", "away"), key=lambda k: {"home": x.mod_1, "draw": x.mod_X, "away": x.mod_2}[k])
         ganador = "home" if gh > ga else "away" if ga > gh else None
         prob = {"home": x.mod_1, "away": x.mod_2}
-        if ganador and ganador != fav and prob[ganador] < .3:
-            out["post3_upset_happened"] = {**base, "template": "upset_happened", "underdog": ganador,
-                                           "pre_pct": round(prob[ganador] * 100)}
+        prob["draw"] = x.mod_X
+        real = ganador or "draw"
+        if real != fav and prob[real] < .3:
+            out["post3_upset_happened"] = {**base, "template": "upset_happened", "underdog": real, "favourite": fav,
+                                           "pre_pct": round(prob[real] * 100),
+                                           "question": "Shock or fair?" if real == "draw" else "Who called it?"}
     # dato del partido: el equipo que más tiró sin marcar, o el que más tiró
     tiros = {"home": sum(sl.get(k, 0) for k in ("Shots on target", "Shots off target", "Blocked shots")),
              "away": sum(sv.get(k, 0) for k in ("Shots on target", "Shots off target", "Blocked shots"))}
@@ -123,7 +127,7 @@ def post(equipo, fecha):
         y = pronostico(r.match_id)
         if y is not None:
             filas.append([CORTO.get(r.local, r.local), int(r.goles_l), int(r.goles_v), CORTO.get(r.visitante, r.visitante),
-                          picks(y)[0]])
+                          {k: [v, picks(y)[1][v]] for k, v in picks(y)[0].items()}])
     if len(filas) >= 3:
         out["post5_weekend_record"] = {"template": "weekend_record", "competition": f"{COMP} · {fecha[8:]}/{fecha[5:7]}",
                                        "matches": filas, "question": "Beat us next time?"}

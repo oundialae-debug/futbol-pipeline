@@ -8,9 +8,18 @@
    1,
    "Sevilla",
    {
-    "1X2": "home",
-    "Over/Under 2.5": "over25",
-    "Both teams score": "btts_yes"
+    "1X2": [
+     "home",
+     0.56
+    ],
+    "Over/Under 2.5": [
+     "over25",
+     0.64
+    ],
+    "Both teams score": [
+     "btts_yes",
+     0.59
+    ]
    }
   ],
   [
@@ -19,9 +28,18 @@
    0,
    "Getafe",
    {
-    "1X2": "home",
-    "Over/Under 2.5": "under25",
-    "Both teams score": "btts_no"
+    "1X2": [
+     "home",
+     0.65
+    ],
+    "Over/Under 2.5": [
+     "under25",
+     0.66
+    ],
+    "Both teams score": [
+     "btts_no",
+     0.52
+    ]
    }
   ],
   [
@@ -30,9 +48,18 @@
    1,
    "Rayo",
    {
-    "1X2": "home",
-    "Over/Under 2.5": "under25",
-    "Both teams score": "btts_no"
+    "1X2": [
+     "home",
+     0.5
+    ],
+    "Over/Under 2.5": [
+     "under25",
+     0.71
+    ],
+    "Both teams score": [
+     "btts_no",
+     0.56
+    ]
    }
   ],
   [
@@ -41,9 +68,18 @@
    2,
    "Betis",
    {
-    "1X2": "home",
-    "Over/Under 2.5": "over25",
-    "Both teams score": "btts_yes"
+    "1X2": [
+     "home",
+     0.56
+    ],
+    "Over/Under 2.5": [
+     "over25",
+     0.75
+    ],
+    "Both teams score": [
+     "btts_yes",
+     0.62
+    ]
    }
   ],
   [
@@ -52,9 +88,18 @@
    0,
    "Celta",
    {
-    "1X2": "away",
-    "Over/Under 2.5": "under25",
-    "Both teams score": "btts_yes"
+    "1X2": [
+     "away",
+     0.71
+    ],
+    "Over/Under 2.5": [
+     "under25",
+     0.62
+    ],
+    "Both teams score": [
+     "btts_yes",
+     0.66
+    ]
    }
   ],
   [
@@ -63,9 +108,18 @@
    0,
    "Alavés",
    {
-    "1X2": "home",
-    "Over/Under 2.5": "under25",
-    "Both teams score": "btts_no"
+    "1X2": [
+     "home",
+     0.54
+    ],
+    "Over/Under 2.5": [
+     "under25",
+     0.66
+    ],
+    "Both teams score": [
+     "btts_no",
+     0.72
+    ]
    }
   ],
   [
@@ -74,9 +128,18 @@
    0,
    "Mallorca",
    {
-    "1X2": "home",
-    "Over/Under 2.5": "under25",
-    "Both teams score": "btts_no"
+    "1X2": [
+     "home",
+     0.63
+    ],
+    "Over/Under 2.5": [
+     "under25",
+     0.69
+    ],
+    "Both teams score": [
+     "btts_no",
+     0.67
+    ]
    }
   ],
   [
@@ -85,9 +148,18 @@
    1,
    "Espanyol",
    {
-    "1X2": "home",
-    "Over/Under 2.5": "over25",
-    "Both teams score": "btts_yes"
+    "1X2": [
+     "home",
+     0.52
+    ],
+    "Over/Under 2.5": [
+     "over25",
+     0.69
+    ],
+    "Both teams score": [
+     "btts_yes",
+     0.65
+    ]
    }
   ],
   [
@@ -96,9 +168,18 @@
    1,
    "Elche",
    {
-    "1X2": "home",
-    "Over/Under 2.5": "under25",
-    "Both teams score": "btts_yes"
+    "1X2": [
+     "home",
+     0.58
+    ],
+    "Over/Under 2.5": [
+     "under25",
+     0.51
+    ],
+    "Both teams score": [
+     "btts_yes",
+     0.72
+    ]
    }
   ],
   [
@@ -107,9 +188,18 @@
    2,
    "Oviedo",
    {
-    "1X2": "away",
-    "Over/Under 2.5": "over25",
-    "Both teams score": "btts_no"
+    "1X2": [
+     "away",
+     0.62
+    ],
+    "Over/Under 2.5": [
+     "over25",
+     0.68
+    ],
+    "Both teams score": [
+     "btts_no",
+     0.72
+    ]
    }
   ]
  ]
