@@ -1,4 +1,2 @@
 match_id,liga_id,fecha,saque_utc,local_id,local,visitante_id,visitante,estado,arbitro,clima_status,clima_temp_txt,local_ids,local_formacion,visitante_ids,visitante_formacion
-1336032489,120775,2026-10-04T19:00:00.000Z,19:00,466281,Girona,679882,Mallorca,Not started,"Mallo Fernandez, Eder",rain,19.46°C,,,,
-1336029085,120775,2026-10-04T16:30:00.000Z,16:30,4471938,Castellón,8629073,AD Ceuta FC,Not started,"Huerta de Aza, Marta",cloudy,22.08°C,,,,
-1336033340,120775,2026-10-04T16:30:00.000Z,16:30,455218,Las Palmas,613504,Valladolid,Not started,"Perez Hernandez, Manuel Angel",partly cloudy day,23.95°C,,,,
+1336029936,120775,2026-10-05T18:30:00.000Z,18:30,607547,Cordoba,612653,Tenerife,Not started,,cloudy,24.37°C,,,,
