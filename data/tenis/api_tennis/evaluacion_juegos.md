@@ -1,14 +1,14 @@
 # Más/menos juegos en directo: apuestas en papel
 
-Partidos acabados con cuota de juegos en el registro: **312**. Una apuesta por partido (se agrupa por partido). Cuota = la de la API en esa pasada, no la de Luckia. Con menos de 20 apuestas el número no significa nada.
+Partidos acabados con cuota de juegos en el registro: **326**. Una apuesta por partido (se agrupa por partido). Cuota = la de la API en esa pasada, no la de Luckia. Con menos de 20 apuestas el número no significa nada.
 
 | estrategia | apuestas | aciertos | beneficio medio | sigmas |
 |---|---|---|---|---|
-| **señal: vigilar el menos** | 80 | 66% | +17.2% | +1.75 |
-| control: siempre el menos (1ª pasada) | 312 | 50% | -8.2% | -1.54 |
-| control: siempre el más (1ª pasada) | 312 | 50% | -6.0% | -1.14 |
+| **señal: vigilar el menos** | 84 | 67% | +18.7% | +1.93 |
+| control: siempre el menos (1ª pasada) | 326 | 50% | -7.7% | -1.49 |
+| control: siempre el más (1ª pasada) | 326 | 50% | -6.6% | -1.27 |
 
-Brier del 'más' en la línea principal (1ª pasada): modelo 0.2706, mercado 0.2519 (menor es mejor). El modelo da al más +12.9% sobre lo que pasa de verdad.
+Brier del 'más' en la línea principal (1ª pasada): modelo 0.2719, mercado 0.2517 (menor es mejor). El modelo da al más +12.9% sobre lo que pasa de verdad.
 
 ## Señales
 
@@ -93,24 +93,28 @@ Brier del 'más' en la línea principal (1ª pasada): modelo 0.2706, mercado 0.2
 | ATP 500 Tokyo: J. Munar vs K. Jacquet | 23.5 | 1.80 | 18 | gana |
 | ITF M M15 Telavi 2 (Georgia): S. Paardekooper vs D. Popko | 20.5 | 1.67 | 19 | gana |
 | ITF M M25 Zaragoza: R. Nijboer vs A. Ritschard | 24.5 | 1.91 | 19 | gana |
+| WTA 1000 Beijing: D. Vekic vs I. Swiatek | 32.5 | 1.61 | 31 | gana |
+| WTA 125 Suzhou: R. Zhang vs T. Prozorova | 22.5 | 1.83 | 27 | pierde |
+| ATP Shanghai: L. Sonego vs A. Dougaz | 35.5 | 1.36 | 35 | gana |
+| ATP Shanghai: L. Pavlovic vs I. Simakin | 28.5 | 3.00 | 27 | gana |
 | WTA 125 Suzhou: H. Shi vs Y. Yang | 22.5 | 2.00 | 23 | pierde |
 
 ## Reglas del vigilante (desde el 01/10 solo en papel)
 
 | regla | apuestas resueltas | aciertos | beneficio medio (cuota API) | sigmas |
 |---|---|---|---|---|
-| actual | 159 | 55% | -13.9% | -2.25 |
+| actual | 173 | 55% | -13.7% | -2.31 |
 | actual (al móvil) | 125 | 62% | -4.1% | -0.61 |
-| aprendida | 202 | 49% | -9.4% | -1.42 |
-| casa65 | 90 | 82% | +1.5% | +0.29 |
+| aprendida | 218 | 49% | -9.4% | -1.49 |
+| casa65 | 97 | 81% | +0.7% | +0.15 |
 
 ## Previos (antes de empezar), línea principal de juegos y ganador
 
-403 partidos. Juegos (más de la línea principal), Brier (menor es mejor): modelo 0.2790, modelo corregido con el historial 0.2590, casa 0.2513. Pasó el más en el 49%.
-Ganador (403): acierto modelo 67%, casa 73%.
+420 partidos. Juegos (más de la línea principal), Brier (menor es mejor): modelo 0.2783, modelo corregido con el historial 0.2566, casa 0.2512. Pasó el más en el 49%.
+Ganador (420): acierto modelo 67%, casa 72%.
 
 ## Aprendizaje (recalibración del modelo)
 
-Partidos resueltos: 240 (1732 líneas). Activa: **sí** (hace falta 30+ partidos y que mejore a la CASA en partidos que no vio).
-**Apostando con lo aprendido, día a día** (cada día aprende solo de los anteriores): 138 apuestas, aciertos 44%, beneficio medio -17.5%, -2.17 sigmas.
-Brier (menor es mejor): modelo 0.2706, modelo con el saque de hoy 0.2620, casa 0.2455, recalibrado (validado por partidos) 0.2340. Sesgo del modelo hacia el más: +18.3%.
+Partidos resueltos: 254 (1807 líneas). Activa: **sí** (hace falta 30+ partidos y que mejore a la CASA en partidos que no vio).
+**Apostando con lo aprendido, día a día** (cada día aprende solo de los anteriores): 152 apuestas, aciertos 45%, beneficio medio -15.8%, -2.05 sigmas.
+Brier (menor es mejor): modelo 0.2702, modelo con el saque de hoy 0.2610, casa 0.2453, recalibrado (validado por partidos) 0.2341. Sesgo del modelo hacia el más: +18.3%.
