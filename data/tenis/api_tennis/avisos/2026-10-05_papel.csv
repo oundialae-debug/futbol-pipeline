@@ -11,3 +11,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-05 04:04,12168150,Atp Singles,Shanghai,H. Gaston,L. Draxl,menos,22.5,0.5589,0.5,1.833,True,aprendida
 2026-10-05 04:04,12168151,Atp Singles,Shanghai,A. Ilagan,N. Basilashvili,menos,22.5,0.5557,0.5,1.833,True,aprendida
 2026-10-05 04:04,12168152,Atp Singles,Shanghai,R. Safiullin,A. Galarneau,menos,20.5,0.5501,0.4853,1.909,True,aprendida
+2026-10-05 04:22,12168153,Atp Singles,Shanghai,L. Sonego,A. Dougaz,menos,23.5,0.5655,0.5147,1.8,True,aprendida
