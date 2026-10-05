@@ -3,9 +3,9 @@ event_key,tipo,torneo,jugador1,jugador2,estado,sets,juegos_totales
 12167829,Wta Doubles,Beijing,Alexandrova/ Stollar,Bucsa/ Melichar-Martinez,Finished,1 - 2,45
 12167830,Wta Doubles,Beijing,Routliffe/ Sutjiadi,Neel/ Olmos,Finished,2 - 0,23
 12167831,Wta Doubles,Beijing,Noskova/ Tauson,Eikeri/ Gleason,Finished,0 - 2,21
-12167946,Wta Singles,Beijing,J. Ostapenko,E. Mertens,Set 2,0 - 1,15
+12167946,Wta Singles,Beijing,J. Ostapenko,E. Mertens,Finished,1 - 2,26
 12167948,Wta Singles,Beijing,D. Vekic,I. Swiatek,Finished,1 - 2,31
-12167952,Wta Singles,Beijing,M. Sakkari,E. Svitolina,Set 2,0 - 1,11
+12167952,Wta Singles,Beijing,M. Sakkari,E. Svitolina,Finished,0 - 2,22
 12167955,Wta Singles,Beijing,B. Bencic,A. Li,Finished,0 - 2,19
 12167956,Atp Doubles,Tokyo,Bolelli/ Vavassori,Krajicek/ Mektic,Finished,0 - 2,25
 12167959,Wta Singles,Beijing,C. Gauff,X. Sun,,-,0
@@ -40,12 +40,12 @@ event_key,tipo,torneo,jugador1,jugador2,estado,sets,juegos_totales
 12168124,Challenger Women Singles,Suzhou,A. Ibragimova,R. Sramkova,Finished,0 - 2,17
 12168125,Challenger Women Singles,Suzhou,E. Jacquemot,C. Liu,Finished,0 - 2,14
 12168127,Challenger Women Singles,Suzhou,E. Kalieva,Y. Ma,Finished,2 - 0,19
-12168132,Challenger Women Singles,Suzhou,X. Yao,A. Sasnovich,Set 2,0 - 1,16
+12168132,Challenger Women Singles,Suzhou,X. Yao,A. Sasnovich,Finished,0 - 2,19
 12168133,Challenger Women Singles,Suzhou,R. Zhang,T. Prozorova,Finished,1 - 2,27
 12168136,Challenger Women Doubles,Suzhou,Huang Yujia/Plipuech,Kobori/ Shimizu,Finished,1 - 2,33
 12168138,Challenger Women Doubles,Suzhou,Korpatsch/ Tagger,Cho I-/Cho,Finished,2 - 1,30
 12168142,Challenger Women Singles,Suzhou,K. Zavatska,D. Khomutsianskaya,Finished,0 - 2,17
-12168148,Atp Singles,Beijing,A. De Minaur,H. Hurkacz,Set 1,0 - 0,9
+12168148,Atp Singles,Beijing,A. De Minaur,H. Hurkacz,Retired,1 - 0,15
 12168149,Atp Singles,Shanghai,T. Daniel,S. Mochizuki,Finished,1 - 2,24
 12168150,Atp Singles,Shanghai,H. Gaston,L. Draxl,Finished,0 - 2,22
 12168151,Atp Singles,Shanghai,A. Ilagan,N. Basilashvili,Finished,1 - 2,34
@@ -58,46 +58,46 @@ event_key,tipo,torneo,jugador1,jugador2,estado,sets,juegos_totales
 12168158,Atp Singles,Shanghai,C. H. Tseng,N. Mejia,Retired,0 - 1,10
 12168159,Atp Singles,Shanghai,A. Walton,R. Te,Finished,1 - 2,31
 12168160,Atp Singles,Shanghai,M. Zheng,F. A. Gomez,Finished,2 - 1,31
-12168161,Atp Singles,Shanghai,J. Cui,A. Vukic,Set 1,0 - 0,7
-12168162,Atp Singles,Shanghai,M. Damm,P. Kotov,Set 2,0 - 1,24
-12168163,Atp Singles,Shanghai,B. Harris,D. Svrcina,Set 2,1 - 0,22
+12168161,Atp Singles,Shanghai,J. Cui,A. Vukic,Set 2,1 - 0,16
+12168162,Atp Singles,Shanghai,M. Damm,P. Kotov,Finished,1 - 2,35
+12168163,Atp Singles,Shanghai,B. Harris,D. Svrcina,Set 3,1 - 1,33
 12168164,Atp Singles,Shanghai,S. C. Hong,R. Sakamoto,Finished,0 - 2,21
-12168165,Atp Singles,Shanghai,K. Jacquet,T. Zhang,Set 2,1 - 0,15
+12168165,Atp Singles,Shanghai,K. Jacquet,T. Zhang,Finished,2 - 0,21
 12168166,Atp Singles,Shanghai,A. Shevchenko,Y. Nishioka,Finished,0 - 2,18
-12168167,Atp Singles,Shanghai,M. Bellucci,E. Ymer,,-,0
-12168168,Atp Singles,Shanghai,A. Bolt,L. Harris,,-,0
+12168167,Atp Singles,Shanghai,M. Bellucci,E. Ymer,Set 1,0 - 0,4
+12168168,Atp Singles,Shanghai,A. Bolt,L. Harris,Set 1,0 - 0,0
 12168169,Atp Singles,Shanghai,K. Coppejans,N. Basavareddy,,-,0
-12168170,Atp Singles,Shanghai,R. Noguchi,A. Muller,Set 1,0 - 0,0
-12168171,Atp Singles,Shanghai,D. Sweeny,T. Schoolkate,Set 2,0 - 1,12
+12168170,Atp Singles,Shanghai,R. Noguchi,A. Muller,Set 2,0 - 1,15
+12168171,Atp Singles,Shanghai,D. Sweeny,T. Schoolkate,Finished,2 - 1,26
 12168172,Atp Singles,Shanghai,C. Wong,C. Hewitt,,-,0
 12168173,Challenger Men Singles,Palermo (Italy) - Qualification,G. Campana Lee,P. Vives Marcos,Walk Over,-,0
 12168174,Challenger Men Singles,Wuning 3 (China) - Qualification,M. Purcell,B. Bayldon,Walk Over,-,0
 12168175,Challenger Men Singles,Wuning 3 (China) - Qualification,R. Seggerman,M. Zhukov,Finished,2 - 1,28
 12168176,Challenger Women Singles,Suzhou,H. Shi,Y. Yang,Finished,2 - 0,23
-12168186,Atp Singles,Tokyo,J. Lehecka,V. Vacherot,Set 1,0 - 0,0
-12168187,Challenger Men Singles,Braga,J. Nikles,V. Orlov,Set 2,1 - 0,9
-12168188,Challenger Men Singles,Braga,P. Schoen,F. Misolic,Set 2,1 - 0,11
-12168189,Challenger Men Singles,Braga,O. Wallin,T. Cacao,Set 2,1 - 0,13
-12168190,Challenger Men Singles,Palermo (Italy) - Qualification,D. Siniakov,Y. Milev,Set 1,0 - 0,9
-12168191,Challenger Men Singles,Villena,D. Dedura,O. Tarvet,Set 2,0 - 1,11
+12168186,Atp Singles,Tokyo,J. Lehecka,V. Vacherot,Set 2,1 - 0,11
+12168187,Challenger Men Singles,Braga,J. Nikles,V. Orlov,Finished,2 - 0,15
+12168188,Challenger Men Singles,Braga,P. Schoen,F. Misolic,Finished,2 - 0,15
+12168189,Challenger Men Singles,Braga,O. Wallin,T. Cacao,Set 2,1 - 0,24
+12168190,Challenger Men Singles,Palermo (Italy) - Qualification,D. Siniakov,Y. Milev,Set 2,1 - 0,19
+12168191,Challenger Men Singles,Villena,D. Dedura,O. Tarvet,Finished,0 - 2,21
 12168192,Challenger Men Singles,Wuning 3 (China) - Qualification,R. Matsuda,Y. Kikuchi,Finished,0 - 2,17
 12168194,Challenger Women Singles,Samsun,L. Bronzetti,F. Crawley,,-,0
-12168196,Challenger Women Singles,Samsun,D. Galfi,J. Grabher,Set 1,0 - 0,1
+12168196,Challenger Women Singles,Samsun,D. Galfi,J. Grabher,Set 2,1 - 0,14
 12168197,Challenger Women Singles,Samsun,P. Iatcenko,S. Lamens,,-,0
 12168202,Challenger Women Singles,Samsun,D. Salkova,H. Sakatsume,,-,0
 12168205,Challenger Women Singles,Samsun,N. Noha Akugue,E. Micic,Finished,2 - 0,21
 12168206,Challenger Women Singles,Suzhou,S. Wei,K. Okamura,Finished,0 - 2,17
-12168216,Challenger Men Singles,Villena,H. Grenier,G. Kravchenko,Set 1,0 - 0,6
-12168217,Challenger Men Singles,Villena,D. Stricker,M. Topo,Set 1,0 - 0,0
-12168226,Atp Singles,Beijing,N. Djokovic,D. Medvedev,,-,0
+12168216,Challenger Men Singles,Villena,H. Grenier,G. Kravchenko,Set 2,0 - 1,16
+12168217,Challenger Men Singles,Villena,D. Stricker,M. Topo,Set 2,1 - 0,14
+12168226,Atp Singles,Beijing,N. Djokovic,D. Medvedev,Set 1,0 - 0,0
 12168227,Challenger Men Singles,Palermo (Italy) - Qualification,F. Moroni,I. Parisca,,-,0
-12168228,Challenger Women Singles,Samsun,M. Tkacheva,M. Bolkvadze,Set 2,1 - 0,20
-12168229,Atp Doubles,Beijing,Cash/ Erler,Cash/ Glasspool,Set 1,0 - 0,0
+12168228,Challenger Women Singles,Samsun,M. Tkacheva,M. Bolkvadze,Finished,1 - 2,29
+12168229,Atp Doubles,Beijing,Cash/ Erler,Cash/ Glasspool,Set 2,0 - 1,17
 12168230,Challenger Men Singles,Antofagasta,J. Aguilar Cardozo,L. J. Rodriguez,,-,0
-12168231,Challenger Men Singles,Braga,N. Barrientos,J. Barranco Cosano,,-,0
-12168232,Challenger Men Singles,Braga,R. Nijboer,B. Hassan,,-,0
-12168233,Challenger Men Singles,Palermo (Italy) - Qualification,F. Arnaboldi,K. Ivanovski,Set 2,0 - 1,10
-12168234,Challenger Women Singles,Samsun,C. Werner,W. Falkowska,Set 3,1 - 1,17
+12168231,Challenger Men Singles,Braga,N. Barrientos,J. Barranco Cosano,Set 1,0 - 0,4
+12168232,Challenger Men Singles,Braga,R. Nijboer,B. Hassan,Set 1,0 - 0,5
+12168233,Challenger Men Singles,Palermo (Italy) - Qualification,F. Arnaboldi,K. Ivanovski,Set 2,0 - 1,21
+12168234,Challenger Women Singles,Samsun,C. Werner,W. Falkowska,Set 3,1 - 1,26
 12168235,Challenger Women Singles,Samsun,A. Smith,D. Jakupovic,,-,0
 12168236,Challenger Women Doubles,Samsun,Monnet/ Radivojevic,Egribel/ Oral,,-,0
 12168237,Itf Women Singles,W35 Seville,Y. Kabbaj,N. Torner Sensano,,-,0
@@ -111,7 +111,7 @@ event_key,tipo,torneo,jugador1,jugador2,estado,sets,juegos_totales
 12168245,Itf Women Doubles,W35 Seville,Kabbaj/ Tsygourova,Carreras/ Coltorti Lopez,,-,0
 12168248,Challenger Men Doubles,Antofagasta,Meligeni Alves/ Pucinelli de Almeida,Cossu/ De La Pena,,-,0
 12168261,Challenger Men Singles,Palermo (Italy) - Qualification,M. Cerny,D. Sakellaridis,,-,0
-12168262,Challenger Men Singles,Palermo (Italy) - Qualification,C. Langmo,O. Ovcharenko,,-,0
+12168262,Challenger Men Singles,Palermo (Italy) - Qualification,C. Langmo,O. Ovcharenko,Set 1,0 - 0,10
 12168263,Challenger Men Singles,Antofagasta,H. Casanova,B. Munk Mesa,,-,0
 12168264,Challenger Men Singles,Antofagasta,J. E. Schiessl,A. Magadan,,-,0
 12168265,Challenger Men Singles,Braga,O. Krutykh,F. Pieczonka,,-,0
