@@ -71,3 +71,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-05 08:40,12167955,Wta Singles,Beijing,B. Bencic,A. Li,menos,19.5,0.7277,0.6627,1.4,True,actual
 2026-10-05 08:41,12167955,Wta Singles,Beijing,B. Bencic,A. Li,menos,19.5,0.6627,0.6627,1.4,True,casa65
 2026-10-05 08:46,12168164,Atp Singles,Shanghai,S. C. Hong,R. Sakamoto,menos,22.5,0.6627,0.6627,1.4,True,casa65
+2026-10-05 08:46,12168166,Atp Singles,Shanghai,A. Shevchenko,Y. Nishioka,menos,23.5,0.6193,0.5147,1.8,True,aprendida
