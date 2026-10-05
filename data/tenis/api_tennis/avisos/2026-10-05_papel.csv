@@ -8,3 +8,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-05 03:55,12168176,Challenger Women Singles,Suzhou,H. Shi,Y. Yang,menos,20.5,0.8421,0.8421,1.125,True,casa65
 2026-10-05 04:04,12167948,Wta Singles,Beijing,D. Vekic,I. Swiatek,menos,27.5,0.5978,0.5576,1.666,True,actual
 2026-10-05 04:04,12168149,Atp Singles,Shanghai,T. Daniel,S. Mochizuki,menos,21.5,0.5378,0.4853,1.909,True,aprendida
+2026-10-05 04:04,12168150,Atp Singles,Shanghai,H. Gaston,L. Draxl,menos,22.5,0.5589,0.5,1.833,True,aprendida
