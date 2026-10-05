@@ -1,4 +1,4 @@
-# Tenis en directo, 05/10/2026 03:26 UTC (05:26 en España)
+# Tenis en directo, 05/10/2026 03:42 UTC (05:42 en España)
 
 Calculadora desde el marcador exacto (modelo de puntos, superficie real) frente a la cuota en directo
 (sin margen). Ganador y sets: la calculadora suele coincidir con la casa. Total de juegos: el modelo
@@ -7,8 +7,8 @@ Se actualiza cada ~5 min; el registro en data/tenis/api_tennis/registro/ servir�
 
 | partido | tipo | superficie | marcador (sets, juegos, puntos, saca) | gana 1º: modelo / cuota | sets más probables (modelo) | total juegos: línea, modelo / cuota |
 |---|---|---|---|---|---|---|
-| K. Saitoh vs Y. Takahashi | Challenger Men Singles | Hard | 0-1, 5-3, 0 - 0, saca K. Saitoh | 52% / 53% | 2-1 52%, 1-2 41% |  |
-| W. Zheng vs J. Lu | Challenger Women Singles | Hard | 0-1, 5-5, 15 - 0, saca W. Zheng | 15% / 23% | 0-2 54%, 1-2 31% | 27.5: 46% / 50% |
-| K. Zavatska vs D. Khomutsianskaya | Challenger Women Singles | Hard | 0-1, 0-3, 0 - 15, saca K. Zavatska | 3% / 5% | 0-2 93%, 1-2 5% |  |
-| H. Shi vs Y. Yang | Challenger Women Singles | Hard | 1-0, 1-2, 0 - 0, saca Y. Yang | 74% / 83% | 2-0 38%, 2-1 36% | 23.5: 62% / 49% |
-| D. Vekic vs I. Swiatek | Wta Singles | Hard | 0-0, 2-1, 0 - 0, saca D. Vekic | 7% / 17% | 0-2 62%, 1-2 31% | 21.5: 47% / 49% |
+| K. Saitoh vs Y. Takahashi | Challenger Men Singles | Hard | 1-1, 0-1, 40 - 30, saca K. Saitoh | 53% / 52% | 2-1 53%, 1-2 47% |  |
+| R. Seggerman vs M. Zhukov | Challenger Men Singles | Hard | 0-0, 1-2, 40 - 40, saca R. Seggerman | 36% / 71% | 0-2 37%, 1-2 28% |  |
+| W. Zheng vs J. Lu | Challenger Women Singles | Hard | 1-1, 0-0, 0 - 0, saca J. Lu | 33% / 42% | 1-2 67%, 2-1 33% | 31.5: 48% / 49% |
+| H. Shi vs Y. Yang | Challenger Women Singles | Hard | 1-0, 3-3, 30 - 0, saca H. Shi | 85% / 93% | 2-0 65%, 2-1 20% | 20.5: 57% / 46% |
+| D. Vekic vs I. Swiatek | Wta Singles | Hard | 0-0, 3-2, 40 - 40, saca D. Vekic | 9% / 21% | 0-2 56%, 1-2 36% | 22.5: 48% / 51% |
