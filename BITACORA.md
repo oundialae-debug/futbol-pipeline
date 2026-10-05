@@ -25,6 +25,7 @@ Dónde está cada cosa:
 
 | qué | por qué | ficheros |
 |---|---|---|
+| Plantillas 9:16 de 2yellow para TikTok/Instagram: "Deserved?" y "Prediction vs result". Se rellena un JSON (equipos, marcador, xG/stats o probabilidades) y sale un PNG 1080x1920; titular, veredicto, acierto/fallo y colores de camiseta salen solos. Zona segura: 185 px arriba, 380 abajo, 140 a la derecha. Marca, fuente y colores copiados de la rama `ccr-302c299f-kdpgwl`. Sin API. | Petición del usuario: plantillas reutilizables para la cuenta @2yellowdata. | `redes/plantillas/` |
 | Skill `free-llm-apis` copiada de mnfst/awesome-free-llm-apis (revisada: solo documentación, sin scripts). Sin claves ni proveedores configurados. | Petición del usuario: tener a mano proveedores LLM gratuitos para ahorrar tokens. | `.claude/skills/free-llm-apis/` |
 | Grafo de conocimiento con graphify (paquete `graphifyy` 0.9.76): pipeline completo, solo código, sin `data/`. 1.064 nodos, 2.869 aristas, 56 comunidades con nombre. Cero tokens (análisis estático). | Responder preguntas que cruzan varios archivos sin leerlos todos. | `graphify-out/`, `.graphifyignore` |
 | Workflow que actualiza el grafo en cada push a `main` con cambios en `.py` o workflows (`graphify update .`). | Que el grafo no se quede viejo. Ojo: `update` renombra las comunidades por su nodo principal (pierde los nombres puestos a mano) e indexa también la estructura de los `.md`. | `.github/workflows/actualizar-grafo.yml` |
