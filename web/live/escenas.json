@@ -1,0 +1,2158 @@
+{
+ "titulo": "Nations League live data",
+ "generado": "2026-10-05T14:38+00:00",
+ "datos_hasta": "2026-10-05T13:54",
+ "escenas": [
+  {
+   "tipo": "intro",
+   "objetivo_s": 35,
+   "abre": true,
+   "frases": [
+    "Hey hey hey! Welcome in! I'm *Blitz*, your AI football data host.",
+    "Nations League week. *18 matches* coming up, and I've got numbers on every single one.",
+    "86 games already played. *213 goals*. Let's go!"
+   ],
+   "datos": {
+    "jugados": 86,
+    "goles": 213,
+    "proximos": 18
+   },
+   "id": "s00"
+  },
+  {
+   "tipo": "agenda",
+   "objetivo_s": 45,
+   "frases": [
+    "Monday: *8 matches*.",
+    "Cyprus against Latvia, 17:00.",
+    "Bosnia and Herzegovina against Poland, 19:45.",
+    "France against Belgium, 19:45.",
+    "Italy against Turkey, 19:45.",
+    "Montenegro against Armenia, 19:45.",
+    "Northern Ireland against Georgia, 19:45.",
+    "Romania against Sweden, 19:45.",
+    "Ukraine against Hungary, 19:45."
+   ],
+   "datos": {
+    "dia": "Monday",
+    "partidos": [
+     {
+      "local": "Cyprus",
+      "visitante": "Latvia",
+      "cod_l": "CYP",
+      "cod_v": "LVA",
+      "hora_uk": "17:00",
+      "p1": 61,
+      "px": 25,
+      "p2": 15
+     },
+     {
+      "local": "Bosnia and Herzegovina",
+      "visitante": "Poland",
+      "cod_l": "BIH",
+      "cod_v": "POL",
+      "hora_uk": "19:45",
+      "p1": 33,
+      "px": 28,
+      "p2": 40
+     },
+     {
+      "local": "France",
+      "visitante": "Belgium",
+      "cod_l": "FRA",
+      "cod_v": "BEL",
+      "hora_uk": "19:45",
+      "p1": 64,
+      "px": 20,
+      "p2": 15
+     },
+     {
+      "local": "Italy",
+      "visitante": "Turkey",
+      "cod_l": "ITA",
+      "cod_v": "TUR",
+      "hora_uk": "19:45",
+      "p1": 69,
+      "px": 19,
+      "p2": 13
+     },
+     {
+      "local": "Montenegro",
+      "visitante": "Armenia",
+      "cod_l": "MNE",
+      "cod_v": "ARM",
+      "hora_uk": "19:45",
+      "p1": 63,
+      "px": 21,
+      "p2": 15
+     },
+     {
+      "local": "Northern Ireland",
+      "visitante": "Georgia",
+      "cod_l": "NIR",
+      "cod_v": "GEO",
+      "hora_uk": "19:45",
+      "p1": 39,
+      "px": 32,
+      "p2": 29
+     },
+     {
+      "local": "Romania",
+      "visitante": "Sweden",
+      "cod_l": "ROU",
+      "cod_v": "SWE",
+      "hora_uk": "19:45",
+      "p1": 22,
+      "px": 24,
+      "p2": 55
+     },
+     {
+      "local": "Ukraine",
+      "visitante": "Hungary",
+      "cod_l": "UKR",
+      "cod_v": "HUN",
+      "hora_uk": "19:45",
+      "p1": 36,
+      "px": 31,
+      "p2": 33
+     }
+    ]
+   },
+   "id": "s01",
+   "abre": false
+  },
+  {
+   "id": "s02",
+   "tipo": "partido",
+   "objetivo_s": 72,
+   "abre": false,
+   "frases": [
+    "Cyprus against Latvia! Monday, 17:00 UK time.",
+    "Cyprus win this *61 percent* of the time.",
+    "The draw: 25 percent. Latvia: 15 percent.",
+    "Expected goals: 1.3 for Cyprus, 0.8 for Latvia.",
+    "Single most likely score: *one-nil*.",
+    "Three goals or more? 45 percent.",
+    "Both teams scoring: 44 percent.",
+    "About 10 corners and 4 yellow cards expected.",
+    "Cyprus so far: 1 win from 3, 3 scored, 2 conceded.",
+    "Latvia so far: 0 wins from 3, 1 scored, 4 conceded.",
+    "Watch L. Loizou: player rating *7.0*.",
+    "Watch A. Cigaņiks: player rating *6.9*.",
+    "FIFA ranking: Cyprus number 124, Latvia number 137."
+   ],
+   "datos": {
+    "local": "Cyprus",
+    "visitante": "Latvia",
+    "cod_l": "CYP",
+    "cod_v": "LVA",
+    "rk_l": 124,
+    "rk_v": 137,
+    "dia": "Monday",
+    "hora_uk": "17:00",
+    "liga": "League C",
+    "p1": 61,
+    "px": 25,
+    "p2": 15,
+    "xg_l": 1.25,
+    "xg_v": 0.84,
+    "marcador": "1-0",
+    "mas25": 45,
+    "btts": 44,
+    "corners": 10.3,
+    "tarjetas": 3.8,
+    "forma_l": "LDW",
+    "forma_v": "LDL",
+    "estrella_l": [
+     "L. Loizou",
+     6.97
+    ],
+    "estrella_v": [
+     "A. Cigaņiks",
+     6.88
+    ]
+   }
+  },
+  {
+   "id": "s03",
+   "tipo": "partido",
+   "objetivo_s": 72,
+   "abre": false,
+   "frases": [
+    "Bosnia and Herzegovina against Poland! Monday, 19:45 UK time.",
+    "Poland win this *40 percent* of the time.",
+    "The draw: 28 percent. Bosnia and Herzegovina: 33 percent.",
+    "This one is a proper *coin flip*.",
+    "Expected goals: 1.2 for Bosnia and Herzegovina, 1.2 for Poland.",
+    "Single most likely score: *one-one*.",
+    "Three goals or more? 51 percent.",
+    "Both teams scoring: 56 percent.",
+    "About 8 corners and 4 yellow cards expected.",
+    "Bosnia and Herzegovina so far: 1 win from 3, 5 scored, 3 conceded.",
+    "Poland so far: 1 win from 3, 7 scored, 3 conceded.",
+    "Watch Ivan Bašić: player rating *7.2*.",
+    "Watch Robert Lewandowski: player rating *7.4*.",
+    "FIFA ranking: Bosnia and Herzegovina number 61, Poland number 36."
+   ],
+   "datos": {
+    "local": "Bosnia and Herzegovina",
+    "visitante": "Poland",
+    "cod_l": "BIH",
+    "cod_v": "POL",
+    "rk_l": 61,
+    "rk_v": 36,
+    "dia": "Monday",
+    "hora_uk": "19:45",
+    "liga": "League B",
+    "p1": 33,
+    "px": 28,
+    "p2": 40,
+    "xg_l": 1.2,
+    "xg_v": 1.23,
+    "marcador": "1-1",
+    "mas25": 51,
+    "btts": 56,
+    "corners": 8.4,
+    "tarjetas": 4.2,
+    "forma_l": "DWD",
+    "forma_v": "DLW",
+    "estrella_l": [
+     "Ivan Bašić",
+     7.16
+    ],
+    "estrella_v": [
+     "Robert Lewandowski",
+     7.41
+    ]
+   }
+  },
+  {
+   "tipo": "resultados",
+   "objetivo_s": 45,
+   "frases": [
+    "The weekend, in thirty seconds. Go!",
+    "Azerbaijan one-nil Lithuania.",
+    "Malta one-nil Andorra.",
+    "Kosovo one-one Austria.",
+    "Netherlands two-one Serbia.",
+    "Wales nil-one Denmark.",
+    "Greece nil-nil Germany.",
+    "Republic of Ireland one-one Israel.",
+    "Portugal two-one Norway."
+   ],
+   "datos": {
+    "partidos": [
+     {
+      "local": "Azerbaijan",
+      "visitante": "Lithuania",
+      "cod_l": "AZE",
+      "cod_v": "LTU",
+      "gl": 1,
+      "gv": 0
+     },
+     {
+      "local": "Malta",
+      "visitante": "Andorra",
+      "cod_l": "MLT",
+      "cod_v": "AND",
+      "gl": 1,
+      "gv": 0
+     },
+     {
+      "local": "Kosovo",
+      "visitante": "Austria",
+      "cod_l": "KOS",
+      "cod_v": "AUT",
+      "gl": 1,
+      "gv": 1
+     },
+     {
+      "local": "Netherlands",
+      "visitante": "Serbia",
+      "cod_l": "NED",
+      "cod_v": "SRB",
+      "gl": 2,
+      "gv": 1
+     },
+     {
+      "local": "Wales",
+      "visitante": "Denmark",
+      "cod_l": "WAL",
+      "cod_v": "DEN",
+      "gl": 0,
+      "gv": 1
+     },
+     {
+      "local": "Greece",
+      "visitante": "Germany",
+      "cod_l": "GRE",
+      "cod_v": "GER",
+      "gl": 0,
+      "gv": 0
+     },
+     {
+      "local": "Republic of Ireland",
+      "visitante": "Israel",
+      "cod_l": "IRL",
+      "cod_v": "ISR",
+      "gl": 1,
+      "gv": 1
+     },
+     {
+      "local": "Portugal",
+      "visitante": "Norway",
+      "cod_l": "POR",
+      "cod_v": "NOR",
+      "gl": 2,
+      "gv": 1
+     }
+    ]
+   },
+   "id": "s04",
+   "abre": false
+  },
+  {
+   "id": "s05",
+   "tipo": "partido",
+   "objetivo_s": 72,
+   "abre": false,
+   "frases": [
+    "France against Belgium! Monday, 19:45 UK time.",
+    "France win this *64 percent* of the time.",
+    "The draw: 20 percent. Belgium: 15 percent.",
+    "Expected goals: 2.0 for France, 1.1 for Belgium.",
+    "Single most likely score: *one-one*.",
+    "Three goals or more? 63 percent.",
+    "Both teams scoring: 57 percent.",
+    "About 9 corners and 3 yellow cards expected.",
+    "France so far: 2 wins from 3, 3 scored, 1 conceded.",
+    "Belgium so far: 2 wins from 3, 5 scored, 1 conceded.",
+    "Watch M. Olise: player rating *7.6*.",
+    "Watch S. Lammens: player rating *7.3*.",
+    "FIFA ranking: France number 3, Belgium number 8."
+   ],
+   "datos": {
+    "local": "France",
+    "visitante": "Belgium",
+    "cod_l": "FRA",
+    "cod_v": "BEL",
+    "rk_l": 3,
+    "rk_v": 8,
+    "dia": "Monday",
+    "hora_uk": "19:45",
+    "liga": "League A",
+    "p1": 64,
+    "px": 20,
+    "p2": 15,
+    "xg_l": 2.0,
+    "xg_v": 1.12,
+    "marcador": "1-1",
+    "mas25": 63,
+    "btts": 57,
+    "corners": 9.3,
+    "tarjetas": 3.0,
+    "forma_l": "WWD",
+    "forma_v": "WLW",
+    "estrella_l": [
+     "M. Olise",
+     7.62
+    ],
+    "estrella_v": [
+     "S. Lammens",
+     7.32
+    ]
+   }
+  },
+  {
+   "id": "s06",
+   "tipo": "partido",
+   "objetivo_s": 72,
+   "abre": false,
+   "frases": [
+    "Italy against Turkey! Monday, 19:45 UK time.",
+    "Italy win this *69 percent* of the time.",
+    "The draw: 19 percent. Turkey: 13 percent.",
+    "Expected goals: 1.9 for Italy, 1.2 for Turkey.",
+    "Single most likely score: *one-one*.",
+    "Three goals or more? 61 percent.",
+    "Both teams scoring: 52 percent.",
+    "About 10 corners and 4 yellow cards expected.",
+    "Italy so far: 1 win from 3, 5 scored, 4 conceded.",
+    "Turkey so far: 0 wins from 3, 1 scored, 8 conceded.",
+    "Watch G. Donnarumma: player rating *7.3*.",
+    "Watch A. Güler: player rating *7.2*.",
+    "FIFA ranking: Italy number 15, Turkey number 27."
+   ],
+   "datos": {
+    "local": "Italy",
+    "visitante": "Turkey",
+    "cod_l": "ITA",
+    "cod_v": "TUR",
+    "rk_l": 15,
+    "rk_v": 27,
+    "dia": "Monday",
+    "hora_uk": "19:45",
+    "liga": "League A",
+    "p1": 69,
+    "px": 19,
+    "p2": 13,
+    "xg_l": 1.85,
+    "xg_v": 1.17,
+    "marcador": "1-1",
+    "mas25": 61,
+    "btts": 52,
+    "corners": 10.3,
+    "tarjetas": 3.6,
+    "forma_l": "LWD",
+    "forma_v": "LLL",
+    "estrella_l": [
+     "G. Donnarumma",
+     7.29
+    ],
+    "estrella_v": [
+     "A. Güler",
+     7.24
+    ]
+   }
+  },
+  {
+   "tipo": "goleada",
+   "objetivo_s": 40,
+   "frases": [
+    "Biggest win of the whole tournament so far: *San Marino nil-seven Finland*.",
+    "Finland by 7! Away from home! Ridiculous."
+   ],
+   "datos": {
+    "local": "San Marino",
+    "visitante": "Finland",
+    "gl": 0,
+    "gv": 7,
+    "cod_l": "SMR",
+    "cod_v": "FIN"
+   },
+   "id": "s07",
+   "abre": false
+  },
+  {
+   "id": "s08",
+   "tipo": "partido",
+   "objetivo_s": 72,
+   "abre": false,
+   "frases": [
+    "Montenegro against Armenia! Monday, 19:45 UK time.",
+    "Montenegro win this *63 percent* of the time.",
+    "The draw: 21 percent. Armenia: 15 percent.",
+    "Expected goals: 1.8 for Montenegro, 1.0 for Armenia.",
+    "Single most likely score: *one-one*.",
+    "Three goals or more? 55 percent.",
+    "Both teams scoring: 51 percent.",
+    "About 9 corners and 3 yellow cards expected.",
+    "Montenegro so far: 3 wins from 3, 7 scored, 4 conceded.",
+    "Armenia so far: 1 win from 3, 4 scored, 5 conceded.",
+    "Watch Vasilije Adžić: player rating *7.2*.",
+    "Watch Eduard Spertsyan: player rating *7.3*.",
+    "FIFA ranking: Montenegro number 80, Armenia number 107."
+   ],
+   "datos": {
+    "local": "Montenegro",
+    "visitante": "Armenia",
+    "cod_l": "MNE",
+    "cod_v": "ARM",
+    "rk_l": 80,
+    "rk_v": 107,
+    "dia": "Monday",
+    "hora_uk": "19:45",
+    "liga": "League C",
+    "p1": 63,
+    "px": 21,
+    "p2": 15,
+    "xg_l": 1.8,
+    "xg_v": 1.04,
+    "marcador": "1-1",
+    "mas25": 55,
+    "btts": 51,
+    "corners": 8.9,
+    "tarjetas": 3.3,
+    "forma_l": "WWW",
+    "forma_v": "WLL",
+    "estrella_l": [
+     "Vasilije Adžić",
+     7.15
+    ],
+    "estrella_v": [
+     "Eduard Spertsyan",
+     7.26
+    ]
+   }
+  },
+  {
+   "id": "s09",
+   "tipo": "partido",
+   "objetivo_s": 72,
+   "abre": false,
+   "frases": [
+    "Northern Ireland against Georgia! Monday, 19:45 UK time.",
+    "Northern Ireland win this *39 percent* of the time.",
+    "The draw: 32 percent. Georgia: 29 percent.",
+    "Expected goals: 1.2 for Northern Ireland, 0.9 for Georgia.",
+    "Single most likely score: *one-nil*.",
+    "Three goals or more? 35 percent.",
+    "Both teams scoring: 43 percent.",
+    "About 8 corners and 4 yellow cards expected.",
+    "Northern Ireland so far: 2 wins from 3, 4 scored, 0 conceded.",
+    "Georgia so far: 0 wins from 3, 0 scored, 2 conceded.",
+    "Watch P. Charles: player rating *7.0*.",
+    "Watch G. Mamardashvili: player rating *7.0*.",
+    "FIFA ranking: Northern Ireland number 70, Georgia number 72."
+   ],
+   "datos": {
+    "local": "Northern Ireland",
+    "visitante": "Georgia",
+    "cod_l": "NIR",
+    "cod_v": "GEO",
+    "rk_l": 70,
+    "rk_v": 72,
+    "dia": "Monday",
+    "hora_uk": "19:45",
+    "liga": "League B",
+    "p1": 39,
+    "px": 32,
+    "p2": 29,
+    "xg_l": 1.22,
+    "xg_v": 0.92,
+    "marcador": "1-0",
+    "mas25": 35,
+    "btts": 43,
+    "corners": 7.9,
+    "tarjetas": 3.6,
+    "forma_l": "WDW",
+    "forma_v": "LDL",
+    "estrella_l": [
+     "P. Charles",
+     7.02
+    ],
+    "estrella_v": [
+     "G. Mamardashvili",
+     7.02
+    ]
+   }
+  },
+  {
+   "tipo": "goleadores",
+   "objetivo_s": 45,
+   "frases": [
+    "Top scorers! Who's on fire?",
+    "T. Parrott, Republic of Ireland: *4 goals*.",
+    "Leo Walta, Finland: *4 goals*.",
+    "H. Kane, England: *4 goals*.",
+    "Lamine Yamal, Spain: *4 goals*.",
+    "E. Haaland, Norway: *3 goals*.",
+    "Assists king: M. Ødegaard with *4* and J. Bellingham with *4*."
+   ],
+   "datos": {
+    "goles": [
+     {
+      "jugador": "T. Parrott",
+      "equipo": "Republic of Ireland",
+      "cod": "IRL",
+      "n": 4
+     },
+     {
+      "jugador": "Leo Walta",
+      "equipo": "Finland",
+      "cod": "FIN",
+      "n": 4
+     },
+     {
+      "jugador": "H. Kane",
+      "equipo": "England",
+      "cod": "ENG",
+      "n": 4
+     },
+     {
+      "jugador": "Lamine Yamal",
+      "equipo": "Spain",
+      "cod": "ESP",
+      "n": 4
+     },
+     {
+      "jugador": "E. Haaland",
+      "equipo": "Norway",
+      "cod": "NOR",
+      "n": 3
+     },
+     {
+      "jugador": "Rasmus Højlund",
+      "equipo": "Denmark",
+      "cod": "DEN",
+      "n": 3
+     }
+    ],
+    "asistencias": [
+     {
+      "jugador": "M. Ødegaard",
+      "equipo": "Norway",
+      "n": 4
+     },
+     {
+      "jugador": "J. Bellingham",
+      "equipo": "England",
+      "n": 4
+     },
+     {
+      "jugador": "K. Pechenin",
+      "equipo": "Belarus",
+      "n": 3
+     }
+    ]
+   },
+   "id": "s10",
+   "abre": false
+  },
+  {
+   "id": "s11",
+   "tipo": "partido",
+   "objetivo_s": 72,
+   "abre": false,
+   "frases": [
+    "Romania against Sweden! Monday, 19:45 UK time.",
+    "Sweden win this *55 percent* of the time.",
+    "The draw: 24 percent. Romania: 22 percent.",
+    "Expected goals: 1.2 for Romania, 1.9 for Sweden.",
+    "Single most likely score: *one-one*.",
+    "Three goals or more? 60 percent.",
+    "Both teams scoring: 59 percent.",
+    "About 8 corners and 3 yellow cards expected.",
+    "Romania so far: 0 wins from 3, 3 scored, 12 conceded.",
+    "Sweden so far: 2 wins from 3, 6 scored, 3 conceded.",
+    "Watch D. Man: player rating *6.9*.",
+    "Watch A. Isak: player rating *7.1*.",
+    "FIFA ranking: Romania number 52, Sweden number 37."
+   ],
+   "datos": {
+    "local": "Romania",
+    "visitante": "Sweden",
+    "cod_l": "ROU",
+    "cod_v": "SWE",
+    "rk_l": 52,
+    "rk_v": 37,
+    "dia": "Monday",
+    "hora_uk": "19:45",
+    "liga": "League B",
+    "p1": 22,
+    "px": 24,
+    "p2": 55,
+    "xg_l": 1.24,
+    "xg_v": 1.9,
+    "marcador": "1-1",
+    "mas25": 60,
+    "btts": 59,
+    "corners": 8.4,
+    "tarjetas": 3.4,
+    "forma_l": "LLL",
+    "forma_v": "WWD",
+    "estrella_l": [
+     "D. Man",
+     6.87
+    ],
+    "estrella_v": [
+     "A. Isak",
+     7.13
+    ]
+   }
+  },
+  {
+   "id": "s12",
+   "tipo": "partido",
+   "objetivo_s": 72,
+   "abre": false,
+   "frases": [
+    "Ukraine against Hungary! Monday, 19:45 UK time.",
+    "Ukraine win this *36 percent* of the time.",
+    "The draw: 31 percent. Hungary: 33 percent.",
+    "This one is a proper *coin flip*.",
+    "Expected goals: 1.3 for Ukraine, 1.1 for Hungary.",
+    "Single most likely score: *one-one*.",
+    "Three goals or more? 39 percent.",
+    "Both teams scoring: 47 percent.",
+    "About 8 corners and 5 yellow cards expected.",
+    "Ukraine so far: 1 win from 3, 1 scored, 3 conceded.",
+    "Hungary so far: 1 win from 3, 1 scored, 1 conceded.",
+    "Watch V. Mykolenko: player rating *7.0*.",
+    "Watch D. Szoboszlai: player rating *7.2*.",
+    "FIFA ranking: Ukraine number 33, Hungary number 39."
+   ],
+   "datos": {
+    "local": "Ukraine",
+    "visitante": "Hungary",
+    "cod_l": "UKR",
+    "cod_v": "HUN",
+    "rk_l": 33,
+    "rk_v": 39,
+    "dia": "Monday",
+    "hora_uk": "19:45",
+    "liga": "League B",
+    "p1": 36,
+    "px": 31,
+    "p2": 33,
+    "xg_l": 1.26,
+    "xg_v": 1.15,
+    "marcador": "1-1",
+    "mas25": 39,
+    "btts": 47,
+    "corners": 7.7,
+    "tarjetas": 4.8,
+    "forma_l": "WDL",
+    "forma_v": "LDW",
+    "estrella_l": [
+     "V. Mykolenko",
+     6.96
+    ],
+    "estrella_v": [
+     "D. Szoboszlai",
+     7.2
+    ]
+   }
+  },
+  {
+   "tipo": "notas",
+   "objetivo_s": 40,
+   "frases": [
+    "Player ratings. The best performers, three games or more.",
+    "Lamine Yamal, Spain: *8.5*.",
+    "S. Lammens, Belgium: *8.4*.",
+    "Leo Walta, Finland: *8.4*.",
+    "H. Kane, England: *8.3*.",
+    "A. Gordon, England: *8.2*."
+   ],
+   "datos": {
+    "jugadores": [
+     {
+      "jugador": "Lamine Yamal",
+      "equipo": "Spain",
+      "cod": "ESP",
+      "nota": 8.49
+     },
+     {
+      "jugador": "S. Lammens",
+      "equipo": "Belgium",
+      "cod": "BEL",
+      "nota": 8.36
+     },
+     {
+      "jugador": "Leo Walta",
+      "equipo": "Finland",
+      "cod": "FIN",
+      "nota": 8.36
+     },
+     {
+      "jugador": "H. Kane",
+      "equipo": "England",
+      "cod": "ENG",
+      "nota": 8.35
+     },
+     {
+      "jugador": "A. Gordon",
+      "equipo": "England",
+      "cod": "ENG",
+      "nota": 8.22
+     },
+     {
+      "jugador": "O. Óskarsson",
+      "equipo": "Iceland",
+      "cod": "ISL",
+      "nota": 8.21
+     }
+    ]
+   },
+   "id": "s13",
+   "abre": false
+  },
+  {
+   "tipo": "agenda",
+   "objetivo_s": 45,
+   "frases": [
+    "Tuesday: *10 matches*.",
+    "Kazakhstan against Faroe Islands, 15:00.",
+    "Albania against San Marino, 19:45.",
+    "Belarus against Finland, 19:45.",
+    "Croatia against Spain, 19:45.",
+    "England against Czech Republic, 19:45.",
+    "Estonia against Iceland, 19:45.",
+    "Luxembourg against Bulgaria, 19:45.",
+    "Moldova against Slovakia, 19:45.",
+    "Scotland against Slovenia, 19:45.",
+    "Switzerland against North Macedonia, 19:45."
+   ],
+   "datos": {
+    "dia": "Tuesday",
+    "partidos": [
+     {
+      "local": "Kazakhstan",
+      "visitante": "Faroe Islands",
+      "cod_l": "KAZ",
+      "cod_v": "FRO",
+      "hora_uk": "15:00",
+      "p1": 40,
+      "px": 31,
+      "p2": 29
+     },
+     {
+      "local": "Albania",
+      "visitante": "San Marino",
+      "cod_l": "ALB",
+      "cod_v": "SMR",
+      "hora_uk": "19:45",
+      "p1": 92,
+      "px": 6,
+      "p2": 2
+     },
+     {
+      "local": "Belarus",
+      "visitante": "Finland",
+      "cod_l": "BLR",
+      "cod_v": "FIN",
+      "hora_uk": "19:45",
+      "p1": 24,
+      "px": 28,
+      "p2": 48
+     },
+     {
+      "local": "Croatia",
+      "visitante": "Spain",
+      "cod_l": "CRO",
+      "cod_v": "ESP",
+      "hora_uk": "19:45",
+      "p1": 10,
+      "px": 16,
+      "p2": 74
+     },
+     {
+      "local": "England",
+      "visitante": "Czech Republic",
+      "cod_l": "ENG",
+      "cod_v": "CZE",
+      "hora_uk": "19:45",
+      "p1": 84,
+      "px": 11,
+      "p2": 5
+     },
+     {
+      "local": "Estonia",
+      "visitante": "Iceland",
+      "cod_l": "EST",
+      "cod_v": "ISL",
+      "hora_uk": "19:45",
+      "p1": 18,
+      "px": 24,
+      "p2": 58
+     },
+     {
+      "local": "Luxembourg",
+      "visitante": "Bulgaria",
+      "cod_l": "LUX",
+      "cod_v": "BUL",
+      "hora_uk": "19:45",
+      "p1": 45,
+      "px": 29,
+      "p2": 26
+     },
+     {
+      "local": "Moldova",
+      "visitante": "Slovakia",
+      "cod_l": "MDA",
+      "cod_v": "SVK",
+      "hora_uk": "19:45",
+      "p1": 13,
+      "px": 20,
+      "p2": 67
+     },
+     {
+      "local": "Scotland",
+      "visitante": "Slovenia",
+      "cod_l": "SCO",
+      "cod_v": "SVN",
+      "hora_uk": "19:45",
+      "p1": 54,
+      "px": 27,
+      "p2": 20
+     },
+     {
+      "local": "Switzerland",
+      "visitante": "North Macedonia",
+      "cod_l": "SUI",
+      "cod_v": "MKD",
+      "hora_uk": "19:45",
+      "p1": 86,
+      "px": 10,
+      "p2": 4
+     }
+    ]
+   },
+   "id": "s14",
+   "abre": false
+  },
+  {
+   "id": "s15",
+   "tipo": "partido",
+   "objetivo_s": 72,
+   "abre": false,
+   "frases": [
+    "Kazakhstan against Faroe Islands! Tuesday, 15:00 UK time.",
+    "Kazakhstan win this *40 percent* of the time.",
+    "The draw: 31 percent. Faroe Islands: 29 percent.",
+    "Expected goals: 1.1 for Kazakhstan, 1.0 for Faroe Islands.",
+    "Single most likely score: *one-nil*.",
+    "Three goals or more? 39 percent.",
+    "Both teams scoring: 46 percent.",
+    "About 10 corners and 3 yellow cards expected.",
+    "Kazakhstan so far: 0 wins from 3, 3 scored, 5 conceded.",
+    "Faroe Islands so far: 0 wins from 3, 3 scored, 3 conceded.",
+    "Watch Bauyrzhan Islamkhan: player rating *7.2*.",
+    "Watch Á. Samuelsen: player rating *6.9*.",
+    "FIFA ranking: Kazakhstan number 111, Faroe Islands number 123."
+   ],
+   "datos": {
+    "local": "Kazakhstan",
+    "visitante": "Faroe Islands",
+    "cod_l": "KAZ",
+    "cod_v": "FRO",
+    "rk_l": 111,
+    "rk_v": 123,
+    "dia": "Tuesday",
+    "hora_uk": "15:00",
+    "liga": "League C",
+    "p1": 40,
+    "px": 31,
+    "p2": 29,
+    "xg_l": 1.06,
+    "xg_v": 0.99,
+    "marcador": "1-0",
+    "mas25": 39,
+    "btts": 46,
+    "corners": 10.2,
+    "tarjetas": 3.0,
+    "forma_l": "DLL",
+    "forma_v": "DDD",
+    "estrella_l": [
+     "Bauyrzhan Islamkhan",
+     7.25
+    ],
+    "estrella_v": [
+     "Á. Samuelsen",
+     6.92
+    ]
+   }
+  },
+  {
+   "id": "s16",
+   "tipo": "partido",
+   "objetivo_s": 72,
+   "abre": false,
+   "frases": [
+    "Albania against San Marino! Tuesday, 19:45 UK time.",
+    "Albania win this *92 percent* of the time.",
+    "The draw: 6 percent. San Marino: 2 percent.",
+    "That is not a match, that's a *mismatch*.",
+    "Expected goals: 3.3 for Albania, 0.4 for San Marino.",
+    "Single most likely score: *three-nil*.",
+    "Three goals or more? 80 percent.",
+    "Both teams scoring: 30 percent.",
+    "About 9 corners and 4 yellow cards expected.",
+    "Albania so far: 2 wins from 3, 6 scored, 2 conceded.",
+    "San Marino so far: 0 wins from 3, 0 scored, 14 conceded.",
+    "Watch K. Asllani: player rating *7.3*.",
+    "Watch Nicolas Giacopetti: player rating *6.3*.",
+    "FIFA ranking: Albania number 67, San Marino number 211."
+   ],
+   "datos": {
+    "local": "Albania",
+    "visitante": "San Marino",
+    "cod_l": "ALB",
+    "cod_v": "SMR",
+    "rk_l": 67,
+    "rk_v": 211,
+    "dia": "Tuesday",
+    "hora_uk": "19:45",
+    "liga": "League C",
+    "p1": 92,
+    "px": 6,
+    "p2": 2,
+    "xg_l": 3.27,
+    "xg_v": 0.36,
+    "marcador": "3-0",
+    "mas25": 80,
+    "btts": 30,
+    "corners": 9.1,
+    "tarjetas": 4.0,
+    "forma_l": "WWL",
+    "forma_v": "LLL",
+    "estrella_l": [
+     "K. Asllani",
+     7.32
+    ],
+    "estrella_v": [
+     "Nicolas Giacopetti",
+     6.32
+    ]
+   }
+  },
+  {
+   "tipo": "xg",
+   "objetivo_s": 45,
+   "frases": [
+    "Luck check! Goals scored versus expected goals.",
+    "Finland: 9 goals from 5.0 expected. *Plus 4.0*. Clinical!",
+    "Switzerland: 8 goals from 4.8 expected. *Plus 3.2*. Clinical!",
+    "Germany: just 3 goals from 7.6 expected. *Minus 4.6*. Ouch.",
+    "Hungary: just 1 goals from 4.7 expected. *Minus 3.7*. Ouch."
+   ],
+   "datos": {
+    "arriba": [
+     {
+      "equipo": "Finland",
+      "cod": "FIN",
+      "xg": 5.0,
+      "goles": 9,
+      "dif": 4.0
+     },
+     {
+      "equipo": "Switzerland",
+      "cod": "SUI",
+      "xg": 4.8,
+      "goles": 8,
+      "dif": 3.2
+     },
+     {
+      "equipo": "Spain",
+      "cod": "ESP",
+      "xg": 6.9,
+      "goles": 10,
+      "dif": 3.1
+     }
+    ],
+    "abajo": [
+     {
+      "equipo": "Germany",
+      "cod": "GER",
+      "xg": 7.6,
+      "goles": 3,
+      "dif": -4.6
+     },
+     {
+      "equipo": "Hungary",
+      "cod": "HUN",
+      "xg": 4.7,
+      "goles": 1,
+      "dif": -3.7
+     },
+     {
+      "equipo": "Turkey",
+      "cod": "TUR",
+      "xg": 4.5,
+      "goles": 1,
+      "dif": -3.5
+     }
+    ]
+   },
+   "id": "s17",
+   "abre": false
+  },
+  {
+   "id": "s18",
+   "tipo": "partido",
+   "objetivo_s": 72,
+   "abre": false,
+   "frases": [
+    "Belarus against Finland! Tuesday, 19:45 UK time.",
+    "Finland win this *48 percent* of the time.",
+    "The draw: 28 percent. Belarus: 24 percent.",
+    "Expected goals: 0.9 for Belarus, 1.3 for Finland.",
+    "Single most likely score: *nil-one*.",
+    "Three goals or more? 43 percent.",
+    "Both teams scoring: 47 percent.",
+    "About 10 corners and 4 yellow cards expected.",
+    "Belarus so far: 1 win from 3, 4 scored, 2 conceded.",
+    "Finland so far: 2 wins from 3, 9 scored, 1 conceded.",
+    "Watch A. Kontsevoy: player rating *7.4*.",
+    "Watch L. Hrádecký: player rating *7.5*.",
+    "FIFA ranking: Belarus number 96, Finland number 75."
+   ],
+   "datos": {
+    "local": "Belarus",
+    "visitante": "Finland",
+    "cod_l": "BLR",
+    "cod_v": "FIN",
+    "rk_l": 96,
+    "rk_v": 75,
+    "dia": "Tuesday",
+    "hora_uk": "19:45",
+    "liga": "League C",
+    "p1": 24,
+    "px": 28,
+    "p2": 48,
+    "xg_l": 0.94,
+    "xg_v": 1.32,
+    "marcador": "0-1",
+    "mas25": 43,
+    "btts": 47,
+    "corners": 10.0,
+    "tarjetas": 3.5,
+    "forma_l": "LDW",
+    "forma_v": "WDW",
+    "estrella_l": [
+     "A. Kontsevoy",
+     7.39
+    ],
+    "estrella_v": [
+     "L. Hrádecký",
+     7.54
+    ]
+   }
+  },
+  {
+   "id": "s19",
+   "tipo": "partido",
+   "objetivo_s": 72,
+   "abre": false,
+   "frases": [
+    "Croatia against Spain! Tuesday, 19:45 UK time.",
+    "Spain win this *74 percent* of the time.",
+    "The draw: 16 percent. Croatia: 10 percent.",
+    "Expected goals: 0.9 for Croatia, 2.3 for Spain.",
+    "Single most likely score: *nil-two*.",
+    "Three goals or more? 65 percent.",
+    "Both teams scoring: 51 percent.",
+    "About 9 corners and 3 yellow cards expected.",
+    "Croatia so far: 1 win from 3, 3 scored, 12 conceded.",
+    "Spain so far: 3 wins from 3, 10 scored, 4 conceded.",
+    "Watch I. Matanović: player rating *7.3*.",
+    "Watch Lamine Yamal: player rating *7.9*.",
+    "FIFA ranking: Croatia number 13, Spain number 1."
+   ],
+   "datos": {
+    "local": "Croatia",
+    "visitante": "Spain",
+    "cod_l": "CRO",
+    "cod_v": "ESP",
+    "rk_l": 13,
+    "rk_v": 1,
+    "dia": "Tuesday",
+    "hora_uk": "19:45",
+    "liga": "League A",
+    "p1": 10,
+    "px": 16,
+    "p2": 74,
+    "xg_l": 0.93,
+    "xg_v": 2.32,
+    "marcador": "0-2",
+    "mas25": 65,
+    "btts": 51,
+    "corners": 8.8,
+    "tarjetas": 2.7,
+    "forma_l": "WLL",
+    "forma_v": "WWW",
+    "estrella_l": [
+     "I. Matanović",
+     7.29
+    ],
+    "estrella_v": [
+     "Lamine Yamal",
+     7.87
+    ]
+   }
+  },
+  {
+   "tipo": "acierto",
+   "objetivo_s": 35,
+   "frases": [
+    "Honesty time. How good are the numbers?",
+    "We tracked 62 games. The favourite got it right *58 percent* of the time.",
+    "Not a crystal ball. Football is chaos. That's why we love it."
+   ],
+   "datos": {
+    "partidos": 62,
+    "aciertos": 36,
+    "pct": 58
+   },
+   "id": "s20",
+   "abre": false
+  },
+  {
+   "id": "s21",
+   "tipo": "partido",
+   "objetivo_s": 72,
+   "abre": false,
+   "frases": [
+    "England against Czech Republic! Tuesday, 19:45 UK time.",
+    "England win this *84 percent* of the time.",
+    "The draw: 11 percent. Czech Republic: 5 percent.",
+    "That is not a match, that's a *mismatch*.",
+    "Expected goals: 2.9 for England, 0.6 for Czech Republic.",
+    "Single most likely score: *two-nil*.",
+    "Three goals or more? 69 percent.",
+    "Both teams scoring: 42 percent.",
+    "About 9 corners and 2 yellow cards expected.",
+    "England so far: 2 wins from 3, 11 scored, 3 conceded.",
+    "Czech Republic so far: 0 wins from 3, 2 scored, 7 conceded.",
+    "Watch J. Bellingham: player rating *7.7*.",
+    "Watch L. Krejčí: player rating *7.0*.",
+    "FIFA ranking: England number 4, Czech Republic number 48."
+   ],
+   "datos": {
+    "local": "England",
+    "visitante": "Czech Republic",
+    "cod_l": "ENG",
+    "cod_v": "CZE",
+    "rk_l": 4,
+    "rk_v": 48,
+    "dia": "Tuesday",
+    "hora_uk": "19:45",
+    "liga": "League A",
+    "p1": 84,
+    "px": 11,
+    "p2": 5,
+    "xg_l": 2.9,
+    "xg_v": 0.62,
+    "marcador": "2-0",
+    "mas25": 69,
+    "btts": 42,
+    "corners": 9.3,
+    "tarjetas": 2.4,
+    "forma_l": "LWW",
+    "forma_v": "LLL",
+    "estrella_l": [
+     "J. Bellingham",
+     7.7
+    ],
+    "estrella_v": [
+     "L. Krejčí",
+     6.96
+    ]
+   }
+  },
+  {
+   "id": "s22",
+   "tipo": "partido",
+   "objetivo_s": 72,
+   "abre": false,
+   "frases": [
+    "Estonia against Iceland! Tuesday, 19:45 UK time.",
+    "Iceland win this *58 percent* of the time.",
+    "The draw: 24 percent. Estonia: 18 percent.",
+    "Expected goals: 0.8 for Estonia, 1.6 for Iceland.",
+    "Single most likely score: *nil-one*.",
+    "Three goals or more? 51 percent.",
+    "Both teams scoring: 50 percent.",
+    "About 8 corners and 4 yellow cards expected.",
+    "Estonia so far: 1 win from 3, 2 scored, 1 conceded.",
+    "Iceland so far: 2 wins from 3, 7 scored, 1 conceded.",
+    "Watch K. Hein: player rating *7.0*.",
+    "Watch A. Guðjohnsen: player rating *7.4*.",
+    "FIFA ranking: Estonia number 127, Iceland number 74."
+   ],
+   "datos": {
+    "local": "Estonia",
+    "visitante": "Iceland",
+    "cod_l": "EST",
+    "cod_v": "ISL",
+    "rk_l": 127,
+    "rk_v": 74,
+    "dia": "Tuesday",
+    "hora_uk": "19:45",
+    "liga": "League C",
+    "p1": 18,
+    "px": 24,
+    "p2": 58,
+    "xg_l": 0.84,
+    "xg_v": 1.6,
+    "marcador": "0-1",
+    "mas25": 51,
+    "btts": 50,
+    "corners": 8.0,
+    "tarjetas": 4.3,
+    "forma_l": "DDW",
+    "forma_v": "DWW",
+    "estrella_l": [
+     "K. Hein",
+     7.01
+    ],
+    "estrella_v": [
+     "A. Guðjohnsen",
+     7.43
+    ]
+   }
+  },
+  {
+   "tipo": "tablas",
+   "objetivo_s": 50,
+   "frases": [
+    "Group leaders, every league, quick fire!",
+    "League A: France, 7 points.",
+    "League A: Spain, 9 points.",
+    "League A: Portugal, 12 points.",
+    "League A: Netherlands, 8 points.",
+    "League B: Austria, 8 points.",
+    "League B: Sweden, 7 points.",
+    "League B: Northern Ireland, 7 points.",
+    "League B: Switzerland, 9 points.",
+    "League C: Finland, 7 points.",
+    "League C: Montenegro, 9 points.",
+    "League C: Iceland, 7 points.",
+    "League C: Slovakia, 7 points.",
+    "League D: Malta, 7 points.",
+    "League D: Azerbaijan, 5 points."
+   ],
+   "datos": {
+    "tablas": [
+     {
+      "liga": "League A",
+      "filas": [
+       {
+        "equipo": "France",
+        "pj": 3,
+        "pts": 7,
+        "gf": 3,
+        "gc": 1,
+        "forma": "WWD",
+        "cod": "FRA"
+       },
+       {
+        "equipo": "Belgium",
+        "pj": 3,
+        "pts": 6,
+        "gf": 5,
+        "gc": 1,
+        "forma": "WLW",
+        "cod": "BEL"
+       },
+       {
+        "equipo": "Italy",
+        "pj": 3,
+        "pts": 4,
+        "gf": 5,
+        "gc": 4,
+        "forma": "LWD",
+        "cod": "ITA"
+       },
+       {
+        "equipo": "Turkey",
+        "pj": 3,
+        "pts": 0,
+        "gf": 1,
+        "gc": 8,
+        "forma": "LLL",
+        "cod": "TUR"
+       }
+      ]
+     },
+     {
+      "liga": "League A",
+      "filas": [
+       {
+        "equipo": "Spain",
+        "pj": 3,
+        "pts": 9,
+        "gf": 10,
+        "gc": 4,
+        "forma": "WWW",
+        "cod": "ESP"
+       },
+       {
+        "equipo": "England",
+        "pj": 3,
+        "pts": 6,
+        "gf": 11,
+        "gc": 3,
+        "forma": "LWW",
+        "cod": "ENG"
+       },
+       {
+        "equipo": "Croatia",
+        "pj": 3,
+        "pts": 3,
+        "gf": 3,
+        "gc": 12,
+        "forma": "WLL",
+        "cod": "CRO"
+       },
+       {
+        "equipo": "Czech Republic",
+        "pj": 3,
+        "pts": 0,
+        "gf": 2,
+        "gc": 7,
+        "forma": "LLL",
+        "cod": "CZE"
+       }
+      ]
+     },
+     {
+      "liga": "League A",
+      "filas": [
+       {
+        "equipo": "Portugal",
+        "pj": 4,
+        "pts": 12,
+        "gf": 9,
+        "gc": 4,
+        "forma": "WWWW",
+        "cod": "POR"
+       },
+       {
+        "equipo": "Denmark",
+        "pj": 4,
+        "pts": 6,
+        "gf": 7,
+        "gc": 7,
+        "forma": "LWLW",
+        "cod": "DEN"
+       },
+       {
+        "equipo": "Norway",
+        "pj": 4,
+        "pts": 3,
+        "gf": 6,
+        "gc": 8,
+        "forma": "WLLL",
+        "cod": "NOR"
+       },
+       {
+        "equipo": "Wales",
+        "pj": 4,
+        "pts": 3,
+        "gf": 2,
+        "gc": 5,
+        "forma": "LLWL",
+        "cod": "WAL"
+       }
+      ]
+     },
+     {
+      "liga": "League A",
+      "filas": [
+       {
+        "equipo": "Netherlands",
+        "pj": 4,
+        "pts": 8,
+        "gf": 7,
+        "gc": 5,
+        "forma": "DWDW",
+        "cod": "NED"
+       },
+       {
+        "equipo": "Greece",
+        "pj": 4,
+        "pts": 8,
+        "gf": 5,
+        "gc": 3,
+        "forma": "WWDD",
+        "cod": "GRE"
+       },
+       {
+        "equipo": "Germany",
+        "pj": 4,
+        "pts": 5,
+        "gf": 3,
+        "gc": 2,
+        "forma": "DLWD",
+        "cod": "GER"
+       },
+       {
+        "equipo": "Serbia",
+        "pj": 4,
+        "pts": 0,
+        "gf": 3,
+        "gc": 8,
+        "forma": "LLLL",
+        "cod": "SRB"
+       }
+      ]
+     },
+     {
+      "liga": "League B",
+      "filas": [
+       {
+        "equipo": "Austria",
+        "pj": 4,
+        "pts": 8,
+        "gf": 9,
+        "gc": 5,
+        "forma": "WWDD",
+        "cod": "AUT"
+       },
+       {
+        "equipo": "Republic of Ireland",
+        "pj": 4,
+        "pts": 5,
+        "gf": 6,
+        "gc": 4,
+        "forma": "LWDD",
+        "cod": "IRL"
+       },
+       {
+        "equipo": "Kosovo",
+        "pj": 4,
+        "pts": 5,
+        "gf": 3,
+        "gc": 4,
+        "forma": "WLDD",
+        "cod": "KOS"
+       },
+       {
+        "equipo": "Israel",
+        "pj": 4,
+        "pts": 2,
+        "gf": 2,
+        "gc": 7,
+        "forma": "LLDD",
+        "cod": "ISR"
+       }
+      ]
+     },
+     {
+      "liga": "League B",
+      "filas": [
+       {
+        "equipo": "Sweden",
+        "pj": 3,
+        "pts": 7,
+        "gf": 6,
+        "gc": 3,
+        "forma": "WWD",
+        "cod": "SWE"
+       },
+       {
+        "equipo": "Bosnia and Herzegovina",
+        "pj": 3,
+        "pts": 5,
+        "gf": 5,
+        "gc": 3,
+        "forma": "DWD",
+        "cod": "BIH"
+       },
+       {
+        "equipo": "Poland",
+        "pj": 3,
+        "pts": 4,
+        "gf": 7,
+        "gc": 3,
+        "forma": "DLW",
+        "cod": "POL"
+       },
+       {
+        "equipo": "Romania",
+        "pj": 3,
+        "pts": 0,
+        "gf": 3,
+        "gc": 12,
+        "forma": "LLL",
+        "cod": "ROU"
+       }
+      ]
+     },
+     {
+      "liga": "League B",
+      "filas": [
+       {
+        "equipo": "Northern Ireland",
+        "pj": 3,
+        "pts": 7,
+        "gf": 4,
+        "gc": 0,
+        "forma": "WDW",
+        "cod": "NIR"
+       },
+       {
+        "equipo": "Hungary",
+        "pj": 3,
+        "pts": 4,
+        "gf": 1,
+        "gc": 1,
+        "forma": "LDW",
+        "cod": "HUN"
+       },
+       {
+        "equipo": "Ukraine",
+        "pj": 3,
+        "pts": 4,
+        "gf": 1,
+        "gc": 3,
+        "forma": "WDL",
+        "cod": "UKR"
+       },
+       {
+        "equipo": "Georgia",
+        "pj": 3,
+        "pts": 1,
+        "gf": 0,
+        "gc": 2,
+        "forma": "LDL",
+        "cod": "GEO"
+       }
+      ]
+     },
+     {
+      "liga": "League B",
+      "filas": [
+       {
+        "equipo": "Switzerland",
+        "pj": 3,
+        "pts": 9,
+        "gf": 8,
+        "gc": 1,
+        "forma": "WWW",
+        "cod": "SUI"
+       },
+       {
+        "equipo": "Slovenia",
+        "pj": 3,
+        "pts": 4,
+        "gf": 3,
+        "gc": 2,
+        "forma": "DWL",
+        "cod": "SVN"
+       },
+       {
+        "equipo": "Scotland",
+        "pj": 3,
+        "pts": 4,
+        "gf": 2,
+        "gc": 3,
+        "forma": "DLW",
+        "cod": "SCO"
+       },
+       {
+        "equipo": "North Macedonia",
+        "pj": 3,
+        "pts": 0,
+        "gf": 0,
+        "gc": 7,
+        "forma": "LLL",
+        "cod": "MKD"
+       }
+      ]
+     },
+     {
+      "liga": "League C",
+      "filas": [
+       {
+        "equipo": "Finland",
+        "pj": 3,
+        "pts": 7,
+        "gf": 9,
+        "gc": 1,
+        "forma": "WDW",
+        "cod": "FIN"
+       },
+       {
+        "equipo": "Albania",
+        "pj": 3,
+        "pts": 6,
+        "gf": 6,
+        "gc": 2,
+        "forma": "WWL",
+        "cod": "ALB"
+       },
+       {
+        "equipo": "Belarus",
+        "pj": 3,
+        "pts": 4,
+        "gf": 4,
+        "gc": 2,
+        "forma": "LDW",
+        "cod": "BLR"
+       },
+       {
+        "equipo": "San Marino",
+        "pj": 3,
+        "pts": 0,
+        "gf": 0,
+        "gc": 14,
+        "forma": "LLL",
+        "cod": "SMR"
+       }
+      ]
+     },
+     {
+      "liga": "League C",
+      "filas": [
+       {
+        "equipo": "Montenegro",
+        "pj": 3,
+        "pts": 9,
+        "gf": 7,
+        "gc": 4,
+        "forma": "WWW",
+        "cod": "MNE"
+       },
+       {
+        "equipo": "Cyprus",
+        "pj": 3,
+        "pts": 4,
+        "gf": 3,
+        "gc": 2,
+        "forma": "LDW",
+        "cod": "CYP"
+       },
+       {
+        "equipo": "Armenia",
+        "pj": 3,
+        "pts": 3,
+        "gf": 4,
+        "gc": 5,
+        "forma": "WLL",
+        "cod": "ARM"
+       },
+       {
+        "equipo": "Latvia",
+        "pj": 3,
+        "pts": 1,
+        "gf": 1,
+        "gc": 4,
+        "forma": "LDL",
+        "cod": "LVA"
+       }
+      ]
+     },
+     {
+      "liga": "League C",
+      "filas": [
+       {
+        "equipo": "Iceland",
+        "pj": 3,
+        "pts": 7,
+        "gf": 7,
+        "gc": 1,
+        "forma": "DWW",
+        "cod": "ISL"
+       },
+       {
+        "equipo": "Estonia",
+        "pj": 3,
+        "pts": 5,
+        "gf": 2,
+        "gc": 1,
+        "forma": "DDW",
+        "cod": "EST"
+       },
+       {
+        "equipo": "Luxembourg",
+        "pj": 3,
+        "pts": 3,
+        "gf": 2,
+        "gc": 5,
+        "forma": "WLL",
+        "cod": "LUX"
+       },
+       {
+        "equipo": "Bulgaria",
+        "pj": 3,
+        "pts": 1,
+        "gf": 1,
+        "gc": 5,
+        "forma": "LDL",
+        "cod": "BUL"
+       }
+      ]
+     },
+     {
+      "liga": "League C",
+      "filas": [
+       {
+        "equipo": "Slovakia",
+        "pj": 3,
+        "pts": 7,
+        "gf": 5,
+        "gc": 2,
+        "forma": "WWD",
+        "cod": "SVK"
+       },
+       {
+        "equipo": "Moldova",
+        "pj": 3,
+        "pts": 4,
+        "gf": 3,
+        "gc": 4,
+        "forma": "LDW",
+        "cod": "MDA"
+       },
+       {
+        "equipo": "Faroe Islands",
+        "pj": 3,
+        "pts": 3,
+        "gf": 3,
+        "gc": 3,
+        "forma": "DDD",
+        "cod": "FRO"
+       },
+       {
+        "equipo": "Kazakhstan",
+        "pj": 3,
+        "pts": 1,
+        "gf": 3,
+        "gc": 5,
+        "forma": "DLL",
+        "cod": "KAZ"
+       }
+      ]
+     },
+     {
+      "liga": "League D",
+      "filas": [
+       {
+        "equipo": "Malta",
+        "pj": 3,
+        "pts": 7,
+        "gf": 4,
+        "gc": 2,
+        "forma": "WDW",
+        "cod": "MLT"
+       },
+       {
+        "equipo": "Gibraltar",
+        "pj": 2,
+        "pts": 2,
+        "gf": 1,
+        "gc": 1,
+        "forma": "DD",
+        "cod": "GIB"
+       },
+       {
+        "equipo": "Andorra",
+        "pj": 3,
+        "pts": 1,
+        "gf": 1,
+        "gc": 3,
+        "forma": "LDL",
+        "cod": "AND"
+       }
+      ]
+     },
+     {
+      "liga": "League D",
+      "filas": [
+       {
+        "equipo": "Azerbaijan",
+        "pj": 3,
+        "pts": 5,
+        "gf": 2,
+        "gc": 1,
+        "forma": "DDW",
+        "cod": "AZE"
+       },
+       {
+        "equipo": "Lithuania",
+        "pj": 3,
+        "pts": 4,
+        "gf": 3,
+        "gc": 2,
+        "forma": "WDL",
+        "cod": "LTU"
+       },
+       {
+        "equipo": "Liechtenstein",
+        "pj": 2,
+        "pts": 1,
+        "gf": 0,
+        "gc": 2,
+        "forma": "LD",
+        "cod": "LIE"
+       }
+      ]
+     }
+    ]
+   },
+   "id": "s23",
+   "abre": false
+  },
+  {
+   "id": "s24",
+   "tipo": "partido",
+   "objetivo_s": 72,
+   "abre": false,
+   "frases": [
+    "Luxembourg against Bulgaria! Tuesday, 19:45 UK time.",
+    "Luxembourg win this *45 percent* of the time.",
+    "The draw: 29 percent. Bulgaria: 26 percent.",
+    "Expected goals: 1.2 for Luxembourg, 1.0 for Bulgaria.",
+    "Single most likely score: *one-nil*.",
+    "Three goals or more? 39 percent.",
+    "Both teams scoring: 45 percent.",
+    "About 8 corners and 5 yellow cards expected.",
+    "Luxembourg so far: 1 win from 3, 2 scored, 5 conceded.",
+    "Bulgaria so far: 0 wins from 3, 1 scored, 5 conceded.",
+    "Watch A. Moris: player rating *7.2*.",
+    "Watch L. Petkov: player rating *6.8*.",
+    "FIFA ranking: Luxembourg number 98, Bulgaria number 85."
+   ],
+   "datos": {
+    "local": "Luxembourg",
+    "visitante": "Bulgaria",
+    "cod_l": "LUX",
+    "cod_v": "BUL",
+    "rk_l": 98,
+    "rk_v": 85,
+    "dia": "Tuesday",
+    "hora_uk": "19:45",
+    "liga": "League C",
+    "p1": 45,
+    "px": 29,
+    "p2": 26,
+    "xg_l": 1.19,
+    "xg_v": 0.96,
+    "marcador": "1-0",
+    "mas25": 39,
+    "btts": 45,
+    "corners": 7.8,
+    "tarjetas": 4.7,
+    "forma_l": "WLL",
+    "forma_v": "LDL",
+    "estrella_l": [
+     "A. Moris",
+     7.17
+    ],
+    "estrella_v": [
+     "L. Petkov",
+     6.81
+    ]
+   }
+  },
+  {
+   "id": "s25",
+   "tipo": "partido",
+   "objetivo_s": 72,
+   "abre": false,
+   "frases": [
+    "Moldova against Slovakia! Tuesday, 19:45 UK time.",
+    "Slovakia win this *67 percent* of the time.",
+    "The draw: 20 percent. Moldova: 13 percent.",
+    "Expected goals: 0.7 for Moldova, 2.2 for Slovakia.",
+    "Single most likely score: *nil-two*.",
+    "Three goals or more? 53 percent.",
+    "Both teams scoring: 47 percent.",
+    "About 10 corners and 3 yellow cards expected.",
+    "Moldova so far: 1 win from 3, 3 scored, 4 conceded.",
+    "Slovakia so far: 2 wins from 3, 5 scored, 2 conceded.",
+    "Watch Petru Popescu: player rating *6.9*.",
+    "Watch D. Hancko: player rating *7.2*.",
+    "FIFA ranking: Moldova number 159, Slovakia number 45."
+   ],
+   "datos": {
+    "local": "Moldova",
+    "visitante": "Slovakia",
+    "cod_l": "MDA",
+    "cod_v": "SVK",
+    "rk_l": 159,
+    "rk_v": 45,
+    "dia": "Tuesday",
+    "hora_uk": "19:45",
+    "liga": "League C",
+    "p1": 13,
+    "px": 20,
+    "p2": 67,
+    "xg_l": 0.68,
+    "xg_v": 2.22,
+    "marcador": "0-2",
+    "mas25": 53,
+    "btts": 47,
+    "corners": 10.4,
+    "tarjetas": 3.2,
+    "forma_l": "LDW",
+    "forma_v": "WWD",
+    "estrella_l": [
+     "Petru Popescu",
+     6.87
+    ],
+    "estrella_v": [
+     "D. Hancko",
+     7.2
+    ]
+   }
+  },
+  {
+   "tipo": "ranking",
+   "objetivo_s": 35,
+   "frases": [
+    "FIFA ranking, Europe's top five in this Nations League.",
+    "Number 1 in the world: *Spain*.",
+    "Number 3 in the world: *France*.",
+    "Number 4 in the world: *England*.",
+    "Number 7 in the world: *Portugal*.",
+    "Number 8 in the world: *Belgium*."
+   ],
+   "datos": {
+    "equipos": [
+     {
+      "equipo": "Spain",
+      "cod": "ESP",
+      "puesto": 1
+     },
+     {
+      "equipo": "France",
+      "cod": "FRA",
+      "puesto": 3
+     },
+     {
+      "equipo": "England",
+      "cod": "ENG",
+      "puesto": 4
+     },
+     {
+      "equipo": "Portugal",
+      "cod": "POR",
+      "puesto": 7
+     },
+     {
+      "equipo": "Belgium",
+      "cod": "BEL",
+      "puesto": 8
+     },
+     {
+      "equipo": "Netherlands",
+      "cod": "NED",
+      "puesto": 9
+     },
+     {
+      "equipo": "Germany",
+      "cod": "GER",
+      "puesto": 12
+     },
+     {
+      "equipo": "Croatia",
+      "cod": "CRO",
+      "puesto": 13
+     },
+     {
+      "equipo": "Switzerland",
+      "cod": "SUI",
+      "puesto": 14
+     },
+     {
+      "equipo": "Italy",
+      "cod": "ITA",
+      "puesto": 15
+     }
+    ]
+   },
+   "id": "s26",
+   "abre": false
+  },
+  {
+   "id": "s27",
+   "tipo": "partido",
+   "objetivo_s": 72,
+   "abre": false,
+   "frases": [
+    "Scotland against Slovenia! Tuesday, 19:45 UK time.",
+    "Scotland win this *54 percent* of the time.",
+    "The draw: 27 percent. Slovenia: 20 percent.",
+    "Expected goals: 1.4 for Scotland, 0.9 for Slovenia.",
+    "Single most likely score: *one-nil*.",
+    "Three goals or more? 42 percent.",
+    "Both teams scoring: 44 percent.",
+    "About 10 corners and 4 yellow cards expected.",
+    "Scotland so far: 1 win from 3, 2 scored, 3 conceded.",
+    "Slovenia so far: 1 win from 3, 3 scored, 2 conceded.",
+    "Watch Lewis Ferguson: player rating *7.1*.",
+    "Watch J. Oblak: player rating *7.0*.",
+    "FIFA ranking: Scotland number 42, Slovenia number 56."
+   ],
+   "datos": {
+    "local": "Scotland",
+    "visitante": "Slovenia",
+    "cod_l": "SCO",
+    "cod_v": "SVN",
+    "rk_l": 42,
+    "rk_v": 56,
+    "dia": "Tuesday",
+    "hora_uk": "19:45",
+    "liga": "League B",
+    "p1": 54,
+    "px": 27,
+    "p2": 20,
+    "xg_l": 1.43,
+    "xg_v": 0.88,
+    "marcador": "1-0",
+    "mas25": 42,
+    "btts": 44,
+    "corners": 10.1,
+    "tarjetas": 3.7,
+    "forma_l": "DLW",
+    "forma_v": "DWL",
+    "estrella_l": [
+     "Lewis Ferguson",
+     7.14
+    ],
+    "estrella_v": [
+     "J. Oblak",
+     6.98
+    ]
+   }
+  },
+  {
+   "id": "s28",
+   "tipo": "partido",
+   "objetivo_s": 72,
+   "abre": false,
+   "frases": [
+    "Switzerland against North Macedonia! Tuesday, 19:45 UK time.",
+    "Switzerland win this *86 percent* of the time.",
+    "The draw: 10 percent. North Macedonia: 4 percent.",
+    "That is not a match, that's a *mismatch*.",
+    "Expected goals: 3.0 for Switzerland, 0.5 for North Macedonia.",
+    "Single most likely score: *two-nil*.",
+    "Three goals or more? 67 percent.",
+    "Both teams scoring: 35 percent.",
+    "About 10 corners and 4 yellow cards expected.",
+    "Switzerland so far: 3 wins from 3, 8 scored, 1 conceded.",
+    "North Macedonia so far: 0 wins from 3, 0 scored, 7 conceded.",
+    "Watch Z. Amdouni: player rating *7.4*.",
+    "Watch S. Dimitrievski: player rating *6.8*.",
+    "FIFA ranking: Switzerland number 14, North Macedonia number 69."
+   ],
+   "datos": {
+    "local": "Switzerland",
+    "visitante": "North Macedonia",
+    "cod_l": "SUI",
+    "cod_v": "MKD",
+    "rk_l": 14,
+    "rk_v": 69,
+    "dia": "Tuesday",
+    "hora_uk": "19:45",
+    "liga": "League B",
+    "p1": 86,
+    "px": 10,
+    "p2": 4,
+    "xg_l": 2.99,
+    "xg_v": 0.5,
+    "marcador": "2-0",
+    "mas25": 67,
+    "btts": 35,
+    "corners": 9.6,
+    "tarjetas": 3.7,
+    "forma_l": "WWW",
+    "forma_v": "LLL",
+    "estrella_l": [
+     "Z. Amdouni",
+     7.44
+    ],
+    "estrella_v": [
+     "S. Dimitrievski",
+     6.76
+    ]
+   }
+  },
+  {
+   "tipo": "cierre",
+   "objetivo_s": 25,
+   "frases": [
+    "That's the full board! Every match, every number.",
+    "I'm Blitz, an AI, and I'll be right back. From the top. Stay, stay, stay!"
+   ],
+   "datos": {},
+   "id": "s29",
+   "abre": false
+  }
+ ]
+}

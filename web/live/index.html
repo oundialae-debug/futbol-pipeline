@@ -1,0 +1,327 @@
+<title>Blitz Matchday Live</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;800;900&family=Archivo:wght@500;700&family=Martian+Mono:wght@500;700&display=swap">
+<style>
+/* Layout: a 9:16 floodlit scoreboard; Blitz (a talking yellow card) up top, one data board per scene, fixture ticker at the foot. Single deliberate dark look for a TikTok screen share. */
+:root {
+  color-scheme: dark;
+  --night: #101624;      /* stadium sky */
+  --turf: #16302a;       /* pitch under floodlights */
+  --chalk: #f2efe6;      /* line paint */
+  --dim: #9aa6b8;        /* scoreboard secondary */
+  --card: #ffd23f;       /* the yellow card, Blitz himself */
+  --red: #ff4f4f;        /* LIVE / red card */
+  --line: #2a3650;
+  --f-display: "Big Shoulders Display", "Arial Narrow", Impact, sans-serif;
+  --f-body: "Archivo", "Helvetica Neue", Arial, sans-serif;
+  --f-data: "Martian Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+}
+html, body { height: 100%; }
+[hidden] { display: none !important; }
+body {
+  margin: 0; background: var(--night); color: var(--chalk); font-family: var(--f-body);
+  overflow: hidden; -webkit-font-smoothing: antialiased;
+  background-image: radial-gradient(120% 60% at 50% 115%, var(--turf) 0%, transparent 70%),
+                    radial-gradient(40% 25% at 10% -5%, rgba(255,210,63,.13), transparent 70%),
+                    radial-gradient(40% 25% at 90% -5%, rgba(255,210,63,.13), transparent 70%);
+}
+.stage { position: relative; height: 100%; max-width: 560px; margin: 0 auto; display: flex; flex-direction: column;
+  padding-inline: 16px; padding-block: 10px 0; box-sizing: border-box; gap: 10px; }
+
+/* top bar */
+.bar { display: flex; align-items: center; gap: 10px; font-family: var(--f-data); font-size: .72rem; letter-spacing: .08em; text-transform: uppercase; }
+.live { background: var(--red); color: var(--night); font-weight: 700; padding: 3px 8px; border-radius: 3px; display: inline-flex; align-items: center; gap: 6px; }
+.live::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: var(--night); animation: blink 1.2s steps(2) infinite; }
+.ai { border: 1px solid var(--card); color: var(--card); padding: 2px 7px; border-radius: 3px; }
+.bar .grow { flex: 1; }
+.clock { color: var(--dim); font-variant-numeric: tabular-nums; }
+
+/* host */
+.host { display: flex; align-items: center; gap: 14px; min-height: 92px; }
+.blitz { width: 64px; height: 88px; flex: none; background: var(--card); border-radius: 7px; position: relative;
+  transform: rotate(-8deg); box-shadow: 0 6px 0 rgba(0,0,0,.35); transition: transform .12s; }
+.blitz .eye { position: absolute; top: 26px; width: 9px; height: 13px; background: var(--night); border-radius: 50%; animation: look 6s infinite; }
+.blitz .eye.l { left: 15px; } .blitz .eye.r { right: 15px; }
+.blitz .mouth { position: absolute; left: 50%; top: 52px; width: 26px; height: 4px; background: var(--night); border-radius: 0 0 14px 14px;
+  transform: translateX(-50%); transition: height .06s; }
+.blitz.hype { transform: rotate(6deg) scale(1.06); }
+.say { flex: 1; min-width: 0; }
+.say .name { font-family: var(--f-display); font-weight: 900; font-size: 1.5rem; letter-spacing: .02em; line-height: 1; }
+.say .line { font-size: .95rem; color: var(--dim); margin-top: 4px; min-height: 2.6em; line-height: 1.3; overflow: hidden; }
+
+/* board */
+.board { position: relative; flex: 1; min-height: 0; overflow: hidden; padding-top: 4px; display: flex; flex-direction: column; gap: 12px; }
+.eyebrow { font-family: var(--f-data); font-size: .72rem; letter-spacing: .14em; text-transform: uppercase; color: var(--card); }
+h1 { font-family: var(--f-display); font-weight: 900; font-size: clamp(2.4rem, 11vw, 3.6rem); line-height: .92; margin: 0; text-transform: uppercase; text-wrap: balance; }
+h2 { font-family: var(--f-display); font-weight: 800; font-size: 1.6rem; margin: 0; text-transform: uppercase; line-height: 1; }
+.in > * { animation: rise .45s cubic-bezier(.2,.9,.3,1.2) both; }
+.in > *:nth-child(2) { animation-delay: .08s } .in > *:nth-child(3) { animation-delay: .16s }
+.in > *:nth-child(4) { animation-delay: .24s } .in > *:nth-child(5) { animation-delay: .32s } .in > *:nth-child(n+6) { animation-delay: .4s }
+
+.code { display: inline-grid; place-items: center; font-family: var(--f-data); font-weight: 700; font-size: .7rem; letter-spacing: .04em;
+  min-width: 2.8rem; height: 1.6rem; border-radius: 3px; color: var(--night); background: hsl(var(--h) 75% 70%); }
+.versus { display: grid; grid-template-columns: 1fr auto 1fr; align-items: end; gap: 8px; }
+.versus .t { min-width: 0; } .versus .t.r { text-align: right; }
+.versus .t .nm { font-family: var(--f-display); font-weight: 900; font-size: clamp(1.7rem, 8vw, 2.6rem); line-height: .95; text-transform: uppercase; overflow-wrap: anywhere; }
+.versus .t .rk { font-family: var(--f-data); font-size: .68rem; color: var(--dim); margin-top: 4px; }
+.versus .mid { font-family: var(--f-data); font-size: .8rem; color: var(--dim); padding-bottom: 6px; text-align: center; }
+
+.split { display: flex; height: 54px; border-radius: 4px; overflow: hidden; font-family: var(--f-display); font-weight: 900; font-size: 1.6rem; }
+.split > div { display: flex; align-items: center; justify-content: center; min-width: 0; transition: flex-grow 1s cubic-bezier(.2,.9,.3,1); }
+.split .a { background: var(--card); color: var(--night); } .split .x { background: var(--line); color: var(--chalk); } .split .b { background: var(--chalk); color: var(--night); }
+.legend { display: flex; justify-content: space-between; font-family: var(--f-data); font-size: .66rem; color: var(--dim); text-transform: uppercase; letter-spacing: .08em; }
+
+.tiles { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+.tile { border: 1px solid var(--line); border-radius: 4px; padding: 8px 9px; min-width: 0; }
+.tile .k { font-family: var(--f-data); font-size: .6rem; letter-spacing: .1em; text-transform: uppercase; color: var(--dim); }
+.tile .v { font-family: var(--f-display); font-weight: 900; font-size: 1.9rem; line-height: 1; margin-top: 4px; font-variant-numeric: tabular-nums; }
+.tile .v.sm { font-size: 1.45rem; }
+.tile.hot { background: var(--card); color: var(--night); border-color: var(--card); } .tile.hot .k { color: var(--night); }
+
+.form { display: inline-flex; gap: 3px; } .form i { font-style: normal; font-family: var(--f-data); font-size: .62rem; font-weight: 700; width: 1.25rem; height: 1.25rem; display: grid; place-items: center; border-radius: 2px; color: var(--night); }
+.form .W { background: var(--card); } .form .D { background: var(--dim); } .form .L { background: var(--red); }
+.duo { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.duo > div { min-width: 0; border-left: 3px solid var(--line); padding-left: 9px; }
+.duo .k { font-family: var(--f-data); font-size: .6rem; color: var(--dim); text-transform: uppercase; letter-spacing: .1em; }
+.duo .p { font-weight: 700; font-size: .95rem; margin-top: 3px; overflow-wrap: anywhere; }
+.duo .s { font-family: var(--f-data); font-size: .8rem; color: var(--card); }
+
+.rows { display: flex; flex-direction: column; gap: 6px; min-height: 0; overflow: hidden; }
+.row { display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 10px; padding: 7px 0; border-bottom: 1px solid var(--line); }
+.row .who { min-width: 0; font-weight: 700; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.row .who small { display: block; font-weight: 500; color: var(--dim); font-size: .75rem; }
+.row .num { font-family: var(--f-display); font-weight: 900; font-size: 1.7rem; font-variant-numeric: tabular-nums; }
+.row.score .num { font-size: 1.4rem; letter-spacing: .04em; }
+.mini { display: flex; height: 6px; border-radius: 3px; overflow: hidden; width: 74px; } .mini b { display: block; }
+.mini .a { background: var(--card); } .mini .x { background: var(--line); } .mini .b { background: var(--chalk); }
+
+.giant { font-family: var(--f-display); font-weight: 900; font-size: clamp(5rem, 30vw, 9rem); line-height: .85; color: var(--card); font-variant-numeric: tabular-nums; }
+.score-big { display: flex; align-items: center; justify-content: center; gap: 14px; font-family: var(--f-display); font-weight: 900; font-size: clamp(4.5rem, 24vw, 7.5rem); line-height: 1; }
+.score-big span:nth-child(2) { color: var(--dim); font-size: .5em; }
+.groups { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px 10px; }
+.group { min-width: 0; } .group .eyebrow { margin-bottom: 3px; }
+.group div { display: flex; justify-content: space-between; gap: 6px; font-size: .78rem; padding: 2px 0; border-bottom: 1px solid var(--line); }
+.group div b { font-family: var(--f-data); font-size: .72rem; }
+.group div:first-of-type { color: var(--card); font-weight: 700; }
+.group div span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+/* kinetic word pops */
+.pops { position: absolute; inset: 0; pointer-events: none; overflow: hidden; }
+.pop { position: absolute; left: 50%; top: 42%; font-family: var(--f-display); font-weight: 900; text-transform: uppercase; white-space: nowrap;
+  font-size: clamp(2.6rem, 14vw, 5rem); color: var(--night); background: var(--card); padding: 0 .18em; line-height: 1.05;
+  transform: translate(-50%, -50%) rotate(var(--r)); animation: pop 1.6s cubic-bezier(.2,1.4,.4,1) forwards; box-shadow: 0 8px 0 rgba(0,0,0,.4); max-width: 92%; overflow: hidden; text-overflow: ellipsis; }
+.pop.alt { background: var(--chalk); }
+
+/* ticker */
+.ticker { border-top: 2px solid var(--card); overflow: hidden; white-space: nowrap; font-family: var(--f-data); font-size: .72rem;
+  padding-block: 9px calc(9px + env(safe-area-inset-bottom, 0px)); margin-inline: -16px; }
+.ticker .track { display: inline-block; padding-left: 100%; animation: tick 70s linear infinite; }
+.ticker span { margin-right: 28px; } .ticker b { color: var(--card); }
+.progress { height: 3px; background: var(--line); margin-inline: -16px; } .progress i { display: block; height: 100%; width: 0; background: var(--card); }
+
+/* start gate */
+.gate { position: fixed; inset: 0; background: var(--night); display: grid; place-items: center; z-index: 5; padding-inline: 24px; text-align: center; }
+.gate h1 { color: var(--card); }
+.gate p { color: var(--dim); max-width: 32ch; margin: 12px auto 24px; line-height: 1.45; }
+.gate button { font-family: var(--f-display); font-weight: 900; font-size: 1.8rem; text-transform: uppercase; background: var(--card); color: var(--night);
+  border: 0; border-radius: 6px; padding: 14px 36px; cursor: pointer; }
+.gate button:focus-visible { outline: 3px solid var(--chalk); outline-offset: 3px; }
+.gate small { display: block; margin-top: 18px; font-family: var(--f-data); font-size: .66rem; color: var(--dim); }
+
+@keyframes rise { from { opacity: 0; transform: translateY(18px) scale(.97); } }
+@keyframes pop { 0% { opacity: 0; transform: translate(-50%, -50%) rotate(var(--r)) scale(.3); } 18% { opacity: 1; transform: translate(-50%, -50%) rotate(var(--r)) scale(1.08); }
+  75% { opacity: 1; transform: translate(-50%, -50%) rotate(var(--r)) scale(1); } 100% { opacity: 0; transform: translate(-50%, -80%) rotate(var(--r)) scale(.9); } }
+@keyframes tick { to { transform: translateX(-100%); } }
+@keyframes blink { 50% { opacity: 0; } }
+@keyframes look { 0%, 40%, 100% { transform: translateX(0) } 45%, 60% { transform: translateX(3px) } 65%, 80% { transform: translateX(-3px) } }
+@media (prefers-reduced-motion: reduce) { .in > *, .pop, .ticker .track, .blitz .eye { animation-duration: .01s !important; animation-iteration-count: 1 !important; } }
+</style>
+
+<div class="stage">
+  <div class="bar"><span class="live">Live</span><span class="ai">AI host</span><span class="grow"></span><span class="clock" id="clock">--:--</span></div>
+  <div class="host">
+    <div class="blitz" id="blitz" aria-hidden="true"><span class="eye l"></span><span class="eye r"></span><span class="mouth" id="mouth"></span></div>
+    <div class="say"><div class="name">Blitz</div><div class="line" id="line">Nations League data, no brakes.</div></div>
+  </div>
+  <div class="progress"><i id="prog"></i></div>
+  <main class="board" id="board"></main>
+  <div class="ticker"><div class="track" id="ticker"></div></div>
+</div>
+<div class="pops" id="pops"></div>
+
+<div class="gate" id="gate">
+  <div>
+    <h1>Blitz<br>Matchday Live</h1>
+    <p>Start the TikTok screen share first, then tap Go. Blitz talks through every match on his own and loops from the top.</p>
+    <button id="go" type="button">Go live</button>
+    <small id="status">Loading data…</small>
+  </div>
+</div>
+
+<script>
+const $ = s => document.querySelector(s);
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;"}[c]));
+const hue = c => [...String(c)].reduce((h, ch) => (h * 31 + ch.charCodeAt(0)) % 360, 7);
+const code = c => `<span class="code" style="--h:${hue(c)}">${esc(c)}</span>`;
+const form = f => `<span class="form">${[...(f || "")].map(x => `<i class="${x}">${x}</i>`).join("")}</span>`;
+
+let ESC = null, GUION = {}, idx = 0, audio = new Audio(), analyser = null, demoTimer = null, scene = null;
+audio.preload = "auto";
+
+const R = {
+  intro: d => `<div class="eyebrow">UEFA Nations League · AI data show</div><h1>Every match.<br>Every number.</h1>
+    <div class="tiles"><div class="tile hot"><div class="k">Coming up</div><div class="v">${d.proximos}</div></div>
+    <div class="tile"><div class="k">Played</div><div class="v">${d.jugados}</div></div><div class="tile"><div class="k">Goals</div><div class="v">${d.goles}</div></div></div>`,
+  agenda: d => `<div class="eyebrow">${esc(d.dia)} · UK time</div><h1>${d.partidos.length} matches</h1><div class="rows">${d.partidos.map(p => `
+    <div class="row"><span class="num" style="font-size:1rem;font-family:var(--f-data)">${p.hora_uk}</span><span class="who">${esc(p.local)} v ${esc(p.visitante)}</span>
+    <span class="mini"><b class="a" style="width:${p.p1}%"></b><b class="x" style="width:${p.px}%"></b><b class="b" style="width:${p.p2}%"></b></span></div>`).join("")}</div>`,
+  partido: d => `<div class="eyebrow">${esc(d.liga)} · ${esc(d.dia)} ${d.hora_uk} UK</div>
+    <div class="versus"><div class="t">${code(d.cod_l)}<div class="nm">${esc(d.local)}</div><div class="rk">FIFA #${d.rk_l ?? "–"} ${form(d.forma_l)}</div></div>
+    <div class="mid">v</div><div class="t r">${code(d.cod_v)}<div class="nm">${esc(d.visitante)}</div><div class="rk">${form(d.forma_v)} FIFA #${d.rk_v ?? "–"}</div></div></div>
+    <div><div class="split"><div class="a" style="flex-grow:${d.p1}">${d.p1}%</div><div class="x" style="flex-grow:${d.px}">${d.px}%</div><div class="b" style="flex-grow:${d.p2}">${d.p2}%</div></div>
+    <div class="legend"><span>${esc(d.local)} win</span><span>draw</span><span>${esc(d.visitante)} win</span></div></div>
+    <div class="tiles"><div class="tile hot"><div class="k">Likely score</div><div class="v">${d.marcador}</div></div>
+    <div class="tile"><div class="k">Exp. goals</div><div class="v sm">${d.xg_l.toFixed(1)} – ${d.xg_v.toFixed(1)}</div></div>
+    <div class="tile"><div class="k">3+ goals</div><div class="v">${d.mas25 ?? "–"}%</div></div>
+    <div class="tile"><div class="k">Both score</div><div class="v">${d.btts ?? "–"}%</div></div>
+    <div class="tile"><div class="k">Corners</div><div class="v">${d.corners ?? "–"}</div></div>
+    <div class="tile"><div class="k">Yellows</div><div class="v">${d.tarjetas ?? "–"}</div></div></div>
+    <div class="duo">${[[d.local, d.estrella_l], [d.visitante, d.estrella_v]].map(([t, s]) => `<div><div class="k">Watch · ${esc(t)}</div><div class="p">${esc(s?.[0] ?? "–")}</div><div class="s">${s?.[1] ? "rating " + s[1].toFixed(1) : ""}</div></div>`).join("")}</div>`,
+  resultados: d => `<div class="eyebrow">Latest results</div><h1>The weekend</h1><div class="rows">${d.partidos.map(p => `
+    <div class="row score">${code(p.cod_l)}<span class="who">${esc(p.local)} <small>v ${esc(p.visitante)}</small></span><span class="num">${p.gl}–${p.gv}</span></div>`).join("")}</div>`,
+  goleada: d => `<div class="eyebrow">Biggest win so far</div><h1>${esc(d.local)} v ${esc(d.visitante)}</h1>
+    <div class="score-big"><span>${d.gl}</span><span>–</span><span>${d.gv}</span></div>
+    <div class="versus"><div class="t">${code(d.cod_l)}</div><div></div><div class="t r">${code(d.cod_v)}</div></div>`,
+  goleadores: d => `<div class="eyebrow">Golden boot race</div><h1>Top scorers</h1><div class="rows">${d.goles.map(p => `
+    <div class="row">${code(p.cod)}<span class="who">${esc(p.jugador)}<small>${esc(p.equipo)}</small></span><span class="num">${p.n}</span></div>`).join("")}</div>
+    ${d.asistencias.length ? `<div class="legend"><span>Assists: ${d.asistencias.map(a => `${esc(a.jugador)} ${a.n}`).join(" · ")}</span></div>` : ""}`,
+  notas: d => `<div class="eyebrow">Average rating · 3+ games</div><h1>Best players</h1><div class="rows">${d.jugadores.map(p => `
+    <div class="row">${code(p.cod)}<span class="who">${esc(p.jugador)}<small>${esc(p.equipo)}</small></span><span class="num">${p.nota.toFixed(1)}</span></div>`).join("")}</div>`,
+  xg: d => `<div class="eyebrow">Goals minus expected goals</div><h1>Luck check</h1><div class="rows">${[...d.arriba, ...d.abajo].map(p => `
+    <div class="row">${code(p.cod)}<span class="who">${esc(p.equipo)}<small>${p.goles} goals · ${p.xg} xG</small></span><span class="num" style="color:${p.dif >= 0 ? "var(--card)" : "var(--red)"}">${p.dif >= 0 ? "+" : ""}${p.dif}</span></div>`).join("")}</div>`,
+  acierto: d => `<div class="eyebrow">Our track record</div><h1>Favourite won</h1><div class="giant">${d.pct}%</div>
+    <div class="legend"><span>${d.aciertos} of ${d.partidos} matches tracked</span></div>`,
+  tablas: d => { const n = {}; return `<div class="eyebrow">Top two of every group · points</div><h1>Who leads?</h1><div class="groups">${d.tablas.map(t => {
+    const g = t.liga.replace("League ", ""); n[g] = (n[g] || 0) + 1;
+    return `<div class="group"><div class="eyebrow">League ${g}</div>${t.filas.slice(0, 2).map(f => `<div><span>${esc(f.equipo)}</span><b>${f.pts}</b></div>`).join("")}</div>`; }).join("")}</div>`; },
+  ranking: d => `<div class="eyebrow">FIFA world ranking</div><h1>Europe's elite</h1><div class="rows">${d.equipos.map(p => `
+    <div class="row">${code(p.cod)}<span class="who">${esc(p.equipo)}</span><span class="num">#${p.puesto}</span></div>`).join("")}</div>`,
+  cierre: () => `<div class="eyebrow">Back to the top</div><h1>Stay, stay, stay!</h1><div class="giant">↻</div>`
+};
+
+function render(s) {
+  const b = $("#board");
+  b.className = "board";
+  void b.offsetWidth;
+  b.innerHTML = (R[s.tipo] || R.cierre)(s.datos || {});
+  b.className = "board in";
+}
+
+function pop(text) {
+  if (!text) return;
+  const el = document.createElement("div");
+  el.className = "pop" + (Math.random() < .3 ? " alt" : "");
+  el.style.setProperty("--r", (Math.random() * 12 - 6).toFixed(1) + "deg");
+  el.style.top = (30 + Math.random() * 30) + "%";
+  el.textContent = String(text).replace(/\*/g, "");
+  $("#pops").appendChild(el);
+  $("#blitz").classList.add("hype");
+  setTimeout(() => { el.remove(); $("#blitz").classList.remove("hype"); }, 1600);
+}
+
+function play(i) {
+  clearInterval(demoTimer);
+  idx = i % ESC.escenas.length;
+  scene = ESC.escenas[idx];
+  render(scene);
+  const g = GUION[scene.id];
+  const frags = g ? g.fragmentos : scene.frases.map((t, k) => ({texto: t.replace(/\*/g, ""), pop: (t.match(/\*([^*]+)\*/) || [])[1], inicio_est_s: k * 5}));
+  const est = g ? g.estimado_s : scene.frases.length * 5;
+  let shown = -1;
+  const tickFrags = t => {
+    const total = (g && audio.duration) ? audio.duration : est;
+    const k = t / total * est;
+    while (shown + 1 < frags.length && frags[shown + 1].inicio_est_s <= k) {
+      shown++;
+      $("#line").textContent = frags[shown].texto;
+      pop(frags[shown].pop);
+    }
+    $("#prog").style.width = Math.min(100, t / total * 100) + "%";
+  };
+  if (g && g.audio) {
+    audio.src = "audio/" + g.audio;
+    audio.ontimeupdate = () => tickFrags(audio.currentTime);
+    audio.onended = () => play(idx + 1);
+    audio.onerror = () => demo();
+    audio.play().catch(demo);
+  } else demo();
+  function demo() {
+    const t0 = performance.now();
+    demoTimer = setInterval(() => {
+      const t = (performance.now() - t0) / 1000;
+      tickFrags(t);
+      if (t > est) play(idx + 1);
+    }, 200);
+  }
+}
+
+function mouthLoop() {
+  const m = $("#mouth");
+  const buf = analyser ? new Uint8Array(analyser.fftSize) : null;
+  (function f() {
+    let lvl = 0;
+    if (analyser && !audio.paused) {
+      analyser.getByteTimeDomainData(buf);
+      let s = 0; for (const v of buf) s += (v - 128) ** 2;
+      lvl = Math.min(1, Math.sqrt(s / buf.length) / 30);
+    } else if (demoTimer) lvl = Math.random() * .6;
+    m.style.height = (4 + lvl * 20).toFixed(1) + "px";
+    requestAnimationFrame(f);
+  })();
+}
+
+async function start() {
+  $("#gate").hidden = true;
+  try { await document.documentElement.requestFullscreen?.(); } catch (e) {}
+  try { await navigator.wakeLock?.request("screen"); } catch (e) {}
+  try {
+    const ctx = new (window.AudioContext || window.webkitAudioContext)();
+    const src = ctx.createMediaElementSource(audio);
+    analyser = ctx.createAnalyser(); analyser.fftSize = 512;
+    src.connect(analyser); analyser.connect(ctx.destination);
+    await ctx.resume();
+  } catch (e) { analyser = null; }
+  mouthLoop();
+  play(0);
+}
+
+function ticker() {
+  const items = [];
+  for (const s of ESC.escenas) {
+    const d = s.datos || {};
+    if (s.tipo === "partido") items.push(`<span>${esc(d.dia.slice(0, 3))} ${d.hora_uk} · <b>${esc(d.local)}</b> ${d.p1}% · draw ${d.px}% · <b>${esc(d.visitante)}</b> ${d.p2}%</span>`);
+    if (s.tipo === "resultados") d.partidos.forEach(p => items.push(`<span>FT · ${esc(p.local)} <b>${p.gl}–${p.gv}</b> ${esc(p.visitante)}</span>`));
+  }
+  $("#ticker").innerHTML = items.join("") + "<span>AI-generated commentary · statistics only</span>";
+}
+
+setInterval(() => { $("#clock").textContent = new Date().toLocaleTimeString([], {hour: "2-digit", minute: "2-digit"}); }, 1000);
+
+(async () => {
+  try {
+    ESC = await (await fetch("escenas.json")).json();
+    try {
+      const g = await (await fetch("guion.json")).json();
+      g.escenas.forEach(e => GUION[e.id] = e);
+    } catch (e) { /* no audio yet: silent demo timing */ }
+    ticker();
+    render(ESC.escenas[0]);
+    const n = Object.values(GUION).filter(e => e.audio).length;
+    $("#status").textContent = n ? `${ESC.escenas.length} scenes · ${(Object.values(GUION).reduce((a, e) => a + (e.duracion_s || 0), 0) / 60).toFixed(0)} min of voice · data ${ESC.datos_hasta.replace("T", " ")} UTC`
+                                 : `${ESC.escenas.length} scenes · no voice files yet (silent preview)`;
+  } catch (e) {
+    $("#status").textContent = "Could not load escenas.json. Check that it sits next to this page.";
+  }
+})();
+$("#go").addEventListener("click", start);
+</script>
