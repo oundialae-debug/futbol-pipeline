@@ -1,14 +1,14 @@
 # Más/menos juegos en directo: apuestas en papel
 
-Partidos acabados con cuota de juegos en el registro: **342**. Una apuesta por partido (se agrupa por partido). Cuota = la de la API en esa pasada, no la de Luckia. Con menos de 20 apuestas el número no significa nada.
+Partidos acabados con cuota de juegos en el registro: **345**. Una apuesta por partido (se agrupa por partido). Cuota = la de la API en esa pasada, no la de Luckia. Con menos de 20 apuestas el número no significa nada.
 
 | estrategia | apuestas | aciertos | beneficio medio | sigmas |
 |---|---|---|---|---|
-| **señal: vigilar el menos** | 86 | 66% | +18.3% | +1.90 |
-| control: siempre el menos (1ª pasada) | 342 | 49% | -8.7% | -1.73 |
-| control: siempre el más (1ª pasada) | 342 | 51% | -5.7% | -1.12 |
+| **señal: vigilar el menos** | 87 | 67% | +19.0% | +1.99 |
+| control: siempre el menos (1ª pasada) | 345 | 50% | -8.4% | -1.67 |
+| control: siempre el más (1ª pasada) | 345 | 50% | -6.0% | -1.19 |
 
-Brier del 'más' en la línea principal (1ª pasada): modelo 0.2697, mercado 0.2515 (menor es mejor). El modelo da al más +12.4% sobre lo que pasa de verdad.
+Brier del 'más' en la línea principal (1ª pasada): modelo 0.2699, mercado 0.2515 (menor es mejor). El modelo da al más +12.5% sobre lo que pasa de verdad.
 
 ## Señales
 
@@ -100,6 +100,7 @@ Brier del 'más' en la línea principal (1ª pasada): modelo 0.2697, mercado 0.2
 | ATP Shanghai: L. Pavlovic vs I. Simakin | 28.5 | 3.00 | 27 | gana |
 | ATP Shanghai: M. Zheng vs F. A. Gomez | 31.5 | 2.00 | 31 | gana |
 | WTA 125 Suzhou: H. Shi vs Y. Yang | 22.5 | 2.00 | 23 | pierde |
+| WTA 125 Samsun: D. Galfi vs J. Grabher | 21.5 | 1.83 | 19 | gana |
 
 ## Reglas del vigilante (desde el 01/10 solo en papel)
 
@@ -112,11 +113,11 @@ Brier del 'más' en la línea principal (1ª pasada): modelo 0.2697, mercado 0.2
 
 ## Previos (antes de empezar), línea principal de juegos y ganador
 
-439 partidos. Juegos (más de la línea principal), Brier (menor es mejor): modelo 0.2755, modelo corregido con el historial 0.2574, casa 0.2509. Pasó el más en el 50%.
-Ganador (439): acierto modelo 67%, casa 72%.
+447 partidos. Juegos (más de la línea principal), Brier (menor es mejor): modelo 0.2743, modelo corregido con el historial 0.2565, casa 0.2508. Pasó el más en el 50%.
+Ganador (447): acierto modelo 67%, casa 72%.
 
 ## Aprendizaje (recalibración del modelo)
 
-Partidos resueltos: 270 (1933 líneas). Activa: **sí** (hace falta 30+ partidos y que mejore a la CASA en partidos que no vio).
-**Apostando con lo aprendido, día a día** (cada día aprende solo de los anteriores): 168 apuestas, aciertos 45%, beneficio medio -17.1%, -2.35 sigmas.
-Brier (menor es mejor): modelo 0.2704, modelo con el saque de hoy 0.2612, casa 0.2457, recalibrado (validado por partidos) 0.2362. Sesgo del modelo hacia el más: +18.0%.
+Partidos resueltos: 273 (1953 líneas). Activa: **sí** (hace falta 30+ partidos y que mejore a la CASA en partidos que no vio).
+**Apostando con lo aprendido, día a día** (cada día aprende solo de los anteriores): 171 apuestas, aciertos 45%, beneficio medio -16.5%, -2.28 sigmas.
+Brier (menor es mejor): modelo 0.2707, modelo con el saque de hoy 0.2616, casa 0.2458, recalibrado (validado por partidos) 0.2351. Sesgo del modelo hacia el más: +18.2%.
