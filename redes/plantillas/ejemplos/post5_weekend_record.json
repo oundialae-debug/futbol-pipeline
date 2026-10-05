@@ -7,70 +7,110 @@
    3,
    1,
    "Sevilla",
-   1
+   {
+    "1X2": "home",
+    "Over/Under 2.5": "over25",
+    "Both teams score": "btts_yes"
+   }
   ],
   [
    "Real Madrid",
    1,
    0,
    "Getafe",
-   1
+   {
+    "1X2": "home",
+    "Over/Under 2.5": "under25",
+    "Both teams score": "btts_no"
+   }
   ],
   [
    "Atlético",
    0,
    1,
    "Rayo",
-   0
+   {
+    "1X2": "home",
+    "Over/Under 2.5": "under25",
+    "Both teams score": "btts_no"
+   }
   ],
   [
    "Villarreal",
    2,
    2,
    "Betis",
-   1
+   {
+    "1X2": "home",
+    "Over/Under 2.5": "over25",
+    "Both teams score": "btts_yes"
+   }
   ],
   [
    "Valencia",
    1,
    0,
    "Celta",
-   0
+   {
+    "1X2": "away",
+    "Over/Under 2.5": "under25",
+    "Both teams score": "btts_yes"
+   }
   ],
   [
    "Athletic",
    2,
    0,
    "Alavés",
-   1
+   {
+    "1X2": "home",
+    "Over/Under 2.5": "under25",
+    "Both teams score": "btts_no"
+   }
   ],
   [
    "R. Sociedad",
    0,
    0,
    "Mallorca",
-   0
+   {
+    "1X2": "home",
+    "Over/Under 2.5": "under25",
+    "Both teams score": "btts_no"
+   }
   ],
   [
    "Girona",
    2,
    1,
    "Espanyol",
-   1
+   {
+    "1X2": "home",
+    "Over/Under 2.5": "over25",
+    "Both teams score": "btts_yes"
+   }
   ],
   [
    "Osasuna",
    1,
    1,
    "Elche",
-   1
+   {
+    "1X2": "home",
+    "Over/Under 2.5": "under25",
+    "Both teams score": "btts_yes"
+   }
   ],
   [
    "Levante",
    0,
    2,
    "Oviedo",
-   1
+   {
+    "1X2": "away",
+    "Over/Under 2.5": "over25",
+    "Both teams score": "btts_no"
+   }
   ]
  ]
 }

@@ -9,15 +9,8 @@
   "name": "Sevilla FC",
   "short": "Sevilla"
  },
- "probs": [
-  64,
-  21,
-  15
- ],
- "predicted_score": [
-  2,
-  0
- ],
+ "market": "btts_yes",
+ "pct": 71,
  "score": [
   3,
   1

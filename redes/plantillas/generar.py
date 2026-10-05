@@ -73,7 +73,6 @@ body{{width:1080px;height:1920px;background:{NOCHE};color:#F1F3F8;font-family:Ar
 .mini{{font-size:38px;color:#AEB5C4;font-weight:600}}
 .pill{{align-self:flex-start;padding:16px 30px;border-radius:999px;font-size:44px;font-weight:900;color:{NOCHE}}}
 .q{{font-size:64px;font-weight:900;font-stretch:80%;line-height:1}}
-.q span{{color:{AMARILLO}}}
 .pie{{margin-top:18px;font-size:30px;color:#7D8597}}
 .barra{{display:flex;height:34px;gap:6px}}
 .barra div{{border-radius:8px}}
@@ -82,7 +81,7 @@ body{{width:1080px;height:1920px;background:{NOCHE};color:#F1F3F8;font-family:Ar
 .leyenda b{{display:block;font-size:56px;font-weight:900;font-stretch:75%;color:#F1F3F8}}
 .cuad{{display:flex;gap:12px}}
 .cuad div{{width:84px;height:84px;border-radius:14px;display:grid;place-items:center;font-size:44px;font-weight:900;color:{NOCHE}}}
-.fila{{display:flex;align-items:center;justify-content:space-between;font-size:38px;font-weight:700;padding:9px 0;
+.fila{{display:flex;align-items:center;justify-content:space-between;font-size:var(--f,38px);font-weight:700;padding:6px 0;
  border-bottom:2px solid #1E2330}}
 .fila .ok{{color:{VERDE};font-size:44px;font-weight:900}} .fila .ko{{color:{ROJO};font-size:44px;font-weight:900}}
 """
@@ -97,7 +96,7 @@ def pagina(d, kicker, cuerpo, pregunta):
             f'<div class="top"><img src="data:image/png;base64,{b64("2yellow-logo-transparent-for-dark.png")}">'
             f'<div class="chip">{e(d.get("competition", ""))}</div></div>'
             f'<div class="kick">{e(kicker)}</div><div class="cuerpo">{cuerpo}</div>'
-            f'<div class="q">{e(d.get("question", pregunta))} <span>&#8595;</span></div>'
+            f'<div class="q">{e(d.get("question", pregunta))}</div>'
             f'<div class="pie">{e(pie)}</div></div></div></body></html>')
 
 
@@ -160,16 +159,34 @@ def goals(d):
     return pagina(d, "Goals or nothing?", cuerpo, "Over or under?")
 
 
-def form(d):
+def elo_chart(d):
+    """Línea del Elo de los dos equipos en sus últimos partidos (SVG)."""
     h, a = d["home"], d["away"]
-    col = {"W": VERDE, "D": GRIS, "L": ROJO}
-    def racha(eq, f):
-        cs = "".join(f'<div style="background:{col[x]}">{x}</div>' for x in f[-5:])
-        return f'<div><div class="eq" style="--c:{eq["c"]};margin-bottom:16px"><i></i>{e(eq["short"])}</div><div class="cuad">{cs}</div></div>'
-    cuerpo = (num(d["number"], AMARILLO) + f'<div class="frase">{d["text"]}</div>'
-              + racha(h, d["form_home"]) + racha(a, d["form_away"]) + '<div class="mini">Last 5 games, newest on the right</div>')
-    return pagina(d, "Form check", cuerpo, d.get("question", "Can they keep it going?"))
+    W, H, pad = 860, 330, 16
+    todos = d["elo_home"] + d["elo_away"]
+    lo, hi = min(todos) - 10, max(todos) + 10
+    def linea(vs_, c):
+        n = len(vs_)
+        pts = [(pad + k * (W - 2 * pad - 150) / (n - 1), pad + (hi - v) * (H - 2 * pad) / (hi - lo)) for k, v in enumerate(vs_)]
+        x, y = pts[-1]
+        return (f'<polyline points="{" ".join(f"{px:.0f},{py:.0f}" for px, py in pts)}" fill="none" stroke="{c}" '
+                f'stroke-width="9" stroke-linejoin="round" stroke-linecap="round"/><circle cx="{x:.0f}" cy="{y:.0f}" r="14" fill="{c}"/>'
+                f'<text x="{x + 26:.0f}" y="{y + 16:.0f}" fill="#F1F3F8" font-size="46" font-weight="900" '
+                f'font-stretch="75%" font-family="Archivo">{vs_[-1]}</text>')
+    return f'<svg width="{W}" height="{H}">{linea(d["elo_away"], a["c"])}{linea(d["elo_home"], h["c"])}</svg>'
 
+
+def elo_form(d):
+    h, a = d["home"], d["away"]
+    t = d[d["focus"]]
+    serie = d["elo_" + d["focus"]]
+    cambio = serie[-1] - serie[-6]
+    signo = "+" if cambio >= 0 else "−"
+    cuerpo = (num(f"{signo}{abs(cambio)}", VERDE if cambio >= 0 else ROJO)
+              + f'<div class="frase">Elo points for <b>{e(t["short"])}</b> in 5 games. {d.get("extra", "")}</div>'
+              + f'<div><div class="mini" style="margin-bottom:10px">2yellow Elo · last {len(serie)} games</div>{elo_chart(d)}</div>'
+              + vs(h, a, peq=True))
+    return pagina(d, "Elo check", cuerpo, d.get("question", "Real form or a lucky run?"))
 
 def key_number(d):
     h, a = d["home"], d["away"]
@@ -198,21 +215,31 @@ def deserved(d):
     return pagina(d, "Deserved?", cuerpo, "Robbery or fair?")
 
 
+MERCADOS = {"home": "{h} to win", "draw": "Draw", "away": "{a} to win", "over25": "Over 2.5 goals",
+            "under25": "Under 2.5 goals", "btts_yes": "Both teams score", "btts_no": "Not both teams score"}
+
+
+def acierto(m, gh, ga):
+    return {"home": gh > ga, "draw": gh == ga, "away": ga > gh, "over25": gh + ga > 2, "under25": gh + ga < 3,
+            "btts_yes": gh > 0 and ga > 0, "btts_no": gh == 0 or ga == 0}[m]
+
+
+def nombre_mercado(m, h="Home", a="Away"):
+    return MERCADOS[m].format(h=h, a=a)
+
+
 def prediction_vs_result(d):
     h, a = d["home"], d["away"]
     gh, ga = d["score"]
-    ph, pa = d["predicted_score"]
-    p = d["probs"]
-    i = max(range(3), key=lambda k: p[k])
-    real = 0 if gh > ga else 1 if gh == ga else 2
-    ok = i == real
-    texto = "Exact score!" if [ph, pa] == [gh, ga] else "Called it" if ok else "Missed it"
-    bloque = lambda t, x, y, op: (f'<div style="opacity:{op}"><div class="mini">{t}</div>{vs(h, a, res(x, y), peq=True)}</div>')
-    cuerpo = (bloque("We said", ph, pa, .75) + bloque("It ended", gh, ga, 1)
+    m, pct = d["market"], d["pct"]
+    ok = acierto(m, gh, ga)
+    cuerpo = ('<div class="mini">We said</div>'
+              + f'<div class="frase" style="font-size:84px;line-height:1"><b>{e(nombre_mercado(m, h["short"], a["short"]))}</b></div>'
+              + f'<div class="frase" style="margin-top:-24px">{pct}% chance, before kick-off</div>'
+              + '<div class="mini">It ended</div>' + vs(h, a, res(gh, ga))
               + f'<div class="pill" style="background:{VERDE if ok else ROJO};font-size:64px;padding:20px 40px">'
-              + f'{"&#10003;" if ok else "&#10007;"} {texto}</div>')
-    return pagina(d, "Prediction vs result", cuerpo, "Did you see it coming?")
-
+              + f'{"&#10003; Called it" if ok else "&#10007; Missed it"}</div>')
+    return pagina(d, "Prediction vs result", cuerpo, d.get("question", "Did you see it coming?"))
 
 def upset_happened(d):
     h, a = d["home"], d["away"]
@@ -232,17 +259,25 @@ def stat_of_match(d):
 
 
 def weekend_record(d):
-    ok = sum(1 for m in d["matches"] if m[4])
-    filas = "".join(f'<div class="fila"><span>{e(m[0])} <b class="disp">{m[1]}–{m[2]}</b> {e(m[3])}</span>'
-                    f'<span class="{"ok" if m[4] else "ko"}">{"&#10003;" if m[4] else "&#10007;"}</span></div>'
-                    for m in d["matches"])
-    marca = num(f"{ok}/{len(d['matches'])}", AMARILLO)
+    """Elige solo el mercado con más aciertos de la jornada y lo enseña."""
+    ms = d["matches"]  # [local, gl, gv, visitante, {mercado: pick}]
+    tabla = {}
+    for loc, gh, ga, vis, picks in ms:
+        for m, pick in picks.items():
+            tabla.setdefault(m, []).append((loc, gh, ga, vis, pick, acierto(pick, gh, ga)))
+    m, filas_m = max(tabla.items(), key=lambda kv: sum(x[5] for x in kv[1]) / len(kv[1]))
+    ok = sum(x[5] for x in filas_m)
+    filas = "".join(f'<div class="fila"><span>{e(loc)} <b class="disp">{gh}–{ga}</b> {e(vis)}</span>'
+                    f'<span style="display:flex;gap:18px;align-items:center"><span class="mini" style="font-size:30px">'
+                    f'{e(nombre_mercado(p, "Home", "Away"))}</span><span class="{"ok" if x else "ko"}">{"&#10003;" if x else "&#10007;"}</span></span></div>'
+                    for loc, gh, ga, vis, p, x in filas_m)
+    marca = f'<div class="num" style="color:{AMARILLO};font-size:220px">{ok}/{len(filas_m)}</div>'
     cuerpo = (f'<div style="display:flex;align-items:flex-end;gap:30px">{marca}'
-              f'<div class="frase" style="padding-bottom:20px">correct<br>calls</div></div><div>{filas}</div>')
-    return pagina(d, "Our matchday", cuerpo, "Beat us next week?")
+              f'<div class="frase" style="padding-bottom:20px">correct<br>calls</div></div>'
+              f'<div class="frase" style="margin-top:-20px">Our best market this matchday: <b>{e(m)}</b></div><div style="--f:34px">{filas}</div>')
+    return pagina(d, "Our matchday", cuerpo, d.get("question", "Beat us next week?"))
 
-
-PLANTILLAS = {"prediction": prediction, "upset_alert": upset_alert, "goals": goals, "form": form,
+PLANTILLAS = {"prediction": prediction, "upset_alert": upset_alert, "goals": goals, "elo_form": elo_form,
               "key_number": key_number, "deserved": deserved, "prediction_vs_result": prediction_vs_result,
               "upset_happened": upset_happened, "stat_of_match": stat_of_match, "weekend_record": weekend_record}
 
