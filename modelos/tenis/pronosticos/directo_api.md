@@ -1,4 +1,4 @@
-# Tenis en directo, 05/10/2026 02:58 UTC (04:58 en España)
+# Tenis en directo, 05/10/2026 03:09 UTC (05:09 en España)
 
 Calculadora desde el marcador exacto (modelo de puntos, superficie real) frente a la cuota en directo
 (sin margen). Ganador y sets: la calculadora suele coincidir con la casa. Total de juegos: el modelo
@@ -7,10 +7,10 @@ Se actualiza cada ~5 min; el registro en data/tenis/api_tennis/registro/ servir�
 
 | partido | tipo | superficie | marcador (sets, juegos, puntos, saca) | gana 1º: modelo / cuota | sets más probables (modelo) | total juegos: línea, modelo / cuota |
 |---|---|---|---|---|---|---|
-| A. Kachmazov vs G. Lomakin | Challenger Men Singles | Hard | 1-0, 2-1, 30 - 30, saca A. Kachmazov | 99% /  | 2-0 93%, 2-1 6% |  |
-| K. Saitoh vs Y. Takahashi | Challenger Men Singles | Hard | 0-1, 0-0, A - 40, saca K. Saitoh | 33% / 35% | 0-2 41%, 2-1 33% |  |
-| K. Tamm vs M. Borisiouk | Challenger Men Singles | Hard | 0-1, 2-1, 0 - 30, saca M. Borisiouk | 12% / 7% | 0-2 64%, 1-2 24% |  |
-| W. Zheng vs J. Lu | Challenger Women Singles | Hard | 0-1, 1-1, 40 - 15, saca W. Zheng | 14% / 23% | 0-2 58%, 1-2 28% | 21.5: 52% / 54% |
-| K. Zavatska vs D. Khomutsianskaya | Challenger Women Singles | Hard | 0-0, 4-4, A - 40, saca D. Khomutsianskaya | 38% / 58% | 1-2 34%, 0-2 28% |  |
-| H. Shi vs Y. Yang | Challenger Women Singles | Hard | 0-0, 5-4, A - 40, saca Y. Yang | 75% / 84% | 2-0 49%, 2-1 26% | 21.5: 64% / 50% |
-| D. Vekic vs I. Swiatek | Wta Singles | Hard | 0-0, 0-0, 0 - 0, saca ? | 3% / 12% | 0-2 79%, 1-2 18% | 18.5: 49% / 49% |
+| A. Kachmazov vs G. Lomakin | Challenger Men Singles | Hard | 1-0, 5-1, 15 - 15, saca G. Lomakin | 100% /  | 2-0 100%, 2-1 0% |  |
+| K. Saitoh vs Y. Takahashi | Challenger Men Singles | Hard | 0-1, 2-2, 0 - 0, saca K. Saitoh | 31% / 28% | 0-2 45%, 2-1 31% |  |
+| K. Tamm vs M. Borisiouk | Challenger Men Singles | Hard | 0-1, 3-3, 0 - 0, saca K. Tamm | 12% / 11% | 0-2 64%, 1-2 24% |  |
+| W. Zheng vs J. Lu | Challenger Women Singles | Hard | 0-1, 2-2, 30 - 40, saca W. Zheng | 9% / 9% | 0-2 73%, 1-2 18% | 18.5: 72% / 58% |
+| K. Zavatska vs D. Khomutsianskaya | Challenger Women Singles | Hard | 0-1, 0-0, 0 - 0, saca D. Khomutsianskaya | 12% / 23% | 0-2 65%, 1-2 23% |  |
+| H. Shi vs Y. Yang | Challenger Women Singles | Hard | 1-0, 0-0, 30 - 30, saca H. Shi | 82% / 88% | 2-0 57%, 2-1 25% | 19.5: 67% / 54% |
+| D. Vekic vs I. Swiatek | Wta Singles | Hard | 0-0, 0-0, 0 - 0, saca I. Swiatek | 3% / 12% | 0-2 79%, 1-2 18% | 18.5: 49% / 49% |
