@@ -32,3 +32,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-05 05:59,12167960,Wta Singles,Beijing,I. Jovic,K. Rakhimova,menos,17.5,0.6054,0.5767,1.615,True,actual
 2026-10-05 05:59,12168125,Challenger Women Singles,Suzhou,E. Jacquemot,C. Liu,menos,17.5,0.6736,0.5889,1.571,True,actual
 2026-10-05 05:59,12168149,Atp Singles,Shanghai,T. Daniel,S. Mochizuki,más,23.5,0.6921,0.5889,1.571,True,aprendida
+2026-10-05 06:01,12167977,Challenger Men Singles,Wuning 3 (China) - Qualification,S. Fomin,T. Derepasko,menos,17.5,0.7454,0.5889,1.571,True,actual
