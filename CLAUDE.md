@@ -31,3 +31,4 @@ Apunta aquí, en una línea, las decisiones y lo aprendido para los próximos ch
 - 05/10/2026: el CLAUDE.md largo pasa a `docs/notas_proyecto.md`; grafo graphify solo de código (sin `data/`); skill free-llm-apis instalada sin claves.
 - 05/10/2026: LLM gratuitos listos (Groq, Cerebras) vía `scripts/llm_gratis.py`; Python necesita User-Agent propio o da 403.
 - 05/10/2026: redes 2yellow (`redes/plantillas/`): sin flecha abajo; colores de equipo protagonistas; "Our matchday" = aciertos más difíciles (sin 1.5/3.5) + siempre 1-2 fallos; aportar dato propio (Elo, modelo), no lo que tiene todo el mundo. Datos reales: `datos_selecciones.py pre|post <equipo> <fecha>`.
+- 05/10/2026: redes: los % de las imágenes son SOLO de nuestro modelo (`mod_*`), nunca la mezcla con el mercado (en selecciones casi todos los pesos son 0 = mercado puro). Córners del modelo fuera de las listas mientras su Brier sea >= 0.25.

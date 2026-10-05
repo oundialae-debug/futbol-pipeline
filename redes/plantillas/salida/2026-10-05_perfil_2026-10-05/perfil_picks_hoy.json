@@ -2,16 +2,29 @@
  "template": "picks_list",
  "competition": "Nations League · 05/10",
  "home": {
-  "name": "Italy",
-  "short": "Italy"
+  "name": "Cyprus",
+  "short": "Cyprus"
  },
  "away": {
-  "name": "Turkey",
-  "short": "Turkey"
+  "name": "Latvia",
+  "short": "Latvia"
  },
  "kicker": "Unlocked",
  "title": "Tonight’s 8 calls",
  "picks": [
+  {
+   "time": "18:00",
+   "home": {
+    "name": "Cyprus",
+    "short": "Cyprus"
+   },
+   "away": {
+    "name": "Latvia",
+    "short": "Latvia"
+   },
+   "pick": "Under 2.5 goals",
+   "pct": 65
+  },
   {
    "time": "20:45",
    "home": {
@@ -22,33 +35,20 @@
     "name": "Turkey",
     "short": "Turkey"
    },
-   "pick": "Italy win",
-   "pct": 66
-  },
-  {
-   "time": "20:45",
-   "home": {
-    "name": "Ukraine",
-    "short": "Ukraine"
-   },
-   "away": {
-    "name": "Hungary",
-    "short": "Hungary"
-   },
-   "pick": "Under 9.5 corners",
+   "pick": "Under 3.5 goals",
    "pct": 64
   },
   {
    "time": "20:45",
    "home": {
-    "name": "France",
-    "short": "France"
+    "name": "Northern Ireland",
+    "short": "N. Ireland"
    },
    "away": {
-    "name": "Belgium",
-    "short": "Belgium"
+    "name": "Georgia",
+    "short": "Georgia"
    },
-   "pick": "Over 2.5 goals",
+   "pick": "Under 2.5 goals",
    "pct": 64
   },
   {
@@ -61,21 +61,34 @@
     "name": "Sweden",
     "short": "Sweden"
    },
-   "pick": "Under 9.5 corners",
-   "pct": 63
+   "pick": "Under 3.5 goals",
+   "pct": 62
   },
   {
    "time": "20:45",
    "home": {
-    "name": "Northern Ireland",
-    "short": "N. Ireland"
+    "name": "France",
+    "short": "France"
    },
    "away": {
-    "name": "Georgia",
-    "short": "Georgia"
+    "name": "Belgium",
+    "short": "Belgium"
    },
-   "pick": "Over 1.5 goals",
-   "pct": 63
+   "pick": "Under 3.5 goals",
+   "pct": 62
+  },
+  {
+   "time": "20:45",
+   "home": {
+    "name": "Ukraine",
+    "short": "Ukraine"
+   },
+   "away": {
+    "name": "Hungary",
+    "short": "Hungary"
+   },
+   "pick": "Under 2.5 goals",
+   "pct": 57
   },
   {
    "time": "20:45",
@@ -87,8 +100,8 @@
     "name": "Poland",
     "short": "Poland"
    },
-   "pick": "Under 9.5 corners",
-   "pct": 63
+   "pick": "Under 2.5 goals",
+   "pct": 56
   },
   {
    "time": "20:45",
@@ -101,20 +114,7 @@
     "short": "Armenia"
    },
    "pick": "Montenegro win",
-   "pct": 61
-  },
-  {
-   "time": "18:00",
-   "home": {
-    "name": "Cyprus",
-    "short": "Cyprus"
-   },
-   "away": {
-    "name": "Latvia",
-    "short": "Latvia"
-   },
-   "pick": "Cyprus win",
-   "pct": 58
+   "pct": 55
   }
  ]
 }

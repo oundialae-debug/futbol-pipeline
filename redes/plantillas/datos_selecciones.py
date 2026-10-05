@@ -267,14 +267,13 @@ MERCADOS_LISTA = [("1", "Full Time Result", "Home", None, "{h} win", None),
                   ("btts", "Both Teams To Score", "Yes", "No", "Both teams score", "Not both teams score")]
 MERCADOS_LISTA += [(f"mas_{x}", f"Total Goals {x}", "Over", "Under", f"Over {x} goals", f"Under {x} goals")
                    for x in ("1.5", "2.5", "3.5")]
-MERCADOS_LISTA += [(f"corners_mas_{x}", f"Total Corners {x}", "Over", "Under", f"Over {x} corners", f"Under {x} corners")
-                   for x in ("8.5", "9.5")]
+# Córners fuera de las listas del modelo: en evaluacion.md su Brier (0.27 y 0.25) es igual o peor que decir
+# 50 % siempre (0.25). Volver a meterlos si el modelo de córners mejora.
 
 
 def lista_hoy(fecha, cuota_min=1.44, mejor_min=1.50):
-    """Lo más probable de cada partido (mezcla modelo/mercado de pesos_mezcla.json) con cuota mediana
-    >= cuota_min y mejor cuota >= mejor_min. Reproduce las listas del chat de la Nations League."""
-    w = {k: v["peso"] for k, v in json.load(open(f"{C}/pesos_mezcla.json")).items()}
+    """Lo más probable de cada partido según NUESTRO MODELO (sin mezclar con el mercado). Las cuotas
+    solo filtran lo trivial: cuota mediana >= cuota_min y mejor cuota >= mejor_min."""
     r = leer("registro_pronosticos.csv")
     r = r[r.fecha_partido.str.startswith(fecha)].sort_values("generado").drop_duplicates("match_id", keep="last")
     cu = leer("cuotas_hoy.csv")
@@ -283,10 +282,10 @@ def lista_hoy(fecha, cuota_min=1.44, mejor_min=1.50):
         q = cu[cu.match_id == x.match_id]
         cand = []
         for k, mk, si, no, tsi, tno in MERCADOS_LISTA:
-            mo, ma = x.get(f"mod_{k}"), x.get(f"mkt_{k}")
+            mo = x.get(f"mod_{k}")
             if pd.isna(mo):
                 continue
-            p = mo if pd.isna(ma) else w.get(k, 0) * mo + (1 - w.get(k, 0)) * ma
+            p = mo                       # SOLO nuestro modelo (decisión del usuario, 05/10): nada del mercado
             for lado, txt, pp in ((si, tsi, p), (no, tno, 1 - p)):
                 o = q[(q.mercado == mk) & (q.lado == lado)].cuota if lado else pd.Series(dtype=float)
                 if len(o) and o.median() >= cuota_min and o.max() >= mejor_min:
