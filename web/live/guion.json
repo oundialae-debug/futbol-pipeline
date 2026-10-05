@@ -1,0 +1,6509 @@
+{
+ "titulo": "Nations League live data",
+ "personaje": "Blitz",
+ "voz": "en-US-Andrew:DragonHDOmniLatestNeural",
+ "estimado_total_s": 1299.7,
+ "escenas": [
+  {
+   "id": "s00",
+   "fragmentos": [
+    {
+     "texto": "Okay.",
+     "estilo": "excited",
+     "rate": "+16%",
+     "pitch": "+0%",
+     "pausa_ms": 120,
+     "pop": "OKAY",
+     "suspense": false,
+     "inicio_est_s": 0.0
+    },
+    {
+     "texto": "Brace yourself.",
+     "estilo": "whispering",
+     "rate": "+4%",
+     "pitch": "+3%",
+     "pausa_ms": 600,
+     "pop": null,
+     "suspense": true,
+     "inicio_est_s": 0.45
+    },
+    {
+     "texto": "Hey hey hey! Welcome in! I'm Blitz, and tonight every number comes from our AI model.",
+     "estilo": "excited",
+     "rate": "+4%",
+     "pitch": "+9%",
+     "pausa_ms": 320,
+     "pop": "Blitz",
+     "suspense": false,
+     "inicio_est_s": 1.79
+    },
+    {
+     "texto": "Huge!",
+     "estilo": "cheerful",
+     "rate": "+20%",
+     "pitch": "+9%",
+     "pausa_ms": 300,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 8.03
+    },
+    {
+     "texto": "Nations League week. 18 matches coming up, and I've got numbers on every single one.",
+     "estilo": "excited",
+     "rate": "+4%",
+     "pitch": "+9%",
+     "pausa_ms": 120,
+     "pop": "18 matches",
+     "suspense": false,
+     "inicio_est_s": 8.65
+    },
+    {
+     "texto": "Ridiculous.",
+     "estilo": "cheerful",
+     "rate": "+12%",
+     "pitch": "+9%",
+     "pausa_ms": 300,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 14.32
+    },
+    {
+     "texto": "My brain is buzzing. Literally buzzing.",
+     "estilo": "cheerful",
+     "rate": "+20%",
+     "pitch": "+9%",
+     "pausa_ms": 600,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 14.96
+    },
+    {
+     "texto": "86 games already played. 213 goals. Let's go!",
+     "estilo": "excited",
+     "rate": "+4%",
+     "pitch": "+3%",
+     "pausa_ms": 250,
+     "pop": "213 goals",
+     "suspense": false,
+     "inicio_est_s": 17.48
+    },
+    {
+     "texto": "213 goals!",
+     "estilo": "shouting",
+     "rate": "+4%",
+     "pitch": "+0%",
+     "pausa_ms": 800,
+     "pop": "213 goals",
+     "suspense": false,
+     "inicio_est_s": 20.69
+    }
+   ],
+   "estimado_s": 22.2,
+   "ssml": "<speak version=\"1.0\" xmlns=\"http://www.w3.org/2001/10/synthesis\" xml:lang=\"en-US\"><voice name=\"en-US-Andrew:DragonHDOmniLatestNeural\" parameters=\"temperature=1.0;top_p=0.9;top_k=40;cfg_scale=1.8\">Okay. Brace yourself... Hey hey hey! Welcome in! I'm Blitz, and tonight every number comes from our AI model. Huge! Nations League week. 18 matches coming up, and I've got numbers on every single one. Ridiculous. My brain is buzzing. Literally buzzing. 86 games already played. 213 goals. Let's go! 213 goals!</voice></speak>",
+   "audio": "s00.mp3",
+   "duracion_s": 32.94
+  },
+  {
+   "id": "s01",
+   "fragmentos": [
+    {
+     "texto": "Okay, next one.",
+     "estilo": "excited",
+     "rate": "+8%",
+     "pitch": "+0%",
+     "pausa_ms": 600,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 0.0
+    },
+    {
+     "texto": "Tap follow if numbers make you happy too.",
+     "estilo": "cheerful",
+     "rate": "+20%",
+     "pitch": "+0%",
+     "pausa_ms": 300,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 1.67
+    },
+    {
+     "texto": "Monday: 8 matches.",
+     "estilo": "excited",
+     "rate": "+12%",
+     "pitch": "+0%",
+     "pausa_ms": 120,
+     "pop": "8 matches",
+     "suspense": false,
+     "inicio_est_s": 4.53
+    },
+    {
+     "texto": "That's wild.",
+     "estilo": "cheerful",
+     "rate": "+8%",
+     "pitch": "+9%",
+     "pausa_ms": 300,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 5.68
+    },
+    {
+     "texto": "Little secret...",
+     "estilo": "whispering",
+     "rate": "+12%",
+     "pitch": "+6%",
+     "pausa_ms": 1000,
+     "pop": null,
+     "suspense": true,
+     "inicio_est_s": 6.69
+    },
+    {
+     "texto": "Cyprus against Latvia, 17:00.",
+     "estilo": "excited",
+     "rate": "+16%",
+     "pitch": "+9%",
+     "pausa_ms": 300,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 8.38
+    },
+    {
+     "texto": "Stay with me, stay with me.",
+     "estilo": "cheerful",
+     "rate": "+4%",
+     "pitch": "+3%",
+     "pausa_ms": 800,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 10.01
+    },
+    {
+     "texto": "Bosnia and Herzegovina against Poland, 19:45.",
+     "estilo": "excited",
+     "rate": "+4%",
+     "pitch": "+0%",
+     "pausa_ms": 800,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 13.03
+    },
+    {
+     "texto": "Listen.",
+     "estilo": "excited",
+     "rate": "+12%",
+     "pitch": "+0%",
+     "pausa_ms": 320,
+     "pop": "LISTEN",
+     "suspense": false,
+     "inicio_est_s": 16.05
+    },
+    {
+     "texto": "France against Belgium, 19:45.",
+     "estilo": "excited",
+     "rate": "+20%",
+     "pitch": "+0%",
+     "pausa_ms": 300,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 16.71
+    },
+    {
+     "texto": "No way.",
+     "estilo": "excited",
+     "rate": "+8%",
+     "pitch": "+3%",
+     "pausa_ms": 320,
+     "pop": "NO WAY",
+     "suspense": false,
+     "inicio_est_s": 18.29
+    },
+    {
+     "texto": "Italy against Turkey, 19:45.",
+     "estilo": "excited",
+     "rate": "+16%",
+     "pitch": "+0%",
+     "pausa_ms": 800,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 19.32
+    },
+    {
+     "texto": "Montenegro against Armenia, 19:45.",
+     "estilo": "excited",
+     "rate": "+8%",
+     "pitch": "+9%",
+     "pausa_ms": 800,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 21.45
+    },
+    {
+     "texto": "Where was I? Oh yes. Football.",
+     "estilo": "cheerful",
+     "rate": "+16%",
+     "pitch": "+0%",
+     "pausa_ms": 800,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 23.67
+    },
+    {
+     "texto": "Northern Ireland against Georgia, 19:45.",
+     "estilo": "excited",
+     "rate": "+16%",
+     "pitch": "+3%",
+     "pausa_ms": 300,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 26.46
+    },
+    {
+     "texto": "Boom.",
+     "estilo": "excited",
+     "rate": "+8%",
+     "pitch": "+0%",
+     "pausa_ms": 320,
+     "pop": "BOOM",
+     "suspense": false,
+     "inicio_est_s": 28.42
+    },
+    {
+     "texto": "Romania against Sweden, 19:45.",
+     "estilo": "excited",
+     "rate": "+8%",
+     "pitch": "+6%",
+     "pausa_ms": 300,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 29.1
+    },
+    {
+     "texto": "Ha!",
+     "estilo": "excited",
+     "rate": "+12%",
+     "pitch": "+6%",
+     "pausa_ms": 180,
+     "pop": "HA",
+     "suspense": false,
+     "inicio_est_s": 30.82
+    },
+    {
+     "texto": "Ukraine against Hungary, 19:45.",
+     "estilo": "excited",
+     "rate": "+20%",
+     "pitch": "+0%",
+     "pausa_ms": 800,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 31.35
+    }
+   ],
+   "estimado_s": 33.4,
+   "ssml": "<speak version=\"1.0\" xmlns=\"http://www.w3.org/2001/10/synthesis\" xml:lang=\"en-US\"><voice name=\"en-US-Andrew:DragonHDOmniLatestNeural\" parameters=\"temperature=1.0;top_p=0.9;top_k=40;cfg_scale=1.8\">Okay, next one. Tap follow if numbers make you happy too. Monday: 8 matches. That's wild. Little secret... Cyprus against Latvia, 17:00. Stay with me, stay with me. Bosnia and Herzegovina against Poland, 19:45. Listen. France against Belgium, 19:45. No way. Italy against Turkey, 19:45. Montenegro against Armenia, 19:45. Where was I? Oh yes. Football. Northern Ireland against Georgia, 19:45. Boom. Romania against Sweden, 19:45. Ha! Ukraine against Hungary, 19:45.</voice></speak>",
+   "audio": "s01.mp3",
+   "duracion_s": 49.89
+  },
+  {
+   "id": "s02",
+   "fragmentos": [
+    {
+     "texto": "Next screen, go!",
+     "estilo": "excited",
+     "rate": "+4%",
+     "pitch": "+6%",
+     "pausa_ms": 300,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 0.0
+    },
+    {
+     "texto": "Look at this!",
+     "estilo": "excited",
+     "rate": "+20%",
+     "pitch": "+9%",
+     "pausa_ms": 180,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 1.41
+    },
+    {
+     "texto": "Cyprus against Latvia! Monday, 17:00 UK time.",
+     "estilo": "excited",
+     "rate": "+12%",
+     "pitch": "+6%",
+     "pausa_ms": 300,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 2.55
+    },
+    {
+     "texto": "Wow.",
+     "estilo": "excited",
+     "rate": "+16%",
+     "pitch": "+9%",
+     "pausa_ms": 320,
+     "pop": "WOW",
+     "suspense": false,
+     "inicio_est_s": 5.25
+    },
+    {
+     "texto": "Here it comes...",
+     "estilo": "whispering",
+     "rate": "+12%",
+     "pitch": "+6%",
+     "pausa_ms": 800,
+     "pop": null,
+     "suspense": true,
+     "inicio_est_s": 5.91
+    },
+    {
+     "texto": "Cyprus win this 61 percent of the time.",
+     "estilo": "excited",
+     "rate": "+8%",
+     "pitch": "+0%",
+     "pausa_ms": 600,
+     "pop": "61 percent",
+     "suspense": false,
+     "inicio_est_s": 7.74
+    },
+    {
+     "texto": "Every number here comes from our AI model. Every single one.",
+     "estilo": "cheerful",
+     "rate": "+20%",
+     "pitch": "+0%",
+     "pausa_ms": 800,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 11.19
+    },
+    {
+     "texto": "Oh!",
+     "estilo": "excited",
+     "rate": "+20%",
+     "pitch": "+6%",
+     "pausa_ms": 120,
+     "pop": "OH",
+     "suspense": false,
+     "inicio_est_s": 15.51
+    },
+    {
+     "texto": "The draw: 25 percent. Latvia: 15 percent.",
+     "estilo": "excited",
+     "rate": "+12%",
+     "pitch": "+6%",
+     "pausa_ms": 600,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 15.95
+    },
+    {
+     "texto": "Expected goals: 1.3 for Cyprus, 0.8 for Latvia.",
+     "estilo": "excited",
+     "rate": "+20%",
+     "pitch": "+6%",
+     "pausa_ms": 450,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 18.96
+    },
+    {
+     "texto": "Single most likely score: one-nil.",
+     "estilo": "excited",
+     "rate": "+8%",
+     "pitch": "+3%",
+     "pausa_ms": 320,
+     "pop": "one-nil",
+     "suspense": false,
+     "inicio_est_s": 21.97
+    },
+    {
+     "texto": "One-nil!",
+     "estilo": "shouting",
+     "rate": "+4%",
+     "pitch": "+0%",
+     "pausa_ms": 450,
+     "pop": "one-nil",
+     "suspense": false,
+     "inicio_est_s": 24.07
+    },
+    {
+     "texto": "Three goals or more? 45 percent.",
+     "estilo": "excited",
+     "rate": "+16%",
+     "pitch": "+6%",
+     "pausa_ms": 300,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 24.89
+    },
+    {
+     "texto": "Right.",
+     "estilo": "excited",
+     "rate": "+16%",
+     "pitch": "+3%",
+     "pausa_ms": 250,
+     "pop": "RIGHT",
+     "suspense": false,
+     "inicio_est_s": 27.18
+    },
+    {
+     "texto": "Both teams scoring: 44 percent.",
+     "estilo": "excited",
+     "rate": "+20%",
+     "pitch": "+0%",
+     "pausa_ms": 600,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 27.76
+    },
+    {
+     "texto": "Psst...",
+     "estilo": "whispering",
+     "rate": "+4%",
+     "pitch": "+9%",
+     "pausa_ms": 1000,
+     "pop": null,
+     "suspense": true,
+     "inicio_est_s": 29.96
+    },
+    {
+     "texto": "Cyprus so far: 1 win from 3, 3 scored, 2 conceded.",
+     "estilo": "excited",
+     "rate": "+8%",
+     "pitch": "+9%",
+     "pausa_ms": 800,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 31.33
+    },
+    {
+     "texto": "Spicy.",
+     "estilo": "cheerful",
+     "rate": "+20%",
+     "pitch": "+9%",
+     "pausa_ms": 450,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 36.05
+    },
+    {
+     "texto": "Latvia so far: 0 wins from 3, 1 scored, 4 conceded.",
+     "estilo": "excited",
+     "rate": "+16%",
+     "pitch": "+9%",
+     "pausa_ms": 300,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 36.82
+    },
+    {
+     "texto": "That's huge.",
+     "estilo": "cheerful",
+     "rate": "+8%",
+     "pitch": "+3%",
+     "pausa_ms": 450,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 40.77
+    },
+    {
+     "texto": "Guess. Go on, guess.",
+     "estilo": "whispering",
+     "rate": "+20%",
+     "pitch": "+9%",
+     "pausa_ms": 1000,
+     "pop": null,
+     "suspense": true,
+     "inicio_est_s": 41.93
+    },
+    {
+     "texto": "Watch L. Loizou: player rating 7.0.",
+     "estilo": "excited",
+     "rate": "+8%",
+     "pitch": "+9%",
+     "pausa_ms": 250,
+     "pop": "7.0",
+     "suspense": false,
+     "inicio_est_s": 44.21
+    },
+    {
+     "texto": "Chef's kiss.",
+     "estilo": "cheerful",
+     "rate": "+8%",
+     "pitch": "+0%",
+     "pausa_ms": 300,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 46.6
+    },
+    {
+     "texto": "Watch A. Cigaņiks: player rating 6.9.",
+     "estilo": "excited",
+     "rate": "+8%",
+     "pitch": "+3%",
+     "pausa_ms": 120,
+     "pop": "6.9",
+     "suspense": false,
+     "inicio_est_s": 47.61
+    },
+    {
+     "texto": "6.9!",
+     "estilo": "shouting",
+     "rate": "+12%",
+     "pitch": "+3%",
+     "pausa_ms": 250,
+     "pop": "6.9",
+     "suspense": false,
+     "inicio_est_s": 49.87
+    },
+    {
+     "texto": "Mad.",
+     "estilo": "cheerful",
+     "rate": "+8%",
+     "pitch": "+0%",
+     "pausa_ms": 800,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 50.46
+    }
+   ],
+   "estimado_s": 51.6,
+   "ssml": "<speak version=\"1.0\" xmlns=\"http://www.w3.org/2001/10/synthesis\" xml:lang=\"en-US\"><voice name=\"en-US-Andrew:DragonHDOmniLatestNeural\" parameters=\"temperature=1.0;top_p=0.9;top_k=40;cfg_scale=1.8\">Next screen, go! Look at this! Cyprus against Latvia! Monday, 17:00 UK time. Wow. Here it comes... Cyprus win this 61 percent of the time. Every number here comes from our AI model. Every single one. Oh! The draw: 25 percent. Latvia: 15 percent. Expected goals: 1.3 for Cyprus, 0.8 for Latvia. Single most likely score: one-nil. One-nil! Three goals or more? 45 percent. Right. Both teams scoring: 44 percent. Psst... Cyprus so far: 1 win from 3, 3 scored, 2 conceded. Spicy. Latvia so far: 0 wins from 3, 1 scored, 4 conceded. That's huge. Guess. Go on, guess... Watch L. Loizou: player rating 7.0. Chef's kiss. Watch A. Cigaņiks: player rating 6.9. 6.9! Mad.</voice></speak>",
+   "audio": "s02.mp3",
+   "duracion_s": 71.94
+  },
+  {
+   "id": "s03",
+   "fragmentos": [
+    {
+     "texto": "Next!",
+     "estilo": "excited",
+     "rate": "+20%",
+     "pitch": "+0%",
+     "pausa_ms": 600,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 0.0
+    },
+    {
+     "texto": "I'm Blitz, and I cannot sit still.",
+     "estilo": "cheerful",
+     "rate": "+12%",
+     "pitch": "+9%",
+     "pausa_ms": 450,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 0.92
+    },
+    {
+     "texto": "Bosnia and Herzegovina against Poland! Monday, 19:45 UK time.",
+     "estilo": "excited",
+     "rate": "+16%",
+     "pitch": "+0%",
+     "pausa_ms": 450,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 3.77
+    },
+    {
+     "texto": "Ooh!",
+     "estilo": "excited",
+     "rate": "+4%",
+     "pitch": "+9%",
+     "pausa_ms": 120,
+     "pop": "OOH",
+     "suspense": false,
+     "inicio_est_s": 7.21
+    },
+    {
+     "texto": "Poland win this 40 percent of the time.",
+     "estilo": "excited",
+     "rate": "+16%",
+     "pitch": "+6%",
+     "pausa_ms": 800,
+     "pop": "40 percent",
+     "suspense": false,
+     "inicio_est_s": 7.7
+    },
+    {
+     "texto": "The draw: 28 percent. Bosnia and Herzegovina: 33 percent.",
+     "estilo": "excited",
+     "rate": "+20%",
+     "pitch": "+6%",
+     "pausa_ms": 800,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 11.15
+    },
+    {
+     "texto": "Wait wait wait.",
+     "estilo": "excited",
+     "rate": "+16%",
+     "pitch": "+9%",
+     "pausa_ms": 250,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 14.84
+    },
+    {
+     "texto": "Between you and me...",
+     "estilo": "whispering",
+     "rate": "+16%",
+     "pitch": "+0%",
+     "pausa_ms": 600,
+     "pop": null,
+     "suspense": true,
+     "inicio_est_s": 16.08
+    },
+    {
+     "texto": "This one is a proper coin flip.",
+     "estilo": "excited",
+     "rate": "+4%",
+     "pitch": "+3%",
+     "pausa_ms": 250,
+     "pop": "coin flip",
+     "suspense": false,
+     "inicio_est_s": 18.01
+    },
+    {
+     "texto": "Coin flip!",
+     "estilo": "shouting",
+     "rate": "+8%",
+     "pitch": "+9%",
+     "pausa_ms": 300,
+     "pop": "coin flip",
+     "suspense": false,
+     "inicio_est_s": 20.85
+    },
+    {
+     "texto": "Expected goals: 1.2 for Bosnia and Herzegovina, 1.2 for Poland.",
+     "estilo": "excited",
+     "rate": "+8%",
+     "pitch": "+3%",
+     "pausa_ms": 800,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 21.86
+    },
+    {
+     "texto": "Yes!",
+     "estilo": "excited",
+     "rate": "+12%",
+     "pitch": "+6%",
+     "pausa_ms": 120,
+     "pop": "YES",
+     "suspense": false,
+     "inicio_est_s": 26.22
+    },
+    {
+     "texto": "Are you sitting down?",
+     "estilo": "whispering",
+     "rate": "+16%",
+     "pitch": "+0%",
+     "pausa_ms": 800,
+     "pop": null,
+     "suspense": true,
+     "inicio_est_s": 26.68
+    },
+    {
+     "texto": "Single most likely score: one-one.",
+     "estilo": "excited",
+     "rate": "+12%",
+     "pitch": "+6%",
+     "pausa_ms": 120,
+     "pop": "one-one",
+     "suspense": false,
+     "inicio_est_s": 28.81
+    },
+    {
+     "texto": "I love it.",
+     "estilo": "cheerful",
+     "rate": "+4%",
+     "pitch": "+0%",
+     "pausa_ms": 600,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 30.65
+    },
+    {
+     "texto": "Look!",
+     "estilo": "excited",
+     "rate": "+12%",
+     "pitch": "+3%",
+     "pausa_ms": 320,
+     "pop": "LOOK",
+     "suspense": false,
+     "inicio_est_s": 32.35
+    },
+    {
+     "texto": "Three goals or more? 51 percent.",
+     "estilo": "excited",
+     "rate": "+12%",
+     "pitch": "+9%",
+     "pausa_ms": 800,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 33.02
+    },
+    {
+     "texto": "Don't tell anyone, but...",
+     "estilo": "whispering",
+     "rate": "+8%",
+     "pitch": "+9%",
+     "pausa_ms": 600,
+     "pop": null,
+     "suspense": true,
+     "inicio_est_s": 35.88
+    },
+    {
+     "texto": "Both teams scoring: 56 percent.",
+     "estilo": "excited",
+     "rate": "+12%",
+     "pitch": "+0%",
+     "pausa_ms": 600,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 37.9
+    },
+    {
+     "texto": "Whoa.",
+     "estilo": "excited",
+     "rate": "+4%",
+     "pitch": "+6%",
+     "pausa_ms": 120,
+     "pop": "WHOA",
+     "suspense": false,
+     "inicio_est_s": 40.22
+    },
+    {
+     "texto": "Bosnia and Herzegovina so far: 1 win from 3, 5 scored, 3 conceded.",
+     "estilo": "excited",
+     "rate": "+12%",
+     "pitch": "+9%",
+     "pausa_ms": 450,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 40.71
+    },
+    {
+     "texto": "Hey hey hey!",
+     "estilo": "excited",
+     "rate": "+4%",
+     "pitch": "+3%",
+     "pausa_ms": 250,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 45.62
+    },
+    {
+     "texto": "Don't tell anyone, but...",
+     "estilo": "whispering",
+     "rate": "+12%",
+     "pitch": "+6%",
+     "pausa_ms": 1000,
+     "pop": null,
+     "suspense": true,
+     "inicio_est_s": 46.98
+    },
+    {
+     "texto": "Poland so far: 1 win from 3, 7 scored, 3 conceded.",
+     "estilo": "excited",
+     "rate": "+8%",
+     "pitch": "+6%",
+     "pausa_ms": 450,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 49.36
+    },
+    {
+     "texto": "Wait.",
+     "estilo": "excited",
+     "rate": "+12%",
+     "pitch": "+0%",
+     "pausa_ms": 120,
+     "pop": "WAIT",
+     "suspense": false,
+     "inicio_est_s": 53.72
+    },
+    {
+     "texto": "Psst...",
+     "estilo": "whispering",
+     "rate": "+20%",
+     "pitch": "+3%",
+     "pausa_ms": 1000,
+     "pop": null,
+     "suspense": true,
+     "inicio_est_s": 54.19
+    },
+    {
+     "texto": "Watch Ivan Bašić: player rating 7.2.",
+     "estilo": "excited",
+     "rate": "+16%",
+     "pitch": "+0%",
+     "pausa_ms": 800,
+     "pop": "7.2",
+     "suspense": false,
+     "inicio_est_s": 55.51
+    },
+    {
+     "texto": "And the number is...",
+     "estilo": "whispering",
+     "rate": "+12%",
+     "pitch": "+3%",
+     "pausa_ms": 1000,
+     "pop": null,
+     "suspense": true,
+     "inicio_est_s": 58.3
+    },
+    {
+     "texto": "Watch Robert Lewandowski: player rating 7.4.",
+     "estilo": "excited",
+     "rate": "+8%",
+     "pitch": "+9%",
+     "pausa_ms": 450,
+     "pop": "7.4",
+     "suspense": false,
+     "inicio_est_s": 60.67
+    },
+    {
+     "texto": "Keep scrolling with me. More coming. So much more.",
+     "estilo": "cheerful",
+     "rate": "+16%",
+     "pitch": "+6%",
+     "pausa_ms": 450,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 63.26
+    }
+   ],
+   "estimado_s": 66.7,
+   "ssml": "<speak version=\"1.0\" xmlns=\"http://www.w3.org/2001/10/synthesis\" xml:lang=\"en-US\"><voice name=\"en-US-Andrew:DragonHDOmniLatestNeural\" parameters=\"temperature=1.0;top_p=0.9;top_k=40;cfg_scale=1.8\">Next! I'm Blitz, and I cannot sit still. Bosnia and Herzegovina against Poland! Monday, 19:45 UK time. Ooh! Poland win this 40 percent of the time. The draw: 28 percent. Bosnia and Herzegovina: 33 percent. Wait wait wait. Between you and me... This one is a proper coin flip. Coin flip! Expected goals: 1.2 for Bosnia and Herzegovina, 1.2 for Poland. Yes! Are you sitting down? Single most likely score: one-one. I love it. Look! Three goals or more? 51 percent. Don't tell anyone, but... Both teams scoring: 56 percent. Whoa. Bosnia and Herzegovina so far: 1 win from 3, 5 scored, 3 conceded. Hey hey hey! Don't tell anyone, but... Poland so far: 1 win from 3, 7 scored, 3 conceded. Wait. Psst... Watch Ivan Bašić: player rating 7.2. And the number is... Watch Robert Lewandowski: player rating 7.4. Keep scrolling with me. More coming. So much more.</voice></speak>",
+   "audio": "s03.mp3",
+   "duracion_s": 83.85
+  },
+  {
+   "id": "s04",
+   "fragmentos": [
+    {
+     "texto": "And now...",
+     "estilo": "excited",
+     "rate": "+8%",
+     "pitch": "+3%",
+     "pausa_ms": 600,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 0.0
+    },
+    {
+     "texto": "The weekend, in thirty seconds. Go!",
+     "estilo": "excited",
+     "rate": "+12%",
+     "pitch": "+6%",
+     "pausa_ms": 300,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 1.31
+    },
+    {
+     "texto": "Azerbaijan one-nil Lithuania.",
+     "estilo": "excited",
+     "rate": "+12%",
+     "pitch": "+3%",
+     "pausa_ms": 600,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 3.67
+    },
+    {
+     "texto": "If you're just joining: hi! Football data, all night, no brakes.",
+     "estilo": "cheerful",
+     "rate": "+12%",
+     "pitch": "+6%",
+     "pausa_ms": 600,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 5.3
+    },
+    {
+     "texto": "Malta one-nil Andorra.",
+     "estilo": "excited",
+     "rate": "+20%",
+     "pitch": "+3%",
+     "pausa_ms": 300,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 9.68
+    },
+    {
+     "texto": "Numbers! I love numbers!",
+     "estilo": "cheerful",
+     "rate": "+16%",
+     "pitch": "+6%",
+     "pausa_ms": 300,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 10.94
+    },
+    {
+     "texto": "Hold on.",
+     "estilo": "excited",
+     "rate": "+8%",
+     "pitch": "+9%",
+     "pausa_ms": 120,
+     "pop": "HOLD ON",
+     "suspense": false,
+     "inicio_est_s": 12.57
+    },
+    {
+     "texto": "Kosovo one-one Austria.",
+     "estilo": "excited",
+     "rate": "+12%",
+     "pitch": "+6%",
+     "pausa_ms": 300,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 13.4
+    },
+    {
+     "texto": "Netherlands two-one Serbia.",
+     "estilo": "excited",
+     "rate": "+8%",
+     "pitch": "+9%",
+     "pausa_ms": 800,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 14.73
+    },
+    {
+     "texto": "Alright!",
+     "estilo": "excited",
+     "rate": "+20%",
+     "pitch": "+3%",
+     "pausa_ms": 120,
+     "pop": "ALRIGHT",
+     "suspense": false,
+     "inicio_est_s": 16.6
+    },
+    {
+     "texto": "Wales nil-one Denmark.",
+     "estilo": "excited",
+     "rate": "+20%",
+     "pitch": "+9%",
+     "pausa_ms": 300,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 17.04
+    },
+    {
+     "texto": "Greece nil-nil Germany.",
+     "estilo": "excited",
+     "rate": "+8%",
+     "pitch": "+0%",
+     "pausa_ms": 300,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 18.3
+    },
+    {
+     "texto": "This is the best part of my day. Every day.",
+     "estilo": "cheerful",
+     "rate": "+8%",
+     "pitch": "+3%",
+     "pausa_ms": 800,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 19.67
+    },
+    {
+     "texto": "Huh.",
+     "estilo": "excited",
+     "rate": "+4%",
+     "pitch": "+9%",
+     "pausa_ms": 320,
+     "pop": "HUH",
+     "suspense": false,
+     "inicio_est_s": 24.03
+    },
+    {
+     "texto": "Republic of Ireland one-one Israel.",
+     "estilo": "excited",
+     "rate": "+4%",
+     "pitch": "+3%",
+     "pausa_ms": 600,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 24.72
+    },
+    {
+     "texto": "Okay okay okay.",
+     "estilo": "excited",
+     "rate": "+20%",
+     "pitch": "+0%",
+     "pausa_ms": 120,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 27.17
+    },
+    {
+     "texto": "Portugal two-one Norway.",
+     "estilo": "excited",
+     "rate": "+16%",
+     "pitch": "+6%",
+     "pausa_ms": 600,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 28.25
+    }
+   ],
+   "estimado_s": 29.8,
+   "ssml": "<speak version=\"1.0\" xmlns=\"http://www.w3.org/2001/10/synthesis\" xml:lang=\"en-US\"><voice name=\"en-US-Andrew:DragonHDOmniLatestNeural\" parameters=\"temperature=1.0;top_p=0.9;top_k=40;cfg_scale=1.8\">And now... The weekend, in thirty seconds. Go! Azerbaijan one-nil Lithuania. If you're just joining: hi! Football data, all night, no brakes. Malta one-nil Andorra. Numbers! I love numbers! Hold on. Kosovo one-one Austria. Netherlands two-one Serbia. Alright! Wales nil-one Denmark. Greece nil-nil Germany. This is the best part of my day. Every day. Huh. Republic of Ireland one-one Israel. Okay okay okay. Portugal two-one Norway.</voice></speak>",
+   "audio": "s04.mp3",
+   "duracion_s": 37.94
+  },
+  {
+   "id": "s05",
+   "fragmentos": [
+    {
+     "texto": "Moving on!",
+     "estilo": "excited",
+     "rate": "+16%",
+     "pitch": "+6%",
+     "pausa_ms": 300,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 0.0
+    },
+    {
+     "texto": "France against Belgium! Monday, 19:45 UK time.",
+     "estilo": "excited",
+     "rate": "+12%",
+     "pitch": "+6%",
+     "pausa_ms": 800,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 0.96
+    },
+    {
+     "texto": "Okay, breathe, Blitz. Breathe.",
+     "estilo": "cheerful",
+     "rate": "+20%",
+     "pitch": "+3%",
+     "pausa_ms": 450,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 4.17
+    },
+    {
+     "texto": "Between you and me...",
+     "estilo": "whispering",
+     "rate": "+12%",
+     "pitch": "+0%",
+     "pausa_ms": 800,
+     "pop": null,
+     "suspense": true,
+     "inicio_est_s": 5.9
+    },
+    {
+     "texto": "You ready?",
+     "estilo": "whispering",
+     "rate": "+4%",
+     "pitch": "+9%",
+     "pausa_ms": 800,
+     "pop": null,
+     "suspense": true,
+     "inicio_est_s": 8.07
+    },
+    {
+     "texto": "France win this 64 percent of the time.",
+     "estilo": "excited",
+     "rate": "+16%",
+     "pitch": "+3%",
+     "pausa_ms": 180,
+     "pop": "64 percent",
+     "suspense": false,
+     "inicio_est_s": 9.61
+    },
+    {
+     "texto": "Massive.",
+     "estilo": "cheerful",
+     "rate": "+8%",
+     "pitch": "+6%",
+     "pausa_ms": 450,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 12.44
+    },
+    {
+     "texto": "The draw: 20 percent. Belgium: 15 percent.",
+     "estilo": "excited",
+     "rate": "+12%",
+     "pitch": "+0%",
+     "pausa_ms": 450,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 13.25
+    },
+    {
+     "texto": "Expected goals: 2.0 for France, 1.1 for Belgium.",
+     "estilo": "excited",
+     "rate": "+16%",
+     "pitch": "+0%",
+     "pausa_ms": 300,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 16.1
+    },
+    {
+     "texto": "I've crunched so many matches, I dream in percentages.",
+     "estilo": "cheerful",
+     "rate": "+20%",
+     "pitch": "+0%",
+     "pausa_ms": 600,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 19.06
+    },
+    {
+     "texto": "Single most likely score: one-one.",
+     "estilo": "excited",
+     "rate": "+8%",
+     "pitch": "+9%",
+     "pausa_ms": 250,
+     "pop": "one-one",
+     "suspense": false,
+     "inicio_est_s": 22.54
+    },
+    {
+     "texto": "One-one!",
+     "estilo": "shouting",
+     "rate": "+4%",
+     "pitch": "+6%",
+     "pausa_ms": 120,
+     "pop": "one-one",
+     "suspense": false,
+     "inicio_est_s": 24.57
+    },
+    {
+     "texto": "Numbers don't lie.",
+     "estilo": "cheerful",
+     "rate": "+16%",
+     "pitch": "+0%",
+     "pausa_ms": 300,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 25.06
+    },
+    {
+     "texto": "Three goals or more? 63 percent.",
+     "estilo": "excited",
+     "rate": "+12%",
+     "pitch": "+0%",
+     "pausa_ms": 800,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 26.36
+    },
+    {
+     "texto": "Both teams scoring: 57 percent.",
+     "estilo": "excited",
+     "rate": "+12%",
+     "pitch": "+9%",
+     "pausa_ms": 300,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 29.22
+    },
+    {
+     "texto": "Come on!",
+     "estilo": "excited",
+     "rate": "+12%",
+     "pitch": "+3%",
+     "pausa_ms": 180,
+     "pop": "COME ON",
+     "suspense": false,
+     "inicio_est_s": 31.23
+    },
+    {
+     "texto": "France so far: 2 wins from 3, 3 scored, 1 conceded.",
+     "estilo": "excited",
+     "rate": "+16%",
+     "pitch": "+6%",
+     "pausa_ms": 600,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 32.1
+    },
+    {
+     "texto": "Too fast? Never. Never too fast.",
+     "estilo": "cheerful",
+     "rate": "+20%",
+     "pitch": "+3%",
+     "pausa_ms": 300,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 36.35
+    },
+    {
+     "texto": "Belgium so far: 2 wins from 3, 5 scored, 1 conceded.",
+     "estilo": "excited",
+     "rate": "+4%",
+     "pitch": "+9%",
+     "pausa_ms": 300,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 38.57
+    },
+    {
+     "texto": "Here we go.",
+     "estilo": "excited",
+     "rate": "+16%",
+     "pitch": "+9%",
+     "pausa_ms": 180,
+     "pop": "HERE WE GO",
+     "suspense": false,
+     "inicio_est_s": 42.94
+    },
+    {
+     "texto": "Watch M. Olise: player rating 7.6.",
+     "estilo": "excited",
+     "rate": "+4%",
+     "pitch": "+3%",
+     "pausa_ms": 180,
+     "pop": "7.6",
+     "suspense": false,
+     "inicio_est_s": 44.11
+    },
+    {
+     "texto": "7.6!",
+     "estilo": "shouting",
+     "rate": "+12%",
+     "pitch": "+6%",
+     "pausa_ms": 250,
+     "pop": "7.6",
+     "suspense": false,
+     "inicio_est_s": 46.51
+    },
+    {
+     "texto": "Beautiful.",
+     "estilo": "cheerful",
+     "rate": "+16%",
+     "pitch": "+3%",
+     "pausa_ms": 800,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 47.11
+    },
+    {
+     "texto": "Drum roll...",
+     "estilo": "whispering",
+     "rate": "+4%",
+     "pitch": "+3%",
+     "pausa_ms": 1000,
+     "pop": null,
+     "suspense": true,
+     "inicio_est_s": 48.24
+    },
+    {
+     "texto": "Watch S. Lammens: player rating 7.3.",
+     "estilo": "excited",
+     "rate": "+16%",
+     "pitch": "+3%",
+     "pausa_ms": 800,
+     "pop": "7.3",
+     "suspense": false,
+     "inicio_est_s": 49.98
+    }
+   ],
+   "estimado_s": 52.8,
+   "ssml": "<speak version=\"1.0\" xmlns=\"http://www.w3.org/2001/10/synthesis\" xml:lang=\"en-US\"><voice name=\"en-US-Andrew:DragonHDOmniLatestNeural\" parameters=\"temperature=1.0;top_p=0.9;top_k=40;cfg_scale=1.8\">Moving on! France against Belgium! Monday, 19:45 UK time. Okay, breathe, Blitz. Breathe. Between you and me... You ready? France win this 64 percent of the time. Massive. The draw: 20 percent. Belgium: 15 percent. Expected goals: 2.0 for France, 1.1 for Belgium. I've crunched so many matches, I dream in percentages. Single most likely score: one-one. One-one! Numbers don't lie. Three goals or more? 63 percent. Both teams scoring: 57 percent. Come on! France so far: 2 wins from 3, 3 scored, 1 conceded. Too fast? Never. Never too fast. Belgium so far: 2 wins from 3, 5 scored, 1 conceded. Here we go. Watch M. Olise: player rating 7.6. 7.6! Beautiful. Drum roll... Watch S. Lammens: player rating 7.3.</voice></speak>",
+   "audio": "s05.mp3",
+   "duracion_s": 74.85
+  },
+  {
+   "id": "s06",
+   "fragmentos": [
+    {
+     "texto": "Let's go, next!",
+     "estilo": "excited",
+     "rate": "+20%",
+     "pitch": "+3%",
+     "pausa_ms": 800,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 0.0
+    },
+    {
+     "texto": "Oh my days.",
+     "estilo": "excited",
+     "rate": "+16%",
+     "pitch": "+6%",
+     "pausa_ms": 250,
+     "pop": "OH MY DAYS",
+     "suspense": false,
+     "inicio_est_s": 1.76
+    },
+    {
+     "texto": "Italy against Turkey! Monday, 19:45 UK time.",
+     "estilo": "excited",
+     "rate": "+20%",
+     "pitch": "+3%",
+     "pausa_ms": 600,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 3.01
+    },
+    {
+     "texto": "Italy win this 69 percent of the time.",
+     "estilo": "excited",
+     "rate": "+16%",
+     "pitch": "+6%",
+     "pausa_ms": 120,
+     "pop": "69 percent",
+     "suspense": false,
+     "inicio_est_s": 5.85
+    },
+    {
+     "texto": "69 percent!",
+     "estilo": "shouting",
+     "rate": "+16%",
+     "pitch": "+9%",
+     "pausa_ms": 320,
+     "pop": "69 percent",
+     "suspense": false,
+     "inicio_est_s": 8.62
+    },
+    {
+     "texto": "Unreal.",
+     "estilo": "cheerful",
+     "rate": "+20%",
+     "pitch": "+9%",
+     "pausa_ms": 450,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 9.61
+    },
+    {
+     "texto": "Numbers don't lie.",
+     "estilo": "cheerful",
+     "rate": "+12%",
+     "pitch": "+6%",
+     "pausa_ms": 800,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 10.38
+    },
+    {
+     "texto": "The draw: 19 percent. Turkey: 13 percent.",
+     "estilo": "excited",
+     "rate": "+8%",
+     "pitch": "+0%",
+     "pausa_ms": 300,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 12.21
+    },
+    {
+     "texto": "Massive.",
+     "estilo": "cheerful",
+     "rate": "+4%",
+     "pitch": "+3%",
+     "pausa_ms": 600,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 15.0
+    },
+    {
+     "texto": "Little secret...",
+     "estilo": "whispering",
+     "rate": "+8%",
+     "pitch": "+0%",
+     "pausa_ms": 1000,
+     "pop": null,
+     "suspense": true,
+     "inicio_est_s": 15.97
+    },
+    {
+     "texto": "Expected goals: 1.9 for Italy, 1.2 for Turkey.",
+     "estilo": "excited",
+     "rate": "+12%",
+     "pitch": "+3%",
+     "pausa_ms": 800,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 17.68
+    },
+    {
+     "texto": "Between you and me...",
+     "estilo": "whispering",
+     "rate": "+12%",
+     "pitch": "+3%",
+     "pausa_ms": 800,
+     "pop": null,
+     "suspense": true,
+     "inicio_est_s": 21.23
+    },
+    {
+     "texto": "Single most likely score: one-one.",
+     "estilo": "excited",
+     "rate": "+20%",
+     "pitch": "+0%",
+     "pausa_ms": 600,
+     "pop": "one-one",
+     "suspense": false,
+     "inicio_est_s": 23.4
+    },
+    {
+     "texto": "Keep scrolling with me. More coming. So much more.",
+     "estilo": "cheerful",
+     "rate": "+20%",
+     "pitch": "+9%",
+     "pausa_ms": 300,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 25.6
+    },
+    {
+     "texto": "Three goals or more? 61 percent.",
+     "estilo": "excited",
+     "rate": "+8%",
+     "pitch": "+9%",
+     "pausa_ms": 450,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 28.79
+    },
+    {
+     "texto": "Stop it.",
+     "estilo": "excited",
+     "rate": "+12%",
+     "pitch": "+0%",
+     "pausa_ms": 120,
+     "pop": "STOP IT",
+     "suspense": false,
+     "inicio_est_s": 31.38
+    },
+    {
+     "texto": "Both teams scoring: 52 percent.",
+     "estilo": "excited",
+     "rate": "+16%",
+     "pitch": "+0%",
+     "pausa_ms": 450,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 32.18
+    },
+    {
+     "texto": "Italy so far: 1 win from 3, 5 scored, 4 conceded.",
+     "estilo": "excited",
+     "rate": "+8%",
+     "pitch": "+9%",
+     "pausa_ms": 600,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 34.29
+    },
+    {
+     "texto": "Turkey so far: 0 wins from 3, 1 scored, 8 conceded.",
+     "estilo": "excited",
+     "rate": "+16%",
+     "pitch": "+3%",
+     "pausa_ms": 600,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 38.81
+    },
+    {
+     "texto": "Guess. Go on, guess.",
+     "estilo": "whispering",
+     "rate": "+12%",
+     "pitch": "+3%",
+     "pausa_ms": 600,
+     "pop": null,
+     "suspense": true,
+     "inicio_est_s": 43.06
+    },
+    {
+     "texto": "Watch G. Donnarumma: player rating 7.3.",
+     "estilo": "excited",
+     "rate": "+16%",
+     "pitch": "+3%",
+     "pausa_ms": 600,
+     "pop": "7.3",
+     "suspense": false,
+     "inicio_est_s": 45.03
+    },
+    {
+     "texto": "Stop it.",
+     "estilo": "excited",
+     "rate": "+16%",
+     "pitch": "+3%",
+     "pausa_ms": 180,
+     "pop": "STOP IT",
+     "suspense": false,
+     "inicio_est_s": 47.62
+    },
+    {
+     "texto": "Watch A. Güler: player rating 7.2.",
+     "estilo": "excited",
+     "rate": "+4%",
+     "pitch": "+3%",
+     "pausa_ms": 320,
+     "pop": "7.2",
+     "suspense": false,
+     "inicio_est_s": 48.46
+    },
+    {
+     "texto": "7.2!",
+     "estilo": "shouting",
+     "rate": "+4%",
+     "pitch": "+3%",
+     "pausa_ms": 320,
+     "pop": "7.2",
+     "suspense": false,
+     "inicio_est_s": 51.0
+    },
+    {
+     "texto": "That's huge.",
+     "estilo": "cheerful",
+     "rate": "+8%",
+     "pitch": "+9%",
+     "pausa_ms": 600,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 51.69
+    }
+   ],
+   "estimado_s": 53.0,
+   "ssml": "<speak version=\"1.0\" xmlns=\"http://www.w3.org/2001/10/synthesis\" xml:lang=\"en-US\"><voice name=\"en-US-Andrew:DragonHDOmniLatestNeural\" parameters=\"temperature=1.0;top_p=0.9;top_k=40;cfg_scale=1.8\">Let's go, next! Oh my days. Italy against Turkey! Monday, 19:45 UK time. Italy win this 69 percent of the time. 69 percent! Unreal. Numbers don't lie. The draw: 19 percent. Turkey: 13 percent. Massive. Little secret... Expected goals: 1.9 for Italy, 1.2 for Turkey. Between you and me... Single most likely score: one-one. Keep scrolling with me. More coming. So much more. Three goals or more? 61 percent. Stop it. Both teams scoring: 52 percent. Italy so far: 1 win from 3, 5 scored, 4 conceded. Turkey so far: 0 wins from 3, 1 scored, 8 conceded. Guess. Go on, guess... Watch G. Donnarumma: player rating 7.3. Stop it. Watch A. Güler: player rating 7.2. 7.2! That's huge.</voice></speak>",
+   "audio": "s06.mp3",
+   "duracion_s": 78.95
+  },
+  {
+   "id": "s07",
+   "fragmentos": [
+    {
+     "texto": "Right, what's next?",
+     "estilo": "excited",
+     "rate": "+12%",
+     "pitch": "+0%",
+     "pausa_ms": 600,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 0.0
+    },
+    {
+     "texto": "This is the best part of my day. Every day.",
+     "estilo": "cheerful",
+     "rate": "+16%",
+     "pitch": "+3%",
+     "pausa_ms": 800,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 1.63
+    },
+    {
+     "texto": "Biggest win of the whole tournament so far: San Marino nil-seven Finland.",
+     "estilo": "excited",
+     "rate": "+8%",
+     "pitch": "+9%",
+     "pausa_ms": 250,
+     "pop": "San Marino nil-seven Finland",
+     "suspense": false,
+     "inicio_est_s": 5.75
+    },
+    {
+     "texto": "Mad.",
+     "estilo": "cheerful",
+     "rate": "+4%",
+     "pitch": "+0%",
+     "pausa_ms": 450,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 10.27
+    },
+    {
+     "texto": "Finland by 7! Away from home! Ridiculous.",
+     "estilo": "excited",
+     "rate": "+8%",
+     "pitch": "+6%",
+     "pausa_ms": 800,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 11.09
+    }
+   ],
+   "estimado_s": 14.4,
+   "ssml": "<speak version=\"1.0\" xmlns=\"http://www.w3.org/2001/10/synthesis\" xml:lang=\"en-US\"><voice name=\"en-US-Andrew:DragonHDOmniLatestNeural\" parameters=\"temperature=1.0;top_p=0.9;top_k=40;cfg_scale=1.8\">Right, what's next? This is the best part of my day. Every day. Biggest win of the whole tournament so far: San Marino nil-seven Finland. Mad. Finland by 7! Away from home! Ridiculous.</voice></speak>",
+   "audio": "s07.mp3",
+   "duracion_s": 19.94
+  },
+  {
+   "id": "s08",
+   "fragmentos": [
+    {
+     "texto": "Swipe!",
+     "estilo": "excited",
+     "rate": "+4%",
+     "pitch": "+0%",
+     "pausa_ms": 600,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 0.0
+    },
+    {
+     "texto": "Wait.",
+     "estilo": "excited",
+     "rate": "+20%",
+     "pitch": "+6%",
+     "pausa_ms": 250,
+     "pop": "WAIT",
+     "suspense": false,
+     "inicio_est_s": 0.97
+    },
+    {
+     "texto": "Montenegro against Armenia! Monday, 19:45 UK time.",
+     "estilo": "excited",
+     "rate": "+20%",
+     "pitch": "+0%",
+     "pausa_ms": 600,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 1.54
+    },
+    {
+     "texto": "Every number here comes from our AI model. Every single one.",
+     "estilo": "cheerful",
+     "rate": "+12%",
+     "pitch": "+3%",
+     "pausa_ms": 600,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 4.38
+    },
+    {
+     "texto": "Montenegro win this 63 percent of the time.",
+     "estilo": "excited",
+     "rate": "+20%",
+     "pitch": "+0%",
+     "pausa_ms": 120,
+     "pop": "63 percent",
+     "suspense": false,
+     "inicio_est_s": 8.76
+    },
+    {
+     "texto": "Chef's kiss.",
+     "estilo": "cheerful",
+     "rate": "+16%",
+     "pitch": "+6%",
+     "pausa_ms": 800,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 11.45
+    },
+    {
+     "texto": "Come on!",
+     "estilo": "excited",
+     "rate": "+8%",
+     "pitch": "+0%",
+     "pausa_ms": 250,
+     "pop": "COME ON",
+     "suspense": false,
+     "inicio_est_s": 12.91
+    },
+    {
+     "texto": "The draw: 21 percent. Armenia: 15 percent.",
+     "estilo": "excited",
+     "rate": "+8%",
+     "pitch": "+3%",
+     "pausa_ms": 600,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 13.87
+    },
+    {
+     "texto": "My brain is buzzing. Literally buzzing.",
+     "estilo": "cheerful",
+     "rate": "+20%",
+     "pitch": "+3%",
+     "pausa_ms": 300,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 16.96
+    },
+    {
+     "texto": "Expected goals: 1.8 for Montenegro, 1.0 for Armenia.",
+     "estilo": "excited",
+     "rate": "+20%",
+     "pitch": "+0%",
+     "pausa_ms": 800,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 19.19
+    },
+    {
+     "texto": "And the number is...",
+     "estilo": "whispering",
+     "rate": "+16%",
+     "pitch": "+6%",
+     "pausa_ms": 600,
+     "pop": null,
+     "suspense": true,
+     "inicio_est_s": 22.55
+    },
+    {
+     "texto": "Single most likely score: one-one.",
+     "estilo": "excited",
+     "rate": "+16%",
+     "pitch": "+0%",
+     "pausa_ms": 120,
+     "pop": "one-one",
+     "suspense": false,
+     "inicio_est_s": 24.48
+    },
+    {
+     "texto": "Huge!",
+     "estilo": "cheerful",
+     "rate": "+8%",
+     "pitch": "+0%",
+     "pausa_ms": 800,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 26.26
+    },
+    {
+     "texto": "Three goals or more? 55 percent.",
+     "estilo": "excited",
+     "rate": "+8%",
+     "pitch": "+3%",
+     "pausa_ms": 800,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 27.41
+    },
+    {
+     "texto": "Both teams scoring: 51 percent.",
+     "estilo": "excited",
+     "rate": "+8%",
+     "pitch": "+0%",
+     "pausa_ms": 600,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 30.35
+    },
+    {
+     "texto": "Numbers! I love numbers!",
+     "estilo": "cheerful",
+     "rate": "+16%",
+     "pitch": "+9%",
+     "pausa_ms": 300,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 32.73
+    },
+    {
+     "texto": "Yes!",
+     "estilo": "excited",
+     "rate": "+12%",
+     "pitch": "+6%",
+     "pausa_ms": 250,
+     "pop": "YES",
+     "suspense": false,
+     "inicio_est_s": 34.35
+    },
+    {
+     "texto": "Montenegro so far: 3 wins from 3, 7 scored, 4 conceded.",
+     "estilo": "excited",
+     "rate": "+8%",
+     "pitch": "+3%",
+     "pausa_ms": 450,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 34.95
+    },
+    {
+     "texto": "Alright!",
+     "estilo": "excited",
+     "rate": "+8%",
+     "pitch": "+6%",
+     "pausa_ms": 120,
+     "pop": "ALRIGHT",
+     "suspense": false,
+     "inicio_est_s": 39.32
+    },
+    {
+     "texto": "Armenia so far: 1 win from 3, 4 scored, 5 conceded.",
+     "estilo": "excited",
+     "rate": "+8%",
+     "pitch": "+3%",
+     "pausa_ms": 800,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 39.79
+    },
+    {
+     "texto": "Little secret...",
+     "estilo": "whispering",
+     "rate": "+8%",
+     "pitch": "+9%",
+     "pausa_ms": 800,
+     "pop": null,
+     "suspense": true,
+     "inicio_est_s": 44.51
+    },
+    {
+     "texto": "Brace yourself.",
+     "estilo": "whispering",
+     "rate": "+8%",
+     "pitch": "+0%",
+     "pausa_ms": 600,
+     "pop": null,
+     "suspense": true,
+     "inicio_est_s": 46.02
+    },
+    {
+     "texto": "Watch Vasilije Adžić: player rating 7.2.",
+     "estilo": "excited",
+     "rate": "+8%",
+     "pitch": "+3%",
+     "pausa_ms": 450,
+     "pop": "7.2",
+     "suspense": false,
+     "inicio_est_s": 47.33
+    },
+    {
+     "texto": "Watch Eduard Spertsyan: player rating 7.3.",
+     "estilo": "excited",
+     "rate": "+4%",
+     "pitch": "+0%",
+     "pausa_ms": 250,
+     "pop": "7.3",
+     "suspense": false,
+     "inicio_est_s": 49.92
+    },
+    {
+     "texto": "7.3!",
+     "estilo": "shouting",
+     "rate": "+12%",
+     "pitch": "+6%",
+     "pausa_ms": 180,
+     "pop": "7.3",
+     "suspense": false,
+     "inicio_est_s": 52.39
+    },
+    {
+     "texto": "Unreal.",
+     "estilo": "cheerful",
+     "rate": "+4%",
+     "pitch": "+3%",
+     "pausa_ms": 600,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 52.91
+    }
+   ],
+   "estimado_s": 53.9,
+   "ssml": "<speak version=\"1.0\" xmlns=\"http://www.w3.org/2001/10/synthesis\" xml:lang=\"en-US\"><voice name=\"en-US-Andrew:DragonHDOmniLatestNeural\" parameters=\"temperature=1.0;top_p=0.9;top_k=40;cfg_scale=1.8\">Swipe! Wait. Montenegro against Armenia! Monday, 19:45 UK time. Every number here comes from our AI model. Every single one. Montenegro win this 63 percent of the time. Chef's kiss. Come on! The draw: 21 percent. Armenia: 15 percent. My brain is buzzing. Literally buzzing. Expected goals: 1.8 for Montenegro, 1.0 for Armenia. And the number is... Single most likely score: one-one. Huge! Three goals or more? 55 percent. Both teams scoring: 51 percent. Numbers! I love numbers! Yes! Montenegro so far: 3 wins from 3, 7 scored, 4 conceded. Alright! Armenia so far: 1 win from 3, 4 scored, 5 conceded. Little secret... Brace yourself... Watch Vasilije Adžić: player rating 7.2. Watch Eduard Spertsyan: player rating 7.3. 7.3! Unreal.</voice></speak>",
+   "audio": "s08.mp3",
+   "duracion_s": 72.4
+  },
+  {
+   "id": "s09",
+   "fragmentos": [
+    {
+     "texto": "Swipe!",
+     "estilo": "excited",
+     "rate": "+16%",
+     "pitch": "+6%",
+     "pausa_ms": 600,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 0.0
+    },
+    {
+     "texto": "Psst...",
+     "estilo": "whispering",
+     "rate": "+16%",
+     "pitch": "+9%",
+     "pausa_ms": 600,
+     "pop": null,
+     "suspense": true,
+     "inicio_est_s": 0.93
+    },
+    {
+     "texto": "Northern Ireland against Georgia! Monday, 19:45 UK time.",
+     "estilo": "excited",
+     "rate": "+12%",
+     "pitch": "+3%",
+     "pausa_ms": 800,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 1.86
+    },
+    {
+     "texto": "Oh!",
+     "estilo": "excited",
+     "rate": "+16%",
+     "pitch": "+3%",
+     "pausa_ms": 320,
+     "pop": "OH",
+     "suspense": false,
+     "inicio_est_s": 5.41
+    },
+    {
+     "texto": "Don't tell anyone, but...",
+     "estilo": "whispering",
+     "rate": "+16%",
+     "pitch": "+6%",
+     "pausa_ms": 800,
+     "pop": null,
+     "suspense": true,
+     "inicio_est_s": 6.06
+    },
+    {
+     "texto": "Northern Ireland win this 39 percent of the time.",
+     "estilo": "excited",
+     "rate": "+8%",
+     "pitch": "+0%",
+     "pausa_ms": 800,
+     "pop": "39 percent",
+     "suspense": false,
+     "inicio_est_s": 8.19
+    },
+    {
+     "texto": "Okay, breathe, Blitz. Breathe.",
+     "estilo": "cheerful",
+     "rate": "+20%",
+     "pitch": "+0%",
+     "pausa_ms": 450,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 12.19
+    },
+    {
+     "texto": "Whoa.",
+     "estilo": "excited",
+     "rate": "+20%",
+     "pitch": "+3%",
+     "pausa_ms": 180,
+     "pop": "WHOA",
+     "suspense": false,
+     "inicio_est_s": 13.93
+    },
+    {
+     "texto": "The draw: 32 percent. Georgia: 29 percent.",
+     "estilo": "excited",
+     "rate": "+8%",
+     "pitch": "+3%",
+     "pausa_ms": 300,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 14.43
+    },
+    {
+     "texto": "Expected goals: 1.2 for Northern Ireland, 0.9 for Georgia.",
+     "estilo": "excited",
+     "rate": "+8%",
+     "pitch": "+6%",
+     "pausa_ms": 300,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 17.22
+    },
+    {
+     "texto": "Here it comes...",
+     "estilo": "whispering",
+     "rate": "+4%",
+     "pitch": "+3%",
+     "pausa_ms": 1000,
+     "pop": null,
+     "suspense": true,
+     "inicio_est_s": 20.72
+    },
+    {
+     "texto": "Single most likely score: one-nil.",
+     "estilo": "excited",
+     "rate": "+8%",
+     "pitch": "+9%",
+     "pausa_ms": 450,
+     "pop": "one-nil",
+     "suspense": false,
+     "inicio_est_s": 22.83
+    },
+    {
+     "texto": "Don't tell anyone, but...",
+     "estilo": "whispering",
+     "rate": "+16%",
+     "pitch": "+6%",
+     "pausa_ms": 600,
+     "pop": null,
+     "suspense": true,
+     "inicio_est_s": 25.06
+    },
+    {
+     "texto": "Three goals or more? 35 percent.",
+     "estilo": "excited",
+     "rate": "+8%",
+     "pitch": "+3%",
+     "pausa_ms": 300,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 26.99
+    },
+    {
+     "texto": "If you're just joining: hi! Football data, all night, no brakes.",
+     "estilo": "cheerful",
+     "rate": "+8%",
+     "pitch": "+3%",
+     "pausa_ms": 300,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 29.43
+    },
+    {
+     "texto": "Both teams scoring: 43 percent.",
+     "estilo": "excited",
+     "rate": "+4%",
+     "pitch": "+6%",
+     "pausa_ms": 800,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 33.64
+    },
+    {
+     "texto": "Northern Ireland so far: 2 wins from 3, 4 scored, 0 conceded.",
+     "estilo": "excited",
+     "rate": "+12%",
+     "pitch": "+9%",
+     "pausa_ms": 450,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 36.29
+    },
+    {
+     "texto": "Georgia so far: 0 wins from 3, 0 scored, 2 conceded.",
+     "estilo": "excited",
+     "rate": "+16%",
+     "pitch": "+9%",
+     "pausa_ms": 300,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 40.86
+    },
+    {
+     "texto": "Spicy.",
+     "estilo": "cheerful",
+     "rate": "+8%",
+     "pitch": "+6%",
+     "pausa_ms": 600,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 44.81
+    },
+    {
+     "texto": "Ha!",
+     "estilo": "excited",
+     "rate": "+16%",
+     "pitch": "+3%",
+     "pausa_ms": 320,
+     "pop": "HA",
+     "suspense": false,
+     "inicio_est_s": 45.77
+    },
+    {
+     "texto": "Watch P. Charles: player rating 7.0.",
+     "estilo": "excited",
+     "rate": "+16%",
+     "pitch": "+3%",
+     "pausa_ms": 320,
+     "pop": "7.0",
+     "suspense": false,
+     "inicio_est_s": 46.42
+    },
+    {
+     "texto": "7.0!",
+     "estilo": "shouting",
+     "rate": "+4%",
+     "pitch": "+3%",
+     "pausa_ms": 300,
+     "pop": "7.0",
+     "suspense": false,
+     "inicio_est_s": 48.73
+    },
+    {
+     "texto": "Watch G. Mamardashvili: player rating 7.0.",
+     "estilo": "excited",
+     "rate": "+4%",
+     "pitch": "+3%",
+     "pausa_ms": 120,
+     "pop": "7.0",
+     "suspense": false,
+     "inicio_est_s": 49.4
+    },
+    {
+     "texto": "Beautiful.",
+     "estilo": "cheerful",
+     "rate": "+4%",
+     "pitch": "+0%",
+     "pausa_ms": 450,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 51.74
+    }
+   ],
+   "estimado_s": 52.6,
+   "ssml": "<speak version=\"1.0\" xmlns=\"http://www.w3.org/2001/10/synthesis\" xml:lang=\"en-US\"><voice name=\"en-US-Andrew:DragonHDOmniLatestNeural\" parameters=\"temperature=1.0;top_p=0.9;top_k=40;cfg_scale=1.8\">Swipe! Psst... Northern Ireland against Georgia! Monday, 19:45 UK time. Oh! Don't tell anyone, but... Northern Ireland win this 39 percent of the time. Okay, breathe, Blitz. Breathe. Whoa. The draw: 32 percent. Georgia: 29 percent. Expected goals: 1.2 for Northern Ireland, 0.9 for Georgia. Here it comes... Single most likely score: one-nil. Don't tell anyone, but... Three goals or more? 35 percent. If you're just joining: hi! Football data, all night, no brakes. Both teams scoring: 43 percent. Northern Ireland so far: 2 wins from 3, 4 scored, 0 conceded. Georgia so far: 0 wins from 3, 0 scored, 2 conceded. Spicy. Ha! Watch P. Charles: player rating 7.0. 7.0! Watch G. Mamardashvili: player rating 7.0. Beautiful.</voice></speak>",
+   "audio": "s09.mp3",
+   "duracion_s": 72.59
+  },
+  {
+   "id": "s10",
+   "fragmentos": [
+    {
+     "texto": "Next screen, go!",
+     "estilo": "excited",
+     "rate": "+16%",
+     "pitch": "+3%",
+     "pausa_ms": 600,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 0.0
+    },
+    {
+     "texto": "Top scorers! Who's on fire?",
+     "estilo": "excited",
+     "rate": "+12%",
+     "pitch": "+0%",
+     "pausa_ms": 450,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 1.59
+    },
+    {
+     "texto": "T. Parrott, Republic of Ireland: 4 goals.",
+     "estilo": "excited",
+     "rate": "+12%",
+     "pitch": "+9%",
+     "pausa_ms": 180,
+     "pop": "4 goals",
+     "suspense": false,
+     "inicio_est_s": 3.76
+    },
+    {
+     "texto": "That's wild.",
+     "estilo": "cheerful",
+     "rate": "+4%",
+     "pitch": "+6%",
+     "pausa_ms": 300,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 6.35
+    },
+    {
+     "texto": "Huh.",
+     "estilo": "excited",
+     "rate": "+12%",
+     "pitch": "+6%",
+     "pausa_ms": 320,
+     "pop": "HUH",
+     "suspense": false,
+     "inicio_est_s": 7.39
+    },
+    {
+     "texto": "Leo Walta, Finland: 4 goals.",
+     "estilo": "excited",
+     "rate": "+12%",
+     "pitch": "+6%",
+     "pausa_ms": 120,
+     "pop": "4 goals",
+     "suspense": false,
+     "inicio_est_s": 8.05
+    },
+    {
+     "texto": "4 goals!",
+     "estilo": "shouting",
+     "rate": "+8%",
+     "pitch": "+0%",
+     "pausa_ms": 600,
+     "pop": "4 goals",
+     "suspense": false,
+     "inicio_est_s": 9.89
+    },
+    {
+     "texto": "Wow.",
+     "estilo": "excited",
+     "rate": "+20%",
+     "pitch": "+6%",
+     "pausa_ms": 120,
+     "pop": "WOW",
+     "suspense": false,
+     "inicio_est_s": 11.2
+    },
+    {
+     "texto": "You ready?",
+     "estilo": "whispering",
+     "rate": "+20%",
+     "pitch": "+9%",
+     "pausa_ms": 800,
+     "pop": null,
+     "suspense": true,
+     "inicio_est_s": 11.64
+    },
+    {
+     "texto": "H. Kane, England: 4 goals.",
+     "estilo": "excited",
+     "rate": "+20%",
+     "pitch": "+6%",
+     "pausa_ms": 120,
+     "pop": "4 goals",
+     "suspense": false,
+     "inicio_est_s": 13.08
+    },
+    {
+     "texto": "Ridiculous.",
+     "estilo": "cheerful",
+     "rate": "+20%",
+     "pitch": "+0%",
+     "pausa_ms": 300,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 14.8
+    },
+    {
+     "texto": "Massive.",
+     "estilo": "cheerful",
+     "rate": "+20%",
+     "pitch": "+6%",
+     "pausa_ms": 300,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 15.42
+    },
+    {
+     "texto": "Look at this!",
+     "estilo": "excited",
+     "rate": "+12%",
+     "pitch": "+0%",
+     "pausa_ms": 250,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 16.04
+    },
+    {
+     "texto": "Lamine Yamal, Spain: 4 goals.",
+     "estilo": "excited",
+     "rate": "+12%",
+     "pitch": "+3%",
+     "pausa_ms": 180,
+     "pop": "4 goals",
+     "suspense": false,
+     "inicio_est_s": 17.32
+    },
+    {
+     "texto": "4 goals!",
+     "estilo": "shouting",
+     "rate": "+16%",
+     "pitch": "+3%",
+     "pausa_ms": 180,
+     "pop": "4 goals",
+     "suspense": false,
+     "inicio_est_s": 19.22
+    },
+    {
+     "texto": "I love it.",
+     "estilo": "cheerful",
+     "rate": "+8%",
+     "pitch": "+9%",
+     "pausa_ms": 300,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 20.06
+    },
+    {
+     "texto": "E. Haaland, Norway: 3 goals.",
+     "estilo": "excited",
+     "rate": "+16%",
+     "pitch": "+6%",
+     "pausa_ms": 120,
+     "pop": "3 goals",
+     "suspense": false,
+     "inicio_est_s": 21.43
+    },
+    {
+     "texto": "3 goals!",
+     "estilo": "shouting",
+     "rate": "+20%",
+     "pitch": "+6%",
+     "pausa_ms": 800,
+     "pop": "3 goals",
+     "suspense": false,
+     "inicio_est_s": 23.21
+    },
+    {
+     "texto": "Ooh!",
+     "estilo": "excited",
+     "rate": "+4%",
+     "pitch": "+0%",
+     "pausa_ms": 120,
+     "pop": "OOH",
+     "suspense": false,
+     "inicio_est_s": 24.65
+    },
+    {
+     "texto": "Drum roll...",
+     "estilo": "whispering",
+     "rate": "+4%",
+     "pitch": "+0%",
+     "pausa_ms": 1000,
+     "pop": null,
+     "suspense": true,
+     "inicio_est_s": 25.14
+    },
+    {
+     "texto": "Assists king: M. Ødegaard with 4 and J. Bellingham with *4*.",
+     "estilo": "excited",
+     "rate": "+20%",
+     "pitch": "+3%",
+     "pausa_ms": 800,
+     "pop": "4",
+     "suspense": false,
+     "inicio_est_s": 26.88
+    },
+    {
+     "texto": "That's huge.",
+     "estilo": "cheerful",
+     "rate": "+16%",
+     "pitch": "+0%",
+     "pausa_ms": 800,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 31.21
+    }
+   ],
+   "estimado_s": 32.7,
+   "ssml": "<speak version=\"1.0\" xmlns=\"http://www.w3.org/2001/10/synthesis\" xml:lang=\"en-US\"><voice name=\"en-US-Andrew:DragonHDOmniLatestNeural\" parameters=\"temperature=1.0;top_p=0.9;top_k=40;cfg_scale=1.8\">Next screen, go! Top scorers! Who's on fire? T. Parrott, Republic of Ireland: 4 goals. That's wild. Huh. Leo Walta, Finland: 4 goals. 4 goals! Wow. You ready? H. Kane, England: 4 goals. Ridiculous. Massive. Look at this! Lamine Yamal, Spain: 4 goals. 4 goals! I love it. E. Haaland, Norway: 3 goals. 3 goals! Ooh! Drum roll... Assists king: M. Ødegaard with 4 and J. Bellingham with 4. That's huge.</voice></speak>",
+   "audio": "s10.mp3",
+   "duracion_s": 38.54
+  },
+  {
+   "id": "s11",
+   "fragmentos": [
+    {
+     "texto": "Right, what's next?",
+     "estilo": "excited",
+     "rate": "+4%",
+     "pitch": "+9%",
+     "pausa_ms": 450,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 0.0
+    },
+    {
+     "texto": "Okay.",
+     "estilo": "excited",
+     "rate": "+12%",
+     "pitch": "+3%",
+     "pausa_ms": 120,
+     "pop": "OKAY",
+     "suspense": false,
+     "inicio_est_s": 1.56
+    },
+    {
+     "texto": "Romania against Sweden! Monday, 19:45 UK time.",
+     "estilo": "excited",
+     "rate": "+12%",
+     "pitch": "+0%",
+     "pausa_ms": 800,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 2.02
+    },
+    {
+     "texto": "Sweden win this 55 percent of the time.",
+     "estilo": "excited",
+     "rate": "+12%",
+     "pitch": "+3%",
+     "pausa_ms": 120,
+     "pop": "55 percent",
+     "suspense": false,
+     "inicio_est_s": 5.23
+    },
+    {
+     "texto": "Spicy.",
+     "estilo": "cheerful",
+     "rate": "+8%",
+     "pitch": "+3%",
+     "pausa_ms": 600,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 8.09
+    },
+    {
+     "texto": "Right.",
+     "estilo": "excited",
+     "rate": "+12%",
+     "pitch": "+3%",
+     "pausa_ms": 320,
+     "pop": "RIGHT",
+     "suspense": false,
+     "inicio_est_s": 9.05
+    },
+    {
+     "texto": "The draw: 24 percent. Romania: 22 percent.",
+     "estilo": "excited",
+     "rate": "+20%",
+     "pitch": "+9%",
+     "pausa_ms": 300,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 9.71
+    },
+    {
+     "texto": "Expected goals: 1.2 for Romania, 1.9 for Sweden.",
+     "estilo": "excited",
+     "rate": "+8%",
+     "pitch": "+6%",
+     "pausa_ms": 800,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 12.26
+    },
+    {
+     "texto": "Between you and me...",
+     "estilo": "whispering",
+     "rate": "+8%",
+     "pitch": "+0%",
+     "pausa_ms": 600,
+     "pop": null,
+     "suspense": true,
+     "inicio_est_s": 15.91
+    },
+    {
+     "texto": "Are you sitting down?",
+     "estilo": "whispering",
+     "rate": "+12%",
+     "pitch": "+3%",
+     "pausa_ms": 1000,
+     "pop": null,
+     "suspense": true,
+     "inicio_est_s": 17.93
+    },
+    {
+     "texto": "Single most likely score: one-one.",
+     "estilo": "excited",
+     "rate": "+4%",
+     "pitch": "+0%",
+     "pausa_ms": 120,
+     "pop": "one-one",
+     "suspense": false,
+     "inicio_est_s": 20.3
+    },
+    {
+     "texto": "Huge!",
+     "estilo": "cheerful",
+     "rate": "+4%",
+     "pitch": "+0%",
+     "pausa_ms": 600,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 22.27
+    },
+    {
+     "texto": "Oh my days.",
+     "estilo": "excited",
+     "rate": "+4%",
+     "pitch": "+9%",
+     "pausa_ms": 120,
+     "pop": "OH MY DAYS",
+     "suspense": false,
+     "inicio_est_s": 23.24
+    },
+    {
+     "texto": "Three goals or more? 60 percent.",
+     "estilo": "excited",
+     "rate": "+8%",
+     "pitch": "+0%",
+     "pausa_ms": 300,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 24.47
+    },
+    {
+     "texto": "Too fast? Never. Never too fast.",
+     "estilo": "cheerful",
+     "rate": "+8%",
+     "pitch": "+6%",
+     "pausa_ms": 600,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 26.91
+    },
+    {
+     "texto": "Both teams scoring: 59 percent.",
+     "estilo": "excited",
+     "rate": "+4%",
+     "pitch": "+6%",
+     "pausa_ms": 300,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 29.65
+    },
+    {
+     "texto": "Boom.",
+     "estilo": "excited",
+     "rate": "+12%",
+     "pitch": "+6%",
+     "pausa_ms": 250,
+     "pop": "BOOM",
+     "suspense": false,
+     "inicio_est_s": 31.8
+    },
+    {
+     "texto": "Romania so far: 0 wins from 3, 3 scored, 12 conceded.",
+     "estilo": "excited",
+     "rate": "+4%",
+     "pitch": "+6%",
+     "pausa_ms": 600,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 32.39
+    },
+    {
+     "texto": "Mad.",
+     "estilo": "cheerful",
+     "rate": "+8%",
+     "pitch": "+9%",
+     "pausa_ms": 450,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 37.06
+    },
+    {
+     "texto": "Listen.",
+     "estilo": "excited",
+     "rate": "+12%",
+     "pitch": "+9%",
+     "pausa_ms": 250,
+     "pop": "LISTEN",
+     "suspense": false,
+     "inicio_est_s": 37.86
+    },
+    {
+     "texto": "Sweden so far: 2 wins from 3, 6 scored, 3 conceded.",
+     "estilo": "excited",
+     "rate": "+4%",
+     "pitch": "+9%",
+     "pausa_ms": 800,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 38.46
+    },
+    {
+     "texto": "Psst...",
+     "estilo": "whispering",
+     "rate": "+4%",
+     "pitch": "+3%",
+     "pausa_ms": 1000,
+     "pop": null,
+     "suspense": true,
+     "inicio_est_s": 43.32
+    },
+    {
+     "texto": "Watch D. Man: player rating 6.9.",
+     "estilo": "excited",
+     "rate": "+4%",
+     "pitch": "+6%",
+     "pausa_ms": 180,
+     "pop": "6.9",
+     "suspense": false,
+     "inicio_est_s": 44.69
+    },
+    {
+     "texto": "6.9!",
+     "estilo": "shouting",
+     "rate": "+20%",
+     "pitch": "+3%",
+     "pausa_ms": 300,
+     "pop": "6.9",
+     "suspense": false,
+     "inicio_est_s": 47.09
+    },
+    {
+     "texto": "Where was I? Oh yes. Football.",
+     "estilo": "cheerful",
+     "rate": "+16%",
+     "pitch": "+0%",
+     "pausa_ms": 800,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 47.71
+    },
+    {
+     "texto": "No way.",
+     "estilo": "excited",
+     "rate": "+4%",
+     "pitch": "+9%",
+     "pausa_ms": 180,
+     "pop": "NO WAY",
+     "suspense": false,
+     "inicio_est_s": 50.5
+    },
+    {
+     "texto": "Watch A. Isak: player rating 7.1.",
+     "estilo": "excited",
+     "rate": "+20%",
+     "pitch": "+6%",
+     "pausa_ms": 180,
+     "pop": "7.1",
+     "suspense": false,
+     "inicio_est_s": 51.42
+    },
+    {
+     "texto": "7.1!",
+     "estilo": "shouting",
+     "rate": "+8%",
+     "pitch": "+3%",
+     "pausa_ms": 320,
+     "pop": "7.1",
+     "suspense": false,
+     "inicio_est_s": 53.53
+    },
+    {
+     "texto": "I love it.",
+     "estilo": "cheerful",
+     "rate": "+16%",
+     "pitch": "+0%",
+     "pausa_ms": 600,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 54.2
+    }
+   ],
+   "estimado_s": 55.8,
+   "ssml": "<speak version=\"1.0\" xmlns=\"http://www.w3.org/2001/10/synthesis\" xml:lang=\"en-US\"><voice name=\"en-US-Andrew:DragonHDOmniLatestNeural\" parameters=\"temperature=1.0;top_p=0.9;top_k=40;cfg_scale=1.8\">Right, what's next? Okay. Romania against Sweden! Monday, 19:45 UK time. Sweden win this 55 percent of the time. Spicy. Right. The draw: 24 percent. Romania: 22 percent. Expected goals: 1.2 for Romania, 1.9 for Sweden. Between you and me... Are you sitting down? Single most likely score: one-one. Huge! Oh my days. Three goals or more? 60 percent. Too fast? Never. Never too fast. Both teams scoring: 59 percent. Boom. Romania so far: 0 wins from 3, 3 scored, 12 conceded. Mad. Listen. Sweden so far: 2 wins from 3, 6 scored, 3 conceded. Psst... Watch D. Man: player rating 6.9. 6.9! Where was I? Oh yes. Football. No way. Watch A. Isak: player rating 7.1. 7.1! I love it.</voice></speak>",
+   "audio": "s11.mp3",
+   "duracion_s": 71.2
+  },
+  {
+   "id": "s12",
+   "fragmentos": [
+    {
+     "texto": "Let's go, next!",
+     "estilo": "excited",
+     "rate": "+20%",
+     "pitch": "+0%",
+     "pausa_ms": 600,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 0.0
+    },
+    {
+     "texto": "Ukraine against Hungary! Monday, 19:45 UK time.",
+     "estilo": "excited",
+     "rate": "+16%",
+     "pitch": "+6%",
+     "pausa_ms": 800,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 1.56
+    },
+    {
+     "texto": "Ukraine win this 36 percent of the time.",
+     "estilo": "excited",
+     "rate": "+8%",
+     "pitch": "+6%",
+     "pausa_ms": 450,
+     "pop": "36 percent",
+     "suspense": false,
+     "inicio_est_s": 4.68
+    },
+    {
+     "texto": "I'm Blitz, and I cannot sit still.",
+     "estilo": "cheerful",
+     "rate": "+8%",
+     "pitch": "+9%",
+     "pausa_ms": 450,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 7.98
+    },
+    {
+     "texto": "Here we go.",
+     "estilo": "excited",
+     "rate": "+20%",
+     "pitch": "+3%",
+     "pausa_ms": 180,
+     "pop": "HERE WE GO",
+     "suspense": false,
+     "inicio_est_s": 10.92
+    },
+    {
+     "texto": "The draw: 31 percent. Hungary: 33 percent.",
+     "estilo": "excited",
+     "rate": "+12%",
+     "pitch": "+6%",
+     "pausa_ms": 450,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 12.07
+    },
+    {
+     "texto": "Okay okay okay.",
+     "estilo": "excited",
+     "rate": "+12%",
+     "pitch": "+0%",
+     "pausa_ms": 180,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 14.92
+    },
+    {
+     "texto": "You ready?",
+     "estilo": "whispering",
+     "rate": "+8%",
+     "pitch": "+3%",
+     "pausa_ms": 800,
+     "pop": null,
+     "suspense": true,
+     "inicio_est_s": 16.13
+    },
+    {
+     "texto": "This one is a proper coin flip.",
+     "estilo": "excited",
+     "rate": "+12%",
+     "pitch": "+9%",
+     "pausa_ms": 250,
+     "pop": "coin flip",
+     "suspense": false,
+     "inicio_est_s": 17.64
+    },
+    {
+     "texto": "Chef's kiss.",
+     "estilo": "cheerful",
+     "rate": "+4%",
+     "pitch": "+6%",
+     "pausa_ms": 800,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 20.3
+    },
+    {
+     "texto": "Little secret...",
+     "estilo": "whispering",
+     "rate": "+8%",
+     "pitch": "+6%",
+     "pausa_ms": 800,
+     "pop": null,
+     "suspense": true,
+     "inicio_est_s": 21.84
+    },
+    {
+     "texto": "Expected goals: 1.3 for Ukraine, 1.1 for Hungary.",
+     "estilo": "excited",
+     "rate": "+4%",
+     "pitch": "+3%",
+     "pausa_ms": 800,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 23.35
+    },
+    {
+     "texto": "Unreal.",
+     "estilo": "cheerful",
+     "rate": "+16%",
+     "pitch": "+6%",
+     "pausa_ms": 450,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 27.11
+    },
+    {
+     "texto": "Look!",
+     "estilo": "excited",
+     "rate": "+16%",
+     "pitch": "+9%",
+     "pausa_ms": 180,
+     "pop": "LOOK",
+     "suspense": false,
+     "inicio_est_s": 27.89
+    },
+    {
+     "texto": "Single most likely score: one-one.",
+     "estilo": "excited",
+     "rate": "+20%",
+     "pitch": "+3%",
+     "pausa_ms": 600,
+     "pop": "one-one",
+     "suspense": false,
+     "inicio_est_s": 28.4
+    },
+    {
+     "texto": "Hey hey hey!",
+     "estilo": "excited",
+     "rate": "+4%",
+     "pitch": "+9%",
+     "pausa_ms": 180,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 30.6
+    },
+    {
+     "texto": "Three goals or more? 39 percent.",
+     "estilo": "excited",
+     "rate": "+8%",
+     "pitch": "+6%",
+     "pausa_ms": 800,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 31.89
+    },
+    {
+     "texto": "Both teams scoring: 47 percent.",
+     "estilo": "excited",
+     "rate": "+16%",
+     "pitch": "+3%",
+     "pausa_ms": 300,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 34.83
+    },
+    {
+     "texto": "Ukraine so far: 1 win from 3, 1 scored, 3 conceded.",
+     "estilo": "excited",
+     "rate": "+4%",
+     "pitch": "+0%",
+     "pausa_ms": 450,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 36.79
+    },
+    {
+     "texto": "I've crunched so many matches, I dream in percentages.",
+     "estilo": "cheerful",
+     "rate": "+16%",
+     "pitch": "+9%",
+     "pausa_ms": 600,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 41.3
+    },
+    {
+     "texto": "Wait wait wait.",
+     "estilo": "excited",
+     "rate": "+20%",
+     "pitch": "+6%",
+     "pausa_ms": 120,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 44.89
+    },
+    {
+     "texto": "Hungary so far: 1 win from 3, 1 scored, 1 conceded.",
+     "estilo": "excited",
+     "rate": "+16%",
+     "pitch": "+3%",
+     "pausa_ms": 300,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 45.97
+    },
+    {
+     "texto": "That's wild.",
+     "estilo": "cheerful",
+     "rate": "+12%",
+     "pitch": "+9%",
+     "pausa_ms": 450,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 49.92
+    },
+    {
+     "texto": "Watch V. Mykolenko: player rating 7.0.",
+     "estilo": "excited",
+     "rate": "+16%",
+     "pitch": "+9%",
+     "pausa_ms": 180,
+     "pop": "7.0",
+     "suspense": false,
+     "inicio_est_s": 51.05
+    },
+    {
+     "texto": "Beautiful.",
+     "estilo": "cheerful",
+     "rate": "+4%",
+     "pitch": "+6%",
+     "pausa_ms": 600,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 53.22
+    },
+    {
+     "texto": "Hold on.",
+     "estilo": "excited",
+     "rate": "+4%",
+     "pitch": "+0%",
+     "pausa_ms": 120,
+     "pop": "HOLD ON",
+     "suspense": false,
+     "inicio_est_s": 54.19
+    },
+    {
+     "texto": "Watch D. Szoboszlai: player rating 7.2.",
+     "estilo": "excited",
+     "rate": "+12%",
+     "pitch": "+6%",
+     "pausa_ms": 120,
+     "pop": "7.2",
+     "suspense": false,
+     "inicio_est_s": 55.05
+    },
+    {
+     "texto": "7.2!",
+     "estilo": "shouting",
+     "rate": "+16%",
+     "pitch": "+3%",
+     "pausa_ms": 450,
+     "pop": "7.2",
+     "suspense": false,
+     "inicio_est_s": 57.23
+    }
+   ],
+   "estimado_s": 58.0,
+   "ssml": "<speak version=\"1.0\" xmlns=\"http://www.w3.org/2001/10/synthesis\" xml:lang=\"en-US\"><voice name=\"en-US-Andrew:DragonHDOmniLatestNeural\" parameters=\"temperature=1.0;top_p=0.9;top_k=40;cfg_scale=1.8\">Let's go, next! Ukraine against Hungary! Monday, 19:45 UK time. Ukraine win this 36 percent of the time. I'm Blitz, and I cannot sit still. Here we go. The draw: 31 percent. Hungary: 33 percent. Okay okay okay. You ready? This one is a proper coin flip. Chef's kiss. Little secret... Expected goals: 1.3 for Ukraine, 1.1 for Hungary. Unreal. Look! Single most likely score: one-one. Hey hey hey! Three goals or more? 39 percent. Both teams scoring: 47 percent. Ukraine so far: 1 win from 3, 1 scored, 3 conceded. I've crunched so many matches, I dream in percentages. Wait wait wait. Hungary so far: 1 win from 3, 1 scored, 1 conceded. That's wild. Watch V. Mykolenko: player rating 7.0. Beautiful. Hold on. Watch D. Szoboszlai: player rating 7.2. 7.2!</voice></speak>",
+   "audio": "s12.mp3",
+   "duracion_s": 73.72
+  },
+  {
+   "id": "s13",
+   "fragmentos": [
+    {
+     "texto": "Okay, next one.",
+     "estilo": "excited",
+     "rate": "+12%",
+     "pitch": "+3%",
+     "pausa_ms": 600,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 0.0
+    },
+    {
+     "texto": "Hey hey hey!",
+     "estilo": "excited",
+     "rate": "+16%",
+     "pitch": "+0%",
+     "pausa_ms": 250,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 1.63
+    },
+    {
+     "texto": "Player ratings. The best performers, three games or more.",
+     "estilo": "excited",
+     "rate": "+12%",
+     "pitch": "+9%",
+     "pausa_ms": 300,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 2.87
+    },
+    {
+     "texto": "Lamine Yamal, Spain: 8.5.",
+     "estilo": "excited",
+     "rate": "+8%",
+     "pitch": "+6%",
+     "pausa_ms": 120,
+     "pop": "8.5",
+     "suspense": false,
+     "inicio_est_s": 6.27
+    },
+    {
+     "texto": "Ridiculous.",
+     "estilo": "cheerful",
+     "rate": "+12%",
+     "pitch": "+6%",
+     "pausa_ms": 450,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 7.81
+    },
+    {
+     "texto": "Tap follow if numbers make you happy too.",
+     "estilo": "cheerful",
+     "rate": "+8%",
+     "pitch": "+9%",
+     "pausa_ms": 450,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 8.6
+    },
+    {
+     "texto": "S. Lammens, Belgium: 8.4.",
+     "estilo": "excited",
+     "rate": "+8%",
+     "pitch": "+3%",
+     "pausa_ms": 320,
+     "pop": "8.4",
+     "suspense": false,
+     "inicio_est_s": 11.9
+    },
+    {
+     "texto": "Numbers don't lie.",
+     "estilo": "cheerful",
+     "rate": "+20%",
+     "pitch": "+6%",
+     "pausa_ms": 800,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 13.65
+    },
+    {
+     "texto": "Stay with me, stay with me.",
+     "estilo": "cheerful",
+     "rate": "+12%",
+     "pitch": "+0%",
+     "pausa_ms": 800,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 15.41
+    },
+    {
+     "texto": "Leo Walta, Finland: 8.4.",
+     "estilo": "excited",
+     "rate": "+16%",
+     "pitch": "+0%",
+     "pausa_ms": 120,
+     "pop": "8.4",
+     "suspense": false,
+     "inicio_est_s": 18.27
+    },
+    {
+     "texto": "8.4!",
+     "estilo": "shouting",
+     "rate": "+8%",
+     "pitch": "+3%",
+     "pausa_ms": 300,
+     "pop": "8.4",
+     "suspense": false,
+     "inicio_est_s": 19.72
+    },
+    {
+     "texto": "H. Kane, England: 8.3.",
+     "estilo": "excited",
+     "rate": "+8%",
+     "pitch": "+9%",
+     "pausa_ms": 300,
+     "pop": "8.3",
+     "suspense": false,
+     "inicio_est_s": 20.37
+    },
+    {
+     "texto": "No way.",
+     "estilo": "excited",
+     "rate": "+16%",
+     "pitch": "+9%",
+     "pausa_ms": 250,
+     "pop": "NO WAY",
+     "suspense": false,
+     "inicio_est_s": 22.1
+    },
+    {
+     "texto": "A. Gordon, England: 8.2.",
+     "estilo": "excited",
+     "rate": "+16%",
+     "pitch": "+0%",
+     "pausa_ms": 300,
+     "pop": "8.2",
+     "suspense": false,
+     "inicio_est_s": 23.01
+    }
+   ],
+   "estimado_s": 24.6,
+   "ssml": "<speak version=\"1.0\" xmlns=\"http://www.w3.org/2001/10/synthesis\" xml:lang=\"en-US\"><voice name=\"en-US-Andrew:DragonHDOmniLatestNeural\" parameters=\"temperature=1.0;top_p=0.9;top_k=40;cfg_scale=1.8\">Okay, next one. Hey hey hey! Player ratings. The best performers, three games or more. Lamine Yamal, Spain: 8.5. Ridiculous. Tap follow if numbers make you happy too. S. Lammens, Belgium: 8.4. Numbers don't lie. Stay with me, stay with me. Leo Walta, Finland: 8.4. 8.4! H. Kane, England: 8.3. No way. A. Gordon, England: 8.2.</voice></speak>",
+   "audio": "s13.mp3",
+   "duracion_s": 36.64
+  },
+  {
+   "id": "s14",
+   "fragmentos": [
+    {
+     "texto": "And now...",
+     "estilo": "excited",
+     "rate": "+12%",
+     "pitch": "+6%",
+     "pausa_ms": 800,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 0.0
+    },
+    {
+     "texto": "Beautiful.",
+     "estilo": "cheerful",
+     "rate": "+8%",
+     "pitch": "+9%",
+     "pausa_ms": 450,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 1.49
+    },
+    {
+     "texto": "Tuesday: 10 matches.",
+     "estilo": "excited",
+     "rate": "+12%",
+     "pitch": "+9%",
+     "pausa_ms": 250,
+     "pop": "10 matches",
+     "suspense": false,
+     "inicio_est_s": 2.29
+    },
+    {
+     "texto": "10 matches!",
+     "estilo": "shouting",
+     "rate": "+20%",
+     "pitch": "+0%",
+     "pausa_ms": 250,
+     "pop": "10 matches",
+     "suspense": false,
+     "inicio_est_s": 3.57
+    },
+    {
+     "texto": "That's wild.",
+     "estilo": "cheerful",
+     "rate": "+16%",
+     "pitch": "+6%",
+     "pausa_ms": 600,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 4.46
+    },
+    {
+     "texto": "Numbers don't lie.",
+     "estilo": "cheerful",
+     "rate": "+16%",
+     "pitch": "+6%",
+     "pausa_ms": 300,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 5.73
+    },
+    {
+     "texto": "Kazakhstan against Faroe Islands, 15:00.",
+     "estilo": "excited",
+     "rate": "+4%",
+     "pitch": "+6%",
+     "pausa_ms": 600,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 7.02
+    },
+    {
+     "texto": "Albania against San Marino, 19:45.",
+     "estilo": "excited",
+     "rate": "+4%",
+     "pitch": "+0%",
+     "pausa_ms": 800,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 9.47
+    },
+    {
+     "texto": "Little secret...",
+     "estilo": "whispering",
+     "rate": "+4%",
+     "pitch": "+0%",
+     "pausa_ms": 600,
+     "pop": null,
+     "suspense": true,
+     "inicio_est_s": 12.12
+    },
+    {
+     "texto": "Belarus against Finland, 19:45.",
+     "estilo": "excited",
+     "rate": "+8%",
+     "pitch": "+9%",
+     "pausa_ms": 800,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 13.46
+    },
+    {
+     "texto": "Croatia against Spain, 19:45.",
+     "estilo": "excited",
+     "rate": "+20%",
+     "pitch": "+0%",
+     "pausa_ms": 300,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 15.68
+    },
+    {
+     "texto": "England against Czech Republic, 19:45.",
+     "estilo": "excited",
+     "rate": "+8%",
+     "pitch": "+0%",
+     "pausa_ms": 300,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 17.27
+    },
+    {
+     "texto": "Psst...",
+     "estilo": "whispering",
+     "rate": "+4%",
+     "pitch": "+6%",
+     "pausa_ms": 600,
+     "pop": null,
+     "suspense": true,
+     "inicio_est_s": 19.35
+    },
+    {
+     "texto": "Estonia against Iceland, 19:45.",
+     "estilo": "excited",
+     "rate": "+12%",
+     "pitch": "+6%",
+     "pausa_ms": 450,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 20.32
+    },
+    {
+     "texto": "Luxembourg against Bulgaria, 19:45.",
+     "estilo": "excited",
+     "rate": "+16%",
+     "pitch": "+0%",
+     "pausa_ms": 300,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 22.14
+    },
+    {
+     "texto": "Moldova against Slovakia, 19:45.",
+     "estilo": "excited",
+     "rate": "+16%",
+     "pitch": "+9%",
+     "pausa_ms": 300,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 23.77
+    },
+    {
+     "texto": "Listen.",
+     "estilo": "excited",
+     "rate": "+20%",
+     "pitch": "+3%",
+     "pausa_ms": 320,
+     "pop": "LISTEN",
+     "suspense": false,
+     "inicio_est_s": 25.39
+    },
+    {
+     "texto": "Scotland against Slovenia, 19:45.",
+     "estilo": "excited",
+     "rate": "+20%",
+     "pitch": "+0%",
+     "pausa_ms": 800,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 26.03
+    },
+    {
+     "texto": "Okay.",
+     "estilo": "excited",
+     "rate": "+4%",
+     "pitch": "+9%",
+     "pausa_ms": 120,
+     "pop": "OKAY",
+     "suspense": false,
+     "inicio_est_s": 28.12
+    },
+    {
+     "texto": "Between you and me...",
+     "estilo": "whispering",
+     "rate": "+4%",
+     "pitch": "+3%",
+     "pausa_ms": 600,
+     "pop": null,
+     "suspense": true,
+     "inicio_est_s": 28.61
+    },
+    {
+     "texto": "Switzerland against North Macedonia, 19:45.",
+     "estilo": "excited",
+     "rate": "+8%",
+     "pitch": "+9%",
+     "pausa_ms": 600,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 30.68
+    },
+    {
+     "texto": "Every number here comes from our AI model. Every single one.",
+     "estilo": "cheerful",
+     "rate": "+8%",
+     "pitch": "+0%",
+     "pausa_ms": 600,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 33.07
+    }
+   ],
+   "estimado_s": 37.6,
+   "ssml": "<speak version=\"1.0\" xmlns=\"http://www.w3.org/2001/10/synthesis\" xml:lang=\"en-US\"><voice name=\"en-US-Andrew:DragonHDOmniLatestNeural\" parameters=\"temperature=1.0;top_p=0.9;top_k=40;cfg_scale=1.8\">And now... Beautiful. Tuesday: 10 matches. 10 matches! That's wild. Numbers don't lie. Kazakhstan against Faroe Islands, 15:00. Albania against San Marino, 19:45. Little secret... Belarus against Finland, 19:45. Croatia against Spain, 19:45. England against Czech Republic, 19:45. Psst... Estonia against Iceland, 19:45. Luxembourg against Bulgaria, 19:45. Moldova against Slovakia, 19:45. Listen. Scotland against Slovenia, 19:45. Okay. Between you and me... Switzerland against North Macedonia, 19:45. Every number here comes from our AI model. Every single one.</voice></speak>",
+   "audio": "s14.mp3",
+   "duracion_s": 54.83
+  },
+  {
+   "id": "s15",
+   "fragmentos": [
+    {
+     "texto": "Next!",
+     "estilo": "excited",
+     "rate": "+20%",
+     "pitch": "+0%",
+     "pausa_ms": 800,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 0.0
+    },
+    {
+     "texto": "Here we go.",
+     "estilo": "excited",
+     "rate": "+8%",
+     "pitch": "+9%",
+     "pausa_ms": 120,
+     "pop": "HERE WE GO",
+     "suspense": false,
+     "inicio_est_s": 1.12
+    },
+    {
+     "texto": "Kazakhstan against Faroe Islands! Tuesday, 15:00 UK time.",
+     "estilo": "excited",
+     "rate": "+20%",
+     "pitch": "+9%",
+     "pausa_ms": 450,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 2.31
+    },
+    {
+     "texto": "Stay with me, stay with me.",
+     "estilo": "cheerful",
+     "rate": "+20%",
+     "pitch": "+9%",
+     "pausa_ms": 300,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 5.32
+    },
+    {
+     "texto": "Wait wait wait.",
+     "estilo": "excited",
+     "rate": "+12%",
+     "pitch": "+3%",
+     "pausa_ms": 320,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 7.55
+    },
+    {
+     "texto": "Kazakhstan win this 40 percent of the time.",
+     "estilo": "excited",
+     "rate": "+16%",
+     "pitch": "+6%",
+     "pausa_ms": 250,
+     "pop": "40 percent",
+     "suspense": false,
+     "inicio_est_s": 8.9
+    },
+    {
+     "texto": "40 percent!",
+     "estilo": "shouting",
+     "rate": "+4%",
+     "pitch": "+6%",
+     "pausa_ms": 600,
+     "pop": "40 percent",
+     "suspense": false,
+     "inicio_est_s": 11.8
+    },
+    {
+     "texto": "The draw: 31 percent. Faroe Islands: 29 percent.",
+     "estilo": "excited",
+     "rate": "+8%",
+     "pitch": "+9%",
+     "pausa_ms": 800,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 13.14
+    },
+    {
+     "texto": "Expected goals: 1.1 for Kazakhstan, 1.0 for Faroe Islands.",
+     "estilo": "excited",
+     "rate": "+16%",
+     "pitch": "+6%",
+     "pausa_ms": 600,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 16.79
+    },
+    {
+     "texto": "Oh my days.",
+     "estilo": "excited",
+     "rate": "+8%",
+     "pitch": "+0%",
+     "pausa_ms": 250,
+     "pop": "OH MY DAYS",
+     "suspense": false,
+     "inicio_est_s": 20.37
+    },
+    {
+     "texto": "Single most likely score: one-nil.",
+     "estilo": "excited",
+     "rate": "+20%",
+     "pitch": "+3%",
+     "pausa_ms": 800,
+     "pop": "one-nil",
+     "suspense": false,
+     "inicio_est_s": 21.69
+    },
+    {
+     "texto": "Wait.",
+     "estilo": "excited",
+     "rate": "+20%",
+     "pitch": "+9%",
+     "pausa_ms": 320,
+     "pop": "WAIT",
+     "suspense": false,
+     "inicio_est_s": 24.09
+    },
+    {
+     "texto": "Three goals or more? 39 percent.",
+     "estilo": "excited",
+     "rate": "+8%",
+     "pitch": "+6%",
+     "pausa_ms": 800,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 24.73
+    },
+    {
+     "texto": "Numbers! I love numbers!",
+     "estilo": "cheerful",
+     "rate": "+12%",
+     "pitch": "+3%",
+     "pausa_ms": 450,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 27.67
+    },
+    {
+     "texto": "Both teams scoring: 46 percent.",
+     "estilo": "excited",
+     "rate": "+12%",
+     "pitch": "+0%",
+     "pausa_ms": 800,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 29.49
+    },
+    {
+     "texto": "Kazakhstan so far: 0 wins from 3, 3 scored, 5 conceded.",
+     "estilo": "excited",
+     "rate": "+12%",
+     "pitch": "+0%",
+     "pausa_ms": 800,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 32.01
+    },
+    {
+     "texto": "I'm Blitz, and I cannot sit still.",
+     "estilo": "cheerful",
+     "rate": "+4%",
+     "pitch": "+0%",
+     "pausa_ms": 600,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 36.59
+    },
+    {
+     "texto": "Faroe Islands so far: 0 wins from 3, 3 scored, 3 conceded.",
+     "estilo": "excited",
+     "rate": "+20%",
+     "pitch": "+6%",
+     "pausa_ms": 450,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 39.78
+    },
+    {
+     "texto": "Yes!",
+     "estilo": "excited",
+     "rate": "+4%",
+     "pitch": "+3%",
+     "pausa_ms": 250,
+     "pop": "YES",
+     "suspense": false,
+     "inicio_est_s": 44.07
+    },
+    {
+     "texto": "Watch Bauyrzhan Islamkhan: player rating 7.2.",
+     "estilo": "excited",
+     "rate": "+16%",
+     "pitch": "+3%",
+     "pausa_ms": 180,
+     "pop": "7.2",
+     "suspense": false,
+     "inicio_est_s": 44.69
+    },
+    {
+     "texto": "7.2!",
+     "estilo": "shouting",
+     "rate": "+16%",
+     "pitch": "+6%",
+     "pausa_ms": 800,
+     "pop": "7.2",
+     "suspense": false,
+     "inicio_est_s": 46.86
+    },
+    {
+     "texto": "Watch Á. Samuelsen: player rating 6.9.",
+     "estilo": "excited",
+     "rate": "+12%",
+     "pitch": "+6%",
+     "pausa_ms": 120,
+     "pop": "6.9",
+     "suspense": false,
+     "inicio_est_s": 47.99
+    },
+    {
+     "texto": "6.9!",
+     "estilo": "shouting",
+     "rate": "+8%",
+     "pitch": "+9%",
+     "pausa_ms": 180,
+     "pop": "6.9",
+     "suspense": false,
+     "inicio_est_s": 50.17
+    },
+    {
+     "texto": "I love it.",
+     "estilo": "cheerful",
+     "rate": "+16%",
+     "pitch": "+0%",
+     "pausa_ms": 450,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 50.71
+    }
+   ],
+   "estimado_s": 52.2,
+   "ssml": "<speak version=\"1.0\" xmlns=\"http://www.w3.org/2001/10/synthesis\" xml:lang=\"en-US\"><voice name=\"en-US-Andrew:DragonHDOmniLatestNeural\" parameters=\"temperature=1.0;top_p=0.9;top_k=40;cfg_scale=1.8\">Next! Here we go. Kazakhstan against Faroe Islands! Tuesday, 15:00 UK time. Stay with me, stay with me. Wait wait wait. Kazakhstan win this 40 percent of the time. 40 percent! The draw: 31 percent. Faroe Islands: 29 percent. Expected goals: 1.1 for Kazakhstan, 1.0 for Faroe Islands. Oh my days. Single most likely score: one-nil. Wait. Three goals or more? 39 percent. Numbers! I love numbers! Both teams scoring: 46 percent. Kazakhstan so far: 0 wins from 3, 3 scored, 5 conceded. I'm Blitz, and I cannot sit still. Faroe Islands so far: 0 wins from 3, 3 scored, 3 conceded. Yes! Watch Bauyrzhan Islamkhan: player rating 7.2. 7.2! Watch Á. Samuelsen: player rating 6.9. 6.9! I love it.</voice></speak>",
+   "audio": "s15.mp3",
+   "duracion_s": 73.19
+  },
+  {
+   "id": "s16",
+   "fragmentos": [
+    {
+     "texto": "Moving on!",
+     "estilo": "excited",
+     "rate": "+4%",
+     "pitch": "+9%",
+     "pausa_ms": 450,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 0.0
+    },
+    {
+     "texto": "My brain is buzzing. Literally buzzing.",
+     "estilo": "cheerful",
+     "rate": "+8%",
+     "pitch": "+3%",
+     "pausa_ms": 600,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 1.19
+    },
+    {
+     "texto": "Albania against San Marino! Tuesday, 19:45 UK time.",
+     "estilo": "excited",
+     "rate": "+8%",
+     "pitch": "+3%",
+     "pausa_ms": 300,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 3.93
+    },
+    {
+     "texto": "Are you sitting down?",
+     "estilo": "whispering",
+     "rate": "+4%",
+     "pitch": "+0%",
+     "pausa_ms": 800,
+     "pop": null,
+     "suspense": true,
+     "inicio_est_s": 7.08
+    },
+    {
+     "texto": "Albania win this 92 percent of the time.",
+     "estilo": "excited",
+     "rate": "+20%",
+     "pitch": "+9%",
+     "pausa_ms": 120,
+     "pop": "92 percent",
+     "suspense": false,
+     "inicio_est_s": 9.35
+    },
+    {
+     "texto": "Spicy.",
+     "estilo": "cheerful",
+     "rate": "+4%",
+     "pitch": "+3%",
+     "pausa_ms": 800,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 12.04
+    },
+    {
+     "texto": "Don't tell anyone, but...",
+     "estilo": "whispering",
+     "rate": "+12%",
+     "pitch": "+6%",
+     "pausa_ms": 800,
+     "pop": null,
+     "suspense": true,
+     "inicio_est_s": 13.21
+    },
+    {
+     "texto": "The draw: 6 percent. San Marino: 2 percent.",
+     "estilo": "excited",
+     "rate": "+4%",
+     "pitch": "+6%",
+     "pausa_ms": 800,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 15.38
+    },
+    {
+     "texto": "Look!",
+     "estilo": "excited",
+     "rate": "+8%",
+     "pitch": "+0%",
+     "pausa_ms": 320,
+     "pop": "LOOK",
+     "suspense": false,
+     "inicio_est_s": 19.14
+    },
+    {
+     "texto": "And the number is...",
+     "estilo": "whispering",
+     "rate": "+8%",
+     "pitch": "+3%",
+     "pausa_ms": 600,
+     "pop": null,
+     "suspense": true,
+     "inicio_est_s": 19.82
+    },
+    {
+     "texto": "That is not a match, that's a mismatch.",
+     "estilo": "excited",
+     "rate": "+20%",
+     "pitch": "+6%",
+     "pausa_ms": 300,
+     "pop": "mismatch",
+     "suspense": false,
+     "inicio_est_s": 21.84
+    },
+    {
+     "texto": "Expected goals: 3.3 for Albania, 0.4 for San Marino.",
+     "estilo": "excited",
+     "rate": "+4%",
+     "pitch": "+0%",
+     "pausa_ms": 600,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 24.71
+    },
+    {
+     "texto": "Chef's kiss.",
+     "estilo": "cheerful",
+     "rate": "+16%",
+     "pitch": "+0%",
+     "pausa_ms": 600,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 28.63
+    },
+    {
+     "texto": "Look at this!",
+     "estilo": "excited",
+     "rate": "+16%",
+     "pitch": "+0%",
+     "pausa_ms": 250,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 29.9
+    },
+    {
+     "texto": "Guess. Go on, guess.",
+     "estilo": "whispering",
+     "rate": "+8%",
+     "pitch": "+9%",
+     "pausa_ms": 1000,
+     "pop": null,
+     "suspense": true,
+     "inicio_est_s": 31.14
+    },
+    {
+     "texto": "Single most likely score: three-nil.",
+     "estilo": "excited",
+     "rate": "+8%",
+     "pitch": "+9%",
+     "pausa_ms": 180,
+     "pop": "three-nil",
+     "suspense": false,
+     "inicio_est_s": 33.57
+    },
+    {
+     "texto": "Ridiculous.",
+     "estilo": "cheerful",
+     "rate": "+8%",
+     "pitch": "+3%",
+     "pausa_ms": 600,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 35.53
+    },
+    {
+     "texto": "Three goals or more? 80 percent.",
+     "estilo": "excited",
+     "rate": "+8%",
+     "pitch": "+6%",
+     "pausa_ms": 300,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 36.48
+    },
+    {
+     "texto": "Come on!",
+     "estilo": "excited",
+     "rate": "+4%",
+     "pitch": "+3%",
+     "pausa_ms": 120,
+     "pop": "COME ON",
+     "suspense": false,
+     "inicio_est_s": 38.92
+    },
+    {
+     "texto": "Both teams scoring: 30 percent.",
+     "estilo": "excited",
+     "rate": "+8%",
+     "pitch": "+9%",
+     "pausa_ms": 300,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 39.78
+    },
+    {
+     "texto": "Keep scrolling with me. More coming. So much more.",
+     "estilo": "cheerful",
+     "rate": "+4%",
+     "pitch": "+0%",
+     "pausa_ms": 800,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 41.86
+    },
+    {
+     "texto": "Boom.",
+     "estilo": "excited",
+     "rate": "+12%",
+     "pitch": "+9%",
+     "pausa_ms": 250,
+     "pop": "BOOM",
+     "suspense": false,
+     "inicio_est_s": 45.99
+    },
+    {
+     "texto": "Albania so far: 2 wins from 3, 6 scored, 2 conceded.",
+     "estilo": "excited",
+     "rate": "+8%",
+     "pitch": "+0%",
+     "pausa_ms": 600,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 46.58
+    },
+    {
+     "texto": "San Marino so far: 0 wins from 3, 0 scored, 14 conceded.",
+     "estilo": "excited",
+     "rate": "+12%",
+     "pitch": "+3%",
+     "pausa_ms": 800,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 51.1
+    },
+    {
+     "texto": "Drum roll...",
+     "estilo": "whispering",
+     "rate": "+20%",
+     "pitch": "+6%",
+     "pausa_ms": 600,
+     "pop": null,
+     "suspense": true,
+     "inicio_est_s": 56.02
+    },
+    {
+     "texto": "Watch K. Asllani: player rating 7.3.",
+     "estilo": "excited",
+     "rate": "+12%",
+     "pitch": "+9%",
+     "pausa_ms": 450,
+     "pop": "7.3",
+     "suspense": false,
+     "inicio_est_s": 57.26
+    },
+    {
+     "texto": "Massive.",
+     "estilo": "cheerful",
+     "rate": "+8%",
+     "pitch": "+0%",
+     "pausa_ms": 300,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 59.77
+    },
+    {
+     "texto": "Okay okay okay.",
+     "estilo": "excited",
+     "rate": "+8%",
+     "pitch": "+3%",
+     "pausa_ms": 180,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 60.43
+    },
+    {
+     "texto": "Brace yourself.",
+     "estilo": "whispering",
+     "rate": "+4%",
+     "pitch": "+9%",
+     "pausa_ms": 800,
+     "pop": null,
+     "suspense": true,
+     "inicio_est_s": 61.68
+    },
+    {
+     "texto": "Watch Nicolas Giacopetti: player rating 6.3.",
+     "estilo": "excited",
+     "rate": "+8%",
+     "pitch": "+3%",
+     "pausa_ms": 450,
+     "pop": "6.3",
+     "suspense": false,
+     "inicio_est_s": 63.22
+    }
+   ],
+   "estimado_s": 65.8,
+   "ssml": "<speak version=\"1.0\" xmlns=\"http://www.w3.org/2001/10/synthesis\" xml:lang=\"en-US\"><voice name=\"en-US-Andrew:DragonHDOmniLatestNeural\" parameters=\"temperature=1.0;top_p=0.9;top_k=40;cfg_scale=1.8\">Moving on! My brain is buzzing. Literally buzzing. Albania against San Marino! Tuesday, 19:45 UK time. Are you sitting down? Albania win this 92 percent of the time. Spicy. Don't tell anyone, but... The draw: 6 percent. San Marino: 2 percent. Look! And the number is... That is not a match, that's a mismatch. Expected goals: 3.3 for Albania, 0.4 for San Marino. Chef's kiss. Look at this! Guess. Go on, guess... Single most likely score: three-nil. Ridiculous. Three goals or more? 80 percent. Come on! Both teams scoring: 30 percent. Keep scrolling with me. More coming. So much more. Boom. Albania so far: 2 wins from 3, 6 scored, 2 conceded. San Marino so far: 0 wins from 3, 0 scored, 14 conceded. Drum roll... Watch K. Asllani: player rating 7.3. Massive. Okay okay okay. Brace yourself... Watch Nicolas Giacopetti: player rating 6.3.</voice></speak>",
+   "audio": "s16.mp3",
+   "duracion_s": 88.0
+  },
+  {
+   "id": "s17",
+   "fragmentos": [
+    {
+     "texto": "Next screen, go!",
+     "estilo": "excited",
+     "rate": "+20%",
+     "pitch": "+0%",
+     "pausa_ms": 600,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 0.0
+    },
+    {
+     "texto": "Luck check! Goals scored versus expected goals.",
+     "estilo": "excited",
+     "rate": "+20%",
+     "pitch": "+0%",
+     "pausa_ms": 600,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 1.56
+    },
+    {
+     "texto": "Okay, breathe, Blitz. Breathe.",
+     "estilo": "cheerful",
+     "rate": "+12%",
+     "pitch": "+6%",
+     "pausa_ms": 800,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 4.41
+    },
+    {
+     "texto": "Finland: 9 goals from 5.0 expected. Plus 4.0. Clinical!",
+     "estilo": "excited",
+     "rate": "+12%",
+     "pitch": "+9%",
+     "pausa_ms": 120,
+     "pop": "Plus 4.0",
+     "suspense": false,
+     "inicio_est_s": 6.58
+    },
+    {
+     "texto": "Plus 4.0!",
+     "estilo": "shouting",
+     "rate": "+4%",
+     "pitch": "+9%",
+     "pausa_ms": 450,
+     "pop": "Plus 4.0",
+     "suspense": false,
+     "inicio_est_s": 9.79
+    },
+    {
+     "texto": "Ooh!",
+     "estilo": "excited",
+     "rate": "+8%",
+     "pitch": "+3%",
+     "pausa_ms": 180,
+     "pop": "OOH",
+     "suspense": false,
+     "inicio_est_s": 10.98
+    },
+    {
+     "texto": "Little secret...",
+     "estilo": "whispering",
+     "rate": "+20%",
+     "pitch": "+0%",
+     "pausa_ms": 600,
+     "pop": null,
+     "suspense": true,
+     "inicio_est_s": 11.52
+    },
+    {
+     "texto": "Here it comes...",
+     "estilo": "whispering",
+     "rate": "+12%",
+     "pitch": "+0%",
+     "pausa_ms": 1000,
+     "pop": null,
+     "suspense": true,
+     "inicio_est_s": 12.76
+    },
+    {
+     "texto": "Switzerland: 8 goals from 4.8 expected. Plus 3.2. Clinical!",
+     "estilo": "excited",
+     "rate": "+20%",
+     "pitch": "+9%",
+     "pausa_ms": 300,
+     "pop": "Plus 3.2",
+     "suspense": false,
+     "inicio_est_s": 14.79
+    },
+    {
+     "texto": "Between you and me...",
+     "estilo": "whispering",
+     "rate": "+4%",
+     "pitch": "+6%",
+     "pausa_ms": 600,
+     "pop": null,
+     "suspense": true,
+     "inicio_est_s": 17.97
+    },
+    {
+     "texto": "Germany: just 3 goals from 7.6 expected. Minus 4.6. Ouch.",
+     "estilo": "excited",
+     "rate": "+20%",
+     "pitch": "+6%",
+     "pausa_ms": 120,
+     "pop": "Minus 4.6",
+     "suspense": false,
+     "inicio_est_s": 20.05
+    },
+    {
+     "texto": "Minus 4.6!",
+     "estilo": "shouting",
+     "rate": "+16%",
+     "pitch": "+3%",
+     "pausa_ms": 450,
+     "pop": "Minus 4.6",
+     "suspense": false,
+     "inicio_est_s": 23.38
+    },
+    {
+     "texto": "Hungary: just 1 goals from 4.7 expected. Minus 3.7. Ouch.",
+     "estilo": "excited",
+     "rate": "+4%",
+     "pitch": "+9%",
+     "pausa_ms": 300,
+     "pop": "Minus 3.7",
+     "suspense": false,
+     "inicio_est_s": 24.49
+    }
+   ],
+   "estimado_s": 28.5,
+   "ssml": "<speak version=\"1.0\" xmlns=\"http://www.w3.org/2001/10/synthesis\" xml:lang=\"en-US\"><voice name=\"en-US-Andrew:DragonHDOmniLatestNeural\" parameters=\"temperature=1.0;top_p=0.9;top_k=40;cfg_scale=1.8\">Next screen, go! Luck check! Goals scored versus expected goals. Okay, breathe, Blitz. Breathe. Finland: 9 goals from 5.0 expected. Plus 4.0. Clinical! Plus 4.0! Ooh! Little secret... Here it comes... Switzerland: 8 goals from 4.8 expected. Plus 3.2. Clinical! Between you and me... Germany: just 3 goals from 7.6 expected. Minus 4.6. Ouch. Minus 4.6! Hungary: just 1 goals from 4.7 expected. Minus 3.7. Ouch.</voice></speak>",
+   "audio": "s17.mp3",
+   "duracion_s": 46.67
+  },
+  {
+   "id": "s18",
+   "fragmentos": [
+    {
+     "texto": "Belarus against Finland! Tuesday, 19:45 UK time.",
+     "estilo": "excited",
+     "rate": "+20%",
+     "pitch": "+6%",
+     "pausa_ms": 300,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 0.0
+    },
+    {
+     "texto": "Right.",
+     "estilo": "excited",
+     "rate": "+12%",
+     "pitch": "+3%",
+     "pausa_ms": 320,
+     "pop": "RIGHT",
+     "suspense": false,
+     "inicio_est_s": 2.54
+    },
+    {
+     "texto": "And the number is...",
+     "estilo": "whispering",
+     "rate": "+20%",
+     "pitch": "+3%",
+     "pausa_ms": 600,
+     "pop": null,
+     "suspense": true,
+     "inicio_est_s": 3.21
+    },
+    {
+     "texto": "Finland win this 48 percent of the time.",
+     "estilo": "excited",
+     "rate": "+12%",
+     "pitch": "+9%",
+     "pausa_ms": 300,
+     "pop": "48 percent",
+     "suspense": false,
+     "inicio_est_s": 5.09
+    },
+    {
+     "texto": "Ha!",
+     "estilo": "excited",
+     "rate": "+16%",
+     "pitch": "+9%",
+     "pausa_ms": 120,
+     "pop": "HA",
+     "suspense": false,
+     "inicio_est_s": 8.14
+    },
+    {
+     "texto": "The draw: 28 percent. Belarus: 24 percent.",
+     "estilo": "excited",
+     "rate": "+4%",
+     "pitch": "+0%",
+     "pausa_ms": 600,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 8.59
+    },
+    {
+     "texto": "Expected goals: 0.9 for Belarus, 1.3 for Finland.",
+     "estilo": "excited",
+     "rate": "+4%",
+     "pitch": "+0%",
+     "pausa_ms": 300,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 11.78
+    },
+    {
+     "texto": "Single most likely score: nil-one.",
+     "estilo": "excited",
+     "rate": "+12%",
+     "pitch": "+0%",
+     "pausa_ms": 250,
+     "pop": "nil-one",
+     "suspense": false,
+     "inicio_est_s": 15.04
+    },
+    {
+     "texto": "Nil-one!",
+     "estilo": "shouting",
+     "rate": "+8%",
+     "pitch": "+0%",
+     "pausa_ms": 600,
+     "pop": "nil-one",
+     "suspense": false,
+     "inicio_est_s": 17.0
+    },
+    {
+     "texto": "Stop it.",
+     "estilo": "excited",
+     "rate": "+20%",
+     "pitch": "+3%",
+     "pausa_ms": 320,
+     "pop": "STOP IT",
+     "suspense": false,
+     "inicio_est_s": 17.96
+    },
+    {
+     "texto": "Three goals or more? 43 percent.",
+     "estilo": "excited",
+     "rate": "+8%",
+     "pitch": "+6%",
+     "pausa_ms": 600,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 18.92
+    },
+    {
+     "texto": "Alright!",
+     "estilo": "excited",
+     "rate": "+4%",
+     "pitch": "+6%",
+     "pausa_ms": 320,
+     "pop": "ALRIGHT",
+     "suspense": false,
+     "inicio_est_s": 21.66
+    },
+    {
+     "texto": "Both teams scoring: 47 percent.",
+     "estilo": "excited",
+     "rate": "+20%",
+     "pitch": "+3%",
+     "pausa_ms": 450,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 22.35
+    },
+    {
+     "texto": "Too fast? Never. Never too fast.",
+     "estilo": "cheerful",
+     "rate": "+16%",
+     "pitch": "+0%",
+     "pausa_ms": 300,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 24.4
+    },
+    {
+     "texto": "Belarus so far: 1 win from 3, 4 scored, 2 conceded.",
+     "estilo": "excited",
+     "rate": "+20%",
+     "pitch": "+6%",
+     "pausa_ms": 800,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 26.69
+    },
+    {
+     "texto": "This is the best part of my day. Every day.",
+     "estilo": "cheerful",
+     "rate": "+8%",
+     "pitch": "+6%",
+     "pausa_ms": 300,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 31.01
+    },
+    {
+     "texto": "Psst...",
+     "estilo": "whispering",
+     "rate": "+8%",
+     "pitch": "+3%",
+     "pausa_ms": 1000,
+     "pop": null,
+     "suspense": true,
+     "inicio_est_s": 34.87
+    },
+    {
+     "texto": "Finland so far: 2 wins from 3, 9 scored, 1 conceded.",
+     "estilo": "excited",
+     "rate": "+20%",
+     "pitch": "+9%",
+     "pausa_ms": 300,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 36.23
+    },
+    {
+     "texto": "That's huge.",
+     "estilo": "cheerful",
+     "rate": "+16%",
+     "pitch": "+9%",
+     "pausa_ms": 450,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 40.06
+    },
+    {
+     "texto": "Watch A. Kontsevoy: player rating 7.4.",
+     "estilo": "excited",
+     "rate": "+12%",
+     "pitch": "+6%",
+     "pausa_ms": 320,
+     "pop": "7.4",
+     "suspense": false,
+     "inicio_est_s": 41.17
+    },
+    {
+     "texto": "7.4!",
+     "estilo": "shouting",
+     "rate": "+8%",
+     "pitch": "+6%",
+     "pausa_ms": 450,
+     "pop": "7.4",
+     "suspense": false,
+     "inicio_est_s": 43.55
+    },
+    {
+     "texto": "Watch L. Hrádecký: player rating 7.5.",
+     "estilo": "excited",
+     "rate": "+4%",
+     "pitch": "+9%",
+     "pausa_ms": 320,
+     "pop": "7.5",
+     "suspense": false,
+     "inicio_est_s": 44.36
+    },
+    {
+     "texto": "7.5!",
+     "estilo": "shouting",
+     "rate": "+4%",
+     "pitch": "+3%",
+     "pausa_ms": 600,
+     "pop": "7.5",
+     "suspense": false,
+     "inicio_est_s": 46.9
+    }
+   ],
+   "estimado_s": 47.9,
+   "ssml": "<speak version=\"1.0\" xmlns=\"http://www.w3.org/2001/10/synthesis\" xml:lang=\"en-US\"><voice name=\"en-US-Andrew:DragonHDOmniLatestNeural\" parameters=\"temperature=1.0;top_p=0.9;top_k=40;cfg_scale=1.8\">Belarus against Finland! Tuesday, 19:45 UK time. Right. And the number is... Finland win this 48 percent of the time. Ha! The draw: 28 percent. Belarus: 24 percent. Expected goals: 0.9 for Belarus, 1.3 for Finland. Single most likely score: nil-one. Nil-one! Stop it. Three goals or more? 43 percent. Alright! Both teams scoring: 47 percent. Too fast? Never. Never too fast. Belarus so far: 1 win from 3, 4 scored, 2 conceded. This is the best part of my day. Every day. Psst... Finland so far: 2 wins from 3, 9 scored, 1 conceded. That's huge. Watch A. Kontsevoy: player rating 7.4. 7.4! Watch L. Hrádecký: player rating 7.5. 7.5!</voice></speak>",
+   "audio": "s18.mp3",
+   "duracion_s": 75.69
+  },
+  {
+   "id": "s19",
+   "fragmentos": [
+    {
+     "texto": "Wow.",
+     "estilo": "excited",
+     "rate": "+20%",
+     "pitch": "+0%",
+     "pausa_ms": 320,
+     "pop": "WOW",
+     "suspense": false,
+     "inicio_est_s": 0.0
+    },
+    {
+     "texto": "Croatia against Spain! Tuesday, 19:45 UK time.",
+     "estilo": "excited",
+     "rate": "+16%",
+     "pitch": "+6%",
+     "pausa_ms": 600,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 0.64
+    },
+    {
+     "texto": "Unreal.",
+     "estilo": "cheerful",
+     "rate": "+8%",
+     "pitch": "+3%",
+     "pausa_ms": 300,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 3.56
+    },
+    {
+     "texto": "Spain win this 74 percent of the time.",
+     "estilo": "excited",
+     "rate": "+12%",
+     "pitch": "+0%",
+     "pausa_ms": 320,
+     "pop": "74 percent",
+     "suspense": false,
+     "inicio_est_s": 4.22
+    },
+    {
+     "texto": "74 percent!",
+     "estilo": "shouting",
+     "rate": "+12%",
+     "pitch": "+3%",
+     "pausa_ms": 800,
+     "pop": "74 percent",
+     "suspense": false,
+     "inicio_est_s": 7.28
+    },
+    {
+     "texto": "The draw: 16 percent. Croatia: 10 percent.",
+     "estilo": "excited",
+     "rate": "+4%",
+     "pitch": "+6%",
+     "pausa_ms": 450,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 8.77
+    },
+    {
+     "texto": "Expected goals: 0.9 for Croatia, 2.3 for Spain.",
+     "estilo": "excited",
+     "rate": "+16%",
+     "pitch": "+0%",
+     "pausa_ms": 300,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 11.81
+    },
+    {
+     "texto": "Huh.",
+     "estilo": "excited",
+     "rate": "+12%",
+     "pitch": "+6%",
+     "pausa_ms": 320,
+     "pop": "HUH",
+     "suspense": false,
+     "inicio_est_s": 14.76
+    },
+    {
+     "texto": "Single most likely score: nil-two.",
+     "estilo": "excited",
+     "rate": "+16%",
+     "pitch": "+9%",
+     "pausa_ms": 320,
+     "pop": "nil-two",
+     "suspense": false,
+     "inicio_est_s": 15.43
+    },
+    {
+     "texto": "Nil-two!",
+     "estilo": "shouting",
+     "rate": "+20%",
+     "pitch": "+6%",
+     "pausa_ms": 300,
+     "pop": "nil-two",
+     "suspense": false,
+     "inicio_est_s": 17.4
+    },
+    {
+     "texto": "Don't tell anyone, but...",
+     "estilo": "whispering",
+     "rate": "+20%",
+     "pitch": "+9%",
+     "pausa_ms": 1000,
+     "pop": null,
+     "suspense": true,
+     "inicio_est_s": 18.02
+    },
+    {
+     "texto": "Three goals or more? 65 percent.",
+     "estilo": "excited",
+     "rate": "+20%",
+     "pitch": "+3%",
+     "pausa_ms": 800,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 20.31
+    },
+    {
+     "texto": "Both teams scoring: 51 percent.",
+     "estilo": "excited",
+     "rate": "+20%",
+     "pitch": "+6%",
+     "pausa_ms": 450,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 23.03
+    },
+    {
+     "texto": "Mad.",
+     "estilo": "cheerful",
+     "rate": "+20%",
+     "pitch": "+3%",
+     "pausa_ms": 450,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 25.08
+    },
+    {
+     "texto": "Croatia so far: 1 win from 3, 3 scored, 12 conceded.",
+     "estilo": "excited",
+     "rate": "+4%",
+     "pitch": "+6%",
+     "pausa_ms": 300,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 25.85
+    },
+    {
+     "texto": "Huge!",
+     "estilo": "cheerful",
+     "rate": "+4%",
+     "pitch": "+3%",
+     "pausa_ms": 450,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 30.22
+    },
+    {
+     "texto": "Spain so far: 3 wins from 3, 10 scored, 4 conceded.",
+     "estilo": "excited",
+     "rate": "+12%",
+     "pitch": "+9%",
+     "pausa_ms": 600,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 31.04
+    },
+    {
+     "texto": "Watch I. Matanović: player rating 7.3.",
+     "estilo": "excited",
+     "rate": "+16%",
+     "pitch": "+3%",
+     "pausa_ms": 600,
+     "pop": "7.3",
+     "suspense": false,
+     "inicio_est_s": 35.42
+    },
+    {
+     "texto": "Watch Lamine Yamal: player rating 7.9.",
+     "estilo": "excited",
+     "rate": "+16%",
+     "pitch": "+0%",
+     "pausa_ms": 120,
+     "pop": "7.9",
+     "suspense": false,
+     "inicio_est_s": 38.01
+    },
+    {
+     "texto": "7.9!",
+     "estilo": "shouting",
+     "rate": "+20%",
+     "pitch": "+0%",
+     "pausa_ms": 300,
+     "pop": "7.9",
+     "suspense": false,
+     "inicio_est_s": 40.12
+    }
+   ],
+   "estimado_s": 40.7,
+   "ssml": "<speak version=\"1.0\" xmlns=\"http://www.w3.org/2001/10/synthesis\" xml:lang=\"en-US\"><voice name=\"en-US-Andrew:DragonHDOmniLatestNeural\" parameters=\"temperature=1.0;top_p=0.9;top_k=40;cfg_scale=1.8\">Wow. Croatia against Spain! Tuesday, 19:45 UK time. Unreal. Spain win this 74 percent of the time. 74 percent! The draw: 16 percent. Croatia: 10 percent. Expected goals: 0.9 for Croatia, 2.3 for Spain. Huh. Single most likely score: nil-two. Nil-two! Don't tell anyone, but... Three goals or more? 65 percent. Both teams scoring: 51 percent. Mad. Croatia so far: 1 win from 3, 3 scored, 12 conceded. Huge! Spain so far: 3 wins from 3, 10 scored, 4 conceded. Watch I. Matanović: player rating 7.3. Watch Lamine Yamal: player rating 7.9. 7.9!</voice></speak>",
+   "audio": "s19.mp3",
+   "duracion_s": 60.35
+  },
+  {
+   "id": "s20",
+   "fragmentos": [
+    {
+     "texto": "Moving on!",
+     "estilo": "excited",
+     "rate": "+20%",
+     "pitch": "+9%",
+     "pausa_ms": 800,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 0.0
+    },
+    {
+     "texto": "Honesty time. How good are the numbers?",
+     "estilo": "excited",
+     "rate": "+4%",
+     "pitch": "+0%",
+     "pausa_ms": 450,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 1.44
+    },
+    {
+     "texto": "You ready?",
+     "estilo": "whispering",
+     "rate": "+4%",
+     "pitch": "+0%",
+     "pausa_ms": 800,
+     "pop": null,
+     "suspense": true,
+     "inicio_est_s": 4.48
+    },
+    {
+     "texto": "We tracked 62 games. The favourite got it right 58 percent of the time.",
+     "estilo": "excited",
+     "rate": "+8%",
+     "pitch": "+9%",
+     "pausa_ms": 320,
+     "pop": "58 percent",
+     "suspense": false,
+     "inicio_est_s": 6.02
+    },
+    {
+     "texto": "Ridiculous.",
+     "estilo": "cheerful",
+     "rate": "+16%",
+     "pitch": "+0%",
+     "pausa_ms": 300,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 11.33
+    },
+    {
+     "texto": "Not a crystal ball. Football is chaos. That's why we love it.",
+     "estilo": "excited",
+     "rate": "+4%",
+     "pitch": "+3%",
+     "pausa_ms": 600,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 11.96
+    },
+    {
+     "texto": "I've crunched so many matches, I dream in percentages.",
+     "estilo": "cheerful",
+     "rate": "+12%",
+     "pitch": "+9%",
+     "pausa_ms": 600,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 16.99
+    }
+   ],
+   "estimado_s": 20.7,
+   "ssml": "<speak version=\"1.0\" xmlns=\"http://www.w3.org/2001/10/synthesis\" xml:lang=\"en-US\"><voice name=\"en-US-Andrew:DragonHDOmniLatestNeural\" parameters=\"temperature=1.0;top_p=0.9;top_k=40;cfg_scale=1.8\">Moving on! Honesty time. How good are the numbers? You ready? We tracked 62 games. The favourite got it right 58 percent of the time. Ridiculous. Not a crystal ball. Football is chaos. That's why we love it. I've crunched so many matches, I dream in percentages.</voice></speak>",
+   "audio": "s20.mp3",
+   "duracion_s": 22.29
+  },
+  {
+   "id": "s21",
+   "fragmentos": [
+    {
+     "texto": "Whoa.",
+     "estilo": "excited",
+     "rate": "+16%",
+     "pitch": "+3%",
+     "pausa_ms": 320,
+     "pop": "WHOA",
+     "suspense": false,
+     "inicio_est_s": 0.0
+    },
+    {
+     "texto": "England against Czech Republic! Tuesday, 19:45 UK time.",
+     "estilo": "excited",
+     "rate": "+16%",
+     "pitch": "+0%",
+     "pausa_ms": 300,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 0.65
+    },
+    {
+     "texto": "Hold on.",
+     "estilo": "excited",
+     "rate": "+16%",
+     "pitch": "+3%",
+     "pausa_ms": 120,
+     "pop": "HOLD ON",
+     "suspense": false,
+     "inicio_est_s": 3.6
+    },
+    {
+     "texto": "England win this 84 percent of the time.",
+     "estilo": "excited",
+     "rate": "+20%",
+     "pitch": "+6%",
+     "pausa_ms": 120,
+     "pop": "84 percent",
+     "suspense": false,
+     "inicio_est_s": 4.39
+    },
+    {
+     "texto": "84 percent!",
+     "estilo": "shouting",
+     "rate": "+16%",
+     "pitch": "+6%",
+     "pausa_ms": 300,
+     "pop": "84 percent",
+     "suspense": false,
+     "inicio_est_s": 7.07
+    },
+    {
+     "texto": "Numbers don't lie.",
+     "estilo": "cheerful",
+     "rate": "+16%",
+     "pitch": "+6%",
+     "pausa_ms": 300,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 8.03
+    },
+    {
+     "texto": "The draw: 11 percent. Czech Republic: 5 percent.",
+     "estilo": "excited",
+     "rate": "+20%",
+     "pitch": "+3%",
+     "pausa_ms": 450,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 9.33
+    },
+    {
+     "texto": "Unreal.",
+     "estilo": "cheerful",
+     "rate": "+4%",
+     "pitch": "+0%",
+     "pausa_ms": 450,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 12.34
+    },
+    {
+     "texto": "That is not a match, that's a mismatch.",
+     "estilo": "excited",
+     "rate": "+12%",
+     "pitch": "+0%",
+     "pausa_ms": 250,
+     "pop": "mismatch",
+     "suspense": false,
+     "inicio_est_s": 13.16
+    },
+    {
+     "texto": "Massive.",
+     "estilo": "cheerful",
+     "rate": "+4%",
+     "pitch": "+3%",
+     "pausa_ms": 450,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 16.16
+    },
+    {
+     "texto": "Expected goals: 2.9 for England, 0.6 for Czech Republic.",
+     "estilo": "excited",
+     "rate": "+8%",
+     "pitch": "+3%",
+     "pausa_ms": 600,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 16.98
+    },
+    {
+     "texto": "Oh!",
+     "estilo": "excited",
+     "rate": "+16%",
+     "pitch": "+3%",
+     "pausa_ms": 250,
+     "pop": "OH",
+     "suspense": false,
+     "inicio_est_s": 20.79
+    },
+    {
+     "texto": "Single most likely score: two-nil.",
+     "estilo": "excited",
+     "rate": "+8%",
+     "pitch": "+9%",
+     "pausa_ms": 800,
+     "pop": "two-nil",
+     "suspense": false,
+     "inicio_est_s": 21.37
+    },
+    {
+     "texto": "Three goals or more? 69 percent.",
+     "estilo": "excited",
+     "rate": "+8%",
+     "pitch": "+9%",
+     "pausa_ms": 450,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 23.95
+    },
+    {
+     "texto": "Both teams scoring: 42 percent.",
+     "estilo": "excited",
+     "rate": "+20%",
+     "pitch": "+0%",
+     "pausa_ms": 800,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 26.53
+    },
+    {
+     "texto": "Alright!",
+     "estilo": "excited",
+     "rate": "+20%",
+     "pitch": "+3%",
+     "pausa_ms": 250,
+     "pop": "ALRIGHT",
+     "suspense": false,
+     "inicio_est_s": 28.94
+    },
+    {
+     "texto": "Between you and me...",
+     "estilo": "whispering",
+     "rate": "+8%",
+     "pitch": "+3%",
+     "pausa_ms": 800,
+     "pop": null,
+     "suspense": true,
+     "inicio_est_s": 29.51
+    },
+    {
+     "texto": "England so far: 2 wins from 3, 11 scored, 3 conceded.",
+     "estilo": "excited",
+     "rate": "+8%",
+     "pitch": "+0%",
+     "pausa_ms": 600,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 31.73
+    },
+    {
+     "texto": "Where was I? Oh yes. Football.",
+     "estilo": "cheerful",
+     "rate": "+8%",
+     "pitch": "+6%",
+     "pausa_ms": 300,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 36.25
+    },
+    {
+     "texto": "Czech Republic so far: 0 wins from 3, 2 scored, 7 conceded.",
+     "estilo": "excited",
+     "rate": "+8%",
+     "pitch": "+0%",
+     "pausa_ms": 300,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 38.69
+    },
+    {
+     "texto": "Okay.",
+     "estilo": "excited",
+     "rate": "+16%",
+     "pitch": "+6%",
+     "pausa_ms": 250,
+     "pop": "OKAY",
+     "suspense": false,
+     "inicio_est_s": 43.26
+    },
+    {
+     "texto": "Watch J. Bellingham: player rating 7.7.",
+     "estilo": "excited",
+     "rate": "+8%",
+     "pitch": "+6%",
+     "pausa_ms": 180,
+     "pop": "7.7",
+     "suspense": false,
+     "inicio_est_s": 43.84
+    },
+    {
+     "texto": "7.7!",
+     "estilo": "shouting",
+     "rate": "+12%",
+     "pitch": "+9%",
+     "pausa_ms": 800,
+     "pop": "7.7",
+     "suspense": false,
+     "inicio_est_s": 46.16
+    },
+    {
+     "texto": "Listen.",
+     "estilo": "excited",
+     "rate": "+12%",
+     "pitch": "+0%",
+     "pausa_ms": 180,
+     "pop": "LISTEN",
+     "suspense": false,
+     "inicio_est_s": 47.3
+    },
+    {
+     "texto": "Watch L. Krejčí: player rating 7.0.",
+     "estilo": "excited",
+     "rate": "+20%",
+     "pitch": "+3%",
+     "pausa_ms": 120,
+     "pop": "7.0",
+     "suspense": false,
+     "inicio_est_s": 47.82
+    },
+    {
+     "texto": "7.0!",
+     "estilo": "shouting",
+     "rate": "+20%",
+     "pitch": "+3%",
+     "pausa_ms": 320,
+     "pop": "7.0",
+     "suspense": false,
+     "inicio_est_s": 49.87
+    },
+    {
+     "texto": "Spicy.",
+     "estilo": "cheerful",
+     "rate": "+8%",
+     "pitch": "+9%",
+     "pausa_ms": 600,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 50.51
+    },
+    {
+     "texto": "I love it.",
+     "estilo": "cheerful",
+     "rate": "+20%",
+     "pitch": "+3%",
+     "pausa_ms": 800,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 51.46
+    }
+   ],
+   "estimado_s": 53.2,
+   "ssml": "<speak version=\"1.0\" xmlns=\"http://www.w3.org/2001/10/synthesis\" xml:lang=\"en-US\"><voice name=\"en-US-Andrew:DragonHDOmniLatestNeural\" parameters=\"temperature=1.0;top_p=0.9;top_k=40;cfg_scale=1.8\">Whoa. England against Czech Republic! Tuesday, 19:45 UK time. Hold on. England win this 84 percent of the time. 84 percent! Numbers don't lie. The draw: 11 percent. Czech Republic: 5 percent. Unreal. That is not a match, that's a mismatch. Massive. Expected goals: 2.9 for England, 0.6 for Czech Republic. Oh! Single most likely score: two-nil. Three goals or more? 69 percent. Both teams scoring: 42 percent. Alright! Between you and me... England so far: 2 wins from 3, 11 scored, 3 conceded. Where was I? Oh yes. Football. Czech Republic so far: 0 wins from 3, 2 scored, 7 conceded. Okay. Watch J. Bellingham: player rating 7.7. 7.7! Listen. Watch L. Krejčí: player rating 7.0. 7.0! Spicy. I love it.</voice></speak>",
+   "audio": "s21.mp3",
+   "duracion_s": 76.14
+  },
+  {
+   "id": "s22",
+   "fragmentos": [
+    {
+     "texto": "Swipe!",
+     "estilo": "excited",
+     "rate": "+20%",
+     "pitch": "+3%",
+     "pausa_ms": 600,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 0.0
+    },
+    {
+     "texto": "Tap follow if numbers make you happy too.",
+     "estilo": "cheerful",
+     "rate": "+12%",
+     "pitch": "+3%",
+     "pausa_ms": 300,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 0.92
+    },
+    {
+     "texto": "Estonia against Iceland! Tuesday, 19:45 UK time.",
+     "estilo": "excited",
+     "rate": "+16%",
+     "pitch": "+9%",
+     "pausa_ms": 800,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 3.97
+    },
+    {
+     "texto": "Here it comes...",
+     "estilo": "whispering",
+     "rate": "+8%",
+     "pitch": "+9%",
+     "pausa_ms": 600,
+     "pop": null,
+     "suspense": true,
+     "inicio_est_s": 7.09
+    },
+    {
+     "texto": "Iceland win this 58 percent of the time.",
+     "estilo": "excited",
+     "rate": "+4%",
+     "pitch": "+6%",
+     "pausa_ms": 450,
+     "pop": "58 percent",
+     "suspense": false,
+     "inicio_est_s": 8.76
+    },
+    {
+     "texto": "The draw: 24 percent. Estonia: 18 percent.",
+     "estilo": "excited",
+     "rate": "+4%",
+     "pitch": "+3%",
+     "pausa_ms": 600,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 12.17
+    },
+    {
+     "texto": "Expected goals: 0.8 for Estonia, 1.6 for Iceland.",
+     "estilo": "excited",
+     "rate": "+12%",
+     "pitch": "+3%",
+     "pausa_ms": 800,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 15.35
+    },
+    {
+     "texto": "Are you sitting down?",
+     "estilo": "whispering",
+     "rate": "+8%",
+     "pitch": "+6%",
+     "pausa_ms": 1000,
+     "pop": null,
+     "suspense": true,
+     "inicio_est_s": 18.9
+    },
+    {
+     "texto": "Single most likely score: nil-one.",
+     "estilo": "excited",
+     "rate": "+12%",
+     "pitch": "+3%",
+     "pausa_ms": 450,
+     "pop": "nil-one",
+     "suspense": false,
+     "inicio_est_s": 21.33
+    },
+    {
+     "texto": "If you're just joining: hi! Football data, all night, no brakes.",
+     "estilo": "cheerful",
+     "rate": "+12%",
+     "pitch": "+6%",
+     "pausa_ms": 450,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 23.49
+    },
+    {
+     "texto": "Wait wait wait.",
+     "estilo": "excited",
+     "rate": "+20%",
+     "pitch": "+9%",
+     "pausa_ms": 180,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 27.72
+    },
+    {
+     "texto": "Three goals or more? 51 percent.",
+     "estilo": "excited",
+     "rate": "+8%",
+     "pitch": "+9%",
+     "pausa_ms": 450,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 28.86
+    },
+    {
+     "texto": "Hold on.",
+     "estilo": "excited",
+     "rate": "+4%",
+     "pitch": "+6%",
+     "pausa_ms": 320,
+     "pop": "HOLD ON",
+     "suspense": false,
+     "inicio_est_s": 31.45
+    },
+    {
+     "texto": "Both teams scoring: 50 percent.",
+     "estilo": "excited",
+     "rate": "+4%",
+     "pitch": "+6%",
+     "pausa_ms": 450,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 32.51
+    },
+    {
+     "texto": "Right.",
+     "estilo": "excited",
+     "rate": "+16%",
+     "pitch": "+0%",
+     "pausa_ms": 180,
+     "pop": "RIGHT",
+     "suspense": false,
+     "inicio_est_s": 34.81
+    },
+    {
+     "texto": "Estonia so far: 1 win from 3, 2 scored, 1 conceded.",
+     "estilo": "excited",
+     "rate": "+16%",
+     "pitch": "+6%",
+     "pausa_ms": 450,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 35.32
+    },
+    {
+     "texto": "Little secret...",
+     "estilo": "whispering",
+     "rate": "+16%",
+     "pitch": "+0%",
+     "pausa_ms": 1000,
+     "pop": null,
+     "suspense": true,
+     "inicio_est_s": 39.42
+    },
+    {
+     "texto": "Iceland so far: 2 wins from 3, 7 scored, 1 conceded.",
+     "estilo": "excited",
+     "rate": "+12%",
+     "pitch": "+6%",
+     "pausa_ms": 800,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 41.08
+    },
+    {
+     "texto": "I've crunched so many matches, I dream in percentages.",
+     "estilo": "cheerful",
+     "rate": "+16%",
+     "pitch": "+0%",
+     "pausa_ms": 450,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 45.66
+    },
+    {
+     "texto": "Watch K. Hein: player rating 7.0.",
+     "estilo": "excited",
+     "rate": "+12%",
+     "pitch": "+0%",
+     "pausa_ms": 600,
+     "pop": "7.0",
+     "suspense": false,
+     "inicio_est_s": 49.09
+    },
+    {
+     "texto": "Don't tell anyone, but...",
+     "estilo": "whispering",
+     "rate": "+4%",
+     "pitch": "+9%",
+     "pausa_ms": 600,
+     "pop": null,
+     "suspense": true,
+     "inicio_est_s": 51.75
+    },
+    {
+     "texto": "Watch A. Guðjohnsen: player rating 7.4.",
+     "estilo": "excited",
+     "rate": "+8%",
+     "pitch": "+3%",
+     "pausa_ms": 600,
+     "pop": "7.4",
+     "suspense": false,
+     "inicio_est_s": 53.83
+    }
+   ],
+   "estimado_s": 56.6,
+   "ssml": "<speak version=\"1.0\" xmlns=\"http://www.w3.org/2001/10/synthesis\" xml:lang=\"en-US\"><voice name=\"en-US-Andrew:DragonHDOmniLatestNeural\" parameters=\"temperature=1.0;top_p=0.9;top_k=40;cfg_scale=1.8\">Swipe! Tap follow if numbers make you happy too. Estonia against Iceland! Tuesday, 19:45 UK time. Here it comes... Iceland win this 58 percent of the time. The draw: 24 percent. Estonia: 18 percent. Expected goals: 0.8 for Estonia, 1.6 for Iceland. Are you sitting down? Single most likely score: nil-one. If you're just joining: hi! Football data, all night, no brakes. Wait wait wait. Three goals or more? 51 percent. Hold on. Both teams scoring: 50 percent. Right. Estonia so far: 1 win from 3, 2 scored, 1 conceded. Little secret... Iceland so far: 2 wins from 3, 7 scored, 1 conceded. I've crunched so many matches, I dream in percentages. Watch K. Hein: player rating 7.0. Don't tell anyone, but... Watch A. Guðjohnsen: player rating 7.4.</voice></speak>",
+   "audio": "s22.mp3",
+   "duracion_s": 70.53
+  },
+  {
+   "id": "s23",
+   "fragmentos": [
+    {
+     "texto": "Okay, next one.",
+     "estilo": "excited",
+     "rate": "+12%",
+     "pitch": "+0%",
+     "pausa_ms": 450,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 0.0
+    },
+    {
+     "texto": "Group leaders, every league, quick fire!",
+     "estilo": "excited",
+     "rate": "+16%",
+     "pitch": "+9%",
+     "pausa_ms": 300,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 1.48
+    },
+    {
+     "texto": "League A: France, 7 points.",
+     "estilo": "excited",
+     "rate": "+8%",
+     "pitch": "+6%",
+     "pausa_ms": 300,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 3.77
+    },
+    {
+     "texto": "League A: Spain, 9 points.",
+     "estilo": "excited",
+     "rate": "+20%",
+     "pitch": "+9%",
+     "pausa_ms": 600,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 5.85
+    },
+    {
+     "texto": "Ooh!",
+     "estilo": "excited",
+     "rate": "+20%",
+     "pitch": "+9%",
+     "pausa_ms": 250,
+     "pop": "OOH",
+     "suspense": false,
+     "inicio_est_s": 8.05
+    },
+    {
+     "texto": "Psst...",
+     "estilo": "whispering",
+     "rate": "+8%",
+     "pitch": "+3%",
+     "pausa_ms": 800,
+     "pop": null,
+     "suspense": true,
+     "inicio_est_s": 8.62
+    },
+    {
+     "texto": "League A: Portugal, 12 points.",
+     "estilo": "excited",
+     "rate": "+12%",
+     "pitch": "+0%",
+     "pausa_ms": 600,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 9.78
+    },
+    {
+     "texto": "League A: Netherlands, 8 points.",
+     "estilo": "excited",
+     "rate": "+20%",
+     "pitch": "+6%",
+     "pausa_ms": 800,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 12.1
+    },
+    {
+     "texto": "Every number here comes from our AI model. Every single one.",
+     "estilo": "cheerful",
+     "rate": "+4%",
+     "pitch": "+6%",
+     "pausa_ms": 450,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 14.5
+    },
+    {
+     "texto": "League B: Austria, 8 points.",
+     "estilo": "excited",
+     "rate": "+8%",
+     "pitch": "+9%",
+     "pausa_ms": 300,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 19.02
+    },
+    {
+     "texto": "League B: Sweden, 7 points.",
+     "estilo": "excited",
+     "rate": "+12%",
+     "pitch": "+9%",
+     "pausa_ms": 800,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 21.1
+    },
+    {
+     "texto": "League B: Northern Ireland, 7 points.",
+     "estilo": "excited",
+     "rate": "+12%",
+     "pitch": "+0%",
+     "pausa_ms": 450,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 23.61
+    },
+    {
+     "texto": "League B: Switzerland, 9 points.",
+     "estilo": "excited",
+     "rate": "+4%",
+     "pitch": "+3%",
+     "pausa_ms": 800,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 26.13
+    },
+    {
+     "texto": "I'm Blitz, and I cannot sit still.",
+     "estilo": "cheerful",
+     "rate": "+8%",
+     "pitch": "+9%",
+     "pausa_ms": 300,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 28.77
+    },
+    {
+     "texto": "League C: Finland, 7 points.",
+     "estilo": "excited",
+     "rate": "+16%",
+     "pitch": "+9%",
+     "pausa_ms": 300,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 31.57
+    },
+    {
+     "texto": "Yes!",
+     "estilo": "excited",
+     "rate": "+20%",
+     "pitch": "+0%",
+     "pausa_ms": 180,
+     "pop": "YES",
+     "suspense": false,
+     "inicio_est_s": 33.52
+    },
+    {
+     "texto": "League C: Montenegro, 9 points.",
+     "estilo": "excited",
+     "rate": "+12%",
+     "pitch": "+0%",
+     "pausa_ms": 600,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 34.03
+    },
+    {
+     "texto": "League C: Iceland, 7 points.",
+     "estilo": "excited",
+     "rate": "+16%",
+     "pitch": "+3%",
+     "pausa_ms": 300,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 36.34
+    },
+    {
+     "texto": "League C: Slovakia, 7 points.",
+     "estilo": "excited",
+     "rate": "+16%",
+     "pitch": "+3%",
+     "pausa_ms": 300,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 38.3
+    },
+    {
+     "texto": "League D: Malta, 7 points.",
+     "estilo": "excited",
+     "rate": "+20%",
+     "pitch": "+3%",
+     "pausa_ms": 800,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 40.26
+    },
+    {
+     "texto": "Too fast? Never. Never too fast.",
+     "estilo": "cheerful",
+     "rate": "+4%",
+     "pitch": "+0%",
+     "pausa_ms": 450,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 42.66
+    },
+    {
+     "texto": "League D: Azerbaijan, 5 points.",
+     "estilo": "excited",
+     "rate": "+20%",
+     "pitch": "+0%",
+     "pausa_ms": 450,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 45.33
+    }
+   ],
+   "estimado_s": 47.4,
+   "ssml": "<speak version=\"1.0\" xmlns=\"http://www.w3.org/2001/10/synthesis\" xml:lang=\"en-US\"><voice name=\"en-US-Andrew:DragonHDOmniLatestNeural\" parameters=\"temperature=1.0;top_p=0.9;top_k=40;cfg_scale=1.8\">Okay, next one. Group leaders, every league, quick fire! League A: France, 7 points. League A: Spain, 9 points. Ooh! Psst... League A: Portugal, 12 points. League A: Netherlands, 8 points. Every number here comes from our AI model. Every single one. League B: Austria, 8 points. League B: Sweden, 7 points. League B: Northern Ireland, 7 points. League B: Switzerland, 9 points. I'm Blitz, and I cannot sit still. League C: Finland, 7 points. Yes! League C: Montenegro, 9 points. League C: Iceland, 7 points. League C: Slovakia, 7 points. League D: Malta, 7 points. Too fast? Never. Never too fast. League D: Azerbaijan, 5 points.</voice></speak>",
+   "audio": "s23.mp3",
+   "duracion_s": 67.38
+  },
+  {
+   "id": "s24",
+   "fragmentos": [
+    {
+     "texto": "Oh!",
+     "estilo": "excited",
+     "rate": "+12%",
+     "pitch": "+0%",
+     "pausa_ms": 180,
+     "pop": "OH",
+     "suspense": false,
+     "inicio_est_s": 0.0
+    },
+    {
+     "texto": "Luxembourg against Bulgaria! Tuesday, 19:45 UK time.",
+     "estilo": "excited",
+     "rate": "+20%",
+     "pitch": "+6%",
+     "pausa_ms": 300,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 0.52
+    },
+    {
+     "texto": "Luxembourg win this 45 percent of the time.",
+     "estilo": "excited",
+     "rate": "+12%",
+     "pitch": "+0%",
+     "pausa_ms": 600,
+     "pop": "45 percent",
+     "suspense": false,
+     "inicio_est_s": 3.07
+    },
+    {
+     "texto": "The draw: 29 percent. Bulgaria: 26 percent.",
+     "estilo": "excited",
+     "rate": "+4%",
+     "pitch": "+9%",
+     "pausa_ms": 300,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 6.41
+    },
+    {
+     "texto": "Tap follow if numbers make you happy too.",
+     "estilo": "cheerful",
+     "rate": "+8%",
+     "pitch": "+3%",
+     "pausa_ms": 600,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 9.3
+    },
+    {
+     "texto": "Little secret...",
+     "estilo": "whispering",
+     "rate": "+8%",
+     "pitch": "+3%",
+     "pausa_ms": 1000,
+     "pop": null,
+     "suspense": true,
+     "inicio_est_s": 12.75
+    },
+    {
+     "texto": "Expected goals: 1.2 for Luxembourg, 1.0 for Bulgaria.",
+     "estilo": "excited",
+     "rate": "+12%",
+     "pitch": "+9%",
+     "pausa_ms": 600,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 14.46
+    },
+    {
+     "texto": "Single most likely score: one-nil.",
+     "estilo": "excited",
+     "rate": "+16%",
+     "pitch": "+0%",
+     "pausa_ms": 120,
+     "pop": "one-nil",
+     "suspense": false,
+     "inicio_est_s": 17.81
+    },
+    {
+     "texto": "One-nil!",
+     "estilo": "shouting",
+     "rate": "+8%",
+     "pitch": "+9%",
+     "pausa_ms": 300,
+     "pop": "one-nil",
+     "suspense": false,
+     "inicio_est_s": 19.59
+    },
+    {
+     "texto": "Huh.",
+     "estilo": "excited",
+     "rate": "+20%",
+     "pitch": "+9%",
+     "pausa_ms": 320,
+     "pop": "HUH",
+     "suspense": false,
+     "inicio_est_s": 20.25
+    },
+    {
+     "texto": "Three goals or more? 39 percent.",
+     "estilo": "excited",
+     "rate": "+16%",
+     "pitch": "+9%",
+     "pausa_ms": 300,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 20.89
+    },
+    {
+     "texto": "Mad.",
+     "estilo": "cheerful",
+     "rate": "+12%",
+     "pitch": "+0%",
+     "pausa_ms": 600,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 23.18
+    },
+    {
+     "texto": "Both teams scoring: 45 percent.",
+     "estilo": "excited",
+     "rate": "+12%",
+     "pitch": "+3%",
+     "pausa_ms": 450,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 24.12
+    },
+    {
+     "texto": "No way.",
+     "estilo": "excited",
+     "rate": "+16%",
+     "pitch": "+6%",
+     "pausa_ms": 320,
+     "pop": "NO WAY",
+     "suspense": false,
+     "inicio_est_s": 26.29
+    },
+    {
+     "texto": "Luxembourg so far: 1 win from 3, 2 scored, 5 conceded.",
+     "estilo": "excited",
+     "rate": "+12%",
+     "pitch": "+6%",
+     "pausa_ms": 600,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 27.27
+    },
+    {
+     "texto": "Bulgaria so far: 0 wins from 3, 1 scored, 5 conceded.",
+     "estilo": "excited",
+     "rate": "+4%",
+     "pitch": "+3%",
+     "pausa_ms": 300,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 31.65
+    },
+    {
+     "texto": "My brain is buzzing. Literally buzzing.",
+     "estilo": "cheerful",
+     "rate": "+20%",
+     "pitch": "+3%",
+     "pausa_ms": 600,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 36.01
+    },
+    {
+     "texto": "Drum roll...",
+     "estilo": "whispering",
+     "rate": "+12%",
+     "pitch": "+0%",
+     "pausa_ms": 1000,
+     "pop": null,
+     "suspense": true,
+     "inicio_est_s": 38.54
+    },
+    {
+     "texto": "Watch A. Moris: player rating 7.2.",
+     "estilo": "excited",
+     "rate": "+12%",
+     "pitch": "+6%",
+     "pausa_ms": 300,
+     "pop": "7.2",
+     "suspense": false,
+     "inicio_est_s": 40.22
+    },
+    {
+     "texto": "Guess. Go on, guess.",
+     "estilo": "whispering",
+     "rate": "+16%",
+     "pitch": "+0%",
+     "pausa_ms": 800,
+     "pop": null,
+     "suspense": true,
+     "inicio_est_s": 42.58
+    },
+    {
+     "texto": "Watch L. Petkov: player rating 6.8.",
+     "estilo": "excited",
+     "rate": "+12%",
+     "pitch": "+3%",
+     "pausa_ms": 600,
+     "pop": "6.8",
+     "suspense": false,
+     "inicio_est_s": 44.71
+    }
+   ],
+   "estimado_s": 47.4,
+   "ssml": "<speak version=\"1.0\" xmlns=\"http://www.w3.org/2001/10/synthesis\" xml:lang=\"en-US\"><voice name=\"en-US-Andrew:DragonHDOmniLatestNeural\" parameters=\"temperature=1.0;top_p=0.9;top_k=40;cfg_scale=1.8\">Oh! Luxembourg against Bulgaria! Tuesday, 19:45 UK time. Luxembourg win this 45 percent of the time. The draw: 29 percent. Bulgaria: 26 percent. Tap follow if numbers make you happy too. Little secret... Expected goals: 1.2 for Luxembourg, 1.0 for Bulgaria. Single most likely score: one-nil. One-nil! Huh. Three goals or more? 39 percent. Mad. Both teams scoring: 45 percent. No way. Luxembourg so far: 1 win from 3, 2 scored, 5 conceded. Bulgaria so far: 0 wins from 3, 1 scored, 5 conceded. My brain is buzzing. Literally buzzing. Drum roll... Watch A. Moris: player rating 7.2. Guess. Go on, guess... Watch L. Petkov: player rating 6.8.</voice></speak>",
+   "audio": "s24.mp3",
+   "duracion_s": 68.34
+  },
+  {
+   "id": "s25",
+   "fragmentos": [
+    {
+     "texto": "Next!",
+     "estilo": "excited",
+     "rate": "+16%",
+     "pitch": "+9%",
+     "pausa_ms": 800,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 0.0
+    },
+    {
+     "texto": "Stay with me, stay with me.",
+     "estilo": "cheerful",
+     "rate": "+8%",
+     "pitch": "+9%",
+     "pausa_ms": 300,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 1.13
+    },
+    {
+     "texto": "Moldova against Slovakia! Tuesday, 19:45 UK time.",
+     "estilo": "excited",
+     "rate": "+8%",
+     "pitch": "+0%",
+     "pausa_ms": 600,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 3.57
+    },
+    {
+     "texto": "Slovakia win this 67 percent of the time.",
+     "estilo": "excited",
+     "rate": "+12%",
+     "pitch": "+0%",
+     "pausa_ms": 180,
+     "pop": "67 percent",
+     "suspense": false,
+     "inicio_est_s": 6.66
+    },
+    {
+     "texto": "Huge!",
+     "estilo": "cheerful",
+     "rate": "+12%",
+     "pitch": "+6%",
+     "pausa_ms": 600,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 9.59
+    },
+    {
+     "texto": "The draw: 20 percent. Moldova: 13 percent.",
+     "estilo": "excited",
+     "rate": "+4%",
+     "pitch": "+9%",
+     "pausa_ms": 450,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 10.53
+    },
+    {
+     "texto": "Boom.",
+     "estilo": "excited",
+     "rate": "+20%",
+     "pitch": "+0%",
+     "pausa_ms": 180,
+     "pop": "BOOM",
+     "suspense": false,
+     "inicio_est_s": 13.57
+    },
+    {
+     "texto": "Expected goals: 0.7 for Moldova, 2.2 for Slovakia.",
+     "estilo": "excited",
+     "rate": "+8%",
+     "pitch": "+0%",
+     "pausa_ms": 300,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 14.07
+    },
+    {
+     "texto": "Single most likely score: nil-two.",
+     "estilo": "excited",
+     "rate": "+20%",
+     "pitch": "+0%",
+     "pausa_ms": 180,
+     "pop": "nil-two",
+     "suspense": false,
+     "inicio_est_s": 17.22
+    },
+    {
+     "texto": "Nil-two!",
+     "estilo": "shouting",
+     "rate": "+4%",
+     "pitch": "+3%",
+     "pausa_ms": 120,
+     "pop": "nil-two",
+     "suspense": false,
+     "inicio_est_s": 19.0
+    },
+    {
+     "texto": "Beautiful.",
+     "estilo": "cheerful",
+     "rate": "+8%",
+     "pitch": "+0%",
+     "pausa_ms": 600,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 19.49
+    },
+    {
+     "texto": "Three goals or more? 53 percent.",
+     "estilo": "excited",
+     "rate": "+12%",
+     "pitch": "+0%",
+     "pausa_ms": 600,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 20.45
+    },
+    {
+     "texto": "Here we go.",
+     "estilo": "excited",
+     "rate": "+4%",
+     "pitch": "+9%",
+     "pausa_ms": 320,
+     "pop": "HERE WE GO",
+     "suspense": false,
+     "inicio_est_s": 23.11
+    },
+    {
+     "texto": "Both teams scoring: 47 percent.",
+     "estilo": "excited",
+     "rate": "+12%",
+     "pitch": "+3%",
+     "pausa_ms": 800,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 24.54
+    },
+    {
+     "texto": "Psst...",
+     "estilo": "whispering",
+     "rate": "+12%",
+     "pitch": "+9%",
+     "pausa_ms": 1000,
+     "pop": null,
+     "suspense": true,
+     "inicio_est_s": 27.06
+    },
+    {
+     "texto": "Moldova so far: 1 win from 3, 3 scored, 4 conceded.",
+     "estilo": "excited",
+     "rate": "+16%",
+     "pitch": "+6%",
+     "pausa_ms": 300,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 28.4
+    },
+    {
+     "texto": "Hey hey hey!",
+     "estilo": "excited",
+     "rate": "+20%",
+     "pitch": "+6%",
+     "pausa_ms": 120,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 32.35
+    },
+    {
+     "texto": "Slovakia so far: 2 wins from 3, 5 scored, 2 conceded.",
+     "estilo": "excited",
+     "rate": "+12%",
+     "pitch": "+3%",
+     "pausa_ms": 300,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 33.43
+    },
+    {
+     "texto": "That's huge.",
+     "estilo": "cheerful",
+     "rate": "+4%",
+     "pitch": "+0%",
+     "pausa_ms": 450,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 37.51
+    },
+    {
+     "texto": "Look!",
+     "estilo": "excited",
+     "rate": "+20%",
+     "pitch": "+0%",
+     "pausa_ms": 250,
+     "pop": "LOOK",
+     "suspense": false,
+     "inicio_est_s": 38.69
+    },
+    {
+     "texto": "Watch Petru Popescu: player rating 6.9.",
+     "estilo": "excited",
+     "rate": "+20%",
+     "pitch": "+3%",
+     "pausa_ms": 250,
+     "pop": "6.9",
+     "suspense": false,
+     "inicio_est_s": 39.27
+    },
+    {
+     "texto": "6.9!",
+     "estilo": "shouting",
+     "rate": "+20%",
+     "pitch": "+6%",
+     "pausa_ms": 600,
+     "pop": "6.9",
+     "suspense": false,
+     "inicio_est_s": 41.44
+    },
+    {
+     "texto": "Numbers! I love numbers!",
+     "estilo": "cheerful",
+     "rate": "+20%",
+     "pitch": "+9%",
+     "pausa_ms": 300,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 42.36
+    },
+    {
+     "texto": "Watch D. Hancko: player rating 7.2.",
+     "estilo": "excited",
+     "rate": "+20%",
+     "pitch": "+6%",
+     "pausa_ms": 450,
+     "pop": "7.2",
+     "suspense": false,
+     "inicio_est_s": 43.94
+    }
+   ],
+   "estimado_s": 46.3,
+   "ssml": "<speak version=\"1.0\" xmlns=\"http://www.w3.org/2001/10/synthesis\" xml:lang=\"en-US\"><voice name=\"en-US-Andrew:DragonHDOmniLatestNeural\" parameters=\"temperature=1.0;top_p=0.9;top_k=40;cfg_scale=1.8\">Next! Stay with me, stay with me. Moldova against Slovakia! Tuesday, 19:45 UK time. Slovakia win this 67 percent of the time. Huge! The draw: 20 percent. Moldova: 13 percent. Boom. Expected goals: 0.7 for Moldova, 2.2 for Slovakia. Single most likely score: nil-two. Nil-two! Beautiful. Three goals or more? 53 percent. Here we go. Both teams scoring: 47 percent. Psst... Moldova so far: 1 win from 3, 3 scored, 4 conceded. Hey hey hey! Slovakia so far: 2 wins from 3, 5 scored, 2 conceded. That's huge. Look! Watch Petru Popescu: player rating 6.9. 6.9! Numbers! I love numbers! Watch D. Hancko: player rating 7.2.</voice></speak>",
+   "audio": "s25.mp3",
+   "duracion_s": 59.2
+  },
+  {
+   "id": "s26",
+   "fragmentos": [
+    {
+     "texto": "Oh my days.",
+     "estilo": "excited",
+     "rate": "+8%",
+     "pitch": "+3%",
+     "pausa_ms": 180,
+     "pop": "OH MY DAYS",
+     "suspense": false,
+     "inicio_est_s": 0.0
+    },
+    {
+     "texto": "FIFA ranking, Europe's top five in this Nations League.",
+     "estilo": "excited",
+     "rate": "+12%",
+     "pitch": "+3%",
+     "pausa_ms": 800,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 1.25
+    },
+    {
+     "texto": "Stop it.",
+     "estilo": "excited",
+     "rate": "+16%",
+     "pitch": "+9%",
+     "pausa_ms": 180,
+     "pop": "STOP IT",
+     "suspense": false,
+     "inicio_est_s": 5.14
+    },
+    {
+     "texto": "Number 1 in the world: Spain.",
+     "estilo": "excited",
+     "rate": "+4%",
+     "pitch": "+0%",
+     "pausa_ms": 600,
+     "pop": "Spain",
+     "suspense": false,
+     "inicio_est_s": 5.98
+    },
+    {
+     "texto": "Come on!",
+     "estilo": "excited",
+     "rate": "+16%",
+     "pitch": "+9%",
+     "pausa_ms": 320,
+     "pop": "COME ON",
+     "suspense": false,
+     "inicio_est_s": 8.8
+    },
+    {
+     "texto": "Number 3 in the world: France.",
+     "estilo": "excited",
+     "rate": "+8%",
+     "pitch": "+0%",
+     "pausa_ms": 250,
+     "pop": "France",
+     "suspense": false,
+     "inicio_est_s": 9.78
+    },
+    {
+     "texto": "France!",
+     "estilo": "shouting",
+     "rate": "+16%",
+     "pitch": "+3%",
+     "pausa_ms": 600,
+     "pop": "France",
+     "suspense": false,
+     "inicio_est_s": 12.17
+    },
+    {
+     "texto": "Number 4 in the world: England.",
+     "estilo": "excited",
+     "rate": "+16%",
+     "pitch": "+3%",
+     "pausa_ms": 180,
+     "pop": "England",
+     "suspense": false,
+     "inicio_est_s": 13.1
+    },
+    {
+     "texto": "England!",
+     "estilo": "shouting",
+     "rate": "+12%",
+     "pitch": "+3%",
+     "pausa_ms": 250,
+     "pop": "England",
+     "suspense": false,
+     "inicio_est_s": 15.27
+    },
+    {
+     "texto": "Chef's kiss.",
+     "estilo": "cheerful",
+     "rate": "+4%",
+     "pitch": "+9%",
+     "pausa_ms": 450,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 15.87
+    },
+    {
+     "texto": "Wow.",
+     "estilo": "excited",
+     "rate": "+20%",
+     "pitch": "+9%",
+     "pausa_ms": 180,
+     "pop": "WOW",
+     "suspense": false,
+     "inicio_est_s": 17.05
+    },
+    {
+     "texto": "Number 7 in the world: Portugal.",
+     "estilo": "excited",
+     "rate": "+8%",
+     "pitch": "+6%",
+     "pausa_ms": 450,
+     "pop": "Portugal",
+     "suspense": false,
+     "inicio_est_s": 17.56
+    },
+    {
+     "texto": "Chef's kiss.",
+     "estilo": "cheerful",
+     "rate": "+16%",
+     "pitch": "+6%",
+     "pausa_ms": 300,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 20.14
+    },
+    {
+     "texto": "Number 8 in the world: Belgium.",
+     "estilo": "excited",
+     "rate": "+4%",
+     "pitch": "+0%",
+     "pausa_ms": 180,
+     "pop": "Belgium",
+     "suspense": false,
+     "inicio_est_s": 21.11
+    },
+    {
+     "texto": "That's wild.",
+     "estilo": "cheerful",
+     "rate": "+8%",
+     "pitch": "+6%",
+     "pausa_ms": 450,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 23.5
+    },
+    {
+     "texto": "Keep scrolling with me. More coming. So much more.",
+     "estilo": "cheerful",
+     "rate": "+4%",
+     "pitch": "+9%",
+     "pausa_ms": 600,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 24.67
+    }
+   ],
+   "estimado_s": 28.6,
+   "ssml": "<speak version=\"1.0\" xmlns=\"http://www.w3.org/2001/10/synthesis\" xml:lang=\"en-US\"><voice name=\"en-US-Andrew:DragonHDOmniLatestNeural\" parameters=\"temperature=1.0;top_p=0.9;top_k=40;cfg_scale=1.8\">Oh my days. FIFA ranking, Europe's top five in this Nations League. Stop it. Number 1 in the world: Spain. Come on! Number 3 in the world: France. France! Number 4 in the world: England. England! Chef's kiss. Wow. Number 7 in the world: Portugal. Chef's kiss. Number 8 in the world: Belgium. That's wild. Keep scrolling with me. More coming. So much more.</voice></speak>",
+   "audio": "s26.mp3",
+   "duracion_s": 36.86
+  },
+  {
+   "id": "s27",
+   "fragmentos": [
+    {
+     "texto": "Let's go, next!",
+     "estilo": "excited",
+     "rate": "+4%",
+     "pitch": "+0%",
+     "pausa_ms": 450,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 0.0
+    },
+    {
+     "texto": "Okay, breathe, Blitz. Breathe.",
+     "estilo": "cheerful",
+     "rate": "+8%",
+     "pitch": "+9%",
+     "pausa_ms": 450,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 1.56
+    },
+    {
+     "texto": "Scotland against Slovenia! Tuesday, 19:45 UK time.",
+     "estilo": "excited",
+     "rate": "+16%",
+     "pitch": "+0%",
+     "pausa_ms": 300,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 3.43
+    },
+    {
+     "texto": "Scotland win this 54 percent of the time.",
+     "estilo": "excited",
+     "rate": "+4%",
+     "pitch": "+9%",
+     "pausa_ms": 180,
+     "pop": "54 percent",
+     "suspense": false,
+     "inicio_est_s": 6.05
+    },
+    {
+     "texto": "Ridiculous.",
+     "estilo": "cheerful",
+     "rate": "+20%",
+     "pitch": "+3%",
+     "pausa_ms": 600,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 9.19
+    },
+    {
+     "texto": "Where was I? Oh yes. Football.",
+     "estilo": "cheerful",
+     "rate": "+20%",
+     "pitch": "+9%",
+     "pausa_ms": 450,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 10.11
+    },
+    {
+     "texto": "The draw: 27 percent. Slovenia: 20 percent.",
+     "estilo": "excited",
+     "rate": "+4%",
+     "pitch": "+6%",
+     "pausa_ms": 450,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 12.49
+    },
+    {
+     "texto": "Expected goals: 1.4 for Scotland, 0.9 for Slovenia.",
+     "estilo": "excited",
+     "rate": "+8%",
+     "pitch": "+0%",
+     "pausa_ms": 600,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 15.53
+    },
+    {
+     "texto": "Wait.",
+     "estilo": "excited",
+     "rate": "+8%",
+     "pitch": "+0%",
+     "pausa_ms": 320,
+     "pop": "WAIT",
+     "suspense": false,
+     "inicio_est_s": 18.97
+    },
+    {
+     "texto": "Single most likely score: one-nil.",
+     "estilo": "excited",
+     "rate": "+12%",
+     "pitch": "+0%",
+     "pausa_ms": 600,
+     "pop": "one-nil",
+     "suspense": false,
+     "inicio_est_s": 19.65
+    },
+    {
+     "texto": "Three goals or more? 42 percent.",
+     "estilo": "excited",
+     "rate": "+12%",
+     "pitch": "+9%",
+     "pausa_ms": 600,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 21.97
+    },
+    {
+     "texto": "This is the best part of my day. Every day.",
+     "estilo": "cheerful",
+     "rate": "+12%",
+     "pitch": "+3%",
+     "pausa_ms": 450,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 24.63
+    },
+    {
+     "texto": "Both teams scoring: 44 percent.",
+     "estilo": "excited",
+     "rate": "+8%",
+     "pitch": "+9%",
+     "pausa_ms": 800,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 28.51
+    },
+    {
+     "texto": "Scotland so far: 1 win from 3, 2 scored, 3 conceded.",
+     "estilo": "excited",
+     "rate": "+4%",
+     "pitch": "+3%",
+     "pausa_ms": 800,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 31.09
+    },
+    {
+     "texto": "Slovenia so far: 1 win from 3, 3 scored, 2 conceded.",
+     "estilo": "excited",
+     "rate": "+4%",
+     "pitch": "+0%",
+     "pausa_ms": 300,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 35.96
+    },
+    {
+     "texto": "Watch Lewis Ferguson: player rating 7.1.",
+     "estilo": "excited",
+     "rate": "+16%",
+     "pitch": "+6%",
+     "pausa_ms": 320,
+     "pop": "7.1",
+     "suspense": false,
+     "inicio_est_s": 40.33
+    },
+    {
+     "texto": "Numbers don't lie.",
+     "estilo": "cheerful",
+     "rate": "+20%",
+     "pitch": "+6%",
+     "pausa_ms": 450,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 42.64
+    },
+    {
+     "texto": "Watch J. Oblak: player rating 7.0.",
+     "estilo": "excited",
+     "rate": "+12%",
+     "pitch": "+0%",
+     "pausa_ms": 320,
+     "pop": "7.0",
+     "suspense": false,
+     "inicio_est_s": 44.05
+    },
+    {
+     "texto": "Spicy.",
+     "estilo": "cheerful",
+     "rate": "+4%",
+     "pitch": "+3%",
+     "pausa_ms": 600,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 46.43
+    }
+   ],
+   "estimado_s": 47.4,
+   "ssml": "<speak version=\"1.0\" xmlns=\"http://www.w3.org/2001/10/synthesis\" xml:lang=\"en-US\"><voice name=\"en-US-Andrew:DragonHDOmniLatestNeural\" parameters=\"temperature=1.0;top_p=0.9;top_k=40;cfg_scale=1.8\">Let's go, next! Okay, breathe, Blitz. Breathe. Scotland against Slovenia! Tuesday, 19:45 UK time. Scotland win this 54 percent of the time. Ridiculous. Where was I? Oh yes. Football. The draw: 27 percent. Slovenia: 20 percent. Expected goals: 1.4 for Scotland, 0.9 for Slovenia. Wait. Single most likely score: one-nil. Three goals or more? 42 percent. This is the best part of my day. Every day. Both teams scoring: 44 percent. Scotland so far: 1 win from 3, 2 scored, 3 conceded. Slovenia so far: 1 win from 3, 3 scored, 2 conceded. Watch Lewis Ferguson: player rating 7.1. Numbers don't lie. Watch J. Oblak: player rating 7.0. Spicy.</voice></speak>",
+   "audio": "s27.mp3",
+   "duracion_s": 68.13
+  },
+  {
+   "id": "s28",
+   "fragmentos": [
+    {
+     "texto": "And now...",
+     "estilo": "excited",
+     "rate": "+16%",
+     "pitch": "+0%",
+     "pausa_ms": 800,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 0.0
+    },
+    {
+     "texto": "Whoa.",
+     "estilo": "excited",
+     "rate": "+16%",
+     "pitch": "+0%",
+     "pausa_ms": 250,
+     "pop": "WHOA",
+     "suspense": false,
+     "inicio_est_s": 1.46
+    },
+    {
+     "texto": "Switzerland against North Macedonia! Tuesday, 19:45 UK time.",
+     "estilo": "excited",
+     "rate": "+20%",
+     "pitch": "+6%",
+     "pausa_ms": 300,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 2.04
+    },
+    {
+     "texto": "Look at this!",
+     "estilo": "excited",
+     "rate": "+16%",
+     "pitch": "+0%",
+     "pausa_ms": 320,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 4.91
+    },
+    {
+     "texto": "Switzerland win this 86 percent of the time.",
+     "estilo": "excited",
+     "rate": "+8%",
+     "pitch": "+3%",
+     "pausa_ms": 450,
+     "pop": "86 percent",
+     "suspense": false,
+     "inicio_est_s": 6.22
+    },
+    {
+     "texto": "The draw: 10 percent. North Macedonia: 4 percent.",
+     "estilo": "excited",
+     "rate": "+16%",
+     "pitch": "+6%",
+     "pausa_ms": 450,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 9.52
+    },
+    {
+     "texto": "Where was I? Oh yes. Football.",
+     "estilo": "cheerful",
+     "rate": "+16%",
+     "pitch": "+6%",
+     "pausa_ms": 600,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 12.63
+    },
+    {
+     "texto": "Ha!",
+     "estilo": "excited",
+     "rate": "+4%",
+     "pitch": "+3%",
+     "pausa_ms": 250,
+     "pop": "HA",
+     "suspense": false,
+     "inicio_est_s": 15.21
+    },
+    {
+     "texto": "That is not a match, that's a mismatch.",
+     "estilo": "excited",
+     "rate": "+12%",
+     "pitch": "+6%",
+     "pausa_ms": 180,
+     "pop": "mismatch",
+     "suspense": false,
+     "inicio_est_s": 15.83
+    },
+    {
+     "texto": "Mismatch!",
+     "estilo": "shouting",
+     "rate": "+16%",
+     "pitch": "+0%",
+     "pausa_ms": 450,
+     "pop": "mismatch",
+     "suspense": false,
+     "inicio_est_s": 18.76
+    },
+    {
+     "texto": "Tap follow if numbers make you happy too.",
+     "estilo": "cheerful",
+     "rate": "+16%",
+     "pitch": "+0%",
+     "pausa_ms": 600,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 19.54
+    },
+    {
+     "texto": "Okay okay okay.",
+     "estilo": "excited",
+     "rate": "+20%",
+     "pitch": "+6%",
+     "pausa_ms": 120,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 22.8
+    },
+    {
+     "texto": "Expected goals: 3.0 for Switzerland, 0.5 for North Macedonia.",
+     "estilo": "excited",
+     "rate": "+16%",
+     "pitch": "+6%",
+     "pausa_ms": 600,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 23.88
+    },
+    {
+     "texto": "Single most likely score: two-nil.",
+     "estilo": "excited",
+     "rate": "+12%",
+     "pitch": "+6%",
+     "pausa_ms": 180,
+     "pop": "two-nil",
+     "suspense": false,
+     "inicio_est_s": 27.46
+    },
+    {
+     "texto": "Two-nil!",
+     "estilo": "shouting",
+     "rate": "+20%",
+     "pitch": "+3%",
+     "pausa_ms": 600,
+     "pop": "two-nil",
+     "suspense": false,
+     "inicio_est_s": 29.36
+    },
+    {
+     "texto": "Look!",
+     "estilo": "excited",
+     "rate": "+12%",
+     "pitch": "+0%",
+     "pausa_ms": 120,
+     "pop": "LOOK",
+     "suspense": false,
+     "inicio_est_s": 30.28
+    },
+    {
+     "texto": "Three goals or more? 67 percent.",
+     "estilo": "excited",
+     "rate": "+16%",
+     "pitch": "+9%",
+     "pausa_ms": 800,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 30.74
+    },
+    {
+     "texto": "Both teams scoring: 35 percent.",
+     "estilo": "excited",
+     "rate": "+4%",
+     "pitch": "+0%",
+     "pausa_ms": 800,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 33.53
+    },
+    {
+     "texto": "If you're just joining: hi! Football data, all night, no brakes.",
+     "estilo": "cheerful",
+     "rate": "+16%",
+     "pitch": "+6%",
+     "pausa_ms": 600,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 36.18
+    },
+    {
+     "texto": "Switzerland so far: 3 wins from 3, 8 scored, 1 conceded.",
+     "estilo": "excited",
+     "rate": "+16%",
+     "pitch": "+3%",
+     "pausa_ms": 800,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 40.43
+    },
+    {
+     "texto": "North Macedonia so far: 0 wins from 3, 0 scored, 7 conceded.",
+     "estilo": "excited",
+     "rate": "+4%",
+     "pitch": "+3%",
+     "pausa_ms": 800,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 44.88
+    },
+    {
+     "texto": "Numbers! I love numbers!",
+     "estilo": "cheerful",
+     "rate": "+8%",
+     "pitch": "+6%",
+     "pausa_ms": 800,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 50.11
+    },
+    {
+     "texto": "Watch Z. Amdouni: player rating 7.4.",
+     "estilo": "excited",
+     "rate": "+12%",
+     "pitch": "+9%",
+     "pausa_ms": 320,
+     "pop": "7.4",
+     "suspense": false,
+     "inicio_est_s": 52.34
+    },
+    {
+     "texto": "7.4!",
+     "estilo": "shouting",
+     "rate": "+8%",
+     "pitch": "+0%",
+     "pausa_ms": 120,
+     "pop": "7.4",
+     "suspense": false,
+     "inicio_est_s": 54.72
+    },
+    {
+     "texto": "Huge!",
+     "estilo": "cheerful",
+     "rate": "+8%",
+     "pitch": "+9%",
+     "pausa_ms": 450,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 55.19
+    },
+    {
+     "texto": "Brace yourself.",
+     "estilo": "whispering",
+     "rate": "+20%",
+     "pitch": "+3%",
+     "pausa_ms": 800,
+     "pop": null,
+     "suspense": true,
+     "inicio_est_s": 56.0
+    },
+    {
+     "texto": "Watch S. Dimitrievski: player rating 6.8.",
+     "estilo": "excited",
+     "rate": "+4%",
+     "pitch": "+3%",
+     "pausa_ms": 250,
+     "pop": "6.8",
+     "suspense": false,
+     "inicio_est_s": 57.44
+    },
+    {
+     "texto": "That's wild.",
+     "estilo": "cheerful",
+     "rate": "+4%",
+     "pitch": "+3%",
+     "pausa_ms": 600,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 59.91
+    }
+   ],
+   "estimado_s": 61.2,
+   "ssml": "<speak version=\"1.0\" xmlns=\"http://www.w3.org/2001/10/synthesis\" xml:lang=\"en-US\"><voice name=\"en-US-Andrew:DragonHDOmniLatestNeural\" parameters=\"temperature=1.0;top_p=0.9;top_k=40;cfg_scale=1.8\">And now... Whoa. Switzerland against North Macedonia! Tuesday, 19:45 UK time. Look at this! Switzerland win this 86 percent of the time. The draw: 10 percent. North Macedonia: 4 percent. Where was I? Oh yes. Football. Ha! That is not a match, that's a mismatch. Mismatch! Tap follow if numbers make you happy too. Okay okay okay. Expected goals: 3.0 for Switzerland, 0.5 for North Macedonia. Single most likely score: two-nil. Two-nil! Look! Three goals or more? 67 percent. Both teams scoring: 35 percent. If you're just joining: hi! Football data, all night, no brakes. Switzerland so far: 3 wins from 3, 8 scored, 1 conceded. North Macedonia so far: 0 wins from 3, 0 scored, 7 conceded. Numbers! I love numbers! Watch Z. Amdouni: player rating 7.4. 7.4! Huge! Brace yourself... Watch S. Dimitrievski: player rating 6.8. That's wild.</voice></speak>",
+   "audio": "s28.mp3",
+   "duracion_s": 81.23
+  },
+  {
+   "id": "s29",
+   "fragmentos": [
+    {
+     "texto": "Hold on.",
+     "estilo": "excited",
+     "rate": "+8%",
+     "pitch": "+9%",
+     "pausa_ms": 120,
+     "pop": "HOLD ON",
+     "suspense": false,
+     "inicio_est_s": 0.0
+    },
+    {
+     "texto": "That's the full board! Every match, every number.",
+     "estilo": "excited",
+     "rate": "+4%",
+     "pitch": "+0%",
+     "pausa_ms": 600,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 0.83
+    },
+    {
+     "texto": "If you're just joining: hi! Football data, all night, no brakes.",
+     "estilo": "cheerful",
+     "rate": "+4%",
+     "pitch": "+3%",
+     "pausa_ms": 800,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 4.39
+    },
+    {
+     "texto": "Boom.",
+     "estilo": "excited",
+     "rate": "+16%",
+     "pitch": "+6%",
+     "pausa_ms": 180,
+     "pop": "BOOM",
+     "suspense": false,
+     "inicio_est_s": 9.26
+    },
+    {
+     "texto": "All of it worked out by our AI model. I'll be right back, from the top. Stay, stay, stay!",
+     "estilo": "excited",
+     "rate": "+20%",
+     "pitch": "+9%",
+     "pausa_ms": 800,
+     "pop": null,
+     "suspense": false,
+     "inicio_est_s": 9.77
+    }
+   ],
+   "estimado_s": 16.7,
+   "ssml": "<speak version=\"1.0\" xmlns=\"http://www.w3.org/2001/10/synthesis\" xml:lang=\"en-US\"><voice name=\"en-US-Andrew:DragonHDOmniLatestNeural\" parameters=\"temperature=1.0;top_p=0.9;top_k=40;cfg_scale=1.8\">Hold on. That's the full board! Every match, every number. If you're just joining: hi! Football data, all night, no brakes. Boom. All of it worked out by our AI model. I'll be right back, from the top. Stay, stay, stay!</voice></speak>",
+   "audio": "s29.mp3",
+   "duracion_s": 19.0
+  }
+ ],
+ "duracion_total_s": 1783.2
+}

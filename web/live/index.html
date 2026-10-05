@@ -1,3 +1,15 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#101624">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Blitz Live">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
 <title>Blitz Matchday Live</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;800;900&family=Archivo:wght@500;700&family=Martian+Mono:wght@500;700&display=swap">
@@ -112,6 +124,14 @@ h2 { font-family: var(--f-display); font-weight: 800; font-size: 1.6rem; margin:
   transform: translate(-50%, -50%) rotate(var(--r)); animation: pop 1.6s cubic-bezier(.2,1.4,.4,1) forwards; box-shadow: 0 8px 0 rgba(0,0,0,.4); max-width: 92%; overflow: hidden; text-overflow: ellipsis; }
 .pop.alt { background: var(--chalk); }
 
+/* call to action */
+.cta { display: flex; align-items: center; gap: 10px; background: var(--card); color: var(--night); margin-inline: -16px; padding: 9px 16px;
+  font-family: var(--f-display); font-weight: 800; font-size: clamp(1rem, 4.6vw, 1.35rem); text-transform: uppercase; letter-spacing: .01em; line-height: 1; white-space: nowrap; }
+.cta b { font-weight: 900; margin-left: auto; font-size: 1.5rem; text-transform: none; letter-spacing: 0; }
+.cta .mini-card { width: 14px; height: 19px; border-radius: 2px; background: var(--night); transform: rotate(-8deg); flex: none; }
+.cta.nudge { animation: nudge .9s cubic-bezier(.2,1.6,.4,1); }
+@keyframes nudge { 30% { transform: scale(1.04); } 60% { transform: scale(.99); } }
+
 /* ticker */
 .ticker { border-top: 2px solid var(--card); overflow: hidden; white-space: nowrap; font-family: var(--f-data); font-size: .72rem;
   padding-block: 9px calc(9px + env(safe-area-inset-bottom, 0px)); margin-inline: -16px; }
@@ -136,7 +156,8 @@ h2 { font-family: var(--f-display); font-weight: 800; font-size: 1.6rem; margin:
 @keyframes look { 0%, 40%, 100% { transform: translateX(0) } 45%, 60% { transform: translateX(3px) } 65%, 80% { transform: translateX(-3px) } }
 @media (prefers-reduced-motion: reduce) { .in > *, .pop, .ticker .track, .blitz .eye { animation-duration: .01s !important; animation-iteration-count: 1 !important; } }
 </style>
-
+</head>
+<body>
 <div class="stage">
   <div class="bar"><span class="live">Live</span><span class="ai">AI-powered data</span><span class="grow"></span><span class="clock" id="clock">--:--</span></div>
   <div class="host">
@@ -145,6 +166,7 @@ h2 { font-family: var(--f-display); font-weight: 800; font-size: 1.6rem; margin:
   </div>
   <div class="progress"><i id="prog"></i></div>
   <main class="board" id="board"></main>
+  <div class="cta" id="cta"><span class="mini-card" aria-hidden="true"></span><span>Full predictions</span><b>@2yellowdata</b></div>
   <div class="ticker"><div class="track" id="ticker"></div></div>
 </div>
 <div class="pops" id="pops"></div>
@@ -155,6 +177,7 @@ h2 { font-family: var(--f-display); font-weight: 800; font-size: 1.6rem; margin:
     <p>Start the TikTok screen share first, then tap Go. Blitz talks through every match on his own and loops from the top.</p>
     <button id="go" type="button">Go live</button>
     <small id="status">Loading data…</small>
+    <small>Full predictions: @2yellowdata</small>
   </div>
 </div>
 
@@ -206,7 +229,7 @@ const R = {
     return `<div class="group"><div class="eyebrow">League ${g}</div>${t.filas.slice(0, 2).map(f => `<div><span>${esc(f.equipo)}</span><b>${f.pts}</b></div>`).join("")}</div>`; }).join("")}</div>`; },
   ranking: d => `<div class="eyebrow">FIFA world ranking</div><h1>Europe's elite</h1><div class="rows">${d.equipos.map(p => `
     <div class="row">${code(p.cod)}<span class="who">${esc(p.equipo)}</span><span class="num">#${p.puesto}</span></div>`).join("")}</div>`,
-  cierre: () => `<div class="eyebrow">Back to the top</div><h1>Stay, stay, stay!</h1><div class="giant">↻</div>`
+  cierre: () => `<div class="eyebrow">Back to the top</div><h1>Full predictions at</h1><div class="giant" style="font-size:clamp(3rem,15vw,5rem)">@2yellowdata</div>`
 };
 
 function render(s) {
@@ -280,9 +303,17 @@ function mouthLoop() {
   })();
 }
 
+async function pantallaCompleta() {
+  const el = document.documentElement;
+  if (document.fullscreenElement || document.webkitFullscreenElement) return;
+  try { await (el.requestFullscreen || el.webkitRequestFullscreen)?.call(el, {navigationUI: "hide"}); } catch (e) {}
+}
+document.addEventListener("click", e => { if (e.target.id !== "go") pantallaCompleta(); });
+setInterval(() => { const c = $("#cta"); c.classList.remove("nudge"); void c.offsetWidth; c.classList.add("nudge"); }, 20000);
+
 async function start() {
   $("#gate").hidden = true;
-  try { await document.documentElement.requestFullscreen?.(); } catch (e) {}
+  await pantallaCompleta();
   try { await navigator.wakeLock?.request("screen"); } catch (e) {}
   try {
     const ctx = new (window.AudioContext || window.webkitAudioContext)();
@@ -302,7 +333,7 @@ function ticker() {
     if (s.tipo === "partido") items.push(`<span>${esc(d.dia.slice(0, 3))} ${d.hora_uk} · <b>${esc(d.local)}</b> ${d.p1}% · draw ${d.px}% · <b>${esc(d.visitante)}</b> ${d.p2}%</span>`);
     if (s.tipo === "resultados") d.partidos.forEach(p => items.push(`<span>FT · ${esc(p.local)} <b>${p.gl}–${p.gv}</b> ${esc(p.visitante)}</span>`));
   }
-  $("#ticker").innerHTML = items.join("") + "<span>Probabilities and ratings by our AI model · statistics only</span>";
+  $("#ticker").innerHTML = items.join("") + "<span>Probabilities and ratings by our AI model · statistics only</span><span>Full predictions: <b>@2yellowdata</b></span>";
 }
 
 setInterval(() => { $("#clock").textContent = new Date().toLocaleTimeString([], {hour: "2-digit", minute: "2-digit"}); }, 1000);
@@ -325,3 +356,5 @@ setInterval(() => { $("#clock").textContent = new Date().toLocaleTimeString([], 
 })();
 $("#go").addEventListener("click", start);
 </script>
+</body>
+</html>
