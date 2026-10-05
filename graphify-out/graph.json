@@ -566,7 +566,7 @@
       "file_type": "code",
       "norm_label": "preguntar()",
       "source_file": "scripts/llm_gratis.py",
-      "source_location": "L32"
+      "source_location": "L33"
     },
     {
       "id": "scripts_nba_totales_primera_prueba_a_api",
@@ -7775,7 +7775,7 @@
       "node_kind": "heading",
       "norm_label": "29/09/2026",
       "source_file": "BITACORA.md",
-      "source_location": "L35"
+      "source_location": "L36"
     },
     {
       "id": "bitacora_antes_del_29_09_2026_resumen_el_detalle_est\u00e1_en_los_claude_md",
@@ -7787,7 +7787,7 @@
       "node_kind": "heading",
       "norm_label": "antes del 29/09/2026 (resumen; el detalle esta en los claude.md)",
       "source_file": "BITACORA.md",
-      "source_location": "L118"
+      "source_location": "L119"
     },
     {
       "id": "bitacora_bit\u00e1cora_del_proyecto",
@@ -7814,7 +7814,7 @@
       "source_location": "L24"
     },
     {
-      "id": "bitacora_cambios_de_c\u00f3digo_y_ficheros_37",
+      "id": "bitacora_cambios_de_c\u00f3digo_y_ficheros_38",
       "label": "Cambios de c\u00f3digo y ficheros",
       "_origin": "ast",
       "community": 10,
@@ -7823,7 +7823,7 @@
       "node_kind": "heading",
       "norm_label": "cambios de codigo y ficheros",
       "source_file": "BITACORA.md",
-      "source_location": "L37"
+      "source_location": "L38"
     },
     {
       "id": "bitacora_comprobaciones_hechas_en_la_revisi\u00f3n_de_c\u00f3digo_sin_cambios",
@@ -7835,7 +7835,7 @@
       "node_kind": "heading",
       "norm_label": "comprobaciones hechas en la revision de codigo (sin cambios)",
       "source_file": "BITACORA.md",
-      "source_location": "L70"
+      "source_location": "L71"
     },
     {
       "id": "bitacora_errores_en_los_datos_encontrados",
@@ -7847,7 +7847,7 @@
       "node_kind": "heading",
       "norm_label": "errores en los datos encontrados",
       "source_file": "BITACORA.md",
-      "source_location": "L100"
+      "source_location": "L101"
     },
     {
       "id": "bitacora_fuera_del_c\u00f3digo_maquetas_de_app_sin_cambios_en_el_repositorio",
@@ -7859,7 +7859,7 @@
       "node_kind": "heading",
       "norm_label": "fuera del codigo: maquetas de app (sin cambios en el repositorio)",
       "source_file": "BITACORA.md",
-      "source_location": "L89"
+      "source_location": "L90"
     },
     {
       "id": "bitacora_ideas_probadas",
@@ -7871,7 +7871,7 @@
       "node_kind": "heading",
       "norm_label": "ideas probadas",
       "source_file": "BITACORA.md",
-      "source_location": "L57"
+      "source_location": "L58"
     },
     {
       "id": "bitacora_pendiente_ideas_sin_probar",
@@ -7883,7 +7883,7 @@
       "node_kind": "heading",
       "norm_label": "pendiente / ideas sin probar",
       "source_file": "BITACORA.md",
-      "source_location": "L109"
+      "source_location": "L110"
     },
     {
       "id": "modelos_ambos_marcan_claude_auditor\u00eda_externa_29_09_2026_pruebas_de_los_puntos_aceptados",
@@ -16620,6 +16620,30 @@
       "type": "external"
     },
     {
+      "id": "urllib_error",
+      "label": "urllib_error",
+      "_origin": "semantic",
+      "community": 1,
+      "community_name": "json",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "urllib_error",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "urllib_request",
+      "label": "urllib_request",
+      "_origin": "semantic",
+      "community": 1,
+      "community_name": "json",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "urllib_request",
+      "source_file": "",
+      "type": "external"
+    },
+    {
       "id": "scipy_optimize",
       "label": "scipy_optimize",
       "_origin": "semantic",
@@ -16952,28 +16976,6 @@
       "external": true,
       "file_type": "concept",
       "norm_label": "datetime",
-      "source_file": "",
-      "type": "external"
-    },
-    {
-      "id": "urllib_error",
-      "label": "urllib_error",
-      "community": 1,
-      "community_name": "json",
-      "external": true,
-      "file_type": "concept",
-      "norm_label": "urllib_error",
-      "source_file": "",
-      "type": "external"
-    },
-    {
-      "id": "urllib_request",
-      "label": "urllib_request",
-      "community": 1,
-      "community_name": "json",
-      "external": true,
-      "file_type": "concept",
-      "norm_label": "urllib_request",
       "source_file": "",
       "type": "external"
     }
@@ -27548,7 +27550,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "scripts/llm_gratis.py",
-      "source_location": "L35",
+      "source_location": "L36",
       "weight": 1.0
     },
     {
@@ -41087,7 +41089,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "BITACORA.md",
-      "source_location": "L100",
+      "source_location": "L101",
       "weight": 1.0
     },
     {
@@ -41098,18 +41100,18 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "BITACORA.md",
-      "source_location": "L109",
+      "source_location": "L110",
       "weight": 1.0
     },
     {
       "source": "bitacora_29_09_2026",
-      "target": "bitacora_cambios_de_c\u00f3digo_y_ficheros_37",
+      "target": "bitacora_cambios_de_c\u00f3digo_y_ficheros_38",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "BITACORA.md",
-      "source_location": "L37",
+      "source_location": "L38",
       "weight": 1.0
     },
     {
@@ -41120,7 +41122,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "BITACORA.md",
-      "source_location": "L57",
+      "source_location": "L58",
       "weight": 1.0
     },
     {
@@ -41131,7 +41133,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "BITACORA.md",
-      "source_location": "L70",
+      "source_location": "L71",
       "weight": 1.0
     },
     {
@@ -41142,7 +41144,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "BITACORA.md",
-      "source_location": "L89",
+      "source_location": "L90",
       "weight": 1.0
     },
     {
@@ -41153,7 +41155,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "BITACORA.md",
-      "source_location": "L118",
+      "source_location": "L119",
       "weight": 1.0
     },
     {
@@ -41175,7 +41177,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "BITACORA.md",
-      "source_location": "L35",
+      "source_location": "L36",
       "weight": 1.0
     },
     {
@@ -48963,7 +48965,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "scripts/llm_gratis.py",
-      "source_location": "L32",
+      "source_location": "L33",
       "weight": 1.0
     },
     {
@@ -54305,7 +54307,7 @@
       "weight": 1.0
     },
     {
-      "source": "bitacora_cambios_de_c\u00f3digo_y_ficheros_37",
+      "source": "bitacora_cambios_de_c\u00f3digo_y_ficheros_38",
       "target": "scripts_btts_implicito_ajustar",
       "relation": "references",
       "_origin": "ast",
@@ -54313,7 +54315,7 @@
       "confidence_score": 0.95,
       "context": "btts_implicito.ajustar",
       "source_file": "BITACORA.md",
-      "source_location": "L53",
+      "source_location": "L54",
       "weight": 1.0
     },
     {
@@ -54389,7 +54391,7 @@
       "weight": 1.0
     },
     {
-      "source": "bitacora_cambios_de_c\u00f3digo_y_ficheros_37",
+      "source": "bitacora_cambios_de_c\u00f3digo_y_ficheros_38",
       "target": "scripts_ambos_marcan_hoy_pronosticar",
       "relation": "references",
       "_origin": "ast",
@@ -54397,7 +54399,7 @@
       "confidence_score": 0.95,
       "context": "pronosticar",
       "source_file": "BITACORA.md",
-      "source_location": "L50",
+      "source_location": "L51",
       "weight": 1.0
     },
     {
@@ -54409,7 +54411,7 @@
       "confidence_score": 0.95,
       "context": "pronosticar",
       "source_file": "BITACORA.md",
-      "source_location": "L77",
+      "source_location": "L78",
       "weight": 1.0
     },
     {
@@ -54450,5 +54452,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "349db4cc57ad4af1030186e4bb114e624763c771"
+  "built_at_commit": "9f496b834baa70cbd30b5487b2378441aca5438a"
 }
