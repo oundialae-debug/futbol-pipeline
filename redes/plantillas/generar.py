@@ -7,7 +7,7 @@ y la pregunta final. Cinco de previo y cinco de postpartido.
 Zona segura de TikTok: nada a menos de 185 px arriba, 380 abajo, 140 a la derecha
 (--guias la dibuja). Sin API: solo datos que ya estén en disco.
 """
-import argparse, base64, html, json, re
+import argparse, base64, html, json, os, re
 from pathlib import Path
 
 AQUI = Path(__file__).resolve().parent
@@ -160,10 +160,12 @@ def pagina(d, kicker, cuerpo, pregunta):
             f'<div class="kick">{e(kicker)}</div><div class="cuerpo">{cuerpo}</div>'
             f'<div class="q">{e(d.get("question", pregunta))}</div>'
             f'<div class="pie" style="display:flex;justify-content:space-between;align-items:center"><span>{e(pie)}</span>'
-            f'{SWIPE if d["template"] not in SIN_SWIPE and d.get("swipe", True) else ""}</div></div></div></body></html>')
+            f'{SWIPE if CARRUSEL and d["template"] not in SIN_SWIPE and d.get("swipe", True) else ""}</div></div></div></body></html>')
 
 
-# Aviso de "hay más": en todas menos en la última del carrusel y en las del perfil.
+# Aviso de "hay más": SOLO en carrusel (CARRUSEL=1 en el entorno), en todas menos en la última y en las del perfil.
+# En vídeo no hay nada que deslizar (usuario, 06/10).
+CARRUSEL = os.environ.get("CARRUSEL") == "1"
 SIN_SWIPE = {"follow", "our_calls", "picks_list", "head_to_head", "ranking"}
 SWIPE = (f'<span style="display:inline-flex;align-items:center;gap:10px;background:{AMARILLO};color:{NOCHE};'
          f'border-radius:999px;padding:8px 22px;font-size:34px;font-weight:900;font-stretch:85%">Swipe'
@@ -402,7 +404,7 @@ def follow(d):
            f'<div class="disp" style="font-size:150px;line-height:.7;letter-spacing:-18px">{flechas}</div></div>')
     cuerpo = (badge + vs(h, a) + oculto
               + f'<div class="frase" style="text-align:center">{e(d.get("text", "Our call is on our profile."))}</div>' + cta)
-    return pagina(d, d.get("kicker", "Next up"), cuerpo, d.get("question", "Swipe. Follow. Don’t miss it."))
+    return pagina(d, d.get("kicker", "Next up"), cuerpo, d.get("question", "Follow. Don’t miss it."))
 
 
 def our_calls(d):
@@ -426,9 +428,8 @@ def our_calls(d):
                      f'<div style="display:flex;align-items:baseline;gap:22px"><div class="num" style="font-size:150px;color:{col}">{p[i]}%</div>'
                      f'<div class="frase" style="font-size:52px">{e(quien)}</div></div>'
                      f'<div class="barra" style="height:22px">{seg}</div>'
-                     f'<div style="display:flex;justify-content:space-between" class="mini">'
-                     f'<span>Score: <b style="color:#F1F3F8">{m["score"][0]}–{m["score"][1]}</b></span>'
-                     f'<span>{e(nombre_mercado(mk, h["short"], a["short"]))}: <b style="color:#F1F3F8">{round(pc * 100)}%</b></span></div></div>')
+                     f'<div class="mini">{e(nombre_mercado(mk, h["short"], a["short"]))}: '
+                     f'<b style="color:#F1F3F8">{round(pc * 100)}%</b></div></div>')  # sin "Score" (usuario 06/10: chocaba con el over)
     cuerpo = f'<div class="frase" style="font-size:70px">{e(d.get("title", "Our calls"))}</div>' + tarjetas
     return pagina(d, d.get("kicker", "Unlocked"), cuerpo, d.get("question", "Who are you backing?"))
 
@@ -473,6 +474,8 @@ def head_to_head(d):
     """Dos equipos o jugadores frente a frente: 4-6 filas, la cifra mejor en su color y la peor en gris.
     stats: [{"label", "h", "a", "dec": 0, "menos_mejor": false}]"""
     h, a = d["home"], d["away"]
+    fotos = bool(h.get("foto") and a.get("foto"))
+    tam = 54 if fotos else 76
     filas, gana = "", [0, 0]
     for st in d["stats"]:
         vh, va, dec = st["h"], st["a"], st.get("dec", 0)
@@ -483,18 +486,41 @@ def head_to_head(d):
             gana[0 if mejor_h else 1] += 1
             ch, ca = (h["c"], GRIS) if mejor_h else (GRIS, a["c"])
         tot = (abs(vh) + abs(va)) or 1
-        filas += (f'<div style="display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:18px;padding:10px 0;'
-                  f'border-bottom:2px solid #1E2330"><div class="disp" style="font-size:76px;color:{ch}">{_fmt(vh, dec)}</div>'
+        filas += (f'<div style="display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:18px;padding:{4 if fotos else 10}px 0;'
+                  f'border-bottom:2px solid #1E2330"><div class="disp" style="font-size:{tam}px;color:{ch}">{_fmt(vh, dec)}</div>'
                   f'<div class="mini" style="text-align:center;font-size:32px;max-width:340px">{e(st["label"])}</div>'
-                  f'<div class="disp" style="font-size:76px;color:{ca};text-align:right">{_fmt(va, dec)}</div></div>'
+                  f'<div class="disp" style="font-size:{tam}px;color:{ca};text-align:right">{_fmt(va, dec)}</div></div>'
                   f'<div style="display:flex;height:12px;gap:4px;margin-top:-4px"><div style="width:{abs(vh) / tot * 100:.0f}%;'
                   f'border-radius:6px;background:{ch}"></div><div style="width:{abs(va) / tot * 100:.0f}%;border-radius:6px;'
                   f'background:{ca}"></div></div>')
     marcador = (f'<span class="disp" style="font-size:64px;white-space:nowrap;flex:none"><span style="color:{h["c"]}">{gana[0]}</span>'
                 f'<span style="color:{GRIS}">–</span><span style="color:{a["c"]}">{gana[1]}</span></span>')
+    nota = d.get("note", "")
+    if fotos:
+        # Usuario 06/10: caras de los jugadores con degradado hacia el centro; nada encima de las caras.
+        def media(t, lado):
+            hacia = "right" if lado == "l" else "left"
+            img = base64.b64encode(Path(t["foto"]).read_bytes()).decode()
+            mask = (f"linear-gradient(to {hacia},#000 45%,transparent 98%),linear-gradient(to bottom,transparent 0%,#000 14%,#000 68%,transparent 100%)")
+            return (f'<div style="position:relative;flex:1;height:100%;overflow:hidden">'
+                    f'<div style="position:absolute;inset:0;background:radial-gradient(circle at {"30%" if lado == "l" else "70%"} 45%,'
+                    f'color-mix(in srgb,{t["c"]} 55%,transparent),transparent 70%)"></div>'
+                    f'<img src="data:image/jpeg;base64,{img}" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;'
+                    f'object-position:center {t.get("foco", "18%")};-webkit-mask-image:{mask};-webkit-mask-composite:source-in;'
+                    f'mask-image:{mask};mask-composite:intersect"></div>')
+        banda = f'<div style="display:flex;height:330px;margin:0 -10px">{media(h, "l")}{media(a, "r")}</div>'
+        cr = [t["credito"] for t in (h, a) if t.get("credito")]
+        creditos = cr[0].replace("Photo:", "Photos:") if len(cr) == 2 and cr[0] == cr[1] else " · ".join(cr)
+        nota = f"{nota}  ·  {creditos}" if creditos else nota
+        creditos = ""
+        cuerpo = (banda + vs(h, a, marcador)
+                  + f'<div style="display:flex;flex-direction:column;gap:4px">{filas}</div>'
+                  + (f'<div class="mini" style="font-size:22px">{e(nota)}</div>' if nota else "")
+                  + (f'<div class="mini" style="font-size:20px;color:#5C6476">{e(creditos)}</div>' if creditos else ""))
+        return pagina(d, d.get("kicker", "Head to head"), cuerpo, d.get("question", "Who takes it?"))
     cuerpo = (f'<div class="frase">{d.get("title", "")}</div>' + vs(h, a, marcador)
               + f'<div style="display:flex;flex-direction:column;gap:8px">{filas}</div>'
-              + (f'<div class="mini">{e(d["note"])}</div>' if d.get("note") else ""))
+              + (f'<div class="mini">{e(nota)}</div>' if nota else ""))
     return pagina(d, d.get("kicker", "Head to head"), cuerpo, d.get("question", "Who takes it?"))
 
 

@@ -96,7 +96,7 @@ def tapada(d):
     """La 6ª enseña los partidos pero tapa pronóstico y %: la lista completa está en el perfil."""
     n = len(d["picks"])
     return {**d, "locked": True, "kicker": "Locked", "title": f"{n} calls tonight",
-            "question": "Swipe to unlock them all."}
+            "question": "All unlocked on our profile."}
 
 
 def teaser_lista(fecha, excluir=()):
@@ -264,7 +264,7 @@ def perfil(fecha):
                          "probs": [round(x.mod_1 * 100), round(x.mod_X * 100), round(x.mod_2 * 100)],
                          "score": list(ms), "extra": [extra, float(pct[extra])]})
     d = {"template": "our_calls", "competition": COMP, "home": partidos[0]["home"], "away": partidos[-1]["away"],
-         "kicker": "Unlocked", "title": "The calls you swiped for", "matches": partidos}
+         "kicker": "Unlocked", "title": "Our calls, unlocked", "matches": partidos}
     return {"local": "perfil", "visitante": fecha}, {"perfil_our_calls": d}
 
 

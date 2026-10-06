@@ -11,6 +11,10 @@ cambios de código y archivos".
   el resumen y dónde leerlo.
 - Lo más nuevo, arriba.
 
+## 06/10/2026 — redes: correcciones del usuario y caras en jugador vs jugador
+- Qué: "Swipe" solo en carruseles (`CARRUSEL=1`), nunca en vídeo; fuera "Score" en our_calls (chocaba con el over 2.5); textos sin "swipe" en la 6ª y en follow. `datos_rankings.py jugadores`: NUESTROS datos (box-score Highlightly) primero, understat solo si no están al día o falta el jugador; caras de los jugadores (fotos libres del workflow bajar-fotos de Live) con degradado hacia el centro y crédito; alias de nombres.
+- Por qué: correcciones del usuario sobre el post de Croacia-España ("tienes que ser más riguroso") y su regla: siempre nuestros datos salvo que no estén al día.
+
 ## 06/10/2026 — redes: jugador vs jugador y workflow diario de jugadores
 - Qué: `scripts/jugadores_redes.py` + `jugadores_redes.yml` (09:40 UTC diario, ACTIVO con el sí del usuario): understat (sin cuota, 5 peticiones) → `data/redes/jugadores_temporada.csv`; Highlightly box-score de los partidos recientes de las 5 grandes, tope 20 llamadas/día → `historico_xg_jugador.csv` + `data/redes/jugadores_nombres.csv`. `datos_rankings.py jugadores "A" "B"` y `top_jugadores <métrica>`.
 - Por qué: usuario prefiere jugador vs jugador (más conversación); límite ~100 llamadas/día de Highlightly → fuente principal sin cuota y Highlightly con tope bajo como respaldo.
