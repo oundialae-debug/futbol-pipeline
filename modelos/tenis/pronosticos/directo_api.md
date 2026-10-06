@@ -1,4 +1,4 @@
-# Tenis en directo, 06/10/2026 02:47 UTC (04:47 en España)
+# Tenis en directo, 06/10/2026 02:57 UTC (04:57 en España)
 
 Calculadora desde el marcador exacto (modelo de puntos, superficie real) frente a la cuota en directo
 (sin margen). Ganador y sets: la calculadora suele coincidir con la casa. Total de juegos: el modelo
@@ -7,10 +7,12 @@ Se actualiza cada ~5 min; el registro en data/tenis/api_tennis/registro/ servir�
 
 | partido | tipo | superficie | marcador (sets, juegos, puntos, saca) | gana 1º: modelo / cuota | sets más probables (modelo) | total juegos: línea, modelo / cuota |
 |---|---|---|---|---|---|---|
-| M. Imamura vs K. Uchida | Challenger Men Singles | Hard | 0-0, 5-5, 30 - 40, saca K. Uchida | 63% / 66% | 2-0 32%, 2-1 31% | 25.5: 58% / 54% |
-| O. Jasika vs M. Borisiouk | Challenger Men Singles | Hard | 0-0, 4-5, 0 - 0, saca M. Borisiouk | 32% / 29% | 0-2 44%, 2-1 27% | 23.5: 54% / 46% |
-| M. Purcell vs F. Peliwo | Challenger Men Singles | Hard | 0-0, 5-5, 15 - 15, saca M. Purcell | 83% / 88% | 2-0 51%, 2-1 32% | 23.5: 56% / 49% |
-| H. Guo vs A. Falei | Challenger Women Singles | Hard | 0-0, 4-3, 0 - 0, saca H. Guo | 51% / 56% | 1-2 31%, 2-0 29% | 24.5: 56% / 50% |
-| M. Sawangkaew vs L. Fruhvirtova | Challenger Women Singles | Hard | 0-1, 0-0, 0 - 0, saca L. Fruhvirtova | 37% / 25% | 0-2 40%, 2-1 37% | 19.5: 71% / 51% |
-| M. Uchijima vs Z. Bai | Challenger Women Singles | Hard | 0-0, 4-4, 40 - 15, saca Z. Bai | 53% / 71% | 2-0 30%, 1-2 30% | 22.5: 66% / 51% |
-| J. Sun vs F. A. Lin | Itf Women Singles | Hard | 0-1, 2-1, 40 - 40, saca J. Sun | 30% / 19% | 0-2 35%, 1-2 35% |  |
+| M. Imamura vs K. Uchida | Challenger Men Singles | Hard | 0-0, 6-6, 0 - 0, saca K. Uchida | 65% / 62% | 2-0 35%, 2-1 30% |  |
+| O. Jasika vs M. Borisiouk | Challenger Men Singles | Hard | 0-1, 1-0, 0 - 15, saca M. Borisiouk | 28% / 27% | 0-2 45%, 2-1 28% |  |
+| M. Purcell vs F. Peliwo | Challenger Men Singles | Hard | 0-0, 6-6, 2 - 2, saca M. Purcell | 82% / 85% | 2-0 49%, 2-1 33% | 25.5: 52% / 49% |
+| H. Guo vs A. Falei | Challenger Women Singles | Hard | 0-0, 4-4, 40 - 40, saca A. Falei | 39% / 47% | 0-2 32%, 1-2 29% | 24.5: 54% / 50% |
+| M. Sawangkaew vs L. Fruhvirtova | Challenger Women Singles | Hard | 0-1, 0-1, 40 - 40, saca M. Sawangkaew | 30% / 16% | 0-2 50%, 2-1 30% | 17.5: 71% / 44% |
+| M. Uchijima vs Z. Bai | Challenger Women Singles | Hard | 0-0, 5-4, 0 - 0, saca M. Uchijima | 59% / 86% | 2-0 35%, 1-2 31% | 19.5: 89% / 50% |
+| J. Sun vs F. A. Lin | Itf Women Singles | Hard | 0-1, 3-2, 15 - 40, saca J. Sun | 25% / 17% | 0-2 47%, 1-2 29% |  |
+| E. Kuznetsova vs S. H. Jang | Itf Women Singles | Hard | 0-0, 0-1, 15 - 30, saca E. Kuznetsova | 24% / 29% | 0-2 49%, 1-2 27% |  |
+| D. Snigur vs M. Andreeva | Wta Singles | Hard | 0-0, 0-0, 0 - 0, saca ? | 22% / 17% | 0-2 48%, 1-2 29% |  |
