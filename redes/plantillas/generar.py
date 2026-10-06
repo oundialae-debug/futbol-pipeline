@@ -164,7 +164,7 @@ def pagina(d, kicker, cuerpo, pregunta):
 
 
 # Aviso de "hay más": en todas menos en la última del carrusel y en las del perfil.
-SIN_SWIPE = {"follow", "our_calls", "picks_list"}
+SIN_SWIPE = {"follow", "our_calls", "picks_list", "head_to_head", "ranking"}
 SWIPE = (f'<span style="display:inline-flex;align-items:center;gap:10px;background:{AMARILLO};color:{NOCHE};'
          f'border-radius:999px;padding:8px 22px;font-size:34px;font-weight:900;font-stretch:85%">Swipe'
          f'<span style="font-size:46px;line-height:.6;letter-spacing:-8px">&#8250;&#8250;&#8250;</span></span>')
@@ -463,11 +463,68 @@ def picks_list(d):
     return pagina(d, d.get("kicker", "Unlocked"), cuerpo, d.get("question", "Which one are you taking?"))
 
 
+# ---------- formatos de cara a cara y ranking (usuario, 06/10: probar lo que hizo crecer a otras cuentas de datos) ----------
+
+def _fmt(v, dec):
+    return f"{v:.{dec}f}" if isinstance(v, (int, float)) else str(v)
+
+
+def head_to_head(d):
+    """Dos equipos o jugadores frente a frente: 4-6 filas, la cifra mejor en su color y la peor en gris.
+    stats: [{"label", "h", "a", "dec": 0, "menos_mejor": false}]"""
+    h, a = d["home"], d["away"]
+    filas, gana = "", [0, 0]
+    for st in d["stats"]:
+        vh, va, dec = st["h"], st["a"], st.get("dec", 0)
+        if vh == va:
+            ch = ca = "#F1F3F8"
+        else:
+            mejor_h = (vh < va) if st.get("menos_mejor") else (vh > va)
+            gana[0 if mejor_h else 1] += 1
+            ch, ca = (h["c"], GRIS) if mejor_h else (GRIS, a["c"])
+        tot = (abs(vh) + abs(va)) or 1
+        filas += (f'<div style="display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:18px;padding:10px 0;'
+                  f'border-bottom:2px solid #1E2330"><div class="disp" style="font-size:76px;color:{ch}">{_fmt(vh, dec)}</div>'
+                  f'<div class="mini" style="text-align:center;font-size:32px;max-width:340px">{e(st["label"])}</div>'
+                  f'<div class="disp" style="font-size:76px;color:{ca};text-align:right">{_fmt(va, dec)}</div></div>'
+                  f'<div style="display:flex;height:12px;gap:4px;margin-top:-4px"><div style="width:{abs(vh) / tot * 100:.0f}%;'
+                  f'border-radius:6px;background:{ch}"></div><div style="width:{abs(va) / tot * 100:.0f}%;border-radius:6px;'
+                  f'background:{ca}"></div></div>')
+    marcador = (f'<span class="disp" style="font-size:64px"><span style="color:{h["c"]}">{gana[0]}</span>'
+                f'<span style="color:{GRIS}">–</span><span style="color:{a["c"]}">{gana[1]}</span></span>')
+    cuerpo = (f'<div class="frase">{d.get("title", "")}</div>' + vs(h, a, marcador)
+              + f'<div style="display:flex;flex-direction:column;gap:8px">{filas}</div>'
+              + (f'<div class="mini">{e(d["note"])}</div>' if d.get("note") else ""))
+    return pagina(d, d.get("kicker", "Head to head"), cuerpo, d.get("question", "Who takes it?"))
+
+
+def ranking(d):
+    """Top 5 de una métrica: posición, nombre (con el color de su equipo) y cifra con barra.
+    rows: [{"name", "team", "value", "sub"}]; el 1º va resaltado en amarillo."""
+    rows = d["rows"][:d.get("top", 5)]
+    mx = max(abs(r["value"]) for r in rows) or 1
+    dec = d.get("dec", 0)
+    filas = ""
+    for i, r in enumerate(rows):
+        c = color({"name": r.get("team", r["name"]), **({"color": r["color"]} if r.get("color") else {})})
+        filas += (f'<div style="display:grid;grid-template-columns:70px 1fr auto;align-items:center;gap:20px;padding:12px 0;'
+                  f'border-bottom:2px solid #1E2330"><div class="disp" style="font-size:64px;color:{AMARILLO if i == 0 else GRIS}">{i + 1}</div>'
+                  f'<div style="min-width:0"><div style="font-size:46px;font-weight:900;font-stretch:85%;white-space:nowrap;'
+                  f'overflow:hidden;text-overflow:ellipsis">{e(r["name"])}</div>'
+                  f'<div class="mini" style="font-size:30px">{e(r.get("sub", r.get("team", "")))}</div>'
+                  f'<div style="height:12px;margin-top:8px;border-radius:6px;background:{c};width:{abs(r["value"]) / mx * 100:.0f}%"></div></div>'
+                  f'<div class="disp" style="font-size:80px;color:{AMARILLO if i == 0 else "#F1F3F8"}">{_fmt(r["value"], dec)}{e(d.get("unit", ""))}</div></div>')
+    cuerpo = (f'<div class="frase">{d["title"]}</div>'
+              + (f'<div class="mini">{e(d["metric"])}</div>' if d.get("metric") else "")
+              + f'<div>{filas}</div>')
+    return pagina(d, d.get("kicker", "Top 5"), cuerpo, d.get("question", "Who's missing?"))
+
+
 PLANTILLAS = {"prediction": prediction, "upset_alert": upset_alert, "goals": goals, "elo_form": elo_form,
               "key_number": key_number, "deserved": deserved, "prediction_vs_result": prediction_vs_result,
               "upset_happened": upset_happened, "stat_of_match": stat_of_match, "weekend_record": weekend_record,
               "follow": follow, "our_calls": our_calls,
-              "picks_list": picks_list}
+              "picks_list": picks_list, "head_to_head": head_to_head, "ranking": ranking}
 
 
 def html_de(d):

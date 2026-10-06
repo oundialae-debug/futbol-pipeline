@@ -11,6 +11,10 @@ cambios de código y archivos".
   el resumen y dónde leerlo.
 - Lo más nuevo, arriba.
 
+## 06/10/2026 — redes: plantillas head_to_head y ranking
+- Qué: `generar.py` + `head_to_head` (dos equipos, 6 cifras, la mejor en su color) y `ranking` (top 5 de una métrica); `redes/plantillas/datos_rankings.py ranking <suerte|xg|muro|tiros|posesion> [liga]` y `duelo <A> <B>` con `historico_partidos.csv` (5 grandes, temporada en curso, sin API).
+- Por qué: usuario, formato que hizo crecer otras cuentas de datos (cara a cara y rankings). Ojo: los datos solo llegan al 20/09; actualizarlos a diario necesita API (pendiente del sí del usuario).
+
 ## 06/10/2026 — redes: nunca el mismo color para los dos equipos
 - Qué: `generar.py` nuevo `separar()`: si los colores de los dos equipos se parecen, uno pasa a su otro color más propio (Croacia → blanco); si nada sirve, amarillo. El gráfico Elo pone valor y nombre del equipo en su color.
 - Por qué: usuario, previo Croacia-España (ambos rojos): no se entendía qué Elo era de quién.
