@@ -150,7 +150,7 @@ body{{width:1080px;height:1920px;background:{NOCHE};color:#F1F3F8;font-family:Ar
 def pagina(d, kicker, cuerpo, pregunta):
     h, a = d["home"], d["away"]
     pie = d.get("footer", "")  # usuario 06/10: sin "not betting advice · 18+" en las imágenes (confunde al algoritmo)
-    guias = ".safe{outline:3px dashed #FF3B3B}" if GUIAS else ""
+    guias = (".safe{outline:3px dashed #FF3B3B}" if GUIAS else "") + CSS_IG45
     return (f'<!doctype html><html><head><meta charset="utf-8"><style>{CSS}{guias}</style></head><body>'
             f'<div id="v" style="--c1:{h["c"]};--c2:{a["c"]}"><div class="safe">'
             f'<div class="top"><img src="data:image/png;base64,{b64("2yellow-logo-transparent-for-dark.png")}">'
@@ -166,7 +166,12 @@ def pagina(d, kicker, cuerpo, pregunta):
 # Aviso de "hay más": SOLO en carrusel (CARRUSEL=1 en el entorno), en todas menos en la última y en las del perfil.
 # En vídeo no hay nada que deslizar (usuario, 06/10).
 CARRUSEL = os.environ.get("CARRUSEL") == "1"
-SIN_SWIPE = {"follow", "our_calls", "picks_list", "head_to_head", "ranking"}
+# Imágenes sueltas de Instagram: 4:5 (1080x1350). IG recorta las 9:16 en el perfil y el feed (usuario 06/10).
+IG45 = os.environ.get("LIENZO") == "4x5"
+ALTO = 1350 if IG45 else 1920
+CSS_IG45 = ("body,#v{height:1350px!important}.safe{top:56px!important;bottom:48px!important;right:80px!important}"
+            ".num{font-size:230px!important}") if IG45 else ""
+SIN_SWIPE = {"follow", "our_calls", "picks_list", "head_to_head", "ranking", "xi", "indice"}
 SWIPE = (f'<span style="display:inline-flex;align-items:center;gap:10px;background:{AMARILLO};color:{NOCHE};'
          f'border-radius:999px;padding:8px 22px;font-size:34px;font-weight:900;font-stretch:85%">Swipe'
          f'<span style="font-size:46px;line-height:.6;letter-spacing:-8px">&#8250;&#8250;&#8250;</span></span>')
@@ -532,7 +537,7 @@ def ranking(d):
     dec = d.get("dec", 0)
     filas = ""
     for i, r in enumerate(rows):
-        c = color({"name": r.get("team", r["name"]), **({"color": r["color"]} if r.get("color") else {})})
+        c = AMARILLO if i == 0 else "#3A4150"  # uniforme: solo el 1º destaca (usuario 06/10: Yamal salía resaltado por su kit)
         filas += (f'<div style="display:grid;grid-template-columns:70px 1fr auto;align-items:center;gap:20px;padding:12px 0;'
                   f'border-bottom:2px solid #1E2330"><div class="disp" style="font-size:64px;color:{AMARILLO if i == 0 else GRIS}">{i + 1}</div>'
                   f'<div style="min-width:0"><div style="font-size:46px;font-weight:900;font-stretch:85%;white-space:nowrap;'
@@ -546,11 +551,69 @@ def ranking(d):
     return pagina(d, d.get("kicker", "Top 5"), cuerpo, d.get("question", "Who's missing?"))
 
 
+# ---------- formatos propios de 2yellow (usuario 06/10: "que sea especial nuestra, nos da estatus") ----------
+# Sello común: la tarjeta amarilla (2yellow = dos amarillas) lleva la nota/índice de cada jugador.
+
+def tarjeta(valor, grande=False, color=AMARILLO):
+    w, h, f = (96, 128, 52) if grande else (66, 88, 36)
+    return (f'<div style="width:{w}px;height:{h}px;border-radius:10px;background:{color};color:{NOCHE};display:grid;'
+            f'place-items:center;transform:rotate(-6deg);box-shadow:6px 6px 0 #00000055;font-weight:900;font-stretch:75%;'
+            f'font-size:{f}px;flex:none">{e(valor)}</div>')
+
+
+def xi(d):
+    """2yellow XI: el once de la jornada por nota media (4-3-3 sobre un campo). players: [{"name","team","pos","value"}],
+    pos en GK/DF/MF/FW; el mejor (estrella) en tarjeta grande con borde."""
+    lineas = {"FW": [], "MF": [], "DF": [], "GK": []}
+    for pl in d["players"]:
+        lineas[pl["pos"]].append(pl)
+    top = max(d["players"], key=lambda q: q["value"])
+    def jugador(pl):
+        c = color({"name": pl.get("team", "")})
+        estrella = pl is top
+        return (f'<div style="display:flex;flex-direction:column;align-items:center;gap:8px;width:190px">'
+                f'{tarjeta(f"{pl["value"]:.1f}", grande=estrella)}'
+                f'<div style="font-size:{30 if estrella else 27}px;font-weight:900;font-stretch:85%;white-space:nowrap;'
+                f'max-width:200px;overflow:hidden;text-overflow:ellipsis;text-align:center">{e(pl["name"])}</div>'
+                f'<div style="display:flex;align-items:center;gap:6px;font-size:21px;color:#AEB5C4;white-space:nowrap">'
+                f'<span style="width:12px;height:12px;border-radius:50%;background:{c}"></span>{e(pl.get("team", ""))}</div></div>')
+    filas = "".join(f'<div style="display:flex;justify-content:space-around">{"".join(jugador(q) for q in lineas[k])}</div>'
+                    for k in ("FW", "MF", "DF", "GK"))
+    campo = (f'<div style="position:relative;border:3px solid #2A3040;border-radius:22px;padding:26px 6px;'
+             f'display:flex;flex-direction:column;gap:22px;background:linear-gradient(#11161F,#0C1017)">'
+             f'<div style="position:absolute;left:30%;right:30%;top:-3px;height:70px;border:3px solid #2A3040;border-top:0;border-radius:0 0 12px 12px"></div>'
+             f'<div style="position:absolute;left:30%;right:30%;bottom:-3px;height:70px;border:3px solid #2A3040;border-bottom:0;border-radius:12px 12px 0 0"></div>'
+             f'<div style="position:relative;display:flex;flex-direction:column;gap:22px">{filas}</div></div>')
+    cuerpo = (f'<div class="frase" style="font-size:58px">{d["title"]}</div>'
+              + (f'<div class="mini" style="font-size:30px">{e(d["metric"])}</div>' if d.get("metric") else "") + campo)
+    return pagina(d, d.get("kicker", "2yellow XI"), cuerpo, d.get("question", "Who did we leave out?"))
+
+
+def indice(d):
+    """2yellow Index: top 5 con la tarjeta amarilla como nota (0-100) y el desglose debajo del nombre.
+    rows: [{"name","team","value","detail"}]"""
+    filas = ""
+    for i, r in enumerate(d["rows"][:5]):
+        c = color({"name": r.get("team", "")})
+        filas += (f'<div style="display:flex;align-items:center;gap:26px;padding:14px 0;border-bottom:2px solid #1E2330">'
+                  f'<div class="disp" style="font-size:56px;width:46px;color:{AMARILLO if i == 0 else GRIS}">{i + 1}</div>'
+                  f'<div style="flex:1;min-width:0"><div style="font-size:46px;font-weight:900;font-stretch:85%;white-space:nowrap;'
+                  f'overflow:hidden;text-overflow:ellipsis">{e(r["name"])}</div>'
+                  f'<div style="display:flex;align-items:center;gap:8px;font-size:28px;color:#AEB5C4;white-space:nowrap">'
+                  f'<span style="width:14px;height:14px;border-radius:50%;background:{c}"></span>{e(r.get("team", ""))}'
+                  f'<span style="color:{GRIS}">·</span>{e(r.get("detail", ""))}</div></div>'
+                  f'{tarjeta(r["value"], grande=(i == 0), color=AMARILLO if i == 0 else "#F1F3F8")}</div>')
+    cuerpo = (f'<div class="frase">{d["title"]}</div>'
+              + (f'<div class="mini" style="font-size:30px">{e(d["metric"])}</div>' if d.get("metric") else "")
+              + f'<div>{filas}</div>')
+    return pagina(d, d.get("kicker", "2yellow Index"), cuerpo, d.get("question", "Who's too low?"))
+
+
 PLANTILLAS = {"prediction": prediction, "upset_alert": upset_alert, "goals": goals, "elo_form": elo_form,
               "key_number": key_number, "deserved": deserved, "prediction_vs_result": prediction_vs_result,
               "upset_happened": upset_happened, "stat_of_match": stat_of_match, "weekend_record": weekend_record,
               "follow": follow, "our_calls": our_calls,
-              "picks_list": picks_list, "head_to_head": head_to_head, "ranking": ranking}
+              "picks_list": picks_list, "head_to_head": head_to_head, "ranking": ranking, "xi": xi, "indice": indice}
 
 
 def html_de(d):
@@ -577,7 +640,7 @@ def renderizar(trabajos):
     exe = Path("/opt/pw-browsers/chromium")
     with sync_playwright() as pw:
         b = pw.chromium.launch(executable_path=str(exe)) if exe.exists() else pw.chromium.launch()
-        pg = b.new_page(viewport={"width": 1080, "height": 1920})
+        pg = b.new_page(viewport={"width": 1080, "height": ALTO})
         for d, out in trabajos:
             pg.set_content(html_de(d))
             pg.wait_for_timeout(200)

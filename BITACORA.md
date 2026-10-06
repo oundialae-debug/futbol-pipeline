@@ -11,6 +11,10 @@ cambios de código y archivos".
   el resumen y dónde leerlo.
 - Lo más nuevo, arriba.
 
+## 06/10/2026 — redes: formatos propios (2yellow XI, 2yellow Index), lienzo 4:5 para IG
+- Qué: plantillas `xi` (once 4-3-3 con la nota en una tarjeta amarilla) e `indice` (top 5, índice = nota x10 + 3 por G+A por partido); `redes/plantillas/datos_formatos.py xi|indice <desde> <hasta> [selecciones|clubes]`; `LIENZO=4x5` genera 1080x1350 para imágenes de Instagram; barras del ranking uniformes (solo el 1º en amarillo).
+- Por qué: usuario: formatos propios para diferenciarnos; IG recortaba las 9:16; Yamal salía resaltado porque solo su club tenía colores en `kits_camiseta.json`.
+
 ## 06/10/2026 — redes: índice 2yellow del Balón de Oro
 - Qué: `datos_rankings.py indice_bdo` / `balon_oro_indice`: criterios oficiales (individual 55%: nota, (G+A)/90, (xG+xA)/90 en liga + Mundial; colectivo 40%: liga, fase de Champions (tabla UCL_2526 de UEFA), fase del Mundial; juego limpio 5%). `nominados` queda como "una sola cifra".
 - Por qué: usuario: el Balón de Oro no se decide por goles y asistencias (otros ponen a Yamal 2º). Resultado: Dembélé 88, Yamal 86, Kane 82, Olise 79, Mbappé 74. Límite: infravalora a mediocentros defensivos (Rodri) porque lo individual mide ataque.
