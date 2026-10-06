@@ -290,38 +290,39 @@ Estonia,9770439,Joseph Saliste,Defender,False,probable,False,0,0,,,,,5,338,6.5,6
 Estonia,9768990,Alex Matthias Tamm,Forward,False,probable,False,0,0,,,,,7,272,6.45,6.6,6.56,6.58,True
 Estonia,9720690,Mattias Männilaan,Forward,False,probable,False,0,0,,,,,2,111,6.47,6.58,6.54,6.56,True
 Estonia,92546335,Karel Mustmaa,Forward,False,probable,False,0,0,,,,,5,186,6.39,6.52,6.46,6.5,True
-Faroe Islands,42375837,Á. Samuelsen,Forward,True,probable,True,0,0,,,,,3,200,7.09,6.88,6.99,6.92,True
-Faroe Islands,9015027,Odmar Færø,Defender,True,probable,True,0,0,,,,,9,810,6.84,6.77,6.81,6.78,True
-Faroe Islands,27256971,A. Edmundsson,Defender,True,probable,True,0,0,,,,0.03,11,964,6.78,6.74,6.76,6.75,True
-Faroe Islands,11327792,Jóannes Bjartalíð,Forward,True,probable,True,0,0,,,,,7,307,6.76,6.71,6.74,6.72,True
-Faroe Islands,42521220,M. Agnarsson,Defender,True,probable,True,0,0,,,,,9,441,6.69,6.67,6.68,6.67,True
-Faroe Islands,11754281,Gunnar Vatnhamar,Defender,True,probable,True,0,0,,,,,11,990,6.65,6.65,6.65,6.65,True
-Faroe Islands,26144461,Hanus Sørensen,Midfielder,True,probable,True,0,0,,,,,11,754,6.6,6.62,6.61,6.61,True
-Faroe Islands,11747519,Petur Knudsen,Forward,True,probable,True,0,0,,,,,7,294,6.48,6.57,6.52,6.55,True
-Faroe Islands,21433118,G. Turi,Midfielder,True,probable,True,0,0,,,,,8,494,6.46,6.53,6.49,6.51,True
-Faroe Islands,13370077,Mattias Lamhauge,Goalkeeper,True,probable,True,0,0,,,,,9,810,6.46,6.52,6.48,6.5,True
-Faroe Islands,11743977,Jóannes Kalsø Danielsen,Defender,True,probable,True,0,0,,,,,9,704,6.43,6.51,6.46,6.49,True
-Faroe Islands,9015671,Árni Frederiksberg,Forward,False,probable,False,0,0,,,,,8,593,7.43,6.96,7.15,7.04,True
-Faroe Islands,13369272,Brandur Hendriksson Olsen,Midfielder,False,probable,False,0,0,,,,,7,547,7.05,6.79,6.88,6.83,True
-Faroe Islands,2518677,Hallur Hansson,Midfielder,False,probable,False,0,0,,,,,2,154,7.12,6.7,6.74,6.71,True
-Faroe Islands,13372009,Páll Klettskarð,Forward,False,probable,False,0,0,,,,,5,187,6.75,6.66,6.68,6.67,True
-Faroe Islands,2521414,Viljormur Davidsen,Defender,False,probable,False,0,0,,,,,7,567,6.67,6.66,6.66,6.66,True
-Faroe Islands,21914186,Noah Mneney,Midfielder,False,probable,False,0,0,,,,,2,43,6.86,6.65,6.66,6.66,True
-Faroe Islands,11333749,Patrik Johannesen,Forward,False,probable,False,0,0,,,,,1,26,7.19,6.66,6.67,6.66,True
-Faroe Islands,4027408,Jóan Edmundsson,Midfielder,False,probable,False,0,0,,,,,5,146,6.73,6.66,6.67,6.66,True
-Faroe Islands,4654342,René Shaki Joensen,Midfielder,False,probable,False,0,0,,,,,3,173,6.68,6.65,6.66,6.65,True
-Faroe Islands,11757662,Daniel Johansen,Defender,False,probable,False,0,0,,,,,1,26,6.59,6.65,6.64,6.65,True
-Faroe Islands,11752832,Bárður Á Reynatrøð,Goalkeeper,False,probable,False,0,0,,,,,2,180,6.59,6.64,6.63,6.64,True
-Faroe Islands,11327631,Jákup Biskopstø Andreasen,Midfielder,False,probable,False,0,0,,,,,5,323,6.63,6.64,6.64,6.64,True
-Faroe Islands,64480493,Aron Benjaminsen,Forward,False,probable,False,0,0,,,,,1,5,6.45,6.64,6.64,6.64,True
-Faroe Islands,45123302,Jørgen Nielsen,Forward,False,probable,False,0,0,,,,,1,6,6.51,6.64,6.64,6.64,True
-Faroe Islands,49402360,Emil Joensen,Midfielder,False,probable,False,0,0,,,,,1,5,6.23,6.64,6.63,6.63,True
-Faroe Islands,6306202,Meinhard Olsen,Midfielder,False,probable,False,0,0,,,,,7,362,6.55,6.62,6.6,6.61,True
-Faroe Islands,25199552,S. Chukwudi,Defender,False,probable,False,0,0,,,,,2,180,6.55,6.61,6.59,6.6,True
-Faroe Islands,11757823,A. Justinussen,Forward,False,probable,False,0,0,,,,,9,269,6.44,6.55,6.5,6.53,True
-Faroe Islands,61301387,M. Hellisdal,Midfielder,False,probable,False,0,0,,,,,2,95,6.33,6.54,6.47,6.51,True
-Faroe Islands,11747036,Jann Benjaminsen,Defender,False,probable,False,0,0,,,,,4,196,6.31,6.52,6.44,6.49,True
-Faroe Islands,11762009,Poul Kallsberg,Forward,False,probable,False,0,0,,,,,2,65,6.1,6.5,6.4,6.46,True
+Faroe Islands,42375837,Á. Samuelsen,Forward,True,real,True,0,0,,,,,3,200,7.09,6.88,6.99,6.92,True
+Faroe Islands,9015027,Odmar Færø,Defender,True,real,True,0,0,,,,,9,810,6.84,6.77,6.81,6.78,True
+Faroe Islands,11327792,Jóannes Bjartalíð,Forward,True,real,True,0,0,,,,,7,307,6.76,6.71,6.74,6.72,True
+Faroe Islands,42521220,M. Agnarsson,Defender,True,real,True,0,0,,,,,9,441,6.69,6.67,6.68,6.67,True
+Faroe Islands,11754281,Gunnar Vatnhamar,Defender,True,real,True,0,0,,,,,11,990,6.65,6.65,6.65,6.65,True
+Faroe Islands,2579696,H. Vatnsdal,Defender,True,real,False,0,0,,,,,0,0,,6.65,6.65,6.65,True
+Faroe Islands,26144461,Hanus Sørensen,Midfielder,True,real,True,0,0,,,,,11,754,6.6,6.62,6.61,6.61,True
+Faroe Islands,11747519,Petur Knudsen,Forward,True,real,True,0,0,,,,,7,294,6.48,6.57,6.52,6.55,True
+Faroe Islands,21433118,G. Turi,Midfielder,True,real,True,0,0,,,,,8,494,6.46,6.53,6.49,6.51,True
+Faroe Islands,13370077,Mattias Lamhauge,Goalkeeper,True,real,True,0,0,,,,,9,810,6.46,6.52,6.48,6.5,True
+Faroe Islands,11743977,Jóannes Kalsø Danielsen,Defender,True,real,True,0,0,,,,,9,704,6.43,6.51,6.46,6.49,True
+Faroe Islands,9015671,Árni Frederiksberg,Forward,False,real,False,0,0,,,,,8,593,7.43,6.96,7.15,7.04,True
+Faroe Islands,13369272,Brandur Hendriksson Olsen,Midfielder,False,real,False,0,0,,,,,7,547,7.05,6.79,6.88,6.83,True
+Faroe Islands,27256971,A. Edmundsson,Defender,False,real,True,0,0,,,,0.03,11,964,6.78,6.74,6.76,6.75,True
+Faroe Islands,2518677,Hallur Hansson,Midfielder,False,real,False,0,0,,,,,2,154,7.12,6.7,6.74,6.71,True
+Faroe Islands,13372009,Páll Klettskarð,Forward,False,real,False,0,0,,,,,5,187,6.75,6.66,6.68,6.67,True
+Faroe Islands,2521414,Viljormur Davidsen,Defender,False,real,False,0,0,,,,,7,567,6.67,6.66,6.66,6.66,True
+Faroe Islands,21914186,Noah Mneney,Midfielder,False,real,False,0,0,,,,,2,43,6.86,6.65,6.66,6.66,True
+Faroe Islands,11333749,Patrik Johannesen,Forward,False,real,False,0,0,,,,,1,26,7.19,6.66,6.67,6.66,True
+Faroe Islands,4027408,Jóan Edmundsson,Midfielder,False,real,False,0,0,,,,,5,146,6.73,6.66,6.67,6.66,True
+Faroe Islands,4654342,René Shaki Joensen,Midfielder,False,real,False,0,0,,,,,3,173,6.68,6.65,6.66,6.65,True
+Faroe Islands,11757662,Daniel Johansen,Defender,False,real,False,0,0,,,,,1,26,6.59,6.65,6.64,6.65,True
+Faroe Islands,11752832,Bárður Á Reynatrøð,Goalkeeper,False,real,False,0,0,,,,,2,180,6.59,6.64,6.63,6.64,True
+Faroe Islands,11327631,Jákup Biskopstø Andreasen,Midfielder,False,real,False,0,0,,,,,5,323,6.63,6.64,6.64,6.64,True
+Faroe Islands,64480493,Aron Benjaminsen,Forward,False,real,False,0,0,,,,,1,5,6.45,6.64,6.64,6.64,True
+Faroe Islands,45123302,Jørgen Nielsen,Forward,False,real,False,0,0,,,,,1,6,6.51,6.64,6.64,6.64,True
+Faroe Islands,49402360,Emil Joensen,Midfielder,False,real,False,0,0,,,,,1,5,6.23,6.64,6.63,6.63,True
+Faroe Islands,6306202,Meinhard Olsen,Midfielder,False,real,False,0,0,,,,,7,362,6.55,6.62,6.6,6.61,True
+Faroe Islands,25199552,S. Chukwudi,Defender,False,real,False,0,0,,,,,2,180,6.55,6.61,6.59,6.6,True
+Faroe Islands,11757823,A. Justinussen,Forward,False,real,False,0,0,,,,,9,269,6.44,6.55,6.5,6.53,True
+Faroe Islands,61301387,M. Hellisdal,Midfielder,False,real,False,0,0,,,,,2,95,6.33,6.54,6.47,6.51,True
+Faroe Islands,11747036,Jann Benjaminsen,Defender,False,real,False,0,0,,,,,4,196,6.31,6.52,6.44,6.49,True
+Faroe Islands,11762009,Poul Kallsberg,Forward,False,real,False,0,0,,,,,2,65,6.1,6.5,6.4,6.46,True
 Finland,155197,L. Hrádecký,Goalkeeper,True,probable,True,5,450,7.93,0.0,0.0,0.0,9,801,7.38,7.6,7.45,7.54,False
 Finland,27939933,Leo Walta,Midfielder,True,probable,True,0,0,,,,,9,730,7.71,7.47,7.64,7.54,True
 Finland,67770528,A. Svanbäck,Forward,True,probable,True,0,0,,,,,3,182,7.84,7.38,7.61,7.47,True
@@ -414,56 +415,56 @@ Iceland,4626811,Karl Friðleifur Gunnarsson,Defender,False,probable,False,0,0,,,
 Iceland,30892673,Kristian Hlynsson,Midfielder,False,probable,False,0,0,,,,,10,415,6.56,6.73,6.65,6.7,True
 Iceland,4625040,Höskuldur Gunnlaugsson,Defender,False,probable,False,0,0,,,,,1,90,6.01,6.73,6.6,6.68,True
 Iceland,4626167,B. Willumsson,Forward,False,probable,False,0,0,,,,,8,343,6.44,6.69,6.58,6.64,True
-Kazakhstan,9029356,Bauyrzhan Islamkhan,Midfielder,True,probable,True,0,0,,,,,2,163,7.66,7.15,7.39,7.25,True
-Kazakhstan,9029034,N. Alip,Defender,True,probable,True,0,0,,,,,12,1072,7.04,6.95,7.02,6.98,True
-Kazakhstan,361438,Ramazan Karimov,Forward,True,probable,True,0,0,,,,,2,149,7.18,6.92,7.03,6.96,True
-Kazakhstan,9028551,Temirlan Yerlanov,Defender,True,probable,True,0,0,,,,,3,254,7.0,6.88,6.95,6.9,True
-Kazakhstan,9028068,S. Pokatilov,Goalkeeper,True,probable,True,0,0,,,,,2,180,6.68,6.7,6.69,6.7,True
-Kazakhstan,9029678,Yan Vorogovskiy,Defender,True,probable,True,0,0,,,,,11,960,6.63,6.65,6.64,6.65,True
-Kazakhstan,17950849,Ramazan Orazov,Midfielder,True,probable,True,0,0,,,,,9,553,6.56,6.63,6.59,6.61,True
-Kazakhstan,17952137,Dinmukhamed Karaman,Midfielder,True,probable,True,0,0,,,,,8,460,6.57,6.62,6.58,6.6,True
-Kazakhstan,52135174,Aleksandr Mrynskiy,Defender,True,probable,True,0,0,,,,,4,274,6.54,6.61,6.57,6.6,True
-Kazakhstan,47215658,G. Kenzhebek,Midfielder,True,probable,True,0,0,,,,,12,622,6.39,6.51,6.43,6.48,True
-Kazakhstan,9029517,Islambek Kuat,Midfielder,True,probable,True,0,0,,,,,6,514,6.31,6.47,6.38,6.43,True
-Kazakhstan,17965661,Aleksandr Zarutskiy,Goalkeeper,False,probable,False,0,0,,,,,2,180,7.42,6.96,7.12,7.03,True
-Kazakhstan,17961475,Mukhammejan Seisen,Goalkeeper,False,probable,False,0,0,,,,,5,459,7.28,6.9,7.03,6.95,True
-Kazakhstan,9028712,Sergey Maliy,Defender,False,probable,False,0,0,,,,,4,295,7.16,6.88,6.98,6.92,True
-Kazakhstan,42750967,Temirlan Anarbekov,Goalkeeper,False,probable,False,0,0,,,,,3,270,7.14,6.87,6.97,6.91,True
-Kazakhstan,17998183,Alibek Kasym,Defender,False,probable,False,0,0,,,,,5,450,7.12,6.87,6.96,6.9,True
-Kazakhstan,17966949,Bagdat Kairov,Defender,False,probable,False,0,0,,,,,4,360,6.99,6.8,6.87,6.83,True
-Kazakhstan,15709729,Marat Bystrov,Defender,False,probable,False,0,0,,,,,3,261,7.21,6.79,6.85,6.81,True
-Kazakhstan,11325377,Aleksandr Marochkin,Defender,False,probable,False,0,0,,,,,2,180,7.31,6.77,6.83,6.79,True
-Kazakhstan,11325699,Askhat Tagybergen,Midfielder,False,probable,False,0,0,,,,,3,214,7.06,6.76,6.8,6.77,True
-Kazakhstan,9029839,Georgy Zhukov,Midfielder,False,probable,False,0,0,,,,,3,134,7.13,6.75,6.78,6.76,True
-Kazakhstan,8618967,Baktiyor Zaynutdinov,Midfielder,False,probable,False,0,0,,,,,2,148,6.89,6.74,6.77,6.75,True
-Kazakhstan,47068343,Ivan Sviridov,Forward,False,probable,False,0,0,,,,,3,124,6.83,6.73,6.74,6.74,True
-Kazakhstan,11325860,Abat Aimbetov,Forward,False,probable,False,0,0,,,,,1,16,6.65,6.71,6.71,6.71,True
-Kazakhstan,32899538,Aliyar Mukhamed,Forward,False,probable,False,0,0,,,,,1,18,6.58,6.71,6.71,6.71,True
-Kazakhstan,8619128,Aleksander Zuev,Midfielder,False,probable,False,0,0,,,,,1,14,6.55,6.71,6.71,6.71,True
-Kazakhstan,49695541,Murojon Khalmatov,Midfielder,False,probable,False,0,0,,,,,2,38,6.71,6.71,6.71,6.71,True
-Kazakhstan,19872706,Adilbek Zhumakhanov,Defender,False,probable,False,0,0,,,,,1,8,6.71,6.71,6.71,6.71,True
-Kazakhstan,104081180,Maksat Abraev,Forward,False,probable,False,0,0,,,,,1,8,6.72,6.71,6.71,6.71,True
-Kazakhstan,18009936,Sagi Sovet,Defender,False,probable,False,0,0,,,,,1,8,6.57,6.71,6.7,6.7,True
-Kazakhstan,17947629,Sultanbek Astanov,Defender,False,probable,False,0,0,,,,,3,279,6.65,6.7,6.69,6.69,True
-Kazakhstan,60264708,Dauren Zhumat,Midfielder,False,probable,False,0,0,,,,,2,38,6.39,6.69,6.68,6.69,True
-Kazakhstan,85641367,Magzhan Toktybay,Forward,False,probable,False,0,0,,,,,1,33,6.6,6.7,6.69,6.69,True
-Kazakhstan,30894283,M. Samorodov,Midfielder,False,probable,False,0,0,,,,,8,638,6.67,6.69,6.68,6.68,True
-Kazakhstan,17944892,Aybar Zhaksylykov,Forward,False,probable,False,0,0,,,,,2,92,6.35,6.69,6.67,6.68,True
-Kazakhstan,17949239,Elkhan Astanov,Midfielder,False,probable,False,0,0,,,,,4,90,6.6,6.68,6.65,6.67,True
-Kazakhstan,9030000,Oralkhan Omirtaev,Forward,False,probable,False,0,0,,,,,2,54,6.3,6.68,6.66,6.67,True
-Kazakhstan,71721146,D. Satpaev,Forward,False,probable,False,0,0,,,,,7,378,6.59,6.67,6.64,6.65,True
-Kazakhstan,79017022,Azamat Tuyakbayev,Midfielder,False,probable,False,0,0,,,,,1,45,6.46,6.66,6.62,6.64,True
-Kazakhstan,17955035,Ular Zhaksybaev,Defender,False,probable,False,0,0,,,,,2,99,6.18,6.65,6.6,6.63,True
-Kazakhstan,51850204,Damir Kasabulat,Defender,False,probable,False,0,0,,,,,4,152,6.33,6.63,6.57,6.61,True
-Kazakhstan,75125652,Arsen Ashirbek,Midfielder,False,probable,False,0,0,,,,,3,136,6.5,6.63,6.58,6.61,True
-Kazakhstan,50152942,I. Chesnokov,Midfielder,False,probable,False,0,0,,,,,9,605,6.5,6.62,6.57,6.6,True
-Kazakhstan,359989,Serikzhan Muzhikov,Midfielder,False,probable,False,0,0,,,,,3,144,5.97,6.62,6.54,6.59,True
-Kazakhstan,17987718,Artur Shushenachev,Forward,False,probable,False,0,0,,,,,3,140,6.43,6.6,6.54,6.57,True
-Kazakhstan,17956806,Erkin Tapalov,Defender,False,probable,False,0,0,,,,,4,241,6.32,6.58,6.49,6.54,True
-Kazakhstan,73041024,Ismail Bekbolat,Forward,False,probable,False,0,0,,,,,2,54,6.07,6.56,6.45,6.52,True
-Kazakhstan,87716013,Zhasulan Amir,Defender,False,probable,False,0,0,,,,,3,139,6.31,6.54,6.45,6.51,True
-Kazakhstan,17993675,Nauryzbek Zhagorov,Midfielder,False,probable,False,0,0,,,,,5,158,6.22,6.51,6.4,6.47,True
-Kazakhstan,17988362,Stanislav Basmanov,Forward,False,probable,False,0,0,,,,,2,88,6.04,6.49,6.35,6.43,True
+Kazakhstan,9029356,Bauyrzhan Islamkhan,Midfielder,True,real,True,0,0,,,,,2,163,7.66,7.15,7.39,7.25,True
+Kazakhstan,9029034,N. Alip,Defender,True,real,True,0,0,,,,,12,1072,7.04,6.95,7.02,6.98,True
+Kazakhstan,361438,Ramazan Karimov,Forward,True,real,True,0,0,,,,,2,149,7.18,6.92,7.03,6.96,True
+Kazakhstan,9028712,Sergey Maliy,Defender,True,real,False,0,0,,,,,4,295,7.16,6.88,6.98,6.92,True
+Kazakhstan,42750967,Temirlan Anarbekov,Goalkeeper,True,real,False,0,0,,,,,3,270,7.14,6.87,6.97,6.91,True
+Kazakhstan,17998183,Alibek Kasym,Defender,True,real,False,0,0,,,,,5,450,7.12,6.87,6.96,6.9,True
+Kazakhstan,9029839,Georgy Zhukov,Midfielder,True,real,False,0,0,,,,,3,134,7.13,6.75,6.78,6.76,True
+Kazakhstan,30894283,M. Samorodov,Midfielder,True,real,False,0,0,,,,,8,638,6.67,6.69,6.68,6.68,True
+Kazakhstan,17993675,Nauryzbek Zhagorov,Midfielder,True,real,False,0,0,,,,,5,158,6.22,6.51,6.4,6.47,True
+Kazakhstan,9029517,Islambek Kuat,Midfielder,True,real,True,0,0,,,,,6,514,6.31,6.47,6.38,6.43,True
+Kazakhstan,17988362,Stanislav Basmanov,Forward,True,real,False,0,0,,,,,2,88,6.04,6.49,6.35,6.43,True
+Kazakhstan,17965661,Aleksandr Zarutskiy,Goalkeeper,False,real,False,0,0,,,,,2,180,7.42,6.96,7.12,7.03,True
+Kazakhstan,17961475,Mukhammejan Seisen,Goalkeeper,False,real,False,0,0,,,,,5,459,7.28,6.9,7.03,6.95,True
+Kazakhstan,9028551,Temirlan Yerlanov,Defender,False,real,True,0,0,,,,,3,254,7.0,6.88,6.95,6.9,True
+Kazakhstan,17966949,Bagdat Kairov,Defender,False,real,False,0,0,,,,,4,360,6.99,6.8,6.87,6.83,True
+Kazakhstan,15709729,Marat Bystrov,Defender,False,real,False,0,0,,,,,3,261,7.21,6.79,6.85,6.81,True
+Kazakhstan,11325377,Aleksandr Marochkin,Defender,False,real,False,0,0,,,,,2,180,7.31,6.77,6.83,6.79,True
+Kazakhstan,11325699,Askhat Tagybergen,Midfielder,False,real,False,0,0,,,,,3,214,7.06,6.76,6.8,6.77,True
+Kazakhstan,8618967,Baktiyor Zaynutdinov,Midfielder,False,real,False,0,0,,,,,2,148,6.89,6.74,6.77,6.75,True
+Kazakhstan,47068343,Ivan Sviridov,Forward,False,real,False,0,0,,,,,3,124,6.83,6.73,6.74,6.74,True
+Kazakhstan,11325860,Abat Aimbetov,Forward,False,real,False,0,0,,,,,1,16,6.65,6.71,6.71,6.71,True
+Kazakhstan,32899538,Aliyar Mukhamed,Forward,False,real,False,0,0,,,,,1,18,6.58,6.71,6.71,6.71,True
+Kazakhstan,8619128,Aleksander Zuev,Midfielder,False,real,False,0,0,,,,,1,14,6.55,6.71,6.71,6.71,True
+Kazakhstan,49695541,Murojon Khalmatov,Midfielder,False,real,False,0,0,,,,,2,38,6.71,6.71,6.71,6.71,True
+Kazakhstan,19872706,Adilbek Zhumakhanov,Defender,False,real,False,0,0,,,,,1,8,6.71,6.71,6.71,6.71,True
+Kazakhstan,104081180,Maksat Abraev,Forward,False,real,False,0,0,,,,,1,8,6.72,6.71,6.71,6.71,True
+Kazakhstan,18009936,Sagi Sovet,Defender,False,real,False,0,0,,,,,1,8,6.57,6.71,6.7,6.7,True
+Kazakhstan,9028068,S. Pokatilov,Goalkeeper,False,real,True,0,0,,,,,2,180,6.68,6.7,6.69,6.7,True
+Kazakhstan,17947629,Sultanbek Astanov,Defender,False,real,False,0,0,,,,,3,279,6.65,6.7,6.69,6.69,True
+Kazakhstan,60264708,Dauren Zhumat,Midfielder,False,real,False,0,0,,,,,2,38,6.39,6.69,6.68,6.69,True
+Kazakhstan,85641367,Magzhan Toktybay,Forward,False,real,False,0,0,,,,,1,33,6.6,6.7,6.69,6.69,True
+Kazakhstan,17944892,Aybar Zhaksylykov,Forward,False,real,False,0,0,,,,,2,92,6.35,6.69,6.67,6.68,True
+Kazakhstan,17949239,Elkhan Astanov,Midfielder,False,real,False,0,0,,,,,4,90,6.6,6.68,6.65,6.67,True
+Kazakhstan,9030000,Oralkhan Omirtaev,Forward,False,real,False,0,0,,,,,2,54,6.3,6.68,6.66,6.67,True
+Kazakhstan,9029678,Yan Vorogovskiy,Defender,False,real,True,0,0,,,,,11,960,6.63,6.65,6.64,6.65,True
+Kazakhstan,71721146,D. Satpaev,Forward,False,real,False,0,0,,,,,7,378,6.59,6.67,6.64,6.65,True
+Kazakhstan,79017022,Azamat Tuyakbayev,Midfielder,False,real,False,0,0,,,,,1,45,6.46,6.66,6.62,6.64,True
+Kazakhstan,17955035,Ular Zhaksybaev,Defender,False,real,False,0,0,,,,,2,99,6.18,6.65,6.6,6.63,True
+Kazakhstan,17950849,Ramazan Orazov,Midfielder,False,real,True,0,0,,,,,9,553,6.56,6.63,6.59,6.61,True
+Kazakhstan,51850204,Damir Kasabulat,Defender,False,real,False,0,0,,,,,4,152,6.33,6.63,6.57,6.61,True
+Kazakhstan,75125652,Arsen Ashirbek,Midfielder,False,real,False,0,0,,,,,3,136,6.5,6.63,6.58,6.61,True
+Kazakhstan,50152942,I. Chesnokov,Midfielder,False,real,False,0,0,,,,,9,605,6.5,6.62,6.57,6.6,True
+Kazakhstan,17952137,Dinmukhamed Karaman,Midfielder,False,real,True,0,0,,,,,8,460,6.57,6.62,6.58,6.6,True
+Kazakhstan,52135174,Aleksandr Mrynskiy,Defender,False,real,True,0,0,,,,,4,274,6.54,6.61,6.57,6.6,True
+Kazakhstan,359989,Serikzhan Muzhikov,Midfielder,False,real,False,0,0,,,,,3,144,5.97,6.62,6.54,6.59,True
+Kazakhstan,17987718,Artur Shushenachev,Forward,False,real,False,0,0,,,,,3,140,6.43,6.6,6.54,6.57,True
+Kazakhstan,17956806,Erkin Tapalov,Defender,False,real,False,0,0,,,,,4,241,6.32,6.58,6.49,6.54,True
+Kazakhstan,73041024,Ismail Bekbolat,Forward,False,real,False,0,0,,,,,2,54,6.07,6.56,6.45,6.52,True
+Kazakhstan,87716013,Zhasulan Amir,Defender,False,real,False,0,0,,,,,3,139,6.31,6.54,6.45,6.51,True
+Kazakhstan,47215658,G. Kenzhebek,Midfielder,False,real,True,0,0,,,,,12,622,6.39,6.51,6.43,6.48,True
 Luxembourg,8996512,A. Moris,Goalkeeper,True,probable,True,0,0,,,,,14,1198,7.28,7.13,7.24,7.17,True
 Luxembourg,3723279,V. Thill,Midfielder,True,probable,True,0,0,,,,,8,508,7.01,6.88,6.96,6.92,True
 Luxembourg,4172952,L. Barreiro,Midfielder,True,probable,True,0,0,,,,0.4,13,1138,6.98,6.88,6.95,6.91,True
