@@ -748,7 +748,7 @@
  "Real Madrid": [
   [
    "#FFFFFF",
-   "#FFFFFF",
+   "#1E2B5C",
    true
   ],
   [
@@ -776,8 +776,8 @@
  ],
  "Villarreal": [
   [
-   "#FFFF00",
-   "#FFFF00",
+   "#FFE11F",
+   "#005187",
    true
   ],
   [
@@ -811,7 +811,7 @@
  "Sevilla FC": [
   [
    "#FFFFFF",
-   "#FFFFFF",
+   "#D8262F",
    true
   ],
   [
@@ -1118,8 +1118,8 @@
  ],
  "AC Milan": [
   [
+   "#FB090B",
    "#000000",
-   "#FF0000",
    false
   ],
   [
@@ -1244,8 +1244,8 @@
  ],
  "Atalanta": [
   [
+   "#1E71B8",
    "#000000",
-   "#0060F0",
    false
   ],
   [
@@ -1274,7 +1274,7 @@
  "Auxerre": [
   [
    "#FFFFFF",
-   "#FFFFFF",
+   "#0055A4",
    true
   ],
   [
@@ -1285,8 +1285,8 @@
  ],
  "Bayer Leverkusen": [
   [
+   "#E32221",
    "#000000",
-   "#FF0000",
    false
   ],
   [
@@ -1373,7 +1373,7 @@
  "Borussia Mönchengladbach": [
   [
    "#FFFFFF",
-   "#FFFFFF",
+   "#000000",
    true
   ],
   [
@@ -1389,8 +1389,8 @@
  ],
  "Bournemouth": [
   [
+   "#DA291C",
    "#000000",
-   "#FF2C2C",
    false
   ],
   [
@@ -1423,9 +1423,9 @@
  ],
  "Brighton": [
   [
-   "#1144DD",
-   "#1144DD",
-   true
+   "#0057B8",
+   "#FFFFFF",
+   false
   ],
   [
    "#FFFFFF",
@@ -1573,9 +1573,9 @@
  ],
  "Crystal Palace": [
   [
-   "#FFFFFF",
-   "#FFFFFF",
-   true
+   "#1B458F",
+   "#C4122E",
+   false
   ],
   [
    "#191919",
@@ -1653,8 +1653,8 @@
  ],
  "Estac Troyes": [
   [
-   "#0000FF",
-   "#0000FF",
+   "#0055A4",
+   "#FFFFFF",
    true
   ],
   [
@@ -1722,7 +1722,7 @@
  "FC Koln": [
   [
    "#FFFFFF",
-   "#FFFFFF",
+   "#ED1C24",
    true
   ],
   [
@@ -1818,8 +1818,8 @@
  ],
  "FSV Mainz 05": [
   [
-   "#FF0000",
-   "#FF0000",
+   "#ED1C24",
+   "#FFFFFF",
    true
   ],
   [
@@ -1901,6 +1901,13 @@
    "#FFFFFF",
    "#008022",
    false
+  ]
+ ],
+ "Frosinone": [
+  [
+   "#FFED00",
+   "#0047AB",
+   true
   ]
  ],
  "Fulham": [
@@ -2053,8 +2060,8 @@
  ],
  "Inter": [
   [
+   "#0068A8",
    "#000000",
-   "#0033FF",
    false
   ],
   [
@@ -2434,7 +2441,7 @@
  "Marseille": [
   [
    "#FFFFFF",
-   "#FFFFFF",
+   "#2FAEE0",
    true
   ],
   [
@@ -2496,8 +2503,8 @@
  ],
  "Monza": [
   [
-   "#FF0000",
-   "#FF0000",
+   "#E30613",
+   "#FFFFFF",
    true
   ],
   [
@@ -2608,6 +2615,13 @@
    false
   ]
  ],
+ "Olympiakos Piraeus": [
+  [
+   "#E2001A",
+   "#FFFFFF",
+   false
+  ]
+ ],
  "Omonia Nicosia": [
   [
    "#FFFFFF",
@@ -2645,7 +2659,7 @@
  "Paris FC": [
   [
    "#000060",
-   "#000060",
+   "#FFFFFF",
    true
   ],
   [
@@ -2661,8 +2675,8 @@
  ],
  "Paris Saint Germain": [
   [
-   "#FF0000",
-   "#0000CC",
+   "#004170",
+   "#DA291C",
    false
   ],
   [
@@ -2811,7 +2825,7 @@
  ],
  "SC Paderborn 07": [
   [
-   "#000000",
+   "#005CA9",
    "#000000",
    true
   ],
@@ -3110,7 +3124,7 @@
  "Tottenham": [
   [
    "#FFFFFF",
-   "#FFFFFF",
+   "#132257",
    true
   ],
   [
@@ -3126,8 +3140,8 @@
  ],
  "Toulouse": [
   [
-   "#FFFFFF",
    "#5F00B5",
+   "#FFFFFF",
    false
   ],
   [
@@ -3236,7 +3250,7 @@
  "Venezia": [
   [
    "#000000",
-   "#000000",
+   "#F26522",
    true
   ],
   [

@@ -56,11 +56,11 @@ Moldova                  #0000FF #FFFFFF 2c | #FFBB00 #FFFFFF 2c | #FF0000 #FFFF
 Andorra                  #E70000 #FF0000 1c | #FFFFFF #FFFFFF 1c
 San Marino               #FFFFFF #87D9FF 2c | #000055 #FFFFFF 2c
 Barcelona                #A50044 #004D98 2c | #000000 #791ED6 2c | #88D9D3 #89DAD4 1c
-Real Madrid              #FFFFFF #FFFFFF 1c | #142B2F #162E32 1c
+Real Madrid              #FFFFFF #1E2B5C 1c | #142B2F #162E32 1c
 Atlético Madrid          #CB3524 #FFFFFF 2c | #000000 #000000 1c | #DADADA #E2001D 1c
-Villarreal               #FFFF00 #FFFF00 1c | #CBCBCB #CBCBCB 1c | #22B6B4 #FFFFFF 1c
+Villarreal               #FFE11F #005187 1c | #CBCBCB #CBCBCB 1c | #22B6B4 #FFFFFF 1c
 Real Betis               #0BB363 #FFFFFF 2c | #005C29 #005C29 1c | #000000 #0000BB 2c
-Sevilla FC               #FFFFFF #FFFFFF 1c | #E30000 #E20001 1c | #000000 #000000 1c
+Sevilla FC               #FFFFFF #D8262F 1c | #E30000 #E20001 1c | #000000 #000000 1c
 Real Sociedad            #0042FF #FFFFFF 2c | #000000 #000000 1c | #B61D2F #B61D2F 1c
 Alavés                   #1F4E9E #FFFFFF 2c | #000000 #45323B 2c | #AAFFEF #FFFFFF 1c
 Deportivo La Coruña      #2B67C2 #FFFFFF 2c | #000000 #000000 1c | #2B67C2 #FFFFFF 2c
@@ -79,7 +79,7 @@ Oviedo                   #0000DD #FFFFFF 2c | #DDDDDD #0000DD 2c | #FFC7CF #FFFF
 Mallorca                 #E2001A #111111 1c | #000000 #000000 1c | #77BBFF #77BBFF 1c
 Girona                   #D7182A #FFFFFF 2c | #000000 #000000 1c | #7CDAC5 #FFFFFF 1c
 1899 Hoffenheim          #2727FF #FFFFFF 2c | #E0D9CC #E0D9CC 1c | #6D66AC #B7B5E8 2c
-AC Milan                 #000000 #FF0000 2c | #FFFFFF #F30000 1c | #3B3A3F #3B3A3F 1c
+AC Milan                 #FB090B #000000 2c | #FFFFFF #F30000 1c | #3B3A3F #3B3A3F 1c
 AEK Athens FC            #FFE200 #000000 2c | #000000 #000000 1c | #77BBFF #77BBFF 1c
 AS Roma                  #960728 #681F30 1c | #ECE3DA #ECE3DA 1c | #46474B #000000 1c
 Aarhus GF                #FFFFFF #191C51 1c | #1F2253 #8C8C98 2c
@@ -87,19 +87,19 @@ Angers                   #FFFFFF #000000 2c | #FFFFFF #FFFFFF 1c | #DAAD31 #7B61
 Ararat-Armenia           #FFFFFF #FFFFFF 1c | #000000 #000000 1c
 Arsenal                  #F00000 #FFFFFF 1c | #003370 #0D1B5C 1c | #FBF9C6 #13223F 1c
 Aston Villa              #69091C #FFFFFF 2c | #000000 #000000 1c | #FFFFFF #69091C 1c
-Atalanta                 #000000 #0060F0 2c | #FFFFFF #FFFFFF 1c | #E2CAB0 #FF8F00 1c
+Atalanta                 #1E71B8 #000000 2c | #FFFFFF #FFFFFF 1c | #E2CAB0 #FF8F00 1c
 Atert Bissen             #FFFF00 #000000 1c | #000000 #FFFF00 1c
-Auxerre                  #FFFFFF #FFFFFF 1c | #000000 #FFFFFF 2c
-Bayer Leverkusen         #000000 #FF0000 2c | #D8E6E6 #587185 1c | #FFFFFF #9E9E9E 1c
+Auxerre                  #FFFFFF #0055A4 1c | #000000 #FFFFFF 2c
+Bayer Leverkusen         #E32221 #000000 2c | #D8E6E6 #587185 1c | #FFFFFF #9E9E9E 1c
 Bayern Munich            #FF0000 #FFFFFF 2c | #FFFFFF #000F5A 1c | #00003C #4E0739 1c
 Bodø/Glimt               #F6D600 #FFDD00 1c | #FFFFFF #EDE8D0 1c
 Bologna                  #04043D #CE0000 2c | #FFFFFF #00003C 1c
 Borac Banja Luka         #FF0000 #0000FF 2c | #FFFFFF #444444 1c
 Borussia Dortmund        #FFE300 #000000 1c | #000000 #000000 1c | #843DAF #843DAF 1c
-Borussia Mönchengladbach #FFFFFF #FFFFFF 1c | #000000 #000000 1c | #A7D6DA #287477 2c
-Bournemouth              #000000 #FF2C2C 2c | #ABA7E0 #6152BC 2c | #EAE6DE #000000 1c
+Borussia Mönchengladbach #FFFFFF #000000 1c | #000000 #000000 1c | #A7D6DA #287477 2c
+Bournemouth              #DA291C #000000 2c | #ABA7E0 #6152BC 2c | #EAE6DE #000000 1c
 Brentford                #FF0000 #FFFFFF 2c | #000040 #625E6C 2c | #FFFF00 #FFFF6C 2c
-Brighton                 #1144DD #1144DD 1c | #FFFFFF #FFFFFF 1c | #00587E #00587E 1c
+Brighton                 #0057B8 #FFFFFF 2c | #FFFFFF #FFFFFF 1c | #00587E #00587E 1c
 Burnley                  #841E43 #FFFFFF 1c | #FAEFD9 #440C25 1c | #176C60 #000000 2c
 Cagliari                 #022249 #AE0C21 2c | #FFFFFF #FFFFFF 1c | #0FBAF0 #0FBAF0 1c
 Celje                    #000055 #000055 1c | #FF6600 #FF6600 1c
@@ -109,27 +109,28 @@ Club Brugge KV           #000000 #0080FF 2c | #F1EEE4 #FFFFFF 1c
 Como                     #215AAE #FFFFFF 1c | #FFFFFF #000055 1c
 Coventry                 #FFFFFF #65B6E3 2c | #F5F3F1 #F5F3F1 1c | #E795DF #FFFFFF 2c
 Cremonese                #DE2424 #B4B4B4 2c | #FFFFFF #A1A1A1 1c
-Crystal Palace           #FFFFFF #FFFFFF 1c | #191919 #000000 1c | #000088 #F30000 2c
+Crystal Palace           #1B458F #C4122E 2c | #191919 #000000 1c | #000088 #F30000 2c
 Dinamo Zagreb            #0000FF #0000FE 1c | #FFFFFF #FFFFFF 1c | #000000 #000000 1c
 Drita                    #0000FF #FFFFFF 2c | #FFFFFF #FFFFFF 1c | #00D1C1 #00DACA 1c
 Egnatia Rrogozhinë       #00782F #FFFFFF 2c | #FFFFFF #FFFFFF 1c
 Eintracht Frankfurt      #D21F27 #000000 2c | #FFFFFF #000000 1c | #D7D7D7 #859FCD 2c
-Estac Troyes             #0000FF #0000FF 1c | #EEDBC7 #4E3A1D 1c | #000000 #FF9EB1 2c
+Estac Troyes             #0055A4 #FFFFFF 1c | #EEDBC7 #4E3A1D 1c | #000000 #FF9EB1 2c
 Everton                  #0030B0 #FFFFFF 1c | #FFFFFF #090040 1c | #466466 #006400 1c
 FC Augsburg              #EDE6DC #680F00 1c | #016C76 #016C76 1c | #5C111B #5C111B 1c
 FC Heidenheim            #FF0000 #9B0000 2c | #0000FF #000060 2c | #FFFFFF #FFFFFF 1c
-FC Koln                  #FFFFFF #FFFFFF 1c | #FF0000 #FF8989 2c | #000055 #FFFFFF 2c
+FC Koln                  #FFFFFF #ED1C24 1c | #FF0000 #FF8989 2c | #000055 #FFFFFF 2c
 FC Porto                 #FFFFFF #0022EA 2c | #41001D #41001D 1c | #BAE0E3 #BAE0E3 1c
 FC Schalke 04            #0000A2 #FFFFFF 1c | #FFFFFF #000040 1c | #ABFF00 #FFFFFF 2c
 FC St. Pauli             #FFFFFF #65423A 2c | #FFFFFF #64534C 1c | #272727 #000000 1c
 FC Thun                  #FF0000 #FF0000 1c | #FFFFFF #FFFFFF 1c
 FK Crvena zvezda         #FFFFFF #FF0000 2c | #000055 #FFFFFF 1c | #FFFFFF #FF8989 1c
-FSV Mainz 05             #FF0000 #FF0000 1c | #FFFFFF #FFFFFF 1c | #4A4A4A #555555 1c
+FSV Mainz 05             #ED1C24 #FFFFFF 1c | #FFFFFF #FFFFFF 1c | #4A4A4A #555555 1c
 Fenerbahce               #FFFF00 #000060 2c | #FFFFFF #E8DEAC 2c | #000060 #FFFFFF 1c
 Feyenoord                #FFFFFF #FF0000 2c | #71CCF8 #FFFFFF 1c | #25232E #3D3F56 1c
 Fiorentina               #5A328C #552A79 1c | #FFFFFF #FFFFFF 1c
 Flora Tallinn            #008000 #FFFFFF 1c | #FFFFFF #FFFFFF 1c
 Floriana                 #008022 #007733 1c | #FFFFFF #008022 2c
+Frosinone                #FFED00 #0047AB 1c
 Fulham                   #FFFFFF #000000 1c | #000000 #FF0000 2c | #87CEEB #FFFFFF 2c
 Galatasaray              #B11638 #FB9502 2c | #FFFFFF #000000 1c | #2C2C2C #2C2C2C 1c
 Genoa                    #00263E #AE1919 2c | #F2E8DC #AE1919 1c | #21354A #F2002E 1c
@@ -139,7 +140,7 @@ Hamburger SV             #FFFFFF #FF0000 1c | #214B98 #FFFFFF 2c | #881330 #0000
 Hapoel Beer Sheva        #F00000 #FFFFFF 2c | #FFFFFF #FFFFFF 1c | #000000 #000000 1c
 Heart of Midlothian      #601B2B #FFFFFF 1c | #FFFFFF #601F2E 1c | #000000 #003497 2c
 Hull City                #FF9000 #000000 2c | #FFFFFF #000000 1c | #0000FF #FFFFFF 1c
-Inter                    #000000 #0033FF 2c | #FFFFFF #D6D6FF 2c | #707781 #000000 2c
+Inter                    #0068A8 #000000 2c | #FFFFFF #D6D6FF 2c | #707781 #000000 2c
 Ipswich                  #2741A3 #FFFFFF 2c | #F7EBC8 #312F28 2c
 Juventus                 #FFFFFF #000000 2c | #FFA8C6 #000000 1c | #000000 #000000 1c
 Kairat Almaty            #BABA00 #505000 2c | #FFFFFF #FFFFFF 1c | #54DEAD #000000 1c
@@ -164,21 +165,22 @@ Lyon                     #FFFFFF #0000FF 2c | #F45764 #8C2B4C 1c | #191919 #0000
 MKK-Dnepr                #8CFF00 #FFFFFF 1c | #000000 #101C00 1c | #F0F0F0 #F0F0F0 1c
 Manchester City          #9FCEF2 #FFFFFF 1c | #000000 #000000 1c | #FFFFFF #002C79 1c
 Manchester United        #FF0000 #FFFFFF 1c | #0000F0 #0000F0 1c | #E8E7E3 #FAF9F6 1c
-Marseille                #FFFFFF #FFFFFF 1c | #28273D #59A6B5 2c | #AEBBED #AEBBED 1c
+Marseille                #FFFFFF #2FAEE0 1c | #28273D #59A6B5 2c | #AEBBED #AEBBED 1c
 Metz                     #812020 #FFFFFF 1c | #FFFFFF #812020 1c | #15233B #812020 2c
 Mjällby AIF              #FFEE00 #000000 1c | #FFFFFF #FFFFFF 1c
 Monaco                   #FF0000 #FFFFFF 2c | #563138 #542D34 1c | #FFFFFF #C2EFE5 1c
-Monza                    #FF0000 #FF0000 1c | #FFFFFF #FFFFFF 1c | #000000 #FFFFFF 2c
+Monza                    #E30613 #FFFFFF 1c | #FFFFFF #FFFFFF 1c | #000000 #FFFFFF 2c
 NEC Nijmegen             #FF0000 #008000 2c | #000000 #FFFFFF 1c | #1A3E3D #1A3E3D 1c
 Nantes                   #FFFF00 #FFFF00 1c | #000000 #000000 1c
 Napoli                   #5F8EE6 #FFFFFF 1c | #FFFFFF #FFFFFF 1c | #ED1C24 #FE0000 1c
 Newcastle United         #000000 #FFFFFF 2c | #0F1D32 #0C192C 1c | #DAC8E2 #CBC3E3 1c
 Nice                     #000000 #FF0000 2c | #F6F5F1 #F6F5F1 1c | #03447A #03447A 1c
 Nottingham Forest        #D70926 #FFFFFF 1c | #163429 #0A3023 1c | #87D9FF #FFFFFF 2c
+Olympiakos Piraeus       #E2001A #FFFFFF 2c
 Omonia Nicosia           #FFFFFF #9EB59E 2c | #000000 #003604 2c | #EF0000 #FFFFFF 2c
 PSV Eindhoven            #F90000 #FFFFFF 2c | #FFFFFF #FFFFFF 1c | #00245A #005E8C 2c
-Paris FC                 #000060 #000060 1c | #87CEEB #FFFFFF 1c | #FFFFFF #000060 2c
-Paris Saint Germain      #FF0000 #0000CC 2c | #FFFFFF #FF0000 2c
+Paris FC                 #000060 #FFFFFF 1c | #87CEEB #FFFFFF 1c | #FFFFFF #000060 2c
+Paris Saint Germain      #004170 #DA291C 2c | #FFFFFF #FF0000 2c
 Parma                    #FFFFFF #000000 2c | #0063B0 #FFD900 2c | #000000 #000000 1c
 Petrocub                 #000000 #000000 1c | #FFFFFF #FFFFFF 1c
 Pisa                     #000000 #0000DD 2c | #FF6600 #000000 2c | #E3E1E2 #000000 1c
@@ -188,7 +190,7 @@ Rennes FC                #FF0000 #000000 1c | #FFFFFF #000000 2c | #FFA8C8 #FFFF
 Riga FC                  #FFFFFF #87CEEB 2c | #353935 #353935 1c | #FFFFFF #FF9FCF 2c
 Rodez                    #DD0000 #870000 2c | #FFDF00 #FFC90E 1c
 SC Freiburg              #FF0000 #FFFFFF 2c | #FFFFFF #FF0000 1c | #000000 #880000 2c
-SC Paderborn 07          #000000 #000000 1c | #FF0000 #FF0000 1c | #BAD6E6 #BAD6E6 1c
+SC Paderborn 07          #005CA9 #000000 1c | #FF0000 #FF0000 1c | #BAD6E6 #BAD6E6 1c
 SV Elversberg            #FFFFFF #000000 2c | #000000 #000000 1c | #FF0000 #FF8888 2c
 Sabah FA                 #FF0000 #FFFFFF 1c | #0000FF #FFFFFF 1c
 Saburtalo                #FFFFFF #FFFFFF 1c | #FF0000 #FFFFFF 2c
@@ -207,15 +209,15 @@ Sunderland               #FFFFFF #FF0000 2c | #FF9FBF #000000 2c | #172295 #0000
 Sutjeska                 #0044FF #FFFFFF 2c | #FFFFFF #FFFFFF 1c
 The New Saints           #FFFFFF #0DB357 2c | #0000FF #0000FF 1c | #000000 #000000 1c
 Torino                   #6C282F #FFFFFF 1c | #FFFFFF #691B25 2c | #354052 #191919 1c
-Tottenham                #FFFFFF #FFFFFF 1c | #000E4C #FF9A00 2c | #A791EA #4C3A80 2c
-Toulouse                 #FFFFFF #5F00B5 2c | #E44A9E #FFFFFF 1c | #000000 #000000 1c
+Tottenham                #FFFFFF #132257 1c | #000E4C #FF9A00 2c | #A791EA #4C3A80 2c
+Toulouse                 #5F00B5 #FFFFFF 2c | #E44A9E #FFFFFF 1c | #000000 #000000 1c
 Tre Fiori                #FFE80D #0000FF 1c | #FFFFFF #FFF665 1c
 Udinese                  #FFFFFF #000000 2c | #000066 #0000AD 2c | #E5E7DA #E5E7DA 1c
 Union Berlin             #FF0000 #FFFFFF 2c | #444444 #000000 1c | #FFFFFF #FFE88E 2c
 Union Saint-Gilloise     #FFE000 #000055 1c | #B9E9FF #00A8E0 1c | #407447 #000055 1c
 Universitatea Craiova    #FFFFFF #7E8AFF 2c | #0044FF #7E8AFF 2c | #000000 #002FBC 2c
 Vardar Skopje            #FF0000 #000000 2c | #FFFFFF #FFFFFF 1c
-Venezia                  #000000 #000000 1c | #EDE4D9 #EDE4D9 1c | #F3384E #000000 1c
+Venezia                  #000000 #F26522 1c | #EDE4D9 #EDE4D9 1c | #F3384E #000000 1c
 Verona                   #203664 #203664 1c | #FFDC00 #FFDC00 1c
 VfB Stuttgart            #FFFFFF #FF0000 2c | #FF0000 #FFFFFF 2c | #036861 #000000 2c
 VfL Wolfsburg            #1A3A2F #2FD60A 2c | #C6D1CE #C6D1CE 1c | #F80000 #FF0000 1c

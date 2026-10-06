@@ -32,6 +32,35 @@ CORREGIR = {
     "Mallorca": {0: ["#E2001A", "#111111", True]},             # roja con pantalón negro; el dibujo sale casi negro
     "Czech Republic": {0: ["#DD0000", "#11457E", True],          # roja lisa, pantalón azul (el blanco del dibujo son detalles)
                        1: ["#FFFFFF", "#11457E", True]},       # blanca con detalles azules
+    # --- 2yellow redes, 06/10/2026: clubes de las 5 grandes y Champions ---
+    # RAYAS / color del club (el dibujo da más píxeles al color que no es el del club)
+    "Inter": {0: ["#0068A8", "#000000", False]},
+    "AC Milan": {0: ["#FB090B", "#000000", False]},
+    "Atalanta": {0: ["#1E71B8", "#000000", False]},
+    "Bayer Leverkusen": {0: ["#E32221", "#000000", False]},
+    "Bournemouth": {0: ["#DA291C", "#000000", False]},
+    "Paris Saint Germain": {0: ["#004170", "#DA291C", False]},   # azul marino con franja roja; el dibujo sacaba el rojo
+    "Toulouse": {0: ["#5F00B5", "#FFFFFF", False]},              # "Les Violets": manda el violeta
+    "Crystal Palace": {0: ["#1B458F", "#C4122E", False]},        # rayas rojas y azules; el dibujo salió blanco
+    # una camiseta lisa sin segundo color en la ficha (secundario = color de su escudo/detalles)
+    "Real Madrid": {0: ["#FFFFFF", "#1E2B5C", True]},
+    "Sevilla FC": {0: ["#FFFFFF", "#D8262F", True]},
+    "Villarreal": {0: ["#FFE11F", "#005187", True]},
+    "Tottenham": {0: ["#FFFFFF", "#132257", True]},
+    "Marseille": {0: ["#FFFFFF", "#2FAEE0", True]},
+    "Auxerre": {0: ["#FFFFFF", "#0055A4", True]},
+    "Borussia Mönchengladbach": {0: ["#FFFFFF", "#000000", True]},
+    "FC Koln": {0: ["#FFFFFF", "#ED1C24", True]},
+    "FSV Mainz 05": {0: ["#ED1C24", "#FFFFFF", True]},
+    "Monza": {0: ["#E30613", "#FFFFFF", True]},
+    "Brighton": {0: ["#0057B8", "#FFFFFF", False]},             # rayas azules y blancas
+    "Estac Troyes": {0: ["#0055A4", "#FFFFFF", True]},
+    "Paris FC": {0: ["#000060", "#FFFFFF", True]},
+    "SC Paderborn 07": {0: ["#005CA9", "#000000", True]},        # azul y negro; el dibujo salió negro
+    "Venezia": {0: ["#000000", "#F26522", True]},                # negro, naranja y verde
+    # sin ficha de equipaciones utilizable en Wikipedia
+    "Frosinone": {0: ["#FFED00", "#0047AB", True]},
+    "Olympiakos Piraeus": {0: ["#E2001A", "#FFFFFF", False]},
     # sin ficha de equipaciones en Wikipedia (comprobado: la página no tiene los campos)
     "Sweden": {0: ["#FECC00", "#005BAC", True], 1: ["#005BAC", "#FECC00", True]},
 }

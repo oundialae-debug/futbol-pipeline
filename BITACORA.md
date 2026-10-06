@@ -11,6 +11,10 @@ cambios de código y archivos".
   el resumen y dónde leerlo.
 - Lo más nuevo, arriba.
 
+## 06/10/2026 — colores de 228 equipos, curados
+- Qué: `colores_redes.yml` bajó 226 equipos de Wikipedia; `curar.py` corrige a mano 26 con motivo (rayas donde manda el color del club: Inter, Milan, Atalanta, Leverkusen, Bournemouth, PSG, Toulouse, Palace, Brighton; lisas sin secundario: Madrid, Sevilla, Villarreal, Tottenham, Marseille...; sin ficha: Frosinone, Olympiakos).
+- Por qué: revisión antes de usarlos (regla de rigor). Comprobado: Inter azul vs Milan rojo; Liverpool vs United -> United con la 2ª.
+
 ## 06/10/2026 — colores_redes: descarga robusta
 - Qué: wiki_equipaciones/colores_camiseta fusionan con lo ya bajado (solo piden lo que falta), van despacio y reintentan; tabla de la app restaurada.
 - Por qué: la 1ª pasada solo bajó 4 de 250 equipos (Wikipedia cortó) y dejó la tabla en 18.
