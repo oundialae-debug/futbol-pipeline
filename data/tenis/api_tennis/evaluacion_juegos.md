@@ -1,14 +1,14 @@
 # Más/menos juegos en directo: apuestas en papel
 
-Partidos acabados con cuota de juegos en el registro: **383**. Una apuesta por partido (se agrupa por partido). Cuota = la de la API en esa pasada, no la de Luckia. Con menos de 20 apuestas el número no significa nada.
+Partidos acabados con cuota de juegos en el registro: **393**. Una apuesta por partido (se agrupa por partido). Cuota = la de la API en esa pasada, no la de Luckia. Con menos de 20 apuestas el número no significa nada.
 
 | estrategia | apuestas | aciertos | beneficio medio | sigmas |
 |---|---|---|---|---|
-| **señal: vigilar el menos** | 95 | 68% | +23.3% | +2.56 |
-| control: siempre el menos (1ª pasada) | 383 | 50% | -6.9% | -1.45 |
-| control: siempre el más (1ª pasada) | 383 | 50% | -7.6% | -1.59 |
+| **señal: vigilar el menos** | 97 | 67% | +20.7% | +2.28 |
+| control: siempre el menos (1ª pasada) | 393 | 50% | -7.0% | -1.48 |
+| control: siempre el más (1ª pasada) | 393 | 50% | -7.6% | -1.62 |
 
-Brier del 'más' en la línea principal (1ª pasada): modelo 0.2697, mercado 0.2514 (menor es mejor). El modelo da al más +13.1% sobre lo que pasa de verdad.
+Brier del 'más' en la línea principal (1ª pasada): modelo 0.2695, mercado 0.2512 (menor es mejor). El modelo da al más +13.1% sobre lo que pasa de verdad.
 
 ## Señales
 
@@ -107,6 +107,8 @@ Brier del 'más' en la línea principal (1ª pasada): modelo 0.2697, mercado 0.2
 | WTA 125 Samsun: D. Galfi vs J. Grabher | 21.5 | 1.83 | 19 | gana |
 | ATP Shanghai: M. Zheng vs N. Mejia | 21.5 | 1.83 | 19 | gana |
 | ATP Shanghai: R. Te vs I. Simakin | 21.5 | 1.91 | 17 | gana |
+| ATP Shanghai: K. Jacquet vs R. Sakamoto | 33.5 | 1.67 | 36 | pierde |
+| Challenger Wuning 3 (China): R. Seggerman vs H. Shiraishi | 36.5 | 1.73 | 39 | pierde |
 | WTA 125 Suzhou: O. Oliynykova vs W. Zheng | 16.5 | 1.73 | 16 | gana |
 | WTA 125 Suzhou: K. Zavatska vs Y. Shao | 27.5 | 1.83 | 23 | gana |
 
@@ -121,11 +123,11 @@ Brier del 'más' en la línea principal (1ª pasada): modelo 0.2697, mercado 0.2
 
 ## Previos (antes de empezar), línea principal de juegos y ganador
 
-505 partidos. Juegos (más de la línea principal), Brier (menor es mejor): modelo 0.2727, modelo corregido con el historial 0.2547, casa 0.2505. Pasó el más en el 50%.
-Ganador (505): acierto modelo 67%, casa 70%.
+530 partidos. Juegos (más de la línea principal), Brier (menor es mejor): modelo 0.2744, modelo corregido con el historial 0.2547, casa 0.2501. Pasó el más en el 49%.
+Ganador (530): acierto modelo 66%, casa 70%.
 
 ## Aprendizaje (recalibración del modelo)
 
-Partidos resueltos: 311 (2230 líneas). Activa: **sí** (hace falta 30+ partidos y que mejore a la CASA en partidos que no vio).
-**Apostando con lo aprendido, día a día** (cada día aprende solo de los anteriores): 208 apuestas, aciertos 48%, beneficio medio -12.0%, -1.84 sigmas.
-Brier (menor es mejor): modelo 0.2680, modelo con el saque de hoy 0.2595, casa 0.2448, recalibrado (validado por partidos) 0.2348. Sesgo del modelo hacia el más: +18.4%.
+Partidos resueltos: 321 (2310 líneas). Activa: **sí** (hace falta 30+ partidos y que mejore a la CASA en partidos que no vio).
+**Apostando con lo aprendido, día a día** (cada día aprende solo de los anteriores): 218 apuestas, aciertos 48%, beneficio medio -11.9%, -1.87 sigmas.
+Brier (menor es mejor): modelo 0.2675, modelo con el saque de hoy 0.2584, casa 0.2448, recalibrado (validado por partidos) 0.2323. Sesgo del modelo hacia el más: +18.1%.
