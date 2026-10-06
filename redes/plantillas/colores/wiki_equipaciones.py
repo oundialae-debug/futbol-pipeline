@@ -59,15 +59,17 @@ EXTRA = Path(__file__).with_name("equipos_extra.txt")
 
 def buscar_titulo(nombre):
     q = urllib.parse.urlencode({"action": "query", "list": "search", "srsearch": f"{nombre} football club", "srlimit": 1, "format": "json"})
-    r = json.load(urllib.request.urlopen(urllib.request.Request("https://en.wikipedia.org/w/api.php?" + q,
-                                                                 headers={"User-Agent": "2yellow-colores/1.0"}), timeout=30))
+    r = json.loads(_abrir("https://en.wikipedia.org/w/api.php?" + q))
     hits = r.get("query", {}).get("search", [])
     return hits[0]["title"] if hits else None
 
 
-if EXTRA.exists():
+def _extra():
+  if EXTRA.exists():
     for _n in [l.strip() for l in EXTRA.read_text().splitlines() if l.strip()]:
-        if _n not in PAGINAS:
+        _ya = json.loads(Path(__file__).with_name("kits_wiki.json").read_text()) if Path(__file__).with_name("kits_wiki.json").exists() else {}
+        if _n not in PAGINAS and not _ya.get(_n, {}).get("kits"):
+            __import__("time").sleep(0.7)
             try:
                 _t = buscar_titulo(_n)
                 if _t:
@@ -78,15 +80,34 @@ if EXTRA.exists():
 CAMPOS = ("body", "shorts", "socks", "leftarm", "pattern_b")
 
 
+def _abrir(url):
+    """Con reintentos y espera: Wikipedia corta si se le pide deprisa (06/10 solo bajaron 4 de 250)."""
+    import time
+    for intento in range(6):
+        try:
+            return urllib.request.urlopen(urllib.request.Request(url, headers={"User-Agent": "2yellow-colores/1.0 (https://github.com/oundialae-debug)"}), timeout=30).read()
+        except Exception as e:  # noqa: BLE001
+            print("  reintento", intento + 1, url[:80], e, file=sys.stderr)
+            time.sleep(5 * (intento + 1))
+    raise RuntimeError("Wikipedia no responde")
+
+
 def wikitexto(titulo):
     url = "https://en.wikipedia.org/w/index.php?" + urllib.parse.urlencode({"title": titulo, "action": "raw", "redirect": "true"})
-    t = urllib.request.urlopen(urllib.request.Request(url, headers={"User-Agent": "2yellow-colores/1.0"}), timeout=30).read().decode()
+    t = _abrir(url).decode()
     m = re.match(r"#REDIRECT\s*\[\[([^\]#|]+)", t, re.I)
     return wikitexto(m.group(1)) if m else t
 
 
-out = {}
+import time as _time
+_extra()
+# Fusiona: lo ya bajado se conserva y solo se piden los que faltan (antes un fallo dejaba la tabla en 4 equipos)
+_prev = Path(__file__).with_name("kits_wiki.json")
+out = json.loads(_prev.read_text()) if _prev.exists() else {}
 for equipo, titulo in PAGINAS.items():
+    if equipo in out and out[equipo].get("kits"):
+        continue
+    _time.sleep(1.0)
     try:
         t = wikitexto(titulo)
     except Exception as e:  # noqa: BLE001

@@ -100,8 +100,11 @@ def dominantes(k):
 
 
 wiki = json.loads((AQUI / "kits_wiki.json").read_text())
-out = {}
+_prev = AQUI / "kits_camiseta.json"
+out = json.loads(_prev.read_text()) if _prev.exists() else {}  # fusiona: no se pierde lo ya medido
 for equipo, d in wiki.items():
+    if out.get(equipo):
+        continue
     out[equipo] = []
     for k in d["kits"]:
         cols, partes = dominantes(k)

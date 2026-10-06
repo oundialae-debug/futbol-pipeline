@@ -11,6 +11,10 @@ cambios de código y archivos".
   el resumen y dónde leerlo.
 - Lo más nuevo, arriba.
 
+## 06/10/2026 — colores_redes: descarga robusta
+- Qué: wiki_equipaciones/colores_camiseta fusionan con lo ya bajado (solo piden lo que falta), van despacio y reintentan; tabla de la app restaurada.
+- Por qué: la 1ª pasada solo bajó 4 de 250 equipos (Wikipedia cortó) y dejó la tabla en 18.
+
 ## 06/10/2026 — redes: paleta de la app 2yellow
 - Qué: `redes/plantillas/equipaciones.py` y `redes/plantillas/colores/` copiados de app_apostador (rama ccr-302c299f-kdpgwl): 1ª, 2ª y 3ª equipación reales de Wikipedia, regla sin choques (local 1ª, visitante la primera que no choque) y aclarado a contraste 3:1. `generar.py` usa esa paleta; equipo sin ficha = gris de la app (no blanco). `colores_redes.yml` amplía la tabla a los 172 equipos de las 5 grandes y la Champions con el mismo método (Wikipedia, sin API de fútbol).
 - Por qué: usuario: en el XI solo los del Barça salían en azul y el resto en blanco; "la app ya corrigió la paleta, cógela y úsala de ahora en adelante".

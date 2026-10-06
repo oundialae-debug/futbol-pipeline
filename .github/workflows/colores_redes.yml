@@ -19,7 +19,7 @@ jobs:
       - name: Colores
         working-directory: redes/plantillas/colores
         run: |
-          python wiki_equipaciones.py > fichas.txt
+          python wiki_equipaciones.py > fichas.txt 2> errores.txt || true
           python colores_camiseta.py > resultado.txt
           python curar.py > curado.txt
       - name: Guardar

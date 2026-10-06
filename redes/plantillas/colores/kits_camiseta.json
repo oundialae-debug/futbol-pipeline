@@ -1,4 +1,582 @@
 {
+ "England": [
+  {
+   "colores": [
+    "#FFFFFF",
+    "#00003D",
+    "#000000"
+   ],
+   "partes": [
+    0.9,
+    0.04,
+    0.03
+   ],
+   "pantalon": "000040",
+   "dibujo": "_eng26H"
+  },
+  {
+   "colores": [
+    "#FE080A",
+    "#FFFFFF",
+    "#000040"
+   ],
+   "partes": [
+    0.78,
+    0.13,
+    0.05
+   ],
+   "pantalon": "000040",
+   "dibujo": "_eng26A"
+  }
+ ],
+ "Croatia": [
+  {
+   "colores": [
+    "#FFFFFF",
+    "#FF0000",
+    "#FF6F6F"
+   ],
+   "partes": [
+    0.59,
+    0.24,
+    0.13
+   ],
+   "pantalon": "FFFFFF",
+   "dibujo": "_cro2627h"
+  },
+  {
+   "colores": [
+    "#00009D",
+    "#FFFFFF",
+    "#0000D5"
+   ],
+   "partes": [
+    0.74,
+    0.11,
+    0.08
+   ],
+   "pantalon": "0000bc",
+   "dibujo": "_cro2627a"
+  }
+ ],
+ "Czech Republic": [
+  {
+   "colores": [
+    "#DD0000",
+    "#FFFFFF",
+    "#000000"
+   ],
+   "partes": [
+    0.8,
+    0.16,
+    0.03
+   ],
+   "pantalon": "001553",
+   "dibujo": "_cze2627h"
+  },
+  {
+   "colores": [
+    "#FFFFFF",
+    "#202C4E",
+    "#000000"
+   ],
+   "partes": [
+    0.91,
+    0.04,
+    0.03
+   ],
+   "pantalon": "FFFFFF",
+   "dibujo": "_cze2627a"
+  }
+ ],
+ "Spain": [
+  {
+   "colores": [
+    "#D71726",
+    "#FFFFFF",
+    "#312E4F"
+   ],
+   "partes": [
+    0.72,
+    0.11,
+    0.1
+   ],
+   "pantalon": "000066",
+   "dibujo": "_esp26hA_wc"
+  },
+  {
+   "colores": [
+    "#E9E9DD",
+    "#6B041A",
+    "#000000"
+   ],
+   "partes": [
+    0.9,
+    0.04,
+    0.03
+   ],
+   "pantalon": "6a2335",
+   "dibujo": "_esp26a_wc"
+  }
+ ],
+ "France": [
+  {
+   "colores": [
+    "#1C194C",
+    "#0856BA",
+    "#FFFFFF"
+   ],
+   "partes": [
+    0.58,
+    0.25,
+    0.13
+   ],
+   "pantalon": "FFFFFF",
+   "dibujo": "_fra26H"
+  },
+  {
+   "colores": [
+    "#DBF5E8",
+    "#000000",
+    "#98550E"
+   ],
+   "partes": [
+    0.94,
+    0.03,
+    0.03
+   ],
+   "pantalon": "bde4d7",
+   "dibujo": "_fra26a"
+  }
+ ],
+ "Italy": [
+  {
+   "colores": [
+    "#036CC8",
+    "#FFFFFF",
+    "#FAC670"
+   ],
+   "partes": [
+    0.8,
+    0.11,
+    0.04
+   ],
+   "pantalon": "FFFFFF",
+   "dibujo": "_ita26hA"
+  },
+  {
+   "colores": [
+    "#FFFFFF",
+    "#424D77",
+    "#000000"
+   ],
+   "partes": [
+    0.91,
+    0.04,
+    0.03
+   ],
+   "pantalon": "0000FF",
+   "dibujo": "_ita26a"
+  }
+ ],
+ "Belgium": [
+  {
+   "colores": [
+    "#FA0D0F",
+    "#FFFFFF",
+    "#101010"
+   ],
+   "partes": [
+    0.8,
+    0.11,
+    0.05
+   ],
+   "pantalon": "000000",
+   "dibujo": "_bel26hA"
+  },
+  {
+   "colores": [
+    "#8BDDF5",
+    "#FFFFFF",
+    "#E1B8CA"
+   ],
+   "partes": [
+    0.49,
+    0.25,
+    0.18
+   ],
+   "pantalon": "FFFFFF",
+   "dibujo": "_bel26a"
+  }
+ ],
+ "Turkey": [
+  {
+   "colores": [
+    "#C90E04",
+    "#FFFFFF",
+    "#000000"
+   ],
+   "partes": [
+    0.85,
+    0.12,
+    0.03
+   ],
+   "pantalon": "ff0000",
+   "dibujo": "_tur26a"
+  },
+  {
+   "colores": [
+    "#FFFFFF",
+    "#C90E04",
+    "#000000"
+   ],
+   "partes": [
+    0.76,
+    0.21,
+    0.03
+   ],
+   "pantalon": "FFFFFF",
+   "dibujo": "_tur26h"
+  }
+ ],
+ "Germany": [
+  {
+   "colores": [
+    "#FFFFFF",
+    "#000000",
+    "#FFDD00"
+   ],
+   "partes": [
+    0.73,
+    0.14,
+    0.06
+   ],
+   "pantalon": "000000",
+   "dibujo": "_ger26h"
+  },
+  {
+   "colores": [
+    "#00102B",
+    "#FFFFFF",
+    "#67EADB"
+   ],
+   "partes": [
+    0.82,
+    0.12,
+    0.04
+   ],
+   "pantalon": "241E76",
+   "dibujo": "_ger26a"
+  },
+  {
+   "colores": [
+    "#000000",
+    "#493F2C",
+    "#FFFFFF"
+   ],
+   "partes": [
+    0.64,
+    0.16,
+    0.15
+   ],
+   "pantalon": "000000",
+   "dibujo": "_ger26t"
+  }
+ ],
+ "Netherlands": [
+  {
+   "colores": [
+    "#FF5533",
+    "#FFFFFF",
+    "#000000"
+   ],
+   "partes": [
+    0.8,
+    0.11,
+    0.09
+   ],
+   "pantalon": "000000",
+   "dibujo": "_ned26h"
+  },
+  {
+   "colores": [
+    "#FFFFFF",
+    "#FF5533",
+    "#000000"
+   ],
+   "partes": [
+    0.79,
+    0.13,
+    0.04
+   ],
+   "pantalon": "FF6600",
+   "dibujo": "_ned26a"
+  }
+ ],
+ "Serbia": [
+  {
+   "colores": [
+    "#0000DD",
+    "#000094",
+    "#FFFFFF"
+   ],
+   "partes": [
+    0.68,
+    0.17,
+    0.12
+   ],
+   "pantalon": "0000FF",
+   "dibujo": "_srb25h"
+  },
+  {
+   "colores": [
+    "#FFFFFF",
+    "#000000",
+    "#0000DD"
+   ],
+   "partes": [
+    0.92,
+    0.03,
+    0.03
+   ],
+   "pantalon": "FFFFFF",
+   "dibujo": "_srb25a"
+  }
+ ],
+ "Greece": [
+  {
+   "colores": [
+    "#FFFFFF",
+    "#2A4FA0",
+    "#000000"
+   ],
+   "partes": [
+    0.91,
+    0.04,
+    0.04
+   ],
+   "pantalon": "FFFFFF",
+   "dibujo": "_gre26hA"
+  },
+  {
+   "colores": [
+    "#032F70",
+    "#FFFFFF",
+    "#151F3A"
+   ],
+   "partes": [
+    0.73,
+    0.16,
+    0.11
+   ],
+   "pantalon": "151f3a",
+   "dibujo": "_gre26aA"
+  }
+ ],
+ "Norway": [
+  {
+   "colores": [
+    "#FF0000",
+    "#00205B",
+    "#FFFFFF"
+   ],
+   "partes": [
+    0.56,
+    0.22,
+    0.18
+   ],
+   "pantalon": "BA0003",
+   "dibujo": "_nor26h"
+  },
+  {
+   "colores": [
+    "#000000",
+    "#FFFFFF"
+   ],
+   "partes": [
+    0.89,
+    0.11
+   ],
+   "pantalon": "FFFFFF",
+   "dibujo": "_nor26a"
+  },
+  {
+   "colores": [
+    "#FFFFFF",
+    "#000000"
+   ],
+   "partes": [
+    0.97,
+    0.03
+   ],
+   "pantalon": "FFFFFF",
+   "dibujo": "_nor26t"
+  }
+ ],
+ "Denmark": [
+  {
+   "colores": [
+    "#F90000",
+    "#FFFFFF",
+    "#000000"
+   ],
+   "partes": [
+    0.81,
+    0.16,
+    0.03
+   ],
+   "pantalon": "FF0000",
+   "dibujo": "_dnm26h"
+  },
+  {
+   "colores": [
+    "#FFFFFF",
+    "#000000",
+    "#FF0000"
+   ],
+   "partes": [
+    0.94,
+    0.03,
+    0.03
+   ],
+   "pantalon": "FFFFFF",
+   "dibujo": "_dnm26a"
+  }
+ ],
+ "Portugal": [
+  {
+   "colores": [
+    "#D10B1D",
+    "#FFFFFF",
+    "#000000"
+   ],
+   "partes": [
+    0.84,
+    0.11,
+    0.03
+   ],
+   "pantalon": "a73737",
+   "dibujo": "_por26h"
+  },
+  {
+   "colores": [
+    "#FFFFFF",
+    "#82D9CB",
+    "#000000"
+   ],
+   "partes": [
+    0.78,
+    0.16,
+    0.03
+   ],
+   "pantalon": "ffffff",
+   "dibujo": "_por26a"
+  }
+ ],
+ "Wales": [
+  {
+   "colores": [
+    "#FF0000",
+    "#FFFFFF",
+    "#000000"
+   ],
+   "partes": [
+    0.81,
+    0.13,
+    0.03
+   ],
+   "pantalon": "EF0000",
+   "dibujo": "_wls2627h"
+  },
+  {
+   "colores": [
+    "#F2B129",
+    "#FFFFFF",
+    "#1C4B2E"
+   ],
+   "partes": [
+    0.79,
+    0.11,
+    0.06
+   ],
+   "pantalon": "08963d",
+   "dibujo": "_wls2627a"
+  }
+ ],
+ "Austria": [
+  {
+   "colores": [
+    "#FF0000",
+    "#191919",
+    "#FFFFFF"
+   ],
+   "partes": [
+    0.76,
+    0.13,
+    0.12
+   ],
+   "pantalon": "000000",
+   "dibujo": "_aut26h"
+  },
+  {
+   "colores": [
+    "#FFFFFF",
+    "#000000",
+    "#E3D6AF"
+   ],
+   "partes": [
+    0.95,
+    0.04,
+    0.01
+   ],
+   "pantalon": "003A41",
+   "dibujo": "_aut26a"
+  },
+  {
+   "colores": [
+    "#1D1D1D",
+    "#FFFFFF",
+    "#890000"
+   ],
+   "partes": [
+    0.77,
+    0.11,
+    0.05
+   ],
+   "pantalon": "000000",
+   "dibujo": "_aut50ypuma"
+  }
+ ],
+ "Republic of Ireland": [
+  {
+   "colores": [
+    "#005F31",
+    "#FFFFFF",
+    "#000000"
+   ],
+   "partes": [
+    0.82,
+    0.14,
+    0.03
+   ],
+   "pantalon": "005f31",
+   "dibujo": "_ire26h"
+  },
+  {
+   "colores": [
+    "#FFFFFF",
+    "#61D97A",
+    "#BEEBC5"
+   ],
+   "partes": [
+    0.8,
+    0.06,
+    0.04
+   ],
+   "pantalon": "001f4e",
+   "dibujo": "_ire26a"
+  }
+ ],
  "Israel": [
   {
    "colores": [
@@ -29,6 +607,557 @@
    "dibujo": "_isr25a"
   }
  ],
+ "Kosovo National Team": [
+  {
+   "colores": [
+    "#0000DD",
+    "#5A8AE9",
+    "#FFFFFF"
+   ],
+   "partes": [
+    0.57,
+    0.24,
+    0.12
+   ],
+   "pantalon": "0000DD",
+   "dibujo": "_kvx26h"
+  },
+  {
+   "colores": [
+    "#FFFFFF",
+    "#101010",
+    "#E1C67A"
+   ],
+   "partes": [
+    0.92,
+    0.03,
+    0.03
+   ],
+   "pantalon": "FFFFFF",
+   "dibujo": "_kvx26a"
+  }
+ ],
+ "Azerbaijan": [
+  {
+   "colores": [
+    "#007FFF",
+    "#FFFFFF",
+    "#000000"
+   ],
+   "partes": [
+    0.85,
+    0.11,
+    0.03
+   ],
+   "pantalon": "007FFF",
+   "dibujo": "_aze25h"
+  },
+  {
+   "colores": [
+    "#FFFFFF",
+    "#000000"
+   ],
+   "partes": [
+    0.96,
+    0.04
+   ],
+   "pantalon": "FFFFFF",
+   "dibujo": "_aze25a"
+  },
+  {
+   "colores": [
+    "#FF0000",
+    "#FFFFFF",
+    "#000000"
+   ],
+   "partes": [
+    0.82,
+    0.11,
+    0.03
+   ],
+   "pantalon": "FF0000",
+   "dibujo": "_aze25t"
+  }
+ ],
+ "Liechtenstein": [
+  {
+   "colores": [
+    "#0000E0",
+    "#FFFFFF",
+    "#000000"
+   ],
+   "partes": [
+    0.8,
+    0.14,
+    0.03
+   ],
+   "pantalon": "FF0000",
+   "dibujo": "_lie26h"
+  },
+  {
+   "colores": [
+    "#FFFFFF",
+    "#000000",
+    "#0000E0"
+   ],
+   "partes": [
+    0.91,
+    0.03,
+    0.03
+   ],
+   "pantalon": "FFFFFF",
+   "dibujo": "_lie26a"
+  }
+ ],
+ "Malta": [
+  {
+   "colores": [
+    "#EF0000",
+    "#FFFFFF",
+    "#000000"
+   ],
+   "partes": [
+    0.82,
+    0.14,
+    0.03
+   ],
+   "pantalon": "EF0000",
+   "dibujo": "_mlt26h"
+  },
+  {
+   "colores": [
+    "#FFFFFF",
+    "#EF0000",
+    "#000000"
+   ],
+   "partes": [
+    0.93,
+    0.04,
+    0.03
+   ],
+   "pantalon": "FFFFFF",
+   "dibujo": "_mlt26a"
+  }
+ ],
+ "Gibraltar": [
+  {
+   "colores": [
+    "#EF0000",
+    "#FFFFFF",
+    "#000000"
+   ],
+   "partes": [
+    0.75,
+    0.22,
+    0.03
+   ],
+   "pantalon": "EF0000",
+   "dibujo": "_gib26h"
+  },
+  {
+   "colores": [
+    "#FFFFFF",
+    "#EF0000",
+    "#000000"
+   ],
+   "partes": [
+    0.81,
+    0.13,
+    0.03
+   ],
+   "pantalon": "FFFFFF",
+   "dibujo": "_gib25a"
+  }
+ ],
+ "Argentina": [
+  {
+   "colores": [
+    "#FFFFFF",
+    "#518DBA",
+    "#32548E"
+   ],
+   "partes": [
+    0.69,
+    0.12,
+    0.1
+   ],
+   "pantalon": "ffffff",
+   "dibujo": "_arg26h"
+  },
+  {
+   "colores": [
+    "#000000",
+    "#4031B8",
+    "#FFFFFF"
+   ],
+   "partes": [
+    0.38,
+    0.21,
+    0.14
+   ],
+   "pantalon": null,
+   "dibujo": "_arg26A"
+  }
+ ],
+ "Panama": [
+  {
+   "colores": [
+    "#FF0000",
+    "#FFFFFF",
+    "#000080"
+   ],
+   "partes": [
+    0.72,
+    0.17,
+    0.04
+   ],
+   "pantalon": "ff0000",
+   "dibujo": "_pan26h"
+  },
+  {
+   "colores": [
+    "#FFFFFF",
+    "#000000",
+    "#00007A"
+   ],
+   "partes": [
+    0.9,
+    0.03,
+    0.03
+   ],
+   "pantalon": "FFFFFF",
+   "dibujo": "_pan26a"
+  },
+  {
+   "colores": [
+    "#000080",
+    "#FFFFFF",
+    "#000000"
+   ],
+   "partes": [
+    0.74,
+    0.17,
+    0.04
+   ],
+   "pantalon": "000080",
+   "dibujo": "_pan26t"
+  }
+ ],
+ "Ghana": [
+  {
+   "colores": [
+    "#FFFFFF",
+    "#FF8989",
+    "#89B697"
+   ],
+   "partes": [
+    0.61,
+    0.12,
+    0.1
+   ],
+   "pantalon": "FFFFFF",
+   "dibujo": "_gha26h"
+  },
+  {
+   "colores": [
+    "#F8CD5C",
+    "#FFFFFF",
+    "#000000"
+   ],
+   "partes": [
+    0.77,
+    0.11,
+    0.05
+   ],
+   "pantalon": "f8cd5c",
+   "dibujo": "_gha26a"
+  }
+ ],
+ "Scotland": [
+  {
+   "colores": [
+    "#000040",
+    "#00001A",
+    "#FFFFFF"
+   ],
+   "partes": [
+    0.48,
+    0.36,
+    0.16
+   ],
+   "pantalon": "000040",
+   "dibujo": "_sco26hA"
+  },
+  {
+   "colores": [
+    "#FA4D4F",
+    "#852F4A",
+    "#FFFFFF"
+   ],
+   "partes": [
+    0.63,
+    0.17,
+    0.14
+   ],
+   "pantalon": "4C2882",
+   "dibujo": "_sco26aA"
+  }
+ ],
+ "Switzerland": [
+  {
+   "colores": [
+    "#ED0000",
+    "#FFFFFF",
+    "#000000"
+   ],
+   "partes": [
+    0.8,
+    0.17,
+    0.03
+   ],
+   "pantalon": "FF0000",
+   "dibujo": "_sui26h"
+  },
+  {
+   "colores": [
+    "#C5ECC6",
+    "#9AF761",
+    "#FFFFFF"
+   ],
+   "partes": [
+    0.54,
+    0.26,
+    0.11
+   ],
+   "pantalon": "d6e6e5",
+   "dibujo": "_sui26a"
+  }
+ ],
+ "Hungary": [
+  {
+   "colores": [
+    "#CA0F3A",
+    "#FFFFFF",
+    "#101010"
+   ],
+   "partes": [
+    0.82,
+    0.14,
+    0.03
+   ],
+   "pantalon": "FFFFFF",
+   "dibujo": "_hun26hA"
+  },
+  {
+   "colores": [
+    "#FFFFFF",
+    "#000000",
+    "#CA0F3A"
+   ],
+   "partes": [
+    0.93,
+    0.03,
+    0.02
+   ],
+   "pantalon": "FFFFFF",
+   "dibujo": "_hun26a"
+  }
+ ],
+ "Poland": [
+  {
+   "colores": [
+    "#FFFFFF",
+    "#FF0000",
+    "#000000"
+   ],
+   "partes": [
+    0.92,
+    0.05,
+    0.03
+   ],
+   "pantalon": "FF0000",
+   "dibujo": "_pol26h"
+  },
+  {
+   "colores": [
+    "#C60000",
+    "#FFFFFF",
+    "#FF6D6D"
+   ],
+   "partes": [
+    0.8,
+    0.12,
+    0.04
+   ],
+   "pantalon": "C60000",
+   "dibujo": "_pol26a"
+  }
+ ],
+ "Ukraine": [
+  {
+   "colores": [
+    "#F9E733",
+    "#FFFFFF",
+    "#085CB9"
+   ],
+   "partes": [
+    0.8,
+    0.11,
+    0.05
+   ],
+   "pantalon": "F9E733",
+   "dibujo": "_ukr26hA"
+  },
+  {
+   "colores": [
+    "#036CC8",
+    "#FFFFFF",
+    "#000000"
+   ],
+   "partes": [
+    0.82,
+    0.11,
+    0.03
+   ],
+   "pantalon": "085cb9",
+   "dibujo": "_ukr26aA"
+  }
+ ],
+ "Sweden": [],
+ "Slovenia": [
+  {
+   "colores": [
+    "#FFFFFF",
+    "#255EFD",
+    "#6F95FD"
+   ],
+   "partes": [
+    0.82,
+    0.07,
+    0.05
+   ],
+   "pantalon": "FFFFFF",
+   "dibujo": "_svn26h"
+  },
+  {
+   "colores": [
+    "#0044FF",
+    "#FFFFFF",
+    "#000040"
+   ],
+   "partes": [
+    0.71,
+    0.11,
+    0.08
+   ],
+   "pantalon": "0044FF",
+   "dibujo": "_svn26a"
+  }
+ ],
+ "Slovakia": [
+  {
+   "colores": [
+    "#0000FF",
+    "#FFFFFF",
+    "#000060"
+   ],
+   "partes": [
+    0.79,
+    0.13,
+    0.04
+   ],
+   "pantalon": "0000FF",
+   "dibujo": "_svk2425h"
+  },
+  {
+   "colores": [
+    "#FFFFFF",
+    "#000000",
+    "#0000FF"
+   ],
+   "partes": [
+    0.96,
+    0.03,
+    0.01
+   ],
+   "pantalon": "FFFFFF",
+   "dibujo": "_svk2425a"
+  }
+ ],
+ "Romania": [
+  {
+   "colores": [
+    "#F8E801",
+    "#FFFFFF",
+    "#0000B3"
+   ],
+   "partes": [
+    0.8,
+    0.11,
+    0.05
+   ],
+   "pantalon": "FEEE00",
+   "dibujo": "_rom25h"
+  },
+  {
+   "colores": [
+    "#F90000",
+    "#FFFFFF",
+    "#0000AF"
+   ],
+   "partes": [
+    0.77,
+    0.11,
+    0.05
+   ],
+   "pantalon": "175eab",
+   "dibujo": "_rom25a"
+  },
+  {
+   "colores": [
+    "#0000AF",
+    "#FFFFFF",
+    "#F8E801"
+   ],
+   "partes": [
+    0.77,
+    0.11,
+    0.07
+   ],
+   "pantalon": "0000FF",
+   "dibujo": "_rom25t"
+  }
+ ],
+ "Bosnia and Herzegovina": [
+  {
+   "colores": [
+    "#001B76",
+    "#FFFFFF",
+    "#A4A23A"
+   ],
+   "partes": [
+    0.79,
+    0.11,
+    0.06
+   ],
+   "pantalon": "001970",
+   "dibujo": "_bih26h"
+  },
+  {
+   "colores": [
+    "#FFFFFF",
+    "#001970",
+    "#FFF7BC"
+   ],
+   "partes": [
+    0.73,
+    0.09,
+    0.07
+   ],
+   "pantalon": "FFFFFF",
+   "dibujo": "_bih26a"
+  }
+ ],
  "Iceland": [
   {
    "colores": [
@@ -57,6 +1186,662 @@
    ],
    "pantalon": "d9d9d9",
    "dibujo": "_isl26a"
+  }
+ ],
+ "Northern Ireland": [
+  {
+   "colores": [
+    "#1F504C",
+    "#3B8B72",
+    "#FFFFFF"
+   ],
+   "partes": [
+    0.53,
+    0.29,
+    0.14
+   ],
+   "pantalon": "22913C",
+   "dibujo": "_nir26hA"
+  },
+  {
+   "colores": [
+    "#FFFFFF",
+    "#336056",
+    "#000000"
+   ],
+   "partes": [
+    0.92,
+    0.04,
+    0.03
+   ],
+   "pantalon": "FFFFFF",
+   "dibujo": "_nir26aA"
+  }
+ ],
+ "Georgia": [
+  {
+   "colores": [
+    "#FFFFFF",
+    "#E20139",
+    "#000000"
+   ],
+   "partes": [
+    0.74,
+    0.18,
+    0.08
+   ],
+   "pantalon": "FFFFFF",
+   "dibujo": "_geo25h"
+  },
+  {
+   "colores": [
+    "#000000",
+    "#FFFFFF",
+    "#CD0132"
+   ],
+   "partes": [
+    0.87,
+    0.12,
+    0.01
+   ],
+   "pantalon": "000000",
+   "dibujo": "_geo25a"
+  },
+  {
+   "colores": [
+    "#FF0000",
+    "#FFFFFF",
+    "#000000"
+   ],
+   "partes": [
+    0.83,
+    0.11,
+    0.05
+   ],
+   "pantalon": "000000",
+   "dibujo": "_geo22a"
+  }
+ ],
+ "Albania": [
+  {
+   "colores": [
+    "#FF0000",
+    "#FFFFFF",
+    "#000000"
+   ],
+   "partes": [
+    0.82,
+    0.11,
+    0.06
+   ],
+   "pantalon": "000000",
+   "dibujo": "_alb26h"
+  },
+  {
+   "colores": [
+    "#FFFDF5",
+    "#000000",
+    "#FF0000"
+   ],
+   "partes": [
+    0.94,
+    0.03,
+    0.02
+   ],
+   "pantalon": "fffdf5",
+   "dibujo": "_alb26a"
+  },
+  {
+   "colores": [
+    "#282828",
+    "#FFFFFF",
+    "#FF0000"
+   ],
+   "partes": [
+    0.88,
+    0.11,
+    0.0
+   ],
+   "pantalon": "000000",
+   "dibujo": "_alb26t"
+  }
+ ],
+ "North Macedonia": [
+  {
+   "colores": [
+    "#FFE000",
+    "#FFFFFF",
+    "#FF0000"
+   ],
+   "partes": [
+    0.76,
+    0.11,
+    0.1
+   ],
+   "pantalon": "FF0000",
+   "dibujo": "_mkd26h"
+  },
+  {
+   "colores": [],
+   "partes": [],
+   "pantalon": "_3_stripes_red",
+   "dibujo": "_tun can82h"
+  },
+  {
+   "colores": [
+    "#FFFFFF",
+    "#000000",
+    "#FF0000"
+   ],
+   "partes": [
+    0.91,
+    0.03,
+    0.03
+   ],
+   "pantalon": "000000",
+   "dibujo": "_mex13t"
+  }
+ ],
+ "Finland": [
+  {
+   "colores": [
+    "#FFFFFF",
+    "#000000",
+    "#0000FF"
+   ],
+   "partes": [
+    0.94,
+    0.04,
+    0.02
+   ],
+   "pantalon": "FFFFFF",
+   "dibujo": "_fin26h"
+  },
+  {
+   "colores": [
+    "#0000FF",
+    "#FFFFFF",
+    "#000000"
+   ],
+   "partes": [
+    0.82,
+    0.14,
+    0.03
+   ],
+   "pantalon": "0000FF",
+   "dibujo": "_fin26a"
+  }
+ ],
+ "Bulgaria": [
+  {
+   "colores": [
+    "#FFFFFF",
+    "#008800",
+    "#FF0000"
+   ],
+   "partes": [
+    0.86,
+    0.05,
+    0.04
+   ],
+   "pantalon": "008800",
+   "dibujo": "_bul25h"
+  },
+  {
+   "colores": [
+    "#FF0000",
+    "#FFFFFF",
+    "#000000"
+   ],
+   "partes": [
+    0.81,
+    0.13,
+    0.03
+   ],
+   "pantalon": null,
+   "dibujo": "_macronwyverneco24rw"
+  }
+ ],
+ "Montenegro": [
+  {
+   "colores": [
+    "#FF0000",
+    "#FFFFFF",
+    "#FFF200"
+   ],
+   "partes": [
+    0.75,
+    0.11,
+    0.1
+   ],
+   "pantalon": "FF0000",
+   "dibujo": "_mne26h"
+  },
+  {
+   "colores": [
+    "#FFFFFF",
+    "#EF0000",
+    "#FFF200"
+   ],
+   "partes": [
+    0.62,
+    0.25,
+    0.09
+   ],
+   "pantalon": "FFFFFF",
+   "dibujo": "_mne26a"
+  }
+ ],
+ "Armenia": [
+  {
+   "colores": [
+    "#AA0000",
+    "#FFFFFF",
+    "#E5C9A1"
+   ],
+   "partes": [
+    0.78,
+    0.11,
+    0.08
+   ],
+   "pantalon": "6f0000",
+   "dibujo": "_arm26h"
+  },
+  {
+   "colores": [
+    "#FFFFFF",
+    "#E5C9A1",
+    "#B70000"
+   ],
+   "partes": [
+    0.78,
+    0.07,
+    0.05
+   ],
+   "pantalon": "Ffffff",
+   "dibujo": "_arm26a"
+  }
+ ],
+ "Belarus": [
+  {
+   "colores": [
+    "#600020",
+    "#A90000",
+    "#FFFFFF"
+   ],
+   "partes": [
+    0.53,
+    0.3,
+    0.11
+   ],
+   "pantalon": "600020",
+   "dibujo": "_blr26h"
+  },
+  {
+   "colores": [
+    "#FFFFFF",
+    "#D9FF00",
+    "#101010"
+   ],
+   "partes": [
+    0.93,
+    0.04,
+    0.03
+   ],
+   "pantalon": "FFFFFF",
+   "dibujo": "_blr26a"
+  }
+ ],
+ "Kazakhstan": [
+  {
+   "colores": [
+    "#FFEE00",
+    "#D1E561",
+    "#FFFFFF"
+   ],
+   "partes": [
+    0.57,
+    0.23,
+    0.11
+   ],
+   "pantalon": "FFEE00",
+   "dibujo": "_kaz2627h"
+  },
+  {
+   "colores": [
+    "#0000DD",
+    "#FFFFFF",
+    "#FFEE00"
+   ],
+   "partes": [
+    0.8,
+    0.11,
+    0.06
+   ],
+   "pantalon": "0000DD",
+   "dibujo": "_kaz2627a"
+  }
+ ],
+ "Luxembourg": [
+  {
+   "colores": [
+    "#FF0000",
+    "#890000",
+    "#FFFFFF"
+   ],
+   "partes": [
+    0.58,
+    0.25,
+    0.14
+   ],
+   "pantalon": "FF0000",
+   "dibujo": "_lux2627h"
+  },
+  {
+   "colores": [
+    "#57B7F7",
+    "#FFFFFF",
+    "#000000"
+   ],
+   "partes": [
+    0.82,
+    0.14,
+    0.04
+   ],
+   "pantalon": "3DA7E9",
+   "dibujo": "_lux2627a"
+  }
+ ],
+ "Cyprus": [
+  {
+   "colores": [
+    "#0000FF",
+    "#FFFFFF",
+    "#000000"
+   ],
+   "partes": [
+    0.74,
+    0.19,
+    0.04
+   ],
+   "pantalon": "0000FF",
+   "dibujo": "_cyp24h"
+  },
+  {
+   "colores": [
+    "#FFFFFF",
+    "#0000FF",
+    "#000000"
+   ],
+   "partes": [
+    0.86,
+    0.06,
+    0.04
+   ],
+   "pantalon": "FFFFFF",
+   "dibujo": "_cyp24a"
+  }
+ ],
+ "Faroe Islands": [
+  {
+   "colores": [
+    "#FFFFFF",
+    "#0000E0",
+    "#FF0000"
+   ],
+   "partes": [
+    0.81,
+    0.08,
+    0.05
+   ],
+   "pantalon": "0000E0",
+   "dibujo": "_fro26h"
+  },
+  {
+   "colores": [
+    "#000055",
+    "#0000E0",
+    "#00009A"
+   ],
+   "partes": [
+    0.45,
+    0.24,
+    0.14
+   ],
+   "pantalon": "000055",
+   "dibujo": "_fro26a"
+  }
+ ],
+ "Estonia": [
+  {
+   "colores": [
+    "#0000E1",
+    "#FFFFFF",
+    "#000000"
+   ],
+   "partes": [
+    0.79,
+    0.18,
+    0.03
+   ],
+   "pantalon": "000000",
+   "dibujo": "_nikechallenge5grw"
+  },
+  {
+   "colores": [
+    "#EEEEEE",
+    "#000000"
+   ],
+   "partes": [
+    0.9,
+    0.1
+   ],
+   "pantalon": "FFFFFF",
+   "dibujo": "_nikechallenge5wb"
+  }
+ ],
+ "Latvia": [
+  {
+   "colores": [
+    "#000000",
+    "#FFFFFF"
+   ],
+   "partes": [
+    0.82,
+    0.18
+   ],
+   "pantalon": "000000",
+   "dibujo": "_adidastirol26bw"
+  },
+  {
+   "colores": [
+    "#FFFFFF",
+    "#000000"
+   ],
+   "partes": [
+    0.9,
+    0.1
+   ],
+   "pantalon": "FFFFFF",
+   "dibujo": "_adidastirol26wb"
+  }
+ ],
+ "Lithuania": [
+  {
+   "colores": [
+    "#FFDD00",
+    "#FFFFFF",
+    "#006C18"
+   ],
+   "partes": [
+    0.81,
+    0.11,
+    0.04
+   ],
+   "pantalon": "FFDD00",
+   "dibujo": "_ltu24h"
+  },
+  {
+   "colores": [
+    "#00711A",
+    "#FFFFFF",
+    "#000000"
+   ],
+   "partes": [
+    0.81,
+    0.15,
+    0.03
+   ],
+   "pantalon": "00711a",
+   "dibujo": "_ltu24a"
+  }
+ ],
+ "Moldova": [
+  {
+   "colores": [
+    "#0000FF",
+    "#FFFFFF",
+    "#000000"
+   ],
+   "partes": [
+    0.8,
+    0.16,
+    0.03
+   ],
+   "pantalon": "0000DD",
+   "dibujo": "_mda22h"
+  },
+  {
+   "colores": [
+    "#FFBB00",
+    "#FFFFFF",
+    "#000000"
+   ],
+   "partes": [
+    0.77,
+    0.19,
+    0.03
+   ],
+   "pantalon": "FFBB00",
+   "dibujo": "_mda22a"
+  },
+  {
+   "colores": [
+    "#FF0000",
+    "#FFFFFF",
+    "#000000"
+   ],
+   "partes": [
+    0.8,
+    0.16,
+    0.03
+   ],
+   "pantalon": "FF0000",
+   "dibujo": "_mda22t"
+  }
+ ],
+ "Andorra": [
+  {
+   "colores": [
+    "#E70000",
+    "#FFFFFF",
+    "#0000FF"
+   ],
+   "partes": [
+    0.8,
+    0.11,
+    0.04
+   ],
+   "pantalon": "FF0000",
+   "dibujo": "_and26h"
+  },
+  {
+   "colores": [
+    "#FFFFFF",
+    "#FF0000",
+    "#FFFF00"
+   ],
+   "partes": [
+    0.83,
+    0.06,
+    0.05
+   ],
+   "pantalon": "FFFFFF",
+   "dibujo": "_and26a"
+  }
+ ],
+ "San Marino": [
+  {
+   "colores": [
+    "#FFFFFF",
+    "#87D9FF",
+    "#000055"
+   ],
+   "partes": [
+    0.68,
+    0.24,
+    0.04
+   ],
+   "pantalon": "FFFFFF",
+   "dibujo": "_smr26h"
+  },
+  {
+   "colores": [
+    "#000055",
+    "#FFFFFF",
+    "#87D9FF"
+   ],
+   "partes": [
+    0.71,
+    0.15,
+    0.04
+   ],
+   "pantalon": "000055",
+   "dibujo": "_smr26a"
+  }
+ ],
+ "Barcelona": [
+  {
+   "colores": [
+    "#061C56",
+    "#A00634",
+    "#FFFFFF"
+   ],
+   "partes": [
+    0.36,
+    0.29,
+    0.11
+   ],
+   "pantalon": "05003B",
+   "dibujo": "_barcelona2627h"
+  },
+  {
+   "colores": [
+    "#000000",
+    "#791ED6",
+    "#FFFFFF"
+   ],
+   "partes": [
+    0.56,
+    0.2,
+    0.11
+   ],
+   "pantalon": "7F20E0",
+   "dibujo": "_barcelona2627a"
+  },
+  {
+   "colores": [
+    "#88D9D3",
+    "#FFFFFF",
+    "#000000"
+   ],
+   "partes": [
+    0.8,
+    0.11,
+    0.03
+   ],
+   "pantalon": "89DAD4",
+   "dibujo": "_barcelona2627t"
   }
  ],
  "Real Madrid": [
@@ -93,6 +1878,710 @@
    "partes": [],
    "pantalon": null,
    "dibujo": "_realmadrid2627tA"
+  }
+ ],
+ "Atlético Madrid": [
+  {
+   "colores": [
+    "#FFFFFF",
+    "#FF0000",
+    "#FF9B9B"
+   ],
+   "partes": [
+    0.5,
+    0.29,
+    0.15
+   ],
+   "pantalon": "0000FF",
+   "dibujo": "_atleticomadrid2627h"
+  },
+  {
+   "colores": [
+    "#000000",
+    "#FFFFFF",
+    "#DFF85C"
+   ],
+   "partes": [
+    0.87,
+    0.11,
+    0.02
+   ],
+   "pantalon": "000000",
+   "dibujo": "_atleticomadrid2627a"
+  },
+  {
+   "colores": [
+    "#DADADA",
+    "#E2001D",
+    "#001A3C"
+   ],
+   "partes": [
+    0.81,
+    0.09,
+    0.05
+   ],
+   "pantalon": null,
+   "dibujo": "_atleticomadrid2627t"
+  }
+ ],
+ "Villarreal": [
+  {
+   "colores": [
+    "#FFFF00",
+    "#FFFFFF",
+    "#01004E"
+   ],
+   "partes": [
+    0.77,
+    0.1,
+    0.1
+   ],
+   "pantalon": "FFFF00",
+   "dibujo": "_villarreal2627h"
+  },
+  {
+   "colores": [
+    "#CBCBCB",
+    "#1880FF",
+    "#000000"
+   ],
+   "partes": [
+    0.86,
+    0.08,
+    0.03
+   ],
+   "pantalon": "cbcbcb",
+   "dibujo": "_villarreal2627a"
+  },
+  {
+   "colores": [
+    "#22B6B4",
+    "#FFFFFF",
+    "#007B5F"
+   ],
+   "partes": [
+    0.79,
+    0.11,
+    0.04
+   ],
+   "pantalon": null,
+   "dibujo": "_villarreal2627t"
+  }
+ ],
+ "Real Betis": [
+  {
+   "colores": [
+    "#FFFFFF",
+    "#349B5C",
+    "#AECBB5"
+   ],
+   "partes": [
+    0.48,
+    0.35,
+    0.13
+   ],
+   "pantalon": "FFFFFF",
+   "dibujo": "_betis2627h"
+  },
+  {
+   "colores": [
+    "#005C29",
+    "#FFFFFF",
+    "#000000"
+   ],
+   "partes": [
+    0.84,
+    0.11,
+    0.04
+   ],
+   "pantalon": "005c29",
+   "dibujo": "_betis2627a"
+  },
+  {
+   "colores": [
+    "#000000",
+    "#0000BB",
+    "#FFFFFF"
+   ],
+   "partes": [
+    0.36,
+    0.35,
+    0.11
+   ],
+   "pantalon": null,
+   "dibujo": "_betis2627t"
+  }
+ ],
+ "Sevilla FC": [
+  {
+   "colores": [
+    "#FFFFFF",
+    "#E30000",
+    "#000000"
+   ],
+   "partes": [
+    0.91,
+    0.04,
+    0.04
+   ],
+   "pantalon": "FFFFFF",
+   "dibujo": "_sevilla2627h"
+  },
+  {
+   "colores": [
+    "#E30000",
+    "#FFFFFF",
+    "#000000"
+   ],
+   "partes": [
+    0.79,
+    0.14,
+    0.06
+   ],
+   "pantalon": "E20001",
+   "dibujo": "_sevilla2627a"
+  },
+  {
+   "colores": [
+    "#000000",
+    "#FFFFFF",
+    "#FFA36D"
+   ],
+   "partes": [
+    0.85,
+    0.11,
+    0.02
+   ],
+   "pantalon": "000000",
+   "dibujo": "_sevilla2627t"
+  }
+ ],
+ "Real Sociedad": [
+  {
+   "colores": [
+    "#FFFFFF",
+    "#0013AD",
+    "#000000"
+   ],
+   "partes": [
+    0.54,
+    0.41,
+    0.03
+   ],
+   "pantalon": "FFFFFF",
+   "dibujo": "_realsociedad2627h"
+  },
+  {
+   "colores": [
+    "#000000",
+    "#FFFFFF"
+   ],
+   "partes": [
+    0.89,
+    0.11
+   ],
+   "pantalon": "000000",
+   "dibujo": "_realsociedad2627a"
+  },
+  {
+   "colores": [
+    "#B61D2F",
+    "#FFFFFF",
+    "#000000"
+   ],
+   "partes": [
+    0.83,
+    0.13,
+    0.03
+   ],
+   "pantalon": "b61d2f",
+   "dibujo": "_realsociedad2627t"
+  }
+ ],
+ "Alavés": [
+  {
+   "colores": [
+    "#FFFFFF",
+    "#0000FF",
+    "#000000"
+   ],
+   "partes": [
+    0.58,
+    0.38,
+    0.03
+   ],
+   "pantalon": "ffffff",
+   "dibujo": "_alaves2627h"
+  },
+  {
+   "colores": [
+    "#000000",
+    "#45323B",
+    "#FFFFFF"
+   ],
+   "partes": [
+    0.63,
+    0.24,
+    0.11
+   ],
+   "pantalon": "ffffff",
+   "dibujo": "_alaves2627a"
+  },
+  {
+   "colores": [
+    "#AAFFEF",
+    "#FFFFFF",
+    "#000000"
+   ],
+   "partes": [
+    0.81,
+    0.11,
+    0.08
+   ],
+   "pantalon": "ffffff",
+   "dibujo": "_alaves2627t"
+  }
+ ],
+ "Deportivo La Coruña": [
+  {
+   "colores": [
+    "#FFFFFF",
+    "#0000FF",
+    "#000000"
+   ],
+   "partes": [
+    0.51,
+    0.45,
+    0.03
+   ],
+   "pantalon": "0000FF",
+   "dibujo": "_depor2627h"
+  },
+  {
+   "colores": [
+    "#000000",
+    "#FFFFFF",
+    "#0000FF"
+   ],
+   "partes": [
+    0.86,
+    0.11,
+    0.02
+   ],
+   "pantalon": "000000",
+   "dibujo": "_depor2627a"
+  },
+  {
+   "colores": [
+    "#FFFFFF",
+    "#0000FF",
+    "#000000"
+   ],
+   "partes": [
+    0.59,
+    0.38,
+    0.03
+   ],
+   "pantalon": "FFFFFF",
+   "dibujo": "_depor2627t"
+  }
+ ],
+ "Athletic Club": [
+  {
+   "colores": [
+    "#FFFFFF",
+    "#FF0B0B",
+    "#000000"
+   ],
+   "partes": [
+    0.51,
+    0.41,
+    0.07
+   ],
+   "pantalon": "000000",
+   "dibujo": "_bilbao2627h"
+  },
+  {
+   "colores": [
+    "#000000",
+    "#FFFFFF",
+    "#FF0B0B"
+   ],
+   "partes": [
+    0.86,
+    0.12,
+    0.01
+   ],
+   "pantalon": "ff0000",
+   "dibujo": "_bilbao2627a"
+  },
+  {
+   "colores": [
+    "#5ACDF3",
+    "#FFFFFF",
+    "#000000"
+   ],
+   "partes": [
+    0.79,
+    0.15,
+    0.06
+   ],
+   "pantalon": null,
+   "dibujo": "_bilbao2627t"
+  }
+ ],
+ "Getafe": [
+  {
+   "colores": [
+    "#0808FF",
+    "#FFFFFF",
+    "#000000"
+   ],
+   "partes": [
+    0.81,
+    0.12,
+    0.07
+   ],
+   "pantalon": "0000ff",
+   "dibujo": "_getafe2627h"
+  },
+  {
+   "colores": [
+    "#7C081C",
+    "#FFFFFF",
+    "#000000"
+   ],
+   "partes": [
+    0.82,
+    0.15,
+    0.04
+   ],
+   "pantalon": "7b0018",
+   "dibujo": "_getafe2627a"
+  },
+  {
+   "colores": [
+    "#C3DAFF",
+    "#000000",
+    "#0000E8"
+   ],
+   "partes": [
+    0.92,
+    0.07,
+    0.01
+   ],
+   "pantalon": "c2daff",
+   "dibujo": "_getafe2627t"
+  }
+ ],
+ "Rayo Vallecano": [
+  {
+   "colores": [
+    "#FFFFFF",
+    "#FF0000",
+    "#F1C463"
+   ],
+   "partes": [
+    0.58,
+    0.2,
+    0.12
+   ],
+   "pantalon": "FFFFFF",
+   "dibujo": "_rayo2627h"
+  },
+  {
+   "colores": [
+    "#FF0000",
+    "#FFFFFF",
+    "#000000"
+   ],
+   "partes": [
+    0.47,
+    0.34,
+    0.11
+   ],
+   "pantalon": "FF0000",
+   "dibujo": "_rayo2627a"
+  },
+  {
+   "colores": [
+    "#F1C463",
+    "#AA0000",
+    "#FFFFFF"
+   ],
+   "partes": [
+    0.54,
+    0.24,
+    0.13
+   ],
+   "pantalon": "f1c463",
+   "dibujo": "_rayo2627t"
+  }
+ ],
+ "Osasuna": [
+  {
+   "colores": [
+    "#FF0000",
+    "#FFFFFF",
+    "#000000"
+   ],
+   "partes": [
+    0.82,
+    0.11,
+    0.03
+   ],
+   "pantalon": null,
+   "dibujo": "_osasuna2627h"
+  },
+  {
+   "colores": [
+    "#EAE9E5",
+    "#000000",
+    "#292E45"
+   ],
+   "partes": [
+    0.94,
+    0.03,
+    0.02
+   ],
+   "pantalon": null,
+   "dibujo": "_osasuna2627a"
+  },
+  {
+   "colores": [
+    "#000000",
+    "#FFFFFF",
+    "#636363"
+   ],
+   "partes": [
+    0.85,
+    0.11,
+    0.04
+   ],
+   "pantalon": null,
+   "dibujo": "_osasuna2627t"
+  }
+ ],
+ "Celta de Vigo": [
+  {
+   "colores": [
+    "#90CCFF",
+    "#FFFFFF",
+    "#000000"
+   ],
+   "partes": [
+    0.82,
+    0.14,
+    0.03
+   ],
+   "pantalon": null,
+   "dibujo": "_celta2627h"
+  },
+  {
+   "colores": [
+    "#0A2339",
+    "#FFFFFF",
+    "#D40032"
+   ],
+   "partes": [
+    0.8,
+    0.16,
+    0.03
+   ],
+   "pantalon": null,
+   "dibujo": "_celta2627a"
+  },
+  {
+   "colores": [
+    "#D30430",
+    "#FFFFFF",
+    "#0A2339"
+   ],
+   "partes": [
+    0.68,
+    0.13,
+    0.1
+   ],
+   "pantalon": null,
+   "dibujo": "_celta2627t"
+  }
+ ],
+ "Espanyol": [
+  {
+   "colores": [
+    "#FFFFFF",
+    "#0000FF",
+    "#0000BC"
+   ],
+   "partes": [
+    0.51,
+    0.31,
+    0.12
+   ],
+   "pantalon": null,
+   "dibujo": "_rcde2627h"
+  },
+  {
+   "colores": [
+    "#FF0000",
+    "#FFFFFF",
+    "#000000"
+   ],
+   "partes": [
+    0.8,
+    0.15,
+    0.04
+   ],
+   "pantalon": null,
+   "dibujo": "_rcde2627a"
+  },
+  {
+   "colores": [
+    "#FFFF5C",
+    "#B0FF00",
+    "#FFFFFF"
+   ],
+   "partes": [
+    0.52,
+    0.29,
+    0.11
+   ],
+   "pantalon": null,
+   "dibujo": "_rcde2627t"
+  }
+ ],
+ "Racing Santander": [
+  {
+   "colores": [
+    "#FFFFFF",
+    "#369028",
+    "#000000"
+   ],
+   "partes": [
+    0.9,
+    0.06,
+    0.04
+   ],
+   "pantalon": "000000",
+   "dibujo": "_santander2627h"
+  },
+  {
+   "colores": [
+    "#021D01",
+    "#818262",
+    "#FFFFFF"
+   ],
+   "partes": [
+    0.76,
+    0.13,
+    0.12
+   ],
+   "pantalon": "00924F",
+   "dibujo": "_santander2627a"
+  }
+ ],
+ "Levante": [
+  {
+   "colores": [
+    "#882736",
+    "#020341",
+    "#FFFFFF"
+   ],
+   "partes": [
+    0.43,
+    0.37,
+    0.16
+   ],
+   "pantalon": "222730",
+   "dibujo": "_levante2627h"
+  },
+  {
+   "colores": [
+    "#FFFFFF",
+    "#000000",
+    "#7E0021"
+   ],
+   "partes": [
+    0.56,
+    0.41,
+    0.03
+   ],
+   "pantalon": null,
+   "dibujo": "_levante2627a"
+  }
+ ],
+ "Elche": [
+  {
+   "colores": [
+    "#FFFFFF",
+    "#008127",
+    "#000000"
+   ],
+   "partes": [
+    0.69,
+    0.27,
+    0.05
+   ],
+   "pantalon": null,
+   "dibujo": "_elche2627h"
+  },
+  {
+   "colores": [
+    "#5F04B4",
+    "#9750BE",
+    "#FFFFFF"
+   ],
+   "partes": [
+    0.64,
+    0.21,
+    0.11
+   ],
+   "pantalon": "5f04b4",
+   "dibujo": "_elche2627a"
+  },
+  {
+   "colores": [
+    "#000000",
+    "#008127",
+    "#003109"
+   ],
+   "partes": [
+    0.38,
+    0.35,
+    0.15
+   ],
+   "pantalon": "000000",
+   "dibujo": "_elche2627t"
+  }
+ ],
+ "Valencia": [
+  {
+   "colores": [
+    "#FFFFFF",
+    "#000000",
+    "#700010"
+   ],
+   "partes": [
+    0.94,
+    0.04,
+    0.02
+   ],
+   "pantalon": "000000",
+   "dibujo": "_valencia2627h"
+  },
+  {
+   "colores": [
+    "#024560",
+    "#FFFFFF",
+    "#000000"
+   ],
+   "partes": [
+    0.83,
+    0.11,
+    0.03
+   ],
+   "pantalon": "024560",
+   "dibujo": "_valencia2627a"
   }
  ],
  "Malaga": [
@@ -137,6 +2626,138 @@
    ],
    "pantalon": null,
    "dibujo": "_malaga2627t"
+  }
+ ],
+ "Oviedo": [
+  {
+   "colores": [
+    "#0000DD",
+    "#FFFFFF",
+    "#000000"
+   ],
+   "partes": [
+    0.8,
+    0.16,
+    0.03
+   ],
+   "pantalon": "FFFFFF",
+   "dibujo": "_realoviedo2627h"
+  },
+  {
+   "colores": [
+    "#DDDDDD",
+    "#0000DD",
+    "#000000"
+   ],
+   "partes": [
+    0.75,
+    0.21,
+    0.03
+   ],
+   "pantalon": "d0d0d0",
+   "dibujo": "_realoviedo2627a"
+  },
+  {
+   "colores": [
+    "#FFC7CF",
+    "#FFFFFF",
+    "#9DE0EE"
+   ],
+   "partes": [
+    0.66,
+    0.23,
+    0.07
+   ],
+   "pantalon": "96d6e3",
+   "dibujo": "_realoviedo2627t"
+  }
+ ],
+ "Mallorca": [
+  {
+   "colores": [
+    "#000000",
+    "#FF0000",
+    "#FFFFFF"
+   ],
+   "partes": [
+    0.48,
+    0.42,
+    0.11
+   ],
+   "pantalon": "000000",
+   "dibujo": "_mallorca2627h"
+  },
+  {
+   "colores": [
+    "#000000",
+    "#FFFFFF",
+    "#CEA57A"
+   ],
+   "partes": [
+    0.83,
+    0.11,
+    0.06
+   ],
+   "pantalon": "000000",
+   "dibujo": "_mallorca2627a"
+  },
+  {
+   "colores": [
+    "#77BBFF",
+    "#FFFFFF",
+    "#000000"
+   ],
+   "partes": [
+    0.83,
+    0.11,
+    0.03
+   ],
+   "pantalon": "77bbff",
+   "dibujo": "_mallorca2627t"
+  }
+ ],
+ "Girona": [
+  {
+   "colores": [
+    "#FFFFFF",
+    "#FF0000",
+    "#0042FF"
+   ],
+   "partes": [
+    0.5,
+    0.42,
+    0.05
+   ],
+   "pantalon": "0042ff",
+   "dibujo": "_girona2627h"
+  },
+  {
+   "colores": [
+    "#000000",
+    "#FFFFFF",
+    "#E80000"
+   ],
+   "partes": [
+    0.84,
+    0.11,
+    0.04
+   ],
+   "pantalon": "000000",
+   "dibujo": "_girona2627a"
+  },
+  {
+   "colores": [
+    "#7CDAC5",
+    "#FFFFFF",
+    "#000000"
+   ],
+   "partes": [
+    0.79,
+    0.11,
+    0.06
+   ],
+   "pantalon": null,
+   "dibujo": "_girona26273"
   }
  ]
 }
