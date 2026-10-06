@@ -603,7 +603,7 @@ match_id,fecha,competicion,local_id,local,visitante_id,visitante,goles_l,goles_v
 1301133830,2026-10-05,UEFA Nations League,657756,Ukraine,655203,Hungary,1.0,2.0,True
 1301132979,2026-10-05,UEFA Nations League,654352,Italy,662011,Turkey,3.0,1.0,True
 1301136383,2026-10-05,UEFA Nations League,659458,Romania,5039,Sweden,0.0,1.0,True
-1301138085,2026-10-06,UEFA Nations League,932629,Kazakhstan,935182,Faroe Islands,,,False
+1301138085,2026-10-06,UEFA Nations League,932629,Kazakhstan,935182,Faroe Islands,0.0,2.0,False
 1301140638,2026-10-06,UEFA Nations League,662862,Albania,949649,San Marino,,,False
 1301141489,2026-10-06,UEFA Nations League,936884,Belarus,936033,Finland,,,False
 1315316596,2026-10-06,UEFA Nations League,938586,Luxembourg,939437,Bulgaria,,,False
