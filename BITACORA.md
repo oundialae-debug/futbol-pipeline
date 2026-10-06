@@ -11,6 +11,10 @@ cambios de código y archivos".
   el resumen y dónde leerlo.
 - Lo más nuevo, arriba.
 
+## 06/10/2026 — redes: momentos de la temporada (Balón de Oro)
+- Qué: `datos_rankings.py nominados <contribucion|xg_xa|definicion>`: top 5 de nominados al Balón de Oro 2026 con nuestros datos 2025/26; `buscar()` entiende los nombres abreviados de Highlightly ("E. Haaland"); `jugadores_propios(temporada)`.
+- Por qué: usuario, publicar según el momentum de la temporada (gala del Balón de Oro 26/10, Londres).
+
 ## 06/10/2026 — redes: fuera "Data, not betting advice · 18+" de las imágenes y descripciones
 - Qué: `generar.py` sin pie por defecto; `backup_redes.py` sin esa línea en el texto.
 - Por qué: usuario: confunde a los algoritmos y limita las publicaciones.

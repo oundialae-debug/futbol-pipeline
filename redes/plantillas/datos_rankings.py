@@ -6,7 +6,7 @@
     python3 redes/plantillas/datos_rankings.py top_jugadores <definicion|xg90|goles|asistencias|creacion> [liga|all]
 Jugadores: data/redes/jugadores_temporada.csv (workflow jugadores_redes.yml, diario).
 Escribe el JSON y el PNG en redes/plantillas/salida/<fecha>_<tipo>/. Nunca Segunda División."""
-import json, subprocess, sys
+import json, re, subprocess, sys
 from datetime import date
 from pathlib import Path
 import pandas as pd
@@ -97,11 +97,11 @@ def nombres_propios():
     return n
 
 
-def jugadores_propios():
+def jugadores_propios(temporada=None):
     """Temporada en curso de las 5 grandes con NUESTROS datos (box-score de Highlightly). Usuario 06/10: siempre
     nuestros datos salvo que no estén al día. Devuelve (tabla, al_dia): al_dia = todos los partidos jugados tienen box-score."""
     h = pd.read_csv(ROOT / "data/historico_partidos.csv", low_memory=False)
-    h = h[(h.temporada == h.temporada.max()) & h.liga.isin(GRANDES) & h.goles_l.notna()]
+    h = h[(h.temporada == (temporada or h.temporada.max())) & h.liga.isin(GRANDES) & h.goles_l.notna()]
     x = pd.read_csv(ROOT / "data/historico_xg_jugador.csv", low_memory=False)
     x = x[x.match_id.isin(h.match_id) & x.jugador_id.notna()]
     al_dia = x.match_id.nunique() >= len(h)
@@ -131,13 +131,23 @@ def jugadores_tabla():
 
 
 def buscar(j, nombre):
+    """Por nombre exacto, por contenido, o en la forma abreviada de Highlightly ("E. Haaland")."""
     n = _norm(nombre)
-    m = j[j.jugador.map(_norm) == n]
+    nj = j.jugador.map(_norm)
+    m = j[nj == n]
     if m.empty:
-        m = j[j.jugador.map(_norm).str.contains(n, regex=False)]
+        m = j[nj.str.contains(n, regex=False)]
+    partes = n.split()
+    if m.empty and len(partes) > 1:
+        m = j[nj == f"{partes[0][0]}. {' '.join(partes[1:])}"]
+        if m.empty:
+            m = j[nj == f"{partes[0][0]}. {partes[-1]}"]
     if m.empty:
         sys.exit(f"No encuentro a {nombre}")
-    return m.sort_values("minutos", ascending=False).iloc[0]
+    r = m.sort_values("minutos", ascending=False).iloc[0].copy()
+    if re.match(r"^[A-Z]\. ", str(r.jugador)):  # nombre abreviado: mostrar el que se pidió
+        r["jugador"] = nombre
+    return r
 
 
 # understat usa nombres de registro: aquí los que la gente conoce de otra forma (añadir cuando salga uno raro)
@@ -222,9 +232,43 @@ def top_jugadores(metrica, liga="all"):
                                  "question": "Who's missing from this list?"})
 
 
+# Balón de Oro 2026 (gala: Londres, lunes 26/10/2026; periodo: temporada 2025/26). Nominados de las 5 grandes,
+# con el nombre que buscar en nuestros datos (UEFA, 2026). Messi, Quiñones y Mané juegan fuera: no hay datos nuestros.
+NOMINADOS_BDO = ["Jude Bellingham", "Pau Cubarsí", "Marc Cucurella", "Ousmane Dembélé", "Luis Díaz", "Bruno Fernandes",
+                 "Gabriel Magalhães", "Erling Haaland", "Achraf Hakimi", "Harry Kane", "Khvicha Kvaratskhelia", "Lamine Yamal",
+                 "Marquinhos", "Lautaro Martínez", "Kylian Mbappé", "Nuno Mendes", "João Neves", "Michael Olise",
+                 "Willian Pacho", "Declan Rice", "Rodri", "Fabián Ruiz", "William Saliba", "Ferran Torres", "Dayot Upamecano",
+                 "Vinícius Júnior", "Vitinha"]
+
+
+def nominados(metrica="contribucion"):
+    """Top 5 de los nominados al Balón de Oro con NUESTROS datos de la temporada 2025/26 (5 grandes ligas)."""
+    t, _ = jugadores_propios(temporada=2025)
+    filas = []
+    for n in NOMINADOS_BDO:
+        try:
+            filas.append(buscar(t, n))
+        except SystemExit:
+            print("sin datos nuestros:", n)
+    j = pd.DataFrame(filas)
+    mets = {"contribucion": ("Ballon d'Or nominees: <b>goals + assists</b>", "League goals + assists, 2025/26 (top 5 leagues)",
+                             lambda d: d.goles + d.asistencias, 0),
+            "xg_xa": ("Ballon d'Or nominees: <b>xG + xA</b> per 90", "Expected goals + assists per 90, 2025/26 (min. 900')",
+                      lambda d: (d.xg + d.xa) / d.minutos * 90, 2),
+            "definicion": ("Ballon d'Or nominees: finishing <b>above</b> xG", "Goals minus xG, 2025/26 league",
+                           lambda d: d.goles - d.xg, 1)}
+    titulo, expl, f, dec = mets[metrica]
+    j = j[j.minutos >= 900].assign(v=lambda d: f(d)).sort_values("v", ascending=False).head(5)
+    rows = [{"name": visible_nombre(r.jugador), "team": r.equipo, "value": round(float(r.v), dec), "sub": f"{r.equipo} · {r.liga}"}
+            for r in j.itertuples()]
+    render(f"balon_oro_{metrica}", {"template": "ranking", "competition": "Ballon d'Or 2026", "kicker": "By the numbers",
+                                    "title": titulo, "metric": expl, "rows": rows, "dec": dec,
+                                    "question": "Who's your Ballon d'Or?"})
+
+
 if __name__ == "__main__":
-    if sys.argv[1] in ("jugadores", "top_jugadores"):
-        {"jugadores": jugadores, "top_jugadores": top_jugadores}[sys.argv[1]](*sys.argv[2:])
+    if sys.argv[1] in ("jugadores", "top_jugadores", "nominados"):
+        {"jugadores": jugadores, "top_jugadores": top_jugadores, "nominados": nominados}[sys.argv[1]](*sys.argv[2:])
         sys.exit()
     if sys.argv[1] == "ranking":
         ranking(sys.argv[2], sys.argv[3] if len(sys.argv) > 3 else "all")
