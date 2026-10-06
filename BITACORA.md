@@ -11,6 +11,10 @@ cambios de código y archivos".
   el resumen y dónde leerlo.
 - Lo más nuevo, arriba.
 
+## 06/10/2026 — redes: índice 2yellow del Balón de Oro
+- Qué: `datos_rankings.py indice_bdo` / `balon_oro_indice`: criterios oficiales (individual 55%: nota, (G+A)/90, (xG+xA)/90 en liga + Mundial; colectivo 40%: liga, fase de Champions (tabla UCL_2526 de UEFA), fase del Mundial; juego limpio 5%). `nominados` queda como "una sola cifra".
+- Por qué: usuario: el Balón de Oro no se decide por goles y asistencias (otros ponen a Yamal 2º). Resultado: Dembélé 88, Yamal 86, Kane 82, Olise 79, Mbappé 74. Límite: infravalora a mediocentros defensivos (Rodri) porque lo individual mide ataque.
+
 ## 06/10/2026 — redes: momentos de la temporada (Balón de Oro)
 - Qué: `datos_rankings.py nominados <contribucion|xg_xa|definicion>`: top 5 de nominados al Balón de Oro 2026 con nuestros datos 2025/26; `buscar()` entiende los nombres abreviados de Highlightly ("E. Haaland"); `jugadores_propios(temporada)`.
 - Por qué: usuario, publicar según el momentum de la temporada (gala del Balón de Oro 26/10, Londres).

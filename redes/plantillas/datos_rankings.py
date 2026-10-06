@@ -261,14 +261,97 @@ def nominados(metrica="contribucion"):
     j = j[j.minutos >= 900].assign(v=lambda d: f(d)).sort_values("v", ascending=False).head(5)
     rows = [{"name": visible_nombre(r.jugador), "team": r.equipo, "value": round(float(r.v), dec), "sub": f"{r.equipo} · {r.liga}"}
             for r in j.itertuples()]
-    render(f"balon_oro_{metrica}", {"template": "ranking", "competition": "Ballon d'Or 2026", "kicker": "By the numbers",
+    render(f"balon_oro_{metrica}", {"template": "ranking", "competition": "Ballon d'Or 2026", "kicker": "One stat only",
                                     "title": titulo, "metric": expl, "rows": rows, "dec": dec,
-                                    "question": "Who's your Ballon d'Or?"})
+                                    "question": "Does this stat decide it?"})  # una sola cifra: no presentarlo como ranking del premio
+
+
+# Champions 2025/26 (fuente: UEFA/Wikipedia, comprobado 06/10/2026; no está en nuestros datos): fase alcanzada 0-1.
+UCL_2526 = {"Paris Saint Germain": 1.0, "Arsenal": 0.8, "Bayern München": 0.6, "Atletico Madrid": 0.6,
+            "Real Madrid": 0.4, "Liverpool": 0.4, "Barcelona": 0.4, "Sporting CP": 0.4}
+
+
+def indice_bdo(mostrar=True):
+    """Índice 2yellow del Balón de Oro con los 3 criterios oficiales (France Football): 1) actuación individual (55%),
+    2) rendimiento colectivo y títulos (40%), 3) clase y juego limpio (5%). Temporada 2025/26 + Mundial 2026.
+    Individual: nota media de Highlightly, (G+A)/90 y (xG+xA)/90 en liga + Mundial (percentiles entre nominados).
+    Colectivo: liga ganada (1) o top 4 (0.5), fase de Champions, fase del Mundial. Juego limpio: tarjetas/90 (menos = mejor).
+    Sin Champions en nuestros datos: tabla UCL_2526. Usuario 06/10: el Balón de Oro NO se decide por goles y asistencias."""
+    t, _ = jugadores_propios(temporada=2025)
+    h = pd.read_csv(ROOT / "data/historico_partidos.csv", low_memory=False)
+    h = h[(h.temporada == 2025) & h.liga.isin(GRANDES) & h.goles_l.notna()]
+    pts = pd.concat([pd.DataFrame({"equipo": h.local, "liga": h.liga, "p": (h.goles_l > h.goles_v) * 3 + (h.goles_l == h.goles_v)}),
+                     pd.DataFrame({"equipo": h.visitante, "liga": h.liga, "p": (h.goles_v > h.goles_l) * 3 + (h.goles_l == h.goles_v)})])
+    tabla = pts.groupby(["liga", "equipo"]).p.sum().reset_index().sort_values(["liga", "p"], ascending=[True, False])
+    tabla["pos"] = tabla.groupby("liga").cumcount() + 1
+    pos = dict(zip(tabla.equipo, tabla.pos))
+    # Mundial 2026 (nuestros datos de selecciones)
+    sp = pd.read_csv(ROOT / "data/selecciones/partidos.csv")
+    wc = sp[(sp.competicion == "World Cup") & sp.goles_l.notna()].sort_values("fecha")
+    fin = wc.iloc[-1]
+    campeon = fin.local if fin.goles_l > fin.goles_v else fin.visitante
+    finalista = fin.visitante if campeon == fin.local else fin.local
+    jugados = pd.concat([wc.local, wc.visitante]).value_counts()
+    def fase_wc(nac):
+        if nac == campeon: return 1.0
+        if nac == finalista: return 0.85
+        n = jugados.get(nac, 0)
+        return 0.7 if n >= 7 else max(0.0, (n - 3) / 8)
+    jp = pd.read_csv(ROOT / "data/selecciones/jugadores_partido.csv", low_memory=False)
+    jp = jp[jp.match_id.isin(wc.match_id)]
+    eqs = pd.concat([wc[["local_id", "local"]].set_axis(["id", "n"], axis=1), wc[["visitante_id", "visitante"]].set_axis(["id", "n"], axis=1)])
+    nac_de = dict(zip(eqs.id, eqs.n))
+    x = pd.read_csv(ROOT / "data/historico_xg_jugador.csv", low_memory=False)
+    x = x[x.match_id.isin(h.match_id)]
+    filas = []
+    for nom in NOMINADOS_BDO:
+        try:
+            r = buscar(t, nom)
+        except SystemExit:
+            continue
+        jid = int(r.jugador_id)
+        club = x[x.jugador_id == jid]
+        mund = jp[jp.jugador_id == jid]
+        n = lambda d, c: pd.to_numeric(d[c], errors="coerce").fillna(0)
+        mins = n(club, "minutos").sum() + n(mund, "minutos").sum()
+        notas = pd.concat([pd.to_numeric(club.nota, errors="coerce"), pd.to_numeric(mund.nota, errors="coerce")]).dropna()
+        ga = sum(n(d, c).sum() for d in (club, mund) for c in ("goalsScored", "assists"))
+        xgxa = sum(n(d, c).sum() for d in (club, mund) for c in ("expectedGoals", "expectedAssists"))
+        tarj = sum(n(d, "cardsYellow").sum() + 3 * n(d, "cardsRed").sum() for d in (club, mund))
+        nac = nac_de.get(mund.equipo_id.iloc[0]) if len(mund) else None
+        p_liga = pos.get(r.equipo, 99)
+        filas.append({"jugador": nom, "equipo": r.equipo, "liga": r.liga, "minutos": mins, "nota": notas.mean() if len(notas) else None,
+                      "ga90": ga / mins * 90 if mins else 0, "xgxa90": xgxa / mins * 90 if mins else 0, "tarj90": tarj / mins * 90 if mins else 0,
+                      "liga_t": 1.0 if p_liga == 1 else 0.5 if p_liga <= 4 else 0.0, "ucl": UCL_2526.get(r.equipo, 0.0),
+                      "nacion": nac, "mundial": fase_wc(nac) if nac else 0.0, "ga": ga})
+    d = pd.DataFrame(filas)
+    d = d[d.minutos >= 1500].copy()
+    pr = lambda c, asc=True: d[c].rank(pct=True, ascending=asc)
+    d["individual"] = (pr("nota") + pr("ga90") + pr("xgxa90")) / 3
+    d["colectivo"] = (d.liga_t + d.ucl + d.mundial) / 3
+    d["fairplay"] = pr("tarj90", asc=False)
+    d["indice"] = (100 * (0.55 * d.individual + 0.40 * d.colectivo / d.colectivo.max() + 0.05 * d.fairplay)).round(0)
+    d = d.sort_values("indice", ascending=False)
+    if mostrar:
+        print(d[["jugador", "equipo", "nacion", "nota", "ga90", "xgxa90", "liga_t", "ucl", "mundial", "individual", "colectivo", "indice"]]
+              .round(2).to_string(index=False))
+    return d
+
+
+def balon_oro_indice():
+    d = indice_bdo(mostrar=True).head(5)
+    rows = [{"name": r.jugador, "team": r.equipo, "value": int(r.indice),
+             "sub": f"{r.equipo} · {r.nacion or ''}".strip(" ·")} for r in d.itertuples()]
+    render("balon_oro_indice", {"template": "ranking", "competition": "Ballon d'Or 2026", "kicker": "2yellow index",
+                                "title": "Who <b>deserves</b> the Ballon d'Or?",
+                                "metric": "Individual 55% · titles 40% · fair play 5% (2025/26 + World Cup)", "rows": rows,
+                                "question": "Agree with the numbers?"})
 
 
 if __name__ == "__main__":
-    if sys.argv[1] in ("jugadores", "top_jugadores", "nominados"):
-        {"jugadores": jugadores, "top_jugadores": top_jugadores, "nominados": nominados}[sys.argv[1]](*sys.argv[2:])
+    if sys.argv[1] in ("jugadores", "top_jugadores", "nominados", "indice_bdo", "balon_oro_indice"):
+        {"jugadores": jugadores, "top_jugadores": top_jugadores, "nominados": nominados, "indice_bdo": indice_bdo,
+         "balon_oro_indice": balon_oro_indice}[sys.argv[1]](*sys.argv[2:])
         sys.exit()
     if sys.argv[1] == "ranking":
         ranking(sys.argv[2], sys.argv[3] if len(sys.argv) > 3 else "all")
