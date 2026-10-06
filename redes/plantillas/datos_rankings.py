@@ -98,6 +98,14 @@ def buscar(j, nombre):
     return m.sort_values("minutos", ascending=False).iloc[0]
 
 
+# understat usa nombres de registro: aquí los que la gente conoce de otra forma (añadir cuando salga uno raro)
+ALIAS = {"Kylian Mbappe-Lottin": "Kylian Mbappé", "Vinicius Júnior": "Vinícius Jr", "Vinicius Junior": "Vinícius Jr"}
+
+
+def visible_nombre(n):
+    return ALIAS.get(n, n)
+
+
 def corto(nombre):
     partes = str(nombre).split()
     return partes[-1] if len(partes) > 1 and len(nombre) > 11 else nombre
@@ -105,7 +113,8 @@ def corto(nombre):
 
 def jugadores(a, b):
     j = jugadores_tabla()
-    x, y = buscar(j, a), buscar(j, b)
+    x, y = buscar(j, a).copy(), buscar(j, b).copy()
+    x["jugador"], y["jugador"] = visible_nombre(x.jugador), visible_nombre(y.jugador)
     p90 = lambda r, c: r[c] / r.minutos * 90 if r.minutos else 0
     st = lambda lab, f, dec=1: {"label": lab, "h": round(float(f(x)), dec), "a": round(float(f(y)), dec), "dec": dec}
     stats = [st("Goals", lambda r: r.goles, 0), st("Expected goals (xG)", lambda r: r.xg),
@@ -136,7 +145,7 @@ def top_jugadores(metrica, liga="all"):
     if liga != "all":
         j = j[j.liga == liga]
     j = j.assign(v=f(j)).sort_values(["v", "minutos"], ascending=[False, True]).head(5)
-    rows = [{"name": r.jugador, "team": r.equipo, "value": round(float(r.v), dec), "sub": f"{r.equipo} · {r.liga}"}
+    rows = [{"name": visible_nombre(r.jugador), "team": r.equipo, "value": round(float(r.v), dec), "sub": f"{r.equipo} · {r.liga}"}
             for r in j.itertuples()]
     render(f"topjug_{metrica}", {"template": "ranking", "competition": liga if liga != "all" else "Top 5 leagues",
                                  "title": titulo, "metric": expl, "rows": rows, "dec": dec,
