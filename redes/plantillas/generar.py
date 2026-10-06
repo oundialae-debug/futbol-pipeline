@@ -149,7 +149,7 @@ body{{width:1080px;height:1920px;background:{NOCHE};color:#F1F3F8;font-family:Ar
 
 def pagina(d, kicker, cuerpo, pregunta):
     h, a = d["home"], d["away"]
-    pie = d.get("footer", "Data, not betting advice · 18+")
+    pie = d.get("footer", "")  # usuario 06/10: sin "not betting advice · 18+" en las imágenes (confunde al algoritmo)
     guias = ".safe{outline:3px dashed #FF3B3B}" if GUIAS else ""
     return (f'<!doctype html><html><head><meta charset="utf-8"><style>{CSS}{guias}</style></head><body>'
             f'<div id="v" style="--c1:{h["c"]};--c2:{a["c"]}"><div class="safe">'
