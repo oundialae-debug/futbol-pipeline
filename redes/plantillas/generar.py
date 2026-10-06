@@ -490,7 +490,7 @@ def head_to_head(d):
                   f'<div style="display:flex;height:12px;gap:4px;margin-top:-4px"><div style="width:{abs(vh) / tot * 100:.0f}%;'
                   f'border-radius:6px;background:{ch}"></div><div style="width:{abs(va) / tot * 100:.0f}%;border-radius:6px;'
                   f'background:{ca}"></div></div>')
-    marcador = (f'<span class="disp" style="font-size:64px"><span style="color:{h["c"]}">{gana[0]}</span>'
+    marcador = (f'<span class="disp" style="font-size:64px;white-space:nowrap;flex:none"><span style="color:{h["c"]}">{gana[0]}</span>'
                 f'<span style="color:{GRIS}">–</span><span style="color:{a["c"]}">{gana[1]}</span></span>')
     cuerpo = (f'<div class="frase">{d.get("title", "")}</div>' + vs(h, a, marcador)
               + f'<div style="display:flex;flex-direction:column;gap:8px">{filas}</div>'

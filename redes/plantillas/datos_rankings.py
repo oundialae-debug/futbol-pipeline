@@ -1,6 +1,9 @@
 """Datos para las plantillas head_to_head y ranking (clubes de las 5 grandes, temporada en curso). Sin API: solo disco.
     python3 redes/plantillas/datos_rankings.py ranking <metrica> [liga|all]   # métricas: ver METRICAS
     python3 redes/plantillas/datos_rankings.py duelo <equipo A> <equipo B>
+    python3 redes/plantillas/datos_rankings.py jugadores "<jugador A>" "<jugador B>"   # jugador vs jugador (formato preferido, usuario 06/10)
+    python3 redes/plantillas/datos_rankings.py top_jugadores <definicion|xg90|goles|asistencias|creacion> [liga|all]
+Jugadores: data/redes/jugadores_temporada.csv (workflow jugadores_redes.yml, diario).
 Escribe el JSON y el PNG en redes/plantillas/salida/<fecha>_<tipo>/. Nunca Segunda División."""
 import json, subprocess, sys
 from datetime import date
@@ -73,7 +76,77 @@ def duelo(a, b):
                                                "note": f"{int(x.pj)} and {int(y.pj)} league games", "question": "Who wins it?"})
 
 
+def _norm(t):
+    import unicodedata
+    return unicodedata.normalize("NFKD", str(t)).encode("ascii", "ignore").decode().lower().strip()
+
+
+def jugadores_tabla():
+    j = pd.read_csv(ROOT / "data/redes/jugadores_temporada.csv")
+    for c in ["partidos", "minutos", "goles", "xg", "asistencias", "xa", "tiros", "pases_clave", "npg", "npxg"]:
+        j[c] = pd.to_numeric(j[c], errors="coerce").fillna(0)
+    return j[j.liga.isin(GRANDES)]
+
+
+def buscar(j, nombre):
+    n = _norm(nombre)
+    m = j[j.jugador.map(_norm) == n]
+    if m.empty:
+        m = j[j.jugador.map(_norm).str.contains(n, regex=False)]
+    if m.empty:
+        sys.exit(f"No encuentro a {nombre}")
+    return m.sort_values("minutos", ascending=False).iloc[0]
+
+
+def corto(nombre):
+    partes = str(nombre).split()
+    return partes[-1] if len(partes) > 1 and len(nombre) > 11 else nombre
+
+
+def jugadores(a, b):
+    j = jugadores_tabla()
+    x, y = buscar(j, a), buscar(j, b)
+    p90 = lambda r, c: r[c] / r.minutos * 90 if r.minutos else 0
+    st = lambda lab, f, dec=1: {"label": lab, "h": round(float(f(x)), dec), "a": round(float(f(y)), dec), "dec": dec}
+    stats = [st("Goals", lambda r: r.goles, 0), st("Expected goals (xG)", lambda r: r.xg),
+             st("Assists", lambda r: r.asistencias, 0), st("Expected assists (xA)", lambda r: r.xa),
+             st("Shots per 90", lambda r: p90(r, "tiros")), st("Key passes per 90", lambda r: p90(r, "pases_clave"))]
+    misma = x.liga == y.liga
+    render(f"jugadores_{_norm(x.jugador)}_{_norm(y.jugador)}".replace(" ", ""),
+           {"template": "head_to_head", "competition": x.liga if misma else "Top 5 leagues",
+            "home": {"name": x.equipo, "short": corto(x.jugador)}, "away": {"name": y.equipo, "short": corto(y.jugador)},
+            "title": f"{x.jugador} vs {y.jugador}", "stats": stats,
+            "note": f"{x.equipo} · {int(x.minutos)}' | {y.equipo} · {int(y.minutos)}' — this season",
+            "question": "Who are you picking?"})
+
+
+MET_JUG = {
+    "definicion": ("Finishing <b>above</b> the odds", "Goals minus xG, this season", lambda t: t.goles - t.xg, 1),
+    "xg90": ("The most <b>dangerous</b> in the box", "xG per 90 (min. 270')", lambda t: t.xg / t.minutos * 90, 2),
+    "goles": ("Top <b>scorers</b>", "League goals, this season", lambda t: t.goles, 0),
+    "asistencias": ("Top <b>creators</b>", "League assists, this season", lambda t: t.asistencias, 0),
+    "creacion": ("Chance <b>machines</b>", "Expected assists (xA) per 90 (min. 270')", lambda t: t.xa / t.minutos * 90, 2),
+}
+
+
+def top_jugadores(metrica, liga="all"):
+    titulo, expl, f, dec = MET_JUG[metrica]
+    j = jugadores_tabla()
+    j = j[j.minutos >= 270]
+    if liga != "all":
+        j = j[j.liga == liga]
+    j = j.assign(v=f(j)).sort_values(["v", "minutos"], ascending=[False, True]).head(5)
+    rows = [{"name": r.jugador, "team": r.equipo, "value": round(float(r.v), dec), "sub": f"{r.equipo} · {r.liga}"}
+            for r in j.itertuples()]
+    render(f"topjug_{metrica}", {"template": "ranking", "competition": liga if liga != "all" else "Top 5 leagues",
+                                 "title": titulo, "metric": expl, "rows": rows, "dec": dec,
+                                 "question": "Who's missing from this list?"})
+
+
 if __name__ == "__main__":
+    if sys.argv[1] in ("jugadores", "top_jugadores"):
+        {"jugadores": jugadores, "top_jugadores": top_jugadores}[sys.argv[1]](*sys.argv[2:])
+        sys.exit()
     if sys.argv[1] == "ranking":
         ranking(sys.argv[2], sys.argv[3] if len(sys.argv) > 3 else "all")
     else:

@@ -11,6 +11,10 @@ cambios de código y archivos".
   el resumen y dónde leerlo.
 - Lo más nuevo, arriba.
 
+## 06/10/2026 — redes: jugador vs jugador y workflow diario de jugadores
+- Qué: `scripts/jugadores_redes.py` + `jugadores_redes.yml` (09:40 UTC diario, ACTIVO con el sí del usuario): understat (sin cuota, 5 peticiones) → `data/redes/jugadores_temporada.csv`; Highlightly box-score de los partidos recientes de las 5 grandes, tope 20 llamadas/día → `historico_xg_jugador.csv` + `data/redes/jugadores_nombres.csv`. `datos_rankings.py jugadores "A" "B"` y `top_jugadores <métrica>`.
+- Por qué: usuario prefiere jugador vs jugador (más conversación); límite ~100 llamadas/día de Highlightly → fuente principal sin cuota y Highlightly con tope bajo como respaldo.
+
 ## 06/10/2026 — redes: plantillas head_to_head y ranking
 - Qué: `generar.py` + `head_to_head` (dos equipos, 6 cifras, la mejor en su color) y `ranking` (top 5 de una métrica); `redes/plantillas/datos_rankings.py ranking <suerte|xg|muro|tiros|posesion> [liga]` y `duelo <A> <B>` con `historico_partidos.csv` (5 grandes, temporada en curso, sin API).
 - Por qué: usuario, formato que hizo crecer otras cuentas de datos (cara a cara y rankings). Ojo: los datos solo llegan al 20/09; actualizarlos a diario necesita API (pendiente del sí del usuario).

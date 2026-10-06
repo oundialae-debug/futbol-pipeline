@@ -1,0 +1,42 @@
+name: Jugadores para redes (diario)
+
+# Estadísticas de jugadores de las 5 grandes para las plantillas jugador vs jugador y rankings de 2yellow.
+# ACTIVO: el usuario lo aprobó el 06/10/2026 ("sí, actívalo"), recordando el límite de ~100 llamadas/día
+# de Highlightly. Highlightly: máx. 20 llamadas/día (box-score de partidos de ayer que falten), DESPUÉS de
+# ambos_marcan_diario (08:07 UTC, ~80/día), que es el que actualiza historico_partidos.csv. Fuente principal
+# sin cuota: understat.com (5 peticiones). Subir el tope necesita otro sí explícito (CLAUDE.md).
+on:
+  schedule:
+    - cron: '40 9 * * *'
+  workflow_dispatch:
+    inputs:
+      tope_llamadas: {description: 'Tope de llamadas a Highlightly (0 = solo understat)', required: false, default: '20'}
+
+concurrency: {group: jugadores-redes, cancel-in-progress: false}
+
+jobs:
+  jugadores:
+    runs-on: ubuntu-latest
+    permissions: {contents: write}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - run: pip install -q requests pandas
+      - name: Understat (sin cuota)
+        continue-on-error: true
+        run: python scripts/jugadores_redes.py understat
+      - name: Highlightly box-score de ayer (tope bajo)
+        if: ${{ (inputs.tope_llamadas || '20') != '0' }}
+        continue-on-error: true
+        env:
+          HIGHLIGHTLY_API_KEY: ${{ secrets.HIGHLIGHTLY_API_KEY }}
+          TOPE_LLAMADAS: ${{ inputs.tope_llamadas || '20' }}
+        run: python scripts/jugadores_redes.py highlightly
+      - name: Guardar
+        run: |
+          git config user.name "github-actions"; git config user.email "github-actions@users.noreply.github.com"
+          git add data/redes data/historico_xg_jugador.csv
+          git diff --cached --quiet && exit 0
+          git commit -m "jugadores redes: datos del $(date -u +%F)"
+          for i in 1 2 3; do git pull --rebase -q && git push && break; sleep 5; done
