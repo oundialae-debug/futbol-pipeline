@@ -48,6 +48,27 @@ ROL_DE = {"Left Winger": "ATT", "Right Winger": "ATT", "Centre-Forward": "ATT", 
 ROL_LINEA = {"FW": "ATT", "MF": "MID", "DF": "DEF", "GK": "GK"}
 
 
+# Desempate futbolístico por rol (usuario 06/10: "si dos empatan en la misma posición, usa un dato extra con criterio"):
+# atacantes = ocasiones creadas y generadas (xG+xA/90; sin xG, pases clave+tiros a puerta/90); medios = pases clave/90;
+# defensas = entradas+intercepciones/90; porteros = paradas/90. Si aún empatan, más minutos.
+def desempate(r):
+    m = r.minutos or 1
+    if r.rol == "ATT":
+        if pd.notna(r.expectedGoals):
+            return ((r.expectedGoals or 0) + (r.expectedAssists or 0)) / m * 90
+        return ((r.passesKey or 0) + (r.shotsOnTarget or 0)) / m * 90
+    if r.rol == "MID":
+        return (r.passesKey or 0) / m * 90
+    if r.rol == "DEF":
+        return ((r.tacklesTotal or 0) + (r.interceptionsTotal or 0)) / m * 90
+    return (r.goalsSaved or 0) / m * 90
+
+
+# Banda contraria: nunca (antes Lamine, extremo derecho, salía de extremo izquierdo por empatar con Olise).
+CONTRARIA = {"LW": {"Right Winger", "Right Midfield"}, "RW": {"Left Winger", "Left Midfield"},
+             "LB": {"Right-Back"}, "RB": {"Left-Back"}}
+
+
 def puntuar(t):
     """Añade rol, índice por rol (0-99) y las 2 métricas que más le suben (para el desglose)."""
     pos = posiciones()
@@ -180,13 +201,15 @@ def xi(desde, hasta, fuente="clubes", titulo=None):
                 continue
             if int(r.jugador_id) in pos:
                 prin, sec = pos[int(r.jugador_id)]
+                if prin & CONTRARIA.get(hueco, set()):
+                    continue
                 if prin & valen:
                     parejas.append((r.indice, k, r))
                 elif sec & valen:
                     parejas.append((r.indice - 3, k, r))
             elif central == r.pos:
                 parejas.append((r.indice, k, r))
-    parejas.sort(key=lambda x: (-x[0], x[1]))
+    parejas.sort(key=lambda x: (-x[0], -desempate(x[2]), -x[2].minutos, x[1]))
     ocupado, usados, asign = set(), set(), {}
     for punt, k, r in parejas:
         if k in ocupado or r.jugador_id in usados:

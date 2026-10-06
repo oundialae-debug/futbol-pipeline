@@ -11,6 +11,10 @@ cambios de código y archivos".
   el resumen y dónde leerlo.
 - Lo más nuevo, arriba.
 
+## 06/10/2026 — redes: XI sin banda contraria y con desempate futbolístico
+- Qué: nadie juega en la banda contraria (extremo/lateral); empate de índice en la misma posición -> dato del rol (ATT xG+xA/90, MID pases clave/90, DEF entradas+int/90, GK paradas/90), luego minutos.
+- Por qué: usuario: Lamine (extremo derecho) salía de extremo izquierdo al empatar con Olise. Ahora Lamine gana el desempate (1,37 vs 1,35 xG+xA/90) y Olise queda fuera.
+
 ## 06/10/2026 — redes: XI de septiembre (ligas + Champions)
 - Qué: mínimo 270' en periodos de más de 10 días (mes, torneo). Con nombres completos (redes_api nombres: 3.489) y 17/18 partidos de Champions J1: Dahmen; Mitchell, Tah, Tarkowski, Davies; Cásseres, Mainoo, Nico Paz; Olise, Raphinha, Lamine Yamal.
 - Por qué: sin mínimo se colaban jugadores de AEK/Sporting con un solo partido de Champions. Comprobado fuera: Olise y Yamal son los nombres del mes; Groß (jugador del mes de la Premier) queda 21º de 113 medios.
