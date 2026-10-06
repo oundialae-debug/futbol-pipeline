@@ -1,7 +1,7 @@
 # Graph Report - futbol-pipeline  (2026-10-06)
 
 ## Corpus Check
-- 205 files · ~288,308 words
+- 205 files · ~288,321 words
 - Verdict: corpus is large enough that graph structure adds value.
 - Unclassified: 3 file(s) not represented in the graph (top: (none) 2, .woff2 1)
 
@@ -11,7 +11,7 @@
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `f9a47094`
+- Built from commit: `fc01d74c`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -274,7 +274,7 @@ Nodes (38): Ajuste interno (29/09/2026): árboles de un nivel (NO CONFIRMADO, ve
 
 ### Community 26 - "generar.py"
 Cohesion: 0.07
-Nodes (49): 05/10/2026, 05/10/2026 — redes: backup sin Claude, 05/10/2026 — redes: fuera "bookies" de las imágenes, 06/10/2026 — redes: correcciones del usuario y caras en jugador vs jugador, 06/10/2026 — redes: fuera "Data, not betting advice · 18+" de las imágenes, 06/10/2026 — redes: jugador vs jugador y workflow diario de jugadores, 06/10/2026 — redes: nunca el mismo color para los dos equipos, 06/10/2026 — redes: plantillas head_to_head y ranking (+41 more)
+Nodes (49): 05/10/2026, 05/10/2026 — redes: backup sin Claude, 05/10/2026 — redes: fuera "bookies" de las imágenes, 06/10/2026 — redes: correcciones del usuario y caras en jugador vs jugador, 06/10/2026 — redes: fuera "Data, not betting advice · 18+" de las imágenes y descripciones, 06/10/2026 — redes: jugador vs jugador y workflow diario de jugadores, 06/10/2026 — redes: nunca el mismo color para los dos equipos, 06/10/2026 — redes: plantillas head_to_head y ranking (+41 more)
 
 ### Community 27 - "backup_redes.py"
 Cohesion: 0.32

@@ -11897,14 +11897,14 @@
       "source_location": "L18"
     },
     {
-      "id": "bitacora_06_10_2026_redes_fuera_data_not_betting_advice_18_de_las_im\u00e1genes",
-      "label": "06/10/2026 \u2014 redes: fuera \"Data, not betting advice \u00b7 18+\" de las im\u00e1genes",
+      "id": "bitacora_06_10_2026_redes_fuera_data_not_betting_advice_18_de_las_im\u00e1genes_y_descripciones",
+      "label": "06/10/2026 \u2014 redes: fuera \"Data, not betting advice \u00b7 18+\" de las im\u00e1genes y descripciones",
       "_origin": "ast",
       "community": 26,
       "community_name": "generar.py",
       "file_type": "document",
       "node_kind": "heading",
-      "norm_label": "06/10/2026 \u2014 redes: fuera \"data, not betting advice \u00b7 18+\" de las imagenes",
+      "norm_label": "06/10/2026 \u2014 redes: fuera \"data, not betting advice \u00b7 18+\" de las imagenes y descripciones",
       "source_file": "BITACORA.md",
       "source_location": "L14"
     },
@@ -45669,7 +45669,7 @@
     },
     {
       "source": "bitacora_bit\u00e1cora_del_proyecto",
-      "target": "bitacora_06_10_2026_redes_fuera_data_not_betting_advice_18_de_las_im\u00e1genes",
+      "target": "bitacora_06_10_2026_redes_fuera_data_not_betting_advice_18_de_las_im\u00e1genes_y_descripciones",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -60618,5 +60618,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "f9a47094347d541b3e3752621b44d23998836ef9"
+  "built_at_commit": "fc01d74ccbf57e96eebdc1daf7f2b11dd6652c06"
 }
