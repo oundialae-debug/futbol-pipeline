@@ -1,14 +1,14 @@
 # Más/menos juegos en directo: apuestas en papel
 
-Partidos acabados con cuota de juegos en el registro: **398**. Una apuesta por partido (se agrupa por partido). Cuota = la de la API en esa pasada, no la de Luckia. Con menos de 20 apuestas el número no significa nada.
+Partidos acabados con cuota de juegos en el registro: **402**. Una apuesta por partido (se agrupa por partido). Cuota = la de la API en esa pasada, no la de Luckia. Con menos de 20 apuestas el número no significa nada.
 
 | estrategia | apuestas | aciertos | beneficio medio | sigmas |
 |---|---|---|---|---|
-| **señal: vigilar el menos** | 100 | 68% | +22.1% | +2.50 |
-| control: siempre el menos (1ª pasada) | 398 | 50% | -7.2% | -1.55 |
-| control: siempre el más (1ª pasada) | 398 | 50% | -7.4% | -1.57 |
+| **señal: vigilar el menos** | 101 | 67% | +20.9% | +2.36 |
+| control: siempre el menos (1ª pasada) | 402 | 50% | -7.3% | -1.56 |
+| control: siempre el más (1ª pasada) | 402 | 50% | -7.4% | -1.58 |
 
-Brier del 'más' en la línea principal (1ª pasada): modelo 0.2696, mercado 0.2512 (menor es mejor). El modelo da al más +12.9% sobre lo que pasa de verdad.
+Brier del 'más' en la línea principal (1ª pasada): modelo 0.2693, mercado 0.2511 (menor es mejor). El modelo da al más +12.9% sobre lo que pasa de verdad.
 
 ## Señales
 
@@ -110,6 +110,7 @@ Brier del 'más' en la línea principal (1ª pasada): modelo 0.2696, mercado 0.2
 | ATP Shanghai: R. Te vs I. Simakin | 21.5 | 1.91 | 17 | gana |
 | ATP Shanghai: K. Jacquet vs R. Sakamoto | 33.5 | 1.67 | 36 | pierde |
 | Challenger Wuning 3 (China): R. Seggerman vs H. Shiraishi | 36.5 | 1.73 | 39 | pierde |
+| Challenger Wuning 3 (China): A. Kachmazov vs C. Broom | 23.5 | 1.83 | 33 | pierde |
 | ATP 500 Tokyo: C. Alcaraz vs J. Lehecka | 25.5 | 1.91 | 23 | gana |
 | WTA 125 Suzhou: O. Oliynykova vs W. Zheng | 16.5 | 1.73 | 16 | gana |
 | Challenger Palermo (Italy): B. Gadamauri vs P. Vives Marcos | 24.5 | 1.36 | 24 | gana |
@@ -126,11 +127,11 @@ Brier del 'más' en la línea principal (1ª pasada): modelo 0.2696, mercado 0.2
 
 ## Previos (antes de empezar), línea principal de juegos y ganador
 
-537 partidos. Juegos (más de la línea principal), Brier (menor es mejor): modelo 0.2747, modelo corregido con el historial 0.2540, casa 0.2502. Pasó el más en el 50%.
-Ganador (537): acierto modelo 67%, casa 70%.
+552 partidos. Juegos (más de la línea principal), Brier (menor es mejor): modelo 0.2758, modelo corregido con el historial 0.2542, casa 0.2503. Pasó el más en el 49%.
+Ganador (552): acierto modelo 67%, casa 69%.
 
 ## Aprendizaje (recalibración del modelo)
 
-Partidos resueltos: 326 (2352 líneas). Activa: **sí** (hace falta 30+ partidos y que mejore a la CASA en partidos que no vio).
-**Apostando con lo aprendido, día a día** (cada día aprende solo de los anteriores): 223 apuestas, aciertos 48%, beneficio medio -12.2%, -1.95 sigmas.
-Brier (menor es mejor): modelo 0.2673, modelo con el saque de hoy 0.2581, casa 0.2446, recalibrado (validado por partidos) 0.2323. Sesgo del modelo hacia el más: +18.3%.
+Partidos resueltos: 330 (2388 líneas). Activa: **sí** (hace falta 30+ partidos y que mejore a la CASA en partidos que no vio).
+**Apostando con lo aprendido, día a día** (cada día aprende solo de los anteriores): 227 apuestas, aciertos 48%, beneficio medio -12.2%, -1.97 sigmas.
+Brier (menor es mejor): modelo 0.2668, modelo con el saque de hoy 0.2579, casa 0.2445, recalibrado (validado por partidos) 0.2336. Sesgo del modelo hacia el más: +18.0%.
