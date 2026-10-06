@@ -1631,5 +1631,3306 @@
     "pattern_b": "_girona26273"
    }
   ]
+ },
+ "1899 Hoffenheim": {
+  "pagina": "TSG 1899 Hoffenheim",
+  "kits": [
+   {
+    "body": "0000ff",
+    "shorts": "0000ff",
+    "socks": "0000ff",
+    "leftarm": "ffffff",
+    "pattern_b": "_hoffenheim2627h"
+   },
+   {
+    "body": "e0d9cc",
+    "shorts": "e0d9cc",
+    "socks": "e0d9cc",
+    "leftarm": "e0d9cc",
+    "pattern_b": "_hoffenheim2627a"
+   },
+   {
+    "body": "b7b5e8",
+    "shorts": "6d66ac",
+    "socks": "b7b5e8",
+    "leftarm": "b7b5e8",
+    "pattern_b": "_hoffenheim2627t"
+   }
+  ]
+ },
+ "AC Milan": {
+  "pagina": "AC Milan",
+  "kits": [
+   {
+    "body": "000000",
+    "shorts": "FFFFFF",
+    "socks": "000000",
+    "leftarm": "000000",
+    "pattern_b": "_milan2627h"
+   },
+   {
+    "socks": "FFFFFF",
+    "pattern_b": "_milan2627a"
+   },
+   {
+    "body": "3b3a3f",
+    "shorts": "3b3a3f",
+    "socks": "3b3a3f",
+    "leftarm": "3b3a3f",
+    "pattern_b": "_milan2627t"
+   }
+  ]
+ },
+ "AEK Athens FC": {
+  "pagina": "AEK Athens F.C.",
+  "kits": [
+   {
+    "shorts": "000000",
+    "socks": "FFE200",
+    "pattern_b": "_aek2627h"
+   },
+   {
+    "shorts": "000000",
+    "socks": "000000",
+    "pattern_b": "_aek2627a"
+   },
+   {
+    "shorts": "77bbff",
+    "socks": "77bbff",
+    "pattern_b": "_aek2627t"
+   }
+  ]
+ },
+ "AS Roma": {
+  "pagina": "AS Roma",
+  "kits": [
+   {
+    "body": "980729",
+    "shorts": "681f30",
+    "socks": "980729",
+    "leftarm": "681f30",
+    "pattern_b": "_roma2627h"
+   },
+   {
+    "body": "ECE3DA",
+    "shorts": "ECE3DA",
+    "socks": "ECE3DA",
+    "leftarm": "ECE3DA",
+    "pattern_b": "_roma2627a"
+   },
+   {
+    "body": "46474b",
+    "shorts": "000000",
+    "socks": "46474b",
+    "leftarm": "46474b",
+    "pattern_b": "_roma2627t"
+   }
+  ]
+ },
+ "Aarhus GF": {
+  "pagina": "Aarhus Gymnastikforening",
+  "kits": [
+   {
+    "body": "ffffff",
+    "shorts": "191c51",
+    "socks": "191c51",
+    "leftarm": "ffffff",
+    "pattern_b": "_aarhus2627h"
+   },
+   {
+    "body": "191c51",
+    "shorts": "ffffff",
+    "socks": "191c51",
+    "leftarm": "191c51",
+    "pattern_b": "_aarhus2627a"
+   }
+  ]
+ },
+ "Angers": {
+  "pagina": "Angers SCO",
+  "kits": [
+   {
+    "body": "000000",
+    "shorts": "000000",
+    "socks": "000000",
+    "leftarm": "000000",
+    "pattern_b": "_angers2627h"
+   },
+   {
+    "body": "FFFFFF",
+    "shorts": "FFFFFF",
+    "socks": "FFFFFF",
+    "leftarm": "FFFFFF",
+    "pattern_b": "_angers2526a"
+   },
+   {
+    "body": "DAAD31",
+    "shorts": "000000",
+    "socks": "000000",
+    "leftarm": "DAAD31",
+    "pattern_b": "_angers2526t"
+   }
+  ]
+ },
+ "Ararat-Armenia": {
+  "pagina": "FC Ararat-Armenia",
+  "kits": [
+   {
+    "body": "FFFFFF",
+    "shorts": "FFFFFF",
+    "socks": "FFFFFF",
+    "leftarm": "FFFFFF",
+    "pattern_b": "_macroncerberuseco25wb"
+   },
+   {
+    "body": "000000",
+    "shorts": "000000",
+    "socks": "000000",
+    "leftarm": "000000",
+    "pattern_b": "_macroncerberuseco25ba"
+   }
+  ]
+ },
+ "Arsenal": {
+  "pagina": "Arsenal F.C.",
+  "kits": [
+   {
+    "body": "F00000",
+    "shorts": "FFFFFF",
+    "socks": "F00000",
+    "leftarm": "FFFFFF",
+    "pattern_b": "_arsenal2627h"
+   },
+   {
+    "body": "0D1B5C",
+    "shorts": "0D1B5C",
+    "socks": "0D1B5C",
+    "leftarm": "0D1B5C",
+    "pattern_b": "_arsenal2627a"
+   },
+   {
+    "body": "FAF7B4",
+    "shorts": "13223F",
+    "socks": "13223F",
+    "leftarm": "FAF7B4",
+    "pattern_b": "_arsenal2627t"
+   }
+  ]
+ },
+ "Aston Villa": {
+  "pagina": "Aston Villa F.C.",
+  "kits": [
+   {
+    "body": "69091C",
+    "shorts": "BBD5F2",
+    "socks": "BBD5F2",
+    "leftarm": "69091C",
+    "pattern_b": "_astonvilla2627h"
+   },
+   {
+    "body": "000000",
+    "shorts": "000000",
+    "socks": "000000",
+    "leftarm": "000000",
+    "pattern_b": "_astonvilla2627A"
+   },
+   {
+    "body": "BBD5F2",
+    "shorts": "69091C",
+    "socks": "69091C",
+    "leftarm": "BBD5F2",
+    "pattern_b": "_astonvilla2627t"
+   }
+  ]
+ },
+ "Atalanta": {
+  "pagina": "Atalanta BC",
+  "kits": [
+   {
+    "shorts": "000000",
+    "socks": "000000",
+    "pattern_b": "_atalanta2627h"
+   },
+   {
+    "body": "FFFFFF",
+    "shorts": "FFFFFF",
+    "socks": "FFFFFF",
+    "leftarm": "FFFFFF",
+    "pattern_b": "_atalanta2627a"
+   },
+   {
+    "body": "ff8f00",
+    "shorts": "ff8f00",
+    "socks": "ff8f00",
+    "leftarm": "ff8f00",
+    "pattern_b": "_atalanta2627t"
+   }
+  ]
+ },
+ "Atert Bissen": {
+  "pagina": "FC Atert Bissen",
+  "kits": [
+   {
+    "body": "FFFF00",
+    "shorts": "000000",
+    "socks": "FFFF00",
+    "leftarm": "FFFF00"
+   },
+   {
+    "body": "000000",
+    "shorts": "FFFF00",
+    "socks": "000000",
+    "leftarm": "000000"
+   }
+  ]
+ },
+ "Auxerre": {
+  "pagina": "AJ Auxerre",
+  "kits": [
+   {
+    "body": "FFFFFF",
+    "shorts": "FFFFFF",
+    "socks": "FFFFFF",
+    "leftarm": "FFFFFF",
+    "pattern_b": "_AJAuxerre2627h"
+   },
+   {
+    "pattern_b": "_AJAuxerre2627a"
+   }
+  ]
+ },
+ "Bayer Leverkusen": {
+  "pagina": "Bayer 04 Leverkusen",
+  "kits": [
+   {
+    "body": "000000",
+    "shorts": "000000",
+    "socks": "000000",
+    "leftarm": "000000",
+    "pattern_b": "_bayer2627h"
+   },
+   {
+    "body": "D8E6E5",
+    "shorts": "587185",
+    "socks": "587185",
+    "leftarm": "d8E6E5",
+    "pattern_b": "_bayer2627a"
+   },
+   {
+    "pattern_b": "_bayer2627t"
+   }
+  ]
+ },
+ "Bayern Munich": {
+  "pagina": "FC Bayern Munich",
+  "kits": [
+   {
+    "body": "FF0000",
+    "shorts": "FF0000",
+    "socks": "FF0000",
+    "leftarm": "FF0000",
+    "pattern_b": "_bayern2627h"
+   },
+   {
+    "body": "FFFFFF",
+    "shorts": "000F5A",
+    "socks": "FFFFFF",
+    "leftarm": "FFFFFF",
+    "pattern_b": "_bayern2627a"
+   },
+   {
+    "body": "13003B",
+    "socks": "13003B",
+    "leftarm": "13003B",
+    "pattern_b": "_bayern2627t"
+   }
+  ]
+ },
+ "Bodø/Glimt": {
+  "pagina": "FK Bodø/Glimt",
+  "kits": [
+   {
+    "body": "FFDD00",
+    "shorts": "FFDD00",
+    "socks": "FFDD00",
+    "leftarm": "FFDD00",
+    "pattern_b": "_bodo26h"
+   },
+   {
+    "body": "00093b",
+    "shorts": "EDE8D0",
+    "socks": "EDE8D0",
+    "leftarm": "00093b",
+    "pattern_b": "_bodo26a"
+   }
+  ]
+ },
+ "Bologna": {
+  "pagina": "Bologna FC 1909",
+  "kits": [
+   {
+    "body": "00003C",
+    "shorts": "FFFFFF",
+    "socks": "00003C",
+    "leftarm": "00003C",
+    "pattern_b": "_bologna2627h"
+   },
+   {
+    "body": "FFFFFF",
+    "shorts": "00003C",
+    "socks": "FFFFFF",
+    "leftarm": "FFFFFF",
+    "pattern_b": "_bologna2627a"
+   }
+  ]
+ },
+ "Borac Banja Luka": {
+  "pagina": "FK Borac Banja Luka",
+  "kits": [
+   {
+    "socks": "ff0000",
+    "pattern_b": "_borac2627h"
+   },
+   {
+    "socks": "}}",
+    "pattern_b": "_borac2627a"
+   }
+  ]
+ },
+ "Borussia Dortmund": {
+  "pagina": "2026–27 Borussia Dortmund season",
+  "kits": [
+   {
+    "body": "FFDD00",
+    "shorts": "000000",
+    "socks": "FFDD00",
+    "leftarm": "FFDD00",
+    "pattern_b": "_bvb2627h"
+   },
+   {
+    "body": "000000",
+    "shorts": "000000",
+    "socks": "000000",
+    "leftarm": "000000",
+    "pattern_b": "_bvb2627a"
+   },
+   {
+    "body": "843daf",
+    "shorts": "843daf",
+    "socks": "843daf",
+    "leftarm": "843daf",
+    "pattern_b": "_bvb2627t"
+   }
+  ]
+ },
+ "Borussia Mönchengladbach": {
+  "pagina": "Borussia Mönchengladbach",
+  "kits": [
+   {
+    "body": "FFFFFF",
+    "shorts": "FFFFFF",
+    "socks": "FFFFFF",
+    "leftarm": "FFFFFF",
+    "pattern_b": "_gladbach2627h"
+   },
+   {
+    "body": "000000",
+    "shorts": "000000",
+    "socks": "000000",
+    "leftarm": "000000",
+    "pattern_b": "_gladbach2627a"
+   },
+   {
+    "body": "000000",
+    "shorts": "000000",
+    "socks": "000000",
+    "leftarm": "000000",
+    "pattern_b": "_gladbach2627t"
+   }
+  ]
+ },
+ "Bournemouth": {
+  "pagina": "AFC Bournemouth",
+  "kits": [
+   {
+    "body": "000000",
+    "shorts": "000000",
+    "socks": "000000",
+    "leftarm": "000000",
+    "pattern_b": "_bournemouth2627h"
+   },
+   {
+    "body": "800080",
+    "shorts": "800080",
+    "socks": "800080",
+    "leftarm": "800080",
+    "pattern_b": "_bournemouth2627a"
+   },
+   {
+    "body": "FAF9F6",
+    "shorts": "000000",
+    "socks": "FAF9F6",
+    "leftarm": "FAF9F6",
+    "pattern_b": "_bournemouth2627t"
+   }
+  ]
+ },
+ "Brentford": {
+  "pagina": "Brentford F.C.",
+  "kits": [
+   {
+    "body": "FFFFFF",
+    "shorts": "000000",
+    "socks": "000000",
+    "leftarm": "FFFFFF",
+    "pattern_b": "_brentford2627h"
+   },
+   {
+    "body": "000080",
+    "shorts": "000080",
+    "socks": "000080",
+    "leftarm": "000080",
+    "pattern_b": "_brentford2627a"
+   },
+   {
+    "body": "FFED29",
+    "shorts": "FFED29",
+    "socks": "FFED29",
+    "leftarm": "FFED29",
+    "pattern_b": "_brentford2627t"
+   }
+  ]
+ },
+ "Brighton": {
+  "pagina": "Brighton & Hove Albion F.C.",
+  "kits": [
+   {
+    "body": "1144DD",
+    "shorts": "1144DD",
+    "socks": "1144DD",
+    "leftarm": "1144DD",
+    "pattern_b": "_brighton2627h"
+   },
+   {
+    "body": "FFFFFF",
+    "shorts": "FFFFFF",
+    "socks": "1144DD",
+    "leftarm": "FFFFFF",
+    "pattern_b": "_brighton2627a"
+   },
+   {
+    "body": "00587E",
+    "shorts": "00587E",
+    "socks": "00587E",
+    "leftarm": "00587E",
+    "pattern_b": "_brighton2627t"
+   }
+  ]
+ },
+ "Burnley": {
+  "pagina": "Burnley F.C.",
+  "kits": [
+   {
+    "shorts": "FFFFFF",
+    "pattern_b": "_burnley2627h"
+   },
+   {
+    "pattern_b": "_burnley2627a"
+   },
+   {
+    "body": "06402B",
+    "shorts": "000000",
+    "socks": "000000",
+    "leftarm": "06402B",
+    "pattern_b": "_burnley2627t"
+   }
+  ]
+ },
+ "Cagliari": {
+  "pagina": "Cagliari Calcio",
+  "kits": [
+   {
+    "body": "022249",
+    "shorts": "022249",
+    "socks": "022249",
+    "leftarm": "022249",
+    "pattern_b": "_cagliari2627h"
+   },
+   {
+    "body": "FFFFFF",
+    "shorts": "FFFFFF",
+    "socks": "FFFFFF",
+    "leftarm": "FFFFFF",
+    "pattern_b": "_cagliari2627a"
+   },
+   {
+    "body": "0fbaf0",
+    "shorts": "0fbaf0",
+    "socks": "0fbaf0",
+    "leftarm": "0fbaf0",
+    "pattern_b": "_cagliari2526T"
+   }
+  ]
+ },
+ "Celje": {
+  "pagina": "NK Celje",
+  "kits": [
+   {
+    "shorts": "000055",
+    "leftarm": "0080FF",
+    "pattern_b": "_niketrophy5mnpb"
+   },
+   {
+    "body": "FF6600",
+    "shorts": "FF6600",
+    "socks": "FF6600",
+    "leftarm": "FF6600",
+    "pattern_b": "_niketrophy5soto"
+   }
+  ]
+ },
+ "Celtic": {
+  "pagina": "Celtic F.C.",
+  "kits": [
+   {
+    "body": "FFFFFF",
+    "shorts": "FFFFFF",
+    "socks": "FFFFFF",
+    "leftarm": "FFFFFF",
+    "pattern_b": "_celtic2627h"
+   },
+   {
+    "body": "114b40",
+    "shorts": "000000",
+    "socks": "000000",
+    "leftarm": "114b40",
+    "pattern_b": "_celtic2627a"
+   },
+   {
+    "body": "f4eedc",
+    "shorts": "183f1f",
+    "socks": "183f1f",
+    "leftarm": "f4eedc",
+    "pattern_b": "_celtic2627t"
+   }
+  ]
+ },
+ "Chelsea": {
+  "pagina": "Chelsea F.C.",
+  "kits": [
+   {
+    "body": "14349B",
+    "shorts": "14349B",
+    "socks": "FFFFFF",
+    "leftarm": "14349B",
+    "pattern_b": "_chelsea2627h"
+   },
+   {
+    "body": "000000",
+    "shorts": "000000",
+    "socks": "F0D104",
+    "leftarm": "000000",
+    "pattern_b": "_chelsea2627a"
+   },
+   {
+    "pattern_b": "_chelsea2627t"
+   }
+  ]
+ },
+ "Club Brugge KV": {
+  "pagina": "Club Brugge KV",
+  "kits": [
+   {
+    "body": "000000",
+    "shorts": "000000",
+    "socks": "000000",
+    "leftarm": "000000",
+    "pattern_b": "_brugge2627h"
+   },
+   {
+    "body": "FFFFFF",
+    "shorts": "FFFFFF",
+    "socks": "FFFFFF",
+    "leftarm": "FFFFFF",
+    "pattern_b": "_brugge2627a"
+   }
+  ]
+ },
+ "Como": {
+  "pagina": "Como 1907",
+  "kits": [
+   {
+    "body": "215AAE",
+    "shorts": "FFFFFF",
+    "socks": "215AAE",
+    "leftarm": "215AAE",
+    "pattern_b": "_como2627h"
+   },
+   {
+    "socks": "FFFFFF",
+    "pattern_b": "_como2627a"
+   }
+  ]
+ },
+ "Coventry": {
+  "pagina": "Coventry City F.C.",
+  "kits": [
+   {
+    "body": "62b5e5",
+    "shorts": "62b5e5",
+    "socks": "62b5e5",
+    "leftarm": "62b5e5",
+    "pattern_b": "_coventry2627h"
+   },
+   {
+    "body": "f5f3f1",
+    "shorts": "f5f3f1",
+    "socks": "f5f3f1",
+    "leftarm": "f5f3f1",
+    "pattern_b": "_coventry2627a"
+   },
+   {
+    "body": "e795df",
+    "shorts": "e795df",
+    "socks": "e795df",
+    "leftarm": "e795df",
+    "pattern_b": "_coventry2627t"
+   }
+  ]
+ },
+ "Cremonese": {
+  "pagina": "US Cremonese",
+  "kits": [
+   {
+    "pattern_b": "_cremonese2627h"
+   },
+   {
+    "pattern_b": "_cremonese2627a"
+   }
+  ]
+ },
+ "Crystal Palace": {
+  "pagina": "Crystal Palace F.C.",
+  "kits": [
+   {
+    "body": "FFFFFF",
+    "shorts": "FFFFFF",
+    "socks": "FFFFFF",
+    "leftarm": "FFFFFF",
+    "pattern_b": "_crystalpalace2627h"
+   },
+   {
+    "body": "000000",
+    "shorts": "000000",
+    "socks": "000000",
+    "leftarm": "000000",
+    "pattern_b": "_crystalpalace2627a"
+   },
+   {
+    "body": "0000ff",
+    "shorts": "0000ff",
+    "socks": "0000ff",
+    "leftarm": "0000ff",
+    "pattern_b": "_crystalpalace2627t"
+   }
+  ]
+ },
+ "Dinamo Zagreb": {
+  "pagina": "GNK Dinamo Zagreb",
+  "kits": [
+   {
+    "body": "0000FE",
+    "shorts": "0000FE",
+    "socks": "0000FE",
+    "leftarm": "0000FE",
+    "pattern_b": "_dzagreb2627h"
+   },
+   {
+    "body": "FFFFFF",
+    "shorts": "FFFFFF",
+    "socks": "FFFFFF",
+    "leftarm": "FFFFFF",
+    "pattern_b": "_dzagreb2627a"
+   },
+   {
+    "body": "000000",
+    "shorts": "000000",
+    "socks": "000000",
+    "leftarm": "000000",
+    "pattern_b": "_dzagreb2627t"
+   }
+  ]
+ },
+ "Drita": {
+  "pagina": "FC Drita",
+  "kits": [
+   {
+    "body": "0000ff",
+    "shorts": "0000ff",
+    "socks": "0000ff",
+    "leftarm": "0000ff",
+    "pattern_b": "_macroncerberuseco25rbw"
+   },
+   {
+    "body": "ffffff",
+    "shorts": "ffffff",
+    "socks": "ffffff",
+    "leftarm": "ffffff",
+    "pattern_b": "_macroncerberuseco25wrb"
+   },
+   {
+    "body": "00DACA",
+    "shorts": "00DACA",
+    "socks": "FFFFFF",
+    "leftarm": "00DACA",
+    "pattern_b": "_macronthemiseco23ta"
+   }
+  ]
+ },
+ "Egnatia Rrogozhinë": {
+  "pagina": "KF Egnatia",
+  "kits": [
+   {
+    "body": "00792b",
+    "shorts": "000000",
+    "socks": "000000",
+    "leftarm": "00792b",
+    "pattern_b": "_jomavictory1gb"
+   },
+   {
+    "body": "ffffff",
+    "shorts": "ffffff",
+    "socks": "ffffff",
+    "leftarm": "ffffff",
+    "pattern_b": "_jomatoletum5wb"
+   }
+  ]
+ },
+ "Eintracht Frankfurt": {
+  "pagina": "Eintracht Frankfurt",
+  "kits": [
+   {
+    "body": "000000",
+    "shorts": "000000",
+    "socks": "000000",
+    "leftarm": "000000",
+    "pattern_b": "_frankfurt2627h"
+   },
+   {
+    "body": "FFFFFF",
+    "shorts": "000000",
+    "socks": "FFFFFF",
+    "leftarm": "FFFFFF",
+    "pattern_b": "_frankfurt2627a"
+   },
+   {
+    "pattern_b": "_frankfurt2627t"
+   }
+  ]
+ },
+ "Estac Troyes": {
+  "pagina": "ES Troyes AC",
+  "kits": [
+   {
+    "shorts": "0000ff",
+    "socks": "0000ff",
+    "pattern_b": "_troyes2526h"
+   },
+   {
+    "socks": "fcedde",
+    "pattern_b": "_troyes2627a"
+   },
+   {
+    "body": "000000",
+    "shorts": "000000",
+    "socks": "000000",
+    "leftarm": "000000",
+    "pattern_b": "_troyes2526t"
+   }
+  ]
+ },
+ "Everton": {
+  "pagina": "Everton F.C.",
+  "kits": [
+   {
+    "body": "0000ff",
+    "shorts": "FFFFFF",
+    "socks": "0000FF",
+    "leftarm": "0000ff",
+    "pattern_b": "_everton2627h"
+   },
+   {
+    "body": "FFFFFF",
+    "shorts": "090040",
+    "socks": "FFFFFF",
+    "leftarm": "FFFFFF",
+    "pattern_b": "_everton2627a"
+   },
+   {
+    "body": "006400",
+    "shorts": "006400",
+    "socks": "006400",
+    "leftarm": "006400",
+    "pattern_b": "_everton2627t"
+   }
+  ]
+ },
+ "FC Augsburg": {
+  "pagina": "FC Augsburg",
+  "kits": [
+   {
+    "body": "EDE6DC",
+    "shorts": "680F00",
+    "socks": "EDE6DC",
+    "leftarm": "EDE6DC",
+    "pattern_b": "_augsburg2627h"
+   },
+   {
+    "body": "016c76",
+    "shorts": "016c76",
+    "socks": "016c76",
+    "leftarm": "016c76",
+    "pattern_b": "_augsburg2627a"
+   },
+   {
+    "body": "5c111b",
+    "shorts": "5c111b",
+    "socks": "5c111b",
+    "leftarm": "5c111b",
+    "pattern_b": "_augsburg2627t"
+   }
+  ]
+ },
+ "FC Heidenheim": {
+  "pagina": "1. FC Heidenheim",
+  "kits": [
+   {
+    "body": "FF0000",
+    "shorts": "FF0000",
+    "socks": "FF0000",
+    "leftarm": "FF0000",
+    "pattern_b": "_heidenheim2526h"
+   },
+   {
+    "body": "0000ff",
+    "shorts": "0000ff",
+    "socks": "0000ff",
+    "leftarm": "0000ff",
+    "pattern_b": "_heidenheim2526a"
+   },
+   {
+    "body": "FFFFFF",
+    "shorts": "FFFFFF",
+    "socks": "FFFFFF",
+    "leftarm": "FFFFFF",
+    "pattern_b": "_heidenheim2526t"
+   }
+  ]
+ },
+ "FC Koln": {
+  "pagina": "1. FC Köln",
+  "kits": [
+   {
+    "body": "FFFFFF",
+    "shorts": "FFFFFF",
+    "socks": "FFFFFF",
+    "leftarm": "FFFFFF",
+    "pattern_b": "_koeln2627h"
+   },
+   {
+    "body": "ff0000",
+    "shorts": "ff0000",
+    "socks": "ff0000",
+    "leftarm": "ff0000",
+    "pattern_b": "_koeln2627a"
+   },
+   {
+    "body": "000055",
+    "shorts": "000055",
+    "socks": "000055",
+    "leftarm": "000055",
+    "pattern_b": "_koeln2627t"
+   }
+  ]
+ },
+ "FC Porto": {
+  "pagina": "FC Porto",
+  "kits": [
+   {
+    "body": "0122EB",
+    "shorts": "0122EB",
+    "socks": "FFFFFF",
+    "leftarm": "0122EB",
+    "pattern_b": "_porto2627h"
+   },
+   {
+    "body": "41001d",
+    "shorts": "41001d",
+    "socks": "41001d",
+    "leftarm": "41001d",
+    "pattern_b": "_porto2627a"
+   },
+   {
+    "body": "bae0e3",
+    "shorts": "bae0e3",
+    "socks": "bae0e3",
+    "leftarm": "bae0e3",
+    "pattern_b": "_porto2627t"
+   }
+  ]
+ },
+ "FC Schalke 04": {
+  "pagina": "FC Schalke 04",
+  "kits": [
+   {
+    "body": "0000dd",
+    "socks": "0000dd",
+    "leftarm": "0000dd",
+    "pattern_b": "_schalke2627h"
+   },
+   {
+    "pattern_b": "_schalke2627a"
+   },
+   {
+    "body": "abff00",
+    "shorts": "0000dd",
+    "socks": "abff00",
+    "leftarm": "abff00",
+    "pattern_b": "_schalke2627t"
+   }
+  ]
+ },
+ "FC St. Pauli": {
+  "pagina": "FC St. Pauli",
+  "kits": [
+   {
+    "shorts": "65423a",
+    "socks": "65423a",
+    "pattern_b": "_stpauli2526h"
+   },
+   {
+    "socks": "65423a",
+    "pattern_b": "_stpauli2526a"
+   },
+   {
+    "body": "000000",
+    "shorts": "000000",
+    "socks": "000000",
+    "leftarm": "000000",
+    "pattern_b": "_stpauli2526t"
+   }
+  ]
+ },
+ "FC Thun": {
+  "pagina": "FC Thun",
+  "kits": [
+   {
+    "body": "FF0000",
+    "shorts": "FF0000",
+    "socks": "FF0000",
+    "leftarm": "FF0000",
+    "pattern_b": "_macronelves25rw"
+   },
+   {
+    "body": "FFFFFF",
+    "shorts": "FFFFFF",
+    "socks": "FFFFFF",
+    "leftarm": "FFFFFF",
+    "pattern_b": "_macronwyverneco24wr"
+   }
+  ]
+ },
+ "FK Crvena zvezda": {
+  "pagina": "Red Star Belgrade",
+  "kits": [
+   {
+    "socks": "ff0000",
+    "pattern_b": "_crvenazvezda2627h"
+   },
+   {
+    "socks": "000055",
+    "pattern_b": "_crvenazvezda2627a"
+   },
+   {
+    "socks": "}}",
+    "pattern_b": "_crvenazvezda2627t"
+   }
+  ]
+ },
+ "FSV Mainz 05": {
+  "pagina": "1. FSV Mainz 05",
+  "kits": [
+   {
+    "body": "ff0000",
+    "shorts": "ff0000",
+    "socks": "ff0000",
+    "leftarm": "ff0000",
+    "pattern_b": "_mainz2627h"
+   },
+   {
+    "body": "ffffff",
+    "shorts": "ffffff",
+    "socks": "ffffff",
+    "leftarm": "ffffff",
+    "pattern_b": "_mainz2627a"
+   },
+   {
+    "body": "555555",
+    "shorts": "555555",
+    "socks": "555555",
+    "leftarm": "555555",
+    "pattern_b": "_mainz2627t"
+   }
+  ]
+ },
+ "Fenerbahce": {
+  "pagina": "Fenerbahçe S.K. (football)",
+  "kits": [
+   {
+    "pattern_b": "_fenerbahce2627h"
+   },
+   {
+    "pattern_b": "_fenerbahce2627a"
+   },
+   {
+    "socks": "}}",
+    "pattern_b": "_fenerbahce2627t"
+   }
+  ]
+ },
+ "Feyenoord": {
+  "pagina": "Feyenoord",
+  "kits": [
+   {
+    "shorts": "000000",
+    "socks": "000000",
+    "pattern_b": "_feyenoord2627h"
+   },
+   {
+    "pattern_b": "_feyenoord2627a"
+   },
+   {
+    "body": "3d3f56",
+    "shorts": "3d3f56",
+    "socks": "3d3f56",
+    "leftarm": "3d3f56",
+    "pattern_b": "_feyenoord2627t"
+   }
+  ]
+ },
+ "Fiorentina": {
+  "pagina": "ACF Fiorentina",
+  "kits": [
+   {
+    "body": "552A79",
+    "shorts": "552A79",
+    "socks": "552A79",
+    "leftarm": "552A79",
+    "pattern_b": "_fiorentina2627h"
+   },
+   {
+    "body": "FFFFFF",
+    "shorts": "FFFFFF",
+    "socks": "FFFFFF",
+    "leftarm": "FFFFFF",
+    "pattern_b": "_fiorentina2627a"
+   }
+  ]
+ },
+ "Flora Tallinn": {
+  "pagina": "FC Flora",
+  "kits": [
+   {
+    "body": "008000",
+    "shorts": "FFFFFF",
+    "socks": "008000",
+    "leftarm": "008000",
+    "pattern_b": "_nikeprecision7g"
+   },
+   {
+    "body": "FFFFFF",
+    "shorts": "FFFFFF",
+    "socks": "FFFFFF",
+    "leftarm": "FFFFFF",
+    "pattern_b": "_nikeprecision7w"
+   }
+  ]
+ },
+ "Floriana": {
+  "pagina": "Floriana F.C.",
+  "kits": [
+   {
+    "body": "007733",
+    "shorts": "007733",
+    "socks": "007733",
+    "leftarm": "007733",
+    "pattern_b": "_jomatoletum5gw"
+   },
+   {
+    "body": "FFFFFF",
+    "shorts": "FFFFFF",
+    "socks": "FFFFFF",
+    "leftarm": "008000",
+    "pattern_b": "_jomaeuropa5gw"
+   }
+  ]
+ },
+ "Frosinone": {
+  "pagina": "Frosinone Calcio",
+  "kits": []
+ },
+ "Fulham": {
+  "pagina": "Fulham F.C.",
+  "kits": [
+   {
+    "body": "FFFFFF",
+    "shorts": "000000",
+    "socks": "FFFFFF",
+    "leftarm": "FFFFFF",
+    "pattern_b": "_fulham2627h"
+   },
+   {
+    "socks": "FF0000",
+    "pattern_b": "_fulham2627a"
+   },
+   {
+    "body": "ADD8E6",
+    "shorts": "ADD8E6",
+    "socks": "ADD8E6",
+    "leftarm": "ADD8E6",
+    "pattern_b": "_fulham2627t"
+   }
+  ]
+ },
+ "Galatasaray": {
+  "pagina": "Galatasaray S.K. (football)",
+  "kits": [
+   {
+    "body": "270e8b",
+    "shorts": "270e8b",
+    "socks": "8b0e2c",
+    "leftarm": "270e8b",
+    "pattern_b": "_galatasaray2627h"
+   },
+   {
+    "body": "000000",
+    "shorts": "000000",
+    "socks": "000000",
+    "leftarm": "000000",
+    "pattern_b": "_galatasaray2627a"
+   },
+   {
+    "body": "2c2c2c",
+    "shorts": "2c2c2c",
+    "socks": "2c2c2c",
+    "leftarm": "2c2c2c",
+    "pattern_b": "_galatasaray2627t"
+   }
+  ]
+ },
+ "Genoa": {
+  "pagina": "Genoa CFC",
+  "kits": [
+   {
+    "body": "FFFFFF",
+    "shorts": "000040",
+    "socks": "000040",
+    "leftarm": "FFFFFF",
+    "pattern_b": "_genoa2627h"
+   },
+   {
+    "pattern_b": "_genoa2627a"
+   },
+   {
+    "body": "1f3246",
+    "shorts": "f2002e",
+    "socks": "1f3246",
+    "leftarm": "1f3246",
+    "pattern_b": "_genoa2526t"
+   }
+  ]
+ },
+ "Gornik Zabrze": {
+  "pagina": "Górnik Zabrze",
+  "kits": [
+   {
+    "body": "FFFFFF",
+    "shorts": "FFFFFF",
+    "socks": "FFFFFF",
+    "leftarm": "FFFFFF",
+    "pattern_b": "_gornikzabrze2627h"
+   },
+   {
+    "body": "000000",
+    "shorts": "000000",
+    "socks": "000000",
+    "leftarm": "000000",
+    "pattern_b": "_gornikzabrze2627a"
+   }
+  ]
+ },
+ "Gyori ETO FC": {
+  "pagina": "Győri ETO FC",
+  "kits": [
+   {
+    "body": "006837",
+    "shorts": "FFFAFA",
+    "socks": "FFFAFA",
+    "leftarm": "006837",
+    "pattern_b": "_eto2627h"
+   },
+   {
+    "body": "000000",
+    "shorts": "000000",
+    "socks": "000000",
+    "leftarm": "000000",
+    "pattern_b": "_eto2627a"
+   },
+   {
+    "body": "FFFAFA",
+    "shorts": "FFFAFA",
+    "socks": "FFFAFA",
+    "leftarm": "FFFAFA",
+    "pattern_b": "_eto2627t"
+   }
+  ]
+ },
+ "Hamburger SV": {
+  "pagina": "Hamburger SV",
+  "kits": [
+   {
+    "body": "ffffff",
+    "shorts": "ff0000",
+    "socks": "0000ff",
+    "leftarm": "ffffff",
+    "pattern_b": "_hsv2627h"
+   },
+   {
+    "body": "0000ff",
+    "shorts": "000000",
+    "socks": "000000",
+    "leftarm": "000000",
+    "pattern_b": "_hsv2627a"
+   },
+   {
+    "body": "000000",
+    "shorts": "000000",
+    "socks": "000066",
+    "leftarm": "000000",
+    "pattern_b": "_hsv2627t"
+   }
+  ]
+ },
+ "Hapoel Beer Sheva": {
+  "pagina": "Hapoel Be'er Sheva F.C.",
+  "kits": [
+   {
+    "body": "FF0000",
+    "shorts": "FFFFFF",
+    "socks": "FFFFFF",
+    "leftarm": "FF0000",
+    "pattern_b": "_hbs2627h"
+   },
+   {
+    "body": "FFFFFF",
+    "shorts": "FFFFFF",
+    "socks": "FFFFFF",
+    "leftarm": "FFFFFF",
+    "pattern_b": "_hbs2627a"
+   },
+   {
+    "body": "000000",
+    "shorts": "000000",
+    "socks": "000000",
+    "leftarm": "000000",
+    "pattern_b": "_hbs2627t"
+   }
+  ]
+ },
+ "Heart of Midlothian": {
+  "pagina": "Heart of Midlothian F.C.",
+  "kits": [
+   {
+    "body": "601F2E",
+    "shorts": "FFFFFF",
+    "socks": "601F2E",
+    "leftarm": "601F2E",
+    "pattern_b": "_hearts2627h"
+   },
+   {
+    "body": "ffffff",
+    "shorts": "601F2E",
+    "socks": "601F2E",
+    "leftarm": "ffffff",
+    "pattern_b": "_hearts2627a"
+   },
+   {
+    "body": "003497",
+    "shorts": "000000",
+    "socks": "003497",
+    "leftarm": "000000",
+    "pattern_b": "_hearts2627t"
+   }
+  ]
+ },
+ "Hull City": {
+  "pagina": "Hull City A.F.C.",
+  "kits": [
+   {
+    "body": "000000",
+    "shorts": "FFFFFF",
+    "socks": "000000",
+    "leftarm": "000000",
+    "pattern_b": "_hull2627h"
+   },
+   {
+    "body": "FFFFFF",
+    "shorts": "000000",
+    "socks": "FFFFFF",
+    "leftarm": "FFFFFF",
+    "pattern_b": "_hull2627a"
+   },
+   {
+    "body": "305CDE",
+    "shorts": "FFFFFF",
+    "socks": "FFFFFF",
+    "leftarm": "305CDE",
+    "pattern_b": "_hull2627t"
+   }
+  ]
+ },
+ "Inter": {
+  "pagina": "Inter Milan",
+  "kits": [
+   {
+    "body": "000000",
+    "shorts": "000000",
+    "socks": "000000",
+    "leftarm": "000000",
+    "pattern_b": "_intermilan2627h"
+   },
+   {
+    "body": "FFFFFF",
+    "shorts": "FFFFFF",
+    "socks": "FFFFFF",
+    "leftarm": "FFFFFF",
+    "pattern_b": "_intermilan2627a"
+   },
+   {
+    "body": "707781",
+    "shorts": "000000",
+    "socks": "000000",
+    "leftarm": "707781",
+    "pattern_b": "_intermilan2627t"
+   }
+  ]
+ },
+ "Inter Club d'Escaldes": {
+  "pagina": "Inter Club d'Escaldes",
+  "kits": []
+ },
+ "Ipswich": {
+  "pagina": "Ipswich Town F.C.",
+  "kits": [
+   {
+    "body": "0333a0",
+    "socks": "0333a0",
+    "leftarm": "0333a0",
+    "pattern_b": "_ipswich2627h"
+   },
+   {
+    "body": "f7ebc8",
+    "shorts": "000000",
+    "socks": "f7ebc8",
+    "leftarm": "f7ebc8",
+    "pattern_b": "_ipswich2627a"
+   }
+  ]
+ },
+ "Juventus": {
+  "pagina": "Juventus FC",
+  "kits": [
+   {
+    "pattern_b": "_juventus2627h"
+   },
+   {
+    "body": "ffa8c6",
+    "shorts": "000000",
+    "socks": "ffa8c6",
+    "leftarm": "ffa8c6",
+    "pattern_b": "_juventus2627a"
+   },
+   {
+    "shorts": "000000",
+    "socks": "000000",
+    "pattern_b": "_juventus2627t"
+   }
+  ]
+ },
+ "Kairat Almaty": {
+  "pagina": "FC Kairat",
+  "kits": [
+   {
+    "body": "FFDD00",
+    "shorts": "000000",
+    "socks": "000000",
+    "leftarm": "FFDD00",
+    "pattern_b": "_kairat25h"
+   },
+   {
+    "body": "FFFFFF",
+    "shorts": "FFFFFF",
+    "socks": "FFFFFF",
+    "leftarm": "FFFFFF",
+    "pattern_b": "_jomatoletum5wb"
+   },
+   {
+    "shorts": "000000",
+    "socks": "000000",
+    "pattern_b": "_jomagold6gf"
+   }
+  ]
+ },
+ "Kauno Žalgiris": {
+  "pagina": "FK Kauno Žalgiris",
+  "kits": [
+   {
+    "body": "00924F",
+    "shorts": "FFFFFF",
+    "socks": "00924F",
+    "leftarm": "00924F",
+    "pattern_b": "_pumacup25g"
+   },
+   {
+    "body": "FFFFFF",
+    "shorts": "00924F",
+    "socks": "FFFFFF",
+    "leftarm": "FFFFFF",
+    "pattern_b": "_pumacup25w"
+   },
+   {
+    "body": "000000",
+    "shorts": "000000",
+    "socks": "000000",
+    "leftarm": "000000",
+    "pattern_b": "_pumacup25b"
+   }
+  ]
+ },
+ "KuPS": {
+  "pagina": "Kuopion Palloseura",
+  "kits": [
+   {
+    "body": "FFDD00",
+    "shorts": "000000",
+    "socks": "FFDD00",
+    "leftarm": "FFDD00",
+    "pattern_b": "_pumacup25y"
+   },
+   {
+    "body": "FFFFFF",
+    "shorts": "FFFFFF",
+    "socks": "FFFFFF",
+    "leftarm": "FFFFFF",
+    "pattern_b": "_pumacup25w"
+   },
+   {
+    "body": "000000",
+    "shorts": "000000",
+    "socks": "000000",
+    "leftarm": "000000",
+    "pattern_b": "_pumacup25b"
+   }
+  ]
+ },
+ "KÍ Klaksvík": {
+  "pagina": "Klaksvíkar Ítróttarfelag",
+  "kits": [
+   {
+    "body": "0000FF",
+    "socks": "0000FF",
+    "leftarm": "0000FF",
+    "pattern_b": "_ki24h"
+   },
+   {
+    "body": "FFFFFF",
+    "shorts": "FFFFFF",
+    "socks": "0000FF",
+    "leftarm": "FFFFFF",
+    "pattern_b": "FFFFFF"
+   }
+  ]
+ },
+ "LASK Linz": {
+  "pagina": "LASK",
+  "kits": [
+   {
+    "body": "FFFFFF",
+    "shorts": "FFFFFF",
+    "socks": "FFFFFF",
+    "leftarm": "FFDD00",
+    "pattern_b": "_lask2627h"
+   },
+   {
+    "body": "000000",
+    "shorts": "000000",
+    "socks": "000000",
+    "leftarm": "000000",
+    "pattern_b": "_lask2627a"
+   },
+   {
+    "body": "ef0000",
+    "shorts": "ef0000",
+    "socks": "ef0000",
+    "leftarm": "ef0000",
+    "pattern_b": "_lask2627t"
+   }
+  ]
+ },
+ "LE Havre AC": {
+  "pagina": "Le Havre AC",
+  "kits": [
+   {
+    "body": "8ed6f9",
+    "shorts": "0d2142",
+    "socks": "0d2142",
+    "leftarm": "0d2142",
+    "pattern_b": "_lehavre2627h"
+   }
+  ]
+ },
+ "Larne": {
+  "pagina": "Larne F.C.",
+  "kits": [
+   {
+    "body": "FF0000",
+    "shorts": "FFFFFF",
+    "socks": "FF0000",
+    "leftarm": "FFFFFF",
+    "pattern_b": "_nikechallenge5urw"
+   },
+   {
+    "body": "000055",
+    "shorts": "000055",
+    "socks": "000055",
+    "leftarm": "000055",
+    "pattern_b": "_nikeprecision7mn"
+   }
+  ]
+ },
+ "Lazio": {
+  "pagina": "SS Lazio",
+  "kits": [
+   {
+    "body": "88BFF7",
+    "shorts": "FFFFFF",
+    "socks": "FFFFFF",
+    "leftarm": "88BFF7",
+    "pattern_b": "_lazio2627h"
+   },
+   {
+    "body": "FFFFFF",
+    "shorts": "242D4E",
+    "socks": "FFFFFF",
+    "leftarm": "FFFFFF",
+    "pattern_b": "_lazio2627a"
+   },
+   {
+    "body": "242D4E",
+    "shorts": "242D4E",
+    "socks": "242D4E",
+    "leftarm": "242D4E",
+    "pattern_b": "_lazio2627t"
+   }
+  ]
+ },
+ "Le Mans": {
+  "pagina": "Le Mans FC",
+  "kits": [
+   {
+    "body": "FF0000",
+    "shorts": "FF0000",
+    "socks": "FF0000",
+    "leftarm": "FFFF00",
+    "pattern_b": "_lemans2627h"
+   },
+   {
+    "body": "FFff00",
+    "shorts": "FFff00",
+    "socks": "FFff00",
+    "leftarm": "FFff00",
+    "pattern_b": "_lemans2627a"
+   },
+   {
+    "body": "00514b",
+    "shorts": "00514b",
+    "socks": "00514b",
+    "leftarm": "00514b",
+    "pattern_b": "_lemans2627t"
+   }
+  ]
+ },
+ "Lecce": {
+  "pagina": "US Lecce",
+  "kits": [
+   {
+    "body": "FFFF00",
+    "shorts": "000055",
+    "socks": "000055",
+    "leftarm": "FFFF00",
+    "pattern_b": "_lecce2627h"
+   },
+   {
+    "body": "FFFFFF",
+    "shorts": "FFFFFF",
+    "socks": "FFFFFF",
+    "leftarm": "FFFFFF",
+    "pattern_b": "_lecce2627a"
+   },
+   {
+    "body": "000055",
+    "shorts": "000055",
+    "socks": "000055",
+    "leftarm": "000055",
+    "pattern_b": "_lecce2627t"
+   }
+  ]
+ },
+ "Lech Poznan": {
+  "pagina": "Lech Poznań",
+  "kits": [
+   {
+    "body": "0000ff",
+    "shorts": "ffffff",
+    "socks": "ffffff",
+    "leftarm": "0000ff",
+    "pattern_b": "_lech2627h"
+   },
+   {
+    "body": "ffffff",
+    "shorts": "0000ff",
+    "socks": "0000ff",
+    "leftarm": "ffffff",
+    "pattern_b": "_lech2627a"
+   }
+  ]
+ },
+ "Leeds": {
+  "pagina": "Leeds Rhinos",
+  "kits": [
+   {
+    "body": "000080",
+    "shorts": "ffffff",
+    "socks": "000080",
+    "leftarm": "000080",
+    "pattern_b": "_goldvertical"
+   },
+   {
+    "body": "292929",
+    "shorts": "292929",
+    "socks": "292929",
+    "leftarm": "292929",
+    "pattern_b": "_yellow_collar"
+   }
+  ]
+ },
+ "Lens": {
+  "pagina": "RC Lens",
+  "kits": [
+   {
+    "shorts": "FF0000",
+    "socks": "FF0000",
+    "pattern_b": "_lens2627h"
+   },
+   {
+    "shorts": "000000",
+    "socks": "000000",
+    "pattern_b": "_lens2627a"
+   },
+   {
+    "pattern_b": "_lens2627t"
+   }
+  ]
+ },
+ "Levski Sofia": {
+  "pagina": "PFC Levski Sofia",
+  "kits": [
+   {
+    "body": "0000DD",
+    "shorts": "0000DD",
+    "socks": "0000DD",
+    "leftarm": "0000DD",
+    "pattern_b": "_levski2627h"
+   },
+   {
+    "body": "efd478",
+    "shorts": "efd478",
+    "socks": "efd478",
+    "leftarm": "efd478",
+    "pattern_b": "_levski2627a"
+   },
+   {
+    "socks": "}}",
+    "pattern_b": "_levski2627t"
+   }
+  ]
+ },
+ "Lille": {
+  "pagina": "Lille OSC",
+  "kits": [
+   {
+    "body": "FE0000",
+    "shorts": "221F64",
+    "socks": "221F64",
+    "leftarm": "FE0000",
+    "pattern_b": "_lille2627h"
+   },
+   {
+    "body": "FFFFFF",
+    "shorts": "FFFFFF",
+    "socks": "FFFFFF",
+    "leftarm": "FFFFFF",
+    "pattern_b": "_lille2627a"
+   }
+  ]
+ },
+ "Lincoln Red Imps": {
+  "pagina": "Lincoln Red Imps F.C.",
+  "kits": [
+   {
+    "body": "FF0000",
+    "shorts": "FFFFFF",
+    "socks": "FF0000",
+    "leftarm": "000000",
+    "pattern_b": "_lincoln2223h"
+   },
+   {
+    "body": "FFFFFF",
+    "shorts": "000000",
+    "socks": "FFFFFF",
+    "leftarm": "FFFFFF",
+    "pattern_b": "_lincoln2223a"
+   }
+  ]
+ },
+ "Liverpool": {
+  "pagina": "Liverpool F.C.",
+  "kits": [
+   {
+    "body": "8F1E32",
+    "shorts": "8F1E32",
+    "socks": "8F1E32",
+    "leftarm": "8F1E32",
+    "pattern_b": "_liverpool2627h"
+   },
+   {
+    "body": "FFFFFF",
+    "shorts": "DD0000",
+    "socks": "FFFFFF",
+    "leftarm": "FFFFFF",
+    "pattern_b": "_liverpool2627a"
+   },
+   {
+    "body": "000000",
+    "shorts": "000000",
+    "socks": "000000",
+    "leftarm": "000000",
+    "pattern_b": "_liverpool2627t"
+   }
+  ]
+ },
+ "Lorient": {
+  "pagina": "FC Lorient",
+  "kits": [
+   {
+    "body": "FF5F00",
+    "shorts": "000000",
+    "socks": "FFFFFF",
+    "leftarm": "FF5F00",
+    "pattern_b": "_lorient2526h"
+   },
+   {
+    "pattern_b": "_lorient2526a"
+   },
+   {
+    "body": "000000",
+    "shorts": "000000",
+    "socks": "000000",
+    "leftarm": "000000",
+    "pattern_b": "_lorient2526t"
+   }
+  ]
+ },
+ "Lyon": {
+  "pagina": "Olympique Lyonnais",
+  "kits": [
+   {
+    "body": "FFFFFF",
+    "shorts": "0000ff",
+    "socks": "FFFFFF",
+    "leftarm": "0000ff",
+    "pattern_b": "_lyon2627h"
+   },
+   {
+    "body": "F35764",
+    "shorts": "8C2B4C",
+    "socks": "F35764",
+    "leftarm": "F35764",
+    "pattern_b": "_lyon2627a"
+   },
+   {
+    "body": "000000",
+    "shorts": "000000",
+    "socks": "000000",
+    "leftarm": "000000",
+    "pattern_b": "_lyon2627t"
+   }
+  ]
+ },
+ "MKK-Dnepr": {
+  "pagina": "FC Maxline Vitebsk",
+  "kits": [
+   {
+    "body": "8cff00",
+    "shorts": "ffffff",
+    "socks": "ffffff",
+    "leftarm": "8cff00",
+    "pattern_b": "_collar"
+   },
+   {
+    "body": "101c00",
+    "shorts": "101c00",
+    "socks": "101c00",
+    "leftarm": "101c00",
+    "pattern_b": "_thinstripesonblack"
+   },
+   {
+    "body": "f0f0f0",
+    "shorts": "f0f0f0",
+    "socks": "f0f0f0",
+    "leftarm": "f0f0f0",
+    "pattern_b": "_collar"
+   }
+  ]
+ },
+ "Manchester City": {
+  "pagina": "Manchester City F.C.",
+  "kits": [
+   {
+    "body": "98C6EB",
+    "shorts": "FFFFFF",
+    "socks": "1C214F",
+    "leftarm": "98C6EB",
+    "pattern_b": "_mancity2627h"
+   },
+   {
+    "body": "000000",
+    "shorts": "000000",
+    "socks": "FCCD10",
+    "leftarm": "000000",
+    "pattern_b": "_mancity2627a"
+   },
+   {
+    "pattern_b": "_mancity2627t"
+   }
+  ]
+ },
+ "Manchester United": {
+  "pagina": "Manchester United F.C.",
+  "kits": [
+   {
+    "body": "ff0000",
+    "shorts": "ffffff",
+    "socks": "000000",
+    "leftarm": "ff0000",
+    "pattern_b": "_manutd2627h"
+   },
+   {
+    "body": "0000f0",
+    "shorts": "0000f0",
+    "socks": "0000f0",
+    "leftarm": "0000f0",
+    "pattern_b": "_manutd2627a"
+   },
+   {
+    "body": "FAF9F6",
+    "shorts": "FAF9F6",
+    "socks": "FAF9F6",
+    "leftarm": "FAF9F6",
+    "pattern_b": "_manutd2627t"
+   }
+  ]
+ },
+ "Marseille": {
+  "pagina": "Olympique de Marseille",
+  "kits": [
+   {
+    "body": "FFFFFF",
+    "shorts": "FFFFFF",
+    "socks": "FFFFFF",
+    "leftarm": "FFFFFF",
+    "pattern_b": "_marseille2627h"
+   },
+   {
+    "body": "2C2C3E",
+    "shorts": "2C2C3E",
+    "socks": "2C2C3E",
+    "leftarm": "2C2C3E",
+    "pattern_b": "_marseille2627a"
+   },
+   {
+    "body": "aebbed",
+    "shorts": "aebbed",
+    "socks": "aebbed",
+    "leftarm": "aebbed",
+    "pattern_b": "_marseille2627t"
+   }
+  ]
+ },
+ "Metz": {
+  "pagina": "FC Metz",
+  "kits": [
+   {
+    "pattern_b": "_metz2526h"
+   },
+   {
+    "pattern_b": "_metz2526a"
+   },
+   {
+    "pattern_b": "_metz2526t"
+   }
+  ]
+ },
+ "Mjällby AIF": {
+  "pagina": "Mjällby AIF",
+  "kits": [
+   {
+    "body": "FFEE00",
+    "shorts": "000000",
+    "socks": "FFEE00",
+    "leftarm": "000000",
+    "pattern_b": "_maif24h"
+   },
+   {
+    "body": "FFFFFF",
+    "shorts": "FFFFFF",
+    "socks": "FFFFFF",
+    "leftarm": "FFFFFF",
+    "pattern_b": "_pumagoal24w"
+   }
+  ]
+ },
+ "Monaco": {
+  "pagina": "AS Monaco FC",
+  "kits": [
+   {
+    "body": "FE0000",
+    "shorts": "FE0000",
+    "socks": "FE0000",
+    "leftarm": "FFFFFF",
+    "pattern_b": "_monaco2627h"
+   },
+   {
+    "body": "542d34",
+    "shorts": "542d34",
+    "socks": "542d34",
+    "leftarm": "542d34",
+    "pattern_b": "_monaco2627a"
+   },
+   {
+    "shorts": "c2efe5",
+    "socks": "}}",
+    "pattern_b": "_monaco2627t"
+   }
+  ]
+ },
+ "Monza": {
+  "pagina": "AC Monza",
+  "kits": [
+   {
+    "body": "FF0000",
+    "shorts": "FF0000",
+    "socks": "FF0000",
+    "leftarm": "FF0000",
+    "pattern_b": "_monza2627h"
+   },
+   {
+    "body": "FFFFFF",
+    "shorts": "FFFFFF",
+    "socks": "FFFFFF",
+    "leftarm": "FFFFFF",
+    "pattern_b": "_monza2627a"
+   },
+   {
+    "body": "000000",
+    "shorts": "000000",
+    "socks": "000000",
+    "leftarm": "000000",
+    "pattern_b": "_monza2627t"
+   }
+  ]
+ },
+ "NEC Nijmegen": {
+  "pagina": "NEC Nijmegen",
+  "kits": [
+   {
+    "body": "ff0000",
+    "shorts": "000000",
+    "socks": "000000",
+    "leftarm": "ff0000",
+    "pattern_b": "_nec2627h"
+   },
+   {
+    "body": "000000",
+    "shorts": "ffffff",
+    "socks": "ffffff",
+    "leftarm": "000000",
+    "pattern_b": "_nec2627a"
+   },
+   {
+    "body": "1a3e3d",
+    "shorts": "1a3e3d",
+    "socks": "1a3e3d",
+    "leftarm": "1a3e3d",
+    "pattern_b": "_nec2627t"
+   }
+  ]
+ },
+ "Nantes": {
+  "pagina": "FC Nantes",
+  "kits": [
+   {
+    "body": "FFFF00",
+    "shorts": "FFFF00",
+    "socks": "FFFF00",
+    "leftarm": "00b211",
+    "pattern_b": "_nantes2627h"
+   },
+   {
+    "body": "000000",
+    "shorts": "000000",
+    "socks": "000000",
+    "leftarm": "000000",
+    "pattern_b": "_nantes2627a"
+   }
+  ]
+ },
+ "Napoli": {
+  "pagina": "SSC Napoli",
+  "kits": [
+   {
+    "shorts": "FFFFFF",
+    "socks": "5f8ee6",
+    "leftarm": "5f8ee6",
+    "pattern_b": "_Napoli2627h"
+   },
+   {
+    "body": "FFFFFF",
+    "shorts": "FFFFFF",
+    "socks": "FFFFFF",
+    "leftarm": "FFFFFF",
+    "pattern_b": "_Napoli2627a"
+   },
+   {
+    "body": "FE0000",
+    "shorts": "FE0000",
+    "socks": "FE0000",
+    "leftarm": "FE0000",
+    "pattern_b": "_Napoli2627t"
+   }
+  ]
+ },
+ "Newcastle United": {
+  "pagina": "Newcastle United F.C.",
+  "kits": [
+   {
+    "body": "FFFFFF",
+    "shorts": "000000",
+    "socks": "000000",
+    "leftarm": "FFFFFF",
+    "pattern_b": "_newcastle2627h"
+   },
+   {
+    "body": "152640",
+    "shorts": "0c192c",
+    "socks": "0c192c",
+    "leftarm": "152640",
+    "pattern_b": "_newcastle2627a"
+   },
+   {
+    "body": "CBC3E3",
+    "shorts": "CBC3E3",
+    "socks": "CBC3E3",
+    "leftarm": "CBC3E3",
+    "pattern_b": "_newcastle2627t"
+   }
+  ]
+ },
+ "Nice": {
+  "pagina": "OGC Nice",
+  "kits": [
+   {
+    "body": "FF0000",
+    "shorts": "000000",
+    "socks": "000000",
+    "leftarm": "FF0000",
+    "pattern_b": "_nice2627h"
+   },
+   {
+    "body": "f6f5f1",
+    "shorts": "f6f5f1",
+    "socks": "f6f5f1",
+    "leftarm": "f6f5f1",
+    "pattern_b": "_nice2526A"
+   },
+   {
+    "body": "03447a",
+    "shorts": "03447a",
+    "socks": "03447a",
+    "leftarm": "03447a",
+    "pattern_b": "_nice2526a"
+   }
+  ]
+ },
+ "Nottingham Forest": {
+  "pagina": "Nottingham Forest F.C.",
+  "kits": [
+   {
+    "body": "d70926",
+    "shorts": "FFFFFF",
+    "socks": "d70926",
+    "leftarm": "d70926",
+    "pattern_b": "_nottingham2627h"
+   },
+   {
+    "body": "0a3023",
+    "shorts": "0a3023",
+    "socks": "0a3023",
+    "leftarm": "0a3023",
+    "pattern_b": "_nottingham2627a"
+   },
+   {
+    "pattern_b": "_nottingham2627t"
+   }
+  ]
+ },
+ "Olympiakos Piraeus": {
+  "pagina": "Olympiacos B.C.",
+  "kits": []
+ },
+ "Omonia Nicosia": {
+  "pagina": "AC Omonia",
+  "kits": [
+   {
+    "body": "ffffff",
+    "shorts": "ffffff",
+    "socks": "007711",
+    "leftarm": "ffffff",
+    "pattern_b": "_omonia2627h"
+   },
+   {
+    "body": "000000",
+    "shorts": "000000",
+    "socks": "aaff55",
+    "leftarm": "000000",
+    "pattern_b": "_omonia2627a"
+   },
+   {
+    "body": "ef0000",
+    "shorts": "ef0000",
+    "socks": "ef0000",
+    "leftarm": "ef0000",
+    "pattern_b": "_adidastirocm26r"
+   }
+  ]
+ },
+ "PSV Eindhoven": {
+  "pagina": "PSV Eindhoven",
+  "kits": [
+   {
+    "body": "FFFFFF",
+    "shorts": "FFFFFF",
+    "socks": "FFFFFF",
+    "leftarm": "FFFFFF",
+    "pattern_b": "_psv2627h"
+   },
+   {
+    "body": "FFFFFF",
+    "shorts": "FFFFFF",
+    "socks": "FFFFFF",
+    "leftarm": "FFFFFF",
+    "pattern_b": "_psv2627a"
+   },
+   {
+    "body": "00245A",
+    "shorts": "00245A",
+    "socks": "00245A",
+    "leftarm": "00245A",
+    "pattern_b": "_psv2627t"
+   }
+  ]
+ },
+ "Paris FC": {
+  "pagina": "Paris FC",
+  "kits": [
+   {
+    "body": "000060",
+    "shorts": "000060",
+    "socks": "000060",
+    "leftarm": "000060",
+    "pattern_b": "_parisfc2627h"
+   },
+   {
+    "body": "FFFFFF",
+    "shorts": "FFFFFF",
+    "socks": "16234e",
+    "leftarm": "FFFFFF",
+    "pattern_b": "_parisfc2627a"
+   },
+   {
+    "pattern_b": "_paris2526a"
+   }
+  ]
+ },
+ "Paris Saint Germain": {
+  "pagina": "Paris Saint-Germain FC",
+  "kits": [
+   {
+    "body": "0000CC",
+    "shorts": "0000CC",
+    "socks": "0000CC",
+    "leftarm": "0000CC",
+    "pattern_b": "_psg2627h"
+   },
+   {
+    "body": "FFFFFF",
+    "shorts": "FFFFFF",
+    "socks": "FFFFFF",
+    "leftarm": "FFFFFF",
+    "pattern_b": "_psg2627a"
+   }
+  ]
+ },
+ "Parma": {
+  "pagina": "Parma Calcio 1913",
+  "kits": [
+   {
+    "body": "FFFFFF",
+    "shorts": "000000",
+    "socks": "000000",
+    "leftarm": "FFFFFF",
+    "pattern_b": "_parma2627h"
+   },
+   {
+    "body": "ffcf00",
+    "shorts": "ffcf00",
+    "socks": "ffcf00",
+    "leftarm": "ffcf00",
+    "pattern_b": "_parma2627a"
+   },
+   {
+    "body": "000000",
+    "shorts": "000000",
+    "socks": "000000",
+    "leftarm": "000000",
+    "pattern_b": "_parma2627t"
+   }
+  ]
+ },
+ "Petrocub": {
+  "pagina": "FC Petrocub Hîncești",
+  "kits": [
+   {
+    "body": "000000",
+    "shorts": "000000",
+    "socks": "000000",
+    "leftarm": "000000",
+    "pattern_b": "_pumafinal24b"
+   },
+   {
+    "body": "FFFFFF",
+    "shorts": "FFFFFF",
+    "socks": "FFFFFF",
+    "leftarm": "FFFFFF",
+    "pattern_b": "_pumafinal24w"
+   }
+  ]
+ },
+ "Pisa": {
+  "pagina": "Pisa SC",
+  "kits": [
+   {
+    "body": "000000",
+    "shorts": "000000",
+    "socks": "000000",
+    "leftarm": "000000",
+    "pattern_b": "_pisa2627h"
+   },
+   {
+    "body": "FFCC00",
+    "shorts": "FFCC00",
+    "socks": "FF6000",
+    "leftarm": "FFCC00",
+    "pattern_b": "_pisa2627a"
+   },
+   {
+    "socks": "}}",
+    "pattern_b": "_pisa2627t"
+   }
+  ]
+ },
+ "RB Leipzig": {
+  "pagina": "RB Leipzig",
+  "kits": [
+   {
+    "body": "FFFFFF",
+    "shorts": "FF0000",
+    "socks": "FF0000",
+    "leftarm": "FFFFFF",
+    "pattern_b": "_rbl2627hh"
+   },
+   {
+    "body": "FF0000",
+    "shorts": "FF0000",
+    "socks": "FF0000",
+    "leftarm": "FF0000",
+    "pattern_b": "_rbl2627a"
+   }
+  ]
+ },
+ "RED Star FC 93": {
+  "pagina": "Red Star FC",
+  "kits": [
+   {
+    "body": "FFFFFF",
+    "shorts": "0C6646",
+    "socks": "0C6646",
+    "leftarm": "FFFFFF",
+    "pattern_b": "_RedStar2425h"
+   },
+   {
+    "body": "124940",
+    "shorts": "FFFFFF",
+    "socks": "FFFFFF",
+    "leftarm": "124940",
+    "pattern_b": "_RedStar2425a"
+   },
+   {
+    "body": "8A3840",
+    "shorts": "000000",
+    "socks": "000000",
+    "leftarm": "8A3840",
+    "pattern_b": "_RedStar2425t"
+   }
+  ]
+ },
+ "Rennes FC": {
+  "pagina": "Stade Rennais FC",
+  "kits": [
+   {
+    "body": "FF0000",
+    "shorts": "000000",
+    "socks": "000000",
+    "leftarm": "FF0000",
+    "pattern_b": "_rennes2627h"
+   },
+   {
+    "body": "FFFFFF",
+    "shorts": "FFFFFF",
+    "socks": "FFFFFF",
+    "leftarm": "FFFFFF",
+    "pattern_b": "_rennes2627a"
+   },
+   {
+    "pattern_b": "_rennes2627t"
+   }
+  ]
+ },
+ "Riga FC": {
+  "pagina": "Riga FC",
+  "kits": [
+   {
+    "body": "FFFFFF",
+    "shorts": "FFFFFF",
+    "socks": "87CEEB",
+    "leftarm": "FFFFFF",
+    "pattern_b": "_adidasstriped24lbw"
+   },
+   {
+    "body": "353935",
+    "shorts": "353935",
+    "socks": "353935",
+    "leftarm": "353935",
+    "pattern_b": "_riga25a"
+   },
+   {
+    "body": "FF9FCF",
+    "shorts": "FFFFFF",
+    "socks": "FF9FCF",
+    "leftarm": "FFFFFF",
+    "pattern_b": "_riga25t"
+   }
+  ]
+ },
+ "Rodez": {
+  "pagina": "Rodez AF",
+  "kits": [
+   {
+    "body": "DD0000",
+    "shorts": "DD0000",
+    "socks": "DD0000",
+    "leftarm": "DD0000",
+    "pattern_b": "_rodez2526h"
+   },
+   {
+    "body": "FFC90E",
+    "shorts": "FFC90E",
+    "socks": "FFC90E",
+    "leftarm": "FFC90E",
+    "pattern_b": "_rodez2526a"
+   }
+  ]
+ },
+ "SC Freiburg": {
+  "pagina": "SC Freiburg",
+  "kits": [
+   {
+    "body": "FE0000",
+    "shorts": "FE0000",
+    "socks": "FE0000",
+    "leftarm": "FE0000",
+    "pattern_b": "_freiburg2627h"
+   },
+   {
+    "pattern_b": "_freiburg2627a"
+   },
+   {
+    "body": "000000",
+    "shorts": "000000",
+    "socks": "000000",
+    "leftarm": "000000",
+    "pattern_b": "_freiburg2627t"
+   }
+  ]
+ },
+ "SC Paderborn 07": {
+  "pagina": "SC Paderborn 07",
+  "kits": [
+   {
+    "body": "000000",
+    "shorts": "000000",
+    "socks": "000000",
+    "leftarm": "000000",
+    "pattern_b": "_paderborn2627h"
+   },
+   {
+    "body": "FF0000",
+    "shorts": "FF0000",
+    "socks": "FF0000",
+    "leftarm": "FF0000",
+    "pattern_b": "_paderborn2627a"
+   },
+   {
+    "body": "bad6e6",
+    "shorts": "bad6e6",
+    "socks": "bad6e6",
+    "leftarm": "bad6e6",
+    "pattern_b": "_paderborn2627t"
+   }
+  ]
+ },
+ "SV Elversberg": {
+  "pagina": "SV Elversberg",
+  "kits": [
+   {
+    "body": "FFFFFF",
+    "shorts": "FFFFFF",
+    "socks": "FFFFFF",
+    "leftarm": "FFFFFF",
+    "pattern_b": "_elvesberg2627h"
+   },
+   {
+    "body": "000000",
+    "shorts": "000000",
+    "socks": "000000",
+    "leftarm": "000000",
+    "pattern_b": "_elversberg2627a"
+   },
+   {
+    "shorts": "FF0000",
+    "socks": "FF0000",
+    "pattern_b": "_elversberg2627t"
+   }
+  ]
+ },
+ "Sabah FA": {
+  "pagina": "Sabah F.C. (Malaysia)",
+  "kits": [
+   {
+    "socks": "000",
+    "pattern_b": "_SABAH2526H"
+   },
+   {
+    "socks": "FFF",
+    "pattern_b": "_SABAH2526A"
+   }
+  ]
+ },
+ "Saburtalo": {
+  "pagina": "FC Iberia 1999",
+  "kits": [
+   {
+    "body": "FFFFFF",
+    "shorts": "FFFFFF",
+    "socks": "FFFFFF",
+    "leftarm": "FFFFFF",
+    "pattern_b": "_macroncerberuseco25wr"
+   },
+   {
+    "body": "FF0000",
+    "shorts": "FF0000",
+    "socks": "FF0000",
+    "leftarm": "FF0000",
+    "pattern_b": "_macroncerberuseco25rw"
+   }
+  ]
+ },
+ "Saint-Étienne": {
+  "pagina": "AS Saint-Étienne",
+  "kits": [
+   {
+    "socks": "19985B",
+    "pattern_b": "_saintetienne2526h"
+   },
+   {
+    "pattern_b": "_saintetienne2526a"
+   },
+   {
+    "body": "6d734f",
+    "shorts": "6d734f",
+    "socks": "6d734f",
+    "leftarm": "6d734f",
+    "pattern_b": "_saintetienne2526t"
+   }
+  ]
+ },
+ "Sassuolo": {
+  "pagina": "US Sassuolo Calcio",
+  "kits": [
+   {
+    "body": "00a746",
+    "shorts": "000000",
+    "socks": "000000",
+    "leftarm": "00a746",
+    "pattern_b": "_sassuolo2627h"
+   },
+   {
+    "pattern_b": "_sassuolo2627a"
+   },
+   {
+    "body": "0044ff",
+    "shorts": "0044ff",
+    "socks": "0044ff",
+    "leftarm": "0044ff",
+    "pattern_b": "_sassuolo2627t"
+   }
+  ]
+ },
+ "Shakhtar Donetsk": {
+  "pagina": "FC Shakhtar Donetsk",
+  "kits": [
+   {
+    "body": "FD7D28",
+    "shorts": "FD7D28",
+    "socks": "FD7D28",
+    "leftarm": "000000",
+    "pattern_b": "_shakhtar2627h"
+   },
+   {
+    "body": "CDEBEF",
+    "shorts": "FFFFFF",
+    "socks": "FFFFFF",
+    "leftarm": "CDEBEF",
+    "pattern_b": "_shakhtar2627a"
+   },
+   {
+    "socks": "}}",
+    "pattern_b": "_shakhtar2627t"
+   }
+  ]
+ },
+ "Shamrock Rovers": {
+  "pagina": "Shamrock Rovers F.C.",
+  "kits": [
+   {
+    "body": "ffffff",
+    "shorts": "176a56",
+    "socks": "ffffff",
+    "leftarm": "ffffff",
+    "pattern_b": "_shamrock25h"
+   },
+   {
+    "body": "cab0d7",
+    "shorts": "cab0d7",
+    "socks": "cab0d7",
+    "leftarm": "cab0d7",
+    "pattern_b": "_shamrock25a"
+   }
+  ]
+ },
+ "Slavia Praha": {
+  "pagina": "SK Slavia Prague",
+  "kits": [
+   {
+    "body": "FFFFFF",
+    "shorts": "FFFFFF",
+    "socks": "FFFFFF",
+    "leftarm": "FFFFFF",
+    "pattern_b": "_slaviapraha2627h"
+   },
+   {
+    "body": "000000",
+    "shorts": "000000",
+    "socks": "000000",
+    "leftarm": "000000",
+    "pattern_b": "_slaviapraha2627a"
+   },
+   {
+    "body": "FFFEDB",
+    "shorts": "FFFEDB",
+    "socks": "FFFEDB",
+    "leftarm": "FFFEDB",
+    "pattern_b": "_slaviapraha2627t"
+   }
+  ]
+ },
+ "Slovan Bratislava": {
+  "pagina": "ŠK Slovan Bratislava",
+  "kits": [
+   {
+    "body": "80BFFF",
+    "shorts": "000060",
+    "socks": "80BFFF",
+    "leftarm": "000060",
+    "pattern_b": "_slovan2526h"
+   },
+   {
+    "body": "000000",
+    "shorts": "000000",
+    "socks": "000000",
+    "leftarm": "000000",
+    "pattern_b": "_slovan2526a"
+   },
+   {
+    "body": "80BFFF",
+    "shorts": "000060",
+    "socks": "80BFFF",
+    "leftarm": "000060",
+    "pattern_b": "_slovan2627h"
+   }
+  ]
+ },
+ "Sparta Praha": {
+  "pagina": "AC Sparta Prague",
+  "kits": [
+   {
+    "body": "8A1014",
+    "shorts": "FFFFFF",
+    "socks": "000000",
+    "leftarm": "8A1014",
+    "pattern_b": "_spartapraha2627h"
+   },
+   {
+    "body": "FFFFFF",
+    "shorts": "FFFFFF",
+    "socks": "8A1014",
+    "leftarm": "FFFFFF",
+    "pattern_b": "_spartapraha2627a"
+   }
+  ]
+ },
+ "Sporting CP": {
+  "pagina": "Sporting CP",
+  "kits": [
+   {
+    "body": "FFFFFF",
+    "shorts": "000000",
+    "socks": "FFFFFF",
+    "leftarm": "FFFFFF",
+    "pattern_b": "_scp2627h"
+   },
+   {
+    "body": "D3B06C",
+    "shorts": "D3B06C",
+    "socks": "D3B06C",
+    "leftarm": "D3B06C",
+    "pattern_b": "_scp2627a"
+   },
+   {
+    "body": "004F2F",
+    "shorts": "004F2F",
+    "socks": "004F2F",
+    "leftarm": "004F2F",
+    "pattern_b": "_scp120y"
+   }
+  ]
+ },
+ "Stade Brestois 29": {
+  "pagina": "Stade Brestois 29",
+  "kits": [
+   {
+    "body": "EF0000",
+    "shorts": "EF0000",
+    "socks": "EF0000",
+    "leftarm": "EF0000",
+    "pattern_b": "_brest2627h"
+   },
+   {
+    "shorts": "00003a",
+    "socks": "FFFFFF",
+    "pattern_b": "_brest2627a"
+   },
+   {
+    "body": "000055",
+    "shorts": "000055",
+    "socks": "000055",
+    "leftarm": "000055",
+    "pattern_b": "_brest2627t"
+   }
+  ]
+ },
+ "Strasbourg": {
+  "pagina": "RC Strasbourg Alsace",
+  "kits": [
+   {
+    "body": "0000DD",
+    "shorts": "FFFFFF",
+    "socks": "0000DD",
+    "leftarm": "0000DD",
+    "pattern_b": "_strasbourg2627h"
+   },
+   {
+    "body": "FAF7F0",
+    "shorts": "FAF7F0",
+    "socks": "FAF7F0",
+    "leftarm": "FAF7F0",
+    "pattern_b": "_strasbourg2627a"
+   },
+   {
+    "socks": "000000",
+    "pattern_b": "_strasbourg2627t"
+   }
+  ]
+ },
+ "Sturm Graz": {
+  "pagina": "SK Sturm Graz",
+  "kits": [
+   {
+    "body": "000000",
+    "shorts": "000000",
+    "socks": "000000",
+    "leftarm": "000000",
+    "pattern_b": "_sturm2627h"
+   },
+   {
+    "body": "FFFFFF",
+    "shorts": "FFFFFF",
+    "socks": "FFFFFF",
+    "leftarm": "FFFFFF",
+    "pattern_b": "_sturm2627a"
+   },
+   {
+    "body": "004300",
+    "shorts": "004300",
+    "socks": "004300",
+    "leftarm": "004300",
+    "pattern_b": "_sturm2627t"
+   }
+  ]
+ },
+ "Sunderland": {
+  "pagina": "Sunderland A.F.C.",
+  "kits": [
+   {
+    "body": "ff0000",
+    "shorts": "000000",
+    "socks": "000000",
+    "leftarm": "ff0000",
+    "pattern_b": "_sunderland2627h"
+   },
+   {
+    "body": "ff9fbf",
+    "shorts": "ff9fbf",
+    "socks": "ff9fbf",
+    "leftarm": "ff9fbf",
+    "pattern_b": "_sunderland2627a"
+   },
+   {
+    "body": "00008B",
+    "shorts": "00008B",
+    "socks": "00008B",
+    "leftarm": "00008B",
+    "pattern_b": "_sunderland2627t"
+   }
+  ]
+ },
+ "Sutjeska": {
+  "pagina": "FK Sutjeska Nikšić",
+  "kits": [
+   {
+    "body": "0033FF",
+    "shorts": "0033FF",
+    "socks": "0033FF",
+    "leftarm": "0033FF",
+    "pattern_b": "_jomatiger2rbw"
+   },
+   {
+    "body": "FFFFFF",
+    "shorts": "FFFFFF",
+    "socks": "FFFFFF",
+    "leftarm": "FFFFFF",
+    "pattern_b": "_jomatoletum2wrb"
+   }
+  ]
+ },
+ "The New Saints": {
+  "pagina": "The New Saints F.C.",
+  "kits": [
+   {
+    "body": "FFFFFF",
+    "shorts": "FFFFFF",
+    "socks": "FFFFFF",
+    "leftarm": "FFFFFF",
+    "pattern_b": "_tns2324h"
+   },
+   {
+    "body": "0000FF",
+    "shorts": "0000FF",
+    "socks": "0000FF",
+    "leftarm": "0000FF",
+    "pattern_b": "_macronelves25rbw"
+   },
+   {
+    "shorts": "000000",
+    "socks": "000000",
+    "pattern_b": "_macronwyverneco24ba"
+   }
+  ]
+ },
+ "Torino": {
+  "pagina": "Torino FC",
+  "kits": [
+   {
+    "body": "65001b",
+    "socks": "65001b",
+    "leftarm": "65001b",
+    "pattern_b": "_torino2627h"
+   },
+   {
+    "shorts": "65001b",
+    "pattern_b": "_torino2627a"
+   },
+   {
+    "body": "191919",
+    "shorts": "191919",
+    "socks": "191919",
+    "leftarm": "191919",
+    "pattern_b": "_torino2627t"
+   }
+  ]
+ },
+ "Tottenham": {
+  "pagina": "Tottenham Hotspur F.C.",
+  "kits": [
+   {
+    "body": "FFFFFF",
+    "shorts": "FFFFFF",
+    "socks": "FFFFFF",
+    "leftarm": "FFFFFF",
+    "pattern_b": "_tottenham2627h"
+   },
+   {
+    "body": "000000",
+    "shorts": "000000",
+    "socks": "000000",
+    "leftarm": "000000",
+    "pattern_b": "_tottenham2627a"
+   },
+   {
+    "body": "800080",
+    "shorts": "800080",
+    "socks": "800080",
+    "leftarm": "800080",
+    "pattern_b": "_tottenham2627t"
+   }
+  ]
+ },
+ "Toulouse": {
+  "pagina": "Toulouse FC",
+  "kits": [
+   {
+    "shorts": "5f00b5",
+    "socks": "5f00b5",
+    "pattern_b": "_toulouse2526h"
+   },
+   {
+    "body": "e44a9e",
+    "socks": "e44a9e",
+    "leftarm": "e44a9e",
+    "pattern_b": "_toulouse2526a"
+   },
+   {
+    "shorts": "000000",
+    "socks": "000000",
+    "pattern_b": "_toulouse2526t"
+   }
+  ]
+ },
+ "Tre Fiori": {
+  "pagina": "Tre Fiori FC",
+  "kits": [
+   {
+    "body": "FFF000",
+    "shorts": "0000FF",
+    "socks": "0000FF",
+    "leftarm": "FFF000",
+    "pattern_b": "_portimonense1920a"
+   },
+   {
+    "body": "FFFFFF",
+    "shorts": "FFF665",
+    "socks": "FFF665",
+    "leftarm": "FFFFFF",
+    "pattern_b": "_cesena1819h"
+   }
+  ]
+ },
+ "Udinese": {
+  "pagina": "Udinese Calcio",
+  "kits": [
+   {
+    "shorts": "000000",
+    "socks": "000000",
+    "pattern_b": "_udinese2627h"
+   },
+   {
+    "body": "000066",
+    "shorts": "000066",
+    "socks": "000066",
+    "leftarm": "000066",
+    "pattern_b": "_udinese2627A"
+   },
+   {
+    "body": "e5e7da",
+    "shorts": "e5e7da",
+    "socks": "e5e7da",
+    "leftarm": "e5e7da",
+    "pattern_b": "_udinese2627t"
+   }
+  ]
+ },
+ "Union Berlin": {
+  "pagina": "1. FC Union Berlin",
+  "kits": [
+   {
+    "body": "FF0000",
+    "shorts": "FF0000",
+    "socks": "FF0000",
+    "leftarm": "FF0000",
+    "pattern_b": "_unionberlin2627h"
+   },
+   {
+    "body": "444444",
+    "shorts": "000000",
+    "socks": "000000",
+    "leftarm": "444444",
+    "pattern_b": "_unionberlin2627a"
+   },
+   {
+    "body": "FFEE00",
+    "shorts": "FFEE00",
+    "socks": "FFF4D1",
+    "leftarm": "FFEE00",
+    "pattern_b": "_unionberlin2627t"
+   }
+  ]
+ },
+ "Union Saint-Gilloise": {
+  "pagina": "Royale Union Saint-Gilloise",
+  "kits": [
+   {
+    "body": "ffe000",
+    "shorts": "000055",
+    "socks": "000055",
+    "leftarm": "ffe000",
+    "pattern_b": "_unionsg2627h"
+   },
+   {
+    "body": "b9e9ff",
+    "shorts": "00a8e0",
+    "socks": "00a8e0",
+    "leftarm": "b9e9ff",
+    "pattern_b": "_unionsg2627a"
+   },
+   {
+    "body": "37654b",
+    "shorts": "000055",
+    "socks": "37654b",
+    "leftarm": "37654b",
+    "pattern_b": "_unionsg2627t"
+   }
+  ]
+ },
+ "Universitatea Craiova": {
+  "pagina": "CS Universitatea Craiova",
+  "kits": [
+   {
+    "body": "FFFFFF",
+    "shorts": "ffffff",
+    "socks": "ffffff",
+    "leftarm": "FFFFFF",
+    "pattern_b": "_craiova2627h"
+   },
+   {
+    "body": "0044ff",
+    "shorts": "0044ff",
+    "socks": "0044ff",
+    "leftarm": "0044ff",
+    "pattern_b": "_craiova2627a"
+   },
+   {
+    "body": "000000",
+    "shorts": "000000",
+    "socks": "0044FF",
+    "leftarm": "000000",
+    "pattern_b": "_craiova2627t"
+   }
+  ]
+ },
+ "Vardar Skopje": {
+  "pagina": "FK Vardar",
+  "kits": [
+   {
+    "body": "000000",
+    "shorts": "000000",
+    "socks": "FF0000",
+    "leftarm": "FF0000",
+    "pattern_b": "_jomainter19rb"
+   },
+   {
+    "body": "FFFFFF",
+    "shorts": "FFFFFF",
+    "socks": "FFFFFF",
+    "leftarm": "FFFFFF",
+    "pattern_b": "_jomachampionship6wr"
+   }
+  ]
+ },
+ "Venezia": {
+  "pagina": "Venezia FC",
+  "kits": [
+   {
+    "body": "000000",
+    "shorts": "000000",
+    "socks": "000000",
+    "leftarm": "000000",
+    "pattern_b": "_venezia2627h"
+   },
+   {
+    "body": "ede4d9",
+    "shorts": "ede4d9",
+    "socks": "ede4d9",
+    "leftarm": "ede4d9",
+    "pattern_b": "_venezia2627a"
+   },
+   {
+    "body": "000000",
+    "shorts": "000000",
+    "socks": "000000",
+    "leftarm": "000000",
+    "pattern_b": "_venezia2627t"
+   }
+  ]
+ },
+ "Verona": {
+  "pagina": "Hellas Verona FC",
+  "kits": [
+   {
+    "body": "203664",
+    "shorts": "203664",
+    "socks": "203664",
+    "leftarm": "203664",
+    "pattern_b": "_verona2627h"
+   },
+   {
+    "body": "ffdc00",
+    "shorts": "ffdc00",
+    "socks": "ffdc00",
+    "leftarm": "ffdc00",
+    "pattern_b": "_verona2627a"
+   }
+  ]
+ },
+ "VfB Stuttgart": {
+  "pagina": "VfB Stuttgart II",
+  "kits": [
+   {
+    "body": "FFFFFF",
+    "shorts": "FFFFFF",
+    "socks": "FFFFFF",
+    "leftarm": "FFFFFF",
+    "pattern_b": "_stuttgart2425h"
+   },
+   {
+    "body": "FF0000",
+    "shorts": "FF0000",
+    "socks": "FF0000",
+    "leftarm": "FF0000",
+    "pattern_b": "_stuttgart2425a"
+   },
+   {
+    "body": "008D7C",
+    "shorts": "000000",
+    "socks": "000000",
+    "leftarm": "008D7C",
+    "pattern_b": "_stuttgart2324t"
+   }
+  ]
+ },
+ "VfL Wolfsburg": {
+  "pagina": "VfL Wolfsburg",
+  "kits": [
+   {
+    "body": "1A3A2F",
+    "shorts": "1A3A2F",
+    "socks": "1A3A2F",
+    "leftarm": "1A3A2F",
+    "pattern_b": "_wolfsburg2627h"
+   },
+   {
+    "body": "C6D1CE",
+    "shorts": "C6D1CE",
+    "socks": "C6D1CE",
+    "leftarm": "C6D1CE",
+    "pattern_b": "_wolfsburg2627a"
+   },
+   {
+    "body": "F80000",
+    "shorts": "FF0000",
+    "socks": "FF0000",
+    "leftarm": "F80000",
+    "pattern_b": "_nikechallenge6urw"
+   }
+  ]
+ },
+ "Viking": {
+  "pagina": "Viking FK",
+  "kits": [
+   {
+    "leftarm": "061528",
+    "pattern_b": "_viking21h"
+   },
+   {
+    "leftarm": "FFFFFF",
+    "pattern_b": "_viking21a"
+   }
+  ]
+ },
+ "Víkingur Reykjavík": {
+  "pagina": "Víkingur Reykjavík",
+  "kits": [
+   {
+    "body": "000000",
+    "shorts": "000000",
+    "socks": "000000",
+    "leftarm": "000000",
+    "pattern_b": "_vikingurr24h"
+   },
+   {
+    "body": "FFFFFF",
+    "shorts": "FFFFFF",
+    "socks": "FFFFFF",
+    "leftarm": "FFFFFF",
+    "pattern_b": "_vikingurr24a"
+   },
+   {
+    "body": "FF0000",
+    "shorts": "000000",
+    "socks": "000000",
+    "leftarm": "FF0000",
+    "pattern_b": "_vikingurr2425h"
+   }
+  ]
+ },
+ "Werder Bremen": {
+  "pagina": "SV Werder Bremen",
+  "kits": [
+   {
+    "body": "FFFFFF",
+    "shorts": "FFFFFF",
+    "socks": "009A59",
+    "leftarm": "009A59",
+    "pattern_b": "_werder2627h"
+   },
+   {
+    "body": "004432",
+    "shorts": "004432",
+    "socks": "004432",
+    "leftarm": "004432",
+    "pattern_b": "_werder2627a"
+   },
+   {
+    "body": "FF7070",
+    "shorts": "006F6F",
+    "socks": "FF7070",
+    "leftarm": "FF7070",
+    "pattern_b": "_werder2627t"
+   }
+  ]
+ },
+ "West Ham": {
+  "pagina": "West Ham United F.C.",
+  "kits": [
+   {
+    "body": "7e1823",
+    "shorts": "FFFFFF",
+    "socks": "FFFFFF",
+    "leftarm": "7e1823",
+    "pattern_b": "_whu2526h"
+   },
+   {
+    "body": "efe5dc",
+    "shorts": "282e3c",
+    "socks": "efe5dc",
+    "leftarm": "efe5dc",
+    "pattern_b": "_whu2526a"
+   },
+   {
+    "body": "000000",
+    "shorts": "f4d070",
+    "socks": "f4d070",
+    "leftarm": "000000",
+    "pattern_b": "_whu2526t"
+   }
+  ]
+ },
+ "Wolves": {
+  "pagina": "Wollongong Wolves FC",
+  "kits": [
+   {
+    "body": "FF0000",
+    "shorts": "FF0000",
+    "socks": "FF0000",
+    "leftarm": "FF0000",
+    "pattern_b": "_3redstripes3"
+   },
+   {
+    "body": "FFFFFFF",
+    "shorts": "FFFFFFF",
+    "socks": "FFFFFFF",
+    "leftarm": "FFFFFFF",
+    "pattern_b": "_white"
+   }
+  ]
  }
 }
