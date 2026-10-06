@@ -11,6 +11,10 @@ cambios de código y archivos".
   el resumen y dónde leerlo.
 - Lo más nuevo, arriba.
 
+## 06/10/2026 — redes: XI/Index con Champions
+- Qué: `datos_formatos.py` acepta fuente `ucl` y `clubes+ucl` (XI del mes) y avisa si hay jugadores sin nombre.
+- Por qué: usuario: XI de la Champions en sus semanas y XI del mes juntando ligas y Champions.
+
 ## 06/10/2026 — redes: descargas de API para nombres y Champions
 - Qué: `scripts/redes_api.py` + `redes_api.yml` (solo a mano): `nombres` repide /box-score de la temporada en curso de las 5 grandes para guardar el nombre de cada jugador; `ucl` busca la Champions, lista sus partidos jugados y baja su box-score (`data/redes/ucl_*.csv`).
 - Por qué: para el XI de septiembre (ligas + Champions) faltaba el nombre del 40% de los mejores candidatos y no había nada de Champions. Usuario: "descarga de la API todo lo que necesites".

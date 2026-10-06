@@ -86,15 +86,32 @@ def filas(desde, hasta, fuente):
         j["equipo"] = j.equipo_id.map(dict(zip(eq.id, eq.n)))
         comp = ", ".join(sorted(p.competicion.unique()))
     else:
-        h = pd.read_csv(ROOT / "data/historico_partidos.csv", low_memory=False)
-        h = h[(h.fecha.astype(str).str[:10] >= desde) & (h.fecha.astype(str).str[:10] <= hasta) & h.liga.isin(R.GRANDES) & h.goles_l.notna()]
-        j = pd.read_csv(ROOT / "data/historico_xg_jugador.csv", low_memory=False)
-        j = j[j.match_id.isin(h.match_id) & j.jugador_id.notna()].copy()
-        j["jugador"] = j.jugador_id.astype(int).map(R.nombres_propios())
+        # clubes = 5 grandes ligas; ucl = Champions; clubes+ucl = las dos (XI del mes, usuario 06/10)
+        trozos, comps = [], []
+        if "clubes" in fuente:
+            h = pd.read_csv(ROOT / "data/historico_partidos.csv", low_memory=False)
+            h = h[(h.fecha.astype(str).str[:10] >= desde) & (h.fecha.astype(str).str[:10] <= hasta) & h.liga.isin(R.GRANDES) & h.goles_l.notna()]
+            x = pd.read_csv(ROOT / "data/historico_xg_jugador.csv", low_memory=False)
+            x = x[x.match_id.isin(h.match_id) & x.jugador_id.notna()].copy()
+            x["jugador"] = x.jugador_id.astype(int).map(R.nombres_propios())
+            trozos.append((x, h)); comps.append("Top 5 leagues")
+        if "ucl" in fuente:
+            u = pd.read_csv(ROOT / "data/redes/ucl_partidos.csv")
+            u = u[(u.fecha.astype(str).str[:10] >= desde) & (u.fecha.astype(str).str[:10] <= hasta)]
+            x = pd.read_csv(ROOT / "data/redes/ucl_jugadores.csv", low_memory=False)
+            x = x[x.match_id.isin(u.match_id) & x.jugador_id.notna()].copy()
+            nom = R.nombres_propios()
+            x["jugador"] = x.jugador.fillna(x.jugador_id.astype(int).map(nom))
+            trozos.append((x, u)); comps.append("Champions League")
+        j = pd.concat([t[0] for t in trozos])
+        h = pd.concat([t[1][["match_id", "local_id", "local", "visitante_id", "visitante"]] for t in trozos])
         eq = pd.concat([h[["local_id", "local"]].set_axis(["id", "n"], axis=1), h[["visitante_id", "visitante"]].set_axis(["id", "n"], axis=1)])
         j["equipo"] = j.equipo_id.map(dict(zip(eq.id, eq.n)))
+        sin = j.jugador.isna() & (pd.to_numeric(j.minutos, errors="coerce") > 0)
+        if sin.mean() > 0.05:
+            print(f"[!] {sin.mean():.0%} de filas sin nombre: lanza redes_api.yml modo nombres antes de publicar")
         j = j.dropna(subset=["jugador"])
-        comp = "Top 5 leagues"
+        comp = " + ".join(comps)
     for c in ["nota", "minutos"] + SUMAS:
         j[c] = pd.to_numeric(j.get(c), errors="coerce")
     j = j[j.minutos > 0]
