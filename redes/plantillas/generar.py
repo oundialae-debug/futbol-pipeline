@@ -60,6 +60,41 @@ def color(eq):
     return visible(max(vivos, key=lambda cp: cp[1] * (.5 + _hls(cp[0])[2]))[0])
 
 
+def _parecidos(c1, c2):
+    """Dos colores que en la imagen no se distinguen (rojo y rojo, blanco y gris claro)."""
+    (h1, l1, s1), (h2, l2, s2) = _hls(c1), _hls(c2)
+    if s1 < .2 or s2 < .2:
+        return s1 < .2 and s2 < .2 and abs(l1 - l2) < .3
+    dh = min(abs(h1 - h2), 1 - abs(h1 - h2))
+    return dh < .08 and abs(l1 - l2) < .25
+
+
+def _alternativas(eq):
+    """Otros colores del equipo, del más al menos suyo: resto de la 1ª camiseta y luego la 2ª."""
+    kits = KITS.get(eq.get("kit", eq["name"])) or []
+    alt = []
+    for n, kit in enumerate(kits[:2]):
+        for c, pp in zip(kit.get("colores", []), kit.get("partes", [])):
+            if pp >= .04:
+                alt.append((visible(c), pp / (n + 1)))
+    return alt
+
+
+def separar(h, a):
+    """Usuario, 06/10: nunca el mismo color para los dos equipos (Croacia y España, ambos rojos).
+    Cambia al equipo cuyo otro color es más suyo (Croacia → blanco de los cuadros); si nada sirve, amarillo."""
+    if not _parecidos(h["c"], a["c"]):
+        return
+    mejor = None
+    for t, otro in ((h, a), (a, h)):
+        for c, peso in _alternativas(t):
+            if not _parecidos(c, otro["c"]) and (mejor is None or peso > mejor[2]):
+                mejor = (t, c, peso)
+    t, c = (mejor[0], mejor[1]) if mejor else (a, AMARILLO)
+    t["c"] = c
+    t["t"] = texto_sobre(c)
+
+
 # Equipos cuyo color de camiseta engaña (un detalle se lleva el protagonismo).
 COLOR_FIJO = {"Germany": "#F1F3F8"}
 
@@ -202,15 +237,18 @@ def elo_chart(d):
     W, H, pad = 860, 250, 16
     todos = d["elo_home"] + d["elo_away"]
     lo, hi = min(todos) - 10, max(todos) + 10
-    def linea(vs_, c):
+    def linea(vs_, c, nombre):
         n = len(vs_)
         pts = [(pad + k * (W - 2 * pad - 150) / (n - 1), pad + (hi - v) * (H - 2 * pad) / (hi - lo)) for k, v in enumerate(vs_)]
         x, y = pts[-1]
         return (f'<polyline points="{" ".join(f"{px:.0f},{py:.0f}" for px, py in pts)}" fill="none" stroke="{c}" '
                 f'stroke-width="9" stroke-linejoin="round" stroke-linecap="round"/><circle cx="{x:.0f}" cy="{y:.0f}" r="14" fill="{c}"/>'
-                f'<text x="{x + 26:.0f}" y="{y + 16:.0f}" fill="#F1F3F8" font-size="46" font-weight="900" '
-                f'font-stretch="75%" font-family="Archivo">{vs_[-1]}</text>')
-    return f'<svg width="{W}" height="{H}">{linea(d["elo_away"], a["c"])}{linea(d["elo_home"], h["c"])}</svg>'
+                f'<text x="{x + 26:.0f}" y="{y + 16:.0f}" fill="{c}" font-size="46" font-weight="900" '
+                f'font-stretch="75%" font-family="Archivo">{vs_[-1]}</text>'
+                f'<text x="{x + 26:.0f}" y="{y + 50:.0f}" fill="{c}" font-size="28" font-weight="800" '
+                f'font-family="Archivo">{e(nombre)}</text>')
+    return (f'<svg width="{W}" height="{H + 40}" style="overflow:visible">{linea(d["elo_away"], a["c"], a["short"])}'
+            f'{linea(d["elo_home"], h["c"], h["short"])}</svg>')
 
 
 def elo_form(d):
@@ -374,6 +412,7 @@ def our_calls(d):
         h, a = dict(m["home"]), dict(m["away"])
         for t in (h, a):
             t["c"] = color(t); t["t"] = texto_sobre(t["c"]); t.setdefault("short", t["name"])
+        separar(h, a)
         p = m["probs"]
         i = max(range(3), key=lambda k: p[k])
         quien = [f'{h["short"]} win', "Draw", f'{a["short"]} win'][i]
@@ -401,7 +440,8 @@ def picks_list(d):
     for m in d["picks"]:
         h, a = dict(m["home"]), dict(m["away"])
         for t in (h, a):
-            t["c"] = color(t); t.setdefault("short", t["name"])
+            t["c"] = color(t); t["t"] = texto_sobre(t["c"]); t.setdefault("short", t["name"])
+        separar(h, a)
         filas += (f'<div style="display:flex;align-items:center;gap:20px;padding:8px 0;border-bottom:2px solid #1E2330">'
                   f'<div class="mini" style="width:92px;font-size:30px">{e(m["time"])}</div>'
                   f'<div style="flex:1;min-width:0"><div style="font-size:36px;font-weight:800;white-space:nowrap">'
@@ -437,6 +477,7 @@ def html_de(d):
         d[k]["c"] = color(d[k])
         d[k]["t"] = texto_sobre(d[k]["c"])
         d[k].setdefault("short", d[k]["name"])
+    separar(d["home"], d["away"])
     global ACTUAL
     ACTUAL = (d["home"], d["away"])
     out = PLANTILLAS[d["template"]](d)

@@ -11,6 +11,10 @@ cambios de código y archivos".
   el resumen y dónde leerlo.
 - Lo más nuevo, arriba.
 
+## 06/10/2026 — redes: nunca el mismo color para los dos equipos
+- Qué: `generar.py` nuevo `separar()`: si los colores de los dos equipos se parecen, uno pasa a su otro color más propio (Croacia → blanco); si nada sirve, amarillo. El gráfico Elo pone valor y nombre del equipo en su color.
+- Por qué: usuario, previo Croacia-España (ambos rojos): no se entendía qué Elo era de quién.
+
 ## 05/10/2026 — redes: fuera "bookies" de las imágenes
 - Qué: `generar.py` (upset alert) dice "Consensus" en vez de "Bookies".
 - Por qué: TikTok parece no mostrar posts con vocabulario de apuestas (las 2 últimas se quedaron en 0 vistas).
