@@ -4,22 +4,22 @@ Cada pronóstico se apunta ANTES del partido; aquí se cruza con lo que pasó (e
 
 **Reglas fijadas el 29/09/2026, antes de ver resultados:** el juez principal es el Brier y el log loss sobre TODOS los partidos, contra el ambos marcan real (mediana de casas sin margen), emparejado partido a partido. Primer punto de control a los 400 partidos. Apuesta en papel (1 unidad) solo si el VE supera el 8%. No se toca el modelo antes del control.
 
-**Partidos jugados: 12** (pendientes 1).
+**Partidos jugados: 13** (pendientes 0).
 
 ## Juez principal: todos los partidos contra el ambos marcan real
 
 | modelo | partidos | Brier modelo | Brier mercado | sigmas Brier | log loss modelo | log loss mercado | sigmas log loss |
 |---|---|---|---|---|---|---|---|
-| oficial | 12 | 0.2367 | 0.2454 | +0.78s | 0.6663 | 0.6840 | +0.79s |
-| solo precio (comparación) | 8 | 0.2396 | 0.2478 | +0.94s | 0.6721 | 0.6887 | +0.94s |
+| oficial | 13 | 0.2343 | 0.2417 | +0.72s | 0.6614 | 0.6766 | +0.73s |
+| solo precio (comparación) | 9 | 0.2325 | 0.2422 | +1.24s | 0.6578 | 0.6774 | +1.24s |
 
-Punto de control: 12 de 400 partidos. Hasta entonces las sigmas son orientativas (hace falta +2s en Brier Y log loss para decir que un modelo bate al mercado).
+Punto de control: 13 de 400 partidos. Hasta entonces las sigmas son orientativas (hace falta +2s en Brier Y log loss para decir que un modelo bate al mercado).
 
 | mercado | acierto modelo | acierto mercado | Brier modelo | Brier mercado |
 |---|---|---|---|---|
-| ambos marcan | 58% | 58% | 0.237 | 0.245 |
-| más de 2.5 | 42% | 42% | 0.282 | 0.272 |
-| 1X2 | 58% | 58% | - | - |
+| ambos marcan | 62% | 62% | 0.234 | 0.242 |
+| más de 2.5 | 46% | 46% | 0.277 | 0.268 |
+| 1X2 | 62% | 62% | - | - |
 
 **Apuestas de ambos marcan (VE > 8%):** 0, ganadas 0, beneficio +0.00 unidades (+0.0% por apuesta). Solo como referencia, con VE > 0: 4 apuestas, -0.44 unidades.
 
@@ -37,3 +37,4 @@ Punto de control: 12 de 400 partidos. Hasta entonces las sigmas son orientativas
 | 2026-10-04 16:30 | Castellón - AD Ceuta FC | 1-1 | 58% / 55% | - | 1.68 |  |
 | 2026-10-04 16:30 | Las Palmas - Valladolid | 2-2 | 61% / 53% | - | 1.75 |  |
 | 2026-10-04 19:00 | Girona - Mallorca | 0-0 | 53% / 55% | - | 1.69 |  |
+| 2026-10-05 18:30 | Cordoba - Tenerife | 3-2 | 55% / 56% | - | 1.68 |  |
