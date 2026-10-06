@@ -604,15 +604,15 @@ match_id,fecha,competicion,local_id,local,visitante_id,visitante,goles_l,goles_v
 1301132979,2026-10-05,UEFA Nations League,654352,Italy,662011,Turkey,3.0,1.0,True
 1301136383,2026-10-05,UEFA Nations League,659458,Romania,5039,Sweden,0.0,1.0,True
 1301138085,2026-10-06,UEFA Nations League,932629,Kazakhstan,935182,Faroe Islands,2.0,2.0,True
-1301140638,2026-10-06,UEFA Nations League,662862,Albania,949649,San Marino,,,False
-1301141489,2026-10-06,UEFA Nations League,936884,Belarus,936033,Finland,,,False
-1315316596,2026-10-06,UEFA Nations League,938586,Luxembourg,939437,Bulgaria,,,False
-1301138936,2026-10-06,UEFA Nations League,3337,Croatia,8443,Spain,,,False
-1301139787,2026-10-06,UEFA Nations League,9294,England,656054,Czech Republic,,,False
-1301143191,2026-10-06,UEFA Nations League,937735,Estonia,16102,Iceland,,,False
-1301142340,2026-10-06,UEFA Nations League,948798,Moldova,658607,Slovakia,,,False
-1315353189,2026-10-06,UEFA Nations League,13549,Switzerland,941139,North Macedonia,,,False
-1315354891,2026-10-06,UEFA Nations League,943692,Scotland,929225,Slovenia,,,False
+1301140638,2026-10-06,UEFA Nations League,662862,Albania,949649,San Marino,2.0,1.0,True
+1301141489,2026-10-06,UEFA Nations League,936884,Belarus,936033,Finland,1.0,0.0,True
+1315316596,2026-10-06,UEFA Nations League,938586,Luxembourg,939437,Bulgaria,0.0,2.0,True
+1301138936,2026-10-06,UEFA Nations League,3337,Croatia,8443,Spain,1.0,2.0,True
+1301139787,2026-10-06,UEFA Nations League,9294,England,656054,Czech Republic,3.0,0.0,True
+1301143191,2026-10-06,UEFA Nations League,937735,Estonia,16102,Iceland,0.0,0.0,True
+1301142340,2026-10-06,UEFA Nations League,948798,Moldova,658607,Slovakia,0.0,4.0,True
+1315353189,2026-10-06,UEFA Nations League,13549,Switzerland,941139,North Macedonia,3.0,0.0,True
+1315354891,2026-10-06,UEFA Nations League,943692,Scotland,929225,Slovenia,1.0,2.0,True
 1301144893,2026-11-12,UEFA Nations League,931778,Armenia,941990,Cyprus,,,False
 1301144042,2026-11-12,UEFA Nations League,662011,Turkey,1635,Belgium,,,False
 1301148297,2026-11-12,UEFA Nations League,662862,Albania,936033,Finland,,,False
