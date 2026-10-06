@@ -1,14 +1,14 @@
 # Más/menos juegos en directo: apuestas en papel
 
-Partidos acabados con cuota de juegos en el registro: **413**. Una apuesta por partido (se agrupa por partido). Cuota = la de la API en esa pasada, no la de Luckia. Con menos de 20 apuestas el número no significa nada.
+Partidos acabados con cuota de juegos en el registro: **428**. Una apuesta por partido (se agrupa por partido). Cuota = la de la API en esa pasada, no la de Luckia. Con menos de 20 apuestas el número no significa nada.
 
 | estrategia | apuestas | aciertos | beneficio medio | sigmas |
 |---|---|---|---|---|
-| **señal: vigilar el menos** | 103 | 67% | +20.2% | +2.30 |
-| control: siempre el menos (1ª pasada) | 413 | 50% | -7.5% | -1.64 |
-| control: siempre el más (1ª pasada) | 413 | 50% | -7.1% | -1.55 |
+| **señal: vigilar el menos** | 105 | 68% | +21.4% | +2.48 |
+| control: siempre el menos (1ª pasada) | 428 | 51% | -6.0% | -1.34 |
+| control: siempre el más (1ª pasada) | 428 | 49% | -8.6% | -1.92 |
 
-Brier del 'más' en la línea principal (1ª pasada): modelo 0.2693, mercado 0.2510 (menor es mejor). El modelo da al más +12.8% sobre lo que pasa de verdad.
+Brier del 'más' en la línea principal (1ª pasada): modelo 0.2712, mercado 0.2510 (menor es mejor). El modelo da al más +13.5% sobre lo que pasa de verdad.
 
 ## Señales
 
@@ -96,7 +96,9 @@ Brier del 'más' en la línea principal (1ª pasada): modelo 0.2693, mercado 0.2
 | WTA 1000 Beijing: D. Vekic vs I. Swiatek | 32.5 | 1.61 | 31 | gana |
 | WTA 1000 Beijing: C. Gauff vs X. Sun | 25.5 | 1.91 | 19 | gana |
 | Challenger Wuning 3 (China): L. Castelnuovo vs A. Santillan | 27.5 | 1.67 | 31 | pierde |
+| Challenger Villena: D. Glinka vs G. Onclin | 28.5 | 1.83 | 27 | gana |
 | Challenger Braga: G. Marques vs N. Sanchez Izquierdo | 20.5 | 1.83 | 19 | gana |
+| Challenger Antofagasta: A. Barrena vs M. Pucinelli de Almeida | 21.5 | 1.91 | 21 | gana |
 | WTA 1000 Beijing: S. Kraus vs N. Bartunkova | 24.5 | 3.00 | 25 | pierde |
 | WTA 125 Suzhou: H. Guo vs A. Falei | 26.5 | 1.80 | 35 | pierde |
 | WTA 125 Suzhou: M. Uchijima vs Z. Bai | 28.5 | 2.50 | 28 | gana |
@@ -129,16 +131,16 @@ Brier del 'más' en la línea principal (1ª pasada): modelo 0.2693, mercado 0.2
 
 ## Previos (antes de empezar), línea principal de juegos y ganador
 
-589 partidos. Juegos (más de la línea principal), Brier (menor es mejor): modelo 0.2753, modelo corregido con el historial 0.2557, casa 0.2502. Pasó el más en el 50%.
+615 partidos. Juegos (más de la línea principal), Brier (menor es mejor): modelo 0.2763, modelo corregido con el historial 0.2559, casa 0.2505. Pasó el más en el 49%.
 
 | regla de previo (en papel desde el 06/10 18:00) | apuestas | aciertos | beneficio medio | sigmas |
 |---|---|---|---|---|
 | previo ATP circuito: más si modelo >= casa+10 | 0 | | | |
 | previo ajustado vs casa >= 10 (cualquier lado) | 0 | | | |
-Ganador (589): acierto modelo 68%, casa 71%.
+Ganador (615): acierto modelo 67%, casa 71%.
 
 ## Aprendizaje (recalibración del modelo)
 
-Partidos resueltos: 341 (2472 líneas). Activa: **sí** (hace falta 30+ partidos y que mejore a la CASA en partidos que no vio).
-**Apostando con lo aprendido, día a día** (cada día aprende solo de los anteriores): 237 apuestas, aciertos 48%, beneficio medio -11.9%, -1.96 sigmas.
-Brier (menor es mejor): modelo 0.2671, modelo con el saque de hoy 0.2580, casa 0.2445, recalibrado (validado por partidos) 0.2323. Sesgo del modelo hacia el más: +18.0%.
+Partidos resueltos: 356 (2583 líneas). Activa: **sí** (hace falta 30+ partidos y que mejore a la CASA en partidos que no vio).
+**Apostando con lo aprendido, día a día** (cada día aprende solo de los anteriores): 252 apuestas, aciertos 49%, beneficio medio -9.1%, -1.55 sigmas.
+Brier (menor es mejor): modelo 0.2678, modelo con el saque de hoy 0.2582, casa 0.2442, recalibrado (validado por partidos) 0.2336. Sesgo del modelo hacia el más: +18.3%.
