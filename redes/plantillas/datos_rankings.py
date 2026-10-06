@@ -151,7 +151,7 @@ def buscar(j, nombre):
 
 
 # understat usa nombres de registro: aquí los que la gente conoce de otra forma (añadir cuando salga uno raro)
-ALIAS = {"Kylian Mbappe-Lottin": "Kylian Mbappé", "Vinicius Júnior": "Vinícius Jr", "Vinicius Junior": "Vinícius Jr"}
+ALIAS = {"Kylian Mbappe-Lottin": "Kylian Mbappé", "Pau Cubarsí Paredes": "Pau Cubarsí", "Cubarsí Paredes": "Cubarsí", "Vinicius Júnior": "Vinícius Jr", "Vinicius Junior": "Vinícius Jr"}
 
 
 def visible_nombre(n):

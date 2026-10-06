@@ -572,7 +572,7 @@ def xi(d):
         c = color({"name": pl.get("team", "")})
         estrella = pl is top
         return (f'<div style="display:flex;flex-direction:column;align-items:center;gap:8px;width:190px">'
-                f'{tarjeta(f"{pl["value"]:.1f}", grande=estrella)}'
+                f'{tarjeta(pl["value"] if isinstance(pl["value"], int) else f"{pl["value"]:.1f}", grande=estrella)}'
                 f'<div style="font-size:{30 if estrella else 27}px;font-weight:900;font-stretch:85%;white-space:nowrap;'
                 f'max-width:200px;overflow:hidden;text-overflow:ellipsis;text-align:center">{e(pl["name"])}</div>'
                 f'<div style="display:flex;align-items:center;gap:6px;font-size:21px;color:#AEB5C4;white-space:nowrap">'

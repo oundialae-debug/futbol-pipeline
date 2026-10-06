@@ -11,6 +11,10 @@ cambios de código y archivos".
   el resumen y dónde leerlo.
 - Lo más nuevo, arriba.
 
+## 06/10/2026 — redes: 2yellow XI con posiciones reales y filtro de nivel
+- Qué: el XI reparte los huecos del 4-3-3 (LW, ST, RW, CM, DM, CM, LB, CB, CB, RB, GK) según la posición de `jugador_perfil.csv` (secundaria con -3), reparto global por 2yellow Index (el mismo del top 5); sin perfil, solo hueco central; si falta un hueco, no se publica. Selecciones: solo partidos entre dos equipos del top 40 FIFA. Índice con tope 99.
+- Por qué: usuario: "Harry de extremo derecho, Porro de central" y onces con jugadores de selecciones menores (Bielorrusia, Estonia) por notas altas contra rivales flojos.
+
 ## 06/10/2026 — redes: formatos propios (2yellow XI, 2yellow Index), lienzo 4:5 para IG
 - Qué: plantillas `xi` (once 4-3-3 con la nota en una tarjeta amarilla) e `indice` (top 5, índice = nota x10 + 3 por G+A por partido); `redes/plantillas/datos_formatos.py xi|indice <desde> <hasta> [selecciones|clubes]`; `LIENZO=4x5` genera 1080x1350 para imágenes de Instagram; barras del ranking uniformes (solo el 1º en amarillo).
 - Por qué: usuario: formatos propios para diferenciarnos; IG recortaba las 9:16; Yamal salía resaltado porque solo su club tenía colores en `kits_camiseta.json`.
