@@ -11,6 +11,10 @@ cambios de código y archivos".
   el resumen y dónde leerlo.
 - Lo más nuevo, arriba.
 
+## 06/10/2026 — redes: descargas de API para nombres y Champions
+- Qué: `scripts/redes_api.py` + `redes_api.yml` (solo a mano): `nombres` repide /box-score de la temporada en curso de las 5 grandes para guardar el nombre de cada jugador; `ucl` busca la Champions, lista sus partidos jugados y baja su box-score (`data/redes/ucl_*.csv`).
+- Por qué: para el XI de septiembre (ligas + Champions) faltaba el nombre del 40% de los mejores candidatos y no había nada de Champions. Usuario: "descarga de la API todo lo que necesites".
+
 ## 06/10/2026 — redes: 2yellow Index POR ROL (ataque, medio, defensa, portero)
 - Qué: `datos_formatos.py`: cada métrica en percentil dentro de su rol y periodo, media ponderada x100. ATT: G+A, regates, pases clave, xG+xA, tiros a puerta, nota. MID: pases clave, pases, % pase, entradas+intercepciones, duelos, regates, G+A, nota. DEF: entradas+intercepciones, duelos (ganados y %), pase, tarjetas (resta), nota. GK: paradas, goles evitados, encajados. `indice <desde> <hasta> <fuente> "" ATT|MID|DEF|GK`; el XI usa el mismo índice y nadie juega fuera de su rol; mínimo de minutos común (60' por partido de su equipo, tope 360'); Mundial/Euro sin filtro de nivel.
 - Por qué: usuario: "si usas G+A somos lo mismo que los demás" y Lamine fuera. Comprobado: en el Mundial hizo 1 gol y 0 asistencias (también según fuentes externas); con el índice por rol destaca en regate (4,0/90) pero queda 12º de 18 atacantes.
