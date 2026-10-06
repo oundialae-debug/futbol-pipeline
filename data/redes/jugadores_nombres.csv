@@ -87,13 +87,13 @@ jugador_id,nombre,equipo_id,equipo
 146503,M. Rashford,28867,Manchester United
 31789282,Yan Couto,762429,Como
 2296980,Ivan Smolčić,762429,Como
-3052553,Robert Sánchez,762429,Como
+3052553,Robert Sánchez,42483,Chelsea
 71349236,Jesús Rodriguez,762429,Como
-5000170,Samuele Ricci,762429,Como
+5000170,Samuele Ricci,416923,AC Milan
 46480693,Máximo Perrone,762429,Como
 66073910,Mattia Liberali,762429,Como
 4234615,Marc Kempf,762429,Como
-141351,Moise Kean,762429,Como
+141351,Moise Kean,427986,Fiorentina
 49876666,Kaiki,762429,Como
 4322199,Anastasios Douvikas,762429,Como
 1380568,Jean Butez,762429,Como
@@ -122,7 +122,7 @@ jugador_id,nombre,equipo_id,equipo
 64109066,A. MaksimoviÄ,148007,RB Leipzig
 43463,C. Nkunku,148007,RB Leipzig
 1179962,N. Seiwald,148007,RB Leipzig
-44597637,N. El Aynaoui,148007,RB Leipzig
+44597637,N. El Aynaoui,423731,AS Roma
 4050592,D. Raum,148007,RB Leipzig
 26204675,C. Lukeba,148007,RB Leipzig
 184982,W. Orbán,148007,RB Leipzig
@@ -334,7 +334,7 @@ jugador_id,nombre,equipo_id,equipo
 56348061,Garang Kuol,535212,Sparta Praha
 45400383,D. Khudyakov,542871,Sturm Graz
 65957024,A. Malic,542871,Sturm Graz
-47911017,J. Mitchell,542871,Sturm Graz
+47911017,J. Mitchell,81629,Strasbourg
 71451954,P. Petrović,542871,Sturm Graz
 55257125,Emran Soglo,542871,Sturm Graz
 28339857,S. Seidl,542871,Sturm Graz
@@ -358,7 +358,7 @@ jugador_id,nombre,equipo_id,equipo
 8023911,Mert Günok,520745,Fenerbahce
 145859,Fred,520745,Fenerbahce
 3023090,Çağlar Söyüncü,520745,Fenerbahce
-67922029,S. Cherif,520745,Fenerbahce
+67922029,S. Cherif,1146230,Coventry
 96747630,Leo Hofstadter,559040,Slovan Bratislava
 33552232,Mykola Kukharevych,559040,Slovan Bratislava
 7732501,A. Youssef,1907024,Mjällby AIF
@@ -415,7 +415,7 @@ jugador_id,nombre,equipo_id,equipo
 22846215,Jota Silva,471387,Olympiakos Piraeus
 438396,A. El Kaabi,471387,Olympiakos Piraeus
 259203,K. Fortounis,471387,Olympiakos Piraeus
-63194908,C. Mouzakitis,471387,Olympiakos Piraeus
+63194908,C. Mouzakitis,55248,Hull City
 58686747,L. Scipioni,471387,Olympiakos Piraeus
 54596059,Joel Roca,471387,Olympiakos Piraeus
 66599736,Z. Smajlović,471387,Olympiakos Piraeus
@@ -423,7 +423,7 @@ jugador_id,nombre,equipo_id,equipo
 4025798,S. Ortega,471387,Olympiakos Piraeus
 26161205,Dimitrios Stournaras,471387,Olympiakos Piraeus
 6757324,David Carmo,471387,Olympiakos Piraeus
-4234776,Pablo Maffeo,471387,Olympiakos Piraeus
+4234776,Pablo Maffeo,453516,Valencia
 79975455,Christos Filis,471387,Olympiakos Piraeus
 4372431,M. Saliakas,471387,Olympiakos Piraeus
 6335826,Jostein Gundersen,279061,Bodø/Glimt
@@ -439,7 +439,7 @@ jugador_id,nombre,equipo_id,equipo
 54832568,K. Van de Perre,1186227,Union Saint-Gilloise
 709842,A. Zorgane,1186227,Union Saint-Gilloise
 50577499,Guilherme Henriques da Silva Carvalho,1186227,Union Saint-Gilloise
-50449987,P. David,1186227,Union Saint-Gilloise
+50449987,P. David,44185,Brighton
 6950685,D. Olaru,1186227,Union Saint-Gilloise
 57800120,M. Fuseini,1186227,Union Saint-Gilloise
 1439333,R. Schoofs,1186227,Union Saint-Gilloise
@@ -505,7 +505,7 @@ jugador_id,nombre,equipo_id,equipo
 97742127,Hamuza Sengooba,346290,Aarhus GF
 6511960,L. Haraslín,535212,Sparta Praha
 70629888,Yvann Konan,68864,Lyon
-4006156,O. Mangala,68864,Lyon
+4006156,O. Mangala,465430,Getafe
 57717849,Alexandros Tsompanidis,471387,Olympiakos Piraeus
 21174230,S. Zuberu,559040,Slovan Bratislava
 9844660,Jurij Medveděv,559040,Slovan Bratislava
@@ -569,7 +569,7 @@ jugador_id,nombre,equipo_id,equipo
 62267870,Y. Agnero,296081,Lech Poznan
 60121257,Gisli Thordarson,296081,Lech Poznan
 66113194,M. Pruchniewski,296081,Lech Poznan
-20430410,Bartosz Mrozek,296081,Lech Poznan
+20430410,Bartosz Mrozek,421178,Udinese
 8198596,João Moutinho,296081,Lech Poznan
 6531119,M. Skrzypczak,296081,Lech Poznan
 92530879,Hubert Janyszka,296081,Lech Poznan
@@ -598,7 +598,7 @@ jugador_id,nombre,equipo_id,equipo
 80127439,Christos Konstantinidis,2895886,Omonia Nicosia
 59724,Fabiano,2895886,Omonia Nicosia
 334068,Aleksandr Martynovich,565848,Kairat Almaty
-4223828,A. Schwolow,216938,Heart of Midlothian
+4223828,A. Schwolow,140348,FSV Mainz 05
 69496126,J. Altena,216938,Heart of Midlothian
 24922954,Malachi Fagan-Walcott,216938,Heart of Midlothian
 3125486,S. Kingsley,216938,Heart of Midlothian
@@ -621,7 +621,7 @@ jugador_id,nombre,equipo_id,equipo
 80995712,S. Kerjota,216938,Heart of Midlothian
 1221500,O. Kiteishvili,542871,Sturm Graz
 2319520,Ivan Filipović,528404,Dinamo Zagreb
-45133928,G. Vidović,528404,Dinamo Zagreb
+45133928,G. Vidović,158219,SC Paderborn 07
 26265533,N. Steffen,861996,FC Thun
 29044554,F. Fehr,861996,FC Thun
 7809781,J. Bamert,861996,FC Thun
@@ -1001,7 +1001,7 @@ jugador_id,nombre,equipo_id,equipo
 967603,J. Álvarez,451814,Atlético Madrid
 90797,Álex Grimaldo,451814,Atlético Madrid
 3021641,A. Lookman,451814,Atlético Madrid
-1366883,J. David,451814,Atlético Madrid
+1366883,J. David,422880,Juventus
 7615615,Robin Le Normand,451814,Atlético Madrid
 1241786,M. Hjulmand,451814,Atlético Madrid
 397019,J. Musso,451814,Atlético Madrid
@@ -1265,13 +1265,13 @@ jugador_id,nombre,equipo_id,equipo
 91441,Rúben Dias,43334,Manchester City
 20774467,J. Gvardiol,43334,Manchester City
 70628922,A. Bouaddi,43334,Manchester City
-965510,E. Fernández,43334,Manchester City
+965510,E. Fernández,42483,Chelsea
 101745,P. Foden,43334,Manchester City
 25192951,R. Cherki,43334,Manchester City
 3104395,A. Semenyo,43334,Manchester City
 177254,E. Haaland,43334,Manchester City
 57978508,A. Khusanov,43334,Manchester City
-2993466,I. Ndiaye,43334,Manchester City
+2993466,I. Ndiaye,39079,Everton
 22364342,E. Anderson,43334,Manchester City
 3403372,R. Aït-Nouri,43334,Manchester City
 369005,M. Kovačić,43334,Manchester City
@@ -1336,7 +1336,7 @@ jugador_id,nombre,equipo_id,equipo
 65187605,K. Karetsas,141199,Borussia Dortmund
 186753,M. Sabitzer,141199,Borussia Dortmund
 3444427,S. Guirassy,141199,Borussia Dortmund
-50431150,E. Nwaneri,141199,Borussia Dortmund
+50431150,E. Nwaneri,36526,Arsenal
 52608031,J. Bellingham,141199,Borussia Dortmund
 20896505,Fábio Silva,141199,Borussia Dortmund
 81738566,Kauã Prates,141199,Borussia Dortmund
@@ -1432,8 +1432,2059 @@ jugador_id,nombre,equipo_id,equipo
 1219407,T. Schützenauer,873910,LASK Linz
 76015821,Fabian Schillinger,873910,LASK Linz
 64408848,M. Freckleton,873910,LASK Linz
-52167213,Daniel Elfadli,873910,LASK Linz
+52167213,Daniel Elfadli,149709,Hamburger SV
 48893278,Y. Dibango,873910,LASK Linz
 79799804,Manoël Verhaeghe,873910,LASK Linz
 29267700,K. Daněk,873910,LASK Linz
 82425553,N. Kane,873910,LASK Linz
+7652001,S. Dimitrievski,453516,Valencia
+7641697,Pepelu,453516,Valencia
+5938478,J. de Haas,453516,Valencia
+147952,José Gayà,453516,Valencia
+7803019,F. Ugrinic,453516,Valencia
+103252191,Aaron Mayol,453516,Valencia
+398790,G. Rodríguez,453516,Valencia
+13517,A. Danjuma,453516,Valencia
+50827693,Javi Guerra,453516,Valencia
+7609658,Hugo Duro,453516,Valencia
+70772212,David Otorbi,453516,Valencia
+3064789,H. Elliott,453516,Valencia
+26110329,Jesús Vázquez,453516,Valencia
+65373399,Aimar Blázquez,453516,Valencia
+7556367,Luis Rioja,453516,Valencia
+52915863,K. van Oevelen,453516,Valencia
+45670702,Arnau Martínez,453516,Valencia
+71192422,Iker Córdoba,453516,Valencia
+71649823,Alex Panach,453516,Valencia
+717892,A. Dieng,453516,Valencia
+66145394,R. Sato,453516,Valencia
+275142,Dani Raba,453516,Valencia
+7610463,Álex Remiro,467132,Real Sociedad
+32046238,J. Aramburu,467132,Real Sociedad
+56199297,Luken Beitia,467132,Real Sociedad
+65216907,Jon Martín,467132,Real Sociedad
+3857,Sergio Gómez,467132,Real Sociedad
+62329533,J. Ochieng,467132,Real Sociedad
+46312448,Jon Gorrotxategi,467132,Real Sociedad
+149884,Carlos Soler,467132,Real Sociedad
+149079,Gonçalo Guedes,467132,Real Sociedad
+1180606,L. Sučić,467132,Real Sociedad
+7619157,Mikel Oyarzabal,467132,Real Sociedad
+7618191,Barrenetxea,467132,Real Sociedad
+9945768,O. Óskarsson,467132,Real Sociedad
+7615937,Aihen Muñoz,467132,Real Sociedad
+394443,Y. Herrera,467132,Real Sociedad
+43302714,A. Zakharyan,467132,Real Sociedad
+30563106,Unai Marrero,467132,Real Sociedad
+44465778,M. Sarr,467132,Real Sociedad
+62284453,Héctor Fort,467132,Real Sociedad
+29390060,Jon Pacheco,467132,Real Sociedad
+5290936,T. Kubo,467132,Real Sociedad
+72299297,Alex Garcia,467132,Real Sociedad
+29582938,Beñat Turrientes,467132,Real Sociedad
+5929301,J. de Lange,69715,Marseille
+183372,T. Weah,69715,Marseille
+29274301,C. Egan-Riley,69715,Marseille
+3492888,N. Aguerd,69715,Marseille
+367878,Emerson,69715,Marseille
+440489,P. Højbjerg,69715,Marseille
+20877346,T. Vermot,69715,Marseille
+16494121,F. Moumbagna,69715,Marseille
+82374355,T. Mmadi,69715,Marseille
+63222117,E. Mbondo,69715,Marseille
+72314592,K. Abdallah,69715,Marseille
+151977,U. Garcia,69715,Marseille
+144410,A. Gomes,69715,Marseille
+83855394,K. Bezahaf,69715,Marseille
+8258649,D. Cornelius,69715,Marseille
+3331566,H. Abdelli,69715,Marseille
+66486,A. Harit,69715,Marseille
+13691755,A. Gouiri,69715,Marseille
+1507597,Igor Paixão,69715,Marseille
+3117758,N. Maupay,69715,Marseille
+3577735,Mike Maignan,416923,AC Milan
+26235426,Mario Gila,416923,AC Milan
+26104855,Koni De Winter,416923,AC Milan
+7378140,Strahinja Pavlović,416923,AC Milan
+273210,Samuel Chukwueze,416923,AC Milan
+121548,Luka Modrić,416923,AC Milan
+43946,Adrien Rabiot,416923,AC Milan
+7523845,Pervis Estupiñán,416923,AC Milan
+2891,Christian Pulišić,416923,AC Milan
+228291,Alexis Saelemaekers,416923,AC Milan
+6695339,Gonçalo Ramos,416923,AC Milan
+53944170,Diego Moreira,416923,AC Milan
+369166,Ruben Loftus-Cheek,416923,AC Milan
+26099220,Yunus Musah,416923,AC Milan
+60271953,Davide Bartesaghi,416923,AC Milan
+70238014,Francesco Camarda,416923,AC Milan
+62194132,Lorenzo Torriani,416923,AC Milan
+4893588,Pietro Terracciano,416923,AC Milan
+75325614,Sankhoun Diawara,416923,AC Milan
+42580146,Filippo Terracciano,416923,AC Milan
+9092307,Matteo Gabbia,416923,AC Milan
+3092803,Fikayo Tomori,416923,AC Milan
+72825284,Christian Comotto,416923,AC Milan
+42617659,Ardon Jashari,416923,AC Milan
+45793062,Omari Hutchinson,416923,AC Milan
+57815254,Alphadjo Cissè,416923,AC Milan
+9090053,Wladimiro Falcone,738601,Lecce
+26034176,Danilo Veiga,738601,Lecce
+46945983,Kialonda Gaspar,738601,Lecce
+32718413,Jamil Siebert,738601,Lecce
+5078577,Antonino Gallo,738601,Lecce
+1072736,Santiago Pierotti,738601,Lecce
+7433524,Ivan Ilić,738601,Lecce
+9106314,Youssef Maleh,738601,Lecce
+281582,Lassana Coulibaly,738601,Lecce
+42523796,Nikola Štulić,738601,Lecce
+44735936,Joël Monteiro,738601,Lecce
+94956183,Paco Esteban,738601,Lecce
+53923079,Oumar Ngom,738601,Lecce
+31842573,Mohamed Kaba,738601,Lecce
+55562381,Amar Fatah,738601,Lecce
+1391677,Konan N'Dri,738601,Lecce
+6876786,Alexandru Borbei,738601,Lecce
+5106591,Marco Bleve,738601,Lecce
+69887195,Elijah Scott,738601,Lecce
+3743887,Gaby Jean,738601,Lecce
+56226506,Ali Dembélé,428837,Torino
+3177972,Corrie Ndaba,738601,Lecce
+62393611,Olaf Gorter,738601,Lecce
+45149545,Sadik Fofana,738601,Lecce
+32736123,N. Noll,158219,SC Paderborn 07
+32704406,J. ter Horst,158219,SC Paderborn 07
+32685569,T. Scheller,158219,SC Paderborn 07
+53827445,M. Hansen,158219,SC Paderborn 07
+26255712,L. Curda,158219,SC Paderborn 07
+55105302,L. Ulrich,158219,SC Paderborn 07
+58468270,S. Castañeda,158219,SC Paderborn 07
+1222466,R. Obermair,158219,SC Paderborn 07
+28675220,M. Pieringer,158219,SC Paderborn 07
+52845989,S. Marino,158219,SC Paderborn 07
+4241377,S. Tigges,158219,SC Paderborn 07
+53797660,Jonah Benedict Sticker,158219,SC Paderborn 07
+4034653,T. Baack,158219,SC Paderborn 07
+20880727,R. Philippe,149709,Hamburger SV
+4071683,F. Götze,158219,SC Paderborn 07
+4043508,M. Schubert,158219,SC Paderborn 07
+65534077,D. Zeitler,158219,SC Paderborn 07
+3997140,S. Michel,158219,SC Paderborn 07
+61262586,Ruben Müller,158219,SC Paderborn 07
+113176,O. Baumann,142901,1899 Hoffenheim
+198345,V. Coufal,142901,1899 Hoffenheim
+4234454,O. Kabak,142901,1899 Hoffenheim
+5323941,K. Machida,142901,1899 Hoffenheim
+65825487,M. Rots,142901,1899 Hoffenheim
+45064859,B. Conté,142901,1899 Hoffenheim
+62884500,L. Avdullahu,142901,1899 Hoffenheim
+5981787,W. Burger,142901,1899 Hoffenheim
+58372958,A. Daghim,142901,1899 Hoffenheim
+10629213,A. Hložek,142901,1899 Hoffenheim
+62463807,Max Moerstedt,142901,1899 Hoffenheim
+44831087,A. Hajdari,142901,1899 Hoffenheim
+20389516,P. Wimmer,142901,1899 Hoffenheim
+32689594,T. Lemperle,142901,1899 Hoffenheim
+117040,A. Kramarić,142901,1899 Hoffenheim
+32602815,F. Asllani,142901,1899 Hoffenheim
+26253780,L. Philipp,142901,1899 Hoffenheim
+26237358,R. Hranáč,142901,1899 Hoffenheim
+20548745,V. Gendrey,142901,1899 Hoffenheim
+73078537,Nathan De Cat,142901,1899 Hoffenheim
+29691774,Carlos Romero,454367,Villarreal
+26880,J. Foyth,454367,Villarreal
+441455,M. Ryan,459473,Levante
+180152,J. Toljan,459473,Levante
+118328,Dela,459473,Levante
+252441,A. Mandi,459473,Levante
+10353903,Manu Sánchez,459473,Levante
+26064927,E. Bardeli,459473,Levante
+17183201,Oriol Rey,459473,Levante
+29399237,Jon Ander Olasagasti,459473,Levante
+7603379,Brugui,459473,Levante
+30917306,Iván Romero,459473,Levante
+58402904,T. Fernández,459473,Levante
+82427485,IfeanyiIfeanyi Ndukwe,459473,Levante
+7533344,Víctor García,459473,Levante
+77650776,Yanis Musuayi,459473,Levante
+62972245,Reque,459473,Levante
+48583997,P. Ratkov,415221,Lazio
+46144525,Pablo Cuñat,459473,Levante
+107569728,M. Santos,459473,Levante
+79067737,A. Tape,459473,Levante
+65739674,Jorge Cabello,459473,Levante
+81241559,Nacho Pérez,459473,Levante
+104598151,M. Usedo Domingo,459473,Levante
+74588073,Paco Cortés,459473,Levante
+28841533,Leo Román,463728,Deportivo La Coruña
+7625114,Ximo Navarro,463728,Deportivo La Coruña
+5145,J. Giménez,451814,Atlético Madrid
+80080427,B. Ede,463728,Deportivo La Coruña
+20451179,G. Quagliata,463728,Deportivo La Coruña
+54051074,David Mella,463728,Deportivo La Coruña
+53086362,Marc Casadó,463728,Deportivo La Coruña
+26076519,Mario Soriano,463728,Deportivo La Coruña
+17260964,Riki Rodríguez,463728,Deportivo La Coruña
+57115548,Jonathan Asp Jensen,463728,Deportivo La Coruña
+92532167,B. Nsongo,463728,Deportivo La Coruña
+29461222,Diego Villares,463728,Deportivo La Coruña
+30339799,Luismi Cruz,463728,Deportivo La Coruña
+236019,P. Aubameyang,463728,Deportivo La Coruña
+47636834,Peke,463728,Deportivo La Coruña
+3019387,Adama Traoré,463728,Deportivo La Coruña
+7569730,Álvaro Fernández,463728,Deportivo La Coruña
+51441586,L. Noubi,463728,Deportivo La Coruña
+26101796,Adrià Alti,463728,Deportivo La Coruña
+26194049,Arnau Comas,463728,Deportivo La Coruña
+7597744,Miguel Loureiro,463728,Deportivo La Coruña
+48261997,Dani Barcia,463728,Deportivo La Coruña
+6056330,Z. Eddahchouri,463728,Deportivo La Coruña
+29208935,A. Ezzalzouli,462877,Real Betis
+5048148,Guglielmo Vicario,422880,Juventus
+26112422,Pierre Kalulu,422880,Juventus
+4910171,Gleison Bremer,422880,Juventus
+310723,Jhon Lucumí,422880,Juventus
+4236869,Nicolás González,422880,Juventus
+66969,Weston McKennie,422880,Juventus
+7651196,Douglas Luiz,422880,Juventus
+3577896,Zeki Çelik,422880,Juventus
+26015339,Francisco Conceição,422880,Juventus
+63685153,Kerim Alajbegović,422880,Juventus
+3397898,Randal Kolo Muani,422880,Juventus
+38177923,Pape Matar Sarr,422880,Juventus
+5940893,Teun Koopmeiners,422880,Juventus
+7791266,E. Zhegrova,422880,Juventus
+25446848,Nick Woltemade,29718,Newcastle United
+3101497,Lloyd Kelly,422880,Juventus
+137004,Carlo Pinsoglio,422880,Juventus
+96267850,Riccardo Radu,422880,Juventus
+43203055,Federico Gatti,422880,Juventus
+138775,Daniele Rugani,422880,Juventus
+80305666,Grady Makiobo Makiobo,422880,Juventus
+66074393,Filippo Pagnucco,422880,Juventus
+4897291,Marco Carnesecchi,425433,Atalanta
+14719096,Raoul Bellanova,425433,Atalanta
+45320849,Thomas Kristensen,425433,Atalanta
+46651675,Giorgio Scalvini,425433,Atalanta
+42642131,Lorenzo Bernasconi,425433,Atalanta
+28778743,Lazar Samardžić,425433,Atalanta
+264516,Franck Kessié,425433,Atalanta
+1625771,Éderson,425433,Atalanta
+23805453,Charles De Ketelaere,425433,Atalanta
+10757691,Nikola Krstović,425433,Atalanta
+44773449,Jonathan Rowe,426284,Bologna
+4917577,Giacomo Raspadori,425433,Atalanta
+52479,Gianluca Gaetano,425433,Atalanta
+4917738,Gianluca Scamacca,425433,Atalanta
+218792,Eljif Elmas,425433,Atalanta
+89960192,Thomas Pompei,425433,Atalanta
+5002263,Marco Sportiello,425433,Atalanta
+232316,Sead Kolašinac,425433,Atalanta
+64485484,Relja Obrić,425433,Atalanta
+73804325,Jacopo Mirra,425433,Atalanta
+32759468,Nicola Zalewski,425433,Atalanta
+444997,Mario Pašalić,425433,Atalanta
+368200,Davide Zappacosta,425433,Atalanta
+317646,L. Karius,148858,FC Schalke 04
+14647451,T. Becker,148858,FC Schalke 04
+280455,N. Katić,148858,FC Schalke 04
+13067558,H. Kuruçay,148858,FC Schalke 04
+14585788,J. Dina Ebimbe,148858,FC Schalke 04
+45094644,S. El-Faouzi,148858,FC Schalke 04
+5336016,S. Tanaka,148858,FC Schalke 04
+4898096,R. Gosens,148858,FC Schalke 04
+4100180,K. Karaman,148858,FC Schalke 04
+22077923,A. Aouchiche,148858,FC Schalke 04
+127344,E. Džeko,148858,FC Schalke 04
+329882,M. Wöber,148858,FC Schalke 04
+18669,M. Sylla,148858,FC Schalke 04
+58187325,Vitalie  Becker,148858,FC Schalke 04
+4007122,Hwang Hee-Chan,148858,FC Schalke 04
+14190694,R. Schallenberg,148858,FC Schalke 04
+4007927,K. Müller,148858,FC Schalke 04
+58179436,M. Ayhan,148858,FC Schalke 04
+94310251,L. Vozar,148858,FC Schalke 04
+20153007,J. Adamu,148858,FC Schalke 04
+28689388,N. Kristof,1413444,SV Elversberg
+4035297,J. Gyamerah,1413444,SV Elversberg
+28614845,L. Pinckert,1413444,SV Elversberg
+20439265,M. Rohr,1413444,SV Elversberg
+26094873,L. Günther,1413444,SV Elversberg
+45091424,F. Keidel,1413444,SV Elversberg
+6525967,Ł. Poręba,1413444,SV Elversberg
+28569926,L. Petkov,1413444,SV Elversberg
+66445498,Noah Darvich,1413444,SV Elversberg
+52907491,William Cole Campbell,1413444,SV Elversberg
+56357721,D. Mokwa,1413444,SV Elversberg
+55089524,M. Krattenmacher,1413444,SV Elversberg
+28579103,L. Sirch,1413444,SV Elversberg
+6332445,N. Mickelson,1413444,SV Elversberg
+31636654,N. Futkeu,1413444,SV Elversberg
+63153048,Francis-Ikechukwu Onyeka,1413444,SV Elversberg
+4043347,T. Boss,1413444,SV Elversberg
+3434767,F. Le Joncour,1413444,SV Elversberg
+14602049,A. Condé,1413444,SV Elversberg
+4289516,L. Schnellbacher,1413444,SV Elversberg
+231672,B. Leno,31420,Fulham
+470274,T. Castagne,31420,Fulham
+20389194,D. Affengruber,679031,Elche
+24627841,C. Bassey,31420,Fulham
+3147543,A. Robinson,31420,Fulham
+311528,S. Berge,31420,Fulham
+45781470,S. Charles,31420,Fulham
+44779567,Oscar Bobb,31420,Fulham
+62679869,Joshua King,31420,Fulham
+234409,A. Iwobi,31420,Fulham
+54210625,Gonzalo García,31420,Fulham
+62195420,César Palacios,31420,Fulham
+38289013,Kevin,31420,Fulham
+53950288,H. Larsson,31420,Fulham
+439523,J. Andersen,31420,Fulham
+31412220,Rodrigo Muniz,31420,Fulham
+3472280,B. Lecomte,31420,Fulham
+3064306,R. Sessegnon,31420,Fulham
+50420041,Manuel Ángel,31420,Fulham
+187075,E. Smith Rowe,31420,Fulham
+143605,L. Shaw,28867,Manchester United
+57322755,C. Baleba,28867,Manchester United
+3311280,Y. Diouf,72268,Nice
+31611377,Mohamed Abdelmonem,72268,Nice
+499093,Y. Ndayishimiye,72268,Nice
+107663591,X. Mandza Tsiendi,72268,Nice
+4026442,J. Clauss,72268,Nice
+81169431,D. Coulibaly,72268,Nice
+3374,A. Witsel,72268,Nice
+25195044,N. Nkounkou,72268,Nice
+3305323,G. Hein,72268,Nice
+32222533,M. Amoura,72268,Nice
+26195981,E. Wahi,72268,Nice
+31586261,A. Seidu,72268,Nice
+71301580,E. Pereira,72268,Nice
+17381,S. Diop,72268,Nice
+3565982,N. Ngoumou,72268,Nice
+7983017,A. Abdi,72268,Nice
+28202685,T. Boulhendi,72268,Nice
+67284308,H. Koutoune,72268,Nice
+708393,H. Boudaoui,72268,Nice
+16929948,I. Jansson,72268,Nice
+29615782,Arnau Ortiz,451814,Atlético Madrid
+47006358,A. Güler,461175,Real Madrid
+355481,E. Camavinga,461175,Real Madrid
+102550,Bernardo Silva,461175,Real Madrid
+55004194,Raúl Asencio,461175,Real Madrid
+4223506,M. Flekken,143752,Bayer Leverkusen
+25550532,J. Quansah,143752,Bayer Leverkusen
+6625304,E. Tapsoba,143752,Bayer Leverkusen
+1003345,F. Medina,143752,Bayer Leverkusen
+26087306,Miguel Gutiérrez,143752,Bayer Leverkusen
+38171161,E. Fernández,143752,Bayer Leverkusen
+7650230,Aleix García,143752,Bayer Leverkusen
+44751,M. Diaby,143752,Bayer Leverkusen
+61274661,I. Maza,143752,Bayer Leverkusen
+55607622,Afonso Moreira,143752,Bayer Leverkusen
+127988,P. Schick,143752,Bayer Leverkusen
+4009537,R. Andrich,143752,Bayer Leverkusen
+81352649,Christian Kofane,143752,Bayer Leverkusen
+122031,Lucas Vázquez,143752,Bayer Leverkusen
+5996760,J. Blaswich,143752,Bayer Leverkusen
+28161952,L. Badé,143752,Bayer Leverkusen
+26088111,M. Tillman,143752,Bayer Leverkusen
+6290585,V. Boniface,143752,Bayer Leverkusen
+106897,M. Terrier,143752,Bayer Leverkusen
+4127389,J. Hofmann,143752,Bayer Leverkusen
+91889616,S. Konate,148007,RB Leipzig
+71311723,A. Koné,148007,RB Leipzig
+29102836,Edoardo Corvi,445857,Parma
+3395644,Diego Carlos,445857,Parma
+68946311,Mariano Troilo,445857,Parma
+92888782,Dominik Drobnic,445857,Parma
+4897774,Enrico Delprato,445857,Parma
+7807205,Vincent Sierro,445857,Parma
+49722750,Mandela Keita,445857,Parma
+14708792,Emanuele Valeri,445857,Parma
+31354904,El Bilal Touré,445857,Parma
+77871024,Simone Lontani,445857,Parma
+31379859,David Romero,445857,Parma
+48609918,Nesta Elphege,445857,Parma
+7759227,Pontus Almqvist,445857,Parma
+51943584,Giovanni Fabbian,427986,Fiorentina
+80400334,Sascha Britschgi,445857,Parma
+58403226,Christian Ordoñez,445857,Parma
+53953991,Giovanni Daffara,445857,Parma
+4893266,Simone Ghidotti,445857,Parma
+32760917,Abdoulaye Ndiaye,445857,Parma
+95926691,Abdou-Salam Konate,445857,Parma
+58291975,Benjamin Cremaschi,445857,Parma
+46122307,Franco Carboni,445857,Parma
+69650364,Ousmane Diallo,445857,Parma
+47099577,Matija Frigan,445857,Parma
+5979211,Justin Bijlow,422029,Genoa
+45374140,Alessandro Marcandalli,422029,Genoa
+3053841,Leo Østigård,422029,Genoa
+62327762,Sebastian Otoa,422029,Genoa
+5943630,Kingsley Ehizibue,422029,Genoa
+2556995,Morten Frendrup,422029,Genoa
+154231,Djibril Sow,422029,Genoa
+14412874,Mikael Ellertsson,422029,Genoa
+9079910,Junior Messias,422029,Genoa
+46491963,Tommaso Baldanzi,422029,Genoa
+10748675,Milutin Osmajić,422029,Genoa
+58413047,David Puczka,422029,Genoa
+127505,Stephan El Shaarawy,422029,Genoa
+42420595,Lorenzo Colombo,422029,Genoa
+45306842,Vitinha,422029,Genoa
+5000331,Hamed Junior Traorè,422029,Genoa
+1163862,Franz Stolz,422029,Genoa
+5062799,Daniele Sommariva,422029,Genoa
+43568847,Mario Mitaj,422029,Genoa
+24699325,Cody Drameh,55248,Hull City
+65243633,Alexsandro Amorim,422029,Genoa
+98432978,Samuel Wiafe,422029,Genoa
+76583346,Franz-Ethan Meichtry,422029,Genoa
+5013211,Stefano Sabelli,422029,Genoa
+52771768,Lorenzo Palmisani,436496,Frosinone
+30818291,Anthony Oyono,436496,Frosinone
+56931847,Gabriele Calvani,436496,Frosinone
+29074500,Ilario Monterisi,436496,Frosinone
+61100298,Gabriele Bracaglia,436496,Frosinone
+5153925,Giacomo Calò,436496,Frosinone
+45256610,Patrizio Masini,436496,Frosinone
+53921469,Farès Ghedjemis,436496,Frosinone
+1217636,Romano Schmid,436496,Frosinone
+50111565,Giorgi Kvernadze,436496,Frosinone
+50595048,Antonio Raimondo,436496,Frosinone
+26173924,Giorgio Cittadini,436496,Frosinone
+67966787,Matteo Cichella,436496,Frosinone
+5026413,Alessio Zerbin,436496,Frosinone
+50265642,Wisdom Amey,436496,Frosinone
+32808251,Anouar El Azzouzi,436496,Frosinone
+51980453,Sebastiano Desplanches,436496,Frosinone
+4972156,Matteo Pisseri,436496,Frosinone
+4084080,Kevin Akpoguma,436496,Frosinone
+28883393,Enzo Tchato Mbiayi,436496,Frosinone
+61471886,Omar Fayed,436496,Frosinone
+53951576,Luis Hasa,436496,Frosinone
+20429766,Daniel Bîrligea,436496,Frosinone
+9855125,Tomáš Bobček,436496,Frosinone
+56113967,Seydou Fini,436496,Frosinone
+5106913,Mauro Vigorito,762429,Como
+46386186,Willy Kambwala,454367,Villarreal
+5002907,Edoardo Goldaniga,762429,Como
+57079967,Jayden Addai,762429,Como
+106253,Maxence Caqueret,762429,Como
+26160883,J. Trafford,54397,Leeds
+3181514,J. Justin,54397,Leeds
+451437,N. Elvedi,54397,Leeds
+43687504,T. Muharemović,54397,Leeds
+3091515,J. Bogle,54397,Leeds
+28604219,A. Stach,54397,Leeds
+367073,E. Ampadu,54397,Leeds
+5307680,A. Tanaka,54397,Leeds
+7723163,G. Gudmundsson,54397,Leeds
+3021480,D. Calvert-Lewin,54397,Leeds
+7790783,N. Okafor,54397,Leeds
+3112123,D. James,54397,Leeds
+8169133,B. Aaronson,54397,Leeds
+3133375,L. Nmecha,54397,Leeds
+59517668,J. Bahoya,144603,Eintracht Frankfurt
+1173522,M. Zetterer,54397,Leeds
+26157019,M. Bard,72268,Nice
+134267,J. Bijol,54397,Leeds
+3043215,S. Longstaff,54397,Leeds
+20792016,I. Gruev,54397,Leeds
+3567431,W. Benítez,45036,Crystal Palace
+20438943,C. Richards,45036,Crystal Palace
+418271,T. Tomiyasu,45036,Crystal Palace
+66454353,J. Canvot,45036,Crystal Palace
+54536489,A. Khalaili,45036,Crystal Palace
+6238421,Q. Timber,69715,Marseille
+46384576,A. Wharton,45036,Crystal Palace
+29334515,T. Mitchell,45036,Crystal Palace
+418915,D. Kamada,45036,Crystal Palace
+29660540,Yeremy Pino,45036,Crystal Palace
+327306,J. Strand Larsen,45036,Crystal Palace
+401044,J. Lerma,45036,Crystal Palace
+357252,I. Sarr,45036,Crystal Palace
+236502,E. Nketiah,45036,Crystal Palace
+3169278,R. Matthews,45036,Crystal Palace
+472367,B. Chilwell,45036,Crystal Palace
+26196786,Óscar Mingueza,45036,Crystal Palace
+537733,C. Doucouré,45036,Crystal Palace
+3047723,D. McNeil,45036,Crystal Palace
+49445991,D. Osorio,45036,Crystal Palace
+19047581,Đ. Petrović,30569,Bournemouth
+3038063,A. Smith,30569,Bournemouth
+3235127,J. Hill,30569,Bournemouth
+53425106,António Silva,30569,Bournemouth
+26125141,A. Truffert,30569,Bournemouth
+185304,T. Adams,30569,Bournemouth
+49081487,A. Scott,30569,Bournemouth
+65656920,Rayan,30569,Bournemouth
+181279,R. Christie,30569,Bournemouth
+3098599,M. Tavernier,30569,Bournemouth
+24609970,Evanilson,30569,Bournemouth
+3038546,L. Cook,30569,Bournemouth
+3038224,D. Brooks,30569,Bournemouth
+47729892,D. Jebbison,30569,Bournemouth
+55315890,B. Doak,30569,Bournemouth
+58199239,A. Tóth,30569,Bournemouth
+4938024,M. Di Gregorio,30569,Bournemouth
+58496767,J. Soler,30569,Bournemouth
+3564050,B. Diakité,30569,Bournemouth
+29426446,Juanlu Sánchez,30569,Bournemouth
+39921,C. Gakpo,34824,Liverpool
+45878,J. Gomez,34824,Liverpool
+52759371,G. Versini,90990,Stade Brestois 29
+3584658,L. Ajorque,90990,Stade Brestois 29
+20654361,J. Chotard,90990,Stade Brestois 29
+52497102,K. Doumbia,90990,Stade Brestois 29
+3581921,K. Lala,90990,Stade Brestois 29
+80305505,R. Le Guen,90990,Stade Brestois 29
+10345209,G. Lloris,90990,Stade Brestois 29
+44157141,B. Locko,90990,Stade Brestois 29
+3309992,H. Magnetti,90990,Stade Brestois 29
+60534544,P. Mboup,90990,Stade Brestois 29
+6292356,E. Selvik,90990,Stade Brestois 29
+6653157,Mama Baldé,90990,Stade Brestois 29
+59498670,J. Bourgault,90990,Stade Brestois 29
+89250826,Ibrahim Yayiya Kante,90990,Stade Brestois 29
+101394895,L. C. Laine M.,90990,Stade Brestois 29
+54752712,J. Nonge Boende,90990,Stade Brestois 29
+31940783,M. Patouillet,90990,Stade Brestois 29
+107058,L. Tousart,90990,Stade Brestois 29
+68037949,L. Zogbe,90990,Stade Brestois 29
+3088456,A. Tuanzebe,92692,Auxerre
+30781583,C. Akpa,92692,Auxerre
+22105776,C. Archer,92692,Auxerre
+52103779,K. Danois,92692,Auxerre
+52497907,R. Labeau Lascary,92692,Auxerre
+66481240,C. Makosso,92692,Auxerre
+3159779,D. Namaso,92692,Auxerre
+34748301,F. Oppegård,92692,Auxerre
+59884104,A. Piedfort,92692,Auxerre
+31226587,L. Sy,92692,Auxerre
+21616658,M. Diop,92692,Auxerre
+24539452,N. Ahamada,92692,Auxerre
+26157180,S. Diomandé,92692,Auxerre
+101330012,L. Dioubate,92692,Auxerre
+44795506,P. Ekwah,92692,Auxerre
+13537356,R. Faivre,92692,Auxerre
+79982861,E. Legros,92692,Auxerre
+70117908,R. Mandengue,92692,Auxerre
+1393931,P. Nardi,92692,Auxerre
+229096,J. Doku,43334,Manchester City
+49446957,N. O&apos;Reilly,43334,Manchester City
+31320450,R. Roefs,635630,Sunderland
+184660,N. Mukiele,635630,Sunderland
+4071361,K. Danso,40781,Tottenham
+9000698,D. Ballard,635630,Sunderland
+72884371,D. Methalie,635630,Sunderland
+235858,G. Xhaka,635630,Sunderland
+58818445,N. Sadiki,635630,Sunderland
+42658,T. Meunier,635630,Sunderland
+3322872,E. Le Fée,635630,Sunderland
+50158577,N. Angulo,635630,Sunderland
+6238904,B. Brobbey,635630,Sunderland
+13538161,W. Isidor,635630,Sunderland
+19178635,T. Hume,635630,Sunderland
+44831248,M. Ellborg,635630,Sunderland
+3205825,L. O&apos;Nien,635630,Sunderland
+993202,O. Alderete,635630,Sunderland
+106660722,Jules Ahoka,635630,Sunderland
+54611515,C. Rigg,635630,Sunderland
+54202253,C. Talbi,635630,Sunderland
+7606921,David Soria,465430,Getafe
+62470247,Andrés García,465430,Getafe
+7607404,D. Dakonam,465430,Getafe
+29129401,Z. Romero,465430,Getafe
+10347302,J. Mojica,465430,Getafe
+26016144,Iván Azón,762429,Como
+30266061,Ramón Terrats,465430,Getafe
+239883,N. Gudelj,465430,Getafe
+26122243,Francho Serrano,465430,Getafe
+31477586,M. Satriano,465430,Getafe
+7647493,E. Ünal,465430,Getafe
+43265362,S. Sazonov,465430,Getafe
+75908112,Davinchi,465430,Getafe
+10705205,J. Letáček,465430,Getafe
+77613585,Diego Ferrer,465430,Getafe
+78000468,J. Valou,465430,Getafe
+65575776,M. Hamdoune,465430,Getafe
+50959230,S. Boselli,465430,Getafe
+75000072,Alberto Risco,465430,Getafe
+7643146,Borja Mayoral,465430,Getafe
+7541877,Alfonso Herrero,456069,Malaga
+88776037,Rafita,456069,Malaga
+50894669,Ángel Recio,456069,Malaga
+328433,Juan Berrocal,456069,Malaga
+29689681,José Salinas,456069,Malaga
+53970735,Rafa Rodríguez,456069,Malaga
+30630887,David Larrubia,456069,Malaga
+26087628,Carlos Dotor,456069,Malaga
+54341357,Dani Lorenzo,456069,Malaga
+9814,Joaquín Muñoz,456069,Malaga
+16889537,Eneko Jauregi,456069,Malaga
+62283004,Adrián Niño Heredia,456069,Malaga
+16896943,Pablo Martínez,456069,Malaga
+60600715,Chupe,456069,Malaga
+20778170,Ramón Enríquez,456069,Malaga
+29817676,Juan Cruz,456069,Malaga
+55504260,Carlos López,456069,Malaga
+46141788,Andrés Céspedes,456069,Malaga
+9124024,Álex Pastor,456069,Malaga
+29800610,Puga,456069,Malaga
+2329824,Einar Galilea,456069,Malaga
+63494046,Izan Merino,456069,Malaga
+107982049,J. Fernandez,456069,Malaga
+142156,David De Gea,427986,Fiorentina
+53200511,Álex Jiménez,427986,Fiorentina
+26162332,Radu Drăguşin,427986,Fiorentina
+5094516,Luca Ranieri,427986,Fiorentina
+68308751,Viery,427986,Fiorentina
+50084517,Cher Ndour,427986,Fiorentina
+141190,Nicolò Fagioli,427986,Fiorentina
+55970838,Arthur Atta,427986,Fiorentina
+72329243,Franco Mastantuono,427986,Fiorentina
+47039846,Mateo Pellegrino,427986,Fiorentina
+61664120,Alieu Njie,428837,Torino
+79015573,Víctor Valdepeñas,427986,Fiorentina
+3018582,Pedro Gonçalves,427986,Fiorentina
+20244777,Beto,39079,Everton
+26102762,Wilfried Gnonto,54397,Leeds
+174678,Marin Pongračić,427986,Fiorentina
+2550877,Oliver Christensen,427986,Fiorentina
+5047826,Luca Lezzerini,427986,Fiorentina
+6719328,João Mário,427986,Fiorentina
+6624338,Dodô,427986,Fiorentina
+98295806,Brando Mazzeo,427986,Fiorentina
+76409305,Christ Inao Oulaï,427986,Fiorentina
+264033,Marco Brescianini,427986,Fiorentina
+87738,Noa Lang,419476,Napoli
+548520,Frank Anguissa,419476,Napoli
+91466508,Claudio Pugliese,419476,Napoli
+89831,O. Vlachodimos,456920,Sevilla FC
+19278616,Juan Iglesias,456920,Sevilla FC
+28163401,A. Sangante,456920,Sevilla FC
+54563376,Andrés Castrín,456920,Sevilla FC
+1838935,G. Suazo,456920,Sevilla FC
+19287149,G. Kochorashvili,456920,Sevilla FC
+3381798,L. Agoumé,456920,Sevilla FC
+70560497,Miguel Ángel,456920,Sevilla FC
+3583048,Y. Fofana,456920,Sevilla FC
+21855743,Félix Correia,68013,Lille
+52733450,R. Ure,456920,Sevilla FC
+6298635,C. Ejuke,456920,Sevilla FC
+31543757,José Ángel Carmona,456920,Sevilla FC
+29849232,Isaac,456920,Sevilla FC
+16876335,Jon Guridi,456920,Sevilla FC
+19193447,Alfon González,456920,Sevilla FC
+63832629,Fran González,456920,Sevilla FC
+62286224,Julio Díaz del Romo,456920,Sevilla FC
+69867,Marcão,456920,Sevilla FC
+88044131,Iker Muñoz,456920,Sevilla FC
+26102440,Peque Fernández,456920,Sevilla FC
+88048156,N. Guillen,456920,Sevilla FC
+53388881,Manu Bueno,456920,Sevilla FC
+99813,Eric García,450963,Barcelona
+102906041,I. Rodriguez,450963,Barcelona
+52380860,G. Restes,82480,Toulouse
+53927426,R. Messali,82480,Toulouse
+78874859,S. Koumbassa,82480,Toulouse
+8168489,M. McKenzie,82480,Toulouse
+76034980,C. Tapé,82480,Toulouse
+62190751,T. Jørgensen,82480,Toulouse
+67121215,N. Sigur,82480,Toulouse
+8204070,C. Cásseres,82480,Toulouse
+78874537,Y. Azizi,82480,Toulouse
+32752062,J. Russell-Rowe,82480,Toulouse
+26195337,C. Tengstedt,82480,Toulouse
+81799263,S. Oppong,82480,Toulouse
+82828858,A. Vossah,82480,Toulouse
+58401455,S. Hidalgo,82480,Toulouse
+88743998,M. Niflore,82480,Toulouse
+63553294,D. Odogu,82480,Toulouse
+63717836,M. Amougou,81629,Strasbourg
+6297669,A. Dønnum,82480,Toulouse
+4110967,N. Schmidt,82480,Toulouse
+73581179,Julián Vignolo,82480,Toulouse
+3333820,G. Gallon,95245,LE Havre AC
+6639472,V. Sasso,95245,LE Havre AC
+5339719,A. Seko,95245,LE Havre AC
+1413251,A. Touba,95245,LE Havre AC
+108491131,D. Ouziad,95245,LE Havre AC
+58619127,S. Ebonog,95245,LE Havre AC
+50591345,A. Richardson,95245,LE Havre AC
+54938828,E. Jelert,95245,LE Havre AC
+71416373,R. Fofana,99500,Lens
+313299,M. Samatta,95245,LE Havre AC
+206073,J. Maja,95245,LE Havre AC
+70413343,E. Koffi Vinette,95245,LE Havre AC
+81799424,S. Nakamura,95245,LE Havre AC
+45490543,J. Mwanga,95245,LE Havre AC
+20663216,R. Ndiaye,95245,LE Havre AC
+63718319,I. Bouneb,95245,LE Havre AC
+337610,A. Bodart,68013,Lille
+72602460,Mouhamed N'Diaye,95245,LE Havre AC
+74189759,D. Mosengo,95245,LE Havre AC
+43976016,K. Mizuta,95245,LE Havre AC
+3480652,J. Allevinah,66311,Angers
+104321,Anthony Lopes,66311,Angers
+28170807,M. Zinga,66311,Angers
+44337139,U. Simbakoli,66311,Angers
+28120414,L. Rao-Lisoa,66311,Angers
+73549945,Marius Louër,66311,Angers
+93279529,Djibirin Harouna,66311,Angers
+105473347,Bane Diatta,66311,Angers
+62076763,E. Biumla,66311,Angers
+64732780,A. Bermont,66311,Angers
+3309348,H. Belkebla,66311,Angers
+30797683,A. Sbaï,66311,Angers
+73664255,P. Peter,66311,Angers
+3442495,J. Lefort,66311,Angers
+65938992,J. Kalulu,66311,Angers
+31103422,A. El Ouazzani,66311,Angers
+43718094,O. Camara,66311,Angers
+28128142,Y. Belkhdim,66311,Angers
+3357004,C. Arcus,66311,Angers
+6062126,B. van den Boomen,66311,Angers
+71312367,A. Ouzenadji,94394,Estac Troyes
+25521230,K. Diawara,94394,Estac Troyes
+3360707,H. Konaté,94394,Estac Troyes
+107969974,Y. Kone,94394,Estac Troyes
+28137480,L. Maronnier,94394,Estac Troyes
+54450515,H. Picard,94394,Estac Troyes
+3453765,R. Ripart,94394,Estac Troyes
+108480827,I. Soukouna,94394,Estac Troyes
+357091,T. Nkada,94394,Estac Troyes
+3335269,A. Monfray,94394,Estac Troyes
+28143920,A. Mille,94394,Estac Troyes
+13809446,J. Le Douaron,94394,Estac Troyes
+51981419,D. Karim,94394,Estac Troyes
+3443300,I. Gomis,94394,Estac Troyes
+98725515,Noah Donkor,94394,Estac Troyes
+53961236,M. Diop,94394,Estac Troyes
+58884616,M. Diaz,94394,Estac Troyes
+56975317,P. Beach,94394,Estac Troyes
+3894583,N. Kocik,1105382,Le Mans
+16576,D. Sidibé,1105382,Le Mans
+3317076,S. Yohou,1105382,Le Mans
+28111559,H. Voyer,1105382,Le Mans
+44155048,L. Bretelle,1105382,Le Mans
+58479540,R. Bamba,1105382,Le Mans
+97911016,A. Bourabaa,1105382,Le Mans
+26195820,J. Vercruysse,1105382,Le Mans
+22351462,Y. Larouci,1105382,Le Mans
+3306289,H. Diallo,1105382,Le Mans
+13774992,L. Mafouta,1105382,Le Mans
+28885808,L. Calodat,1105382,Le Mans
+763777,D. Guèye,1105382,Le Mans
+202692,A. Lauray,1105382,Le Mans
+3388882,A. Rabillard,1105382,Le Mans
+3099404,B. Brahimi,1105382,Le Mans
+28896434,E. Hatfout,1105382,Le Mans
+77781830,N. Boissé,1105382,Le Mans
+46724769,Raúl Torrente,1105382,Le Mans
+60468212,D. Traoré,1105382,Le Mans
+184016,Y. Mvogo,83331,Lorient
+31154781,D. Sylla,83331,Lorient
+8054984,M. Talbi,83331,Lorient
+34504064,N. Adjei,83331,Lorient
+61842186,P. Katseris,83331,Lorient
+3761597,N. Cadiou,83331,Lorient
+64764819,A. Avom,83331,Lorient
+64784300,K. Kouassi,83331,Lorient
+77782152,G. Bernardeau,83331,Lorient
+3569685,J. Makengo,83331,Lorient
+44158912,I. Baldé,83331,Lorient
+28127337,T. Le Bris,83331,Lorient
+97892662,M. Kone,83331,Lorient
+56957285,S. Faye,83331,Lorient
+54206922,N. Obaretin,83331,Lorient
+46637024,I. Jensen,83331,Lorient
+3580955,B. Kamara,83331,Lorient
+44847670,S. Kuzmić,83331,Lorient
+31538927,S. Touré,83331,Lorient
+13809607,A. Georgen,83331,Lorient
+70235438,Federico Serra,415221,Lazio
+298326,Danilo Cataldi,415221,Lazio
+5975991,Danilho Doekhi,415221,Lazio
+4981011,Mattia Zaccagni,415221,Lazio
+6238743,Kenneth Taylor,415221,Lazio
+6694051,Nuno Tavares,415221,Lazio
+2367015,Josip Šutalo,415221,Lazio
+56488131,Oliver Provstgaard,415221,Lazio
+21530523,Tijjani Noslin,415221,Lazio
+5019007,Davide Frattesi,415221,Lazio
+55166965,Romano Floriani Mussolini,415221,Lazio
+46122468,Matteo Cancellieri,415221,Lazio
+4289838,Christos Mandas,415221,Lazio
+65788779,Davide Renzetti,415221,Lazio
+5006288,Andrea Pinamonti,415221,Lazio
+274176,Alfonso Pedraza,415221,Lazio
+69457647,Edoardo Motta,415221,Lazio
+60690,Diogo Leite,415221,Lazio
+4969580,Manuel Lazzari,415221,Lazio
+21818713,Gustav Isaksen,415221,Lazio
+450793,Albert Guðmundsson,427986,Fiorentina
+77869736,Valerio Farcomeni,415221,Lazio
+53631830,Reda Belahyane,415221,Lazio
+66898391,Lamine Fanne,440751,Venezia
+60426835,Richie Sagrado,440751,Venezia
+51286060,A. Rrahmani,440751,Venezia
+26083764,Simone Panada,440751,Venezia
+4928525,Lorenzo Montipò,440751,Venezia
+75081860,Rufai Mohammed,440751,Venezia
+163408,Simon Sohm,440751,Venezia
+9248960,Akor Adams,440751,Venezia
+238756,Thierry Correia,440751,Venezia
+44338588,Antoine Hainaut,440751,Venezia
+4627938,Þórir Jóhann Helgason,440751,Venezia
+124768,Juan Jesus,440751,Venezia
+67911081,Matias Moreno,440751,Venezia
+17251787,Kike Pérez,440751,Venezia
+60185979,Joel Schingtienne,440751,Venezia
+68466209,Kornel Lisman,440751,Venezia
+4091808,John Yeboah,440751,Venezia
+26153799,Filip Stanković,440751,Venezia
+71801807,Toni Fernández,440751,Venezia
+98233499,Ale Gomes,440751,Venezia
+52515617,Redouane Halhal,440751,Venezia
+4256672,Lion Lauberbach,440751,Venezia
+3544569,B. Dia,415221,Lazio
+2461200,Mousa Tamari,80778,Rennes FC
+6505037,S. Szymański,80778,Rennes FC
+20878795,A. Rouault,80778,Rennes FC
+8234338,B. Reynolds,80778,Rennes FC
+70563395,M. Nagida,80778,Rennes FC
+26243798,E. Lepaul,80778,Rennes FC
+3541349,N. Lemaître,80778,Rennes FC
+73539319,H. Do Marcolino,80778,Rennes FC
+3461171,L. Blas,80778,Rennes FC
+3584175,A. Thomasson,80778,Rennes FC
+3397576,V. Rongier,80778,Rennes FC
+3557771,A. Nordin,80778,Rennes FC
+43866214,Q. Merlin,80778,Rennes FC
+56317793,Eliezer Mayenda,80778,Rennes FC
+484281,P. Frankowski,80778,Rennes FC
+44821266,C. Cresswell,80778,Rennes FC
+3887821,M. Camara,80778,Rennes FC
+67270784,A. Ait Boudlal,80778,Rennes FC
+3482262,B. Samba,80778,Rennes FC
+10688461,P. Šulc,68864,Lyon
+83666058,K. Merah,68864,Lyon
+5364835,Keito Nakamura,68864,Lyon
+4953319,I. Radu,458622,Celta de Vigo
+29408575,Álvaro Núñez,458622,Celta de Vigo
+53085396,Yoel Lago,458622,Celta de Vigo
+8297289,S. Cáceres,458622,Celta de Vigo
+28972909,Javi Rueda,458622,Celta de Vigo
+26101957,I. Moriba,458622,Celta de Vigo
+53693976,Miguel Román,458622,Celta de Vigo
+53085074,Hugo Álvarez,458622,Celta de Vigo
+26062029,Hugo González,458622,Celta de Vigo
+19760328,Ferran Jutglà,458622,Celta de Vigo
+43335397,W. Swedberg,458622,Celta de Vigo
+25436222,Sergio Carreira,458622,Celta de Vigo
+51603391,Pablo Durán,458622,Celta de Vigo
+7623182,Borja Iglesias,458622,Celta de Vigo
+7658280,Javi Galán,458622,Celta de Vigo
+90309884,H. Burcio,458622,Celta de Vigo
+8071406,A. Bayındır,458622,Celta de Vigo
+366912,Marcos Alonso,458622,Celta de Vigo
+61845889,Javi Rodríguez,458622,Celta de Vigo
+70482090,A. Faye,458622,Celta de Vigo
+7726222,C. Starfelt,458622,Celta de Vigo
+7520625,Aleix Febas,458622,Celta de Vigo
+43879577,C. Driouech,458622,Celta de Vigo
+29599682,Julen Agirrezabala,3970699,Racing Santander
+29251439,Álvaro Mantilla,3970699,Racing Santander
+7524328,Pablo Ramón,3970699,Racing Santander
+55274030,J. Belocian,143752,Bayer Leverkusen
+77677663,Jorge Salinas,3970699,Racing Santander
+6626431,André Almeida,453516,Valencia
+71349397,Pablo García,462877,Real Betis
+273854,Iván Martín,3970699,Racing Santander
+7614327,Iñigo Vicente,3970699,Racing Santander
+71037057,Iker Luque,3970699,Racing Santander
+73593415,M. Zabiri,3970699,Racing Santander
+252924,Sergio Canales,3970699,Racing Santander
+4172308,Aarón Martín,422029,Genoa
+16881487,Asier Villalibre,3970699,Racing Santander
+3955441,G. Guliashvili,3970699,Racing Santander
+29573117,Íñigo Sainz-Maza,3970699,Racing Santander
+78267889,Laro Gómez,3970699,Racing Santander
+66825458,Pedro Felipe,3970699,Racing Santander
+46141949,Facundo González,3970699,Racing Santander
+26679947,Manu Hernando,3970699,Racing Santander
+49811622,M. Prati,417774,Cagliari
+53776408,M. Gueye,3970699,Racing Santander
+29655227,Juan Carlos Arana,3970699,Racing Santander
+3993920,N. Nartey,147156,VfB Stuttgart
+4225277,N. Schlotterbeck,141199,Borussia Dortmund
+353388,R. Bensebaïni,141199,Borussia Dortmund
+470113,M. Sels,56099,Nottingham Forest
+58396625,Jair,56099,Nottingham Forest
+57115387,O. Diomande,56099,Nottingham Forest
+58555049,Murillo,56099,Nottingham Forest
+2211650,D. Muñoz,45036,Crystal Palace
+25550371,J. McAtee,56099,Nottingham Forest
+176449,X. Schlager,56099,Nottingham Forest
+22343734,N. Williams,56099,Nottingham Forest
+3018260,M. Gibbs-White,56099,Nottingham Forest
+7832482,D. Ndoye,56099,Nottingham Forest
+26073782,L. Delap,56099,Nottingham Forest
+1508080,Igor Jesus,56099,Nottingham Forest
+3048045,C. Wood,56099,Nottingham Forest
+26254263,L. Netz,56099,Nottingham Forest
+3566143,I. Sangaré,56099,Nottingham Forest
+11329080,John,56099,Nottingham Forest
+446285,O. Aina,56099,Nottingham Forest
+370132,C. Hudson-Odoi,56099,Nottingham Forest
+975170,N. Domínguez,56099,Nottingham Forest
+3108259,R. Yates,56099,Nottingham Forest
+44772322,C. Rushworth,1146230,Coventry
+61559792,S. Mfuni,1146230,Coventry
+42574511,B. Thomas,1146230,Coventry
+3186183,E. Pinnock,47589,Brentford
+76567729,Caleb Marfo Yirenkyi,1146230,Coventry
+2543793,F. Onyeka,1146230,Coventry
+3111962,M. Grimes,1146230,Coventry
+3101014,J. Dasilva,1146230,Coventry
+3280046,J. Rudoni,1146230,Coventry
+2963198,E. Mason-Clark,1146230,Coventry
+13216644,B. Thomas-Asante,1146230,Coventry
+26021135,L. Tchaouna,1146230,Coventry
+22344700,E. Simms,1146230,Coventry
+23431772,J. Latibeaudiere,1146230,Coventry
+3114055,D. Bentley,1146230,Coventry
+5387536,T. Sakamoto,1146230,Coventry
+2583560,V. Torp,1146230,Coventry
+5945723,G. Hamer,1146230,Coventry
+13544762,Y. Gboho,82480,Toulouse
+89670,Mile Svilar,423731,AS Roma
+4898579,Gianluca Mancini,423731,AS Roma
+1120,Leonardo Balerdi,423731,AS Roma
+429863,Mario Hermoso,423731,AS Roma
+56189315,Wesley,423731,AS Roma
+125412,Bryan Cristante,423731,AS Roma
+3565821,Manu Koné,423731,AS Roma
+1047137,Nahuel Molina,423731,AS Roma
+141029,Paulo Dybala,423731,AS Roma
+52153850,Matías Soulé,423731,AS Roma
+40243,Donyell Malen,423731,AS Roma
+291081,Evan Ndicka,423731,AS Roma
+57459122,Niccolò Pisilli,423731,AS Roma
+26154926,Devyne Rensch,423731,AS Roma
+55065213,Daniele Ghilardi,423731,AS Roma
+26148003,Konstantinos Koulierakis,423731,AS Roma
+77871990,Giorgio De Marzi,423731,AS Roma
+4897452,Pierluigi Gollini,423731,AS Roma
+4899706,Marten de Roon,425433,Atalanta
+65059771,Rodrigo Mora,423731,AS Roma
+96377169,Emanuele Lulli,423731,AS Roma
+50081941,Santiago Castro,423731,AS Roma
+126056,Lorenzo Pellegrini,423731,AS Roma
+4992764,Federico Dimarco,430539,Inter
+91494361,Leonardo Bovio,430539,Inter
+70466312,Mattia Mosconi,430539,Inter
+289954,K. Trapp,97798,Paris FC
+13559252,A. Camara,97798,Paris FC
+28155995,M. Mbow,97798,Paris FC
+55072297,D. Coppola,97798,Paris FC
+354676,H. Traoré,97798,Paris FC
+307664,M. Lopez,97798,Paris FC
+3569524,P. Lees-Melou,97798,Paris FC
+13496945,I. Kebbal,97798,Paris FC
+44542736,P. Pagis,97798,Paris FC
+57896237,L. Koleosho,97798,Paris FC
+14589491,L. Sinayoko,97798,Paris FC
+1364468,T. De Smet,97798,Paris FC
+80000410,R. Matondo,97798,Paris FC
+3579023,J. Ikoné,97798,Paris FC
+3369079,V. Marchetti,97798,Paris FC
+81388552,E. Zabi,97798,Paris FC
+31392095,O. Nkambadio,97798,Paris FC
+52309054,Y. Koré,97798,Paris FC
+3677716,J. Krasso,97798,Paris FC
+447895,M. Simon,97798,Paris FC
+46145330,F. Jörgensen,81629,Strasbourg
+64078154,G. Antwi,81629,Strasbourg
+43718416,I. Doukouré,81629,Strasbourg
+54974087,Oso,456920,Sevilla FC
+66884545,S. El Mourabet,81629,Strasbourg
+59496738,Gessime Yassine,81629,Strasbourg
+64482264,Diogo Sousa,81629,Strasbourg
+26069435,G. Reyna,81629,Strasbourg
+36515437,S. Nanasi,81629,Strasbourg
+90322764,J. Ortega,81629,Strasbourg
+67606630,C. Harder,148007,RB Leipzig
+49697312,Dário Essugo,81629,Strasbourg
+54646291,P. Diop,81629,Strasbourg
+53779789,S. Amo-Ameyaw,81629,Strasbourg
+106116381,Yaya Diémé,81629,Strasbourg
+60331201,M. Piekutowski,81629,Strasbourg
+63787227,L. Høgsberg,81629,Strasbourg
+70863821,Abdoul Karim Coulibaly,81629,Strasbourg
+94736579,Tyrese Noubissie,81629,Strasbourg
+7610624,Unai Simón,452665,Athletic Club
+55519072,J. Louis-Jean,452665,Athletic Club
+29599843,Aitor Paredes,452665,Athletic Club
+100296,Aymeric Laporte,452665,Athletic Club
+7611107,Yuri,452665,Athletic Club
+7568281,Ruíz de Galarreta,452665,Athletic Club
+61788734,Mikel Jauregizar,452665,Athletic Club
+13538000,Robert Navarro,452665,Athletic Club
+20672232,Oihan Sancet,452665,Athletic Club
+29591793,Nico Williams,452665,Athletic Club
+7614488,I. Williams,452665,Athletic Club
+29331295,Jesús Areso,452665,Athletic Club
+4912264,Álex Berenguer,452665,Athletic Club
+46316634,Maroan Sannadi,452665,Athletic Club
+70460677,Peio Canales,452665,Athletic Club
+46141627,Nico Serrano,452665,Athletic Club
+50307502,Álex Padilla,452665,Athletic Club
+7610785,Yeray,452665,Athletic Club
+50397179,Hugo Rincón,452665,Athletic Club
+53501581,Beñat Gerenabarrena,452665,Athletic Club
+53501903,Alejandro Rego,452665,Athletic Club
+29401491,Beñat Prados,452665,Athletic Club
+30668883,Álvaro Djaló,452665,Athletic Club
+7623987,Sivera,462026,Alavés
+1003667,N. Tenaglia,462026,Alavés
+3017294,Jonny,462026,Alavés
+17188353,V. Koski,462026,Alavés
+50082585,N. Valentini,462026,Alavés
+29584065,A. Rebbach,462026,Alavés
+979839,C. Benavídez,462026,Alavés
+7616903,Guevara,462026,Alavés
+22379315,Pablo Ibáñez,462026,Alavés
+98042,L. Boyé,462026,Alavés
+122514,M. Díaz,462026,Alavés
+58182978,Yusi,462026,Alavés
+7596295,Toni Martínez,462026,Alavés
+53350563,Angel Pérez,462026,Alavés
+26192600,Antonio Blanco,462026,Alavés
+23177,Carles Aleñá,462026,Alavés
+26252814,A. Giménez,462026,Alavés
+100865688,X. Olaiz,462026,Alavés
+26109524,Hugo Novoa,462026,Alavés
+235375,Denis Suárez,462026,Alavés
+47973807,Selu Diallo,462026,Alavés
+30982028,Miguel Rodríguez,462026,Alavés
+100744938,Izei Hernandez,462026,Alavés
+472206,J. Pickford,39079,Everton
+472850,J. Tarkowski,39079,Everton
+2843575,J. Branthwaite,39079,Everton
+348719,V. Mykolenko,39079,Everton
+65263114,H. Armstrong,39079,Everton
+144249,J. Garner,39079,Everton
+20883625,B. Johnson,39079,Everton
+23844093,K. Dewsbury-Hall,39079,Everton
+3089261,J. Grealish,43334,Manchester City
+55333278,T. Barry,39079,Everton
+48995191,T. Dibling,39079,Everton
+53780111,Tyrique George,39079,Everton
+43492533,J. O&apos;Brien,39079,Everton
+28929439,H. Hackney,39079,Everton
+3036614,M. Travers,39079,Everton
+13339809,T. King,39079,Everton
+472528,M. Keane,39079,Everton
+31555027,C. Alcaraz,39079,Everton
+66498628,B. Graham,39079,Everton
+3146255,C. Walton,49291,Ipswich
+57664880,A. Ouattara,49291,Ipswich
+3029208,I. Diop,49291,Ipswich
+2833271,D. O&apos;Shea,49291,Ipswich
+3078313,L. Davis,49291,Ipswich
+454657,S. Lukić,49291,Ipswich
+966476,E. Palacios,49291,Ipswich
+48858341,A. Fatawu,49291,Ipswich
+11390421,J. Enciso,49291,Ipswich
+3081050,J. Clarke,49291,Ipswich
+51785482,Emersonn,49291,Ipswich
+22368045,J. Philogene,49291,Ipswich
+92729,Florentino,49291,Ipswich
+5349218,D. Maeda,49291,Ipswich
+383334,C. Akpom,49291,Ipswich
+5945401,Z. Flemming,49291,Ipswich
+6001590,K. Scherpen,49291,Ipswich
+20540373,J. Greaves,49291,Ipswich
+3152051,D. Furlong,49291,Ipswich
+31414635,M. Núñez,49291,Ipswich
+43365343,L. Horníček,29718,Newcastle United
+52825059,L. Miley,29718,Newcastle United
+26273583,M. Thiaw,29718,Newcastle United
+6236328,S. Botman,29718,Newcastle United
+45803366,L. Hall,29718,Newcastle United
+75560835,Sean Steur,29718,Newcastle United
+235697,J. Willock,29718,Newcastle United
+3085397,J. Murphy,29718,Newcastle United
+3324643,Y. Wissa,29718,Newcastle United
+3023412,H. Barnes,29718,Newcastle United
+54752551,M. Fernandez-Pardo,29718,Newcastle United
+451920,F. Schär,29718,Newcastle United
+62410677,B. Touré,29718,Newcastle United
+73060666,A. Bamba,29718,Newcastle United
+3044825,N. Pope,29718,Newcastle United
+52004603,Miodrag Pivaš,29718,Newcastle United
+101160962,M. Miley,29718,Newcastle United
+102911998,M. Mills,29718,Newcastle United
+63719607,V. Salia,29718,Newcastle United
+91465381,K. Thompson,29718,Newcastle United
+256305,K. Tzolakis,55248,Hull City
+3231907,L. Coyle,55248,Hull City
+445963,S. Ajayi,55248,Hull City
+3074127,J. Egan,55248,Hull City
+68663434,L. Herrington,55248,Hull City
+3018421,R. Giles,55248,Hull City
+48287757,M. Belloumi,55248,Hull City
+3166380,M. Crooks,55248,Hull City
+2845024,R. Slater,55248,Hull City
+2994593,S. Thomas,55248,Hull City
+3113411,O. McBurnie,55248,Hull City
+45804654,T. Iroegbunam,39079,Everton
+44164386,M. Cho,72268,Nice
+28954877,L. Gourna-Douath,55248,Hull City
+70112756,R. Vaz,423731,AS Roma
+3150763,J. Gelhardt,55248,Hull City
+3189725,D. Phillips,55248,Hull City
+3098116,P. McNair,55248,Hull City
+63821681,J. Hjertø-Dahl,55248,Hull City
+36509319,E. Stroud,55248,Hull City
+20778492,B. Verbruggen,44185,Brighton
+219275,F. Kadıoğlu,44185,Brighton
+62391035,L. Vušković,44185,Brighton
+10304637,P. Struijk,44185,Brighton
+3567914,O. Boscagli,44185,Brighton
+62608385,José María Andrés Baixauli,147156,VfB Stuttgart
+3054324,P. Groß,44185,Brighton
+44817724,D. Gómez,44185,Brighton
+42797174,Y. Ayari,44185,Brighton
+26083281,M. De Cuyper,44185,Brighton
+63189756,C. Kostoulas,44185,Brighton
+32850111,Costinha,44185,Brighton
+14585144,G. Rutter,44185,Brighton
+66030279,M. Yalcouyé,44185,Brighton
+1141644,M. Svoboda,44185,Brighton
+3063984,M. O&apos;Riley,44185,Brighton
+3052714,J. Steele,44185,Brighton
+43717933,J. Hadjam,44185,Brighton
+47276677,I. Osman,44185,Brighton
+6238260,J. Timber,36526,Arsenal
+4125940,M. Nicolas,139497,Borussia Mönchengladbach
+6136508,K. Itakura,139497,Borussia Mönchengladbach
+74417091,J. Leszczyński,139497,Borussia Mönchengladbach
+4998077,K. Diks,139497,Borussia Mönchengladbach
+8187326,J. Scally,139497,Borussia Mönchengladbach
+53950449,H. Bolin,139497,Borussia Mönchengladbach
+4020163,P. Sander,139497,Borussia Mönchengladbach
+52751160,L. Ullrich,139497,Borussia Mönchengladbach
+3346378,F. Honorat,139497,Borussia Mönchengladbach
+4127872,F. Neuhaus,139497,Borussia Mönchengladbach
+7711249,I. Lidberg,139497,Borussia Mönchengladbach
+80807020,W. Mohya,139497,Borussia Mönchengladbach
+5328449,D. Hashioka,139497,Borussia Mönchengladbach
+4099375,K. Stöger,139497,Borussia Mönchengladbach
+116879,R. Hack,139497,Borussia Mönchengladbach
+17203165,S. Machino,139497,Borussia Mönchengladbach
+14623623,D. Batz,139497,Borussia Mönchengladbach
+51943101,F. Chiarodia,139497,Borussia Mönchengladbach
+26168450,D. Herold,139497,Borussia Mönchengladbach
+100124927,M. Nguefack,139497,Borussia Mönchengladbach
+114625,S. Posch,140348,FSV Mainz 05
+32658199,F. Gruber,140348,FSV Mainz 05
+71250060,K. Potulski,140348,FSV Mainz 05
+3581438,A. Caci,140348,FSV Mainz 05
+115108,N. Amiri,140348,FSV Mainz 05
+5456283,K. Sano,140348,FSV Mainz 05
+468020,Lee Jae-Sung,140348,FSV Mainz 05
+4172469,P. Mwene,140348,FSV Mainz 05
+4213685,P. Tietz,140348,FSV Mainz 05
+6108172,S. Becker,140348,FSV Mainz 05
+291886,D. da Costa,140348,FSV Mainz 05
+26159434,E. Martel,140348,FSV Mainz 05
+26206607,R. Königsdörffer,140348,FSV Mainz 05
+3999716,L. Maloney,140348,FSV Mainz 05
+45144393,M. Kinzig,140348,FSV Mainz 05
+107634289,R. Nakuzola,140348,FSV Mainz 05
+4171181,S. Bell,140348,FSV Mainz 05
+51211517,O. Ruoppi,140348,FSV Mainz 05
+26234460,B. Hollerbach,140348,FSV Mainz 05
+4030467,Daniel Heuer Fernandes,149709,Hamburger SV
+961807,N. Capaldo,149709,Hamburger SV
+4080860,J. Torunarigha,149709,Hamburger SV
+26124819,W. Omari,149709,Hamburger SV
+45603726,Z. El Ouahdi,149709,Hamburger SV
+229901,A. Sambi Lokonga,149709,Hamburger SV
+42004732,N. Remberg,149709,Hamburger SV
+42791056,D. Møller Wolfe,149709,Hamburger SV
+6717879,Fábio Vieira,149709,Hamburger SV
+42371651,A. Grønbæk,149709,Hamburger SV
+11265485,T. Moffi,149709,Hamburger SV
+188041,Y. Poulsen,149709,Hamburger SV
+176932,P. Daka,149709,Hamburger SV
+91898632,L. Lemke,149709,Hamburger SV
+4005834,B. Jatta,149709,Hamburger SV
+44823842,M. Adeline,149709,Hamburger SV
+42565012,S. Tangvik,149709,Hamburger SV
+77352926,S. Nandja,149709,Hamburger SV
+45597930,B. Nadir,149709,Hamburger SV
+71639036,Otto Emerson Stange,149709,Hamburger SV
+2555385,M. Schwäbe,164176,FC Koln
+1391355,A. Castro-Montes,164176,FC Koln
+65149770,Jahmai Simpson-Pusey,164176,FC Koln
+9857218,L. Lochoshvili,164176,FC Koln
+1220212,G. Mensah,164176,FC Koln
+186270,T. Krauß,164176,FC Koln
+3475661,E. Skhiri,164176,FC Koln
+4086334,L. Maina,164176,FC Koln
+61291244,M. Moore,40781,Tottenham
+69602064,S. El Mala,164176,FC Koln
+14975730,T. Dallinga,164176,FC Koln
+4234937,B. Sosa,45036,Crystal Palace
+6027833,R. Ache,164176,FC Koln
+7760032,Í. Bergmann Jóhannesson,164176,FC Koln
+4064116,M. Bülter,164176,FC Koln
+4228014,L. Waldschmidt,164176,FC Koln
+4233327,R. Zieler,164176,FC Koln
+30870294,S. Sebulonsen,164176,FC Koln
+7851319,J. Schmied,164176,FC Koln
+29287342,J. Thielmann,164176,FC Koln
+27256649,K. Hein,138646,Werder Bremen
+4026925,A. Pieper,138646,Werder Bremen
+4075708,M. Friedl,138646,Werder Bremen
+1396507,O. Deman,138646,Werder Bremen
+56732529,Arthur,143752,Bayer Leverkusen
+6138118,L. Reis,138646,Werder Bremen
+26063317,Y. Regeer,138646,Werder Bremen
+1138907,M. Grüll,138646,Werder Bremen
+32606840,E. Dinkçi,138646,Werder Bremen
+4088105,N. Füllkrug,138646,Werder Bremen
+53291798,Chuky San José,138646,Werder Bremen
+156807,M. Weiser,138646,Werder Bremen
+69635713,Salim Amani Musah,138646,Werder Bremen
+43604750,O. Wójcik,138646,Werder Bremen
+71642578,Mick Schmetgens,138646,Werder Bremen
+1211679,A. Schlager,138646,Werder Bremen
+469630,N. Stark,138646,Werder Bremen
+52084781,Dariusz Stalmach,138646,Werder Bremen
+100427285,P. Erevbenagie,138646,Werder Bremen
+7808171,C. Itten,138646,Werder Bremen
+4170537,F. Dahmen,145454,FC Augsburg
+66503619,Noahkai Kai Daniel Banks,145454,FC Augsburg
+26249433,C. Matsima,145454,FC Augsburg
+28723037,C. Brackelmann,145454,FC Augsburg
+4340,M. Wolf,145454,FC Augsburg
+17864,H. Massengo,145454,FC Augsburg
+26248306,F. Rieder,145454,FC Augsburg
+56856177,Hennes Behrens,145454,FC Augsburg
+23156945,R. Fellhauer,145454,FC Augsburg
+56171122,M. Kömür,145454,FC Augsburg
+4072971,M. Gregoritsch,145454,FC Augsburg
+28673127,Y. Keitel,145454,FC Augsburg
+55004355,Rodrigo Ribeiro,145454,FC Augsburg
+3322228,A. Claude-Maurice,145454,FC Augsburg
+31875739,Seol Young-Woo,145454,FC Augsburg
+4071844,J. Gouweleeuw,145454,FC Augsburg
+2343187,N. Labrović,145454,FC Augsburg
+72371103,Abdulay Bah,145454,FC Augsburg
+52791571,A. Ibrahimović,134391,Bayern Munich
+80418849,U. Ogundu,145454,FC Augsburg
+28781802,N. Atubolu,144603,Eintracht Frankfurt
+61581366,Elias Baum,144603,Eintracht Frankfurt
+4224472,R. Koch,144603,Eintracht Frankfurt
+20408031,L. Brassier,144603,Eintracht Frankfurt
+68230183,K. Kosugi,144603,Eintracht Frankfurt
+418432,R. Dōan,144603,Eintracht Frankfurt
+55089685,N. Aséko Nkili,144603,Eintracht Frankfurt
+26117413,R. Onyedika,144603,Eintracht Frankfurt
+54721961,C. Uzun,144603,Eintracht Frankfurt
+65879744,Y. Ebnoutalib,144603,Eintracht Frankfurt
+4174240,J. Burkardt,144603,Eintracht Frankfurt
+54719868,O. HÃ¸jlund,144603,Eintracht Frankfurt
+43394645,N. Collins,144603,Eintracht Frankfurt
+26069596,A. Knauff,144603,Eintracht Frankfurt
+2730,M. Götze,144603,Eintracht Frankfurt
+86142560,A. Amaimouni,144603,Eintracht Frankfurt
+58424478,Kauã Santos,144603,Eintracht Frankfurt
+67422768,Otávio,144603,Eintracht Frankfurt
+290437,T. Chandler,144603,Eintracht Frankfurt
+94322004,M. Pimpong,144603,Eintracht Frankfurt
+53062212,M. Backhaus,136944,SC Freiburg
+28781963,P. Treu,136944,SC Freiburg
+469469,M. Ginter,136944,SC Freiburg
+4224794,P. Lienhart,136944,SC Freiburg
+30776914,J. Makengo,136944,SC Freiburg
+469791,M. Eggestein,136944,SC Freiburg
+28772303,Y. Engelhardt,136944,SC Freiburg
+4075547,J. Beste,136944,SC Freiburg
+32062177,Y. Suzuki,136944,SC Freiburg
+46160464,D. Scherhant,136944,SC Freiburg
+32634210,I. Matanović,136944,SC Freiburg
+4224633,L. Kübler,136944,SC Freiburg
+4226082,V. Grifo,136944,SC Freiburg
+60524884,K. Goto,136944,SC Freiburg
+4227209,L. Höler,136944,SC Freiburg
+4170859,F. Müller,136944,SC Freiburg
+56856016,Berkay Yilmaz,136944,SC Freiburg
+32670113,M. Rosenfelder,136944,SC Freiburg
+4224150,C. Günter,136944,SC Freiburg
+69415143,Cyriaque Kalou Irié,136944,SC Freiburg
+23127482,Maduka Okoye,421178,Udinese
+51574089,J. Abankwah,421178,Udinese
+3026471,Christian Kabasele,421178,Udinese
+3325770,Enzo Ebosse,421178,Udinese
+1382500,M. Vojvoda,421178,Udinese
+55312992,Lennon Miller,421178,Udinese
+7735721,Jesper Karlström,421178,Udinese
+3543281,Hassane Kamara,421178,Udinese
+126700,Nicolò Zaniolo,421178,Udinese
+87255,Jürgen Ekkelenkamp,421178,Udinese
+3088939,Keinan Davis,421178,Udinese
+69940164,Idrissa Gueye,421178,Udinese
+1365595,Giorgi Chakvetadze,421178,Udinese
+53501742,Unai Gómez,421178,Udinese
+26228181,Alessandro Zanoli,421178,Udinese
+182728,Vakoun Issouf Bayo,421178,Udinese
+30583,Daniele Padelli,421178,Udinese
+50755243,Nicolò Bertola,421178,Udinese
+29392314,Oier Zarraga,421178,Udinese
+1222305,Sandi Lovrić,421178,Udinese
+4947845,Elia Caprile,417774,Cagliari
+4911459,Michel Adopo,417774,Cagliari
+6756358,Zé Pedro,417774,Cagliari
+400078,Yerry Mina,417774,Cagliari
+66840109,Juan Rodríguez,417774,Cagliari
+51800938,Adam Obert,417774,Cagliari
+63463617,Alessandro Romano,417774,Cagliari
+29456,Harry Winks,417774,Cagliari
+4920475,Alessandro Deiola,417774,Cagliari
+100899498,Paul Mendy,417774,Cagliari
+21723240,Daniel Maldini,417774,Cagliari
+5294961,Yukinari Sugawara,417774,Cagliari
+30319513,Kevin Carlos Omoruyi,417774,Cagliari
+32837,Roberto Gagliardini,417774,Cagliari
+42455693,Alieu Fadera,417774,Cagliari
+5087915,Boris Radunović,417774,Cagliari
+601811,Alen Sherri,417774,Cagliari
+60716152,Raphael Kofler,417774,Cagliari
+42580951,Giuseppe Aurelio,417774,Cagliari
+45041031,Riccardo Ciervo,416072,Sassuolo
+54950581,Ivan Sulev,417774,Cagliari
+52514651,Yanis Massolin,417774,Cagliari
+67280766,Joseph Liteta,417774,Cagliari
+54852854,Jacopo Fazzini,417774,Cagliari
+76763666,Alessandro Sugamele,417774,Cagliari
+482832,Łukasz Skorupski,426284,Bologna
+66986136,Eivind Helland,426284,Bologna
+6320048,Torbjørn Heggem,426284,Bologna
+32851077,Arthur Theate,426284,Bologna
+20682375,Nadir Zortea,426284,Bologna
+7215208,Lewis Ferguson,426284,Bologna
+5035107,Tommaso Pobega,426284,Bologna
+21728,Juan Miranda,426284,Bologna
+140707,Federico Bernardeschi,426284,Bologna
+4900994,Roberto Piccoli,426284,Bologna
+4900672,Nicolò Cambiaghi,426284,Bologna
+4910332,Lorenzo De Silvestri,426284,Bologna
+4917416,Jens Odgaard,426284,Bologna
+4908722,Riccardo Orsolini,426284,Bologna
+212996,Nikola Moro,426284,Bologna
+7725739,Emil Holm,426284,Bologna
+71820483,Massimo Pessina,426284,Bologna
+67059552,Ukko Happonen,426284,Bologna
+47531057,Abdel Rahim,426284,Bologna
+46297958,Martin Vitík,426284,Bologna
+5007093,Nicolò Casale,426284,Bologna
+68686940,Mikel Amondarain,426284,Bologna
+97719587,Marco Libra,426284,Bologna
+51507113,Oussama El Azzouzi,426284,Bologna
+55845580,Samuel Mbangula,138646,Werder Bremen
+56218939,Jay Enem,426284,Bologna
+12927810,Lucas Perri,54397,Leeds
+7788046,Eray Cömert,428837,Torino
+2307123,Ardian Ismajli,428837,Torino
+19717502,Saúl Coco,428837,Torino
+70372127,Niccolò Fortini,428837,Torino
+6744766,Daniel Bragança,428837,Torino
+4960564,Rolando Mandragora,427986,Fiorentina
+5940249,Kian Fitz-Jim,428837,Torino
+75837594,Alessio Cacciamani,428837,Torino
+4896808,Giovanni Simeone,428837,Torino
+135716,Nikola Vlašić,428837,Torino
+22285291,Nathan Patterson,39079,Everton
+6505359,Sandro Kulenović,428837,Torino
+48841436,Rafik Belghali,428837,Torino
+26059453,Gaetano Oristanio,428837,Torino
+54188407,Emirhan İlkhan,428837,Torino
+67599385,Diego Mascardi,428837,Torino
+91079303,Lapo Siviero,428837,Torino
+262745,Ricardo Rodríguez,428837,Torino
+4893910,Cristiano Biraghi,428837,Torino
+63858711,Pietro Comuzzo,428837,Torino
+55253583,Gvidas Gineitis,428837,Torino
+39277,Zakaria Aboukhlal,428837,Torino
+401849,Duván Zapata,428837,Torino
+77998053,Asier Bonel,619461,Osasuna
+45051496,F. Boyomo,619461,Osasuna
+7639282,Aitor Fernández,619461,Osasuna
+67788238,Íñigo Arguibide,619461,Osasuna
+7652967,Catena,619461,Osasuna
+90308918,U. Santos,619461,Osasuna
+3037741,Diego Rico,619461,Osasuna
+7512092,Rubén García,619461,Osasuna
+7512736,Moncayola,619461,Osasuna
+29402135,Iker Muñoz,619461,Osasuna
+61372871,Asier Osambela,619461,Osasuna
+7513541,Kike Barja,619461,Osasuna
+7526260,A. Budimir,619461,Osasuna
+69002500,R. Yeboah,619461,Osasuna
+293979,Lucas Torró,619461,Osasuna
+42579824,Raul Moro,619461,Osasuna
+7510160,Sergio Herrera,619461,Osasuna
+23627065,Raúl García,619461,Osasuna
+69158187,Mauro Echegoyen,619461,Osasuna
+29613045,Jonathan Dubasin,619461,Osasuna
+356608,R. Del Castillo,90990,Stade Brestois 29
+29182853,Abel Bretones,619461,Osasuna
+25194722,Dani Cárdenas,620312,Rayo Vallecano
+3303874,I. Balliu,620312,Rayo Vallecano
+71430702,Rayane Belid,620312,Rayo Vallecano
+88358403,G. Bouare,620312,Rayo Vallecano
+7548961,Pedro Díaz,620312,Rayo Vallecano
+53660166,Pelayo Fernández,620312,Rayo Vallecano
+4978918,M. Kumbulla,620312,Rayo Vallecano
+26232045,Fran Pérez,620312,Rayo Vallecano
+351295,G. Tsitaishvili,620312,Rayo Vallecano
+14771099,Alemão,620312,Rayo Vallecano
+76997277,Marco de las Sías,620312,Rayo Vallecano
+4901155,E. Audero,762429,Como
+274337,A. Rațiu,620312,Rayo Vallecano
+16872149,Mujaid Sadick,620312,Rayo Vallecano
+3042249,F. Lejeune,620312,Rayo Vallecano
+7620123,Adrià Pedrosa,620312,Rayo Vallecano
+7584703,Óscar Valentín,620312,Rayo Vallecano
+6690026,P. Ciss,620312,Rayo Vallecano
+7613039,Unai López,620312,Rayo Vallecano
+20701856,Jorge de Frutos,620312,Rayo Vallecano
+8526,Sergio Camello,620312,Rayo Vallecano
+7654577,Álvaro García,620312,Rayo Vallecano
+42798140,A. Kinský,40781,Tottenham
+7650713,Pedro Porro,40781,Tottenham
+6230049,J. van Hecke,40781,Tottenham
+24608843,M. van de Ven,40781,Tottenham
+46683,A. Robertson,40781,Tottenham
+139097,R. Bentancur,40781,Tottenham
+5014660,S. Tonali,40781,Tottenham
+42931931,Sávio,40781,Tottenham
+54190339,Mateus Fernandes,40781,Tottenham
+13133407,Omar Marmoush,43334,Manchester City
+3040317,D. Solanke,40781,Tottenham
+52822483,A. Gray,40781,Tottenham
+2561825,M. Kudus,40781,Tottenham
+3024378,J. Maddison,40781,Tottenham
+10943646,C. Gallagher,40781,Tottenham
+55918030,L. Bergvall,40781,Tottenham
+3040800,M. Dúbravka,40781,Tottenham
+3082499,T. Adarabioyo,40781,Tottenham
+1064364,M. Senesi,40781,Tottenham
+32850433,D. Udogie,40781,Tottenham
+65405438,J. Manzambi,56950,Aston Villa
+3107132,M. Cash,56950,Aston Villa
+23301523,T. Harwood-Bellis,56950,Aston Villa
+453047,M. Dmitrović,460324,Espanyol
+94231522,J. A. Lopez,460324,Espanyol
+7611751,Unai Núñez,460324,Espanyol
+7607243,L. Cabrera,460324,Espanyol
+72565430,Roger Hinojo,460324,Espanyol
+7534793,Edu Expósito,460324,Espanyol
+29575693,Urko González,460324,Espanyol
+46052272,Álex Calatrava,460324,Espanyol
+62547849,Javier Hernandez,460324,Espanyol
+46149033,Bryan Zaragoza,460324,Espanyol
+50391544,Roberto Fernández,460324,Espanyol
+60522469,Q. Hartman,460324,Espanyol
+56009639,Marcos Fernández,460324,Espanyol
+7631232,Pere Milla,460324,Espanyol
+45410848,C. Riedel,460324,Espanyol
+44071006,T. Dolan,460324,Espanyol
+74301976,Llorenç Serred,460324,Espanyol
+29420489,Ángel Fortuño,460324,Espanyol
+5954417,V. Drkušić,460324,Espanyol
+70563878,Rafel Bauzà,460324,Espanyol
+66829483,Gabriel Moscardo,460324,Espanyol
+20515740,Pol Lozano,460324,Espanyol
+109624410,Victor Mullerat Tomas,460324,Espanyol
+1826860,M. Dituro,679031,Elche
+71816941,Buba Sangaré,679031,Elche
+50126699,F. Redondo,679031,Elche
+26091492,Víctor Chust,679031,Elche
+50735601,R. Revivo,679031,Elche
+7564256,Gonzalo Villar,679031,Elche
+88341498,J. Morcillo,679031,Elche
+7399,T. Lemar,679031,Elche
+51293466,L. Cepeda,679031,Elche
+29668751,Fer Niño,679031,Elche
+26076197,Germán Valera,679031,Elche
+32171818,Rubén Sánchez,679031,Elche
+7628012,Bigas,679031,Elche
+57734754,A. Osorio,679031,Elche
+70322539,Matia Barzic Gutiérrez,679031,Elche
+7596456,Tete Morente,679031,Elche
+50812398,Alejandro Iturbe,679031,Elche
+50124928,F. Buonanotte,679031,Elche
+7562807,Josan,679031,Elche
+43724534,Martim Neto,679031,Elche
+30158352,Marc Aguado,679031,Elche
+3030335,G. Diangana,679031,Elche
+98686,E. Ponce,679031,Elche
+45395,C. Kelleher,47589,Brentford
+55065696,M. Kayode,47589,Brentford
+71044785,Jannik Schuster,47589,Brentford
+180313,K. Ajer,47589,Brentford
+17182879,K. Lewis-Potter,47589,Brentford
+42429772,Y. Yarmolyuk,47589,Brentford
+4036907,V. Janelt,47589,Brentford
+31693809,J. Anthony,47589,Brentford
+2561342,M. Damsgaard,47589,Brentford
+28670551,K. Schade,47589,Brentford
+31581270,Thiago,47589,Brentford
+7224385,A. Hickey,47589,Brentford
+44646420,M. Sangaré,47589,Brentford
+65897937,E. Diouf,47589,Brentford
+45852471,D. Ouattara,47589,Brentford
+24643780,Fábio Carvalho,47589,Brentford
+3113894,E. Balcombe,47589,Brentford
+3114860,R. Henry,47589,Brentford
+65723735,B. Fredrick,47589,Brentford
+473333,C. Wilson,47589,Brentford
+3155593,E. Martínez,42483,Chelsea
+3557288,W. Fofana,42483,Chelsea
+3380349,M. Lacroix,42483,Chelsea
+24625587,L. Colwill,42483,Chelsea
+300258,Pedro Neto,42483,Chelsea
+47166,J. Henderson,42483,Chelsea
+51451246,V. Barco,42483,Chelsea
+29259328,Pep Chavarría,42483,Chelsea
+24630256,C. Palmer,42483,Chelsea
+3086524,M. Rogers,42483,Chelsea
+236663,D. Welbeck,42483,Chelsea
+59044489,Joshua Kofi Acheampong,42483,Chelsea
+67552856,Geovany Tcherno Quenda,42483,Chelsea
+81565652,M. Nicoll-Jazuli,42483,Chelsea
+68543167,Estêvão,42483,Chelsea
+54764465,M. Penders,42483,Chelsea
+26067181,M. Gusto,42483,Chelsea
+55004516,J. Hato,42483,Chelsea
+45422279,R. Lavia,42483,Chelsea
+46190088,J. Bynoe-Gittens,42483,Chelsea
+155197,L. Hrádecký,78225,Monaco
+46955643,Vanderson,78225,Monaco
+68921678,Sadibou Sané,78225,Monaco
+28329,E. Dier,78225,Monaco
+47450396,Flávio Nazinho,78225,Monaco
+60272275,E. Diop,78225,Monaco
+60223492,L. Camara,78225,Monaco
+452564,D. Zakaria,78225,Monaco
+17703,A. Golovin,78225,Monaco
+26021296,M. Abline,78225,Monaco
+62190590,Paris Josua  Brunner,78225,Monaco
+74426912,M. Detourbet,78225,Monaco
+87498824,Pape Cabral,78225,Monaco
+22352589,F. Balogun,78225,Monaco
+7644434,M. Salisu,78225,Monaco
+1177547,P. Köhn,78225,Monaco
+59878630,C. Mawissa Elebi,78225,Monaco
+78610658,I. Touré,78225,Monaco
+177415,T. Minamino,78225,Monaco
+108144015,S. Benzahra,78225,Monaco
+31125962,Noel Törnqvist,762429,Como
+72285451,Eddy Kouadio,1344513,Monza
+55065052,Lorenzo Lucchesi,1344513,Monza
+31116624,Andrea Carboni,1344513,Monza
+4944142,Samuele Birindelli,1344513,Monza
+9153165,Michael Folorunsho,1344513,Monza
+65790389,Ebenezer Akinsanmiro,1344513,Monza
+6653318,Ricardo Mangas,1344513,Monza
+265643,Patrick Cutrone,1344513,Monza
+61291405,Jay Robinson,1344513,Monza
+54828221,Gustavo Varela,1344513,Monza
+61892257,Adam Bakoune,1344513,Monza
+67919453,Manga Foe Ondoa,1344513,Monza
+4927237,Dany Mota,1344513,Monza
+98765604,Mathis Mout,1344513,Monza
+70234633,Yvan Maye,1344513,Monza
+62610317,Aljaz Strajnar,1344513,Monza
+5021905,Demba Thiam,1344513,Monza
+1770671,Valentin Antov,1344513,Monza
+51206687,Saba Goglichidze,421178,Udinese
+63504672,Leonardo Colombo,1344513,Monza
+45763116,Omari Forson,1344513,Monza
+38171644,Exequiel Zeballos,1344513,Monza
+13839,Cyril Ngonge,1344513,Monza
+4899545,Andrea Colpani,1344513,Monza
+99330,A. Murić,416072,Sassuolo
+61574282,Simone Cinquegrano,416072,Sassuolo
+306376,Duje Ćaleta-Car,416072,Sassuolo
+46778060,Fedde Leysen,416072,Sassuolo
+21819840,Josh Doig,416072,Sassuolo
+6302177,Kristian Thorstvedt,416072,Sassuolo
+145376,Nemanja Matić,416072,Sassuolo
+73294599,Darryl Bakola,416072,Sassuolo
+4916611,Domenico Berardi,416072,Sassuolo
+34769,Sebastiano Esposito,416072,Sassuolo
+356769,Armand Laurienté,416072,Sassuolo
+55313636,Luca Lipani,416072,Sassuolo
+20397244,Kieron Bowie,416072,Sassuolo
+54719546,Vasilije Adžić,416072,Sassuolo
+55909819,Benjamín Domínguez,416072,Sassuolo
+42623133,Laurs Skjellerup,416072,Sassuolo
+4913713,Stefano Turati,416072,Sassuolo
+4913552,Giacomo Satalino,416072,Sassuolo
+20788313,Ignace Van der Brempt,416072,Sassuolo
+20576276,Cas Odenthal,416072,Sassuolo
+11013681,Andrea Ghion,416072,Sassuolo
+42781396,Rafael Obrador,416072,Sassuolo
+56931203,Ibrahim Sulemana,425433,Atalanta
+4966843,Nicholas Pierini,416072,Sassuolo
+82264,S. Gnabry,134391,Bayern Munich
+289632,F. Rønnow,155666,Union Berlin
+4000682,C. Trimmel,155666,Union Berlin
+46401320,L. Querfeld,155666,Union Berlin
+4090520,F. Uduokhai,155666,Union Berlin
+52318231,T. Rothe,155666,Union Berlin
+4073454,R. Khedira,155666,Union Berlin
+153265,M. Aebischer,155666,Union Berlin
+4226243,J. Haberer,155666,Union Berlin
+82586,Jeong Woo-Yeong,155666,Union Berlin
+4956539,A. Schäfer,155666,Union Berlin
+5174211,E. Latte Lath,155666,Union Berlin
+4010664,T. Skarke,155666,Union Berlin
+52780945,A. Kemlein,155666,Union Berlin
+69287148,Livan Burcu,155666,Union Berlin
+48892473,Z. Van Den Bosch,155666,Union Berlin
+20745487,D. Köhn,155666,Union Berlin
+42313369,M. Raab,155666,Union Berlin
+7826686,K. Imeri,155666,Union Berlin
+209132,R. Skov,155666,Union Berlin
+47047252,M. LjubiÄiÄ,155666,Union Berlin
+20766739,Iker Losada,462877,Real Betis
+55256159,Mario Martín,465430,Getafe
+80485342,Óscar López,465430,Getafe
+53672563,Joselu,465430,Getafe
+36701,Angeliño,463728,Deportivo La Coruña
+55845419,L. Amatucci,463728,Deportivo La Coruña
+47867225,Kike Salas,456920,Sevilla FC
+51932314,L. Stassin,456920,Sevilla FC
+63305032,Salvador Esquivel,451814,Atlético Madrid
+76997438,Adrián Molina,620312,Rayo Vallecano
+100915759,M. Roman,620312,Rayo Vallecano
+46142915,O. El Hilali,460324,Espanyol
+3094735,H. Wilson,54397,Leeds
+1178352,A. Dedić,29718,Newcastle United
+26071367,Nico González,43334,Manchester City
+25549888,T. Livramento,29718,Newcastle United
+3090066,J. Ramsey,29718,Newcastle United
+64109388,Lazar Jovanović,421178,Udinese
+79431919,Giulio Vinciati,421178,Udinese
+73903823,Adrian Lahdo,762429,Como
+101262,Adrián Bernabé,445857,Parma
+1001735,Lautaro Valenti,445857,Parma
+76084246,Thomas de Martis,445857,Parma
+64973475,Gorka Carrera,467132,Real Sociedad
+6061965,Jay Idzes,416072,Sassuolo
+98727447,Lorenzo Nyarko,416072,Sassuolo
+54408655,Justin Oboavwoduo,422880,Juventus
+2507407,K. Grabara,422880,Juventus
+70345401,A. Owusu,422880,Juventus
+109715375,Moha Achraf,465430,Getafe
+108114552,Ebrahima Drammeh,465430,Getafe
+99199016,Matteo Franceschelli,426284,Bologna
+50497965,Hugo Sotelo,459473,Levante
+73306030,Tiago Gabriel,738601,Lecce
+109389833,Enisio Carneiro,94394,Estac Troyes
+109759006,Lassana Simakha,94394,Estac Troyes
+26148808,A. Amenda,1146230,Coventry
+6111875,M. van Ewijk,1146230,Coventry
+1384432,T. Awoniyi,1146230,Coventry
+3053197,L. Dunk,44185,Brighton
+93237508,Y. Ibrahim,44185,Brighton
+7638799,Iago Aspas,458622,Celta de Vigo
+7635901,Iván Villar,458622,Celta de Vigo
+2543471,J. Cajuste,456069,Malaga
+70781067,Samu Becerra,620312,Rayo Vallecano
+3578379,Reinildo Mandava,635630,Sunderland
+108491292,Hakim Dongopandji,95245,LE Havre AC
+83039446,Alex Teixeira,95245,LE Havre AC
+72765875,G. Zohouri,95245,LE Havre AC
+46618509,L. Mouton,66311,Angers
+78905449,Aristide Zossou,92692,Auxerre
+107957094,A. Camara,72268,Nice
+109127725,D. Morana,72268,Nice
+47979120,N. Mbamba,83331,Lorient
+11665731,A. Tosin,83331,Lorient
+70385168,I. Diallo,82480,Toulouse
+108625244,T. Collin,82480,Toulouse
+7747313,Odilon Kossounou,425433,Atalanta
+91790923,Demi Akarakiri,417774,Cagliari
+3360063,S. Chergui,97798,Paris FC
+67225704,O. Sissoko,97798,Paris FC
+85323,Nicolás Tagliafico,68864,Lyon
+71044463,Paul Michael Junior Okon-Engstler,164176,FC Koln
+43552264,M. Tel,40781,Tottenham
+26558,B. Davies,40781,Tottenham
+65636151,Iker Monreal,452665,Athletic Club
+99208032,Ricardo Bordon,415221,Lazio
+65243955,Adrian Przyborek,415221,Lazio
+73554936,B. Brantlind,81629,Strasbourg
+108144176,A. Soubeir,78225,Monaco
+54764626,S. Idumbo-Muzambo,78225,Monaco
+45567340,M. Biereth,78225,Monaco
+29410668,Jofre Carreras,460324,Espanyol
+127666,J. Kluivert,30569,Bournemouth
+55255676,Á. Rodríguez,30569,Bournemouth
+9940616,H. Valdimarsson,47589,Brentford
+68865650,Gustavo Gomes,47589,Brentford
+23800945,A. Kalimuendo,56099,Nottingham Forest
+3541832,A. Disasi,45036,Crystal Palace
+73079020,H. Ahanor,45036,Crystal Palace
+3027920,W. Hughes,45036,Crystal Palace
+66368701,Z. Gozo,45036,Crystal Palace
+3147060,C. Kipré,49291,Ipswich
+1368654,W. Endo,34824,Liverpool
+105931,K. Tete,31420,Fulham
+3146899,R. James,42483,Chelsea
+1663123,João Pedro,42483,Chelsea
+57707545,N. Mendy,55248,Hull City
+45815924,B. Norton-Cuffy,422029,Genoa
+3049655,M. Targett,55248,Hull City
+7805595,L. Stergiou,147156,VfB Stuttgart
+67676987,Maximilian Tobias Herwerth,147156,VfB Stuttgart
+4171020,R. Zentner,140348,FSV Mainz 05
+32183571,S. Kawasaki,140348,FSV Mainz 05
+94257765,J. Maluze,144603,Eintracht Frankfurt
+80013290,L. Arrhov,144603,Eintracht Frankfurt
+69641348,C. Lippmann,158219,SC Paderborn 07
+11286093,O. Batista Meier,158219,SC Paderborn 07
+45066147,L. Đurić,158219,SC Paderborn 07
+4227370,T. Kleindienst,139497,Borussia Mönchengladbach
+26041421,G. Doué,81629,Strasbourg
+5722738,J. Vásquez,422029,Genoa
+56343,Aleksa Terzić,436496,Frosinone
+53200994,Aitor Mañas,462026,Alavés
+53721346,César Tárrega,453516,Valencia
+73067428,Jaume Durá,453516,Valencia
+5980338,Ridgeciano Haps,440751,Venezia
+8253980,Gianluca Busio,440751,Venezia
+82621973,Lorenzo Berardi,440751,Venezia
+5053944,Pasquale Mazzocchi,440751,Venezia
+25191019,Issa Soumaré,80778,Rennes FC
+31153815,B. Meité,69715,Marseille
+105773290,Nouhoum Kamissoko,69715,Marseille
+2307284,J. Juranović,155666,Union Berlin
+105473830,Linus Guther,155666,Union Berlin
+277879,D. Ljubičić,148858,FC Schalke 04
+4250071,J. Bachmann,148858,FC Schalke 04
+72167277,Ali Houary,679031,Elche
+7617708,Zubeldia,467132,Real Sociedad
+105770,O. Solet,421178,Udinese
+312333,J. Piotrowski,421178,Udinese
+3025988,Kiko Femenía,465430,Getafe
+56658147,J. El Abdellaoui,458622,Celta de Vigo
+5109328,M. Felici,417774,Cagliari
+75462625,N. Grandu,417774,Cagliari
+53946585,M. Berisha,738601,Lecce
+71828372,P. Penev,738601,Lecce
+20442968,O. Gandelman,738601,Lecce
+4915967,M. Locatelli,422880,Juventus
+4915645,J. Boga,422880,Juventus
+69539435,Adam Aznou Ben Cheikh,456069,Malaga
+7659568,Moi Gómez,619461,Osasuna
+2545725,A. Dovbyk,426284,Bologna
+55067789,C. Volpato,416072,Sassuolo
+44544024,F. Chaïbi,144603,Eintracht Frankfurt
+63805742,Oumar Pona,66311,Angers
+91864500,M. Gernigon,66311,Angers
+64484679,Gonçalo Oliveira,80778,Rennes FC
+147630,M. Diakhaby,453516,Valencia
+94263078,Rodrigo Gamon,453516,Valencia
+226842,S. Bornauw,149709,Hamburger SV
+57183490,Kofi Jeremy Amoako,149709,Hamburger SV
+44352112,M. Ifnaoui,94394,Estac Troyes
+308147,A. Phliponeau,94394,Estac Troyes
+53025021,O. Kellyman,81629,Strasbourg
+32659648,M. Röhl,39079,Everton
+115913,F. Grillitsch,436496,Frosinone
+4034975,A. Bella-Kotchap,440751,Venezia
+55066179,M. Dagasso,440751,Venezia
+63179291,T. Gijselhart,463728,Deportivo La Coruña
+69361530,N. Edjouma,68013,Lille
+3866086,L. Mpasi,95245,LE Havre AC
+26092941,T. Pembélé,95245,LE Havre AC
+77928501,A. Arena,423731,AS Roma
+50544011,A. Mendy,72268,Nice
+101971436,Augustin Delbecque,1105382,Le Mans
+3453282,L. Buadés,1105382,Le Mans
+19747931,R. Nteka,620312,Rayo Vallecano
+65829029,S. Eriksson,3970699,Racing Santander
+101321157,H. Perez,3970699,Racing Santander
+52743593,Y. Titraoui,99500,Lens
+7614005,Gorka Guruzeta,452665,Athletic Club
+91473270,S. Sanchez,452665,Athletic Club
+453691,N. Milenković,56099,Nottingham Forest
+10236051,M. Mudryk,40781,Tottenham
+3073322,D. Henderson,45036,Crystal Palace
+91449442,F. Samba,43334,Manchester City
+89187392,N. Oriola,44185,Brighton
+3138849,N. Collins,47589,Brentford
+28241969,M. N&apos;Diaye,138646,Werder Bremen
+45094805,T. Oermann,143752,Bayer Leverkusen
+6239387,N. Kühn,139497,Borussia Mönchengladbach
+84751037,N. Mohr,158219,SC Paderborn 07
+58184427,I. Ogbus,136944,SC Freiburg
+3053358,Bernardo,142901,1899 Hoffenheim
+67441122,Cajetan Benjamin Lenz,142901,1899 Hoffenheim
+55036233,F. Mané,141199,Borussia Dortmund
+3143518,C. Adams,428837,Torino
+99213667,Manuel Carrascosa,428837,Torino
+93238152,A. Luongo,428837,Torino
+24702384,A. Elanga,29718,Newcastle United
+67464789,M. Coulibaly,78225,Monaco
+37345,J. Teze,78225,Monaco
+45609844,K. McAteer,49291,Ipswich
+7615776,Diego Llorente,462877,Real Betis
+97011992,A. de Pablo,462877,Real Betis
+79543814,Javier Navarro,461175,Real Madrid
+83459978,Sergio Martinez,3970699,Racing Santander
+71022728,M. Doucoure,422029,Genoa
+72284163,Reigan Heskey,164176,FC Koln
+12960171,I. Rondić,164176,FC Koln
+46354630,R. van den Berg,164176,FC Koln
+28161469,J. Casimir,92692,Auxerre
+75422053,T. Devernois,92692,Auxerre
+77550312,Andrés Antañón,458622,Celta de Vigo
+2542827,R. Nicolaisen,82480,Toulouse
+87498502,Eder Aller,450963,Barcelona
+50555120,Jozhua Vertrouwd,620312,Rayo Vallecano
+57516921,L. Lynch,56950,Aston Villa
+53722956,Cristhian Mosquera,36526,Arsenal
+56362712,P. Vismara,425433,Atalanta
+71403815,F. Cassa,425433,Atalanta
+29397466,Jorge Herrando,619461,Osasuna
+10938333,Aimar Oroz,619461,Osasuna
+19474,Willem Geubbels,738601,Lecce
+77244090,Hjalte Laerke,738601,Lecce
+94251969,K. Ribes,458622,Celta de Vigo
+54256832,A. Boiro,452665,Athletic Club
+42175,T. Kehrer,78225,Monaco
+149240,Geoffrey Kondogbia,69715,Marseille
+57042132,Tochukwu Nnadi,69715,Marseille
+5071493,Gennaro Borrelli,417774,Cagliari
+53057704,Nicolò Cavuoti,417774,Cagliari
+4956378,Nicolò Rovella,415221,Lazio
+262906,A. Romagnoli,415221,Lazio
+100870357,Marcelo Vaz,422029,Genoa
+26172475,Elias Havel,422029,Genoa
+16907569,Germán Parreño,463728,Deportivo La Coruña
+5056520,Umar Sadiq,453516,Valencia
+7607565,Dimitri Foulquier,453516,Valencia
+145537,Scott McTominay,419476,Napoli
+71821771,Christian Garofalo,419476,Napoli
+50331169,Giovane,419476,Napoli
+55167448,S. Egeli,49291,Ipswich
+45079027,Anton Kade,145454,FC Augsburg
+94293185,Tim Schnitzer,145454,FC Augsburg
+20877024,N. Mbuku,145454,FC Augsburg
+96814606,Kilian Belazzoug,80778,Rennes FC
+43553069,Théo Eyoum,1105382,Le Mans
+30783676,M. Robin,1105382,Le Mans
+61359830,William Harhouz,1105382,Le Mans
+88338439,Alexis Ciria,461175,Real Madrid
+47768049,Haitam Abaida,456069,Malaga
+107848902,Joseph Otunenche,456069,Malaga
+29399076,Julen Lobete,456069,Malaga
+6246632,Senne Lynen,138646,Werder Bremen
+28627081,Justin Njinmah,138646,Werder Bremen
+72203502,P. Čović,138646,Werder Bremen
+46603214,J. Malatini,138646,Werder Bremen
+52748745,Habib Diarra,635630,Sunderland
+45790808,Romaine Mundle,635630,Sunderland
+21245,Jorge Cuenca,31420,Fulham
+3136434,H. Reed,31420,Fulham
+89753307,M. Zepa,31420,Fulham
+3110835,Joe Rodon,54397,Leeds
+3231102,Alex Cairns,54397,Leeds
+18694991,Moisés Caicedo,42483,Chelsea
+14972027,Mats Wieffer,44185,Brighton
+49829815,A. Cozier-Duberry,44185,Brighton
+42828247,Otávio,97798,Paris FC
+58357824,Zoumana Diallo,72268,Nice
+62189624,Ibra Sow,456920,Sevilla FC
+88338600,M. Castillo,456920,Sevilla FC
+52284904,Carlos Martín,451814,Atlético Madrid
+88341981,Miguel Cubo,451814,Atlético Madrid
+28114779,F. Doucouré,95245,LE Havre AC
+138453,Paolo Gozzi,94394,Estac Troyes
+91803964,Christ Batola,94394,Estac Troyes
+8258327,T. Bair,92692,Auxerre
+64809416,T. Siwe,92692,Auxerre
+109022753,Jules Bouffandeau,66311,Angers
+20448925,A. Cambiaso,422880,Juventus
+20233668,J. Cabal,422880,Juventus
+72692298,J. Ekhator,422880,Juventus
+53767,A. Milik,422880,Juventus
+102713163,A. Mazzocchi,445857,Parma
+26012763,O. Sørensen,445857,Parma
+48769469,M. Diambou,90990,Stade Brestois 29
+108760645,Evan Mailly,90990,Stade Brestois 29
+53002803,A. Camblan,90990,Stade Brestois 29
+104198227,Adama Timera,460324,Espanyol
+101623998,Antonio Pirro,427986,Fiorentina
+80316292,Sulayman Jallow,427986,Fiorentina
+26148164,G. Konstantelias,141199,Borussia Dortmund
+45288005,E. Iannoni,416072,Sassuolo
+55167287,F. Missori,416072,Sassuolo
+79586479,G. Kulla,416072,Sassuolo
+4933516,Alberto Paleari,428837,Torino
+96373627,M. Pellini,428837,Torino
+22343251,Tino Anjorin,428837,Torino
+66198685,J. Arizala,421178,Udinese
+61704531,D. Pejičić,421178,Udinese
+50392993,E. Piana,421178,Udinese
+97485010,Aleksandr Ballabio,1344513,Monza
+9176510,F. Delli Carri,1344513,Monza
+53072194,E. Jaouen,29718,Newcastle United
+54407528,L. Shahar,29718,Newcastle United
+23801589,A. Omobamidele,81629,Strasbourg
+30700600,S. Mara,81629,Strasbourg
+57196370,M. Del Blanco,81629,Strasbourg
+61331333,Fabio Amadu Uri Baldé,81629,Strasbourg
+28772142,M. Nawrocki,99500,Lens
+60903878,Etta Eyong,459473,Levante
+29426124,Carlos Álvarez,459473,Levante
+2930676,L. Kitching,1146230,Coventry
+5306714,H. Morita,55248,Hull City
+7212632,L. Millar,55248,Hull City
+32684281,Rocco Reitz,148007,RB Leipzig
+54764948,A. Vermeeren,148007,RB Leipzig
+3995208,Leopold Zingerle,148007,RB Leipzig
+28698404,Enzo Leopold,139497,Borussia Mönchengladbach
+73584077,Jonathan Friemel,164176,FC Koln
+102669210,Natnael Abraha,142901,1899 Hoffenheim
+157773,D. Kohr,140348,FSV Mainz 05
+7789012,S. Widmer,140348,FSV Mainz 05
+20522985,C. Klaus,155666,Union Berlin
+53026631,Z. Abbott,56099,Nottingham Forest
+53555999,Mikel Rodriguez,462026,Alavés
+22105937,E. Guessand,45036,Crystal Palace
+72705017,K. Braithwaite,43334,Manchester City
+66716139,C. Echeverri,43334,Manchester City
+97576136,Alessandro Longoni,73119,Paris Saint Germain
+2367498,Bartol Franjić,440751,Venezia
+203980,Toma Bašić,440751,Venezia
+5082119,M. Grandi,440751,Venezia
+42737282,M. Farji,440751,Venezia
+58686425,A. Okoro,440751,Venezia
+42723597,Tiago Tomás,147156,VfB Stuttgart
+53915673,B. Bouanani,147156,VfB Stuttgart
+52169628,G. Puerta,3970699,Racing Santander
+7600803,Andrés Martín,3970699,Racing Santander
+94098697,Carlos Sánchez,3970699,Racing Santander
+88774749,D. Diaz,3970699,Racing Santander
+107848580,Alvaro Padilla,679031,Elche
+75617346,Ibai Aguirre,467132,Real Sociedad
+56935228,A. Lebarbier,467132,Real Sociedad
+52765972,Luc De Fougerolles,31420,Fulham
+61911577,Jan Ziółkowski,423731,AS Roma
+71047844,E. Košpo,427986,Fiorentina
+102984770,Federico Croci,427986,Fiorentina
+64545215,Rafa Fernández,619461,Osasuna
+297038,Adam Marušić,415221,Lazio
+23303294,Fisayo Dele-Bashiru,415221,Lazio
+101307794,U. Konare,679031,Elche
+91891226,Jordi Pesquer,450963,Barcelona
+69776749,Álvaro Cortés Moyano,450963,Barcelona
+100726423,Elias Legendre Quiñonez Zae,80778,Rennes FC
+6337436,M. Pedersen,428837,Torino
+43551781,Cesare Casadei,428837,Torino
+100901913,Leo Paul Bouyer,416923,AC Milan
+98749826,T. Macchioni,416072,Sassuolo
+72845570,A. Di Bitonto,416072,Sassuolo
+60994360,P. Nuamah,416072,Sassuolo
+7537047,Abdel Abqar,465430,Getafe
+68776456,Curro Burgos,465430,Getafe
+98505589,Jorge Castellanos,3970699,Racing Santander
+98190029,Andrés Vallecillo,3970699,Racing Santander
+32858322,I. Koutsoupias,436496,Frosinone
+54721317,Kenan Yıldız,422880,Juventus
+136843,M. Perin,422880,Juventus
+29271242,Fabio Miretti,422880,Juventus
+18830,Khéphren Thuram,422880,Juventus
+50753311,William Osula,29718,Newcastle United
+3805711,Y. Zouaoui,95245,LE Havre AC
+19296487,M. Diaw,95245,LE Havre AC
+98300636,Oumar Konate,78225,Monaco
+88346489,Cheikh Tidiane Thiam,454367,Villarreal
+99318800,Nizar El Jmili,454367,Villarreal
+49222684,Jack Hinshelwood,44185,Brighton
+84430325,Zadok Yohanna,44185,Brighton
+58003463,Triston Rowe,56950,Aston Villa
+72949415,B. Burrows,56950,Aston Villa
+24432870,W. Dennis,30569,Bournemouth
+55321203,J. Ekomié,66311,Angers
+98422835,Brad-Hamilton Mantsounga,72268,Nice
+71574475,Issiaga Camara,72268,Nice
+68053244,Daniel Semedo,83331,Lorient
+26085052,Bandiougou Fadiga,83331,Lorient
+62209427,R. Kouda,445857,Parma
+32354,G. Zappa,417774,Cagliari
+65775094,K. Mutandwa,417774,Cagliari
+74295697,M. Saka,82480,Toulouse
+48966694,M. Sauer,82480,Toulouse
+28165333,Erwan Colas,1105382,Le Mans
+72313787,Hamidou Makalou,90990,Stade Brestois 29
+25532661,Romain Cagnon,90990,Stade Brestois 29
+63725564,Yvann Titi,94394,Estac Troyes
+76990515,Adam Zulevic,422029,Genoa
+147147,Cristian Rivero,453516,Valencia
+67227314,Marcos Navarro,453516,Valencia
+67967270,Matteo Palma,421178,Udinese
+81731160,Branimir Mlačić,421178,Udinese
+106626912,Riccardo Cassano,762429,Como
+9653,Álvaro Morata,762429,Como
+7637672,Mathias Jensen,47589,Brentford
+388647,Richarlison,40781,Tottenham
+74915064,Luca Williams-Barnett,40781,Tottenham
+91076083,J. Iddrissou,430539,Inter
+5082280,S. Pizzignacco,1344513,Monza
+45231172,N. Galazzi,1344513,Monza
+67959703,Solomon Loubao,1344513,Monza
+7179788,Saud Abdulhamid,99500,Lens
+51937949,L. Coulibaly,92692,Auxerre
+107850029,Salimou Danfakha,92692,Auxerre
+46800600,Rafa Romero,456920,Sevilla FC
+52608997,C. Humphreys,49291,Ipswich
+79297162,J. T. Bi,635630,Sunderland
+44902732,Chadi Riad,45036,Crystal Palace
+4174401,Jean-Philippe Mateta,45036,Crystal Palace
+87905510,Jayden Lienou,54397,Leeds
+62677937,Alfie Cresswell,54397,Leeds
+3075254,K. Dowell,55248,Hull City
+46429978,Mikel Goti,467132,Real Sociedad
+3298078,B. Wilson,1146230,Coventry
+3217578,Josh Eccles,1146230,Coventry
+78725290,Ghianny Kodia,81629,Strasbourg
+1832173,Augusto Batalla,620312,Rayo Vallecano
+21179060,Isi Palazón,620312,Rayo Vallecano
+75574359,Sergio Lozano,620312,Rayo Vallecano
+99740942,Ivan Alonso Martin,620312,Rayo Vallecano
+62632696,Mikel Rodriguez,462026,Alavés
+64545698,Kevin Sánchez,463728,Deportivo La Coruña
+70123865,Nordin Al Lal,679031,Elche
+93265361,K. Tunde,459473,Levante
+108552955,I. Galdin,459473,Levante
+105156338,Alberto Calatrava,459473,Levante
+7803985,Rubén Vargas,456920,Sevilla FC
+71418627,Edu Altozano,456920,Sevilla FC
+60731769,Grégoire Swiderski,462026,Alavés
+11346790,M. Diarra,462026,Alavés
