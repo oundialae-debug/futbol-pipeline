@@ -114,7 +114,7 @@ def ucl():
     w = csv.DictWriter(f, fieldnames=B.COLUMNAS + ["jugador"])
     if nuevo: w.writeheader()
     try:
-        for mid in partidos.match_id.astype(str):
+        for mid in partidos.sort_values("fecha", ascending=False).match_id.astype(str):  # lo más reciente primero
             if mid in ya: continue
             j = B.pedir(f"/box-score/{mid}")
             if j is None:
