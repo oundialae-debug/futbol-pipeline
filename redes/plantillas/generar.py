@@ -45,9 +45,20 @@ def visible(c):
     return _hex(h, min(max(l, .52), .62), max(s, .7))
 
 
+import equipaciones as EQ  # paleta de la app 2yellow (usuario 06/10: "úsala de ahora en adelante")
+
+
 def color(eq):
-    """El color con más carácter de la 1ª equipación (rojo de Bélgica, azul de Francia...).
-    Si la camiseta es blanca/negra sin color fuerte (Alemania, Real Madrid), blanco."""
+    """Color del equipo con la paleta de la app (equipaciones.json: 1ª equipación real, aclarada a contraste 3:1 sobre
+    el fondo). Equipo sin ficha: gris neutro de la app (nunca blanco: antes solo el Barça salía en color)."""
+    if eq.get("color"):
+        return visible(eq["color"])
+    n = eq.get("kit", eq.get("name", ""))
+    return EQ.kit(n, 0)["barra"]
+
+
+def color_viejo(eq):
+    """Método anterior (kits_camiseta.json de recursos); ya no se usa, se deja de referencia."""
     if eq.get("color"):
         return visible(eq["color"])
     if eq["name"] in COLOR_FIJO:
@@ -82,7 +93,14 @@ def _alternativas(eq):
 
 def separar(h, a):
     """Usuario, 06/10: nunca el mismo color para los dos equipos (Croacia y España, ambos rojos).
-    Cambia al equipo cuyo otro color es más suyo (Croacia → blanco de los cuadros); si nada sirve, amarillo."""
+    Regla de la app: el local con su 1ª; el visitante con la 1ª, 2ª o 3ª que no choque (como en la TV)."""
+    if h.get("color") or a.get("color"):
+        pass
+    else:
+        kl, kv = EQ.colores_partido(h.get("kit", h["name"]), a.get("kit", a["name"]))
+        h["c"], a["c"] = kl["barra"], kv["barra"]
+        h["t"], a["t"] = texto_sobre(h["c"]), texto_sobre(a["c"])
+        return
     if not _parecidos(h["c"], a["c"]):
         return
     mejor = None

@@ -11,6 +11,10 @@ cambios de código y archivos".
   el resumen y dónde leerlo.
 - Lo más nuevo, arriba.
 
+## 06/10/2026 — redes: paleta de la app 2yellow
+- Qué: `redes/plantillas/equipaciones.py` y `redes/plantillas/colores/` copiados de app_apostador (rama ccr-302c299f-kdpgwl): 1ª, 2ª y 3ª equipación reales de Wikipedia, regla sin choques (local 1ª, visitante la primera que no choque) y aclarado a contraste 3:1. `generar.py` usa esa paleta; equipo sin ficha = gris de la app (no blanco). `colores_redes.yml` amplía la tabla a los 172 equipos de las 5 grandes y la Champions con el mismo método (Wikipedia, sin API de fútbol).
+- Por qué: usuario: en el XI solo los del Barça salían en azul y el resto en blanco; "la app ya corrigió la paleta, cógela y úsala de ahora en adelante".
+
 ## 06/10/2026 — redes: XI sin banda contraria y con desempate futbolístico
 - Qué: nadie juega en la banda contraria (extremo/lateral); empate de índice en la misma posición -> dato del rol (ATT xG+xA/90, MID pases clave/90, DEF entradas+int/90, GK paradas/90), luego minutos.
 - Por qué: usuario: Lamine (extremo derecho) salía de extremo izquierdo al empatar con Olise. Ahora Lamine gana el desempate (1,37 vs 1,35 xG+xA/90) y Olise queda fuera.

@@ -1,0 +1,32 @@
+name: Colores 2yellow para redes (equipaciones desde Wikipedia)
+# Mismo método que la app (app_apostador/colores): fichas y dibujos de camiseta de Wikipedia/Commons, sin API de fútbol.
+# Para todos los equipos de redes/plantillas/colores/equipos_extra.txt (5 grandes + Champions) y los de la app.
+on:
+  workflow_dispatch:
+  push:
+    paths: [redes/plantillas/colores/ejecutar.txt]
+permissions: {contents: write}
+concurrency: {group: colores-redes}
+jobs:
+  colores:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - run: pip install -q pillow
+      - name: Colores
+        working-directory: redes/plantillas/colores
+        run: |
+          python wiki_equipaciones.py > fichas.txt
+          python colores_camiseta.py > resultado.txt
+          python curar.py > curado.txt
+      - name: Guardar
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"; git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add redes/plantillas/colores
+          git diff --staged --quiet && exit 0
+          git commit -m "colores redes: equipaciones desde Wikipedia"
+          for i in 1 2 3; do git pull --rebase -X theirs -q && git push && break; git rebase --abort 2>/dev/null; sleep 5; done
