@@ -66,7 +66,7 @@ def texto(tipo, hook, l, v, d=None):
             "daily": {"dato": "Yesterday's record and today's calls. 📊",
                       "pregunta": "How did our calls do yesterday? And today's? 👇",
                       "reto": "Yesterday's results vs the model. Today's calls inside. 👇"}}[tipo][hook]
-    return f"{base}\nData, not betting advice. 18+\n{TAGS}"
+    return f"{base}\n{TAGS}"  # usuario 06/10: sin "not betting advice. 18+"
 
 def pendiente(tipo, partido, video_rel, txt, due, variante, musica):
     L = cargar(PEND, [])

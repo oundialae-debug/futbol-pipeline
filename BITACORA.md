@@ -11,8 +11,8 @@ cambios de código y archivos".
   el resumen y dónde leerlo.
 - Lo más nuevo, arriba.
 
-## 06/10/2026 — redes: fuera "Data, not betting advice · 18+" de las imágenes
-- Qué: `generar.py` sin pie por defecto.
+## 06/10/2026 — redes: fuera "Data, not betting advice · 18+" de las imágenes y descripciones
+- Qué: `generar.py` sin pie por defecto; `backup_redes.py` sin esa línea en el texto.
 - Por qué: usuario: confunde a los algoritmos y limita las publicaciones.
 
 ## 06/10/2026 — redes: correcciones del usuario y caras en jugador vs jugador
