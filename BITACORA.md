@@ -11,6 +11,10 @@ cambios de código y archivos".
   el resumen y dónde leerlo.
 - Lo más nuevo, arriba.
 
+## 06/10/2026 — redes_api: no perder descargas por conflictos
+- Qué: el paso Guardar usa `pull --rebase -X theirs`.
+- Por qué: la 1ª descarga de nombres (~250 llamadas) se perdió al chocar con la de Champions en `jugadores_nombres.csv`.
+
 ## 06/10/2026 — redes: XI/Index con Champions
 - Qué: `datos_formatos.py` acepta fuente `ucl` y `clubes+ucl` (XI del mes) y avisa si hay jugadores sin nombre.
 - Por qué: usuario: XI de la Champions en sus semanas y XI del mes juntando ligas y Champions.

@@ -33,4 +33,5 @@ jobs:
           git add data/redes
           git diff --cached --quiet && exit 0
           git commit -m "redes api: ${{ inputs.modo }} $(date -u +%F)"
-          for i in 1 2 3; do git pull --rebase -q && git push && break; sleep 5; done
+          # -X theirs: si dos descargas tocan el mismo CSV, gana la de este run (la otra se puede repetir; antes se perdía todo)
+          for i in 1 2 3; do git pull --rebase -X theirs -q && git push && break; git rebase --abort 2>/dev/null; sleep 5; done
