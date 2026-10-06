@@ -11,6 +11,10 @@ cambios de código y archivos".
   el resumen y dónde leerlo.
 - Lo más nuevo, arriba.
 
+## 06/10/2026 — redes: 2yellow Index POR ROL (ataque, medio, defensa, portero)
+- Qué: `datos_formatos.py`: cada métrica en percentil dentro de su rol y periodo, media ponderada x100. ATT: G+A, regates, pases clave, xG+xA, tiros a puerta, nota. MID: pases clave, pases, % pase, entradas+intercepciones, duelos, regates, G+A, nota. DEF: entradas+intercepciones, duelos (ganados y %), pase, tarjetas (resta), nota. GK: paradas, goles evitados, encajados. `indice <desde> <hasta> <fuente> "" ATT|MID|DEF|GK`; el XI usa el mismo índice y nadie juega fuera de su rol; mínimo de minutos común (60' por partido de su equipo, tope 360'); Mundial/Euro sin filtro de nivel.
+- Por qué: usuario: "si usas G+A somos lo mismo que los demás" y Lamine fuera. Comprobado: en el Mundial hizo 1 gol y 0 asistencias (también según fuentes externas); con el índice por rol destaca en regate (4,0/90) pero queda 12º de 18 atacantes.
+
 ## 06/10/2026 — redes: 2yellow XI con posiciones reales y filtro de nivel
 - Qué: el XI reparte los huecos del 4-3-3 (LW, ST, RW, CM, DM, CM, LB, CB, CB, RB, GK) según la posición de `jugador_perfil.csv` (secundaria con -3), reparto global por 2yellow Index (el mismo del top 5); sin perfil, solo hueco central; si falta un hueco, no se publica. Selecciones: solo partidos entre dos equipos del top 40 FIFA. Índice con tope 99.
 - Por qué: usuario: "Harry de extremo derecho, Porro de central" y onces con jugadores de selecciones menores (Bielorrusia, Estonia) por notas altas contra rivales flojos.

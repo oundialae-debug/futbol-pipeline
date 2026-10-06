@@ -14,6 +14,58 @@ sys.path.insert(0, str(Path(__file__).parent))
 import datos_rankings as R  # noqa: E402
 
 TOP_FIFA = 40
+SUMAS = ["goalsScored", "assists", "expectedGoals", "expectedAssists", "shotsOnTarget", "passesKey", "dribblesSuccessful",
+         "passesSuccessful", "passesTotal", "tacklesTotal", "interceptionsTotal", "duelsWon", "duelsTotal", "cardsYellow",
+         "cardsRed", "goalsSaved", "goalsConceded", "expectedGoalsPrevented"]
+
+# 2yellow Index POR ROL (usuario 06/10: "si usas G+A somos lo mismo que los demás"). Cada métrica se pasa a percentil
+# dentro de su rol y periodo (0-1); el índice es la media ponderada x100. Métrica sin datos (p. ej. xG en selecciones):
+# se quita y se reparte su peso. (nombre visible, función por fila, peso, menos_es_mejor)
+p90 = lambda c: (lambda r: (r[c] / r.minutos * 90) if pd.notna(r[c]) else None)
+ROLES = {
+    "ATT": [("G+A/90", lambda r: r.ga / r.minutos * 90, .22, False), ("dribbles/90", p90("dribblesSuccessful"), .20, False),
+            ("key passes/90", p90("passesKey"), .18, False), ("xG+xA/90", lambda r: ((r.expectedGoals or 0) + (r.expectedAssists or 0)) / r.minutos * 90
+                                                               if pd.notna(r.expectedGoals) else None, .15, False),
+            ("shots on target/90", p90("shotsOnTarget"), .10, False), ("rating", lambda r: r.nota, .15, False)],
+    "MID": [("key passes/90", p90("passesKey"), .18, False), ("passes/90", p90("passesSuccessful"), .12, False),
+            ("pass %", lambda r: r.passesSuccessful / r.passesTotal * 100 if r.passesTotal else None, .10, False),
+            ("tackles+int/90", lambda r: ((r.tacklesTotal or 0) + (r.interceptionsTotal or 0)) / r.minutos * 90, .18, False),
+            ("duels won/90", p90("duelsWon"), .12, False), ("dribbles/90", p90("dribblesSuccessful"), .10, False),
+            ("G+A/90", lambda r: r.ga / r.minutos * 90, .08, False), ("rating", lambda r: r.nota, .12, False)],
+    "DEF": [("tackles+int/90", lambda r: ((r.tacklesTotal or 0) + (r.interceptionsTotal or 0)) / r.minutos * 90, .28, False),
+            ("duels won/90", p90("duelsWon"), .18, False),
+            ("duel %", lambda r: r.duelsWon / r.duelsTotal * 100 if r.duelsTotal else None, .14, False),
+            ("pass %", lambda r: r.passesSuccessful / r.passesTotal * 100 if r.passesTotal else None, .10, False),
+            ("passes/90", p90("passesSuccessful"), .08, False),
+            ("cards/90", lambda r: ((r.cardsYellow or 0) + 3 * (r.cardsRed or 0)) / r.minutos * 90, .07, True),
+            ("rating", lambda r: r.nota, .15, False)],
+    "GK": [("saves/90", p90("goalsSaved"), .35, False), ("goals prevented", lambda r: r.expectedGoalsPrevented, .30, False),
+           ("conceded/90", p90("goalsConceded"), .20, True), ("rating", lambda r: r.nota, .15, False)],
+}
+ROL_DE = {"Left Winger": "ATT", "Right Winger": "ATT", "Centre-Forward": "ATT", "Second Striker": "ATT",
+          "Left Midfield": "ATT", "Right Midfield": "ATT", "Central Midfield": "MID", "Defensive Midfield": "MID",
+          "Attacking Midfield": "MID", "Centre-Back": "DEF", "Left-Back": "DEF", "Right-Back": "DEF", "Goalkeeper": "GK"}
+ROL_LINEA = {"FW": "ATT", "MF": "MID", "DF": "DEF", "GK": "GK"}
+
+
+def puntuar(t):
+    """Añade rol, índice por rol (0-99) y las 2 métricas que más le suben (para el desglose)."""
+    pos = posiciones()
+    t = t.copy()
+    t["rol"] = [ROL_DE.get(next(iter(pos.get(int(i), ({None}, set()))[0]), None), ROL_LINEA[l]) for i, l in zip(t.jugador_id, t.pos)]
+    t["indice"], t["detalle"] = 0.0, ""
+    for rol, mets in ROLES.items():
+        g = t[t.rol == rol]
+        if g.empty:
+            continue
+        vals = pd.DataFrame({m[0]: [m[1](r) for _, r in g.iterrows()] for m in mets}, index=g.index).astype(float)
+        pct = pd.DataFrame({m[0]: vals[m[0]].rank(pct=True, ascending=not m[3]) for m in mets if vals[m[0]].notna().any()})
+        pesos = pd.Series({m[0]: m[2] for m in mets if m[0] in pct})
+        t.loc[g.index, "indice"] = ((pct * pesos).sum(axis=1) / pesos.sum() * 100).clip(upper=99).round(0)
+        mejores = pct.drop(columns=["rating"], errors="ignore").apply(lambda r: r.nlargest(2).index.tolist(), axis=1)
+        fmt = lambda v, m: f"{v:.0f}{'%' if '%' in m else ''} {m.replace(' %', '')}" if "%" in m else f"{v:.1f} {m}"
+        t.loc[g.index, "detalle"] = [" · ".join(fmt(vals.at[i, m], m) for m in mejores[i]) for i in g.index]
+    return t
 POS = {"Goalkeeper": "GK", "Defender": "DF", "Midfielder": "MF", "Forward": "FW", "Attacker": "FW"}
 FORMACION = {"GK": 1, "DF": 4, "MF": 3, "FW": 3}
 
@@ -26,7 +78,8 @@ def filas(desde, hasta, fuente):
         # solo partidos entre dos selecciones del top 40 FIFA.
         rk = pd.read_csv(ROOT / "data/selecciones/ranking_fifa.csv").sort_values("fecha").groupby("equipo").puesto.last()
         top = set(rk[rk <= TOP_FIFA].index)
-        p = p[p.local.isin(top) & p.visitante.isin(top)]
+        torneo = p.competicion.isin(["World Cup", "European Championship", "Euro", "Copa America"])
+        p = p[torneo | (p.local.isin(top) & p.visitante.isin(top))]  # en un Mundial/Euro todos los rivales cuentan
         j = pd.read_csv(ROOT / "data/selecciones/jugadores_partido.csv", low_memory=False)
         j = j[j.match_id.isin(p.match_id)].copy()
         eq = pd.concat([p[["local_id", "local"]].set_axis(["id", "n"], axis=1), p[["visitante_id", "visitante"]].set_axis(["id", "n"], axis=1)])
@@ -42,15 +95,19 @@ def filas(desde, hasta, fuente):
         j["equipo"] = j.equipo_id.map(dict(zip(eq.id, eq.n)))
         j = j.dropna(subset=["jugador"])
         comp = "Top 5 leagues"
-    for c in ("nota", "minutos", "goalsScored", "assists"):
-        j[c] = pd.to_numeric(j[c], errors="coerce")
+    for c in ["nota", "minutos"] + SUMAS:
+        j[c] = pd.to_numeric(j.get(c), errors="coerce")
     j = j[j.minutos > 0]
-    t = j.groupby(["jugador_id"]).agg(jugador=("jugador", "last"), equipo=("equipo", "last"), posicion=("posicion", "last"),
-                                      nota=("nota", "mean"), partidos=("match_id", "nunique"), minutos=("minutos", "sum"),
-                                      ga=("goalsScored", "sum"), asis=("assists", "sum")).reset_index()
-    t["ga"] = t.ga.fillna(0) + t.asis.fillna(0)
-    t["indice"] = (10 * t.nota + 3 * t.ga / t.partidos).clip(upper=99).round(0)  # tope 99: un 100 parecería un error
+    agg = {"jugador": ("jugador", "last"), "equipo": ("equipo", "last"), "posicion": ("posicion", "last"),
+           "nota": ("nota", "mean"), "partidos": ("match_id", "nunique"), "minutos": ("minutos", "sum")}
+    agg.update({c: (c, lambda v: v.sum(min_count=1)) for c in SUMAS})
+    t = j.groupby("jugador_id").agg(**agg).reset_index()
+    t["ga"] = t.goalsScored.fillna(0) + t.assists.fillna(0)
     t["pos"] = t.posicion.map(POS)
+    # Mínimo de minutos COMÚN al XI y a los top 5 (si no, las cifras no cuadran entre formatos):
+    # 60' por partido que jugó SU equipo en el periodo (jornada = 60', parón de 2 = 120'), tope 360' (torneo).
+    pj_eq = j.groupby("equipo").match_id.nunique()
+    t = t[t.minutos >= (60 * t.equipo.map(pj_eq).fillna(1)).clip(upper=360)]
     return t.dropna(subset=["nota", "pos"]), comp
 
 
@@ -92,13 +149,16 @@ def xi(desde, hasta, fuente="clubes", titulo=None):
     jugador-hueco de mejor a peor (antes Porro salía de central y Kane donde no era). Sin perfil (Messi, fuera de las
     5 grandes) solo puede ir al hueco central de su línea."""
     t, comp = filas(desde, hasta, fuente)
-    largo = (pd.Timestamp(hasta) - pd.Timestamp(desde)).days > 10
-    t = t[t.minutos >= (360 if largo else 60)]  # torneo: 4 partidos; jornada: titular
+    t = puntuar(t)
     pos = posiciones()
     parejas = []
+    t = t.reset_index(drop=True)
     for k, (linea, hueco, valen) in enumerate(HUECOS):
+        rol_hueco = ROL_LINEA[linea]
         central = {"ST": "FW", "DM": "MF", "CB": "DF", "GK": "GK"}.get(hueco)
         for r in t.itertuples():
+            if r.rol != rol_hueco:  # nunca fuera de su rol (antes Dasilva, lateral, salía de extremo)
+                continue
             if int(r.jugador_id) in pos:
                 prin, sec = pos[int(r.jugador_id)]
                 if prin & valen:
@@ -118,20 +178,26 @@ def xi(desde, hasta, fuente="clubes", titulo=None):
     jug = [{"name": corto(R.visible_nombre(asign[k].jugador)), "team": asign[k].equipo, "pos": linea, "slot": hueco,
             "value": int(asign[k].indice), "rating": round(float(asign[k].nota), 1)} for k, (linea, hueco, _) in enumerate(HUECOS)]
     render(f"xi_{desde}_{hasta}", {"template": "xi", "competition": comp, "kicker": "2yellow XI",
-                                   "title": titulo or "Team of the week", "metric": "Best 2yellow Index (rating ×10 + 3 per G+A per game) · 4-3-3", "players": jug,
+                                   "title": titulo or "Team of the week", "metric": "2yellow Index by role: attack, midfield, defence · 4-3-3", "players": jug,
                                    "question": "Who did we leave out?"})
 
 
-def indice(desde, hasta, fuente="clubes", titulo=None):
+NOMBRE_ROL = {"ATT": ("Attackers", "Goals+assists, dribbles, key passes, shots"),
+              "MID": ("Midfielders", "Chances created, passing, tackles+interceptions, duels"),
+              "DEF": ("Defenders", "Tackles+interceptions, duels won, passing, discipline"),
+              "GK": ("Goalkeepers", "Saves, goals prevented, goals conceded")}
+
+
+def indice(desde, hasta, fuente="clubes", titulo=None, rol="ATT"):
+    """2yellow Index de un rol: top 5 de la semana (ATT, MID, DEF o GK). Desglose: las 2 métricas donde más destaca."""
     t, comp = filas(desde, hasta, fuente)
-    largo = (pd.Timestamp(hasta) - pd.Timestamp(desde)).days > 10
-    t = t[t.minutos >= (360 if largo else 120)]
-    t = t.sort_values(["indice", "nota"], ascending=False).head(5)
-    rows = [{"name": R.visible_nombre(r.jugador), "team": r.equipo, "value": int(r.indice),
-             "detail": f"{r.nota:.1f} rating · {int(r.ga)} G+A"} for r in t.itertuples()]
-    render(f"indice_{desde}_{hasta}", {"template": "indice", "competition": comp, "kicker": "2yellow Index",
-                                       "title": titulo or "The week's top 5", "metric": "Match rating ×10 + 3 per goal or assist per game",
-                                       "rows": rows, "question": "Who's too low?"})
+    t = puntuar(t)
+    t = t[t.rol == rol].sort_values(["indice", "nota"], ascending=False).head(5)
+    nombre, expl = NOMBRE_ROL[rol]
+    rows = [{"name": R.visible_nombre(r.jugador), "team": r.equipo, "value": int(r.indice), "detail": r.detalle} for r in t.itertuples()]
+    render(f"indice_{rol}_{desde}_{hasta}", {"template": "indice", "competition": comp, "kicker": f"2yellow Index · {nombre}",
+                                             "title": titulo or f"Top 5 {nombre.lower()} of the week", "metric": expl,
+                                             "rows": rows, "question": "Who's too low?"})
 
 
 if __name__ == "__main__":
