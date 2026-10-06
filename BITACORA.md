@@ -11,6 +11,10 @@ cambios de código y archivos".
   el resumen y dónde leerlo.
 - Lo más nuevo, arriba.
 
+## 06/10/2026 — redes: LIENZO=reel para Instagram con música
+- Qué: `generar.py` con `LIENZO=reel`: 1080x1920 con todo el contenido en la franja central 4:5 (y 318-1608).
+- Por qué: al ponerle música, Instagram convierte la foto en reel (9:16) y el feed solo enseña el centro: al XI de septiembre se le cortaron el logo y la pregunta.
+
 ## 06/10/2026 — colores de 228 equipos, curados
 - Qué: `colores_redes.yml` bajó 226 equipos de Wikipedia; `curar.py` corrige a mano 26 con motivo (rayas donde manda el color del club: Inter, Milan, Atalanta, Leverkusen, Bournemouth, PSG, Toulouse, Palace, Brighton; lisas sin secundario: Madrid, Sevilla, Villarreal, Tottenham, Marseille...; sin ficha: Frosinone, Olympiakos).
 - Por qué: revisión antes de usarlos (regla de rigor). Comprobado: Inter azul vs Milan rojo; Liverpool vs United -> United con la 2ª.

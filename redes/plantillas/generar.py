@@ -186,9 +186,13 @@ def pagina(d, kicker, cuerpo, pregunta):
 CARRUSEL = os.environ.get("CARRUSEL") == "1"
 # Imágenes sueltas de Instagram: 4:5 (1080x1350). IG recorta las 9:16 en el perfil y el feed (usuario 06/10).
 IG45 = os.environ.get("LIENZO") == "4x5"
+# LIENZO=reel (usuario 06/10): Instagram convierte la foto en reel al ponerle música (9:16) y en el feed solo enseña
+# la franja central 4:5 (y 285-1635). Imagen 9:16 con TODO el contenido dentro de esa franja (margen incluido).
+IGREEL = os.environ.get("LIENZO") == "reel"
 ALTO = 1350 if IG45 else 1920
-CSS_IG45 = ("body,#v{height:1350px!important}.safe{top:56px!important;bottom:48px!important;right:80px!important}"
-            ".num{font-size:230px!important}") if IG45 else ""
+CSS_IG45 = (("body,#v{height:1350px!important}" if IG45 else "")
+            + ".safe{top:%dpx!important;bottom:%dpx!important;right:80px!important}.num{font-size:230px!important}"
+            % ((56, 48) if IG45 else (318, 312))) if (IG45 or IGREEL) else ""
 SIN_SWIPE = {"follow", "our_calls", "picks_list", "head_to_head", "ranking", "xi", "indice"}
 SWIPE = (f'<span style="display:inline-flex;align-items:center;gap:10px;background:{AMARILLO};color:{NOCHE};'
          f'border-radius:999px;padding:8px 22px;font-size:34px;font-weight:900;font-stretch:85%">Swipe'
