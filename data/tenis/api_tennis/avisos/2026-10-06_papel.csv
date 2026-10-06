@@ -19,3 +19,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-06 20:37,12168097,Challenger Men Singles,Antofagasta,G. I. Justo,F. Comesana,menos,26.5,0.7544,0.625,1.5,True,actual
 2026-10-06 20:40,12168073,Challenger Men Singles,Palermo (Italy) - Qualification,J. Clarke,G. Piraino,menos,20.5,0.6107,0.4853,1.909,True,aprendida
 2026-10-06 21:21,12168591,Challenger Men Singles,Antofagasta,G. Heide,M. Zeitune,más,25.5,0.8444,0.5889,1.571,True,aprendida
+2026-10-06 21:48,12168590,Challenger Men Singles,Antofagasta,J. Aguilar Cardozo,N. Villalon,menos,19.5,0.5505,0.4634,2.0,True,aprendida
