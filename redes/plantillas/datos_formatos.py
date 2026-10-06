@@ -125,6 +125,8 @@ def filas(desde, hasta, fuente):
     # 60' por partido que jugó SU equipo en el periodo (jornada = 60', parón de 2 = 120'), tope 360' (torneo).
     pj_eq = j.groupby("equipo").match_id.nunique()
     t = t[t.minutos >= (60 * t.equipo.map(pj_eq).fillna(1)).clip(upper=360)]
+    if (pd.Timestamp(hasta) - pd.Timestamp(desde)).days > 10:  # mes o torneo: muestra mínima (antes colaba un AEK con 1 partido)
+        t = t[t.minutos >= 270]
     return t.dropna(subset=["nota", "pos"]), comp
 
 

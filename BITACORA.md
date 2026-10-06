@@ -11,6 +11,10 @@ cambios de código y archivos".
   el resumen y dónde leerlo.
 - Lo más nuevo, arriba.
 
+## 06/10/2026 — redes: XI de septiembre (ligas + Champions)
+- Qué: mínimo 270' en periodos de más de 10 días (mes, torneo). Con nombres completos (redes_api nombres: 3.489) y 17/18 partidos de Champions J1: Dahmen; Mitchell, Tah, Tarkowski, Davies; Cásseres, Mainoo, Nico Paz; Olise, Raphinha, Lamine Yamal.
+- Por qué: sin mínimo se colaban jugadores de AEK/Sporting con un solo partido de Champions. Comprobado fuera: Olise y Yamal son los nombres del mes; Groß (jugador del mes de la Premier) queda 21º de 113 medios.
+
 ## 06/10/2026 — redes_api: no perder descargas por conflictos
 - Qué: el paso Guardar usa `pull --rebase -X theirs`.
 - Por qué: la 1ª descarga de nombres (~250 llamadas) se perdió al chocar con la de Champions en `jugadores_nombres.csv`.
