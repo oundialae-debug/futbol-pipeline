@@ -83,7 +83,7 @@ event_key,tipo,torneo,jugador1,jugador2,estado,sets,juegos_totales
 12168312,Itf Women Doubles,W35 Wagga Wagga 2,Kosaka/ Yuhan,Hosoki/ Sato,,-,0
 12168317,Atp Singles,Shanghai,B. Tomic,T. Skatov,,-,0
 12168318,Atp Singles,Shanghai,M. Zheng,N. Mejia,,-,0
-12168320,Itf Women Singles,W15 Maanshan 7,J. Sun,F. A. Lin,,-,0
+12168320,Itf Women Singles,W15 Maanshan 7,J. Sun,F. A. Lin,Set 1,0 - 0,4
 12168321,Itf Women Singles,W15 Maanshan 7,M. Guo,S. Ye,,-,0
 12168322,Itf Women Singles,W15 Maanshan 7,E. Kuznetsova,S. H. Jang,,-,0
 12168323,Itf Women Singles,W15 Maanshan 7,Y. Chen,M. Wang,,-,0
@@ -354,3 +354,32 @@ event_key,tipo,torneo,jugador1,jugador2,estado,sets,juegos_totales
 12168713,Itf Women Singles,W15 Cipolletti (Argentina),L. F. Britez Risso,M. Madrid Rocca,,-,0
 12168714,Itf Women Singles,W15 Cipolletti (Argentina),F. B. Moron,J. M. Gonzalez Daniele,,-,0
 12168715,Itf Women Singles,W15 Cipolletti (Argentina),L. Moyano,S. N. Nappi,,-,0
+12168716,Itf Men Singles,M15 Quito 3,M. Covato,D. Bobo,,-,0
+12168717,Itf Men Singles,M15 Quito 3,J. S. Dominguez Collado,M. Mbithi,,-,0
+12168718,Itf Men Singles,M15 Quito 3,I. Dreycopp,J. S. Gomez,,-,0
+12168719,Itf Men Singles,M15 Quito 3,J. S. Osorio,T. Meneo,,-,0
+12168720,Itf Men Singles,M15 Quito 3,F. De Dios,D. A. Macias Elizalde,,-,0
+12168721,Itf Men Singles,M15 Quito 3,A. Hernandez,M. A. Galarraga,,-,0
+12168722,Itf Men Singles,M15 Quito 3,V. Bini,P. Alvarado,,-,0
+12168723,Itf Men Singles,M15 Quito 3,M. Clark,B. Casares,,-,0
+12168724,Itf Men Doubles,M15 Quito 3,Castro/ Guadagno,Claro/ Leon Mantilla,,-,0
+12168725,Itf Men Doubles,M15 Quito 3,Leston/ Perlov,Covato/ Voelzke,,-,0
+12168726,Itf Men Doubles,M15 Quito 3,Dreycopp/ Zeitune,Gomez/ Urrea,,-,0
+12168727,Itf Men Doubles,M15 Quito 3,Rico Arias/ Salazar,De Dios/ Grippo,,-,0
+12168728,Itf Men Doubles,M15 Quito 3,Hidalgo Aguirre/ Sicco,Mbithi/ Osorio,,-,0
+12168729,Itf Women Singles,W50 Lexington,L. Bajraliu,L. Ma,,-,0
+12168730,Itf Women Singles,W50 Lexington,K. Collins,H. Inoue,,-,0
+12168731,Itf Women Singles,W50 Lexington,M. Rapolu,D. Hewitt,,-,0
+12168732,Itf Women Singles,W50 Lexington,A. Rus,E. Koike,,-,0
+12168733,Itf Women Doubles,W50 Lexington,Baker/ Clarke,Evans/ Frey,,-,0
+12168734,Itf Women Doubles,W50 Lexington,Hui/ Kononova,El Jardi/ Yamalapalli,,-,0
+12168735,Itf Women Doubles,W50 Lexington,Osuigwe/ Osuigwe,Heuser/ Sharabura,,-,0
+12168736,Itf Women Doubles,W50 Lexington,Capurro Taborda/ Perez Alarcon,Slama/ Tanasie,,-,0
+12168737,Itf Women Doubles,W15 Cipolletti (Argentina),Duarte/ Lassaga,Gobbi Monllau/ Zornada,,-,0
+12168738,Itf Women Doubles,W15 Cipolletti (Argentina),BASEL/ Vega Gudino,Mondati/ Tejada,,-,0
+12168739,Itf Women Doubles,W15 Cipolletti (Argentina),Baier/ Corvalan,Doldan/ Sosa,,-,0
+12168740,Itf Women Doubles,W15 Cipolletti (Argentina),Nappi/ Rondinoni,Cristobal/ Pajello,,-,0
+12168741,Itf Women Doubles,W15 Cipolletti (Argentina),Sanchez/ Urrutia,Maruca/ Soto Neira,,-,0
+12168742,Itf Women Doubles,W15 Cipolletti (Argentina),Jurado/ Madrid Rocca,Mai/ Markus,,-,0
+12168743,Itf Women Doubles,W15 Cipolletti (Argentina),Bhatia/ Moron,Larraya Guidi/ Meabe,,-,0
+12168744,Itf Women Doubles,W15 Cipolletti (Argentina),Britez Risso/ Kawano Cho,Bulbarella/ Rain Contreras,,-,0

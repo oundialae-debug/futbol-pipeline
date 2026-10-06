@@ -1,559 +1,653 @@
 hora,event_key,tipo,torneo,superficie,jugador1,jugador2,mejor_de,p_saque1,p_saque2,gana1_modelo,gana1_casa,linea,mas_modelo,mas_casa,cuota_mas,cuota_menos,principal,esperado_modelo
-2026-10-06 00:11,12167978,Challenger Men Singles,Wuning 3 (China) - Qualification,Hard,M. Imamura,K. Uchida,3,0.66,0.6225,0.6798,0.6199,20.5,0.7177,0.5764,1.58,2.15,1,25.25
-2026-10-06 00:11,12167981,Challenger Men Singles,Wuning 3 (China) - Qualification,Hard,K. Samrej,E. Aguiard,3,0.6625,0.6575,0.5244,0.4865,21.5,0.7289,0.611,1.49,2.34,0,26.16
-2026-10-06 00:11,12167981,Challenger Men Singles,Wuning 3 (China) - Qualification,Hard,K. Samrej,E. Aguiard,3,0.6625,0.6575,0.5244,0.4865,22.5,0.6401,0.5257,1.75,1.94,0,26.16
-2026-10-06 00:11,12167981,Challenger Men Singles,Wuning 3 (China) - Qualification,Hard,K. Samrej,E. Aguiard,3,0.6625,0.6575,0.5244,0.4865,23.5,0.5638,0.4865,1.9,1.8,1,26.16
-2026-10-06 00:11,12167982,Challenger Men Singles,Wuning 3 (China) - Qualification,Hard,K. Smith,H. Moriya,3,0.6825,0.6275000000000001,0.7502,0.6789,21.5,0.6543,0.5543,1.64,2.04,1,25.1
-2026-10-06 00:11,12167983,Challenger Men Singles,Wuning 3 (China) - Qualification,Hard,F. Sun,A. Wang,3,0.72,0.64,0.83,0.87,19.5,0.7828,0.611,1.56,2.45,0,24.92
-2026-10-06 00:11,12167983,Challenger Men Singles,Wuning 3 (China) - Qualification,Hard,F. Sun,A. Wang,3,0.72,0.64,0.83,0.87,20.5,0.6981,0.5144,1.86,1.97,1,24.92
-2026-10-06 00:11,12167983,Challenger Men Singles,Wuning 3 (China) - Qualification,Hard,F. Sun,A. Wang,3,0.72,0.64,0.83,0.87,21.5,0.6431,0.4519,2.11,1.74,0,24.92
-2026-10-06 00:11,12167984,Challenger Men Singles,Wuning 3 (China) - Qualification,Hard,E. Zhu,K. Matsuda,3,0.63,0.65,0.4015,0.6925,20.5,0.7378,0.5726,1.59,2.13,0,25.55
-2026-10-06 00:11,12167984,Challenger Men Singles,Wuning 3 (China) - Qualification,Hard,E. Zhu,K. Matsuda,3,0.63,0.65,0.4015,0.6925,21.5,0.6893,0.5163,1.78,1.9,1,25.55
-2026-10-06 00:11,12167984,Challenger Men Singles,Wuning 3 (China) - Qualification,Hard,E. Zhu,K. Matsuda,3,0.63,0.65,0.4015,0.6925,22.5,0.6068,0.4368,2.14,1.66,0,25.55
-2026-10-06 00:11,12168047,Challenger Men Singles,Villena,Clay,F. Balshaw,J. J. Schwaerzler,3,0.665,0.6175,0.7229,0.589,21.5,0.6479,0.6026,1.51,2.29,0,24.98
-2026-10-06 00:11,12168047,Challenger Men Singles,Villena,Clay,F. Balshaw,J. J. Schwaerzler,3,0.665,0.6175,0.7229,0.589,22.5,0.5645,0.5203,1.77,1.92,1,24.98
-2026-10-06 00:11,12168047,Challenger Men Singles,Villena,Clay,F. Balshaw,J. J. Schwaerzler,3,0.665,0.6175,0.7229,0.589,23.5,0.5003,0.4645,1.96,1.7,0,24.98
-2026-10-06 00:11,12168047,Challenger Men Singles,Villena,Clay,F. Balshaw,J. J. Schwaerzler,3,0.665,0.6175,0.7229,0.589,24.5,0.4884,0.4599,2.02,1.72,0,24.98
-2026-10-06 00:11,12168051,Challenger Men Singles,Villena,Clay,D. Glinka,G. Onclin,3,0.5825,0.5925,0.4481,0.6413,21.5,0.6422,0.545,1.67,2.0,0,24.71
-2026-10-06 00:11,12168051,Challenger Men Singles,Villena,Clay,D. Glinka,G. Onclin,3,0.5825,0.5925,0.4481,0.6413,22.5,0.5729,0.477,1.93,1.76,1,24.71
-2026-10-06 00:11,12168051,Challenger Men Singles,Villena,Clay,D. Glinka,G. Onclin,3,0.5825,0.5925,0.4481,0.6413,23.5,0.5237,0.4533,2.05,1.7,0,24.71
-2026-10-06 00:11,12168051,Challenger Men Singles,Villena,Clay,D. Glinka,G. Onclin,3,0.5825,0.5925,0.4481,0.6413,24.5,0.5024,0.4465,2.07,1.67,0,24.71
-2026-10-06 00:11,12168052,Challenger Men Singles,Villena,Clay,A. Holmgren,P. Martinez,3,0.6025,0.63,0.3628,0.584,21.5,0.651,0.5649,1.61,2.09,0,24.94
-2026-10-06 00:11,12168052,Challenger Men Singles,Villena,Clay,A. Holmgren,P. Martinez,3,0.6025,0.63,0.3628,0.584,22.5,0.5755,0.5081,1.82,1.88,1,24.94
-2026-10-06 00:11,12168052,Challenger Men Singles,Villena,Clay,A. Holmgren,P. Martinez,3,0.6025,0.63,0.3628,0.584,23.5,0.5197,0.4481,2.02,1.64,0,24.94
-2026-10-06 00:11,12168052,Challenger Men Singles,Villena,Clay,A. Holmgren,P. Martinez,3,0.6025,0.63,0.3628,0.584,24.5,0.5035,0.4465,2.07,1.67,0,24.94
-2026-10-06 00:11,12168059,Challenger Men Singles,Braga,Clay,D. Blanch,M. Alcala Gurri,3,0.5425,0.5975,0.2343,0.2937,19.5,0.6762,0.56,1.65,2.1,0,23.48
-2026-10-06 00:11,12168059,Challenger Men Singles,Braga,Clay,D. Blanch,M. Alcala Gurri,3,0.5425,0.5975,0.2343,0.2937,20.5,0.6065,0.4973,1.87,1.85,1,23.48
-2026-10-06 00:11,12168059,Challenger Men Singles,Braga,Clay,D. Blanch,M. Alcala Gurri,3,0.5425,0.5975,0.2343,0.2937,21.5,0.5542,0.4533,2.05,1.7,0,23.48
-2026-10-06 00:11,12168060,Challenger Men Singles,Braga,Clay,F. Broska,L. Neumayer,3,0.6125,0.635,0.3878,0.253,19.5,0.7868,0.5623,1.65,2.12,0,25.17
-2026-10-06 00:11,12168060,Challenger Men Singles,Braga,Clay,F. Broska,L. Neumayer,3,0.6125,0.635,0.3878,0.253,20.5,0.7156,0.527,1.75,1.95,0,25.17
-2026-10-06 00:11,12168060,Challenger Men Singles,Braga,Clay,F. Broska,L. Neumayer,3,0.6125,0.635,0.3878,0.253,21.5,0.6658,0.4798,1.93,1.78,1,25.17
-2026-10-06 00:11,12168060,Challenger Men Singles,Braga,Clay,F. Broska,L. Neumayer,3,0.6125,0.635,0.3878,0.253,22.5,0.5882,0.4263,2.18,1.62,0,25.17
-2026-10-06 00:11,12168061,Challenger Men Singles,Braga,Clay,M. Dodig,A. Pellegrino,3,0.645,0.645,0.5,0.5257,21.5,0.7061,0.5521,1.72,2.12,0,25.8
-2026-10-06 00:11,12168061,Challenger Men Singles,Braga,Clay,M. Dodig,A. Pellegrino,3,0.645,0.645,0.5,0.5257,22.5,0.6222,0.5,1.83,1.83,1,25.8
-2026-10-06 00:11,12168061,Challenger Men Singles,Braga,Clay,M. Dodig,A. Pellegrino,3,0.645,0.645,0.5,0.5257,23.5,0.5537,0.4341,2.19,1.68,0,25.8
-2026-10-06 00:11,12168064,Challenger Men Singles,Braga,Clay,M. Moeller,T. Torres,3,0.595,0.5325,0.7957,0.6305,19.5,0.6513,0.5737,1.62,2.18,0,23.13
-2026-10-06 00:11,12168064,Challenger Men Singles,Braga,Clay,M. Moeller,T. Torres,3,0.595,0.5325,0.7957,0.6305,20.5,0.5815,0.5108,1.82,1.9,1,23.13
-2026-10-06 00:11,12168064,Challenger Men Singles,Braga,Clay,M. Moeller,T. Torres,3,0.595,0.5325,0.7957,0.6305,21.5,0.529,0.4624,2.0,1.72,0,23.13
-2026-10-06 00:11,12168066,Challenger Men Singles,Braga,Clay,S. Nagal,L. Mikrut,3,0.5875,0.6325000000000001,0.282,0.2643,19.5,0.7382,0.5916,1.56,2.26,0,24.4
-2026-10-06 00:11,12168066,Challenger Men Singles,Braga,Clay,S. Nagal,L. Mikrut,3,0.5875,0.6325000000000001,0.282,0.2643,20.5,0.6651,0.5203,1.77,1.92,1,24.4
-2026-10-06 00:11,12168066,Challenger Men Singles,Braga,Clay,S. Nagal,L. Mikrut,3,0.5875,0.6325000000000001,0.282,0.2643,21.5,0.6127,0.4607,2.06,1.76,0,24.4
-2026-10-06 00:11,12168066,Challenger Men Singles,Braga,Clay,S. Nagal,L. Mikrut,3,0.5875,0.6325000000000001,0.282,0.2643,22.5,0.5393,0.4377,2.12,1.65,0,24.4
-2026-10-06 00:11,12168067,Challenger Men Singles,Braga,Clay,T. Pereira,P. Martin Tiffon,3,0.5875,0.6275000000000001,0.3036,0.3498,20.5,0.6725,0.5649,1.61,2.09,0,24.5
-2026-10-06 00:11,12168067,Challenger Men Singles,Braga,Clay,T. Pereira,P. Martin Tiffon,3,0.5875,0.6275000000000001,0.3036,0.3498,21.5,0.6205,0.5109,1.8,1.88,1,24.5
-2026-10-06 00:11,12168067,Challenger Men Singles,Braga,Clay,T. Pereira,P. Martin Tiffon,3,0.5875,0.6275000000000001,0.3036,0.3498,22.5,0.5476,0.4523,2.01,1.66,0,24.5
-2026-10-06 00:11,12168071,Challenger Men Singles,Palermo (Italy) - Qualification,Clay,P. Basile,M. Giunta,3,0.6325000000000001,0.6575,0.3782,0.5397,21.5,0.6912,0.5726,1.59,2.13,0,25.59
-2026-10-06 00:11,12168071,Challenger Men Singles,Palermo (Italy) - Qualification,Clay,P. Basile,M. Giunta,3,0.6325000000000001,0.6575,0.3782,0.5397,22.5,0.607,0.4946,1.86,1.82,1,25.59
-2026-10-06 00:11,12168071,Challenger Men Singles,Palermo (Italy) - Qualification,Clay,P. Basile,M. Giunta,3,0.6325000000000001,0.6575,0.3782,0.5397,23.5,0.5392,0.4457,2.04,1.64,0,25.59
-2026-10-06 00:11,12168071,Challenger Men Singles,Palermo (Italy) - Qualification,Clay,P. Basile,M. Giunta,3,0.6325000000000001,0.6575,0.3782,0.5397,24.5,0.528,0.44,2.1,1.65,0,25.59
-2026-10-06 00:11,12168073,Challenger Men Singles,Palermo (Italy) - Qualification,Clay,J. Clarke,G. Piraino,3,0.58,0.5375,0.7135,0.6188,19.5,0.6972,0.5767,1.6,2.18,0,23.77
-2026-10-06 00:11,12168073,Challenger Men Singles,Palermo (Italy) - Qualification,Clay,J. Clarke,G. Piraino,3,0.58,0.5375,0.7135,0.6188,20.5,0.6299,0.5328,1.71,1.95,0,23.77
-2026-10-06 00:11,12168073,Challenger Men Singles,Palermo (Italy) - Qualification,Clay,J. Clarke,G. Piraino,3,0.58,0.5375,0.7135,0.6188,21.5,0.5787,0.4837,1.9,1.78,1,23.77
-2026-10-06 00:11,12168073,Challenger Men Singles,Palermo (Italy) - Qualification,Clay,J. Clarke,G. Piraino,3,0.58,0.5375,0.7135,0.6188,22.5,0.5146,0.4274,2.13,1.59,0,23.77
-2026-10-06 00:11,12168075,Challenger Men Singles,Palermo (Italy) - Qualification,Clay,S. Pieri,M. Krumich,3,0.58,0.6175,0.3138,0.3933,21.5,0.617,0.5339,1.72,1.97,1,24.42
-2026-10-06 00:11,12168075,Challenger Men Singles,Palermo (Italy) - Qualification,Clay,S. Pieri,M. Krumich,3,0.58,0.6175,0.3138,0.3933,22.5,0.546,0.4479,2.12,1.72,0,24.42
-2026-10-06 00:11,12168075,Challenger Men Singles,Palermo (Italy) - Qualification,Clay,S. Pieri,M. Krumich,3,0.58,0.6175,0.3138,0.3933,23.5,0.496,0.4353,2.05,1.58,0,24.42
-2026-10-06 00:11,12168076,Challenger Men Singles,Palermo (Italy) - Qualification,Clay,L. Potenza,E. Dalla Valle,3,0.6025,0.66,0.2348,0.2505,19.5,0.7409,0.5795,1.56,2.15,0,24.43
-2026-10-06 00:11,12168076,Challenger Men Singles,Palermo (Italy) - Qualification,Clay,L. Potenza,E. Dalla Valle,3,0.6025,0.66,0.2348,0.2505,20.5,0.6633,0.5148,1.8,1.91,1,24.43
-2026-10-06 00:11,12168076,Challenger Men Singles,Palermo (Italy) - Qualification,Clay,L. Potenza,E. Dalla Valle,3,0.6025,0.66,0.2348,0.2505,21.5,0.6094,0.4645,1.96,1.7,0,24.43
-2026-10-06 00:11,12168077,Challenger Men Singles,Palermo (Italy) - Qualification,Clay,M. Ribecai,B. Sanchez Martinez,3,0.595,0.5925,0.513,0.5437,20.5,0.6994,0.5516,1.65,2.03,0,24.83
-2026-10-06 00:11,12168077,Challenger Men Singles,Palermo (Italy) - Qualification,Clay,M. Ribecai,B. Sanchez Martinez,3,0.595,0.5925,0.513,0.5437,21.5,0.6495,0.5,1.84,1.84,1,24.83
-2026-10-06 00:11,12168077,Challenger Men Singles,Palermo (Italy) - Qualification,Clay,M. Ribecai,B. Sanchez Martinez,3,0.595,0.5925,0.513,0.5437,22.5,0.5791,0.4457,2.04,1.64,0,24.83
-2026-10-06 00:11,12168078,Challenger Men Singles,Palermo (Italy) - Qualification,Clay,O. Roca Batalla,F. Passaro,3,0.64,0.64,0.5,0.4142,21.5,0.699,0.5516,1.65,2.03,0,25.68
-2026-10-06 00:11,12168078,Challenger Men Singles,Palermo (Italy) - Qualification,Clay,O. Roca Batalla,F. Passaro,3,0.64,0.64,0.5,0.4142,22.5,0.6167,0.4892,1.9,1.82,1,25.68
-2026-10-06 00:11,12168078,Challenger Men Singles,Palermo (Italy) - Qualification,Clay,O. Roca Batalla,F. Passaro,3,0.64,0.64,0.5,0.4142,23.5,0.5506,0.4351,2.09,1.61,0,25.68
-2026-10-06 00:11,12168079,Challenger Men Singles,Palermo (Italy) - Qualification,Clay,C. Sanchez Jover,F. Forti,3,0.5725,0.5875,0.422,0.4582,21.5,0.6336,0.545,1.67,2.0,0,24.57
-2026-10-06 00:11,12168079,Challenger Men Singles,Palermo (Italy) - Qualification,Clay,C. Sanchez Jover,F. Forti,3,0.5725,0.5875,0.422,0.4582,22.5,0.5656,0.5054,1.83,1.87,1,24.57
-2026-10-06 00:11,12168079,Challenger Men Singles,Palermo (Italy) - Qualification,Clay,C. Sanchez Jover,F. Forti,3,0.5725,0.5875,0.422,0.4582,23.5,0.5179,0.4624,2.0,1.72,0,24.57
-2026-10-06 00:11,12168079,Challenger Men Singles,Palermo (Italy) - Qualification,Clay,C. Sanchez Jover,F. Forti,3,0.5725,0.5875,0.422,0.4582,24.5,0.4953,0.4465,2.07,1.67,0,24.57
-2026-10-06 00:11,12168094,Challenger Men Singles,Antofagasta,Clay,A. Barrena,M. Pucinelli de Almeida,3,0.535,0.5875,0.2435,0.4563,20.5,0.6075,0.5535,1.67,2.07,0,23.47
-2026-10-06 00:11,12168094,Challenger Men Singles,Antofagasta,Clay,A. Barrena,M. Pucinelli de Almeida,3,0.535,0.5875,0.2435,0.4563,21.5,0.5556,0.5,1.85,1.85,1,23.47
-2026-10-06 00:11,12168094,Challenger Men Singles,Antofagasta,Clay,A. Barrena,M. Pucinelli de Almeida,3,0.535,0.5875,0.2435,0.4563,22.5,0.4921,0.44,2.1,1.65,0,23.47
-2026-10-06 00:11,12168096,Challenger Men Singles,Antofagasta,Clay,S. Heredia,E. Ribeiro,3,0.6,0.6625,0.216,0.2575,19.5,0.7295,0.5687,1.6,2.11,0,24.26
-2026-10-06 00:11,12168096,Challenger Men Singles,Antofagasta,Clay,S. Heredia,E. Ribeiro,3,0.6,0.6625,0.216,0.2575,20.5,0.6508,0.5027,1.83,1.85,1,24.26
-2026-10-06 00:11,12168096,Challenger Men Singles,Antofagasta,Clay,S. Heredia,E. Ribeiro,3,0.6,0.6625,0.216,0.2575,21.5,0.5961,0.4538,2.01,1.67,0,24.26
-2026-10-06 00:11,12168097,Challenger Men Singles,Antofagasta,Clay,G. I. Justo,F. Comesana,3,0.6,0.625,0.3745,0.3485,20.5,0.7008,0.5308,1.75,1.98,0,24.92
-2026-10-06 00:11,12168097,Challenger Men Singles,Antofagasta,Clay,G. I. Justo,F. Comesana,3,0.6,0.625,0.3745,0.3485,21.5,0.6503,0.4798,1.93,1.78,1,24.92
-2026-10-06 00:11,12168097,Challenger Men Singles,Antofagasta,Clay,G. I. Justo,F. Comesana,3,0.6,0.625,0.3745,0.3485,22.5,0.5758,0.4263,2.18,1.62,0,24.92
-2026-10-06 00:11,12168098,Challenger Men Singles,Antofagasta,Clay,F. Meligeni Alves,J. P. Varillas,3,0.615,0.645,0.3527,0.467,21.5,0.6637,0.5467,1.7,2.05,0,25.16
-2026-10-06 00:11,12168098,Challenger Men Singles,Antofagasta,Clay,F. Meligeni Alves,J. P. Varillas,3,0.615,0.645,0.3527,0.467,22.5,0.5843,0.4865,1.9,1.8,1,25.16
-2026-10-06 00:11,12168098,Challenger Men Singles,Antofagasta,Clay,F. Meligeni Alves,J. P. Varillas,3,0.615,0.645,0.3527,0.467,23.5,0.5236,0.4465,2.07,1.67,0,25.16
-2026-10-06 00:11,12168100,Challenger Men Singles,Antofagasta,Clay,F. Roncadelli,T. Barrios Vera,3,0.5725,0.5875,0.422,0.3178,19.5,0.7507,0.5767,1.6,2.18,0,24.57
-2026-10-06 00:11,12168100,Challenger Men Singles,Antofagasta,Clay,F. Roncadelli,T. Barrios Vera,3,0.5725,0.5875,0.422,0.3178,20.5,0.6838,0.5108,1.82,1.9,1,24.57
-2026-10-06 00:11,12168100,Challenger Men Singles,Antofagasta,Clay,F. Roncadelli,T. Barrios Vera,3,0.5725,0.5875,0.422,0.3178,21.5,0.6336,0.4624,2.0,1.72,0,24.57
-2026-10-06 00:11,12168100,Challenger Men Singles,Antofagasta,Clay,F. Roncadelli,T. Barrios Vera,3,0.5725,0.5875,0.422,0.3178,22.5,0.5656,0.4209,2.16,1.57,0,24.57
-2026-10-06 00:11,12168101,Challenger Men Singles,Antofagasta,Clay,T. Seyboth Wild,M. Soto,3,0.685,0.6,0.8545,0.7843,19.5,0.6905,0.566,1.61,2.1,0,23.63
-2026-10-06 00:11,12168101,Challenger Men Singles,Antofagasta,Clay,T. Seyboth Wild,M. Soto,3,0.685,0.6,0.8545,0.7843,20.5,0.6052,0.4946,1.87,1.83,1,23.63
-2026-10-06 00:11,12168101,Challenger Men Singles,Antofagasta,Clay,T. Seyboth Wild,M. Soto,3,0.685,0.6,0.8545,0.7843,21.5,0.5468,0.4457,2.04,1.64,0,23.63
-2026-10-06 00:11,12168102,Challenger Men Singles,Antofagasta,Clay,J. B. Torres,P. Boscardin Dias,3,0.5750000000000001,0.55,0.6297,0.4871,20.5,0.6628,0.5467,1.7,2.05,0,24.23
-2026-10-06 00:11,12168102,Challenger Men Singles,Antofagasta,Clay,J. B. Torres,P. Boscardin Dias,3,0.5750000000000001,0.55,0.6297,0.4871,21.5,0.6124,0.4973,1.87,1.85,1,24.23
-2026-10-06 00:11,12168102,Challenger Men Singles,Antofagasta,Clay,J. B. Torres,P. Boscardin Dias,3,0.5750000000000001,0.55,0.6297,0.4871,22.5,0.5469,0.4377,2.12,1.65,0,24.23
-2026-10-06 00:11,12168108,Wta Singles,Beijing,Hard,S. Kraus,N. Bartunkova,3,0.55,0.61,0.2159,0.2284,13.5,0.9957,0.9053,1.02,9.75,0,23.43
-2026-10-06 00:11,12168108,Wta Singles,Beijing,Hard,S. Kraus,N. Bartunkova,3,0.55,0.61,0.2159,0.2284,14.5,0.984,0.88,1.05,7.7,0,23.43
-2026-10-06 00:11,12168108,Wta Singles,Beijing,Hard,S. Kraus,N. Bartunkova,3,0.55,0.61,0.2159,0.2284,15.5,0.9552,0.8371,1.08,5.55,0,23.43
-2026-10-06 00:11,12168108,Wta Singles,Beijing,Hard,S. Kraus,N. Bartunkova,3,0.55,0.61,0.2159,0.2284,16.5,0.9049,0.7353,1.26,3.5,0,23.43
-2026-10-06 00:11,12168108,Wta Singles,Beijing,Hard,S. Kraus,N. Bartunkova,3,0.55,0.61,0.2159,0.2284,17.5,0.8314,0.6517,1.4,2.62,0,23.43
-2026-10-06 00:11,12168108,Wta Singles,Beijing,Hard,S. Kraus,N. Bartunkova,3,0.55,0.61,0.2159,0.2284,18.5,0.7512,0.5691,1.62,2.14,0,23.43
-2026-10-06 00:11,12168108,Wta Singles,Beijing,Hard,S. Kraus,N. Bartunkova,3,0.55,0.61,0.2159,0.2284,19.5,0.6718,0.5233,1.84,2.02,1,23.43
-2026-10-06 00:11,12168108,Wta Singles,Beijing,Hard,S. Kraus,N. Bartunkova,3,0.55,0.61,0.2159,0.2284,20.5,0.6003,0.4465,2.07,1.67,0,23.43
-2026-10-06 00:11,12168108,Wta Singles,Beijing,Hard,S. Kraus,N. Bartunkova,3,0.55,0.61,0.2159,0.2284,21.5,0.5472,0.399,2.29,1.52,0,23.43
-2026-10-06 00:11,12168108,Wta Singles,Beijing,Hard,S. Kraus,N. Bartunkova,3,0.55,0.61,0.2159,0.2284,22.5,0.4816,0.3591,2.57,1.44,0,23.43
-2026-10-06 00:11,12168108,Wta Singles,Beijing,Hard,S. Kraus,N. Bartunkova,3,0.55,0.61,0.2159,0.2284,23.5,0.4381,0.3301,2.8,1.38,0,23.43
-2026-10-06 00:11,12168108,Wta Singles,Beijing,Hard,S. Kraus,N. Bartunkova,3,0.55,0.61,0.2159,0.2284,24.5,0.4161,0.3162,2.92,1.35,0,23.43
-2026-10-06 00:11,12168108,Wta Singles,Beijing,Hard,S. Kraus,N. Bartunkova,3,0.55,0.61,0.2159,0.2284,25.5,0.3752,0.2889,3.2,1.3,0,23.43
-2026-10-06 00:11,12168108,Wta Singles,Beijing,Hard,S. Kraus,N. Bartunkova,3,0.55,0.61,0.2159,0.2284,26.5,0.3298,0.2604,3.55,1.25,0,23.43
-2026-10-06 00:11,12168108,Wta Singles,Beijing,Hard,S. Kraus,N. Bartunkova,3,0.55,0.61,0.2159,0.2284,27.5,0.2873,0.2345,3.95,1.21,0,23.43
-2026-10-06 00:11,12168108,Wta Singles,Beijing,Hard,S. Kraus,N. Bartunkova,3,0.55,0.61,0.2159,0.2284,28.5,0.2409,0.2063,4.5,1.17,0,23.43
-2026-10-06 00:11,12168108,Wta Singles,Beijing,Hard,S. Kraus,N. Bartunkova,3,0.55,0.61,0.2159,0.2284,29.5,0.1931,0.1785,5.2,1.13,0,23.43
-2026-10-06 00:11,12168108,Wta Singles,Beijing,Hard,S. Kraus,N. Bartunkova,3,0.55,0.61,0.2159,0.2284,30.5,0.1474,0.1516,6.1,1.09,0,23.43
-2026-10-06 00:11,12168108,Wta Singles,Beijing,Hard,S. Kraus,N. Bartunkova,3,0.55,0.61,0.2159,0.2284,31.5,0.1051,0.1268,7.3,1.06,0,23.43
-2026-10-06 00:11,12168108,Wta Singles,Beijing,Hard,S. Kraus,N. Bartunkova,3,0.55,0.61,0.2159,0.2284,32.5,0.0693,0.1062,8.75,1.04,0,23.43
-2026-10-06 00:11,12168108,Wta Singles,Beijing,Hard,S. Kraus,N. Bartunkova,3,0.55,0.61,0.2159,0.2284,33.5,0.0462,0.0955,9.75,1.03,0,23.43
-2026-10-06 00:11,12168123,Challenger Women Singles,Suzhou,Hard,H. Guo,A. Falei,3,0.5425,0.5675,0.3699,0.4453,19.5,0.7245,0.6195,1.48,2.41,0,24.16
-2026-10-06 00:11,12168123,Challenger Women Singles,Suzhou,Hard,H. Guo,A. Falei,3,0.5425,0.5675,0.3699,0.4453,20.5,0.659,0.5322,1.67,1.9,0,24.16
-2026-10-06 00:11,12168123,Challenger Women Singles,Suzhou,Hard,H. Guo,A. Falei,3,0.5425,0.5675,0.3699,0.4453,21.5,0.6088,0.4918,1.86,1.8,1,24.16
-2026-10-06 00:11,12168123,Challenger Women Singles,Suzhou,Hard,H. Guo,A. Falei,3,0.5425,0.5675,0.3699,0.4453,22.5,0.5441,0.4176,2.19,1.57,0,24.16
-2026-10-06 00:11,12168123,Challenger Women Singles,Suzhou,Hard,H. Guo,A. Falei,3,0.5425,0.5675,0.3699,0.4453,23.5,0.5,0.369,2.48,1.45,0,24.16
-2026-10-06 00:11,12168123,Challenger Women Singles,Suzhou,Hard,H. Guo,A. Falei,3,0.5425,0.5675,0.3699,0.4453,24.5,0.4741,0.3424,2.67,1.39,0,24.16
-2026-10-06 00:11,12168123,Challenger Women Singles,Suzhou,Hard,H. Guo,A. Falei,3,0.5425,0.5675,0.3699,0.4453,25.5,0.4282,0.307,2.98,1.32,0,24.16
-2026-10-06 00:11,12168126,Challenger Women Singles,Suzhou,Hard,E. Jones,M. Hontama,3,0.5575,0.5325,0.6306,0.589,19.5,0.7197,0.6104,1.5,2.35,0,24.08
-2026-10-06 00:11,12168126,Challenger Women Singles,Suzhou,Hard,E. Jones,M. Hontama,3,0.5575,0.5325,0.6306,0.589,20.5,0.6549,0.5205,1.75,1.9,0,24.08
-2026-10-06 00:11,12168126,Challenger Women Singles,Suzhou,Hard,E. Jones,M. Hontama,3,0.5575,0.5325,0.6306,0.589,21.5,0.6048,0.4973,1.85,1.83,1,24.08
-2026-10-06 00:11,12168126,Challenger Women Singles,Suzhou,Hard,E. Jones,M. Hontama,3,0.5575,0.5325,0.6306,0.589,22.5,0.5409,0.4101,2.23,1.55,0,24.08
-2026-10-06 00:11,12168126,Challenger Women Singles,Suzhou,Hard,E. Jones,M. Hontama,3,0.5575,0.5325,0.6306,0.589,23.5,0.4977,0.3636,2.52,1.44,0,24.08
-2026-10-06 00:11,12168126,Challenger Women Singles,Suzhou,Hard,E. Jones,M. Hontama,3,0.5575,0.5325,0.6306,0.589,24.5,0.4707,0.3374,2.71,1.38,0,24.08
-2026-10-06 00:11,12168126,Challenger Women Singles,Suzhou,Hard,E. Jones,M. Hontama,3,0.5575,0.5325,0.6306,0.589,25.5,0.4242,0.2968,3.08,1.3,0,24.08
-2026-10-06 00:11,12168128,Challenger Women Singles,Suzhou,Hard,Y. Putintseva,Y. Shao,3,0.6175,0.485,0.9603,0.9151,14.5,0.918,0.75,1.25,3.75,0,19.77
-2026-10-06 00:11,12168128,Challenger Women Singles,Suzhou,Hard,Y. Putintseva,Y. Shao,3,0.6175,0.485,0.9603,0.9151,15.5,0.8262,0.625,1.5,2.5,0,19.77
-2026-10-06 00:11,12168128,Challenger Women Singles,Suzhou,Hard,Y. Putintseva,Y. Shao,3,0.6175,0.485,0.9603,0.9151,16.5,0.705,0.5,1.85,1.85,1,19.77
-2026-10-06 00:11,12168128,Challenger Women Singles,Suzhou,Hard,Y. Putintseva,Y. Shao,3,0.6175,0.485,0.9603,0.9151,17.5,0.5813,0.3913,2.38,1.53,0,19.77
-2026-10-06 00:11,12168128,Challenger Women Singles,Suzhou,Hard,Y. Putintseva,Y. Shao,3,0.6175,0.485,0.9603,0.9151,18.5,0.4761,0.3119,3.0,1.36,0,19.77
-2026-10-06 00:11,12168129,Challenger Women Singles,Suzhou,Hard,M. Sawangkaew,L. Fruhvirtova,3,0.5725,0.5425,0.6547,0.5974,19.5,0.719,0.6256,1.46,2.44,0,24.08
-2026-10-06 00:11,12168129,Challenger Women Singles,Suzhou,Hard,M. Sawangkaew,L. Fruhvirtova,3,0.5725,0.5425,0.6547,0.5974,20.5,0.6529,0.5339,1.79,2.05,0,24.08
-2026-10-06 00:11,12168129,Challenger Women Singles,Suzhou,Hard,M. Sawangkaew,L. Fruhvirtova,3,0.5725,0.5425,0.6547,0.5974,21.5,0.6024,0.4843,1.97,1.85,1,24.08
-2026-10-06 00:11,12168129,Challenger Women Singles,Suzhou,Hard,M. Sawangkaew,L. Fruhvirtova,3,0.5725,0.5425,0.6547,0.5974,22.5,0.5376,0.4319,2.21,1.68,0,24.08
-2026-10-06 00:11,12168129,Challenger Women Singles,Suzhou,Hard,M. Sawangkaew,L. Fruhvirtova,3,0.5725,0.5425,0.6547,0.5974,23.5,0.4937,0.386,2.37,1.49,0,24.08
-2026-10-06 00:11,12168129,Challenger Women Singles,Suzhou,Hard,M. Sawangkaew,L. Fruhvirtova,3,0.5725,0.5425,0.6547,0.5974,24.5,0.4681,0.3636,2.52,1.44,0,24.08
-2026-10-06 00:11,12168129,Challenger Women Singles,Suzhou,Hard,M. Sawangkaew,L. Fruhvirtova,3,0.5725,0.5425,0.6547,0.5974,25.5,0.4227,0.3254,2.82,1.36,0,24.08
-2026-10-06 00:11,12168144,Wta Singles,Beijing,Hard,D. Snigur,M. Andreeva,3,0.53,0.5875,0.223,0.1756,14.5,0.9804,0.8484,1.09,6.1,0,23.27
-2026-10-06 00:11,12168144,Wta Singles,Beijing,Hard,D. Snigur,M. Andreeva,3,0.53,0.5875,0.223,0.1756,15.5,0.9483,0.8209,1.2,5.5,0,23.27
-2026-10-06 00:11,12168144,Wta Singles,Beijing,Hard,D. Snigur,M. Andreeva,3,0.53,0.5875,0.223,0.1756,16.5,0.8937,0.6754,1.37,2.85,0,23.27
-2026-10-06 00:11,12168144,Wta Singles,Beijing,Hard,D. Snigur,M. Andreeva,3,0.53,0.5875,0.223,0.1756,17.5,0.8191,0.589,1.57,2.25,0,23.27
-2026-10-06 00:11,12168144,Wta Singles,Beijing,Hard,D. Snigur,M. Andreeva,3,0.53,0.5875,0.223,0.1756,18.5,0.7391,0.5352,1.65,1.9,0,23.27
-2026-10-06 00:11,12168144,Wta Singles,Beijing,Hard,D. Snigur,M. Andreeva,3,0.53,0.5875,0.223,0.1756,19.5,0.6615,0.4906,1.9,1.83,1,23.27
-2026-10-06 00:11,12168144,Wta Singles,Beijing,Hard,D. Snigur,M. Andreeva,3,0.53,0.5875,0.223,0.1756,20.5,0.5927,0.4112,2.32,1.62,0,23.27
-2026-10-06 00:11,12168144,Wta Singles,Beijing,Hard,D. Snigur,M. Andreeva,3,0.53,0.5875,0.223,0.1756,21.5,0.5406,0.3672,2.55,1.48,0,23.27
-2026-10-06 00:11,12168144,Wta Singles,Beijing,Hard,D. Snigur,M. Andreeva,3,0.53,0.5875,0.223,0.1756,22.5,0.4779,0.323,2.85,1.36,0,23.27
-2026-10-06 00:11,12168144,Wta Singles,Beijing,Hard,D. Snigur,M. Andreeva,3,0.53,0.5875,0.223,0.1756,23.5,0.4367,0.3097,2.92,1.31,0,23.27
-2026-10-06 00:11,12168144,Wta Singles,Beijing,Hard,D. Snigur,M. Andreeva,3,0.53,0.5875,0.223,0.1756,24.5,0.4121,0.2857,3.25,1.3,0,23.27
-2026-10-06 00:11,12168144,Wta Singles,Beijing,Hard,D. Snigur,M. Andreeva,3,0.53,0.5875,0.223,0.1756,25.5,0.3695,0.2604,3.55,1.25,0,23.27
-2026-10-06 00:11,12168144,Wta Singles,Beijing,Hard,D. Snigur,M. Andreeva,3,0.53,0.5875,0.223,0.1756,26.5,0.3235,0.2345,3.95,1.21,0,23.27
-2026-10-06 00:11,12168144,Wta Singles,Beijing,Hard,D. Snigur,M. Andreeva,3,0.53,0.5875,0.223,0.1756,31.5,0.097,0.116,8.0,1.05,0,23.27
-2026-10-06 00:11,12168145,Wta Singles,Beijing,Hard,L. Noskova,E. Alexandrova,3,0.65,0.605,0.715,0.7301,17.5,0.9037,0.7677,1.18,3.9,0,24.75
-2026-10-06 00:11,12168145,Wta Singles,Beijing,Hard,L. Noskova,E. Alexandrova,3,0.65,0.605,0.715,0.7301,18.5,0.8385,0.6803,1.33,2.83,0,24.75
-2026-10-06 00:11,12168145,Wta Singles,Beijing,Hard,L. Noskova,E. Alexandrova,3,0.65,0.605,0.715,0.7301,19.5,0.7605,0.6084,1.5,2.33,0,24.75
-2026-10-06 00:11,12168145,Wta Singles,Beijing,Hard,L. Noskova,E. Alexandrova,3,0.65,0.605,0.715,0.7301,20.5,0.6857,0.5403,1.71,2.01,0,24.75
-2026-10-06 00:11,12168145,Wta Singles,Beijing,Hard,L. Noskova,E. Alexandrova,3,0.65,0.605,0.715,0.7301,21.5,0.6335,0.4629,2.1,1.81,1,24.75
-2026-10-06 00:11,12168145,Wta Singles,Beijing,Hard,L. Noskova,E. Alexandrova,3,0.65,0.605,0.715,0.7301,22.5,0.5549,0.4233,2.18,1.6,0,24.75
-2026-10-06 00:11,12168145,Wta Singles,Beijing,Hard,L. Noskova,E. Alexandrova,3,0.65,0.605,0.715,0.7301,23.5,0.4965,0.3834,2.38,1.48,0,24.75
-2026-10-06 00:11,12168145,Wta Singles,Beijing,Hard,L. Noskova,E. Alexandrova,3,0.65,0.605,0.715,0.7301,24.5,0.4823,0.3676,2.46,1.43,0,24.75
-2026-10-06 00:11,12168145,Wta Singles,Beijing,Hard,L. Noskova,E. Alexandrova,3,0.65,0.605,0.715,0.7301,25.5,0.4444,0.3301,2.74,1.35,0,24.75
-2026-10-06 00:11,12168193,Challenger Women Singles,Samsun,Hard,E. Arango,A. Aksu,3,0.55,0.5525,0.4867,0.6627,18.5,0.8087,0.6441,1.42,2.57,0,24.36
-2026-10-06 00:11,12168193,Challenger Women Singles,Samsun,Hard,E. Arango,A. Aksu,3,0.55,0.5525,0.4867,0.6627,19.5,0.7386,0.567,1.68,2.2,0,24.36
-2026-10-06 00:11,12168193,Challenger Women Singles,Samsun,Hard,E. Arango,A. Aksu,3,0.55,0.5525,0.4867,0.6627,20.5,0.6743,0.4856,1.96,1.85,1,24.36
-2026-10-06 00:11,12168193,Challenger Women Singles,Samsun,Hard,E. Arango,A. Aksu,3,0.55,0.5525,0.4867,0.6627,21.5,0.6246,0.4404,2.16,1.7,0,24.36
-2026-10-06 00:11,12168193,Challenger Women Singles,Samsun,Hard,E. Arango,A. Aksu,3,0.55,0.5525,0.4867,0.6627,22.5,0.5598,0.369,2.48,1.45,0,24.36
-2026-10-06 00:11,12168193,Challenger Women Singles,Samsun,Hard,E. Arango,A. Aksu,3,0.55,0.5525,0.4867,0.6627,23.5,0.5153,0.3254,2.82,1.36,0,24.36
-2026-10-06 00:11,12168193,Challenger Women Singles,Samsun,Hard,E. Arango,A. Aksu,3,0.55,0.5525,0.4867,0.6627,24.5,0.4888,0.2982,3.06,1.3,0,24.36
-2026-10-06 00:11,12168195,Challenger Women Singles,Samsun,Hard,C. Buyukakcay,L. Klimovicova,3,0.535,0.615,0.1468,0.2247,16.5,0.868,0.7196,1.27,3.26,0,22.53
-2026-10-06 00:11,12168195,Challenger Women Singles,Samsun,Hard,C. Buyukakcay,L. Klimovicova,3,0.535,0.615,0.1468,0.2247,17.5,0.7804,0.693,1.32,2.98,0,22.53
-2026-10-06 00:11,12168195,Challenger Women Singles,Samsun,Hard,C. Buyukakcay,L. Klimovicova,3,0.535,0.615,0.1468,0.2247,18.5,0.6907,0.527,1.75,1.95,0,22.53
-2026-10-06 00:11,12168195,Challenger Women Singles,Samsun,Hard,C. Buyukakcay,L. Klimovicova,3,0.535,0.615,0.1468,0.2247,19.5,0.6073,0.5202,1.78,1.93,0,22.53
-2026-10-06 00:11,12168195,Challenger Women Singles,Samsun,Hard,C. Buyukakcay,L. Klimovicova,3,0.535,0.615,0.1468,0.2247,20.5,0.5343,0.473,1.95,1.75,0,22.53
-2026-10-06 00:11,12168195,Challenger Women Singles,Samsun,Hard,C. Buyukakcay,L. Klimovicova,3,0.535,0.615,0.1468,0.2247,21.5,0.4805,0.4919,1.88,1.82,1,22.53
-2026-10-06 00:11,12168195,Challenger Women Singles,Samsun,Hard,C. Buyukakcay,L. Klimovicova,3,0.535,0.615,0.1468,0.2247,22.5,0.4186,0.3374,2.71,1.38,0,22.53
-2026-10-06 00:11,12168195,Challenger Women Singles,Samsun,Hard,C. Buyukakcay,L. Klimovicova,3,0.535,0.615,0.1468,0.2247,23.5,0.3792,0.2982,3.06,1.3,0,22.53
-2026-10-06 00:11,12168195,Challenger Women Singles,Samsun,Hard,C. Buyukakcay,L. Klimovicova,3,0.535,0.615,0.1468,0.2247,24.5,0.3574,0.307,2.98,1.32,0,22.53
-2026-10-06 00:11,12168198,Challenger Women Singles,Samsun,Hard,A. Mert,V. Hruncakova,3,0.6025,0.5925,0.5515,0.2986,18.5,0.84,0.6746,1.36,2.82,0,24.86
-2026-10-06 00:11,12168198,Challenger Women Singles,Samsun,Hard,A. Mert,V. Hruncakova,3,0.6025,0.5925,0.5515,0.2986,19.5,0.7682,0.601,1.52,2.29,0,24.86
-2026-10-06 00:11,12168198,Challenger Women Singles,Samsun,Hard,A. Mert,V. Hruncakova,3,0.6025,0.5925,0.5515,0.2986,20.5,0.7,0.516,1.82,1.94,0,24.86
-2026-10-06 00:11,12168198,Challenger Women Singles,Samsun,Hard,A. Mert,V. Hruncakova,3,0.6025,0.5925,0.5515,0.2986,21.5,0.6501,0.4905,1.87,1.8,1,24.86
-2026-10-06 00:11,12168198,Challenger Women Singles,Samsun,Hard,A. Mert,V. Hruncakova,3,0.6025,0.5925,0.5515,0.2986,22.5,0.5789,0.4063,2.25,1.54,0,24.86
-2026-10-06 00:11,12168198,Challenger Women Singles,Samsun,Hard,A. Mert,V. Hruncakova,3,0.6025,0.5925,0.5515,0.2986,23.5,0.5275,0.3636,2.52,1.44,0,24.86
-2026-10-06 00:11,12168198,Challenger Women Singles,Samsun,Hard,A. Mert,V. Hruncakova,3,0.6025,0.5925,0.5515,0.2986,24.5,0.5079,0.3374,2.71,1.38,0,24.86
-2026-10-06 00:11,12168198,Challenger Women Singles,Samsun,Hard,A. Mert,V. Hruncakova,3,0.6025,0.5925,0.5515,0.2986,25.5,0.4651,0.2982,3.06,1.3,0,24.86
-2026-10-06 00:11,12168199,Challenger Women Singles,Samsun,Hard,E. Pridankina,A. Blinkova,3,0.53,0.5525,0.3819,0.3373,18.5,0.7923,0.6517,1.4,2.62,0,24.1
-2026-10-06 00:11,12168199,Challenger Women Singles,Samsun,Hard,E. Pridankina,A. Blinkova,3,0.53,0.5525,0.3819,0.3373,19.5,0.7212,0.571,1.6,2.13,0,24.1
-2026-10-06 00:11,12168199,Challenger Women Singles,Samsun,Hard,E. Pridankina,A. Blinkova,3,0.53,0.5525,0.3819,0.3373,20.5,0.6568,0.4852,1.91,1.8,1,24.1
-2026-10-06 00:11,12168199,Challenger Women Singles,Samsun,Hard,E. Pridankina,A. Blinkova,3,0.53,0.5525,0.3819,0.3373,21.5,0.6068,0.4447,2.06,1.65,0,24.1
-2026-10-06 00:11,12168199,Challenger Women Singles,Samsun,Hard,E. Pridankina,A. Blinkova,3,0.53,0.5525,0.3819,0.3373,22.5,0.5431,0.3779,2.42,1.47,0,24.1
-2026-10-06 00:11,12168199,Challenger Women Singles,Samsun,Hard,E. Pridankina,A. Blinkova,3,0.53,0.5525,0.3819,0.3373,23.5,0.5,0.3366,2.72,1.38,0,24.1
-2026-10-06 00:11,12168199,Challenger Women Singles,Samsun,Hard,E. Pridankina,A. Blinkova,3,0.53,0.5525,0.3819,0.3373,24.5,0.4727,0.3107,2.95,1.33,0,24.1
-2026-10-06 00:11,12168200,Challenger Women Singles,Samsun,Hard,L. Radivojevic,O. Selekhmeteva,3,0.5775,0.5925,0.4223,0.3095,18.5,0.8262,0.6691,1.37,2.77,0,24.63
-2026-10-06 00:11,12168200,Challenger Women Singles,Samsun,Hard,L. Radivojevic,O. Selekhmeteva,3,0.5775,0.5925,0.4223,0.3095,19.5,0.7546,0.591,1.55,2.24,0,24.63
-2026-10-06 00:11,12168200,Challenger Women Singles,Samsun,Hard,L. Radivojevic,O. Selekhmeteva,3,0.5775,0.5925,0.4223,0.3095,20.5,0.6872,0.5246,1.74,1.92,0,24.63
-2026-10-06 00:11,12168200,Challenger Women Singles,Samsun,Hard,L. Radivojevic,O. Selekhmeteva,3,0.5775,0.5925,0.4223,0.3095,21.5,0.637,0.477,1.93,1.76,1,24.63
-2026-10-06 00:11,12168200,Challenger Women Singles,Samsun,Hard,L. Radivojevic,O. Selekhmeteva,3,0.5775,0.5925,0.4223,0.3095,22.5,0.5682,0.4026,2.27,1.53,0,24.63
-2026-10-06 00:11,12168200,Challenger Women Singles,Samsun,Hard,L. Radivojevic,O. Selekhmeteva,3,0.5775,0.5925,0.4223,0.3095,23.5,0.5196,0.3636,2.52,1.44,0,24.63
-2026-10-06 00:11,12168200,Challenger Women Singles,Samsun,Hard,L. Radivojevic,O. Selekhmeteva,3,0.5775,0.5925,0.4223,0.3095,24.5,0.4979,0.3424,2.67,1.39,0,24.63
-2026-10-06 00:11,12168200,Challenger Women Singles,Samsun,Hard,L. Radivojevic,O. Selekhmeteva,3,0.5775,0.5925,0.4223,0.3095,25.5,0.4539,0.3366,2.72,1.38,0,24.63
-2026-10-06 00:11,12168201,Challenger Women Singles,Samsun,Hard,A. Ruzic,A. Dudeney,3,0.555,0.5825,0.3583,0.6627,18.5,0.802,0.6398,1.43,2.54,0,24.24
-2026-10-06 00:11,12168201,Challenger Women Singles,Samsun,Hard,A. Ruzic,A. Dudeney,3,0.555,0.5825,0.3583,0.6627,19.5,0.7295,0.527,1.75,1.95,1,24.24
-2026-10-06 00:11,12168201,Challenger Women Singles,Samsun,Hard,A. Ruzic,A. Dudeney,3,0.555,0.5825,0.3583,0.6627,20.5,0.6628,0.473,1.95,1.75,0,24.24
-2026-10-06 00:11,12168201,Challenger Women Singles,Samsun,Hard,A. Ruzic,A. Dudeney,3,0.555,0.5825,0.3583,0.6627,21.5,0.6121,0.429,2.13,1.6,0,24.24
-2026-10-06 00:11,12168201,Challenger Women Singles,Samsun,Hard,A. Ruzic,A. Dudeney,3,0.555,0.5825,0.3583,0.6627,22.5,0.546,0.3646,2.51,1.44,0,24.24
-2026-10-06 00:11,12168201,Challenger Women Singles,Samsun,Hard,A. Ruzic,A. Dudeney,3,0.555,0.5825,0.3583,0.6627,23.5,0.5006,0.3254,2.82,1.36,0,24.24
-2026-10-06 00:11,12168201,Challenger Women Singles,Samsun,Hard,A. Ruzic,A. Dudeney,3,0.555,0.5825,0.3583,0.6627,24.5,0.4765,0.307,2.98,1.32,0,24.24
-2026-10-06 00:11,12168203,Challenger Women Singles,Samsun,Hard,L. Stefanini,C. Monnet,3,0.5125,0.49,0.6189,0.7525,17.5,0.8539,0.6916,1.32,2.96,0,23.96
-2026-10-06 00:11,12168203,Challenger Women Singles,Samsun,Hard,L. Stefanini,C. Monnet,3,0.5125,0.49,0.6189,0.7525,18.5,0.7837,0.6094,1.5,2.34,0,23.96
-2026-10-06 00:11,12168203,Challenger Women Singles,Samsun,Hard,L. Stefanini,C. Monnet,3,0.5125,0.49,0.6189,0.7525,19.5,0.7131,0.5203,1.77,1.92,1,23.96
-2026-10-06 00:11,12168203,Challenger Women Singles,Samsun,Hard,L. Stefanini,C. Monnet,3,0.5125,0.49,0.6189,0.7525,20.5,0.6498,0.458,2.0,1.69,0,23.96
-2026-10-06 00:11,12168203,Challenger Women Singles,Samsun,Hard,L. Stefanini,C. Monnet,3,0.5125,0.49,0.6189,0.7525,21.5,0.6002,0.4053,2.26,1.54,0,23.96
-2026-10-06 00:11,12168203,Challenger Women Singles,Samsun,Hard,L. Stefanini,C. Monnet,3,0.5125,0.49,0.6189,0.7525,22.5,0.5377,0.3483,2.62,1.4,0,23.96
-2026-10-06 00:11,12168203,Challenger Women Singles,Samsun,Hard,L. Stefanini,C. Monnet,3,0.5125,0.49,0.6189,0.7525,23.5,0.4958,0.3084,2.96,1.32,0,23.96
-2026-10-06 00:11,12168203,Challenger Women Singles,Samsun,Hard,L. Stefanini,C. Monnet,3,0.5125,0.49,0.6189,0.7525,24.5,0.4667,0.2982,3.06,1.3,0,23.96
-2026-10-06 00:11,12168204,Challenger Women Singles,Samsun,Hard,S. Waltert,M. Ercan,3,0.6075,0.545,0.794,0.8157,16.5,0.8985,0.6881,1.36,3.0,0,23.28
-2026-10-06 00:11,12168204,Challenger Women Singles,Samsun,Hard,S. Waltert,M. Ercan,3,0.6075,0.545,0.794,0.8157,17.5,0.8228,0.6453,1.44,2.62,0,23.28
-2026-10-06 00:11,12168204,Challenger Women Singles,Samsun,Hard,S. Waltert,M. Ercan,3,0.6075,0.545,0.794,0.8157,18.5,0.7413,0.5308,1.75,1.98,0,23.28
-2026-10-06 00:11,12168204,Challenger Women Singles,Samsun,Hard,S. Waltert,M. Ercan,3,0.6075,0.545,0.794,0.8157,19.5,0.6616,0.4852,1.91,1.8,1,23.28
-2026-10-06 00:11,12168204,Challenger Women Singles,Samsun,Hard,S. Waltert,M. Ercan,3,0.6075,0.545,0.794,0.8157,20.5,0.5903,0.443,2.1,1.67,0,23.28
-2026-10-06 00:11,12168204,Challenger Women Singles,Samsun,Hard,S. Waltert,M. Ercan,3,0.6075,0.545,0.794,0.8157,21.5,0.5372,0.4057,2.3,1.57,0,23.28
-2026-10-06 00:11,12168254,Itf Women Singles,W35 Seville,Clay,A. Candiotto,P. Lovric,3,0.495,0.5325,0.3072,0.2071,18.5,0.7631,0.5464,1.71,2.06,0,23.65
-2026-10-06 00:11,12168254,Itf Women Singles,W35 Seville,Clay,A. Candiotto,P. Lovric,3,0.495,0.5325,0.3072,0.2071,19.5,0.6904,0.4759,1.96,1.78,1,23.65
-2026-10-06 00:11,12168255,Itf Women Singles,W35 Seville,Clay,G. Ce,M. Mettraux,3,0.515,0.535,0.3942,0.7204,19.5,0.7189,0.5438,1.72,2.05,0,24.05
-2026-10-06 00:11,12168255,Itf Women Singles,W35 Seville,Clay,G. Ce,M. Mettraux,3,0.515,0.535,0.3942,0.7204,20.5,0.6553,0.4863,1.87,1.77,1,24.05
-2026-10-06 00:11,12168255,Itf Women Singles,W35 Seville,Clay,G. Ce,M. Mettraux,3,0.515,0.535,0.3942,0.7204,21.5,0.6056,0.4395,2.13,1.67,0,24.05
-2026-10-06 00:11,12168257,Itf Women Singles,W35 Seville,Clay,M. Oliver Sanchez,A. Zantedeschi,3,0.5125,0.5700000000000001,0.2214,0.1263,14.5,0.9773,0.76,1.2,3.8,0,23.12
-2026-10-06 00:11,12168257,Itf Women Singles,W35 Seville,Clay,M. Oliver Sanchez,A. Zantedeschi,3,0.5125,0.5700000000000001,0.2214,0.1263,15.5,0.9425,0.6517,1.4,2.62,0,23.12
-2026-10-06 00:11,12168257,Itf Women Singles,W35 Seville,Clay,M. Oliver Sanchez,A. Zantedeschi,3,0.5125,0.5700000000000001,0.2214,0.1263,16.5,0.8845,0.5328,1.71,1.95,1,23.12
-2026-10-06 00:11,12168257,Itf Women Singles,W35 Seville,Clay,M. Oliver Sanchez,A. Zantedeschi,3,0.5125,0.5700000000000001,0.2214,0.1263,17.5,0.8086,0.4297,2.15,1.62,0,23.12
-2026-10-06 00:11,12168257,Itf Women Singles,W35 Seville,Clay,M. Oliver Sanchez,A. Zantedeschi,3,0.5125,0.5700000000000001,0.2214,0.1263,18.5,0.7284,0.3483,2.62,1.4,0,23.12
-2026-10-06 00:11,12168258,Itf Women Singles,W35 Seville,Clay,K. Tsygourova,A. Hesse,3,0.56,0.495,0.808,0.4918,20.5,0.5575,0.5165,1.76,1.88,1,22.74
-2026-10-06 00:11,12168258,Itf Women Singles,W35 Seville,Clay,K. Tsygourova,A. Hesse,3,0.56,0.495,0.808,0.4918,21.5,0.5062,0.4654,2.01,1.75,0,22.74
-2026-10-06 00:11,12168259,Itf Women Singles,W35 Seville,Clay,D. Yesypchuk,I. Wobker,3,0.5,0.515,0.4201,0.3153,19.5,0.7209,0.5245,1.75,1.93,0,24.07
-2026-10-06 00:11,12168259,Itf Women Singles,W35 Seville,Clay,D. Yesypchuk,I. Wobker,3,0.5,0.515,0.4201,0.3153,20.5,0.6579,0.4837,1.9,1.78,1,24.07
-2026-10-06 00:11,12168260,Wta Singles,Beijing,Hard,K. Muchova,N. Osaka,3,0.6325000000000001,0.625,0.5377,0.5509,17.5,0.929,0.7938,1.13,4.35,0,25.42
-2026-10-06 00:11,12168260,Wta Singles,Beijing,Hard,K. Muchova,N. Osaka,3,0.6325000000000001,0.625,0.5377,0.5509,18.5,0.874,0.7241,1.25,3.28,0,25.42
-2026-10-06 00:11,12168260,Wta Singles,Beijing,Hard,K. Muchova,N. Osaka,3,0.6325000000000001,0.625,0.5377,0.5509,19.5,0.8021,0.6412,1.41,2.52,0,25.42
-2026-10-06 00:11,12168260,Wta Singles,Beijing,Hard,K. Muchova,N. Osaka,3,0.6325000000000001,0.625,0.5377,0.5509,20.5,0.7318,0.5805,1.59,2.2,0,25.42
-2026-10-06 00:11,12168260,Wta Singles,Beijing,Hard,K. Muchova,N. Osaka,3,0.6325000000000001,0.625,0.5377,0.5509,21.5,0.6831,0.5177,1.77,1.9,1,25.42
-2026-10-06 00:11,12168260,Wta Singles,Beijing,Hard,K. Muchova,N. Osaka,3,0.6325000000000001,0.625,0.5377,0.5509,22.5,0.6041,0.4663,1.98,1.73,0,25.42
-2026-10-06 00:11,12168260,Wta Singles,Beijing,Hard,K. Muchova,N. Osaka,3,0.6325000000000001,0.625,0.5377,0.5509,23.5,0.5429,0.4089,2.27,1.57,0,25.42
-2026-10-06 00:11,12168260,Wta Singles,Beijing,Hard,K. Muchova,N. Osaka,3,0.6325000000000001,0.625,0.5377,0.5509,24.5,0.5291,0.4043,2.24,1.52,0,25.42
-2026-10-06 00:11,12168260,Wta Singles,Beijing,Hard,K. Muchova,N. Osaka,3,0.6325000000000001,0.625,0.5377,0.5509,25.5,0.49,0.3676,2.46,1.43,0,25.42
-2026-10-06 00:11,12168260,Wta Singles,Beijing,Hard,K. Muchova,N. Osaka,3,0.6325000000000001,0.625,0.5377,0.5509,26.5,0.4389,0.3301,2.74,1.35,0,25.42
-2026-10-06 00:11,12168279,Atp Singles,Shanghai,Hard,R. Safiullin,S. Mochizuki,3,0.65,0.55,0.9014,0.7935,18.5,0.6593,0.6368,1.42,2.49,0,22.01
-2026-10-06 00:11,12168279,Atp Singles,Shanghai,Hard,R. Safiullin,S. Mochizuki,3,0.65,0.55,0.9014,0.7935,19.5,0.5689,0.567,1.68,2.2,0,22.01
-2026-10-06 00:11,12168279,Atp Singles,Shanghai,Hard,R. Safiullin,S. Mochizuki,3,0.65,0.55,0.9014,0.7935,20.5,0.49,0.5052,1.89,1.93,1,22.01
-2026-10-06 00:11,12168279,Atp Singles,Shanghai,Hard,R. Safiullin,S. Mochizuki,3,0.65,0.55,0.9014,0.7935,21.5,0.4336,0.4531,2.1,1.74,0,22.01
-2026-10-06 00:11,12168279,Atp Singles,Shanghai,Hard,R. Safiullin,S. Mochizuki,3,0.65,0.55,0.9014,0.7935,22.5,0.3697,0.3848,2.35,1.47,0,22.01
-2026-10-06 00:11,12168301,Atp Singles,Shanghai,Hard,A. Dougaz,F. Cina,3,0.665,0.665,0.5,0.3117,20.5,0.7822,0.6198,1.46,2.38,0,26.3
-2026-10-06 00:11,12168301,Atp Singles,Shanghai,Hard,A. Dougaz,F. Cina,3,0.665,0.665,0.5,0.3117,21.5,0.738,0.5648,1.68,2.18,0,26.3
-2026-10-06 00:11,12168301,Atp Singles,Shanghai,Hard,A. Dougaz,F. Cina,3,0.665,0.665,0.5,0.3117,22.5,0.6476,0.4895,1.95,1.87,1,26.3
-2026-10-06 00:11,12168301,Atp Singles,Shanghai,Hard,A. Dougaz,F. Cina,3,0.665,0.665,0.5,0.3117,23.5,0.5684,0.433,2.2,1.68,0,26.3
-2026-10-06 00:11,12168301,Atp Singles,Shanghai,Hard,A. Dougaz,F. Cina,3,0.665,0.665,0.5,0.3117,24.5,0.5603,0.4232,2.14,1.57,0,26.3
-2026-10-06 00:11,12168302,Atp Singles,Shanghai,Hard,L. Draxl,N. Basilashvili,3,0.6425,0.655,0.4386,0.4352,20.5,0.7549,0.655,1.38,2.62,0,25.83
-2026-10-06 00:11,12168302,Atp Singles,Shanghai,Hard,L. Draxl,N. Basilashvili,3,0.6425,0.655,0.4386,0.4352,21.5,0.7079,0.6031,1.52,2.31,0,25.83
-2026-10-06 00:11,12168302,Atp Singles,Shanghai,Hard,L. Draxl,N. Basilashvili,3,0.6425,0.655,0.4386,0.4352,22.5,0.6227,0.5163,1.78,1.9,1,25.83
-2026-10-06 00:11,12168302,Atp Singles,Shanghai,Hard,L. Draxl,N. Basilashvili,3,0.6425,0.655,0.4386,0.4352,23.5,0.5525,0.4617,1.97,1.69,0,25.83
-2026-10-06 00:11,12168302,Atp Singles,Shanghai,Hard,L. Draxl,N. Basilashvili,3,0.6425,0.655,0.4386,0.4352,24.5,0.542,0.4481,2.02,1.64,0,25.83
-2026-10-06 00:11,12168317,Atp Singles,Shanghai,Hard,B. Tomic,T. Skatov,3,0.66,0.65,0.5489,0.5376,23.5,0.5583,0.4453,2.13,1.71,1,26.0
-2026-10-06 00:11,12168318,Atp Singles,Shanghai,Hard,M. Zheng,N. Mejia,3,0.67,0.585,0.858,0.7827,18.5,0.7529,0.6699,1.35,2.74,0,23.26
-2026-10-06 00:11,12168318,Atp Singles,Shanghai,Hard,M. Zheng,N. Mejia,3,0.67,0.585,0.858,0.7827,19.5,0.6626,0.5904,1.54,2.22,0,23.26
-2026-10-06 00:11,12168318,Atp Singles,Shanghai,Hard,M. Zheng,N. Mejia,3,0.67,0.585,0.858,0.7827,20.5,0.5798,0.5,1.83,1.83,1,23.26
-2026-10-06 00:11,12168318,Atp Singles,Shanghai,Hard,M. Zheng,N. Mejia,3,0.67,0.585,0.858,0.7827,21.5,0.522,0.4672,1.95,1.71,0,23.26
-2026-10-06 00:11,12168318,Atp Singles,Shanghai,Hard,M. Zheng,N. Mejia,3,0.67,0.585,0.858,0.7827,22.5,0.4456,0.4043,2.24,1.52,0,23.26
-2026-10-06 00:11,12168323,Itf Women Singles,W15 Maanshan 7,Hard,Y. Chen,M. Wang,3,0.525,0.585,0.2129,0.2037,18.5,0.7302,0.5165,1.76,1.88,1,23.14
-2026-10-06 00:11,12168330,Atp Singles,Shanghai,Hard,R. Te,I. Simakin,3,0.605,0.7375,0.0556,0.1744,19.5,0.6153,0.6324,1.43,2.46,0,22.33
-2026-10-06 00:11,12168330,Atp Singles,Shanghai,Hard,R. Te,I. Simakin,3,0.605,0.7375,0.0556,0.1744,20.5,0.5141,0.5543,1.64,2.04,0,22.33
-2026-10-06 00:11,12168330,Atp Singles,Shanghai,Hard,R. Te,I. Simakin,3,0.605,0.7375,0.0556,0.1744,21.5,0.4473,0.4906,1.9,1.83,1,22.33
-2026-10-06 00:11,12168330,Atp Singles,Shanghai,Hard,R. Te,I. Simakin,3,0.605,0.7375,0.0556,0.1744,22.5,0.3538,0.4209,2.16,1.57,0,22.33
-2026-10-06 00:11,12168330,Atp Singles,Shanghai,Hard,R. Te,I. Simakin,3,0.605,0.7375,0.0556,0.1744,23.5,0.2892,0.3676,2.46,1.43,0,22.33
-2026-10-06 00:11,12168332,Atp Singles,Shanghai,Hard,K. Jacquet,R. Sakamoto,3,0.6575,0.665,0.4635,0.5355,21.5,0.7303,0.6279,1.44,2.43,0,26.18
-2026-10-06 00:11,12168332,Atp Singles,Shanghai,Hard,K. Jacquet,R. Sakamoto,3,0.6575,0.665,0.4635,0.5355,22.5,0.641,0.5495,1.73,2.11,0,26.18
-2026-10-06 00:11,12168332,Atp Singles,Shanghai,Hard,K. Jacquet,R. Sakamoto,3,0.6575,0.665,0.4635,0.5355,23.5,0.564,0.4879,1.9,1.81,1,26.18
-2026-10-06 00:11,12168332,Atp Singles,Shanghai,Hard,K. Jacquet,R. Sakamoto,3,0.6575,0.665,0.4635,0.5355,24.5,0.5554,0.4645,1.96,1.7,0,26.18
-2026-10-06 00:11,12168332,Atp Singles,Shanghai,Hard,K. Jacquet,R. Sakamoto,3,0.6575,0.665,0.4635,0.5355,25.5,0.5196,0.4309,2.1,1.59,0,26.18
-2026-10-06 00:11,12168333,Atp Singles,Shanghai,Hard,Y. Nishioka,D. Svrcina,3,0.555,0.5975,0.2883,0.3882,19.5,0.7097,0.6269,1.44,2.42,0,23.96
-2026-10-06 00:11,12168333,Atp Singles,Shanghai,Hard,Y. Nishioka,D. Svrcina,3,0.555,0.5975,0.2883,0.3882,20.5,0.6407,0.5737,1.62,2.18,0,23.96
-2026-10-06 00:11,12168333,Atp Singles,Shanghai,Hard,Y. Nishioka,D. Svrcina,3,0.555,0.5975,0.2883,0.3882,21.5,0.589,0.5105,1.87,1.95,1,23.96
-2026-10-06 00:11,12168333,Atp Singles,Shanghai,Hard,Y. Nishioka,D. Svrcina,3,0.555,0.5975,0.2883,0.3882,22.5,0.5225,0.4453,2.13,1.71,0,23.96
-2026-10-06 00:11,12168333,Atp Singles,Shanghai,Hard,Y. Nishioka,D. Svrcina,3,0.555,0.5975,0.2883,0.3882,23.5,0.4774,0.4091,2.21,1.53,0,23.96
-2026-10-06 00:11,12168335,Challenger Men Singles,Wuning 3 (China) - Qualification,Hard,O. Jasika,M. Borisiouk,3,0.6425,0.6375000000000001,0.5249,0.4871,21.5,0.6984,0.5455,1.75,2.1,0,25.67
-2026-10-06 00:11,12168335,Challenger Men Singles,Wuning 3 (China) - Qualification,Hard,O. Jasika,M. Borisiouk,3,0.6425,0.6375000000000001,0.5249,0.4871,22.5,0.6161,0.4603,2.04,1.74,1,25.67
-2026-10-06 00:11,12168335,Challenger Men Singles,Wuning 3 (China) - Qualification,Hard,O. Jasika,M. Borisiouk,3,0.6425,0.6375000000000001,0.5249,0.4871,23.5,0.55,0.4274,2.13,1.59,0,25.67
-2026-10-06 00:11,12168336,Challenger Men Singles,Wuning 3 (China) - Qualification,Hard,M. Purcell,F. Peliwo,3,0.6775,0.5875,0.8705,0.8972,17.5,0.8379,0.6272,1.45,2.44,0,23.16
-2026-10-06 00:11,12168336,Challenger Men Singles,Wuning 3 (China) - Qualification,Hard,M. Purcell,F. Peliwo,3,0.6775,0.5875,0.8705,0.8972,18.5,0.7489,0.5942,1.53,2.24,0,23.16
-2026-10-06 00:11,12168336,Challenger Men Singles,Wuning 3 (China) - Qualification,Hard,M. Purcell,F. Peliwo,3,0.6775,0.5875,0.8705,0.8972,19.5,0.6565,0.5082,1.81,1.87,1,23.16
-2026-10-06 00:11,12168336,Challenger Men Singles,Wuning 3 (China) - Qualification,Hard,M. Purcell,F. Peliwo,3,0.6775,0.5875,0.8705,0.8972,20.5,0.5718,0.4351,2.09,1.61,0,23.16
-2026-10-06 00:11,12168337,Challenger Men Singles,Wuning 3 (China) - Qualification,Hard,K. Saitoh,D. Palan,3,0.6825,0.6475,0.6646,0.5485,20.5,0.7582,0.5867,1.55,2.2,0,25.91
-2026-10-06 00:11,12168337,Challenger Men Singles,Wuning 3 (China) - Qualification,Hard,K. Saitoh,D. Palan,3,0.6825,0.6475,0.6646,0.5485,21.5,0.7112,0.5383,1.69,1.97,0,25.91
-2026-10-06 00:11,12168337,Challenger Men Singles,Wuning 3 (China) - Qualification,Hard,K. Saitoh,D. Palan,3,0.6825,0.6475,0.6646,0.5485,22.5,0.6194,0.4715,1.95,1.74,1,25.91
-2026-10-06 00:11,12168337,Challenger Men Singles,Wuning 3 (China) - Qualification,Hard,K. Saitoh,D. Palan,3,0.6825,0.6475,0.6646,0.5485,23.5,0.5412,0.4209,2.16,1.57,0,25.91
-2026-10-06 00:11,12168337,Challenger Men Singles,Wuning 3 (China) - Qualification,Hard,K. Saitoh,D. Palan,3,0.6825,0.6475,0.6646,0.5485,24.5,0.5329,0.4672,1.95,1.71,0,25.91
-2026-10-06 00:11,12168337,Challenger Men Singles,Wuning 3 (China) - Qualification,Hard,K. Saitoh,D. Palan,3,0.6825,0.6475,0.6646,0.5485,25.5,0.4977,0.4297,2.15,1.62,0,25.91
-2026-10-06 00:11,12168338,Challenger Men Singles,Wuning 3 (China) - Qualification,Hard,R. Seggerman,H. Shiraishi,3,0.6575,0.6575,0.5,0.7596,20.5,0.7708,0.5422,1.68,1.99,0,26.1
-2026-10-06 00:11,12168338,Challenger Men Singles,Wuning 3 (China) - Qualification,Hard,R. Seggerman,H. Shiraishi,3,0.6575,0.6575,0.5,0.7596,21.5,0.7254,0.4891,1.88,1.8,1,26.1
-2026-10-06 00:11,12168338,Challenger Men Singles,Wuning 3 (China) - Qualification,Hard,R. Seggerman,H. Shiraishi,3,0.6575,0.6575,0.5,0.7596,22.5,0.6374,0.4236,2.15,1.58,0,26.1
-2026-10-06 00:11,12168339,Challenger Men Singles,Wuning 3 (China) - Qualification,Hard,J. D. Hara Friend,Y. Kikuchi,3,0.675,0.5675,0.9133,0.8185,17.5,0.7757,0.6227,1.46,2.41,0,22.1
-2026-10-06 00:11,12168339,Challenger Men Singles,Wuning 3 (China) - Qualification,Hard,J. D. Hara Friend,Y. Kikuchi,3,0.675,0.5675,0.9133,0.8185,18.5,0.6734,0.5285,1.74,1.95,1,22.1
-2026-10-06 00:11,12168339,Challenger Men Singles,Wuning 3 (China) - Qualification,Hard,J. D. Hara Friend,Y. Kikuchi,3,0.675,0.5675,0.9133,0.8185,19.5,0.5778,0.455,2.0,1.67,0,22.1
-2026-10-06 00:11,12168339,Challenger Men Singles,Wuning 3 (China) - Qualification,Hard,J. D. Hara Friend,Y. Kikuchi,3,0.675,0.5675,0.9133,0.8185,20.5,0.4932,0.4058,2.24,1.53,0,22.1
-2026-10-06 00:11,12168340,Challenger Men Singles,Wuning 3 (China) - Qualification,Hard,A. Kachmazov,C. Broom,3,0.63,0.6675,0.3215,0.4489,21.5,0.679,0.5791,1.57,2.16,0,25.43
-2026-10-06 00:11,12168340,Challenger Men Singles,Wuning 3 (China) - Qualification,Hard,A. Kachmazov,C. Broom,3,0.63,0.6675,0.3215,0.4489,22.5,0.5931,0.5027,1.83,1.85,1,25.43
-2026-10-06 00:11,12168340,Challenger Men Singles,Wuning 3 (China) - Qualification,Hard,A. Kachmazov,C. Broom,3,0.63,0.6675,0.3215,0.4489,23.5,0.5241,0.4523,2.01,1.66,0,25.43
-2026-10-06 00:11,12168340,Challenger Men Singles,Wuning 3 (China) - Qualification,Hard,A. Kachmazov,C. Broom,3,0.63,0.6675,0.3215,0.4489,24.5,0.5135,0.4605,1.98,1.69,0,25.43
-2026-10-06 00:11,12168341,Itf Men Singles,M25 Luan,Hard,M. Dellavedova,Z. Zhao,3,0.6925,0.595,0.8867,0.821,18.5,0.7518,0.5602,1.68,2.14,0,23.11
-2026-10-06 00:11,12168341,Itf Men Singles,M25 Luan,Hard,M. Dellavedova,Z. Zhao,3,0.6925,0.595,0.8867,0.821,19.5,0.656,0.4723,2.0,1.79,1,23.11
-2026-10-06 00:11,12168343,Itf Men Singles,M25 Luan,Hard,Y. Zeng,N. Barsukov,3,0.6625,0.6525,0.5488,0.4745,21.5,0.7231,0.5897,1.6,2.3,0,26.07
-2026-10-06 00:11,12168343,Itf Men Singles,M25 Luan,Hard,Y. Zeng,N. Barsukov,3,0.6625,0.6525,0.5488,0.4745,22.5,0.635,0.5066,1.87,1.92,1,26.07
-2026-10-06 00:11,12168343,Itf Men Singles,M25 Luan,Hard,Y. Zeng,N. Barsukov,3,0.6625,0.6525,0.5488,0.4745,23.5,0.5601,0.4488,2.1,1.71,0,26.07
-2026-10-06 00:11,12168369,Atp Singles,Tokyo,Hard,C. Alcaraz,J. Lehecka,3,0.6925,0.6125,0.8374,0.7626,16.5,0.9503,0.8701,1.06,7.1,0,24.1
-2026-10-06 00:11,12168369,Atp Singles,Tokyo,Hard,C. Alcaraz,J. Lehecka,3,0.6925,0.6125,0.8374,0.7626,17.5,0.8883,0.8097,1.14,4.85,0,24.1
-2026-10-06 00:11,12168369,Atp Singles,Tokyo,Hard,C. Alcaraz,J. Lehecka,3,0.6925,0.6125,0.8374,0.7626,18.5,0.8135,0.7353,1.26,3.5,0,24.1
-2026-10-06 00:11,12168369,Atp Singles,Tokyo,Hard,C. Alcaraz,J. Lehecka,3,0.6925,0.6125,0.8374,0.7626,19.5,0.724,0.6602,1.4,2.72,0,24.1
-2026-10-06 00:11,12168369,Atp Singles,Tokyo,Hard,C. Alcaraz,J. Lehecka,3,0.6925,0.6125,0.8374,0.7626,20.5,0.6389,0.5916,1.56,2.26,0,24.1
-2026-10-06 00:11,12168369,Atp Singles,Tokyo,Hard,C. Alcaraz,J. Lehecka,3,0.6925,0.6125,0.8374,0.7626,21.5,0.5815,0.5234,1.73,1.9,0,24.1
-2026-10-06 00:11,12168369,Atp Singles,Tokyo,Hard,C. Alcaraz,J. Lehecka,3,0.6925,0.6125,0.8374,0.7626,22.5,0.4935,0.4865,1.9,1.8,1,24.1
-2026-10-06 00:11,12168369,Atp Singles,Tokyo,Hard,C. Alcaraz,J. Lehecka,3,0.6925,0.6125,0.8374,0.7626,23.5,0.428,0.4048,2.25,1.53,0,24.1
-2026-10-06 00:11,12168369,Atp Singles,Tokyo,Hard,C. Alcaraz,J. Lehecka,3,0.6925,0.6125,0.8374,0.7626,24.5,0.4176,0.4026,2.3,1.55,0,24.1
-2026-10-06 00:11,12168369,Atp Singles,Tokyo,Hard,C. Alcaraz,J. Lehecka,3,0.6925,0.6125,0.8374,0.7626,25.5,0.3844,0.3703,2.5,1.47,0,24.1
-2026-10-06 00:11,12168369,Atp Singles,Tokyo,Hard,C. Alcaraz,J. Lehecka,3,0.6925,0.6125,0.8374,0.7626,26.5,0.3394,0.3398,2.72,1.4,0,24.1
-2026-10-06 00:11,12168369,Atp Singles,Tokyo,Hard,C. Alcaraz,J. Lehecka,3,0.6925,0.6125,0.8374,0.7626,27.5,0.3107,0.314,2.95,1.35,0,24.1
-2026-10-06 00:11,12168369,Atp Singles,Tokyo,Hard,C. Alcaraz,J. Lehecka,3,0.6925,0.6125,0.8374,0.7626,28.5,0.2755,0.2841,3.25,1.29,0,24.1
-2026-10-06 00:11,12168369,Atp Singles,Tokyo,Hard,C. Alcaraz,J. Lehecka,3,0.6925,0.6125,0.8374,0.7626,29.5,0.2375,0.251,3.7,1.24,0,24.1
-2026-10-06 00:11,12168369,Atp Singles,Tokyo,Hard,C. Alcaraz,J. Lehecka,3,0.6925,0.6125,0.8374,0.7626,30.5,0.1979,0.2173,4.25,1.18,0,24.1
-2026-10-06 00:11,12168369,Atp Singles,Tokyo,Hard,C. Alcaraz,J. Lehecka,3,0.6925,0.6125,0.8374,0.7626,31.5,0.1514,0.1814,5.1,1.13,0,24.1
-2026-10-06 00:11,12168369,Atp Singles,Tokyo,Hard,C. Alcaraz,J. Lehecka,3,0.6925,0.6125,0.8374,0.7626,33.5,0.0775,0.1238,7.5,1.06,0,24.1
-2026-10-06 00:11,12168370,Challenger Women Singles,Suzhou,Hard,K. Okamura,D. Vidmanova,3,0.5650000000000001,0.62,0.2374,0.243,17.5,0.8528,0.6746,1.36,2.82,0,23.79
-2026-10-06 00:11,12168370,Challenger Women Singles,Suzhou,Hard,K. Okamura,D. Vidmanova,3,0.5650000000000001,0.62,0.2374,0.243,18.5,0.7759,0.5862,1.56,2.21,0,23.79
-2026-10-06 00:11,12168370,Challenger Women Singles,Suzhou,Hard,K. Okamura,D. Vidmanova,3,0.5650000000000001,0.62,0.2374,0.243,19.5,0.6969,0.5055,1.81,1.85,1,23.79
-2026-10-06 00:11,12168370,Challenger Women Singles,Suzhou,Hard,K. Okamura,D. Vidmanova,3,0.5650000000000001,0.62,0.2374,0.243,20.5,0.6245,0.4355,2.1,1.62,0,23.79
-2026-10-06 00:11,12168370,Challenger Women Singles,Suzhou,Hard,K. Okamura,D. Vidmanova,3,0.5650000000000001,0.62,0.2374,0.243,21.5,0.5713,0.3824,2.39,1.48,0,23.79
-2026-10-06 00:11,12168370,Challenger Women Singles,Suzhou,Hard,K. Okamura,D. Vidmanova,3,0.5650000000000001,0.62,0.2374,0.243,22.5,0.5027,0.3183,2.87,1.34,0,23.79
-2026-10-06 00:11,12168370,Challenger Women Singles,Suzhou,Hard,K. Okamura,D. Vidmanova,3,0.5650000000000001,0.62,0.2374,0.243,23.5,0.4561,0.2899,3.16,1.29,0,23.79
-2026-10-06 00:11,12168371,Challenger Women Singles,Suzhou,Hard,O. Oliynykova,W. Zheng,3,0.6,0.51,0.8836,0.6804,18.5,0.6392,0.6301,1.45,2.47,0,21.84
-2026-10-06 00:11,12168371,Challenger Women Singles,Suzhou,Hard,O. Oliynykova,W. Zheng,3,0.6,0.51,0.8836,0.6804,19.5,0.5556,0.5514,1.66,2.04,0,21.84
-2026-10-06 00:11,12168371,Challenger Women Singles,Suzhou,Hard,O. Oliynykova,W. Zheng,3,0.6,0.51,0.8836,0.6804,20.5,0.485,0.4809,1.9,1.76,1,21.84
-2026-10-06 00:11,12168371,Challenger Women Singles,Suzhou,Hard,O. Oliynykova,W. Zheng,3,0.6,0.51,0.8836,0.6804,21.5,0.4327,0.4251,2.15,1.59,0,21.84
-2026-10-06 00:11,12168371,Challenger Women Singles,Suzhou,Hard,O. Oliynykova,W. Zheng,3,0.6,0.51,0.8836,0.6804,22.5,0.3759,0.3636,2.52,1.44,0,21.84
-2026-10-06 00:11,12168371,Challenger Women Singles,Suzhou,Hard,O. Oliynykova,W. Zheng,3,0.6,0.51,0.8836,0.6804,23.5,0.3406,0.3254,2.82,1.36,0,21.84
-2026-10-06 00:11,12168371,Challenger Women Singles,Suzhou,Hard,O. Oliynykova,W. Zheng,3,0.6,0.51,0.8836,0.6804,24.5,0.3175,0.307,2.98,1.32,0,21.84
-2026-10-06 00:11,12168373,Challenger Women Singles,Suzhou,Hard,D. Khomutsianskaya,T. C. Grant,3,0.595,0.5775,0.5904,0.3184,18.5,0.8256,0.6746,1.36,2.82,0,24.62
-2026-10-06 00:11,12168373,Challenger Women Singles,Suzhou,Hard,D. Khomutsianskaya,T. C. Grant,3,0.595,0.5775,0.5904,0.3184,19.5,0.7536,0.5937,1.54,2.25,0,24.62
-2026-10-06 00:11,12168373,Challenger Women Singles,Suzhou,Hard,D. Khomutsianskaya,T. C. Grant,3,0.595,0.5775,0.5904,0.3184,20.5,0.686,0.5246,1.74,1.92,1,24.62
-2026-10-06 00:11,12168373,Challenger Women Singles,Suzhou,Hard,D. Khomutsianskaya,T. C. Grant,3,0.595,0.5775,0.5904,0.3184,21.5,0.6357,0.4674,1.96,1.72,0,24.62
-2026-10-06 00:11,12168373,Challenger Women Singles,Suzhou,Hard,D. Khomutsianskaya,T. C. Grant,3,0.595,0.5775,0.5904,0.3184,22.5,0.5667,0.4026,2.27,1.53,0,24.62
-2026-10-06 00:11,12168373,Challenger Women Singles,Suzhou,Hard,D. Khomutsianskaya,T. C. Grant,3,0.595,0.5775,0.5904,0.3184,23.5,0.518,0.3636,2.52,1.44,0,24.62
-2026-10-06 00:11,12168373,Challenger Women Singles,Suzhou,Hard,D. Khomutsianskaya,T. C. Grant,3,0.595,0.5775,0.5904,0.3184,24.5,0.4964,0.3374,2.71,1.38,0,24.62
-2026-10-06 00:11,12168373,Challenger Women Singles,Suzhou,Hard,D. Khomutsianskaya,T. C. Grant,3,0.595,0.5775,0.5904,0.3184,25.5,0.4527,0.3483,2.62,1.4,0,24.62
-2026-10-06 00:11,12168374,Challenger Women Singles,Suzhou,Hard,J. Lu,T. Korpatsch,3,0.5425,0.5875,0.276,0.3648,18.5,0.7714,0.6626,1.38,2.71,0,23.76
-2026-10-06 00:11,12168374,Challenger Women Singles,Suzhou,Hard,J. Lu,T. Korpatsch,3,0.5425,0.5875,0.276,0.3648,19.5,0.696,0.5798,1.58,2.18,0,23.76
-2026-10-06 00:11,12168374,Challenger Women Singles,Suzhou,Hard,J. Lu,T. Korpatsch,3,0.5425,0.5875,0.276,0.3648,20.5,0.6279,0.5123,1.79,1.88,1,23.76
-2026-10-06 00:11,12168374,Challenger Women Singles,Suzhou,Hard,J. Lu,T. Korpatsch,3,0.5425,0.5875,0.276,0.3648,21.5,0.5764,0.4531,2.1,1.74,0,23.76
-2026-10-06 00:11,12168374,Challenger Women Singles,Suzhou,Hard,J. Lu,T. Korpatsch,3,0.5425,0.5875,0.276,0.3648,22.5,0.5117,0.3906,2.34,1.5,0,23.76
-2026-10-06 00:11,12168374,Challenger Women Singles,Suzhou,Hard,J. Lu,T. Korpatsch,3,0.5425,0.5875,0.276,0.3648,23.5,0.4683,0.3483,2.62,1.4,0,23.76
-2026-10-06 00:11,12168374,Challenger Women Singles,Suzhou,Hard,J. Lu,T. Korpatsch,3,0.5425,0.5875,0.276,0.3648,24.5,0.4439,0.3254,2.82,1.36,0,23.76
-2026-10-06 00:11,12168375,Itf Men Singles,M25 Darwin 2,Hard,E. Cook,R. Falck,3,0.625,0.645,0.401,0.4582,21.5,0.6825,0.526,1.73,1.92,1,25.44
-2026-10-06 00:11,12168387,Itf Women Singles,W15 Islamabad (Pakistan),Hard,J. Khramtsova,S. Leon,3,0.5575,0.5025000000000001,0.7693,0.3798,18.5,0.7298,0.5917,1.58,2.29,0,23.14
-2026-10-06 00:11,12168387,Itf Women Singles,W15 Islamabad (Pakistan),Hard,J. Khramtsova,S. Leon,3,0.5575,0.5025000000000001,0.7693,0.3798,19.5,0.6538,0.5013,1.87,1.88,1,23.14
-2026-10-06 00:11,12168387,Itf Women Singles,W15 Islamabad (Pakistan),Hard,J. Khramtsova,S. Leon,3,0.5575,0.5025000000000001,0.7693,0.3798,20.5,0.5874,0.4293,2.18,1.64,0,23.14
-2026-10-06 00:11,12168418,Atp Singles,Shanghai,Hard,P. Kotov,A. Vukic,3,0.685,0.6925,0.4647,0.5418,20.5,0.8211,0.665,1.36,2.7,0,26.97
-2026-10-06 00:11,12168418,Atp Singles,Shanghai,Hard,P. Kotov,A. Vukic,3,0.685,0.6925,0.4647,0.5418,21.5,0.7821,0.6269,1.44,2.42,0,26.97
-2026-10-06 00:11,12168418,Atp Singles,Shanghai,Hard,P. Kotov,A. Vukic,3,0.685,0.6925,0.4647,0.5418,22.5,0.6845,0.5383,1.69,1.97,0,26.97
-2026-10-06 00:11,12168418,Atp Singles,Shanghai,Hard,P. Kotov,A. Vukic,3,0.685,0.6925,0.4647,0.5418,23.5,0.5912,0.4781,1.91,1.75,1,26.97
-2026-10-06 00:11,12168418,Atp Singles,Shanghai,Hard,P. Kotov,A. Vukic,3,0.685,0.6925,0.4647,0.5418,24.5,0.5857,0.4645,1.96,1.7,0,26.97
-2026-10-06 00:11,12168418,Atp Singles,Shanghai,Hard,P. Kotov,A. Vukic,3,0.685,0.6925,0.4647,0.5418,25.5,0.5507,0.4309,2.1,1.59,0,26.97
-2026-10-06 00:11,12168419,Atp Singles,Shanghai,Hard,D. Sweeny,K. Coppejans,3,0.5975,0.5825,0.5775,0.5827,20.5,0.6909,0.6032,1.5,2.28,0,24.7
-2026-10-06 00:11,12168419,Atp Singles,Shanghai,Hard,D. Sweeny,K. Coppejans,3,0.5975,0.5825,0.5775,0.5827,21.5,0.6407,0.534,1.78,2.04,0,24.7
-2026-10-06 00:11,12168419,Atp Singles,Shanghai,Hard,D. Sweeny,K. Coppejans,3,0.5975,0.5825,0.5775,0.5827,22.5,0.571,0.4698,2.02,1.79,1,24.7
-2026-10-06 00:11,12168419,Atp Singles,Shanghai,Hard,D. Sweeny,K. Coppejans,3,0.5975,0.5825,0.5775,0.5827,23.5,0.5214,0.4351,2.09,1.61,0,24.7
-2026-10-06 00:11,12168419,Atp Singles,Shanghai,Hard,D. Sweeny,K. Coppejans,3,0.5975,0.5825,0.5775,0.5827,24.5,0.5005,0.4205,2.15,1.56,0,24.7
-2026-10-06 00:11,12168432,Challenger Men Singles,Villena,Clay,D. Dedura,J. Pinnington Jones,3,0.595,0.5725,0.6157,0.4037,20.5,0.679,0.5583,1.63,2.06,0,24.51
-2026-10-06 00:11,12168432,Challenger Men Singles,Villena,Clay,D. Dedura,J. Pinnington Jones,3,0.595,0.5725,0.6157,0.4037,21.5,0.6285,0.5054,1.82,1.86,1,24.51
-2026-10-06 00:11,12168432,Challenger Men Singles,Villena,Clay,D. Dedura,J. Pinnington Jones,3,0.595,0.5725,0.6157,0.4037,22.5,0.56,0.4484,2.03,1.65,0,24.51
-2026-10-06 00:11,12168432,Challenger Men Singles,Villena,Clay,D. Dedura,J. Pinnington Jones,3,0.595,0.5725,0.6157,0.4037,23.5,0.512,0.4274,2.13,1.59,0,24.51
-2026-10-06 00:11,12168433,Atp Singles,Beijing,Hard,N. Djokovic,A. De Minaur,3,0.66,0.66,0.5,0.6144,15.5,0.9948,0.9074,1.02,10.0,0,26.16
-2026-10-06 00:11,12168433,Atp Singles,Beijing,Hard,N. Djokovic,A. De Minaur,3,0.66,0.66,0.5,0.6144,16.5,0.9851,0.88,1.05,7.7,0,26.16
-2026-10-06 00:11,12168433,Atp Singles,Beijing,Hard,N. Djokovic,A. De Minaur,3,0.66,0.66,0.5,0.6144,17.5,0.9549,0.8186,1.13,5.1,0,26.16
-2026-10-06 00:11,12168433,Atp Singles,Beijing,Hard,N. Djokovic,A. De Minaur,3,0.66,0.66,0.5,0.6144,18.5,0.9128,0.7594,1.22,3.85,0,26.16
-2026-10-06 00:11,12168433,Atp Singles,Beijing,Hard,N. Djokovic,A. De Minaur,3,0.66,0.66,0.5,0.6144,19.5,0.844,0.712,1.27,3.14,0,26.16
-2026-10-06 00:11,12168433,Atp Singles,Beijing,Hard,N. Djokovic,A. De Minaur,3,0.66,0.66,0.5,0.6144,20.5,0.7745,0.6423,1.42,2.55,0,26.16
-2026-10-06 00:11,12168433,Atp Singles,Beijing,Hard,N. Djokovic,A. De Minaur,3,0.66,0.66,0.5,0.6144,21.5,0.7295,0.5879,1.57,2.24,0,26.16
-2026-10-06 00:11,12168433,Atp Singles,Beijing,Hard,N. Djokovic,A. De Minaur,3,0.66,0.66,0.5,0.6144,22.5,0.6407,0.5039,1.92,1.95,1,26.16
-2026-10-06 00:11,12168433,Atp Singles,Beijing,Hard,N. Djokovic,A. De Minaur,3,0.66,0.66,0.5,0.6144,23.5,0.5644,0.4477,2.06,1.67,0,26.16
-2026-10-06 00:11,12168433,Atp Singles,Beijing,Hard,N. Djokovic,A. De Minaur,3,0.66,0.66,0.5,0.6144,24.5,0.5556,0.4355,2.1,1.62,0,26.16
-2026-10-06 00:11,12168433,Atp Singles,Beijing,Hard,N. Djokovic,A. De Minaur,3,0.66,0.66,0.5,0.6144,25.5,0.5196,0.4043,2.24,1.52,0,26.16
-2026-10-06 00:11,12168433,Atp Singles,Beijing,Hard,N. Djokovic,A. De Minaur,3,0.66,0.66,0.5,0.6144,26.5,0.4636,0.3684,2.52,1.47,0,26.16
-2026-10-06 00:11,12168433,Atp Singles,Beijing,Hard,N. Djokovic,A. De Minaur,3,0.66,0.66,0.5,0.6144,27.5,0.433,0.3357,2.75,1.39,0,26.16
-2026-10-06 00:11,12168433,Atp Singles,Beijing,Hard,N. Djokovic,A. De Minaur,3,0.66,0.66,0.5,0.6144,28.5,0.3921,0.2986,3.1,1.32,0,26.16
-2026-10-06 00:11,12168433,Atp Singles,Beijing,Hard,N. Djokovic,A. De Minaur,3,0.66,0.66,0.5,0.6144,29.5,0.3478,0.2604,3.55,1.25,0,26.16
-2026-10-06 00:11,12168433,Atp Singles,Beijing,Hard,N. Djokovic,A. De Minaur,3,0.66,0.66,0.5,0.6144,30.5,0.3011,0.2228,4.15,1.19,0,26.16
-2026-10-06 00:11,12168433,Atp Singles,Beijing,Hard,N. Djokovic,A. De Minaur,3,0.66,0.66,0.5,0.6144,31.5,0.2391,0.1814,5.1,1.13,0,26.16
-2026-10-06 00:11,12168433,Atp Singles,Beijing,Hard,N. Djokovic,A. De Minaur,3,0.66,0.66,0.5,0.6144,32.5,0.1731,0.1444,6.4,1.08,0,26.16
-2026-10-06 00:11,12168433,Atp Singles,Beijing,Hard,N. Djokovic,A. De Minaur,3,0.66,0.66,0.5,0.6144,33.5,0.1315,0.1214,7.6,1.05,0,26.16
-2026-10-06 00:11,12168433,Atp Singles,Beijing,Hard,N. Djokovic,A. De Minaur,3,0.66,0.66,0.5,0.6144,34.5,0.1008,0.1027,9.0,1.03,0,26.16
-2026-10-06 00:11,12168433,Atp Singles,Beijing,Hard,N. Djokovic,A. De Minaur,3,0.66,0.66,0.5,0.6144,35.5,0.0544,0.0926,10.0,1.02,0,26.16
-2026-10-06 00:11,12168434,Atp Singles,Shanghai,Hard,M. Bellucci,A. Muller,3,0.67,0.6425,0.6321,0.6778,19.5,0.8255,0.66,1.37,2.66,0,25.82
-2026-10-06 00:11,12168434,Atp Singles,Shanghai,Hard,M. Bellucci,A. Muller,3,0.67,0.6425,0.6321,0.6778,20.5,0.7534,0.5995,1.51,2.26,0,25.82
-2026-10-06 00:11,12168434,Atp Singles,Shanghai,Hard,M. Bellucci,A. Muller,3,0.67,0.6425,0.6321,0.6778,21.5,0.7061,0.545,1.67,2.0,0,25.82
-2026-10-06 00:11,12168434,Atp Singles,Shanghai,Hard,M. Bellucci,A. Muller,3,0.67,0.6425,0.6321,0.6778,22.5,0.6178,0.4715,1.95,1.74,1,25.82
-2026-10-06 00:11,12168434,Atp Singles,Shanghai,Hard,M. Bellucci,A. Muller,3,0.67,0.6425,0.6321,0.6778,23.5,0.5442,0.4209,2.16,1.57,0,25.82
-2026-10-06 00:11,12168434,Atp Singles,Shanghai,Hard,M. Bellucci,A. Muller,3,0.67,0.6425,0.6321,0.6778,24.5,0.5348,0.4091,2.21,1.53,0,25.82
-2026-10-06 00:11,12168435,Atp Singles,Shanghai,Hard,C. Wong,L. Harris,3,0.6825,0.705,0.3958,0.4544,21.5,0.7839,0.6412,1.41,2.52,0,26.99
-2026-10-06 00:11,12168435,Atp Singles,Shanghai,Hard,C. Wong,L. Harris,3,0.6825,0.705,0.3958,0.4544,22.5,0.6842,0.5516,1.65,2.03,0,26.99
-2026-10-06 00:11,12168435,Atp Singles,Shanghai,Hard,C. Wong,L. Harris,3,0.6825,0.705,0.3958,0.4544,23.5,0.5879,0.4837,1.9,1.78,1,26.99
-2026-10-06 00:11,12168435,Atp Singles,Shanghai,Hard,C. Wong,L. Harris,3,0.6825,0.705,0.3958,0.4544,24.5,0.5827,0.4712,1.93,1.72,0,26.99
-2026-10-06 00:11,12168435,Atp Singles,Shanghai,Hard,C. Wong,L. Harris,3,0.6825,0.705,0.3958,0.4544,25.5,0.5476,0.4402,2.06,1.62,0,26.99
-2026-10-06 00:11,12168435,Atp Singles,Shanghai,Hard,C. Wong,L. Harris,3,0.6825,0.705,0.3958,0.4544,27.5,0.4547,0.3885,2.33,1.48,0,26.99
-2026-10-06 00:11,12168436,Challenger Men Singles,Braga,Clay,M. Cecchinato,O. Wallin,3,0.6575,0.5925,0.7945,0.6594,20.5,0.6354,0.5623,1.65,2.12,0,24.02
-2026-10-06 00:11,12168436,Challenger Men Singles,Braga,Clay,M. Cecchinato,O. Wallin,3,0.6575,0.5925,0.7945,0.6594,21.5,0.5803,0.5148,1.8,1.91,1,24.02
-2026-10-06 00:11,12168436,Challenger Men Singles,Braga,Clay,M. Cecchinato,O. Wallin,3,0.6575,0.5925,0.7945,0.6594,22.5,0.5031,0.4599,2.02,1.72,0,24.02
-2026-10-06 00:11,12168437,Challenger Men Singles,Braga,Clay,O. Krutykh,J. Barranco Cosano,3,0.5825,0.5975,0.4225,0.5541,20.5,0.6909,0.5764,1.58,2.15,0,24.7
-2026-10-06 00:11,12168437,Challenger Men Singles,Braga,Clay,O. Krutykh,J. Barranco Cosano,3,0.5825,0.5975,0.4225,0.5541,21.5,0.6407,0.543,1.7,2.02,0,24.7
-2026-10-06 00:11,12168437,Challenger Men Singles,Braga,Clay,O. Krutykh,J. Barranco Cosano,3,0.5825,0.5975,0.4225,0.5541,22.5,0.571,0.4852,1.91,1.8,1,24.7
-2026-10-06 00:11,12168437,Challenger Men Singles,Braga,Clay,O. Krutykh,J. Barranco Cosano,3,0.5825,0.5975,0.4225,0.5541,23.5,0.5214,0.4465,2.07,1.67,0,24.7
-2026-10-06 00:11,12168438,Challenger Men Singles,Braga,Clay,M. McDonald,R. Nijboer,3,0.6,0.585,0.5773,0.4918,21.5,0.6426,0.5535,1.67,2.07,0,24.74
-2026-10-06 00:11,12168438,Challenger Men Singles,Braga,Clay,M. McDonald,R. Nijboer,3,0.6,0.585,0.5773,0.4918,22.5,0.5725,0.4946,1.87,1.83,1,24.74
-2026-10-06 00:11,12168438,Challenger Men Singles,Braga,Clay,M. McDonald,R. Nijboer,3,0.6,0.585,0.5773,0.4918,23.5,0.5224,0.4533,2.05,1.7,0,24.74
-2026-10-06 00:11,12168439,Challenger Men Singles,Braga,Clay,J. Nikles,M. Damas,3,0.545,0.54,0.5266,0.4477,20.5,0.6705,0.5405,1.76,2.07,0,24.29
-2026-10-06 00:11,12168439,Challenger Men Singles,Braga,Clay,J. Nikles,M. Damas,3,0.545,0.54,0.5266,0.4477,21.5,0.6209,0.4921,1.94,1.88,1,24.29
-2026-10-06 00:11,12168439,Challenger Men Singles,Braga,Clay,J. Nikles,M. Damas,3,0.545,0.54,0.5266,0.4477,22.5,0.5567,0.4341,2.19,1.68,0,24.29
-2026-10-06 00:11,12168439,Challenger Men Singles,Braga,Clay,J. Nikles,M. Damas,3,0.545,0.54,0.5266,0.4477,23.5,0.513,0.4465,2.07,1.67,0,24.29
-2026-10-06 00:11,12168440,Challenger Men Singles,Braga,Clay,P. Schoen,A. Nedic,3,0.5825,0.585,0.487,0.4169,20.5,0.6921,0.5422,1.68,1.99,0,24.7
-2026-10-06 00:11,12168440,Challenger Men Singles,Braga,Clay,P. Schoen,A. Nedic,3,0.5825,0.585,0.487,0.4169,21.5,0.6422,0.5467,1.7,2.05,0,24.7
-2026-10-06 00:11,12168440,Challenger Men Singles,Braga,Clay,P. Schoen,A. Nedic,3,0.5825,0.585,0.487,0.4169,22.5,0.5734,0.4865,1.9,1.8,1,24.7
-2026-10-06 00:11,12168440,Challenger Men Singles,Braga,Clay,P. Schoen,A. Nedic,3,0.5825,0.585,0.487,0.4169,23.5,0.5248,0.4465,2.07,1.67,0,24.7
-2026-10-06 00:11,12168441,Challenger Men Singles,Villena,Clay,H. Barton,T. Samuel,3,0.605,0.64,0.3285,0.2235,18.5,0.8459,0.6026,1.51,2.29,0,24.9
-2026-10-06 00:11,12168441,Challenger Men Singles,Villena,Clay,H. Barton,T. Samuel,3,0.605,0.64,0.3285,0.2235,19.5,0.7702,0.5662,1.67,2.18,0,24.9
-2026-10-06 00:11,12168441,Challenger Men Singles,Villena,Clay,H. Barton,T. Samuel,3,0.605,0.64,0.3285,0.2235,20.5,0.6976,0.5202,1.78,1.93,1,24.9
-2026-10-06 00:11,12168441,Challenger Men Singles,Villena,Clay,H. Barton,T. Samuel,3,0.605,0.64,0.3285,0.2235,21.5,0.6465,0.4313,2.11,1.6,0,24.9
-2026-10-06 00:11,12168442,Challenger Men Singles,Villena,Clay,E. Butvilas,M. H. Rehberg,3,0.63,0.6375000000000001,0.4625,0.63,21.5,0.6893,0.5462,1.67,2.01,0,25.53
-2026-10-06 00:11,12168442,Challenger Men Singles,Villena,Clay,E. Butvilas,M. H. Rehberg,3,0.63,0.6375000000000001,0.4625,0.63,22.5,0.6089,0.4852,1.91,1.8,1,25.53
-2026-10-06 00:11,12168442,Challenger Men Singles,Villena,Clay,E. Butvilas,M. H. Rehberg,3,0.63,0.6375000000000001,0.4625,0.63,23.5,0.5457,0.4313,2.11,1.6,0,25.53
-2026-10-06 00:11,12168442,Challenger Men Singles,Villena,Clay,E. Butvilas,M. H. Rehberg,3,0.63,0.6375000000000001,0.4625,0.63,24.5,0.5327,0.44,2.1,1.65,0,25.53
-2026-10-06 00:11,12168443,Challenger Men Singles,Villena,Clay,D. Dzumhur,G. Kravchenko,3,0.6125,0.545,0.8118,0.68,19.5,0.6497,0.5737,1.62,2.18,0,23.11
-2026-10-06 00:11,12168443,Challenger Men Singles,Villena,Clay,D. Dzumhur,G. Kravchenko,3,0.6125,0.545,0.8118,0.68,20.5,0.5775,0.5477,1.66,2.01,0,23.11
-2026-10-06 00:11,12168443,Challenger Men Singles,Villena,Clay,D. Dzumhur,G. Kravchenko,3,0.6125,0.545,0.8118,0.68,21.5,0.524,0.4959,1.86,1.83,1,23.11
-2026-10-06 00:11,12168443,Challenger Men Singles,Villena,Clay,D. Dzumhur,G. Kravchenko,3,0.6125,0.545,0.8118,0.68,22.5,0.4595,0.4351,2.09,1.61,0,23.11
-2026-10-06 00:11,12168444,Challenger Men Singles,Villena,Clay,P. Henning,M. Kasnikowski,3,0.585,0.615,0.3491,0.4405,20.5,0.6822,0.5789,1.6,2.2,0,24.61
-2026-10-06 00:11,12168444,Challenger Men Singles,Villena,Clay,P. Henning,M. Kasnikowski,3,0.585,0.615,0.3491,0.4405,21.5,0.6311,0.5622,1.62,2.08,0,24.61
-2026-10-06 00:11,12168444,Challenger Men Singles,Villena,Clay,P. Henning,M. Kasnikowski,3,0.585,0.615,0.3491,0.4405,22.5,0.5597,0.4918,1.87,1.81,1,24.61
-2026-10-06 00:11,12168444,Challenger Men Singles,Villena,Clay,P. Henning,M. Kasnikowski,3,0.585,0.615,0.3491,0.4405,23.5,0.5087,0.4417,2.06,1.63,0,24.61
-2026-10-06 00:11,12168445,Challenger Men Singles,Villena,Clay,C. Hernandez,P. Nesterov,3,0.55,0.63,0.1491,0.2024,18.5,0.7083,0.5989,1.52,2.27,0,22.75
-2026-10-06 00:11,12168445,Challenger Men Singles,Villena,Clay,C. Hernandez,P. Nesterov,3,0.55,0.63,0.1491,0.2024,19.5,0.6234,0.56,1.65,2.1,0,22.75
-2026-10-06 00:11,12168445,Challenger Men Singles,Villena,Clay,C. Hernandez,P. Nesterov,3,0.55,0.63,0.1491,0.2024,20.5,0.5481,0.4933,1.88,1.83,1,22.75
-2026-10-06 00:11,12168445,Challenger Men Singles,Villena,Clay,C. Hernandez,P. Nesterov,3,0.55,0.63,0.1491,0.2024,21.5,0.4932,0.4465,2.07,1.67,0,22.75
-2026-10-06 00:11,12168446,Challenger Men Singles,Villena,Clay,F. Maestrelli,O. Tarvet,3,0.5750000000000001,0.6325000000000001,0.2294,0.2652,19.5,0.7035,0.5789,1.6,2.2,0,23.89
-2026-10-06 00:11,12168446,Challenger Men Singles,Villena,Clay,F. Maestrelli,O. Tarvet,3,0.5750000000000001,0.6325000000000001,0.2294,0.2652,20.5,0.6292,0.5422,1.68,1.99,0,23.89
-2026-10-06 00:11,12168446,Challenger Men Singles,Villena,Clay,F. Maestrelli,O. Tarvet,3,0.5750000000000001,0.6325000000000001,0.2294,0.2652,21.5,0.5755,0.4864,1.89,1.79,1,23.89
-2026-10-06 00:11,12168446,Challenger Men Singles,Villena,Clay,F. Maestrelli,O. Tarvet,3,0.5750000000000001,0.6325000000000001,0.2294,0.2652,22.5,0.5044,0.4133,2.2,1.55,0,23.89
-2026-10-06 00:11,12168446,Challenger Men Singles,Villena,Clay,F. Maestrelli,O. Tarvet,3,0.5750000000000001,0.6325000000000001,0.2294,0.2652,23.5,0.4554,0.4274,2.13,1.59,0,23.89
-2026-10-06 00:11,12168447,Challenger Men Singles,Villena,Clay,D. Stricker,L. Djere,3,0.62,0.64,0.4005,0.5497,20.5,0.7253,0.5767,1.6,2.18,0,25.33
-2026-10-06 00:11,12168447,Challenger Men Singles,Villena,Clay,D. Stricker,L. Djere,3,0.62,0.64,0.4005,0.5497,21.5,0.676,0.5525,1.62,2.0,0,25.33
-2026-10-06 00:11,12168447,Challenger Men Singles,Villena,Clay,D. Stricker,L. Djere,3,0.62,0.64,0.4005,0.5497,22.5,0.5967,0.4865,1.9,1.8,1,25.33
-2026-10-06 00:11,12168447,Challenger Men Singles,Villena,Clay,D. Stricker,L. Djere,3,0.62,0.64,0.4005,0.5497,23.5,0.5354,0.4417,2.06,1.63,0,25.33
-2026-10-06 00:11,12168453,Itf Women Singles,W15 Chisinau (Moldova),Clay,D. Cirpanli,A. Safta,3,0.5025000000000001,0.525,0.3812,0.3208,17.5,0.8548,0.6627,1.4,2.75,0,23.98
-2026-10-06 00:11,12168453,Itf Women Singles,W15 Chisinau (Moldova),Clay,D. Cirpanli,A. Safta,3,0.5025000000000001,0.525,0.3812,0.3208,18.5,0.7846,0.5844,1.6,2.25,0,23.98
-2026-10-06 00:11,12168453,Itf Women Singles,W15 Chisinau (Moldova),Clay,D. Cirpanli,A. Safta,3,0.5025000000000001,0.525,0.3812,0.3208,19.5,0.714,0.5148,1.8,1.91,1,23.98
-2026-10-06 00:11,12168453,Itf Women Singles,W15 Chisinau (Moldova),Clay,D. Cirpanli,A. Safta,3,0.5025000000000001,0.525,0.3812,0.3208,20.5,0.6506,0.4824,1.91,1.78,0,23.98
-2026-10-06 00:11,12168453,Itf Women Singles,W15 Chisinau (Moldova),Clay,D. Cirpanli,A. Safta,3,0.5025000000000001,0.525,0.3812,0.3208,21.5,0.6009,0.4156,2.25,1.6,0,23.98
-2026-10-06 00:11,12168461,Challenger Women Singles,Samsun,Hard,B. Andreescu,A. Smith,3,0.6575,0.5675,0.8748,0.8439,16.5,0.8923,0.7373,1.24,3.48,0,22.72
-2026-10-06 00:11,12168461,Challenger Women Singles,Samsun,Hard,B. Andreescu,A. Smith,3,0.6575,0.5675,0.8748,0.8439,17.5,0.8049,0.645,1.42,2.58,0,22.72
-2026-10-06 00:11,12168461,Challenger Women Singles,Samsun,Hard,B. Andreescu,A. Smith,3,0.6575,0.5675,0.8748,0.8439,18.5,0.7119,0.5067,1.83,1.88,1,22.72
-2026-10-06 00:11,12168461,Challenger Women Singles,Samsun,Hard,B. Andreescu,A. Smith,3,0.6575,0.5675,0.8748,0.8439,19.5,0.6219,0.4674,1.96,1.72,0,22.72
-2026-10-06 00:11,12168461,Challenger Women Singles,Samsun,Hard,B. Andreescu,A. Smith,3,0.6575,0.5675,0.8748,0.8439,20.5,0.5412,0.4026,2.27,1.53,0,22.72
-2026-10-06 00:11,12168461,Challenger Women Singles,Samsun,Hard,B. Andreescu,A. Smith,3,0.6575,0.5675,0.8748,0.8439,21.5,0.484,0.3559,2.57,1.42,0,22.72
-2026-10-06 00:11,12168461,Challenger Women Singles,Samsun,Hard,B. Andreescu,A. Smith,3,0.6575,0.5675,0.8748,0.8439,22.5,0.414,0.3084,2.96,1.32,0,22.72
-2026-10-06 00:11,12168463,Challenger Women Singles,Samsun,Hard,L. Jeanjean,M. Bolkvadze,3,0.56,0.5575,0.5132,0.6916,18.5,0.8127,0.6517,1.4,2.62,0,24.42
-2026-10-06 00:11,12168463,Challenger Women Singles,Samsun,Hard,L. Jeanjean,M. Bolkvadze,3,0.56,0.5575,0.5132,0.6916,19.5,0.7424,0.571,1.6,2.13,0,24.42
-2026-10-06 00:11,12168463,Challenger Women Singles,Samsun,Hard,L. Jeanjean,M. Bolkvadze,3,0.56,0.5575,0.5132,0.6916,20.5,0.6776,0.4919,1.88,1.82,1,24.42
-2026-10-06 00:11,12168463,Challenger Women Singles,Samsun,Hard,L. Jeanjean,M. Bolkvadze,3,0.56,0.5575,0.5132,0.6916,21.5,0.6279,0.4553,2.01,1.68,0,24.42
-2026-10-06 00:11,12168463,Challenger Women Singles,Samsun,Hard,L. Jeanjean,M. Bolkvadze,3,0.56,0.5575,0.5132,0.6916,22.5,0.5623,0.3953,2.31,1.51,0,24.42
-2026-10-06 00:11,12168463,Challenger Women Singles,Samsun,Hard,L. Jeanjean,M. Bolkvadze,3,0.56,0.5575,0.5132,0.6916,23.5,0.5172,0.3559,2.57,1.42,0,24.42
-2026-10-06 00:11,12168463,Challenger Women Singles,Samsun,Hard,L. Jeanjean,M. Bolkvadze,3,0.56,0.5575,0.5132,0.6916,24.5,0.4916,0.3366,2.72,1.38,0,24.42
-2026-10-06 00:11,12168463,Challenger Women Singles,Samsun,Hard,L. Jeanjean,M. Bolkvadze,3,0.56,0.5575,0.5132,0.6916,25.5,0.4451,0.3254,2.82,1.36,0,24.42
-2026-10-06 00:11,12168464,Challenger Women Singles,Samsun,Hard,T. Kostovic,N. Noha Akugue,3,0.5825,0.605,0.385,0.6481,18.5,0.8281,0.6585,1.39,2.68,0,24.65
-2026-10-06 00:11,12168464,Challenger Women Singles,Samsun,Hard,T. Kostovic,N. Noha Akugue,3,0.5825,0.605,0.385,0.6481,19.5,0.7553,0.6301,1.45,2.47,0,24.65
-2026-10-06 00:11,12168464,Challenger Women Singles,Samsun,Hard,T. Kostovic,N. Noha Akugue,3,0.5825,0.605,0.385,0.6481,20.5,0.6867,0.5,1.85,1.85,1,24.65
-2026-10-06 00:11,12168464,Challenger Women Singles,Samsun,Hard,T. Kostovic,N. Noha Akugue,3,0.5825,0.605,0.385,0.6481,21.5,0.6361,0.5123,1.79,1.88,0,24.65
-2026-10-06 00:11,12168464,Challenger Women Singles,Samsun,Hard,T. Kostovic,N. Noha Akugue,3,0.5825,0.605,0.385,0.6481,22.5,0.5658,0.4486,2.04,1.66,0,24.65
-2026-10-06 00:11,12168464,Challenger Women Singles,Samsun,Hard,T. Kostovic,N. Noha Akugue,3,0.5825,0.605,0.385,0.6481,23.5,0.5158,0.409,2.24,1.55,0,24.65
-2026-10-06 00:11,12168464,Challenger Women Singles,Samsun,Hard,T. Kostovic,N. Noha Akugue,3,0.5825,0.605,0.385,0.6481,24.5,0.4956,0.3906,2.34,1.5,0,24.65
-2026-10-06 00:11,12168464,Challenger Women Singles,Samsun,Hard,T. Kostovic,N. Noha Akugue,3,0.5825,0.605,0.385,0.6481,25.5,0.4527,0.355,2.58,1.42,0,24.65
-2026-10-06 00:11,12168465,Itf Men Singles,M15+H Rodez,Hard,A. Gobat,C. Mueller,3,0.67,0.65,0.5965,0.511,21.5,0.7204,0.5605,1.67,2.13,0,26.03
-2026-10-06 00:11,12168465,Itf Men Singles,M15+H Rodez,Hard,A. Gobat,C. Mueller,3,0.67,0.65,0.5965,0.511,22.5,0.6312,0.4835,1.88,1.76,1,26.03
-2026-10-06 00:11,12168465,Itf Men Singles,M15+H Rodez,Hard,A. Gobat,C. Mueller,3,0.67,0.65,0.5965,0.511,23.5,0.5552,0.4219,2.22,1.62,0,26.03
-2026-10-06 00:11,12168468,Itf Men Singles,M15+H Rodez,Hard,D. Jade,K. De Schepper,3,0.6375000000000001,0.68,0.3016,0.5362,21.5,0.6872,0.5807,1.61,2.23,0,25.56
-2026-10-06 00:11,12168468,Itf Men Singles,M15+H Rodez,Hard,D. Jade,K. De Schepper,3,0.6375000000000001,0.68,0.3016,0.5362,22.5,0.5973,0.4987,1.88,1.87,1,25.56
-2026-10-06 00:11,12168468,Itf Men Singles,M15+H Rodez,Hard,D. Jade,K. De Schepper,3,0.6375000000000001,0.68,0.3016,0.5362,23.5,0.5233,0.4395,2.13,1.67,0,25.56
-2026-10-06 00:11,12168483,Itf Men Singles,M25 Kigali 2,Clay,C. Lock,M. Vankan,3,0.51,0.6425,0.0416,0.1106,16.5,0.7387,0.5055,1.8,1.84,1,20.08
-2026-10-06 00:11,12168484,Itf Men Singles,M25 Kigali 2,Clay,A. Nefve,A. Beckley,3,0.5575,0.625,0.1901,0.2829,19.5,0.6626,0.5503,1.7,2.08,0,23.3
-2026-10-06 00:11,12168484,Itf Men Singles,M25 Kigali 2,Clay,A. Nefve,A. Beckley,3,0.5575,0.625,0.1901,0.2829,20.5,0.5887,0.4946,1.86,1.82,1,23.3
-2026-10-06 00:11,12168484,Itf Men Singles,M25 Kigali 2,Clay,A. Nefve,A. Beckley,3,0.5575,0.625,0.1901,0.2829,21.5,0.5345,0.4342,2.15,1.65,0,23.3
-2026-10-06 00:11,12168486,Itf Men Singles,M25 Kigali 2,Clay,D. Javia,R. De Alba,3,0.6225,0.5575,0.8011,0.8254,19.5,0.6683,0.4863,1.87,1.77,1,23.38
-2026-10-06 00:11,12168487,Itf Men Singles,M25 Kigali 2,Clay,Y. Oliel,L. Van Herck,3,0.5975,0.5925,0.5259,0.7453,19.5,0.7678,0.5529,1.69,2.09,0,24.85
-2026-10-06 00:11,12168487,Itf Men Singles,M25 Kigali 2,Clay,Y. Oliel,L. Van Herck,3,0.5975,0.5925,0.5259,0.7453,20.5,0.6999,0.4767,1.91,1.74,1,24.85
-2026-10-06 00:11,12168489,Itf Men Singles,M25 Kigali 2,Clay,D. Suresh,P. Brown,3,0.735,0.59,0.9607,0.2665,19.5,0.5471,0.511,1.78,1.86,1,21.5
-2026-10-06 00:11,12168489,Itf Men Singles,M25 Kigali 2,Clay,D. Suresh,P. Brown,3,0.735,0.59,0.9607,0.2665,20.5,0.4468,0.4672,1.95,1.71,0,21.5
-2026-10-06 00:11,12168490,Itf Men Singles,M25 Kigali 2,Clay,E. Niyigena,C. Ishimwe,3,0.61,0.5975,0.564,0.747,18.5,0.8449,0.5567,1.68,2.11,0,24.93
-2026-10-06 00:11,12168490,Itf Men Singles,M25 Kigali 2,Clay,E. Niyigena,C. Ishimwe,3,0.61,0.5975,0.564,0.747,19.5,0.7728,0.4615,2.03,1.74,1,24.93
-2026-10-06 00:11,12168491,Itf Men Singles,M25 Kigali 2,Clay,C. Warik,C. Denolly,3,0.52,0.6575,0.0373,0.0989,17.5,0.6171,0.5055,1.8,1.84,1,20.05
-2026-10-06 00:11,12168517,Challenger Men Singles,Palermo (Italy) - Qualification,Clay,B. Gadamauri,P. Vives Marcos,3,0.635,0.63,0.5251,0.4891,21.5,0.6885,0.5622,1.62,2.08,0,25.51
-2026-10-06 00:11,12168517,Challenger Men Singles,Palermo (Italy) - Qualification,Clay,B. Gadamauri,P. Vives Marcos,3,0.635,0.63,0.5251,0.4891,22.5,0.6085,0.4918,1.87,1.81,1,25.51
-2026-10-06 00:11,12168517,Challenger Men Singles,Palermo (Italy) - Qualification,Clay,B. Gadamauri,P. Vives Marcos,3,0.635,0.63,0.5251,0.4891,23.5,0.5457,0.4417,2.06,1.63,0,25.51
-2026-10-06 00:11,12168519,Challenger Men Singles,Palermo (Italy) - Qualification,Clay,K. Ivanovski,A. Moro Canas,3,0.6,0.645,0.2841,0.2451,20.5,0.6795,0.5308,1.75,1.98,0,24.64
-2026-10-06 00:11,12168519,Challenger Men Singles,Palermo (Italy) - Qualification,Clay,K. Ivanovski,A. Moro Canas,3,0.6,0.645,0.2841,0.2451,21.5,0.6271,0.4852,1.91,1.8,1,24.64
-2026-10-06 00:11,12168519,Challenger Men Singles,Palermo (Italy) - Qualification,Clay,K. Ivanovski,A. Moro Canas,3,0.6,0.645,0.2841,0.2451,22.5,0.5501,0.4297,2.15,1.62,0,24.64
-2026-10-06 00:11,12168519,Challenger Men Singles,Palermo (Italy) - Qualification,Clay,K. Ivanovski,A. Moro Canas,3,0.6,0.645,0.2841,0.2451,23.5,0.4936,0.4096,2.22,1.54,0,24.64
-2026-10-06 00:11,12168520,Challenger Men Singles,Palermo (Italy) - Qualification,Clay,Z. Kolar,D. Sakellaridis,3,0.605,0.525,0.8545,0.8072,18.5,0.6808,0.6026,1.51,2.29,0,22.41
-2026-10-06 00:11,12168520,Challenger Men Singles,Palermo (Italy) - Qualification,Clay,Z. Kolar,D. Sakellaridis,3,0.605,0.525,0.8545,0.8072,19.5,0.5982,0.5202,1.78,1.93,1,22.41
-2026-10-06 00:11,12168520,Challenger Men Singles,Palermo (Italy) - Qualification,Clay,Z. Kolar,D. Sakellaridis,3,0.605,0.525,0.8545,0.8072,20.5,0.5267,0.4533,2.05,1.7,0,22.41
-2026-10-06 00:11,12168520,Challenger Men Singles,Palermo (Italy) - Qualification,Clay,Z. Kolar,D. Sakellaridis,3,0.605,0.525,0.8545,0.8072,21.5,0.4736,0.411,2.25,1.57,0,22.41
-2026-10-06 00:11,12168520,Challenger Men Singles,Palermo (Italy) - Qualification,Clay,Z. Kolar,D. Sakellaridis,3,0.605,0.525,0.8545,0.8072,22.5,0.4133,0.4133,2.2,1.55,0,22.41
-2026-10-06 00:11,12168522,Challenger Men Singles,Palermo (Italy) - Qualification,Clay,C. Langmo,L. Giustino,3,0.615,0.6775,0.2194,0.2693,20.5,0.6743,0.5202,1.78,1.93,1,24.61
-2026-10-06 00:11,12168522,Challenger Men Singles,Palermo (Italy) - Qualification,Clay,C. Langmo,L. Giustino,3,0.615,0.6775,0.2194,0.2693,21.5,0.6201,0.473,1.95,1.75,0,24.61
-2026-10-06 00:11,12168522,Challenger Men Singles,Palermo (Italy) - Qualification,Clay,C. Langmo,L. Giustino,3,0.615,0.6775,0.2194,0.2693,22.5,0.5346,0.4263,2.18,1.62,0,24.61
-2026-10-06 00:11,12168522,Challenger Men Singles,Palermo (Italy) - Qualification,Clay,C. Langmo,L. Giustino,3,0.615,0.6775,0.2194,0.2693,23.5,0.4698,0.4209,2.16,1.57,0,24.61
-2026-10-06 00:11,12168538,Itf Men Singles,M25 Santa Margherita di Pula 9,Clay,L. Berto,M. Mazza,3,0.5625,0.6325000000000001,0.1826,0.2605,20.5,0.5875,0.5027,1.81,1.83,1,23.3
-2026-10-06 00:11,12168540,Itf Men Singles,M25 Santa Margherita di Pula 9,Clay,K. Kivattsev,I. Ivanov,3,0.63,0.595,0.6729,0.3107,20.5,0.6865,0.5055,1.8,1.84,0,24.71
-2026-10-06 00:11,12168540,Itf Men Singles,M25 Santa Margherita di Pula 9,Clay,K. Kivattsev,I. Ivanov,3,0.63,0.595,0.6729,0.3107,21.5,0.6351,0.5,1.82,1.82,1,24.71
-2026-10-06 00:11,12168541,Itf Men Singles,M25 Santa Margherita di Pula 9,Clay,L. Lokoli,M. Sciahbasi,3,0.595,0.52,0.8399,0.7575,19.5,0.6088,0.526,1.73,1.92,0,22.55
-2026-10-06 00:11,12168541,Itf Men Singles,M25 Santa Margherita di Pula 9,Clay,L. Lokoli,M. Sciahbasi,3,0.595,0.52,0.8399,0.7575,20.5,0.5385,0.5,1.82,1.82,1,22.55
-2026-10-06 00:11,12168550,Itf Women Singles,W35 Santa Margherita di Pula 9,Clay,S. Cakarevic,C. Bohrer Martins,3,0.54,0.545,0.4734,0.6543,20.5,0.6705,0.4837,1.9,1.78,1,24.29
-2026-10-06 00:11,12168551,Itf Women Singles,W35 Santa Margherita di Pula 9,Clay,L. Vladson,B. Zeltina,3,0.5375,0.5325,0.5267,0.4508,20.5,0.6682,0.522,1.74,1.9,1,24.24
-2026-10-06 00:11,12168553,Itf Women Singles,W35 Villeneuve d'Ascq,Hard,N. Schunk,M. Weckerle,3,0.555,0.535,0.6052,0.8598,18.5,0.7964,0.4767,1.91,1.74,1,24.16
-2026-10-06 00:11,12168554,Itf Women Singles,W35 Villeneuve d'Ascq,Hard,M. Leonard,M. Thamm,3,0.5425,0.56,0.4079,0.4755,20.5,0.666,0.5137,1.78,1.88,1,24.24
-2026-10-06 00:11,12168555,Itf Women Singles,W35 Villeneuve d'Ascq,Hard,J. Stusek,K. Coppez,3,0.58,0.495,0.8717,0.8768,17.5,0.7353,0.5288,1.72,1.93,1,21.92
-2026-10-06 00:11,12168556,Itf Women Singles,W35 Villeneuve d'Ascq,Hard,J. Otzipka,M. Szostak,3,0.5225,0.5475,0.369,0.5733,19.5,0.7158,0.527,1.75,1.95,0,24.01
-2026-10-06 00:11,12168556,Itf Women Singles,W35 Villeneuve d'Ascq,Hard,J. Otzipka,M. Szostak,3,0.5225,0.5475,0.369,0.5733,20.5,0.6516,0.5095,1.8,1.87,1,24.01
-2026-10-06 00:11,12168559,Itf Women Singles,W35 Villeneuve d'Ascq,Hard,C. Vlasselaer,D. Mpetshi Perricard,3,0.6325000000000001,0.585,0.7289,0.5805,18.5,0.8099,0.6345,1.44,2.5,0,24.31
-2026-10-06 00:11,12168559,Itf Women Singles,W35 Villeneuve d'Ascq,Hard,C. Vlasselaer,D. Mpetshi Perricard,3,0.6325000000000001,0.585,0.7289,0.5805,19.5,0.7317,0.6005,1.53,2.3,0,24.31
-2026-10-06 00:11,12168559,Itf Women Singles,W35 Villeneuve d'Ascq,Hard,C. Vlasselaer,D. Mpetshi Perricard,3,0.6325000000000001,0.585,0.7289,0.5805,20.5,0.6585,0.527,1.75,1.95,1,24.31
-2026-10-06 00:11,12168559,Itf Women Singles,W35 Villeneuve d'Ascq,Hard,C. Vlasselaer,D. Mpetshi Perricard,3,0.6325000000000001,0.585,0.7289,0.5805,21.5,0.6057,0.473,1.95,1.75,0,24.31
-2026-10-06 00:11,12168559,Itf Women Singles,W35 Villeneuve d'Ascq,Hard,C. Vlasselaer,D. Mpetshi Perricard,3,0.6325000000000001,0.585,0.7289,0.5805,22.5,0.5327,0.4164,2.2,1.57,0,24.31
-2026-10-06 00:11,12168559,Itf Women Singles,W35 Villeneuve d'Ascq,Hard,C. Vlasselaer,D. Mpetshi Perricard,3,0.6325000000000001,0.585,0.7289,0.5805,23.5,0.4811,0.3866,2.38,1.5,0,24.31
-2026-10-06 00:11,12168595,Challenger Men Singles,Antofagasta,Clay,M. Tobon,T. Cigarran,3,0.6125,0.5725,0.6985,0.7401,18.5,0.8045,0.5791,1.57,2.16,0,24.26
-2026-10-06 00:11,12168595,Challenger Men Singles,Antofagasta,Clay,M. Tobon,T. Cigarran,3,0.6125,0.5725,0.6985,0.7401,19.5,0.7288,0.5082,1.81,1.87,1,24.26
-2026-10-06 00:11,12168595,Challenger Men Singles,Antofagasta,Clay,M. Tobon,T. Cigarran,3,0.6125,0.5725,0.6985,0.7401,20.5,0.6584,0.4538,2.01,1.67,0,24.26
-2026-10-06 00:11,12168597,Itf Men Singles,M15 Monastir 34,Hard,M. Picard,M. Chazal,3,0.5775,0.64,0.2114,0.157,18.5,0.7793,0.511,1.78,1.86,1,23.79
-2026-10-06 00:11,12168597,Itf Men Singles,M15 Monastir 34,Hard,M. Picard,M. Chazal,3,0.5775,0.64,0.2114,0.157,19.5,0.6973,0.4341,2.19,1.68,0,23.79
-2026-10-06 00:11,12168598,Itf Men Singles,M15 Monastir 34,Hard,A. Colombo,L. Wiedenmann,3,0.5925,0.6925,0.1072,0.3227,20.5,0.5569,0.5144,1.85,1.96,1,22.96
-2026-10-06 00:11,12168598,Itf Men Singles,M15 Monastir 34,Hard,A. Colombo,L. Wiedenmann,3,0.5925,0.6925,0.1072,0.3227,21.5,0.4964,0.4581,2.07,1.75,0,22.96
-2026-10-06 00:11,12168599,Itf Men Singles,M15 Monastir 34,Hard,R. Piatti,O. Ogunsakin,3,0.65,0.61,0.6928,0.6858,19.5,0.7723,0.5469,1.74,2.1,0,24.94
-2026-10-06 00:11,12168599,Itf Men Singles,M15 Monastir 34,Hard,R. Piatti,O. Ogunsakin,3,0.65,0.61,0.6928,0.6858,20.5,0.6983,0.466,2.04,1.78,1,24.94
-2026-10-06 00:11,12168599,Itf Men Singles,M15 Monastir 34,Hard,R. Piatti,O. Ogunsakin,3,0.65,0.61,0.6928,0.6858,21.5,0.6469,0.457,2.02,1.7,0,24.94
-2026-10-06 00:11,12168600,Itf Women Singles,W35 Monastir 6,Hard,J. Hinojosa Gomez,A. Kmiecik,3,0.52,0.4975,0.6189,0.641,19.5,0.7135,0.5237,1.81,1.99,1,23.97
-2026-10-06 00:11,12168600,Itf Women Singles,W35 Monastir 6,Hard,J. Hinojosa Gomez,A. Kmiecik,3,0.52,0.4975,0.6189,0.641,20.5,0.6501,0.4569,2.08,1.75,0,23.97
-2026-10-06 00:11,12168601,Itf Women Singles,W35 Monastir 6,Hard,A. Paszun,A. Granwehr,3,0.5375,0.6025,0.1959,0.2791,19.5,0.6491,0.5197,1.83,1.98,1,23.1
-2026-10-06 00:11,12168601,Itf Women Singles,W35 Monastir 6,Hard,A. Paszun,A. Granwehr,3,0.5375,0.6025,0.1959,0.2791,20.5,0.5783,0.4531,2.1,1.74,0,23.1
-2026-10-06 00:11,12168603,Itf Women Singles,W35 Monastir 6,Hard,S. Rutlauka,D. Zoldakova,3,0.52,0.5725,0.2421,0.121,16.5,0.8942,0.5831,1.63,2.28,0,23.34
-2026-10-06 00:11,12168603,Itf Women Singles,W35 Monastir 6,Hard,S. Rutlauka,D. Zoldakova,3,0.52,0.5725,0.2421,0.121,17.5,0.8214,0.4791,1.99,1.83,1,23.34
-2026-10-06 00:11,12168603,Itf Women Singles,W35 Monastir 6,Hard,S. Rutlauka,D. Zoldakova,3,0.52,0.5725,0.2421,0.121,18.5,0.7432,0.3955,2.4,1.57,0,23.34
-2026-10-06 00:11,12168683,Itf Women Singles,W15 Szekesfehervar (Hungary),Clay,L. Schaedel,M. Nuudi,3,0.5025000000000001,0.5650000000000001,0.2016,0.253,19.5,0.6342,0.4973,1.85,1.83,1,22.88
-2026-10-06 00:11,12168685,Itf Women Singles,W50 Burgas (Bulgaria),Clay,V. Garnevska,S. Zhenikhova,3,0.4925,0.54,0.2618,0.2779,19.5,0.6692,0.526,1.73,1.92,1,23.35
-2026-10-06 00:11,12168686,Itf Women Singles,W50 Burgas (Bulgaria),Clay,S. Van Emst,S. Sakellaridi,3,0.58,0.58,0.5,0.5733,20.5,0.6897,0.5095,1.8,1.87,1,24.65
-2026-10-06 00:11,12168687,Itf Women Singles,W50 Burgas (Bulgaria),Clay,I. Ivanova,D. Simionescu,3,0.5,0.47250000000000003,0.6442,0.4397,20.5,0.6437,0.5152,1.76,1.87,1,23.88
-2026-10-06 00:11,12168687,Itf Women Singles,W50 Burgas (Bulgaria),Clay,I. Ivanova,D. Simionescu,3,0.5,0.47250000000000003,0.6442,0.4397,21.5,0.5938,0.4767,1.91,1.74,0,23.88
-2026-10-06 00:11,12168688,Itf Women Singles,W50 Burgas (Bulgaria),Clay,A. Kovackova,P. Hercog,3,0.535,0.5725,0.3091,0.5921,20.5,0.6378,0.5041,1.82,1.85,1,23.86
-2026-10-06 00:11,12168690,Itf Women Singles,W50 Burgas (Bulgaria),Clay,L. Petruzelova,J. Kovackova,3,0.49,0.5750000000000001,0.128,0.1593,18.5,0.6419,0.4755,1.93,1.75,1,21.89
+2026-10-06 02:02,12167978,Challenger Men Singles,Wuning 3 (China) - Qualification,Hard,M. Imamura,K. Uchida,3,0.66,0.6225,0.6798,0.6199,20.5,0.7177,0.5764,1.58,2.15,1,25.25
+2026-10-06 02:02,12167981,Challenger Men Singles,Wuning 3 (China) - Qualification,Hard,K. Samrej,E. Aguiard,3,0.6625,0.6575,0.5244,0.4865,21.5,0.7289,0.611,1.49,2.34,0,26.16
+2026-10-06 02:02,12167981,Challenger Men Singles,Wuning 3 (China) - Qualification,Hard,K. Samrej,E. Aguiard,3,0.6625,0.6575,0.5244,0.4865,22.5,0.6401,0.5257,1.75,1.94,0,26.16
+2026-10-06 02:02,12167981,Challenger Men Singles,Wuning 3 (China) - Qualification,Hard,K. Samrej,E. Aguiard,3,0.6625,0.6575,0.5244,0.4865,23.5,0.5638,0.4865,1.9,1.8,1,26.16
+2026-10-06 02:02,12167982,Challenger Men Singles,Wuning 3 (China) - Qualification,Hard,K. Smith,H. Moriya,3,0.6825,0.6275000000000001,0.7502,0.6789,21.5,0.6543,0.5543,1.64,2.04,1,25.1
+2026-10-06 02:02,12167983,Challenger Men Singles,Wuning 3 (China) - Qualification,Hard,F. Sun,A. Wang,3,0.72,0.64,0.83,0.87,19.5,0.7828,0.5942,1.53,2.24,0,24.92
+2026-10-06 02:02,12167983,Challenger Men Singles,Wuning 3 (China) - Qualification,Hard,F. Sun,A. Wang,3,0.72,0.64,0.83,0.87,20.5,0.6981,0.4692,1.98,1.75,1,24.92
+2026-10-06 02:02,12167983,Challenger Men Singles,Wuning 3 (China) - Qualification,Hard,F. Sun,A. Wang,3,0.72,0.64,0.83,0.87,21.5,0.6431,0.4416,2.2,1.74,0,24.92
+2026-10-06 02:02,12167984,Challenger Men Singles,Wuning 3 (China) - Qualification,Hard,E. Zhu,K. Matsuda,3,0.63,0.65,0.4015,0.6925,20.5,0.7378,0.5726,1.59,2.13,0,25.55
+2026-10-06 02:02,12167984,Challenger Men Singles,Wuning 3 (China) - Qualification,Hard,E. Zhu,K. Matsuda,3,0.63,0.65,0.4015,0.6925,21.5,0.6893,0.5136,1.79,1.89,1,25.55
+2026-10-06 02:02,12167984,Challenger Men Singles,Wuning 3 (China) - Qualification,Hard,E. Zhu,K. Matsuda,3,0.63,0.65,0.4015,0.6925,22.5,0.6068,0.4484,2.03,1.65,0,25.55
+2026-10-06 02:02,12168047,Challenger Men Singles,Villena,Clay,F. Balshaw,J. J. Schwaerzler,3,0.665,0.6175,0.7229,0.589,21.5,0.6479,0.6026,1.51,2.29,0,24.98
+2026-10-06 02:02,12168047,Challenger Men Singles,Villena,Clay,F. Balshaw,J. J. Schwaerzler,3,0.665,0.6175,0.7229,0.589,22.5,0.5645,0.5203,1.77,1.92,1,24.98
+2026-10-06 02:02,12168047,Challenger Men Singles,Villena,Clay,F. Balshaw,J. J. Schwaerzler,3,0.665,0.6175,0.7229,0.589,23.5,0.5003,0.4645,1.96,1.7,0,24.98
+2026-10-06 02:02,12168047,Challenger Men Singles,Villena,Clay,F. Balshaw,J. J. Schwaerzler,3,0.665,0.6175,0.7229,0.589,24.5,0.4884,0.4599,2.02,1.72,0,24.98
+2026-10-06 02:02,12168051,Challenger Men Singles,Villena,Clay,D. Glinka,G. Onclin,3,0.5825,0.5925,0.4481,0.6373,21.5,0.6422,0.545,1.67,2.0,0,24.71
+2026-10-06 02:02,12168051,Challenger Men Singles,Villena,Clay,D. Glinka,G. Onclin,3,0.5825,0.5925,0.4481,0.6373,22.5,0.5729,0.477,1.93,1.76,1,24.71
+2026-10-06 02:02,12168051,Challenger Men Singles,Villena,Clay,D. Glinka,G. Onclin,3,0.5825,0.5925,0.4481,0.6373,23.5,0.5237,0.4533,2.05,1.7,0,24.71
+2026-10-06 02:02,12168051,Challenger Men Singles,Villena,Clay,D. Glinka,G. Onclin,3,0.5825,0.5925,0.4481,0.6373,24.5,0.5024,0.4465,2.07,1.67,0,24.71
+2026-10-06 02:02,12168052,Challenger Men Singles,Villena,Clay,A. Holmgren,P. Martinez,3,0.6025,0.63,0.3628,0.5789,21.5,0.651,0.5649,1.61,2.09,0,24.94
+2026-10-06 02:02,12168052,Challenger Men Singles,Villena,Clay,A. Holmgren,P. Martinez,3,0.6025,0.63,0.3628,0.5789,22.5,0.5755,0.5081,1.82,1.88,1,24.94
+2026-10-06 02:02,12168052,Challenger Men Singles,Villena,Clay,A. Holmgren,P. Martinez,3,0.6025,0.63,0.3628,0.5789,23.5,0.5197,0.4481,2.02,1.64,0,24.94
+2026-10-06 02:02,12168052,Challenger Men Singles,Villena,Clay,A. Holmgren,P. Martinez,3,0.6025,0.63,0.3628,0.5789,24.5,0.5035,0.4465,2.07,1.67,0,24.94
+2026-10-06 02:02,12168059,Challenger Men Singles,Braga,Clay,D. Blanch,M. Alcala Gurri,3,0.5425,0.5975,0.2343,0.2937,19.5,0.6762,0.5687,1.6,2.11,0,23.48
+2026-10-06 02:02,12168059,Challenger Men Singles,Braga,Clay,D. Blanch,M. Alcala Gurri,3,0.5425,0.5975,0.2343,0.2937,20.5,0.6065,0.5082,1.81,1.87,1,23.48
+2026-10-06 02:02,12168059,Challenger Men Singles,Braga,Clay,D. Blanch,M. Alcala Gurri,3,0.5425,0.5975,0.2343,0.2937,21.5,0.5542,0.4617,1.97,1.69,0,23.48
+2026-10-06 02:02,12168060,Challenger Men Singles,Braga,Clay,F. Broska,L. Neumayer,3,0.6125,0.635,0.3878,0.253,19.5,0.7868,0.5829,1.56,2.18,0,25.17
+2026-10-06 02:02,12168060,Challenger Men Singles,Braga,Clay,F. Broska,L. Neumayer,3,0.6125,0.635,0.3878,0.253,20.5,0.7156,0.5163,1.78,1.9,1,25.17
+2026-10-06 02:02,12168060,Challenger Men Singles,Braga,Clay,F. Broska,L. Neumayer,3,0.6125,0.635,0.3878,0.253,21.5,0.6658,0.4645,1.96,1.7,0,25.17
+2026-10-06 02:02,12168060,Challenger Men Singles,Braga,Clay,F. Broska,L. Neumayer,3,0.6125,0.635,0.3878,0.253,22.5,0.5882,0.4263,2.18,1.62,0,25.17
+2026-10-06 02:02,12168061,Challenger Men Singles,Braga,Clay,M. Dodig,A. Pellegrino,3,0.645,0.645,0.5,0.5257,21.5,0.7061,0.5649,1.61,2.09,0,25.8
+2026-10-06 02:02,12168061,Challenger Men Singles,Braga,Clay,M. Dodig,A. Pellegrino,3,0.645,0.645,0.5,0.5257,22.5,0.6222,0.4946,1.86,1.82,1,25.8
+2026-10-06 02:02,12168061,Challenger Men Singles,Braga,Clay,M. Dodig,A. Pellegrino,3,0.645,0.645,0.5,0.5257,23.5,0.5537,0.4417,2.06,1.63,0,25.8
+2026-10-06 02:02,12168064,Challenger Men Singles,Braga,Clay,M. Moeller,T. Torres,3,0.595,0.5325,0.7957,0.6305,19.5,0.6513,0.5867,1.55,2.2,0,23.13
+2026-10-06 02:02,12168064,Challenger Men Singles,Braga,Clay,M. Moeller,T. Torres,3,0.595,0.5325,0.7957,0.6305,20.5,0.5815,0.523,1.76,1.93,1,23.13
+2026-10-06 02:02,12168064,Challenger Men Singles,Braga,Clay,M. Moeller,T. Torres,3,0.595,0.5325,0.7957,0.6305,21.5,0.529,0.474,1.92,1.73,0,23.13
+2026-10-06 02:02,12168066,Challenger Men Singles,Braga,Clay,S. Nagal,L. Mikrut,3,0.5875,0.6325000000000001,0.282,0.2658,19.5,0.7382,0.5916,1.56,2.26,0,24.4
+2026-10-06 02:02,12168066,Challenger Men Singles,Braga,Clay,S. Nagal,L. Mikrut,3,0.5875,0.6325000000000001,0.282,0.2658,20.5,0.6651,0.5203,1.77,1.92,1,24.4
+2026-10-06 02:02,12168066,Challenger Men Singles,Braga,Clay,S. Nagal,L. Mikrut,3,0.5875,0.6325000000000001,0.282,0.2658,21.5,0.6127,0.4607,2.06,1.76,0,24.4
+2026-10-06 02:02,12168066,Challenger Men Singles,Braga,Clay,S. Nagal,L. Mikrut,3,0.5875,0.6325000000000001,0.282,0.2658,22.5,0.5393,0.4377,2.12,1.65,0,24.4
+2026-10-06 02:02,12168067,Challenger Men Singles,Braga,Clay,T. Pereira,P. Martin Tiffon,3,0.5875,0.6275000000000001,0.3036,0.3481,20.5,0.6725,0.5622,1.62,2.08,0,24.5
+2026-10-06 02:02,12168067,Challenger Men Singles,Braga,Clay,T. Pereira,P. Martin Tiffon,3,0.5875,0.6275000000000001,0.3036,0.3481,21.5,0.6205,0.5082,1.81,1.87,1,24.5
+2026-10-06 02:02,12168067,Challenger Men Singles,Braga,Clay,T. Pereira,P. Martin Tiffon,3,0.5875,0.6275000000000001,0.3036,0.3481,22.5,0.5476,0.4523,2.01,1.66,0,24.5
+2026-10-06 02:02,12168071,Challenger Men Singles,Palermo (Italy) - Qualification,Clay,P. Basile,M. Giunta,3,0.6325000000000001,0.6575,0.3782,0.5397,21.5,0.6912,0.5622,1.62,2.08,0,25.59
+2026-10-06 02:02,12168071,Challenger Men Singles,Palermo (Italy) - Qualification,Clay,P. Basile,M. Giunta,3,0.6325000000000001,0.6575,0.3782,0.5397,22.5,0.607,0.4946,1.86,1.82,1,25.59
+2026-10-06 02:02,12168071,Challenger Men Singles,Palermo (Italy) - Qualification,Clay,P. Basile,M. Giunta,3,0.6325000000000001,0.6575,0.3782,0.5397,23.5,0.5392,0.4457,2.04,1.64,0,25.59
+2026-10-06 02:02,12168071,Challenger Men Singles,Palermo (Italy) - Qualification,Clay,P. Basile,M. Giunta,3,0.6325000000000001,0.6575,0.3782,0.5397,24.5,0.528,0.44,2.1,1.65,0,25.59
+2026-10-06 02:02,12168073,Challenger Men Singles,Palermo (Italy) - Qualification,Clay,J. Clarke,G. Piraino,3,0.58,0.5375,0.7135,0.6193,19.5,0.6972,0.5767,1.6,2.18,0,23.77
+2026-10-06 02:02,12168073,Challenger Men Singles,Palermo (Italy) - Qualification,Clay,J. Clarke,G. Piraino,3,0.58,0.5375,0.7135,0.6193,20.5,0.6299,0.5355,1.7,1.96,0,23.77
+2026-10-06 02:02,12168073,Challenger Men Singles,Palermo (Italy) - Qualification,Clay,J. Clarke,G. Piraino,3,0.58,0.5375,0.7135,0.6193,21.5,0.5787,0.4864,1.89,1.79,1,23.77
+2026-10-06 02:02,12168073,Challenger Men Singles,Palermo (Italy) - Qualification,Clay,J. Clarke,G. Piraino,3,0.58,0.5375,0.7135,0.6193,22.5,0.5146,0.4274,2.13,1.59,0,23.77
+2026-10-06 02:02,12168075,Challenger Men Singles,Palermo (Italy) - Qualification,Clay,S. Pieri,M. Krumich,3,0.58,0.6175,0.3138,0.3933,21.5,0.617,0.5339,1.72,1.97,1,24.42
+2026-10-06 02:02,12168075,Challenger Men Singles,Palermo (Italy) - Qualification,Clay,S. Pieri,M. Krumich,3,0.58,0.6175,0.3138,0.3933,22.5,0.546,0.4479,2.12,1.72,0,24.42
+2026-10-06 02:02,12168075,Challenger Men Singles,Palermo (Italy) - Qualification,Clay,S. Pieri,M. Krumich,3,0.58,0.6175,0.3138,0.3933,23.5,0.496,0.4353,2.05,1.58,0,24.42
+2026-10-06 02:02,12168076,Challenger Men Singles,Palermo (Italy) - Qualification,Clay,L. Potenza,E. Dalla Valle,3,0.6025,0.66,0.2348,0.2495,19.5,0.7409,0.5795,1.56,2.15,0,24.43
+2026-10-06 02:02,12168076,Challenger Men Singles,Palermo (Italy) - Qualification,Clay,L. Potenza,E. Dalla Valle,3,0.6025,0.66,0.2348,0.2495,20.5,0.6633,0.5148,1.8,1.91,1,24.43
+2026-10-06 02:02,12168076,Challenger Men Singles,Palermo (Italy) - Qualification,Clay,L. Potenza,E. Dalla Valle,3,0.6025,0.66,0.2348,0.2495,21.5,0.6094,0.4645,1.96,1.7,0,24.43
+2026-10-06 02:02,12168077,Challenger Men Singles,Palermo (Italy) - Qualification,Clay,M. Ribecai,B. Sanchez Martinez,3,0.595,0.5925,0.513,0.5445,20.5,0.6994,0.5516,1.65,2.03,0,24.83
+2026-10-06 02:02,12168077,Challenger Men Singles,Palermo (Italy) - Qualification,Clay,M. Ribecai,B. Sanchez Martinez,3,0.595,0.5925,0.513,0.5445,21.5,0.6495,0.5,1.84,1.84,1,24.83
+2026-10-06 02:02,12168077,Challenger Men Singles,Palermo (Italy) - Qualification,Clay,M. Ribecai,B. Sanchez Martinez,3,0.595,0.5925,0.513,0.5445,22.5,0.5791,0.4457,2.04,1.64,0,24.83
+2026-10-06 02:02,12168078,Challenger Men Singles,Palermo (Italy) - Qualification,Clay,O. Roca Batalla,F. Passaro,3,0.64,0.64,0.5,0.4142,21.5,0.699,0.5516,1.65,2.03,0,25.68
+2026-10-06 02:02,12168078,Challenger Men Singles,Palermo (Italy) - Qualification,Clay,O. Roca Batalla,F. Passaro,3,0.64,0.64,0.5,0.4142,22.5,0.6167,0.4892,1.9,1.82,1,25.68
+2026-10-06 02:02,12168078,Challenger Men Singles,Palermo (Italy) - Qualification,Clay,O. Roca Batalla,F. Passaro,3,0.64,0.64,0.5,0.4142,23.5,0.5506,0.4351,2.09,1.61,0,25.68
+2026-10-06 02:02,12168079,Challenger Men Singles,Palermo (Italy) - Qualification,Clay,C. Sanchez Jover,F. Forti,3,0.5725,0.5875,0.422,0.4582,21.5,0.6336,0.545,1.67,2.0,0,24.57
+2026-10-06 02:02,12168079,Challenger Men Singles,Palermo (Italy) - Qualification,Clay,C. Sanchez Jover,F. Forti,3,0.5725,0.5875,0.422,0.4582,22.5,0.5656,0.5054,1.83,1.87,1,24.57
+2026-10-06 02:02,12168079,Challenger Men Singles,Palermo (Italy) - Qualification,Clay,C. Sanchez Jover,F. Forti,3,0.5725,0.5875,0.422,0.4582,23.5,0.5179,0.4624,2.0,1.72,0,24.57
+2026-10-06 02:02,12168079,Challenger Men Singles,Palermo (Italy) - Qualification,Clay,C. Sanchez Jover,F. Forti,3,0.5725,0.5875,0.422,0.4582,24.5,0.4953,0.4465,2.07,1.67,0,24.57
+2026-10-06 02:02,12168094,Challenger Men Singles,Antofagasta,Clay,A. Barrena,M. Pucinelli de Almeida,3,0.535,0.5875,0.2435,0.4563,20.5,0.6075,0.5535,1.67,2.07,0,23.47
+2026-10-06 02:02,12168094,Challenger Men Singles,Antofagasta,Clay,A. Barrena,M. Pucinelli de Almeida,3,0.535,0.5875,0.2435,0.4563,21.5,0.5556,0.5,1.85,1.85,1,23.47
+2026-10-06 02:02,12168094,Challenger Men Singles,Antofagasta,Clay,A. Barrena,M. Pucinelli de Almeida,3,0.535,0.5875,0.2435,0.4563,22.5,0.4921,0.44,2.1,1.65,0,23.47
+2026-10-06 02:02,12168096,Challenger Men Singles,Antofagasta,Clay,S. Heredia,E. Ribeiro,3,0.6,0.6625,0.216,0.2551,19.5,0.7295,0.5648,1.68,2.18,0,24.26
+2026-10-06 02:02,12168096,Challenger Men Singles,Antofagasta,Clay,S. Heredia,E. Ribeiro,3,0.6,0.6625,0.216,0.2551,20.5,0.6508,0.4948,1.93,1.89,1,24.26
+2026-10-06 02:02,12168096,Challenger Men Singles,Antofagasta,Clay,S. Heredia,E. Ribeiro,3,0.6,0.6625,0.216,0.2551,21.5,0.5961,0.438,2.13,1.66,0,24.26
+2026-10-06 02:02,12168097,Challenger Men Singles,Antofagasta,Clay,G. I. Justo,F. Comesana,3,0.6,0.625,0.3745,0.3485,20.5,0.7008,0.5308,1.75,1.98,0,24.92
+2026-10-06 02:02,12168097,Challenger Men Singles,Antofagasta,Clay,G. I. Justo,F. Comesana,3,0.6,0.625,0.3745,0.3485,21.5,0.6503,0.4865,1.9,1.8,1,24.92
+2026-10-06 02:02,12168097,Challenger Men Singles,Antofagasta,Clay,G. I. Justo,F. Comesana,3,0.6,0.625,0.3745,0.3485,22.5,0.5758,0.4263,2.18,1.62,0,24.92
+2026-10-06 02:02,12168098,Challenger Men Singles,Antofagasta,Clay,F. Meligeni Alves,J. P. Varillas,3,0.615,0.645,0.3527,0.467,21.5,0.6637,0.5535,1.67,2.07,0,25.16
+2026-10-06 02:02,12168098,Challenger Men Singles,Antofagasta,Clay,F. Meligeni Alves,J. P. Varillas,3,0.615,0.645,0.3527,0.467,22.5,0.5843,0.4892,1.9,1.82,1,25.16
+2026-10-06 02:02,12168098,Challenger Men Singles,Antofagasta,Clay,F. Meligeni Alves,J. P. Varillas,3,0.615,0.645,0.3527,0.467,23.5,0.5236,0.4465,2.07,1.67,0,25.16
+2026-10-06 02:02,12168100,Challenger Men Singles,Antofagasta,Clay,F. Roncadelli,T. Barrios Vera,3,0.5725,0.5875,0.422,0.3178,19.5,0.7507,0.5767,1.6,2.18,0,24.57
+2026-10-06 02:02,12168100,Challenger Men Singles,Antofagasta,Clay,F. Roncadelli,T. Barrios Vera,3,0.5725,0.5875,0.422,0.3178,20.5,0.6838,0.5108,1.82,1.9,1,24.57
+2026-10-06 02:02,12168100,Challenger Men Singles,Antofagasta,Clay,F. Roncadelli,T. Barrios Vera,3,0.5725,0.5875,0.422,0.3178,21.5,0.6336,0.4624,2.0,1.72,0,24.57
+2026-10-06 02:02,12168100,Challenger Men Singles,Antofagasta,Clay,F. Roncadelli,T. Barrios Vera,3,0.5725,0.5875,0.422,0.3178,22.5,0.5656,0.4209,2.16,1.57,0,24.57
+2026-10-06 02:02,12168101,Challenger Men Singles,Antofagasta,Clay,T. Seyboth Wild,M. Soto,3,0.685,0.6,0.8545,0.7843,19.5,0.6905,0.5622,1.62,2.08,0,23.63
+2026-10-06 02:02,12168101,Challenger Men Singles,Antofagasta,Clay,T. Seyboth Wild,M. Soto,3,0.685,0.6,0.8545,0.7843,20.5,0.6052,0.4973,1.85,1.83,1,23.63
+2026-10-06 02:02,12168101,Challenger Men Singles,Antofagasta,Clay,T. Seyboth Wild,M. Soto,3,0.685,0.6,0.8545,0.7843,21.5,0.5468,0.4505,2.11,1.73,0,23.63
+2026-10-06 02:02,12168102,Challenger Men Singles,Antofagasta,Clay,J. B. Torres,P. Boscardin Dias,3,0.5750000000000001,0.55,0.6297,0.4871,20.5,0.6628,0.5467,1.7,2.05,0,24.23
+2026-10-06 02:02,12168102,Challenger Men Singles,Antofagasta,Clay,J. B. Torres,P. Boscardin Dias,3,0.5750000000000001,0.55,0.6297,0.4871,21.5,0.6124,0.4973,1.87,1.85,1,24.23
+2026-10-06 02:02,12168102,Challenger Men Singles,Antofagasta,Clay,J. B. Torres,P. Boscardin Dias,3,0.5750000000000001,0.55,0.6297,0.4871,22.5,0.5469,0.4377,2.12,1.65,0,24.23
+2026-10-06 02:02,12168108,Wta Singles,Beijing,Hard,S. Kraus,N. Bartunkova,3,0.55,0.61,0.2159,0.2284,13.5,0.9957,0.9053,1.02,9.75,0,23.43
+2026-10-06 02:02,12168108,Wta Singles,Beijing,Hard,S. Kraus,N. Bartunkova,3,0.55,0.61,0.2159,0.2284,14.5,0.984,0.88,1.05,7.7,0,23.43
+2026-10-06 02:02,12168108,Wta Singles,Beijing,Hard,S. Kraus,N. Bartunkova,3,0.55,0.61,0.2159,0.2284,15.5,0.9552,0.8371,1.08,5.55,0,23.43
+2026-10-06 02:02,12168108,Wta Singles,Beijing,Hard,S. Kraus,N. Bartunkova,3,0.55,0.61,0.2159,0.2284,16.5,0.9049,0.7415,1.22,3.5,0,23.43
+2026-10-06 02:02,12168108,Wta Singles,Beijing,Hard,S. Kraus,N. Bartunkova,3,0.55,0.61,0.2159,0.2284,17.5,0.8314,0.6517,1.4,2.62,0,23.43
+2026-10-06 02:02,12168108,Wta Singles,Beijing,Hard,S. Kraus,N. Bartunkova,3,0.55,0.61,0.2159,0.2284,18.5,0.7512,0.5691,1.62,2.14,0,23.43
+2026-10-06 02:02,12168108,Wta Singles,Beijing,Hard,S. Kraus,N. Bartunkova,3,0.55,0.61,0.2159,0.2284,19.5,0.6718,0.5217,1.87,2.04,1,23.43
+2026-10-06 02:02,12168108,Wta Singles,Beijing,Hard,S. Kraus,N. Bartunkova,3,0.55,0.61,0.2159,0.2284,20.5,0.6003,0.4415,2.1,1.66,0,23.43
+2026-10-06 02:02,12168108,Wta Singles,Beijing,Hard,S. Kraus,N. Bartunkova,3,0.55,0.61,0.2159,0.2284,21.5,0.5472,0.399,2.29,1.52,0,23.43
+2026-10-06 02:02,12168108,Wta Singles,Beijing,Hard,S. Kraus,N. Bartunkova,3,0.55,0.61,0.2159,0.2284,22.5,0.4816,0.3535,2.56,1.4,0,23.43
+2026-10-06 02:02,12168108,Wta Singles,Beijing,Hard,S. Kraus,N. Bartunkova,3,0.55,0.61,0.2159,0.2284,23.5,0.4381,0.3197,2.83,1.33,0,23.43
+2026-10-06 02:02,12168108,Wta Singles,Beijing,Hard,S. Kraus,N. Bartunkova,3,0.55,0.61,0.2159,0.2284,24.5,0.4161,0.3162,2.92,1.35,0,23.43
+2026-10-06 02:02,12168108,Wta Singles,Beijing,Hard,S. Kraus,N. Bartunkova,3,0.55,0.61,0.2159,0.2284,25.5,0.3752,0.2889,3.2,1.3,0,23.43
+2026-10-06 02:02,12168108,Wta Singles,Beijing,Hard,S. Kraus,N. Bartunkova,3,0.55,0.61,0.2159,0.2284,26.5,0.3298,0.2604,3.55,1.25,0,23.43
+2026-10-06 02:02,12168108,Wta Singles,Beijing,Hard,S. Kraus,N. Bartunkova,3,0.55,0.61,0.2159,0.2284,27.5,0.2873,0.2345,3.95,1.21,0,23.43
+2026-10-06 02:02,12168108,Wta Singles,Beijing,Hard,S. Kraus,N. Bartunkova,3,0.55,0.61,0.2159,0.2284,28.5,0.2409,0.2063,4.5,1.17,0,23.43
+2026-10-06 02:02,12168108,Wta Singles,Beijing,Hard,S. Kraus,N. Bartunkova,3,0.55,0.61,0.2159,0.2284,29.5,0.1931,0.1785,5.2,1.13,0,23.43
+2026-10-06 02:02,12168108,Wta Singles,Beijing,Hard,S. Kraus,N. Bartunkova,3,0.55,0.61,0.2159,0.2284,30.5,0.1474,0.1516,6.1,1.09,0,23.43
+2026-10-06 02:02,12168108,Wta Singles,Beijing,Hard,S. Kraus,N. Bartunkova,3,0.55,0.61,0.2159,0.2284,31.5,0.1051,0.1268,7.3,1.06,0,23.43
+2026-10-06 02:02,12168108,Wta Singles,Beijing,Hard,S. Kraus,N. Bartunkova,3,0.55,0.61,0.2159,0.2284,32.5,0.0693,0.1062,8.75,1.04,0,23.43
+2026-10-06 02:02,12168108,Wta Singles,Beijing,Hard,S. Kraus,N. Bartunkova,3,0.55,0.61,0.2159,0.2284,33.5,0.0462,0.0955,9.75,1.03,0,23.43
+2026-10-06 02:02,12168123,Challenger Women Singles,Suzhou,Hard,H. Guo,A. Falei,3,0.5425,0.5675,0.3699,0.4453,19.5,0.7245,0.6195,1.48,2.41,0,24.16
+2026-10-06 02:02,12168123,Challenger Women Singles,Suzhou,Hard,H. Guo,A. Falei,3,0.5425,0.5675,0.3699,0.4453,20.5,0.659,0.5322,1.67,1.9,0,24.16
+2026-10-06 02:02,12168123,Challenger Women Singles,Suzhou,Hard,H. Guo,A. Falei,3,0.5425,0.5675,0.3699,0.4453,21.5,0.6088,0.4932,1.85,1.8,1,24.16
+2026-10-06 02:02,12168123,Challenger Women Singles,Suzhou,Hard,H. Guo,A. Falei,3,0.5425,0.5675,0.3699,0.4453,22.5,0.5441,0.4176,2.19,1.57,0,24.16
+2026-10-06 02:02,12168123,Challenger Women Singles,Suzhou,Hard,H. Guo,A. Falei,3,0.5425,0.5675,0.3699,0.4453,23.5,0.5,0.369,2.48,1.45,0,24.16
+2026-10-06 02:02,12168123,Challenger Women Singles,Suzhou,Hard,H. Guo,A. Falei,3,0.5425,0.5675,0.3699,0.4453,24.5,0.4741,0.3424,2.67,1.39,0,24.16
+2026-10-06 02:02,12168123,Challenger Women Singles,Suzhou,Hard,H. Guo,A. Falei,3,0.5425,0.5675,0.3699,0.4453,25.5,0.4282,0.307,2.98,1.32,0,24.16
+2026-10-06 02:02,12168126,Challenger Women Singles,Suzhou,Hard,E. Jones,M. Hontama,3,0.5575,0.5325,0.6306,0.589,19.5,0.7197,0.6104,1.5,2.35,0,24.08
+2026-10-06 02:02,12168126,Challenger Women Singles,Suzhou,Hard,E. Jones,M. Hontama,3,0.5575,0.5325,0.6306,0.589,20.5,0.6549,0.5205,1.75,1.9,0,24.08
+2026-10-06 02:02,12168126,Challenger Women Singles,Suzhou,Hard,E. Jones,M. Hontama,3,0.5575,0.5325,0.6306,0.589,21.5,0.6048,0.4973,1.85,1.83,1,24.08
+2026-10-06 02:02,12168126,Challenger Women Singles,Suzhou,Hard,E. Jones,M. Hontama,3,0.5575,0.5325,0.6306,0.589,22.5,0.5409,0.4101,2.23,1.55,0,24.08
+2026-10-06 02:02,12168126,Challenger Women Singles,Suzhou,Hard,E. Jones,M. Hontama,3,0.5575,0.5325,0.6306,0.589,23.5,0.4977,0.3636,2.52,1.44,0,24.08
+2026-10-06 02:02,12168126,Challenger Women Singles,Suzhou,Hard,E. Jones,M. Hontama,3,0.5575,0.5325,0.6306,0.589,24.5,0.4707,0.3374,2.71,1.38,0,24.08
+2026-10-06 02:02,12168126,Challenger Women Singles,Suzhou,Hard,E. Jones,M. Hontama,3,0.5575,0.5325,0.6306,0.589,25.5,0.4242,0.2968,3.08,1.3,0,24.08
+2026-10-06 02:02,12168128,Challenger Women Singles,Suzhou,Hard,Y. Putintseva,Y. Shao,3,0.6175,0.485,0.9603,0.9151,14.5,0.918,0.75,1.25,3.75,0,19.77
+2026-10-06 02:02,12168128,Challenger Women Singles,Suzhou,Hard,Y. Putintseva,Y. Shao,3,0.6175,0.485,0.9603,0.9151,15.5,0.8262,0.625,1.5,2.5,0,19.77
+2026-10-06 02:02,12168128,Challenger Women Singles,Suzhou,Hard,Y. Putintseva,Y. Shao,3,0.6175,0.485,0.9603,0.9151,16.5,0.705,0.5,1.83,1.83,1,19.77
+2026-10-06 02:02,12168128,Challenger Women Singles,Suzhou,Hard,Y. Putintseva,Y. Shao,3,0.6175,0.485,0.9603,0.9151,17.5,0.5813,0.3913,2.38,1.53,0,19.77
+2026-10-06 02:02,12168128,Challenger Women Singles,Suzhou,Hard,Y. Putintseva,Y. Shao,3,0.6175,0.485,0.9603,0.9151,18.5,0.4761,0.3119,3.0,1.36,0,19.77
+2026-10-06 02:02,12168129,Challenger Women Singles,Suzhou,Hard,M. Sawangkaew,L. Fruhvirtova,3,0.5725,0.5425,0.6547,0.5974,19.5,0.719,0.6256,1.46,2.44,0,24.08
+2026-10-06 02:02,12168129,Challenger Women Singles,Suzhou,Hard,M. Sawangkaew,L. Fruhvirtova,3,0.5725,0.5425,0.6547,0.5974,20.5,0.6529,0.5339,1.79,2.05,0,24.08
+2026-10-06 02:02,12168129,Challenger Women Singles,Suzhou,Hard,M. Sawangkaew,L. Fruhvirtova,3,0.5725,0.5425,0.6547,0.5974,21.5,0.6024,0.4973,1.85,1.83,1,24.08
+2026-10-06 02:02,12168129,Challenger Women Singles,Suzhou,Hard,M. Sawangkaew,L. Fruhvirtova,3,0.5725,0.5425,0.6547,0.5974,22.5,0.5376,0.4319,2.21,1.68,0,24.08
+2026-10-06 02:02,12168129,Challenger Women Singles,Suzhou,Hard,M. Sawangkaew,L. Fruhvirtova,3,0.5725,0.5425,0.6547,0.5974,23.5,0.4937,0.386,2.37,1.49,0,24.08
+2026-10-06 02:02,12168129,Challenger Women Singles,Suzhou,Hard,M. Sawangkaew,L. Fruhvirtova,3,0.5725,0.5425,0.6547,0.5974,24.5,0.4681,0.3636,2.52,1.44,0,24.08
+2026-10-06 02:02,12168129,Challenger Women Singles,Suzhou,Hard,M. Sawangkaew,L. Fruhvirtova,3,0.5725,0.5425,0.6547,0.5974,25.5,0.4227,0.3254,2.82,1.36,0,24.08
+2026-10-06 02:02,12168144,Wta Singles,Beijing,Hard,D. Snigur,M. Andreeva,3,0.53,0.5875,0.223,0.1756,13.5,0.9945,0.9053,1.02,9.75,0,23.27
+2026-10-06 02:02,12168144,Wta Singles,Beijing,Hard,D. Snigur,M. Andreeva,3,0.53,0.5875,0.223,0.1756,14.5,0.9804,0.8623,1.07,6.7,0,23.27
+2026-10-06 02:02,12168144,Wta Singles,Beijing,Hard,D. Snigur,M. Andreeva,3,0.53,0.5875,0.223,0.1756,15.5,0.9483,0.7866,1.18,4.35,0,23.27
+2026-10-06 02:02,12168144,Wta Singles,Beijing,Hard,D. Snigur,M. Andreeva,3,0.53,0.5875,0.223,0.1756,16.5,0.8937,0.6963,1.33,3.05,0,23.27
+2026-10-06 02:02,12168144,Wta Singles,Beijing,Hard,D. Snigur,M. Andreeva,3,0.53,0.5875,0.223,0.1756,17.5,0.8191,0.6057,1.53,2.35,0,23.27
+2026-10-06 02:02,12168144,Wta Singles,Beijing,Hard,D. Snigur,M. Andreeva,3,0.53,0.5875,0.223,0.1756,18.5,0.7391,0.527,1.75,1.95,1,23.27
+2026-10-06 02:02,12168144,Wta Singles,Beijing,Hard,D. Snigur,M. Andreeva,3,0.53,0.5875,0.223,0.1756,19.5,0.6615,0.4624,2.0,1.72,0,23.27
+2026-10-06 02:02,12168144,Wta Singles,Beijing,Hard,D. Snigur,M. Andreeva,3,0.53,0.5875,0.223,0.1756,20.5,0.5927,0.4089,2.27,1.57,0,23.27
+2026-10-06 02:02,12168144,Wta Singles,Beijing,Hard,D. Snigur,M. Andreeva,3,0.53,0.5875,0.223,0.1756,21.5,0.5406,0.3703,2.5,1.47,0,23.27
+2026-10-06 02:02,12168144,Wta Singles,Beijing,Hard,D. Snigur,M. Andreeva,3,0.53,0.5875,0.223,0.1756,22.5,0.4779,0.3301,2.8,1.38,0,23.27
+2026-10-06 02:02,12168144,Wta Singles,Beijing,Hard,D. Snigur,M. Andreeva,3,0.53,0.5875,0.223,0.1756,23.5,0.4367,0.3037,3.05,1.33,0,23.27
+2026-10-06 02:02,12168144,Wta Singles,Beijing,Hard,D. Snigur,M. Andreeva,3,0.53,0.5875,0.223,0.1756,24.5,0.4121,0.2905,3.2,1.31,0,23.27
+2026-10-06 02:02,12168144,Wta Singles,Beijing,Hard,D. Snigur,M. Andreeva,3,0.53,0.5875,0.223,0.1756,25.5,0.3695,0.2675,3.45,1.26,0,23.27
+2026-10-06 02:02,12168144,Wta Singles,Beijing,Hard,D. Snigur,M. Andreeva,3,0.53,0.5875,0.223,0.1756,26.5,0.3235,0.2406,3.85,1.22,0,23.27
+2026-10-06 02:02,12168144,Wta Singles,Beijing,Hard,D. Snigur,M. Andreeva,3,0.53,0.5875,0.223,0.1756,27.5,0.2792,0.2153,4.3,1.18,0,23.27
+2026-10-06 02:02,12168144,Wta Singles,Beijing,Hard,D. Snigur,M. Andreeva,3,0.53,0.5875,0.223,0.1756,28.5,0.2315,0.1903,4.85,1.14,0,23.27
+2026-10-06 02:02,12168144,Wta Singles,Beijing,Hard,D. Snigur,M. Andreeva,3,0.53,0.5875,0.223,0.1756,29.5,0.183,0.1654,5.6,1.11,0,23.27
+2026-10-06 02:02,12168144,Wta Singles,Beijing,Hard,D. Snigur,M. Andreeva,3,0.53,0.5875,0.223,0.1756,30.5,0.1375,0.1406,6.6,1.08,0,23.27
+2026-10-06 02:02,12168144,Wta Singles,Beijing,Hard,D. Snigur,M. Andreeva,3,0.53,0.5875,0.223,0.1756,31.5,0.097,0.12,7.7,1.05,0,23.27
+2026-10-06 02:02,12168145,Wta Singles,Beijing,Hard,L. Noskova,E. Alexandrova,3,0.65,0.605,0.715,0.7307,17.5,0.9037,0.7677,1.18,3.9,0,24.75
+2026-10-06 02:02,12168145,Wta Singles,Beijing,Hard,L. Noskova,E. Alexandrova,3,0.65,0.605,0.715,0.7307,18.5,0.8385,0.6803,1.33,2.83,0,24.75
+2026-10-06 02:02,12168145,Wta Singles,Beijing,Hard,L. Noskova,E. Alexandrova,3,0.65,0.605,0.715,0.7307,19.5,0.7605,0.6084,1.5,2.33,0,24.75
+2026-10-06 02:02,12168145,Wta Singles,Beijing,Hard,L. Noskova,E. Alexandrova,3,0.65,0.605,0.715,0.7307,20.5,0.6857,0.5403,1.71,2.01,0,24.75
+2026-10-06 02:02,12168145,Wta Singles,Beijing,Hard,L. Noskova,E. Alexandrova,3,0.65,0.605,0.715,0.7307,21.5,0.6335,0.4629,2.1,1.81,1,24.75
+2026-10-06 02:02,12168145,Wta Singles,Beijing,Hard,L. Noskova,E. Alexandrova,3,0.65,0.605,0.715,0.7307,22.5,0.5549,0.4233,2.18,1.6,0,24.75
+2026-10-06 02:02,12168145,Wta Singles,Beijing,Hard,L. Noskova,E. Alexandrova,3,0.65,0.605,0.715,0.7307,23.5,0.4965,0.3834,2.38,1.48,0,24.75
+2026-10-06 02:02,12168145,Wta Singles,Beijing,Hard,L. Noskova,E. Alexandrova,3,0.65,0.605,0.715,0.7307,24.5,0.4823,0.3676,2.46,1.43,0,24.75
+2026-10-06 02:02,12168145,Wta Singles,Beijing,Hard,L. Noskova,E. Alexandrova,3,0.65,0.605,0.715,0.7307,25.5,0.4444,0.3301,2.74,1.35,0,24.75
+2026-10-06 02:02,12168193,Challenger Women Singles,Samsun,Hard,E. Arango,A. Aksu,3,0.55,0.5525,0.4867,0.6627,18.5,0.8087,0.6441,1.42,2.57,0,24.36
+2026-10-06 02:02,12168193,Challenger Women Singles,Samsun,Hard,E. Arango,A. Aksu,3,0.55,0.5525,0.4867,0.6627,19.5,0.7386,0.567,1.68,2.2,0,24.36
+2026-10-06 02:02,12168193,Challenger Women Singles,Samsun,Hard,E. Arango,A. Aksu,3,0.55,0.5525,0.4867,0.6627,20.5,0.6743,0.4856,1.96,1.85,1,24.36
+2026-10-06 02:02,12168193,Challenger Women Singles,Samsun,Hard,E. Arango,A. Aksu,3,0.55,0.5525,0.4867,0.6627,21.5,0.6246,0.4404,2.16,1.7,0,24.36
+2026-10-06 02:02,12168193,Challenger Women Singles,Samsun,Hard,E. Arango,A. Aksu,3,0.55,0.5525,0.4867,0.6627,22.5,0.5598,0.369,2.48,1.45,0,24.36
+2026-10-06 02:02,12168193,Challenger Women Singles,Samsun,Hard,E. Arango,A. Aksu,3,0.55,0.5525,0.4867,0.6627,23.5,0.5153,0.3254,2.82,1.36,0,24.36
+2026-10-06 02:02,12168193,Challenger Women Singles,Samsun,Hard,E. Arango,A. Aksu,3,0.55,0.5525,0.4867,0.6627,24.5,0.4888,0.2982,3.06,1.3,0,24.36
+2026-10-06 02:02,12168195,Challenger Women Singles,Samsun,Hard,C. Buyukakcay,L. Klimovicova,3,0.535,0.615,0.1468,0.2247,16.5,0.868,0.7196,1.27,3.26,0,22.53
+2026-10-06 02:02,12168195,Challenger Women Singles,Samsun,Hard,C. Buyukakcay,L. Klimovicova,3,0.535,0.615,0.1468,0.2247,17.5,0.7804,0.693,1.32,2.98,0,22.53
+2026-10-06 02:02,12168195,Challenger Women Singles,Samsun,Hard,C. Buyukakcay,L. Klimovicova,3,0.535,0.615,0.1468,0.2247,18.5,0.6907,0.527,1.75,1.95,0,22.53
+2026-10-06 02:02,12168195,Challenger Women Singles,Samsun,Hard,C. Buyukakcay,L. Klimovicova,3,0.535,0.615,0.1468,0.2247,19.5,0.6073,0.5204,1.76,1.91,0,22.53
+2026-10-06 02:02,12168195,Challenger Women Singles,Samsun,Hard,C. Buyukakcay,L. Klimovicova,3,0.535,0.615,0.1468,0.2247,20.5,0.5343,0.4798,1.93,1.78,0,22.53
+2026-10-06 02:02,12168195,Challenger Women Singles,Samsun,Hard,C. Buyukakcay,L. Klimovicova,3,0.535,0.615,0.1468,0.2247,21.5,0.4805,0.4919,1.88,1.82,1,22.53
+2026-10-06 02:02,12168195,Challenger Women Singles,Samsun,Hard,C. Buyukakcay,L. Klimovicova,3,0.535,0.615,0.1468,0.2247,22.5,0.4186,0.3374,2.71,1.38,0,22.53
+2026-10-06 02:02,12168195,Challenger Women Singles,Samsun,Hard,C. Buyukakcay,L. Klimovicova,3,0.535,0.615,0.1468,0.2247,23.5,0.3792,0.2982,3.06,1.3,0,22.53
+2026-10-06 02:02,12168195,Challenger Women Singles,Samsun,Hard,C. Buyukakcay,L. Klimovicova,3,0.535,0.615,0.1468,0.2247,24.5,0.3574,0.307,2.98,1.32,0,22.53
+2026-10-06 02:02,12168198,Challenger Women Singles,Samsun,Hard,A. Mert,V. Hruncakova,3,0.6025,0.5925,0.5515,0.299,18.5,0.84,0.6746,1.36,2.82,0,24.86
+2026-10-06 02:02,12168198,Challenger Women Singles,Samsun,Hard,A. Mert,V. Hruncakova,3,0.6025,0.5925,0.5515,0.299,19.5,0.7682,0.5974,1.53,2.27,0,24.86
+2026-10-06 02:02,12168198,Challenger Women Singles,Samsun,Hard,A. Mert,V. Hruncakova,3,0.6025,0.5925,0.5515,0.299,20.5,0.7,0.5286,1.73,1.94,0,24.86
+2026-10-06 02:02,12168198,Challenger Women Singles,Samsun,Hard,A. Mert,V. Hruncakova,3,0.6025,0.5925,0.5515,0.299,21.5,0.6501,0.4754,1.92,1.74,1,24.86
+2026-10-06 02:02,12168198,Challenger Women Singles,Samsun,Hard,A. Mert,V. Hruncakova,3,0.6025,0.5925,0.5515,0.299,22.5,0.5789,0.4063,2.25,1.54,0,24.86
+2026-10-06 02:02,12168198,Challenger Women Singles,Samsun,Hard,A. Mert,V. Hruncakova,3,0.6025,0.5925,0.5515,0.299,23.5,0.5275,0.3636,2.52,1.44,0,24.86
+2026-10-06 02:02,12168198,Challenger Women Singles,Samsun,Hard,A. Mert,V. Hruncakova,3,0.6025,0.5925,0.5515,0.299,24.5,0.5079,0.3424,2.67,1.39,0,24.86
+2026-10-06 02:02,12168198,Challenger Women Singles,Samsun,Hard,A. Mert,V. Hruncakova,3,0.6025,0.5925,0.5515,0.299,25.5,0.4651,0.307,2.98,1.32,0,24.86
+2026-10-06 02:02,12168199,Challenger Women Singles,Samsun,Hard,E. Pridankina,A. Blinkova,3,0.53,0.5525,0.3819,0.3373,18.5,0.7923,0.6517,1.4,2.62,0,24.1
+2026-10-06 02:02,12168199,Challenger Women Singles,Samsun,Hard,E. Pridankina,A. Blinkova,3,0.53,0.5525,0.3819,0.3373,19.5,0.7212,0.571,1.6,2.13,0,24.1
+2026-10-06 02:02,12168199,Challenger Women Singles,Samsun,Hard,E. Pridankina,A. Blinkova,3,0.53,0.5525,0.3819,0.3373,20.5,0.6568,0.4852,1.91,1.8,1,24.1
+2026-10-06 02:02,12168199,Challenger Women Singles,Samsun,Hard,E. Pridankina,A. Blinkova,3,0.53,0.5525,0.3819,0.3373,21.5,0.6068,0.4447,2.06,1.65,0,24.1
+2026-10-06 02:02,12168199,Challenger Women Singles,Samsun,Hard,E. Pridankina,A. Blinkova,3,0.53,0.5525,0.3819,0.3373,22.5,0.5431,0.3779,2.42,1.47,0,24.1
+2026-10-06 02:02,12168199,Challenger Women Singles,Samsun,Hard,E. Pridankina,A. Blinkova,3,0.53,0.5525,0.3819,0.3373,23.5,0.5,0.3366,2.72,1.38,0,24.1
+2026-10-06 02:02,12168199,Challenger Women Singles,Samsun,Hard,E. Pridankina,A. Blinkova,3,0.53,0.5525,0.3819,0.3373,24.5,0.4727,0.3107,2.95,1.33,0,24.1
+2026-10-06 02:02,12168200,Challenger Women Singles,Samsun,Hard,L. Radivojevic,O. Selekhmeteva,3,0.5775,0.5925,0.4223,0.3095,18.5,0.8262,0.6691,1.37,2.77,0,24.63
+2026-10-06 02:02,12168200,Challenger Women Singles,Samsun,Hard,L. Radivojevic,O. Selekhmeteva,3,0.5775,0.5925,0.4223,0.3095,19.5,0.7546,0.591,1.55,2.24,0,24.63
+2026-10-06 02:02,12168200,Challenger Women Singles,Samsun,Hard,L. Radivojevic,O. Selekhmeteva,3,0.5775,0.5925,0.4223,0.3095,20.5,0.6872,0.5246,1.74,1.92,0,24.63
+2026-10-06 02:02,12168200,Challenger Women Singles,Samsun,Hard,L. Radivojevic,O. Selekhmeteva,3,0.5775,0.5925,0.4223,0.3095,21.5,0.637,0.4865,1.9,1.8,1,24.63
+2026-10-06 02:02,12168200,Challenger Women Singles,Samsun,Hard,L. Radivojevic,O. Selekhmeteva,3,0.5775,0.5925,0.4223,0.3095,22.5,0.5682,0.4026,2.27,1.53,0,24.63
+2026-10-06 02:02,12168200,Challenger Women Singles,Samsun,Hard,L. Radivojevic,O. Selekhmeteva,3,0.5775,0.5925,0.4223,0.3095,23.5,0.5196,0.3636,2.52,1.44,0,24.63
+2026-10-06 02:02,12168200,Challenger Women Singles,Samsun,Hard,L. Radivojevic,O. Selekhmeteva,3,0.5775,0.5925,0.4223,0.3095,24.5,0.4979,0.3424,2.67,1.39,0,24.63
+2026-10-06 02:02,12168200,Challenger Women Singles,Samsun,Hard,L. Radivojevic,O. Selekhmeteva,3,0.5775,0.5925,0.4223,0.3095,25.5,0.4539,0.3366,2.72,1.38,0,24.63
+2026-10-06 02:02,12168201,Challenger Women Singles,Samsun,Hard,A. Ruzic,A. Dudeney,3,0.555,0.5825,0.3583,0.6627,18.5,0.802,0.6398,1.43,2.54,0,24.24
+2026-10-06 02:02,12168201,Challenger Women Singles,Samsun,Hard,A. Ruzic,A. Dudeney,3,0.555,0.5825,0.3583,0.6627,19.5,0.7295,0.527,1.75,1.95,1,24.24
+2026-10-06 02:02,12168201,Challenger Women Singles,Samsun,Hard,A. Ruzic,A. Dudeney,3,0.555,0.5825,0.3583,0.6627,20.5,0.6628,0.473,1.95,1.75,0,24.24
+2026-10-06 02:02,12168201,Challenger Women Singles,Samsun,Hard,A. Ruzic,A. Dudeney,3,0.555,0.5825,0.3583,0.6627,21.5,0.6121,0.429,2.13,1.6,0,24.24
+2026-10-06 02:02,12168201,Challenger Women Singles,Samsun,Hard,A. Ruzic,A. Dudeney,3,0.555,0.5825,0.3583,0.6627,22.5,0.546,0.3646,2.51,1.44,0,24.24
+2026-10-06 02:02,12168201,Challenger Women Singles,Samsun,Hard,A. Ruzic,A. Dudeney,3,0.555,0.5825,0.3583,0.6627,23.5,0.5006,0.3254,2.82,1.36,0,24.24
+2026-10-06 02:02,12168201,Challenger Women Singles,Samsun,Hard,A. Ruzic,A. Dudeney,3,0.555,0.5825,0.3583,0.6627,24.5,0.4765,0.307,2.98,1.32,0,24.24
+2026-10-06 02:02,12168203,Challenger Women Singles,Samsun,Hard,L. Stefanini,C. Monnet,3,0.5125,0.49,0.6189,0.7503,17.5,0.8539,0.6916,1.32,2.96,0,23.96
+2026-10-06 02:02,12168203,Challenger Women Singles,Samsun,Hard,L. Stefanini,C. Monnet,3,0.5125,0.49,0.6189,0.7503,18.5,0.7837,0.6094,1.5,2.34,0,23.96
+2026-10-06 02:02,12168203,Challenger Women Singles,Samsun,Hard,L. Stefanini,C. Monnet,3,0.5125,0.49,0.6189,0.7503,19.5,0.7131,0.523,1.76,1.93,1,23.96
+2026-10-06 02:02,12168203,Challenger Women Singles,Samsun,Hard,L. Stefanini,C. Monnet,3,0.5125,0.49,0.6189,0.7503,20.5,0.6498,0.4709,2.0,1.78,0,23.96
+2026-10-06 02:02,12168203,Challenger Women Singles,Samsun,Hard,L. Stefanini,C. Monnet,3,0.5125,0.49,0.6189,0.7503,21.5,0.6002,0.4053,2.26,1.54,0,23.96
+2026-10-06 02:02,12168203,Challenger Women Singles,Samsun,Hard,L. Stefanini,C. Monnet,3,0.5125,0.49,0.6189,0.7503,22.5,0.5377,0.3483,2.62,1.4,0,23.96
+2026-10-06 02:02,12168203,Challenger Women Singles,Samsun,Hard,L. Stefanini,C. Monnet,3,0.5125,0.49,0.6189,0.7503,23.5,0.4958,0.3084,2.96,1.32,0,23.96
+2026-10-06 02:02,12168203,Challenger Women Singles,Samsun,Hard,L. Stefanini,C. Monnet,3,0.5125,0.49,0.6189,0.7503,24.5,0.4667,0.2982,3.06,1.3,0,23.96
+2026-10-06 02:02,12168204,Challenger Women Singles,Samsun,Hard,S. Waltert,M. Ercan,3,0.6075,0.545,0.794,0.8157,16.5,0.8985,0.6881,1.36,3.0,0,23.28
+2026-10-06 02:02,12168204,Challenger Women Singles,Samsun,Hard,S. Waltert,M. Ercan,3,0.6075,0.545,0.794,0.8157,17.5,0.8228,0.6453,1.44,2.62,0,23.28
+2026-10-06 02:02,12168204,Challenger Women Singles,Samsun,Hard,S. Waltert,M. Ercan,3,0.6075,0.545,0.794,0.8157,18.5,0.7413,0.5405,1.7,2.0,0,23.28
+2026-10-06 02:02,12168204,Challenger Women Singles,Samsun,Hard,S. Waltert,M. Ercan,3,0.6075,0.545,0.794,0.8157,19.5,0.6616,0.5,1.83,1.83,1,23.28
+2026-10-06 02:02,12168204,Challenger Women Singles,Samsun,Hard,S. Waltert,M. Ercan,3,0.6075,0.545,0.794,0.8157,20.5,0.5903,0.443,2.1,1.67,0,23.28
+2026-10-06 02:02,12168204,Challenger Women Singles,Samsun,Hard,S. Waltert,M. Ercan,3,0.6075,0.545,0.794,0.8157,21.5,0.5372,0.4057,2.3,1.57,0,23.28
+2026-10-06 02:02,12168254,Itf Women Singles,W35 Seville,Clay,A. Candiotto,P. Lovric,3,0.495,0.5325,0.3072,0.2071,18.5,0.7631,0.5517,1.69,2.08,0,23.65
+2026-10-06 02:02,12168254,Itf Women Singles,W35 Seville,Clay,A. Candiotto,P. Lovric,3,0.495,0.5325,0.3072,0.2071,19.5,0.6904,0.4813,1.94,1.8,1,23.65
+2026-10-06 02:02,12168255,Itf Women Singles,W35 Seville,Clay,G. Ce,M. Mettraux,3,0.515,0.535,0.3942,0.7204,19.5,0.7189,0.5438,1.72,2.05,0,24.05
+2026-10-06 02:02,12168255,Itf Women Singles,W35 Seville,Clay,G. Ce,M. Mettraux,3,0.515,0.535,0.3942,0.7204,20.5,0.6553,0.4863,1.87,1.77,1,24.05
+2026-10-06 02:02,12168255,Itf Women Singles,W35 Seville,Clay,G. Ce,M. Mettraux,3,0.515,0.535,0.3942,0.7204,21.5,0.6056,0.4395,2.13,1.67,0,24.05
+2026-10-06 02:02,12168257,Itf Women Singles,W35 Seville,Clay,M. Oliver Sanchez,A. Zantedeschi,3,0.5125,0.5700000000000001,0.2214,0.1263,14.5,0.9773,0.76,1.2,3.8,0,23.12
+2026-10-06 02:02,12168257,Itf Women Singles,W35 Seville,Clay,M. Oliver Sanchez,A. Zantedeschi,3,0.5125,0.5700000000000001,0.2214,0.1263,15.5,0.9425,0.6517,1.4,2.62,0,23.12
+2026-10-06 02:02,12168257,Itf Women Singles,W35 Seville,Clay,M. Oliver Sanchez,A. Zantedeschi,3,0.5125,0.5700000000000001,0.2214,0.1263,16.5,0.8845,0.5328,1.71,1.95,1,23.12
+2026-10-06 02:02,12168257,Itf Women Singles,W35 Seville,Clay,M. Oliver Sanchez,A. Zantedeschi,3,0.5125,0.5700000000000001,0.2214,0.1263,17.5,0.8086,0.4297,2.15,1.62,0,23.12
+2026-10-06 02:02,12168257,Itf Women Singles,W35 Seville,Clay,M. Oliver Sanchez,A. Zantedeschi,3,0.5125,0.5700000000000001,0.2214,0.1263,18.5,0.7284,0.3483,2.62,1.4,0,23.12
+2026-10-06 02:02,12168258,Itf Women Singles,W35 Seville,Clay,K. Tsygourova,A. Hesse,3,0.56,0.495,0.808,0.4911,20.5,0.5575,0.5165,1.76,1.88,1,22.74
+2026-10-06 02:02,12168258,Itf Women Singles,W35 Seville,Clay,K. Tsygourova,A. Hesse,3,0.56,0.495,0.808,0.4911,21.5,0.5062,0.4654,2.01,1.75,0,22.74
+2026-10-06 02:02,12168259,Itf Women Singles,W35 Seville,Clay,D. Yesypchuk,I. Wobker,3,0.5,0.515,0.4201,0.3034,19.5,0.7209,0.5245,1.75,1.93,0,24.07
+2026-10-06 02:02,12168259,Itf Women Singles,W35 Seville,Clay,D. Yesypchuk,I. Wobker,3,0.5,0.515,0.4201,0.3034,20.5,0.6579,0.4837,1.9,1.78,1,24.07
+2026-10-06 02:02,12168260,Wta Singles,Beijing,Hard,K. Muchova,N. Osaka,3,0.6325000000000001,0.625,0.5377,0.5509,17.5,0.929,0.8028,1.13,4.6,0,25.42
+2026-10-06 02:02,12168260,Wta Singles,Beijing,Hard,K. Muchova,N. Osaka,3,0.6325000000000001,0.625,0.5377,0.5509,18.5,0.874,0.7355,1.23,3.42,0,25.42
+2026-10-06 02:02,12168260,Wta Singles,Beijing,Hard,K. Muchova,N. Osaka,3,0.6325000000000001,0.625,0.5377,0.5509,19.5,0.8021,0.66,1.37,2.66,0,25.42
+2026-10-06 02:02,12168260,Wta Singles,Beijing,Hard,K. Muchova,N. Osaka,3,0.6325000000000001,0.625,0.5377,0.5509,20.5,0.7318,0.5926,1.54,2.24,0,25.42
+2026-10-06 02:02,12168260,Wta Singles,Beijing,Hard,K. Muchova,N. Osaka,3,0.6325000000000001,0.625,0.5377,0.5509,21.5,0.6831,0.5364,1.72,1.99,0,25.42
+2026-10-06 02:02,12168260,Wta Singles,Beijing,Hard,K. Muchova,N. Osaka,3,0.6325000000000001,0.625,0.5377,0.5509,22.5,0.6041,0.4733,1.97,1.77,1,25.42
+2026-10-06 02:02,12168260,Wta Singles,Beijing,Hard,K. Muchova,N. Osaka,3,0.6325000000000001,0.625,0.5377,0.5509,23.5,0.5429,0.4149,2.27,1.61,0,25.42
+2026-10-06 02:02,12168260,Wta Singles,Beijing,Hard,K. Muchova,N. Osaka,3,0.6325000000000001,0.625,0.5377,0.5509,24.5,0.5291,0.4111,2.22,1.55,0,25.42
+2026-10-06 02:02,12168260,Wta Singles,Beijing,Hard,K. Muchova,N. Osaka,3,0.6325000000000001,0.625,0.5377,0.5509,25.5,0.49,0.3721,2.43,1.44,0,25.42
+2026-10-06 02:02,12168260,Wta Singles,Beijing,Hard,K. Muchova,N. Osaka,3,0.6325000000000001,0.625,0.5377,0.5509,26.5,0.4389,0.3301,2.74,1.35,0,25.42
+2026-10-06 02:02,12168279,Atp Singles,Shanghai,Hard,R. Safiullin,S. Mochizuki,3,0.65,0.55,0.9014,0.7935,18.5,0.6593,0.6368,1.42,2.49,0,22.01
+2026-10-06 02:02,12168279,Atp Singles,Shanghai,Hard,R. Safiullin,S. Mochizuki,3,0.65,0.55,0.9014,0.7935,19.5,0.5689,0.5622,1.62,2.08,0,22.01
+2026-10-06 02:02,12168279,Atp Singles,Shanghai,Hard,R. Safiullin,S. Mochizuki,3,0.65,0.55,0.9014,0.7935,20.5,0.49,0.5039,1.9,1.93,1,22.01
+2026-10-06 02:02,12168279,Atp Singles,Shanghai,Hard,R. Safiullin,S. Mochizuki,3,0.65,0.55,0.9014,0.7935,21.5,0.4336,0.4534,2.11,1.75,0,22.01
+2026-10-06 02:02,12168279,Atp Singles,Shanghai,Hard,R. Safiullin,S. Mochizuki,3,0.65,0.55,0.9014,0.7935,22.5,0.3697,0.3848,2.35,1.47,0,22.01
+2026-10-06 02:02,12168301,Atp Singles,Shanghai,Hard,A. Dougaz,F. Cina,3,0.665,0.665,0.5,0.3117,20.5,0.7822,0.6198,1.46,2.38,0,26.3
+2026-10-06 02:02,12168301,Atp Singles,Shanghai,Hard,A. Dougaz,F. Cina,3,0.665,0.665,0.5,0.3117,21.5,0.738,0.5644,1.69,2.19,0,26.3
+2026-10-06 02:02,12168301,Atp Singles,Shanghai,Hard,A. Dougaz,F. Cina,3,0.665,0.665,0.5,0.3117,22.5,0.6476,0.4896,1.96,1.88,1,26.3
+2026-10-06 02:02,12168301,Atp Singles,Shanghai,Hard,A. Dougaz,F. Cina,3,0.665,0.665,0.5,0.3117,23.5,0.5684,0.4319,2.21,1.68,0,26.3
+2026-10-06 02:02,12168301,Atp Singles,Shanghai,Hard,A. Dougaz,F. Cina,3,0.665,0.665,0.5,0.3117,24.5,0.5603,0.4232,2.14,1.57,0,26.3
+2026-10-06 02:02,12168302,Atp Singles,Shanghai,Hard,L. Draxl,N. Basilashvili,3,0.6425,0.655,0.4386,0.4352,20.5,0.7549,0.6508,1.39,2.59,0,25.83
+2026-10-06 02:02,12168302,Atp Singles,Shanghai,Hard,L. Draxl,N. Basilashvili,3,0.6425,0.655,0.4386,0.4352,21.5,0.7079,0.5863,1.63,2.31,0,25.83
+2026-10-06 02:02,12168302,Atp Singles,Shanghai,Hard,L. Draxl,N. Basilashvili,3,0.6425,0.655,0.4386,0.4352,22.5,0.6227,0.5065,1.89,1.94,1,25.83
+2026-10-06 02:02,12168302,Atp Singles,Shanghai,Hard,L. Draxl,N. Basilashvili,3,0.6425,0.655,0.4386,0.4352,23.5,0.5525,0.4578,1.99,1.68,0,25.83
+2026-10-06 02:02,12168302,Atp Singles,Shanghai,Hard,L. Draxl,N. Basilashvili,3,0.6425,0.655,0.4386,0.4352,24.5,0.542,0.4481,2.02,1.64,0,25.83
+2026-10-06 02:02,12168317,Atp Singles,Shanghai,Hard,B. Tomic,T. Skatov,3,0.66,0.65,0.5489,0.5376,22.5,0.6317,0.5026,1.91,1.93,1,26.0
+2026-10-06 02:02,12168317,Atp Singles,Shanghai,Hard,B. Tomic,T. Skatov,3,0.66,0.65,0.5489,0.5376,23.5,0.5583,0.4456,2.14,1.72,0,26.0
+2026-10-06 02:02,12168318,Atp Singles,Shanghai,Hard,M. Zheng,N. Mejia,3,0.67,0.585,0.858,0.7827,18.5,0.7529,0.6699,1.35,2.74,0,23.26
+2026-10-06 02:02,12168318,Atp Singles,Shanghai,Hard,M. Zheng,N. Mejia,3,0.67,0.585,0.858,0.7827,19.5,0.6626,0.5904,1.54,2.22,0,23.26
+2026-10-06 02:02,12168318,Atp Singles,Shanghai,Hard,M. Zheng,N. Mejia,3,0.67,0.585,0.858,0.7827,20.5,0.5798,0.5,1.83,1.83,1,23.26
+2026-10-06 02:02,12168318,Atp Singles,Shanghai,Hard,M. Zheng,N. Mejia,3,0.67,0.585,0.858,0.7827,21.5,0.522,0.4672,1.95,1.71,0,23.26
+2026-10-06 02:02,12168318,Atp Singles,Shanghai,Hard,M. Zheng,N. Mejia,3,0.67,0.585,0.858,0.7827,22.5,0.4456,0.4043,2.24,1.52,0,23.26
+2026-10-06 02:02,12168323,Itf Women Singles,W15 Maanshan 7,Hard,Y. Chen,M. Wang,3,0.525,0.585,0.2129,0.1991,18.5,0.7302,0.5165,1.76,1.88,1,23.14
+2026-10-06 02:02,12168330,Atp Singles,Shanghai,Hard,R. Te,I. Simakin,3,0.605,0.7375,0.0556,0.173,19.5,0.6153,0.6324,1.43,2.46,0,22.33
+2026-10-06 02:02,12168330,Atp Singles,Shanghai,Hard,R. Te,I. Simakin,3,0.605,0.7375,0.0556,0.173,20.5,0.5141,0.5583,1.63,2.06,0,22.33
+2026-10-06 02:02,12168330,Atp Singles,Shanghai,Hard,R. Te,I. Simakin,3,0.605,0.7375,0.0556,0.173,21.5,0.4473,0.496,1.88,1.85,1,22.33
+2026-10-06 02:02,12168330,Atp Singles,Shanghai,Hard,R. Te,I. Simakin,3,0.605,0.7375,0.0556,0.173,22.5,0.3538,0.4209,2.16,1.57,0,22.33
+2026-10-06 02:02,12168330,Atp Singles,Shanghai,Hard,R. Te,I. Simakin,3,0.605,0.7375,0.0556,0.173,23.5,0.2892,0.3676,2.46,1.43,0,22.33
+2026-10-06 02:02,12168332,Atp Singles,Shanghai,Hard,K. Jacquet,R. Sakamoto,3,0.6575,0.665,0.4635,0.5348,21.5,0.7303,0.6279,1.44,2.43,0,26.18
+2026-10-06 02:02,12168332,Atp Singles,Shanghai,Hard,K. Jacquet,R. Sakamoto,3,0.6575,0.665,0.4635,0.5348,22.5,0.641,0.5495,1.73,2.11,0,26.18
+2026-10-06 02:02,12168332,Atp Singles,Shanghai,Hard,K. Jacquet,R. Sakamoto,3,0.6575,0.665,0.4635,0.5348,23.5,0.564,0.4879,1.9,1.81,1,26.18
+2026-10-06 02:02,12168332,Atp Singles,Shanghai,Hard,K. Jacquet,R. Sakamoto,3,0.6575,0.665,0.4635,0.5348,24.5,0.5554,0.4645,1.96,1.7,0,26.18
+2026-10-06 02:02,12168332,Atp Singles,Shanghai,Hard,K. Jacquet,R. Sakamoto,3,0.6575,0.665,0.4635,0.5348,25.5,0.5196,0.4309,2.1,1.59,0,26.18
+2026-10-06 02:02,12168333,Atp Singles,Shanghai,Hard,Y. Nishioka,D. Svrcina,3,0.555,0.5975,0.2883,0.3882,19.5,0.7097,0.6269,1.44,2.42,0,23.96
+2026-10-06 02:02,12168333,Atp Singles,Shanghai,Hard,Y. Nishioka,D. Svrcina,3,0.555,0.5975,0.2883,0.3882,20.5,0.6407,0.5737,1.62,2.18,0,23.96
+2026-10-06 02:02,12168333,Atp Singles,Shanghai,Hard,Y. Nishioka,D. Svrcina,3,0.555,0.5975,0.2883,0.3882,21.5,0.589,0.5105,1.87,1.95,1,23.96
+2026-10-06 02:02,12168333,Atp Singles,Shanghai,Hard,Y. Nishioka,D. Svrcina,3,0.555,0.5975,0.2883,0.3882,22.5,0.5225,0.4453,2.13,1.71,0,23.96
+2026-10-06 02:02,12168333,Atp Singles,Shanghai,Hard,Y. Nishioka,D. Svrcina,3,0.555,0.5975,0.2883,0.3882,23.5,0.4774,0.4091,2.21,1.53,0,23.96
+2026-10-06 02:02,12168335,Challenger Men Singles,Wuning 3 (China) - Qualification,Hard,O. Jasika,M. Borisiouk,3,0.6425,0.6375000000000001,0.5249,0.4871,21.5,0.6984,0.5422,1.68,1.99,0,25.67
+2026-10-06 02:02,12168335,Challenger Men Singles,Wuning 3 (China) - Qualification,Hard,O. Jasika,M. Borisiouk,3,0.6425,0.6375000000000001,0.5249,0.4871,22.5,0.6161,0.477,1.93,1.76,1,25.67
+2026-10-06 02:02,12168335,Challenger Men Singles,Wuning 3 (China) - Qualification,Hard,O. Jasika,M. Borisiouk,3,0.6425,0.6375000000000001,0.5249,0.4871,23.5,0.55,0.4313,2.11,1.6,0,25.67
+2026-10-06 02:02,12168336,Challenger Men Singles,Wuning 3 (China) - Qualification,Hard,M. Purcell,F. Peliwo,3,0.6775,0.5875,0.8705,0.8972,17.5,0.8379,0.6272,1.45,2.44,0,23.16
+2026-10-06 02:02,12168336,Challenger Men Singles,Wuning 3 (China) - Qualification,Hard,M. Purcell,F. Peliwo,3,0.6775,0.5875,0.8705,0.8972,18.5,0.7489,0.6085,1.57,2.44,0,23.16
+2026-10-06 02:02,12168336,Challenger Men Singles,Wuning 3 (China) - Qualification,Hard,M. Purcell,F. Peliwo,3,0.6775,0.5875,0.8705,0.8972,19.5,0.6565,0.5027,1.83,1.85,1,23.16
+2026-10-06 02:02,12168336,Challenger Men Singles,Wuning 3 (China) - Qualification,Hard,M. Purcell,F. Peliwo,3,0.6775,0.5875,0.8705,0.8972,20.5,0.5718,0.4274,2.13,1.59,0,23.16
+2026-10-06 02:02,12168337,Challenger Men Singles,Wuning 3 (China) - Qualification,Hard,K. Saitoh,D. Palan,3,0.6825,0.6475,0.6646,0.5485,20.5,0.7582,0.5904,1.54,2.22,0,25.91
+2026-10-06 02:02,12168337,Challenger Men Singles,Wuning 3 (China) - Qualification,Hard,K. Saitoh,D. Palan,3,0.6825,0.6475,0.6646,0.5485,21.5,0.7112,0.5351,1.72,1.98,0,25.91
+2026-10-06 02:02,12168337,Challenger Men Singles,Wuning 3 (China) - Qualification,Hard,K. Saitoh,D. Palan,3,0.6825,0.6475,0.6646,0.5485,22.5,0.6194,0.4645,1.96,1.7,0,25.91
+2026-10-06 02:02,12168337,Challenger Men Singles,Wuning 3 (China) - Qualification,Hard,K. Saitoh,D. Palan,3,0.6825,0.6475,0.6646,0.5485,23.5,0.5412,0.4209,2.16,1.57,0,25.91
+2026-10-06 02:02,12168337,Challenger Men Singles,Wuning 3 (China) - Qualification,Hard,K. Saitoh,D. Palan,3,0.6825,0.6475,0.6646,0.5485,24.5,0.5329,0.4672,1.95,1.71,1,25.91
+2026-10-06 02:02,12168337,Challenger Men Singles,Wuning 3 (China) - Qualification,Hard,K. Saitoh,D. Palan,3,0.6825,0.6475,0.6646,0.5485,25.5,0.4977,0.4297,2.15,1.62,0,25.91
+2026-10-06 02:02,12168338,Challenger Men Singles,Wuning 3 (China) - Qualification,Hard,R. Seggerman,H. Shiraishi,3,0.6575,0.6575,0.5,0.7596,20.5,0.7708,0.5422,1.68,1.99,0,26.1
+2026-10-06 02:02,12168338,Challenger Men Singles,Wuning 3 (China) - Qualification,Hard,R. Seggerman,H. Shiraishi,3,0.6575,0.6575,0.5,0.7596,21.5,0.7254,0.4891,1.88,1.8,1,26.1
+2026-10-06 02:02,12168338,Challenger Men Singles,Wuning 3 (China) - Qualification,Hard,R. Seggerman,H. Shiraishi,3,0.6575,0.6575,0.5,0.7596,22.5,0.6374,0.4236,2.15,1.58,0,26.1
+2026-10-06 02:02,12168339,Challenger Men Singles,Wuning 3 (China) - Qualification,Hard,J. D. Hara Friend,Y. Kikuchi,3,0.675,0.5675,0.9133,0.8262,17.5,0.7757,0.6227,1.46,2.41,0,22.1
+2026-10-06 02:02,12168339,Challenger Men Singles,Wuning 3 (China) - Qualification,Hard,J. D. Hara Friend,Y. Kikuchi,3,0.675,0.5675,0.9133,0.8262,18.5,0.6734,0.5285,1.74,1.95,1,22.1
+2026-10-06 02:02,12168339,Challenger Men Singles,Wuning 3 (China) - Qualification,Hard,J. D. Hara Friend,Y. Kikuchi,3,0.675,0.5675,0.9133,0.8262,19.5,0.5778,0.455,2.0,1.67,0,22.1
+2026-10-06 02:02,12168339,Challenger Men Singles,Wuning 3 (China) - Qualification,Hard,J. D. Hara Friend,Y. Kikuchi,3,0.675,0.5675,0.9133,0.8262,20.5,0.4932,0.4058,2.24,1.53,0,22.1
+2026-10-06 02:02,12168340,Challenger Men Singles,Wuning 3 (China) - Qualification,Hard,A. Kachmazov,C. Broom,3,0.63,0.6675,0.3215,0.4489,21.5,0.679,0.5649,1.61,2.09,0,25.43
+2026-10-06 02:02,12168340,Challenger Men Singles,Wuning 3 (China) - Qualification,Hard,A. Kachmazov,C. Broom,3,0.63,0.6675,0.3215,0.4489,22.5,0.5931,0.4946,1.86,1.82,1,25.43
+2026-10-06 02:02,12168340,Challenger Men Singles,Wuning 3 (China) - Qualification,Hard,A. Kachmazov,C. Broom,3,0.63,0.6675,0.3215,0.4489,23.5,0.5241,0.4457,2.04,1.64,0,25.43
+2026-10-06 02:02,12168340,Challenger Men Singles,Wuning 3 (China) - Qualification,Hard,A. Kachmazov,C. Broom,3,0.63,0.6675,0.3215,0.4489,24.5,0.5135,0.4605,1.98,1.69,0,25.43
+2026-10-06 02:02,12168341,Itf Men Singles,M25 Luan,Hard,M. Dellavedova,Z. Zhao,3,0.6925,0.595,0.8867,0.821,18.5,0.7518,0.5602,1.68,2.14,0,23.11
+2026-10-06 02:02,12168341,Itf Men Singles,M25 Luan,Hard,M. Dellavedova,Z. Zhao,3,0.6925,0.595,0.8867,0.821,19.5,0.656,0.4723,2.0,1.79,1,23.11
+2026-10-06 02:02,12168343,Itf Men Singles,M25 Luan,Hard,Y. Zeng,N. Barsukov,3,0.6625,0.6525,0.5488,0.4852,21.5,0.7231,0.5897,1.6,2.3,0,26.07
+2026-10-06 02:02,12168343,Itf Men Singles,M25 Luan,Hard,Y. Zeng,N. Barsukov,3,0.6625,0.6525,0.5488,0.4852,22.5,0.635,0.5066,1.87,1.92,1,26.07
+2026-10-06 02:02,12168343,Itf Men Singles,M25 Luan,Hard,Y. Zeng,N. Barsukov,3,0.6625,0.6525,0.5488,0.4852,23.5,0.5601,0.4488,2.1,1.71,0,26.07
+2026-10-06 02:02,12168369,Atp Singles,Tokyo,Hard,C. Alcaraz,J. Lehecka,3,0.6925,0.6125,0.8374,0.7626,16.5,0.9503,0.8701,1.06,7.1,0,24.1
+2026-10-06 02:02,12168369,Atp Singles,Tokyo,Hard,C. Alcaraz,J. Lehecka,3,0.6925,0.6125,0.8374,0.7626,17.5,0.8883,0.8097,1.14,4.85,0,24.1
+2026-10-06 02:02,12168369,Atp Singles,Tokyo,Hard,C. Alcaraz,J. Lehecka,3,0.6925,0.6125,0.8374,0.7626,18.5,0.8135,0.7474,1.21,3.58,0,24.1
+2026-10-06 02:02,12168369,Atp Singles,Tokyo,Hard,C. Alcaraz,J. Lehecka,3,0.6925,0.6125,0.8374,0.7626,19.5,0.724,0.6602,1.4,2.72,0,24.1
+2026-10-06 02:02,12168369,Atp Singles,Tokyo,Hard,C. Alcaraz,J. Lehecka,3,0.6925,0.6125,0.8374,0.7626,20.5,0.6389,0.5916,1.56,2.26,0,24.1
+2026-10-06 02:02,12168369,Atp Singles,Tokyo,Hard,C. Alcaraz,J. Lehecka,3,0.6925,0.6125,0.8374,0.7626,21.5,0.5815,0.5464,1.76,2.12,0,24.1
+2026-10-06 02:02,12168369,Atp Singles,Tokyo,Hard,C. Alcaraz,J. Lehecka,3,0.6925,0.6125,0.8374,0.7626,22.5,0.4935,0.4651,2.07,1.8,1,24.1
+2026-10-06 02:02,12168369,Atp Singles,Tokyo,Hard,C. Alcaraz,J. Lehecka,3,0.6925,0.6125,0.8374,0.7626,23.5,0.428,0.4048,2.25,1.53,0,24.1
+2026-10-06 02:02,12168369,Atp Singles,Tokyo,Hard,C. Alcaraz,J. Lehecka,3,0.6925,0.6125,0.8374,0.7626,24.5,0.4176,0.4026,2.3,1.55,0,24.1
+2026-10-06 02:02,12168369,Atp Singles,Tokyo,Hard,C. Alcaraz,J. Lehecka,3,0.6925,0.6125,0.8374,0.7626,25.5,0.3844,0.3703,2.5,1.47,0,24.1
+2026-10-06 02:02,12168369,Atp Singles,Tokyo,Hard,C. Alcaraz,J. Lehecka,3,0.6925,0.6125,0.8374,0.7626,26.5,0.3394,0.3398,2.72,1.4,0,24.1
+2026-10-06 02:02,12168369,Atp Singles,Tokyo,Hard,C. Alcaraz,J. Lehecka,3,0.6925,0.6125,0.8374,0.7626,27.5,0.3107,0.314,2.95,1.35,0,24.1
+2026-10-06 02:02,12168369,Atp Singles,Tokyo,Hard,C. Alcaraz,J. Lehecka,3,0.6925,0.6125,0.8374,0.7626,28.5,0.2755,0.2841,3.25,1.29,0,24.1
+2026-10-06 02:02,12168369,Atp Singles,Tokyo,Hard,C. Alcaraz,J. Lehecka,3,0.6925,0.6125,0.8374,0.7626,29.5,0.2375,0.251,3.7,1.24,0,24.1
+2026-10-06 02:02,12168369,Atp Singles,Tokyo,Hard,C. Alcaraz,J. Lehecka,3,0.6925,0.6125,0.8374,0.7626,30.5,0.1979,0.2173,4.25,1.18,0,24.1
+2026-10-06 02:02,12168369,Atp Singles,Tokyo,Hard,C. Alcaraz,J. Lehecka,3,0.6925,0.6125,0.8374,0.7626,31.5,0.1514,0.1814,5.1,1.13,0,24.1
+2026-10-06 02:02,12168369,Atp Singles,Tokyo,Hard,C. Alcaraz,J. Lehecka,3,0.6925,0.6125,0.8374,0.7626,33.5,0.0775,0.1238,7.5,1.06,0,24.1
+2026-10-06 02:02,12168370,Challenger Women Singles,Suzhou,Hard,K. Okamura,D. Vidmanova,3,0.5650000000000001,0.62,0.2374,0.2406,17.5,0.8528,0.6746,1.36,2.82,0,23.79
+2026-10-06 02:02,12168370,Challenger Women Singles,Suzhou,Hard,K. Okamura,D. Vidmanova,3,0.5650000000000001,0.62,0.2374,0.2406,18.5,0.7759,0.5862,1.56,2.21,0,23.79
+2026-10-06 02:02,12168370,Challenger Women Singles,Suzhou,Hard,K. Okamura,D. Vidmanova,3,0.5650000000000001,0.62,0.2374,0.2406,19.5,0.6969,0.5065,1.89,1.94,1,23.79
+2026-10-06 02:02,12168370,Challenger Women Singles,Suzhou,Hard,K. Okamura,D. Vidmanova,3,0.5650000000000001,0.62,0.2374,0.2406,20.5,0.6245,0.4355,2.1,1.62,0,23.79
+2026-10-06 02:02,12168370,Challenger Women Singles,Suzhou,Hard,K. Okamura,D. Vidmanova,3,0.5650000000000001,0.62,0.2374,0.2406,21.5,0.5713,0.385,2.38,1.49,0,23.79
+2026-10-06 02:02,12168370,Challenger Women Singles,Suzhou,Hard,K. Okamura,D. Vidmanova,3,0.5650000000000001,0.62,0.2374,0.2406,22.5,0.5027,0.3254,2.82,1.36,0,23.79
+2026-10-06 02:02,12168370,Challenger Women Singles,Suzhou,Hard,K. Okamura,D. Vidmanova,3,0.5650000000000001,0.62,0.2374,0.2406,23.5,0.4561,0.2899,3.16,1.29,0,23.79
+2026-10-06 02:02,12168371,Challenger Women Singles,Suzhou,Hard,O. Oliynykova,W. Zheng,3,0.6,0.51,0.8836,0.6812,18.5,0.6392,0.6301,1.45,2.47,0,21.84
+2026-10-06 02:02,12168371,Challenger Women Singles,Suzhou,Hard,O. Oliynykova,W. Zheng,3,0.6,0.51,0.8836,0.6812,19.5,0.5556,0.5474,1.67,2.02,0,21.84
+2026-10-06 02:02,12168371,Challenger Women Singles,Suzhou,Hard,O. Oliynykova,W. Zheng,3,0.6,0.51,0.8836,0.6812,20.5,0.485,0.4768,1.92,1.75,1,21.84
+2026-10-06 02:02,12168371,Challenger Women Singles,Suzhou,Hard,O. Oliynykova,W. Zheng,3,0.6,0.51,0.8836,0.6812,21.5,0.4327,0.4213,2.17,1.58,0,21.84
+2026-10-06 02:02,12168371,Challenger Women Singles,Suzhou,Hard,O. Oliynykova,W. Zheng,3,0.6,0.51,0.8836,0.6812,22.5,0.3759,0.3636,2.52,1.44,0,21.84
+2026-10-06 02:02,12168371,Challenger Women Singles,Suzhou,Hard,O. Oliynykova,W. Zheng,3,0.6,0.51,0.8836,0.6812,23.5,0.3406,0.3183,2.87,1.34,0,21.84
+2026-10-06 02:02,12168371,Challenger Women Singles,Suzhou,Hard,O. Oliynykova,W. Zheng,3,0.6,0.51,0.8836,0.6812,24.5,0.3175,0.2982,3.06,1.3,0,21.84
+2026-10-06 02:02,12168373,Challenger Women Singles,Suzhou,Hard,D. Khomutsianskaya,T. C. Grant,3,0.595,0.5775,0.5904,0.3184,18.5,0.8256,0.6746,1.36,2.82,0,24.62
+2026-10-06 02:02,12168373,Challenger Women Singles,Suzhou,Hard,D. Khomutsianskaya,T. C. Grant,3,0.595,0.5775,0.5904,0.3184,19.5,0.7536,0.5937,1.54,2.25,0,24.62
+2026-10-06 02:02,12168373,Challenger Women Singles,Suzhou,Hard,D. Khomutsianskaya,T. C. Grant,3,0.595,0.5775,0.5904,0.3184,20.5,0.686,0.5246,1.74,1.92,0,24.62
+2026-10-06 02:02,12168373,Challenger Women Singles,Suzhou,Hard,D. Khomutsianskaya,T. C. Grant,3,0.595,0.5775,0.5904,0.3184,21.5,0.6357,0.4865,1.9,1.8,1,24.62
+2026-10-06 02:02,12168373,Challenger Women Singles,Suzhou,Hard,D. Khomutsianskaya,T. C. Grant,3,0.595,0.5775,0.5904,0.3184,22.5,0.5667,0.4026,2.27,1.53,0,24.62
+2026-10-06 02:02,12168373,Challenger Women Singles,Suzhou,Hard,D. Khomutsianskaya,T. C. Grant,3,0.595,0.5775,0.5904,0.3184,23.5,0.518,0.3636,2.52,1.44,0,24.62
+2026-10-06 02:02,12168373,Challenger Women Singles,Suzhou,Hard,D. Khomutsianskaya,T. C. Grant,3,0.595,0.5775,0.5904,0.3184,24.5,0.4964,0.3374,2.71,1.38,0,24.62
+2026-10-06 02:02,12168373,Challenger Women Singles,Suzhou,Hard,D. Khomutsianskaya,T. C. Grant,3,0.595,0.5775,0.5904,0.3184,25.5,0.4527,0.3483,2.62,1.4,0,24.62
+2026-10-06 02:02,12168374,Challenger Women Singles,Suzhou,Hard,J. Lu,T. Korpatsch,3,0.5425,0.5875,0.276,0.3625,18.5,0.7714,0.6626,1.38,2.71,0,23.76
+2026-10-06 02:02,12168374,Challenger Women Singles,Suzhou,Hard,J. Lu,T. Korpatsch,3,0.5425,0.5875,0.276,0.3625,19.5,0.696,0.5798,1.58,2.18,0,23.76
+2026-10-06 02:02,12168374,Challenger Women Singles,Suzhou,Hard,J. Lu,T. Korpatsch,3,0.5425,0.5875,0.276,0.3625,20.5,0.6279,0.5219,1.75,1.91,1,23.76
+2026-10-06 02:02,12168374,Challenger Women Singles,Suzhou,Hard,J. Lu,T. Korpatsch,3,0.5425,0.5875,0.276,0.3625,21.5,0.5764,0.4781,1.91,1.75,0,23.76
+2026-10-06 02:02,12168374,Challenger Women Singles,Suzhou,Hard,J. Lu,T. Korpatsch,3,0.5425,0.5875,0.276,0.3625,22.5,0.5117,0.3906,2.34,1.5,0,23.76
+2026-10-06 02:02,12168374,Challenger Women Singles,Suzhou,Hard,J. Lu,T. Korpatsch,3,0.5425,0.5875,0.276,0.3625,23.5,0.4683,0.3483,2.62,1.4,0,23.76
+2026-10-06 02:02,12168374,Challenger Women Singles,Suzhou,Hard,J. Lu,T. Korpatsch,3,0.5425,0.5875,0.276,0.3625,24.5,0.4439,0.3254,2.82,1.36,0,23.76
+2026-10-06 02:02,12168375,Itf Men Singles,M25 Darwin 2,Hard,E. Cook,R. Falck,3,0.625,0.645,0.401,0.4582,21.5,0.6825,0.526,1.73,1.92,1,25.44
+2026-10-06 02:02,12168387,Itf Women Singles,W15 Islamabad (Pakistan),Hard,J. Khramtsova,S. Leon,3,0.5575,0.5025000000000001,0.7693,0.3547,18.5,0.7298,0.5923,1.59,2.31,0,23.14
+2026-10-06 02:02,12168387,Itf Women Singles,W15 Islamabad (Pakistan),Hard,J. Khramtsova,S. Leon,3,0.5575,0.5025000000000001,0.7693,0.3547,19.5,0.6538,0.5026,1.88,1.9,1,23.14
+2026-10-06 02:02,12168387,Itf Women Singles,W15 Islamabad (Pakistan),Hard,J. Khramtsova,S. Leon,3,0.5575,0.5025000000000001,0.7693,0.3547,20.5,0.5874,0.4286,2.2,1.65,0,23.14
+2026-10-06 02:02,12168418,Atp Singles,Shanghai,Hard,P. Kotov,A. Vukic,3,0.685,0.6925,0.4647,0.5418,20.5,0.8211,0.665,1.36,2.7,0,26.97
+2026-10-06 02:02,12168418,Atp Singles,Shanghai,Hard,P. Kotov,A. Vukic,3,0.685,0.6925,0.4647,0.5418,21.5,0.7821,0.6279,1.44,2.43,0,26.97
+2026-10-06 02:02,12168418,Atp Singles,Shanghai,Hard,P. Kotov,A. Vukic,3,0.685,0.6925,0.4647,0.5418,22.5,0.6845,0.5422,1.68,1.99,0,26.97
+2026-10-06 02:02,12168418,Atp Singles,Shanghai,Hard,P. Kotov,A. Vukic,3,0.685,0.6925,0.4647,0.5418,23.5,0.5912,0.4743,1.94,1.75,1,26.97
+2026-10-06 02:02,12168418,Atp Singles,Shanghai,Hard,P. Kotov,A. Vukic,3,0.685,0.6925,0.4647,0.5418,24.5,0.5857,0.4645,1.96,1.7,0,26.97
+2026-10-06 02:02,12168418,Atp Singles,Shanghai,Hard,P. Kotov,A. Vukic,3,0.685,0.6925,0.4647,0.5418,25.5,0.5507,0.4348,2.08,1.6,0,26.97
+2026-10-06 02:02,12168419,Atp Singles,Shanghai,Hard,D. Sweeny,K. Coppejans,3,0.5975,0.5825,0.5775,0.5827,20.5,0.6909,0.6032,1.5,2.28,0,24.7
+2026-10-06 02:02,12168419,Atp Singles,Shanghai,Hard,D. Sweeny,K. Coppejans,3,0.5975,0.5825,0.5775,0.5827,21.5,0.6407,0.5477,1.66,2.01,0,24.7
+2026-10-06 02:02,12168419,Atp Singles,Shanghai,Hard,D. Sweeny,K. Coppejans,3,0.5975,0.5825,0.5775,0.5827,22.5,0.571,0.4808,2.03,1.88,1,24.7
+2026-10-06 02:02,12168419,Atp Singles,Shanghai,Hard,D. Sweeny,K. Coppejans,3,0.5975,0.5825,0.5775,0.5827,23.5,0.5214,0.4351,2.09,1.61,0,24.7
+2026-10-06 02:02,12168419,Atp Singles,Shanghai,Hard,D. Sweeny,K. Coppejans,3,0.5975,0.5825,0.5775,0.5827,24.5,0.5005,0.4205,2.15,1.56,0,24.7
+2026-10-06 02:02,12168432,Challenger Men Singles,Villena,Clay,D. Dedura,J. Pinnington Jones,3,0.595,0.5725,0.6157,0.4025,20.5,0.679,0.5583,1.63,2.06,0,24.51
+2026-10-06 02:02,12168432,Challenger Men Singles,Villena,Clay,D. Dedura,J. Pinnington Jones,3,0.595,0.5725,0.6157,0.4025,21.5,0.6285,0.5054,1.82,1.86,1,24.51
+2026-10-06 02:02,12168432,Challenger Men Singles,Villena,Clay,D. Dedura,J. Pinnington Jones,3,0.595,0.5725,0.6157,0.4025,22.5,0.56,0.4484,2.03,1.65,0,24.51
+2026-10-06 02:02,12168432,Challenger Men Singles,Villena,Clay,D. Dedura,J. Pinnington Jones,3,0.595,0.5725,0.6157,0.4025,23.5,0.512,0.4274,2.13,1.59,0,24.51
+2026-10-06 02:02,12168433,Atp Singles,Beijing,Hard,N. Djokovic,A. De Minaur,3,0.66,0.66,0.5,0.6144,15.5,0.9948,0.9074,1.02,10.0,0,26.16
+2026-10-06 02:02,12168433,Atp Singles,Beijing,Hard,N. Djokovic,A. De Minaur,3,0.66,0.66,0.5,0.6144,16.5,0.9851,0.88,1.05,7.7,0,26.16
+2026-10-06 02:02,12168433,Atp Singles,Beijing,Hard,N. Djokovic,A. De Minaur,3,0.66,0.66,0.5,0.6144,17.5,0.9549,0.8186,1.13,5.1,0,26.16
+2026-10-06 02:02,12168433,Atp Singles,Beijing,Hard,N. Djokovic,A. De Minaur,3,0.66,0.66,0.5,0.6144,18.5,0.9128,0.7594,1.22,3.85,0,26.16
+2026-10-06 02:02,12168433,Atp Singles,Beijing,Hard,N. Djokovic,A. De Minaur,3,0.66,0.66,0.5,0.6144,19.5,0.844,0.712,1.27,3.14,0,26.16
+2026-10-06 02:02,12168433,Atp Singles,Beijing,Hard,N. Djokovic,A. De Minaur,3,0.66,0.66,0.5,0.6144,20.5,0.7745,0.6423,1.42,2.55,0,26.16
+2026-10-06 02:02,12168433,Atp Singles,Beijing,Hard,N. Djokovic,A. De Minaur,3,0.66,0.66,0.5,0.6144,21.5,0.7295,0.5879,1.57,2.24,0,26.16
+2026-10-06 02:02,12168433,Atp Singles,Beijing,Hard,N. Djokovic,A. De Minaur,3,0.66,0.66,0.5,0.6144,22.5,0.6407,0.5039,1.92,1.95,1,26.16
+2026-10-06 02:02,12168433,Atp Singles,Beijing,Hard,N. Djokovic,A. De Minaur,3,0.66,0.66,0.5,0.6144,23.5,0.5644,0.4477,2.06,1.67,0,26.16
+2026-10-06 02:02,12168433,Atp Singles,Beijing,Hard,N. Djokovic,A. De Minaur,3,0.66,0.66,0.5,0.6144,24.5,0.5556,0.4355,2.1,1.62,0,26.16
+2026-10-06 02:02,12168433,Atp Singles,Beijing,Hard,N. Djokovic,A. De Minaur,3,0.66,0.66,0.5,0.6144,25.5,0.5196,0.4043,2.24,1.52,0,26.16
+2026-10-06 02:02,12168433,Atp Singles,Beijing,Hard,N. Djokovic,A. De Minaur,3,0.66,0.66,0.5,0.6144,26.5,0.4636,0.3684,2.52,1.47,0,26.16
+2026-10-06 02:02,12168433,Atp Singles,Beijing,Hard,N. Djokovic,A. De Minaur,3,0.66,0.66,0.5,0.6144,27.5,0.433,0.3357,2.75,1.39,0,26.16
+2026-10-06 02:02,12168433,Atp Singles,Beijing,Hard,N. Djokovic,A. De Minaur,3,0.66,0.66,0.5,0.6144,28.5,0.3921,0.2986,3.1,1.32,0,26.16
+2026-10-06 02:02,12168433,Atp Singles,Beijing,Hard,N. Djokovic,A. De Minaur,3,0.66,0.66,0.5,0.6144,29.5,0.3478,0.2604,3.55,1.25,0,26.16
+2026-10-06 02:02,12168433,Atp Singles,Beijing,Hard,N. Djokovic,A. De Minaur,3,0.66,0.66,0.5,0.6144,30.5,0.3011,0.2228,4.15,1.19,0,26.16
+2026-10-06 02:02,12168433,Atp Singles,Beijing,Hard,N. Djokovic,A. De Minaur,3,0.66,0.66,0.5,0.6144,31.5,0.2391,0.1814,5.1,1.13,0,26.16
+2026-10-06 02:02,12168433,Atp Singles,Beijing,Hard,N. Djokovic,A. De Minaur,3,0.66,0.66,0.5,0.6144,32.5,0.1731,0.1444,6.4,1.08,0,26.16
+2026-10-06 02:02,12168433,Atp Singles,Beijing,Hard,N. Djokovic,A. De Minaur,3,0.66,0.66,0.5,0.6144,33.5,0.1315,0.1214,7.6,1.05,0,26.16
+2026-10-06 02:02,12168433,Atp Singles,Beijing,Hard,N. Djokovic,A. De Minaur,3,0.66,0.66,0.5,0.6144,34.5,0.1008,0.1027,9.0,1.03,0,26.16
+2026-10-06 02:02,12168433,Atp Singles,Beijing,Hard,N. Djokovic,A. De Minaur,3,0.66,0.66,0.5,0.6144,35.5,0.0544,0.0926,10.0,1.02,0,26.16
+2026-10-06 02:02,12168434,Atp Singles,Shanghai,Hard,M. Bellucci,A. Muller,3,0.67,0.6425,0.6321,0.6683,19.5,0.8255,0.66,1.37,2.66,0,25.82
+2026-10-06 02:02,12168434,Atp Singles,Shanghai,Hard,M. Bellucci,A. Muller,3,0.67,0.6425,0.6321,0.6683,20.5,0.7534,0.6115,1.48,2.33,0,25.82
+2026-10-06 02:02,12168434,Atp Singles,Shanghai,Hard,M. Bellucci,A. Muller,3,0.67,0.6425,0.6321,0.6683,21.5,0.7061,0.5543,1.64,2.04,0,25.82
+2026-10-06 02:02,12168434,Atp Singles,Shanghai,Hard,M. Bellucci,A. Muller,3,0.67,0.6425,0.6321,0.6683,22.5,0.6178,0.4879,1.91,1.82,1,25.82
+2026-10-06 02:02,12168434,Atp Singles,Shanghai,Hard,M. Bellucci,A. Muller,3,0.67,0.6425,0.6321,0.6683,23.5,0.5442,0.4313,2.11,1.6,0,25.82
+2026-10-06 02:02,12168434,Atp Singles,Shanghai,Hard,M. Bellucci,A. Muller,3,0.67,0.6425,0.6321,0.6683,24.5,0.5348,0.4167,2.17,1.55,0,25.82
+2026-10-06 02:02,12168435,Atp Singles,Shanghai,Hard,C. Wong,L. Harris,3,0.6825,0.705,0.3958,0.4544,21.5,0.7839,0.6412,1.41,2.52,0,26.99
+2026-10-06 02:02,12168435,Atp Singles,Shanghai,Hard,C. Wong,L. Harris,3,0.6825,0.705,0.3958,0.4544,22.5,0.6842,0.5516,1.65,2.03,0,26.99
+2026-10-06 02:02,12168435,Atp Singles,Shanghai,Hard,C. Wong,L. Harris,3,0.6825,0.705,0.3958,0.4544,23.5,0.5879,0.4837,1.9,1.78,1,26.99
+2026-10-06 02:02,12168435,Atp Singles,Shanghai,Hard,C. Wong,L. Harris,3,0.6825,0.705,0.3958,0.4544,24.5,0.5827,0.4712,1.93,1.72,0,26.99
+2026-10-06 02:02,12168435,Atp Singles,Shanghai,Hard,C. Wong,L. Harris,3,0.6825,0.705,0.3958,0.4544,25.5,0.5476,0.4402,2.06,1.62,0,26.99
+2026-10-06 02:02,12168435,Atp Singles,Shanghai,Hard,C. Wong,L. Harris,3,0.6825,0.705,0.3958,0.4544,27.5,0.4547,0.3885,2.33,1.48,0,26.99
+2026-10-06 02:02,12168436,Challenger Men Singles,Braga,Clay,M. Cecchinato,O. Wallin,3,0.6575,0.5925,0.7945,0.6564,20.5,0.6354,0.5623,1.65,2.12,0,24.02
+2026-10-06 02:02,12168436,Challenger Men Singles,Braga,Clay,M. Cecchinato,O. Wallin,3,0.6575,0.5925,0.7945,0.6564,21.5,0.5803,0.5148,1.8,1.91,1,24.02
+2026-10-06 02:02,12168436,Challenger Men Singles,Braga,Clay,M. Cecchinato,O. Wallin,3,0.6575,0.5925,0.7945,0.6564,22.5,0.5031,0.4599,2.02,1.72,0,24.02
+2026-10-06 02:02,12168437,Challenger Men Singles,Braga,Clay,O. Krutykh,J. Barranco Cosano,3,0.5825,0.5975,0.4225,0.5511,20.5,0.6909,0.5764,1.58,2.15,0,24.7
+2026-10-06 02:02,12168437,Challenger Men Singles,Braga,Clay,O. Krutykh,J. Barranco Cosano,3,0.5825,0.5975,0.4225,0.5511,21.5,0.6407,0.543,1.7,2.02,0,24.7
+2026-10-06 02:02,12168437,Challenger Men Singles,Braga,Clay,O. Krutykh,J. Barranco Cosano,3,0.5825,0.5975,0.4225,0.5511,22.5,0.571,0.4852,1.91,1.8,1,24.7
+2026-10-06 02:02,12168437,Challenger Men Singles,Braga,Clay,O. Krutykh,J. Barranco Cosano,3,0.5825,0.5975,0.4225,0.5511,23.5,0.5214,0.4465,2.07,1.67,0,24.7
+2026-10-06 02:02,12168438,Challenger Men Singles,Braga,Clay,M. McDonald,R. Nijboer,3,0.6,0.585,0.5773,0.4918,20.5,0.6928,0.5764,1.58,2.15,0,24.74
+2026-10-06 02:02,12168438,Challenger Men Singles,Braga,Clay,M. McDonald,R. Nijboer,3,0.6,0.585,0.5773,0.4918,21.5,0.6426,0.523,1.76,1.93,1,24.74
+2026-10-06 02:02,12168438,Challenger Men Singles,Braga,Clay,M. McDonald,R. Nijboer,3,0.6,0.585,0.5773,0.4918,22.5,0.5725,0.4617,1.97,1.69,0,24.74
+2026-10-06 02:02,12168438,Challenger Men Singles,Braga,Clay,M. McDonald,R. Nijboer,3,0.6,0.585,0.5773,0.4918,23.5,0.5224,0.4274,2.13,1.59,0,24.74
+2026-10-06 02:02,12168439,Challenger Men Singles,Braga,Clay,J. Nikles,M. Damas,3,0.545,0.54,0.5266,0.4465,20.5,0.6705,0.5405,1.76,2.07,0,24.29
+2026-10-06 02:02,12168439,Challenger Men Singles,Braga,Clay,J. Nikles,M. Damas,3,0.545,0.54,0.5266,0.4465,21.5,0.6209,0.4921,1.94,1.88,1,24.29
+2026-10-06 02:02,12168439,Challenger Men Singles,Braga,Clay,J. Nikles,M. Damas,3,0.545,0.54,0.5266,0.4465,22.5,0.5567,0.4341,2.19,1.68,0,24.29
+2026-10-06 02:02,12168439,Challenger Men Singles,Braga,Clay,J. Nikles,M. Damas,3,0.545,0.54,0.5266,0.4465,23.5,0.513,0.4465,2.07,1.67,0,24.29
+2026-10-06 02:02,12168440,Challenger Men Singles,Braga,Clay,P. Schoen,A. Nedic,3,0.5825,0.585,0.487,0.4169,20.5,0.6921,0.5422,1.68,1.99,0,24.7
+2026-10-06 02:02,12168440,Challenger Men Singles,Braga,Clay,P. Schoen,A. Nedic,3,0.5825,0.585,0.487,0.4169,21.5,0.6422,0.5467,1.7,2.05,0,24.7
+2026-10-06 02:02,12168440,Challenger Men Singles,Braga,Clay,P. Schoen,A. Nedic,3,0.5825,0.585,0.487,0.4169,22.5,0.5734,0.4865,1.9,1.8,1,24.7
+2026-10-06 02:02,12168440,Challenger Men Singles,Braga,Clay,P. Schoen,A. Nedic,3,0.5825,0.585,0.487,0.4169,23.5,0.5248,0.4465,2.07,1.67,0,24.7
+2026-10-06 02:02,12168441,Challenger Men Singles,Villena,Clay,H. Barton,T. Samuel,3,0.605,0.64,0.3285,0.2104,18.5,0.8459,0.6026,1.51,2.29,0,24.9
+2026-10-06 02:02,12168441,Challenger Men Singles,Villena,Clay,H. Barton,T. Samuel,3,0.605,0.64,0.3285,0.2104,19.5,0.7702,0.5422,1.68,1.99,0,24.9
+2026-10-06 02:02,12168441,Challenger Men Singles,Villena,Clay,H. Barton,T. Samuel,3,0.605,0.64,0.3285,0.2104,20.5,0.6976,0.477,1.93,1.76,1,24.9
+2026-10-06 02:02,12168441,Challenger Men Singles,Villena,Clay,H. Barton,T. Samuel,3,0.605,0.64,0.3285,0.2104,21.5,0.6465,0.4274,2.13,1.59,0,24.9
+2026-10-06 02:02,12168442,Challenger Men Singles,Villena,Clay,E. Butvilas,M. H. Rehberg,3,0.63,0.6375000000000001,0.4625,0.6297,21.5,0.6893,0.5355,1.7,1.96,0,25.53
+2026-10-06 02:02,12168442,Challenger Men Singles,Villena,Clay,E. Butvilas,M. H. Rehberg,3,0.63,0.6375000000000001,0.4625,0.6297,22.5,0.6089,0.4715,1.95,1.74,1,25.53
+2026-10-06 02:02,12168442,Challenger Men Singles,Villena,Clay,E. Butvilas,M. H. Rehberg,3,0.63,0.6375000000000001,0.4625,0.6297,23.5,0.5457,0.4236,2.15,1.58,0,25.53
+2026-10-06 02:02,12168442,Challenger Men Singles,Villena,Clay,E. Butvilas,M. H. Rehberg,3,0.63,0.6375000000000001,0.4625,0.6297,24.5,0.5327,0.44,2.1,1.65,0,25.53
+2026-10-06 02:02,12168443,Challenger Men Singles,Villena,Clay,D. Dzumhur,G. Kravchenko,3,0.6125,0.545,0.8118,0.6754,19.5,0.6497,0.5737,1.62,2.18,0,23.11
+2026-10-06 02:02,12168443,Challenger Men Singles,Villena,Clay,D. Dzumhur,G. Kravchenko,3,0.6125,0.545,0.8118,0.6754,20.5,0.5775,0.5462,1.67,2.01,0,23.11
+2026-10-06 02:02,12168443,Challenger Men Singles,Villena,Clay,D. Dzumhur,G. Kravchenko,3,0.6125,0.545,0.8118,0.6754,21.5,0.524,0.4946,1.86,1.82,1,23.11
+2026-10-06 02:02,12168443,Challenger Men Singles,Villena,Clay,D. Dzumhur,G. Kravchenko,3,0.6125,0.545,0.8118,0.6754,22.5,0.4595,0.4351,2.09,1.61,0,23.11
+2026-10-06 02:02,12168444,Challenger Men Singles,Villena,Clay,P. Henning,M. Kasnikowski,3,0.585,0.615,0.3491,0.4405,20.5,0.6822,0.5789,1.6,2.2,0,24.61
+2026-10-06 02:02,12168444,Challenger Men Singles,Villena,Clay,P. Henning,M. Kasnikowski,3,0.585,0.615,0.3491,0.4405,21.5,0.6311,0.5622,1.62,2.08,0,24.61
+2026-10-06 02:02,12168444,Challenger Men Singles,Villena,Clay,P. Henning,M. Kasnikowski,3,0.585,0.615,0.3491,0.4405,22.5,0.5597,0.4918,1.87,1.81,1,24.61
+2026-10-06 02:02,12168444,Challenger Men Singles,Villena,Clay,P. Henning,M. Kasnikowski,3,0.585,0.615,0.3491,0.4405,23.5,0.5087,0.4417,2.06,1.63,0,24.61
+2026-10-06 02:02,12168445,Challenger Men Singles,Villena,Clay,C. Hernandez,P. Nesterov,3,0.55,0.63,0.1491,0.2157,18.5,0.7083,0.5989,1.52,2.27,0,22.75
+2026-10-06 02:02,12168445,Challenger Men Singles,Villena,Clay,C. Hernandez,P. Nesterov,3,0.55,0.63,0.1491,0.2157,19.5,0.6234,0.5543,1.64,2.04,0,22.75
+2026-10-06 02:02,12168445,Challenger Men Singles,Villena,Clay,C. Hernandez,P. Nesterov,3,0.55,0.63,0.1491,0.2157,20.5,0.5481,0.4918,1.87,1.81,1,22.75
+2026-10-06 02:02,12168445,Challenger Men Singles,Villena,Clay,C. Hernandez,P. Nesterov,3,0.55,0.63,0.1491,0.2157,21.5,0.4932,0.4378,2.08,1.62,0,22.75
+2026-10-06 02:02,12168446,Challenger Men Singles,Villena,Clay,F. Maestrelli,O. Tarvet,3,0.5750000000000001,0.6325000000000001,0.2294,0.2599,19.5,0.7035,0.5789,1.6,2.2,0,23.89
+2026-10-06 02:02,12168446,Challenger Men Singles,Villena,Clay,F. Maestrelli,O. Tarvet,3,0.5750000000000001,0.6325000000000001,0.2294,0.2599,20.5,0.6292,0.5422,1.68,1.99,0,23.89
+2026-10-06 02:02,12168446,Challenger Men Singles,Villena,Clay,F. Maestrelli,O. Tarvet,3,0.5750000000000001,0.6325000000000001,0.2294,0.2599,21.5,0.5755,0.4864,1.89,1.79,1,23.89
+2026-10-06 02:02,12168446,Challenger Men Singles,Villena,Clay,F. Maestrelli,O. Tarvet,3,0.5750000000000001,0.6325000000000001,0.2294,0.2599,22.5,0.5044,0.4133,2.2,1.55,0,23.89
+2026-10-06 02:02,12168446,Challenger Men Singles,Villena,Clay,F. Maestrelli,O. Tarvet,3,0.5750000000000001,0.6325000000000001,0.2294,0.2599,23.5,0.4554,0.4274,2.13,1.59,0,23.89
+2026-10-06 02:02,12168447,Challenger Men Singles,Villena,Clay,D. Stricker,L. Djere,3,0.62,0.64,0.4005,0.5508,20.5,0.7253,0.5767,1.6,2.18,0,25.33
+2026-10-06 02:02,12168447,Challenger Men Singles,Villena,Clay,D. Stricker,L. Djere,3,0.62,0.64,0.4005,0.5508,21.5,0.676,0.5583,1.63,2.06,0,25.33
+2026-10-06 02:02,12168447,Challenger Men Singles,Villena,Clay,D. Stricker,L. Djere,3,0.62,0.64,0.4005,0.5508,22.5,0.5967,0.4891,1.88,1.8,1,25.33
+2026-10-06 02:02,12168447,Challenger Men Singles,Villena,Clay,D. Stricker,L. Djere,3,0.62,0.64,0.4005,0.5508,23.5,0.5354,0.4378,2.08,1.62,0,25.33
+2026-10-06 02:02,12168453,Itf Women Singles,W15 Chisinau (Moldova),Clay,D. Cirpanli,A. Safta,3,0.5025000000000001,0.525,0.3812,0.2704,17.5,0.8548,0.6627,1.4,2.75,0,23.98
+2026-10-06 02:02,12168453,Itf Women Singles,W15 Chisinau (Moldova),Clay,D. Cirpanli,A. Safta,3,0.5025000000000001,0.525,0.3812,0.2704,18.5,0.7846,0.5529,1.69,2.09,0,23.98
+2026-10-06 02:02,12168453,Itf Women Singles,W15 Chisinau (Moldova),Clay,D. Cirpanli,A. Safta,3,0.5025000000000001,0.525,0.3812,0.2704,19.5,0.714,0.5,1.83,1.83,1,23.98
+2026-10-06 02:02,12168453,Itf Women Singles,W15 Chisinau (Moldova),Clay,D. Cirpanli,A. Safta,3,0.5025000000000001,0.525,0.3812,0.2704,20.5,0.6506,0.4824,1.91,1.78,0,23.98
+2026-10-06 02:02,12168453,Itf Women Singles,W15 Chisinau (Moldova),Clay,D. Cirpanli,A. Safta,3,0.5025000000000001,0.525,0.3812,0.2704,21.5,0.6009,0.4156,2.25,1.6,0,23.98
+2026-10-06 02:02,12168461,Challenger Women Singles,Samsun,Hard,B. Andreescu,A. Smith,3,0.6575,0.5675,0.8748,0.846,16.5,0.8923,0.7095,1.29,3.15,0,22.72
+2026-10-06 02:02,12168461,Challenger Women Singles,Samsun,Hard,B. Andreescu,A. Smith,3,0.6575,0.5675,0.8748,0.846,17.5,0.8049,0.6094,1.5,2.34,0,22.72
+2026-10-06 02:02,12168461,Challenger Women Singles,Samsun,Hard,B. Andreescu,A. Smith,3,0.6575,0.5675,0.8748,0.846,18.5,0.7119,0.5054,1.83,1.87,1,22.72
+2026-10-06 02:02,12168461,Challenger Women Singles,Samsun,Hard,B. Andreescu,A. Smith,3,0.6575,0.5675,0.8748,0.846,19.5,0.6219,0.4355,2.1,1.62,0,22.72
+2026-10-06 02:02,12168461,Challenger Women Singles,Samsun,Hard,B. Andreescu,A. Smith,3,0.6575,0.5675,0.8748,0.846,20.5,0.5412,0.3699,2.47,1.45,0,22.72
+2026-10-06 02:02,12168461,Challenger Women Singles,Samsun,Hard,B. Andreescu,A. Smith,3,0.6575,0.5675,0.8748,0.846,21.5,0.484,0.3254,2.82,1.36,0,22.72
+2026-10-06 02:02,12168461,Challenger Women Singles,Samsun,Hard,B. Andreescu,A. Smith,3,0.6575,0.5675,0.8748,0.846,22.5,0.414,0.2727,3.36,1.26,0,22.72
+2026-10-06 02:02,12168463,Challenger Women Singles,Samsun,Hard,L. Jeanjean,M. Bolkvadze,3,0.56,0.5575,0.5132,0.7127,18.5,0.8127,0.6517,1.4,2.62,0,24.42
+2026-10-06 02:02,12168463,Challenger Women Singles,Samsun,Hard,L. Jeanjean,M. Bolkvadze,3,0.56,0.5575,0.5132,0.7127,19.5,0.7424,0.5469,1.74,2.1,0,24.42
+2026-10-06 02:02,12168463,Challenger Women Singles,Samsun,Hard,L. Jeanjean,M. Bolkvadze,3,0.56,0.5575,0.5132,0.7127,20.5,0.6776,0.477,1.93,1.76,1,24.42
+2026-10-06 02:02,12168463,Challenger Women Singles,Samsun,Hard,L. Jeanjean,M. Bolkvadze,3,0.56,0.5575,0.5132,0.7127,21.5,0.6279,0.4553,2.01,1.68,0,24.42
+2026-10-06 02:02,12168463,Challenger Women Singles,Samsun,Hard,L. Jeanjean,M. Bolkvadze,3,0.56,0.5575,0.5132,0.7127,22.5,0.5623,0.3953,2.31,1.51,0,24.42
+2026-10-06 02:02,12168463,Challenger Women Singles,Samsun,Hard,L. Jeanjean,M. Bolkvadze,3,0.56,0.5575,0.5132,0.7127,23.5,0.5172,0.3559,2.57,1.42,0,24.42
+2026-10-06 02:02,12168463,Challenger Women Singles,Samsun,Hard,L. Jeanjean,M. Bolkvadze,3,0.56,0.5575,0.5132,0.7127,24.5,0.4916,0.3366,2.72,1.38,0,24.42
+2026-10-06 02:02,12168463,Challenger Women Singles,Samsun,Hard,L. Jeanjean,M. Bolkvadze,3,0.56,0.5575,0.5132,0.7127,25.5,0.4451,0.3254,2.82,1.36,0,24.42
+2026-10-06 02:02,12168464,Challenger Women Singles,Samsun,Hard,T. Kostovic,N. Noha Akugue,3,0.5825,0.605,0.385,0.6561,18.5,0.8281,0.6585,1.39,2.68,0,24.65
+2026-10-06 02:02,12168464,Challenger Women Singles,Samsun,Hard,T. Kostovic,N. Noha Akugue,3,0.5825,0.605,0.385,0.6561,19.5,0.7553,0.6301,1.45,2.47,0,24.65
+2026-10-06 02:02,12168464,Challenger Women Singles,Samsun,Hard,T. Kostovic,N. Noha Akugue,3,0.5825,0.605,0.385,0.6561,20.5,0.6867,0.5648,1.68,2.18,0,24.65
+2026-10-06 02:02,12168464,Challenger Women Singles,Samsun,Hard,T. Kostovic,N. Noha Akugue,3,0.5825,0.605,0.385,0.6561,21.5,0.6361,0.4891,1.88,1.8,1,24.65
+2026-10-06 02:02,12168464,Challenger Women Singles,Samsun,Hard,T. Kostovic,N. Noha Akugue,3,0.5825,0.605,0.385,0.6561,22.5,0.5658,0.4505,2.11,1.73,0,24.65
+2026-10-06 02:02,12168464,Challenger Women Singles,Samsun,Hard,T. Kostovic,N. Noha Akugue,3,0.5825,0.605,0.385,0.6561,23.5,0.5158,0.409,2.24,1.55,0,24.65
+2026-10-06 02:02,12168464,Challenger Women Singles,Samsun,Hard,T. Kostovic,N. Noha Akugue,3,0.5825,0.605,0.385,0.6561,24.5,0.4956,0.3906,2.34,1.5,0,24.65
+2026-10-06 02:02,12168464,Challenger Women Singles,Samsun,Hard,T. Kostovic,N. Noha Akugue,3,0.5825,0.605,0.385,0.6561,25.5,0.4527,0.355,2.58,1.42,0,24.65
+2026-10-06 02:02,12168465,Itf Men Singles,M15+H Rodez,Hard,A. Gobat,C. Mueller,3,0.67,0.65,0.5965,0.5082,21.5,0.7204,0.5605,1.67,2.13,0,26.03
+2026-10-06 02:02,12168465,Itf Men Singles,M15+H Rodez,Hard,A. Gobat,C. Mueller,3,0.67,0.65,0.5965,0.5082,22.5,0.6312,0.4835,1.88,1.76,1,26.03
+2026-10-06 02:02,12168465,Itf Men Singles,M15+H Rodez,Hard,A. Gobat,C. Mueller,3,0.67,0.65,0.5965,0.5082,23.5,0.5552,0.4219,2.22,1.62,0,26.03
+2026-10-06 02:02,12168468,Itf Men Singles,M15+H Rodez,Hard,D. Jade,K. De Schepper,3,0.6375000000000001,0.68,0.3016,0.5273,21.5,0.6872,0.5807,1.61,2.23,0,25.56
+2026-10-06 02:02,12168468,Itf Men Singles,M15+H Rodez,Hard,D. Jade,K. De Schepper,3,0.6375000000000001,0.68,0.3016,0.5273,22.5,0.5973,0.4987,1.88,1.87,1,25.56
+2026-10-06 02:02,12168468,Itf Men Singles,M15+H Rodez,Hard,D. Jade,K. De Schepper,3,0.6375000000000001,0.68,0.3016,0.5273,23.5,0.5233,0.4395,2.13,1.67,0,25.56
+2026-10-06 02:02,12168483,Itf Men Singles,M25 Kigali 2,Clay,C. Lock,M. Vankan,3,0.51,0.6425,0.0416,0.0849,16.5,0.7387,0.5,1.82,1.82,1,20.08
+2026-10-06 02:02,12168484,Itf Men Singles,M25 Kigali 2,Clay,A. Nefve,A. Beckley,3,0.5575,0.625,0.1901,0.2829,19.5,0.6626,0.5503,1.7,2.08,0,23.3
+2026-10-06 02:02,12168484,Itf Men Singles,M25 Kigali 2,Clay,A. Nefve,A. Beckley,3,0.5575,0.625,0.1901,0.2829,20.5,0.5887,0.4946,1.86,1.82,1,23.3
+2026-10-06 02:02,12168484,Itf Men Singles,M25 Kigali 2,Clay,A. Nefve,A. Beckley,3,0.5575,0.625,0.1901,0.2829,21.5,0.5345,0.4342,2.15,1.65,0,23.3
+2026-10-06 02:02,12168486,Itf Men Singles,M25 Kigali 2,Clay,D. Javia,R. De Alba,3,0.6225,0.5575,0.8011,0.8256,19.5,0.6683,0.4863,1.87,1.77,1,23.38
+2026-10-06 02:02,12168487,Itf Men Singles,M25 Kigali 2,Clay,Y. Oliel,L. Van Herck,3,0.5975,0.5925,0.5259,0.75,19.5,0.7678,0.5529,1.69,2.09,0,24.85
+2026-10-06 02:02,12168487,Itf Men Singles,M25 Kigali 2,Clay,Y. Oliel,L. Van Herck,3,0.5975,0.5925,0.5259,0.75,20.5,0.6999,0.4767,1.91,1.74,1,24.85
+2026-10-06 02:02,12168489,Itf Men Singles,M25 Kigali 2,Clay,D. Suresh,P. Brown,3,0.735,0.59,0.9607,0.2639,19.5,0.5471,0.511,1.78,1.86,1,21.5
+2026-10-06 02:02,12168489,Itf Men Singles,M25 Kigali 2,Clay,D. Suresh,P. Brown,3,0.735,0.59,0.9607,0.2639,20.5,0.4468,0.4672,1.95,1.71,0,21.5
+2026-10-06 02:02,12168490,Itf Men Singles,M25 Kigali 2,Clay,E. Niyigena,C. Ishimwe,3,0.61,0.5975,0.564,0.7395,18.5,0.8449,0.5567,1.68,2.11,0,24.93
+2026-10-06 02:02,12168490,Itf Men Singles,M25 Kigali 2,Clay,E. Niyigena,C. Ishimwe,3,0.61,0.5975,0.564,0.7395,19.5,0.7728,0.4615,2.03,1.74,1,24.93
+2026-10-06 02:02,12168491,Itf Men Singles,M25 Kigali 2,Clay,C. Warik,C. Denolly,3,0.52,0.6575,0.0373,0.1019,17.5,0.6171,0.5055,1.8,1.84,1,20.05
+2026-10-06 02:02,12168517,Challenger Men Singles,Palermo (Italy) - Qualification,Clay,B. Gadamauri,P. Vives Marcos,3,0.635,0.63,0.5251,0.4762,21.5,0.6885,0.5535,1.67,2.07,0,25.51
+2026-10-06 02:02,12168517,Challenger Men Singles,Palermo (Italy) - Qualification,Clay,B. Gadamauri,P. Vives Marcos,3,0.635,0.63,0.5251,0.4762,22.5,0.6085,0.4892,1.9,1.82,1,25.51
+2026-10-06 02:02,12168517,Challenger Men Singles,Palermo (Italy) - Qualification,Clay,B. Gadamauri,P. Vives Marcos,3,0.635,0.63,0.5251,0.4762,23.5,0.5457,0.4465,2.07,1.67,0,25.51
+2026-10-06 02:02,12168519,Challenger Men Singles,Palermo (Italy) - Qualification,Clay,K. Ivanovski,A. Moro Canas,3,0.6,0.645,0.2841,0.2693,20.5,0.6795,0.5703,1.62,2.15,0,24.64
+2026-10-06 02:02,12168519,Challenger Men Singles,Palermo (Italy) - Qualification,Clay,K. Ivanovski,A. Moro Canas,3,0.6,0.645,0.2841,0.2693,21.5,0.6271,0.5202,1.78,1.93,1,24.64
+2026-10-06 02:02,12168519,Challenger Men Singles,Palermo (Italy) - Qualification,Clay,K. Ivanovski,A. Moro Canas,3,0.6,0.645,0.2841,0.2693,22.5,0.5501,0.4599,2.02,1.72,0,24.64
+2026-10-06 02:02,12168519,Challenger Men Singles,Palermo (Italy) - Qualification,Clay,K. Ivanovski,A. Moro Canas,3,0.6,0.645,0.2841,0.2693,23.5,0.4936,0.4096,2.22,1.54,0,24.64
+2026-10-06 02:02,12168520,Challenger Men Singles,Palermo (Italy) - Qualification,Clay,Z. Kolar,D. Sakellaridis,3,0.605,0.525,0.8545,0.8117,18.5,0.6808,0.5812,1.6,2.22,0,22.41
+2026-10-06 02:02,12168520,Challenger Men Singles,Palermo (Italy) - Qualification,Clay,Z. Kolar,D. Sakellaridis,3,0.605,0.525,0.8545,0.8117,19.5,0.5982,0.5203,1.77,1.92,1,22.41
+2026-10-06 02:02,12168520,Challenger Men Singles,Palermo (Italy) - Qualification,Clay,Z. Kolar,D. Sakellaridis,3,0.605,0.525,0.8545,0.8117,20.5,0.5267,0.4578,1.99,1.68,0,22.41
+2026-10-06 02:02,12168520,Challenger Men Singles,Palermo (Italy) - Qualification,Clay,Z. Kolar,D. Sakellaridis,3,0.605,0.525,0.8545,0.8117,21.5,0.4736,0.411,2.25,1.57,0,22.41
+2026-10-06 02:02,12168520,Challenger Men Singles,Palermo (Italy) - Qualification,Clay,Z. Kolar,D. Sakellaridis,3,0.605,0.525,0.8545,0.8117,22.5,0.4133,0.4133,2.2,1.55,0,22.41
+2026-10-06 02:02,12168522,Challenger Men Singles,Palermo (Italy) - Qualification,Clay,C. Langmo,L. Giustino,3,0.615,0.6775,0.2194,0.2857,20.5,0.6743,0.5376,1.72,2.0,0,24.61
+2026-10-06 02:02,12168522,Challenger Men Singles,Palermo (Italy) - Qualification,Clay,C. Langmo,L. Giustino,3,0.615,0.6775,0.2194,0.2857,21.5,0.6201,0.4892,1.9,1.82,1,24.61
+2026-10-06 02:02,12168522,Challenger Men Singles,Palermo (Italy) - Qualification,Clay,C. Langmo,L. Giustino,3,0.615,0.6775,0.2194,0.2857,22.5,0.5346,0.4377,2.12,1.65,0,24.61
+2026-10-06 02:02,12168522,Challenger Men Singles,Palermo (Italy) - Qualification,Clay,C. Langmo,L. Giustino,3,0.615,0.6775,0.2194,0.2857,23.5,0.4698,0.4209,2.16,1.57,0,24.61
+2026-10-06 02:02,12168538,Itf Men Singles,M25 Santa Margherita di Pula 9,Clay,L. Berto,M. Mazza,3,0.5625,0.6325000000000001,0.1826,0.2829,20.5,0.5875,0.5027,1.81,1.83,1,23.3
+2026-10-06 02:02,12168540,Itf Men Singles,M25 Santa Margherita di Pula 9,Clay,K. Kivattsev,I. Ivanov,3,0.63,0.595,0.6729,0.3072,20.5,0.6865,0.5055,1.8,1.84,0,24.71
+2026-10-06 02:02,12168540,Itf Men Singles,M25 Santa Margherita di Pula 9,Clay,K. Kivattsev,I. Ivanov,3,0.63,0.595,0.6729,0.3072,21.5,0.6351,0.5,1.82,1.82,1,24.71
+2026-10-06 02:02,12168541,Itf Men Singles,M25 Santa Margherita di Pula 9,Clay,L. Lokoli,M. Sciahbasi,3,0.595,0.52,0.8399,0.759,19.5,0.6088,0.526,1.73,1.92,0,22.55
+2026-10-06 02:02,12168541,Itf Men Singles,M25 Santa Margherita di Pula 9,Clay,L. Lokoli,M. Sciahbasi,3,0.595,0.52,0.8399,0.759,20.5,0.5385,0.5,1.82,1.82,1,22.55
+2026-10-06 02:02,12168550,Itf Women Singles,W35 Santa Margherita di Pula 9,Clay,S. Cakarevic,C. Bohrer Martins,3,0.54,0.545,0.4734,0.6812,19.5,0.7344,0.5307,1.76,1.99,0,24.29
+2026-10-06 02:02,12168550,Itf Women Singles,W35 Santa Margherita di Pula 9,Clay,S. Cakarevic,C. Bohrer Martins,3,0.54,0.545,0.4734,0.6812,20.5,0.6705,0.4753,1.91,1.73,1,24.29
+2026-10-06 02:02,12168551,Itf Women Singles,W35 Santa Margherita di Pula 9,Clay,L. Vladson,B. Zeltina,3,0.5375,0.5325,0.5267,0.4575,20.5,0.6682,0.5082,1.79,1.85,1,24.24
+2026-10-06 02:02,12168553,Itf Women Singles,W35 Villeneuve d'Ascq,Hard,N. Schunk,M. Weckerle,3,0.555,0.535,0.6052,0.8802,18.5,0.7964,0.4767,1.91,1.74,1,24.16
+2026-10-06 02:02,12168554,Itf Women Singles,W35 Villeneuve d'Ascq,Hard,M. Leonard,M. Thamm,3,0.5425,0.56,0.4079,0.4595,19.5,0.7308,0.5733,1.63,2.19,0,24.24
+2026-10-06 02:02,12168554,Itf Women Singles,W35 Villeneuve d'Ascq,Hard,M. Leonard,M. Thamm,3,0.5425,0.56,0.4079,0.4595,20.5,0.666,0.5137,1.78,1.88,1,24.24
+2026-10-06 02:02,12168554,Itf Women Singles,W35 Villeneuve d'Ascq,Hard,M. Leonard,M. Thamm,3,0.5425,0.56,0.4079,0.4595,21.5,0.6161,0.4601,2.03,1.73,0,24.24
+2026-10-06 02:02,12168555,Itf Women Singles,W35 Villeneuve d'Ascq,Hard,J. Stusek,K. Coppez,3,0.58,0.495,0.8717,0.8782,17.5,0.7353,0.5213,1.8,1.96,1,21.92
+2026-10-06 02:02,12168556,Itf Women Singles,W35 Villeneuve d'Ascq,Hard,J. Otzipka,M. Szostak,3,0.5225,0.5475,0.369,0.576,17.5,0.8574,0.6691,1.36,2.75,0,24.01
+2026-10-06 02:02,12168556,Itf Women Singles,W35 Villeneuve d'Ascq,Hard,J. Otzipka,M. Szostak,3,0.5225,0.5475,0.369,0.576,18.5,0.787,0.6345,1.44,2.5,0,24.01
+2026-10-06 02:02,12168556,Itf Women Singles,W35 Villeneuve d'Ascq,Hard,J. Otzipka,M. Szostak,3,0.5225,0.5475,0.369,0.576,19.5,0.7158,0.5511,1.67,2.05,0,24.01
+2026-10-06 02:02,12168556,Itf Women Singles,W35 Villeneuve d'Ascq,Hard,J. Otzipka,M. Szostak,3,0.5225,0.5475,0.369,0.576,20.5,0.6516,0.5082,1.79,1.85,1,24.01
+2026-10-06 02:02,12168556,Itf Women Singles,W35 Villeneuve d'Ascq,Hard,J. Otzipka,M. Szostak,3,0.5225,0.5475,0.369,0.576,21.5,0.6016,0.4489,2.05,1.67,0,24.01
+2026-10-06 02:02,12168556,Itf Women Singles,W35 Villeneuve d'Ascq,Hard,J. Otzipka,M. Szostak,3,0.5225,0.5475,0.369,0.576,22.5,0.5383,0.3995,2.3,1.53,0,24.01
+2026-10-06 02:02,12168559,Itf Women Singles,W35 Villeneuve d'Ascq,Hard,C. Vlasselaer,D. Mpetshi Perricard,3,0.6325000000000001,0.585,0.7289,0.5529,18.5,0.8099,0.6345,1.44,2.5,0,24.31
+2026-10-06 02:02,12168559,Itf Women Singles,W35 Villeneuve d'Ascq,Hard,C. Vlasselaer,D. Mpetshi Perricard,3,0.6325000000000001,0.585,0.7289,0.5529,19.5,0.7317,0.6005,1.53,2.3,0,24.31
+2026-10-06 02:02,12168559,Itf Women Singles,W35 Villeneuve d'Ascq,Hard,C. Vlasselaer,D. Mpetshi Perricard,3,0.6325000000000001,0.585,0.7289,0.5529,20.5,0.6585,0.527,1.75,1.95,1,24.31
+2026-10-06 02:02,12168559,Itf Women Singles,W35 Villeneuve d'Ascq,Hard,C. Vlasselaer,D. Mpetshi Perricard,3,0.6325000000000001,0.585,0.7289,0.5529,21.5,0.6057,0.473,1.95,1.75,0,24.31
+2026-10-06 02:02,12168559,Itf Women Singles,W35 Villeneuve d'Ascq,Hard,C. Vlasselaer,D. Mpetshi Perricard,3,0.6325000000000001,0.585,0.7289,0.5529,22.5,0.5327,0.4164,2.2,1.57,0,24.31
+2026-10-06 02:02,12168559,Itf Women Singles,W35 Villeneuve d'Ascq,Hard,C. Vlasselaer,D. Mpetshi Perricard,3,0.6325000000000001,0.585,0.7289,0.5529,23.5,0.4811,0.3866,2.38,1.5,0,24.31
+2026-10-06 02:02,12168595,Challenger Men Singles,Antofagasta,Clay,M. Tobon,T. Cigarran,3,0.6125,0.5725,0.6985,0.7459,18.5,0.8045,0.5989,1.52,2.27,0,24.26
+2026-10-06 02:02,12168595,Challenger Men Singles,Antofagasta,Clay,M. Tobon,T. Cigarran,3,0.6125,0.5725,0.6985,0.7459,19.5,0.7288,0.5383,1.69,1.97,0,24.26
+2026-10-06 02:02,12168595,Challenger Men Singles,Antofagasta,Clay,M. Tobon,T. Cigarran,3,0.6125,0.5725,0.6985,0.7459,20.5,0.6584,0.4797,1.92,1.77,1,24.26
+2026-10-06 02:02,12168595,Challenger Men Singles,Antofagasta,Clay,M. Tobon,T. Cigarran,3,0.6125,0.5725,0.6985,0.7459,21.5,0.6066,0.4313,2.11,1.6,0,24.26
+2026-10-06 02:02,12168597,Itf Men Singles,M15 Monastir 34,Hard,M. Picard,M. Chazal,3,0.5775,0.64,0.2114,0.1619,18.5,0.7793,0.511,1.78,1.86,1,23.79
+2026-10-06 02:02,12168597,Itf Men Singles,M15 Monastir 34,Hard,M. Picard,M. Chazal,3,0.5775,0.64,0.2114,0.1619,19.5,0.6973,0.4341,2.19,1.68,0,23.79
+2026-10-06 02:02,12168598,Itf Men Singles,M15 Monastir 34,Hard,A. Colombo,L. Wiedenmann,3,0.5925,0.6925,0.1072,0.3207,20.5,0.5569,0.5137,1.77,1.87,1,22.96
+2026-10-06 02:02,12168598,Itf Men Singles,M15 Monastir 34,Hard,A. Colombo,L. Wiedenmann,3,0.5925,0.6925,0.1072,0.3207,21.5,0.4964,0.4581,2.07,1.75,0,22.96
+2026-10-06 02:02,12168599,Itf Men Singles,M15 Monastir 34,Hard,R. Piatti,O. Ogunsakin,3,0.65,0.61,0.6928,0.6793,19.5,0.7723,0.5469,1.74,2.1,0,24.94
+2026-10-06 02:02,12168599,Itf Men Singles,M15 Monastir 34,Hard,R. Piatti,O. Ogunsakin,3,0.65,0.61,0.6928,0.6793,20.5,0.6983,0.4945,1.84,1.8,1,24.94
+2026-10-06 02:02,12168599,Itf Men Singles,M15 Monastir 34,Hard,R. Piatti,O. Ogunsakin,3,0.65,0.61,0.6928,0.6793,21.5,0.6469,0.457,2.02,1.7,0,24.94
+2026-10-06 02:02,12168600,Itf Women Singles,W35 Monastir 6,Hard,J. Hinojosa Gomez,A. Kmiecik,3,0.52,0.4975,0.6189,0.6416,19.5,0.7135,0.5237,1.81,1.99,1,23.97
+2026-10-06 02:02,12168600,Itf Women Singles,W35 Monastir 6,Hard,J. Hinojosa Gomez,A. Kmiecik,3,0.52,0.4975,0.6189,0.6416,20.5,0.6501,0.474,1.92,1.73,0,23.97
+2026-10-06 02:02,12168601,Itf Women Singles,W35 Monastir 6,Hard,A. Paszun,A. Granwehr,3,0.5375,0.6025,0.1959,0.2838,19.5,0.6491,0.5233,1.74,1.91,1,23.1
+2026-10-06 02:02,12168601,Itf Women Singles,W35 Monastir 6,Hard,A. Paszun,A. Granwehr,3,0.5375,0.6025,0.1959,0.2838,20.5,0.5783,0.4531,2.1,1.74,0,23.1
+2026-10-06 02:02,12168603,Itf Women Singles,W35 Monastir 6,Hard,S. Rutlauka,D. Zoldakova,3,0.52,0.5725,0.2421,0.1208,16.5,0.8942,0.5831,1.63,2.28,0,23.34
+2026-10-06 02:02,12168603,Itf Women Singles,W35 Monastir 6,Hard,S. Rutlauka,D. Zoldakova,3,0.52,0.5725,0.2421,0.1208,17.5,0.8214,0.5,1.82,1.82,1,23.34
+2026-10-06 02:02,12168603,Itf Women Singles,W35 Monastir 6,Hard,S. Rutlauka,D. Zoldakova,3,0.52,0.5725,0.2421,0.1208,18.5,0.7432,0.3955,2.4,1.57,0,23.34
+2026-10-06 02:02,12168683,Itf Women Singles,W15 Szekesfehervar (Hungary),Clay,L. Schaedel,M. Nuudi,3,0.5025000000000001,0.5650000000000001,0.2016,0.2779,19.5,0.6342,0.526,1.73,1.92,1,22.88
+2026-10-06 02:02,12168683,Itf Women Singles,W15 Szekesfehervar (Hungary),Clay,L. Schaedel,M. Nuudi,3,0.5025000000000001,0.5650000000000001,0.2016,0.2779,20.5,0.567,0.4628,2.02,1.74,0,22.88
+2026-10-06 02:02,12168685,Itf Women Singles,W50 Burgas (Bulgaria),Clay,V. Garnevska,S. Zhenikhova,3,0.4925,0.54,0.2618,0.2955,18.5,0.7436,0.587,1.59,2.26,0,23.35
+2026-10-06 02:02,12168685,Itf Women Singles,W50 Burgas (Bulgaria),Clay,V. Garnevska,S. Zhenikhova,3,0.4925,0.54,0.2618,0.2955,19.5,0.6692,0.5094,1.83,1.9,1,23.35
+2026-10-06 02:02,12168685,Itf Women Singles,W50 Burgas (Bulgaria),Clay,V. Garnevska,S. Zhenikhova,3,0.4925,0.54,0.2618,0.2955,20.5,0.6039,0.4483,2.08,1.69,0,23.35
+2026-10-06 02:02,12168686,Itf Women Singles,W50 Burgas (Bulgaria),Clay,S. Van Emst,S. Sakellaridi,3,0.58,0.58,0.5,0.5405,20.5,0.6897,0.5137,1.78,1.88,0,24.65
+2026-10-06 02:02,12168686,Itf Women Singles,W50 Burgas (Bulgaria),Clay,S. Van Emst,S. Sakellaridi,3,0.58,0.58,0.5,0.5405,21.5,0.6398,0.5,1.82,1.82,1,24.65
+2026-10-06 02:02,12168686,Itf Women Singles,W50 Burgas (Bulgaria),Clay,S. Van Emst,S. Sakellaridi,3,0.58,0.58,0.5,0.5405,22.5,0.5717,0.4395,2.13,1.67,0,24.65
+2026-10-06 02:02,12168687,Itf Women Singles,W50 Burgas (Bulgaria),Clay,I. Ivanova,D. Simionescu,3,0.5,0.47250000000000003,0.6442,0.4595,19.5,0.7074,0.5605,1.67,2.13,0,23.88
+2026-10-06 02:02,12168687,Itf Women Singles,W50 Burgas (Bulgaria),Clay,I. Ivanova,D. Simionescu,3,0.5,0.47250000000000003,0.6442,0.4595,20.5,0.6437,0.5137,1.78,1.88,1,23.88
+2026-10-06 02:02,12168687,Itf Women Singles,W50 Burgas (Bulgaria),Clay,I. Ivanova,D. Simionescu,3,0.5,0.47250000000000003,0.6442,0.4595,21.5,0.5938,0.4471,2.09,1.69,0,23.88
+2026-10-06 02:02,12168688,Itf Women Singles,W50 Burgas (Bulgaria),Clay,A. Kovackova,P. Hercog,3,0.535,0.5725,0.3091,0.4891,20.5,0.6378,0.5163,1.78,1.9,1,23.86
+2026-10-06 02:02,12168688,Itf Women Singles,W50 Burgas (Bulgaria),Clay,A. Kovackova,P. Hercog,3,0.535,0.5725,0.3091,0.4891,21.5,0.5869,0.4747,1.97,1.78,0,23.86
+2026-10-06 02:02,12168690,Itf Women Singles,W50 Burgas (Bulgaria),Clay,L. Petruzelova,J. Kovackova,3,0.49,0.5750000000000001,0.128,0.1705,17.5,0.7327,0.5733,1.63,2.19,0,21.89
+2026-10-06 02:02,12168690,Itf Women Singles,W50 Burgas (Bulgaria),Clay,L. Petruzelova,J. Kovackova,3,0.49,0.5750000000000001,0.128,0.1705,18.5,0.6419,0.4755,1.93,1.75,1,21.89
+2026-10-06 02:02,12168690,Itf Women Singles,W50 Burgas (Bulgaria),Clay,L. Petruzelova,J. Kovackova,3,0.49,0.5750000000000001,0.128,0.1705,19.5,0.5604,0.4755,1.93,1.75,0,21.89
+2026-10-06 02:02,12168421,Itf Women Singles,W35 Seville,Clay,L. Cortez Llorca,M. Teixido Garcia,3,0.56,0.445,0.9383,0.8882,15.5,0.8446,0.7045,1.3,3.1,0,20.35
+2026-10-06 02:02,12168421,Itf Women Singles,W35 Seville,Clay,L. Cortez Llorca,M. Teixido Garcia,3,0.56,0.445,0.9383,0.8882,16.5,0.7345,0.5836,1.57,2.2,0,20.35
+2026-10-06 02:02,12168421,Itf Women Singles,W35 Seville,Clay,L. Cortez Llorca,M. Teixido Garcia,3,0.56,0.445,0.9383,0.8882,17.5,0.6217,0.5,1.82,1.82,1,20.35
+2026-10-06 02:02,12168421,Itf Women Singles,W35 Seville,Clay,L. Cortez Llorca,M. Teixido Garcia,3,0.56,0.445,0.9383,0.8882,18.5,0.5228,0.4164,2.2,1.57,0,20.35
+2026-10-06 02:02,12168421,Itf Women Singles,W35 Seville,Clay,L. Cortez Llorca,M. Teixido Garcia,3,0.56,0.445,0.9383,0.8882,19.5,0.4402,0.3483,2.62,1.4,0,20.35
+2026-10-06 02:02,12168424,Itf Women Singles,W35 Seville,Clay,A. Geerlings Martinez,L. Boehner,3,0.5700000000000001,0.5075000000000001,0.7981,,16.5,0.8751,0.4767,1.91,1.74,1,22.91
+2026-10-06 02:02,12168454,Itf Women Singles,W15 Chisinau (Moldova),Clay,M. Jovanovic,E. Slavikova,3,0.4925,0.5325,0.2955,0.3457,19.5,0.6853,0.528,1.77,1.98,0,23.57
+2026-10-06 02:02,12168454,Itf Women Singles,W15 Chisinau (Moldova),Clay,M. Jovanovic,E. Slavikova,3,0.4925,0.5325,0.2955,0.3457,20.5,0.6207,0.4837,1.9,1.78,1,23.57
+2026-10-06 02:02,12168466,Itf Men Singles,M15+H Rodez,Hard,G. Brouwer,T. Trufelli,3,0.63,0.5925,0.6845,0.74,21.5,0.6293,0.4795,1.9,1.75,1,24.63
+2026-10-06 02:02,12168518,Challenger Men Singles,Palermo (Italy) - Qualification,Clay,G. Cadenasso,F. Moroni,3,0.5825,0.5475,0.6782,0.7171,18.5,0.789,0.5942,1.53,2.24,0,24.04
+2026-10-06 02:02,12168518,Challenger Men Singles,Palermo (Italy) - Qualification,Clay,G. Cadenasso,F. Moroni,3,0.5825,0.5475,0.6782,0.7171,19.5,0.7155,0.523,1.76,1.93,1,24.04
+2026-10-06 02:02,12168518,Challenger Men Singles,Palermo (Italy) - Qualification,Clay,G. Cadenasso,F. Moroni,3,0.5825,0.5475,0.6782,0.7171,20.5,0.6484,0.4672,1.95,1.71,0,24.04
+2026-10-06 02:02,12168518,Challenger Men Singles,Palermo (Italy) - Qualification,Clay,G. Cadenasso,F. Moroni,3,0.5825,0.5475,0.6782,0.7171,21.5,0.5974,0.4236,2.15,1.58,0,24.04
+2026-10-06 02:02,12168523,Itf Men Singles,M15 Pontevedra,Hard,M. Alvarez Sarmiento,D. Verbeek,3,0.64,0.635,0.5249,0.4332,20.5,0.743,0.5307,1.76,1.99,0,25.62
+2026-10-06 02:02,12168523,Itf Men Singles,M15 Pontevedra,Hard,M. Alvarez Sarmiento,D. Verbeek,3,0.64,0.635,0.5249,0.4332,21.5,0.695,0.4767,1.91,1.74,1,25.62
+2026-10-06 02:02,12168530,Itf Men Singles,M15 Pontevedra,Hard,A. Garcia,T. Curras Abasolo,3,0.595,0.6375000000000001,0.2939,0.4852,20.5,0.6771,0.528,1.77,1.98,0,24.59
+2026-10-06 02:02,12168530,Itf Men Singles,M15 Pontevedra,Hard,A. Garcia,T. Curras Abasolo,3,0.595,0.6375000000000001,0.2939,0.4852,21.5,0.6249,0.4773,1.96,1.79,1,24.59
+2026-10-06 02:02,12168542,Itf Women Singles,W35 Lagos,Hard,Y. Kotliar,E. Jurna,3,0.605,0.505,0.9074,0.9505,16.5,0.8046,0.4827,1.94,1.81,1,21.36
+2026-10-06 02:02,12168543,Itf Women Singles,W35 Lagos,Hard,K. Kujovic,C. Moccia,3,0.5375,0.59,0.2438,0.4134,19.5,0.6778,0.5643,1.66,2.15,0,23.5
+2026-10-06 02:02,12168543,Itf Women Singles,W35 Lagos,Hard,K. Kujovic,C. Moccia,3,0.5375,0.59,0.2438,0.4134,20.5,0.609,0.5,1.88,1.88,1,23.5
+2026-10-06 02:02,12168543,Itf Women Singles,W35 Lagos,Hard,K. Kujovic,C. Moccia,3,0.5375,0.59,0.2438,0.4134,21.5,0.557,0.4509,2.07,1.7,0,23.5
+2026-10-06 02:02,12168545,Itf Women Singles,W35 Lagos,Hard,B. Brown,A. Arifullina,3,0.525,0.5700000000000001,0.2744,0.0935,15.5,0.9544,0.5266,1.78,1.98,1,23.6
+2026-10-06 02:02,12168546,Itf Women Singles,W35 Lagos,Hard,C. Cervino Ruiz,C. Lopez Martinez,3,0.535,0.545,0.4468,0.7162,16.5,0.9279,0.6856,1.33,2.9,0,24.24
+2026-10-06 02:02,12168546,Itf Women Singles,W35 Lagos,Hard,C. Cervino Ruiz,C. Lopez Martinez,3,0.535,0.545,0.4468,0.7162,17.5,0.8694,0.6517,1.4,2.62,0,24.24
+2026-10-06 02:02,12168546,Itf Women Singles,W35 Lagos,Hard,C. Cervino Ruiz,C. Lopez Martinez,3,0.535,0.545,0.4468,0.7162,18.5,0.8014,0.5707,1.64,2.18,0,24.24
+2026-10-06 02:02,12168546,Itf Women Singles,W35 Lagos,Hard,C. Cervino Ruiz,C. Lopez Martinez,3,0.535,0.545,0.4468,0.7162,19.5,0.7314,0.5233,1.74,1.91,1,24.24
+2026-10-06 02:02,12168546,Itf Women Singles,W35 Lagos,Hard,C. Cervino Ruiz,C. Lopez Martinez,3,0.535,0.545,0.4468,0.7162,20.5,0.6676,0.423,2.21,1.62,0,24.24
+2026-10-06 02:02,12168546,Itf Women Singles,W35 Lagos,Hard,C. Cervino Ruiz,C. Lopez Martinez,3,0.535,0.545,0.4468,0.7162,21.5,0.618,0.3995,2.3,1.53,0,24.24
+2026-10-06 02:02,12168547,Itf Women Singles,W35 Lagos,Hard,K. Lazarenko,P. Cembranos,3,0.5525,0.54,0.5662,0.526,17.5,0.8708,0.6517,1.4,2.62,0,24.26
+2026-10-06 02:02,12168547,Itf Women Singles,W35 Lagos,Hard,K. Lazarenko,P. Cembranos,3,0.5525,0.54,0.5662,0.526,18.5,0.8027,0.6345,1.44,2.5,0,24.26
+2026-10-06 02:02,12168547,Itf Women Singles,W35 Lagos,Hard,K. Lazarenko,P. Cembranos,3,0.5525,0.54,0.5662,0.526,19.5,0.7324,0.5605,1.67,2.13,0,24.26
+2026-10-06 02:02,12168547,Itf Women Singles,W35 Lagos,Hard,K. Lazarenko,P. Cembranos,3,0.5525,0.54,0.5662,0.526,20.5,0.6682,0.5165,1.76,1.88,1,24.26
+2026-10-06 02:02,12168547,Itf Women Singles,W35 Lagos,Hard,K. Lazarenko,P. Cembranos,3,0.5525,0.54,0.5662,0.526,21.5,0.6185,0.4471,2.09,1.69,0,24.26
+2026-10-06 02:02,12168547,Itf Women Singles,W35 Lagos,Hard,K. Lazarenko,P. Cembranos,3,0.5525,0.54,0.5662,0.526,22.5,0.5541,0.3995,2.3,1.53,0,24.26
+2026-10-06 02:02,12168548,Itf Women Singles,W35 Lagos,Hard,R. Munk Mortensen,T. Jialin,3,0.5375,0.5700000000000001,0.3329,0.5,18.5,0.7857,0.6517,1.4,2.62,0,23.99
+2026-10-06 02:02,12168548,Itf Women Singles,W35 Lagos,Hard,R. Munk Mortensen,T. Jialin,3,0.5375,0.5700000000000001,0.3329,0.5,19.5,0.713,0.5836,1.57,2.2,0,23.99
+2026-10-06 02:02,12168548,Itf Women Singles,W35 Lagos,Hard,R. Munk Mortensen,T. Jialin,3,0.5375,0.5700000000000001,0.3329,0.5,20.5,0.647,0.5253,1.78,1.97,1,23.99
+2026-10-06 02:02,12168548,Itf Women Singles,W35 Lagos,Hard,R. Munk Mortensen,T. Jialin,3,0.5375,0.5700000000000001,0.3329,0.5,21.5,0.5964,0.4747,1.97,1.78,0,23.99
+2026-10-06 02:02,12168548,Itf Women Singles,W35 Lagos,Hard,R. Munk Mortensen,T. Jialin,3,0.5375,0.5700000000000001,0.3329,0.5,22.5,0.5321,0.4164,2.2,1.57,0,23.99
+2026-10-06 02:02,12168549,Itf Women Singles,W35 Santa Margherita di Pula 9,Clay,E. Bennemann,Y. Ezzat,3,0.525,0.47000000000000003,0.7701,0.8372,17.5,0.8038,0.5943,1.57,2.3,0,23.07
+2026-10-06 02:02,12168549,Itf Women Singles,W35 Santa Margherita di Pula 9,Clay,E. Bennemann,Y. Ezzat,3,0.525,0.47000000000000003,0.7701,0.8372,18.5,0.7245,0.5165,1.76,1.88,1,23.07
+2026-10-06 02:02,12168549,Itf Women Singles,W35 Santa Margherita di Pula 9,Clay,E. Bennemann,Y. Ezzat,3,0.525,0.47000000000000003,0.7701,0.8372,19.5,0.6488,0.4331,2.16,1.65,0,23.07
+2026-10-06 02:02,12168557,Itf Women Singles,W35 Villeneuve d'Ascq,Hard,M. Villet,K. Chiarello,3,0.5725,0.5650000000000001,0.5394,0.3119,19.5,0.7471,0.5245,1.75,1.93,1,24.5
+2026-10-06 02:02,12168557,Itf Women Singles,W35 Villeneuve d'Ascq,Hard,M. Villet,K. Chiarello,3,0.5725,0.5650000000000001,0.5394,0.3119,20.5,0.6814,0.4615,2.03,1.74,0,24.5
+2026-10-06 02:02,12168558,Itf Women Singles,W35 Villeneuve d'Ascq,Hard,S. Iliev,H. Bougouffa,3,0.56,0.52,0.7035,0.786,18.5,0.7662,0.5464,1.71,2.06,0,23.69
+2026-10-06 02:02,12168558,Itf Women Singles,W35 Villeneuve d'Ascq,Hard,S. Iliev,H. Bougouffa,3,0.56,0.52,0.7035,0.786,19.5,0.6927,0.4734,1.98,1.78,1,23.69
+2026-10-06 02:02,12168590,Challenger Men Singles,Antofagasta,Clay,J. Aguilar Cardozo,N. Villalon,3,0.605,0.535,0.8217,0.846,17.5,0.8004,0.5911,1.57,2.27,0,22.9
+2026-10-06 02:02,12168590,Challenger Men Singles,Antofagasta,Clay,J. Aguilar Cardozo,N. Villalon,3,0.605,0.535,0.8217,0.846,18.5,0.7153,0.5376,1.72,2.0,1,22.9
+2026-10-06 02:02,12168590,Challenger Men Singles,Antofagasta,Clay,J. Aguilar Cardozo,N. Villalon,3,0.605,0.535,0.8217,0.846,19.5,0.6343,0.4624,2.0,1.72,0,22.9
+2026-10-06 02:02,12168590,Challenger Men Singles,Antofagasta,Clay,J. Aguilar Cardozo,N. Villalon,3,0.605,0.535,0.8217,0.846,20.5,0.563,0.4026,2.3,1.55,0,22.9
+2026-10-06 02:02,12168591,Challenger Men Singles,Antofagasta,Clay,G. Heide,M. Zeitune,3,0.685,0.5775,0.9113,0.8283,19.5,0.5974,0.589,1.57,2.25,0,22.33
+2026-10-06 02:02,12168591,Challenger Men Singles,Antofagasta,Clay,G. Heide,M. Zeitune,3,0.685,0.5775,0.9113,0.8283,20.5,0.5102,0.4973,1.87,1.85,1,22.33
+2026-10-06 02:02,12168591,Challenger Men Singles,Antofagasta,Clay,G. Heide,M. Zeitune,3,0.685,0.5775,0.9113,0.8283,21.5,0.4499,0.4533,2.05,1.7,0,22.33
+2026-10-06 02:02,12168592,Challenger Men Singles,Antofagasta,Clay,B. Munk Mesa,J. Reis Da Silva,3,0.5725,0.6575,0.1393,0.2168,18.5,0.7308,0.589,1.57,2.25,0,22.99
+2026-10-06 02:02,12168592,Challenger Men Singles,Antofagasta,Clay,B. Munk Mesa,J. Reis Da Silva,3,0.5725,0.6575,0.1393,0.2168,19.5,0.6418,0.5148,1.8,1.91,1,22.99
+2026-10-06 02:02,12168592,Challenger Men Singles,Antofagasta,Clay,B. Munk Mesa,J. Reis Da Silva,3,0.5725,0.6575,0.1393,0.2168,20.5,0.5614,0.4541,2.02,1.68,0,22.99
+2026-10-06 02:02,12168592,Challenger Men Singles,Antofagasta,Clay,B. Munk Mesa,J. Reis Da Silva,3,0.5725,0.6575,0.1393,0.2168,21.5,0.5043,0.411,2.25,1.57,0,22.99
+2026-10-06 02:02,12168593,Challenger Men Singles,Antofagasta,Clay,J. Pereira,L. Midon,3,0.56,0.6275000000000001,0.1906,0.1573,17.5,0.8304,0.5974,1.55,2.3,0,23.34
+2026-10-06 02:02,12168593,Challenger Men Singles,Antofagasta,Clay,J. Pereira,L. Midon,3,0.56,0.6275000000000001,0.1906,0.1573,18.5,0.7477,0.527,1.75,1.95,1,23.34
+2026-10-06 02:02,12168593,Challenger Men Singles,Antofagasta,Clay,J. Pereira,L. Midon,3,0.56,0.6275000000000001,0.1906,0.1573,19.5,0.6655,0.4599,2.02,1.72,0,23.34
+2026-10-06 02:02,12168593,Challenger Men Singles,Antofagasta,Clay,J. Pereira,L. Midon,3,0.56,0.6275000000000001,0.1906,0.1573,20.5,0.5911,0.4026,2.3,1.55,0,23.34
+2026-10-06 02:02,12168594,Challenger Men Singles,Antofagasta,Clay,J. C. Prado Angelo,J. E. Schiessl,3,0.6225,0.5700000000000001,0.7518,0.7377,19.5,0.7068,0.5308,1.75,1.98,0,23.93
+2026-10-06 02:02,12168594,Challenger Men Singles,Antofagasta,Clay,J. C. Prado Angelo,J. E. Schiessl,3,0.6225,0.5700000000000001,0.7518,0.7377,20.5,0.6343,0.4692,1.98,1.75,1,23.93
+2026-10-06 02:02,12168594,Challenger Men Singles,Antofagasta,Clay,J. C. Prado Angelo,J. E. Schiessl,3,0.6225,0.5700000000000001,0.7518,0.7377,21.5,0.5812,0.4297,2.15,1.62,0,23.93
+2026-10-06 02:02,12168678,Itf Men Singles,M15 Burgas (Bulgaria),Clay,M. Ivanov,A. Vasilev,3,0.5325,0.6025,0.1779,0.145,17.5,0.7981,0.5383,1.69,1.97,1,22.87
+2026-10-06 02:02,12168678,Itf Men Singles,M15 Burgas (Bulgaria),Clay,M. Ivanov,A. Vasilev,3,0.5325,0.6025,0.1779,0.145,18.5,0.713,0.4617,1.97,1.69,0,22.87
+2026-10-06 02:02,12168681,Itf Women Singles,W15 Szekesfehervar (Hungary),Clay,B. Fruhvirtova,K. Mrazikova,3,0.52,0.4925,0.6442,0.7515,18.5,0.7778,0.5605,1.67,2.13,0,23.87
+2026-10-06 02:02,12168681,Itf Women Singles,W15 Szekesfehervar (Hungary),Clay,B. Fruhvirtova,K. Mrazikova,3,0.52,0.4925,0.6442,0.7515,19.5,0.7066,0.5055,1.8,1.84,1,23.87
+2026-10-06 02:02,12168682,Itf Women Singles,W15 Szekesfehervar (Hungary),Clay,D. Popovski,A. Tkachenko,3,0.51,0.5175,0.4598,0.8706,17.5,0.8639,0.5383,1.69,1.97,1,24.15
+2026-10-06 02:02,12168682,Itf Women Singles,W15 Szekesfehervar (Hungary),Clay,D. Popovski,A. Tkachenko,3,0.51,0.5175,0.4598,0.8706,18.5,0.7956,0.4617,1.97,1.69,0,24.15
