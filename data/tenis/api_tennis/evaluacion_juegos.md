@@ -1,14 +1,14 @@
 # Más/menos juegos en directo: apuestas en papel
 
-Partidos acabados con cuota de juegos en el registro: **367**. Una apuesta por partido (se agrupa por partido). Cuota = la de la API en esa pasada, no la de Luckia. Con menos de 20 apuestas el número no significa nada.
+Partidos acabados con cuota de juegos en el registro: **381**. Una apuesta por partido (se agrupa por partido). Cuota = la de la API en esa pasada, no la de Luckia. Con menos de 20 apuestas el número no significa nada.
 
 | estrategia | apuestas | aciertos | beneficio medio | sigmas |
 |---|---|---|---|---|
-| **señal: vigilar el menos** | 89 | 67% | +20.6% | +2.19 |
-| control: siempre el menos (1ª pasada) | 367 | 50% | -6.9% | -1.41 |
-| control: siempre el más (1ª pasada) | 367 | 50% | -7.5% | -1.54 |
+| **señal: vigilar el menos** | 93 | 68% | +22.0% | +2.38 |
+| control: siempre el menos (1ª pasada) | 381 | 50% | -6.9% | -1.44 |
+| control: siempre el más (1ª pasada) | 381 | 50% | -7.6% | -1.58 |
 
-Brier del 'más' en la línea principal (1ª pasada): modelo 0.2705, mercado 0.2516 (menor es mejor). El modelo da al más +13.3% sobre lo que pasa de verdad.
+Brier del 'más' en la línea principal (1ª pasada): modelo 0.2701, mercado 0.2515 (menor es mejor). El modelo da al más +13.2% sobre lo que pasa de verdad.
 
 ## Señales
 
@@ -97,12 +97,16 @@ Brier del 'más' en la línea principal (1ª pasada): modelo 0.2705, mercado 0.2
 | WTA 1000 Beijing: C. Gauff vs X. Sun | 25.5 | 1.91 | 19 | gana |
 | Challenger Wuning 3 (China): L. Castelnuovo vs A. Santillan | 27.5 | 1.67 | 31 | pierde |
 | Challenger Braga: G. Marques vs N. Sanchez Izquierdo | 20.5 | 1.83 | 19 | gana |
+| WTA 125 Suzhou: H. Guo vs A. Falei | 26.5 | 1.80 | 35 | pierde |
+| WTA 125 Suzhou: M. Uchijima vs Z. Bai | 28.5 | 2.50 | 28 | gana |
 | WTA 125 Suzhou: R. Zhang vs T. Prozorova | 22.5 | 1.83 | 27 | pierde |
 | ATP Shanghai: L. Sonego vs A. Dougaz | 35.5 | 1.36 | 35 | gana |
 | ATP Shanghai: L. Pavlovic vs I. Simakin | 28.5 | 3.00 | 27 | gana |
 | ATP Shanghai: M. Zheng vs F. A. Gomez | 31.5 | 2.00 | 31 | gana |
 | WTA 125 Suzhou: H. Shi vs Y. Yang | 22.5 | 2.00 | 23 | pierde |
 | WTA 125 Samsun: D. Galfi vs J. Grabher | 21.5 | 1.83 | 19 | gana |
+| ATP Shanghai: R. Te vs I. Simakin | 21.5 | 1.91 | 17 | gana |
+| WTA 125 Suzhou: O. Oliynykova vs W. Zheng | 16.5 | 1.73 | 16 | gana |
 
 ## Reglas del vigilante (desde el 01/10 solo en papel)
 
@@ -115,11 +119,11 @@ Brier del 'más' en la línea principal (1ª pasada): modelo 0.2705, mercado 0.2
 
 ## Previos (antes de empezar), línea principal de juegos y ganador
 
-490 partidos. Juegos (más de la línea principal), Brier (menor es mejor): modelo 0.2732, modelo corregido con el historial 0.2550, casa 0.2506. Pasó el más en el 50%.
-Ganador (490): acierto modelo 66%, casa 71%.
+503 partidos. Juegos (más de la línea principal), Brier (menor es mejor): modelo 0.2730, modelo corregido con el historial 0.2543, casa 0.2505. Pasó el más en el 50%.
+Ganador (503): acierto modelo 67%, casa 71%.
 
 ## Aprendizaje (recalibración del modelo)
 
-Partidos resueltos: 295 (2101 líneas). Activa: **sí** (hace falta 30+ partidos y que mejore a la CASA en partidos que no vio).
-**Apostando con lo aprendido, día a día** (cada día aprende solo de los anteriores): 193 apuestas, aciertos 48%, beneficio medio -11.7%, -1.73 sigmas.
-Brier (menor es mejor): modelo 0.2690, modelo con el saque de hoy 0.2604, casa 0.2447, recalibrado (validado por partidos) 0.2338. Sesgo del modelo hacia el más: +18.4%.
+Partidos resueltos: 309 (2218 líneas). Activa: **sí** (hace falta 30+ partidos y que mejore a la CASA en partidos que no vio).
+**Apostando con lo aprendido, día a día** (cada día aprende solo de los anteriores): 206 apuestas, aciertos 48%, beneficio medio -12.0%, -1.83 sigmas.
+Brier (menor es mejor): modelo 0.2683, modelo con el saque de hoy 0.2598, casa 0.2449, recalibrado (validado por partidos) 0.2338. Sesgo del modelo hacia el más: +18.2%.
