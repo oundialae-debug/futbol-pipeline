@@ -1,4 +1,4 @@
-# Tenis en directo, 06/10/2026 04:14 UTC (06:14 en España)
+# Tenis en directo, 06/10/2026 04:30 UTC (06:30 en España)
 
 Calculadora desde el marcador exacto (modelo de puntos, superficie real) frente a la cuota en directo
 (sin margen). Ganador y sets: la calculadora suele coincidir con la casa. Total de juegos: el modelo
@@ -7,15 +7,14 @@ Se actualiza cada ~5 min; el registro en data/tenis/api_tennis/registro/ servir�
 
 | partido | tipo | superficie | marcador (sets, juegos, puntos, saca) | gana 1º: modelo / cuota | sets más probables (modelo) | total juegos: línea, modelo / cuota |
 |---|---|---|---|---|---|---|
-| L. Draxl vs N. Basilashvili | Atp Singles | Hard | 0-0, 0-0, 0 - 0, saca L. Draxl | 44% / 45% | 0-2 29%, 1-2 27% | 23.5: 55% / 50% |
-| B. Tomic vs T. Skatov | Atp Singles | Hard | 0-0, 0-1, 15 - 15, saca B. Tomic | 52% /  | 2-1 27%, 2-0 25% |  |
-| A. Dougaz vs F. Cina | Atp Singles | Hard | 0-0, 0-0, 40 - A, saca A. Dougaz | 45% / 28% | 0-2 30%, 2-1 25% | 21.5: 72% / 54% |
-| R. Safiullin vs S. Mochizuki | Atp Singles | Hard | 0-0, 1-1, 30 - 0, saca R. Safiullin | 91% / 81% | 2-0 66%, 2-1 24% | 20.5: 50% / 50% |
-| O. Jasika vs M. Borisiouk | Challenger Men Singles | Hard | 1-1, 4-4, 30 - 15, saca M. Borisiouk | 62% / 73% | 2-1 62%, 1-2 38% | 28.5: 100% / 35% |
-| F. Sun vs A. Wang | Challenger Men Singles | Hard | 1-0, 0-0, A - 40, saca A. Wang | 95% / 97% | 2-0 81%, 2-1 14% | 17.5: 78% / 54% |
-| K. Smith vs H. Moriya | Challenger Men Singles | Hard | 0-0, 5-2, 0 - 0, saca H. Moriya | 88% / 88% | 2-0 65%, 2-1 23% | 19.5: 56% / 50% |
-| H. Shi vs R. Zarazua | Challenger Women Singles | Hard | 0-0, 3-4, 0 - 0, saca H. Shi | 42% / 39% | 0-2 33%, 1-2 25% | 23.5: 55% / 50% |
-| M. Uchijima vs Z. Bai | Challenger Women Singles | Hard | 1-1, 3-5, 30 - 40, saca M. Uchijima | 5% / 6% | 1-2 95%, 2-1 5% | 28.5: 36% / 62% |
-| H. Guo vs A. Falei | Challenger Women Singles | Hard | 0-1, 4-4, 0 - 15, saca H. Guo | 15% / 23% | 0-2 64%, 1-2 21% | 25.5: 50% / 51% |
-| E. Kuznetsova vs S. H. Jang | Itf Women Singles | Hard | 0-1, 1-1, A - 40, saca S. H. Jang | 16% / 25% | 0-2 54%, 1-2 29% |  |
-| M. Guo vs S. Ye | Itf Women Singles | Hard | 0-0, 2-1, 0 - 0, saca M. Guo | 67% / 90% | 2-0 40%, 2-1 26% |  |
+| L. Draxl vs N. Basilashvili | Atp Singles | Hard | 0-0, 2-1, 0 - 0, saca N. Basilashvili | 47% / 45% | 1-2 27%, 0-2 26% | 24.5: 56% / 50% |
+| B. Tomic vs T. Skatov | Atp Singles | Hard | 0-0, 3-3, 0 - 0, saca T. Skatov | 55% /  | 2-0 28%, 2-1 27% |  |
+| A. Dougaz vs F. Cina | Atp Singles | Hard | 0-0, 1-3, 0 - 15, saca A. Dougaz | 31% / 19% | 0-2 44%, 1-2 25% | 20.5: 72% / 49% |
+| R. Safiullin vs S. Mochizuki | Atp Singles | Hard | 0-0, 4-2, 30 - 40, saca R. Safiullin | 93% / 88% | 2-0 72%, 2-1 21% | 19.5: 51% / 46% |
+| K. Smith vs H. Moriya | Challenger Men Singles | Hard | 1-0, 2-1, 0 - 0, saca K. Smith | 96% / 96% | 2-0 89%, 2-1 8% | 18.5: 62% / 51% |
+| H. Shi vs R. Zarazua | Challenger Women Singles | Hard | 0-1, 0-0, 15 - 0, saca H. Shi | 26% / 23% | 0-2 48%, 1-2 27% | 21.5: 60% / 50% |
+| O. Oliynykova vs W. Zheng | Challenger Women Singles | Hard | 0-0, 0-0, 0 - 0, saca O. Oliynykova | 88% / 71% | 2-0 62%, 2-1 26% | 20.5: 49% / 49% |
+| H. Guo vs A. Falei | Challenger Women Singles | Hard | 1-1, 0-0, 0 - 0, saca H. Guo | 41% / 55% | 1-2 59%, 2-1 41% | 32.5: 51% / 46% |
+| E. Kuznetsova vs S. H. Jang | Itf Women Singles | Hard | 0-1, 3-2, 30 - 30, saca E. Kuznetsova | 21% / 29% | 0-2 41%, 1-2 38% |  |
+| M. Guo vs S. Ye | Itf Women Singles | Hard | 0-0, 4-1, 0 - 0, saca M. Guo | 77% / 93% | 2-0 52%, 2-1 25% |  |
+| L. Noskova vs E. Alexandrova | Wta Singles | Hard | 0-0, 0-0, 0 - 0, saca L. Noskova | 72% / 76% | 2-0 42%, 2-1 30% | 21.5: 63% / 49% |
