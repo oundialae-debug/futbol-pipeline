@@ -32,7 +32,8 @@ REG = "data/tenis/api_tennis/registro"
 RES = "data/tenis/api_tennis/resultados"
 CAMPOS = ["hora", "event_key", "tipo", "torneo", "superficie", "jugador1", "jugador2", "sets", "juegos", "puntos",
           "saca", "mercado", "linea", "seleccion", "cuota", "cuota_rival", "prob_mercado", "prob_modelo",
-          "prob_modelo_directo", "p_saque1", "p_saque2", "p_saque1_directo", "p_saque2_directo", "jugados"]
+          "prob_modelo_directo", "p_saque1", "p_saque2", "p_saque1_directo", "p_saque2_directo", "jugados",
+          "prob_modelo_ajustado"]
 # lo que cada jugador lleva HOY (statistics de la API), para aprender de ello (calibrar_juegos.py)
 EST = ["aces", "df", "primer_pct", "saque_gan", "saque_tot", "resto_gan", "resto_tot", "bp_salvados_gan",
        "bp_salvados_tot", "bp_convertidos_gan", "bp_convertidos_tot", "ultimos10"]
@@ -95,6 +96,9 @@ def main():
         pb2 = K.redondear(Q.saque_directo(pb, st["2"].get("saque_gan", 0), st["2"].get("saque_tot", 0)))
         r2 = r if (pa2, pb2) == (pa, pb) else K.partido_desde(pa2, pb2, e["mejor_de"], e["sa"], e["sb"], e["ga"], e["gb"],
                                                              e["a_saca"], e["xa"], e["xb"], e["previos"])
+        pa3, pb3 = (K.redondear(x) for x in Q.ajuste_juegos(p.get("event_type_type"), pa, pb))
+        r3 = K.partido_desde(pa3, pb3, e["mejor_de"], e["sa"], e["sb"], e["ga"], e["gb"], e["a_saca"], e["xa"], e["xb"],
+                             e["previos"])
         ev = vodds.get(str(p.get("event_key")), {}) if isinstance(vodds, dict) else {}
         mk = Q.mercados_directo(ev.get("live_odds"))
         base = {"hora": ahora.strftime("%Y-%m-%d %H:%M"), "event_key": p.get("event_key"),
@@ -123,7 +127,8 @@ def main():
                 filas.append({**base, "mercado": "total_juegos", "linea": linea, "seleccion": "mas",
                               "cuota": tipos["Over"], "cuota_rival": tipos["Under"], "prob_mercado": pk,
                               "prob_modelo": pm,
-                              "prob_modelo_directo": sum(x for k, x in r2["total"].items() if k > linea)})
+                              "prob_modelo_directo": sum(x for k, x in r2["total"].items() if k > linea),
+                              "prob_modelo_ajustado": sum(x for k, x in r3["total"].items() if k > linea)})
                 if pk is not None and (mejor_tot is None or abs(pk - 0.5) < abs(mejor_tot[1] - 0.5)):
                     mejor_tot = (linea, pk, pm)
             elif n == "Set Betting" and tipos:

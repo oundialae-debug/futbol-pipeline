@@ -41,6 +41,29 @@ def jugador(circ, abreviado):
     return max(cands, key=lambda j: j["dia"]) if cands else None
 
 
+AJUSTE = None
+
+
+def ajuste_juegos(tipo, pa, pb):
+    """Prob. al saque corregidas SOLO para el total de juegos (ajuste_separacion.py, elegido en 2021-23 y
+    juzgado en 2024-26): el modelo ve a los jugadores demasiado igualados y con demasiado saque, y espera
+    juegos de más. Para el ganador se sigue usando (pa, pb) sin tocar (la separación empeoraba su log-loss)."""
+    global AJUSTE
+    if AJUSTE is None:
+        import json
+        try:
+            AJUSTE = json.load(open("data/tenis/ajuste_separacion.json"))
+        except (OSError, ValueError):
+            AJUSTE = {}
+    t = str(tipo).lower()
+    clave = ("wta" if ("wta" in t or "women" in t) else "atp") + "|" + \
+        ("itf" if "itf" in t else "challenger" if "challenger" in t else "circuito")
+    kc = AJUSTE.get(clave, {"k": 1.0, "c": 0.0})
+    m, d = (pa + pb) / 2, pa - pb
+    lim = lambda x: min(max(x, 0.3), 0.92)  # noqa: E731
+    return lim(m + kc["c"] + kc["k"] * d / 2), lim(m + kc["c"] - kc["k"] * d / 2)
+
+
 K_DIRECTO = 80   # puntos de saque que "vale" la previa; fijado antes de medir (30/09/2026)
 
 

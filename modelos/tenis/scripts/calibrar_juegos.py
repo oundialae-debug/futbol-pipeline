@@ -25,7 +25,7 @@ import pandas as pd
 SAL = "data/tenis/api_tennis/calibracion_juegos.json"
 MIN_PARTIDOS = 30
 UMBRAL = 0.05
-NOMBRES = ["const", "casa", "modelo", "directo", "faltan", "itf", "challenger", "wta"]
+NOMBRES = ["const", "casa", "modelo", "directo", "faltan", "itf", "challenger", "wta", "ajustado"]
 
 
 def _logit(p):
@@ -48,10 +48,11 @@ def datos():
     d = d[d.mercado == "total_juegos"].dropna(subset=["prob_mercado", "prob_modelo"])
     d = d.merge(res[["event_key", "juegos_totales"]], on="event_key")
     d = d.dropna(subset=["juegos_totales"])
-    for c in ("prob_modelo_directo", "jugados", "saque_tot1", "saque_tot2"):
+    for c in ("prob_modelo_directo", "jugados", "saque_tot1", "saque_tot2", "prob_modelo_ajustado"):
         if c not in d:
             d[c] = np.nan
     d["prob_modelo_directo"] = d.prob_modelo_directo.fillna(d.prob_modelo)
+    d["prob_modelo_ajustado"] = pd.to_numeric(d.prob_modelo_ajustado, errors="coerce").fillna(d.prob_modelo)  # desde el 06/10
     # juegos ya jugados: columna propia desde el 01/10; antes, estimados por los puntos al saque (~6,2 por juego)
     d["jugados"] = pd.to_numeric(d.jugados, errors="coerce").fillna(
         (pd.to_numeric(d.saque_tot1, errors="coerce") + pd.to_numeric(d.saque_tot2, errors="coerce")) / 6.2)
@@ -68,10 +69,11 @@ def X(d):
     return np.column_stack([_logit(d.prob_mercado), _logit(d.prob_modelo), _logit(d.prob_modelo_directo),
                             (d.linea.astype(float) - d.jugados.astype(float)) / 10,
                             t.str.contains("itf").astype(float), t.str.contains("challenger").astype(float),
-                            (t.str.contains("wta") | t.str.contains("women")).astype(float)])
+                            (t.str.contains("wta") | t.str.contains("women")).astype(float),
+                            _logit(d.prob_modelo_ajustado if "prob_modelo_ajustado" in d else d.prob_modelo)])
 
 
-PREVIA = np.array([0, 1, 0, 0, 0, 0, 0, 0], float)     # punto de partida: la casa tal cual
+PREVIA = np.array([0, 1, 0, 0, 0, 0, 0, 0, 0], float)     # punto de partida: la casa tal cual
 
 
 def _ajustar(Xm, y, w, l2=2.0, it=60):
@@ -161,7 +163,7 @@ def cargar():
 
 def aplicar(info, fila):
     """Prob. aprendida del 'más' para una línea (fila: dict con prob_mercado, prob_modelo,
-    prob_modelo_directo, linea, jugados, tipo). Sin coeficientes válidos: la casa tal cual."""
+    prob_modelo_directo, linea, jugados, tipo, prob_modelo_ajustado). Sin coeficientes válidos: la casa tal cual."""
     if not info.get("coef") or len(info["coef"]) != len(NOMBRES):
         return float(fila["prob_mercado"])
     return float(_pred(np.array(info["coef"]), pd.DataFrame([fila]))[0])

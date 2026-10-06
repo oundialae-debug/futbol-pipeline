@@ -69,6 +69,27 @@ def previa(res):
            [("modelo", "mas_modelo"), ("modelo corregido con el historial", "mas_corregido"), ("casa", "mas_casa")]}
     out += [f"{len(p)} partidos. Juegos (más de la línea principal), Brier (menor es mejor): " +
             ", ".join(f"{k} {v:.4f}" for k, v in bri.items()) + f". Pasó el más en el {y.mean():.0%}."]
+    # reglas de PAPEL de los previos, fijadas el 06/10/2026 a las 18:00 UTC: solo cuentan partidos posteriores
+    # ("ATP circuito, el modelo da al más 10+ puntos sobre la casa" salió +38,7% en 46 partidos de Shanghái,
+    # Tokio y Pekín MIRANDO esos mismos datos: hay que verlo en partidos nuevos antes de creérselo)
+    nuevos = p[p.hora.astype(str) >= "2026-10-06 18:00"].copy()
+    if "mas_ajustado" not in nuevos:
+        nuevos["mas_ajustado"] = np.nan
+    reglas = {"previo ATP circuito: más si modelo >= casa+10": nuevos[(nuevos.tipo == "Atp Singles") &
+                                                                         (nuevos.mas_modelo - nuevos.mas_casa >= .10)].assign(lado="más"),
+              "previo ajustado vs casa >= 10 (cualquier lado)": nuevos[(nuevos.mas_ajustado - nuevos.mas_casa).abs() >= .10]
+              .assign(lado=lambda z: np.where(z.mas_ajustado > z.mas_casa, "más", "menos"))}
+    out += ["", "| regla de previo (en papel desde el 06/10 18:00) | apuestas | aciertos | beneficio medio | sigmas |",
+            "|---|---|---|---|---|"]
+    for nombre, g_ in reglas.items():
+        if len(g_):
+            g_ = g_.copy()
+            mas = g_.lado == "más"
+            g_["gana"] = np.where(mas, g_.juegos_totales > g_.linea, g_.juegos_totales < g_.linea)
+            g_["benef"] = np.where(g_.gana, np.where(mas, g_.cuota_mas, g_.cuota_menos) - 1, -1.0)
+        else:
+            g_ = pd.DataFrame(columns=["gana", "benef"])
+        out.append(resumen(nombre, g_))
     g = p.dropna(subset=["gana1_casa"])
     if len(g):
         y1 = g.sets.astype(str).str.split("-").str[0].str.strip().astype(float) > \

@@ -142,6 +142,9 @@ def lineas():
         pb2 = K.redondear(Q.saque_directo(pb, st["2"].get("saque_gan", 0), st["2"].get("saque_tot", 0)))
         r2 = r if (pa2, pb2) == (pa, pb) else K.partido_desde(pa2, pb2, e["mejor_de"], e["sa"], e["sb"], e["ga"], e["gb"],
                                                              e["a_saca"], e["xa"], e["xb"], e["previos"])
+        qa, qb = (K.redondear(z) for z in Q.ajuste_juegos(p.get("event_type_type"), pa, pb))
+        r3 = K.partido_desde(qa, qb, e["mejor_de"], e["sa"], e["sb"], e["ga"], e["gb"], e["a_saca"], e["xa"], e["xb"],
+                             e["previos"])
         TOTALES[p.get("event_key")] = (r["total"], r2["total"])
         CASA[p.get("event_key")] = {float(h): Q.sin_margen(t["Over"], t["Under"]) for (_, h), t in mk.items()}
         for (_, h), t in mk.items():
@@ -153,7 +156,8 @@ def lineas():
                           "prob_mercado": Q.sin_margen(t["Over"], t["Under"]),
                           "prob_modelo": sum(x for k, x in r["total"].items() if k > ln),
                           "prob_modelo_directo": sum(x for k, x in r2["total"].items() if k > ln),
-                          "jugados": sum(e["previos"]) + e["ga"] + e["gb"]})
+                          "jugados": sum(e["previos"]) + e["ga"] + e["gb"],
+                          "prob_modelo_ajustado": sum(x for k, x in r3["total"].items() if k > ln)})
     if not filas:
         return pd.DataFrame()
     pr = J.principales(pd.DataFrame(filas))

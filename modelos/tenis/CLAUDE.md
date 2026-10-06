@@ -559,6 +559,26 @@ Ganador en directo (615 partidos) y sets (450): todas las reglas pierden (ver
 de la cuota, se equivoca él.** Trampa encontrada: en "Set Betting", si falta un resultado (suspendido)
 la prob. sin margen de los demás se infla; usar solo pasadas con todos los posibles cotizados.
 
+## Corrección del modelo para juegos (06/10/2026)
+
+`ajuste_separacion.py` -> `data/tenis/ajuste_separacion.md/.json`. Antes del Markov:
+pa' = m + c + k·d/2, pb' = m + c − k·d/2 (m media, d diferencia de las prob. al saque), elegido por
+circuito y nivel con 2021-23 (verosimilitud del total real) y juzgado en 2024-26. Sale c = −0,04 a
+−0,06 en todos (el modelo da demasiado saque) y k = 1 en ATP, 1,25-2 en WTA. Juegos de más:
+ATP +1,4 → +0,6, Challenger +1,7 → +0,8, WTA circuito +1,7 → +1,0, ITF fem. +4,0 → +2,7. Brier en
+21,5: −2% a −6% en los seis grupos. SOLO para juegos: para el ganador la separación empeoraba el
+log-loss en WTA, así que el ganador sigue con las prob. sin tocar (`Q.ajuste_juegos`).
+Trampa encontrada: `K.partido` pone a A sacando primero; en el historial A es siempre el ganador, y
+sin simetrizar los dos órdenes el "acierto" medía en parte quién saca primero.
+El modelo de puntos casi no sabe nada de ITF femenino (sin estadísticas de saque en Sackmann: muchos
+empates exactos a 0,5); ahí manda el Elo.
+
+Contra la casa (589 previos 30/09-06/10): Brier 0,2753 → 0,2694, casa 0,2502. Mejora, sigue detrás.
+En ATP circuito (79 partidos, solo Shanghái/Tokio/Pekín) el modelo SIN corregir ganó a la casa
+(0,2264 vs 0,2501) y "más si modelo >= casa+10" daría +38,7% en 46: subgrupo elegido mirando, tres
+torneos, y contradice el historial (en ATP el modelo exagera el más). Queda como regla de papel desde
+el 06/10 18:00, junto a "ajustado vs casa >= 10".
+
 ## Plan (en este orden)
 
 1. Ganador del partido, único mercado con cierre de Pinnacle.

@@ -130,10 +130,15 @@ Brier del 'más' en la línea principal (1ª pasada): modelo 0.2693, mercado 0.2
 ## Previos (antes de empezar), línea principal de juegos y ganador
 
 589 partidos. Juegos (más de la línea principal), Brier (menor es mejor): modelo 0.2753, modelo corregido con el historial 0.2557, casa 0.2502. Pasó el más en el 50%.
+
+| regla de previo (en papel desde el 06/10 18:00) | apuestas | aciertos | beneficio medio | sigmas |
+|---|---|---|---|---|
+| previo ATP circuito: más si modelo >= casa+10 | 0 | | | |
+| previo ajustado vs casa >= 10 (cualquier lado) | 0 | | | |
 Ganador (589): acierto modelo 68%, casa 71%.
 
 ## Aprendizaje (recalibración del modelo)
 
 Partidos resueltos: 341 (2472 líneas). Activa: **sí** (hace falta 30+ partidos y que mejore a la CASA en partidos que no vio).
-**Apostando con lo aprendido, día a día** (cada día aprende solo de los anteriores): 238 apuestas, aciertos 48%, beneficio medio -11.6%, -1.91 sigmas.
-Brier (menor es mejor): modelo 0.2671, modelo con el saque de hoy 0.2580, casa 0.2445, recalibrado (validado por partidos) 0.2322. Sesgo del modelo hacia el más: +18.0%.
+**Apostando con lo aprendido, día a día** (cada día aprende solo de los anteriores): 237 apuestas, aciertos 48%, beneficio medio -11.9%, -1.96 sigmas.
+Brier (menor es mejor): modelo 0.2671, modelo con el saque de hoy 0.2580, casa 0.2445, recalibrado (validado por partidos) 0.2323. Sesgo del modelo hacia el más: +18.0%.
