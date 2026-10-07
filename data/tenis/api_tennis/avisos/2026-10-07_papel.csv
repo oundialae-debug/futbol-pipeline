@@ -159,3 +159,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-07 19:42,12168876,Challenger Men Singles,Palermo (Italy) - Qualification,G. Cadenasso,M. Giunta,menos,22.5,0.7867,0.6627,1.4,True,actual
 2026-10-07 19:42,12168876,Challenger Men Singles,Palermo (Italy) - Qualification,G. Cadenasso,M. Giunta,menos,22.5,0.6627,0.6627,1.4,True,casa65
 2026-10-07 19:49,12169063,Challenger Men Singles,Antofagasta,N. Hardt,F. Meligeni Alves,menos,21.5,0.6274,0.5,1.833,True,aprendida
+2026-10-07 21:02,12169063,Challenger Men Singles,Antofagasta,N. Hardt,F. Meligeni Alves,menos,19.5,0.6383,0.5576,1.666,True,actual
