@@ -5,7 +5,7 @@ name: Redes - descargas de la API (nombres y Champions)
 on:
   workflow_dispatch:
     inputs:
-      modo: {description: 'nombres | ucl', required: true, default: 'ucl'}
+      modo: {description: 'nombres | ucl | popularidad (Wikipedia, sin API)', required: true, default: 'ucl'}
       tope_llamadas: {description: 'Tope de llamadas', required: false, default: '400'}
       temporada: {description: 'Temporada de la Champions (2026 = 2026/27)', required: false, default: '2026'}
 

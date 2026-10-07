@@ -4,6 +4,8 @@ API todo lo que necesites" (la cuota aún es amplia; en ~1 semana pasa a 100/dí
              de cada jugador (el backfill de xG lo tiraba) -> data/redes/jugadores_nombres.csv
   ucl     -> Champions League: busca su id, lista los partidos jugados de la temporada y baja su box-score
              -> data/redes/ucl_partidos.csv, data/redes/ucl_jugadores.csv (mismas columnas que historico_xg_jugador + jugador)
+  popularidad -> NO usa Highlightly: visitas en Wikipedia (en, es, fr, de, pt) de los nominados al Balón de Oro,
+             ago-2025 a sep-2026 -> data/redes/popularidad_bdo.csv (usuario 07/10: la popularidad también vota)
 Tope con TOPE_LLAMADAS; reanudable (salta lo ya guardado)."""
 import csv, json, os, sys
 from pathlib import Path
@@ -133,5 +135,34 @@ def ucl():
     print(f"OK llamadas {B.llamadas[0]}")
 
 
+def popularidad():
+    """Visitas de Wikipedia (API pública de Wikimedia) de los nominados al Balón de Oro, sumando 5 idiomas."""
+    import urllib.parse, urllib.request
+    sys.path.insert(0, str(ROOT / "redes/plantillas"))
+    from datos_rankings import NOMINADOS_BDO
+    UA = {"User-Agent": "2yellow-bot/1.0 (https://github.com/oundialae-debug/futbol-pipeline)"}
+    js = lambda u: json.load(urllib.request.urlopen(urllib.request.Request(u, headers=UA), timeout=30))
+    filas = []
+    for nom in NOMINADOS_BDO:
+        q = urllib.parse.urlencode({"action": "query", "format": "json", "redirects": 1, "prop": "langlinks", "lllimit": 500,
+                                    "titles": nom})
+        pag = next(iter(js(f"https://en.wikipedia.org/w/api.php?{q}")["query"]["pages"].values()))
+        titulos = {"en": pag.get("title", nom)}
+        titulos.update({l["lang"]: l["*"] for l in pag.get("langlinks", []) if l["lang"] in ("es", "fr", "de", "pt")})
+        total = 0
+        for lang, t in titulos.items():
+            art = urllib.parse.quote(t.replace(" ", "_"), safe="")
+            try:
+                d = js(f"https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/{lang}.wikipedia/all-access/user/"
+                       f"{art}/monthly/2025080100/2026093000")
+                total += sum(i["views"] for i in d["items"])
+            except Exception as ex:
+                print(f"[!] {nom} {lang}: {ex}")
+        filas.append({"jugador": nom, "visitas": total, "idiomas": len(titulos)})
+        print(nom, total)
+    SAL.mkdir(parents=True, exist_ok=True)
+    pd.DataFrame(filas).to_csv(SAL / "popularidad_bdo.csv", index=False)
+
+
 if __name__ == "__main__":
-    {"nombres": nombres, "ucl": ucl}[sys.argv[1]]()
+    {"nombres": nombres, "ucl": ucl, "popularidad": popularidad}[sys.argv[1]]()

@@ -11,6 +11,10 @@ cambios de código y archivos".
   el resumen y dónde leerlo.
 - Lo más nuevo, arriba.
 
+## 07/10/2026 — redes_api: modo popularidad (Wikipedia, sin Highlightly)
+`redes_api.py popularidad`: visitas de Wikipedia (en/es/fr/de/pt, ago-25 a sep-26) de los nominados al Balón de
+Oro -> data/redes/popularidad_bdo.csv. Para el índice "Who will win it" (usuario: la popularidad también vota).
+
 ## 07/10/2026 — redes: índice del Balón de Oro, medias encogidas por minutos
 Usuario: con pocos minutos es más fácil tener buena media. Las medias por 90 (nota, G+A, xG+xA) se encogen hacia la
 media de los nominados con 1350 min de peso antes de los percentiles. Resultado: Kane 91, Olise 88, Dembélé 85
