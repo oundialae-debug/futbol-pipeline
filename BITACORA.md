@@ -11,6 +11,11 @@ cambios de código y archivos".
   el resumen y dónde leerlo.
 - Lo más nuevo, arriba.
 
+## 07/10/2026 — redes: zona segura común TikTok + Instagram
+Usuario (5ª-6ª vez): en TikTok los iconos de la derecha y la descripción tapaban datos. `generar.py`: `.safe`
+pasa a x 80-880 (right 200) y, con `LIENZO=reel`, y 318-1540 (bottom 380); el Index pone el desglose en su
+propia línea (se metía bajo la tarjeta). Comprobado con XI, Index y Upset renderizados con la caja dibujada.
+
 ## 06/10/2026 — redes: LIENZO=reel para Instagram con música
 - Qué: `generar.py` con `LIENZO=reel`: 1080x1920 con todo el contenido en la franja central 4:5 (y 318-1608).
 - Por qué: al ponerle música, Instagram convierte la foto en reel (9:16) y el feed solo enseña el centro: al XI de septiembre se le cortaron el logo y la pregunta.

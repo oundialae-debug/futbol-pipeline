@@ -122,6 +122,8 @@ def texto_sobre(c):
     return NOCHE if 0.2126 * r + 0.7152 * g + 0.0722 * b > 150 else "#FFFFFF"
 
 
+# ZONA SEGURA (usuario 07/10, "5ª o 6ª vez"): TikTok tapa la derecha (iconos: x>880) y abajo (descripción: y>1540);
+# IG con música (reel) solo enseña y 285-1635 en el feed. Todo el texto/dato dentro de x 80-880, y 318-1540 (.safe).
 CSS = f"""
 @font-face{{font-family:Archivo;src:url(data:font/woff2;base64,{b64('Archivo-latin.woff2')}) format('woff2');
  font-weight:100 900;font-stretch:62% 125%}}
@@ -130,7 +132,7 @@ body{{width:1080px;height:1920px;background:{NOCHE};color:#F1F3F8;font-family:Ar
 #v{{position:relative;width:1080px;height:1920px;overflow:hidden;
  background:radial-gradient(1100px 900px at 0% 0%,color-mix(in srgb,var(--c1) 62%,transparent),transparent 70%),
             radial-gradient(1100px 900px at 100% 0%,color-mix(in srgb,var(--c2) 58%,transparent),transparent 70%),{NOCHE}}}
-.safe{{position:absolute;left:80px;right:140px;top:185px;bottom:380px;display:flex;flex-direction:column}}
+.safe{{position:absolute;left:80px;right:200px;top:185px;bottom:380px;display:flex;flex-direction:column}}
 .top{{display:flex;justify-content:space-between;align-items:center}}
 .top img{{height:80px;margin-left:-14px}}
 .chip{{font-size:30px;font-weight:700;letter-spacing:2px;color:#C9CED9;text-transform:uppercase}}
@@ -191,8 +193,8 @@ IG45 = os.environ.get("LIENZO") == "4x5"
 IGREEL = os.environ.get("LIENZO") == "reel"
 ALTO = 1350 if IG45 else 1920
 CSS_IG45 = (("body,#v{height:1350px!important}" if IG45 else "")
-            + ".safe{top:%dpx!important;bottom:%dpx!important;right:80px!important}.num{font-size:230px!important}"
-            % ((56, 48) if IG45 else (318, 312))) if (IG45 or IGREEL) else ""
+            + ".safe{top:%dpx!important;bottom:%dpx!important;right:%dpx!important}.num{font-size:230px!important}"
+            % ((56, 48, 80) if IG45 else (318, 380, 200))) if (IG45 or IGREEL) else ""
 SIN_SWIPE = {"follow", "our_calls", "picks_list", "head_to_head", "ranking", "xi", "indice"}
 SWIPE = (f'<span style="display:inline-flex;align-items:center;gap:10px;background:{AMARILLO};color:{NOCHE};'
          f'border-radius:999px;padding:8px 22px;font-size:34px;font-weight:900;font-stretch:85%">Swipe'
@@ -622,9 +624,10 @@ def indice(d):
                   f'<div style="flex:1;min-width:0"><div style="font-size:46px;font-weight:900;font-stretch:85%;white-space:nowrap;'
                   f'overflow:hidden;text-overflow:ellipsis">{e(r["name"])}</div>'
                   f'<div style="display:flex;align-items:center;gap:8px;font-size:28px;color:#AEB5C4;white-space:nowrap">'
-                  f'<span style="width:14px;height:14px;border-radius:50%;background:{c}"></span>{e(r.get("team", ""))}'
-                  f'<span style="color:{GRIS}">·</span>{e(r.get("detail", ""))}</div></div>'
-                  f'{tarjeta(r["value"], grande=(i == 0), color=AMARILLO if i == 0 else "#F1F3F8")}</div>')
+                  f'<span style="width:14px;height:14px;border-radius:50%;background:{c}"></span>{e(r.get("team", ""))}</div>'
+                  # el desglose en su propia línea: en una sola se metía debajo de la tarjeta (07/10)
+                  f'<div style="font-size:26px;color:#8B93A5;margin-top:2px">{e(r.get("detail", ""))}</div></div>'
+                  f'<div style="padding-right:16px">{tarjeta(r["value"], grande=(i == 0), color=AMARILLO if i == 0 else "#F1F3F8")}</div></div>')
     cuerpo = (f'<div class="frase">{d["title"]}</div>'
               + (f'<div class="mini" style="font-size:30px">{e(d["metric"])}</div>' if d.get("metric") else "")
               + f'<div>{filas}</div>')
