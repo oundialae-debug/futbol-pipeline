@@ -57,3 +57,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-07 09:35,12168284,Atp Singles,Shanghai,Y. Hanfmann,K. Majchrzak,más,38.5,0.588,0.4634,2.0,True,aprendida
 2026-10-07 09:35,12168873,Atp Singles,Shanghai,R. Hijikata,R. Safiullin,menos,21.5,0.6876,0.6876,1.363,True,casa65
 2026-10-07 09:37,12168907,Challenger Women Singles,Samsun,L. Stefanini,N. Noha Akugue,menos,21.5,0.6334,0.5,1.833,True,aprendida
+2026-10-07 09:49,12168441,Challenger Men Singles,Villena,H. Barton,T. Samuel,menos,20.5,0.58,0.5,1.833,True,aprendida
