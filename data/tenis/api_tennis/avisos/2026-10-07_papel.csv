@@ -100,3 +100,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-07 12:22,12168067,Challenger Men Singles,Braga,T. Pereira,P. Martin Tiffon,menos,22.5,0.6392,0.5,1.833,True,aprendida
 2026-10-07 12:22,12168281,Atp Singles,Shanghai,A. Fery,M. Cilic,menos,23.5,0.5818,0.5147,1.8,True,aprendida
 2026-10-07 12:22,12168319,Wta Singles,Beijing,A. Charaeva,Q. Zheng,menos,24.5,0.5741,0.4853,1.909,True,aprendida
+2026-10-07 12:22,12168431,Challenger Women Singles,Samsun,P. Iatcenko,D. Galfi,menos,22.5,0.6105,0.5147,1.8,True,aprendida
