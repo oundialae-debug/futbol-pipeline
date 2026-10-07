@@ -1,4 +1,4 @@
-# Tenis en directo, 07/10/2026 16:22 UTC (18:22 en España)
+# Tenis en directo, 07/10/2026 16:40 UTC (18:40 en España)
 
 Calculadora desde el marcador exacto (modelo de puntos, superficie real) frente a la cuota en directo
 (sin margen). Ganador y sets: la calculadora suele coincidir con la casa. Total de juegos: el modelo
@@ -7,16 +7,13 @@ Se actualiza cada ~5 min; el registro en data/tenis/api_tennis/registro/ servir�
 
 | partido | tipo | superficie | marcador (sets, juegos, puntos, saca) | gana 1º: modelo / cuota | sets más probables (modelo) | total juegos: línea, modelo / cuota |
 |---|---|---|---|---|---|---|
-| M. Pucinelli de Almeida vs G. A. Olivieri | Challenger Men Singles | Clay | 1-0, 0-1, 0 - 0, saca M. Pucinelli de Almeida | 93% / 84% | 2-0 68%, 2-1 24% | 21.5: 40% / 49% |
-| F. Broska vs L. Neumayer | Challenger Men Singles | Clay | 0-0, 2-2, 40 - 40, saca L. Neumayer | 40% / 28% | 0-2 31%, 1-2 28% | 22.5: 62% / 50% |
-| O. Krutykh vs J. Barranco Cosano | Challenger Men Singles | Clay | 1-1, 5-3, 30 - 40, saca O. Krutykh | 76% / 79% | 2-1 76%, 1-2 24% | 26.5: 62% / 46% |
-| S. Nagal vs L. Mikrut | Challenger Men Singles | Clay | 0-0, 2-4, 40 - 40, saca L. Mikrut | 17% / 27% | 0-2 58%, 1-2 25% | 20.5: 59% / 51% |
-| A. Urrea vs M. Echazu | Itf Men Singles | Clay | 0-1, 1-1, 15 - 0, saca M. Echazu | 29% / 21% | 0-2 44%, 2-1 29% |  |
-| A. Braynin vs H. Cardinaud | Itf Men Singles | Hard | 1-0, 5-2, 0 - 0, saca H. Cardinaud | 99% / 96% | 2-0 97%, 2-1 2% |  |
-| A. Reco vs R. Andres | Itf Men Singles | Hard | 1-1, 6-5, 0 - 0, saca R. Andres | 68% / 78% | 2-1 68%, 1-2 32% |  |
-| K. Rinaldo Persson vs E. Burgic | Itf Women Singles | Hard | 0-0, 0-0, 30 - 0, saca K. Rinaldo Persson | 74% / 79% | 2-0 45%, 2-1 28% |  |
-| L. Perez Alarcon vs M. Slama | Itf Women Singles | Hard | 0-0, 1-1, 30 - 15, saca M. Slama | 87% / 78% | 2-0 61%, 2-1 26% |  |
-| B. Bergkvist Larsson vs V. Hu | Itf Women Singles | Hard | 1-1, 1-0, 0 - 0, saca V. Hu | 57% / 48% | 2-1 57%, 1-2 43% |  |
-| V. Savinykh vs L. Cabrera | Itf Women Singles | Hard | 1-1, 0-0, 0 - 0, saca L. Cabrera | 35% / 28% | 1-2 65%, 2-1 35% |  |
-| D. Martynov vs S. Dal | Itf Women Singles | Hard | 0-1, 1-5, 30 - 15, saca S. Dal | 1% / 5% | 0-2 98%, 1-2 1% |  |
-| A. Burchak vs V. Steiner | Itf Women Singles | Hard | 0-0, 1-3, 15 - 40, saca A. Burchak | 6% / 6% | 0-2 75%, 1-2 19% |  |
+| M. Pucinelli de Almeida vs G. A. Olivieri | Challenger Men Singles | Clay | 1-0, 3-2, 30 - 15, saca M. Pucinelli de Almeida | 98% / 95% | 2-0 90%, 2-1 8% | 18.5: 49% / 51% |
+| F. Broska vs L. Neumayer | Challenger Men Singles | Clay | 0-0, 5-4, 15 - 0, saca F. Broska | 63% / 48% | 2-0 39%, 1-2 32% | 26.5: 52% / 54% |
+| S. Nagal vs L. Mikrut | Challenger Men Singles | Clay | 0-1, 1-0, 40 - 15, saca L. Mikrut | 20% / 27% | 0-2 43%, 1-2 37% | 20.5: 68% / 51% |
+| A. Urrea vs M. Echazu | Itf Men Singles | Clay | 0-1, 2-2, 40 - 30, saca M. Echazu | 32% / 25% | 0-2 37%, 2-1 32% |  |
+| K. Rinaldo Persson vs E. Burgic | Itf Women Singles | Hard | 0-0, 2-2, 15 - 0, saca K. Rinaldo Persson | 72% / 79% | 2-0 43%, 2-1 29% |  |
+| L. Perez Alarcon vs M. Slama | Itf Women Singles | Hard | 0-0, 4-1, A - 40, saca L. Perez Alarcon | 94% / 88% | 2-0 76%, 2-1 18% |  |
+| Y. Naito vs A. Nguyen | Itf Women Singles | Hard | 0-0, 0-1, 15 - 40, saca Y. Naito | 78% / 53% | 2-0 41%, 2-1 36% |  |
+| B. Bergkvist Larsson vs V. Hu | Itf Women Singles | Hard | 1-1, 4-0, 0 - 30, saca B. Bergkvist Larsson | 91% / 83% | 2-1 91%, 1-2 9% |  |
+| V. Savinykh vs L. Cabrera | Itf Women Singles | Hard | 1-1, 1-1, 15 - 40, saca V. Savinykh | 24% / 23% | 1-2 76%, 2-1 24% |  |
+| A. Burchak vs V. Steiner | Itf Women Singles | Hard | 0-1, 1-0, 0 - 0, saca V. Steiner | 7% / 6% | 0-2 70%, 1-2 23% |  |
