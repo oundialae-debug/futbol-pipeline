@@ -128,3 +128,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-07 14:10,12168442,Challenger Men Singles,Villena,E. Butvilas,M. H. Rehberg,menos,26.5,0.6876,0.6876,1.363,True,casa65
 2026-10-07 14:22,12168442,Challenger Men Singles,Villena,E. Butvilas,M. H. Rehberg,más,26.5,0.5289,0.3124,3.0,True,aprendida
 2026-10-07 14:27,12168968,Challenger Men Singles,Palermo (Italy) - Qualification,A. Martin,A. Moro Canas,menos,15.5,0.854,0.854,1.111,True,casa65
+2026-10-07 14:28,12168293,Atp Singles,Shanghai,H. Rune,D. Altmaier,menos,20.5,0.6627,0.6627,1.4,True,casa65
