@@ -68,6 +68,162 @@
       "source_location": "L87"
     },
     {
+      "id": "modelos_selecciones_nations_league_aplanar",
+      "label": "aplanar()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "contraste_directo.py",
+      "file_type": "code",
+      "norm_label": "aplanar()",
+      "source_file": "modelos/selecciones/nations_league.py",
+      "source_location": "L226"
+    },
+    {
+      "id": "modelos_selecciones_nations_league_calendario",
+      "label": "calendario()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "contraste_directo.py",
+      "file_type": "code",
+      "norm_label": "calendario()",
+      "source_file": "modelos/selecciones/nations_league.py",
+      "source_location": "L121"
+    },
+    {
+      "id": "modelos_selecciones_nations_league_clave",
+      "label": "clave()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "contraste_directo.py",
+      "file_type": "code",
+      "norm_label": "clave()",
+      "source_file": "modelos/selecciones/nations_league.py",
+      "source_location": "L106"
+    },
+    {
+      "id": "modelos_selecciones_nations_league_detalles",
+      "label": "detalles()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "contraste_directo.py",
+      "file_type": "code",
+      "norm_label": "detalles()",
+      "source_file": "modelos/selecciones/nations_league.py",
+      "source_location": "L158"
+    },
+    {
+      "id": "modelos_selecciones_nations_league_historial",
+      "label": "historial()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "contraste_directo.py",
+      "file_type": "code",
+      "norm_label": "historial()",
+      "source_file": "modelos/selecciones/nations_league.py",
+      "source_location": "L148"
+    },
+    {
+      "id": "modelos_selecciones_nations_league_lista",
+      "label": "lista()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "contraste_directo.py",
+      "file_type": "code",
+      "norm_label": "lista()",
+      "source_file": "modelos/selecciones/nations_league.py",
+      "source_location": "L82"
+    },
+    {
+      "id": "modelos_selecciones_nations_league_main",
+      "label": "main()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "contraste_directo.py",
+      "file_type": "code",
+      "norm_label": "main()",
+      "source_file": "modelos/selecciones/nations_league.py",
+      "source_location": "L273"
+    },
+    {
+      "id": "modelos_selecciones_nations_league_marcador",
+      "label": "marcador()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "contraste_directo.py",
+      "file_type": "code",
+      "norm_label": "marcador()",
+      "source_file": "modelos/selecciones/nations_league.py",
+      "source_location": "L97"
+    },
+    {
+      "id": "modelos_selecciones_nations_league_paginas",
+      "label": "paginas()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "contraste_directo.py",
+      "file_type": "code",
+      "norm_label": "paginas()",
+      "source_file": "modelos/selecciones/nations_league.py",
+      "source_location": "L110"
+    },
+    {
+      "id": "modelos_selecciones_nations_league_pedir",
+      "label": "pedir()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "contraste_directo.py",
+      "file_type": "code",
+      "norm_label": "pedir()",
+      "source_file": "modelos/selecciones/nations_league.py",
+      "source_location": "L52"
+    },
+    {
+      "id": "modelos_selecciones_nations_league_previa",
+      "label": "previa()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "contraste_directo.py",
+      "file_type": "code",
+      "norm_label": "previa()",
+      "source_file": "modelos/selecciones/nations_league.py",
+      "source_location": "L175"
+    },
+    {
+      "id": "modelos_selecciones_nations_league_terminado",
+      "label": "terminado()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "contraste_directo.py",
+      "file_type": "code",
+      "norm_label": "terminado()",
+      "source_file": "modelos/selecciones/nations_league.py",
+      "source_location": "L91"
+    },
+    {
+      "id": "modelos_selecciones_nations_league_todos_los_partidos",
+      "label": "todos_los_partidos()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "contraste_directo.py",
+      "file_type": "code",
+      "norm_label": "todos_los_partidos()",
+      "source_file": "modelos/selecciones/nations_league.py",
+      "source_location": "L164"
+    },
+    {
       "id": "modelos_selecciones_onces_prensa_main",
       "label": "main()",
       "_callable": true,
@@ -282,42 +438,6 @@
       "norm_label": "sin_margen()",
       "source_file": "scripts/cuotas_football_data.py",
       "source_location": "L60"
-    },
-    {
-      "id": "scripts_jugadores_redes_highlightly",
-      "label": "highlightly()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "contraste_directo.py",
-      "file_type": "code",
-      "norm_label": "highlightly()",
-      "source_file": "scripts/jugadores_redes.py",
-      "source_location": "L70"
-    },
-    {
-      "id": "scripts_jugadores_redes_temporada_us",
-      "label": "temporada_us()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "contraste_directo.py",
-      "file_type": "code",
-      "norm_label": "temporada_us()",
-      "source_file": "scripts/jugadores_redes.py",
-      "source_location": "L26"
-    },
-    {
-      "id": "scripts_jugadores_redes_understat",
-      "label": "understat()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "contraste_directo.py",
-      "file_type": "code",
-      "norm_label": "understat()",
-      "source_file": "scripts/jugadores_redes.py",
-      "source_location": "L31"
     },
     {
       "id": "scripts_ambos_marcan_hoy_descargar",
@@ -572,136 +692,52 @@
       "source_location": "L68"
     },
     {
-      "id": "scripts_actualizar_datos_main",
-      "label": "main()",
+      "id": "modelos_selecciones_modelo_selecciones_ajustar",
+      "label": "ajustar()",
       "_callable": true,
       "_origin": "ast",
       "community": 103,
       "community_name": "time",
       "file_type": "code",
-      "norm_label": "main()",
-      "source_file": "scripts/actualizar_datos.py",
-      "source_location": "L71"
+      "norm_label": "ajustar()",
+      "source_file": "modelos/selecciones/modelo_selecciones.py",
+      "source_location": "L94"
     },
     {
-      "id": "scripts_actualizar_datos_obtener_detalle_partido",
-      "label": "obtener_detalle_partido()",
+      "id": "modelos_selecciones_modelo_selecciones_ajustar_f",
+      "label": "f()",
       "_callable": true,
       "_origin": "ast",
       "community": 103,
       "community_name": "time",
       "file_type": "code",
-      "norm_label": "obtener_detalle_partido()",
-      "source_file": "scripts/actualizar_datos.py",
-      "source_location": "L41"
+      "norm_label": "f()",
+      "source_file": "modelos/selecciones/modelo_selecciones.py",
+      "source_location": "L133"
     },
     {
-      "id": "scripts_actualizar_datos_obtener_detalle_partido_extraer_tarjetas",
-      "label": "extraer_tarjetas()",
+      "id": "modelos_selecciones_modelo_selecciones_ajustar_matriz",
+      "label": "matriz()",
       "_callable": true,
       "_origin": "ast",
       "community": 103,
       "community_name": "time",
       "file_type": "code",
-      "norm_label": "extraer_tarjetas()",
-      "source_file": "scripts/actualizar_datos.py",
-      "source_location": "L50"
+      "norm_label": "matriz()",
+      "source_file": "modelos/selecciones/modelo_selecciones.py",
+      "source_location": "L112"
     },
     {
-      "id": "scripts_actualizar_datos_obtener_partidos_recientes",
-      "label": "obtener_partidos_recientes()",
+      "id": "modelos_selecciones_modelo_selecciones_esperados",
+      "label": "esperados()",
       "_callable": true,
       "_origin": "ast",
       "community": 103,
       "community_name": "time",
       "file_type": "code",
-      "norm_label": "obtener_partidos_recientes()",
-      "source_file": "scripts/actualizar_datos.py",
-      "source_location": "L25"
-    },
-    {
-      "id": "scripts_backfill_historico_completo_es_derbi",
-      "label": "es_derbi()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 103,
-      "community_name": "time",
-      "file_type": "code",
-      "norm_label": "es_derbi()",
-      "source_file": "scripts/backfill_historico_completo.py",
-      "source_location": "L35"
-    },
-    {
-      "id": "scripts_backfill_historico_completo_main",
-      "label": "main()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 103,
-      "community_name": "time",
-      "file_type": "code",
-      "norm_label": "main()",
-      "source_file": "scripts/backfill_historico_completo.py",
-      "source_location": "L110"
-    },
-    {
-      "id": "scripts_backfill_historico_completo_obtener_detalle_completo",
-      "label": "obtener_detalle_completo()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 103,
-      "community_name": "time",
-      "file_type": "code",
-      "norm_label": "obtener_detalle_completo()",
-      "source_file": "scripts/backfill_historico_completo.py",
-      "source_location": "L53"
-    },
-    {
-      "id": "scripts_backfill_historico_completo_obtener_detalle_completo_extraer",
-      "label": "extraer()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 103,
-      "community_name": "time",
-      "file_type": "code",
-      "norm_label": "extraer()",
-      "source_file": "scripts/backfill_historico_completo.py",
-      "source_location": "L65"
-    },
-    {
-      "id": "scripts_backfill_historico_completo_obtener_pagina_partidos",
-      "label": "obtener_pagina_partidos()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 103,
-      "community_name": "time",
-      "file_type": "code",
-      "norm_label": "obtener_pagina_partidos()",
-      "source_file": "scripts/backfill_historico_completo.py",
-      "source_location": "L39"
-    },
-    {
-      "id": "scripts_sondeo_xg_jugador_main",
-      "label": "main()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 103,
-      "community_name": "time",
-      "file_type": "code",
-      "norm_label": "main()",
-      "source_file": "scripts/sondeo_xg_jugador.py",
-      "source_location": "L44"
-    },
-    {
-      "id": "scripts_sondeo_xg_jugador_pedir",
-      "label": "pedir()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 103,
-      "community_name": "time",
-      "file_type": "code",
-      "norm_label": "pedir()",
-      "source_file": "scripts/sondeo_xg_jugador.py",
-      "source_location": "L27"
+      "norm_label": "esperados()",
+      "source_file": "modelos/selecciones/modelo_selecciones.py",
+      "source_location": "L141"
     },
     {
       "id": "redes_plantillas_equipaciones_choca",
@@ -980,42 +1016,6 @@
       "source_location": "L20"
     },
     {
-      "id": "scripts_experimento_edad_valor_main",
-      "label": "main()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 12,
-      "community_name": "sys",
-      "file_type": "code",
-      "norm_label": "main()",
-      "source_file": "scripts/experimento_edad_valor.py",
-      "source_location": "L79"
-    },
-    {
-      "id": "scripts_experimento_edad_valor_once_largo",
-      "label": "once_largo()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 12,
-      "community_name": "sys",
-      "file_type": "code",
-      "norm_label": "once_largo()",
-      "source_file": "scripts/experimento_edad_valor.py",
-      "source_location": "L33"
-    },
-    {
-      "id": "scripts_experimento_edad_valor_rasgos",
-      "label": "rasgos()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 12,
-      "community_name": "sys",
-      "file_type": "code",
-      "norm_label": "rasgos()",
-      "source_file": "scripts/experimento_edad_valor.py",
-      "source_location": "L46"
-    },
-    {
       "id": "scripts_experimento_temporada_2022_main",
       "label": "main()",
       "_callable": true,
@@ -1112,16 +1112,40 @@
       "source_location": "L31"
     },
     {
-      "id": "scripts_modelo_ambos_marcan_preparar",
-      "label": "preparar()",
+      "id": "scripts_experimento_xg_jugador_v2_main",
+      "label": "main()",
       "_callable": true,
       "_origin": "ast",
       "community": 12,
       "community_name": "sys",
       "file_type": "code",
-      "norm_label": "preparar()",
-      "source_file": "scripts/modelo_ambos_marcan.py",
-      "source_location": "L59"
+      "norm_label": "main()",
+      "source_file": "scripts/experimento_xg_jugador_v2.py",
+      "source_location": "L84"
+    },
+    {
+      "id": "scripts_experimento_xg_jugador_v2_rasgos",
+      "label": "rasgos()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 12,
+      "community_name": "sys",
+      "file_type": "code",
+      "norm_label": "rasgos()",
+      "source_file": "scripts/experimento_xg_jugador_v2.py",
+      "source_location": "L65"
+    },
+    {
+      "id": "scripts_experimento_xg_jugador_v2_tabla_jugadores",
+      "label": "tabla_jugadores()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 12,
+      "community_name": "sys",
+      "file_type": "code",
+      "norm_label": "tabla_jugadores()",
+      "source_file": "scripts/experimento_xg_jugador_v2.py",
+      "source_location": "L34"
     },
     {
       "id": "scripts_portero_historico",
@@ -1184,7 +1208,43 @@
       "source_location": "L62"
     },
     {
-      "id": "scripts_censo_mercados_crudo_desempaquetar",
+      "id": "scripts_jugadores_redes_highlightly",
+      "label": "highlightly()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 124,
+      "community_name": "datetime",
+      "file_type": "code",
+      "norm_label": "highlightly()",
+      "source_file": "scripts/jugadores_redes.py",
+      "source_location": "L70"
+    },
+    {
+      "id": "scripts_jugadores_redes_temporada_us",
+      "label": "temporada_us()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 124,
+      "community_name": "datetime",
+      "file_type": "code",
+      "norm_label": "temporada_us()",
+      "source_file": "scripts/jugadores_redes.py",
+      "source_location": "L26"
+    },
+    {
+      "id": "scripts_jugadores_redes_understat",
+      "label": "understat()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 124,
+      "community_name": "datetime",
+      "file_type": "code",
+      "norm_label": "understat()",
+      "source_file": "scripts/jugadores_redes.py",
+      "source_location": "L31"
+    },
+    {
+      "id": "scripts_sondeo_boxscore_desempaquetar",
       "label": "desempaquetar()",
       "_callable": true,
       "_origin": "ast",
@@ -1192,11 +1252,11 @@
       "community_name": "datetime",
       "file_type": "code",
       "norm_label": "desempaquetar()",
-      "source_file": "scripts/censo_mercados_crudo.py",
-      "source_location": "L50"
+      "source_file": "scripts/sondeo_boxscore.py",
+      "source_location": "L25"
     },
     {
-      "id": "scripts_censo_mercados_crudo_main",
+      "id": "scripts_sondeo_boxscore_main",
       "label": "main()",
       "_callable": true,
       "_origin": "ast",
@@ -1204,11 +1264,11 @@
       "community_name": "datetime",
       "file_type": "code",
       "norm_label": "main()",
-      "source_file": "scripts/censo_mercados_crudo.py",
-      "source_location": "L54"
+      "source_file": "scripts/sondeo_boxscore.py",
+      "source_location": "L34"
     },
     {
-      "id": "scripts_censo_mercados_crudo_pedir",
+      "id": "scripts_sondeo_boxscore_pedir",
       "label": "pedir()",
       "_callable": true,
       "_origin": "ast",
@@ -1216,8 +1276,8 @@
       "community_name": "datetime",
       "file_type": "code",
       "norm_label": "pedir()",
-      "source_file": "scripts/censo_mercados_crudo.py",
-      "source_location": "L32"
+      "source_file": "scripts/sondeo_boxscore.py",
+      "source_location": "L20"
     },
     {
       "id": "scripts_backfill_ligas_desempaquetar",
@@ -1328,19 +1388,31 @@
       "source_location": "L44"
     },
     {
-      "id": "scripts_cosechar_cuotas_desempaquetar",
-      "label": "desempaquetar()",
+      "id": "scripts_agenda_de_hoy_cargar",
+      "label": "cargar()",
       "_callable": true,
       "_origin": "ast",
       "community": 127,
       "community_name": "cosechar_cuotas.py",
       "file_type": "code",
-      "norm_label": "desempaquetar()",
-      "source_file": "scripts/cosechar_cuotas.py",
-      "source_location": "L105"
+      "norm_label": "cargar()",
+      "source_file": "scripts/agenda_de_hoy.py",
+      "source_location": "L34"
     },
     {
-      "id": "scripts_cosechar_cuotas_main",
+      "id": "scripts_agenda_de_hoy_franjas",
+      "label": "franjas()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 127,
+      "community_name": "cosechar_cuotas.py",
+      "file_type": "code",
+      "norm_label": "franjas()",
+      "source_file": "scripts/agenda_de_hoy.py",
+      "source_location": "L42"
+    },
+    {
+      "id": "scripts_agenda_de_hoy_main",
       "label": "main()",
       "_callable": true,
       "_origin": "ast",
@@ -1348,32 +1420,32 @@
       "community_name": "cosechar_cuotas.py",
       "file_type": "code",
       "norm_label": "main()",
-      "source_file": "scripts/cosechar_cuotas.py",
-      "source_location": "L121"
+      "source_file": "scripts/agenda_de_hoy.py",
+      "source_location": "L61"
     },
     {
-      "id": "scripts_cosechar_cuotas_pedir",
-      "label": "pedir()",
+      "id": "modelos_ambos_marcan_scripts_evaluar_mercados_cargar_cuotas_crudas",
+      "label": "cargar_cuotas_crudas()",
       "_callable": true,
       "_origin": "ast",
-      "community": 127,
-      "community_name": "cosechar_cuotas.py",
+      "community": 13,
+      "community_name": "ambos_marcan/scripts/rasgos.py",
       "file_type": "code",
-      "norm_label": "pedir()",
-      "source_file": "scripts/cosechar_cuotas.py",
-      "source_location": "L76"
+      "norm_label": "cargar_cuotas_crudas()",
+      "source_file": "modelos/ambos_marcan/scripts/evaluar_mercados.py",
+      "source_location": "L68"
     },
     {
-      "id": "scripts_cosechar_cuotas_ya_tengo",
-      "label": "ya_tengo()",
+      "id": "modelos_ambos_marcan_scripts_evaluar_mercados_main",
+      "label": "main()",
       "_callable": true,
       "_origin": "ast",
-      "community": 127,
-      "community_name": "cosechar_cuotas.py",
+      "community": 13,
+      "community_name": "ambos_marcan/scripts/rasgos.py",
       "file_type": "code",
-      "norm_label": "ya_tengo()",
-      "source_file": "scripts/cosechar_cuotas.py",
-      "source_location": "L114"
+      "norm_label": "main()",
+      "source_file": "modelos/ambos_marcan/scripts/evaluar_mercados.py",
+      "source_location": "L213"
     },
     {
       "id": "modelos_ambos_marcan_scripts_rasgos_a_largo",
@@ -2288,30 +2360,6 @@
       "source_location": "L77"
     },
     {
-      "id": "modelos_selecciones_nota_jugadores_selecciones_main",
-      "label": "main()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 19,
-      "community_name": "json",
-      "file_type": "code",
-      "norm_label": "main()",
-      "source_file": "modelos/selecciones/nota_jugadores_selecciones.py",
-      "source_location": "L49"
-    },
-    {
-      "id": "modelos_selecciones_nota_jugadores_selecciones_num",
-      "label": "num()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 19,
-      "community_name": "json",
-      "file_type": "code",
-      "norm_label": "num()",
-      "source_file": "modelos/selecciones/nota_jugadores_selecciones.py",
-      "source_location": "L45"
-    },
-    {
       "id": "redes_plantillas_colores_wiki_equipaciones_abrir",
       "label": "_abrir()",
       "_callable": true,
@@ -2358,18 +2406,6 @@
       "norm_label": "wikitexto()",
       "source_file": "redes/plantillas/colores/wiki_equipaciones.py",
       "source_location": "L95"
-    },
-    {
-      "id": "scripts_llm_gratis_preguntar",
-      "label": "preguntar()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 19,
-      "community_name": "json",
-      "file_type": "code",
-      "norm_label": "preguntar()",
-      "source_file": "scripts/llm_gratis.py",
-      "source_location": "L33"
     },
     {
       "id": "scripts_descanso_en_vivo_analizar",
@@ -3056,79 +3092,31 @@
       "source_location": "L75"
     },
     {
-      "id": "modelos_selecciones_nations_league_aplanar",
-      "label": "aplanar()",
+      "id": "scripts_afinar_ambos_correr",
+      "label": "correr()",
       "_callable": true,
       "_origin": "ast",
       "community": 23,
       "community_name": "nations_league.py",
       "file_type": "code",
-      "norm_label": "aplanar()",
-      "source_file": "modelos/selecciones/nations_league.py",
-      "source_location": "L226"
+      "norm_label": "correr()",
+      "source_file": "scripts/afinar_ambos.py",
+      "source_location": "L54"
     },
     {
-      "id": "modelos_selecciones_nations_league_calendario",
-      "label": "calendario()",
+      "id": "scripts_afinar_ambos_entrenar",
+      "label": "entrenar()",
       "_callable": true,
       "_origin": "ast",
       "community": 23,
       "community_name": "nations_league.py",
       "file_type": "code",
-      "norm_label": "calendario()",
-      "source_file": "modelos/selecciones/nations_league.py",
-      "source_location": "L121"
+      "norm_label": "entrenar()",
+      "source_file": "scripts/afinar_ambos.py",
+      "source_location": "L40"
     },
     {
-      "id": "modelos_selecciones_nations_league_clave",
-      "label": "clave()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 23,
-      "community_name": "nations_league.py",
-      "file_type": "code",
-      "norm_label": "clave()",
-      "source_file": "modelos/selecciones/nations_league.py",
-      "source_location": "L106"
-    },
-    {
-      "id": "modelos_selecciones_nations_league_detalles",
-      "label": "detalles()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 23,
-      "community_name": "nations_league.py",
-      "file_type": "code",
-      "norm_label": "detalles()",
-      "source_file": "modelos/selecciones/nations_league.py",
-      "source_location": "L158"
-    },
-    {
-      "id": "modelos_selecciones_nations_league_historial",
-      "label": "historial()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 23,
-      "community_name": "nations_league.py",
-      "file_type": "code",
-      "norm_label": "historial()",
-      "source_file": "modelos/selecciones/nations_league.py",
-      "source_location": "L148"
-    },
-    {
-      "id": "modelos_selecciones_nations_league_lista",
-      "label": "lista()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 23,
-      "community_name": "nations_league.py",
-      "file_type": "code",
-      "norm_label": "lista()",
-      "source_file": "modelos/selecciones/nations_league.py",
-      "source_location": "L82"
-    },
-    {
-      "id": "modelos_selecciones_nations_league_main",
+      "id": "scripts_afinar_ambos_main",
       "label": "main()",
       "_callable": true,
       "_origin": "ast",
@@ -3136,80 +3124,56 @@
       "community_name": "nations_league.py",
       "file_type": "code",
       "norm_label": "main()",
-      "source_file": "modelos/selecciones/nations_league.py",
-      "source_location": "L273"
+      "source_file": "scripts/afinar_ambos.py",
+      "source_location": "L62"
     },
     {
-      "id": "modelos_selecciones_nations_league_marcador",
-      "label": "marcador()",
+      "id": "scripts_afinar_ambos_nombre",
+      "label": "nombre()",
       "_callable": true,
       "_origin": "ast",
       "community": 23,
       "community_name": "nations_league.py",
       "file_type": "code",
-      "norm_label": "marcador()",
-      "source_file": "modelos/selecciones/nations_league.py",
-      "source_location": "L97"
+      "norm_label": "nombre()",
+      "source_file": "scripts/afinar_ambos.py",
+      "source_location": "L58"
     },
     {
-      "id": "modelos_selecciones_nations_league_paginas",
-      "label": "paginas()",
+      "id": "scripts_afinar_ambos_predecir",
+      "label": "predecir()",
       "_callable": true,
       "_origin": "ast",
       "community": 23,
       "community_name": "nations_league.py",
       "file_type": "code",
-      "norm_label": "paginas()",
-      "source_file": "modelos/selecciones/nations_league.py",
-      "source_location": "L110"
+      "norm_label": "predecir()",
+      "source_file": "scripts/afinar_ambos.py",
+      "source_location": "L46"
     },
     {
-      "id": "modelos_selecciones_nations_league_pedir",
-      "label": "pedir()",
+      "id": "scripts_barrido_hiperparametros_entrenar_param",
+      "label": "entrenar_param()",
       "_callable": true,
       "_origin": "ast",
       "community": 23,
       "community_name": "nations_league.py",
       "file_type": "code",
-      "norm_label": "pedir()",
-      "source_file": "modelos/selecciones/nations_league.py",
-      "source_location": "L52"
+      "norm_label": "entrenar_param()",
+      "source_file": "scripts/barrido_hiperparametros.py",
+      "source_location": "L17"
     },
     {
-      "id": "modelos_selecciones_nations_league_previa",
-      "label": "previa()",
+      "id": "scripts_peso_recencia_entrenar_pesado",
+      "label": "entrenar_pesado()",
       "_callable": true,
       "_origin": "ast",
       "community": 23,
       "community_name": "nations_league.py",
       "file_type": "code",
-      "norm_label": "previa()",
-      "source_file": "modelos/selecciones/nations_league.py",
-      "source_location": "L175"
-    },
-    {
-      "id": "modelos_selecciones_nations_league_terminado",
-      "label": "terminado()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 23,
-      "community_name": "nations_league.py",
-      "file_type": "code",
-      "norm_label": "terminado()",
-      "source_file": "modelos/selecciones/nations_league.py",
-      "source_location": "L91"
-    },
-    {
-      "id": "modelos_selecciones_nations_league_todos_los_partidos",
-      "label": "todos_los_partidos()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 23,
-      "community_name": "nations_league.py",
-      "file_type": "code",
-      "norm_label": "todos_los_partidos()",
-      "source_file": "modelos/selecciones/nations_league.py",
-      "source_location": "L164"
+      "norm_label": "entrenar_pesado()",
+      "source_file": "scripts/peso_recencia.py",
+      "source_location": "L16"
     },
     {
       "id": "modelos_selecciones_descargar_selecciones_lista",
@@ -3366,6 +3330,18 @@
       "norm_label": "predecir_mes()",
       "source_file": "scripts/modelo_ambos_marcan.py",
       "source_location": "L73"
+    },
+    {
+      "id": "scripts_modelo_ambos_marcan_preparar",
+      "label": "preparar()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 25,
+      "community_name": "Ambos Marcan -- offshoot enfocado de futbol-pipeline",
+      "file_type": "code",
+      "norm_label": "preparar()",
+      "source_file": "scripts/modelo_ambos_marcan.py",
+      "source_location": "L59"
     },
     {
       "id": "redes_plantillas_generar_acierto",
@@ -3906,66 +3882,6 @@
       "norm_label": "predecir()",
       "source_file": "modelos/ambos_marcan/scripts/comparar_todo_vs_referencia.py",
       "source_location": "L64"
-    },
-    {
-      "id": "scripts_afinar_ambos_correr",
-      "label": "correr()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 28,
-      "community_name": "afinar_ambos.py",
-      "file_type": "code",
-      "norm_label": "correr()",
-      "source_file": "scripts/afinar_ambos.py",
-      "source_location": "L54"
-    },
-    {
-      "id": "scripts_afinar_ambos_entrenar",
-      "label": "entrenar()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 28,
-      "community_name": "afinar_ambos.py",
-      "file_type": "code",
-      "norm_label": "entrenar()",
-      "source_file": "scripts/afinar_ambos.py",
-      "source_location": "L40"
-    },
-    {
-      "id": "scripts_afinar_ambos_main",
-      "label": "main()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 28,
-      "community_name": "afinar_ambos.py",
-      "file_type": "code",
-      "norm_label": "main()",
-      "source_file": "scripts/afinar_ambos.py",
-      "source_location": "L62"
-    },
-    {
-      "id": "scripts_afinar_ambos_nombre",
-      "label": "nombre()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 28,
-      "community_name": "afinar_ambos.py",
-      "file_type": "code",
-      "norm_label": "nombre()",
-      "source_file": "scripts/afinar_ambos.py",
-      "source_location": "L58"
-    },
-    {
-      "id": "scripts_afinar_ambos_predecir",
-      "label": "predecir()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 28,
-      "community_name": "afinar_ambos.py",
-      "file_type": "code",
-      "norm_label": "predecir()",
-      "source_file": "scripts/afinar_ambos.py",
-      "source_location": "L46"
     },
     {
       "id": "scripts_barrido_combinatorio_evaluar_config",
@@ -4688,28 +4604,52 @@
       "source_location": "L77"
     },
     {
-      "id": "redes_plantillas_colores_curar_hexa",
-      "label": "hexa()",
+      "id": "modelos_sueltos_pronostico_partido_ajustar",
+      "label": "ajustar()",
       "_callable": true,
       "_origin": "ast",
       "community": 35,
       "community_name": "datos_selecciones.py",
       "file_type": "code",
-      "norm_label": "hexa()",
-      "source_file": "redes/plantillas/colores/curar.py",
-      "source_location": "L69"
+      "norm_label": "ajustar()",
+      "source_file": "modelos/sueltos/pronostico_partido.py",
+      "source_location": "L24"
     },
     {
-      "id": "redes_plantillas_colores_curar_kit",
-      "label": "kit()",
+      "id": "modelos_sueltos_pronostico_partido_ajustar_x",
+      "label": "X()",
       "_callable": true,
       "_origin": "ast",
       "community": 35,
       "community_name": "datos_selecciones.py",
       "file_type": "code",
-      "norm_label": "kit()",
-      "source_file": "redes/plantillas/colores/curar.py",
-      "source_location": "L74"
+      "norm_label": "x()",
+      "source_file": "modelos/sueltos/pronostico_partido.py",
+      "source_location": "L27"
+    },
+    {
+      "id": "modelos_sueltos_pronostico_partido_main",
+      "label": "main()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 35,
+      "community_name": "datos_selecciones.py",
+      "file_type": "code",
+      "norm_label": "main()",
+      "source_file": "modelos/sueltos/pronostico_partido.py",
+      "source_location": "L44"
+    },
+    {
+      "id": "modelos_sueltos_pronostico_partido_probs",
+      "label": "probs()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 35,
+      "community_name": "datos_selecciones.py",
+      "file_type": "code",
+      "norm_label": "probs()",
+      "source_file": "modelos/sueltos/pronostico_partido.py",
+      "source_location": "L39"
     },
     {
       "id": "redes_plantillas_datos_selecciones_dia",
@@ -4916,6 +4856,18 @@
       "source_location": "L102"
     },
     {
+      "id": "redes_plantillas_equipaciones_lum_c",
+      "label": "c()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 35,
+      "community_name": "datos_selecciones.py",
+      "file_type": "code",
+      "norm_label": "c()",
+      "source_file": "redes/plantillas/equipaciones.py",
+      "source_location": "L64"
+    },
+    {
       "id": "modelos_ambos_marcan_scripts_evaluar_mercados_brier",
       "label": "brier()",
       "_callable": true,
@@ -4928,18 +4880,6 @@
       "source_location": "L132"
     },
     {
-      "id": "modelos_ambos_marcan_scripts_evaluar_mercados_cargar_cuotas_crudas",
-      "label": "cargar_cuotas_crudas()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 36,
-      "community_name": "numpy",
-      "file_type": "code",
-      "norm_label": "cargar_cuotas_crudas()",
-      "source_file": "modelos/ambos_marcan/scripts/evaluar_mercados.py",
-      "source_location": "L68"
-    },
-    {
       "id": "modelos_ambos_marcan_scripts_evaluar_mercados_evaluar_uno",
       "label": "evaluar_uno()",
       "_callable": true,
@@ -4950,18 +4890,6 @@
       "norm_label": "evaluar_uno()",
       "source_file": "modelos/ambos_marcan/scripts/evaluar_mercados.py",
       "source_location": "L154"
-    },
-    {
-      "id": "modelos_ambos_marcan_scripts_evaluar_mercados_main",
-      "label": "main()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 36,
-      "community_name": "numpy",
-      "file_type": "code",
-      "norm_label": "main()",
-      "source_file": "modelos/ambos_marcan/scripts/evaluar_mercados.py",
-      "source_location": "L213"
     },
     {
       "id": "modelos_ambos_marcan_scripts_evaluar_mercados_mejor_peso",
@@ -5084,6 +5012,54 @@
       "source_location": "L26"
     },
     {
+      "id": "modelos_ambos_marcan_scripts_experimentos_seis_ideas_calcular_arbitro_ventana",
+      "label": "calcular_arbitro_ventana()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 36,
+      "community_name": "numpy",
+      "file_type": "code",
+      "norm_label": "calcular_arbitro_ventana()",
+      "source_file": "modelos/ambos_marcan/scripts/experimentos_seis_ideas.py",
+      "source_location": "L51"
+    },
+    {
+      "id": "modelos_ambos_marcan_scripts_experimentos_seis_ideas_calcular_h2h_reciente",
+      "label": "calcular_h2h_reciente()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 36,
+      "community_name": "numpy",
+      "file_type": "code",
+      "norm_label": "calcular_h2h_reciente()",
+      "source_file": "modelos/ambos_marcan/scripts/experimentos_seis_ideas.py",
+      "source_location": "L103"
+    },
+    {
+      "id": "modelos_ambos_marcan_scripts_experimentos_seis_ideas_calcular_tabla_goles",
+      "label": "calcular_tabla_goles()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 36,
+      "community_name": "numpy",
+      "file_type": "code",
+      "norm_label": "calcular_tabla_goles()",
+      "source_file": "modelos/ambos_marcan/scripts/experimentos_seis_ideas.py",
+      "source_location": "L160"
+    },
+    {
+      "id": "modelos_ambos_marcan_scripts_experimentos_seis_ideas_evaluar",
+      "label": "evaluar()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 36,
+      "community_name": "numpy",
+      "file_type": "code",
+      "norm_label": "evaluar()",
+      "source_file": "modelos/ambos_marcan/scripts/experimentos_seis_ideas.py",
+      "source_location": "L13"
+    },
+    {
       "id": "modelos_ambos_marcan_scripts_modelo_xgboost_brier",
       "label": "brier()",
       "_callable": true,
@@ -5144,6 +5120,18 @@
       "source_location": "L129"
     },
     {
+      "id": "modelos_selecciones_modelo_selecciones_prueba_hacia_delante",
+      "label": "prueba_hacia_delante()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 36,
+      "community_name": "numpy",
+      "file_type": "code",
+      "norm_label": "prueba_hacia_delante()",
+      "source_file": "modelos/selecciones/modelo_selecciones.py",
+      "source_location": "L170"
+    },
+    {
       "id": "scripts_auditoria2_elo_elo",
       "label": "elo()",
       "_callable": true,
@@ -5180,7 +5168,7 @@
       "source_location": "L72"
     },
     {
-      "id": "scripts_calibracion_correct_score_main",
+      "id": "scripts_evaluar_contra_pinnacle_main",
       "label": "main()",
       "_callable": true,
       "_origin": "ast",
@@ -5188,8 +5176,44 @@
       "community_name": "numpy",
       "file_type": "code",
       "norm_label": "main()",
-      "source_file": "scripts/calibracion_correct_score.py",
-      "source_location": "L38"
+      "source_file": "scripts/evaluar_contra_pinnacle.py",
+      "source_location": "L29"
+    },
+    {
+      "id": "scripts_evaluar_contra_pinnacle_sig",
+      "label": "sig()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 36,
+      "community_name": "numpy",
+      "file_type": "code",
+      "norm_label": "sig()",
+      "source_file": "scripts/evaluar_contra_pinnacle.py",
+      "source_location": "L25"
+    },
+    {
+      "id": "scripts_experimentos_duelos_evaluar",
+      "label": "evaluar()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 36,
+      "community_name": "numpy",
+      "file_type": "code",
+      "norm_label": "evaluar()",
+      "source_file": "scripts/experimentos_duelos.py",
+      "source_location": "L11"
+    },
+    {
+      "id": "scripts_experimentos_forma_reciente_evaluar",
+      "label": "evaluar()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 36,
+      "community_name": "numpy",
+      "file_type": "code",
+      "norm_label": "evaluar()",
+      "source_file": "scripts/experimentos_forma_reciente.py",
+      "source_location": "L12"
     },
     {
       "id": "scripts_revision_profundidad_main",
@@ -5226,114 +5250,6 @@
       "norm_label": "sig()",
       "source_file": "scripts/revision_profundidad.py",
       "source_location": "L41"
-    },
-    {
-      "id": "scripts_agenda_de_hoy_cargar",
-      "label": "cargar()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 37,
-      "community_name": "sondeo_frescura.py",
-      "file_type": "code",
-      "norm_label": "cargar()",
-      "source_file": "scripts/agenda_de_hoy.py",
-      "source_location": "L34"
-    },
-    {
-      "id": "scripts_agenda_de_hoy_franjas",
-      "label": "franjas()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 37,
-      "community_name": "sondeo_frescura.py",
-      "file_type": "code",
-      "norm_label": "franjas()",
-      "source_file": "scripts/agenda_de_hoy.py",
-      "source_location": "L42"
-    },
-    {
-      "id": "scripts_agenda_de_hoy_main",
-      "label": "main()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 37,
-      "community_name": "sondeo_frescura.py",
-      "file_type": "code",
-      "norm_label": "main()",
-      "source_file": "scripts/agenda_de_hoy.py",
-      "source_location": "L61"
-    },
-    {
-      "id": "scripts_censo_estadisticas_cuenta_jugadores",
-      "label": "cuenta_jugadores()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 37,
-      "community_name": "sondeo_frescura.py",
-      "file_type": "code",
-      "norm_label": "cuenta_jugadores()",
-      "source_file": "scripts/censo_estadisticas.py",
-      "source_location": "L83"
-    },
-    {
-      "id": "scripts_censo_estadisticas_desempaquetar",
-      "label": "desempaquetar()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 37,
-      "community_name": "sondeo_frescura.py",
-      "file_type": "code",
-      "norm_label": "desempaquetar()",
-      "source_file": "scripts/censo_estadisticas.py",
-      "source_location": "L67"
-    },
-    {
-      "id": "scripts_censo_estadisticas_estado_de",
-      "label": "estado_de()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 37,
-      "community_name": "sondeo_frescura.py",
-      "file_type": "code",
-      "norm_label": "estado_de()",
-      "source_file": "scripts/censo_estadisticas.py",
-      "source_location": "L76"
-    },
-    {
-      "id": "scripts_censo_estadisticas_main",
-      "label": "main()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 37,
-      "community_name": "sondeo_frescura.py",
-      "file_type": "code",
-      "norm_label": "main()",
-      "source_file": "scripts/censo_estadisticas.py",
-      "source_location": "L112"
-    },
-    {
-      "id": "scripts_censo_estadisticas_partidos_de",
-      "label": "partidos_de()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 37,
-      "community_name": "sondeo_frescura.py",
-      "file_type": "code",
-      "norm_label": "partidos_de()",
-      "source_file": "scripts/censo_estadisticas.py",
-      "source_location": "L94"
-    },
-    {
-      "id": "scripts_censo_estadisticas_pedir",
-      "label": "pedir()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 37,
-      "community_name": "sondeo_frescura.py",
-      "file_type": "code",
-      "norm_label": "pedir()",
-      "source_file": "scripts/censo_estadisticas.py",
-      "source_location": "L53"
     },
     {
       "id": "scripts_sondeo_frescura_desempaquetar",
@@ -5732,42 +5648,6 @@
       "source_location": "L57"
     },
     {
-      "id": "modelos_selecciones_modelo_selecciones_ajustar",
-      "label": "ajustar()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 41,
-      "community_name": "modelo_selecciones.py",
-      "file_type": "code",
-      "norm_label": "ajustar()",
-      "source_file": "modelos/selecciones/modelo_selecciones.py",
-      "source_location": "L94"
-    },
-    {
-      "id": "modelos_selecciones_modelo_selecciones_ajustar_f",
-      "label": "f()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 41,
-      "community_name": "modelo_selecciones.py",
-      "file_type": "code",
-      "norm_label": "f()",
-      "source_file": "modelos/selecciones/modelo_selecciones.py",
-      "source_location": "L133"
-    },
-    {
-      "id": "modelos_selecciones_modelo_selecciones_ajustar_matriz",
-      "label": "matriz()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 41,
-      "community_name": "modelo_selecciones.py",
-      "file_type": "code",
-      "norm_label": "matriz()",
-      "source_file": "modelos/selecciones/modelo_selecciones.py",
-      "source_location": "L112"
-    },
-    {
       "id": "modelos_selecciones_modelo_selecciones_calidad_equipos",
       "label": "calidad_equipos()",
       "_callable": true,
@@ -5790,18 +5670,6 @@
       "norm_label": "cargar()",
       "source_file": "modelos/selecciones/modelo_selecciones.py",
       "source_location": "L69"
-    },
-    {
-      "id": "modelos_selecciones_modelo_selecciones_esperados",
-      "label": "esperados()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 41,
-      "community_name": "modelo_selecciones.py",
-      "file_type": "code",
-      "norm_label": "esperados()",
-      "source_file": "modelos/selecciones/modelo_selecciones.py",
-      "source_location": "L141"
     },
     {
       "id": "modelos_selecciones_modelo_selecciones_fifa_antes",
@@ -5898,30 +5766,6 @@
       "norm_label": "sig()",
       "source_file": "scripts/cuota_como_variable.py",
       "source_location": "L37"
-    },
-    {
-      "id": "scripts_evaluar_contra_pinnacle_main",
-      "label": "main()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 42,
-      "community_name": "scripts/rasgos.py",
-      "file_type": "code",
-      "norm_label": "main()",
-      "source_file": "scripts/evaluar_contra_pinnacle.py",
-      "source_location": "L29"
-    },
-    {
-      "id": "scripts_evaluar_contra_pinnacle_sig",
-      "label": "sig()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 42,
-      "community_name": "scripts/rasgos.py",
-      "file_type": "code",
-      "norm_label": "sig()",
-      "source_file": "scripts/evaluar_contra_pinnacle.py",
-      "source_location": "L25"
     },
     {
       "id": "scripts_podar_base_ambos_main",
@@ -6380,6 +6224,18 @@
       "source_location": "L68"
     },
     {
+      "id": "scripts_llm_gratis_preguntar",
+      "label": "preguntar()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 45,
+      "community_name": "colores_camiseta.py",
+      "file_type": "code",
+      "norm_label": "preguntar()",
+      "source_file": "scripts/llm_gratis.py",
+      "source_location": "L33"
+    },
+    {
       "id": "scripts_casas_descolgadas_desmarginar",
       "label": "desmarginar()",
       "_callable": true,
@@ -6440,18 +6296,6 @@
       "source_location": "L100"
     },
     {
-      "id": "scripts_barrido_hiperparametros_entrenar_param",
-      "label": "entrenar_param()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 48,
-      "community_name": "scripts/modelo_xgboost.py",
-      "file_type": "code",
-      "norm_label": "entrenar_param()",
-      "source_file": "scripts/barrido_hiperparametros.py",
-      "source_location": "L17"
-    },
-    {
       "id": "scripts_comparar_entreno_con_huecos_main",
       "label": "main()",
       "_callable": true,
@@ -6486,114 +6330,6 @@
       "norm_label": "sig()",
       "source_file": "scripts/comparar_entreno_con_huecos.py",
       "source_location": "L25"
-    },
-    {
-      "id": "scripts_evaluar_mercados_brier",
-      "label": "brier()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 48,
-      "community_name": "scripts/modelo_xgboost.py",
-      "file_type": "code",
-      "norm_label": "brier()",
-      "source_file": "scripts/evaluar_mercados.py",
-      "source_location": "L132"
-    },
-    {
-      "id": "scripts_evaluar_mercados_cargar_cuotas_crudas",
-      "label": "cargar_cuotas_crudas()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 48,
-      "community_name": "scripts/modelo_xgboost.py",
-      "file_type": "code",
-      "norm_label": "cargar_cuotas_crudas()",
-      "source_file": "scripts/evaluar_mercados.py",
-      "source_location": "L68"
-    },
-    {
-      "id": "scripts_evaluar_mercados_evaluar_uno",
-      "label": "evaluar_uno()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 48,
-      "community_name": "scripts/modelo_xgboost.py",
-      "file_type": "code",
-      "norm_label": "evaluar_uno()",
-      "source_file": "scripts/evaluar_mercados.py",
-      "source_location": "L154"
-    },
-    {
-      "id": "scripts_evaluar_mercados_main",
-      "label": "main()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 48,
-      "community_name": "scripts/modelo_xgboost.py",
-      "file_type": "code",
-      "norm_label": "main()",
-      "source_file": "scripts/evaluar_mercados.py",
-      "source_location": "L217"
-    },
-    {
-      "id": "scripts_evaluar_mercados_mejor_peso",
-      "label": "mejor_peso()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 48,
-      "community_name": "scripts/modelo_xgboost.py",
-      "file_type": "code",
-      "norm_label": "mejor_peso()",
-      "source_file": "scripts/evaluar_mercados.py",
-      "source_location": "L141"
-    },
-    {
-      "id": "scripts_evaluar_mercados_mejor_peso_mezclar",
-      "label": "mezclar()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 48,
-      "community_name": "scripts/modelo_xgboost.py",
-      "file_type": "code",
-      "norm_label": "mezclar()",
-      "source_file": "scripts/evaluar_mercados.py",
-      "source_location": "L142"
-    },
-    {
-      "id": "scripts_evaluar_mercados_mercado_por_partido",
-      "label": "mercado_por_partido()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 48,
-      "community_name": "scripts/modelo_xgboost.py",
-      "file_type": "code",
-      "norm_label": "mercado_por_partido()",
-      "source_file": "scripts/evaluar_mercados.py",
-      "source_location": "L98"
-    },
-    {
-      "id": "scripts_evaluar_mercados_probabilidad_binaria",
-      "label": "probabilidad_binaria()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 48,
-      "community_name": "scripts/modelo_xgboost.py",
-      "file_type": "code",
-      "norm_label": "probabilidad_binaria()",
-      "source_file": "scripts/evaluar_mercados.py",
-      "source_location": "L91"
-    },
-    {
-      "id": "scripts_experimentos_duelos_evaluar",
-      "label": "evaluar()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 48,
-      "community_name": "scripts/modelo_xgboost.py",
-      "file_type": "code",
-      "norm_label": "evaluar()",
-      "source_file": "scripts/experimentos_duelos.py",
-      "source_location": "L11"
     },
     {
       "id": "scripts_experimentos_rasgos_configuraciones",
@@ -6690,18 +6426,6 @@
       "norm_label": "probabilidades()",
       "source_file": "scripts/modelo_xgboost.py",
       "source_location": "L161"
-    },
-    {
-      "id": "scripts_peso_recencia_entrenar_pesado",
-      "label": "entrenar_pesado()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 48,
-      "community_name": "scripts/modelo_xgboost.py",
-      "file_type": "code",
-      "norm_label": "entrenar_pesado()",
-      "source_file": "scripts/peso_recencia.py",
-      "source_location": "L16"
     },
     {
       "id": "scripts_auditoria2_tabla_fuga_main",
@@ -6906,6 +6630,30 @@
       "norm_label": "resultados()",
       "source_file": "modelos/selecciones/evaluar_selecciones.py",
       "source_location": "L37"
+    },
+    {
+      "id": "modelos_selecciones_nota_jugadores_selecciones_main",
+      "label": "main()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 50,
+      "community_name": "pronostico_selecciones.py",
+      "file_type": "code",
+      "norm_label": "main()",
+      "source_file": "modelos/selecciones/nota_jugadores_selecciones.py",
+      "source_location": "L49"
+    },
+    {
+      "id": "modelos_selecciones_nota_jugadores_selecciones_num",
+      "label": "num()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 50,
+      "community_name": "pronostico_selecciones.py",
+      "file_type": "code",
+      "norm_label": "num()",
+      "source_file": "modelos/selecciones/nota_jugadores_selecciones.py",
+      "source_location": "L45"
     },
     {
       "id": "modelos_selecciones_pronostico_selecciones_arbitro",
@@ -7232,52 +6980,28 @@
       "source_location": "L53"
     },
     {
-      "id": "scripts_sondeo_temporadas_antiguas_lista",
-      "label": "lista()",
+      "id": "redes_plantillas_colores_curar_hexa",
+      "label": "hexa()",
       "_callable": true,
       "_origin": "ast",
       "community": 56,
       "community_name": "sondeo_temporadas_antiguas.py",
       "file_type": "code",
-      "norm_label": "lista()",
-      "source_file": "scripts/sondeo_temporadas_antiguas.py",
-      "source_location": "L48"
+      "norm_label": "hexa()",
+      "source_file": "redes/plantillas/colores/curar.py",
+      "source_location": "L69"
     },
     {
-      "id": "scripts_sondeo_temporadas_antiguas_main",
-      "label": "main()",
+      "id": "redes_plantillas_colores_curar_kit",
+      "label": "kit()",
       "_callable": true,
       "_origin": "ast",
       "community": 56,
       "community_name": "sondeo_temporadas_antiguas.py",
       "file_type": "code",
-      "norm_label": "main()",
-      "source_file": "scripts/sondeo_temporadas_antiguas.py",
-      "source_location": "L58"
-    },
-    {
-      "id": "scripts_sondeo_temporadas_antiguas_pedir",
-      "label": "pedir()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 56,
-      "community_name": "sondeo_temporadas_antiguas.py",
-      "file_type": "code",
-      "norm_label": "pedir()",
-      "source_file": "scripts/sondeo_temporadas_antiguas.py",
-      "source_location": "L29"
-    },
-    {
-      "id": "scripts_sondeo_temporadas_antiguas_terminado",
-      "label": "terminado()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 56,
-      "community_name": "sondeo_temporadas_antiguas.py",
-      "file_type": "code",
-      "norm_label": "terminado()",
-      "source_file": "scripts/sondeo_temporadas_antiguas.py",
-      "source_location": "L54"
+      "norm_label": "kit()",
+      "source_file": "redes/plantillas/colores/curar.py",
+      "source_location": "L74"
     },
     {
       "id": "scripts_censo_endpoints_desempaquetar",
@@ -7338,6 +7062,54 @@
       "norm_label": "probar()",
       "source_file": "scripts/censo_endpoints.py",
       "source_location": "L97"
+    },
+    {
+      "id": "scripts_actualizar_datos_main",
+      "label": "main()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "requests",
+      "file_type": "code",
+      "norm_label": "main()",
+      "source_file": "scripts/actualizar_datos.py",
+      "source_location": "L71"
+    },
+    {
+      "id": "scripts_actualizar_datos_obtener_detalle_partido",
+      "label": "obtener_detalle_partido()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "requests",
+      "file_type": "code",
+      "norm_label": "obtener_detalle_partido()",
+      "source_file": "scripts/actualizar_datos.py",
+      "source_location": "L41"
+    },
+    {
+      "id": "scripts_actualizar_datos_obtener_detalle_partido_extraer_tarjetas",
+      "label": "extraer_tarjetas()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "requests",
+      "file_type": "code",
+      "norm_label": "extraer_tarjetas()",
+      "source_file": "scripts/actualizar_datos.py",
+      "source_location": "L50"
+    },
+    {
+      "id": "scripts_actualizar_datos_obtener_partidos_recientes",
+      "label": "obtener_partidos_recientes()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "requests",
+      "file_type": "code",
+      "norm_label": "obtener_partidos_recientes()",
+      "source_file": "scripts/actualizar_datos.py",
+      "source_location": "L25"
     },
     {
       "id": "scripts_buscar_ligas_desempaquetar",
@@ -7412,6 +7184,54 @@
       "source_location": "L86"
     },
     {
+      "id": "scripts_cosechar_cuotas_desempaquetar",
+      "label": "desempaquetar()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "requests",
+      "file_type": "code",
+      "norm_label": "desempaquetar()",
+      "source_file": "scripts/cosechar_cuotas.py",
+      "source_location": "L105"
+    },
+    {
+      "id": "scripts_cosechar_cuotas_main",
+      "label": "main()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "requests",
+      "file_type": "code",
+      "norm_label": "main()",
+      "source_file": "scripts/cosechar_cuotas.py",
+      "source_location": "L121"
+    },
+    {
+      "id": "scripts_cosechar_cuotas_pedir",
+      "label": "pedir()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "requests",
+      "file_type": "code",
+      "norm_label": "pedir()",
+      "source_file": "scripts/cosechar_cuotas.py",
+      "source_location": "L76"
+    },
+    {
+      "id": "scripts_cosechar_cuotas_ya_tengo",
+      "label": "ya_tengo()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "requests",
+      "file_type": "code",
+      "norm_label": "ya_tengo()",
+      "source_file": "scripts/cosechar_cuotas.py",
+      "source_location": "L114"
+    },
+    {
       "id": "scripts_descargar_football_data_main",
       "label": "main()",
       "_callable": true,
@@ -7422,42 +7242,6 @@
       "norm_label": "main()",
       "source_file": "scripts/descargar_football_data.py",
       "source_location": "L28"
-    },
-    {
-      "id": "scripts_sondeo_boxscore_desempaquetar",
-      "label": "desempaquetar()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "requests",
-      "file_type": "code",
-      "norm_label": "desempaquetar()",
-      "source_file": "scripts/sondeo_boxscore.py",
-      "source_location": "L25"
-    },
-    {
-      "id": "scripts_sondeo_boxscore_main",
-      "label": "main()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "requests",
-      "file_type": "code",
-      "norm_label": "main()",
-      "source_file": "scripts/sondeo_boxscore.py",
-      "source_location": "L34"
-    },
-    {
-      "id": "scripts_sondeo_boxscore_pedir",
-      "label": "pedir()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "requests",
-      "file_type": "code",
-      "norm_label": "pedir()",
-      "source_file": "scripts/sondeo_boxscore.py",
-      "source_location": "L20"
     },
     {
       "id": "scripts_sondeo_h2h_main",
@@ -7518,6 +7302,30 @@
       "norm_label": "pedir()",
       "source_file": "scripts/sondeo_matches.py",
       "source_location": "L40"
+    },
+    {
+      "id": "scripts_sondeo_xg_jugador_main",
+      "label": "main()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "requests",
+      "file_type": "code",
+      "norm_label": "main()",
+      "source_file": "scripts/sondeo_xg_jugador.py",
+      "source_location": "L44"
+    },
+    {
+      "id": "scripts_sondeo_xg_jugador_pedir",
+      "label": "pedir()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "requests",
+      "file_type": "code",
+      "norm_label": "pedir()",
+      "source_file": "scripts/sondeo_xg_jugador.py",
+      "source_location": "L27"
     },
     {
       "id": "modelos_selecciones_sin_empate_ajustar_sin_empate",
@@ -7925,7 +7733,7 @@
       "file_type": "code",
       "norm_label": "balon_oro_indice()",
       "source_file": "redes/plantillas/datos_rankings.py",
-      "source_location": "L342"
+      "source_location": "L347"
     },
     {
       "id": "redes_plantillas_datos_rankings_buscar",
@@ -8216,31 +8024,43 @@
       "source_location": "L36"
     },
     {
-      "id": "modelos_sueltos_pronostico_partido_ajustar",
-      "label": "ajustar()",
+      "id": "scripts_censo_estadisticas_cuenta_jugadores",
+      "label": "cuenta_jugadores()",
       "_callable": true,
       "_origin": "ast",
       "community": 72,
       "community_name": "pronostico_partido.py",
       "file_type": "code",
-      "norm_label": "ajustar()",
-      "source_file": "modelos/sueltos/pronostico_partido.py",
-      "source_location": "L24"
+      "norm_label": "cuenta_jugadores()",
+      "source_file": "scripts/censo_estadisticas.py",
+      "source_location": "L83"
     },
     {
-      "id": "modelos_sueltos_pronostico_partido_ajustar_x",
-      "label": "X()",
+      "id": "scripts_censo_estadisticas_desempaquetar",
+      "label": "desempaquetar()",
       "_callable": true,
       "_origin": "ast",
       "community": 72,
       "community_name": "pronostico_partido.py",
       "file_type": "code",
-      "norm_label": "x()",
-      "source_file": "modelos/sueltos/pronostico_partido.py",
-      "source_location": "L27"
+      "norm_label": "desempaquetar()",
+      "source_file": "scripts/censo_estadisticas.py",
+      "source_location": "L67"
     },
     {
-      "id": "modelos_sueltos_pronostico_partido_main",
+      "id": "scripts_censo_estadisticas_estado_de",
+      "label": "estado_de()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 72,
+      "community_name": "pronostico_partido.py",
+      "file_type": "code",
+      "norm_label": "estado_de()",
+      "source_file": "scripts/censo_estadisticas.py",
+      "source_location": "L76"
+    },
+    {
+      "id": "scripts_censo_estadisticas_main",
       "label": "main()",
       "_callable": true,
       "_origin": "ast",
@@ -8248,32 +8068,32 @@
       "community_name": "pronostico_partido.py",
       "file_type": "code",
       "norm_label": "main()",
-      "source_file": "modelos/sueltos/pronostico_partido.py",
-      "source_location": "L44"
+      "source_file": "scripts/censo_estadisticas.py",
+      "source_location": "L112"
     },
     {
-      "id": "modelos_sueltos_pronostico_partido_probs",
-      "label": "probs()",
+      "id": "scripts_censo_estadisticas_partidos_de",
+      "label": "partidos_de()",
       "_callable": true,
       "_origin": "ast",
       "community": 72,
       "community_name": "pronostico_partido.py",
       "file_type": "code",
-      "norm_label": "probs()",
-      "source_file": "modelos/sueltos/pronostico_partido.py",
-      "source_location": "L39"
+      "norm_label": "partidos_de()",
+      "source_file": "scripts/censo_estadisticas.py",
+      "source_location": "L94"
     },
     {
-      "id": "redes_plantillas_equipaciones_lum_c",
-      "label": "c()",
+      "id": "scripts_censo_estadisticas_pedir",
+      "label": "pedir()",
       "_callable": true,
       "_origin": "ast",
       "community": 72,
       "community_name": "pronostico_partido.py",
       "file_type": "code",
-      "norm_label": "c()",
-      "source_file": "redes/plantillas/equipaciones.py",
-      "source_location": "L64"
+      "norm_label": "pedir()",
+      "source_file": "scripts/censo_estadisticas.py",
+      "source_location": "L53"
     },
     {
       "id": "scripts_backfill_jugador_stats_jugadores_unicos",
@@ -8720,30 +8540,6 @@
       "source_location": "L194"
     },
     {
-      "id": "modelos_ambos_marcan_scripts_experimentos_seis_ideas_calcular_arbitro_ventana",
-      "label": "calcular_arbitro_ventana()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 85,
-      "community_name": "pandas",
-      "file_type": "code",
-      "norm_label": "calcular_arbitro_ventana()",
-      "source_file": "modelos/ambos_marcan/scripts/experimentos_seis_ideas.py",
-      "source_location": "L51"
-    },
-    {
-      "id": "modelos_ambos_marcan_scripts_experimentos_seis_ideas_calcular_h2h_reciente",
-      "label": "calcular_h2h_reciente()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 85,
-      "community_name": "pandas",
-      "file_type": "code",
-      "norm_label": "calcular_h2h_reciente()",
-      "source_file": "modelos/ambos_marcan/scripts/experimentos_seis_ideas.py",
-      "source_location": "L103"
-    },
-    {
       "id": "modelos_ambos_marcan_scripts_experimentos_seis_ideas_calcular_impacto_jugador",
       "label": "calcular_impacto_jugador()",
       "_callable": true,
@@ -8768,40 +8564,16 @@
       "source_location": "L206"
     },
     {
-      "id": "modelos_ambos_marcan_scripts_experimentos_seis_ideas_calcular_tabla_goles",
-      "label": "calcular_tabla_goles()",
+      "id": "scripts_calibracion_correct_score_main",
+      "label": "main()",
       "_callable": true,
       "_origin": "ast",
       "community": 85,
       "community_name": "pandas",
       "file_type": "code",
-      "norm_label": "calcular_tabla_goles()",
-      "source_file": "modelos/ambos_marcan/scripts/experimentos_seis_ideas.py",
-      "source_location": "L160"
-    },
-    {
-      "id": "modelos_ambos_marcan_scripts_experimentos_seis_ideas_evaluar",
-      "label": "evaluar()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 85,
-      "community_name": "pandas",
-      "file_type": "code",
-      "norm_label": "evaluar()",
-      "source_file": "modelos/ambos_marcan/scripts/experimentos_seis_ideas.py",
-      "source_location": "L13"
-    },
-    {
-      "id": "modelos_selecciones_modelo_selecciones_prueba_hacia_delante",
-      "label": "prueba_hacia_delante()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 85,
-      "community_name": "pandas",
-      "file_type": "code",
-      "norm_label": "prueba_hacia_delante()",
-      "source_file": "modelos/selecciones/modelo_selecciones.py",
-      "source_location": "L170"
+      "norm_label": "main()",
+      "source_file": "scripts/calibracion_correct_score.py",
+      "source_location": "L38"
     },
     {
       "id": "scripts_calibracion_mercado_main",
@@ -8814,6 +8586,42 @@
       "norm_label": "main()",
       "source_file": "scripts/calibracion_mercado.py",
       "source_location": "L38"
+    },
+    {
+      "id": "scripts_experimento_edad_valor_main",
+      "label": "main()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 85,
+      "community_name": "pandas",
+      "file_type": "code",
+      "norm_label": "main()",
+      "source_file": "scripts/experimento_edad_valor.py",
+      "source_location": "L79"
+    },
+    {
+      "id": "scripts_experimento_edad_valor_once_largo",
+      "label": "once_largo()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 85,
+      "community_name": "pandas",
+      "file_type": "code",
+      "norm_label": "once_largo()",
+      "source_file": "scripts/experimento_edad_valor.py",
+      "source_location": "L33"
+    },
+    {
+      "id": "scripts_experimento_edad_valor_rasgos",
+      "label": "rasgos()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 85,
+      "community_name": "pandas",
+      "file_type": "code",
+      "norm_label": "rasgos()",
+      "source_file": "scripts/experimento_edad_valor.py",
+      "source_location": "L46"
     },
     {
       "id": "scripts_experimento_lesiones_lesiones",
@@ -8876,42 +8684,6 @@
       "source_location": "L46"
     },
     {
-      "id": "scripts_experimento_xg_jugador_v2_main",
-      "label": "main()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 85,
-      "community_name": "pandas",
-      "file_type": "code",
-      "norm_label": "main()",
-      "source_file": "scripts/experimento_xg_jugador_v2.py",
-      "source_location": "L84"
-    },
-    {
-      "id": "scripts_experimento_xg_jugador_v2_rasgos",
-      "label": "rasgos()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 85,
-      "community_name": "pandas",
-      "file_type": "code",
-      "norm_label": "rasgos()",
-      "source_file": "scripts/experimento_xg_jugador_v2.py",
-      "source_location": "L65"
-    },
-    {
-      "id": "scripts_experimento_xg_jugador_v2_tabla_jugadores",
-      "label": "tabla_jugadores()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 85,
-      "community_name": "pandas",
-      "file_type": "code",
-      "norm_label": "tabla_jugadores()",
-      "source_file": "scripts/experimento_xg_jugador_v2.py",
-      "source_location": "L34"
-    },
-    {
       "id": "scripts_experimentos_btts_evaluar",
       "label": "evaluar()",
       "_callable": true,
@@ -8921,18 +8693,6 @@
       "file_type": "code",
       "norm_label": "evaluar()",
       "source_file": "scripts/experimentos_btts.py",
-      "source_location": "L12"
-    },
-    {
-      "id": "scripts_experimentos_forma_reciente_evaluar",
-      "label": "evaluar()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 85,
-      "community_name": "pandas",
-      "file_type": "code",
-      "norm_label": "evaluar()",
-      "source_file": "scripts/experimentos_forma_reciente.py",
       "source_location": "L12"
     },
     {
@@ -9068,6 +8828,102 @@
       "source_location": "L37"
     },
     {
+      "id": "scripts_evaluar_mercados_brier",
+      "label": "brier()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 87,
+      "community_name": "casas_contra_cierre.py",
+      "file_type": "code",
+      "norm_label": "brier()",
+      "source_file": "scripts/evaluar_mercados.py",
+      "source_location": "L132"
+    },
+    {
+      "id": "scripts_evaluar_mercados_cargar_cuotas_crudas",
+      "label": "cargar_cuotas_crudas()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 87,
+      "community_name": "casas_contra_cierre.py",
+      "file_type": "code",
+      "norm_label": "cargar_cuotas_crudas()",
+      "source_file": "scripts/evaluar_mercados.py",
+      "source_location": "L68"
+    },
+    {
+      "id": "scripts_evaluar_mercados_evaluar_uno",
+      "label": "evaluar_uno()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 87,
+      "community_name": "casas_contra_cierre.py",
+      "file_type": "code",
+      "norm_label": "evaluar_uno()",
+      "source_file": "scripts/evaluar_mercados.py",
+      "source_location": "L154"
+    },
+    {
+      "id": "scripts_evaluar_mercados_main",
+      "label": "main()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 87,
+      "community_name": "casas_contra_cierre.py",
+      "file_type": "code",
+      "norm_label": "main()",
+      "source_file": "scripts/evaluar_mercados.py",
+      "source_location": "L217"
+    },
+    {
+      "id": "scripts_evaluar_mercados_mejor_peso",
+      "label": "mejor_peso()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 87,
+      "community_name": "casas_contra_cierre.py",
+      "file_type": "code",
+      "norm_label": "mejor_peso()",
+      "source_file": "scripts/evaluar_mercados.py",
+      "source_location": "L141"
+    },
+    {
+      "id": "scripts_evaluar_mercados_mejor_peso_mezclar",
+      "label": "mezclar()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 87,
+      "community_name": "casas_contra_cierre.py",
+      "file_type": "code",
+      "norm_label": "mezclar()",
+      "source_file": "scripts/evaluar_mercados.py",
+      "source_location": "L142"
+    },
+    {
+      "id": "scripts_evaluar_mercados_mercado_por_partido",
+      "label": "mercado_por_partido()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 87,
+      "community_name": "casas_contra_cierre.py",
+      "file_type": "code",
+      "norm_label": "mercado_por_partido()",
+      "source_file": "scripts/evaluar_mercados.py",
+      "source_location": "L98"
+    },
+    {
+      "id": "scripts_evaluar_mercados_probabilidad_binaria",
+      "label": "probabilidad_binaria()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 87,
+      "community_name": "casas_contra_cierre.py",
+      "file_type": "code",
+      "norm_label": "probabilidad_binaria()",
+      "source_file": "scripts/evaluar_mercados.py",
+      "source_location": "L91"
+    },
+    {
       "id": "modelos_selecciones_forma_clubes_lista",
       "label": "lista()",
       "_callable": true,
@@ -9102,6 +8958,102 @@
       "norm_label": "pedir()",
       "source_file": "modelos/selecciones/forma_clubes.py",
       "source_location": "L29"
+    },
+    {
+      "id": "scripts_backfill_historico_completo_es_derbi",
+      "label": "es_derbi()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "collections",
+      "file_type": "code",
+      "norm_label": "es_derbi()",
+      "source_file": "scripts/backfill_historico_completo.py",
+      "source_location": "L35"
+    },
+    {
+      "id": "scripts_backfill_historico_completo_main",
+      "label": "main()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "collections",
+      "file_type": "code",
+      "norm_label": "main()",
+      "source_file": "scripts/backfill_historico_completo.py",
+      "source_location": "L110"
+    },
+    {
+      "id": "scripts_backfill_historico_completo_obtener_detalle_completo",
+      "label": "obtener_detalle_completo()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "collections",
+      "file_type": "code",
+      "norm_label": "obtener_detalle_completo()",
+      "source_file": "scripts/backfill_historico_completo.py",
+      "source_location": "L53"
+    },
+    {
+      "id": "scripts_backfill_historico_completo_obtener_detalle_completo_extraer",
+      "label": "extraer()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "collections",
+      "file_type": "code",
+      "norm_label": "extraer()",
+      "source_file": "scripts/backfill_historico_completo.py",
+      "source_location": "L65"
+    },
+    {
+      "id": "scripts_backfill_historico_completo_obtener_pagina_partidos",
+      "label": "obtener_pagina_partidos()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "collections",
+      "file_type": "code",
+      "norm_label": "obtener_pagina_partidos()",
+      "source_file": "scripts/backfill_historico_completo.py",
+      "source_location": "L39"
+    },
+    {
+      "id": "scripts_censo_mercados_crudo_desempaquetar",
+      "label": "desempaquetar()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "collections",
+      "file_type": "code",
+      "norm_label": "desempaquetar()",
+      "source_file": "scripts/censo_mercados_crudo.py",
+      "source_location": "L50"
+    },
+    {
+      "id": "scripts_censo_mercados_crudo_main",
+      "label": "main()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "collections",
+      "file_type": "code",
+      "norm_label": "main()",
+      "source_file": "scripts/censo_mercados_crudo.py",
+      "source_location": "L54"
+    },
+    {
+      "id": "scripts_censo_mercados_crudo_pedir",
+      "label": "pedir()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "collections",
+      "file_type": "code",
+      "norm_label": "pedir()",
+      "source_file": "scripts/censo_mercados_crudo.py",
+      "source_location": "L32"
     },
     {
       "id": "scripts_sondeo_gol_1parte_main",
@@ -9164,6 +9116,54 @@
       "source_location": "L36"
     },
     {
+      "id": "scripts_sondeo_temporadas_antiguas_lista",
+      "label": "lista()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "collections",
+      "file_type": "code",
+      "norm_label": "lista()",
+      "source_file": "scripts/sondeo_temporadas_antiguas.py",
+      "source_location": "L48"
+    },
+    {
+      "id": "scripts_sondeo_temporadas_antiguas_main",
+      "label": "main()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "collections",
+      "file_type": "code",
+      "norm_label": "main()",
+      "source_file": "scripts/sondeo_temporadas_antiguas.py",
+      "source_location": "L58"
+    },
+    {
+      "id": "scripts_sondeo_temporadas_antiguas_pedir",
+      "label": "pedir()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "collections",
+      "file_type": "code",
+      "norm_label": "pedir()",
+      "source_file": "scripts/sondeo_temporadas_antiguas.py",
+      "source_location": "L29"
+    },
+    {
+      "id": "scripts_sondeo_temporadas_antiguas_terminado",
+      "label": "terminado()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "collections",
+      "file_type": "code",
+      "norm_label": "terminado()",
+      "source_file": "scripts/sondeo_temporadas_antiguas.py",
+      "source_location": "L54"
+    },
+    {
       "id": "scripts_backfill_h2h_profundo",
       "label": "backfill_h2h_profundo.py",
       "_origin": "ast",
@@ -9183,6 +9183,17 @@
       "file_type": "rationale",
       "norm_label": "h2h profundo: /head-2-head da las ultimas 10 confrontaciones reales entre dos...",
       "source_file": "scripts/backfill_h2h_profundo.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "modelos_selecciones_nations_league",
+      "label": "nations_league.py",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "contraste_directo.py",
+      "file_type": "code",
+      "norm_label": "nations_league.py",
+      "source_file": "modelos/selecciones/nations_league.py",
       "source_location": "L1"
     },
     {
@@ -9219,15 +9230,48 @@
       "source_location": "L1"
     },
     {
-      "id": "scripts_jugadores_redes",
-      "label": "jugadores_redes.py",
+      "id": "modelos_selecciones_nations_league_rationale_1",
+      "label": "Ciclo de datos de la Nations League, TODAS las selecciones (26/09/2026). Tema\u2026",
       "_origin": "ast",
       "community": 1,
       "community_name": "contraste_directo.py",
-      "file_type": "code",
-      "norm_label": "jugadores_redes.py",
-      "source_file": "scripts/jugadores_redes.py",
+      "file_type": "rationale",
+      "norm_label": "ciclo de datos de la nations league, todas las selecciones (26/09/2026). tema...",
+      "source_file": "modelos/selecciones/nations_league.py",
       "source_location": "L1"
+    },
+    {
+      "id": "modelos_selecciones_nations_league_rationale_122",
+      "label": "Partidos de la Nations League d\u00eda a d\u00eda, de DIAS_ATRAS d\u00edas atr\u00e1s a\u2026",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "contraste_directo.py",
+      "file_type": "rationale",
+      "norm_label": "partidos de la nations league dia a dia, de dias_atras dias atras a...",
+      "source_file": "modelos/selecciones/nations_league.py",
+      "source_location": "L122"
+    },
+    {
+      "id": "modelos_selecciones_nations_league_rationale_165",
+      "label": "Todos los partidos vistos en raw (listas de equipos y calendario), el m\u00e1s nuevo\u2026",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "contraste_directo.py",
+      "file_type": "rationale",
+      "norm_label": "todos los partidos vistos en raw (listas de equipos y calendario), el mas nuevo...",
+      "source_file": "modelos/selecciones/nations_league.py",
+      "source_location": "L165"
+    },
+    {
+      "id": "modelos_selecciones_nations_league_rationale_53",
+      "label": "Lee raw/<nombre>.json si existe (salvo forzar); si no, pide y lo guarda.",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "contraste_directo.py",
+      "file_type": "rationale",
+      "norm_label": "lee raw/<nombre>.json si existe (salvo forzar); si no, pide y lo guarda.",
+      "source_file": "modelos/selecciones/nations_league.py",
+      "source_location": "L53"
     },
     {
       "id": "modelos_selecciones_onces_prensa_rationale_1",
@@ -9296,17 +9340,6 @@
       "source_location": "L1"
     },
     {
-      "id": "scripts_jugadores_redes_rationale_1",
-      "label": "Estad\u00edsticas de jugadores de las 5 grandes para las plantillas de redes\u2026",
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "contraste_directo.py",
-      "file_type": "rationale",
-      "norm_label": "estadisticas de jugadores de las 5 grandes para las plantillas de redes...",
-      "source_file": "scripts/jugadores_redes.py",
-      "source_location": "L1"
-    },
-    {
       "id": "scripts_ambos_marcan_hoy",
       "label": "ambos_marcan_hoy.py",
       "_origin": "ast",
@@ -9338,10 +9371,10 @@
       "node_kind": "heading",
       "norm_label": "29/09/2026",
       "source_file": "BITACORA.md",
-      "source_location": "L132"
+      "source_location": "L137"
     },
     {
-      "id": "bitacora_cambios_de_c\u00f3digo_y_ficheros_134",
+      "id": "bitacora_cambios_de_c\u00f3digo_y_ficheros_139",
       "label": "Cambios de c\u00f3digo y ficheros",
       "_origin": "ast",
       "community": 10,
@@ -9350,7 +9383,7 @@
       "node_kind": "heading",
       "norm_label": "cambios de codigo y ficheros",
       "source_file": "BITACORA.md",
-      "source_location": "L134"
+      "source_location": "L139"
     },
     {
       "id": "bitacora_comprobaciones_hechas_en_la_revisi\u00f3n_de_c\u00f3digo_sin_cambios",
@@ -9362,7 +9395,7 @@
       "node_kind": "heading",
       "norm_label": "comprobaciones hechas en la revision de codigo (sin cambios)",
       "source_file": "BITACORA.md",
-      "source_location": "L167"
+      "source_location": "L172"
     },
     {
       "id": "bitacora_errores_en_los_datos_encontrados",
@@ -9374,7 +9407,7 @@
       "node_kind": "heading",
       "norm_label": "errores en los datos encontrados",
       "source_file": "BITACORA.md",
-      "source_location": "L197"
+      "source_location": "L202"
     },
     {
       "id": "bitacora_fuera_del_c\u00f3digo_maquetas_de_app_sin_cambios_en_el_repositorio",
@@ -9386,7 +9419,7 @@
       "node_kind": "heading",
       "norm_label": "fuera del codigo: maquetas de app (sin cambios en el repositorio)",
       "source_file": "BITACORA.md",
-      "source_location": "L186"
+      "source_location": "L191"
     },
     {
       "id": "bitacora_ideas_probadas",
@@ -9398,7 +9431,7 @@
       "node_kind": "heading",
       "norm_label": "ideas probadas",
       "source_file": "BITACORA.md",
-      "source_location": "L154"
+      "source_location": "L159"
     },
     {
       "id": "bitacora_pendiente_ideas_sin_probar",
@@ -9410,7 +9443,7 @@
       "node_kind": "heading",
       "norm_label": "pendiente / ideas sin probar",
       "source_file": "BITACORA.md",
-      "source_location": "L206"
+      "source_location": "L211"
     },
     {
       "id": "scripts_ambos_marcan_hoy_rationale_1",
@@ -9635,81 +9668,26 @@
       "source_location": "L11"
     },
     {
-      "id": "scripts_actualizar_datos",
-      "label": "actualizar_datos.py",
-      "_origin": "ast",
-      "community": 103,
-      "community_name": "time",
-      "file_type": "code",
-      "norm_label": "actualizar_datos.py",
-      "source_file": "scripts/actualizar_datos.py",
-      "source_location": "L1"
-    },
-    {
-      "id": "scripts_backfill_historico_completo",
-      "label": "backfill_historico_completo.py",
-      "_origin": "ast",
-      "community": 103,
-      "community_name": "time",
-      "file_type": "code",
-      "norm_label": "backfill_historico_completo.py",
-      "source_file": "scripts/backfill_historico_completo.py",
-      "source_location": "L1"
-    },
-    {
-      "id": "scripts_sondeo_xg_jugador",
-      "label": "sondeo_xg_jugador.py",
-      "_origin": "ast",
-      "community": 103,
-      "community_name": "time",
-      "file_type": "code",
-      "norm_label": "sondeo_xg_jugador.py",
-      "source_file": "scripts/sondeo_xg_jugador.py",
-      "source_location": "L1"
-    },
-    {
-      "id": "scripts_actualizar_datos_rationale_1",
-      "label": "Se ejecuta autom\u00e1ticamente cada d\u00eda v\u00eda GitHub Actions. Descarga los partidos\u2026",
+      "id": "modelos_selecciones_modelo_selecciones_rationale_142",
+      "label": "Media de los ajustes de cada objetivo (p. ej. goles y xG) para local y\u2026",
       "_origin": "ast",
       "community": 103,
       "community_name": "time",
       "file_type": "rationale",
-      "norm_label": "se ejecuta automaticamente cada dia via github actions. descarga los partidos...",
-      "source_file": "scripts/actualizar_datos.py",
-      "source_location": "L1"
+      "norm_label": "media de los ajustes de cada objetivo (p. ej. goles y xg) para local y...",
+      "source_file": "modelos/selecciones/modelo_selecciones.py",
+      "source_location": "L142"
     },
     {
-      "id": "scripts_backfill_historico_completo_rationale_1",
-      "label": "BACKFILL hist\u00f3rico completo (ejecuci\u00f3n puntual, no diaria). Trae los ~380\u2026",
+      "id": "modelos_selecciones_modelo_selecciones_rationale_95",
+      "label": "Devuelve f(atacante, defensor, casa, amistoso, ext) -> conteo esperado del\u2026",
       "_origin": "ast",
       "community": 103,
       "community_name": "time",
       "file_type": "rationale",
-      "norm_label": "backfill historico completo (ejecucion puntual, no diaria). trae los ~380...",
-      "source_file": "scripts/backfill_historico_completo.py",
-      "source_location": "L1"
-    },
-    {
-      "id": "scripts_backfill_historico_completo_rationale_54",
-      "label": "Devuelve (fila_resumen_partido, lista_eventos_de_tarjeta_por_jugador). Los\u2026",
-      "_origin": "ast",
-      "community": 103,
-      "community_name": "time",
-      "file_type": "rationale",
-      "norm_label": "devuelve (fila_resumen_partido, lista_eventos_de_tarjeta_por_jugador). los...",
-      "source_file": "scripts/backfill_historico_completo.py",
-      "source_location": "L54"
-    },
-    {
-      "id": "scripts_sondeo_xg_jugador_rationale_1",
-      "label": "SONDEO: \u00bfdesde cu\u00e1ndo da la API xG y xA POR JUGADOR? (26/09/2026) /box-\u2026",
-      "_origin": "ast",
-      "community": 103,
-      "community_name": "time",
-      "file_type": "rationale",
-      "norm_label": "sondeo: \u00bfdesde cuando da la api xg y xa por jugador? (26/09/2026) /box-...",
-      "source_file": "scripts/sondeo_xg_jugador.py",
-      "source_location": "L1"
+      "norm_label": "devuelve f(atacante, defensor, casa, amistoso, ext) -> conteo esperado del...",
+      "source_file": "modelos/selecciones/modelo_selecciones.py",
+      "source_location": "L95"
     },
     {
       "id": "sondeo_temporadas_antiguas",
@@ -10323,17 +10301,6 @@
       "source_location": "L1"
     },
     {
-      "id": "scripts_experimento_edad_valor",
-      "label": "experimento_edad_valor.py",
-      "_origin": "ast",
-      "community": 12,
-      "community_name": "sys",
-      "file_type": "code",
-      "norm_label": "experimento_edad_valor.py",
-      "source_file": "scripts/experimento_edad_valor.py",
-      "source_location": "L1"
-    },
-    {
       "id": "scripts_experimento_temporada_2022",
       "label": "experimento_temporada_2022.py",
       "_origin": "ast",
@@ -10364,6 +10331,17 @@
       "file_type": "code",
       "norm_label": "experimento_xg_jugador.py",
       "source_file": "scripts/experimento_xg_jugador.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "scripts_experimento_xg_jugador_v2",
+      "label": "experimento_xg_jugador_v2.py",
+      "_origin": "ast",
+      "community": 12,
+      "community_name": "sys",
+      "file_type": "code",
+      "norm_label": "experimento_xg_jugador_v2.py",
+      "source_file": "scripts/experimento_xg_jugador_v2.py",
       "source_location": "L1"
     },
     {
@@ -10433,28 +10411,6 @@
       "source_location": "L1"
     },
     {
-      "id": "scripts_experimento_edad_valor_rationale_1",
-      "label": "Edad media y valor de mercado medio del once, para ambos marcan (petici\u00f3n del\u2026",
-      "_origin": "ast",
-      "community": 12,
-      "community_name": "sys",
-      "file_type": "rationale",
-      "norm_label": "edad media y valor de mercado medio del once, para ambos marcan (peticion del...",
-      "source_file": "scripts/experimento_edad_valor.py",
-      "source_location": "L1"
-    },
-    {
-      "id": "scripts_experimento_edad_valor_rationale_34",
-      "label": "Una fila por titular: match_id, lado, orden (0 = portero), jugador_id, fecha.",
-      "_origin": "ast",
-      "community": 12,
-      "community_name": "sys",
-      "file_type": "rationale",
-      "norm_label": "una fila por titular: match_id, lado, orden (0 = portero), jugador_id, fecha.",
-      "source_file": "scripts/experimento_edad_valor.py",
-      "source_location": "L34"
-    },
-    {
       "id": "scripts_experimento_temporada_2022_rationale_1",
       "label": "\u00bfAyuda la temporada 2022/23 al modelo oficial de ambos marcan? (28/09/2026)\u2026",
       "_origin": "ast",
@@ -10488,6 +10444,17 @@
       "source_location": "L1"
     },
     {
+      "id": "scripts_experimento_xg_jugador_v2_rationale_1",
+      "label": "xG por jugador, segunda vuelta: \u00bfel problema era C\u00d3MO se le dio al modelo?\u2026",
+      "_origin": "ast",
+      "community": 12,
+      "community_name": "sys",
+      "file_type": "rationale",
+      "norm_label": "xg por jugador, segunda vuelta: \u00bfel problema era como se le dio al modelo?...",
+      "source_file": "scripts/experimento_xg_jugador_v2.py",
+      "source_location": "L1"
+    },
+    {
       "id": "scripts_modelo_ambos_marcan_rationale_1",
       "label": "EL modelo de ambos marcan: la configuraci\u00f3n que mejor ha funcionado (fijada el\u2026",
       "_origin": "ast",
@@ -10497,17 +10464,6 @@
       "norm_label": "el modelo de ambos marcan: la configuracion que mejor ha funcionado (fijada el...",
       "source_file": "scripts/modelo_ambos_marcan.py",
       "source_location": "L1"
-    },
-    {
-      "id": "scripts_modelo_ambos_marcan_rationale_60",
-      "label": "Hist\u00f3rico con rasgos + precio previo. Devuelve (tabla, columnas del modelo).",
-      "_origin": "ast",
-      "community": 12,
-      "community_name": "sys",
-      "file_type": "rationale",
-      "norm_label": "historico con rasgos + precio previo. devuelve (tabla, columnas del modelo).",
-      "source_file": "scripts/modelo_ambos_marcan.py",
-      "source_location": "L60"
     },
     {
       "id": "scripts_portero_rationale_1",
@@ -10591,17 +10547,6 @@
       "source_location": "L1"
     },
     {
-      "id": "scripts_calibracion_correct_score",
-      "label": "calibracion_correct_score.py",
-      "_origin": "ast",
-      "community": 124,
-      "community_name": "datetime",
-      "file_type": "code",
-      "norm_label": "calibracion_correct_score.py",
-      "source_file": "scripts/calibracion_correct_score.py",
-      "source_location": "L1"
-    },
-    {
       "id": "scripts_censo_ligas_blandas",
       "label": "censo_ligas_blandas.py",
       "_origin": "ast",
@@ -10613,25 +10558,25 @@
       "source_location": "L1"
     },
     {
-      "id": "scripts_censo_mercados_crudo",
-      "label": "censo_mercados_crudo.py",
+      "id": "scripts_jugadores_redes",
+      "label": "jugadores_redes.py",
       "_origin": "ast",
       "community": 124,
       "community_name": "datetime",
       "file_type": "code",
-      "norm_label": "censo_mercados_crudo.py",
-      "source_file": "scripts/censo_mercados_crudo.py",
+      "norm_label": "jugadores_redes.py",
+      "source_file": "scripts/jugadores_redes.py",
       "source_location": "L1"
     },
     {
-      "id": "scripts_calibracion_correct_score_rationale_1",
-      "label": "\u00bfEST\u00c1 CALIBRADO EL MERCADO DE MARCADOR EXACTO (CORRECT SCORE)? Pregunta del\u2026",
+      "id": "scripts_sondeo_boxscore",
+      "label": "sondeo_boxscore.py",
       "_origin": "ast",
       "community": 124,
       "community_name": "datetime",
-      "file_type": "rationale",
-      "norm_label": "\u00bfesta calibrado el mercado de marcador exacto (correct score)? pregunta del...",
-      "source_file": "scripts/calibracion_correct_score.py",
+      "file_type": "code",
+      "norm_label": "sondeo_boxscore.py",
+      "source_file": "scripts/sondeo_boxscore.py",
       "source_location": "L1"
     },
     {
@@ -10646,14 +10591,25 @@
       "source_location": "L1"
     },
     {
-      "id": "scripts_censo_mercados_crudo_rationale_1",
-      "label": "CENSO CRUDO: qu\u00e9 mercados ofrece de verdad la API, y con qu\u00e9 profundidad. Los\u2026",
+      "id": "scripts_jugadores_redes_rationale_1",
+      "label": "Estad\u00edsticas de jugadores de las 5 grandes para las plantillas de redes\u2026",
       "_origin": "ast",
       "community": 124,
       "community_name": "datetime",
       "file_type": "rationale",
-      "norm_label": "censo crudo: que mercados ofrece de verdad la api, y con que profundidad. los...",
-      "source_file": "scripts/censo_mercados_crudo.py",
+      "norm_label": "estadisticas de jugadores de las 5 grandes para las plantillas de redes...",
+      "source_file": "scripts/jugadores_redes.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "scripts_sondeo_boxscore_rationale_1",
+      "label": "SONDEO: \u00bfQUE TRAE /box-score DE VERDAD? Antes de construir nada sobre esto,\u2026",
+      "_origin": "ast",
+      "community": 124,
+      "community_name": "datetime",
+      "file_type": "rationale",
+      "norm_label": "sondeo: \u00bfque trae /box-score de verdad? antes de construir nada sobre esto,...",
+      "source_file": "scripts/sondeo_boxscore.py",
       "source_location": "L1"
     },
     {
@@ -10734,26 +10690,37 @@
       "source_location": "L1"
     },
     {
-      "id": "scripts_cosechar_cuotas",
-      "label": "cosechar_cuotas.py",
+      "id": "scripts_agenda_de_hoy",
+      "label": "agenda_de_hoy.py",
       "_origin": "ast",
       "community": 127,
       "community_name": "cosechar_cuotas.py",
       "file_type": "code",
-      "norm_label": "cosechar_cuotas.py",
-      "source_file": "scripts/cosechar_cuotas.py",
+      "norm_label": "agenda_de_hoy.py",
+      "source_file": "scripts/agenda_de_hoy.py",
       "source_location": "L1"
     },
     {
-      "id": "scripts_cosechar_cuotas_rationale_1",
-      "label": "COSECHAR CUOTAS ANTES DE QUE CADUQUEN EL CUELLO DE BOTELLA QUE ESTO ATACA\u2026",
+      "id": "scripts_agenda_de_hoy_rationale_1",
+      "label": "AGENDA DE HOY: los descansos de hoy, a partir del calendario del mes. Lee\u2026",
       "_origin": "ast",
       "community": 127,
       "community_name": "cosechar_cuotas.py",
       "file_type": "rationale",
-      "norm_label": "cosechar cuotas antes de que caduquen el cuello de botella que esto ataca...",
-      "source_file": "scripts/cosechar_cuotas.py",
+      "norm_label": "agenda de hoy: los descansos de hoy, a partir del calendario del mes. lee...",
+      "source_file": "scripts/agenda_de_hoy.py",
       "source_location": "L1"
+    },
+    {
+      "id": "scripts_agenda_de_hoy_rationale_43",
+      "label": "Agrupa los descansos que caen juntos. Una franja con cinco partidos es una\u2026",
+      "_origin": "ast",
+      "community": 127,
+      "community_name": "cosechar_cuotas.py",
+      "file_type": "rationale",
+      "norm_label": "agrupa los descansos que caen juntos. una franja con cinco partidos es una...",
+      "source_file": "scripts/agenda_de_hoy.py",
+      "source_location": "L43"
     },
     {
       "id": "modelos_ambos_marcan_scripts_rasgos",
@@ -10765,6 +10732,17 @@
       "norm_label": "ambos_marcan/scripts/rasgos.py",
       "source_file": "modelos/ambos_marcan/scripts/rasgos.py",
       "source_location": "L1"
+    },
+    {
+      "id": "modelos_ambos_marcan_scripts_evaluar_mercados_rationale_69",
+      "label": "Las dos fuentes juntas, sin filtrar todav\u00eda por familia.",
+      "_origin": "ast",
+      "community": 13,
+      "community_name": "ambos_marcan/scripts/rasgos.py",
+      "file_type": "rationale",
+      "norm_label": "las dos fuentes juntas, sin filtrar todavia por familia.",
+      "source_file": "modelos/ambos_marcan/scripts/evaluar_mercados.py",
+      "source_location": "L69"
     },
     {
       "id": "modelos_ambos_marcan_scripts_rasgos_rationale_1",
@@ -11361,17 +11339,6 @@
       "source_location": "L1"
     },
     {
-      "id": "modelos_selecciones_nota_jugadores_selecciones",
-      "label": "nota_jugadores_selecciones.py",
-      "_origin": "ast",
-      "community": 19,
-      "community_name": "json",
-      "file_type": "code",
-      "norm_label": "nota_jugadores_selecciones.py",
-      "source_file": "modelos/selecciones/nota_jugadores_selecciones.py",
-      "source_location": "L1"
-    },
-    {
       "id": "redes_plantillas_colores_wiki_equipaciones",
       "label": "wiki_equipaciones.py",
       "_origin": "ast",
@@ -11380,28 +11347,6 @@
       "file_type": "code",
       "norm_label": "wiki_equipaciones.py",
       "source_file": "redes/plantillas/colores/wiki_equipaciones.py",
-      "source_location": "L1"
-    },
-    {
-      "id": "scripts_llm_gratis",
-      "label": "llm_gratis.py",
-      "_origin": "ast",
-      "community": 19,
-      "community_name": "json",
-      "file_type": "code",
-      "norm_label": "llm_gratis.py",
-      "source_file": "scripts/llm_gratis.py",
-      "source_location": "L1"
-    },
-    {
-      "id": "modelos_selecciones_nota_jugadores_selecciones_rationale_1",
-      "label": "Nota \"justa\" por jugador para Inglaterra-Espa\u00f1a y Chequia-Croacia (26/09/2026).\u2026",
-      "_origin": "ast",
-      "community": 19,
-      "community_name": "json",
-      "file_type": "rationale",
-      "norm_label": "nota \"justa\" por jugador para inglaterra-espana y chequia-croacia (26/09/2026)....",
-      "source_file": "modelos/selecciones/nota_jugadores_selecciones.py",
       "source_location": "L1"
     },
     {
@@ -11425,17 +11370,6 @@
       "norm_label": "con reintentos y espera: wikipedia corta si se le pide deprisa (06/10 solo...",
       "source_file": "redes/plantillas/colores/wiki_equipaciones.py",
       "source_location": "L84"
-    },
-    {
-      "id": "scripts_llm_gratis_rationale_1",
-      "label": "LLM gratuito para tareas MEC\u00c1NICAS (resumir, clasificar, redactar en bloque).\u2026",
-      "_origin": "ast",
-      "community": 19,
-      "community_name": "json",
-      "file_type": "rationale",
-      "norm_label": "llm gratuito para tareas mecanicas (resumir, clasificar, redactar en bloque)....",
-      "source_file": "scripts/llm_gratis.py",
-      "source_location": "L1"
     },
     {
       "id": "scripts_descanso_en_vivo",
@@ -11766,7 +11700,7 @@
       "node_kind": "heading",
       "norm_label": "06/10/2026 \u2014 redes: descargas de api para nombres y champions",
       "source_file": "BITACORA.md",
-      "source_location": "L56"
+      "source_location": "L61"
     },
     {
       "id": "scripts_redes_api_rationale_1",
@@ -11791,59 +11725,48 @@
       "source_location": "L23"
     },
     {
-      "id": "modelos_selecciones_nations_league",
-      "label": "nations_league.py",
+      "id": "scripts_afinar_ambos",
+      "label": "afinar_ambos.py",
       "_origin": "ast",
       "community": 23,
       "community_name": "nations_league.py",
       "file_type": "code",
-      "norm_label": "nations_league.py",
-      "source_file": "modelos/selecciones/nations_league.py",
+      "norm_label": "afinar_ambos.py",
+      "source_file": "scripts/afinar_ambos.py",
       "source_location": "L1"
     },
     {
-      "id": "modelos_selecciones_nations_league_rationale_1",
-      "label": "Ciclo de datos de la Nations League, TODAS las selecciones (26/09/2026). Tema\u2026",
+      "id": "scripts_barrido_hiperparametros",
+      "label": "barrido_hiperparametros.py",
       "_origin": "ast",
       "community": 23,
       "community_name": "nations_league.py",
-      "file_type": "rationale",
-      "norm_label": "ciclo de datos de la nations league, todas las selecciones (26/09/2026). tema...",
-      "source_file": "modelos/selecciones/nations_league.py",
+      "file_type": "code",
+      "norm_label": "barrido_hiperparametros.py",
+      "source_file": "scripts/barrido_hiperparametros.py",
       "source_location": "L1"
     },
     {
-      "id": "modelos_selecciones_nations_league_rationale_122",
-      "label": "Partidos de la Nations League d\u00eda a d\u00eda, de DIAS_ATRAS d\u00edas atr\u00e1s a\u2026",
+      "id": "scripts_peso_recencia",
+      "label": "peso_recencia.py",
       "_origin": "ast",
       "community": 23,
       "community_name": "nations_league.py",
-      "file_type": "rationale",
-      "norm_label": "partidos de la nations league dia a dia, de dias_atras dias atras a...",
-      "source_file": "modelos/selecciones/nations_league.py",
-      "source_location": "L122"
+      "file_type": "code",
+      "norm_label": "peso_recencia.py",
+      "source_file": "scripts/peso_recencia.py",
+      "source_location": "L1"
     },
     {
-      "id": "modelos_selecciones_nations_league_rationale_165",
-      "label": "Todos los partidos vistos en raw (listas de equipos y calendario), el m\u00e1s nuevo\u2026",
+      "id": "scripts_afinar_ambos_rationale_1",
+      "label": "Ajuste interno (hiperpar\u00e1metros) del modelo oficial de ambos marcan\u2026",
       "_origin": "ast",
       "community": 23,
       "community_name": "nations_league.py",
       "file_type": "rationale",
-      "norm_label": "todos los partidos vistos en raw (listas de equipos y calendario), el mas nuevo...",
-      "source_file": "modelos/selecciones/nations_league.py",
-      "source_location": "L165"
-    },
-    {
-      "id": "modelos_selecciones_nations_league_rationale_53",
-      "label": "Lee raw/<nombre>.json si existe (salvo forzar); si no, pide y lo guarda.",
-      "_origin": "ast",
-      "community": 23,
-      "community_name": "nations_league.py",
-      "file_type": "rationale",
-      "norm_label": "lee raw/<nombre>.json si existe (salvo forzar); si no, pide y lo guarda.",
-      "source_file": "modelos/selecciones/nations_league.py",
-      "source_location": "L53"
+      "norm_label": "ajuste interno (hiperparametros) del modelo oficial de ambos marcan...",
+      "source_file": "scripts/afinar_ambos.py",
+      "source_location": "L1"
     },
     {
       "id": "modelos_selecciones_descargar_selecciones",
@@ -12369,6 +12292,17 @@
       "source_location": "L54"
     },
     {
+      "id": "scripts_modelo_ambos_marcan_rationale_60",
+      "label": "Hist\u00f3rico con rasgos + precio previo. Devuelve (tabla, columnas del modelo).",
+      "_origin": "ast",
+      "community": 25,
+      "community_name": "Ambos Marcan -- offshoot enfocado de futbol-pipeline",
+      "file_type": "rationale",
+      "norm_label": "historico con rasgos + precio previo. devuelve (tabla, columnas del modelo).",
+      "source_file": "scripts/modelo_ambos_marcan.py",
+      "source_location": "L60"
+    },
+    {
       "id": "scripts_modelo_ambos_marcan_rationale_74",
       "label": "P(ambos marcan) para los partidos de `mes`, entrenando con todo lo anterior.",
       "_origin": "ast",
@@ -12621,7 +12555,7 @@
       "node_kind": "heading",
       "norm_label": "05/10/2026",
       "source_file": "BITACORA.md",
-      "source_location": "L117"
+      "source_location": "L122"
     },
     {
       "id": "bitacora_05_10_2026_redes_backup_sin_claude",
@@ -12633,7 +12567,7 @@
       "node_kind": "heading",
       "norm_label": "05/10/2026 \u2014 redes: backup sin claude",
       "source_file": "BITACORA.md",
-      "source_location": "L104"
+      "source_location": "L109"
     },
     {
       "id": "bitacora_05_10_2026_redes_fuera_bookies_de_las_im\u00e1genes",
@@ -12645,7 +12579,7 @@
       "node_kind": "heading",
       "norm_label": "05/10/2026 \u2014 redes: fuera \"bookies\" de las imagenes",
       "source_file": "BITACORA.md",
-      "source_location": "L100"
+      "source_location": "L105"
     },
     {
       "id": "bitacora_06_10_2026_colores_de_228_equipos_curados",
@@ -12657,7 +12591,7 @@
       "node_kind": "heading",
       "norm_label": "06/10/2026 \u2014 colores de 228 equipos, curados",
       "source_file": "BITACORA.md",
-      "source_location": "L28"
+      "source_location": "L33"
     },
     {
       "id": "bitacora_06_10_2026_colores_redes_descarga_robusta",
@@ -12669,7 +12603,7 @@
       "node_kind": "heading",
       "norm_label": "06/10/2026 \u2014 colores_redes: descarga robusta",
       "source_file": "BITACORA.md",
-      "source_location": "L32"
+      "source_location": "L37"
     },
     {
       "id": "bitacora_06_10_2026_redes_2yellow_index_por_rol_ataque_medio_defensa_portero",
@@ -12681,7 +12615,7 @@
       "node_kind": "heading",
       "norm_label": "06/10/2026 \u2014 redes: 2yellow index por rol (ataque, medio, defensa, portero)",
       "source_file": "BITACORA.md",
-      "source_location": "L60"
+      "source_location": "L65"
     },
     {
       "id": "bitacora_06_10_2026_redes_2yellow_xi_con_posiciones_reales_y_filtro_de_nivel",
@@ -12693,7 +12627,7 @@
       "node_kind": "heading",
       "norm_label": "06/10/2026 \u2014 redes: 2yellow xi con posiciones reales y filtro de nivel",
       "source_file": "BITACORA.md",
-      "source_location": "L64"
+      "source_location": "L69"
     },
     {
       "id": "bitacora_06_10_2026_redes_api_no_perder_descargas_por_conflictos",
@@ -12705,7 +12639,7 @@
       "node_kind": "heading",
       "norm_label": "06/10/2026 \u2014 redes_api: no perder descargas por conflictos",
       "source_file": "BITACORA.md",
-      "source_location": "L48"
+      "source_location": "L53"
     },
     {
       "id": "bitacora_06_10_2026_redes_correcciones_del_usuario_y_caras_en_jugador_vs_jugador",
@@ -12717,7 +12651,7 @@
       "node_kind": "heading",
       "norm_label": "06/10/2026 \u2014 redes: correcciones del usuario y caras en jugador vs jugador",
       "source_file": "BITACORA.md",
-      "source_location": "L84"
+      "source_location": "L89"
     },
     {
       "id": "bitacora_06_10_2026_redes_formatos_propios_2yellow_xi_2yellow_index_lienzo_4_5_para_ig",
@@ -12729,7 +12663,7 @@
       "node_kind": "heading",
       "norm_label": "06/10/2026 \u2014 redes: formatos propios (2yellow xi, 2yellow index), lienzo 4:5 para ig",
       "source_file": "BITACORA.md",
-      "source_location": "L68"
+      "source_location": "L73"
     },
     {
       "id": "bitacora_06_10_2026_redes_fuera_data_not_betting_advice_18_de_las_im\u00e1genes_y_descripciones",
@@ -12741,7 +12675,7 @@
       "node_kind": "heading",
       "norm_label": "06/10/2026 \u2014 redes: fuera \"data, not betting advice \u00b7 18+\" de las imagenes y descripciones",
       "source_file": "BITACORA.md",
-      "source_location": "L80"
+      "source_location": "L85"
     },
     {
       "id": "bitacora_06_10_2026_redes_jugador_vs_jugador_y_workflow_diario_de_jugadores",
@@ -12753,7 +12687,7 @@
       "node_kind": "heading",
       "norm_label": "06/10/2026 \u2014 redes: jugador vs jugador y workflow diario de jugadores",
       "source_file": "BITACORA.md",
-      "source_location": "L88"
+      "source_location": "L93"
     },
     {
       "id": "bitacora_06_10_2026_redes_lienzo_reel_para_instagram_con_m\u00fasica",
@@ -12765,7 +12699,7 @@
       "node_kind": "heading",
       "norm_label": "06/10/2026 \u2014 redes: lienzo=reel para instagram con musica",
       "source_file": "BITACORA.md",
-      "source_location": "L24"
+      "source_location": "L29"
     },
     {
       "id": "bitacora_06_10_2026_redes_momentos_de_la_temporada_bal\u00f3n_de_oro",
@@ -12777,7 +12711,7 @@
       "node_kind": "heading",
       "norm_label": "06/10/2026 \u2014 redes: momentos de la temporada (balon de oro)",
       "source_file": "BITACORA.md",
-      "source_location": "L76"
+      "source_location": "L81"
     },
     {
       "id": "bitacora_06_10_2026_redes_nunca_el_mismo_color_para_los_dos_equipos",
@@ -12789,7 +12723,7 @@
       "node_kind": "heading",
       "norm_label": "06/10/2026 \u2014 redes: nunca el mismo color para los dos equipos",
       "source_file": "BITACORA.md",
-      "source_location": "L96"
+      "source_location": "L101"
     },
     {
       "id": "bitacora_06_10_2026_redes_paleta_de_la_app_2yellow",
@@ -12801,7 +12735,7 @@
       "node_kind": "heading",
       "norm_label": "06/10/2026 \u2014 redes: paleta de la app 2yellow",
       "source_file": "BITACORA.md",
-      "source_location": "L36"
+      "source_location": "L41"
     },
     {
       "id": "bitacora_06_10_2026_redes_plantillas_head_to_head_y_ranking",
@@ -12813,7 +12747,7 @@
       "node_kind": "heading",
       "norm_label": "06/10/2026 \u2014 redes: plantillas head_to_head y ranking",
       "source_file": "BITACORA.md",
-      "source_location": "L92"
+      "source_location": "L97"
     },
     {
       "id": "bitacora_06_10_2026_redes_xi_de_septiembre_ligas_champions",
@@ -12825,7 +12759,7 @@
       "node_kind": "heading",
       "norm_label": "06/10/2026 \u2014 redes: xi de septiembre (ligas + champions)",
       "source_file": "BITACORA.md",
-      "source_location": "L44"
+      "source_location": "L49"
     },
     {
       "id": "bitacora_06_10_2026_redes_xi_index_con_champions",
@@ -12837,7 +12771,7 @@
       "node_kind": "heading",
       "norm_label": "06/10/2026 \u2014 redes: xi/index con champions",
       "source_file": "BITACORA.md",
-      "source_location": "L52"
+      "source_location": "L57"
     },
     {
       "id": "bitacora_06_10_2026_redes_xi_sin_banda_contraria_y_con_desempate_futbol\u00edstico",
@@ -12849,7 +12783,7 @@
       "node_kind": "heading",
       "norm_label": "06/10/2026 \u2014 redes: xi sin banda contraria y con desempate futbolistico",
       "source_file": "BITACORA.md",
-      "source_location": "L40"
+      "source_location": "L45"
     },
     {
       "id": "bitacora_07_10_2026_redes_zona_segura_com\u00fan_tiktok_instagram",
@@ -12861,7 +12795,7 @@
       "node_kind": "heading",
       "norm_label": "07/10/2026 \u2014 redes: zona segura comun tiktok + instagram",
       "source_file": "BITACORA.md",
-      "source_location": "L19"
+      "source_location": "L24"
     },
     {
       "id": "bitacora_07_10_2026_redes_\u00edndice_del_bal\u00f3n_de_oro_error_de_nombre_de_bayern",
@@ -12872,6 +12806,18 @@
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "07/10/2026 \u2014 redes: indice del balon de oro, error de nombre de bayern",
+      "source_file": "BITACORA.md",
+      "source_location": "L19"
+    },
+    {
+      "id": "bitacora_07_10_2026_redes_\u00edndice_del_bal\u00f3n_de_oro_medias_encogidas_por_minutos",
+      "label": "07/10/2026 \u2014 redes: \u00edndice del Bal\u00f3n de Oro, medias encogidas por minutos",
+      "_origin": "ast",
+      "community": 27,
+      "community_name": "Bit\u00e1cora del proyecto",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "07/10/2026 \u2014 redes: indice del balon de oro, medias encogidas por minutos",
       "source_file": "BITACORA.md",
       "source_location": "L14"
     },
@@ -12885,7 +12831,7 @@
       "node_kind": "heading",
       "norm_label": "antes del 29/09/2026 (resumen; el detalle esta en los claude.md)",
       "source_file": "BITACORA.md",
-      "source_location": "L215"
+      "source_location": "L220"
     },
     {
       "id": "bitacora_bit\u00e1cora_del_proyecto",
@@ -12909,7 +12855,7 @@
       "node_kind": "heading",
       "norm_label": "cambios de codigo y ficheros",
       "source_file": "BITACORA.md",
-      "source_location": "L119"
+      "source_location": "L124"
     },
     {
       "id": "modelos_ambos_marcan_scripts_comparar_todo_vs_referencia",
@@ -12920,17 +12866,6 @@
       "file_type": "code",
       "norm_label": "comparar_todo_vs_referencia.py",
       "source_file": "modelos/ambos_marcan/scripts/comparar_todo_vs_referencia.py",
-      "source_location": "L1"
-    },
-    {
-      "id": "scripts_afinar_ambos",
-      "label": "afinar_ambos.py",
-      "_origin": "ast",
-      "community": 28,
-      "community_name": "afinar_ambos.py",
-      "file_type": "code",
-      "norm_label": "afinar_ambos.py",
-      "source_file": "scripts/afinar_ambos.py",
       "source_location": "L1"
     },
     {
@@ -12953,17 +12888,6 @@
       "file_type": "rationale",
       "norm_label": "todas las comparaciones de ambos_marcan de la sesion del 24/09, rehechas como...",
       "source_file": "modelos/ambos_marcan/scripts/comparar_todo_vs_referencia.py",
-      "source_location": "L1"
-    },
-    {
-      "id": "scripts_afinar_ambos_rationale_1",
-      "label": "Ajuste interno (hiperpar\u00e1metros) del modelo oficial de ambos marcan\u2026",
-      "_origin": "ast",
-      "community": 28,
-      "community_name": "afinar_ambos.py",
-      "file_type": "rationale",
-      "norm_label": "ajuste interno (hiperparametros) del modelo oficial de ambos marcan...",
-      "source_file": "scripts/afinar_ambos.py",
       "source_location": "L1"
     },
     {
@@ -13932,14 +13856,14 @@
       "source_location": "L1"
     },
     {
-      "id": "redes_plantillas_colores_curar",
-      "label": "curar.py",
+      "id": "modelos_sueltos_pronostico_partido",
+      "label": "pronostico_partido.py",
       "_origin": "ast",
       "community": 35,
       "community_name": "datos_selecciones.py",
       "file_type": "code",
-      "norm_label": "curar.py",
-      "source_file": "redes/plantillas/colores/curar.py",
+      "norm_label": "pronostico_partido.py",
+      "source_file": "modelos/sueltos/pronostico_partido.py",
       "source_location": "L1"
     },
     {
@@ -13954,36 +13878,14 @@
       "source_location": "L1"
     },
     {
-      "id": "scripts_nba_descargar_partidos",
-      "label": "descargar_partidos.py",
-      "_origin": "ast",
-      "community": 35,
-      "community_name": "datos_selecciones.py",
-      "file_type": "code",
-      "norm_label": "descargar_partidos.py",
-      "source_file": "scripts/nba/descargar_partidos.py",
-      "source_location": "L1"
-    },
-    {
-      "id": "scripts_nba_sondeo_detalle",
-      "label": "sondeo_detalle.py",
-      "_origin": "ast",
-      "community": 35,
-      "community_name": "datos_selecciones.py",
-      "file_type": "code",
-      "norm_label": "sondeo_detalle.py",
-      "source_file": "scripts/nba/sondeo_detalle.py",
-      "source_location": "L1"
-    },
-    {
-      "id": "redes_plantillas_colores_curar_rationale_1",
-      "label": "De kits_camiseta.json (colores medidos en los dibujos de Wikipedia) a\u2026",
+      "id": "modelos_sueltos_pronostico_partido_rationale_1",
+      "label": "Pron\u00f3stico de ambos marcan y m\u00e1s/menos 2.5 para partidos de una liga fuera del\u2026",
       "_origin": "ast",
       "community": 35,
       "community_name": "datos_selecciones.py",
       "file_type": "rationale",
-      "norm_label": "de kits_camiseta.json (colores medidos en los dibujos de wikipedia) a...",
-      "source_file": "redes/plantillas/colores/curar.py",
+      "norm_label": "pronostico de ambos marcan y mas/menos 2.5 para partidos de una liga fuera del...",
+      "source_file": "modelos/sueltos/pronostico_partido.py",
       "source_location": "L1"
     },
     {
@@ -14108,28 +14010,6 @@
       "source_location": "L96"
     },
     {
-      "id": "scripts_nba_descargar_partidos_rationale_1",
-      "label": "NBA fase 1: lista de partidos (resultado y marcador por cuartos) de varias\u2026",
-      "_origin": "ast",
-      "community": 35,
-      "community_name": "datos_selecciones.py",
-      "file_type": "rationale",
-      "norm_label": "nba fase 1: lista de partidos (resultado y marcador por cuartos) de varias...",
-      "source_file": "scripts/nba/descargar_partidos.py",
-      "source_location": "L1"
-    },
-    {
-      "id": "scripts_nba_sondeo_detalle_rationale_1",
-      "label": "NBA: mirar la respuesta ENTERA de /matches/{id} y /box-score/{id} de un partido\u2026",
-      "_origin": "ast",
-      "community": 35,
-      "community_name": "datos_selecciones.py",
-      "file_type": "rationale",
-      "norm_label": "nba: mirar la respuesta entera de /matches/{id} y /box-score/{id} de un partido...",
-      "source_file": "scripts/nba/sondeo_detalle.py",
-      "source_location": "L1"
-    },
-    {
       "id": "modelos_ambos_marcan_scripts_evaluar_mercados",
       "label": "ambos_marcan/scripts/evaluar_mercados.py",
       "_origin": "ast",
@@ -14171,6 +14051,17 @@
       "file_type": "code",
       "norm_label": "experimentos_poisson_btts.py",
       "source_file": "modelos/ambos_marcan/scripts/experimentos_poisson_btts.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "modelos_ambos_marcan_scripts_experimentos_seis_ideas",
+      "label": "experimentos_seis_ideas.py",
+      "_origin": "ast",
+      "community": 36,
+      "community_name": "numpy",
+      "file_type": "code",
+      "norm_label": "experimentos_seis_ideas.py",
+      "source_file": "modelos/ambos_marcan/scripts/experimentos_seis_ideas.py",
       "source_location": "L1"
     },
     {
@@ -14218,6 +14109,39 @@
       "source_location": "L1"
     },
     {
+      "id": "scripts_evaluar_contra_pinnacle",
+      "label": "evaluar_contra_pinnacle.py",
+      "_origin": "ast",
+      "community": 36,
+      "community_name": "numpy",
+      "file_type": "code",
+      "norm_label": "evaluar_contra_pinnacle.py",
+      "source_file": "scripts/evaluar_contra_pinnacle.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "scripts_experimentos_duelos",
+      "label": "experimentos_duelos.py",
+      "_origin": "ast",
+      "community": 36,
+      "community_name": "numpy",
+      "file_type": "code",
+      "norm_label": "experimentos_duelos.py",
+      "source_file": "scripts/experimentos_duelos.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "scripts_experimentos_forma_reciente",
+      "label": "experimentos_forma_reciente.py",
+      "_origin": "ast",
+      "community": 36,
+      "community_name": "numpy",
+      "file_type": "code",
+      "norm_label": "experimentos_forma_reciente.py",
+      "source_file": "scripts/experimentos_forma_reciente.py",
+      "source_location": "L1"
+    },
+    {
       "id": "scripts_revision_profundidad",
       "label": "revision_profundidad.py",
       "_origin": "ast",
@@ -14249,17 +14173,6 @@
       "norm_label": "`ent` en vez de un modelo ya entrenado: un solo entrenamiento tiene ruido de...",
       "source_file": "modelos/ambos_marcan/scripts/evaluar_mercados.py",
       "source_location": "L155"
-    },
-    {
-      "id": "modelos_ambos_marcan_scripts_evaluar_mercados_rationale_69",
-      "label": "Las dos fuentes juntas, sin filtrar todav\u00eda por familia.",
-      "_origin": "ast",
-      "community": 36,
-      "community_name": "numpy",
-      "file_type": "rationale",
-      "norm_label": "las dos fuentes juntas, sin filtrar todavia por familia.",
-      "source_file": "modelos/ambos_marcan/scripts/evaluar_mercados.py",
-      "source_location": "L69"
     },
     {
       "id": "modelos_ambos_marcan_scripts_evaluar_mercados_rationale_99",
@@ -14328,6 +14241,17 @@
       "source_location": "L1"
     },
     {
+      "id": "modelos_selecciones_modelo_selecciones_rationale_171",
+      "label": "Cada partido desde `desde`, pronosticado solo con los anteriores. Devuelve\u2026",
+      "_origin": "ast",
+      "community": 36,
+      "community_name": "numpy",
+      "file_type": "rationale",
+      "norm_label": "cada partido desde `desde`, pronosticado solo con los anteriores. devuelve...",
+      "source_file": "modelos/selecciones/modelo_selecciones.py",
+      "source_location": "L171"
+    },
+    {
       "id": "scripts_auditoria2_elo_rationale_1",
       "label": "Segunda auditor\u00eda externa, paso 3 (29/09/2026): Elo con regresi\u00f3n a la media\u2026",
       "_origin": "ast",
@@ -14336,6 +14260,17 @@
       "file_type": "rationale",
       "norm_label": "segunda auditoria externa, paso 3 (29/09/2026): elo con regresion a la media...",
       "source_file": "scripts/auditoria2_elo.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "scripts_evaluar_contra_pinnacle_rationale_1",
+      "label": "Modelo contra el cierre de Pinnacle en TODA la validaci\u00f3n (25/09/2026). Hasta\u2026",
+      "_origin": "ast",
+      "community": 36,
+      "community_name": "numpy",
+      "file_type": "rationale",
+      "norm_label": "modelo contra el cierre de pinnacle en toda la validacion (25/09/2026). hasta...",
+      "source_file": "scripts/evaluar_contra_pinnacle.py",
       "source_location": "L1"
     },
     {
@@ -14350,28 +14285,6 @@
       "source_location": "L1"
     },
     {
-      "id": "scripts_agenda_de_hoy",
-      "label": "agenda_de_hoy.py",
-      "_origin": "ast",
-      "community": 37,
-      "community_name": "sondeo_frescura.py",
-      "file_type": "code",
-      "norm_label": "agenda_de_hoy.py",
-      "source_file": "scripts/agenda_de_hoy.py",
-      "source_location": "L1"
-    },
-    {
-      "id": "scripts_censo_estadisticas",
-      "label": "censo_estadisticas.py",
-      "_origin": "ast",
-      "community": 37,
-      "community_name": "sondeo_frescura.py",
-      "file_type": "code",
-      "norm_label": "censo_estadisticas.py",
-      "source_file": "scripts/censo_estadisticas.py",
-      "source_location": "L1"
-    },
-    {
       "id": "scripts_sondeo_frescura",
       "label": "sondeo_frescura.py",
       "_origin": "ast",
@@ -14381,50 +14294,6 @@
       "norm_label": "sondeo_frescura.py",
       "source_file": "scripts/sondeo_frescura.py",
       "source_location": "L1"
-    },
-    {
-      "id": "scripts_agenda_de_hoy_rationale_1",
-      "label": "AGENDA DE HOY: los descansos de hoy, a partir del calendario del mes. Lee\u2026",
-      "_origin": "ast",
-      "community": 37,
-      "community_name": "sondeo_frescura.py",
-      "file_type": "rationale",
-      "norm_label": "agenda de hoy: los descansos de hoy, a partir del calendario del mes. lee...",
-      "source_file": "scripts/agenda_de_hoy.py",
-      "source_location": "L1"
-    },
-    {
-      "id": "scripts_agenda_de_hoy_rationale_43",
-      "label": "Agrupa los descansos que caen juntos. Una franja con cinco partidos es una\u2026",
-      "_origin": "ast",
-      "community": 37,
-      "community_name": "sondeo_frescura.py",
-      "file_type": "rationale",
-      "norm_label": "agrupa los descansos que caen juntos. una franja con cinco partidos es una...",
-      "source_file": "scripts/agenda_de_hoy.py",
-      "source_location": "L43"
-    },
-    {
-      "id": "scripts_censo_estadisticas_rationale_1",
-      "label": "LAS 39 ESTAD\u00cdSTICAS QUE LLEVAMOS TODO EL PROYECTO SIN MIRAR QU\u00c9 DESTAP\u00d3 EL\u2026",
-      "_origin": "ast",
-      "community": 37,
-      "community_name": "sondeo_frescura.py",
-      "file_type": "rationale",
-      "norm_label": "las 39 estadisticas que llevamos todo el proyecto sin mirar que destapo el...",
-      "source_file": "scripts/censo_estadisticas.py",
-      "source_location": "L1"
-    },
-    {
-      "id": "scripts_censo_estadisticas_rationale_84",
-      "label": "Jugadores del once inicial. initialLineup viene agrupado por L\u00cdNEAS (un 4-4-2\u2026",
-      "_origin": "ast",
-      "community": 37,
-      "community_name": "sondeo_frescura.py",
-      "file_type": "rationale",
-      "norm_label": "jugadores del once inicial. initiallineup viene agrupado por lineas (un 4-4-2...",
-      "source_file": "scripts/censo_estadisticas.py",
-      "source_location": "L84"
     },
     {
       "id": "scripts_sondeo_frescura_rationale_1",
@@ -14751,17 +14620,6 @@
       "source_location": "L1"
     },
     {
-      "id": "modelos_selecciones_modelo_selecciones_rationale_142",
-      "label": "Media de los ajustes de cada objetivo (p. ej. goles y xG) para local y\u2026",
-      "_origin": "ast",
-      "community": 41,
-      "community_name": "modelo_selecciones.py",
-      "file_type": "rationale",
-      "norm_label": "media de los ajustes de cada objetivo (p. ej. goles y xg) para local y...",
-      "source_file": "modelos/selecciones/modelo_selecciones.py",
-      "source_location": "L142"
-    },
-    {
       "id": "modelos_selecciones_modelo_selecciones_rationale_148",
       "label": "P(total > linea) con Poisson (phi<=1) o binomial negativa de varianza phi*media.",
       "_origin": "ast",
@@ -14782,17 +14640,6 @@
       "norm_label": "puntos del ultimo ranking fifa publicado antes de cada fecha. sin ranking...",
       "source_file": "modelos/selecciones/modelo_selecciones.py",
       "source_location": "L58"
-    },
-    {
-      "id": "modelos_selecciones_modelo_selecciones_rationale_95",
-      "label": "Devuelve f(atacante, defensor, casa, amistoso, ext) -> conteo esperado del\u2026",
-      "_origin": "ast",
-      "community": 41,
-      "community_name": "modelo_selecciones.py",
-      "file_type": "rationale",
-      "norm_label": "devuelve f(atacante, defensor, casa, amistoso, ext) -> conteo esperado del...",
-      "source_file": "modelos/selecciones/modelo_selecciones.py",
-      "source_location": "L95"
     },
     {
       "id": "scripts_apilar_mas25_en_ambos",
@@ -14825,17 +14672,6 @@
       "file_type": "code",
       "norm_label": "cuota_como_variable.py",
       "source_file": "scripts/cuota_como_variable.py",
-      "source_location": "L1"
-    },
-    {
-      "id": "scripts_evaluar_contra_pinnacle",
-      "label": "evaluar_contra_pinnacle.py",
-      "_origin": "ast",
-      "community": 42,
-      "community_name": "scripts/rasgos.py",
-      "file_type": "code",
-      "norm_label": "evaluar_contra_pinnacle.py",
-      "source_file": "scripts/evaluar_contra_pinnacle.py",
       "source_location": "L1"
     },
     {
@@ -14891,17 +14727,6 @@
       "file_type": "rationale",
       "norm_label": "la cuota de cierre como variable del modelo (25/09/2026, idea del usuario). el...",
       "source_file": "scripts/cuota_como_variable.py",
-      "source_location": "L1"
-    },
-    {
-      "id": "scripts_evaluar_contra_pinnacle_rationale_1",
-      "label": "Modelo contra el cierre de Pinnacle en TODA la validaci\u00f3n (25/09/2026). Hasta\u2026",
-      "_origin": "ast",
-      "community": 42,
-      "community_name": "scripts/rasgos.py",
-      "file_type": "rationale",
-      "norm_label": "modelo contra el cierre de pinnacle en toda la validacion (25/09/2026). hasta...",
-      "source_file": "scripts/evaluar_contra_pinnacle.py",
       "source_location": "L1"
     },
     {
@@ -15180,6 +15005,17 @@
       "source_location": "L1"
     },
     {
+      "id": "scripts_llm_gratis",
+      "label": "llm_gratis.py",
+      "_origin": "ast",
+      "community": 45,
+      "community_name": "colores_camiseta.py",
+      "file_type": "code",
+      "norm_label": "llm_gratis.py",
+      "source_file": "scripts/llm_gratis.py",
+      "source_location": "L1"
+    },
+    {
       "id": "redes_plantillas_colores_colores_camiseta_rationale_1",
       "label": "Color real de cada camiseta: baja el dibujo del cuerpo (Kit_body<pattern>.png,\u2026",
       "_origin": "ast",
@@ -15200,6 +15036,17 @@
       "norm_label": "baja el dibujo directamente de upload.wikimedia.org (ruta por md5 del nombre,...",
       "source_file": "redes/plantillas/colores/colores_camiseta.py",
       "source_location": "L26"
+    },
+    {
+      "id": "scripts_llm_gratis_rationale_1",
+      "label": "LLM gratuito para tareas MEC\u00c1NICAS (resumir, clasificar, redactar en bloque).\u2026",
+      "_origin": "ast",
+      "community": 45,
+      "community_name": "colores_camiseta.py",
+      "file_type": "rationale",
+      "norm_label": "llm gratuito para tareas mecanicas (resumir, clasificar, redactar en bloque)....",
+      "source_file": "scripts/llm_gratis.py",
+      "source_location": "L1"
     },
     {
       "id": "estado",
@@ -15391,17 +15238,6 @@
       "source_location": "L130"
     },
     {
-      "id": "scripts_barrido_hiperparametros",
-      "label": "barrido_hiperparametros.py",
-      "_origin": "ast",
-      "community": 48,
-      "community_name": "scripts/modelo_xgboost.py",
-      "file_type": "code",
-      "norm_label": "barrido_hiperparametros.py",
-      "source_file": "scripts/barrido_hiperparametros.py",
-      "source_location": "L1"
-    },
-    {
       "id": "scripts_comparar_entreno_con_huecos",
       "label": "comparar_entreno_con_huecos.py",
       "_origin": "ast",
@@ -15410,39 +15246,6 @@
       "file_type": "code",
       "norm_label": "comparar_entreno_con_huecos.py",
       "source_file": "scripts/comparar_entreno_con_huecos.py",
-      "source_location": "L1"
-    },
-    {
-      "id": "scripts_evaluar_mercados",
-      "label": "scripts/evaluar_mercados.py",
-      "_origin": "ast",
-      "community": 48,
-      "community_name": "scripts/modelo_xgboost.py",
-      "file_type": "code",
-      "norm_label": "scripts/evaluar_mercados.py",
-      "source_file": "scripts/evaluar_mercados.py",
-      "source_location": "L1"
-    },
-    {
-      "id": "scripts_experimentos_duelos",
-      "label": "experimentos_duelos.py",
-      "_origin": "ast",
-      "community": 48,
-      "community_name": "scripts/modelo_xgboost.py",
-      "file_type": "code",
-      "norm_label": "experimentos_duelos.py",
-      "source_file": "scripts/experimentos_duelos.py",
-      "source_location": "L1"
-    },
-    {
-      "id": "scripts_experimentos_momentum",
-      "label": "experimentos_momentum.py",
-      "_origin": "ast",
-      "community": 48,
-      "community_name": "scripts/modelo_xgboost.py",
-      "file_type": "code",
-      "norm_label": "experimentos_momentum.py",
-      "source_file": "scripts/experimentos_momentum.py",
       "source_location": "L1"
     },
     {
@@ -15468,17 +15271,6 @@
       "source_location": "L1"
     },
     {
-      "id": "scripts_peso_recencia",
-      "label": "peso_recencia.py",
-      "_origin": "ast",
-      "community": 48,
-      "community_name": "scripts/modelo_xgboost.py",
-      "file_type": "code",
-      "norm_label": "peso_recencia.py",
-      "source_file": "scripts/peso_recencia.py",
-      "source_location": "L1"
-    },
-    {
       "id": "scripts_comparar_entreno_con_huecos_rationale_1",
       "label": "\u00bfEntrenar aceptando rasgos vac\u00edos mejora el modelo? (25/09/2026) Al a\u00f1adir\u2026",
       "_origin": "ast",
@@ -15488,50 +15280,6 @@
       "norm_label": "\u00bfentrenar aceptando rasgos vacios mejora el modelo? (25/09/2026) al anadir...",
       "source_file": "scripts/comparar_entreno_con_huecos.py",
       "source_location": "L1"
-    },
-    {
-      "id": "scripts_evaluar_mercados_rationale_1",
-      "label": "LOS CINCO MERCADOS QUE YA MODELAMOS, TODOS CONTRA EL MERCADO REAL A LA VEZ POR\u2026",
-      "_origin": "ast",
-      "community": 48,
-      "community_name": "scripts/modelo_xgboost.py",
-      "file_type": "rationale",
-      "norm_label": "los cinco mercados que ya modelamos, todos contra el mercado real a la vez por...",
-      "source_file": "scripts/evaluar_mercados.py",
-      "source_location": "L1"
-    },
-    {
-      "id": "scripts_evaluar_mercados_rationale_155",
-      "label": "`ent` en vez de un modelo ya entrenado: un solo entrenamiento tiene ruido de\u2026",
-      "_origin": "ast",
-      "community": 48,
-      "community_name": "scripts/modelo_xgboost.py",
-      "file_type": "rationale",
-      "norm_label": "`ent` en vez de un modelo ya entrenado: un solo entrenamiento tiene ruido de...",
-      "source_file": "scripts/evaluar_mercados.py",
-      "source_location": "L155"
-    },
-    {
-      "id": "scripts_evaluar_mercados_rationale_69",
-      "label": "Las dos fuentes juntas, sin filtrar todav\u00eda por familia.",
-      "_origin": "ast",
-      "community": 48,
-      "community_name": "scripts/modelo_xgboost.py",
-      "file_type": "rationale",
-      "norm_label": "las dos fuentes juntas, sin filtrar todavia por familia.",
-      "source_file": "scripts/evaluar_mercados.py",
-      "source_location": "L69"
-    },
-    {
-      "id": "scripts_evaluar_mercados_rationale_99",
-      "label": "Serie match_id -> probabilidad del lado positivo (o vector 3-clases).",
-      "_origin": "ast",
-      "community": 48,
-      "community_name": "scripts/modelo_xgboost.py",
-      "file_type": "rationale",
-      "norm_label": "serie match_id -> probabilidad del lado positivo (o vector 3-clases).",
-      "source_file": "scripts/evaluar_mercados.py",
-      "source_location": "L99"
     },
     {
       "id": "scripts_experimentos_rasgos_rationale_1",
@@ -15699,6 +15447,17 @@
       "source_location": "L1"
     },
     {
+      "id": "modelos_selecciones_nota_jugadores_selecciones",
+      "label": "nota_jugadores_selecciones.py",
+      "_origin": "ast",
+      "community": 50,
+      "community_name": "pronostico_selecciones.py",
+      "file_type": "code",
+      "norm_label": "nota_jugadores_selecciones.py",
+      "source_file": "modelos/selecciones/nota_jugadores_selecciones.py",
+      "source_location": "L1"
+    },
+    {
       "id": "modelos_selecciones_pronostico_selecciones",
       "label": "pronostico_selecciones.py",
       "_origin": "ast",
@@ -15718,6 +15477,17 @@
       "file_type": "rationale",
       "norm_label": "evaluacion y aprendizaje de los pronosticos de selecciones (26/09/2026). tema...",
       "source_file": "modelos/selecciones/evaluar_selecciones.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "modelos_selecciones_nota_jugadores_selecciones_rationale_1",
+      "label": "Nota \"justa\" por jugador para Inglaterra-Espa\u00f1a y Chequia-Croacia (26/09/2026).\u2026",
+      "_origin": "ast",
+      "community": 50,
+      "community_name": "pronostico_selecciones.py",
+      "file_type": "rationale",
+      "norm_label": "nota \"justa\" por jugador para inglaterra-espana y chequia-croacia (26/09/2026)....",
+      "source_file": "modelos/selecciones/nota_jugadores_selecciones.py",
       "source_location": "L1"
     },
     {
@@ -16008,25 +15778,91 @@
       "source_location": "L34"
     },
     {
-      "id": "scripts_sondeo_temporadas_antiguas",
-      "label": "sondeo_temporadas_antiguas.py",
+      "id": "redes_plantillas_colores_curar",
+      "label": "curar.py",
       "_origin": "ast",
       "community": 56,
       "community_name": "sondeo_temporadas_antiguas.py",
       "file_type": "code",
-      "norm_label": "sondeo_temporadas_antiguas.py",
-      "source_file": "scripts/sondeo_temporadas_antiguas.py",
+      "norm_label": "curar.py",
+      "source_file": "redes/plantillas/colores/curar.py",
       "source_location": "L1"
     },
     {
-      "id": "scripts_sondeo_temporadas_antiguas_rationale_1",
-      "label": "SONDEO: \u00bftiene la API temporadas anteriores a la 2025/26? El hist\u00f3rico solo\u2026",
+      "id": "scripts_nba_backfill_boxscore",
+      "label": "nba/backfill_boxscore.py",
+      "_origin": "ast",
+      "community": 56,
+      "community_name": "sondeo_temporadas_antiguas.py",
+      "file_type": "code",
+      "norm_label": "nba/backfill_boxscore.py",
+      "source_file": "scripts/nba/backfill_boxscore.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "scripts_nba_descargar_partidos",
+      "label": "descargar_partidos.py",
+      "_origin": "ast",
+      "community": 56,
+      "community_name": "sondeo_temporadas_antiguas.py",
+      "file_type": "code",
+      "norm_label": "descargar_partidos.py",
+      "source_file": "scripts/nba/descargar_partidos.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "scripts_nba_sondeo_detalle",
+      "label": "sondeo_detalle.py",
+      "_origin": "ast",
+      "community": 56,
+      "community_name": "sondeo_temporadas_antiguas.py",
+      "file_type": "code",
+      "norm_label": "sondeo_detalle.py",
+      "source_file": "scripts/nba/sondeo_detalle.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "redes_plantillas_colores_curar_rationale_1",
+      "label": "De kits_camiseta.json (colores medidos en los dibujos de Wikipedia) a\u2026",
       "_origin": "ast",
       "community": 56,
       "community_name": "sondeo_temporadas_antiguas.py",
       "file_type": "rationale",
-      "norm_label": "sondeo: \u00bftiene la api temporadas anteriores a la 2025/26? el historico solo...",
-      "source_file": "scripts/sondeo_temporadas_antiguas.py",
+      "norm_label": "de kits_camiseta.json (colores medidos en los dibujos de wikipedia) a...",
+      "source_file": "redes/plantillas/colores/curar.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "scripts_nba_backfill_boxscore_rationale_1",
+      "label": "NBA: box-score por partido (1 llamada/partido). Reanudable, del mas reciente\u2026",
+      "_origin": "ast",
+      "community": 56,
+      "community_name": "sondeo_temporadas_antiguas.py",
+      "file_type": "rationale",
+      "norm_label": "nba: box-score por partido (1 llamada/partido). reanudable, del mas reciente...",
+      "source_file": "scripts/nba/backfill_boxscore.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "scripts_nba_descargar_partidos_rationale_1",
+      "label": "NBA fase 1: lista de partidos (resultado y marcador por cuartos) de varias\u2026",
+      "_origin": "ast",
+      "community": 56,
+      "community_name": "sondeo_temporadas_antiguas.py",
+      "file_type": "rationale",
+      "norm_label": "nba fase 1: lista de partidos (resultado y marcador por cuartos) de varias...",
+      "source_file": "scripts/nba/descargar_partidos.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "scripts_nba_sondeo_detalle_rationale_1",
+      "label": "NBA: mirar la respuesta ENTERA de /matches/{id} y /box-score/{id} de un partido\u2026",
+      "_origin": "ast",
+      "community": 56,
+      "community_name": "sondeo_temporadas_antiguas.py",
+      "file_type": "rationale",
+      "norm_label": "nba: mirar la respuesta entera de /matches/{id} y /box-score/{id} de un partido...",
+      "source_file": "scripts/nba/sondeo_detalle.py",
       "source_location": "L1"
     },
     {
@@ -16365,6 +16201,17 @@
       "source_location": "L1"
     },
     {
+      "id": "scripts_actualizar_datos",
+      "label": "actualizar_datos.py",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "requests",
+      "file_type": "code",
+      "norm_label": "actualizar_datos.py",
+      "source_file": "scripts/actualizar_datos.py",
+      "source_location": "L1"
+    },
+    {
       "id": "scripts_buscar_ligas",
       "label": "buscar_ligas.py",
       "_origin": "ast",
@@ -16387,6 +16234,17 @@
       "source_location": "L1"
     },
     {
+      "id": "scripts_cosechar_cuotas",
+      "label": "cosechar_cuotas.py",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "requests",
+      "file_type": "code",
+      "norm_label": "cosechar_cuotas.py",
+      "source_file": "scripts/cosechar_cuotas.py",
+      "source_location": "L1"
+    },
+    {
       "id": "scripts_descargar_football_data",
       "label": "descargar_football_data.py",
       "_origin": "ast",
@@ -16395,28 +16253,6 @@
       "file_type": "code",
       "norm_label": "descargar_football_data.py",
       "source_file": "scripts/descargar_football_data.py",
-      "source_location": "L1"
-    },
-    {
-      "id": "scripts_nba_backfill_boxscore",
-      "label": "nba/backfill_boxscore.py",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "requests",
-      "file_type": "code",
-      "norm_label": "nba/backfill_boxscore.py",
-      "source_file": "scripts/nba/backfill_boxscore.py",
-      "source_location": "L1"
-    },
-    {
-      "id": "scripts_sondeo_boxscore",
-      "label": "sondeo_boxscore.py",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "requests",
-      "file_type": "code",
-      "norm_label": "sondeo_boxscore.py",
-      "source_file": "scripts/sondeo_boxscore.py",
       "source_location": "L1"
     },
     {
@@ -16475,6 +16311,17 @@
       "source_location": "L1"
     },
     {
+      "id": "scripts_sondeo_xg_jugador",
+      "label": "sondeo_xg_jugador.py",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "requests",
+      "file_type": "code",
+      "norm_label": "sondeo_xg_jugador.py",
+      "source_file": "scripts/sondeo_xg_jugador.py",
+      "source_location": "L1"
+    },
+    {
       "id": "modelos_selecciones_alineaciones_hoy_rationale_1",
       "label": "Alineaciones reales de Inglaterra-Espa\u00f1a y Chequia-Croacia (26/09/2026), para\u2026",
       "_origin": "ast",
@@ -16494,6 +16341,17 @@
       "file_type": "rationale",
       "norm_label": "previa de inglaterra-espana y chequia-croacia (26/09/2026): todas las cuotas...",
       "source_file": "modelos/selecciones/previa_hoy.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "scripts_actualizar_datos_rationale_1",
+      "label": "Se ejecuta autom\u00e1ticamente cada d\u00eda v\u00eda GitHub Actions. Descarga los partidos\u2026",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "requests",
+      "file_type": "rationale",
+      "norm_label": "se ejecuta automaticamente cada dia via github actions. descarga los partidos...",
+      "source_file": "scripts/actualizar_datos.py",
       "source_location": "L1"
     },
     {
@@ -16530,6 +16388,17 @@
       "source_location": "L105"
     },
     {
+      "id": "scripts_cosechar_cuotas_rationale_1",
+      "label": "COSECHAR CUOTAS ANTES DE QUE CADUQUEN EL CUELLO DE BOTELLA QUE ESTO ATACA\u2026",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "requests",
+      "file_type": "rationale",
+      "norm_label": "cosechar cuotas antes de que caduquen el cuello de botella que esto ataca...",
+      "source_file": "scripts/cosechar_cuotas.py",
+      "source_location": "L1"
+    },
+    {
       "id": "scripts_descargar_football_data_rationale_1",
       "label": "Cuotas hist\u00f3ricas de Pinnacle (y otras casas) de football-data.co.uk. Idea del\u2026",
       "_origin": "ast",
@@ -16538,28 +16407,6 @@
       "file_type": "rationale",
       "norm_label": "cuotas historicas de pinnacle (y otras casas) de football-data.co.uk. idea del...",
       "source_file": "scripts/descargar_football_data.py",
-      "source_location": "L1"
-    },
-    {
-      "id": "scripts_nba_backfill_boxscore_rationale_1",
-      "label": "NBA: box-score por partido (1 llamada/partido). Reanudable, del mas reciente\u2026",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "requests",
-      "file_type": "rationale",
-      "norm_label": "nba: box-score por partido (1 llamada/partido). reanudable, del mas reciente...",
-      "source_file": "scripts/nba/backfill_boxscore.py",
-      "source_location": "L1"
-    },
-    {
-      "id": "scripts_sondeo_boxscore_rationale_1",
-      "label": "SONDEO: \u00bfQUE TRAE /box-score DE VERDAD? Antes de construir nada sobre esto,\u2026",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "requests",
-      "file_type": "rationale",
-      "norm_label": "sondeo: \u00bfque trae /box-score de verdad? antes de construir nada sobre esto,...",
-      "source_file": "scripts/sondeo_boxscore.py",
       "source_location": "L1"
     },
     {
@@ -16615,6 +16462,17 @@
       "file_type": "rationale",
       "norm_label": "sondeo minimo: sirve nuestra clave para otros deportes? (28/09/2026) como mucho...",
       "source_file": "scripts/sondeo_otros_deportes.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "scripts_sondeo_xg_jugador_rationale_1",
+      "label": "SONDEO: \u00bfdesde cu\u00e1ndo da la API xG y xA POR JUGADOR? (26/09/2026) /box-\u2026",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "requests",
+      "file_type": "rationale",
+      "norm_label": "sondeo: \u00bfdesde cuando da la api xg y xa por jugador? (26/09/2026) /box-...",
+      "source_file": "scripts/sondeo_xg_jugador.py",
       "source_location": "L1"
     },
     {
@@ -17294,7 +17152,7 @@
       "node_kind": "heading",
       "norm_label": "06/10/2026 \u2014 redes: indice 2yellow del balon de oro",
       "source_file": "BITACORA.md",
-      "source_location": "L72"
+      "source_location": "L77"
     },
     {
       "id": "redes_plantillas_datos_formatos_rationale_1",
@@ -17546,26 +17404,37 @@
       "source_location": "L5"
     },
     {
-      "id": "modelos_sueltos_pronostico_partido",
-      "label": "pronostico_partido.py",
+      "id": "scripts_censo_estadisticas",
+      "label": "censo_estadisticas.py",
       "_origin": "ast",
       "community": 72,
       "community_name": "pronostico_partido.py",
       "file_type": "code",
-      "norm_label": "pronostico_partido.py",
-      "source_file": "modelos/sueltos/pronostico_partido.py",
+      "norm_label": "censo_estadisticas.py",
+      "source_file": "scripts/censo_estadisticas.py",
       "source_location": "L1"
     },
     {
-      "id": "modelos_sueltos_pronostico_partido_rationale_1",
-      "label": "Pron\u00f3stico de ambos marcan y m\u00e1s/menos 2.5 para partidos de una liga fuera del\u2026",
+      "id": "scripts_censo_estadisticas_rationale_1",
+      "label": "LAS 39 ESTAD\u00cdSTICAS QUE LLEVAMOS TODO EL PROYECTO SIN MIRAR QU\u00c9 DESTAP\u00d3 EL\u2026",
       "_origin": "ast",
       "community": 72,
       "community_name": "pronostico_partido.py",
       "file_type": "rationale",
-      "norm_label": "pronostico de ambos marcan y mas/menos 2.5 para partidos de una liga fuera del...",
-      "source_file": "modelos/sueltos/pronostico_partido.py",
+      "norm_label": "las 39 estadisticas que llevamos todo el proyecto sin mirar que destapo el...",
+      "source_file": "scripts/censo_estadisticas.py",
       "source_location": "L1"
+    },
+    {
+      "id": "scripts_censo_estadisticas_rationale_84",
+      "label": "Jugadores del once inicial. initialLineup viene agrupado por L\u00cdNEAS (un 4-4-2\u2026",
+      "_origin": "ast",
+      "community": 72,
+      "community_name": "pronostico_partido.py",
+      "file_type": "rationale",
+      "norm_label": "jugadores del once inicial. initiallineup viene agrupado por lineas (un 4-4-2...",
+      "source_file": "scripts/censo_estadisticas.py",
+      "source_location": "L84"
     },
     {
       "id": "scripts_backfill_jugador_stats",
@@ -18519,14 +18388,14 @@
       "source_location": "L1"
     },
     {
-      "id": "modelos_ambos_marcan_scripts_experimentos_seis_ideas",
-      "label": "experimentos_seis_ideas.py",
+      "id": "scripts_calibracion_correct_score",
+      "label": "calibracion_correct_score.py",
       "_origin": "ast",
       "community": 85,
       "community_name": "pandas",
       "file_type": "code",
-      "norm_label": "experimentos_seis_ideas.py",
-      "source_file": "modelos/ambos_marcan/scripts/experimentos_seis_ideas.py",
+      "norm_label": "calibracion_correct_score.py",
+      "source_file": "scripts/calibracion_correct_score.py",
       "source_location": "L1"
     },
     {
@@ -18541,6 +18410,17 @@
       "source_location": "L1"
     },
     {
+      "id": "scripts_experimento_edad_valor",
+      "label": "experimento_edad_valor.py",
+      "_origin": "ast",
+      "community": 85,
+      "community_name": "pandas",
+      "file_type": "code",
+      "norm_label": "experimento_edad_valor.py",
+      "source_file": "scripts/experimento_edad_valor.py",
+      "source_location": "L1"
+    },
+    {
       "id": "scripts_experimento_lesiones",
       "label": "experimento_lesiones.py",
       "_origin": "ast",
@@ -18549,17 +18429,6 @@
       "file_type": "code",
       "norm_label": "experimento_lesiones.py",
       "source_file": "scripts/experimento_lesiones.py",
-      "source_location": "L1"
-    },
-    {
-      "id": "scripts_experimento_xg_jugador_v2",
-      "label": "experimento_xg_jugador_v2.py",
-      "_origin": "ast",
-      "community": 85,
-      "community_name": "pandas",
-      "file_type": "code",
-      "norm_label": "experimento_xg_jugador_v2.py",
-      "source_file": "scripts/experimento_xg_jugador_v2.py",
       "source_location": "L1"
     },
     {
@@ -18574,17 +18443,6 @@
       "source_location": "L1"
     },
     {
-      "id": "scripts_experimentos_forma_reciente",
-      "label": "experimentos_forma_reciente.py",
-      "_origin": "ast",
-      "community": 85,
-      "community_name": "pandas",
-      "file_type": "code",
-      "norm_label": "experimentos_forma_reciente.py",
-      "source_file": "scripts/experimentos_forma_reciente.py",
-      "source_location": "L1"
-    },
-    {
       "id": "scripts_experimentos_poda_importancia",
       "label": "experimentos_poda_importancia.py",
       "_origin": "ast",
@@ -18596,15 +18454,15 @@
       "source_location": "L1"
     },
     {
-      "id": "modelos_selecciones_modelo_selecciones_rationale_171",
-      "label": "Cada partido desde `desde`, pronosticado solo con los anteriores. Devuelve\u2026",
+      "id": "scripts_calibracion_correct_score_rationale_1",
+      "label": "\u00bfEST\u00c1 CALIBRADO EL MERCADO DE MARCADOR EXACTO (CORRECT SCORE)? Pregunta del\u2026",
       "_origin": "ast",
       "community": 85,
       "community_name": "pandas",
       "file_type": "rationale",
-      "norm_label": "cada partido desde `desde`, pronosticado solo con los anteriores. devuelve...",
-      "source_file": "modelos/selecciones/modelo_selecciones.py",
-      "source_location": "L171"
+      "norm_label": "\u00bfesta calibrado el mercado de marcador exacto (correct score)? pregunta del...",
+      "source_file": "scripts/calibracion_correct_score.py",
+      "source_location": "L1"
     },
     {
       "id": "scripts_calibracion_mercado_rationale_1",
@@ -18618,6 +18476,28 @@
       "source_location": "L1"
     },
     {
+      "id": "scripts_experimento_edad_valor_rationale_1",
+      "label": "Edad media y valor de mercado medio del once, para ambos marcan (petici\u00f3n del\u2026",
+      "_origin": "ast",
+      "community": 85,
+      "community_name": "pandas",
+      "file_type": "rationale",
+      "norm_label": "edad media y valor de mercado medio del once, para ambos marcan (peticion del...",
+      "source_file": "scripts/experimento_edad_valor.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "scripts_experimento_edad_valor_rationale_34",
+      "label": "Una fila por titular: match_id, lado, orden (0 = portero), jugador_id, fecha.",
+      "_origin": "ast",
+      "community": 85,
+      "community_name": "pandas",
+      "file_type": "rationale",
+      "norm_label": "una fila por titular: match_id, lado, orden (0 = portero), jugador_id, fecha.",
+      "source_file": "scripts/experimento_edad_valor.py",
+      "source_location": "L34"
+    },
+    {
       "id": "scripts_experimento_lesiones_rationale_1",
       "label": "Bajas por lesi\u00f3n para ambos marcan (petici\u00f3n del usuario, 29/09/2026). Datos:\u2026",
       "_origin": "ast",
@@ -18626,17 +18506,6 @@
       "file_type": "rationale",
       "norm_label": "bajas por lesion para ambos marcan (peticion del usuario, 29/09/2026). datos:...",
       "source_file": "scripts/experimento_lesiones.py",
-      "source_location": "L1"
-    },
-    {
-      "id": "scripts_experimento_xg_jugador_v2_rationale_1",
-      "label": "xG por jugador, segunda vuelta: \u00bfel problema era C\u00d3MO se le dio al modelo?\u2026",
-      "_origin": "ast",
-      "community": 85,
-      "community_name": "pandas",
-      "file_type": "rationale",
-      "norm_label": "xg por jugador, segunda vuelta: \u00bfel problema era como se le dio al modelo?...",
-      "source_file": "scripts/experimento_xg_jugador_v2.py",
       "source_location": "L1"
     },
     {
@@ -18673,6 +18542,28 @@
       "source_location": "L1"
     },
     {
+      "id": "scripts_evaluar_mercados",
+      "label": "scripts/evaluar_mercados.py",
+      "_origin": "ast",
+      "community": 87,
+      "community_name": "casas_contra_cierre.py",
+      "file_type": "code",
+      "norm_label": "scripts/evaluar_mercados.py",
+      "source_file": "scripts/evaluar_mercados.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "scripts_experimentos_momentum",
+      "label": "experimentos_momentum.py",
+      "_origin": "ast",
+      "community": 87,
+      "community_name": "casas_contra_cierre.py",
+      "file_type": "code",
+      "norm_label": "experimentos_momentum.py",
+      "source_file": "scripts/experimentos_momentum.py",
+      "source_location": "L1"
+    },
+    {
       "id": "scripts_casas_contra_cierre_rationale_1",
       "label": "\u00bfSe apartan las casas que cosechamos del cierre afinado, y se gana apostando\u2026",
       "_origin": "ast",
@@ -18693,6 +18584,50 @@
       "norm_label": "\u00bfa que hora es la foto cosechada? si el precio mediano cosechado acierta igual...",
       "source_file": "scripts/casas_contra_cierre.py",
       "source_location": "L127"
+    },
+    {
+      "id": "scripts_evaluar_mercados_rationale_1",
+      "label": "LOS CINCO MERCADOS QUE YA MODELAMOS, TODOS CONTRA EL MERCADO REAL A LA VEZ POR\u2026",
+      "_origin": "ast",
+      "community": 87,
+      "community_name": "casas_contra_cierre.py",
+      "file_type": "rationale",
+      "norm_label": "los cinco mercados que ya modelamos, todos contra el mercado real a la vez por...",
+      "source_file": "scripts/evaluar_mercados.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "scripts_evaluar_mercados_rationale_155",
+      "label": "`ent` en vez de un modelo ya entrenado: un solo entrenamiento tiene ruido de\u2026",
+      "_origin": "ast",
+      "community": 87,
+      "community_name": "casas_contra_cierre.py",
+      "file_type": "rationale",
+      "norm_label": "`ent` en vez de un modelo ya entrenado: un solo entrenamiento tiene ruido de...",
+      "source_file": "scripts/evaluar_mercados.py",
+      "source_location": "L155"
+    },
+    {
+      "id": "scripts_evaluar_mercados_rationale_69",
+      "label": "Las dos fuentes juntas, sin filtrar todav\u00eda por familia.",
+      "_origin": "ast",
+      "community": 87,
+      "community_name": "casas_contra_cierre.py",
+      "file_type": "rationale",
+      "norm_label": "las dos fuentes juntas, sin filtrar todavia por familia.",
+      "source_file": "scripts/evaluar_mercados.py",
+      "source_location": "L69"
+    },
+    {
+      "id": "scripts_evaluar_mercados_rationale_99",
+      "label": "Serie match_id -> probabilidad del lado positivo (o vector 3-clases).",
+      "_origin": "ast",
+      "community": 87,
+      "community_name": "casas_contra_cierre.py",
+      "file_type": "rationale",
+      "norm_label": "serie match_id -> probabilidad del lado positivo (o vector 3-clases).",
+      "source_file": "scripts/evaluar_mercados.py",
+      "source_location": "L99"
     },
     {
       "id": "modelos_selecciones_forma_clubes",
@@ -18777,6 +18712,28 @@
       "source_location": "L1"
     },
     {
+      "id": "scripts_backfill_historico_completo",
+      "label": "backfill_historico_completo.py",
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "collections",
+      "file_type": "code",
+      "norm_label": "backfill_historico_completo.py",
+      "source_file": "scripts/backfill_historico_completo.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "scripts_censo_mercados_crudo",
+      "label": "censo_mercados_crudo.py",
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "collections",
+      "file_type": "code",
+      "norm_label": "censo_mercados_crudo.py",
+      "source_file": "scripts/censo_mercados_crudo.py",
+      "source_location": "L1"
+    },
+    {
       "id": "scripts_sondeo_gol_1parte",
       "label": "sondeo_gol_1parte.py",
       "_origin": "ast",
@@ -18799,6 +18756,50 @@
       "source_location": "L1"
     },
     {
+      "id": "scripts_sondeo_temporadas_antiguas",
+      "label": "sondeo_temporadas_antiguas.py",
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "collections",
+      "file_type": "code",
+      "norm_label": "sondeo_temporadas_antiguas.py",
+      "source_file": "scripts/sondeo_temporadas_antiguas.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "scripts_backfill_historico_completo_rationale_1",
+      "label": "BACKFILL hist\u00f3rico completo (ejecuci\u00f3n puntual, no diaria). Trae los ~380\u2026",
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "collections",
+      "file_type": "rationale",
+      "norm_label": "backfill historico completo (ejecucion puntual, no diaria). trae los ~380...",
+      "source_file": "scripts/backfill_historico_completo.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "scripts_backfill_historico_completo_rationale_54",
+      "label": "Devuelve (fila_resumen_partido, lista_eventos_de_tarjeta_por_jugador). Los\u2026",
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "collections",
+      "file_type": "rationale",
+      "norm_label": "devuelve (fila_resumen_partido, lista_eventos_de_tarjeta_por_jugador). los...",
+      "source_file": "scripts/backfill_historico_completo.py",
+      "source_location": "L54"
+    },
+    {
+      "id": "scripts_censo_mercados_crudo_rationale_1",
+      "label": "CENSO CRUDO: qu\u00e9 mercados ofrece de verdad la API, y con qu\u00e9 profundidad. Los\u2026",
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "collections",
+      "file_type": "rationale",
+      "norm_label": "censo crudo: que mercados ofrece de verdad la api, y con que profundidad. los...",
+      "source_file": "scripts/censo_mercados_crudo.py",
+      "source_location": "L1"
+    },
+    {
       "id": "scripts_sondeo_gol_1parte_rationale_1",
       "label": "SONDEO: \u00bfexiste un mercado \"equipo X marca en la 1\u00aa parte\"? Segundo intento. El\u2026",
       "_origin": "ast",
@@ -18818,6 +18819,17 @@
       "file_type": "rationale",
       "norm_label": "sondeo: mercado \"gol de equipo en la 1a parte\" en la nations league ninguna de...",
       "source_file": "scripts/sondeo_nations_league.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "scripts_sondeo_temporadas_antiguas_rationale_1",
+      "label": "SONDEO: \u00bftiene la API temporadas anteriores a la 2025/26? El hist\u00f3rico solo\u2026",
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "collections",
+      "file_type": "rationale",
+      "norm_label": "sondeo: \u00bftiene la api temporadas anteriores a la 2025/26? el historico solo...",
+      "source_file": "scripts/sondeo_temporadas_antiguas.py",
       "source_location": "L1"
     },
     {
@@ -19325,6 +19337,18 @@
       "type": "external"
     },
     {
+      "id": "glob",
+      "label": "glob",
+      "_origin": "semantic",
+      "community": 1,
+      "community_name": "contraste_directo.py",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "glob",
+      "source_file": "",
+      "type": "external"
+    },
+    {
       "id": "html",
       "label": "html",
       "_origin": "semantic",
@@ -19381,18 +19405,6 @@
       "external": true,
       "file_type": "concept",
       "norm_label": "sklearn_preprocessing",
-      "source_file": "",
-      "type": "external"
-    },
-    {
-      "id": "time",
-      "label": "time",
-      "_origin": "semantic",
-      "community": 103,
-      "community_name": "time",
-      "external": true,
-      "file_type": "concept",
-      "norm_label": "time",
       "source_file": "",
       "type": "external"
     },
@@ -19481,38 +19493,14 @@
       "type": "external"
     },
     {
-      "id": "json",
-      "label": "json",
+      "id": "urllib_parse",
+      "label": "urllib_parse",
       "_origin": "semantic",
       "community": 19,
       "community_name": "json",
       "external": true,
       "file_type": "concept",
-      "norm_label": "json",
-      "source_file": "",
-      "type": "external"
-    },
-    {
-      "id": "urllib_error",
-      "label": "urllib_error",
-      "_origin": "semantic",
-      "community": 19,
-      "community_name": "json",
-      "external": true,
-      "file_type": "concept",
-      "norm_label": "urllib_error",
-      "source_file": "",
-      "type": "external"
-    },
-    {
-      "id": "urllib_request",
-      "label": "urllib_request",
-      "_origin": "semantic",
-      "community": 19,
-      "community_name": "json",
-      "external": true,
-      "file_type": "concept",
-      "norm_label": "urllib_request",
+      "norm_label": "urllib_parse",
       "source_file": "",
       "type": "external"
     },
@@ -19529,14 +19517,14 @@
       "type": "external"
     },
     {
-      "id": "glob",
-      "label": "glob",
+      "id": "xgboost",
+      "label": "xgboost",
       "_origin": "semantic",
       "community": 23,
       "community_name": "nations_league.py",
       "external": true,
       "file_type": "concept",
-      "norm_label": "glob",
+      "norm_label": "xgboost",
       "source_file": "",
       "type": "external"
     },
@@ -19625,14 +19613,14 @@
       "type": "external"
     },
     {
-      "id": "pathlib",
-      "label": "pathlib",
+      "id": "scipy_stats",
+      "label": "scipy_stats",
       "_origin": "semantic",
       "community": 35,
       "community_name": "datos_selecciones.py",
       "external": true,
       "file_type": "concept",
-      "norm_label": "pathlib",
+      "norm_label": "scipy_stats",
       "source_file": "",
       "type": "external"
     },
@@ -19645,18 +19633,6 @@
       "external": true,
       "file_type": "concept",
       "norm_label": "numpy",
-      "source_file": "",
-      "type": "external"
-    },
-    {
-      "id": "scipy_stats",
-      "label": "scipy_stats",
-      "_origin": "semantic",
-      "community": 41,
-      "community_name": "modelo_selecciones.py",
-      "external": true,
-      "file_type": "concept",
-      "norm_label": "scipy_stats",
       "source_file": "",
       "type": "external"
     },
@@ -19697,26 +19673,38 @@
       "type": "external"
     },
     {
-      "id": "urllib_parse",
-      "label": "urllib_parse",
+      "id": "urllib_error",
+      "label": "urllib_error",
       "_origin": "semantic",
       "community": 45,
       "community_name": "colores_camiseta.py",
       "external": true,
       "file_type": "concept",
-      "norm_label": "urllib_parse",
+      "norm_label": "urllib_error",
       "source_file": "",
       "type": "external"
     },
     {
-      "id": "xgboost",
-      "label": "xgboost",
+      "id": "urllib_request",
+      "label": "urllib_request",
       "_origin": "semantic",
-      "community": 48,
-      "community_name": "scripts/modelo_xgboost.py",
+      "community": 45,
+      "community_name": "colores_camiseta.py",
       "external": true,
       "file_type": "concept",
-      "norm_label": "xgboost",
+      "norm_label": "urllib_request",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "json",
+      "label": "json",
+      "_origin": "semantic",
+      "community": 50,
+      "community_name": "pronostico_selecciones.py",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "json",
       "source_file": "",
       "type": "external"
     },
@@ -19729,6 +19717,18 @@
       "external": true,
       "file_type": "concept",
       "norm_label": "sklearn_isotonic",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "pathlib",
+      "label": "pathlib",
+      "_origin": "semantic",
+      "community": 56,
+      "community_name": "sondeo_temporadas_antiguas.py",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "pathlib",
       "source_file": "",
       "type": "external"
     },
@@ -19801,6 +19801,18 @@
       "external": true,
       "file_type": "concept",
       "norm_label": "collections",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "time",
+      "label": "time",
+      "_origin": "semantic",
+      "community": 9,
+      "community_name": "collections",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "time",
       "source_file": "",
       "type": "external"
     }
@@ -23091,7 +23103,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "redes/plantillas/datos_rankings.py",
-      "source_location": "L343",
+      "source_location": "L348",
       "weight": 1.0
     },
     {
@@ -23103,7 +23115,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "redes/plantillas/datos_rankings.py",
-      "source_location": "L346",
+      "source_location": "L351",
       "weight": 1.0
     },
     {
@@ -48403,18 +48415,18 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "BITACORA.md",
-      "source_location": "L119",
+      "source_location": "L124",
       "weight": 1.0
     },
     {
       "source": "bitacora_29_09_2026",
-      "target": "bitacora_cambios_de_c\u00f3digo_y_ficheros_134",
+      "target": "bitacora_cambios_de_c\u00f3digo_y_ficheros_139",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "BITACORA.md",
-      "source_location": "L134",
+      "source_location": "L139",
       "weight": 1.0
     },
     {
@@ -48425,7 +48437,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "BITACORA.md",
-      "source_location": "L154",
+      "source_location": "L159",
       "weight": 1.0
     },
     {
@@ -48436,7 +48448,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "BITACORA.md",
-      "source_location": "L167",
+      "source_location": "L172",
       "weight": 1.0
     },
     {
@@ -48447,7 +48459,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "BITACORA.md",
-      "source_location": "L186",
+      "source_location": "L191",
       "weight": 1.0
     },
     {
@@ -48458,7 +48470,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "BITACORA.md",
-      "source_location": "L197",
+      "source_location": "L202",
       "weight": 1.0
     },
     {
@@ -48469,7 +48481,18 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "BITACORA.md",
-      "source_location": "L206",
+      "source_location": "L211",
+      "weight": 1.0
+    },
+    {
+      "source": "bitacora_bit\u00e1cora_del_proyecto",
+      "target": "bitacora_06_10_2026_redes_nunca_el_mismo_color_para_los_dos_equipos",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "BITACORA.md",
+      "source_location": "L101",
       "weight": 1.0
     },
     {
@@ -48480,7 +48503,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "BITACORA.md",
-      "source_location": "L100",
+      "source_location": "L105",
       "weight": 1.0
     },
     {
@@ -48491,7 +48514,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "BITACORA.md",
-      "source_location": "L104",
+      "source_location": "L109",
       "weight": 1.0
     },
     {
@@ -48502,7 +48525,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "BITACORA.md",
-      "source_location": "L117",
+      "source_location": "L122",
       "weight": 1.0
     },
     {
@@ -48513,12 +48536,12 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "BITACORA.md",
-      "source_location": "L132",
+      "source_location": "L137",
       "weight": 1.0
     },
     {
       "source": "bitacora_bit\u00e1cora_del_proyecto",
-      "target": "bitacora_07_10_2026_redes_\u00edndice_del_bal\u00f3n_de_oro_error_de_nombre_de_bayern",
+      "target": "bitacora_07_10_2026_redes_\u00edndice_del_bal\u00f3n_de_oro_medias_encogidas_por_minutos",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -48529,7 +48552,7 @@
     },
     {
       "source": "bitacora_bit\u00e1cora_del_proyecto",
-      "target": "bitacora_07_10_2026_redes_zona_segura_com\u00fan_tiktok_instagram",
+      "target": "bitacora_07_10_2026_redes_\u00edndice_del_bal\u00f3n_de_oro_error_de_nombre_de_bayern",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -48546,12 +48569,12 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "BITACORA.md",
-      "source_location": "L215",
+      "source_location": "L220",
       "weight": 1.0
     },
     {
       "source": "bitacora_bit\u00e1cora_del_proyecto",
-      "target": "bitacora_06_10_2026_redes_lienzo_reel_para_instagram_con_m\u00fasica",
+      "target": "bitacora_07_10_2026_redes_zona_segura_com\u00fan_tiktok_instagram",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -48562,13 +48585,24 @@
     },
     {
       "source": "bitacora_bit\u00e1cora_del_proyecto",
+      "target": "bitacora_06_10_2026_redes_lienzo_reel_para_instagram_con_m\u00fasica",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "BITACORA.md",
+      "source_location": "L29",
+      "weight": 1.0
+    },
+    {
+      "source": "bitacora_bit\u00e1cora_del_proyecto",
       "target": "bitacora_06_10_2026_colores_de_228_equipos_curados",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "BITACORA.md",
-      "source_location": "L28",
+      "source_location": "L33",
       "weight": 1.0
     },
     {
@@ -48579,7 +48613,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "BITACORA.md",
-      "source_location": "L32",
+      "source_location": "L37",
       "weight": 1.0
     },
     {
@@ -48590,7 +48624,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "BITACORA.md",
-      "source_location": "L36",
+      "source_location": "L41",
       "weight": 1.0
     },
     {
@@ -48601,7 +48635,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "BITACORA.md",
-      "source_location": "L40",
+      "source_location": "L45",
       "weight": 1.0
     },
     {
@@ -48612,7 +48646,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "BITACORA.md",
-      "source_location": "L44",
+      "source_location": "L49",
       "weight": 1.0
     },
     {
@@ -48623,7 +48657,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "BITACORA.md",
-      "source_location": "L48",
+      "source_location": "L53",
       "weight": 1.0
     },
     {
@@ -48634,7 +48668,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "BITACORA.md",
-      "source_location": "L52",
+      "source_location": "L57",
       "weight": 1.0
     },
     {
@@ -48645,7 +48679,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "BITACORA.md",
-      "source_location": "L56",
+      "source_location": "L61",
       "weight": 1.0
     },
     {
@@ -48656,7 +48690,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "BITACORA.md",
-      "source_location": "L60",
+      "source_location": "L65",
       "weight": 1.0
     },
     {
@@ -48667,7 +48701,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "BITACORA.md",
-      "source_location": "L64",
+      "source_location": "L69",
       "weight": 1.0
     },
     {
@@ -48678,7 +48712,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "BITACORA.md",
-      "source_location": "L68",
+      "source_location": "L73",
       "weight": 1.0
     },
     {
@@ -48689,7 +48723,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "BITACORA.md",
-      "source_location": "L72",
+      "source_location": "L77",
       "weight": 1.0
     },
     {
@@ -48700,7 +48734,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "BITACORA.md",
-      "source_location": "L76",
+      "source_location": "L81",
       "weight": 1.0
     },
     {
@@ -48711,7 +48745,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "BITACORA.md",
-      "source_location": "L80",
+      "source_location": "L85",
       "weight": 1.0
     },
     {
@@ -48722,7 +48756,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "BITACORA.md",
-      "source_location": "L84",
+      "source_location": "L89",
       "weight": 1.0
     },
     {
@@ -48733,7 +48767,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "BITACORA.md",
-      "source_location": "L88",
+      "source_location": "L93",
       "weight": 1.0
     },
     {
@@ -48744,18 +48778,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "BITACORA.md",
-      "source_location": "L92",
-      "weight": 1.0
-    },
-    {
-      "source": "bitacora_bit\u00e1cora_del_proyecto",
-      "target": "bitacora_06_10_2026_redes_nunca_el_mismo_color_para_los_dos_equipos",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "BITACORA.md",
-      "source_location": "L96",
+      "source_location": "L97",
       "weight": 1.0
     },
     {
@@ -63711,7 +63734,7 @@
       "confidence_score": 0.85,
       "context": "collection",
       "source_file": "redes/plantillas/datos_rankings.py",
-      "source_location": "L354",
+      "source_location": "L359",
       "weight": 1.0
     },
     {
@@ -63723,7 +63746,7 @@
       "confidence_score": 0.85,
       "context": "collection",
       "source_file": "redes/plantillas/datos_rankings.py",
-      "source_location": "L354",
+      "source_location": "L359",
       "weight": 1.0
     },
     {
@@ -63735,7 +63758,7 @@
       "confidence_score": 0.85,
       "context": "collection",
       "source_file": "redes/plantillas/datos_rankings.py",
-      "source_location": "L354",
+      "source_location": "L359",
       "weight": 1.0
     },
     {
@@ -63747,7 +63770,7 @@
       "confidence_score": 0.85,
       "context": "collection",
       "source_file": "redes/plantillas/datos_rankings.py",
-      "source_location": "L354",
+      "source_location": "L359",
       "weight": 1.0
     },
     {
@@ -63759,7 +63782,7 @@
       "confidence_score": 0.85,
       "context": "collection",
       "source_file": "redes/plantillas/datos_rankings.py",
-      "source_location": "L355",
+      "source_location": "L360",
       "weight": 1.0
     },
     {
@@ -64095,11 +64118,11 @@
       "confidence_score": 0.95,
       "context": "balon_oro_indice",
       "source_file": "BITACORA.md",
-      "source_location": "L73",
+      "source_location": "L78",
       "weight": 1.0
     },
     {
-      "source": "bitacora_cambios_de_c\u00f3digo_y_ficheros_134",
+      "source": "bitacora_cambios_de_c\u00f3digo_y_ficheros_139",
       "target": "scripts_btts_implicito_ajustar",
       "relation": "references",
       "_origin": "ast",
@@ -64107,7 +64130,7 @@
       "confidence_score": 0.95,
       "context": "btts_implicito.ajustar",
       "source_file": "BITACORA.md",
-      "source_location": "L150",
+      "source_location": "L155",
       "weight": 1.0
     },
     {
@@ -64143,7 +64166,7 @@
       "confidence_score": 0.95,
       "context": "head_to_head",
       "source_file": "BITACORA.md",
-      "source_location": "L93",
+      "source_location": "L98",
       "weight": 1.0
     },
     {
@@ -64179,7 +64202,7 @@
       "confidence_score": 0.95,
       "context": "nombres",
       "source_file": "BITACORA.md",
-      "source_location": "L57",
+      "source_location": "L62",
       "weight": 1.0
     },
     {
@@ -64191,7 +64214,7 @@
       "confidence_score": 0.95,
       "context": "nominados",
       "source_file": "BITACORA.md",
-      "source_location": "L73",
+      "source_location": "L78",
       "weight": 1.0
     },
     {
@@ -64231,7 +64254,7 @@
       "weight": 1.0
     },
     {
-      "source": "bitacora_cambios_de_c\u00f3digo_y_ficheros_134",
+      "source": "bitacora_cambios_de_c\u00f3digo_y_ficheros_139",
       "target": "scripts_ambos_marcan_hoy_pronosticar",
       "relation": "references",
       "_origin": "ast",
@@ -64239,7 +64262,7 @@
       "confidence_score": 0.95,
       "context": "pronosticar",
       "source_file": "BITACORA.md",
-      "source_location": "L147",
+      "source_location": "L152",
       "weight": 1.0
     },
     {
@@ -64251,7 +64274,7 @@
       "confidence_score": 0.95,
       "context": "pronosticar",
       "source_file": "BITACORA.md",
-      "source_location": "L174",
+      "source_location": "L179",
       "weight": 1.0
     },
     {
@@ -64299,7 +64322,7 @@
       "confidence_score": 0.95,
       "context": "separar()",
       "source_file": "BITACORA.md",
-      "source_location": "L97",
+      "source_location": "L102",
       "weight": 1.0
     },
     {
@@ -64311,7 +64334,7 @@
       "confidence_score": 0.95,
       "context": "ucl",
       "source_file": "BITACORA.md",
-      "source_location": "L57",
+      "source_location": "L62",
       "weight": 1.0
     },
     {
@@ -64323,10 +64346,10 @@
       "confidence_score": 0.95,
       "context": "ucl",
       "source_file": "BITACORA.md",
-      "source_location": "L53",
+      "source_location": "L58",
       "weight": 1.0
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "7768ad3bcc78809442b08e06e7fafbdb8838bf8f"
+  "built_at_commit": "c304d032cec756909ad68c152010dbbcdc9aa2f9"
 }
