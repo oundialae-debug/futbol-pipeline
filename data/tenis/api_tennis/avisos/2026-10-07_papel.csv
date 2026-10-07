@@ -105,3 +105,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-07 12:22,12168871,Atp Singles,Shanghai,M. Bellucci,Y. Zhou,menos,29.5,0.572,0.5,1.833,True,aprendida
 2026-10-07 12:22,12168967,Challenger Men Singles,Palermo (Italy) - Qualification,Z. Kolar,M. Ribecai,menos,23.5,0.6629,0.5147,1.8,True,aprendida
 2026-10-07 12:31,12168059,Challenger Men Singles,Braga,D. Blanch,M. Alcala Gurri,menos,18.5,0.6783,0.5576,1.666,True,actual
+2026-10-07 12:35,12168444,Challenger Men Singles,Villena,P. Henning,M. Kasnikowski,menos,26.5,0.6584,0.5,1.833,True,aprendida
