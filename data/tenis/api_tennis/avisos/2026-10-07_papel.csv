@@ -29,3 +29,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-07 06:12,12168869,Atp Singles,Shanghai,A. Mannarino,N. Basilashvili,menos,22.5,0.6485,0.5576,1.666,True,actual
 2026-10-07 06:18,12168287,Atp Singles,Shanghai,A. Kovacevic,M. Berrettini,más,29.5,0.6926,0.625,1.5,True,aprendida
 2026-10-07 06:22,12168284,Atp Singles,Shanghai,Y. Hanfmann,K. Majchrzak,menos,23.5,0.5808,0.5147,1.8,True,aprendida
+2026-10-07 06:34,12168299,Atp Singles,Shanghai,Z. Zhang,T. Machac,menos,22.5,0.5576,0.5,1.833,True,aprendida
