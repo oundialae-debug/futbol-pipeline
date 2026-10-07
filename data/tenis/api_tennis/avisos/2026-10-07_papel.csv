@@ -70,3 +70,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-07 10:28,12168871,Atp Singles,Shanghai,M. Bellucci,Y. Zhou,menos,23.5,0.5701,0.5,1.833,True,aprendida
 2026-10-07 10:30,12168441,Challenger Men Singles,Villena,H. Barton,T. Samuel,menos,23.5,0.6429,0.5576,1.666,True,actual
 2026-10-07 10:40,12168447,Challenger Men Singles,Villena,D. Stricker,L. Djere,menos,22.5,0.633,0.5,1.833,True,aprendida
+2026-10-07 10:49,12168319,Wta Singles,Beijing,A. Charaeva,Q. Zheng,menos,20.5,0.5929,0.5,1.833,True,aprendida
