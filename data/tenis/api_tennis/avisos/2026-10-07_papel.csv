@@ -117,3 +117,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-07 13:06,12168067,Challenger Men Singles,Braga,T. Pereira,P. Martin Tiffon,menos,27.5,0.6957,0.5576,1.666,True,actual
 2026-10-07 13:06,12168968,Challenger Men Singles,Palermo (Italy) - Qualification,A. Martin,A. Moro Canas,menos,20.5,0.6132,0.5147,1.8,True,aprendida
 2026-10-07 13:10,12168442,Challenger Men Singles,Villena,E. Butvilas,M. H. Rehberg,menos,17.5,0.6391,0.5889,1.571,True,actual
+2026-10-07 13:11,12168319,Wta Singles,Beijing,A. Charaeva,Q. Zheng,más,23.5,0.6165,0.5,1.833,True,aprendida
