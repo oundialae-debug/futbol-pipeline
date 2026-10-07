@@ -1,17 +1,17 @@
 # Graph Report - futbol-pipeline  (2026-10-07)
 
 ## Corpus Check
-- 214 files · ~327,204 words
+- 214 files · ~327,265 words
 - Verdict: corpus is large enough that graph structure adds value.
 - Unclassified: 4 file(s) not represented in the graph (top: (none) 3, .woff2 1)
 
 ## Summary
-- 1697 nodes · 3838 edges · 128 communities (107 shown, 21 thin omitted)
+- 1697 nodes · 3837 edges · 128 communities (107 shown, 21 thin omitted)
 - Extraction: 98% EXTRACTED · 2% INFERRED · 0% AMBIGUOUS · INFERRED: 94 edges (avg confidence: 0.87)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `0768bcb3`
+- Built from commit: `e922686f`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 

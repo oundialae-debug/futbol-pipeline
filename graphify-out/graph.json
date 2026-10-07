@@ -2885,7 +2885,7 @@
       "file_type": "code",
       "norm_label": "cargar_nombres()",
       "source_file": "scripts/redes_api.py",
-      "source_location": "L32"
+      "source_location": "L33"
     },
     {
       "id": "scripts_redes_api_get",
@@ -2897,7 +2897,7 @@
       "file_type": "code",
       "norm_label": "get()",
       "source_file": "scripts/redes_api.py",
-      "source_location": "L24"
+      "source_location": "L25"
     },
     {
       "id": "scripts_redes_api_guardar_nombres",
@@ -2909,7 +2909,7 @@
       "file_type": "code",
       "norm_label": "guardar_nombres()",
       "source_file": "scripts/redes_api.py",
-      "source_location": "L39"
+      "source_location": "L40"
     },
     {
       "id": "scripts_redes_api_jugadores_de",
@@ -2921,7 +2921,7 @@
       "file_type": "code",
       "norm_label": "jugadores_de()",
       "source_file": "scripts/redes_api.py",
-      "source_location": "L46"
+      "source_location": "L47"
     },
     {
       "id": "scripts_redes_api_nombres",
@@ -2933,7 +2933,7 @@
       "file_type": "code",
       "norm_label": "nombres()",
       "source_file": "scripts/redes_api.py",
-      "source_location": "L55"
+      "source_location": "L56"
     },
     {
       "id": "scripts_redes_api_popularidad",
@@ -2945,7 +2945,7 @@
       "file_type": "code",
       "norm_label": "popularidad()",
       "source_file": "scripts/redes_api.py",
-      "source_location": "L138"
+      "source_location": "L139"
     },
     {
       "id": "scripts_redes_api_ucl",
@@ -2957,7 +2957,7 @@
       "file_type": "code",
       "norm_label": "ucl()",
       "source_file": "scripts/redes_api.py",
-      "source_location": "L77"
+      "source_location": "L78"
     },
     {
       "id": "modelos_selecciones_descargar_selecciones_lista",
@@ -11783,7 +11783,7 @@
       "node_kind": "heading",
       "norm_label": "06/10/2026 \u2014 redes: descargas de api para nombres y champions",
       "source_file": "BITACORA.md",
-      "source_location": "L72"
+      "source_location": "L73"
     },
     {
       "id": "bitacora_06_10_2026_redes_xi_index_con_champions",
@@ -11795,7 +11795,7 @@
       "node_kind": "heading",
       "norm_label": "06/10/2026 \u2014 redes: xi/index con champions",
       "source_file": "BITACORA.md",
-      "source_location": "L68"
+      "source_location": "L69"
     },
     {
       "id": "scripts_redes_api_rationale_1",
@@ -11809,18 +11809,18 @@
       "source_location": "L1"
     },
     {
-      "id": "scripts_redes_api_rationale_139",
-      "label": "Visitas de Wikipedia (API p\u00fablica de Wikimedia) de los nominados al Bal\u00f3n de\u2026",
+      "id": "scripts_redes_api_rationale_140",
+      "label": "Google Trends (pytrends, no oficial): media de inter\u00e9s de cada nominado,\u2026",
       "_origin": "ast",
       "community": 22,
       "community_name": "redes_api.py",
       "file_type": "rationale",
-      "norm_label": "visitas de wikipedia (api publica de wikimedia) de los nominados al balon de...",
+      "norm_label": "google trends (pytrends, no oficial): media de interes de cada nominado,...",
       "source_file": "scripts/redes_api.py",
-      "source_location": "L139"
+      "source_location": "L140"
     },
     {
-      "id": "scripts_redes_api_rationale_25",
+      "id": "scripts_redes_api_rationale_26",
       "label": "pedir() de backfill_xg_jugador no admite params: los pego a la ruta.",
       "_origin": "ast",
       "community": 22,
@@ -11828,7 +11828,7 @@
       "file_type": "rationale",
       "norm_label": "pedir() de backfill_xg_jugador no admite params: los pego a la ruta.",
       "source_file": "scripts/redes_api.py",
-      "source_location": "L25"
+      "source_location": "L26"
     },
     {
       "id": "bitacora_29_09_2026",
@@ -11840,7 +11840,7 @@
       "node_kind": "heading",
       "norm_label": "29/09/2026",
       "source_file": "BITACORA.md",
-      "source_location": "L148"
+      "source_location": "L149"
     },
     {
       "id": "bitacora_comprobaciones_hechas_en_la_revisi\u00f3n_de_c\u00f3digo_sin_cambios",
@@ -11852,7 +11852,7 @@
       "node_kind": "heading",
       "norm_label": "comprobaciones hechas en la revision de codigo (sin cambios)",
       "source_file": "BITACORA.md",
-      "source_location": "L183"
+      "source_location": "L184"
     },
     {
       "id": "bitacora_errores_en_los_datos_encontrados",
@@ -11864,7 +11864,7 @@
       "node_kind": "heading",
       "norm_label": "errores en los datos encontrados",
       "source_file": "BITACORA.md",
-      "source_location": "L213"
+      "source_location": "L214"
     },
     {
       "id": "bitacora_fuera_del_c\u00f3digo_maquetas_de_app_sin_cambios_en_el_repositorio",
@@ -11876,7 +11876,7 @@
       "node_kind": "heading",
       "norm_label": "fuera del codigo: maquetas de app (sin cambios en el repositorio)",
       "source_file": "BITACORA.md",
-      "source_location": "L202"
+      "source_location": "L203"
     },
     {
       "id": "bitacora_ideas_probadas",
@@ -11888,7 +11888,7 @@
       "node_kind": "heading",
       "norm_label": "ideas probadas",
       "source_file": "BITACORA.md",
-      "source_location": "L170"
+      "source_location": "L171"
     },
     {
       "id": "bitacora_pendiente_ideas_sin_probar",
@@ -11900,7 +11900,7 @@
       "node_kind": "heading",
       "norm_label": "pendiente / ideas sin probar",
       "source_file": "BITACORA.md",
-      "source_location": "L222"
+      "source_location": "L223"
     },
     {
       "id": "modelos_selecciones_descargar_selecciones",
@@ -12701,7 +12701,7 @@
       "node_kind": "heading",
       "norm_label": "05/10/2026",
       "source_file": "BITACORA.md",
-      "source_location": "L133"
+      "source_location": "L134"
     },
     {
       "id": "bitacora_05_10_2026_redes_backup_sin_claude",
@@ -12713,7 +12713,7 @@
       "node_kind": "heading",
       "norm_label": "05/10/2026 \u2014 redes: backup sin claude",
       "source_file": "BITACORA.md",
-      "source_location": "L120"
+      "source_location": "L121"
     },
     {
       "id": "bitacora_05_10_2026_redes_fuera_bookies_de_las_im\u00e1genes",
@@ -12725,7 +12725,7 @@
       "node_kind": "heading",
       "norm_label": "05/10/2026 \u2014 redes: fuera \"bookies\" de las imagenes",
       "source_file": "BITACORA.md",
-      "source_location": "L116"
+      "source_location": "L117"
     },
     {
       "id": "bitacora_06_10_2026_colores_de_228_equipos_curados",
@@ -12737,7 +12737,7 @@
       "node_kind": "heading",
       "norm_label": "06/10/2026 \u2014 colores de 228 equipos, curados",
       "source_file": "BITACORA.md",
-      "source_location": "L44"
+      "source_location": "L45"
     },
     {
       "id": "bitacora_06_10_2026_colores_redes_descarga_robusta",
@@ -12749,7 +12749,7 @@
       "node_kind": "heading",
       "norm_label": "06/10/2026 \u2014 colores_redes: descarga robusta",
       "source_file": "BITACORA.md",
-      "source_location": "L48"
+      "source_location": "L49"
     },
     {
       "id": "bitacora_06_10_2026_redes_2yellow_index_por_rol_ataque_medio_defensa_portero",
@@ -12761,7 +12761,7 @@
       "node_kind": "heading",
       "norm_label": "06/10/2026 \u2014 redes: 2yellow index por rol (ataque, medio, defensa, portero)",
       "source_file": "BITACORA.md",
-      "source_location": "L76"
+      "source_location": "L77"
     },
     {
       "id": "bitacora_06_10_2026_redes_2yellow_xi_con_posiciones_reales_y_filtro_de_nivel",
@@ -12773,7 +12773,7 @@
       "node_kind": "heading",
       "norm_label": "06/10/2026 \u2014 redes: 2yellow xi con posiciones reales y filtro de nivel",
       "source_file": "BITACORA.md",
-      "source_location": "L80"
+      "source_location": "L81"
     },
     {
       "id": "bitacora_06_10_2026_redes_api_no_perder_descargas_por_conflictos",
@@ -12785,7 +12785,7 @@
       "node_kind": "heading",
       "norm_label": "06/10/2026 \u2014 redes_api: no perder descargas por conflictos",
       "source_file": "BITACORA.md",
-      "source_location": "L64"
+      "source_location": "L65"
     },
     {
       "id": "bitacora_06_10_2026_redes_correcciones_del_usuario_y_caras_en_jugador_vs_jugador",
@@ -12797,7 +12797,7 @@
       "node_kind": "heading",
       "norm_label": "06/10/2026 \u2014 redes: correcciones del usuario y caras en jugador vs jugador",
       "source_file": "BITACORA.md",
-      "source_location": "L100"
+      "source_location": "L101"
     },
     {
       "id": "bitacora_06_10_2026_redes_formatos_propios_2yellow_xi_2yellow_index_lienzo_4_5_para_ig",
@@ -12809,7 +12809,7 @@
       "node_kind": "heading",
       "norm_label": "06/10/2026 \u2014 redes: formatos propios (2yellow xi, 2yellow index), lienzo 4:5 para ig",
       "source_file": "BITACORA.md",
-      "source_location": "L84"
+      "source_location": "L85"
     },
     {
       "id": "bitacora_06_10_2026_redes_fuera_data_not_betting_advice_18_de_las_im\u00e1genes_y_descripciones",
@@ -12821,7 +12821,7 @@
       "node_kind": "heading",
       "norm_label": "06/10/2026 \u2014 redes: fuera \"data, not betting advice \u00b7 18+\" de las imagenes y descripciones",
       "source_file": "BITACORA.md",
-      "source_location": "L96"
+      "source_location": "L97"
     },
     {
       "id": "bitacora_06_10_2026_redes_jugador_vs_jugador_y_workflow_diario_de_jugadores",
@@ -12833,7 +12833,7 @@
       "node_kind": "heading",
       "norm_label": "06/10/2026 \u2014 redes: jugador vs jugador y workflow diario de jugadores",
       "source_file": "BITACORA.md",
-      "source_location": "L104"
+      "source_location": "L105"
     },
     {
       "id": "bitacora_06_10_2026_redes_lienzo_reel_para_instagram_con_m\u00fasica",
@@ -12845,7 +12845,7 @@
       "node_kind": "heading",
       "norm_label": "06/10/2026 \u2014 redes: lienzo=reel para instagram con musica",
       "source_file": "BITACORA.md",
-      "source_location": "L40"
+      "source_location": "L41"
     },
     {
       "id": "bitacora_06_10_2026_redes_momentos_de_la_temporada_bal\u00f3n_de_oro",
@@ -12857,7 +12857,7 @@
       "node_kind": "heading",
       "norm_label": "06/10/2026 \u2014 redes: momentos de la temporada (balon de oro)",
       "source_file": "BITACORA.md",
-      "source_location": "L92"
+      "source_location": "L93"
     },
     {
       "id": "bitacora_06_10_2026_redes_nunca_el_mismo_color_para_los_dos_equipos",
@@ -12869,7 +12869,7 @@
       "node_kind": "heading",
       "norm_label": "06/10/2026 \u2014 redes: nunca el mismo color para los dos equipos",
       "source_file": "BITACORA.md",
-      "source_location": "L112"
+      "source_location": "L113"
     },
     {
       "id": "bitacora_06_10_2026_redes_paleta_de_la_app_2yellow",
@@ -12881,7 +12881,7 @@
       "node_kind": "heading",
       "norm_label": "06/10/2026 \u2014 redes: paleta de la app 2yellow",
       "source_file": "BITACORA.md",
-      "source_location": "L52"
+      "source_location": "L53"
     },
     {
       "id": "bitacora_06_10_2026_redes_plantillas_head_to_head_y_ranking",
@@ -12893,7 +12893,7 @@
       "node_kind": "heading",
       "norm_label": "06/10/2026 \u2014 redes: plantillas head_to_head y ranking",
       "source_file": "BITACORA.md",
-      "source_location": "L108"
+      "source_location": "L109"
     },
     {
       "id": "bitacora_06_10_2026_redes_xi_de_septiembre_ligas_champions",
@@ -12905,7 +12905,7 @@
       "node_kind": "heading",
       "norm_label": "06/10/2026 \u2014 redes: xi de septiembre (ligas + champions)",
       "source_file": "BITACORA.md",
-      "source_location": "L60"
+      "source_location": "L61"
     },
     {
       "id": "bitacora_06_10_2026_redes_xi_sin_banda_contraria_y_con_desempate_futbol\u00edstico",
@@ -12917,17 +12917,17 @@
       "node_kind": "heading",
       "norm_label": "06/10/2026 \u2014 redes: xi sin banda contraria y con desempate futbolistico",
       "source_file": "BITACORA.md",
-      "source_location": "L56"
+      "source_location": "L57"
     },
     {
-      "id": "bitacora_07_10_2026_redes_api_modo_popularidad_wikipedia_sin_highlightly",
-      "label": "07/10/2026 \u2014 redes_api: modo popularidad (Wikipedia, sin Highlightly)",
+      "id": "bitacora_07_10_2026_redes_api_modo_popularidad_google_trends_sin_highlightly",
+      "label": "07/10/2026 \u2014 redes_api: modo popularidad (Google Trends, sin Highlightly)",
       "_origin": "ast",
       "community": 27,
       "community_name": "Bit\u00e1cora del proyecto",
       "file_type": "document",
       "node_kind": "heading",
-      "norm_label": "07/10/2026 \u2014 redes_api: modo popularidad (wikipedia, sin highlightly)",
+      "norm_label": "07/10/2026 \u2014 redes_api: modo popularidad (google trends, sin highlightly)",
       "source_file": "BITACORA.md",
       "source_location": "L21"
     },
@@ -12953,7 +12953,7 @@
       "node_kind": "heading",
       "norm_label": "07/10/2026 \u2014 redes: zona segura comun tiktok + instagram",
       "source_file": "BITACORA.md",
-      "source_location": "L35"
+      "source_location": "L36"
     },
     {
       "id": "bitacora_07_10_2026_redes_\u00edndice_del_bal\u00f3n_de_oro_error_de_nombre_de_bayern",
@@ -12965,7 +12965,7 @@
       "node_kind": "heading",
       "norm_label": "07/10/2026 \u2014 redes: indice del balon de oro, error de nombre de bayern",
       "source_file": "BITACORA.md",
-      "source_location": "L30"
+      "source_location": "L31"
     },
     {
       "id": "bitacora_07_10_2026_redes_\u00edndice_del_bal\u00f3n_de_oro_medias_encogidas_por_minutos",
@@ -12977,7 +12977,7 @@
       "node_kind": "heading",
       "norm_label": "07/10/2026 \u2014 redes: indice del balon de oro, medias encogidas por minutos",
       "source_file": "BITACORA.md",
-      "source_location": "L25"
+      "source_location": "L26"
     },
     {
       "id": "bitacora_antes_del_29_09_2026_resumen_el_detalle_est\u00e1_en_los_claude_md",
@@ -12989,7 +12989,7 @@
       "node_kind": "heading",
       "norm_label": "antes del 29/09/2026 (resumen; el detalle esta en los claude.md)",
       "source_file": "BITACORA.md",
-      "source_location": "L231"
+      "source_location": "L232"
     },
     {
       "id": "bitacora_bit\u00e1cora_del_proyecto",
@@ -13013,7 +13013,7 @@
       "node_kind": "heading",
       "norm_label": "cambios de codigo y ficheros",
       "source_file": "BITACORA.md",
-      "source_location": "L135"
+      "source_location": "L136"
     },
     {
       "id": "modelos_ambos_marcan_scripts_comparar_todo_vs_referencia",
@@ -13270,7 +13270,7 @@
       "source_location": "L1"
     },
     {
-      "id": "bitacora_cambios_de_c\u00f3digo_y_ficheros_150",
+      "id": "bitacora_cambios_de_c\u00f3digo_y_ficheros_151",
       "label": "Cambios de c\u00f3digo y ficheros",
       "_origin": "ast",
       "community": 3,
@@ -13279,7 +13279,7 @@
       "node_kind": "heading",
       "norm_label": "cambios de codigo y ficheros",
       "source_file": "BITACORA.md",
-      "source_location": "L150"
+      "source_location": "L151"
     },
     {
       "id": "modelos_selecciones_segunda_opinion_ambos_selecciones_rationale_1",
@@ -17090,7 +17090,7 @@
       "node_kind": "heading",
       "norm_label": "06/10/2026 \u2014 redes: indice 2yellow del balon de oro",
       "source_file": "BITACORA.md",
-      "source_location": "L88"
+      "source_location": "L89"
     },
     {
       "id": "redes_plantillas_datos_formatos_rationale_1",
@@ -35605,7 +35605,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "scripts/redes_api.py",
-      "source_location": "L35",
+      "source_location": "L36",
       "weight": 1.0
     },
     {
@@ -35617,7 +35617,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "scripts/redes_api.py",
-      "source_location": "L42",
+      "source_location": "L43",
       "weight": 1.0
     },
     {
@@ -35629,7 +35629,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "scripts/redes_api.py",
-      "source_location": "L56",
+      "source_location": "L57",
       "weight": 1.0
     },
     {
@@ -35641,7 +35641,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "scripts/redes_api.py",
-      "source_location": "L58",
+      "source_location": "L59",
       "weight": 1.0
     },
     {
@@ -35653,7 +35653,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "scripts/redes_api.py",
-      "source_location": "L68",
+      "source_location": "L69",
       "weight": 1.0
     },
     {
@@ -35665,19 +35665,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "scripts/redes_api.py",
-      "source_location": "L72",
-      "weight": 1.0
-    },
-    {
-      "source": "scripts_redes_api_popularidad",
-      "target": "json",
-      "relation": "calls",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "call",
-      "source_file": "scripts/redes_api.py",
-      "source_location": "L144",
+      "source_location": "L73",
       "weight": 1.0
     },
     {
@@ -35689,7 +35677,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "scripts/redes_api.py",
-      "source_location": "L164",
+      "source_location": "L166",
       "weight": 1.0
     },
     {
@@ -35701,7 +35689,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "scripts/redes_api.py",
-      "source_location": "L113",
+      "source_location": "L114",
       "weight": 1.0
     },
     {
@@ -35713,7 +35701,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "scripts/redes_api.py",
-      "source_location": "L116",
+      "source_location": "L117",
       "weight": 1.0
     },
     {
@@ -35725,7 +35713,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "scripts/redes_api.py",
-      "source_location": "L125",
+      "source_location": "L126",
       "weight": 1.0
     },
     {
@@ -35737,7 +35725,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "scripts/redes_api.py",
-      "source_location": "L134",
+      "source_location": "L135",
       "weight": 1.0
     },
     {
@@ -35749,7 +35737,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "scripts/redes_api.py",
-      "source_location": "L79",
+      "source_location": "L80",
       "weight": 1.0
     },
     {
@@ -35761,7 +35749,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "scripts/redes_api.py",
-      "source_location": "L82",
+      "source_location": "L83",
       "weight": 1.0
     },
     {
@@ -35773,7 +35761,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "scripts/redes_api.py",
-      "source_location": "L87",
+      "source_location": "L88",
       "weight": 1.0
     },
     {
@@ -35785,7 +35773,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "scripts/redes_api.py",
-      "source_location": "L91",
+      "source_location": "L92",
       "weight": 1.0
     },
     {
@@ -45721,7 +45709,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "scripts/redes_api.py",
-      "source_location": "L10",
+      "source_location": "L11",
       "weight": 1.0
     },
     {
@@ -45733,7 +45721,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "scripts/redes_api.py",
-      "source_location": "L10",
+      "source_location": "L11",
       "weight": 1.0
     },
     {
@@ -45745,7 +45733,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "scripts/redes_api.py",
-      "source_location": "L10",
+      "source_location": "L11",
       "weight": 1.0
     },
     {
@@ -45757,7 +45745,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "scripts/redes_api.py",
-      "source_location": "L10",
+      "source_location": "L11",
       "weight": 1.0
     },
     {
@@ -45769,7 +45757,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "scripts/redes_api.py",
-      "source_location": "L12",
+      "source_location": "L13",
       "weight": 1.0
     },
     {
@@ -45781,7 +45769,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "scripts/redes_api.py",
-      "source_location": "L16",
+      "source_location": "L17",
       "weight": 1.0
     },
     {
@@ -47989,7 +47977,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "scripts/redes_api.py",
-      "source_location": "L11",
+      "source_location": "L12",
       "weight": 1.0
     },
     {
@@ -48545,18 +48533,18 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "BITACORA.md",
-      "source_location": "L135",
+      "source_location": "L136",
       "weight": 1.0
     },
     {
       "source": "bitacora_29_09_2026",
-      "target": "bitacora_cambios_de_c\u00f3digo_y_ficheros_150",
+      "target": "bitacora_cambios_de_c\u00f3digo_y_ficheros_151",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "BITACORA.md",
-      "source_location": "L150",
+      "source_location": "L151",
       "weight": 1.0
     },
     {
@@ -48567,7 +48555,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "BITACORA.md",
-      "source_location": "L170",
+      "source_location": "L171",
       "weight": 1.0
     },
     {
@@ -48578,7 +48566,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "BITACORA.md",
-      "source_location": "L183",
+      "source_location": "L184",
       "weight": 1.0
     },
     {
@@ -48589,7 +48577,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "BITACORA.md",
-      "source_location": "L202",
+      "source_location": "L203",
       "weight": 1.0
     },
     {
@@ -48600,7 +48588,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "BITACORA.md",
-      "source_location": "L213",
+      "source_location": "L214",
       "weight": 1.0
     },
     {
@@ -48611,7 +48599,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "BITACORA.md",
-      "source_location": "L222",
+      "source_location": "L223",
       "weight": 1.0
     },
     {
@@ -48622,7 +48610,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "BITACORA.md",
-      "source_location": "L100",
+      "source_location": "L101",
       "weight": 1.0
     },
     {
@@ -48633,7 +48621,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "BITACORA.md",
-      "source_location": "L104",
+      "source_location": "L105",
       "weight": 1.0
     },
     {
@@ -48644,7 +48632,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "BITACORA.md",
-      "source_location": "L108",
+      "source_location": "L109",
       "weight": 1.0
     },
     {
@@ -48655,7 +48643,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "BITACORA.md",
-      "source_location": "L112",
+      "source_location": "L113",
       "weight": 1.0
     },
     {
@@ -48666,7 +48654,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "BITACORA.md",
-      "source_location": "L116",
+      "source_location": "L117",
       "weight": 1.0
     },
     {
@@ -48677,7 +48665,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "BITACORA.md",
-      "source_location": "L120",
+      "source_location": "L121",
       "weight": 1.0
     },
     {
@@ -48688,7 +48676,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "BITACORA.md",
-      "source_location": "L133",
+      "source_location": "L134",
       "weight": 1.0
     },
     {
@@ -48710,12 +48698,12 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "BITACORA.md",
-      "source_location": "L148",
+      "source_location": "L149",
       "weight": 1.0
     },
     {
       "source": "bitacora_bit\u00e1cora_del_proyecto",
-      "target": "bitacora_07_10_2026_redes_api_modo_popularidad_wikipedia_sin_highlightly",
+      "target": "bitacora_07_10_2026_redes_api_modo_popularidad_google_trends_sin_highlightly",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -48732,7 +48720,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "BITACORA.md",
-      "source_location": "L231",
+      "source_location": "L232",
       "weight": 1.0
     },
     {
@@ -48743,7 +48731,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "BITACORA.md",
-      "source_location": "L25",
+      "source_location": "L26",
       "weight": 1.0
     },
     {
@@ -48754,7 +48742,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "BITACORA.md",
-      "source_location": "L30",
+      "source_location": "L31",
       "weight": 1.0
     },
     {
@@ -48765,7 +48753,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "BITACORA.md",
-      "source_location": "L35",
+      "source_location": "L36",
       "weight": 1.0
     },
     {
@@ -48776,7 +48764,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "BITACORA.md",
-      "source_location": "L40",
+      "source_location": "L41",
       "weight": 1.0
     },
     {
@@ -48787,7 +48775,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "BITACORA.md",
-      "source_location": "L44",
+      "source_location": "L45",
       "weight": 1.0
     },
     {
@@ -48798,7 +48786,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "BITACORA.md",
-      "source_location": "L48",
+      "source_location": "L49",
       "weight": 1.0
     },
     {
@@ -48809,7 +48797,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "BITACORA.md",
-      "source_location": "L52",
+      "source_location": "L53",
       "weight": 1.0
     },
     {
@@ -48820,7 +48808,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "BITACORA.md",
-      "source_location": "L56",
+      "source_location": "L57",
       "weight": 1.0
     },
     {
@@ -48831,7 +48819,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "BITACORA.md",
-      "source_location": "L60",
+      "source_location": "L61",
       "weight": 1.0
     },
     {
@@ -48842,7 +48830,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "BITACORA.md",
-      "source_location": "L64",
+      "source_location": "L65",
       "weight": 1.0
     },
     {
@@ -48853,7 +48841,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "BITACORA.md",
-      "source_location": "L68",
+      "source_location": "L69",
       "weight": 1.0
     },
     {
@@ -48864,7 +48852,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "BITACORA.md",
-      "source_location": "L72",
+      "source_location": "L73",
       "weight": 1.0
     },
     {
@@ -48875,7 +48863,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "BITACORA.md",
-      "source_location": "L76",
+      "source_location": "L77",
       "weight": 1.0
     },
     {
@@ -48886,7 +48874,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "BITACORA.md",
-      "source_location": "L80",
+      "source_location": "L81",
       "weight": 1.0
     },
     {
@@ -48897,7 +48885,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "BITACORA.md",
-      "source_location": "L84",
+      "source_location": "L85",
       "weight": 1.0
     },
     {
@@ -48908,7 +48896,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "BITACORA.md",
-      "source_location": "L88",
+      "source_location": "L89",
       "weight": 1.0
     },
     {
@@ -48919,7 +48907,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "BITACORA.md",
-      "source_location": "L92",
+      "source_location": "L93",
       "weight": 1.0
     },
     {
@@ -48930,7 +48918,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "BITACORA.md",
-      "source_location": "L96",
+      "source_location": "L97",
       "weight": 1.0
     },
     {
@@ -58764,7 +58752,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "scripts/redes_api.py",
-      "source_location": "L24",
+      "source_location": "L25",
       "weight": 1.0
     },
     {
@@ -58775,7 +58763,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "scripts/redes_api.py",
-      "source_location": "L32",
+      "source_location": "L33",
       "weight": 1.0
     },
     {
@@ -58786,7 +58774,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "scripts/redes_api.py",
-      "source_location": "L39",
+      "source_location": "L40",
       "weight": 1.0
     },
     {
@@ -58797,7 +58785,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "scripts/redes_api.py",
-      "source_location": "L46",
+      "source_location": "L47",
       "weight": 1.0
     },
     {
@@ -63113,25 +63101,25 @@
       "weight": 1.0
     },
     {
-      "source": "scripts_redes_api_rationale_139",
+      "source": "scripts_redes_api_rationale_140",
       "target": "scripts_redes_api_popularidad",
       "relation": "rationale_for",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "scripts/redes_api.py",
-      "source_location": "L139",
+      "source_location": "L140",
       "weight": 1.0
     },
     {
-      "source": "scripts_redes_api_rationale_25",
+      "source": "scripts_redes_api_rationale_26",
       "target": "scripts_redes_api_get",
       "relation": "rationale_for",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "scripts/redes_api.py",
-      "source_location": "L25",
+      "source_location": "L26",
       "weight": 1.0
     },
     {
@@ -64268,7 +64256,7 @@
       "confidence_score": 0.85,
       "context": "collection",
       "source_file": "scripts/redes_api.py",
-      "source_location": "L168",
+      "source_location": "L170",
       "weight": 1.0
     },
     {
@@ -64280,7 +64268,7 @@
       "confidence_score": 0.85,
       "context": "collection",
       "source_file": "scripts/redes_api.py",
-      "source_location": "L168",
+      "source_location": "L170",
       "weight": 1.0
     },
     {
@@ -64292,7 +64280,7 @@
       "confidence_score": 0.85,
       "context": "collection",
       "source_file": "scripts/redes_api.py",
-      "source_location": "L168",
+      "source_location": "L170",
       "weight": 1.0
     },
     {
@@ -64328,11 +64316,11 @@
       "confidence_score": 0.95,
       "context": "balon_oro_indice",
       "source_file": "BITACORA.md",
-      "source_location": "L89",
+      "source_location": "L90",
       "weight": 1.0
     },
     {
-      "source": "bitacora_cambios_de_c\u00f3digo_y_ficheros_150",
+      "source": "bitacora_cambios_de_c\u00f3digo_y_ficheros_151",
       "target": "scripts_btts_implicito_ajustar",
       "relation": "references",
       "_origin": "ast",
@@ -64340,7 +64328,7 @@
       "confidence_score": 0.95,
       "context": "btts_implicito.ajustar",
       "source_file": "BITACORA.md",
-      "source_location": "L166",
+      "source_location": "L167",
       "weight": 1.0
     },
     {
@@ -64376,7 +64364,7 @@
       "confidence_score": 0.95,
       "context": "head_to_head",
       "source_file": "BITACORA.md",
-      "source_location": "L109",
+      "source_location": "L110",
       "weight": 1.0
     },
     {
@@ -64412,7 +64400,7 @@
       "confidence_score": 0.95,
       "context": "nombres",
       "source_file": "BITACORA.md",
-      "source_location": "L73",
+      "source_location": "L74",
       "weight": 1.0
     },
     {
@@ -64424,7 +64412,7 @@
       "confidence_score": 0.95,
       "context": "nominados",
       "source_file": "BITACORA.md",
-      "source_location": "L89",
+      "source_location": "L90",
       "weight": 1.0
     },
     {
@@ -64464,7 +64452,7 @@
       "weight": 1.0
     },
     {
-      "source": "bitacora_cambios_de_c\u00f3digo_y_ficheros_150",
+      "source": "bitacora_cambios_de_c\u00f3digo_y_ficheros_151",
       "target": "scripts_ambos_marcan_hoy_pronosticar",
       "relation": "references",
       "_origin": "ast",
@@ -64472,7 +64460,7 @@
       "confidence_score": 0.95,
       "context": "pronosticar",
       "source_file": "BITACORA.md",
-      "source_location": "L163",
+      "source_location": "L164",
       "weight": 1.0
     },
     {
@@ -64484,7 +64472,7 @@
       "confidence_score": 0.95,
       "context": "pronosticar",
       "source_file": "BITACORA.md",
-      "source_location": "L190",
+      "source_location": "L191",
       "weight": 1.0
     },
     {
@@ -64532,7 +64520,7 @@
       "confidence_score": 0.95,
       "context": "separar()",
       "source_file": "BITACORA.md",
-      "source_location": "L113",
+      "source_location": "L114",
       "weight": 1.0
     },
     {
@@ -64544,7 +64532,7 @@
       "confidence_score": 0.95,
       "context": "ucl",
       "source_file": "BITACORA.md",
-      "source_location": "L73",
+      "source_location": "L74",
       "weight": 1.0
     },
     {
@@ -64556,10 +64544,10 @@
       "confidence_score": 0.95,
       "context": "ucl",
       "source_file": "BITACORA.md",
-      "source_location": "L69",
+      "source_location": "L70",
       "weight": 1.0
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "0768bcb3f793454033d4e9023e8cb2ca01eade09"
+  "built_at_commit": "e922686f3ecbda0689f0cb4525cc416595f88a20"
 }
