@@ -1,0 +1,489 @@
+event_key,tipo,torneo,jugador1,jugador2,estado,sets,juegos_totales
+12168056,Challenger Men Singles,Villena,A. Shelbayh,D. Jorda Sanchis,,-,0
+12168059,Challenger Men Singles,Braga,D. Blanch,M. Alcala Gurri,,-,0
+12168060,Challenger Men Singles,Braga,F. Broska,L. Neumayer,,-,0
+12168061,Challenger Men Singles,Braga,M. Dodig,A. Pellegrino,Finished,0 - 0,0
+12168064,Challenger Men Singles,Braga,M. Moeller,T. Torres,,-,0
+12168066,Challenger Men Singles,Braga,S. Nagal,L. Mikrut,Interrupted,0 - 0,0
+12168067,Challenger Men Singles,Braga,T. Pereira,P. Martin Tiffon,,-,0
+12168113,Challenger Men Doubles,Wuning 3 (China),Castelnuovo/ Hsu,Tamm/ Wang,,-,0
+12168115,Challenger Men Doubles,Wuning 3 (China),Banthia/ Rai,Leong/  Shiraishi,,-,0
+12168116,Challenger Men Doubles,Wuning 3 (China),Ogura/ Saitoh,Betov/ Hsieh,,-,0
+12168117,Challenger Men Doubles,Wuning 3 (China),Hara Friend/ Sueoka,Ichikawa/ Matsuda,,-,0
+12168119,Challenger Men Doubles,Wuning 3 (China),Seggerman/ Wang,Jasika/ Purcell,,-,0
+12168120,Challenger Men Doubles,Wuning 3 (China),Santillan/ Zheng,Bayldon/ Puttergill,,-,0
+12168134,Challenger Women Doubles,Suzhou,Chong/ Hozumi,Ibragimova/ Martins,,-,0
+12168139,Challenger Women Doubles,Suzhou,Kuwata/ Ye,Ma/ Sawangkaew,Cancelled,-,0
+12168140,Challenger Women Doubles,Suzhou,Li/ Zhang,Qu/ Shao,,-,0
+12168141,Challenger Women Doubles,Suzhou,Li/ Zheng,Ayukawa/ Webley-Smith,,-,0
+12168177,Challenger Men Doubles,Villena,Kadhe/ Maginley,Jebens/ Vrbensky,,-,0
+12168178,Challenger Men Doubles,Villena,Brancaccio/ Martinez,Cukierman/ Romboli,Cancelled,-,0
+12168179,Challenger Men Doubles,Villena,Hilderbrand/ Pavel,Cornea/ Poljak,,-,0
+12168180,Challenger Men Doubles,Villena,Latinovic/ Poljicak,Carrascosa Diaz/ Carrascosa Diaz,,-,0
+12168181,Challenger Men Doubles,Villena,Molteni/ Vega Hernandez,Manzanera Pertusa/ Miranda,,-,0
+12168182,Challenger Men Doubles,Villena,Jans/ Vliegen,Barton/ Duda,,-,0
+12168183,Challenger Men Doubles,Villena,Reynolds/ Watt,Kasnikowski/ Maestrelli,,-,0
+12168184,Challenger Men Doubles,Villena,Kittay/ Yuzuki,Genov/ Whitehouse,,-,0
+12168195,Challenger Women Singles,Samsun,C. Buyukakcay,L. Klimovicova,Interrupted,1 - 1,25
+12168199,Challenger Women Singles,Samsun,E. Pridankina,A. Blinkova,,-,0
+12168207,Challenger Men Doubles,Palermo (Italy),Johansson/ Neos,Barry/ Vives Marcos,,-,0
+12168208,Challenger Men Doubles,Palermo (Italy),Perin/ Potenza,Forejtek/ Wiskandt,,-,0
+12168209,Challenger Men Doubles,Palermo (Italy),Cocola/ Rapagnetta,Bianchi/ Pearson,,-,0
+12168210,Challenger Men Doubles,Palermo (Italy),Roca Batalla/ Sanchez Jover,Ovcharenko/ Wehnelt,,-,0
+12168211,Challenger Men Doubles,Palermo (Italy),Recek/ Siniakov,Bilardo/ Ricca,,-,0
+12168212,Challenger Men Doubles,Palermo (Italy),Nedunchezhiyan/ Suarez,Clarke/ Kopp,,-,0
+12168213,Challenger Men Doubles,Palermo (Italy),Sharma/ Uzhylovskyi,Gadamauri/ Sakellaridis,,-,0
+12168214,Challenger Men Doubles,Palermo (Italy),Ribecai/ Volpi,Caniato/ Forti,,-,0
+12168220,Challenger Men Doubles,Braga,Dodig/ Nedic,Lalami Laaroussi/ Mansilla Diez,,-,0
+12168223,Challenger Men Doubles,Braga,Alcala Gurri/ Sanchez Izquierdo,Domingues/ Torres,,-,0
+12168224,Challenger Men Doubles,Braga,Barrientos/ Vocel,Martos Gornes/ Walkow,,-,0
+12168225,Challenger Men Doubles,Braga,Pereira/ Winter Lopez,Forcano/ Izquierdo Luque,,-,0
+12168246,Challenger Men Doubles,Antofagasta,Alves/ Britto,Magadan/ Merino,,-,0
+12168247,Challenger Men Doubles,Antofagasta,Aboian/ Huertas Del Pino Cordova,Casanova/ Villanueva,,-,0
+12168249,Challenger Men Doubles,Antofagasta,Loureiro/  Ribero,Boscardin Dias/ Reis Da Silva,,-,0
+12168250,Challenger Men Doubles,Antofagasta,Oliveira/ Rodrigues,Aguilar Cardozo/ Barrena,,-,0
+12168251,Challenger Men Doubles,Antofagasta,Dellien Velasco/ Roncadelli,Estevez/ Ratti,,-,0
+12168252,Challenger Men Doubles,Antofagasta,Kicker/ Zeitune,Arias/ Carou,,-,0
+12168253,Challenger Men Doubles,Antofagasta,Ribeiro/ Zormann Da Silva,Matta/ Rodriguez,,-,0
+12168271,Challenger Women Doubles,Samsun,Ciric Bagaric/ Kulambayeva,Crawley/ Yashina,,-,0
+12168272,Challenger Women Doubles,Samsun,Kaler/ Lacinova,McGiffin/ Wagner,,-,0
+12168273,Challenger Women Doubles,Samsun,Bhosale/ Micic,Falkowska/ Smith,,-,0
+12168274,Challenger Women Doubles,Samsun,Christie/ Silva,Karamoko/ Noha Akugue,,-,0
+12168275,Challenger Women Doubles,Samsun,Yilmaz/ Yoruk,Raina/ Turkmen,,-,0
+12168281,Atp Singles,Shanghai,A. Fery,M. Cilic,,-,0
+12168282,Atp Singles,Shanghai,A. Gea,J. Faria,,-,0
+12168284,Atp Singles,Shanghai,Y. Hanfmann,K. Majchrzak,,-,0
+12168287,Atp Singles,Shanghai,A. Kovacevic,M. Berrettini,,-,0
+12168293,Atp Singles,Shanghai,H. Rune,D. Altmaier,,-,0
+12168294,Atp Singles,Shanghai,S. Shimabukuro,M. Kecmanovic,,-,0
+12168299,Atp Singles,Shanghai,Z. Zhang,T. Machac,,-,0
+12168303,Wta Singles,Beijing,I. Jovic,I. Swiatek,,-,0
+12168313,Challenger Women Singles,Suzhou,R. Sramkova,C. Liu,,-,0
+12168319,Wta Singles,Beijing,A. Charaeva,Q. Zheng,,-,0
+12168331,Challenger Men Singles,Wuning 3 (China) - Qualification,Y. Demin,A. Santillan,,-,0
+12168349,Wta Singles,Beijing,A. Li,E. Svitolina,,-,0
+12168368,Itf Men Singles,M25 Luan,Y. C. Chen,K. S. Chen,,-,0
+12168377,Itf Men Singles,M25 Darwin 2,Ja. Delaney,H. Satara,,-,0
+12168378,Itf Men Singles,M25 Darwin 2,H. Hoeyeraal,C. Dong,,-,0
+12168379,Itf Men Singles,M25 Darwin 2,M. Ochi,H. Jones,,-,0
+12168380,Itf Men Singles,M25 Darwin 2,D. Pham,S. Jones,,-,0
+12168381,Itf Men Singles,M25 Darwin 2,L. Vickery,C. Sinclair,,-,0
+12168399,Itf Men Singles,M25 Luan,I. Becroft,M. Alkaya,,-,0
+12168400,Itf Men Singles,M25 Luan,N. Ehrenschneider,Sun Qian,,-,0
+12168401,Itf Men Singles,M25 Luan,Y. Erel,B. Zhang,,-,0
+12168402,Itf Men Singles,M25 Luan,K. Lee,D. J. Kim,,-,0
+12168403,Itf Men Singles,M25 Luan,T. Yamanaka,W. Trongcharoenchaikul,,-,0
+12168404,Itf Women Singles,W15 Islamabad (Pakistan),S. Oigawa,J. Moon,,-,0
+12168405,Itf Women Singles,W15 Islamabad (Pakistan),M. Qureshi,W. Mdlulwa,,-,0
+12168406,Itf Women Singles,W15 Islamabad (Pakistan),M. R. Romisa,A. Bista,,-,0
+12168407,Itf Women Singles,W15 Islamabad (Pakistan),S. Suslova,L. Piskun,,-,0
+12168408,Itf Women Singles,W15 Islamabad (Pakistan),E. Jamshidi,M. Khokhar,,-,0
+12168409,Itf Women Singles,W15 Islamabad (Pakistan),A. Simkina,S. Yuldasheva,,-,0
+12168410,Itf Women Singles,W15 Islamabad (Pakistan),H. SOHAIL,A. Kuparev,,-,0
+12168411,Itf Men Doubles,M25 Luan,Dong/ Liu,Lai/ Zeng,,-,0
+12168412,Itf Men Doubles,M25 Luan,Pleshivtsev/ Tomida,Barsukov/ Ehrenschneider,,-,0
+12168413,Itf Men Doubles,M25 Luan,Tang/ Zhao,Jin/ Sun Qian,,-,0
+12168414,Itf Women Doubles,W15 Islamabad (Pakistan),Finnigan/ Romisa,Qureshi/ Suhail,,-,0
+12168415,Itf Women Doubles,W15 Islamabad (Pakistan),Khramtsova/ Laskutova,Bista/ Sari,,-,0
+12168416,Itf Women Doubles,W15 Islamabad (Pakistan),Mdlulwa/ Mdlulwa,Piskun/ Suslova,,-,0
+12168417,Itf Women Doubles,W15 Islamabad (Pakistan),Cheung/ Oigawa,Olimjanova/ Rubtsova,,-,0
+12168429,Itf Women Singles,W50 Heraklion 2,L. Giza,L. Pigossi,,-,0
+12168431,Challenger Women Singles,Samsun,P. Iatcenko,D. Galfi,,-,0
+12168436,Challenger Men Singles,Braga,M. Cecchinato,O. Wallin,,-,0
+12168437,Challenger Men Singles,Braga,O. Krutykh,J. Barranco Cosano,,-,0
+12168438,Challenger Men Singles,Braga,M. McDonald,R. Nijboer,,-,0
+12168439,Challenger Men Singles,Braga,J. Nikles,M. Damas,Finished,0 - 0,0
+12168440,Challenger Men Singles,Braga,P. Schoen,A. Nedic,,-,0
+12168441,Challenger Men Singles,Villena,H. Barton,T. Samuel,,-,0
+12168442,Challenger Men Singles,Villena,E. Butvilas,M. H. Rehberg,,-,0
+12168443,Challenger Men Singles,Villena,D. Dzumhur,G. Kravchenko,,-,0
+12168444,Challenger Men Singles,Villena,P. Henning,M. Kasnikowski,Interrupted,1 - 0,13
+12168446,Challenger Men Singles,Villena,F. Maestrelli,O. Tarvet,Interrupted,1 - 1,21
+12168447,Challenger Men Singles,Villena,D. Stricker,L. Djere,,-,0
+12168457,Itf Women Singles,W50 Heraklion 2,M. Matoula,T. Di Girolami,,-,0
+12168462,Challenger Women Singles,Samsun,E. Egribel,C. Werner,,-,0
+12168463,Challenger Women Singles,Samsun,L. Jeanjean,M. Bolkvadze,,-,0
+12168472,Itf Women Singles,W50 Heraklion 2,L. Schmidt,R. Serban,,-,0
+12168479,Itf Women Doubles,W35 Seville,Chiesa/ Hennemann,Cabassers Morros/ Cabassers Morros,,-,0
+12168480,Itf Women Doubles,W50 Burgas (Bulgaria),Glushkova/ Glushkova,Kovackova/ Kovackova,,-,0
+12168481,Itf Women Doubles,W50 Burgas (Bulgaria),Gavrila/ Sakellaridi,Naidenova/ Stoichkova,,-,0
+12168498,Itf Men Doubles,M15 Pontevedra,Bobichon/ Car,Burdet/ Tanner,,-,0
+12168499,Itf Men Doubles,M15 Pontevedra,Eichenseher/ Thurner,Galea/ Munoz Fuster,,-,0
+12168503,Itf Men Doubles,M25 Kigali 2,Lock/ Lock,Nefve/ Schachter,,-,0
+12168504,Wta Singles,Beijing,C. Gauff,E. Mertens,,-,0
+12168505,Itf Men Singles,M25 Kigali 2,A. Bangargi,F. Bax,,-,0
+12168506,Itf Men Singles,M25 Kigali 2,L. Bataljin,B. Lock,,-,0
+12168507,Itf Men Singles,M25 Kigali 2,F. L. GONCALVES,Y. Chaurasia,,-,0
+12168508,Itf Men Singles,M25 Kigali 2,C. Hemery,N. Grunewald,,-,0
+12168509,Itf Men Singles,M25 Kigali 2,M. Houkes,R. Alujas,,-,0
+12168510,Itf Men Singles,M25 Kigali 2,N. Schachter,A. Gatoto,,-,0
+12168511,Itf Men Doubles,M25 Kigali 2,Brown/ De Alba,Chaurasia/ Warik,,-,0
+12168512,Itf Men Doubles,M25 Kigali 2,Ishimwe/ Niyigena,Gatoto/ Shah,,-,0
+12168513,Itf Men Doubles,M25 Kigali 2,Suresh/ Terblanche,Javia/ Sahtali,,-,0
+12168514,Itf Men Doubles,M25 Kigali 2,Lokesh/ Venkataraman,Van Herck/ Vankan,,-,0
+12168515,Itf Women Doubles,W35 Seville,Corte/ Teixido Garcia,Candiotto/ Leme Da Silva,,-,0
+12168516,Itf Women Doubles,W35 Seville,Kabbaj/ Tsygourova,Lovric/ Mettraux,,-,0
+12168528,Itf Men Singles,M15 Pontevedra,O. A. Reyes Tiraldo,J. Cesar Porras,,-,0
+12168530,Itf Men Singles,M15 Pontevedra,A. Garcia,T. Curras Abasolo,,-,0
+12168536,Itf Women Doubles,W35 Seville,Roura Llaverias/ Torner Sensano,Mattel/ Nguyen Tan,Walk Over,-,0
+12168571,Itf Men Singles,M25 Santa Margherita di Pula 9,M. De Krom,A. Chepelev,,-,0
+12168572,Itf Men Singles,M25 Santa Margherita di Pula 9,F. Iannaccone,L. Carboni,,-,0
+12168573,Itf Men Singles,M25 Santa Margherita di Pula 9,D. Michalski,L. Bocchi,,-,0
+12168574,Itf Men Singles,M25 Santa Margherita di Pula 9,M. Van Der Meerschen,G. Crivellaro,,-,0
+12168575,Itf Men Singles,M25 Santa Margherita di Pula 9,A. Weis,F. Tabacco,,-,0
+12168576,Itf Women Singles,W35 Villeneuve d'Ascq,A. Burchak,V. Steiner,,-,0
+12168577,Itf Women Singles,W35 Villeneuve d'Ascq,N. Carpentier,O. Dodin,,-,0
+12168578,Itf Women Singles,W35 Villeneuve d'Ascq,A. Lukosiute,S. Nahimana,,-,0
+12168579,Itf Women Singles,W35 Villeneuve d'Ascq,M. Maquet,E. Lene,,-,0
+12168580,Itf Women Singles,W35 Villeneuve d'Ascq,D. Martynov,S. Dal,,-,0
+12168581,Itf Women Singles,W35 Villeneuve d'Ascq,A. Monnot,J. Daniel,,-,0
+12168582,Itf Women Singles,W35 Villeneuve d'Ascq,J. Myatovic,S. J. Visscher,,-,0
+12168583,Itf Women Singles,W35 Villeneuve d'Ascq,K. Veldman,Z. Desai,,-,0
+12168584,Itf Men Doubles,M25 Santa Margherita di Pula 9,Cooper/ Kivattsev,Filippi/ Mazza,,-,0
+12168585,Itf Men Doubles,M25 Santa Margherita di Pula 9,Alvarez Valdes/ Maric,Kisimov/ Lagerbohm,,-,0
+12168586,Itf Men Doubles,M25 Santa Margherita di Pula 9,Alfano/ Sciahbasi,Ifi/ Stanke,,-,0
+12168587,Itf Men Doubles,M25 Santa Margherita di Pula 9,Tabacco/ Tabacco,Crivellaro/ Oradini,,-,0
+12168588,Itf Women Doubles,W35 Villeneuve d'Ascq,Lopez/ Maquet,Im/ Kim Eunchae,,-,0
+12168589,Itf Women Doubles,W35 Villeneuve d'Ascq,Morderger/ Morderger,Monnot/ Villet,,-,0
+12168604,Itf Women Singles,W50 Heraklion 2,D. Papamichail,S. Ogescu,,-,0
+12168642,Itf Women Singles,W35 Lagos,G. Amorim,A. Rey Garcia,,-,0
+12168643,Itf Women Singles,W35 Lagos,I. Dapkute,A. Voloshchuk,,-,0
+12168644,Itf Women Singles,W35 Lagos,B. Du Pree,K. Gibbs,,-,0
+12168645,Itf Women Singles,W35 Lagos,G. Hays,B. Bonardi,,-,0
+12168646,Itf Women Singles,W35 Lagos,M. Ivantsiv,A.F. Santos,,-,0
+12168647,Itf Women Singles,W35 Lagos,J. Mikulskyte,M. Rajeshwaran Revathi,,-,0
+12168648,Itf Women Singles,W35 Lagos,L. Petretic,M. Martinez Vaquero,,-,0
+12168649,Itf Women Singles,W35 Lagos,V. Savinykh,L. Cabrera,,-,0
+12168650,Itf Women Singles,W35 Lagos,I. L. Van den Broek,K. Novak,,-,0
+12168651,Itf Women Singles,W35 Monastir 6,I. Barrera Aguirre,J. Lim,,-,0
+12168652,Itf Women Singles,W35 Monastir 6,A. Bhopal,W. Ewald,,-,0
+12168653,Itf Women Singles,W35 Monastir 6,K. Efremova,S. Biolay,,-,0
+12168654,Itf Women Singles,W35 Monastir 6,K. Kuzmova,M. Soriano Santiago,,-,0
+12168655,Itf Women Singles,W35 Monastir 6,C. Zhu,E. Tupitsyna,,-,0
+12168656,Itf Women Singles,W35 Santa Margherita di Pula 9,J. Pieri,T. Lukas,,-,0
+12168657,Itf Women Singles,W35 Santa Margherita di Pula 9,G. Price,N. Senic,,-,0
+12168658,Itf Women Singles,W35 Santa Margherita di Pula 9,S. Rocchetti,L. Zaar,,-,0
+12168659,Itf Women Singles,W35 Santa Margherita di Pula 9,S. Shapatava,A. Mazzola,,-,0
+12168660,Itf Women Singles,W35 Santa Margherita di Pula 9,L. S. Steur J.,N. Taraba Wallberg,,-,0
+12168661,Itf Women Singles,W35 Santa Margherita di Pula 9,C. Zanolini,G. Pedone,,-,0
+12168662,Itf Women Doubles,W35 Monastir 6,Ahti/ Haavisto,Bosman/ Zoldakova,,-,0
+12168663,Itf Women Doubles,W35 Monastir 6,Hinojosa Gomez/ Kumru,Losciale/ Pascual Montalvo,,-,0
+12168664,Itf Women Doubles,W35 Monastir 6,Krejcova/ Paszun,Biolay/ Lim,,-,0
+12168665,Itf Women Doubles,W35 Monastir 6,Kmiecik/ Skliar,Gharbi/ Rebai,,-,0
+12168666,Itf Women Doubles,W35 Santa Margherita di Pula 9,Bennemann/ Mazzola,Antici/ Giambelli,,-,0
+12168667,Itf Women Doubles,W35 Santa Margherita di Pula 9,Radovanovic/ Senic,Taraba Wallberg/ Zeltina,,-,0
+12168668,Itf Women Doubles,W35 Santa Margherita di Pula 9,Ezzat/ Vladson,Odorizzi/ Ye,,-,0
+12168669,Itf Women Doubles,W35 Santa Margherita di Pula 9,Bohrer Martins/ Zanolini,Rocchetti/ Trevisan,,-,0
+12168670,Itf Women Doubles,W50 Heraklion 2,Bertoldo/ Giordano,Maneshina/ Nikolaidou,,-,0
+12168671,Itf Women Doubles,W50 Heraklion 2,Chatziavraam/ Scheerle,Korokozidi/ Matoula,,-,0
+12168672,Itf Women Doubles,W50 Heraklion 2,Bertea/ Todoni,Cohen/ Poulka,,-,0
+12168673,Itf Women Doubles,W50 Heraklion 2,Buchnik/ Yardley,La Cagnina/ Veleva,,-,0
+12168700,Itf Women Singles,W50 Burgas (Bulgaria),C. Alves,D. Glushkova,,-,0
+12168701,Itf Women Singles,W50 Burgas (Bulgaria),I. D. Amariei,N. Ivanova,,-,0
+12168702,Itf Women Singles,W50 Burgas (Bulgaria),G. Feistel,R. Dencheva,,-,0
+12168703,Itf Women Singles,W50 Burgas (Bulgaria),A. Fita Boluda,F. Urgesi,,-,0
+12168704,Itf Women Singles,W50 Burgas (Bulgaria),L. Karatancheva,L. Giovannini,,-,0
+12168705,Itf Women Singles,W50 Burgas (Bulgaria),L. Mair,J. Ortenzi,,-,0
+12168706,Itf Women Singles,W50 Burgas (Bulgaria),A. Mintegi Del Olmo,B. Barbulescu,,-,0
+12168707,Itf Women Singles,W50 Burgas (Bulgaria),A. Sobolieva,G. Krastenova,,-,0
+12168708,Itf Women Singles,W50 Burgas (Bulgaria),M. Vogt,L. Encheva,,-,0
+12168709,Itf Women Singles,W50 Burgas (Bulgaria),E. Yaneva,G. S. Popa,,-,0
+12168710,Itf Women Singles,W15 Cipolletti (Argentina),Z. Doldan,M. F. Urrutia,,-,0
+12168711,Itf Women Singles,W15 Cipolletti (Argentina),A. S. Sanchez,M. Cristobal,,-,0
+12168712,Itf Women Singles,W15 Cipolletti (Argentina),C. C. Sosa,S. Meabe,,-,0
+12168713,Itf Women Singles,W15 Cipolletti (Argentina),L. F. Britez Risso,M. Madrid Rocca,,-,0
+12168714,Itf Women Singles,W15 Cipolletti (Argentina),F. B. Moron,J. M. Gonzalez Daniele,,-,0
+12168715,Itf Women Singles,W15 Cipolletti (Argentina),L. Moyano,S. N. Nappi,,-,0
+12168737,Itf Women Doubles,W15 Cipolletti (Argentina),Duarte/ Lassaga,Gobbi Monllau/ Zornada,,-,0
+12168738,Itf Women Doubles,W15 Cipolletti (Argentina),BASEL/ Vega Gudino,Mondati/ Tejada,,-,0
+12168739,Itf Women Doubles,W15 Cipolletti (Argentina),Baier/ Corvalan,Doldan/ Sosa,,-,0
+12168740,Itf Women Doubles,W15 Cipolletti (Argentina),Nappi/ Rondinoni,Cristobal/ Pajello,,-,0
+12168741,Itf Women Doubles,W15 Cipolletti (Argentina),Sanchez/ Urrutia,Maruca/ Soto Neira,,-,0
+12168742,Itf Women Doubles,W15 Cipolletti (Argentina),Jurado/ Madrid Rocca,Mai/ Markus,,-,0
+12168743,Itf Women Doubles,W15 Cipolletti (Argentina),Bhatia/ Moron,Larraya Guidi/ Meabe,,-,0
+12168744,Itf Women Doubles,W15 Cipolletti (Argentina),Britez Risso/ Kawano Cho,Bulbarella/ Rain Contreras,,-,0
+12168745,Itf Women Doubles,W50 Lexington,Inoue/ Naito,Burgic/ Ilie,,-,0
+12168746,Itf Women Doubles,W50 Lexington,Bajraliu/ Rus,Dunyon/ Pate,,-,0
+12168747,Itf Women Doubles,W50 Lexington,Rapolu/ Sieg,Bergkvist Larsson/ Stojanova,,-,0
+12168748,Itf Women Doubles,W50 Lexington,Hewitt/ Strakhova,Buchwald/ Carnicella,,-,0
+12168749,Itf Women Singles,W50 Lexington,C. Brace,C. Clarke,,-,0
+12168750,Itf Women Singles,W50 Lexington,V. Strakhova,M. L. Carle,,-,0
+12168751,Itf Women Singles,W50 Lexington,M. Xu,A. Schuman,,-,0
+12168752,Itf Women Singles,W50 Lexington,S. Yamalapalli,W. Osuigwe,,-,0
+12168761,Itf Women Singles,W35 Las Vegas,Y. Bartashevich,E. Mamedova,Set 2,1 - 0,20
+12168765,Itf Women Singles,W35 Las Vegas,A. Hejtmanek,H. Chang,Set 1,0 - 0,2
+12168766,Itf Women Singles,W35 Las Vegas,K. Penickova,A. Shcherbinina,Set 2,1 - 0,21
+12168767,Itf Women Doubles,W35 Las Vegas,Reasco Gonzalez/ Sahdiieva,Eraydin/ Walker,,-,0
+12168768,Itf Women Doubles,W35 Las Vegas,Mattioli/ Scott,Cherubini/ Pace,Set 1,0 - 0,2
+12168769,Wta Doubles,Beijing,Routliffe/ Sutjiadi,Danilina/ Krawczyk,,-,0
+12168770,Wta Doubles,Beijing,Siniakova/ Zhang,Bartunkova/ Chwalinska,,-,0
+12168771,Challenger Men Singles,Wuning 3 (China) - Qualification,T. Derepasko,F. Peliwo,,-,0
+12168772,Challenger Men Singles,Wuning 3 (China) - Qualification,O. Jasika,M. Sharipov,,-,0
+12168773,Challenger Women Singles,Suzhou,L. Fruhvirtova,A. Sasnovich,,-,0
+12168774,Itf Women Singles,W35 Las Vegas,K. Fakih,A. Korpanec Davies,,-,0
+12168775,Itf Women Singles,W35 Las Vegas,N. Kha,D. Cherubini,,-,0
+12168776,Itf Women Singles,W35 Las Vegas,A. Kulikova,A. Abbagnato,,-,0
+12168777,Itf Women Doubles,W35 Las Vegas,Bernales/ Fakih,Chang/ Shymanovich,,-,0
+12168778,Itf Women Doubles,W35 Las Vegas,Battistone/ Hu,Abbagnato/ Gomez Pezuela Cano,,-,0
+12168779,Itf Women Doubles,W35 Las Vegas,Cheong/ Kha,Rencheli/ Sholokhova,,-,0
+12168780,Itf Women Doubles,W35 Las Vegas,Fairclough/ Lutkemeyer,Alicea/ Snells,,-,0
+12168781,Itf Women Doubles,W35 Las Vegas,Maklakova/ Mamedova,Falkner/ Soke,,-,0
+12168782,Itf Women Doubles,W35 Las Vegas,Hejtmanek/ Rodriguez,Chan/ Ghirardato,,-,0
+12168783,Itf Women Singles,W35 Wagga Wagga 2,A. Subasic,H. Arakawa,Set 2,0 - 1,10
+12168784,Itf Women Singles,W35 Wagga Wagga 2,B. Thompson,Y. Kitahara,Set 2,0 - 1,9
+12168785,Itf Women Singles,W35 Wagga Wagga 2,Y. Y. Yang,E. Shibahara,Set 2,0 - 1,10
+12168786,Itf Women Singles,W35 Wagga Wagga 2,L. Yuhan,T. Russell,Set 1,0 - 0,9
+12168787,Itf Women Singles,W35 Wagga Wagga 2,L. Khan,A. Simes,,-,0
+12168788,Itf Women Singles,W35 Wagga Wagga 2,K. Sawashiro,T. Kokkinis,,-,0
+12168789,Itf Women Singles,W35 Wagga Wagga 2,E. Tse,M. Barry,,-,0
+12168790,Itf Women Singles,W35 Wagga Wagga 2,W. Wan I,J. Sibai,,-,0
+12168792,Wta Doubles,Beijing,Errani/ Paolini,Boulter/ Starodubtseva,,-,0
+12168793,Challenger Men Singles,Wuning 3 (China) - Qualification,H. Moriya,K. Saitoh,,-,0
+12168794,Challenger Women Singles,Suzhou,D. Astakhova,R. Zarazua,,-,0
+12168796,Itf Women Singles,W35 Wagga Wagga 2,N. Hanatani,M. Uemura,,-,0
+12168797,Itf Women Singles,W35 Wagga Wagga 2,H. Kaji,R. Kosaka,,-,0
+12168798,Itf Women Singles,W35 Wagga Wagga 2,N. Onozawa,H. Sato,,-,0
+12168799,Itf Women Singles,W35 Wagga Wagga 2,A. Stevens,J. Adams,,-,0
+12168800,Itf Women Singles,W35 Wagga Wagga 2,A. Beck,H. Sato,,-,0
+12168801,Itf Women Singles,W35 Wagga Wagga 2,C. Muramatsu,N. Sato,,-,0
+12168802,Itf Women Singles,W35 Wagga Wagga 2,Mushika Mio,R. Ohashi,,-,0
+12168803,Itf Women Singles,W35 Wagga Wagga 2,G. K. Sandhu,O. Danilova,,-,0
+12168805,Wta Doubles,Beijing,Mertens/ Shnaider,Mihalikova/ Nicholls,,-,0
+12168808,Wta Doubles,Beijing,Hsieh S-/Ostapenko,Khromacheva/ Samsonova,,-,0
+12168810,Challenger Women Singles,Suzhou,T. Prozorova,K. Okamura,,-,0
+12168817,Itf Men Singles,M15 Burgas (Bulgaria),C. S. Bentzel,N. Garcia Longo,,-,0
+12168818,Itf Men Singles,M15 Burgas (Bulgaria),J. Kupcic,N. Lopez,,-,0
+12168819,Itf Men Singles,M15 Burgas (Bulgaria),I. Miletich,Y. Naydenov,,-,0
+12168820,Itf Men Singles,M15 Burgas (Bulgaria),S. Gima,T. Rosenkranz-Konig,,-,0
+12168821,Itf Men Singles,M15 Burgas (Bulgaria),I. B. Petre S.,G. Lazarov,,-,0
+12168822,Itf Men Singles,M15 Burgas (Bulgaria),J. Sperle,M. Ujvary,,-,0
+12168823,Itf Men Singles,M15 Burgas (Bulgaria),M. A. Coman,A. Tolev,,-,0
+12168824,Itf Men Singles,M15 Burgas (Bulgaria),M. Hopp,F. Ferrari,,-,0
+12168825,Itf Men Singles,M15 Burgas (Bulgaria),C. Maguire,A. Ciric,,-,0
+12168826,Itf Women Singles,W50 Heraklion 2,J. Bertoldo,E. Nepliy,,-,0
+12168827,Itf Women Singles,W50 Heraklion 2,D. Maric,V. Paganetti,,-,0
+12168828,Itf Women Singles,W50 Heraklion 2,A. Oktiabreva,A. Cvetkovic,,-,0
+12168829,Itf Women Singles,W50 Heraklion 2,J. Ruggeri,A. Amiraghyan,,-,0
+12168830,Itf Men Doubles,M15 Burgas (Bulgaria),Breazu/ Breazu,Laborde/ Lopez,,-,0
+12168831,Itf Men Doubles,M15 Burgas (Bulgaria),Fabre/ Maute,Garcia Longo/ Miletich,,-,0
+12168832,Itf Men Doubles,M15 Burgas (Bulgaria),Nannelli/ Paolini,Milushev/ Naydenov,,-,0
+12168833,Itf Women Singles,W35 Seville,Y. Kabbaj,D. Yesypchuk,,-,0
+12168835,Challenger Men Singles,Palermo (Italy) - Qualification,J. Forejtek,M. Krumich,,-,0
+12168837,Itf Women Singles,W50 Heraklion 2,E. M. Voracek,C. N. Todoni,,-,0
+12168839,Itf Women Singles,W35 Seville,P. Lovric,L. Nguyen Tan,,-,0
+12168848,Challenger Women Doubles,Suzhou,Kuwata/ Ye,Shi/ Yao,,-,0
+12168849,Itf Women Singles,W15 Maanshan 7,F. Franchi,G. Yuchi,,-,0
+12168850,Itf Women Singles,W15 Maanshan 7,X. Li,D. Egorova,,-,0
+12168851,Itf Women Singles,W15 Maanshan 7,K. Ren,J. Zhang,,-,0
+12168852,Itf Women Singles,W15 Maanshan 7,X. Tang,A. Kakenova,,-,0
+12168853,Itf Women Singles,W15 Maanshan 7,H. E. Lee,Y. Hou,,-,0
+12168854,Itf Women Singles,W15 Maanshan 7,V. Panshina,L. An,,-,0
+12168855,Itf Women Singles,W15 Maanshan 7,M. Shikhanova,H. Koyama,,-,0
+12168856,Itf Women Singles,W15 Maanshan 7,A. Yang,D. Suvirdjonkova,,-,0
+12168857,Itf Women Singles,W15 Maanshan 7,G. Jang,K. Wang,,-,0
+12168858,Itf Women Singles,W15 Maanshan 7,S. Toregen,Y. Wang,,-,0
+12168859,Itf Women Singles,W15 Maanshan 7,G. Xu,J. Wang,,-,0
+12168860,Itf Women Singles,W15 Maanshan 7,A. Yuneva,Y. Sun,,-,0
+12168861,Itf Women Singles,W50 Heraklion 2,J. Daems,M. Bulgaru,,-,0
+12168862,Itf Women Singles,W50 Heraklion 2,N. La Cagnina,N. Brancaccio,,-,0
+12168863,Itf Women Singles,W50 Heraklion 2,C. Pikkaart,A. Rame,,-,0
+12168864,Itf Women Doubles,W15 Maanshan 7,Ren/ Tang,Chen/ Li,,-,0
+12168865,Itf Women Doubles,W15 Maanshan 7,Han/ Yang,Hou/ Wang,,-,0
+12168867,Itf Women Singles,W35 Seville,C. Diaz Adrover,Ma. Garcia Cid,,-,0
+12168868,Itf Women Singles,W35 Seville,R. Roura Llaverias,C. Martinez Cirez,,-,0
+12168869,Atp Singles,Shanghai,A. Mannarino,N. Basilashvili,,-,0
+12168870,Atp Singles,Shanghai,A. Molcan,F. Cina,,-,0
+12168871,Atp Singles,Shanghai,M. Bellucci,Y. Zhou,,-,0
+12168872,Atp Singles,Shanghai,M. Trungelliti,R. Sakamoto,,-,0
+12168873,Atp Singles,Shanghai,R. Hijikata,R. Safiullin,,-,0
+12168874,Atp Singles,Shanghai,Q. Halys,C. Wong,,-,0
+12168875,Atp Singles,Shanghai,Y. Wu,M. Zheng,,-,0
+12168876,Challenger Men Singles,Palermo (Italy) - Qualification,G. Cadenasso,M. Giunta,,-,0
+12168885,Itf Women Singles,W35 Seville,G. Ce,K. Tsygourova,,-,0
+12168886,Challenger Women Singles,Samsun,F. Crawley,O. Selekhmeteva,,-,0
+12168887,Challenger Women Singles,Samsun,V. Hruncakova,H. Sakatsume,,-,0
+12168891,Itf Women Doubles,W35 Villeneuve d'Ascq,Ngounoue/ Poling,Coppez/ Tran,,-,0
+12168894,Itf Women Singles,W35 Seville,A. Geerlings Martinez,A. Zantedeschi,,-,0
+12168897,Itf Men Singles,M25 Darwin 2,N. Baker,S. Vujic,,-,0
+12168898,Itf Men Singles,M25 Darwin 2,M. Bouzige,S. Storch,,-,0
+12168899,Itf Men Singles,M25 Darwin 2,J. Bruce-Smith,C. Hoole,,-,0
+12168900,Itf Men Singles,M25 Darwin 2,J. Charlton,A. Mehrotra,,-,0
+12168901,Itf Men Singles,M25 Darwin 2,L. Connaughton,S. Ryan Ziegann,,-,0
+12168902,Itf Men Singles,M25 Darwin 2,D. Nicholls,T. Sach,,-,0
+12168903,Itf Men Singles,M25 Darwin 2,Z. Stevens,S. Imai,,-,0
+12168904,Itf Men Singles,M25 Darwin 2,Z. Talic,Je. Delaney,,-,0
+12168905,Itf Men Singles,M25 Darwin 2,W. Van Der Merwe,A. Arcon,,-,0
+12168906,Challenger Men Singles,Antofagasta,T. Seyboth Wild,M. A. Dellien Velasco,,-,0
+12168907,Challenger Women Singles,Samsun,L. Stefanini,N. Noha Akugue,,-,0
+12168908,Itf Men Singles,M15 Heraklion 7,M. Efstathiou,F. Murgett,,-,0
+12168909,Itf Men Singles,M15 Heraklion 7,O. Geladaris,J. McGloughlin,,-,0
+12168910,Itf Men Singles,M15 Heraklion 7,M. Scaglia,H. Haupt,,-,0
+12168911,Itf Men Singles,M15 Heraklion 7,A. Vales,J. Cizek,,-,0
+12168912,Itf Men Singles,M15 Heraklion 7,G. Dimitriou,N. Belozertsev,,-,0
+12168913,Itf Men Singles,M15 Heraklion 7,J. Filip,V. Dullinger,,-,0
+12168914,Itf Men Singles,M15 Heraklion 7,T. Kostka,M. Walters,,-,0
+12168915,Itf Men Singles,M15 Heraklion 7,Pa. Tsitsipas,N. Campbell,,-,0
+12168916,Itf Men Singles,M15 Heraklion 7,A. Elamin,A. Turriziani Alvarez,,-,0
+12168917,Itf Men Singles,M15 Heraklion 7,J. Hasson,B. Gusic Wan,,-,0
+12168918,Itf Men Singles,M15 Heraklion 7,E. Kypriotis,L. Rivera,,-,0
+12168919,Itf Men Singles,M15 Heraklion 7,B. Pietri,B. Fitzpatrick,,-,0
+12168920,Itf Men Singles,M15 Heraklion 7,M. Domenc,Pe. Tsitsipas,,-,0
+12168921,Itf Men Singles,M15 Heraklion 7,J. Dominguez Alonso,J. van Assendelft,,-,0
+12168922,Itf Men Singles,M15 Heraklion 7,G. Perego,T. Stice,,-,0
+12168923,Itf Men Singles,M15 Heraklion 7,M. Sakellaridis,P. Makk,,-,0
+12168924,Itf Men Singles,M15 Sharm ElSheikh 12,A. Elsayed,Z. Vanderstappen,,-,0
+12168925,Itf Men Singles,M15 Sharm ElSheikh 12,K. Ibrahim,F. Livet Novkirichka,,-,0
+12168926,Itf Men Singles,M15 Sharm ElSheikh 12,F. Reilly,N. Waldner,,-,0
+12168927,Itf Men Singles,M15 Sharm ElSheikh 12,R. Strombachs,J. Werblinski,,-,0
+12168928,Itf Men Singles,M15 Sharm ElSheikh 12,M. Ehab,R. Faucon,,-,0
+12168929,Itf Men Singles,M15 Sharm ElSheikh 12,A. Gabet,A. F. Alhogbani,,-,0
+12168930,Itf Men Singles,M15 Sharm ElSheikh 12,R. Neimanis,O. Paldanius,,-,0
+12168931,Itf Men Singles,M15 Sharm ElSheikh 12,J. Plans,O. Eerola,,-,0
+12168932,Itf Men Singles,M15 Sharm ElSheikh 12,Y. Dzhavakian,B. Seleznev,,-,0
+12168933,Itf Men Singles,M15 Sharm ElSheikh 12,A. Kukasian,J. Trainauskas,,-,0
+12168934,Itf Men Singles,M15 Sharm ElSheikh 12,A. Kunitsyn,K. Kirci,,-,0
+12168935,Itf Men Singles,M15 Sharm ElSheikh 12,J. Wygona,S. Ivanov,,-,0
+12168936,Itf Men Singles,M15 Sharm ElSheikh 12,T. Batin,N. Senn,,-,0
+12168937,Itf Men Singles,M15 Sharm ElSheikh 12,F. Drab,J. Sadzik,,-,0
+12168938,Itf Men Singles,M15 Sharm ElSheikh 12,J. Hrazdil,A. Arzhankin,,-,0
+12168939,Itf Men Singles,M15 Sharm ElSheikh 12,H. Pierre,A. Funk,,-,0
+12168940,Itf Men Singles,M25 Luan,E. Pleshivtsev,Y. Taka,,-,0
+12168941,Itf Men Singles,M25 Luan,X. Zhou,J. Chiu,,-,0
+12168942,Itf Men Singles,M25 Luan,X. Han,J. Van Herzeele,,-,0
+12168943,Itf Men Singles,M25 Luan,T. Huang,K. Suzuki,,-,0
+12168944,Itf Men Singles,M25 Luan,M. Sasikumar,B. Butulija,,-,0
+12168945,Itf Men Singles,M25 Luan,L. Zhao,A. Shepp,,-,0
+12168946,Itf Men Singles,M25 Luan,M. Shin,P. Bar Biryukov,,-,0
+12168947,Itf Men Singles,M25 Santa Margherita di Pula 9,G. Oradini,M. Furlanetto,,-,0
+12168948,Itf Men Singles,M25 Santa Margherita di Pula 9,J. Price,D. Kisimov,,-,0
+12168949,Itf Men Singles,M25 Santa Margherita di Pula 9,G. Gandolfi,G. M. Noce,,-,0
+12168950,Itf Men Singles,M25 Santa Margherita di Pula 9,G. Pennaforti,R. Hartig,,-,0
+12168951,Itf Men Singles,M25 Santa Margherita di Pula 9,L. Primucci,A. Bellifemine,,-,0
+12168952,Itf Men Singles,M25 Santa Margherita di Pula 9,R. T. Pieleanu,A. Chang,,-,0
+12168953,Itf Women Singles,W35 Santa Margherita di Pula 9,A. Gentili,C. Giambelli,,-,0
+12168954,Itf Women Singles,W35 Santa Margherita di Pula 9,N. Radovanovic,A. Raggi,,-,0
+12168955,Itf Women Singles,W35 Santa Margherita di Pula 9,D. Chiesa,L. Meyer Auf Der Heide,,-,0
+12168956,Itf Women Singles,W35 Santa Margherita di Pula 9,F. Gandolfi,M. Paoletti,,-,0
+12168957,Itf Women Singles,W35 Santa Margherita di Pula 9,C. Gennaro,E. Alvisi,,-,0
+12168958,Itf Women Singles,W35 Santa Margherita di Pula 9,A. Petkovic,M. Lombardini,,-,0
+12168959,Itf Women Singles,W35 Santa Margherita di Pula 9,M. Andrienko,N. A. Molaro,,-,0
+12168960,Itf Women Doubles,W35 Lagos,Castro/ Garakani,Santos/ Shinde,,-,0
+12168961,Itf Women Doubles,W35 Villeneuve d'Ascq,Daniel/ Nahimana,Desai/ Weckerle,,-,0
+12168964,Itf Women Singles,W35 Seville,L. Cortez Llorca,A. Sara,,-,0
+12168967,Challenger Men Singles,Palermo (Italy) - Qualification,Z. Kolar,M. Ribecai,,-,0
+12168968,Challenger Men Singles,Palermo (Italy) - Qualification,A. Martin,A. Moro Canas,,-,0
+12168970,Itf Women Singles,W15 Sharm ElSheikh 14,L. Alhussein,V. Salaiova,,-,0
+12168971,Itf Women Singles,W15 Sharm ElSheikh 14,J. E. De Boer,A. Kashyrina,,-,0
+12168972,Itf Women Singles,W15 Sharm ElSheikh 14,A. Vasileva,S. O. Hansen,,-,0
+12168973,Itf Women Singles,W15 Sharm ElSheikh 14,M. Wainwright,S. Pieroni,,-,0
+12168974,Itf Women Singles,W15 Sharm ElSheikh 14,K. Bierhoff,J. Elkady,,-,0
+12168975,Itf Women Singles,W15 Sharm ElSheikh 14,A. Sushkova,K. Meshcheryakova,,-,0
+12168976,Itf Women Singles,W15 Sharm ElSheikh 14,A. Wildgruber,M. Salvadori,,-,0
+12168977,Itf Women Singles,W15 Sharm ElSheikh 14,J. Groen,A. E. Samardzic,,-,0
+12168978,Itf Women Singles,W15 Sharm ElSheikh 14,C. Janssen,M. Favier,,-,0
+12168979,Itf Women Singles,W15 Sharm ElSheikh 14,A. Reguer,V. Kapcia,,-,0
+12168980,Itf Women Singles,W15 Sharm ElSheikh 14,K. N. Kucikova,S. Avataneo,,-,0
+12168981,Itf Women Singles,W15 Sharm ElSheikh 14,S. Saad,A. Snigireva,,-,0
+12168982,Itf Women Singles,W15 Sharm ElSheikh 14,A. Worring La Torre,N. Rudiukova,,-,0
+12168983,Itf Women Singles,W15 Sharm ElSheikh 14,U. Lekomtseva,A. L. Popovic,,-,0
+12168984,Itf Women Singles,W15 Sharm ElSheikh 14,S. Martianova,Y. Perapekhina,,-,0
+12168985,Itf Women Singles,W15 Sharm ElSheikh 14,A. Roots,I. Marinkovic,,-,0
+12168986,Itf Women Singles,W35 Monastir 6,E. Haavisto,C. Bosman,,-,0
+12168987,Itf Women Singles,W35 Monastir 6,L. Mi,V. Losciale,,-,0
+12168988,Itf Women Singles,W35 Monastir 6,M. Sequeira,P. Skliar,,-,0
+12168989,Itf Women Singles,W35 Monastir 6,T. Lemaitre,P. Berezina,,-,0
+12168990,Itf Women Singles,W35 Monastir 6,D. Tran,T. Krejcova,,-,0
+12168991,Itf Women Singles,W35 Monastir 6,M. Burylo,V. Turini,,-,0
+12168992,Itf Women Singles,W35 Monastir 6,Z. Pawlikowska,O. Gniewkowska,,-,0
+12168993,Itf Women Singles,W35 Seville,E. Chiesa,C. W. Hennemann,,-,0
+12168999,Itf Women Doubles,W35 Lagos,Amorim/ Ivantsiv,Liu/ Moccia,,-,0
+12169000,Challenger Men Singles,Antofagasta,M. Pucinelli de Almeida,G. A. Olivieri,,-,0
+12169003,Itf Men Singles,M15+H Rodez,E. Donnet,A. Raynel,,-,0
+12169004,Itf Men Singles,M15+H Rodez,T. Gerbaud,J. Sels,,-,0
+12169005,Itf Men Singles,M15+H Rodez,L. Massard,R. Dhokia,,-,0
+12169006,Itf Men Singles,M15+H Rodez,R. Eldin,N. Boutleux,,-,0
+12169007,Itf Men Singles,M15+H Rodez,R. Jones,G. Dalmasso,,-,0
+12169008,Itf Men Singles,M15+H Rodez,O. Prihodko,K. Friberg,,-,0
+12169009,Itf Men Singles,M15+H Rodez,A. Garcian,L. Fomba,,-,0
+12169010,Itf Men Singles,M15+H Rodez,A. Reco,R. Andres,,-,0
+12169011,Itf Men Singles,M15+H Rodez,M. Rivet,E. Hudd,,-,0
+12169012,Itf Men Singles,M15+H Rodez,A. Braynin,H. Cardinaud,,-,0
+12169013,Itf Men Singles,M15+H Rodez,J. Penzlin,V. Lapalu,,-,0
+12169014,Itf Men Singles,M15+H Rodez,V. Barreira Bonzom,Y. Baluska,,-,0
+12169015,Itf Men Singles,M15 Monastir 34,P. De La Cierva Sanchez,K. Rahmani,,-,0
+12169016,Itf Men Singles,M15 Monastir 34,N. Makhlouf,A. Watanabe Eriksson,,-,0
+12169017,Itf Men Singles,M15 Monastir 34,A. Ouakaa,L. Branger,,-,0
+12169018,Itf Men Singles,M15 Monastir 34,F. Roussel,S. De Felipe Garcia,,-,0
+12169019,Itf Men Singles,M15 Monastir 34,E. Coulibaly,F. Schlossmann,,-,0
+12169020,Itf Men Singles,M15 Monastir 34,L. Liu,T. Duran,,-,0
+12169021,Itf Men Singles,M15 Monastir 34,A. Mazdrashki,R. Dugardin,,-,0
+12169022,Itf Men Singles,M15 Monastir 34,Y. Smiej,L. Zgraggen,,-,0
+12169023,Itf Men Singles,M15 Monastir 34,V. Dell'Elba,V. Frydrych,,-,0
+12169024,Itf Men Singles,M15 Monastir 34,A. Freire Da Silva,K. van Wyk,,-,0
+12169025,Itf Men Singles,M15 Monastir 34,A. Mondazzi,K. I. Kosaner,,-,0
+12169026,Itf Men Singles,M15 Monastir 34,B. S. Takacs,I. Nortey,,-,0
+12169027,Itf Women Singles,W15 Chisinau (Moldova),K. Diatlova,M. Maslenkova,,-,0
+12169028,Itf Women Singles,W15 Chisinau (Moldova),D. Gaillard,F. Dorofeeva-Rybas,,-,0
+12169029,Itf Women Singles,W15 Chisinau (Moldova),R. Hincu,S. Ksandinov,,-,0
+12169030,Itf Women Singles,W15 Chisinau (Moldova),M. Mikhaylova,M. Boyden,,-,0
+12169031,Itf Women Singles,W15 Chisinau (Moldova),Z. Bednarz,K. Pochtovyk,,-,0
+12169032,Itf Women Singles,W15 Chisinau (Moldova),S. E. Butuc Cerchez,A. Nesmianovych,,-,0
+12169033,Itf Women Singles,W15 Chisinau (Moldova),M. Pares,M. Kalyakina,,-,0
+12169034,Itf Women Singles,W15 Szekesfehervar (Hungary),M. Biro,L. Beviz,,-,0
+12169035,Itf Women Singles,W15 Szekesfehervar (Hungary),G. Fenyves,A. Janiszewska,,-,0
+12169036,Itf Women Singles,W15 Szekesfehervar (Hungary),P. G. Goina,C. Fornasieri,,-,0
+12169037,Itf Women Singles,W15 Szekesfehervar (Hungary),V. Pohle,A. Biot,,-,0
+12169038,Itf Women Singles,W15 Szekesfehervar (Hungary),L. Claeys,L. Belanska,,-,0
+12169039,Itf Women Singles,W15 Szekesfehervar (Hungary),A. Mihalka,A. Sucha,,-,0
+12169040,Itf Women Singles,W15 Szekesfehervar (Hungary),K. Molnar,A. Jaskova,,-,0
+12169041,Itf Women Singles,W15 Szekesfehervar (Hungary),A. Senica,L. Kalman,,-,0
+12169042,Itf Women Singles,W15 Szekesfehervar (Hungary),V. Artemeva,L. Zimenova,,-,0
+12169043,Itf Women Singles,W15 Szekesfehervar (Hungary),G. Ivanovic,M. Pawelska,,-,0
+12169044,Itf Women Singles,W15 Szekesfehervar (Hungary),A. Polakovicova,L. Virc,,-,0
+12169045,Itf Women Singles,W15 Szekesfehervar (Hungary),V. Varga,A. Breaz,,-,0
+12169046,Itf Men Doubles,M15+H Rodez,Boutleux/ Grandvincent,Caillat/ Renard,,-,0
+12169047,Itf Men Doubles,M15 Monastir 34,Buchwald/ Heinrich,Nagoudi/ Piatti,,-,0
+12169048,Itf Men Doubles,M15 Monastir 34,Mansouri/ Ouakaa,Colombo/ Ravasio,,-,0
+12169049,Itf Men Doubles,M15 Monastir 34,Collignon/ Rahmani,Lavazza/ Otegui,,-,0
+12169050,Itf Women Doubles,W15 Chisinau (Moldova),Galiievska/ Trush,Iurina/ Semichina,,-,0
+12169051,Itf Women Doubles,W15 Chisinau (Moldova),Agureeva/ Dorofeeva-Rybas,Cirpanli/ Diatlova,,-,0
+12169052,Itf Women Doubles,W15 Chisinau (Moldova),Belibova/ Gamretkaia,Bretnacher/ Gaillard,,-,0
+12169053,Itf Women Doubles,W15 Chisinau (Moldova),Brune/ Luescher,Jovanovic/ Ksandinov,,-,0
+12169054,Itf Women Doubles,W15 Chisinau (Moldova),Boyden/ Safta,Pastoric/ Williams,,-,0
+12169059,Itf Women Doubles,W15 Szekesfehervar (Hungary),Fenyves/ Nemcsek,Kovacs/ Teker,,-,0
+12169060,Itf Women Doubles,W15 Szekesfehervar (Hungary),Goina/ Molnar,Kalman/ Mihalka,,-,0
+12169061,Itf Women Doubles,W15 Szekesfehervar (Hungary),Biot/ Claeys,Pohle/ Schaedel,,-,0
+12169062,Itf Women Doubles,W15 Szekesfehervar (Hungary),Biro/ Breaz,Chytilova/ Poborilova,,-,0
+12169063,Challenger Men Singles,Antofagasta,N. Hardt,F. Meligeni Alves,,-,0
+12169066,Challenger Men Doubles,Villena,Prashanth/ Sheehy,Cukierman/ Romboli,,-,0
+12169068,Itf Men Singles,M15 Pontevedra,M. Bobichon,C. Giraldi,,-,0
+12169069,Itf Men Singles,M15 Pontevedra,H. Car,A. Burdet,,-,0
+12169070,Itf Men Singles,M15 Pontevedra,S. Seifert,X. Palomar,,-,0
+12169071,Itf Men Singles,M15 Pontevedra,I. Dominguez Alvarez,L. Sheyngezikht,,-,0
+12169072,Itf Men Singles,M15 Pontevedra,N. Thurner,H. S. Callejon,,-,0
+12169073,Itf Men Singles,M15 Pontevedra,K. Bennani,T. Genier,,-,0
+12169074,Itf Men Singles,M15 Pontevedra,A. Bacaloni,J. Munoz Fuster,,-,0
+12169075,Itf Men Singles,M15 Pontevedra,O. Weightman,D. Marques,,-,0
+12169076,Itf Men Doubles,M15 Pontevedra,Gonzalez-Galino/ Cesar Porras,Garcia/ Palomar,,-,0
+12169077,Itf Men Doubles,M15 Pontevedra,Cervantes Tomas/ Reyes Tiraldo,Cicma/ Curras Abasolo,,-,0
+12169078,Itf Men Doubles,M15 Pontevedra,Dominguez Alvarez/ Rodriguez Figueiredo,Castelnuovo/ Genier,,-,0
+12169082,Challenger Men Singles,Antofagasta,J. Reis Da Silva,G. I. Justo,,-,0
+12169083,Itf Women Singles,W50 Lexington,B. Bergkvist Larsson,V. Hu,,-,0
+12169084,Itf Women Singles,W50 Lexington,H. Buchwald,K. Carnicella,,-,0
+12169085,Itf Women Singles,W50 Lexington,J. Dunyon,M. Capurro Taborda,,-,0
+12169086,Itf Women Singles,W50 Lexington,Y. Naito,A. Nguyen,,-,0
+12169087,Itf Women Singles,W50 Lexington,L. Perez Alarcon,M. Slama,,-,0
+12169088,Itf Women Singles,W50 Lexington,K. Rinaldo Persson,E. Burgic,,-,0
+12169089,Itf Women Singles,W50 Lexington,A. Sharma,M. Sieg,,-,0
+12169090,Itf Women Singles,W50 Lexington,M. Brengle,M. Schaefbauer,,-,0
+12169094,Itf Men Singles,M15 Quito 3,M. Del Pino,M. Mouilleron Salvo,,-,0
+12169095,Itf Men Singles,M15 Quito 3,T. Mercier,T. McCormick,,-,0
+12169096,Itf Men Singles,M15 Quito 3,N. E. Rico Arias,R. Fishback,,-,0
+12169097,Itf Men Singles,M15 Quito 3,A. Urrea,M. Echazu,,-,0
+12169098,Itf Men Singles,M15 Quito 3,V. Grippo,D. Salazar,,-,0
+12169099,Itf Men Singles,M15 Quito 3,F. J. Rivadeneira Gallegos,T. J. Leston,,-,0
+12169100,Itf Men Singles,M15 Quito 3,G. Voelzke,S. L. Hernandez R.,,-,0
+12169101,Itf Men Singles,M15 Quito 3,L. Andrade da Silva,A. O. Alvarado Berrospi,,-,0
+12169102,Itf Men Doubles,M15 Quito 3,Bobo/ McCormick,Bini/ Fishback,,-,0
+12169103,Itf Men Doubles,M15 Quito 3,Hollender/ Meneo,Dominguez Collado/ Echazu,,-,0
+12169104,Itf Men Doubles,M15 Quito 3,Del Pino/ Mouilleron Salvo,Macias Elizalde/ Rivadeneira Gallegos,,-,0
