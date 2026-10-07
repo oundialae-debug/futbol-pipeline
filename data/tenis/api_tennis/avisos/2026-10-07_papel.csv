@@ -139,3 +139,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-07 15:29,12168064,Challenger Men Singles,Braga,M. Moeller,T. Torres,menos,23.5,0.7722,0.5576,1.666,True,actual
 2026-10-07 15:32,12168887,Challenger Women Singles,Samsun,V. Hruncakova,H. Sakatsume,menos,21.5,0.6564,0.5576,1.666,True,actual
 2026-10-07 15:33,12169000,Challenger Men Singles,Antofagasta,M. Pucinelli de Almeida,G. A. Olivieri,menos,20.5,0.6654,0.5,1.833,True,aprendida
+2026-10-07 15:38,12168064,Challenger Men Singles,Braga,M. Moeller,T. Torres,menos,20.5,0.904,0.904,1.062,True,casa65
