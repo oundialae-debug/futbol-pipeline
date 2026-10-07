@@ -255,7 +255,7 @@ def balon_oro_doble():
     """Usuario 07/10: dos listas juntas. MERECE = rendimiento por posición (índice 2yellow por perfil, liga 25/26 +
     Mundial, ponderado por minutos y encogido hacia la media con 1350' para que pocos minutos no inflen la media) 60%
     + títulos 35% (Mundial 50%, liga 25%, Champions 25%) + juego limpio 5%. GANARÁ = 70% MERECE + 30% popularidad
-    (visitas de Wikipedia en 5 idiomas, escala logarítmica; data/redes/popularidad_bdo.csv, redes_api.py popularidad)."""
+    (Google Trends mundial relativo a Yamal, escala logarítmica; data/redes/popularidad_bdo.csv, redes_api.py popularidad)."""
     import numpy as np
     c, _ = filas("2025-08-01", "2026-06-30", "clubes"); c = puntuar(c)
     w, _ = filas("2026-06-11", "2026-07-20", "selecciones"); w = puntuar(w)
@@ -274,7 +274,7 @@ def balon_oro_doble():
     x["ind_s"] = (x.ind * x["min"] + x.ind.mean() * K) / (x["min"] + K)
     i = (x.ind_s - x.ind_s.min()) / (x.ind_s.max() - x.ind_s.min())
     x["merece"] = (100 * (.6 * i + .35 * x.col / x.col.max() + .05 * x.fp)).round(0)
-    pop = pd.read_csv(ROOT / "data/redes/popularidad_bdo.csv").set_index("jugador").visitas
+    pop = pd.read_csv(ROOT / "data/redes/popularidad_bdo.csv").set_index("jugador").iloc[:, 0]  # Google Trends (antes Wikipedia)
     lp = np.log10(x.jugador.map(pop))
     x["gana"] = (.7 * x.merece + 30 * (lp - lp.min()) / (lp.max() - lp.min())).round(0)
     print(x.sort_values("merece", ascending=False).head(5)[["jugador", "merece"]].to_string(index=False))

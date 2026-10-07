@@ -4,8 +4,9 @@ API todo lo que necesites" (la cuota aún es amplia; en ~1 semana pasa a 100/dí
              de cada jugador (el backfill de xG lo tiraba) -> data/redes/jugadores_nombres.csv
   ucl     -> Champions League: busca su id, lista los partidos jugados de la temporada y baja su box-score
              -> data/redes/ucl_partidos.csv, data/redes/ucl_jugadores.csv (mismas columnas que historico_xg_jugador + jugador)
-  popularidad -> NO usa Highlightly: visitas en Wikipedia (en, es, fr, de, pt) de los nominados al Balón de Oro,
-             ago-2025 a sep-2026 -> data/redes/popularidad_bdo.csv (usuario 07/10: la popularidad también vota)
+  popularidad -> NO usa Highlightly: interés en Google Trends (mundial, ago-2025 a sep-2026) de los nominados al
+             Balón de Oro -> data/redes/popularidad_bdo.csv (usuario 07/10: la popularidad también vota; Google Trends,
+             no Wikipedia). Trends compara 5 términos por consulta: Lamine Yamal va en todas como ancla y se reescala.
 Tope con TOPE_LLAMADAS; reanudable (salta lo ya guardado)."""
 import csv, json, os, sys
 from pathlib import Path
@@ -136,32 +137,33 @@ def ucl():
 
 
 def popularidad():
-    """Visitas de Wikipedia (API pública de Wikimedia) de los nominados al Balón de Oro, sumando 5 idiomas."""
-    import urllib.parse, urllib.request
+    """Google Trends (pytrends, no oficial): media de interés de cada nominado, reescalada con un ancla común."""
+    import time
+    from pytrends.request import TrendReq
     sys.path.insert(0, str(ROOT / "redes/plantillas"))
     from datos_rankings import NOMINADOS_BDO
-    UA = {"User-Agent": "2yellow-bot/1.0 (https://github.com/oundialae-debug/futbol-pipeline)"}
-    js = lambda u: json.load(urllib.request.urlopen(urllib.request.Request(u, headers=UA), timeout=30))
-    filas = []
-    for nom in NOMINADOS_BDO:
-        q = urllib.parse.urlencode({"action": "query", "format": "json", "redirects": 1, "prop": "langlinks", "lllimit": 500,
-                                    "titles": nom})
-        pag = next(iter(js(f"https://en.wikipedia.org/w/api.php?{q}")["query"]["pages"].values()))
-        titulos = {"en": pag.get("title", nom)}
-        titulos.update({l["lang"]: l["*"] for l in pag.get("langlinks", []) if l["lang"] in ("es", "fr", "de", "pt")})
-        total = 0
-        for lang, t in titulos.items():
-            art = urllib.parse.quote(t.replace(" ", "_"), safe="")
+    ancla = "Lamine Yamal"
+    otros = [n for n in NOMINADOS_BDO if n != ancla]
+    pt = TrendReq(hl="en-GB", tz=0, retries=3, backoff_factor=2)
+    res = {ancla: 100.0}
+    for k in range(0, len(otros), 4):
+        grupo = otros[k:k + 4]
+        for intento in range(4):
             try:
-                d = js(f"https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/{lang}.wikipedia/all-access/user/"
-                       f"{art}/monthly/2025080100/2026093000")
-                total += sum(i["views"] for i in d["items"])
+                pt.build_payload([ancla] + grupo, timeframe="2025-08-01 2026-09-30", geo="")
+                d = pt.interest_over_time()
+                break
             except Exception as ex:
-                print(f"[!] {nom} {lang}: {ex}")
-        filas.append({"jugador": nom, "visitas": total, "idiomas": len(titulos)})
-        print(nom, total)
+                print(f"[!] {grupo}: {ex}"); time.sleep(30 * (intento + 1)); d = None
+        if d is None or d.empty:
+            continue
+        a = d[ancla].mean() or 1
+        for n in grupo:
+            res[n] = round(d[n].mean() / a * 100, 2)   # interés relativo a Yamal (= 100)
+        print(grupo, [res.get(n) for n in grupo])
+        time.sleep(8)
     SAL.mkdir(parents=True, exist_ok=True)
-    pd.DataFrame(filas).to_csv(SAL / "popularidad_bdo.csv", index=False)
+    pd.DataFrame([{"jugador": n, "trends": v} for n, v in res.items()]).to_csv(SAL / "popularidad_bdo.csv", index=False)
 
 
 if __name__ == "__main__":

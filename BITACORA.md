@@ -18,9 +18,10 @@ cambios de código y archivos".
   GANARÁ (70% MERECE + 30% popularidad en Wikipedia). Top: merece Yamal 93, Olise 88, Dembélé 87, Kane 86, Mbappé 86;
   ganará Yamal 95, Olise 89, Mbappé 89, Kane 87, Dembélé 87. Sustituye al índice del 06/10 (error de Bayern y sesgo a goles).
 
-## 07/10/2026 — redes_api: modo popularidad (Wikipedia, sin Highlightly)
-`redes_api.py popularidad`: visitas de Wikipedia (en/es/fr/de/pt, ago-25 a sep-26) de los nominados al Balón de
-Oro -> data/redes/popularidad_bdo.csv. Para el índice "Who will win it" (usuario: la popularidad también vota).
+## 07/10/2026 — redes_api: modo popularidad (Google Trends, sin Highlightly)
+`redes_api.py popularidad`: interés en Google Trends (mundial, ago-25 a sep-26, pytrends) de los nominados al Balón de
+Oro, relativo a Lamine Yamal (=100, ancla en cada consulta de 5) -> data/redes/popularidad_bdo.csv. Para "Who will win
+it". Primero se hizo con visitas de Wikipedia; el usuario pidió Google Trends.
 
 ## 07/10/2026 — redes: índice del Balón de Oro, medias encogidas por minutos
 Usuario: con pocos minutos es más fácil tener buena media. Las medias por 90 (nota, G+A, xG+xA) se encogen hacia la

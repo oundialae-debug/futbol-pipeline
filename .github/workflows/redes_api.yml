@@ -5,7 +5,7 @@ name: Redes - descargas de la API (nombres y Champions)
 on:
   workflow_dispatch:
     inputs:
-      modo: {description: 'nombres | ucl | popularidad (Wikipedia, sin API)', required: true, default: 'ucl'}
+      modo: {description: 'nombres | ucl | popularidad (Google Trends, sin API)', required: true, default: 'ucl'}
       tope_llamadas: {description: 'Tope de llamadas', required: false, default: '400'}
       temporada: {description: 'Temporada de la Champions (2026 = 2026/27)', required: false, default: '2026'}
 
@@ -19,7 +19,7 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with: {python-version: '3.11'}
-      - run: pip install -q requests pandas
+      - run: pip install -q requests pandas pytrends
       - name: Descargar
         env:
           HIGHLIGHTLY_API_KEY: ${{ secrets.HIGHLIGHTLY_API_KEY }}
