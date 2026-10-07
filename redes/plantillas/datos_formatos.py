@@ -27,6 +27,13 @@ ROLES = {
             ("key passes/90", p90("passesKey"), .18, False), ("xG+xA/90", lambda r: ((r.expectedGoals or 0) + (r.expectedAssists or 0)) / r.minutos * 90
                                                                if pd.notna(r.expectedGoals) else None, .15, False),
             ("shots on target/90", p90("shotsOnTarget"), .10, False), ("rating", lambda r: r.nota, .15, False)],
+    # Usuario 07/10 (Kane salía 6º en el Balón de Oro): el perfil de ATT premia regate y pase clave, que es lo de un
+    # extremo; un 9 se mide sobre todo por gol, ocasiones y tiro. Los delanteros centro se puntúan con su propio perfil
+    # (solo entre ellos), pero siguen en la línea ATT para el XI y el top 5.
+    "ST": [("G+A/90", lambda r: r.ga / r.minutos * 90, .30, False), ("xG+xA/90", lambda r: ((r.expectedGoals or 0) + (r.expectedAssists or 0)) / r.minutos * 90
+                                                               if pd.notna(r.expectedGoals) else None, .22, False),
+           ("shots on target/90", p90("shotsOnTarget"), .15, False), ("key passes/90", p90("passesKey"), .10, False),
+           ("dribbles/90", p90("dribblesSuccessful"), .05, False), ("rating", lambda r: r.nota, .18, False)],
     "MID": [("key passes/90", p90("passesKey"), .18, False), ("passes/90", p90("passesSuccessful"), .12, False),
             ("pass %", lambda r: r.passesSuccessful / r.passesTotal * 100 if r.passesTotal else None, .10, False),
             ("tackles+int/90", lambda r: ((r.tacklesTotal or 0) + (r.interceptionsTotal or 0)) / r.minutos * 90, .18, False),
@@ -74,9 +81,11 @@ def puntuar(t):
     pos = posiciones()
     t = t.copy()
     t["rol"] = [ROL_DE.get(next(iter(pos.get(int(i), ({None}, set()))[0]), None), ROL_LINEA[l]) for i, l in zip(t.jugador_id, t.pos)]
+    nueve = {int(i) for i, (prin, _) in pos.items() if prin & {"Centre-Forward", "Second Striker"}}
+    t["perfil"] = ["ST" if r == "ATT" and int(i) in nueve else r for r, i in zip(t.rol, t.jugador_id)]
     t["indice"], t["detalle"] = 0.0, ""
     for rol, mets in ROLES.items():
-        g = t[t.rol == rol]
+        g = t[t.perfil == rol]
         if g.empty:
             continue
         vals = pd.DataFrame({m[0]: [m[1](r) for _, r in g.iterrows()] for m in mets}, index=g.index).astype(float)
@@ -242,5 +251,36 @@ def indice(desde, hasta, fuente="clubes", titulo=None, rol="ATT"):
                                              "rows": rows, "question": "Who's too low?"})
 
 
+def balon_oro_doble():
+    """Usuario 07/10: dos listas juntas. MERECE = rendimiento por posición (índice 2yellow por perfil, liga 25/26 +
+    Mundial, ponderado por minutos y encogido hacia la media con 1350' para que pocos minutos no inflen la media) 60%
+    + títulos 35% (Mundial 50%, liga 25%, Champions 25%) + juego limpio 5%. GANARÁ = 70% MERECE + 30% popularidad
+    (visitas de Wikipedia en 5 idiomas, escala logarítmica; data/redes/popularidad_bdo.csv, redes_api.py popularidad)."""
+    import numpy as np
+    c, _ = filas("2025-08-01", "2026-06-30", "clubes"); c = puntuar(c)
+    w, _ = filas("2026-06-11", "2026-07-20", "selecciones"); w = puntuar(w)
+    b = R.indice_bdo(mostrar=False).set_index("jugador")
+    t, _ = R.jugadores_propios(temporada=2025)
+    rows = []
+    for nom in b.index:
+        jid = int(R.buscar(t, nom).jugador_id)
+        rc, rw = c[c.jugador_id == jid], w[w.jugador_id == jid]
+        mc, mw = rc.minutos.sum(), rw.minutos.sum()
+        ind = ((rc.indice.iloc[0] if len(rc) else 0) * mc + (rw.indice.iloc[0] if len(rw) else 0) * mw) / max(mc + mw, 1)
+        rows.append({"jugador": nom, "equipo": b.at[nom, "equipo"], "nacion": b.at[nom, "nacion"], "min": mc + mw, "ind": ind,
+                     "col": .25 * b.at[nom, "liga_t"] + .25 * b.at[nom, "ucl"] + .5 * b.at[nom, "mundial"], "fp": b.at[nom, "fairplay"]})
+    x = pd.DataFrame(rows)
+    K = 1350
+    x["ind_s"] = (x.ind * x["min"] + x.ind.mean() * K) / (x["min"] + K)
+    i = (x.ind_s - x.ind_s.min()) / (x.ind_s.max() - x.ind_s.min())
+    x["merece"] = (100 * (.6 * i + .35 * x.col / x.col.max() + .05 * x.fp)).round(0)
+    pop = pd.read_csv(ROOT / "data/redes/popularidad_bdo.csv").set_index("jugador").visitas
+    lp = np.log10(x.jugador.map(pop))
+    x["gana"] = (.7 * x.merece + 30 * (lp - lp.min()) / (lp.max() - lp.min())).round(0)
+    print(x.sort_values("merece", ascending=False).head(5)[["jugador", "merece"]].to_string(index=False))
+    print(x.sort_values("gana", ascending=False).head(5)[["jugador", "gana"]].to_string(index=False))
+    return x
+
+
 if __name__ == "__main__":
-    {"xi": xi, "indice": indice}[sys.argv[1]](*sys.argv[2:])
+    {"xi": xi, "indice": indice, "balon_oro_doble": balon_oro_doble}[sys.argv[1]](*sys.argv[2:])

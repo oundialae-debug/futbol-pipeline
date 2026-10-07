@@ -11,6 +11,13 @@ cambios de código y archivos".
   el resumen y dónde leerlo.
 - Lo más nuevo, arriba.
 
+## 07/10/2026 — redes: perfil de delantero centro y Balón de Oro en dos listas
+- `datos_formatos.py`: nuevo perfil "ST" (delanteros centro: G+A, xG+xA y tiro pesan más; regate y pase clave menos),
+  puntuado solo entre 9s; siguen en la línea ATT para XI y top 5. Antes Kane salía bajo porque se le medía como extremo.
+- `balon_oro_doble()`: MERECE (rendimiento por posición 60%, títulos 35% con el Mundial a la mitad, juego limpio 5%) y
+  GANARÁ (70% MERECE + 30% popularidad en Wikipedia). Top: merece Yamal 93, Olise 88, Dembélé 87, Kane 86, Mbappé 86;
+  ganará Yamal 95, Olise 89, Mbappé 89, Kane 87, Dembélé 87. Sustituye al índice del 06/10 (error de Bayern y sesgo a goles).
+
 ## 07/10/2026 — redes_api: modo popularidad (Wikipedia, sin Highlightly)
 `redes_api.py popularidad`: visitas de Wikipedia (en/es/fr/de/pt, ago-25 a sep-26) de los nominados al Balón de
 Oro -> data/redes/popularidad_bdo.csv. Para el índice "Who will win it" (usuario: la popularidad también vota).
