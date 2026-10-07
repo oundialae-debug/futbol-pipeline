@@ -4,8 +4,8 @@ Una idea por imagen: un número gigante, una frase que lo explica, el partido
 y la pregunta final. Cinco de previo y cinco de postpartido.
     python3 redes/plantillas/generar.py ejemplos/prediction.json   # una
     python3 redes/plantillas/generar.py --todos                    # todos los ejemplos
-Zona segura de TikTok: nada a menos de 185 px arriba, 380 abajo, 140 a la derecha
-(--guias la dibuja). Sin API: solo datos que ya estén en disco.
+Zona segura TikTok + Instagram: texto y datos dentro de x 80-880 e y 318-1540 (iconos de TikTok a la derecha,
+descripción abajo; IG en reel solo enseña el centro). --guias la dibuja. Sin API: solo datos que ya estén en disco.
 """
 import argparse, base64, html, json, os, re
 from pathlib import Path
