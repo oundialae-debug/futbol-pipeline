@@ -54,3 +54,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-07 09:13,12168886,Challenger Women Singles,Samsun,F. Crawley,O. Selekhmeteva,menos,20.5,0.5788,0.5,1.833,True,aprendida
 2026-10-07 09:21,12168463,Challenger Women Singles,Samsun,L. Jeanjean,M. Bolkvadze,menos,17.5,0.6623,0.5576,1.666,True,actual
 2026-10-07 09:34,12168436,Challenger Men Singles,Braga,M. Cecchinato,O. Wallin,menos,21.5,0.6454,0.5,1.833,True,aprendida
+2026-10-07 09:35,12168284,Atp Singles,Shanghai,Y. Hanfmann,K. Majchrzak,más,38.5,0.588,0.4634,2.0,True,aprendida
