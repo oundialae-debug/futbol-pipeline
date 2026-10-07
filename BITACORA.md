@@ -11,6 +11,11 @@ cambios de código y archivos".
   el resumen y dónde leerlo.
 - Lo más nuevo, arriba.
 
+## 07/10/2026 — redes: índice del Balón de Oro, medias encogidas por minutos
+Usuario: con pocos minutos es más fácil tener buena media. Las medias por 90 (nota, G+A, xG+xA) se encogen hacia la
+media de los nominados con 1350 min de peso antes de los percentiles. Resultado: Kane 91, Olise 88, Dembélé 85
+(1659 min), Yamal 85, Mbappé 76. Se descartó meter los minutos como factor aparte: subía a Rice al top 5 solo por jugar.
+
 ## 07/10/2026 — redes: índice del Balón de Oro, error de nombre de Bayern
 `UCL_2526` tenía "Bayern München" y nuestros datos dicen "Bayern Munich": Kane y Olise puntuaban 0 en
 Champions (semifinal = 0.6). Corregido el alias. Con el dato bueno: Kane 91, Dembélé 88, Olise 88, Yamal 86,

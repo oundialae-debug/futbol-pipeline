@@ -327,6 +327,11 @@ def indice_bdo(mostrar=True):
                       "nacion": nac, "mundial": fase_wc(nac) if nac else 0.0, "ga": ga})
     d = pd.DataFrame(filas)
     d = d[d.minutos >= 1500].copy()
+    # Usuario 07/10: "es más fácil tener buena media con pocos minutos". Cada media por 90 se encoge hacia la media de
+    # los nominados con K minutos de peso: con pocos minutos manda la media del grupo; con una temporada entera, la suya.
+    K = 1350
+    for c in ("nota", "ga90", "xgxa90"):
+        d[c] = (d[c] * d.minutos + d[c].mean() * K) / (d.minutos + K)
     pr = lambda c, asc=True: d[c].rank(pct=True, ascending=asc)
     d["individual"] = (pr("nota") + pr("ga90") + pr("xgxa90")) / 3
     d["colectivo"] = (d.liga_t + d.ucl + d.mundial) / 3
