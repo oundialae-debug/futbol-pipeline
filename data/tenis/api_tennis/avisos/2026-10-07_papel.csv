@@ -111,3 +111,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-07 12:37,12168442,Challenger Men Singles,Villena,E. Butvilas,M. H. Rehberg,menos,22.5,0.6313,0.5147,1.8,True,aprendida
 2026-10-07 12:40,12168967,Challenger Men Singles,Palermo (Italy) - Qualification,Z. Kolar,M. Ribecai,menos,15.5,0.78,0.6876,1.363,True,actual
 2026-10-07 12:40,12168967,Challenger Men Singles,Palermo (Italy) - Qualification,Z. Kolar,M. Ribecai,menos,15.5,0.6876,0.6876,1.363,True,casa65
+2026-10-07 12:52,12168431,Challenger Women Singles,Samsun,P. Iatcenko,D. Galfi,menos,20.5,0.7021,0.5889,1.571,True,actual
