@@ -131,3 +131,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-07 14:28,12168293,Atp Singles,Shanghai,H. Rune,D. Altmaier,menos,20.5,0.6627,0.6627,1.4,True,casa65
 2026-10-07 14:33,12168887,Challenger Women Singles,Samsun,V. Hruncakova,H. Sakatsume,menos,20.5,0.5646,0.4853,1.909,True,aprendida
 2026-10-07 14:38,12168906,Challenger Men Singles,Antofagasta,T. Seyboth Wild,M. A. Dellien Velasco,menos,17.5,0.6379,0.5767,1.615,True,actual
+2026-10-07 14:40,12168437,Challenger Men Singles,Braga,O. Krutykh,J. Barranco Cosano,menos,15.5,0.6485,0.5576,1.666,True,actual
