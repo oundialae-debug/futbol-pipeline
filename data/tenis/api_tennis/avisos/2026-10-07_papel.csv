@@ -108,3 +108,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-07 12:35,12168444,Challenger Men Singles,Villena,P. Henning,M. Kasnikowski,menos,26.5,0.6584,0.5,1.833,True,aprendida
 2026-10-07 12:36,12168319,Wta Singles,Beijing,A. Charaeva,Q. Zheng,menos,24.5,0.6674,0.5576,1.666,True,actual
 2026-10-07 12:36,12168871,Atp Singles,Shanghai,M. Bellucci,Y. Zhou,más,30.5,0.5905,0.5147,1.8,True,aprendida
+2026-10-07 12:37,12168442,Challenger Men Singles,Villena,E. Butvilas,M. H. Rehberg,menos,22.5,0.6313,0.5147,1.8,True,aprendida
