@@ -45,3 +45,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-07 08:04,12168873,Atp Singles,Shanghai,R. Hijikata,R. Safiullin,menos,22.5,0.5878,0.5,1.833,True,aprendida
 2026-10-07 08:10,12168504,Wta Singles,Beijing,C. Gauff,E. Mertens,menos,18.5,0.6886,0.6077,1.533,True,actual
 2026-10-07 08:14,12168872,Atp Singles,Shanghai,M. Trungelliti,R. Sakamoto,menos,28.5,0.6657,0.5576,1.666,True,actual
+2026-10-07 08:23,12168504,Wta Singles,Beijing,C. Gauff,E. Mertens,menos,18.5,0.8808,0.8808,1.083,True,casa65
