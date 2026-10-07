@@ -11,6 +11,11 @@ cambios de código y archivos".
   el resumen y dónde leerlo.
 - Lo más nuevo, arriba.
 
+## 07/10/2026 — redes: índice del Balón de Oro, error de nombre de Bayern
+`UCL_2526` tenía "Bayern München" y nuestros datos dicen "Bayern Munich": Kane y Olise puntuaban 0 en
+Champions (semifinal = 0.6). Corregido el alias. Con el dato bueno: Kane 91, Dembélé 88, Olise 88, Yamal 86,
+Mbappé 75 (el post del 06/10 ponía Dembélé 88 primero y Kane 82). Detectado por la pregunta del usuario.
+
 ## 07/10/2026 — redes: zona segura común TikTok + Instagram
 Usuario (5ª-6ª vez): en TikTok los iconos de la derecha y la descripción tapaban datos. `generar.py`: `.safe`
 pasa a x 80-880 (right 200) y, con `LIENZO=reel`, y 318-1540 (bottom 380); el Index pone el desglose en su

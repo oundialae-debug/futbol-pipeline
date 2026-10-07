@@ -267,8 +267,9 @@ def nominados(metrica="contribucion"):
 
 
 # Champions 2025/26 (fuente: UEFA/Wikipedia, comprobado 06/10/2026; no está en nuestros datos): fase alcanzada 0-1.
-UCL_2526 = {"Paris Saint Germain": 1.0, "Arsenal": 0.8, "Bayern München": 0.6, "Atletico Madrid": 0.6,
+UCL_2526 = {"Paris Saint Germain": 1.0, "Arsenal": 0.8, "Bayern München": 0.6, "Bayern Munich": 0.6, "Atletico Madrid": 0.6,
             "Real Madrid": 0.4, "Liverpool": 0.4, "Barcelona": 0.4, "Sporting CP": 0.4}
+# 07/10: faltaba "Bayern Munich" (así se llama en nuestros datos): Kane y Olise salían sin su semifinal de Champions.
 
 
 def indice_bdo(mostrar=True):
