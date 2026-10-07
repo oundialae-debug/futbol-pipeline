@@ -76,3 +76,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-07 10:55,12168436,Challenger Men Singles,Braga,M. Cecchinato,O. Wallin,menos,22.5,0.7022,0.5767,1.615,True,actual
 2026-10-07 11:12,12168871,Atp Singles,Shanghai,M. Bellucci,Y. Zhou,menos,28.5,0.6065,0.5576,1.666,True,actual
 2026-10-07 11:12,12168875,Atp Singles,Shanghai,Y. Wu,M. Zheng,menos,22.5,0.6506,0.5889,1.571,True,actual
+2026-10-07 11:15,12168907,Challenger Women Singles,Samsun,L. Stefanini,N. Noha Akugue,menos,18.5,0.6904,0.6077,1.533,True,actual
