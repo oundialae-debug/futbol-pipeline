@@ -49,3 +49,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-07 08:28,12168872,Atp Singles,Shanghai,M. Trungelliti,R. Sakamoto,menos,22.5,0.7091,0.7091,1.333,True,casa65
 2026-10-07 08:46,12168874,Atp Singles,Shanghai,Q. Halys,C. Wong,menos,23.5,0.5761,0.5,1.833,True,aprendida
 2026-10-07 09:05,12168873,Atp Singles,Shanghai,R. Hijikata,R. Safiullin,menos,26.5,0.6462,0.5576,1.666,True,actual
+2026-10-07 09:07,12168056,Challenger Men Singles,Villena,A. Shelbayh,D. Jorda Sanchis,menos,22.5,0.6774,0.5147,1.8,True,aprendida
