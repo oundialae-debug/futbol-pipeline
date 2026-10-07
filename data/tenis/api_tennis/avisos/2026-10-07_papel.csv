@@ -147,3 +147,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-07 16:24,12168437,Challenger Men Singles,Braga,O. Krutykh,J. Barranco Cosano,más,26.5,0.8298,0.4634,2.0,True,aprendida
 2026-10-07 17:04,12168066,Challenger Men Singles,Braga,S. Nagal,L. Mikrut,menos,20.5,0.6902,0.5767,1.615,True,actual
 2026-10-07 17:16,12168060,Challenger Men Singles,Braga,F. Broska,L. Neumayer,menos,28.5,0.6808,0.5576,1.666,True,actual
+2026-10-07 17:19,12168438,Challenger Men Singles,Braga,M. McDonald,R. Nijboer,menos,21.5,0.6072,0.5,1.833,True,aprendida
