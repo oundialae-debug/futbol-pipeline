@@ -1,4 +1,4 @@
-# Tenis en directo, 07/10/2026 00:50 UTC (02:50 en España)
+# Tenis en directo, 07/10/2026 01:05 UTC (03:05 en España)
 
 Calculadora desde el marcador exacto (modelo de puntos, superficie real) frente a la cuota en directo
 (sin margen). Ganador y sets: la calculadora suele coincidir con la casa. Total de juegos: el modelo
@@ -7,7 +7,7 @@ Se actualiza cada ~5 min; el registro en data/tenis/api_tennis/registro/ servir�
 
 | partido | tipo | superficie | marcador (sets, juegos, puntos, saca) | gana 1º: modelo / cuota | sets más probables (modelo) | total juegos: línea, modelo / cuota |
 |---|---|---|---|---|---|---|
-| Y. Bartashevich vs E. Mamedova | Itf Women Singles | Hard | 1-1, 1-4, 0 - 0, saca E. Mamedova | 2% / 6% | 1-2 98%, 2-1 2% |  |
-| A. Hejtmanek vs H. Chang | Itf Women Singles | Hard | 0-1, 2-3, 0 - 0, saca H. Chang | 2% / 5% | 0-2 89%, 1-2 9% |  |
-| Y. Y. Yang vs E. Shibahara | Itf Women Singles | Hard | 1-1, 2-1, 0 - 0, saca E. Shibahara | 59% / 56% | 2-1 59%, 1-2 41% |  |
-| L. Khan vs A. Simes | Itf Women Singles | Hard | 0-0, 0-0, 0 - 0, saca A. Simes | 19% / 39% | 0-2 51%, 1-2 29% |  |
+| A. Hejtmanek vs H. Chang | Itf Women Singles | Hard | 0-1, 3-5, 40 - 0, saca A. Hejtmanek | 2% / 3% | 0-2 93%, 1-2 5% |  |
+| Y. Y. Yang vs E. Shibahara | Itf Women Singles | Hard | 1-1, 3-3, 15 - 30, saca Y. Y. Yang | 42% / 38% | 1-2 58%, 2-1 42% |  |
+| L. Khan vs A. Simes | Itf Women Singles | Hard | 0-0, 1-1, 40 - 0, saca A. Simes | 26% / 47% | 0-2 39%, 1-2 34% |  |
+| K. Sawashiro vs T. Kokkinis | Itf Women Singles | Hard | 0-0, 0-1, 40 - A, saca K. Sawashiro | 28% / 23% | 0-2 45%, 1-2 27% |  |
