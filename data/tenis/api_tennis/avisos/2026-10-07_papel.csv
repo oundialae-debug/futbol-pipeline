@@ -21,3 +21,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-07 05:08,12168810,Challenger Women Singles,Suzhou,T. Prozorova,K. Okamura,menos,27.5,0.6884,0.5576,1.666,True,actual
 2026-10-07 05:20,12168773,Challenger Women Singles,Suzhou,L. Fruhvirtova,A. Sasnovich,menos,14.5,0.766,0.766,1.222,True,casa65
 2026-10-07 05:21,12168294,Atp Singles,Shanghai,S. Shimabukuro,M. Kecmanovic,menos,18.5,0.8642,0.8642,1.1,True,casa65
+2026-10-07 05:41,12168869,Atp Singles,Shanghai,A. Mannarino,N. Basilashvili,menos,22.5,0.5186,0.4634,2.0,True,aprendida
