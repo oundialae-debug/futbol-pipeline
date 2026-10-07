@@ -1,14 +1,14 @@
 # Más/menos juegos en directo: apuestas en papel
 
-Partidos acabados con cuota de juegos en el registro: **452**. Una apuesta por partido (se agrupa por partido). Cuota = la de la API en esa pasada, no la de Luckia. Con menos de 20 apuestas el número no significa nada.
+Partidos acabados con cuota de juegos en el registro: **455**. Una apuesta por partido (se agrupa por partido). Cuota = la de la API en esa pasada, no la de Luckia. Con menos de 20 apuestas el número no significa nada.
 
 | estrategia | apuestas | aciertos | beneficio medio | sigmas |
 |---|---|---|---|---|
 | **señal: vigilar el menos** | 111 | 68% | +22.8% | +2.68 |
-| control: siempre el menos (1ª pasada) | 452 | 51% | -6.1% | -1.40 |
-| control: siempre el más (1ª pasada) | 452 | 49% | -8.6% | -1.97 |
+| control: siempre el menos (1ª pasada) | 455 | 51% | -5.9% | -1.36 |
+| control: siempre el más (1ª pasada) | 455 | 49% | -8.8% | -2.01 |
 
-Brier del 'más' en la línea principal (1ª pasada): modelo 0.2703, mercado 0.2509 (menor es mejor). El modelo da al más +13.4% sobre lo que pasa de verdad.
+Brier del 'más' en la línea principal (1ª pasada): modelo 0.2704, mercado 0.2510 (menor es mejor). El modelo da al más +13.5% sobre lo que pasa de verdad.
 
 ## Señales
 
@@ -130,23 +130,23 @@ Brier del 'más' en la línea principal (1ª pasada): modelo 0.2703, mercado 0.2
 
 | regla | apuestas resueltas | aciertos | beneficio medio (cuota API) | sigmas |
 |---|---|---|---|---|
-| actual | 205 | 54% | -15.7% | -2.88 |
+| actual | 208 | 54% | -15.4% | -2.84 |
 | actual (al móvil) | 125 | 62% | -4.1% | -0.61 |
-| aprendida | 265 | 49% | -8.8% | -1.54 |
-| casa65 | 116 | 83% | +2.7% | +0.59 |
+| aprendida | 269 | 50% | -8.3% | -1.46 |
+| casa65 | 118 | 83% | +2.9% | +0.65 |
 
 ## Previos (antes de empezar), línea principal de juegos y ganador
 
-695 partidos. Juegos (más de la línea principal), Brier (menor es mejor): modelo 0.2807, modelo corregido con el historial 0.2572, casa 0.2501. Pasó el más en el 49%.
+723 partidos. Juegos (más de la línea principal), Brier (menor es mejor): modelo 0.2831, modelo corregido con el historial 0.2581, casa 0.2499. Pasó el más en el 49%.
 
 | regla de previo (en papel desde el 06/10 18:00) | apuestas | aciertos | beneficio medio | sigmas |
 |---|---|---|---|---|
 | previo ATP circuito: más si modelo >= casa+10 | 3 | 67% | +24.0% | +0.39 |
-| previo ajustado vs casa >= 10 (cualquier lado) | 42 | 38% | -29.8% | -2.13 |
-Ganador (695): acierto modelo 69%, casa 72%.
+| previo ajustado vs casa >= 10 (cualquier lado) | 66 | 42% | -22.1% | -1.96 |
+Ganador (723): acierto modelo 69%, casa 72%.
 
 ## Aprendizaje (recalibración del modelo)
 
-Partidos resueltos: 380 (2807 líneas). Activa: **sí** (hace falta 30+ partidos y que mejore a la CASA en partidos que no vio).
-**Apostando con lo aprendido, día a día** (cada día aprende solo de los anteriores): 276 apuestas, aciertos 49%, beneficio medio -9.1%, -1.62 sigmas.
-Brier (menor es mejor): modelo 0.2669, modelo con el saque de hoy 0.2574, casa 0.2444, recalibrado (validado por partidos) 0.2335. Sesgo del modelo hacia el más: +18.0%.
+Partidos resueltos: 383 (2828 líneas). Activa: **sí** (hace falta 30+ partidos y que mejore a la CASA en partidos que no vio).
+**Apostando con lo aprendido, día a día** (cada día aprende solo de los anteriores): 279 apuestas, aciertos 49%, beneficio medio -8.7%, -1.56 sigmas.
+Brier (menor es mejor): modelo 0.2666, modelo con el saque de hoy 0.2573, casa 0.2442, recalibrado (validado por partidos) 0.2322. Sesgo del modelo hacia el más: +18.0%.
