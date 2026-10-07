@@ -133,3 +133,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-07 14:38,12168906,Challenger Men Singles,Antofagasta,T. Seyboth Wild,M. A. Dellien Velasco,menos,17.5,0.6379,0.5767,1.615,True,actual
 2026-10-07 14:40,12168437,Challenger Men Singles,Braga,O. Krutykh,J. Barranco Cosano,menos,15.5,0.6485,0.5576,1.666,True,actual
 2026-10-07 14:49,12168349,Wta Singles,Beijing,A. Li,E. Svitolina,menos,15.5,0.6483,0.5889,1.571,True,actual
+2026-10-07 15:04,12168349,Wta Singles,Beijing,A. Li,E. Svitolina,menos,17.5,0.6627,0.6627,1.4,True,casa65
