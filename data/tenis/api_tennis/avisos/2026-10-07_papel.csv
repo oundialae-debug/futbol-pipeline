@@ -6,3 +6,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-07 03:29,12168313,Challenger Women Singles,Suzhou,R. Sramkova,C. Liu,menos,22.5,0.7077,0.5576,1.666,True,actual
 2026-10-07 03:44,12168810,Challenger Women Singles,Suzhou,T. Prozorova,K. Okamura,menos,20.5,0.6151,0.5,1.833,True,aprendida
 2026-10-07 03:49,12168282,Atp Singles,Shanghai,A. Gea,J. Faria,menos,22.5,0.5597,0.4853,1.909,True,aprendida
+2026-10-07 03:49,12168287,Atp Singles,Shanghai,A. Kovacevic,M. Berrettini,menos,24.5,0.5592,0.5,1.833,True,aprendida
