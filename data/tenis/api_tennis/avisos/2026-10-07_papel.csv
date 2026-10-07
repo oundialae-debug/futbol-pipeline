@@ -94,3 +94,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-07 12:07,12168443,Challenger Men Singles,Villena,D. Dzumhur,G. Kravchenko,menos,21.5,0.6876,0.6876,1.363,True,casa65
 2026-10-07 12:12,12168061,Challenger Men Singles,Braga,M. Dodig,A. Pellegrino,menos,22.5,0.6164,0.5,1.833,True,aprendida
 2026-10-07 12:14,12168281,Atp Singles,Shanghai,A. Fery,M. Cilic,menos,23.5,0.5842,0.5147,1.8,True,aprendida
+2026-10-07 12:19,12168446,Challenger Men Singles,Villena,F. Maestrelli,O. Tarvet,más,28.5,0.5736,0.4111,2.25,True,aprendida
