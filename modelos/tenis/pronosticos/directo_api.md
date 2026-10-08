@@ -1,4 +1,4 @@
-# Tenis en directo, 08/10/2026 01:54 UTC (03:54 en España)
+# Tenis en directo, 08/10/2026 02:02 UTC (04:02 en España)
 
 Calculadora desde el marcador exacto (modelo de puntos, superficie real) frente a la cuota en directo
 (sin margen). Ganador y sets: la calculadora suele coincidir con la casa. Total de juegos: el modelo
@@ -7,5 +7,7 @@ Se actualiza cada ~5 min; el registro en data/tenis/api_tennis/registro/ servir�
 
 | partido | tipo | superficie | marcador (sets, juegos, puntos, saca) | gana 1º: modelo / cuota | sets más probables (modelo) | total juegos: línea, modelo / cuota |
 |---|---|---|---|---|---|---|
-| A. Simes vs Y. Kitahara | Itf Women Singles | Hard | 0-0, 1-3, 0 - 0, saca A. Simes | 42% / 28% | 0-2 34%, 2-1 28% |  |
-| F. Mattioli vs D. Soke | Itf Women Singles | Hard | 1-1, 4-4, 30 - 40, saca D. Soke | 34% / 29% | 1-2 66%, 2-1 34% |  |
+| Y. Tomida vs P. Bar Biryukov | Itf Men Singles | Hard | 0-0, 0-0, 0 - 0, saca P. Bar Biryukov | 35% / 23% | 0-2 36%, 1-2 29% | 21.5: 75% / 50% |
+| T. Yamanaka vs A. Shepp | Itf Men Singles | Hard | 0-0, 0-0, 0 - 0, saca T. Yamanaka | 18% / 28% | 0-2 53%, 1-2 29% | 21.5: 64% / 50% |
+| A. Simes vs Y. Kitahara | Itf Women Singles | Hard | 0-0, 1-4, 0 - 0, saca Y. Kitahara | 34% / 22% | 0-2 41%, 2-1 29% |  |
+| F. Mattioli vs D. Soke | Itf Women Singles | Hard | 1-1, 4-5, 15 - 15, saca F. Mattioli | 27% / 29% | 1-2 73%, 2-1 27% |  |
