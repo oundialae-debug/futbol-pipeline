@@ -1,14 +1,14 @@
 # Más/menos juegos en directo: apuestas en papel
 
-Partidos acabados con cuota de juegos en el registro: **575**. Una apuesta por partido (se agrupa por partido). Cuota = la de la API en esa pasada, no la de Luckia. Con menos de 20 apuestas el número no significa nada.
+Partidos acabados con cuota de juegos en el registro: **581**. Una apuesta por partido (se agrupa por partido). Cuota = la de la API en esa pasada, no la de Luckia. Con menos de 20 apuestas el número no significa nada.
 
 | estrategia | apuestas | aciertos | beneficio medio | sigmas |
 |---|---|---|---|---|
-| **señal: vigilar el menos** | 141 | 64% | +13.6% | +1.80 |
-| control: siempre el menos (1ª pasada) | 575 | 52% | -4.5% | -1.16 |
-| control: siempre el más (1ª pasada) | 575 | 48% | -10.4% | -2.67 |
+| **señal: vigilar el menos** | 144 | 64% | +13.9% | +1.85 |
+| control: siempre el menos (1ª pasada) | 581 | 52% | -4.9% | -1.26 |
+| control: siempre el más (1ª pasada) | 581 | 48% | -10.1% | -2.60 |
 
-Brier del 'más' en la línea principal (1ª pasada): modelo 0.2730, mercado 0.2507 (menor es mejor). El modelo da al más +14.6% sobre lo que pasa de verdad.
+Brier del 'más' en la línea principal (1ª pasada): modelo 0.2725, mercado 0.2507 (menor es mejor). El modelo da al más +14.4% sobre lo que pasa de verdad.
 
 ## Señales
 
@@ -146,37 +146,40 @@ Brier del 'más' en la línea principal (1ª pasada): modelo 0.2730, mercado 0.2
 | ITF M M25 Luan: Y. Erel vs E. Pleshivtsev | 19.5 | 1.08 | 19 | gana |
 | ITF M M25 Luan: K. Suzuki vs M. Alkaya | 13.5 | 1.14 | 13 | gana |
 | ITF M M25 Darwin 2: M. Bouzige vs Je. Delaney | 25.5 | 2.00 | 30 | pierde |
+| Challenger Villena: O. Tarvet vs L. Djere | 25.5 | 1.91 | 23 | gana |
 | ITF M M25 Kigali 2: M. Houkes vs M. Plunger | 18.5 | 1.83 | 19 | pierde |
 | ITF M M25 Darwin 2: Z. Stevens vs D. Pham | 23.5 | 1.80 | 32 | pierde |
 | ITF M M25 Santa Margherita di Pula 9: L. Lokoli vs G. Pennaforti | 18.5 | 1.33 | 18 | gana |
 | ITF M M25 Santa Margherita di Pula 9: R. T. Pieleanu vs A. Weis | 20.5 | 1.83 | 23 | pierde |
 | ITF M M15 Burgas (Bulgaria): J. Sperle vs V. C. Breazu | 29.5 | 2.20 | 31 | pierde |
+| ITF M M15 Burgas (Bulgaria): S. Gima vs I. Miletich | 19.5 | 1.73 | 31 | pierde |
 | ITF M M15 Burgas (Bulgaria): M. Nannelli vs A. Vasilev | 19.5 | 1.30 | 19 | gana |
 | ITF M M15 Burgas (Bulgaria): M. Hopp vs M. F. Breazu | 22.5 | 1.91 | 27 | pierde |
 | ITF M M15+H Rodez: N. Boutleux vs G. Dalmasso | 30.5 | 1.40 | 30 | gana |
 | ITF M M15 Monastir 34: K. I. Kosaner vs K. Rahmani | 24.5 | 2.25 | 23 | gana |
+| ITF M M15+H Rodez: A. Braynin vs J. Penzlin | 26.5 | 1.83 | 26 | gana |
 
 ## Reglas del vigilante (desde el 01/10 solo en papel)
 
 | regla | apuestas resueltas | aciertos | beneficio medio (cuota API) | sigmas |
 |---|---|---|---|---|
-| actual | 310 | 58% | -9.5% | -2.15 |
+| actual | 314 | 58% | -9.1% | -2.07 |
 | actual (al móvil) | 125 | 62% | -4.1% | -0.61 |
-| aprendida | 412 | 53% | -3.0% | -0.65 |
-| casa65 | 194 | 83% | +2.1% | +0.61 |
+| aprendida | 418 | 52% | -4.0% | -0.87 |
+| casa65 | 197 | 83% | +1.6% | +0.47 |
 
 ## Previos (antes de empezar), línea principal de juegos y ganador
 
-973 partidos. Juegos (más de la línea principal), Brier (menor es mejor): modelo 0.2877, modelo corregido con el historial 0.2598, casa 0.2499. Pasó el más en el 48%.
+986 partidos. Juegos (más de la línea principal), Brier (menor es mejor): modelo 0.2878, modelo corregido con el historial 0.2601, casa 0.2499. Pasó el más en el 48%.
 
 | regla de previo (en papel desde el 06/10 18:00) | apuestas | aciertos | beneficio medio | sigmas |
 |---|---|---|---|---|
 | previo ATP circuito: más si modelo >= casa+10 | 13 | 31% | -42.5% | -1.71 |
-| previo ajustado vs casa >= 10 (cualquier lado) | 213 | 49% | -9.0% | -1.42 |
-Ganador (973): acierto modelo 67%, casa 72%.
+| previo ajustado vs casa >= 10 (cualquier lado) | 219 | 49% | -9.8% | -1.57 |
+Ganador (986): acierto modelo 67%, casa 72%.
 
 ## Aprendizaje (recalibración del modelo)
 
-Partidos resueltos: 503 (3734 líneas). Activa: **sí** (hace falta 30+ partidos y que mejore a la CASA en partidos que no vio).
-**Apostando con lo aprendido, día a día** (cada día aprende solo de los anteriores): 400 apuestas, aciertos 51%, beneficio medio -5.8%, -1.24 sigmas.
-Brier (menor es mejor): modelo 0.2729, modelo con el saque de hoy 0.2630, casa 0.2435, recalibrado (validado por partidos) 0.2321. Sesgo del modelo hacia el más: +19.4%.
+Partidos resueltos: 509 (3777 líneas). Activa: **sí** (hace falta 30+ partidos y que mejore a la CASA en partidos que no vio).
+**Apostando con lo aprendido, día a día** (cada día aprende solo de los anteriores): 406 apuestas, aciertos 51%, beneficio medio -6.3%, -1.37 sigmas.
+Brier (menor es mejor): modelo 0.2727, modelo con el saque de hoy 0.2629, casa 0.2435, recalibrado (validado por partidos) 0.2303. Sesgo del modelo hacia el más: +19.3%.
