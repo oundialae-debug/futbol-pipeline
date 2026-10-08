@@ -95,3 +95,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-08 07:10,12168295,Atp Singles,Shanghai,T. A. Tirante,H. Medjedovic,menos,18.5,0.9129,0.9129,1.05,True,casa65
 2026-10-08 07:11,12169187,Itf Men Singles,M25 Darwin 2,J. Charlton,S. Ryan Ziegann,menos,23.5,0.6876,0.6876,1.363,True,casa65
 2026-10-08 07:14,12168845,Challenger Men Singles,Wuning 3 (China) - Qualification,E. Zhu,A. Kachmazov,menos,26.5,0.6627,0.6627,1.4,True,casa65
+2026-10-08 07:15,12169340,Itf Men Singles,M15 Sharm ElSheikh 12,S. Ivanov,A. Arzhankin,menos,19.5,0.5742,0.5147,1.8,True,aprendida
