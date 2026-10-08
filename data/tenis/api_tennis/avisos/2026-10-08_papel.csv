@@ -198,3 +198,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-08 10:21,12169002,Challenger Men Singles,Villena,M. Echargui,D. Glinka,menos,15.5,0.904,0.904,1.062,True,casa65
 2026-10-08 10:22,12169261,Itf Men Singles,M25 Santa Margherita di Pula 9,L. Lokoli,G. Pennaforti,menos,19.5,0.5698,0.5,1.833,True,aprendida
 2026-10-08 10:22,12169395,Itf Men Singles,M15 Monastir 34,I. Nortey,L. Wiedenmann,menos,17.5,0.5735,0.5,1.833,True,aprendida
+2026-10-08 10:24,12168892,Itf Men Singles,M25 Kigali 2,T. Sahtali,K. S. Shah,menos,18.5,0.8964,0.8964,1.04,True,casa65
