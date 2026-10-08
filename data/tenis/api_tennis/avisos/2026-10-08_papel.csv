@@ -54,3 +54,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-08 05:38,12169188,Itf Men Singles,M25 Darwin 2,C. Dong,S. Vujic,menos,23.5,0.6737,0.5366,1.727,True,aprendida
 2026-10-08 05:39,12168290,Atp Singles,Shanghai,J. Munar,J. Brooksby,menos,28.5,0.5807,0.5,1.833,True,aprendida
 2026-10-08 05:40,12169119,Itf Men Singles,M25 Luan,Y. Erel,E. Pleshivtsev,menos,19.5,0.6421,0.5576,1.666,True,actual
+2026-10-08 05:42,12168809,Challenger Men Singles,Wuning 3 (China) - Qualification,F. Sun,K. Samrej,menos,23.5,0.6966,0.5576,1.666,True,actual
