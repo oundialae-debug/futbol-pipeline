@@ -170,3 +170,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-08 09:43,12169131,Itf Men Singles,M25 Darwin 2,Ja. Delaney,W. Van Der Merwe,menos,18.5,0.6402,0.625,1.5,True,actual
 2026-10-08 09:43,12169280,Challenger Men Singles,Braga,P. Schoen,M. Alcala Gurri,menos,17.5,0.734,0.5889,1.571,True,actual
 2026-10-08 09:46,12169131,Itf Men Singles,M25 Darwin 2,Ja. Delaney,W. Van Der Merwe,menos,18.5,0.6627,0.6627,1.4,True,casa65
+2026-10-08 09:49,12169375,Itf Men Singles,M15 Heraklion 7,G. Perego,M. Domenc,menos,21.5,0.5826,0.4853,1.909,True,aprendida
