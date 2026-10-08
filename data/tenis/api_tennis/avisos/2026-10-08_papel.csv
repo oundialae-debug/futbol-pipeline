@@ -358,3 +358,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-08 17:15,12169380,Itf Men Singles,M15+H Rodez,T. Trufelli,A. Gobat,menos,23.5,0.6747,0.5767,1.615,True,actual
 2026-10-08 17:22,12169001,Challenger Men Singles,Antofagasta,M. Tobon,T. Barrios Vera,menos,18.5,0.6822,0.5576,1.666,True,actual
 2026-10-08 17:45,12168535,Challenger Men Singles,Braga,V. Gaubas,D. Ajdukovic,menos,21.5,0.7495,0.5889,1.571,True,actual
+2026-10-08 17:47,12169448,Itf Men Singles,M15 Quito 3,L. Andrade da Silva,M. Echazu,más,29.5,0.7996,0.5,1.833,True,aprendida
