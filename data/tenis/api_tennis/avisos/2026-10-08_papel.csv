@@ -127,3 +127,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-08 08:27,12168289,Atp Singles,Shanghai,F. Marozsan,Z. Svajda,menos,18.5,0.766,0.766,1.222,True,casa65
 2026-10-08 08:27,12169334,Itf Men Singles,M15 Burgas (Bulgaria),J. Sperle,V. C. Breazu,menos,26.5,0.697,0.5576,1.666,True,actual
 2026-10-08 08:31,12169174,Itf Men Singles,M25 Santa Margherita di Pula 9,G. Crivellaro,D. Kisimov,menos,16.5,0.5553,0.5889,1.571,True,actual
+2026-10-08 08:32,12169372,Itf Men Singles,M15 Burgas (Bulgaria),M. Hopp,M. F. Breazu,menos,27.5,0.7337,0.5576,1.666,True,actual
