@@ -1,4 +1,4 @@
-# Tenis en directo, 08/10/2026 04:02 UTC (06:02 en España)
+# Tenis en directo, 08/10/2026 04:16 UTC (06:16 en España)
 
 Calculadora desde el marcador exacto (modelo de puntos, superficie real) frente a la cuota en directo
 (sin margen). Ganador y sets: la calculadora suele coincidir con la casa. Total de juegos: el modelo
@@ -7,17 +7,16 @@ Se actualiza cada ~5 min; el registro en data/tenis/api_tennis/registro/ servir�
 
 | partido | tipo | superficie | marcador (sets, juegos, puntos, saca) | gana 1º: modelo / cuota | sets más probables (modelo) | total juegos: línea, modelo / cuota |
 |---|---|---|---|---|---|---|
-| K. Coppejans vs S. Tsitsipas | Atp Singles | Hard | 0-0, 0-0, 0 - 0, saca ? | 12% / 12% | 0-2 62%, 1-2 26% | 20.5: 57% / 46% |
-| P. Kotov vs T. Griekspoor | Atp Singles | Hard | 0-0, 0-0, 0 - 0, saca ? | 33% / 36% | 0-2 38%, 1-2 29% | 23.5: 58% / 46% |
-| N. Borges vs F. Diaz Acosta | Atp Singles | Hard | 0-0, 0-0, 0 - 0, saca ? | 78% / 74% | 2-0 48%, 2-1 29% | 22.5: 56% / 49% |
-| J. Munar vs J. Brooksby | Atp Singles | Hard | 0-0, 0-0, 0 - 0, saca ? | 67% / 64% | 2-0 38%, 2-1 29% | 22.5: 58% / 46% |
-| R. Seggerman vs K. Uchida | Challenger Men Singles | Hard | 0-1, 4-3, 0 - 0, saca K. Uchida | 29% / 47% | 0-2 44%, 2-1 29% | 31.5: 39% / 49% |
-| E. Kalieva vs T. Korpatsch | Challenger Women Singles | Hard | 1-1, 5-4, 0 - 0, saca T. Korpatsch | 66% / 71% | 2-1 66%, 1-2 34% | 22.5: 100% / 38% |
-| Z. Bai vs E. Jones | Challenger Women Singles | Hard | 1-1, 5-5, 40 - 30, saca E. Jones | 69% / 61% | 2-1 69%, 1-2 31% | 26.5: 100% / 49% |
-| N. Ehrenschneider vs M. Sasikumar | Itf Men Singles | Hard | 1-0, 5-1, 0 - 0, saca M. Sasikumar | 100% /  | 2-0 99%, 2-1 0% |  |
-| K. Suzuki vs M. Alkaya | Itf Men Singles | Hard | 0-0, 0-5, 15 - 15, saca K. Suzuki | 2% / 5% | 0-2 84%, 1-2 13% | 14.5: 87% / 54% |
-| X. Han vs Y. Zeng | Itf Men Singles | Hard | 0-0, 0-1, 0 - 0, saca X. Han | 26% / 17% | 0-2 46%, 1-2 29% | 20.5: 68% / 49% |
-| Y. Hou vs A. Yuneva | Itf Women Singles | Hard | 1-0, 1-0, 0 - 0, saca Y. Hou | 98% / 98% | 2-0 88%, 2-1 9% |  |
-| G. Jang vs F. A. Lin | Itf Women Singles | Hard | 0-0, 2-5, 15 - 40, saca F. A. Lin | 12% / 35% | 0-2 65%, 1-2 23% |  |
-| M. Guo vs D. Egorova | Itf Women Singles | Hard | 0-1, 0-3, 30 - 40, saca M. Guo | 1% / 3% | 0-2 96%, 1-2 3% |  |
-| Y. Chen vs A. Yang | Itf Women Singles | Hard | 1-1, 1-0, 0 - 0, saca A. Yang | 43% / 58% | 1-2 57%, 2-1 43% |  |
+| P. Kotov vs T. Griekspoor | Atp Singles | Hard | 0-0, 1-1, 0 - 15, saca T. Griekspoor | 33% / 34% | 0-2 38%, 1-2 29% | 23.5: 59% / 50% |
+| C. Ugo Carabelli vs I. Simakin | Atp Singles | Hard | 0-0, 0-1, 0 - 0, saca C. Ugo Carabelli | 21% / 30% | 0-2 51%, 1-2 28% | 22.5: 54% / 49% |
+| N. Borges vs F. Diaz Acosta | Atp Singles | Hard | 0-0, 0-1, 30 - 30, saca N. Borges | 75% / 70% | 2-0 43%, 2-1 31% | 22.5: 59% / 51% |
+| K. Coppejans vs S. Tsitsipas | Atp Singles | Hard | 0-0, 0-1, 30 - 0, saca K. Coppejans | 12% / 14% | 0-2 61%, 1-2 27% | 20.5: 59% / 51% |
+| J. Munar vs J. Brooksby | Atp Singles | Hard | 0-0, 1-0, 15 - 30, saca J. Brooksby | 68% / 66% | 2-0 39%, 2-1 29% | 22.5: 58% / 49% |
+| R. Seggerman vs K. Uchida | Challenger Men Singles | Hard | 0-1, 5-4, 40 - A, saca K. Uchida | 28% / 48% | 0-2 46%, 2-1 28% | 31.5: 44% / 51% |
+| K. Suzuki vs M. Alkaya | Itf Men Singles | Hard | 0-1, 0-0, 40 - A, saca M. Alkaya | 2% / 4% | 0-2 86%, 1-2 12% | 13.5: 83% / 54% |
+| D. J. Kim vs Y. C. Chen | Itf Men Singles | Hard | 0-0, 2-0, 0 - 0, saca Y. C. Chen | 85% / 79% | 2-0 60%, 2-1 24% | 18.5: 68% / 50% |
+| X. Han vs Y. Zeng | Itf Men Singles | Hard | 0-0, 2-3, 0 - 0, saca X. Han | 26% / 16% | 0-2 45%, 1-2 29% | 21.5: 68% / 51% |
+| Y. Hou vs A. Yuneva | Itf Women Singles | Hard | 1-0, 3-1, 0 - 30, saca A. Yuneva | 98% / 97% | 2-0 90%, 2-1 8% |  |
+| G. Jang vs F. A. Lin | Itf Women Singles | Hard | 0-1, 0-1, 0 - 40, saca F. A. Lin | 5% / 17% | 0-2 85%, 1-2 10% |  |
+| M. Guo vs D. Egorova | Itf Women Singles | Hard | 0-1, 2-5, 0 - 0, saca M. Guo | 1% / 3% | 0-2 97%, 1-2 2% |  |
+| Y. Chen vs A. Yang | Itf Women Singles | Hard | 1-1, 3-1, 0 - 15, saca Y. Chen | 61% / 75% | 2-1 61%, 1-2 39% |  |
