@@ -194,3 +194,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-08 10:17,12169244,Itf Men Singles,M25 Kigali 2,M. Houkes,M. Plunger,menos,17.5,0.7559,0.5576,1.666,True,actual
 2026-10-08 10:17,12169392,Itf Men Singles,M15 Monastir 34,V. Frydrych,M. Picard,menos,20.5,0.5877,0.5,1.833,True,aprendida
 2026-10-08 10:20,12169190,Itf Men Singles,M25 Darwin 2,M. Bouzige,Je. Delaney,menos,28.5,0.7091,0.7091,1.333,True,casa65
+2026-10-08 10:20,12169396,Itf Men Singles,M15 Pontevedra,M. Bobichon,L. Sheyngezikht,menos,14.5,0.5763,0.5767,1.615,True,actual
