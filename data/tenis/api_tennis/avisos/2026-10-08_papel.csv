@@ -77,3 +77,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-08 06:42,12168882,Atp Singles,Shanghai,B. Tomic,M. Arnaldi,menos,17.5,0.6062,0.5889,1.571,True,actual
 2026-10-08 06:43,12168296,Atp Singles,Shanghai,D. Vallejo,V. Royer,menos,22.5,0.5657,0.4853,1.909,True,aprendida
 2026-10-08 06:48,12168285,Atp Singles,Shanghai,H. Hurkacz,J. Duckworth,menos,22.5,0.6627,0.6627,1.4,True,casa65
+2026-10-08 06:48,12168845,Challenger Men Singles,Wuning 3 (China) - Qualification,E. Zhu,A. Kachmazov,menos,26.5,0.7748,0.6451,1.444,True,actual
