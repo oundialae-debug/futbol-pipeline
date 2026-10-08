@@ -1,14 +1,14 @@
 # Más/menos juegos en directo: apuestas en papel
 
-Partidos acabados con cuota de juegos en el registro: **604**. Una apuesta por partido (se agrupa por partido). Cuota = la de la API en esa pasada, no la de Luckia. Con menos de 20 apuestas el número no significa nada.
+Partidos acabados con cuota de juegos en el registro: **605**. Una apuesta por partido (se agrupa por partido). Cuota = la de la API en esa pasada, no la de Luckia. Con menos de 20 apuestas el número no significa nada.
 
 | estrategia | apuestas | aciertos | beneficio medio | sigmas |
 |---|---|---|---|---|
-| **señal: vigilar el menos** | 152 | 62% | +11.1% | +1.52 |
-| control: siempre el menos (1ª pasada) | 604 | 51% | -6.6% | -1.76 |
-| control: siempre el más (1ª pasada) | 604 | 49% | -8.3% | -2.18 |
+| **señal: vigilar el menos** | 153 | 63% | +11.6% | +1.59 |
+| control: siempre el menos (1ª pasada) | 605 | 51% | -6.5% | -1.72 |
+| control: siempre el más (1ª pasada) | 605 | 49% | -8.4% | -2.23 |
 
-Brier del 'más' en la línea principal (1ª pasada): modelo 0.2703, mercado 0.2507 (menor es mejor). El modelo da al más +13.4% sobre lo que pasa de verdad.
+Brier del 'más' en la línea principal (1ª pasada): modelo 0.2704, mercado 0.2507 (menor es mejor). El modelo da al más +13.4% sobre lo que pasa de verdad.
 
 ## Señales
 
@@ -147,6 +147,7 @@ Brier del 'más' en la línea principal (1ª pasada): modelo 0.2703, mercado 0.2
 | Challenger Antofagasta: M. Pucinelli de Almeida vs G. A. Olivieri | 21.5 | 1.80 | 18 | gana |
 | Challenger Antofagasta: M. Tobon vs T. Barrios Vera | 32.5 | 1.80 | 35 | pierde |
 | Challenger Villena: P. Llamas Ruiz vs P. Nesterov | 31.5 | 1.80 | 31 | gana |
+| Challenger Palermo (Italy): G. Piraino vs E. Dalla Valle | 25.5 | 1.83 | 19 | gana |
 | ITF M M25 Luan: Y. Erel vs E. Pleshivtsev | 19.5 | 1.08 | 19 | gana |
 | ITF M M25 Luan: K. Suzuki vs M. Alkaya | 13.5 | 1.14 | 13 | gana |
 | ITF M M25 Darwin 2: M. Bouzige vs Je. Delaney | 25.5 | 2.00 | 30 | pierde |
@@ -171,23 +172,23 @@ Brier del 'más' en la línea principal (1ª pasada): modelo 0.2703, mercado 0.2
 
 | regla | apuestas resueltas | aciertos | beneficio medio (cuota API) | sigmas |
 |---|---|---|---|---|
-| actual | 335 | 57% | -10.9% | -2.54 |
+| actual | 336 | 57% | -10.7% | -2.50 |
 | actual (al móvil) | 125 | 62% | -4.1% | -0.61 |
-| aprendida | 450 | 52% | -4.7% | -1.07 |
+| aprendida | 451 | 52% | -4.5% | -1.02 |
 | casa65 | 204 | 82% | +1.1% | +0.33 |
 
 ## Previos (antes de empezar), línea principal de juegos y ganador
 
-1020 partidos. Juegos (más de la línea principal), Brier (menor es mejor): modelo 0.2854, modelo corregido con el historial 0.2602, casa 0.2498. Pasó el más en el 49%.
+1022 partidos. Juegos (más de la línea principal), Brier (menor es mejor): modelo 0.2853, modelo corregido con el historial 0.2600, casa 0.2498. Pasó el más en el 48%.
 
 | regla de previo (en papel desde el 06/10 18:00) | apuestas | aciertos | beneficio medio | sigmas |
 |---|---|---|---|---|
 | previo ATP circuito: más si modelo >= casa+10 | 14 | 36% | -33.7% | -1.36 |
-| previo ajustado vs casa >= 10 (cualquier lado) | 237 | 49% | -9.7% | -1.61 |
-Ganador (1020): acierto modelo 67%, casa 71%.
+| previo ajustado vs casa >= 10 (cualquier lado) | 238 | 49% | -9.3% | -1.54 |
+Ganador (1022): acierto modelo 67%, casa 71%.
 
 ## Aprendizaje (recalibración del modelo)
 
-Partidos resueltos: 532 (3984 líneas). Activa: **sí** (hace falta 30+ partidos y que mejore a la CASA en partidos que no vio).
-**Apostando con lo aprendido, día a día** (cada día aprende solo de los anteriores): 429 apuestas, aciertos 50%, beneficio medio -8.7%, -1.95 sigmas.
-Brier (menor es mejor): modelo 0.2703, modelo con el saque de hoy 0.2615, casa 0.2435, recalibrado (validado por partidos) 0.2333. Sesgo del modelo hacia el más: +18.2%.
+Partidos resueltos: 533 (3992 líneas). Activa: **sí** (hace falta 30+ partidos y que mejore a la CASA en partidos que no vio).
+**Apostando con lo aprendido, día a día** (cada día aprende solo de los anteriores): 430 apuestas, aciertos 50%, beneficio medio -8.5%, -1.90 sigmas.
+Brier (menor es mejor): modelo 0.2704, modelo con el saque de hoy 0.2615, casa 0.2435, recalibrado (validado por partidos) 0.2334. Sesgo del modelo hacia el más: +18.2%.
