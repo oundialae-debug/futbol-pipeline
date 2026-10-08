@@ -70,3 +70,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-08 06:16,12168809,Challenger Men Singles,Wuning 3 (China) - Qualification,F. Sun,K. Samrej,menos,22.5,0.904,0.904,1.062,True,casa65
 2026-10-08 06:17,12168883,Atp Singles,Shanghai,C. Ugo Carabelli,I. Simakin,más,26.5,0.4568,0.375,2.5,True,aprendida
 2026-10-08 06:19,12169188,Itf Men Singles,M25 Darwin 2,C. Dong,S. Vujic,menos,17.5,0.6574,0.6451,1.444,True,actual
+2026-10-08 06:23,12168285,Atp Singles,Shanghai,H. Hurkacz,J. Duckworth,menos,22.5,0.6862,0.5576,1.666,True,actual
