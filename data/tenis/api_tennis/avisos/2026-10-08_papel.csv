@@ -75,3 +75,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-08 06:37,12169129,Itf Men Singles,M25 Darwin 2,C. Hoole,T. Sach,menos,19.5,0.6236,0.5576,1.666,True,actual
 2026-10-08 06:42,12168295,Atp Singles,Shanghai,T. A. Tirante,H. Medjedovic,menos,23.5,0.6592,0.5576,1.666,True,actual
 2026-10-08 06:42,12168882,Atp Singles,Shanghai,B. Tomic,M. Arnaldi,menos,17.5,0.6062,0.5889,1.571,True,actual
+2026-10-08 06:43,12168296,Atp Singles,Shanghai,D. Vallejo,V. Royer,menos,22.5,0.5657,0.4853,1.909,True,aprendida
