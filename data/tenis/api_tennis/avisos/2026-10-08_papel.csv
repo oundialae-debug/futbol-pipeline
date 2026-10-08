@@ -120,3 +120,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-08 08:22,12168289,Atp Singles,Shanghai,F. Marozsan,Z. Svajda,menos,18.5,0.7513,0.6077,1.533,True,actual
 2026-10-08 08:22,12169333,Itf Men Singles,M15 Burgas (Bulgaria),T. C. Baragiola Mordini,G. Misasi,menos,18.5,0.663,0.5767,1.615,True,actual
 2026-10-08 08:23,12169342,Itf Men Singles,M15 Sharm ElSheikh 12,R. Strombachs,K. Ibrahim,menos,21.5,0.75,0.75,1.25,True,casa65
+2026-10-08 08:24,12168841,Itf Men Singles,M25 Darwin 2,E. Cook,P. Sekulic,menos,33.5,0.6876,0.6876,1.363,True,casa65
