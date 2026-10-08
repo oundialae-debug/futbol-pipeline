@@ -331,3 +331,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-08 14:48,12169330,Challenger Men Singles,Braga,O. Krutykh,L. Mikrut,más,32.5,0.7948,0.5,1.833,True,aprendida
 2026-10-08 15:08,12169402,Itf Men Singles,M15 Pontevedra,J. Cesar Porras,D. Sarksian,menos,30.5,0.7038,0.5576,1.666,True,actual
 2026-10-08 15:26,12169431,Itf Men Singles,M15+H Rodez,A. Reco,J. Sels,menos,20.5,0.7308,0.5767,1.615,True,actual
+2026-10-08 15:34,12169080,Challenger Men Singles,Palermo (Italy) - Qualification,C. A. Caniato,F. Passaro,menos,22.5,0.636,0.5,1.833,True,aprendida
