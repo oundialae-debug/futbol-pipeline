@@ -238,3 +238,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-08 11:23,12168286,Atp Singles,Shanghai,V. Kopriva,Z. Bergs,menos,22.5,0.627,0.5147,1.8,True,aprendida
 2026-10-08 11:23,12168297,Atp Singles,Shanghai,L. van Assche,Y. Bu,menos,25.5,0.5639,0.5,1.833,True,aprendida
 2026-10-08 11:23,12168804,Wta Singles,Beijing,E. Alexandrova,M. Andreeva,menos,20.5,0.6167,0.5366,1.727,True,aprendida
+2026-10-08 11:24,12168884,Itf Men Singles,M25 Kigali 2,Y. Oliel,A. Beckley,menos,22.5,0.7778,0.5147,1.8,True,aprendida
