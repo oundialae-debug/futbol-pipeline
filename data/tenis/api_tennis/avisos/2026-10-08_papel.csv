@@ -206,3 +206,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-08 10:32,12169335,Itf Men Singles,M15 Burgas (Bulgaria),N. Garcia Longo,G. Lazarov,menos,17.5,0.5932,0.5767,1.615,True,actual
 2026-10-08 10:34,12169190,Itf Men Singles,M25 Darwin 2,M. Bouzige,Je. Delaney,más,28.5,0.5855,0.4853,1.909,True,aprendida
 2026-10-08 10:36,12169195,Itf Men Singles,M25 Santa Margherita di Pula 9,G. Oradini,F. Iannaccone,menos,17.5,0.6845,0.5767,1.615,True,actual
+2026-10-08 10:36,12169376,Itf Men Singles,M15+H Rodez,N. Boutleux,G. Dalmasso,menos,30.5,0.7366,0.6451,1.444,True,actual
