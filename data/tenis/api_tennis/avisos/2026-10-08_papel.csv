@@ -271,3 +271,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-08 11:31,12169244,Itf Men Singles,M25 Kigali 2,M. Houkes,M. Plunger,menos,19.5,0.6876,0.6876,1.363,True,casa65
 2026-10-08 11:31,12169260,Itf Men Singles,M25 Santa Margherita di Pula 9,S. D'Agostino,G. M. Noce,menos,20.5,0.766,0.766,1.222,True,casa65
 2026-10-08 11:39,12169337,Itf Men Singles,M15 Burgas (Bulgaria),M. Nannelli,A. Vasilev,menos,19.5,0.7277,0.6077,1.533,True,actual
+2026-10-08 11:41,12169222,Challenger Men Singles,Villena,D. Dzumhur,A. Shelbayh,menos,22.5,0.7423,0.5,1.833,True,aprendida
