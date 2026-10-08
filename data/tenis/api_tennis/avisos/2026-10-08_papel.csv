@@ -376,3 +376,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-08 21:56,12169455,Itf Men Singles,M15 Quito 3,A. Hernandez,M. Clark,menos,16.5,0.5561,0.5767,1.615,True,actual
 2026-10-08 22:01,12169453,Itf Men Singles,M15 Quito 3,J. S. Osorio,V. Bini,menos,26.5,0.6623,0.5576,1.666,True,actual
 2026-10-08 22:04,12169452,Itf Men Singles,M15 Quito 3,F. De Dios,J. S. Gomez,menos,32.5,0.7158,0.5767,1.615,True,actual
+2026-10-08 22:42,12169455,Itf Men Singles,M15 Quito 3,A. Hernandez,M. Clark,menos,16.5,0.6551,0.5889,1.571,True,aprendida
