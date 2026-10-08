@@ -14,3 +14,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-08 03:39,12169148,Itf Men Singles,M25 Luan,K. Suzuki,M. Alkaya,menos,17.5,0.5859,0.5576,1.666,True,actual
 2026-10-08 03:43,12168847,Challenger Women Singles,Suzhou,E. Kalieva,T. Korpatsch,menos,22.5,0.6965,0.625,1.5,True,actual
 2026-10-08 03:47,12168847,Challenger Women Singles,Suzhou,E. Kalieva,T. Korpatsch,más,22.5,0.4496,0.375,2.5,True,aprendida
+2026-10-08 03:53,12168280,Atp Singles,Shanghai,N. Borges,F. Diaz Acosta,menos,22.5,0.6028,0.5147,1.8,True,aprendida
