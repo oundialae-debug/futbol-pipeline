@@ -1,14 +1,14 @@
 # Más/menos juegos en directo: apuestas en papel
 
-Partidos acabados con cuota de juegos en el registro: **519**. Una apuesta por partido (se agrupa por partido). Cuota = la de la API en esa pasada, no la de Luckia. Con menos de 20 apuestas el número no significa nada.
+Partidos acabados con cuota de juegos en el registro: **533**. Una apuesta por partido (se agrupa por partido). Cuota = la de la API en esa pasada, no la de Luckia. Con menos de 20 apuestas el número no significa nada.
 
 | estrategia | apuestas | aciertos | beneficio medio | sigmas |
 |---|---|---|---|---|
-| **señal: vigilar el menos** | 128 | 65% | +16.5% | +2.07 |
-| control: siempre el menos (1ª pasada) | 519 | 52% | -4.1% | -1.00 |
-| control: siempre el más (1ª pasada) | 519 | 48% | -10.8% | -2.64 |
+| **señal: vigilar el menos** | 129 | 64% | +15.6% | +1.96 |
+| control: siempre el menos (1ª pasada) | 533 | 52% | -4.2% | -1.04 |
+| control: siempre el más (1ª pasada) | 533 | 48% | -10.7% | -2.64 |
 
-Brier del 'más' en la línea principal (1ª pasada): modelo 0.2715, mercado 0.2506 (menor es mejor). El modelo da al más +14.4% sobre lo que pasa de verdad.
+Brier del 'más' en la línea principal (1ª pasada): modelo 0.2729, mercado 0.2507 (menor es mejor). El modelo da al más +14.4% sobre lo que pasa de verdad.
 
 ## Señales
 
@@ -142,28 +142,29 @@ Brier del 'más' en la línea principal (1ª pasada): modelo 0.2715, mercado 0.2
 | Challenger Antofagasta: M. Pucinelli de Almeida vs G. A. Olivieri | 21.5 | 1.80 | 18 | gana |
 | ITF M M25 Luan: Y. Erel vs E. Pleshivtsev | 19.5 | 1.08 | 19 | gana |
 | ITF M M25 Luan: K. Suzuki vs M. Alkaya | 13.5 | 1.14 | 13 | gana |
+| ITF M M15 Burgas (Bulgaria): M. Hopp vs M. F. Breazu | 22.5 | 1.91 | 27 | pierde |
 
 ## Reglas del vigilante (desde el 01/10 solo en papel)
 
 | regla | apuestas resueltas | aciertos | beneficio medio (cuota API) | sigmas |
 |---|---|---|---|---|
-| actual | 263 | 56% | -11.9% | -2.46 |
+| actual | 275 | 57% | -11.1% | -2.34 |
 | actual (al móvil) | 125 | 62% | -4.1% | -0.61 |
-| aprendida | 346 | 53% | -2.3% | -0.45 |
-| casa65 | 157 | 83% | +3.1% | +0.81 |
+| aprendida | 362 | 52% | -3.2% | -0.64 |
+| casa65 | 165 | 84% | +3.9% | +1.09 |
 
 ## Previos (antes de empezar), línea principal de juegos y ganador
 
-888 partidos. Juegos (más de la línea principal), Brier (menor es mejor): modelo 0.2874, modelo corregido con el historial 0.2581, casa 0.2498. Pasó el más en el 48%.
+906 partidos. Juegos (más de la línea principal), Brier (menor es mejor): modelo 0.2886, modelo corregido con el historial 0.2589, casa 0.2499. Pasó el más en el 47%.
 
 | regla de previo (en papel desde el 06/10 18:00) | apuestas | aciertos | beneficio medio | sigmas |
 |---|---|---|---|---|
-| previo ATP circuito: más si modelo >= casa+10 | 11 | 27% | -49.5% | -1.90 |
-| previo ajustado vs casa >= 10 (cualquier lado) | 155 | 49% | -10.0% | -1.36 |
-Ganador (888): acierto modelo 67%, casa 72%.
+| previo ATP circuito: más si modelo >= casa+10 | 12 | 33% | -37.7% | -1.42 |
+| previo ajustado vs casa >= 10 (cualquier lado) | 166 | 49% | -10.2% | -1.42 |
+Ganador (906): acierto modelo 67%, casa 72%.
 
 ## Aprendizaje (recalibración del modelo)
 
-Partidos resueltos: 447 (3287 líneas). Activa: **sí** (hace falta 30+ partidos y que mejore a la CASA en partidos que no vio).
-**Apostando con lo aprendido, día a día** (cada día aprende solo de los anteriores): 345 apuestas, aciertos 52%, beneficio medio -5.1%, -1.02 sigmas.
-Brier (menor es mejor): modelo 0.2703, modelo con el saque de hoy 0.2604, casa 0.2443, recalibrado (validado por partidos) 0.2321. Sesgo del modelo hacia el más: +18.8%.
+Partidos resueltos: 461 (3389 líneas). Activa: **sí** (hace falta 30+ partidos y que mejore a la CASA en partidos que no vio).
+**Apostando con lo aprendido, día a día** (cada día aprende solo de los anteriores): 358 apuestas, aciertos 51%, beneficio medio -6.0%, -1.22 sigmas.
+Brier (menor es mejor): modelo 0.2718, modelo con el saque de hoy 0.2624, casa 0.2437, recalibrado (validado por partidos) 0.2325. Sesgo del modelo hacia el más: +19.0%.
