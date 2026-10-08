@@ -42,3 +42,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-08 05:35,12169188,Itf Men Singles,M25 Darwin 2,C. Dong,S. Vujic,menos,23.5,0.6605,0.5366,1.727,True,aprendida
 2026-10-08 05:38,12168280,Atp Singles,Shanghai,N. Borges,F. Diaz Acosta,menos,20.5,0.6212,0.5576,1.666,True,aprendida
 2026-10-08 05:38,12168285,Atp Singles,Shanghai,H. Hurkacz,J. Duckworth,menos,23.5,0.6229,0.5147,1.8,True,aprendida
+2026-10-08 05:38,12168795,Challenger Women Singles,Suzhou,O. Oliynykova,A. Falei,menos,26.5,0.6558,0.5147,1.8,True,aprendida
