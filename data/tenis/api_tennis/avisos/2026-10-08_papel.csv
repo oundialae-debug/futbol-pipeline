@@ -263,3 +263,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-08 11:25,12169260,Itf Men Singles,M25 Santa Margherita di Pula 9,S. D'Agostino,G. M. Noce,menos,18.5,0.8413,0.75,1.25,True,actual
 2026-10-08 11:25,12169392,Itf Men Singles,M15 Monastir 34,V. Frydrych,M. Picard,menos,16.5,0.6892,0.5576,1.666,True,actual
 2026-10-08 11:25,12169395,Itf Men Singles,M15 Monastir 34,I. Nortey,L. Wiedenmann,menos,18.5,0.6547,0.5767,1.615,True,actual
+2026-10-08 11:26,12169401,Itf Men Singles,M15 Pontevedra,D. Marques,X. Palomar,menos,21.5,0.5789,0.5,1.833,True,aprendida
