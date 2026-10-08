@@ -58,3 +58,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-08 05:42,12169129,Itf Men Singles,M25 Darwin 2,C. Hoole,T. Sach,menos,22.5,0.6401,0.5,1.833,True,aprendida
 2026-10-08 05:44,12168280,Atp Singles,Shanghai,N. Borges,F. Diaz Acosta,menos,22.5,0.7539,0.6876,1.363,True,actual
 2026-10-08 05:44,12168280,Atp Singles,Shanghai,N. Borges,F. Diaz Acosta,menos,22.5,0.6876,0.6876,1.363,True,casa65
+2026-10-08 05:50,12168290,Atp Singles,Shanghai,J. Munar,J. Brooksby,menos,22.5,0.6321,0.5767,1.615,True,actual
