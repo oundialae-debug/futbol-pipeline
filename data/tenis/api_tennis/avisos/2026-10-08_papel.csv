@@ -22,3 +22,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-08 03:59,12168836,Challenger Women Singles,Suzhou,Z. Bai,E. Jones,más,26.5,0.8515,0.4853,1.909,True,aprendida
 2026-10-08 04:05,12168883,Atp Singles,Shanghai,C. Ugo Carabelli,I. Simakin,menos,22.5,0.6046,0.5147,1.8,True,aprendida
 2026-10-08 04:05,12169147,Itf Men Singles,M25 Luan,D. J. Kim,Y. C. Chen,menos,20.5,0.6151,0.5147,1.8,True,aprendida
+2026-10-08 04:06,12169148,Itf Men Singles,M25 Luan,K. Suzuki,M. Alkaya,más,14.5,0.4752,0.4233,2.2,True,aprendida
