@@ -123,3 +123,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-08 08:24,12168841,Itf Men Singles,M25 Darwin 2,E. Cook,P. Sekulic,menos,33.5,0.6876,0.6876,1.363,True,casa65
 2026-10-08 08:25,12169262,Itf Men Singles,M25 Santa Margherita di Pula 9,D. Michalski,A. Bellifemine,menos,16.5,0.7194,0.5576,1.666,True,actual
 2026-10-08 08:26,12169341,Itf Men Singles,M15 Sharm ElSheikh 12,J. Plans,R. Neimanis,menos,18.5,0.8141,0.8141,1.142,True,casa65
+2026-10-08 08:26,12169343,Itf Men Singles,M15 Sharm ElSheikh 12,N. Waldner,R. Faucon,menos,29.5,0.7309,0.5767,1.615,True,actual
