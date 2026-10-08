@@ -283,3 +283,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-08 11:50,12169374,Itf Men Singles,M15 Heraklion 7,E. Kypriotis,A. Elamin,menos,15.5,0.766,0.766,1.222,True,casa65
 2026-10-08 11:52,12169213,Challenger Women Singles,Samsun,S. Waltert,L. Klimovicova,menos,17.5,0.766,0.766,1.222,True,casa65
 2026-10-08 11:54,12169261,Itf Men Singles,M25 Santa Margherita di Pula 9,L. Lokoli,G. Pennaforti,menos,20.5,0.6488,0.5767,1.615,True,actual
+2026-10-08 11:58,12168881,Atp Singles,Shanghai,C. Norrie,D. Svrcina,menos,21.5,0.5706,0.5,1.833,True,aprendida
