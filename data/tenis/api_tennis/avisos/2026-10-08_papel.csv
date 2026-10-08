@@ -304,3 +304,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-08 13:03,12169336,Itf Men Singles,M15 Burgas (Bulgaria),S. Gima,I. Miletich,menos,31.5,0.6949,0.5767,1.615,True,actual
 2026-10-08 13:04,12169403,Itf Men Singles,M15 Pontevedra,D. Verbeek,Z. Sesko,menos,18.5,0.5755,0.4853,1.909,True,aprendida
 2026-10-08 13:07,12169402,Itf Men Singles,M15 Pontevedra,J. Cesar Porras,D. Sarksian,menos,20.5,0.6105,0.5,1.833,True,aprendida
+2026-10-08 13:13,12169170,Challenger Women Singles,Samsun,M. Bolkvadze,B. Andreescu,menos,20.5,0.6675,0.5889,1.571,True,actual
