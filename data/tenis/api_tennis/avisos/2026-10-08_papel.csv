@@ -287,3 +287,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-08 12:04,12168884,Itf Men Singles,M25 Kigali 2,Y. Oliel,A. Beckley,menos,17.5,0.7918,0.6876,1.363,True,actual
 2026-10-08 12:04,12169257,Challenger Men Singles,Braga,T. Pereira,N. Sanchez Izquierdo,menos,20.5,0.6728,0.5,1.833,True,aprendida
 2026-10-08 12:04,12169330,Challenger Men Singles,Braga,O. Krutykh,L. Mikrut,menos,19.5,0.6255,0.4853,1.909,True,aprendida
+2026-10-08 12:06,12169375,Itf Men Singles,M15 Heraklion 7,G. Perego,M. Domenc,menos,27.5,0.6627,0.6627,1.4,True,casa65
