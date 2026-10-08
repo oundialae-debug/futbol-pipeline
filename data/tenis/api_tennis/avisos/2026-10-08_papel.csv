@@ -325,3 +325,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-08 14:30,12168570,Challenger Men Singles,Braga,Z. Piros,E. Moller,menos,17.5,0.7165,0.5767,1.615,True,actual
 2026-10-08 14:30,12169403,Itf Men Singles,M15 Pontevedra,D. Verbeek,Z. Sesko,menos,18.5,0.8553,0.8553,1.1,True,casa65
 2026-10-08 14:34,12169058,Challenger Men Singles,Palermo (Italy) - Qualification,C. Sanchez Jover,L. Giustino,menos,26.5,0.7212,0.5767,1.615,True,actual
+2026-10-08 14:37,12169057,Challenger Men Singles,Villena,P. Llamas Ruiz,P. Nesterov,menos,21.5,0.6529,0.5,1.833,True,aprendida
