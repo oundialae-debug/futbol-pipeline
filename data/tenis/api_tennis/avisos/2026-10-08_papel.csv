@@ -133,3 +133,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-08 08:40,12169344,Itf Men Singles,M15 Sharm ElSheikh 12,A. Elsayed,A. F. Alhogbani,menos,19.5,0.558,0.5,1.833,True,aprendida
 2026-10-08 08:40,12169391,Itf Men Singles,M15 Monastir 34,A. Ouakaa,Y. Smiej,menos,18.5,0.5914,0.5366,1.727,True,aprendida
 2026-10-08 08:42,12168962,Itf Men Singles,M25 Kigali 2,P. Brown,C. Denolly,menos,16.5,0.6957,0.5889,1.571,True,actual
+2026-10-08 08:43,12169193,Itf Men Singles,M25 Kigali 2,D. Javia,Y. Chaurasia,más,17.5,0.4745,0.4111,2.25,True,aprendida
