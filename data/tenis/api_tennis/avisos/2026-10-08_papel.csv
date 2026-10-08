@@ -103,3 +103,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-08 07:34,12169291,Itf Men Singles,M15 Heraklion 7,A. Vales,O. Geladaris,menos,15.5,0.553,0.5576,1.666,True,actual
 2026-10-08 07:36,12169174,Itf Men Singles,M25 Santa Margherita di Pula 9,G. Crivellaro,D. Kisimov,menos,21.5,0.645,0.5147,1.8,True,aprendida
 2026-10-08 07:37,12169262,Itf Men Singles,M25 Santa Margherita di Pula 9,D. Michalski,A. Bellifemine,menos,16.5,0.5904,0.4853,1.909,True,aprendida
+2026-10-08 07:41,12169259,Itf Men Singles,M25 Darwin 2,Z. Stevens,D. Pham,menos,21.5,0.6168,0.5,1.833,True,aprendida
