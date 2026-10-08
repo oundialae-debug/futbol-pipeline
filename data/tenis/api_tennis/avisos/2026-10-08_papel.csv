@@ -329,3 +329,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-08 14:40,12169448,Itf Men Singles,M15 Quito 3,L. Andrade da Silva,M. Echazu,menos,18.5,0.5943,0.5366,1.727,True,aprendida
 2026-10-08 14:44,12169091,Challenger Men Singles,Antofagasta,G. Heide,E. Ribeiro,menos,19.5,0.7213,0.5889,1.571,True,actual
 2026-10-08 14:48,12169330,Challenger Men Singles,Braga,O. Krutykh,L. Mikrut,más,32.5,0.7948,0.5,1.833,True,aprendida
+2026-10-08 15:08,12169402,Itf Men Singles,M15 Pontevedra,J. Cesar Porras,D. Sarksian,menos,30.5,0.7038,0.5576,1.666,True,actual
