@@ -307,3 +307,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-08 13:13,12169170,Challenger Women Singles,Samsun,M. Bolkvadze,B. Andreescu,menos,20.5,0.6675,0.5889,1.571,True,actual
 2026-10-08 13:15,12169379,Itf Men Singles,M15+H Rodez,D. Jade,E. Donnet,más,18.5,0.5042,0.4424,2.1,True,aprendida
 2026-10-08 13:17,12169058,Challenger Men Singles,Palermo (Italy) - Qualification,C. Sanchez Jover,L. Giustino,menos,22.5,0.6669,0.5,1.833,True,aprendida
+2026-10-08 13:17,12169241,Challenger Men Singles,Villena,O. Tarvet,L. Djere,menos,23.5,0.8642,0.8642,1.1,True,casa65
