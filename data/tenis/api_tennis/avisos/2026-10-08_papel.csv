@@ -162,3 +162,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-08 09:28,12169343,Itf Men Singles,M15 Sharm ElSheikh 12,N. Waldner,R. Faucon,más,30.5,0.8425,0.5366,1.727,True,aprendida
 2026-10-08 09:33,12169260,Itf Men Singles,M25 Santa Margherita di Pula 9,S. D'Agostino,G. M. Noce,menos,21.5,0.6045,0.5,1.833,True,aprendida
 2026-10-08 09:34,12169263,Itf Men Singles,M25 Santa Margherita di Pula 9,R. T. Pieleanu,A. Weis,menos,20.5,0.643,0.4853,1.909,True,aprendida
+2026-10-08 09:35,12169389,Itf Men Singles,M15 Monastir 34,J. Echeverria,F. Roussel,menos,18.5,0.6656,0.5576,1.666,True,actual
