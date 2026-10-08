@@ -315,3 +315,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-08 13:40,12169257,Challenger Men Singles,Braga,T. Pereira,N. Sanchez Izquierdo,menos,21.5,0.9665,0.9665,1.006,True,casa65
 2026-10-08 13:42,12169330,Challenger Men Singles,Braga,O. Krutykh,L. Mikrut,menos,31.5,0.7171,0.5767,1.615,True,actual
 2026-10-08 13:43,12169428,Challenger Men Singles,Braga,R. Nijboer,M. Moeller,menos,19.5,0.7146,0.5576,1.666,True,actual
+2026-10-08 13:43,12169431,Itf Men Singles,M15+H Rodez,A. Reco,J. Sels,menos,22.5,0.6371,0.5,1.833,True,aprendida
