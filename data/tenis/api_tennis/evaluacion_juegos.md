@@ -1,14 +1,14 @@
 # Más/menos juegos en directo: apuestas en papel
 
-Partidos acabados con cuota de juegos en el registro: **493**. Una apuesta por partido (se agrupa por partido). Cuota = la de la API en esa pasada, no la de Luckia. Con menos de 20 apuestas el número no significa nada.
+Partidos acabados con cuota de juegos en el registro: **497**. Una apuesta por partido (se agrupa por partido). Cuota = la de la API en esa pasada, no la de Luckia. Con menos de 20 apuestas el número no significa nada.
 
 | estrategia | apuestas | aciertos | beneficio medio | sigmas |
 |---|---|---|---|---|
-| **señal: vigilar el menos** | 121 | 67% | +21.4% | +2.63 |
-| control: siempre el menos (1ª pasada) | 493 | 52% | -4.5% | -1.08 |
-| control: siempre el más (1ª pasada) | 493 | 48% | -10.2% | -2.43 |
+| **señal: vigilar el menos** | 124 | 66% | +19.4% | +2.41 |
+| control: siempre el menos (1ª pasada) | 497 | 52% | -4.9% | -1.19 |
+| control: siempre el más (1ª pasada) | 497 | 48% | -9.8% | -2.35 |
 
-Brier del 'más' en la línea principal (1ª pasada): modelo 0.2721, mercado 0.2511 (menor es mejor). El modelo da al más +14.1% sobre lo que pasa de verdad.
+Brier del 'más' en la línea principal (1ª pasada): modelo 0.2718, mercado 0.2509 (menor es mejor). El modelo da al más +14.0% sobre lo que pasa de verdad.
 
 ## Señales
 
@@ -131,32 +131,35 @@ Brier del 'más' en la línea principal (1ª pasada): modelo 0.2721, mercado 0.2
 | Challenger Antofagasta: G. Heide vs M. Zeitune | 25.5 | 2.50 | 26 | pierde |
 | WTA 125 Suzhou: K. Zavatska vs Y. Shao | 27.5 | 1.83 | 23 | gana |
 | WTA 125 Suzhou: T. Prozorova vs K. Okamura | 29.5 | 1.67 | 32 | pierde |
+| Challenger Wuning 3 (China): R. Seggerman vs K. Uchida | 28.5 | 1.91 | 32 | pierde |
+| WTA 125 Suzhou: Z. Bai vs E. Jones | 25.5 | 2.38 | 29 | pierde |
 | ATP Shanghai: A. Molcan vs F. Cina | 26.5 | 1.73 | 25 | gana |
 | ATP Shanghai: Y. Wu vs M. Zheng | 22.5 | 1.67 | 22 | gana |
 | WTA 125 Samsun: F. Crawley vs O. Selekhmeteva | 26.5 | 1.83 | 30 | pierde |
 | Challenger Antofagasta: M. Pucinelli de Almeida vs G. A. Olivieri | 21.5 | 1.80 | 18 | gana |
+| ITF M M25 Luan: K. Suzuki vs M. Alkaya | 13.5 | 1.14 | 13 | gana |
 
 ## Reglas del vigilante (desde el 01/10 solo en papel)
 
 | regla | apuestas resueltas | aciertos | beneficio medio (cuota API) | sigmas |
 |---|---|---|---|---|
-| actual | 240 | 55% | -13.3% | -2.62 |
+| actual | 244 | 55% | -13.3% | -2.65 |
 | actual (al móvil) | 125 | 62% | -4.1% | -0.61 |
-| aprendida | 314 | 52% | -3.3% | -0.63 |
-| casa65 | 137 | 82% | +2.1% | +0.50 |
+| aprendida | 321 | 52% | -3.7% | -0.70 |
+| casa65 | 138 | 83% | +2.1% | +0.52 |
 
 ## Previos (antes de empezar), línea principal de juegos y ganador
 
-855 partidos. Juegos (más de la línea principal), Brier (menor es mejor): modelo 0.2857, modelo corregido con el historial 0.2587, casa 0.2498. Pasó el más en el 48%.
+859 partidos. Juegos (más de la línea principal), Brier (menor es mejor): modelo 0.2855, modelo corregido con el historial 0.2594, casa 0.2497. Pasó el más en el 48%.
 
 | regla de previo (en papel desde el 06/10 18:00) | apuestas | aciertos | beneficio medio | sigmas |
 |---|---|---|---|---|
 | previo ATP circuito: más si modelo >= casa+10 | 5 | 60% | +11.1% | +0.24 |
-| previo ajustado vs casa >= 10 (cualquier lado) | 141 | 50% | -8.9% | -1.14 |
-Ganador (855): acierto modelo 67%, casa 72%.
+| previo ajustado vs casa >= 10 (cualquier lado) | 143 | 50% | -8.8% | -1.14 |
+Ganador (859): acierto modelo 67%, casa 72%.
 
 ## Aprendizaje (recalibración del modelo)
 
-Partidos resueltos: 421 (3102 líneas). Activa: **sí** (hace falta 30+ partidos y que mejore a la CASA en partidos que no vio).
-**Apostando con lo aprendido, día a día** (cada día aprende solo de los anteriores): 319 apuestas, aciertos 51%, beneficio medio -6.3%, -1.20 sigmas.
-Brier (menor es mejor): modelo 0.2689, modelo con el saque de hoy 0.2587, casa 0.2445, recalibrado (validado por partidos) 0.2324. Sesgo del modelo hacia el más: +18.6%.
+Partidos resueltos: 425 (3132 líneas). Activa: **sí** (hace falta 30+ partidos y que mejore a la CASA en partidos que no vio).
+**Apostando con lo aprendido, día a día** (cada día aprende solo de los anteriores): 323 apuestas, aciertos 50%, beneficio medio -7.1%, -1.36 sigmas.
+Brier (menor es mejor): modelo 0.2690, modelo con el saque de hoy 0.2590, casa 0.2446, recalibrado (validado por partidos) 0.2325. Sesgo del modelo hacia el más: +18.3%.
