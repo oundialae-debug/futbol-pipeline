@@ -1,14 +1,14 @@
 # Más/menos juegos en directo: apuestas en papel
 
-Partidos acabados con cuota de juegos en el registro: **564**. Una apuesta por partido (se agrupa por partido). Cuota = la de la API en esa pasada, no la de Luckia. Con menos de 20 apuestas el número no significa nada.
+Partidos acabados con cuota de juegos en el registro: **575**. Una apuesta por partido (se agrupa por partido). Cuota = la de la API en esa pasada, no la de Luckia. Con menos de 20 apuestas el número no significa nada.
 
 | estrategia | apuestas | aciertos | beneficio medio | sigmas |
 |---|---|---|---|---|
-| **señal: vigilar el menos** | 138 | 64% | +13.8% | +1.80 |
-| control: siempre el menos (1ª pasada) | 564 | 52% | -4.6% | -1.17 |
-| control: siempre el más (1ª pasada) | 564 | 48% | -10.3% | -2.63 |
+| **señal: vigilar el menos** | 141 | 64% | +13.6% | +1.80 |
+| control: siempre el menos (1ª pasada) | 575 | 52% | -4.5% | -1.16 |
+| control: siempre el más (1ª pasada) | 575 | 48% | -10.4% | -2.67 |
 
-Brier del 'más' en la línea principal (1ª pasada): modelo 0.2734, mercado 0.2508 (menor es mejor). El modelo da al más +14.5% sobre lo que pasa de verdad.
+Brier del 'más' en la línea principal (1ª pasada): modelo 0.2730, mercado 0.2507 (menor es mejor). El modelo da al más +14.6% sobre lo que pasa de verdad.
 
 ## Señales
 
@@ -140,6 +140,7 @@ Brier del 'más' en la línea principal (1ª pasada): modelo 0.2734, mercado 0.2
 | ATP Shanghai: A. Molcan vs F. Cina | 26.5 | 1.73 | 25 | gana |
 | ATP Shanghai: Y. Wu vs M. Zheng | 22.5 | 1.67 | 22 | gana |
 | ATP Shanghai: C. Ugo Carabelli vs I. Simakin | 25.5 | 2.25 | 28 | pierde |
+| ITF M M25 Kigali 2: Y. Oliel vs A. Beckley | 22.5 | 1.80 | 16 | gana |
 | WTA 125 Samsun: F. Crawley vs O. Selekhmeteva | 26.5 | 1.83 | 30 | pierde |
 | Challenger Antofagasta: M. Pucinelli de Almeida vs G. A. Olivieri | 21.5 | 1.80 | 18 | gana |
 | ITF M M25 Luan: Y. Erel vs E. Pleshivtsev | 19.5 | 1.08 | 19 | gana |
@@ -147,6 +148,8 @@ Brier del 'más' en la línea principal (1ª pasada): modelo 0.2734, mercado 0.2
 | ITF M M25 Darwin 2: M. Bouzige vs Je. Delaney | 25.5 | 2.00 | 30 | pierde |
 | ITF M M25 Kigali 2: M. Houkes vs M. Plunger | 18.5 | 1.83 | 19 | pierde |
 | ITF M M25 Darwin 2: Z. Stevens vs D. Pham | 23.5 | 1.80 | 32 | pierde |
+| ITF M M25 Santa Margherita di Pula 9: L. Lokoli vs G. Pennaforti | 18.5 | 1.33 | 18 | gana |
+| ITF M M25 Santa Margherita di Pula 9: R. T. Pieleanu vs A. Weis | 20.5 | 1.83 | 23 | pierde |
 | ITF M M15 Burgas (Bulgaria): J. Sperle vs V. C. Breazu | 29.5 | 2.20 | 31 | pierde |
 | ITF M M15 Burgas (Bulgaria): M. Nannelli vs A. Vasilev | 19.5 | 1.30 | 19 | gana |
 | ITF M M15 Burgas (Bulgaria): M. Hopp vs M. F. Breazu | 22.5 | 1.91 | 27 | pierde |
@@ -157,23 +160,23 @@ Brier del 'más' en la línea principal (1ª pasada): modelo 0.2734, mercado 0.2
 
 | regla | apuestas resueltas | aciertos | beneficio medio (cuota API) | sigmas |
 |---|---|---|---|---|
-| actual | 301 | 57% | -10.4% | -2.30 |
+| actual | 310 | 58% | -9.5% | -2.15 |
 | actual (al móvil) | 125 | 62% | -4.1% | -0.61 |
-| aprendida | 401 | 53% | -2.6% | -0.56 |
-| casa65 | 188 | 84% | +2.5% | +0.74 |
+| aprendida | 412 | 53% | -3.0% | -0.65 |
+| casa65 | 194 | 83% | +2.1% | +0.61 |
 
 ## Previos (antes de empezar), línea principal de juegos y ganador
 
-955 partidos. Juegos (más de la línea principal), Brier (menor es mejor): modelo 0.2872, modelo corregido con el historial 0.2594, casa 0.2499. Pasó el más en el 48%.
+973 partidos. Juegos (más de la línea principal), Brier (menor es mejor): modelo 0.2877, modelo corregido con el historial 0.2598, casa 0.2499. Pasó el más en el 48%.
 
 | regla de previo (en papel desde el 06/10 18:00) | apuestas | aciertos | beneficio medio | sigmas |
 |---|---|---|---|---|
 | previo ATP circuito: más si modelo >= casa+10 | 13 | 31% | -42.5% | -1.71 |
-| previo ajustado vs casa >= 10 (cualquier lado) | 202 | 49% | -9.6% | -1.47 |
-Ganador (955): acierto modelo 67%, casa 72%.
+| previo ajustado vs casa >= 10 (cualquier lado) | 213 | 49% | -9.0% | -1.42 |
+Ganador (973): acierto modelo 67%, casa 72%.
 
 ## Aprendizaje (recalibración del modelo)
 
-Partidos resueltos: 492 (3645 líneas). Activa: **sí** (hace falta 30+ partidos y que mejore a la CASA en partidos que no vio).
-**Apostando con lo aprendido, día a día** (cada día aprende solo de los anteriores): 389 apuestas, aciertos 51%, beneficio medio -5.9%, -1.26 sigmas.
-Brier (menor es mejor): modelo 0.2727, modelo con el saque de hoy 0.2630, casa 0.2434, recalibrado (validado por partidos) 0.2317. Sesgo del modelo hacia el más: +19.2%.
+Partidos resueltos: 503 (3734 líneas). Activa: **sí** (hace falta 30+ partidos y que mejore a la CASA en partidos que no vio).
+**Apostando con lo aprendido, día a día** (cada día aprende solo de los anteriores): 400 apuestas, aciertos 51%, beneficio medio -5.8%, -1.24 sigmas.
+Brier (menor es mejor): modelo 0.2729, modelo con el saque de hoy 0.2630, casa 0.2435, recalibrado (validado por partidos) 0.2321. Sesgo del modelo hacia el más: +19.4%.
