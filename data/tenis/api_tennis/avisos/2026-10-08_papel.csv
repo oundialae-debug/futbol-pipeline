@@ -180,3 +180,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-08 10:01,12169344,Itf Men Singles,M15 Sharm ElSheikh 12,A. Elsayed,A. F. Alhogbani,menos,17.5,0.7942,0.7942,1.166,True,casa65
 2026-10-08 10:01,12169377,Itf Men Singles,M15+H Rodez,L. Massard,M. Malige,menos,18.5,0.7866,0.6876,1.363,True,actual
 2026-10-08 10:01,12169377,Itf Men Singles,M15+H Rodez,L. Massard,M. Malige,menos,18.5,0.6876,0.6876,1.363,True,casa65
+2026-10-08 10:01,12169389,Itf Men Singles,M15 Monastir 34,J. Echeverria,F. Roussel,menos,18.5,0.8553,0.8553,1.1,True,casa65
