@@ -322,3 +322,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-08 14:04,12169091,Challenger Men Singles,Antofagasta,G. Heide,E. Ribeiro,menos,20.5,0.6564,0.5147,1.8,True,aprendida
 2026-10-08 14:08,12169379,Itf Men Singles,M15+H Rodez,D. Jade,E. Donnet,menos,20.5,0.8438,0.8438,1.111,True,casa65
 2026-10-08 14:29,12169281,Challenger Men Singles,Villena,M. H. Rehberg,H. Barton,menos,20.5,0.7218,0.5576,1.666,True,actual
+2026-10-08 14:30,12168570,Challenger Men Singles,Braga,Z. Piros,E. Moller,menos,17.5,0.7165,0.5767,1.615,True,actual
