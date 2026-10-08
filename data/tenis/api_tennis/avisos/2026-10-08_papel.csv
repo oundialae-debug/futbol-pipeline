@@ -10,3 +10,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-08 03:09,12168836,Challenger Women Singles,Suzhou,Z. Bai,E. Jones,menos,25.5,0.7077,0.5767,1.615,True,actual
 2026-10-08 03:17,12169145,Itf Men Singles,M25 Luan,M. Dellavedova,J. Chiu,menos,13.5,0.75,0.75,1.25,True,casa65
 2026-10-08 03:26,12169149,Itf Men Singles,M25 Luan,Y. Tomida,P. Bar Biryukov,menos,22.5,0.6777,0.5767,1.615,True,actual
+2026-10-08 03:29,12169150,Itf Men Singles,M25 Luan,T. Yamanaka,A. Shepp,menos,20.5,0.766,0.766,1.222,True,casa65
