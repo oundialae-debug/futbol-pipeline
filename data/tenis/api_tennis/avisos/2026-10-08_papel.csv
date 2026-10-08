@@ -363,3 +363,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-08 17:58,12169080,Challenger Men Singles,Palermo (Italy) - Qualification,C. A. Caniato,F. Passaro,más,28.5,0.8376,0.6451,1.444,True,aprendida
 2026-10-08 18:03,12169001,Challenger Men Singles,Antofagasta,M. Tobon,T. Barrios Vera,menos,18.5,0.6627,0.6627,1.4,True,casa65
 2026-10-08 18:09,12169453,Itf Men Singles,M15 Quito 3,J. S. Osorio,V. Bini,menos,18.5,0.5216,0.4634,2.0,True,aprendida
+2026-10-08 18:10,12168535,Challenger Men Singles,Braga,V. Gaubas,D. Ajdukovic,menos,21.5,0.8109,0.8109,1.166,True,casa65
