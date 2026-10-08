@@ -105,3 +105,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-08 07:37,12169262,Itf Men Singles,M25 Santa Margherita di Pula 9,D. Michalski,A. Bellifemine,menos,16.5,0.5904,0.4853,1.909,True,aprendida
 2026-10-08 07:41,12169259,Itf Men Singles,M25 Darwin 2,Z. Stevens,D. Pham,menos,21.5,0.6168,0.5,1.833,True,aprendida
 2026-10-08 07:48,12169291,Itf Men Singles,M15 Heraklion 7,A. Vales,O. Geladaris,menos,16.5,0.5589,0.5,1.833,True,aprendida
+2026-10-08 07:50,12168296,Atp Singles,Shanghai,D. Vallejo,V. Royer,menos,16.5,0.9539,0.9539,1.015,True,casa65
