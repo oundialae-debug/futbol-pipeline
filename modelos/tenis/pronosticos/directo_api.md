@@ -1,4 +1,4 @@
-# Tenis en directo, 07/10/2026 23:58 UTC (01:58 en España)
+# Tenis en directo, 08/10/2026 00:12 UTC (02:12 en España)
 
 Calculadora desde el marcador exacto (modelo de puntos, superficie real) frente a la cuota en directo
 (sin margen). Ganador y sets: la calculadora suele coincidir con la casa. Total de juegos: el modelo
@@ -7,10 +7,10 @@ Se actualiza cada ~5 min; el registro en data/tenis/api_tennis/registro/ servir�
 
 | partido | tipo | superficie | marcador (sets, juegos, puntos, saca) | gana 1º: modelo / cuota | sets más probables (modelo) | total juegos: línea, modelo / cuota |
 |---|---|---|---|---|---|---|
-| H. Arakawa vs T. Russell | Itf Women Singles | Hard | 0-0, 4-3, 40 - 30, saca T. Russell | 83% / 75% | 2-0 57%, 2-1 26% |  |
-| J. Preston vs A. Grubor | Itf Women Singles | Hard | 1-0, 2-2, 0 - 0, saca A. Grubor | 88% / 94% | 2-0 65%, 2-1 24% |  |
-| K. Scott vs L. Reed | Itf Women Singles | Hard | 0-0, 1-2, 15 - 15, saca L. Reed | 77% / 66% | 2-0 40%, 2-1 37% |  |
-| E. Shibahara vs M. Barry | Itf Women Singles | Hard | 1-0, 5-0, 0 - 0, saca E. Shibahara | 100% /  | 2-0 100%, 2-1 0% |  |
-| H. Kaji vs J. Adams | Itf Women Singles | Hard | 1-0, 0-0, 0 - 0, saca H. Kaji | 82% / 94% | 2-0 58%, 2-1 24% |  |
-| M. Uemura vs H. Sato | Itf Women Singles | Hard | 0-0, 4-4, 30 - 15, saca M. Uemura | 36% / 39% | 0-2 33%, 1-2 31% |  |
-| F. Mattioli vs D. Soke | Itf Women Singles | Hard | 1-0, 2-3, 40 - 40, saca F. Mattioli | 57% / 56% | 1-2 43%, 2-0 30% |  |
+| H. Arakawa vs T. Russell | Itf Women Singles | Hard | 1-0, 0-0, 40 - 30, saca T. Russell | 92% / 87% | 2-0 74%, 2-1 18% |  |
+| J. Preston vs A. Grubor | Itf Women Singles | Hard | 1-0, 5-2, 0 - 0, saca J. Preston | 99% / 98% | 2-0 97%, 2-1 2% |  |
+| K. Scott vs L. Reed | Itf Women Singles | Hard | 0-0, 2-4, 0 - 0, saca K. Scott | 69% / 56% | 2-1 45%, 2-0 24% |  |
+| H. Kaji vs J. Adams | Itf Women Singles | Hard | 1-0, 2-0, A - 40, saca H. Kaji | 94% / 98% | 2-0 85%, 2-1 9% |  |
+| M. Uemura vs H. Sato | Itf Women Singles | Hard | 1-0, 0-0, 40 - 0, saca M. Uemura | 65% / 71% | 2-0 45%, 1-2 35% |  |
+| O. Danilova vs N. Sato | Itf Women Singles | Hard | 0-0, 0-0, 0 - 0, saca O. Danilova | 30% / 9% | 0-2 41%, 1-2 29% |  |
+| F. Mattioli vs D. Soke | Itf Women Singles | Hard | 1-0, 2-4, 30 - 40, saca D. Soke | 44% / 44% | 1-2 56%, 2-1 35% |  |
