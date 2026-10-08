@@ -218,3 +218,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-08 10:49,12169373,Itf Men Singles,M15 Heraklion 7,J. Dominguez Alonso,P. Makk,menos,18.5,0.5575,0.5767,1.615,True,actual
 2026-10-08 10:52,12169195,Itf Men Singles,M25 Santa Margherita di Pula 9,G. Oradini,F. Iannaccone,menos,15.5,0.7831,0.7831,1.2,True,casa65
 2026-10-08 10:58,12168804,Wta Singles,Beijing,E. Alexandrova,M. Andreeva,menos,20.5,0.5589,0.5,1.833,True,aprendida
+2026-10-08 10:58,12169401,Itf Men Singles,M15 Pontevedra,D. Marques,X. Palomar,menos,21.5,0.6346,0.5147,1.8,True,aprendida
