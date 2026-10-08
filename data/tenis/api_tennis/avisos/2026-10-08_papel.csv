@@ -313,3 +313,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-08 13:31,12168881,Atp Singles,Shanghai,C. Norrie,D. Svrcina,menos,27.5,0.6296,0.5576,1.666,True,actual
 2026-10-08 13:31,12169281,Challenger Men Singles,Villena,M. H. Rehberg,H. Barton,menos,23.5,0.6819,0.5147,1.8,True,aprendida
 2026-10-08 13:40,12169257,Challenger Men Singles,Braga,T. Pereira,N. Sanchez Izquierdo,menos,21.5,0.9665,0.9665,1.006,True,casa65
+2026-10-08 13:42,12169330,Challenger Men Singles,Braga,O. Krutykh,L. Mikrut,menos,31.5,0.7171,0.5767,1.615,True,actual
