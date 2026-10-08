@@ -17,3 +17,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-08 03:53,12168280,Atp Singles,Shanghai,N. Borges,F. Diaz Acosta,menos,22.5,0.6028,0.5147,1.8,True,aprendida
 2026-10-08 03:53,12168290,Atp Singles,Shanghai,J. Munar,J. Brooksby,menos,22.5,0.5984,0.5366,1.727,True,aprendida
 2026-10-08 03:53,12168879,Atp Singles,Shanghai,K. Coppejans,S. Tsitsipas,menos,20.5,0.6037,0.5366,1.727,True,aprendida
+2026-10-08 03:53,12168880,Atp Singles,Shanghai,P. Kotov,T. Griekspoor,menos,23.5,0.6021,0.5366,1.727,True,aprendida
