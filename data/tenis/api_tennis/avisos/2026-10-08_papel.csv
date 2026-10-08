@@ -178,3 +178,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-08 09:58,12169396,Itf Men Singles,M15 Pontevedra,M. Bobichon,L. Sheyngezikht,más,15.5,0.6668,0.5767,1.615,True,aprendida
 2026-10-08 09:59,12169391,Itf Men Singles,M15 Monastir 34,A. Ouakaa,Y. Smiej,menos,15.5,0.875,0.875,1.071,True,casa65
 2026-10-08 10:01,12169344,Itf Men Singles,M15 Sharm ElSheikh 12,A. Elsayed,A. F. Alhogbani,menos,17.5,0.7942,0.7942,1.166,True,casa65
+2026-10-08 10:01,12169377,Itf Men Singles,M15+H Rodez,L. Massard,M. Malige,menos,18.5,0.7866,0.6876,1.363,True,actual
