@@ -3,3 +3,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-08 02:02,12169150,Itf Men Singles,M25 Luan,T. Yamanaka,A. Shepp,menos,21.5,0.617,0.5,1.833,True,aprendida
 2026-10-08 02:05,12168836,Challenger Women Singles,Suzhou,Z. Bai,E. Jones,menos,20.5,0.5779,0.4853,1.909,True,aprendida
 2026-10-08 02:05,12168847,Challenger Women Singles,Suzhou,E. Kalieva,T. Korpatsch,menos,20.5,0.5669,0.4853,1.909,True,aprendida
+2026-10-08 02:11,12169145,Itf Men Singles,M25 Luan,M. Dellavedova,J. Chiu,menos,17.5,0.5604,0.5,1.833,True,aprendida
