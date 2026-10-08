@@ -61,3 +61,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-08 05:50,12168290,Atp Singles,Shanghai,J. Munar,J. Brooksby,menos,22.5,0.6321,0.5767,1.615,True,actual
 2026-10-08 05:52,12168290,Atp Singles,Shanghai,J. Munar,J. Brooksby,menos,22.5,0.7091,0.7091,1.333,True,casa65
 2026-10-08 05:52,12168882,Atp Singles,Shanghai,B. Tomic,M. Arnaldi,menos,22.5,0.5747,0.5,1.833,True,aprendida
+2026-10-08 05:56,12168795,Challenger Women Singles,Suzhou,O. Oliynykova,A. Falei,menos,23.5,0.7254,0.5767,1.615,True,actual
