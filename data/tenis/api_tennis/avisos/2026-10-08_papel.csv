@@ -72,3 +72,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-08 06:19,12169188,Itf Men Singles,M25 Darwin 2,C. Dong,S. Vujic,menos,17.5,0.6574,0.6451,1.444,True,actual
 2026-10-08 06:23,12168285,Atp Singles,Shanghai,H. Hurkacz,J. Duckworth,menos,22.5,0.6862,0.5576,1.666,True,actual
 2026-10-08 06:37,12168841,Itf Men Singles,M25 Darwin 2,E. Cook,P. Sekulic,menos,22.5,0.7387,0.5767,1.615,True,actual
+2026-10-08 06:37,12169129,Itf Men Singles,M25 Darwin 2,C. Hoole,T. Sach,menos,19.5,0.6236,0.5576,1.666,True,actual
