@@ -136,3 +136,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-08 08:43,12169193,Itf Men Singles,M25 Kigali 2,D. Javia,Y. Chaurasia,más,17.5,0.4745,0.4111,2.25,True,aprendida
 2026-10-08 08:43,12169243,Itf Men Singles,M25 Darwin 2,H. Jones,C. Sinclair,menos,23.5,0.5922,0.5889,1.571,True,actual
 2026-10-08 08:47,12169390,Itf Men Singles,M15 Monastir 34,K. I. Kosaner,K. Rahmani,menos,21.5,0.5713,0.4853,1.909,True,aprendida
+2026-10-08 08:48,12169340,Itf Men Singles,M15 Sharm ElSheikh 12,S. Ivanov,A. Arzhankin,menos,22.5,0.7173,0.5767,1.615,True,actual
