@@ -183,3 +183,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-08 10:01,12169389,Itf Men Singles,M15 Monastir 34,J. Echeverria,F. Roussel,menos,18.5,0.8553,0.8553,1.1,True,casa65
 2026-10-08 10:04,12168969,Challenger Men Singles,Villena,J. Pinnington Jones,J. J. Schwaerzler,menos,22.5,0.6393,0.4853,1.909,True,aprendida
 2026-10-08 10:04,12169244,Itf Men Singles,M25 Kigali 2,M. Houkes,M. Plunger,menos,18.5,0.7215,0.5,1.833,True,aprendida
+2026-10-08 10:04,12169337,Itf Men Singles,M15 Burgas (Bulgaria),M. Nannelli,A. Vasilev,menos,18.5,0.6012,0.5366,1.727,True,aprendida
