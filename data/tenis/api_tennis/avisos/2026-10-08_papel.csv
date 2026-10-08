@@ -280,3 +280,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-08 11:48,12169263,Itf Men Singles,M25 Santa Margherita di Pula 9,R. T. Pieleanu,A. Weis,menos,23.5,0.7234,0.7234,1.3,True,casa65
 2026-10-08 11:49,12168297,Atp Singles,Shanghai,L. van Assche,Y. Bu,menos,22.5,0.75,0.75,1.25,True,casa65
 2026-10-08 11:49,12169375,Itf Men Singles,M15 Heraklion 7,G. Perego,M. Domenc,menos,27.5,0.7375,0.6451,1.444,True,actual
+2026-10-08 11:50,12169374,Itf Men Singles,M15 Heraklion 7,E. Kypriotis,A. Elamin,menos,15.5,0.766,0.766,1.222,True,casa65
