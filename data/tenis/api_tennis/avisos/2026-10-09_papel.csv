@@ -110,3 +110,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-09 10:07,12169569,Itf Men Singles,M15 Burgas (Bulgaria),V. C. Breazu,G. Lazarov,menos,21.5,0.6465,0.5147,1.8,True,aprendida
 2026-10-09 10:11,12169570,Itf Men Singles,M15 Monastir 34,J. Echeverria,L. Wiedenmann,menos,20.5,0.6988,0.5576,1.666,True,actual
 2026-10-09 10:16,12169571,Itf Men Singles,M15 Monastir 34,A. Ouakaa,K. I. Kosaner,menos,18.5,0.7831,0.7831,1.2,True,casa65
+2026-10-09 10:16,12169640,Itf Men Singles,M15 Pontevedra,D. Eichenseher,Z. Sesko,menos,20.5,0.567,0.5,1.833,True,aprendida
