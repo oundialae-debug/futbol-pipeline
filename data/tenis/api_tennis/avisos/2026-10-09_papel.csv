@@ -80,3 +80,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-09 08:12,12169186,Atp Singles,Shanghai,Y. Hanfmann,F. Tiafoe,menos,20.5,0.8109,0.8109,1.166,True,casa65
 2026-10-09 08:13,12169516,Itf Men Singles,M25 Kigali 2,T. Sahtali,C. Denolly,menos,19.5,0.5555,0.4853,1.909,True,aprendida
 2026-10-09 08:19,12169577,Itf Men Singles,M15 Sharm ElSheikh 12,R. Strombachs,R. Neimanis,menos,18.5,0.8141,0.8141,1.142,True,casa65
+2026-10-09 08:27,12169576,Itf Men Singles,M15 Sharm ElSheikh 12,N. Senn,R. Faucon,menos,20.5,0.866,0.866,1.083,True,casa65
