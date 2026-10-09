@@ -221,3 +221,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-09 18:08,12169567,Challenger Women Singles,Samsun,B. Andreescu,A. Blinkova,menos,17.5,0.631,0.5767,1.615,True,actual
 2026-10-09 18:27,12169442,Challenger Men Singles,Palermo (Italy) - Qualification,M. Giunta,A. Moro Canas,más,34.5,0.7154,0.5366,1.727,True,aprendida
 2026-10-09 18:31,12169675,Itf Men Singles,M15 Quito 3,V. Bini,M. Mouilleron Salvo,menos,20.5,0.7275,0.625,1.5,True,actual
+2026-10-09 18:43,12169675,Itf Men Singles,M15 Quito 3,V. Bini,M. Mouilleron Salvo,menos,18.5,0.766,0.766,1.222,True,casa65
