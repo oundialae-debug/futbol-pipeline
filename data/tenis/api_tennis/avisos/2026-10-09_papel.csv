@@ -229,3 +229,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-09 20:04,12169652,Challenger Men Singles,Palermo (Italy) - Qualification,E. Dalla Valle,F. Passaro,menos,19.5,0.6554,0.625,1.5,True,actual
 2026-10-09 20:24,12169666,Challenger Men Singles,Antofagasta,J. C. Prado Angelo,M. Tobon,menos,18.5,0.687,0.5767,1.615,True,actual
 2026-10-09 20:34,12169666,Challenger Men Singles,Antofagasta,J. C. Prado Angelo,M. Tobon,menos,16.5,0.6876,0.6876,1.363,True,casa65
+2026-10-09 20:40,12169652,Challenger Men Singles,Palermo (Italy) - Qualification,E. Dalla Valle,F. Passaro,menos,19.5,0.8937,0.8937,1.071,True,casa65
