@@ -34,3 +34,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-09 04:40,12169490,Challenger Men Singles,Wuning 3 (China) - Qualification,F. Sun,A. Kachmazov,menos,23.5,0.6733,0.5366,1.727,True,aprendida
 2026-10-09 04:42,12169120,Challenger Men Singles,Wuning 3 (China) - Qualification,K. Saitoh,A. Santillan,menos,29.5,0.6063,0.5147,1.8,True,aprendida
 2026-10-09 04:44,12169120,Challenger Men Singles,Wuning 3 (China) - Qualification,K. Saitoh,A. Santillan,menos,29.5,0.6379,0.5576,1.666,True,actual
+2026-10-09 04:44,12169472,Challenger Women Singles,Suzhou,A. Sasnovich,E. Kalieva,menos,19.5,0.6546,0.5576,1.666,True,actual
