@@ -19,3 +19,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-09 03:49,12169472,Challenger Women Singles,Suzhou,A. Sasnovich,E. Kalieva,menos,20.5,0.5752,0.5,1.833,True,aprendida
 2026-10-09 03:49,12169481,Itf Men Singles,M25 Luan,Y. Erel,A. Shepp,menos,24.5,0.8553,0.8553,1.1,True,casa65
 2026-10-09 03:52,12169127,Atp Singles,Shanghai,A. Gea,U. Humbert,menos,22.5,0.55,0.4853,1.909,True,aprendida
+2026-10-09 03:52,12169133,Atp Singles,Shanghai,R. Sakamoto,A. Rublev,menos,22.5,0.574,0.5,1.833,True,aprendida
