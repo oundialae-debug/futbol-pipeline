@@ -185,3 +185,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-09 14:34,12169445,Challenger Men Singles,Antofagasta,T. Seyboth Wild,F. Meligeni Alves,menos,17.5,0.7342,0.6077,1.533,True,actual
 2026-10-09 14:40,12169604,Challenger Men Singles,Villena,L. Djere,H. Barton,menos,22.5,0.6664,0.5,1.833,True,aprendida
 2026-10-09 14:41,12169541,Challenger Men Singles,Braga,L. Neumayer,M. Alcala Gurri,menos,30.5,0.7186,0.5576,1.666,True,actual
+2026-10-09 14:47,12169252,Challenger Men Singles,Palermo (Italy) - Qualification,M. Ribecai,J. Forejtek,menos,24.5,0.6627,0.6627,1.4,True,casa65
