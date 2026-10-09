@@ -197,3 +197,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-09 15:40,12169672,Itf Men Singles,M15 Quito 3,M. Covato,F. De Dios,menos,22.5,0.6368,0.5147,1.8,True,aprendida
 2026-10-09 15:40,12169673,Itf Men Singles,M15 Quito 3,A. Hernandez,T. McCormick,menos,21.5,0.5772,0.4634,2.0,True,aprendida
 2026-10-09 15:41,12169513,Challenger Women Singles,Samsun,S. Waltert,H. Sakatsume,menos,22.5,0.7393,0.6627,1.4,True,actual
+2026-10-09 15:41,12169513,Challenger Women Singles,Samsun,S. Waltert,H. Sakatsume,menos,22.5,0.6627,0.6627,1.4,True,casa65
