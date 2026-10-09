@@ -171,3 +171,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-09 13:06,12169655,Itf Men Singles,M15 Pontevedra,M. Bobichon,D. Sarksian,menos,21.5,0.6412,0.6077,1.533,True,actual
 2026-10-09 13:30,12169548,Itf Men Singles,M25 Kigali 2,D. Javia,F. Bax,más,27.5,0.8176,0.5576,1.666,True,aprendida
 2026-10-09 13:33,12169607,Itf Men Singles,M15 Burgas (Bulgaria),I. Miletich,J. Kupcic,menos,27.5,0.6627,0.6627,1.4,True,casa65
+2026-10-09 13:38,12169135,Atp Singles,Shanghai,A. Bublik,T. Machac,menos,23.5,0.6425,0.5767,1.615,True,actual
