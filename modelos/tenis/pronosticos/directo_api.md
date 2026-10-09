@@ -1,4 +1,4 @@
-# Tenis en directo, 09/10/2026 12:49 UTC (14:49 en España)
+# Tenis en directo, 09/10/2026 13:05 UTC (15:05 en España)
 
 Calculadora desde el marcador exacto (modelo de puntos, superficie real) frente a la cuota en directo
 (sin margen). Ganador y sets: la calculadora suele coincidir con la casa. Total de juegos: el modelo
@@ -7,20 +7,19 @@ Se actualiza cada ~5 min; el registro en data/tenis/api_tennis/registro/ servir�
 
 | partido | tipo | superficie | marcador (sets, juegos, puntos, saca) | gana 1º: modelo / cuota | sets más probables (modelo) | total juegos: línea, modelo / cuota |
 |---|---|---|---|---|---|---|
-| Y. Zhou vs L. Musetti | Atp Singles | Hard | 0-0, 6-6, 7 - 7, saca Y. Zhou | 20% / 28% | 0-2 46%, 1-2 34% | 26.5: 45% / 46% |
-| A. Bublik vs T. Machac | Atp Singles | Hard | 0-0, 2-0, 30 - 15, saca T. Machac | 74% / 81% | 2-0 49%, 2-1 25% | 20.5: 70% / 46% |
-| A. Shelbayh vs D. Glinka | Challenger Men Singles | Clay | 0-0, 6-6, 0 - 2, saca A. Shelbayh | 20% / 31% | 0-2 53%, 1-2 27% | 25.5: 48% / 54% |
-| M. Moeller vs M. Dodig | Challenger Men Singles | Clay | 0-0, 2-4, 15 - 0, saca M. Moeller | 31% / 23% | 0-2 44%, 1-2 25% | 21.5: 67% / 51% |
-| L. Neumayer vs M. Alcala Gurri | Challenger Men Singles | Clay | 0-0, 5-4, 0 - 0, saca L. Neumayer | 56% / 61% | 2-0 33%, 1-2 32% | 24.5: 58% / 51% |
-| L. Stefanini vs P. Iatcenko | Challenger Women Singles | Hard | 1-0, 1-1, A - 40, saca P. Iatcenko | 71% / 81% | 2-0 50%, 1-2 29% | 19.5: 62% / 49% |
-| K. van Wyk vs M. Picard | Itf Men Singles | Hard | 0-1, 2-0, 0 - 15, saca K. van Wyk | 24% / 50% | 1-2 39%, 0-2 37% | 29.5: 52% / 56% |
-| M. Bobichon vs D. Sarksian | Itf Men Singles | Hard | 0-0, 5-4, 0 - 15, saca D. Sarksian | 56% / 79% | 2-0 30%, 2-1 26% | 22.5: 74% / 54% |
-| L. Massard vs J. Sels | Itf Men Singles | Hard | 0-1, 6-6, 9 - 8, saca L. Massard | 41% / 27% | 2-1 41%, 0-2 30% | 31.5: 59% / 56% |
-| I. Miletich vs J. Kupcic | Itf Men Singles | Clay | 0-1, 5-2, 0 - 0, saca J. Kupcic | 36% / 52% | 1-2 54%, 2-1 36% | 26.5: 45% / 46% |
-| S. D'Agostino vs A. Chepelev | Itf Men Singles | Clay | 0-0, 3-3, 15 - 0, saca A. Chepelev | 34% / 46% | 0-2 35%, 1-2 31% | 23.5: 56% / 50% |
-| J. Otzipka vs A. Lukosiute | Itf Women Singles | Hard | 1-0, 0-1, 0 - 0, saca J. Otzipka | 31% / 71% | 1-2 69%, 2-1 17% |  |
-| C. Cervino Ruiz vs A. Voloshchuk | Itf Women Singles | Hard | 0-0, 0-0, 0 - 0, saca C. Cervino Ruiz | 39% / 31% | 0-2 33%, 1-2 28% |  |
-| A. Zantedeschi vs C. W. Hennemann | Itf Women Singles | Clay | 0-1, 0-0, 0 - 0, saca A. Zantedeschi | 25% / 22% | 0-2 50%, 2-1 25% |  |
-| Y. Kotliar vs A. Arifullina | Itf Women Singles | Hard | 0-0, 4-4, 0 - 0, saca A. Arifullina | 75% / 77% | 2-0 44%, 2-1 31% |  |
-| J. Pieri vs E. Alvisi | Itf Women Singles | Clay | 1-0, 1-0, 0 - 0, saca E. Alvisi | 93% / 89% | 2-0 78%, 2-1 15% |  |
-| E. Mertens vs I. Swiatek | Wta Singles | Hard | 1-0, 4-2, 40 - 0, saca E. Mertens | 85% / 93% | 2-0 81%, 1-2 15% | 21.5: 79% / 75% |
+| A. Bublik vs T. Machac | Atp Singles | Hard | 0-0, 4-3, 15 - 0, saca A. Bublik | 76% / 79% | 2-0 51%, 2-1 25% | 22.5: 63% / 49% |
+| Y. Zhou vs L. Musetti | Atp Singles | Hard | 1-0, 1-2, 0 - 0, saca Y. Zhou | 40% / 47% | 1-2 60%, 2-0 22% | 31.5: 55% / 50% |
+| M. Ribecai vs J. Forejtek | Challenger Men Singles | Clay | 0-0, 0-0, 0 - 0, saca J. Forejtek | 47% / 45% | 0-2 27%, 1-2 26% | 21.5: 64% / 50% |
+| L. Neumayer vs M. Alcala Gurri | Challenger Men Singles | Clay | 0-0, 6-5, 40 - 40, saca L. Neumayer | 56% / 56% | 2-0 33%, 1-2 32% | 26.5: 54% / 50% |
+| M. Moeller vs M. Dodig | Challenger Men Singles | Clay | 0-1, 0-0, 0 - 40, saca M. Moeller | 15% / 6% | 0-2 69%, 1-2 16% | 16.5: 78% / 51% |
+| A. Shelbayh vs D. Glinka | Challenger Men Singles | Clay | 0-1, 1-0, 15 - 15, saca A. Shelbayh | 17% / 29% | 0-2 47%, 1-2 36% | 29.5: 46% / 50% |
+| L. Stefanini vs P. Iatcenko | Challenger Women Singles | Hard | 1-0, 2-3, 0 - 15, saca L. Stefanini | 57% / 65% | 1-2 43%, 2-1 31% | 26.5: 56% / 50% |
+| I. Miletich vs J. Kupcic | Itf Men Singles | Clay | 1-1, 0-0, 0 - 0, saca J. Kupcic | 40% / 59% | 1-2 60%, 2-1 40% | 26.5: 51% / 54% |
+| M. Bobichon vs D. Sarksian | Itf Men Singles | Hard | 1-0, 0-0, 30 - 0, saca M. Bobichon | 79% / 90% | 2-0 57%, 2-1 23% | 21.5: 68% / 42% |
+| K. van Wyk vs M. Picard | Itf Men Singles | Hard | 0-1, 2-2, 40 - A, saca K. van Wyk | 11% / 28% | 0-2 70%, 1-2 19% | 25.5: 40% / 51% |
+| S. D'Agostino vs A. Chepelev | Itf Men Singles | Clay | 0-0, 4-5, 0 - 0, saca S. D'Agostino | 27% / 38% | 0-2 44%, 1-2 29% | 24.5: 54% / 50% |
+| J. Otzipka vs A. Lukosiute | Itf Women Singles | Hard | 1-0, 3-2, 0 - 0, saca J. Otzipka | 55% / 86% | 1-2 45%, 2-0 44% |  |
+| C. Cervino Ruiz vs A. Voloshchuk | Itf Women Singles | Hard | 0-0, 1-2, 15 - 15, saca A. Voloshchuk | 32% / 25% | 0-2 41%, 1-2 27% |  |
+| J. Pieri vs E. Alvisi | Itf Women Singles | Clay | 1-0, 4-0, 15 - 0, saca J. Pieri | 99% / 98% | 2-0 98%, 2-1 1% |  |
+| Y. Kotliar vs A. Arifullina | Itf Women Singles | Hard | 0-0, 6-5, 0 - 0, saca Y. Kotliar | 85% / 84% | 2-0 59%, 2-1 25% |  |
+| A. Zantedeschi vs C. W. Hennemann | Itf Women Singles | Clay | 0-1, 0-2, 15 - 0, saca A. Zantedeschi | 14% / 12% | 0-2 71%, 2-1 14% |  |
