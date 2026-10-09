@@ -1,4 +1,4 @@
-# Tenis en directo, 09/10/2026 03:41 UTC (05:41 en España)
+# Tenis en directo, 09/10/2026 03:55 UTC (05:55 en España)
 
 Calculadora desde el marcador exacto (modelo de puntos, superficie real) frente a la cuota en directo
 (sin margen). Ganador y sets: la calculadora suele coincidir con la casa. Total de juegos: el modelo
@@ -7,13 +7,14 @@ Se actualiza cada ~5 min; el registro en data/tenis/api_tennis/registro/ servir�
 
 | partido | tipo | superficie | marcador (sets, juegos, puntos, saca) | gana 1º: modelo / cuota | sets más probables (modelo) | total juegos: línea, modelo / cuota |
 |---|---|---|---|---|---|---|
-| K. Saitoh vs A. Santillan | Challenger Men Singles | Hard | 0-0, 4-5, 15 - 40, saca K. Saitoh | 26% / 23% | 0-2 48%, 1-2 26% | 22.5: 61% / 49% |
-| T. Derepasko vs O. Jasika | Challenger Men Singles | Hard | 0-0, 3-5, 30 - 40, saca O. Jasika | 17% / 12% | 0-2 59%, 1-2 24% | 19.5: 59% / 44% |
-| K. Zavatska vs R. Zarazua | Challenger Women Singles | Hard | 0-0, 0-5, 0 - 15, saca K. Zavatska | 21% / 6% | 0-2 54%, 1-2 25% | 14.5: 90% / 59% |
-| Y. C. Chen vs M. Alkaya | Itf Men Singles | Hard | 0-1, 4-5, 15 - 30, saca M. Alkaya | 1% / 4% | 0-2 97%, 1-2 2% | 19.5: 9% / 9% |
-| Y. Erel vs A. Shepp | Itf Men Singles | Hard | 1-0, 4-5, 15 - 15, saca Y. Erel | 79% / 81% | 2-0 48%, 2-1 31% | 25.5: 52% / 49% |
-| M. Dellavedova vs Y. Zeng | Itf Men Singles | Hard | 1-0, 4-1, 15 - 0, saca M. Dellavedova | 100% / 96% | 2-0 99%, 2-1 0% | 16.5: 80% / 51% |
-| H. Sato vs Y. Kitahara | Itf Women Singles | Hard | 1-1, 3-3, 30 - 15, saca Y. Kitahara | 56% / 55% | 2-1 56%, 1-2 44% |  |
-| Y. Hou vs J. Wang | Itf Women Singles | Hard | 0-1, 5-4, 30 - 30, saca J. Wang | 10% / 13% | 0-2 50%, 1-2 41% |  |
-| F. A. Lin vs J. Zhang | Itf Women Singles | Hard | 0-1, 5-6, 40 - A, saca F. A. Lin | 9% / 8% | 0-2 82%, 1-2 10% |  |
-| V. Panshina vs Y. Wang | Itf Women Singles | Hard | 1-0, 2-3, 0 - 0, saca V. Panshina | 85% / 77% | 2-0 52%, 2-1 33% |  |
+| A. Gea vs U. Humbert | Atp Singles | Hard | 0-0, 0-0, 0 - 0, saca ? | 49% / 53% | 0-2 26%, 1-2 25% | 22.5: 65% / 51% |
+| A. Mannarino vs F. Cobolli | Atp Singles | Hard | 0-0, 0-0, 0 - 0, saca ? | 50% / 36% | 2-0 25%, 0-2 25% | 21.5: 71% / 54% |
+| R. Sakamoto vs A. Rublev | Atp Singles | Hard | 0-0, 0-0, 0 - 0, saca ? | 25% / 28% | 0-2 46%, 1-2 30% | 22.5: 61% / 50% |
+| B. Shelton vs D. Altmaier | Atp Singles | Hard | 0-0, 0-0, 0 - 0, saca ? | 92% / 85% | 2-0 68%, 2-1 24% | 21.5: 55% / 51% |
+| K. Saitoh vs A. Santillan | Challenger Men Singles | Hard | 0-0, 5-6, 30 - 15, saca K. Saitoh | 40% / 39% | 0-2 33%, 1-2 27% | 25.5: 58% / 54% |
+| T. Derepasko vs O. Jasika | Challenger Men Singles | Hard | 0-1, 0-0, 40 - 40, saca T. Derepasko | 15% / 12% | 0-2 62%, 1-2 23% | 19.5: 55% / 44% |
+| A. Sasnovich vs E. Kalieva | Challenger Women Singles | Hard | 0-0, 0-1, 0 - 0, saca A. Sasnovich | 61% / 66% | 2-0 31%, 2-1 30% | 21.5: 65% / 51% |
+| K. Zavatska vs R. Zarazua | Challenger Women Singles | Hard | 0-1, 0-0, 0 - 0, saca K. Zavatska | 21% / 6% | 0-2 54%, 1-2 25% | 16.5: 76% / 44% |
+| H. Sato vs Y. Kitahara | Itf Women Singles | Hard | 1-1, 5-3, 40 - 40, saca Y. Kitahara | 89% / 87% | 2-1 89%, 1-2 11% |  |
+| Y. Hou vs J. Wang | Itf Women Singles | Hard | 1-1, 1-0, 0 - 30, saca J. Wang | 23% / 28% | 1-2 77%, 2-1 23% |  |
+| V. Panshina vs Y. Wang | Itf Women Singles | Hard | 1-0, 4-3, 40 - 30, saca V. Panshina | 96% / 92% | 2-0 88%, 2-1 8% |  |
