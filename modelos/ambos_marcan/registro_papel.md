@@ -4,7 +4,7 @@ Cada pronóstico se apunta ANTES del partido; aquí se cruza con lo que pasó (e
 
 **Reglas fijadas el 29/09/2026, antes de ver resultados:** el juez principal es el Brier y el log loss sobre TODOS los partidos, contra el ambos marcan real (mediana de casas sin margen), emparejado partido a partido. Primer punto de control a los 400 partidos. Apuesta en papel (1 unidad) solo si el VE supera el 8%. No se toca el modelo antes del control.
 
-**Partidos jugados: 13** (pendientes 0).
+**Partidos jugados: 13** (pendientes 3).
 
 ## Juez principal: todos los partidos contra el ambos marcan real
 
