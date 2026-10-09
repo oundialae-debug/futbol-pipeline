@@ -85,3 +85,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-09 08:36,12169482,Atp Singles,Shanghai,A. Davidovich Fokina,J. Brooksby,menos,17.5,0.6401,0.5767,1.615,True,actual
 2026-10-09 08:37,12169276,Wta Singles,Beijing,Q. Zheng,E. Svitolina,menos,19.5,0.5797,0.5576,1.666,True,actual
 2026-10-09 08:37,12169570,Itf Men Singles,M15 Monastir 34,J. Echeverria,L. Wiedenmann,menos,21.5,0.5932,0.4853,1.909,True,aprendida
+2026-10-09 08:40,12169508,Itf Men Singles,M25 Darwin 2,Ja. Delaney,Z. Stevens,menos,26.5,0.6855,0.5576,1.666,True,actual
