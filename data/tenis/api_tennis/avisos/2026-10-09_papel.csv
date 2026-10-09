@@ -183,3 +183,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-09 14:18,12169254,Atp Singles,Shanghai,Y. Zhou,L. Musetti,más,34.5,0.648,0.4853,1.909,True,aprendida
 2026-10-09 14:23,12169573,Itf Men Singles,M15 Monastir 34,K. van Wyk,M. Picard,más,32.5,0.7762,0.4424,2.1,True,aprendida
 2026-10-09 14:34,12169445,Challenger Men Singles,Antofagasta,T. Seyboth Wild,F. Meligeni Alves,menos,17.5,0.7342,0.6077,1.533,True,actual
+2026-10-09 14:40,12169604,Challenger Men Singles,Villena,L. Djere,H. Barton,menos,22.5,0.6664,0.5,1.833,True,aprendida
