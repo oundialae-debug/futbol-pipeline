@@ -130,3 +130,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-09 10:27,12169517,Itf Men Singles,M25 Santa Margherita di Pula 9,G. Crivellaro,A. Weis,menos,17.5,0.7169,0.5767,1.615,True,actual
 2026-10-09 10:29,12169519,Itf Men Singles,M25 Santa Margherita di Pula 9,D. Michalski,G. Oradini,menos,18.5,0.644,0.5576,1.666,True,actual
 2026-10-09 10:32,12169121,Atp Singles,Shanghai,M. Kecmanovic,J. Mensik,menos,18.5,0.3253,0.2685,3.5,True,aprendida
+2026-10-09 10:34,12169625,Itf Men Singles,M15+H Rodez,L. Massard,J. Sels,menos,22.5,0.6348,0.5,1.833,True,aprendida
