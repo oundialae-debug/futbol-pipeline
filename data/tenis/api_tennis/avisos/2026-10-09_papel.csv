@@ -199,3 +199,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-09 15:41,12169513,Challenger Women Singles,Samsun,S. Waltert,H. Sakatsume,menos,22.5,0.7393,0.6627,1.4,True,actual
 2026-10-09 15:41,12169513,Challenger Women Singles,Samsun,S. Waltert,H. Sakatsume,menos,22.5,0.6627,0.6627,1.4,True,casa65
 2026-10-09 15:51,12169604,Challenger Men Singles,Villena,L. Djere,H. Barton,menos,22.5,0.7462,0.5889,1.571,True,actual
+2026-10-09 16:11,12169442,Challenger Men Singles,Palermo (Italy) - Qualification,M. Giunta,A. Moro Canas,menos,20.5,0.6148,0.5,1.833,True,aprendida
