@@ -7,3 +7,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-09 02:21,12169480,Itf Men Singles,M25 Luan,Y. C. Chen,M. Alkaya,menos,18.5,0.5172,0.4634,2.0,True,aprendida
 2026-10-09 02:51,12169473,Itf Men Singles,M25 Luan,N. Ehrenschneider,Y. Tomida,menos,18.5,0.6769,0.5889,1.571,True,actual
 2026-10-09 02:51,12169481,Itf Men Singles,M25 Luan,Y. Erel,A. Shepp,menos,22.5,0.6514,0.5889,1.571,True,actual
+2026-10-09 03:07,12169120,Challenger Men Singles,Wuning 3 (China) - Qualification,K. Saitoh,A. Santillan,menos,22.5,0.6556,0.5366,1.727,True,aprendida
