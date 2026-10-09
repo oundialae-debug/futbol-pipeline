@@ -34,12 +34,12 @@ event_key,tipo,torneo,jugador1,jugador2,estado,sets,juegos_totales
 12169287,Challenger Women Doubles,Samsun,Ciric Bagaric/ Kulambayeva,Karamoko/ Noha Akugue,Finished,2 - 0,19
 12169329,Atp Singles,Shanghai,B. Shelton,D. Altmaier,Finished,2 - 0,22
 12169367,Itf Women Doubles,W35 Lagos,Liu/ Moccia,Santos/ Shinde,Finished,2 - 0,16
-12169425,Challenger Men Singles,Antofagasta,M. Pucinelli de Almeida,J. Reis Da Silva,,-,0
-12169442,Challenger Men Singles,Palermo (Italy) - Qualification,M. Giunta,A. Moro Canas,Set 2,0 - 1,17
+12169425,Challenger Men Singles,Antofagasta,M. Pucinelli de Almeida,J. Reis Da Silva,Finished,0 - 2,23
+12169442,Challenger Men Singles,Palermo (Italy) - Qualification,M. Giunta,A. Moro Canas,Finished,1 - 2,36
 12169445,Challenger Men Singles,Antofagasta,T. Seyboth Wild,F. Meligeni Alves,Finished,2 - 0,17
 12169446,Challenger Men Doubles,Antofagasta,Loureiro/  Ribero,Casanova/ Villanueva,Finished,2 - 0,23
-12169456,Itf Men Doubles,M15 Quito 3,Mbithi/ Osorio,Gomez/ Urrea,Set 3,1 - 1,18
-12169458,Itf Women Doubles,W50 Lexington,Hewitt/ Strakhova,Evans/ Frey,Set 2,1 - 0,21
+12169456,Itf Men Doubles,M15 Quito 3,Mbithi/ Osorio,Gomez/ Urrea,Finished,1 - 2,33
+12169458,Itf Women Doubles,W50 Lexington,Hewitt/ Strakhova,Evans/ Frey,Finished,2 - 0,13
 12169460,Itf Women Singles,W35 Wagga Wagga 2,E. Shibahara,M. Uemura,Finished,2 - 0,18
 12169464,Itf Women Doubles,W35 Las Vegas,Cherubini/ Pace,Abbagnato/ Gomez Pezuela Cano,Finished,2 - 1,37
 12169465,Itf Women Singles,W35 Wagga Wagga 2,H. Kaji,N. Sato,Finished,0 - 2,17
@@ -123,7 +123,7 @@ event_key,tipo,torneo,jugador1,jugador2,estado,sets,juegos_totales
 12169564,Challenger Men Singles,Braga,M. Moeller,M. Dodig,Finished,0 - 2,17
 12169565,Challenger Men Singles,Palermo (Italy) - Qualification,Y. Milev,C. Sanchez Jover,Finished,2 - 0,21
 12169566,Challenger Men Singles,Villena,A. Shelbayh,D. Glinka,Finished,1 - 2,32
-12169567,Challenger Women Singles,Samsun,B. Andreescu,A. Blinkova,Set 1,0 - 0,2
+12169567,Challenger Women Singles,Samsun,B. Andreescu,A. Blinkova,Finished,0 - 2,19
 12169568,Itf Men Singles,M15 Burgas (Bulgaria),M. F. Breazu,G. Misasi,Finished,2 - 1,26
 12169569,Itf Men Singles,M15 Burgas (Bulgaria),V. C. Breazu,G. Lazarov,Finished,0 - 2,16
 12169570,Itf Men Singles,M15 Monastir 34,J. Echeverria,L. Wiedenmann,Finished,2 - 0,22
@@ -158,7 +158,7 @@ event_key,tipo,torneo,jugador1,jugador2,estado,sets,juegos_totales
 12169599,Itf Women Doubles,W50 Burgas (Bulgaria),Gavrila/ Sakellaridi,Burcescu/ Zhenikhova,Finished,1 - 2,45
 12169600,Itf Women Doubles,W50 Burgas (Bulgaria),Urgesi/ Van Emst,Kovackova/ Kovackova,Finished,0 - 2,24
 12169601,Itf Women Doubles,W50 Heraklion 2,Amiraghyan/ Nepliy,Korokozidi/ Matoula,Finished,2 - 1,35
-12169603,Challenger Men Singles,Braga,E. Moller,T. Pereira,Set 3,1 - 1,22
+12169603,Challenger Men Singles,Braga,E. Moller,T. Pereira,Finished,2 - 1,27
 12169604,Challenger Men Singles,Villena,L. Djere,H. Barton,Finished,2 - 0,21
 12169605,Challenger Men Doubles,Villena,Cukierman/ Romboli,Jans/ Vliegen,Finished,2 - 0,22
 12169606,Itf Men Singles,M15 Burgas (Bulgaria),A. Tolev,M. Nannelli,Finished,0 - 2,22
@@ -181,19 +181,19 @@ event_key,tipo,torneo,jugador1,jugador2,estado,sets,juegos_totales
 12169623,Itf Men Singles,M15+H Rodez,A. Garcian,G. Dalmasso,Retired,1 - 0,11
 12169624,Itf Men Singles,M15+H Rodez,J. Penzlin,E. Hudd,Finished,0 - 2,22
 12169625,Itf Men Singles,M15+H Rodez,L. Massard,J. Sels,Finished,0 - 2,23
-12169626,Itf Women Singles,W35 Las Vegas,M. E. Reasco Gonzalez,F. Pace,Set 1,0 - 0,10
+12169626,Itf Women Singles,W35 Las Vegas,M. E. Reasco Gonzalez,F. Pace,Finished,1 - 2,30
 12169627,Itf Women Singles,W35 Villeneuve d'Ascq,E. Lene,S. Iliev,Finished,2 - 0,25
-12169628,Itf Women Singles,W50 Lexington,M. Brengle,L. Ma,Set 1,0 - 0,0
+12169628,Itf Women Singles,W50 Lexington,M. Brengle,L. Ma,Finished,2 - 0,21
 12169629,Itf Men Doubles,M15 Burgas (Bulgaria),Lazarov/ Manukyan,Garcia Longo/ Miletich,Finished,2 - 1,30
 12169630,Itf Men Doubles,M15 Heraklion 7,Elamin/ Stice,Pietri/ Scaglia,Finished,0 - 2,19
 12169631,Itf Men Doubles,M15 Heraklion 7,Murgett/ Walters,Makk/ Perego,Finished,2 - 1,33
 12169632,Itf Men Doubles,M15+H Rodez,Dhokia/ Friberg,Garcian/ Rivet,Finished,1 - 2,34
 12169633,Itf Men Doubles,M15+H Rodez,Baluska/ Raynel,Mueller/ Penzlin,Finished,0 - 2,19
-12169634,Itf Women Doubles,W35 Villeneuve d'Ascq,Daniel/ Nahimana,Im/ Kim Eunchae,,-,0
-12169635,Challenger Men Singles,Antofagasta,E. Ribeiro,L. Midon,Set 2,0 - 1,13
+12169634,Itf Women Doubles,W35 Villeneuve d'Ascq,Daniel/ Nahimana,Im/ Kim Eunchae,Finished,2 - 0,17
+12169635,Challenger Men Singles,Antofagasta,E. Ribeiro,L. Midon,Finished,0 - 2,15
 12169636,Challenger Men Singles,Braga,V. Gaubas,L. Mikrut,Finished,2 - 0,18
-12169637,Challenger Men Doubles,Braga,Martos Gornes/ Walkow,Alcala Gurri/ Sanchez Izquierdo,Set 1,0 - 0,4
-12169638,Challenger Men Doubles,Palermo (Italy),Bilardo/ Ricca,Forejtek/ Wiskandt,Set 2,0 - 1,14
+12169637,Challenger Men Doubles,Braga,Martos Gornes/ Walkow,Alcala Gurri/ Sanchez Izquierdo,Finished,1 - 2,37
+12169638,Challenger Men Doubles,Palermo (Italy),Bilardo/ Ricca,Forejtek/ Wiskandt,Finished,0 - 2,21
 12169639,Itf Men Singles,M15 Pontevedra,A. Bacaloni,A. Garcia,Retired,0 - 1,13
 12169640,Itf Men Singles,M15 Pontevedra,D. Eichenseher,Z. Sesko,Finished,0 - 2,18
 12169641,Itf Men Singles,M15 Pontevedra,D. Marques,H. S. Callejon,Finished,0 - 2,17
@@ -206,33 +206,31 @@ event_key,tipo,torneo,jugador1,jugador2,estado,sets,juegos_totales
 12169649,Itf Women Singles,W15 Szekesfehervar (Hungary),M. Nuudi,D. Popovski,Finished,2 - 0,14
 12169650,Itf Women Singles,W50 Lexington,A. Rus,W. Osuigwe,Retired,0 - 0,3
 12169651,Itf Women Doubles,W15 Szekesfehervar (Hungary),Fenyves/ Nemcsek,Pohle/ Schaedel,Finished,2 - 1,36
-12169652,Challenger Men Singles,Palermo (Italy) - Qualification,E. Dalla Valle,F. Passaro,,-,0
-12169653,Challenger Men Singles,Villena,P. Llamas Ruiz,P. Martinez,Set 1,0 - 0,8
-12169654,Itf Men Singles,M15+H Rodez,D. Jade,A. Gobat,Set 2,0 - 1,14
+12169652,Challenger Men Singles,Palermo (Italy) - Qualification,E. Dalla Valle,F. Passaro,Finished,0 - 2,19
+12169653,Challenger Men Singles,Villena,P. Llamas Ruiz,P. Martinez,Retired,0 - 1,16
+12169654,Itf Men Singles,M15+H Rodez,D. Jade,A. Gobat,Finished,0 - 2,21
 12169655,Itf Men Singles,M15 Pontevedra,M. Bobichon,D. Sarksian,Finished,2 - 0,22
-12169656,Itf Women Singles,W35 Las Vegas,A. Penickova,J. Preston,,-,0
-12169657,Itf Women Singles,W35 Villeneuve d'Ascq,A. Monnot,O. Dodin,Set 3,1 - 1,17
+12169656,Itf Women Singles,W35 Las Vegas,A. Penickova,J. Preston,Finished,2 - 0,20
+12169657,Itf Women Singles,W35 Villeneuve d'Ascq,A. Monnot,O. Dodin,Finished,2 - 1,27
 12169658,Challenger Men Doubles,Antofagasta,Magadan/ Merino,Cigarran/ De La Fuente,Finished,2 - 0,22
-12169659,Itf Women Singles,W35 Las Vegas,E. K. Malmkjaer,D. Cherubini,Set 2,1 - 0,9
-12169660,Itf Women Doubles,W50 Lexington,Heuser/ Sharabura,El Jardi/ Yamalapalli,Set 1,0 - 0,11
+12169659,Itf Women Singles,W35 Las Vegas,E. K. Malmkjaer,D. Cherubini,Finished,2 - 0,18
+12169660,Itf Women Doubles,W50 Lexington,Heuser/ Sharabura,El Jardi/ Yamalapalli,Finished,0 - 2,25
 12169661,Itf Women Singles,W15 Cipolletti (Argentina),Cam. Markus,S. Meabe,Set 3,1 - 1,9
-12169666,Challenger Men Singles,Antofagasta,J. C. Prado Angelo,M. Tobon,,-,0
+12169666,Challenger Men Singles,Antofagasta,J. C. Prado Angelo,M. Tobon,Finished,2 - 0,16
 12169667,Challenger Men Doubles,Braga,Forcano/ Izquierdo Luque,Lalami Laaroussi/ Mansilla Diez,Finished,0 - 2,19
-12169668,Itf Women Singles,W35 Las Vegas,E. Mamedova,F. Mattioli,Set 2,1 - 0,10
-12169669,Challenger Men Doubles,Antofagasta,Ribeiro/ Zormann Da Silva,Loureiro/  Ribero,,-,0
+12169668,Itf Women Singles,W35 Las Vegas,E. Mamedova,F. Mattioli,Finished,2 - 1,31
+12169669,Challenger Men Doubles,Antofagasta,Ribeiro/ Zormann Da Silva,Loureiro/  Ribero,Finished,2 - 0,22
 12169670,Itf Women Doubles,W35 Las Vegas,Reasco Gonzalez/ Sahdiieva,Rencheli/ Sholokhova,,-,0
 12169672,Itf Men Singles,M15 Quito 3,M. Covato,F. De Dios,Finished,2 - 0,17
-12169673,Itf Men Singles,M15 Quito 3,A. Hernandez,T. McCormick,Set 2,1 - 0,15
+12169673,Itf Men Singles,M15 Quito 3,A. Hernandez,T. McCormick,Finished,1 - 2,36
 12169674,Itf Men Singles,M15 Quito 3,L. Andrade da Silva,D. Salazar,,-,0
-12169675,Itf Men Singles,M15 Quito 3,V. Bini,M. Mouilleron Salvo,,-,0
+12169675,Itf Men Singles,M15 Quito 3,V. Bini,M. Mouilleron Salvo,Finished,2 - 0,18
 12169676,Itf Women Doubles,W35 Las Vegas,Maklakova/ Mamedova,Cherubini/ Pace,,-,0
 12169677,Itf Men Doubles,M15 Quito 3,Macias Elizalde/ Rivadeneira Gallegos,Bobo/ McCormick,,-,0
 12169678,Itf Women Singles,W15 Cipolletti (Argentina),L. F. Britez Risso,M. F. Urrutia,,-,0
 12169679,Itf Women Singles,W15 Cipolletti (Argentina),L. Moyano,S. A. Larraya Guidi,,-,0
 12169680,Itf Women Singles,W15 Cipolletti (Argentina),F. Rain Contreras,J. M. Gonzalez Daniele,,-,0
-12169681,Itf Women Doubles,W15 Cipolletti (Argentina),Britez Risso/ Kawano Cho,Nappi/ Rondinoni,,-,0
-12169682,Itf Women Doubles,W15 Cipolletti (Argentina),Doldan/ Sosa,Gobbi Monllau/ Zornada,,-,0
-12169683,Itf Women Doubles,W15 Cipolletti (Argentina),Jurado/ Madrid Rocca,Larraya Guidi/ Meabe,,-,0
-12169684,Itf Women Doubles,W15 Cipolletti (Argentina),Sanchez/ Urrutia,Mondati/ Tejada,,-,0
-12169698,Itf Men Doubles,M25 Kigali 2,Lock/ Lock,Brown/ De Alba,Interrupted,0 - 1,15
-12169749,Itf Men Doubles,M15+H Rodez,Garcian/ Rivet,Mueller/ Penzlin,,-,0
+12169749,Itf Men Doubles,M15+H Rodez,Garcian/ Rivet,Mueller/ Penzlin,Finished,0 - 2,17
+12169752,Itf Women Doubles,W50 Lexington,Hewitt/ Strakhova,Bajraliu/ Rus,Finished,2 - 0,22
+12169786,Itf Women Doubles,W50 Lexington,Hewitt/ Strakhova,El Jardi/ Yamalapalli,Finished,1 - 2,42
+12169788,Itf Men Doubles,M15 Quito 3,Gomez/ Urrea,Covato/ Voelzke,Set 3,1 - 1,26
