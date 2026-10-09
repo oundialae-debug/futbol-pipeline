@@ -1,14 +1,14 @@
 # Más/menos juegos en directo: apuestas en papel
 
-Partidos acabados con cuota de juegos en el registro: **620**. Una apuesta por partido (se agrupa por partido). Cuota = la de la API en esa pasada, no la de Luckia. Con menos de 20 apuestas el número no significa nada.
+Partidos acabados con cuota de juegos en el registro: **624**. Una apuesta por partido (se agrupa por partido). Cuota = la de la API en esa pasada, no la de Luckia. Con menos de 20 apuestas el número no significa nada.
 
 | estrategia | apuestas | aciertos | beneficio medio | sigmas |
 |---|---|---|---|---|
-| **señal: vigilar el menos** | 155 | 63% | +11.2% | +1.54 |
-| control: siempre el menos (1ª pasada) | 620 | 51% | -6.7% | -1.79 |
-| control: siempre el más (1ª pasada) | 620 | 49% | -8.3% | -2.20 |
+| **señal: vigilar el menos** | 157 | 62% | +11.1% | +1.54 |
+| control: siempre el menos (1ª pasada) | 624 | 51% | -6.7% | -1.80 |
+| control: siempre el más (1ª pasada) | 624 | 49% | -8.3% | -2.22 |
 
-Brier del 'más' en la línea principal (1ª pasada): modelo 0.2704, mercado 0.2507 (menor es mejor). El modelo da al más +13.5% sobre lo que pasa de verdad.
+Brier del 'más' en la línea principal (1ª pasada): modelo 0.2702, mercado 0.2506 (menor es mejor). El modelo da al más +13.5% sobre lo que pasa de verdad.
 
 ## Señales
 
@@ -160,6 +160,7 @@ Brier del 'más' en la línea principal (1ª pasada): modelo 0.2704, mercado 0.2
 | ITF M M25 Santa Margherita di Pula 9: L. Lokoli vs G. Pennaforti | 18.5 | 1.33 | 18 | gana |
 | ITF M M25 Santa Margherita di Pula 9: R. T. Pieleanu vs A. Weis | 20.5 | 1.83 | 23 | pierde |
 | Challenger Villena: M. H. Rehberg vs H. Barton | 32.5 | 1.83 | 33 | pierde |
+| ATP Shanghai: B. Shelton vs D. Altmaier | 19.5 | 1.20 | 22 | pierde |
 | ITF M M15 Burgas (Bulgaria): J. Sperle vs V. C. Breazu | 29.5 | 2.20 | 31 | pierde |
 | ITF M M15 Burgas (Bulgaria): S. Gima vs I. Miletich | 19.5 | 1.73 | 31 | pierde |
 | ITF M M15 Burgas (Bulgaria): M. Nannelli vs A. Vasilev | 19.5 | 1.30 | 19 | gana |
@@ -169,28 +170,29 @@ Brier del 'más' en la línea principal (1ª pasada): modelo 0.2704, mercado 0.2
 | ITF M M15+H Rodez: A. Braynin vs J. Penzlin | 26.5 | 1.83 | 26 | gana |
 | ITF M M15+H Rodez: A. Reco vs J. Sels | 20.5 | 1.61 | 20 | gana |
 | WTA 125 Suzhou: A. Sasnovich vs E. Kalieva | 21.5 | 1.30 | 22 | pierde |
+| Challenger Wuning 3 (China): J. D. Hara Friend vs R. Seggerman | 25.5 | 2.10 | 21 | gana |
 
 ## Reglas del vigilante (desde el 01/10 solo en papel)
 
 | regla | apuestas resueltas | aciertos | beneficio medio (cuota API) | sigmas |
 |---|---|---|---|---|
-| actual | 350 | 57% | -11.2% | -2.68 |
+| actual | 353 | 57% | -11.1% | -2.67 |
 | actual (al móvil) | 125 | 62% | -4.1% | -0.61 |
-| aprendida | 469 | 52% | -4.7% | -1.08 |
-| casa65 | 213 | 83% | +1.8% | +0.57 |
+| aprendida | 473 | 52% | -4.7% | -1.10 |
+| casa65 | 215 | 83% | +2.0% | +0.63 |
 
 ## Previos (antes de empezar), línea principal de juegos y ganador
 
-1038 partidos. Juegos (más de la línea principal), Brier (menor es mejor): modelo 0.2852, modelo corregido con el historial 0.2607, casa 0.2498. Pasó el más en el 48%.
+1042 partidos. Juegos (más de la línea principal), Brier (menor es mejor): modelo 0.2850, modelo corregido con el historial 0.2606, casa 0.2498. Pasó el más en el 48%.
 
 | regla de previo (en papel desde el 06/10 18:00) | apuestas | aciertos | beneficio medio | sigmas |
 |---|---|---|---|---|
-| previo ATP circuito: más si modelo >= casa+10 | 15 | 40% | -26.2% | -1.09 |
-| previo ajustado vs casa >= 10 (cualquier lado) | 249 | 49% | -8.8% | -1.51 |
-Ganador (1038): acierto modelo 67%, casa 71%.
+| previo ATP circuito: más si modelo >= casa+10 | 16 | 44% | -18.6% | -0.78 |
+| previo ajustado vs casa >= 10 (cualquier lado) | 250 | 50% | -8.4% | -1.44 |
+Ganador (1042): acierto modelo 67%, casa 71%.
 
 ## Aprendizaje (recalibración del modelo)
 
-Partidos resueltos: 548 (4121 líneas). Activa: **sí** (hace falta 30+ partidos y que mejore a la CASA en partidos que no vio).
-**Apostando con lo aprendido, día a día** (cada día aprende solo de los anteriores): 445 apuestas, aciertos 50%, beneficio medio -8.3%, -1.88 sigmas.
-Brier (menor es mejor): modelo 0.2710, modelo con el saque de hoy 0.2623, casa 0.2436, recalibrado (validado por partidos) 0.2336. Sesgo del modelo hacia el más: +18.4%.
+Partidos resueltos: 552 (4153 líneas). Activa: **sí** (hace falta 30+ partidos y que mejore a la CASA en partidos que no vio).
+**Apostando con lo aprendido, día a día** (cada día aprende solo de los anteriores): 449 apuestas, aciertos 50%, beneficio medio -8.3%, -1.89 sigmas.
+Brier (menor es mejor): modelo 0.2708, modelo con el saque de hoy 0.2623, casa 0.2437, recalibrado (validado por partidos) 0.2340. Sesgo del modelo hacia el más: +18.3%.
