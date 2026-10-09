@@ -1,4 +1,2 @@
 match_id,liga_id,fecha,saque_utc,local_id,local,visitante_id,visitante,estado,arbitro,clima_status,clima_temp_txt,local_ids,local_formacion,visitante_ids,visitante_formacion
-1336417992,119924,2026-10-09T19:00:00.000Z,19:00,456069,Malaga,460324,Espanyol,Not started,"Hernandez Maeso, Francisco Jose",clear night,21.08°C,,,,
-1340475560,67162,2026-10-09T18:30:00.000Z,18:30,141199,Borussia Dortmund,138646,Werder Bremen,Not started,"Dingert, Christian",rain,14.38°C,,,,
-1321412309,52695,2026-10-09T18:45:00.000Z,18:45,99500,Lens,68864,Lyon,Not started,"Stinat, Jeremy",rain,16.75°C,,,,
+1340475560,67162,2026-10-09T18:30:00.000Z,18:30,141199,Borussia Dortmund,138646,Werder Bremen,Not started,"Dingert, Christian",rain,14.45°C,,,,
