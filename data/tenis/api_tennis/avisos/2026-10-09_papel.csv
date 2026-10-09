@@ -192,3 +192,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-09 15:11,12169636,Challenger Men Singles,Braga,V. Gaubas,L. Mikrut,menos,18.5,0.7091,0.7091,1.333,True,casa65
 2026-10-09 15:13,12169445,Challenger Men Singles,Antofagasta,T. Seyboth Wild,F. Meligeni Alves,menos,17.5,0.8109,0.8109,1.166,True,casa65
 2026-10-09 15:24,12169578,Itf Men Singles,M25 Santa Margherita di Pula 9,S. D'Agostino,A. Chepelev,más,30.5,0.8358,0.6077,1.533,True,aprendida
+2026-10-09 15:33,12169442,Challenger Men Singles,Palermo (Italy) - Qualification,M. Giunta,A. Moro Canas,menos,21.5,0.6023,0.5,1.833,True,aprendida
