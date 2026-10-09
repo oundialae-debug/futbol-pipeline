@@ -25,3 +25,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-09 04:14,12169128,Atp Singles,Shanghai,A. Mannarino,F. Cobolli,menos,22.5,0.5902,0.5366,1.727,True,aprendida
 2026-10-09 04:22,12169124,Challenger Men Singles,Wuning 3 (China) - Qualification,T. Derepasko,O. Jasika,menos,17.5,0.8109,0.8109,1.166,True,casa65
 2026-10-09 04:40,12169127,Atp Singles,Shanghai,A. Gea,U. Humbert,menos,25.5,0.5806,0.4853,1.909,True,aprendida
+2026-10-09 04:40,12169128,Atp Singles,Shanghai,A. Mannarino,F. Cobolli,menos,24.5,0.6209,0.5,1.833,True,aprendida
