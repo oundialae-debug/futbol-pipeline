@@ -21,3 +21,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-09 03:52,12169127,Atp Singles,Shanghai,A. Gea,U. Humbert,menos,22.5,0.55,0.4853,1.909,True,aprendida
 2026-10-09 03:52,12169133,Atp Singles,Shanghai,R. Sakamoto,A. Rublev,menos,22.5,0.574,0.5,1.833,True,aprendida
 2026-10-09 03:52,12169329,Atp Singles,Shanghai,B. Shelton,D. Altmaier,menos,21.5,0.5844,0.4853,1.909,True,aprendida
+2026-10-09 04:07,12169479,Challenger Women Singles,Suzhou,K. Zavatska,R. Zarazua,menos,17.5,0.5753,0.5147,1.8,True,aprendida
