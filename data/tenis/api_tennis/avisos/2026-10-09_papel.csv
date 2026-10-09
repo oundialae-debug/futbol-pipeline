@@ -77,3 +77,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-09 08:07,12169568,Itf Men Singles,M15 Burgas (Bulgaria),M. F. Breazu,G. Misasi,menos,21.5,0.6154,0.5,1.833,True,aprendida
 2026-10-09 08:07,12169574,Itf Men Singles,M15 Sharm ElSheikh 12,A. Elsayed,J. Trainauskas,menos,15.5,0.7672,0.6876,1.363,True,aprendida
 2026-10-09 08:09,12169548,Itf Men Singles,M25 Kigali 2,D. Javia,F. Bax,menos,20.5,0.5971,0.5,1.833,True,aprendida
+2026-10-09 08:12,12169186,Atp Singles,Shanghai,Y. Hanfmann,F. Tiafoe,menos,20.5,0.8109,0.8109,1.166,True,casa65
