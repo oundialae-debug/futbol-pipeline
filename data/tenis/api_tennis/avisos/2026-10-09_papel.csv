@@ -97,3 +97,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-09 09:34,12169517,Itf Men Singles,M25 Santa Margherita di Pula 9,G. Crivellaro,A. Weis,menos,21.5,0.6939,0.5,1.833,True,aprendida
 2026-10-09 09:35,12169571,Itf Men Singles,M15 Monastir 34,A. Ouakaa,K. I. Kosaner,menos,20.5,0.6276,0.5767,1.615,True,actual
 2026-10-09 09:37,12169519,Itf Men Singles,M25 Santa Margherita di Pula 9,D. Michalski,G. Oradini,menos,20.5,0.6046,0.5,1.833,True,aprendida
+2026-10-09 09:38,12169508,Itf Men Singles,M25 Darwin 2,Ja. Delaney,Z. Stevens,menos,23.5,0.6876,0.6876,1.363,True,casa65
