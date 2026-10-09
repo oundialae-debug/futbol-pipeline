@@ -1,14 +1,14 @@
 # Más/menos juegos en directo: apuestas en papel
 
-Partidos acabados con cuota de juegos en el registro: **635**. Una apuesta por partido (se agrupa por partido). Cuota = la de la API en esa pasada, no la de Luckia. Con menos de 20 apuestas el número no significa nada.
+Partidos acabados con cuota de juegos en el registro: **638**. Una apuesta por partido (se agrupa por partido). Cuota = la de la API en esa pasada, no la de Luckia. Con menos de 20 apuestas el número no significa nada.
 
 | estrategia | apuestas | aciertos | beneficio medio | sigmas |
 |---|---|---|---|---|
-| **señal: vigilar el menos** | 161 | 63% | +13.0% | +1.83 |
-| control: siempre el menos (1ª pasada) | 635 | 51% | -6.5% | -1.77 |
-| control: siempre el más (1ª pasada) | 635 | 49% | -8.3% | -2.25 |
+| **señal: vigilar el menos** | 162 | 64% | +13.1% | +1.86 |
+| control: siempre el menos (1ª pasada) | 638 | 51% | -6.7% | -1.81 |
+| control: siempre el más (1ª pasada) | 638 | 49% | -8.1% | -2.21 |
 
-Brier del 'más' en la línea principal (1ª pasada): modelo 0.2718, mercado 0.2509 (menor es mejor). El modelo da al más +13.6% sobre lo que pasa de verdad.
+Brier del 'más' en la línea principal (1ª pasada): modelo 0.2716, mercado 0.2510 (menor es mejor). El modelo da al más +13.5% sobre lo que pasa de verdad.
 
 ## Señales
 
@@ -174,29 +174,30 @@ Brier del 'más' en la línea principal (1ª pasada): modelo 0.2718, mercado 0.2
 | WTA 125 Suzhou: A. Sasnovich vs E. Kalieva | 21.5 | 1.30 | 22 | pierde |
 | Challenger Wuning 3 (China): J. D. Hara Friend vs R. Seggerman | 25.5 | 2.10 | 21 | gana |
 | ITF M M25 Darwin 2: S. Vujic vs H. Jones | 26.5 | 1.80 | 22 | gana |
+| ITF M M25 Darwin 2: Ja. Delaney vs Z. Stevens | 23.5 | 1.36 | 23 | gana |
 | ITF M M15 Sharm ElSheikh 12: N. Senn vs R. Faucon | 21.5 | 2.00 | 20 | gana |
 
 ## Reglas del vigilante (desde el 01/10 solo en papel)
 
 | regla | apuestas resueltas | aciertos | beneficio medio (cuota API) | sigmas |
 |---|---|---|---|---|
-| actual | 363 | 56% | -11.4% | -2.77 |
+| actual | 366 | 57% | -11.2% | -2.74 |
 | actual (al móvil) | 125 | 62% | -4.1% | -0.61 |
-| aprendida | 485 | 52% | -4.9% | -1.17 |
-| casa65 | 224 | 84% | +2.7% | +0.86 |
+| aprendida | 488 | 52% | -5.1% | -1.22 |
+| casa65 | 226 | 84% | +2.4% | +0.76 |
 
 ## Previos (antes de empezar), línea principal de juegos y ganador
 
-1057 partidos. Juegos (más de la línea principal), Brier (menor es mejor): modelo 0.2854, modelo corregido con el historial 0.2612, casa 0.2499. Pasó el más en el 49%.
+1066 partidos. Juegos (más de la línea principal), Brier (menor es mejor): modelo 0.2856, modelo corregido con el historial 0.2609, casa 0.2499. Pasó el más en el 48%.
 
 | regla de previo (en papel desde el 06/10 18:00) | apuestas | aciertos | beneficio medio | sigmas |
 |---|---|---|---|---|
-| previo ATP circuito: más si modelo >= casa+10 | 20 | 50% | -5.8% | -0.27 |
-| previo ajustado vs casa >= 10 (cualquier lado) | 256 | 49% | -9.1% | -1.57 |
-Ganador (1057): acierto modelo 67%, casa 71%.
+| previo ATP circuito: más si modelo >= casa+10 | 21 | 48% | -10.3% | -0.49 |
+| previo ajustado vs casa >= 10 (cualquier lado) | 263 | 50% | -8.1% | -1.41 |
+Ganador (1066): acierto modelo 67%, casa 71%.
 
 ## Aprendizaje (recalibración del modelo)
 
-Partidos resueltos: 563 (4218 líneas). Activa: **sí** (hace falta 30+ partidos y que mejore a la CASA en partidos que no vio).
-**Apostando con lo aprendido, día a día** (cada día aprende solo de los anteriores): 460 apuestas, aciertos 50%, beneficio medio -8.5%, -1.96 sigmas.
-Brier (menor es mejor): modelo 0.2706, modelo con el saque de hoy 0.2624, casa 0.2436, recalibrado (validado por partidos) 0.2333. Sesgo del modelo hacia el más: +18.4%.
+Partidos resueltos: 566 (4241 líneas). Activa: **sí** (hace falta 30+ partidos y que mejore a la CASA en partidos que no vio).
+**Apostando con lo aprendido, día a día** (cada día aprende solo de los anteriores): 463 apuestas, aciertos 50%, beneficio medio -8.7%, -2.01 sigmas.
+Brier (menor es mejor): modelo 0.2706, modelo con el saque de hoy 0.2623, casa 0.2435, recalibrado (validado por partidos) 0.2320. Sesgo del modelo hacia el más: +18.5%.
