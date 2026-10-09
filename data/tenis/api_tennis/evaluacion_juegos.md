@@ -1,14 +1,14 @@
 # Más/menos juegos en directo: apuestas en papel
 
-Partidos acabados con cuota de juegos en el registro: **608**. Una apuesta por partido (se agrupa por partido). Cuota = la de la API en esa pasada, no la de Luckia. Con menos de 20 apuestas el número no significa nada.
+Partidos acabados con cuota de juegos en el registro: **609**. Una apuesta por partido (se agrupa por partido). Cuota = la de la API en esa pasada, no la de Luckia. Con menos de 20 apuestas el número no significa nada.
 
 | estrategia | apuestas | aciertos | beneficio medio | sigmas |
 |---|---|---|---|---|
 | **señal: vigilar el menos** | 153 | 63% | +11.6% | +1.59 |
-| control: siempre el menos (1ª pasada) | 608 | 51% | -6.3% | -1.68 |
-| control: siempre el más (1ª pasada) | 608 | 49% | -8.6% | -2.27 |
+| control: siempre el menos (1ª pasada) | 609 | 51% | -6.5% | -1.72 |
+| control: siempre el más (1ª pasada) | 609 | 49% | -8.4% | -2.23 |
 
-Brier del 'más' en la línea principal (1ª pasada): modelo 0.2712, mercado 0.2507 (menor es mejor). El modelo da al más +13.6% sobre lo que pasa de verdad.
+Brier del 'más' en la línea principal (1ª pasada): modelo 0.2709, mercado 0.2507 (menor es mejor). El modelo da al más +13.5% sobre lo que pasa de verdad.
 
 ## Señales
 
@@ -172,9 +172,9 @@ Brier del 'más' en la línea principal (1ª pasada): modelo 0.2712, mercado 0.2
 
 | regla | apuestas resueltas | aciertos | beneficio medio (cuota API) | sigmas |
 |---|---|---|---|---|
-| actual | 339 | 57% | -10.6% | -2.50 |
+| actual | 340 | 57% | -10.9% | -2.57 |
 | actual (al móvil) | 125 | 62% | -4.1% | -0.61 |
-| aprendida | 455 | 52% | -4.6% | -1.04 |
+| aprendida | 457 | 52% | -4.5% | -1.04 |
 | casa65 | 206 | 83% | +1.3% | +0.39 |
 
 ## Previos (antes de empezar), línea principal de juegos y ganador
@@ -189,6 +189,6 @@ Ganador (1027): acierto modelo 67%, casa 71%.
 
 ## Aprendizaje (recalibración del modelo)
 
-Partidos resueltos: 536 (4024 líneas). Activa: **sí** (hace falta 30+ partidos y que mejore a la CASA en partidos que no vio).
-**Apostando con lo aprendido, día a día** (cada día aprende solo de los anteriores): 433 apuestas, aciertos 50%, beneficio medio -8.7%, -1.95 sigmas.
-Brier (menor es mejor): modelo 0.2710, modelo con el saque de hoy 0.2620, casa 0.2435, recalibrado (validado por partidos) 0.2335. Sesgo del modelo hacia el más: +18.3%.
+Partidos resueltos: 537 (4040 líneas). Activa: **sí** (hace falta 30+ partidos y que mejore a la CASA en partidos que no vio).
+**Apostando con lo aprendido, día a día** (cada día aprende solo de los anteriores): 434 apuestas, aciertos 50%, beneficio medio -8.9%, -2.00 sigmas.
+Brier (menor es mejor): modelo 0.2708, modelo con el saque de hoy 0.2618, casa 0.2436, recalibrado (validado por partidos) 0.2345. Sesgo del modelo hacia el más: +18.2%.
