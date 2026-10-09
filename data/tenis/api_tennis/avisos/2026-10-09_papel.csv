@@ -50,3 +50,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-09 06:02,12169485,Challenger Women Singles,Suzhou,A. Falei,R. Sramkova,menos,21.5,0.6052,0.5,1.833,True,aprendida
 2026-10-09 06:08,12169476,Challenger Men Singles,Wuning 3 (China) - Qualification,J. D. Hara Friend,R. Seggerman,menos,26.5,0.7522,0.5767,1.615,True,actual
 2026-10-09 06:30,12169476,Challenger Men Singles,Wuning 3 (China) - Qualification,J. D. Hara Friend,R. Seggerman,menos,21.5,0.9129,0.9129,1.05,True,casa65
+2026-10-09 06:35,12169238,Atp Singles,Shanghai,A. Zverev,Y. Wu,menos,21.5,0.5388,0.4853,1.909,True,aprendida
