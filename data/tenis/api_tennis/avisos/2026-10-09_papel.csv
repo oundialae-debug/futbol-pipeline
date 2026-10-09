@@ -138,3 +138,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-09 10:45,12169275,Atp Singles,Shanghai,K. Khachanov,A. Fery,menos,26.5,0.7492,0.625,1.5,True,actual
 2026-10-09 10:49,12169132,Wta Singles,Beijing,E. Mertens,I. Swiatek,menos,20.5,0.5923,0.5147,1.8,True,aprendida
 2026-10-09 10:49,12169640,Itf Men Singles,M15 Pontevedra,D. Eichenseher,Z. Sesko,menos,18.5,0.6307,0.5576,1.666,True,actual
+2026-10-09 10:53,12169621,Itf Men Singles,M15 Heraklion 7,G. Perego,P. Makk,más,27.5,0.8176,0.5576,1.666,True,aprendida
