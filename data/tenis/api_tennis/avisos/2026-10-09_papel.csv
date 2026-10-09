@@ -147,3 +147,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-09 11:24,12169512,Challenger Women Singles,Samsun,A. Aksu,F. Crawley,más,27.5,0.7968,0.4424,2.1,True,aprendida
 2026-10-09 11:27,12169625,Itf Men Singles,M15+H Rodez,L. Massard,J. Sels,menos,23.5,0.6372,0.5576,1.666,True,actual
 2026-10-09 11:28,12169518,Itf Men Singles,M25 Santa Margherita di Pula 9,L. Lokoli,I. Ivanov,menos,17.5,0.7383,0.6627,1.4,True,actual
+2026-10-09 11:28,12169607,Itf Men Singles,M15 Burgas (Bulgaria),I. Miletich,J. Kupcic,menos,20.5,0.5942,0.4853,1.909,True,aprendida
