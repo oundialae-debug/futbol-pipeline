@@ -1,4 +1,4 @@
-# Tenis en directo, 09/10/2026 21:01 UTC (23:01 en España)
+# Tenis en directo, 09/10/2026 21:14 UTC (23:14 en España)
 
 Calculadora desde el marcador exacto (modelo de puntos, superficie real) frente a la cuota en directo
 (sin margen). Ganador y sets: la calculadora suele coincidir con la casa. Total de juegos: el modelo
