@@ -14,7 +14,7 @@
 | API NBA (cuota aparte) | `scripts/nba/*.py` (`nba_boxscore.yml`, activo) | `data/nba/` |
 | datos ya en disco | `experimento_*`, `auditoria*`, `sondeo_*`, `censo_*` (sueltos) | resultados en los `.md` |
 
-- En pausa (cron comentado): cosechar_cuotas, calendario, descanso_en_vivo, revision_descanso, casas_descolgadas, censo_margenes, pipeline_diario. `tenis_directo.yml` corre en la rama `ccr-3c3cfe57-etcioo`.
+- Activos de nuevo desde el 09/10: cosechar_cuotas (≤1.200 llamadas/día) y calendario. En pausa (cron comentado): descanso_en_vivo, revision_descanso, casas_descolgadas, censo_margenes, pipeline_diario. `tenis_directo.yml` corre en la rama `ccr-3c3cfe57-etcioo`.
 - Obsoletos o duplicados: `modelos/ambos_marcan/scripts/` (copia congelada del 24/09; lo vigente está en `scripts/`); `scripts/actualizar_datos.py` y `scripts/backfill_historico_completo.py` (sin workflow; los sustituye `backfill_historico.py`).
 
 ## Grafo de conocimiento (graphify)
@@ -30,3 +30,4 @@ La skill .claude/skills/free-llm-apis guía para usar proveedores LLM gratuitos.
 Apunta aquí, en una línea, las decisiones y lo aprendido para los próximos chats.
 - 05/10/2026: el CLAUDE.md largo pasa a `docs/notas_proyecto.md`; grafo graphify solo de código (sin `data/`); skill free-llm-apis instalada sin claves.
 - 05/10/2026: LLM gratuitos listos (Groq, Cerebras) vía `scripts/llm_gratis.py`; Python necesita User-Agent propio o da 403.
+- 09/10/2026: reactivados cosechar_cuotas y calendario (las cuotas caducan a los 28 días); descanso_en_vivo (914/día) y los semanales siguen parados.

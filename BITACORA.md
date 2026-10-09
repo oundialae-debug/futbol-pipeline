@@ -131,6 +131,12 @@ Dónde está cada cosa:
 
 ---
 
+## 09/10/2026
+
+| qué | por qué | ficheros |
+|---|---|---|
+| Reactivados los crons `cosechar_cuotas` (diario, tope 1.200 llamadas) y `calendario` (diario + lunes), con el sí del usuario. Siguen parados descanso_en_vivo (914 llamadas/día), revision_descanso, casas_descolgadas, censo_margenes y pipeline_diario. | Vuelven las ligas tras el parón. La API solo guarda las cuotas 28 días: lo que no se cosecha se pierde. Los parados no alimentan nada de lo que se hace ahora. | `.github/workflows/cosechar_cuotas.yml`, `.github/workflows/calendario.yml`, `CLAUDE.md` |
+
 ## 05/10/2026
 
 ### Cambios de código y ficheros

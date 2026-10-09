@@ -15,13 +15,13 @@ on:
         description: 'Días de calendario a traer'
         required: false
         default: '30'
-  # EN PAUSA desde el 26/09/2026 (petición del usuario): solo la Nations League
-  # gasta API mientras dura (~3 semanas sin liga). Para reactivar, descomentar.
-  # schedule:
-  # # lunes de madrugada: calendario del mes
-  # - cron: '20 4 * * 1'
-  # # todos los días: agenda del día, antes del primer partido
-  # - cron: '40 5 * * *'
+  # REACTIVADO el 09/10/2026 con el sí del usuario (vuelven las ligas tras el
+  # parón). Estuvo en pausa del 26/09 al 09/10 por la Nations League.
+  schedule:
+  # lunes de madrugada: calendario del mes
+  - cron: '20 4 * * 1'
+  # todos los días: agenda del día, antes del primer partido
+  - cron: '40 5 * * *'
 
 jobs:
   calendario:
