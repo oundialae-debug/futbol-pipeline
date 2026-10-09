@@ -90,3 +90,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-09 08:43,12169276,Wta Singles,Beijing,Q. Zheng,E. Svitolina,menos,22.5,0.6627,0.6627,1.4,True,casa65
 2026-10-09 08:49,12169185,Atp Singles,Shanghai,F. Cerundolo,R. Safiullin,menos,23.5,0.6127,0.5147,1.8,True,aprendida
 2026-10-09 08:57,12169568,Itf Men Singles,M15 Burgas (Bulgaria),M. F. Breazu,G. Misasi,menos,17.5,0.607,0.5767,1.615,True,actual
+2026-10-09 09:04,12169512,Challenger Women Singles,Samsun,A. Aksu,F. Crawley,menos,20.5,0.5676,0.4853,1.909,True,aprendida
