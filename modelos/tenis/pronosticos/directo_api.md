@@ -1,4 +1,4 @@
-# Tenis en directo, 09/10/2026 10:03 UTC (12:03 en España)
+# Tenis en directo, 09/10/2026 10:21 UTC (12:21 en España)
 
 Calculadora desde el marcador exacto (modelo de puntos, superficie real) frente a la cuota en directo
 (sin margen). Ganador y sets: la calculadora suele coincidir con la casa. Total de juegos: el modelo
@@ -7,33 +7,33 @@ Se actualiza cada ~5 min; el registro en data/tenis/api_tennis/registro/ servir�
 
 | partido | tipo | superficie | marcador (sets, juegos, puntos, saca) | gana 1º: modelo / cuota | sets más probables (modelo) | total juegos: línea, modelo / cuota |
 |---|---|---|---|---|---|---|
-| F. Cerundolo vs R. Safiullin | Atp Singles | Hard | 0-0, 6-6, 0 - 0, saca F. Cerundolo | 54% / 57% | 2-0 28%, 2-1 27% | 26.5: 50% / 49% |
-| K. Khachanov vs A. Fery | Atp Singles | Hard | 1-0, 0-1, 30 - 30, saca K. Khachanov | 88% / 76% | 2-0 62%, 2-1 26% | 26.5: 38% / 49% |
-| N. Djokovic vs H. Hurkacz | Atp Singles | Hard | 0-0, 0-0, 0 - 0, saca ? | 59% / 60% | 2-0 32%, 2-1 28% | 23.5: 59% / 50% |
-| M. Kecmanovic vs J. Mensik | Atp Singles | Hard | 0-1, 0-0, 0 - 0, saca M. Kecmanovic | 10% / 16% | 0-2 69%, 1-2 22% | 21.5: 47% / 49% |
-| J. Pinnington Jones vs B. Gojo | Challenger Men Singles | Clay | 0-0, 0-0, 0 - 0, saca B. Gojo | 41% / 45% | 0-2 31%, 1-2 28% | 23.5: 53% / 49% |
-| A. Aksu vs F. Crawley | Challenger Women Singles | Hard | 0-1, 1-1, 15 - 0, saca F. Crawley | 25% / 19% | 0-2 48%, 1-2 28% | 21.5: 60% / 46% |
-| M. F. Breazu vs G. Misasi | Itf Men Singles | Clay | 1-0, 3-5, 40 - A, saca G. Misasi | 45% / 59% | 1-2 55%, 2-1 41% | 25.5: 54% / 49% |
-| J. Echeverria vs L. Wiedenmann | Itf Men Singles | Hard | 1-0, 2-1, 0 - 30, saca J. Echeverria | 86% / 79% | 2-0 67%, 2-1 18% | 20.5: 50% / 46% |
-| A. Ouakaa vs K. I. Kosaner | Itf Men Singles | Hard | 1-0, 3-1, 40 - 40, saca K. I. Kosaner | 92% / 94% | 2-0 84%, 2-1 8% | 18.5: 72% / 50% |
-| D. Javia vs F. Bax | Itf Men Singles | Clay | 1-1, 1-3, 40 - 15, saca D. Javia | 9% / 12% | 1-2 91%, 2-1 9% | 27.5: 64% / 58% |
-| G. Perego vs P. Makk | Itf Men Singles | Hard | 1-1, 1-1, 0 - 0, saca G. Perego | 29% / 38% | 1-2 71%, 2-1 29% | 27.5: 68% / 61% |
-| A. Vales vs N. Belozertsev | Itf Men Singles | Hard | 0-0, 1-0, 0 - 0, saca A. Vales | 82% / 65% | 2-0 56%, 2-1 26% | 20.5: 55% / 50% |
-| J. Penzlin vs E. Hudd | Itf Men Singles | Hard | 0-1, 0-0, 0 - 0, saca E. Hudd | 8% / 21% | 0-2 71%, 1-2 21% | 23.5: 48% / 51% |
-| G. Crivellaro vs A. Weis | Itf Men Singles | Clay | 0-0, 1-2, 30 - 40, saca G. Crivellaro | 6% / 22% | 0-2 73%, 1-2 20% | 20.5: 42% / 49% |
-| M. Bouzige vs C. Hoole | Itf Men Singles | Hard | 1-1, 3-3, 0 - 0, saca C. Hoole | 58% /  | 2-1 58%, 1-2 42% |  |
-| T. Sahtali vs C. Denolly | Itf Men Singles | Clay | 0-1, 5-6, 0 - 0, saca C. Denolly | 6% / 9% | 0-2 86%, 1-2 8% | 22.5: 31% / 34% |
-| L. Lokoli vs I. Ivanov | Itf Men Singles | Clay | 0-0, 1-2, 0 - 0, saca L. Lokoli | 59% / 51% | 2-1 30%, 2-0 29% | 22.5: 58% / 51% |
-| D. Michalski vs G. Oradini | Itf Men Singles | Clay | 0-0, 1-1, 0 - 0, saca G. Oradini | 72% / 75% | 2-0 43%, 2-1 30% | 21.5: 63% / 50% |
-| B. Du Pree vs M. Martinez Vaquero | Itf Women Singles | Hard | 0-0, 0-0, 0 - 0, saca ? | 87% / 79% | 2-0 60%, 2-1 27% |  |
-| M. Thamm vs S. J. Visscher | Itf Women Singles | Hard | 1-0, 0-0, 40 - 15, saca S. J. Visscher | 75% / 90% | 2-0 57%, 1-2 25% |  |
-| J. Bertoldo vs I. Oz | Itf Women Singles | Clay | 0-0, 1-3, 0 - 0, saca I. Oz | 16% / 9% | 0-2 59%, 1-2 25% |  |
-| Ma. Garcia Cid vs R. Roura Llaverias | Itf Women Singles | Clay | 0-1, 1-0, 40 - 30, saca R. Roura Llaverias | 78% / 45% | 2-1 78%, 1-2 14% |  |
-| D. Chiesa vs L. Zaar | Itf Women Singles | Clay | 0-0, 1-2, 40 - 15, saca D. Chiesa | 39% / 48% | 0-2 33%, 1-2 28% |  |
-| A. Reguer vs A. E. Samardzic | Itf Women Singles | Hard | 1-1, 1-3, 0 - 0, saca A. E. Samardzic | 34% / 28% | 1-2 66%, 2-1 34% |  |
-| L. Claeys vs A. Breaz | Itf Women Singles | Clay | 0-1, 5-6, 0 - 0, saca A. Breaz | 10% / 9% | 0-2 77%, 1-2 12% |  |
-| M. Paoletti vs A. Mazzola | Itf Women Singles | Clay | 0-0, 0-2, 40 - 30, saca A. Mazzola | 16% / 56% | 0-2 58%, 1-2 26% |  |
-| A. Mintegi Del Olmo vs J. Ortenzi | Itf Women Singles | Clay | 1-1, 5-0, 0 - 0, saca A. Mintegi Del Olmo | 99% / 98% | 2-1 99%, 1-2 1% |  |
-| Z. Pawlikowska vs W. Ewald | Itf Women Singles | Hard | 0-1, 4-1, 15 - 30, saca W. Ewald | 38% / 50% | 1-2 45%, 2-1 38% |  |
-| P. Skliar vs V. Turini | Itf Women Singles | Hard | 0-1, 3-0, 30 - 40, saca V. Turini | 34% / 48% | 1-2 43%, 2-1 34% |  |
-| I. Ivanova vs R. Dencheva | Itf Women Singles | Clay | 0-0, 0-0, A - 40, saca R. Dencheva | 24% / 12% | 0-2 45%, 1-2 31% |  |
+| F. Cerundolo vs R. Safiullin | Atp Singles | Hard | 1-0, 1-1, 15 - 0, saca R. Safiullin | 80% / 81% | 2-0 58%, 2-1 22% | 25.5: 54% / 50% |
+| K. Khachanov vs A. Fery | Atp Singles | Hard | 1-0, 2-3, 0 - 0, saca K. Khachanov | 87% / 70% | 2-0 60%, 2-1 28% | 30.5: 38% / 50% |
+| N. Djokovic vs H. Hurkacz | Atp Singles | Hard | 0-0, 1-1, 15 - 30, saca H. Hurkacz | 58% / 59% | 2-0 30%, 2-1 28% | 25.5: 57% / 50% |
+| M. Kecmanovic vs J. Mensik | Atp Singles | Hard | 0-1, 2-3, 15 - 0, saca J. Mensik | 4% / 7% | 0-2 88%, 1-2 8% | 18.5: 74% / 71% |
+| J. Pinnington Jones vs B. Gojo | Challenger Men Singles | Clay | 0-0, 1-1, 40 - 30, saca B. Gojo | 47% / 50% | 1-2 28%, 0-2 25% | 23.5: 55% / 50% |
+| A. Aksu vs F. Crawley | Challenger Women Singles | Hard | 0-1, 3-2, 30 - 15, saca A. Aksu | 35% / 29% | 1-2 39%, 2-1 35% | 26.5: 58% / 50% |
+| M. F. Breazu vs G. Misasi | Itf Men Singles | Clay | 1-1, 1-0, 40 - 40, saca G. Misasi | 53% / 65% | 2-1 53%, 1-2 47% | 25.5: 54% / 46% |
+| V. C. Breazu vs G. Lazarov | Itf Men Singles | Clay | 0-0, 1-1, 0 - 0, saca G. Lazarov | 24% / 39% | 0-2 46%, 1-2 30% | 21.5: 59% / 51% |
+| J. Echeverria vs L. Wiedenmann | Itf Men Singles | Hard | 1-0, 3-4, 15 - 0, saca J. Echeverria | 77% / 71% | 2-0 48%, 2-1 29% | 27.5: 49% / 49% |
+| A. Ouakaa vs K. I. Kosaner | Itf Men Singles | Hard | 1-0, 5-2, 40 - 30, saca A. Ouakaa | 100% / 98% | 2-0 99%, 2-1 0% |  |
+| G. Perego vs P. Makk | Itf Men Singles | Hard | 1-1, 1-2, 15 - 40, saca P. Makk | 8% / 13% | 1-2 92%, 2-1 8% | 27.5: 51% / 44% |
+| A. Vales vs N. Belozertsev | Itf Men Singles | Hard | 0-0, 3-1, 15 - 15, saca N. Belozertsev | 85% / 72% | 2-0 60%, 2-1 24% |  |
+| J. Penzlin vs E. Hudd | Itf Men Singles | Hard | 0-1, 2-1, 15 - 15, saca J. Penzlin | 17% / 29% | 1-2 42%, 0-2 41% | 29.5: 50% / 50% |
+| D. Eichenseher vs Z. Sesko | Itf Men Singles | Hard | 0-0, 1-1, 30 - 15, saca D. Eichenseher | 34% / 19% | 0-2 36%, 1-2 30% | 20.5: 73% / 50% |
+| L. Lokoli vs I. Ivanov | Itf Men Singles | Clay | 0-0, 3-3, 15 - 15, saca I. Ivanov | 63% / 59% | 2-0 34%, 2-1 29% | 23.5: 53% / 50% |
+| G. Crivellaro vs A. Weis | Itf Men Singles | Clay | 0-0, 2-4, 30 - 40, saca A. Weis | 4% / 17% | 0-2 80%, 1-2 16% | 19.5: 39% / 49% |
+| D. Michalski vs G. Oradini | Itf Men Singles | Clay | 0-0, 3-2, 15 - 0, saca D. Michalski | 83% / 87% | 2-0 57%, 2-1 25% | 19.5: 70% / 51% |
+| B. Du Pree vs M. Martinez Vaquero | Itf Women Singles | Hard | 0-0, 2-1, 0 - 0, saca B. Du Pree | 90% / 86% | 2-0 67%, 2-1 23% |  |
+| M. Thamm vs S. J. Visscher | Itf Women Singles | Hard | 1-0, 2-2, 30 - 30, saca S. J. Visscher | 69% / 87% | 2-0 46%, 1-2 31% |  |
+| J. Bertoldo vs I. Oz | Itf Women Singles | Clay | 0-0, 2-5, 40 - 30, saca I. Oz | 13% / 9% | 0-2 64%, 1-2 23% |  |
+| Ma. Garcia Cid vs R. Roura Llaverias | Itf Women Singles | Clay | 0-1, 3-1, 30 - 30, saca Ma. Garcia Cid | 80% / 45% | 2-1 80%, 1-2 14% |  |
+| D. Chiesa vs L. Zaar | Itf Women Singles | Clay | 0-0, 2-3, 40 - 40, saca D. Chiesa | 34% / 38% | 0-2 39%, 1-2 27% |  |
+| A. Reguer vs A. E. Samardzic | Itf Women Singles | Hard | 1-1, 2-5, 15 - 40, saca A. Reguer | 3% / 5% | 1-2 97%, 2-1 3% |  |
+| L. Claeys vs A. Breaz | Itf Women Singles | Clay | 0-1, 6-6, 5 - 2, saca L. Claeys | 40% / 34% | 1-2 48%, 2-1 40% |  |
+| M. Paoletti vs A. Mazzola | Itf Women Singles | Clay | 0-0, 1-5, 0 - 0, saca A. Mazzola | 10% / 38% | 0-2 69%, 1-2 21% |  |
+| F. Curmi vs A. Oktiabreva | Itf Women Singles | Clay | 0-0, 0-2, 15 - 0, saca F. Curmi | 29% / 22% | 0-2 45%, 1-2 26% |  |
+| Z. Pawlikowska vs W. Ewald | Itf Women Singles | Hard | 0-1, 5-3, 30 - 40, saca Z. Pawlikowska | 35% / 45% | 1-2 42%, 2-1 35% |  |
+| M. Rajeshwaran Revathi vs T. Jialin | Itf Women Singles | Hard | 0-0, 1-0, 40 - 40, saca M. Rajeshwaran Revathi | 25% / 62% | 0-2 41%, 1-2 34% |  |
+| P. Skliar vs V. Turini | Itf Women Singles | Hard | 0-1, 5-2, 0 - 0, saca V. Turini | 40% / 50% | 1-2 51%, 2-1 40% |  |
+| I. Ivanova vs R. Dencheva | Itf Women Singles | Clay | 0-0, 2-3, 0 - 0, saca I. Ivanova | 17% / 9% | 0-2 56%, 1-2 27% |  |
