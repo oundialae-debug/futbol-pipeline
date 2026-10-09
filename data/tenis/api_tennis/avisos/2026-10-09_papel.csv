@@ -189,3 +189,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-09 14:48,12169636,Challenger Men Singles,Braga,V. Gaubas,L. Mikrut,menos,18.5,0.7742,0.6451,1.444,True,actual
 2026-10-09 14:58,12169603,Challenger Men Singles,Braga,E. Moller,T. Pereira,menos,21.5,0.6484,0.5,1.833,True,aprendida
 2026-10-09 15:04,12169252,Challenger Men Singles,Palermo (Italy) - Qualification,M. Ribecai,J. Forejtek,más,24.5,0.7288,0.3373,2.75,True,aprendida
+2026-10-09 15:11,12169636,Challenger Men Singles,Braga,V. Gaubas,L. Mikrut,menos,18.5,0.7091,0.7091,1.333,True,casa65
