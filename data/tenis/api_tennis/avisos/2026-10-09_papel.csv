@@ -136,3 +136,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-09 10:41,12169185,Atp Singles,Shanghai,F. Cerundolo,R. Safiullin,menos,23.5,0.7921,0.7921,1.181,True,casa65
 2026-10-09 10:44,12169570,Itf Men Singles,M15 Monastir 34,J. Echeverria,L. Wiedenmann,menos,22.5,0.6876,0.6876,1.363,True,casa65
 2026-10-09 10:45,12169275,Atp Singles,Shanghai,K. Khachanov,A. Fery,menos,26.5,0.7492,0.625,1.5,True,actual
+2026-10-09 10:49,12169132,Wta Singles,Beijing,E. Mertens,I. Swiatek,menos,20.5,0.5923,0.5147,1.8,True,aprendida
