@@ -28,7 +28,7 @@ event_key,tipo,torneo,jugador1,jugador2,estado,sets,juegos_totales
 12168713,Itf Women Singles,W15 Cipolletti (Argentina),L. F. Britez Risso,M. Madrid Rocca,Finished,2 - 0,16
 12168714,Itf Women Singles,W15 Cipolletti (Argentina),F. B. Moron,J. M. Gonzalez Daniele,Finished,0 - 2,15
 12168715,Itf Women Singles,W15 Cipolletti (Argentina),L. Moyano,S. N. Nappi,Finished,2 - 0,14
-12168741,Itf Women Doubles,W15 Cipolletti (Argentina),Sanchez/ Urrutia,Maruca/ Soto Neira,,-,0
+12168741,Itf Women Doubles,W15 Cipolletti (Argentina),Sanchez/ Urrutia,Maruca/ Soto Neira,Walk Over,-,0
 12168742,Itf Women Doubles,W15 Cipolletti (Argentina),Jurado/ Madrid Rocca,Mai/ Markus,Walk Over,-,0
 12168743,Itf Women Doubles,W15 Cipolletti (Argentina),Bhatia/ Moron,Larraya Guidi/ Meabe,Walk Over,-,0
 12168777,Itf Women Doubles,W35 Las Vegas,Bernales/ Fakih,Chang/ Shymanovich,Finished,1 - 2,31
@@ -400,7 +400,6 @@ event_key,tipo,torneo,jugador1,jugador2,estado,sets,juegos_totales
 12169467,Itf Women Singles,W35 Las Vegas,F. Mattioli,V. Bosio,Finished,2 - 1,32
 12169470,Itf Women Doubles,W35 Las Vegas,Reasco Gonzalez/ Sahdiieva,Fairclough/ Lutkemeyer,Finished,2 - 0,17
 12169645,Itf Women Singles,W15 Cipolletti (Argentina),A. S. Sanchez,D. Bhatia,Walk Over,-,0
-12169661,Itf Women Singles,W15 Cipolletti (Argentina),Cam. Markus,S. Meabe,Set 3,1 - 1,19
 12169662,Itf Women Singles,W15 Cipolletti (Argentina),L. F. Britez Risso,G. Kawano Cho,Finished,2 - 0,14
 12169663,Itf Women Singles,W15 Cipolletti (Argentina),L. Moyano,E. Zornada,Finished,2 - 0,17
 12169664,Itf Women Singles,W15 Cipolletti (Argentina),C. D. Vega Gudino,J. M. Gonzalez Daniele,Finished,0 - 2,12
