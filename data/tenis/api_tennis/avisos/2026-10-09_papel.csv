@@ -125,3 +125,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-09 10:25,12169570,Itf Men Singles,M15 Monastir 34,J. Echeverria,L. Wiedenmann,menos,23.5,0.6889,0.5576,1.666,True,aprendida
 2026-10-09 10:25,12169621,Itf Men Singles,M15 Heraklion 7,G. Perego,P. Makk,menos,26.5,0.7877,0.6876,1.363,True,actual
 2026-10-09 10:25,12169621,Itf Men Singles,M15 Heraklion 7,G. Perego,P. Makk,menos,26.5,0.7877,0.6876,1.363,True,aprendida
+2026-10-09 10:25,12169624,Itf Men Singles,M15+H Rodez,J. Penzlin,E. Hudd,menos,29.5,0.6377,0.4853,1.909,True,aprendida
