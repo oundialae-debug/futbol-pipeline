@@ -174,3 +174,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-09 13:38,12169135,Atp Singles,Shanghai,A. Bublik,T. Machac,menos,23.5,0.6425,0.5767,1.615,True,actual
 2026-10-09 13:41,12169254,Atp Singles,Shanghai,Y. Zhou,L. Musetti,menos,32.5,0.7254,0.6451,1.444,True,actual
 2026-10-09 13:47,12169252,Challenger Men Singles,Palermo (Italy) - Qualification,M. Ribecai,J. Forejtek,menos,17.5,0.6607,0.5576,1.666,True,actual
+2026-10-09 13:52,12169636,Challenger Men Singles,Braga,V. Gaubas,L. Mikrut,menos,22.5,0.6691,0.5147,1.8,True,aprendida
