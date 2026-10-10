@@ -1,12 +1,12 @@
 # Más/menos juegos en directo: apuestas en papel
 
-Partidos acabados con cuota de juegos en el registro: **683**. Una apuesta por partido (se agrupa por partido). Cuota = la de la API en esa pasada, no la de Luckia. Con menos de 20 apuestas el número no significa nada.
+Partidos acabados con cuota de juegos en el registro: **685**. Una apuesta por partido (se agrupa por partido). Cuota = la de la API en esa pasada, no la de Luckia. Con menos de 20 apuestas el número no significa nada.
 
 | estrategia | apuestas | aciertos | beneficio medio | sigmas |
 |---|---|---|---|---|
-| **señal: vigilar el menos** | 177 | 63% | +11.9% | +1.75 |
-| control: siempre el menos (1ª pasada) | 683 | 51% | -6.9% | -1.94 |
-| control: siempre el más (1ª pasada) | 683 | 49% | -8.0% | -2.25 |
+| **señal: vigilar el menos** | 178 | 63% | +12.0% | +1.77 |
+| control: siempre el menos (1ª pasada) | 685 | 51% | -6.9% | -1.95 |
+| control: siempre el más (1ª pasada) | 685 | 49% | -8.0% | -2.25 |
 
 Brier del 'más' en la línea principal (1ª pasada): modelo 0.2711, mercado 0.2508 (menor es mejor). El modelo da al más +13.3% sobre lo que pasa de verdad.
 
@@ -191,28 +191,29 @@ Brier del 'más' en la línea principal (1ª pasada): modelo 0.2711, mercado 0.2
 | ITF M M15 Burgas (Bulgaria): I. Miletich vs J. Kupcic | 26.5 | 2.38 | 27 | pierde |
 | ITF M M15+H Rodez: J. Penzlin vs E. Hudd | 25.5 | 1.80 | 22 | gana |
 | ITF M M15+H Rodez: D. Jade vs A. Gobat | 25.5 | 1.83 | 21 | gana |
+| ITF M M25 Luan: M. Alkaya vs N. Ehrenschneider | 27.5 | 1.30 | 27 | gana |
 
 ## Reglas del vigilante (desde el 01/10 solo en papel)
 
 | regla | apuestas resueltas | aciertos | beneficio medio (cuota API) | sigmas |
 |---|---|---|---|---|
-| actual | 403 | 57% | -11.1% | -2.84 |
+| actual | 405 | 57% | -10.8% | -2.78 |
 | actual (al móvil) | 125 | 62% | -4.1% | -0.61 |
-| aprendida | 544 | 52% | -3.8% | -0.94 |
-| casa65 | 250 | 83% | +1.3% | +0.43 |
+| aprendida | 546 | 52% | -3.8% | -0.95 |
+| casa65 | 251 | 83% | +1.4% | +0.47 |
 
 ## Previos (antes de empezar), línea principal de juegos y ganador
 
-1136 partidos. Juegos (más de la línea principal), Brier (menor es mejor): modelo 0.2832, modelo corregido con el historial 0.2615, casa 0.2496. Pasó el más en el 49%.
+1139 partidos. Juegos (más de la línea principal), Brier (menor es mejor): modelo 0.2836, modelo corregido con el historial 0.2615, casa 0.2496. Pasó el más en el 49%.
 
 | regla de previo (en papel desde el 06/10 18:00) | apuestas | aciertos | beneficio medio | sigmas |
 |---|---|---|---|---|
 | previo ATP circuito: más si modelo >= casa+10 | 22 | 50% | -6.0% | -0.29 |
-| previo ajustado vs casa >= 10 (cualquier lado) | 299 | 51% | -7.0% | -1.32 |
-Ganador (1136): acierto modelo 66%, casa 71%.
+| previo ajustado vs casa >= 10 (cualquier lado) | 302 | 50% | -7.4% | -1.39 |
+Ganador (1139): acierto modelo 66%, casa 71%.
 
 ## Aprendizaje (recalibración del modelo)
 
-Partidos resueltos: 611 (4624 líneas). Activa: **sí** (hace falta 30+ partidos y que mejore a la CASA en partidos que no vio).
-**Apostando con lo aprendido, día a día** (cada día aprende solo de los anteriores): 507 apuestas, aciertos 50%, beneficio medio -9.0%, -2.18 sigmas.
-Brier (menor es mejor): modelo 0.2702, modelo con el saque de hoy 0.2618, casa 0.2436, recalibrado (validado por partidos) 0.2332. Sesgo del modelo hacia el más: +18.2%.
+Partidos resueltos: 613 (4636 líneas). Activa: **sí** (hace falta 30+ partidos y que mejore a la CASA en partidos que no vio).
+**Apostando con lo aprendido, día a día** (cada día aprende solo de los anteriores): 509 apuestas, aciertos 50%, beneficio medio -9.0%, -2.19 sigmas.
+Brier (menor es mejor): modelo 0.2702, modelo con el saque de hoy 0.2617, casa 0.2435, recalibrado (validado por partidos) 0.2323. Sesgo del modelo hacia el más: +18.2%.
