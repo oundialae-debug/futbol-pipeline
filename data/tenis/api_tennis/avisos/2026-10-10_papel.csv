@@ -136,3 +136,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-10 11:22,12169492,Atp Singles,Shanghai,T. Paul,D. Vallejo,menos,22.5,0.6771,0.5147,1.8,True,aprendida
 2026-10-10 11:24,12169808,Wta Singles,Wuhan,C. Osorio,T. C. Grant,más,30.5,0.9047,0.6876,1.363,True,aprendida
 2026-10-10 11:32,12169756,Challenger Men Singles,Villena,J. Pinnington Jones,D. Glinka,menos,19.5,0.7921,0.7921,1.181,True,casa65
+2026-10-10 11:33,12169789,Challenger Men Singles,Braga,E. Moller,V. Gaubas,menos,21.5,0.6242,0.5,1.833,True,aprendida
