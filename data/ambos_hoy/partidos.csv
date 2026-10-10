@@ -1,6 +1,5 @@
 match_id,liga_id,fecha,saque_utc,local_id,local,visitante_id,visitante,estado,arbitro,clima_status,clima_temp_txt,local_ids,local_formacion,visitante_ids,visitante_formacion
-1340479815,67162,2026-10-10T13:30:00.000Z,13:30,140348,FSV Mainz 05,143752,Bayer Leverkusen,Not started,"Burda, Max",partly cloudy day,16.57°C,,,,
-1340478964,67162,2026-10-10T13:30:00.000Z,13:30,145454,FC Augsburg,134391,Bayern Munich,Not started,"Jablonski, Sven",rain,13.31°C,,,,
-1340480666,67162,2026-10-10T13:30:00.000Z,13:30,155666,Union Berlin,1413444,SV Elversberg,Not started,"Reichel, Tobias",partly cloudy day,16.73°C,,,,
-1340477262,67162,2026-10-10T13:30:00.000Z,13:30,142901,1899 Hoffenheim,149709,Hamburger SV,Not started,"Osmers, Harm",partly cloudy day,16.09°C,,,,
-1340482368,67162,2026-10-10T13:30:00.000Z,13:30,158219,SC Paderborn 07,147156,VfB Stuttgart,Not started,"Zwayer, Felix",partly cloudy day,14.13°C,,,,
+1325367757,33973,2026-10-10T14:00:00.000Z,14:00,49291,Ipswich,31420,Fulham,Not started,"Smith, Lewis",wind,14.94°C,,,,
+1325363502,33973,2026-10-10T14:00:00.000Z,14:00,56950,Aston Villa,47589,Brentford,Not started,"Pawson, Craig",cloudy,13.67°C,,,,
+1325364353,33973,2026-10-10T14:00:00.000Z,14:00,42483,Chelsea,30569,Bournemouth,Not started,"Barrott, Samuel",cloudy,15.36°C,,,,
+1325370310,33973,2026-10-10T14:00:00.000Z,14:00,635630,Sunderland,44185,Brighton,Not started,"Bramall, Thomas",wind,12.7°C,,,,
