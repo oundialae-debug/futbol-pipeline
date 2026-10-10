@@ -26,8 +26,8 @@ event_key,tipo,torneo,jugador1,jugador2,estado,sets,juegos_totales
 12169561,Atp Singles,Shanghai,D. Svrcina,T. M. Etcheverry,,-,0
 12169562,Wta Doubles,Beijing,Mertens/ Shnaider,Dabrowski/ Stefani,,-,0
 12169602,Challenger Women Doubles,Samsun,Bhosale/ Micic,Jakupovic/ Salden,,-,0
-12169661,Itf Women Singles,W15 Cipolletti (Argentina),Cam. Markus,S. Meabe,Set 3,1 - 1,9
-12169671,Itf Women Singles,W35 Wagga Wagga 2,W. Wan I,E. Shibahara,Set 1,0 - 0,0
+12169661,Itf Women Singles,W15 Cipolletti (Argentina),Cam. Markus,S. Meabe,,-,9
+12169671,Itf Women Singles,W35 Wagga Wagga 2,W. Wan I,E. Shibahara,Finished,0 - 2,21
 12169678,Itf Women Singles,W15 Cipolletti (Argentina),L. F. Britez Risso,M. F. Urrutia,,-,0
 12169679,Itf Women Singles,W15 Cipolletti (Argentina),L. Moyano,S. A. Larraya Guidi,,-,0
 12169680,Itf Women Singles,W15 Cipolletti (Argentina),F. Rain Contreras,J. M. Gonzalez Daniele,,-,0
@@ -35,9 +35,9 @@ event_key,tipo,torneo,jugador1,jugador2,estado,sets,juegos_totales
 12169682,Itf Women Doubles,W15 Cipolletti (Argentina),Doldan/ Sosa,Gobbi Monllau/ Zornada,,-,0
 12169683,Itf Women Doubles,W15 Cipolletti (Argentina),Jurado/ Madrid Rocca,Larraya Guidi/ Meabe,,-,0
 12169684,Itf Women Doubles,W15 Cipolletti (Argentina),Sanchez/ Urrutia,Mondati/ Tejada,,-,0
-12169685,Itf Women Singles,W35 Wagga Wagga 2,N. Sato,H. Sato,,-,0
+12169685,Itf Women Singles,W35 Wagga Wagga 2,N. Sato,H. Sato,Set 1,0 - 0,2
 12169686,Itf Men Singles,M25 Luan,M. Alkaya,N. Ehrenschneider,,-,0
-12169687,Itf Men Singles,M25 Luan,M. Dellavedova,Y. Erel,,-,0
+12169687,Itf Men Singles,M25 Luan,M. Dellavedova,Y. Erel,Set 1,0 - 0,0
 12169688,Itf Women Doubles,W35 Wagga Wagga 2,Stevens/ Thompson,Arakawa/ Nishimoto,,-,0
 12169689,Challenger Women Singles,Suzhou,K. Okamura,E. Kalieva,,-,0
 12169692,Challenger Men Singles,Wuning 3 (China) - Qualification,K. Saitoh,J. D. Hara Friend,,-,0
@@ -140,3 +140,6 @@ event_key,tipo,torneo,jugador1,jugador2,estado,sets,juegos_totales
 12169801,Challenger Men Doubles,Antofagasta,Ribeiro/ Zormann Da Silva,Magadan/ Merino,,-,0
 12169802,Itf Men Singles,M15+H Rodez,A. Garcian,A. Gobat,,-,0
 12169803,Itf Women Doubles,W35 Las Vegas,Rencheli/ Sholokhova,Cherubini/ Pace,,-,0
+12169804,Itf Men Singles,M15 Quito 3,T. McCormick,V. Bini,,-,0
+12169805,Itf Men Doubles,M15 Quito 3,Bobo/ McCormick,Gomez/ Urrea,,-,0
+12169806,Itf Men Singles,M15 Quito 3,L. Andrade da Silva,M. Covato,,-,0
