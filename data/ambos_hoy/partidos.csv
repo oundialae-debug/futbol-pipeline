@@ -1,2 +1,5 @@
 match_id,liga_id,fecha,saque_utc,local_id,local,visitante_id,visitante,estado,arbitro,clima_status,clima_temp_txt,local_ids,local_formacion,visitante_ids,visitante_formacion
-1319170775,115669,2026-10-10T16:00:00.000Z,16:00,430539,Inter,445857,Parma,Not started,"Bonacina, Kevin",clear day,20.3°C,,,,
+1336040999,120775,2026-10-10T16:30:00.000Z,16:30,8248676,Eldense,607547,Cordoba,Not started,"Huerta de Aza, Marta",clear day,22.67°C,,,,
+1325369459,33973,2026-10-10T16:30:00.000Z,16:30,28867,Manchester United,40781,Tottenham,Not started,"Attwell, Stuart",partly cloudy day,12.99°C,,,,
+1336414588,119924,2026-10-10T16:30:00.000Z,16:30,450963,Barcelona,465430,Getafe,Not started,"Gil Manzano, Jesus",clear day,22.11°C,,,,
+1340476411,67162,2026-10-10T16:30:00.000Z,16:30,148007,RB Leipzig,144603,Eintracht Frankfurt,Not started,"Siebert, Daniel",clear night,14.01°C,,,,
