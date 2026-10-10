@@ -19,7 +19,8 @@ Cada pasada (fecha de hoy y de ayer en Europe/Madrid, para los partidos que acab
     a ahora+3 min (scripts/buffer_envio.py, copia de Live/enviar_cola.py).
   - marca + fila en data/redes/post_partido_log.csv; consumo en data/redes/post_partido_consumo.json.
 
-Uso:  python3 scripts/post_partido.py            (la pasada real; la lanza el cron)
+Uso:  python3 scripts/post_partido.py            (bucle: sondea cada 5 min en el mismo job hasta acabar; lo lanza el cron)
+      python3 scripts/post_partido.py una        (una sola pasada)
       python3 scripts/post_partido.py hay        (sin pandas ni API: ¿algún partido en ventana? -> GITHUB_OUTPUT)
 Pruebas sin red: scripts/prueba_post_partido.py (respuestas falsas de la API, sin git ni Buffer).
 """
@@ -402,7 +403,7 @@ def publicar(pd, DC, x, fecha, t, uso, fila, base, marca):
                "hora": t.isoformat(timespec="seconds"), "dueAt": due.isoformat(timespec="seconds"),
                "buffer": ids, "errores": errores, "texto": cuerpo, "titulo_tiktok": titulo, "musica": pista, "video": url(video),
                "imagenes": [url(p) for p in pngs], "llamadas": uso["partidos"].get(str(x.match_id), 0)}
-    fin(marca, marca_d, f"post-partido: {local}-{visitante} enviado a Buffer")
+    fin(marca, marca_d, f"post-partido: {local}-{visitante} {marca_d['estado']}")
     return marca_d["estado"]
 
 
@@ -450,8 +451,36 @@ def main():
     return out, bh.llamadas[0]
 
 
+PENDIENTES = {"en_juego", "esperando_xg", "sin_estadisticas", "sin_respuesta", "url_no_lista", "error_push"}
+SONDEO = int(os.environ.get("SONDEO_SEG", "300"))     # 5 min entre sondeos dentro del mismo job
+DURACION_MAX = timedelta(minutes=int(os.environ.get("DURACION_MAX_MIN", "135")))   # el job tiene timeout 150
+
+
+def bucle(dormir=time.sleep):
+    """10/10: el cron de GitHub no es fiable (1 pasada en 20 min). Si un partido está en ventana y sin terminar, el
+    MISMO job sigue sondeando cada 5 min (<=1 llamada por sondeo) hasta que termina, pasa saque+4h o se agota el tope
+    de 30/día. El cron solo arranca el bucle; la concurrencia del workflow evita dos bucles a la vez."""
+    inicio = time.monotonic()
+    while True:
+        out, n = main()
+        pend = [m for m, e in out.items() if e in PENDIENTES]
+        if not pend:
+            return out
+        if any(e == "tope" for e in out.values()):
+            print("Tope diario alcanzado: fin del bucle")
+            return out
+        if timedelta(seconds=time.monotonic() - inicio) + timedelta(seconds=SONDEO) > DURACION_MAX:
+            print("Duración máxima del job: lo retoma la siguiente pasada del cron")
+            return out
+        print(f"Pendientes {pend}: siguiente sondeo en {SONDEO} s")
+        sys.stdout.flush()
+        dormir(SONDEO)
+
+
 if __name__ == "__main__":
     if sys.argv[1:2] == ["hay"]:
         hay()
-    else:
+    elif sys.argv[1:2] == ["una"]:
         main()
+    else:
+        bucle()

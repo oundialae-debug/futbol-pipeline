@@ -5,6 +5,7 @@ Caso real de calendario: Real Madrid - Villarreal (2026-10-10 19:00 UTC) y RB Le
   3) 21:00 UTC: Madrid terminado -> 2 llamadas, fila en el histórico, PNG + vídeo, marca "enviado".
   4) 21:05 UTC: la marca impide repetir -> 0 llamadas, sin fila duplicada.
   5) tope: con 30 llamadas ya gastadas hoy -> no se llama.
+  6) bucle: en juego -> el mismo job espera 5 min (reloj falso) y vuelve a sondear hasta terminar.
 Uso: python3 scripts/prueba_post_partido.py   (sale con error si algo falla)"""
 import json, re, shutil, sys, tempfile
 from pathlib import Path
@@ -30,6 +31,13 @@ def stats(tid, xg, on, off, blk):
         {"displayName": "Possession", "value": 0.55}, {"displayName": "Corners", "value": 6}]}
 
 
+def copiar_historico(base):
+    """El histórico real SIN el partido de la prueba (desde el 10/10 ya lleva el Madrid - Villarreal de verdad)."""
+    with open(RAIZ / "data/historico_partidos.csv", encoding="utf-8") as f, \
+            open(base / "data/historico_partidos.csv", "w", encoding="utf-8") as g:
+        g.writelines(x for x in f if not x.startswith(f"{RM},"))
+
+
 def pasada(base, hora):
     import os
     os.environ["AHORA"] = f"2026-10-10T{hora}:00+00:00"
@@ -48,7 +56,7 @@ def main():
         base, api = Path(tmp) / "repo", Path(tmp) / "api"
         (base / "data").mkdir(parents=True)
         api.mkdir()
-        shutil.copy(RAIZ / "data/historico_partidos.csv", base / "data/historico_partidos.csv")
+        copiar_historico(base)
         filas0 = sum(1 for _ in open(base / "data/historico_partidos.csv"))
         P.usar_rutas(base)
         P.OPC.update(simular=str(api), git=False, buffer=False, red=False)
@@ -82,11 +90,34 @@ def main():
         check(consumo["dias"]["2026-10-10"] == 3, f"consumo del día: {consumo['dias']}")
 
         (base / f"data/redes/post_partido/{RM}.json").unlink()
-        shutil.copy(RAIZ / "data/historico_partidos.csv", base / "data/historico_partidos.csv")
+        copiar_historico(base)
         consumo["dias"]["2026-10-10"] = 30
         (base / "data/redes/post_partido_consumo.json").write_text(json.dumps(consumo))
         out, n = pasada(base, "21:10")
         check(n == 0 and out.get(RM) == "tope", f"tope de 30/día: {out.get(RM)}, {n} llamadas")
+
+    # 6) bucle: en juego a las 20:50, el mismo job duerme 5 min (reloj falso) y a las 20:55 ya está terminado
+    with tempfile.TemporaryDirectory() as tmp:
+        base, api = Path(tmp) / "repo", Path(tmp) / "api"
+        (base / "data").mkdir(parents=True)
+        api.mkdir()
+        copiar_historico(base)
+        P.usar_rutas(base)
+        P.OPC.update(simular=str(api), git=False, buffer=False, red=False)
+        (api / f"matches_{RM}.json").write_text(json.dumps(partido("Second half", "1 - 0")))
+        import os
+        os.environ["AHORA"] = "2026-10-10T20:50:00+00:00"
+        sueños = []
+
+        def dormir(seg):
+            sueños.append(seg)
+            os.environ["AHORA"] = "2026-10-10T20:55:00+00:00"
+            (api / f"matches_{RM}.json").write_text(json.dumps(partido("Finished", "1 - 0")))
+            (api / f"statistics_{RM}.json").write_text(json.dumps([stats(461175, 0.9, 5, 4, 3), stats(454367, 0.6, 2, 3, 1)]))
+        out = P.bucle(dormir)
+        m = json.loads((base / f"data/redes/post_partido/{RM}.json").read_text())
+        check(sueños == [300] and out.get(RM) == "enviado" and m["llamadas"] == 3,
+              f"bucle: {len(sueños)} espera de {sueños}, {out.get(RM)}, {m['llamadas']} llamadas")
 
     print("\nTODO BIEN" if ok else "\nHAY FALLOS")
     sys.exit(0 if ok else 1)

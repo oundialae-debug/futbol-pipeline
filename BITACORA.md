@@ -32,6 +32,10 @@ cambios de código y archivos".
   primera pasada (lanzada a mano) falló al importar, antes de cualquier llamada.
 - Sin `BUFFER_API_KEY` (el secreto solo está en Live): vídeo + PNG se suben igual y la marca queda en
   `video_listo_sin_buffer` con la URL raw del vídeo y el texto, para mandarlo a mano; no se reintenta ni se llama más a la API.
+- Bucle dentro del job (misma noche): el cron */5 de GitHub dio 1 pasada en 20 min. Ahora el cron (*/10) solo arranca;
+  si hay un partido en ventana sin terminar, `post_partido.py` (modo `bucle`) sondea cada 5 min en el mismo job (≤1 llamada
+  por sondeo) hasta que termina, pasa inicio+4h, se agota el tope o llega a 135 min (timeout del job 150). Probado con reloj falso.
+  Real Madrid 1-0 Villarreal salió así a las 21:09 UTC (4 llamadas), en `video_listo_sin_buffer`.
 
 ## 10/10/2026 — redes: goles esperados de la plantilla "goals" a 92 px
 - Qué: `generar.py` goals(): marcador de goles esperados de 120 a 92 px.

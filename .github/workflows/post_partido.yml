@@ -4,10 +4,12 @@ name: Post-partido automático (2yellow)
 # (los de `datos_clubes.py elegir`). Lógica y tiempos: scripts/post_partido.py.
 # ACTIVO: aprobado por el usuario el 10/10/2026 como excepción fija a la regla de la API: sondeo cada 5 min
 # desde inicio+1h45 (1 llamada por pasada mientras no termina, +1 de estadísticas al terminar), tope duro de
-# 30 llamadas/día. La inmensa mayoría de pasadas no instala nada ni llama a la API (paso "¿Hay algo?").
+# 30 llamadas/día. 10/10: el cron de GitHub no es fiable (1 pasada en 20 min), así que cuando un partido está en
+# ventana el MISMO job sigue sondeando cada 5 min hasta que termina (scripts/post_partido.py bucle); la
+# concurrencia impide dos bucles a la vez. La inmensa mayoría de pasadas no instala nada ni llama a la API (paso "¿Hay algo?").
 on:
   schedule:
-    - cron: '*/5 * * * *'
+    - cron: '*/10 * * * *'    # solo arranca el bucle: el sondeo cada 5 min va DENTRO del job
   workflow_dispatch:
 
 concurrency:
@@ -17,6 +19,7 @@ concurrency:
 jobs:
   post:
     runs-on: ubuntu-latest
+    timeout-minutes: 150
     permissions:
       contents: write
     env:
