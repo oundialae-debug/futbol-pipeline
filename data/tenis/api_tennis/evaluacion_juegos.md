@@ -224,12 +224,12 @@ Brier del 'más' en la línea principal (1ª pasada): modelo 0.2705, mercado 0.2
 | juegos (menos) | favorito casa >= 65% | 12 | 83% | 86% | -1.3% | -0.10 |
 | juegos (menos) |   y cuota >= 1,30 | 4 | 75% | 75% | +1.5% | +0.04 |
 | juegos (menos) |   y sin Challenger/WTA 125 | 10 | 90% | 87% | +4.8% | +0.39 |
-| ganador | favorito casa >= 65% | 58 | 83% | 79% | +4.1% | +0.64 |
-| ganador |   y cuota >= 1,30 | 41 | 76% | 74% | +2.3% | +0.25 |
-| ganador |   y sin Challenger/WTA 125 | 50 | 84% | 79% | +5.8% | +0.86 |
-| resultado en sets | favorito casa >= 65% | 45 | 87% | 82% | +5.9% | +0.92 |
-| resultado en sets |   y cuota >= 1,30 | 21 | 81% | 75% | +8.6% | +0.73 |
-| resultado en sets |   y sin Challenger/WTA 125 | 38 | 87% | 82% | +6.2% | +0.90 |
+| ganador | favorito casa >= 65% | 59 | 81% | 79% | +2.4% | +0.36 |
+| ganador |   y cuota >= 1,30 | 42 | 74% | 74% | -0.1% | -0.02 |
+| ganador |   y sin Challenger/WTA 125 | 51 | 82% | 79% | +3.7% | +0.54 |
+| resultado en sets | favorito casa >= 65% | 46 | 85% | 82% | +3.6% | +0.53 |
+| resultado en sets |   y cuota >= 1,30 | 22 | 77% | 75% | +3.6% | +0.30 |
+| resultado en sets |   y sin Challenger/WTA 125 | 39 | 85% | 82% | +3.5% | +0.48 |
 
 ## Comparar casas con Pinnacle (profesional, en papel desde el 10/10)
 
