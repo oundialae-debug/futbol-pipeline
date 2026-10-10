@@ -1,4 +1,4 @@
-# Tenis en directo, 10/10/2026 08:40 UTC (10:40 en España)
+# Tenis en directo, 10/10/2026 08:52 UTC (10:52 en España)
 
 Calculadora desde el marcador exacto (modelo de puntos, superficie real) frente a la cuota en directo
 (sin margen). Ganador y sets: la calculadora suele coincidir con la casa. Total de juegos: el modelo
@@ -7,23 +7,23 @@ Se actualiza cada ~5 min; el registro en data/tenis/api_tennis/registro/ servir�
 
 | partido | tipo | superficie | marcador (sets, juegos, puntos, saca) | gana 1º: modelo / cuota | sets más probables (modelo) | total juegos: línea, modelo / cuota |
 |---|---|---|---|---|---|---|
-| A. Fils vs P. Kotov | Atp Singles | Hard | 0-0, 0-0, 0 - 0, saca ? | 92% / 86% | 2-0 69%, 2-1 23% | 19.5: 67% / 51% |
-| Y. Bu vs C. Ruud | Atp Singles | Hard | 0-0, 0-3, 15 - 15, saca Y. Bu | 12% / 28% | 0-2 65%, 1-2 23% | 21.5: 49% / 50% |
-| J. Hasson vs G. Perego | Itf Men Singles | Hard | 0-0, 2-3, 40 - 40, saca G. Perego | 35% / 29% | 0-2 40%, 1-2 25% | 22.5: 62% / 46% |
-| J. Filip vs A. Vales | Itf Men Singles | Hard | 0-0, 5-2, 0 - 0, saca J. Filip | 56% / 71% | 1-2 41%, 2-0 34% | 20.5: 74% / 51% |
-| J. Kupcic vs G. Lazarov | Itf Men Singles | Clay | 0-0, 3-5, 15 - 30, saca G. Lazarov | 24% / 13% | 0-2 51%, 1-2 25% | 19.5: 65% / 41% |
-| M. F. Breazu vs M. Nannelli | Itf Men Singles | Clay | 0-0, 3-3, 15 - 30, saca M. F. Breazu | 36% / 66% | 0-2 36%, 1-2 27% | 23.5: 53% / 50% |
-| A. Arzhankin vs R. Faucon | Itf Men Singles | Hard | 1-0, 4-4, 15 - 30, saca R. Faucon | 73% / 75% | 2-0 46%, 2-1 27% | 23.5: 54% / 49% |
-| Z. Stevens vs C. Hoole | Itf Men Singles | Hard | 0-1, 2-2, 15 - 30, saca Z. Stevens | 20% / 7% | 0-2 59%, 1-2 21% | 17.5: 61% / 38% |
-| A. Cirotte vs S. Yuldasheva | Itf Women Singles | Hard | 1-0, 5-4, 40 - 40, saca A. Cirotte | 93% / 92% | 2-0 84%, 2-1 9% |  |
-| C. Fornasieri vs L. Beviz | Itf Women Singles | Clay | 0-0, 2-5, 0 - 0, saca C. Fornasieri | 25% / 31% | 0-2 50%, 1-2 25% |  |
-| A. Sushkova vs A. E. Samardzic | Itf Women Singles | Hard | 1-0, 4-3, 30 - 15, saca A. Sushkova | 96% / 95% | 2-0 86%, 2-1 10% |  |
-| Y. Perapekhina vs A. L. Popovic | Itf Women Singles | Hard | 1-0, 4-4, 30 - 0, saca A. L. Popovic | 78% / 94% | 2-0 63%, 1-2 22% |  |
-| A. Oktiabreva vs N. Brancaccio | Itf Women Singles | Clay | 0-0, 4-2, 15 - 15, saca A. Oktiabreva | 76% / 79% | 2-0 50%, 2-1 26% |  |
-| I. Oz vs A. Tubello | Itf Women Singles | Clay | 0-0, 4-3, 0 - 0, saca I. Oz | 36% / 55% | 1-2 36%, 0-2 27% |  |
-| D. Zoldakova vs Z. Pawlikowska | Itf Women Singles | Hard | 0-0, 0-0, 0 - 0, saca D. Zoldakova | 66% / 75% | 2-0 37%, 2-1 29% |  |
-| R. Dencheva vs A. Mintegi Del Olmo | Itf Women Singles | Clay | 0-0, 5-0, 40 - 15, saca A. Mintegi Del Olmo | 62% / 83% | 2-0 38%, 1-2 38% |  |
-| M. Sawangkaew vs M. Joint | Wta Singles | Hard | 0-0, 0-0, 0 - 0, saca M. Joint | 47% / 41% | 0-2 27%, 1-2 26% | 21.5: 62% / 49% |
-| A. Bondar vs L. Boisson | Wta Singles | Hard | 0-0, 3-2, 0 - 40, saca L. Boisson | 57% / 52% | 2-0 30%, 2-1 27% | 24.5: 55% / 50% |
-| Y. Yuan vs C. McNally | Wta Singles | Hard | 0-1, 2-2, 0 - 0, saca Y. Yuan | 14% / 17% | 0-2 62%, 1-2 24% | 19.5: 57% / 54% |
-| L. Tararudee vs C. Liu | Wta Singles | Hard | 0-0, 3-4, 0 - 0, saca C. Liu | 59% / 35% | 2-1 37%, 0-2 22% | 23.5: 60% / 49% |
+| Y. Bu vs C. Ruud | Atp Singles | Hard | 0-0, 0-3, 40 - 40, saca Y. Bu | 12% / 24% | 0-2 65%, 1-2 23% | 20.5: 54% / 50% |
+| A. Fils vs P. Kotov | Atp Singles | Hard | 0-0, 1-0, 0 - 0, saca P. Kotov | 93% / 89% | 2-0 71%, 2-1 22% | 19.5: 60% / 49% |
+| E. Coulibaly vs A. Ouakaa | Itf Men Singles | Hard | 0-0, 0-1, 15 - 0, saca E. Coulibaly | 87% / 75% | 2-0 59%, 2-1 28% | 21.5: 56% / 50% |
+| J. Hasson vs G. Perego | Itf Men Singles | Hard | 0-0, 4-3, 30 - 40, saca G. Perego | 51% / 48% | 2-0 26%, 1-2 25% | 24.5: 60% / 51% |
+| J. Filip vs A. Vales | Itf Men Singles | Hard | 1-0, 1-0, 15 - 0, saca J. Filip | 73% / 87% | 2-0 59%, 1-2 27% | 17.5: 72% / 49% |
+| J. Kupcic vs G. Lazarov | Itf Men Singles | Clay | 0-1, 0-1, 0 - 15, saca G. Lazarov | 12% / 6% | 0-2 75%, 1-2 14% | 17.5: 70% / 42% |
+| M. F. Breazu vs M. Nannelli | Itf Men Singles | Clay | 0-0, 4-3, 0 - 0, saca M. Nannelli | 46% / 75% | 1-2 29%, 0-2 25% |  |
+| A. Arzhankin vs R. Faucon | Itf Men Singles | Hard | 1-0, 5-6, 0 - 0, saca A. Arzhankin | 71% / 69% | 2-0 41%, 2-1 29% | 30.5: 54% / 50% |
+| Z. Stevens vs C. Hoole | Itf Men Singles | Hard | 0-1, 3-2, 0 - 0, saca C. Hoole | 27% / 11% | 0-2 45%, 1-2 29% | 19.5: 73% / 49% |
+| A. Oktiabreva vs N. Brancaccio | Itf Women Singles | Clay | 1-0, 0-0, 30 - 40, saca A. Oktiabreva | 81% / 86% | 2-0 53%, 2-1 28% |  |
+| C. Fornasieri vs L. Beviz | Itf Women Singles | Clay | 0-0, 3-5, 40 - 40, saca L. Beviz | 27% / 35% | 0-2 47%, 1-2 25% |  |
+| Y. Perapekhina vs A. L. Popovic | Itf Women Singles | Hard | 1-0, 4-5, 40 - 40, saca Y. Perapekhina | 57% / 83% | 1-2 43%, 2-1 32% |  |
+| A. Cirotte vs S. Yuldasheva | Itf Women Singles | Hard | 1-0, 6-5, 40 - 0, saca A. Cirotte | 99% / 98% | 2-0 99%, 2-1 1% |  |
+| I. Oz vs A. Tubello | Itf Women Singles | Clay | 0-0, 5-4, 0 - 0, saca I. Oz | 41% / 55% | 1-2 39%, 2-0 22% |  |
+| D. Zoldakova vs Z. Pawlikowska | Itf Women Singles | Hard | 0-0, 1-2, 0 - 0, saca Z. Pawlikowska | 56% / 72% | 2-1 31%, 2-0 25% |  |
+| R. Dencheva vs A. Mintegi Del Olmo | Itf Women Singles | Clay | 1-0, 0-0, 40 - 40, saca R. Dencheva | 62% / 83% | 2-0 39%, 1-2 38% |  |
+| M. Sawangkaew vs M. Joint | Wta Singles | Hard | 0-0, 2-0, 0 - 40, saca M. Joint | 57% / 48% | 2-0 32%, 1-2 26% | 22.5: 57% / 50% |
+| A. Bondar vs L. Boisson | Wta Singles | Hard | 0-0, 4-4, 40 - 40, saca A. Bondar | 55% / 47% | 2-0 28%, 2-1 27% | 25.5: 53% / 50% |
+| Y. Yuan vs C. McNally | Wta Singles | Hard | 0-1, 3-3, 30 - 30, saca Y. Yuan | 14% / 17% | 0-2 61%, 1-2 25% | 20.5: 51% / 46% |
+| L. Tararudee vs C. Liu | Wta Singles | Hard | 0-0, 5-4, 0 - 15, saca C. Liu | 75% / 53% | 2-0 46%, 2-1 29% | 25.5: 46% / 50% |
