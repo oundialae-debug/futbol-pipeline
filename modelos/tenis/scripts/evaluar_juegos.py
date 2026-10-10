@@ -155,6 +155,8 @@ def main():
                 "| regla | apuestas resueltas | aciertos | beneficio medio (cuota API) | sigmas |", "|---|---|---|---|---|"]
         for regla, g in a.groupby("regla"):
             lin.append(resumen(regla, g))
+    import reglas_papel                    # ganador, sets y juegos con las mismas reglas (desde el 10/10)
+    lin += [""] + reglas_papel.tabla()
     lin += previa(res)
     cal = C.ajustar()
     lin += ["", "## Aprendizaje (recalibración del modelo)", "",

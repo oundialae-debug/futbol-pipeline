@@ -579,6 +579,16 @@ En ATP circuito (79 partidos, solo Shanghái/Tokio/Pekín) el modelo SIN corregi
 torneos, y contradice el historial (en ATP el modelo exagera el más). Queda como regla de papel desde
 el 06/10 18:00, junto a "ajustado vs casa >= 10".
 
+## Reglas para todos los mercados, y un "acierto" que miraba al futuro (10/10/2026)
+
+`reglas_papel.py`: favorito de la casa >= 65% en juegos (menos), ganador y sets, más "y cuota >= 1,30"
+y "sin Challenger" (sacadas de mirar casa65 en juegos: 8 cortes, probable suerte). Solo cuentan
+partidos desde el 10/10 07:00. Referencia 01-10/10: ganador −3,5% (1.295), sets −6,4% (708), juegos
+−2,6% (153). **Trampa**: con varias selecciones por partido (los dos jugadores, los resultados en
+sets), la "primera pasada que cumple" hay que buscarla ORDENANDO POR HORA todas las selecciones
+juntas; si no, se elige la que cumplió más tarde, que suele ser la que va ganando: +4,3% a 3,5
+sigmas, falso. Acertar mucho (80-90%) no es ganar: a cuota 1,23 hace falta acertar el 82%.
+
 ## Plan (en este orden)
 
 1. Ganador del partido, único mercado con cierre de Pinnacle.
