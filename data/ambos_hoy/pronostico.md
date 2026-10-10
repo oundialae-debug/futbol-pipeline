@@ -1,10 +1,13 @@
-# Ambos marcan, 2026-10-10 (ligas 33973, 67162, 119924, 120775)
+# Ambos marcan, 2026-10-10 (ligas 52695, 115669, 119924, 120775)
 
 Modelo oficial de ambos marcan (producción + precio, 9306 partidos de entrenamiento). Mercado = mediana de casas sin margen. Cuota mínima = 1/p del modelo.
 
 | partido | hora (España) | modelo: sí | solo precio: sí | mercado: sí | lado del modelo | cuota mínima | cuota mediana | VE | apuesta (VE > 8%) | once |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Eldense - Cordoba | 18:30 | 66% | 63% | 61% | **sí** | 1.52 | 1.51 | -0.7% | no | sin once |
-| Manchester United - Tottenham | 18:30 | 65% | 65% | 62% | **sí** | 1.55 | 1.50 | -3.1% | no | sin once |
-| Barcelona - Getafe | 18:30 | 44% | 47% | 42% | **no** | 1.77 | 1.62 | -8.6% | no | sin once |
-| RB Leipzig - Eintracht Frankfurt | 18:30 | 67% | 74% | 70% | **sí** | 1.48 | 1.35 | -8.9% | no | sin once |
+| Celta de Vigo II - Real Sociedad B | 21:00 | 58% | 60% | 58% | **sí** | 1.73 | 1.60 | -7.5% | no | sin once |
+| Real Madrid - Villarreal | 21:00 | 70% | 69% | 64% | **sí** | 1.43 | 1.46 | +2.4% | no | sin once |
+| Napoli - Frosinone | 20:45 | 59% | 63% | 58% | **sí** | 1.69 | 1.61 | -4.6% | no | sin once |
+| Stade Brestois 29 - Angers | 20:45 | 59% | 61% | 58% | **sí** | 1.71 | 1.62 | -5.1% | no | sin once |
+| Lorient - Paris FC | 20:45 | 49% | 54% | 53% | **no** | 1.95 | 2.00 | +2.8% | no | sin once |
+| Paris Saint Germain - Le Mans | 20:45 | 59% | 51% | 46% | **sí** | 1.70 | 2.02 | +18.8% | sí | sin once |
+| Monaco - Toulouse | 20:45 | 61% | 62% | 58% | **sí** | 1.63 | 1.61 | -1.2% | no | sin once |

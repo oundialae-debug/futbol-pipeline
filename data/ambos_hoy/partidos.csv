@@ -1,5 +1,8 @@
 match_id,liga_id,fecha,saque_utc,local_id,local,visitante_id,visitante,estado,arbitro,clima_status,clima_temp_txt,local_ids,local_formacion,visitante_ids,visitante_formacion
-1336040999,120775,2026-10-10T16:30:00.000Z,16:30,8248676,Eldense,607547,Cordoba,Not started,"Huerta de Aza, Marta",clear day,22.67°C,,,,
-1325369459,33973,2026-10-10T16:30:00.000Z,16:30,28867,Manchester United,40781,Tottenham,Not started,"Attwell, Stuart",partly cloudy day,12.99°C,,,,
-1336414588,119924,2026-10-10T16:30:00.000Z,16:30,450963,Barcelona,465430,Getafe,Not started,"Gil Manzano, Jesus",clear day,22.11°C,,,,
-1340476411,67162,2026-10-10T16:30:00.000Z,16:30,148007,RB Leipzig,144603,Eintracht Frankfurt,Not started,"Siebert, Daniel",clear night,14.01°C,,,,
+1336039297,120775,2026-10-10T19:00:00.000Z,19:00,8145705,Celta de Vigo II,8157619,Real Sociedad B,Not started,"Gordillo, Juan",partly cloudy night,18.62°C,,,,
+1336420545,119924,2026-10-10T19:00:00.000Z,19:00,461175,Real Madrid,454367,Villarreal,Not started,"Diaz de Mera Escuderos, Isidro",clear night,20.44°C,,,,
+1319173328,115669,2026-10-10T18:45:00.000Z,18:45,419476,Napoli,436496,Frosinone,Not started,"Feliciani, Ermanno",rain,17.86°C,,,,
+1321411458,52695,2026-10-10T18:45:00.000Z,18:45,90990,Stade Brestois 29,66311,Angers,Not started,"Wattellier, Eric",cloudy,13.23°C,,,,
+1321414011,52695,2026-10-10T18:45:00.000Z,18:45,83331,Lorient,97798,Paris FC,Not started,"Brisard, Jerome",cloudy,14.29°C,,,,
+1321416564,52695,2026-10-10T18:45:00.000Z,18:45,73119,Paris Saint Germain,1105382,Le Mans,Not started,"Vernice, Mathieu",partly cloudy night,14.12°C,,,,
+1321414862,52695,2026-10-10T18:45:00.000Z,18:45,78225,Monaco,82480,Toulouse,Not started,"Buquet, Ruddy",clear night,18.11°C,,,,
