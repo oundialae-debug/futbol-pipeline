@@ -1,0 +1,25 @@
+{
+ "match_id": 1336420545,
+ "local": "Real Madrid",
+ "visitante": "Villarreal",
+ "liga": "La Liga",
+ "fecha": "2026-10-10",
+ "saque_utc": "2026-10-10T19:00:00+00:00",
+ "estado": "video_listo_sin_buffer",
+ "resultado": "1-0",
+ "hora": "2026-10-10T21:09:04+00:00",
+ "dueAt": "2026-10-10T21:13:04+00:00",
+ "buffer": {},
+ "errores": {},
+ "texto": "Real Madrid 1-0 Villarreal\nExpected goals: 0.9 vs 0.6, Real Madrid created more. Did the better team win?\n\n#football #LaLiga #RealMadrid #Villarreal #fulltime",
+ "titulo_tiktok": "Real Madrid 1-0 Villarreal | Expected goals: 0.9 vs 0.6, Real Madrid created more.",
+ "musica": "hh07",
+ "video": "https://raw.githubusercontent.com/oundialae-debug/futbol-pipeline/main/media/post_partido/2026-10-10_Real_Madrid_Villarreal/post.mp4",
+ "imagenes": [
+  "https://raw.githubusercontent.com/oundialae-debug/futbol-pipeline/main/media/post_partido/2026-10-10_Real_Madrid_Villarreal/post1_deserved.png",
+  "https://raw.githubusercontent.com/oundialae-debug/futbol-pipeline/main/media/post_partido/2026-10-10_Real_Madrid_Villarreal/post2_prediction_vs_result.png",
+  "https://raw.githubusercontent.com/oundialae-debug/futbol-pipeline/main/media/post_partido/2026-10-10_Real_Madrid_Villarreal/post4_stat_of_match.png",
+  "https://raw.githubusercontent.com/oundialae-debug/futbol-pipeline/main/media/post_partido/2026-10-10_Real_Madrid_Villarreal/post6_lista.png"
+ ],
+ "llamadas": 4
+}
