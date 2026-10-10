@@ -74,3 +74,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-10 08:54,12169710,Wta Singles,Wuhan,Y. Yuan,C. McNally,menos,18.5,0.6627,0.6627,1.4,True,casa65
 2026-10-10 08:59,12169483,Atp Singles,Shanghai,A. Fils,P. Kotov,menos,17.5,0.5979,0.5576,1.666,True,actual
 2026-10-10 09:05,12169561,Atp Singles,Shanghai,D. Svrcina,T. M. Etcheverry,menos,28.5,0.7025,0.6451,1.444,True,actual
+2026-10-10 09:08,12169741,Itf Men Singles,M25 Kigali 2,C. Denolly,D. Javia,menos,21.5,0.6444,0.5147,1.8,True,aprendida
