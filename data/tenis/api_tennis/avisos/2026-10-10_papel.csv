@@ -44,3 +44,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-10 07:05,12169740,Itf Men Singles,M15 Sharm ElSheikh 12,R. Strombachs,A. Elsayed,menos,21.5,0.6337,0.5,1.833,True,aprendida
 2026-10-10 07:06,12169703,Wta Singles,Wuhan,S. Kenin,K. Rakhimova,menos,15.5,0.5987,0.5767,1.615,True,actual
 2026-10-10 07:26,12169534,Atp Singles,Shanghai,Y. Bu,C. Ruud,menos,23.5,0.6416,0.5366,1.727,True,aprendida
+2026-10-10 07:29,12169696,Challenger Women Singles,Suzhou,R. Sramkova,R. Zarazua,menos,21.5,0.8124,0.75,1.25,True,actual
