@@ -217,7 +217,7 @@ jugador_id,nombre,equipo_id,equipo
 1150821,F. Bacher,68864,Lyon
 70629566,Mathys de Carvalho,68864,Lyon
 58177826,N. Nartey,68864,Lyon
-59285184,Julien Duranville,68864,Lyon
+59285184,J. Duranville,68864,Lyon
 80116491,Rémi Himbert,68864,Lyon
 2339806,Ivan Nevistić,528404,Dinamo Zagreb
 46419513,Moris Valinčić,528404,Dinamo Zagreb
@@ -308,7 +308,7 @@ jugador_id,nombre,equipo_id,equipo
 7806722,D. Kutesa,490109,AEK Athens FC
 55273547,Dimitrios Kaloskamis,490109,AEK Athens FC
 104001163,Steeve Kango,68864,Lyon
-79377340,Noham Kamara,68864,Lyon
+79377340,N. Kamara,68864,Lyon
 26060258,Jakub Surovčík,535212,Sparta Praha
 52147893,Martin Suchomel,535212,Sparta Praha
 54843838,Adam Ševinský,535212,Sparta Praha
@@ -896,7 +896,7 @@ jugador_id,nombre,equipo_id,equipo
 3442012,R. Gurtner,99500,Lens
 471723,T. Hazard,99500,Lens
 26020974,J. Kadile,99500,Lens
-106352085,Mezian Mesloub,99500,Lens
+106352085,M. Soares,99500,Lens
 3342675,F. Sotoca,99500,Lens
 22372,J. Todibo,99500,Lens
 63587104,A. Bulatović,99500,Lens
@@ -1336,7 +1336,7 @@ jugador_id,nombre,equipo_id,equipo
 65187605,K. Karetsas,141199,Borussia Dortmund
 186753,M. Sabitzer,141199,Borussia Dortmund
 3444427,S. Guirassy,141199,Borussia Dortmund
-50431150,E. Nwaneri,36526,Arsenal
+50431150,E. Nwaneri,141199,Borussia Dortmund
 52608031,J. Bellingham,141199,Borussia Dortmund
 20896505,Fábio Silva,141199,Borussia Dortmund
 81738566,Kauã Prates,141199,Borussia Dortmund
@@ -2654,7 +2654,7 @@ jugador_id,nombre,equipo_id,equipo
 4026925,A. Pieper,138646,Werder Bremen
 4075708,M. Friedl,138646,Werder Bremen
 1396507,O. Deman,138646,Werder Bremen
-56732529,Arthur,143752,Bayer Leverkusen
+56732529,Arthur,138646,Werder Bremen
 6138118,L. Reis,138646,Werder Bremen
 26063317,Y. Regeer,138646,Werder Bremen
 1138907,M. Grüll,138646,Werder Bremen
@@ -3300,7 +3300,7 @@ jugador_id,nombre,equipo_id,equipo
 30783676,M. Robin,1105382,Le Mans
 61359830,William Harhouz,1105382,Le Mans
 88338439,Alexis Ciria,461175,Real Madrid
-47768049,Haitam Abaida,456069,Malaga
+47768049,H. Abaida,456069,Malaga
 107848902,Joseph Otunenche,456069,Malaga
 29399076,Julen Lobete,456069,Malaga
 6246632,Senne Lynen,138646,Werder Bremen
@@ -3488,3 +3488,6 @@ jugador_id,nombre,equipo_id,equipo
 71418627,Edu Altozano,456920,Sevilla FC
 60731769,Grégoire Swiderski,462026,Alavés
 11346790,M. Diarra,462026,Alavés
+7644112,Fernando Calero,456069,Malaga
+7623343,Javi Puado,460324,Espanyol
+52000578,S. Baidoo,99500,Lens
