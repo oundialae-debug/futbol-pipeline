@@ -97,3 +97,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-10 09:30,12169808,Wta Singles,Wuhan,C. Osorio,T. C. Grant,menos,20.5,0.5776,0.5147,1.8,True,aprendida
 2026-10-10 09:31,12169534,Atp Singles,Shanghai,Y. Bu,C. Ruud,menos,20.5,0.7003,0.5576,1.666,True,actual
 2026-10-10 09:35,12169714,Wta Singles,Wuhan,M. Sawangkaew,M. Joint,menos,22.5,0.5144,0.4634,2.0,True,aprendida
+2026-10-10 09:35,12169720,Itf Men Singles,M25 Darwin 2,Z. Stevens,C. Hoole,menos,19.5,0.8911,0.8281,1.142,True,aprendida
