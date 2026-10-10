@@ -1,4 +1,4 @@
-# Tenis en directo, 10/10/2026 18:11 UTC (20:11 en España)
+# Tenis en directo, 10/10/2026 18:27 UTC (20:27 en España)
 
 Calculadora desde el marcador exacto (modelo de puntos, superficie real) frente a la cuota en directo
 (sin margen). Ganador y sets: la calculadora suele coincidir con la casa. Total de juegos: el modelo
@@ -7,6 +7,5 @@ Se actualiza cada ~5 min; el registro en data/tenis/api_tennis/registro/ servir�
 
 | partido | tipo | superficie | marcador (sets, juegos, puntos, saca) | gana 1º: modelo / cuota | sets más probables (modelo) | total juegos: línea, modelo / cuota |
 |---|---|---|---|---|---|---|
-| J. Forejtek vs A. Moro Canas | Challenger Men Singles | Clay | 1-1, 6-6, 0 - 0, saca A. Moro Canas | 46% / 52% | 1-2 54%, 2-1 46% | 34.5: 100% / 50% |
-| T. McCormick vs V. Bini | Itf Men Singles | Clay | 1-1, 1-0, 40 - 0, saca V. Bini | 90% / 88% | 2-1 90%, 1-2 10% | 33.5: 61% / 51% |
-| A. Penickova vs F. Pace | Itf Women Singles | Hard | 1-0, 2-1, 30 - 40, saca F. Pace | 76% / 79% | 2-0 53%, 1-2 24% |  |
+| T. McCormick vs V. Bini | Itf Men Singles | Clay | 1-1, 3-1, 30 - 0, saca T. McCormick | 96% / 91% | 2-1 96%, 1-2 4% | 33.5: 61% / 56% |
+| A. Penickova vs F. Pace | Itf Women Singles | Hard | 1-0, 4-3, 0 - 0, saca F. Pace | 80% / 81% | 2-0 61%, 1-2 20% |  |
