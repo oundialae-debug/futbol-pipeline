@@ -134,3 +134,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-10 11:19,12169808,Wta Singles,Wuhan,C. Osorio,T. C. Grant,menos,31.5,0.6876,0.6876,1.363,True,casa65
 2026-10-10 11:21,12169759,Itf Men Singles,M15 Burgas (Bulgaria),M. F. Breazu,M. Nannelli,más,32.5,0.8087,0.4634,2.0,True,aprendida
 2026-10-10 11:22,12169492,Atp Singles,Shanghai,T. Paul,D. Vallejo,menos,22.5,0.6771,0.5147,1.8,True,aprendida
+2026-10-10 11:24,12169808,Wta Singles,Wuhan,C. Osorio,T. C. Grant,más,30.5,0.9047,0.6876,1.363,True,aprendida
