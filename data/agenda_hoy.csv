@@ -1,5 +1,25 @@
 match_id,liga,liga_id,fecha,saque_utc,local,visitante,descanso_desde,descanso_hasta
-1336018873,Segunda División,120775,2026-09-26,12:00,AD Ceuta FC,Real Sociedad B,12:45,13:02
-1336021426,Segunda División,120775,2026-09-26,14:15,Granada CF,FC Andorra,15:00,15:17
-1336024830,Segunda División,120775,2026-09-26,16:30,Tenerife,Cadiz,17:15,17:32
-1336018022,Segunda División,120775,2026-09-26,16:30,Celta de Vigo II,Sabadell,17:15,17:32
+1325362651,Premier League,33973,2026-10-10,11:30,Arsenal,Leeds,12:15,12:32
+1336419694,La Liga,119924,2026-10-10,12:00,Rayo Vallecano,Athletic Club,12:45,13:02
+1319169924,Serie A,115669,2026-10-10,13:00,Genoa,Fiorentina,13:45,14:02
+1340478964,Bundesliga,67162,2026-10-10,13:30,FC Augsburg,Bayern Munich,14:15,14:32
+1340477262,Bundesliga,67162,2026-10-10,13:30,1899 Hoffenheim,Hamburger SV,14:15,14:32
+1340480666,Bundesliga,67162,2026-10-10,13:30,Union Berlin,SV Elversberg,14:15,14:32
+1340482368,Bundesliga,67162,2026-10-10,13:30,SC Paderborn 07,VfB Stuttgart,14:15,14:32
+1340479815,Bundesliga,67162,2026-10-10,13:30,FSV Mainz 05,Bayer Leverkusen,14:15,14:32
+1325364353,Premier League,33973,2026-10-10,14:00,Chelsea,Bournemouth,14:45,15:02
+1325363502,Premier League,33973,2026-10-10,14:00,Aston Villa,Brentford,14:45,15:02
+1325370310,Premier League,33973,2026-10-10,14:00,Sunderland,Brighton,14:45,15:02
+1325367757,Premier League,33973,2026-10-10,14:00,Ipswich,Fulham,14:45,15:02
+1336413737,La Liga,119924,2026-10-10,14:15,Alavés,Atlético Madrid,15:00,15:17
+1321413160,Ligue 1,52695,2026-10-10,15:15,Lille,LE Havre AC,16:00,16:17
+1319170775,Serie A,115669,2026-10-10,16:00,Inter,Parma,16:45,17:02
+1340476411,Bundesliga,67162,2026-10-10,16:30,RB Leipzig,Eintracht Frankfurt,17:15,17:32
+1336414588,La Liga,119924,2026-10-10,16:30,Barcelona,Getafe,17:15,17:32
+1325369459,Premier League,33973,2026-10-10,16:30,Manchester United,Tottenham,17:15,17:32
+1319173328,Serie A,115669,2026-10-10,18:45,Napoli,Frosinone,19:30,19:47
+1321414862,Ligue 1,52695,2026-10-10,18:45,Monaco,Toulouse,19:30,19:47
+1321411458,Ligue 1,52695,2026-10-10,18:45,Stade Brestois 29,Angers,19:30,19:47
+1321416564,Ligue 1,52695,2026-10-10,18:45,Paris Saint Germain,Le Mans,19:30,19:47
+1321414011,Ligue 1,52695,2026-10-10,18:45,Lorient,Paris FC,19:30,19:47
+1336420545,La Liga,119924,2026-10-10,19:00,Real Madrid,Villarreal,19:45,20:02
