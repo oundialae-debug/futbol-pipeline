@@ -66,3 +66,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-10 08:24,12169487,Atp Singles,Shanghai,M. Arnaldi,T. Fritz,menos,22.5,0.8642,0.8642,1.1,True,casa65
 2026-10-10 08:24,12169711,Wta Singles,Wuhan,A. Bondar,L. Boisson,menos,22.5,0.5668,0.5147,1.8,True,aprendida
 2026-10-10 08:30,12169740,Itf Men Singles,M15 Sharm ElSheikh 12,R. Strombachs,A. Elsayed,menos,20.5,0.8302,0.8302,1.125,True,casa65
+2026-10-10 08:33,12169739,Itf Men Singles,M15 Sharm ElSheikh 12,A. Arzhankin,R. Faucon,menos,20.5,0.7315,0.7315,1.285,True,casa65
