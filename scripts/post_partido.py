@@ -32,6 +32,10 @@ RAIZ = Path(__file__).resolve().parents[1]
 MAD = ZoneInfo("Europe/Madrid")
 LIGAS5 = ("Premier League", "La Liga", "Serie A", "Bundesliga", "Ligue 1")
 DESDE, HASTA, ESPERA_XG = timedelta(minutes=105), timedelta(hours=4), timedelta(hours=3)
+# RESPALDO (usuario 10/10): "20 minutos = 4 pasadas del primer recolector, que empieza a saque+1h45 y sondea cada 5 min".
+# Si a saque+2h05 (105+20 min) sigue sin marca "datos_listos", el principal no ha arrancado o no avanza: lo recoge el
+# workflow de respaldo (otro cron, otro grupo de concurrencia). Plantilla y Buffer (en Live) esperan a la marca.
+RESPALDO_DESDE = DESDE + timedelta(minutes=20)
 TOPE_DIA = 30
 N_ELEGIDOS = 2
 # rutas (las pruebas las cambian a una carpeta temporal con usar_rutas)
@@ -82,6 +86,26 @@ def hay():
         with open(os.environ["GITHUB_OUTPUT"], "a") as f:
             f.write(f"hay={'si' if si else 'no'}\n")
     print("hay =", "si" if si else "no")
+    return si
+
+
+def hay_respaldo():
+    """Como hay(), pero solo partidos con 4 pasadas del recolector principal cumplidas (saque+2h05) y sin marca:
+    señal de que el bucle principal no ha arrancado. Sin API ni instalaciones."""
+    t = ahora()
+    si = False
+    with open(RAIZ / "data/calendario.csv", newline="", encoding="utf-8") as f:
+        for x in csv.DictReader(f):
+            if x["liga"] not in LIGAS5 or x["fecha"] not in fechas(t) or marca_de(x["match_id"]).exists():
+                continue
+            k = datetime.fromisoformat(f"{x['fecha']}T{x['saque_utc']}:00+00:00")
+            if k + RESPALDO_DESDE <= t <= k + HASTA + timedelta(minutes=10):
+                print(f"RESPALDO: {x['local']} - {x['visitante']} sin datos a saque+{int((t - k).total_seconds() // 60)} min")
+                si = True
+    if os.environ.get("GITHUB_OUTPUT"):
+        with open(os.environ["GITHUB_OUTPUT"], "a") as f:
+            f.write(f"hay={'si' if si else 'no'}\n")
+    print("hay_respaldo =", "si" if si else "no")
     return si
 
 
@@ -314,6 +338,8 @@ def bucle(dormir=time.sleep):
 if __name__ == "__main__":
     if sys.argv[1:2] == ["hay"]:
         hay()
+    elif sys.argv[1:2] == ["hay_respaldo"]:
+        hay_respaldo()
     elif sys.argv[1:2] == ["una"]:
         main()
     else:

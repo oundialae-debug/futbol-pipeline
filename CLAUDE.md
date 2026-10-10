@@ -1,6 +1,6 @@
 # futbol-pipeline
 
-**Regla del usuario: NUNCA llamar a la API de Highlightly sin su sí explícito para ESA llamada** (sondeos, backfills o lanzar un workflow que la use; un sí anterior no vale). Única excepción aprobada: `ambos_marcan_diario.yml` y `post_partido.yml` (aprobado el 10/10: solo descarga los datos del post-partido, sondeo cada 5 min desde inicio+1h45, ≤30 llamadas/día; el vídeo y la publicación los hace Live). Antes de empujar código: `python3 scripts/prueba_humo.py`. Todo cambio va en `BITACORA.md` en el mismo commit. Lecciones y resultados completos: `docs/notas_proyecto.md`; ambos marcan: `modelos/ambos_marcan/CLAUDE.md`.
+**Regla del usuario: NUNCA llamar a la API de Highlightly sin su sí explícito para ESA llamada** (sondeos, backfills o lanzar un workflow que la use; un sí anterior no vale). Única excepción aprobada: `ambos_marcan_diario.yml` y `post_partido.yml` (aprobado el 10/10: solo descarga los datos del post-partido, sondeo cada 5 min desde inicio+1h45, ≤30 llamadas/día; el vídeo y la publicación los hace Live; respaldo en `post_partido_respaldo.yml` a saque+2h05 si no hay marca). Antes de empujar código: `python3 scripts/prueba_humo.py`. Todo cambio va en `BITACORA.md` en el mismo commit. Lecciones y resultados completos: `docs/notas_proyecto.md`; ambos marcan: `modelos/ambos_marcan/CLAUDE.md`.
 
 ## Mapa
 | entrada | pieza (cómo se ejecuta) | salida |

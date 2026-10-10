@@ -41,6 +41,14 @@ def copiar_historico(base):
         g.writelines(x for x in f if not x.startswith(f"{RM},"))
 
 
+def P_salida(f):
+    import io, contextlib
+    buf = io.StringIO()
+    with contextlib.redirect_stdout(buf):
+        f()
+    return buf.getvalue().splitlines()
+
+
 def pasada(base, hora):
     os.environ["AHORA"] = f"2026-10-10T{hora}:00+00:00"
     return P.main()
@@ -62,6 +70,14 @@ def main():
         filas0 = sum(1 for _ in open(base / "data/historico_partidos.csv"))
         P.usar_rutas(base)
         P.OPC.update(simular=str(api), git=False)
+
+        # respaldo: solo a saque+2h05 (4 pasadas del principal sin marca); Madrid saca a las 19:00 UTC
+        os.environ["AHORA"] = "2026-10-10T20:44:00+00:00"
+        check(not P.hay_respaldo(), "respaldo: a saque+1h44 del Madrid no se activa")
+        os.environ["AHORA"] = "2026-10-10T21:04:00+00:00"
+        check(not any("Real Madrid" in l for l in P_salida(lambda: P.hay_respaldo())), "respaldo: a saque+2h04 todavía no")
+        os.environ["AHORA"] = "2026-10-10T21:06:00+00:00"
+        check(P.hay_respaldo(), "respaldo: a saque+2h06 sin marca SÍ se activa")
 
         out, n = pasada(base, "17:00")
         check(out.get(RM) == "pronto" and out.get(RB) == "pronto" and n == 0, f"antes de la ventana: {out}, {n} llamadas")

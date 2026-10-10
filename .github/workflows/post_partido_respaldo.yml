@@ -1,0 +1,47 @@
+name: Post-partido RESPALDO (2yellow)
+
+# Respaldo de post_partido.yml (decisión del usuario 10/10: "20 minutos, es decir, 4 pasadas del primer recolector, que
+# empieza 1h45 después del comienzo; si después no hay datos actualizados, que se active el respaldo"). Cron distinto
+# (cada 10 min, minutos 4,14,...) y grupo de concurrencia propio, para no depender de que arranque el bucle principal.
+# Solo actúa si hay un partido de los 2 grandes con saque+2h05 cumplidos y SIN marca en data/redes/post_partido/. Hace UNA pasada (1 llamada + 1 de
+# estadísticas al terminar, mismo tope de 30/día compartido vía data/redes/post_partido_consumo.json).
+# Igual que el principal: solo DATOS. La plantilla, el vídeo y Buffer los hace Live y SOLO cuando existe la marca
+# "datos_listos" (scripts/post_partido_live.py): hasta entonces esperan.
+on:
+  schedule:
+    - cron: '4,14,24,34,44,54 * * * *'
+  workflow_dispatch:
+
+concurrency:
+  group: post-partido-respaldo
+  cancel-in-progress: false
+
+jobs:
+  respaldo:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      contents: write
+    env:
+      HIGHLIGHTLY_API_KEY: ${{ secrets.HIGHLIGHTLY_API_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: ¿Falta algún partido? (sin API, sin instalar nada)
+        id: hay
+        run: python3 scripts/post_partido.py hay_respaldo
+
+      - uses: actions/setup-python@v5
+        if: steps.hay.outputs.hay == 'si'
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+      - if: steps.hay.outputs.hay == 'si'
+        run: pip install -r requirements.txt
+
+      - name: Recoger datos (una pasada)
+        if: steps.hay.outputs.hay == 'si'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          python scripts/post_partido.py una
