@@ -41,3 +41,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-10 06:56,12169557,Wta Singles,Beijing,M. Andreeva,N. Bartunkova,menos,20.5,0.5752,0.5,1.833,True,aprendida
 2026-10-10 07:03,12169707,Wta Singles,Wuhan,S. Kraus,M. Linette,menos,22.5,0.5508,0.5,1.833,True,aprendida
 2026-10-10 07:05,12169739,Itf Men Singles,M15 Sharm ElSheikh 12,A. Arzhankin,R. Faucon,menos,21.5,0.5967,0.5147,1.8,True,aprendida
+2026-10-10 07:05,12169740,Itf Men Singles,M15 Sharm ElSheikh 12,R. Strombachs,A. Elsayed,menos,21.5,0.6337,0.5,1.833,True,aprendida
