@@ -57,3 +57,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-10 08:05,12169760,Itf Men Singles,M15 Burgas (Bulgaria),J. Kupcic,G. Lazarov,menos,19.5,0.5534,0.4853,1.909,True,aprendida
 2026-10-10 08:05,12169761,Itf Men Singles,M15 Heraklion 7,J. Filip,A. Vales,menos,20.5,0.6106,0.4853,1.909,True,aprendida
 2026-10-10 08:06,12169557,Wta Singles,Beijing,M. Andreeva,N. Bartunkova,menos,17.5,0.6878,0.625,1.5,True,actual
+2026-10-10 08:08,12169762,Itf Men Singles,M15 Heraklion 7,J. Hasson,G. Perego,menos,20.5,0.5676,0.5,1.833,True,aprendida
