@@ -11,6 +11,10 @@ cambios de código y archivos".
   el resumen y dónde leerlo.
 - Lo más nuevo, arriba.
 
+## 10/10/2026 — notas para el chat nuevo
+- Qué: línea en "Notas compartidas" de CLAUDE.md con el sistema de post-partido, el respaldo y dónde está el estado completo (Live, CONTEXTO regla 14).
+- Por qué: el usuario abre chat nuevo; todo lo pendiente debe estar escrito en los repos.
+
 ## 10/10/2026 — redes: respaldo del recolector del post-partido (`post_partido_respaldo.yml`)
 - Qué: segundo workflow (cron cada 10 min, grupo de concurrencia propio) que hace UNA pasada de `post_partido.py una` solo si un partido grande lleva saque+2h05 sin marca; `post_partido.py hay_respaldo` lo decide sin API ni instalar nada. Prueba sin red añadida.
 - Por qué (usuario): "20 minutos = 4 pasadas del primer recolector (empieza a saque+1h45, cada 5 min); si después no hay datos actualizados, que se active el respaldo". Si el cron de GitHub falla, los datos no se quedan sin recoger. La plantilla y Buffer (Live) siguen esperando a la marca "datos_listos". Mismo tope de 30 llamadas/día.

@@ -32,3 +32,4 @@ Apunta aquí, en una línea, las decisiones y lo aprendido para los próximos ch
 - 05/10/2026: el CLAUDE.md largo pasa a `docs/notas_proyecto.md`; grafo graphify solo de código (sin `data/`); skill free-llm-apis instalada sin claves.
 - 05/10/2026: LLM gratuitos listos (Groq, Cerebras) vía `scripts/llm_gratis.py`; Python necesita User-Agent propio o da 403.
 - 09/10/2026: reactivados cosechar_cuotas y calendario (las cuotas caducan a los 28 días); descanso_en_vivo (914/día) y los semanales siguen parados.
+- 10/10/2026: post-partido automático aprobado por el usuario (`post_partido.yml`, solo datos; respaldo `post_partido_respaldo.yml` a saque+2h05; el vídeo y Buffer los hace Live al ver la marca "datos_listos"). Plantillas de clubes en `redes/plantillas/datos_clubes.py` (elegir/pre/post, 5 imágenes + la final). Estado completo y pendientes: repo Live, `redes/CONTEXTO_CONVERSACION.md` regla 14.
