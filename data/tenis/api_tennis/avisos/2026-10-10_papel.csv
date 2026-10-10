@@ -164,3 +164,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-10 14:37,12169791,Challenger Men Singles,Villena,P. Martinez,L. Djere,menos,18.5,0.75,0.75,1.25,True,casa65
 2026-10-10 14:44,12169754,Challenger Men Singles,Antofagasta,L. Midon,T. Seyboth Wild,menos,19.5,0.6749,0.5576,1.666,True,actual
 2026-10-10 15:12,12169754,Challenger Men Singles,Antofagasta,L. Midon,T. Seyboth Wild,menos,19.5,0.5947,0.4634,2.0,True,aprendida
+2026-10-10 15:12,12169790,Challenger Men Singles,Palermo (Italy) - Qualification,J. Forejtek,A. Moro Canas,menos,24.5,0.6239,0.5,1.833,True,aprendida
