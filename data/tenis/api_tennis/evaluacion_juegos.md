@@ -208,6 +208,10 @@ Brier del 'más' en la línea principal (1ª pasada): modelo 0.2711, mercado 0.2
 |---|---|---|---|---|---|---|
 Todavía no ha terminado ningún partido desde que se fijaron.
 
+## Comparar casas con Pinnacle (profesional, en papel desde el 10/10)
+
+Todavía sin datos.
+
 ## Previos (antes de empezar), línea principal de juegos y ganador
 
 1139 partidos. Juegos (más de la línea principal), Brier (menor es mejor): modelo 0.2836, modelo corregido con el historial 0.2615, casa 0.2496. Pasó el más en el 49%.

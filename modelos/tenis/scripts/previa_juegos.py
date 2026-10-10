@@ -41,6 +41,11 @@ def registrar(ahora, partidos):
     except RuntimeError as e:
         print(e)
         return
+    try:                                   # misma llamada: cuotas de cada casa contra Pinnacle (valor_casas.py)
+        import valor_casas
+        valor_casas.registrar(ahora, partidos, odds)
+    except Exception as e:  # noqa: BLE001  -- que un fallo aquí no tumbe los previos
+        print(f"valor_casas falló: {type(e).__name__}: {e}")
     for p in pendientes:
         k = str(p.get("event_key"))
         o = odds.get(k) if isinstance(odds, dict) else None

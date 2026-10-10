@@ -157,6 +157,8 @@ def main():
             lin.append(resumen(regla, g))
     import reglas_papel                    # ganador, sets y juegos con las mismas reglas (desde el 10/10)
     lin += [""] + reglas_papel.tabla()
+    import valor_casas
+    lin += [""] + valor_casas.tabla()
     lin += previa(res)
     cal = C.ajustar()
     lin += ["", "## Aprendizaje (recalibración del modelo)", "",

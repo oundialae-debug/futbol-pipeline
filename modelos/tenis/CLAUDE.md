@@ -589,6 +589,21 @@ sets), la "primera pasada que cumple" hay que buscarla ORDENANDO POR HORA todas 
 juntas; si no, se elige la que cumplió más tarde, que suele ser la que va ganando: +4,3% a 3,5
 sigmas, falso. Acertar mucho (80-90%) no es ganar: a cuota 1,23 hace falta acertar el 82%.
 
+## Contra Pinnacle y donde se equivoca la casa (10/10/2026)
+
+`get_odds` (previo) trae bet365, 1xBet, Marathon, Betfair, Pncl (Pinnacle), Sbo, WilliamHill,
+BetVictor y Betano EN LA MISMA LLAMADA; hasta el 10/10 se guardaba solo la mediana. `valor_casas.py`
+(llamado desde `previa_juegos.registrar`, cada hora) apunta en papel: apuestas de valor contra
+Pinnacle sin margen (>= 3%, ganador y juegos, Betfair fuera por ser bolsa) y el favorito >= 75% a la
+mejor cuota blanda. Guarda la última foto de Pinnacle antes del inicio (`_cierre.csv`) para medir
+CLV. Informe en `evaluacion_juegos.md`.
+Calibración de la casa con nuestros datos (sondeo, no regla): el favorito gana más de lo que dice el
+precio en previo (+2 a +4,5 puntos) y en directo (+2 a +3); los juegos están bien calibrados (±1).
+Es el mismo sesgo favorito-marginado del cierre de Pinnacle 2020-26: real pero más pequeño que el
+margen. Si algo sale, será por apostar ese sesgo al PRECIO más barato. Ojo: con una sola casa por
+selección, el "valor" grande suele ser marginados (14% en un Cerundolo-Alcaraz a 17), justo donde
+Pinnacle tiende a pasarse: mirar el beneficio por tramos de cuota antes de creerse nada.
+
 ## Plan (en este orden)
 
 1. Ganador del partido, único mercado con cierre de Pinnacle.
