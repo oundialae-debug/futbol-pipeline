@@ -129,3 +129,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-10 11:11,12169712,Wta Singles,Wuhan,P. Kudermetova,K. Volynets,menos,15.5,0.9491,0.9491,1.02,True,casa65
 2026-10-10 11:11,12169756,Challenger Men Singles,Villena,J. Pinnington Jones,D. Glinka,menos,19.5,0.723,0.6451,1.444,True,actual
 2026-10-10 11:12,12169741,Itf Men Singles,M25 Kigali 2,C. Denolly,D. Javia,menos,22.5,0.6876,0.6876,1.363,True,casa65
+2026-10-10 11:16,12169535,Atp Singles,Shanghai,J. M. Cerundolo,C. Alcaraz,menos,19.5,0.674,0.5147,1.8,True,aprendida
