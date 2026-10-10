@@ -24,6 +24,8 @@ cambios de código y archivos".
   El post-partido tenía que esperar al backfill de la mañana siguiente.
 - Prueba sin red: `scripts/prueba_post_partido.py` (antes de ventana 0 llamadas, en juego → sigue, terminado → fila +
   PNG + vídeo, la marca impide repetir, >4h abandona, tope 30/día). Durante el desarrollo no se llamó a la API.
+- Arreglo (misma tarde): el workflow va con Python 3.12; con 3.11 `generar.py` no compila (f-strings de 3.12) y la
+  primera pasada (lanzada a mano) falló al importar, antes de cualquier llamada.
 
 ## 10/10/2026 — redes: goles esperados de la plantilla "goals" a 92 px
 - Qué: `generar.py` goals(): marcador de goles esperados de 120 a 92 px.

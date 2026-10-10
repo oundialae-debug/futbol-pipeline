@@ -32,7 +32,7 @@ jobs:
       - uses: actions/setup-python@v5
         if: steps.hay.outputs.hay == 'si'
         with:
-          python-version: '3.11'
+          python-version: '3.12'    # generar.py usa f-strings de 3.12
           cache: 'pip'
       - if: steps.hay.outputs.hay == 'si'
         run: pip install -r requirements.txt
