@@ -33,3 +33,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-10 05:41,12169695,Itf Men Singles,M25 Darwin 2,S. Vujic,P. Sekulic,menos,20.5,0.5534,0.5,1.833,True,aprendida
 2026-10-10 05:44,12169484,Atp Singles,Shanghai,J. Lehecka,N. Borges,menos,25.5,0.614,0.5889,1.571,True,actual
 2026-10-10 05:58,12169693,Challenger Men Singles,Wuning 3 (China) - Qualification,A. Kachmazov,O. Jasika,menos,22.5,0.7315,0.7315,1.285,True,casa65
+2026-10-10 06:05,12169696,Challenger Women Singles,Suzhou,R. Sramkova,R. Zarazua,menos,21.5,0.5907,0.5,1.833,True,aprendida
