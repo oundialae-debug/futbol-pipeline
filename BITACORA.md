@@ -11,6 +11,24 @@ cambios de código y archivos".
   el resumen y dónde leerlo.
 - Lo más nuevo, arriba.
 
+## 10/10/2026 — redes: plantillas de CLUBES (5 grandes ligas), `datos_clubes.py`
+- `redes/plantillas/datos_clubes.py` (sin API): `elegir <fecha>` (los 2 partidos más grandes del día en data/calendario.csv,
+  solo Premier, LaLiga, Serie A, Bundesliga y Ligue 1, nunca Segunda), `pre "<Local>" "<Visitante>" <fecha>` (pre1, pre3,
+  pre4, pre5, pre6) y `post ...` (post1, 2, 3 si hay sorpresa, 4, 5, 6) con generar.py, como datos_selecciones.py.
+  Porque la rutina diaria no podía publicar previos ni post de clubes.
+- % solo de nuestro modelo: el último pronóstico antes del pitido en data/ambos_marcan/registro_papel.csv (oficial); si
+  aún no está (previo del día siguiente), un Poisson ataque/defensa por liga (2 años, semivida 180 días, encogido; recién
+  ascendidos hacia -0.15). Medido en 2025/26 (1.757 partidos, sin fuga): Brier 1X2 0.598 contra 0.648 de la frecuencia
+  base; más/menos 2.5 y ambos marcan 0.249-0.250, es decir SIN acierto: tomar esos % del Poisson con cautela.
+  Sin pre2 "upset alert" (enseña el % del mercado).
+- Tamaño de partido: puntos por partido de cada club en las 5 grandes (4 temporadas, encogidos hacia 1.0 = recién
+  ascendido medio, 0.98 en 45 casos) y partido = el más débil + la mitad del más fuerte (con la suma salía PSG - Le Mans).
+  11/10: Liverpool - Manchester City y Como - Roma.
+- Zona segura: lista de pronósticos a 7 filas y jornada a 6 (con 8 la pregunta bajaba de y 1540). `generar.elo_chart`:
+  220 px a la derecha para la etiqueta (antes "AS Roma"/"Man City" pasaban de x 880; afecta también a selecciones).
+- Límite: historico_partidos.csv trae los resultados de AYER cada mañana; el post de un partido sale al día siguiente
+  (Man United - Tottenham del 10/10 aún no estaba).
+
 ## 07/10/2026 — redes: perfil de delantero centro y Balón de Oro en dos listas
 - `datos_formatos.py`: nuevo perfil "ST" (delanteros centro: G+A, xG+xA y tiro pesan más; regate y pase clave menos),
   puntuado solo entre 9s; siguen en la línea ATT para XI y top 5. Antes Kane salía bajo porque se le medía como extremo.

@@ -263,14 +263,15 @@ def goals(d):
 
 
 def elo_chart(d):
-    """Línea del Elo de los dos equipos en sus últimos partidos (SVG)."""
+    """Línea del Elo de los dos equipos en sus últimos partidos (SVG). 220 px a la derecha para la cifra y el nombre:
+    con 150 el nombre ("AS Roma", "Man City") pasaba de x 880, fuera de la zona segura (10/10)."""
     h, a = d["home"], d["away"]
     W, H, pad = 860, 250, 16
     todos = d["elo_home"] + d["elo_away"]
     lo, hi = min(todos) - 10, max(todos) + 10
     def linea(vs_, c, nombre):
         n = len(vs_)
-        pts = [(pad + k * (W - 2 * pad - 150) / (n - 1), pad + (hi - v) * (H - 2 * pad) / (hi - lo)) for k, v in enumerate(vs_)]
+        pts = [(pad + k * (W - 2 * pad - 220) / (n - 1), pad + (hi - v) * (H - 2 * pad) / (hi - lo)) for k, v in enumerate(vs_)]
         x, y = pts[-1]
         return (f'<polyline points="{" ".join(f"{px:.0f},{py:.0f}" for px, py in pts)}" fill="none" stroke="{c}" '
                 f'stroke-width="9" stroke-linejoin="round" stroke-linecap="round"/><circle cx="{x:.0f}" cy="{y:.0f}" r="14" fill="{c}"/>'
