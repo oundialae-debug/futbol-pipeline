@@ -1,0 +1,2 @@
+hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cuota_api,calibrado,regla
+2026-10-10 02:01,12169687,Itf Men Singles,M25 Luan,M. Dellavedova,Y. Erel,menos,21.5,0.6174,0.5,1.833,True,aprendida
