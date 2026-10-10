@@ -379,7 +379,10 @@ def publicar(pd, DC, x, fecha, t, uso, fila, base, marca):
         return "url_no_lista"
     due = max(t, datetime.now(timezone.utc)) + timedelta(minutes=3)
     ids, errores = {}, {}
-    for red in ("tiktok", "instagram"):
+    sin_clave = OPC["buffer"] and not os.environ.get("BUFFER_API_KEY")
+    if sin_clave:          # 10/10: el secreto solo está en Live -> vídeo listo, se manda a mano (no se reintenta)
+        print("BUFFER_API_KEY vacío: vídeo subido, sin enviar a Buffer")
+    for red in (() if sin_clave else ("tiktok", "instagram")):
         item = {"red": red, "text": cuerpo, "titulo": titulo, "video": url(video), "recordatorio": False}
         if not OPC["buffer"]:
             import buffer_envio as BE
@@ -394,10 +397,10 @@ def publicar(pd, DC, x, fecha, t, uso, fila, base, marca):
         if not ids[red]:
             errores[red] = resp
         print(red, ids[red], resp)
-    marca_d = {**base, "estado": "enviado" if not errores else "error_buffer",
+    marca_d = {**base, "estado": "video_listo_sin_buffer" if sin_clave else "enviado" if not errores else "error_buffer",
                "resultado": f"{int(fila.goles_l)}-{int(fila.goles_v)}",
                "hora": t.isoformat(timespec="seconds"), "dueAt": due.isoformat(timespec="seconds"),
-               "buffer": ids, "errores": errores, "texto": cuerpo, "musica": pista, "video": url(video),
+               "buffer": ids, "errores": errores, "texto": cuerpo, "titulo_tiktok": titulo, "musica": pista, "video": url(video),
                "imagenes": [url(p) for p in pngs], "llamadas": uso["partidos"].get(str(x.match_id), 0)}
     fin(marca, marca_d, f"post-partido: {local}-{visitante} enviado a Buffer")
     return marca_d["estado"]
