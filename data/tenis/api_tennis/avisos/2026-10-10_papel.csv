@@ -85,3 +85,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-10 09:27,12169483,Atp Singles,Shanghai,A. Fils,P. Kotov,menos,19.5,0.695,0.625,1.5,True,actual
 2026-10-10 09:27,12169483,Atp Singles,Shanghai,A. Fils,P. Kotov,menos,19.5,0.695,0.625,1.5,True,aprendida
 2026-10-10 09:27,12169534,Atp Singles,Shanghai,Y. Bu,C. Ruud,menos,20.5,0.687,0.5366,1.727,True,aprendida
+2026-10-10 09:27,12169561,Atp Singles,Shanghai,D. Svrcina,T. M. Etcheverry,menos,29.5,0.5803,0.5,1.833,True,aprendida
