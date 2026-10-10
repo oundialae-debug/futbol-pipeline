@@ -94,3 +94,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-10 09:27,12169768,Itf Men Singles,M25 Santa Margherita di Pula 9,A. Weis,A. Chepelev,menos,21.5,0.6054,0.4853,1.909,True,aprendida
 2026-10-10 09:28,12169761,Itf Men Singles,M15 Heraklion 7,J. Filip,A. Vales,menos,18.5,0.766,0.766,1.222,True,casa65
 2026-10-10 09:30,12169759,Itf Men Singles,M15 Burgas (Bulgaria),M. F. Breazu,M. Nannelli,menos,21.5,0.5854,0.5576,1.666,True,actual
+2026-10-10 09:30,12169808,Wta Singles,Wuhan,C. Osorio,T. C. Grant,menos,20.5,0.5776,0.5147,1.8,True,aprendida
