@@ -1,4 +1,4 @@
-# Tenis en directo, 10/10/2026 19:59 UTC (21:59 en España)
+# Tenis en directo, 10/10/2026 20:09 UTC (22:09 en España)
 
 Calculadora desde el marcador exacto (modelo de puntos, superficie real) frente a la cuota en directo
 (sin margen). Ganador y sets: la calculadora suele coincidir con la casa. Total de juegos: el modelo
@@ -7,4 +7,4 @@ Se actualiza cada ~5 min; el registro en data/tenis/api_tennis/registro/ servir�
 
 | partido | tipo | superficie | marcador (sets, juegos, puntos, saca) | gana 1º: modelo / cuota | sets más probables (modelo) | total juegos: línea, modelo / cuota |
 |---|---|---|---|---|---|---|
-| L. Andrade da Silva vs M. Covato | Itf Men Singles | Clay | 1-0, 1-0, 15 - 0, saca L. Andrade da Silva | 99% / 95% | 2-0 95%, 2-1 4% | 18.5: 58% / 46% |
+| L. Andrade da Silva vs M. Covato | Itf Men Singles | Clay | 1-0, 2-1, 40 - 15, saca L. Andrade da Silva | 99% / 95% | 2-0 96%, 2-1 3% | 19.5: 54% / 44% |
