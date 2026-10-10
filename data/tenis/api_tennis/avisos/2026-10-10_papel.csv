@@ -127,3 +127,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-10 11:08,12169755,Challenger Men Singles,Braga,M. Dodig,L. Neumayer,menos,18.5,0.6155,0.5576,1.666,True,actual
 2026-10-10 11:09,12169764,Itf Men Singles,M15 Monastir 34,J. Echeverria,K. van Wyk,menos,15.5,0.8141,0.8141,1.142,True,casa65
 2026-10-10 11:11,12169712,Wta Singles,Wuhan,P. Kudermetova,K. Volynets,menos,15.5,0.9491,0.9491,1.02,True,casa65
+2026-10-10 11:11,12169756,Challenger Men Singles,Villena,J. Pinnington Jones,D. Glinka,menos,19.5,0.723,0.6451,1.444,True,actual
