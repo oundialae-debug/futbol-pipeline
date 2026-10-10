@@ -1,30 +1,29 @@
-"""Post-partido automático de 2yellow: vídeo publicado ~20 min después del pitido final.
+"""Post-partido automático de 2yellow, parte de DATOS (el vídeo y la publicación los hace Live).
 
 APROBADO por el usuario el 10/10/2026 (excepción fija a la regla de la API): sondeo cada 5 min desde
 inicio+1h45, solo los 2 partidos grandes del día de las 5 ligas, tope duro de 30 llamadas/día.
-Workflow: .github/workflows/post_partido.yml (cron */5).
+Workflow: .github/workflows/post_partido.yml (el cron */10 solo arranca; el sondeo cada 5 min va dentro del job).
 
 Cada pasada (fecha de hoy y de ayer en Europe/Madrid, para los partidos que acaban pasada la medianoche):
   - partidos = los mismos que `datos_clubes.py elegir <fecha>` (se importa, no se duplica).
   - marca data/redes/post_partido/<match_id>.json -> nada.
   - ahora < saque + 1h45 -> nada, CERO llamadas (el caso normal).
   - ahora > saque + 4h -> marca "abandonado".
-  - si no: 1 llamada a /matches/{id} (backfill_historico.pedir). Sin terminar -> a la siguiente pasada.
+  - si no: 1 llamada a /matches/{id} (backfill_historico.pedir). Sin terminar -> al siguiente sondeo.
     Terminado -> /statistics/{id} (backfill_historico.estadisticas_de) y se añade la fila a
     data/historico_partidos.csv con las MISMAS columnas que el backfill (sin duplicar; el backfill de la mañana
-    ya no la vuelve a pedir). Si aún no hay xG y no han pasado 3 h, se espera a la siguiente pasada.
-  - datos_clubes.post (LIENZO=reel) -> PNG en media/post_partido/<fecha>_<local>_<visitante>/ + vídeo MP4
-    (como Live/scripts/montar_video.py: 5 tarjetas de 2.8 s, pista de Live/redes/biblioteca_musica.json, la menos
-    usada) -> commit + push -> se comprueba la URL raw (200) -> Buffer, vídeo AUTOMÁTICO a TikTok e Instagram (reel),
-    a ahora+3 min (scripts/buffer_envio.py, copia de Live/enviar_cola.py).
-  - marca + fila en data/redes/post_partido_log.csv; consumo en data/redes/post_partido_consumo.json.
+    ya no la vuelve a pedir). Si aún no hay xG y no han pasado 3 h, se espera al siguiente sondeo.
+  - fila + marca "datos_listos" (match_id, equipos, liga, fecha, saque_utc, resultado) en el MISMO commit + push.
+    Live (oundialae-debug/live, scripts/post_partido_live.py dentro de enviar_cola.yml) lee las marcas "datos_listos",
+    dibuja con `datos_clubes.py post`, monta el vídeo y lo publica (aquí no hay clave de Buffer ni hace falta).
+  - registro en data/redes/post_partido_log.csv; consumo en data/redes/post_partido_consumo.json.
 
 Uso:  python3 scripts/post_partido.py            (bucle: sondea cada 5 min en el mismo job hasta acabar; lo lanza el cron)
       python3 scripts/post_partido.py una        (una sola pasada)
       python3 scripts/post_partido.py hay        (sin pandas ni API: ¿algún partido en ventana? -> GITHUB_OUTPUT)
-Pruebas sin red: scripts/prueba_post_partido.py (respuestas falsas de la API, sin git ni Buffer).
+Pruebas sin red: scripts/prueba_post_partido.py (respuestas falsas de la API, sin git).
 """
-import zlib, csv, json, os, re, shutil, subprocess, sys, tempfile, time, unicodedata, urllib.parse, urllib.request
+import csv, json, os, subprocess, sys, time
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from zoneinfo import ZoneInfo
@@ -35,14 +34,6 @@ LIGAS5 = ("Premier League", "La Liga", "Serie A", "Bundesliga", "Ligue 1")
 DESDE, HASTA, ESPERA_XG = timedelta(minutes=105), timedelta(hours=4), timedelta(hours=3)
 TOPE_DIA = 30
 N_ELEGIDOS = 2
-SEGUNDOS, TARJETAS, FADE, RETRASO_AUDIO = 2.8, 5, 0.5, 1      # PLAYBOOK de Live: post-partido 5 tarjetas de 2.8 s
-RAW = "https://raw.githubusercontent.com/oundialae-debug/futbol-pipeline/main/"
-LIVE_RAW = "https://raw.githubusercontent.com/oundialae-debug/live/main/"
-PISTAS = ["boom", "rage", "techno", "mtrap", "drill", "electro", "trapdark", "phonk", "anthem", "techhouse",
-          "hh01", "hh02", "hh03", "hh04", "hh05", "hh06", "hh07", "hh08", "hh09", "hh10"]
-HASH_LIGA = {"Premier League": "#PremierLeague", "La Liga": "#LaLiga", "Serie A": "#SerieA",
-             "Bundesliga": "#Bundesliga", "Ligue 1": "#Ligue1"}
-
 # rutas (las pruebas las cambian a una carpeta temporal con usar_rutas)
 R = {}
 
@@ -51,11 +42,11 @@ def usar_rutas(base):
     base = Path(base)
     R.update(hist=base / "data/historico_partidos.csv", marcas=base / "data/redes/post_partido",
              log=base / "data/redes/post_partido_log.csv", consumo=base / "data/redes/post_partido_consumo.json",
-             media=base / "media/post_partido", base=base)
+             base=base)
 
 
 usar_rutas(RAIZ)
-OPC = {"simular": None, "git": True, "buffer": True, "red": True}   # red: comprobar URL raw y bajar música
+OPC = {"simular": None, "git": True}
 
 
 def ahora():
@@ -117,21 +108,6 @@ def subir(rutas, msg):
             return True
         print("Reintento push", i + 1, p.stderr[-200:])
         time.sleep(5 + 5 * i)
-    return False
-
-
-def url_ok(u, espera=150):
-    if not OPC["red"]:
-        return True
-    fin = time.time() + espera
-    while time.time() < fin:
-        try:
-            with urllib.request.urlopen(urllib.request.Request(u, method="HEAD"), timeout=20) as r:
-                if r.status == 200:
-                    return True
-        except Exception:
-            pass
-        time.sleep(10)
     return False
 
 
@@ -208,102 +184,6 @@ def anadir_fila(bh, m, est, liga_id):
     return fila
 
 
-# ---------- vídeo ----------
-
-def elegir_pista(mid):
-    """La pista menos usada de la biblioteca de Live (+ las que ya usó este script); empate -> por match_id."""
-    usos = {p: 0 for p in PISTAS}
-    if OPC["red"]:
-        try:
-            b = json.load(urllib.request.urlopen(LIVE_RAW + "redes/biblioteca_musica.json", timeout=30))
-            usos = {p["id"]: len(p.get("usos") or []) for p in b.get("pistas", []) if p.get("id")}
-        except Exception as e:
-            print("Biblioteca de música no disponible:", type(e).__name__)
-    if R["log"].exists():
-        for x in csv.DictReader(open(R["log"], encoding="utf-8")):
-            if x.get("musica") in usos:
-                usos[x["musica"]] += 1
-    usos.pop("electro", None)                # "hueco de 0.5 s en 6 s: evitar" (biblioteca de Live)
-    orden = sorted(usos, key=lambda p: (usos[p], zlib.crc32(f"{p}{mid}".encode())))
-    return orden[0]
-
-
-def bajar_pista(pista, carpeta):
-    destino = Path(carpeta) / f"{pista}.mp3"
-    if OPC["red"]:
-        urllib.request.urlretrieve(LIVE_RAW + f"musica/{pista}.mp3", destino)
-    else:                                      # pruebas: 15 s de tono
-        subprocess.run(["ffmpeg", "-v", "error", "-y", "-f", "lavfi", "-i", "sine=frequency=220:duration=15",
-                        str(destino)], check=True)
-    return destino
-
-
-def montar_video(imgs, audio, out):
-    """Igual que Live/scripts/montar_video.py (mismo filtro de ffmpeg)."""
-    def run(cmd):
-        return subprocess.run(cmd, capture_output=True, text=True)
-    sec, fade, dur = SEGUNDOS, FADE, round(len(imgs) * SEGUNDOS, 2)
-    vol = run(["ffmpeg", "-hide_banner", "-t", "5", "-i", str(audio), "-af", "volumedetect", "-f", "null", "-"]).stderr
-    m = re.search(r"mean_volume: (-?[\d.]+) dB", vol)
-    flojo = bool(m) and float(m.group(1)) < -20
-    af = "silenceremove=start_periods=1:start_threshold=-40dB:start_silence=0.05," + ("loudnorm=I=-14:TP=-1.5," if flojo else "")
-    dl = int(RETRASO_AUDIO * 1000)
-    if dl:
-        af += f"adelay={dl}|{dl},"
-    af += f"atrim=0:{dur},afade=t=out:st={max(dur - fade, 0)}:d={fade}"
-    cmd = ["ffmpeg", "-v", "error", "-y"]
-    for i in imgs:
-        cmd += ["-loop", "1", "-t", str(sec), "-i", str(i)]
-    cmd += ["-i", str(audio)]
-    n = len(imgs)
-    ins = "".join(f"[{k}:v]" for k in range(n))
-    fc = f"{ins}concat=n={n}:v=1:a=0,scale=1080:1920,fps=30,format=yuv420p[v];[{n}:a]{af}[a]"
-    cmd += ["-filter_complex", fc, "-map", "[v]", "-map", "[a]", "-c:v", "libx264", "-preset", "fast",
-            "-c:a", "aac", "-b:a", "192k", "-movflags", "+faststart", str(out)]
-    r = run(cmd)
-    if r.returncode:
-        raise RuntimeError(r.stderr[-500:])
-    print("Vídeo", out, dur, "s", "(loudnorm)" if flojo else "")
-
-
-def preparar_render():
-    """En el runner: playwright + chromium y ffmpeg, SOLO cuando hay algo que dibujar (no en cada pasada)."""
-    if os.environ.get("PREPARAR_RENDER") != "1":
-        return
-    subprocess.run([sys.executable, "-m", "pip", "install", "-q", "playwright"], check=True)
-    subprocess.run([sys.executable, "-m", "playwright", "install", "--with-deps", "chromium"], check=True)
-    if not shutil.which("ffmpeg"):
-        subprocess.run("sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg", shell=True, check=True)
-    os.environ["PREPARAR_RENDER"] = "hecho"
-
-
-# ---------- texto ----------
-
-def etiqueta(n):
-    n = unicodedata.normalize("NFKD", n).encode("ascii", "ignore").decode()
-    return "#" + re.sub(r"[^A-Za-z0-9]", "", n)
-
-
-def texto(DC, datos, liga):
-    p = next(iter(datos.values()))
-    a, b = p["home"]["short"], p["away"]["short"]
-    gh, ga = p["score"]
-    res = f"{a} {gh}-{ga} {b}"
-    if "post1_deserved" in datos:
-        xh, xa = datos["post1_deserved"]["xg"]
-        gana = a if xh > xa else b
-        hook = f"Expected goals: {xh:.1f} vs {xa:.1f}, {gana} created more."
-        pregunta = "Did the better team win?"
-    elif "post4_stat_of_match" in datos:
-        s = datos["post4_stat_of_match"]
-        hook = f'{s["number"]} ' + re.sub(r"<[^>]+>", "", s["text"])
-        pregunta = s.get("question", "Fair result?")
-    else:
-        hook, pregunta = "Full-time numbers inside.", "Fair result?"
-    tags = ["#football", HASH_LIGA.get(liga, "#football"), etiqueta(a), etiqueta(b), "#fulltime"]
-    return f"{res}\n{hook} {pregunta}\n\n{' '.join(tags)}", f"{res} | {hook}"[:90]
-
-
 # ---------- un partido ----------
 
 def procesar(pd, bh, DC, x, fecha, t, uso):
@@ -354,60 +234,16 @@ def procesar(pd, bh, DC, x, fecha, t, uso):
 
 
 def publicar(pd, DC, x, fecha, t, uso, fila, base, marca):
-    local, visitante = fila.local, fila.visitante              # nombres tal y como los guarda el histórico
-    try:
-        _, datos = DC.post(local, visitante, fecha)
-    except SystemExit as e:
-        print("datos_clubes post no pudo:", e)
-        return "error_datos"
-    carpeta = R["media"] / f"{fecha}_{local}_{visitante}".replace(" ", "_")
-    carpeta.mkdir(parents=True, exist_ok=True)
-    preparar_render()
-    trabajos = [(d, carpeta / f"{n}.png") for n, d in datos.items()]
-    DC.G.renderizar(trabajos)
-    pngs = [p for _, p in trabajos]
-    pista = elegir_pista(x.match_id)
-    with tempfile.TemporaryDirectory() as tmp:
-        video = carpeta / "post.mp4"
-        montar_video(pngs[:TARJETAS], bajar_pista(pista, tmp), video)
-    rel = lambda p: p.relative_to(R["base"]).as_posix()
-    url = lambda p: RAW + urllib.parse.quote(rel(p))
-    cuerpo, titulo = texto(DC, datos, x.liga)
-    if not subir([carpeta, R["hist"]], f"post-partido: {local}-{visitante} imágenes y vídeo"):
-        return "error_push"
-    if not url_ok(url(video)):
-        print("La URL raw del vídeo no responde 200 en ~2.5 min: se reintenta en la siguiente pasada")
-        return "url_no_lista"
-    due = max(t, datetime.now(timezone.utc)) + timedelta(minutes=3)
-    ids, errores = {}, {}
-    sin_clave = OPC["buffer"] and not os.environ.get("BUFFER_API_KEY")
-    if sin_clave:          # 10/10: el secreto solo está en Live -> vídeo listo, se manda a mano (no se reintenta)
-        print("BUFFER_API_KEY vacío: vídeo subido, sin enviar a Buffer")
-    for red in (() if sin_clave else ("tiktok", "instagram")):
-        item = {"red": red, "text": cuerpo, "titulo": titulo, "video": url(video), "recordatorio": False}
-        if not OPC["buffer"]:
-            import buffer_envio as BE
-            print(f"[sin Buffer] {red}:", json.dumps(BE.entrada(item, due), ensure_ascii=False)[:300])
-            ids[red] = "simulado"
-            continue
-        import buffer_envio as BE
-        try:
-            ids[red], resp = BE.enviar(item, due)
-        except Exception as e:
-            ids[red], resp = None, f"{type(e).__name__}: {e}"[:300]
-        if not ids[red]:
-            errores[red] = resp
-        print(red, ids[red], resp)
-    marca_d = {**base, "estado": "video_listo_sin_buffer" if sin_clave else "enviado" if not errores else "error_buffer",
-               "resultado": f"{int(fila.goles_l)}-{int(fila.goles_v)}",
-               "hora": t.isoformat(timespec="seconds"), "dueAt": due.isoformat(timespec="seconds"),
-               "buffer": ids, "errores": errores, "texto": cuerpo, "titulo_tiktok": titulo, "musica": pista, "video": url(video),
-               "imagenes": [url(p) for p in pngs], "llamadas": uso["partidos"].get(str(x.match_id), 0)}
-    fin(marca, marca_d, f"post-partido: {local}-{visitante} {marca_d['estado']}")
-    return marca_d["estado"]
+    """Datos listos: la marca (con los nombres tal y como los guarda el histórico, que son los que pide
+    `datos_clubes.py post`) va en el MISMO commit que la fila del histórico, así Live nunca ve una sin la otra."""
+    marca_d = {**base, "local": fila.local, "visitante": fila.visitante, "estado": "datos_listos",
+               "resultado": f"{int(fila.goles_l)}-{int(fila.goles_v)}", "hora": t.isoformat(timespec="seconds"),
+               "llamadas": uso["partidos"].get(str(x.match_id), 0)}
+    fin(marca, marca_d, f"post-partido: {fila.local}-{fila.visitante} datos listos", extra=[R["hist"]])
+    return "datos_listos"
 
 
-def fin(marca, d, msg):
+def fin(marca, d, msg, extra=()):
     """Marca (impide repetir) + fila de registro + push."""
     marca.parent.mkdir(parents=True, exist_ok=True)
     marca.write_text(json.dumps(d, ensure_ascii=False, indent=1))
@@ -417,11 +253,9 @@ def fin(marca, d, msg):
         if nuevo:
             w.writerow(["fecha", "match_id", "local", "visitante", "estado", "resultado", "hora", "llamadas",
                         "buffer_tiktok", "buffer_instagram", "musica", "video"])
-        b = d.get("buffer") or {}
         w.writerow([d["fecha"], d["match_id"], d["local"], d["visitante"], d["estado"], d.get("resultado", ""),
-                    d["hora"], d.get("llamadas", 0), b.get("tiktok", ""), b.get("instagram", ""),
-                    d.get("musica", ""), d.get("video", "")])
-    subir([marca, R["log"], R["consumo"]] if R["consumo"].exists() else [marca, R["log"]], msg)
+                    d["hora"], d.get("llamadas", 0), "", "", "", ""])      # las 4 últimas: de cuando se publicaba desde aquí
+    subir([marca, R["log"], *extra] + ([R["consumo"]] if R["consumo"].exists() else []), msg)
 
 
 # ---------- pasada ----------
@@ -451,7 +285,7 @@ def main():
     return out, bh.llamadas[0]
 
 
-PENDIENTES = {"en_juego", "esperando_xg", "sin_estadisticas", "sin_respuesta", "url_no_lista", "error_push"}
+PENDIENTES = {"en_juego", "esperando_xg", "sin_estadisticas", "sin_respuesta", "error_push"}
 SONDEO = int(os.environ.get("SONDEO_SEG", "300"))     # 5 min entre sondeos dentro del mismo job
 DURACION_MAX = timedelta(minutes=int(os.environ.get("DURACION_MAX_MIN", "135")))   # el job tiene timeout 150
 

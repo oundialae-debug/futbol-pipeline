@@ -1,6 +1,6 @@
 # futbol-pipeline
 
-**Regla del usuario: NUNCA llamar a la API de Highlightly sin su sí explícito para ESA llamada** (sondeos, backfills o lanzar un workflow que la use; un sí anterior no vale). Única excepción aprobada: `ambos_marcan_diario.yml` y `post_partido.yml` (aprobado el 10/10: post-partido automático, sondeo cada 5 min desde inicio+1h45, ≤30 llamadas/día). Antes de empujar código: `python3 scripts/prueba_humo.py`. Todo cambio va en `BITACORA.md` en el mismo commit. Lecciones y resultados completos: `docs/notas_proyecto.md`; ambos marcan: `modelos/ambos_marcan/CLAUDE.md`.
+**Regla del usuario: NUNCA llamar a la API de Highlightly sin su sí explícito para ESA llamada** (sondeos, backfills o lanzar un workflow que la use; un sí anterior no vale). Única excepción aprobada: `ambos_marcan_diario.yml` y `post_partido.yml` (aprobado el 10/10: solo descarga los datos del post-partido, sondeo cada 5 min desde inicio+1h45, ≤30 llamadas/día; el vídeo y la publicación los hace Live). Antes de empujar código: `python3 scripts/prueba_humo.py`. Todo cambio va en `BITACORA.md` en el mismo commit. Lecciones y resultados completos: `docs/notas_proyecto.md`; ambos marcan: `modelos/ambos_marcan/CLAUDE.md`.
 
 ## Mapa
 | entrada | pieza (cómo se ejecuta) | salida |
@@ -11,7 +11,7 @@
 | variables | `modelo_ambos_marcan.py` (oficial, 102 vars) · `evaluar_mercados.py` (5 mercados) | `data/validacion_mercados.json` |
 | API, partidos de hoy | `ambos_marcan_hoy.py descargar/pronosticar/evaluar` (`ambos_marcan_diario.yml`, ACTIVO) | `data/ambos_marcan/registro_papel.csv`, `modelos/ambos_marcan/registro_papel.md` |
 | API, selecciones | `modelos/selecciones/*.py` (`nations_league_ciclo.yml`, activo) | `data/selecciones/` |
-| API, 2 partidos grandes del día (5 ligas) | `post_partido.py` (`post_partido.yml`, cron */10 que arranca un bucle de sondeo cada 5 min dentro del job, ACTIVO; sin API hasta inicio+1h45) → `datos_clubes.post` + vídeo + Buffer | `media/post_partido/`, `data/redes/post_partido/`, fila en `data/historico_partidos.csv` |
+| API, 2 partidos grandes del día (5 ligas) | `post_partido.py` (`post_partido.yml`, cron */10 que arranca un bucle de sondeo cada 5 min dentro del job, ACTIVO; sin API hasta inicio+1h45; SOLO datos, sin render ni Buffer) | fila en `data/historico_partidos.csv` + marca `data/redes/post_partido/<id>.json` "datos_listos" → Live (`enviar_cola.yml`, `post_partido_live.py`) dibuja, monta y publica |
 | API NBA (cuota aparte) | `scripts/nba/*.py` (`nba_boxscore.yml`, activo) | `data/nba/` |
 | datos ya en disco | `experimento_*`, `auditoria*`, `sondeo_*`, `censo_*` (sueltos) | resultados en los `.md` |
 

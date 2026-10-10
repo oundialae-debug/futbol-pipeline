@@ -1,13 +1,16 @@
-"""Prueba SIN RED de scripts/post_partido.py: respuestas falsas de la API, sin git ni Buffer, en una carpeta temporal.
+"""Prueba SIN RED de scripts/post_partido.py: respuestas falsas de la API, sin git, en una carpeta temporal.
 Caso real de calendario: Real Madrid - Villarreal (2026-10-10 19:00 UTC) y RB Leipzig - Frankfurt (16:30 UTC).
   1) 17:00 UTC: los dos antes de la ventana -> 0 llamadas.
   2) 20:50 UTC: Madrid en juego -> 1 llamada y sigue; Leipzig pasado saque+4h -> marca "abandonado", 0 llamadas.
-  3) 21:00 UTC: Madrid terminado -> 2 llamadas, fila en el histórico, PNG + vídeo, marca "enviado".
+  3) 21:00 UTC: Madrid terminado -> 2 llamadas, fila en el histórico, marca "datos_listos" (sin vídeo ni Buffer: eso es Live).
   4) 21:05 UTC: la marca impide repetir -> 0 llamadas, sin fila duplicada.
   5) tope: con 30 llamadas ya gastadas hoy -> no se llama.
   6) bucle: en juego -> el mismo job espera 5 min (reloj falso) y vuelve a sondear hasta terminar.
+  7) bucle: nunca termina -> 1 llamada por sondeo y pasado saque+4h se deja (≤30 llamadas/día).
+  8) bucle: con 20 llamadas ya gastadas hoy -> para al llegar a 30.
 Uso: python3 scripts/prueba_post_partido.py   (sale con error si algo falla)"""
-import json, re, shutil, sys, tempfile
+import json, os, sys, tempfile
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 RAIZ = Path(__file__).resolve().parents[1]
@@ -39,7 +42,6 @@ def copiar_historico(base):
 
 
 def pasada(base, hora):
-    import os
     os.environ["AHORA"] = f"2026-10-10T{hora}:00+00:00"
     return P.main()
 
@@ -59,7 +61,7 @@ def main():
         copiar_historico(base)
         filas0 = sum(1 for _ in open(base / "data/historico_partidos.csv"))
         P.usar_rutas(base)
-        P.OPC.update(simular=str(api), git=False, buffer=False, red=False)
+        P.OPC.update(simular=str(api), git=False)
 
         out, n = pasada(base, "17:00")
         check(out.get(RM) == "pronto" and out.get(RB) == "pronto" and n == 0, f"antes de la ventana: {out}, {n} llamadas")
@@ -74,14 +76,13 @@ def main():
         (api / f"statistics_{RM}.json").write_text(json.dumps([stats(461175, 2.1, 7, 6, 4), stats(454367, 0.9, 3, 4, 2)]))
         out, n = pasada(base, "21:00")
         filas = sum(1 for _ in open(base / "data/historico_partidos.csv"))
-        check(out.get(RM) == "enviado" and n == 2, f"terminado: {out.get(RM)}, {n} llamadas")
+        check(out.get(RM) == "datos_listos" and n == 2, f"terminado: {out.get(RM)}, {n} llamadas")
         check(filas == filas0 + 1, "una fila nueva en historico_partidos.csv")
-        carpeta = base / "media/post_partido/2026-10-10_Real_Madrid_Villarreal"
-        pngs = sorted(carpeta.glob("*.png"))
-        check(len(pngs) >= 4 and (carpeta / "post.mp4").stat().st_size > 50_000,
-              f"{len(pngs)} PNG + vídeo ({(carpeta / 'post.mp4').stat().st_size // 1024} KB)")
+        check(not (base / "media").exists(), "sin imágenes ni vídeo en futbol-pipeline")
         m = json.loads((base / f"data/redes/post_partido/{RM}.json").read_text())
-        check(m["llamadas"] == 3 and m["resultado"] == "2-1" and not re.search(r"\b(bet|bets|betting|odds|tip)\b", m["texto"].lower()), f"marca: {m['texto']!r}")
+        claves = {"match_id", "local", "visitante", "liga", "fecha", "saque_utc", "resultado", "estado"}
+        check(claves <= set(m) and m["estado"] == "datos_listos" and m["resultado"] == "2-1" and m["llamadas"] == 3
+              and m["local"] == "Real Madrid" and m["saque_utc"].startswith("2026-10-10T19:00"), f"marca: {m}")
 
         out, n = pasada(base, "21:05")
         filas2 = sum(1 for _ in open(base / "data/historico_partidos.csv"))
@@ -103,9 +104,8 @@ def main():
         api.mkdir()
         copiar_historico(base)
         P.usar_rutas(base)
-        P.OPC.update(simular=str(api), git=False, buffer=False, red=False)
+        P.OPC.update(simular=str(api), git=False)
         (api / f"matches_{RM}.json").write_text(json.dumps(partido("Second half", "1 - 0")))
-        import os
         os.environ["AHORA"] = "2026-10-10T20:50:00+00:00"
         sueños = []
 
@@ -116,8 +116,36 @@ def main():
             (api / f"statistics_{RM}.json").write_text(json.dumps([stats(461175, 0.9, 5, 4, 3), stats(454367, 0.6, 2, 3, 1)]))
         out = P.bucle(dormir)
         m = json.loads((base / f"data/redes/post_partido/{RM}.json").read_text())
-        check(sueños == [300] and out.get(RM) == "enviado" and m["llamadas"] == 3,
+        check(sueños == [300] and out.get(RM) == "datos_listos" and m["llamadas"] == 3,
               f"bucle: {len(sueños)} espera de {sueños}, {out.get(RM)}, {m['llamadas']} llamadas")
+
+    # 7) y 8) bucle que nunca termina: abandona a saque+4h; con el tope, para a las 30 del día
+    for usadas, esperado in ((0, "abandonado"), (20, "tope")):
+        with tempfile.TemporaryDirectory() as tmp:
+            base, api = Path(tmp) / "repo", Path(tmp) / "api"
+            (base / "data/redes").mkdir(parents=True)
+            api.mkdir()
+            copiar_historico(base)
+            (base / "data/redes/post_partido_consumo.json").write_text(
+                json.dumps({"dias": {"2026-10-10": usadas}, "partidos": {}}))
+            P.usar_rutas(base)
+            P.OPC.update(simular=str(api), git=False)
+            (api / f"matches_{RM}.json").write_text(json.dumps(partido("Second half", "0 - 0")))
+            reloj = [datetime(2026, 10, 10, 20, 50, tzinfo=timezone.utc)]
+            os.environ["AHORA"] = reloj[0].isoformat()
+            sueños = []
+
+            def dormir(seg):
+                sueños.append(seg)
+                reloj[0] += timedelta(seconds=seg)
+                os.environ["AHORA"] = reloj[0].isoformat()
+            out = P.bucle(dormir)
+            dias = json.loads((base / "data/redes/post_partido_consumo.json").read_text())["dias"]
+            c = sum(dias.values())     # a las 22:00 UTC ya es día 11 en Madrid: el consumo sigue en el día nuevo
+            # 19:00 UTC + 4h = 23:00 UTC, ya "ayer" en Madrid: se deja sin marca ("fuera"), igual que "abandonado"
+            fin_ok = out.get(RM) in (("abandonado", "fuera") if esperado == "abandonado" else ("tope",))
+            check(fin_ok and max(dias.values()) <= 30 and (dias["2026-10-10"] == 30 if esperado == "tope" else c == len(sueños)),
+                  f"bucle sin final (ya gastadas {usadas}): {out.get(RM)}, {len(sueños)} esperas, {c} llamadas en el día")
 
     print("\nTODO BIEN" if ok else "\nHAY FALLOS")
     sys.exit(0 if ok else 1)

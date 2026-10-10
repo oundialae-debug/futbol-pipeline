@@ -1,7 +1,9 @@
 name: Post-partido automático (2yellow)
 
-# Vídeo del post-partido ~20 min después del pitido final, para los 2 partidos grandes del día de las 5 ligas
-# (los de `datos_clubes.py elegir`). Lógica y tiempos: scripts/post_partido.py.
+# SOLO DATOS del post-partido (resultado + estadísticas/xG) de los 2 partidos grandes del día de las 5 ligas
+# (los de `datos_clubes.py elegir`), en cuanto terminan: fila en data/historico_partidos.csv + marca
+# data/redes/post_partido/<id>.json "datos_listos". El vídeo y la publicación los hace el repo Live
+# (enviar_cola.yml -> scripts/post_partido_live.py). Aquí no hay Buffer ni render. Lógica: scripts/post_partido.py.
 # ACTIVO: aprobado por el usuario el 10/10/2026 como excepción fija a la regla de la API: sondeo cada 5 min
 # desde inicio+1h45 (1 llamada por pasada mientras no termina, +1 de estadísticas al terminar), tope duro de
 # 30 llamadas/día. 10/10: el cron de GitHub no es fiable (1 pasada en 20 min), así que cuando un partido está en
@@ -24,7 +26,6 @@ jobs:
       contents: write
     env:
       HIGHLIGHTLY_API_KEY: ${{ secrets.HIGHLIGHTLY_API_KEY }}
-      BUFFER_API_KEY: ${{ secrets.BUFFER_API_KEY }}
     steps:
       - uses: actions/checkout@v4
 
@@ -40,10 +41,8 @@ jobs:
       - if: steps.hay.outputs.hay == 'si'
         run: pip install -r requirements.txt
 
-      - name: Post-partido
+      - name: Post-partido (datos)
         if: steps.hay.outputs.hay == 'si'
-        env:
-          PREPARAR_RENDER: '1'     # playwright + ffmpeg solo si hay que dibujar
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"

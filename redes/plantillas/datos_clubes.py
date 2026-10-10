@@ -5,6 +5,9 @@ Equivalente de datos_selecciones.py para Premier League, La Liga, Serie A, Bunde
     python3 redes/plantillas/datos_clubes.py pre "Liverpool" "Manchester City" 2026-10-11
     python3 redes/plantillas/datos_clubes.py post "Manchester United" "Tottenham" 2026-10-10
 Deja los JSON y los PNG en redes/plantillas/salida/<fecha>_<local>_<visitante>/ (LIENZO=reel para la zona segura).
+SIEMPRE 5 tarjetas + la 6ª (lista tapada) en previo y post (usuario 10/10); si falta una, entra una de relleno con
+nuestros datos (forma, casa/fuera, tiros, marcadores; post: el partido en cifras, Elo). ZONA_ESTRICTA=1: sale con
+error si algo se sale de x 80-880, y 318-1540 (generar.FUERA).
 
 De dónde sale cada cosa (todo en disco; se lee de origin/main si está, como datos_selecciones.leer):
 - Partidos del día: data/calendario.csv (solo las 5 ligas). Resultados, xG y tiros: data/historico_partidos.csv
@@ -24,7 +27,7 @@ De dónde sale cada cosa (todo en disco; se lee de origin/main si está, como da
   salía PSG - Le Mans). No se usa nada del mercado.
 Sin "upset alert" (pre2) ni nada que enseñe el % del mercado (usuario: solo % de nuestro modelo).
 """
-import io, json, subprocess, sys
+import io, json, os, subprocess, sys
 from pathlib import Path
 import numpy as np
 import pandas as pd
@@ -295,6 +298,148 @@ def tapada(d, cuando):
             "question": "All unlocked on our profile."}
 
 
+
+# ---------- tarjetas de relleno (siempre 5 + la lista tapada; usuario 10/10) ----------
+
+N_CARTAS = 5        # previo y post-partido: SIEMPRE 5 tarjetas de contenido + la 6ª (lista tapada)
+
+
+def partidos_de(h, eid, antes, n, sede=None):
+    """Últimos n partidos jugados de un club antes de 'antes' (sede: "local"/"visitante" para solo casa/fuera),
+    vistos desde el club: pts, gf, gc, xgf, xgc, tiros, a puerta."""
+    d = h[h.goles_l.notna() & (h.t < antes)]
+    if sede == "local":
+        d = d[d.local_id == eid]
+    elif sede == "visitante":
+        d = d[d.visitante_id == eid]
+    else:
+        d = d[(d.local_id == eid) | (d.visitante_id == eid)]
+    filas = []
+    for x in d.tail(n).itertuples():
+        yo, el = ("l", "v") if x.local_id == eid else ("v", "l")
+        gf, gc = (x.goles_l, x.goles_v) if yo == "l" else (x.goles_v, x.goles_l)
+        tiros = sum(getattr(x, f"{yo}_{s}") for s in ("shots_on_target", "shots_off_target", "blocked_shots")
+                    if pd.notna(getattr(x, f"{yo}_{s}")))
+        filas.append({"pts": 3 if gf > gc else 1 if gf == gc else 0, "gf": gf, "gc": gc,
+                      "xgf": getattr(x, f"{yo}_expected_goals"), "xgc": getattr(x, f"{el}_expected_goals"),
+                      "tiros": tiros, "puerta": getattr(x, f"{yo}_shots_on_target")})
+    return pd.DataFrame(filas)
+
+
+def filas_duelo(ph, pa, por_partido):
+    """Filas de head_to_head con lo que haya (xG solo si está en los dos)."""
+    def media(df, k):
+        v = df[k].dropna()
+        return float(v.mean()) if len(v) else None
+    out = []
+    if por_partido:
+        out.append({"label": "Points per game", "h": round(ph.pts.mean(), 1), "a": round(pa.pts.mean(), 1), "dec": 1})
+        out.append({"label": "Goals per game", "h": round(ph.gf.mean(), 1), "a": round(pa.gf.mean(), 1), "dec": 1})
+        out.append({"label": "Conceded per game", "h": round(ph.gc.mean(), 1), "a": round(pa.gc.mean(), 1), "dec": 1,
+                    "menos_mejor": True})
+    else:
+        out.append({"label": f"Points, last {len(ph)}", "h": int(ph.pts.sum()), "a": int(pa.pts.sum())})
+        out.append({"label": "Goals scored", "h": int(ph.gf.sum()), "a": int(pa.gf.sum())})
+        out.append({"label": "Goals conceded", "h": int(ph.gc.sum()), "a": int(pa.gc.sum()), "menos_mejor": True})
+    for k, lab, menos in (("xgf", "xG created per game", False), ("xgc", "xG conceded per game", True)):
+        vh, va = media(ph, k), media(pa, k)
+        if vh is not None and va is not None:
+            out.append({"label": lab, "h": round(vh, 1), "a": round(va, 1), "dec": 1, "menos_mejor": menos})
+    return out[:5]
+
+
+def carta_forma(base, h, m, n=5):
+    ph, pa = partidos_de(h, m.local_id, m.t, n), partidos_de(h, m.visitante_id, m.t, n)
+    if min(len(ph), len(pa)) < 3:
+        return None
+    return {**base, "template": "head_to_head", "kicker": "Form check", "title": f"Last {min(len(ph), len(pa))} games",
+            "stats": filas_duelo(ph.tail(min(len(ph), len(pa))), pa.tail(min(len(ph), len(pa))), False),
+            "question": "Who arrives in better shape?"}
+
+
+def carta_casa_fuera(base, h, m, n=5):
+    ph, pa = partidos_de(h, m.local_id, m.t, n, "local"), partidos_de(h, m.visitante_id, m.t, n, "visitante")
+    if min(len(ph), len(pa)) < 3:
+        return None
+    return {**base, "template": "head_to_head", "kicker": "Home vs away",
+            "title": f"<b>{base['home']['short']}</b> at home, <b>{base['away']['short']}</b> away",
+            "stats": filas_duelo(ph, pa, True)[:4], "note": f"Last {len(ph)} home and {len(pa)} away games",
+            "question": "Does home advantage decide it?"}
+
+
+def carta_tiros(base, h, m, n=10):
+    ph, pa = partidos_de(h, m.local_id, m.t, n), partidos_de(h, m.visitante_id, m.t, n)
+    if min(len(ph), len(pa)) < 3:
+        return None
+    st = [{"label": "Shots per game", "h": round(ph.tiros.mean(), 1), "a": round(pa.tiros.mean(), 1), "dec": 1},
+          {"label": "On target per game", "h": round(ph.puerta.mean(), 1), "a": round(pa.puerta.mean(), 1), "dec": 1},
+          {"label": "Goals per game", "h": round(ph.gf.mean(), 1), "a": round(pa.gf.mean(), 1), "dec": 1}]
+    return {**base, "template": "head_to_head", "kicker": "Attack check", "title": f"Last {min(len(ph), len(pa))} games",
+            "stats": st, "question": "Who scores first?"}
+
+
+def carta_marcadores(base, x, m):
+    """Previo, relleno que siempre existe: los 3 marcadores más probables de nuestro modelo."""
+    mt = matriz(x["lam_l"], x["lam_v"], 7)
+    top = sorted(((mt[i, j], i, j) for i in range(7) for j in range(7)), reverse=True)[:3]
+    p0, i0, j0 = top[0]
+    resto = ", ".join(f"{i}–{j} ({p * 100:.0f}%)" for p, i, j in top[1:])
+    hora = m.t.tz_convert("Europe/Madrid")
+    return {**base, "template": "key_number", "team": None, "number": f"{i0}–{j0}",
+            "text": f"Our most likely score, <b>{p0 * 100:.0f}%</b>. Next: {resto}.",
+            "when": f"{dia(m.t)} · {hora:%H:%M %Z}", "question": "What's your score?"}
+
+
+def carta_estadisticas(base, m):
+    """Post: el partido en cifras (nuestro box-score), con el marcador en el centro."""
+    def v(lado, s):
+        x = m[f"{lado}_{s}"]
+        return None if pd.isna(x) else float(x)
+    tiros = {l: sum(v(l, s) or 0 for s in ("shots_on_target", "shots_off_target", "blocked_shots")) for l in "lv"}
+    st = []
+    for lab, fh, fa, dec in (("Expected goals (xG)", v("l", "expected_goals"), v("v", "expected_goals"), 1),
+                             ("Shots", tiros["l"], tiros["v"], 0),
+                             ("Shots on target", v("l", "shots_on_target"), v("v", "shots_on_target"), 0),
+                             ("Big chances", v("l", "big_chances_created"), v("v", "big_chances_created"), 0),
+                             ("Possession %", v("l", "possession"), v("v", "possession"), 0),
+                             ("Corners", v("l", "corners"), v("v", "corners"), 0)):
+        if fh is None or fa is None:
+            continue
+        if lab == "Possession %":
+            fh, fa = (fh * 100, fa * 100) if fh <= 1 else (fh, fa)
+        st.append({"label": lab, "h": round(fh, dec) if dec else int(round(fh)), "a": round(fa, dec) if dec else int(round(fa)),
+                   "dec": dec})
+    if len(st) < 3:
+        return None
+    return {**base, "template": "head_to_head", "kicker": "Match stats", "title": "", "stats": st[:5],
+            "centro": "score", "question": "Who really ran the game?"}
+
+
+def carta_elo_post(base, h, m, local, visitante):
+    el = elo_series(h, [m.local_id, m.visitante_id], m.t + pd.Timedelta(seconds=1))   # incluye este partido
+    el = {local: el[m.local_id], visitante: el[m.visitante_id]}
+    if min(map(len, el.values())) < 6:
+        return None
+    cambio = {k: v[-1] - v[-6] for k, v in el.items()}
+    foco = max(cambio, key=lambda k: abs(cambio[k]))
+    otro = visitante if foco == local else local
+    extra = f'{CORTO.get(otro, otro)}: {"+" if cambio[otro] >= 0 else "−"}{abs(cambio[otro])} in the same span.'
+    return {**base, "template": "elo_form", "focus": "home" if foco == local else "away",
+            "elo_home": el[local][-10:], "elo_away": el[visitante][-10:], "extra": extra,
+            "question": "Real form or a lucky run?" if cambio[foco] >= 0 else "Crisis or just a blip?"}
+
+
+def cinco_mas_final(pref, cartas, final):
+    """Las 5 primeras tarjetas disponibles (en orden) renumeradas pre1..pre5 / post1..post5 + la 6ª (lista tapada)."""
+    elegidas = [(k, d) for k, d in cartas if d][:N_CARTAS]
+    if len(elegidas) < N_CARTAS:
+        print(f"AVISO: solo {len(elegidas)} tarjetas de contenido (se piden {N_CARTAS})", file=sys.stderr)
+    out = {f"{pref}{i}_{k}": d for i, (k, d) in enumerate(elegidas, 1)}
+    if final:
+        out[f"{pref}6_lista"] = final
+    return out
+
+
 def pre(local, visitante, fecha):
     h, reg = historico(), registro()
     m = buscar(local, visitante, fecha, h, jugado=False)
@@ -305,6 +450,7 @@ def pre(local, visitante, fecha):
     base = {"competition": m.liga, "home": hh, "away": a}
     out = {"pre1_prediction": {**base, "template": "prediction", "probs": pct3([x["p1"], x["px"], x["p2"]]),
                                "predicted_score": marcador(x), "fuente": x["fuente"]},
+           "pre2_form": carta_forma(base, h, m),        # sustituye al "upset alert" (enseñaba el % del mercado)
            "pre3_goals": {**base, "template": "goals", "btts": round(x["btts"] * 100),
                           "exp_goals": [round(x["lam_l"], 1), round(x["lam_v"], 1)], "fuente": x["fuente"]}}
     el = elo_series(h, [m.local_id, m.visitante_id], m.t)
@@ -332,10 +478,13 @@ def pre(local, visitante, fecha):
         out["pre5_key_number"] = {**base, "template": "key_number", "team": lado, "number": f"{max(gl, gv)}–{min(gl, gv)}",
                                   "text": txt, "when": f"{dia(m.t)} · {hora:%H:%M %Z}", "question": "Revenge or repeat?"}
     try:
-        out["pre6_lista"] = tapada(lista_hoy(fecha, h, reg), dia(m.t).lower())
+        final = tapada(lista_hoy(fecha, h, reg), dia(m.t).lower())
     except ValueError:
-        pass
-    return m, out
+        final = None
+    cartas = [(k.split("_", 1)[1], d) for k, d in out.items()]
+    cartas += [("home_away", carta_casa_fuera(base, h, m)), ("attack", carta_tiros(base, h, m)),   # de relleno
+               ("scores", carta_marcadores(base, x, m))]
+    return m, cinco_mas_final("pre", cartas, final)
 
 
 def post(local, visitante, fecha):
@@ -373,8 +522,19 @@ def post(local, visitante, fecha):
         out["post4_stat_of_match"] = {**base, "template": "stat_of_match", "number": str(int(tiros[lado])),
                                       "text": texto, "team": lado, "question": "Wasteful or unlucky?"}
     # la jornada: los partidos grandes de ese día ya jugados, con nuestro % previo
-    jugados = con_tamano(h[(h.d == fecha) & h.liga.isin(LIGAS) & h.goles_l.notna()], h, fecha)
-    jugados = jugados[jugados.match_id.isin(set(jugados[jugados.match_id != m.match_id].head(5).match_id) | {m.match_id})]
+    # la jornada: este partido + los grandes ya jugados ese día; si hay pocos (el resto de la jornada aún no está en el
+    # histórico), se completa con los de los 3 días anteriores. 6 filas como mucho.
+    trozos = []
+    for k in range(4):
+        dd = str((pd.Timestamp(fecha) - pd.Timedelta(days=k)).date())
+        trozos.append(con_tamano(h[(h.d == dd) & h.liga.isin(LIGAS) & h.goles_l.notna() & (h.match_id != m.match_id)], h, dd))
+    otros = pd.concat(trozos)
+    if len(trozos[0]) >= 3:
+        otros = trozos[0]
+    jugados = pd.concat([h[h.match_id == m.match_id], otros.head(5)])
+    jugados = jugados.drop(columns="tam", errors="ignore").sort_values("t")
+    dias = sorted(jugados.d.unique())
+    rango = f"{dias[0][8:]}/{dias[0][5:7]}" + (f"–{dias[-1][8:]}/{dias[-1][5:7]}" if len(dias) > 1 else "")
     # 6 filas como mucho: con 8 la pregunta se salía de la zona segura (y > 1540)
     filas = []
     for _, r in jugados.iterrows():
@@ -382,15 +542,28 @@ def post(local, visitante, fecha):
         e_, p_ = picks(y)
         filas.append([CORTO.get(r.local, r.local), int(r.goles_l), int(r.goles_v), CORTO.get(r.visitante, r.visitante),
                       {k: [v, float(p_[v])] for k, v in e_.items()}])
-    if len(filas) >= 3:
-        out["post5_weekend_record"] = {"template": "weekend_record", "competition": f"Top 5 leagues · {fecha[8:]}/{fecha[5:7]}",
+    if filas:          # SIEMPRE (usuario 10/10), aunque la jornada aún tenga pocos partidos en el histórico
+        out["post5_weekend_record"] = {"template": "weekend_record", "competition": f"Top 5 leagues · {rango}",
                                        "matches": filas, "question": "Beat us next time?"}
-    sig = str((pd.Timestamp(fecha) + pd.Timedelta(days=1)).date())
-    try:
-        out["post6_lista"] = tapada(lista_hoy(sig, h, reg), "next")
-    except ValueError:
-        pass
-    return m, out
+    final = None
+    for k in range(1, 8):           # la 6ª: el próximo día con partidos de las 5 ligas (parones de selecciones)
+        sig = str((pd.Timestamp(fecha) + pd.Timedelta(days=k)).date())
+        try:
+            final = tapada(lista_hoy(sig, h, reg), "next")
+            break
+        except ValueError:
+            continue
+    stats = carta_estadisticas(base, m)
+    orden = ["post1_deserved", "post2_prediction_vs_result", "post3_upset_happened", "post4_stat_of_match", "post5_weekend_record"]
+    cartas = []
+    for k in orden:
+        if k == "post3_upset_happened" and k not in out:
+            cartas.append(("match_stats", stats))       # sin sorpresa: el partido en cifras ocupa su hueco
+            stats = None
+        else:
+            cartas.append((k.split("_", 1)[1], out.get(k)))
+    cartas += [("match_stats", stats), ("elo_form", carta_elo_post(base, h, m, local, visitante))]   # de relleno
+    return m, cinco_mas_final("post", cartas, final)
 
 
 if __name__ == "__main__":
@@ -407,3 +580,5 @@ if __name__ == "__main__":
         (carpeta / f"{nombre}.json").write_text(json.dumps(d, ensure_ascii=False, indent=1, default=float))
         trabajos.append((d, carpeta / f"{nombre}.png"))
     G.renderizar(trabajos)
+    if G.FUERA and os.environ.get("ZONA_ESTRICTA") == "1":      # Live (post automático): no se publica si algo se sale
+        sys.exit(f"FUERA DE LA ZONA SEGURA: {G.FUERA}")

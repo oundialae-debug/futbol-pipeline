@@ -180,7 +180,15 @@ def pagina(d, kicker, cuerpo, pregunta):
             f'<div class="kick">{e(kicker)}</div><div class="cuerpo">{cuerpo}</div>'
             f'<div class="q">{e(d.get("question", pregunta))}</div>'
             f'<div class="pie" style="display:flex;justify-content:space-between;align-items:center"><span>{e(pie)}</span>'
-            f'{SWIPE if CARRUSEL and d["template"] not in SIN_SWIPE and d.get("swipe", True) else ""}</div></div></div></body></html>')
+            f'{SWIPE if CARRUSEL and d["template"] not in SIN_SWIPE and d.get("swipe", True) else ""}</div></div></div>'
+            f'<script>{ENCOGER_VS}</script></body></html>')
+
+
+# Nombres largos ("Newcastle United" vs "Aston Villa") sacaban la etiqueta de x 880: si una fila .vs no cabe, se encogen sus
+# etiquetas de 2 en 2 px hasta que quepa (10/10).
+ENCOGER_VS = ("document.querySelectorAll('.vs').forEach(v=>{const q=v.querySelectorAll('.eq');if(!q.length)return;"
+              "let s=parseFloat(getComputedStyle(q[0]).fontSize);"
+              "while(v.scrollWidth>v.clientWidth+1&&s>22){s-=2;q.forEach(e=>e.style.fontSize=s+'px');}});")
 
 
 # Aviso de "hay más": SOLO en carrusel (CARRUSEL=1 en el entorno), en todas menos en la última y en las del perfil.
@@ -220,7 +228,8 @@ def barra3(d, p, resaltar):
     cols = [h["c"], GRIS, a["c"]]
     noms = [h["short"], "Draw", a["short"]]
     seg = "".join(f'<div style="width:{p[i]}%;background:{cols[i]};opacity:{1 if i == resaltar else .4}"></div>' for i in range(3))
-    ley = "".join(f'<div style="width:{p[i]}%;{"text-align:right" if i == 2 else ""}"><b>{p[i]:.0f}%</b>{e(noms[i])}</div>'
+    # leyenda en 3 columnas fijas (izq., centro, dcha.): con el ancho del tramo, un 10 % sacaba el nombre de x 880
+    ley = "".join(f'<div style="flex:1;text-align:{("left", "center", "right")[i]}"><b>{p[i]:.0f}%</b>{e(noms[i])}</div>'
                   for i in range(3))
     return f'<div><div class="barra">{seg}</div><div class="leyenda">{ley}</div></div>'
 
@@ -258,7 +267,7 @@ def goals(d):
     centro = (f'<div class="res" style="font-size:92px"><span style="color:{h["c"]}">{xh:.1f}</span><s>·</s>'
               f'<span style="color:{a["c"]}">{xa:.1f}</span></div>')
     cuerpo = (num(f'{d["btts"]}%', AMARILLO) + '<div class="frase"><b>both teams</b> score, says our model</div>'
-              + '<div class="mini">Expected goals</div>' + vs(h, a, centro))
+              + '<div class="mini">Expected goals</div>' + vs(h, a, centro, peq=True))   # grande: "Villarreal" pasaba de x 880
     return pagina(d, "Goals or nothing?", cuerpo, "Over or under?")
 
 
@@ -266,18 +275,18 @@ def elo_chart(d):
     """Línea del Elo de los dos equipos en sus últimos partidos (SVG). 220 px a la derecha para la cifra y el nombre:
     con 150 el nombre ("AS Roma", "Man City") pasaba de x 880, fuera de la zona segura (10/10)."""
     h, a = d["home"], d["away"]
-    W, H, pad = 860, 250, 16
+    W, H, pad, DER = 800, 250, 16, 250    # 800 = ancho de la zona segura (80-880); DER: hueco para cifra y nombre
     todos = d["elo_home"] + d["elo_away"]
     lo, hi = min(todos) - 10, max(todos) + 10
     def linea(vs_, c, nombre):
         n = len(vs_)
-        pts = [(pad + k * (W - 2 * pad - 220) / (n - 1), pad + (hi - v) * (H - 2 * pad) / (hi - lo)) for k, v in enumerate(vs_)]
+        pts = [(pad + k * (W - 2 * pad - DER) / (n - 1), pad + (hi - v) * (H - 2 * pad) / (hi - lo)) for k, v in enumerate(vs_)]
         x, y = pts[-1]
         return (f'<polyline points="{" ".join(f"{px:.0f},{py:.0f}" for px, py in pts)}" fill="none" stroke="{c}" '
                 f'stroke-width="9" stroke-linejoin="round" stroke-linecap="round"/><circle cx="{x:.0f}" cy="{y:.0f}" r="14" fill="{c}"/>'
                 f'<text x="{x + 26:.0f}" y="{y + 16:.0f}" fill="{c}" font-size="46" font-weight="900" '
                 f'font-stretch="75%" font-family="Archivo">{vs_[-1]}</text>'
-                f'<text x="{x + 26:.0f}" y="{y + 50:.0f}" fill="{c}" font-size="28" font-weight="800" '
+                f'<text x="{x + 26:.0f}" y="{y + 50:.0f}" fill="{c}" font-size="{min(28, 28 * 12 // max(len(nombre), 1))}" font-weight="800" '
                 f'font-family="Archivo">{e(nombre)}</text>')
     return (f'<svg width="{W}" height="{H + 40}" style="overflow:visible">{linea(d["elo_away"], a["c"], a["short"])}'
             f'{linea(d["elo_home"], h["c"], h["short"])}</svg>')
@@ -525,6 +534,8 @@ def head_to_head(d):
                   f'background:{ca}"></div></div>')
     marcador = (f'<span class="disp" style="font-size:64px;white-space:nowrap;flex:none"><span style="color:{h["c"]}">{gana[0]}</span>'
                 f'<span style="color:{GRIS}">–</span><span style="color:{a["c"]}">{gana[1]}</span></span>')
+    if d.get("centro") == "score" and d.get("score"):     # post-partido: el marcador real, no el recuento de filas
+        marcador = res(*d["score"])
     nota = d.get("note", "")
     if fotos:
         # Usuario 06/10: caras de los jugadores con degradado hacia el centro; nada encima de las caras.
@@ -660,8 +671,34 @@ def html_de(d):
     return out
 
 
+ZONA = (80, 318, 880, 1540)   # x0, y0, x1, y1 sobre 1080x1920 (PLAYBOOK de Live: zona segura)
+FUERA = []                     # (png, qué se sale) de la última llamada a renderizar
+JS_ZONA = r"""([x0, y0, x1, y1]) => {
+  const safe = document.querySelector('.safe'); if (!safe) return [];
+  const out = [], tol = 1;
+  const mal = (r) => r.width > 0 && r.height > 0 && (r.left < x0 - tol || r.top < y0 - tol || r.right > x1 + tol || r.bottom > y1 + tol);
+  const w = document.createTreeWalker(safe, NodeFilter.SHOW_TEXT);
+  for (let n = w.nextNode(); n; n = w.nextNode()) {
+    if (!n.textContent.trim()) continue;
+    const rg = document.createRange(); rg.selectNodeContents(n);
+    for (const r of rg.getClientRects()) if (mal(r)) { out.push('texto "' + n.textContent.trim().slice(0, 40) + '" ' + [r.left, r.top, r.right, r.bottom].map(Math.round)); break; }
+  }
+  for (const el of safe.querySelectorAll('*')) {
+    const cs = getComputedStyle(el);
+    if (el.tagName === 'IMG' && cs.objectFit === 'cover') continue;          // foto de fondo: puede salirse
+    if (el.tagName === 'IMG' && el.closest('.top')) continue;   // logo: 14 px de margen transparente (lo visible empieza en x 80)
+    const pinta = el.tagName === 'IMG' || el.tagName === 'svg' || (cs.backgroundColor && !/rgba\(0, 0, 0, 0\)|transparent/.test(cs.backgroundColor));
+    if (!pinta) continue;
+    const r = el.getBoundingClientRect();
+    if (mal(r)) out.push(el.tagName + '.' + el.className + ' ' + [r.left, r.top, r.right, r.bottom].map(Math.round));
+  }
+  return out;
+}"""
+
+
 def renderizar(trabajos):
-    """trabajos: lista de (datos, ruta_png)."""
+    """trabajos: lista de (datos, ruta_png). En 9:16 comprueba la zona segura y apunta lo que se sale en FUERA."""
+    FUERA.clear()
     from playwright.sync_api import sync_playwright
     exe = Path("/opt/pw-browsers/chromium")
     with sync_playwright() as pw:
@@ -671,7 +708,9 @@ def renderizar(trabajos):
             pg.set_content(html_de(d))
             pg.wait_for_timeout(200)
             pg.screenshot(path=str(out))
-            print("OK", out)
+            fuera = [] if IG45 else pg.evaluate(JS_ZONA, list(ZONA))
+            FUERA.extend((str(out), f) for f in fuera)
+            print("OK" if not fuera else "FUERA DE ZONA", out, *fuera[:3])
         b.close()
 
 

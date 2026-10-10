@@ -11,6 +11,29 @@ cambios de código y archivos".
   el resumen y dónde leerlo.
 - Lo más nuevo, arriba.
 
+## 10/10/2026 — post-partido: futbol-pipeline solo DATOS, Live publica; previo y post siempre 5 + 1 tarjetas
+- Qué: `post_partido.py` ya no dibuja, ni monta vídeo, ni manda a Buffer: al terminar el partido añade la fila al
+  histórico y escribe la marca `data/redes/post_partido/<id>.json` con estado "datos_listos" (match_id, local, visitante
+  con los nombres del histórico, liga, fecha, saque_utc, resultado) en el MISMO commit. Fuera `scripts/buffer_envio.py`
+  y `BUFFER_API_KEY`/`PREPARAR_RENDER` del workflow. Live (`enviar_cola.yml` → `scripts/post_partido_live.py`) lee las
+  marcas, ejecuta `LIENZO=reel datos_clubes.py post`, monta el vídeo (6 × 2.8 s) y lo publica (TikTok + IG reel).
+- `datos_clubes.py`: SIEMPRE 5 tarjetas + la lista tapada (usuario 10/10). Previo: pre2 = forma de los últimos 5
+  (head_to_head con nuestros datos, sustituye al "upset alert" del mercado); si falta Elo o el último cara a cara, entran
+  casa/fuera, tiros o marcadores más probables. Post: sin sorpresa, el hueco de post3 lo ocupa "Match stats" (xG, tiros,
+  a puerta, ocasiones claras, posesión, con el marcador real en el centro); post5 (la jornada) siempre, completada con
+  los 3 días anteriores si el resto del día aún no está en el histórico; la lista "next" busca el próximo día con partidos.
+- `generar.py`: comprueba la zona segura al dibujar (`generar.FUERA`; `ZONA_ESTRICTA=1` en `datos_clubes.py` sale con
+  error); las etiquetas de equipo de `.vs` se encogen si no caben ("Newcastle United" vs "Aston Villa" pasaba de x 880);
+  leyenda del 1X2 en 3 columnas fijas; gráfico Elo a 800 px; "goals" con `.vs` pequeño. Revisado a ojo y con la
+  comprobación en 8 post y 6 previos con nombres largos: 0 fuera.
+- Por qué: el secreto de Buffer solo está en Live (el Real Madrid-Villarreal salió en `video_listo_sin_buffer` y se
+  publicó a mano); y el usuario pide 6 imágenes siempre (el post del Madrid salió con 5).
+- Real Madrid-Villarreal (1336420545): su marca sigue en `video_listo_sin_buffer` (+ `publicado_manual`), así Live
+  no lo recoge; además Live lo tiene en su registro. RB Leipzig-Frankfurt: "abandonado", se ignora.
+- Pruebas sin red: `scripts/prueba_post_partido.py` (antes de ventana 0 llamadas, en juego → sigue, terminado →
+  "datos_listos", la marca impide repetir, >4h abandona, tope 30/día, bucle con reloj falso hasta terminar, hasta
+  abandonar y hasta el tope) y en Live `scripts/prueba_post_partido_live.py`. No se llamó a la API.
+
 ## 10/10/2026 — redes: marcadores más pequeños en las plantillas (zona segura)
 - Qué: `generar.py` .res de 150 a 118 px y el xG de post1 de 130 a 100 px; post-partido del Real Madrid-Villarreal rehecho (post_v2.mp4).
 - Por qué: con "Villarreal" la etiqueta del visitante pasaba de x 880 en post1 y post2.
