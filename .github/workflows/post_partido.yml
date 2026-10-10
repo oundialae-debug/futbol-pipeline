@@ -1,0 +1,47 @@
+name: Post-partido automático (2yellow)
+
+# Vídeo del post-partido ~20 min después del pitido final, para los 2 partidos grandes del día de las 5 ligas
+# (los de `datos_clubes.py elegir`). Lógica y tiempos: scripts/post_partido.py.
+# ACTIVO: aprobado por el usuario el 10/10/2026 como excepción fija a la regla de la API: sondeo cada 5 min
+# desde inicio+1h45 (1 llamada por pasada mientras no termina, +1 de estadísticas al terminar), tope duro de
+# 30 llamadas/día. La inmensa mayoría de pasadas no instala nada ni llama a la API (paso "¿Hay algo?").
+on:
+  schedule:
+    - cron: '*/5 * * * *'
+  workflow_dispatch:
+
+concurrency:
+  group: post-partido
+  cancel-in-progress: false
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    env:
+      HIGHLIGHTLY_API_KEY: ${{ secrets.HIGHLIGHTLY_API_KEY }}
+      BUFFER_API_KEY: ${{ secrets.BUFFER_API_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: ¿Hay algo? (sin API, sin instalar nada)
+        id: hay
+        run: python3 scripts/post_partido.py hay
+
+      - uses: actions/setup-python@v5
+        if: steps.hay.outputs.hay == 'si'
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+      - if: steps.hay.outputs.hay == 'si'
+        run: pip install -r requirements.txt
+
+      - name: Post-partido
+        if: steps.hay.outputs.hay == 'si'
+        env:
+          PREPARAR_RENDER: '1'     # playwright + ffmpeg solo si hay que dibujar
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          python scripts/post_partido.py

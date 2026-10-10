@@ -11,6 +11,20 @@ cambios de código y archivos".
   el resumen y dónde leerlo.
 - Lo más nuevo, arriba.
 
+## 10/10/2026 — redes: post-partido AUTOMÁTICO en vídeo (`post_partido.py` + `post_partido.yml`)
+- Qué: cron cada 5 min. Para los 2 partidos de `datos_clubes.elegir` (hoy y ayer en Madrid): nada antes de inicio+1h45
+  (0 llamadas); después, `/matches/{id}` hasta que termine, y entonces `/statistics/{id}` (funciones de
+  `backfill_historico.py`) → fila en `data/historico_partidos.csv` (mismas columnas, sin duplicar) → `datos_clubes.post`
+  (LIENZO=reel) → vídeo como `Live/scripts/montar_video.py` (5 tarjetas de 2.8 s, pista menos usada de la biblioteca
+  de Live) en `media/post_partido/<fecha>_<local>_<visitante>/` → push → URL raw 200 → Buffer vídeo automático a
+  TikTok e Instagram (reel) a ahora+3 min (`scripts/buffer_envio.py`, copia de `Live/enviar_cola.py`). Marca en
+  `data/redes/post_partido/<id>.json` (no repite), registro `data/redes/post_partido_log.csv`, consumo en
+  `data/redes/post_partido_consumo.json`. Pasado inicio+4h sin terminar: "abandonado". Sin xG y antes de 3h: espera.
+- Por qué: el usuario lo aprobó el 10/10 (excepción fija a la regla de la API, ≤30 llamadas/día; ~3-5 por partido).
+  El post-partido tenía que esperar al backfill de la mañana siguiente.
+- Prueba sin red: `scripts/prueba_post_partido.py` (antes de ventana 0 llamadas, en juego → sigue, terminado → fila +
+  PNG + vídeo, la marca impide repetir, >4h abandona, tope 30/día). Durante el desarrollo no se llamó a la API.
+
 ## 10/10/2026 — redes: goles esperados de la plantilla "goals" a 92 px
 - Qué: `generar.py` goals(): marcador de goles esperados de 120 a 92 px.
 - Por qué: con nombres largos ("Man City") la etiqueta del visitante pasaba de x 880 (zona segura). Revisado a ojo en Liverpool-City y Como-Roma.
