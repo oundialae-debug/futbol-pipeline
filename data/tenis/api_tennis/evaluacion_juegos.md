@@ -1,14 +1,14 @@
 # Más/menos juegos en directo: apuestas en papel
 
-Partidos acabados con cuota de juegos en el registro: **685**. Una apuesta por partido (se agrupa por partido). Cuota = la de la API en esa pasada, no la de Luckia. Con menos de 20 apuestas el número no significa nada.
+Partidos acabados con cuota de juegos en el registro: **692**. Una apuesta por partido (se agrupa por partido). Cuota = la de la API en esa pasada, no la de Luckia. Con menos de 20 apuestas el número no significa nada.
 
 | estrategia | apuestas | aciertos | beneficio medio | sigmas |
 |---|---|---|---|---|
-| **señal: vigilar el menos** | 178 | 63% | +12.0% | +1.77 |
-| control: siempre el menos (1ª pasada) | 685 | 51% | -6.9% | -1.95 |
-| control: siempre el más (1ª pasada) | 685 | 49% | -8.0% | -2.25 |
+| **señal: vigilar el menos** | 180 | 63% | +12.5% | +1.87 |
+| control: siempre el menos (1ª pasada) | 692 | 51% | -6.8% | -1.92 |
+| control: siempre el más (1ª pasada) | 692 | 49% | -8.1% | -2.29 |
 
-Brier del 'más' en la línea principal (1ª pasada): modelo 0.2711, mercado 0.2508 (menor es mejor). El modelo da al más +13.3% sobre lo que pasa de verdad.
+Brier del 'más' en la línea principal (1ª pasada): modelo 0.2710, mercado 0.2508 (menor es mejor). El modelo da al más +13.4% sobre lo que pasa de verdad.
 
 ## Señales
 
@@ -176,6 +176,7 @@ Brier del 'más' en la línea principal (1ª pasada): modelo 0.2711, mercado 0.2
 | Challenger Palermo (Italy): M. Giunta vs A. Moro Canas | 23.5 | 1.83 | 36 | pierde |
 | WTA 125 Suzhou: A. Sasnovich vs E. Kalieva | 21.5 | 1.30 | 22 | pierde |
 | Challenger Wuning 3 (China): J. D. Hara Friend vs R. Seggerman | 25.5 | 2.10 | 21 | gana |
+| ATP Shanghai: T. A. Tirante vs R. Jodar | 30.5 | 1.67 | 27 | gana |
 | ITF M M25 Darwin 2: S. Vujic vs H. Jones | 26.5 | 1.80 | 22 | gana |
 | ITF M M25 Darwin 2: Ja. Delaney vs Z. Stevens | 23.5 | 1.36 | 23 | gana |
 | WTA 125 Samsun: A. Aksu vs F. Crawley | 27.5 | 1.67 | 28 | pierde |
@@ -192,15 +193,16 @@ Brier del 'más' en la línea principal (1ª pasada): modelo 0.2711, mercado 0.2
 | ITF M M15+H Rodez: J. Penzlin vs E. Hudd | 25.5 | 1.80 | 22 | gana |
 | ITF M M15+H Rodez: D. Jade vs A. Gobat | 25.5 | 1.83 | 21 | gana |
 | ITF M M25 Luan: M. Alkaya vs N. Ehrenschneider | 27.5 | 1.30 | 27 | gana |
+| WTA 125 Suzhou: K. Okamura vs E. Kalieva | 20.5 | 1.53 | 20 | gana |
 
 ## Reglas del vigilante (desde el 01/10 solo en papel)
 
 | regla | apuestas resueltas | aciertos | beneficio medio (cuota API) | sigmas |
 |---|---|---|---|---|
-| actual | 405 | 57% | -10.8% | -2.78 |
+| actual | 411 | 57% | -11.0% | -2.84 |
 | actual (al móvil) | 125 | 62% | -4.1% | -0.61 |
-| aprendida | 546 | 52% | -3.8% | -0.95 |
-| casa65 | 251 | 83% | +1.4% | +0.47 |
+| aprendida | 554 | 53% | -3.6% | -0.91 |
+| casa65 | 254 | 83% | +1.2% | +0.41 |
 
 ## Reglas de todos los mercados (en papel, partidos desde el 2026-10-10 07:00 UTC)
 
@@ -210,20 +212,24 @@ Todavía no ha terminado ningún partido desde que se fijaron.
 
 ## Comparar casas con Pinnacle (profesional, en papel desde el 10/10)
 
-Todavía sin datos.
+Ninguna apuesta resuelta todavía.
+
+## IA del no favorito, en papel (circuito ATP/WTA, desde el 10/10)
+
+Todavía sin apuestas.
 
 ## Previos (antes de empezar), línea principal de juegos y ganador
 
-1139 partidos. Juegos (más de la línea principal), Brier (menor es mejor): modelo 0.2836, modelo corregido con el historial 0.2615, casa 0.2496. Pasó el más en el 49%.
+1148 partidos. Juegos (más de la línea principal), Brier (menor es mejor): modelo 0.2834, modelo corregido con el historial 0.2614, casa 0.2496. Pasó el más en el 49%.
 
 | regla de previo (en papel desde el 06/10 18:00) | apuestas | aciertos | beneficio medio | sigmas |
 |---|---|---|---|---|
-| previo ATP circuito: más si modelo >= casa+10 | 22 | 50% | -6.0% | -0.29 |
-| previo ajustado vs casa >= 10 (cualquier lado) | 302 | 50% | -7.4% | -1.39 |
-Ganador (1139): acierto modelo 66%, casa 71%.
+| previo ATP circuito: más si modelo >= casa+10 | 23 | 52% | -1.8% | -0.09 |
+| previo ajustado vs casa >= 10 (cualquier lado) | 305 | 50% | -7.0% | -1.33 |
+Ganador (1148): acierto modelo 66%, casa 71%.
 
 ## Aprendizaje (recalibración del modelo)
 
-Partidos resueltos: 613 (4636 líneas). Activa: **sí** (hace falta 30+ partidos y que mejore a la CASA en partidos que no vio).
-**Apostando con lo aprendido, día a día** (cada día aprende solo de los anteriores): 509 apuestas, aciertos 50%, beneficio medio -9.0%, -2.19 sigmas.
-Brier (menor es mejor): modelo 0.2702, modelo con el saque de hoy 0.2617, casa 0.2435, recalibrado (validado por partidos) 0.2323. Sesgo del modelo hacia el más: +18.2%.
+Partidos resueltos: 620 (4704 líneas). Activa: **sí** (hace falta 30+ partidos y que mejore a la CASA en partidos que no vio).
+**Apostando con lo aprendido, día a día** (cada día aprende solo de los anteriores): 516 apuestas, aciertos 50%, beneficio medio -8.8%, -2.16 sigmas.
+Brier (menor es mejor): modelo 0.2699, modelo con el saque de hoy 0.2615, casa 0.2434, recalibrado (validado por partidos) 0.2326. Sesgo del modelo hacia el más: +18.2%.

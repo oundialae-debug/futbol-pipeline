@@ -1,29 +1,29 @@
 event_key,tipo,torneo,jugador1,jugador2,estado,sets,juegos_totales
 12169154,Atp Doubles,Shanghai,Arends/ Johnson,Melo/ Zverev,,-,0
-12169155,Atp Doubles,Shanghai,Luz/ Matos,Cabral/ Tracy,,-,0
+12169155,Atp Doubles,Shanghai,Luz/ Matos,Cabral/ Tracy,Set 1,0 - 0,0
 12169156,Atp Doubles,Shanghai,Liutarevich/ Medvedev,Bublik/ Shelton,,-,0
-12169158,Atp Doubles,Shanghai,Pavlasek/ Rikl,Arevalo/ Pavic,,-,0
+12169158,Atp Doubles,Shanghai,Pavlasek/ Rikl,Arevalo/ Pavic,Finished,2 - 1,43
 12169162,Atp Doubles,Shanghai,Cerundolo/ Tirante,Schnaitter/ Wallner,,-,0
-12169166,Atp Doubles,Shanghai,Nouza/ Venus,Nys/ Roger-Vasselin,,-,0
+12169166,Atp Doubles,Shanghai,Nouza/ Venus,Nys/ Roger-Vasselin,Finished,0 - 2,18
 12169167,Atp Doubles,Shanghai,Zhang/ Zhou,Frantzen/ Haase,,-,0
 12169478,Atp Singles,Shanghai,L. Darderi,S. Tsitsipas,,-,0
 12169483,Atp Singles,Shanghai,A. Fils,P. Kotov,,-,0
-12169484,Atp Singles,Shanghai,J. Lehecka,N. Borges,Set 1,0 - 0,0
-12169487,Atp Singles,Shanghai,M. Arnaldi,T. Fritz,,-,0
-12169489,Atp Singles,Shanghai,C. Ugo Carabelli,F. Auger-Aliassime,Set 1,0 - 0,0
+12169484,Atp Singles,Shanghai,J. Lehecka,N. Borges,Finished,2 - 1,27
+12169487,Atp Singles,Shanghai,M. Arnaldi,T. Fritz,Set 1,0 - 0,0
+12169489,Atp Singles,Shanghai,C. Ugo Carabelli,F. Auger-Aliassime,Set 3,1 - 1,23
 12169492,Atp Singles,Shanghai,T. Paul,D. Vallejo,,-,0
-12169493,Atp Singles,Shanghai,T. A. Tirante,R. Jodar,Set 1,0 - 0,0
+12169493,Atp Singles,Shanghai,T. A. Tirante,R. Jodar,Finished,1 - 2,27
 12169495,Atp Singles,Shanghai,L. Tien,Z. Svajda,,-,0
 12169503,Atp Singles,Shanghai,S. Baez,V. Vacherot,,-,0
 12169504,Atp Singles,Shanghai,A. Tabilo,P. Carreno-Busta,,-,0
 12169534,Atp Singles,Shanghai,Y. Bu,C. Ruud,,-,0
 12169535,Atp Singles,Shanghai,J. M. Cerundolo,C. Alcaraz,,-,0
-12169536,Atp Singles,Shanghai,D. Medvedev,J-L. Struff,,-,0
+12169536,Atp Singles,Shanghai,D. Medvedev,J-L. Struff,Finished,2 - 1,29
 12169537,Atp Singles,Shanghai,B. Van De Zandschulp,A. Michelsen,,-,0
-12169539,Challenger Women Doubles,Suzhou,Li/ Zhang,Brooks/ Ovcharenko,Set 3,1 - 1,36
+12169539,Challenger Women Doubles,Suzhou,Li/ Zhang,Brooks/ Ovcharenko,Finished,2 - 1,39
 12169556,Atp Singles,Shanghai,I. Buse,Z. Bergs,,-,0
 12169557,Wta Singles,Beijing,M. Andreeva,N. Bartunkova,,-,0
-12169561,Atp Singles,Shanghai,D. Svrcina,T. M. Etcheverry,,-,0
+12169561,Atp Singles,Shanghai,D. Svrcina,T. M. Etcheverry,Set 1,0 - 0,6
 12169562,Wta Doubles,Beijing,Mertens/ Shnaider,Dabrowski/ Stefani,,-,0
 12169602,Challenger Women Doubles,Samsun,Bhosale/ Micic,Jakupovic/ Salden,,-,0
 12169661,Itf Women Singles,W15 Cipolletti (Argentina),Cam. Markus,S. Meabe,,-,9
@@ -38,34 +38,34 @@ event_key,tipo,torneo,jugador1,jugador2,estado,sets,juegos_totales
 12169685,Itf Women Singles,W35 Wagga Wagga 2,N. Sato,H. Sato,Finished,2 - 0,14
 12169686,Itf Men Singles,M25 Luan,M. Alkaya,N. Ehrenschneider,Finished,2 - 1,27
 12169687,Itf Men Singles,M25 Luan,M. Dellavedova,Y. Erel,Retired,1 - 0,12
-12169688,Itf Women Doubles,W35 Wagga Wagga 2,Stevens/ Thompson,Arakawa/ Nishimoto,Set 2,0 - 1,11
-12169689,Challenger Women Singles,Suzhou,K. Okamura,E. Kalieva,,-,0
+12169688,Itf Women Doubles,W35 Wagga Wagga 2,Stevens/ Thompson,Arakawa/ Nishimoto,Finished,0 - 2,18
+12169689,Challenger Women Singles,Suzhou,K. Okamura,E. Kalieva,Finished,2 - 0,20
 12169692,Challenger Men Singles,Wuning 3 (China) - Qualification,K. Saitoh,J. D. Hara Friend,Finished,0 - 2,15
-12169693,Challenger Men Singles,Wuning 3 (China) - Qualification,A. Kachmazov,O. Jasika,,-,0
-12169694,Itf Men Doubles,M25 Luan,Becroft/ Shepp,Barsukov/ Ehrenschneider,,-,0
-12169695,Itf Men Singles,M25 Darwin 2,S. Vujic,P. Sekulic,,-,0
-12169696,Challenger Women Singles,Suzhou,R. Sramkova,R. Zarazua,,-,0
+12169693,Challenger Men Singles,Wuning 3 (China) - Qualification,A. Kachmazov,O. Jasika,Finished,2 - 0,22
+12169694,Itf Men Doubles,M25 Luan,Becroft/ Shepp,Barsukov/ Ehrenschneider,Set 1,0 - 0,0
+12169695,Itf Men Singles,M25 Darwin 2,S. Vujic,P. Sekulic,Set 1,0 - 0,6
+12169696,Challenger Women Singles,Suzhou,R. Sramkova,R. Zarazua,Set 1,0 - 0,1
 12169698,Itf Men Doubles,M25 Kigali 2,Lock/ Lock,Brown/ De Alba,Interrupted,0 - 1,15
-12169699,Wta Singles,Wuhan,M. Frech,M. Uchijima,Set 2,1 - 0,10
-12169700,Wta Singles,Wuhan,T. Gibson,S. Sorribes Tormo,Set 1,0 - 0,9
-12169701,Wta Singles,Wuhan,A. Ito,A. Parks,Set 2,1 - 0,10
-12169702,Wta Singles,Wuhan,D. Kasatkina,V. Golubic,Set 2,0 - 1,11
-12169703,Wta Singles,Wuhan,S. Kenin,K. Rakhimova,,-,0
-12169704,Wta Singles,Wuhan,T. Preston,A. Krueger,,-,0
-12169705,Wta Singles,Wuhan,G. Ruse,Y. Putintseva,,-,0
-12169706,Wta Singles,Wuhan,P. Stearns,H. Shi,,-,0
+12169699,Wta Singles,Wuhan,M. Frech,M. Uchijima,Retired,1 - 0,15
+12169700,Wta Singles,Wuhan,T. Gibson,S. Sorribes Tormo,Finished,0 - 2,18
+12169701,Wta Singles,Wuhan,A. Ito,A. Parks,Finished,2 - 0,17
+12169702,Wta Singles,Wuhan,D. Kasatkina,V. Golubic,Finished,2 - 1,33
+12169703,Wta Singles,Wuhan,S. Kenin,K. Rakhimova,Set 1,0 - 0,0
+12169704,Wta Singles,Wuhan,T. Preston,A. Krueger,Set 2,0 - 1,21
+12169705,Wta Singles,Wuhan,G. Ruse,Y. Putintseva,Set 2,0 - 1,15
+12169706,Wta Singles,Wuhan,P. Stearns,H. Shi,Set 2,1 - 0,16
 12169707,Wta Singles,Wuhan,S. Kraus,M. Linette,,-,0
 12169708,Wta Singles,Wuhan,Z. Sonmez,A. Zakharova,,-,0
 12169709,Wta Singles,Wuhan,L. Tararudee,C. Liu,,-,0
 12169710,Wta Singles,Wuhan,Y. Yuan,C. McNally,,-,0
 12169711,Wta Singles,Wuhan,A. Bondar,L. Boisson,,-,0
 12169712,Wta Singles,Wuhan,P. Kudermetova,K. Volynets,,-,0
-12169713,Wta Singles,Wuhan,C. Osorio,L. Zhu,,-,0
+12169713,Wta Singles,Wuhan,C. Osorio,L. Zhu,Cancelled,-,0
 12169714,Wta Singles,Wuhan,M. Sawangkaew,M. Joint,,-,0
 12169715,Challenger Men Doubles,Wuning 3 (China),Demin/ Derepasko,Santillan/ Zheng,,-,0
-12169716,Itf Women Singles,W15 Maanshan 7,V. Panshina,D. Egorova,Set 2,0 - 1,15
-12169717,Itf Women Singles,W15 Maanshan 7,J. Zhang,J. Wang,Set 3,1 - 1,18
-12169718,Itf Women Doubles,W15 Maanshan 7,Egorova/ Yuneva,Lu/ Wang,,-,0
+12169716,Itf Women Singles,W15 Maanshan 7,V. Panshina,D. Egorova,Finished,1 - 2,26
+12169717,Itf Women Singles,W15 Maanshan 7,J. Zhang,J. Wang,Retired,1 - 1,23
+12169718,Itf Women Doubles,W15 Maanshan 7,Egorova/ Yuneva,Lu/ Wang,Set 1,0 - 0,0
 12169720,Itf Men Singles,M25 Darwin 2,Z. Stevens,C. Hoole,,-,0
 12169721,Itf Women Singles,W50 Burgas (Bulgaria),R. Dencheva,A. Mintegi Del Olmo,,-,0
 12169723,Challenger Men Doubles,Braga,Cervantes/ Molchanov,Drzewiecki/ Kalender,,-,0
@@ -92,7 +92,7 @@ event_key,tipo,torneo,jugador1,jugador2,estado,sets,juegos_totales
 12169745,Itf Women Doubles,W50 Burgas (Bulgaria),Burcescu/ Zhenikhova,Kovackova/ Kovackova,,-,0
 12169750,Itf Women Doubles,W35 Santa Margherita di Pula 9,Pedone/ Zaar,Radovanovic/ Senic,,-,0
 12169751,Itf Women Singles,W35 Villeneuve d'Ascq,E. Lene,M. Thamm,,-,0
-12169753,Wta Doubles,Beijing,Siniakova/ Zhang,Routliffe/ Sutjiadi,,-,0
+12169753,Wta Doubles,Beijing,Siniakova/ Zhang,Routliffe/ Sutjiadi,Set 2,1 - 0,16
 12169754,Challenger Men Singles,Antofagasta,L. Midon,T. Seyboth Wild,,-,0
 12169755,Challenger Men Singles,Braga,M. Dodig,L. Neumayer,,-,0
 12169756,Challenger Men Singles,Villena,J. Pinnington Jones,D. Glinka,,-,0
@@ -141,3 +141,4 @@ event_key,tipo,torneo,jugador1,jugador2,estado,sets,juegos_totales
 12169804,Itf Men Singles,M15 Quito 3,T. McCormick,V. Bini,,-,0
 12169805,Itf Men Doubles,M15 Quito 3,Bobo/ McCormick,Gomez/ Urrea,,-,0
 12169806,Itf Men Singles,M15 Quito 3,L. Andrade da Silva,M. Covato,,-,0
+12169808,Wta Singles,Wuhan,C. Osorio,T. C. Grant,,-,0
