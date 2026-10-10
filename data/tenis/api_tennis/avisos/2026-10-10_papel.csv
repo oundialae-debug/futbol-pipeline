@@ -141,3 +141,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-10 11:40,12169757,Challenger Women Singles,Samsun,A. Aksu,H. Sakatsume,menos,21.5,0.6681,0.5576,1.666,True,actual
 2026-10-10 11:43,12169537,Atp Singles,Shanghai,B. Van De Zandschulp,A. Michelsen,menos,22.5,0.5899,0.4853,1.909,True,aprendida
 2026-10-10 11:43,12169768,Itf Men Singles,M25 Santa Margherita di Pula 9,A. Weis,A. Chepelev,menos,30.5,0.6782,0.5576,1.666,True,actual
+2026-10-10 11:49,12169478,Atp Singles,Shanghai,L. Darderi,S. Tsitsipas,menos,19.5,0.9259,0.9259,1.04,True,casa65
