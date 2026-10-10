@@ -1,4 +1,4 @@
-# Tenis en directo, 10/10/2026 13:33 UTC (15:33 en España)
+# Tenis en directo, 10/10/2026 13:46 UTC (15:46 en España)
 
 Calculadora desde el marcador exacto (modelo de puntos, superficie real) frente a la cuota en directo
 (sin margen). Ganador y sets: la calculadora suele coincidir con la casa. Total de juegos: el modelo
@@ -7,8 +7,7 @@ Se actualiza cada ~5 min; el registro en data/tenis/api_tennis/registro/ servir�
 
 | partido | tipo | superficie | marcador (sets, juegos, puntos, saca) | gana 1º: modelo / cuota | sets más probables (modelo) | total juegos: línea, modelo / cuota |
 |---|---|---|---|---|---|---|
-| S. Baez vs V. Vacherot | Atp Singles | Hard | 0-1, 1-1, 0 - 0, saca V. Vacherot | 14% / 12% | 0-2 63%, 1-2 24% | 20.5: 60% / 50% |
-| E. Moller vs V. Gaubas | Challenger Men Singles | Clay | 1-1, 0-0, 0 - 0, saca V. Gaubas | 52% / 48% | 2-1 52%, 1-2 48% |  |
-| P. Martinez vs L. Djere | Challenger Men Singles | Clay | 0-0, 1-4, 30 - 40, saca L. Djere | 11% / 19% | 0-2 67%, 1-2 22% | 19.5: 49% / 50% |
-| L. Stefanini vs A. Blinkova | Challenger Women Singles | Hard | 1-0, 4-3, 30 - 0, saca A. Blinkova | 84% / 84% | 2-0 74%, 1-2 16% | 17.5: 64% / 59% |
-| A. Garcian vs A. Gobat | Itf Men Singles | Hard | 0-0, 5-5, 15 - 0, saca A. Garcian | 55% / 50% | 2-0 29%, 2-1 26% |  |
+| S. Baez vs V. Vacherot | Atp Singles | Hard | 0-1, 3-3, 15 - 0, saca V. Vacherot | 16% / 15% | 0-2 55%, 1-2 29% | 22.5: 67% / 61% |
+| E. Moller vs V. Gaubas | Challenger Men Singles | Clay | 1-1, 2-1, 0 - 0, saca E. Moller | 71% / 62% | 2-1 71%, 1-2 29% | 27.5: 57% / 54% |
+| P. Martinez vs L. Djere | Challenger Men Singles | Clay | 0-0, 3-5, 40 - 0, saca P. Martinez | 14% / 29% | 0-2 62%, 1-2 24% | 23.5: 38% / 49% |
+| A. Garcian vs A. Gobat | Itf Men Singles | Hard | 0-0, 6-6, 3 - 4, saca A. Garcian | 46% / 42% | 0-2 30%, 2-1 26% |  |
