@@ -25,6 +25,13 @@ def _mediana(d):
     return S.median(v) if v else None
 
 
+def _error(ahora, donde, e):
+    """Los registros de GitHub no se pueden leer desde el chat: los fallos se apuntan en el repositorio."""
+    import traceback
+    with open("data/tenis/api_tennis/errores.log", "a") as fh:
+        fh.write(f"{ahora:%Y-%m-%d %H:%M} {donde}: {type(e).__name__}: {e}\n{traceback.format_exc()[-800:]}\n")
+
+
 def registrar(ahora, partidos):
     fecha = f"{ahora:%Y-%m-%d}"
     ruta = f"{PRE}/{fecha}.csv"
@@ -46,12 +53,14 @@ def registrar(ahora, partidos):
         valor_casas.registrar(ahora, partidos, odds)
     except Exception as e:  # noqa: BLE001  -- que un fallo aquí no tumbe los previos
         print(f"valor_casas falló: {type(e).__name__}: {e}")
+        _error(ahora, "valor_casas", e)
     try:                                   # IA del no favorito, en papel (ia_no_favorito_papel.py)
         import ia_no_favorito_papel
         ia_no_favorito_papel.registrar(ahora, partidos, odds,
                                        lambda p: Q.superficie(A.circuito(p), p.get("tournament_name"), p.get("tournament_key")))
     except Exception as e:  # noqa: BLE001
         print(f"ia_no_favorito falló: {type(e).__name__}: {e}")
+        _error(ahora, "ia_no_favorito", e)
     for p in pendientes:
         k = str(p.get("event_key"))
         o = odds.get(k) if isinstance(odds, dict) else None
