@@ -224,12 +224,12 @@ Brier del 'más' en la línea principal (1ª pasada): modelo 0.2702, mercado 0.2
 | juegos (menos) | favorito casa >= 65% | 13 | 77% | 85% | -8.9% | -0.60 |
 | juegos (menos) |   y cuota >= 1,30 | 5 | 60% | 74% | -18.8% | -0.57 |
 | juegos (menos) |   y sin Challenger/WTA 125 | 10 | 90% | 87% | +4.8% | +0.39 |
-| ganador | favorito casa >= 65% | 62 | 81% | 79% | +1.3% | +0.20 |
-| ganador |   y cuota >= 1,30 | 44 | 73% | 74% | -1.7% | -0.18 |
-| ganador |   y sin Challenger/WTA 125 | 52 | 83% | 79% | +3.8% | +0.56 |
-| resultado en sets | favorito casa >= 65% | 49 | 82% | 82% | -0.2% | -0.02 |
-| resultado en sets |   y cuota >= 1,30 | 23 | 74% | 75% | -0.9% | -0.07 |
-| resultado en sets |   y sin Challenger/WTA 125 | 40 | 82% | 81% | +0.9% | +0.12 |
+| ganador | favorito casa >= 65% | 64 | 81% | 80% | +1.9% | +0.30 |
+| ganador |   y cuota >= 1,30 | 45 | 73% | 74% | -0.8% | -0.09 |
+| ganador |   y sin Challenger/WTA 125 | 54 | 83% | 80% | +4.4% | +0.67 |
+| resultado en sets | favorito casa >= 65% | 51 | 80% | 82% | -1.4% | -0.20 |
+| resultado en sets |   y cuota >= 1,30 | 24 | 75% | 75% | +0.7% | +0.06 |
+| resultado en sets |   y sin Challenger/WTA 125 | 42 | 81% | 82% | -0.6% | -0.08 |
 
 ## Comparar casas con Pinnacle (profesional, en papel desde el 10/10)
 
@@ -258,13 +258,13 @@ Por casa (todas las apuestas):
 
 ## Previos (antes de empezar), línea principal de juegos y ganador
 
-1205 partidos. Juegos (más de la línea principal), Brier (menor es mejor): modelo 0.2830, modelo corregido con el historial 0.2610, casa 0.2495. Pasó el más en el 49%.
+1206 partidos. Juegos (más de la línea principal), Brier (menor es mejor): modelo 0.2829, modelo corregido con el historial 0.2611, casa 0.2495. Pasó el más en el 49%.
 
 | regla de previo (en papel desde el 06/10 18:00) | apuestas | aciertos | beneficio medio | sigmas |
 |---|---|---|---|---|
 | previo ATP circuito: más si modelo >= casa+10 | 26 | 54% | +1.2% | +0.06 |
-| previo ajustado vs casa >= 10 (cualquier lado) | 331 | 50% | -7.7% | -1.53 |
-Ganador (1205): acierto modelo 66%, casa 70%.
+| previo ajustado vs casa >= 10 (cualquier lado) | 332 | 50% | -7.5% | -1.48 |
+Ganador (1206): acierto modelo 66%, casa 70%.
 
 ## Aprendizaje (recalibración del modelo)
 
