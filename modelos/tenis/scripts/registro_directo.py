@@ -175,7 +175,16 @@ def main():
     import json
     json.dump(Q.SUP_API, open(Q.CACHE_SUP, "w"), indent=0, sort_keys=True)
     print(f"{len(tabla)} partidos, {len(filas)} filas de registro")
-    if ahora.minute < 5 or not os.path.exists(f"{RES}/{ahora:%Y-%m-%d}.csv"):
+    # la parte "de cada hora": antes solo si la pasada caía en el minuto 0-4, pero GitHub lanza las de cada 5
+    # minutos con retrasos irregulares y a veces no caía ninguna en ese hueco (03:xx y 05:xx del 10/10 sin
+    # resultados ni previos). Ahora: si han pasado 55 minutos desde la última vez (marca en un fichero).
+    marca = "data/tenis/api_tennis/ultima_hora.txt"
+    try:
+        ultima = datetime.fromisoformat(open(marca).read().strip())
+    except (OSError, ValueError):
+        ultima = None
+    if ultima is None or (ahora - ultima).total_seconds() >= 55 * 60 or not os.path.exists(f"{RES}/{ahora:%Y-%m-%d}.csv"):
+        open(marca, "w").write(ahora.isoformat())
         resultados(ahora)
         import evaluar_juegos
         evaluar_juegos.main()
