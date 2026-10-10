@@ -18,3 +18,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-10 03:47,12169493,Atp Singles,Shanghai,T. A. Tirante,R. Jodar,menos,22.5,0.5935,0.5,1.833,True,aprendida
 2026-10-10 03:50,12169484,Atp Singles,Shanghai,J. Lehecka,N. Borges,menos,22.5,0.573,0.5147,1.8,True,aprendida
 2026-10-10 03:52,12169692,Challenger Men Singles,Wuning 3 (China) - Qualification,K. Saitoh,J. D. Hara Friend,menos,16.5,0.7449,0.6876,1.363,True,actual
+2026-10-10 03:59,12169702,Wta Singles,Wuhan,D. Kasatkina,V. Golubic,menos,20.5,0.6161,0.5576,1.666,True,actual
