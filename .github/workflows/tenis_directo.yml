@@ -30,7 +30,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - run: pip install requests pandas
+      - run: pip install requests pandas scikit-learn   # scikit-learn: IA del no favorito (10/10)
       - name: Pasada
         env:
           API_TENNIS_KEY: ${{ secrets.API_TENNIS_KEY }}
