@@ -1,4 +1,4 @@
-# Tenis en directo, 10/10/2026 13:04 UTC (15:04 en España)
+# Tenis en directo, 10/10/2026 13:18 UTC (15:18 en España)
 
 Calculadora desde el marcador exacto (modelo de puntos, superficie real) frente a la cuota en directo
 (sin margen). Ganador y sets: la calculadora suele coincidir con la casa. Total de juegos: el modelo
@@ -7,10 +7,10 @@ Se actualiza cada ~5 min; el registro en data/tenis/api_tennis/registro/ servir�
 
 | partido | tipo | superficie | marcador (sets, juegos, puntos, saca) | gana 1º: modelo / cuota | sets más probables (modelo) | total juegos: línea, modelo / cuota |
 |---|---|---|---|---|---|---|
-| S. Baez vs V. Vacherot | Atp Singles | Hard | 0-0, 2-2, 30 - 30, saca V. Vacherot | 32% / 32% | 0-2 38%, 1-2 30% | 23.5: 55% / 49% |
-| B. Van De Zandschulp vs A. Michelsen | Atp Singles | Hard | 1-0, 3-4, 15 - 40, saca B. Van De Zandschulp | 49% / 50% | 1-2 51%, 2-1 33% | 28.5: 60% / 58% |
-| E. Moller vs V. Gaubas | Challenger Men Singles | Clay | 1-0, 2-3, 40 - 40, saca E. Moller | 71% / 65% | 2-0 40%, 2-1 31% |  |
-| P. Martinez vs L. Djere | Challenger Men Singles | Clay | 0-0, 0-0, 0 - 0, saca P. Martinez | 24% / 39% | 0-2 47%, 1-2 30% | 22.5: 50% / 46% |
-| L. Stefanini vs A. Blinkova | Challenger Women Singles | Hard | 1-0, 2-0, 40 - 15, saca L. Stefanini | 84% / 85% | 2-0 75%, 1-2 16% | 16.5: 62% / 50% |
-| A. Garcian vs A. Gobat | Itf Men Singles | Hard | 0-0, 1-1, 30 - 40, saca A. Garcian | 47% / 41% | 0-2 28%, 2-1 26% |  |
-| J. Otzipka vs A. Monnot | Itf Women Singles | Hard | 1-1, 0-2, 15 - 0, saca A. Monnot | 11% / 45% | 1-2 89%, 2-1 11% |  |
+| S. Baez vs V. Vacherot | Atp Singles | Hard | 0-0, 4-5, 0 - 0, saca S. Baez | 29% / 24% | 0-2 42%, 1-2 29% | 24.5: 59% / 51% |
+| B. Van De Zandschulp vs A. Michelsen | Atp Singles | Hard | 1-0, 5-4, A - 40, saca B. Van De Zandschulp | 97% / 95% | 2-0 95%, 1-2 3% |  |
+| E. Moller vs V. Gaubas | Challenger Men Singles | Clay | 1-0, 3-4, 15 - 0, saca E. Moller | 73% / 69% | 2-0 43%, 2-1 29% |  |
+| P. Martinez vs L. Djere | Challenger Men Singles | Clay | 0-0, 0-2, 30 - 30, saca P. Martinez | 15% / 25% | 0-2 60%, 1-2 25% | 20.5: 50% / 49% |
+| L. Stefanini vs A. Blinkova | Challenger Women Singles | Hard | 1-0, 4-1, 30 - 15, saca A. Blinkova | 92% / 93% | 2-0 88%, 1-2 8% | 16.5: 47% / 39% |
+| A. Garcian vs A. Gobat | Itf Men Singles | Hard | 0-0, 2-4, 30 - 15, saca A. Garcian | 35% / 25% | 0-2 40%, 2-1 26% |  |
+| J. Otzipka vs A. Monnot | Itf Women Singles | Hard | 1-1, 2-4, 30 - 0, saca A. Monnot | 14% / 34% | 1-2 86%, 2-1 14% |  |
