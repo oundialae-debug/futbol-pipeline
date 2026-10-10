@@ -156,3 +156,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-10 13:19,12169537,Atp Singles,Shanghai,B. Van De Zandschulp,A. Michelsen,menos,20.5,0.8088,0.75,1.25,True,actual
 2026-10-10 13:42,12169789,Challenger Men Singles,Braga,E. Moller,V. Gaubas,menos,27.5,0.6893,0.5576,1.666,True,actual
 2026-10-10 13:52,12169503,Atp Singles,Shanghai,S. Baez,V. Vacherot,menos,19.5,0.766,0.766,1.222,True,casa65
+2026-10-10 14:02,12169503,Atp Singles,Shanghai,S. Baez,V. Vacherot,menos,23.5,0.7755,0.7315,1.285,True,actual
