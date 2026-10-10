@@ -46,6 +46,12 @@ def registrar(ahora, partidos):
         valor_casas.registrar(ahora, partidos, odds)
     except Exception as e:  # noqa: BLE001  -- que un fallo aquí no tumbe los previos
         print(f"valor_casas falló: {type(e).__name__}: {e}")
+    try:                                   # IA del no favorito, en papel (ia_no_favorito_papel.py)
+        import ia_no_favorito_papel
+        ia_no_favorito_papel.registrar(ahora, partidos, odds,
+                                       lambda p: Q.superficie(A.circuito(p), p.get("tournament_name"), p.get("tournament_key")))
+    except Exception as e:  # noqa: BLE001
+        print(f"ia_no_favorito falló: {type(e).__name__}: {e}")
     for p in pendientes:
         k = str(p.get("event_key"))
         o = odds.get(k) if isinstance(odds, dict) else None

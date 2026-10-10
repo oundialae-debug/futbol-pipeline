@@ -159,6 +159,8 @@ def main():
     lin += [""] + reglas_papel.tabla()
     import valor_casas
     lin += [""] + valor_casas.tabla()
+    import ia_no_favorito_papel
+    lin += [""] + ia_no_favorito_papel.tabla()
     lin += previa(res)
     cal = C.ajustar()
     lin += ["", "## Aprendizaje (recalibración del modelo)", "",
