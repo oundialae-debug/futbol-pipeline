@@ -175,3 +175,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-10 17:28,12169804,Itf Men Singles,M15 Quito 3,T. McCormick,V. Bini,menos,32.5,0.6931,0.5576,1.666,True,actual
 2026-10-10 17:56,12169790,Challenger Men Singles,Palermo (Italy) - Qualification,J. Forejtek,A. Moro Canas,más,34.5,0.834,0.5,1.833,True,aprendida
 2026-10-10 19:09,12169806,Itf Men Singles,M15 Quito 3,L. Andrade da Silva,M. Covato,menos,21.5,0.6004,0.4424,2.1,True,aprendida
+2026-10-10 19:12,12169806,Itf Men Singles,M15 Quito 3,L. Andrade da Silva,M. Covato,menos,22.5,0.7122,0.5576,1.666,True,actual
