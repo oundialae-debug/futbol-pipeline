@@ -255,7 +255,7 @@ def upset_alert(d):
 def goals(d):
     h, a = d["home"], d["away"]
     xh, xa = d["exp_goals"]
-    centro = (f'<div class="res" style="font-size:120px"><span style="color:{h["c"]}">{xh:.1f}</span><s>·</s>'
+    centro = (f'<div class="res" style="font-size:92px"><span style="color:{h["c"]}">{xh:.1f}</span><s>·</s>'
               f'<span style="color:{a["c"]}">{xa:.1f}</span></div>')
     cuerpo = (num(f'{d["btts"]}%', AMARILLO) + '<div class="frase"><b>both teams</b> score, says our model</div>'
               + '<div class="mini">Expected goals</div>' + vs(h, a, centro))

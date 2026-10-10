@@ -11,6 +11,10 @@ cambios de código y archivos".
   el resumen y dónde leerlo.
 - Lo más nuevo, arriba.
 
+## 10/10/2026 — redes: goles esperados de la plantilla "goals" a 92 px
+- Qué: `generar.py` goals(): marcador de goles esperados de 120 a 92 px.
+- Por qué: con nombres largos ("Man City") la etiqueta del visitante pasaba de x 880 (zona segura). Revisado a ojo en Liverpool-City y Como-Roma.
+
 ## 10/10/2026 — redes: plantillas de CLUBES (5 grandes ligas), `datos_clubes.py`
 - `redes/plantillas/datos_clubes.py` (sin API): `elegir <fecha>` (los 2 partidos más grandes del día en data/calendario.csv,
   solo Premier, LaLiga, Serie A, Bundesliga y Ligue 1, nunca Segunda), `pre "<Local>" "<Visitante>" <fecha>` (pre1, pre3,
