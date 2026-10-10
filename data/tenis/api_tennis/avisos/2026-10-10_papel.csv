@@ -88,3 +88,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-10 09:27,12169561,Atp Singles,Shanghai,D. Svrcina,T. M. Etcheverry,menos,29.5,0.5803,0.5,1.833,True,aprendida
 2026-10-10 09:27,12169709,Wta Singles,Wuhan,L. Tararudee,C. Liu,menos,25.5,0.6094,0.4853,1.909,True,aprendida
 2026-10-10 09:27,12169711,Wta Singles,Wuhan,A. Bondar,L. Boisson,menos,27.5,0.5966,0.5,1.833,True,aprendida
+2026-10-10 09:27,12169725,Itf Men Singles,M25 Santa Margherita di Pula 9,D. Michalski,I. Ivanov,menos,19.5,0.6324,0.5,1.833,True,aprendida
