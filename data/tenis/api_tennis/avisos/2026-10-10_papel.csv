@@ -149,3 +149,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-10 12:10,12169794,Itf Men Singles,M15+H Rodez,J. Sels,E. Hudd,menos,21.5,0.6483,0.5576,1.666,True,actual
 2026-10-10 12:20,12169556,Atp Singles,Shanghai,I. Buse,Z. Bergs,menos,16.5,0.6545,0.5767,1.615,True,actual
 2026-10-10 12:34,12169794,Itf Men Singles,M15+H Rodez,J. Sels,E. Hudd,menos,21.5,0.8141,0.8141,1.142,True,casa65
+2026-10-10 12:40,12169733,Wta Singles,Beijing,Q. Zheng,E. Mertens,menos,20.5,0.5579,0.6451,1.444,True,actual
