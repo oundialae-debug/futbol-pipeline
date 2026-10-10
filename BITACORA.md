@@ -11,6 +11,10 @@ cambios de código y archivos".
   el resumen y dónde leerlo.
 - Lo más nuevo, arriba.
 
+## 10/10/2026 — redes: marcadores más pequeños en las plantillas (zona segura)
+- Qué: `generar.py` .res de 150 a 118 px y el xG de post1 de 130 a 100 px; post-partido del Real Madrid-Villarreal rehecho (post_v2.mp4).
+- Por qué: con "Villarreal" la etiqueta del visitante pasaba de x 880 en post1 y post2.
+
 ## 10/10/2026 — redes: post-partido AUTOMÁTICO en vídeo (`post_partido.py` + `post_partido.yml`)
 - Qué: cron cada 5 min. Para los 2 partidos de `datos_clubes.elegir` (hoy y ayer en Madrid): nada antes de inicio+1h45
   (0 llamadas); después, `/matches/{id}` hasta que termine, y entonces `/statistics/{id}` (funciones de

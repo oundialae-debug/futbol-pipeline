@@ -147,7 +147,7 @@ body{{width:1080px;height:1920px;background:{NOCHE};color:#F1F3F8;font-family:Ar
 .eq{{display:inline-flex;align-items:center;padding:8px 24px;border-radius:14px;background:var(--c);color:var(--t);font-size:48px;font-weight:900;font-stretch:85%;white-space:nowrap}}
 .eq i{{display:none}}
 .eq.r{{flex-direction:row-reverse;text-align:right}}
-.res{{font-size:150px;line-height:1;font-weight:900;font-stretch:72%;white-space:nowrap}}
+.res{{font-size:118px;line-height:1;font-weight:900;font-stretch:72%;white-space:nowrap}}
 .res s{{text-decoration:none;color:{GRIS};margin:0 8px}}
 .vs.peq .eq{{font-size:38px;padding:6px 18px}} .vs.peq .res{{font-size:96px}} .vs.peq .eq i{{width:24px;height:24px}}
 .mini{{font-size:38px;color:#AEB5C4;font-weight:600}}
@@ -315,7 +315,7 @@ def deserved(d):
         gano = (gh > ga) == (xh > xa) and gh != ga
         veredicto = f'{mejor["short"]} deserved it'
         col = VERDE if gano else ROJO
-    centro_xg = (f'<div class="res" style="font-size:130px"><span style="color:{h["c"]}">{xh:.1f}</span><s>·</s>'
+    centro_xg = (f'<div class="res" style="font-size:100px"><span style="color:{h["c"]}">{xh:.1f}</span><s>·</s>'
                  f'<span style="color:{a["c"]}">{xa:.1f}</span></div>')
     cuerpo = ('<div class="mini">Final score</div>' + vs(h, a, res(gh, ga), peq=True)
               + '<div class="mini">Chances created (xG)</div>' + vs(h, a, centro_xg, peq=True)
