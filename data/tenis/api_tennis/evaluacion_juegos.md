@@ -224,12 +224,12 @@ Brier del 'más' en la línea principal (1ª pasada): modelo 0.2704, mercado 0.2
 | juegos (menos) | favorito casa >= 65% | 14 | 79% | 85% | -7.9% | -0.58 |
 | juegos (menos) |   y cuota >= 1,30 | 5 | 60% | 74% | -18.8% | -0.57 |
 | juegos (menos) |   y sin Challenger/WTA 125 | 11 | 91% | 88% | +4.8% | +0.43 |
-| ganador | favorito casa >= 65% | 66 | 82% | 80% | +2.1% | +0.34 |
-| ganador |   y cuota >= 1,30 | 45 | 73% | 74% | -0.8% | -0.09 |
-| ganador |   y sin Challenger/WTA 125 | 55 | 84% | 80% | +4.4% | +0.68 |
-| resultado en sets | favorito casa >= 65% | 52 | 81% | 82% | -0.9% | -0.13 |
+| ganador | favorito casa >= 65% | 67 | 82% | 80% | +2.7% | +0.44 |
+| ganador |   y cuota >= 1,30 | 46 | 74% | 74% | +0.1% | +0.01 |
+| ganador |   y sin Challenger/WTA 125 | 56 | 84% | 80% | +5.1% | +0.79 |
+| resultado en sets | favorito casa >= 65% | 53 | 81% | 82% | -0.8% | -0.12 |
 | resultado en sets |   y cuota >= 1,30 | 24 | 75% | 75% | +0.7% | +0.06 |
-| resultado en sets |   y sin Challenger/WTA 125 | 43 | 81% | 81% | -0.0% | -0.01 |
+| resultado en sets |   y sin Challenger/WTA 125 | 44 | 82% | 82% | +0.0% | +0.01 |
 
 ## Comparar casas con Pinnacle (profesional, en papel desde el 10/10)
 
@@ -258,13 +258,13 @@ Por casa (todas las apuestas):
 
 ## Previos (antes de empezar), línea principal de juegos y ganador
 
-1208 partidos. Juegos (más de la línea principal), Brier (menor es mejor): modelo 0.2831, modelo corregido con el historial 0.2612, casa 0.2495. Pasó el más en el 49%.
+1209 partidos. Juegos (más de la línea principal), Brier (menor es mejor): modelo 0.2832, modelo corregido con el historial 0.2611, casa 0.2495. Pasó el más en el 49%.
 
 | regla de previo (en papel desde el 06/10 18:00) | apuestas | aciertos | beneficio medio | sigmas |
 |---|---|---|---|---|
 | previo ATP circuito: más si modelo >= casa+10 | 26 | 54% | +1.2% | +0.06 |
 | previo ajustado vs casa >= 10 (cualquier lado) | 333 | 50% | -7.8% | -1.53 |
-Ganador (1208): acierto modelo 66%, casa 70%.
+Ganador (1209): acierto modelo 66%, casa 70%.
 
 ## Aprendizaje (recalibración del modelo)
 

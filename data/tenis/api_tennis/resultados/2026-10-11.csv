@@ -5,7 +5,7 @@ event_key,tipo,torneo,jugador1,jugador2,estado,sets,juegos_totales
 12169165,Atp Doubles,Shanghai,Bolelli/ Vavassori,Krajicek/ Mektic,,-,0
 12169168,Atp Doubles,Shanghai,Polmans/ Zielinski,Jiang/ Zhang,,-,0
 12169681,Itf Women Doubles,W15 Cipolletti (Argentina),Britez Risso/ Kawano Cho,Nappi/ Rondinoni,Walk Over,-,0
-12169683,Itf Women Doubles,W15 Cipolletti (Argentina),Jurado/ Madrid Rocca,Larraya Guidi/ Meabe,,-,0
+12169683,Itf Women Doubles,W15 Cipolletti (Argentina),Jurado/ Madrid Rocca,Larraya Guidi/ Meabe,Finished,0 - 2,15
 12169684,Itf Women Doubles,W15 Cipolletti (Argentina),Sanchez/ Urrutia,Mondati/ Tejada,,-,0
 12169690,Atp Singles,Shanghai,A. De Minaur,R. Sakamoto,,-,0
 12169691,Atp Singles,Shanghai,B. Shelton,A. Gea,,-,0
@@ -15,10 +15,10 @@ event_key,tipo,torneo,jugador1,jugador2,estado,sets,juegos_totales
 12169731,Atp Singles,Shanghai,K. Khachanov,A. Mannarino,,-,0
 12169747,Atp Singles,Shanghai,A. Bublik,B. Nakashima,,-,0
 12169748,Atp Singles,Shanghai,H. Hurkacz,Y. Zhou,,-,0
-12169775,Itf Women Singles,W50 Lexington,A. Rus,K. Carnicella,Set 1,0 - 0,3
+12169775,Itf Women Singles,W50 Lexington,A. Rus,K. Carnicella,Set 3,1 - 1,17
 12169785,Itf Women Doubles,W50 Heraklion 2,Brancaccio/ Papamichail,Amiraghyan/ Nepliy,Walk Over,-,0
-12169797,Itf Women Singles,W50 Lexington,M. Brengle,A. Sharma,Set 1,0 - 0,4
-12169807,Itf Women Singles,W35 Wagga Wagga 2,N. Sato,E. Shibahara,,-,0
+12169797,Itf Women Singles,W50 Lexington,M. Brengle,A. Sharma,Finished,0 - 2,17
+12169807,Itf Women Singles,W35 Wagga Wagga 2,N. Sato,E. Shibahara,Set 2,0 - 1,10
 12169809,Wta Singles,Wuhan,M. Frech,A. Ito,,-,0
 12169810,Challenger Women Doubles,Suzhou,Li/ Zhang,Prozorova/ Sasnovich,,-,0
 12169811,Itf Men Singles,M25 Luan,M. Dellavedova,M. Alkaya,,-,0
@@ -155,3 +155,4 @@ event_key,tipo,torneo,jugador1,jugador2,estado,sets,juegos_totales
 12170021,Challenger Men Singles,Santa Cruz 2,P. A. Saraiva Dos Santos,S. De La Fuente,,-,0
 12170022,Challenger Men Singles,Santa Cruz 2,L. Suarez,A. Huertas Del Pino Cordova,,-,0
 12170023,Challenger Men Singles,Santa Cruz 2,F. Zeballos,S. Heredia,,-,0
+12170024,Itf Men Singles,M15 Quito 3,T. McCormick,L. Andrade da Silva,,-,0
