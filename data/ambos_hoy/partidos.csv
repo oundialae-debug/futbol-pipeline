@@ -1,3 +1,4 @@
 match_id,liga_id,fecha,saque_utc,local_id,local,visitante_id,visitante,estado,arbitro,clima_status,clima_temp_txt,local_ids,local_formacion,visitante_ids,visitante_formacion
-1336035893,120775,2026-10-11T14:15:00.000Z,14:15,616057,Almería,457771,Leganes,Not started,,partly cloudy day,23.44°C,,,,
-1336421396,119924,2026-10-11T14:15:00.000Z,14:15,467132,Real Sociedad,463728,Deportivo La Coruña,Not started,,partly cloudy day,20.9°C,,,,
+1325368608,33973,2026-10-11T15:30:00.000Z,15:30,34824,Liverpool,43334,Manchester City,Not started,"Kavanagh, Christopher",partly cloudy day,13.77°C,,,,
+1340478113,67162,2026-10-11T15:30:00.000Z,15:30,136944,SC Freiburg,148858,FC Schalke 04,Not started,"Petersen, Martin",cloudy,14.45°C,,,,
+1321417415,52695,2026-10-11T15:15:00.000Z,15:15,80778,Rennes FC,92692,Auxerre,Not started,"Delajod, Willy",cloudy,16.59°C,,,,
