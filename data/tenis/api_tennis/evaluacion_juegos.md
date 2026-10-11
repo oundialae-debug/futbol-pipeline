@@ -243,29 +243,29 @@ Brier del 'más' en la línea principal (1ª pasada): modelo 0.2698, mercado 0.2
 | juegos (menos) | favorito casa >= 65% | 22 | 77% | 84% | -8.8% | -0.80 |
 | juegos (menos) |   y cuota >= 1,30 | 9 | 56% | 74% | -24.5% | -1.03 |
 | juegos (menos) |   y sin Challenger/WTA 125 | 15 | 80% | 87% | -8.5% | -0.68 |
-| ganador | favorito casa >= 65% | 177 | 80% | 81% | -1.6% | -0.43 |
-| ganador |   y cuota >= 1,30 | 109 | 72% | 74% | -2.1% | -0.36 |
+| ganador | favorito casa >= 65% | 178 | 80% | 81% | -1.5% | -0.39 |
+| ganador |   y cuota >= 1,30 | 110 | 73% | 74% | -1.7% | -0.30 |
 | ganador |   y sin Challenger/WTA 125 | 92 | 80% | 80% | +0.8% | +0.15 |
-| resultado en sets | favorito casa >= 65% | 133 | 77% | 82% | -6.5% | -1.43 |
-| resultado en sets |   y cuota >= 1,30 | 63 | 70% | 75% | -6.1% | -0.78 |
+| resultado en sets | favorito casa >= 65% | 134 | 77% | 82% | -6.2% | -1.37 |
+| resultado en sets |   y cuota >= 1,30 | 64 | 70% | 74% | -5.5% | -0.71 |
 | resultado en sets |   y sin Challenger/WTA 125 | 72 | 74% | 82% | -11.0% | -1.72 |
 
 ## Comparar casas con Pinnacle (profesional, en papel desde el 10/10)
 
 | mercado | apuestas | partidos | aciertos | valor esperado (Pinnacle al apostar) | valor contra el cierre | beneficio real | sigmas (por partido) |
 |---|---|---|---|---|---|---|---|
-| favorito >= 75% a la mejor cuota | 40 | 40 | 95% | -3.7% | -3.6% | +7.6% | +1.81 |
+| favorito >= 75% a la mejor cuota | 41 | 41 | 95% | -3.6% | -3.6% | +7.5% | +1.82 |
 | ganador | 38 | 28 | 32% | +12.3% | +12.4% | -31.1% | -1.14 |
 | juegos | 7 | 6 | 71% | +5.3% | +5.3% | +41.7% | +1.45 |
-| todo | 85 | 64 | 65% | +4.2% | +4.3% | -6.9% | +0.30 |
-| favorito >= 75% a cuota de PINNACLE | 40 | 40 | 95% | | | +6.8% | |
+| todo | 86 | 65 | 65% | +4.1% | +4.2% | -6.8% | +0.30 |
+| favorito >= 75% a cuota de PINNACLE | 41 | 41 | 95% | | | +6.6% | |
 
 Por casa (todas las apuestas):
 
 | casa | apuestas | beneficio | contra el cierre |
 |---|---|---|---|
 | 1xBet | 10 | -15.0% | +8.2% |
-| BetVictor | 6 | +18.8% | +3.7% |
+| BetVictor | 7 | +16.4% | +2.9% |
 | Betano | 7 | -5.0% | +4.2% |
 | Marathon | 3 | -61.3% | +0.8% |
 | Sbo | 2 | +34.0% | +2.3% |
@@ -281,13 +281,13 @@ Por casa (todas las apuestas):
 
 ## Previos (antes de empezar), línea principal de juegos y ganador
 
-1306 partidos. Juegos (más de la línea principal), Brier (menor es mejor): modelo 0.2849, modelo corregido con el historial 0.2629, casa 0.2496. Pasó el más en el 49%.
+1307 partidos. Juegos (más de la línea principal), Brier (menor es mejor): modelo 0.2850, modelo corregido con el historial 0.2629, casa 0.2496. Pasó el más en el 49%.
 
 | regla de previo (en papel desde el 06/10 18:00) | apuestas | aciertos | beneficio medio | sigmas |
 |---|---|---|---|---|
 | previo ATP circuito: más si modelo >= casa+10 | 28 | 57% | +7.3% | +0.41 |
 | previo ajustado vs casa >= 10 (cualquier lado) | 381 | 49% | -9.2% | -1.95 |
-Ganador (1306): acierto modelo 66%, casa 71%.
+Ganador (1307): acierto modelo 66%, casa 71%.
 
 ## Aprendizaje (recalibración del modelo)
 
