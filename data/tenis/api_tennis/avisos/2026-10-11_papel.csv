@@ -26,3 +26,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-11 06:14,12169691,Atp Singles,Shanghai,B. Shelton,A. Gea,menos,26.5,0.7099,0.6451,1.444,True,actual
 2026-10-11 06:16,12169691,Atp Singles,Shanghai,B. Shelton,A. Gea,menos,26.5,0.75,0.75,1.25,True,casa65
 2026-10-11 06:28,12169748,Atp Singles,Shanghai,H. Hurkacz,Y. Zhou,menos,21.5,0.5976,0.4634,2.0,True,aprendida
+2026-10-11 06:28,12169818,Wta Singles,Wuhan,H. Shi,K. Rakhimova,menos,22.5,0.6461,0.5889,1.571,True,actual
