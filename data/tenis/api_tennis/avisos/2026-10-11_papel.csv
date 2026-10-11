@@ -38,3 +38,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-11 07:39,12169840,Wta Singles,Wuhan,A. Bondar,M. Sawangkaew,menos,22.5,0.7315,0.7315,1.285,True,casa65
 2026-10-11 07:52,12169820,Challenger Women Singles,Suzhou,R. Sramkova,K. Okamura,menos,21.5,0.6251,0.5147,1.8,True,aprendida
 2026-10-11 07:59,12169874,Itf Men Singles,M15 Burgas (Bulgaria),G. Lazarov,M. Nannelli,menos,15.5,0.5576,0.5576,1.666,True,actual
+2026-10-11 08:04,12169876,Itf Men Singles,M25 Santa Margherita di Pula 9,D. Michalski,A. Weis,menos,20.5,0.6022,0.5147,1.8,True,aprendida
