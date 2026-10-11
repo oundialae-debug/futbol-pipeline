@@ -103,3 +103,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-11 13:04,12169932,Challenger Women Singles,Mallorca,L. Karatancheva,I. Wobker,menos,20.5,0.5883,0.4853,1.909,True,aprendida
 2026-10-11 13:05,12169941,Challenger Women Singles,Rovereto,I. M. Serban,Z. Li,menos,15.5,0.766,0.766,1.222,True,casa65
 2026-10-11 13:13,12169933,Challenger Women Singles,Mallorca,C. Diaz Adrover,S. Sakellaridi,menos,20.5,0.6102,0.5,1.833,True,aprendida
+2026-10-11 13:18,12169873,Wta Singles,Beijing,Q. Zheng,M. Andreeva,menos,22.5,0.766,0.766,1.222,True,casa65
