@@ -26,6 +26,7 @@ jobs:
       contents: write
     env:
       HIGHLIGHTLY_API_KEY: ${{ secrets.HIGHLIGHTLY_API_KEY }}
+      LIVE_DISPATCH_TOKEN: ${{ secrets.LIVE_DISPATCH_TOKEN }}   # opcional: avisa a Live al instante
     steps:
       - uses: actions/checkout@v4
 

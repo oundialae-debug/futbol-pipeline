@@ -264,7 +264,30 @@ def publicar(pd, DC, x, fecha, t, uso, fila, base, marca):
                "resultado": f"{int(fila.goles_l)}-{int(fila.goles_v)}", "hora": t.isoformat(timespec="seconds"),
                "llamadas": uso["partidos"].get(str(x.match_id), 0)}
     fin(marca, marca_d, f"post-partido: {fila.local}-{fila.visitante} datos listos", extra=[R["hist"]])
+    avisar_live()
     return "datos_listos"
+
+
+def avisar_live():
+    """Usuario 11/10: el cron de Live en GitHub se espacia a 30 min y retrasa el post. En cuanto la marca está subida,
+    lanzamos YA el workflow de Live (workflow_dispatch). Necesita el secreto LIVE_DISPATCH_TOKEN (token con permiso
+    Actions: lectura y escritura sobre oundialae-debug/Live); sin él no hace nada y Live recoge la marca en su cron."""
+    tok = os.environ.get("LIVE_DISPATCH_TOKEN")
+    if not tok or OPC.get("simular"):
+        return False
+    import urllib.request
+    req = urllib.request.Request(
+        "https://api.github.com/repos/oundialae-debug/Live/actions/workflows/enviar_cola.yml/dispatches",
+        data=json.dumps({"ref": "main"}).encode(), method="POST",
+        headers={"Authorization": f"Bearer {tok}", "Accept": "application/vnd.github+json",
+                 "X-GitHub-Api-Version": "2022-11-28", "User-Agent": "2yellow-post-partido"})
+    try:
+        with urllib.request.urlopen(req, timeout=30) as r:
+            print(f"Live avisado (HTTP {r.status})")
+            return True
+    except Exception as ex:
+        print(f"[!] no pude avisar a Live: {ex} (lo recogerá su cron)")
+        return False
 
 
 def fin(marca, d, msg, extra=()):

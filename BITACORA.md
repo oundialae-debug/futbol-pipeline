@@ -11,6 +11,10 @@ cambios de código y archivos".
   el resumen y dónde leerlo.
 - Lo más nuevo, arriba.
 
+## 11/10/2026 — redes: aviso inmediato a Live cuando los datos del post-partido están listos
+- Qué: `post_partido.py` llama a `workflow_dispatch` de Live/enviar_cola.yml justo tras subir la marca "datos_listos" (opcional: solo si existe el secreto `LIVE_DISPATCH_TOKEN`; sin él, no hace nada).
+- Por qué: el cron de Live se espació a 30 min en GitHub y Como-Roma salió ~30 min tras el final en lugar de ~20.
+
 ## 11/10/2026 — redes: duelo de jugadores dentro de la zona segura
 - `generar.py` (head_to_head con fotos): banda de caras 330→290 px (con 330 la pregunta final pasaba de y=1540); `sin_marcador` pone "VS" en vez del recuento de filas ("5-0" confundía). `datos_rankings.py jugadores`: `sin_marcador` siempre y nombre corto "Vinícius" (antes "Júnior"). Porqué: el parche se había perdido con el contenedor anterior y la tarea diaria lo necesita cada día.
 
