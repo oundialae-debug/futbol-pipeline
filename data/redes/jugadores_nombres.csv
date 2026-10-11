@@ -122,7 +122,7 @@ jugador_id,nombre,equipo_id,equipo
 64109066,A. MaksimoviÄ,148007,RB Leipzig
 43463,C. Nkunku,148007,RB Leipzig
 1179962,N. Seiwald,148007,RB Leipzig
-44597637,N. El Aynaoui,423731,AS Roma
+44597637,N. El Aynaoui,148007,RB Leipzig
 4050592,D. Raum,148007,RB Leipzig
 26204675,C. Lukeba,148007,RB Leipzig
 184982,W. Orbán,148007,RB Leipzig
@@ -205,7 +205,7 @@ jugador_id,nombre,equipo_id,equipo
 26177144,T. Morton,68864,Lyon
 56487970,E. Nuamah,68864,Lyon
 83713,C. Tolisso,68864,Lyon
-58177182,M. Fofana,68864,Lyon
+58177182,M. Fofana,635630,Sunderland
 14000,L. Openda,68864,Lyon
 11102,Clinton Mata,68864,Lyon
 65243311,K. Boudache,68864,Lyon
@@ -1001,7 +1001,7 @@ jugador_id,nombre,equipo_id,equipo
 967603,J. Álvarez,451814,Atlético Madrid
 90797,Álex Grimaldo,451814,Atlético Madrid
 3021641,A. Lookman,451814,Atlético Madrid
-1366883,J. David,422880,Juventus
+1366883,J. David,451814,Atlético Madrid
 7615615,Robin Le Normand,451814,Atlético Madrid
 1241786,M. Hjulmand,451814,Atlético Madrid
 397019,J. Musso,451814,Atlético Madrid
@@ -1081,24 +1081,24 @@ jugador_id,nombre,equipo_id,equipo
 61669755,N. Marcelli,559040,Slovan Bratislava
 54451159,S. Camara,559040,Slovan Bratislava
 55930749,Antonio Vergara,419476,Napoli
-138936,Leonardo Spinazzola,419476,Napoli
-15449,Benoît Badiashile,419476,Napoli
+138936,L. Spinazzola,419476,Napoli
+15449,B. Badiashile,419476,Napoli
 89026,David Neres,419476,Napoli
-5016270,Vanja Milinković-Savić,419476,Napoli
-32053483,Lorenzo Lucca,419476,Napoli
-6054398,Sam Beukema,419476,Napoli
-5179846,Nikita Contini,419476,Napoli
+5016270,V. Milinković-Savić,419476,Napoli
+32053483,L. Lucca,419476,Napoli
+6054398,S. Beukema,419476,Napoli
+5179846,N. Contini,419476,Napoli
 56113806,Costantino Favasuli,419476,Napoli
 50386,A. Meret,419476,Napoli
-4997916,Giovanni Di Lorenzo,419476,Napoli
+4997916,G. Di Lorenzo,419476,Napoli
 211708,Amir Rrahmani,419476,Napoli
 38167780,Rafa Marín,419476,Napoli
 7608048,Mathías Olivera,419476,Napoli
-20998257,Billy Gilmour,419476,Napoli
-7637833,Stanislav Lobotka,419476,Napoli
-101423,Kevin De Bruyne,419476,Napoli
-35413,Matteo Politano,419476,Napoli
-46369120,Rasmus Højlund,419476,Napoli
+20998257,B. Gilmour,419476,Napoli
+7637833,S. Lobotka,419476,Napoli
+101423,K. De Bruyne,419476,Napoli
+35413,M. Politano,419476,Napoli
+46369120,R. Højlund,419476,Napoli
 50061977,Alisson Santos,419476,Napoli
 366107,Kepa,36526,Arsenal
 1631889,Bruno Guimarães,36526,Arsenal
@@ -1304,27 +1304,27 @@ jugador_id,nombre,equipo_id,equipo
 45772454,Álvaro Fernández,461175,Real Madrid
 72530171,Carlos Espí,461175,Real Madrid
 7565222,Josep Martínez,430539,Inter
-3463103,Marcus Thuram,430539,Inter
-438879,Benjamin Pavard,430539,Inter
+3463103,M. Thuram,430539,Inter
+438879,B. Pavard,430539,Inter
 35091,Lautaro Martínez,430539,Inter
 47327,Curtis Jones,430539,Inter
-43552103,Andy Diouf,430539,Inter
+43552103,A. Diouf,430539,Inter
 1648472,Carlos Augusto,430539,Inter
 264194,H. Çalhanoğlu,430539,Inter
-4017587,Yann Bisseck,430539,Inter
-4992603,Alessandro Bastoni,430539,Inter
-4919992,Nicolò Barella,430539,Inter
-53123,Piotr Zieliński,430539,Inter
-959,Manuel Akanji,430539,Inter
-44379965,Ange-Yoan Bonny,430539,Inter
-14729722,Raffaele Di Gennaro,430539,Inter
-55675242,Pio Esposito,430539,Inter
-1622551,Luís Henrique,430539,Inter
-234731,Henrikh Mkhitaryan,430539,Inter
-4997111,Ivan Provedel,430539,Inter
-55099184,Aleksandar Stanković,430539,Inter
+4017587,Y. Bisseck,430539,Inter
+4992603,A. Bastoni,430539,Inter
+4919992,N. Barella,430539,Inter
+53123,P. Zieliński,430539,Inter
+959,M. Akanji,430539,Inter
+44379965,A. Bonny,430539,Inter
+14729722,R. Di Gennaro,430539,Inter
+55675242,F. Esposito,430539,Inter
+1622551,Luis Henrique,430539,Inter
+234731,H. Mkhitaryan,430539,Inter
+4997111,I. Provedel,430539,Inter
+55099184,A. Stanković,430539,Inter
 100940,John Stones,430539,Inter
-56061159,Petar Sučić,430539,Inter
+56061159,P. Sučić,430539,Inter
 4070556,G. Kobel,141199,Borussia Dortmund
 65883769,Kouakou Joane Gadou,141199,Borussia Dortmund
 4084402,W. Anton,141199,Borussia Dortmund
@@ -1565,7 +1565,7 @@ jugador_id,nombre,equipo_id,equipo
 4241377,S. Tigges,158219,SC Paderborn 07
 53797660,Jonah Benedict Sticker,158219,SC Paderborn 07
 4034653,T. Baack,158219,SC Paderborn 07
-20880727,R. Philippe,149709,Hamburger SV
+20880727,R. Philippe,158219,SC Paderborn 07
 4071683,F. Götze,158219,SC Paderborn 07
 4043508,M. Schubert,158219,SC Paderborn 07
 65534077,D. Zeitler,158219,SC Paderborn 07
@@ -1727,7 +1727,7 @@ jugador_id,nombre,equipo_id,equipo
 4289516,L. Schnellbacher,1413444,SV Elversberg
 231672,B. Leno,31420,Fulham
 470274,T. Castagne,31420,Fulham
-20389194,D. Affengruber,679031,Elche
+20389194,D. Affengruber,31420,Fulham
 24627841,C. Bassey,31420,Fulham
 3147543,A. Robinson,31420,Fulham
 311528,S. Berge,31420,Fulham
@@ -1794,30 +1794,30 @@ jugador_id,nombre,equipo_id,equipo
 4127389,J. Hofmann,143752,Bayer Leverkusen
 91889616,S. Konate,148007,RB Leipzig
 71311723,A. Koné,148007,RB Leipzig
-29102836,Edoardo Corvi,445857,Parma
+29102836,E. Corvi,445857,Parma
 3395644,Diego Carlos,445857,Parma
-68946311,Mariano Troilo,445857,Parma
-92888782,Dominik Drobnic,445857,Parma
-4897774,Enrico Delprato,445857,Parma
-7807205,Vincent Sierro,445857,Parma
-49722750,Mandela Keita,445857,Parma
-14708792,Emanuele Valeri,445857,Parma
-31354904,El Bilal Touré,445857,Parma
-77871024,Simone Lontani,445857,Parma
-31379859,David Romero,445857,Parma
-48609918,Nesta Elphege,445857,Parma
+68946311,M. Troilo,445857,Parma
+92888782,D. Drobnic,445857,Parma
+4897774,E. Del Prato,445857,Parma
+7807205,V. Sierro,445857,Parma
+49722750,M. Keita,445857,Parma
+14708792,E. Valeri,445857,Parma
+31354904,E. Touré,445857,Parma
+77871024,S. Lontani,445857,Parma
+31379859,D. Romero,445857,Parma
+48609918,N. Elphege,445857,Parma
 7759227,Pontus Almqvist,445857,Parma
-51943584,Giovanni Fabbian,427986,Fiorentina
-80400334,Sascha Britschgi,445857,Parma
-58403226,Christian Ordoñez,445857,Parma
-53953991,Giovanni Daffara,445857,Parma
-4893266,Simone Ghidotti,445857,Parma
+51943584,G. Fabbian,445857,Parma
+80400334,S. Britschgi,445857,Parma
+58403226,C. Ordoñez,445857,Parma
+53953991,G. Daffara,445857,Parma
+4893266,S. Ghidotti,445857,Parma
 32760917,Abdoulaye Ndiaye,445857,Parma
-95926691,Abdou-Salam Konate,445857,Parma
-58291975,Benjamin Cremaschi,445857,Parma
-46122307,Franco Carboni,445857,Parma
+95926691,Abdou Konate,445857,Parma
+58291975,B. Cremaschi,445857,Parma
+46122307,F. Carboni,445857,Parma
 69650364,Ousmane Diallo,445857,Parma
-47099577,Matija Frigan,445857,Parma
+47099577,M. Frigan,445857,Parma
 5979211,Justin Bijlow,422029,Genoa
 45374140,Alessandro Marcandalli,422029,Genoa
 3053841,Leo Østigård,422029,Genoa
@@ -1842,31 +1842,31 @@ jugador_id,nombre,equipo_id,equipo
 98432978,Samuel Wiafe,422029,Genoa
 76583346,Franz-Ethan Meichtry,422029,Genoa
 5013211,Stefano Sabelli,422029,Genoa
-52771768,Lorenzo Palmisani,436496,Frosinone
-30818291,Anthony Oyono,436496,Frosinone
-56931847,Gabriele Calvani,436496,Frosinone
-29074500,Ilario Monterisi,436496,Frosinone
-61100298,Gabriele Bracaglia,436496,Frosinone
-5153925,Giacomo Calò,436496,Frosinone
-45256610,Patrizio Masini,436496,Frosinone
-53921469,Farès Ghedjemis,436496,Frosinone
-1217636,Romano Schmid,436496,Frosinone
-50111565,Giorgi Kvernadze,436496,Frosinone
-50595048,Antonio Raimondo,436496,Frosinone
-26173924,Giorgio Cittadini,436496,Frosinone
+52771768,L. Palmisani,436496,Frosinone
+30818291,A. Oyono,436496,Frosinone
+56931847,G. Calvani,436496,Frosinone
+29074500,I. Monterisi,436496,Frosinone
+61100298,G. Bracaglia,436496,Frosinone
+5153925,G. Calò,436496,Frosinone
+45256610,P. Masini,436496,Frosinone
+53921469,F. Ghedjemis,436496,Frosinone
+1217636,R. Schmid,436496,Frosinone
+50111565,G. Kvernadze,436496,Frosinone
+50595048,A. Raimondo,436496,Frosinone
+26173924,G. Cittadini,436496,Frosinone
 67966787,Matteo Cichella,436496,Frosinone
-5026413,Alessio Zerbin,436496,Frosinone
-50265642,Wisdom Amey,436496,Frosinone
+5026413,A. Zerbin,436496,Frosinone
+50265642,W. Amey,436496,Frosinone
 32808251,Anouar El Azzouzi,436496,Frosinone
-51980453,Sebastiano Desplanches,436496,Frosinone
-4972156,Matteo Pisseri,436496,Frosinone
-4084080,Kevin Akpoguma,436496,Frosinone
-28883393,Enzo Tchato Mbiayi,436496,Frosinone
+51980453,S. Desplanches,436496,Frosinone
+4972156,M. Pisseri,436496,Frosinone
+4084080,K. Akpoguma,436496,Frosinone
+28883393,E. Tchato,436496,Frosinone
 61471886,Omar Fayed,436496,Frosinone
-53951576,Luis Hasa,436496,Frosinone
+53951576,L. Hasa,436496,Frosinone
 20429766,Daniel Bîrligea,436496,Frosinone
-9855125,Tomáš Bobček,436496,Frosinone
-56113967,Seydou Fini,436496,Frosinone
+9855125,T. Bobček,436496,Frosinone
+56113967,S. Fini,436496,Frosinone
 5106913,Mauro Vigorito,762429,Como
 46386186,Willy Kambwala,454367,Villarreal
 5002907,Edoardo Goldaniga,762429,Como
@@ -1976,7 +1976,7 @@ jugador_id,nombre,equipo_id,equipo
 49446957,N. O&apos;Reilly,43334,Manchester City
 31320450,R. Roefs,635630,Sunderland
 184660,N. Mukiele,635630,Sunderland
-4071361,K. Danso,40781,Tottenham
+4071361,K. Danso,635630,Sunderland
 9000698,D. Ballard,635630,Sunderland
 72884371,D. Methalie,635630,Sunderland
 235858,G. Xhaka,635630,Sunderland
@@ -1998,7 +1998,7 @@ jugador_id,nombre,equipo_id,equipo
 7607404,D. Dakonam,465430,Getafe
 29129401,Z. Romero,465430,Getafe
 10347302,J. Mojica,465430,Getafe
-26016144,Iván Azón,762429,Como
+26016144,Iván Azón,465430,Getafe
 30266061,Ramón Terrats,465430,Getafe
 239883,N. Gudelj,465430,Getafe
 26122243,Francho Serrano,465430,Getafe
@@ -2059,7 +2059,7 @@ jugador_id,nombre,equipo_id,equipo
 98295806,Brando Mazzeo,427986,Fiorentina
 76409305,Christ Inao Oulaï,427986,Fiorentina
 264033,Marco Brescianini,427986,Fiorentina
-87738,Noa Lang,419476,Napoli
+87738,N. Lang,419476,Napoli
 548520,Frank Anguissa,419476,Napoli
 91466508,Claudio Pugliese,419476,Napoli
 89831,O. Vlachodimos,456920,Sevilla FC
@@ -2103,7 +2103,7 @@ jugador_id,nombre,equipo_id,equipo
 58401455,S. Hidalgo,82480,Toulouse
 88743998,M. Niflore,82480,Toulouse
 63553294,D. Odogu,82480,Toulouse
-63717836,M. Amougou,81629,Strasbourg
+63717836,M. Amougou,82480,Toulouse
 6297669,A. Dønnum,82480,Toulouse
 4110967,N. Schmidt,82480,Toulouse
 73581179,Julián Vignolo,82480,Toulouse
@@ -2115,7 +2115,7 @@ jugador_id,nombre,equipo_id,equipo
 58619127,S. Ebonog,95245,LE Havre AC
 50591345,A. Richardson,95245,LE Havre AC
 54938828,E. Jelert,95245,LE Havre AC
-71416373,R. Fofana,99500,Lens
+71416373,R. Fofana,95245,LE Havre AC
 313299,M. Samatta,95245,LE Havre AC
 206073,J. Maja,95245,LE Havre AC
 70413343,E. Koffi Vinette,95245,LE Havre AC
@@ -2123,7 +2123,7 @@ jugador_id,nombre,equipo_id,equipo
 45490543,J. Mwanga,95245,LE Havre AC
 20663216,R. Ndiaye,95245,LE Havre AC
 63718319,I. Bouneb,95245,LE Havre AC
-337610,A. Bodart,68013,Lille
+337610,A. Bodart,95245,LE Havre AC
 72602460,Mouhamed N'Diaye,95245,LE Havre AC
 74189759,D. Mosengo,95245,LE Havre AC
 43976016,K. Mizuta,95245,LE Havre AC
@@ -2384,8 +2384,8 @@ jugador_id,nombre,equipo_id,equipo
 96377169,Emanuele Lulli,423731,AS Roma
 50081941,Santiago Castro,423731,AS Roma
 126056,Lorenzo Pellegrini,423731,AS Roma
-4992764,Federico Dimarco,430539,Inter
-91494361,Leonardo Bovio,430539,Inter
+4992764,F. Dimarco,430539,Inter
+91494361,L. Bovio,430539,Inter
 70466312,Mattia Mosconi,430539,Inter
 289954,K. Trapp,97798,Paris FC
 13559252,A. Camara,97798,Paris FC
@@ -2556,7 +2556,7 @@ jugador_id,nombre,equipo_id,equipo
 62391035,L. Vušković,44185,Brighton
 10304637,P. Struijk,44185,Brighton
 3567914,O. Boscagli,44185,Brighton
-62608385,José María Andrés Baixauli,147156,VfB Stuttgart
+62608385,José María Andrés Baixauli,44185,Brighton
 3054324,P. Groß,44185,Brighton
 44817724,D. Gómez,44185,Brighton
 42797174,Y. Ayari,44185,Brighton
@@ -2688,7 +2688,7 @@ jugador_id,nombre,equipo_id,equipo
 4071844,J. Gouweleeuw,145454,FC Augsburg
 2343187,N. Labrović,145454,FC Augsburg
 72371103,Abdulay Bah,145454,FC Augsburg
-52791571,A. Ibrahimović,134391,Bayern Munich
+52791571,A. Ibrahimović,145454,FC Augsburg
 80418849,U. Ogundu,145454,FC Augsburg
 28781802,N. Atubolu,144603,Eintracht Frankfurt
 61581366,Elias Baum,144603,Eintracht Frankfurt
@@ -2878,7 +2878,7 @@ jugador_id,nombre,equipo_id,equipo
 5014660,S. Tonali,40781,Tottenham
 42931931,Sávio,40781,Tottenham
 54190339,Mateus Fernandes,40781,Tottenham
-13133407,Omar Marmoush,43334,Manchester City
+13133407,Omar Marmoush,40781,Tottenham
 3040317,D. Solanke,40781,Tottenham
 52822483,A. Gray,40781,Tottenham
 2561825,M. Kudus,40781,Tottenham
@@ -3113,7 +3113,7 @@ jugador_id,nombre,equipo_id,equipo
 7635901,Iván Villar,458622,Celta de Vigo
 2543471,J. Cajuste,456069,Malaga
 70781067,Samu Becerra,620312,Rayo Vallecano
-3578379,Reinildo Mandava,635630,Sunderland
+3578379,Reinildo,635630,Sunderland
 108491292,Hakim Dongopandji,95245,LE Havre AC
 83039446,Alex Teixeira,95245,LE Havre AC
 72765875,G. Zohouri,95245,LE Havre AC
@@ -3170,7 +3170,7 @@ jugador_id,nombre,equipo_id,equipo
 4227370,T. Kleindienst,139497,Borussia Mönchengladbach
 26041421,G. Doué,81629,Strasbourg
 5722738,J. Vásquez,422029,Genoa
-56343,Aleksa Terzić,436496,Frosinone
+56343,A. Terzić,436496,Frosinone
 53200994,Aitor Mañas,462026,Alavés
 53721346,César Tárrega,453516,Valencia
 73067428,Jaume Durá,453516,Valencia
@@ -3218,7 +3218,7 @@ jugador_id,nombre,equipo_id,equipo
 4034975,A. Bella-Kotchap,440751,Venezia
 55066179,M. Dagasso,440751,Venezia
 63179291,T. Gijselhart,463728,Deportivo La Coruña
-69361530,N. Edjouma,68013,Lille
+69361530,N. Edjouma,90990,Stade Brestois 29
 3866086,L. Mpasi,95245,LE Havre AC
 26092941,T. Pembélé,95245,LE Havre AC
 77928501,A. Arena,423731,AS Roma
@@ -3288,17 +3288,17 @@ jugador_id,nombre,equipo_id,equipo
 16907569,Germán Parreño,463728,Deportivo La Coruña
 5056520,Umar Sadiq,453516,Valencia
 7607565,Dimitri Foulquier,453516,Valencia
-145537,Scott McTominay,419476,Napoli
+145537,S. McTominay,419476,Napoli
 71821771,Christian Garofalo,419476,Napoli
 50331169,Giovane,419476,Napoli
 55167448,S. Egeli,49291,Ipswich
-45079027,Anton Kade,145454,FC Augsburg
-94293185,Tim Schnitzer,145454,FC Augsburg
+45079027,A. Kade,145454,FC Augsburg
+94293185,T. Schnitzer,145454,FC Augsburg
 20877024,N. Mbuku,145454,FC Augsburg
 96814606,Kilian Belazzoug,80778,Rennes FC
 43553069,Théo Eyoum,1105382,Le Mans
 30783676,M. Robin,1105382,Le Mans
-61359830,William Harhouz,1105382,Le Mans
+61359830,W. Harhouz,1105382,Le Mans
 88338439,Alexis Ciria,461175,Real Madrid
 47768049,H. Abaida,456069,Malaga
 107848902,Joseph Otunenche,456069,Malaga
@@ -3314,7 +3314,7 @@ jugador_id,nombre,equipo_id,equipo
 89753307,M. Zepa,31420,Fulham
 3110835,Joe Rodon,54397,Leeds
 3231102,Alex Cairns,54397,Leeds
-18694991,Moisés Caicedo,42483,Chelsea
+18694991,M. Caicedo,42483,Chelsea
 14972027,Mats Wieffer,44185,Brighton
 49829815,A. Cozier-Duberry,44185,Brighton
 42828247,Otávio,97798,Paris FC
@@ -3336,7 +3336,7 @@ jugador_id,nombre,equipo_id,equipo
 102713163,A. Mazzocchi,445857,Parma
 26012763,O. Sørensen,445857,Parma
 48769469,M. Diambou,90990,Stade Brestois 29
-108760645,Evan Mailly,90990,Stade Brestois 29
+108760645,E. Mailly,90990,Stade Brestois 29
 53002803,A. Camblan,90990,Stade Brestois 29
 104198227,Adama Timera,460324,Espanyol
 101623998,Antonio Pirro,427986,Fiorentina
@@ -3365,7 +3365,7 @@ jugador_id,nombre,equipo_id,equipo
 2930676,L. Kitching,1146230,Coventry
 5306714,H. Morita,55248,Hull City
 7212632,L. Millar,55248,Hull City
-32684281,Rocco Reitz,148007,RB Leipzig
+32684281,R. Reitz,148007,RB Leipzig
 54764948,A. Vermeeren,148007,RB Leipzig
 3995208,Leopold Zingerle,148007,RB Leipzig
 28698404,Enzo Leopold,139497,Borussia Mönchengladbach
@@ -3411,7 +3411,7 @@ jugador_id,nombre,equipo_id,equipo
 98749826,T. Macchioni,416072,Sassuolo
 72845570,A. Di Bitonto,416072,Sassuolo
 60994360,P. Nuamah,416072,Sassuolo
-7537047,Abdel Abqar,465430,Getafe
+7537047,A. Abqar,465430,Getafe
 68776456,Curro Burgos,465430,Getafe
 98505589,Jorge Castellanos,3970699,Racing Santander
 98190029,Andrés Vallecillo,3970699,Racing Santander
@@ -3425,7 +3425,7 @@ jugador_id,nombre,equipo_id,equipo
 19296487,M. Diaw,95245,LE Havre AC
 98300636,Oumar Konate,78225,Monaco
 88346489,Cheikh Tidiane Thiam,454367,Villarreal
-99318800,Nizar El Jmili,454367,Villarreal
+99318800,N. El Jmili,454367,Villarreal
 49222684,Jack Hinshelwood,44185,Brighton
 84430325,Zadok Yohanna,44185,Brighton
 58003463,Triston Rowe,56950,Aston Villa
@@ -3452,7 +3452,7 @@ jugador_id,nombre,equipo_id,equipo
 81731160,Branimir Mlačić,421178,Udinese
 106626912,Riccardo Cassano,762429,Como
 9653,Álvaro Morata,762429,Como
-7637672,Mathias Jensen,47589,Brentford
+7637672,M. Jensen,47589,Brentford
 388647,Richarlison,40781,Tottenham
 74915064,Luca Williams-Barnett,40781,Tottenham
 91076083,J. Iddrissou,430539,Inter
@@ -3464,7 +3464,7 @@ jugador_id,nombre,equipo_id,equipo
 107850029,Salimou Danfakha,92692,Auxerre
 46800600,Rafa Romero,456920,Sevilla FC
 52608997,C. Humphreys,49291,Ipswich
-79297162,J. T. Bi,635630,Sunderland
+79297162,J. Bi,635630,Sunderland
 44902732,Chadi Riad,45036,Crystal Palace
 4174401,Jean-Philippe Mateta,45036,Crystal Palace
 87905510,Jayden Lienou,54397,Leeds
@@ -3491,3 +3491,22 @@ jugador_id,nombre,equipo_id,equipo
 7644112,Fernando Calero,456069,Malaga
 7623343,Javi Puado,460324,Espanyol
 52000578,S. Baidoo,99500,Lens
+78875825,D. N´Guessan,90990,Stade Brestois 29
+79048095,E. Mbemba,97798,Paris FC
+21859929,Ansu Fati,78225,Monaco
+62556221,Luca Marianucci,419476,Napoli
+25437671,A. Diallo,28867,Manchester United
+3096989,D. Spence,430539,Inter
+79010099,M. Goffi,68013,Lille
+1367366,A. Sørloth,451814,Atlético Madrid
+5944596,S. van den Berg,47589,Brentford
+61666052,M. Palestra,42483,Chelsea
+5995150,A. Matusiwa,49291,Ipswich
+104046726,J. Angulo,635630,Sunderland
+52807027,D. Seimen,147156,VfB Stuttgart
+29097845,L. Assignon,147156,VfB Stuttgart
+181118,O. Burke,155666,Union Berlin
+28555436,T. Zimmerschied,1413444,SV Elversberg
+32725014,F. Schmahl,1413444,SV Elversberg
+37195823,N. Tella,143752,Bayer Leverkusen
+55248753,K. Suso,145454,FC Augsburg
