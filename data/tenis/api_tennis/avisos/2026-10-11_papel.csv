@@ -6,3 +6,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-11 03:04,12169822,Wta Singles,Wuhan,Z. Sonmez,S. Kraus,menos,21.5,0.582,0.5,1.833,True,aprendida
 2026-10-11 03:05,12169811,Itf Men Singles,M25 Luan,M. Dellavedova,M. Alkaya,menos,15.5,0.574,0.5767,1.615,True,actual
 2026-10-11 03:07,12169811,Itf Men Singles,M25 Luan,M. Dellavedova,M. Alkaya,menos,14.5,0.766,0.766,1.222,True,casa65
+2026-10-11 03:07,12169813,Wta Singles,Wuhan,S. Sorribes Tormo,D. Kasatkina,menos,21.5,0.5871,0.5,1.833,True,aprendida
