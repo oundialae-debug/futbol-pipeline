@@ -18,3 +18,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-11 04:47,12169847,Wta Singles,Wuhan,C. Osorio,K. Volynets,menos,21.5,0.5678,0.5,1.833,True,aprendida
 2026-10-11 04:49,12169814,Challenger Men Singles,Wuning 3 (China) - Qualification,J. D. Hara Friend,A. Kachmazov,menos,33.5,0.7408,0.5889,1.571,True,actual
 2026-10-11 04:52,12169818,Wta Singles,Wuhan,H. Shi,K. Rakhimova,menos,20.5,0.5796,0.5147,1.8,True,aprendida
+2026-10-11 05:33,12169836,Wta Singles,Wuhan,L. Tararudee,C. McNally,menos,22.5,0.6065,0.5147,1.8,True,aprendida
