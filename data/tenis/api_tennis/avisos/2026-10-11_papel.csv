@@ -72,3 +72,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-11 10:39,12169930,Challenger Women Singles,Mallorca,D. Yesypchuk,M. Vogt,menos,14.5,0.9713,0.9713,1.004,True,casa65
 2026-10-11 10:43,12169938,Challenger Women Singles,Rovereto,E. Jacquemot,C. Zanolini,más,17.5,0.5609,0.4853,1.909,True,aprendida
 2026-10-11 10:45,12169927,Challenger Women Singles,Mallorca,L. Nguyen Tan,M. Sagrista Bermejo,menos,15.5,0.5856,0.5889,1.571,True,actual
+2026-10-11 10:52,12169895,Challenger Men Singles,Villena,D. Glinka,L. Djere,menos,23.5,0.7188,0.5576,1.666,True,actual
