@@ -1,4 +1,4 @@
-# Tenis en directo, 11/10/2026 16:53 UTC (18:53 en España)
+# Tenis en directo, 11/10/2026 17:01 UTC (19:01 en España)
 
 Calculadora desde el marcador exacto (modelo de puntos, superficie real) frente a la cuota en directo
 (sin margen). Ganador y sets: la calculadora suele coincidir con la casa. Total de juegos: el modelo
@@ -7,14 +7,13 @@ Se actualiza cada ~5 min; el registro en data/tenis/api_tennis/registro/ servir�
 
 | partido | tipo | superficie | marcador (sets, juegos, puntos, saca) | gana 1º: modelo / cuota | sets más probables (modelo) | total juegos: línea, modelo / cuota |
 |---|---|---|---|---|---|---|
-| T. Seyboth Wild vs J. Reis Da Silva | Challenger Men Singles | Clay | 1-1, 0-1, 0 - 0, saca J. Reis Da Silva | 41% / 48% | 1-2 59%, 2-1 41% | 29.5: 67% / 54% |
-| M. Chazal vs Y. Milev | Challenger Men Singles | Clay | 0-1, 3-3, 0 - 0, saca Y. Milev | 35% / 23% | 0-2 42%, 2-1 35% |  |
-| K. Wehnelt vs L. Angelini | Challenger Men Singles | Clay | 1-0, 5-0, 30 - 0, saca L. Angelini | 100% /  | 2-0 99%, 2-1 0% |  |
-| E. Donnet vs A. Omarkhanov | Challenger Men Singles | Hard | 0-0, 1-0, 30 - 30, saca A. Omarkhanov | 69% / 65% | 2-0 41%, 2-1 28% |  |
-| J. Paul vs N. McDonald | Challenger Men Singles | Hard | 1-1, 2-2, 30 - 30, saca J. Paul | 51% / 35% | 2-1 51%, 1-2 49% |  |
-| A. Sanchez Quilez vs V. Leote Prata | Challenger Men Singles | Clay | 1-1, 4-0, 30 - 0, saca A. Sanchez Quilez | 99% / 99% | 2-1 99%, 1-2 1% |  |
-| L. Britto vs W. Leite | Challenger Men Singles | Clay | 0-0, 1-5, A - 40, saca W. Leite | 36% / 5% | 0-2 40%, 2-1 33% |  |
-| N. Donoso vs B. Fernandez | Challenger Men Singles | Clay | 0-1, 1-5, 40 - A, saca N. Donoso | 0% /  | 0-2 99%, 1-2 0% |  |
-| F. Zeballos vs S. Heredia | Challenger Men Singles | Clay | 0-0, 3-4, 15 - 0, saca S. Heredia | 19% / 25% | 0-2 55%, 1-2 26% |  |
-| T. McCormick vs L. Andrade da Silva | Itf Men Singles | Clay | 0-0, 4-5, 30 - 15, saca T. McCormick | 37% / 25% | 0-2 35%, 1-2 28% | 25.5: 57% / 49% |
-| A. Sharma vs K. Carnicella | Itf Women Singles | Hard | 0-0, 2-1, 0 - 0, saca K. Carnicella | 80% / 78% | 2-0 52%, 2-1 28% |  |
+| T. Seyboth Wild vs J. Reis Da Silva | Challenger Men Singles | Clay | 1-1, 1-2, 0 - 0, saca J. Reis Da Silva | 37% / 45% | 1-2 63%, 2-1 37% | 29.5: 73% / 62% |
+| M. Chazal vs Y. Milev | Challenger Men Singles | Clay | 0-1, 3-4, 15 - 40, saca M. Chazal | 15% / 7% | 0-2 76%, 2-1 15% |  |
+| E. Donnet vs A. Omarkhanov | Challenger Men Singles | Hard | 0-0, 3-0, 0 - 0, saca A. Omarkhanov | 80% / 75% | 2-0 55%, 2-1 25% |  |
+| J. Paul vs N. McDonald | Challenger Men Singles | Hard | 1-1, 3-3, 15 - 0, saca J. Paul | 56% / 50% | 2-1 56%, 1-2 44% |  |
+| A. Sanchez Quilez vs V. Leote Prata | Challenger Men Singles | Clay | 1-1, 4-1, 40 - 40, saca V. Leote Prata | 95% / 95% | 2-1 95%, 1-2 5% |  |
+| D. Blanch vs M. Karol | Challenger Men Singles | Clay | 0-1, 1-0, 15 - 0, saca M. Karol | 41% / 47% | 2-1 41%, 0-2 31% |  |
+| L. Britto vs W. Leite | Challenger Men Singles | Clay | 0-1, 0-1, 0 - 0, saca W. Leite | 22% / 2% | 0-2 63%, 2-1 22% |  |
+| F. Zeballos vs S. Heredia | Challenger Men Singles | Clay | 0-0, 5-4, 15 - 30, saca S. Heredia | 33% / 41% | 0-2 35%, 1-2 32% |  |
+| T. McCormick vs L. Andrade da Silva | Itf Men Singles | Clay | 0-1, 0-0, 0 - 15, saca L. Andrade da Silva | 17% / 11% | 0-2 60%, 1-2 23% | 19.5: 67% / 49% |
+| A. Sharma vs K. Carnicella | Itf Women Singles | Hard | 0-0, 3-2, 15 - 15, saca K. Carnicella | 80% / 79% | 2-0 52%, 2-1 28% |  |
