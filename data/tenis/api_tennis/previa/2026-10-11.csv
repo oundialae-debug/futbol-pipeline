@@ -461,10 +461,10 @@ hora,event_key,tipo,torneo,superficie,jugador1,jugador2,mejor_de,p_saque1,p_saqu
 2026-10-11 07:41,12169967,Challenger Men Singles,Roanne,Hard,L. Poullain,G. Brouwer,3,0.6175,0.55,0.8111,0.7459,20.5,0.5818,0.4946,1.86,1.82,1,23.19,0.5487
 2026-10-11 07:41,12169967,Challenger Men Singles,Roanne,Hard,L. Poullain,G. Brouwer,3,0.6175,0.55,0.8111,0.7459,21.5,0.5279,0.448,2.0949999999999998,1.7,0,23.19,0.4975
 2026-10-11 07:41,12169967,Challenger Men Singles,Roanne,Hard,L. Poullain,G. Brouwer,3,0.6175,0.55,0.8111,0.7459,22.5,0.4625,0.4156,2.25,1.6,0,23.19,0.4389
-2026-10-11 15:41,12169968,Challenger Men Singles,Roanne,Hard,O. Prihodko,P. Brady,3,0.635,0.68,0.2908,0.4211,21.5,0.6802,0.5659,1.68,2.19,0,25.46,0.6003
-2026-10-11 15:41,12169968,Challenger Men Singles,Roanne,Hard,O. Prihodko,P. Brady,3,0.635,0.68,0.2908,0.4211,22.5,0.5907,0.4784,1.93,1.77,1,25.46,0.5299
-2026-10-11 15:41,12169968,Challenger Men Singles,Roanne,Hard,O. Prihodko,P. Brady,3,0.635,0.68,0.2908,0.4211,23.5,0.5176,0.4185,2.23,1.605,0,25.46,0.481
-2026-10-11 15:41,12169968,Challenger Men Singles,Roanne,Hard,O. Prihodko,P. Brady,3,0.635,0.68,0.2908,0.4211,24.5,0.5081,0.4063,2.25,1.54,0,25.46,0.4615
+2026-10-11 17:39,12169968,Challenger Men Singles,Roanne,Hard,O. Prihodko,P. Brady,3,0.635,0.68,0.2908,0.4041,21.5,0.6802,0.5659,1.68,2.19,0,25.46,0.6003
+2026-10-11 17:39,12169968,Challenger Men Singles,Roanne,Hard,O. Prihodko,P. Brady,3,0.635,0.68,0.2908,0.4041,22.5,0.5907,0.4797,1.92,1.77,1,25.46,0.5299
+2026-10-11 17:39,12169968,Challenger Men Singles,Roanne,Hard,O. Prihodko,P. Brady,3,0.635,0.68,0.2908,0.4041,23.5,0.5176,0.4185,2.23,1.605,0,25.46,0.481
+2026-10-11 17:39,12169968,Challenger Men Singles,Roanne,Hard,O. Prihodko,P. Brady,3,0.635,0.68,0.2908,0.4041,24.5,0.5081,0.4063,2.25,1.54,0,25.46,0.4615
 2026-10-11 11:47,12169969,Challenger Men Singles,Roanne,Hard,T. Trufelli,T. Boogaard,3,0.595,0.67,0.1733,0.2786,20.5,0.6183,0.5256,1.76,1.95,0,23.8,0.5489
 2026-10-11 11:47,12169969,Challenger Men Singles,Roanne,Hard,T. Trufelli,T. Boogaard,3,0.595,0.67,0.1733,0.2786,21.5,0.5617,0.5351,1.72,1.98,0,23.8,0.4954
 2026-10-11 11:47,12169969,Challenger Men Singles,Roanne,Hard,T. Trufelli,T. Boogaard,3,0.595,0.67,0.1733,0.2786,22.5,0.4823,0.4771,1.94,1.77,1,23.8,0.4331
@@ -582,11 +582,11 @@ hora,event_key,tipo,torneo,superficie,jugador1,jugador2,mejor_de,p_saque1,p_saqu
 2026-10-11 15:41,12170050,Itf Women Singles,W50 Lexington,Hard,A. Sharma,K. Carnicella,3,0.605,0.5475,0.7749,0.7221,21.5,0.5515,0.4205,2.15,1.56,0,23.47,0.3283
 2026-10-11 15:41,12170050,Itf Women Singles,W50 Lexington,Hard,A. Sharma,K. Carnicella,3,0.605,0.5475,0.7749,0.7221,22.5,0.4863,0.4026,2.27,1.53,0,23.47,0.2814
 2026-10-11 15:41,12170050,Itf Women Singles,W50 Lexington,Hard,A. Sharma,K. Carnicella,3,0.605,0.5475,0.7749,0.7221,23.5,0.443,0.3636,2.52,1.44,0,23.47,0.2533
-2026-10-11 16:40,12170014,Challenger Men Singles,Santa Cruz 2,Clay,B. Arias,T. Cigarran,3,0.59,0.6,0.4484,0.1692,17.5,0.901,0.6106,1.55,2.43,0,24.82,0.8678
-2026-10-11 16:40,12170014,Challenger Men Singles,Santa Cruz 2,Clay,B. Arias,T. Cigarran,3,0.59,0.6,0.4484,0.1692,18.5,0.8377,0.5109,1.8,1.88,1,24.82,0.7996
-2026-10-11 16:40,12170014,Challenger Men Singles,Santa Cruz 2,Clay,B. Arias,T. Cigarran,3,0.59,0.6,0.4484,0.1692,19.5,0.766,0.4338,2.18,1.67,0,24.82,0.7297
-2026-10-11 16:40,12170018,Challenger Men Singles,Santa Cruz 2,Clay,F. Ribero,M. Zeitune,3,0.6125,0.655,0.2969,0.2374,19.5,0.7735,0.5835,1.62,2.27,0,24.95,0.7077
-2026-10-11 16:40,12170018,Challenger Men Singles,Santa Cruz 2,Clay,F. Ribero,M. Zeitune,3,0.6125,0.655,0.2969,0.2374,20.5,0.6987,0.5026,1.89,1.91,1,24.95,0.639
-2026-10-11 16:40,12170018,Challenger Men Singles,Santa Cruz 2,Clay,F. Ribero,M. Zeitune,3,0.6125,0.655,0.2969,0.2374,21.5,0.6472,0.4491,2.11,1.72,0,24.95,0.5873
-2026-10-11 16:40,12170021,Challenger Men Singles,Santa Cruz 2,Clay,P. A. Saraiva Dos Santos,S. De La Fuente,3,0.61,0.555,0.7641,0.6023,20.5,0.6158,0.5289,1.79,2.01,0,23.64,0.5855
-2026-10-11 16:40,12170021,Challenger Men Singles,Santa Cruz 2,Clay,P. A. Saraiva Dos Santos,S. De La Fuente,3,0.61,0.555,0.7641,0.6023,21.5,0.563,0.4776,1.98,1.81,1,23.64,0.5346
+2026-10-11 17:39,12170014,Challenger Men Singles,Santa Cruz 2,Clay,B. Arias,T. Cigarran,3,0.59,0.6,0.4484,0.1667,17.5,0.901,0.6106,1.55,2.43,0,24.82,0.8678
+2026-10-11 17:39,12170014,Challenger Men Singles,Santa Cruz 2,Clay,B. Arias,T. Cigarran,3,0.59,0.6,0.4484,0.1667,18.5,0.8377,0.5136,1.79,1.89,1,24.82,0.7996
+2026-10-11 17:39,12170014,Challenger Men Singles,Santa Cruz 2,Clay,B. Arias,T. Cigarran,3,0.59,0.6,0.4484,0.1667,19.5,0.766,0.4338,2.18,1.67,0,24.82,0.7297
+2026-10-11 17:39,12170018,Challenger Men Singles,Santa Cruz 2,Clay,F. Ribero,M. Zeitune,3,0.6125,0.655,0.2969,0.2216,19.5,0.7735,0.5747,1.65,2.23,0,24.95,0.7077
+2026-10-11 17:39,12170018,Challenger Men Singles,Santa Cruz 2,Clay,F. Ribero,M. Zeitune,3,0.6125,0.655,0.2969,0.2216,20.5,0.6987,0.5082,1.81,1.87,1,24.95,0.639
+2026-10-11 17:39,12170018,Challenger Men Singles,Santa Cruz 2,Clay,F. Ribero,M. Zeitune,3,0.6125,0.655,0.2969,0.2216,21.5,0.6472,0.4413,2.14,1.69,0,24.95,0.5873
+2026-10-11 17:39,12170021,Challenger Men Singles,Santa Cruz 2,Clay,P. A. Saraiva Dos Santos,S. De La Fuente,3,0.61,0.555,0.7641,0.6023,20.5,0.6158,0.5289,1.79,2.01,0,23.64,0.5855
+2026-10-11 17:39,12170021,Challenger Men Singles,Santa Cruz 2,Clay,P. A. Saraiva Dos Santos,S. De La Fuente,3,0.61,0.555,0.7641,0.6023,21.5,0.563,0.4776,1.98,1.81,1,23.64,0.5346
