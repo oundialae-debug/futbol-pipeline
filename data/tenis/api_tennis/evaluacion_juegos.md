@@ -1,14 +1,14 @@
 # Más/menos juegos en directo: apuestas en papel
 
-Partidos acabados con cuota de juegos en el registro: **760**. Una apuesta por partido (se agrupa por partido). Cuota = la de la API en esa pasada, no la de Luckia. Con menos de 20 apuestas el número no significa nada.
+Partidos acabados con cuota de juegos en el registro: **761**. Una apuesta por partido (se agrupa por partido). Cuota = la de la API en esa pasada, no la de Luckia. Con menos de 20 apuestas el número no significa nada.
 
 | estrategia | apuestas | aciertos | beneficio medio | sigmas |
 |---|---|---|---|---|
 | **señal: vigilar el menos** | 204 | 65% | +15.2% | +2.47 |
-| control: siempre el menos (1ª pasada) | 760 | 51% | -5.9% | -1.77 |
-| control: siempre el más (1ª pasada) | 760 | 49% | -9.1% | -2.70 |
+| control: siempre el menos (1ª pasada) | 761 | 51% | -5.8% | -1.74 |
+| control: siempre el más (1ª pasada) | 761 | 49% | -9.2% | -2.74 |
 
-Brier del 'más' en la línea principal (1ª pasada): modelo 0.2710, mercado 0.2503 (menor es mejor). El modelo da al más +13.7% sobre lo que pasa de verdad.
+Brier del 'más' en la línea principal (1ª pasada): modelo 0.2710, mercado 0.2503 (menor es mejor). El modelo da al más +13.8% sobre lo que pasa de verdad.
 
 ## Señales
 
@@ -223,10 +223,10 @@ Brier del 'más' en la línea principal (1ª pasada): modelo 0.2710, mercado 0.2
 
 | regla | apuestas resueltas | aciertos | beneficio medio (cuota API) | sigmas |
 |---|---|---|---|---|
-| actual | 471 | 59% | -8.2% | -2.30 |
+| actual | 472 | 59% | -8.1% | -2.26 |
 | actual (al móvil) | 125 | 62% | -4.1% | -0.61 |
-| aprendida | 629 | 54% | -1.3% | -0.36 |
-| casa65 | 293 | 83% | +1.3% | +0.46 |
+| aprendida | 630 | 54% | -1.2% | -0.33 |
+| casa65 | 294 | 83% | +1.3% | +0.46 |
 
 ## Reglas de todos los mercados (en papel, partidos desde el 2026-10-10 07:00 UTC)
 
@@ -235,33 +235,34 @@ Brier del 'más' en la línea principal (1ª pasada): modelo 0.2710, mercado 0.2
 | juegos (menos) | favorito casa >= 65% | 17 | 76% | 85% | -11.3% | -0.89 |
 | juegos (menos) |   y cuota >= 1,30 | 6 | 50% | 74% | -32.4% | -1.07 |
 | juegos (menos) |   y sin Challenger/WTA 125 | 13 | 85% | 87% | -3.3% | -0.26 |
-| ganador | favorito casa >= 65% | 101 | 80% | 80% | -0.1% | -0.03 |
-| ganador |   y cuota >= 1,30 | 68 | 72% | 74% | -2.7% | -0.37 |
-| ganador |   y sin Challenger/WTA 125 | 78 | 81% | 80% | +0.9% | +0.16 |
-| resultado en sets | favorito casa >= 65% | 80 | 81% | 82% | -0.8% | -0.15 |
-| resultado en sets |   y cuota >= 1,30 | 36 | 78% | 75% | +4.2% | +0.45 |
-| resultado en sets |   y sin Challenger/WTA 125 | 61 | 79% | 82% | -4.5% | -0.70 |
+| ganador | favorito casa >= 65% | 108 | 81% | 80% | +0.2% | +0.04 |
+| ganador |   y cuota >= 1,30 | 72 | 72% | 74% | -2.5% | -0.35 |
+| ganador |   y sin Challenger/WTA 125 | 79 | 81% | 80% | +1.2% | +0.22 |
+| resultado en sets | favorito casa >= 65% | 85 | 82% | 82% | +0.3% | +0.06 |
+| resultado en sets |   y cuota >= 1,30 | 37 | 78% | 75% | +5.1% | +0.55 |
+| resultado en sets |   y sin Challenger/WTA 125 | 62 | 79% | 83% | -4.2% | -0.66 |
 
 ## Comparar casas con Pinnacle (profesional, en papel desde el 10/10)
 
 | mercado | apuestas | partidos | aciertos | valor esperado (Pinnacle al apostar) | valor contra el cierre | beneficio real | sigmas (por partido) |
 |---|---|---|---|---|---|---|---|
-| favorito >= 75% a la mejor cuota | 19 | 19 | 95% | -3.8% | -4.1% | +10.1% | +1.53 |
-| ganador | 19 | 13 | 32% | +11.8% | +15.2% | -37.9% | -0.88 |
+| favorito >= 75% a la mejor cuota | 21 | 21 | 95% | -4.0% | -4.1% | +10.3% | +1.74 |
+| ganador | 23 | 15 | 26% | +16.5% | +15.4% | -48.7% | -1.38 |
 | juegos | 5 | 5 | 80% | +4.7% | +4.7% | +52.4% | +1.37 |
-| todo | 43 | 32 | 65% | +4.1% | +5.4% | -6.2% | +0.68 |
-| favorito >= 75% a cuota de PINNACLE | 19 | 19 | 95% | | | +9.5% | |
+| todo | 49 | 35 | 61% | +6.5% | +6.0% | -13.1% | +0.27 |
+| favorito >= 75% a cuota de PINNACLE | 21 | 21 | 95% | | | +9.9% | |
 
 Por casa (todas las apuestas):
 
 | casa | apuestas | beneficio | contra el cierre |
 |---|---|---|---|
-| 1xBet | 6 | -37.2% | +7.6% |
+| 1xBet | 7 | -46.1% | +11.6% |
 | BetVictor | 3 | +30.0% | +4.9% |
 | Betano | 6 | +10.8% | +5.2% |
-| Marathon | 2 | -42.0% | +6.0% |
-| WilliamHill | 7 | +15.0% | +8.2% |
-| bet365 | 19 | -11.6% | +3.9% |
+| Marathon | 3 | -61.3% | +0.8% |
+| Sbo | 1 | +18.0% | -3.3% |
+| WilliamHill | 8 | +14.1% | +6.7% |
+| bet365 | 21 | -20.0% | +5.4% |
 
 ## IA del no favorito, en papel (circuito ATP/WTA, desde el 10/10)
 
@@ -269,16 +270,16 @@ Por casa (todas las apuestas):
 
 ## Previos (antes de empezar), línea principal de juegos y ganador
 
-1242 partidos. Juegos (más de la línea principal), Brier (menor es mejor): modelo 0.2842, modelo corregido con el historial 0.2620, casa 0.2495. Pasó el más en el 49%.
+1248 partidos. Juegos (más de la línea principal), Brier (menor es mejor): modelo 0.2845, modelo corregido con el historial 0.2619, casa 0.2495. Pasó el más en el 48%.
 
 | regla de previo (en papel desde el 06/10 18:00) | apuestas | aciertos | beneficio medio | sigmas |
 |---|---|---|---|---|
 | previo ATP circuito: más si modelo >= casa+10 | 26 | 54% | +1.2% | +0.06 |
-| previo ajustado vs casa >= 10 (cualquier lado) | 351 | 50% | -8.8% | -1.79 |
-Ganador (1242): acierto modelo 66%, casa 70%.
+| previo ajustado vs casa >= 10 (cualquier lado) | 355 | 50% | -8.8% | -1.80 |
+Ganador (1248): acierto modelo 66%, casa 70%.
 
 ## Aprendizaje (recalibración del modelo)
 
-Partidos resueltos: 688 (5295 líneas). Activa: **sí** (hace falta 30+ partidos y que mejore a la CASA en partidos que no vio).
-**Apostando con lo aprendido, día a día** (cada día aprende solo de los anteriores): 581 apuestas, aciertos 50%, beneficio medio -7.3%, -1.90 sigmas.
-Brier (menor es mejor): modelo 0.2692, modelo con el saque de hoy 0.2606, casa 0.2432, recalibrado (validado por partidos) 0.2308. Sesgo del modelo hacia el más: +18.6%.
+Partidos resueltos: 689 (5301 líneas). Activa: **sí** (hace falta 30+ partidos y que mejore a la CASA en partidos que no vio).
+**Apostando con lo aprendido, día a día** (cada día aprende solo de los anteriores): 582 apuestas, aciertos 51%, beneficio medio -7.2%, -1.87 sigmas.
+Brier (menor es mejor): modelo 0.2695, modelo con el saque de hoy 0.2607, casa 0.2432, recalibrado (validado por partidos) 0.2310. Sesgo del modelo hacia el más: +18.7%.
