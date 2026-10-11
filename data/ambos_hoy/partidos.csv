@@ -1,4 +1,2 @@
 match_id,liga_id,fecha,saque_utc,local_id,local,visitante_id,visitante,estado,arbitro,clima_status,clima_temp_txt,local_ids,local_formacion,visitante_ids,visitante_formacion
-1325368608,33973,2026-10-11T15:30:00.000Z,15:30,34824,Liverpool,43334,Manchester City,Not started,"Kavanagh, Christopher",partly cloudy day,13.77°C,,,,
-1340478113,67162,2026-10-11T15:30:00.000Z,15:30,136944,SC Freiburg,148858,FC Schalke 04,Not started,"Petersen, Martin",cloudy,14.45°C,,,,
-1321417415,52695,2026-10-11T15:15:00.000Z,15:15,80778,Rennes FC,92692,Auxerre,Not started,"Delajod, Willy",cloudy,16.59°C,,,,
+1319174179,115669,2026-10-11T16:00:00.000Z,16:00,416072,Sassuolo,416923,AC Milan,Not started,"Fourneau, Francesco",cloudy,21.13°C,,,,
