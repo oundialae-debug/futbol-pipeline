@@ -29,3 +29,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-11 06:28,12169818,Wta Singles,Wuhan,H. Shi,K. Rakhimova,menos,22.5,0.6461,0.5889,1.571,True,actual
 2026-10-11 06:33,12169835,Itf Men Singles,M25 Darwin 2,C. Hoole,S. Vujic,menos,22.5,0.6943,0.6451,1.444,True,actual
 2026-10-11 06:33,12169847,Wta Singles,Wuhan,C. Osorio,K. Volynets,menos,28.5,0.7068,0.6451,1.444,True,actual
+2026-10-11 06:35,12169748,Atp Singles,Shanghai,H. Hurkacz,Y. Zhou,menos,22.5,0.6916,0.5576,1.666,True,actual
