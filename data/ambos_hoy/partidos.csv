@@ -1,2 +1,3 @@
 match_id,liga_id,fecha,saque_utc,local_id,local,visitante_id,visitante,estado,arbitro,clima_status,clima_temp_txt,local_ids,local_formacion,visitante_ids,visitante_formacion
-1319169073,115669,2026-10-11T10:30:00.000Z,10:30,762429,Como,423731,AS Roma,Not started,"Fabbri, Michael",cloudy,18.42°C,,,,
+1336036744,120775,2026-10-11T12:00:00.000Z,12:00,6942391,FC Andorra,4471938,Castellón,Not started,,cloudy,12.5°C,,,,
+1336416290,119924,2026-10-11T12:00:00.000Z,12:00,679031,Elche,458622,Celta de Vigo,Not started,,partly cloudy day,25.69°C,,,,
