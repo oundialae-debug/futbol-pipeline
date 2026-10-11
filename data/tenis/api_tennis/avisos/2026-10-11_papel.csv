@@ -14,3 +14,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-11 04:17,12169817,Wta Singles,Wuhan,Y. Putintseva,A. Krueger,menos,16.5,0.7091,0.7091,1.333,True,casa65
 2026-10-11 04:30,12169822,Wta Singles,Wuhan,Z. Sonmez,S. Kraus,menos,18.5,0.7097,0.6451,1.444,True,actual
 2026-10-11 04:39,12169813,Wta Singles,Wuhan,S. Sorribes Tormo,D. Kasatkina,menos,26.5,0.6432,0.5576,1.666,True,actual
+2026-10-11 04:40,12169822,Wta Singles,Wuhan,Z. Sonmez,S. Kraus,menos,18.5,0.9579,0.9579,1.012,True,casa65
