@@ -11,6 +11,9 @@ cambios de código y archivos".
   el resumen y dónde leerlo.
 - Lo más nuevo, arriba.
 
+## 11/10/2026 — redes: duelo de jugadores dentro de la zona segura
+- `generar.py` (head_to_head con fotos): banda de caras 330→290 px (con 330 la pregunta final pasaba de y=1540); `sin_marcador` pone "VS" en vez del recuento de filas ("5-0" confundía). `datos_rankings.py jugadores`: `sin_marcador` siempre y nombre corto "Vinícius" (antes "Júnior"). Porqué: el parche se había perdido con el contenedor anterior y la tarea diaria lo necesita cada día.
+
 ## 10/10/2026 — notas para el chat nuevo
 - Qué: línea en "Notas compartidas" de CLAUDE.md con el sistema de post-partido, el respaldo y dónde está el estado completo (Live, CONTEXTO regla 14).
 - Por qué: el usuario abre chat nuevo; todo lo pendiente debe estar escrito en los repos.

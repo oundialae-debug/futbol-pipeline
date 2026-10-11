@@ -159,6 +159,8 @@ def visible_nombre(n):
 
 
 def corto(nombre):
+    if "inicius" in str(nombre) or "inícius" in str(nombre):
+        return "Vinícius"
     partes = str(nombre).split()
     return partes[-1] if len(partes) > 1 and len(nombre) > 11 else nombre
 
@@ -201,7 +203,7 @@ def jugadores(a, b, foto_a=None, foto_b=None):
            {"template": "head_to_head", "competition": x.liga if misma else "Top 5 leagues",
             "home": {"name": x.equipo, "short": corto(x.jugador), **foto_de(foto_a)},
             "away": {"name": y.equipo, "short": corto(y.jugador), **foto_de(foto_b)},
-            "title": f"{x.jugador} vs {y.jugador}", "stats": stats,
+            "title": f"{x.jugador} vs {y.jugador}", "stats": stats, "sin_marcador": True,
             "note": f"{x.equipo} · {int(x.minutos)}' | {y.equipo} · {int(y.minutos)}' — this season",
             "question": "Who are you picking?"})
 

@@ -536,6 +536,8 @@ def head_to_head(d):
                 f'<span style="color:{GRIS}">–</span><span style="color:{a["c"]}">{gana[1]}</span></span>')
     if d.get("centro") == "score" and d.get("score"):     # post-partido: el marcador real, no el recuento de filas
         marcador = res(*d["score"])
+    if d.get("sin_marcador"):      # duelos de jugadores: el recuento de filas confunde (usuario/crítico 09/10)
+        marcador = '<span class="disp" style="font-size:54px;color:#7C8499">VS</span>'
     nota = d.get("note", "")
     if fotos:
         # Usuario 06/10: caras de los jugadores con degradado hacia el centro; nada encima de las caras.
@@ -549,7 +551,7 @@ def head_to_head(d):
                     f'<img src="data:image/jpeg;base64,{img}" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;'
                     f'object-position:center {t.get("foco", "18%")};-webkit-mask-image:{mask};-webkit-mask-composite:source-in;'
                     f'mask-image:{mask};mask-composite:intersect"></div>')
-        banda = f'<div style="display:flex;height:330px;margin:0 -10px">{media(h, "l")}{media(a, "r")}</div>'
+        banda = f'<div style="display:flex;height:290px;margin:0 -10px">{media(h, "l")}{media(a, "r")}</div>'
         cr = [t["credito"] for t in (h, a) if t.get("credito")]
         creditos = cr[0].replace("Photo:", "Photos:") if len(cr) == 2 and cr[0] == cr[1] else " · ".join(cr)
         nota = f"{nota}  ·  {creditos}" if creditos else nota
