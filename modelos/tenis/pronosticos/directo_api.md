@@ -1,4 +1,4 @@
-# Tenis en directo, 11/10/2026 02:50 UTC (04:50 en España)
+# Tenis en directo, 11/10/2026 03:00 UTC (05:00 en España)
 
 Calculadora desde el marcador exacto (modelo de puntos, superficie real) frente a la cuota en directo
 (sin margen). Ganador y sets: la calculadora suele coincidir con la casa. Total de juegos: el modelo
@@ -7,5 +7,5 @@ Se actualiza cada ~5 min; el registro en data/tenis/api_tennis/registro/ servir�
 
 | partido | tipo | superficie | marcador (sets, juegos, puntos, saca) | gana 1º: modelo / cuota | sets más probables (modelo) | total juegos: línea, modelo / cuota |
 |---|---|---|---|---|---|---|
-| M. Dellavedova vs M. Alkaya | Itf Men Singles | Hard | 1-0, 0-0, 0 - 0, saca M. Alkaya | 71% / 78% | 2-0 46%, 1-2 29% | 20.5: 65% / 46% |
-| D. Egorova vs J. Zhang | Itf Women Singles | Hard | 0-0, 3-5, 40 - 30, saca J. Zhang | 78% / 62% | 2-1 46%, 2-0 32% |  |
+| M. Dellavedova vs M. Alkaya | Itf Men Singles | Hard | 1-0, 3-0, 0 - 0, saca M. Dellavedova | 96% / 94% | 2-0 93%, 1-2 4% | 15.5: 78% / 54% |
+| D. Egorova vs J. Zhang | Itf Women Singles | Hard | 0-0, 6-5, 0 - 0, saca D. Egorova | 95% / 86% | 2-0 76%, 2-1 19% |  |
