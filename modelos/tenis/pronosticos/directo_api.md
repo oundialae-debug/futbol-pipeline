@@ -1,4 +1,4 @@
-# Tenis en directo, 11/10/2026 20:56 UTC (22:56 en España)
+# Tenis en directo, 11/10/2026 21:04 UTC (23:04 en España)
 
 Calculadora desde el marcador exacto (modelo de puntos, superficie real) frente a la cuota en directo
 (sin margen). Ganador y sets: la calculadora suele coincidir con la casa. Total de juegos: el modelo
@@ -7,5 +7,4 @@ Se actualiza cada ~5 min; el registro en data/tenis/api_tennis/registro/ servir�
 
 | partido | tipo | superficie | marcador (sets, juegos, puntos, saca) | gana 1º: modelo / cuota | sets más probables (modelo) | total juegos: línea, modelo / cuota |
 |---|---|---|---|---|---|---|
-| B. Arias vs T. Cigarran | Challenger Men Singles | Clay | 0-1, 0-0, 15 - 30, saca B. Arias | 19% / 5% | 0-2 59%, 1-2 22% |  |
-| P. A. Saraiva Dos Santos vs S. De La Fuente | Challenger Men Singles | Clay | 0-1, 2-5, 40 - 40, saca P. A. Saraiva Dos Santos | 8% / 4% | 0-2 88%, 2-1 8% |  |
+| B. Arias vs T. Cigarran | Challenger Men Singles | Clay | 0-1, 1-1, 0 - 40, saca B. Arias | 14% / 4% | 0-2 70%, 1-2 16% |  |
