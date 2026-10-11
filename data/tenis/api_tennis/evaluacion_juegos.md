@@ -254,7 +254,7 @@ Por casa (todas las apuestas):
 
 ## IA del no favorito, en papel (circuito ATP/WTA, desde el 10/10)
 
-0 apuestas apuntadas, ninguna resuelta todavía.
+1 apuestas apuntadas, ninguna resuelta todavía.
 
 ## Previos (antes de empezar), línea principal de juegos y ganador
 
