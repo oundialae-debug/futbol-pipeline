@@ -243,8 +243,8 @@ Brier del 'más' en la línea principal (1ª pasada): modelo 0.2698, mercado 0.2
 | juegos (menos) | favorito casa >= 65% | 22 | 77% | 84% | -8.8% | -0.80 |
 | juegos (menos) |   y cuota >= 1,30 | 9 | 56% | 74% | -24.5% | -1.03 |
 | juegos (menos) |   y sin Challenger/WTA 125 | 15 | 80% | 87% | -8.5% | -0.68 |
-| ganador | favorito casa >= 65% | 180 | 81% | 81% | -1.3% | -0.35 |
-| ganador |   y cuota >= 1,30 | 110 | 73% | 74% | -1.7% | -0.30 |
+| ganador | favorito casa >= 65% | 181 | 80% | 81% | -1.9% | -0.50 |
+| ganador |   y cuota >= 1,30 | 111 | 72% | 74% | -2.6% | -0.45 |
 | ganador |   y sin Challenger/WTA 125 | 92 | 80% | 80% | +0.8% | +0.15 |
 | resultado en sets | favorito casa >= 65% | 136 | 77% | 82% | -5.8% | -1.29 |
 | resultado en sets |   y cuota >= 1,30 | 65 | 71% | 74% | -4.8% | -0.63 |
@@ -281,13 +281,13 @@ Por casa (todas las apuestas):
 
 ## Previos (antes de empezar), línea principal de juegos y ganador
 
-1308 partidos. Juegos (más de la línea principal), Brier (menor es mejor): modelo 0.2851, modelo corregido con el historial 0.2630, casa 0.2496. Pasó el más en el 49%.
+1309 partidos. Juegos (más de la línea principal), Brier (menor es mejor): modelo 0.2851, modelo corregido con el historial 0.2629, casa 0.2496. Pasó el más en el 49%.
 
 | regla de previo (en papel desde el 06/10 18:00) | apuestas | aciertos | beneficio medio | sigmas |
 |---|---|---|---|---|
 | previo ATP circuito: más si modelo >= casa+10 | 28 | 57% | +7.3% | +0.41 |
 | previo ajustado vs casa >= 10 (cualquier lado) | 382 | 49% | -9.4% | -2.00 |
-Ganador (1308): acierto modelo 66%, casa 71%.
+Ganador (1309): acierto modelo 66%, casa 71%.
 
 ## Aprendizaje (recalibración del modelo)
 
