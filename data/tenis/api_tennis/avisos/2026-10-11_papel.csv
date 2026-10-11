@@ -109,3 +109,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-11 13:43,12170008,Challenger Women Singles,Lisbon (Portugal) - Qualification,S. Cakarevic,K. Tsygourova,menos,28.5,0.7038,0.5576,1.666,True,actual
 2026-10-11 14:01,12169933,Challenger Women Singles,Mallorca,C. Diaz Adrover,S. Sakellaridi,menos,16.5,0.6542,0.5576,1.666,True,actual
 2026-10-11 14:03,12169719,Atp Singles,Shanghai,A. Davidovich Fokina,F. Tiafoe,menos,26.5,0.6791,0.5576,1.666,True,actual
+2026-10-11 14:07,12170004,Challenger Men Singles,Palermo (Italy) - Qualification,J. Forejtek,F. Passaro,menos,21.5,0.6012,0.5,1.833,True,aprendida
