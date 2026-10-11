@@ -1,3 +1,6 @@
 match_id,liga_id,fecha,saque_utc,local_id,local,visitante_id,visitante,estado,arbitro,clima_status,clima_temp_txt,local_ids,local_formacion,visitante_ids,visitante_formacion
-1336036744,120775,2026-10-11T12:00:00.000Z,12:00,6942391,FC Andorra,4471938,Castellón,Not started,,cloudy,12.5°C,,,,
-1336416290,119924,2026-10-11T12:00:00.000Z,12:00,679031,Elche,458622,Celta de Vigo,Not started,,partly cloudy day,25.69°C,,,,
+1325366906,33973,2026-10-11T13:00:00.000Z,13:00,55248,Hull City,39079,Everton,Not started,"Salisbury, Michael",clear day,14.12°C,,,,
+1325366055,33973,2026-10-11T13:00:00.000Z,13:00,45036,Crystal Palace,56099,Nottingham Forest,Not started,"Bankes, Peter",partly cloudy day,14.81°C,,,,
+1319172477,115669,2026-10-11T13:00:00.000Z,13:00,738601,Lecce,426284,Bologna,Not started,"Pairetto, Luca J.",rain,20.67°C,,,,
+1319171626,115669,2026-10-11T13:00:00.000Z,13:00,415221,Lazio,1344513,Monza,Not started,"Collu, Guiseppe",cloudy,24.05°C,,,,
+1321415713,52695,2026-10-11T13:00:00.000Z,13:00,72268,Nice,81629,Strasbourg,Not started,"Pignard, Jeremie",cloudy,22.55°C,,,,
