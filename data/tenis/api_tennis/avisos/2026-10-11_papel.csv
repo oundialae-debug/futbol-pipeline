@@ -86,3 +86,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-11 11:27,12169894,Challenger Men Singles,Braga,E. Moller,M. Dodig,menos,27.5,0.6881,0.5576,1.666,True,actual
 2026-10-11 11:29,12169927,Challenger Women Singles,Mallorca,L. Nguyen Tan,M. Sagrista Bermejo,menos,17.5,0.7091,0.7091,1.333,True,casa65
 2026-10-11 11:35,12169890,Challenger Women Singles,Samsun,A. Aksu,L. Stefanini,menos,29.5,0.6913,0.5576,1.666,True,actual
+2026-10-11 11:40,12170010,Challenger Women Singles,Lisbon (Portugal) - Qualification,A. Voloshchuk,A. Nagy,menos,21.5,0.6385,0.5147,1.8,True,aprendida
