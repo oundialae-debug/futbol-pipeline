@@ -91,3 +91,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-11 11:43,12169938,Challenger Women Singles,Rovereto,E. Jacquemot,C. Zanolini,menos,15.5,0.9491,0.9491,1.02,True,casa65
 2026-10-11 11:47,12169931,Challenger Women Singles,Mallorca,R. Roura Llaverias,A. Laboutkova,menos,16.5,0.6235,0.5767,1.615,True,actual
 2026-10-11 11:57,12170006,Challenger Women Singles,Lisbon (Portugal) - Qualification,P. Lovric,L. Ebeling Koning,menos,24.5,0.6627,0.6627,1.4,True,casa65
+2026-10-11 12:05,12169941,Challenger Women Singles,Rovereto,I. M. Serban,Z. Li,menos,22.5,0.631,0.5,1.833,True,aprendida
