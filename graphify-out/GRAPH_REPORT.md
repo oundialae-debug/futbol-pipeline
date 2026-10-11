@@ -1,17 +1,17 @@
-# Graph Report - futbol-pipeline  (2026-10-10)
+# Graph Report - futbol-pipeline  (2026-10-11)
 
 ## Corpus Check
-- 217 files · ~386,758 words
+- 217 files · ~386,998 words
 - Verdict: corpus is large enough that graph structure adds value.
 - Unclassified: 4 file(s) not represented in the graph (top: (none) 3, .woff2 1)
 
 ## Summary
-- 1801 nodes · 4091 edges · 125 communities (104 shown, 21 thin omitted)
+- 1804 nodes · 4094 edges · 124 communities (104 shown, 20 thin omitted)
 - Extraction: 98% EXTRACTED · 2% INFERRED · 0% AMBIGUOUS · INFERRED: 98 edges (avg confidence: 0.87)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `2ce20696`
+- Built from commit: `c069fb1c`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -21,25 +21,25 @@
 - descanso_en_vivo.py
 - apuesta_ambos_marcan.py
 - datos_clubes.py
-- experimento_titulares_2324.py
+- json
 - requests
 - datos_rankings.py
 - datetime
 - forma_clubes.py
-- json
+- nations_league.py
 - equipaciones.py
-- modelo_ambos_marcan.py
+- sys
 - ambos_marcan/scripts/rasgos.py
 - boletin.py
 - diagnostico_directo.py
 - aporta_algo.py
 - diagnostico_api.py
 - post_partido.py
-- collections
-- cerrar_descanso.py
-- construir
 - time
-- warnings
+- cerrar_descanso.py
+- scripts/rasgos.py
+- backup_redes.py
+- colores_camiseta.py
 - descargar_selecciones.py
 - Ambos Marcan -- offshoot enfocado de futbol-pipeline
 - generar.py
@@ -50,28 +50,29 @@
 - sondeo_live_odds.py
 - sondeo_odds.py
 - calendario_mes.py
-- backtest_valor.py
+- pronostico_selecciones.py
 - datos_selecciones.py
-- ambos_marcan/scripts/evaluar_mercados.py
+- sondeo_frescura.py
 - casas_descolgadas.py
 - La API de Highlightly, en lo que nos afecta
 - backfill_perfil_jugador.py
 - censo_tarjetas.py
-- ambos_marcan/scripts/modelo_xgboost.py
+- pronostico_partido.py
 - redes_api.py
 - monitor_directo.py
 - Falso
 - backfill_ligas.py
 - Estado: mercado poco competido + value bets + herramienta interna
-- main
+- 29/09/2026
 - censo_endpoints.py
-- auditoria2_tabla_fuga.py
+- main
 - radiografia_ligas.py
 - UEFA Nations League, 2026-09-26 (hora de España)
 - backfill_titulares_boxscore.py
 - backfill_historico.py
+- censo_margenes.py
 - numpy
-- columnas_rasgo_default
+- Backup de publicación sin Claude (2yellow)
 - Provider APIs - Setup Guides
 - Selecciones (Nations League y similares)
 - cosechar_cuotas.py
@@ -91,7 +92,7 @@
 - backfill_jugador_stats.py
 - backfill_lineups.py
 - ¿Se puede ganar dinero con esta API, GitHub y una IA?
-- Agenda del 2026-10-10
+- Agenda del 2026-10-11
 - Inference Providers - Setup Guides
 - Free LLM API Setup
 - La pista de la mezcla murió al crecer la muestra
@@ -100,7 +101,8 @@
 - Qué 8 casas abrir: 9,58 puntos de diferencia en cada apuesta
 - Backtest de valor -- 2026-09-20 19:37 UTC
 - experimento_variables.py
-- sys
+- 05/10/2026
+- scripts/modelo_xgboost.py
 - censo_ligas_blandas.py
 - Sondeo: Nations League -- gol de equipo en la 1ª parte
 - Calendario -- próximos 30 días
@@ -135,16 +137,13 @@
 - sondeo_titulares_boxscore.md
 - sondeo_xg_jugador.md
 - ambos_hay_partido.py
-- calcular_calidad_plantilla
-- experimento_temporada_extra.py
-- experimentos_cuota_feature.py
-- descargar_partido.py
+- os
 - sondeo_temporadas_antiguas.py
 
 ## God Nodes (most connected - your core abstractions)
-1. `e()` - 38 edges
-2. `Ambos Marcan -- offshoot enfocado de futbol-pipeline` - 38 edges
-3. `Bitácora del proyecto` - 37 edges
+1. `Bitácora del proyecto` - 39 edges
+2. `e()` - 38 edges
+3. `Ambos Marcan -- offshoot enfocado de futbol-pipeline` - 38 edges
 4. `construir()` - 36 edges
 5. `Notas para trabajar en este repositorio` - 36 edges
 6. `pagina()` - 20 edges
@@ -154,8 +153,6 @@
 10. `main()` - 16 edges
 
 ## Surprising Connections (you probably didn't know these)
-- `07/10/2026 — redes: perfil de delantero centro y Balón de Oro en dos listas` --references--> `balon_oro_doble()`  [INFERRED]
-  BITACORA.md → redes/plantillas/datos_formatos.py
 - `06/10/2026 — redes: nunca el mismo color para los dos equipos` --references--> `separar()`  [INFERRED]
   BITACORA.md → redes/plantillas/generar.py
 - `06/10/2026 — redes: plantillas head_to_head y ranking` --references--> `head_to_head()`  [INFERRED]
@@ -164,79 +161,81 @@
   BITACORA.md → scripts/ambos_marcan_hoy.py
 - `Auditoría externa (29/09/2026): pruebas de los puntos aceptados` --references--> `ajustar()`  [INFERRED]
   modelos/ambos_marcan/CLAUDE.md → scripts/btts_implicito.py
+- `Segunda auditoría externa (29/09/2026): reproducida con XGBoost real` --references--> `preparar()`  [INFERRED]
+  modelos/ambos_marcan/CLAUDE.md → scripts/modelo_ambos_marcan.py
 
 ## Import Cycles
 - None detected.
 
-## Communities (125 total, 21 thin omitted)
+## Communities (124 total, 20 thin omitted)
 
 ### Community 0 - "csv"
 Cohesion: 0.29
 Nodes (7): clave_par(), main(), pedir(), ya_tengo(), highlightly(), temporada_us(), understat()
 
 ### Community 1 - "contraste_directo.py"
-Cohesion: 0.07
-Nodes (26): main(), norm(), _abrir(), buscar_titulo(), _extra(), wikitexto(), main(), parsear_temp() (+18 more)
+Cohesion: 0.09
+Nodes (22): main(), norm(), main(), parsear_temp(), pedir(), ya_tengo(), buscar(), cargar_referencia() (+14 more)
 
 ### Community 2 - "descanso_en_vivo.py"
 Cohesion: 0.07
 Nodes (33): analizar(), aplanar_cuotas(), apuntar_consumo(), buscar_en_juego(), consumo_de_hoy(), desempaquetar(), en_juego(), es_descanso() (+25 more)
 
 ### Community 3 - "apuesta_ambos_marcan.py"
-Cohesion: 0.13
-Nodes (16): Cambios de código y ficheros, pronosticar(), main(), rasgos_mercado(), resumen(), main(), precio_directo(), sin_margen() (+8 more)
+Cohesion: 0.09
+Nodes (20): Cambios de código y ficheros, main(), rasgos_hoy(), precio(), pronosticar(), registrar(), main(), rasgos_mercado() (+12 more)
 
 ### Community 4 - "datos_clubes.py"
 Cohesion: 0.08
 Nodes (35): 10/10/2026 — redes: post-partido AUTOMÁTICO en vídeo (`post_partido.py` + `post_partido.yml`), ajustar_poisson(), buscar(), calendario(), carta_casa_fuera(), carta_elo_post(), carta_estadisticas(), carta_forma() (+27 more)
 
-### Community 5 - "experimento_titulares_2324.py"
-Cohesion: 0.20
-Nodes (10): main(), lesiones(), main(), rasgos(), valor_antes(), valores(), comparar(), main() (+2 more)
+### Community 5 - "json"
+Cohesion: 0.18
+Nodes (7): main(), num(), _abrir(), buscar_titulo(), _extra(), wikitexto(), preguntar()
 
 ### Community 6 - "requests"
-Cohesion: 0.08
-Nodes (15): desempaquetar(), main(), pedir(), familia_de(), main(), pedir(), main(), desempaquetar() (+7 more)
+Cohesion: 0.11
+Nodes (13): desempaquetar(), main(), pedir(), desempaquetar(), main(), pedir(), main(), main() (+5 more)
 
 ### Community 7 - "datos_rankings.py"
-Cohesion: 0.06
-Nodes (34): 06/10/2026 — redes: índice 2yellow del Balón de Oro, dibujo(), dist(), dominantes(), hexa(), lab(), rgb(), balon_oro_doble() (+26 more)
+Cohesion: 0.08
+Nodes (29): 06/10/2026 — redes: índice 2yellow del Balón de Oro, 07/10/2026 — redes: perfil de delantero centro y Balón de Oro en dos listas, balon_oro_doble(), corto(), desempate(), filas(), indice(), posiciones() (+21 more)
 
 ### Community 8 - "datetime"
-Cohesion: 0.06
-Nodes (37): cargar(), franjas(), main(), cuenta_jugadores(), desempaquetar(), estado_de(), main(), partidos_de() (+29 more)
+Cohesion: 0.07
+Nodes (30): cargar(), franjas(), main(), cuenta_jugadores(), desempaquetar(), estado_de(), main(), partidos_de() (+22 more)
 
 ### Community 9 - "forma_clubes.py"
 Cohesion: 0.60
 Nodes (3): lista(), main(), pedir()
 
-### Community 10 - "json"
-Cohesion: 0.06
-Nodes (46): main(), resultados(), aplanar(), calendario(), clave(), detalles(), historial(), lista() (+38 more)
+### Community 10 - "nations_league.py"
+Cohesion: 0.26
+Nodes (13): aplanar(), calendario(), clave(), detalles(), historial(), lista(), main(), marcador() (+5 more)
 
 ### Community 11 - "equipaciones.py"
 Cohesion: 0.07
 Nodes (25): hexa(), kit(), choca(), colores_grupo(), colores_lista(), colores_partido(), contraste(), distancia() (+17 more)
 
-### Community 12 - "modelo_ambos_marcan.py"
-Cohesion: 0.12
-Nodes (10): grupo(), main(), comparar(), main(), main(), preparar(), columnas(), preparar() (+2 more)
+### Community 12 - "sys"
+Cohesion: 0.09
+Nodes (13): grupo(), main(), main(), comparar(), main(), nuevos(), preparar(), main() (+5 more)
 
 ### Community 13 - "ambos_marcan/scripts/rasgos.py"
-Cohesion: 0.12
-Nodes (12): a_largo(), calcular_arbitro(), calcular_btts(), calcular_elo(), calcular_h2h(), calcular_h2h_profundo(), calcular_rotacion(), calcular_tabla() (+4 more)
+Cohesion: 0.05
+Nodes (32): brier(), cargar_cuotas_crudas(), evaluar_uno(), main(), mejor_peso(), mercado_por_partido(), probabilidad_binaria(), predecir() (+24 more)
 
 ### Community 14 - "boletin.py"
 Cohesion: 0.11
 Nodes (14): consenso_de(), escribir(), linea_boletin(), main(), mejor_precio_mio(), modelo_validado(), Apuesta, comparar_sistemas() (+6 more)
 
 ### Community 15 - "diagnostico_directo.py"
-Cohesion: 0.25
-Nodes (13): aplanar_cuotas(), buscar_en_vivo(), describir(), descubrir_ligas(), desempaquetar(), esta_en_juego(), main(), minuto_de() (+5 more)
+Cohesion: 0.11
+Nodes (22): desempaquetar(), desmarginar(), familia_de(), handicap_local(), hechos_del_partido(), main(), pedir(), resolver() (+14 more)
 
 ### Community 16 - "aporta_algo.py"
-Cohesion: 0.14
-Nodes (9): brier(), cargar_cuotas_1x2(), main(), mejor_peso(), probabilidades_de_mercado(), main(), probabilidad_mercado(), cuotas_por_partido() (+1 more)
+Cohesion: 0.15
+Nodes (8): brier(), cargar_cuotas_1x2(), main(), mejor_peso(), probabilidades_de_mercado(), probabilidad_mercado(), cuotas_por_partido(), main()
 
 ### Community 17 - "diagnostico_api.py"
 Cohesion: 0.28
@@ -246,25 +245,25 @@ Nodes (11): aplanar_cuotas(), arbitro_previo(), cuotas(), describir(), estados_y
 Cohesion: 0.14
 Nodes (16): ahora(), anadir_fila(), bucle(), en_historico(), fechas(), fin(), git(), hay() (+8 more)
 
-### Community 19 - "collections"
-Cohesion: 0.17
-Nodes (7): main(), pedir(), main(), pedir(), desempaquetar(), main(), pedir()
+### Community 19 - "time"
+Cohesion: 0.11
+Nodes (14): main(), obtener_detalle_partido(), obtener_partidos_recientes(), es_derbi(), main(), obtener_detalle_completo(), obtener_pagina_partidos(), main() (+6 more)
 
 ### Community 20 - "cerrar_descanso.py"
 Cohesion: 0.43
 Nodes (4): brier(), main(), pedir(), resultado_final()
 
-### Community 21 - "construir"
-Cohesion: 0.07
-Nodes (16): main(), predecir(), sig(), a_largo(), calcular_arbitro(), calcular_btts(), calcular_calidad_plantilla(), calcular_elo() (+8 more)
+### Community 21 - "scripts/rasgos.py"
+Cohesion: 0.06
+Nodes (29): main(), main(), main(), main(), predecir(), sig(), main(), preparar() (+21 more)
 
-### Community 22 - "time"
-Cohesion: 0.17
-Nodes (9): main(), obtener_detalle_partido(), obtener_partidos_recientes(), es_derbi(), main(), obtener_detalle_completo(), obtener_pagina_partidos(), main() (+1 more)
+### Community 22 - "backup_redes.py"
+Cohesion: 0.32
+Nodes (14): a_jpg(), cargar(), carpeta(), elegir(), gql(), guardar(), partidos_hoy(), pendiente() (+6 more)
 
-### Community 23 - "warnings"
-Cohesion: 0.15
-Nodes (7): main(), rasgos_hoy(), main(), rasgos_xi(), main(), rasgos(), tabla_jugadores()
+### Community 23 - "colores_camiseta.py"
+Cohesion: 0.22
+Nodes (6): dibujo(), dist(), dominantes(), hexa(), lab(), rgb()
 
 ### Community 24 - "descargar_selecciones.py"
 Cohesion: 0.22
@@ -272,18 +271,18 @@ Nodes (10): lista(), main(), leer_o_pedir(), marcador(), pedir(), terminado(), y
 
 ### Community 25 - "Ambos Marcan -- offshoot enfocado de futbol-pipeline"
 Cohesion: 0.05
-Nodes (41): Ajuste interno (29/09/2026): árboles de un nivel (NO CONFIRMADO, ver revisión abajo), Ambos Marcan -- offshoot enfocado de futbol-pipeline, Auditoría externa (29/09/2026): pruebas de los puntos aceptados, Bajas por lesión (29/09/2026): no entran, empeoran, Configuración oficial de ambos marcan (26/09/2026), Cuota como variable, con football-data (25/09/2026), Cuota de mercado como variable: imposible con el método estándar, y por qué (24/09/2026), Córners en el modelo de ambos marcan (25/09/2026) (+33 more)
+Nodes (42): Ajuste interno (29/09/2026): árboles de un nivel (NO CONFIRMADO, ver revisión abajo), Ambos Marcan -- offshoot enfocado de futbol-pipeline, Auditoría externa (29/09/2026): pruebas de los puntos aceptados, Bajas por lesión (29/09/2026): no entran, empeoran, Configuración oficial de ambos marcan (26/09/2026), Cuota como variable, con football-data (25/09/2026), Cuota de mercado como variable: imposible con el método estándar, y por qué (24/09/2026), Córners en el modelo de ambos marcan (25/09/2026) (+34 more)
 
 ### Community 26 - "generar.py"
 Cohesion: 0.08
 Nodes (44): 10/10/2026 — redes: plantillas de CLUBES (5 grandes ligas), `datos_clubes.py`, acierto(), _alternativas(), b64(), barra3(), color(), color_viejo(), deserved() (+36 more)
 
 ### Community 27 - "Bitácora del proyecto"
-Cohesion: 0.05
-Nodes (38): 05/10/2026, 05/10/2026 — redes: backup sin Claude, 05/10/2026 — redes: fuera "bookies" de las imágenes, 06/10/2026 — colores de 228 equipos, curados, 06/10/2026 — colores_redes: descarga robusta, 06/10/2026 — redes: 2yellow Index POR ROL (ataque, medio, defensa, portero), 06/10/2026 — redes: 2yellow XI con posiciones reales y filtro de nivel, 06/10/2026 — redes_api: no perder descargas por conflictos (+30 more)
+Cohesion: 0.06
+Nodes (31): 05/10/2026 — redes: backup sin Claude, 05/10/2026 — redes: fuera "bookies" de las imágenes, 06/10/2026 — colores de 228 equipos, curados, 06/10/2026 — colores_redes: descarga robusta, 06/10/2026 — redes: 2yellow Index POR ROL (ataque, medio, defensa, portero), 06/10/2026 — redes: 2yellow XI con posiciones reales y filtro de nivel, 06/10/2026 — redes_api: no perder descargas por conflictos, 06/10/2026 — redes: correcciones del usuario y caras en jugador vs jugador (+23 more)
 
 ### Community 28 - "afinar_ambos.py"
-Cohesion: 0.19
+Cohesion: 0.18
 Nodes (8): correr(), entrenar(), main(), nombre(), predecir(), evaluar_config(), main(), todas_las_combinaciones()
 
 ### Community 29 - "Pronósticos de selecciones (06/10/2026 17:58 UTC)"
@@ -306,17 +305,17 @@ Nodes (7): aplanar(), desempaquetar(), elegir_partidos(), main(), pedir(), resum
 Cohesion: 0.21
 Nodes (11): anclas_encontradas(), avisar_de_cobertura(), descubrir_ligas(), desempaquetar(), equipos_de(), main(), nombre_encaja(), partidos_de_liga() (+3 more)
 
-### Community 34 - "backtest_valor.py"
-Cohesion: 0.20
-Nodes (9): desempaquetar(), desmarginar(), familia_de(), handicap_local(), hechos_del_partido(), main(), pedir(), resolver() (+1 more)
+### Community 34 - "pronostico_selecciones.py"
+Cohesion: 0.24
+Nodes (7): main(), resultados(), arbitro(), forma(), main(), mercado(), pesos()
 
 ### Community 35 - "datos_selecciones.py"
 Cohesion: 0.06
 Nodes (31): ajustar(), f(), matriz(), calidad_equipos(), cargar(), esperados(), fifa_antes(), goles() (+23 more)
 
-### Community 36 - "ambos_marcan/scripts/evaluar_mercados.py"
-Cohesion: 0.24
-Nodes (7): brier(), cargar_cuotas_crudas(), evaluar_uno(), main(), mejor_peso(), mercado_por_partido(), probabilidad_binaria()
+### Community 36 - "sondeo_frescura.py"
+Cohesion: 0.40
+Nodes (7): desempaquetar(), en_juego(), estado_de(), foto(), main(), minuto_de(), pedir()
 
 ### Community 37 - "casas_descolgadas.py"
 Cohesion: 0.36
@@ -334,9 +333,9 @@ Nodes (7): abrir(), altura(), fecha(), jugadores_unicos(), main(), pedir(), ya_t
 Cohesion: 0.50
 Nodes (6): aplanar_cuotas(), desempaquetar(), main(), pedir(), proximos_partidos(), titulo()
 
-### Community 41 - "ambos_marcan/scripts/modelo_xgboost.py"
-Cohesion: 0.39
-Nodes (5): brier(), cargar(), entrenar(), main(), probabilidades()
+### Community 41 - "pronostico_partido.py"
+Cohesion: 0.38
+Nodes (5): ajustar(), X(), main(), probs(), c()
 
 ### Community 42 - "redes_api.py"
 Cohesion: 0.26
@@ -354,17 +353,17 @@ Nodes (5): desempaquetar(), main(), minuto_de_evento(), pedir(), reparto_de_tarj
 Cohesion: 0.15
 Nodes (12): Cómo se mide "poco competido", ¿El precio poco vigilado está MAL, o solo caro?, Estado: mercado poco competido + value bets + herramienta interna, La pista que murió, Las value bets, cruzadas con la vigilancia, Lo que decide, Lo que el modelo aprende de verdad, Lo que falta (actualizado 24/09/2026) (+4 more)
 
-### Community 47 - "main"
-Cohesion: 0.17
-Nodes (8): brier(), cargar_cuotas_crudas(), evaluar_uno(), main(), mejor_peso(), mercado_por_partido(), probabilidad_binaria(), partir()
+### Community 47 - "29/09/2026"
+Cohesion: 0.33
+Nodes (6): 29/09/2026, Comprobaciones hechas en la revisión de código (sin cambios), Errores en los datos encontrados, Fuera del código: maquetas de app (sin cambios en el repositorio), Ideas probadas, Pendiente / ideas sin probar
 
 ### Community 48 - "censo_endpoints.py"
 Cohesion: 0.46
 Nodes (5): desempaquetar(), esquema(), main(), pedir(), probar()
 
-### Community 49 - "auditoria2_tabla_fuga.py"
-Cohesion: 0.27
-Nodes (5): main(), comp(), posiciones(), sig(), calcular_tabla()
+### Community 49 - "main"
+Cohesion: 0.40
+Nodes (4): main(), comp(), posiciones(), sig()
 
 ### Community 50 - "radiografia_ligas.py"
 Cohesion: 0.39
@@ -382,13 +381,17 @@ Nodes (4): main(), once(), pedir(), ya_tengo()
 Cohesion: 0.30
 Nodes (8): columnas(), desempaquetar(), estadisticas_de(), goles(), main(), pedir(), terminado(), ya_guardados()
 
-### Community 55 - "numpy"
-Cohesion: 0.10
-Nodes (20): evaluar(), logit(), main(), sig(), elo(), main(), sig(), brier() (+12 more)
+### Community 54 - "censo_margenes.py"
+Cohesion: 0.47
+Nodes (3): familia_de(), main(), pedir()
 
-### Community 56 - "columnas_rasgo_default"
-Cohesion: 0.33
-Nodes (4): columnas_rasgo(), columnas_rasgo_default(), comprobar_sin_fuga(), grupos_rasgo()
+### Community 55 - "numpy"
+Cohesion: 0.11
+Nodes (19): logit(), main(), sig(), elo(), main(), sig(), comparar(), analizar() (+11 more)
+
+### Community 56 - "Backup de publicación sin Claude (2yellow)"
+Cohesion: 0.40
+Nodes (4): Activarlo (2 pasos, una vez), Backup de publicación sin Claude (2yellow), Límites (a propósito, sin criterio de Claude), Qué hace
 
 ### Community 57 - "Provider APIs - Setup Guides"
 Cohesion: 0.18
@@ -403,8 +406,8 @@ Cohesion: 0.53
 Nodes (4): desempaquetar(), main(), pedir(), ya_tengo()
 
 ### Community 60 - "pandas"
-Cohesion: 0.07
-Nodes (19): calcular_arbitro_ventana(), calcular_h2h_reciente(), calcular_impacto_jugador(), calcular_tabla_goles(), evaluar(), calcular_arbitro_ventana(), calcular_h2h_reciente(), calcular_impacto_jugador() (+11 more)
+Cohesion: 0.08
+Nodes (25): calcular_arbitro_ventana(), calcular_h2h_reciente(), calcular_impacto_jugador(), calcular_tabla_goles(), evaluar(), evaluar(), calcular_arbitro_ventana(), calcular_h2h_reciente() (+17 more)
 
 ### Community 61 - "Doble Oportunidad, Sin Empate y Más/Menos goles"
 Cohesion: 0.20
@@ -443,8 +446,8 @@ Cohesion: 0.29
 Nodes (6): Cierre del registro del descanso -- 2026-09-23 23:19 UTC, Las faltas del primer tiempo, Movimiento del precio, Partido a partido, Quién acierta más, Si se hubiera apostado
 
 ### Community 70 - "recalibrar_ambos.py"
-Cohesion: 0.33
-Nodes (5): logit(), main(), predicciones(), sigmas(), tabla()
+Cohesion: 0.14
+Nodes (11): brier(), ll(), logit(), main(), mercado_real(), sig(), logit(), main() (+3 more)
 
 ### Community 71 - "¿Hay algún mercado donde el precio esté MAL, o solo caro?"
 Cohesion: 0.29
@@ -466,9 +469,9 @@ Nodes (4): ids_titulares(), main(), pedir(), ya_tengo()
 Cohesion: 0.29
 Nodes (6): La prueba definitiva, Lo que sí hemos medido bien, Por qué, estructuralmente, Qué haría falta para que esto cambiara, ¿Se puede ganar dinero con esta API, GitHub y una IA?, Veredicto
 
-### Community 76 - "Agenda del 2026-10-10"
-Cohesion: 0.17
-Nodes (11): 12:15-12:32 UTC  (1 partidos), 12:45-13:02 UTC  (1 partidos), 13:45-14:02 UTC  (1 partidos), 14:15-14:32 UTC  (5 partidos), 14:45-15:17 UTC  (5 partidos), 16:00-16:17 UTC  (1 partidos), 16:45-17:02 UTC  (1 partidos), 17:15-17:32 UTC  (3 partidos) (+3 more)
+### Community 76 - "Agenda del 2026-10-11"
+Cohesion: 0.15
+Nodes (12): 11:15-11:32 UTC  (1 partidos), 12:45-13:02 UTC  (1 partidos), 13:45-14:02 UTC  (5 partidos), 14:15-14:32 UTC  (1 partidos), 15:00-15:17 UTC  (1 partidos), 15:45-16:17 UTC  (12 partidos), 16:15-16:32 UTC  (2 partidos), 16:45-17:02 UTC  (1 partidos) (+4 more)
 
 ### Community 78 - "Inference Providers - Setup Guides"
 Cohesion: 0.33
@@ -502,9 +505,9 @@ Nodes (4): Backtest de valor -- 2026-09-20 19:37 UTC, Lo que decide, Por mercado
 Cohesion: 0.20
 Nodes (8): ajustar(), brier(), elo_previo(), fifa_antes(), main(), preparar(), prueba(), xi_club()
 
-### Community 87 - "sys"
-Cohesion: 0.09
-Nodes (19): main(), main(), main(), predecir(), sig(), main(), sig(), configuraciones() (+11 more)
+### Community 87 - "scripts/modelo_xgboost.py"
+Cohesion: 0.07
+Nodes (19): brier(), cargar_cuotas_crudas(), evaluar_uno(), main(), mejor_peso(), mercado_por_partido(), probabilidad_binaria(), evaluar() (+11 more)
 
 ### Community 88 - "censo_ligas_blandas.py"
 Cohesion: 0.60
@@ -563,8 +566,8 @@ Cohesion: 0.50
 Nodes (3): Cómo leer esto, El modelo, Lo que este fichero NO dice
 
 ### Community 103 - "ambos_marcan_hoy.py"
-Cohesion: 0.11
-Nodes (16): descargar(), evaluar(), juez(), lista(), partidos_del_dia(), pedir(), precio(), registrar() (+8 more)
+Cohesion: 0.13
+Nodes (14): descargar(), evaluar(), juez(), lista(), partidos_del_dia(), pedir(), brier(), ll() (+6 more)
 
 ### Community 104 - "Sondeo: temporadas anteriores a la 2025/26"
 Cohesion: 0.50
@@ -574,35 +577,31 @@ Nodes (3): Partidos por liga y temporada (/matches, hasta 100 por página), Prof
 Cohesion: 0.60
 Nodes (4): fecha(), main(), partidos(), pendientes_previa()
 
-### Community 127 - "experimentos_cuota_feature.py"
-Cohesion: 0.67
-Nodes (3): entrenar_ligero(), evaluar_config(), evaluar_ligero()
-
-### Community 129 - "descargar_partido.py"
-Cohesion: 0.48
-Nodes (5): estado(), lista(), main(), marcador(), pedir()
+### Community 129 - "os"
+Cohesion: 0.12
+Nodes (6): estado(), lista(), main(), marcador(), pedir(), main()
 
 ### Community 130 - "sondeo_temporadas_antiguas.py"
 Cohesion: 0.53
 Nodes (4): lista(), main(), pedir(), terminado()
 
 ## Knowledge Gaps
-- **21 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **20 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `Bitácora del proyecto` connect `Bitácora del proyecto` to `redes_api.py`, `generar.py`, `datos_clubes.py`, `datos_rankings.py`?**
-  _High betweenness centrality (0.049) - this node is a cross-community bridge._
+- **Why does `Bitácora del proyecto` connect `Bitácora del proyecto` to `datos_clubes.py`, `datos_rankings.py`, `redes_api.py`, `29/09/2026`, `05/10/2026`, `generar.py`?**
+  _High betweenness centrality (0.050) - this node is a cross-community bridge._
 - **Should `contraste_directo.py` be split into smaller, more focused modules?**
-  _Cohesion score 0.07149758454106281 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.08819345661450925 - nodes in this community are weakly interconnected._
 - **Why does `analizar()` connect `Notas para trabajar en este repositorio` to `numpy`?**
   _High betweenness centrality (0.036) - this node is a cross-community bridge._
 - **Should `descanso_en_vivo.py` be split into smaller, more focused modules?**
   _Cohesion score 0.07467532467532467 - nodes in this community are weakly interconnected._
 - **Should `apuesta_ambos_marcan.py` be split into smaller, more focused modules?**
-  _Cohesion score 0.12923076923076923 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.08558558558558559 - nodes in this community are weakly interconnected._
 - **Should `datos_clubes.py` be split into smaller, more focused modules?**
-  _Cohesion score 0.07826694619147449 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.07982583454281568 - nodes in this community are weakly interconnected._
 - **Should `requests` be split into smaller, more focused modules?**
-  _Cohesion score 0.07610993657505286 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.10582010582010581 - nodes in this community are weakly interconnected._
