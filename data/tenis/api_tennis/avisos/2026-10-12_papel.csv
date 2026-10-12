@@ -96,3 +96,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-12 13:23,12170096,Challenger Men Singles,Olbia,M. Kasnikowski,C. Cretu,menos,16.5,0.6018,0.5366,1.727,True,aprendida
 2026-10-12 13:24,12170055,Challenger Men Singles,Catania (Italy) - Qualification,B. Gadamauri,S. Kopp,más,21.5,0.7985,0.4233,2.2,True,aprendida
 2026-10-12 13:25,12170151,Challenger Women Singles,Lisbon (Portugal) - Qualification,C. Burel,L. Gjorcheska,más,16.5,0.561,0.4853,1.909,True,aprendida
+2026-10-12 13:31,12170036,Challenger Women Singles,Rovereto,E. Arango,G. Knutson,menos,21.5,0.5909,0.5147,1.8,True,aprendida
