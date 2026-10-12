@@ -139,3 +139,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-12 16:51,12169995,Challenger Men Singles,Roanne,M. Brunold,M. Domenc,menos,22.5,0.8808,0.8808,1.083,True,casa65
 2026-10-12 16:55,12170044,Challenger Women Singles,Rovereto,L. Pigato,J. Avdeeva,menos,20.5,0.6255,0.5576,1.666,True,actual
 2026-10-12 17:12,12169997,Challenger Men Singles,Roanne,H. Gaston,D. Jade,menos,15.5,0.7051,0.5889,1.571,True,actual
+2026-10-12 17:24,12170044,Challenger Women Singles,Rovereto,L. Pigato,J. Avdeeva,menos,18.5,0.766,0.766,1.222,True,casa65
