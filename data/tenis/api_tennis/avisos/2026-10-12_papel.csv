@@ -13,3 +13,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-12 05:10,12169844,Atp Singles,Shanghai,L. Tien,C. Ruud,menos,23.5,0.663,0.5576,1.666,True,actual
 2026-10-12 05:27,12169854,Wta Singles,Wuhan,E. Alexandrova,L. Fernandez,más,28.5,0.715,0.6077,1.533,True,aprendida
 2026-10-12 05:40,12169868,Wta Singles,Wuhan,C. Tauson,M. Bouzkova,menos,15.5,0.6258,0.6077,1.533,True,actual
+2026-10-12 05:46,12169861,Wta Singles,Wuhan,J. Paolini,S. Bejlek,menos,21.5,0.5652,0.5,1.833,True,aprendida
