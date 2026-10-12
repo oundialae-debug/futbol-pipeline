@@ -36,3 +36,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-12 07:44,12169853,Atp Singles,Shanghai,S. Tsitsipas,T. Fritz,menos,22.5,0.6627,0.6627,1.4,True,casa65
 2026-10-12 07:47,12170080,Wta Singles,Wuhan,M. Sawangkaew,M. Frech,menos,18.5,0.7315,0.7315,1.285,True,casa65
 2026-10-12 07:57,12169816,Atp Singles,Shanghai,J. Lehecka,R. Jodar,menos,23.5,0.6309,0.5767,1.615,True,actual
+2026-10-12 07:58,12170081,Wta Singles,Wuhan,C. McNally,Y. Starodubtseva,menos,20.5,0.5369,0.4853,1.909,True,aprendida
