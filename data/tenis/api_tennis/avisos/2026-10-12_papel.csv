@@ -7,3 +7,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-12 04:28,12169859,Wta Singles,Wuhan,A. Kalinina,S. Kartal,menos,21.5,0.7613,0.6627,1.4,True,actual
 2026-10-12 04:28,12169859,Wta Singles,Wuhan,A. Kalinina,S. Kartal,menos,21.5,0.6627,0.6627,1.4,True,casa65
 2026-10-12 04:31,12170239,Wta Singles,Wuhan,D. Parry,L. Tararudee,menos,17.5,0.766,0.766,1.222,True,casa65
+2026-10-12 04:40,12169854,Wta Singles,Wuhan,E. Alexandrova,L. Fernandez,menos,29.5,0.6568,0.5767,1.615,True,actual
