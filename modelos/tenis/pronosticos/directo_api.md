@@ -1,4 +1,4 @@
-# Tenis en directo, 12/10/2026 15:24 UTC (17:24 en España)
+# Tenis en directo, 12/10/2026 15:42 UTC (17:42 en España)
 
 Calculadora desde el marcador exacto (modelo de puntos, superficie real) frente a la cuota en directo
 (sin margen). Ganador y sets: la calculadora suele coincidir con la casa. Total de juegos: el modelo
@@ -9,14 +9,11 @@ Se actualiza cada ~5 min; el registro en data/tenis/api_tennis/registro/ servir�
 |---|---|---|---|---|---|---|
 | L. Draxl vs O. Jasika | Challenger Men Singles | Hard | 0-0, 0-0, 0 - 0, saca O. Jasika | 80% / 73% | 2-0 51%, 2-1 29% |  |
 | M. Sharipov vs Ja. Delaney | Challenger Men Singles | Hard | 0-0, 0-0, 0 - 0, saca M. Sharipov | 83% / 79% | 2-0 55%, 2-1 29% |  |
-| A. Sanchez Quilez vs I. Gakhov | Challenger Men Singles | Clay | 1-1, 4-4, 15 - 40, saca I. Gakhov | 39% / 38% | 1-2 61%, 2-1 39% |  |
-| M. Brunold vs M. Domenc | Challenger Men Singles | Hard | 0-0, 1-4, 0 - 0, saca M. Brunold | 72% / 62% | 2-1 50%, 2-0 21% | 25.5: 57% / 49% |
-| F. Forti vs Z. Kolar | Challenger Men Singles | Clay | 0-0, 1-0, 15 - 30, saca Z. Kolar | 41% / 53% | 0-2 31%, 1-2 29% | 21.5: 66% / 51% |
-| S. Cuenin vs I. Almazan Valiente | Challenger Men Singles | Clay | 0-0, 6-6, 5 - 2, saca S. Cuenin | 92% / 72% | 2-0 72%, 2-1 20% | 25.5: 34% / 50% |
-| S. Gueymard Wayenburg vs L. Broady | Challenger Men Singles | Hard | 1-0, 1-2, 30 - 0, saca S. Gueymard Wayenburg | 68% / 90% | 2-0 43%, 1-2 32% | 21.5: 76% / 54% |
-| A. Lazaro Garcia vs Y. Kabbaj | Challenger Women Singles | Clay | 0-0, 6-6, 1 - 2, saca Y. Kabbaj | 80% / 61% | 2-0 40%, 2-1 40% | 26.5: 49% / 50% |
-| B. Palicova vs J. Ortenzi | Challenger Women Singles | Clay | 0-1, 3-2, 0 - 0, saca J. Ortenzi | 17% / 42% | 0-2 50%, 1-2 34% | 27.5: 40% / 50% |
-| J. Ruggeri vs E. Yaneva | Challenger Women Singles | Clay | 1-1, 0-4, 30 - 30, saca E. Yaneva | 5% / 5% | 1-2 95%, 2-1 5% | 27.5: 45% / 44% |
-| P. Iatcenko vs H. Tan | Challenger Women Singles | Hard | 1-0, 4-4, 0 - 0, saca H. Tan | 68% / 77% | 2-0 45%, 1-2 32% | 21.5: 55% / 44% |
-| V. Dullinger vs F. Krolo | Itf Men Singles | Hard | 0-1, 1-5, -, saca ? | 1% / 4% | 0-2 99%, 1-2 1% |  |
-| A. Eala vs H. Shi | Wta Singles | Hard | 1-1, 1-4, 40 - 0, saca A. Eala | 38% / 27% | 1-2 62%, 2-1 38% | 28.5: 60% / 38% |
+| S. Nagal vs H. Rocha | Challenger Men Singles | Clay | 0-0, 0-2, 0 - 0, saca H. Rocha | 25% / 16% | 0-2 49%, 1-2 26% | 18.5: 74% / 50% |
+| F. Forti vs Z. Kolar | Challenger Men Singles | Clay | 0-0, 4-1, 0 - 15, saca Z. Kolar | 58% / 69% | 2-0 35%, 1-2 32% | 21.5: 68% / 51% |
+| S. Cuenin vs I. Almazan Valiente | Challenger Men Singles | Clay | 1-0, 1-1, 15 - 30, saca I. Almazan Valiente | 93% / 75% | 2-0 71%, 2-1 22% | 25.5: 39% / 54% |
+| S. Gueymard Wayenburg vs L. Broady | Challenger Men Singles | Hard | 1-0, 5-3, 0 - 15, saca L. Broady | 94% / 98% | 2-0 90%, 1-2 6% | 19.5: 91% / 83% |
+| M. Brunold vs M. Domenc | Challenger Men Singles | Hard | 0-0, 4-4, 40 - 30, saca M. Domenc | 90% / 86% | 2-0 65%, 2-1 25% | 21.5: 58% / 49% |
+| B. Palicova vs J. Ortenzi | Challenger Women Singles | Clay | 0-1, 4-5, 0 - 0, saca J. Ortenzi | 5% / 14% | 0-2 85%, 1-2 10% | 20.5: 37% / 42% |
+| A. Lazaro Garcia vs Y. Kabbaj | Challenger Women Singles | Clay | 1-0, 1-0, A - 40, saca A. Lazaro Garcia | 98% / 89% | 2-0 90%, 2-1 8% | 22.5: 32% / 46% |
+| P. Iatcenko vs H. Tan | Challenger Women Singles | Hard | 1-1, 0-2, 0 - 0, saca H. Tan | 18% / 14% | 1-2 82%, 2-1 18% | 26.5: 61% / 49% |
