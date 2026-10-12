@@ -108,3 +108,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-12 14:18,12170113,Challenger Women Singles,Mallorca,A. Lazaro Garcia,Y. Kabbaj,menos,20.5,0.6857,0.5147,1.8,True,aprendida
 2026-10-12 14:18,12170116,Challenger Women Singles,Mallorca,J. Ruggeri,E. Yaneva,menos,15.5,0.5211,0.4634,2.0,True,aprendida
 2026-10-12 14:22,12170158,Challenger Women Singles,Lisbon (Portugal) - Qualification,B. Palicova,J. Ortenzi,menos,22.5,0.6163,0.5,1.833,True,aprendida
+2026-10-12 14:26,12170116,Challenger Women Singles,Mallorca,J. Ruggeri,E. Yaneva,más,16.5,0.7092,0.5576,1.666,True,aprendida
