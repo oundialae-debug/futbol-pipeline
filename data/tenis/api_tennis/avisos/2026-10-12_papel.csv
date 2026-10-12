@@ -142,3 +142,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-12 17:24,12170044,Challenger Women Singles,Rovereto,L. Pigato,J. Avdeeva,menos,18.5,0.766,0.766,1.222,True,casa65
 2026-10-12 17:31,12170159,Challenger Women Singles,Lisbon (Portugal) - Qualification,L. Romero Gormaz,A. Rame,menos,27.5,0.6816,0.5576,1.666,True,actual
 2026-10-12 17:37,12170041,Challenger Women Singles,Rovereto,L. Klimovicova,L. Havlickova,menos,22.5,0.6231,0.5576,1.666,True,actual
+2026-10-12 17:46,12170038,Challenger Women Singles,Rovereto,M. Barthel,L. Bronzetti,menos,21.5,0.6267,0.5,1.833,True,aprendida
