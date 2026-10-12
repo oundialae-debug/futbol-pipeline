@@ -2,7 +2,7 @@ event_key,tipo,torneo,jugador1,jugador2,estado,sets,juegos_totales
 12169812,Atp Doubles,Shanghai,Harrison/ Skupski,Nys/ Roger-Vasselin,,-,0
 12169815,Atp Doubles,Shanghai,Galloway/ Goransson,Pavlasek/ Rikl,,-,0
 12169816,Atp Singles,Shanghai,J. Lehecka,R. Jodar,,-,0
-12169824,Wta Doubles,Wuhan,Kenin/ Khromacheva,Muhammad/ Pegula,,-,0
+12169824,Wta Doubles,Wuhan,Kenin/ Khromacheva,Muhammad/ Pegula,Set 1,0 - 0,3
 12169825,Wta Doubles,Wuhan,Joint/ Krawczyk,Eikeri/ Gleason,,-,0
 12169826,Wta Doubles,Wuhan,Guo/ Mladenovic,Lumsden/ Panova,,-,0
 12169827,Wta Doubles,Wuhan,Mihalikova/ Nicholls,Chan H-/Kato,,-,0
@@ -11,9 +11,9 @@ event_key,tipo,torneo,jugador1,jugador2,estado,sets,juegos_totales
 12169843,Atp Singles,Shanghai,D. Medvedev,D. Svrcina,,-,0
 12169844,Atp Singles,Shanghai,L. Tien,C. Ruud,,-,0
 12169853,Atp Singles,Shanghai,S. Tsitsipas,T. Fritz,,-,0
-12169854,Wta Singles,Wuhan,E. Alexandrova,L. Fernandez,,-,0
-12169858,Wta Singles,Wuhan,I. Jovic,M. Pohankova,,-,0
-12169859,Wta Singles,Wuhan,A. Kalinina,S. Kartal,,-,0
+12169854,Wta Singles,Wuhan,E. Alexandrova,L. Fernandez,Set 1,0 - 0,3
+12169858,Wta Singles,Wuhan,I. Jovic,M. Pohankova,Cancelled,-,0
+12169859,Wta Singles,Wuhan,A. Kalinina,S. Kartal,Set 1,0 - 0,3
 12169861,Wta Singles,Wuhan,J. Paolini,S. Bejlek,,-,0
 12169862,Wta Singles,Wuhan,D. Parry,A. Kalinskaya,Cancelled,-,0
 12169863,Wta Singles,Wuhan,M. Sakkari,D. Vekic,,-,0
@@ -125,3 +125,5 @@ event_key,tipo,torneo,jugador1,jugador2,estado,sets,juegos_totales
 12170236,Challenger Men Singles,Santa Cruz 2,S. Rodriguez Taverna,M. Zeitune,,-,0
 12170237,Challenger Men Singles,Santa Cruz 2,S. De La Fuente,A. Huertas Del Pino Cordova,,-,0
 12170238,Challenger Men Singles,Santa Cruz 2,L. J. Rodriguez,T. Cigarran,,-,0
+12170239,Wta Singles,Wuhan,D. Parry,L. Tararudee,Set 1,0 - 0,3
+12170240,Wta Singles,Wuhan,A. Bondar,M. Pohankova,,-,0
