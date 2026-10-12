@@ -99,3 +99,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-12 13:31,12170036,Challenger Women Singles,Rovereto,E. Arango,G. Knutson,menos,21.5,0.5909,0.5147,1.8,True,aprendida
 2026-10-12 13:35,12170151,Challenger Women Singles,Lisbon (Portugal) - Qualification,C. Burel,L. Gjorcheska,menos,16.5,0.5676,0.5147,1.8,True,aprendida
 2026-10-12 13:59,12170109,Challenger Women Singles,Mallorca,J. Grabher,D. Chiesa,más,25.5,0.7526,0.5366,1.727,True,aprendida
+2026-10-12 14:18,12170037,Challenger Women Singles,Rovereto,S. Bandecchi,G. Maduzzi,menos,22.5,0.6351,0.5147,1.8,True,aprendida
