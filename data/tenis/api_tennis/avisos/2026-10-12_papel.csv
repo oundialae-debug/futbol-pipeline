@@ -34,3 +34,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-12 07:41,12169861,Wta Singles,Wuhan,J. Paolini,S. Bejlek,menos,19.5,0.6317,0.5576,1.666,True,actual
 2026-10-12 07:42,12170080,Wta Singles,Wuhan,M. Sawangkaew,M. Frech,menos,19.5,0.7124,0.6451,1.444,True,actual
 2026-10-12 07:44,12169853,Atp Singles,Shanghai,S. Tsitsipas,T. Fritz,menos,22.5,0.6627,0.6627,1.4,True,casa65
+2026-10-12 07:47,12170080,Wta Singles,Wuhan,M. Sawangkaew,M. Frech,menos,18.5,0.7315,0.7315,1.285,True,casa65
