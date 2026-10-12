@@ -1,23 +1,23 @@
 event_key,tipo,torneo,jugador1,jugador2,estado,sets,juegos_totales
-12169812,Atp Doubles,Shanghai,Harrison/ Skupski,Nys/ Roger-Vasselin,Set 1,0 - 0,5
+12169812,Atp Doubles,Shanghai,Harrison/ Skupski,Nys/ Roger-Vasselin,Set 2,1 - 0,21
 12169815,Atp Doubles,Shanghai,Galloway/ Goransson,Pavlasek/ Rikl,,-,0
 12169816,Atp Singles,Shanghai,J. Lehecka,R. Jodar,,-,0
-12169824,Wta Doubles,Wuhan,Kenin/ Khromacheva,Muhammad/ Pegula,Set 2,1 - 0,20
-12169825,Wta Doubles,Wuhan,Joint/ Krawczyk,Eikeri/ Gleason,,-,0
+12169824,Wta Doubles,Wuhan,Kenin/ Khromacheva,Muhammad/ Pegula,Finished,2 - 0,21
+12169825,Wta Doubles,Wuhan,Joint/ Krawczyk,Eikeri/ Gleason,Set 2,1 - 0,10
 12169826,Wta Doubles,Wuhan,Guo/ Mladenovic,Lumsden/ Panova,,-,0
 12169827,Wta Doubles,Wuhan,Mihalikova/ Nicholls,Chan H-/Kato,,-,0
 12169839,Atp Doubles,Shanghai,Cabral/ Tracy,Arends/ Johnson,,-,0
-12169842,Atp Singles,Shanghai,P. Carreno-Busta,F. Auger-Aliassime,Set 1,0 - 0,4
+12169842,Atp Singles,Shanghai,P. Carreno-Busta,F. Auger-Aliassime,Set 2,0 - 1,18
 12169843,Atp Singles,Shanghai,D. Medvedev,D. Svrcina,,-,0
-12169844,Atp Singles,Shanghai,L. Tien,C. Ruud,Set 1,0 - 0,5
+12169844,Atp Singles,Shanghai,L. Tien,C. Ruud,Set 2,0 - 1,19
 12169853,Atp Singles,Shanghai,S. Tsitsipas,T. Fritz,,-,0
-12169854,Wta Singles,Wuhan,E. Alexandrova,L. Fernandez,Set 2,0 - 1,16
+12169854,Wta Singles,Wuhan,E. Alexandrova,L. Fernandez,Finished,1 - 2,28
 12169858,Wta Singles,Wuhan,I. Jovic,M. Pohankova,Cancelled,-,0
-12169859,Wta Singles,Wuhan,A. Kalinina,S. Kartal,Set 2,0 - 1,19
+12169859,Wta Singles,Wuhan,A. Kalinina,S. Kartal,Finished,0 - 2,21
 12169861,Wta Singles,Wuhan,J. Paolini,S. Bejlek,,-,0
 12169862,Wta Singles,Wuhan,D. Parry,A. Kalinskaya,Cancelled,-,0
 12169863,Wta Singles,Wuhan,M. Sakkari,D. Vekic,,-,0
-12169868,Wta Singles,Wuhan,C. Tauson,M. Bouzkova,,-,0
+12169868,Wta Singles,Wuhan,C. Tauson,M. Bouzkova,Set 2,0 - 1,8
 12169869,Wta Singles,Wuhan,J. Tjen,O. Oliynykova,Cancelled,-,0
 12169870,Wta Singles,Wuhan,Xiy. Wang,Xin. Wang,,-,0
 12169872,Atp Doubles,Shanghai,Zhang/ Zhou,Krawietz/ Puetz,,-,0
@@ -47,11 +47,11 @@ event_key,tipo,torneo,jugador1,jugador2,estado,sets,juegos_totales
 12170054,Challenger Men Singles,Catania (Italy) - Qualification,F. Forti,Z. Kolar,,-,0
 12170055,Challenger Men Singles,Catania (Italy) - Qualification,B. Gadamauri,S. Kopp,,-,0
 12170057,Challenger Men Singles,Catania (Italy) - Qualification,G. Piraino,F. Gill,,-,0
-12170070,Challenger Men Singles,Jinan,H. Matsuoka,J. McCabe,Interrupted,0 - 0,2
-12170075,Challenger Men Singles,Jinan,L. Pavlovic,K. Shi,,-,0
+12170070,Challenger Men Singles,Jinan,H. Matsuoka,J. McCabe,Set 2,1 - 0,12
+12170075,Challenger Men Singles,Jinan,L. Pavlovic,K. Shi,Set 2,1 - 0,8
 12170077,Challenger Men Singles,Jinan,L. Draxl,O. Jasika,,-,0
 12170078,Challenger Men Singles,Jinan,M. Sharipov,Ja. Delaney,,-,0
-12170079,Challenger Men Singles,Jinan,I. Ivashka,K. Uchida,Interrupted,0 - 0,4
+12170079,Challenger Men Singles,Jinan,I. Ivashka,K. Uchida,Set 2,1 - 0,13
 12170080,Wta Singles,Wuhan,M. Sawangkaew,M. Frech,,-,0
 12170081,Wta Singles,Wuhan,C. McNally,Y. Starodubtseva,,-,0
 12170082,Wta Singles,Wuhan,A. Eala,H. Shi,,-,0
@@ -62,7 +62,7 @@ event_key,tipo,torneo,jugador1,jugador2,estado,sets,juegos_totales
 12170096,Challenger Men Singles,Olbia,M. Kasnikowski,C. Cretu,,-,0
 12170102,Challenger Men Singles,Olbia,C. Langmo,V. Durasovic,,-,0
 12170103,Challenger Men Singles,Roanne,L. Poullain,T. Paris,,-,0
-12170104,Wta Singles,Wuhan,J. Tjen,A. Ito,,-,0
+12170104,Wta Singles,Wuhan,J. Tjen,A. Ito,Set 2,1 - 0,10
 12170105,Challenger Men Singles,Olbia,D. Kuzmanov,M. Cerny,,-,0
 12170106,Challenger Men Singles,Olbia,I. Marrero Curbelo,N. Visker,,-,0
 12170107,Challenger Men Singles,Roanne,U. Blanchet,D. De Jonge,,-,0
@@ -125,5 +125,5 @@ event_key,tipo,torneo,jugador1,jugador2,estado,sets,juegos_totales
 12170236,Challenger Men Singles,Santa Cruz 2,S. Rodriguez Taverna,M. Zeitune,,-,0
 12170237,Challenger Men Singles,Santa Cruz 2,S. De La Fuente,A. Huertas Del Pino Cordova,,-,0
 12170238,Challenger Men Singles,Santa Cruz 2,L. J. Rodriguez,T. Cigarran,,-,0
-12170239,Wta Singles,Wuhan,D. Parry,L. Tararudee,Set 2,0 - 1,16
-12170240,Wta Singles,Wuhan,A. Bondar,M. Pohankova,,-,0
+12170239,Wta Singles,Wuhan,D. Parry,L. Tararudee,Finished,0 - 2,17
+12170240,Wta Singles,Wuhan,A. Bondar,M. Pohankova,Set 1,0 - 0,0
