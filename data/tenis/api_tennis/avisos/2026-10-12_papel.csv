@@ -17,3 +17,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-12 05:51,12170104,Wta Singles,Wuhan,J. Tjen,A. Ito,menos,16.5,0.6972,0.625,1.5,True,actual
 2026-10-12 05:54,12169844,Atp Singles,Shanghai,L. Tien,C. Ruud,menos,23.5,0.9129,0.9129,1.05,True,casa65
 2026-10-12 06:00,12170240,Wta Singles,Wuhan,A. Bondar,M. Pohankova,menos,21.5,0.5726,0.5147,1.8,True,aprendida
+2026-10-12 06:04,12169816,Atp Singles,Shanghai,J. Lehecka,R. Jodar,menos,22.5,0.5679,0.4853,1.909,True,aprendida
