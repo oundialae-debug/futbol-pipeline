@@ -130,3 +130,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-12 15:58,12170113,Challenger Women Singles,Mallorca,A. Lazaro Garcia,Y. Kabbaj,menos,20.5,0.6913,0.5767,1.615,True,actual
 2026-10-12 16:04,12170041,Challenger Women Singles,Rovereto,L. Klimovicova,L. Havlickova,menos,21.5,0.5998,0.4853,1.909,True,aprendida
 2026-10-12 16:04,12170044,Challenger Women Singles,Rovereto,L. Pigato,J. Avdeeva,menos,20.5,0.5799,0.5,1.833,True,aprendida
+2026-10-12 16:08,12170113,Challenger Women Singles,Mallorca,A. Lazaro Garcia,Y. Kabbaj,menos,19.5,0.904,0.904,1.062,True,casa65
