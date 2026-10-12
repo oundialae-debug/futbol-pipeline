@@ -128,3 +128,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-12 15:46,12169999,Challenger Men Singles,Roanne,S. Gueymard Wayenburg,L. Broady,menos,20.5,0.9357,0.9357,1.03,True,casa65
 2026-10-12 15:56,12170158,Challenger Women Singles,Lisbon (Portugal) - Qualification,B. Palicova,J. Ortenzi,menos,22.5,0.8109,0.8109,1.166,True,casa65
 2026-10-12 15:58,12170113,Challenger Women Singles,Mallorca,A. Lazaro Garcia,Y. Kabbaj,menos,20.5,0.6913,0.5767,1.615,True,actual
+2026-10-12 16:04,12170041,Challenger Women Singles,Rovereto,L. Klimovicova,L. Havlickova,menos,21.5,0.5998,0.4853,1.909,True,aprendida
