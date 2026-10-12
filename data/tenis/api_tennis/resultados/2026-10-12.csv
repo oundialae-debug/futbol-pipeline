@@ -1,14 +1,14 @@
 event_key,tipo,torneo,jugador1,jugador2,estado,sets,juegos_totales
 12169812,Atp Doubles,Shanghai,Harrison/ Skupski,Nys/ Roger-Vasselin,Finished,2 - 0,25
 12169815,Atp Doubles,Shanghai,Galloway/ Goransson,Pavlasek/ Rikl,Finished,2 - 0,20
-12169816,Atp Singles,Shanghai,J. Lehecka,R. Jodar,Set 3,1 - 1,31
+12169816,Atp Singles,Shanghai,J. Lehecka,R. Jodar,Finished,1 - 2,33
 12169824,Wta Doubles,Wuhan,Kenin/ Khromacheva,Muhammad/ Pegula,Finished,2 - 0,21
 12169825,Wta Doubles,Wuhan,Joint/ Krawczyk,Eikeri/ Gleason,Finished,1 - 2,33
 12169826,Wta Doubles,Wuhan,Guo/ Mladenovic,Lumsden/ Panova,Finished,2 - 0,19
-12169827,Wta Doubles,Wuhan,Mihalikova/ Nicholls,Chan H-/Kato,Set 1,0 - 0,2
-12169839,Atp Doubles,Shanghai,Cabral/ Tracy,Arends/ Johnson,,-,0
+12169827,Wta Doubles,Wuhan,Mihalikova/ Nicholls,Chan H-/Kato,Set 3,1 - 1,22
+12169839,Atp Doubles,Shanghai,Cabral/ Tracy,Arends/ Johnson,Set 2,1 - 0,13
 12169842,Atp Singles,Shanghai,P. Carreno-Busta,F. Auger-Aliassime,Finished,1 - 2,26
-12169843,Atp Singles,Shanghai,D. Medvedev,D. Svrcina,,-,0
+12169843,Atp Singles,Shanghai,D. Medvedev,D. Svrcina,Set 1,0 - 0,7
 12169844,Atp Singles,Shanghai,L. Tien,C. Ruud,Finished,0 - 2,23
 12169853,Atp Singles,Shanghai,S. Tsitsipas,T. Fritz,Finished,2 - 1,30
 12169854,Wta Singles,Wuhan,E. Alexandrova,L. Fernandez,Finished,1 - 2,28
@@ -16,18 +16,17 @@ event_key,tipo,torneo,jugador1,jugador2,estado,sets,juegos_totales
 12169859,Wta Singles,Wuhan,A. Kalinina,S. Kartal,Finished,0 - 2,21
 12169861,Wta Singles,Wuhan,J. Paolini,S. Bejlek,Finished,2 - 0,19
 12169862,Wta Singles,Wuhan,D. Parry,A. Kalinskaya,Cancelled,-,0
-12169863,Wta Singles,Wuhan,M. Sakkari,D. Vekic,Set 2,1 - 0,15
+12169863,Wta Singles,Wuhan,M. Sakkari,D. Vekic,Finished,2 - 0,18
 12169868,Wta Singles,Wuhan,C. Tauson,M. Bouzkova,Retired,0 - 1,9
 12169869,Wta Singles,Wuhan,J. Tjen,O. Oliynykova,Cancelled,-,0
 12169870,Wta Singles,Wuhan,Xiy. Wang,Xin. Wang,,-,0
 12169872,Atp Doubles,Shanghai,Zhang/ Zhou,Krawietz/ Puetz,Finished,0 - 2,17
-12169897,Atp Singles,Shanghai,Z. Bergs,C. Alcaraz,,-,0
+12169897,Atp Singles,Shanghai,Z. Bergs,C. Alcaraz,Set 1,0 - 0,0
 12169898,Atp Singles,Shanghai,A. Fils,B. Van De Zandschulp,,-,0
 12169899,Atp Singles,Shanghai,T. Paul,V. Vacherot,,-,0
 12169904,Challenger Men Singles,Jinan,M. Landaluce,I. Simakin,,-,0
 12169906,Challenger Men Singles,Jinan,S. Sakellaridis,J. Shang,Cancelled,-,0
 12169907,Challenger Men Singles,Jinan,F. Sun,J. Cui,,-,0
-12169909,Challenger Men Singles,Jinan,A. Walton,M. Cilic,,-,0
 12169985,Challenger Men Singles,Maia,P. Martin Tiffon,F. Rocha,,-,0
 12169987,Challenger Men Singles,Maia,S. Nagal,H. Rocha,,-,0
 12169995,Challenger Men Singles,Roanne,M. Brunold,M. Domenc,,-,0
@@ -49,31 +48,31 @@ event_key,tipo,torneo,jugador1,jugador2,estado,sets,juegos_totales
 12170057,Challenger Men Singles,Catania (Italy) - Qualification,G. Piraino,F. Gill,,-,0
 12170070,Challenger Men Singles,Jinan,H. Matsuoka,J. McCabe,Finished,2 - 0,19
 12170075,Challenger Men Singles,Jinan,L. Pavlovic,K. Shi,Finished,2 - 0,14
-12170077,Challenger Men Singles,Jinan,L. Draxl,O. Jasika,Set 1,0 - 0,0
+12170077,Challenger Men Singles,Jinan,L. Draxl,O. Jasika,Finished,0 - 0,0
 12170078,Challenger Men Singles,Jinan,M. Sharipov,Ja. Delaney,Set 1,0 - 0,0
 12170079,Challenger Men Singles,Jinan,I. Ivashka,K. Uchida,Finished,2 - 0,18
 12170080,Wta Singles,Wuhan,M. Sawangkaew,M. Frech,Finished,0 - 2,22
-12170081,Wta Singles,Wuhan,C. McNally,Y. Starodubtseva,Set 2,0 - 1,8
+12170081,Wta Singles,Wuhan,C. McNally,Y. Starodubtseva,Set 2,0 - 1,20
 12170082,Wta Singles,Wuhan,A. Eala,H. Shi,,-,0
-12170083,Challenger Women Singles,Mallorca,A. Kucmova,Ma. Garcia Cid,Set 2,0 - 1,10
+12170083,Challenger Women Singles,Mallorca,A. Kucmova,Ma. Garcia Cid,Set 3,1 - 1,22
 12170090,Challenger Men Singles,Jinan,K. Uesugi,Y. Watanuki,Interrupted,0 - 0,2
 12170092,Challenger Men Singles,Olbia,L. Carboni,M. McDonald,,-,0
 12170095,Challenger Men Singles,Olbia,A. Guerrieri,A. Shelbayh,,-,0
 12170096,Challenger Men Singles,Olbia,M. Kasnikowski,C. Cretu,,-,0
-12170102,Challenger Men Singles,Olbia,C. Langmo,V. Durasovic,Set 1,0 - 0,9
-12170103,Challenger Men Singles,Roanne,L. Poullain,T. Paris,Set 1,0 - 0,2
+12170102,Challenger Men Singles,Olbia,C. Langmo,V. Durasovic,Set 3,1 - 1,24
+12170103,Challenger Men Singles,Roanne,L. Poullain,T. Paris,Set 2,0 - 1,16
 12170104,Wta Singles,Wuhan,J. Tjen,A. Ito,Finished,2 - 0,16
-12170105,Challenger Men Singles,Olbia,D. Kuzmanov,M. Cerny,Set 1,0 - 0,8
-12170106,Challenger Men Singles,Olbia,I. Marrero Curbelo,N. Visker,Set 1,0 - 0,9
-12170107,Challenger Men Singles,Roanne,U. Blanchet,D. De Jonge,Set 1,0 - 0,5
+12170105,Challenger Men Singles,Olbia,D. Kuzmanov,M. Cerny,Finished,2 - 0,17
+12170106,Challenger Men Singles,Olbia,I. Marrero Curbelo,N. Visker,Finished,0 - 2,21
+12170107,Challenger Men Singles,Roanne,U. Blanchet,D. De Jonge,Finished,2 - 0,19
 12170109,Challenger Women Singles,Mallorca,J. Grabher,D. Chiesa,,-,0
 12170113,Challenger Women Singles,Mallorca,A. Lazaro Garcia,Y. Kabbaj,,-,0
 12170116,Challenger Women Singles,Mallorca,J. Ruggeri,E. Yaneva,,-,0
-12170118,Challenger Women Singles,Mallorca,A. Teixido Garcia,L. Samson,,-,0
+12170118,Challenger Women Singles,Mallorca,A. Teixido Garcia,L. Samson,Set 1,0 - 0,4
 12170119,Challenger Women Singles,Mallorca,E. Vedder,F. Curmi,,-,0
-12170121,Challenger Women Singles,Rovereto,E. Jacquemot,L. Boskovic,Set 1,0 - 0,3
+12170121,Challenger Women Singles,Rovereto,E. Jacquemot,L. Boskovic,Set 2,0 - 1,16
 12170134,Challenger Men Doubles,Olbia,Frasconi/ Rocco,Colombo/ Massellani,,-,0
-12170147,Challenger Men Singles,Catania (Italy) - Qualification,S. Gima,P. Vives Marcos,Set 1,0 - 0,11
+12170147,Challenger Men Singles,Catania (Italy) - Qualification,S. Gima,P. Vives Marcos,Finished,0 - 2,21
 12170148,Challenger Men Singles,Maia,D. Ajdukovic,A. Martin,,-,0
 12170149,Challenger Men Singles,Maia,F. Broska,S. Perez Contri,,-,0
 12170151,Challenger Women Singles,Lisbon (Portugal) - Qualification,C. Burel,L. Gjorcheska,,-,0
@@ -81,25 +80,25 @@ event_key,tipo,torneo,jugador1,jugador2,estado,sets,juegos_totales
 12170159,Challenger Women Singles,Lisbon (Portugal) - Qualification,L. Romero Gormaz,A. Rame,,-,0
 12170162,Challenger Women Singles,Lisbon (Portugal) - Qualification,M. Lollia,L. Ebeling Koning,,-,0
 12170163,Challenger Women Singles,Mallorca,L. Encheva,D. Yesypchuk,,-,0
-12170164,Challenger Women Singles,Mallorca,L. Nguyen Tan,R. Roura Llaverias,Set 2,1 - 0,9
+12170164,Challenger Women Singles,Mallorca,L. Nguyen Tan,R. Roura Llaverias,Set 3,1 - 1,24
 12170165,Challenger Women Singles,Rovereto,E. Andreeva,Z. Li,,-,0
-12170166,Challenger Women Singles,Rovereto,A-L. Friedsam,T. J. Brockmann,Set 1,0 - 0,3
-12170168,Challenger Men Singles,Catania (Italy) - Qualification,J. Vrba,D. Siniakov,Set 1,0 - 0,9
+12170166,Challenger Women Singles,Rovereto,A-L. Friedsam,T. J. Brockmann,Set 2,0 - 1,19
+12170168,Challenger Men Singles,Catania (Italy) - Qualification,J. Vrba,D. Siniakov,Set 3,1 - 1,23
 12170169,Challenger Men Singles,Jinan,S. Sakellaridis,K. Smith,,-,0
 12170170,Challenger Men Singles,Olbia,M. Erhard,L. Raquillet,,-,0
 12170171,Challenger Women Doubles,Lisbon (Portugal),Castro/ Ivantsiv,Burillo Escorihuela/ Zantedeschi,,-,0
 12170172,Challenger Women Doubles,Lisbon (Portugal),Colmegna/ Liu,Jorge/ Jorge,,-,0
 12170174,Challenger Women Doubles,Lisbon (Portugal),Matoula/ Pedone,Kulambayeva/ Semenistaja,,-,0
-12170180,Challenger Men Singles,Catania (Italy) - Qualification,P. Rodenas,S. Gulin,Set 2,0 - 1,8
+12170180,Challenger Men Singles,Catania (Italy) - Qualification,P. Rodenas,S. Gulin,Finished,0 - 2,20
 12170181,Challenger Men Singles,Catania (Italy) - Qualification,P. Lagutin,O. Ovcharenko,,-,0
 12170182,Challenger Men Singles,Maia,B. Hassan,R. Nijboer,,-,0
 12170183,Challenger Men Singles,Maia,P. Schoen,M. Vrbensky,,-,0
-12170184,Challenger Men Singles,Olbia,G. Kravchenko,D. Masur,,-,0
-12170185,Challenger Men Singles,Olbia,L. Lokoli,G. Loffhagen,,-,0
+12170184,Challenger Men Singles,Olbia,G. Kravchenko,D. Masur,Set 1,0 - 0,0
+12170185,Challenger Men Singles,Olbia,L. Lokoli,G. Loffhagen,Set 1,0 - 0,2
 12170186,Challenger Men Singles,Roanne,H. Bernet,T. Boogaard,,-,0
 12170187,Challenger Women Singles,Lisbon (Portugal) - Qualification,G. Feistel,T. Lukas,,-,0
 12170188,Challenger Women Singles,Lisbon (Portugal) - Qualification,A. Nagy,I. Primorac,,-,0
-12170189,Challenger Women Singles,Mallorca,I. Wobker,C. Diaz Adrover,Set 2,1 - 0,9
+12170189,Challenger Women Singles,Mallorca,I. Wobker,C. Diaz Adrover,Finished,2 - 0,12
 12170190,Challenger Women Singles,Rovereto,A. Koevermans,C. Werner,,-,0
 12170192,Challenger Men Doubles,Maia,Brancaccio/ Martinez,Domingues/ Torres,,-,0
 12170200,Challenger Men Singles,Catania (Italy) - Qualification,A. Marti Pujolras,K. Wehnelt,,-,0
