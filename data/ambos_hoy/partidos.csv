@@ -1,9 +1,2 @@
 match_id,liga_id,fecha,saque_utc,local_id,local,visitante_id,visitante,estado,arbitro,clima_status,clima_temp_txt,local_ids,local_formacion,visitante_ids,visitante_formacion
-1336043552,120775,2026-10-12T19:00:00.000Z,19:00,612653,Tenerife,466281,Girona,Not started,"Palencia Caballero, Daniel",partly cloudy night,22.25°C,,,,
-1336042701,120775,2026-10-12T16:30:00.000Z,16:30,611802,Oviedo,464579,Eibar,Not started,"Morales Moreno, Pablo",clear day,21.84°C,,,,
-1336037595,120775,2026-10-12T14:15:00.000Z,14:15,8153364,Burgos,609249,Granada CF,Not started,"Lax Franco, Salvador",partly cloudy day,23.45°C,,,,
 1336044403,120775,2026-10-12T12:00:00.000Z,12:00,613504,Valladolid,615206,Albacete,Not started,"Miranda Bolano, Daniel",cloudy,22.32°C,,,,
-1325365204,33973,2026-10-12T19:00:00.000Z,19:00,1146230,Coventry,29718,Newcastle United,Not started,"Brooks, John",partly cloudy night,17.24°C,,,,
-1336417141,119924,2026-10-12T19:00:00.000Z,19:00,459473,Levante,456920,Sevilla FC,Not started,"Cordero Vega, Adrian",clear night,22.78°C,,,,
-1319175030,115669,2026-10-12T18:45:00.000Z,18:45,428837,Torino,421178,Udinese,Not started,"Crezzini, Valerio",cloudy,16.94°C,,,,
-1319167371,115669,2026-10-12T16:30:00.000Z,16:30,425433,Atalanta,440751,Venezia,Not started,"Tremolada, Paride",partly cloudy day,16.65°C,,,,
