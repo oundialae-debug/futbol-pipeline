@@ -153,3 +153,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-12 19:01,12169998,Challenger Men Singles,Roanne,H. Grenier,B. Bonzi,menos,31.5,0.6615,0.5147,1.8,True,aprendida
 2026-10-12 19:01,12170038,Challenger Women Singles,Rovereto,M. Barthel,L. Bronzetti,menos,25.5,0.6308,0.5,1.833,True,aprendida
 2026-10-12 19:13,12170038,Challenger Women Singles,Rovereto,M. Barthel,L. Bronzetti,menos,23.5,0.6362,0.5889,1.571,True,actual
+2026-10-12 19:29,12169985,Challenger Men Singles,Maia,P. Martin Tiffon,F. Rocha,menos,20.5,0.6745,0.5576,1.666,True,actual
