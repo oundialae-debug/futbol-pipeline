@@ -92,3 +92,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-12 13:16,12170095,Challenger Men Singles,Olbia,A. Guerrieri,A. Shelbayh,menos,17.5,0.842,0.75,1.25,True,aprendida
 2026-10-12 13:16,12170109,Challenger Women Singles,Mallorca,J. Grabher,D. Chiesa,menos,25.5,0.6414,0.4853,1.909,True,aprendida
 2026-10-12 13:16,12170202,Challenger Women Singles,Lisbon (Portugal) - Qualification,R. Serban,S. Cakarevic,menos,24.5,0.682,0.5,1.833,True,aprendida
+2026-10-12 13:20,12170055,Challenger Men Singles,Catania (Italy) - Qualification,B. Gadamauri,S. Kopp,menos,21.5,0.612,0.5767,1.615,True,actual
