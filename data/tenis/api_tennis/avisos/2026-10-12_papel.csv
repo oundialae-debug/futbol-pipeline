@@ -22,3 +22,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-12 06:13,12170080,Wta Singles,Wuhan,M. Sawangkaew,M. Frech,menos,21.5,0.5738,0.5,1.833,True,aprendida
 2026-10-12 06:19,12169853,Atp Singles,Shanghai,S. Tsitsipas,T. Fritz,menos,24.5,0.6129,0.5,1.833,True,aprendida
 2026-10-12 07:02,12170240,Wta Singles,Wuhan,A. Bondar,M. Pohankova,menos,16.5,0.7909,0.7315,1.285,True,actual
+2026-10-12 07:02,12170240,Wta Singles,Wuhan,A. Bondar,M. Pohankova,menos,16.5,0.7315,0.7315,1.285,True,casa65
