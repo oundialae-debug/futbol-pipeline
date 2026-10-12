@@ -86,3 +86,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-12 13:02,12170163,Challenger Women Singles,Mallorca,L. Encheva,D. Yesypchuk,más,28.5,0.5346,0.4634,2.0,True,aprendida
 2026-10-12 13:05,12170096,Challenger Men Singles,Olbia,M. Kasnikowski,C. Cretu,menos,18.5,0.6422,0.5767,1.615,True,actual
 2026-10-12 13:10,12170095,Challenger Men Singles,Olbia,A. Guerrieri,A. Shelbayh,menos,16.5,0.8421,0.8421,1.125,True,casa65
+2026-10-12 13:16,12169899,Atp Singles,Shanghai,T. Paul,V. Vacherot,menos,24.5,0.6172,0.5,1.833,True,aprendida
