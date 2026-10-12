@@ -39,3 +39,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-12 07:58,12170081,Wta Singles,Wuhan,C. McNally,Y. Starodubtseva,menos,20.5,0.5369,0.4853,1.909,True,aprendida
 2026-10-12 08:04,12170164,Challenger Women Singles,Mallorca,L. Nguyen Tan,R. Roura Llaverias,menos,20.5,0.635,0.5,1.833,True,aprendida
 2026-10-12 08:20,12170189,Challenger Women Singles,Mallorca,I. Wobker,C. Diaz Adrover,menos,16.5,0.5647,0.5576,1.666,True,actual
+2026-10-12 08:33,12170166,Challenger Women Singles,Rovereto,A-L. Friedsam,T. J. Brockmann,menos,20.5,0.5855,0.5147,1.8,True,aprendida
