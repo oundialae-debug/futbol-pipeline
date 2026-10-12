@@ -1,3 +1,4 @@
 hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cuota_api,calibrado,regla
 2026-10-12 02:49,12169854,Wta Singles,Wuhan,E. Alexandrova,L. Fernandez,menos,22.5,0.5912,0.5,1.833,True,aprendida
 2026-10-12 02:49,12169859,Wta Singles,Wuhan,A. Kalinina,S. Kartal,menos,21.5,0.5668,0.5,1.833,True,aprendida
+2026-10-12 03:16,12170239,Wta Singles,Wuhan,D. Parry,L. Tararudee,menos,21.5,0.5371,0.4853,1.909,True,aprendida
