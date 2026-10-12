@@ -71,3 +71,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-12 11:40,12170055,Challenger Men Singles,Catania (Italy) - Qualification,B. Gadamauri,S. Kopp,menos,21.5,0.5859,0.5,1.833,True,aprendida
 2026-10-12 11:49,12170202,Challenger Women Singles,Lisbon (Portugal) - Qualification,R. Serban,S. Cakarevic,menos,21.5,0.6489,0.5,1.833,True,aprendida
 2026-10-12 12:01,12169897,Atp Singles,Shanghai,Z. Bergs,C. Alcaraz,menos,24.5,0.7234,0.7234,1.3,True,casa65
+2026-10-12 12:04,12170095,Challenger Men Singles,Olbia,A. Guerrieri,A. Shelbayh,menos,22.5,0.6611,0.5,1.833,True,aprendida
