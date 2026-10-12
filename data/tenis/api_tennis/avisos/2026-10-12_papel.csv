@@ -113,3 +113,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-12 14:32,12170057,Challenger Men Singles,Catania (Italy) - Qualification,G. Piraino,F. Gill,menos,17.5,0.6437,0.5576,1.666,True,actual
 2026-10-12 14:33,12169999,Challenger Men Singles,Roanne,S. Gueymard Wayenburg,L. Broady,menos,21.5,0.5837,0.4853,1.909,True,aprendida
 2026-10-12 14:45,12170037,Challenger Women Singles,Rovereto,S. Bandecchi,G. Maduzzi,menos,19.5,0.6633,0.6077,1.533,True,actual
+2026-10-12 14:55,12169995,Challenger Men Singles,Roanne,M. Brunold,M. Domenc,menos,19.5,0.5647,0.4634,2.0,True,aprendida
