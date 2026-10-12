@@ -5,3 +5,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-12 03:55,12169844,Atp Singles,Shanghai,L. Tien,C. Ruud,menos,22.5,0.5788,0.5147,1.8,True,aprendida
 2026-10-12 04:19,12170239,Wta Singles,Wuhan,D. Parry,L. Tararudee,menos,19.5,0.6616,0.625,1.5,True,actual
 2026-10-12 04:28,12169859,Wta Singles,Wuhan,A. Kalinina,S. Kartal,menos,21.5,0.7613,0.6627,1.4,True,actual
+2026-10-12 04:28,12169859,Wta Singles,Wuhan,A. Kalinina,S. Kartal,menos,21.5,0.6627,0.6627,1.4,True,casa65
