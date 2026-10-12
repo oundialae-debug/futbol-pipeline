@@ -1,29 +1,9 @@
 match_id,liga,liga_id,fecha,saque_utc,local,visitante,descanso_desde,descanso_hasta
-1319169073,Serie A,115669,2026-10-11,10:30,Como,AS Roma,11:15,11:32
-1336416290,La Liga,119924,2026-10-11,12:00,Elche,Celta de Vigo,12:45,13:02
-1321415713,Ligue 1,52695,2026-10-11,13:00,Nice,Strasbourg,13:45,14:02
-1325366055,Premier League,33973,2026-10-11,13:00,Crystal Palace,Nottingham Forest,13:45,14:02
-1325366906,Premier League,33973,2026-10-11,13:00,Hull City,Everton,13:45,14:02
-1319171626,Serie A,115669,2026-10-11,13:00,Lazio,Monza,13:45,14:02
-1319172477,Serie A,115669,2026-10-11,13:00,Lecce,Bologna,13:45,14:02
-1340481517,Bundesliga,67162,2026-10-11,13:30,FC Koln,Borussia Mönchengladbach,14:15,14:32
-1336421396,La Liga,119924,2026-10-11,14:15,Real Sociedad,Deportivo La Coruña,15:00,15:17
-1336041850,Segunda División,120775,2026-10-11,15:00,Mallorca,Las Palmas,15:45,16:02
-1336038446,Segunda División,120775,2026-10-11,15:00,Cadiz,Sporting Gijón,15:45,16:02
-1336037595,Segunda División,120775,2026-10-11,15:00,Burgos,Granada CF,15:45,16:02
-1336042701,Segunda División,120775,2026-10-11,15:00,Oviedo,Eibar,15:45,16:02
-1336035893,Segunda División,120775,2026-10-11,15:00,Almería,Leganes,15:45,16:02
-1336039297,Segunda División,120775,2026-10-11,15:00,Celta de Vigo II,Real Sociedad B,15:45,16:02
-1336040999,Segunda División,120775,2026-10-11,15:00,Eldense,Cordoba,15:45,16:02
-1336044403,Segunda División,120775,2026-10-11,15:00,Valladolid,Albacete,15:45,16:02
-1336043552,Segunda División,120775,2026-10-11,15:00,Tenerife,Girona,15:45,16:02
-1336040148,Segunda División,120775,2026-10-11,15:00,AD Ceuta FC,Sabadell,15:45,16:02
-1336036744,Segunda División,120775,2026-10-11,15:00,FC Andorra,Castellón,15:45,16:02
-1321417415,Ligue 1,52695,2026-10-11,15:15,Rennes FC,Auxerre,16:00,16:17
-1340478113,Bundesliga,67162,2026-10-11,15:30,SC Freiburg,FC Schalke 04,16:15,16:32
-1325368608,Premier League,33973,2026-10-11,15:30,Liverpool,Manchester City,16:15,16:32
-1319174179,Serie A,115669,2026-10-11,16:00,Sassuolo,AC Milan,16:45,17:02
-1336415439,La Liga,119924,2026-10-11,16:30,Real Betis,Osasuna,17:15,17:32
-1319168222,Serie A,115669,2026-10-11,18:45,Cagliari,Juventus,19:30,19:47
-1321418266,Ligue 1,52695,2026-10-11,18:45,Estac Troyes,Marseille,19:30,19:47
-1336418843,La Liga,119924,2026-10-11,19:00,Racing Santander,Valencia,19:45,20:02
+1336044403,Segunda División,120775,2026-10-12,12:00,Valladolid,Albacete,12:45,13:02
+1336037595,Segunda División,120775,2026-10-12,14:15,Burgos,Granada CF,15:00,15:17
+1336042701,Segunda División,120775,2026-10-12,16:30,Oviedo,Eibar,17:15,17:32
+1319167371,Serie A,115669,2026-10-12,16:30,Atalanta,Venezia,17:15,17:32
+1319175030,Serie A,115669,2026-10-12,18:45,Torino,Udinese,19:30,19:47
+1336417141,La Liga,119924,2026-10-12,19:00,Levante,Sevilla FC,19:45,20:02
+1325365204,Premier League,33973,2026-10-12,19:00,Coventry,Newcastle United,19:45,20:02
+1336043552,Segunda División,120775,2026-10-12,19:00,Tenerife,Girona,19:45,20:02
