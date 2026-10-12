@@ -157,3 +157,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-12 19:39,12169998,Challenger Men Singles,Roanne,H. Grenier,B. Bonzi,menos,30.5,0.7267,0.625,1.5,True,actual
 2026-10-12 20:07,12169985,Challenger Men Singles,Maia,P. Martin Tiffon,F. Rocha,menos,18.5,0.8281,0.8281,1.142,True,casa65
 2026-10-12 22:04,12170031,Challenger Men Singles,Santa Cruz 2,R. Pacheco Mendez,J. Estevez,menos,20.5,0.5954,0.5147,1.8,True,aprendida
+2026-10-12 22:07,12170033,Challenger Men Singles,Santa Cruz 2,J. B. Torres,A. Barrena,menos,20.5,0.5881,0.4853,1.909,True,aprendida
