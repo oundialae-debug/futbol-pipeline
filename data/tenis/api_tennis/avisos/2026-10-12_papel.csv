@@ -134,3 +134,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-12 16:09,12169987,Challenger Men Singles,Maia,S. Nagal,H. Rocha,menos,19.5,0.6579,0.5576,1.666,True,actual
 2026-10-12 16:11,12169995,Challenger Men Singles,Roanne,M. Brunold,M. Domenc,menos,22.5,0.6594,0.5576,1.666,True,actual
 2026-10-12 16:22,12170159,Challenger Women Singles,Lisbon (Portugal) - Qualification,L. Romero Gormaz,A. Rame,menos,20.5,0.6385,0.5147,1.8,True,aprendida
+2026-10-12 16:33,12169997,Challenger Men Singles,Roanne,H. Gaston,D. Jade,menos,20.5,0.6879,0.5147,1.8,True,aprendida
