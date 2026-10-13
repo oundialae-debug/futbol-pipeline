@@ -11,6 +11,9 @@ cambios de código y archivos".
   el resumen y dónde leerlo.
 - Lo más nuevo, arriba.
 
+## 13/10/2026 — Respaldo sin API: `fd_a_historico.py` + `fd_historico.yml`
+- Usuario: montar la fuente alternativa y actuar sin preguntar. Baja E0/SP1/I1/D1/F1 de football-data.co.uk (temporada 2627) y añade a `historico_partidos.csv` los partidos terminados que falten (match_id negativo = crc32 de fecha+clubes; goles, xG, tiros a puerta, tiros fuera+bloqueados, corners, faltas, tarjetas). Clubes emparejados con los ids del histórico (alias a mano; lo que no empareja se salta y se lista). Si Highlightly trae después el partido, la fila negativa se borra. Cron cada 2 h (07:20-23:20 UTC) + manual. Probado en local con los CSV del repo (153 filas repuestas, 0 duplicados, sustitución por fila real OK).
+
 ## 13/10/2026 — Fuente externa de respaldo a Highlightly (validación)
 - football-data.co.uk (CSV público, sin clave ni cuota): E0 (Premier) e I1 (Serie A) al día hasta el 12/10 con HxG/AxG, tiros, a puerta, corners, faltas, tarjetas y cuotas. Cruce con `historico_partidos.csv` (Premier 10-11/10, Serie A 10-12/10): marcadores y tiros iguales (tiros totales = a puerta + fuera + bloqueados); xG igual o con diferencias de hasta ~0.3 (misma familia de datos, revisiones). SP1, D1 y F1 aparecían parados en 03/09 (a re-comprobar bajando el CSV en un runner, no solo por la herramienta de lectura). No cubre Champions ni jugadores.
 - Descartados/no accesibles: Understat (robots.txt lo prohíbe), FBref (error), ESPN `summary` (solo líderes, sin box-score por jugador), TheSportsDB gratis (liga no válida), football-data.org (gratis: resultados y calendario con retraso, 10 llamadas/min, sin estadísticas ni jugadores; incluye Champions), API-Football (100/día gratis, igual que la cuota actual).

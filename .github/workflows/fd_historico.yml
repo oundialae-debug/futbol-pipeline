@@ -1,0 +1,31 @@
+name: Respaldo sin API - football-data a historico
+
+# Usuario 13/10/2026: la API de Highlightly tiene 100 llamadas/dia en total y hoy devolvio listas vacias.
+# Baja los CSV publicos de football-data.co.uk (sin clave ni cuota) y anade al historico los partidos terminados
+# que falten (goles, xG, tiros, corners, faltas, tarjetas). No toca filas reales de Highlightly.
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '20 7-23/2 * * *'
+
+concurrency: {group: fd-historico, cancel-in-progress: false}
+
+jobs:
+  fusionar:
+    runs-on: ubuntu-latest
+    permissions: {contents: write}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - run: pip install -q requests pandas
+      - name: Bajar y fusionar
+        run: python scripts/fd_a_historico.py
+      - name: Guardar
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"; git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/historico_partidos.csv data/football_data || true
+          git diff --cached --quiet && { echo "Sin cambios"; exit 0; }
+          git commit -m "football-data: respaldo historico ($(date -u +%Y-%m-%dT%H:%M))"
+          for i in 1 2 3; do git pull --rebase -X theirs -q origin main && git push -q origin HEAD:main && break; sleep 5; done
