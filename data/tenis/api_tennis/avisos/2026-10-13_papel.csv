@@ -170,3 +170,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-13 15:35,12170336,Challenger Men Singles,Catania (Italy) - Qualification,M. Cecchinato,P. Vives Marcos,menos,18.5,0.7091,0.7091,1.333,True,casa65
 2026-10-13 15:36,12170351,Challenger Women Singles,Rovereto,A. Koevermans,E. Andreeva,más,27.5,0.6276,0.4233,2.2,True,aprendida
 2026-10-13 15:40,12170458,Challenger Men Singles,Maia,F. Broska,M. Karol,menos,21.5,0.5551,0.4853,1.909,True,aprendida
+2026-10-13 15:41,12170097,Challenger Men Singles,Olbia,J. Kumstat,E. Butvilas,menos,26.5,0.6653,0.5767,1.615,True,actual
