@@ -55,8 +55,19 @@ def extra(desde, hasta, h, x, nombres):
             ids.append(-int(r.fotmob_jugador_id))
             pf = getattr(r, "pos_fm", None)
             posic.append("Goalkeeper" if r.portero == 1 else {1: "Defender", 2: "Midfielder", 3: "Forward"}.get(int(pf) if pf == pf and pf is not None else -1))
+    # nombre de club como en nuestro histórico (Highlightly): "Internazionale" -> "Inter"
+    hist = pd.concat([h[["liga", "local"]].set_axis(["liga", "n"], axis=1), h[["liga", "visitante"]].set_axis(["liga", "n"], axis=1)])
+    cat = {l: sorted(set(g.n.dropna())) for l, g in hist.groupby("liga")}
+    cache = {}
+
+    def club(l, e):
+        if (l, e) not in cache:
+            mej = max(((parecido(e, n), n) for n in cat.get(l, [])), default=(0, e))
+            cache[(l, e)] = mej[1] if mej[0] >= .78 else e
+        return cache[(l, e)]
+    equipo_fm = [club(l, e) for l, e in zip(f.liga, f.equipo)]
     out = pd.DataFrame({"match_id": -f.fotmob_match_id.astype(int), "jugador_id": ids, "posicion": posic,
-                        "jugador": f.jugador.values, "equipo_fm": f.equipo.values})
+                        "jugador": f.jugador.values, "equipo_fm": equipo_fm})
     for dest, orig in MAPA.items():
         out[dest] = pd.to_numeric(f[orig], errors="coerce").values if orig in f else float("nan")
     out["duelsTotal"] = (pd.to_numeric(f.get("duel_won"), errors="coerce") + pd.to_numeric(f.get("duel_lost"), errors="coerce")).values

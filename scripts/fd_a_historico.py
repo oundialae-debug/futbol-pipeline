@@ -47,7 +47,8 @@ ALIAS = {"man city": "manchester city", "man united": "manchester united", "nott
          "wolfsburg": "vfl wolfsburg", "bremen": "werder bremen", "heidenheim": "fc heidenheim", "brest": "stade brestois 29",
          "st etienne": "saint etienne", "paris fc": "paris fc", "le havre": "le havre ac", "troyes": "estac troyes",
          "rennes": "rennes fc", "tottenham": "tottenham", "wolves": "wolverhampton wanderers", "leeds": "leeds united",
-         "newcastle": "newcastle united", "hamburg": "hamburger sv", "paderborn": "sc paderborn 07", "celta": "celta de vigo", "la coruna": "deportivo la coruna", "santander": "racing santander", "west ham": "west ham united", "brighton": "brighton and hove albion"}
+         "newcastle": "newcastle united", "hamburg": "hamburger sv", "paderborn": "sc paderborn 07", "celta": "celta de vigo", "la coruna": "deportivo la coruna", "santander": "racing santander", "west ham": "west ham united", "brighton": "brighton and hove albion", "internazionale": "inter", "sport club freiburg": "sc freiburg",
+         "fc bayern munchen": "bayern munich"}
 
 
 def limpio(s):
