@@ -61,3 +61,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-13 08:10,12170333,Challenger Men Singles,Catania (Italy) - Qualification,M. Geerts,P. Lagutin,menos,19.5,0.5528,0.5,1.833,True,aprendida
 2026-10-13 08:22,12169866,Wta Singles,Wuhan,D. Snigur,E. Mertens,menos,21.5,0.5697,0.5,1.833,True,aprendida
 2026-10-13 08:22,12169909,Challenger Men Singles,Jinan,A. Walton,M. Cilic,menos,23.5,0.6322,0.5,1.833,True,aprendida
+2026-10-13 08:22,12170246,Wta Singles,Wuhan,M. Sakkari,M. Kostyuk,menos,21.5,0.6124,0.5,1.833,True,aprendida
