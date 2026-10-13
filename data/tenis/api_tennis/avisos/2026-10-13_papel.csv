@@ -116,3 +116,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-13 11:01,12170349,Challenger Women Singles,Rovereto,J. Teichmann,T. J. Brockmann,menos,21.5,0.7091,0.7091,1.333,True,casa65
 2026-10-13 11:04,12170153,Challenger Women Singles,Lisbon (Portugal) - Qualification,M. Colmegna,F. Jones,menos,21.5,0.6108,0.5576,1.666,True,actual
 2026-10-13 11:07,12170120,Challenger Women Singles,Mallorca,T. Zidansek,D. Papamichail,menos,18.5,0.655,0.5576,1.666,True,actual
+2026-10-13 11:09,12169902,Challenger Men Singles,Jinan,M. Kecmanovic,A. Shevchenko,menos,21.5,0.5649,0.5,1.833,True,aprendida
