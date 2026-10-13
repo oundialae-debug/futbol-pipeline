@@ -1,0 +1,31 @@
+name: Datos de FotMob (sin cuota de Highlightly)
+
+# Usuario 13/10/2026: Highlightly tiene 100 llamadas/dia en total. FotMob (sin clave) da partidos, xG, tiros,
+# jugadores con minutos y rating y mapa de tiros. Ver scripts/fotmob_a_historico.py.
+on:
+  workflow_dispatch:
+    inputs:
+      fechas: {description: 'Fechas AAAA-MM-DD separadas por espacios (vacio = ayer, hoy y proximos dias)', default: ''}
+  schedule:
+    - cron: '7,37 * * * *'
+
+concurrency: {group: fotmob-datos, cancel-in-progress: false}
+
+jobs:
+  bajar:
+    runs-on: ubuntu-latest
+    permissions: {contents: write}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - run: pip install -q requests pandas
+      - run: python scripts/fotmob_a_historico.py ${{ inputs.fechas }}
+      - name: Guardar
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"; git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/historico_partidos.csv data/redes/ucl_historico.csv data/redes/ucl_calendario.csv data/fotmob_jugadores.csv data/fotmob_titulos.md data/fotmob_ejemplo.json 2>/dev/null || true
+          git diff --cached --quiet && { echo "Sin cambios"; exit 0; }
+          git commit -m "fotmob: datos ($(date -u +%Y-%m-%dT%H:%M))"
+          for i in 1 2 3; do git pull --rebase -X theirs -q origin main && git push -q origin HEAD:main && break; sleep 5; done
