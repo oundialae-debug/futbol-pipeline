@@ -6,6 +6,7 @@ on:
   workflow_dispatch:
     inputs:
       fechas: {description: 'Fechas AAAA-MM-DD separadas por espacios (vacio = ayer, hoy y proximos dias)', default: ''}
+      rehacer: {description: 'Escribe 1 para volver a bajar los jugadores de partidos ya guardados', default: ''}
   schedule:
     - cron: '7,37 * * * *'
 
@@ -21,6 +22,7 @@ jobs:
         with: {python-version: '3.11'}
       - run: pip install -q requests pandas
       - run: python scripts/fotmob_a_historico.py ${{ inputs.fechas }}
+        env: {FM_REHACER: '${{ inputs.rehacer }}'}
       - name: Guardar
         if: always()
         run: |

@@ -39,6 +39,7 @@ HIST = os.environ.get("FM_HIST", "data/historico_partidos.csv")
 UCL_H = os.environ.get("FM_UCL_H", "data/redes/ucl_historico.csv")
 UCL_C = os.environ.get("FM_UCL_C", "data/redes/ucl_calendario.csv")
 JUG = os.environ.get("FM_JUG", "data/fotmob_jugadores.csv")
+REHACER = os.environ.get("FM_REHACER") == "1"      # vuelve a bajar los jugadores de partidos que ya están en el histórico
 UA = {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/124 Safari/537.36"}
 LIGAS = {47: ("Premier League", 33973), 87: ("La Liga", 119924), 55: ("Serie A", 115669),
          54: ("Bundesliga", 67162), 53: ("Ligue 1", 52695), 42: ("Champions League", 2486)}
@@ -134,7 +135,7 @@ def jugadores(det, fecha, liga, mid_fm):
     for pid, p in ((det.get("content") or {}).get("playerStats") or {}).items():
         f = {"fecha": fecha, "liga": liga, "fotmob_match_id": mid_fm, "fotmob_jugador_id": p.get("id"),
              "jugador": p.get("name"), "equipo": p.get("teamName"), "equipo_id_fotmob": p.get("teamId"),
-             "portero": int(bool(p.get("isGoalkeeper")))}
+             "portero": int(bool(p.get("isGoalkeeper"))), "pos_fm": p.get("usualPosition")}
         for grupo in p.get("stats", []):
             for etiqueta, d in (grupo.get("stats") or {}).items():
                 st = (d or {}).get("stat") or {}
@@ -185,13 +186,18 @@ def main(fechas, solo=None):
                                     "ronda": f"FotMob {m['id']}"})
                 continue
             dia0 = str(t_utc)[:10]
+            ya = False
             if pid == 42 and (a[0], b[0], dia0) in ucl_exist:
-                continue                  # ya está: no se vuelve a pedir
+                if not REHACER:
+                    continue              # ya está: no se vuelve a pedir
+                ya = True
             if pid != 42 and a[1] and b[1]:
                 pv = claves.get((str(lid), str(a[1]), str(b[1])), [])
                 if any(abs((pd.Timestamp(d) - pd.Timestamp(dia0)).days) <= 1 and (not mid.startswith("-") or filas[i].get("l_possession") not in ("", None))
                        for d, i, mid in pv):
-                    continue              # Highlightly o FotMob ya lo trae
+                    if not REHACER:
+                        continue          # Highlightly o FotMob ya lo trae
+                    ya = True
             det = get(f"https://www.fotmob.com/api/data/matchDetails?matchId={m['id']}")
             if not det:
                 print(f"[!] sin detalle {home}-{away}")
@@ -217,6 +223,8 @@ def main(fechas, solo=None):
             if "possession" in est:      # histórico: fracción (0.43)
                 fila["l_possession"], fila["v_possession"] = est["possession"][0] / 100, est["possession"][1] / 100
             jug_rows += jugadores(det, dia, liga, m["id"])
+            if ya:
+                continue                  # FM_REHACER=1: solo se rehacen los jugadores (columnas nuevas), no el histórico
             if pid == 42:
                 if (a[0], b[0], dia) in ucl_exist:
                     continue

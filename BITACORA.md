@@ -15,6 +15,7 @@ cambios de código y archivos".
 - `scripts/fotmob_a_historico.py` (`fotmob_datos.yml`): resultados, estadísticas, xG, jugadores y calendario de la Champions desde FotMob (sin clave). Filas con match_id negativo; las reales de Highlightly mandan. Jugadores en `data/fotmob_jugadores.csv`.
 - `scripts/fd_a_historico.py` (`fd_historico.yml`): lo mismo con football-data.co.uk (5 ligas).
 - `post_partido.py`: los partidos con id negativo (calendario FotMob) ya no se saltan; piden los datos a FotMob (0 llamadas a Highlightly) y publican la marca "datos_listos".
+- `redes/plantillas/fotmob_jugadores.py` + `datos_formatos.filas()`: el 2yellow XI/Index completa con jugadores de FotMob los partidos que Highlightly no trae (emparejados por nombre+club con jugador_perfil; si no, posición de FotMob). `FM_REHACER=1` re-baja jugadores ya guardados (columna nueva `pos_fm`).
 - Porqué: el usuario dejó la API en 100 llamadas/día (13/10).
 
 

@@ -124,6 +124,15 @@ def filas(desde, hasta, fuente):
             x = pd.read_csv(ROOT / "data/historico_xg_jugador.csv", low_memory=False)
             x = x[x.match_id.isin(h.match_id) & x.jugador_id.notna()].copy()
             x["jugador"] = x.jugador_id.astype(int).map(R.nombres_propios())
+            try:
+                import fotmob_jugadores as FJ
+                e = FJ.extra(desde, hasta, h, x, R.nombres_propios())
+            except Exception as ex:
+                print(f"[!] sin jugadores de FotMob: {ex}"); e = pd.DataFrame()
+            if not e.empty:
+                print(f"FotMob: {e.match_id.nunique()} partidos y {len(e)} jugadores que Highlightly no trae")
+                hf = e.drop_duplicates("match_id")[["match_id"]].assign(local_id=float("nan"), local="", visitante_id=float("nan"), visitante="")
+                x = pd.concat([x, e], ignore_index=True); h = pd.concat([h, hf], ignore_index=True)
             trozos.append((x, h)); comps.append("Top 5 leagues")
         if "ucl" in fuente:
             u = pd.read_csv(ROOT / "data/redes/ucl_partidos.csv")
@@ -135,8 +144,10 @@ def filas(desde, hasta, fuente):
             trozos.append((x, u)); comps.append("Champions League")
         j = pd.concat([t[0] for t in trozos])
         h = pd.concat([t[1][["match_id", "local_id", "local", "visitante_id", "visitante"]] for t in trozos])
-        eq = pd.concat([h[["local_id", "local"]].set_axis(["id", "n"], axis=1), h[["visitante_id", "visitante"]].set_axis(["id", "n"], axis=1)])
+        eq = pd.concat([h[["local_id", "local"]].set_axis(["id", "n"], axis=1), h[["visitante_id", "visitante"]].set_axis(["id", "n"], axis=1)]).dropna(subset=["id"])
         j["equipo"] = j.equipo_id.map(dict(zip(eq.id, eq.n)))
+        if "equipo_fm" in j:
+            j["equipo"] = j.equipo.fillna(j.equipo_fm)
         sin = j.jugador.isna() & (pd.to_numeric(j.minutos, errors="coerce") > 0)
         if sin.mean() > 0.05:
             print(f"[!] {sin.mean():.0%} de filas sin nombre: lanza redes_api.yml modo nombres antes de publicar")
