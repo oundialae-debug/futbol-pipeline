@@ -90,7 +90,7 @@ def ucl():
     temporada = int(os.environ.get("TEMPORADA", "2026"))
     rp, rj = SAL / "ucl_partidos.csv", SAL / "ucl_jugadores.csv"
     partidos = pd.read_csv(rp) if rp.exists() else pd.DataFrame()
-    filas, off = [], 0
+    filas, off, futuros = [], 0, []
     while True:
         lote = B.desempaquetar(get("/matches", {"leagueId": info["id"], "season": temporada, "limit": 100, "offset": off}))
         for m in lote:
@@ -98,6 +98,11 @@ def ucl():
             st = str((m.get("state") or {}).get("description", "")).lower()
             sc = (m.get("state") or {}).get("score") or {}
             ft = sc.get("current") or ""
+            if "finished" not in st and m.get("date"):   # calendario de la Champions (usuario 13/10: previo y post-partido de la UCL)
+                futuros.append({"match_id": m["id"], "liga": "Champions League", "liga_id": info["id"],
+                                "fecha": str(m["date"])[:10], "saque_utc": str(m["date"])[11:16],
+                                "local": (m.get("homeTeam") or {}).get("name"), "visitante": (m.get("awayTeam") or {}).get("name"),
+                                "ronda": m.get("round")})
             if "finished" not in st or "-" not in str(ft): continue
             gl, gv = [int(x) for x in str(ft).replace(" ", "").split("-")[:2]]
             filas.append({"match_id": m["id"], "fecha": m.get("date"), "ronda": m.get("round"),
@@ -106,6 +111,9 @@ def ucl():
                           "goles_l": gl, "goles_v": gv, "temporada": temporada})
         if len(lote) < 100: break
         off += 100
+    if futuros:   # solo lo que aún no ha acabado (los partidos de hoy incluidos); se rehace entero en cada descarga
+        pd.DataFrame(futuros).sort_values(["fecha", "saque_utc"]).to_csv(SAL / "ucl_calendario.csv", index=False)
+        print(f"Calendario Champions: {len(futuros)} partidos por jugar")
     nuevos = pd.DataFrame(filas)
     partidos = pd.concat([partidos, nuevos]).drop_duplicates("match_id", keep="last") if len(nuevos) else partidos
     partidos.to_csv(rp, index=False)

@@ -30,7 +30,7 @@ from zoneinfo import ZoneInfo
 
 RAIZ = Path(__file__).resolve().parents[1]
 MAD = ZoneInfo("Europe/Madrid")
-LIGAS5 = ("Premier League", "La Liga", "Serie A", "Bundesliga", "Ligue 1")
+LIGAS5 = ("Premier League", "La Liga", "Serie A", "Bundesliga", "Ligue 1", "Champions League")   # Champions: usuario 13/10
 DESDE, HASTA, ESPERA_XG = timedelta(minutes=105), timedelta(hours=4), timedelta(hours=3)
 # RESPALDO (usuario 10/10): "20 minutos = 4 pasadas del primer recolector, que empieza a saque+1h45 y sondea cada 5 min".
 # Si a saque+2h05 (105+20 min) sigue sin marca "datos_listos", el principal no ha arrancado o no avanza: lo recoge el
@@ -44,7 +44,7 @@ R = {}
 
 def usar_rutas(base):
     base = Path(base)
-    R.update(hist=base / "data/historico_partidos.csv", marcas=base / "data/redes/post_partido",
+    R.update(hist=base / "data/historico_partidos.csv", ucl=base / "data/redes/ucl_historico.csv", marcas=base / "data/redes/post_partido",
              log=base / "data/redes/post_partido_log.csv", consumo=base / "data/redes/post_partido_consumo.json",
              base=base)
 
@@ -69,19 +69,26 @@ def marca_de(mid):
 
 # ---------- comprobación rápida, solo stdlib ----------
 
+def calendarios():
+    """Filas del calendario de las 5 ligas + el de la Champions (data/redes/ucl_calendario.csv, si existe)."""
+    for ruta in ("data/calendario.csv", "data/redes/ucl_calendario.csv"):
+        if (RAIZ / ruta).exists():
+            with open(RAIZ / ruta, newline="", encoding="utf-8") as f:
+                yield from csv.DictReader(f)
+
+
 def hay():
     """¿Algún partido de las 5 ligas (hoy/ayer en Madrid) entre saque+1h45 y saque+4h05 sin marca? Superconjunto
     de lo que hará la pasada real; sirve para no instalar nada en la inmensa mayoría de pasadas."""
     t = ahora()
     si = False
-    with open(RAIZ / "data/calendario.csv", newline="", encoding="utf-8") as f:
-        for x in csv.DictReader(f):
-            if x["liga"] not in LIGAS5 or x["fecha"] not in fechas(t) or marca_de(x["match_id"]).exists():
-                continue
-            k = datetime.fromisoformat(f"{x['fecha']}T{x['saque_utc']}:00+00:00")
-            if k + DESDE <= t <= k + HASTA + timedelta(minutes=10):
-                print(f"En ventana: {x['local']} - {x['visitante']} ({x['saque_utc']} UTC)")
-                si = True
+    for x in calendarios():
+        if x["liga"] not in LIGAS5 or x["fecha"] not in fechas(t) or marca_de(x["match_id"]).exists():
+            continue
+        k = datetime.fromisoformat(f"{x['fecha']}T{x['saque_utc']}:00+00:00")
+        if k + DESDE <= t <= k + HASTA + timedelta(minutes=10):
+            print(f"En ventana: {x['local']} - {x['visitante']} ({x['saque_utc']} UTC)")
+            si = True
     if os.environ.get("GITHUB_OUTPUT"):
         with open(os.environ["GITHUB_OUTPUT"], "a") as f:
             f.write(f"hay={'si' if si else 'no'}\n")
@@ -94,14 +101,13 @@ def hay_respaldo():
     señal de que el bucle principal no ha arrancado. Sin API ni instalaciones."""
     t = ahora()
     si = False
-    with open(RAIZ / "data/calendario.csv", newline="", encoding="utf-8") as f:
-        for x in csv.DictReader(f):
-            if x["liga"] not in LIGAS5 or x["fecha"] not in fechas(t) or marca_de(x["match_id"]).exists():
-                continue
-            k = datetime.fromisoformat(f"{x['fecha']}T{x['saque_utc']}:00+00:00")
-            if k + RESPALDO_DESDE <= t <= k + HASTA + timedelta(minutes=10):
-                print(f"RESPALDO: {x['local']} - {x['visitante']} sin datos a saque+{int((t - k).total_seconds() // 60)} min")
-                si = True
+    for x in calendarios():
+        if x["liga"] not in LIGAS5 or x["fecha"] not in fechas(t) or marca_de(x["match_id"]).exists():
+            continue
+        k = datetime.fromisoformat(f"{x['fecha']}T{x['saque_utc']}:00+00:00")
+        if k + RESPALDO_DESDE <= t <= k + HASTA + timedelta(minutes=10):
+            print(f"RESPALDO: {x['local']} - {x['visitante']} sin datos a saque+{int((t - k).total_seconds() // 60)} min")
+            si = True
     if os.environ.get("GITHUB_OUTPUT"):
         with open(os.environ["GITHUB_OUTPUT"], "a") as f:
             f.write(f"hay={'si' if si else 'no'}\n")
@@ -156,7 +162,8 @@ def preparar_modulos():
 
     def leer(ruta):
         """Local, no origin/main: la fila recién añadida tiene que verse ya (el checkout es el main recién bajado)."""
-        return pd.read_csv(R["hist"] if ruta == "data/historico_partidos.csv" else RAIZ / ruta)
+        return pd.read_csv(R["hist"] if ruta == "data/historico_partidos.csv" else
+                           R["ucl"] if ruta == "data/redes/ucl_historico.csv" else RAIZ / ruta)
     DC.leer = leer
     if OPC["simular"]:
         bh.requests = Falso(OPC["simular"])
@@ -181,9 +188,14 @@ class Falso:
 
 
 def en_historico(pd, mid):
-    h = pd.read_csv(R["hist"], usecols=["match_id", "goles_l", "goles_v", "local", "visitante"])
-    h = h[(h.match_id == mid) & h.goles_l.notna()]
-    return None if h.empty else h.iloc[0]
+    for ruta in (R["hist"], R["ucl"]):               # las 5 ligas y la Champions (fichero aparte)
+        if not ruta.exists():
+            continue
+        h = pd.read_csv(ruta, usecols=["match_id", "goles_l", "goles_v", "local", "visitante"])
+        h = h[(h.match_id == mid) & h.goles_l.notna()]
+        if not h.empty:
+            return h.iloc[0]
+    return None
 
 
 def anadir_fila(bh, m, est, liga_id):
@@ -191,7 +203,10 @@ def anadir_fila(bh, m, est, liga_id):
     loc, vis = m.get("homeTeam") or {}, m.get("awayTeam") or {}
     gl, gv = bh.goles(m)
     t = datetime.fromisoformat(str(m["date"]).replace("Z", "+00:00"))
-    fila = {"match_id": str(m["id"]), "fecha": m.get("date"), "liga_id": liga_id, "liga": bh.LIGAS.get(liga_id),
+    ucl = liga_id == 2486
+    destino = R["ucl"] if ucl else R["hist"]
+    fila = {"match_id": str(m["id"]), "fecha": m.get("date"), "liga_id": liga_id,
+            "liga": "Champions League" if ucl else bh.LIGAS.get(liga_id),
             "temporada": t.year if t.month >= 7 else t.year - 1, "ronda": m.get("round"),
             "local_id": loc.get("id"), "local": loc.get("name"), "visitante_id": vis.get("id"),
             "visitante": vis.get("name"), "goles_l": gl, "goles_v": gv}
@@ -199,12 +214,17 @@ def anadir_fila(bh, m, est, liga_id):
         d = est.get(tid, {})
         for s in bh.ESTADISTICAS:
             fila[f"{lado}_{s.replace(' ', '_').lower()}"] = d.get(s)
-    with open(R["hist"], "rb+") as f:                 # que la fila nueva no se pegue a la última
-        f.seek(-1, 2)
-        if f.read(1) != b"\n":
-            f.write(b"\n")
-    with open(R["hist"], "a", newline="", encoding="utf-8") as f:
-        csv.DictWriter(f, fieldnames=bh.columnas()).writerow(fila)
+    nuevo = not destino.exists()
+    if not nuevo:
+        with open(destino, "rb+") as f:               # que la fila nueva no se pegue a la última
+            f.seek(-1, 2)
+            if f.read(1) != b"\n":
+                f.write(b"\n")
+    with open(destino, "a", newline="", encoding="utf-8") as f:
+        w = csv.DictWriter(f, fieldnames=bh.columnas())
+        if nuevo:
+            w.writeheader()
+        w.writerow(fila)
     return fila
 
 
@@ -263,7 +283,7 @@ def publicar(pd, DC, x, fecha, t, uso, fila, base, marca):
     marca_d = {**base, "local": fila.local, "visitante": fila.visitante, "estado": "datos_listos",
                "resultado": f"{int(fila.goles_l)}-{int(fila.goles_v)}", "hora": t.isoformat(timespec="seconds"),
                "llamadas": uso["partidos"].get(str(x.match_id), 0)}
-    fin(marca, marca_d, f"post-partido: {fila.local}-{fila.visitante} datos listos", extra=[R["hist"]])
+    fin(marca, marca_d, f"post-partido: {fila.local}-{fila.visitante} datos listos", extra=[R["hist"], R["ucl"]])
     avisar_live()
     return "datos_listos"
 
@@ -302,7 +322,7 @@ def fin(marca, d, msg, extra=()):
                         "buffer_tiktok", "buffer_instagram", "musica", "video"])
         w.writerow([d["fecha"], d["match_id"], d["local"], d["visitante"], d["estado"], d.get("resultado", ""),
                     d["hora"], d.get("llamadas", 0), "", "", "", ""])      # las 4 últimas: de cuando se publicaba desde aquí
-    subir([marca, R["log"], *extra] + ([R["consumo"]] if R["consumo"].exists() else []), msg)
+    subir([marca, R["log"], *[e for e in extra if Path(e).exists()]] + ([R["consumo"]] if R["consumo"].exists() else []), msg)
 
 
 # ---------- pasada ----------
@@ -327,7 +347,7 @@ def main():
             uso["dias"][dia] = usadas + bh.llamadas[0]
             R["consumo"].parent.mkdir(parents=True, exist_ok=True)
             R["consumo"].write_text(json.dumps(uso, indent=1, sort_keys=True))
-            subir([R["consumo"], R["hist"]], f"post-partido: consumo {dia} ({uso['dias'][dia]} llamadas)")
+            subir([R["consumo"], R["hist"], *([R["ucl"]] if R["ucl"].exists() else [])], f"post-partido: consumo {dia} ({uso['dias'][dia]} llamadas)")
         print(f"Llamadas a la API en esta pasada: {bh.llamadas[0]} (hoy {uso['dias'].get(dia, usadas)} de {TOPE_DIA})")
     return out, bh.llamadas[0]
 

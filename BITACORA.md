@@ -11,6 +11,12 @@ cambios de código y archivos".
   el resumen y dónde leerlo.
 - Lo más nuevo, arriba.
 
+## 13/10/2026 — Champions League: previos y post-partidos (petición del usuario)
+- Usuario: "previos y post partidos de la Champions: es lo que más audiencia tiene. Déjalo apuntado como que se hace".
+- `scripts/redes_api.py ucl` escribe también `data/redes/ucl_calendario.csv` (partidos sin terminar). `datos_clubes.py`: calendario e histórico incluyen la Champions (liga "Champions League", id 2486); modelo `poisson_ucl` (ataque/defensa de la liga propia de cada club); solo cruces entre clubes de las 5 ligas; el Elo sigue siendo solo doméstico.
+- `scripts/post_partido.py`: la Champions entra en la selección y en `hay`/`hay_respaldo`; sus filas van a `data/redes/ucl_historico.csv` (no toca historico_partidos.csv). Mismo tope de 30 llamadas/día.
+- `prueba_post_partido.py` ya fallaba antes de este cambio (3 FALLO, calendario de octubre); no es de esta tarea.
+
 ## 11/10/2026 — redes: aviso inmediato a Live cuando los datos del post-partido están listos
 - Qué: `post_partido.py` llama a `workflow_dispatch` de Live/enviar_cola.yml justo tras subir la marca "datos_listos" (opcional: solo si existe el secreto `LIVE_DISPATCH_TOKEN`; sin él, no hace nada).
 - Por qué: el cron de Live se espació a 30 min en GitHub y Como-Roma salió ~30 min tras el final en lugar de ~20.

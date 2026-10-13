@@ -41,6 +41,7 @@ sys.path.insert(0, str(RAIZ / "scripts"))
 import generar as G  # noqa: E402
 
 LIGAS = ("Premier League", "La Liga", "Serie A", "Bundesliga", "Ligue 1")   # nunca Segunda División
+UCL = "Champions League"   # usuario 13/10: "previos y post-partidos de la Champions: es lo que más audiencia tiene"
 CORTO = {"Manchester United": "Man United", "Manchester City": "Man City", "Nottingham Forest": "Forest",
          "Wolverhampton Wanderers": "Wolves", "Crystal Palace": "Palace", "Brighton & Hove Albion": "Brighton",
          "Paris Saint Germain": "PSG", "Stade Brestois 29": "Brest", "LE Havre AC": "Le Havre", "Estac Troyes": "Troyes",
@@ -73,6 +74,19 @@ def eq(n):
 
 def historico():
     h = leer("data/historico_partidos.csv")
+    # Champions (13/10): partidos con estadísticas que baja post_partido.py (ucl_historico.csv) + resultados de la fase
+    # de liga y las previas que baja redes_api.py ucl (ucl_partidos.csv, solo goles). Liga = "Champions League".
+    extra = []
+    for ruta in ("data/redes/ucl_historico.csv", "data/redes/ucl_partidos.csv"):
+        try:
+            u = leer(ruta)
+        except Exception:
+            continue
+        u = u.assign(liga=UCL, liga_id=2486)
+        extra.append(u)
+    if extra:
+        u = pd.concat(extra).drop_duplicates("match_id", keep="first")
+        h = pd.concat([h, u[~u.match_id.isin(h.match_id)]], ignore_index=True)
     h["t"] = pd.to_datetime(h.fecha, utc=True, format="ISO8601")
     h["d"] = h.fecha.str[:10]
     return h.sort_values(["t", "match_id"]).reset_index(drop=True)
@@ -81,6 +95,11 @@ def historico():
 def calendario():
     c = leer("data/calendario.csv")
     c = c[c.liga.isin(LIGAS)].copy()
+    try:                                         # Champions: data/redes/ucl_calendario.csv (redes_api.py ucl)
+        u = leer("data/redes/ucl_calendario.csv")
+        c = pd.concat([c, u[u.liga == UCL]], ignore_index=True)
+    except Exception:
+        pass
     c["t"] = pd.to_datetime(c.fecha + " " + c.saque_utc, utc=True)
     return c
 
@@ -151,8 +170,36 @@ def poisson_partido(h, liga, lid, vid, antes, _cache={}):
     return probs_de(ll, lv)
 
 
+def liga_de(h, eid):
+    """Liga doméstica (de las 5) del club, por su último partido en ella; None si no juega en ninguna (Galatasaray, PSV...)."""
+    d = h[h.liga.isin(LIGAS) & ((h.local_id == eid) | (h.visitante_id == eid))]
+    return None if d.empty else d.sort_values("t").iloc[-1].liga
+
+
+def poisson_ucl(h, lid, vid, antes, _cache={}):
+    """Champions: cada club con el ataque/defensa de SU liga (mismo Poisson de las 5 grandes) y el partido con la media
+    de goles y de ventaja local de las dos ligas. Supone ligas de nivel parecido (aún no hay muchos cruces para medir la
+    diferencia): solo se usa entre clubes de las 5 grandes; si falta uno, ValueError."""
+    ll_, lv_ = liga_de(h, lid), liga_de(h, vid)
+    if ll_ is None or lv_ is None:
+        raise ValueError("club fuera de las 5 grandes: sin modelo")
+    ps = []
+    for lg in (ll_, lv_):
+        clave = (lg, str(antes.date()))
+        if clave not in _cache:
+            _cache[clave] = ajustar_poisson(h, lg, antes.normalize())
+        ps.append(_cache[clave])
+    pl, pv = ps
+    mu, home = (pl["mu"] + pv["mu"]) / 2, (pl["home"] + pv["home"]) / 2
+    ll = np.exp(mu + home + pl["at"].get(lid, ASCENDIDO) - pv["de"].get(vid, ASCENDIDO))
+    lv = np.exp(mu + pv["at"].get(vid, ASCENDIDO) - pl["de"].get(lid, ASCENDIDO))
+    return probs_de(ll, lv)
+
+
 def modelo(h, reg, mid, liga, lid, vid, saque):
     """% de nuestro modelo para un partido: el oficial si ya se apuntó antes del pitido; si no, el Poisson."""
+    if liga == UCL:
+        return {**poisson_ucl(h, lid, vid, saque), "fuente": "poisson"}
     r = reg[reg.match_id == mid]
     if len(r):
         x = r.iloc[-1]
@@ -193,7 +240,7 @@ def picks(x):
 def elo_series(h, ids, hasta):
     """Elo de cada id tras cada partido jugado antes de 'hasta' (reglas de rasgos.calcular_elo)."""
     r, serie = {}, {i: [] for i in ids}
-    for x in h[(h.t < hasta) & h.goles_l.notna()].itertuples():
+    for x in h[(h.t < hasta) & h.goles_l.notna() & h.liga.isin(LIGAS)].itertuples():
         rl, rv = r.get(x.local_id, 1500.0), r.get(x.visitante_id, 1500.0)
         dif = abs(x.goles_l - x.goles_v)
         g = 1.0 if dif <= 1 else (1.5 if dif == 2 else (11 + dif) / 8.0)
@@ -227,7 +274,12 @@ def con_tamano(c, h, fecha):
 def del_dia(fecha, h=None):
     c = calendario()
     c = c[c.fecha == fecha].drop_duplicates("match_id")
-    return con_tamano(c, historico() if h is None else h, fecha)
+    h = historico() if h is None else h
+    if (c.liga == UCL).any():            # Champions: solo ties entre clubes de las 5 grandes (los demás no tienen modelo)
+        ok = [(l != UCL) or (liga_de(h, ids_de(h).get(a)) is not None and liga_de(h, ids_de(h).get(b)) is not None)
+              for l, a, b in zip(c.liga, c.local, c.visitante)]
+        c = c[ok]
+    return con_tamano(c, h, fecha)
 
 
 def elegir(fecha, n=2):
@@ -248,9 +300,9 @@ def ids_de(h):
 
 def buscar(local, visitante, fecha, h, jugado):
     if jugado:
-        m = h[(h.d == fecha) & (h.local == local) & (h.visitante == visitante) & h.liga.isin(LIGAS)]
+        m = h[(h.d == fecha) & (h.local == local) & (h.visitante == visitante) & h.liga.isin(LIGAS + (UCL,))]
         if m.empty or m.goles_l.isna().all():
-            ult = h[h.liga.isin(LIGAS)].d.max()
+            ult = h[h.liga.isin(LIGAS + (UCL,))].d.max()
             sys.exit(f"{local} - {visitante} ({fecha}) aún no está en data/historico_partidos.csv (último partido de "
                      f"las 5 ligas: {ult}). Lo baja ambos_marcan_diario.yml la mañana siguiente.")
         return m.iloc[0]
@@ -285,11 +337,15 @@ def lista_hoy(fecha, h=None, reg=None, maximo=7):
                 (p["btts"], "Both teams score"), (1 - p["btts"], "Not both teams score")]
         pp, txt = max(cand)
         filas.append({"time": f"{x.t.tz_convert('Europe/Madrid'):%H:%M}", "home": eq(x.local), "away": eq(x.visitante),
-                      "pick": txt, "pct": round(pp * 100)})
+                      "pick": txt, "pct": round(pp * 100), "ucl": x.liga == UCL})
     if not filas:
         raise ValueError(f"sin partidos el {fecha}")
     filas.sort(key=lambda m: -m["pct"])
-    return {"template": "picks_list", "competition": f"Top 5 leagues · {fecha[8:]}/{fecha[5:7]}", "home": filas[0]["home"],
+    comp = ("Champions League" if all(pk["ucl"] for pk in filas) else
+            "Top 5 leagues + UCL" if any(pk["ucl"] for pk in filas) else "Top 5 leagues")
+    for pk in filas:
+        pk.pop("ucl")
+    return {"template": "picks_list", "competition": f"{comp} · {fecha[8:]}/{fecha[5:7]}", "home": filas[0]["home"],
             "away": filas[0]["away"], "kicker": "Unlocked", "title": f"{len(filas)} big games, our calls", "picks": filas}
 
 
