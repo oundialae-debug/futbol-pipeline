@@ -182,3 +182,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-13 16:34,12170459,Challenger Men Singles,Maia,A. Martin,N. Sanchez Izquierdo,menos,18.5,0.697,0.5576,1.666,True,actual
 2026-10-13 16:41,12170458,Challenger Men Singles,Maia,F. Broska,M. Karol,menos,19.5,0.8271,0.7315,1.285,True,actual
 2026-10-13 16:41,12170458,Challenger Men Singles,Maia,F. Broska,M. Karol,menos,19.5,0.7315,0.7315,1.285,True,casa65
+2026-10-13 16:42,12170061,Challenger Men Singles,Catania (Italy) - Qualification,M. Wiskandt,M. Damas,más,27.5,0.6154,0.5576,1.666,True,aprendida
