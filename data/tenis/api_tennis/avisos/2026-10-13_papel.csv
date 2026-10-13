@@ -189,3 +189,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-13 17:08,12170099,Challenger Men Singles,Olbia,L. Nardi,A. Holmgren,más,29.5,0.886,0.6627,1.4,True,aprendida
 2026-10-13 17:14,12170338,Challenger Men Singles,Catania (Italy) - Qualification,C. A. Caniato,D. Siniakov,menos,17.5,0.8808,0.8808,1.083,True,casa65
 2026-10-13 17:21,12170459,Challenger Men Singles,Maia,A. Martin,N. Sanchez Izquierdo,menos,20.5,0.6876,0.6876,1.363,True,casa65
+2026-10-13 17:29,12170000,Challenger Men Singles,Roanne,M. Kouame,D. Dedura,menos,17.5,0.6568,0.5576,1.666,True,actual
