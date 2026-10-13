@@ -87,3 +87,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-13 09:40,12170001,Challenger Men Singles,Roanne,M. Martineau,M. Schoenhaus,menos,21.5,0.65,0.5576,1.666,True,actual
 2026-10-13 09:49,12170167,Atp Singles,Shanghai,A. Zverev,A. Bublik,menos,23.5,0.6477,0.5366,1.727,True,aprendida
 2026-10-13 09:55,12170098,Challenger Men Singles,Olbia,M. Mmoh,L. Djere,menos,22.5,0.6315,0.5147,1.8,True,aprendida
+2026-10-13 09:57,12170334,Challenger Men Singles,Catania (Italy) - Qualification,G. Cadenasso,K. Wehnelt,menos,21.5,0.6404,0.5147,1.8,True,aprendida
