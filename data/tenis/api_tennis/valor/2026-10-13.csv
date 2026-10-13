@@ -1,0 +1,33 @@
+hora,event_key,tipo,torneo,jugador1,jugador2,mercado,linea,lado,casa,cuota,p_pinnacle,cuota_pinnacle,valor,n_casas
+2026-10-13 03:08,12169901,Challenger Men Singles,Jinan,A. Kachmazov,J. D. Hara Friend,juegos,21.5,menos,Betano,2.5,0.4198,2.28,0.0496,4
+2026-10-13 03:08,12169907,Challenger Men Singles,Jinan,F. Sun,J. Cui,juegos,21.5,menos,Betano,2.25,0.4599,2.09,0.0349,5
+2026-10-13 03:08,12169991,Challenger Men Singles,Maia,T. Pereira,L. Mikrut,juegos,22.5,menos,bet365,1.9,0.5515,1.74,0.0479,5
+2026-10-13 03:08,12170035,Challenger Women Singles,Rovereto,B. Andreescu,M. Ristic,ganador,,jugador2,Sbo,5.54,0.2062,4.62,0.1423,9
+2026-10-13 03:08,12170035,Challenger Women Singles,Rovereto,B. Andreescu,M. Ristic,juegos,18.5,más,BetVictor,1.87,0.5558,1.71,0.0394,6
+2026-10-13 03:08,12170043,Challenger Women Singles,Rovereto,L. Mair,L. Stefanini,juegos,17.5,menos,BetVictor,1.87,0.5769,1.65,0.0788,3
+2026-10-13 03:08,12170150,Challenger Women Singles,Lisbon (Portugal) - Qualification,J. Bouzas Maneiro,M. Ivantsiv,juegos,14.5,menos,Marathon,2.15,0.5518,1.73,0.1864,3
+2026-10-13 03:08,12170156,Challenger Women Singles,Lisbon (Portugal) - Qualification,M. Matias,P. Hercog,juegos,15.5,menos,BetVictor,2.05,0.5079,1.88,0.0411,4
+2026-10-13 03:08,12170246,Wta Singles,Wuhan,M. Sakkari,M. Kostyuk,juegos,20.5,más,1xBet,1.92,0.5567,1.72,0.0689,6
+2026-10-13 03:08,12170246,Wta Singles,Wuhan,M. Sakkari,M. Kostyuk,juegos,20.5,más,Marathon,1.86,0.5567,1.72,0.0355,6
+2026-10-13 03:08,12170306,Itf Men Singles,M25 Solapur (India),A. Kalyanpur,K. Singh,ganador,,jugador2,WilliamHill,1.25,0.9294,1.04,0.1617,8
+2026-10-13 03:08,12170308,Itf Women Singles,W15 Islamabad 2 (Pakistan),S. Oigawa,S. Suslova,ganador,,jugador1,Betano,1.83,0.5863,1.63,0.0729,7
+2026-10-13 03:08,12170308,Itf Women Singles,W15 Islamabad 2 (Pakistan),S. Oigawa,S. Suslova,juegos,20.5,menos,Betano,1.9,0.5495,1.73,0.044,2
+2026-10-13 03:08,12170312,Itf Women Singles,W15 Islamabad 2 (Pakistan),S. Leon,F. Dekkers,juegos,20.5,menos,Betano,1.88,0.5622,1.69,0.0569,2
+2026-10-13 03:08,12170313,Itf Women Singles,W15 Islamabad 2 (Pakistan),W. Mdlulwa,K. Laskutova,ganador,,jugador1,bet365,8.0,0.1377,6.95,0.1017,6
+2026-10-13 03:08,12170316,Itf Women Singles,W15 Islamabad 2 (Pakistan),A. Kuparev,S. Olimjanova,juegos,20.5,menos,Betano,1.83,0.5661,1.64,0.036,2
+2026-10-13 03:08,12170321,Itf Women Singles,W15 Islamabad 2 (Pakistan),M. Qureshi,J. Moon,ganador,,jugador1,WilliamHill,15.0,0.1151,8.30,0.7271,7
+2026-10-13 03:08,12170332,Wta Singles,Wuhan,M. Pohankova,Xiy. Wang,ganador,,jugador2,Sbo,1.58,0.6705,1.44,0.0594,8
+2026-10-13 03:08,12170333,Challenger Men Singles,Catania (Italy) - Qualification,M. Geerts,P. Lagutin,ganador,,jugador1,bet365,3.75,0.2824,3.38,0.0589,8
+2026-10-13 03:08,12170335,Challenger Men Singles,Catania (Italy) - Qualification,F. Iannaccone,F. C. Jianu,ganador,,jugador2,bet365,2.0,0.5248,1.82,0.0496,8
+2026-10-13 03:08,12170350,Challenger Women Singles,Rovereto,L. Boskovic,O. Selekhmeteva,ganador,,jugador1,bet365,3.75,0.2842,3.35,0.0657,9
+2026-10-13 03:08,12170372,Challenger Men Singles,Roanne,U. Blanchet,T. Paris,ganador,,jugador2,bet365,3.4,0.3068,3.14,0.0433,8
+2026-10-13 03:08,12170405,Itf Women Singles,W35 Birmingham 2 (United Kingdom),M. Aikawa,M. Maquet,ganador,,jugador1,bet365,3.25,0.3302,2.84,0.0731,8
+2026-10-13 03:08,12170407,Itf Women Singles,W35 Birmingham 2 (United Kingdom),H. Smart,J. Ponchet,ganador,,jugador2,WilliamHill,1.12,0.9234,1.03,0.0342,6
+2026-10-13 03:08,12170409,Itf Women Singles,W35 Birmingham 2 (United Kingdom),A. Brooks,I. Spink,ganador,,jugador1,WilliamHill,8.0,0.1407,6.72,0.1253,7
+2026-10-13 03:08,12170409,Itf Women Singles,W35 Birmingham 2 (United Kingdom),A. Brooks,I. Spink,ganador,,jugador1,bet365,7.5,0.1407,6.72,0.055,7
+2026-10-13 03:08,12170411,Itf Women Singles,W35 Birmingham 2 (United Kingdom),E. Griffiths,L. Newberry,ganador,,jugador2,bet365,3.25,0.3286,2.86,0.0681,7
+2026-10-13 03:08,12170413,Itf Women Singles,W35 Birmingham 2 (United Kingdom),L. Cabrera,A. Okutoyi,ganador,,jugador2,bet365,2.1,0.5013,1.87,0.0528,8
+2026-10-13 03:08,12170434,Challenger Women Singles,Lisbon (Portugal) - Qualification,A. Freitas,R. Serban,juegos,15.5,más,1xBet,3.57,0.4974,1.92,0.7757,3
+2026-10-13 03:08,12170434,Challenger Women Singles,Lisbon (Portugal) - Qualification,A. Freitas,R. Serban,juegos,15.5,menos,BetVictor,2.05,0.5026,1.90,0.0304,3
+2026-10-13 03:08,12170465,Itf Women Singles,W50 Stara Zagora (Bulgaria),B. Spasova,E. Papadopoulou,juegos,19.5,menos,1xBet,1.9,0.561,1.69,0.066,2
+2026-10-13 03:08,12170505,Itf Men Singles,M15 Bol,N. Mashtakov,A. Jeran,ganador,,jugador2,bet365,6.0,0.1746,5.39,0.0475,6
