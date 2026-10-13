@@ -109,13 +109,22 @@ def ucl():
     # calendario de la Champions (usuario 13/10: previo y post-partido de la UCL). El listado por temporada no trae los
     # partidos futuros: se piden por día (leagueId + date), hoy y los CAL_DIAS-1 siguientes, 1 llamada por día.
     from datetime import date, timedelta
-    for k in range(int(os.environ.get("CAL_DIAS", "4"))):
+    for k in range(int(os.environ.get("CAL_DIAS", "2"))):
         dia_ = (date.today() + timedelta(days=k)).isoformat()
-        lote_ = B.desempaquetar(get("/matches", {"leagueId": info["id"], "date": dia_, "limit": 100}))
-        print(f"Calendario Champions {dia_}: {len(lote_ or [])} partidos devueltos (llamadas {B.llamadas[0]}) "
-              f"{[(m_.get('league') or {}).get('name') for m_ in (lote_ or [])[:3] if isinstance(m_, dict)]}")
-        for m in lote_ or []:
-            if not isinstance(m, dict) or (m.get("league") or {}).get("id") not in (None, info["id"]): continue
+        lote_ = [m_ for m_ in B.desempaquetar(get("/matches", {"leagueId": info["id"], "season": temporada, "date": dia_, "limit": 100}))
+                 if isinstance(m_, dict)]
+        print(f"Calendario Champions {dia_}: {len(lote_)} con leagueId+season+date (llamadas {B.llamadas[0]})")
+        if not lote_:       # la API no filtra bien por liga+fecha: se pide el día entero y se filtra aquí (hasta 5 páginas)
+            for off_ in range(0, 500, 100):
+                pag = [m_ for m_ in B.desempaquetar(get("/matches", {"date": dia_, "limit": 100, "offset": off_}))
+                       if isinstance(m_, dict)]
+                lote_ += [m_ for m_ in pag if (m_.get("league") or {}).get("name") == "UEFA Champions League"
+                          or (m_.get("league") or {}).get("id") == info["id"]]
+                nombres = sorted({str((m_.get("league") or {}).get("name")) for m_ in pag if "hampions" in str((m_.get("league") or {}).get("name"))})
+                print(f"  {dia_} pagina {off_ // 100}: {len(pag)} partidos, Champions en la pagina: {nombres}")
+                if len(pag) < 100 or lote_:
+                    break
+        for m in lote_:
             st = str((m.get("state") or {}).get("description", "")).lower()
             if "finished" not in st and m.get("date"):
                 futuros.append({"match_id": m["id"], "liga": "Champions League", "liga_id": info["id"],
