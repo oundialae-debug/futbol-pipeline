@@ -217,3 +217,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-13 22:46,12170589,Challenger Men Singles,Santa Cruz 2,T. Cigarran,N. Kicker,menos,20.5,0.6533,0.5147,1.8,True,aprendida
 2026-10-13 23:00,12170027,Challenger Men Singles,Santa Cruz 2,P. Boscardin Dias,F. Mena,menos,25.5,0.7491,0.6077,1.533,True,actual
 2026-10-13 23:13,12170032,Challenger Men Singles,Santa Cruz 2,E. Ribeiro,J. C. Prado Angelo,menos,20.5,0.5717,0.5,1.833,True,aprendida
+2026-10-13 23:38,12170589,Challenger Men Singles,Santa Cruz 2,T. Cigarran,N. Kicker,menos,19.5,0.7111,0.5767,1.615,True,actual
