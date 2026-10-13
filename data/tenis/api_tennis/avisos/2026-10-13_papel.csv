@@ -54,3 +54,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-13 08:07,12170086,Wta Singles,Wuhan,Y. Putintseva,Z. Sonmez,más,31.5,0.5773,0.4853,1.909,True,aprendida
 2026-10-13 08:07,12170115,Challenger Women Singles,Mallorca,L. Pigossi,N. Brancaccio,menos,20.5,0.6004,0.5,1.833,True,aprendida
 2026-10-13 08:07,12170339,Challenger Men Singles,Olbia,M. Erhard,V. Royer,menos,21.5,0.6052,0.5147,1.8,True,aprendida
+2026-10-13 08:07,12170340,Challenger Men Singles,Olbia,T. Gentzsch,N. Visker,menos,22.5,0.5954,0.5,1.833,True,aprendida
