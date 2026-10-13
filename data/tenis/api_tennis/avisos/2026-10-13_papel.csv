@@ -27,3 +27,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-13 06:08,12169903,Challenger Men Singles,Jinan,P. Kotov,V. Kopriva,menos,22.5,0.6146,0.5,1.833,True,aprendida
 2026-10-13 06:10,12169864,Wta Singles,Wuhan,M. Sherif,M. Chwalinska,menos,18.5,0.6407,0.5576,1.666,True,actual
 2026-10-13 06:18,12169856,Wta Singles,Wuhan,K. Boulter,D. Shnaider,menos,19.5,0.5544,0.5,1.833,True,aprendida
+2026-10-13 06:18,12169907,Challenger Men Singles,Jinan,F. Sun,J. Cui,menos,22.5,0.6316,0.5366,1.727,True,aprendida
