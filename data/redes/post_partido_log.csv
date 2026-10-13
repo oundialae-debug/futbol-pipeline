@@ -3,3 +3,4 @@ fecha,match_id,local,visitante,estado,resultado,hora,llamadas,buffer_tiktok,buff
 2026-10-10,1336420545,Real Madrid,Villarreal,video_listo_sin_buffer,1-0,2026-10-10T21:09:04+00:00,4,,,hh07,https://raw.githubusercontent.com/oundialae-debug/futbol-pipeline/main/media/post_partido/2026-10-10_Real_Madrid_Villarreal/post.mp4
 2026-10-11,1319169073,Como,AS Roma,datos_listos,0-0,2026-10-11T12:33:58+00:00,5,,,,
 2026-10-11,1325368608,Liverpool,Manchester City,datos_listos,0-3,2026-10-11T17:25:13+00:00,2,,,,
+2026-10-13,-6106260,Arsenal,Lille,datos_listos,3-0,2026-10-13T22:40:19+00:00,0,,,,
