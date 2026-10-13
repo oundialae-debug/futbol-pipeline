@@ -89,7 +89,53 @@ def otros():
         nota(f"- CL matches HTTP {r.status_code} {r.text[:200]!r}")
 
 
+def fotmob():
+    nota("\n## FotMob detalle")
+    r = get("https://www.fotmob.com/api/data/matches?date=20261012")
+    if r is None or r.status_code != 200:
+        return
+    ligas = r.json().get("leagues", [])
+    nota(f"- ligas del día: {[(l['id'], l['name']) for l in ligas][:25]}")
+    ids = [(m["id"], m["home"]["name"], m["away"]["name"], m.get("status", {}).get("finished")) for l in ligas if l["id"] in (47, 55, 54, 87, 53) for m in l["matches"]]
+    nota(f"- partidos 5 ligas: {ids}")
+    for mid, h, a, fin in ids[:2]:
+        d = get(f"https://www.fotmob.com/api/data/matchDetails?matchId={mid}")
+        if d is None:
+            continue
+        nota(f"- matchDetails {mid} {h}-{a} HTTP {d.status_code} {d.text[:120]!r}")
+        if d.status_code != 200:
+            continue
+        j = d.json()
+        c = j.get("content", {})
+        nota(f"  - content claves: {list(c.keys())}")
+        ps = c.get("playerStats") or {}
+        nota(f"  - playerStats jugadores: {len(ps)}")
+        for k, v in list(ps.items())[:1]:
+            nota(f"  - ejemplo {v.get('name')} minutos/stats: " + json.dumps(v)[:700])
+        sm = c.get("shotmap") or {}
+        nota(f"  - shotmap tiros: {len(sm.get('shots', []))} ejemplo: " + json.dumps((sm.get('shots') or [{}])[0])[:300])
+        st = c.get("stats", {})
+        nota("  - stats: " + json.dumps(st)[:400])
+
+
+def espn_roster():
+    nota("\n## ESPN roster completo (Atalanta-Venezia)")
+    s = get("https://site.api.espn.com/apis/site/v2/sports/soccer/ita.1/summary?event=401875005")
+    if s is None or s.status_code != 200:
+        return
+    ro = s.json()["rosters"][0]
+    nota(f"- claves roster: {list(ro.keys())}")
+    p = ro["roster"][3]
+    nota("- jugador completo: " + json.dumps(p)[:900])
+
+
 if __name__ == "__main__":
+    import sys
+    if len(sys.argv) > 1 and sys.argv[1] == "2":
+        fotmob()
+        espn_roster()
+        open("data/sondeo_fuentes2.md", "w").write("# Sondeo 2 (13/10/2026)\n" + "\n".join(SAL) + "\n")
+        sys.exit()
     espn("ita.1", "20261012", "Serie A lunes")
     espn("eng.1", "20261011", "Premier domingo")
     espn("uefa.champions", "20261013", "Champions hoy")
