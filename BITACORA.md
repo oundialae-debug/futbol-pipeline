@@ -11,6 +11,9 @@ cambios de código y archivos".
   el resumen y dónde leerlo.
 - Lo más nuevo, arriba.
 
+## 13/10/2026 — Cuota de la API: 100 llamadas/día en total (aviso del usuario)
+- Se agotaron las llamadas; el límite pasa a 100/día para todo el proyecto. Apuntado en CLAUDE.md (cabecera y notas). Sin cuota la API devuelve listas vacías (hoy: ambos_marcan_diario, redes_api ucl). Pendiente: repartir la cuota entre post_partido (≤30), ambos_marcan_diario, calendario y cosechar_cuotas (que hoy pide ≤1.200) o pausar los que sobren.
+
 ## 13/10/2026 — Champions: la API no da el calendario; calendario manual de hoy
 - Las descargas de `redes_api.yml ucl` (runs 7-10) devuelven 0 partidos por fecha y por temporada (también sin filtrar por liga): la API no responde con datos hoy. Se añade respaldo por día completo y trazas.
 - `data/redes/ucl_calendario.csv` escrito a mano para hoy (Atlético–Man United y Arsenal–Lille, 19:00 UTC) con match_id negativo; `post_partido.py` salta los id < 0 ("manual", sin llamadas). El post-partido de estos dos hay que sacarlo de otra fuente si la API sigue sin responder.

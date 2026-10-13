@@ -1,5 +1,6 @@
 # futbol-pipeline
 
+**CUOTA DE LA API (13/10): se acabaron las llamadas ilimitadas; ahora SOLO 100 LLAMADAS AL DÍA EN TOTAL (todos los workflows y chats juntos). Cada llamada cuenta; sin cuota la API devuelve listas vacías (no da error).**
 **Regla del usuario: NUNCA llamar a la API de Highlightly sin su sí explícito para ESA llamada** (sondeos, backfills o lanzar un workflow que la use; un sí anterior no vale). Única excepción aprobada: `ambos_marcan_diario.yml` y `post_partido.yml` (aprobado el 10/10: solo descarga los datos del post-partido, sondeo cada 5 min desde inicio+1h45, ≤30 llamadas/día; el vídeo y la publicación los hace Live; respaldo en `post_partido_respaldo.yml` a saque+2h05 si no hay marca). Antes de empujar código: `python3 scripts/prueba_humo.py`. Todo cambio va en `BITACORA.md` en el mismo commit. Lecciones y resultados completos: `docs/notas_proyecto.md`; ambos marcan: `modelos/ambos_marcan/CLAUDE.md`.
 
 ## Mapa
@@ -34,3 +35,4 @@ Apunta aquí, en una línea, las decisiones y lo aprendido para los próximos ch
 - 09/10/2026: reactivados cosechar_cuotas y calendario (las cuotas caducan a los 28 días); descanso_en_vivo (914/día) y los semanales siguen parados.
 - 10/10/2026: post-partido automático aprobado por el usuario (`post_partido.yml`, solo datos; respaldo `post_partido_respaldo.yml` a saque+2h05; el vídeo y Buffer los hace Live al ver la marca "datos_listos"). Plantillas de clubes en `redes/plantillas/datos_clubes.py` (elegir/pre/post, 5 imágenes + la final). Estado completo y pendientes: repo Live, `redes/CONTEXTO_CONVERSACION.md` regla 14.
 - 13/10/2026: la Champions entra en previos y post-partido (petición del usuario): `data/redes/ucl_calendario.csv` (`redes_api.yml` modo ucl; hoy a mano porque la API no devolvió partidos), `ucl_historico.csv`, modelo `poisson_ucl`, `post_partido.py` la incluye (id < 0 = fila manual, se salta). Detalle en BITACORA 13/10.
+- 13/10/2026 (usuario): se acabaron las llamadas a la API de Highlightly; desde ahora máximo 100 diarias EN TOTAL. Hoy devolvió listas vacías (ambos_marcan_diario y redes_api fallaron). Con 100/día NO caben `cosechar_cuotas` (≤1.200), `calendario`, ni el reparto actual: `post_partido` ≤30 + `ambos_marcan_diario` (~6-80) + redes ≈ ya lo supera; hay que repartir o pausar workflows antes de lanzar nada.
