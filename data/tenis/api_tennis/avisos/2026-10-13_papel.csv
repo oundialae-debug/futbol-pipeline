@@ -17,3 +17,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-13 05:13,12169871,Wta Singles,Wuhan,D. Yastremska,C. Bucsa,más,29.5,0.8646,0.5147,1.8,True,aprendida
 2026-10-13 05:16,12169865,Wta Singles,Wuhan,K. Siniakova,L. Samsonova,más,26.5,0.8887,0.6077,1.533,True,aprendida
 2026-10-13 05:24,12170076,Atp Singles,Shanghai,A. De Minaur,K. Khachanov,menos,19.5,0.7921,0.7921,1.181,True,casa65
+2026-10-13 05:26,12170076,Atp Singles,Shanghai,A. De Minaur,K. Khachanov,menos,19.5,0.8155,0.75,1.25,True,actual
