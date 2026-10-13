@@ -159,3 +159,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-13 14:56,12170374,Challenger Men Singles,Roanne,H. Bernet,C. Tabur,menos,34.5,0.6701,0.4853,1.909,True,aprendida
 2026-10-13 14:57,12170351,Challenger Women Singles,Rovereto,A. Koevermans,E. Andreeva,menos,28.5,0.6693,0.5767,1.615,True,actual
 2026-10-13 14:58,12169991,Challenger Men Singles,Maia,T. Pereira,L. Mikrut,menos,15.5,0.7425,0.625,1.5,True,actual
+2026-10-13 14:58,12170211,Atp Singles,Shanghai,H. Hurkacz,A. Davidovich Fokina,más,28.5,0.5883,0.4634,2.0,True,aprendida
