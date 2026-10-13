@@ -132,3 +132,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-13 11:36,12170432,Challenger Women Singles,Lisbon (Portugal) - Qualification,A. Nagy,S. Janicijevic,menos,19.5,0.7128,0.6077,1.533,True,actual
 2026-10-13 11:37,12170053,Challenger Men Singles,Catania (Italy) - Qualification,E. Dalla Valle,F. Bondioli,menos,16.5,0.6585,0.5767,1.615,True,actual
 2026-10-13 11:38,12170002,Challenger Men Singles,Roanne,G. Onclin,F. Balshaw,menos,23.5,0.7244,0.6451,1.444,True,actual
+2026-10-13 11:40,12169901,Challenger Men Singles,Jinan,A. Kachmazov,J. D. Hara Friend,más,33.5,0.8672,0.5889,1.571,True,aprendida
