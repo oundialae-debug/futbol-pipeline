@@ -185,3 +185,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-13 16:42,12170061,Challenger Men Singles,Catania (Italy) - Qualification,M. Wiskandt,M. Damas,más,27.5,0.6154,0.5576,1.666,True,aprendida
 2026-10-13 16:43,12170338,Challenger Men Singles,Catania (Italy) - Qualification,C. A. Caniato,D. Siniakov,menos,19.5,0.658,0.5889,1.571,True,actual
 2026-10-13 16:43,12170338,Challenger Men Singles,Catania (Italy) - Qualification,C. A. Caniato,D. Siniakov,menos,19.5,0.658,0.5889,1.571,True,aprendida
+2026-10-13 16:46,12170000,Challenger Men Singles,Roanne,M. Kouame,D. Dedura,menos,21.5,0.5945,0.4853,1.909,True,aprendida
