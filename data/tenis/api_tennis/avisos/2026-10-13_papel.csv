@@ -102,3 +102,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-13 10:22,12169905,Challenger Men Singles,Jinan,T. Machac,A. Muller,menos,21.5,0.5592,0.4634,2.0,True,aprendida
 2026-10-13 10:22,12170046,Challenger Women Singles,Rovereto,A. Ruzic,A. Siskova,menos,20.5,0.6032,0.4853,1.909,True,aprendida
 2026-10-13 10:22,12170372,Challenger Men Singles,Roanne,U. Blanchet,T. Paris,menos,22.5,0.6108,0.5366,1.727,True,aprendida
+2026-10-13 10:27,12170247,Wta Singles,Wuhan,A. Li,C. Osorio,menos,17.5,0.6377,0.5767,1.615,True,actual
