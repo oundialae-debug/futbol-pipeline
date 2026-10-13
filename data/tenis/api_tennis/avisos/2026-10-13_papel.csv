@@ -84,3 +84,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-13 09:34,12170120,Challenger Women Singles,Mallorca,T. Zidansek,D. Papamichail,menos,19.5,0.5982,0.5147,1.8,True,aprendida
 2026-10-13 09:36,12169866,Wta Singles,Wuhan,D. Snigur,E. Mertens,menos,28.5,0.645,0.5576,1.666,True,actual
 2026-10-13 09:37,12170335,Challenger Men Singles,Catania (Italy) - Qualification,F. Iannaccone,F. C. Jianu,menos,20.5,0.5813,0.4853,1.909,True,aprendida
+2026-10-13 09:40,12170001,Challenger Men Singles,Roanne,M. Martineau,M. Schoenhaus,menos,21.5,0.65,0.5576,1.666,True,actual
