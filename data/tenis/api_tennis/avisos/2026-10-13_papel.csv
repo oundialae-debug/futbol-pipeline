@@ -23,3 +23,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-13 05:47,12170088,Atp Singles,Shanghai,A. Gea,J. Mensik,menos,23.5,0.6361,0.5366,1.727,True,aprendida
 2026-10-13 05:53,12169904,Challenger Men Singles,Jinan,M. Landaluce,I. Simakin,menos,18.5,0.9357,0.9357,1.03,True,casa65
 2026-10-13 05:54,12170169,Challenger Men Singles,Jinan,S. Sakellaridis,K. Smith,menos,32.5,0.7069,0.6077,1.533,True,actual
+2026-10-13 06:02,12169857,Wta Singles,Wuhan,H. Guo,S. Cirstea,menos,17.5,0.6506,0.5767,1.615,True,actual
