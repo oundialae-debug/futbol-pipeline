@@ -209,3 +209,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-13 20:18,12170029,Challenger Men Singles,Santa Cruz 2,L. A. Miguel,M. A. Dellien Velasco,menos,15.5,0.5856,0.5767,1.615,True,actual
 2026-10-13 20:41,12170029,Challenger Men Singles,Santa Cruz 2,L. A. Miguel,M. A. Dellien Velasco,menos,14.5,0.6054,0.5767,1.615,True,actual
 2026-10-13 20:41,12170586,Challenger Men Singles,Santa Cruz 2,G. A. Olivieri,L. Ratti,menos,29.5,0.5799,0.5,1.833,True,aprendida
+2026-10-13 20:43,12170586,Challenger Men Singles,Santa Cruz 2,G. A. Olivieri,L. Ratti,menos,29.5,0.682,0.6077,1.533,True,actual
