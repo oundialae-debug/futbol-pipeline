@@ -232,6 +232,8 @@ def anadir_fila(bh, m, est, liga_id):
 
 def procesar(pd, bh, DC, x, fecha, t, uso):
     mid = int(x.match_id)
+    if mid < 0:                      # fila escrita a mano en ucl_calendario.csv (la API no la daba): sin id real, no se pide
+        return "manual"
     marca = marca_de(mid)
     if marca.exists():
         return "ya_hecho"
