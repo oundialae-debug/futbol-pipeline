@@ -192,3 +192,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-13 17:29,12170000,Challenger Men Singles,Roanne,M. Kouame,D. Dedura,menos,17.5,0.6568,0.5576,1.666,True,actual
 2026-10-13 17:32,12170785,Challenger Women Singles,Rovereto,E. Jacquemot,T. Kostovic,menos,31.5,0.6911,0.5767,1.615,True,actual
 2026-10-13 17:41,12169992,Challenger Men Singles,Maia,M. Trungelliti,T. Monteiro,menos,27.5,0.7308,0.625,1.5,True,actual
+2026-10-13 17:46,12170035,Challenger Women Singles,Rovereto,B. Andreescu,M. Ristic,menos,20.5,0.5567,0.4853,1.909,True,aprendida
