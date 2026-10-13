@@ -1,0 +1,31 @@
+# Títulos de estadística de FotMob sin mapear
+
+- Accurate crosses
+- Accurate long balls
+- Big chances missed
+- Blocks
+- Defence
+- Discipline
+- Distance covered
+- Duels
+- Duels won
+- Ground duels won
+- Hit woodwork
+- Keeper saves
+- Number of sprints
+- Opposition half
+- Own half
+- Passes
+- Physical performance
+- Running distance
+- Shots
+- Shots inside box
+- Shots outside box
+- Sprinting distance
+- Successful dribbles
+- Tackles
+- Throws
+- Total shots
+- Touches in opposition box
+- xG non-penalty
+- xG on target (xGOT)
