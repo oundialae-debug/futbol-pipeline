@@ -98,11 +98,6 @@ def ucl():
             st = str((m.get("state") or {}).get("description", "")).lower()
             sc = (m.get("state") or {}).get("score") or {}
             ft = sc.get("current") or ""
-            if "finished" not in st and m.get("date"):   # calendario de la Champions (usuario 13/10: previo y post-partido de la UCL)
-                futuros.append({"match_id": m["id"], "liga": "Champions League", "liga_id": info["id"],
-                                "fecha": str(m["date"])[:10], "saque_utc": str(m["date"])[11:16],
-                                "local": (m.get("homeTeam") or {}).get("name"), "visitante": (m.get("awayTeam") or {}).get("name"),
-                                "ronda": m.get("round")})
             if "finished" not in st or "-" not in str(ft): continue
             gl, gv = [int(x) for x in str(ft).replace(" ", "").split("-")[:2]]
             filas.append({"match_id": m["id"], "fecha": m.get("date"), "ronda": m.get("round"),
@@ -111,8 +106,21 @@ def ucl():
                           "goles_l": gl, "goles_v": gv, "temporada": temporada})
         if len(lote) < 100: break
         off += 100
+    # calendario de la Champions (usuario 13/10: previo y post-partido de la UCL). El listado por temporada no trae los
+    # partidos futuros: se piden por día (leagueId + date), hoy y los CAL_DIAS-1 siguientes, 1 llamada por día.
+    from datetime import date, timedelta
+    for k in range(int(os.environ.get("CAL_DIAS", "4"))):
+        dia_ = (date.today() + timedelta(days=k)).isoformat()
+        for m in B.desempaquetar(get("/matches", {"leagueId": info["id"], "date": dia_, "limit": 100})):
+            if not isinstance(m, dict) or (m.get("league") or {}).get("id") not in (None, info["id"]): continue
+            st = str((m.get("state") or {}).get("description", "")).lower()
+            if "finished" not in st and m.get("date"):
+                futuros.append({"match_id": m["id"], "liga": "Champions League", "liga_id": info["id"],
+                                "fecha": str(m["date"])[:10], "saque_utc": str(m["date"])[11:16],
+                                "local": (m.get("homeTeam") or {}).get("name"), "visitante": (m.get("awayTeam") or {}).get("name"),
+                                "ronda": m.get("round")})
     if futuros:   # solo lo que aún no ha acabado (los partidos de hoy incluidos); se rehace entero en cada descarga
-        pd.DataFrame(futuros).sort_values(["fecha", "saque_utc"]).to_csv(SAL / "ucl_calendario.csv", index=False)
+        pd.DataFrame(futuros).drop_duplicates("match_id").sort_values(["fecha", "saque_utc"]).to_csv(SAL / "ucl_calendario.csv", index=False)
         print(f"Calendario Champions: {len(futuros)} partidos por jugar")
     nuevos = pd.DataFrame(filas)
     partidos = pd.concat([partidos, nuevos]).drop_duplicates("match_id", keep="last") if len(nuevos) else partidos

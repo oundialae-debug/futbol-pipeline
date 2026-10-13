@@ -13,7 +13,7 @@ cambios de código y archivos".
 
 ## 13/10/2026 — Champions League: previos y post-partidos (petición del usuario)
 - Usuario: "previos y post partidos de la Champions: es lo que más audiencia tiene. Déjalo apuntado como que se hace".
-- `scripts/redes_api.py ucl` escribe también `data/redes/ucl_calendario.csv` (partidos sin terminar). `datos_clubes.py`: calendario e histórico incluyen la Champions (liga "Champions League", id 2486); modelo `poisson_ucl` (ataque/defensa de la liga propia de cada club); solo cruces entre clubes de las 5 ligas; el Elo sigue siendo solo doméstico.
+- `scripts/redes_api.py ucl` escribe también `data/redes/ucl_calendario.csv` (partidos sin terminar de hoy y los 3 días siguientes: el listado por temporada no trae futuros, se piden por día, 1 llamada/día; CAL_DIAS). `datos_clubes.py`: calendario e histórico incluyen la Champions (liga "Champions League", id 2486); modelo `poisson_ucl` (ataque/defensa de la liga propia de cada club); solo cruces entre clubes de las 5 ligas; el Elo sigue siendo solo doméstico.
 - `scripts/post_partido.py`: la Champions entra en la selección y en `hay`/`hay_respaldo`; sus filas van a `data/redes/ucl_historico.csv` (no toca historico_partidos.csv). Mismo tope de 30 llamadas/día.
 - `prueba_post_partido.py` ya fallaba antes de este cambio (3 FALLO, calendario de octubre); no es de esta tarea.
 
