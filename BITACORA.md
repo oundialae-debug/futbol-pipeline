@@ -11,6 +11,11 @@ cambios de código y archivos".
   el resumen y dónde leerlo.
 - Lo más nuevo, arriba.
 
+## 13/10/2026 — Fuente externa de respaldo a Highlightly (validación)
+- football-data.co.uk (CSV público, sin clave ni cuota): E0 (Premier) e I1 (Serie A) al día hasta el 12/10 con HxG/AxG, tiros, a puerta, corners, faltas, tarjetas y cuotas. Cruce con `historico_partidos.csv` (Premier 10-11/10, Serie A 10-12/10): marcadores y tiros iguales (tiros totales = a puerta + fuera + bloqueados); xG igual o con diferencias de hasta ~0.3 (misma familia de datos, revisiones). SP1, D1 y F1 aparecían parados en 03/09 (a re-comprobar bajando el CSV en un runner, no solo por la herramienta de lectura). No cubre Champions ni jugadores.
+- Descartados/no accesibles: Understat (robots.txt lo prohíbe), FBref (error), ESPN `summary` (solo líderes, sin box-score por jugador), TheSportsDB gratis (liga no válida), football-data.org (gratis: resultados y calendario con retraso, 10 llamadas/min, sin estadísticas ni jugadores; incluye Champions), API-Football (100/día gratis, igual que la cuota actual).
+- Pendiente: baja diaria de los CSV (workflow sin API) que complete historico_partidos.csv con tiros/xG; jugadores y Champions siguen sin sustituto.
+
 ## 13/10/2026 — Cuota de la API: 100 llamadas/día en total (aviso del usuario)
 - Se agotaron las llamadas; el límite pasa a 100/día para todo el proyecto. Apuntado en CLAUDE.md (cabecera y notas). Sin cuota la API devuelve listas vacías (hoy: ambos_marcan_diario, redes_api ucl). Pendiente: repartir la cuota entre post_partido (≤30), ambos_marcan_diario, calendario y cosechar_cuotas (que hoy pide ≤1.200) o pausar los que sobren.
 
