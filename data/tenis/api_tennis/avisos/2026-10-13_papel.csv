@@ -73,3 +73,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-13 09:07,12169867,Wta Singles,Wuhan,L. Tagger,N. Bartunkova,menos,30.5,0.6646,0.5576,1.666,True,actual
 2026-10-13 09:07,12170039,Challenger Women Singles,Rovereto,N. Basiletti,V. Hruncakova,menos,21.5,0.6003,0.4853,1.909,True,aprendida
 2026-10-13 09:07,12170100,Challenger Men Singles,Olbia,S. Pieri,D. Rincon,menos,14.5,0.71,0.6077,1.533,True,actual
+2026-10-13 09:13,12169901,Challenger Men Singles,Jinan,A. Kachmazov,J. D. Hara Friend,menos,23.5,0.6563,0.5147,1.8,True,aprendida
