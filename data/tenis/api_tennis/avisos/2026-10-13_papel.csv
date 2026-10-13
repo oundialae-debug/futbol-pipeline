@@ -199,3 +199,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-13 18:15,12169992,Challenger Men Singles,Maia,M. Trungelliti,T. Monteiro,más,26.5,0.863,0.5767,1.615,True,aprendida
 2026-10-13 18:20,12170035,Challenger Women Singles,Rovereto,B. Andreescu,M. Ristic,menos,18.5,0.661,0.5576,1.666,True,actual
 2026-10-13 18:25,12170376,Challenger Men Singles,Roanne,G. Mpetshi Perricard,E. Donnet,menos,23.5,0.6295,0.5366,1.727,True,aprendida
+2026-10-13 18:41,12170035,Challenger Women Singles,Rovereto,B. Andreescu,M. Ristic,menos,16.5,0.8281,0.8281,1.142,True,casa65
