@@ -160,3 +160,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-13 14:57,12170351,Challenger Women Singles,Rovereto,A. Koevermans,E. Andreeva,menos,28.5,0.6693,0.5767,1.615,True,actual
 2026-10-13 14:58,12169991,Challenger Men Singles,Maia,T. Pereira,L. Mikrut,menos,15.5,0.7425,0.625,1.5,True,actual
 2026-10-13 14:58,12170211,Atp Singles,Shanghai,H. Hurkacz,A. Davidovich Fokina,más,28.5,0.5883,0.4634,2.0,True,aprendida
+2026-10-13 15:03,12170108,Challenger Women Singles,Mallorca,L. Cortez Llorca,E. Gorgodze,menos,23.5,0.8109,0.8109,1.166,True,casa65
