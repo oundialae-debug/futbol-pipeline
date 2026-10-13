@@ -1,9 +1,1 @@
-match_id,liga,liga_id,fecha,saque_utc,local,visitante,descanso_desde,descanso_hasta
-1336044403,Segunda División,120775,2026-10-12,12:00,Valladolid,Albacete,12:45,13:02
-1336037595,Segunda División,120775,2026-10-12,14:15,Burgos,Granada CF,15:00,15:17
-1336042701,Segunda División,120775,2026-10-12,16:30,Oviedo,Eibar,17:15,17:32
-1319167371,Serie A,115669,2026-10-12,16:30,Atalanta,Venezia,17:15,17:32
-1319175030,Serie A,115669,2026-10-12,18:45,Torino,Udinese,19:30,19:47
-1336417141,La Liga,119924,2026-10-12,19:00,Levante,Sevilla FC,19:45,20:02
-1325365204,Premier League,33973,2026-10-12,19:00,Coventry,Newcastle United,19:45,20:02
-1336043552,Segunda División,120775,2026-10-12,19:00,Tenerife,Girona,19:45,20:02
+match_id,liga,saque_utc,local,visitante,descanso_desde,descanso_hasta
