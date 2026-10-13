@@ -25,7 +25,7 @@ jobs:
         if: always()
         run: |
           git config user.name "github-actions[bot]"; git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/historico_partidos.csv data/redes/ucl_historico.csv data/redes/ucl_calendario.csv data/fotmob_jugadores.csv data/fotmob_titulos.md data/fotmob_ejemplo.json 2>/dev/null || true
+          for f in data/historico_partidos.csv data/redes/ucl_historico.csv data/redes/ucl_calendario.csv data/fotmob_jugadores.csv data/fotmob_titulos.md data/fotmob_ejemplo.json; do [ -e "$f" ] && git add "$f"; done; true
           git diff --cached --quiet && { echo "Sin cambios"; exit 0; }
           git commit -m "fotmob: datos ($(date -u +%Y-%m-%dT%H:%M))"
           for i in 1 2 3; do git pull --rebase -X theirs -q origin main && git push -q origin HEAD:main && break; sleep 5; done

@@ -57,7 +57,8 @@ def limpio(s):
 
 def parecido(a, b):
     a0, b = limpio(a), limpio(b)
-    mejor = 0.0
+    ta, tb = set(a0.split()), set(b.split())
+    mejor = 0.9 if (ta and tb and (ta <= tb or tb <= ta) and min(len(a0), len(b)) >= 4) else 0.0   # "Coventry" / "Coventry City"
     for a in {a0, ALIAS.get(a0, a0)}:          # con y sin alias: el alias solo ayuda, nunca rompe un nombre que ya coincide
         mejor = max(mejor, 1.0 if a == b else SequenceMatcher(None, a, b).ratio())
     return mejor
