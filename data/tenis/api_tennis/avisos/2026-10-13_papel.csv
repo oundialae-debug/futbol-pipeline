@@ -81,3 +81,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-13 09:22,12170333,Challenger Men Singles,Catania (Italy) - Qualification,M. Geerts,P. Lagutin,menos,17.5,0.7831,0.7831,1.2,True,casa65
 2026-10-13 09:23,12169909,Challenger Men Singles,Jinan,A. Walton,M. Cilic,menos,22.5,0.6795,0.5767,1.615,True,actual
 2026-10-13 09:34,12170058,Challenger Men Singles,Catania (Italy) - Qualification,M. Ribecai,R. M. Papoe,menos,19.5,0.75,0.75,1.25,True,casa65
+2026-10-13 09:34,12170120,Challenger Women Singles,Mallorca,T. Zidansek,D. Papamichail,menos,19.5,0.5982,0.5147,1.8,True,aprendida
