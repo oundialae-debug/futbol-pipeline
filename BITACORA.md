@@ -11,6 +11,13 @@ cambios de código y archivos".
   el resumen y dónde leerlo.
 - Lo más nuevo, arriba.
 
+## 13/10/2026 — Datos sin cuota de Highlightly: FotMob + football-data
+- `scripts/fotmob_a_historico.py` (`fotmob_datos.yml`): resultados, estadísticas, xG, jugadores y calendario de la Champions desde FotMob (sin clave). Filas con match_id negativo; las reales de Highlightly mandan. Jugadores en `data/fotmob_jugadores.csv`.
+- `scripts/fd_a_historico.py` (`fd_historico.yml`): lo mismo con football-data.co.uk (5 ligas).
+- `post_partido.py`: los partidos con id negativo (calendario FotMob) ya no se saltan; piden los datos a FotMob (0 llamadas a Highlightly) y publican la marca "datos_listos".
+- Porqué: el usuario dejó la API en 100 llamadas/día (13/10).
+
+
 ## 13/10/2026 — Respaldo sin API: `fd_a_historico.py` + `fd_historico.yml`
 - Usuario: montar la fuente alternativa y actuar sin preguntar. Baja E0/SP1/I1/D1/F1 de football-data.co.uk (temporada 2627) y añade a `historico_partidos.csv` los partidos terminados que falten (match_id negativo = crc32 de fecha+clubes; goles, xG, tiros a puerta, tiros fuera+bloqueados, corners, faltas, tarjetas). Clubes emparejados con los ids del histórico (alias a mano; lo que no empareja se salta y se lista). Si Highlightly trae después el partido, la fila negativa se borra. Cron cada 2 h (07:20-23:20 UTC) + manual. Probado en local con los CSV del repo (153 filas repuestas, 0 duplicados, sustitución por fila real OK).
 

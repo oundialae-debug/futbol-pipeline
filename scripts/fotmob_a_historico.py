@@ -50,9 +50,12 @@ MAPA = {"expected goals (xg)": "expected_goals", "ball possession": "possession"
         "fouls committed": "fouls", "yellow cards": "yellow_cards", "red cards": "red_cards",
         "shots on target": "shots_on_target", "blocked shots": "blocked_shots", "shots off target": "shots_off_target",
         "offsides": "offsides", "interceptions": "interceptions", "clearances": "clearances", "key chances": "key_passes",
-        "big chances": "big_chances_created", "tackles won": "successful_tackles", "total passes": "total_passes",
-        "accurate passes": "successful_passes", "crosses": "crosses", "aerial duels won": "successful_aerial_duels",
-        "dribbles": "dribbles", "xg open play": None, "xg set play": None, "xgot": None}
+        "big chances": "big_chances_created", "tackles won": "successful_tackles", "tackles": "tackles", "passes": "total_passes",
+        "accurate passes": "successful_passes", "crosses": "crosses", "accurate crosses": "successful_crosses",
+        "aerial duels won": "successful_aerial_duels", "dribbles": "dribbles", "successful dribbles": "successful_dribbles",
+        "shots inside box": "shots_within_penalty_area", "shots outside box": "shots_outside_penalty_area",
+        "keeper saves": "goalkeeper_saves", "total shots": "_total_shots", "xg open play": None, "xg set play": None,
+        "xgot": None}
 
 
 def get(url, intentos=3):
@@ -150,7 +153,8 @@ def escribir_filas(ruta, cols, filas):
         w.writerows(filas)
 
 
-def main(fechas):
+def main(fechas, solo=None):
+    """solo: conjunto de (local, visitante) con los nombres del histórico; si se da, solo se procesan esos partidos."""
     with open(HIST, newline="", encoding="utf-8") as f:
         lect = csv.DictReader(f)
         cols = lect.fieldnames
@@ -172,12 +176,22 @@ def main(fechas):
             t_utc = st.get("utcTime") or m.get("time")
             home, away = m["home"]["name"], m["away"]["name"]
             a, b = club(home, cat), club(away, cat)
+            if solo is not None and (a[0], b[0]) not in solo:
+                continue
             if not st.get("finished"):
                 if pid == 42 and not st.get("cancelled"):
                     futuros.append({"match_id": -int(m["id"]), "liga": liga, "liga_id": lid, "fecha": str(t_utc)[:10],
                                     "saque_utc": str(t_utc)[11:16], "local": a[0], "visitante": b[0],
                                     "ronda": f"FotMob {m['id']}"})
                 continue
+            dia0 = str(t_utc)[:10]
+            if pid == 42 and (a[0], b[0], dia0) in ucl_exist:
+                continue                  # ya está: no se vuelve a pedir
+            if pid != 42 and a[1] and b[1]:
+                pv = claves.get((str(lid), str(a[1]), str(b[1])), [])
+                if any(abs((pd.Timestamp(d) - pd.Timestamp(dia0)).days) <= 1 and (not mid.startswith("-") or filas[i].get("l_possession") not in ("", None))
+                       for d, i, mid in pv):
+                    continue              # Highlightly o FotMob ya lo trae
             det = get(f"https://www.fotmob.com/api/data/matchDetails?matchId={m['id']}")
             if not det:
                 print(f"[!] sin detalle {home}-{away}")
@@ -192,6 +206,11 @@ def main(fechas):
                          "liga_id": lid, "liga": liga, "temporada": 2026, "local": a[0], "visitante": b[0],
                          "local_id": a[1] or "", "visitante_id": b[1] or "",
                          "goles_l": m["home"].get("score"), "goles_v": m["away"].get("score")})
+            if "_total_shots" in est:    # fuera = total - a puerta - bloqueados (Highlightly los separa)
+                tl, tv = est.pop("_total_shots")
+                sl, sv = est.get("shots_on_target", (None, None)), est.get("blocked_shots", (None, None))
+                if tl is not None and sl[0] is not None and "shots_off_target" not in est:
+                    est["shots_off_target"] = (tl - sl[0] - (sv[0] or 0), tv - sl[1] - (sv[1] or 0))
             for suf, (x, y) in est.items():
                 if f"l_{suf}" in fila:
                     fila[f"l_{suf}"], fila[f"v_{suf}"] = ("" if x is None else x), ("" if y is None else y)
@@ -226,7 +245,12 @@ def main(fechas):
     if ucl_rows:
         escribir_filas(UCL_H, cols, ucl_rows)
     if futuros:
-        pd.DataFrame(futuros).drop_duplicates(["fecha", "local", "visitante"]).sort_values(["fecha", "saque_utc"]).to_csv(UCL_C, index=False)
+        nuevo = pd.DataFrame(futuros)
+        if os.path.exists(UCL_C):      # los partidos terminados siguen unos días en el calendario (post_partido los necesita)
+            viejo = pd.read_csv(UCL_C)
+            corte = (datetime.now(timezone.utc).date() - timedelta(days=3)).isoformat()
+            nuevo = pd.concat([nuevo, viejo[(viejo.fecha >= corte) & (viejo.match_id < 0)]], ignore_index=True)
+        nuevo.drop_duplicates(["fecha", "local", "visitante"], keep="first").sort_values(["fecha", "saque_utc"]).to_csv(UCL_C, index=False)
     if jug_rows:
         antes = pd.read_csv(JUG, low_memory=False) if os.path.exists(JUG) else pd.DataFrame()
         todo = pd.concat([antes, pd.DataFrame(jug_rows)], ignore_index=True).drop_duplicates(["fotmob_match_id", "fotmob_jugador_id"], keep="last")

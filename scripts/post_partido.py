@@ -232,8 +232,8 @@ def anadir_fila(bh, m, est, liga_id):
 
 def procesar(pd, bh, DC, x, fecha, t, uso):
     mid = int(x.match_id)
-    if mid < 0:                      # fila escrita a mano en ucl_calendario.csv (la API no la daba): sin id real, no se pide
-        return "manual"
+    if mid < 0:                      # calendario de FotMob (o a mano): sin id de Highlightly, datos de FotMob sin cuota
+        return procesar_fotmob(pd, DC, x, fecha, t, uso)
     marca = marca_de(mid)
     if marca.exists():
         return "ya_hecho"
@@ -279,13 +279,59 @@ def procesar(pd, bh, DC, x, fecha, t, uso):
     return publicar(pd, DC, x, fecha, t, uso, fila, base, marca)
 
 
+def fila_por_nombres(pd, local, visitante, fecha):
+    """Fila ya guardada (5 ligas o Champions, id positivo o negativo) con esos clubes y fecha (+-1 día)."""
+    for ruta in (R["hist"], R["ucl"]):
+        if not ruta.exists():
+            continue
+        h = pd.read_csv(ruta, usecols=["match_id", "fecha", "goles_l", "goles_v", "local", "visitante"])
+        h = h[(h.local == local) & (h.visitante == visitante) & h.goles_l.notna()]
+        h = h[(pd.to_datetime(h.fecha.str[:10]) - pd.Timestamp(fecha)).abs() <= pd.Timedelta(days=1)]
+        if not h.empty:
+            return h.iloc[0]
+    return None
+
+
+def procesar_fotmob(pd, DC, x, fecha, t, uso):
+    """Partido del calendario de FotMob (match_id < 0): mismo reloj que el resto, pero los datos salen de FotMob
+    (scripts/fotmob_a_historico.py, sin cuota de Highlightly) y no se gasta ni una llamada."""
+    mid = int(x.match_id)
+    marca = marca_de(mid)
+    if marca.exists():
+        return "ya_hecho"
+    k = x.t.to_pydatetime()
+    if t < k + DESDE:
+        return "pronto"
+    base = {"match_id": mid, "local": x.local, "visitante": x.visitante, "liga": x.liga, "fecha": fecha,
+            "saque_utc": k.isoformat()}
+    if t > k + HASTA:
+        if fecha != fechas(t)[0]:
+            return "fuera"
+        fin(marca, {**base, "estado": "abandonado", "hora": t.isoformat(timespec="seconds"), "llamadas": 0},
+            f"post-partido: {x.local}-{x.visitante} abandonado")
+        return "abandonado"
+    fila = fila_por_nombres(pd, x.local, x.visitante, fecha)
+    if fila is None and not OPC["simular"]:
+        try:
+            import fotmob_a_historico as FM
+            FM.HIST, FM.UCL_H, FM.UCL_C, FM.JUG = str(R["hist"]), str(R["ucl"]), str(R["base"] / "data/redes/ucl_calendario.csv"), str(R["base"] / "data/fotmob_jugadores.csv")
+            FM.main([fecha], solo={(x.local, x.visitante)})
+        except Exception as ex:
+            print(f"[!] FotMob falló: {ex}")
+        fila = fila_por_nombres(pd, x.local, x.visitante, fecha)
+    if fila is None:
+        print(f"{x.local}-{x.visitante}: sin datos terminados en FotMob -> siguiente pasada")
+        return "en_juego"
+    return publicar(pd, DC, x, fecha, t, uso, fila, base, marca)
+
+
 def publicar(pd, DC, x, fecha, t, uso, fila, base, marca):
     """Datos listos: la marca (con los nombres tal y como los guarda el histórico, que son los que pide
     `datos_clubes.py post`) va en el MISMO commit que la fila del histórico, así Live nunca ve una sin la otra."""
     marca_d = {**base, "local": fila.local, "visitante": fila.visitante, "estado": "datos_listos",
                "resultado": f"{int(fila.goles_l)}-{int(fila.goles_v)}", "hora": t.isoformat(timespec="seconds"),
                "llamadas": uso["partidos"].get(str(x.match_id), 0)}
-    fin(marca, marca_d, f"post-partido: {fila.local}-{fila.visitante} datos listos", extra=[R["hist"], R["ucl"]])
+    fin(marca, marca_d, f"post-partido: {fila.local}-{fila.visitante} datos listos", extra=[R["hist"], R["ucl"], R["base"] / "data/fotmob_jugadores.csv"])
     avisar_live()
     return "datos_listos"
 
