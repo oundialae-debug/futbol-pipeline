@@ -197,3 +197,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-13 18:04,12170586,Challenger Men Singles,Santa Cruz 2,G. A. Olivieri,L. Ratti,menos,21.5,0.608,0.5,1.833,True,aprendida
 2026-10-13 18:07,12170585,Challenger Men Singles,Santa Cruz 2,G. Bueno,M. Zeitune,menos,22.5,0.6532,0.5,1.833,True,aprendida
 2026-10-13 18:15,12169992,Challenger Men Singles,Maia,M. Trungelliti,T. Monteiro,más,26.5,0.863,0.5767,1.615,True,aprendida
+2026-10-13 18:20,12170035,Challenger Women Singles,Rovereto,B. Andreescu,M. Ristic,menos,18.5,0.661,0.5576,1.666,True,actual
