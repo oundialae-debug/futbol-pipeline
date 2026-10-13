@@ -19,3 +19,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-13 05:24,12170076,Atp Singles,Shanghai,A. De Minaur,K. Khachanov,menos,19.5,0.7921,0.7921,1.181,True,casa65
 2026-10-13 05:26,12170076,Atp Singles,Shanghai,A. De Minaur,K. Khachanov,menos,19.5,0.8155,0.75,1.25,True,actual
 2026-10-13 05:29,12169857,Wta Singles,Wuhan,H. Guo,S. Cirstea,menos,18.5,0.5704,0.4634,2.0,True,aprendida
+2026-10-13 05:29,12170086,Wta Singles,Wuhan,Y. Putintseva,Z. Sonmez,menos,22.5,0.6301,0.5147,1.8,True,aprendida
