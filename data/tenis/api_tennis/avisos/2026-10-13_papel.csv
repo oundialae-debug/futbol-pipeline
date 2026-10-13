@@ -110,3 +110,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-13 10:42,12170455,Challenger Men Singles,Maia,B. Hassan,Z. Piros,menos,19.5,0.6857,0.5576,1.666,True,actual
 2026-10-13 10:52,12170248,Wta Singles,Wuhan,A. Krueger,S. Zhang,menos,22.5,0.6089,0.5147,1.8,True,aprendida
 2026-10-13 10:55,12170053,Challenger Men Singles,Catania (Italy) - Qualification,E. Dalla Valle,F. Bondioli,menos,21.5,0.5593,0.4634,2.0,True,aprendida
+2026-10-13 10:56,12170335,Challenger Men Singles,Catania (Italy) - Qualification,F. Iannaccone,F. C. Jianu,menos,17.5,0.7921,0.7921,1.181,True,casa65
