@@ -179,3 +179,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-13 16:07,12170091,Challenger Men Singles,Olbia,H. Barton,M. Mrva,menos,22.5,0.6329,0.5147,1.8,True,aprendida
 2026-10-13 16:18,12170099,Challenger Men Singles,Olbia,L. Nardi,A. Holmgren,menos,23.5,0.6825,0.5767,1.615,True,actual
 2026-10-13 16:27,12170375,Challenger Men Singles,Roanne,P. Herbert,N. Gombos,menos,17.5,0.8642,0.8642,1.1,True,casa65
+2026-10-13 16:34,12170459,Challenger Men Singles,Maia,A. Martin,N. Sanchez Izquierdo,menos,18.5,0.697,0.5576,1.666,True,actual
