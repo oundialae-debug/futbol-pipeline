@@ -128,3 +128,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-13 11:32,12170334,Challenger Men Singles,Catania (Italy) - Qualification,G. Cadenasso,K. Wehnelt,menos,31.5,0.6641,0.5576,1.666,True,actual
 2026-10-13 11:33,12169990,Challenger Men Singles,Maia,A. Pellegrino,L. Giustino,menos,21.5,0.5703,0.4634,2.0,True,aprendida
 2026-10-13 11:33,12170059,Challenger Men Singles,Catania (Italy) - Qualification,O. Roca Batalla,L. Potenza,menos,19.5,0.5619,0.4853,1.909,True,aprendida
+2026-10-13 11:35,12170342,Challenger Men Singles,Olbia,S. Travaglia,V. Durasovic,menos,19.5,0.7385,0.625,1.5,True,actual
