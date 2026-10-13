@@ -111,7 +111,10 @@ def ucl():
     from datetime import date, timedelta
     for k in range(int(os.environ.get("CAL_DIAS", "4"))):
         dia_ = (date.today() + timedelta(days=k)).isoformat()
-        for m in B.desempaquetar(get("/matches", {"leagueId": info["id"], "date": dia_, "limit": 100})):
+        lote_ = B.desempaquetar(get("/matches", {"leagueId": info["id"], "date": dia_, "limit": 100}))
+        print(f"Calendario Champions {dia_}: {len(lote_ or [])} partidos devueltos (llamadas {B.llamadas[0]}) "
+              f"{[(m_.get('league') or {}).get('name') for m_ in (lote_ or [])[:3] if isinstance(m_, dict)]}")
+        for m in lote_ or []:
             if not isinstance(m, dict) or (m.get("league") or {}).get("id") not in (None, info["id"]): continue
             st = str((m.get("state") or {}).get("description", "")).lower()
             if "finished" not in st and m.get("date"):
