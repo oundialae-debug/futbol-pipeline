@@ -13,3 +13,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-14 03:04,12170261,Wta Singles,Wuhan,M. Frech,I. Swiatek,menos,17.5,0.5475,0.4853,1.909,True,aprendida
 2026-10-14 03:04,12170712,Wta Singles,Wuhan,E. Svitolina,L. Samsonova,menos,20.5,0.5807,0.4853,1.909,True,aprendida
 2026-10-14 03:04,12170717,Wta Singles,Wuhan,M. Bouzkova,M. Chwalinska,menos,20.5,0.5622,0.5,1.833,True,aprendida
+2026-10-14 03:04,12170737,Challenger Men Singles,Jinan,L. Draxl,J. Duckworth,menos,23.5,0.6532,0.5147,1.8,True,aprendida
