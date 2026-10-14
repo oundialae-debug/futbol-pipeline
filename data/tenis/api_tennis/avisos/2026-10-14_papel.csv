@@ -117,3 +117,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-14 11:04,12170789,Wta Singles,Wuhan,A. Krueger,L. Tararudee,menos,21.5,0.5553,0.4853,1.909,True,aprendida
 2026-10-14 11:13,12170765,Challenger Men Singles,Maia,P. Martin Tiffon,Z. Piros,menos,20.5,0.5803,0.5,1.833,True,aprendida
 2026-10-14 11:15,12170779,Itf Men Singles,M25 Santa Margherita di Pula 10,B. Djuric,J. Nikles,menos,27.5,0.6664,0.5576,1.666,True,actual
+2026-10-14 11:21,12169984,Challenger Men Singles,Maia,P. Martinez,M. Dodig,menos,15.5,0.6876,0.6876,1.363,True,casa65
