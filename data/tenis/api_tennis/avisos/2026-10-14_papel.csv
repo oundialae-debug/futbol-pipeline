@@ -183,3 +183,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-14 16:03,12171004,Challenger Men Singles,Olbia,L. Nardi,L. Carboni,menos,18.5,0.6497,0.5889,1.571,True,actual
 2026-10-14 16:09,12170873,Challenger Women Singles,Rovereto,H. Tan,L. Stefanini,menos,21.5,0.6467,0.5147,1.8,True,aprendida
 2026-10-14 16:13,12170790,Challenger Men Singles,Catania (Italy) - Qualification,R. M. Papoe,L. Potenza,menos,19.5,0.766,0.766,1.222,True,casa65
+2026-10-14 16:22,12171004,Challenger Men Singles,Olbia,L. Nardi,L. Carboni,menos,17.5,0.854,0.854,1.111,True,casa65
