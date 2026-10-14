@@ -87,3 +87,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-14 09:48,12170786,Itf Men Singles,M25 Santa Margherita di Pula 10,T. Compagnucci,P. Basile,menos,16.5,0.6591,0.5767,1.615,True,actual
 2026-10-14 09:52,12170285,Atp Singles,Shanghai,D. Medvedev,S. Tsitsipas,menos,22.5,0.5621,0.4853,1.909,True,aprendida
 2026-10-14 09:55,12170732,Wta Singles,Wuhan,J. Ostapenko,J. Pegula,menos,21.5,0.8808,0.8808,1.083,True,casa65
+2026-10-14 09:55,12170744,Challenger Women Singles,Mallorca,C. Monnet,E. Yaneva,menos,16.5,0.6885,0.5767,1.615,True,actual
