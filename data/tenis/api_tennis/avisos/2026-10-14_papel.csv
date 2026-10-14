@@ -173,3 +173,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-14 14:50,12170766,Challenger Men Singles,Olbia,M. Mmoh,D. Rincon,menos,20.5,0.766,0.766,1.222,True,casa65
 2026-10-14 14:54,12169989,Challenger Men Singles,Maia,F. Passaro,T. Torres,menos,15.5,0.854,0.854,1.111,True,casa65
 2026-10-14 14:55,12170452,Wta Singles,Wuhan,H. Shi,L. Fernandez,menos,19.5,0.699,0.5576,1.666,True,actual
+2026-10-14 15:09,12170797,Challenger Men Singles,Maia,A. Sanchez Quilez,A. Nedic,menos,21.5,0.6036,0.5,1.833,True,aprendida
