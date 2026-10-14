@@ -1,6 +1,6 @@
 event_key,tipo,torneo,jugador1,jugador2,estado,sets,juegos_totales
 107124,Itf Men Singles,M25 Idanha-a-Nova 2,Chabalgoity/ Fontes Damorim,Basel/ Cundom,Finished,2 - 1,29
-12169823,Wta Doubles,Wuhan,Bartunkova/ Chwalinska,Mertens/ Shnaider,,-,0
+12169823,Wta Doubles,Wuhan,Bartunkova/ Chwalinska,Mertens/ Shnaider,Cancelled,-,0
 12169831,Wta Doubles,Wuhan,Sakkari/ Vekic,Aoyama/ Liang,Cancelled,-,0
 12169832,Wta Doubles,Wuhan,Jiang/ Wang,Bucsa/ Melichar-Martinez,,-,0
 12169984,Challenger Men Singles,Maia,P. Martinez,M. Dodig,,-,0
@@ -11,7 +11,7 @@ event_key,tipo,torneo,jugador1,jugador2,estado,sets,juegos_totales
 12169996,Challenger Men Singles,Roanne,C. Chidekh,J. Kym,,-,0
 12170003,Challenger Men Singles,Roanne,D. Stricker,P. Henning,,-,0
 12170032,Challenger Men Singles,Santa Cruz 2,E. Ribeiro,J. C. Prado Angelo,Finished,0 - 2,20
-12170034,Challenger Men Singles,Santa Cruz 2,G. Villanueva,C. M. Zarate,Set 1,0 - 0,2
+12170034,Challenger Men Singles,Santa Cruz 2,G. Villanueva,C. M. Zarate,Finished,1 - 2,31
 12170062,Challenger Men Doubles,Jinan,Delaney/ Delaney,Jin/ Sun Qian,,-,0
 12170063,Challenger Men Doubles,Jinan,Bayldon/ Fancutt,Mochizuki/ Uchida,,-,0
 12170064,Challenger Men Doubles,Jinan,Banthia/ Rai,Hsu/ Ilagan,,-,0
@@ -50,31 +50,31 @@ event_key,tipo,torneo,jugador1,jugador2,estado,sets,juegos_totales
 12170220,Challenger Men Doubles,Santa Cruz 2,Britto/ Saraiva Dos Santos,Casanova/ Rodriguez Taverna,,-,0
 12170222,Challenger Men Doubles,Santa Cruz 2,La Serna/ Zeitune,Arias/ Carou,,-,0
 12170223,Challenger Men Doubles,Santa Cruz 2,Alves/ Zormann Da Silva,Estevez/ Ratti,,-,0
-12170241,Wta Singles,Wuhan,S. Kartal,B. Bencic,,-,0
+12170241,Wta Singles,Wuhan,S. Kartal,B. Bencic,Finished,2 - 0,18
 12170242,Wta Doubles,Wuhan,Hsieh S-/Ostapenko,Kenin/ Khromacheva,,-,0
 12170243,Atp Singles,Shanghai,C. Ruud,F. Auger-Aliassime,,-,0
 12170252,Itf Men Singles,M25 Qian Daohu,Y. Demin,F. Peliwo,,-,0
-12170261,Wta Singles,Wuhan,M. Frech,I. Swiatek,,-,0
+12170261,Wta Singles,Wuhan,M. Frech,I. Swiatek,Finished,0 - 2,15
 12170262,Itf Men Singles,M25 Qian Daohu,C. Broom,K. Lee,Cancelled,-,0
-12170263,Itf Men Singles,M25 Qian Daohu,J. Chiu,C. Hewitt,,-,0
+12170263,Itf Men Singles,M25 Qian Daohu,J. Chiu,C. Hewitt,Set 1,0 - 0,0
 12170264,Itf Men Singles,M25 Qian Daohu,T. Derepasko,I. Becroft,,-,0
-12170265,Itf Men Singles,M25 Qian Daohu,S. Fomin,D. Palan,,-,0
+12170265,Itf Men Singles,M25 Qian Daohu,S. Fomin,D. Palan,Finished,2 - 0,25
 12170266,Itf Men Singles,M25 Qian Daohu,Y. Hongyu,T. Huang,,-,0
-12170267,Itf Men Singles,M25 Qian Daohu,W. Kong,M. Shearer,,-,0
+12170267,Itf Men Singles,M25 Qian Daohu,W. Kong,M. Shearer,Finished,0 - 2,19
 12170268,Itf Men Singles,M25 Qian Daohu,J. Mackenzie,L. Castelnuovo,Cancelled,-,0
-12170269,Itf Men Singles,M25 Qian Daohu,Z. Shao,A. Shepp,,-,0
-12170270,Itf Men Singles,M25 Qian Daohu,K. Tamm,X. D. Chen,,-,0
+12170269,Itf Men Singles,M25 Qian Daohu,Z. Shao,A. Shepp,Retired,0 - 1,17
+12170270,Itf Men Singles,M25 Qian Daohu,K. Tamm,X. D. Chen,Finished,2 - 0,17
 12170271,Itf Men Singles,M25 Qian Daohu,A. Weber,Y. Kikuchi,,-,0
-12170272,Itf Men Singles,M25 Qian Daohu,Y. Zeng,X. Han,,-,0
-12170273,Itf Men Singles,M25 Qian Daohu,E. Zhu,E. Pleshivtsev,,-,0
+12170272,Itf Men Singles,M25 Qian Daohu,Y. Zeng,X. Han,Set 1,0 - 0,0
+12170273,Itf Men Singles,M25 Qian Daohu,E. Zhu,E. Pleshivtsev,Set 2,1 - 0,9
 12170285,Atp Singles,Shanghai,D. Medvedev,S. Tsitsipas,,-,0
-12170286,Wta Singles,Wuhan,K. Muchova,C. McNally,,-,0
+12170286,Wta Singles,Wuhan,K. Muchova,C. McNally,Set 1,0 - 0,3
 12170287,Atp Doubles,Shanghai,Cabral/ Tracy,Galloway/ Goransson,,-,0
-12170288,Itf Men Singles,M25 Solapur (India),P. Dev S D,N. Schachter,,-,0
-12170289,Itf Men Singles,M25 Solapur (India),C. Duhan,A. Paparkar,,-,0
-12170290,Itf Men Singles,M25 Solapur (India),M. Kamath,U. Kamboj,,-,0
+12170288,Itf Men Singles,M25 Solapur (India),P. Dev S D,N. Schachter,Set 1,0 - 0,1
+12170289,Itf Men Singles,M25 Solapur (India),C. Duhan,A. Paparkar,Set 2,0 - 1,18
+12170290,Itf Men Singles,M25 Solapur (India),M. Kamath,U. Kamboj,Finished,2 - 0,17
 12170291,Itf Men Singles,M25 Solapur (India),G. Lomakin,S. Rawat,,-,0
-12170292,Itf Men Singles,M25 Solapur (India),A. Ouakaa,A. Ganesan,,-,0
+12170292,Itf Men Singles,M25 Solapur (India),A. Ouakaa,A. Ganesan,Finished,0 - 2,20
 12170293,Itf Men Singles,M25 Solapur (India),D. Suresh,D. Javia,,-,0
 12170294,Itf Men Singles,M25 Solapur (India),M. Sureshkumar,S. Banerjee,,-,0
 12170295,Itf Men Singles,M25 Solapur (India),C. Warik,P. Sornlaksup,,-,0
@@ -82,10 +82,10 @@ event_key,tipo,torneo,jugador1,jugador2,estado,sets,juegos_totales
 12170297,Itf Men Doubles,M25 Solapur (India),Vishal Balsekar/ Mehra,Kalyanpur/ Matsuda,,-,0
 12170298,Itf Men Doubles,M25 Solapur (India),Bangargi/ Paparkar,Karthik/ Rathi,,-,0
 12170299,Itf Men Doubles,M25 Solapur (India),Singh/ Singh,Hans/ Kesharwani,,-,0
-12170312,Itf Women Singles,W15 Islamabad 2 (Pakistan),S. Leon,F. Dekkers,Finished,0 - 1,4
-12170316,Itf Women Singles,W15 Islamabad 2 (Pakistan),A. Kuparev,S. Olimjanova,Finished,1 - 1,4
+12170312,Itf Women Singles,W15 Islamabad 2 (Pakistan),S. Leon,F. Dekkers,Finished,0 - 2,20
+12170316,Itf Women Singles,W15 Islamabad 2 (Pakistan),A. Kuparev,S. Olimjanova,Set 3,1 - 1,21
 12170318,Itf Women Singles,W15 Islamabad 2 (Pakistan),E. Van Poppel,N. Finnigan,,-,0
-12170320,Itf Women Singles,W15 Islamabad 2 (Pakistan),K. Y. Cheung,W. Mdlulwa,,-,0
+12170320,Itf Women Singles,W15 Islamabad 2 (Pakistan),K. Y. Cheung,W. Mdlulwa,Finished,0 - 2,15
 12170322,Itf Women Singles,W15 Islamabad 2 (Pakistan),M. R. Romisa,E. Jamshidi,,-,0
 12170356,Itf Women Singles,W15 Chisinau 2 (Moldova),S. V. Balan,A. Nikolaieva,,-,0
 12170357,Itf Women Singles,W15 Chisinau 2 (Moldova),M. Biro,M. Pankratova,,-,0
@@ -100,7 +100,7 @@ event_key,tipo,torneo,jugador1,jugador2,estado,sets,juegos_totales
 12170366,Itf Women Doubles,W15 Chisinau 2 (Moldova),Buculei/ Nikolaieva,Boyden/ Safta,,-,0
 12170367,Itf Women Doubles,W15 Chisinau 2 (Moldova),Reva/ Reva,Drobca/ Helbet,,-,0
 12170368,Atp Singles,Shanghai,T. Paul,Z. Bergs,,-,0
-12170369,Atp Singles,Shanghai,B. Van De Zandschulp,R. Jodar,,-,0
+12170369,Atp Singles,Shanghai,B. Van De Zandschulp,R. Jodar,Set 2,1 - 0,15
 12170370,Challenger Men Singles,Olbia,A. Guerrieri,M. Kasnikowski,,-,0
 12170371,Challenger Women Singles,Rovereto,G. Knutson,S. Bandecchi,,-,0
 12170382,Itf Men Singles,M15 Heraklion 8,O. Geladaris,F. Murgett,,-,3
@@ -162,8 +162,9 @@ event_key,tipo,torneo,jugador1,jugador2,estado,sets,juegos_totales
 12170582,Itf Women Doubles,W35 Heraklion 2,Mazzoni/ Mazzoni,Dimitsani/ Tsoutsi,,-,0
 12170583,Itf Women Doubles,W35 Heraklion 2,Chatziavraam/ Rentoumi,Herazo Gonzalez/ Ogescu,,-,0
 12170589,Challenger Men Singles,Santa Cruz 2,T. Cigarran,N. Kicker,Finished,0 - 2,17
-12170590,Challenger Men Singles,Santa Cruz 2,T. Seyboth Wild,M. Alves,Set 1,0 - 0,4
-12170631,Itf Men Doubles,M15 Maringa 3 (Brazil),Bojicic Ono/ Braga,Tosetto/ Zanellato,,-,0
+12170590,Challenger Men Singles,Santa Cruz 2,T. Seyboth Wild,M. Alves,Finished,2 - 0,22
+12170628,Itf Men Doubles,M15 Maringa 3 (Brazil),Crevelaro/ Silva,Noatto/ Storck,Finished,0 - 2,21
+12170631,Itf Men Doubles,M15 Maringa 3 (Brazil),Bojicic Ono/ Braga,Tosetto/ Zanellato,Finished,2 - 1,33
 12170647,Itf Women Singles,"W100 Edmond, OK",E. Kalieva,S. Broadus,,-,0
 12170648,Itf Women Singles,"W100 Edmond, OK",W. Osuigwe,S. Stephens,,-,0
 12170649,Itf Women Singles,"W100 Edmond, OK",J. Pareja,E. Mandlik,,-,0
@@ -188,7 +189,7 @@ event_key,tipo,torneo,jugador1,jugador2,estado,sets,juegos_totales
 12170687,Itf Men Singles,"M25 Austin, TX",S. Mitsui,M. Krueger,,-,0
 12170688,Itf Men Singles,"M25 Austin, TX",R. Pascual Ferra,T. Berkieta,,-,0
 12170689,Itf Men Singles,"M25 Austin, TX",T. Zink,B. Willwerth,,-,0
-12170690,Itf Women Singles,W50 Quebec City (Canada),L. Poling,C. Brace,Set 2,0 - 1,18
+12170690,Itf Women Singles,W50 Quebec City (Canada),L. Poling,C. Brace,Finished,0 - 2,22
 12170691,Itf Women Singles,W50 Quebec City (Canada),A. Arseneault,J. Mikulskyte,,-,0
 12170692,Itf Women Singles,W50 Quebec City (Canada),J. Gimbrere,T. Gowda,,-,0
 12170693,Itf Women Singles,W50 Quebec City (Canada),C. Kuhl,R. Brantmeier,,-,0
@@ -203,46 +204,43 @@ event_key,tipo,torneo,jugador1,jugador2,estado,sets,juegos_totales
 12170702,Itf Men Doubles,"M25 Austin, TX",Matsuoka/ Sakagawa,Poling/ Vance,,-,0
 12170703,Itf Women Doubles,"W35 Redding, CA",Crocker/ Daughters,Reasco Gonzalez/ Rodriguez,,-,0
 12170704,Itf Women Doubles,"W35 Redding, CA",Chan/ Evans,Rencheli/ Sholokhova,,-,0
-12170705,Itf Women Doubles,"W35 Redding, CA",Bulatova/ Hejtmanek,Ma/ Passola,,-,0
-12170706,Itf Women Doubles,"W35 Redding, CA",Mi/ Mushika Mao,Aytoyan/ Mahendran,,-,0
 12170707,Itf Women Doubles,W50 Quebec City (Canada),Inoue/ Naito,Alexander/ Mercier,,-,0
 12170708,Itf Women Doubles,W50 Quebec City (Canada),Hrda/ Poling,Hu/ Mikulskyte,,-,0
 12170709,Itf Women Doubles,W50 Quebec City (Canada),Cabio/ Taylor,Brace/ Brace,,-,0
-12170710,Itf Women Doubles,W50 Quebec City (Canada),Brantmeier/ Xu,Liu/ Ozeki,,-,0
-12170711,Wta Singles,Wuhan,I. Jovic,D. Yastremska,,-,0
-12170712,Wta Singles,Wuhan,E. Svitolina,L. Samsonova,,-,0
+12170711,Wta Singles,Wuhan,I. Jovic,D. Yastremska,Set 1,0 - 0,4
+12170712,Wta Singles,Wuhan,E. Svitolina,L. Samsonova,Finished,2 - 1,28
 12170714,Atp Doubles,Shanghai,Arribage/ Olivetti,Krawietz/ Puetz,,-,0
 12170715,Wta Doubles,Wuhan,Errani/ Paolini,Mihalikova/ Nicholls,,-,0
-12170717,Wta Singles,Wuhan,M. Bouzkova,M. Chwalinska,,-,0
+12170717,Wta Singles,Wuhan,M. Bouzkova,M. Chwalinska,Finished,1 - 2,21
 12170718,Challenger Men Singles,Jinan,K. Smith,V. Kopriva,,-,0
-12170719,Challenger Men Singles,Jinan,M. Landaluce,J. Cui,,-,0
+12170719,Challenger Men Singles,Jinan,M. Landaluce,J. Cui,Set 1,0 - 0,4
 12170724,Challenger Men Doubles,Roanne,Andreozzi/ Guinard,De Jonge/ Opitz,,-,0
 12170726,Wta Singles,Wuhan,K. Volynets,H. Guo,,-,0
-12170727,Wta Singles,Wuhan,Y. Putintseva,D. Shnaider,,-,0
+12170727,Wta Singles,Wuhan,Y. Putintseva,D. Shnaider,Set 1,0 - 0,0
 12170731,Wta Singles,Wuhan,J. Paolini,N. Bartunkova,,-,0
 12170732,Wta Singles,Wuhan,J. Ostapenko,J. Pegula,,-,0
 12170733,Wta Singles,Wuhan,J. Tjen,D. Snigur,,-,0
 12170734,Wta Singles,Wuhan,A. Sabalenka,A. Li,,-,0
-12170735,Wta Doubles,Wuhan,Kozyreva/ Stearns,Aoyama/ Liang,,-,0
-12170737,Challenger Men Singles,Jinan,L. Draxl,J. Duckworth,,-,0
-12170738,Challenger Men Singles,Jinan,I. Ivashka,M. Sharipov,,-,0
-12170739,Challenger Men Singles,Jinan,H. Matsuoka,A. Vukic,,-,0
-12170740,Challenger Men Singles,Jinan,A. Ilagan,Y. Watanuki,,-,0
-12170741,Challenger Men Singles,Jinan,L. Pavlovic,T. Schoolkate,,-,0
+12170735,Wta Doubles,Wuhan,Kozyreva/ Stearns,Aoyama/ Liang,Finished,2 - 1,42
+12170737,Challenger Men Singles,Jinan,L. Draxl,J. Duckworth,Finished,2 - 0,20
+12170738,Challenger Men Singles,Jinan,I. Ivashka,M. Sharipov,Retired,0 - 0,7
+12170739,Challenger Men Singles,Jinan,H. Matsuoka,A. Vukic,Finished,0 - 2,17
+12170740,Challenger Men Singles,Jinan,A. Ilagan,Y. Watanuki,Set 2,0 - 1,10
+12170741,Challenger Men Singles,Jinan,L. Pavlovic,T. Schoolkate,Set 1,0 - 0,10
 12170742,Challenger Women Singles,Mallorca,M. Bassols,F. Curmi,,-,0
 12170744,Challenger Women Singles,Mallorca,C. Monnet,E. Yaneva,,-,0
 12170746,Challenger Women Singles,Rovereto,J. Teichmann,L. Bronzetti,,-,0
-12170747,Itf Women Singles,W15 Shenzhen,Y. Hou,E. Kuznetsova,,-,0
-12170748,Itf Women Singles,W15 Shenzhen,J. Sun,J. Han,,-,0
-12170749,Itf Women Singles,W15 Shenzhen,A. Varaksina,S. Tsujioka,,-,0
-12170750,Itf Women Singles,W15 Shenzhen,Z. Zhang,X. Lan,,-,0
-12170751,Itf Women Singles,W15 Shenzhen,T. T. Deng,A. Karunaratne,,-,0
-12170752,Itf Women Singles,W15 Shenzhen,C. Wong Hong Yi,Y. Li,,-,0
-12170753,Itf Women Singles,W15 Shenzhen,S. Ye,K. Ren,,-,0
-12170754,Itf Women Singles,W15 Shenzhen,J. Zhang,H. Koyama,,-,0
+12170747,Itf Women Singles,W15 Shenzhen,Y. Hou,E. Kuznetsova,Retired,1 - 0,10
+12170748,Itf Women Singles,W15 Shenzhen,J. Sun,J. Han,Finished,2 - 0,16
+12170749,Itf Women Singles,W15 Shenzhen,A. Varaksina,S. Tsujioka,Finished,0 - 2,15
+12170750,Itf Women Singles,W15 Shenzhen,Z. Zhang,X. Lan,Finished,1 - 2,25
+12170751,Itf Women Singles,W15 Shenzhen,T. T. Deng,A. Karunaratne,Finished,0 - 2,16
+12170752,Itf Women Singles,W15 Shenzhen,C. Wong Hong Yi,Y. Li,Set 2,1 - 0,11
+12170753,Itf Women Singles,W15 Shenzhen,S. Ye,K. Ren,Set 3,1 - 1,24
+12170754,Itf Women Singles,W15 Shenzhen,J. Zhang,H. Koyama,Finished,1 - 2,30
 12170755,Itf Women Singles,W15 Shenzhen,A. Chanta,a. li,,-,0
-12170756,Itf Women Singles,W15 Shenzhen,M. Chen,S. Wei,,-,0
-12170757,Itf Women Singles,W15 Shenzhen,Y. Dang,C. Yuan,,-,0
+12170756,Itf Women Singles,W15 Shenzhen,M. Chen,S. Wei,Set 1,0 - 0,5
+12170757,Itf Women Singles,W15 Shenzhen,Y. Dang,C. Yuan,Set 1,0 - 0,0
 12170758,Itf Women Singles,W15 Shenzhen,A. Malova,J. Zhang,,-,0
 12170759,Itf Women Doubles,W15 Shenzhen,Kuznetsova/ Suvirdjonkova,Nie/ Zheng,,-,0
 12170760,Itf Women Doubles,W15 Shenzhen,An/ Tian,Sun/ Sun,,-,0
@@ -296,10 +294,10 @@ event_key,tipo,torneo,jugador1,jugador2,estado,sets,juegos_totales
 12170827,Itf Men Singles,M15 Szabolcsveresmart,A. Poritskyi,P. O. Fellin,,-,0
 12170828,Itf Men Singles,M15 Szabolcsveresmart,T. Genier,D. Thurner,,-,0
 12170829,Itf Men Singles,M15 Szabolcsveresmart,J. Hrazdil,A. Belkovics,,-,0
-12170830,Itf Men Singles,M25 Qian Daohu,A. Susanto,K. Lee,,-,0
-12170831,Itf Men Singles,M25 Qian Daohu,J. Mackenzie,C. Crowther,,-,0
+12170830,Itf Men Singles,M25 Qian Daohu,A. Susanto,K. Lee,Retired,1 - 1,19
+12170831,Itf Men Singles,M25 Qian Daohu,J. Mackenzie,C. Crowther,Finished,2 - 0,18
 12170832,Itf Men Singles,M25 Santa Margherita di Pula 10,F. Tabacco,M. Zielinski,,-,0
-12170833,Itf Women Singles,W15 Islamabad 2 (Pakistan),A. Bista,K. Yodpetch,,-,0
+12170833,Itf Women Singles,W15 Islamabad 2 (Pakistan),A. Bista,K. Yodpetch,Set 1,0 - 0,1
 12170834,Itf Women Singles,W15 Islamabad 2 (Pakistan),A. Cirotte,J. Khramtsova,,-,0
 12170835,Itf Women Singles,W15 Islamabad 2 (Pakistan),S. P. Sari,K. Laskutova,,-,0
 12170836,Itf Women Singles,W35 Birmingham 2 (United Kingdom),A. Okutoyi,I. Spink,,-,0
@@ -506,3 +504,27 @@ event_key,tipo,torneo,jugador1,jugador2,estado,sets,juegos_totales
 12171068,Challenger Men Singles,Santa Cruz 2,G. I. Justo,J. M. La Serna,,-,0
 12171077,Challenger Men Singles,Santa Cruz 2,N. Kicker,F. Mena,,-,0
 12171078,Challenger Men Singles,Santa Cruz 2,F. Roncadelli,J. C. Prado Angelo,,-,0
+12171080,Itf Women Singles,"W100 Edmond, OK",T. Frodin,M. Berlanga Bandera,,-,0
+12171081,Itf Women Singles,"W100 Edmond, OK",D. Guzman,C. Dolehide,,-,0
+12171082,Itf Women Singles,"W100 Edmond, OK",Y. Ku,Z. Epps,,-,0
+12171083,Itf Women Singles,"W100 Edmond, OK",T. Maria,A. Smith,,-,0
+12171084,Itf Women Singles,"W100 Edmond, OK",A. Rus,A. Shcherbinina,,-,0
+12171085,Itf Women Singles,"W100 Edmond, OK",V. Strakhova,M. Rapolu,,-,0
+12171086,Itf Women Singles,"W100 Edmond, OK",S. Johnson,R. Zarazua,,-,0
+12171087,Itf Women Singles,"W100 Edmond, OK",M. Okalova,A. Herrero Linana,,-,0
+12171088,Itf Women Singles,"W35 Redding, CA",L. Mi,D. Letzel,,-,0
+12171089,Itf Women Singles,"W35 Redding, CA",N. Nishino,A. Rencheli,,-,0
+12171090,Itf Women Singles,"W35 Redding, CA",M. Sholokhova,Mushika Mao,,-,0
+12171091,Itf Women Singles,"W35 Redding, CA",S. Drugdova,M. Aytoyan,,-,0
+12171092,Itf Women Singles,"W35 Redding, CA",V. Wolff,N. Kha,,-,0
+12171093,Itf Women Singles,"W35 Redding, CA",I. Haddad,D. Soke,,-,0
+12171094,Itf Women Singles,"W35 Redding, CA",S. Jara,A. Sahdiieva,,-,0
+12171095,Itf Men Singles,"M25 Austin, TX",L. E. Ambrogi,I. Urribarrens Ramirez,,-,0
+12171096,Itf Men Singles,"M25 Austin, TX",D. Badenhorst,M. Braswell,,-,0
+12171097,Itf Men Singles,"M25 Austin, TX",J. A. Rodriguez,D. Mosejczuk,,-,0
+12171098,Itf Men Singles,"M25 Austin, TX",C. Rolland de Ravel,R. Perot,,-,0
+12171099,Itf Men Singles,"M25 Austin, TX",Q. Vandecasteele,A. Shah,,-,0
+12171100,Itf Men Singles,"M25 Austin, TX",M. Vaughan,A. Forger,,-,0
+12171101,Itf Men Singles,"M25 Austin, TX",Z. Velcz,T. Legout,,-,0
+12171102,Challenger Men Singles,Santa Cruz 2,T. Seyboth Wild,C. M. Zarate,,-,0
+12171104,Wta Doubles,Wuhan,Bartunkova/ Chwalinska,Neel/ Olmos,,-,0
