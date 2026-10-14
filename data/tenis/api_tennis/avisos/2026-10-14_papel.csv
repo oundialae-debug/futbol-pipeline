@@ -38,3 +38,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-14 05:56,12170719,Challenger Men Singles,Jinan,M. Landaluce,J. Cui,menos,20.5,0.6681,0.5889,1.571,True,actual
 2026-10-14 06:03,12170727,Wta Singles,Wuhan,Y. Putintseva,D. Shnaider,menos,17.5,0.6079,0.5576,1.666,True,actual
 2026-10-14 06:18,12170711,Wta Singles,Wuhan,I. Jovic,D. Yastremska,menos,18.5,0.6576,0.5767,1.615,True,actual
+2026-10-14 06:30,12170727,Wta Singles,Wuhan,Y. Putintseva,D. Shnaider,menos,15.5,0.6876,0.6876,1.363,True,casa65
