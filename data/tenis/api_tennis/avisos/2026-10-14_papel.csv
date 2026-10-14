@@ -78,3 +78,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-14 09:04,12170895,Itf Men Singles,M15 Offenbach,J. Penzlin,M. Petkovic,menos,20.5,0.6243,0.5366,1.727,True,aprendida
 2026-10-14 09:04,12170896,Itf Men Singles,M15 Offenbach,L. G. Verwerft,J. Sels,menos,22.5,0.6334,0.5147,1.8,True,aprendida
 2026-10-14 09:17,12170779,Itf Men Singles,M25 Santa Margherita di Pula 10,B. Djuric,J. Nikles,menos,21.5,0.5992,0.4853,1.909,True,aprendida
+2026-10-14 09:21,12170726,Wta Singles,Wuhan,K. Volynets,H. Guo,menos,29.5,0.6485,0.5767,1.615,True,actual
