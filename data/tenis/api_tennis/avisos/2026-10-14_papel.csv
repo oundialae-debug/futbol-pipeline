@@ -85,3 +85,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-14 09:42,12170896,Itf Men Singles,M15 Offenbach,L. G. Verwerft,J. Sels,menos,18.5,0.6181,0.5767,1.615,True,actual
 2026-10-14 09:48,12170453,Challenger Men Singles,Catania (Italy) - Qualification,I. Almazan Valiente,F. Gill,menos,19.5,0.7018,0.5889,1.571,True,actual
 2026-10-14 09:48,12170786,Itf Men Singles,M25 Santa Margherita di Pula 10,T. Compagnucci,P. Basile,menos,16.5,0.6591,0.5767,1.615,True,actual
+2026-10-14 09:52,12170285,Atp Singles,Shanghai,D. Medvedev,S. Tsitsipas,menos,22.5,0.5621,0.4853,1.909,True,aprendida
