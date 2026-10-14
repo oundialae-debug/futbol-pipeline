@@ -144,3 +144,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-14 12:37,12170371,Challenger Women Singles,Rovereto,G. Knutson,S. Bandecchi,menos,21.5,0.7091,0.7091,1.333,True,casa65
 2026-10-14 12:37,12170800,Challenger Women Singles,Mallorca,J. Grabher,L. Encheva,menos,31.5,0.6898,0.5576,1.666,True,actual
 2026-10-14 12:41,12170796,Challenger Men Singles,Catania (Italy) - Qualification,B. Gadamauri,E. Dalla Valle,menos,17.5,0.6681,0.5767,1.615,True,actual
+2026-10-14 13:07,12170766,Challenger Men Singles,Olbia,M. Mmoh,D. Rincon,menos,22.5,0.6519,0.5366,1.727,True,aprendida
