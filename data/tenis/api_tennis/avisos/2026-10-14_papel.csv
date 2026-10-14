@@ -6,3 +6,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-14 01:13,12170590,Challenger Men Singles,Santa Cruz 2,T. Seyboth Wild,M. Alves,menos,17.5,0.645,0.5767,1.615,True,actual
 2026-10-14 01:37,12170034,Challenger Men Singles,Santa Cruz 2,G. Villanueva,C. M. Zarate,menos,19.5,0.7285,0.5576,1.666,True,actual
 2026-10-14 01:43,12170590,Challenger Men Singles,Santa Cruz 2,T. Seyboth Wild,M. Alves,menos,19.5,0.8642,0.8642,1.1,True,casa65
+2026-10-14 01:52,12170034,Challenger Men Singles,Santa Cruz 2,G. Villanueva,C. M. Zarate,menos,19.5,0.75,0.75,1.25,True,casa65
