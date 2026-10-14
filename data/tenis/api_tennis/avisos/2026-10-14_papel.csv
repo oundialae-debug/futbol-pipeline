@@ -181,3 +181,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-14 15:51,12170746,Challenger Women Singles,Rovereto,J. Teichmann,L. Bronzetti,menos,23.5,0.7671,0.6451,1.444,True,actual
 2026-10-14 15:54,12170746,Challenger Women Singles,Rovereto,J. Teichmann,L. Bronzetti,menos,22.5,0.6627,0.6627,1.4,True,casa65
 2026-10-14 16:03,12171004,Challenger Men Singles,Olbia,L. Nardi,L. Carboni,menos,18.5,0.6497,0.5889,1.571,True,actual
+2026-10-14 16:09,12170873,Challenger Women Singles,Rovereto,H. Tan,L. Stefanini,menos,21.5,0.6467,0.5147,1.8,True,aprendida
