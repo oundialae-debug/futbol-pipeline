@@ -159,3 +159,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-14 13:58,12170867,Challenger Men Singles,Maia,L. Giustino,M. Vrbensky,menos,22.5,0.6166,0.5147,1.8,True,aprendida
 2026-10-14 13:58,12170897,Itf Men Singles,M15 Offenbach,M. Agwi,L. Rossi,menos,34.5,0.7149,0.5767,1.615,True,aprendida
 2026-10-14 13:59,12170897,Itf Men Singles,M15 Offenbach,M. Agwi,L. Rossi,menos,34.5,0.7007,0.5576,1.666,True,actual
+2026-10-14 14:02,12170796,Challenger Men Singles,Catania (Italy) - Qualification,B. Gadamauri,E. Dalla Valle,menos,25.5,0.5063,0.3923,2.375,True,aprendida
