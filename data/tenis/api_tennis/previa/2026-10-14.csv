@@ -308,8 +308,8 @@ hora,event_key,tipo,torneo,superficie,jugador1,jugador2,mejor_de,p_saque1,p_saqu
 2026-10-14 10:23,12170489,Itf Women Singles,W50 Stara Zagora (Bulgaria),Clay,A. Fita Boluda,V. Veleva,3,0.485,0.5,0.4201,0.9279,15.5,0.9631,0.6036,1.55,2.36,0,24.07,0.968
 2026-10-14 10:23,12170489,Itf Women Singles,W50 Stara Zagora (Bulgaria),Clay,A. Fita Boluda,V. Veleva,3,0.485,0.5,0.4201,0.9279,16.5,0.9201,0.4523,2.01,1.66,1,24.07,0.9288
 2026-10-14 10:23,12170489,Itf Women Singles,W50 Stara Zagora (Bulgaria),Clay,A. Fita Boluda,V. Veleva,3,0.485,0.5,0.4201,0.9279,17.5,0.8599,0.4523,2.01,1.66,0,24.07,0.8681
-2026-10-14 15:14,12170491,Itf Women Singles,W50 Stara Zagora (Bulgaria),Clay,A. Karatancheva,A. Kovackova,3,0.4375,0.6,0.0152,0.0926,15.5,0.7207,0.5209,1.83,1.99,1,18.23,0.2046
-2026-10-14 15:14,12170491,Itf Women Singles,W50 Stara Zagora (Bulgaria),Clay,A. Karatancheva,A. Kovackova,3,0.4375,0.6,0.0152,0.0926,16.5,0.5705,0.4313,2.11,1.6,0,18.23,0.0943
+2026-10-14 19:23,12170491,Itf Women Singles,W50 Stara Zagora (Bulgaria),Clay,A. Karatancheva,A. Kovackova,3,0.4375,0.6,0.0152,0.0926,15.5,0.7207,0.5209,1.83,1.99,1,18.23,0.2046
+2026-10-14 19:23,12170491,Itf Women Singles,W50 Stara Zagora (Bulgaria),Clay,A. Karatancheva,A. Kovackova,3,0.4375,0.6,0.0152,0.0926,16.5,0.5705,0.4332,2.0999999999999996,1.605,0,18.23,0.0943
 2026-10-14 10:23,12170492,Itf Women Singles,W50 Stara Zagora (Bulgaria),Clay,C. Martinez Cirez,L. Petruzelova,3,0.5275,0.5025000000000001,0.6315,0.6108,20.5,0.6474,0.5169,1.7850000000000001,1.91,1,23.94,0.6058
 2026-10-14 10:23,12170492,Itf Women Singles,W50 Stara Zagora (Bulgaria),Clay,C. Martinez Cirez,L. Petruzelova,3,0.5275,0.5025000000000001,0.6315,0.6108,21.5,0.5977,0.4811,1.92,1.78,0,23.94,0.5545
 2026-10-14 10:23,12170492,Itf Women Singles,W50 Stara Zagora (Bulgaria),Clay,C. Martinez Cirez,L. Petruzelova,3,0.5275,0.5025000000000001,0.6315,0.6108,22.5,0.5352,0.4164,2.2,1.57,0,23.94,0.4923
@@ -368,49 +368,49 @@ hora,event_key,tipo,torneo,superficie,jugador1,jugador2,mejor_de,p_saque1,p_saqu
 2026-10-14 15:14,12170649,Itf Women Singles,"W100 Edmond, OK",Hard,J. Pareja,E. Mandlik,3,0.55,0.5675,0.4082,0.7264,21.5,0.6194,0.4433,2.085,1.66,0,24.31,0.58
 2026-10-14 15:14,12170649,Itf Women Singles,"W100 Edmond, OK",Hard,J. Pareja,E. Mandlik,3,0.55,0.5675,0.4082,0.7264,22.5,0.5541,0.3805,2.41,1.48,0,24.31,0.5182
 2026-10-14 15:14,12170649,Itf Women Singles,"W100 Edmond, OK",Hard,J. Pareja,E. Mandlik,3,0.55,0.5675,0.4082,0.7264,23.5,0.5093,0.3424,2.67,1.39,0,24.31,0.4772
-2026-10-14 15:14,12170650,Itf Women Singles,"W100 Edmond, OK",Hard,N. Podoroska,V. Lepchenko,3,0.605,0.5675,0.6878,0.6518,20.5,0.6581,0.5517,1.69,2.08,0,24.23,0.5245
-2026-10-14 15:14,12170650,Itf Women Singles,"W100 Edmond, OK",Hard,N. Podoroska,V. Lepchenko,3,0.605,0.5675,0.6878,0.6518,21.5,0.6065,0.4918,1.86,1.8,1,24.23,0.4732
-2026-10-14 15:14,12170650,Itf Women Singles,"W100 Edmond, OK",Hard,N. Podoroska,V. Lepchenko,3,0.605,0.5675,0.6878,0.6518,22.5,0.5381,0.4361,2.14,1.6549999999999998,0,24.23,0.4159
-2026-10-14 15:14,12170650,Itf Women Singles,"W100 Edmond, OK",Hard,N. Podoroska,V. Lepchenko,3,0.605,0.5675,0.6878,0.6518,23.5,0.4908,0.3969,2.31,1.52,0,24.23,0.3796
-2026-10-14 15:14,12170650,Itf Women Singles,"W100 Edmond, OK",Hard,N. Podoroska,V. Lepchenko,3,0.605,0.5675,0.6878,0.6518,24.5,0.4694,0.3744,2.44,1.46,0,24.23,0.3534
-2026-10-14 15:14,12170651,Itf Women Singles,"W35 Redding, CA",Hard,D. Cherubini,C. McNeil,3,0.5825,0.58,0.5131,0.6526,19.5,0.757,0.5677,1.66,2.18,0,24.66,0.7273
-2026-10-14 15:14,12170651,Itf Women Singles,"W35 Redding, CA",Hard,D. Cherubini,C. McNeil,3,0.5825,0.58,0.5131,0.6526,20.5,0.6904,0.4918,1.86,1.8,1,24.66,0.6642
-2026-10-14 15:14,12170651,Itf Women Singles,"W35 Redding, CA",Hard,D. Cherubini,C. McNeil,3,0.5825,0.58,0.5131,0.6526,21.5,0.6405,0.4488,2.1,1.71,0,24.66,0.6149
-2026-10-14 15:14,12170653,Itf Women Singles,"W35 Redding, CA",Hard,F. Pace,A. Zucchini,3,0.5675,0.5775,0.4476,0.6501,19.5,0.7484,0.5733,1.63,2.19,0,24.53,0.7167
-2026-10-14 15:14,12170653,Itf Women Singles,"W35 Redding, CA",Hard,F. Pace,A. Zucchini,3,0.5675,0.5775,0.4476,0.6501,20.5,0.6824,0.4986,1.835,1.8250000000000002,1,24.53,0.6534
-2026-10-14 15:14,12170653,Itf Women Singles,"W35 Redding, CA",Hard,F. Pace,A. Zucchini,3,0.5675,0.5775,0.4476,0.6501,21.5,0.6324,0.4601,2.03,1.73,0,24.53,0.6038
-2026-10-14 15:14,12170654,Itf Women Singles,"W35 Redding, CA",Hard,B. Passola,E. Cayetano,3,0.585,0.5700000000000001,0.5781,0.3836,19.5,0.7488,0.5379,1.7349999999999999,2.02,0,24.54,0.7042
-2026-10-14 15:14,12170654,Itf Women Singles,"W35 Redding, CA",Hard,B. Passola,E. Cayetano,3,0.585,0.5700000000000001,0.5781,0.3836,20.5,0.6821,0.4986,1.83,1.82,1,24.54,0.6402
-2026-10-14 15:14,12170654,Itf Women Singles,"W35 Redding, CA",Hard,B. Passola,E. Cayetano,3,0.585,0.5700000000000001,0.5781,0.3836,21.5,0.632,0.445,2.12,1.7,0,24.54,0.5902
+2026-10-14 19:23,12170650,Itf Women Singles,"W100 Edmond, OK",Hard,N. Podoroska,V. Lepchenko,3,0.605,0.5675,0.6878,0.6651,20.5,0.6581,0.5205,1.75,1.9,1,24.23,0.5245
+2026-10-14 19:23,12170650,Itf Women Singles,"W100 Edmond, OK",Hard,N. Podoroska,V. Lepchenko,3,0.605,0.5675,0.6878,0.6651,21.5,0.6065,0.474,1.92,1.73,0,24.23,0.4732
+2026-10-14 19:23,12170650,Itf Women Singles,"W100 Edmond, OK",Hard,N. Podoroska,V. Lepchenko,3,0.605,0.5675,0.6878,0.6651,22.5,0.5381,0.4361,2.14,1.6549999999999998,0,24.23,0.4159
+2026-10-14 19:23,12170650,Itf Women Singles,"W100 Edmond, OK",Hard,N. Podoroska,V. Lepchenko,3,0.605,0.5675,0.6878,0.6651,23.5,0.4908,0.3969,2.31,1.52,0,24.23,0.3796
+2026-10-14 19:23,12170650,Itf Women Singles,"W100 Edmond, OK",Hard,N. Podoroska,V. Lepchenko,3,0.605,0.5675,0.6878,0.6651,24.5,0.4694,0.3744,2.44,1.46,0,24.23,0.3534
+2026-10-14 19:23,12170651,Itf Women Singles,"W35 Redding, CA",Hard,D. Cherubini,C. McNeil,3,0.5825,0.58,0.5131,0.6329,19.5,0.757,0.567,1.68,2.2,0,24.66,0.7273
+2026-10-14 19:23,12170651,Itf Women Singles,"W35 Redding, CA",Hard,D. Cherubini,C. McNeil,3,0.5825,0.58,0.5131,0.6329,20.5,0.6904,0.4945,1.85,1.81,1,24.66,0.6642
+2026-10-14 19:23,12170651,Itf Women Singles,"W35 Redding, CA",Hard,D. Cherubini,C. McNeil,3,0.5825,0.58,0.5131,0.6329,21.5,0.6405,0.4479,2.12,1.72,0,24.66,0.6149
+2026-10-14 19:23,12170653,Itf Women Singles,"W35 Redding, CA",Hard,F. Pace,A. Zucchini,3,0.5675,0.5775,0.4476,0.6501,19.5,0.7484,0.5733,1.66,2.23,0,24.53,0.7167
+2026-10-14 19:23,12170653,Itf Women Singles,"W35 Redding, CA",Hard,F. Pace,A. Zucchini,3,0.5675,0.5775,0.4476,0.6501,20.5,0.6824,0.498,1.845,1.83,1,24.53,0.6534
+2026-10-14 19:23,12170653,Itf Women Singles,"W35 Redding, CA",Hard,F. Pace,A. Zucchini,3,0.5675,0.5775,0.4476,0.6501,21.5,0.6324,0.4595,2.07,1.76,0,24.53,0.6038
+2026-10-14 19:23,12170654,Itf Women Singles,"W35 Redding, CA",Hard,B. Passola,E. Cayetano,3,0.585,0.5700000000000001,0.5781,0.3836,19.5,0.7488,0.5385,1.74,2.03,0,24.54,0.7042
+2026-10-14 19:23,12170654,Itf Women Singles,"W35 Redding, CA",Hard,B. Passola,E. Cayetano,3,0.585,0.5700000000000001,0.5781,0.3836,20.5,0.6821,0.4986,1.83,1.82,1,24.54,0.6402
+2026-10-14 19:23,12170654,Itf Women Singles,"W35 Redding, CA",Hard,B. Passola,E. Cayetano,3,0.585,0.5700000000000001,0.5781,0.3836,21.5,0.632,0.4442,2.14,1.71,0,24.54,0.5902
 2026-10-14 15:14,12170655,Itf Women Singles,"W35 Redding, CA",Hard,L. Reed,A. Bulatova,3,0.555,0.56,0.4735,0.6585,18.5,0.8115,0.5861,1.61,2.28,0,24.4,0.7936
 2026-10-14 15:14,12170655,Itf Women Singles,"W35 Redding, CA",Hard,L. Reed,A. Bulatova,3,0.555,0.56,0.4735,0.6585,19.5,0.7413,0.5123,1.78,1.87,1,24.4,0.724
 2026-10-14 15:14,12170655,Itf Women Singles,"W35 Redding, CA",Hard,L. Reed,A. Bulatova,3,0.555,0.56,0.4735,0.6585,20.5,0.6765,0.4588,2.035,1.725,0,24.4,0.6612
-2026-10-14 15:14,12170671,Challenger Men Singles,Santa Cruz 2,Clay,R. Pacheco Mendez,H. Dellien,3,0.615,0.645,0.3527,0.3913,17.5,0.9199,0.7918,1.17,4.45,0,25.16,0.8697
-2026-10-14 15:14,12170671,Challenger Men Singles,Santa Cruz 2,Clay,R. Pacheco Mendez,H. Dellien,3,0.615,0.645,0.3527,0.3913,18.5,0.861,0.7281,1.27,3.4,0,25.16,0.7997
-2026-10-14 15:14,12170671,Challenger Men Singles,Santa Cruz 2,Clay,R. Pacheco Mendez,H. Dellien,3,0.615,0.645,0.3527,0.3913,19.5,0.7864,0.6511,1.42,2.65,0,25.16,0.7268
-2026-10-14 15:14,12170671,Challenger Men Singles,Santa Cruz 2,Clay,R. Pacheco Mendez,H. Dellien,3,0.615,0.645,0.3527,0.3913,20.5,0.7139,0.5851,1.56,2.2,0,25.16,0.6597
-2026-10-14 15:14,12170671,Challenger Men Singles,Santa Cruz 2,Clay,R. Pacheco Mendez,H. Dellien,3,0.615,0.645,0.3527,0.3913,21.5,0.6637,0.5335,1.74,1.99,0,25.16,0.609
-2026-10-14 15:14,12170671,Challenger Men Singles,Santa Cruz 2,Clay,R. Pacheco Mendez,H. Dellien,3,0.615,0.645,0.3527,0.3913,22.5,0.5843,0.4757,1.94,1.76,1,25.16,0.5428
-2026-10-14 15:14,12170671,Challenger Men Singles,Santa Cruz 2,Clay,R. Pacheco Mendez,H. Dellien,3,0.615,0.645,0.3527,0.3913,23.5,0.5236,0.4274,2.13,1.59,0,25.16,0.4974
-2026-10-14 15:14,12170671,Challenger Men Singles,Santa Cruz 2,Clay,R. Pacheco Mendez,H. Dellien,3,0.615,0.645,0.3527,0.3913,24.5,0.5098,0.4233,2.18,1.6,0,25.16,0.4734
-2026-10-14 15:14,12170671,Challenger Men Singles,Santa Cruz 2,Clay,R. Pacheco Mendez,H. Dellien,3,0.615,0.645,0.3527,0.3913,25.5,0.4715,0.3907,2.37,1.52,0,25.16,0.4288
-2026-10-14 15:14,12170671,Challenger Men Singles,Santa Cruz 2,Clay,R. Pacheco Mendez,H. Dellien,3,0.615,0.645,0.3527,0.3913,26.5,0.4216,0.3489,2.65,1.42,0,25.16,0.3792
-2026-10-14 15:14,12170671,Challenger Men Singles,Santa Cruz 2,Clay,R. Pacheco Mendez,H. Dellien,3,0.615,0.645,0.3527,0.3913,27.5,0.3832,0.314,2.95,1.35,0,25.16,0.3317
-2026-10-14 15:14,12170671,Challenger Men Singles,Santa Cruz 2,Clay,R. Pacheco Mendez,H. Dellien,3,0.615,0.645,0.3527,0.3913,28.5,0.3368,0.2765,3.35,1.28,0,25.16,0.2793
-2026-10-14 15:14,12170671,Challenger Men Singles,Santa Cruz 2,Clay,R. Pacheco Mendez,H. Dellien,3,0.615,0.645,0.3527,0.3913,29.5,0.287,0.2368,3.9,1.21,0,25.16,0.225
-2026-10-14 15:14,12170671,Challenger Men Singles,Santa Cruz 2,Clay,R. Pacheco Mendez,H. Dellien,3,0.615,0.645,0.3527,0.3913,30.5,0.236,0.1983,4.65,1.15,0,25.16,0.1726
-2026-10-14 15:14,12170671,Challenger Men Singles,Santa Cruz 2,Clay,R. Pacheco Mendez,H. Dellien,3,0.615,0.645,0.3527,0.3913,31.5,0.1789,0.1594,5.8,1.1,0,25.16,0.124
+2026-10-14 19:23,12170671,Challenger Men Singles,Santa Cruz 2,Clay,R. Pacheco Mendez,H. Dellien,3,0.615,0.645,0.3527,0.3846,17.5,0.9199,0.7899,1.17,4.4,0,25.16,0.8697
+2026-10-14 19:23,12170671,Challenger Men Singles,Santa Cruz 2,Clay,R. Pacheco Mendez,H. Dellien,3,0.615,0.645,0.3527,0.3846,18.5,0.861,0.7235,1.28,3.35,0,25.16,0.7997
+2026-10-14 19:23,12170671,Challenger Men Singles,Santa Cruz 2,Clay,R. Pacheco Mendez,H. Dellien,3,0.615,0.645,0.3527,0.3846,19.5,0.7864,0.6511,1.42,2.65,0,25.16,0.7268
+2026-10-14 19:23,12170671,Challenger Men Singles,Santa Cruz 2,Clay,R. Pacheco Mendez,H. Dellien,3,0.615,0.645,0.3527,0.3846,20.5,0.7139,0.5829,1.56,2.18,0,25.16,0.6597
+2026-10-14 19:23,12170671,Challenger Men Singles,Santa Cruz 2,Clay,R. Pacheco Mendez,H. Dellien,3,0.615,0.645,0.3527,0.3846,21.5,0.6637,0.5324,1.73,1.97,0,25.16,0.609
+2026-10-14 19:23,12170671,Challenger Men Singles,Santa Cruz 2,Clay,R. Pacheco Mendez,H. Dellien,3,0.615,0.645,0.3527,0.3846,22.5,0.5843,0.4759,1.96,1.78,1,25.16,0.5428
+2026-10-14 19:23,12170671,Challenger Men Singles,Santa Cruz 2,Clay,R. Pacheco Mendez,H. Dellien,3,0.615,0.645,0.3527,0.3846,23.5,0.5236,0.4274,2.13,1.59,0,25.16,0.4974
+2026-10-14 19:23,12170671,Challenger Men Singles,Santa Cruz 2,Clay,R. Pacheco Mendez,H. Dellien,3,0.615,0.645,0.3527,0.3846,24.5,0.5098,0.4211,2.2,1.6,0,25.16,0.4734
+2026-10-14 19:23,12170671,Challenger Men Singles,Santa Cruz 2,Clay,R. Pacheco Mendez,H. Dellien,3,0.615,0.645,0.3527,0.3846,25.5,0.4715,0.3907,2.37,1.52,0,25.16,0.4288
+2026-10-14 19:23,12170671,Challenger Men Singles,Santa Cruz 2,Clay,R. Pacheco Mendez,H. Dellien,3,0.615,0.645,0.3527,0.3846,26.5,0.4216,0.3489,2.65,1.42,0,25.16,0.3792
+2026-10-14 19:23,12170671,Challenger Men Singles,Santa Cruz 2,Clay,R. Pacheco Mendez,H. Dellien,3,0.615,0.645,0.3527,0.3846,27.5,0.3832,0.314,2.95,1.35,0,25.16,0.3317
+2026-10-14 19:23,12170671,Challenger Men Singles,Santa Cruz 2,Clay,R. Pacheco Mendez,H. Dellien,3,0.615,0.645,0.3527,0.3846,28.5,0.3368,0.2765,3.35,1.28,0,25.16,0.2793
+2026-10-14 19:23,12170671,Challenger Men Singles,Santa Cruz 2,Clay,R. Pacheco Mendez,H. Dellien,3,0.615,0.645,0.3527,0.3846,29.5,0.287,0.2345,3.95,1.21,0,25.16,0.225
+2026-10-14 19:23,12170671,Challenger Men Singles,Santa Cruz 2,Clay,R. Pacheco Mendez,H. Dellien,3,0.615,0.645,0.3527,0.3846,30.5,0.236,0.1966,4.7,1.15,0,25.16,0.1726
+2026-10-14 19:23,12170671,Challenger Men Singles,Santa Cruz 2,Clay,R. Pacheco Mendez,H. Dellien,3,0.615,0.645,0.3527,0.3846,31.5,0.1789,0.1594,5.8,1.1,0,25.16,0.124
 2026-10-14 15:14,12170685,Itf Men Singles,"M25 Austin, TX",Hard,M. Antonius,A. Fenty,3,0.6425,0.655,0.4386,0.5325,20.5,0.7549,0.5622,1.69,2.17,0,25.83,0.7085
 2026-10-14 15:14,12170685,Itf Men Singles,"M25 Austin, TX",Hard,M. Antonius,A. Fenty,3,0.6425,0.655,0.4386,0.5325,21.5,0.7079,0.5055,1.8,1.84,1,25.83,0.6587
 2026-10-14 15:14,12170685,Itf Men Singles,"M25 Austin, TX",Hard,M. Antonius,A. Fenty,3,0.6425,0.655,0.4386,0.5325,22.5,0.6227,0.4378,2.17,1.69,0,25.83,0.5851
 2026-10-14 15:14,12170687,Itf Men Singles,"M25 Austin, TX",Hard,S. Mitsui,M. Krueger,3,0.625,0.625,0.5,0.3427,20.5,0.7289,0.5151,1.77,1.88,1,25.37,0.6931
 2026-10-14 15:14,12170687,Itf Men Singles,"M25 Austin, TX",Hard,S. Mitsui,M. Krueger,3,0.625,0.625,0.5,0.3427,21.5,0.68,0.4746,1.9649999999999999,1.775,0,25.37,0.6432
 2026-10-14 15:14,12170687,Itf Men Singles,"M25 Austin, TX",Hard,S. Mitsui,M. Krueger,3,0.625,0.625,0.5,0.3427,22.5,0.6022,0.4274,2.17,1.62,0,25.37,0.5743
-2026-10-14 15:14,12170688,Itf Men Singles,"M25 Austin, TX",Hard,R. Pascual Ferra,T. Berkieta,3,0.6275000000000001,0.5975,0.6495,0.6959,19.5,0.7653,0.5288,1.72,1.93,1,24.82,0.7286
-2026-10-14 15:14,12170688,Itf Men Singles,"M25 Austin, TX",Hard,R. Pascual Ferra,T. Berkieta,3,0.6275000000000001,0.5975,0.6495,0.6959,20.5,0.6942,0.4672,1.95,1.71,0,24.82,0.6613
-2026-10-14 15:14,12170689,Itf Men Singles,"M25 Austin, TX",Hard,T. Zink,B. Willwerth,3,0.67,0.6325000000000001,0.6781,0.6124,20.5,0.7324,0.5567,1.68,2.11,0,25.49,0.6809
-2026-10-14 15:14,12170689,Itf Men Singles,"M25 Austin, TX",Hard,T. Zink,B. Willwerth,3,0.67,0.6325000000000001,0.6781,0.6124,21.5,0.6831,0.5233,1.74,1.91,1,25.49,0.6293
-2026-10-14 15:14,12170689,Itf Men Singles,"M25 Austin, TX",Hard,T. Zink,B. Willwerth,3,0.67,0.6325000000000001,0.6781,0.6124,22.5,0.5962,0.4605,2.05,1.75,0,25.49,0.5553
+2026-10-14 19:23,12170688,Itf Men Singles,"M25 Austin, TX",Hard,R. Pascual Ferra,T. Berkieta,3,0.6275000000000001,0.5975,0.6495,0.6963,19.5,0.7653,0.5328,1.71,1.95,1,24.82,0.7286
+2026-10-14 19:23,12170688,Itf Men Singles,"M25 Austin, TX",Hard,R. Pascual Ferra,T. Berkieta,3,0.6275000000000001,0.5975,0.6495,0.6963,20.5,0.6942,0.4672,1.95,1.71,0,24.82,0.6613
+2026-10-14 19:23,12170689,Itf Men Singles,"M25 Austin, TX",Hard,T. Zink,B. Willwerth,3,0.67,0.6325000000000001,0.6781,0.6149,20.5,0.7324,0.5567,1.68,2.11,0,25.49,0.6809
+2026-10-14 19:23,12170689,Itf Men Singles,"M25 Austin, TX",Hard,T. Zink,B. Willwerth,3,0.67,0.6325000000000001,0.6781,0.6149,21.5,0.6831,0.526,1.73,1.92,1,25.49,0.6293
+2026-10-14 19:23,12170689,Itf Men Singles,"M25 Austin, TX",Hard,T. Zink,B. Willwerth,3,0.67,0.6325000000000001,0.6781,0.6149,22.5,0.5962,0.4595,2.07,1.76,0,25.49,0.5553
 2026-10-14 10:23,12170691,Itf Women Singles,W50 Quebec City (Canada),Hard,A. Arseneault,J. Mikulskyte,3,0.5650000000000001,0.5675,0.4868,0.4898,20.5,0.6814,0.5137,1.77,1.87,1,24.49,0.6636
 2026-10-14 10:23,12170691,Itf Women Singles,W50 Quebec City (Canada),Hard,A. Arseneault,J. Mikulskyte,3,0.5650000000000001,0.5675,0.4868,0.4898,21.5,0.6316,0.4651,1.9949999999999999,1.7349999999999999,0,24.49,0.6143
 2026-10-14 10:23,12170691,Itf Women Singles,W50 Quebec City (Canada),Hard,A. Arseneault,J. Mikulskyte,3,0.5650000000000001,0.5675,0.4868,0.4898,22.5,0.5652,0.416,2.225,1.585,0,24.49,0.5513
@@ -894,9 +894,9 @@ hora,event_key,tipo,torneo,superficie,jugador1,jugador2,mejor_de,p_saque1,p_saqu
 2026-10-14 15:14,12170841,Itf Women Singles,W35 Heraklion 2,Clay,S. Auer,M. Buchnik,3,0.46,0.515,0.23,0.25,18.5,0.7254,0.5328,1.71,1.95,0,23.08,0.5851
 2026-10-14 15:14,12170841,Itf Women Singles,W35 Heraklion 2,Clay,S. Auer,M. Buchnik,3,0.46,0.515,0.23,0.25,19.5,0.6497,0.4986,1.83,1.82,1,23.08,0.4974
 2026-10-14 15:14,12170841,Itf Women Singles,W35 Heraklion 2,Clay,S. Auer,M. Buchnik,3,0.46,0.515,0.23,0.25,20.5,0.5839,0.4278,2.22,1.66,0,23.08,0.4243
-2026-10-14 15:14,12170842,Itf Women Singles,W35 Heraklion 2,Clay,L. Fojcik,C. Pikkaart,3,0.5325,0.495,0.6928,0.3547,18.5,0.7631,0.5857,1.62,2.29,0,23.65,0.6827
-2026-10-14 15:14,12170842,Itf Women Singles,W35 Heraklion 2,Clay,L. Fojcik,C. Pikkaart,3,0.5325,0.495,0.6928,0.3547,19.5,0.6904,0.5093,1.8399999999999999,1.91,1,23.65,0.6022
-2026-10-14 15:14,12170842,Itf Women Singles,W35 Heraklion 2,Clay,L. Fojcik,C. Pikkaart,3,0.5325,0.495,0.6928,0.3547,20.5,0.626,0.4635,2.02,1.745,0,23.65,0.533
+2026-10-14 19:23,12170842,Itf Women Singles,W35 Heraklion 2,Clay,L. Fojcik,C. Pikkaart,3,0.5325,0.495,0.6928,0.3627,18.5,0.7631,0.5857,1.62,2.29,0,23.65,0.6827
+2026-10-14 19:23,12170842,Itf Women Singles,W35 Heraklion 2,Clay,L. Fojcik,C. Pikkaart,3,0.5325,0.495,0.6928,0.3627,19.5,0.6904,0.4948,1.93,1.89,1,23.65,0.6022
+2026-10-14 19:23,12170842,Itf Women Singles,W35 Heraklion 2,Clay,L. Fojcik,C. Pikkaart,3,0.5325,0.495,0.6928,0.3627,20.5,0.626,0.4635,2.02,1.745,0,23.65,0.533
 2026-10-14 15:14,12170843,Itf Women Singles,W35 Heraklion 2,Clay,S. Kryvoruchko,S. Jurina,3,0.4975,0.53,0.3311,0.5075,18.5,0.7714,0.6055,1.57,2.41,0,23.77,0.7042
 2026-10-14 15:14,12170843,Itf Women Singles,W35 Heraklion 2,Clay,S. Kryvoruchko,S. Jurina,3,0.4975,0.53,0.3311,0.5075,19.5,0.6995,0.5223,1.82,1.99,1,23.77,0.6252
 2026-10-14 15:14,12170843,Itf Women Singles,W35 Heraklion 2,Clay,S. Kryvoruchko,S. Jurina,3,0.4975,0.53,0.3311,0.5075,20.5,0.6354,0.4491,2.11,1.72,0,23.77,0.5566
@@ -1047,9 +1047,9 @@ hora,event_key,tipo,torneo,superficie,jugador1,jugador2,mejor_de,p_saque1,p_saqu
 2026-10-14 05:26,12170958,Itf Women Singles,W35 Birmingham 2 (United Kingdom),Hard,E. Malygina,M. Aikawa,3,0.63,0.5325,0.8986,0.8637,17.5,0.7387,0.5707,1.64,2.18,0,21.82,0.3095
 2026-10-14 05:26,12170958,Itf Women Singles,W35 Birmingham 2 (United Kingdom),Hard,E. Malygina,M. Aikawa,3,0.63,0.5325,0.8986,0.8637,18.5,0.6407,0.4863,1.87,1.77,1,21.82,0.2225
 2026-10-14 05:26,12170958,Itf Women Singles,W35 Birmingham 2 (United Kingdom),Hard,E. Malygina,M. Aikawa,3,0.63,0.5325,0.8986,0.8637,19.5,0.5534,0.4021,2.32,1.56,0,21.82,0.1624
-2026-10-14 15:14,12170992,Itf Men Singles,M15 Maringa 3 (Brazil),Clay,N. Zanellato,H. J. Escurra Isnardi,3,0.625,0.605,0.6008,0.6683,19.5,0.779,0.5881,1.59,2.27,0,25.04,0.7427
-2026-10-14 15:14,12170992,Itf Men Singles,M15 Maringa 3 (Brazil),Clay,N. Zanellato,H. J. Escurra Isnardi,3,0.625,0.605,0.6008,0.6683,20.5,0.7087,0.5137,1.77,1.87,1,25.04,0.6759
-2026-10-14 15:14,12170992,Itf Men Singles,M15 Maringa 3 (Brazil),Clay,N. Zanellato,H. J. Escurra Isnardi,3,0.625,0.605,0.6008,0.6683,21.5,0.6587,0.466,2.04,1.78,0,25.04,0.6256
+2026-10-14 19:23,12170992,Itf Men Singles,M15 Maringa 3 (Brazil),Clay,N. Zanellato,H. J. Escurra Isnardi,3,0.625,0.605,0.6008,0.6735,19.5,0.779,0.5881,1.59,2.27,0,25.04,0.7427
+2026-10-14 19:23,12170992,Itf Men Singles,M15 Maringa 3 (Brazil),Clay,N. Zanellato,H. J. Escurra Isnardi,3,0.625,0.605,0.6008,0.6735,20.5,0.7087,0.5137,1.77,1.87,1,25.04,0.6759
+2026-10-14 19:23,12170992,Itf Men Singles,M15 Maringa 3 (Brazil),Clay,N. Zanellato,H. J. Escurra Isnardi,3,0.625,0.605,0.6008,0.6735,21.5,0.6587,0.466,2.04,1.78,0,25.04,0.6256
 2026-10-14 10:23,12170997,Itf Men Singles,M15 Maringa 3 (Brazil),Clay,G. Roveri Sidney,D. Klok,3,0.5625,0.64,0.1588,0.2435,18.5,0.7307,0.5917,1.58,2.29,0,23.05,0.6853
 2026-10-14 10:23,12170997,Itf Men Singles,M15 Maringa 3 (Brazil),Clay,G. Roveri Sidney,D. Klok,3,0.5625,0.64,0.1588,0.2435,19.5,0.6452,0.526,1.73,1.92,1,23.05,0.6034
 2026-10-14 10:23,12170997,Itf Men Singles,M15 Maringa 3 (Brazil),Clay,G. Roveri Sidney,D. Klok,3,0.5625,0.64,0.1588,0.2435,20.5,0.5683,0.474,1.92,1.73,0,23.05,0.5326
@@ -1071,9 +1071,9 @@ hora,event_key,tipo,torneo,superficie,jugador1,jugador2,mejor_de,p_saque1,p_saqu
 2026-10-14 05:26,12171005,Itf Men Singles,M15 Offenbach,Hard,Y. Kelm,C. Mueller,3,0.65,0.6175,0.6583,0.5985,20.5,0.7152,0.5219,1.745,1.9049999999999998,0,25.19,0.6729
 2026-10-14 05:26,12171005,Itf Men Singles,M15 Offenbach,Hard,Y. Kelm,C. Mueller,3,0.65,0.6175,0.6583,0.5985,21.5,0.6649,0.4863,1.87,1.77,1,25.19,0.6216
 2026-10-14 05:26,12171005,Itf Men Singles,M15 Offenbach,Hard,Y. Kelm,C. Mueller,3,0.65,0.6175,0.6583,0.5985,22.5,0.5843,0.4395,2.13,1.67,0,25.19,0.5516
-2026-10-14 15:14,12171006,Itf Men Singles,M15 Offenbach,Hard,G. Hussey,F. Thomas,3,0.6675,0.5650000000000001,0.9039,0.7082,19.5,0.5861,0.5795,1.64,2.26,0,22.22,0.5295
-2026-10-14 15:14,12171006,Itf Men Singles,M15 Offenbach,Hard,G. Hussey,F. Thomas,3,0.6675,0.5650000000000001,0.9039,0.7082,20.5,0.5032,0.519,1.77,1.91,1,22.22,0.4555
-2026-10-14 15:14,12171006,Itf Men Singles,M15 Offenbach,Hard,G. Hussey,F. Thomas,3,0.6675,0.5650000000000001,0.9039,0.7082,21.5,0.4449,0.4695,2.0,1.77,0,22.22,0.4019
+2026-10-14 19:23,12171006,Itf Men Singles,M15 Offenbach,Hard,G. Hussey,F. Thomas,3,0.6675,0.5650000000000001,0.9039,0.7082,19.5,0.5861,0.5795,1.64,2.26,0,22.22,0.5295
+2026-10-14 19:23,12171006,Itf Men Singles,M15 Offenbach,Hard,G. Hussey,F. Thomas,3,0.6675,0.5650000000000001,0.9039,0.7082,20.5,0.5032,0.519,1.77,1.91,1,22.22,0.4555
+2026-10-14 19:23,12171006,Itf Men Singles,M15 Offenbach,Hard,G. Hussey,F. Thomas,3,0.6675,0.5650000000000001,0.9039,0.7082,21.5,0.4449,0.4695,2.0,1.77,0,22.22,0.4019
 2026-10-14 10:23,12171008,Itf Women Singles,W15 Maceio (Brazil),Clay,K. Krajmer,C. Melleiro,3,0.5375,0.4875,0.7491,0.7685,18.5,0.7374,0.4764,1.9449999999999998,1.77,0,23.26,0.5978
 2026-10-14 10:23,12171008,Itf Women Singles,W15 Maceio (Brazil),Clay,K. Krajmer,C. Melleiro,3,0.5375,0.4875,0.7491,0.7685,19.5,0.6626,0.5041,1.82,1.85,1,23.26,0.5136
 2026-10-14 10:23,12171010,Itf Women Singles,W15 Maceio (Brazil),Clay,B. Bernardes,R. Pereira,3,0.5425,0.53,0.5664,0.3168,18.5,0.7987,0.5614,1.68,2.15,0,24.2,0.7865
@@ -1112,9 +1112,9 @@ hora,event_key,tipo,torneo,superficie,jugador1,jugador2,mejor_de,p_saque1,p_saqu
 2026-10-14 10:23,12171054,Itf Men Singles,M15 Quito 4,Clay,V. Grippo,I. Dreycopp,3,0.56,0.59,0.3466,0.3474,21.5,0.612,0.4424,2.13,1.69,0,24.26,0.5939
 2026-10-14 15:14,12171055,Itf Men Singles,M15 Quito 4,Clay,D. Bobo,T. McCormick,3,0.5975,0.66,0.2154,0.3043,20.5,0.6472,0.5254,1.775,1.9649999999999999,0,24.2,0.6008
 2026-10-14 15:14,12171055,Itf Men Singles,M15 Quito 4,Clay,D. Bobo,T. McCormick,3,0.5975,0.66,0.2154,0.3043,21.5,0.5925,0.4918,1.86,1.8,1,24.2,0.5471
-2026-10-14 15:14,12171059,Itf Men Singles,M15 Quito 4,Clay,E. Camacho,M. Covato,3,0.685,0.6425,0.6974,0.5974,20.5,0.745,0.5438,1.72,2.05,0,25.7,0.6859
-2026-10-14 15:14,12171059,Itf Men Singles,M15 Quito 4,Clay,E. Camacho,M. Covato,3,0.685,0.6425,0.6974,0.5974,21.5,0.6964,0.489,1.86,1.78,1,25.7,0.6339
-2026-10-14 15:14,12171059,Itf Men Singles,M15 Quito 4,Clay,E. Camacho,M. Covato,3,0.685,0.6425,0.6974,0.5974,22.5,0.6046,0.4219,2.22,1.62,0,25.7,0.5565
+2026-10-14 19:23,12171059,Itf Men Singles,M15 Quito 4,Clay,E. Camacho,M. Covato,3,0.685,0.6425,0.6974,0.5963,20.5,0.745,0.5469,1.74,2.1,0,25.7,0.6859
+2026-10-14 19:23,12171059,Itf Men Singles,M15 Quito 4,Clay,E. Camacho,M. Covato,3,0.685,0.6425,0.6974,0.5963,21.5,0.6964,0.489,1.86,1.78,1,25.7,0.6339
+2026-10-14 19:23,12171059,Itf Men Singles,M15 Quito 4,Clay,E. Camacho,M. Covato,3,0.685,0.6425,0.6974,0.5963,22.5,0.6046,0.4231,2.25,1.65,0,25.7,0.5565
 2026-10-14 05:26,12170557,Itf Men Singles,M25 Luanda,Hard,F. Bax,A. Bajurko,3,0.705,0.61,0.8773,0.9217,17.5,0.8718,0.4933,1.9,1.85,1,23.6,0.8009
 2026-10-14 05:26,12170562,Itf Men Singles,M25 Luanda,Hard,J. Rodrigues,A. Beckley,3,0.59,0.6900000000000001,0.1067,0.0862,16.5,0.9139,0.4933,1.9,1.85,1,22.9,0.8574
 2026-10-14 05:26,12170810,Itf Men Singles,M15 Bol,Clay,N. Lopez,K. Kajin,3,0.6075,0.58,0.6395,0.7368,20.5,0.6804,0.4767,1.91,1.74,1,24.57,0.655
@@ -1230,14 +1230,16 @@ hora,event_key,tipo,torneo,superficie,jugador1,jugador2,mejor_de,p_saque1,p_saqu
 2026-10-14 15:14,12171081,Itf Women Singles,"W100 Edmond, OK",Hard,D. Guzman,C. Dolehide,3,0.5575,0.5975,0.2997,0.2873,21.5,0.5952,0.386,2.37,1.49,0,24.05,0.4547
 2026-10-14 15:14,12171081,Itf Women Singles,"W100 Edmond, OK",Hard,D. Guzman,C. Dolehide,3,0.5575,0.5975,0.2997,0.2873,22.5,0.5284,0.3254,2.82,1.36,0,24.05,0.3986
 2026-10-14 15:14,12171081,Itf Women Singles,"W100 Edmond, OK",Hard,D. Guzman,C. Dolehide,3,0.5575,0.5975,0.2997,0.2873,23.5,0.4828,0.2797,3.27,1.27,0,24.05,0.3634
-2026-10-14 15:14,12171083,Itf Women Singles,"W100 Edmond, OK",Hard,T. Maria,A. Smith,3,0.65,0.5675,0.8548,0.8698,16.5,0.8996,0.6634,1.38,2.72,0,22.97,0.5888
-2026-10-14 15:14,12171083,Itf Women Singles,"W100 Edmond, OK",Hard,T. Maria,A. Smith,3,0.65,0.5675,0.8548,0.8698,17.5,0.8169,0.5422,1.68,1.99,0,22.97,0.4536
-2026-10-14 15:14,12171083,Itf Women Singles,"W100 Edmond, OK",Hard,T. Maria,A. Smith,3,0.65,0.5675,0.8548,0.8698,18.5,0.7278,0.4619,1.975,1.6949999999999998,1,22.97,0.3497
-2026-10-14 15:14,12171083,Itf Women Singles,"W100 Edmond, OK",Hard,T. Maria,A. Smith,3,0.65,0.5675,0.8548,0.8698,19.5,0.6402,0.3824,2.39,1.48,0,22.97,0.2726
-2026-10-14 15:14,12171083,Itf Women Singles,"W100 Edmond, OK",Hard,T. Maria,A. Smith,3,0.65,0.5675,0.8548,0.8698,20.5,0.5613,0.3183,2.87,1.34,0,22.97,0.2156
-2026-10-14 15:14,12171084,Itf Women Singles,"W100 Edmond, OK",Hard,A. Rus,A. Shcherbinina,3,0.5875,0.545,0.7128,0.5564,20.5,0.6342,0.5379,1.77,2.06,0,23.85,0.4867
-2026-10-14 15:14,12171084,Itf Women Singles,"W100 Edmond, OK",Hard,A. Rus,A. Shcherbinina,3,0.5875,0.545,0.7128,0.5564,21.5,0.5827,0.4906,1.9,1.83,1,23.85,0.4361
-2026-10-14 15:14,12171084,Itf Women Singles,"W100 Edmond, OK",Hard,A. Rus,A. Shcherbinina,3,0.5875,0.545,0.7128,0.5564,22.5,0.5177,0.4304,2.21,1.67,0,23.85,0.3813
+2026-10-14 19:23,12171083,Itf Women Singles,"W100 Edmond, OK",Hard,T. Maria,A. Smith,3,0.65,0.5675,0.8548,0.8732,16.5,0.8996,0.6634,1.38,2.72,0,22.97,0.5888
+2026-10-14 19:23,12171083,Itf Women Singles,"W100 Edmond, OK",Hard,T. Maria,A. Smith,3,0.65,0.5675,0.8548,0.8732,17.5,0.8169,0.5422,1.68,1.99,0,22.97,0.4536
+2026-10-14 19:23,12171083,Itf Women Singles,"W100 Edmond, OK",Hard,T. Maria,A. Smith,3,0.65,0.5675,0.8548,0.8732,18.5,0.7278,0.4598,1.98,1.685,1,22.97,0.3497
+2026-10-14 19:23,12171083,Itf Women Singles,"W100 Edmond, OK",Hard,T. Maria,A. Smith,3,0.65,0.5675,0.8548,0.8732,19.5,0.6402,0.3824,2.39,1.48,0,22.97,0.2726
+2026-10-14 19:23,12171083,Itf Women Singles,"W100 Edmond, OK",Hard,T. Maria,A. Smith,3,0.65,0.5675,0.8548,0.8732,20.5,0.5613,0.3183,2.87,1.34,0,22.97,0.2156
+2026-10-14 19:23,12171084,Itf Women Singles,"W100 Edmond, OK",Hard,A. Rus,A. Shcherbinina,3,0.5875,0.545,0.7128,0.5541,20.5,0.6342,0.5445,1.7149999999999999,2.05,0,23.85,0.4867
+2026-10-14 19:23,12171084,Itf Women Singles,"W100 Edmond, OK",Hard,A. Rus,A. Shcherbinina,3,0.5875,0.545,0.7128,0.5541,21.5,0.5827,0.4945,1.84,1.8,1,23.85,0.4361
+2026-10-14 19:23,12171084,Itf Women Singles,"W100 Edmond, OK",Hard,A. Rus,A. Shcherbinina,3,0.5875,0.545,0.7128,0.5541,22.5,0.5177,0.4278,2.1799999999999997,1.63,0,23.85,0.3813
+2026-10-14 19:23,12171084,Itf Women Singles,"W100 Edmond, OK",Hard,A. Rus,A. Shcherbinina,3,0.5875,0.545,0.7128,0.5541,23.5,0.4739,0.3789,2.41,1.47,0,23.85,0.3471
+2026-10-14 19:23,12171084,Itf Women Singles,"W100 Edmond, OK",Hard,A. Rus,A. Shcherbinina,3,0.5875,0.545,0.7128,0.5541,24.5,0.4497,0.3559,2.57,1.42,0,23.85,0.3213
 2026-10-14 15:14,12171085,Itf Women Singles,"W100 Edmond, OK",Hard,V. Strakhova,M. Rapolu,3,0.515,0.6,0.1301,0.1326,16.5,0.8425,0.693,1.32,2.98,0,22.1,0.5372
 2026-10-14 15:14,12171085,Itf Women Singles,"W100 Edmond, OK",Hard,V. Strakhova,M. Rapolu,3,0.515,0.6,0.1301,0.1326,17.5,0.7497,0.5899,1.55,2.23,0,22.1,0.4068
 2026-10-14 15:14,12171085,Itf Women Singles,"W100 Edmond, OK",Hard,V. Strakhova,M. Rapolu,3,0.515,0.6,0.1301,0.1326,18.5,0.6581,0.4753,1.915,1.7349999999999999,1,22.1,0.3102
@@ -1258,13 +1260,13 @@ hora,event_key,tipo,torneo,superficie,jugador1,jugador2,mejor_de,p_saque1,p_saqu
 2026-10-14 15:14,12171091,Itf Women Singles,"W35 Redding, CA",Hard,S. Drugdova,M. Aytoyan,3,0.53,0.5,0.6566,0.4415,19.5,0.7038,0.5688,1.66,2.19,0,23.83,0.6465
 2026-10-14 15:14,12171091,Itf Women Singles,"W35 Redding, CA",Hard,S. Drugdova,M. Aytoyan,3,0.53,0.5,0.6566,0.4415,20.5,0.6399,0.5041,1.82,1.85,1,23.83,0.5787
 2026-10-14 15:14,12171091,Itf Women Singles,"W35 Redding, CA",Hard,S. Drugdova,M. Aytoyan,3,0.53,0.5,0.6566,0.4415,21.5,0.5899,0.45,2.09,1.71,0,23.83,0.527
-2026-10-14 15:14,12171093,Itf Women Singles,"W35 Redding, CA",Hard,I. Haddad,D. Soke,3,0.5475,0.5825,0.3218,0.3144,18.5,0.789,0.5825,1.62,2.26,0,24.04,0.6831
-2026-10-14 15:14,12171093,Itf Women Singles,"W35 Redding, CA",Hard,I. Haddad,D. Soke,3,0.5475,0.5825,0.3218,0.3144,19.5,0.7155,0.5136,1.7850000000000001,1.885,1,24.04,0.6047
-2026-10-14 15:14,12171093,Itf Women Singles,"W35 Redding, CA",Hard,I. Haddad,D. Soke,3,0.5475,0.5825,0.3218,0.3144,20.5,0.6484,0.4768,1.92,1.75,0,24.04,0.538
-2026-10-14 15:14,12171094,Itf Women Singles,"W35 Redding, CA",Hard,S. Jara,A. Sahdiieva,3,0.535,0.5825,0.2644,0.3072,18.5,0.7619,0.599,1.56,2.33,0,23.62,0.5988
-2026-10-14 15:14,12171094,Itf Women Singles,"W35 Redding, CA",Hard,S. Jara,A. Sahdiieva,3,0.535,0.5825,0.2644,0.3072,19.5,0.6864,0.5095,1.8050000000000002,1.875,1,23.62,0.5169
-2026-10-14 15:14,12171094,Itf Women Singles,"W35 Redding, CA",Hard,S. Jara,A. Sahdiieva,3,0.535,0.5825,0.2644,0.3072,20.5,0.6185,0.4781,1.91,1.75,0,23.62,0.4499
-2026-10-14 15:14,12171094,Itf Women Singles,"W35 Redding, CA",Hard,S. Jara,A. Sahdiieva,3,0.535,0.5825,0.2644,0.3072,21.5,0.567,0.4444,2.1,1.68,0,23.62,0.3999
+2026-10-14 19:23,12171093,Itf Women Singles,"W35 Redding, CA",Hard,I. Haddad,D. Soke,3,0.5475,0.5825,0.3218,0.3223,18.5,0.789,0.5769,1.65,2.25,0,24.04,0.6831
+2026-10-14 19:23,12171093,Itf Women Singles,"W35 Redding, CA",Hard,I. Haddad,D. Soke,3,0.5475,0.5825,0.3218,0.3223,19.5,0.7155,0.5123,1.79,1.88,1,24.04,0.6047
+2026-10-14 19:23,12171093,Itf Women Singles,"W35 Redding, CA",Hard,I. Haddad,D. Soke,3,0.5475,0.5825,0.3218,0.3223,20.5,0.6484,0.4768,1.92,1.75,0,24.04,0.538
+2026-10-14 19:23,12171094,Itf Women Singles,"W35 Redding, CA",Hard,S. Jara,A. Sahdiieva,3,0.535,0.5825,0.2644,0.3065,18.5,0.7619,0.601,1.58,2.38,0,23.62,0.5988
+2026-10-14 19:23,12171094,Itf Women Singles,"W35 Redding, CA",Hard,S. Jara,A. Sahdiieva,3,0.535,0.5825,0.2644,0.3065,19.5,0.6864,0.5115,1.8,1.885,1,23.62,0.5169
+2026-10-14 19:23,12171094,Itf Women Singles,"W35 Redding, CA",Hard,S. Jara,A. Sahdiieva,3,0.535,0.5825,0.2644,0.3065,20.5,0.6185,0.4781,1.91,1.75,0,23.62,0.4499
+2026-10-14 19:23,12171094,Itf Women Singles,"W35 Redding, CA",Hard,S. Jara,A. Sahdiieva,3,0.535,0.5825,0.2644,0.3065,21.5,0.567,0.4444,2.1,1.68,0,23.62,0.3999
 2026-10-14 15:14,12171095,Itf Men Singles,"M25 Austin, TX",Hard,L. E. Ambrogi,I. Urribarrens Ramirez,3,0.65,0.62,0.6466,0.4866,19.5,0.7929,0.5807,1.61,2.23,0,25.27,0.7473
 2026-10-14 15:14,12171095,Itf Men Singles,"M25 Austin, TX",Hard,L. E. Ambrogi,I. Urribarrens Ramirez,3,0.65,0.62,0.6466,0.4866,20.5,0.7202,0.5341,1.74,1.9949999999999999,0,25.27,0.6778
 2026-10-14 15:14,12171095,Itf Men Singles,"M25 Austin, TX",Hard,L. E. Ambrogi,I. Urribarrens Ramirez,3,0.65,0.62,0.6466,0.4866,21.5,0.6704,0.4918,1.85,1.79,1,25.27,0.6268
