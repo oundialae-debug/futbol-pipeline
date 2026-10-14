@@ -22,3 +22,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-14 04:13,12170737,Challenger Men Singles,Jinan,L. Draxl,J. Duckworth,menos,23.5,0.6727,0.5576,1.666,True,actual
 2026-10-14 04:22,12170241,Wta Singles,Wuhan,S. Kartal,B. Bencic,menos,16.5,0.6831,0.5889,1.571,True,actual
 2026-10-14 04:23,12170739,Challenger Men Singles,Jinan,H. Matsuoka,A. Vukic,menos,17.5,0.7091,0.7091,1.333,True,casa65
+2026-10-14 04:24,12170739,Challenger Men Singles,Jinan,H. Matsuoka,A. Vukic,menos,17.5,0.8247,0.7091,1.333,True,actual
