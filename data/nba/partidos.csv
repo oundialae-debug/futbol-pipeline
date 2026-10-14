@@ -7018,11 +7018,11 @@ id,liga,temporada,fecha,local_id,local,visitante_id,visitante,estado,periodo,cua
 1545918,NBA,2027,2026-10-12T23:00:00.000Z,23,Atlanta Hawks,38,Oklahoma City Thunder,Finished,4,"[29, 27, 23, 34]","[28, 21, 30, 31]"
 1545920,NBA,2027,2026-10-12T23:30:00.000Z,26,New York Knicks,41,Minnesota Timberwolves,Finished,4,"[25, 25, 30, 24]","[30, 32, 28, 32]"
 1545921,NBA,2027,2026-10-13T01:00:00.000Z,45,Utah Jazz,37,San Antonio Spurs,Finished,4,"[33, 35, 31, 20]","[26, 35, 17, 31]"
-1546004,NBA,2027,2026-10-13T23:00:00.000Z,24,Orlando Magic,35,Cleveland Cavaliers,Scheduled,0,[],[]
-1546005,NBA,2027,2026-10-13T23:00:00.000Z,34,Toronto Raptors,26,New York Knicks,Scheduled,0,[],[]
-1546006,NBA,2027,2026-10-14T00:00:00.000Z,38,Oklahoma City Thunder,36,Indiana Pacers,Scheduled,0,[],[]
-1546007,NBA,2027,2026-10-14T02:00:00.000Z,4,Los Angeles Lakers,43,Golden State Warriors,Scheduled,0,[],[]
-1546008,NBA,2027,2026-10-14T02:00:00.000Z,32,Sacramento Kings,31,Portland Trail Blazers,Scheduled,0,[],[]
+1546004,NBA,2027,2026-10-13T23:00:00.000Z,24,Orlando Magic,35,Cleveland Cavaliers,Finished,4,"[35, 37, 36, 24]","[28, 24, 31, 33]"
+1546005,NBA,2027,2026-10-13T23:00:00.000Z,34,Toronto Raptors,26,New York Knicks,Finished,4,"[42, 44, 30, 32]","[22, 25, 31, 20]"
+1546006,NBA,2027,2026-10-14T00:00:00.000Z,38,Oklahoma City Thunder,36,Indiana Pacers,Finished,5,"[25, 34, 26, 15, 14]","[33, 28, 23, 16, 12]"
+1546007,NBA,2027,2026-10-14T02:00:00.000Z,4,Los Angeles Lakers,43,Golden State Warriors,Finished,4,"[29, 34, 13, 13]","[29, 21, 22, 29]"
+1546008,NBA,2027,2026-10-14T02:00:00.000Z,32,Sacramento Kings,31,Portland Trail Blazers,Finished,4,"[22, 17, 27, 32]","[33, 33, 27, 17]"
 1546055,NBA,2027,2026-10-14T23:30:00.000Z,1,Miami Heat,49,Brooklyn Nets,Scheduled,0,[],[]
 1546056,NBA,2027,2026-10-14T23:30:00.000Z,2,Boston Celtics,33,Charlotte Hornets,Scheduled,0,[],[]
 1546057,NBA,2027,2026-10-15T00:00:00.000Z,37,San Antonio Spurs,46,Phoenix Suns,Scheduled,0,[],[]
