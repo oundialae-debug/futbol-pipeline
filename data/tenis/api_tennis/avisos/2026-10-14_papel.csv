@@ -167,3 +167,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-14 14:13,12170452,Wta Singles,Wuhan,H. Shi,L. Fernandez,menos,20.5,0.6566,0.5,1.833,True,aprendida
 2026-10-14 14:26,12170897,Itf Men Singles,M15 Offenbach,M. Agwi,L. Rossi,menos,34.5,0.6876,0.6876,1.363,True,casa65
 2026-10-14 14:31,12169989,Challenger Men Singles,Maia,F. Passaro,T. Torres,menos,19.5,0.6803,0.5767,1.615,True,actual
+2026-10-14 14:33,12170790,Challenger Men Singles,Catania (Italy) - Qualification,R. M. Papoe,L. Potenza,menos,20.5,0.6181,0.5,1.833,True,aprendida
