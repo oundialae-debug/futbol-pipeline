@@ -90,3 +90,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-14 09:55,12170744,Challenger Women Singles,Mallorca,C. Monnet,E. Yaneva,menos,16.5,0.6885,0.5767,1.615,True,actual
 2026-10-14 09:57,12170791,Challenger Men Singles,Olbia,S. Travaglia,V. Royer,menos,18.5,0.7598,0.625,1.5,True,actual
 2026-10-14 09:57,12170894,Itf Men Singles,M15 Offenbach,T. Handel,D. Eichenseher,menos,18.5,0.6332,0.5767,1.615,True,actual
+2026-10-14 10:04,12169993,Challenger Men Singles,Roanne,R. Bertola,O. Virtanen,menos,22.5,0.6287,0.5,1.833,True,aprendida
