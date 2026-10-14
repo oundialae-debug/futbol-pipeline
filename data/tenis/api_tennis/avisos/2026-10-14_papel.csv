@@ -81,3 +81,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-14 09:21,12170726,Wta Singles,Wuhan,K. Volynets,H. Guo,menos,29.5,0.6485,0.5767,1.615,True,actual
 2026-10-14 09:23,12170764,Challenger Men Singles,Catania (Italy) - Qualification,F. C. Jianu,Z. Kolar,menos,20.5,0.7138,0.5576,1.666,True,actual
 2026-10-14 09:31,12170802,Itf Men Singles,M25 Santa Margherita di Pula 10,G. Crivellaro,J. Forejtek,menos,18.5,0.6452,0.5147,1.8,True,aprendida
+2026-10-14 09:35,12170764,Challenger Men Singles,Catania (Italy) - Qualification,F. C. Jianu,Z. Kolar,menos,18.5,0.6627,0.6627,1.4,True,casa65
