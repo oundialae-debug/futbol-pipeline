@@ -189,3 +189,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-14 16:44,12170797,Challenger Men Singles,Maia,A. Sanchez Quilez,A. Nedic,menos,19.5,0.7091,0.7091,1.333,True,casa65
 2026-10-14 17:17,12170873,Challenger Women Singles,Rovereto,H. Tan,L. Stefanini,menos,18.5,0.6388,0.5576,1.666,True,actual
 2026-10-14 17:37,12170480,Challenger Women Singles,Rovereto,L. Pigato,L. Havlickova,menos,21.5,0.6134,0.5,1.833,True,aprendida
+2026-10-14 18:07,12171035,Challenger Men Singles,Santa Cruz 2,G. A. Olivieri,A. Barrena,menos,21.5,0.6141,0.5,1.833,True,aprendida
