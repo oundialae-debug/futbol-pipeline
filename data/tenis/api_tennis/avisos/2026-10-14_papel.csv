@@ -140,3 +140,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-14 12:29,12170899,Itf Men Singles,M15 Offenbach,F. Krolo,Z. Sesko,menos,22.5,0.6628,0.5576,1.666,True,actual
 2026-10-14 12:31,12170765,Challenger Men Singles,Maia,P. Martin Tiffon,Z. Piros,menos,17.5,0.7831,0.7831,1.2,True,casa65
 2026-10-14 12:33,12170867,Challenger Men Singles,Maia,L. Giustino,M. Vrbensky,menos,21.5,0.6286,0.5147,1.8,True,aprendida
+2026-10-14 12:36,12170371,Challenger Women Singles,Rovereto,G. Knutson,S. Bandecchi,menos,21.5,0.8309,0.7091,1.333,True,actual
