@@ -211,3 +211,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-14 22:10,12170671,Challenger Men Singles,Santa Cruz 2,R. Pacheco Mendez,H. Dellien,menos,21.5,0.8937,0.8937,1.071,True,casa65
 2026-10-14 22:25,12170672,Challenger Men Singles,Santa Cruz 2,F. Comesana,F. Meligeni Alves,menos,21.5,0.6181,0.5,1.833,True,aprendida
 2026-10-14 23:33,12170672,Challenger Men Singles,Santa Cruz 2,F. Comesana,F. Meligeni Alves,menos,20.5,0.7078,0.5576,1.666,True,actual
+2026-10-14 23:50,12170672,Challenger Men Singles,Santa Cruz 2,F. Comesana,F. Meligeni Alves,menos,17.5,0.7831,0.7831,1.2,True,casa65
