@@ -203,3 +203,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-14 19:44,12171035,Challenger Men Singles,Santa Cruz 2,G. A. Olivieri,A. Barrena,menos,27.5,0.5839,0.4634,2.0,True,aprendida
 2026-10-14 19:44,12171036,Challenger Men Singles,Santa Cruz 2,M. Zeitune,L. A. Miguel,menos,20.5,0.5553,0.4424,2.1,True,aprendida
 2026-10-14 19:48,12171036,Challenger Men Singles,Santa Cruz 2,M. Zeitune,L. A. Miguel,menos,18.5,0.802,0.6876,1.363,True,actual
+2026-10-14 19:49,12171036,Challenger Men Singles,Santa Cruz 2,M. Zeitune,L. A. Miguel,menos,18.5,0.6876,0.6876,1.363,True,casa65
