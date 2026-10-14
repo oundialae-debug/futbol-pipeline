@@ -74,3 +74,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-14 09:02,12170832,Itf Men Singles,M25 Santa Margherita di Pula 10,F. Tabacco,M. Zielinski,menos,16.5,0.7315,0.7315,1.285,True,casa65
 2026-10-14 09:04,12170744,Challenger Women Singles,Mallorca,C. Monnet,E. Yaneva,menos,20.5,0.6171,0.5,1.833,True,aprendida
 2026-10-14 09:04,12170791,Challenger Men Singles,Olbia,S. Travaglia,V. Royer,menos,21.5,0.5767,0.5,1.833,True,aprendida
+2026-10-14 09:04,12170894,Itf Men Singles,M15 Offenbach,T. Handel,D. Eichenseher,menos,21.5,0.568,0.4634,2.0,True,aprendida
