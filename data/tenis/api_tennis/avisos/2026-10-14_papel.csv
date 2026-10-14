@@ -103,3 +103,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-14 10:34,12170791,Challenger Men Singles,Olbia,S. Travaglia,V. Royer,menos,20.5,0.7831,0.7831,1.2,True,casa65
 2026-10-14 10:35,12170726,Wta Singles,Wuhan,K. Volynets,H. Guo,más,30.5,0.8315,0.3923,2.375,True,aprendida
 2026-10-14 10:35,12170807,Challenger Women Singles,Lisbon (Portugal) - Qualification,S. Janicijevic,F. Ferro,menos,18.5,0.6647,0.5576,1.666,True,actual
+2026-10-14 10:36,12170803,Itf Men Singles,M25 Santa Margherita di Pula 10,G. La Vela,A. Weis,menos,23.5,0.6986,0.5889,1.571,True,actual
