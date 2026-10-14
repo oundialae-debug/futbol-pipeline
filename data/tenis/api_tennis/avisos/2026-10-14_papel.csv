@@ -47,3 +47,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-14 07:07,12170832,Itf Men Singles,M25 Santa Margherita di Pula 10,F. Tabacco,M. Zielinski,menos,21.5,0.6224,0.5,1.833,True,aprendida
 2026-10-14 07:11,12170718,Challenger Men Singles,Jinan,K. Smith,V. Kopriva,menos,22.5,0.6036,0.5,1.833,True,aprendida
 2026-10-14 07:21,12170286,Wta Singles,Wuhan,K. Muchova,C. McNally,menos,32.5,0.7209,0.6451,1.444,True,actual
+2026-10-14 07:27,12170731,Wta Singles,Wuhan,J. Paolini,N. Bartunkova,menos,23.5,0.75,0.75,1.25,True,casa65
