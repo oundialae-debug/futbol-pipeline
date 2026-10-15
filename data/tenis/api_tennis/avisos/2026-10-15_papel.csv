@@ -128,3 +128,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-15 10:33,12171275,Itf Men Singles,M15 Monastir 35,L. Castagnola,K. Rahmani,menos,18.5,0.7346,0.6077,1.533,True,actual
 2026-10-15 10:34,12171142,Itf Men Singles,M25 Santa Margherita di Pula 10,F. Tabacco,G. Tabacco,menos,21.5,0.6088,0.5,1.833,True,aprendida
 2026-10-15 10:34,12171279,Itf Men Singles,M15 Monastir 35,S. Hamza Reguig,K. I. Kosaner,menos,20.5,0.5581,0.4853,1.909,True,aprendida
+2026-10-15 10:35,12171275,Itf Men Singles,M15 Monastir 35,L. Castagnola,K. Rahmani,menos,18.5,0.8553,0.8553,1.1,True,casa65
