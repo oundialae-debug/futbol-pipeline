@@ -115,3 +115,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-15 10:11,12171277,Itf Men Singles,M15 Monastir 35,K. van Wyk,L. Wiedenmann,menos,16.5,0.7091,0.7091,1.333,True,casa65
 2026-10-15 10:13,12171255,Itf Men Singles,M15 Bol,N. Lopez,V. Bielinskyi,menos,20.5,0.6342,0.5,1.833,True,aprendida
 2026-10-15 10:14,12171157,Challenger Men Singles,Roanne,F. Balshaw,M. Bobichon,menos,22.5,0.724,0.5889,1.571,True,actual
+2026-10-15 10:14,12171276,Itf Men Singles,M15 Monastir 35,R. Piatti,L. Borg,menos,18.5,0.875,0.875,1.071,True,casa65
