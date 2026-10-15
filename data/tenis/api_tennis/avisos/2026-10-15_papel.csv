@@ -173,3 +173,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-15 12:13,12171282,Itf Men Singles,M15 Monastir 35,C. Hernandez,M. Picard,menos,20.5,0.5603,0.5,1.833,True,aprendida
 2026-10-15 12:17,12171279,Itf Men Singles,M15 Monastir 35,S. Hamza Reguig,K. I. Kosaner,menos,20.5,0.8163,0.7315,1.285,True,actual
 2026-10-15 12:17,12171279,Itf Men Singles,M15 Monastir 35,S. Hamza Reguig,K. I. Kosaner,menos,20.5,0.7315,0.7315,1.285,True,casa65
+2026-10-15 12:18,12171170,Itf Men Singles,M25 Luanda,D. Domingos,T. Faurel,menos,19.5,0.6627,0.6627,1.4,True,casa65
