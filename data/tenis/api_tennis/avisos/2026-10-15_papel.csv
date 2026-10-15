@@ -207,3 +207,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-15 13:05,12171174,Itf Men Singles,M25 Santa Margherita di Pula 10,A. Weis,L. Berto,menos,22.5,0.6416,0.6627,1.4,True,actual
 2026-10-15 13:13,12171168,Itf Men Singles,M25 Luanda,Y. Chaurasia,J. Loge,menos,18.5,0.653,0.6451,1.444,True,actual
 2026-10-15 13:14,12170799,Challenger Women Singles,Lisbon (Portugal) - Qualification,D. Galfi,M. Jorge,menos,32.5,0.7358,0.6077,1.533,True,actual
+2026-10-15 13:14,12170799,Challenger Women Singles,Lisbon (Portugal) - Qualification,D. Galfi,M. Jorge,menos,32.5,0.7358,0.6077,1.533,True,aprendida
