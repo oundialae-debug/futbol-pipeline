@@ -278,3 +278,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-15 18:00,12169755,Challenger Men Singles,Braga,M. Dodig,L. Neumayer,menos,28.5,0.6941,0.5576,1.666,True,actual
 2026-10-15 18:00,12169755,Challenger Men Singles,Braga,M. Dodig,L. Neumayer,menos,28.5,0.6941,0.5576,1.666,True,aprendida
 2026-10-15 18:01,12171411,Itf Men Singles,M15 Quito 4,A. Hernandez,F. De Dios,menos,18.5,0.6001,0.5366,1.727,True,aprendida
+2026-10-15 18:04,12171068,Challenger Men Singles,Santa Cruz 2,G. I. Justo,J. M. La Serna,menos,21.5,0.6008,0.4853,1.909,True,aprendida
