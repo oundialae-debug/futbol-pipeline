@@ -265,3 +265,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-15 17:14,12171411,Itf Men Singles,M15 Quito 4,A. Hernandez,F. De Dios,menos,16.5,0.5514,0.5576,1.666,True,actual
 2026-10-15 17:24,12171368,Itf Men Singles,"M15 Lexington, KY",T. Papamalamis,H. Roh,menos,17.5,0.6306,0.5576,1.666,True,actual
 2026-10-15 17:27,12171363,Itf Men Singles,"M25 Austin, TX",A. Fenty,S. Mitsui,menos,27.5,0.6722,0.5576,1.666,True,actual
+2026-10-15 17:28,12171029,Challenger Men Singles,Roanne,M. Kouame,N. Budkov Kjaer,menos,24.5,0.6525,0.5,1.833,True,aprendida
