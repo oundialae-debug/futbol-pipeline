@@ -100,3 +100,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-15 09:40,12171125,Wta Singles,Wuhan,J. Paolini,S. Kartal,menos,21.5,0.5687,0.5,1.833,True,aprendida
 2026-10-15 09:41,12171215,Itf Men Singles,M15 Sharm ElSheikh 13,R. Neimanis,A. Arzhankin,menos,23.5,0.6816,0.5576,1.666,True,actual
 2026-10-15 09:45,12171106,Challenger Men Singles,Jinan,I. Ivashka,L. Draxl,más,25.5,0.7248,0.6451,1.444,True,aprendida
+2026-10-15 09:49,12171172,Itf Men Singles,M25 Santa Margherita di Pula 10,T. Compagnucci,B. Djuric,menos,21.5,0.5863,0.5,1.833,True,aprendida
