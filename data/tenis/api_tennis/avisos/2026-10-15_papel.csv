@@ -134,3 +134,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-15 10:42,12171027,Challenger Men Singles,Maia,M. Trungelliti,M. Karol,menos,17.5,0.6752,0.5889,1.571,True,actual
 2026-10-15 10:42,12171292,Itf Men Singles,M15 Szabolcsveresmart,A. Nordquist,J. Hrazdil,menos,20.5,0.7171,0.625,1.5,True,actual
 2026-10-15 10:45,12171254,Itf Men Singles,M15 Bol,I. Miletich,D. Obradovic,menos,23.5,0.6035,0.5767,1.615,True,actual
+2026-10-15 10:52,12171280,Itf Men Singles,M15 Monastir 35,F. Roussel,A. Mazdrashki,menos,21.5,0.5544,0.4634,2.0,True,aprendida
