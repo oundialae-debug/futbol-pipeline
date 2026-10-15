@@ -71,3 +71,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-15 08:17,12171107,Challenger Men Singles,Jinan,T. Machac,A. Vukic,menos,16.5,0.6231,0.5576,1.666,True,actual
 2026-10-15 08:17,12171119,Wta Singles,Wuhan,I. Jovic,M. Chwalinska,menos,18.5,0.6627,0.6627,1.4,True,casa65
 2026-10-15 08:17,12171211,Itf Men Singles,M15 Sharm ElSheikh 13,A. Elsayed,K. Knitter,menos,17.5,0.8553,0.8553,1.1,True,casa65
+2026-10-15 08:27,12171110,Itf Men Singles,M25 Qian Daohu,Y. Takahashi,J. Mackenzie,menos,33.5,0.7392,0.6451,1.444,True,actual
