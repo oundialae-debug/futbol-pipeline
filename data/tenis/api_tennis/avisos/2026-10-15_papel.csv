@@ -16,3 +16,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-15 04:32,12171103,Itf Men Singles,M25 Qian Daohu,K. Tamm,A. Shepp,menos,28.5,0.7383,0.6627,1.4,True,actual
 2026-10-15 04:37,12171124,Wta Singles,Wuhan,K. Muchova,D. Shnaider,menos,22.5,0.6403,0.5767,1.615,True,actual
 2026-10-15 04:39,12170720,Itf Men Singles,M25 Solapur (India),D. Singh,P. Karthik,menos,28.5,0.6129,0.5576,1.666,True,actual
+2026-10-15 04:46,12171139,Itf Men Singles,M25 Qian Daohu,E. Pleshivtsev,Y. Hongyu,menos,19.5,0.5224,0.4634,2.0,True,aprendida
