@@ -44,3 +44,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-15 07:14,12171118,Challenger Men Singles,Jinan,L. Pavlovic,M. Bellucci,menos,19.5,0.5555,0.4634,2.0,True,aprendida
 2026-10-15 07:14,12171119,Wta Singles,Wuhan,I. Jovic,M. Chwalinska,menos,22.5,0.5857,0.5147,1.8,True,aprendida
 2026-10-15 07:14,12171138,Itf Men Singles,M25 Qian Daohu,Y. Demin,M. Dellavedova,menos,27.5,0.4948,0.4233,2.2,True,aprendida
+2026-10-15 07:14,12171211,Itf Men Singles,M15 Sharm ElSheikh 13,A. Elsayed,K. Knitter,más,17.5,0.5761,0.4853,1.909,True,aprendida
