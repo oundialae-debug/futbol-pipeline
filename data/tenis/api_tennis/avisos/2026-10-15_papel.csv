@@ -97,3 +97,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-15 09:16,12171254,Itf Men Singles,M15 Bol,I. Miletich,D. Obradovic,menos,21.5,0.6448,0.4853,1.909,True,aprendida
 2026-10-15 09:23,12170781,Itf Men Singles,M25 Luanda,N. Jadoun,I. Nortey,menos,20.5,0.5893,0.5147,1.8,True,aprendida
 2026-10-15 09:32,12171277,Itf Men Singles,M15 Monastir 35,K. van Wyk,L. Wiedenmann,menos,17.5,0.6607,0.5576,1.666,True,actual
+2026-10-15 09:40,12171125,Wta Singles,Wuhan,J. Paolini,S. Kartal,menos,21.5,0.5687,0.5,1.833,True,aprendida
