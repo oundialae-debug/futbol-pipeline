@@ -46,7 +46,7 @@ event_key,tipo,torneo,jugador1,jugador2,estado,sets,juegos_totales
 12170198,Challenger Men Doubles,Maia,Reyes-Varela/ Stalder,Heinonen/ Vrbensky,Finished,0 - 2,17
 12170216,Challenger Men Doubles,Santa Cruz 2,Hidalgo/ Kestelboim,Ciancaglini/ Cuellar Lorberg,Finished,2 - 0,15
 12170218,Challenger Men Doubles,Santa Cruz 2,Heredia/ Munk Mesa,Ribero/ Villanueva,Cancelled,-,0
-12170219,Challenger Men Doubles,Santa Cruz 2,Oliveira/ Rodrigues,Miguel/ Ribeiro,Set 2,0 - 1,12
+12170219,Challenger Men Doubles,Santa Cruz 2,Oliveira/ Rodrigues,Miguel/ Ribeiro,Finished,0 - 2,21
 12170220,Challenger Men Doubles,Santa Cruz 2,Britto/ Saraiva Dos Santos,Casanova/ Rodriguez Taverna,Finished,0 - 2,19
 12170223,Challenger Men Doubles,Santa Cruz 2,Alves/ Zormann Da Silva,Estevez/ Ratti,Finished,2 - 1,36
 12170241,Wta Singles,Wuhan,S. Kartal,B. Bencic,Finished,2 - 0,18
@@ -148,8 +148,8 @@ event_key,tipo,torneo,jugador1,jugador2,estado,sets,juegos_totales
 12170590,Challenger Men Singles,Santa Cruz 2,T. Seyboth Wild,M. Alves,Finished,2 - 0,22
 12170628,Itf Men Doubles,M15 Maringa 3 (Brazil),Crevelaro/ Silva,Noatto/ Storck,Finished,0 - 2,21
 12170631,Itf Men Doubles,M15 Maringa 3 (Brazil),Bojicic Ono/ Braga,Tosetto/ Zanellato,Finished,2 - 1,33
-12170650,Itf Women Singles,"W100 Edmond, OK",N. Podoroska,V. Lepchenko,Set 2,0 - 1,11
-12170651,Itf Women Singles,"W35 Redding, CA",D. Cherubini,C. McNeil,Set 1,0 - 0,7
+12170650,Itf Women Singles,"W100 Edmond, OK",N. Podoroska,V. Lepchenko,Finished,1 - 2,24
+12170651,Itf Women Singles,"W35 Redding, CA",D. Cherubini,C. McNeil,Finished,1 - 2,27
 12170652,Itf Women Singles,"W35 Redding, CA",K. Evans,L. Ma,Cancelled,-,0
 12170654,Itf Women Singles,"W35 Redding, CA",B. Passola,E. Cayetano,Finished,2 - 1,30
 12170655,Itf Women Singles,"W35 Redding, CA",L. Reed,A. Bulatova,Finished,1 - 2,29
@@ -163,7 +163,7 @@ event_key,tipo,torneo,jugador1,jugador2,estado,sets,juegos_totales
 12170686,Itf Men Singles,"M25 Austin, TX",L. Maxted,A. Kim,Finished,2 - 0,17
 12170687,Itf Men Singles,"M25 Austin, TX",S. Mitsui,M. Krueger,Finished,2 - 0,20
 12170688,Itf Men Singles,"M25 Austin, TX",R. Pascual Ferra,T. Berkieta,Finished,2 - 0,18
-12170689,Itf Men Singles,"M25 Austin, TX",T. Zink,B. Willwerth,Set 2,0 - 1,18
+12170689,Itf Men Singles,"M25 Austin, TX",T. Zink,B. Willwerth,Interrupted,0 - 1,18
 12170690,Itf Women Singles,W50 Quebec City (Canada),L. Poling,C. Brace,Finished,0 - 2,22
 12170691,Itf Women Singles,W50 Quebec City (Canada),A. Arseneault,J. Mikulskyte,Finished,2 - 0,14
 12170692,Itf Women Singles,W50 Quebec City (Canada),J. Gimbrere,T. Gowda,Finished,1 - 2,31
@@ -390,17 +390,17 @@ event_key,tipo,torneo,jugador1,jugador2,estado,sets,juegos_totales
 12170978,Itf Women Doubles,W35 Birmingham 2 (United Kingdom),Cleaver/ Wainwright,Allen/ Visscher,Finished,0 - 2,14
 12170989,Challenger Women Doubles,Lisbon (Portugal),Ebeling Koning/ Tsygourova,Jorge/ Jorge,Finished,0 - 2,23
 12170990,Itf Women Doubles,W35 Birmingham 2 (United Kingdom),Burrage/ Cabrera,Griffiths/ Smart,Finished,2 - 0,22
-12170991,Itf Men Singles,M15 Maringa 3 (Brazil),B. Rodrigues,G. B. Renner,Set 2,0 - 1,15
-12170992,Itf Men Singles,M15 Maringa 3 (Brazil),N. Zanellato,H. J. Escurra Isnardi,,-,0
+12170991,Itf Men Singles,M15 Maringa 3 (Brazil),B. Rodrigues,G. B. Renner,Finished,0 - 2,19
+12170992,Itf Men Singles,M15 Maringa 3 (Brazil),N. Zanellato,H. J. Escurra Isnardi,Set 2,0 - 1,19
 12170993,Itf Men Singles,M15 Maringa 3 (Brazil),P. Sakamoto,V. C. Loureiro J.,Finished,2 - 0,26
-12170994,Itf Men Singles,M15 Maringa 3 (Brazil),F. L. Storck,J. Cundom,,-,0
+12170994,Itf Men Singles,M15 Maringa 3 (Brazil),F. L. Storck,J. Cundom,Finished,1 - 2,32
 12170995,Itf Men Singles,M15 Maringa 3 (Brazil),F. Fontes Damorim,I. Vertberger,Finished,0 - 2,21
 12170996,Itf Men Singles,M15 Maringa 3 (Brazil),K. L. Santos Gava,N. Bruna,Finished,1 - 2,32
 12170997,Itf Men Singles,M15 Maringa 3 (Brazil),G. Roveri Sidney,D. Klok,Finished,0 - 2,18
 12170998,Itf Men Singles,M15 Maringa 3 (Brazil),J. V. Scramin do Lago,V. Goncalves,Finished,0 - 2,16
 12170999,Itf Men Singles,M15 Maringa 3 (Brazil),V. H. Remondy Pagotto,H. Ortenblad Nogueira,Finished,2 - 1,28
 12171000,Itf Men Doubles,M15 Maringa 3 (Brazil),Goncalves/ Roveri Sidney,Camargo Lima/ de Camargo Silva,,-,0
-12171001,Itf Men Doubles,M15 Maringa 3 (Brazil),Bruna/ Martinez,Augusto dos Santos/ Scramin do Lago,,-,0
+12171001,Itf Men Doubles,M15 Maringa 3 (Brazil),Bruna/ Martinez,Augusto dos Santos/ Scramin do Lago,Set 3,1 - 1,22
 12171003,Itf Women Singles,W35 Monastir 7,D. Zoldakova,A. Paszun,Cancelled,-,0
 12171004,Challenger Men Singles,Olbia,L. Nardi,L. Carboni,Finished,2 - 0,17
 12171005,Itf Men Singles,M15 Offenbach,Y. Kelm,C. Mueller,Finished,1 - 2,31
@@ -446,14 +446,14 @@ event_key,tipo,torneo,jugador1,jugador2,estado,sets,juegos_totales
 12171056,Itf Men Singles,M15 Quito 4,J. S. Dominguez Collado,F. J. Rivadeneira Gallegos,Finished,0 - 2,18
 12171057,Itf Men Singles,M15 Quito 4,N. E. Rico Arias,A. O. Alvarado Berrospi,Finished,0 - 2,19
 12171058,Itf Men Singles,M15 Quito 4,M. A. Galarraga,D. Salazar,Finished,0 - 2,15
-12171059,Itf Men Singles,M15 Quito 4,E. Camacho,M. Covato,Finished,0 - 2,9
+12171059,Itf Men Singles,M15 Quito 4,E. Camacho,M. Covato,Finished,0 - 2,19
 12171060,Itf Men Doubles,"M15 Lexington, KY",Poulsen Brostrom/ Slavic,Bowers/ Swenson,Finished,2 - 0,24
-12171062,Itf Men Doubles,M15 Quito 4,Del Pino/ Mouilleron Salvo,Bini/ Fishback,Finished,2 - 1,10
+12171062,Itf Men Doubles,M15 Quito 4,Del Pino/ Mouilleron Salvo,Bini/ Fishback,Finished,2 - 1,34
 12171063,Itf Men Doubles,M15 Quito 4,Gomez/ Urrea,Dreycopp/ Perlov,Finished,2 - 0,22
-12171064,Itf Men Doubles,M15 Quito 4,Macias Elizalde/ Rivadeneira Gallegos,Munoz/ Osorio,,-,0
-12171082,Itf Women Singles,"W100 Edmond, OK",Y. Ku,Z. Epps,Set 2,1 - 0,11
-12171083,Itf Women Singles,"W100 Edmond, OK",T. Maria,A. Smith,Set 2,1 - 0,9
-12171084,Itf Women Singles,"W100 Edmond, OK",A. Rus,A. Shcherbinina,Set 2,0 - 1,9
+12171064,Itf Men Doubles,M15 Quito 4,Macias Elizalde/ Rivadeneira Gallegos,Munoz/ Osorio,Finished,0 - 2,20
+12171082,Itf Women Singles,"W100 Edmond, OK",Y. Ku,Z. Epps,Finished,2 - 0,19
+12171083,Itf Women Singles,"W100 Edmond, OK",T. Maria,A. Smith,Finished,2 - 0,17
+12171084,Itf Women Singles,"W100 Edmond, OK",A. Rus,A. Shcherbinina,Finished,2 - 1,28
 12171088,Itf Women Singles,"W35 Redding, CA",L. Mi,D. Letzel,Finished,2 - 0,15
 12171089,Itf Women Singles,"W35 Redding, CA",N. Nishino,A. Rencheli,Finished,2 - 0,19
 12171090,Itf Women Singles,"W35 Redding, CA",M. Sholokhova,Mushika Mao,Finished,2 - 0,20
