@@ -305,3 +305,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-15 19:34,12171102,Challenger Men Singles,Santa Cruz 2,T. Seyboth Wild,C. M. Zarate,menos,19.5,0.5926,0.5147,1.8,True,aprendida
 2026-10-15 19:37,12171392,Itf Men Singles,M15 Maringa 3 (Brazil),P. Sakamoto,P. Albuquerque Dietrich,más,16.5,0.6505,0.5,1.833,True,aprendida
 2026-10-15 19:40,12171371,Itf Men Singles,"M15 Lexington, KY",N. Zamora,P. Martinez Gomez,menos,31.5,0.6735,0.5576,1.666,True,actual
+2026-10-15 19:47,12171412,Itf Men Singles,M15 Quito 4,N. Hollender,J. S. Gomez,menos,21.5,0.6627,0.6627,1.4,True,casa65
