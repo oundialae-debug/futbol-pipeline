@@ -40,3 +40,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-15 07:07,12171117,Challenger Men Singles,Jinan,Y. Watanuki,M. Cilic,menos,22.5,0.7315,0.7315,1.285,True,casa65
 2026-10-15 07:08,12170981,Wta Singles,Wuhan,M. Pohankova,M. Sakkari,menos,17.5,0.6624,0.5889,1.571,True,actual
 2026-10-15 07:14,12171110,Itf Men Singles,M25 Qian Daohu,Y. Takahashi,J. Mackenzie,menos,26.5,0.6607,0.5366,1.727,True,aprendida
+2026-10-15 07:14,12171117,Challenger Men Singles,Jinan,Y. Watanuki,M. Cilic,menos,22.5,0.8281,0.8281,1.142,True,casa65
