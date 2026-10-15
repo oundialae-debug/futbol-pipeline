@@ -22,3 +22,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-15 05:03,12171124,Wta Singles,Wuhan,K. Muchova,D. Shnaider,menos,21.5,0.7831,0.7831,1.2,True,casa65
 2026-10-15 05:04,12171138,Itf Men Singles,M25 Qian Daohu,Y. Demin,M. Dellavedova,menos,21.5,0.6006,0.5147,1.8,True,aprendida
 2026-10-15 05:06,12171121,Itf Men Singles,M25 Solapur (India),P. Sornlaksup,T. Chanta,menos,27.5,0.6446,0.5576,1.666,True,actual
+2026-10-15 05:06,12171139,Itf Men Singles,M25 Qian Daohu,E. Pleshivtsev,Y. Hongyu,menos,18.5,0.6194,0.5889,1.571,True,actual
