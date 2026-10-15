@@ -149,3 +149,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-15 11:05,12171169,Itf Men Singles,M25 Luanda,E. Demanet,D. Added,menos,23.5,0.8141,0.8141,1.142,True,casa65
 2026-10-15 11:09,12171202,Wta Singles,Wuhan,A. Krueger,I. Swiatek,menos,17.5,0.5558,0.4634,2.0,True,aprendida
 2026-10-15 11:13,12170745,Challenger Women Singles,Mallorca,L. Nguyen Tan,L. Samson,menos,18.5,0.5705,0.4853,1.909,True,aprendida
+2026-10-15 11:17,12171030,Challenger Women Singles,Rovereto,T. Kostovic,M. Kubka,menos,19.5,0.7735,0.5889,1.571,True,actual
