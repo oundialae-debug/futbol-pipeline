@@ -151,3 +151,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-15 11:13,12170745,Challenger Women Singles,Mallorca,L. Nguyen Tan,L. Samson,menos,18.5,0.5705,0.4853,1.909,True,aprendida
 2026-10-15 11:17,12171030,Challenger Women Singles,Rovereto,T. Kostovic,M. Kubka,menos,19.5,0.7735,0.5889,1.571,True,actual
 2026-10-15 11:18,12170781,Itf Men Singles,M25 Luanda,N. Jadoun,I. Nortey,menos,25.5,0.6876,0.6876,1.363,True,casa65
+2026-10-15 11:20,12170795,Atp Singles,Shanghai,A. Zverev,A. De Minaur,menos,20.5,0.8109,0.8109,1.166,True,casa65
