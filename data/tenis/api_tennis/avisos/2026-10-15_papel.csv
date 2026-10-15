@@ -300,3 +300,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-15 18:54,12171411,Itf Men Singles,M15 Quito 4,A. Hernandez,F. De Dios,menos,24.5,0.7502,0.6876,1.363,True,actual
 2026-10-15 18:55,12171411,Itf Men Singles,M15 Quito 4,A. Hernandez,F. De Dios,menos,24.5,0.6876,0.6876,1.363,True,casa65
 2026-10-15 19:10,12171411,Itf Men Singles,M15 Quito 4,A. Hernandez,F. De Dios,más,24.5,0.7679,0.3124,3.0,True,aprendida
+2026-10-15 19:17,12171412,Itf Men Singles,M15 Quito 4,N. Hollender,J. S. Gomez,menos,17.5,0.5737,0.5147,1.8,True,aprendida
