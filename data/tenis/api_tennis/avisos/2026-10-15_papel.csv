@@ -69,3 +69,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-15 08:07,12171119,Wta Singles,Wuhan,I. Jovic,M. Chwalinska,menos,18.5,0.6247,0.5576,1.666,True,actual
 2026-10-15 08:13,12171213,Itf Men Singles,M15 Sharm ElSheikh 13,D. Verbeek,S. Ivanov,menos,13.5,0.7942,0.7942,1.166,True,casa65
 2026-10-15 08:17,12171107,Challenger Men Singles,Jinan,T. Machac,A. Vukic,menos,16.5,0.6231,0.5576,1.666,True,actual
+2026-10-15 08:17,12171119,Wta Singles,Wuhan,I. Jovic,M. Chwalinska,menos,18.5,0.6627,0.6627,1.4,True,casa65
