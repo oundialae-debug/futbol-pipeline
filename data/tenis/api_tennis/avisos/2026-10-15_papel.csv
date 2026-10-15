@@ -257,3 +257,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-15 16:42,12171368,Itf Men Singles,"M15 Lexington, KY",T. Papamalamis,H. Roh,menos,22.5,0.6687,0.5366,1.727,True,aprendida
 2026-10-15 16:47,12170792,Challenger Women Singles,Lisbon (Portugal) - Qualification,M. Lollia,C. Burel,menos,13.5,0.7315,0.7315,1.285,True,casa65
 2026-10-15 16:47,12171322,Itf Men Singles,"M25 Austin, TX",Q. Vandecasteele,S. Gorzny,menos,25.5,0.6576,0.5576,1.666,True,actual
+2026-10-15 16:49,12171374,Itf Men Singles,"M25 Austin, TX",L. Maxted,R. Pascual Ferra,menos,21.5,0.5933,0.4853,1.909,True,aprendida
