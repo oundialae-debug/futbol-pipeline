@@ -268,3 +268,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-15 17:28,12171029,Challenger Men Singles,Roanne,M. Kouame,N. Budkov Kjaer,menos,24.5,0.6525,0.5,1.833,True,aprendida
 2026-10-15 17:30,12171410,Itf Men Singles,M15 Quito 4,L. Claverie,M. Mbithi,menos,26.5,0.6686,0.5576,1.666,True,actual
 2026-10-15 17:33,12171371,Itf Men Singles,"M15 Lexington, KY",N. Zamora,P. Martinez Gomez,menos,22.5,0.6148,0.5147,1.8,True,aprendida
+2026-10-15 17:38,12171374,Itf Men Singles,"M25 Austin, TX",L. Maxted,R. Pascual Ferra,menos,14.5,0.5984,0.5576,1.666,True,actual
