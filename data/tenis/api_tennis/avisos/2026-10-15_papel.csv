@@ -122,3 +122,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-15 10:22,12171167,Itf Men Singles,M25 Luanda,K. Bennani,D. Tremblay,menos,17.5,0.62,0.5576,1.666,True,actual
 2026-10-15 10:22,12171169,Itf Men Singles,M25 Luanda,E. Demanet,D. Added,menos,20.5,0.7394,0.6077,1.533,True,actual
 2026-10-15 10:22,12171215,Itf Men Singles,M15 Sharm ElSheikh 13,R. Neimanis,A. Arzhankin,menos,23.5,0.9278,0.9278,1.012,True,casa65
+2026-10-15 10:22,12171348,Itf Men Singles,M15 Offenbach,F. Thomas,F. Krolo,menos,21.5,0.5841,0.5,1.833,True,aprendida
