@@ -32,3 +32,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-15 06:09,12171118,Challenger Men Singles,Jinan,L. Pavlovic,M. Bellucci,menos,21.5,0.578,0.5,1.833,True,aprendida
 2026-10-15 06:13,12171110,Itf Men Singles,M25 Qian Daohu,Y. Takahashi,J. Mackenzie,menos,21.5,0.5554,0.4853,1.909,True,aprendida
 2026-10-15 06:20,12171154,Wta Singles,Wuhan,E. Svitolina,H. Guo,menos,16.5,0.6704,0.5767,1.615,True,actual
+2026-10-15 06:25,12170856,Atp Singles,Shanghai,A. Gea,A. Davidovich Fokina,menos,23.5,0.5998,0.5,1.833,True,aprendida
