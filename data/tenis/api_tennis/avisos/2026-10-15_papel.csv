@@ -73,3 +73,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-15 08:17,12171211,Itf Men Singles,M15 Sharm ElSheikh 13,A. Elsayed,K. Knitter,menos,17.5,0.8553,0.8553,1.1,True,casa65
 2026-10-15 08:27,12171110,Itf Men Singles,M25 Qian Daohu,Y. Takahashi,J. Mackenzie,menos,33.5,0.7392,0.6451,1.444,True,actual
 2026-10-15 08:28,12171215,Itf Men Singles,M15 Sharm ElSheikh 13,R. Neimanis,A. Arzhankin,menos,20.5,0.5757,0.4853,1.909,True,aprendida
+2026-10-15 08:34,12171276,Itf Men Singles,M15 Monastir 35,R. Piatti,L. Borg,menos,20.5,0.5945,0.5,1.833,True,aprendida
