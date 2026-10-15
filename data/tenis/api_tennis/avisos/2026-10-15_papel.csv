@@ -168,3 +168,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-15 11:55,12171280,Itf Men Singles,M15 Monastir 35,F. Roussel,A. Mazdrashki,menos,19.5,0.7024,0.5576,1.666,True,actual
 2026-10-15 11:59,12171174,Itf Men Singles,M25 Santa Margherita di Pula 10,A. Weis,L. Berto,menos,19.5,0.6504,0.5576,1.666,True,actual
 2026-10-15 12:04,12171142,Itf Men Singles,M25 Santa Margherita di Pula 10,F. Tabacco,G. Tabacco,menos,22.5,0.6552,0.5576,1.666,True,actual
+2026-10-15 12:06,12171347,Itf Men Singles,M15 Offenbach,G. Dalmasso,L. Rossi,menos,16.5,0.922,0.922,1.015,True,casa65
