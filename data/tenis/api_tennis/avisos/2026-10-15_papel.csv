@@ -20,3 +20,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-15 05:00,12171141,Itf Men Singles,M25 Qian Daohu,Y. Zeng,C. Hewitt,menos,17.5,0.6547,0.6077,1.533,True,actual
 2026-10-15 05:02,12170787,Challenger Men Singles,Jinan,A. Shevchenko,J. D. Hara Friend,menos,19.5,0.6496,0.5767,1.615,True,actual
 2026-10-15 05:03,12171124,Wta Singles,Wuhan,K. Muchova,D. Shnaider,menos,21.5,0.7831,0.7831,1.2,True,casa65
+2026-10-15 05:04,12171138,Itf Men Singles,M25 Qian Daohu,Y. Demin,M. Dellavedova,menos,21.5,0.6006,0.5147,1.8,True,aprendida
