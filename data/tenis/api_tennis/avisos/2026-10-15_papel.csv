@@ -125,3 +125,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-15 10:22,12171348,Itf Men Singles,M15 Offenbach,F. Thomas,F. Krolo,menos,21.5,0.5841,0.5,1.833,True,aprendida
 2026-10-15 10:26,12171157,Challenger Men Singles,Roanne,F. Balshaw,M. Bobichon,menos,19.5,0.8937,0.8937,1.071,True,casa65
 2026-10-15 10:32,12171288,Itf Men Singles,M15 Szabolcsveresmart,T. Genier,P. O. Fellin,más,25.5,0.5902,0.4853,1.909,True,aprendida
+2026-10-15 10:33,12171275,Itf Men Singles,M15 Monastir 35,L. Castagnola,K. Rahmani,menos,18.5,0.7346,0.6077,1.533,True,actual
