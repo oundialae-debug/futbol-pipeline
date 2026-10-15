@@ -54,3 +54,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-15 07:32,12170981,Wta Singles,Wuhan,M. Pohankova,M. Sakkari,menos,15.5,0.75,0.75,1.25,True,casa65
 2026-10-15 07:33,12171107,Challenger Men Singles,Jinan,T. Machac,A. Vukic,menos,22.5,0.6131,0.5,1.833,True,aprendida
 2026-10-15 07:33,12171260,Itf Men Singles,M15 Bol,B. Barun,A. Wazny,menos,20.5,0.5726,0.5,1.833,True,aprendida
+2026-10-15 07:36,12171118,Challenger Men Singles,Jinan,L. Pavlovic,M. Bellucci,menos,20.5,0.6627,0.6627,1.4,True,casa65
