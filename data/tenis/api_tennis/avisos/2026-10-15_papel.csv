@@ -179,3 +179,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-15 12:32,12171166,Itf Men Singles,M25 Luanda,F. Bax,R. Serazhetdinov,menos,17.5,0.556,0.5576,1.666,True,actual
 2026-10-15 12:35,12170854,Challenger Men Singles,Olbia,D. Kuzmanov,D. Dzumhur,menos,25.5,0.7041,0.5767,1.615,True,actual
 2026-10-15 12:39,12170982,Challenger Men Singles,Catania (Italy) - Qualification,P. Vives Marcos,M. Wiskandt,menos,28.5,0.6598,0.5576,1.666,True,actual
+2026-10-15 12:39,12171167,Itf Men Singles,M25 Luanda,K. Bennani,D. Tremblay,más,28.5,0.8393,0.5,1.833,True,aprendida
