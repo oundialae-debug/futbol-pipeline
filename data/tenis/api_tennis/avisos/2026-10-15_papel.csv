@@ -241,3 +241,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-15 15:26,12171033,Challenger Men Singles,Roanne,E. Donnet,M. Martineau,menos,25.5,0.7279,0.5767,1.615,True,actual
 2026-10-15 15:31,12171028,Challenger Men Singles,Olbia,M. Mrva,F. Maestrelli,menos,23.5,0.6569,0.5147,1.8,True,aprendida
 2026-10-15 15:43,12170855,Challenger Women Singles,Mallorca,A. Mintegi Del Olmo,R. Masarova,menos,18.5,0.6749,0.5767,1.615,True,actual
+2026-10-15 15:56,12171408,Itf Men Singles,M15 Quito 4,J. S. Osorio,R. Fishback,menos,17.5,0.5788,0.5889,1.571,True,actual
