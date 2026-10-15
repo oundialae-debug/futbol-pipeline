@@ -163,7 +163,6 @@ event_key,tipo,torneo,jugador1,jugador2,estado,sets,juegos_totales
 12170686,Itf Men Singles,"M25 Austin, TX",L. Maxted,A. Kim,Finished,2 - 0,17
 12170687,Itf Men Singles,"M25 Austin, TX",S. Mitsui,M. Krueger,Finished,2 - 0,20
 12170688,Itf Men Singles,"M25 Austin, TX",R. Pascual Ferra,T. Berkieta,Finished,2 - 0,18
-12170689,Itf Men Singles,"M25 Austin, TX",T. Zink,B. Willwerth,Interrupted,0 - 1,18
 12170690,Itf Women Singles,W50 Quebec City (Canada),L. Poling,C. Brace,Finished,0 - 2,22
 12170691,Itf Women Singles,W50 Quebec City (Canada),A. Arseneault,J. Mikulskyte,Finished,2 - 0,14
 12170692,Itf Women Singles,W50 Quebec City (Canada),J. Gimbrere,T. Gowda,Finished,1 - 2,31
@@ -172,7 +171,7 @@ event_key,tipo,torneo,jugador1,jugador2,estado,sets,juegos_totales
 12170695,Itf Women Singles,W50 Quebec City (Canada),J. Niemeier,M. Sieg,Finished,0 - 2,19
 12170696,Itf Women Singles,W50 Quebec City (Canada),V. Ryser,Y. Naito,Finished,1 - 2,27
 12170698,Itf Women Singles,W50 Quebec City (Canada),K. Yoshioka,H. Abe,Finished,0 - 2,18
-12170699,Itf Men Doubles,"M25 Austin, TX",Fuchs/ Hopper,Munoz-De La Nava/ Schelcher Muro,Interrupted,0 - 0,7
+12170706,Itf Women Doubles,"W35 Redding, CA",Mi/ Mushika Mao,Aytoyan/ Mahendran,Walk Over,-,0
 12170707,Itf Women Doubles,W50 Quebec City (Canada),Inoue/ Naito,Alexander/ Mercier,Finished,2 - 1,39
 12170708,Itf Women Doubles,W50 Quebec City (Canada),Hrda/ Poling,Hu/ Mikulskyte,Finished,0 - 2,21
 12170709,Itf Women Doubles,W50 Quebec City (Canada),Cabio/ Taylor,Brace/ Brace,Finished,2 - 0,16
@@ -373,7 +372,7 @@ event_key,tipo,torneo,jugador1,jugador2,estado,sets,juegos_totales
 12170956,Itf Women Singles,W35 Birmingham 2 (United Kingdom),B. Cengiz,J. Burrage,Finished,0 - 2,23
 12170957,Itf Women Singles,W35 Birmingham 2 (United Kingdom),A. Lukosiute,M. Stojsavljevic,Finished,0 - 2,17
 12170958,Itf Women Singles,W35 Birmingham 2 (United Kingdom),E. Malygina,M. Aikawa,Finished,1 - 2,24
-12170961,Itf Men Doubles,M15 Heraklion 8,Dominguez Alonso/ Turriziani Alvarez,Alujas/ Car,,-,0
+12170961,Itf Men Doubles,M15 Heraklion 8,Dominguez Alonso/ Turriziani Alvarez,Alujas/ Car,1,-,0
 12170965,Itf Men Doubles,M15 Monastir 35,Arce Fernandez/ Peiro Serrano,De Carvalho/ Hamza Reguig,Finished,2 - 0,14
 12170966,Itf Men Doubles,M15 Monastir 35,Nirundorn/ van Wyk,Kosaner/ Smiej,Finished,2 - 0,20
 12170967,Itf Men Doubles,M15 Monastir 35,Begg-Smith/ Frydrych,Collignon/ Manuel,Finished,0 - 2,16
@@ -391,7 +390,7 @@ event_key,tipo,torneo,jugador1,jugador2,estado,sets,juegos_totales
 12170989,Challenger Women Doubles,Lisbon (Portugal),Ebeling Koning/ Tsygourova,Jorge/ Jorge,Finished,0 - 2,23
 12170990,Itf Women Doubles,W35 Birmingham 2 (United Kingdom),Burrage/ Cabrera,Griffiths/ Smart,Finished,2 - 0,22
 12170991,Itf Men Singles,M15 Maringa 3 (Brazil),B. Rodrigues,G. B. Renner,Finished,0 - 2,19
-12170992,Itf Men Singles,M15 Maringa 3 (Brazil),N. Zanellato,H. J. Escurra Isnardi,Set 2,0 - 1,19
+12170992,Itf Men Singles,M15 Maringa 3 (Brazil),N. Zanellato,H. J. Escurra Isnardi,Finished,0 - 2,20
 12170993,Itf Men Singles,M15 Maringa 3 (Brazil),P. Sakamoto,V. C. Loureiro J.,Finished,2 - 0,26
 12170994,Itf Men Singles,M15 Maringa 3 (Brazil),F. L. Storck,J. Cundom,Finished,1 - 2,32
 12170995,Itf Men Singles,M15 Maringa 3 (Brazil),F. Fontes Damorim,I. Vertberger,Finished,0 - 2,21
@@ -399,8 +398,8 @@ event_key,tipo,torneo,jugador1,jugador2,estado,sets,juegos_totales
 12170997,Itf Men Singles,M15 Maringa 3 (Brazil),G. Roveri Sidney,D. Klok,Finished,0 - 2,18
 12170998,Itf Men Singles,M15 Maringa 3 (Brazil),J. V. Scramin do Lago,V. Goncalves,Finished,0 - 2,16
 12170999,Itf Men Singles,M15 Maringa 3 (Brazil),V. H. Remondy Pagotto,H. Ortenblad Nogueira,Finished,2 - 1,28
-12171000,Itf Men Doubles,M15 Maringa 3 (Brazil),Goncalves/ Roveri Sidney,Camargo Lima/ de Camargo Silva,,-,0
-12171001,Itf Men Doubles,M15 Maringa 3 (Brazil),Bruna/ Martinez,Augusto dos Santos/ Scramin do Lago,Set 3,1 - 1,22
+12171000,Itf Men Doubles,M15 Maringa 3 (Brazil),Goncalves/ Roveri Sidney,Camargo Lima/ de Camargo Silva,Finished,1 - 2,34
+12171001,Itf Men Doubles,M15 Maringa 3 (Brazil),Bruna/ Martinez,Augusto dos Santos/ Scramin do Lago,Finished,2 - 1,52
 12171003,Itf Women Singles,W35 Monastir 7,D. Zoldakova,A. Paszun,Cancelled,-,0
 12171004,Challenger Men Singles,Olbia,L. Nardi,L. Carboni,Finished,2 - 0,17
 12171005,Itf Men Singles,M15 Offenbach,Y. Kelm,C. Mueller,Finished,1 - 2,31
