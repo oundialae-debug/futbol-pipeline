@@ -204,3 +204,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-15 13:04,12171203,Wta Singles,Wuhan,A. Li,J. Tjen,menos,21.5,0.5403,0.4853,1.909,True,aprendida
 2026-10-15 13:04,12171295,Itf Men Singles,M15 Szabolcsveresmart,S. Seifert,A. G. Szoke,más,16.5,0.7183,0.5,1.833,True,aprendida
 2026-10-15 13:05,12170736,Challenger Men Singles,Catania (Italy) - Qualification,P. Lagutin,M. Giunta,menos,21.5,0.8421,0.8421,1.125,True,casa65
+2026-10-15 13:05,12171174,Itf Men Singles,M25 Santa Margherita di Pula 10,A. Weis,L. Berto,menos,22.5,0.6416,0.6627,1.4,True,actual
