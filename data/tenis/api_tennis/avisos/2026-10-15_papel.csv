@@ -118,3 +118,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-15 10:14,12171276,Itf Men Singles,M15 Monastir 35,R. Piatti,L. Borg,menos,18.5,0.875,0.875,1.071,True,casa65
 2026-10-15 10:15,12171167,Itf Men Singles,M25 Luanda,K. Bennani,D. Tremblay,menos,17.5,0.5918,0.5147,1.8,True,aprendida
 2026-10-15 10:16,12170798,Challenger Men Singles,Olbia,T. Gentzsch,G. Kravchenko,menos,27.5,0.6584,0.5576,1.666,True,actual
+2026-10-15 10:22,12170743,Challenger Women Singles,Mallorca,A. Lazaro Garcia,N. Brancaccio,menos,34.5,0.7246,0.6077,1.533,True,actual
