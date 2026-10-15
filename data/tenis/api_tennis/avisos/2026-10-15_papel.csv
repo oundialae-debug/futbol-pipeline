@@ -95,3 +95,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-15 09:13,12171284,Itf Men Singles,M15 Offenbach,C. Mueller,J. Sels,menos,21.5,0.5445,0.4853,1.909,True,aprendida
 2026-10-15 09:16,12171137,Itf Men Singles,M25 Luanda,E. Coulibaly,L. Larue,menos,18.5,0.6181,0.5366,1.727,True,aprendida
 2026-10-15 09:16,12171254,Itf Men Singles,M15 Bol,I. Miletich,D. Obradovic,menos,21.5,0.6448,0.4853,1.909,True,aprendida
+2026-10-15 09:23,12170781,Itf Men Singles,M25 Luanda,N. Jadoun,I. Nortey,menos,20.5,0.5893,0.5147,1.8,True,aprendida
