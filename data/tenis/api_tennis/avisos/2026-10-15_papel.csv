@@ -284,3 +284,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-15 18:33,12171029,Challenger Men Singles,Roanne,M. Kouame,N. Budkov Kjaer,menos,18.5,0.703,0.625,1.5,True,actual
 2026-10-15 18:36,12171029,Challenger Men Singles,Roanne,M. Kouame,N. Budkov Kjaer,menos,18.5,0.6876,0.6876,1.363,True,casa65
 2026-10-15 18:36,12171323,Itf Men Singles,"M25 Austin, TX",D. Mosejczuk,Z. Velcz,menos,16.5,0.8438,0.8438,1.111,True,casa65
+2026-10-15 18:45,12169755,Challenger Men Singles,Braga,M. Dodig,L. Neumayer,menos,29.5,0.517,0.4111,2.25,True,aprendida
