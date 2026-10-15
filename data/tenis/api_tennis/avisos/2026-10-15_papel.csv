@@ -2,3 +2,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-15 02:16,12171103,Itf Men Singles,M25 Qian Daohu,K. Tamm,A. Shepp,menos,21.5,0.582,0.4634,2.0,True,aprendida
 2026-10-15 02:21,12171109,Itf Men Singles,M25 Qian Daohu,A. Susanto,M. Borisiouk,menos,17.5,0.5936,0.5576,1.666,True,actual
 2026-10-15 02:22,12171140,Itf Men Singles,M25 Qian Daohu,A. Weber,I. Becroft,menos,22.5,0.6747,0.5,1.833,True,aprendida
+2026-10-15 02:42,12171109,Itf Men Singles,M25 Qian Daohu,A. Susanto,M. Borisiouk,menos,20.5,0.5777,0.5147,1.8,True,aprendida
