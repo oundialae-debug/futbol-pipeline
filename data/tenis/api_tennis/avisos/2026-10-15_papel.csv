@@ -59,3 +59,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-15 07:43,12171175,Itf Men Singles,M25 Solapur (India),A. Vishal Balsekar,S. Banerjee,menos,17.5,0.6403,0.4853,1.909,True,aprendida
 2026-10-15 07:45,12171108,Itf Men Singles,M25 Qian Daohu,S. Fomin,M. Shearer,menos,18.5,0.627,0.5889,1.571,True,actual
 2026-10-15 07:51,12171211,Itf Men Singles,M15 Sharm ElSheikh 13,A. Elsayed,K. Knitter,menos,19.5,0.5824,0.5576,1.666,True,actual
+2026-10-15 07:52,12171106,Challenger Men Singles,Jinan,I. Ivashka,L. Draxl,menos,23.5,0.6618,0.5147,1.8,True,aprendida
