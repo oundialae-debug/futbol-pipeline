@@ -104,3 +104,4 @@ hora,event_key,tipo,torneo,jugador1,jugador2,lado,linea,prob_modelo,prob_casa,cu
 2026-10-15 09:50,12171284,Itf Men Singles,M15 Offenbach,C. Mueller,J. Sels,menos,20.5,0.6348,0.5576,1.666,True,actual
 2026-10-15 09:51,12171283,Itf Men Singles,M15 Offenbach,D. Eichenseher,M. Petkovic,menos,16.5,0.5804,0.5889,1.571,True,actual
 2026-10-15 09:55,12170795,Atp Singles,Shanghai,A. Zverev,A. De Minaur,menos,23.5,0.6108,0.5147,1.8,True,aprendida
+2026-10-15 09:55,12171173,Itf Men Singles,M25 Santa Margherita di Pula 10,M. Donald,J. Forejtek,menos,20.5,0.5717,0.4853,1.909,True,aprendida
