@@ -1,1 +1,6 @@
-match_id,liga,saque_utc,local,visitante,descanso_desde,descanso_hasta
+match_id,liga,liga_id,fecha,saque_utc,local,visitante,descanso_desde,descanso_hasta
+1340484921,Bundesliga,67162,2026-10-16,18:30,Eintracht Frankfurt,FC Koln,19:15,19:32
+1336052062,Segunda División,120775,2026-10-16,18:30,Leganes,Cordoba,19:15,19:32
+1321420819,Ligue 1,52695,2026-10-16,18:45,Le Mans,Toulouse,19:30,19:47
+1319179285,Serie A,115669,2026-10-16,18:45,Frosinone,Sassuolo,19:30,19:47
+1336423949,La Liga,119924,2026-10-16,19:00,Deportivo La Coruña,Levante,19:45,20:02
