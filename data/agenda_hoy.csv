@@ -1,6 +1,26 @@
 match_id,liga,liga_id,fecha,saque_utc,local,visitante,descanso_desde,descanso_hasta
-1340484921,Bundesliga,67162,2026-10-16,18:30,Eintracht Frankfurt,FC Koln,19:15,19:32
-1336052062,Segunda División,120775,2026-10-16,18:30,Leganes,Cordoba,19:15,19:32
-1321420819,Ligue 1,52695,2026-10-16,18:45,Le Mans,Toulouse,19:30,19:47
-1319179285,Serie A,115669,2026-10-16,18:45,Frosinone,Sassuolo,19:30,19:47
-1336423949,La Liga,119924,2026-10-16,19:00,Deportivo La Coruña,Levante,19:45,20:02
+1325373714,Premier League,33973,2026-10-17,11:30,Everton,Chelsea,12:15,12:32
+1336424800,La Liga,119924,2026-10-17,12:00,Espanyol,Atlético Madrid,12:45,13:02
+1336052913,Segunda División,120775,2026-10-17,12:00,Real Sociedad B,Almería,12:45,13:02
+1319183540,Serie A,115669,2026-10-17,13:00,Venezia,Napoli,13:45,14:02
+1340490027,Bundesliga,67162,2026-10-17,13:30,SV Elversberg,FC Augsburg,14:15,14:32
+1340489176,Bundesliga,67162,2026-10-17,13:30,FC Schalke 04,FSV Mainz 05,14:15,14:32
+1340488325,Bundesliga,67162,2026-10-17,13:30,Werder Bremen,SC Paderborn 07,14:15,14:32
+1340487474,Bundesliga,67162,2026-10-17,13:30,Hamburger SV,VfB Stuttgart,14:15,14:32
+1340485772,Bundesliga,67162,2026-10-17,13:30,Union Berlin,Borussia Dortmund,14:15,14:32
+1325376267,Premier League,33973,2026-10-17,14:00,Manchester City,Ipswich,14:45,15:02
+1325374565,Premier League,33973,2026-10-17,14:00,Fulham,Hull City,14:45,15:02
+1325372012,Premier League,33973,2026-10-17,14:00,Brentford,Liverpool,14:45,15:02
+1336047807,Segunda División,120775,2026-10-17,14:15,Eibar,Mallorca,15:00,15:17
+1336429906,La Liga,119924,2026-10-17,14:15,Villarreal,Elche,15:00,15:17
+1321425074,Ligue 1,52695,2026-10-17,15:15,Strasbourg,Paris Saint Germain,16:00,16:17
+1319177583,Serie A,115669,2026-10-17,16:00,Bologna,Inter,16:45,17:02
+1340483219,Bundesliga,67162,2026-10-17,16:30,Bayern Munich,RB Leipzig,17:15,17:32
+1336422247,La Liga,119924,2026-10-17,16:30,Real Betis,Barcelona,17:15,17:32
+1325377118,Premier League,33973,2026-10-17,16:30,Newcastle United,Aston Villa,17:15,17:32
+1336048658,Segunda División,120775,2026-10-17,16:30,Sporting Gijón,Albacete,17:15,17:32
+1321425925,Ligue 1,52695,2026-10-17,18:45,Estac Troyes,Lens,19:30,19:47
+1321421670,Ligue 1,52695,2026-10-17,18:45,Lille,Stade Brestois 29,19:30,19:47
+1319176732,Serie A,115669,2026-10-17,18:45,AS Roma,Genoa,19:30,19:47
+1336429055,La Liga,119924,2026-10-17,19:00,Valencia,Athletic Club,19:45,20:02
+1336051211,Segunda División,120775,2026-10-17,19:00,Las Palmas,Castellón,19:45,20:02
