@@ -1,13 +1,4 @@
 match_id,liga,liga_id,fecha,saque_utc,local,visitante,ronda
--6106414,Champions League,2486,2026-10-13,16:45,Lens,Sporting CP,FotMob 6106414
--6106424,Champions League,2486,2026-10-13,16:45,Sabah FK,Slavia Prague,FotMob 6106424
--6106260,Champions League,2486,2026-10-13,19:00,Arsenal,Lille,FotMob 6106260
--6106267,Champions League,2486,2026-10-13,19:00,Atlético Madrid,Manchester United,FotMob 6106267
--6106338,Champions League,2486,2026-10-13,19:00,Galatasaray,Barcelona,FotMob 6106338
--6106251,Champions League,2486,2026-10-13,19:00,Inter,Club Brugge,FotMob 6106251
--6106323,Champions League,2486,2026-10-13,19:00,RB Leipzig,PSV Eindhoven,FotMob 6106323
--6106417,Champions League,2486,2026-10-13,19:00,Viking,Bayern Munich,FotMob 6106417
--6106328,Champions League,2486,2026-10-13,19:00,Villarreal,Napoli,FotMob 6106328
 -6106309,Champions League,2486,2026-10-14,16:45,Feyenoord,Como,FotMob 6106309
 -6106405,Champions League,2486,2026-10-14,16:45,LASK,Liverpool,FotMob 6106405
 -6106284,Champions League,2486,2026-10-14,19:00,Aston Villa,Fenerbahçe,FotMob 6106284
@@ -17,3 +8,12 @@ match_id,liga,liga_id,fecha,saque_utc,local,visitante,ronda
 -6106274,Champions League,2486,2026-10-14,19:00,AS Roma,Real Madrid,FotMob 6106274
 -6106337,Champions League,2486,2026-10-14,19:00,Shakhtar Donetsk,AEK Athens,FotMob 6106337
 -6106396,Champions League,2486,2026-10-14,19:00,Slovan Bratislava,VfB Stuttgart,FotMob 6106396
+-6106333,Champions League,2486,2026-10-20,16:45,Fenerbahçe,Slavia Prague,FotMob 6106333
+-6106422,Champions League,2486,2026-10-20,16:45,Sabah FK,Borussia Dortmund,FotMob 6106422
+-6106287,Champions League,2486,2026-10-20,19:00,FC Porto,PSV Eindhoven,FotMob 6106287
+-6106248,Champions League,2486,2026-10-20,19:00,Liverpool,Villarreal,FotMob 6106248
+-6106257,Champions League,2486,2026-10-20,19:00,Manchester City,AEK Athens,FotMob 6106257
+-6106234,Champions League,2486,2026-10-20,19:00,Paris Saint Germain,Barcelona,FotMob 6106234
+-6106277,Champions League,2486,2026-10-20,19:00,AS Roma,Slovan Bratislava,FotMob 6106277
+-6106320,Champions League,2486,2026-10-20,19:00,Napoli,Bodø/Glimt,FotMob 6106320
+-6106397,Champions League,2486,2026-10-20,19:00,VfB Stuttgart,Atlético Madrid,FotMob 6106397
