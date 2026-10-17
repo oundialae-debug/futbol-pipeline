@@ -7001,7 +7001,7 @@ id,liga,temporada,fecha,local_id,local,visitante_id,visitante,estado,periodo,cua
 1545692,NBA,2027,2026-10-09T00:00:00.000Z,37,San Antonio Spurs,23,Atlanta Hawks,Scheduled,0,[],[]
 1545693,NBA,2027,2026-10-09T02:30:00.000Z,4,Los Angeles Lakers,32,Sacramento Kings,Scheduled,0,[],[]
 1545782,NBA,2027,2026-10-09T12:00:00.000Z,40,Dallas Mavericks,28,Houston Rockets,Finished,4,"[19, 26, 35, 37]","[27, 38, 34, 36]"
-1545783,NBA,2027,2026-10-10T00:00:00.000Z,27,Chicago Bulls,42,Memphis Grizzlies,Finished,4,"[27, 23, 32, 18]","[30, 30, 25, 19]"
+1545783,NBA,2027,2026-10-10T00:00:00.000Z,27,Chicago Bulls,42,Memphis Grizzlies,Scheduled,0,[],[]
 1545808,NBA,2027,2026-10-10T22:30:00.000Z,34,Toronto Raptors,30,LA Clippers,Finished,4,"[24, 33, 32, 25]","[18, 27, 27, 34]"
 1545810,NBA,2027,2026-10-10T23:00:00.000Z,50,Washington Wizards,25,Detroit Pistons,Finished,5,"[40, 16, 24, 18, 16]","[20, 30, 28, 20, 10]"
 1545809,NBA,2027,2026-10-10T23:00:00.000Z,36,Indiana Pacers,23,Atlanta Hawks,Finished,4,"[32, 28, 26, 31]","[31, 31, 34, 23]"
@@ -7032,18 +7032,18 @@ id,liga,temporada,fecha,local_id,local,visitante_id,visitante,estado,periodo,cua
 1546061,NBA,2027,2026-10-15T02:30:00.000Z,30,LA Clippers,3,Denver Nuggets,Finished,4,"[24, 34, 38, 26]","[24, 31, 26, 29]"
 1546327,NBA,2027,2026-10-15T23:30:00.000Z,26,New York Knicks,34,Toronto Raptors,Finished,4,"[35, 28, 24, 35]","[32, 26, 21, 41]"
 1546328,NBA,2027,2026-10-16T00:30:00.000Z,28,Houston Rockets,38,Oklahoma City Thunder,Finished,4,"[33, 21, 25, 37]","[15, 32, 22, 20]"
-1546386,NBA,2027,2026-10-16T23:00:00.000Z,25,Detroit Pistons,34,Toronto Raptors,Scheduled,0,[],[]
-1546384,NBA,2027,2026-10-16T23:00:00.000Z,24,Orlando Magic,1,Miami Heat,Scheduled,0,[],[]
-1546385,NBA,2027,2026-10-16T23:00:00.000Z,71,Philadelphia 76ers,2,Boston Celtics,Scheduled,0,[],[]
-1546387,NBA,2027,2026-10-16T23:00:00.000Z,36,Indiana Pacers,39,Milwaukee Bucks,Scheduled,0,[],[]
-1546388,NBA,2027,2026-10-17T00:00:00.000Z,40,Dallas Mavericks,23,Atlanta Hawks,Scheduled,0,[],[]
-1546389,NBA,2027,2026-10-17T00:00:00.000Z,37,San Antonio Spurs,32,Sacramento Kings,Scheduled,0,[],[]
-1546390,NBA,2027,2026-10-17T00:00:00.000Z,42,Memphis Grizzlies,33,Charlotte Hornets,Scheduled,0,[],[]
-1546391,NBA,2027,2026-10-17T00:00:00.000Z,64,New Orleans Pelicans,50,Washington Wizards,Scheduled,0,[],[]
-1546392,NBA,2027,2026-10-17T00:00:00.000Z,27,Chicago Bulls,41,Minnesota Timberwolves,Scheduled,0,[],[]
-1546394,NBA,2027,2026-10-17T02:00:00.000Z,46,Phoenix Suns,45,Utah Jazz,Scheduled,0,[],[]
-1546393,NBA,2027,2026-10-17T02:00:00.000Z,43,Golden State Warriors,31,Portland Trail Blazers,Scheduled,0,[],[]
-1546395,NBA,2027,2026-10-17T02:30:00.000Z,4,Los Angeles Lakers,3,Denver Nuggets,Scheduled,0,[],[]
+1546386,NBA,2027,2026-10-16T23:00:00.000Z,25,Detroit Pistons,34,Toronto Raptors,Finished,4,"[33, 26, 34, 36]","[33, 19, 28, 45]"
+1546384,NBA,2027,2026-10-16T23:00:00.000Z,24,Orlando Magic,1,Miami Heat,Finished,4,"[34, 36, 38, 28]","[36, 29, 30, 20]"
+1546385,NBA,2027,2026-10-16T23:00:00.000Z,71,Philadelphia 76ers,2,Boston Celtics,Finished,5,"[28, 32, 34, 21, 5]","[34, 24, 26, 31, 10]"
+1546387,NBA,2027,2026-10-16T23:00:00.000Z,36,Indiana Pacers,39,Milwaukee Bucks,Finished,5,"[29, 42, 22, 24, 10]","[21, 35, 34, 27, 11]"
+1546388,NBA,2027,2026-10-17T00:00:00.000Z,40,Dallas Mavericks,23,Atlanta Hawks,Finished,4,"[34, 20, 24, 33]","[39, 34, 29, 33]"
+1546389,NBA,2027,2026-10-17T00:00:00.000Z,37,San Antonio Spurs,32,Sacramento Kings,Finished,4,"[42, 29, 30, 25]","[18, 19, 35, 25]"
+1546390,NBA,2027,2026-10-17T00:00:00.000Z,42,Memphis Grizzlies,33,Charlotte Hornets,Finished,4,"[23, 27, 30, 37]","[20, 18, 24, 36]"
+1546391,NBA,2027,2026-10-17T00:00:00.000Z,64,New Orleans Pelicans,50,Washington Wizards,Finished,4,"[23, 33, 25, 26]","[17, 34, 19, 36]"
+1546392,NBA,2027,2026-10-17T00:00:00.000Z,27,Chicago Bulls,41,Minnesota Timberwolves,Finished,4,"[33, 34, 31, 35]","[28, 32, 28, 28]"
+1546394,NBA,2027,2026-10-17T02:00:00.000Z,46,Phoenix Suns,45,Utah Jazz,Finished,4,"[30, 35, 30, 21]","[31, 28, 31, 29]"
+1546393,NBA,2027,2026-10-17T02:00:00.000Z,43,Golden State Warriors,31,Portland Trail Blazers,Finished,4,"[35, 32, 38, 23]","[26, 32, 33, 27]"
+1546395,NBA,2027,2026-10-17T02:30:00.000Z,4,Los Angeles Lakers,3,Denver Nuggets,Finished,4,"[22, 33, 28, 23]","[36, 26, 26, 33]"
 1546999,NBA,2027,2026-10-20T19:00:00.000Z,25,Detroit Pistons,2,Boston Celtics,Scheduled,0,[],[]
 1547000,NBA,2027,2026-10-20T23:00:00.000Z,26,New York Knicks,71,Philadelphia 76ers,Scheduled,0,[],[]
 1547001,NBA,2027,2026-10-21T01:30:00.000Z,37,San Antonio Spurs,38,Oklahoma City Thunder,Scheduled,0,[],[]
@@ -7060,13 +7060,13 @@ id,liga,temporada,fecha,local_id,local,visitante_id,visitante,estado,periodo,cua
 1547082,NBA,2027,2026-10-22T02:30:00.000Z,30,LA Clippers,32,Sacramento Kings,Scheduled,0,[],[]
 1547326,NBA,2027,2026-10-22T23:00:00.000Z,71,Philadelphia 76ers,35,Cleveland Cavaliers,Scheduled,0,[],[]
 1547327,NBA,2027,2026-10-23T01:30:00.000Z,38,Oklahoma City Thunder,3,Denver Nuggets,Scheduled,0,[],[]
+1547583,NBA,2027,2026-10-23T20:00:00.000Z,39,Milwaukee Bucks,27,Chicago Bulls,Scheduled,0,[],[]
 1547579,NBA,2027,2026-10-23T23:00:00.000Z,36,Indiana Pacers,40,Dallas Mavericks,Scheduled,0,[],[]
 1547577,NBA,2027,2026-10-23T23:00:00.000Z,2,Boston Celtics,26,New York Knicks,Scheduled,0,[],[]
 1547580,NBA,2027,2026-10-23T23:00:00.000Z,24,Orlando Magic,41,Minnesota Timberwolves,Scheduled,0,[],[]
 1547581,NBA,2027,2026-10-23T23:00:00.000Z,50,Washington Wizards,34,Toronto Raptors,Scheduled,0,[],[]
 1547578,NBA,2027,2026-10-23T23:00:00.000Z,33,Charlotte Hornets,23,Atlanta Hawks,Scheduled,0,[],[]
 1547582,NBA,2027,2026-10-24T00:00:00.000Z,1,Miami Heat,25,Detroit Pistons,Scheduled,0,[],[]
-1547583,NBA,2027,2026-10-24T00:00:00.000Z,39,Milwaukee Bucks,27,Chicago Bulls,Scheduled,0,[],[]
 1547585,NBA,2027,2026-10-24T01:30:00.000Z,45,Utah Jazz,64,New Orleans Pelicans,Scheduled,0,[],[]
 1547584,NBA,2027,2026-10-24T01:30:00.000Z,37,San Antonio Spurs,28,Houston Rockets,Scheduled,0,[],[]
 1547586,NBA,2027,2026-10-24T02:00:00.000Z,43,Golden State Warriors,42,Memphis Grizzlies,Scheduled,0,[],[]
