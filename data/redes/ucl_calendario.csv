@@ -1,13 +1,4 @@
 match_id,liga,liga_id,fecha,saque_utc,local,visitante,ronda
--6106309,Champions League,2486,2026-10-14,16:45,Feyenoord,Como,FotMob 6106309
--6106405,Champions League,2486,2026-10-14,16:45,LASK,Liverpool,FotMob 6106405
--6106284,Champions League,2486,2026-10-14,19:00,Aston Villa,Fenerbahçe,FotMob 6106284
--6106315,Champions League,2486,2026-10-14,19:00,Bodø/Glimt,Borussia Dortmund,FotMob 6106315
--6106254,Champions League,2486,2026-10-14,19:00,Manchester City,Paris Saint Germain,FotMob 6106254
--6106299,Champions League,2486,2026-10-14,19:00,Real Betis,FC Porto,FotMob 6106299
--6106274,Champions League,2486,2026-10-14,19:00,AS Roma,Real Madrid,FotMob 6106274
--6106337,Champions League,2486,2026-10-14,19:00,Shakhtar Donetsk,AEK Athens,FotMob 6106337
--6106396,Champions League,2486,2026-10-14,19:00,Slovan Bratislava,VfB Stuttgart,FotMob 6106396
 -6106333,Champions League,2486,2026-10-20,16:45,Fenerbahçe,Slavia Prague,FotMob 6106333
 -6106422,Champions League,2486,2026-10-20,16:45,Sabah FK,Borussia Dortmund,FotMob 6106422
 -6106287,Champions League,2486,2026-10-20,19:00,FC Porto,PSV Eindhoven,FotMob 6106287
@@ -17,3 +8,12 @@ match_id,liga,liga_id,fecha,saque_utc,local,visitante,ronda
 -6106277,Champions League,2486,2026-10-20,19:00,AS Roma,Slovan Bratislava,FotMob 6106277
 -6106320,Champions League,2486,2026-10-20,19:00,Napoli,Bodø/Glimt,FotMob 6106320
 -6106397,Champions League,2486,2026-10-20,19:00,VfB Stuttgart,Atlético Madrid,FotMob 6106397
+-6106410,Champions League,2486,2026-10-21,16:45,Como,Manchester United,FotMob 6106410
+-6106312,Champions League,2486,2026-10-21,16:45,Lille,Galatasaray,FotMob 6106312
+-6106285,Champions League,2486,2026-10-21,19:00,Aston Villa,Viking,FotMob 6106285
+-6106238,Champions League,2486,2026-10-21,19:00,Bayern Munich,Arsenal,FotMob 6106238
+-6106297,Champions League,2486,2026-10-21,19:00,Club Brugge,Lens,FotMob 6106297
+-6106252,Champions League,2486,2026-10-21,19:00,Inter,Shakhtar Donetsk,FotMob 6106252
+-6106300,Champions League,2486,2026-10-21,19:00,Real Betis,Feyenoord,FotMob 6106300
+-6106244,Champions League,2486,2026-10-21,19:00,Real Madrid,RB Leipzig,FotMob 6106244
+-6106281,Champions League,2486,2026-10-21,19:00,Sporting CP,LASK,FotMob 6106281
