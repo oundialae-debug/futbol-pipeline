@@ -1,2 +1,1 @@
-match_id,liga,liga_id,fecha,saque_utc,local,visitante,descanso_desde,descanso_hasta
-1336401823,La Liga,119924,2026-10-21,18:00,Levante,Athletic Club,18:45,19:02
+match_id,liga,saque_utc,local,visitante,descanso_desde,descanso_hasta
