@@ -1,1 +1,7 @@
-match_id,liga,saque_utc,local,visitante,descanso_desde,descanso_hasta
+match_id,liga,liga_id,fecha,saque_utc,local,visitante,descanso_desde,descanso_hasta
+1340492580,Bundesliga,67162,2026-10-23,18:30,VfB Stuttgart,Borussia Mönchengladbach,19:15,19:32
+1336060572,Segunda División,120775,2026-10-23,18:30,Granada CF,Valladolid,19:15,19:32
+1321428478,Ligue 1,52695,2026-10-23,18:45,Stade Brestois 29,Nice,19:30,19:47
+1319191199,Serie A,115669,2026-10-23,18:45,Torino,Monza,19:30,19:47
+1336430757,La Liga,119924,2026-10-23,19:00,Alavés,Malaga,19:45,20:02
+1325384777,Premier League,33973,2026-10-23,19:00,Ipswich,Nottingham Forest,19:45,20:02
