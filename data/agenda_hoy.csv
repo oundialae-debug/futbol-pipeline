@@ -1,7 +1,26 @@
 match_id,liga,liga_id,fecha,saque_utc,local,visitante,descanso_desde,descanso_hasta
-1340492580,Bundesliga,67162,2026-10-23,18:30,VfB Stuttgart,Borussia Mönchengladbach,19:15,19:32
-1336060572,Segunda División,120775,2026-10-23,18:30,Granada CF,Valladolid,19:15,19:32
-1321428478,Ligue 1,52695,2026-10-23,18:45,Stade Brestois 29,Nice,19:30,19:47
-1319191199,Serie A,115669,2026-10-23,18:45,Torino,Monza,19:30,19:47
-1336430757,La Liga,119924,2026-10-23,19:00,Alavés,Malaga,19:45,20:02
-1325384777,Premier League,33973,2026-10-23,19:00,Ipswich,Nottingham Forest,19:45,20:02
+1325380522,Premier League,33973,2026-10-24,11:30,Aston Villa,Manchester City,12:15,12:32
+1336435863,La Liga,119924,2026-10-24,12:00,Rayo Vallecano,Elche,12:45,13:02
+1336058870,Segunda División,120775,2026-10-24,12:00,Cordoba,Eibar,12:45,13:02
+1319186093,Serie A,115669,2026-10-24,13:00,Como,Sassuolo,13:45,14:02
+1319185242,Serie A,115669,2026-10-24,13:00,Cagliari,Bologna,13:45,14:02
+1340497686,Bundesliga,67162,2026-10-24,13:30,SC Paderborn 07,Hamburger SV,14:15,14:32
+1340496835,Bundesliga,67162,2026-10-24,13:30,FC Koln,FC Schalke 04,14:15,14:32
+1340495984,Bundesliga,67162,2026-10-24,13:30,FSV Mainz 05,Werder Bremen,14:15,14:32
+1340495133,Bundesliga,67162,2026-10-24,13:30,FC Augsburg,Union Berlin,14:15,14:32
+1340491729,Bundesliga,67162,2026-10-24,13:30,RB Leipzig,SV Elversberg,14:15,14:32
+1325382224,Premier League,33973,2026-10-24,14:00,Coventry,Fulham,14:45,15:02
+1325379671,Premier League,33973,2026-10-24,14:00,Arsenal,Everton,14:45,15:02
+1336062274,Segunda División,120775,2026-10-24,14:15,Leganes,Mallorca,15:00,15:17
+1336435012,La Liga,119924,2026-10-24,14:15,Racing Santander,Espanyol,15:00,15:17
+1321432733,Ligue 1,52695,2026-10-24,15:15,Toulouse,Estac Troyes,16:00,16:17
+1319190348,Serie A,115669,2026-10-24,16:00,Napoli,AS Roma,16:45,17:02
+1340490878,Bundesliga,67162,2026-10-24,16:30,Borussia Dortmund,Eintracht Frankfurt,17:15,17:32
+1336438416,La Liga,119924,2026-10-24,16:30,Valencia,Villarreal,17:15,17:32
+1325381373,Premier League,33973,2026-10-24,16:30,Chelsea,Tottenham,17:15,17:32
+1336061423,Segunda División,120775,2026-10-24,16:30,Las Palmas,Real Sociedad B,17:15,17:32
+1336059721,Segunda División,120775,2026-10-24,16:30,Girona,Celta de Vigo II,17:15,17:32
+1321429329,Ligue 1,52695,2026-10-24,18:45,Lens,Paris FC,19:30,19:47
+1319188646,Serie A,115669,2026-10-24,18:45,Lazio,Parma,19:30,19:47
+1336432459,La Liga,119924,2026-10-24,19:00,Atlético Madrid,Deportivo La Coruña,19:45,20:02
+1336055466,Segunda División,120775,2026-10-24,19:00,Almería,Oviedo,19:45,20:02
