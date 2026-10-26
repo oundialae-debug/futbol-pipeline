@@ -1,27 +1,4 @@
 match_id,liga,liga_id,fecha,saque_utc,local,visitante,descanso_desde,descanso_hasta
-1319187795,Serie A,115669,2026-10-25,11:30,Inter,Fiorentina,12:15,12:32
-1336431608,La Liga,119924,2026-10-25,13:00,Athletic Club,Getafe,13:45,14:02
-1336063125,Segunda División,120775,2026-10-25,13:00,Sabadell,Tenerife,13:45,14:02
-1321431031,Ligue 1,52695,2026-10-25,14:00,Monaco,Lille,14:45,15:02
-1325386479,Premier League,33973,2026-10-25,14:00,Manchester United,Bournemouth,14:45,15:02
-1325385628,Premier League,33973,2026-10-25,14:00,Liverpool,Brighton,14:45,15:02
-1325383926,Premier League,33973,2026-10-25,14:00,Hull City,Brentford,14:45,15:02
-1325383075,Premier League,33973,2026-10-25,14:00,Crystal Palace,Newcastle United,14:45,15:02
-1319186944,Serie A,115669,2026-10-25,14:00,Genoa,Venezia,14:45,15:02
-1319184391,Serie A,115669,2026-10-25,14:00,Atalanta,Frosinone,14:45,15:02
-1340493431,Bundesliga,67162,2026-10-25,14:30,1899 Hoffenheim,Bayer Leverkusen,15:15,15:32
-1336054615,Segunda División,120775,2026-10-25,15:15,Albacete,Eldense,16:00,16:17
-1336057168,Segunda División,120775,2026-10-25,15:15,Cadiz,AD Ceuta FC,16:00,16:17
-1336434161,La Liga,119924,2026-10-25,15:15,Celta de Vigo,Real Betis,16:00,16:17
-1321431882,Ligue 1,52695,2026-10-25,16:15,Rennes FC,Strasbourg,17:00,17:17
-1321430180,Ligue 1,52695,2026-10-25,16:15,Marseille,LE Havre AC,17:00,17:17
-1321427627,Ligue 1,52695,2026-10-25,16:15,Auxerre,Le Mans,17:00,17:17
-1321426776,Ligue 1,52695,2026-10-25,16:15,Angers,Lorient,17:00,17:17
-1340494282,Bundesliga,67162,2026-10-25,16:30,SC Freiburg,Bayern Munich,17:15,17:32
-1325387330,Premier League,33973,2026-10-25,16:30,Sunderland,Leeds,17:15,17:32
-1319189497,Serie A,115669,2026-10-25,17:00,Lecce,Juventus,17:45,18:02
-1336436714,La Liga,119924,2026-10-25,17:30,Real Sociedad,Levante,18:15,18:32
-1336058019,Segunda División,120775,2026-10-25,17:30,Castellón,Sporting Gijón,18:15,18:32
-1321433584,Ligue 1,52695,2026-10-25,19:45,Paris Saint Germain,Lyon,20:30,20:47
-1319192050,Serie A,115669,2026-10-25,19:45,Udinese,AC Milan,20:30,20:47
-1336433310,La Liga,119924,2026-10-25,20:00,Barcelona,Real Madrid,20:45,21:02
+1321433584,Ligue 1,52695,2026-10-26,19:30,Paris Saint Germain,Lyon,20:15,20:32
+1336056317,Segunda División,120775,2026-10-26,19:30,FC Andorra,Burgos,20:15,20:32
+1336437565,La Liga,119924,2026-10-26,20:00,Sevilla FC,Osasuna,20:45,21:02
