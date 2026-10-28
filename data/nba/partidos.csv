@@ -7048,9 +7048,9 @@ id,liga,temporada,fecha,local_id,local,visitante_id,visitante,estado,periodo,cua
 1546394,NBA,2027,2026-10-17T02:00:00.000Z,46,Phoenix Suns,45,Utah Jazz,Finished,4,"[30, 35, 30, 21]","[31, 28, 31, 29]"
 1546393,NBA,2027,2026-10-17T02:00:00.000Z,43,Golden State Warriors,31,Portland Trail Blazers,Finished,4,"[35, 32, 38, 23]","[26, 32, 33, 27]"
 1546395,NBA,2027,2026-10-17T02:30:00.000Z,4,Los Angeles Lakers,3,Denver Nuggets,Finished,4,"[22, 33, 28, 23]","[36, 26, 26, 33]"
-1546999,NBA,2027,2026-10-20T19:00:00.000Z,25,Detroit Pistons,2,Boston Celtics,Scheduled,0,[],[]
-1547000,NBA,2027,2026-10-20T23:00:00.000Z,26,New York Knicks,71,Philadelphia 76ers,Scheduled,0,[],[]
-1547001,NBA,2027,2026-10-21T01:30:00.000Z,37,San Antonio Spurs,38,Oklahoma City Thunder,Scheduled,0,[],[]
+1546999,NBA,2027,2026-10-20T19:00:00.000Z,25,Detroit Pistons,2,Boston Celtics,Finished,4,"[27, 18, 37, 39]","[28, 30, 30, 25]"
+1547000,NBA,2027,2026-10-20T23:00:00.000Z,26,New York Knicks,71,Philadelphia 76ers,Finished,4,"[25, 33, 18, 24]","[23, 31, 29, 23]"
+1547001,NBA,2027,2026-10-21T01:50:00.000Z,37,San Antonio Spurs,38,Oklahoma City Thunder,Finished,4,"[28, 16, 36, 24]","[34, 31, 28, 23]"
 1547073,NBA,2027,2026-10-21T23:00:00.000Z,50,Washington Wizards,39,Milwaukee Bucks,Scheduled,0,[],[]
 1547072,NBA,2027,2026-10-21T23:00:00.000Z,24,Orlando Magic,23,Atlanta Hawks,Scheduled,0,[],[]
 1547074,NBA,2027,2026-10-21T23:30:00.000Z,1,Miami Heat,41,Minnesota Timberwolves,Scheduled,0,[],[]
