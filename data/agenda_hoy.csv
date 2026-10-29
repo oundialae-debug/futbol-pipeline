@@ -1,6 +1,3 @@
 match_id,liga,liga_id,fecha,saque_utc,local,visitante,descanso_desde,descanso_hasta
-1319200560,Serie A,115669,2026-10-28,17:30,Venezia,Inter,18:15,18:32
-1319198007,Serie A,115669,2026-10-28,17:30,Parma,Udinese,18:15,18:32
-1319192901,Serie A,115669,2026-10-28,17:30,AC Milan,Bologna,18:15,18:32
-1319197156,Serie A,115669,2026-10-28,19:45,Monza,Napoli,20:30,20:47
-1319196305,Serie A,115669,2026-10-28,19:45,Genoa,Juventus,20:30,20:47
+1319195454,Serie A,115669,2026-10-29,17:30,Frosinone,Lecce,18:15,18:32
+1319194603,Serie A,115669,2026-10-29,19:45,Fiorentina,Atalanta,20:30,20:47
