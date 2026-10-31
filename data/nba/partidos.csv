@@ -7067,12 +7067,12 @@ id,liga,temporada,fecha,local_id,local,visitante_id,visitante,estado,periodo,cua
 1547583,NBA,2027,2026-10-23T20:00:00.000Z,39,Milwaukee Bucks,27,Chicago Bulls,Finished,4,"[32, 30, 42, 21]","[17, 44, 41, 30]"
 1547579,NBA,2027,2026-10-23T23:00:00.000Z,36,Indiana Pacers,40,Dallas Mavericks,Finished,4,"[27, 16, 33, 29]","[44, 33, 21, 23]"
 1547577,NBA,2027,2026-10-23T23:00:00.000Z,2,Boston Celtics,26,New York Knicks,Finished,4,"[26, 24, 33, 24]","[27, 22, 24, 30]"
-1547580,NBA,2027,2026-10-23T23:00:00.000Z,24,Orlando Magic,41,Minnesota Timberwolves,Scheduled,0,[],[]
-1547581,NBA,2027,2026-10-23T23:00:00.000Z,50,Washington Wizards,34,Toronto Raptors,Scheduled,0,[],[]
+1547580,NBA,2027,2026-10-23T23:00:00.000Z,24,Orlando Magic,41,Minnesota Timberwolves,Finished,4,"[20, 25, 15, 33]","[26, 31, 29, 29]"
+1547581,NBA,2027,2026-10-23T23:00:00.000Z,50,Washington Wizards,34,Toronto Raptors,Finished,4,"[21, 31, 25, 25]","[34, 26, 21, 31]"
 1547578,NBA,2027,2026-10-23T23:00:00.000Z,33,Charlotte Hornets,23,Atlanta Hawks,Finished,4,"[20, 23, 19, 19]","[33, 35, 29, 31]"
-1547582,NBA,2027,2026-10-24T00:00:00.000Z,1,Miami Heat,25,Detroit Pistons,Scheduled,0,[],[]
-1547585,NBA,2027,2026-10-24T01:30:00.000Z,45,Utah Jazz,64,New Orleans Pelicans,Scheduled,0,[],[]
-1547584,NBA,2027,2026-10-24T01:30:00.000Z,37,San Antonio Spurs,28,Houston Rockets,Scheduled,0,[],[]
+1547582,NBA,2027,2026-10-24T00:00:00.000Z,1,Miami Heat,25,Detroit Pistons,Finished,4,"[26, 27, 27, 31]","[41, 24, 38, 25]"
+1547585,NBA,2027,2026-10-24T01:30:00.000Z,45,Utah Jazz,64,New Orleans Pelicans,Finished,4,"[31, 31, 24, 34]","[28, 24, 38, 29]"
+1547584,NBA,2027,2026-10-24T01:30:00.000Z,37,San Antonio Spurs,28,Houston Rockets,Finished,4,"[27, 32, 22, 29]","[32, 29, 24, 29]"
 1547586,NBA,2027,2026-10-24T02:00:00.000Z,43,Golden State Warriors,42,Memphis Grizzlies,Scheduled,0,[],[]
 1547588,NBA,2027,2026-10-24T02:00:00.000Z,32,Sacramento Kings,31,Portland Trail Blazers,Scheduled,0,[],[]
 1547587,NBA,2027,2026-10-24T02:00:00.000Z,4,Los Angeles Lakers,30,LA Clippers,Scheduled,0,[],[]
