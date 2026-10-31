@@ -1,19 +1,10 @@
 match_id,liga,liga_id,fecha,saque_utc,local,visitante,ronda
--6106333,Champions League,2486,2026-10-20,16:45,Fenerbahçe,Slavia Prague,FotMob 6106333
--6106422,Champions League,2486,2026-10-20,16:45,Sabah FK,Borussia Dortmund,FotMob 6106422
--6106287,Champions League,2486,2026-10-20,19:00,FC Porto,PSV Eindhoven,FotMob 6106287
--6106248,Champions League,2486,2026-10-20,19:00,Liverpool,Villarreal,FotMob 6106248
--6106257,Champions League,2486,2026-10-20,19:00,Manchester City,AEK Athens,FotMob 6106257
--6106234,Champions League,2486,2026-10-20,19:00,Paris Saint Germain,Barcelona,FotMob 6106234
--6106277,Champions League,2486,2026-10-20,19:00,AS Roma,Slovan Bratislava,FotMob 6106277
--6106320,Champions League,2486,2026-10-20,19:00,Napoli,Bodø/Glimt,FotMob 6106320
--6106397,Champions League,2486,2026-10-20,19:00,VfB Stuttgart,Atlético Madrid,FotMob 6106397
--6106410,Champions League,2486,2026-10-21,16:45,Como,Manchester United,FotMob 6106410
--6106312,Champions League,2486,2026-10-21,16:45,Lille,Galatasaray,FotMob 6106312
--6106285,Champions League,2486,2026-10-21,19:00,Aston Villa,Viking,FotMob 6106285
--6106238,Champions League,2486,2026-10-21,19:00,Bayern Munich,Arsenal,FotMob 6106238
--6106297,Champions League,2486,2026-10-21,19:00,Club Brugge,Lens,FotMob 6106297
--6106252,Champions League,2486,2026-10-21,19:00,Inter,Shakhtar Donetsk,FotMob 6106252
--6106300,Champions League,2486,2026-10-21,19:00,Real Betis,Feyenoord,FotMob 6106300
--6106244,Champions League,2486,2026-10-21,19:00,Real Madrid,RB Leipzig,FotMob 6106244
--6106281,Champions League,2486,2026-10-21,19:00,Sporting CP,LASK,FotMob 6106281
+-6106341,Champions League,2486,2026-11-03,17:45,Galatasaray,VfB Stuttgart,FotMob 6106341
+-6106335,Champions League,2486,2026-11-03,17:45,Shakhtar Donetsk,Sporting CP,FotMob 6106335
+-6106266,Champions League,2486,2026-11-03,20:00,Atlético Madrid,Bayern Munich,FotMob 6106266
+-6106263,Champions League,2486,2026-11-03,20:00,Barcelona,Aston Villa,FotMob 6106263
+-6106316,Champions League,2486,2026-11-03,20:00,Bodø/Glimt,Lille,FotMob 6106316
+-6106306,Champions League,2486,2026-11-03,20:00,Feyenoord,Inter,FotMob 6106306
+-6106408,Champions League,2486,2026-11-03,20:00,LASK,Slovan Bratislava,FotMob 6106408
+-6106291,Champions League,2486,2026-11-03,20:00,Manchester United,AS Roma,FotMob 6106291
+-6106326,Champions League,2486,2026-11-03,20:00,Villarreal,Paris Saint Germain,FotMob 6106326
