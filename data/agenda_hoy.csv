@@ -1,20 +1,10 @@
 match_id,liga,liga_id,fecha,saque_utc,local,visitante,descanso_desde,descanso_hasta
-1319203964,Serie A,115669,2026-11-01,11:30,Como,Venezia,12:15,12:32
-1336443522,La Liga,119924,2026-11-01,13:00,Getafe,Sevilla FC,13:45,14:02
-1336068231,Segunda División,120775,2026-11-01,13:00,Eldense,Granada CF,13:45,14:02
-1321440392,Ligue 1,52695,2026-11-01,14:00,Strasbourg,Auxerre,14:45,15:02
-1319206517,Serie A,115669,2026-11-01,14:00,Lazio,Cagliari,14:45,15:02
-1319204815,Serie A,115669,2026-11-01,14:00,Frosinone,Torino,14:45,15:02
-1340501941,Bundesliga,67162,2026-11-01,14:30,Union Berlin,FC Koln,15:15,15:32
-1336445224,La Liga,119924,2026-11-01,15:15,Racing Santander,Real Madrid,16:00,16:17
-1336066529,Segunda División,120775,2026-11-01,15:15,AD Ceuta FC,Sporting Gijón,16:00,16:17
-1321439541,Ligue 1,52695,2026-11-01,16:15,Paris FC,Monaco,17:00,17:17
-1340500239,Bundesliga,67162,2026-11-01,16:30,Eintracht Frankfurt,Hamburger SV,17:15,17:32
-1325393287,Premier League,33973,2026-11-01,16:30,Liverpool,Arsenal,17:15,17:32
-1319207368,Serie A,115669,2026-11-01,17:00,Lecce,Genoa,17:45,18:02
-1336442671,La Liga,119924,2026-11-01,17:30,Elche,Valencia,18:15,18:32
-1336064827,Segunda División,120775,2026-11-01,17:30,Burgos,Castellón,18:15,18:32
-1321437839,Ligue 1,52695,2026-11-01,19:45,Marseille,Toulouse,20:30,20:47
-1319205666,Serie A,115669,2026-11-01,19:45,Juventus,Napoli,20:30,20:47
-1336439267,La Liga,119924,2026-11-01,20:00,Athletic Club,Real Sociedad,20:45,21:02
-1336071635,Segunda División,120775,2026-11-01,20:00,Tenerife,FC Andorra,20:45,21:02
+1336071635,Segunda División,120775,2026-11-02,13:00,Tenerife,FC Andorra,13:45,14:02
+1336069933,Segunda División,120775,2026-11-02,15:15,Oviedo,Las Palmas,16:00,16:17
+1336072486,Segunda División,120775,2026-11-02,17:30,Valladolid,Leganes,18:15,18:32
+1319208219,Serie A,115669,2026-11-02,17:30,Sassuolo,Fiorentina,18:15,18:32
+1321436137,Ligue 1,52695,2026-11-02,19:45,Lorient,Stade Brestois 29,20:30,20:47
+1319202262,Serie A,115669,2026-11-02,19:45,Atalanta,Parma,20:30,20:47
+1336441820,La Liga,119924,2026-11-02,20:00,Deportivo La Coruña,Osasuna,20:45,21:02
+1325394989,Premier League,33973,2026-11-02,20:00,Newcastle United,Everton,20:45,21:02
+1336069082,Segunda División,120775,2026-11-02,20:00,Mallorca,Cadiz,20:45,21:02

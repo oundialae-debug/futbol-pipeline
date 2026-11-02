@@ -1,6 +1,6 @@
 # Calendario -- próximos 30 días
 
-Generado el 2026-10-26 10:10 UTC. **201 partidos** en 6 ligas.
+Generado el 2026-11-02 12:28 UTC. **197 partidos** en 6 ligas.
 
 > La hora del descanso es una ESTIMACIÓN: saque inicial más 45 minutos más descuento, y el descuento varía. Por eso la ventana va de +45 a +62. Quien la use tiene que comprobar el estado real del partido antes de calcular nada: el modelo solo vale con el partido parado en el intermedio, no por la hora que sea.
 
@@ -8,74 +8,11 @@ Generado el 2026-10-26 10:10 UTC. **201 partidos** en 6 ligas.
 
 | Día | Liga | Saque (UTC) | Partido | Ventana del descanso |
 |---|---|---|---|---|
-| 2026-10-26 | Ligue 1 | 19:30 | Paris Saint Germain vs Lyon | 20:15-20:32 |
-| 2026-10-26 | Segunda División | 19:30 | FC Andorra vs Burgos | 20:15-20:32 |
-| 2026-10-26 | La Liga | 20:00 | Sevilla FC vs Osasuna | 20:45-21:02 |
-| 2026-10-27 | Serie A | 17:30 | Sassuolo vs Lazio | 18:15-18:32 |
-| 2026-10-27 | Serie A | 19:45 | Torino vs Como | 20:30-20:47 |
-| 2026-10-27 | Serie A | 19:45 | AS Roma vs Cagliari | 20:30-20:47 |
-| 2026-10-28 | Serie A | 17:30 | Venezia vs Inter | 18:15-18:32 |
-| 2026-10-28 | Serie A | 17:30 | Parma vs Udinese | 18:15-18:32 |
-| 2026-10-28 | Serie A | 17:30 | AC Milan vs Bologna | 18:15-18:32 |
-| 2026-10-28 | Serie A | 19:45 | Monza vs Napoli | 20:30-20:47 |
-| 2026-10-28 | Serie A | 19:45 | Genoa vs Juventus | 20:30-20:47 |
-| 2026-10-29 | Serie A | 17:30 | Frosinone vs Lecce | 18:15-18:32 |
-| 2026-10-29 | Serie A | 19:45 | Fiorentina vs Atalanta | 20:30-20:47 |
-| 2026-10-30 | Ligue 1 | 18:00 | LE Havre AC vs Paris Saint Germain | 18:45-19:02 |
-| 2026-10-30 | Bundesliga | 19:30 | SV Elversberg vs FSV Mainz 05 | 20:15-20:32 |
-| 2026-10-30 | La Liga | 20:00 | Villarreal vs Espanyol | 20:45-21:02 |
-| 2026-10-30 | Ligue 1 | 20:05 | Lille vs Lens | 20:50-21:07 |
-| 2026-10-31 | Premier League | 12:30 | Chelsea vs Manchester United | 13:15-13:32 |
-| 2026-10-31 | La Liga | 13:00 | Levante vs Atlético Madrid | 13:45-14:02 |
-| 2026-10-31 | Segunda División | 13:00 | Real Sociedad B vs Girona | 13:45-14:02 |
-| 2026-10-31 | Serie A | 14:00 | Bologna vs Monza | 14:45-15:02 |
-| 2026-10-31 | Bundesliga | 14:30 | FC Schalke 04 vs RB Leipzig | 15:15-15:32 |
-| 2026-10-31 | Bundesliga | 14:30 | Werder Bremen vs 1899 Hoffenheim | 15:15-15:32 |
-| 2026-10-31 | Bundesliga | 14:30 | Borussia Mönchengladbach vs SC Paderborn 07 | 15:15-15:32 |
-| 2026-10-31 | Bundesliga | 14:30 | FC Augsburg vs SC Freiburg | 15:15-15:32 |
-| 2026-10-31 | Bundesliga | 14:30 | Bayer Leverkusen vs VfB Stuttgart | 15:15-15:32 |
-| 2026-10-31 | Premier League | 15:00 | Manchester City vs Brighton | 15:45-16:02 |
-| 2026-10-31 | Premier League | 15:00 | Hull City vs Ipswich | 15:45-16:02 |
-| 2026-10-31 | Premier League | 15:00 | Coventry vs Sunderland | 15:45-16:02 |
-| 2026-10-31 | Premier League | 15:00 | Brentford vs Nottingham Forest | 15:45-16:02 |
-| 2026-10-31 | Premier League | 15:00 | Bournemouth vs Leeds | 15:45-16:02 |
-| 2026-10-31 | La Liga | 15:15 | Rayo Vallecano vs Celta de Vigo | 16:00-16:17 |
-| 2026-10-31 | Segunda División | 15:15 | Eibar vs Almería | 16:00-16:17 |
-| 2026-10-31 | Ligue 1 | 16:15 | Nice vs Rennes FC | 17:00-17:17 |
-| 2026-10-31 | Serie A | 17:00 | Udinese vs AS Roma | 17:45-18:02 |
-| 2026-10-31 | Bundesliga | 17:30 | Bayern Munich vs Borussia Dortmund | 18:15-18:32 |
-| 2026-10-31 | La Liga | 17:30 | Real Betis vs Malaga | 18:15-18:32 |
-| 2026-10-31 | Premier League | 17:30 | Tottenham vs Crystal Palace | 18:15-18:32 |
-| 2026-10-31 | Segunda División | 17:30 | Celta de Vigo II vs Cordoba | 18:15-18:32 |
-| 2026-10-31 | Ligue 1 | 19:45 | Estac Troyes vs Le Mans | 20:30-20:47 |
-| 2026-10-31 | Ligue 1 | 19:45 | Lyon vs Angers | 20:30-20:47 |
-| 2026-10-31 | Ligue 1 | 19:45 | Lorient vs Stade Brestois 29 | 20:30-20:47 |
-| 2026-10-31 | Serie A | 19:45 | AC Milan vs Inter | 20:30-20:47 |
-| 2026-10-31 | La Liga | 20:00 | Barcelona vs Alavés | 20:45-21:02 |
-| 2026-10-31 | Premier League | 20:00 | Aston Villa vs Fulham | 20:45-21:02 |
-| 2026-10-31 | Segunda División | 20:00 | Albacete vs Sabadell | 20:45-21:02 |
-| 2026-11-01 | Serie A | 11:30 | Como vs Venezia | 12:15-12:32 |
-| 2026-11-01 | La Liga | 13:00 | Getafe vs Sevilla FC | 13:45-14:02 |
-| 2026-11-01 | Segunda División | 13:00 | Eldense vs Granada CF | 13:45-14:02 |
-| 2026-11-01 | Ligue 1 | 14:00 | Strasbourg vs Auxerre | 14:45-15:02 |
-| 2026-11-01 | Serie A | 14:00 | Lazio vs Cagliari | 14:45-15:02 |
-| 2026-11-01 | Serie A | 14:00 | Frosinone vs Torino | 14:45-15:02 |
-| 2026-11-01 | Bundesliga | 14:30 | Union Berlin vs FC Koln | 15:15-15:32 |
-| 2026-11-01 | La Liga | 15:15 | Racing Santander vs Real Madrid | 16:00-16:17 |
-| 2026-11-01 | Segunda División | 15:15 | AD Ceuta FC vs Sporting Gijón | 16:00-16:17 |
-| 2026-11-01 | Ligue 1 | 16:15 | Paris FC vs Monaco | 17:00-17:17 |
-| 2026-11-01 | Bundesliga | 16:30 | Eintracht Frankfurt vs Hamburger SV | 17:15-17:32 |
-| 2026-11-01 | Premier League | 16:30 | Liverpool vs Arsenal | 17:15-17:32 |
-| 2026-11-01 | Serie A | 17:00 | Lecce vs Genoa | 17:45-18:02 |
-| 2026-11-01 | La Liga | 17:30 | Elche vs Valencia | 18:15-18:32 |
-| 2026-11-01 | Segunda División | 17:30 | Burgos vs Castellón | 18:15-18:32 |
-| 2026-11-01 | Ligue 1 | 19:45 | Marseille vs Toulouse | 20:30-20:47 |
-| 2026-11-01 | Serie A | 19:45 | Juventus vs Napoli | 20:30-20:47 |
-| 2026-11-01 | La Liga | 20:00 | Athletic Club vs Real Sociedad | 20:45-21:02 |
-| 2026-11-01 | Segunda División | 20:00 | Tenerife vs FC Andorra | 20:45-21:02 |
+| 2026-11-02 | Segunda División | 13:00 | Tenerife vs FC Andorra | 13:45-14:02 |
 | 2026-11-02 | Segunda División | 15:15 | Oviedo vs Las Palmas | 16:00-16:17 |
 | 2026-11-02 | Segunda División | 17:30 | Valladolid vs Leganes | 18:15-18:32 |
 | 2026-11-02 | Serie A | 17:30 | Sassuolo vs Fiorentina | 18:15-18:32 |
+| 2026-11-02 | Ligue 1 | 19:45 | Lorient vs Stade Brestois 29 | 20:30-20:47 |
 | 2026-11-02 | Serie A | 19:45 | Atalanta vs Parma | 20:30-20:47 |
 | 2026-11-02 | La Liga | 20:00 | Deportivo La Coruña vs Osasuna | 20:45-21:02 |
 | 2026-11-02 | Premier League | 20:00 | Newcastle United vs Everton | 20:45-21:02 |
@@ -209,19 +146,71 @@ Generado el 2026-10-26 10:10 UTC. **201 partidos** en 6 ligas.
 | 2026-11-23 | Serie A | 17:30 | Monza vs Fiorentina | 18:15-18:32 |
 | 2026-11-23 | Serie A | 19:45 | Juventus vs Venezia | 20:30-20:47 |
 | 2026-11-23 | Premier League | 20:00 | Brentford vs Everton | 20:45-21:02 |
+| 2026-11-27 | Bundesliga | 19:30 | Werder Bremen vs Borussia Mönchengladbach | 20:15-20:32 |
+| 2026-11-27 | Ligue 1 | 19:45 | Stade Brestois 29 vs Paris FC | 20:30-20:47 |
+| 2026-11-27 | Premier League | 20:00 | Nottingham Forest vs Chelsea | 20:45-21:02 |
+| 2026-11-28 | Bundesliga | 14:30 | SC Paderborn 07 vs FC Schalke 04 | 15:15-15:32 |
+| 2026-11-28 | Bundesliga | 14:30 | FC Koln vs SV Elversberg | 15:15-15:32 |
+| 2026-11-28 | Bundesliga | 14:30 | Hamburger SV vs Bayern Munich | 15:15-15:32 |
+| 2026-11-28 | Bundesliga | 14:30 | FSV Mainz 05 vs Union Berlin | 15:15-15:32 |
+| 2026-11-28 | Premier League | 15:00 | Manchester United vs Brentford | 15:45-16:02 |
+| 2026-11-28 | Premier League | 15:00 | Leeds vs Coventry | 15:45-16:02 |
+| 2026-11-28 | Ligue 1 | 16:15 | Angers vs Lens | 17:00-17:17 |
+| 2026-11-28 | Bundesliga | 17:30 | VfB Stuttgart vs Eintracht Frankfurt | 18:15-18:32 |
+| 2026-11-28 | Premier League | 17:30 | Ipswich vs Aston Villa | 18:15-18:32 |
+| 2026-11-28 | Ligue 1 | 19:45 | Paris Saint Germain vs Lorient | 20:30-20:47 |
+| 2026-11-28 | Ligue 1 | 19:45 | Nice vs Estac Troyes | 20:30-20:47 |
+| 2026-11-28 | Ligue 1 | 19:45 | Le Mans vs Lille | 20:30-20:47 |
+| 2026-11-28 | Ligue 1 | 19:45 | LE Havre AC vs Strasbourg | 20:30-20:47 |
+| 2026-11-29 | Premier League | 12:00 | Everton vs Liverpool | 12:45-13:02 |
+| 2026-11-29 | Ligue 1 | 14:00 | Auxerre vs Marseille | 14:45-15:02 |
+| 2026-11-29 | Premier League | 14:05 | Sunderland vs Tottenham | 14:50-15:07 |
+| 2026-11-29 | Premier League | 14:05 | Fulham vs Bournemouth | 14:50-15:07 |
+| 2026-11-29 | Premier League | 14:05 | Crystal Palace vs Hull City | 14:50-15:07 |
+| 2026-11-29 | Premier League | 14:05 | Brighton vs Newcastle United | 14:50-15:07 |
+| 2026-11-29 | Bundesliga | 14:30 | SC Freiburg vs RB Leipzig | 15:15-15:32 |
+| 2026-11-29 | La Liga | 16:00 | Valencia vs Osasuna | 16:45-17:02 |
+| 2026-11-29 | La Liga | 16:00 | Real Sociedad vs Sevilla FC | 16:45-17:02 |
+| 2026-11-29 | La Liga | 16:00 | Real Madrid vs Alavés | 16:45-17:02 |
+| 2026-11-29 | La Liga | 16:00 | Malaga vs Athletic Club | 16:45-17:02 |
+| 2026-11-29 | La Liga | 16:00 | Levante vs Racing Santander | 16:45-17:02 |
+| 2026-11-29 | La Liga | 16:00 | Espanyol vs Getafe | 16:45-17:02 |
+| 2026-11-29 | La Liga | 16:00 | Elche vs Atlético Madrid | 16:45-17:02 |
+| 2026-11-29 | La Liga | 16:00 | Deportivo La Coruña vs Barcelona | 16:45-17:02 |
+| 2026-11-29 | La Liga | 16:00 | Celta de Vigo vs Villarreal | 16:45-17:02 |
+| 2026-11-29 | La Liga | 16:00 | Real Betis vs Rayo Vallecano | 16:45-17:02 |
+| 2026-11-29 | Segunda División | 16:00 | Valladolid vs Real Sociedad B | 16:45-17:02 |
+| 2026-11-29 | Segunda División | 16:00 | Oviedo vs Celta de Vigo II | 16:45-17:02 |
+| 2026-11-29 | Segunda División | 16:00 | Mallorca vs Castellón | 16:45-17:02 |
+| 2026-11-29 | Segunda División | 16:00 | Leganes vs Sabadell | 16:45-17:02 |
+| 2026-11-29 | Segunda División | 16:00 | Las Palmas vs FC Andorra | 16:45-17:02 |
+| 2026-11-29 | Segunda División | 16:00 | Granada CF vs AD Ceuta FC | 16:45-17:02 |
+| 2026-11-29 | Segunda División | 16:00 | Eldense vs Girona | 16:45-17:02 |
+| 2026-11-29 | Segunda División | 16:00 | Eibar vs Burgos | 16:45-17:02 |
+| 2026-11-29 | Segunda División | 16:00 | Cadiz vs Cordoba | 16:45-17:02 |
+| 2026-11-29 | Segunda División | 16:00 | Almería vs Sporting Gijón | 16:45-17:02 |
+| 2026-11-29 | Segunda División | 16:00 | Albacete vs Tenerife | 16:45-17:02 |
+| 2026-11-29 | Ligue 1 | 16:15 | Toulouse vs Rennes FC | 17:00-17:17 |
+| 2026-11-29 | Bundesliga | 16:30 | 1899 Hoffenheim vs FC Augsburg | 17:15-17:32 |
+| 2026-11-29 | Premier League | 16:30 | Arsenal vs Manchester City | 17:15-17:32 |
+| 2026-11-29 | Serie A | 17:30 | Venezia vs Bologna | 18:15-18:32 |
+| 2026-11-29 | Serie A | 17:30 | Udinese vs Fiorentina | 18:15-18:32 |
+| 2026-11-29 | Serie A | 17:30 | Torino vs Lazio | 18:15-18:32 |
+| 2026-11-29 | Serie A | 17:30 | Sassuolo vs Napoli | 18:15-18:32 |
+| 2026-11-29 | Serie A | 17:30 | Lecce vs Atalanta | 18:15-18:32 |
+| 2026-11-29 | Serie A | 17:30 | Inter vs Genoa | 18:15-18:32 |
+| 2026-11-29 | Serie A | 17:30 | Frosinone vs Parma | 18:15-18:32 |
+| 2026-11-29 | Serie A | 17:30 | Como vs Juventus | 18:15-18:32 |
+| 2026-11-29 | Serie A | 17:30 | Cagliari vs AC Milan | 18:15-18:32 |
+| 2026-11-29 | Serie A | 17:30 | AS Roma vs Monza | 18:15-18:32 |
+| 2026-11-29 | Bundesliga | 18:30 | Borussia Dortmund vs Bayer Leverkusen | 19:15-19:32 |
+| 2026-11-29 | Ligue 1 | 19:45 | Lyon vs Monaco | 20:30-20:47 |
 
 ## Carga por día
 
 | Día | Partidos |
 |---|---|
-| 2026-10-26 | 3 |
-| 2026-10-27 | 3 |
-| 2026-10-28 | 5 |
-| 2026-10-29 | 2 |
-| 2026-10-30 | 4 |
-| 2026-10-31 | 29 |
-| 2026-11-01 | 19 |
-| 2026-11-02 | 7 |
+| 2026-11-02 | 9 |
 | 2026-11-06 | 6 |
 | 2026-11-07 | 24 |
 | 2026-11-08 | 28 |
@@ -234,3 +223,6 @@ Generado el 2026-10-26 10:10 UTC. **201 partidos** en 6 ligas.
 | 2026-11-21 | 22 |
 | 2026-11-22 | 32 |
 | 2026-11-23 | 3 |
+| 2026-11-27 | 3 |
+| 2026-11-28 | 13 |
+| 2026-11-29 | 43 |
