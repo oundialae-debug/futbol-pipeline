@@ -1,23 +1,3 @@
 # Títulos de estadística de FotMob sin mapear
 
-- Accurate long balls
-- Big chances missed
-- Blocks
-- Defence
-- Discipline
-- Distance covered
-- Duels
-- Duels won
-- Ground duels won
-- Hit woodwork
-- Number of sprints
-- Opposition half
-- Own half
-- Physical performance
-- Running distance
-- Shots
-- Sprinting distance
-- Throws
-- Touches in opposition box
-- xG non-penalty
-- xG on target (xGOT)
+
