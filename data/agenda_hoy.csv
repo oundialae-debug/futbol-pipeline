@@ -1,1 +1,7 @@
-match_id,liga,saque_utc,local,visitante,descanso_desde,descanso_hasta
+match_id,liga,liga_id,fecha,saque_utc,local,visitante,descanso_desde,descanso_hasta
+1340511302,Bundesliga,67162,2026-11-06,19:30,Hamburger SV,Borussia Mönchengladbach,20:15,20:32
+1336075890,Segunda División,120775,2026-11-06,19:30,Castellón,Eibar,20:15,20:32
+1321448051,Ligue 1,52695,2026-11-06,19:45,Toulouse,Strasbourg,20:30,20:47
+1319217580,Serie A,115669,2026-11-06,19:45,Venezia,Udinese,20:30,20:47
+1336453734,La Liga,119924,2026-11-06,20:00,Sevilla FC,Alavés,20:45,21:02
+1325399244,Premier League,33973,2026-11-06,20:00,Everton,Coventry,20:45,21:02
