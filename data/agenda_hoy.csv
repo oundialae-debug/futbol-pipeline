@@ -1,7 +1,25 @@
 match_id,liga,liga_id,fecha,saque_utc,local,visitante,descanso_desde,descanso_hasta
-1340511302,Bundesliga,67162,2026-11-06,19:30,Hamburger SV,Borussia Mönchengladbach,20:15,20:32
-1336075890,Segunda División,120775,2026-11-06,19:30,Castellón,Eibar,20:15,20:32
-1321448051,Ligue 1,52695,2026-11-06,19:45,Toulouse,Strasbourg,20:30,20:47
-1319217580,Serie A,115669,2026-11-06,19:45,Venezia,Udinese,20:30,20:47
-1336453734,La Liga,119924,2026-11-06,20:00,Sevilla FC,Alavés,20:45,21:02
-1325399244,Premier League,33973,2026-11-06,20:00,Everton,Coventry,20:45,21:02
+1325401797,Premier League,33973,2026-11-07,12:30,Leeds,Tottenham,13:15,13:32
+1336451181,La Liga,119924,2026-11-07,13:00,Malaga,Racing Santander,13:45,14:02
+1336074188,Segunda División,120775,2026-11-07,13:00,Burgos,Celta de Vigo II,13:45,14:02
+1319216729,Serie A,115669,2026-11-07,14:00,Torino,Lecce,14:45,15:02
+1319210772,Serie A,115669,2026-11-07,14:00,Cagliari,Frosinone,14:45,15:02
+1340513004,Bundesliga,67162,2026-11-07,14:30,SC Paderborn 07,Eintracht Frankfurt,15:15,15:32
+1340510451,Bundesliga,67162,2026-11-07,14:30,FSV Mainz 05,Bayern Munich,15:15,15:32
+1340507047,Bundesliga,67162,2026-11-07,14:30,RB Leipzig,FC Augsburg,15:15,15:32
+1340506196,Bundesliga,67162,2026-11-07,14:30,Borussia Dortmund,SV Elversberg,15:15,15:32
+1325400095,Premier League,33973,2026-11-07,15:00,Fulham,Newcastle United,15:45,16:02
+1325396691,Premier League,33973,2026-11-07,15:00,Arsenal,Hull City,15:45,16:02
+1336075039,Segunda División,120775,2026-11-07,15:15,Cadiz,Oviedo,16:00,16:17
+1336450330,La Liga,119924,2026-11-07,15:15,Espanyol,Deportivo La Coruña,16:00,16:17
+1321442945,Ligue 1,52695,2026-11-07,16:15,Auxerre,Paris FC,17:00,17:17
+1319215878,Serie A,115669,2026-11-07,17:00,Parma,Bologna,17:45,18:02
+1340507898,Bundesliga,67162,2026-11-07,17:30,VfB Stuttgart,Werder Bremen,18:15,18:32
+1336452032,La Liga,119924,2026-11-07,17:30,Osasuna,Athletic Club,18:15,18:32
+1325403499,Premier League,33973,2026-11-07,17:30,Nottingham Forest,Manchester City,18:15,18:32
+1336080996,Segunda División,120775,2026-11-07,17:30,Leganes,Albacete,18:15,18:32
+1336076741,Segunda División,120775,2026-11-07,17:30,Cordoba,AD Ceuta FC,18:15,18:32
+1321446349,Ligue 1,52695,2026-11-07,19:45,Paris Saint Germain,Estac Troyes,20:30,20:47
+1319209921,Serie A,115669,2026-11-07,19:45,AS Roma,Sassuolo,20:30,20:47
+1336454585,La Liga,119924,2026-11-07,20:00,Valencia,Real Madrid,20:45,21:02
+1336079294,Segunda División,120775,2026-11-07,20:00,Granada CF,Tenerife,20:45,21:02
