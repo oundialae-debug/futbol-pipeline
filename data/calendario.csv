@@ -1,72 +1,6 @@
 match_id,liga,liga_id,fecha,saque_utc,local,visitante,descanso_desde,descanso_hasta
-1336071635,Segunda División,120775,2026-11-02,13:00,Tenerife,FC Andorra,13:45,14:02
-1336069933,Segunda División,120775,2026-11-02,15:15,Oviedo,Las Palmas,16:00,16:17
-1336072486,Segunda División,120775,2026-11-02,17:30,Valladolid,Leganes,18:15,18:32
-1319208219,Serie A,115669,2026-11-02,17:30,Sassuolo,Fiorentina,18:15,18:32
-1321436137,Ligue 1,52695,2026-11-02,19:45,Lorient,Stade Brestois 29,20:30,20:47
-1319202262,Serie A,115669,2026-11-02,19:45,Atalanta,Parma,20:30,20:47
-1336441820,La Liga,119924,2026-11-02,20:00,Deportivo La Coruña,Osasuna,20:45,21:02
-1325394989,Premier League,33973,2026-11-02,20:00,Newcastle United,Everton,20:45,21:02
-1336069082,Segunda División,120775,2026-11-02,20:00,Mallorca,Cadiz,20:45,21:02
-1340511302,Bundesliga,67162,2026-11-06,19:30,Hamburger SV,Borussia Mönchengladbach,20:15,20:32
-1336075890,Segunda División,120775,2026-11-06,19:30,Castellón,Eibar,20:15,20:32
-1321448051,Ligue 1,52695,2026-11-06,19:45,Toulouse,Strasbourg,20:30,20:47
-1319217580,Serie A,115669,2026-11-06,19:45,Venezia,Udinese,20:30,20:47
-1336453734,La Liga,119924,2026-11-06,20:00,Sevilla FC,Alavés,20:45,21:02
-1325399244,Premier League,33973,2026-11-06,20:00,Everton,Coventry,20:45,21:02
-1325401797,Premier League,33973,2026-11-07,12:30,Leeds,Tottenham,13:15,13:32
-1336451181,La Liga,119924,2026-11-07,13:00,Malaga,Racing Santander,13:45,14:02
-1336074188,Segunda División,120775,2026-11-07,13:00,Burgos,Celta de Vigo II,13:45,14:02
-1319216729,Serie A,115669,2026-11-07,14:00,Torino,Lecce,14:45,15:02
-1319210772,Serie A,115669,2026-11-07,14:00,Cagliari,Frosinone,14:45,15:02
-1340513004,Bundesliga,67162,2026-11-07,14:30,SC Paderborn 07,Eintracht Frankfurt,15:15,15:32
-1340510451,Bundesliga,67162,2026-11-07,14:30,FSV Mainz 05,Bayern Munich,15:15,15:32
-1340507047,Bundesliga,67162,2026-11-07,14:30,RB Leipzig,FC Augsburg,15:15,15:32
-1340506196,Bundesliga,67162,2026-11-07,14:30,Borussia Dortmund,SV Elversberg,15:15,15:32
-1325400095,Premier League,33973,2026-11-07,15:00,Fulham,Newcastle United,15:45,16:02
-1325396691,Premier League,33973,2026-11-07,15:00,Arsenal,Hull City,15:45,16:02
-1336450330,La Liga,119924,2026-11-07,15:15,Espanyol,Deportivo La Coruña,16:00,16:17
-1336075039,Segunda División,120775,2026-11-07,15:15,Cadiz,Oviedo,16:00,16:17
-1321442945,Ligue 1,52695,2026-11-07,16:15,Auxerre,Paris FC,17:00,17:17
-1319215878,Serie A,115669,2026-11-07,17:00,Parma,Bologna,17:45,18:02
-1340507898,Bundesliga,67162,2026-11-07,17:30,VfB Stuttgart,Werder Bremen,18:15,18:32
-1336452032,La Liga,119924,2026-11-07,17:30,Osasuna,Athletic Club,18:15,18:32
-1325403499,Premier League,33973,2026-11-07,17:30,Nottingham Forest,Manchester City,18:15,18:32
-1336080996,Segunda División,120775,2026-11-07,17:30,Leganes,Albacete,18:15,18:32
-1336076741,Segunda División,120775,2026-11-07,17:30,Cordoba,AD Ceuta FC,18:15,18:32
-1321446349,Ligue 1,52695,2026-11-07,19:45,Paris Saint Germain,Estac Troyes,20:30,20:47
-1319209921,Serie A,115669,2026-11-07,19:45,AS Roma,Sassuolo,20:30,20:47
-1336454585,La Liga,119924,2026-11-07,20:00,Valencia,Real Madrid,20:45,21:02
-1336079294,Segunda División,120775,2026-11-07,20:00,Granada CF,Tenerife,20:45,21:02
-1319215027,Serie A,115669,2026-11-08,11:30,Napoli,Lazio,12:15,12:32
-1336449479,La Liga,119924,2026-11-08,13:00,Elche,Real Betis,13:45,14:02
-1336073337,Segunda División,120775,2026-11-08,13:00,FC Andorra,Mallorca,13:45,14:02
-1321447200,Ligue 1,52695,2026-11-08,14:00,Rennes FC,Lille,14:45,15:02
-1325404350,Premier League,33973,2026-11-08,14:00,Sunderland,Chelsea,14:45,15:02
-1325400946,Premier League,33973,2026-11-08,14:00,Ipswich,Bournemouth,14:45,15:02
-1325398393,Premier League,33973,2026-11-08,14:00,Crystal Palace,Liverpool,14:45,15:02
-1325397542,Premier League,33973,2026-11-08,14:00,Brighton,Brentford,14:45,15:02
-1319214176,Serie A,115669,2026-11-08,14:00,Monza,Atalanta,14:45,15:02
-1319212474,Serie A,115669,2026-11-08,14:00,Genoa,AC Milan,14:45,15:02
-1340512153,Bundesliga,67162,2026-11-08,14:30,FC Koln,Bayer Leverkusen,15:15,15:32
-1336452883,La Liga,119924,2026-11-08,15:15,Real Sociedad,Rayo Vallecano,16:00,16:17
-1336078443,Segunda División,120775,2026-11-08,15:15,Girona,Almería,16:00,16:17
-1321445498,Ligue 1,52695,2026-11-08,16:15,Le Mans,Monaco,17:00,17:17
-1321444647,Ligue 1,52695,2026-11-08,16:15,LE Havre AC,Lorient,17:00,17:17
-1321443796,Ligue 1,52695,2026-11-08,16:15,Stade Brestois 29,Lyon,17:00,17:17
-1321442094,Ligue 1,52695,2026-11-08,16:15,Angers,Nice,17:00,17:17
-1340509600,Bundesliga,67162,2026-11-08,16:30,SC Freiburg,Union Berlin,17:15,17:32
-1325402648,Premier League,33973,2026-11-08,16:30,Manchester United,Aston Villa,17:15,17:32
-1319213325,Serie A,115669,2026-11-08,17:00,Inter,Como,17:45,18:02
-1336455436,La Liga,119924,2026-11-08,17:30,Villarreal,Getafe,18:15,18:32
-1336448628,La Liga,119924,2026-11-08,17:30,Celta de Vigo,Levante,18:15,18:32
-1336080145,Segunda División,120775,2026-11-08,17:30,Las Palmas,Eldense,18:15,18:32
-1336077592,Segunda División,120775,2026-11-08,17:30,Sporting Gijón,Valladolid,18:15,18:32
-1340508749,Bundesliga,67162,2026-11-08,18:30,1899 Hoffenheim,FC Schalke 04,19:15,19:32
-1321448902,Ligue 1,52695,2026-11-08,19:45,Lens,Marseille,20:30,20:47
-1319211623,Serie A,115669,2026-11-08,19:45,Fiorentina,Juventus,20:30,20:47
-1336447777,La Liga,119924,2026-11-08,20:00,Atlético Madrid,Barcelona,20:45,21:02
 1336081847,Segunda División,120775,2026-11-09,19:30,Sabadell,Real Sociedad B,20:15,20:32
+1336080145,Segunda División,120775,2026-11-09,19:30,Las Palmas,Eldense,20:15,20:32
 1336086953,Segunda División,120775,2026-11-13,19:30,Leganes,Burgos,20:15,20:32
 1336091208,Segunda División,120775,2026-11-14,13:00,Valladolid,Castellón,13:45,14:02
 1336089506,Segunda División,120775,2026-11-14,15:15,Real Sociedad B,Sporting Gijón,16:00,16:17
@@ -79,8 +13,10 @@ match_id,liga,liga_id,fecha,saque_utc,local,visitante,descanso_desde,descanso_ha
 1336084400,Segunda División,120775,2026-11-15,17:30,Eibar,Cadiz,18:15,18:32
 1336082698,Segunda División,120775,2026-11-16,19:30,Albacete,Celta de Vigo II,20:15,20:32
 1340513855,Bundesliga,67162,2026-11-20,19:30,Bayern Munich,FC Koln,20:15,20:32
+1336092059,Segunda División,120775,2026-11-20,19:30,FC Andorra,Leganes,20:15,20:32
 1321456561,Ligue 1,52695,2026-11-20,19:45,Estac Troyes,LE Havre AC,20:30,20:47
 1325411158,Premier League,33973,2026-11-21,12:30,Manchester City,Fulham,13:15,13:32
+1336099718,Segunda División,120775,2026-11-21,13:00,Sabadell,Granada CF,13:45,14:02
 1319222686,Serie A,115669,2026-11-21,14:00,Lazio,Lecce,14:45,15:02
 1319220984,Serie A,115669,2026-11-21,14:00,Como,Cagliari,14:45,15:02
 1340520663,Bundesliga,67162,2026-11-21,14:30,SV Elversberg,SC Freiburg,15:15,15:32
@@ -93,20 +29,25 @@ match_id,liga,liga_id,fecha,saque_utc,local,visitante,descanso_desde,descanso_ha
 1325407754,Premier League,33973,2026-11-21,15:00,Chelsea,Leeds,15:45,16:02
 1325406052,Premier League,33973,2026-11-21,15:00,Bournemouth,Nottingham Forest,15:45,16:02
 1325405201,Premier League,33973,2026-11-21,15:00,Aston Villa,Sunderland,15:45,16:02
+1336098867,Segunda División,120775,2026-11-21,15:15,Real Sociedad B,Cadiz,16:00,16:17
 1321454008,Ligue 1,52695,2026-11-21,16:15,Nice,Paris Saint Germain,17:00,17:17
 1319225239,Serie A,115669,2026-11-21,17:00,Parma,AS Roma,17:45,18:02
 1340519812,Bundesliga,67162,2026-11-21,17:30,FC Schalke 04,VfB Stuttgart,18:15,18:32
 1325412009,Premier League,33973,2026-11-21,17:30,Newcastle United,Arsenal,18:15,18:32
+1336093761,Segunda División,120775,2026-11-21,17:30,Castellón,Eldense,18:15,18:32
 1321455710,Ligue 1,52695,2026-11-21,19:45,Strasbourg,Stade Brestois 29,20:30,20:47
 1321453157,Ligue 1,52695,2026-11-21,19:45,Monaco,Auxerre,20:30,20:47
 1321450604,Ligue 1,52695,2026-11-21,19:45,Lille,Lyon,20:30,20:47
 1321449753,Ligue 1,52695,2026-11-21,19:45,Lens,Toulouse,20:30,20:47
 1319224388,Serie A,115669,2026-11-21,19:45,Napoli,Torino,20:30,20:47
+1336100569,Segunda División,120775,2026-11-21,20:00,Tenerife,Mallorca,20:45,21:02
 1319226090,Serie A,115669,2026-11-22,11:30,Sassuolo,Genoa,12:15,12:32
+1336096314,Segunda División,120775,2026-11-22,13:00,Cordoba,Oviedo,13:45,14:02
 1321454859,Ligue 1,52695,2026-11-22,14:00,Paris FC,Angers,14:45,15:02
 1325409456,Premier League,33973,2026-11-22,14:00,Hull City,Brighton,14:45,15:02
 1319218431,Serie A,115669,2026-11-22,14:00,AC Milan,Frosinone,14:45,15:02
 1340516408,Bundesliga,67162,2026-11-22,14:30,FC Augsburg,FSV Mainz 05,15:15,15:32
+1336097165,Segunda División,120775,2026-11-22,15:15,Sporting Gijón,Las Palmas,16:00,16:17
 1336463946,La Liga,119924,2026-11-22,16:00,Sevilla FC,Real Betis,16:45,17:02
 1336463095,La Liga,119924,2026-11-22,16:00,Real Madrid,Celta de Vigo,16:45,17:02
 1336462244,La Liga,119924,2026-11-22,16:00,Rayo Vallecano,Valencia,16:45,17:02
@@ -117,24 +58,17 @@ match_id,liga,liga_id,fecha,saque_utc,local,visitante,descanso_desde,descanso_ha
 1336457989,La Liga,119924,2026-11-22,16:00,Barcelona,Villarreal,16:45,17:02
 1336457138,La Liga,119924,2026-11-22,16:00,Athletic Club,Espanyol,16:45,17:02
 1336456287,La Liga,119924,2026-11-22,16:00,Alavés,Deportivo La Coruña,16:45,17:02
-1336100569,Segunda División,120775,2026-11-22,16:00,Tenerife,Mallorca,16:45,17:02
-1336099718,Segunda División,120775,2026-11-22,16:00,Sabadell,Granada CF,16:45,17:02
-1336098867,Segunda División,120775,2026-11-22,16:00,Real Sociedad B,Cadiz,16:45,17:02
-1336098016,Segunda División,120775,2026-11-22,16:00,Girona,Eibar,16:45,17:02
-1336097165,Segunda División,120775,2026-11-22,16:00,Sporting Gijón,Las Palmas,16:45,17:02
-1336096314,Segunda División,120775,2026-11-22,16:00,Cordoba,Oviedo,16:45,17:02
-1336095463,Segunda División,120775,2026-11-22,16:00,AD Ceuta FC,Almería,16:45,17:02
-1336094612,Segunda División,120775,2026-11-22,16:00,Celta de Vigo II,Valladolid,16:45,17:02
-1336093761,Segunda División,120775,2026-11-22,16:00,Castellón,Eldense,16:45,17:02
-1336092910,Segunda División,120775,2026-11-22,16:00,Burgos,Albacete,16:45,17:02
-1336092059,Segunda División,120775,2026-11-22,16:00,FC Andorra,Leganes,16:45,17:02
 1321451455,Ligue 1,52695,2026-11-22,16:15,Lorient,Rennes FC,17:00,17:17
 1340518961,Bundesliga,67162,2026-11-22,16:30,Werder Bremen,Hamburger SV,17:15,17:32
 1325410307,Premier League,33973,2026-11-22,16:30,Liverpool,Manchester United,17:15,17:32
 1319220133,Serie A,115669,2026-11-22,17:00,Bologna,Udinese,17:45,18:02
+1336098016,Segunda División,120775,2026-11-22,17:30,Girona,Eibar,18:15,18:32
+1336094612,Segunda División,120775,2026-11-22,17:30,Celta de Vigo II,Valladolid,18:15,18:32
 1321452306,Ligue 1,52695,2026-11-22,19:45,Marseille,Le Mans,20:30,20:47
 1319219282,Serie A,115669,2026-11-22,19:45,Atalanta,Inter,20:30,20:47
+1336092910,Segunda División,120775,2026-11-22,20:00,Burgos,Albacete,20:45,21:02
 1319223537,Serie A,115669,2026-11-23,17:30,Monza,Fiorentina,18:15,18:32
+1336095463,Segunda División,120775,2026-11-23,19:30,AD Ceuta FC,Almería,20:15,20:32
 1319221835,Serie A,115669,2026-11-23,19:45,Juventus,Venezia,20:30,20:47
 1325406903,Premier League,33973,2026-11-23,20:00,Brentford,Everton,20:45,21:02
 1340527471,Bundesliga,67162,2026-11-27,19:30,Werder Bremen,Borussia Mönchengladbach,20:15,20:32
@@ -196,3 +130,72 @@ match_id,liga,liga_id,fecha,saque_utc,local,visitante,descanso_desde,descanso_ha
 1319226941,Serie A,115669,2026-11-29,17:30,AS Roma,Monza,18:15,18:32
 1340521514,Bundesliga,67162,2026-11-29,18:30,Borussia Dortmund,Bayer Leverkusen,19:15,19:32
 1321461667,Ligue 1,52695,2026-11-29,19:45,Lyon,Monaco,20:30,20:47
+1325425625,Premier League,33973,2026-12-01,20:00,Coventry,Ipswich,20:45,21:02
+1325428178,Premier League,33973,2026-12-02,19:30,Manchester City,Leeds,20:15,20:32
+1325427327,Premier League,33973,2026-12-02,19:30,Liverpool,Sunderland,20:15,20:32
+1325426476,Premier League,33973,2026-12-02,19:30,Hull City,Nottingham Forest,20:15,20:32
+1325424774,Premier League,33973,2026-12-02,19:30,Chelsea,Crystal Palace,20:15,20:32
+1325429029,Premier League,33973,2026-12-02,20:15,Newcastle United,Manchester United,21:00,21:17
+1325423923,Premier League,33973,2026-12-02,20:15,Brentford,Arsenal,21:00,21:17
+1325423072,Premier League,33973,2026-12-02,20:15,Bournemouth,Brighton,21:00,21:17
+1325422221,Premier League,33973,2026-12-02,20:15,Aston Villa,Everton,21:00,21:17
+1325429880,Premier League,33973,2026-12-03,20:00,Tottenham,Fulham,20:45,21:02
+1340529173,Bundesliga,67162,2026-12-04,19:30,Bayern Munich,SC Paderborn 07,20:15,20:32
+1321471028,Ligue 1,52695,2026-12-04,19:45,Toulouse,Paris Saint Germain,20:30,20:47
+1325433284,Premier League,33973,2026-12-05,12:30,Chelsea,Liverpool,13:15,13:32
+1340534279,Bundesliga,67162,2026-12-05,14:30,Union Berlin,Hamburger SV,15:15,15:32
+1340533428,Bundesliga,67162,2026-12-05,14:30,FC Augsburg,FC Koln,15:15,15:32
+1340531726,Bundesliga,67162,2026-12-05,14:30,SC Freiburg,1899 Hoffenheim,15:15,15:32
+1340530875,Bundesliga,67162,2026-12-05,14:30,Bayer Leverkusen,Borussia Mönchengladbach,15:15,15:32
+1340530024,Bundesliga,67162,2026-12-05,14:30,RB Leipzig,FSV Mainz 05,15:15,15:32
+1325435837,Premier League,33973,2026-12-05,15:00,Manchester United,Coventry,15:45,16:02
+1325434986,Premier League,33973,2026-12-05,15:00,Leeds,Ipswich,15:45,16:02
+1325431582,Premier League,33973,2026-12-05,15:00,Bournemouth,Hull City,15:45,16:02
+1325430731,Premier League,33973,2026-12-05,15:00,Aston Villa,Crystal Palace,15:45,16:02
+1321465922,Ligue 1,52695,2026-12-05,16:15,Lille,Auxerre,17:00,17:17
+1340532577,Bundesliga,67162,2026-12-05,17:30,Eintracht Frankfurt,Werder Bremen,18:15,18:32
+1325437539,Premier League,33973,2026-12-05,17:30,Nottingham Forest,Brighton,18:15,18:32
+1321470177,Ligue 1,52695,2026-12-05,19:45,Strasbourg,Lorient,20:30,20:47
+1321468475,Ligue 1,52695,2026-12-05,19:45,Paris FC,Le Mans,20:30,20:47
+1321467624,Ligue 1,52695,2026-12-05,19:45,Monaco,Angers,20:30,20:47
+1321465071,Ligue 1,52695,2026-12-05,19:45,Lens,LE Havre AC,20:30,20:47
+1325432433,Premier League,33973,2026-12-05,20:00,Brentford,Manchester City,20:45,21:02
+1321471879,Ligue 1,52695,2026-12-06,14:00,Estac Troyes,Lyon,14:45,15:02
+1325436688,Premier League,33973,2026-12-06,14:00,Newcastle United,Sunderland,14:45,15:02
+1325434135,Premier League,33973,2026-12-06,14:00,Everton,Fulham,14:45,15:02
+1340535130,Bundesliga,67162,2026-12-06,14:30,FC Schalke 04,Borussia Dortmund,15:15,15:32
+1336480966,La Liga,119924,2026-12-06,16:00,Villarreal,Real Sociedad,16:45,17:02
+1336480115,La Liga,119924,2026-12-06,16:00,Sevilla FC,Malaga,16:45,17:02
+1336479264,La Liga,119924,2026-12-06,16:00,Rayo Vallecano,Levante,16:45,17:02
+1336478413,La Liga,119924,2026-12-06,16:00,Racing Santander,Deportivo La Coruña,16:45,17:02
+1336477562,La Liga,119924,2026-12-06,16:00,Osasuna,Elche,16:45,17:02
+1336476711,La Liga,119924,2026-12-06,16:00,Getafe,Valencia,16:45,17:02
+1336475860,La Liga,119924,2026-12-06,16:00,Barcelona,Celta de Vigo,16:45,17:02
+1336475009,La Liga,119924,2026-12-06,16:00,Atlético Madrid,Real Betis,16:45,17:02
+1336474158,La Liga,119924,2026-12-06,16:00,Athletic Club,Real Madrid,16:45,17:02
+1336473307,La Liga,119924,2026-12-06,16:00,Alavés,Espanyol,16:45,17:02
+1336119291,Segunda División,120775,2026-12-06,16:00,Tenerife,Eldense,16:45,17:02
+1336118440,Segunda División,120775,2026-12-06,16:00,Sabadell,Eibar,16:45,17:02
+1336117589,Segunda División,120775,2026-12-06,16:00,Real Sociedad B,Leganes,16:45,17:02
+1336116738,Segunda División,120775,2026-12-06,16:00,Girona,Valladolid,16:45,17:02
+1336115887,Segunda División,120775,2026-12-06,16:00,Sporting Gijón,Granada CF,16:45,17:02
+1336115036,Segunda División,120775,2026-12-06,16:00,Cordoba,Las Palmas,16:45,17:02
+1336114185,Segunda División,120775,2026-12-06,16:00,AD Ceuta FC,Albacete,16:45,17:02
+1336113334,Segunda División,120775,2026-12-06,16:00,Celta de Vigo II,Mallorca,16:45,17:02
+1336112483,Segunda División,120775,2026-12-06,16:00,Castellón,Almería,16:45,17:02
+1336111632,Segunda División,120775,2026-12-06,16:00,Burgos,Cadiz,16:45,17:02
+1336110781,Segunda División,120775,2026-12-06,16:00,FC Andorra,Oviedo,16:45,17:02
+1321469326,Ligue 1,52695,2026-12-06,16:15,Rennes FC,Stade Brestois 29,17:00,17:17
+1340535981,Bundesliga,67162,2026-12-06,16:30,SV Elversberg,VfB Stuttgart,17:15,17:32
+1325438390,Premier League,33973,2026-12-06,16:30,Tottenham,Arsenal,17:15,17:32
+1319243110,Serie A,115669,2026-12-06,17:30,Venezia,Sassuolo,18:15,18:32
+1319242259,Serie A,115669,2026-12-06,17:30,Napoli,Lecce,18:15,18:32
+1319241408,Serie A,115669,2026-12-06,17:30,Monza,Como,18:15,18:32
+1319240557,Serie A,115669,2026-12-06,17:30,Lazio,Atalanta,18:15,18:32
+1319239706,Serie A,115669,2026-12-06,17:30,Juventus,Udinese,18:15,18:32
+1319238855,Serie A,115669,2026-12-06,17:30,Genoa,Torino,18:15,18:32
+1319238004,Serie A,115669,2026-12-06,17:30,Frosinone,Inter,18:15,18:32
+1319237153,Serie A,115669,2026-12-06,17:30,Fiorentina,Cagliari,18:15,18:32
+1319236302,Serie A,115669,2026-12-06,17:30,Bologna,AS Roma,18:15,18:32
+1319235451,Serie A,115669,2026-12-06,17:30,AC Milan,Parma,18:15,18:32
+1321466773,Ligue 1,52695,2026-12-06,19:45,Marseille,Nice,20:30,20:47

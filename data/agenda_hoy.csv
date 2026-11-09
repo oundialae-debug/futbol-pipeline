@@ -1,29 +1,3 @@
 match_id,liga,liga_id,fecha,saque_utc,local,visitante,descanso_desde,descanso_hasta
-1319215027,Serie A,115669,2026-11-08,11:30,Napoli,Lazio,12:15,12:32
-1336449479,La Liga,119924,2026-11-08,13:00,Elche,Real Betis,13:45,14:02
-1336073337,Segunda División,120775,2026-11-08,13:00,FC Andorra,Mallorca,13:45,14:02
-1321447200,Ligue 1,52695,2026-11-08,14:00,Rennes FC,Lille,14:45,15:02
-1325404350,Premier League,33973,2026-11-08,14:00,Sunderland,Chelsea,14:45,15:02
-1325400946,Premier League,33973,2026-11-08,14:00,Ipswich,Bournemouth,14:45,15:02
-1325398393,Premier League,33973,2026-11-08,14:00,Crystal Palace,Liverpool,14:45,15:02
-1325397542,Premier League,33973,2026-11-08,14:00,Brighton,Brentford,14:45,15:02
-1319214176,Serie A,115669,2026-11-08,14:00,Monza,Atalanta,14:45,15:02
-1319212474,Serie A,115669,2026-11-08,14:00,Genoa,AC Milan,14:45,15:02
-1340512153,Bundesliga,67162,2026-11-08,14:30,FC Koln,Bayer Leverkusen,15:15,15:32
-1336452883,La Liga,119924,2026-11-08,15:15,Real Sociedad,Rayo Vallecano,16:00,16:17
-1336078443,Segunda División,120775,2026-11-08,15:15,Girona,Almería,16:00,16:17
-1321442094,Ligue 1,52695,2026-11-08,16:15,Angers,Nice,17:00,17:17
-1321443796,Ligue 1,52695,2026-11-08,16:15,Stade Brestois 29,Lyon,17:00,17:17
-1321445498,Ligue 1,52695,2026-11-08,16:15,Le Mans,Monaco,17:00,17:17
-1321444647,Ligue 1,52695,2026-11-08,16:15,LE Havre AC,Lorient,17:00,17:17
-1340509600,Bundesliga,67162,2026-11-08,16:30,SC Freiburg,Union Berlin,17:15,17:32
-1325402648,Premier League,33973,2026-11-08,16:30,Manchester United,Aston Villa,17:15,17:32
-1319213325,Serie A,115669,2026-11-08,17:00,Inter,Como,17:45,18:02
-1336455436,La Liga,119924,2026-11-08,17:30,Villarreal,Getafe,18:15,18:32
-1336448628,La Liga,119924,2026-11-08,17:30,Celta de Vigo,Levante,18:15,18:32
-1336080145,Segunda División,120775,2026-11-08,17:30,Las Palmas,Eldense,18:15,18:32
-1336077592,Segunda División,120775,2026-11-08,17:30,Sporting Gijón,Valladolid,18:15,18:32
-1340508749,Bundesliga,67162,2026-11-08,18:30,1899 Hoffenheim,FC Schalke 04,19:15,19:32
-1319211623,Serie A,115669,2026-11-08,19:45,Fiorentina,Juventus,20:30,20:47
-1321448902,Ligue 1,52695,2026-11-08,19:45,Lens,Marseille,20:30,20:47
-1336447777,La Liga,119924,2026-11-08,20:00,Atlético Madrid,Barcelona,20:45,21:02
+1336081847,Segunda División,120775,2026-11-09,19:30,Sabadell,Real Sociedad B,20:15,20:32
+1336080145,Segunda División,120775,2026-11-09,19:30,Las Palmas,Eldense,20:15,20:32
