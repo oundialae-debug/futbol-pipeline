@@ -1,3 +1,1 @@
-match_id,liga,liga_id,fecha,saque_utc,local,visitante,descanso_desde,descanso_hasta
-1336081847,Segunda División,120775,2026-11-09,19:30,Sabadell,Real Sociedad B,20:15,20:32
-1336080145,Segunda División,120775,2026-11-09,19:30,Las Palmas,Eldense,20:15,20:32
+match_id,liga,saque_utc,local,visitante,descanso_desde,descanso_hasta
