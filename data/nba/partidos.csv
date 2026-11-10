@@ -7081,12 +7081,12 @@ id,liga,temporada,fecha,local_id,local,visitante_id,visitante,estado,periodo,cua
 1547875,NBA,2027,2026-10-24T23:30:00.000Z,35,Cleveland Cavaliers,49,Brooklyn Nets,Finished,4,"[35, 33, 28, 29]","[30, 24, 26, 41]"
 1547879,NBA,2027,2026-10-25T00:00:00.000Z,40,Dallas Mavericks,37,San Antonio Spurs,Finished,4,"[31, 29, 29, 17]","[32, 36, 24, 30]"
 1547878,NBA,2027,2026-10-25T00:00:00.000Z,27,Chicago Bulls,50,Washington Wizards,Finished,4,"[27, 35, 20, 38]","[28, 29, 40, 27]"
-1547877,NBA,2027,2026-10-25T00:30:00.000Z,23,Atlanta Hawks,28,Houston Rockets,Scheduled,0,[],[]
-1547880,NBA,2027,2026-10-25T01:00:00.000Z,3,Denver Nuggets,64,New Orleans Pelicans,Scheduled,0,[],[]
-1547881,NBA,2027,2026-10-25T02:00:00.000Z,46,Phoenix Suns,43,Golden State Warriors,Scheduled,0,[],[]
-1547985,NBA,2027,2026-10-25T21:00:00.000Z,45,Utah Jazz,4,Los Angeles Lakers,Scheduled,0,[],[]
-1547986,NBA,2027,2026-10-25T22:00:00.000Z,49,Brooklyn Nets,36,Indiana Pacers,Scheduled,0,[],[]
-1547987,NBA,2027,2026-10-25T23:00:00.000Z,26,New York Knicks,24,Orlando Magic,Scheduled,0,[],[]
+1547877,NBA,2027,2026-10-25T00:30:00.000Z,23,Atlanta Hawks,28,Houston Rockets,Finished,4,"[26, 22, 33, 33]","[30, 29, 33, 29]"
+1547880,NBA,2027,2026-10-25T01:00:00.000Z,3,Denver Nuggets,64,New Orleans Pelicans,Finished,5,"[24, 33, 32, 37, 15]","[38, 35, 35, 18, 9]"
+1547881,NBA,2027,2026-10-25T02:00:00.000Z,46,Phoenix Suns,43,Golden State Warriors,Finished,4,"[22, 35, 45, 29]","[25, 29, 38, 30]"
+1547985,NBA,2027,2026-10-25T21:00:00.000Z,45,Utah Jazz,4,Los Angeles Lakers,Finished,4,"[47, 24, 29, 23]","[29, 45, 29, 29]"
+1547986,NBA,2027,2026-10-25T22:00:00.000Z,49,Brooklyn Nets,36,Indiana Pacers,Finished,4,"[26, 30, 24, 29]","[24, 41, 37, 34]"
+1547987,NBA,2027,2026-10-25T23:00:00.000Z,26,New York Knicks,24,Orlando Magic,Finished,4,"[28, 24, 23, 27]","[21, 27, 23, 40]"
 1547989,NBA,2027,2026-10-25T23:00:00.000Z,38,Oklahoma City Thunder,30,LA Clippers,Scheduled,0,[],[]
 1547988,NBA,2027,2026-10-25T23:00:00.000Z,41,Minnesota Timberwolves,34,Toronto Raptors,Scheduled,0,[],[]
 1547990,NBA,2027,2026-10-25T23:30:00.000Z,71,Philadelphia 76ers,25,Detroit Pistons,Scheduled,0,[],[]
