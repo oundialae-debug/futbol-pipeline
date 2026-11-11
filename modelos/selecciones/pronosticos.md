@@ -1,4 +1,4 @@
-# Pronósticos de selecciones (11/11/2026 15:40 UTC)
+# Pronósticos de selecciones (11/11/2026 22:02 UTC)
 
 Tema aparte del proyecto de ambos marcan. Por mercado: **modelo** (selecciones + nota justa de los jugadores + árbitro), **mercado** (mediana de casas sin margen) y **final** (mezcla con el peso que se aprende de los partidos ya jugados, ver `evaluacion.md`). Pronóstico = el lado más probable según final. **Cuota mínima** = 1/probabilidad final: por debajo no compensa.
 
@@ -166,7 +166,7 @@ Once probable France: M. Olise, R. Cherki, J. Jacquet, Lucas Da Cunha, D. Doué,
 
 ## Cuánto fiarse
 
-- Pesos de la mezcla modelo/mercado: mas_1.5 0.10, tarjetas_mas_3.5 0.05, tarjetas_mas_4.5 0.30 (el resto 0 = manda el mercado). Se reaprenden en `evaluacion.md` con los partidos jugados.
+- Pesos de la mezcla modelo/mercado: btts 0.05, mas_1.5 0.35, mas_3.5 0.30, tarjetas_mas_3.5 0.05, tarjetas_mas_4.5 0.30 (el resto 0 = manda el mercado). Se reaprenden en `evaluacion.md` con los partidos jugados.
 - Tarjetas: pocas casas y probablemente cuentan distinto (roja = 2); el modelo cuenta amarillas.
 - El ajuste de forma (nota justa) está puesto a mano (B_FORMA = 0.5).
 
