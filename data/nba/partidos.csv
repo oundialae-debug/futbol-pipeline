@@ -7087,17 +7087,17 @@ id,liga,temporada,fecha,local_id,local,visitante_id,visitante,estado,periodo,cua
 1547985,NBA,2027,2026-10-25T21:00:00.000Z,45,Utah Jazz,4,Los Angeles Lakers,Finished,4,"[47, 24, 29, 23]","[29, 45, 29, 29]"
 1547986,NBA,2027,2026-10-25T22:00:00.000Z,49,Brooklyn Nets,36,Indiana Pacers,Finished,4,"[26, 30, 24, 29]","[24, 41, 37, 34]"
 1547987,NBA,2027,2026-10-25T23:00:00.000Z,26,New York Knicks,24,Orlando Magic,Finished,4,"[28, 24, 23, 27]","[21, 27, 23, 40]"
-1547989,NBA,2027,2026-10-25T23:00:00.000Z,38,Oklahoma City Thunder,30,LA Clippers,Scheduled,0,[],[]
-1547988,NBA,2027,2026-10-25T23:00:00.000Z,41,Minnesota Timberwolves,34,Toronto Raptors,Scheduled,0,[],[]
-1547990,NBA,2027,2026-10-25T23:30:00.000Z,71,Philadelphia 76ers,25,Detroit Pistons,Scheduled,0,[],[]
-1547991,NBA,2027,2026-10-26T01:00:00.000Z,32,Sacramento Kings,42,Memphis Grizzlies,Scheduled,0,[],[]
-1548102,NBA,2027,2026-10-26T23:00:00.000Z,33,Charlotte Hornets,50,Washington Wizards,Scheduled,0,[],[]
-1548103,NBA,2027,2026-10-26T23:00:00.000Z,35,Cleveland Cavaliers,41,Minnesota Timberwolves,Scheduled,0,[],[]
-1548104,NBA,2027,2026-10-26T23:30:00.000Z,2,Boston Celtics,27,Chicago Bulls,Scheduled,0,[],[]
-1548105,NBA,2027,2026-10-26T23:30:00.000Z,1,Miami Heat,40,Dallas Mavericks,Scheduled,0,[],[]
-1548106,NBA,2027,2026-10-27T00:00:00.000Z,39,Milwaukee Bucks,36,Indiana Pacers,Scheduled,0,[],[]
-1548107,NBA,2027,2026-10-27T00:00:00.000Z,38,Oklahoma City Thunder,46,Phoenix Suns,Scheduled,0,[],[]
-1548108,NBA,2027,2026-10-27T00:30:00.000Z,28,Houston Rockets,23,Atlanta Hawks,Scheduled,0,[],[]
+1547989,NBA,2027,2026-10-25T23:00:00.000Z,38,Oklahoma City Thunder,30,LA Clippers,Finished,4,"[23, 20, 34, 31]","[20, 26, 30, 25]"
+1547988,NBA,2027,2026-10-25T23:00:00.000Z,41,Minnesota Timberwolves,34,Toronto Raptors,Finished,4,"[32, 23, 35, 27]","[21, 26, 15, 32]"
+1547990,NBA,2027,2026-10-25T23:30:00.000Z,71,Philadelphia 76ers,25,Detroit Pistons,Finished,4,"[22, 22, 25, 24]","[34, 22, 23, 27]"
+1547991,NBA,2027,2026-10-26T01:00:00.000Z,32,Sacramento Kings,42,Memphis Grizzlies,Finished,4,"[28, 31, 31, 22]","[25, 42, 29, 27]"
+1548102,NBA,2027,2026-10-26T23:00:00.000Z,33,Charlotte Hornets,50,Washington Wizards,Finished,4,"[19, 35, 26, 30]","[21, 23, 24, 35]"
+1548103,NBA,2027,2026-10-26T23:00:00.000Z,35,Cleveland Cavaliers,41,Minnesota Timberwolves,Finished,5,"[24, 26, 36, 27, 14]","[31, 29, 26, 27, 12]"
+1548104,NBA,2027,2026-10-26T23:30:00.000Z,2,Boston Celtics,27,Chicago Bulls,Finished,4,"[33, 33, 39, 29]","[21, 33, 21, 24]"
+1548105,NBA,2027,2026-10-26T23:30:00.000Z,1,Miami Heat,40,Dallas Mavericks,Finished,4,"[27, 25, 32, 25]","[23, 30, 30, 30]"
+1548106,NBA,2027,2026-10-27T00:00:00.000Z,39,Milwaukee Bucks,36,Indiana Pacers,Finished,4,"[31, 19, 34, 26]","[29, 32, 24, 17]"
+1548107,NBA,2027,2026-10-27T00:00:00.000Z,38,Oklahoma City Thunder,46,Phoenix Suns,Finished,4,"[33, 34, 32, 26]","[27, 26, 32, 29]"
+1548108,NBA,2027,2026-10-27T00:30:00.000Z,28,Houston Rockets,23,Atlanta Hawks,Finished,4,"[32, 31, 28, 29]","[35, 31, 19, 25]"
 1548109,NBA,2027,2026-10-27T01:00:00.000Z,45,Utah Jazz,42,Memphis Grizzlies,Scheduled,0,[],[]
 1548110,NBA,2027,2026-10-27T02:00:00.000Z,3,Denver Nuggets,43,Golden State Warriors,Scheduled,0,[],[]
 1548230,NBA,2027,2026-10-27T23:30:00.000Z,2,Boston Celtics,49,Brooklyn Nets,Scheduled,0,[],[]
