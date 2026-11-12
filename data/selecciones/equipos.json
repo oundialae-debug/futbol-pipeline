@@ -1,17 +1,5 @@
 {
  "equipos": {
-  "Montenegro": 944543,
-  "Latvia": 930076,
-  "San Marino": 949649,
-  "Belarus": 936884,
-  "Albania": 662862,
-  "Finland": 936033,
-  "England": 9294,
-  "Croatia": 3337,
-  "Czech Republic": 656054,
-  "Spain": 8443,
-  "Italy": 654352,
-  "France": 2486,
   "Moldova": 948798,
   "Kazakhstan": 932629,
   "Scotland": 943692,
@@ -34,42 +22,6 @@
   "Germany": 22059
  },
  "cruces": [
-  [
-   "Montenegro",
-   "Latvia",
-   1315317447,
-   "2026-11-12T19:45:00.000Z"
-  ],
-  [
-   "San Marino",
-   "Belarus",
-   1301149148,
-   "2026-11-12T19:45:00.000Z"
-  ],
-  [
-   "Albania",
-   "Finland",
-   1301148297,
-   "2026-11-12T19:45:00.000Z"
-  ],
-  [
-   "England",
-   "Croatia",
-   1301147446,
-   "2026-11-12T19:45:00.000Z"
-  ],
-  [
-   "Czech Republic",
-   "Spain",
-   1301146595,
-   "2026-11-12T19:45:00.000Z"
-  ],
-  [
-   "Italy",
-   "France",
-   1301145744,
-   "2026-11-12T19:45:00.000Z"
-  ],
   [
    "Moldova",
    "Kazakhstan",
@@ -131,5 +83,5 @@
    "2026-11-13T19:45:00.000Z"
   ]
  ],
- "generado": "2026-11-12T21:07:12.977640+00:00"
+ "generado": "2026-11-12T21:53:10.921597+00:00"
 }
