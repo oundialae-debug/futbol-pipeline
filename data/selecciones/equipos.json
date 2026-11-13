@@ -1,7 +1,5 @@
 {
  "equipos": {
-  "Moldova": 948798,
-  "Kazakhstan": 932629,
   "Scotland": 943692,
   "North Macedonia": 941139,
   "Netherlands": 952202,
@@ -38,12 +36,6 @@
   "Denmark": 18655
  },
  "cruces": [
-  [
-   "Moldova",
-   "Kazakhstan",
-   1301152552,
-   "2026-11-13T17:00:00.000Z"
-  ],
   [
    "Scotland",
    "North Macedonia",
@@ -147,5 +139,5 @@
    "2026-11-14T19:45:00.000Z"
   ]
  ],
- "generado": "2026-11-13T15:39:06.553760+00:00"
+ "generado": "2026-11-13T20:42:13.526776+00:00"
 }
