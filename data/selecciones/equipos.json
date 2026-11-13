@@ -4,22 +4,38 @@
   "Kazakhstan": 932629,
   "Scotland": 943692,
   "North Macedonia": 941139,
-  "Slovenia": 929225,
-  "Switzerland": 13549,
-  "Andorra": 945394,
-  "Gibraltar": 930927,
-  "Luxembourg": 938586,
-  "Estonia": 937735,
-  "Liechtenstein": 942841,
-  "Azerbaijan": 933480,
-  "Bulgaria": 939437,
-  "Iceland": 16102,
-  "Slovakia": 658607,
-  "Faroe Islands": 935182,
   "Netherlands": 952202,
   "Greece": 951351,
+  "Slovakia": 658607,
+  "Faroe Islands": 935182,
+  "Bulgaria": 939437,
+  "Iceland": 16102,
   "Serbia": 12698,
-  "Germany": 22059
+  "Germany": 22059,
+  "Luxembourg": 938586,
+  "Estonia": 937735,
+  "Andorra": 945394,
+  "Gibraltar": 930927,
+  "Slovenia": 929225,
+  "Switzerland": 13549,
+  "Liechtenstein": 942841,
+  "Azerbaijan": 933480,
+  "Kosovo National Team": 946245,
+  "Israel": 950500,
+  "Norway": 928374,
+  "Wales": 653501,
+  "Georgia": 940288,
+  "Hungary": 655203,
+  "Sweden": 5039,
+  "Bosnia & Herzegovina": 947947,
+  "Romania": 659458,
+  "Poland": 21208,
+  "Austria": 660309,
+  "Republic of Ireland": 661160,
+  "Northern Ireland": 656905,
+  "Ukraine": 657756,
+  "Portugal": 23761,
+  "Denmark": 18655
  },
  "cruces": [
   [
@@ -35,33 +51,9 @@
    "2026-11-13T19:45:00.000Z"
   ],
   [
-   "Slovenia",
-   "Switzerland",
-   1315352338,
-   "2026-11-13T19:45:00.000Z"
-  ],
-  [
-   "Andorra",
-   "Gibraltar",
-   1315319149,
-   "2026-11-13T19:45:00.000Z"
-  ],
-  [
-   "Luxembourg",
-   "Estonia",
-   1315318298,
-   "2026-11-13T19:45:00.000Z"
-  ],
-  [
-   "Liechtenstein",
-   "Azerbaijan",
-   1301154254,
-   "2026-11-13T19:45:00.000Z"
-  ],
-  [
-   "Bulgaria",
-   "Iceland",
-   1301153403,
+   "Netherlands",
+   "Greece",
+   1301150850,
    "2026-11-13T19:45:00.000Z"
   ],
   [
@@ -71,9 +63,9 @@
    "2026-11-13T19:45:00.000Z"
   ],
   [
-   "Netherlands",
-   "Greece",
-   1301150850,
+   "Bulgaria",
+   "Iceland",
+   1301153403,
    "2026-11-13T19:45:00.000Z"
   ],
   [
@@ -81,7 +73,79 @@
    "Germany",
    1301149999,
    "2026-11-13T19:45:00.000Z"
+  ],
+  [
+   "Luxembourg",
+   "Estonia",
+   1315318298,
+   "2026-11-13T19:45:00.000Z"
+  ],
+  [
+   "Andorra",
+   "Gibraltar",
+   1315319149,
+   "2026-11-13T19:45:00.000Z"
+  ],
+  [
+   "Slovenia",
+   "Switzerland",
+   1315352338,
+   "2026-11-13T19:45:00.000Z"
+  ],
+  [
+   "Liechtenstein",
+   "Azerbaijan",
+   1301154254,
+   "2026-11-13T19:45:00.000Z"
+  ],
+  [
+   "Kosovo National Team",
+   "Israel",
+   1301155105,
+   "2026-11-14T14:00:00.000Z"
+  ],
+  [
+   "Norway",
+   "Wales",
+   1301155956,
+   "2026-11-14T17:00:00.000Z"
+  ],
+  [
+   "Georgia",
+   "Hungary",
+   1301156807,
+   "2026-11-14T17:00:00.000Z"
+  ],
+  [
+   "Sweden",
+   "Bosnia & Herzegovina",
+   1301161062,
+   "2026-11-14T19:45:00.000Z"
+  ],
+  [
+   "Romania",
+   "Poland",
+   1301160211,
+   "2026-11-14T19:45:00.000Z"
+  ],
+  [
+   "Austria",
+   "Republic of Ireland",
+   1301159360,
+   "2026-11-14T19:45:00.000Z"
+  ],
+  [
+   "Northern Ireland",
+   "Ukraine",
+   1301158509,
+   "2026-11-14T19:45:00.000Z"
+  ],
+  [
+   "Portugal",
+   "Denmark",
+   1301157658,
+   "2026-11-14T19:45:00.000Z"
   ]
  ],
- "generado": "2026-11-12T22:55:55.359598+00:00"
+ "generado": "2026-11-13T15:39:06.553760+00:00"
 }

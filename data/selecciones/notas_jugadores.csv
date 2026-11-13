@@ -5,13 +5,13 @@ Andorra,28889672,Guillaume Lopez,Forward,True,probable,True,0,0,,,,,10,545,6.67,
 Andorra,87708124,Eric Vales,Midfielder,True,probable,True,0,0,,,,,2,153,6.55,6.54,6.54,6.54,True
 Andorra,27250531,Christian García,Defender,True,probable,True,0,0,,,,,9,726,6.51,6.52,6.52,6.52,True
 Andorra,19889933,Ricard Fernandez Cucu,Forward,True,probable,True,0,0,,,,,8,326,6.41,6.5,6.48,6.49,True
-Andorra,92896027,Marc Garcia,Defender,True,probable,True,0,0,,,,,2,102,5.93,6.46,6.39,6.43,True
+Andorra,92896027,Marc Garcia,Defender,True,probable,True,0,0,,,,,2,102,5.93,6.46,6.4,6.43,True
 Andorra,27238134,Albert Rosas,Forward,True,probable,True,0,0,,,,,8,457,6.32,6.43,6.37,6.41,True
 Andorra,34740412,Pau Babot,Midfielder,True,probable,True,0,0,,,,,10,807,6.35,6.41,6.37,6.4,True
-Andorra,27243608,Eric Izquierdo,Midfielder,True,probable,True,0,0,,,,,5,240,6.12,6.36,6.25,6.32,True
+Andorra,27243608,Eric Izquierdo,Midfielder,True,probable,True,0,0,,,,,5,240,6.12,6.36,6.26,6.32,True
 Andorra,814653,Moisés San Nicolás,Defender,True,probable,True,0,0,,,,,11,920,6.14,6.28,6.19,6.24,True
 Andorra,56067599,Ian Bryan Olivera,Defender,False,probable,False,0,0,,,,,8,708,6.65,6.58,6.61,6.59,True
-Andorra,43546951,João Teixeira,Midfielder,False,probable,False,0,0,,,,,6,204,6.6,6.55,6.55,6.55,True
+Andorra,43546951,João Teixeira,Midfielder,False,probable,False,0,0,,,,,6,204,6.6,6.54,6.55,6.55,True
 Andorra,9025009,Marc Pujol,Midfielder,False,probable,False,0,0,,,,,1,57,6.92,6.55,6.56,6.55,True
 Andorra,814492,Marc Rebés,Defender,False,probable,False,0,0,,,,,3,128,6.64,6.55,6.56,6.55,True
 Andorra,9025331,Álex Martínez,Forward,False,probable,False,0,0,,,,,1,24,6.67,6.54,6.54,6.54,True
@@ -39,6 +39,50 @@ Andorra,66496374,Aron Rodrigo,Midfielder,False,probable,False,0,0,,,,,4,224,6.21
 Andorra,19811043,Alex Ruiz,Goalkeeper,False,probable,False,0,0,,,,,1,90,6.17,6.49,6.46,6.48,True
 Andorra,27243286,Joel Guillen,Defender,False,probable,False,0,0,,,,,4,225,6.31,6.48,6.44,6.47,True
 Andorra,92893129,Joan Cervos,Midfielder,False,probable,False,0,0,,,,,5,393,6.34,6.47,6.43,6.45,True
+Austria,4072971,M. Gregoritsch,Forward,True,probable,True,5,301,7.43,3.0,0.0,0.87,19,1083,6.84,7.17,6.94,7.08,False
+Austria,4224794,P. Lienhart,Defender,True,probable,True,5,429,7.11,0.0,0.0,0.07,16,1280,6.97,6.98,6.97,6.98,False
+Austria,176449,X. Schlager,Midfielder,True,probable,True,6,442,7.13,0.0,0.0,0.17,16,1021,6.77,7.03,6.83,6.95,False
+Austria,1211679,A. Schlager,Goalkeeper,True,probable,True,0,0,,,,,15,1309,6.86,6.85,6.85,6.85,True
+Austria,1217636,Romano Schmid,Midfielder,True,probable,True,6,448,6.78,0.0,3.0,0.35,21,1325,6.88,6.81,6.86,6.83,False
+Austria,4172469,P. Mwene,Defender,True,probable,True,5,434,6.92,1.0,1.0,0.19,14,1039,6.68,6.87,6.74,6.82,False
+Austria,1243396,S. Kalajdzic,Forward,True,probable,True,0,0,,,,0.93,10,356,6.8,6.81,6.8,6.81,True
+Austria,20389516,P. Wimmer,Midfielder,True,probable,True,4,207,6.68,0.0,0.0,0.51,15,848,6.77,6.78,6.77,6.78,False
+Austria,1179962,N. Seiwald,Midfielder,True,probable,True,4,235,6.57,0.0,0.0,0.06,21,1704,6.85,6.72,6.82,6.76,False
+Austria,114625,S. Posch,Defender,True,probable,True,4,358,6.6,0.0,0.0,0.12,17,1220,6.54,6.68,6.57,6.64,False
+Austria,4071361,K. Danso,Defender,True,probable,True,4,360,6.28,0.0,0.0,0.0,15,926,6.82,6.5,6.73,6.59,False
+Austria,1138907,M. Grüll,Forward,False,probable,False,5,445,7.54,2.0,5.0,0.17,4,146,6.35,7.3,7.03,7.19,False
+Austria,3031784,M. Arnautović,Forward,False,probable,False,0,0,,,,,16,840,7.25,7.07,7.18,7.11,True
+Austria,81459,David Alaba,Defender,False,probable,False,0,0,,,,0.0,12,758,7.13,7.01,7.09,7.04,True
+Austria,1150821,F. Bacher,Defender,False,probable,False,6,536,7.1,1.0,0.0,0.06,1,90,7.04,7.0,7.01,7.0,False
+Austria,1223432,P. Pentz,Goalkeeper,False,probable,False,0,0,,,,,4,315,7.22,6.95,7.03,6.98,True
+Austria,186753,M. Sabitzer,Midfielder,False,probable,False,5,150,6.51,0.0,1.0,0.19,15,1313,7.45,6.73,7.25,6.94,False
+Austria,43683801,C. Lang,Midfielder,False,probable,False,0,0,,,,,2,45,7.22,6.9,6.96,6.92,True
+Austria,45684387,N. Veratschnig,Defender,False,probable,False,0,0,,,,0.09,1,79,7.1,6.9,6.96,6.92,True
+Austria,4017909,M. Honsak,Defender,False,probable,False,0,0,,,,0.27,1,90,7.45,6.87,6.91,6.88,True
+Austria,69033573,Nikolaus Wurmbrand,Forward,False,probable,False,0,0,,,,,1,19,8.54,6.87,6.9,6.88,True
+Austria,115269,Christoph Baumgartner,Midfielder,False,probable,False,0,0,,,,0.78,10,772,6.87,6.85,6.86,6.86,True
+Austria,24625104,T. Ballo,Midfielder,False,probable,False,0,0,,,,,1,45,7.15,6.84,6.85,6.85,True
+Austria,115913,F. Grillitsch,Midfielder,False,probable,False,1,8,6.34,0.0,0.0,0.21,10,379,6.82,6.84,6.83,6.84,False
+Austria,1158549,Tobias Lawal,Goalkeeper,False,probable,False,0,0,,,,,1,45,7.02,6.84,6.84,6.84,True
+Austria,4075708,M. Friedl,Defender,False,probable,False,5,450,6.8,0.0,0.0,0.03,8,332,7.04,6.79,6.89,6.83,False
+Austria,23507442,M. Cham,Midfielder,False,probable,False,0,0,,,,,2,65,6.56,6.82,6.81,6.82,True
+Austria,67291,A. Schöpf,Midfielder,False,probable,False,0,0,,,,,3,31,6.58,6.82,6.81,6.82,True
+Austria,22368689,C. Chukwuemeka,Midfielder,False,probable,False,1,25,6.75,0.0,0.0,0.37,9,268,6.7,6.84,6.77,6.82,False
+Austria,43502515,R. Florucz,Forward,False,probable,False,0,0,,,,,3,50,6.53,6.82,6.8,6.81,True
+Austria,94344705,V. Markovic,Midfielder,False,probable,False,0,0,,,,,1,22,6.47,6.8,6.77,6.79,True
+Austria,1212323,Gernot Trauner,Defender,False,probable,False,0,0,,,,,1,68,5.88,6.8,6.76,6.78,True
+Austria,20153007,J. Adamu,Forward,False,probable,False,3,211,6.4,0.0,1.0,0.38,1,58,7.83,6.68,6.92,6.78,False
+Austria,1141644,M. Svoboda,Defender,False,probable,False,1,4,6.8,0.0,0.0,0.18,2,61,6.52,6.78,6.75,6.77,False
+Austria,1245972,S. Horvath,Midfielder,False,probable,False,0,0,,,,,1,17,6.18,6.78,6.74,6.77,True
+Austria,46401320,L. Querfeld,Defender,False,probable,False,3,270,6.65,1.0,1.0,0.21,1,45,6.9,6.72,6.72,6.72,False
+Austria,1179801,A. Prass,Defender,False,probable,False,1,16,5.96,0.0,0.0,0.32,10,341,6.67,6.73,6.7,6.72,False
+Austria,4099375,K. Stöger,Midfielder,False,probable,False,3,161,6.39,0.0,0.0,0.29,1,16,6.7,6.68,6.68,6.68,False
+Austria,186431,K. Laimer,Defender,False,probable,False,2,180,6.42,0.0,0.0,0.44,17,1375,6.69,6.63,6.67,6.65,False
+Austria,20389194,D. Affengruber,Defender,False,probable,False,6,540,6.51,0.0,0.0,0.09,3,149,6.85,6.6,6.7,6.64,False
+Austria,71736280,Christian Zawieschitzky,Goalkeeper,False,probable,False,0,0,,,,,1,90,6.32,6.68,6.57,6.64,True
+Austria,329882,M. Wöber,Defender,False,probable,False,5,161,6.61,1.0,0.0,0.0,4,185,6.04,6.72,6.46,6.62,False
+Austria,52791249,P. Wanner,Midfielder,False,probable,False,0,0,,,,0.35,9,489,6.52,6.64,6.57,6.61,True
+Austria,35678559,Florian Wiegele,Goalkeeper,False,probable,False,0,0,,,,,2,139,6.3,6.65,6.52,6.6,True
 Azerbaijan,250670,M. Emreli,Forward,True,probable,True,0,0,,,,,8,576,7.34,7.08,7.24,7.14,True
 Azerbaijan,9009392,A. Krivotsyuk,Defender,True,probable,True,0,0,,,,,6,540,6.96,6.82,6.89,6.85,True
 Azerbaijan,43747718,A. Xaybulayev,Midfielder,True,probable,True,0,0,,,,,8,662,6.85,6.78,6.82,6.8,True
@@ -51,7 +95,7 @@ Azerbaijan,19859021,T. Mütəllimov,Defender,True,probable,True,0,0,,,,,3,221,6.
 Azerbaijan,19862080,R. Daşdəmirov,Defender,True,probable,True,0,0,,,,,6,427,6.06,6.35,6.2,6.29,True
 Azerbaijan,247611,R. Məmmədov,Defender,True,probable,True,0,0,,,,,3,200,5.93,6.33,6.14,6.25,True
 Azerbaijan,9009875,Emin Mahmudov,Midfielder,False,probable,False,0,0,,,,,8,607,7.08,6.87,6.97,6.91,True
-Azerbaijan,21583492,Musa Qurbanlı,Forward,False,probable,False,0,0,,,,,6,191,6.88,6.75,6.8,6.77,True
+Azerbaijan,21583492,Musa Qurbanlı,Forward,False,probable,False,0,0,,,,,6,191,6.88,6.75,6.79,6.77,True
 Azerbaijan,11332783,Bahlul Mustafazada,Defender,False,probable,False,0,0,,,,,7,630,6.83,6.74,6.78,6.75,True
 Azerbaijan,246806,Shakhrudin Magomedaliyev,Goalkeeper,False,probable,False,0,0,,,,,5,405,6.85,6.73,6.77,6.75,True
 Azerbaijan,19866588,A. Bayramov,Goalkeeper,False,probable,False,0,0,,,,,2,135,7.03,6.73,6.78,6.75,True
@@ -77,7 +121,44 @@ Azerbaijan,32541957,R. Əhmədzadə,Forward,False,probable,False,0,0,,,,,4,156,6
 Azerbaijan,17061163,Q. Alıyev,Defender,False,probable,False,0,0,,,,,5,256,6.4,6.61,6.56,6.59,True
 Azerbaijan,60505725,Nariman Akhundzade,Forward,False,probable,False,0,0,,,,,6,347,6.41,6.6,6.54,6.58,True
 Azerbaijan,19869164,R. Abdullazadə,Midfielder,False,probable,False,0,0,,,,,3,94,6.41,6.6,6.55,6.58,True
-Azerbaijan,17126368,Vüsal İsgändärli,Forward,False,probable,False,0,0,,,,,3,122,6.37,6.56,6.49,6.53,True
+Azerbaijan,17126368,Vüsal İsgändärli,Forward,False,probable,False,0,0,,,,,3,122,6.37,6.56,6.49,6.54,True
+Bosnia & Herzegovina,26117896,Ivan Bašić,Midfielder,True,probable,True,0,0,,,,,14,815,7.34,7.19,7.3,7.23,True
+Bosnia & Herzegovina,17447724,Martin Zlomislić,Goalkeeper,True,probable,True,0,0,,,,,3,270,7.17,7.0,7.1,7.04,True
+Bosnia & Herzegovina,43687504,T. Muharemović,Defender,True,probable,True,6,540,7.08,0.0,1.0,0.12,14,1265,7.13,6.98,7.1,7.03,False
+Bosnia & Herzegovina,280455,N. Katić,Defender,True,probable,True,5,436,7.0,0.0,0.0,0.18,15,1287,7.08,6.91,7.04,6.97,False
+Bosnia & Herzegovina,53035003,E. Bajraktarevic,Midfielder,True,probable,True,0,0,,,,,15,1007,6.94,6.9,6.93,6.92,True
+Bosnia & Herzegovina,63685153,Kerim Alajbegović,Midfielder,True,probable,True,5,274,6.76,0.0,1.0,0.57,14,905,6.9,6.81,6.87,6.83,False
+Bosnia & Herzegovina,4569656,H. Tabaković,Forward,True,probable,True,0,0,,,,0.61,9,482,6.82,6.81,6.82,6.82,True
+Bosnia & Herzegovina,11352908,A. Gigović,Midfielder,True,probable,True,0,0,,,,0.32,14,672,6.73,6.75,6.74,6.75,True
+Bosnia & Herzegovina,51858415,Amar Memić,Midfielder,True,probable,True,0,0,,,,,17,1120,6.67,6.7,6.67,6.69,True
+Bosnia & Herzegovina,232316,Sead Kolašinac,Defender,True,probable,True,4,238,6.76,0.0,0.0,0.0,12,977,6.47,6.77,6.55,6.68,False
+Bosnia & Herzegovina,7555884,E. Demirović,Forward,True,probable,True,5,279,6.3,1.0,0.0,0.76,15,1272,6.43,6.59,6.47,6.54,False
+Bosnia & Herzegovina,8060941,Haris Hajradinović,Midfielder,False,probable,False,0,0,,,,,3,223,7.85,6.94,7.07,6.99,True
+Bosnia & Herzegovina,1178513,Jusuf Gazibegović,Defender,False,probable,False,0,0,,,,,2,122,7.56,6.88,6.96,6.91,True
+Bosnia & Herzegovina,12403111,J. Lukić,Forward,False,probable,False,0,0,,,,,6,117,7.0,6.86,6.9,6.87,True
+Bosnia & Herzegovina,4045923,D. Burnić,Midfielder,False,probable,False,0,0,,,,,10,425,6.93,6.85,6.88,6.86,True
+Bosnia & Herzegovina,8616391,Dennis Hadžikadunić,Defender,False,probable,False,0,0,,,,,2,117,7.01,6.83,6.86,6.85,True
+Bosnia & Herzegovina,10962644,A. Barišić,Defender,False,probable,False,0,0,,,,,4,297,6.95,6.82,6.84,6.83,True
+Bosnia & Herzegovina,5029955,Dario Šarić,Midfielder,False,probable,False,0,0,,,,,2,58,7.07,6.8,6.81,6.81,True
+Bosnia & Herzegovina,71047844,E. Košpo,Defender,False,probable,False,0,0,,,,,1,14,7.05,6.8,6.8,6.8,True
+Bosnia & Herzegovina,113659,Ermin Bičakčić,Defender,False,probable,False,0,0,,,,,2,24,6.64,6.79,6.79,6.79,True
+Bosnia & Herzegovina,43165864,N. Omerović,Defender,False,probable,False,0,0,,,,,1,19,6.6,6.79,6.79,6.79,True
+Bosnia & Herzegovina,2302615,Stjepan Radeljić,Defender,False,probable,False,0,0,,,,,6,451,6.76,6.78,6.77,6.78,True
+Bosnia & Herzegovina,2308411,Dino Beširović,Midfielder,False,probable,False,0,0,,,,,1,12,6.16,6.79,6.78,6.78,True
+Bosnia & Herzegovina,1237117,E. Karić,Defender,False,probable,False,0,0,,,,0.13,1,71,6.65,6.78,6.77,6.78,True
+Bosnia & Herzegovina,65957024,A. Malic,Defender,False,probable,False,0,0,,,,,6,378,6.71,6.77,6.75,6.76,True
+Bosnia & Herzegovina,127344,E. Džeko,Forward,False,probable,False,4,107,6.11,0.0,0.0,0.75,13,957,6.98,6.67,6.87,6.75,False
+Bosnia & Herzegovina,57043259,S. Hamzić,Goalkeeper,False,probable,False,0,0,,,,,1,90,6.66,6.76,6.73,6.74,True
+Bosnia & Herzegovina,8051120,Amir Hadžiahmetović,Midfielder,False,probable,False,0,0,,,,,4,73,6.4,6.75,6.7,6.73,True
+Bosnia & Herzegovina,12375741,Nihad Mujakić,Defender,False,probable,False,0,0,,,,,5,177,6.45,6.73,6.68,6.71,True
+Bosnia & Herzegovina,42519288,B. Tahirović,Midfielder,False,probable,False,0,0,,,,,17,1050,6.66,6.71,6.68,6.7,True
+Bosnia & Herzegovina,50614851,S. Baždar,Forward,False,probable,False,0,0,,,,0.82,9,275,6.51,6.72,6.67,6.7,True
+Bosnia & Herzegovina,54768007,Ermin Mahmić,Midfielder,False,probable,False,0,0,,,,,7,224,6.62,6.71,6.66,6.69,True
+Bosnia & Herzegovina,2370235,A. Hasić,Midfielder,False,probable,False,0,0,,,,,1,27,6.07,6.71,6.64,6.69,True
+Bosnia & Herzegovina,1178352,A. Dedić,Defender,False,probable,False,4,328,6.57,0.0,1.0,0.15,11,952,6.71,6.67,6.7,6.68,False
+Bosnia & Herzegovina,213318,Ivan Šunjić,Midfielder,False,probable,False,0,0,,,,,14,924,6.59,6.67,6.62,6.65,True
+Bosnia & Herzegovina,66599736,Z. Smajlović,Defender,False,probable,False,0,0,,,,,3,111,6.41,6.66,6.58,6.63,True
+Bosnia & Herzegovina,1453340,N. Vasilj,Goalkeeper,False,probable,False,0,0,,,,0.0,14,1320,6.18,6.36,6.24,6.31,True
 Bulgaria,170170,D. Naumov,Goalkeeper,True,probable,True,0,0,,,,,4,360,7.0,6.84,6.94,6.88,True
 Bulgaria,28569926,L. Petkov,Forward,True,probable,True,5,443,7.04,1.0,1.0,0.62,5,324,5.99,6.98,6.45,6.77,False
 Bulgaria,1820420,A. Chandarov,Midfielder,True,probable,True,0,0,,,,,3,168,6.8,6.67,6.73,6.69,True
@@ -91,7 +172,7 @@ Bulgaria,47901357,E. Tsenov,Defender,True,probable,True,0,0,,,,,5,373,6.47,6.52,
 Bulgaria,20400625,A. Kraev,Midfielder,True,probable,True,0,0,,,,,6,474,6.34,6.45,6.39,6.43,True
 Bulgaria,63462007,K. Balov,Forward,False,probable,False,0,0,,,,,2,111,7.41,6.86,7.05,6.94,True
 Bulgaria,1810599,Filip Krastev,Midfielder,False,probable,False,0,0,,,,,6,388,7.37,6.81,6.98,6.88,True
-Bulgaria,47220488,Y. Stoyanov,Defender,False,probable,False,0,0,,,,,2,107,7.02,6.72,6.83,6.76,True
+Bulgaria,47220488,Y. Stoyanov,Defender,False,probable,False,0,0,,,,,2,107,7.02,6.72,6.82,6.76,True
 Bulgaria,1818166,S. Vutsov,Goalkeeper,False,probable,False,0,0,,,,,3,270,7.18,6.71,6.82,6.75,True
 Bulgaria,1789830,M. Minchev,Midfielder,False,probable,False,0,0,,,,,7,270,6.83,6.68,6.74,6.71,True
 Bulgaria,1770671,Valentin Antov,Defender,False,probable,False,0,0,,,,,1,90,7.35,6.61,6.64,6.62,True
@@ -127,6 +208,51 @@ Bulgaria,2328214,B. Tsonev,Midfielder,False,probable,False,0,0,,,,,1,45,6.1,6.49
 Bulgaria,55112064,R. Bozhinov,Defender,False,probable,False,0,0,,,,0.05,3,208,6.07,6.48,6.4,6.45,True
 Bulgaria,60375798,T. Ivanov,Defender,False,probable,False,0,0,,,,,1,82,6.12,6.45,6.36,6.41,True
 Bulgaria,32212712,H. Petrov,Defender,False,probable,False,0,0,,,,,4,360,6.2,6.41,6.32,6.37,True
+Denmark,2561342,M. Damsgaard,Midfielder,True,probable,True,5,286,7.14,0.0,0.0,0.31,12,1006,7.9,7.0,7.63,7.25,False
+Denmark,440489,P. Højbjerg,Midfielder,True,probable,True,5,450,7.32,1.0,0.0,0.25,14,1152,7.19,7.14,7.18,7.16,False
+Denmark,21818713,Gustav Isaksen,Midfielder,True,probable,True,5,247,7.04,1.0,0.0,0.28,13,943,7.53,6.94,7.33,7.1,False
+Denmark,310884,J. Mæhle,Defender,True,probable,True,0,0,,,,0.19,12,1071,6.96,6.99,6.97,6.98,True
+Denmark,1241786,M. Hjulmand,Midfielder,True,probable,True,7,353,6.98,0.0,0.0,0.2,16,1273,6.97,6.93,6.96,6.94,False
+Denmark,439523,J. Andersen,Defender,True,probable,True,3,190,6.92,0.0,0.0,0.03,15,1267,7.13,6.84,7.05,6.92,False
+Denmark,46369120,Rasmus Højlund,Forward,True,probable,True,6,424,6.56,2.0,0.0,0.6,15,994,7.32,6.69,7.14,6.87,False
+Denmark,85967,R. Kristensen,Defender,True,probable,True,0,0,,,,0.13,12,1038,6.74,6.84,6.77,6.81,True
+Denmark,209454,M. Daramy,Midfielder,True,probable,True,0,0,,,,0.42,3,240,6.6,6.82,6.7,6.77,True
+Denmark,56488131,Oliver Provstgaard,Defender,True,probable,True,6,510,6.63,0.0,0.0,0.0,4,363,6.69,6.68,6.69,6.68,False
+Denmark,62608546,Victor Mow Froholdt,Midfielder,True,probable,True,0,0,,,,,15,818,6.52,6.71,6.59,6.66,True
+Denmark,4895681,Christian Nørgaard,Midfielder,False,probable,False,0,0,,,,0.26,9,601,7.48,7.24,7.34,7.28,True
+Denmark,28168,Christian Eriksen,Midfielder,False,probable,False,0,0,,,,0.43,10,601,7.4,7.21,7.29,7.24,True
+Denmark,88704,K. Dolberg,Forward,False,probable,False,0,0,,,,,2,151,7.62,7.13,7.19,7.15,True
+Denmark,3049977,Jannik Vestergaard,Defender,False,probable,False,0,0,,,,0.1,8,621,7.24,7.13,7.17,7.14,True
+Denmark,62190751,T. Jørgensen,Midfielder,False,probable,False,6,528,7.29,2.0,1.0,0.42,1,2,5.89,7.14,7.13,7.14,False
+Denmark,7247891,A. Dreyer,Midfielder,False,probable,False,0,0,,,,,5,224,7.27,7.11,7.14,7.12,True
+Denmark,42371651,A. Grønbæk,Midfielder,False,probable,False,4,337,7.37,0.0,2.0,0.37,2,38,6.22,7.14,7.08,7.12,False
+Denmark,2515457,A. Bah,Defender,False,probable,False,0,0,,,,,3,262,7.16,7.1,7.12,7.11,True
+Denmark,2562630,Andreas Skov Olsen,Forward,False,probable,False,0,0,,,,0.49,4,220,7.11,7.08,7.09,7.08,True
+Denmark,209776,J. Wind,Forward,False,probable,False,0,0,,,,0.18,3,93,7.17,7.08,7.09,7.08,True
+Denmark,50544655,A. Gaaei,Defender,False,probable,False,0,0,,,,,2,44,7.13,7.07,7.07,7.07,True
+Denmark,3696,J. Bruun Larsen,Forward,False,probable,False,0,0,,,,0.23,1,11,6.69,7.06,7.06,7.06,True
+Denmark,440328,P. Billing,Midfielder,False,probable,False,0,0,,,,0.25,0,1,,7.06,7.06,7.06,True
+Denmark,2549911,Carlo Holse,Forward,False,probable,False,0,0,,,,,1,12,6.34,7.06,7.05,7.05,True
+Denmark,2561986,V. Nelsson,Defender,False,probable,False,0,0,,,,0.0,2,150,6.98,7.04,7.03,7.04,True
+Denmark,25552464,Victor Kristiansen,Defender,False,probable,False,0,0,,,,0.0,1,47,6.2,7.04,7.02,7.03,True
+Denmark,2557478,J. Lindstrøm,Midfielder,False,probable,False,0,0,,,,0.0,2,134,6.55,7.03,7.0,7.02,True
+Denmark,42753060,M. Kvistgaarden,Forward,False,probable,False,0,0,,,,,2,33,6.51,7.03,7.01,7.02,True
+Denmark,46145330,F. Jörgensen,Goalkeeper,False,probable,False,6,540,7.08,0.0,0.0,0.0,3,270,6.8,7.06,6.94,7.01,False
+Denmark,2528498,K. Høgh,Forward,False,probable,False,0,0,,,,,7,109,6.78,6.99,6.94,6.97,True
+Denmark,367556,A. Christensen,Defender,False,probable,False,6,402,6.89,0.0,1.0,0.17,7,585,7.43,6.84,7.1,6.95,False
+Denmark,2555224,M. Hermansen,Goalkeeper,False,probable,False,0,0,,,,0.05,5,452,6.85,6.94,6.89,6.92,True
+Denmark,7637672,Mathias Jensen,Midfielder,False,probable,False,2,90,7.13,0.0,0.0,0.26,0,5,,6.92,6.92,6.92,False
+Denmark,439362,Kasper Schmeichel,Goalkeeper,False,probable,False,0,0,,,,,9,840,6.74,6.92,6.84,6.89,True
+Denmark,45567340,M. Biereth,Forward,False,probable,False,2,42,6.87,0.0,0.0,0.44,9,399,6.67,6.89,6.83,6.87,False
+Denmark,3063984,M. O&apos;Riley,Midfielder,False,probable,False,2,17,6.61,0.0,0.0,0.48,3,40,6.92,6.84,6.84,6.84,False
+Denmark,67606630,C. Harder,Forward,False,probable,False,5,149,6.71,1.0,1.0,0.61,1,23,6.66,6.83,6.83,6.83,False
+Denmark,3993920,N. Nartey,Midfielder,False,probable,False,1,6,6.25,0.0,0.0,0.46,1,14,5.83,6.84,6.79,6.82,False
+Denmark,50753311,William Osula,Forward,False,probable,False,1,56,6.64,0.0,1.0,0.72,1,62,6.29,6.85,6.76,6.82,False
+Denmark,2556995,Morten Frendrup,Midfielder,False,probable,False,6,540,6.79,0.0,0.0,0.05,1,37,6.47,6.81,6.81,6.81,False
+Denmark,61574926,P. Dorgu,Defender,False,probable,False,5,175,6.3,0.0,1.0,0.46,11,672,7.32,6.59,6.99,6.75,False
+Denmark,58372958,A. Daghim,Forward,False,probable,False,5,421,6.7,2.0,2.0,0.3,2,60,5.6,6.77,6.52,6.67,False
+Denmark,26112583,M. Bidstrup,Midfielder,False,probable,False,6,444,6.54,0.0,0.0,0.03,1,15,5.79,6.66,6.6,6.64,False
+Denmark,63787227,L. Høgsberg,Defender,False,probable,False,4,198,6.25,0.0,0.0,0.0,5,206,6.79,6.55,6.6,6.57,False
 Estonia,27256649,K. Hein,Goalkeeper,True,probable,True,5,450,7.11,0.0,0.0,0.0,9,765,7.15,7.08,7.12,7.09,False
 Estonia,9761101,Rasmus Peetson,Defender,True,probable,True,0,0,,,,,7,584,7.05,6.88,6.98,6.92,True
 Estonia,6327776,M. Igonen,Goalkeeper,True,probable,True,0,0,,,,,4,315,6.95,6.78,6.87,6.82,True
@@ -137,7 +263,7 @@ Estonia,7751016,K. Mets,Defender,True,probable,True,0,0,,,,0.04,6,478,6.62,6.62,
 Estonia,9719724,Markus Poom,Midfielder,True,probable,True,0,0,,,,,6,454,6.58,6.6,6.59,6.59,True
 Estonia,57584541,P. Kristal,Midfielder,True,probable,True,0,0,,,,,9,527,6.45,6.52,6.48,6.51,True
 Estonia,31701215,K. Palumets,Midfielder,True,probable,True,0,0,,,,,9,610,6.31,6.43,6.36,6.4,True
-Estonia,9721012,M. Schjønning-Larsen,Defender,True,probable,True,0,0,,,,,12,974,6.29,6.4,6.33,6.37,True
+Estonia,9721012,M. Schjønning-Larsen,Defender,True,probable,True,0,0,,,,,12,974,6.29,6.4,6.33,6.38,True
 Estonia,33612124,E. Tõugjas,Defender,False,probable,False,0,0,,,,,2,180,7.11,6.85,6.97,6.9,True
 Estonia,6032824,Rauno Sappinen,Forward,False,probable,False,0,0,,,,,6,423,6.73,6.66,6.68,6.67,True
 Estonia,30606254,I. Yakovlev,Midfielder,False,probable,False,0,0,,,,,4,308,6.66,6.63,6.64,6.63,True
@@ -156,7 +282,7 @@ Estonia,9759330,V. Sinyavskiy,Midfielder,False,probable,False,0,0,,,,,8,652,6.55
 Estonia,9768990,Alex Matthias Tamm,Forward,False,probable,False,0,0,,,,,7,272,6.45,6.59,6.56,6.58,True
 Estonia,33613734,Robi Saarma,Midfielder,False,probable,False,0,0,,,,,9,445,6.49,6.55,6.52,6.54,True
 Estonia,66157630,Maksimilian Skvortsov,Midfielder,False,probable,False,0,0,,,,,1,22,5.98,6.56,6.51,6.54,True
-Estonia,9720690,Mattias Männilaan,Forward,False,probable,False,0,0,,,,,3,172,6.44,6.54,6.49,6.52,True
+Estonia,9720690,Mattias Männilaan,Forward,False,probable,False,0,0,,,,,3,172,6.44,6.54,6.5,6.52,True
 Estonia,92546335,Karel Mustmaa,Forward,False,probable,False,0,0,,,,,6,215,6.38,6.51,6.45,6.49,True
 Estonia,9770439,Joseph Saliste,Defender,False,probable,False,0,0,,,,,6,399,6.27,6.49,6.41,6.46,True
 Faroe Islands,11327792,Jóannes Bjartalíð,Forward,True,probable,True,0,0,,,,,8,397,7.03,6.86,6.96,6.9,True
@@ -192,6 +318,41 @@ Faroe Islands,61301387,M. Hellisdal,Midfielder,False,probable,False,0,0,,,,,3,10
 Faroe Islands,11747036,Jann Benjaminsen,Defender,False,probable,False,0,0,,,,,4,196,6.31,6.51,6.44,6.48,True
 Faroe Islands,11762009,Poul Kallsberg,Forward,False,probable,False,0,0,,,,,3,73,6.15,6.49,6.4,6.46,True
 Faroe Islands,2579696,Heini Vatnsdal,Defender,False,probable,False,0,0,,,,,1,53,5.83,6.45,6.33,6.4,True
+Georgia,3986514,G. Mamardashvili,Goalkeeper,True,probable,True,0,0,,,,0.0,12,1080,7.35,7.17,7.3,7.22,True
+Georgia,4560801,L. Dvali,Defender,True,probable,True,0,0,,,,,7,491,7.03,6.92,6.99,6.95,True
+Georgia,77917,K. Kvaratskhelia,Forward,True,probable,True,6,314,7.11,1.0,1.0,0.93,11,956,6.74,7.01,6.82,6.93,False
+Georgia,19287149,G. Kochorashvili,Midfielder,True,probable,True,5,185,6.77,0.0,1.0,0.19,11,889,6.89,6.82,6.86,6.84,False
+Georgia,1365595,Giorgi Chakvetadze,Midfielder,True,probable,True,2,62,6.44,0.0,0.0,,6,330,6.91,6.78,6.85,6.81,False
+Georgia,51206687,Saba Goglichidze,Defender,True,probable,True,1,54,7.12,1.0,0.0,0.0,10,829,6.58,6.84,6.67,6.77,False
+Georgia,29060010,G. Mikautadze,Forward,True,probable,True,8,442,6.66,2.0,1.0,0.69,10,648,6.4,6.75,6.54,6.67,False
+Georgia,351295,G. Tsitaishvili,Defender,True,probable,True,4,201,6.37,0.0,0.0,0.17,8,446,6.83,6.61,6.73,6.65,False
+Georgia,28969689,Anzor Mekvabishvili,Midfielder,True,probable,True,0,0,,,,,12,762,6.57,6.64,6.6,6.62,True
+Georgia,9857218,L. Lochoshvili,Defender,True,probable,True,5,438,6.37,0.0,0.0,0.21,10,853,6.79,6.52,6.71,6.6,False
+Georgia,7800765,O. Kakabadze,Defender,True,probable,True,0,0,,,,,10,878,6.43,6.53,6.46,6.5,True
+Georgia,50111565,Giorgi Kvernadze,Forward,False,probable,False,6,527,7.36,3.0,1.0,0.38,5,181,6.42,7.21,6.89,7.08,False
+Georgia,3960271,I. Azarovi,Defender,False,probable,False,0,0,,,,,4,197,7.36,6.83,6.91,6.86,True
+Georgia,3983777,Z. Davitashvili,Forward,False,probable,False,0,0,,,,0.76,11,625,6.82,6.78,6.8,6.79,True
+Georgia,3955441,G. Guliashvili,Forward,False,probable,False,4,63,6.39,0.0,0.0,0.54,4,56,6.2,6.8,6.77,6.79,False
+Georgia,3972668,Nika Gagnidze,Midfielder,False,probable,False,0,0,,,,,4,182,6.96,6.78,6.81,6.79,True
+Georgia,1367044,G. Kvilitaia,Forward,False,probable,False,0,0,,,,0.73,2,78,7.05,6.77,6.8,6.78,True
+Georgia,3963008,Giorgi Zaria,Midfielder,False,probable,False,0,0,,,,,1,13,6.61,6.74,6.74,6.74,True
+Georgia,2527532,Saba Lobzhanidze,Midfielder,False,probable,False,0,0,,,,,2,30,6.71,6.74,6.74,6.74,True
+Georgia,10976651,G. Abuashvili,Forward,False,probable,False,0,0,,,,0.22,2,19,6.69,6.74,6.74,6.74,True
+Georgia,3963491,L. Shengelia,Forward,False,probable,False,0,0,,,,,1,45,6.55,6.73,6.73,6.73,True
+Georgia,34748462,N. Lominadze,Midfielder,False,probable,False,0,0,,,,,2,36,6.72,6.74,6.73,6.73,True
+Georgia,20245904,Iuri Tabatadze,Midfielder,False,probable,False,0,0,,,,0.56,1,57,6.68,6.73,6.73,6.73,True
+Georgia,8647142,Jemal Tabidze,Defender,False,probable,False,0,0,,,,,1,5,6.28,6.73,6.72,6.72,True
+Georgia,3921309,I. Beriashvili,Defender,False,probable,False,0,0,,,,,1,5,6.13,6.72,6.71,6.72,True
+Georgia,9007460,Nika Kvekveskiri,Midfielder,False,probable,False,0,0,,,,,1,90,6.32,6.72,6.7,6.71,True
+Georgia,8238685,Guram Kashia,Defender,False,probable,False,0,0,,,,,5,405,6.65,6.71,6.69,6.7,True
+Georgia,44000649,G. Mamageishvili,Midfielder,False,probable,False,0,0,,,,,1,74,6.61,6.7,6.68,6.69,True
+Georgia,59768345,I. Yegoian,Midfielder,False,probable,False,0,0,,,,,2,61,6.53,6.69,6.66,6.68,True
+Georgia,43265362,S. Sazonov,Defender,False,probable,False,5,127,6.38,0.0,0.0,,1,90,6.86,6.65,6.71,6.68,False
+Georgia,1221500,O. Kiteishvili,Midfielder,False,probable,False,0,0,,,,,9,588,6.6,6.66,6.63,6.65,True
+Georgia,3958339,V. Mamuchashvili,Midfielder,False,probable,False,0,0,,,,,2,107,6.11,6.66,6.6,6.64,True
+Georgia,42784455,G. Gocholeishvili,Defender,False,probable,False,2,144,6.4,0.0,0.0,0.07,6,391,6.49,6.65,6.6,6.63,False
+Georgia,71561756,Saba Kharebashvili,Midfielder,False,probable,False,0,0,,,,,1,45,6.06,6.62,6.53,6.58,True
+Georgia,3967355,B. Zivzivadze,Forward,False,probable,False,0,0,,,,0.41,8,369,6.25,6.51,6.39,6.46,True
 Germany,80976,J. Kimmich,Defender,True,probable,True,5,385,7.8,0.0,2.0,0.33,19,1653,7.55,7.38,7.52,7.43,False
 Germany,52813467,A. Pavlović,Midfielder,True,probable,True,5,398,7.42,1.0,1.0,0.17,13,1005,7.24,7.19,7.22,7.2,False
 Germany,156646,J. Tah,Defender,True,probable,True,4,282,7.43,0.0,0.0,0.12,20,1680,6.98,7.11,7.01,7.07,False
@@ -204,9 +365,9 @@ Germany,28781963,P. Treu,Defender,True,probable,True,5,366,6.84,0.0,0.0,0.1,3,27
 Germany,45092068,N. Brown,Defender,True,probable,True,5,201,6.56,1.0,0.0,0.26,10,695,7.03,6.69,6.93,6.78,False
 Germany,26273583,M. Thiaw,Defender,True,probable,True,5,450,6.56,0.0,0.0,0.12,6,257,7.13,6.64,6.89,6.74,False
 Germany,4080216,M. Mittelstädt,Defender,False,probable,False,5,438,8.05,1.0,1.0,0.32,5,355,7.28,7.56,7.46,7.52,False
-Germany,20601,M. ter Stegen,Goalkeeper,False,probable,False,0,0,,,,0.0,3,275,7.81,7.34,7.5,7.4,True
+Germany,20601,M. ter Stegen,Goalkeeper,False,probable,False,0,0,,,,0.0,3,275,7.81,7.33,7.5,7.4,True
 Germany,3054324,P. Groß,Midfielder,False,probable,False,6,540,7.64,3.0,4.0,0.21,7,343,6.86,7.37,7.22,7.31,False
-Germany,4088105,N. Füllkrug,Forward,False,probable,False,5,396,7.46,4.0,0.0,0.08,2,124,6.42,7.23,7.16,7.21,False
+Germany,4088105,N. Füllkrug,Forward,False,probable,False,5,396,7.46,4.0,0.0,0.08,2,124,6.42,7.23,7.17,7.21,False
 Germany,65879744,Y. Ebnoutalib,Forward,False,probable,False,5,326,7.75,4.0,1.0,0.76,2,150,6.35,7.36,6.95,7.19,False
 Germany,4225277,N. Schlotterbeck,Defender,False,probable,False,3,257,7.41,1.0,0.0,0.19,12,919,7.44,7.09,7.33,7.18,False
 Germany,1180928,K. Adeyemi,Midfielder,False,probable,False,8,261,7.6,2.0,2.0,0.78,9,442,6.91,7.22,7.06,7.16,False
@@ -293,7 +454,7 @@ Greece,257754,K. Tsimikas,Defender,True,probable,True,2,64,6.63,0.0,0.0,0.09,14,
 Greece,156485,P. Retsos,Defender,True,probable,True,0,0,,,,,9,711,6.74,6.75,6.74,6.75,True
 Greece,4307065,D. Kourbelis,Midfielder,True,probable,True,0,0,,,,,12,792,6.7,6.73,6.71,6.72,True
 Greece,5924632,V. Pavlidis,Forward,True,probable,True,0,0,,,,,14,845,6.66,6.7,6.67,6.69,True
-Greece,258076,T. Androutsos,Midfielder,True,probable,True,0,0,,,,,4,252,6.52,6.64,6.58,6.62,True
+Greece,258076,T. Androutsos,Midfielder,True,probable,True,0,0,,,,,4,252,6.52,6.65,6.58,6.62,True
 Greece,34898836,C. Zafeiris,Midfielder,True,probable,True,0,0,,,,,13,887,6.55,6.63,6.57,6.6,True
 Greece,4372431,M. Saliakas,Defender,True,probable,True,0,0,,,,0.35,3,225,6.28,6.52,6.4,6.47,True
 Greece,4289838,Christos Mandas,Goalkeeper,False,probable,False,6,540,7.9,0.0,0.0,0.0,1,10,6.89,7.61,7.59,7.6,False
@@ -305,7 +466,7 @@ Greece,9862531,L. Rota,Defender,False,probable,False,0,0,,,,,6,395,6.96,6.86,6.9
 Greece,5938639,Pantelis Hatzidiakos,Defender,False,probable,False,0,0,,,,0.08,3,215,6.96,6.84,6.88,6.86,True
 Greece,4322199,Anastasios Douvikas,Forward,False,probable,False,6,407,6.73,2.0,0.0,0.71,4,139,7.15,6.8,6.91,6.84,False
 Greece,26148164,G. Konstantelias,Midfielder,False,probable,False,1,54,6.55,0.0,0.0,,6,251,7.23,6.8,6.87,6.83,False
-Greece,380114,D. Giannoulis,Defender,False,probable,False,0,0,,,,0.32,1,90,7.32,6.81,6.84,6.82,True
+Greece,380114,D. Giannoulis,Defender,False,probable,False,0,0,,,,0.32,1,90,7.32,6.81,6.83,6.82,True
 Greece,97720,P. Mantalos,Midfielder,False,probable,False,0,0,,,,,4,181,6.87,6.8,6.81,6.8,True
 Greece,26148003,Konstantinos Koulierakis,Defender,False,probable,False,2,31,6.78,0.0,0.0,0.16,11,936,6.8,6.78,6.79,6.79,False
 Greece,259364,G. Masouras,Forward,False,probable,False,0,0,,,,,13,610,6.8,6.79,6.79,6.79,True
@@ -318,10 +479,60 @@ Greece,32535678,A. Ntoi,Defender,False,probable,False,0,0,,,,,1,9,6.64,6.78,6.78
 Greece,9034508,Manolis Siopis,Midfielder,False,probable,False,0,0,,,,,4,205,6.72,6.77,6.77,6.77,True
 Greece,382368,D. Pelkas,Midfielder,False,probable,False,0,0,,,,,3,46,6.49,6.78,6.77,6.77,True
 Greece,26119023,G. Michailidis,Defender,False,probable,False,0,0,,,,,2,9,5.87,6.75,6.72,6.74,True
+Greece,10982447,Alexandros Kyziridis,Forward,False,probable,False,0,0,,,,,2,80,6.56,6.73,6.69,6.72,True
 Greece,34906886,Nectarios Triantis,Defender,False,probable,False,0,0,,,,,4,206,6.62,6.73,6.69,6.71,True
-Greece,10982447,Alexandros Kyziridis,Forward,False,probable,False,0,0,,,,,2,80,6.56,6.73,6.69,6.71,True
 Greece,63194908,C. Mouzakitis,Midfielder,False,probable,False,0,0,,,,,8,334,6.57,6.71,6.66,6.69,True
-Greece,4319462,G. Kiriakopoulos,Defender,False,probable,False,0,0,,,,0.13,3,117,6.17,6.64,6.54,6.6,True
+Greece,4319462,G. Kiriakopoulos,Defender,False,probable,False,0,0,,,,0.13,3,117,6.17,6.65,6.54,6.6,True
+Hungary,55059417,M. Csinger,Defender,True,probable,True,0,0,,,,,5,449,7.39,7.24,7.34,7.28,True
+Hungary,176610,D. Szoboszlai,Midfielder,True,probable,True,5,441,7.16,1.0,0.0,0.48,18,1598,7.42,7.04,7.33,7.16,False
+Hungary,184982,W. Orbán,Defender,True,probable,True,5,450,7.38,1.0,0.0,0.14,18,1629,7.08,7.16,7.1,7.13,False
+Hungary,4514755,M. Vitális,Midfielder,True,probable,True,0,0,,,,,12,518,7.06,7.01,7.04,7.02,True
+Hungary,29005592,M. Tóth,Forward,True,probable,True,0,0,,,,,4,187,7.06,7.0,7.03,7.01,True
+Hungary,4515882,B. Tóth,Goalkeeper,True,probable,True,0,0,,,,,11,930,6.92,6.93,6.92,6.93,True
+Hungary,4583341,A. Osváth,Defender,True,probable,True,0,0,,,,,9,495,6.79,6.84,6.81,6.83,True
+Hungary,4956539,A. Schäfer,Midfielder,True,probable,True,5,288,6.53,0.0,0.0,0.16,15,1185,6.92,6.68,6.86,6.75,False
+Hungary,93432962,D. Lukacs,Forward,True,probable,True,0,0,,,,,4,263,6.65,6.78,6.71,6.75,True
+Hungary,4585112,Z. Nagy,Defender,True,probable,True,0,0,,,,,12,582,6.61,6.76,6.67,6.72,True
+Hungary,33207048,M. Kerkez,Defender,True,probable,True,6,476,6.42,0.0,0.0,0.11,14,1210,6.96,6.55,6.85,6.67,False
+Hungary,1191232,B. Varga,Forward,False,probable,False,0,0,,,,,10,846,7.69,7.34,7.53,7.42,True
+Hungary,32189528,M. Dárdai,Defender,False,probable,False,0,0,,,,,7,512,7.12,7.01,7.05,7.03,True
+Hungary,67542391,Rajmund Tóth,Midfielder,False,probable,False,0,0,,,,,4,77,7.02,6.96,6.98,6.97,True
+Hungary,4573198,D. Lukács,Forward,False,probable,False,0,0,,,,,9,375,6.96,6.95,6.95,6.95,True
+Hungary,4599119,Szabolcs Schön,Forward,False,probable,False,0,0,,,,,2,26,7.11,6.95,6.96,6.95,True
+Hungary,21505085,Levente Szabó,Forward,False,probable,False,0,0,,,,,1,20,6.56,6.94,6.93,6.94,True
+Hungary,4576257,D. Gazdag,Forward,False,probable,False,0,0,,,,,2,121,6.97,6.94,6.95,6.94,True
+Hungary,52201828,G. Szalai,Defender,False,probable,False,0,0,,,,,1,15,6.67,6.94,6.94,6.94,True
+Hungary,50417626,Z. Gruber,Forward,False,probable,False,0,0,,,,,1,28,6.95,6.94,6.94,6.94,True
+Hungary,7794486,B. Vécsei,Midfielder,False,probable,False,0,0,,,,,1,74,6.72,6.93,6.92,6.93,True
+Hungary,4578511,P. Szappanos,Goalkeeper,False,probable,False,0,0,,,,,2,95,6.89,6.93,6.92,6.93,True
+Hungary,3188920,C. Styles,Midfielder,False,probable,False,0,0,,,,,8,503,6.93,6.94,6.93,6.93,True
+Hungary,4559835,B. Tóth,Forward,False,probable,False,0,0,,,,,1,10,6.21,6.93,6.93,6.93,True
+Hungary,71459843,A. Markgráf,Defender,False,probable,False,0,0,,,,,1,90,6.9,6.93,6.93,6.93,True
+Hungary,4598475,M. Kata,Midfielder,False,probable,False,0,0,,,,,1,45,6.34,6.93,6.91,6.92,True
+Hungary,376089,Attila Mocsi,Defender,False,probable,False,0,0,,,,,1,24,6.27,6.93,6.91,6.92,True
+Hungary,28800317,P. Baráth,Midfielder,False,probable,False,0,0,,,,,2,20,6.65,6.93,6.91,6.92,True
+Hungary,375606,A. Fiola,Defender,False,probable,False,0,0,,,,,2,135,6.61,6.92,6.9,6.91,True
+Hungary,6696144,Kevin Csoboth,Midfielder,False,probable,False,0,0,,,,,4,97,6.62,6.92,6.9,6.91,True
+Hungary,376250,Loic Négo,Defender,False,probable,False,0,0,,,,0.0,9,671,6.87,6.91,6.9,6.91,True
+Hungary,4579477,A. Szalai,Defender,False,probable,False,0,0,,,,0.04,7,570,6.88,6.92,6.9,6.91,True
+Hungary,48640669,J. Szalai,Forward,False,probable,False,0,0,,,,,1,18,6.69,6.92,6.9,6.91,True
+Hungary,61261137,Bence Dárdai,Midfielder,False,probable,False,0,0,,,,0.0,3,138,6.54,6.91,6.88,6.9,True
+Hungary,55137341,Á. Pécsi,Goalkeeper,False,probable,False,0,0,,,,,1,28,6.55,6.91,6.88,6.9,True
+Hungary,4568207,T. Nikitscher,Midfielder,False,probable,False,0,0,,,,0.12,3,149,6.46,6.9,6.87,6.89,True
+Hungary,29102997,B. Balogh,Defender,False,probable,False,0,0,,,,0.0,1,79,6.32,6.91,6.88,6.89,True
+Hungary,4505739,Bence Ötvös,Midfielder,False,probable,False,0,0,,,,,3,92,6.53,6.9,6.87,6.89,True
+Hungary,4602339,K. Szűcs,Defender,False,probable,False,0,0,,,,,1,50,6.46,6.88,6.82,6.86,True
+Hungary,63001225,Á. Yaakobishvili,Goalkeeper,False,probable,False,0,0,,,,0.0,1,32,6.17,6.87,6.81,6.85,True
+Hungary,4226726,Roland Sallai,Forward,False,probable,False,0,0,,,,0.18,9,680,6.78,6.86,6.82,6.84,True
+Hungary,55134282,Tamás Szücs,Midfielder,False,probable,False,0,0,,,,,8,226,6.76,6.86,6.81,6.84,True
+Hungary,93693299,B. Kovacs,Forward,False,probable,False,0,0,,,,,2,52,6.2,6.84,6.76,6.81,True
+Hungary,58199239,A. Tóth,Midfielder,False,probable,False,1,15,6.21,0.0,0.0,0.32,16,799,6.76,6.82,6.78,6.8,False
+Hungary,4559996,D. Dibusz,Goalkeeper,False,probable,False,0,0,,,,,6,544,6.57,6.82,6.73,6.78,True
+Hungary,52357515,G. Jurek,Forward,False,probable,False,0,0,,,,,4,121,6.52,6.79,6.69,6.75,True
+Hungary,4472412,B. Bolla,Midfielder,False,probable,False,0,0,,,,,14,886,6.64,6.77,6.69,6.74,True
+Hungary,4569012,D. Bárány,Forward,False,probable,False,0,0,,,,,5,190,6.5,6.76,6.65,6.72,True
+Hungary,28965181,Á. Csongvai,Midfielder,False,probable,False,0,0,,,,,5,189,6.45,6.74,6.62,6.69,True
+Hungary,46172378,D. Redzic,Forward,False,probable,False,0,0,,,,,5,230,6.43,6.73,6.6,6.68,True
 Iceland,32861703,A. Guðjohnsen,Forward,True,probable,True,0,0,,,,,13,993,7.35,7.19,7.3,7.24,True
 Iceland,9940616,H. Valdimarsson,Goalkeeper,True,probable,True,0,0,,,,0.0,8,720,7.14,7.05,7.11,7.07,True
 Iceland,450149,Gylfi Sigurðsson,Midfielder,True,probable,True,0,0,,,,,6,298,7.13,7.01,7.08,7.04,True
@@ -330,7 +541,7 @@ Iceland,7760032,Í. Bergmann Jóhannesson,Midfielder,True,probable,True,5,318,7.
 Iceland,10930283,H. Haraldsson,Midfielder,True,probable,True,6,404,7.02,1.0,0.0,0.42,15,1319,6.94,6.95,6.94,6.95,False
 Iceland,4623108,S. Þórðarson,Midfielder,True,probable,True,0,0,,,,,12,655,6.91,6.89,6.9,6.9,True
 Iceland,9199855,D. Grétarsson,Defender,True,probable,True,0,0,,,,,13,1020,6.84,6.85,6.84,6.85,True
-Iceland,449827,V. Pálsson,Defender,True,probable,True,0,0,,,,,15,1221,6.83,6.84,6.84,6.84,True
+Iceland,449827,V. Pálsson,Defender,True,probable,True,0,0,,,,,15,1221,6.83,6.85,6.84,6.84,True
 Iceland,6098834,M. Anderson,Midfielder,True,probable,True,0,0,,,,,10,361,6.72,6.79,6.76,6.78,True
 Iceland,14412874,Mikael Ellertsson,Defender,True,probable,True,6,521,6.63,0.0,1.0,0.09,14,1237,6.48,6.68,6.53,6.62,False
 Iceland,450793,Albert Guðmundsson,Midfielder,False,probable,False,4,110,7.39,1.0,0.0,0.52,11,853,7.33,7.01,7.18,7.08,False
@@ -345,7 +556,7 @@ Iceland,4631963,Daniel Hafsteinsson,Midfielder,False,probable,False,0,0,,,,,1,9,
 Iceland,51358993,B. Andrésson,Forward,False,probable,False,0,0,,,,,1,18,6.72,6.87,6.86,6.86,True
 Iceland,4650800,Emil Atlason,Forward,False,probable,False,0,0,,,,,1,63,6.71,6.85,6.84,6.85,True
 Iceland,4645487,Birnir Snaer Ingason,Midfielder,False,probable,False,0,0,,,,,1,13,6.23,6.86,6.84,6.85,True
-Iceland,45605175,Óskar Borgthórsson,Midfielder,False,probable,False,0,0,,,,,1,27,6.5,6.85,6.83,6.85,True
+Iceland,45605175,Óskar Borgthórsson,Midfielder,False,probable,False,0,0,,,,,1,27,6.5,6.85,6.84,6.85,True
 Iceland,14452802,K. Ingason,Forward,False,probable,False,0,0,,,,,3,35,6.72,6.86,6.85,6.85,True
 Iceland,4634056,Hallgrimur Mar Steingrimsson,Midfielder,False,probable,False,0,0,,,,,1,27,6.48,6.85,6.83,6.84,True
 Iceland,4620854,B. Bjarkason,Midfielder,False,probable,False,0,0,,,,0.18,3,107,6.48,6.84,6.82,6.83,True
@@ -359,13 +570,13 @@ Iceland,9910992,S. Magnússon,Forward,False,probable,False,0,0,,,,,4,156,6.45,6.
 Iceland,373674,W. Willumsson,Midfielder,False,probable,False,0,0,,,,,4,190,6.5,6.8,6.75,6.78,True
 Iceland,132818,H. Magnússon,Defender,False,probable,False,0,0,,,,,8,576,6.74,6.79,6.76,6.78,True
 Iceland,14445557,A. Baldursson,Midfielder,False,probable,False,0,0,,,,,4,193,6.68,6.79,6.75,6.78,True
-Iceland,9915822,Helgi Guðjónsson,Midfielder,False,probable,False,0,0,,,,,1,63,6.19,6.79,6.73,6.77,True
+Iceland,9915822,Helgi Guðjónsson,Midfielder,False,probable,False,0,0,,,,,1,63,6.19,6.8,6.73,6.77,True
 Iceland,60121257,Gisli Thordarson,Midfielder,False,probable,False,0,0,,,,,3,64,6.3,6.79,6.72,6.76,True
-Iceland,51810437,Á. Þorsteinsson,Midfielder,False,probable,False,0,0,,,,,1,77,6.25,6.79,6.71,6.76,True
+Iceland,51810437,Á. Þorsteinsson,Midfielder,False,probable,False,0,0,,,,,1,77,6.25,6.79,6.72,6.76,True
 Iceland,4627938,Þórir Jóhann Helgason,Midfielder,False,probable,False,2,119,6.43,0.0,0.0,0.0,3,138,7.13,6.72,6.76,6.74,False
 Iceland,135394,A. Sigurðsson,Midfielder,False,probable,False,0,0,,,,,4,73,6.46,6.77,6.69,6.74,True
 Iceland,6310549,D. Þór­halls­son,Defender,False,probable,False,0,0,,,,,3,140,6.45,6.76,6.68,6.73,True
-Iceland,7760515,Guðmundur Þórarinsson,Defender,False,probable,False,0,0,,,,,1,85,6.15,6.77,6.67,6.73,True
+Iceland,7760515,Guðmundur Þórarinsson,Defender,False,probable,False,0,0,,,,,1,85,6.15,6.77,6.68,6.73,True
 Iceland,23801267,Í. Þorvaldsson,Forward,False,probable,False,0,0,,,,,3,86,6.46,6.76,6.68,6.73,True
 Iceland,4637920,Logi Tomasson,Defender,False,probable,False,0,0,,,,,12,576,6.64,6.74,6.68,6.72,True
 Iceland,4626811,Karl Friðleifur Gunnarsson,Defender,False,probable,False,0,0,,,,,1,90,6.15,6.76,6.67,6.72,True
@@ -373,9 +584,49 @@ Iceland,30892673,Kristian Hlynsson,Midfielder,False,probable,False,0,0,,,,,10,41
 Iceland,4625040,Höskuldur Gunnlaugsson,Defender,False,probable,False,0,0,,,,,1,90,6.01,6.74,6.63,6.69,True
 Iceland,2536709,J. Þorsteinsson,Midfielder,False,probable,False,0,0,,,,,14,826,6.58,6.7,6.63,6.67,True
 Iceland,4626167,B. Willumsson,Forward,False,probable,False,0,0,,,,,9,366,6.49,6.7,6.6,6.66,True
+Israel,53084269,O. Gloukh,Midfielder,True,probable,True,0,0,,,,,13,1075,6.93,6.84,6.9,6.86,True
+Israel,9017925,Dor Peretz,Midfielder,True,probable,True,0,0,,,,,10,592,6.89,6.79,6.85,6.81,True
+Israel,54536489,A. Khalaili,Forward,True,probable,True,6,470,6.95,1.0,0.0,0.25,9,524,6.23,6.93,6.52,6.77,False
+Israel,17031700,E. Peretz,Midfielder,True,probable,True,0,0,,,,,13,1021,6.76,6.72,6.75,6.73,True
+Israel,72386881,N. Stoioanov,Defender,True,probable,True,0,0,,,,,5,429,6.73,6.69,6.72,6.7,True
+Israel,17926699,A. Tzur,Goalkeeper,True,probable,True,0,0,,,,,2,180,6.74,6.67,6.7,6.69,True
+Israel,17917522,I. Nachmias,Defender,True,probable,True,0,0,,,,,10,761,6.67,6.65,6.66,6.66,True
+Israel,112371,M. Solomon,Midfielder,True,probable,True,0,0,,,,0.59,12,961,6.67,6.65,6.66,6.66,True
+Israel,17873730,R. Shlomo,Defender,True,probable,True,0,0,,,,,7,555,6.61,6.61,6.61,6.61,True
+Israel,50735601,R. Revivo,Defender,True,probable,True,5,356,6.63,0.0,2.0,0.49,12,1026,6.35,6.69,6.46,6.6,False
+Israel,20371484,Daniel Peretz,Goalkeeper,True,probable,True,0,0,,,,0.0,9,765,6.31,6.44,6.36,6.41,True
+Israel,11347595,Dan Biton,Midfielder,False,probable,False,0,0,,,,,8,575,7.38,6.9,7.08,6.97,True
+Israel,52830533,T. Abed,Forward,False,probable,False,1,55,6.96,0.0,0.0,,1,12,6.26,6.91,6.88,6.9,False
+Israel,47101187,Stav Lemkin,Defender,False,probable,False,0,0,,,,,4,277,7.13,6.79,6.9,6.83,True
+Israel,20442968,O. Gandelman,Midfielder,False,probable,False,1,11,6.38,0.0,0.0,0.42,1,32,6.08,6.83,6.73,6.79,False
+Israel,17390891,M. Abu Fani,Midfielder,False,probable,False,0,0,,,,,5,269,7.14,6.71,6.78,6.74,True
+Israel,63720251,Saied Abu Farchi,Forward,False,probable,False,0,0,,,,,2,66,6.89,6.68,6.73,6.7,True
+Israel,17894982,G. Kanichowsky,Midfielder,False,probable,False,0,0,,,,,5,248,6.73,6.67,6.69,6.68,True
+Israel,21921109,M. Jaber,Midfielder,False,probable,False,0,0,,,,,4,170,6.95,6.65,6.68,6.66,True
+Israel,17920903,M. Baltaxa,Defender,False,probable,False,0,0,,,,,2,149,6.83,6.65,6.68,6.66,True
+Israel,17391052,Y. Shua,Forward,False,probable,False,0,0,,,,,2,43,6.9,6.64,6.66,6.65,True
+Israel,17925089,S. Goldberg,Defender,False,probable,False,0,0,,,,,1,46,7.26,6.64,6.65,6.64,True
+Israel,17916878,S. Yehezkel,Defender,False,probable,False,0,0,,,,,2,35,6.95,6.63,6.64,6.64,True
+Israel,9016637,Eli Dasa,Defender,False,probable,False,0,0,,,,,13,642,6.63,6.63,6.63,6.63,True
+Israel,17915751,Dean David,Forward,False,probable,False,0,0,,,,,1,71,6.72,6.62,6.63,6.63,True
+Israel,17913980,N. Lavi,Midfielder,False,probable,False,0,0,,,,,1,45,6.63,6.62,6.62,6.62,True
+Israel,26125463,I. Rotman,Defender,False,probable,False,0,0,,,,,1,10,6.57,6.62,6.62,6.62,True
+Israel,43394806,Dor Turgeman,Forward,False,probable,False,0,0,,,,,11,496,6.6,6.61,6.61,6.61,True
+Israel,56065345,Idan Toklomati,Forward,False,probable,False,0,0,,,,,3,80,6.59,6.61,6.61,6.61,True
+Israel,26054140,I. Noy,Midfielder,False,probable,False,0,0,,,,,1,45,6.29,6.6,6.59,6.6,True
+Israel,22142645,I. Shahar,Midfielder,False,probable,False,0,0,,,,,1,13,6.29,6.61,6.6,6.6,True
+Israel,17917361,Tai Baribo,Forward,False,probable,False,0,0,,,,,6,275,6.52,6.59,6.56,6.58,True
+Israel,59882494,Y. Levi,Midfielder,False,probable,False,0,0,,,,,3,80,6.44,6.58,6.54,6.56,True
+Israel,17923479,O. Glazer,Goalkeeper,False,probable,False,0,0,,,,,3,225,6.45,6.57,6.54,6.56,True
+Israel,43394162,S. Torial,Forward,False,probable,False,0,0,,,,,3,74,6.2,6.56,6.51,6.54,True
+Israel,21918533,O. Blorian,Defender,False,probable,False,0,0,,,,,4,291,6.38,6.55,6.5,6.53,True
+Israel,21918372,Liel Abada,Defender,False,probable,False,0,0,,,,,4,208,6.37,6.52,6.46,6.49,True
+Israel,26125946,E. Azoulay,Midfielder,False,probable,False,0,0,,,,,3,157,6.35,6.5,6.44,6.48,True
+Israel,54545988,Ilay Feingold,Defender,False,probable,False,0,0,,,,,3,106,6.17,6.47,6.37,6.43,True
+Israel,34747335,G. Mizrahi,Defender,False,probable,False,0,0,,,,,6,243,6.17,6.43,6.32,6.38,True
 Kazakhstan,9029356,Bauyrzhan Islamkhan,Midfielder,True,probable,True,0,0,,,,,3,250,7.51,7.14,7.34,7.22,True
 Kazakhstan,9029034,N. Alip,Defender,True,probable,True,0,0,,,,,13,1162,7.09,6.98,7.06,7.01,True
-Kazakhstan,361438,Ramazan Karimov,Forward,True,probable,True,0,0,,,,,3,194,7.18,6.94,7.06,6.98,True
+Kazakhstan,361438,Ramazan Karimov,Forward,True,probable,True,0,0,,,,,3,194,7.18,6.94,7.05,6.98,True
 Kazakhstan,9028551,Temirlan Yerlanov,Defender,True,probable,True,0,0,,,,,3,254,7.0,6.87,6.94,6.89,True
 Kazakhstan,9028068,S. Pokatilov,Goalkeeper,True,probable,True,0,0,,,,,2,180,6.68,6.7,6.69,6.7,True
 Kazakhstan,9029678,Yan Vorogovskiy,Defender,True,probable,True,0,0,,,,,12,1005,6.62,6.65,6.63,6.64,True
@@ -422,7 +673,42 @@ Kazakhstan,359989,Serikzhan Muzhikov,Midfielder,False,probable,False,0,0,,,,,3,1
 Kazakhstan,17956806,Erkin Tapalov,Defender,False,probable,False,0,0,,,,,4,241,6.32,6.59,6.51,6.56,True
 Kazakhstan,73041024,Ismail Bekbolat,Forward,False,probable,False,0,0,,,,,3,71,6.16,6.57,6.47,6.53,True
 Kazakhstan,87716013,Zhasulan Amir,Defender,False,probable,False,0,0,,,,,4,156,6.29,6.54,6.44,6.5,True
-Kazakhstan,17988362,Stanislav Basmanov,Midfielder,False,probable,False,0,0,,,,,3,133,6.0,6.43,6.27,6.37,True
+Kazakhstan,17988362,Stanislav Basmanov,Midfielder,False,probable,False,0,0,,,,,3,133,6.0,6.44,6.27,6.37,True
+Kosovo National Team,7791266,E. Zhegrova,Forward,True,probable,True,5,123,7.55,2.0,1.0,0.0,7,279,7.15,7.1,7.12,7.11,False
+Kosovo National Team,2349144,L. Dellova,Defender,True,probable,True,0,0,,,,,12,1080,6.93,6.88,6.92,6.89,True
+Kosovo National Team,8057882,V. Muriqi,Forward,True,probable,True,0,0,,,,0.69,13,1081,6.93,6.87,6.91,6.89,True
+Kosovo National Team,32866211,I. Krasniqi,Defender,True,probable,True,0,0,,,,,10,687,6.94,6.88,6.92,6.89,True
+Kosovo National Team,62884500,L. Avdullahu,Midfielder,True,probable,True,5,440,6.83,1.0,0.0,0.03,9,744,6.71,6.84,6.76,6.81,False
+Kosovo National Team,1382500,M. Vojvoda,Defender,True,probable,True,5,429,6.82,0.0,0.0,0.25,14,1217,6.6,6.8,6.65,6.74,False
+Kosovo National Team,11355806,A. Saipi,Goalkeeper,True,probable,True,0,0,,,,,5,385,6.63,6.68,6.65,6.67,True
+Kosovo National Team,70176190,D. Gallapeni,Defender,True,probable,True,0,0,,,,,12,977,6.52,6.59,6.54,6.57,True
+Kosovo National Team,21889231,V. Hodža,Midfielder,True,probable,True,0,0,,,,,9,581,6.48,6.57,6.51,6.55,True
+Kosovo National Team,44877938,B. Zabërgja,Forward,True,probable,True,0,0,,,,,6,275,6.39,6.57,6.48,6.53,True
+Kosovo National Team,87685423,R. Raci,Defender,True,probable,True,0,0,,,,,2,180,6.12,6.46,6.31,6.4,True
+Kosovo National Team,99330,A. Murić,Goalkeeper,False,probable,False,6,540,7.59,0.0,0.0,0.0,10,875,6.82,7.4,7.03,7.25,False
+Kosovo National Team,211708,Amir Rrahmani,Defender,False,probable,False,6,540,7.28,0.0,1.0,0.12,5,405,7.03,7.11,7.09,7.11,False
+Kosovo National Team,4086817,Florent Muslija,Midfielder,False,probable,False,0,0,,,,,9,775,7.25,7.01,7.13,7.06,True
+Kosovo National Team,19879468,Kreshnik Hajrizi,Defender,False,probable,False,0,0,,,,,3,270,7.28,6.93,7.05,6.98,True
+Kosovo National Team,55425692,D. Kacuri,Midfielder,False,probable,False,0,0,,,,,1,59,7.24,6.85,6.94,6.89,True
+Kosovo National Team,7762125,Fidan Aliti,Defender,False,probable,False,0,0,,,,,5,290,6.98,6.81,6.85,6.82,True
+Kosovo National Team,32602815,F. Asllani,Forward,False,probable,False,3,81,6.52,0.0,1.0,0.75,11,542,6.83,6.81,6.82,6.81,False
+Kosovo National Team,4053812,L. Paqarada,Defender,False,probable,False,0,0,,,,0.0,3,225,6.91,6.77,6.79,6.78,True
+Kosovo National Team,4091647,E. Rexhbeçaj,Midfielder,False,probable,False,0,0,,,,0.15,9,685,6.75,6.75,6.75,6.75,True
+Kosovo National Team,298165,V. Berisha,Midfielder,False,probable,False,0,0,,,,,4,104,6.8,6.75,6.75,6.75,True
+Kosovo National Team,1198155,V. Demaku,Midfielder,False,probable,False,0,0,,,,,3,109,6.74,6.75,6.75,6.75,True
+Kosovo National Team,51286060,A. Rrahmani,Forward,False,probable,False,4,81,6.47,0.0,0.0,0.7,6,280,6.5,6.8,6.69,6.75,False
+Kosovo National Team,17649296,L. Sadriu,Defender,False,probable,False,0,0,,,,,0,2,,6.75,6.75,6.75,True
+Kosovo National Team,3065916,Florent Hadergjonaj,Defender,False,probable,False,0,0,,,,,0,1,,6.75,6.75,6.75,True
+Kosovo National Team,17082898,M. Korenica,Forward,False,probable,False,0,0,,,,,1,2,6.87,6.75,6.75,6.75,True
+Kosovo National Team,22015455,D. Rrudhani,Midfielder,False,probable,False,0,0,,,,,1,45,6.7,6.75,6.74,6.74,True
+Kosovo National Team,2310665,E. Sahiti,Forward,False,probable,False,0,0,,,,0.51,2,57,6.55,6.74,6.73,6.74,True
+Kosovo National Team,4077318,M. Rashica,Midfielder,False,probable,False,0,0,,,,,7,250,6.69,6.73,6.72,6.73,True
+Kosovo National Team,60120452,Lindon Emërllahu,Midfielder,False,probable,False,0,0,,,,,3,62,6.51,6.74,6.72,6.73,True
+Kosovo National Team,44888564,M. Avdyli,Defender,False,probable,False,0,0,,,,,2,104,6.59,6.7,6.66,6.68,True
+Kosovo National Team,43779435,E. Krasniqi,Forward,False,probable,False,0,0,,,,,8,388,6.56,6.66,6.61,6.64,True
+Kosovo National Team,44831087,A. Hajdari,Defender,False,probable,False,4,312,6.31,0.0,0.0,0.1,6,530,7.06,6.53,6.81,6.64,False
+Kosovo National Team,17012380,M. Jashari,Midfielder,False,probable,False,0,0,,,,,4,204,6.39,6.64,6.56,6.61,True
+Kosovo National Team,63625905,V. Matoshi,Midfielder,False,probable,False,0,0,,,,,2,122,6.02,6.48,6.31,6.42,True
 Liechtenstein,7845523,B. Büchel,Goalkeeper,True,probable,True,0,0,,,,,11,951,7.12,6.81,7.0,6.89,True
 Liechtenstein,92917440,Maximilian Goppel,Defender,True,probable,True,0,0,,,,,7,558,6.48,6.41,6.45,6.43,True
 Liechtenstein,9038694,Andreas Malin,Defender,True,probable,True,0,0,,,,,6,478,6.44,6.37,6.39,6.38,True
@@ -438,7 +724,7 @@ Liechtenstein,7848743,S. Wieser,Defender,False,probable,False,0,0,,,,,3,259,6.72
 Liechtenstein,71577051,Kenny Kindle,Forward,False,probable,False,0,0,,,,,8,336,6.47,6.38,6.41,6.39,True
 Liechtenstein,27240388,S. Lüchinger,Midfielder,False,probable,False,0,0,,,,,9,704,6.41,6.36,6.38,6.37,True
 Liechtenstein,7798350,D. Salanović,Forward,False,probable,False,0,0,,,,,2,153,6.67,6.36,6.38,6.37,True
-Liechtenstein,9039982,Sandro Wolfinger,Defender,False,probable,False,0,0,,,,,1,73,6.93,6.35,6.38,6.36,True
+Liechtenstein,9039982,Sandro Wolfinger,Defender,False,probable,False,0,0,,,,,1,73,6.93,6.35,6.37,6.36,True
 Liechtenstein,53437825,Severin Schlegel,Forward,False,probable,False,0,0,,,,,2,25,6.66,6.35,6.38,6.36,True
 Liechtenstein,92820840,Severin Schlegel,Forward,False,probable,False,0,0,,,,,3,97,6.45,6.34,6.35,6.35,True
 Liechtenstein,9039660,Livio Meier,Defender,False,probable,False,0,0,,,,,2,85,6.41,6.33,6.34,6.34,True
@@ -457,7 +743,7 @@ Liechtenstein,63690305,Felix Oberwaditzer,Defender,False,probable,False,0,0,,,,,
 Liechtenstein,92917923,Niklas Beck,Defender,False,probable,False,0,0,,,,,1,52,5.88,6.31,6.28,6.3,True
 Liechtenstein,9038372,Jens Hofer,Defender,False,probable,False,0,0,,,,,4,346,6.19,6.3,6.28,6.29,True
 Liechtenstein,7848582,Aron Sele,Midfielder,False,probable,False,0,0,,,,,4,354,6.15,6.3,6.27,6.29,True
-Liechtenstein,92917601,Sandro Wolfinger,Defender,False,probable,False,0,0,,,,,5,266,5.99,6.25,6.18,6.22,True
+Liechtenstein,92917601,Sandro Wolfinger,Defender,False,probable,False,0,0,,,,,5,266,5.99,6.25,6.19,6.22,True
 Liechtenstein,92917279,Jens Hofer,Defender,False,probable,False,0,0,,,,,5,405,6.04,6.2,6.13,6.17,True
 Liechtenstein,103198739,M. Buchel,Midfielder,False,probable,False,0,0,,,,,2,180,5.98,6.17,6.08,6.13,True
 Luxembourg,8996512,A. Moris,Goalkeeper,True,probable,True,0,0,,,,,15,1243,7.25,7.09,7.21,7.14,True
@@ -468,7 +754,7 @@ Luxembourg,302029,V. Selimović,Defender,True,probable,True,0,0,,,,,4,214,6.77,6
 Luxembourg,17207029,Omar Natami,Midfielder,True,probable,True,0,0,,,,,3,194,6.6,6.62,6.61,6.61,True
 Luxembourg,8997156,E. Mahmutović,Defender,True,probable,True,0,0,,,,,10,768,6.52,6.56,6.53,6.55,True
 Luxembourg,61263552,Aiman Dardari,Midfielder,True,probable,True,0,0,,,,,13,976,6.41,6.48,6.43,6.46,True
-Luxembourg,8997800,F. Bohnert,Defender,True,probable,True,0,0,,,,,15,1113,6.35,6.42,6.37,6.4,True
+Luxembourg,8997800,F. Bohnert,Defender,True,probable,True,0,0,,,,,15,1113,6.35,6.43,6.37,6.4,True
 Luxembourg,56267400,Tomas de Sousa Moreira,Midfielder,True,probable,True,0,0,,,,,15,847,6.28,6.39,6.32,6.36,True
 Luxembourg,91900081,H. Kadamani,Midfielder,True,probable,True,0,0,,,,,5,305,6.11,6.33,6.2,6.28,True
 Luxembourg,11328436,S. Korač,Defender,False,probable,False,0,0,,,,,11,970,6.95,6.82,6.9,6.85,True
@@ -497,7 +783,7 @@ Luxembourg,45131996,T. Rupil,Midfielder,False,probable,False,0,0,,,,,4,99,6.3,6.
 Luxembourg,54765109,T. Pereira Cardoso,Goalkeeper,False,probable,False,0,0,,,,0.04,4,201,6.03,6.47,6.35,6.42,True
 Luxembourg,91473109,E. de Pina Duarte dos Santos,Midfielder,False,probable,False,0,0,,,,,3,135,6.19,6.46,6.35,6.42,True
 Luxembourg,54754161,J. Videira,Forward,False,probable,False,0,0,,,,,6,203,6.19,6.42,6.32,6.38,True
-Moldova,72841384,S. Perciun,Midfielder,True,probable,True,0,0,,,,,9,483,7.0,6.79,6.91,6.84,True
+Moldova,72841384,S. Perciun,Midfielder,True,probable,True,0,0,,,,,9,483,7.0,6.79,6.91,6.83,True
 Moldova,44506189,Petru Popescu,Forward,True,probable,True,0,0,,,,,4,360,6.82,6.7,6.78,6.73,True
 Moldova,22894998,N. Cleșcenco,Forward,True,probable,True,0,0,,,,,4,224,6.7,6.6,6.65,6.62,True
 Moldova,17224578,Victor Stina,Midfielder,True,probable,True,0,0,,,,,8,243,6.69,6.59,6.63,6.61,True
@@ -509,7 +795,7 @@ Moldova,6717718,O. Reabciuk,Defender,True,probable,True,0,0,,,,,12,1030,6.34,6.3
 Moldova,51283806,N. Moțpan,Midfielder,True,probable,True,0,0,,,,,9,484,6.16,6.32,6.24,6.29,True
 Moldova,9025492,Dumitru Celeadnic,Goalkeeper,True,probable,True,0,0,,,,,5,450,5.99,6.17,6.05,6.13,True
 Moldova,10238466,Andrei Cojuhar,Goalkeeper,False,probable,False,0,0,,,,,3,270,7.43,6.7,6.86,6.77,True
-Moldova,2358643,Mihail Caimacov,Midfielder,False,probable,False,0,0,,,,,7,556,6.93,6.65,6.75,6.69,True
+Moldova,2358643,Mihail Caimacov,Midfielder,False,probable,False,0,0,,,,,7,556,6.93,6.65,6.74,6.69,True
 Moldova,1253217,Ion Nicolaescu,Forward,False,probable,False,0,0,,,,,6,458,6.83,6.6,6.67,6.63,True
 Moldova,110135746,Vladimir Fratea,Midfielder,False,probable,False,0,0,,,,,2,135,6.74,6.6,6.65,6.62,True
 Moldova,1264809,Emil Tîmbur,Goalkeeper,False,probable,False,0,0,,,,,1,90,7.2,6.58,6.65,6.61,True
@@ -627,6 +913,262 @@ North Macedonia,17636738,Ljupche Doriev,Forward,False,probable,False,0,0,,,,,4,1
 North Macedonia,17252753,S. Alomeroviс,Defender,False,probable,False,0,0,,,,,2,105,5.95,6.29,6.19,6.25,True
 North Macedonia,17636416,Sebastian Herrera,Defender,False,probable,False,0,0,,,,,4,301,6.07,6.26,6.16,6.22,True
 North Macedonia,61176451,Gjorge Djekov,Defender,False,probable,False,0,0,,,,,1,59,5.55,6.25,6.1,6.19,True
+Northern Ireland,48507039,P. Charles,Goalkeeper,True,probable,True,0,0,,,,,12,948,7.12,7.03,7.09,7.06,True
+Northern Ireland,55256803,Ruairi McConville,Defender,True,probable,True,0,0,,,,,13,931,7.09,7.01,7.07,7.03,True
+Northern Ireland,45781470,S. Charles,Midfielder,True,probable,True,6,375,6.95,0.0,0.0,0.29,16,1389,7.15,6.91,7.09,6.98,False
+Northern Ireland,7235333,C. Brown,Defender,True,probable,True,0,0,,,,,10,863,6.95,6.91,6.94,6.92,True
+Northern Ireland,45767141,I. Price,Forward,True,probable,True,0,0,,,,,18,1503,6.92,6.9,6.92,6.9,True
+Northern Ireland,46119892,J. Devenny,Midfielder,True,probable,True,0,0,,,,0.22,17,1369,6.75,6.76,6.75,6.76,True
+Northern Ireland,22349208,E. Galbraith,Midfielder,True,probable,True,0,0,,,,,15,1072,6.72,6.75,6.73,6.74,True
+Northern Ireland,19178635,T. Hume,Defender,True,probable,True,5,297,6.5,0.0,0.0,0.08,16,1385,6.84,6.63,6.79,6.7,False
+Northern Ireland,64920506,Tom Atcheson,Defender,True,probable,True,0,0,,,,,6,428,6.63,6.69,6.65,6.68,True
+Northern Ireland,50838641,Patrick Kelly,Midfielder,True,probable,True,0,0,,,,,8,396,6.57,6.66,6.61,6.64,True
+Northern Ireland,47199397,J. Donley,Forward,True,probable,True,0,0,,,,,14,813,6.37,6.5,6.41,6.47,True
+Northern Ireland,2934057,L. Southwood,Goalkeeper,False,probable,False,0,0,,,,,1,51,7.25,6.87,6.92,6.89,True
+Northern Ireland,62634306,K. Morrison,Midfielder,False,probable,False,0,0,,,,,3,138,6.92,6.85,6.88,6.86,True
+Northern Ireland,9000698,D. Ballard,Defender,False,probable,False,5,450,6.93,0.0,0.0,0.16,6,545,6.69,6.87,6.79,6.84,False
+Northern Ireland,29031191,Conor Bradley,Midfielder,False,probable,False,0,0,,,,0.15,7,552,6.88,6.84,6.85,6.84,True
+Northern Ireland,7246764,Bradley Lyons,Midfielder,False,probable,False,0,0,,,,,4,181,6.9,6.83,6.84,6.83,True
+Northern Ireland,3071390,Jamal Lewis,Midfielder,False,probable,False,0,0,,,,,1,82,6.98,6.83,6.84,6.83,True
+Northern Ireland,21132692,T. Devlin,Midfielder,False,probable,False,0,0,,,,,6,361,6.83,6.82,6.83,6.82,True
+Northern Ireland,3251066,P. Smyth,Forward,False,probable,False,0,0,,,,,9,265,6.8,6.81,6.81,6.81,True
+Northern Ireland,3098438,G. Saville,Midfielder,False,probable,False,0,0,,,,,8,395,6.82,6.81,6.81,6.81,True
+Northern Ireland,3229975,J. Thompson,Midfielder,False,probable,False,0,0,,,,,1,22,6.72,6.81,6.81,6.81,True
+Northern Ireland,55497981,C. Marshall,Forward,False,probable,False,0,0,,,,,9,186,6.8,6.81,6.81,6.81,True
+Northern Ireland,7277837,C. Hazard,Goalkeeper,False,probable,False,0,0,,,,,3,180,6.82,6.81,6.81,6.81,True
+Northern Ireland,54601372,Dale Taylor,Forward,False,probable,False,0,0,,,,,1,34,6.35,6.8,6.79,6.8,True
+Northern Ireland,21822899,L. Bonis,Forward,False,probable,False,0,0,,,,,3,90,6.51,6.79,6.78,6.79,True
+Northern Ireland,19173000,Ronan Hale,Forward,False,probable,False,0,0,,,,,1,68,6.17,6.78,6.75,6.77,True
+Northern Ireland,13277502,J. Reid,Forward,False,probable,False,0,0,,,,,8,368,6.72,6.78,6.76,6.77,True
+Northern Ireland,71808891,Ceadach O'Neill,Forward,False,probable,False,0,0,,,,,4,53,6.62,6.78,6.76,6.77,True
+Northern Ireland,3098116,P. McNair,Defender,False,probable,False,1,26,6.55,0.0,0.0,,12,786,6.76,6.76,6.76,6.76,False
+Northern Ireland,52745203,Jamie Carson McDonnell,Midfielder,False,probable,False,0,0,,,,,3,144,6.62,6.76,6.73,6.75,True
+Northern Ireland,3077669,B. Peacock-Farrell,Goalkeeper,False,probable,False,0,0,,,,,5,450,6.63,6.75,6.71,6.73,True
+Northern Ireland,11160513,E. Toal,Defender,False,probable,False,0,0,,,,,3,255,6.55,6.74,6.68,6.72,True
+Northern Ireland,3174269,J. Magennis,Forward,False,probable,False,0,0,,,,,10,170,6.53,6.73,6.67,6.7,True
+Northern Ireland,11353713,Ali McCann,Midfielder,False,probable,False,0,0,,,,,7,487,6.58,6.71,6.66,6.69,True
+Northern Ireland,13279917,D. Charles,Forward,False,probable,False,0,0,,,,,6,188,6.33,6.71,6.63,6.68,True
+Northern Ireland,32218830,B. Spencer,Defender,False,probable,False,0,0,,,,,14,743,6.49,6.61,6.53,6.58,True
+Norway,177254,E. Haaland,Forward,True,probable,True,6,530,7.62,6.0,0.0,1.02,20,1688,7.72,7.37,7.65,7.48,False
+Norway,50636425,A. Nusa,Midfielder,True,probable,True,5,406,7.88,3.0,3.0,0.35,21,1305,7.0,7.47,7.11,7.32,False
+Norway,5977601,M. Ødegaard,Midfielder,True,probable,True,6,471,7.4,2.0,0.0,0.41,16,1405,7.53,7.2,7.46,7.3,False
+Norway,3086846,Ø. Nyland,Goalkeeper,True,probable,True,0,0,,,,0.0,21,1860,6.96,6.95,6.96,6.95,True
+Norway,311528,S. Berge,Midfielder,True,probable,True,6,442,6.73,0.0,0.0,0.03,23,1968,7.02,6.78,6.98,6.86,False
+Norway,48546162,A. Schjelderup,Forward,True,probable,True,0,0,,,,,20,1006,6.82,6.84,6.82,6.83,True
+Norway,180313,K. Ajer,Defender,True,probable,True,6,540,6.85,1.0,0.0,0.08,22,1938,6.77,6.82,6.78,6.81,False
+Norway,6289458,P. Berg,Midfielder,True,probable,True,0,0,,,,,21,1249,6.71,6.76,6.72,6.74,True
+Norway,6320048,Torbjørn Heggem,Defender,True,probable,True,6,505,6.71,0.0,0.0,0.0,20,1581,6.62,6.73,6.64,6.7,False
+Norway,42791056,D. Møller Wolfe,Defender,True,probable,True,4,341,6.28,0.0,0.0,0.34,22,1683,6.76,6.5,6.71,6.58,False
+Norway,6286077,F. Aursnes,Midfielder,True,probable,True,0,0,,,,,12,736,6.37,6.52,6.41,6.47,True
+Norway,6289780,F. Myhre,Midfielder,False,probable,False,0,0,,,,,4,158,7.16,6.96,6.99,6.97,True
+Norway,4000199,J. Ryerson,Defender,False,probable,False,4,323,7.1,0.0,0.0,0.53,20,1502,6.99,6.95,6.98,6.96,False
+Norway,44746884,T. Aasgaard,Midfielder,False,probable,False,0,0,,,,,12,437,6.94,6.93,6.93,6.93,True
+Norway,191422,E. Botheim,Forward,False,probable,False,0,0,,,,0.85,1,12,6.85,6.91,6.91,6.91,True
+Norway,7738780,S. Gregersen,Defender,False,probable,False,0,0,,,,,0,1,,6.91,6.91,6.91,True
+Norway,17467044,Kristian Fredrik Malt Arnstad,Midfielder,False,probable,False,0,0,,,,,1,26,6.96,6.91,6.91,6.91,True
+Norway,6301855,L. Johnsen,Midfielder,False,probable,False,0,0,,,,,2,37,6.73,6.91,6.9,6.9,True
+Norway,21560630,A. Heggebø,Forward,False,probable,False,0,0,,,,,1,27,6.64,6.9,6.89,6.9,True
+Norway,52098305,Sverre Nypan,Midfielder,False,probable,False,0,0,,,,,1,9,6.33,6.9,6.9,6.9,True
+Norway,6292517,O. Bjørtuft,Defender,False,probable,False,0,0,,,,,1,15,6.65,6.9,6.89,6.9,True
+Norway,6324073,Andreas Hanche-Olsen,Defender,False,probable,False,0,0,,,,0.0,1,90,6.72,6.89,6.87,6.88,True
+Norway,1367366,Alexander Sørloth,Forward,False,probable,False,1,17,6.6,0.0,0.0,0.67,18,1248,6.77,6.88,6.8,6.85,False
+Norway,3053841,Leo Østigård,Defender,False,probable,False,6,516,6.99,0.0,0.0,0.2,15,627,6.55,6.92,6.68,6.83,False
+Norway,6297669,A. Dønnum,Midfielder,False,probable,False,1,6,6.13,0.0,0.0,0.32,6,151,6.69,6.84,6.82,6.83,False
+Norway,6337436,M. Pedersen,Defender,False,probable,False,1,70,7.19,0.0,0.0,0.19,9,462,6.7,6.86,6.77,6.83,False
+Norway,44779567,Oscar Bobb,Midfielder,False,probable,False,6,424,6.6,0.0,0.0,0.06,22,1000,7.15,6.7,7.02,6.83,False
+Norway,66986136,Eivind Helland,Defender,False,probable,False,4,273,6.85,0.0,0.0,0.06,1,90,6.86,6.82,6.82,6.82,False
+Norway,6290907,J. Hauge,Midfielder,False,probable,False,0,0,,,,,5,112,6.48,6.83,6.77,6.81,True
+Norway,327306,J. Strand Larsen,Forward,False,probable,False,6,384,6.83,1.0,0.0,0.4,14,457,6.6,6.85,6.72,6.8,False
+Norway,6292356,E. Selvik,Goalkeeper,False,probable,False,6,540,6.67,0.0,0.0,0.0,5,336,6.74,6.78,6.76,6.78,False
+Norway,42736638,S. Langås,Defender,False,probable,False,0,0,,,,,2,51,6.22,6.82,6.74,6.78,True
+Norway,5953934,M. Thorsby,Midfielder,False,probable,False,0,0,,,,0.32,8,326,6.61,6.8,6.73,6.77,True
+Norway,6302177,Kristian Thorstvedt,Midfielder,False,probable,False,6,251,6.68,0.0,0.0,0.29,9,266,6.49,6.77,6.67,6.73,False
+Norway,30870294,S. Sebulonsen,Defender,False,probable,False,2,115,6.52,0.0,0.0,0.0,1,26,6.93,6.7,6.71,6.71,False
+Norway,6288492,F. Bjørkan,Defender,False,probable,False,0,0,,,,,8,205,6.42,6.75,6.64,6.7,True
+Norway,29131011,H. Falchener,Defender,False,probable,False,0,0,,,,,2,81,5.85,6.7,6.53,6.63,True
+Poland,53123,Piotr Zieliński,Midfielder,True,probable,True,5,352,7.32,1.0,1.0,0.33,12,992,7.34,7.12,7.28,7.18,False
+Poland,6505037,S. Szymański,Midfielder,True,probable,True,4,227,7.14,1.0,1.0,0.35,14,1078,7.49,6.98,7.34,7.13,False
+Poland,482993,J. Bednarek,Defender,True,probable,True,0,0,,,,0.11,12,1035,7.07,7.04,7.06,7.05,True
+Poland,9890545,J. Kiwior,Defender,True,probable,True,0,0,,,,0.06,15,1260,7.06,7.03,7.05,7.04,True
+Poland,32759468,Nicola Zalewski,Midfielder,True,probable,True,3,119,7.3,0.0,1.0,0.32,10,768,6.87,6.99,6.91,6.96,False
+Poland,384139,K. Świderski,Forward,True,probable,True,0,0,,,,0.52,14,638,6.76,6.84,6.79,6.82,True
+Poland,484281,P. Frankowski,Midfielder,True,probable,True,6,414,6.59,1.0,1.0,0.22,7,451,7.09,6.69,6.92,6.78,False
+Poland,59366811,Wiktor Nowak,Midfielder,True,probable,True,0,0,,,,,4,287,6.57,6.73,6.64,6.69,True
+Poland,366268,M. Bułka,Goalkeeper,True,probable,True,0,0,,,,,4,360,6.52,6.68,6.58,6.64,True
+Poland,6514214,M. Żukowski,Forward,True,probable,True,0,0,,,,,3,182,6.39,6.69,6.55,6.64,True
+Poland,3107132,M. Cash,Midfielder,True,probable,True,5,388,6.27,0.0,0.0,0.18,13,958,6.74,6.51,6.67,6.57,False
+Poland,84035,Robert Lewandowski,Forward,False,probable,False,0,0,,,,0.83,12,868,7.54,7.33,7.46,7.38,True
+Poland,4996789,B. Drągowski,Goalkeeper,False,probable,False,0,0,,,,,2,135,7.65,7.06,7.15,7.1,True
+Poland,6530314,J. Kamiński,Forward,False,probable,False,0,0,,,,0.34,11,781,7.13,7.05,7.09,7.06,True
+Poland,6586825,Jakub Moder,Midfielder,False,probable,False,0,0,,,,0.22,4,276,7.29,7.01,7.05,7.02,True
+Poland,61911577,Jan Ziółkowski,Defender,False,probable,False,0,0,,,,0.12,3,192,7.08,6.98,7.0,6.99,True
+Poland,10353098,Kacper Kozłowski,Forward,False,probable,False,0,0,,,,,1,90,7.25,6.98,7.01,6.99,True
+Poland,71249094,O. Pietuszewski,Forward,False,probable,False,0,0,,,,,4,85,7.11,6.98,7.01,6.99,True
+Poland,348558,Tomasz Kędziora,Defender,False,probable,False,0,0,,,,,5,344,7.0,6.97,6.98,6.97,True
+Poland,3079279,M. Bogusz,Midfielder,False,probable,False,0,0,,,,,2,58,6.97,6.96,6.96,6.96,True
+Poland,19281836,K. Piątkowski,Defender,False,probable,False,0,0,,,,0.13,2,167,6.9,6.95,6.95,6.95,True
+Poland,265965,Krzysztof Piątek,Forward,False,probable,False,0,0,,,,,4,265,6.93,6.95,6.95,6.95,True
+Poland,6503266,M. Wieteska,Defender,False,probable,False,0,0,,,,0.0,2,58,6.82,6.95,6.95,6.95,True
+Poland,6531119,M. Skrzypczak,Defender,False,probable,False,0,0,,,,,1,90,6.85,6.95,6.94,6.95,True
+Poland,312333,J. Piotrowski,Midfielder,False,probable,False,3,146,7.07,1.0,0.0,0.12,3,182,7.14,6.93,6.96,6.94,False
+Poland,483154,B. Bereszyński,Defender,False,probable,False,0,0,,,,0.0,2,20,6.5,6.95,6.94,6.94,True
+Poland,23900282,A. Pyrka,Defender,False,probable,False,0,0,,,,0.03,1,17,6.26,6.94,6.93,6.94,True
+Poland,3154305,P. Wszołek,Midfielder,False,probable,False,0,0,,,,,5,197,6.87,6.94,6.93,6.93,True
+Poland,67730439,Filip Rózga,Midfielder,False,probable,False,0,0,,,,,2,55,6.69,6.93,6.9,6.92,True
+Poland,485086,K. Grosicki,Midfielder,False,probable,False,0,0,,,,,4,64,6.48,6.92,6.89,6.91,True
+Poland,6526128,B. Slisz,Midfielder,False,probable,False,0,0,,,,,8,525,6.83,6.9,6.87,6.89,True
+Poland,1414056,B. Kapustka,Midfielder,False,probable,False,0,0,,,,,5,158,6.64,6.9,6.86,6.89,True
+Poland,69132749,M. Reguła,Midfielder,False,probable,False,0,0,,,,,2,46,6.53,6.88,6.82,6.85,True
+Poland,6570403,M. Skóraś,Midfielder,False,probable,False,5,273,6.81,0.0,1.0,0.4,7,521,6.86,6.83,6.85,6.84,False
+Poland,2507407,K. Grabara,Goalkeeper,False,probable,False,0,0,,,,0.0,4,315,6.7,6.86,6.8,6.84,True
+Poland,29347234,K. UrbaÅski,Midfielder,False,probable,False,0,0,,,,0.25,3,42,6.41,6.87,6.79,6.84,True
+Poland,23936990,N. Wojtuszek,Defender,False,probable,False,0,0,,,,,2,54,6.33,6.83,6.72,6.79,True
+Poland,6598578,T. Puchacz,Midfielder,False,probable,False,0,0,,,,,1,65,6.38,6.82,6.72,6.78,True
+Poland,482832,Łukasz Skorupski,Goalkeeper,False,probable,False,4,360,6.55,0.0,0.0,0.0,6,540,6.74,6.75,6.75,6.75,False
+Poland,6535788,A. Buksa,Forward,False,probable,False,6,155,6.43,1.0,0.0,0.32,3,37,6.55,6.73,6.72,6.72,False
+Poland,6477345,P. Wiśniewski,Defender,False,probable,False,0,0,,,,,7,558,6.34,6.64,6.48,6.57,True
+Poland,71250060,K. Potulski,Defender,False,probable,False,5,350,6.18,0.0,0.0,0.13,1,90,6.78,6.44,6.54,6.48,False
+Portugal,20669978,Vitinha,Midfielder,True,probable,True,6,460,7.65,1.0,1.0,0.38,22,1646,7.31,7.35,7.32,7.34,False
+Portugal,94017,João Félix,Forward,True,probable,True,0,0,,,,1.07,15,783,7.33,7.26,7.31,7.28,True
+Portugal,239239,Bruno Fernandes,Midfielder,True,probable,True,6,540,7.25,3.0,1.0,0.87,21,1768,7.54,7.12,7.46,7.25,False
+Portugal,42420756,Nuno Mendes,Defender,True,probable,True,2,180,7.64,0.0,0.0,0.39,19,1576,7.19,7.13,7.18,7.15,False
+Portugal,59563,Diogo Costa,Goalkeeper,True,probable,True,0,0,,,,,20,1870,7.09,7.08,7.09,7.09,True
+Portugal,91441,Rúben Dias,Defender,True,probable,True,6,540,7.2,0.0,0.0,0.07,20,1800,7.13,7.06,7.12,7.08,False
+Portugal,430990,Rúben Neves,Midfielder,True,probable,True,0,0,,,,,18,905,7.03,7.05,7.04,7.04,True
+Portugal,54204185,Renato Veiga,Defender,True,probable,True,8,720,7.08,0.0,1.0,0.03,18,1387,6.88,7.0,6.9,6.96,False
+Portugal,6695339,Gonçalo Ramos,Forward,True,probable,True,6,535,6.53,1.0,1.0,0.74,17,679,7.62,6.65,7.3,6.91,False
+Portugal,137809,João Cancelo,Defender,True,probable,True,6,210,6.83,1.0,0.0,0.43,17,1134,6.98,6.8,6.94,6.86,False
+Portugal,300258,Pedro Neto,Midfielder,True,probable,True,6,419,6.61,1.0,1.0,0.48,19,1313,6.83,6.71,6.8,6.75,False
+Portugal,30668239,Samú Costa,Midfielder,False,probable,False,0,0,,,,0.29,5,203,7.23,7.13,7.17,7.14,True
+Portugal,6694051,Nuno Tavares,Defender,False,probable,False,6,414,7.39,1.0,2.0,0.05,3,47,6.35,7.15,7.08,7.12,False
+Portugal,45422440,Carlos Forbs,Forward,False,probable,False,0,0,,,,0.55,1,34,7.15,7.08,7.08,7.08,True
+Portugal,7514346,Rui Silva,Goalkeeper,False,probable,False,0,0,,,,0.0,2,135,7.08,7.08,7.08,7.08,True
+Portugal,431312,Diogo Jota,Forward,False,probable,False,0,0,,,,,3,85,6.96,7.07,7.06,7.07,True
+Portugal,26015339,Francisco Conceição,Forward,False,probable,False,6,409,7.25,1.0,1.0,0.3,14,671,6.9,7.11,6.97,7.05,False
+Portugal,6619025,Paulinho,Forward,False,probable,False,0,0,,,,,1,26,6.3,7.03,6.99,7.02,True
+Portugal,26072333,Tomás Araújo,Defender,False,probable,False,0,0,,,,,4,232,6.95,7.03,6.99,7.01,True
+Portugal,6701135,Matheus Nunes,Midfielder,False,probable,False,4,303,7.17,0.0,0.0,0.22,3,78,6.58,7.02,6.96,7.0,False
+Portugal,53943365,João Neves,Midfielder,False,probable,False,5,388,6.94,0.0,0.0,0.37,16,1072,7.22,6.9,7.12,6.99,False
+Portugal,140868,Cristiano Ronaldo,Forward,False,probable,False,0,0,,,,,17,1351,6.96,6.99,6.97,6.98,True
+Portugal,21084,Nélson Semedo,Defender,False,probable,False,0,0,,,,0.12,14,643,6.87,6.97,6.92,6.95,True
+Portugal,256144,José Sá,Goalkeeper,False,probable,False,0,0,,,,0.0,2,88,6.45,6.96,6.86,6.92,True
+Portugal,42760949,Gonçalo Inácio,Defender,False,probable,False,0,0,,,,,10,616,6.78,6.94,6.87,6.91,True
+Portugal,6619186,Francisco Trincão,Forward,False,probable,False,0,0,,,,,12,382,6.75,6.94,6.86,6.91,True
+Portugal,3580150,Rafael Leão,Forward,False,probable,False,0,0,,,,0.59,14,601,6.69,6.85,6.76,6.82,True
+Portugal,102550,Bernardo Silva,Midfielder,False,probable,False,6,282,6.72,0.0,1.0,0.19,17,893,6.89,6.78,6.85,6.81,False
+Portugal,3018582,Pedro Gonçalves,Midfielder,False,probable,False,4,54,6.49,0.0,0.0,,1,23,6.73,6.79,6.79,6.79,False
+Portugal,149079,Gonçalo Guedes,Forward,False,probable,False,7,323,6.61,1.0,0.0,0.66,2,90,7.19,6.74,6.83,6.78,False
+Portugal,53425106,António Silva,Defender,False,probable,False,6,540,6.74,0.0,0.0,0.06,2,54,6.84,6.75,6.76,6.76,False
+Portugal,142800,Diogo Dalot,Defender,False,probable,False,6,379,6.59,0.0,0.0,0.13,12,596,6.72,6.67,6.7,6.68,False
+Portugal,6617898,João Palhinha,Midfielder,False,probable,False,0,0,,,,0.31,6,221,6.33,6.74,6.55,6.66,True
+Republic of Ireland,26050437,J. Moylan,Forward,True,probable,True,0,0,,,,,6,387,7.28,7.14,7.23,7.18,True
+Republic of Ireland,45395,C. Kelleher,Goalkeeper,True,probable,True,6,540,7.15,0.0,0.0,0.0,16,1445,7.03,7.11,7.05,7.09,False
+Republic of Ireland,24077865,T. Parrott,Forward,True,probable,True,5,179,6.62,1.0,1.0,1.03,15,1041,7.28,6.78,7.14,6.93,False
+Republic of Ireland,3153661,R. Manning,Midfielder,True,probable,True,0,0,,,,0.34,14,969,6.81,6.84,6.82,6.83,True
+Republic of Ireland,43492533,J. O&apos;Brien,Defender,True,probable,True,3,35,6.46,0.0,0.0,0.05,18,1238,7.02,6.74,6.95,6.82,False
+Republic of Ireland,2833271,D. O&apos;Shea,Defender,True,probable,True,6,540,6.53,1.0,0.0,0.04,16,1429,7.26,6.62,7.09,6.81,False
+Republic of Ireland,3054968,J. Molumby,Midfielder,True,probable,True,0,0,,,,,11,875,6.73,6.78,6.74,6.77,True
+Republic of Ireland,20997291,A. Idah,Forward,True,probable,True,0,0,,,,,15,574,6.65,6.76,6.7,6.73,True
+Republic of Ireland,3030174,C. Coventry,Midfielder,True,probable,True,0,0,,,,,7,353,6.62,6.74,6.67,6.71,True
+Republic of Ireland,51574089,J. Abankwah,Defender,True,probable,True,5,436,6.61,1.0,0.0,0.03,7,392,6.77,6.67,6.73,6.7,False
+Republic of Ireland,11181604,L. Scales,Midfielder,True,probable,True,0,0,,,,,9,599,6.45,6.61,6.5,6.57,True
+Republic of Ireland,32850916,W. Ferry,Midfielder,False,probable,False,0,0,,,,,1,45,8.17,7.05,7.18,7.1,True
+Republic of Ireland,20997935,Will Smallbone,Midfielder,False,probable,False,0,0,,,,0.0,4,231,7.6,7.04,7.13,7.08,True
+Republic of Ireland,34755868,T. Cannon,Forward,False,probable,False,0,0,,,,,3,70,7.39,7.01,7.08,7.04,True
+Republic of Ireland,22092574,A. Moran,Midfielder,False,probable,False,0,0,,,,,2,58,7.6,7.0,7.07,7.02,True
+Republic of Ireland,11148277,J. McGrath,Midfielder,False,probable,False,0,0,,,,,1,90,7.22,6.98,7.03,7.0,True
+Republic of Ireland,29140671,M. Alli,Forward,False,probable,False,0,0,,,,,1,27,7.33,6.94,6.97,6.95,True
+Republic of Ireland,32176970,Aidomo Emakhu,Forward,False,probable,False,0,0,,,,,1,27,7.29,6.94,6.97,6.95,True
+Republic of Ireland,3017616,M. Doherty,Defender,False,probable,False,0,0,,,,0.0,5,327,6.96,6.92,6.93,6.93,True
+Republic of Ireland,3201800,J. Dunne,Defender,False,probable,False,0,0,,,,,4,142,6.96,6.93,6.94,6.93,True
+Republic of Ireland,3192301,Josh Cullen,Midfielder,False,probable,False,0,0,,,,0.24,7,576,6.92,6.92,6.92,6.92,True
+Republic of Ireland,2830373,S. Szmodics,Forward,False,probable,False,0,0,,,,0.25,1,82,6.97,6.92,6.92,6.92,True
+Republic of Ireland,45803527,Tayo Adaramola,Midfielder,False,probable,False,0,0,,,,,1,45,6.94,6.92,6.92,6.92,True
+Republic of Ireland,64518328,R. Finneran,Midfielder,False,probable,False,0,0,,,,,1,16,7.0,6.92,6.92,6.92,True
+Republic of Ireland,37197433,F. Azaz,Forward,False,probable,False,0,0,,,,,11,934,6.91,6.91,6.91,6.91,True
+Republic of Ireland,3239474,M. Sykes,Midfielder,False,probable,False,0,0,,,,,2,38,6.85,6.91,6.91,6.91,True
+Republic of Ireland,47220971,J. Patrick,Midfielder,False,probable,False,0,0,,,,0.0,0,1,,6.91,6.91,6.91,True
+Republic of Ireland,3020192,Séamus Coleman,Midfielder,False,probable,False,0,0,,,,0.0,8,560,6.91,6.91,6.91,6.91,True
+Republic of Ireland,44202704,H. Vale,Midfielder,False,probable,False,0,0,,,,,1,30,6.91,6.91,6.91,6.91,True
+Republic of Ireland,63584689,M. Melia,Forward,False,probable,False,0,0,,,,,0,1,,6.91,6.91,6.91,True
+Republic of Ireland,3046435,Robbie Brady,Defender,False,probable,False,0,0,,,,,5,314,6.87,6.91,6.9,6.9,True
+Republic of Ireland,49880208,Bosun Lawal,Defender,False,probable,False,0,0,,,,,1,29,6.7,6.9,6.89,6.9,True
+Republic of Ireland,66878266,O. Elding,Forward,False,probable,False,0,0,,,,,1,2,5.95,6.91,6.9,6.9,True
+Republic of Ireland,3138849,N. Collins,Defender,False,probable,False,3,197,6.59,0.0,0.0,0.13,14,1216,7.48,6.7,7.19,6.89,False
+Republic of Ireland,3100692,M. O’Leary,Goalkeeper,False,probable,False,0,0,,,,,2,164,6.81,6.89,6.88,6.89,True
+Republic of Ireland,3130960,A. Browne,Midfielder,False,probable,False,0,0,,,,,2,67,6.77,6.9,6.88,6.89,True
+Republic of Ireland,11153429,D. Devoy,Midfielder,False,probable,False,0,0,,,,,1,12,6.31,6.89,6.87,6.89,True
+Republic of Ireland,46854696,Joshua Keeley,Goalkeeper,False,probable,False,0,0,,,,,1,16,6.26,6.89,6.86,6.88,True
+Republic of Ireland,31697029,J. Bagan,Defender,False,probable,False,0,0,,,,,2,8,6.23,6.89,6.87,6.88,True
+Republic of Ireland,68457193,B. Lawal,Defender,False,probable,False,0,0,,,,,1,6,6.1,6.89,6.87,6.88,True
+Republic of Ireland,3036614,M. Travers,Goalkeeper,False,probable,False,0,0,,,,0.0,2,41,6.54,6.88,6.85,6.87,True
+Republic of Ireland,49727902,J. Kenny,Forward,False,probable,False,0,0,,,,,2,44,6.3,6.87,6.83,6.86,True
+Republic of Ireland,2930676,L. Kitching,Defender,False,probable,False,0,0,,,,,2,117,6.78,6.87,6.84,6.85,True
+Republic of Ireland,183211,Mikey Johnston,Forward,False,probable,False,0,0,,,,,6,211,6.5,6.86,6.81,6.84,True
+Republic of Ireland,20872677,Evan Ferguson,Forward,False,probable,False,0,0,,,,0.58,8,539,6.75,6.86,6.82,6.84,True
+Republic of Ireland,52640231,R. Vata,Forward,False,probable,False,0,0,,,,,3,46,6.52,6.86,6.81,6.84,True
+Republic of Ireland,71556282,Jaden Umeh,Forward,False,probable,False,0,0,,,,,2,27,6.22,6.86,6.82,6.84,True
+Republic of Ireland,26992609,M. McGuinness,Defender,False,probable,False,0,0,,,,,1,45,6.35,6.85,6.8,6.83,True
+Republic of Ireland,43527631,K. Phillips,Midfielder,False,probable,False,0,0,,,,,4,126,6.46,6.84,6.78,6.82,True
+Republic of Ireland,45609844,K. McAteer,Midfielder,False,probable,False,3,50,6.47,0.0,0.0,0.25,3,203,7.02,6.79,6.83,6.81,False
+Republic of Ireland,2962071,Jack Taylor,Midfielder,False,probable,False,0,0,,,,0.24,10,338,6.62,6.83,6.77,6.8,True
+Republic of Ireland,26023872,Festy Ebosele,Defender,False,probable,False,0,0,,,,0.1,6,216,6.46,6.83,6.75,6.8,True
+Republic of Ireland,3074127,J. Egan,Defender,False,probable,False,6,528,6.85,0.0,0.0,0.07,4,262,6.68,6.83,6.75,6.8,False
+Republic of Ireland,10968762,J. Knight,Midfielder,False,probable,False,0,0,,,,,11,905,6.68,6.76,6.71,6.74,True
+Republic of Ireland,3177972,Corrie Ndaba,Defender,False,probable,False,2,135,6.61,0.0,0.0,0.0,2,28,6.31,6.72,6.69,6.71,False
+Republic of Ireland,3117919,C. Ogbene,Forward,False,probable,False,0,0,,,,0.18,14,737,6.6,6.72,6.64,6.69,True
+Romania,4953319,I. Radu,Goalkeeper,True,probable,True,8,720,7.12,0.0,0.0,0.0,6,540,6.12,7.09,6.53,6.87,False
+Romania,20429766,Daniel Bîrligea,Forward,True,probable,True,1,11,6.65,0.0,0.0,,7,561,6.8,6.88,6.83,6.86,False
+Romania,6928950,D. Man,Forward,True,probable,True,0,0,,,,0.79,14,1105,6.91,6.8,6.88,6.83,True
+Romania,5055071,Vlad Dragomir,Midfielder,True,probable,True,0,0,,,,,10,697,6.73,6.67,6.71,6.69,True
+Romania,274337,A. Rațiu,Defender,True,probable,True,6,540,6.63,1.0,0.0,0.12,13,1165,6.51,6.68,6.56,6.63,False
+Romania,341152,R. Marin,Midfielder,True,probable,True,0,0,,,,0.42,11,739,6.57,6.57,6.57,6.57,True
+Romania,28800800,Matei Ilie,Defender,True,probable,True,0,0,,,,,3,244,6.45,6.5,6.47,6.49,True
+Romania,6930882,N. Bancu,Defender,True,probable,True,0,0,,,,,10,803,6.44,6.49,6.46,6.47,True
+Romania,54206761,A. Coubiș,Defender,True,probable,True,0,0,,,,,5,366,6.41,6.46,6.43,6.45,True
+Romania,42461167,O. Hindrich,Goalkeeper,True,probable,True,0,0,,,,,3,225,6.28,6.42,6.35,6.4,True
+Romania,6935068,V. Ghiță,Defender,True,probable,True,0,0,,,,,8,575,5.78,6.12,5.92,6.04,True
+Romania,19171551,Ș. Baiaram,Forward,False,probable,False,0,0,,,,,3,195,7.78,6.86,7.09,6.95,True
+Romania,6943923,Adrian Rus,Defender,False,probable,False,0,0,,,,,1,52,8.27,6.79,6.99,6.87,True
+Romania,6937966,D. Drăguş,Forward,False,probable,False,0,0,,,,,8,534,7.14,6.75,6.88,6.8,True
+Romania,6928467,F. Coman,Forward,False,probable,False,0,0,,,,0.34,1,52,7.89,6.74,6.9,6.8,True
+Romania,7246120,Mihai Popescu,Defender,False,probable,False,0,0,,,,,8,555,7.02,6.72,6.83,6.76,True
+Romania,6865516,Horațiu Moldovan,Goalkeeper,False,probable,False,0,0,,,,0.0,5,450,7.04,6.69,6.78,6.73,True
+Romania,6856983,Ș. Târnovanu,Goalkeeper,False,probable,False,0,0,,,,,2,142,7.07,6.67,6.76,6.71,True
+Romania,6927018,O. Moruțan,Forward,False,probable,False,0,0,,,,,3,93,7.2,6.66,6.75,6.7,True
+Romania,6955998,A. Burcă,Defender,False,probable,False,0,0,,,,,10,800,6.76,6.67,6.72,6.69,True
+Romania,56225218,L. Eissat,Defender,False,probable,False,0,0,,,,,5,360,6.74,6.65,6.69,6.67,True
+Romania,6842654,A. Șut,Midfielder,False,probable,False,0,0,,,,,3,145,7.06,6.61,6.65,6.62,True
+Romania,8189741,Alexandru Mitriță,Forward,False,probable,False,0,0,,,,,5,123,7.14,6.61,6.65,6.62,True
+Romania,7154833,N. Stanciu,Midfielder,False,probable,False,0,0,,,,0.22,10,620,6.63,6.6,6.62,6.61,True
+Romania,4946557,M. Marin,Midfielder,False,probable,False,0,0,,,,,8,531,6.65,6.59,6.61,6.6,True
+Romania,50869,Vlad Chiricheş,Midfielder,False,probable,False,0,0,,,,,2,146,6.84,6.59,6.61,6.6,True
+Romania,6872761,D. Miculescu,Forward,False,probable,False,0,0,,,,,6,111,6.66,6.57,6.58,6.58,True
+Romania,2905721,A. Dobre,Forward,False,probable,False,0,0,,,,,3,187,6.64,6.57,6.59,6.58,True
+Romania,6920900,C. Manea,Defender,False,probable,False,0,0,,,,,1,90,6.68,6.57,6.58,6.58,True
+Romania,63736512,K. Ciubotaru,Defender,False,probable,False,0,0,,,,,1,45,6.88,6.58,6.59,6.58,True
+Romania,26162332,Radu Drăguşin,Defender,False,probable,False,6,540,6.56,0.0,1.0,0.0,3,202,6.3,6.63,6.49,6.58,False
+Romania,6931204,A. Cicâldău,Midfielder,False,probable,False,0,0,,,,,2,66,6.61,6.57,6.58,6.58,True
+Romania,6936678,Ianis Hagi,Midfielder,False,probable,False,0,0,,,,0.38,10,623,6.57,6.56,6.57,6.57,True
+Romania,6954388,Deian Sorescu,Defender,False,probable,False,0,0,,,,,4,153,6.58,6.56,6.57,6.57,True
+Romania,44770229,C. Cîrjan,Midfielder,False,probable,False,0,0,,,,,4,72,6.58,6.56,6.57,6.57,True
+Romania,6922993,C. Petrila,Midfielder,False,probable,False,0,0,,,,,1,15,6.9,6.57,6.58,6.57,True
+Romania,6942313,D. Alibec,Forward,False,probable,False,0,0,,,,,4,48,6.63,6.56,6.57,6.56,True
+Romania,2918762,Dennis Politic,Midfielder,False,probable,False,0,0,,,,,1,10,6.93,6.56,6.57,6.56,True
+Romania,9010841,A. Chipciu,Defender,False,probable,False,0,0,,,,,3,209,6.55,6.56,6.56,6.56,True
+Romania,9081520,R. Opruț,Defender,False,probable,False,0,0,,,,,1,45,6.58,6.56,6.56,6.56,True
+Romania,6951812,D. Ciobotariu,Defender,False,probable,False,0,0,,,,,1,29,6.18,6.56,6.55,6.55,True
+Romania,9010680,F. Niță,Goalkeeper,False,probable,False,0,0,,,,,1,90,6.27,6.55,6.53,6.54,True
+Romania,6929272,Florin Tănase,Midfielder,False,probable,False,0,0,,,,,9,362,6.5,6.54,6.52,6.53,True
+Romania,16821595,V. Screciu,Midfielder,False,probable,False,0,0,,,,,4,245,6.49,6.53,6.52,6.53,True
+Romania,65985199,D. Matei,Midfielder,False,probable,False,0,0,,,,,2,52,6.39,6.53,6.51,6.52,True
+Romania,6938610,Louis Munteanu,Forward,False,probable,False,0,0,,,,,6,269,6.45,6.51,6.48,6.5,True
+Romania,55107717,Andrei Borza,Defender,False,probable,False,0,0,,,,,2,75,6.28,6.5,6.46,6.48,True
+Romania,59576916,T. Strata,Defender,False,probable,False,0,0,,,,,2,61,6.21,6.5,6.45,6.48,True
+Romania,6932170,Valentin Mihăilă,Forward,False,probable,False,0,0,,,,0.6,8,440,6.4,6.48,6.44,6.46,True
+Romania,30768864,B. Racovițan,Defender,False,probable,False,0,0,,,,,2,113,6.14,6.48,6.42,6.46,True
+Romania,6950685,D. Olaru,Midfielder,False,probable,False,0,0,,,,,4,223,6.36,6.47,6.42,6.45,True
+Romania,6934585,T. Băluță,Midfielder,False,probable,False,0,0,,,,,3,199,6.07,6.34,6.22,6.29,True
 Scotland,7215208,Lewis Ferguson,Midfielder,True,probable,True,6,540,7.26,0.0,0.0,0.03,19,1588,7.02,7.12,7.04,7.09,False
 Scotland,3048367,Angus Gunn,Goalkeeper,True,probable,True,0,0,,,,,13,1177,7.08,7.03,7.07,7.05,True
 Scotland,20998257,Billy Gilmour,Midfielder,True,probable,True,4,210,7.34,1.0,0.0,0.1,14,972,6.85,7.07,6.91,7.0,False
@@ -652,9 +1194,9 @@ Scotland,177898,S. Bain,Goalkeeper,False,probable,False,0,0,,,,,1,45,6.91,6.86,6
 Scotland,7218750,R. Porteous,Defender,False,probable,False,0,0,,,,,1,8,6.52,6.85,6.85,6.85,True
 Scotland,45525641,T. Conway,Forward,False,probable,False,0,0,,,,,5,145,6.84,6.85,6.85,6.85,True
 Scotland,22292214,C. Barron,Midfielder,False,probable,False,0,0,,,,,1,14,6.89,6.85,6.85,6.85,True
-Scotland,20397244,Kieron Bowie,Forward,False,probable,False,6,325,6.68,1.0,0.0,0.43,6,158,7.19,6.78,6.94,6.85,False
 Scotland,52642002,L. Graham,Defender,False,probable,False,0,0,,,,,1,2,7.11,6.85,6.86,6.85,True
 Scotland,7269304,R. Doohan,Goalkeeper,False,probable,False,0,0,,,,,1,92,6.68,6.84,6.83,6.84,True
+Scotland,20397244,Kieron Bowie,Forward,False,probable,False,6,325,6.68,1.0,0.0,0.43,6,158,7.19,6.78,6.94,6.84,False
 Scotland,20236888,J. McPake,Forward,False,probable,False,0,0,,,,,1,18,6.63,6.83,6.82,6.83,True
 Scotland,145537,Scott McTominay,Midfielder,False,probable,False,3,175,6.65,0.0,0.0,0.44,15,1255,6.96,6.77,6.9,6.82,False
 Scotland,43243949,M. Johnston,Defender,False,probable,False,0,0,,,,,3,175,6.7,6.83,6.81,6.82,True
@@ -662,7 +1204,7 @@ Scotland,178220,Craig Gordon,Goalkeeper,False,probable,False,0,0,,,,,5,437,6.76,
 Scotland,67449816,J. Wilson,Forward,False,probable,False,0,0,,,,,2,30,6.26,6.82,6.8,6.81,True
 Scotland,7235011,L. Kelly,Goalkeeper,False,probable,False,0,0,,,,,2,58,6.6,6.82,6.79,6.81,True
 Scotland,1415988,G. Hirst,Forward,False,probable,False,0,0,,,,0.61,9,378,6.72,6.8,6.77,6.79,True
-Scotland,89751214,T. Fletcher,Midfielder,False,probable,False,0,0,,,,,2,55,6.52,6.8,6.76,6.79,True
+Scotland,89751214,T. Fletcher,Midfielder,False,probable,False,0,0,,,,,2,55,6.52,6.81,6.77,6.79,True
 Scotland,7257712,Ross Stewart,Forward,False,probable,False,0,0,,,,0.95,2,36,6.41,6.81,6.77,6.79,True
 Scotland,280777,R. McCrorie,Midfielder,False,probable,False,0,0,,,,,1,62,6.45,6.8,6.76,6.78,True
 Scotland,7294581,L. Dykes,Forward,False,probable,False,0,0,,,,,11,347,6.68,6.78,6.74,6.77,True
@@ -676,7 +1218,7 @@ Scotland,52733450,R. Ure,Forward,False,probable,False,6,396,6.22,0.0,1.0,1.12,4,
 Serbia,5016270,Vanja Milinković-Savić,Goalkeeper,True,probable,True,2,180,7.22,0.0,0.0,0.03,4,360,7.26,7.1,7.19,7.14,False
 Serbia,7378140,Strahinja Pavlović,Defender,True,probable,True,6,540,7.1,0.0,1.0,0.17,15,1206,6.61,6.99,6.72,6.88,False
 Serbia,93373,A. Živković,Midfielder,True,probable,True,0,0,,,,,12,927,6.95,6.84,6.91,6.87,True
-Serbia,293335,F. Kostić,Midfielder,True,probable,True,0,0,,,,0.68,12,778,6.86,6.77,6.83,6.8,True
+Serbia,293335,F. Kostić,Midfielder,True,probable,True,0,0,,,,0.68,12,778,6.86,6.77,6.83,6.79,True
 Serbia,454657,S. Lukić,Midfielder,True,probable,True,6,493,6.7,0.0,1.0,0.24,14,913,6.52,6.75,6.6,6.69,False
 Serbia,294462,L. Jović,Forward,True,probable,True,0,0,,,,0.69,14,683,6.62,6.63,6.62,6.62,True
 Serbia,454818,N. Maksimović,Midfielder,True,probable,True,0,0,,,,0.12,11,704,6.51,6.56,6.53,6.54,True
@@ -687,7 +1229,7 @@ Serbia,54894,S. Babić,Defender,True,probable,True,0,0,,,,0.0,4,360,6.09,6.32,6.
 Serbia,26153799,Filip Stanković,Goalkeeper,False,probable,False,5,450,7.21,0.0,0.0,0.0,1,61,6.61,7.14,7.05,7.1,False
 Serbia,454979,A. Mitrović,Forward,False,probable,False,0,0,,,,,8,433,7.44,6.92,7.1,6.99,True
 Serbia,64108744,M. CvetkoviÄ,Forward,False,probable,False,0,0,,,,,5,176,7.11,6.84,6.95,6.88,True
-Serbia,55098862,S. Džodić,Midfielder,False,probable,False,7,583,7.09,1.0,1.0,0.14,1,67,5.59,7.02,6.67,6.88,False
+Serbia,55098862,S. Džodić,Midfielder,False,probable,False,7,583,7.09,1.0,1.0,0.14,1,67,5.59,7.02,6.68,6.88,False
 Serbia,7433524,Ivan Ilić,Midfielder,False,probable,False,5,256,6.89,0.0,2.0,0.0,3,182,6.71,6.87,6.84,6.86,False
 Serbia,4896969,Dušan Vlahović,Forward,False,probable,False,0,0,,,,0.93,9,790,7.06,6.81,6.92,6.85,True
 Serbia,453208,P. Rajković,Goalkeeper,False,probable,False,0,0,,,,0.0,5,405,7.07,6.77,6.86,6.81,True
@@ -725,7 +1267,7 @@ Serbia,7374598,V. Birmančević,Midfielder,False,probable,False,0,0,,,,0.51,5,28
 Serbia,59354253,Mihailo Ivanović,Forward,False,probable,False,0,0,,,,,1,45,6.32,6.59,6.56,6.58,True
 Serbia,21476105,Strahinja Eraković,Defender,False,probable,False,0,0,,,,,12,874,6.55,6.58,6.56,6.57,True
 Serbia,42523796,Nikola Štulić,Forward,False,probable,False,5,261,6.22,0.0,0.0,0.25,2,57,6.66,6.57,6.58,6.57,False
-Serbia,7398104,D. Zukić,Midfielder,False,probable,False,0,0,,,,,2,60,6.29,6.58,6.54,6.57,True
+Serbia,7398104,D. Zukić,Midfielder,False,probable,False,0,0,,,,,2,60,6.29,6.58,6.55,6.57,True
 Serbia,71452276,V. Dragojević,Midfielder,False,probable,False,0,0,,,,,1,61,6.16,6.56,6.5,6.53,True
 Serbia,79845850,S. Gudelj,Defender,False,probable,False,0,0,,,,,1,79,6.35,6.55,6.5,6.53,True
 Serbia,64111320,N. Simić,Defender,False,probable,False,0,0,,,,,2,156,6.4,6.54,6.49,6.52,True
@@ -753,9 +1295,9 @@ Slovakia,4019036,L. Bénes,Midfielder,False,probable,False,0,0,,,,0.31,6,83,6.57
 Slovakia,1179640,P. Pokorný,Midfielder,False,probable,False,0,0,,,,,1,8,6.03,6.96,6.93,6.95,True
 Slovakia,4981977,Lubomir Tupta,Forward,False,probable,False,0,0,,,,,7,89,6.47,6.95,6.9,6.93,True
 Slovakia,9007943,Ľubomír Šatka,Defender,False,probable,False,0,0,,,,,5,278,6.69,6.92,6.86,6.9,True
+Slovakia,130081,Patrik Hrošovský,Midfielder,False,probable,False,0,0,,,,,2,101,6.28,6.92,6.85,6.9,True
 Slovakia,17022040,E. Prekop,Forward,False,probable,False,0,0,,,,,2,27,6.31,6.92,6.85,6.9,True
 Slovakia,55088397,L. Sauer,Forward,False,probable,False,4,32,6.57,0.0,0.0,,11,581,7.0,6.86,6.94,6.89,False
-Slovakia,130081,Patrik Hrošovský,Midfielder,False,probable,False,0,0,,,,,2,101,6.28,6.92,6.85,6.89,True
 Slovakia,46724125,T. Rigo,Midfielder,False,probable,False,0,0,,,,,9,431,6.77,6.89,6.84,6.87,True
 Slovakia,32965226,A. Kaprálik,Forward,False,probable,False,0,0,,,,,1,63,6.53,6.89,6.81,6.86,True
 Slovakia,3040800,M. Dúbravka,Goalkeeper,False,probable,False,0,0,,,,0.0,10,930,6.78,6.87,6.82,6.85,True
@@ -798,6 +1340,51 @@ Slovenia,17708061,Svit Sešlar,Midfielder,False,probable,False,0,0,,,,,4,158,6.4
 Slovenia,211869,Petar Stojanović,Midfielder,False,probable,False,0,0,,,,,8,516,6.57,6.69,6.65,6.67,True
 Slovenia,127022,Ž. Celar,Forward,False,probable,False,0,0,,,,,3,42,6.38,6.69,6.64,6.67,True
 Slovenia,44847670,S. Kuzmić,Defender,False,probable,False,0,0,,,,,2,75,6.3,6.67,6.6,6.64,True
+Sweden,3055773,V. Gyökeres,Forward,True,probable,True,3,56,6.75,0.0,0.0,0.62,15,1314,7.61,6.87,7.46,7.11,False
+Sweden,7723163,G. Gudmundsson,Defender,True,probable,True,4,341,7.23,0.0,1.0,,20,1494,6.83,7.03,6.88,6.97,False
+Sweden,42797174,Y. Ayari,Midfielder,True,probable,True,5,422,6.83,1.0,0.0,,19,1471,7.25,6.84,7.16,6.97,False
+Sweden,25550854,V. Johansson,Goalkeeper,True,probable,True,0,0,,,,,9,810,7.01,6.96,6.99,6.97,True
+Sweden,31983448,D. Svensson,Defender,True,probable,True,5,450,7.22,1.0,0.0,0.16,17,1073,6.7,7.05,6.81,6.96,False
+Sweden,7726222,C. Starfelt,Defender,True,probable,True,3,218,7.29,1.0,0.0,0.04,9,549,6.61,7.01,6.77,6.91,False
+Sweden,36515437,S. Nanasi,Midfielder,True,probable,True,5,380,6.98,0.0,2.0,0.77,8,473,6.8,6.93,6.85,6.9,False
+Sweden,7679210,A. Bernhardsson,Midfielder,True,probable,True,0,0,,,,0.85,17,1049,6.7,6.74,6.71,6.73,True
+Sweden,55918030,L. Bergvall,Midfielder,True,probable,True,4,153,6.45,0.0,0.0,0.37,14,704,6.63,6.71,6.65,6.68,False
+Sweden,143283,V. Lindelöf,Defender,True,probable,True,6,540,6.49,0.0,0.0,0.05,14,1194,6.68,6.59,6.66,6.62,False
+Sweden,56487004,B. Zeneli,Midfielder,True,probable,True,0,0,,,,,13,546,6.4,6.57,6.47,6.53,True
+Sweden,461258,A. Isak,Forward,False,probable,False,5,415,7.32,4.0,0.0,0.44,13,916,7.07,7.15,7.09,7.13,False
+Sweden,7733467,J. Widell Zetterström,Goalkeeper,False,probable,False,0,0,,,,,4,360,7.32,7.09,7.2,7.13,True
+Sweden,24702384,A. Elanga,Forward,False,probable,False,3,235,7.37,2.0,0.0,0.21,14,883,6.96,7.12,7.02,7.08,False
+Sweden,7725739,Emil Holm,Defender,False,probable,False,5,285,7.4,0.0,0.0,0.36,7,347,6.58,7.1,6.92,7.03,False
+Sweden,7728476,B. Nygren,Forward,False,probable,False,0,0,,,,,17,934,7.04,6.98,7.02,7.0,True
+Sweden,7752304,A. Salétros,Midfielder,False,probable,False,0,0,,,,,8,604,7.09,6.94,6.99,6.96,True
+Sweden,38555146,Gustav Lundgren,Midfielder,False,probable,False,0,0,,,,,2,99,7.45,6.93,7.0,6.96,True
+Sweden,1366400,E. Smith,Defender,False,probable,False,0,0,,,,0.14,4,220,6.99,6.92,6.95,6.93,True
+Sweden,460614,Ken Sema,Midfielder,False,probable,False,0,0,,,,,10,513,6.99,6.91,6.94,6.92,True
+Sweden,4908078,M. Svanberg,Midfielder,False,probable,False,0,0,,,,0.61,6,262,6.98,6.9,6.93,6.91,True
+Sweden,53950449,H. Bolin,Midfielder,False,probable,False,5,399,6.95,2.0,0.0,0.28,2,25,6.41,6.91,6.88,6.9,False
+Sweden,2525117,G. Nilsson,Forward,False,probable,False,0,0,,,,,3,118,6.96,6.88,6.9,6.89,True
+Sweden,25909079,T. Ali,Midfielder,False,probable,False,0,0,,,,,3,61,7.0,6.88,6.9,6.89,True
+Sweden,69629112,E. Skoglund,Defender,False,probable,False,0,0,,,,,2,91,6.95,6.89,6.91,6.89,True
+Sweden,459809,Emil Krafth,Defender,False,probable,False,0,0,,,,0.0,2,89,7.05,6.88,6.89,6.88,True
+Sweden,25949490,P. Wålemark,Midfielder,False,probable,False,0,0,,,,,2,93,6.92,6.88,6.89,6.88,True
+Sweden,53950932,M. Widell,Midfielder,False,probable,False,0,0,,,,,0,4,,6.86,6.86,6.86,True
+Sweden,7760837,J. Larsson,Forward,False,probable,False,0,0,,,,,1,53,6.93,6.86,6.86,6.86,True
+Sweden,123480,R. Olsen,Goalkeeper,False,probable,False,0,0,,,,0.0,4,364,6.85,6.85,6.85,6.85,True
+Sweden,3102624,N. Eliasson,Midfielder,False,probable,False,0,0,,,,,3,90,6.57,6.84,6.82,6.83,True
+Sweden,21816459,S. Dahl,Defender,False,probable,False,0,0,,,,,2,58,6.59,6.84,6.82,6.83,True
+Sweden,53950288,H. Larsson,Midfielder,False,probable,False,4,40,6.68,0.0,0.0,0.18,7,418,6.82,6.83,6.82,6.83,False
+Sweden,54572392,Roony Bardghji,Forward,False,probable,False,0,0,,,,0.78,3,122,6.7,6.84,6.82,6.83,True
+Sweden,185626,Emil Forsberg,Midfielder,False,probable,False,0,0,,,,,2,64,6.64,6.84,6.82,6.83,True
+Sweden,7711249,I. Lidberg,Forward,False,probable,False,5,216,6.71,1.0,0.0,0.65,2,102,6.62,6.81,6.79,6.8,False
+Sweden,7712537,H. Ekdal,Defender,False,probable,False,0,0,,,,0.05,7,422,6.71,6.8,6.77,6.79,True
+Sweden,43335397,W. Swedberg,Forward,False,probable,False,7,329,6.66,0.0,0.0,0.77,2,15,6.19,6.76,6.73,6.75,False
+Sweden,22173235,G. Lagerbielke,Defender,False,probable,False,0,0,,,,,13,948,6.69,6.74,6.7,6.73,True
+Sweden,4075386,F. Beijmo,Defender,False,probable,False,0,0,,,,,1,90,6.49,6.75,6.67,6.72,True
+Sweden,7735721,Jesper Karlström,Midfielder,False,probable,False,5,450,6.78,1.0,0.0,0.03,14,804,6.43,6.81,6.56,6.71,False
+Sweden,22214290,Isak Hien,Defender,False,probable,False,0,0,,,,0.03,15,1168,6.62,6.7,6.65,6.68,True
+Sweden,26002298,H. Johansson,Midfielder,False,probable,False,0,0,,,,,3,183,6.4,6.72,6.62,6.68,True
+Sweden,36509319,E. Stroud,Midfielder,False,probable,False,5,279,6.44,0.0,1.0,0.82,5,283,6.71,6.64,6.68,6.66,False
+Sweden,459165,K. Nordfeldt,Goalkeeper,False,probable,False,0,0,,,,,5,456,6.38,6.59,6.48,6.55,True
 Switzerland,19878663,Z. Amdouni,Forward,True,probable,True,0,0,,,,0.0,12,555,7.38,7.27,7.35,7.3,True
 Switzerland,63817334,Z. Athekame,Defender,True,probable,True,6,540,7.46,2.0,2.0,0.33,4,287,7.16,7.24,7.2,7.22,False
 Switzerland,65405438,J. Manzambi,Midfielder,True,probable,True,3,185,7.56,1.0,2.0,0.4,20,972,7.11,7.14,7.12,7.13,False
@@ -839,3 +1426,84 @@ Switzerland,153265,M. Aebischer,Midfielder,False,probable,False,5,376,6.4,0.0,0.
 Switzerland,26148808,A. Amenda,Defender,False,probable,False,4,360,6.46,0.0,0.0,0.0,6,208,6.72,6.6,6.63,6.61,False
 Switzerland,44831087,A. Hajdari,Defender,False,probable,False,4,312,6.31,0.0,0.0,0.1,1,45,6.67,6.53,6.53,6.53,False
 Switzerland,80400334,Sascha Britschgi,Defender,False,probable,False,5,262,6.38,0.0,0.0,0.11,4,168,6.3,6.58,6.45,6.53,False
+Ukraine,108829,A. Trubin,Goalkeeper,True,probable,True,0,0,,,,,11,944,6.95,6.84,6.91,6.87,True
+Ukraine,17275937,D. Sikan,Forward,True,probable,True,0,0,,,,,3,137,7.06,6.81,6.91,6.85,True
+Ukraine,26029024,V. Vanat,Forward,True,probable,True,4,265,6.82,1.0,1.0,0.6,11,532,6.42,6.86,6.63,6.77,False
+Ukraine,26029185,I. Zabarnyi,Defender,True,probable,True,1,90,6.83,0.0,0.0,0.03,14,1238,6.66,6.79,6.7,6.76,False
+Ukraine,26073299,H. Sudakov,Midfielder,True,probable,True,0,0,,,,,10,757,6.78,6.73,6.76,6.74,True
+Ukraine,21082138,Eduard Sarapii,Defender,True,probable,True,0,0,,,,,4,332,6.72,6.69,6.71,6.7,True
+Ukraine,26073460,Oleg Ocheretko,Midfielder,True,probable,True,0,0,,,,,11,633,6.68,6.67,6.68,6.67,True
+Ukraine,1367527,R. Yaremchuk,Forward,True,probable,True,0,0,,,,0.71,9,444,6.68,6.66,6.67,6.66,True
+Ukraine,1361892,Yehor Nazaryna,Midfielder,True,probable,True,0,0,,,,,7,418,6.58,6.61,6.59,6.6,True
+Ukraine,351456,V. Tsygankov,Midfielder,True,probable,True,0,0,,,,0.4,11,718,6.36,6.45,6.39,6.43,True
+Ukraine,348719,V. Mykolenko,Defender,False,probable,False,5,450,7.15,0.0,0.0,0.03,8,677,6.74,7.01,6.86,6.95,False
+Ukraine,312172,Ruslan Malinovskyi,Midfielder,False,probable,False,0,0,,,,0.35,4,297,7.33,6.87,7.02,6.93,True
+Ukraine,10230577,Oleksiy Gutsulyak,Midfielder,False,probable,False,0,0,,,,,9,515,7.06,6.79,6.89,6.83,True
+Ukraine,61989501,Taras Mykhavko,Defender,False,probable,False,0,0,,,,,3,255,6.97,6.8,6.88,6.83,True
+Ukraine,2545725,A. Dovbyk,Forward,False,probable,False,3,84,6.52,1.0,0.0,0.72,6,253,6.75,6.81,6.79,6.8,False
+Ukraine,42429772,Y. Yarmolyuk,Midfielder,False,probable,False,6,285,6.71,1.0,1.0,0.09,8,553,6.86,6.78,6.81,6.79,False
+Ukraine,10252956,Ivan Kalyuzhnyi,Midfielder,False,probable,False,0,0,,,,,9,663,6.92,6.76,6.82,6.78,True
+Ukraine,103355,Oleksandr Zinchenko,Midfielder,False,probable,False,0,0,,,,0.0,5,441,7.04,6.74,6.82,6.77,True
+Ukraine,10214960,Bogdan Mykhaylichenko,Defender,False,probable,False,0,0,,,,,5,259,6.92,6.75,6.81,6.77,True
+Ukraine,20192452,Yukhym Konoplia,Defender,False,probable,False,0,0,,,,,6,430,6.76,6.68,6.71,6.69,True
+Ukraine,26074104,Artem Bondarenko,Midfielder,False,probable,False,0,0,,,,,4,114,6.95,6.68,6.71,6.69,True
+Ukraine,31941105,Nazar Voloshyn,Midfielder,False,probable,False,0,0,,,,,4,169,6.79,6.67,6.69,6.67,True
+Ukraine,7631554,A. Lunin,Goalkeeper,False,probable,False,0,0,,,,0.0,2,180,6.62,6.64,6.64,6.64,True
+Ukraine,33551105,Oleksii Sych,Defender,False,probable,False,0,0,,,,,1,37,6.65,6.64,6.64,6.64,True
+Ukraine,10210774,Oleksandr Pikhalyonok,Midfielder,False,probable,False,0,0,,,,,3,98,6.63,6.64,6.63,6.64,True
+Ukraine,16956674,O. Zubkov,Midfielder,False,probable,False,0,0,,,,,8,458,6.64,6.64,6.64,6.64,True
+Ukraine,26012924,Mykola Mykhailenko,Midfielder,False,probable,False,0,0,,,,,1,24,6.66,6.64,6.64,6.64,True
+Ukraine,10215926,Vladyslav Kabaiev,Midfielder,False,probable,False,0,0,,,,,1,8,7.02,6.64,6.65,6.64,True
+Ukraine,26089721,Oleksandr Drambaev,Defender,False,probable,False,0,0,,,,,1,1,6.37,6.64,6.64,6.64,True
+Ukraine,48984243,I. Varfolomeev,Midfielder,False,probable,False,0,0,,,,,1,4,6.0,6.63,6.62,6.63,True
+Ukraine,61761364,Igor Krasnopir,Forward,False,probable,False,0,0,,,,,2,84,6.54,6.61,6.59,6.61,True
+Ukraine,10213028,Oleksandr Tymchyk,Defender,False,probable,False,0,0,,,,,2,186,6.48,6.61,6.58,6.6,True
+Ukraine,45654280,Volodymyr Brazhko,Midfielder,False,probable,False,0,0,,,,,2,101,6.53,6.6,6.58,6.59,True
+Ukraine,2307767,O. Svatok,Defender,False,probable,False,0,0,,,,,3,188,6.32,6.59,6.55,6.58,True
+Ukraine,108990,Valerii Bondar,Defender,False,probable,False,0,0,,,,,6,382,6.54,6.59,6.56,6.58,True
+Ukraine,241654,Dmytro Riznyk,Goalkeeper,False,probable,False,0,0,,,,,3,204,6.51,6.58,6.55,6.57,True
+Ukraine,350651,Mykola Shaparenko,Midfielder,False,probable,False,0,0,,,,,9,307,6.42,6.58,6.53,6.56,True
+Ukraine,109956,Mykola Matvienko,Defender,False,probable,False,0,0,,,,,11,938,6.49,6.55,6.51,6.53,True
+Ukraine,8996351,Oleksandr Karavaiev,Defender,False,probable,False,0,0,,,,,1,90,5.88,6.56,6.48,6.53,True
+Ukraine,42616693,M. Khlan,Midfielder,False,probable,False,0,0,,,,,2,95,6.35,6.55,6.49,6.53,True
+Ukraine,26133996,Vladyslav Veleten,Midfielder,False,probable,False,0,0,,,,,2,69,6.19,6.54,6.46,6.51,True
+Ukraine,63683704,Matvii Ponomarenko,Forward,False,probable,False,0,0,,,,,4,152,6.28,6.5,6.41,6.46,True
+Ukraine,10245389,Oleksandr Nazarenko,Midfielder,False,probable,False,0,0,,,,,3,67,5.81,6.47,6.33,6.42,True
+Ukraine,50376893,Illia Krupskyi,Defender,False,probable,False,0,0,,,,,2,149,6.21,6.46,6.36,6.42,True
+Ukraine,3032428,Andriy Yarmolenko,Midfielder,False,probable,False,0,0,,,,,1,64,5.38,6.35,6.13,6.26,True
+Wales,22343734,N. Williams,Defender,True,probable,True,6,540,7.2,0.0,0.0,0.12,17,1428,7.07,7.06,7.06,7.06,False
+Wales,367073,E. Ampadu,Midfielder,True,probable,True,6,540,7.02,0.0,0.0,,13,1084,6.8,6.96,6.84,6.92,False
+Wales,3112123,D. James,Midfielder,True,probable,True,3,57,6.54,0.0,0.0,,13,825,7.2,6.8,7.06,6.9,False
+Wales,3101014,J. Dasilva,Defender,True,probable,True,5,445,6.87,1.0,0.0,0.08,11,916,6.97,6.84,6.93,6.87,False
+Wales,2994593,S. Thomas,Midfielder,True,probable,True,4,206,6.77,0.0,1.0,0.51,17,1112,6.82,6.82,6.82,6.82,False
+Wales,2921660,D. Ward,Goalkeeper,True,probable,True,0,0,,,,0.0,5,457,6.82,6.81,6.81,6.81,True
+Wales,52820068,J. James,Midfielder,True,probable,True,0,0,,,,0.63,14,754,6.62,6.68,6.65,6.67,True
+Wales,52825381,L. Koumas,Forward,True,probable,True,3,96,6.33,0.0,0.0,,11,469,6.29,6.75,6.46,6.63,False
+Wales,20883625,B. Johnson,Forward,True,probable,True,6,315,6.45,0.0,0.0,0.23,16,1048,6.54,6.65,6.57,6.62,False
+Wales,26558,B. Davies,Defender,True,probable,True,0,0,,,,0.36,12,1034,6.56,6.63,6.58,6.61,True
+Wales,16750755,B. Cabango,Defender,True,probable,True,0,0,,,,,7,481,6.51,6.62,6.56,6.6,True
+Wales,3094735,H. Wilson,Midfielder,False,probable,False,5,165,6.86,0.0,0.0,0.59,9,798,7.72,6.86,7.31,7.04,False
+Wales,3040639,K. Darlow,Goalkeeper,False,probable,False,0,0,,,,,12,1116,7.1,6.98,7.05,7.01,True
+Wales,3110835,Joe Rodon,Defender,False,probable,False,2,124,7.07,0.0,0.0,,12,1108,7.12,6.87,7.03,6.93,False
+Wales,63590807,D. Lawlor,Defender,False,probable,False,0,0,,,,,6,483,6.98,6.88,6.93,6.9,True
+Wales,68257,Rabbi Matondo,Forward,False,probable,False,0,0,,,,,2,22,6.69,6.79,6.79,6.79,True
+Wales,48490778,R. Colwill,Midfielder,False,probable,False,0,0,,,,,1,25,6.86,6.79,6.79,6.79,True
+Wales,57728314,C. Congreve,Midfielder,False,probable,False,0,0,,,,,2,56,6.67,6.77,6.76,6.77,True
+Wales,3113089,L. Cullen,Midfielder,False,probable,False,0,0,,,,,10,694,6.74,6.76,6.75,6.76,True
+Wales,3038224,D. Brooks,Midfielder,False,probable,False,5,96,6.33,0.0,0.0,0.35,15,806,6.91,6.71,6.83,6.76,False
+Wales,3139976,J. Allen,Midfielder,False,probable,False,0,0,,,,,1,13,4.34,6.77,6.75,6.76,True
+Wales,3184573,A. Davies,Goalkeeper,False,probable,False,0,0,,,,,1,90,6.53,6.77,6.75,6.76,True
+Wales,55615189,C. Crew,Midfielder,False,probable,False,0,0,,,,,1,70,6.45,6.77,6.74,6.76,True
+Wales,69533478,Kai Andrews,Midfielder,False,probable,False,0,0,,,,,3,104,6.63,6.76,6.73,6.75,True
+Wales,34751521,I. Davies,Forward,False,probable,False,0,0,,,,,1,28,6.17,6.75,6.71,6.74,True
+Wales,63579376,R. Kpakio,Defender,False,probable,False,0,0,,,,,4,114,6.43,6.74,6.7,6.73,True
+Wales,3234483,W. Burns,Forward,False,probable,False,0,0,,,,0.36,2,21,6.28,6.74,6.7,6.73,True
+Wales,2951445,R. Norrington-Davies,Defender,False,probable,False,0,0,,,,0.03,3,105,6.49,6.73,6.68,6.71,True
+Wales,20413505,N. Broadhead,Forward,False,probable,False,0,0,,,,0.59,7,302,6.59,6.72,6.68,6.7,True
+Wales,13207628,J. Sheehan,Midfielder,False,probable,False,0,0,,,,,13,858,6.66,6.7,6.67,6.69,True
+Wales,3188598,K. Moore,Forward,False,probable,False,0,0,,,,,10,484,6.61,6.7,6.65,6.68,True
+Wales,2887206,M. Harris,Forward,False,probable,False,0,0,,,,,10,421,6.48,6.67,6.59,6.64,True
+Wales,61119135,J. Colwill,Midfielder,False,probable,False,0,0,,,,,4,101,6.23,6.67,6.58,6.63,True
+Wales,3037580,C. Mepham,Defender,False,probable,False,0,0,,,,0.04,10,467,6.48,6.64,6.57,6.61,True
+Wales,45776157,C. Savage,Midfielder,False,probable,False,0,0,,,,,1,60,6.08,6.63,6.51,6.59,True
+Wales,3112445,C. Roberts,Defender,False,probable,False,0,0,,,,0.0,5,402,6.31,6.59,6.47,6.54,True
