@@ -1,48 +1,8 @@
-# Pronósticos de selecciones (14/11/2026 19:06 UTC)
+# Pronósticos de selecciones (14/11/2026 20:08 UTC)
 
 Tema aparte del proyecto de ambos marcan. Por mercado: **modelo** (selecciones + nota justa de los jugadores + árbitro), **mercado** (mediana de casas sin margen) y **final** (mezcla con el peso que se aprende de los partidos ya jugados, ver `evaluacion.md`). Pronóstico = el lado más probable según final. **Cuota mínima** = 1/probabilidad final: por debajo no compensa.
 
 Datos del modelo: 577 partidos de selecciones desde 2025 (descartados 28 contra rivales sin jugadores en la API y 2 xG roto).
-
-## Georgia - Hungary (2026-11-14 17:00 UTC)
-
-Ranking FIFA (puntos): Georgia 1355, Hungary 1506. Goles esperados 1.02 - 1.27, marcador más probable 1-1. Córners esperados 9.0. Amarillas esperadas 4.8 (árbitro ?, 0 partidos en nuestras ligas, x1.00). Forma del once: Georgia +0.01, Hungary -0.06. Partidos en el modelo: Georgia 17, Hungary 18.
-
-| mercado | pronóstico | final | modelo | mercado | cuota mínima | cuota mediana | mejor cuota | casas |
-|---|---|---|---|---|---|---|---|---|
-| 1X2 | **gana Hungary** | 42% | 42% | - | 2.38 | nan | nan | 0 |
-| Sin empate | **gana Hungary (sin empate)** | 58% | 58% | - | 1.71 | nan | nan | 0 |
-| Más/menos 2.5 | **menos de 2.5 goles** | 60% | 60% | - | 1.67 | nan | nan | 0 |
-| Ambos marcan | **ambos marcan: no** | 54% | 54% | - | 1.85 | nan | nan | 0 |
-| Tarjetas | **más de 3.5 tarjetas** | 63% | 63% | - | 1.58 | nan | nan | 0 |
-| Tarjetas | **menos de 4.5 tarjetas** | 52% | 52% | - | 1.93 | nan | nan | 0 |
-| Córners | **más de 8.5 córners** | 53% | 53% | - | 1.88 | nan | nan | 0 |
-| Córners | **menos de 9.5 córners** | 59% | 59% | - | 1.69 | nan | nan | 0 |
-| Goles | **más de 1.5 goles** | 67% | 67% | - | 1.50 | nan | nan | 0 |
-| Goles | **Hungary marca primero** | 55% | 55% | - | 1.80 | nan | nan | 0 |
-
-Once probable Georgia: G. Mamardashvili, L. Dvali, K. Kvaratskhelia, G. Kochorashvili, Giorgi Chakvetadze, Saba Goglichidze, G. Mikautadze, G. Tsitaishvili, Anzor Mekvabishvili, L. Lochoshvili, O. Kakabadze
-Once probable Hungary: M. Csinger, D. Szoboszlai, W. Orbán, M. Vitális, M. Tóth, B. Tóth, A. Osváth, A. Schäfer, D. Lukacs, Z. Nagy, M. Kerkez
-
-## Norway - Wales (2026-11-14 17:00 UTC)
-
-Ranking FIFA (puntos): Norway 1651, Wales 1517. Goles esperados 2.41 - 0.82, marcador más probable 2-0. Córners esperados 9.5. Amarillas esperadas 2.8 (árbitro ?, 0 partidos en nuestras ligas, x1.00). Forma del once: Norway -0.03, Wales +0.01. Partidos en el modelo: Norway 24, Wales 18.
-
-| mercado | pronóstico | final | modelo | mercado | cuota mínima | cuota mediana | mejor cuota | casas |
-|---|---|---|---|---|---|---|---|---|
-| 1X2 | **gana Norway** | 72% | 72% | - | 1.38 | nan | nan | 0 |
-| Sin empate | **gana Norway (sin empate)** | 87% | 87% | - | 1.15 | nan | nan | 0 |
-| Más/menos 2.5 | **más de 2.5 goles** | 63% | 63% | - | 1.59 | nan | nan | 0 |
-| Ambos marcan | **ambos marcan: sí** | 51% | 51% | - | 1.96 | nan | nan | 0 |
-| Tarjetas | **menos de 3.5 tarjetas** | 68% | 68% | - | 1.47 | nan | nan | 0 |
-| Tarjetas | **menos de 4.5 tarjetas** | 80% | 80% | - | 1.25 | nan | nan | 0 |
-| Córners | **más de 8.5 córners** | 59% | 59% | - | 1.70 | nan | nan | 0 |
-| Córners | **menos de 9.5 córners** | 53% | 53% | - | 1.88 | nan | nan | 0 |
-| Goles | **más de 1.5 goles** | 83% | 83% | - | 1.20 | nan | nan | 0 |
-| Goles | **Norway marca primero** | 75% | 75% | - | 1.34 | nan | nan | 0 |
-
-Once probable Norway: E. Haaland, A. Nusa, M. Ødegaard, Ø. Nyland, S. Berge, A. Schjelderup, K. Ajer, P. Berg, Torbjørn Heggem, D. Møller Wolfe, F. Aursnes
-Once probable Wales: N. Williams, E. Ampadu, D. James, J. Dasilva, S. Thomas, D. Ward, J. James, L. Koumas, B. Johnson, B. Davies, B. Cabango
 
 ## Sweden - Bosnia & Herzegovina (2026-11-14 19:45 UTC)
 
