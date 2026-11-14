@@ -1,7 +1,5 @@
 {
  "equipos": {
-  "Kosovo National Team": 946245,
-  "Israel": 950500,
   "Georgia": 940288,
   "Hungary": 655203,
   "Norway": 928374,
@@ -34,12 +32,6 @@
   "Turkey": 662011
  },
  "cruces": [
-  [
-   "Kosovo National Team",
-   "Israel",
-   1301155105,
-   "2026-11-14T14:00:00.000Z"
-  ],
   [
    "Georgia",
    "Hungary",
@@ -131,5 +123,5 @@
    "2026-11-15T19:45:00.000Z"
   ]
  ],
- "generado": "2026-11-14T14:27:47.166622+00:00"
+ "generado": "2026-11-14T18:54:01.886514+00:00"
 }
