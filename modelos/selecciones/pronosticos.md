@@ -1,88 +1,8 @@
-# Pronósticos de selecciones (15/11/2026 15:15 UTC)
+# Pronósticos de selecciones (15/11/2026 19:42 UTC)
 
 Tema aparte del proyecto de ambos marcan. Por mercado: **modelo** (selecciones + nota justa de los jugadores + árbitro), **mercado** (mediana de casas sin margen) y **final** (mezcla con el peso que se aprende de los partidos ya jugados, ver `evaluacion.md`). Pronóstico = el lado más probable según final. **Cuota mínima** = 1/probabilidad final: por debajo no compensa.
 
 Datos del modelo: 577 partidos de selecciones desde 2025 (descartados 28 contra rivales sin jugadores en la API y 2 xG roto).
-
-## Latvia - Armenia (2026-11-15 14:00 UTC)
-
-Ranking FIFA (puntos): Latvia 1086, Armenia 1190. Goles esperados 1.01 - 1.03, marcador más probable 1-1. Córners esperados 9.8. Amarillas esperadas 3.3 (árbitro ?, 0 partidos en nuestras ligas, x1.00). Forma del once: Latvia +0.00, Armenia +0.00. Partidos en el modelo: Latvia 18, Armenia 17.
-
-| mercado | pronóstico | final | modelo | mercado | cuota mínima | cuota mediana | mejor cuota | casas |
-|---|---|---|---|---|---|---|---|---|
-| 1X2 | **gana Armenia** | 35% | 35% | - | 2.83 | nan | nan | 0 |
-| Sin empate | **gana Armenia (sin empate)** | 51% | 51% | - | 1.97 | nan | nan | 0 |
-| Más/menos 2.5 | **menos de 2.5 goles** | 67% | 67% | - | 1.50 | nan | nan | 0 |
-| Ambos marcan | **ambos marcan: no** | 59% | 59% | - | 1.69 | nan | nan | 0 |
-| Tarjetas | **menos de 3.5 tarjetas** | 61% | 61% | - | 1.64 | nan | nan | 0 |
-| Tarjetas | **menos de 4.5 tarjetas** | 75% | 75% | - | 1.34 | nan | nan | 0 |
-| Córners | **más de 8.5 córners** | 63% | 63% | - | 1.59 | nan | nan | 0 |
-| Córners | **más de 9.5 córners** | 51% | 51% | - | 1.96 | nan | nan | 0 |
-| Goles | **más de 1.5 goles** | 61% | 61% | - | 1.65 | nan | nan | 0 |
-| Goles | **Armenia marca primero** | 51% | 51% | - | 1.98 | nan | nan | 0 |
-
-Once probable Latvia: Rihards Matrevics, A. Cigaņiks, Lukass Vapne, Antonijs Černomordijs, D. Meļņiks, Oskars Vientiess, Dmitrijs Zelenkovs, Vladislavs Gutkovskis, Raivis Jurkovskis, D. Cirkin, R. Uldriķis
-Once probable Armenia: Eduard Spertsyan, G. Harutyunyan, Artur Serobyan, Arsen Beglaryan, U. Iwu, N. Hovhannisyan, A. Bandikyan, K. Hovhannisyan, A. Miranyan, Erik Piloyan, N. Tiknizyan
-
-## Cyprus - Montenegro (2026-11-15 14:00 UTC)
-
-Ranking FIFA (puntos): Cyprus 1133, Montenegro 1302. Goles esperados 1.23 - 1.37, marcador más probable 1-1. Córners esperados 9.1. Amarillas esperadas 3.9 (árbitro ?, 0 partidos en nuestras ligas, x1.00). Forma del once: Cyprus +0.00, Montenegro -0.02. Partidos en el modelo: Cyprus 18, Montenegro 18.
-
-| mercado | pronóstico | final | modelo | mercado | cuota mínima | cuota mediana | mejor cuota | casas |
-|---|---|---|---|---|---|---|---|---|
-| 1X2 | **gana Montenegro** | 40% | 40% | - | 2.48 | nan | nan | 0 |
-| Sin empate | **gana Montenegro (sin empate)** | 55% | 55% | - | 1.83 | nan | nan | 0 |
-| Más/menos 2.5 | **menos de 2.5 goles** | 52% | 52% | - | 1.93 | nan | nan | 0 |
-| Ambos marcan | **ambos marcan: sí** | 53% | 53% | - | 1.89 | nan | nan | 0 |
-| Tarjetas | **más de 3.5 tarjetas** | 50% | 50% | - | 1.98 | nan | nan | 0 |
-| Tarjetas | **menos de 4.5 tarjetas** | 65% | 65% | - | 1.55 | nan | nan | 0 |
-| Córners | **más de 8.5 córners** | 55% | 55% | - | 1.81 | nan | nan | 0 |
-| Córners | **menos de 9.5 córners** | 57% | 57% | - | 1.76 | nan | nan | 0 |
-| Goles | **más de 1.5 goles** | 73% | 73% | - | 1.36 | nan | nan | 0 |
-| Goles | **Montenegro marca primero** | 53% | 53% | - | 1.89 | nan | nan | 0 |
-
-Once probable Cyprus: M. Edwards, L. Loizou, Leonidas Konomis, G. Kastanos, N. Panagiotou, H. Kyprianou, Giorgos Malekkidis, I. Pittas, Panagiotis Andreou, Fabiano, K. Sotiriou
-Once probable Montenegro: Milutin Osmajić, Vasilije Adžić, Stefan Savić, Marko Janković, Nikola Krstović, A. Bulatović, M. Roganović, Stevan Jovetić, B. Popović, O. Gašević, Marko Vešović
-
-## Finland - San Marino (2026-11-15 17:00 UTC)
-
-Ranking FIFA (puntos): Finland 1342, San Marino 721. Goles esperados 3.27 - 0.41, marcador más probable 3-0. Córners esperados 9.4. Amarillas esperadas 3.7 (árbitro ?, 0 partidos en nuestras ligas, x1.00). Forma del once: Finland +0.01, San Marino +0.00. Partidos en el modelo: Finland 18, San Marino 17.
-
-| mercado | pronóstico | final | modelo | mercado | cuota mínima | cuota mediana | mejor cuota | casas |
-|---|---|---|---|---|---|---|---|---|
-| 1X2 | **gana Finland** | 90% | 90% | - | 1.11 | nan | nan | 0 |
-| Sin empate | **gana Finland (sin empate)** | 98% | 98% | - | 1.03 | nan | nan | 0 |
-| Más/menos 2.5 | **más de 2.5 goles** | 71% | 71% | - | 1.41 | nan | nan | 0 |
-| Ambos marcan | **ambos marcan: no** | 67% | 67% | - | 1.48 | nan | nan | 0 |
-| Tarjetas | **menos de 3.5 tarjetas** | 53% | 53% | - | 1.89 | nan | nan | 0 |
-| Tarjetas | **menos de 4.5 tarjetas** | 68% | 68% | - | 1.48 | nan | nan | 0 |
-| Córners | **más de 8.5 córners** | 58% | 58% | - | 1.71 | nan | nan | 0 |
-| Córners | **menos de 9.5 córners** | 54% | 54% | - | 1.86 | nan | nan | 0 |
-| Goles | **más de 1.5 goles** | 88% | 88% | - | 1.13 | nan | nan | 0 |
-| Goles | **Finland marca primero** | 89% | 89% | - | 1.13 | nan | nan | 0 |
-
-Once probable Finland: L. Hrádecký, Leo Walta, A. Svanbäck, J. Pohjanpalo, A. Marhiev, J. LÃ¤hteenmÃ¤ki, K. Kairinen, Samuli Miettinen, A. Ståhl, T. Keskinen, T. Miettinen
-Once probable San Marino: Nicolas Giacopetti, Lorenzo Lazzari, D. Rossi, Nicola Nanni, Lorenzo Capicchioni, Samuel Pancotti, Marco Pasolini, Marcello Mularoni, Giacomo Benvenuti, Michele Cevoli, Simone Giocondi
-
-## Belarus - Albania (2026-11-15 17:00 UTC)
-
-Ranking FIFA (puntos): Belarus 1243, Albania 1376. Goles esperados 0.86 - 1.19, marcador más probable 0-1. Córners esperados 9.4. Amarillas esperadas 4.5 (árbitro ?, 0 partidos en nuestras ligas, x1.00). Forma del once: Belarus +0.00, Albania -0.02. Partidos en el modelo: Belarus 15, Albania 18.
-
-| mercado | pronóstico | final | modelo | mercado | cuota mínima | cuota mediana | mejor cuota | casas |
-|---|---|---|---|---|---|---|---|---|
-| 1X2 | **gana Albania** | 44% | 44% | - | 2.29 | nan | nan | 0 |
-| Sin empate | **gana Albania (sin empate)** | 62% | 62% | - | 1.61 | nan | nan | 0 |
-| Más/menos 2.5 | **menos de 2.5 goles** | 66% | 66% | - | 1.51 | nan | nan | 0 |
-| Ambos marcan | **ambos marcan: no** | 60% | 60% | - | 1.67 | nan | nan | 0 |
-| Tarjetas | **más de 3.5 tarjetas** | 59% | 59% | - | 1.70 | nan | nan | 0 |
-| Tarjetas | **menos de 4.5 tarjetas** | 56% | 56% | - | 1.77 | nan | nan | 0 |
-| Córners | **más de 8.5 córners** | 58% | 58% | - | 1.72 | nan | nan | 0 |
-| Córners | **menos de 9.5 córners** | 54% | 54% | - | 1.85 | nan | nan | 0 |
-| Goles | **más de 1.5 goles** | 61% | 61% | - | 1.65 | nan | nan | 0 |
-| Goles | **Albania marca primero** | 58% | 58% | - | 1.72 | nan | nan | 0 |
-
-Once probable Belarus: K. Pechenin, Z. Volkov, K. Gomanov, V. Gromyko, F. Lapoukhov, V. Kalinin, M. Ebong, Vitaliy Lisakovich, German Barkovskiy, A. Lukashov, A. Selyava
-Once probable Albania: K. Asllani, R. Manaj, Myrto Uzuni, Elseid Hysaj, Mario Mitaj, Ernest Muçi, B. Djimsiti, Ardian Ismajli, Arber Hoxha, Ylber Ramadani, S. Pilios
 
 ## Croatia - Czech Republic (2026-11-15 19:45 UTC)
 
@@ -164,26 +84,6 @@ Ranking FIFA (puntos): France 1949, Turkey 1583. Goles esperados 2.81 - 0.80, ma
 Once probable France: M. Olise, R. Cherki, J. Jacquet, Lucas Da Cunha, D. Doué, Mike Maignan, Adrien Rabiot, O. Dembélé, J. Koundé, E. Camavinga, M. Lacroix
 Once probable Turkey: A. Güler, Barış Alper Yılmaz, İsmail Yüksek, Salih Özcan, Zeki Çelik, Eren Elmalı, Abdülkerim Bardakcı, F. Kadıoğlu, Oğuz Aydın, Merih Demiral, Uğurcan Çakır
 
-## Kazakhstan - Slovakia (2026-11-16 15:00 UTC)
-
-Ranking FIFA (puntos): Kazakhstan 1181, Slovakia 1474. Goles esperados 0.86 - 1.62, marcador más probable 0-1. Córners esperados 11.3. Amarillas esperadas 3.7 (árbitro ?, 0 partidos en nuestras ligas, x1.00). Forma del once: Kazakhstan +0.00, Slovakia -0.02. Partidos en el modelo: Kazakhstan 17, Slovakia 18.
-
-| mercado | pronóstico | final | modelo | mercado | cuota mínima | cuota mediana | mejor cuota | casas |
-|---|---|---|---|---|---|---|---|---|
-| 1X2 | **gana Slovakia** | 55% | 55% | - | 1.81 | nan | nan | 0 |
-| Sin empate | **gana Slovakia (sin empate)** | 73% | 73% | - | 1.36 | nan | nan | 0 |
-| Más/menos 2.5 | **menos de 2.5 goles** | 55% | 55% | - | 1.82 | nan | nan | 0 |
-| Ambos marcan | **ambos marcan: no** | 54% | 54% | - | 1.86 | nan | nan | 0 |
-| Tarjetas | **menos de 3.5 tarjetas** | 54% | 54% | - | 1.86 | nan | nan | 0 |
-| Tarjetas | **menos de 4.5 tarjetas** | 68% | 68% | - | 1.46 | nan | nan | 0 |
-| Córners | **más de 8.5 córners** | 77% | 77% | - | 1.30 | nan | nan | 0 |
-| Córners | **más de 9.5 córners** | 67% | 67% | - | 1.50 | nan | nan | 0 |
-| Goles | **más de 1.5 goles** | 71% | 71% | - | 1.41 | nan | nan | 0 |
-| Goles | **Slovakia marca primero** | 65% | 65% | - | 1.53 | nan | nan | 0 |
-
-Once probable Kazakhstan: Bauyrzhan Islamkhan, N. Alip, Ramazan Karimov, Temirlan Yerlanov, S. Pokatilov, Yan Vorogovskiy, Dinmukhamed Karaman, Aleksandr Mrynskiy, Islambek Kuat, G. Kenzhebek, Nauryzbek Zhagorov
-Once probable Slovakia: D. Greif, T. Suslov, D. Hancko, L. Haraslín, Stanislav Lobotka, M. Valjent, Milan Škriniar, O. Duda, Adam Obert, D. Strelec, I. Mesík
-
 ## Faroe Islands - Moldova (2026-11-16 15:00 UTC)
 
 Ranking FIFA (puntos): Faroe Islands 1137, Moldova 1008. Goles esperados 1.62 - 0.81, marcador más probable 1-0. Córners esperados 9.7. Amarillas esperadas 2.6 (árbitro ?, 0 partidos en nuestras ligas, x1.00). Forma del once: Faroe Islands +0.00, Moldova +0.00. Partidos en el modelo: Faroe Islands 17, Moldova 18.
@@ -203,6 +103,26 @@ Ranking FIFA (puntos): Faroe Islands 1137, Moldova 1008. Goles esperados 1.62 - 
 
 Once probable Faroe Islands: Jóannes Bjartalíð, Á. Samuelsen, Petur Knudsen, A. Edmundsson, G. Turi, Odmar Færø, Hanus Sørensen, M. Agnarsson, Gunnar Vatnhamar, Jóannes Kalsø Danielsen, Mattias Lamhauge
 Once probable Moldova: S. Perciun, Petru Popescu, N. Cleșcenco, Victor Stina, M. Gherasimencov, I. Iovu, Vladislav Baboglo, O. Reabciuk, V. Raţă, N. Moțpan, Dumitru Celeadnic
+
+## Kazakhstan - Slovakia (2026-11-16 15:00 UTC)
+
+Ranking FIFA (puntos): Kazakhstan 1181, Slovakia 1474. Goles esperados 0.86 - 1.62, marcador más probable 0-1. Córners esperados 11.3. Amarillas esperadas 3.7 (árbitro ?, 0 partidos en nuestras ligas, x1.00). Forma del once: Kazakhstan +0.00, Slovakia -0.02. Partidos en el modelo: Kazakhstan 17, Slovakia 18.
+
+| mercado | pronóstico | final | modelo | mercado | cuota mínima | cuota mediana | mejor cuota | casas |
+|---|---|---|---|---|---|---|---|---|
+| 1X2 | **gana Slovakia** | 55% | 55% | - | 1.81 | nan | nan | 0 |
+| Sin empate | **gana Slovakia (sin empate)** | 73% | 73% | - | 1.36 | nan | nan | 0 |
+| Más/menos 2.5 | **menos de 2.5 goles** | 55% | 55% | - | 1.82 | nan | nan | 0 |
+| Ambos marcan | **ambos marcan: no** | 54% | 54% | - | 1.86 | nan | nan | 0 |
+| Tarjetas | **menos de 3.5 tarjetas** | 54% | 54% | - | 1.86 | nan | nan | 0 |
+| Tarjetas | **menos de 4.5 tarjetas** | 68% | 68% | - | 1.46 | nan | nan | 0 |
+| Córners | **más de 8.5 córners** | 77% | 77% | - | 1.30 | nan | nan | 0 |
+| Córners | **más de 9.5 córners** | 67% | 67% | - | 1.50 | nan | nan | 0 |
+| Goles | **más de 1.5 goles** | 71% | 71% | - | 1.41 | nan | nan | 0 |
+| Goles | **Slovakia marca primero** | 65% | 65% | - | 1.53 | nan | nan | 0 |
+
+Once probable Kazakhstan: Bauyrzhan Islamkhan, N. Alip, Ramazan Karimov, Temirlan Yerlanov, S. Pokatilov, Yan Vorogovskiy, Dinmukhamed Karaman, Aleksandr Mrynskiy, Islambek Kuat, G. Kenzhebek, Nauryzbek Zhagorov
+Once probable Slovakia: D. Greif, T. Suslov, D. Hancko, L. Haraslín, Stanislav Lobotka, M. Valjent, Milan Škriniar, O. Duda, Adam Obert, D. Strelec, I. Mesík
 
 ## Iceland - Luxembourg (2026-11-16 17:00 UTC)
 
@@ -263,6 +183,26 @@ Ranking FIFA (puntos): Estonia 1131, Bulgaria 1272. Goles esperados 1.11 - 1.02,
 
 Once probable Estonia: K. Hein, Rasmus Peetson, M. Igonen, M. Paskotši, M. Käit, M. Kuusk, K. Mets, Markus Poom, P. Kristal, K. Palumets, M. Schjønning-Larsen
 Once probable Bulgaria: D. Naumov, L. Petkov, A. Chandarov, I. Gruev, S. Velkov, D. Velkovski, G. Rusev, K. Dimitrov, I. Turitsov, E. Tsenov, A. Kraev
+
+## North Macedonia - Slovenia (2026-11-16 19:45 UTC)
+
+Ranking FIFA (puntos): North Macedonia 1369, Slovenia 1441. Goles esperados 0.85 - 1.22, marcador más probable 0-1. Córners esperados 8.6. Amarillas esperadas 3.6 (árbitro ?, 0 partidos en nuestras ligas, x1.00). Forma del once: North Macedonia +0.03, Slovenia -0.01. Partidos en el modelo: North Macedonia 18, Slovenia 18.
+
+| mercado | pronóstico | final | modelo | mercado | cuota mínima | cuota mediana | mejor cuota | casas |
+|---|---|---|---|---|---|---|---|---|
+| 1X2 | **gana Slovenia** | 45% | 45% | - | 2.24 | nan | nan | 0 |
+| Sin empate | **gana Slovenia (sin empate)** | 63% | 63% | - | 1.57 | nan | nan | 0 |
+| Más/menos 2.5 | **menos de 2.5 goles** | 66% | 66% | - | 1.52 | nan | nan | 0 |
+| Ambos marcan | **ambos marcan: no** | 60% | 60% | - | 1.67 | nan | nan | 0 |
+| Tarjetas | **menos de 3.5 tarjetas** | 54% | 54% | - | 1.84 | nan | nan | 0 |
+| Tarjetas | **menos de 4.5 tarjetas** | 69% | 69% | - | 1.45 | nan | nan | 0 |
+| Córners | **menos de 8.5 córners** | 51% | 51% | - | 1.96 | nan | nan | 0 |
+| Córners | **menos de 9.5 córners** | 63% | 63% | - | 1.59 | nan | nan | 0 |
+| Goles | **más de 1.5 goles** | 61% | 61% | - | 1.64 | nan | nan | 0 |
+| Goles | **Slovenia marca primero** | 59% | 59% | - | 1.70 | nan | nan | 0 |
+
+Once probable North Macedonia: S. Dimitrievski, V. Musliu, Eljif Elmas, Anes Meljichi, Enis Bardhi, B. Miovski, M. Gashtarov, Mario Mladenovski, Agon Elezi, Andrej Stojchevski, Dimitar Mitrovski
+Once probable Slovenia: Danijel Šturm, J. Oblak, A. Matko, J. Bijol, David Brekalo, Z. Vipotnik, Žan Karničnik, A. Čerin, D. Zec, Mark Zabukovnik, E. Janža
 
 ## Switzerland - Scotland (2026-11-16 19:45 UTC)
 
@@ -343,26 +283,6 @@ Ranking FIFA (puntos): Germany 1726, Netherlands 1776. Goles esperados 1.60 - 1.
 
 Once probable Germany: J. Kimmich, A. Pavlović, J. Tah, T. Bischof, D. Scherhant, W. Anton, F. Wirtz, J. Urbig, P. Treu, N. Brown, M. Thiaw
 Once probable Netherlands: J. van Hecke, B. Verbruggen, M. Meerdink, V. van Dijk, T. Reijnders, J. Veerman, C. Summerville, M. van de Ven, R. van Bommel, R. Gravenberch, D. Dumfries
-
-## North Macedonia - Slovenia (2026-11-16 19:45 UTC)
-
-Ranking FIFA (puntos): North Macedonia 1369, Slovenia 1441. Goles esperados 0.85 - 1.22, marcador más probable 0-1. Córners esperados 8.6. Amarillas esperadas 3.6 (árbitro ?, 0 partidos en nuestras ligas, x1.00). Forma del once: North Macedonia +0.03, Slovenia -0.01. Partidos en el modelo: North Macedonia 18, Slovenia 18.
-
-| mercado | pronóstico | final | modelo | mercado | cuota mínima | cuota mediana | mejor cuota | casas |
-|---|---|---|---|---|---|---|---|---|
-| 1X2 | **gana Slovenia** | 45% | 45% | - | 2.24 | nan | nan | 0 |
-| Sin empate | **gana Slovenia (sin empate)** | 63% | 63% | - | 1.57 | nan | nan | 0 |
-| Más/menos 2.5 | **menos de 2.5 goles** | 66% | 66% | - | 1.52 | nan | nan | 0 |
-| Ambos marcan | **ambos marcan: no** | 60% | 60% | - | 1.67 | nan | nan | 0 |
-| Tarjetas | **menos de 3.5 tarjetas** | 54% | 54% | - | 1.84 | nan | nan | 0 |
-| Tarjetas | **menos de 4.5 tarjetas** | 69% | 69% | - | 1.45 | nan | nan | 0 |
-| Córners | **menos de 8.5 córners** | 51% | 51% | - | 1.96 | nan | nan | 0 |
-| Córners | **menos de 9.5 córners** | 63% | 63% | - | 1.59 | nan | nan | 0 |
-| Goles | **más de 1.5 goles** | 61% | 61% | - | 1.64 | nan | nan | 0 |
-| Goles | **Slovenia marca primero** | 59% | 59% | - | 1.70 | nan | nan | 0 |
-
-Once probable North Macedonia: S. Dimitrievski, V. Musliu, Eljif Elmas, Anes Meljichi, Enis Bardhi, B. Miovski, M. Gashtarov, Mario Mladenovski, Agon Elezi, Andrej Stojchevski, Dimitar Mitrovski
-Once probable Slovenia: Danijel Šturm, J. Oblak, A. Matko, J. Bijol, David Brekalo, Z. Vipotnik, Žan Karničnik, A. Čerin, D. Zec, Mark Zabukovnik, E. Janža
 
 ## Cuánto fiarse
 

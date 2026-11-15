@@ -1,13 +1,5 @@
 {
  "equipos": {
-  "Latvia": 930076,
-  "Armenia": 931778,
-  "Cyprus": 941990,
-  "Montenegro": 944543,
-  "Finland": 936033,
-  "San Marino": 949649,
-  "Belarus": 936884,
-  "Albania": 662862,
   "Croatia": 3337,
   "Czech Republic": 656054,
   "Spain": 8443,
@@ -16,16 +8,18 @@
   "Italy": 654352,
   "France": 2486,
   "Turkey": 662011,
-  "Kazakhstan": 932629,
-  "Slovakia": 658607,
   "Faroe Islands": 935182,
   "Moldova": 948798,
+  "Kazakhstan": 932629,
+  "Slovakia": 658607,
   "Iceland": 16102,
   "Luxembourg": 938586,
   "Lithuania": 934331,
   "Liechtenstein": 942841,
   "Estonia": 937735,
   "Bulgaria": 939437,
+  "North Macedonia": 941139,
+  "Slovenia": 929225,
   "Switzerland": 13549,
   "Scotland": 943692,
   "Gibraltar": 930927,
@@ -33,35 +27,9 @@
   "Greece": 951351,
   "Serbia": 12698,
   "Germany": 22059,
-  "Netherlands": 952202,
-  "North Macedonia": 941139,
-  "Slovenia": 929225
+  "Netherlands": 952202
  },
  "cruces": [
-  [
-   "Latvia",
-   "Armenia",
-   1315320000,
-   "2026-11-15T14:00:00.000Z"
-  ],
-  [
-   "Cyprus",
-   "Montenegro",
-   1301161913,
-   "2026-11-15T14:00:00.000Z"
-  ],
-  [
-   "Finland",
-   "San Marino",
-   1301163615,
-   "2026-11-15T17:00:00.000Z"
-  ],
-  [
-   "Belarus",
-   "Albania",
-   1301162764,
-   "2026-11-15T17:00:00.000Z"
-  ],
   [
    "Croatia",
    "Czech Republic",
@@ -87,15 +55,15 @@
    "2026-11-15T19:45:00.000Z"
   ],
   [
-   "Kazakhstan",
-   "Slovakia",
-   1301167870,
-   "2026-11-16T15:00:00.000Z"
-  ],
-  [
    "Faroe Islands",
    "Moldova",
    1301168721,
+   "2026-11-16T15:00:00.000Z"
+  ],
+  [
+   "Kazakhstan",
+   "Slovakia",
+   1301167870,
    "2026-11-16T15:00:00.000Z"
   ],
   [
@@ -115,6 +83,12 @@
    "Bulgaria",
    1301169572,
    "2026-11-16T17:00:00.000Z"
+  ],
+  [
+   "North Macedonia",
+   "Slovenia",
+   1315359146,
+   "2026-11-16T19:45:00.000Z"
   ],
   [
    "Switzerland",
@@ -139,13 +113,7 @@
    "Netherlands",
    1301171274,
    "2026-11-16T19:45:00.000Z"
-  ],
-  [
-   "North Macedonia",
-   "Slovenia",
-   1315359146,
-   "2026-11-16T19:45:00.000Z"
   ]
  ],
- "generado": "2026-11-15T15:00:36.836953+00:00"
+ "generado": "2026-11-15T19:31:16.589961+00:00"
 }
