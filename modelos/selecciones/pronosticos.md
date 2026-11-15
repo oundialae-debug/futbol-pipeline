@@ -1,4 +1,4 @@
-# Pronósticos de selecciones (15/11/2026 19:42 UTC)
+# Pronósticos de selecciones (15/11/2026 20:36 UTC)
 
 Tema aparte del proyecto de ambos marcan. Por mercado: **modelo** (selecciones + nota justa de los jugadores + árbitro), **mercado** (mediana de casas sin margen) y **final** (mezcla con el peso que se aprende de los partidos ya jugados, ver `evaluacion.md`). Pronóstico = el lado más probable según final. **Cuota mínima** = 1/probabilidad final: por debajo no compensa.
 
@@ -77,7 +77,7 @@ Ranking FIFA (puntos): France 1949, Turkey 1583. Goles esperados 2.81 - 0.80, ma
 | Tarjetas | **menos de 3.5 tarjetas** | 66% | 66% | - | 1.52 | nan | nan | 0 |
 | Tarjetas | **menos de 4.5 tarjetas** | 78% | 78% | - | 1.27 | nan | nan | 0 |
 | Córners | **más de 8.5 córners** | 61% | 61% | - | 1.63 | nan | nan | 0 |
-| Córners | **menos de 9.5 córners** | 51% | 51% | - | 1.98 | nan | nan | 0 |
+| Córners | **menos de 9.5 córners** | 50% | 50% | - | 1.98 | nan | nan | 0 |
 | Goles | **más de 1.5 goles** | 88% | 88% | - | 1.14 | nan | nan | 0 |
 | Goles | **France marca primero** | 78% | 78% | - | 1.28 | nan | nan | 0 |
 
