@@ -15,7 +15,27 @@
   "Belgium": 1635,
   "Italy": 654352,
   "France": 2486,
-  "Turkey": 662011
+  "Turkey": 662011,
+  "Kazakhstan": 932629,
+  "Slovakia": 658607,
+  "Faroe Islands": 935182,
+  "Moldova": 948798,
+  "Iceland": 16102,
+  "Luxembourg": 938586,
+  "Lithuania": 934331,
+  "Liechtenstein": 942841,
+  "Estonia": 937735,
+  "Bulgaria": 939437,
+  "Switzerland": 13549,
+  "Scotland": 943692,
+  "Gibraltar": 930927,
+  "Malta": 947096,
+  "Greece": 951351,
+  "Serbia": 12698,
+  "Germany": 22059,
+  "Netherlands": 952202,
+  "North Macedonia": 941139,
+  "Slovenia": 929225
  },
  "cruces": [
   [
@@ -65,7 +85,67 @@
    "Turkey",
    1301164466,
    "2026-11-15T19:45:00.000Z"
+  ],
+  [
+   "Kazakhstan",
+   "Slovakia",
+   1301167870,
+   "2026-11-16T15:00:00.000Z"
+  ],
+  [
+   "Faroe Islands",
+   "Moldova",
+   1301168721,
+   "2026-11-16T15:00:00.000Z"
+  ],
+  [
+   "Iceland",
+   "Luxembourg",
+   1315320851,
+   "2026-11-16T17:00:00.000Z"
+  ],
+  [
+   "Lithuania",
+   "Liechtenstein",
+   1301170423,
+   "2026-11-16T17:00:00.000Z"
+  ],
+  [
+   "Estonia",
+   "Bulgaria",
+   1301169572,
+   "2026-11-16T17:00:00.000Z"
+  ],
+  [
+   "Switzerland",
+   "Scotland",
+   1315350636,
+   "2026-11-16T19:45:00.000Z"
+  ],
+  [
+   "Gibraltar",
+   "Malta",
+   1315321702,
+   "2026-11-16T19:45:00.000Z"
+  ],
+  [
+   "Greece",
+   "Serbia",
+   1301172125,
+   "2026-11-16T19:45:00.000Z"
+  ],
+  [
+   "Germany",
+   "Netherlands",
+   1301171274,
+   "2026-11-16T19:45:00.000Z"
+  ],
+  [
+   "North Macedonia",
+   "Slovenia",
+   1315359146,
+   "2026-11-16T19:45:00.000Z"
   ]
  ],
- "generado": "2026-11-14T21:45:15.212154+00:00"
+ "generado": "2026-11-15T15:00:36.836953+00:00"
 }
