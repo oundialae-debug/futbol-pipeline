@@ -1,13 +1,5 @@
 {
  "equipos": {
-  "Croatia": 3337,
-  "Czech Republic": 656054,
-  "Spain": 8443,
-  "England": 9294,
-  "Belgium": 1635,
-  "Italy": 654352,
-  "France": 2486,
-  "Turkey": 662011,
   "Faroe Islands": 935182,
   "Moldova": 948798,
   "Kazakhstan": 932629,
@@ -30,30 +22,6 @@
   "Netherlands": 952202
  },
  "cruces": [
-  [
-   "Croatia",
-   "Czech Republic",
-   1301167019,
-   "2026-11-15T19:45:00.000Z"
-  ],
-  [
-   "Spain",
-   "England",
-   1301166168,
-   "2026-11-15T19:45:00.000Z"
-  ],
-  [
-   "Belgium",
-   "Italy",
-   1301165317,
-   "2026-11-15T19:45:00.000Z"
-  ],
-  [
-   "France",
-   "Turkey",
-   1301164466,
-   "2026-11-15T19:45:00.000Z"
-  ],
   [
    "Faroe Islands",
    "Moldova",
@@ -115,5 +83,5 @@
    "2026-11-16T19:45:00.000Z"
   ]
  ],
- "generado": "2026-11-15T20:25:19.955733+00:00"
+ "generado": "2026-11-15T22:11:19.302877+00:00"
 }
