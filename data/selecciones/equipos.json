@@ -1,9 +1,5 @@
 {
  "equipos": {
-  "Faroe Islands": 935182,
-  "Moldova": 948798,
-  "Kazakhstan": 932629,
-  "Slovakia": 658607,
   "Iceland": 16102,
   "Luxembourg": 938586,
   "Lithuania": 934331,
@@ -19,21 +15,25 @@
   "Greece": 951351,
   "Serbia": 12698,
   "Germany": 22059,
-  "Netherlands": 952202
+  "Netherlands": 952202,
+  "Bosnia & Herzegovina": 947947,
+  "Romania": 659458,
+  "Poland": 21208,
+  "Sweden": 5039,
+  "Republic of Ireland": 661160,
+  "Kosovo National Team": 946245,
+  "Israel": 950500,
+  "Austria": 660309,
+  "Hungary": 655203,
+  "Northern Ireland": 656905,
+  "Ukraine": 657756,
+  "Georgia": 940288,
+  "Denmark": 18655,
+  "Norway": 928374,
+  "Wales": 653501,
+  "Portugal": 23761
  },
  "cruces": [
-  [
-   "Faroe Islands",
-   "Moldova",
-   1301168721,
-   "2026-11-16T15:00:00.000Z"
-  ],
-  [
-   "Kazakhstan",
-   "Slovakia",
-   1301167870,
-   "2026-11-16T15:00:00.000Z"
-  ],
   [
    "Iceland",
    "Luxembourg",
@@ -81,7 +81,55 @@
    "Netherlands",
    1301171274,
    "2026-11-16T19:45:00.000Z"
+  ],
+  [
+   "Bosnia & Herzegovina",
+   "Romania",
+   1301178933,
+   "2026-11-17T19:45:00.000Z"
+  ],
+  [
+   "Poland",
+   "Sweden",
+   1301178082,
+   "2026-11-17T19:45:00.000Z"
+  ],
+  [
+   "Republic of Ireland",
+   "Kosovo National Team",
+   1301177231,
+   "2026-11-17T19:45:00.000Z"
+  ],
+  [
+   "Israel",
+   "Austria",
+   1301176380,
+   "2026-11-17T19:45:00.000Z"
+  ],
+  [
+   "Hungary",
+   "Northern Ireland",
+   1301175529,
+   "2026-11-17T19:45:00.000Z"
+  ],
+  [
+   "Ukraine",
+   "Georgia",
+   1301174678,
+   "2026-11-17T19:45:00.000Z"
+  ],
+  [
+   "Denmark",
+   "Norway",
+   1301173827,
+   "2026-11-17T19:45:00.000Z"
+  ],
+  [
+   "Wales",
+   "Portugal",
+   1301172976,
+   "2026-11-17T19:45:00.000Z"
   ]
  ],
- "generado": "2026-11-15T22:11:19.302877+00:00"
+ "generado": "2026-11-16T17:19:59.883414+00:00"
 }
