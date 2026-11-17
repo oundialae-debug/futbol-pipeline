@@ -1,4 +1,4 @@
-# Pronósticos de selecciones (16/11/2026 23:54 UTC)
+# Pronósticos de selecciones (17/11/2026 01:17 UTC)
 
 Tema aparte del proyecto de ambos marcan. Por mercado: **modelo** (selecciones + nota justa de los jugadores + árbitro), **mercado** (mediana de casas sin margen) y **final** (mezcla con el peso que se aprende de los partidos ya jugados, ver `evaluacion.md`). Pronóstico = el lado más probable según final. **Cuota mínima** = 1/probabilidad final: por debajo no compensa.
 
@@ -39,7 +39,7 @@ Ranking FIFA (puntos): Poland 1526, Sweden 1526. Goles esperados 1.46 - 1.38, ma
 | Córners | **más de 8.5 córners** | 53% | 53% | - | 1.87 | nan | nan | 0 |
 | Córners | **menos de 9.5 córners** | 59% | 59% | - | 1.70 | nan | nan | 0 |
 | Goles | **más de 1.5 goles** | 77% | 77% | - | 1.29 | nan | nan | 0 |
-| Goles | **Poland marca primero** | 51% | 51% | - | 1.95 | nan | nan | 0 |
+| Goles | **Poland marca primero** | 51% | 51% | - | 1.94 | nan | nan | 0 |
 
 Once probable Poland: Piotr Zieliński, S. Szymański, J. Bednarek, J. Kiwior, Nicola Zalewski, K. Świderski, P. Frankowski, Wiktor Nowak, M. Bułka, M. Żukowski, M. Cash
 Once probable Sweden: V. Gyökeres, G. Gudmundsson, Y. Ayari, V. Johansson, D. Svensson, C. Starfelt, S. Nanasi, A. Bernhardsson, L. Bergvall, V. Lindelöf, B. Zeneli
