@@ -1,4 +1,4 @@
-# Agenda del 2026-11-17
+# Agenda del 2026-11-18
 
 *Hoy no hay partidos de las seis ligas que cotizan tarjetas en vivo.*
 
