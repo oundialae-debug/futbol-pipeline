@@ -1,19 +1,10 @@
 match_id,liga,liga_id,fecha,saque_utc,local,visitante,ronda
--6106341,Champions League,2486,2026-11-03,17:45,Galatasaray,VfB Stuttgart,FotMob 6106341
--6106335,Champions League,2486,2026-11-03,17:45,Shakhtar Donetsk,Sporting CP,FotMob 6106335
--6106266,Champions League,2486,2026-11-03,20:00,Atlético Madrid,Bayern Munich,FotMob 6106266
--6106263,Champions League,2486,2026-11-03,20:00,Barcelona,Aston Villa,FotMob 6106263
--6106316,Champions League,2486,2026-11-03,20:00,Bodø/Glimt,Lille,FotMob 6106316
--6106306,Champions League,2486,2026-11-03,20:00,Feyenoord,Inter,FotMob 6106306
--6106408,Champions League,2486,2026-11-03,20:00,LASK,Slovan Bratislava,FotMob 6106408
--6106291,Champions League,2486,2026-11-03,20:00,Manchester United,AS Roma,FotMob 6106291
--6106326,Champions League,2486,2026-11-03,20:00,Villarreal,Paris Saint Germain,FotMob 6106326
--6106401,Champions League,2486,2026-11-04,17:45,AEK Athens,Real Madrid,FotMob 6106401
--6106330,Champions League,2486,2026-11-04,17:45,Fenerbahçe,Liverpool,FotMob 6106330
--6106271,Champions League,2486,2026-11-04,20:00,Borussia Dortmund,Real Betis,FotMob 6106271
--6106288,Champions League,2486,2026-11-04,20:00,FC Porto,Napoli,FotMob 6106288
--6106416,Champions League,2486,2026-11-04,20:00,Lens,Como,FotMob 6106416
--6106303,Champions League,2486,2026-11-04,20:00,PSV Eindhoven,Club Brugge,FotMob 6106303
--6106322,Champions League,2486,2026-11-04,20:00,RB Leipzig,Manchester City,FotMob 6106322
--6106389,Champions League,2486,2026-11-04,20:00,Slavia Prague,Arsenal,FotMob 6106389
--6106420,Champions League,2486,2026-11-04,20:00,Viking,Sabah FK,FotMob 6106420
+-6106317,Champions League,2486,2026-11-24,17:45,Bodø/Glimt,LASK,FotMob 6106317
+-6106339,Champions League,2486,2026-11-24,17:45,Galatasaray,Aston Villa,FotMob 6106339
+-6106259,Champions League,2486,2026-11-24,20:00,Arsenal,Borussia Dortmund,FotMob 6106259
+-6106412,Champions League,2486,2026-11-24,20:00,Como,AEK Athens,FotMob 6106412
+-6106307,Champions League,2486,2026-11-24,20:00,Feyenoord,FC Porto,FotMob 6106307
+-6106256,Champions League,2486,2026-11-24,20:00,Manchester City,Napoli,FotMob 6106256
+-6106325,Champions League,2486,2026-11-24,20:00,RB Leipzig,Lens,FotMob 6106325
+-6106243,Champions League,2486,2026-11-24,20:00,Real Madrid,PSV Eindhoven,FotMob 6106243
+-6106394,Champions League,2486,2026-11-24,20:00,Slovan Bratislava,Real Betis,FotMob 6106394
