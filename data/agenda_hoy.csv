@@ -1,4 +1,27 @@
 match_id,liga,liga_id,fecha,saque_utc,local,visitante,descanso_desde,descanso_hasta
-1340513855,Bundesliga,67162,2026-11-20,19:30,Bayern Munich,FC Koln,20:15,20:32
-1336092059,Segunda División,120775,2026-11-20,19:30,FC Andorra,Leganes,20:15,20:32
-1321456561,Ligue 1,52695,2026-11-20,19:45,Estac Troyes,LE Havre AC,20:30,20:47
+1325411158,Premier League,33973,2026-11-21,12:30,Manchester City,Fulham,13:15,13:32
+1336099718,Segunda División,120775,2026-11-21,13:00,Sabadell,Granada CF,13:45,14:02
+1319222686,Serie A,115669,2026-11-21,14:00,Lazio,Lecce,14:45,15:02
+1319220984,Serie A,115669,2026-11-21,14:00,Como,Cagliari,14:45,15:02
+1340520663,Bundesliga,67162,2026-11-21,14:30,SV Elversberg,SC Freiburg,15:15,15:32
+1340518110,Bundesliga,67162,2026-11-21,14:30,Borussia Mönchengladbach,Borussia Dortmund,15:15,15:32
+1340517259,Bundesliga,67162,2026-11-21,14:30,Union Berlin,RB Leipzig,15:15,15:32
+1340515557,Bundesliga,67162,2026-11-21,14:30,Eintracht Frankfurt,1899 Hoffenheim,15:15,15:32
+1340514706,Bundesliga,67162,2026-11-21,14:30,Bayer Leverkusen,SC Paderborn 07,15:15,15:32
+1325405201,Premier League,33973,2026-11-21,15:00,Aston Villa,Sunderland,15:45,16:02
+1325407754,Premier League,33973,2026-11-21,15:00,Chelsea,Leeds,15:45,16:02
+1325406052,Premier League,33973,2026-11-21,15:00,Bournemouth,Nottingham Forest,15:45,16:02
+1325412860,Premier League,33973,2026-11-21,15:00,Tottenham,Ipswich,15:45,16:02
+1325408605,Premier League,33973,2026-11-21,15:00,Coventry,Crystal Palace,15:45,16:02
+1336098867,Segunda División,120775,2026-11-21,15:15,Real Sociedad B,Cadiz,16:00,16:17
+1321454008,Ligue 1,52695,2026-11-21,16:15,Nice,Paris Saint Germain,17:00,17:17
+1319225239,Serie A,115669,2026-11-21,17:00,Parma,AS Roma,17:45,18:02
+1340519812,Bundesliga,67162,2026-11-21,17:30,FC Schalke 04,VfB Stuttgart,18:15,18:32
+1325412009,Premier League,33973,2026-11-21,17:30,Newcastle United,Arsenal,18:15,18:32
+1336093761,Segunda División,120775,2026-11-21,17:30,Castellón,Eldense,18:15,18:32
+1319224388,Serie A,115669,2026-11-21,19:45,Napoli,Torino,20:30,20:47
+1321455710,Ligue 1,52695,2026-11-21,19:45,Strasbourg,Stade Brestois 29,20:30,20:47
+1321453157,Ligue 1,52695,2026-11-21,19:45,Monaco,Auxerre,20:30,20:47
+1321450604,Ligue 1,52695,2026-11-21,19:45,Lille,Lyon,20:30,20:47
+1321449753,Ligue 1,52695,2026-11-21,19:45,Lens,Toulouse,20:30,20:47
+1336100569,Segunda División,120775,2026-11-21,20:00,Tenerife,Mallorca,20:45,21:02
