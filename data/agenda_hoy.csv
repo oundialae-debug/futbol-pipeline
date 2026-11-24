@@ -1,5 +1,1 @@
-match_id,liga,liga_id,fecha,saque_utc,local,visitante,descanso_desde,descanso_hasta
-1319223537,Serie A,115669,2026-11-23,17:30,Monza,Fiorentina,18:15,18:32
-1336095463,Segunda División,120775,2026-11-23,19:30,AD Ceuta FC,Almería,20:15,20:32
-1319221835,Serie A,115669,2026-11-23,19:45,Juventus,Venezia,20:30,20:47
-1325406903,Premier League,33973,2026-11-23,20:00,Brentford,Everton,20:45,21:02
+match_id,liga,saque_utc,local,visitante,descanso_desde,descanso_hasta
