@@ -1,1 +1,4 @@
-match_id,liga,saque_utc,local,visitante,descanso_desde,descanso_hasta
+match_id,liga,liga_id,fecha,saque_utc,local,visitante,descanso_desde,descanso_hasta
+1340527471,Bundesliga,67162,2026-11-27,19:30,Werder Bremen,Borussia Mönchengladbach,20:15,20:32
+1321459114,Ligue 1,52695,2026-11-27,19:45,Stade Brestois 29,Paris FC,20:30,20:47
+1325420519,Premier League,33973,2026-11-27,20:00,Nottingham Forest,Chelsea,20:45,21:02
